@@ -188,12 +188,12 @@ We're actively expanding MU-Bench along several axes:
 - **More locales.** We have data collection underway across all 79 locale variants internally and plan to open-source additional locales as annotation is completed.
 - **Streaming evaluation.** The current benchmark evaluates batch transcription only. Streaming APIs produce different latency and quality characteristics that matter for real-time voice agents.
 - **Open scoring toolkit.** We plan to release the full evaluation toolkit as a standalone package so the community can run scoring locally.
-- **Community submissions.** The leaderboard is open to any provider. If you'd like to submit your model's results, see the [submission guide](https://github.com/sierra-research/voice-transcription-benchmark).
+- **Community submissions.** The leaderboard is open to any provider. If you'd like to submit your model's results, see the [submission guide](https://github.com/sierra-research/mu-bench).
 
 ## Try it
 
 - **Dataset**: [`sierra-research/mu-bench`](https://huggingface.co/datasets/sierra-research/mu-bench) on HuggingFace
-- **Code & submissions**: [github.com/sierra-research/voice-transcription-benchmark](https://github.com/sierra-research/voice-transcription-benchmark)
+- **Code & submissions**: [github.com/sierra-research/mu-bench](https://github.com/sierra-research/mu-bench)
 - **Leaderboard**: [research.sierra.ai](https://research.sierra.ai)
 
 ---

@@ -309,7 +309,7 @@ export default function Leaderboard() {
                         </span>
                         <span className="action-card-btn">Download</span>
                     </a>
-                    <a href="https://github.com/sierra-research/voice-transcription-benchmark" className="action-card">
+                    <a href="https://github.com/sierra-research/mu-bench" className="action-card">
                         <span className="action-card-title">Submit via Pull Request</span>
                         <span className="action-card-desc">
                             Add your model's results to the leaderboard through a GitHub PR.
@@ -528,7 +528,7 @@ function ProviderDetail({ providerId, providers, locale, onClose }) {
 
                 <div className="provider-detail-footer">
                     <a
-                        href="https://github.com/sierra-research/voice-transcription-benchmark/tree/main/submissions"
+                        href="https://github.com/sierra-research/mu-bench/tree/main/submissions"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="provider-detail-link"

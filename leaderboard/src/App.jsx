@@ -62,7 +62,7 @@ export default function App() {
                             Download
                         </a>
                         <a
-                            href="https://github.com/sierra-research/voice-transcription-benchmark"
+                            href="https://github.com/sierra-research/mu-bench"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="navbar-link"
