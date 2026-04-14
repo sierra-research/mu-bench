@@ -174,7 +174,6 @@ manifest.json              # Audio file list + ground truth transcripts
 scripts/
   download_audio.py        # Download audio from HuggingFace
   transcribe.py            # Runs provider APIs to generate transcripts + latency
-  compare_transcripts.py   # Compare transcripts between two submission bases
   latency_stats.py         # Compute p50/p95 latency from latency.json files
   requirements.txt         # Python dependencies
 submissions/
