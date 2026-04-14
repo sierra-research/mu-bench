@@ -1,0 +1,68 @@
+name: Deploy Leaderboard
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "leaderboard/**"
+      - "results/leaderboard.json"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Inject leaderboard data
+        run: node leaderboard/scripts/inject-data.js
+
+      - name: Install dependencies
+        working-directory: leaderboard
+        run: npm ci
+
+      - name: Build
+        working-directory: leaderboard
+        run: npm run build
+        env:
+          NODE_ENV: production
+          GITHUB_PAGES_BASE: /mubench/
+
+      - name: Assemble site
+        run: |
+          mkdir -p site/mubench
+          cp -r leaderboard/dist/* site/mubench/
+          echo "research.sierra.ai" > site/CNAME
+          cat > site/index.html << 'REDIRECT'
+          <!DOCTYPE html>
+          <html>
+            <head><meta http-equiv="refresh" content="0; url=/mubench/" /></head>
+            <body><a href="/mubench/">Redirecting to mubench...</a></body>
+          </html>
+          REDIRECT
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

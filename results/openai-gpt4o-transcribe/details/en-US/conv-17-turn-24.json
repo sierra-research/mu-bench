@@ -1,0 +1,36 @@
+{
+  "gold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "predicted": "Okay. How would I reference, you know, basically I don't want to go through everything we already talked about, so is there like a case number?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "werNormalizedPredicted": "Okay. How would I reference, you know, basically, I don't want to go through everything we already talked about. So, is there like a case number?",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "sigWerNormalizedPredicted": "Okay. How would I reference, you know, basically, I don't want to go through everything we already talked about. So, is there like a case number?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'wanna' to 'to' at position 10",
+      "reason": "'want' is part of the phrase 'don't want to', which is a standard form. The expected was 'don't wanna', which is an informal contraction. The meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '0' to 'there' at position 19",
+      "reason": "'wanna' is an informal contraction of 'want to'. The actual says 'want to', which is equivalent in meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'our' to 'a' at position 21",
+      "reason": "The actual says 'is there like a case number' instead of '0 like our case number'. This changes the structure to a question, but the intent (asking about a case number) is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'number.' to 'number?' at position 23",
+      "reason": "The expected '0 like our case number' is likely a mishearing or typo for 'is there like a case number'. The actual is more coherent. The meaning is similar, but the wording is different.",
+      "score": 2
+    }
+  ]
+}

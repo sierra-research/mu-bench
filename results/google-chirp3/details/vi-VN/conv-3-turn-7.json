@@ -1,0 +1,31 @@
+{
+  "gold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
+  "predicted": "007 đúng là minh chấm trần a còng email chấm com",
+  "unintelligible": false,
+  "wer": 0.38461538461538464,
+  "werNormalizedGold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "007 đúng là minh chấm trần a còng email chấm com",
+  "qualityScore": 2,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "007 đúng là minh chấm trần a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Không.' to '007' at position 0",
+      "reason": "'Không.' means 'No.' in Vietnamese, while '007' is a number and unrelated to the intended meaning. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'phải.' at position 2",
+      "reason": "'Không phải.' means 'No' or 'Not correct.' Omitting 'phải.' removes a negation, which can change the meaning, but since the rest of the sentence is present, the main information is still conveyed. This is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'com.' to 'com' at position 12",
+      "reason": "Difference is only punctuation (period at the end), which does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

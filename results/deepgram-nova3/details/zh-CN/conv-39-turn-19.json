@@ -1,0 +1,31 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "junelingemaillotgone",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "君玲 at email dot com。",
+  "werNormalizedPredicted": "juneling at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "juneling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'juneling' at position 0",
+      "reason": "'君' is a Chinese character and 'juneling' is an English transliteration or a different word entirely. The substitution changes the name and could lead to incorrect identification or communication, especially in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is missing from the actual transcription, which omits part of the name. This is significant for names and email addresses, as it can result in a completely different or invalid email.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The omission of the punctuation mark '。' does not affect the meaning or function of the sentence.",
+      "score": 3
+    }
+  ]
+}

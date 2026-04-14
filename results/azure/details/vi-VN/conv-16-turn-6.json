@@ -1,0 +1,36 @@
+{
+  "gold": "Email chưa chính xác. Email phải là minh chấm trần a còng email chấm com.",
+  "predicted": "Email chưa chính xác email với làm minh. Trần@ y mail.com.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werNormalizedGold": "Email chưa chính xác. Email phải là minh chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Email chưa chính xác. Email với là Minh. Trần a còng y mail chấm com.",
+  "qualityScore": 1,
+  "significantWer": 0.2,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "Email chưa chính xác. Email phải là minh chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Email chưa chính xác. Email với là Minh. Trần a còng y mail chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'phải' to 'với' at position 5",
+      "reason": "'phải' means 'must' or 'should', while 'với' means 'with'; this changes the instruction from a requirement to a description, which alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'minh' to 'Minh.' at position 7",
+      "reason": "The only difference is the period, which is punctuation and should be ignored. The words are otherwise identical.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'trần' at position 9",
+      "reason": "The name 'trần' is omitted, which is a key part of the email address. This omission makes the email incomplete or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 12",
+      "reason": "Inserting 'y' changes the email domain from 'email' to 'y mail', which is a significant error as it alters the actual email address.",
+      "score": 1
+    }
+  ]
+}

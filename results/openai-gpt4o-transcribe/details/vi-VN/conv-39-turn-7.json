@@ -1,0 +1,36 @@
+{
+  "gold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
+  "predicted": "Đúng rồi, Anna. Chuẩn đấy. Cảm ơn năm bạn nhé.",
+  "unintelligible": false,
+  "wer": 0.625,
+  "werNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
+  "werNormalizedPredicted": "Đúng rồi, Anna. Chuẩn đấy. Cảm ơn năm bạn nhé.",
+  "qualityScore": 2,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
+  "sigWerNormalizedPredicted": "Đúng rồi, Anna. Chuẩn đấy. Cảm ơn năm bạn nhé.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'rồi' to 'rồi,' at position 1",
+      "reason": "Difference is only punctuation (comma), which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Chuẩn.' to 'đấy.' at position 3",
+      "reason": "No actual insertion; both sentences have 'Chuẩn', but the actual adds 'đấy' after. No error here.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'năm' at position 6",
+      "reason": "'Chuẩn' and 'Chuẩn đấy' are both affirmations, with 'đấy' adding emphasis but not changing the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'nhá.' to 'nhé.' at position 7",
+      "reason": "'năm' means 'five' and its insertion before 'bạn' changes the meaning from 'thank you friend' to 'thank you five friends', which is a significant change.",
+      "score": 1
+    }
+  ]
+}

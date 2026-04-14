@@ -1,0 +1,31 @@
+{
+  "gold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "predicted": "vạch trần mình mà là trần mình trần mình trần mình",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werNormalizedGold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "werNormalizedPredicted": "vạch Trần Minh mà là Trần Minh. Trần Minh. Trần Minh.",
+  "qualityScore": 2,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "sigWerNormalizedPredicted": "vạch Trần Minh mà là Trần Minh. Trần Minh. Trần Minh.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Không' to 'vạch' at position 0",
+      "reason": "'Không phải' means 'not' or 'no', while 'vạch' means 'to draw' or 'to expose'. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Minh,' at position 3",
+      "reason": "Omitting 'Minh' from 'Trường Minh' removes part of a proper name, which can cause confusion about the identity being referred to.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'Tran' to 'Trần' at position 10",
+      "reason": "'Tran' and 'Trần' are the same name, just with and without the diacritic. In Vietnamese, the diacritic is important, but the meaning is still clear.",
+      "score": 2
+    }
+  ]
+}

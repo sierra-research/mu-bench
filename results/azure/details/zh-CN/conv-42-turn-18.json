@@ -1,0 +1,36 @@
+{
+  "gold": "郡凛 at email dot com。",
+  "predicted": "Drilling at email.com.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "郡凛 at email dot com。",
+  "werNormalizedPredicted": "Drilling at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "郡 凛 at email dot com 。",
+  "sigWerNormalizedPredicted": "Drilling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'Drilling' at position 0",
+      "reason": "'郡' is a Chinese character (likely a name or part of an email address), while 'Drilling' is an unrelated English word. This changes the meaning entirely and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "Omitting '凛', which is likely part of a name or email address, results in an incomplete or incorrect email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 5",
+      "reason": "Adding a period after 'com' is a minor formatting issue and does not affect the meaning or function of the email address.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The Japanese period '。' is a punctuation mark and its omission does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

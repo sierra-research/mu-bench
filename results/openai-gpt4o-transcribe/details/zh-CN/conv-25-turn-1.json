@@ -1,0 +1,26 @@
+{
+  "gold": "我想提高我的信用卡额度。",
+  "predicted": "我想提高我自願考惡毒。",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "我想提高我的信用卡额度。",
+  "werNormalizedPredicted": "我想提高我自願考惡毒。",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度 。",
+  "sigWerNormalizedPredicted": "我 想 提 高 我 自 願 考 惡 毒 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '的' to '自' at position 5",
+      "reason": "'的' is a possessive particle, while '自' means 'self'; this substitution changes the grammatical structure and meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '度' at position 10",
+      "reason": "'度' (limit/degree) is missing, which is essential to the meaning of 'credit card limit'. Its absence makes the sentence incomplete and unclear.",
+      "score": 1
+    }
+  ]
+}

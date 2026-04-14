@@ -1,0 +1,51 @@
+{
+  "gold": "O zaman kredi kartımın, kart numarası ve son ödeme. Bir saniye beni bir dinleyebilir misin? Kredi kartımın numarasını, bir de kredi kartımın, bir saniye beni dinler misin? O zaman son ödeme tarihini öğrenebilir miyim?",
+  "predicted": "O zaman kredi kartımın-- ha, kart numarası ve son ödeme-- bir saniye, beni bir dinleyebilir misiniz? Kredi kartımın numarasını, bir de, eee, kredi kartımın-- bir saniye, beni dinler misiniz? O zaman son-- o zaman son ödeme tarihini öğrenebilir miyim?",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werNormalizedGold": "O zaman kredi kartımın, kart numarası ve son ödeme. Bir saniye beni bir dinleyebilir misin? Kredi kartımın numarasını, bir de kredi kartımın, bir saniye beni dinler misin? O zaman son ödeme tarihini öğrenebilir miyim?",
+  "werNormalizedPredicted": "O zaman kredi kartımın, ha, kart numarası ve son ödeme. Bir saniye, beni bir dinleyebilir misiniz? Kredi kartımın numarasını, bir de, eee, kredi kartımın, bir saniye, beni dinler misiniz? O zaman son, o zaman son ödeme tarihini öğrenebilir miyim?",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 34,
+  "sigWerNormalizedGold": "O zaman kredi kartımın, kart numarası ve son ödeme. Bir saniye beni bir dinleyebilir misin? Kredi kartımın numarasını, bir de kredi kartımın, bir saniye beni dinler misin? O zaman son ödeme tarihini öğrenebilir miyim?",
+  "sigWerNormalizedPredicted": "O zaman kredi kartımın, ha, kart numarası ve son ödeme. Bir saniye, beni bir dinleyebilir misiniz? Kredi kartımın numarasını, bir de, eee, kredi kartımın, bir saniye, beni dinler misiniz? O zaman son, o zaman son ödeme tarihini öğrenebilir miyim?",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ha,' at position 4",
+      "reason": "'ha' is a filler word in Turkish, similar to 'uh' or 'well' in English. It does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'saniye' to 'saniye,' at position 10",
+      "reason": "The only difference is the comma, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'misin?' to 'misiniz?' at position 14",
+      "reason": "'misin' is informal, 'misiniz' is formal. The meaning is the same, only the level of formality changes.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'de' to 'eee,' at position 19",
+      "reason": "The insertion of 'de' (meaning 'also') is a minor addition and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'saniye' to 'saniye,' at position 23",
+      "reason": "'eee' is a filler word, replacing 'de' (also). The meaning is not significantly changed, but the word is different.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'misin?' to 'misiniz?' at position 26",
+      "reason": "The only difference is the comma, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'zaman' at position 28",
+      "reason": "Again, informal vs. formal, but the meaning is the same.",
+      "score": 3
+    }
+  ]
+}

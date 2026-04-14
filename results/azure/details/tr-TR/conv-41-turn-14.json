@@ -1,0 +1,31 @@
+{
+  "gold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
+  "predicted": "Hayır, anna itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcamanı bir tüm artırmak istiyorum.",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werNormalizedGold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
+  "werNormalizedPredicted": "Hayır Anna, itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcamanı bir tüm artırmak istiyorum.",
+  "qualityScore": 2,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
+  "sigWerNormalizedPredicted": "Hayır Anna, itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcamanı bir tüm artırmak istiyorum.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna.' to 'Anna,' at position 1",
+      "reason": "Difference is only punctuation (period vs comma), which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'için' to 'istediğim' at position 4",
+      "reason": "'için' means 'for', while 'istediğim' means 'that I want'. This changes the meaning of the sentence from 'to cancel' to 'that I want to object', which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'harcama' to 'bir' at position 12",
+      "reason": "The insertion of 'harcamanı' (your spending) changes the meaning from 'my credit card monthly spending limit' to 'your spending', which is a significant error.",
+      "score": 1
+    }
+  ]
+}

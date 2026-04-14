@@ -1,0 +1,31 @@
+{
+  "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "predicted": "E mail davranmadığım tekrar e mail verdim ben sonra Ahmet Arslan ars'de n at email.com.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "werNormalizedPredicted": "Email davranmadığım tekrar email verdim ben sonra Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "qualityScore": 1,
+  "significantWer": 0.1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "sigWerNormalizedPredicted": "Email davranmadığım tekrar email verdim ben sonra Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'daha' to 'davranmadığım' at position 1",
+      "reason": "'daha' means 'yet' or 'still', while 'davranmadığım' means 'that I did not behave'. This changes the meaning of the sentence significantly and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'vereyim' to 'verdim' at position 4",
+      "reason": "'vereyim' means 'let me give', while 'verdim' means 'I gave'. This changes the tense and intent, but the overall meaning is still about giving the email.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sana.' to 'sonra' at position 6",
+      "reason": "'sana' means 'to you', while 'sonra' means 'after/later'. This changes the recipient to a time reference, which alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "meelingemaildotgre。",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "美玲 at email dot com。",
+  "werNormalizedPredicted": "meeling at email dot gre.",
+  "qualityScore": 1,
+  "significantWer": 0.42857142857142855,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "meeling at email dot gre.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meeling' at position 0",
+      "reason": "'美' is a Chinese character and 'meeling' is an attempt to phonetically transcribe the name, but it is not an accurate or standard transliteration. This could cause confusion about the person's name.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The second character of the name is missing, which significantly alters the person's name and could lead to misidentification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'gre.' at position 5",
+      "reason": "The domain ending is changed from 'com' to 'gre.', which makes the email address invalid and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The missing punctuation at the end does not affect the meaning or usability of the sentence.",
+      "score": 3
+    }
+  ]
+}

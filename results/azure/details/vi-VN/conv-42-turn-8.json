@@ -1,0 +1,26 @@
+{
+  "gold": "Số điện thoại. Số đầy đủ.",
+  "predicted": "Số điện thoại số.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "Số điện thoại. Số đầy đủ.",
+  "werNormalizedPredicted": "Số điện thoại. Số.",
+  "qualityScore": 2,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "Số điện thoại. Số đầy đủ.",
+  "sigWerNormalizedPredicted": "Số điện thoại. Số.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Số' to 'Số.' at position 3",
+      "reason": "The word 'đầy' (meaning 'full' or 'complete') is omitted, which changes the meaning from 'full number' to just 'number', making the instruction incomplete and potentially confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đầy' at position 4",
+      "reason": "The word 'đủ' (meaning 'enough' or 'complete') is omitted, further removing the intended meaning of 'full number'. This significantly alters the instruction.",
+      "score": 1
+    }
+  ]
+}

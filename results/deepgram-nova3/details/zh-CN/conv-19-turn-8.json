@@ -1,0 +1,31 @@
+{
+  "gold": "邮箱地址是美玲 at email dot com。",
+  "predicted": "右倾地址是maylingemaildotgon。",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "邮箱地址是美玲 at email dot com。",
+  "werNormalizedPredicted": "邮箱地址是mayling at email dot gon。",
+  "qualityScore": 1,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "邮 箱 地 址 是 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "邮 箱 地 址 是 mayling at email dot gon 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mayling' at position 5",
+      "reason": "'美' is a Chinese character and 'mayling' is a romanized name; the substitution changes the language and form, but 'mayling' is a plausible romanization of '美玲', so the meaning is mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 6",
+      "reason": "'玲' is omitted, so the full name '美玲' is not completely represented; this could cause confusion about the correct name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'com' to 'gon' at position 10",
+      "reason": "'com' is a standard email domain ending, while 'gon' is not; this changes the email address to an invalid one, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

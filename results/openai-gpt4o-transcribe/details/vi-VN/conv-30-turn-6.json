@@ -1,0 +1,26 @@
+{
+  "gold": "Số điện thoại là cộng 84 9 1.",
+  "predicted": "Số điện thoại là +84 91",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Số điện thoại là cộng 84 9 1.",
+  "werNormalizedPredicted": "Số điện thoại là cộng 84 91.",
+  "qualityScore": 3,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Số điện thoại là cộng 84 9 1.",
+  "sigWerNormalizedPredicted": "Số điện thoại là cộng 84 91.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '9' to '91.' at position 6",
+      "reason": "The model combined two separate digits ('9' and '1') into a single number ('91'), which could lead to an incorrect phone number being communicated. This is a significant error as it changes the actual phone number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '1.' at position 7",
+      "reason": "The digit '1' is missing as a separate entity, which alters the phone number and could cause communication failure. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

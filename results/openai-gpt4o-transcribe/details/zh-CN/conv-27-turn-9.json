@@ -1,0 +1,26 @@
+{
+  "gold": "林美 at email 点 com。",
+  "predicted": "林妹@email.com",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "林美 at email 点 com。",
+  "werNormalizedPredicted": "林美@email.com。",
+  "qualityScore": 2,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "林 美 at email 点 com 。",
+  "sigWerNormalizedPredicted": "林 美 @email.com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to '@email.com' at position 2",
+      "reason": "'at' and '@email.com' are not equivalent; '@email.com' combines the email username and domain, while 'at' is just the separator. This changes the structure and clarity of the email address, making it potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "'email' is missing as a separate word, which is important for clarity in the email address. Its omission makes the address less clear and could cause confusion.",
+      "score": 1
+    }
+  ]
+}

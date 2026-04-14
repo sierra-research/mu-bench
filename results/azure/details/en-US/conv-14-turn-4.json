@@ -1,0 +1,31 @@
+{
+  "gold": "Hello? Can you give what is 7 6 2?",
+  "predicted": "Can you give me what is this? 762?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "Hello? Can you give what is 7 6 2?",
+  "werNormalizedPredicted": "Can you give me what is this? 7 6 2?",
+  "qualityScore": 2,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "Hello? Can you give what is 7 6 2?",
+  "sigWerNormalizedPredicted": "Can you give me what is this? 7 6 2?",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'Hello?' at position 0",
+      "reason": "The greeting is omitted, but the main request is still present. The omission does not derail the meaning of the request.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'me' at position 4",
+      "reason": "Adding 'me' does not change the meaning of the request; it is a minor grammatical difference.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'this?' at position 6",
+      "reason": "Inserting 'this?' changes the question from asking for 'what is 7 6 2' to 'what is this', which alters the meaning of the question and could cause confusion.",
+      "score": 1
+    }
+  ]
+}

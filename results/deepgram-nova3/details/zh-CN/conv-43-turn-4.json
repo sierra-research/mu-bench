@@ -1,0 +1,36 @@
+{
+  "gold": "你再等一下，我的意思是，我现在等待新卡，并想知道它的状态。",
+  "predicted": "你在等一下我的意思是我现在当代行卡向指导她的状态。",
+  "unintelligible": false,
+  "wer": 0.3103448275862069,
+  "werNormalizedGold": "你再等一下，我的意思是，我现在等待新卡，并想知道它的状态。",
+  "werNormalizedPredicted": "你在等一下，我的意思是，我现在当代行卡，向指导她的状态。",
+  "qualityScore": 2,
+  "significantWer": 0.10344827586206896,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 29,
+  "sigWerNormalizedGold": "你 再 等 一 下 ， 我 的 意 思 是 ， 我 现 在 等 待 新 卡 ， 并 想 知 道 它 的 状 态 。",
+  "sigWerNormalizedPredicted": "你 在 等 一 下 ， 我 的 意 思 是 ， 我 现 在 当 代 行 卡 ， 向 指 导 她 的 状 态 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 1",
+      "reason": "‘再’ means 'again' or 'wait a bit longer', while ‘在’ means 'at' or 'currently'. This changes the intent of the sentence, making it less clear that the speaker is asking to wait a bit longer.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '等' to '当' at position 15",
+      "reason": "‘等’ means 'wait', while ‘当’ means 'act as' or 'serve as'. This substitution makes the sentence confusing and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '并' to '向' at position 20",
+      "reason": "‘并’ means 'and', connecting two clauses, while ‘向’ means 'towards' or 'to'. This changes the structure and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '它' at position 24",
+      "reason": "‘它’ refers to 'it', specifying the subject (the card). Omitting it makes the sentence less clear but does not completely derail the meaning.",
+      "score": 2
+    }
+  ]
+}

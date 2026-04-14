@@ -1,0 +1,26 @@
+{
+  "gold": "At email nokta com adres, evet.",
+  "predicted": "hepsiemek.com adresi evet.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "At email nokta com adres, evet.",
+  "werNormalizedPredicted": "hepsiemek.com adres, evet.",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "At email nokta com adres, evet.",
+  "sigWerNormalizedPredicted": "hepsiemek.com adres, evet.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'At' to 'hepsiemek.com' at position 0",
+      "reason": "The expected word 'At' (likely part of an email address) is replaced by 'hepsiemek.com', which is a completely different domain and changes the meaning of the address being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 1",
+      "reason": "The word 'email' is omitted, which removes important context about the type of address being referred to, leading to a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

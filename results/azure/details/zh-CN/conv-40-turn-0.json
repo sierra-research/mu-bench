@@ -1,0 +1,26 @@
+{
+  "gold": "喂？",
+  "predicted": "Why?",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "喂？",
+  "werNormalizedPredicted": "Why?",
+  "qualityScore": 1,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "喂 ？",
+  "sigWerNormalizedPredicted": "Why?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '喂' to 'Why?' at position 0",
+      "reason": "The expected word is in Chinese ('喂', meaning 'hello' or 'hey' as a greeting), while the actual is in English ('Why?'), which is a completely different language and meaning. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '？' at position 1",
+      "reason": "The question mark is omitted, but since punctuation differences are to be ignored, this is not an error and does not affect the score.",
+      "score": 3
+    }
+  ]
+}

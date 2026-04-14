@@ -1,0 +1,26 @@
+{
+  "gold": "不对的，不对！是美玲 at email dot com。",
+  "predicted": "部队的部队是maylingemail。com。",
+  "unintelligible": false,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "不对的，不对！是美玲 at email dot com。",
+  "werNormalizedPredicted": "不对的，不对！是mayling at email dot com。",
+  "qualityScore": 1,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "不 对 的 ， 不 对 ！ 是 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "不 对 的 ， 不 对 ！ 是 mayling at email dot com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mayling' at position 8",
+      "reason": "'美玲' is a Chinese name, but 'mayling' is an attempt to phonetically render the name in English. However, the transcription replaces the Chinese characters with an English approximation, which could cause confusion or loss of information, especially in a multilingual context. This is a significant error as the proper noun is not preserved in its original form.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 9",
+      "reason": "The character '玲' is missing from the transcription, which means the full name is not correctly represented. Omitting part of a proper noun (a person's name) is a significant error as it changes the identity being referred to.",
+      "score": 1
+    }
+  ]
+}

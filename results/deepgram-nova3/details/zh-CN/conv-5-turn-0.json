@@ -1,0 +1,36 @@
+{
+  "gold": "我正在等待换我的卡，想知道它的状态。",
+  "predicted": "我正在等待欢乐的卡日到她的状态",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "我正在等待换我的卡，想知道它的状态。",
+  "werNormalizedPredicted": "我正在等待欢乐的卡日到她的状态",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "我 正 在 等 待 换 我 的 卡 ， 想 知 道 它 的 状 态 。",
+  "sigWerNormalizedPredicted": "我 正 在 等 待 欢 乐 的 卡 日 到 她 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '换' to '欢' at position 5",
+      "reason": "The word '换' (change/replace) is replaced with '欢' (joy), which changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '，' to '日' at position 9",
+      "reason": "A comma is replaced with the character '日' (day/sun), which introduces an unrelated word and disrupts the sentence structure.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '道' at position 12",
+      "reason": "The character '道' (know) is missing, which breaks the phrase '想知道' (want to know), making the sentence incomplete.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 17",
+      "reason": "The period at the end is missing, but punctuation differences are to be ignored.",
+      "score": 3
+    }
+  ]
+}

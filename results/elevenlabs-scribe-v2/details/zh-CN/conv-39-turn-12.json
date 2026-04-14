@@ -1,0 +1,26 @@
+{
+  "gold": "君玲。",
+  "predicted": "DreamLean。",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "君玲。",
+  "werNormalizedPredicted": "DreamLean。",
+  "qualityScore": 1,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "君 玲 。",
+  "sigWerNormalizedPredicted": "DreamLean 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'DreamLean' at position 0",
+      "reason": "'君' is a Chinese character (likely a name), while 'DreamLean' is an unrelated English word/name. The substitution changes the language and meaning entirely, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is a Chinese character (likely part of a name), and its omission further removes the intended meaning. The actual transcription does not represent the expected name at all.",
+      "score": 1
+    }
+  ]
+}

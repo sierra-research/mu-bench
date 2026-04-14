@@ -1,0 +1,51 @@
+{
+  "gold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
+  "predicted": "你有什么问题你为什么听不懂我有什么问题有什么问题让我真的没有那份",
+  "unintelligible": false,
+  "wer": 0.5428571428571428,
+  "werNormalizedGold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
+  "werNormalizedPredicted": "你有什么问题，你为什么听不懂，我有什么问题，有什么问题，有什么问题让我真的没有那份",
+  "qualityScore": 2,
+  "significantWer": 0.17142857142857143,
+  "majorErrorsCount": 6,
+  "totalWordsCount": 35,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 ， 你 有 什 么 问 题 ， 为 什 么 听 不 懂 我 ， 你 有 什 么 问 题 ， 有 什 么 问 题 ？",
+  "sigWerNormalizedPredicted": "你 有 什 么 问 题 ， 你 为 什 么 听 不 懂 ， 我 有 什 么 问 题 ， 有 什 么 问 题 ， 有 什 么 问 题 让 我 真 的 没 有 那 份",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '有' to '为' at position 8",
+      "reason": "Changes the meaning from 'you have' to 'you why', which alters the sentence structure and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '问' to '不' at position 11",
+      "reason": "Inserts 'listen' in a place that changes the sentence structure, but the overall meaning is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '为' to '有' at position 14",
+      "reason": "Changes 'question' to 'not', which alters the meaning of the phrase significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '听' to '问' at position 17",
+      "reason": "Inserts 'I' in a place that changes the subject of the sentence, which can confuse the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '懂' at position 19",
+      "reason": "Changes 'why' to 'have', which alters the question's intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '你' at position 22",
+      "reason": "Changes 'listen' to 'question', which changes the action being described.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '？' to '份' at position 34",
+      "reason": "Removes 'understand', which is crucial to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

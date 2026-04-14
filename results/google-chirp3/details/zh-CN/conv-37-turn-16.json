@@ -1,0 +1,31 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "greenling@gmail.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "君玲 at email dot com。",
+  "werNormalizedPredicted": "greenling at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "greenling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'greenling' at position 0",
+      "reason": "'君' is a Chinese character (likely a name), while 'greenling' is an English word with a completely different meaning. This substitution changes the identity and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is another Chinese character (likely part of the name). Its omission means the name is incomplete or incorrect, which is a significant error for names or email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The omission of the period at the end does not affect the meaning of the sentence or the email address.",
+      "score": 3
+    }
+  ]
+}

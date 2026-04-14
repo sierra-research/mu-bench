@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.venv/
+
+# Build output
+dist/
+.vite/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Audio data (downloaded separately from HuggingFace)
+audio/
+
+# Legacy annotation data (not part of the benchmark)
+legacy/
+
+# Latency re-run data (generated locally)
+latency_runs/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Scoring prompts (stored as GitHub secret, injected in CI)
+scoring/prompts.py
+
+# Temporary artifacts
+audio_rename_map.json

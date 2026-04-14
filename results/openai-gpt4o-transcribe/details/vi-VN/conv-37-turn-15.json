@@ -1,0 +1,51 @@
+{
+  "gold": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
+  "predicted": "Thẻ đang có bị chậm hay là có vấn đề gì trong quá trình lao không ạ? Nếu mà có thì cho tôi xin cái phương án hỗ trợ tạm thời, ví dụ như là sử dụng thẻ ảo hoặc là các giải pháp thay thế để tôi không bị gián đoạn trong cái việc thanh toán ý.",
+  "unintelligible": false,
+  "wer": 0.18,
+  "werNormalizedGold": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
+  "werNormalizedPredicted": "Thẻ đang có bị chậm hay là có vấn đề gì trong quá trình giao không ạ? Nếu mà có thì cho tôi xin phương án hỗ trợ tạm thời, ví dụ như là sử dụng thẻ ảo hoặc là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 50,
+  "sigWerNormalizedGold": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
+  "sigWerNormalizedPredicted": "Thẻ đang có bị chậm hay là có vấn đề gì trong quá trình giao không ạ? Nếu mà có thì cho tôi xin phương án hỗ trợ tạm thời, ví dụ như là sử dụng thẻ ảo hoặc là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'đang' at position 1",
+      "reason": "'đang' is moved in position but does not change the meaning of the sentence; both versions ask if the card is currently delayed.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'đang' at position 2",
+      "reason": "This is not a true deletion, but a reordering; the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'là' at position 6",
+      "reason": "Adding 'là' is a minor grammatical difference in Vietnamese, does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'gì' at position 9",
+      "reason": "Adding 'gì' (what) makes the question slightly more explicit but does not change the intent or meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mà' at position 16",
+      "reason": "'mà' is a discourse particle in Vietnamese, its presence or absence does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'thời' to 'dụ' at position 26",
+      "reason": "This is actually a misalignment; the actual says 'tạm thời, ví dụ như là...' instead of 'tạm thời như là...'. The meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'hay' to 'hoặc' at position 33",
+      "reason": "'thời' is part of 'tạm thời' (temporarily), 'dụ' is part of 'ví dụ' (for example). This is a misalignment due to the phrase 'ví dụ như là' being inserted, but the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

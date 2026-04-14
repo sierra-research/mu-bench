@@ -1,0 +1,26 @@
+{
+  "gold": "Teşekkür ederim.",
+  "predicted": "teşekkürler",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "Teşekkür ederim.",
+  "werNormalizedPredicted": "teşekkürler.",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "Teşekkür ederim.",
+  "sigWerNormalizedPredicted": "teşekkürler.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Teşekkür' to 'teşekkürler.' at position 0",
+      "reason": "'Teşekkürler' means 'thanks' and 'teşekkür ederim' means 'thank you'. The meaning is very similar and the intent is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ederim.' at position 1",
+      "reason": "Omitting 'ederim' changes 'thank you' to just 'thanks', which is a minor difference in formality but does not change the overall meaning.",
+      "score": 3
+    }
+  ]
+}

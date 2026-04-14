@@ -1,0 +1,31 @@
+{
+  "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "predicted": "Daha önce mesafe ekstresi istemiştim aylık, henüz şu ana kadar gelmedi. Bana gönderebilir misiniz hesap ekstresini?",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "werNormalizedPredicted": "Daha önce mesafe ekstresi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misiniz hesap ekstresini?",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "sigWerNormalizedPredicted": "Daha önce mesafe ekstresi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misiniz hesap ekstresini?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hesap' to 'mesafe' at position 2",
+      "reason": "'Hesap ekstresi' (account statement) and 'mesafe ekstresi' (distance statement) are completely different concepts, changing the meaning of the request.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'İstediğim' to 'Henüz' at position 6",
+      "reason": "'İstediğim' (what I requested) and 'Henüz' (yet) are different words and change the structure of the sentence, but the overall meaning (the statement hasn't arrived yet) is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'misin' to 'misiniz' at position 13",
+      "reason": "Both are forms of 'can you' (singular vs. plural/formal), so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

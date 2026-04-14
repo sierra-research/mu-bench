@@ -1,0 +1,31 @@
+{
+  "gold": "我正在等待我的信用卡，想知道它的状态。",
+  "predicted": "我正在当dvid的信用卡而知道它的状态。",
+  "unintelligible": false,
+  "wer": 0.3684210526315789,
+  "werNormalizedGold": "我正在等待我的信用卡，想知道它的状态。",
+  "werNormalizedPredicted": "我正在当 d v i d 的信用卡而知道它的状态。",
+  "qualityScore": 2,
+  "significantWer": 0.15789473684210525,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 ， 想 知 道 它 的 状 态 。",
+  "sigWerNormalizedPredicted": "我 正 在 当 d v i d 的 信 用 卡 而 知 道 它 的 状 态 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '等' to 'v' at position 3",
+      "reason": "The insertion of '当' (which means 'to be' or 'when') instead of the expected '等' (which means 'wait') changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '，' to '而' at position 10",
+      "reason": "The expected character '等' (wait) is replaced by 'v', which is not a valid Chinese character in this context and makes the sentence nonsensical.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '想' at position 11",
+      "reason": "Replacing the comma with '而' (which means 'and' or 'but') changes the sentence structure and meaning, leading to confusion.",
+      "score": 1
+    }
+  ]
+}

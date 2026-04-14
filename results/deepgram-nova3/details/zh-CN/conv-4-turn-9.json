@@ -1,0 +1,36 @@
+{
+  "gold": "不是不是不是，是君，君。",
+  "predicted": "是菌菌",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werNormalizedGold": "不是不是不是，是君，君。",
+  "werNormalizedPredicted": "是君君",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "不 是 不 是 不 是 ， 是 君 ， 君 。",
+  "sigWerNormalizedPredicted": "是 君 君",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '不' at position 0",
+      "reason": "The repeated '不是' (not) at the beginning is omitted, which reverses the meaning from negation to affirmation. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '不' at position 2",
+      "reason": "Omitting the repeated '不是' again further removes the negation, reinforcing the change in meaning. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '，' at position 9",
+      "reason": "Punctuation differences such as commas do not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 11",
+      "reason": "Punctuation differences such as periods do not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
+  "predicted": "Hayır, yanlış yanlış siz bana demin CN 720 dediniz.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
+  "werNormalizedPredicted": "Hayır, yanlış. Siz bana demin CN 720 dediniz.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
+  "sigWerNormalizedPredicted": "Hayır, yanlış. Siz bana demin CN 720 dediniz.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
+      "reason": "Difference is only a comma, which is punctuation and should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'C' to 'CN' at position 5",
+      "reason": "'C N' is spoken as two separate letters, while 'CN' is a single combined token. This could cause confusion, especially if these are part of a code or identifier. However, the meaning is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'N' at position 6",
+      "reason": "The letter 'N' is omitted as a separate token, but it is present as part of 'CN' in the actual transcription. Since the information is not lost but merged, the meaning is preserved.",
+      "score": 2
+    }
+  ]
+}

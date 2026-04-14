@@ -1,0 +1,31 @@
+{
+  "gold": "No, el correo es María punto López arroba email punto com.",
+  "predicted": "El correo es María punto López arroba Gmail punto com.",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "No, el correo es María punto López arroba email punto com.",
+  "werNormalizedPredicted": "El correo es María punto López arroba Gmail punto com.",
+  "qualityScore": 2,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "No, el correo es María punto López arroba email punto com.",
+  "sigWerNormalizedPredicted": "El correo es María punto López arroba Gmail punto com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'No,' to 'El' at position 0",
+      "reason": "The substitution changes the initial response from a negative ('No,') to a neutral article ('El'), which alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'el' at position 1",
+      "reason": "The omission of the article 'el' does not significantly affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'Gmail' at position 8",
+      "reason": "Changing the domain from 'email' to 'Gmail' changes the actual email address, which is a significant factual error.",
+      "score": 1
+    }
+  ]
+}

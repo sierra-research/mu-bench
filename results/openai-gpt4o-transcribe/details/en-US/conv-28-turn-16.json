@@ -1,0 +1,31 @@
+{
+  "gold": "Yes, please. Get me to that live agent. Like, I need to figure this out because I already, like, got so many purchases I need to make, and my card's not here, so yeah, get me to an agent, please.",
+  "predicted": "Yes, please get me to that live agent. I already got so many purchases I need to make and my car's not here. So yeah, get me to an agent, please.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Yes, please. Get me to that live agent. Like, I need to figure this out because I already, like, got so many purchases I need to make, and my card's not here, so yeah, get me to an agent, please.",
+  "werNormalizedPredicted": "Yes, please. Get me to that live agent. I already got so many purchases I need to make, and my card's not here, so yeah, get me to an agent, please.",
+  "qualityScore": 3,
+  "significantWer": 0.05,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 40,
+  "sigWerNormalizedGold": "Yes, please. Get me to that live agent. Like, I need to figure this out because I already, like, got so many purchases I need to make, and my card's not here, so yeah, get me to an agent, please.",
+  "sigWerNormalizedPredicted": "Yes, please. Get me to that live agent. I already got so many purchases I need to make, and my card's not here, so yeah, get me to an agent, please.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'Like,' at position 8",
+      "reason": "The word 'Like,' is a filler/discourse marker and its omission does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'need' to 'already' at position 10",
+      "reason": "The phrase 'I need to figure this out because I already, like, got so many purchases...' was changed to 'I already got so many purchases...'. The omission of 'need to figure this out because' removes the speaker's motivation and reasoning, which is significant to the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'to' at position 11",
+      "reason": "This 'to' is part of the omitted phrase 'need to figure this out', which is already counted as a significant omission above.",
+      "score": 1
+    }
+  ]
+}

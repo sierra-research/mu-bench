@@ -1,0 +1,26 @@
+{
+  "gold": "Email là thu chấm trần a còng email chấm com.",
+  "predicted": "Email là thu. Trầngmail chấm com",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "Email là thu chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Email là thu. trần a còng email chấm com.",
+  "qualityScore": 2,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "Email là thu chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Email là thu. trần a còng email chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thu' to 'thu.' at position 2",
+      "reason": "The only difference is the punctuation (period) after 'thu', which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "Missing 'chấm' (dot) in the email address changes the structure of the email, which can make the email address invalid or confusing. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

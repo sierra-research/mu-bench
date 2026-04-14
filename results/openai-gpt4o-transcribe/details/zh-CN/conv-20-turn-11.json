@@ -1,0 +1,36 @@
+{
+  "gold": "你正在说什么，你正在说什么，你是不是傻子。",
+  "predicted": "哇，你正在说什么？你是个傻子。",
+  "unintelligible": false,
+  "wer": 0.38095238095238093,
+  "werNormalizedGold": "你正在说什么，你正在说什么，你是不是傻子。",
+  "werNormalizedPredicted": "哇，你正在说什么，你是个傻子。",
+  "qualityScore": 2,
+  "significantWer": 0.09523809523809523,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "你 正 在 说 什 么 ， 你 正 在 说 什 么 ， 你 是 不 是 傻 子 。",
+  "sigWerNormalizedPredicted": "哇 ， 你 正 在 说 什 么 ， 你 是 个 傻 子 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '哇' at position 0",
+      "reason": "'哇' is an interjection (like 'wow'), while '你' means 'you'; this changes the subject and tone of the sentence, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '正' at position 1",
+      "reason": "Omitting '正' (which indicates an ongoing action) slightly changes the aspect of the verb, but the main meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '不' to '个' at position 16",
+      "reason": "'不' (not) is replaced by '个' (a measure word), which changes the meaning from 'are you not a fool' to 'you are a fool', reversing the intent. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '是' at position 17",
+      "reason": "Omitting '是' (to be) in this context makes the sentence less grammatically correct but does not drastically change the meaning, as the intent is still clear.",
+      "score": 2
+    }
+  ]
+}

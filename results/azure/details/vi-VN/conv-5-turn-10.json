@@ -1,0 +1,31 @@
+{
+  "gold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
+  "predicted": "Ờ cảm ơn đan na nhá có gì cần phải gọi đi?",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werNormalizedGold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
+  "werNormalizedPredicted": "Ừ. Cảm ơn Đan Na nhá. Có gì cần phải gọi đi?",
+  "qualityScore": 2,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
+  "sigWerNormalizedPredicted": "Ừ. Cảm ơn Đan Na nhá. Có gì cần phải gọi đi?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna' to 'Na' at position 3",
+      "reason": "'Đan Na' is a mishearing or mis-segmentation of the name 'Anna'. This changes the proper noun being addressed, which could confuse the identity of the person. However, the context still indicates a name, so it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'mình' to 'phải' at position 8",
+      "reason": "The name 'Anna' is split into 'Đan Na', which alters the proper noun but does not completely obscure the intended meaning. Still, it is a minor error as the name is not correct.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lên.' to 'đi?' at position 10",
+      "reason": "Replacing 'mình' (myself) with 'phải' (must) changes the meaning of the sentence, as it shifts from a statement about who will call to an obligation to call. This significantly alters the intent.",
+      "score": 1
+    }
+  ]
+}

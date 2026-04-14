@@ -1,0 +1,31 @@
+{
+  "gold": "O zaman kredi kartımın, kart numarası ve son ödeme. Bir saniye beni bir dinleyebilir misin? Kredi kartımın numarasını, bir de kredi kartımın, bir saniye beni dinler misin? O zaman son ödeme tarihini öğrenebilir miyim?",
+  "predicted": "O zaman kredi kartımın numarasını bir de kredi kartımın son ödeme tarihini öğrenebilir miyim?",
+  "unintelligible": false,
+  "wer": 0.6176470588235294,
+  "werNormalizedGold": "O zaman kredi kartımın, kart numarası ve son ödeme. Bir saniye beni bir dinleyebilir misin? Kredi kartımın numarasını, bir de kredi kartımın, bir saniye beni dinler misin? O zaman son ödeme tarihini öğrenebilir miyim?",
+  "werNormalizedPredicted": "O zaman kredi kartımın numarasını, bir de kredi kartımın son ödeme tarihini öğrenebilir miyim?",
+  "qualityScore": 2,
+  "significantWer": 0.029411764705882353,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 34,
+  "sigWerNormalizedGold": "O zaman kredi kartımın, kart numarası ve son ödeme. Bir saniye beni bir dinleyebilir misin? Kredi kartımın numarasını, bir de kredi kartımın, bir saniye beni dinler misin? O zaman son ödeme tarihini öğrenebilir miyim?",
+  "sigWerNormalizedPredicted": "O zaman kredi kartımın numarasını, bir de kredi kartımın son ödeme tarihini öğrenebilir miyim?",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'kartımın,' at position 3",
+      "reason": "The phrase 'kart numarası ve son ödeme.' is missing from the actual transcription. This omits a specific detail about the card number and due date, which is important information and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kartımın,' to 'kartımın' at position 21",
+      "reason": "The sentence 'Bir saniye beni bir dinleyebilir misin?' is missing. This is a request for attention and politeness, but its omission does not significantly change the core meaning about the card information request.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 22",
+      "reason": "The phrase 'bir de kredi kartımın, bir saniye beni dinler misin?' is missing. This is a repetition and a polite request for attention, but its omission does not change the main intent of the sentence.",
+      "score": 2
+    }
+  ]
+}

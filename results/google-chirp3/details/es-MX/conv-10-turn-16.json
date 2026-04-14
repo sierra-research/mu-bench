@@ -1,0 +1,31 @@
+{
+  "gold": "No. Te falta el punto. María punto López arroba email punto com.",
+  "predicted": "No, te falta el punto. punto loco @email.com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
+  "werNormalizedPredicted": "No, te falta el punto. punto loco arroba email punto com.",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
+  "sigWerNormalizedPredicted": "No, te falta el punto. punto loco arroba email punto com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'No.' to 'No,' at position 0",
+      "reason": "Difference is only punctuation (period vs comma), which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'María' at position 5",
+      "reason": "'María' is a key part of the email address (the username). Omitting it changes the email address and makes it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'López' to 'loco' at position 7",
+      "reason": "'López' is a surname and part of the email address, while 'loco' is a completely different word. This substitution changes the meaning and makes the email address incorrect.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Thế một một số cuối cùng phải đầy đủ là+ 84 9117345678.",
+  "unintelligible": false,
+  "wer": 0.23809523809523808,
+  "werNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "werNormalizedPredicted": "Thế một một số cuối cùng phải đầy đủ là cộng 84 9 1 1 7 3 4 5 6 7 8.",
+  "qualityScore": 2,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "sigWerNormalizedPredicted": "Thế một một số cuối cùng phải đầy đủ là cộng 84 9 1 1 7 3 4 5 6 7 8.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Thiếu' to 'Thế' at position 0",
+      "reason": "'Thiếu' means 'missing' or 'lacking', while 'Thế' means 'so' or 'thus'; this changes the meaning and intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cùng,' to 'phải' at position 5",
+      "reason": "'cùng' means 'last' (as in 'last number'), while 'phải' means 'must'; this changes the structure and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '2' to '7' at position 14",
+      "reason": "The digit '2' is replaced with '7' in a phone number sequence, which is a significant error as it changes the actual number.",
+      "score": 1
+    }
+  ]
+}

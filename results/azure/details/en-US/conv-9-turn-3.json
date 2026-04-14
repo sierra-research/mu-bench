@@ -1,0 +1,26 @@
+{
+  "gold": "1 2, okay.",
+  "predicted": "One, two.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "1 2, okay.",
+  "werNormalizedPredicted": "1, 2.",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "1 2, okay.",
+  "sigWerNormalizedPredicted": "1, 2.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '1' to '1,' at position 0",
+      "reason": "Difference is only punctuation, which should be ignored as per guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'okay.' at position 2",
+      "reason": "'okay' is a minor affirmation at the end; its omission does not change the main meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

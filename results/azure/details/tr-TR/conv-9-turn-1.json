@@ -1,0 +1,26 @@
+{
+  "gold": "Tamam. Buyurun, buyurun evet.",
+  "predicted": "Evet.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "Tamam. Buyurun, buyurun evet.",
+  "werNormalizedPredicted": "Evet.",
+  "qualityScore": 2,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "Tamam. Buyurun, buyurun evet.",
+  "sigWerNormalizedPredicted": "Evet.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tamam.' to 'Evet.' at position 0",
+      "reason": "The word 'Tamam.' (meaning 'Okay.') is missing, which removes an affirmative response and changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Buyurun,' at position 1",
+      "reason": "The word 'Buyurun,' (meaning 'Here you go' or 'Please') is missing, which omits a polite or directive phrase and alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

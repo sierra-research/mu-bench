@@ -1,0 +1,31 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mailing at email.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "美玲 at email dot com。",
+  "werNormalizedPredicted": "mailing at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "mailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the intended meaning and identity in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name in the email address. Its omission results in an incorrect or incomplete email username, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The deletion of the punctuation mark '。' does not affect the meaning or function of the sentence.",
+      "score": 3
+    }
+  ]
+}

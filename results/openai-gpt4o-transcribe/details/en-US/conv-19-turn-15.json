@@ -1,0 +1,36 @@
+{
+  "gold": "My phone number, it is 1 2 1 2 1 2 3 4 5 6 7. 6 7.",
+  "predicted": "My phone number is 12124567.",
+  "unintelligible": false,
+  "wer": 0.3888888888888889,
+  "werNormalizedGold": "My phone number, it is 1 2 1 2 1 2 3 4 5 6 7. 6 7.",
+  "werNormalizedPredicted": "My phone number is 1 2 1 2 4 5 6 7.",
+  "qualityScore": 2,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "My phone number, it is 1 2 1 2 1 2 3 4 5 6 7. 6 7.",
+  "sigWerNormalizedPredicted": "My phone number is 1 2 1 2 4 5 6 7.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'number,' to 'number' at position 2",
+      "reason": "Difference is only punctuation (comma), which should be ignored as per guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'it' at position 3",
+      "reason": "Omitting 'it is' slightly changes the sentence structure but does not affect the meaning; the phone number is still clearly communicated.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '1' at position 9",
+      "reason": "Missing a digit in the phone number changes the actual number, which is a significant error as it makes the phone number incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '6' at position 14",
+      "reason": "Missing a digit in the phone number changes the actual number, which is a significant error as it makes the phone number incorrect.",
+      "score": 1
+    }
+  ]
+}

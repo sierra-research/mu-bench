@@ -1,0 +1,26 @@
+{
+  "gold": "你好。",
+  "predicted": "Yeah。",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "你好。",
+  "werNormalizedPredicted": "Yeah.",
+  "qualityScore": 1,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "你 好 。",
+  "sigWerNormalizedPredicted": "Yeah.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'Yeah.' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "The word '好' is missing in the actual transcription, further contributing to the loss of the intended meaning in the original sentence.",
+      "score": 1
+    }
+  ]
+}

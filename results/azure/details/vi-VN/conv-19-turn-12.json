@@ -1,0 +1,31 @@
+{
+  "gold": "Có. Tôi muốn tăng hạn mức lên 100000000 có được không?",
+  "predicted": "Ờ có tôi muốn tặng hạn mức lên 100 triệu có được không?",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werNormalizedGold": "Có. Tôi muốn tăng hạn mức lên 100000000 có được không?",
+  "werNormalizedPredicted": "Ờ, có. Tôi muốn tặng hạn mức lên 100,000,000 có được không?",
+  "qualityScore": 3,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "Có. Tôi muốn tăng hạn mức lên 100000000 có được không?",
+  "sigWerNormalizedPredicted": "Ờ, có. Tôi muốn tặng hạn mức lên 100,000,000 có được không?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Có.' to 'có.' at position 0",
+      "reason": "'Ờ,' is a filler word in Vietnamese and does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'tăng' to 'tặng' at position 3",
+      "reason": "Difference is only in capitalization, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '100000000' to '100,000,000' at position 7",
+      "reason": "'Tăng' means 'increase', while 'tặng' means 'give as a gift'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
+}

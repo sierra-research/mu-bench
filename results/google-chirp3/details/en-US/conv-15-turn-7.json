@@ -1,0 +1,26 @@
+{
+  "gold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "number would be 1221234567.",
+  "unintelligible": false,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
+  "werNormalizedPredicted": "number would be 1 2 2 1 2 3 4 5 6 7.",
+  "qualityScore": 2,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
+  "sigWerNormalizedPredicted": "number would be 1 2 2 1 2 3 4 5 6 7.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'Phone' at position 0",
+      "reason": "Omitting 'Phone' removes the context that these numbers are a phone number, which could confuse the listener about what the numbers refer to.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '1' at position 6",
+      "reason": "The digit sequence is incorrect for a phone number; a single digit error in a phone number makes it invalid or connects to the wrong number.",
+      "score": 1
+    }
+  ]
+}

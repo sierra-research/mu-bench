@@ -1,0 +1,31 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mailingemail。com你听到的吗",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "美玲 at email dot com。",
+  "werNormalizedPredicted": "mailing at email dot com 你听到的吗",
+  "qualityScore": 1,
+  "significantWer": 0.42857142857142855,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "mailing at email dot com 你 听 到 的 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This changes the intended recipient or subject and derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name in the expected transcript. Its omission means the name is incomplete or incorrect, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '。' to '吗' at position 6",
+      "reason": "'你' (you) is an extra word in Chinese that is not present in the expected transcript. Its addition introduces unrelated content, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

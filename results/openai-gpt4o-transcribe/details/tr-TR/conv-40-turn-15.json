@@ -1,0 +1,26 @@
+{
+  "gold": "Yazıyor musun? Artı 90 123.",
+  "predicted": "Yazıyor musun? Artı doksan",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werNormalizedGold": "Yazıyor musun? Artı 90 123.",
+  "werNormalizedPredicted": "Yazıyor musun? Artı doksan",
+  "qualityScore": 2,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "Yazıyor musun? Artı 90 123.",
+  "sigWerNormalizedPredicted": "Yazıyor musun? Artı doksan",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '90' to 'doksan' at position 3",
+      "reason": "'90' and 'doksan' are numeric equivalents (Turkish for ninety), so this is not an error.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '123.' at position 4",
+      "reason": "The number '123' is missing from the actual transcription, which could be important information (e.g., part of a phone number or code), so this is a significant error.",
+      "score": 1
+    }
+  ]
+}

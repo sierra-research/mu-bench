@@ -1,0 +1,26 @@
+{
+  "gold": "OK. Số điện thoại của mình là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Ok số điện thoại của mình là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.10526315789473684,
+  "werNormalizedGold": "OK. Số điện thoại của mình là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "werNormalizedPredicted": "OK. Số điện thoại của mình là cộng 84 91 1 2 3 4 5 6 7 8.",
+  "qualityScore": 3,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "OK. Số điện thoại của mình là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "sigWerNormalizedPredicted": "OK. Số điện thoại của mình là cộng 84 91 1 2 3 4 5 6 7 8.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '9' to '91' at position 9",
+      "reason": "The model combined two digits ('9' and '1') into one ('91'), which could cause confusion in a phone number and result in an incorrect number being communicated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '1' at position 10",
+      "reason": "A digit is missing from the phone number, which makes the phone number incorrect and unusable.",
+      "score": 1
+    }
+  ]
+}

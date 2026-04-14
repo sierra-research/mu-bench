@@ -1,0 +1,36 @@
+{
+  "gold": "你要重复我的姓名，嗯。",
+  "predicted": "你要充富的心灵。",
+  "unintelligible": false,
+  "wer": 0.6363636363636364,
+  "werNormalizedGold": "你要重复我的姓名，嗯。",
+  "werNormalizedPredicted": "你要充富的心灵。",
+  "qualityScore": 1,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 要 重 复 我 的 姓 名 ， 嗯 。",
+  "sigWerNormalizedPredicted": "你 要 充 富 的 心 灵 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '重' to '充' at position 2",
+      "reason": "The word '重' (repeat) is replaced with '充' (fill), which changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 4",
+      "reason": "The omission of '我' (I/me) removes the subject of the sentence, making the meaning unclear and significantly altering the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '姓' to '心' at position 6",
+      "reason": "'姓' (surname) is replaced with '心' (heart), which completely changes the meaning and derails the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '，' at position 8",
+      "reason": "Punctuation differences are ignored as per guidance and do not affect meaning.",
+      "score": 3
+    }
+  ]
+}

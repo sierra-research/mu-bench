@@ -1,0 +1,31 @@
+{
+  "gold": "Is I would love Is it the same tracking number you already gave me or is there a new tracking number?",
+  "predicted": "Is it the same tracking number you already gave me?",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "Is I would love Is it the same tracking number you already gave me or is there a new tracking number?",
+  "werNormalizedPredicted": "Is it the same tracking number you already gave me?",
+  "qualityScore": 2,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "Is I would love Is it the same tracking number you already gave me or is there a new tracking number?",
+  "sigWerNormalizedPredicted": "Is it the same tracking number you already gave me?",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'I' at position 1",
+      "reason": "The word 'I' at the beginning appears to be a disfluency or filler and does not affect the meaning of the sentence. Its omission does not change the intent or meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'me' to 'me?' at position 13",
+      "reason": "The only difference is the punctuation (question mark), which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'or' at position 14",
+      "reason": "The omission of 'or is there a new tracking number?' removes a significant part of the question, changing the meaning from asking about both the same and a new tracking number to only asking about the same one. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

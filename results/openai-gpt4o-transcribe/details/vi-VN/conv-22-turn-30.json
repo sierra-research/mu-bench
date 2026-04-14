@@ -1,0 +1,26 @@
+{
+  "gold": "Tôi muốn xin được lấy sao kê của cả năm luôn được không?",
+  "predicted": "Tôi muốn xin được lấy sau của cả năm luôn được không?",
+  "unintelligible": false,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "Tôi muốn xin được lấy sao kê của cả năm luôn được không?",
+  "werNormalizedPredicted": "Tôi muốn xin được lấy sau của cả năm luôn được không?",
+  "qualityScore": 2,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "Tôi muốn xin được lấy sao kê của cả năm luôn được không?",
+  "sigWerNormalizedPredicted": "Tôi muốn xin được lấy sau của cả năm luôn được không?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sao' to 'sau' at position 5",
+      "reason": "'Sao kê' means 'bank statement' in Vietnamese, while 'sau' means 'after'. Substituting 'sao' with 'sau' changes the meaning of the request and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kê' at position 6",
+      "reason": "Omitting 'kê' removes the key part of the phrase 'sao kê' (bank statement), making the request unclear and changing the intended meaning.",
+      "score": 1
+    }
+  ]
+}

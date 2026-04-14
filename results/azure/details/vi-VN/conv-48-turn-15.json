@@ -1,0 +1,36 @@
+{
+  "gold": "Đợi tôi một xíu để tôi kiểm tra.",
+  "predicted": "Lại tôi một xíu nữa tôi kịp.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "Đợi tôi một xíu để tôi kiểm tra.",
+  "werNormalizedPredicted": "Lại tôi một xíu nữa tôi kịp.",
+  "qualityScore": 1,
+  "significantWer": 0.5,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Đợi tôi một xíu để tôi kiểm tra.",
+  "sigWerNormalizedPredicted": "Lại tôi một xíu nữa tôi kịp.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Đợi' to 'Lại' at position 0",
+      "reason": "'Đợi' means 'wait', while 'Lại' means 'again' or 'come back'; this changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'để' to 'nữa' at position 4",
+      "reason": "'để' means 'to' (as in 'in order to'), while 'nữa' means 'more' or 'again'; this alters the sentence structure and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kiểm' to 'kịp.' at position 6",
+      "reason": "'kiểm' (from 'kiểm tra' meaning 'check') is replaced by 'kịp' ('in time'), which changes the action and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tra.' at position 7",
+      "reason": "Omitting 'tra' (from 'kiểm tra' meaning 'check') removes the main verb, making the sentence incomplete and changing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "C C N 4 8 2。",
+  "predicted": "CN422.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "C C N 4 8 2。",
+  "werNormalizedPredicted": "C N 4 2 2.",
+  "qualityScore": 1,
+  "significantWer": 0.42857142857142855,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "C C N 4 8 2 。",
+  "sigWerNormalizedPredicted": "C N 4 2 2.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'C' at position 1",
+      "reason": "A letter is missing in a spelled-out sequence, which changes the intended code or identifier.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '8' at position 4",
+      "reason": "A digit is missing in a sequence of numbers, which alters the intended code or identifier.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '。' to '2.' at position 6",
+      "reason": "The expected character is a punctuation mark, but the actual has an extra '2' before the period, which changes the sequence and could cause confusion in a code or identifier.",
+      "score": 1
+    }
+  ]
+}

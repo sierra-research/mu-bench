@@ -1,0 +1,31 @@
+{
+  "gold": "G H 0 4 1 2 3 4 5 6.",
+  "predicted": "CHZ 123456.",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werNormalizedGold": "G H 0 4 1 2 3 4 5 6.",
+  "werNormalizedPredicted": "C H Z 1 2 3 4 5 6.",
+  "qualityScore": 1,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "G H 0 4 1 2 3 4 5 6.",
+  "sigWerNormalizedPredicted": "C H Z 1 2 3 4 5 6.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'G' to 'C' at position 0",
+      "reason": "In a spelled-out sequence, substituting 'G' with 'C' is a significant error as it changes the intended letter completely.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '0' to 'Z' at position 2",
+      "reason": "In a spelled-out sequence, substituting the digit '0' with the letter 'Z' is a significant error as it changes the intended character entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '4' at position 3",
+      "reason": "Omitting a digit in a spelled-out sequence is a significant error as it alters the sequence and could lead to incorrect information.",
+      "score": 1
+    }
+  ]
+}

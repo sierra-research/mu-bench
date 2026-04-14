@@ -1,0 +1,36 @@
+{
+  "gold": "Why does that have to take so long?",
+  "predicted": "Does it have to take someone?",
+  "unintelligible": false,
+  "wer": 0.625,
+  "werNormalizedGold": "Why does that have to take so long?",
+  "werNormalizedPredicted": "Does it have to take someone?",
+  "qualityScore": 1,
+  "significantWer": 0.375,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Why does that have to take so long?",
+  "sigWerNormalizedPredicted": "Does it have to take someone?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Why' to 'Does' at position 0",
+      "reason": "'Why' asks for a reason, while 'Does' is a yes/no question starter; this changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'that' at position 2",
+      "reason": "Omitting 'that' changes the subject and structure of the sentence, making it less clear what is being referred to.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'so' to 'someone?' at position 6",
+      "reason": "'So' refers to the extent of time, while 'someone' introduces a completely different meaning, derailing the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'long?' at position 7",
+      "reason": "Removing 'long' omits the key aspect of the question about duration, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

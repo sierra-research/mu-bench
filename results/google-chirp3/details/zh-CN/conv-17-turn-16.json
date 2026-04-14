@@ -1,0 +1,36 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "Meilin@email.com",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "美玲 at email dot com。",
+  "werNormalizedPredicted": "Meilin at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "Meilin at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'Meilin' at position 0",
+      "reason": "'美' is a Chinese character and 'Meilin' is a romanized version of a Chinese name. The substitution changes the script but preserves the intended name, so the meaning is mostly retained.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the full name '美玲'. Omitting it changes the name and could refer to a different person, which is a significant error for names.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 5",
+      "reason": "The difference is only punctuation, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The deletion is of a punctuation mark, which does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

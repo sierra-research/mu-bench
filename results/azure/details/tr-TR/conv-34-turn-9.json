@@ -1,0 +1,26 @@
+{
+  "gold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
+  "predicted": "E posta adresimzeyneparslan@email.com telefon numaramsı 123 sıfır 90 45 67.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werNormalizedGold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
+  "werNormalizedPredicted": "E-posta adresim Zaynep nokta Arslan at email nokta com. Telefon numaram 1 2 3 sıfır 90 45 67.",
+  "qualityScore": 2,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
+  "sigWerNormalizedPredicted": "E-posta adresim Zaynep nokta Arslan at email nokta com. Telefon numaram 1 2 3 sıfır 90 45 67.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adresim,' to 'adresim' at position 1",
+      "reason": "Difference is only punctuation (comma), which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '0' to '2' at position 11",
+      "reason": "The digit '1' is inserted at the start of the phone number, which changes the actual phone number and could cause confusion or failed contact.",
+      "score": 1
+    }
+  ]
+}

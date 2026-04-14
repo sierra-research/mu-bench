@@ -1,0 +1,41 @@
+{
+  "gold": "Muốn. Vui lòng cho gặp nhận viên hỗ trợ trực tiếp.",
+  "predicted": "Muốn vui lòng là ừm cho gặp nhân viên có chờ chị.",
+  "unintelligible": false,
+  "wer": 0.8181818181818182,
+  "werNormalizedGold": "Muốn. Vui lòng cho gặp nhận viên hỗ trợ trực tiếp.",
+  "werNormalizedPredicted": "Muốn, vui lòng là ừm cho gặp nhân viên có chờ chị.",
+  "qualityScore": 2,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "Muốn. Vui lòng cho gặp nhận viên hỗ trợ trực tiếp.",
+  "sigWerNormalizedPredicted": "Muốn, vui lòng là ừm cho gặp nhân viên có chờ chị.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Muốn.' to 'Muốn,' at position 0",
+      "reason": "Difference is only punctuation, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'là' at position 3",
+      "reason": "The insertion of 'là' does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'nhận' to 'nhân' at position 5",
+      "reason": "'nhận viên' is a mishearing of 'nhân viên' (staff), but 'nhân viên' is the correct term. The actual transcription is correct, so this is not an error.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'hỗ' to 'có' at position 7",
+      "reason": "Replacing 'hỗ' (from 'hỗ trợ' = support) with 'có' (have) changes the meaning of the sentence, making it unclear and derailing the intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tiếp.' at position 10",
+      "reason": "Omitting 'trực tiếp' (direct) removes important information about the type of support requested.",
+      "score": 2
+    }
+  ]
+}

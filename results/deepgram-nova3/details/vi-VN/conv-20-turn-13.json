@@ -1,0 +1,26 @@
+{
+  "gold": "Không phải. Không phải. Minh chấm trần a còng email chấm com.",
+  "predicted": "Không phải không phải mình chấm gmail chấm com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "Không phải. Không phải. Minh chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Không phải. Không phải. Minh chấm gmail chấm com.",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Không phải. Không phải. Minh chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Không phải. Không phải. Minh chấm gmail chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'gmail' at position 6",
+      "reason": "'trần a còng email' is likely a spoken version of an email address (e.g., 'tran@gmail.com'), while 'gmail' replaces the local part of the email with the domain, resulting in a completely different email address. This changes the intended recipient or identity, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 7",
+      "reason": "Omitting the 'a' (which stands for 'a còng', meaning '@') in the email address structure makes the email address invalid or changes its meaning, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

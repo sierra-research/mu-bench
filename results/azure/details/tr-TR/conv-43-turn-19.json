@@ -1,0 +1,36 @@
+{
+  "gold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
+  "predicted": "Evet varya sabit istiyorum bana 2023 yılında gönderir misin?",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
+  "werNormalizedPredicted": "Evet, varya sabit istiyorum. Bana 2023 yılında gönderir misin?",
+  "qualityScore": 2,
+  "significantWer": 0.25,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
+  "sigWerNormalizedPredicted": "Evet, varya sabit istiyorum. Bana 2023 yılında gönderir misin?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ben' to 'varya' at position 1",
+      "reason": "'ben' means 'I', while 'varya' is not a correct word in this context and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ekstresi' at position 3",
+      "reason": "Omitting 'ekstresi' (statement) removes the key object of the request, significantly changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yılının' to 'yılında' at position 7",
+      "reason": "'yılının' (of the year) specifies possession, while 'yılında' (in the year) is a minor grammatical difference that does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'hesap' at position 8",
+      "reason": "Omitting 'hesap' (account) removes the subject of the statement, making the request unclear.",
+      "score": 1
+    }
+  ]
+}

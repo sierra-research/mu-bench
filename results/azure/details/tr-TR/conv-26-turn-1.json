@@ -1,0 +1,31 @@
+{
+  "gold": "C E E 6 5 2 X.",
+  "predicted": "CE 652.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "C E E 6 5 2 X.",
+  "werNormalizedPredicted": "C E 6 5 2.",
+  "qualityScore": 2,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "C E E 6 5 2 X.",
+  "sigWerNormalizedPredicted": "C E 6 5 2.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'E' at position 2",
+      "reason": "A missing letter in a spelled-out sequence changes the intended code or identifier significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '2' to '2.' at position 5",
+      "reason": "Difference is only punctuation, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'X.' at position 6",
+      "reason": "Missing the final character in a spelled-out code makes the transcription incomplete and potentially incorrect.",
+      "score": 1
+    }
+  ]
+}

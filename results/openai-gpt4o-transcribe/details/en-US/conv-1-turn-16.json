@@ -1,0 +1,41 @@
+{
+  "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "predicted": "You know, 6 or 7. I think that should be fine. Let’s try it and see if it doesn't work.",
+  "unintelligible": false,
+  "wer": 0.44,
+  "werNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "werNormalizedPredicted": "You know, 6 or 7. I think that should be fine. Let's try it and see if it doesn't work.",
+  "qualityScore": 2,
+  "significantWer": 0.04,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "sigWerNormalizedPredicted": "You know, 6 or 7. I think that should be fine. Let's try it and see if it doesn't work.",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'or' at position 3",
+      "reason": "Adding 'or' clarifies that the number could be 6 or 7, which is a minor clarification and does not change the overall meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'to' to 'it' at position 12",
+      "reason": "Changing 'try to transfer me over' to 'try it' changes the action from transferring the speaker to just trying something, which alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'over' at position 15",
+      "reason": "Omitting 'over' from 'transfer me over' makes the action less specific, but the intent is still somewhat clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'work,' to 'work.' at position 22",
+      "reason": "Difference is only in punctuation, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'that's' at position 23",
+      "reason": "Omitting 'that's fine' removes a reassurance but does not significantly change the main meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

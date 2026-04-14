@@ -1,0 +1,36 @@
+{
+  "gold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "predicted": "Anlayış. Hesap ekstresi istiyorum. Son senenin, 2024 yılının Ocak-Aralık arasındaki hesap ekstresini istiyorum.",
+  "unintelligible": false,
+  "wer": 0.35714285714285715,
+  "werNormalizedGold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "werNormalizedPredicted": "Anlayış. Hesap ekstresi istiyorum. Son senenin, 2024 yılının ocak-aralık arasındaki hesap ekstresini istiyorum.",
+  "qualityScore": 3,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "sigWerNormalizedPredicted": "Anlayış. Hesap ekstresi istiyorum. Son senenin, 2024 yılının ocak-aralık arasındaki hesap ekstresini istiyorum.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna,' to 'Anlayış.' at position 0",
+      "reason": "'Anna' is a name/address to a person, while 'Anlayış' means 'understanding' in Turkish. This substitution changes the meaning and context of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'seneni,' to 'senenin,' at position 5",
+      "reason": "'Seneni' is a typo or mishearing of 'senenin' (of the year). The intended meaning is preserved, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ocak' to 'ocak-aralık' at position 8",
+      "reason": "'Ocak' (January) is replaced with 'ocak-aralık' (January-December), which changes the time range being requested. This alters the meaning of the request.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'aralık' at position 9",
+      "reason": "The word 'aralık' (December) is omitted, but since 'ocak-aralık' was inserted earlier, the time range is still covered. This deletion does not affect the overall meaning.",
+      "score": 3
+    }
+  ]
+}

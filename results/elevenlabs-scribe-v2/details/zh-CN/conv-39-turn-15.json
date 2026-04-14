@@ -1,0 +1,31 @@
+{
+  "gold": "君，君玲 at email dot com。",
+  "predicted": "junlin@email.com",
+  "unintelligible": false,
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "君，君玲 at email dot com。",
+  "werNormalizedPredicted": "junlin at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "君 ， 君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "junlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junlin' at position 0",
+      "reason": "'君' is a Chinese character (jun), but 'junlin' is a romanized name combining both '君' and '玲'. The substitution merges two distinct names into one, which could cause confusion about the intended recipient.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '，' at position 1",
+      "reason": "The comma is a punctuation mark and does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 8",
+      "reason": "The period is a punctuation mark and does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

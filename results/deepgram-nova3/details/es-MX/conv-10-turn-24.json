@@ -1,0 +1,31 @@
+{
+  "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "predicted": "No correo de de, está mal, el correo está mal. Es María punto López arroba Por favor.",
+  "unintelligible": false,
+  "wer": 0.3684210526315789,
+  "werNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "werNormalizedPredicted": "No, correo de de, está mal. El correo está mal. Es María punto López arroba Por favor.",
+  "qualityScore": 1,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "sigWerNormalizedPredicted": "No, correo de de, está mal. El correo está mal. Es María punto López arroba Por favor.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'está' at position 1",
+      "reason": "Omitting 'está' changes the grammatical structure but does not significantly alter the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'vuelta.' to 'de,' at position 6",
+      "reason": "Replacing 'vuelta.' with 'de,' removes the reference to 'de vuelta' (return), which changes the meaning of the sentence and makes it less clear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'E.' to 'favor.' at position 18",
+      "reason": "Inserting 'Por' before 'favor.' is part of the phrase 'Por favor' (please), which is not present in the expected transcript and changes the meaning of the email address section, making it incoherent.",
+      "score": 1
+    }
+  ]
+}

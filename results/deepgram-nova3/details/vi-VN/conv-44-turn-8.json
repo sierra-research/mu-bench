@@ -1,0 +1,31 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com.",
+  "predicted": "Email là minh. Trầngmail chấm com",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werNormalizedGold": "Email là minh chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Email là minh. trần a còng gmail chấm com.",
+  "qualityScore": 1,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "Email là minh chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Email là minh. trần a còng gmail chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'minh.' at position 2",
+      "reason": "The difference is only punctuation, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "Omitting 'chấm' (dot) in an email address can cause confusion or make the email address incorrect, but in this context, the rest of the address is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing the domain from 'email' to 'gmail' significantly alters the email address, making it a different and incorrect address.",
+      "score": 1
+    }
+  ]
+}

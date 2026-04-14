@@ -1,0 +1,26 @@
+{
+  "gold": "C N 8 2 7.",
+  "predicted": "CNtám trăm hai mươi bảy",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "C N 8 2 7.",
+  "werNormalizedPredicted": "C N 827.",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "C N 8 2 7.",
+  "sigWerNormalizedPredicted": "C N 827.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '8' to '827.' at position 2",
+      "reason": "The model combined three separate digits ('8', '2', '7') into a single string '827.', which loses the intended separation of the spelled-out sequence. This is a significant error for spelled-out sequences, as each digit should be distinct.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '2' at position 3",
+      "reason": "The digit '2' is missing as a separate element in the actual transcription, which changes the intended sequence. For spelled-out sequences, missing a digit is a significant error.",
+      "score": 1
+    }
+  ]
+}

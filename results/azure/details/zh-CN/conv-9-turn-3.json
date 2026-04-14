@@ -1,0 +1,31 @@
+{
+  "gold": "C N 8 1 7。",
+  "predicted": "CM8E7.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "C N 8 1 7。",
+  "werNormalizedPredicted": "C M 8 E 7.",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "C N 8 1 7 。",
+  "sigWerNormalizedPredicted": "C M 8 E 7.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'N' to 'M' at position 1",
+      "reason": "In a spelled-out sequence, substituting 'N' with 'M' changes the intended letter, which is a significant error as it alters the meaning of the sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '1' to 'E' at position 3",
+      "reason": "In a sequence of letters and numbers, substituting '1' with 'E' is a significant error because it changes the intended digit to a letter, making the sequence incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 5",
+      "reason": "Punctuation differences are to be ignored as per the guidance, so this does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

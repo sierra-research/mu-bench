@@ -1,0 +1,26 @@
+{
+  "gold": "林梅 at email 点 com。",
+  "predicted": "@ email.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "林梅 at email 点 com。",
+  "werNormalizedPredicted": "@ email 点 com。",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "林 梅 at email 点 com 。",
+  "sigWerNormalizedPredicted": "@ email 点 com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '@' at position 0",
+      "reason": "The expected transcription contains a Chinese name ('林'), but the actual transcription has replaced it with the '@' symbol, which is not equivalent and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '梅' at position 1",
+      "reason": "The second character of the name ('梅') is missing in the actual transcription, resulting in the loss of the person's full name, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

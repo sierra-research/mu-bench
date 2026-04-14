@@ -1,0 +1,31 @@
+{
+  "gold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "predicted": "Annem Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "werNormalizedPredicted": "Annem Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "qualityScore": 2,
+  "significantWer": 0.05555555555555555,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "sigWerNormalizedPredicted": "Annem Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna' to 'Annem' at position 0",
+      "reason": "'Anna' is a proper name, while 'Annem' means 'my mother' in Turkish. This changes the addressee and the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'limitinin' to 'limitimin' at position 9",
+      "reason": "'Limitinin' means 'of the limit' (referring to the card's limit), while 'limitimin' means 'of my limit'. The meaning is only slightly changed, as both refer to the cardholder's limit, but the possessive is more explicit. The overall intent is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'bana' at position 15",
+      "reason": "Adding 'bana' ('to me') clarifies the request but does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

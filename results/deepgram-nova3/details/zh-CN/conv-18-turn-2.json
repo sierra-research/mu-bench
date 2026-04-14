@@ -1,0 +1,36 @@
+{
+  "gold": "C N 负 0 0。",
+  "predicted": "and-00。",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werNormalizedGold": "C N 负 0 0。",
+  "werNormalizedPredicted": "and 0 0.",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "C N 负 0 0 。",
+  "sigWerNormalizedPredicted": "and 0 0.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'C' to 'and' at position 0",
+      "reason": "'C' is a letter, while 'and' is a conjunction; this changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'N' at position 1",
+      "reason": "Missing a letter in a spelled-out sequence significantly alters the intended content.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '0' to '0.' at position 4",
+      "reason": "Adding a period to the number does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 5",
+      "reason": "Missing a punctuation mark at the end does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

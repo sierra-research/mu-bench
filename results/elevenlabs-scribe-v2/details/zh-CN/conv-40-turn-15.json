@@ -1,0 +1,31 @@
+{
+  "gold": "郡凛 at email dot com。",
+  "predicted": "junlin@email.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "郡凛 at email dot com。",
+  "werNormalizedPredicted": "junlin at email dot com",
+  "qualityScore": 3,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "郡 凛 at email dot com 。",
+  "sigWerNormalizedPredicted": "junlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'junlin' at position 0",
+      "reason": "'郡' is a Chinese character, while 'junlin' is a romanized form that may represent both '郡' and '凛' together, but as a direct substitution, this changes the script and potentially the meaning, especially if the name is meant to be in Chinese characters.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "'凛' is omitted in the actual transcription, which could result in an incomplete or incorrect name/email address, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "Punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

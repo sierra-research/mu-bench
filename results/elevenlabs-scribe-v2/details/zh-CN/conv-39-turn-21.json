@@ -1,0 +1,31 @@
+{
+  "gold": "我已经几次说了。",
+  "predicted": "喂，今天几时收了？",
+  "unintelligible": false,
+  "wer": 0.875,
+  "werNormalizedGold": "我已经几次说了。",
+  "werNormalizedPredicted": "喂，今天几时收了？",
+  "qualityScore": 1,
+  "significantWer": 0.375,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "我 已 经 几 次 说 了 。",
+  "sigWerNormalizedPredicted": "喂 ， 今 天 几 时 收 了 ？",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to '，' at position 0",
+      "reason": "'喂' (hello/hey) is an entirely new word not present in the expected sentence and changes the context from a statement to a greeting.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '次' to '时' at position 4",
+      "reason": "'我' (I) is replaced by a comma, which removes the subject and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '。' to '？' at position 7",
+      "reason": "'次' (times) and '时' (time/hour) are different words with different meanings, changing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

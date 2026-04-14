@@ -1,0 +1,36 @@
+{
+  "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "predicted": "You know, six, seven. I I think that should be fine. Let's try to transfer me from you. Oh, wait. No. It doesn't work. Fine.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "werNormalizedPredicted": "You know, 6 7. I I think that should be fine. Let's try to transfer me from you. Oh, wait. No. It doesn't work. Fine.",
+  "qualityScore": 2,
+  "significantWer": 0.04,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "sigWerNormalizedPredicted": "You know, 6 7. I I think that should be fine. Let's try to transfer me from you. Oh, wait. No. It doesn't work. Fine.",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'I' at position 5",
+      "reason": "Repeating 'I' does not change the meaning of the sentence, just a minor disfluency.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'over' to 'from' at position 15",
+      "reason": "Changing 'transfer me over' to 'transfer me from you' alters the meaning of the action being requested, which could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'work,' to 'work.' at position 22",
+      "reason": "Difference in punctuation only; does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'fine.' at position 24",
+      "reason": "Shortening 'that's fine' to 'Fine' does not change the meaning in this context.",
+      "score": 3
+    }
+  ]
+}

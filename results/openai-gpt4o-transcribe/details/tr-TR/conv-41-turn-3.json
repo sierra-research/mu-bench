@@ -1,0 +1,31 @@
+{
+  "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "predicted": "Öncelikle bana bir numaranı verir misin, takip numaranı?",
+  "unintelligible": false,
+  "wer": 0.7222222222222222,
+  "werNormalizedGold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "werNormalizedPredicted": "öncelikle bana bir numaranı verir misin, takip numaranı?",
+  "qualityScore": 2,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "sigWerNormalizedPredicted": "öncelikle bana bir numaranı verir misin, takip numaranı?",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'Öncelikle' at position 0",
+      "reason": "A large portion of the sentence is missing, which removes the main intent about wanting a credit card limit increase. This significantly changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaramı' to 'numaranı' at position 13",
+      "reason": "'Numaramı' means 'my number', while 'numaranı' means 'your number'. This changes the direction of the request and alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'misin?' to 'misin,' at position 15",
+      "reason": "The difference is only punctuation, which does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

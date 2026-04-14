@@ -1,0 +1,31 @@
+{
+  "gold": "C N 7 9 1。",
+  "predicted": "CN四九一",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "C N 7 9 1。",
+  "werNormalizedPredicted": "C N 4 9 1.",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "C N 7 9 1 。",
+  "sigWerNormalizedPredicted": "C N 4 9 1.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '7' to '4' at position 2",
+      "reason": "A single digit is incorrect in a sequence of numbers/letters, which is a significant error as it changes the value entirely.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '1' to '1.' at position 4",
+      "reason": "The difference is only punctuation, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 5",
+      "reason": "The missing character is a punctuation mark, which should be ignored.",
+      "score": 3
+    }
+  ]
+}

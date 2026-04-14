@@ -1,0 +1,26 @@
+{
+  "gold": "你知道我的姓名是什么？",
+  "predicted": "你觉得我的声音是什么？",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werNormalizedGold": "你知道我的姓名是什么？",
+  "werNormalizedPredicted": "你觉得我的声音是什么？",
+  "qualityScore": 1,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 知 道 我 的 姓 名 是 什 么 ？",
+  "sigWerNormalizedPredicted": "你 觉 得 我 的 声 音 是 什 么 ？",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '知' to '觉' at position 1",
+      "reason": "'知道' means 'know', while '觉得' means 'think/feel'. This changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '姓' to '声' at position 5",
+      "reason": "'姓名' means 'name', while '声音' means 'voice/sound'. This changes the subject of the question entirely.",
+      "score": 1
+    }
+  ]
+}

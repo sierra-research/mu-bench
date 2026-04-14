@@ -1,0 +1,36 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "Drilling@email.com.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "君玲 at email dot com。",
+  "werNormalizedPredicted": "Drilling at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "Drilling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'Drilling' at position 0",
+      "reason": "'君' is a Chinese name, while 'Drilling' is an unrelated English word; this changes the meaning and identity completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "Missing the second part of the name '君玲' results in an incomplete or incorrect name, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 5",
+      "reason": "The addition of a period after 'com' is a minor punctuation difference and does not affect the meaning or function of the email address.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The Chinese period '。' is a punctuation mark and its omission does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

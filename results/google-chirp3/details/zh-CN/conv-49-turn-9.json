@@ -1,0 +1,31 @@
+{
+  "gold": "是美玲 at email dot com。",
+  "predicted": "shmeiling@email.com",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "是美玲 at email dot com。",
+  "werNormalizedPredicted": "shmeiling at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "shmeiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shmeiling' at position 0",
+      "reason": "The expected transcription starts with a Chinese character ('是'), but the actual transcription has an English word ('shmeiling'), which is a significant change in language and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "The character '美' is missing in the actual transcription, which is part of a name or phrase in Chinese, making the transcription incomplete and significantly altering the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 7",
+      "reason": "The missing punctuation does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

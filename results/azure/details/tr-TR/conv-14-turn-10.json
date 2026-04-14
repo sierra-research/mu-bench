@@ -1,0 +1,31 @@
+{
+  "gold": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, P olacak. Pırasanın P'si, siz T ile söylediniz. Zaynep Arslan olacak.",
+  "predicted": "Yani e-posta adresi doğru ama adımda ve telefon numarasını hata var. Adımda son harf zayn t olacak. Pırasa'nın p'si siz t ile söylediniz zayn arslan olacak.",
+  "unintelligible": false,
+  "wer": 0.16,
+  "werNormalizedGold": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, P olacak. Pırasanın P'si, siz T ile söylediniz. Zaynep Arslan olacak.",
+  "werNormalizedPredicted": "Yani e-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, T olacak. Pırasanın P'si, siz T ile söylediniz. Zayn Arslan olacak.",
+  "qualityScore": 2,
+  "significantWer": 0.04,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, P olacak. Pırasanın P'si, siz T ile söylediniz. Zaynep Arslan olacak.",
+  "sigWerNormalizedPredicted": "Yani e-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, T olacak. Pırasanın P'si, siz T ile söylediniz. Zayn Arslan olacak.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'E-posta' to 'e-posta' at position 0",
+      "reason": "'Yani' (meaning 'so' or 'that is') is an introductory word that does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'P' to 'T' at position 14",
+      "reason": "Difference is only in capitalization, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Zaynep' to 'Zayn' at position 22",
+      "reason": "The letter at the end of the name is specified as 'P' but was transcribed as 'T', which is a significant error in the context of spelling a name.",
+      "score": 1
+    }
+  ]
+}

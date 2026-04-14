@@ -1,0 +1,31 @@
+{
+  "gold": "是美玲 at email dot com。",
+  "predicted": "shumailing@email.com",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "是美玲 at email dot com。",
+  "werNormalizedPredicted": "shumailing at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "shumailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shumailing' at position 0",
+      "reason": "'是' is a Chinese character meaning 'is', while 'shumailing' is a romanized string that does not correspond to the expected word. This substitution changes the language and meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "'美' is a key part of the name in the expected transcription. Its omission results in an incomplete or incorrect name, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 7",
+      "reason": "Punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

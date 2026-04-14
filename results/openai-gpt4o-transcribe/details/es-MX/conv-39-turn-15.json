@@ -1,0 +1,31 @@
+{
+  "gold": "Eh no por el momento, ¿pudieras hacer alguna anotación para que el agente se comunique conmigo?",
+  "predicted": "No por el momento. ¿Pudieras hacer alguna anotación para que la gente se comunique conmigo?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Eh no por el momento, ¿pudieras hacer alguna anotación para que el agente se comunique conmigo?",
+  "werNormalizedPredicted": "No por el momento, ¿pudieras hacer alguna anotación para que la gente se comunique conmigo?",
+  "qualityScore": 2,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "Eh no por el momento, ¿pudieras hacer alguna anotación para que el agente se comunique conmigo?",
+  "sigWerNormalizedPredicted": "No por el momento, ¿pudieras hacer alguna anotación para que la gente se comunique conmigo?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Eh' to 'No' at position 0",
+      "reason": "'Eh' is a hesitation or filler, while 'No' is a direct negation. This changes the tone but not the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'no' at position 1",
+      "reason": "The word 'no' is omitted, but since 'No' was already substituted for 'Eh', the overall meaning remains unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'el' to 'la' at position 11",
+      "reason": "'El agente' (the agent) is changed to 'la gente' (the people), which changes the subject from a specific agent to people in general, altering the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

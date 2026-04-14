@@ -1,0 +1,26 @@
+{
+  "gold": "是对的，我的邮箱地址是峻岭 at email dot com。",
+  "predicted": "是对的，我的要想地址是 Junling@email.com。",
+  "unintelligible": false,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "是对的，我的邮箱地址是峻岭 at email dot com。",
+  "werNormalizedPredicted": "是对的，我的邮箱地址是 junling at email dot com。",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "是 对 的 ， 我 的 邮 箱 地 址 是 峻 岭 at email dot com 。",
+  "sigWerNormalizedPredicted": "是 对 的 ， 我 的 邮 箱 地 址 是 junling at email dot com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '峻' to 'junling' at position 11",
+      "reason": "The expected contains two Chinese characters '峻' and '岭', which together form a name. The actual transcription uses the pinyin 'junling', which is a direct phonetic representation of the same name. The meaning is preserved, only the script is different.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '岭' at position 12",
+      "reason": "'junling' in pinyin represents both '峻' and '岭' together, so the omission of '岭' as a separate character is not an error since the full name is still represented in pinyin.",
+      "score": 3
+    }
+  ]
+}

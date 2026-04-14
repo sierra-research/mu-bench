@@ -1,0 +1,31 @@
+{
+  "gold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
+  "predicted": "Hayır, email ve telefon numarası yanlış email de adımın son harfi t olacak t değil t zayn t.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werNormalizedGold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
+  "werNormalizedPredicted": "Hayır, email ve telefon numarası yanlış. Emailde adımın son harfi t olacak. T değil, t. Zayn t.",
+  "qualityScore": 1,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
+  "sigWerNormalizedPredicted": "Hayır, email ve telefon numarası yanlış. Emailde adımın son harfi t olacak. T değil, t. Zayn t.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
+      "reason": "Difference is only a comma, which is punctuation and should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'P' to 't' at position 10",
+      "reason": "The expected letter is 'P' but the actual is 't' in a context where the last letter of a name is being specified. This is a significant error as it changes the information being conveyed.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'P.' to 't.' at position 14",
+      "reason": "The expected letter is 'P' but the actual is 't' in a context where the correct spelling of a name is being clarified. This is a significant error as it changes the intended name.",
+      "score": 1
+    }
+  ]
+}

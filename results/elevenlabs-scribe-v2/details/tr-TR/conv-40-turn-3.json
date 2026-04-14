@@ -1,0 +1,26 @@
+{
+  "gold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "predicted": "Çift sekreteriydi. Ben anlamadım, not alamadım",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "werNormalizedPredicted": "Çift sekreteriydi. Ben alamadım, not alamadım.",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "sigWerNormalizedPredicted": "Çift sekreteriydi. Ben alamadım, not alamadım.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Siz' to 'Çift' at position 0",
+      "reason": "The actual transcription replaces the request to repeat ('Siz tekrar edin') with an unrelated phrase ('Çift sekreteriydi.' means 'It was a double secretary'), which completely changes the meaning and derails the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ben' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "邮箱地址呢？邮箱地址你知道吗？",
+  "predicted": "有香雞汁呢，有香雞汁你知道嗎?",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "邮箱地址呢？邮箱地址你知道吗？",
+  "werNormalizedPredicted": "有香雞汁呢？有香雞汁你知道嗎？",
+  "qualityScore": 1,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "邮 箱 地 址 呢 ？ 邮 箱 地 址 你 知 道 吗 ？",
+  "sigWerNormalizedPredicted": "有 香 雞 汁 呢 ？ 有 香 雞 汁 你 知 道 嗎 ？",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '有' at position 0",
+      "reason": "'邮' (mail) and '有' (have) are completely different words and change the meaning of the sentence from 'email address' to something unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '有' at position 6",
+      "reason": "Again, '邮' (mail) and '有' (have) are unrelated, causing a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '吗' to '嗎' at position 13",
+      "reason": "'吗' and '嗎' are simplified and traditional forms of the same question particle in Chinese, so the meaning is unchanged.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "我再一遍告诉你，是郡凛。",
+  "predicted": "我在一遍告诉告诉你,是军龄。",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werNormalizedGold": "我再一遍告诉你，是郡凛。",
+  "werNormalizedPredicted": "我在一遍告诉告诉你，是军龄。",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 再 一 遍 告 诉 你 ， 是 郡 凛 。",
+  "sigWerNormalizedPredicted": "我 在 一 遍 告 诉 告 诉 你 ， 是 军 龄 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 1",
+      "reason": "'再' (again) and '在' (at/in) are different words and change the meaning of the sentence, making it less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '告' at position 6",
+      "reason": "The extra '告' is a repetition but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '郡' to '军' at position 9",
+      "reason": "'郡凛' is a proper noun (name), while '军龄' is a completely different word (military age), which changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "Hayır daha sonra tekrar ararım ben. Teşekkür ederim.",
+  "predicted": "Hayır, daha sonra tekrar ölmen teşekkür ederim.",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werNormalizedGold": "Hayır daha sonra tekrar ararım ben. Teşekkür ederim.",
+  "werNormalizedPredicted": "Hayır, daha sonra tekrar ölmen. Teşekkür ederim.",
+  "qualityScore": 2,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Hayır daha sonra tekrar ararım ben. Teşekkür ederim.",
+  "sigWerNormalizedPredicted": "Hayır, daha sonra tekrar ölmen. Teşekkür ederim.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
+      "reason": "Difference is only a comma, which is punctuation and should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ararım' to 'ölmen.' at position 4",
+      "reason": "'Ararım' means 'I will call' while 'ölmen' means 'your dying'; this substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ben.' at position 5",
+      "reason": "Omitting 'ben' (I) at the end is a minor omission, as the subject is already clear from the verb conjugation in Turkish.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "gold": "林美 at email 点 C O M。",
+  "predicted": "May at e-mail.com.",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "林美 at email 点 C O M。",
+  "werNormalizedPredicted": "May at email 点 C O M.",
+  "qualityScore": 1,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "林 美 at email 点 C O M 。",
+  "sigWerNormalizedPredicted": "May at email 点 C O M.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'May' at position 0",
+      "reason": "'林' is a Chinese surname, while 'May' is an English given name; this changes the identity of the person and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "'美' is part of the name and its omission changes the person's name, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'M' to 'M.' at position 7",
+      "reason": "The addition of a period after 'M' is a minor formatting difference and does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 8",
+      "reason": "The omission of the Chinese period punctuation does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

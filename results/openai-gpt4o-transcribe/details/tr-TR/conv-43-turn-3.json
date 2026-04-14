@@ -1,0 +1,36 @@
+{
+  "gold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
+  "predicted": "Anlamadım, artık bunu tek tek söyleyemedim.",
+  "unintelligible": false,
+  "wer": 0.9166666666666666,
+  "werNormalizedGold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
+  "werNormalizedPredicted": "Anlamadım, artık bunu tek tek söyleyemedim.",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
+  "sigWerNormalizedPredicted": "Anlamadım, artık bunu tek tek söyleyemedim.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna,' to 'Anlamadım,' at position 0",
+      "reason": "'Anna' is a name/address, 'Anlamadım' means 'I didn't understand' in Turkish; this changes the addressee and the meaning of the sentence completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tekrar' at position 4",
+      "reason": "'Tekrar' means 'again', and its omission removes the request for repetition, which is important to the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'söyle,' to 'söyleyemedim.' at position 9",
+      "reason": "'Söyle' means 'say', 'söyleyemedim' means 'I couldn't say'; this changes the speaker and the action, altering the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tane' at position 10",
+      "reason": "'Tane tane' means 'one by one' or 'clearly', and omitting 'tane' removes the emphasis on clarity, which is important to the request.",
+      "score": 1
+    }
+  ]
+}

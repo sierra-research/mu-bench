@@ -1,0 +1,36 @@
+{
+  "gold": "Ana, este necesito saber, solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus.",
+  "predicted": "Ana, hola, este, necesito sa-- solicité un, un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el estatus",
+  "unintelligible": false,
+  "wer": 0.17857142857142858,
+  "werNormalizedGold": "Ana, este necesito saber, solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus.",
+  "werNormalizedPredicted": "Ana, hola, este, necesito sa-- solicité un, un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el estatus.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 28,
+  "sigWerNormalizedGold": "Ana, este necesito saber, solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus.",
+  "sigWerNormalizedPredicted": "Ana, hola, este, necesito sa-- solicité un, un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el estatus.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'este' to 'este,' at position 1",
+      "reason": "Adding a greeting ('hola') does not change the meaning of the sentence; it is an extra polite word.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'saber,' to 'sa--' at position 3",
+      "reason": "Difference is only punctuation (comma), which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'un,' at position 5",
+      "reason": "'sa--' is an incomplete word, likely a disfluency or cut-off of 'saber', but the meaning is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'podrías' to 'podías' at position 20",
+      "reason": "The repetition of 'un' is a minor disfluency and does not affect the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

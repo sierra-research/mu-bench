@@ -1,0 +1,36 @@
+{
+  "gold": "你正在说什么，你正在说什么，你是不是傻子。",
+  "predicted": "哦，你是你，你正在说什么？你正在说什么？你是个**。",
+  "unintelligible": false,
+  "wer": 0.47619047619047616,
+  "werNormalizedGold": "你正在说什么，你正在说什么，你是不是傻子。",
+  "werNormalizedPredicted": "哦，你是你，你正在说什么，你正在说什么，你是个**。",
+  "qualityScore": 2,
+  "significantWer": 0.09523809523809523,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "你 正 在 说 什 么 ， 你 正 在 说 什 么 ， 你 是 不 是 傻 子 。",
+  "sigWerNormalizedPredicted": "哦 ， 你 是 你 ， 你 正 在 说 什 么 ， 你 正 在 说 什 么 ， 你 是 个 ** 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '哦' at position 0",
+      "reason": "The insertion of '哦' (oh) adds an interjection but does not change the main meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '是' at position 1",
+      "reason": "The insertion of '是' (is) in this position creates a repetition ('你是你'), which is a minor redundancy but does not significantly alter the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '不' to '个' at position 16",
+      "reason": "Changing '不' (not) to '个' (a/one) alters the meaning of the sentence from 'are you a fool or not' to 'you are a fool', which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '傻' at position 18",
+      "reason": "Omitting '傻' (fool/silly) removes the key insult from the sentence, significantly changing the meaning.",
+      "score": 1
+    }
+  ]
+}

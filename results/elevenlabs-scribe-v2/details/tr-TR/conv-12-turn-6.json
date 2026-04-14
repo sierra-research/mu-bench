@@ -1,0 +1,31 @@
+{
+  "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "Evet, yalnız değil. Şöyle Ahmet Arslan dediniz ama Ahmet'le Arslan arasında nokta olacak. Ahmet nokta Arslan",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "werNormalizedPredicted": "Evet, yalnız değil, şöyle, Ahmet Arslan dediniz ama Ahmet'le Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "sigWerNormalizedPredicted": "Evet, yalnız değil, şöyle, Ahmet Arslan dediniz ama Ahmet'le Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'değil' to 'değil,' at position 1",
+      "reason": "The insertion of 'yalnız' (meaning 'only' or 'just') slightly changes the nuance but does not derail the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'Ahmet' to 'Ahmet'le' at position 7",
+      "reason": "The only difference is the addition of a comma, which is punctuation and should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 've' at position 8",
+      "reason": "'Ahmet'le' means 'with Ahmet', which changes the relationship between Ahmet and Arslan in the sentence, potentially altering the meaning.",
+      "score": 2
+    }
+  ]
+}

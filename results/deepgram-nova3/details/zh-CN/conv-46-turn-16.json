@@ -1,0 +1,26 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "junelingetimelotgn。",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "君玲 at email dot com。",
+  "werNormalizedPredicted": "juneling at email dot com。",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "juneling at email dot com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'juneling' at position 0",
+      "reason": "'君' is a Chinese character, while 'juneling' is a romanized string that does not directly correspond to the expected name. This changes the identity of the email address and could result in a completely different recipient.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of '玲' (a character in the expected name) means the actual transcription does not fully represent the intended name, which is significant for an email address and could result in delivery to the wrong person.",
+      "score": 1
+    }
+  ]
+}

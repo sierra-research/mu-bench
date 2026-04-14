@@ -1,0 +1,36 @@
+{
+  "gold": "郡凛 at email dot com。",
+  "predicted": "junelingemail。",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "郡凛 at email dot com。",
+  "werNormalizedPredicted": "juneling at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "郡 凛 at email dot com 。",
+  "sigWerNormalizedPredicted": "juneling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'juneling' at position 0",
+      "reason": "'郡' is a Chinese character, while 'juneling' is an English word/name. The substitution changes the language and the meaning entirely, making the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "The omission of '凛', another Chinese character, further alters the intended email address, making it unrecognizable and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 5",
+      "reason": "Adding a period after 'com' is a minor formatting difference and does not affect the meaning or function of the email address.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The omission of the Chinese period '。' at the end of the sentence is a punctuation difference and does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

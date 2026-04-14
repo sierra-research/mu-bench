@@ -1,0 +1,31 @@
+{
+  "gold": "Email address would be John dot Brown at email dot com.",
+  "predicted": "Email address would be john dot brown at gmail dot com.",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "Email address would be John dot Brown at email dot com.",
+  "werNormalizedPredicted": "Email address would be john dot brown at gmail dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "Email address would be John dot Brown at email dot com.",
+  "sigWerNormalizedPredicted": "Email address would be john dot brown at gmail dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'John' to 'john' at position 4",
+      "reason": "Difference is only in capitalization, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Brown' to 'brown' at position 6",
+      "reason": "Difference is only in capitalization, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 8",
+      "reason": "Changing the email provider from 'email' to 'gmail' changes the actual email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

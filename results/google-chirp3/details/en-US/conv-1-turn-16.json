@@ -1,0 +1,31 @@
+{
+  "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "predicted": "you know 6 7 I think that should be fine. Let's try to right now and it doesn't work fine.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "werNormalizedPredicted": "You know, 6 7. I think that should be fine. Let's try to right now and it doesn't work, that's fine.",
+  "qualityScore": 2,
+  "significantWer": 0.04,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "sigWerNormalizedPredicted": "You know, 6 7. I think that should be fine. Let's try to right now and it doesn't work, that's fine.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'transfer' at position 13",
+      "reason": "Omitting 'transfer' removes the main action of the sentence, making the instruction incomplete and unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'now,' to 'now' at position 17",
+      "reason": "The only difference is the missing comma, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'if' at position 19",
+      "reason": "Omitting 'if' changes the conditional structure of the sentence, making it less clear that the following clause is conditional.",
+      "score": 2
+    }
+  ]
+}

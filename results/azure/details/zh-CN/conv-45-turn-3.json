@@ -1,0 +1,26 @@
+{
+  "gold": "C N 3 1 8。",
+  "predicted": "See in Sanyoba.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "C N 3 1 8。",
+  "werNormalizedPredicted": "See in Sanyoba.",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "C N 3 1 8 。",
+  "sigWerNormalizedPredicted": "See in Sanyoba.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'C' to 'See' at position 0",
+      "reason": "The expected is a spelled-out letter, but the actual is the word 'See', which is a homophone but not a letter. In the context of a spelled-out sequence (likely a code or identifier), this is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '1' at position 3",
+      "reason": "The digit '1' is missing from the actual transcription, which is significant in a code or identifier context.",
+      "score": 1
+    }
+  ]
+}

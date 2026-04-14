@@ -1,0 +1,36 @@
+{
+  "gold": "Bạn còn cần thông tin gì không?",
+  "predicted": "Bạn có còn không tin gì không?",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "Bạn còn cần thông tin gì không?",
+  "werNormalizedPredicted": "bạn có còn không tin gì không",
+  "qualityScore": 2,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Bạn còn cần thông tin gì không?",
+  "sigWerNormalizedPredicted": "bạn có còn không tin gì không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Bạn' to 'có' at position 0",
+      "reason": "'cần' means 'need', while 'có' means 'have' or 'do/does', which changes the intent of the question and alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cần' to 'không' at position 2",
+      "reason": "'thông tin' means 'information', while 'không tin' is not a valid phrase and changes the meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'thông' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'không?' to 'không' at position 6",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

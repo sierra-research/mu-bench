@@ -1,0 +1,26 @@
+{
+  "gold": "中国北京市海淀区北京路1 2 3号。",
+  "predicted": "中国北京市海淀区北京路一二三号。",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werNormalizedGold": "中国北京市海淀区北京路1 2 3号。",
+  "werNormalizedPredicted": "中国北京市海淀区北京路123号。",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "中 国 北 京 市 海 淀 区 北 京 路 1 2 3 号 。",
+  "sigWerNormalizedPredicted": "中 国 北 京 市 海 淀 区 北 京 路 123 号 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '1' to '123' at position 11",
+      "reason": "The three separate digits '1 2 3' are combined into '123', which is numerically equivalent and does not change the meaning of the address.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '2' at position 12",
+      "reason": "'2' is not actually deleted, but included as part of '123', so the meaning is preserved and the address is still correct.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "Mei-Ling@email.com",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "美玲 at email dot com。",
+  "werNormalizedPredicted": "Mei-Ling at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "Mei-Ling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'Mei-Ling' at position 0",
+      "reason": "'美' is a Chinese character, while 'Mei-Ling' is the romanized version of the name. The meaning is preserved as it refers to the same name, just in different scripts.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is the second character of the name '美玲' (Mei-Ling). The actual transcription combines both characters into the romanized full name, so the meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 5",
+      "reason": "The difference is only punctuation, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The deletion is of a punctuation mark, which does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

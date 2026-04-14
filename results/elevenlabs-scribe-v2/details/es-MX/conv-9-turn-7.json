@@ -1,0 +1,26 @@
+{
+  "gold": "Más 52 5 5 1 2 3 4 5 6 7 8.",
+  "predicted": "+ cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "Más 52 5 5 1 2 3 4 5 6 7 8.",
+  "werNormalizedPredicted": "+52 55 12 34 56 78.",
+  "qualityScore": 2,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Más 52 5 5 1 2 3 4 5 6 7 8.",
+  "sigWerNormalizedPredicted": "+52 55 12 34 56 78.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Más' to '+52' at position 0",
+      "reason": "'Más' is the Spanish word for 'plus', and '+52' is the country code for Mexico. The substitution is acceptable as '+52' is the numeric representation of 'Más 52' in the context of a phone number.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '3' at position 6",
+      "reason": "The actual phone number sequence is completely different from the expected sequence, which would result in a wrong or unreachable phone number. This is a significant error as it changes the intended information entirely.",
+      "score": 1
+    }
+  ]
+}

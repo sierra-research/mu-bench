@@ -1,0 +1,31 @@
+{
+  "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "predicted": "El correo está mal. Es maria.lopez@",
+  "unintelligible": false,
+  "wer": 0.5789473684210527,
+  "werNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "werNormalizedPredicted": "El correo está mal. Es María punto López arroba.",
+  "qualityScore": 2,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "sigWerNormalizedPredicted": "El correo está mal. Es María punto López arroba.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'No,' at position 0",
+      "reason": "The omission of 'No,' removes the initial negation, which could change the intent or meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'arroba' to 'arroba.' at position 17",
+      "reason": "The difference is only punctuation, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'E.' at position 18",
+      "reason": "Omitting the 'E.' at the end of the email address makes the email incomplete and incorrect, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

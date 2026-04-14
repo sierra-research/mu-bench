@@ -1,0 +1,31 @@
+{
+  "gold": "是，美玲 at email dot com。",
+  "predicted": "是美玲imendorgorn。",
+  "unintelligible": false,
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "是，美玲 at email dot com。",
+  "werNormalizedPredicted": "是美玲 imendorgorn。",
+  "qualityScore": 1,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "是 ， 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "是 美 玲 imendorgorn 。",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '，' at position 1",
+      "reason": "Punctuation differences are to be ignored as per guidance, so this does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'at' to 'imendorgorn' at position 4",
+      "reason": "'imendorgorn' is a nonsensical word replacing 'at', which is crucial for the email address format. This makes the sentence incoherent and the email address unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 5",
+      "reason": "Omitting 'email' from the address makes the contact information incomplete and unusable, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
+}

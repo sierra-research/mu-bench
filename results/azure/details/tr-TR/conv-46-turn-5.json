@@ -1,0 +1,26 @@
+{
+  "gold": "1 2 3 0 90 45 67.",
+  "predicted": "123. Ağır 90 45 67.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "1 2 3 0 90 45 67.",
+  "werNormalizedPredicted": "123. ağır 90 45 67.",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "1 2 3 0 90 45 67.",
+  "sigWerNormalizedPredicted": "123. ağır 90 45 67.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '1' to '123.' at position 0",
+      "reason": "'1' was transcribed as '123.', which is a significant change in the number and alters the intended sequence. This could cause confusion, especially if these are meant to be individual digits or codes.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '3' at position 2",
+      "reason": "'3' is missing from the actual transcription, which breaks the sequence of numbers. This is significant if the numbers are important (e.g., codes, phone numbers).",
+      "score": 1
+    }
+  ]
+}

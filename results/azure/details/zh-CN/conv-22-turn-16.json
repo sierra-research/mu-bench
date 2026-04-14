@@ -1,0 +1,36 @@
+{
+  "gold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
+  "predicted": "Mailing at email.com should we do your send it.",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
+  "werNormalizedPredicted": "Mailing at email dot com should we do your send it.",
+  "qualityScore": 1,
+  "significantWer": 0.2,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 。 When I concern, I'll get it.",
+  "sigWerNormalizedPredicted": "Mailing at email dot com should we do your send it.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'Mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'Mailing' is an English word with a different meaning. The substitution changes the language and the meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name '美玲'. Its omission results in an incomplete or incorrect name, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '是' to 'should' at position 6",
+      "reason": "'是' means 'is' in Chinese, while 'should' is an English modal verb. The substitution changes both the language and the meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '地' at position 11",
+      "reason": "'地' is part of the phrase describing the email address in Chinese. Its omission further disrupts the meaning and structure of the sentence.",
+      "score": 1
+    }
+  ]
+}

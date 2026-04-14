@@ -1,0 +1,41 @@
+{
+  "gold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "predicted": "Anna bana şu kod tekrar verir misin? Kod da çünkü ilk başta en dedin sonra ea dedin. Kod tekrar bana söyler misin yavaş ya?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "werNormalizedPredicted": "Anna, bana şu kodu tekrar verir misin? Kod da çünkü ilk başta EN dedin sonra EA dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "qualityScore": 3,
+  "significantWer": 0.125,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "sigWerNormalizedPredicted": "Anna, bana şu kodu tekrar verir misin? Kod da çünkü ilk başta EN dedin sonra EA dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Kodlar' to 'da' at position 7",
+      "reason": "The word 'Kod' is inserted, but it is contextually related to the following word and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'E' to 'EN' at position 11",
+      "reason": "'Kodlar' (codes) is replaced with 'da' (also/as well), which changes the grammatical structure but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'N' at position 12",
+      "reason": "The expected spelled letter 'E' is replaced by 'EN', which could be interpreted as the letters 'E' and 'N' together. This could cause confusion in a code context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'E' to 'EA' at position 15",
+      "reason": "The letter 'N' is omitted from the spelled code, which is significant in a context where the code must be accurate.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'A' at position 16",
+      "reason": "The expected letter 'E' is replaced by 'EA', which could be interpreted as two letters instead of one, causing a significant error in a code context.",
+      "score": 1
+    }
+  ]
+}

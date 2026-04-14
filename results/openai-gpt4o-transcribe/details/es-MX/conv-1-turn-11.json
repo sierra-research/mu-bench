@@ -1,0 +1,31 @@
+{
+  "gold": "Sí. ¿Me podrías repetir? Porque se cortó un poco.",
+  "predicted": "¿Podrías repetir?",
+  "unintelligible": false,
+  "wer": 0.8888888888888888,
+  "werNormalizedGold": "Sí. ¿Me podrías repetir? Porque se cortó un poco.",
+  "werNormalizedPredicted": "¿Podrías repetir?",
+  "qualityScore": 2,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "Sí. ¿Me podrías repetir? Porque se cortó un poco.",
+  "sigWerNormalizedPredicted": "¿Podrías repetir?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Sí.' to '¿Podrías' at position 0",
+      "reason": "The omission of 'Sí.' removes an affirmative response, which can affect the tone but not the core request.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '¿Me' at position 1",
+      "reason": "Omitting 'me' changes the request from 'repeat to me' to just 'repeat', which slightly alters the meaning but the intent is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'Porque' at position 4",
+      "reason": "Omitting the explanation for the request ('because it cut off a bit') removes important context for why the repetition is needed, which can significantly affect understanding.",
+      "score": 1
+    }
+  ]
+}

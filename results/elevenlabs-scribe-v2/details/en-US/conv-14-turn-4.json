@@ -1,0 +1,31 @@
+{
+  "gold": "Hello? Can you give what is 7 6 2?",
+  "predicted": "Yo, c-can, can you give me what is this s-s-seven six two?",
+  "unintelligible": false,
+  "wer": 0.8888888888888888,
+  "werNormalizedGold": "Hello? Can you give what is 7 6 2?",
+  "werNormalizedPredicted": "Yo, c-can, can you give me what is this s-s-seven six two?",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "Hello? Can you give what is 7 6 2?",
+  "sigWerNormalizedPredicted": "Yo, c-can, can you give me what is this s-s-seven six two?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hello?' to 'c-can,' at position 0",
+      "reason": "'Yo' is an informal greeting that does not change the meaning of the sentence, just adds informality.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'me' at position 4",
+      "reason": "'c-can,' is a stuttered form of 'can' and does not convey the same greeting as 'Hello?'. The greeting is lost, which slightly changes the tone but not the core meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '7' to 's-s-seven' at position 6",
+      "reason": "Adding 'me' to 'can you give me' is a minor grammatical difference and does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

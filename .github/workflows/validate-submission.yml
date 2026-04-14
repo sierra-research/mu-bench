@@ -1,0 +1,78 @@
+name: Validate Submission
+
+on:
+  pull_request:
+    paths:
+      - "submissions/raw/**"
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scoring/requirements.txt
+
+      - name: Detect submission directory
+        id: detect
+        run: |
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} HEAD -- submissions/raw/)
+          # Extract the submission dir (submissions/raw/<model-name>)
+          SUBMISSION_DIR=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u | head -1)
+          if [ -z "$SUBMISSION_DIR" ]; then
+            echo "No submission directory detected from changed files"
+            exit 1
+          fi
+          echo "dir=$SUBMISSION_DIR" >> "$GITHUB_OUTPUT"
+          echo "Detected submission: $SUBMISSION_DIR"
+
+      - name: Validate submission format
+        id: validate
+        run: |
+          python scoring/validate.py "${{ steps.detect.outputs.dir }}" --manifest manifest.json 2>&1 | tee validation_output.txt
+        continue-on-error: true
+
+      - name: Comment on PR
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (!fs.existsSync('validation_output.txt')) {
+              const body = '## \u274c Submission Validation failed\n\nValidation could not run. Check the workflow logs for details.';
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: body
+              });
+              return;
+            }
+            const output = fs.readFileSync('validation_output.txt', 'utf8');
+            const passed = '${{ steps.validate.outcome }}' === 'success';
+            const icon = passed ? '\u2705' : '\u274c';
+            const status = passed ? 'passed' : 'failed';
+            const body = `## ${icon} Submission Validation ${status}\n\n\`\`\`\n${output}\n\`\`\`\n\n${passed ? 'This submission is correctly formatted. A maintainer will review and run scoring with `/score`.' : 'Please fix the issues above and push again.'}`;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+
+      - name: Fail if validation failed
+        if: steps.validate.outcome == 'failure'
+        run: exit 1

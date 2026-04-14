@@ -1,0 +1,36 @@
+{
+  "gold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
+  "predicted": "Lần đầu không biết dẫn giúp",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
+  "werNormalizedPredicted": "Lần đầu, không biết. Dẫn giúp.",
+  "qualityScore": 2,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
+  "sigWerNormalizedPredicted": "Lần đầu, không biết. Dẫn giúp.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Cái' to 'Lần' at position 0",
+      "reason": "'Cái này' means 'this', while 'Lần đầu' means 'first time'. Substituting 'Cái' with 'Lần' changes the meaning and omits the reference to 'this', which is significant for context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'này' at position 1",
+      "reason": "'này' ('this') is omitted, which removes the reference to 'this' and makes the sentence less specific. This affects the clarity of what is being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'Hướng' to 'Dẫn' at position 6",
+      "reason": "'Hướng dẫn' together means 'guide' or 'instruction', but splitting and substituting 'Hướng' with 'Dẫn' changes the phrase to just 'guide' or 'lead', losing the full meaning of 'instruction'.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'giùm.' at position 8",
+      "reason": "'giùm' means 'please (help)', which adds politeness and a request for help. Its omission makes the sentence less polite but does not change the core meaning.",
+      "score": 2
+    }
+  ]
+}

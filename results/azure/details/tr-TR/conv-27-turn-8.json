@@ -1,0 +1,31 @@
+{
+  "gold": "Tabii. Zaynep nokta Arslan at email nokta com.",
+  "predicted": "Tabii eee zaynap. Arslan edemail.com.",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werNormalizedGold": "Tabii. Zaynep nokta Arslan at email nokta com.",
+  "werNormalizedPredicted": "Tabii, eee Zaynep. Arslan at email.com.",
+  "qualityScore": 1,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Tabii. Zaynep nokta Arslan at email nokta com.",
+  "sigWerNormalizedPredicted": "Tabii, eee Zaynep. Arslan at email.com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tabii.' to 'Tabii,' at position 0",
+      "reason": "Difference is only in punctuation, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'email.com.' at position 5",
+      "reason": "'email.com.' combines the domain and TLD, but the intended meaning (the email domain) is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 6",
+      "reason": "Missing 'nokta' (dot) in the email address could cause confusion or incorrect transcription of the email, which is significant.",
+      "score": 1
+    }
+  ]
+}

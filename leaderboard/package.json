@@ -1,0 +1,35 @@
+{
+    "name": "voice-transcription-benchmark-leaderboard",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "deploy": "npm run build && gh-pages -d dist",
+        "lint": "eslint src/ scripts/",
+        "format": "prettier --write src/ scripts/",
+        "format:check": "prettier --check src/ scripts/"
+    },
+    "dependencies": {
+        "d3-geo": "^3.1.1",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "react-markdown": "^10.1.0",
+        "rehype-raw": "^7.0.0",
+        "remark-gfm": "^4.0.1",
+        "topojson-client": "^3.1.0",
+        "world-atlas": "^2.0.2"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@vitejs/plugin-react": "^4.6.0",
+        "eslint": "^10.2.0",
+        "eslint-config-prettier": "^10.1.8",
+        "gh-pages": "^6.1.1",
+        "globals": "^17.4.0",
+        "prettier": "^3.8.2",
+        "vite": "^7.0.4"
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "predicted": "Hanım, merhabalar. Ben kredi kartımda otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "werNormalizedPredicted": "Hanım, merhabalar. Ben kredi kartımda otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "qualityScore": 3,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "sigWerNormalizedPredicted": "Hanım, merhabalar. Ben kredi kartımda otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna' to 'Hanım,' at position 0",
+      "reason": "'Anna' is a proper noun (a person's name) and its omission removes the addressee's name, which is significant in a greeting context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Hanım' at position 1",
+      "reason": "'kartında' (on the card) vs 'kartımda' (on my card) changes the ownership from general to personal, but the intent of the question remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kartında' to 'kartımda' at position 5",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

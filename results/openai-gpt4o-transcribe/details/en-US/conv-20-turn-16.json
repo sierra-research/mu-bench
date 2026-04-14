@@ -1,0 +1,36 @@
+{
+  "gold": "Okay. I guess Can you try to transfer me again to a live agent, give me one more shot?",
+  "predicted": "Okay, can you try to transfer me again to a live agent?",
+  "unintelligible": false,
+  "wer": 0.5263157894736842,
+  "werNormalizedGold": "Okay. I guess Can you try to transfer me again to a live agent, give me one more shot?",
+  "werNormalizedPredicted": "Okay, can you try to transfer me again to a live agent?",
+  "qualityScore": 2,
+  "significantWer": 0.05263157894736842,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "Okay. I guess Can you try to transfer me again to a live agent, give me one more shot?",
+  "sigWerNormalizedPredicted": "Okay, can you try to transfer me again to a live agent?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Okay.' to 'Okay,' at position 0",
+      "reason": "Difference is only punctuation, which should be ignored as per guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'guess' at position 2",
+      "reason": "Omitting 'I guess' removes a hedging phrase but does not change the main intent or meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'agent,' to 'agent?' at position 13",
+      "reason": "Difference is only punctuation (comma vs question mark), which should be ignored as per guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'give' at position 14",
+      "reason": "Omitting 'give me one more shot' removes a request for another attempt, which changes the intent of the sentence significantly.",
+      "score": 1
+    }
+  ]
+}

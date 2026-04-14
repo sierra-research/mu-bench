@@ -1,0 +1,26 @@
+{
+  "gold": "No. Un pago en cuotas.",
+  "predicted": "Pago en.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "No. Un pago en cuotas.",
+  "werNormalizedPredicted": "Pago en.",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "No. Un pago en cuotas.",
+  "sigWerNormalizedPredicted": "Pago en.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'No.' to 'Pago' at position 0",
+      "reason": "The word 'No.' is omitted, which changes the meaning from a negative response to just a statement about payment. This significantly alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'pago' at position 2",
+      "reason": "The omission of 'cuotas.' removes the information that the payment is in installments, which is important to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

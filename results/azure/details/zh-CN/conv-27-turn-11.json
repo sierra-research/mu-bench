@@ -1,0 +1,26 @@
+{
+  "gold": "林美 at email dot com。",
+  "predicted": "凌美@email.com.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "林美 at email dot com。",
+  "werNormalizedPredicted": "林美@email.com。",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "林 美 at email dot com 。",
+  "sigWerNormalizedPredicted": "林 美 @email.com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to '@email.com' at position 2",
+      "reason": "The phrase 'at email dot com' is replaced by the email format '@email.com'. While the meaning is preserved (the email address is still clear), the format is different. This is a minor error as the information is not lost or changed, just presented differently.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "'dot' is omitted because the actual transcription uses the symbol '.' in the email address, which is an equivalent representation. This does not change the meaning, so it is a minor error.",
+      "score": 2
+    }
+  ]
+}

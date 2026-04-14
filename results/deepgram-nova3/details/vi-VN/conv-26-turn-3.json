@@ -1,0 +1,36 @@
+{
+  "gold": "Tên của mình là Trần Minh. Email là minh chấm trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, Thành phố Hồ Chí Minh, 700000, Việt Nam.",
+  "predicted": "Tên của mình là Trần Minh Email là minh. Tggmail chấm com Số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường Lê Lợi TP HCM bảy trăm nghìn Việt Nam",
+  "unintelligible": false,
+  "wer": 0.18,
+  "werNormalizedGold": "Tên của mình là Trần Minh. Email là minh chấm trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, Thành phố Hồ Chí Minh, 700000, Việt Nam.",
+  "werNormalizedPredicted": "Tên của mình là Trần Minh. Email là minh chấm t g gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, TP HCM, 700000, Việt Nam.",
+  "qualityScore": 2,
+  "significantWer": 0.02,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 50,
+  "sigWerNormalizedGold": "Tên của mình là Trần Minh. Email là minh chấm trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, Thành phố Hồ Chí Minh, 700000, Việt Nam.",
+  "sigWerNormalizedPredicted": "Tên của mình là Trần Minh. Email là minh chấm t g gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, TP HCM, 700000, Việt Nam.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 't' at position 10",
+      "reason": "'trần' is a key part of the email address (likely the user's name), but 't' is just a single letter and does not represent the intended name. This is a significant error as it makes the email address incorrect and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Gmail' at position 13",
+      "reason": "The word 'Gmail' is missing in the actual transcription, but the context still indicates it is an email address at Gmail. This is a minor error as the meaning is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'Thành' to 'TP' at position 42",
+      "reason": "'TP' is a common abbreviation for 'Thành phố' (city) in Vietnamese, so the meaning is preserved. This is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'Hồ' at position 44",
+      "reason": "The abbreviation 'TP HCM' is widely understood to mean 'Thành phố Hồ Chí Minh', so omitting 'Hồ' does not change the meaning. This is a minor error.",
+      "score": 2
+    }
+  ]
+}

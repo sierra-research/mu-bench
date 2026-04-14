@@ -1,0 +1,31 @@
+{
+  "gold": "Phone number? My phone number is 2 1 2, area code, 1 2 3.",
+  "predicted": "My phone number is 212",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "Phone number? My phone number is 2 1 2, area code, 1 2 3.",
+  "werNormalizedPredicted": "My phone number is 2 1 2",
+  "qualityScore": 2,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "Phone number? My phone number is 2 1 2, area code, 1 2 3.",
+  "sigWerNormalizedPredicted": "My phone number is 2 1 2",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'Phone' at position 0",
+      "reason": "The question 'Phone number?' is missing, but the main information (the phone number) is still present. The omission does not derail the meaning, as the context is clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '2,' at position 8",
+      "reason": "The phrase 'area code' is missing, which could cause confusion about what the numbers refer to, making the information less clear. This is a significant omission for clarity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '3.' at position 13",
+      "reason": "The last part of the phone number is missing, which makes the phone number incomplete and fails to convey the intended information.",
+      "score": 1
+    }
+  ]
+}

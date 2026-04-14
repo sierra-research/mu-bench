@@ -1,0 +1,36 @@
+{
+  "gold": "君，君，君玲。",
+  "predicted": "不对，君临",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "君，君，君玲。",
+  "werNormalizedPredicted": "不对，君临",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 ， 君 ， 君 玲 。",
+  "sigWerNormalizedPredicted": "不 对 ， 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '不' at position 0",
+      "reason": "'君' (you) is replaced by '不' (no/not), which completely changes the meaning of the sentence and derails the intended message.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 2",
+      "reason": "Omitting one occurrence of '君' removes repetition that may be important for emphasis or meaning, but does not completely derail the sentence. However, since the sentence is short and the repetition is likely meaningful, this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 5",
+      "reason": "'玲' and '临' are different characters with different meanings, which changes the name or meaning in the sentence, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "Punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

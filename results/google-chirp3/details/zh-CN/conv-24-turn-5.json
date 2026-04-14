@@ -1,0 +1,26 @@
+{
+  "gold": "林美 at email 点 com。",
+  "predicted": "@gmail.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "林美 at email 点 com。",
+  "werNormalizedPredicted": "@ email 点 com。",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "林 美 at email 点 com 。",
+  "sigWerNormalizedPredicted": "@ email 点 com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '@' at position 0",
+      "reason": "The name '林' (a Chinese surname) was replaced with '@', which is a symbol and not a name. This completely changes the meaning and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "The given name '美' is missing, which omits a key part of the person's name and significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
+}

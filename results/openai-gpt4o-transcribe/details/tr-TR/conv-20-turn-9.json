@@ -1,0 +1,26 @@
+{
+  "gold": "Hayır, yanlış. Telefon numarası yanlış.",
+  "predicted": "Hayır, telefon numarası yanlış.",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "Hayır, yanlış. Telefon numarası yanlış.",
+  "werNormalizedPredicted": "hayır, telefon numarası yanlış.",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "Hayır, yanlış. Telefon numarası yanlış.",
+  "sigWerNormalizedPredicted": "hayır, telefon numarası yanlış.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır,' to 'hayır,' at position 0",
+      "reason": "The word 'yanlış.' (meaning 'wrong') is omitted after 'Hayır,' in the actual transcript. This removes an explicit statement of 'wrong' but the following sentence 'Telefon numarası yanlış.' (The phone number is wrong) still conveys the main point. The overall meaning is mostly preserved, but the explicit correction is missing.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'Telefon' at position 2",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

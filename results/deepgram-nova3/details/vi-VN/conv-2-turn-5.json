@@ -1,0 +1,26 @@
+{
+  "gold": "C N 2 3 5.",
+  "predicted": "Cn-hai trăm ba mươi lăm",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "C N 2 3 5.",
+  "werNormalizedPredicted": "C N 235.",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "C N 2 3 5.",
+  "sigWerNormalizedPredicted": "C N 235.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '2' to '235.' at position 2",
+      "reason": "The model combined the digits '2', '3', and '5' into a single number '235', which changes the intended sequence of individual digits. This is a significant error, especially in contexts like codes or IDs where each digit matters.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '3' at position 3",
+      "reason": "The digit '3' is missing as an individual element in the actual transcription, which alters the intended sequence. This is a significant error for spelled-out sequences.",
+      "score": 1
+    }
+  ]
+}

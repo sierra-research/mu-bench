@@ -1,0 +1,56 @@
+{
+  "gold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
+  "predicted": "Hayır, hayır, yanlış anladım. Tamamen yanlış anlıyorsuntıkarkodluyorumadanahataymuglaedirnetrabzon.adanarizesamsunlüleburgazadananigde@email.com.",
+  "unintelligible": false,
+  "wer": 0.5185185185185185,
+  "werNormalizedGold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
+  "werNormalizedPredicted": "Hayır, hayır, yanlış anladım. Tamamen yanlış anlıyorsun, tekrar kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon. Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde@email.com.",
+  "qualityScore": 2,
+  "significantWer": 0.14814814814814814,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
+  "sigWerNormalizedPredicted": "Hayır, hayır, yanlış anladım. Tamamen yanlış anlıyorsun, tekrar kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon. Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde@email.com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır' to 'hayır,' at position 0",
+      "reason": "Repeating 'Hayır' adds emphasis but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'yazdın.' to 'anladım.' at position 2",
+      "reason": "'You wrote' vs. 'I understood' changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'almışsın,' to 'anlıyorsun,' at position 5",
+      "reason": "'You received' vs. 'You understand' are different actions, but both indicate a misunderstanding; the meaning is altered but the context of error remains.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'söylüyorum,' at position 7",
+      "reason": "Omitting 'I am saying' does not significantly change the meaning, as the speaker is still clarifying.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'Trabzon' to 'Trabzon.' at position 15",
+      "reason": "Difference is only punctuation, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 16",
+      "reason": "Omitting 'nokta' (dot) in a spelled-out email address can cause confusion in the email, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'Niğde' to 'Niğde@email.com.' at position 22",
+      "reason": "Combining the name and email address changes the structure and clarity of the email address, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 23",
+      "reason": "Omitting 'at' in the email address makes the email format incorrect, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

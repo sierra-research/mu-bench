@@ -1,0 +1,26 @@
+{
+  "gold": "是美点玲 at email dot com。",
+  "predicted": "是mir。lingemail。com",
+  "unintelligible": false,
+  "wer": 0.7777777777777778,
+  "werNormalizedGold": "是美点玲 at email dot com。",
+  "werNormalizedPredicted": "是mir.ling@email.com。",
+  "qualityScore": 1,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "是 美 点 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "是 mir.ling@email.com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mir.ling@email.com' at position 1",
+      "reason": "The expected transcription spells out the email address in Chinese words, while the actual transcription gives the full email address in English. This is a significant change in format and language, which could cause confusion or loss of information for the intended recipient.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '点' at position 2",
+      "reason": "The word '点' (dot) is omitted in the actual transcription, which is important for correctly conveying the email address in the expected format. This omission contributes to a significant error in the context of spelling out an email address.",
+      "score": 1
+    }
+  ]
+}

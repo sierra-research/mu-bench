@@ -1,0 +1,26 @@
+{
+  "gold": "需要提供最新账单。",
+  "predicted": "需有提供最新样板。",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "需要提供最新账单。",
+  "werNormalizedPredicted": "需有提供最新样板。",
+  "qualityScore": 1,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "需 要 提 供 最 新 账 单 。",
+  "sigWerNormalizedPredicted": "需 有 提 供 最 新 样 板 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '要' to '有' at position 1",
+      "reason": "'要' means 'need' or 'want', while '有' means 'have'; this changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '账' to '样' at position 6",
+      "reason": "'账单' means 'bill' or 'statement', while '样板' means 'sample' or 'template'; this changes the object being referred to, altering the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

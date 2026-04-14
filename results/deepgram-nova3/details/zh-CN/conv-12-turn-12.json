@@ -1,0 +1,31 @@
+{
+  "gold": "君灵 at email dot com。",
+  "predicted": "junlingemail。com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "君灵 at email dot com。",
+  "werNormalizedPredicted": "junling at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 灵 at email dot com 。",
+  "sigWerNormalizedPredicted": "junling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junling' at position 0",
+      "reason": "'君' is a Chinese character, while 'junling' is a romanized form that could represent the same name. If the context is an email address and the romanization is correct, this is a minor error as the meaning is preserved but the script is different.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "'灵' is the second character of the name. Its omission changes the name from '君灵' to just 'junling', which could be interpreted as a single name. If 'junling' is meant to represent both characters together, this is a minor error; otherwise, it could be significant. Given the context of romanization, this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "Punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

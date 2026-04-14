@@ -1,0 +1,36 @@
+{
+  "gold": "Şimdi şöyle, benim bir işletmem var ve ben işletmemde diğer kartın geçişini sağlamak istiyorum. Bir yemek kartı firması ile çalışıyorum sizlerle.",
+  "predicted": "Şimdi şöyle, eee, benim bir işletmem var ve ben işletmemde yemek kartı geçişini sağlamak istiyorum. Bir yemek kartı firmasıyla çalışıyorum, sizlerle",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "Şimdi şöyle, benim bir işletmem var ve ben işletmemde diğer kartın geçişini sağlamak istiyorum. Bir yemek kartı firması ile çalışıyorum sizlerle.",
+  "werNormalizedPredicted": "Şimdi şöyle, eee, benim bir işletmem var ve ben işletmemde yemek kartı geçişini sağlamak istiyorum. Bir yemek kartı firmasıyla çalışıyorum, sizlerle.",
+  "qualityScore": 3,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "Şimdi şöyle, benim bir işletmem var ve ben işletmemde diğer kartın geçişini sağlamak istiyorum. Bir yemek kartı firması ile çalışıyorum sizlerle.",
+  "sigWerNormalizedPredicted": "Şimdi şöyle, eee, benim bir işletmem var ve ben işletmemde yemek kartı geçişini sağlamak istiyorum. Bir yemek kartı firmasıyla çalışıyorum, sizlerle.",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'eee,' at position 2",
+      "reason": "'eee' is a filler word and does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'diğer' to 'yemek' at position 9",
+      "reason": "Replacing 'diğer kartın' (other card) with 'yemek kartı' (meal card) changes the meaning of the sentence, as it specifies a different card type.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'firması' to 'firmasıyla' at position 17",
+      "reason": "'firmasıyla' (with the company) instead of 'firması' (company) is a minor grammatical difference and does not change the overall meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'çalışıyorum' at position 19",
+      "reason": "The word 'çalışıyorum' (I am working) is present in both, but the actual transcript adds a comma and 'sizlerle' (with you), which does not significantly change the meaning.",
+      "score": 3
+    }
+  ]
+}

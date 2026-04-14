@@ -1,0 +1,41 @@
+{
+  "gold": "喂，我想提高我的信用卡额度。",
+  "predicted": "不对我想tgo的信用卡恶毒",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "喂，我想提高我的信用卡额度。",
+  "werNormalizedPredicted": "不对我想 tgo 的信用卡恶毒",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "喂 ， 我 想 提 高 我 的 信 用 卡 额 度 。",
+  "sigWerNormalizedPredicted": "不 对 我 想 tgo 的 信 用 卡 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '喂' to '不' at position 0",
+      "reason": "'喂' is a greeting (hello), while '不' means 'no' or 'not', which changes the intent and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '提' to 'tgo' at position 4",
+      "reason": "'提' is part of the phrase '提高' (to increase), while 'tgo' is an incorrect transcription and not a valid word in this context, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '高' at position 5",
+      "reason": "Omitting '高' breaks the phrase '提高' (to increase), which is essential to the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '恶' at position 11",
+      "reason": "'额' means 'limit' (as in credit limit), while '恶' means 'evil' or 'bad', which changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 13",
+      "reason": "Punctuation differences should be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

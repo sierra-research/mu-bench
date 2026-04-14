@@ -1,0 +1,31 @@
+{
+  "gold": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
+  "predicted": "Mình muốn đến xin ngân hàng xuất lại hóa đường bổ sung hoặc là chi tiết giao dịch Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tắc không nhở",
+  "unintelligible": false,
+  "wer": 0.08571428571428572,
+  "werNormalizedGold": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
+  "werNormalizedPredicted": "Mình muốn đến xin ngân hàng xuất lại hóa đường bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tắc không nhở?",
+  "qualityScore": 3,
+  "significantWer": 0.05714285714285714,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 35,
+  "sigWerNormalizedGold": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
+  "sigWerNormalizedPredicted": "Mình muốn đến xin ngân hàng xuất lại hóa đường bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tắc không nhở?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đơn' to 'đường' at position 9",
+      "reason": "'hóa đơn' means 'invoice' or 'bill', while 'hóa đường' is not a valid phrase and changes the meaning of the request, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tác' to 'tắc' at position 32",
+      "reason": "'công tác' means 'business trip' or 'work assignment', while 'công tắc' means 'switch' (like a light switch), which changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhỉ?' to 'nhở?' at position 34",
+      "reason": "'nhỉ' and 'nhở' are informal sentence-ending particles in Vietnamese with similar meaning; the difference is minor and does not affect the overall meaning.",
+      "score": 3
+    }
+  ]
+}

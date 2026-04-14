@@ -1,0 +1,31 @@
+{
+  "gold": "Ừ. Cảm ơn bạn. Bạn xem lại hộ mình nhá.",
+  "predicted": "Cảm ơn bạn Bạn xem lại của mình với",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werNormalizedGold": "Ừ. Cảm ơn bạn. Bạn xem lại hộ mình nhá.",
+  "werNormalizedPredicted": "Cảm ơn bạn. Bạn xem lại của mình với.",
+  "qualityScore": 2,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "Ừ. Cảm ơn bạn. Bạn xem lại hộ mình nhá.",
+  "sigWerNormalizedPredicted": "Cảm ơn bạn. Bạn xem lại của mình với.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'Ừ.' at position 0",
+      "reason": "'Ừ.' is an affirmative interjection (like 'yes' or 'uh-huh') that sets a conversational tone, but its omission does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'hộ' to 'của' at position 7",
+      "reason": "'hộ' means 'for (someone)' (as in 'help me check'), while 'của' means 'of' (as in 'my'). This changes the meaning from asking for help to simply referring to possession, which is a significant change in intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhá.' to 'với.' at position 9",
+      "reason": "'nhá' is a softener or request particle, while 'với' means 'with'. The substitution changes the tone but not the core meaning of the request.",
+      "score": 2
+    }
+  ]
+}

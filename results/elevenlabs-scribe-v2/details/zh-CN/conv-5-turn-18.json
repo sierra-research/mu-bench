@@ -1,0 +1,31 @@
+{
+  "gold": "但是你不知道我的邮箱地址。",
+  "predicted": "但是你不知道我的有像地是",
+  "unintelligible": false,
+  "wer": 0.3076923076923077,
+  "werNormalizedGold": "但是你不知道我的邮箱地址。",
+  "werNormalizedPredicted": "但是你不知道我的有像地是",
+  "qualityScore": 1,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "但 是 你 不 知 道 我 的 邮 箱 地 址 。",
+  "sigWerNormalizedPredicted": "但 是 你 不 知 道 我 的 有 像 地 是",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '有' at position 8",
+      "reason": "'邮' (mail) and '有' (have) are completely different in meaning, and this substitution changes the meaning of the phrase '邮箱' (email address) to something incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '址' to '是' at position 11",
+      "reason": "'址' (address) and '是' (is) are unrelated, and this substitution makes the phrase '地址' (address) incorrect, resulting in a loss of the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 12",
+      "reason": "Missing punctuation at the end of the sentence does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

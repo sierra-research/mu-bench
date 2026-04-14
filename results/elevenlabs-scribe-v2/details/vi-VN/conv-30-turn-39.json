@@ -1,0 +1,36 @@
+{
+  "gold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
+  "predicted": "Ờ em cần là tôi muốn nói chuyện với, a, người trực tiếp",
+  "unintelligible": false,
+  "wer": 0.5833333333333334,
+  "werNormalizedGold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
+  "werNormalizedPredicted": "Ờ em cần là tôi muốn nói chuyện với, à, người trực tiếp",
+  "qualityScore": 2,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
+  "sigWerNormalizedPredicted": "Ờ em cần là tôi muốn nói chuyện với, à, người trực tiếp",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tôi' to 'Ờ' at position 0",
+      "reason": "'Ờ' is a filler word (like 'uh'), while 'Tôi' means 'I'. This changes the subject and coherence of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đâu.' to 'là' at position 3",
+      "reason": "'đâu.' means 'don't need' (negation), while 'là' means 'is/that'. This changes the meaning from a refusal to a statement.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'với' to 'à,' at position 8",
+      "reason": "The insertion of 'với,' (with) is redundant but does not change the meaning significantly.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'tiếp.' to 'tiếp' at position 11",
+      "reason": "'à,' is a filler/discourse marker, while 'với' means 'with'. The substitution does not change the main meaning but affects fluency.",
+      "score": 2
+    }
+  ]
+}

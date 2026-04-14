@@ -1,0 +1,36 @@
+{
+  "gold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "predicted": "Anlayışla mı istiyorum, son senenin 2024 yılının ocak-aralık arasındaki hesap ekstresini istiyorum.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "werNormalizedPredicted": "Anlayışla mı istiyorum, son senenin 2024 yılının ocak-aralık arasındaki hesap ekstresini istiyorum.",
+  "qualityScore": 2,
+  "significantWer": 0.07142857142857142,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "sigWerNormalizedPredicted": "Anlayışla mı istiyorum, son senenin 2024 yılının ocak-aralık arasındaki hesap ekstresini istiyorum.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna,' to 'Anlayışla' at position 0",
+      "reason": "'Anna' is a proper noun (a name), while 'Anlayışla' means 'with understanding' in Turkish. This substitution completely changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'seneni,' at position 5",
+      "reason": "'seneni' (likely a typo for 'senenin', meaning 'of the year') is omitted, but the phrase 'son senenin' ('of the last year') is present in the actual transcription, so this deletion does not significantly affect the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ocak' to 'ocak-aralık' at position 8",
+      "reason": "The actual transcription combines 'ocak' (January) and 'aralık' (December) into 'ocak-aralık' (January-December), which is a more concise way to express the same date range. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'aralık' at position 9",
+      "reason": "'aralık' (December) is not separately mentioned because it is included in 'ocak-aralık' (January-December) in the actual transcription, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

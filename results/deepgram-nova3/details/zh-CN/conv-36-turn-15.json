@@ -1,0 +1,31 @@
+{
+  "gold": "你好，能听见我说话吗？",
+  "predicted": "等纪念文化吗",
+  "unintelligible": false,
+  "wer": 0.9090909090909091,
+  "werNormalizedGold": "你好，能听见我说话吗？",
+  "werNormalizedPredicted": "等纪念文化吗",
+  "qualityScore": 1,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 好 ， 能 听 见 我 说 话 吗 ？",
+  "sigWerNormalizedPredicted": "等 纪 念 文 化 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '等' at position 0",
+      "reason": "The substitution changes the subject of the sentence, resulting in a completely different meaning and making the sentence incoherent compared to the expected greeting.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '见' at position 5",
+      "reason": "Omitting '见' removes part of the phrase '听见' (to hear), which is essential to the meaning of the sentence and causes a significant loss of intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '？' at position 10",
+      "reason": "Missing the question mark does not affect the meaning of the sentence in spoken language.",
+      "score": 3
+    }
+  ]
+}

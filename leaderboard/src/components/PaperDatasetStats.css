@@ -1,0 +1,125 @@
+.ds-widget {
+    margin: 32px 0 40px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.ds-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ds-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ds-locale {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.ds-flag {
+    font-size: 16px;
+}
+
+.ds-locale-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #111827;
+    white-space: nowrap;
+}
+
+.ds-bars {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ds-bar-track {
+    height: 20px;
+    background: #f9fafb;
+    border: 1px solid #f3f4f6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ds-bar {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    transition: width 0.8s ease;
+}
+
+.ds-bar--utts {
+    background: #374151;
+}
+
+.ds-bar--dur {
+    background: #9ca3af;
+}
+
+.ds-bar-value {
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+}
+
+.ds-avg {
+    font-size: 12px;
+    color: #6b7280;
+    width: 56px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.ds-totals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #374151;
+    flex-wrap: wrap;
+}
+
+.ds-total-item strong {
+    color: #111827;
+    font-weight: 800;
+}
+
+.ds-total-sep {
+    color: #d1d5db;
+}
+
+@media (max-width: 600px) {
+    .ds-locale {
+        width: 100px;
+    }
+
+    .ds-locale-label {
+        font-size: 11px;
+    }
+
+    .ds-avg {
+        display: none;
+    }
+
+    .ds-widget {
+        padding: 16px;
+    }
+}

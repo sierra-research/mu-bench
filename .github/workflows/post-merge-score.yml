@@ -1,0 +1,92 @@
+name: Post-Merge Score
+
+on:
+  pull_request_target:
+    types: [closed]
+    paths:
+      - "submissions/raw/**"
+
+permissions:
+  contents: write
+
+jobs:
+  score-and-commit:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    environment: scoring
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Detect and validate submission directory name
+        id: detect
+        run: |
+          MERGE_SHA=$(git log -1 --format='%H')
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- submissions/raw/)
+          SUBMISSION_DIR=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u | head -1)
+          if [ -z "$SUBMISSION_DIR" ]; then
+            echo "No submission directory detected"
+            exit 1
+          fi
+          SUBMISSION_NAME=$(basename "$SUBMISSION_DIR")
+          if ! echo "$SUBMISSION_NAME" | grep -qE '^[a-zA-Z0-9_-]+$'; then
+            echo "ERROR: Submission directory name contains disallowed characters: $SUBMISSION_NAME"
+            exit 1
+          fi
+          echo "dir=$SUBMISSION_DIR" >> "$GITHUB_OUTPUT"
+          echo "name=$SUBMISSION_NAME" >> "$GITHUB_OUTPUT"
+          echo "Detected submission: $SUBMISSION_DIR (merge commit: $MERGE_SHA)"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scoring/requirements.txt
+
+      - name: Validate submission
+        run: python scoring/validate.py "${{ steps.detect.outputs.dir }}" --manifest manifest.json
+
+      - name: Inject scoring prompts
+        env:
+          SCORING_PROMPTS_PY: ${{ secrets.SCORING_PROMPTS_PY }}
+        run: |
+          if [ -z "$SCORING_PROMPTS_PY" ]; then
+            echo "ERROR: SCORING_PROMPTS_PY secret is not set"
+            exit 1
+          fi
+          printenv SCORING_PROMPTS_PY > scoring/prompts.py
+
+      - name: Normalize submissions
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python -m scoring.normalize \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --manifest manifest.json \
+            --output-dir "submissions/normalized/${{ steps.detect.outputs.name }}"
+
+      - name: Calculate metrics
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python -m scoring.score \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --manifest manifest.json \
+            --output-dir "results/${{ steps.detect.outputs.name }}" \
+            --num-workers 8
+
+      - name: Update leaderboard.json
+        run: python -m scoring.update_leaderboard
+
+      - name: Commit results to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/ submissions/normalized/
+          git diff --cached --quiet || git commit -m "Add scoring results for ${{ steps.detect.outputs.name }}"
+          git push

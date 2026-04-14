@@ -1,0 +1,26 @@
+{
+  "gold": "你说的不对！你为什么不听好呀。",
+  "predicted": "你说的不对,你为什么听不听我呀?",
+  "unintelligible": false,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "你说的不对！你为什么不听好呀。",
+  "werNormalizedPredicted": "你说的不对！你为什么听不听我呀。",
+  "qualityScore": 2,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "你 说 的 不 对 ！ 你 为 什 么 不 听 好 呀 。",
+  "sigWerNormalizedPredicted": "你 说 的 不 对 ！ 你 为 什 么 听 不 听 我 呀 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '听' at position 10",
+      "reason": "The insertion of '听' (listen) changes the structure of the question from 'why don't you listen well' to 'why do you listen or not listen to me', which alters the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '好' to '我' at position 12",
+      "reason": "Substituting '好' (well/good) with '我' (me) changes the object of the sentence, shifting the meaning from 'listen well' to 'listen to me', which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

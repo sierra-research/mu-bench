@@ -1,0 +1,31 @@
+{
+  "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "predicted": "E-mail daha vermedim, tekrar email vereyim ben sana. Ahmet. Arslanarslan et email nokta com",
+  "unintelligible": false,
+  "wer": 0.55,
+  "werNormalizedGold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "werNormalizedPredicted": "Email daha vermedim, tekrar email vereyim ben sana. Ahmet. Arslanarslan at email nokta com.",
+  "qualityScore": 1,
+  "significantWer": 0.05,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "sigWerNormalizedPredicted": "Email daha vermedim, tekrar email vereyim ben sana. Ahmet. Arslanarslan at email nokta com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vermedin,' to 'tekrar' at position 2",
+      "reason": "'vermedin' (you didn't give) vs 'vermedim' (I didn't give) changes the subject of the sentence, but the overall meaning (that the email hasn't been given) is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'Ahmet' to 'Ahmet.' at position 7",
+      "reason": "The word 'tekrar' (again) is added, which does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'Arslan' at position 9",
+      "reason": "The expected is a spelled-out email username ('Ahmet dot Arslan A R S L A N'), but the actual merges 'Arslanarslan' and omits the spelled letters. This is a significant error as it changes the email address and could lead to communication failure.",
+      "score": 1
+    }
+  ]
+}

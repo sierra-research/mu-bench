@@ -1,0 +1,31 @@
+{
+  "gold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
+  "predicted": "Chưa chưa, nó hay nên bị đếm.",
+  "unintelligible": false,
+  "wer": 0.875,
+  "werNormalizedGold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
+  "werNormalizedPredicted": "Chưa, chưa, nó hay nên bị đếm.",
+  "qualityScore": 2,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
+  "sigWerNormalizedPredicted": "Chưa, chưa, nó hay nên bị đếm.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chưa.' to 'nó' at position 1",
+      "reason": "The extra 'chưa,' is a repetition and does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'đứng.' to 'đếm.' at position 5",
+      "reason": "Replacing 'chưa.' (not yet) with 'nó' (it) changes the subject and disrupts the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Đợi' at position 6",
+      "reason": "'Đứng' (stuck/frozen) and 'đếm' (count) have completely different meanings, which significantly alters the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

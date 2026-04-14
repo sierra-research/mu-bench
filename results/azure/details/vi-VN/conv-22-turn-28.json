@@ -1,0 +1,26 @@
+{
+  "gold": "Tôi muốn nhận qua email luôn đi.",
+  "predicted": "Tớ muốn.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "Tôi muốn nhận qua email luôn đi.",
+  "werNormalizedPredicted": "Tớ muốn.",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Tôi muốn nhận qua email luôn đi.",
+  "sigWerNormalizedPredicted": "Tớ muốn.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tôi' to 'Tớ' at position 0",
+      "reason": "'Tôi' and 'Tớ' are both first-person pronouns in Vietnamese, but 'Tớ' is more informal. The meaning is preserved, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nhận' at position 2",
+      "reason": "The entire phrase about receiving via email is missing, which removes the main intent of the sentence. This is a significant error as the meaning is lost.",
+      "score": 1
+    }
+  ]
+}

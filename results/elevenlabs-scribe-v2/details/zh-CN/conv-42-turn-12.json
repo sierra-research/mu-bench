@@ -1,0 +1,26 @@
+{
+  "gold": "你说的不对，真的不对。",
+  "predicted": "不，你什么都不对，真的不对。",
+  "unintelligible": false,
+  "wer": 0.45454545454545453,
+  "werNormalizedGold": "你说的不对，真的不对。",
+  "werNormalizedPredicted": "不，你什么都不对，真的不对。",
+  "qualityScore": 2,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 说 的 不 对 ， 真 的 不 对 。",
+  "sigWerNormalizedPredicted": "不 ， 你 什 么 都 不 对 ， 真 的 不 对 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '不' at position 0",
+      "reason": "The insertion of '不' at the beginning changes the sentence from a statement to a negation, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '说' to '么' at position 1",
+      "reason": "The insertion of '什' (as part of '什么都不对') introduces a new phrase meaning 'nothing is right', which changes the meaning from 'what you said is not right' to 'nothing you say is right'. This is a significant change.",
+      "score": 1
+    }
+  ]
+}

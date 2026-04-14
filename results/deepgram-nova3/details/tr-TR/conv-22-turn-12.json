@@ -1,0 +1,31 @@
+{
+  "gold": "68 değil, pardon 68 değil, 67.",
+  "predicted": "Altmış sekiz değil altmış yedi.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "68 değil, pardon 68 değil, 67.",
+  "werNormalizedPredicted": "Altmış sekiz değil, altmış yedi.",
+  "qualityScore": 2,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "68 değil, pardon 68 değil, 67.",
+  "sigWerNormalizedPredicted": "Altmış sekiz değil, altmış yedi.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '68' to 'sekiz' at position 0",
+      "reason": "'Altmış' is the Turkish word for 'sixty', which is part of the number '68' ('altmış sekiz'). The model transcribed the number in words instead of digits, which does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'pardon' to 'altmış' at position 2",
+      "reason": "'68' is 'altmış sekiz' in Turkish, but only 'sekiz' (eight) is present here, which is incomplete and changes the number. This is a significant error as it alters the intended number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'değil,' at position 4",
+      "reason": "'Pardon' (excuse me) is replaced with 'altmış' (sixty), which is a completely different word and changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

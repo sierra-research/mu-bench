@@ -1,0 +1,26 @@
+{
+  "gold": "55 12 34 este 56 este 78.",
+  "predicted": "Cincuenta y cinco, doce, treinta y cuatro, cincuenta y seis, setenta y ocho.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "55 12 34 este 56 este 78.",
+  "werNormalizedPredicted": "55 12 34 56 78.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "55 12 34 este 56 este 78.",
+  "sigWerNormalizedPredicted": "55 12 34 56 78.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'este' at position 3",
+      "reason": "'este' is a word that likely serves as a separator or marker in the sequence. Its omission could cause confusion in understanding the structure or grouping of the numbers, but the core numbers are still present, so the overall meaning is mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'este' at position 5",
+      "reason": "Similar to the previous error, omitting 'este' removes a structural word that may help clarify the grouping of numbers, but the main numeric information is still intact.",
+      "score": 2
+    }
+  ]
+}

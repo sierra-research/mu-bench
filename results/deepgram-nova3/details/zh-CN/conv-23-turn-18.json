@@ -1,0 +1,26 @@
+{
+  "gold": "是妹玲 at email dot com。",
+  "predicted": "史密林。",
+  "unintelligible": false,
+  "wer": 0.875,
+  "werNormalizedGold": "是妹玲 at email dot com。",
+  "werNormalizedPredicted": "史密林。",
+  "qualityScore": 1,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "是 妹 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "史 密 林 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to '史' at position 0",
+      "reason": "The first character is a different Chinese character, which could change the meaning or the name being referenced. In the context of a name or email, this is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 3",
+      "reason": "The second character is also a different Chinese character, which changes the name or word being referenced. This is a significant error, especially in the context of a name or email address.",
+      "score": 1
+    }
+  ]
+}

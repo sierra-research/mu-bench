@@ -1,0 +1,31 @@
+{
+  "gold": "Tên của mình là Trần Minh. Email là minh trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ của mình là số 1 2 3, đường Lê Lợi, Hồ Chí Minh, 700 000, Việt Nam.",
+  "predicted": "Tên của mình là Trần Minh email là :minhtrangmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường Lê Lợi TP. HCM bảy trăm nghìn ở Việt Nam",
+  "unintelligible": false,
+  "wer": 0.0784313725490196,
+  "werNormalizedGold": "Tên của mình là Trần Minh. Email là minh trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ của mình là số 1 2 3, đường Lê Lợi, Hồ Chí Minh, 700 000, Việt Nam.",
+  "werNormalizedPredicted": "Tên của mình là Trần Minh. Email là minh trần a còng gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ của mình là số 1 2 3, đường Lê Lợi, TP. HCM, 700 000, Việt Nam.",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 51,
+  "sigWerNormalizedGold": "Tên của mình là Trần Minh. Email là minh trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ của mình là số 1 2 3, đường Lê Lợi, Hồ Chí Minh, 700 000, Việt Nam.",
+  "sigWerNormalizedPredicted": "Tên của mình là Trần Minh. Email là minh trần a còng gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ của mình là số 1 2 3, đường Lê Lợi, TP. HCM, 700 000, Việt Nam.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Gmail' to 'gmail' at position 12",
+      "reason": "Difference is only in capitalization, which does not affect meaning or correctness for email providers.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Hồ' to 'TP.' at position 44",
+      "reason": "'Hồ Chí Minh' (the full city name) is replaced by 'TP. HCM' (abbreviation for 'Thành phố Hồ Chí Minh'), which is a common and equivalent way to refer to the same city.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'Minh,' at position 46",
+      "reason": "'Minh' is omitted from the city name, but 'TP. HCM' is a standard abbreviation for 'Thành phố Hồ Chí Minh', so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

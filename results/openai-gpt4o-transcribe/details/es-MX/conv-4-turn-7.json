@@ -1,0 +1,26 @@
+{
+  "gold": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
+  "predicted": "Más cincuenta y dos, cincuenta y cinco, uno, dos, tres, cuatro, cinco, seis, siete, ocho.",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
+  "werNormalizedPredicted": "Más 52 55 1 2 3 4 5 6 7 8.",
+  "qualityScore": 3,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
+  "sigWerNormalizedPredicted": "Más 52 55 1 2 3 4 5 6 7 8.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Bueno,' to 'Más' at position 0",
+      "reason": "'Bueno' (meaning 'well' or 'okay') is replaced by 'más' (meaning 'more' or 'plus'), which changes the meaning at the start of the sentence and could confuse the intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'más' at position 1",
+      "reason": "The word 'más' is missing in the actual transcription, but since 'más' is present at position 0 in the actual, this is a result of the initial substitution error. No additional penalty is needed beyond the substitution.",
+      "score": 3
+    }
+  ]
+}

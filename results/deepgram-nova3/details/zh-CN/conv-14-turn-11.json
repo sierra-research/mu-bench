@@ -1,0 +1,26 @@
+{
+  "gold": "没有没有没有，美玲 at email dot com。",
+  "predicted": "meelingmeel。com。",
+  "unintelligible": false,
+  "wer": 0.6428571428571429,
+  "werNormalizedGold": "没有没有没有，美玲 at email dot com。",
+  "werNormalizedPredicted": "meeling at email dot com。",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "没 有 没 有 没 有 ， 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "meeling at email dot com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '没' to 'meeling' at position 0",
+      "reason": "The expected contains repeated Chinese words meaning 'no, no, no' and a name '美玲', while the actual only has 'meeling', which is an attempt at the name but omits the repeated phrase. The omission of the repeated phrase changes the meaning and context significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '有' at position 1",
+      "reason": "The repeated phrase '没 有 没 有 没 有 ，' (meaning 'no, no, no,') is completely missing from the actual transcription, which removes important context and changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

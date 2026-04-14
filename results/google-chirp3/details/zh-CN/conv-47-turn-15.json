@@ -1,0 +1,26 @@
+{
+  "gold": "不对的，不对的，我的邮箱地址是峻岭 at email dot com。",
+  "predicted": "不对的,不对的,我的邮箱地址是0@email.com 。",
+  "unintelligible": false,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "不对的，不对的，我的邮箱地址是峻岭 at email dot com。",
+  "werNormalizedPredicted": "不对的，不对的，我的邮箱地址是0 at email dot com。",
+  "qualityScore": 1,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "不 对 的 ， 不 对 的 ， 我 的 邮 箱 地 址 是 峻 岭 at email dot com 。",
+  "sigWerNormalizedPredicted": "不 对 的 ， 不 对 的 ， 我 的 邮 箱 地 址 是 0 at email dot com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '峻' to '0' at position 15",
+      "reason": "The expected email address contains the Chinese character '峻', but the actual transcription has '0' (zero) instead. This is a significant error because it completely changes the email address and makes it unusable for contacting the intended recipient.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '岭' at position 16",
+      "reason": "The character '岭' is missing from the actual transcription, which further alters the email address and makes it incorrect. This is a significant error as it prevents correct identification or use of the email address.",
+      "score": 1
+    }
+  ]
+}

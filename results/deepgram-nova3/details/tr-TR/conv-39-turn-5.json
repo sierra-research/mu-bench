@@ -1,0 +1,46 @@
+{
+  "gold": "Tabii ek bilgi alırım o zaman sizden, eğer aktarılıyorsa. Ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim?",
+  "predicted": "Tabii, bilgi alayım o zaman sizden eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "Tabii ek bilgi alırım o zaman sizden, eğer aktarılıyorsa. Ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim?",
+  "werNormalizedPredicted": "Tabii, bilgi alayım o zaman sizden, eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
+  "qualityScore": 2,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "Tabii ek bilgi alırım o zaman sizden, eğer aktarılıyorsa. Ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim?",
+  "sigWerNormalizedPredicted": "Tabii, bilgi alayım o zaman sizden, eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tabii' to 'Tabii,' at position 0",
+      "reason": "The only difference is the comma, which is punctuation and should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ek' at position 1",
+      "reason": "Omitting 'ek' (additional) changes the nuance of the information being requested, but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'alırım' to 'alayım' at position 3",
+      "reason": "'Alırım' (I will take) and 'alayım' (let me take) are close in meaning, both expressing intent to receive information, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'aktarılıyorsa.' to 'aktaramıyorsanız.' at position 8",
+      "reason": "'Aktarılıyorsa' (if it is being transferred) vs 'aktaramıyorsanız' (if you cannot transfer) changes the condition from a passive to an active negative, which significantly alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'limitim' to 'limitimin' at position 14",
+      "reason": "The difference is a possessive suffix, which does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'şey' at position 19",
+      "reason": "Inserting 'şey' (thing) adds a vague word but does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

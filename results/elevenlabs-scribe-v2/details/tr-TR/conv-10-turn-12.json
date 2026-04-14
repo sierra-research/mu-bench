@@ -1,0 +1,31 @@
+{
+  "gold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
+  "predicted": "Hayır, e-mail ve telefon numarası yanlış. E-mailde adımın son harfi \"T\" olacak, \"T\" değil \"T\". Zeynep T.",
+  "unintelligible": false,
+  "wer": 0.4117647058823529,
+  "werNormalizedGold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
+  "werNormalizedPredicted": "Hayır, email ve telefon numarası yanlış. Emailde adımın son harfi T olacak, T değil T. Zeynep T.",
+  "qualityScore": 1,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
+  "sigWerNormalizedPredicted": "Hayır, email ve telefon numarası yanlış. Emailde adımın son harfi T olacak, T değil T. Zeynep T.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
+      "reason": "Difference is only punctuation (comma), which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'P' to 'T' at position 10",
+      "reason": "The expected letter for the name ending is 'P', but the actual transcription says 'T'. This is a significant error as it changes the correct spelling of the name/email.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'değil,' to 'değil' at position 13",
+      "reason": "Difference is only punctuation (comma), which does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

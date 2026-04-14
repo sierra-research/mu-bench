@@ -1,0 +1,31 @@
+{
+  "gold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
+  "predicted": "君，嗯，不对的，你说的不对，你说的不对，君灵，君灵。",
+  "unintelligible": false,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
+  "werNormalizedPredicted": "君，嗯，不对的，你说得不对，你说得不对，君玲，君玲。",
+  "qualityScore": 2,
+  "significantWer": 0.038461538461538464,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 26,
+  "sigWerNormalizedGold": "君 ， 你 说 得 不 对 ， 你 说 得 不 对 ， 你 说 得 不 对 ， 君 玲 ， 君 玲 。",
+  "sigWerNormalizedPredicted": "君 ， 嗯 ， 不 对 的 ， 你 说 得 不 对 ， 你 说 得 不 对 ， 君 玲 ， 君 玲 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '嗯' at position 2",
+      "reason": "'你' (you) is a pronoun addressing someone, while '嗯' is a filler word (like 'um'). This changes the subject and disrupts the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '得' at position 4",
+      "reason": "'得' is a structural particle in Chinese that connects the verb and its complement. Its omission makes the sentence ungrammatical but the meaning is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '的' at position 7",
+      "reason": "'的' is a possessive or descriptive particle, and its insertion here changes the grammatical structure, but the overall meaning ('not correct') is still clear.",
+      "score": 2
+    }
+  ]
+}

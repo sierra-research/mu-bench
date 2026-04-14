@@ -1,0 +1,31 @@
+{
+  "gold": "准备好了。",
+  "predicted": "人美好呢",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werNormalizedGold": "准备好了。",
+  "werNormalizedPredicted": "人美好呢",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "准 备 好 了 。",
+  "sigWerNormalizedPredicted": "人 美 好 呢",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '准' to '人' at position 0",
+      "reason": "The substitution changes the subject of the sentence from 'ready' (preparation) to 'person', which completely alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '了' to '呢' at position 3",
+      "reason": "'了' indicates completion, while '呢' is a question particle; this changes the sentence from a statement to a question, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 4",
+      "reason": "Punctuation differences are ignored as per guidance.",
+      "score": 3
+    }
+  ]
+}

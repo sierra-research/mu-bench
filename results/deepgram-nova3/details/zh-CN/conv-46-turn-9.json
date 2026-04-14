@@ -1,0 +1,26 @@
+{
+  "gold": "不对。",
+  "predicted": "是",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "不对。",
+  "werNormalizedPredicted": "是",
+  "qualityScore": 1,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "不 对 。",
+  "sigWerNormalizedPredicted": "是",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '是' at position 0",
+      "reason": "'不' means 'no' or 'not', while '是' means 'yes' or 'is'; this substitution completely reverses the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '对' at position 1",
+      "reason": "'对' means 'correct' or 'right'; omitting this word removes the key part of the phrase 'not correct', further changing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "gold": "没有没有没有，美玲 at email dot com。",
+  "predicted": "Mayo Mayo Mayo May Ling at email.com.",
+  "unintelligible": false,
+  "wer": 0.7857142857142857,
+  "werNormalizedGold": "没有没有没有，美玲 at email dot com。",
+  "werNormalizedPredicted": "Mayo Mayo Mayo, May Ling at email dot com.",
+  "qualityScore": 2,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "没 有 没 有 没 有 ， 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "Mayo Mayo Mayo, May Ling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '没' to 'Mayo' at position 0",
+      "reason": "The expected word is in Chinese ('没'), but the actual is an English word ('Mayo'), which is a completely different language and meaning. This derails the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '有' at position 5",
+      "reason": "The expected sequence repeats '没有' (meaning 'no' or 'none' in Chinese), but the actual omits the Chinese word '有', further breaking the meaning and language of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 12",
+      "reason": "The only difference is the period at the end, which is a punctuation difference and does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 13",
+      "reason": "This is a Chinese period punctuation mark, and its omission does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

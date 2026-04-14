@@ -1,0 +1,31 @@
+{
+  "gold": "No. El correo lo tienes mal. No es Gmail, es email.",
+  "predicted": "No, el correo, lo que haces mal, no es email.",
+  "unintelligible": false,
+  "wer": 0.7272727272727273,
+  "werNormalizedGold": "No. El correo lo tienes mal. No es Gmail, es email.",
+  "werNormalizedPredicted": "No, el correo, lo que haces mal, no es email.",
+  "qualityScore": 1,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "No. El correo lo tienes mal. No es Gmail, es email.",
+  "sigWerNormalizedPredicted": "No, el correo, lo que haces mal, no es email.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'No.' to 'No,' at position 0",
+      "reason": "Difference is only punctuation (period vs comma), which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'tienes' to 'que' at position 4",
+      "reason": "'Tienes mal' means 'you have it wrong', while 'lo que haces mal' means 'what you do wrong'. This changes the subject and the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Gmail,' at position 8",
+      "reason": "Omitting 'Gmail' removes the key information about which email provider is incorrect, significantly changing the meaning.",
+      "score": 1
+    }
+  ]
+}

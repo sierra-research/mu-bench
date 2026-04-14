@@ -1,0 +1,31 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "Uh, mailing@email.com。",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "美玲 at email dot com。",
+  "werNormalizedPredicted": "Uh, 美玲@email.com。",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "Uh, 美 玲 @email.com 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'Uh,' at position 0",
+      "reason": "The insertion of 'Uh,' is a filler word and does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'at' to '@email.com' at position 2",
+      "reason": "The actual transcription uses the symbol '@' and the format 'email.com' instead of the spoken 'at email dot com'. This is a minor error as the meaning (an email address) is preserved, just written in a different format.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

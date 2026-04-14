@@ -1,0 +1,26 @@
+{
+  "gold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "predicted": "me avisas que ya está en proceso, que ya está en camino.",
+  "unintelligible": false,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "werNormalizedPredicted": "¿Me avisas que ya está en proceso, que ya está en camino?",
+  "qualityScore": 3,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "sigWerNormalizedPredicted": "¿Me avisas que ya está en proceso, que ya está en camino?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '¿Cómo' to '¿Me' at position 0",
+      "reason": "'¿Cómo' (how) is replaced by '¿Me' (me), which changes the meaning of the question from 'How do you let me know...' to 'Do you let me know...'. This alters the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'me' at position 1",
+      "reason": "The word 'me' is omitted, but since 'me' is present in the actual as part of '¿Me avisas', this is not a true deletion. The main error is the substitution at the start. No additional penalty needed for this word.",
+      "score": 3
+    }
+  ]
+}

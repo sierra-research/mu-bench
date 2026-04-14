@@ -1,0 +1,26 @@
+{
+  "gold": "喂？",
+  "predicted": "Oui",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "喂？",
+  "werNormalizedPredicted": "Oui",
+  "qualityScore": 1,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "喂 ？",
+  "sigWerNormalizedPredicted": "Oui",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '喂' to 'Oui' at position 0",
+      "reason": "The expected word is in Chinese ('喂', meaning 'hello' on the phone), while the actual is in French ('Oui', meaning 'yes'). This is a different language and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '？' at position 1",
+      "reason": "The question mark is missing, but punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

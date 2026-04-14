@@ -1,0 +1,36 @@
+{
+  "gold": "你说的不对。美玲 at email dot com。",
+  "predicted": "Show the good way: mailing@email.com.",
+  "unintelligible": false,
+  "wer": 0.7692307692307693,
+  "werNormalizedGold": "你说的不对。美玲 at email dot com。",
+  "werNormalizedPredicted": "mailing at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "你 说 的 不 对 。 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "mailing at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'mailing' at position 0",
+      "reason": "'你' is a Chinese word meaning 'you', while 'mailing' is an English word and a misrecognition of the name '美玲'. This is a significant error as it changes the language and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '说' at position 1",
+      "reason": "'说' means 'say' in Chinese and its omission removes a key part of the original sentence, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 11",
+      "reason": "The only difference is the period at the end, which is punctuation and should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 12",
+      "reason": "This is a Chinese period punctuation mark, and its omission does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

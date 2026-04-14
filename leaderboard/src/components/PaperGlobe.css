@@ -1,0 +1,104 @@
+.globe-widget {
+    margin: 32px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.globe-container {
+    position: relative;
+    display: inline-block;
+}
+
+.globe-canvas {
+    cursor: grab;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.04),
+        0 4px 24px rgba(0, 0, 0, 0.06);
+    max-width: 100%;
+    height: auto;
+}
+
+.globe-canvas:active {
+    cursor: grabbing;
+}
+
+.globe-tooltip {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    background: #111827;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 10;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.globe-tooltip-code {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.globe-tooltip-status {
+    font-size: 11px;
+}
+
+.globe-tooltip-open {
+    font-size: 10px;
+    color: #34d399;
+    font-weight: 600;
+}
+
+.globe-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 16px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.globe-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.globe-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.globe-legend-dot--open {
+    background: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+.globe-caption {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #9ca3af;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .globe-canvas {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .globe-legend {
+        gap: 10px;
+        font-size: 11px;
+    }
+}

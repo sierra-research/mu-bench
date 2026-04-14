@@ -1,0 +1,31 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "meelingemail的狗",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "美玲 at email dot com。",
+  "werNormalizedPredicted": "meeling at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "meeling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meeling' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an English-sounding name. This is a significant error as it completely changes the identity being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from the expected name is missing in the actual transcription, which significantly alters the name and could lead to misidentification.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "Punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "gold": "Can you give me a tracking number?",
+  "predicted": "You give me a tracking number?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "Can you give me a tracking number?",
+  "werNormalizedPredicted": "You give me a tracking number?",
+  "qualityScore": 2,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Can you give me a tracking number?",
+  "sigWerNormalizedPredicted": "You give me a tracking number?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Can' to 'You' at position 0",
+      "reason": "Changing 'Can' to 'You' shifts the sentence from a question/request to a command, which significantly alters the intent and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'you' at position 1",
+      "reason": "The word 'you' is omitted, but since 'You' is already present at the start due to the substitution, this deletion is a result of the earlier substitution and does not further change the meaning. The main error is already captured in the substitution.",
+      "score": 3
+    }
+  ]
+}

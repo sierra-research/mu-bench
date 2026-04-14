@@ -1,0 +1,31 @@
+{
+  "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "predicted": "Daha önce bir SSK sitesi istemiştim aylık. İş henüz şu ana kadar gelmedi, bana gönderebilir misin SSK sitesini?",
+  "unintelligible": false,
+  "wer": 0.4375,
+  "werNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "werNormalizedPredicted": "Daha önce bir SSK sitesi istemiştim, aylık. İş henüz şu ana kadar gelmedi, bana gönderebilir misin SSK sitesini?",
+  "qualityScore": 1,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "sigWerNormalizedPredicted": "Daha önce bir SSK sitesi istemiştim, aylık. İş henüz şu ana kadar gelmedi, bana gönderebilir misin SSK sitesini?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hesap' to 'SSK' at position 2",
+      "reason": "The insertion of 'bir' (a/an) does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'İstediğim' to 'henüz' at position 6",
+      "reason": "'Hesap' (account) and 'SSK' (social security institution) refer to completely different things, changing the meaning of the request.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hesap' to 'SSK' at position 14",
+      "reason": "The insertion of 'İş' (work) changes the subject of the sentence, making it incoherent with the original meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+.err-see-below {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0 0 16px;
+    font-style: italic;
+}
+
+.err-section {
+    margin-bottom: 24px;
+}
+
+.err-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 4px;
+}
+
+.err-desc {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+
+.err-widget {
+    margin: 0 0 40px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.err-provider-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.err-tab {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #718096;
+    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+    font-family: inherit;
+}
+
+.err-tab:hover {
+    color: #2d3748;
+    background: #edf2f7;
+}
+
+.err-tab--active {
+    color: #111827;
+    background: white;
+    box-shadow: inset 0 -2px 0 #111827;
+}
+
+.err-body {
+    padding: 20px;
+}
+
+.err-diff {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.err-diff-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.err-diff-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #a0aec0;
+    width: 64px;
+    flex-shrink: 0;
+    padding-top: 3px;
+}
+
+.err-diff-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #374151;
+    font-family: "SF Mono", "Menlo", monospace;
+}
+
+.err-ins {
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+.err-del {
+    background: #fef2f2;
+    color: #991b1b;
+    text-decoration: line-through;
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+.err-sub {
+    background: #fef9c3;
+    color: #854d0e;
+    border-radius: 2px;
+    padding: 0 2px;
+    cursor: help;
+}
+
+@media (max-width: 600px) {
+    .err-body {
+        padding: 12px;
+    }
+
+    .err-diff-label {
+        width: 48px;
+        font-size: 9px;
+    }
+
+    .err-diff-text {
+        font-size: 12px;
+    }
+}

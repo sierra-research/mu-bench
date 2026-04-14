@@ -1,0 +1,31 @@
+{
+  "gold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
+  "predicted": "Địa chỉ email là thu. Ronggmail chấm com",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Địa chỉ email là thu. trần a còng gmail chấm com.",
+  "qualityScore": 1,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Địa chỉ email là thu. trần a còng gmail chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thu' to 'thu.' at position 4",
+      "reason": "The only difference is the punctuation (period), which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'chấm' at position 5",
+      "reason": "Omitting 'chấm' (dot) in an email address can cause confusion or make the email address incorrect, as it is a critical separator in Vietnamese email dictation.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 9",
+      "reason": "Changing 'email' to 'gmail' changes the domain of the email address, which is a significant error as it results in a completely different email address.",
+      "score": 1
+    }
+  ]
+}

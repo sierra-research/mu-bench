@@ -1,0 +1,26 @@
+{
+  "gold": "转账日期是11月23号，金额是100万，对方户名为林梅。",
+  "predicted": "感帐日期是11月23号,金额是100万,对方户名为林玫。",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werNormalizedGold": "转账日期是11月23号，金额是100万，对方户名为林梅。",
+  "werNormalizedPredicted": "感帐日期是11月23号，金额是100万，对方户名为林玫。",
+  "qualityScore": 2,
+  "significantWer": 0.041666666666666664,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "转 账 日 期 是 11 月 23 号 ， 金 额 是 100 万 ， 对 方 户 名 为 林 梅 。",
+  "sigWerNormalizedPredicted": "感 帐 日 期 是 11 月 23 号 ， 金 额 是 100 万 ， 对 方 户 名 为 林 玫 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '转' to '感' at position 0",
+      "reason": "'转账' means 'transfer' (as in bank transfer), while '感帐' is not a standard phrase and does not make sense in this context, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '梅' to '玫' at position 22",
+      "reason": "'林梅' and '林玫' are both plausible Chinese names, but they refer to different people. This is a minor error as the overall meaning (a person's name) is preserved, but the specific name is incorrect.",
+      "score": 2
+    }
+  ]
+}

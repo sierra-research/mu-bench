@@ -1,0 +1,31 @@
+{
+  "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "predicted": "No está mal, el correo está mal, es María punto López arroba e.",
+  "unintelligible": false,
+  "wer": 0.21052631578947367,
+  "werNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "werNormalizedPredicted": "No, está mal, el correo está mal. El correo está mal. Es María punto López arroba E.",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "sigWerNormalizedPredicted": "No, está mal, el correo está mal. El correo está mal. Es María punto López arroba E.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mal' to 'mal,' at position 2",
+      "reason": "The only difference is the presence of a comma, which is punctuation and should be ignored according to the guidance. No semantic difference.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'de' to 'está' at position 5",
+      "reason": "The phrase 'el correo de vuelta' (the return email) is replaced with 'el correo está mal' (the email is wrong). This changes the reference from a specific email to a general statement about the email, but in the context of the sentence, the overall meaning (that the email is wrong) is preserved. Minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'vuelta.' at position 6",
+      "reason": "Omitting 'vuelta' removes the reference to 'return' or 'back', which slightly changes the specificity but does not derail the overall meaning that the email is wrong. Minor error.",
+      "score": 2
+    }
+  ]
+}

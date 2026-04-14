@@ -1,0 +1,31 @@
+{
+  "gold": "是美点玲 at email dot com。",
+  "predicted": "She made Diane Ling at email.com.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "是美点玲 at email dot com。",
+  "werNormalizedPredicted": "She made Diane Ling at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "是 美 点 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "She made Diane Ling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'She' at position 0",
+      "reason": "'是' is a Chinese character meaning 'is', while 'She' is an English pronoun. This is a language substitution and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 7",
+      "reason": "The only difference is the period at the end, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 8",
+      "reason": "The Chinese period '。' is equivalent to a regular period and can be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

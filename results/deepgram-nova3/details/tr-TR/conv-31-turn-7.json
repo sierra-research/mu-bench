@@ -1,0 +1,31 @@
+{
+  "gold": "Zeynep nokta Arslan at email nokta com.",
+  "predicted": "Zynap. Arslan et email dat kom",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "Zeynep nokta Arslan at email nokta com.",
+  "werNormalizedPredicted": "Zynap. Arslan at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Zeynep nokta Arslan at email nokta com.",
+  "sigWerNormalizedPredicted": "Zynap. Arslan at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Zeynep' to 'Zynap.' at position 0",
+      "reason": "Misspelling of a proper noun (name), but still recognizable as the same name, so it's a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' is missing, which is part of the email address and could cause confusion or incorrect email formation, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 5",
+      "reason": "'nokta' and 'dot' are equivalent (Turkish and English for the same symbol in an email address), so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "Email chưa đúng. Email phải là minh chấm trần a còng email chấm com.",
+  "predicted": "Email chưa đúng email mới là minh chấmgmail chấm com",
+  "unintelligible": false,
+  "wer": 0.35714285714285715,
+  "werNormalizedGold": "Email chưa đúng. Email phải là minh chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Email chưa đúng. Email mới là minh chấm gmail chấm com.",
+  "qualityScore": 1,
+  "significantWer": 0.21428571428571427,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "Email chưa đúng. Email phải là minh chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Email chưa đúng. Email mới là minh chấm gmail chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'phải' to 'mới' at position 4",
+      "reason": "'phải' means 'must' or 'should', indicating a requirement, while 'mới' means 'new', which changes the intent of the sentence from a requirement to a statement about something being new. This alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'gmail' at position 8",
+      "reason": "'trần' is a Vietnamese name, while 'gmail' is an email service provider. Substituting a person's name with a service provider changes the meaning and the actual email address, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 9",
+      "reason": "The missing 'a' (from 'a còng', which means '@') omits the '@' symbol in the email address, making the email invalid. This is a significant error as it affects the correctness of the email address.",
+      "score": 1
+    }
+  ]
+}

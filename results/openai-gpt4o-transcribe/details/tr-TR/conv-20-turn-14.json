@@ -1,0 +1,31 @@
+{
+  "gold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
+  "predicted": "Hayır, son rakam yanlış oldu. 68 olacak sonu. 67 olacak pardon. 68 dediniz siz. 67 ile bitecek.",
+  "unintelligible": false,
+  "wer": 0.21052631578947367,
+  "werNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
+  "werNormalizedPredicted": "Hayır. Son rakam yanlış oldu. 68 olacak sonu. 67 olacak pardon. 68 dediniz siz. 67 ile bitecek.",
+  "qualityScore": 3,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
+  "sigWerNormalizedPredicted": "Hayır. Son rakam yanlış oldu. 68 olacak sonu. 67 olacak pardon. 68 dediniz siz. 67 ile bitecek.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '60' to '68' at position 5",
+      "reason": "The expected sentence says the last digit is not 60, but the actual says it is 68, which changes the meaning and could cause confusion about the correct number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'değil,' at position 6",
+      "reason": "'değil' means 'not', and its omission removes the negation, which significantly changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'siz,' to 'siz.' at position 15",
+      "reason": "This is only a punctuation difference (comma vs period), which does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

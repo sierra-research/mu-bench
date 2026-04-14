@@ -1,0 +1,26 @@
+{
+  "gold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
+  "predicted": "Không phải cái email đúng là minh chấmgmail chấm com",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Không phải. Cái email đúng là minh chấm gmail chấm com.",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Không phải. Cái email đúng là minh chấm gmail chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'gmail' at position 8",
+      "reason": "'trần' is a Vietnamese name, while 'gmail' is an email service provider. Substituting a name for a service provider changes the entire email address and makes it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 9",
+      "reason": "Missing the 'a' (which is part of 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable.",
+      "score": 1
+    }
+  ]
+}

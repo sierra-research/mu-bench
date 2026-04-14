@@ -1,0 +1,26 @@
+{
+  "gold": "Hola, Ana. ¿Cómo estás? Quería obtener una copia de mi estado de cuenta de mi tarjeta.",
+  "predicted": "Hola Ana, cómo estás? Quería obtener una copia del estado de cuenta de mi tarjeta.",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werNormalizedGold": "Hola, Ana. ¿Cómo estás? Quería obtener una copia de mi estado de cuenta de mi tarjeta.",
+  "werNormalizedPredicted": "Hola, Ana. ¿Cómo estás? Quería obtener una copia del estado de cuenta de mi tarjeta.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "Hola, Ana. ¿Cómo estás? Quería obtener una copia de mi estado de cuenta de mi tarjeta.",
+  "sigWerNormalizedPredicted": "Hola, Ana. ¿Cómo estás? Quería obtener una copia del estado de cuenta de mi tarjeta.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'de' to 'del' at position 8",
+      "reason": "'del' is a contraction of 'de el', but in this context, the expected phrase is 'de mi estado', not 'del estado'. Using 'del' instead of 'de mi' changes the possessive meaning from 'my statement' to 'the statement', which is a minor change but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'mi' at position 9",
+      "reason": "Omitting 'mi' removes the possessive, changing 'my statement' to 'the statement'. This is a minor error as the main intent is still clear, but the ownership is lost.",
+      "score": 2
+    }
+  ]
+}

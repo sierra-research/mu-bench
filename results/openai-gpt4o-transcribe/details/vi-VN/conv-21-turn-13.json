@@ -1,0 +1,31 @@
+{
+  "gold": "Tôi muốn gặp nhân viên chăm sóc khách hàng.",
+  "predicted": "Tôi muốn gặp những người chăm sóc hai gái.",
+  "unintelligible": false,
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "Tôi muốn gặp nhân viên chăm sóc khách hàng.",
+  "werNormalizedPredicted": "tôi muốn gặp những người chăm sóc hai gái.",
+  "qualityScore": 1,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "Tôi muốn gặp nhân viên chăm sóc khách hàng.",
+  "sigWerNormalizedPredicted": "tôi muốn gặp những người chăm sóc hai gái.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
+      "reason": "Difference is only in capitalization, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'nhân' to 'những' at position 3",
+      "reason": "'nhân viên' means 'staff' or 'employee', while 'những người' means 'people'. This changes the subject from a specific role to a general group, but the intent to meet someone is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'khách' to 'hai' at position 7",
+      "reason": "'khách hàng' means 'customer', while 'hai gái' means 'two girls'. This substitution completely changes the meaning of the sentence and derails the intent.",
+      "score": 1
+    }
+  ]
+}

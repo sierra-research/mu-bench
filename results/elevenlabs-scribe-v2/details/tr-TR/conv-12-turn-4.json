@@ -1,0 +1,26 @@
+{
+  "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "predicted": "Yalnız e-posta adresim yanlış oldu. Sonu gmail değil email. Yani \"e\", Edirne'nin \"n\"siyle. email.com",
+  "unintelligible": false,
+  "wer": 0.17647058823529413,
+  "werNormalizedGold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "werNormalizedPredicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email.com.",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "sigWerNormalizedPredicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email.com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'email.com.' at position 14",
+      "reason": "The actual transcript combines 'email', 'nokta', and 'com' into 'email.com.', but the intended meaning (the domain 'email.com') is preserved. This is a formatting difference, not a semantic error.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 15",
+      "reason": "'Nokta' means 'dot' in Turkish, and its omission is compensated by the use of the dot in 'email.com.' in the actual transcript. The meaning is preserved, so this is a minor formatting difference.",
+      "score": 3
+    }
+  ]
+}

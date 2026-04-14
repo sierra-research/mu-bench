@@ -1,0 +1,50 @@
+name: Lint
+
+on:
+  pull_request:
+    paths:
+      - "scripts/**/*.py"
+      - "scoring/**/*.py"
+      - "ruff.toml"
+      - "leaderboard/src/**"
+      - "leaderboard/scripts/**"
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ruff
+        run: pip install ruff
+
+      - name: Check formatting
+        run: ruff format --check scripts/ scoring/
+
+      - name: Check lint rules
+        run: ruff check scripts/ scoring/
+
+  javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: leaderboard
+
+      - name: ESLint
+        run: npx eslint src/ scripts/
+        working-directory: leaderboard
+
+      - name: Prettier
+        run: npx prettier --check src/ scripts/
+        working-directory: leaderboard

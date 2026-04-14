@@ -1,0 +1,56 @@
+{
+  "gold": "Mi nombre es Juan López. Mi correo electrónico es Juan punto López arroba email punto com. Mi teléfono es 52 55 1 2 3 4 5 6 7 8. Mi dirección es Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
+  "predicted": "Eh, mi nombre es Juan López. Mi correo electrónico es juan.lopez@gmail.com. Mi número de teléfono es cincuenta y dos, cincuenta y cinco, uno, dos, tres, cuatro, cinco, seis, siete, ocho. Eh, mi dirección es Orión treinta, colonia Tlatilco, Azcapotzalco, cero dos cero cero dos, ocho sesenta, Ciudad de México, México",
+  "unintelligible": false,
+  "wer": 0.22916666666666666,
+  "werNormalizedGold": "Mi nombre es Juan López. Mi correo electrónico es Juan punto López arroba email punto com. Mi teléfono es 52 55 1 2 3 4 5 6 7 8. Mi dirección es Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
+  "werNormalizedPredicted": "Eh, mi nombre es Juan López. Mi correo electrónico es juan punto lopez arroba gmail punto com. Mi número de teléfono es 52 55 1 2 3 4 5 6 7 8. Eh, mi dirección es Orión 30, colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
+  "qualityScore": 2,
+  "significantWer": 0.020833333333333332,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 48,
+  "sigWerNormalizedGold": "Mi nombre es Juan López. Mi correo electrónico es Juan punto López arroba email punto com. Mi teléfono es 52 55 1 2 3 4 5 6 7 8. Mi dirección es Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
+  "sigWerNormalizedPredicted": "Eh, mi nombre es Juan López. Mi correo electrónico es juan punto lopez arroba gmail punto com. Mi número de teléfono es 52 55 1 2 3 4 5 6 7 8. Eh, mi dirección es Orión 30, colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Mi' to 'mi' at position 0",
+      "reason": "'Eh' is a filler word and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'Juan' to 'juan' at position 9",
+      "reason": "Difference in capitalization only, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'López' to 'lopez' at position 11",
+      "reason": "Difference in capitalization only, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 13",
+      "reason": "Difference in capitalization and accent; accent omission is a minor error for proper nouns but does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'número' at position 17",
+      "reason": "Substituting 'email' for 'gmail' changes the email provider, which is a significant error as it makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'Mi' to 'mi' at position 29",
+      "reason": "Adding 'número' clarifies the type of phone number but does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Urión' to 'Orión' at position 32",
+      "reason": "'Eh' is a filler word and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'Colonia' to 'colonia' at position 34",
+      "reason": "Difference in capitalization only, which should be ignored.",
+      "score": 3
+    }
+  ]
+}

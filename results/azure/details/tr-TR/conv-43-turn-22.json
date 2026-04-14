@@ -1,0 +1,26 @@
+{
+  "gold": "Teşekkür ederim.",
+  "predicted": "Kötüydü.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "Teşekkür ederim.",
+  "werNormalizedPredicted": "kötüydü.",
+  "qualityScore": 1,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "Teşekkür ederim.",
+  "sigWerNormalizedPredicted": "kötüydü.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Teşekkür' to 'kötüydü.' at position 0",
+      "reason": "'Teşekkür ederim' means 'thank you' in Turkish, while 'kötüydü' means 'it was bad.' The substitution completely changes the meaning of the sentence from gratitude to a negative statement.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ederim.' at position 1",
+      "reason": "The word 'ederim' is part of the phrase 'thank you.' Its omission, combined with the substitution, results in a sentence with a completely different meaning.",
+      "score": 1
+    }
+  ]
+}

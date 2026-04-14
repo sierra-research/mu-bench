@@ -1,0 +1,26 @@
+{
+  "gold": "君。",
+  "predicted": "是",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "君。",
+  "werNormalizedPredicted": "是",
+  "qualityScore": 1,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "君 。",
+  "sigWerNormalizedPredicted": "是",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '是' at position 0",
+      "reason": "'君' means 'you' (as in 'you' in Chinese/Japanese), while '是' means 'is/are/am' (to be). This substitution changes the subject to a verb, making the sentence incoherent and completely changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 1",
+      "reason": "Missing punctuation mark. Punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    }
+  ]
+}

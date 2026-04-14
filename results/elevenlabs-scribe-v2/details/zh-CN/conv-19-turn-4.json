@@ -1,0 +1,31 @@
+{
+  "gold": "美，你说得不对，是美玲，美玲。",
+  "predicted": "妹，你说的不对，是梅林，梅林。",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "美，你说得不对，是美玲，美玲。",
+  "werNormalizedPredicted": "妹，你说得不对，是梅林，梅林。",
+  "qualityScore": 2,
+  "significantWer": 0.2,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "美 ， 你 说 得 不 对 ， 是 美 玲 ， 美 玲 。",
+  "sigWerNormalizedPredicted": "妹 ， 你 说 得 不 对 ， 是 梅 林 ， 梅 林 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '妹' at position 0",
+      "reason": "'美' (beautiful) and '妹' (younger sister) are different words with different meanings. This changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to '梅' at position 9",
+      "reason": "'美玲' is a name, while '梅林' is a different name. Substituting one name for another is a significant error, especially for proper nouns.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to '梅' at position 12",
+      "reason": "Repeats the same name substitution as above, so the same reasoning applies: different names, significant error.",
+      "score": 1
+    }
+  ]
+}

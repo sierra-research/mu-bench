@@ -1,0 +1,26 @@
+{
+  "gold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
+  "predicted": "Tôi làm mất thẻ, tuần trước có xin cấp lại thẻ, không biết hiện tại tình trạng thẻ như thế nào?",
+  "unintelligible": false,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
+  "werNormalizedPredicted": "Tôi làm mất thẻ. Tuần trước, có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
+  "sigWerNormalizedPredicted": "Tôi làm mất thẻ. Tuần trước, có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'là' to 'làm' at position 1",
+      "reason": "'là' (to be) and 'làm' (to do/make) are different verbs, but in this context, 'Tôi là mất thẻ' is a non-standard way to say 'I lost my card', while 'Tôi làm mất thẻ' is the correct and natural way. The substitution actually improves the sentence, so the meaning is preserved or even clarified.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'tôi' at position 6",
+      "reason": "Omitting the second 'tôi' in 'Tuần trước, tôi có xin cấp lại thẻ' does not change the meaning, as the subject is still clear from context. This is a minor grammatical omission but does not affect understanding.",
+      "score": 2
+    }
+  ]
+}

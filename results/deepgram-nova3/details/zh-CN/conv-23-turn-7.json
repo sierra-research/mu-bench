@@ -1,0 +1,26 @@
+{
+  "gold": "你可以重复我的姓名。",
+  "predicted": "你可以征服我的姓名",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werNormalizedGold": "你可以重复我的姓名。",
+  "werNormalizedPredicted": "你可以征服我的姓名",
+  "qualityScore": 1,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 可 以 重 复 我 的 姓 名 。",
+  "sigWerNormalizedPredicted": "你 可 以 征 服 我 的 姓 名",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '重' to '征' at position 3",
+      "reason": "'重' (repeat) and '征' (conquer) have completely different meanings, changing the intent of the sentence from asking to repeat a name to asking to conquer a name, which derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 9",
+      "reason": "Missing punctuation does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

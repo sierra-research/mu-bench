@@ -1,0 +1,26 @@
+{
+  "gold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "predicted": "Không phải Trường Minh mà là Tròn Minh.",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werNormalizedGold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "werNormalizedPredicted": "Không phải Trường Minh, mà là Tròn Minh.",
+  "qualityScore": 2,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "sigWerNormalizedPredicted": "Không phải Trường Minh, mà là Tròn Minh.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Trần' to 'Tròn' at position 6",
+      "reason": "'Trần' and 'Tròn' are completely different Vietnamese words and names; this changes the identity being referred to, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Minh.' at position 7",
+      "reason": "The repetition of 'Trần Minh.' and 'Tran Minh.' in the expected output emphasizes the correct name. Omitting these in the actual transcript removes this clarification, which could lead to misunderstanding the intended name. This is a significant error in this context.",
+      "score": 1
+    }
+  ]
+}

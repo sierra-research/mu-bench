@@ -1,0 +1,26 @@
+{
+  "gold": "Yazıyor musun? Artı 90 123.",
+  "predicted": "Yazıyor musun? +90 120",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "Yazıyor musun? Artı 90 123.",
+  "werNormalizedPredicted": "Yazıyor musun? +90 120",
+  "qualityScore": 1,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "Yazıyor musun? Artı 90 123.",
+  "sigWerNormalizedPredicted": "Yazıyor musun? +90 120",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Artı' to '+90' at position 2",
+      "reason": "'Artı' means 'plus' in Turkish, and '+90' is the country code for Turkey. In this context, 'Artı 90' and '+90' are equivalent ways to express the country code, so this is a semantic match.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '123.' at position 4",
+      "reason": "The number at the end of the phone number is different ('123' vs '120'), which changes the actual phone number and could lead to contacting the wrong person. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

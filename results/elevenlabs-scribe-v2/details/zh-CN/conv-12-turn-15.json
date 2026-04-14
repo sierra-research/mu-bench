@@ -1,0 +1,31 @@
+{
+  "gold": "君灵 at email dot com 已经说了。",
+  "predicted": "junling at email.com，你讲出来。",
+  "unintelligible": false,
+  "wer": 0.6363636363636364,
+  "werNormalizedGold": "君灵 at email dot com 已经说了。",
+  "werNormalizedPredicted": "junling at email dot com，你讲出来。",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了 。",
+  "sigWerNormalizedPredicted": "junling at email dot com ， 你 讲 出 来 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junling' at position 0",
+      "reason": "'junling' is a pinyin transcription of '君灵', but only partially matches the expected name. The substitution loses the original Chinese character and only partially represents the intended name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "'灵' is missing in the actual transcription, so the full name is not preserved. This is a minor error as the main identity is still somewhat clear from 'junling'.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '已' to '你' at position 6",
+      "reason": "Punctuation differences are to be ignored according to the guidance.",
+      "score": 3
+    }
+  ]
+}

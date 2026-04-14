@@ -1,0 +1,31 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "Dream Ling at email.com.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "君玲 at email dot com。",
+  "werNormalizedPredicted": "Dream Ling at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "Dream Ling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'Dream' at position 0",
+      "reason": "'君' is a Chinese name, while 'Dream' is an English word and not a name. This is a significant error as it completely changes the identity in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 5",
+      "reason": "The addition of a period after 'com' is a punctuation difference and does not affect the meaning or function of the email address.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The missing Chinese period '。' is a punctuation mark and does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

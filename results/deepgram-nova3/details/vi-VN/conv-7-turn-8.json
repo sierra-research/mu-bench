@@ -1,0 +1,31 @@
+{
+  "gold": "Hồi nãy, tôi mới nói xong. Mất thẻ, muốn làm lại, khi nào thì có?",
+  "predicted": "Hồi nãy mới nói sao mất thẻ muốn làm lại coi coi là khi nào thì có",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "Hồi nãy, tôi mới nói xong. Mất thẻ, muốn làm lại, khi nào thì có?",
+  "werNormalizedPredicted": "Hồi nãy, mới nói sao. Mất thẻ, muốn làm lại, coi coi là khi nào thì có?",
+  "qualityScore": 3,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "Hồi nãy, tôi mới nói xong. Mất thẻ, muốn làm lại, khi nào thì có?",
+  "sigWerNormalizedPredicted": "Hồi nãy, mới nói sao. Mất thẻ, muốn làm lại, coi coi là khi nào thì có?",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'tôi' at position 2",
+      "reason": "Omitting 'tôi' (I) removes the subject of the sentence, but the context is still understandable as a personal statement. The meaning is mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'xong.' to 'sao.' at position 5",
+      "reason": "'xong' means 'finished', while 'sao' means 'how' or 'what'. This changes the meaning of the sentence, making it unclear whether the speaker finished speaking or is asking a question. This substitution significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'coi' at position 11",
+      "reason": "The insertion of 'coi coi là' (roughly 'let's see') adds emphasis or a filler phrase but does not change the core meaning of the question about when the card will be ready.",
+      "score": 2
+    }
+  ]
+}

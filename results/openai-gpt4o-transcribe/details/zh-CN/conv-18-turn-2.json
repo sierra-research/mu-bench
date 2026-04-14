@@ -1,0 +1,31 @@
+{
+  "gold": "C N 负 0 0。",
+  "predicted": "PN400",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "C N 负 0 0。",
+  "werNormalizedPredicted": "P N 4 0 0",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "C N 负 0 0 。",
+  "sigWerNormalizedPredicted": "P N 4 0 0",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'C' to 'P' at position 0",
+      "reason": "First letter in a spelled-out sequence is incorrect, which significantly changes the intended sequence or code.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '负' to '4' at position 2",
+      "reason": "'负' (Chinese character meaning 'negative') is replaced by '4', which is a completely different meaning and changes the information conveyed.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 5",
+      "reason": "Missing punctuation at the end does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

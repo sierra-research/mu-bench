@@ -1,0 +1,26 @@
+{
+  "gold": "Tabii. Artı 90 123. Tamam baştan alıyorum. Artı 90 123 0 90 45 67.",
+  "predicted": "Tabii. Artı doksan, yüz yirmi üç, sıfır doksan, kırk beş, altmış yedi.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "Tabii. Artı 90 123. Tamam baştan alıyorum. Artı 90 123 0 90 45 67.",
+  "werNormalizedPredicted": "Tabii. Artı 90 123. Sıfır 90 45 67.",
+  "qualityScore": 3,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "Tabii. Artı 90 123. Tamam baştan alıyorum. Artı 90 123 0 90 45 67.",
+  "sigWerNormalizedPredicted": "Tabii. Artı 90 123. Sıfır 90 45 67.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tamam' to 'Sıfır' at position 4",
+      "reason": "'Tamam' means 'okay' or 'alright', while 'Sıfır' means 'zero'. This substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'baştan' at position 5",
+      "reason": "The deletion removes a significant portion of the sentence, including an instruction and a sequence of numbers, which are likely important information. This significantly alters the meaning and completeness of the transcription.",
+      "score": 1
+    }
+  ]
+}

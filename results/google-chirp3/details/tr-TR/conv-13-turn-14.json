@@ -1,0 +1,31 @@
+{
+  "gold": "Hayır yine yanlış oldu. Bu sefer arada başka yalnız. Tek tek ben bir daha söylüyorum. Tek tek söylüyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
+  "predicted": "Hayır, yine yanlış oldu. Bu sefer arada başka bir yanlış. Tek tek ben bir daha söylüyorum. Tek tek söylüyorum. +90123094567",
+  "unintelligible": false,
+  "wer": 0.12903225806451613,
+  "werNormalizedGold": "Hayır yine yanlış oldu. Bu sefer arada başka yalnız. Tek tek ben bir daha söylüyorum. Tek tek söylüyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
+  "werNormalizedPredicted": "Hayır, yine yanlış oldu. Bu sefer arada başka bir yanlış. Tek tek ben bir daha söylüyorum. Tek tek söylüyorum. Artı 9 0 1 2 3 0 9 4 5 6 7.",
+  "qualityScore": 3,
+  "significantWer": 0.03225806451612903,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 31,
+  "sigWerNormalizedGold": "Hayır yine yanlış oldu. Bu sefer arada başka yalnız. Tek tek ben bir daha söylüyorum. Tek tek söylüyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
+  "sigWerNormalizedPredicted": "Hayır, yine yanlış oldu. Bu sefer arada başka bir yanlış. Tek tek ben bir daha söylüyorum. Tek tek söylüyorum. Artı 9 0 1 2 3 0 9 4 5 6 7.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
+      "reason": "Difference is only punctuation (comma), which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'yalnız.' to 'yanlış.' at position 8",
+      "reason": "The insertion of 'bir' (meaning 'a' or 'one') does not significantly change the meaning of the sentence in this context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '0' at position 26",
+      "reason": "'Yalnız' (alone/only) and 'yanlış' (wrong) are completely different words and change the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

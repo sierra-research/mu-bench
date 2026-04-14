@@ -1,0 +1,26 @@
+{
+  "gold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
+  "predicted": "Tôi cần được tôi muốn nói chuyện với người trực tiếp.",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
+  "werNormalizedPredicted": "Tôi cần được. Tôi muốn nói chuyện với người trực tiếp.",
+  "qualityScore": 2,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
+  "sigWerNormalizedPredicted": "Tôi cần được. Tôi muốn nói chuyện với người trực tiếp.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'không' at position 1",
+      "reason": "Removing 'không' (not) reverses the meaning of the sentence from 'I do not need' to 'I need', which is a significant change in intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đâu.' to 'được.' at position 3",
+      "reason": "Substituting 'đâu.' (at all) with 'được.' (can/be able to) further changes the meaning, making the sentence incoherent compared to the original intent.",
+      "score": 1
+    }
+  ]
+}

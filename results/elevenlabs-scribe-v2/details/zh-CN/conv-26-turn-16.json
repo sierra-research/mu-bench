@@ -1,0 +1,31 @@
+{
+  "gold": "邮箱地址呢？邮箱地址你知道吗？",
+  "predicted": "有详细地址呢，有详细地址，你知道吗？",
+  "unintelligible": false,
+  "wer": 0.5333333333333333,
+  "werNormalizedGold": "邮箱地址呢？邮箱地址你知道吗？",
+  "werNormalizedPredicted": "有详细地址呢，有详细地址，你知道吗？",
+  "qualityScore": 2,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "邮 箱 地 址 呢 ？ 邮 箱 地 址 你 知 道 吗 ？",
+  "sigWerNormalizedPredicted": "有 详 细 地 址 呢 ， 有 详 细 地 址 ， 你 知 道 吗 ？",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '详' at position 0",
+      "reason": "The word '有' (have/there is) introduces a different subject and changes the meaning from asking about an email address to stating the existence of a detailed address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '？' to '有' at position 5",
+      "reason": "'邮' (mail) is replaced by '详' (detailed), which changes the meaning from 'email address' to 'detailed address', significantly altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '，' at position 10",
+      "reason": "Punctuation differences such as commas should be ignored according to the guidance.",
+      "score": 3
+    }
+  ]
+}

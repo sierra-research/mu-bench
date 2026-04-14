@@ -1,0 +1,26 @@
+{
+  "gold": "Artı 90 1 2 3 0 9 0 4 5 6 7.",
+  "predicted": "+ 91 iki üçsıfır dokuzsıfır, 4567.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "Artı 90 1 2 3 0 9 0 4 5 6 7.",
+  "werNormalizedPredicted": "+ 91 iki üç sıfır dokuz sıfır, 4567.",
+  "qualityScore": 1,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Artı 90 1 2 3 0 9 0 4 5 6 7.",
+  "sigWerNormalizedPredicted": "+ 91 iki üç sıfır dokuz sıfır, 4567.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Artı' to '+' at position 0",
+      "reason": "'Artı' means 'plus' in Turkish, and '+' is the symbol for 'plus', so this is a semantically equivalent substitution.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '4' at position 8",
+      "reason": "The country code is changed from 90 to 91, which is a significant error as it changes the phone number's country.",
+      "score": 1
+    }
+  ]
+}

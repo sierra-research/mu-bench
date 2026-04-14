@@ -1,0 +1,26 @@
+{
+  "gold": "那我的姓，姓名呢？",
+  "predicted": "那我的性命呢?",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "那我的姓，姓名呢？",
+  "werNormalizedPredicted": "那我的性命呢？",
+  "qualityScore": 1,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "那 我 的 姓 ， 姓 名 呢 ？",
+  "sigWerNormalizedPredicted": "那 我 的 性 命 呢 ？",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '性' at position 3",
+      "reason": "'姓' means 'surname' while '性' means 'sex/gender'; this changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '姓' at position 5",
+      "reason": "Omitting the second '姓' (which is part of '姓名', meaning 'full name') results in a loss of the intended meaning, making the sentence incorrect and confusing.",
+      "score": 1
+    }
+  ]
+}

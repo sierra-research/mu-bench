@@ -1,0 +1,41 @@
+{
+  "gold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
+  "predicted": "Tôi không cần nhưng mà tôi cần tại vì tôi không có biết in đang là tôi muốn được hỗ trợ để in cái giấy",
+  "unintelligible": false,
+  "wer": 0.55,
+  "werNormalizedGold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
+  "werNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in đang là tôi muốn được hỗ trợ để in cái giấy",
+  "qualityScore": 2,
+  "significantWer": 0.1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
+  "sigWerNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in đang là tôi muốn được hỗ trợ để in cái giấy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
+      "reason": "Difference is only in capitalization, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'cần.' to 'cần' at position 2",
+      "reason": "The insertion of 'cần' (need) after 'không cần' (don't need) creates a contradiction and confusion in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'có' at position 7",
+      "reason": "The difference is only punctuation, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'nên' to 'đang' at position 9",
+      "reason": "The insertion of 'có' (have) in 'không có biết in' instead of 'không biết in' is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ra' to 'cái' at position 18",
+      "reason": "'nên' (so/therefore) and 'đang' (currently) have different meanings, which changes the logical flow of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+.hm-widget {
+    margin: 32px 0 40px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hm-metric-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.hm-tab {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #718096;
+    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+    font-family: inherit;
+}
+
+.hm-tab:hover {
+    color: #2d3748;
+    background: #edf2f7;
+}
+
+.hm-tab--active {
+    color: #111827;
+    background: white;
+    box-shadow: inset 0 -2px 0 #111827;
+}
+
+.hm-table-wrap {
+    overflow-x: auto;
+    padding: 16px;
+}
+
+.hm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.hm-th-provider,
+.hm-td-provider {
+    text-align: left;
+    padding: 10px 12px;
+    font-weight: 700;
+    color: #111827;
+    white-space: nowrap;
+}
+
+.hm-th-locale {
+    text-align: center;
+    padding: 10px 8px;
+    font-weight: 600;
+    color: #374151;
+    font-size: 12px;
+}
+
+.hm-td-cell {
+    text-align: center;
+    padding: 12px 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #111827;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.hm-td-cell--hover {
+    transform: scale(1.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+    position: relative;
+}
+
+.hm-legend {
+    text-align: center;
+    font-size: 12px;
+    color: #9ca3af;
+    padding: 0 16px 12px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .hm-table {
+        font-size: 11px;
+    }
+
+    .hm-td-cell {
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+
+    .hm-th-locale {
+        font-size: 10px;
+    }
+}

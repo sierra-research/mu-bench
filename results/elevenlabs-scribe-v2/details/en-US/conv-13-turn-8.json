@@ -1,0 +1,36 @@
+{
+  "gold": "Yes. 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "Uh, yes. Um, two one two-one two three-four five six seven",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werNormalizedGold": "Yes. 2 1 2 1 2 3 4 5 6 7.",
+  "werNormalizedPredicted": "Uh, yes. Um, 2 1 2-1 2 3-4 5 6 7.",
+  "qualityScore": 3,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "Yes. 2 1 2 1 2 3 4 5 6 7.",
+  "sigWerNormalizedPredicted": "Uh, yes. Um, 2 1 2-1 2 3-4 5 6 7.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Yes.' to 'Uh,' at position 0",
+      "reason": "'Uh,' is a filler word and does not change the meaning of the sentence, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '2-1' at position 5",
+      "reason": "'2-1' is an incorrect merging of two separate numbers '2' and '1', which could cause confusion in a sequence of numbers. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '3' to '3-4' at position 6",
+      "reason": "'3-4' is a merging of two numbers where only '3' was expected, which changes the intended sequence. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '4' at position 7",
+      "reason": "Omitting '4' from the sequence of numbers changes the information conveyed, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

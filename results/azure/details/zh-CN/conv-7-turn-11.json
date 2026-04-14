@@ -1,0 +1,31 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "Drilling@email.com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "君玲 at email dot com。",
+  "werNormalizedPredicted": "drilling at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "drilling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drilling' at position 0",
+      "reason": "'君' is a Chinese name, while 'drilling' is an unrelated English word; this changes the meaning entirely and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "Missing part of the name in the email address, which makes the address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "Punctuation at the end of the sentence is missing, but this does not affect the meaning or function of the email address.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "gold": "我的邮箱地址是 美玲 at email dot com。",
+  "predicted": "我的邮箱地址是maylingemail。com",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "我的邮箱地址是 美玲 at email dot com。",
+  "werNormalizedPredicted": "我的邮箱地址是 mayling at email dot com。",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 mayling at email dot com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mayling' at position 7",
+      "reason": "'美' is a Chinese character and 'mayling' is an attempt to phonetically represent the name in English letters. While the intent is to represent the same name, the script and form are different, but the meaning is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "The character '玲' is missing in the actual transcription, which changes the name from '美玲' (Meiling) to just 'mayling' (which could be interpreted as an attempt at the full name). Since the overall meaning (the email address for Meiling) is still understandable, this is a minor error.",
+      "score": 2
+    }
+  ]
+}

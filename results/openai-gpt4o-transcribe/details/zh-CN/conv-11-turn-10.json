@@ -1,0 +1,36 @@
+{
+  "gold": "郡。我的姓名是郡凛。郡。",
+  "predicted": "Dream我的新名是。",
+  "unintelligible": false,
+  "wer": 0.5833333333333334,
+  "werNormalizedGold": "郡。我的姓名是郡凛。郡。",
+  "werNormalizedPredicted": "Dream我的新名是。",
+  "qualityScore": 1,
+  "significantWer": 0.25,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "郡 。 我 的 姓 名 是 郡 凛 。 郡 。",
+  "sigWerNormalizedPredicted": "Dream 我 的 新 名 是 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'Dream' at position 0",
+      "reason": "'郡' is a Chinese surname, while 'Dream' is an English word with a completely different meaning and language. This is a significant error that derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 1",
+      "reason": "Punctuation differences are to be ignored as per the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '姓' to '新' at position 4",
+      "reason": "'姓' means 'surname' and '新' means 'new' in Chinese. This changes the meaning of the sentence, as it refers to a different concept.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '郡' at position 7",
+      "reason": "The surname '郡' is omitted, which removes a key part of the identity being stated. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
+  "predicted": "Banka kartımın söz geçmek üzere bana yeni bir kart gönderebilir misin?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
+  "werNormalizedPredicted": "Banka kartımın söz geçmek üzere. Bana yeni bir kart gönderebilir misin?",
+  "qualityScore": 2,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
+  "sigWerNormalizedPredicted": "Banka kartımın söz geçmek üzere. Bana yeni bir kart gönderebilir misin?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'süresi' to 'söz' at position 2",
+      "reason": "'Süresi' (duration/expiry) and 'söz' (word/promise) are completely different words and meanings. This substitution changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'üzere' to 'üzere.' at position 4",
+      "reason": "The only difference is punctuation (period), which does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'Anna.' at position 5",
+      "reason": "Omitting 'Anna.' removes the addressee's name, which is a minor loss of information but does not derail the overall meaning of the request.",
+      "score": 2
+    }
+  ]
+}

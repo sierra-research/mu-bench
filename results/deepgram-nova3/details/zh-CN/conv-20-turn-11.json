@@ -1,0 +1,36 @@
+{
+  "gold": "你正在说什么，你正在说什么，你是不是傻子。",
+  "predicted": "哦你你你正在说什么你正在说什么你是个傻子",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "你正在说什么，你正在说什么，你是不是傻子。",
+  "werNormalizedPredicted": "哦，你你你正在说什么，你正在说什么，你是个傻子。",
+  "qualityScore": 3,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "你 正 在 说 什 么 ， 你 正 在 说 什 么 ， 你 是 不 是 傻 子 。",
+  "sigWerNormalizedPredicted": "哦 ， 你 你 你 正 在 说 什 么 ， 你 正 在 说 什 么 ， 你 是 个 傻 子 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '哦' at position 0",
+      "reason": "The insertion of '哦' (an interjection like 'oh') does not change the meaning of the sentence, just adds an exclamation.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '你' at position 1",
+      "reason": "Repeating '你' (you) adds emphasis or stuttering but does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '不' to '个' at position 16",
+      "reason": "Changing '不' (not) to '个' (a classifier) alters the meaning from 'are you not a fool' to 'are you a fool', which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '是' at position 17",
+      "reason": "Omitting '是' (to be) in this context makes the sentence less grammatically correct but the meaning is still mostly clear.",
+      "score": 2
+    }
+  ]
+}

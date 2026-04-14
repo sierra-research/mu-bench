@@ -1,0 +1,26 @@
+{
+  "gold": "Tamam, dinlersen söyleyeceğim Anna. Artı 90 123 0 90 45 67.",
+  "predicted": "Tamam dinlen çık bayramdan. +90 123 090 45 67",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werNormalizedGold": "Tamam, dinlersen söyleyeceğim Anna. Artı 90 123 0 90 45 67.",
+  "werNormalizedPredicted": "Tamam, dinlen çık bayramdan. Artı doksan 123 0 90 45 67.",
+  "qualityScore": 1,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "Tamam, dinlersen söyleyeceğim Anna. Artı 90 123 0 90 45 67.",
+  "sigWerNormalizedPredicted": "Tamam, dinlen çık bayramdan. Artı doksan 123 0 90 45 67.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dinlersen' to 'dinlen' at position 1",
+      "reason": "'Dinlersen' means 'if you listen', while 'dinlen' means 'rest'. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '90' to 'doksan' at position 5",
+      "reason": "'90' and 'doksan' are numeric equivalents (90 = doksan in Turkish), so this is not an error.",
+      "score": 3
+    }
+  ]
+}

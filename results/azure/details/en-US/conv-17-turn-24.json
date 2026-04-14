@@ -1,0 +1,41 @@
+{
+  "gold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "predicted": "Okay. How would I reference, basically I don't want to go through everything we already talked about. So is there like a case number?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "werNormalizedPredicted": "Okay. How would I reference, basically, I don't want to go through everything we already talked about. So, is there like a case number?",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "sigWerNormalizedPredicted": "Okay. How would I reference, basically, I don't want to go through everything we already talked about. So, is there like a case number?",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'you' at position 5",
+      "reason": "Omitting 'you know' slightly changes the conversational tone but does not affect the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'wanna' to 'to' at position 10",
+      "reason": "'want' is part of the phrase 'don't want to', which is a standard way to say 'don't wanna'. This is a minor difference in phrasing.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '0' to 'there' at position 19",
+      "reason": "'wanna' and 'want to' are equivalent in meaning; this is just a difference in formality.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'our' to 'a' at position 21",
+      "reason": "Adding 'is' to form 'is there like a case number' changes the sentence from a statement to a question, but the intent remains the same: asking about a case number.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'number.' to 'number?' at position 23",
+      "reason": "The expected '0 like our case number' is likely a mishearing or typo for 'is there like a case number'. The actual transcription is more coherent and matches the intended meaning, so this is a minor error.",
+      "score": 2
+    }
+  ]
+}

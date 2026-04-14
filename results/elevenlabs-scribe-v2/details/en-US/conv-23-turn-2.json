@@ -1,0 +1,31 @@
+{
+  "gold": "Woah. Woah, woah. Let's slow that down. Let's do that one more time. I can't keep, slow it down a bit.",
+  "predicted": "Whoa, whoa, whoa. Let's slow that down. Let's do that one more time again. Keep-- Slow it down a bit",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "Woah. Woah, woah. Let's slow that down. Let's do that one more time. I can't keep, slow it down a bit.",
+  "werNormalizedPredicted": "Woah, woah, woah. Let's slow that down. Let's do that one more time again. Keep-- slow it down a bit.",
+  "qualityScore": 3,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "Woah. Woah, woah. Let's slow that down. Let's do that one more time. I can't keep, slow it down a bit.",
+  "sigWerNormalizedPredicted": "Woah, woah, woah. Let's slow that down. Let's do that one more time again. Keep-- slow it down a bit.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Woah.' to 'Woah,' at position 0",
+      "reason": "Difference is only in punctuation, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'time.' to 'time' at position 12",
+      "reason": "Adding 'again' is redundant but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'keep,' at position 15",
+      "reason": "Removing 'I can't' changes the meaning, as the speaker's inability is omitted, which is significant to the intent.",
+      "score": 1
+    }
+  ]
+}

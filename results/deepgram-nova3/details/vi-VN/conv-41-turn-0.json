@@ -1,0 +1,26 @@
+{
+  "gold": "Tôi muốn coi cái hóa đơn thanh toán gần nhất.",
+  "predicted": "Tôi muốn coi phá đường thanh toán gần nhất",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werNormalizedGold": "Tôi muốn coi cái hóa đơn thanh toán gần nhất.",
+  "werNormalizedPredicted": "Tôi muốn coi phá đường thanh toán gần nhất.",
+  "qualityScore": 2,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "Tôi muốn coi cái hóa đơn thanh toán gần nhất.",
+  "sigWerNormalizedPredicted": "Tôi muốn coi phá đường thanh toán gần nhất.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cái' to 'phá' at position 3",
+      "reason": "'cái' is a classifier meaning 'the' or 'a', while 'phá' means 'break' or 'destroy'. This substitution changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đơn' at position 5",
+      "reason": "'đơn' is part of 'hóa đơn' (invoice/bill). Omitting 'đơn' breaks the meaning, as 'hóa đơn' is a fixed phrase. The sentence no longer refers to an invoice or bill, making it incoherent.",
+      "score": 1
+    }
+  ]
+}

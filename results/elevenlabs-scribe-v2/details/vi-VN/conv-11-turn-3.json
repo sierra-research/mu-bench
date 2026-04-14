@@ -1,0 +1,26 @@
+{
+  "gold": "C N 5 3 30.",
+  "predicted": "CN number ba mươi",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "C N 5 3 30.",
+  "werNormalizedPredicted": "C N number 30",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "C N 5 3 30.",
+  "sigWerNormalizedPredicted": "C N number 30",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '5' to 'number' at position 2",
+      "reason": "'5' is a specific digit in a sequence, while 'number' is a generic word and does not convey the intended digit. This changes the meaning of the sequence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '30.' at position 4",
+      "reason": "The digit '3' is missing from the sequence, which alters the intended string of numbers/letters. This is a significant error as it changes the information conveyed.",
+      "score": 1
+    }
+  ]
+}

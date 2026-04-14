@@ -1,0 +1,31 @@
+{
+  "gold": "是你的问题，好好。",
+  "predicted": "請你再問一次。",
+  "unintelligible": false,
+  "wer": 0.7777777777777778,
+  "werNormalizedGold": "是你的问题，好好。",
+  "werNormalizedPredicted": "請你再問一次。",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "是 你 的 问 题 ， 好 好 。",
+  "sigWerNormalizedPredicted": "請 你 再 問 一 次 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to '請' at position 0",
+      "reason": "'是' means 'is/are', while '請' means 'please'; this changes the intent and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '的' to '再' at position 2",
+      "reason": "'的' is a possessive particle, while '再' means 'again'; this substitution alters the sentence structure and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 6",
+      "reason": "Omitting '好' (which means 'good' or 'okay') removes a key part of the expected sentence, affecting the overall meaning.",
+      "score": 1
+    }
+  ]
+}

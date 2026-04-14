@@ -1,0 +1,26 @@
+{
+  "gold": "林美 at email 点 com。",
+  "predicted": "lingmei at gmail.com。",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "林美 at email 点 com。",
+  "werNormalizedPredicted": "lingmei at email 点 com。",
+  "qualityScore": 1,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "林 美 at email 点 com 。",
+  "sigWerNormalizedPredicted": "lingmei at email 点 com 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'lingmei' at position 0",
+      "reason": "'林' is a single Chinese character (surname), while 'lingmei' is a romanized form that combines both '林' and '美' into one word. This substitution changes the representation and may cause confusion, especially if the context requires the original Chinese characters. However, the intended name is still somewhat recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "'美' is omitted in the actual transcription, which means the full name is not properly represented. This is a significant omission, especially for names, as it changes the identity being referenced.",
+      "score": 1
+    }
+  ]
+}

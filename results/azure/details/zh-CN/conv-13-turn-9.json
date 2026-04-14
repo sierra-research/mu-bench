@@ -1,0 +1,26 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "Dreamlin@email.com.",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "君玲 at email dot com。",
+  "werNormalizedPredicted": "君玲@email.com.",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "君 玲 @email.com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to '@email.com.' at position 2",
+      "reason": "The actual transcription uses the symbol '@' and combines 'email dot com' into one token '@email.com.', which is a standard way to write an email address. This does not change the meaning, as both forms refer to the same email address.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "'email' is not actually deleted but merged into '@email.com.' in the actual transcription. The meaning is preserved, as the email address is still clear and correct.",
+      "score": 3
+    }
+  ]
+}

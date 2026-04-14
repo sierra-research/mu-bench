@@ -1,0 +1,36 @@
+{
+  "gold": "是，美玲 at email dot com。",
+  "predicted": "She made ling at email.com.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "是，美玲 at email dot com。",
+  "werNormalizedPredicted": "She made ling at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "是 ， 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "She made ling at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'She' at position 0",
+      "reason": "'是' is a Chinese character meaning 'is', while 'She' is an English pronoun. This is a language substitution and changes the meaning and language of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 3",
+      "reason": "'玲' is a Chinese character, and 'ling' is an English transliteration. While 'ling' could be an attempt to represent the sound, it is not a direct translation or equivalent, but it is a minor error if the intent was to capture the name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 7",
+      "reason": "The addition of a period after 'com' is a punctuation difference and does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '。' at position 8",
+      "reason": "The Chinese period '。' is a punctuation mark and its omission does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

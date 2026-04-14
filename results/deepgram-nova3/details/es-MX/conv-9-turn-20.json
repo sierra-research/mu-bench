@@ -1,0 +1,26 @@
+{
+  "gold": "Sí. ¿Me podrías orientar?",
+  "predicted": "Sí, ¿me orientar?",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werNormalizedGold": "Sí. ¿Me podrías orientar?",
+  "werNormalizedPredicted": "Sí, ¿me orientar?",
+  "qualityScore": 2,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "Sí. ¿Me podrías orientar?",
+  "sigWerNormalizedPredicted": "Sí, ¿me orientar?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Sí.' to 'Sí,' at position 0",
+      "reason": "Difference is only in punctuation, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'podrías' at position 2",
+      "reason": "Omitting 'podrías' removes the polite/request form from the question, changing 'Could you guide me?' to 'Guide me?', which significantly alters the tone and meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

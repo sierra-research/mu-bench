@@ -1,0 +1,26 @@
+{
+  "gold": "Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Ahmet arslan@email.com.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "Ahmet nokta Arslan at email nokta com.",
+  "werNormalizedPredicted": "Ahmet Arslan at email dot com.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Ahmet nokta Arslan at email nokta com.",
+  "sigWerNormalizedPredicted": "Ahmet Arslan at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' (Turkish for 'dot') is omitted before 'Arslan', which may be part of an email address or name format. If 'nokta' is meant to represent a period in an email or web address, its omission could cause confusion or incorrect address, but the main meaning is still somewhat clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 5",
+      "reason": "'nokta' is the Turkish word for 'dot', and 'dot' is the English equivalent. The substitution does not change the meaning, as both refer to the period in an email address.",
+      "score": 3
+    }
+  ]
+}

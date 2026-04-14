@@ -1,0 +1,26 @@
+{
+  "gold": "C N 2 6 6。",
+  "predicted": "CNR Liu Liu。",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "C N 2 6 6。",
+  "werNormalizedPredicted": "C N Liu Liu。",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "C N 2 6 6 。",
+  "sigWerNormalizedPredicted": "C N Liu Liu 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '2' to 'Liu' at position 2",
+      "reason": "'2' is a digit, while 'Liu' is a Chinese word for 'six'; this is a significant substitution that changes the intended sequence of numbers/letters.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '6' at position 4",
+      "reason": "The expected '6' is replaced by 'Liu', which is the Chinese pronunciation for 'six', but since the expected format is digits, this is a significant error in the context of a spelled-out sequence.",
+      "score": 1
+    }
+  ]
+}

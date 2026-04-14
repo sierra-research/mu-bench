@@ -1,0 +1,26 @@
+{
+  "gold": "Mã đúng là C N 2 3 5, đúng không?",
+  "predicted": "Mẹ đúng là hai cn235 đúng không?",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "Mã đúng là C N 2 3 5, đúng không?",
+  "werNormalizedPredicted": "Mẹ đúng là hai C N 2 3 5, đúng không?",
+  "qualityScore": 2,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "Mã đúng là C N 2 3 5, đúng không?",
+  "sigWerNormalizedPredicted": "Mẹ đúng là hai C N 2 3 5, đúng không?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Mã' to 'Mẹ' at position 0",
+      "reason": "'Mã' means 'code' while 'Mẹ' means 'mother' in Vietnamese; this substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'hai' at position 3",
+      "reason": "The word 'hai' (meaning 'two') is inserted before the code sequence, which could confuse the listener about the actual code, significantly altering the intended information.",
+      "score": 1
+    }
+  ]
+}

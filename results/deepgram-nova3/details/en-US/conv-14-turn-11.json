@@ -1,0 +1,26 @@
+{
+  "gold": "Email address should be John dot Brown at email dot com.",
+  "predicted": "Email address would be John dot Brown at Gmail dot com.",
+  "unintelligible": false,
+  "wer": 0.18181818181818182,
+  "werNormalizedGold": "Email address should be John dot Brown at email dot com.",
+  "werNormalizedPredicted": "Email address would be John dot Brown at Gmail dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "Email address should be John dot Brown at email dot com.",
+  "sigWerNormalizedPredicted": "Email address would be John dot Brown at Gmail dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'should' to 'would' at position 2",
+      "reason": "'Should' and 'would' are both modal verbs and the overall intent of the sentence remains the same; this is a minor difference in modality that does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'Gmail' at position 8",
+      "reason": "Changing 'email' to 'Gmail' alters the actual email address, which is a significant error as it could result in sending to the wrong address.",
+      "score": 1
+    }
+  ]
+}

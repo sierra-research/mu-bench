@@ -1,0 +1,31 @@
+{
+  "gold": "Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Ahmet. Arslan et gmail dat kom",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "Ahmet nokta Arslan at email nokta com.",
+  "werNormalizedPredicted": "Ahmet. Arslan at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Ahmet nokta Arslan at email nokta com.",
+  "sigWerNormalizedPredicted": "Ahmet. Arslan at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Ahmet' to 'Ahmet.' at position 0",
+      "reason": "Difference is only punctuation, which should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' is the Turkish word for 'dot', and it is omitted here but appears later as 'dot'. This is not a significant omission since the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 5",
+      "reason": "'nokta' and 'dot' are equivalent in this context (Turkish vs English for the '.' in an email address), so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

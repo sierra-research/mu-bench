@@ -1,0 +1,36 @@
+{
+  "gold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "predicted": "Annalım merhabalar öncelikle teşekkür ediyorum. Ben kredi kartı limitimin arttırılmasını talep ediyorum, bu konuda bana yardımcı olabilir misiniz?",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "werNormalizedPredicted": "Annalım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "sigWerNormalizedPredicted": "Annalım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna' to 'Annalım' at position 0",
+      "reason": "'Annalım' is a merging of 'Anna' and 'hanım' (a Turkish honorific), which changes the form of address but does not derail the meaning. The speaker is still addressing Anna politely.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'Hanım' at position 1",
+      "reason": "'Hanım' is a polite honorific in Turkish. Its omission reduces the politeness but does not change the core meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'limitinin' to 'limitimin' at position 9",
+      "reason": "'Limitinin' (your card's limit) vs 'limitimin' (my card's limit) changes the possessive from second person to first person, but in context, the speaker is requesting for themselves, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'bana' at position 15",
+      "reason": "Adding 'bana' (to me) clarifies the request but does not change the meaning, as it is already implied.",
+      "score": 3
+    }
+  ]
+}

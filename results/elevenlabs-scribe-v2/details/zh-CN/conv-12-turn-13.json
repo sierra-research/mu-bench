@@ -1,0 +1,31 @@
+{
+  "gold": "君灵 at email dot com。",
+  "predicted": "junliang at email.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "君灵 at email dot com。",
+  "werNormalizedPredicted": "junliang at email dot com",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 灵 at email dot com 。",
+  "sigWerNormalizedPredicted": "junliang at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junliang' at position 0",
+      "reason": "'君' is a Chinese character, while 'junliang' is a romanized name. The substitution changes the language and the specific name, which could lead to a significant misunderstanding, especially in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "The character '灵' is missing in the actual transcription, which changes the intended email address and could result in failed communication.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 6",
+      "reason": "The missing punctuation at the end does not affect the meaning or function of the sentence.",
+      "score": 3
+    }
+  ]
+}

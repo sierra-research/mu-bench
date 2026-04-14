@@ -1,0 +1,36 @@
+{
+  "gold": "I would like information on raising my limit for my credit card.",
+  "predicted": "I'd like information on raising my limit for my critical.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "I would like information on raising my limit for my credit card.",
+  "werNormalizedPredicted": "I'd like information on raising my limit for my critical.",
+  "qualityScore": 2,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "I would like information on raising my limit for my credit card.",
+  "sigWerNormalizedPredicted": "I'd like information on raising my limit for my critical.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'I' to 'I'd' at position 0",
+      "reason": "'I'd' is a contraction of 'I would', which is equivalent in meaning to 'I would' in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'would' at position 1",
+      "reason": "'I'd' already includes 'would', so omitting 'would' is not an error here.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'credit' to 'critical.' at position 10",
+      "reason": "'Critical' is a completely different word from 'credit' and changes the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'card.' at position 11",
+      "reason": "Omitting 'card' after 'critical' (which is already an error) further removes the intended meaning of 'credit card'.",
+      "score": 1
+    }
+  ]
+}

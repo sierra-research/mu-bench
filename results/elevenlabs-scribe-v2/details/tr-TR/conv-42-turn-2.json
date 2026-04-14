@@ -1,0 +1,36 @@
+{
+  "gold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
+  "predicted": "Ama öyle değil. 2024 yı-- tekrar söylüyorum, 2024 yılı için Ocak-Aralık ayları arasındaki kesime servis istiyorum",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
+  "werNormalizedPredicted": "Ama, öyle değil. Tekrar söylüyorum. 2024 yılı için Ocak-Aralık ayları arasındaki kesime servis istiyorum.",
+  "qualityScore": 2,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
+  "sigWerNormalizedPredicted": "Ama, öyle değil. Tekrar söylüyorum. 2024 yılı için Ocak-Aralık ayları arasındaki kesime servis istiyorum.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Anna,' to 'Ama,' at position 0",
+      "reason": "'Anna' is a proper noun (a name), while 'Ama' means 'but' in Turkish. This changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ocak' to 'Ocak-Aralık' at position 8",
+      "reason": "'ocak' (January) is replaced with 'Ocak-Aralık' (January-December), which changes the time range being referred to. However, the overall intent (referring to a period) is still present.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'aralık' at position 9",
+      "reason": "'aralık' (December) is omitted, but since 'Ocak-Aralık' was inserted earlier, the time range is still covered. This deletion is minor in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'hesap' to 'kesime' at position 12",
+      "reason": "'hesap' means 'account', while 'kesime' means 'cut' or 'section', which changes the object being requested and alters the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

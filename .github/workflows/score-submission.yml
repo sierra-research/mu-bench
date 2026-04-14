@@ -1,0 +1,211 @@
+name: Score Submission
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: score-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      should_score: ${{ steps.decide.outputs.should_score }}
+      pr_number: ${{ steps.decide.outputs.pr_number }}
+    steps:
+      - name: Decide whether to score
+        id: decide
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = context.payload.comment;
+            if (!comment.body.trim().startsWith('/score')) {
+              core.setOutput('should_score', 'false');
+              return;
+            }
+            if (!context.payload.issue.pull_request) {
+              core.setOutput('should_score', 'false');
+              return;
+            }
+
+            const assoc = comment.author_association;
+            if (assoc !== 'OWNER' && assoc !== 'MEMBER') {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.issue.number,
+                body: `⚠️ @${comment.user.login} Only repository maintainers can use \`/score\`. Your association: \`${assoc}\`.`,
+              });
+              core.setOutput('should_score', 'false');
+              return;
+            }
+
+            const prNumber = context.payload.issue.number;
+
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+              per_page: 100,
+            });
+            const touchesSubmissions = files.some(f => f.filename.startsWith('submissions/raw/'));
+            if (!touchesSubmissions) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: '⚠️ This PR does not contain any submission files in `submissions/raw/`.',
+              });
+              core.setOutput('should_score', 'false');
+              return;
+            }
+
+            core.setOutput('should_score', 'true');
+            core.setOutput('pr_number', String(prNumber));
+            core.info(`Scoring triggered by @${comment.user.login} on PR #${prNumber}`);
+
+  score:
+    needs: gate
+    if: needs.gate.outputs.should_score == 'true'
+    runs-on: ubuntu-latest
+    environment: scoring
+    steps:
+      # SECURITY: Always checkout main for scoring code — never run PR code with secrets
+      - name: Checkout base branch (scoring code)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      # Pull only submission data files from the PR (safe: .txt and .yaml only)
+      - name: Checkout submission data from PR
+        run: |
+          git fetch origin pull/${{ needs.gate.outputs.pr_number }}/head:pr-head
+          git checkout pr-head -- submissions/raw/
+
+      - name: Detect and validate submission directory name
+        id: detect
+        run: |
+          CHANGED_FILES=$(git diff --name-only HEAD -- submissions/raw/)
+          SUBMISSION_DIR=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u | head -1)
+          if [ -z "$SUBMISSION_DIR" ]; then
+            echo "No submission directory detected"
+            exit 1
+          fi
+          SUBMISSION_NAME=$(basename "$SUBMISSION_DIR")
+          if ! echo "$SUBMISSION_NAME" | grep -qE '^[a-zA-Z0-9_-]+$'; then
+            echo "ERROR: Submission directory name contains disallowed characters: $SUBMISSION_NAME"
+            echo "Only alphanumeric characters, hyphens, and underscores are allowed."
+            exit 1
+          fi
+          echo "dir=$SUBMISSION_DIR" >> "$GITHUB_OUTPUT"
+          echo "name=$SUBMISSION_NAME" >> "$GITHUB_OUTPUT"
+          echo "Detected submission: $SUBMISSION_DIR"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scoring/requirements.txt
+
+      - name: Validate submission
+        run: |
+          python scoring/validate.py "${{ steps.detect.outputs.dir }}" --manifest manifest.json
+
+      - name: Post "scoring in progress" comment
+        id: progress
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: comment } = await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ needs.gate.outputs.pr_number }},
+              body: '## ⏳ Scoring in progress\n\nThe scoring pipeline is running. Results will be posted here when complete.',
+            });
+            core.setOutput('comment_id', String(comment.id));
+
+      - name: Inject scoring prompts
+        env:
+          SCORING_PROMPTS_PY: ${{ secrets.SCORING_PROMPTS_PY }}
+        run: |
+          if [ -z "$SCORING_PROMPTS_PY" ]; then
+            echo "ERROR: SCORING_PROMPTS_PY secret is not set"
+            exit 1
+          fi
+          printenv SCORING_PROMPTS_PY > scoring/prompts.py
+
+      - name: Normalize submissions
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python -m scoring.normalize \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --manifest manifest.json \
+            --output-dir "submissions/normalized/${{ steps.detect.outputs.name }}"
+
+      - name: Calculate metrics
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python -m scoring.score \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --manifest manifest.json \
+            --output-dir "results/${{ steps.detect.outputs.name }}" \
+            --num-workers 8
+
+      - name: Update leaderboard.json
+        run: python -m scoring.update_leaderboard
+
+      - name: Post results comment
+        if: always() && steps.progress.outputs.comment_id
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const prNumber = ${{ needs.gate.outputs.pr_number }};
+            const commentId = ${{ steps.progress.outputs.comment_id }};
+            const name = '${{ steps.detect.outputs.name }}';
+            const scoresPath = `results/${name}/scores.json`;
+
+            let body;
+            if (!fs.existsSync(scoresPath)) {
+              body = '## ❌ Scoring Failed\n\nNo results were produced. Check the [workflow logs](' +
+                `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}` +
+                ') for details.';
+            } else {
+              const scores = JSON.parse(fs.readFileSync(scoresPath, 'utf8'));
+              let table = '| Locale | WER | Sig. WER | Quality |\n|--------|-----|----------|--------|\n';
+              for (const [locale, data] of Object.entries(scores.locales || {})) {
+                const w = data.wer !== null ? `${(data.wer * 100).toFixed(1)}%` : '-';
+                const s = data.significantWer !== null ? `${(data.significantWer * 100).toFixed(1)}%` : '-';
+                const q = data.qualityScore !== null ? data.qualityScore.toFixed(2) : '-';
+                table += `| ${locale} | ${w} | ${s} | ${q} |\n`;
+              }
+              if (scores.overall) {
+                const o = scores.overall;
+                const w = o.wer !== null ? `${(o.wer * 100).toFixed(1)}%` : '-';
+                const s = o.significantWer !== null ? `${(o.significantWer * 100).toFixed(1)}%` : '-';
+                const q = o.qualityScore !== null ? o.qualityScore.toFixed(2) : '-';
+                table += `| **Overall** | **${w}** | **${s}** | **${q}** |\n`;
+              }
+              body = `## Scoring Results for ${scores.model || name}\n\n${table}\n\n` +
+                `Results saved to \`results/${name}/scores.json\`. ` +
+                'A maintainer can re-run scoring with `/score`.';
+            }
+
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: commentId,
+              body: body,
+            });

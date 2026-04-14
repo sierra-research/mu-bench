@@ -1,0 +1,26 @@
+{
+  "gold": "Chưa phải. Số điện thoại là cộng 84 1 2. Xin đọc lại. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Số điện thoại là +84-91-12345678.",
+  "unintelligible": false,
+  "wer": 0.36,
+  "werNormalizedGold": "Chưa phải. Số điện thoại là cộng 84 1 2. Xin đọc lại. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "werNormalizedPredicted": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "qualityScore": 2,
+  "significantWer": 0.08,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "Chưa phải. Số điện thoại là cộng 84 1 2. Xin đọc lại. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "sigWerNormalizedPredicted": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'Chưa' at position 0",
+      "reason": "'Chưa phải.' means 'Not yet.' or 'That's not correct.' Its omission removes the negative confirmation, which can change the intent of the response significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '84' at position 7",
+      "reason": "The missing '1 2. Xin đọc lại.' removes part of the phone number and the instruction to repeat, which is important information for the listener.",
+      "score": 1
+    }
+  ]
+}

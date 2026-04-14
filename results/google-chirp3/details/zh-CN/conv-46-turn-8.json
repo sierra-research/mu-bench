@@ -1,0 +1,31 @@
+{
+  "gold": "你可以再重复我的姓名？",
+  "predicted": "你可以在重复的声音。",
+  "unintelligible": false,
+  "wer": 0.45454545454545453,
+  "werNormalizedGold": "你可以再重复我的姓名？",
+  "werNormalizedPredicted": "你可以在重复的声音。",
+  "qualityScore": 1,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 可 以 再 重 复 我 的 姓 名 ？",
+  "sigWerNormalizedPredicted": "你 可 以 在 重 复 的 声 音 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 3",
+      "reason": "The characters '再' (again) and '在' (at/in) have different meanings. '再' indicates repetition, which is important for the request to repeat. Substituting with '在' changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 6",
+      "reason": "Omitting '我' (my) removes the reference to 'my name', which is crucial to the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '姓' to '声' at position 8",
+      "reason": "'姓' means 'surname' or 'family name', while '声' means 'sound'. This substitution changes the object of repetition from 'my name' to 'sound', which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
+}

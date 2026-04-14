@@ -1,0 +1,26 @@
+{
+  "gold": "¿Y a qué se refiere el proceso?",
+  "predicted": "¿A qué se refiere en proceso?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "¿Y a qué se refiere el proceso?",
+  "werNormalizedPredicted": "¿A qué se refiere el proceso?",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "¿Y a qué se refiere el proceso?",
+  "sigWerNormalizedPredicted": "¿A qué se refiere el proceso?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '¿Y' to '¿A' at position 0",
+      "reason": "The substitution of 'Y' (and) for 'A' (to) changes the meaning of the question, as '¿Y a qué se refiere el proceso?' means 'And what does the process refer to?' while '¿A qué se refiere el proceso?' means 'What does the process refer to?'. The conjunction 'Y' adds context or continuation, so its substitution alters the intent.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'a' at position 1",
+      "reason": "The word 'a' is omitted, but in this context, '¿A qué se refiere el proceso?' is grammatically correct and commonly used in Spanish. The omission does not significantly change the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

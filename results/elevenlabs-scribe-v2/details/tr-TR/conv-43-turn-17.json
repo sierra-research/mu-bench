@@ -1,0 +1,26 @@
+{
+  "gold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
+  "predicted": "Hayır, tamamen yanlış kaydettin. Tekrar sö-söylüyorum anı-- tekrar söylüyorum dinle: artı 90 123 090 45 67",
+  "unintelligible": false,
+  "wer": 0.11764705882352941,
+  "werNormalizedGold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
+  "werNormalizedPredicted": "Hayır, tamamen yanlış kaydettin. Tekrar sö-söylüyorum Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
+  "sigWerNormalizedPredicted": "Hayır, tamamen yanlış kaydettin. Tekrar sö-söylüyorum Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
+      "reason": "Difference is only a comma, which should be ignored according to the guidance. No semantic difference.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'söyleyeceğim' to 'sö-söylüyorum' at position 5",
+      "reason": "The expected word 'söyleyeceğim' means 'I will say', while 'söylüyorum' means 'I am saying'. The actual also has a stutter ('sö-'). The tense is different (future vs present), but the overall meaning in context is not significantly changed, as the speaker is indicating they are about to say something. The stutter does not affect meaning. Minor error.",
+      "score": 2
+    }
+  ]
+}

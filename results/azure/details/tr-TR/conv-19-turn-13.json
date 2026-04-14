@@ -1,0 +1,26 @@
+{
+  "gold": "Evet, isterim.",
+  "predicted": "Ekstrem.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "Evet, isterim.",
+  "werNormalizedPredicted": "Ekstrem.",
+  "qualityScore": 1,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "Evet, isterim.",
+  "sigWerNormalizedPredicted": "Ekstrem.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Evet,' to 'Ekstrem.' at position 0",
+      "reason": "'Evet, isterim.' means 'Yes, I want (it)' in Turkish, while 'Ekstrem.' means 'Extreme.' The substitution completely changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'isterim.' at position 1",
+      "reason": "The word 'isterim.' ('I want') is missing, which is essential to the meaning of the sentence. Its absence further derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "gold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "predicted": "Hiç tekrar edemedim, not alamadım.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "werNormalizedPredicted": "Hiç tekrar edemedim, not alamadım.",
+  "qualityScore": 2,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "sigWerNormalizedPredicted": "Hiç tekrar edemedim, not alamadım.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Siz' to 'Hiç' at position 0",
+      "reason": "'Siz' means 'you', while 'Hiç' means 'never' or 'not at all'; this changes the subject and the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'edin,' to 'edemedim,' at position 2",
+      "reason": "'Edin' is an imperative ('repeat'), while 'edemedim' means 'I could not repeat'; this changes the sentence from a request to a statement about inability, altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ben' at position 3",
+      "reason": "Omitting 'ben' ('I') removes the explicit subject, but since the verb form in Turkish already implies the subject, this is a minor error.",
+      "score": 2
+    }
+  ]
+}

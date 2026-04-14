@@ -1,0 +1,31 @@
+{
+  "gold": "Kết nối tôi với nhân viên đi.",
+  "predicted": "Chợ nó to với nhiều viên đi",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "Kết nối tôi với nhân viên đi.",
+  "werNormalizedPredicted": "Chợ nó to với nhiều viên đi",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Kết nối tôi với nhân viên đi.",
+  "sigWerNormalizedPredicted": "Chợ nó to với nhiều viên đi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Kết' to 'Chợ' at position 0",
+      "reason": "'Kết' (connect) and 'Chợ' (market) are completely different words and change the intent of the sentence from requesting a connection to talking about a market, which derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhân' to 'nhiều' at position 4",
+      "reason": "'nhân' (staff/personnel) and 'nhiều' (many/much) are unrelated in meaning, which changes the subject of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đi.' to 'đi' at position 6",
+      "reason": "The difference is only punctuation, which does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

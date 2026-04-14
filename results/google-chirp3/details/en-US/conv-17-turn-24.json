@@ -1,0 +1,36 @@
+{
+  "gold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "predicted": "Okay. How would I reference, you know, basically I don't want to go through everything we already talked about. So is there like a case number?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "werNormalizedPredicted": "Okay. How would I reference, you know, basically, I don't want to go through everything we already talked about. So, is there like a case number?",
+  "qualityScore": 3,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "sigWerNormalizedPredicted": "Okay. How would I reference, you know, basically, I don't want to go through everything we already talked about. So, is there like a case number?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'wanna' to 'to' at position 10",
+      "reason": "'want' is part of the phrase 'don't want to', which is a standard way to express 'don't wanna'. The insertion does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '0' to 'there' at position 19",
+      "reason": "'wanna' and 'want to' are equivalent in meaning; this is just a difference in formality.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'our' to 'a' at position 21",
+      "reason": "The insertion of 'is' changes the sentence from a statement ('0 like our case number') to a question ('is there like a case number?'), which changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'number.' to 'number?' at position 23",
+      "reason": "'0' (zero) is replaced with 'there', which changes the meaning from referencing a specific case number to asking about the existence of a case number.",
+      "score": 1
+    }
+  ]
+}

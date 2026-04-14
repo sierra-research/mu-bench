@@ -1,0 +1,31 @@
+{
+  "gold": "Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Ahmet arslan@email.com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "Ahmet nokta Arslan at email nokta com.",
+  "werNormalizedPredicted": "Ahmet arslan at email dot com.",
+  "qualityScore": 3,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "Ahmet nokta Arslan at email nokta com.",
+  "sigWerNormalizedPredicted": "Ahmet arslan at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nokta' to 'arslan' at position 1",
+      "reason": "'nokta' means 'dot' in Turkish, but 'arslan' is a surname. This substitution replaces a separator with a name, which significantly changes the meaning and structure of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'Arslan' at position 2",
+      "reason": "The surname 'Arslan' is missing in the actual transcription, which is a significant omission in an email address or name context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 5",
+      "reason": "'nokta' and 'dot' are direct translations (Turkish to English) and serve the same function in an email address context.",
+      "score": 3
+    }
+  ]
+}

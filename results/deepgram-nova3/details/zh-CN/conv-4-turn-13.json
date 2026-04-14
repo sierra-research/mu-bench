@@ -1,0 +1,31 @@
+{
+  "gold": "君，君灵，君灵。",
+  "predicted": "军令军令",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werNormalizedGold": "君，君灵，君灵。",
+  "werNormalizedPredicted": "军令，军令。",
+  "qualityScore": 1,
+  "significantWer": 0.375,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "君 ， 君 灵 ， 君 灵 。",
+  "sigWerNormalizedPredicted": "军 令 ， 军 令 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '军' at position 0",
+      "reason": "'君' (jun, meaning 'lord' or 'you') and '军' (jun, meaning 'army') are different words with different meanings, which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 2",
+      "reason": "Omitting '君' removes a key part of the repeated phrase, altering the structure and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to '军' at position 5",
+      "reason": "Again, '君' and '军' are different words with different meanings, which significantly changes the intended meaning.",
+      "score": 1
+    }
+  ]
+}

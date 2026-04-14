@@ -1,0 +1,36 @@
+{
+  "gold": "Artı 90 123 45. Pardon tekrar söylüyorum. Artı 90 123 0 90 45 67.",
+  "predicted": "+ 90 123 45. Pardon tekrar söylüyorum+ 90 120, 3 Şubat 9045 67.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "Artı 90 123 45. Pardon tekrar söylüyorum. Artı 90 123 0 90 45 67.",
+  "werNormalizedPredicted": "+90 123 45. Pardon tekrar söylüyorum. +90 123 0 90 45 67.",
+  "qualityScore": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "Artı 90 123 45. Pardon tekrar söylüyorum. Artı 90 123 0 90 45 67.",
+  "sigWerNormalizedPredicted": "+90 123 45. Pardon tekrar söylüyorum. +90 123 0 90 45 67.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Artı' to '+90' at position 0",
+      "reason": "'Artı' means 'plus' in Turkish, and '+90' is the numeric country code with the plus sign. In this context, '+90' is a direct numeric equivalent of 'Artı 90', so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '90' at position 1",
+      "reason": "The '90' is not actually missing; it is included as part of '+90'. The numeric country code is fully represented, so there is no loss of information.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Artı' to '+90' at position 7",
+      "reason": "As above, 'Artı' means 'plus', and '+90' is the numeric equivalent. The meaning is preserved in the context of a phone number.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '90' at position 8",
+      "reason": "As above, '90' is included in '+90', so there is no actual deletion of information.",
+      "score": 3
+    }
+  ]
+}

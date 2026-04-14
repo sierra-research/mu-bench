@@ -1,0 +1,36 @@
+{
+  "gold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
+  "predicted": "Địa trí email là mưng chấm trầngmail chấm com",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
+  "werNormalizedPredicted": "Địa trí email là mưng chấm trầngmail chấm com.",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
+  "sigWerNormalizedPredicted": "Địa trí email là mưng chấm trầngmail chấm com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chỉ' to 'trí' at position 1",
+      "reason": "'chỉ' (address) and 'trí' (intellect) are different words and change the meaning of the phrase 'Địa chỉ email' (email address) to something nonsensical.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'minh' to 'mưng' at position 4",
+      "reason": "'minh' is a common Vietnamese name, while 'mưng' is not a name and changes the intended email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 6",
+      "reason": "'trầngmail' merges 'trần' and 'gmail', resulting in an incorrect and incoherent email username.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 7",
+      "reason": "Missing 'a' (the Vietnamese word for '@') in the email address makes the email invalid and unrecognizable.",
+      "score": 1
+    }
+  ]
+}

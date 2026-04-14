@@ -1,0 +1,61 @@
+{
+  "gold": "Ben Bol Bol Ye firması ile çalışıyorum. Adresim olan Atatürk Caddesi No 45'e 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34 660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerine bayağı bir zaman geçti. Ama yani maalesef henüz gelmedi evraklarım.",
+  "predicted": "Ben Bol Bol Ya firmasıyla çalışıyorum. Eee, adresim olan Atatürk Caddesi No: 45/6, eee, Kazım Karabekir Mahallesi, Üsküdar/İstanbul, 34660 posta kodlu adresime, eee, gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım.",
+  "unintelligible": false,
+  "wer": 0.27906976744186046,
+  "werNormalizedGold": "Ben Bol Bol Ye firması ile çalışıyorum. Adresim olan Atatürk Caddesi No 45'e 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34 660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerine bayağı bir zaman geçti. Ama yani maalesef henüz gelmedi evraklarım.",
+  "werNormalizedPredicted": "Ben Bol Bol Ya firması ile çalışıyorum. Eee, adresim olan Atatürk Caddesi No 45'e 6, eee, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 posta kodlu adresime, eee, gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım.",
+  "qualityScore": 3,
+  "significantWer": 0.06976744186046512,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 43,
+  "sigWerNormalizedGold": "Ben Bol Bol Ye firması ile çalışıyorum. Adresim olan Atatürk Caddesi No 45'e 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34 660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerine bayağı bir zaman geçti. Ama yani maalesef henüz gelmedi evraklarım.",
+  "sigWerNormalizedPredicted": "Ben Bol Bol Ya firması ile çalışıyorum. Eee, adresim olan Atatürk Caddesi No 45'e 6, eee, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 posta kodlu adresime, eee, gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Ye' to 'Ya' at position 3",
+      "reason": "'Ye' and 'Ya' are different words and may refer to different entities or companies, which could change the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'Adresim' to 'adresim' at position 7",
+      "reason": "'Eee' is a filler word and does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'eee,' at position 14",
+      "reason": "Difference is only in capitalization, which does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '34' to '34660' at position 19",
+      "reason": "'eee' is a filler word and does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '660' at position 20",
+      "reason": "'34' is the city code for Istanbul, while '34660' is a postal code. Substituting one for the other changes the address significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'adresime' to 'eee,' at position 23",
+      "reason": "Omitting '660' from the postal code makes the address incomplete or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'üzerine' to 'üzerinden' at position 32",
+      "reason": "Repeating 'adresime' does not change the meaning, just adds redundancy.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'geçti.' to 'geçti' at position 36",
+      "reason": "'eee' is a filler word replacing 'adresime', but since 'adresime' is already present, this does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'ki' at position 40",
+      "reason": "The words 'üzerine' and 'üzerinden' are similar in meaning in this context and do not change the overall meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

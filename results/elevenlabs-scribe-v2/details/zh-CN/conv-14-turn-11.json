@@ -1,0 +1,36 @@
+{
+  "gold": "没有没有没有，美玲 at email dot com。",
+  "predicted": "mail，mail，mail，mailing@email.com。",
+  "unintelligible": false,
+  "wer": 0.7857142857142857,
+  "werNormalizedGold": "没有没有没有，美玲 at email dot com。",
+  "werNormalizedPredicted": "mail, mail, mail, mailing at email dot com.",
+  "qualityScore": 1,
+  "significantWer": 0.21428571428571427,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "没 有 没 有 没 有 ， 美 玲 at email dot com 。",
+  "sigWerNormalizedPredicted": "mail, mail, mail, mailing at email dot com.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '没' to 'mail,' at position 0",
+      "reason": "The expected word is in Chinese ('没'), but the actual is an English word ('mail,'). This is a language mismatch and a significant error that changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '没' at position 4",
+      "reason": "The expected word is a Chinese name ('美'), but the actual is an English word ('mailing'). This is a language mismatch and a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'com.' at position 12",
+      "reason": "The expected word is part of a Chinese name ('玲'), but the actual is the English word 'at'. This is a language mismatch and a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 13",
+      "reason": "The only difference is the period at the end, which is punctuation and should be ignored. No error here.",
+      "score": 3
+    }
+  ]
+}

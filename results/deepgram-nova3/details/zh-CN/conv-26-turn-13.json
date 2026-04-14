@@ -1,0 +1,31 @@
+{
+  "gold": "美玲 美玲。",
+  "predicted": "是美国地区",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "美玲 美玲。",
+  "werNormalizedPredicted": "是美国地区",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "美 玲 美 玲 。",
+  "sigWerNormalizedPredicted": "是 美 国 地 区",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '是' at position 0",
+      "reason": "The word '是' (is/are) is not present in the expected sentence and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '国' at position 1",
+      "reason": "Substituting '玲' (a name character) with '国' (country) changes the meaning entirely and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 4",
+      "reason": "Missing punctuation does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

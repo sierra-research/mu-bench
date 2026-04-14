@@ -1,0 +1,26 @@
+{
+  "gold": "C N 2 6 6.",
+  "predicted": "Cn hai trăm sáu mươi sáu",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "C N 2 6 6.",
+  "werNormalizedPredicted": "C N 266.",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "C N 2 6 6.",
+  "sigWerNormalizedPredicted": "C N 266.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '2' to '266.' at position 2",
+      "reason": "The model combined three separate digits ('2', '6', '6') into a single number ('266'), which changes the intended sequence of individual characters. This is a significant error, especially for things like codes or IDs where each digit matters.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '6' at position 3",
+      "reason": "The individual '6' is not separately represented in the actual transcription, which is critical in a sequence of spelled-out characters or numbers. This could lead to misinterpretation of the code or ID.",
+      "score": 1
+    }
+  ]
+}

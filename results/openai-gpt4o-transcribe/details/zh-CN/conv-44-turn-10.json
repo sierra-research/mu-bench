@@ -1,0 +1,41 @@
+{
+  "gold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
+  "predicted": "你有什么问题，你为什么听不懂我？让我真的没有耐心。",
+  "unintelligible": false,
+  "wer": 0.5428571428571428,
+  "werNormalizedGold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
+  "werNormalizedPredicted": "你有什么问题，你为什么听不懂我？让我真的没有耐心。",
+  "qualityScore": 2,
+  "significantWer": 0.05714285714285714,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 35,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 ， 你 有 什 么 问 题 ， 为 什 么 听 不 懂 我 ， 你 有 什 么 问 题 ， 有 什 么 问 题 ？",
+  "sigWerNormalizedPredicted": "你 有 什 么 问 题 ， 你 为 什 么 听 不 懂 我 ？ 让 我 真 的 没 有 耐 心 。",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '有' at position 8",
+      "reason": "Omitting '有' changes the sentence structure and meaning, as it removes the repetition and emphasis in the question.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '，' to '？' at position 21",
+      "reason": "Changing a comma to a question mark does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '题' at position 27",
+      "reason": "Omitting '题' removes part of the repeated question, which affects the emphasis and clarity of the speaker's intent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '什' to '耐' at position 30",
+      "reason": "Substituting '什' (what) with '耐' (patience) changes the meaning of the phrase, resulting in a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '题' at position 33",
+      "reason": "Omitting '题' again removes part of the repeated question, which affects the emphasis and clarity of the speaker's intent.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "gold": "你好。",
+  "predicted": "一",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "你好。",
+  "werNormalizedPredicted": "一",
+  "qualityScore": 1,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "你 好 。",
+  "sigWerNormalizedPredicted": "一",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '一' at position 0",
+      "reason": "The character '你' (you) was replaced with '一' (one), which is a completely different word and changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "The word '好' (good) was omitted, resulting in a loss of the intended greeting meaning ('你好' means 'hello').",
+      "score": 1
+    }
+  ]
+}

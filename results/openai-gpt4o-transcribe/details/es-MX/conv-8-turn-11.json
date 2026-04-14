@@ -1,0 +1,26 @@
+{
+  "gold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "predicted": "Avisame, avisas que ya está en proceso, que ya está en camino.",
+  "unintelligible": false,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "werNormalizedPredicted": "Avísame, avisas que ya está en proceso, que ya está en camino?",
+  "qualityScore": 3,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "sigWerNormalizedPredicted": "Avísame, avisas que ya está en proceso, que ya está en camino?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '¿Cómo' to 'Avísame,' at position 0",
+      "reason": "'¿Cómo' (how) is replaced by 'Avísame' (let me know), which changes the sentence from a question about how to a command/request. This alters the intent and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'me' at position 1",
+      "reason": "Omitting 'me' removes the reference to the speaker, which affects the meaning but not as drastically as the first error. The sentence is still somewhat understandable, but the subject is less clear.",
+      "score": 2
+    }
+  ]
+}

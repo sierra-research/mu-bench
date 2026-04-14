@@ -1,0 +1,36 @@
+{
+  "gold": "我还没说我的邮箱地址。",
+  "predicted": "我黑妹说我的又祥地日",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werNormalizedGold": "我还没说我的邮箱地址。",
+  "werNormalizedPredicted": "我黑妹说我的又祥地日",
+  "qualityScore": 1,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 还 没 说 我 的 邮 箱 地 址 。",
+  "sigWerNormalizedPredicted": "我 黑 妹 说 我 的 又 祥 地 日",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '还' to '黑' at position 1",
+      "reason": "'还' (still/yet) and '黑' (black) are completely different in meaning, and this substitution makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '又' at position 6",
+      "reason": "'邮' (mail) is essential for '邮箱' (mailbox/email), while '又' (again) changes the meaning and makes the phrase nonsensical.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '址' to '日' at position 9",
+      "reason": "'址' (address) is replaced by '日' (day/sun), which makes the phrase '地址' (address) incorrect and the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 10",
+      "reason": "Missing punctuation at the end does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

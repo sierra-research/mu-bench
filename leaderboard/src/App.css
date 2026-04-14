@@ -1,0 +1,240 @@
+/* ===== App Shell ===== */
+.app {
+    min-height: 100vh;
+    background: #ffffff;
+    width: 100%;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-inner {
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3748;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-title:hover {
+    opacity: 0.8;
+}
+
+.mu-symbol {
+    color: #065f46;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.bench-text {
+    color: #2d3748;
+}
+
+.navbar-attribution {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-attribution:hover {
+    opacity: 0.8;
+}
+
+.navbar-logo {
+    height: 12px;
+    width: auto;
+}
+
+.navbar-from {
+    font-size: 10px;
+    color: #718096;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #718096;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.navbar-link:hover {
+    color: #065f46;
+}
+
+.navbar-link-active {
+    color: #065f46;
+    font-weight: 700;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+    min-height: 100vh;
+    padding-top: 72px;
+}
+
+/* ===== Home / Hero ===== */
+.home {
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.hero {
+    padding: 40px 0 24px;
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.hero-main-title {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #1a202c;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.hero-main-title .mu-symbol {
+    font-size: 5.25rem;
+}
+
+.hero-main-title .bench-text {
+    color: #2d3748;
+    letter-spacing: 0.02em;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #718096;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero-highlight {
+    color: #065f46;
+    font-weight: 700;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #f8fafc;
+    padding: 24px 0;
+    border-top: 1px solid #e2e8f0;
+    width: 100%;
+}
+
+.footer-inner {
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.footer p {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-email {
+    color: #065f46;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-email:hover {
+    color: #047857;
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 32px 0 16px;
+    }
+
+    .hero-main-title {
+        font-size: 3rem;
+    }
+
+    .hero-main-title .mu-symbol {
+        font-size: 3.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .navbar-links {
+        gap: 16px;
+    }
+
+    .navbar-link {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-inner {
+        padding: 0 48px;
+    }
+
+    .hero-main-title {
+        font-size: 6rem;
+    }
+
+    .hero-main-title .mu-symbol {
+        font-size: 6.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+}

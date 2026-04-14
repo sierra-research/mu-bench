@@ -1,0 +1,26 @@
+{
+  "gold": "你好。",
+  "predicted": "零二",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "你好。",
+  "werNormalizedPredicted": "零二",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "你 好 。",
+  "sigWerNormalizedPredicted": "零 二",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '零' at position 0",
+      "reason": "The actual transcription is in Chinese numerals ('零二' means 'zero two') instead of the expected greeting ('你好' means 'hello'), which completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 2",
+      "reason": "Missing punctuation does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

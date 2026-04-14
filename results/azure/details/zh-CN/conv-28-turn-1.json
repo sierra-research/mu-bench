@@ -1,0 +1,31 @@
+{
+  "gold": "我正在等待新卡，想知道它的状态。",
+  "predicted": "呃，我正在等待，也心卡想知道他的状态。",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werNormalizedGold": "我正在等待新卡，想知道它的状态。",
+  "werNormalizedPredicted": "呃，我正在等待，也心卡，想知道他的状态。",
+  "qualityScore": 2,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 ， 想 知 道 它 的 状 态 。",
+  "sigWerNormalizedPredicted": "呃 ， 我 正 在 等 待 ， 也 心 卡 ， 想 知 道 他 的 状 态 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '呃' at position 0",
+      "reason": "Filler word at the beginning does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '新' to '心' at position 5",
+      "reason": "Punctuation differences should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 11",
+      "reason": "Substituting '新' (new) with '心' (heart) changes the meaning of the noun 'new card' to 'heart card', which is a significant error.",
+      "score": 1
+    }
+  ]
+}

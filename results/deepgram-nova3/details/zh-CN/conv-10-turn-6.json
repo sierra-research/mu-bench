@@ -1,0 +1,36 @@
+{
+  "gold": "那我的姓，姓名呢？",
+  "predicted": "脑的性命呢",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "那我的姓，姓名呢？",
+  "werNormalizedPredicted": "脑的性命呢？",
+  "qualityScore": 1,
+  "significantWer": 0.4444444444444444,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "那 我 的 姓 ， 姓 名 呢 ？",
+  "sigWerNormalizedPredicted": "脑 的 性 命 呢 ？",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to '脑' at position 0",
+      "reason": "'那' (that) and '脑' (brain) are completely different words and meanings, which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 1",
+      "reason": "Omitting '我' (I/my) removes the subject/possessive, making the sentence unclear and changing its meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '姓' to '性' at position 3",
+      "reason": "'姓' (surname) and '性' (sex/gender) are different words with unrelated meanings, which significantly alters the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '姓' at position 5",
+      "reason": "Omitting '姓' (surname) removes a key part of the question about name/surname, making the sentence incomplete.",
+      "score": 1
+    }
+  ]
+}

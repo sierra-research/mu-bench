@@ -1,0 +1,36 @@
+{
+  "gold": "收货地址是北京市海淀区北京路 1 2 3号。",
+  "predicted": "周末地址是中国北京市海定区北京路一百二十三号。",
+  "unintelligible": false,
+  "wer": 0.3684210526315789,
+  "werNormalizedGold": "收货地址是北京市海淀区北京路 1 2 3号。",
+  "werNormalizedPredicted": "周末地址是中国北京市海淀区北京路123号。",
+  "qualityScore": 2,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 1 2 3 号 。",
+  "sigWerNormalizedPredicted": "周 末 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 123 号 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '收' to '周' at position 0",
+      "reason": "The substitution changes the meaning from 'receiving' (as in 'shipping address') to 'weekend', which makes the sentence incoherent and changes the intent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '中' at position 5",
+      "reason": "The insertion of '中' (as in 'China') adds extra information but does not derail the meaning of the address; it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '1' to '123' at position 14",
+      "reason": "The expected is a sequence of individual digits, but the actual combines them into '123'. Since numeric equivalents are considered equal, this is not an error.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '2' at position 15",
+      "reason": "The digit '2' is missing from the address, which could cause a significant error in the delivery address.",
+      "score": 1
+    }
+  ]
+}

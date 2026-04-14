@@ -1,0 +1,36 @@
+{
+  "gold": "Là sao? C N 4 2 4 hay là 4 0 4?",
+  "predicted": "Là sáu cn bốn trăm hai mươi bốn hay là bốn trăm lẻ bốn",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "Là sao? C N 4 2 4 hay là 4 0 4?",
+  "werNormalizedPredicted": "Là sao? CN 424 hay là 404?",
+  "qualityScore": 2,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "Là sao? C N 4 2 4 hay là 4 0 4?",
+  "sigWerNormalizedPredicted": "Là sao? CN 424 hay là 404?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'C' to 'CN' at position 2",
+      "reason": "'C N' is two separate letters, but 'CN' is combined as one; this could cause confusion if the intent was to spell out each letter individually, but the meaning is still mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '4' at position 4",
+      "reason": "Missing a digit in a sequence can change the meaning, especially if these are codes or numbers being communicated; this is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '4' to '404?' at position 9",
+      "reason": "'4 0 4' is a sequence of three digits, but '404' is a combined number; if the intent was to communicate individual digits, this changes the meaning, but the overall reference is still clear (404 vs 4 0 4), so it's a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '0' at position 10",
+      "reason": "Omitting a digit in a number sequence can significantly alter the information, especially if these are codes; this is a significant error.",
+      "score": 1
+    }
+  ]
+}

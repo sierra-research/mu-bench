@@ -1,0 +1,31 @@
+{
+  "gold": "Phone number, 2 1 2 1 2 3 4 5. Were you saying something? I'm sorry. 2 1 2 1 2 3 4 5 6 7. 1 plus 1.",
+  "predicted": "phone number 212-123-45... were you saying something? 212-123-4567?",
+  "unintelligible": false,
+  "wer": 0.20689655172413793,
+  "werNormalizedGold": "Phone number, 2 1 2 1 2 3 4 5. Were you saying something? I'm sorry. 2 1 2 1 2 3 4 5 6 7. 1 plus 1.",
+  "werNormalizedPredicted": "Phone number, 2 1 2 1 2 3 4 5. Were you saying something? 2 1 2 1 2 3 4 5 6 7?",
+  "qualityScore": 2,
+  "significantWer": 0.034482758620689655,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 29,
+  "sigWerNormalizedGold": "Phone number, 2 1 2 1 2 3 4 5. Were you saying something? I'm sorry. 2 1 2 1 2 3 4 5 6 7. 1 plus 1.",
+  "sigWerNormalizedPredicted": "Phone number, 2 1 2 1 2 3 4 5. Were you saying something? 2 1 2 1 2 3 4 5 6 7?",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'I'm' at position 14",
+      "reason": "The phrase 'I'm sorry.' is omitted, which removes an apology or clarification from the conversation. This could affect the tone but does not derail the main informational content.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '7.' to '7?' at position 25",
+      "reason": "The difference is only punctuation (period vs question mark), which does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '1' at position 26",
+      "reason": "The final sequence '1 plus 1.' is missing, which omits a piece of information from the expected transcript. This is a significant omission as it removes a complete informational unit.",
+      "score": 1
+    }
+  ]
+}

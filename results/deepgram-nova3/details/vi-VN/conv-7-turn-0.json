@@ -1,0 +1,41 @@
+{
+  "gold": "Tôi làm mất thẻ. Tôi xin cấp lại, muốn hỏi chừng nào có?",
+  "predicted": "Tôi đi làm mất cái thẻ tôi xin cấp lại, câu hỏi câu chuyện nào có",
+  "unintelligible": false,
+  "wer": 0.46153846153846156,
+  "werNormalizedGold": "Tôi làm mất thẻ. Tôi xin cấp lại, muốn hỏi chừng nào có?",
+  "werNormalizedPredicted": "tôi đi làm mất cái thẻ. tôi xin cấp lại, câu hỏi chừng nào có",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "Tôi làm mất thẻ. Tôi xin cấp lại, muốn hỏi chừng nào có?",
+  "sigWerNormalizedPredicted": "tôi đi làm mất cái thẻ. tôi xin cấp lại, câu hỏi chừng nào có",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Tôi' to 'đi' at position 0",
+      "reason": "'đi' (go) is inserted, but it does not significantly change the meaning of the sentence, as the main point is losing the card.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 3",
+      "reason": "'cái' is a classifier in Vietnamese and its insertion does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Tôi' to 'tôi' at position 4",
+      "reason": "'muốn hỏi' (want to ask) is replaced by 'câu hỏi' (question), which changes the structure but not the intent of asking when the card will be available.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'muốn' to 'câu' at position 8",
+      "reason": "The question mark is omitted, but this is a punctuation difference and does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'có?' to 'có' at position 12",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

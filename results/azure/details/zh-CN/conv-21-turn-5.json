@@ -1,0 +1,31 @@
+{
+  "gold": "1 2 3 北京路的海淀，海淀区北京区，中国。",
+  "predicted": "呃，123北京Road ，海淀海淀区，北京区，中国。",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "1 2 3 北京路的海淀，海淀区北京区，中国。",
+  "werNormalizedPredicted": "呃，1 2 3 北京路，海淀，海淀区，北京区，中国。",
+  "qualityScore": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "1 2 3 北 京 路 的 海 淀 ， 海 淀 区 北 京 区 ， 中 国 。",
+  "sigWerNormalizedPredicted": "呃 ， 1 2 3 北 京 路 ， 海 淀 ， 海 淀 区 ， 北 京 区 ， 中 国 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '呃' at position 0",
+      "reason": "The word '呃' is a filler word (like 'uh' in English) and does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '的' to '，' at position 6",
+      "reason": "The expected word '的' (a possessive or descriptive particle) is replaced by a comma, which slightly affects the grammatical structure but does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '，' at position 13",
+      "reason": "The insertion of a comma is a punctuation difference and does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

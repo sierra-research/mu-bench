@@ -1,0 +1,31 @@
+{
+  "gold": "Maybe you can hear that snoring in the background, we're going to party.",
+  "predicted": "And you can hear that snoring in the background. We gonna party",
+  "unintelligible": false,
+  "wer": 0.3076923076923077,
+  "werNormalizedGold": "Maybe you can hear that snoring in the background, we're going to party.",
+  "werNormalizedPredicted": "And you can hear that snoring in the background, we gonna party.",
+  "qualityScore": 3,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "Maybe you can hear that snoring in the background, we're going to party.",
+  "sigWerNormalizedPredicted": "And you can hear that snoring in the background, we gonna party.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Maybe' to 'And' at position 0",
+      "reason": "'Maybe' introduces uncertainty or possibility, while 'And' simply connects clauses. This changes the nuance but not the core meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'we're' to 'we' at position 9",
+      "reason": "'We're' means 'we are', while 'we' alone is missing the verb. However, in context, the meaning is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'to' at position 11",
+      "reason": "Omitting 'to' in 'going to party' (rendered as 'gonna party') is a common colloquialism and does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

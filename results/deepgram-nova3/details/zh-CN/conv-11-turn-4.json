@@ -1,0 +1,31 @@
+{
+  "gold": "你说得对，我现在等待新卡。想知道它的状态。",
+  "predicted": "润润说得对我现在当代野性卡想知道她的状态。",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "你说得对，我现在等待新卡。想知道它的状态。",
+  "werNormalizedPredicted": "润润说得对，我现在当代野性卡。想知道她的状态。",
+  "qualityScore": 1,
+  "significantWer": 0.09523809523809523,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "你 说 得 对 ， 我 现 在 等 待 新 卡 。 想 知 道 它 的 状 态 。",
+  "sigWerNormalizedPredicted": "润 润 说 得 对 ， 我 现 在 当 代 野 性 卡 。 想 知 道 她 的 状 态 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '润' at position 0",
+      "reason": "The extra '润' at the beginning adds a name or word not present in the original, which could confuse the subject of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '等' to '代' at position 8",
+      "reason": "Replacing '你' (you) with '润' (a name or unrelated word) changes the subject, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '它' to '她' at position 16",
+      "reason": "The insertion of '当' changes the phrase structure and could confuse the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

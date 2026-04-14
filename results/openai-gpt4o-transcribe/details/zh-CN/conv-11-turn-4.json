@@ -1,0 +1,36 @@
+{
+  "gold": "你说得对，我现在等待新卡。想知道它的状态。",
+  "predicted": "嗯，你说得对，我现在当然也心卡，想知道他的状态。",
+  "unintelligible": false,
+  "wer": 0.38095238095238093,
+  "werNormalizedGold": "你说得对，我现在等待新卡。想知道它的状态。",
+  "werNormalizedPredicted": "嗯，你说得对，我现在当然也心卡，想知道他的状态。",
+  "qualityScore": 2,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "你 说 得 对 ， 我 现 在 等 待 新 卡 。 想 知 道 它 的 状 态 。",
+  "sigWerNormalizedPredicted": "嗯 ， 你 说 得 对 ， 我 现 在 当 然 也 心 卡 ， 想 知 道 他 的 状 态 。",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '嗯' at position 0",
+      "reason": "The insertion of '嗯' (an interjection like 'um') does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '等' to '然' at position 8",
+      "reason": "The insertion of '当' (part of '当然', meaning 'of course') adds a nuance but does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '。' to '，' at position 12",
+      "reason": "This is part of the phrase '当然也', which replaces '等待'. '等待' means 'to wait', while '当然也' means 'of course also', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 16",
+      "reason": "Punctuation difference between period and comma does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

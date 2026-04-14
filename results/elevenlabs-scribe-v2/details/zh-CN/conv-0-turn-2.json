@@ -1,0 +1,31 @@
+{
+  "gold": "准备好了。",
+  "predicted": "我们背好啦",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "准备好了。",
+  "werNormalizedPredicted": "我们背好啦",
+  "qualityScore": 1,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "准 备 好 了 。",
+  "sigWerNormalizedPredicted": "我 们 背 好 啦",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '准' to '们' at position 0",
+      "reason": "The insertion of '我' (I) changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '了' to '啦' at position 3",
+      "reason": "'准' (ready) is substituted with '们' (plural marker), which changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '。' at position 4",
+      "reason": "'了' and '啦' are both sentence-final particles, but '啦' is more colloquial and does not significantly change the meaning.",
+      "score": 3
+    }
+  ]
+}

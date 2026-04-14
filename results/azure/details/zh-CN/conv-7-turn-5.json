@@ -1,0 +1,26 @@
+{
+  "gold": "C N 3 7 8 9。",
+  "predicted": "CN Sensi Bajro.",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "C N 3 7 8 9。",
+  "werNormalizedPredicted": "C N Sensi Bajro.",
+  "qualityScore": 1,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "C N 3 7 8 9 。",
+  "sigWerNormalizedPredicted": "C N Sensi Bajro.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '3' to 'Sensi' at position 2",
+      "reason": "'Sensi' is a completely different word from the digit '3', and this substitution makes the sequence unrecognizable, especially in a context where a specific code or number is expected. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '8' at position 4",
+      "reason": "Omitting a digit in a sequence (likely a code or number) changes the entire meaning and makes the transcription incorrect for its intended use. Significant error.",
+      "score": 1
+    }
+  ]
+}

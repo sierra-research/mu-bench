@@ -1,0 +1,36 @@
+{
+  "gold": "Đợi tôi một xíu để tôi kiểm tra.",
+  "predicted": "À, để tôi xem xét tôi ký kia.",
+  "unintelligible": false,
+  "wer": 0.875,
+  "werNormalizedGold": "Đợi tôi một xíu để tôi kiểm tra.",
+  "werNormalizedPredicted": "À, để tôi xem xét tôi ký kia.",
+  "qualityScore": 2,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "Đợi tôi một xíu để tôi kiểm tra.",
+  "sigWerNormalizedPredicted": "À, để tôi xem xét tôi ký kia.",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'Đợi' to 'để' at position 0",
+      "reason": "The insertion of 'À,' adds an interjection that does not change the core meaning, but is not present in the expected sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'một' to 'xem' at position 2",
+      "reason": "'Đợi' means 'wait', while 'để' means 'to/for', which changes the intent from asking someone to wait to simply stating purpose. This significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'để' at position 4",
+      "reason": "'một' means 'a/one', while 'xem' means 'see/check', which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kiểm' to 'ký' at position 6",
+      "reason": "Omitting 'để' removes the purpose clause, which affects the sentence structure but does not completely derail the meaning.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "gold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "predicted": "Tamam, kredi kartımla ilgili bir itiraz talebim var, onu yapmak istiyorum, yardımcı olur musun bana?",
+  "unintelligible": false,
+  "wer": 0.23529411764705882,
+  "werNormalizedGold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "werNormalizedPredicted": "Tamam. Kredi kartımla ilgili bir itiraz talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "qualityScore": 2,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "sigWerNormalizedPredicted": "Tamam. Kredi kartımla ilgili bir itiraz talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartı' to 'kartımla' at position 2",
+      "reason": "'kartı' (the card) is replaced with 'kartımla' (with my card), which is a minor grammatical change and does not significantly alter the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ile' at position 3",
+      "reason": "The word 'ile' (with) is omitted, but 'kartımla' already implies 'with my card', so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'limit' to 'itiraz' at position 6",
+      "reason": "'limit' (limit) is replaced with 'itiraz' (objection), which completely changes the subject of the request and alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'artışı' at position 7",
+      "reason": "The word 'artışı' (increase) is omitted, which, together with the previous substitution, changes the request from a limit increase to an objection, significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

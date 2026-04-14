@@ -1,0 +1,26 @@
+{
+  "gold": "C N 0 3 8。",
+  "predicted": "先领38。",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werNormalizedGold": "C N 0 3 8。",
+  "werNormalizedPredicted": "先领38。",
+  "qualityScore": 1,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "C N 0 3 8 。",
+  "sigWerNormalizedPredicted": "先 领 38 。",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'C' to '先' at position 0",
+      "reason": "The expected is a spelled-out letter, but the actual is a completely different word in a different language, which makes the transcription incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '3' at position 3",
+      "reason": "The expected is a digit, but the actual is a punctuation mark, which is a significant error in a sequence of numbers/letters.",
+      "score": 1
+    }
+  ]
+}
