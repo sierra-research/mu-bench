@@ -362,7 +362,8 @@ export default function PaperGlobe() {
                 </span>
             </div>
             <p className="globe-caption">
-                {LOCALE_PINS.length} locale variants across 42 languages. Drag to rotate.
+                {LOCALE_PINS.length} locale variants across 42 languages, collected from Sierra's multilingual voice
+                agent. Drag to rotate.
             </p>
         </div>
     );

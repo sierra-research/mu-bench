@@ -284,7 +284,7 @@ export default function Leaderboard() {
                 <div className="metrics-info-text">
                     <h3 className="metrics-info-title">Our Dataset</h3>
                     <p className="metrics-info-desc">
-                        The benchmark dataset comprises 250 scripted phone conversations with an AI banking
+                        The benchmark dataset comprises 250 scripted phone conversations with Sierra's voice AI banking
                         agent across {LOCALES.length} locales, yielding 4,270 human-annotated utterances totaling 5.1
                         hours of audio. Callers used their own phones from real environments, producing natural
                         background noise, disfluencies, and emotional variation at 24 kHz mono telephony quality.

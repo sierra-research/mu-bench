@@ -10,7 +10,7 @@ Representing work by Katie Echavia, Venu Satuluri, Ola Zytek, Victor Barres, Min
 
 At Sierra, we run a multilingual voice AI agent that speaks 70+ languages. A provider's transcription accuracy in Mandarin is not the same as in English -- the gap can be 3x or more. We can't route traffic to the right provider, tune our pipeline, or debug agent failures without per-locale measurements. So we measure.
 
-Today, we're open-sourcing part of that evaluation: **5 locales** and **5 providers**, totaling **4,270 human-annotated utterances** from **250 real phone conversations** -- recorded at 24 kHz mono from real phone calls.
+Internally, we benchmark **79 locale variants** spanning **42 languages** across **13+ ASR providers**. Today, we're open-sourcing a subset of that evaluation: **5 locales** and **5 providers**, totaling **4,270 human-annotated utterances** from **250 real phone conversations** -- recorded at 24 kHz mono from real phone calls.
 
 This is **MU-Bench** ([`sierra-research/mu-bench`](https://huggingface.co/datasets/sierra-research/mu-bench)) -- an open benchmark built from actual telephony audio, evaluated with metrics that go beyond raw WER.
 
@@ -73,7 +73,7 @@ All personal details in the conversations -- names, email addresses, phone numbe
 
 Not all transcription errors carry equal weight. "Um" versus "umm" has the same edit distance as "Mason" versus "Jason," but one is a trivial spelling variant while the other refers to a completely different person. A transcription that drops a filler word is functionally perfect; one that gets a single digit wrong in a phone number can render the utterance useless for downstream processing.
 
-We use three complementary metrics: **Word Error Rate (WER)**, **Utterance Error Rate (UER)**, and **Quality Score**. All LLM-based scoring uses GPT-4.1 at temperature 0.
+We use three complementary metrics: **Word Error Rate (WER)**, **Utterance Error Rate (UER)**, and **Quality Score**. All LLM-based scoring uses GPT-4.1 at temperature 0; the full prompt templates are available in the [dataset repository](https://huggingface.co/datasets/sierra-research/mu-bench/blob/main/scoring/prompts.py).
 
 ### LLM-based normalization
 
@@ -185,7 +185,7 @@ Results are drawn from the current leaderboard as of April 2026.
 
 We're actively expanding MU-Bench along several axes:
 
-- **More locales.** We have data collection underway for additional locales and plan to open-source them as annotation is completed.
+- **More locales.** We have data collection underway across all 79 locale variants internally and plan to open-source additional locales as annotation is completed.
 - **Streaming evaluation.** The current benchmark evaluates batch transcription only. Streaming APIs produce different latency and quality characteristics that matter for real-time voice agents.
 - **Open scoring toolkit.** We plan to release the full evaluation toolkit as a standalone package so the community can run scoring locally.
 - **Community submissions.** The leaderboard is open to any provider. If you'd like to submit your model's results, see the [submission guide](https://github.com/sierra-research/mu-bench).

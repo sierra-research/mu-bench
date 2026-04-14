@@ -104,7 +104,11 @@ export default function App() {
             <footer className="footer">
                 <div className="footer-inner">
                     <p className="footer-contact">
-                        For questions or feedback,{" "}
+                        For questions or feedback, contact{" "}
+                        <a href="mailto:soham@sierra.ai" className="footer-email">
+                            soham@sierra.ai
+                        </a>{" "}
+                        or{" "}
                         <a href="https://github.com/sierra-research/mu-bench/issues" className="footer-email">
                             open an issue on GitHub
                         </a>
