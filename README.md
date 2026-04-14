@@ -1,6 +1,6 @@
-# Voice Transcription Benchmark
+# MU-Bench
 
-An open benchmark for evaluating speech-to-text providers across multiple locales and metrics.
+**M**ultilingual **U**tterances Transcription Benchmark — an open benchmark for evaluating speech-to-text providers across multiple locales and metrics.
 
 ## Overview
 

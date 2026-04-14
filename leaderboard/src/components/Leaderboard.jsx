@@ -287,7 +287,7 @@ export default function Leaderboard() {
                         The benchmark dataset comprises 250 scripted phone conversations with Sierra's voice AI banking
                         agent across {LOCALES.length} locales, yielding 4,270 human-annotated utterances totaling 5.1
                         hours of audio. Callers used their own phones from real environments, producing natural
-                        background noise, disfluencies, and emotional variation at 8 kHz mono telephony quality.
+                        background noise, disfluencies, and emotional variation at 24 kHz mono telephony quality.
                     </p>
                     <p className="metrics-info-desc" style={{ marginTop: "8px" }}>
                         Professional native-speaking annotators produce ground truth transcripts for each caller
@@ -309,7 +309,7 @@ export default function Leaderboard() {
                         </span>
                         <span className="action-card-btn">Download</span>
                     </a>
-                    <a href="https://github.com/sierra-research/voice-transcription-benchmark" className="action-card">
+                    <a href="https://github.com/sierra-research/mu-bench" className="action-card">
                         <span className="action-card-title">Submit via Pull Request</span>
                         <span className="action-card-desc">
                             Add your model's results to the leaderboard through a GitHub PR.
@@ -528,7 +528,7 @@ function ProviderDetail({ providerId, providers, locale, onClose }) {
 
                 <div className="provider-detail-footer">
                     <a
-                        href="https://github.com/sierra-research/voice-transcription-benchmark/tree/main/submissions"
+                        href="https://github.com/sierra-research/mu-bench/tree/main/submissions"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="provider-detail-link"

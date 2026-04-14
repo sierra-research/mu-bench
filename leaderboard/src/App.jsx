@@ -62,7 +62,7 @@ export default function App() {
                             Download
                         </a>
                         <a
-                            href="https://github.com/sierra-research/voice-transcription-benchmark"
+                            href="https://github.com/sierra-research/mu-bench"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="navbar-link"
@@ -107,6 +107,10 @@ export default function App() {
                         For questions or feedback, contact{" "}
                         <a href="mailto:soham@sierra.ai" className="footer-email">
                             soham@sierra.ai
+                        </a>{" "}
+                        or{" "}
+                        <a href="https://github.com/sierra-research/mu-bench/issues" className="footer-email">
+                            open an issue on GitHub
                         </a>
                     </p>
                 </div>
