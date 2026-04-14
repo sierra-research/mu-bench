@@ -171,7 +171,6 @@ See `submissions/raw/deepgram-nova3/` for a complete example submission.
 
 ```
 manifest.json              # Audio file list + ground truth transcripts
-packages.txt               # System-level dependencies (ffmpeg)
 scripts/
   download_audio.py        # Download audio from HuggingFace
   transcribe.py            # Runs provider APIs to generate transcripts + latency
