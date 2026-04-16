@@ -6,30 +6,30 @@
   "werNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
   "werNormalizedPredicted": "có lẽ là tôi không cần nhưng mà tôi cần tại vì tôi không có biết in đang là tôi muốn được hỗ trợ để in ra giấy",
   "qualityScore": null,
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
+  "significantWer": 0.1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
   "sigWerNormalizedPredicted": "có lẽ là tôi không cần nhưng mà tôi cần tại vì tôi không có biết in đang là tôi muốn được hỗ trợ để in ra giấy",
   "sigWerErrors": [
     {
       "error": "Insertion: 'có' at position 0",
-      "reason": "The phrase 'có lẽ là' adds a hedging meaning ('maybe'), which changes the certainty of the statement but does not derail the overall intent.",
+      "reason": "The phrase 'có lẽ là' adds a hedging meaning ('maybe'), which changes the certainty of the statement but does not derail the overall intent of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: 'nhưng' at position 3",
-      "reason": "The insertion of 'nhưng mà' ('but') introduces a contrast, which slightly changes the flow but not the main meaning.",
-      "score": 2
+      "reason": "The insertion of 'nhưng mà' ('but') introduces a contrast that was not present in the original, which can confuse the meaning and coherence of the sentence.",
+      "score": 1
     },
     {
       "error": "Insertion: 'có' at position 7",
-      "reason": "The addition of 'có' ('have') in 'không có biết' is a common colloquial form and does not change the meaning.",
+      "reason": "The addition of 'có' ('have') before 'biết in' is a minor grammatical difference in Vietnamese and does not change the meaning.",
       "score": 3
     },
     {
       "error": "Substitution: 'nên' to 'đang' at position 9",
-      "reason": "Substituting 'nên' ('so/therefore') with 'đang' ('currently') changes the logical connection in the sentence, which can confuse the intent.",
+      "reason": "Replacing 'nên' ('so/therefore') with 'đang' ('currently') changes the logical connection in the sentence, affecting the meaning and coherence.",
       "score": 1
     }
   ]

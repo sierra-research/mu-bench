@@ -6,25 +6,25 @@
   "werNormalizedGold": "baska turlu yardimci olmaniza gerek yok tesekkur ederim iyi gunler dilerim",
   "werNormalizedPredicted": "baska bir turlu yardimcimizda gerekiyor tesekkur ederim iyi gunler dilerim",
   "qualityScore": null,
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "baska turlu yardimci olmaniza gerek yok tesekkur ederim iyi gunler dilerim",
   "sigWerNormalizedPredicted": "baska bir turlu yardimcimizda gerekiyor tesekkur ederim iyi gunler dilerim",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 1",
-      "reason": "'bir' (meaning 'a' or 'one') adds minor detail but does not change the overall meaning of the sentence.",
+      "reason": "'bir' (meaning 'a' or 'one') is added, but does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'yardimci' to 'yardimcimizda' at position 2",
-      "reason": "'yardimci' means 'assistant' or 'help', while 'yardimcimizda' means 'in our assistant' or 'at our helper', which changes the grammatical structure but the intent is still understandable.",
-      "score": 2
+      "reason": "'yardimci' means 'helper' or 'to help', while 'yardimcimizda' means 'at our helper' or 'in our helper', which is a grammatical and semantic error that makes the sentence less clear.",
+      "score": 1
     },
     {
       "error": "Deletion: 'gerek' at position 4",
-      "reason": "'gerek' means 'necessary', and its omission changes the meaning of the sentence, making it less clear that something is not needed. This significantly alters the intent.",
+      "reason": "Omitting 'gerek' ('necessary') changes the meaning, as it removes the necessity aspect from the sentence.",
       "score": 1
     }
   ]

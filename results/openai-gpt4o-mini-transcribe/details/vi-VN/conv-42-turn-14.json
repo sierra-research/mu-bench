@@ -6,25 +6,25 @@
   "werNormalizedGold": "a chinh xac chinh xac kiem tra giup",
   "werNormalizedPredicted": "chinh xac chinh xac chinh xac chinh xac",
   "qualityScore": null,
-  "significantWer": 0.375,
-  "majorErrorsCount": 3,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "a chinh xac chinh xac kiem tra giup",
   "sigWerNormalizedPredicted": "chinh xac chinh xac chinh xac chinh xac",
   "sigWerErrors": [
     {
       "error": "Substitution: 'a' to 'xac' at position 0",
-      "reason": "'a' is a different word from 'chinh', and its omission changes the structure and possibly the meaning of the sentence.",
-      "score": 1
+      "reason": "The initial word 'a' is missing, which may affect the meaning or intent of the sentence.",
+      "score": 2
     },
     {
       "error": "Substitution: 'kiem' to 'chinh' at position 5",
-      "reason": "The repetition of 'chinh xac' adds redundancy and makes the sentence incoherent, derailing the intended meaning.",
+      "reason": "'kiem' (check) is replaced by 'chinh' (correct), which changes the action being requested and alters the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'giup' at position 7",
-      "reason": "'kiem tra' (to check) is replaced by 'chinh xac' (accurate), which changes the action described in the sentence.",
+      "reason": "'tra' (check) is replaced by 'xac' (correct), further changing the intended action and making the sentence incoherent.",
       "score": 1
     }
   ]

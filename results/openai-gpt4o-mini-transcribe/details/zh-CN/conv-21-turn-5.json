@@ -1,0 +1,21 @@
+{
+  "gold": "1 2 3 北京路的海淀，海淀区北京区，中国。",
+  "predicted": "123北鸡肉的海淀区,北京区,中国。",
+  "unintelligible": false,
+  "wer": 0.11764705882352941,
+  "werNormalizedGold": "一 二 三 北京路的海淀 海淀区北京区中国",
+  "werNormalizedPredicted": "一 二 三 北京路的海淀区北京区中国",
+  "qualityScore": null,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "一 二 三 北 京 路 的 海 淀 海 淀 区 北 京 区 中 国",
+  "sigWerNormalizedPredicted": "一 二 三 北 京 路 的 海 淀 区 北 京 区 中 国",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '海' at position 9",
+      "reason": "The word '海' is part of the place name '海淀', and its deletion changes the meaning from 'Haidian' (a district in Beijing) to just 'district', which could cause confusion about the location. This is a significant error as it affects the proper noun and the meaning of the address.",
+      "score": 1
+    }
+  ]
+}

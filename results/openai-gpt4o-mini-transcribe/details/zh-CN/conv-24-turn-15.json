@@ -1,0 +1,36 @@
+{
+  "gold": "不用了，不用记录我的邮箱了，能不能不用我这个邮箱。",
+  "predicted": "不要了,不用进入我的邮箱了,能不能不用我的邮箱?",
+  "unintelligible": false,
+  "wer": 0.22727272727272727,
+  "werNormalizedGold": "不用了 不用记录我的邮箱了 能不能不用我这个邮箱",
+  "werNormalizedPredicted": "不要了 不用进入我的邮箱了 能不能不用我的邮箱",
+  "qualityScore": null,
+  "significantWer": 0.045454545454545456,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "不 用 了 不 用 记 录 我 的 邮 箱 了 能 不 能 不 用 我 这 个 邮 箱",
+  "sigWerNormalizedPredicted": "不 要 了 不 用 进 入 我 的 邮 箱 了 能 不 能 不 用 我 的 邮 箱",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '用' to '要' at position 1",
+      "reason": "Changing '不用了' (no need) to '不要了' (don't want) slightly alters the nuance but the overall intent of declining remains similar.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '记' to '进' at position 5",
+      "reason": "Changing '记录' (record) to '进入' (enter) significantly changes the meaning of the sentence, as it shifts from not needing to record the email to not needing to enter the email.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '这' to '的' at position 18",
+      "reason": "Replacing '我这个邮箱' (this email of mine) with '我的邮箱' (my email) is a minor difference in specificity, but the meaning is essentially the same.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '个' at position 19",
+      "reason": "Omitting '个' in '我这个邮箱' (this email of mine) to '我的邮箱' (my email) is a minor grammatical difference and does not affect the overall meaning.",
+      "score": 2
+    }
+  ]
+}

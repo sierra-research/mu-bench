@@ -1,0 +1,26 @@
+{
+  "gold": "想提高我的信用卡额度。",
+  "predicted": "向其告我的信用卡恶读。",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "想 提高 我 的 信用卡 额度",
+  "werNormalizedPredicted": "向 其 告 我 的 信用卡 恶 读",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "向 其 告 我 的 信 用 卡 恶 读",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '想' to '向' at position 0",
+      "reason": "'想' means 'want to' or 'wish to', while '向' means 'towards' or 'to'. This changes the intent of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '恶' at position 8",
+      "reason": "'额' means 'limit' (as in credit limit), while '恶' means 'evil' or 'bad'. This substitution makes the sentence nonsensical and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

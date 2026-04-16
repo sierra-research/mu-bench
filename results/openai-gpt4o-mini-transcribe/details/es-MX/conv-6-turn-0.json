@@ -6,21 +6,21 @@
   "werNormalizedGold": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
   "werNormalizedPredicted": "necesito recordar por que no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
   "qualityScore": null,
-  "significantWer": 0.11764705882352941,
-  "majorErrorsCount": 2,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
   "sigWerNormalizedPredicted": "necesito recordar por que no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
   "sigWerErrors": [
     {
       "error": "Substitution: 'averiguar' to 'recordar' at position 1",
-      "reason": "'Averiguar' (to find out) and 'recordar' (to remember) are different actions; this changes the intent of the request significantly.",
+      "reason": "'Averiguar' (to find out) and 'recordar' (to remember) are different actions; this changes the intent of the request and alters the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'pudo' to 'puedo' at position 15",
-      "reason": "'Pudo' (could have happened) vs 'puedo' (I can); this changes the meaning of the question about what happened to a statement about ability, which alters the meaning.",
-      "score": 1
+      "reason": "'Pudo' (could, past tense) vs. 'puedo' (can, present tense) changes the timeframe but does not significantly alter the overall meaning in this context.",
+      "score": 2
     }
   ]
 }

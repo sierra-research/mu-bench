@@ -6,21 +6,21 @@
   "werNormalizedGold": "si deja encuentro algo para anotarlo",
   "werNormalizedPredicted": "si deja encuentro donde anotarlo",
   "qualityScore": null,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 2,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "si deja encuentro algo para anotarlo",
   "sigWerNormalizedPredicted": "si deja encuentro donde anotarlo",
   "sigWerErrors": [
     {
       "error": "Substitution: 'algo' to 'donde' at position 3",
-      "reason": "'algo' (something) and 'donde' (where) are different concepts; this changes the meaning of the sentence from finding something to write on to finding where to write, which alters the intent.",
-      "score": 1
+      "reason": "'algo' (something) and 'donde' (where) are different words, but in this context, both refer to the place or thing to write on. The overall meaning of the sentence is preserved, though the nuance changes slightly.",
+      "score": 2
     },
     {
       "error": "Deletion: 'para' at position 4",
-      "reason": "Omitting 'para' (for) further changes the structure and meaning of the sentence, reinforcing the shift in intent caused by the previous substitution.",
-      "score": 1
+      "reason": "Omitting 'para' (for) does not significantly change the meaning of the sentence in this context; the intent remains clear.",
+      "score": 2
     }
   ]
 }

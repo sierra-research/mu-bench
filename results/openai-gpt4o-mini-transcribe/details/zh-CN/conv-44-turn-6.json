@@ -1,0 +1,21 @@
+{
+  "gold": "你可以再说一遍我的姓名。",
+  "predicted": "你可以再说一遍我的姓名吗?",
+  "unintelligible": false,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "你 可以 再 说 一 遍 我 的 姓名",
+  "werNormalizedPredicted": "你 可以 再 说 一 遍 我 的 姓名 吗",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 可 以 再 说 一 遍 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 可 以 再 说 一 遍 我 的 姓 名 吗",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '吗' at position 11",
+      "reason": "'吗' is a question particle in Chinese that turns the sentence into a yes/no question. Adding it changes the sentence from a statement ('Please repeat my name') to a question ('Can you repeat my name?'), but the overall intent is still about repeating the name. This is a minor change in meaning, not a significant derailment.",
+      "score": 2
+    }
+  ]
+}

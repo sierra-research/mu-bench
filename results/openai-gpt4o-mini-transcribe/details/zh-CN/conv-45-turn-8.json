@@ -1,0 +1,26 @@
+{
+  "gold": "听到了吗？",
+  "predicted": "听懂了。",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "听 到 了 吗",
+  "werNormalizedPredicted": "听 懂 了",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 了 吗",
+  "sigWerNormalizedPredicted": "听 懂 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '到' to '懂' at position 1",
+      "reason": "'听到' means 'heard', while '听懂' means 'understood'. This changes the meaning of the sentence significantly, as hearing and understanding are different actions.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吗' at position 3",
+      "reason": "'吗' is a question particle in Chinese, indicating that the sentence is a question. Its omission changes the sentence from a question to a statement, which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

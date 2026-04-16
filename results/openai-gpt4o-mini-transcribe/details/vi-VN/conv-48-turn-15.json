@@ -6,21 +6,21 @@
   "werNormalizedGold": "đợi tôi một xíu để tôi kiểm tra",
   "werNormalizedPredicted": "det er tomasjere",
   "qualityScore": null,
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "đợi tôi một xíu để tôi kiểm tra",
   "sigWerNormalizedPredicted": "det er tomasjere",
   "sigWerErrors": [
     {
       "error": "Substitution: 'đợi' to 'det' at position 0",
-      "reason": "The actual transcription is in a completely different language (Norwegian) than the expected (Vietnamese), making the content unrelated and the meaning completely lost.",
+      "reason": "The actual transcription is in a completely different language (Norwegian) than the expected (Vietnamese), making the meaning incoherent and unrelated.",
       "score": 1
     },
     {
       "error": "Deletion: 'xíu' at position 3",
-      "reason": "infra_error",
-      "score": 2
+      "reason": "The word 'xíu' is missing entirely, and the actual transcription is in a different language, so the meaning is lost.",
+      "score": 1
     }
   ]
 }

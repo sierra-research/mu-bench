@@ -6,21 +6,21 @@
   "werNormalizedGold": "iyi calismalar diliyorum kolay gelsin",
   "werNormalizedPredicted": "iyi calisma gecesi",
   "qualityScore": null,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "iyi calismalar diliyorum kolay gelsin",
   "sigWerNormalizedPredicted": "iyi calisma gecesi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'calismalar' to 'calisma' at position 1",
-      "reason": "'calismalar' means 'works' (plural) or 'studies', while 'calisma' is singular 'work' or 'study'. The meaning is slightly changed but the intent is similar, so this is a minor error.",
+      "reason": "'calismalar' means 'studies' (plural), while 'calisma' means 'study' (singular); this changes the nuance but not the overall meaning of wishing well for work/studies.",
       "score": 2
     },
     {
       "error": "Deletion: 'kolay' at position 3",
-      "reason": "'kolay' means 'easy', and its omission removes a wish for ease, which is a significant part of the original message. This changes the intent of the sentence.",
-      "score": 2
+      "reason": "'kolay gelsin' is a common Turkish phrase meaning 'may it be easy for you'; omitting 'kolay' removes this phrase, which is significant in the context of well-wishing.",
+      "score": 1
     }
   ]
 }

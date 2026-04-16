@@ -1,0 +1,26 @@
+{
+  "gold": "你好。",
+  "predicted": "Ja.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "ja",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "ja",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'ja' at position 0",
+      "reason": "The expected word is in Chinese ('你'), but the actual transcription is in a different language ('ja'), which is a significant error as it completely changes the meaning and language of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "The word '好' is missing from the actual transcription, which omits half of the greeting and makes the transcription incomplete and incoherent.",
+      "score": 1
+    }
+  ]
+}

@@ -126,7 +126,7 @@ To address this, we introduce Utterance Error Rate, which isolates meaning-chang
 
 After word alignment, each error (substitution, deletion, insertion) is scored by an LLM into one of three categories:
 
-- **Significant**: a change in meaning, such as the name "Mason" transcribed as "Jason," a wrong digit in a phone number, or a negation flipped.
+- **Significant**: a change in meaning, such as "C N 8 7 2" transcribed as "D N 8 7 2" in an account code, a wrong digit in a phone number, or a negation flipped.
 - **Minor**: a real transcription difference, but meaning is preserved, such as "got" instead of "get."
 - **No error**: the words differ on the surface but are semantically identical, such as "um" versus "umm," or "Dr." versus "doctor."
 
@@ -160,15 +160,15 @@ Results are drawn from the current leaderboard as of April 2026, and the key fin
 
 <!-- widget:radar -->
 
-**WER alone is misleading.** Deepgram Nova-3 has 4.8% WER on en-US with 6.0% UER — nearly all its errors change meaning. Microsoft Azure has 3.7% WER but only 3.5% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
+**WER alone is misleading.** Deepgram Nova-3 has 4.1% WER on en-US with 5.2% UER — nearly all its errors change meaning. Microsoft Azure has 3.7% WER but only 3.3% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
 
-**English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–8% on en-US. The gap narrows dramatically for structured inputs like names and tracking codes.
+**English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–7% on en-US. The gap narrows dramatically for structured inputs like names and tracking codes.
 
-**Chinese remains the most challenging locale.** Mandarin sees UER between 17–29%, meaning a substantial fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 7.3% WER while Deepgram Nova-3 reaches 39.4%.
+**Chinese remains the most challenging locale.** Mandarin sees UER between 16–29%, meaning a substantial fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 7.3% WER while Deepgram Nova-3 reaches 39.3%.
 
-**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (6.9%) and UER (10.5%). ElevenLabs Scribe v2 is second-best on UER (16.3%), while Azure achieves the lowest UER on en-US (3.5%) but struggles on tr-TR and vi-VN. OpenAI GPT-4o Mini Transcribe comes in close to Azure overall (UER 18.9%) and ties Chirp-3 for the best en-US UER (5.1%).
+**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (6.9%) and UER (10.5%). ElevenLabs Scribe v2 is second-best on UER (16.3%), while Azure achieves the lowest UER on en-US (3.3%) but struggles on tr-TR and vi-VN. OpenAI GPT-4o Mini Transcribe comes in close to Azure overall (UER 18.9%) and ties Chirp-3 for the best en-US UER (4.8%).
 
-**Accuracy and speed do not correlate.** Deepgram Nova-3 has the best p50 latency (244ms) and p95 (690ms), while Google Chirp-3, the accuracy leader, has the highest p50 (1213ms) and p95 (2041ms). ElevenLabs Scribe v2 offers a good balance with strong accuracy (UER 16.3%) and moderate latency (p50 420ms, p95 832ms). The right choice depends on whether the deployment prioritizes accuracy or throughput.
+**Accuracy and speed do not correlate.** Deepgram Nova-3 has the best p50 latency (239ms) and p95 (761ms), while Google Chirp-3, the accuracy leader, has the highest p50 (1,212ms) and p95 (2,006ms). ElevenLabs Scribe v2 offers a good balance with strong accuracy (UER 16.3%) and moderate latency (p50 425ms, p95 800ms). The right choice depends on whether the deployment prioritizes accuracy or throughput.
 
 ## Statistical validity
 
@@ -176,7 +176,7 @@ Are these ranking differences real, or could they be artifacts of which conversa
 
 <!-- widget:significance -->
 
-Every pairwise ranking difference on UER is statistically significant (p < 0.05), including Azure vs. OpenAI (p = 0.04). On WER, most differences are significant — ElevenLabs vs. Azure is the one borderline pair (p = 0.06). Google's lead and Deepgram's position are robust across both metrics.
+On UER, most pairwise differences are statistically significant (p < 0.05) — the exception is Azure vs. OpenAI (p = 0.89), which are not distinguishable. On WER, the middle cluster (ElevenLabs, Azure, OpenAI) is tight — none of the three are significantly different from each other. Google's lead and Deepgram's position are robust across both metrics.
 
 To verify that the LLM-based scoring pipeline itself is stable, we re-ran the full normalization and scoring pipeline 4 times independently. Standard deviations across runs are 0.1–0.5 percentage points; rankings never changed between runs.
 
@@ -184,7 +184,7 @@ To verify that the LLM-based scoring pipeline itself is stable, we re-ran the fu
 
 MU-Bench measures transcription accuracy in isolation, but accuracy alone doesn't determine which provider is the best fit for production voice agents. In our deployments, several other factors shape the choice:
 
-**Latency matters as much as accuracy.** A voice agent needs transcripts fast enough to respond naturally. Deepgram Nova-3's p50 of 244ms gives it a 5x edge over Google Chirp-3's 1,213ms — a difference that directly affects conversation flow, even though Google leads on accuracy.
+**Latency matters as much as accuracy.** A voice agent needs transcripts fast enough to respond naturally. Deepgram Nova-3's p50 of 239ms gives it a 5x edge over Google Chirp-3's 1,212ms — a difference that directly affects conversation flow, even though Google leads on accuracy.
 
 **Features like keyword boosting and noise cancellation shift rankings.** Deepgram excels at keyword boosting for domain-specific terms (product names, account codes, proper nouns), while Azure and Google struggle. Noise cancellation (e.g., Krisp) and sample rate both shift results — helping some providers while degrading others.
 
@@ -200,7 +200,7 @@ We're expanding MU-Bench to more locales -- we benchmark 42 languages internally
 
 - **Dataset**: [`sierra-research/mu-bench`](https://huggingface.co/datasets/sierra-research/mu-bench) on HuggingFace
 - **Code & submissions**: [github.com/sierra-research/mu-bench](https://github.com/sierra-research/mu-bench)
-- **Leaderboard**: [research.sierra.ai/mubench](https://research.sierra.ai/mubench)
+- **Leaderboard**: [research.sierra.ai](https://research.sierra.ai)
 
 ---
 

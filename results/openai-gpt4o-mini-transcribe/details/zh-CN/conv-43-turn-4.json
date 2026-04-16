@@ -1,0 +1,26 @@
+{
+  "gold": "你再等一下，我的意思是，我现在等待新卡，并想知道它的状态。",
+  "predicted": "你再等一下,我的意思是,我现在正在检查,想知道它的状态。",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "你 再 等 一 下 我 的 意思 是 我 现在 等 待 新 卡 并 想 知道 它 的 状 态",
+  "werNormalizedPredicted": "你 再 等 一 下 我 的 意思 是 我 现在 正 在 检 查 想 知道 它 的 状 态",
+  "qualityScore": null,
+  "significantWer": 0.08,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "你 再 等 一 下 我 的 意 思 是 我 现 在 等 待 新 卡 并 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "你 再 等 一 下 我 的 意 思 是 我 现 在 正 在 检 查 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '等' to '正' at position 13",
+      "reason": "'等' (wait) and '正' (currently) have different meanings; the substitution changes the action from waiting to being in the process of something, which alters the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '并' at position 17",
+      "reason": "'在' (in/at) is inserted, forming '正在' (currently), which further changes the meaning from 'waiting' to 'currently doing', reinforcing the change in action and intent.",
+      "score": 1
+    }
+  ]
+}
