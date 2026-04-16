@@ -1,21 +1,26 @@
 {
   "gold": "Địa chỉ email là minh chấn trần a còng email chấm com.",
-  "predicted": "Ở địa chỉ email là minh. Trần@ y mail.com.",
+  "predicted": "Ở địa chỉ email là minh. Trần a. Còngemail.com.",
   "unintelligible": false,
   "wer": 0.16666666666666666,
-  "werNormalizedGold": "Địa chỉ email là minh chấn trần a còng email chấm com.",
-  "werNormalizedPredicted": "Ở địa chỉ email là minh chấn trần a còng email chấm com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "địa chỉ email là minh chấn trần a còng email chấm com",
+  "werNormalizedPredicted": "ở địa chỉ email là minh trần a còng email chấm com",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Địa chỉ email là minh chấn trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Ở địa chỉ email là minh chấn trần a còng email chấm com.",
+  "sigWerNormalizedGold": "địa chỉ email là minh chấn trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "ở địa chỉ email là minh trần a còng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Địa' to 'địa' at position 0",
-      "reason": "The word 'Ở' (meaning 'at' or 'in') is added at the beginning, but it does not change the meaning of the sentence, which is to provide an email address. The overall intent remains clear.",
+      "error": "Insertion: 'ở' at position 0",
+      "reason": "The insertion of 'ở' (meaning 'at') at the beginning does not change the overall meaning of the sentence, as it just adds a preposition and the main information remains clear.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'chấn' at position 5",
+      "reason": "Omitting 'chấn' from the name changes the person's full name, which is important information in an email address. This is a significant error as it could result in an incorrect or undeliverable email address.",
+      "score": 1
     }
   ]
 }

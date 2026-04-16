@@ -71,6 +71,42 @@ def load_transcript_pairs(
     return rows
 
 
+def load_normalized_pairs_with_gold(
+    normalized_dir: Path,
+) -> list[tuple[str, str, TranscriptRow]]:
+    """Load transcript pairs where both gold and predicted come from symmetric normalization.
+
+    Reads normalized predicted from <utterance_id>.txt and normalized gold from
+    <utterance_id>.gold.txt. Both sides have been symmetrically normalized.
+    """
+    rows = []
+    for locale in TARGET_LOCALES:
+        locale_dir = normalized_dir / locale
+        if not locale_dir.exists():
+            continue
+
+        for txt_file in sorted(locale_dir.glob("*.txt")):
+            if txt_file.name.endswith(".gold.txt"):
+                continue
+            utterance_id = txt_file.stem
+            gold_file = locale_dir / f"{utterance_id}.gold.txt"
+            if not gold_file.exists():
+                continue
+
+            predicted = txt_file.read_text(encoding="utf-8").strip()
+            gold = gold_file.read_text(encoding="utf-8").strip()
+
+            row = TranscriptRow(
+                locale=locale,
+                utterance_id=utterance_id,
+                gold=gold,
+                predicted=predicted,
+            )
+            rows.append((locale, utterance_id, row))
+
+    return rows
+
+
 def load_existing_detail(detail_path: Path) -> dict | None:
     """Load an existing detail JSON file if it exists."""
     if detail_path.exists():
@@ -114,7 +150,12 @@ def main():
         action="store_true",
         help="Use simple normalization for WER instead of LLM-based (no OpenAI needed)",
     )
+    parser.add_argument("--locales", nargs="+", default=None, help="Limit to specific locales (e.g. en-US zh-CN)")
     args = parser.parse_args()
+
+    if args.locales:
+        global TARGET_LOCALES
+        TARGET_LOCALES = [loc for loc in TARGET_LOCALES if loc in args.locales]
 
     submission_dir = args.submission_dir.resolve()
     manifest_path = args.manifest.resolve()
@@ -162,8 +203,13 @@ def main():
     has_normalized = normalized_dir.exists()
     if has_normalized and not args.simple_wer:
         print(f"Loading normalized transcripts from {normalized_dir}...")
-        normalized_pairs = load_transcript_pairs(normalized_dir, ground_truth)
-        print(f"Loaded {len(normalized_pairs)} normalized utterance pairs")
+        # Try loading with .gold.txt files first (symmetric normalization)
+        normalized_pairs = load_normalized_pairs_with_gold(normalized_dir)
+        if normalized_pairs:
+            print(f"Loaded {len(normalized_pairs)} normalized utterance pairs (both sides normalized)")
+        else:
+            normalized_pairs = load_transcript_pairs(normalized_dir, ground_truth)
+            print(f"Loaded {len(normalized_pairs)} normalized utterance pairs")
     else:
         if not args.simple_wer and ("wer" in args.metrics or "significantWer" in args.metrics):
             print(f"WARNING: Normalized directory not found at {normalized_dir}")
@@ -182,7 +228,13 @@ def main():
         return
 
     all_raw_rows = [row for _, _, row in pairs]
-    all_normalized_rows = [row for _, _, row in normalized_pairs]
+
+    # Build normalized rows aligned to raw pairs by utterance_id
+    normalized_by_key = {(loc, uid): row for loc, uid, row in normalized_pairs}
+    all_normalized_rows = []
+    for locale, utterance_id, raw_row in pairs:
+        norm_row = normalized_by_key.get((locale, utterance_id), raw_row)
+        all_normalized_rows.append(norm_row)
     metrics_to_run = set(args.metrics)
     print(f"Metrics to compute: {metrics_to_run}")
 

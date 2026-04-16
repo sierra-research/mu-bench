@@ -1,15 +1,26 @@
 {
   "gold": "Juan punto López arroba email punto com.",
-  "predicted": "juan.lopez@email.com",
+  "predicted": "john.lopez@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Juan punto López arroba email punto com.",
-  "werNormalizedPredicted": "Juan punto López arroba email punto com.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "juan punto lopez arroba email punto com",
+  "werNormalizedPredicted": "john lopez arroba email punto com",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Juan punto López arroba email punto com.",
-  "sigWerNormalizedPredicted": "Juan punto López arroba email punto com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "juan punto lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "john lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'juan' to 'john' at position 0",
+      "reason": "'Juan' and 'John' are different names; substituting one for the other changes the identity of the person, which is significant in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'punto' at position 1",
+      "reason": "Omitting 'punto' (dot) in an email address changes the structure and could make the email invalid or refer to a different address.",
+      "score": 1
+    }
+  ]
 }

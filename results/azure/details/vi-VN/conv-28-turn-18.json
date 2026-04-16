@@ -2,14 +2,30 @@
   "gold": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
   "predicted": "Mình muốn đến xin ngân hàng xuất nại hóa đơn bổ sung hoặc là chi tiết giao dịch, thế thì mình có cần báo cáo tài chính hoặc là quyết toàn công tác không nhở?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
-  "werNormalizedPredicted": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.08571428571428572,
+  "werNormalizedGold": "mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ",
+  "werNormalizedPredicted": "mình muốn đến xin ngân hàng xuất nại hóa đơn bổ sung hoặc là chi tiết giao dịch thế thì mình có cần báo cáo tài chính hoặc là quyết toàn công tác không nhở",
+  "qualityScore": null,
+  "significantWer": 0.05714285714285714,
+  "majorErrorsCount": 2,
   "totalWordsCount": 35,
-  "sigWerNormalizedGold": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
-  "sigWerNormalizedPredicted": "Mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch. Thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "mình muốn đến xin ngân hàng xuất lại hóa đơn bổ sung hoặc là chi tiết giao dịch thế thì mình có cần báo cáo tài chính hoặc là quyết toán công tác không nhỉ",
+  "sigWerNormalizedPredicted": "mình muốn đến xin ngân hàng xuất nại hóa đơn bổ sung hoặc là chi tiết giao dịch thế thì mình có cần báo cáo tài chính hoặc là quyết toàn công tác không nhở",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lại' to 'nại' at position 7",
+      "reason": "'nại' is not a valid word in this context and changes the meaning of the action (from 'again' to a meaningless word), making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'toán' to 'toàn' at position 30",
+      "reason": "'toán' (settlement) and 'toàn' (whole/entire) are different words; the substitution changes the meaning of the phrase 'quyết toán công tác' (work settlement) to a nonsensical phrase.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhỉ' to 'nhở' at position 34",
+      "reason": "'nhỉ' and 'nhở' are regional variants or informal forms with similar meaning; the overall meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

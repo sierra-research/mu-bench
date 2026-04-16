@@ -9,6 +9,7 @@ import PaperHeatmap from "./PaperHeatmap.jsx";
 import PaperRadar from "./PaperRadar.jsx";
 import PaperGlobe from "./PaperGlobe.jsx";
 import PaperCoverageMatrix from "./PaperCoverageMatrix.jsx";
+import PaperSignificance from "./PaperSignificance.jsx";
 import "./Paper.css";
 
 const WIDGETS = {
@@ -19,6 +20,7 @@ const WIDGETS = {
     radar: PaperRadar,
     globe: PaperGlobe,
     "coverage-matrix": PaperCoverageMatrix,
+    significance: PaperSignificance,
 };
 
 const WIDGET_RE = /<!-- widget:(\S+) -->/;

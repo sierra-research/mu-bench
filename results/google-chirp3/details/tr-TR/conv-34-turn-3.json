@@ -2,20 +2,20 @@
   "gold": "Lütfen kodlayarak söyler misiniz? Ben kaçırdım da.",
   "predicted": "Lütfen kodlayarak yazar mısın? Söyler misiniz? Ben kaçırdım da.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "Lütfen kodlayarak söyler misiniz? Ben kaçırdım da.",
-  "werNormalizedPredicted": "Lütfen kodlayarak yazar mısın? Söyler misiniz? Ben kaçırdım da.",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "lütfen kodlayarak söyler misiniz ben kaçırdım da",
+  "werNormalizedPredicted": "lütfen kodlayarak yazar mısın söyler misiniz ben kaçırdım da",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Lütfen kodlayarak söyler misiniz? Ben kaçırdım da.",
-  "sigWerNormalizedPredicted": "Lütfen kodlayarak yazar mısın? Söyler misiniz? Ben kaçırdım da.",
+  "sigWerNormalizedGold": "lütfen kodlayarak söyler misiniz ben kaçırdım da",
+  "sigWerNormalizedPredicted": "lütfen kodlayarak yazar mısın söyler misiniz ben kaçırdım da",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'söyler' to 'Söyler' at position 2",
-      "reason": "'yazar mısın' (will you write) is a different action than 'söyler misiniz' (will you say), which changes the meaning of the request significantly.",
-      "score": 1
+      "error": "Insertion: 'yazar' at position 2",
+      "reason": "The insertion of 'yazar mısın' (will you write) adds an extra request that is not present in the original sentence, but the main request ('söyler misiniz' - will you say) is still present and the overall meaning is not derailed. The sentence still makes sense and the intent is clear, though there is an additional, slightly different request.",
+      "score": 2
     }
   ]
 }

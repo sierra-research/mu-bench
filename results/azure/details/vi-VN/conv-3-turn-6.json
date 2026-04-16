@@ -1,25 +1,30 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com.",
-  "predicted": "Email là mình không cần hệ thống email.",
+  "predicted": "Email là minh vũ trần hệ thống email.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "Email là minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Email là mình không cần hệ thống email.",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 2,
+  "wer": 0.5,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là minh vũ trần hệ thống email",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Email là minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Email là mình không cần hệ thống email.",
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là minh vũ trần hệ thống email",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'minh' to 'mình' at position 2",
-      "reason": "'minh' and 'mình' are different words in Vietnamese; 'minh' is a name, while 'mình' means 'myself' or 'I', changing the meaning of the sentence.",
+      "error": "Substitution: 'chấm' to 'vũ' at position 3",
+      "reason": "'chấm' is part of the email address format (dot), while 'vũ' is a completely different word (a name), which changes the structure and meaning of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'a' to 'hệ' at position 5",
+      "reason": "'a' is part of 'a còng' (the Vietnamese way to say '@'), while 'hệ' is unrelated and changes the meaning, making the email address incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'chấm' at position 8",
-      "reason": "The expected phrase is an email address spelled out, while the actual phrase says 'don't need the email system', which is a completely different meaning.",
+      "reason": "'chấm' (dot) is necessary for the correct email format; omitting it makes the email address incomplete or incorrect.",
       "score": 1
     }
   ]

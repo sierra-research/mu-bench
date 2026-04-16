@@ -1,26 +1,26 @@
 {
   "gold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
-  "predicted": "Giờ cái này lần đầu không biết hướng dẫn giúp.",
+  "predicted": "Giờ cái này lần đầu không biết hướng dẫn gì.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
-  "werNormalizedPredicted": "Giờ, cái này lần đầu, không biết. Hướng dẫn giúp.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "werNormalizedPredicted": "giờ cái này lần đầu không biết hướng dẫn gì",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
-  "sigWerNormalizedPredicted": "Giờ, cái này lần đầu, không biết. Hướng dẫn giúp.",
+  "sigWerNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "sigWerNormalizedPredicted": "giờ cái này lần đầu không biết hướng dẫn gì",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Cái' to 'cái' at position 0",
-      "reason": "'Giờ' (meaning 'now') is added at the beginning, but it does not change the overall meaning of the sentence. The main request and context remain the same.",
+      "error": "Insertion: 'giờ' at position 0",
+      "reason": "'giờ' (now) adds a time context but does not change the main meaning of the sentence, which is about not knowing how to guide/help for the first time.",
       "score": 2
     },
     {
-      "error": "Substitution: 'giùm.' to 'giúp.' at position 8",
-      "reason": "'Giùm' and 'giúp' are synonyms in Vietnamese, both meaning 'help' or 'assist'. The substitution does not change the meaning.",
-      "score": 3
+      "error": "Substitution: 'giùm' to 'gì' at position 8",
+      "reason": "'giùm' (help/do for me) is replaced by 'gì' (what), which changes the intent from asking for help to asking 'what', altering the meaning of the request significantly.",
+      "score": 1
     }
   ]
 }

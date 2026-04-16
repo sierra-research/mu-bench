@@ -1,21 +1,26 @@
 {
   "gold": "Tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê.",
-  "predicted": "Tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kê",
+  "predicted": "Tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kề",
   "unintelligible": false,
-  "wer": 0.07142857142857142,
-  "werNormalizedGold": "Tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê.",
-  "werNormalizedPredicted": "Tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kê.",
-  "qualityScore": 3,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê",
+  "werNormalizedPredicted": "tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kề",
+  "qualityScore": null,
   "significantWer": 0.07142857142857142,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê.",
-  "sigWerNormalizedPredicted": "Tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kê.",
+  "sigWerNormalizedGold": "tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê",
+  "sigWerNormalizedPredicted": "tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kề",
   "sigWerErrors": [
     {
       "error": "Substitution: 'xin' to 'sinh' at position 10",
-      "reason": "'Xin' means 'to request' or 'to ask for', while 'sinh' means 'to give birth' or 'to generate'. This substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "'xin' means 'to request' while 'sinh' means 'to give birth' in Vietnamese; this changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'kê' to 'kề' at position 13",
+      "reason": "'kê' (as in 'sao kê', meaning 'statement' or 'account statement') is a specific banking term, while 'kề' is a different word with a different meaning; this substitution makes the phrase incorrect but the intent is still somewhat understandable in context.",
+      "score": 2
     }
   ]
 }

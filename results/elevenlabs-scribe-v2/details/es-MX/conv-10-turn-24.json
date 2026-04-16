@@ -1,26 +1,31 @@
 {
   "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "predicted": "No estoy está mal. El correo está mal. Es María punto López arroba e- Por favor",
+  "predicted": "No está mal. El correo está mal. Es María punto López arroba e- Por favor",
   "unintelligible": false,
   "wer": 0.42105263157894735,
-  "werNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "werNormalizedPredicted": "No, está mal. El correo está mal. Es María punto López arroba E. Por favor",
-  "qualityScore": 2,
+  "werNormalizedGold": "no esta mal el correo de vuelta esta mal el correo esta mal es maria punto lopez arroba e",
+  "werNormalizedPredicted": "no esta mal el correo esta mal es maria punto lopez arroba e por favor",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "sigWerNormalizedPredicted": "No, está mal. El correo está mal. Es María punto López arroba E. Por favor",
+  "sigWerNormalizedGold": "no esta mal el correo de vuelta esta mal el correo esta mal es maria punto lopez arroba e",
+  "sigWerNormalizedPredicted": "no esta mal el correo esta mal es maria punto lopez arroba e por favor",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'mal' at position 2",
-      "reason": "The phrase 'el correo de vuelta. Está mal.' is omitted in the actual transcription. This removes the clarification that the return email is wrong, but the rest of the sentence still conveys that the email is wrong. The overall meaning is mostly preserved, but some detail is lost.",
+      "error": "Deletion: 'de' at position 5",
+      "reason": "Omitting 'de' in 'el correo de vuelta' slightly changes the phrase, but the overall meaning about the email being wrong is still clear.",
       "score": 2
     },
     {
-      "error": "Insertion: 'Por' at position 19",
-      "reason": "The phrase 'Por favor' is added at the end. This is a polite addition and does not change the meaning of the sentence.",
+      "error": "Deletion: 'el' at position 9",
+      "reason": "Omitting the second 'el' in 'el correo esta mal' is a minor grammatical error, but the meaning remains clear.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'por' at position 19",
+      "reason": "Adding 'por favor' at the end is a polite addition and does not change the meaning of the sentence.",
+      "score": 3
     }
   ]
 }

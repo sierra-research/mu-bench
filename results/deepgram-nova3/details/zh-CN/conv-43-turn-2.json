@@ -1,15 +1,15 @@
 {
   "gold": "你可以说是的，是，是这样。",
-  "predicted": "是日用的",
+  "predicted": "是日用的。",
   "unintelligible": false,
-  "wer": 0.9230769230769231,
-  "werNormalizedGold": "你可以说是的，是，是这样。",
-  "werNormalizedPredicted": "是日用的",
-  "qualityScore": 1,
-  "significantWer": 0.15384615384615385,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "你 可 以 说 是 的 ， 是 ， 是 这 样 。",
+  "wer": 0.9,
+  "werNormalizedGold": "你 可以 说 是 的 是 是 这样",
+  "werNormalizedPredicted": "是 日 用 的",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 可 以 说 是 的 是 是 这 样",
   "sigWerNormalizedPredicted": "是 日 用 的",
   "sigWerErrors": [
     {
@@ -19,13 +19,13 @@
     },
     {
       "error": "Deletion: '说' at position 3",
-      "reason": "The verb '说' (say) is missing, which is essential to the meaning of the sentence.",
+      "reason": "The verb '说' (say) is missing, which is essential for the sentence's meaning and makes the sentence incomplete.",
       "score": 1
     },
     {
-      "error": "Deletion: '，' at position 6",
-      "reason": "Punctuation differences are ignored as per guidance.",
-      "score": 3
+      "error": "Deletion: '是' at position 6",
+      "reason": "Omitting this '是' (is) further disrupts the sentence structure and meaning, leading to incoherence.",
+      "score": 1
     }
   ]
 }

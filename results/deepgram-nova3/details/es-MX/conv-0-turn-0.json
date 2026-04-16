@@ -1,15 +1,21 @@
 {
   "gold": "Hola, sí.",
-  "predicted": "Hola,",
+  "predicted": "Hola.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Hola, sí.",
-  "werNormalizedPredicted": "Hola, sí.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "hola si",
+  "werNormalizedPredicted": "hola",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Hola, sí.",
-  "sigWerNormalizedPredicted": "Hola, sí.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "hola si",
+  "sigWerNormalizedPredicted": "hola",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'si' at position 1",
+      "reason": "The word 'si' (yes) is omitted, which removes an affirmative response and changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

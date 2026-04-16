@@ -1,0 +1,26 @@
+{
+  "gold": "Tabii. Artı 90 123 0 90 45 67.",
+  "predicted": "Artı doksan, artı doksan, yüz yirmi üç, sıfır doksan, kırk beş, altmış yedi.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "tabii artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "artı doksan artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tabii artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "artı doksan artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'doksan' at position 0",
+      "reason": "An extra 'artı' is inserted at the beginning, which could confuse the meaning, especially in a sequence like a phone number or code.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 3",
+      "reason": "'tabii' (meaning 'of course' in Turkish) is replaced with 'doksan' ('ninety'), which changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
+}

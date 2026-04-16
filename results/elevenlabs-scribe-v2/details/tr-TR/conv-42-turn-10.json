@@ -1,15 +1,26 @@
 {
   "gold": "Yazıyor musun Anna?",
-  "predicted": "Yazıyor musun Anna?",
+  "predicted": "Yazıyorum sana",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yazıyor musun Anna?",
-  "werNormalizedPredicted": "Yazıyor musun Anna?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "yaziyor musun anna",
+  "werNormalizedPredicted": "yaziyorum sana",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Yazıyor musun Anna?",
-  "sigWerNormalizedPredicted": "Yazıyor musun Anna?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yaziyor musun anna",
+  "sigWerNormalizedPredicted": "yaziyorum sana",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yaziyor' to 'yaziyorum' at position 0",
+      "reason": "'yaziyor' means 'is (he/she) writing', while 'yaziyorum' means 'I am writing'; this changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'anna' at position 2",
+      "reason": "The name 'anna' is omitted, which removes the addressee and changes the context of the sentence.",
+      "score": 1
+    }
+  ]
 }

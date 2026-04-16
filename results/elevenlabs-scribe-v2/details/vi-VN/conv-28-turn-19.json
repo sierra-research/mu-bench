@@ -1,15 +1,26 @@
 {
   "gold": "Bạn hướng dẫn mình với.",
-  "predicted": "Bạn hướng dẫn mình với",
+  "predicted": "Bạn hù dấn mình rồi",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Bạn hướng dẫn mình với.",
-  "werNormalizedPredicted": "Bạn hướng dẫn mình với.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6,
+  "werNormalizedGold": "bạn hướng dẫn mình với",
+  "werNormalizedPredicted": "bạn hù dấn mình rồi",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Bạn hướng dẫn mình với.",
-  "sigWerNormalizedPredicted": "Bạn hướng dẫn mình với.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "bạn hướng dẫn mình với",
+  "sigWerNormalizedPredicted": "bạn hù dấn mình rồi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hướng' to 'hù' at position 1",
+      "reason": "'hướng dẫn' means 'guide/instruct', while 'hù' means 'to scare', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'với' to 'rồi' at position 4",
+      "reason": "'với' means 'with/please', while 'rồi' means 'already', which changes the intent and meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

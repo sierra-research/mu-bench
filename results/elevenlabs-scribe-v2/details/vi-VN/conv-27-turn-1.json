@@ -1,15 +1,21 @@
 {
   "gold": "OK bạn.",
-  "predicted": "Ok bạn",
+  "predicted": "OK bye",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "OK bạn.",
-  "werNormalizedPredicted": "OK bạn.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "okay bạn",
+  "werNormalizedPredicted": "okay bye",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "OK bạn.",
-  "sigWerNormalizedPredicted": "OK bạn.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "okay bạn",
+  "sigWerNormalizedPredicted": "okay bye",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bạn' to 'bye' at position 1",
+      "reason": "'bạn' is a Vietnamese word meaning 'friend' or 'you', while 'bye' is an English farewell. The substitution changes the language and the meaning of the sentence, making it incoherent or incorrect in context.",
+      "score": 1
+    }
+  ]
 }

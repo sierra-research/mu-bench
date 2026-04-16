@@ -2,20 +2,25 @@
   "gold": "Hayır doğru değil, Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
   "predicted": "Hayır, doğru değil. Ahmet'le Arslan arasında nokta var. Ahmet nokta Arslan",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werNormalizedGold": "Hayır doğru değil, Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "werNormalizedPredicted": "Hayır, doğru değil, Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "hayır doğru değil ahmet ve arslan arasında nokta var ahmet nokta arslan",
+  "werNormalizedPredicted": "hayır doğru değil ahmetle arslan arasında nokta var ahmet nokta arslan",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Hayır doğru değil, Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "sigWerNormalizedPredicted": "Hayır, doğru değil, Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
+  "sigWerNormalizedGold": "hayır doğru değil ahmet ve arslan arasında nokta var ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "hayır doğru değil ahmetle arslan arasında nokta var ahmet nokta arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "The only difference is the presence of a comma, which is punctuation and does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: 'ahmet' to 'ahmetle' at position 3",
+      "reason": "'ahmetle' means 'with Ahmet', while 'ahmet ve arslan' means 'Ahmet and Arslan'. This changes the relationship between the names and alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 've' at position 4",
+      "reason": "Omitting 've' ('and') removes the conjunction between 'ahmet' and 'arslan', which changes the meaning from two separate people to a single phrase, affecting the sentence's clarity.",
+      "score": 1
     }
   ]
 }

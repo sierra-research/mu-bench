@@ -1,36 +1,26 @@
 {
   "gold": "不是不是不是，是君，君。",
-  "predicted": "不是，不是，不是是drin drin 。",
+  "predicted": "***** drin, drin.",
   "unintelligible": false,
-  "wer": 0.4166666666666667,
-  "werNormalizedGold": "不是不是不是，是君，君。",
-  "werNormalizedPredicted": "不是，不是，不是，是drin drin。",
-  "qualityScore": 1,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "不 是 不 是 不 是 ， 是 君 ， 君 。",
-  "sigWerNormalizedPredicted": "不 是 ， 不 是 ， 不 是 ， 是 drin drin 。",
+  "wer": 1.0,
+  "werNormalizedGold": "不是不是不是是君君",
+  "werNormalizedPredicted": "drin drin",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "不 是 不 是 不 是 是 君 君",
+  "sigWerNormalizedPredicted": "drin drin",
   "sigWerErrors": [
     {
-      "error": "Insertion: '，' at position 2",
-      "reason": "Punctuation differences are to be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: '，' at position 4",
-      "reason": "Punctuation differences are to be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: '君' to 'drin' at position 8",
-      "reason": "'drin' is not a valid substitution for the Chinese word '君' and is a different language, which significantly changes the meaning.",
+      "error": "Substitution: '不' to 'drin' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not match the expected Chinese word, resulting in a loss of meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: '君' at position 10",
-      "reason": "Omitting the final '君' removes a repeated word, which may slightly affect the meaning but does not derail the sentence.",
-      "score": 2
+      "error": "Deletion: '不' at position 2",
+      "reason": "The expected word is missing in the actual transcription, which further derails the meaning.",
+      "score": 1
     }
   ]
 }

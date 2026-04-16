@@ -1,20 +1,25 @@
 {
   "gold": "你再说一遍我的姓名。",
-  "predicted": "你在说一遍我的姓名。",
+  "predicted": "你在说以便或者姓名？",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "你再说一遍我的姓名。",
-  "werNormalizedPredicted": "你在说一遍我的姓名。",
-  "qualityScore": 3,
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "你 再 说 一 遍 我 的 姓 名 。",
-  "sigWerNormalizedPredicted": "你 在 说 一 遍 我 的 姓 名 。",
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "你 再 说 一 遍 我 的 姓名",
+  "werNormalizedPredicted": "你 在 说 以 便 或者 姓名",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "你 再 说 一 遍 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 在 说 以 便 或 者 姓 名",
   "sigWerErrors": [
     {
       "error": "Substitution: '再' to '在' at position 1",
-      "reason": "'再' means 'again' (indicating repetition), while '在' means 'at' or 'currently'. This substitution changes the meaning of the sentence, as '再说一遍' means 'say it again', but '在说一遍' is not a standard phrase and loses the intended meaning of repetition.",
+      "reason": "'再' (again) and '在' (at/in) are different words with different meanings; this changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '一' to '以' at position 3",
+      "reason": "'一' (one) and '以' (with/by) are different words and this substitution makes the sentence less coherent, affecting the meaning.",
       "score": 1
     }
   ]

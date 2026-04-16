@@ -1,36 +1,26 @@
 {
   "gold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "predicted": "Hayır, son. Son rakam yanlış oldu. 67 değil 68 olacak sonu. 67 olacak, pardon. 68 dediniz siz. 67 ile bitecek.",
+  "predicted": "Hayır, son rakam yanlış oldu. 67 değil 68 olacak sonu. 67 olacak, pardon. 68 dediniz siz, 67 ile bitecek.",
   "unintelligible": false,
-  "wer": 0.21052631578947367,
-  "werNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "werNormalizedPredicted": "Hayır. Son rakam yanlış oldu. 67 değil, 68 olacak sonu. 67 olacak, pardon. 68 dediniz siz. 67 ile bitecek.",
-  "qualityScore": 2,
-  "significantWer": 0.10526315789473684,
+  "wer": 0.08695652173913043,
+  "werNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "werNormalizedPredicted": "hayır son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "qualityScore": null,
+  "significantWer": 0.08695652173913043,
   "majorErrorsCount": 2,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "sigWerNormalizedPredicted": "Hayır. Son rakam yanlış oldu. 67 değil, 68 olacak sonu. 67 olacak, pardon. 68 dediniz siz. 67 ile bitecek.",
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "sigWerNormalizedPredicted": "hayır son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
   "sigWerErrors": [
     {
-      "error": "Substitution: '60' to '67' at position 5",
-      "reason": "The number being referenced is different; '60' vs '67' changes the factual content of the sentence.",
+      "error": "Insertion: 'yedi' at position 6",
+      "reason": "The insertion of 'yedi' changes the meaning of the sentence, as it alters which number is being referred to as incorrect, potentially confusing the listener about which number is correct or incorrect.",
       "score": 1
     },
     {
-      "error": "Substitution: '67' to '68' at position 7",
-      "reason": "The number being referenced is different; '67' vs '68' changes the factual content of the sentence.",
+      "error": "Substitution: 'yedi' to 'sekiz' at position 8",
+      "reason": "Substituting 'yedi' (seven) with 'sekiz' (eight) changes the specific number being discussed, which is critical information in this context.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'olacak' to 'olacak,' at position 11",
-      "reason": "Difference is only punctuation (comma), which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'siz,' to 'siz.' at position 15",
-      "reason": "Difference is only punctuation (comma vs period), which does not affect meaning.",
-      "score": 3
     }
   ]
 }

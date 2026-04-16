@@ -1,15 +1,31 @@
 {
   "gold": "Bildirimi gönderirseniz eğer işleme hemen devam edebilirim.",
-  "predicted": "Bildirime gönderirseniz eğer işlemem devam edebilirim.",
+  "predicted": "Bildirime gönderirseniz eğer işlemeden devam edebilirim.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Bildirimi gönderirseniz eğer işleme hemen devam edebilirim.",
-  "werNormalizedPredicted": "Bildirimi gönderirseniz eğer işleme hemen devam edebilirim.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "bildirimi gonderirseniz eger isleme hemen devam edebilirim",
+  "werNormalizedPredicted": "bildirime gonderirseniz eger islemeden devam edebilirim",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Bildirimi gönderirseniz eğer işleme hemen devam edebilirim.",
-  "sigWerNormalizedPredicted": "Bildirimi gönderirseniz eğer işleme hemen devam edebilirim.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "bildirimi gonderirseniz eger isleme hemen devam edebilirim",
+  "sigWerNormalizedPredicted": "bildirime gonderirseniz eger islemeden devam edebilirim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bildirimi' to 'bildirime' at position 0",
+      "reason": "'bildirimi' (the notification, accusative) vs 'bildirime' (to my notification, dative) changes the grammatical case and meaning, but the overall intent is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'isleme' to 'islemeden' at position 3",
+      "reason": "'isleme' (to process) vs 'islemeden' (without processing) reverses the meaning of the action, which significantly changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hemen' at position 4",
+      "reason": "Omitting 'hemen' (immediately) removes the sense of urgency but does not derail the overall meaning.",
+      "score": 2
+    }
+  ]
 }

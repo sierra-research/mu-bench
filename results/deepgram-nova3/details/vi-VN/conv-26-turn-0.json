@@ -1,25 +1,35 @@
 {
   "gold": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng. Bạn có thể xem giúp mình cần chuẩn bị những gì không?",
-  "predicted": "Chào Anna nhé Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn thẻ tín dụng Bạn có thể xem là giúp mình cần chuẩn bị những gì",
+  "predicted": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn thẻ tiền dụng. Bạn có thể xem là giúp mình cần chuẩn bị những gì",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werNormalizedGold": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng. Bạn có thể xem giúp mình cần chuẩn bị những gì không?",
-  "werNormalizedPredicted": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn thẻ tín dụng. Bạn có thể xem là giúp mình cần chuẩn bị những gì không?",
-  "qualityScore": 2,
+  "wer": 0.125,
+  "werNormalizedGold": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem giúp mình cần chuẩn bị những gì không",
+  "werNormalizedPredicted": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn thẻ tiền dụng bạn có thể xem là giúp mình cần chuẩn bị những gì",
+  "qualityScore": null,
   "significantWer": 0.03125,
   "majorErrorsCount": 1,
   "totalWordsCount": 32,
-  "sigWerNormalizedGold": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng. Bạn có thể xem giúp mình cần chuẩn bị những gì không?",
-  "sigWerNormalizedPredicted": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn thẻ tín dụng. Bạn có thể xem là giúp mình cần chuẩn bị những gì không?",
+  "sigWerNormalizedGold": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem giúp mình cần chuẩn bị những gì không",
+  "sigWerNormalizedPredicted": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn thẻ tiền dụng bạn có thể xem là giúp mình cần chuẩn bị những gì",
   "sigWerErrors": [
     {
       "error": "Deletion: 'mức' at position 16",
-      "reason": "Omitting 'mức' from 'hạn mức thẻ tín dụng' changes the meaning, as 'hạn mức' refers to 'credit limit' while 'hạn thẻ tín dụng' is incomplete and less clear. This could cause misunderstanding about what is being increased.",
+      "reason": "'mức' (limit) is important in the phrase 'tăng hạn mức thẻ tín dụng' (increase credit card limit). Its omission makes the phrase less precise but the intent is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'tín' to 'tiền' at position 18",
+      "reason": "Substituting 'tín' (credit) with 'tiền' (money) changes 'thẻ tín dụng' (credit card) to 'thẻ tiền dụng', which is not a valid term and confuses the meaning significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'là' at position 24",
-      "reason": "Adding 'là' in 'xem là giúp mình' is a minor grammatical error in Vietnamese and does not change the overall meaning of the sentence.",
+      "reason": "The insertion of 'là' (is) does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'không' at position 31",
+      "reason": "Omitting 'không' (not) at the end removes the question particle, but the sentence is still understandable as a question in context.",
       "score": 2
     }
   ]

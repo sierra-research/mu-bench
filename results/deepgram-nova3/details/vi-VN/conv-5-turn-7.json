@@ -1,21 +1,36 @@
 {
   "gold": "Ừ. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Ờ số điện thoại là cộng tám mươi bốn, chín mươi mốt, một, hai, ba mươi bốn, năm mươi sáu, bảy tám",
+  "predicted": "Ờ, số điện thoại là cộng tám mươi bốn, chín mươi mốt, một, hai, ba mươi bốn, năm mươi sáu bảy đá.",
   "unintelligible": false,
-  "wer": 0.9411764705882353,
-  "werNormalizedGold": "Ừ. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Ừ. Số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba mươi bốn năm mươi sáu bảy tám.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Ừ. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Ừ. Số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba mươi bốn năm mươi sáu bảy tám.",
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "werNormalizedPredicted": "so dien thoai la cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay da",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedPredicted": "so dien thoai la cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay da",
   "sigWerErrors": [
     {
-      "error": "Substitution: '84' to 'mốt' at position 6",
-      "reason": "'84' and 'tám mươi bốn' are equivalent (numeric to words), so this is not an error.",
-      "score": 3
+      "error": "Insertion: 'muoi' at position 9",
+      "reason": "The insertion of 'muoi' (ten) changes the sequence of numbers in the phone number, which is critical information.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 13",
+      "reason": "The insertion of 'muoi' (ten) again alters the phone number, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 15",
+      "reason": "Another insertion of 'muoi' (ten) further distorts the phone number, which is essential information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tam' to 'da' at position 17",
+      "reason": "Substituting 'tam' (eight) with 'da' (not a number) changes the last digit of the phone number, making it incorrect.",
+      "score": 1
     }
   ]
 }

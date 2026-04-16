@@ -1,21 +1,21 @@
 {
   "gold": "Anlamadım. Tekrarlayabilir misiniz?",
-  "predicted": "Anlamadım, tekrar edelim mi?",
+  "predicted": "Anlamadım, tekrar dedi misin?",
   "unintelligible": false,
-  "wer": 1.3333333333333333,
-  "werNormalizedGold": "Anlamadım. Tekrarlayabilir misiniz?",
-  "werNormalizedPredicted": "Anlamadım, tekrar edelim mi?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "anlamadım tekrarlayabilir misiniz",
+  "werNormalizedPredicted": "anlamadım tekrar dedi misin",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Anlamadım. Tekrarlayabilir misiniz?",
-  "sigWerNormalizedPredicted": "Anlamadım, tekrar edelim mi?",
+  "sigWerNormalizedGold": "anlamadım tekrarlayabilir misiniz",
+  "sigWerNormalizedPredicted": "anlamadım tekrar dedi misin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anlamadım.' to 'tekrar' at position 0",
-      "reason": "The actual phrase 'tekrar edelim mi?' means 'shall we repeat?' while the expected 'Tekrarlayabilir misiniz?' means 'can you repeat?'. The intent is similar (asking for repetition), so the overall meaning is preserved, but the formality and subject are different. This is a minor error.",
-      "score": 2
+      "error": "Substitution: 'tekrarlayabilir' to 'dedi' at position 1",
+      "reason": "'tekrarlayabilir' means 'can repeat', while 'dedi' means 'said'; this changes the meaning of the request to a statement, which derails the intent of the sentence.",
+      "score": 1
     }
   ]
 }

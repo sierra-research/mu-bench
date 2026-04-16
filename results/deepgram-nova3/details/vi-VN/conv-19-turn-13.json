@@ -1,31 +1,31 @@
 {
   "gold": "Có. Kết nối tôi với nhân viên đi.",
-  "predicted": "Có, trận nó tối với những viên đi",
+  "predicted": "Có, nó tối với những viên đi",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "Có. Kết nối tôi với nhân viên đi.",
-  "werNormalizedPredicted": "Có, trận nó tối với những viên đi",
-  "qualityScore": 1,
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
+  "wer": 0.5,
+  "werNormalizedGold": "có kết nối tôi với nhân viên đi",
+  "werNormalizedPredicted": "có nó tối với những viên đi",
+  "qualityScore": null,
+  "significantWer": 0.375,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Có. Kết nối tôi với nhân viên đi.",
-  "sigWerNormalizedPredicted": "Có, trận nó tối với những viên đi",
+  "sigWerNormalizedGold": "có kết nối tôi với nhân viên đi",
+  "sigWerNormalizedPredicted": "có nó tối với những viên đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Có.' to 'Có,' at position 0",
-      "reason": "Difference is only punctuation (period vs comma), which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'nhân' to 'những' at position 5",
-      "reason": "'nhân viên' means 'staff' or 'employee', while 'những viên' is nonsensical in this context and changes the meaning of the sentence.",
+      "error": "Substitution: 'kết' to 'nó' at position 1",
+      "reason": "'kết' (connect) is replaced by 'nó' (it), which changes the meaning of the sentence and makes it incoherent in context.",
       "score": 1
     },
     {
-      "error": "Substitution: 'đi.' to 'đi' at position 7",
-      "reason": "Difference is only punctuation (period omitted), which does not affect meaning.",
-      "score": 3
+      "error": "Deletion: 'tôi' at position 3",
+      "reason": "Omitting 'tôi' (me) removes the subject of the action, significantly altering the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhân' to 'những' at position 5",
+      "reason": "'nhân viên' (staff) is changed to 'những viên' (those pieces), which makes the sentence incoherent and changes the intended meaning.",
+      "score": 1
     }
   ]
 }

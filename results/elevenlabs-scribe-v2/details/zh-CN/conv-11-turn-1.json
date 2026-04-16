@@ -1,25 +1,25 @@
 {
   "gold": "我正在等待。",
-  "predicted": "我现在正在......呃......",
+  "predicted": "我现在正在呃......",
   "unintelligible": false,
-  "wer": 0.8333333333333334,
-  "werNormalizedGold": "我正在等待。",
-  "werNormalizedPredicted": "我现在正在……呃……",
-  "qualityScore": 2,
-  "significantWer": 0.16666666666666666,
+  "wer": 0.6,
+  "werNormalizedGold": "我 正在 等待",
+  "werNormalizedPredicted": "我 现在 正在",
+  "qualityScore": null,
+  "significantWer": 0.2,
   "majorErrorsCount": 1,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "我 正 在 等 待 。",
-  "sigWerNormalizedPredicted": "我 现 在 正 在 …… 呃 ……",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "我 正 在 等 待",
+  "sigWerNormalizedPredicted": "我 现 在 正 在",
   "sigWerErrors": [
     {
-      "error": "Insertion: '现' at position 1",
-      "reason": "'现' (now) is inserted, which changes the meaning from 'I am waiting' to 'I am now waiting', but does not derail the overall meaning.",
+      "error": "Substitution: '正' to '现' at position 1",
+      "reason": "'正' (in the process of) was replaced by '现' (now), which changes the temporal aspect of the sentence but does not derail the overall meaning, as both indicate a current or ongoing state.",
       "score": 2
     },
     {
-      "error": "Substitution: '等' to '……' at position 3",
-      "reason": "'等' (wait) is replaced by a hesitation marker '……', which omits the key verb and makes the sentence incomplete and unclear, significantly affecting the meaning.",
+      "error": "Substitution: '等' to '正' at position 3",
+      "reason": "'等' (wait) was replaced by '正' (in the process of), which removes the main action of waiting and makes the sentence incoherent or incomplete in meaning.",
       "score": 1
     }
   ]

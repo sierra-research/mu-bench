@@ -2,20 +2,30 @@
   "gold": "Mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ?",
   "predicted": "Ờ mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nó như thế nào cho hợp lý nhở?",
   "unintelligible": false,
-  "wer": 0.09523809523809523,
-  "werNormalizedGold": "Mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ?",
-  "werNormalizedPredicted": "Ờ mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ",
+  "werNormalizedPredicted": "mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nó như thế nào cho hợp lý nhở",
+  "qualityScore": null,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ?",
-  "sigWerNormalizedPredicted": "Ờ mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ?",
+  "sigWerNormalizedGold": "mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ",
+  "sigWerNormalizedPredicted": "mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nó như thế nào cho hợp lý nhở",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Mình' to 'mình' at position 0",
-      "reason": "'Ờ' is a Vietnamese filler word similar to 'uh' or 'um', which does not change the meaning of the sentence.",
+      "error": "Insertion: 'mà' at position 5",
+      "reason": "The insertion of 'mà' does not change the overall meaning of the sentence; it is a discourse particle that adds a slight nuance but does not derail the meaning.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'nói' to 'nó' at position 13",
+      "reason": "Substituting 'nói' (to say/speak) with 'nó' (it) changes the meaning of the sentence, making it less coherent and confusing the intended action.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhờ' to 'nhở' at position 20",
+      "reason": "'Nhở' is a common colloquial or dialectal variant of 'nhờ' at the end of a sentence, and does not change the meaning.",
+      "score": 3
     }
   ]
 }

@@ -1,20 +1,25 @@
 {
   "gold": "已经说了几次，你为什么不分辨，你为什么不会帮我？",
-  "predicted": "已经说了几次,你为什么不混兵,你为什么不会帮我?",
+  "predicted": "已经说了这次你为什么不混兵,你为什么不会帮我?",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werNormalizedGold": "已经说了几次，你为什么不分辨，你为什么不会帮我？",
-  "werNormalizedPredicted": "已经说了几次，你为什么不混兵，你为什么不会帮我？",
-  "qualityScore": 2,
-  "significantWer": 0.041666666666666664,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 24,
-  "sigWerNormalizedGold": "已 经 说 了 几 次 ， 你 为 什 么 不 分 辨 ， 你 为 什 么 不 会 帮 我 ？",
-  "sigWerNormalizedPredicted": "已 经 说 了 几 次 ， 你 为 什 么 不 混 兵 ， 你 为 什 么 不 会 帮 我 ？",
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "已经说了几次你为什么不分辨你为什么不会帮我",
+  "werNormalizedPredicted": "已经说了这次你为什么不混兵你为什么不会帮我",
+  "qualityScore": null,
+  "significantWer": 0.09523809523809523,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "已 经 说 了 几 次 你 为 什 么 不 分 辨 你 为 什 么 不 会 帮 我",
+  "sigWerNormalizedPredicted": "已 经 说 了 这 次 你 为 什 么 不 混 兵 你 为 什 么 不 会 帮 我",
   "sigWerErrors": [
     {
-      "error": "Substitution: '分' to '混' at position 12",
-      "reason": "'分辨' means 'distinguish' or 'discern', while '混兵' is not a standard phrase and changes the meaning of the sentence, making it incoherent in context.",
+      "error": "Substitution: '几' to '这' at position 4",
+      "reason": "'几次' means 'several times', while '这次' means 'this time'; this changes the meaning of the sentence from referring to repetition to a single occurrence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '分' to '混' at position 11",
+      "reason": "'分辨' means 'distinguish', while '混兵' is not a standard phrase and does not make sense in this context, making the sentence incoherent.",
       "score": 1
     }
   ]

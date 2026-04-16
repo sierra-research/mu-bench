@@ -1,31 +1,31 @@
 {
   "gold": "Hello? Can you give what is 7 6 2?",
-  "predicted": "Can you give me what is 7762?",
+  "predicted": "Can you what is 762?",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Hello? Can you give what is 7 6 2?",
-  "werNormalizedPredicted": "Can you give me what is 7 7 6 2?",
-  "qualityScore": 2,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "hello can you give what is seven six two",
+  "werNormalizedPredicted": "can you what is seven hundred sixty two",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Hello? Can you give what is 7 6 2?",
-  "sigWerNormalizedPredicted": "Can you give me what is 7 7 6 2?",
+  "sigWerNormalizedGold": "hello can you give what is seven six two",
+  "sigWerNormalizedPredicted": "can you what is seven hundred sixty two",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Hello?' at position 0",
-      "reason": "The greeting is omitted, but the main request is still clear and unaffected.",
+      "error": "Deletion: 'hello' at position 0",
+      "reason": "'hello' is a greeting and its omission does not affect the main meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'me' at position 4",
-      "reason": "Adding 'me' does not change the meaning of the request; it is a minor grammatical difference.",
-      "score": 3
+      "error": "Deletion: 'give' at position 3",
+      "reason": "Omitting 'give' slightly changes the structure but the main request is still clear.",
+      "score": 2
     },
     {
-      "error": "Insertion: '7' at position 6",
-      "reason": "Adding an extra '7' changes the number sequence being requested, which could lead to a significant misunderstanding if the numbers are important (e.g., a code or phone number).",
-      "score": 1
+      "error": "Substitution: 'six' to 'sixty' at position 7",
+      "reason": "Inserting 'hundred' changes the number from 762 to 762 (seven hundred sixty two), which is numerically equivalent to 'seven six two' in this context, so the meaning is preserved.",
+      "score": 3
     }
   ]
 }

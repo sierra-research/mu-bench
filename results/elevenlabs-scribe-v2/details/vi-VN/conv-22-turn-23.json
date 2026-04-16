@@ -2,25 +2,30 @@
   "gold": "Tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không?",
   "predicted": "Ờm, tôi muốn hỏi là cái, a, software này tôi có in ra bản giấy có được không?",
   "unintelligible": false,
-  "wer": 0.23529411764705882,
-  "werNormalizedGold": "Tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không?",
-  "werNormalizedPredicted": "Ờm, tôi muốn hỏi là cái, à, sao kê này tôi muốn in ra bản giấy có được không?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.17647058823529413,
+  "werNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
+  "werNormalizedPredicted": "tôi muốn hỏi là cái software này tôi có in ra bản giấy có được không",
+  "qualityScore": null,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không?",
-  "sigWerNormalizedPredicted": "Ờm, tôi muốn hỏi là cái, à, sao kê này tôi muốn in ra bản giấy có được không?",
+  "sigWerNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi là cái software này tôi có in ra bản giấy có được không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "'Ờm,' is a filler word (like 'um' in English) and does not affect the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'sao' to 'software' at position 5",
+      "reason": "'sao kê' means 'statement' (e.g., bank statement) in Vietnamese, while 'software' is a completely different concept. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'cái' to 'à,' at position 4",
-      "reason": "Difference in capitalization only, which should be ignored.",
-      "score": 3
+      "error": "Deletion: 'kê' at position 6",
+      "reason": "Omitting 'kê' from 'sao kê' breaks the meaning of 'statement', making the phrase incomplete and unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'muốn' to 'có' at position 9",
+      "reason": "'muốn' means 'want', while 'có' means 'have'. This changes the intent of the sentence but does not completely derail the meaning, as the context is still about printing a paper copy.",
+      "score": 2
     }
   ]
 }

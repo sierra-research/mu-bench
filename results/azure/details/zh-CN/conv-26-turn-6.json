@@ -1,26 +1,26 @@
 {
   "gold": "C N 7 0 7 0 6。",
-  "predicted": "CN706.",
+  "predicted": "CM706.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "C N 7 0 7 0 6。",
-  "werNormalizedPredicted": "C N 7 0 7 0 6.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "C N 7 0 7 0 6 。",
-  "sigWerNormalizedPredicted": "C N 7 0 7 0 6.",
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "c n seven zero seven zero six",
+  "werNormalizedPredicted": "c m seven zero six",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n seven zero seven zero six",
+  "sigWerNormalizedPredicted": "c m seven zero six",
   "sigWerErrors": [
     {
-      "error": "Substitution: '6' to '6.' at position 6",
-      "reason": "The only difference is the punctuation (period vs full-width period), which does not affect the meaning or content of the transcription.",
-      "score": 3
+      "error": "Substitution: 'n' to 'm' at position 1",
+      "reason": "In a spelled-out sequence, a single letter substitution changes the intended sequence, which is significant for things like codes or identifiers.",
+      "score": 1
     },
     {
-      "error": "Deletion: '。' at position 7",
-      "reason": "The missing full-width period is a punctuation difference and does not affect the meaning of the transcription.",
-      "score": 3
+      "error": "Deletion: 'seven' at position 2",
+      "reason": "Omitting a digit in a sequence of numbers changes the entire code or identifier, which is a significant error.",
+      "score": 1
     }
   ]
 }

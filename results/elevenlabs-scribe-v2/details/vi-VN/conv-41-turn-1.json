@@ -1,20 +1,35 @@
 {
   "gold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
-  "predicted": "Ờ, xem hết luôn. Tỳ, người, ngài rồi gì cũng, cũng xem hết",
+  "predicted": "Ờ, xem hết lương, tiền, rồi ngày gì cũng, cũng xem hết",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
-  "werNormalizedPredicted": "Ờ, xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "xem het luon tien ngay gi xem het luon",
+  "werNormalizedPredicted": "xem het luong tien roi ngay gi cung cung xem het",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
-  "sigWerNormalizedPredicted": "Ờ, xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
+  "sigWerNormalizedGold": "xem het luon tien ngay gi xem het luon",
+  "sigWerNormalizedPredicted": "xem het luong tien roi ngay gi cung cung xem het",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Xem' to 'xem' at position 0",
-      "reason": "'Ờ' is a filler word in Vietnamese, similar to 'uh' or 'um' in English. Its presence does not change the meaning of the sentence.",
+      "error": "Substitution: 'luon' to 'luong' at position 2",
+      "reason": "'luon' and 'luong' are different words in Vietnamese; this changes the meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'roi' at position 4",
+      "reason": "The word 'roi' adds a new element to the sentence, which can change the meaning or intent.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cung' at position 6",
+      "reason": "The repeated insertion of 'cung' adds redundancy and changes the structure of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'luon' at position 8",
+      "reason": "Omitting 'luon' at the end removes emphasis or a concluding element, which can affect the meaning.",
       "score": 2
     }
   ]

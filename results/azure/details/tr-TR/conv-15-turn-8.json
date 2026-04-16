@@ -2,19 +2,24 @@
   "gold": "Ha, bu arada yalnız bir dakika bir şey söyleyeceğim.",
   "predicted": "Bu arada yalnız yalnız bir dakika bir şey söyleyeceğim.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Ha, bu arada yalnız bir dakika bir şey söyleyeceğim.",
-  "werNormalizedPredicted": "Bu arada yalnız yalnız bir dakika bir şey söyleyeceğim.",
-  "qualityScore": 2,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "ha bu arada yalnız bir dakika bir şey söyleyeceğim",
+  "werNormalizedPredicted": "bu arada yalnız yalnız bir dakika bir şey söyleyeceğim",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Ha, bu arada yalnız bir dakika bir şey söyleyeceğim.",
-  "sigWerNormalizedPredicted": "Bu arada yalnız yalnız bir dakika bir şey söyleyeceğim.",
+  "sigWerNormalizedGold": "ha bu arada yalnız bir dakika bir şey söyleyeceğim",
+  "sigWerNormalizedPredicted": "bu arada yalnız yalnız bir dakika bir şey söyleyeceğim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Ha,' to 'Bu' at position 0",
-      "reason": "'Ha' is an interjection (like 'well' or 'hey'), while 'Bu' means 'this' in Turkish. This changes the tone and meaning at the start of the sentence.",
+      "error": "Deletion: 'ha' at position 0",
+      "reason": "'Ha' is an interjection that adds emphasis or draws attention, but its omission does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'yalnız' at position 3",
+      "reason": "The extra 'yalnız' (meaning 'only' or 'alone') is redundant but does not change the overall meaning of the sentence.",
       "score": 2
     }
   ]

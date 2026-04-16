@@ -2,20 +2,20 @@
   "gold": "1 2, okay.",
   "predicted": "One two.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "1 2, okay.",
-  "werNormalizedPredicted": "One two, okay.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "one two okay",
+  "werNormalizedPredicted": "one two",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "1 2, okay.",
-  "sigWerNormalizedPredicted": "One two, okay.",
+  "sigWerNormalizedGold": "one two okay",
+  "sigWerNormalizedPredicted": "one two",
   "sigWerErrors": [
     {
-      "error": "Substitution: '1' to 'One' at position 0",
-      "reason": "'1' and 'One' are numeric equivalents and mean the same thing in this context.",
-      "score": 3
+      "error": "Deletion: 'okay' at position 2",
+      "reason": "The word 'okay' is missing, which could affect the intent or confirmation in the sentence. Its absence may change the meaning, especially if 'okay' is used to confirm or acknowledge something.",
+      "score": 1
     }
   ]
 }

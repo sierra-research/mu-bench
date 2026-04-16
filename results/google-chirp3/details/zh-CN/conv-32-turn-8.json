@@ -1,15 +1,21 @@
 {
   "gold": "需要，请帮我提升额度。",
-  "predicted": "需要,请帮我提升额度。",
+  "predicted": "要,请帮我提升额度。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "需要，请帮我提升额度。",
-  "werNormalizedPredicted": "需要，请帮我提升额度。",
-  "qualityScore": 3,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "需要 请帮我提升额度",
+  "werNormalizedPredicted": "要 请帮我提升额度",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "需 要 ， 请 帮 我 提 升 额 度 。",
-  "sigWerNormalizedPredicted": "需 要 ， 请 帮 我 提 升 额 度 。",
-  "sigWerErrors": []
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "需 要 请 帮 我 提 升 额 度",
+  "sigWerNormalizedPredicted": "要 请 帮 我 提 升 额 度",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '需' at position 0",
+      "reason": "The deletion of '需' (need) changes the sentence from 'need to ask for help to increase the limit' to just 'ask for help to increase the limit', which omits the expression of necessity and slightly alters the intent, but the main request remains clear.",
+      "score": 2
+    }
+  ]
 }

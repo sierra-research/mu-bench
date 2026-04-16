@@ -1,15 +1,36 @@
 {
   "gold": "E-posta adresim, Zeynep nokta Arslan at email nokta com.",
-  "predicted": "E posta adresimzeyneparslan@email.com.",
+  "predicted": "E posta adresimi Zeynep arslan e mail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "E-posta adresim, Zeynep nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "E-posta adresim, Zeynep nokta Arslan at email nokta com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "E-posta adresim, Zeynep nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "E-posta adresim, Zeynep nokta Arslan at email nokta com.",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "e posta adresimi zeynep arslan e mail com",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "e posta adresimi zeynep arslan e mail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adresim' to 'adresimi' at position 2",
+      "reason": "'adresim' (my address) vs 'adresimi' (my address as object); minor grammatical difference, does not change the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 4",
+      "reason": "Missing 'nokta' (dot) in the email address makes the address incorrect and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'e' at position 6",
+      "reason": "'at' (the '@' symbol in email) replaced with 'e', which is incorrect and makes the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 8",
+      "reason": "Missing 'nokta' (dot) in the domain part of the email address makes the address incorrect.",
+      "score": 1
+    }
+  ]
 }

@@ -1,0 +1,31 @@
+{
+  "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "predicted": "Öncelikle bana bir takip numarası yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaramı.",
+  "unintelligible": false,
+  "wer": 0.2777777777777778,
+  "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "werNormalizedPredicted": "öncelikle bana bir takip numarası yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaramı",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "sigWerNormalizedPredicted": "öncelikle bana bir takip numarası yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaramı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kredi' to 'takip' at position 3",
+      "reason": "'kredi kartı limit artışı' (credit card limit increase) is replaced with 'takip numarası' (tracking number), which completely changes the intent and meaning of the request.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'limit' at position 5",
+      "reason": "Omitting 'limit' removes a key part of the intended action (limit increase), further derailing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaranı' to 'numaramı' at position 17",
+      "reason": "Changing 'numaranı' (your number) to 'numaramı' (my number) alters the reference but does not significantly change the overall meaning in this context.",
+      "score": 2
+    }
+  ]
+}

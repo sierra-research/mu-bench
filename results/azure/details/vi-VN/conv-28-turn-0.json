@@ -1,25 +1,35 @@
 {
   "gold": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình với.",
-  "predicted": "Xin chào an a mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nổ cho công ty mà thì mãi không thấy bạn giúp mình với.",
+  "predicted": "Xin chào an a mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nổ cho thông tin mà thì mãi không thấy bạn giúp mình với.",
   "unintelligible": false,
-  "wer": 0.05128205128205128,
-  "werNormalizedGold": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình với.",
-  "werNormalizedPredicted": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nổ cho công ty, mà thì mãi không thấy. Bạn giúp mình với.",
-  "qualityScore": 3,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
+  "werNormalizedPredicted": "xin chào an a mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nổ cho thông tin mà thì mãi không thấy bạn giúp mình với",
+  "qualityScore": null,
   "significantWer": 0.05128205128205128,
   "majorErrorsCount": 2,
   "totalWordsCount": 39,
-  "sigWerNormalizedGold": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình với.",
-  "sigWerNormalizedPredicted": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nổ cho công ty, mà thì mãi không thấy. Bạn giúp mình với.",
+  "sigWerNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
+  "sigWerNormalizedPredicted": "xin chào an a mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nổ cho thông tin mà thì mãi không thấy bạn giúp mình với",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'anna' to 'a' at position 2",
+      "reason": "The name 'anna' was split into 'an a', which is a minor error as the intended name is still recognizable.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'nộp' to 'nổ' at position 26",
-      "reason": "'Nộp' means 'to submit', while 'nổ' means 'to explode'. This substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "The name 'anna' was partially transcribed as 'a', losing part of the name but still somewhat recognizable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'công' to 'thông' at position 28",
+      "reason": "'nộp' (submit) was changed to 'nổ' (explode), which significantly changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'tìm' to 'thì' at position 31",
-      "reason": "'Tìm' means 'to search', while 'thì' is a conjunction or particle. This substitution disrupts the meaning of the sentence and makes it less coherent.",
+      "reason": "'công ty' (company) was changed to 'thông tin' (information), which alters the recipient of the action and changes the meaning.",
       "score": 1
     }
   ]

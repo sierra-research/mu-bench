@@ -2,14 +2,25 @@
   "gold": "Yalnız Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
   "predicted": "Yalnız Ahmet'le Arslan arasında nokta var. Ahmet nokta Arslan",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yalnız Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "werNormalizedPredicted": "Yalnız Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "yalnız ahmet ve arslan arasında nokta var ahmet nokta arslan",
+  "werNormalizedPredicted": "yalnız ahmet's arslan arasında nokta var ahmet nokta arslan",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Yalnız Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "sigWerNormalizedPredicted": "Yalnız Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yalnız ahmet ve arslan arasında nokta var ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "yalnız ahmet's arslan arasında nokta var ahmet nokta arslan",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ahmet' to 'ahmet's' at position 1",
+      "reason": "Adding the possessive 's' to 'ahmet' changes the meaning from referring to the person 'ahmet' to something belonging to 'ahmet', which alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 've' at position 2",
+      "reason": "Omitting 've' (which means 'and' in Turkish) removes the connection between 'ahmet' and 'arslan', significantly changing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

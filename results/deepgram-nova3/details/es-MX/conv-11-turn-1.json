@@ -2,29 +2,29 @@
   "gold": "Sí, deja encuentro algo para anotarlo.",
   "predicted": "Sí, deje, encuentro dónde anotarlo.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Sí, deja encuentro algo para anotarlo.",
-  "werNormalizedPredicted": "sí, deje, encuentro donde anotarlo.",
-  "qualityScore": 3,
+  "wer": 0.5,
+  "werNormalizedGold": "si deja encuentro algo para anotarlo",
+  "werNormalizedPredicted": "si deje encuentro donde anotarlo",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Sí, deja encuentro algo para anotarlo.",
-  "sigWerNormalizedPredicted": "sí, deje, encuentro donde anotarlo.",
+  "sigWerNormalizedGold": "si deja encuentro algo para anotarlo",
+  "sigWerNormalizedPredicted": "si deje encuentro donde anotarlo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sí,' to 'sí,' at position 0",
-      "reason": "Difference is only in capitalization and punctuation, which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'deja' to 'deje' at position 1",
+      "reason": "'Deja' (he/she leaves) and 'deje' (I/he/she should leave) are different verb forms, but in this context the meaning is only slightly affected.",
+      "score": 2
     },
     {
       "error": "Substitution: 'algo' to 'donde' at position 3",
-      "reason": "'Algo' (something) and 'donde' (where) are different words and change the meaning of the sentence, as the object to write on is replaced by a location.",
+      "reason": "'Algo' (something) and 'donde' (where) are completely different words and change the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'para' at position 4",
-      "reason": "Omitting 'para' (for) slightly affects the grammatical structure but does not significantly change the overall meaning.",
+      "reason": "Omitting 'para' (for) slightly affects the grammatical structure but the main meaning is still understandable.",
       "score": 2
     }
   ]

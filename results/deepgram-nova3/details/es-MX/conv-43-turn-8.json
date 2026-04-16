@@ -1,21 +1,26 @@
 {
   "gold": "Ya, ya, yo ya lo recibí.",
-  "predicted": "Ya ya el short ya está, ya lo recibí.",
+  "predicted": "Ya, ya el, ya está, ya la recibí.",
   "unintelligible": false,
   "wer": 0.6666666666666666,
-  "werNormalizedGold": "Ya, ya, yo ya lo recibí.",
-  "werNormalizedPredicted": "Ya, ya, el short ya está, ya lo recibí.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "ya ya yo ya lo recibi",
+  "werNormalizedPredicted": "ya ya el ya esta ya la recibi",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Ya, ya, yo ya lo recibí.",
-  "sigWerNormalizedPredicted": "Ya, ya, el short ya está, ya lo recibí.",
+  "sigWerNormalizedGold": "ya ya yo ya lo recibi",
+  "sigWerNormalizedPredicted": "ya ya el ya esta ya la recibi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'yo' to 'está,' at position 2",
-      "reason": "The insertion of 'el' does not change the overall meaning of the sentence, as it is just an extra word that does not derail the message.",
-      "score": 2
+      "error": "Substitution: 'yo' to 'el' at position 2",
+      "reason": "'yo' means 'I' and 'el' means 'he' in Spanish; this changes the subject of the sentence and alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lo' to 'la' at position 4",
+      "reason": "The insertion of 'esta' ('is') adds an extra verb, making the sentence less coherent and changing the structure.",
+      "score": 1
     }
   ]
 }

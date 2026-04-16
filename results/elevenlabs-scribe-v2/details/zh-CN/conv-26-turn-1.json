@@ -1,21 +1,21 @@
 {
   "gold": "我正在等待我的新卡，想知道它的状态。",
-  "predicted": "我仍在等待我的信用卡，想知道它的状态。",
+  "predicted": "我正在等待我的信卡，想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.05555555555555555,
-  "werNormalizedGold": "我正在等待我的新卡，想知道它的状态。",
-  "werNormalizedPredicted": "我仍在等待我的新卡，想知道它的状态。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "我 正 在 等 待 我 的 新 卡 ， 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "我 仍 在 等 待 我 的 新 卡 ， 想 知 道 它 的 状 态 。",
+  "wer": 0.0625,
+  "werNormalizedGold": "我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
+  "werNormalizedPredicted": "我 正 在 等 待 我 的 信 卡 想 知 道 它 的 状 态",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 等 待 我 的 信 卡 想 知 道 它 的 状 态",
   "sigWerErrors": [
     {
-      "error": "Substitution: '正' to '仍' at position 1",
-      "reason": "'正' (currently) and '仍' (still) both indicate ongoing action, and the overall meaning of the sentence remains the same. This is a minor nuance difference in aspect, not affecting the main intent.",
-      "score": 3
+      "error": "Substitution: '新' to '信' at position 7",
+      "reason": "'新卡' means 'new card', while '信卡' is not a standard term and could be interpreted as 'credit card' (short for '信用卡'), but in this context, it changes the meaning from 'new card' to something else, which could confuse the intent of the sentence.",
+      "score": 1
     }
   ]
 }

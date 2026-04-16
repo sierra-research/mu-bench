@@ -2,19 +2,29 @@
   "gold": "Şu an itibari ile yok, teşekkür ederim.",
   "predicted": "Şu an itibariyle yok, teşekkür ediyorum.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "Şu an itibari ile yok, teşekkür ederim.",
-  "werNormalizedPredicted": "Şu an itibari ile yok, teşekkür ediyorum.",
-  "qualityScore": 3,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "şu an itibari ile yok teşekkür ederim",
+  "werNormalizedPredicted": "şu an itibariyle yok teşekkür ediyorum",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Şu an itibari ile yok, teşekkür ederim.",
-  "sigWerNormalizedPredicted": "Şu an itibari ile yok, teşekkür ediyorum.",
+  "sigWerNormalizedGold": "şu an itibari ile yok teşekkür ederim",
+  "sigWerNormalizedPredicted": "şu an itibariyle yok teşekkür ediyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ederim.' to 'ediyorum.' at position 6",
-      "reason": "Both 'teşekkür ederim' and 'teşekkür ediyorum' express gratitude in Turkish, with 'ederim' being the standard form and 'ediyorum' being a more continuous or present progressive form. The meaning remains the same in context.",
+      "error": "Substitution: 'itibari' to 'itibariyle' at position 2",
+      "reason": "'itibariyle' is a grammatical form of 'itibari ile' and means the same thing in this context; the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 3",
+      "reason": "'itibariyle' already includes the meaning of 'ile', so omitting 'ile' does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ederim' to 'ediyorum' at position 6",
+      "reason": "'Teşekkür ederim' and 'teşekkür ediyorum' both mean 'thank you' in Turkish; the difference is stylistic, not semantic.",
       "score": 3
     }
   ]

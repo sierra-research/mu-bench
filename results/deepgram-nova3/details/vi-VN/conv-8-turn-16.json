@@ -1,15 +1,31 @@
 {
   "gold": "Chưa. Số chính xác là 1 2 3 Lê Lợi, Hồ Chí Minh city, zip code 7 0 0 0 0 0, Việt Nam.",
-  "predicted": "Chưa số chính sách là một hai ba lê lợi Hồ Chí Minh City zip code bảy nghìn nghìn nghìn nghìn nghìn Việt Nam",
+  "predicted": "Chưa số chính sách là một hai ba lê lợi Hồ Chí Minh City dứt code bảy nghìn nghìn nghìn nghìn nghìn Việt Nam",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Chưa. Số chính xác là 1 2 3 Lê Lợi, Hồ Chí Minh city, zip code 7 0 0 0 0 0, Việt Nam.",
-  "werNormalizedPredicted": "Chưa. Số chính xác là 1 2 3 Lê Lợi, Hồ Chí Minh city, zip code 7 0 0 0 0 0, Việt Nam.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2916666666666667,
+  "werNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
+  "werNormalizedPredicted": "chưa số chính sách là một hai ba lê lợi hồ chí minh city dứt code bảy nghìn nghìn nghìn nghìn nghìn việt nam",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 3,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "Chưa. Số chính xác là 1 2 3 Lê Lợi, Hồ Chí Minh city, zip code 7 0 0 0 0 0, Việt Nam.",
-  "sigWerNormalizedPredicted": "Chưa. Số chính xác là 1 2 3 Lê Lợi, Hồ Chí Minh city, zip code 7 0 0 0 0 0, Việt Nam.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
+  "sigWerNormalizedPredicted": "chưa số chính sách là một hai ba lê lợi hồ chí minh city dứt code bảy nghìn nghìn nghìn nghìn nghìn việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xác' to 'sách' at position 3",
+      "reason": "'xác' (exact) and 'sách' (policy/book) are completely different words and change the meaning of the phrase 'số chính xác' (exact number) to 'số chính sách' (policy number), which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zip' to 'dứt' at position 14",
+      "reason": "'zip code' is a standard term for postal code, while 'dứt code' is not meaningful in this context and makes the phrase incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'không' to 'nghìn' at position 17",
+      "reason": "'không' means 'zero' and 'nghìn' means 'thousand'; substituting all zeros in a zip code with 'thousand' completely changes the meaning and makes the zip code incorrect.",
+      "score": 1
+    }
+  ]
 }

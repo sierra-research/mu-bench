@@ -1,25 +1,20 @@
 {
   "gold": "Tôi cần cung cấp giấy tờ gì để được nâng hạn mức thẻ tín dụng nhỉ?",
-  "predicted": "Tôi cần cung cấp giấy tờ gì để đừng nâng hạn bức thể tuyển dụng nhỉ?",
+  "predicted": "Tôi cần cung cấp giấy tờ gì để đừng nâng hạn mức thẻ tín dụng nhỉ?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Tôi cần cung cấp giấy tờ gì để được nâng hạn mức thẻ tín dụng nhỉ?",
-  "werNormalizedPredicted": "Tôi cần cung cấp giấy tờ gì để đừng nâng hạn bức thể tuyển dụng nhỉ?",
-  "qualityScore": 1,
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
+  "wer": 0.0625,
+  "werNormalizedGold": "tôi cần cung cấp giấy tờ gì để được nâng hạn mức thẻ tín dụng nhỉ",
+  "werNormalizedPredicted": "tôi cần cung cấp giấy tờ gì để đừng nâng hạn mức thẻ tín dụng nhỉ",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Tôi cần cung cấp giấy tờ gì để được nâng hạn mức thẻ tín dụng nhỉ?",
-  "sigWerNormalizedPredicted": "Tôi cần cung cấp giấy tờ gì để đừng nâng hạn bức thể tuyển dụng nhỉ?",
+  "sigWerNormalizedGold": "tôi cần cung cấp giấy tờ gì để được nâng hạn mức thẻ tín dụng nhỉ",
+  "sigWerNormalizedPredicted": "tôi cần cung cấp giấy tờ gì để đừng nâng hạn mức thẻ tín dụng nhỉ",
   "sigWerErrors": [
     {
       "error": "Substitution: 'được' to 'đừng' at position 8",
-      "reason": "'được' means 'to be able to' or 'allowed to', while 'đừng' means 'do not'. This substitution reverses the intent of the sentence, making the meaning incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'mức' to 'bức' at position 11",
-      "reason": "'mức' means 'limit' (as in credit limit), while 'bức' is unrelated and makes the phrase nonsensical in this context.",
+      "reason": "'được' means 'to be allowed' or 'to get', while 'đừng' means 'do not'. This substitution reverses the meaning of the request, changing it from asking how to get a credit limit increase to asking how not to get one. This is a significant change in meaning.",
       "score": 1
     }
   ]

@@ -1,15 +1,21 @@
 {
   "gold": "Alright. Here it is. John dot Brown at email dot com.",
-  "predicted": "Alright. Here it is. John dot brown at email dot com.",
+  "predicted": "Alright. Here it is. John dot Brown at Gmail dot com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Alright. Here it is. John dot Brown at email dot com.",
-  "werNormalizedPredicted": "Alright. Here it is. John dot Brown at email dot com.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "alright here it is john dot brown at email dot com",
+  "werNormalizedPredicted": "alright here it is john dot brown at gmail dot com",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Alright. Here it is. John dot Brown at email dot com.",
-  "sigWerNormalizedPredicted": "Alright. Here it is. John dot Brown at email dot com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "alright here it is john dot brown at email dot com",
+  "sigWerNormalizedPredicted": "alright here it is john dot brown at gmail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 8",
+      "reason": "Substituting 'email' with 'gmail' changes the email address domain, which could result in sending an email to the wrong address. This is a significant error as it alters the intended recipient.",
+      "score": 1
+    }
+  ]
 }

@@ -1,31 +1,26 @@
 {
   "gold": "Muốn. Vui lòng hướng dẫn tôi làm cái đó đi.",
-  "predicted": "Ờ, muốn của lòng muốn dặn tôi lại cái, cái, cái, cái đó đi",
+  "predicted": "À, muốn có làm muốn dẫn tôi lại cái, cái, cái, cái đó đi",
   "unintelligible": false,
-  "wer": 0.9,
-  "werNormalizedGold": "Muốn. Vui lòng hướng dẫn tôi làm cái đó đi.",
-  "werNormalizedPredicted": "Ờ, muốn. Của lòng muốn dặn tôi lại cái, cái, cái, cái đó đi.",
-  "qualityScore": 2,
+  "wer": 0.7,
+  "werNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
+  "werNormalizedPredicted": "muốn có làm muốn dẫn tôi lại cái cái cái cái đó đi",
+  "qualityScore": null,
   "significantWer": 0.1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Muốn. Vui lòng hướng dẫn tôi làm cái đó đi.",
-  "sigWerNormalizedPredicted": "Ờ, muốn. Của lòng muốn dặn tôi lại cái, cái, cái, cái đó đi.",
+  "sigWerNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
+  "sigWerNormalizedPredicted": "muốn có làm muốn dẫn tôi lại cái cái cái cái đó đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Muốn.' to 'muốn.' at position 0",
-      "reason": "The insertion of 'Ờ,' is a filler word and does not change the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'hướng' to 'muốn' at position 3",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'làm' to 'cái,' at position 6",
-      "reason": "Substituting 'hướng' (guide) with 'muốn' (want) changes the meaning of the instruction, making the sentence incoherent.",
+      "error": "Substitution: 'vui' to 'có' at position 1",
+      "reason": "'vui lòng' means 'please' or a polite request, while 'có' means 'have' or 'there is', which changes the politeness and intent of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'làm' to 'cái' at position 6",
+      "reason": "The word 'lại' (again) is inserted, which slightly changes the nuance but does not derail the overall meaning.",
+      "score": 2
     }
   ]
 }

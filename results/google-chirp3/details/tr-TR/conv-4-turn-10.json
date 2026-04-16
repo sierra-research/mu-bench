@@ -1,15 +1,21 @@
 {
   "gold": "Tabii, aktarabilirsiniz, teşekkür ederim.",
-  "predicted": "Tabii aktarabilirsiniz, teşekkür ederim.",
+  "predicted": "Tabii aktarabilirseniz, teşekkür ederim.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tabii, aktarabilirsiniz, teşekkür ederim.",
-  "werNormalizedPredicted": "Tabii, aktarabilirsiniz, teşekkür ederim.",
-  "qualityScore": 3,
+  "wer": 0.25,
+  "werNormalizedGold": "tabii aktarabilirsiniz teşekkür ederim",
+  "werNormalizedPredicted": "tabii aktarabilirseniz teşekkür ederim",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Tabii, aktarabilirsiniz, teşekkür ederim.",
-  "sigWerNormalizedPredicted": "Tabii, aktarabilirsiniz, teşekkür ederim.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tabii aktarabilirsiniz teşekkür ederim",
+  "sigWerNormalizedPredicted": "tabii aktarabilirseniz teşekkür ederim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'aktarabilirsiniz' to 'aktarabilirseniz' at position 1",
+      "reason": "The difference is in the verb ending: '-siniz' vs '-siniz'. Both forms are polite/plural, but 'aktarabilirsiniz' means 'you can transfer', while 'aktarabilirseniz' means 'if you can transfer'. The meaning changes slightly from a statement to a conditional, but the overall intent of the sentence is still clear and not derailed.",
+      "score": 2
+    }
+  ]
 }

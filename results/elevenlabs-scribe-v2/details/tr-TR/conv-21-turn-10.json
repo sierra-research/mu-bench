@@ -1,15 +1,26 @@
 {
   "gold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "predicted": "Bir dakika. Ahmet ismimde Ahmet Aslan dediniz. Ahmet Arslan. R harfi var arada. Ahmet Arslan",
+  "predicted": "Bir dakika. Ahmet ismin de Ahmet Aslan dediniz. Ahmet Arslan. R harfi var arada. Ahmet Arslan",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "werNormalizedPredicted": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "qualityScore": 3,
+  "wer": 0.26666666666666666,
+  "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "werNormalizedPredicted": "bir dakika ahmet ismin de ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "sigWerNormalizedPredicted": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerNormalizedPredicted": "bir dakika ahmet ismin de ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ismimde' to 'de' at position 2",
+      "reason": "The extra 'ahmet' does not change the overall meaning of the sentence, as it is a repetition of a name already present.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'de' at position 6",
+      "reason": "'ismimde' (in my name) and 'ismin de' (your name too) are similar but not identical; the meaning is slightly altered but the context is still understandable.",
+      "score": 2
+    }
+  ]
 }

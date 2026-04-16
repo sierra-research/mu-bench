@@ -2,25 +2,25 @@
   "gold": "你说得对，我现在等待新卡。想知道它的状态。",
   "predicted": "嗯，你说的对，我现在等的也心卡，想知道他的状态。",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "你说得对，我现在等待新卡。想知道它的状态。",
-  "werNormalizedPredicted": "嗯，你说得对，我现在等待新卡，想知道它的状态。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "你 说 得 对 ， 我 现 在 等 待 新 卡 。 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "嗯 ， 你 说 得 对 ， 我 现 在 等 待 新 卡 ， 想 知 道 它 的 状 态 。",
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "你 说 得 对 我 现在 等待 新 卡 想 知道 它 的 状态",
+  "werNormalizedPredicted": "你 说 得 对 我 现在 等 的 也 心 卡 想 知道 他 的 状态",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "你 说 得 对 我 现 在 等 待 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "你 说 得 对 我 现 在 等 的 也 心 卡 想 知 道 他 的 状 态",
   "sigWerErrors": [
     {
-      "error": "Insertion: '嗯' at position 0",
-      "reason": "'嗯' is a filler word meaning 'um' or 'well', which does not change the meaning of the sentence.",
+      "error": "Substitution: '待' to '也' at position 8",
+      "reason": "The insertion of '的' does not significantly change the meaning of the sentence; it is a minor grammatical addition.",
       "score": 2
     },
     {
-      "error": "Substitution: '。' to '，' at position 12",
-      "reason": "Punctuation difference between period and comma does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: '它' to '他' at position 14",
+      "reason": "Substituting '待' (wait) with '也' (also) changes the meaning of the sentence, making it less coherent and potentially confusing the intent.",
+      "score": 1
     }
   ]
 }

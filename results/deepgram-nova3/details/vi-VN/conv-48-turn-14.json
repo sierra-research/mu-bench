@@ -1,20 +1,30 @@
 {
   "gold": "À, rồi. Làm rồi luôn rồi. Chưa thấy thông báo.",
-  "predicted": "Rồi làm rồi nuôi rồi chưa thấy thông báo.",
+  "predicted": "Làm rồi nuôi người chưa thấy đồng báo.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "À, rồi. Làm rồi luôn rồi. Chưa thấy thông báo.",
-  "werNormalizedPredicted": "À, rồi. Làm rồi nuôi rồi. Chưa thấy thông báo.",
-  "qualityScore": 2,
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "wer": 0.5,
+  "werNormalizedGold": "à rồi làm rồi luôn rồi chưa thấy thông báo",
+  "werNormalizedPredicted": "làm rồi nuôi người chưa thấy đồng báo",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "À, rồi. Làm rồi luôn rồi. Chưa thấy thông báo.",
-  "sigWerNormalizedPredicted": "À, rồi. Làm rồi nuôi rồi. Chưa thấy thông báo.",
+  "sigWerNormalizedGold": "à rồi làm rồi luôn rồi chưa thấy thông báo",
+  "sigWerNormalizedPredicted": "làm rồi nuôi người chưa thấy đồng báo",
   "sigWerErrors": [
     {
+      "error": "Deletion: 'à' at position 0",
+      "reason": "The interjection 'à' is omitted, which may slightly affect the tone but does not change the core meaning of the sentence.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'luôn' to 'nuôi' at position 4",
-      "reason": "'luôn' means 'always' or 'already', while 'nuôi' means 'to raise' or 'to nurture'. This substitution changes the meaning of the sentence and makes it incoherent in context, as 'làm rồi luôn rồi' is a common phrase meaning 'already done', but 'làm rồi nuôi rồi' does not make sense.",
+      "reason": "'luôn' means 'always' or 'immediately', while 'nuôi' means 'to raise' or 'to nurture'; this substitution changes the meaning of the sentence significantly and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'thông' to 'đồng' at position 8",
+      "reason": "'thông báo' means 'notification', while 'đồng báo' is not a standard phrase and changes the meaning, making the sentence unclear.",
       "score": 1
     }
   ]

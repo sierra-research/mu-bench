@@ -1,21 +1,26 @@
 {
   "gold": "Đúng rồi. Đúng rồi.",
-  "predicted": "Ừ không phải, không phải.",
+  "predicted": "இதும் வரும் பாரு.",
   "unintelligible": false,
-  "wer": 1.25,
-  "werNormalizedGold": "Đúng rồi. Đúng rồi.",
-  "werNormalizedPredicted": "Ừ, không phải, không phải.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "đúng rồi đúng rồi",
+  "werNormalizedPredicted": "இதும் வரும் பாரு",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Đúng rồi. Đúng rồi.",
-  "sigWerNormalizedPredicted": "Ừ, không phải, không phải.",
+  "sigWerNormalizedGold": "đúng rồi đúng rồi",
+  "sigWerNormalizedPredicted": "இதும் வரும் பாரு",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Đúng' to 'không' at position 0",
-      "reason": "'Ừ' is an interjection meaning 'yes' or 'uh-huh', which is not present in the expected transcript. Its addition does not match the affirmation in the expected sentence, but does not by itself change the overall meaning significantly.",
-      "score": 2
+      "error": "Substitution: 'đúng' to 'இதும்' at position 0",
+      "reason": "The actual transcription is in a completely different language (Tamil) compared to the expected (Vietnamese), making the meaning entirely different and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "The actual transcription is in a different language, so the meaning is lost and the sentence is incoherent.",
+      "score": 1
     }
   ]
 }

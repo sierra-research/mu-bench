@@ -1,20 +1,25 @@
 {
   "gold": "C N 1 0 8。",
-  "predicted": "CNE令拔。",
+  "predicted": "CNE Limba.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "C N 1 0 8。",
-  "werNormalizedPredicted": "C N E 令 拔。",
-  "qualityScore": 1,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "C N 1 0 8 。",
-  "sigWerNormalizedPredicted": "C N E 令 拔 。",
+  "wer": 1.0,
+  "werNormalizedGold": "c n one zero eight",
+  "werNormalizedPredicted": "cne limba",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n one zero eight",
+  "sigWerNormalizedPredicted": "cne limba",
   "sigWerErrors": [
     {
-      "error": "Substitution: '1' to 'E' at position 2",
-      "reason": "In a spelled-out sequence, substituting a digit with a letter changes the intended code or number completely, making it a significant error.",
+      "error": "Substitution: 'c' to 'cne' at position 0",
+      "reason": "'cne' is not a valid substitution for the letter 'c' in a spelled-out sequence; this changes the intended letter and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'one' at position 2",
+      "reason": "The number 'one' is missing from the transcription, which is significant in a sequence of numbers/letters.",
       "score": 1
     }
   ]

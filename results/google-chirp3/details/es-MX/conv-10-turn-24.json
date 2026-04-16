@@ -1,26 +1,26 @@
 {
   "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "predicted": "No, está mal. El correo está mal. Es María {punto} López {arroba} E",
+  "predicted": "No, el correo de está mal. El correo está mal. Es María {punto} López {arroba} E",
   "unintelligible": false,
-  "wer": 0.3684210526315789,
-  "werNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "werNormalizedPredicted": "No, está mal. El correo está mal. Es María punto López arroba E",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.15789473684210525,
+  "werNormalizedGold": "no esta mal el correo de vuelta esta mal el correo esta mal es maria punto lopez arroba e",
+  "werNormalizedPredicted": "no el correo de esta mal el correo esta mal es maria punto lopez arroba e",
+  "qualityScore": null,
+  "significantWer": 0.05263157894736842,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "sigWerNormalizedPredicted": "No, está mal. El correo está mal. Es María punto López arroba E",
+  "sigWerNormalizedGold": "no esta mal el correo de vuelta esta mal el correo esta mal es maria punto lopez arroba e",
+  "sigWerNormalizedPredicted": "no el correo de esta mal el correo esta mal es maria punto lopez arroba e",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'mal' at position 2",
-      "reason": "The phrase 'el correo de vuelta.' (the return email) is omitted in the actual transcription. This removes specific information about which email is wrong, but the overall meaning (that the email is wrong) is still clear from the rest of the sentence.",
+      "error": "Deletion: 'esta' at position 1",
+      "reason": "Omitting 'esta' at the beginning slightly changes the structure but does not significantly alter the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'E.' to 'E' at position 18",
-      "reason": "The only difference is the missing period after 'E', which is a punctuation difference and should be ignored as per the guidance.",
-      "score": 3
+      "error": "Deletion: 'vuelta' at position 6",
+      "reason": "Omitting 'vuelta' removes the clarification that it is the return email, which could cause confusion about which email is being referred to. This is a significant omission.",
+      "score": 1
     }
   ]
 }

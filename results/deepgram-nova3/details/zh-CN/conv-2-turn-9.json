@@ -1,25 +1,25 @@
 {
   "gold": "你有什么问题呀，我说得很。",
-  "predicted": "有什么问题啊",
+  "predicted": "有什么问题啊不说得很",
   "unintelligible": false,
-  "wer": 0.5384615384615384,
-  "werNormalizedGold": "你有什么问题呀，我说得很。",
-  "werNormalizedPredicted": "有什么问题呀",
-  "qualityScore": 2,
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "你 有 什 么 问 题 呀 ， 我 说 得 很 。",
-  "sigWerNormalizedPredicted": "有 什 么 问 题 呀",
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "你 有 什么 问题 呀 我 说 得 很",
+  "werNormalizedPredicted": "有 什么 问题 啊 不 说 得 很",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 呀 我 说 得 很",
+  "sigWerNormalizedPredicted": "有 什 么 问 题 啊 不 说 得 很",
   "sigWerErrors": [
     {
       "error": "Deletion: '你' at position 0",
-      "reason": "The subject '你' (you) is missing, which removes the reference to whom the question is addressed. This significantly changes the meaning of the sentence.",
-      "score": 1
+      "reason": "The subject '你' (you) is omitted, which can make the sentence less clear about whom the question is directed to, but in conversational Chinese, the subject is often dropped and the meaning is still generally understood from context.",
+      "score": 2
     },
     {
-      "error": "Deletion: '，' at position 7",
-      "reason": "Punctuation differences such as missing commas do not affect the meaning of the sentence.",
+      "error": "Substitution: '呀' to '啊' at position 6",
+      "reason": "'呀' and '啊' are both sentence-final particles in Chinese with similar functions, and the substitution does not change the meaning of the sentence.",
       "score": 3
     }
   ]

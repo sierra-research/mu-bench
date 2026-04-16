@@ -1,31 +1,36 @@
 {
   "gold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
-  "predicted": "Hayır, anna itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcamanı bir tüm artırmak istiyorum.",
+  "predicted": "Hayır, anna itiraz etmek istediğim bir şey yok. Sadece kredi kartım, aylık harcamanı bitimi arttırmak istiyorum.",
   "unintelligible": false,
   "wer": 0.375,
-  "werNormalizedGold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
-  "werNormalizedPredicted": "Hayır Anna, itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcamanı bir tüm artırmak istiyorum.",
-  "qualityScore": 2,
+  "werNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "werNormalizedPredicted": "hayır anna itiraz etmek istediğim bir şey yok sadece kredi kartım aylık harcamanı bitimi arttırmak istiyorum",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 2,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
-  "sigWerNormalizedPredicted": "Hayır Anna, itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcamanı bir tüm artırmak istiyorum.",
+  "sigWerNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "sigWerNormalizedPredicted": "hayır anna itiraz etmek istediğim bir şey yok sadece kredi kartım aylık harcamanı bitimi arttırmak istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna.' to 'Anna,' at position 1",
-      "reason": "Difference is only punctuation (period vs comma), which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'iptal' to 'itiraz' at position 2",
+      "reason": "'iptal' means 'cancel', 'itiraz' means 'object', which are different actions and change the intent of the sentence.",
+      "score": 1
     },
     {
       "error": "Substitution: 'için' to 'istediğim' at position 4",
-      "reason": "'için' means 'for', while 'istediğim' means 'that I want'. This changes the meaning of the sentence from 'to cancel' to 'that I want to object', which is a significant change.",
+      "reason": "'için' means 'for', 'istediğim' means 'that I want', which changes the structure and meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'harcama' to 'bir' at position 12",
-      "reason": "The insertion of 'harcamanı' (your spending) changes the meaning from 'my credit card monthly spending limit' to 'your spending', which is a significant error.",
-      "score": 1
+      "error": "Substitution: 'kartı' to 'kartım' at position 10",
+      "reason": "'kartı' means 'the card', 'kartım' means 'my card'; this is a minor possessive difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'harcama' to 'harcamanı' at position 12",
+      "reason": "'harcama' means 'spending', 'harcamanı' means 'your spending'; this changes the subject of the spending but the overall intent is still clear.",
+      "score": 2
     }
   ]
 }

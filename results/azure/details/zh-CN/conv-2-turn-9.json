@@ -1,15 +1,31 @@
 {
   "gold": "你有什么问题呀，我说得很。",
-  "predicted": "你有什么问题呀？我说的很。",
+  "predicted": "有什么问题啊，我说的很。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你有什么问题呀，我说得很。",
-  "werNormalizedPredicted": "你有什么问题呀，我说得很。",
-  "qualityScore": 3,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "你 有 什么 问题 呀 我 说 得 很",
+  "werNormalizedPredicted": "有 什么 问题 啊 我 说 的 很",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "你 有 什 么 问 题 呀 ， 我 说 得 很 。",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题 呀 ， 我 说 得 很 。",
-  "sigWerErrors": []
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 呀 我 说 得 很",
+  "sigWerNormalizedPredicted": "有 什 么 问 题 啊 我 说 的 很",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '你' at position 0",
+      "reason": "Omitting the subject '你' (you) slightly changes the sentence but the overall meaning is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '呀' to '啊' at position 6",
+      "reason": "Both '呀' and '啊' are sentence-ending particles in Chinese and are often interchangeable with only a slight difference in tone or emphasis, not meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 9",
+      "reason": "'得' and '的' are different grammatical particles in Chinese; using '的' instead of '得' is a common error but does not significantly change the meaning in this context.",
+      "score": 2
+    }
+  ]
 }

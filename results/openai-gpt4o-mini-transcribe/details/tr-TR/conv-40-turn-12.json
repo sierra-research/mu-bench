@@ -1,0 +1,41 @@
+{
+  "gold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
+  "predicted": "Hayır, yanlış anlıyor. Tamamen yanlış anlıyorsun. Tekrar söylüyorum. Hayfa kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta, Adana, Rize, Samsun, Yüzeyburgaz, Adana, Niğde, et e-mail.com.",
+  "unintelligible": false,
+  "wer": 0.18518518518518517,
+  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
+  "werNormalizedPredicted": "hayır yanlış anlıyor tamamen yanlış anlıyorsun tekrar söylüyorum hayfa kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun yüzeyburgaz adana niğde at email nokta com",
+  "qualityScore": null,
+  "significantWer": 0.18518518518518517,
+  "majorErrorsCount": 5,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
+  "sigWerNormalizedPredicted": "hayır yanlış anlıyor tamamen yanlış anlıyorsun tekrar söylüyorum hayfa kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun yüzeyburgaz adana niğde at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yazdın' to 'anlıyor' at position 2",
+      "reason": "'yazdın' means 'you wrote', 'anlıyor' means 'understands'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'almışsın' to 'anlıyorsun' at position 5",
+      "reason": "'almışsın' means 'you took', 'anlıyorsun' means 'you understand'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'harf' to 'hayfa' at position 8",
+      "reason": "'harf' means 'letter', 'hayfa' is a city name and not relevant here; this substitution makes the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'harf' at position 9",
+      "reason": "Omitting 'harf' (letter) removes important clarification that the following is a spelling, which can confuse the listener.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lüleburgaz' to 'yüzeyburgaz' at position 20",
+      "reason": "'lüleburgaz' is a city used in Turkish spelling alphabets, 'yüzeyburgaz' is not a real place and is confusing in this context.",
+      "score": 1
+    }
+  ]
+}

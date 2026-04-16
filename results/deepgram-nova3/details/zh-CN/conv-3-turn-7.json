@@ -1,21 +1,36 @@
 {
   "gold": "你写了我的电子邮箱吗？",
-  "predicted": "额那你写了我的电子邮箱吗",
+  "predicted": "那你斜了我的垫子有香吗",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werNormalizedGold": "你写了我的电子邮箱吗？",
-  "werNormalizedPredicted": "额，那你写了我的电子邮箱吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 写 了 我 的 电 子 邮 箱 吗 ？",
-  "sigWerNormalizedPredicted": "额 ， 那 你 写 了 我 的 电 子 邮 箱 吗 ？",
+  "wer": 0.5,
+  "werNormalizedGold": "你 写 了 我 的 电子 邮箱 吗",
+  "werNormalizedPredicted": "那 你 斜 了 我 的 垫子 有 香 吗",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 写 了 我 的 电 子 邮 箱 吗",
+  "sigWerNormalizedPredicted": "那 你 斜 了 我 的 垫 子 有 香 吗",
   "sigWerErrors": [
     {
-      "error": "Insertion: '额' at position 0",
-      "reason": "'额' is a filler word (like 'um' in English) and does not affect the meaning of the sentence.",
-      "score": 2
+      "error": "Insertion: '那' at position 0",
+      "reason": "'那' (that) is an extra word at the beginning, which changes the subject and context of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '写' to '斜' at position 1",
+      "reason": "'写' means 'write', while '斜' means 'slant/tilt', which completely changes the meaning of the action in the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '电' to '垫' at position 5",
+      "reason": "'电' (electric) is part of '电子邮箱' (email), while '垫' (mat/cushion) is unrelated and changes the meaning of the noun phrase.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '有' at position 7",
+      "reason": "'邮' (mail) is part of '邮箱' (mailbox/email), while '有' (have) is a verb, which disrupts the meaning of the phrase.",
+      "score": 1
     }
   ]
 }

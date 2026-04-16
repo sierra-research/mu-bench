@@ -1,0 +1,31 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com.",
+  "predicted": "Email là vinhquocchung2000emailtrinhcuong",
+  "unintelligible": false,
+  "wer": 0.7,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là vinhquocchung hai nghìn email trinh cuong",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là vinhquocchung hai nghìn email trinh cuong",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'vinhquocchung' at position 2",
+      "reason": "'minh' is a single name, while 'vinhquocchung' is a completely different name, changing the identity in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 5",
+      "reason": "Missing the 'a' (likely part of 'a còng' meaning '@'), which is essential for the correct email format.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chấm' to 'trinh' at position 8",
+      "reason": "'chấm' means 'dot' ('.') in an email address, while 'trinh' is a completely unrelated word, making the email address incorrect.",
+      "score": 1
+    }
+  ]
+}

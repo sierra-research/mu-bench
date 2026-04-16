@@ -2,30 +2,25 @@
   "gold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
   "predicted": "Tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
   "unintelligible": false,
-  "wer": 0.1875,
-  "werNormalizedGold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
+  "wer": 0.125,
+  "werNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
   "werNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
+  "sigWerNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
   "sigWerNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
-      "score": 3
-    },
-    {
       "error": "Insertion: 'không' at position 10",
-      "reason": "The word 'không' (no/not) is moved in the sentence, but the overall meaning remains the same. This is a minor word order change, not a significant error.",
-      "score": 2
+      "reason": "The word 'không' (meaning 'no' or 'not') is inserted in the middle of the sentence, which changes the meaning from asking if income proof is needed to asking if income proof is not needed. This alters the intent of the question significantly.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'không?' at position 15",
-      "reason": "The final 'không?' is a question particle in Vietnamese, but its earlier appearance in the sentence preserves the question meaning. The sentence is still understandable as a question, so this is a minor error.",
-      "score": 2
+      "error": "Deletion: 'không' at position 15",
+      "reason": "The word 'không' is missing at the end of the sentence, which is important for forming a yes/no question in Vietnamese. Its absence changes the structure and meaning of the question.",
+      "score": 1
     }
   ]
 }

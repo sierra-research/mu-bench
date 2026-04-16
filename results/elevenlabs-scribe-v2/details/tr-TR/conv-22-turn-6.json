@@ -2,14 +2,35 @@
   "gold": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
   "predicted": "Yalnız e-mail adresim yanlış oldu. Zeynep değil, Zayneb olacak. zayneb.arslan@email.com",
   "unintelligible": false,
-  "wer": 0.0,
+  "wer": 0.625,
   "werNormalizedGold": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "Yalnız e-mail adresim yanlış oldu. Zeynep değil, Zayneb olacak. zayneb.arslan@email.com",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "Yalnız e-mail adresim yanlış oldu. Zeynep değil, Zayneb olacak. zayneb.arslan@email.com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'e-mail' at position 1",
+      "reason": "'email' and 'e-mail' are variant spellings of the same word, no change in meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'değil' to 'değil,' at position 6",
+      "reason": "The only difference is the comma, which is punctuation and should be ignored.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'Zaynep' to 'zayneb.arslan@email.com' at position 9",
+      "reason": "The expected is the name 'Zaynep', but the actual gives the full email address, which is a significant change and derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 10",
+      "reason": "'nokta' (meaning 'dot') is omitted, but the actual gives the email in standard format with '.', so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

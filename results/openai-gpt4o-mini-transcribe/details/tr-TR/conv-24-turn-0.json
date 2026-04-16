@@ -1,0 +1,36 @@
+{
+  "gold": "Kolay gelsin Anna Hanım. Ben kredi kartı bilgilerimi öğrenmek için, yani IBAN numaramı öğrenebilir miyim?",
+  "predicted": "Kolay gelsin Anlı Hanım. Ben kredi kartlı bilgilerimi öğrenmek istiyorum. Yani hani IBAN numaramı öğrenebilir miyim?",
+  "unintelligible": false,
+  "wer": 0.26666666666666666,
+  "werNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için yani iban numaramı öğrenebilir miyim",
+  "werNormalizedPredicted": "kolay gelsin anlı hanım ben kredi kartlı bilgilerimi öğrenmek istiyorum yani hani iban numaramı öğrenebilir miyim",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için yani iban numaramı öğrenebilir miyim",
+  "sigWerNormalizedPredicted": "kolay gelsin anlı hanım ben kredi kartlı bilgilerimi öğrenmek istiyorum yani hani iban numaramı öğrenebilir miyim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlı' at position 2",
+      "reason": "'Anna' is a proper name, while 'anlı' is a Turkish word meaning 'foreheaded' or 'with a forehead'; this changes the addressee and makes the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kartı' to 'kartlı' at position 6",
+      "reason": "'Kartı' means 'card' (possessive), while 'kartlı' means 'with card'; this is a minor grammatical error that does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'için' to 'istiyorum' at position 9",
+      "reason": "'İçin' means 'for', while 'istiyorum' means 'I want'; this changes the structure of the sentence but the overall intent (to learn the information) is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'hani' at position 11",
+      "reason": "'Hani' is a filler word in Turkish, which does not change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

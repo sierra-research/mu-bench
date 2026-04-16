@@ -1,20 +1,25 @@
 {
   "gold": "Oh, oh, oh.",
-  "predicted": "I don't know.",
+  "predicted": "No.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "Oh, oh, oh.",
-  "werNormalizedPredicted": "I don't know.",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "oh oh oh",
+  "werNormalizedPredicted": "no",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Oh, oh, oh.",
-  "sigWerNormalizedPredicted": "I don't know.",
+  "sigWerNormalizedGold": "oh oh oh",
+  "sigWerNormalizedPredicted": "no",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Oh,' to 'I' at position 0",
-      "reason": "The expected phrase is an exclamation ('Oh'), while the actual is a pronoun ('I'), which changes the meaning of the utterance completely.",
+      "error": "Substitution: 'oh' to 'no' at position 0",
+      "reason": "'oh' and 'no' have completely different meanings; 'no' is a negation while 'oh' is an exclamation, which changes the intent of the utterance significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'oh' at position 1",
+      "reason": "Missing one of the repeated exclamations changes the tone and intent of the utterance, making it incomplete and altering the meaning.",
       "score": 1
     }
   ]

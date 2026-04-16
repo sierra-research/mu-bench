@@ -1,20 +1,25 @@
 {
   "gold": "Yalnız telefon numaramı yanlış söylediniz en son söylediğinizde. Bilgilerimi tekrarlar mısınız? Ben tekrar kontrol edeyim.",
-  "predicted": "Yalnız telefon telefon numaramı, yanlış söylediniz. En son söylediğinizde bilgilerimi tekrarlar mısınız? Ben tekrar kontrol edeyim.",
+  "predicted": "Yalnız telefon telefon numaramı, yanlış söyledin. En son söylediğinizde bilgilerimi tekrarlar mısınız? Ben tekrar kontrol edeyim.",
   "unintelligible": false,
-  "wer": 0.06666666666666667,
-  "werNormalizedGold": "Yalnız telefon numaramı yanlış söylediniz en son söylediğinizde. Bilgilerimi tekrarlar mısınız? Ben tekrar kontrol edeyim.",
-  "werNormalizedPredicted": "Yalnız telefon telefon numaramı yanlış söylediniz en son söylediğinizde. Bilgilerimi tekrarlar mısınız? Ben tekrar kontrol edeyim.",
-  "qualityScore": 3,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "yalnız telefon numaramı yanlış söylediniz en son söylediğinizde bilgilerimi tekrarlar mısınız ben tekrar kontrol edeyim",
+  "werNormalizedPredicted": "yalnız telefon telefon numaramı yanlış söyledin en son söylediğinizde bilgilerimi tekrarlar mısınız ben tekrar kontrol edeyim",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Yalnız telefon numaramı yanlış söylediniz en son söylediğinizde. Bilgilerimi tekrarlar mısınız? Ben tekrar kontrol edeyim.",
-  "sigWerNormalizedPredicted": "Yalnız telefon telefon numaramı yanlış söylediniz en son söylediğinizde. Bilgilerimi tekrarlar mısınız? Ben tekrar kontrol edeyim.",
+  "sigWerNormalizedGold": "yalnız telefon numaramı yanlış söylediniz en son söylediğinizde bilgilerimi tekrarlar mısınız ben tekrar kontrol edeyim",
+  "sigWerNormalizedPredicted": "yalnız telefon telefon numaramı yanlış söyledin en son söylediğinizde bilgilerimi tekrarlar mısınız ben tekrar kontrol edeyim",
   "sigWerErrors": [
     {
       "error": "Insertion: 'telefon' at position 2",
-      "reason": "The word 'telefon' is repeated, which is a minor redundancy but does not change the meaning of the sentence.",
+      "reason": "The repeated word 'telefon' is a minor redundancy and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'söylediniz' to 'söyledin' at position 4",
+      "reason": "The change from formal 'söylediniz' to informal 'söyledin' does not alter the meaning, only the level of formality.",
       "score": 2
     }
   ]

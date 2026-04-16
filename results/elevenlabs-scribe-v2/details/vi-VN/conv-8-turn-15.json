@@ -1,21 +1,26 @@
 {
   "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
-  "predicted": "Chưa đầy đủ. Tức là Một, Hai, Ba Đường Lê Lợi, Hồ Chí Minh City, zip code là bảy trăm ngàn, Việt Nam",
+  "predicted": "Chưa đầy đủ đó là: Một, hai, ba đường Lợi Hồ Chí Minh City, zip code là bảy trăm ngàn, Việt Nam",
   "unintelligible": false,
-  "wer": 0.19047619047619047,
-  "werNormalizedGold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
-  "werNormalizedPredicted": "Chưa đầy đủ. Tức là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
-  "qualityScore": 2,
-  "significantWer": 0.047619047619047616,
+  "wer": 0.08695652173913043,
+  "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "chưa đầy đủ đó là một hai ba đường lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "qualityScore": null,
+  "significantWer": 0.043478260869565216,
   "majorErrorsCount": 1,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
-  "sigWerNormalizedPredicted": "Chưa đầy đủ. Tức là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chưa đầy đủ đó là một hai ba đường lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Chưa.' to 'Chưa' at position 0",
-      "reason": "The phrase 'đầy đủ.' is inserted at the beginning, which changes the meaning from 'Not yet.' to 'Not complete.' This alters the intent of the sentence significantly.",
+      "error": "Substitution: 'phải' to 'đó' at position 3",
+      "reason": "'phải' means 'must' or 'should', while 'đó' means 'that'. This changes the meaning of the sentence, as it alters the intent from a requirement to a statement.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'lê' at position 9",
+      "reason": "'lê' is part of the street name 'lê lợi'. Omitting 'lê' changes the proper noun and could lead to confusion about the address.",
+      "score": 2
     }
   ]
 }

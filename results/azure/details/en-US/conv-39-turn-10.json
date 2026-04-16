@@ -2,14 +2,25 @@
   "gold": "No. It's at email dot com. E M A I L dot com.",
   "predicted": "No, it's at e-mail.com, EMAIL.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "No. It's at email dot com. E M A I L dot com.",
-  "werNormalizedPredicted": "No. It's at email dot com. E M A I L dot com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "No. It's at email dot com. E M A I L dot com.",
-  "sigWerNormalizedPredicted": "No. It's at email dot com. E M A I L dot com.",
-  "sigWerErrors": []
+  "wer": 0.35714285714285715,
+  "werNormalizedGold": "no it is at email dot com e m a i l dot com",
+  "werNormalizedPredicted": "no it is at email dot com email dot com",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "no it is at email dot com e m a i l dot com",
+  "sigWerNormalizedPredicted": "no it is at email dot com email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'email' at position 7",
+      "reason": "The expected sequence spells out 'email' letter by letter, but the actual transcript repeats the word 'email' instead of spelling it out. This loses the intended detail of spelling, which could be important for clarity, especially in email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'm' at position 8",
+      "reason": "The letter 'm' is missing from the spelled-out sequence, which means the spelling is incomplete and could lead to misunderstanding the email address.",
+      "score": 1
+    }
+  ]
 }

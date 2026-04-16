@@ -1,21 +1,26 @@
 {
   "gold": "Đã sẵn sàng. Vui lòng đọc lại mã.",
-  "predicted": "Đã đã sẵn sàng vui lòng đọc lại mã",
+  "predicted": "Đã, đã sẵn sàng. Vui lòng đọc lại mà",
   "unintelligible": false,
-  "wer": 0.125,
-  "werNormalizedGold": "Đã sẵn sàng. Vui lòng đọc lại mã.",
-  "werNormalizedPredicted": "Đã đã sẵn sàng. Vui lòng đọc lại mã.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.25,
+  "werNormalizedGold": "đã sẵn sàng vui lòng đọc lại mã",
+  "werNormalizedPredicted": "đã đã sẵn sàng vui lòng đọc lại mà",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Đã sẵn sàng. Vui lòng đọc lại mã.",
-  "sigWerNormalizedPredicted": "Đã đã sẵn sàng. Vui lòng đọc lại mã.",
+  "sigWerNormalizedGold": "đã sẵn sàng vui lòng đọc lại mã",
+  "sigWerNormalizedPredicted": "đã đã sẵn sàng vui lòng đọc lại mà",
   "sigWerErrors": [
     {
       "error": "Insertion: 'đã' at position 1",
-      "reason": "The extra 'đã' is a repetition at the beginning of the sentence, but it does not change the overall meaning or make the sentence incoherent. The intent and meaning remain clear.",
+      "reason": "The repeated 'đã' does not change the meaning of the sentence, as it is just a redundant word and the sentence remains clear.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'mã' to 'mà' at position 7",
+      "reason": "'mã' (code) and 'mà' (but/that) are completely different words in Vietnamese; this substitution changes the meaning and makes the sentence incoherent in context.",
+      "score": 1
     }
   ]
 }

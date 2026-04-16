@@ -1,0 +1,26 @@
+{
+  "gold": "Tôi muốn gặp nhân viên chăm sóc khách hàng.",
+  "predicted": "tôi muốn được giao tiếp",
+  "unintelligible": false,
+  "wer": 0.7777777777777778,
+  "werNormalizedGold": "tôi muốn gặp nhân viên chăm sóc khách hàng",
+  "werNormalizedPredicted": "tôi muốn được giao tiếp",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "tôi muốn gặp nhân viên chăm sóc khách hàng",
+  "sigWerNormalizedPredicted": "tôi muốn được giao tiếp",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'gặp' to 'được' at position 2",
+      "reason": "'gặp' means 'to meet', while 'được' means 'to be able to' or 'to get'. This changes the action and intent of the sentence, resulting in a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chăm' at position 5",
+      "reason": "The entire phrase 'nhân viên chăm sóc khách hàng' (customer service staff) is missing, which removes the main subject of the request and makes the sentence incomplete and changes its intent.",
+      "score": 1
+    }
+  ]
+}

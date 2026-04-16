@@ -3,23 +3,23 @@
   "predicted": "İyi şanslar arkadaşlar",
   "unintelligible": false,
   "wer": 0.75,
-  "werNormalizedGold": "İyi çalışmalar, kolay gelsin.",
-  "werNormalizedPredicted": "İyi şanslar, arkadaşlar.",
-  "qualityScore": 1,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "iyi calismalar kolay gelsin",
+  "werNormalizedPredicted": "iyi sanslar arkadaslar",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "İyi çalışmalar, kolay gelsin.",
-  "sigWerNormalizedPredicted": "İyi şanslar, arkadaşlar.",
+  "sigWerNormalizedGold": "iyi calismalar kolay gelsin",
+  "sigWerNormalizedPredicted": "iyi sanslar arkadaslar",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'çalışmalar,' to 'şanslar,' at position 1",
-      "reason": "'Çalışmalar' (good work) and 'şanslar' (good luck) are different well-wishing phrases, but they convey a similar positive sentiment. The meaning of the sentence changes slightly but not drastically.",
-      "score": 2
+      "error": "Substitution: 'calismalar' to 'sanslar' at position 1",
+      "reason": "'calismalar' means 'work/studies' and 'sanslar' means 'luck', which are unrelated and change the meaning of the sentence significantly.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'gelsin.' at position 3",
-      "reason": "Omitting 'gelsin' removes the second part of the phrase 'kolay gelsin,' which is a common Turkish expression. Its absence makes the sentence incomplete and changes the intended meaning.",
+      "error": "Deletion: 'gelsin' at position 3",
+      "reason": "'gelsin' means 'may it come' (as in 'may it be easy'), and its omission removes a key part of the intended well-wishing phrase, significantly altering the meaning.",
       "score": 1
     }
   ]

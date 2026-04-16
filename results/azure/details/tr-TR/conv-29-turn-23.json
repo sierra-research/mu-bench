@@ -2,25 +2,20 @@
   "gold": "Email nokta com adresime.",
   "predicted": "Email.com adresine evet.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Email nokta com adresime.",
-  "werNormalizedPredicted": "Email.com adresime evet.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.75,
+  "werNormalizedGold": "email nokta com adresime",
+  "werNormalizedPredicted": "email com adresine evet",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Email nokta com adresime.",
-  "sigWerNormalizedPredicted": "Email.com adresime evet.",
+  "sigWerNormalizedGold": "email nokta com adresime",
+  "sigWerNormalizedPredicted": "email com adresine evet",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Email' to 'Email.com' at position 0",
-      "reason": "'nokta com' is the Turkish way of saying '.com' (nokta means 'dot'), so '.com' is a direct translation and conveys the same meaning in this context.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'adresime.' at position 3",
-      "reason": "'evet' means 'yes' in Turkish and is an extra word not present in the expected sentence. Its addition changes the meaning by adding an affirmation, which is not in the original sentence.",
-      "score": 2
+      "error": "Substitution: 'nokta' to 'com' at position 1",
+      "reason": "'nokta' (which means 'dot' in Turkish, as in 'dot com') is omitted and replaced by 'com', which changes the structure of the email address and makes it incomplete or incorrect. This significantly alters the meaning, as the dot is essential in an email address.",
+      "score": 1
     }
   ]
 }

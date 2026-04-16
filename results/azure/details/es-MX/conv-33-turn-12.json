@@ -1,21 +1,26 @@
 {
   "gold": "No, no tengo. ¿Me podías mandar un correo electrónico?",
-  "predicted": "no tengo este acceso a la app, ¿me podrías mandar un correo electrónico?",
+  "predicted": "No tengo este acceso a la app, ¿me podrías mandar un correo electrónico?",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "No, no tengo. ¿Me podías mandar un correo electrónico?",
-  "werNormalizedPredicted": "no tengo este acceso a la app, ¿me podrías mandar un correo electrónico?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.7777777777777778,
+  "werNormalizedGold": "no no tengo me podias mandar un correo electronico",
+  "werNormalizedPredicted": "no tengo este acceso a la app me podrias mandar un correo electronico",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "No, no tengo. ¿Me podías mandar un correo electrónico?",
-  "sigWerNormalizedPredicted": "no tengo este acceso a la app, ¿me podrías mandar un correo electrónico?",
+  "sigWerNormalizedGold": "no no tengo me podias mandar un correo electronico",
+  "sigWerNormalizedPredicted": "no tengo este acceso a la app me podrias mandar un correo electronico",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No,' to 'a' at position 0",
-      "reason": "The initial 'No,' is omitted in the actual transcription, but the rest of the sentence still makes sense and the request is clear. The omission does not significantly change the meaning.",
+      "error": "Substitution: 'no' to 'la' at position 1",
+      "reason": "The repeated 'no' at the start of the expected sentence is missing in the actual. This changes the tone and possibly the meaning, as the double 'no' can emphasize negation or denial in Spanish.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'podias' to 'podrias' at position 4",
+      "reason": "The phrase 'este acceso a la app' is inserted in the actual transcript, which adds new information not present in the expected. This could change the meaning of the sentence, as it introduces a new topic (access to the app) that was not in the original.",
+      "score": 1
     }
   ]
 }

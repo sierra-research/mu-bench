@@ -1,20 +1,25 @@
 {
   "gold": "Sẵn sàng. Vui lòng đọc lại giùm.",
-  "predicted": "Chán chè vui lòng đọc lại giùm.",
+  "predicted": "Chấn thương xin vui lòng gặp lại giùm.",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "Sẵn sàng. Vui lòng đọc lại giùm.",
-  "werNormalizedPredicted": "Chán chè. Vui lòng đọc lại giùm.",
-  "qualityScore": 1,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "sẵn sàng vui lòng đọc lại giùm",
+  "werNormalizedPredicted": "chấn thương xin vui lòng gặp lại giùm",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Sẵn sàng. Vui lòng đọc lại giùm.",
-  "sigWerNormalizedPredicted": "Chán chè. Vui lòng đọc lại giùm.",
+  "sigWerNormalizedGold": "sẵn sàng vui lòng đọc lại giùm",
+  "sigWerNormalizedPredicted": "chấn thương xin vui lòng gặp lại giùm",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sẵn' to 'Chán' at position 0",
-      "reason": "'Sẵn' means 'ready' while 'Chán' means 'bored' in Vietnamese, which completely changes the meaning of the sentence and makes it incoherent in context.",
+      "error": "Substitution: 'sẵn' to 'thương' at position 0",
+      "reason": "'sẵn' (ready) and 'chấn' (shock/trauma) are completely different words and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đọc' to 'gặp' at position 4",
+      "reason": "'đọc' (read) and 'gặp' (meet) are different actions and this substitution changes the intent of the sentence.",
       "score": 1
     }
   ]

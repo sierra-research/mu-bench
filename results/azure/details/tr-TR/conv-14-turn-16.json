@@ -1,20 +1,30 @@
 {
   "gold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "predicted": "Altıncı harf p olacak pırasa'nın p si t değil.",
+  "predicted": "Zaynnet altıncı arttı t olacak pırasanın f si t değil.",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werNormalizedGold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "werNormalizedPredicted": "Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "qualityScore": 3,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "zaynep altinci harf p olacak pirasanin p'si t degil",
+  "werNormalizedPredicted": "zaynnet altinci artti t olacak pirasanin f si t degil",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "sigWerNormalizedPredicted": "Altıncı harf P olacak. Pırasanın P'si, T değil.",
+  "sigWerNormalizedGold": "zaynep altinci harf p olacak pirasanin p'si t degil",
+  "sigWerNormalizedPredicted": "zaynnet altinci artti t olacak pirasanin f si t degil",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Zaynep.' at position 0",
-      "reason": "The name 'Zaynep.' is omitted from the beginning. If this is a person's name being referenced or addressed, its omission could cause confusion about whom the instructions are for, which can significantly affect the meaning of the sentence.",
+      "error": "Substitution: 'zaynep' to 'zaynnet' at position 0",
+      "reason": "The name 'zaynep' is misspelled as 'zaynnet', which is a significant change for a proper noun and could lead to confusion about the person's identity.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'harf' to 'artti' at position 2",
+      "reason": "'harf' means 'letter' while 'artti' means 'increased' in Turkish; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'p'si' to 'si' at position 6",
+      "reason": "The insertion of 'f' instead of the expected 'p' changes the letter being referenced, which is crucial in this context.",
       "score": 1
     }
   ]

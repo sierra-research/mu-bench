@@ -1,21 +1,21 @@
 {
   "gold": "我想要提高我的信用卡限额。",
-  "predicted": "我想要提高我的信用卡额。",
+  "predicted": "我想要提高我的信用卡额度。",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werNormalizedGold": "我想要提高我的信用卡限额。",
-  "werNormalizedPredicted": "我想要提高我的信用卡额。",
-  "qualityScore": 2,
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "我 想 要 提 高 我 的 信 用 卡 限 额 。",
-  "sigWerNormalizedPredicted": "我 想 要 提 高 我 的 信 用 卡 额 。",
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "我 想 要 提高 我 的 信用卡 限额",
+  "werNormalizedPredicted": "我 想 要 提高 我 的 信用卡 额度",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 想 要 提 高 我 的 信 用 卡 限 额",
+  "sigWerNormalizedPredicted": "我 想 要 提 高 我 的 信 用 卡 额 度",
   "sigWerErrors": [
     {
-      "error": "Deletion: '限' at position 10",
-      "reason": "The word '限' (limit) is missing, so '信用卡限额' (credit card limit) becomes '信用卡额' (credit card amount), which changes the meaning from 'credit card limit' to 'credit card amount'. This is a significant change in meaning.",
-      "score": 1
+      "error": "Substitution: '限' to '额' at position 10",
+      "reason": "'限额' (credit limit) is a fixed phrase, while '额度' (quota/limit) is also commonly used in banking to refer to credit limit. The substitution does not change the meaning in this context.",
+      "score": 3
     }
   ]
 }

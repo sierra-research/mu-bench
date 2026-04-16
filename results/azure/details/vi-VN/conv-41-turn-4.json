@@ -1,15 +1,26 @@
 {
   "gold": "Đã sẵn sàng.",
-  "predicted": "Đã sẵn sàng.",
+  "predicted": "Ỉa.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Đã sẵn sàng.",
-  "werNormalizedPredicted": "Đã sẵn sàng.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "da san sang",
+  "werNormalizedPredicted": "ia",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Đã sẵn sàng.",
-  "sigWerNormalizedPredicted": "Đã sẵn sàng.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "da san sang",
+  "sigWerNormalizedPredicted": "ia",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'da' to 'ia' at position 0",
+      "reason": "'ia' is a completely different word from 'da', which changes the meaning of the phrase significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'san' at position 1",
+      "reason": "Omitting 'san' removes a key part of the expected phrase, making the actual transcription incomplete and significantly altering the meaning.",
+      "score": 1
+    }
+  ]
 }

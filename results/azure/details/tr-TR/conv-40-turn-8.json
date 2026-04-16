@@ -1,15 +1,21 @@
 {
   "gold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "predicted": "Hayır gmail değil e mail e mail olarak yazacaksın e mail.com.",
+  "predicted": "Hayır g mail email olarak yazacaksın e mail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "werNormalizedPredicted": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "werNormalizedPredicted": "hayır gmail email olarak yazacaksın email nokta com",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "sigWerNormalizedPredicted": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "sigWerNormalizedPredicted": "hayır gmail email olarak yazacaksın email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'değil' at position 2",
+      "reason": "Omitting 'değil' (which means 'not') reverses the meaning of the sentence, changing it from 'not gmail' to 'gmail', which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
 }

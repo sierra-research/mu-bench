@@ -2,14 +2,30 @@
   "gold": "Verildi. Başvuru numaram 975. Referans numaram ise 22 56 15.",
   "predicted": "Verildi. Başvuru numaram 975, referans numaram ise 225615.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Verildi. Başvuru numaram 975. Referans numaram ise 22 56 15.",
-  "werNormalizedPredicted": "Verildi. Başvuru numaram 975. Referans numaram ise 22 56 15.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Verildi. Başvuru numaram 975. Referans numaram ise 22 56 15.",
-  "sigWerNormalizedPredicted": "Verildi. Başvuru numaram 975. Referans numaram ise 22 56 15.",
-  "sigWerErrors": []
+  "wer": 0.3125,
+  "werNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
+  "werNormalizedPredicted": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş bin altı yüz on beş",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
+  "sigWerNormalizedPredicted": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş bin altı yüz on beş",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'iki' at position 10",
+      "reason": "'iki' (two hundred) changes the reference number from 'yirmi iki' (twenty two) to 'iki yüz yirmi beş' (two hundred twenty five), which is a significant change in the number and alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'iki' to 'beş' at position 11",
+      "reason": "The expected number 'yirmi iki elli altı' (2256) is replaced with 'iki yüz yirmi beş bin altı yüz' (225600), which is a completely different number and significantly changes the reference number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'yüz' at position 14",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
 }

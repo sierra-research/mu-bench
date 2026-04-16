@@ -1,20 +1,25 @@
 {
   "gold": "Merhaba. Benim banka kartımın süresi dolmuştu. Yenisini istemiştim ama hala elime ulaşmadı.",
-  "predicted": "Merhaba, benim banka kartımın süresi dolmuştu. Yenisini istemiştim ama hala 20 ulaşmadı.",
+  "predicted": "Merhaba, benim banka kartımın süresiz dolmuştu. Yenisini istemiştim ama hala yirime ulaşmadı.",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werNormalizedGold": "Merhaba. Benim banka kartımın süresi dolmuştu. Yenisini istemiştim ama hala elime ulaşmadı.",
-  "werNormalizedPredicted": "Merhaba. Benim banka kartımın süresi dolmuştu. Yenisini istemiştim ama hala 20 ulaşmadı.",
-  "qualityScore": 2,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "merhaba benim banka kartımın süresi dolmuştu yenisini istemiştim ama hala elime ulaşmadı",
+  "werNormalizedPredicted": "merhaba benim banka kartımın süresiz dolmuştu yenisini istemiştim ama hala yirime ulaşmadı",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Merhaba. Benim banka kartımın süresi dolmuştu. Yenisini istemiştim ama hala elime ulaşmadı.",
-  "sigWerNormalizedPredicted": "Merhaba. Benim banka kartımın süresi dolmuştu. Yenisini istemiştim ama hala 20 ulaşmadı.",
+  "sigWerNormalizedGold": "merhaba benim banka kartımın süresi dolmuştu yenisini istemiştim ama hala elime ulaşmadı",
+  "sigWerNormalizedPredicted": "merhaba benim banka kartımın süresiz dolmuştu yenisini istemiştim ama hala yirime ulaşmadı",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'elime' to '20' at position 10",
-      "reason": "'elime' (to my hand) is replaced with '20', which is a number and makes the sentence incoherent and changes the meaning significantly.",
+      "error": "Substitution: 'süresi' to 'süresiz' at position 4",
+      "reason": "'Süresi' means 'duration/expiry', while 'süresiz' means 'without duration/perpetual'. This changes the meaning of the sentence significantly, as it implies the card has no expiry instead of being expired.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'elime' to 'yirime' at position 10",
+      "reason": "'Elime' means 'to my hand' (i.e., 'I have received it'), while 'yirime' is not a valid word in Turkish and makes the sentence incoherent.",
       "score": 1
     }
   ]

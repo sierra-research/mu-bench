@@ -2,25 +2,30 @@
   "gold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
   "predicted": "Thế làm thế nào để tôi có được cái bản sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy?",
   "unintelligible": false,
-  "wer": 0.08695652173913043,
-  "werNormalizedGold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "werNormalizedPredicted": "Thế làm thế nào để tôi có được bản sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy?",
-  "qualityScore": 3,
-  "significantWer": 0.08695652173913043,
-  "majorErrorsCount": 2,
+  "wer": 0.13043478260869565,
+  "werNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
+  "werNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "sigWerNormalizedPredicted": "Thế làm thế nào để tôi có được bản sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy?",
+  "sigWerNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
+  "sigWerNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'cái' at position 8",
+      "reason": "'cái' is a classifier in Vietnamese and its presence does not change the meaning of the sentence in this context.",
+      "score": 3
+    },
+    {
       "error": "Deletion: 'sao' at position 10",
-      "reason": "Omitting 'sao' from 'bản sao sao kê' changes the meaning from 'copy of the statement' to just 'statement', which could confuse the request and is a significant error.",
-      "score": 1
+      "reason": "Omitting the repeated 'sao' in 'bản sao sao kê' (copy of statement) does not significantly change the meaning, as 'bản sao kê' is still understood as 'statement copy'.",
+      "score": 3
     },
     {
       "error": "Deletion: 'nhất' at position 17",
-      "reason": "Omitting 'nhất' from 'mới nhất' changes 'latest bill' to just 'new bill', which could result in the wrong document being provided. This is a significant error.",
-      "score": 1
+      "reason": "Omitting 'nhất' (most/recent) changes the request from 'the most recent bill' to just 'the bill', which could lead to misunderstanding about which bill is requested.",
+      "score": 2
     }
   ]
 }

@@ -2,14 +2,25 @@
   "gold": "34 56 7 8.",
   "predicted": "345678",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "34 56 7 8.",
-  "werNormalizedPredicted": "34 56 7 8.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "34 56 7 8.",
-  "sigWerNormalizedPredicted": "34 56 7 8.",
-  "sigWerErrors": []
+  "wer": 1.1666666666666667,
+  "werNormalizedGold": "thirty four fifty six seven eight",
+  "werNormalizedPredicted": "three hundred forty five thousand six hundred seventy eight",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "thirty four fifty six seven eight",
+  "sigWerNormalizedPredicted": "three hundred forty five thousand six hundred seventy eight",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thirty' to 'forty' at position 0",
+      "reason": "The number 'three' is not present in the expected sequence and changes the entire meaning of the number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'seven' to 'seventy' at position 4",
+      "reason": "'Thirty' and 'forty' are different numbers, which significantly alters the intended value.",
+      "score": 1
+    }
+  ]
 }

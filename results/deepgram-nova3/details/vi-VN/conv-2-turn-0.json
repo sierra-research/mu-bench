@@ -1,20 +1,30 @@
 {
   "gold": "Xin chào. Muốn nâng hạn mức của thẻ tín dụng.",
-  "predicted": "Xin chào. Muốn muốn nâng nâng hạn mức cổ thể sẽ ứng dụng.",
+  "predicted": "Xin chào muốn muốn nâng nâng hạn mức cụ thể sẽ tín dụng",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Xin chào. Muốn nâng hạn mức của thẻ tín dụng.",
-  "werNormalizedPredicted": "Xin chào. Muốn muốn nâng nâng hạn mức của thẻ tín dụng.",
-  "qualityScore": 2,
+  "wer": 0.5,
+  "werNormalizedGold": "xin chào muốn nâng hạn mức của thẻ tín dụng",
+  "werNormalizedPredicted": "xin chào muốn muốn nâng nâng hạn mức cụ thể sẽ tín dụng",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Xin chào. Muốn nâng hạn mức của thẻ tín dụng.",
-  "sigWerNormalizedPredicted": "Xin chào. Muốn muốn nâng nâng hạn mức của thẻ tín dụng.",
+  "sigWerNormalizedGold": "xin chào muốn nâng hạn mức của thẻ tín dụng",
+  "sigWerNormalizedPredicted": "xin chào muốn muốn nâng nâng hạn mức cụ thể sẽ tín dụng",
   "sigWerErrors": [
     {
       "error": "Insertion: 'muốn' at position 3",
-      "reason": "The word 'muốn' is repeated, but this does not change the overall meaning of the sentence. It is a minor repetition that does not derail understanding.",
+      "reason": "The extra 'muốn' (want) is a repetition but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'nâng' at position 4",
+      "reason": "The extra 'nâng' (increase) is a repetition but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'của' to 'thể' at position 6",
+      "reason": "The insertion of 'cụ' (part of 'cụ thể' meaning 'specifically') adds unnecessary detail but does not derail the meaning.",
       "score": 2
     }
   ]

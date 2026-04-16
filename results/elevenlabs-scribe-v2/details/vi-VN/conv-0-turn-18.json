@@ -2,19 +2,24 @@
   "gold": "Số điện thoại sai. Số điện thoại sai.",
   "predicted": "Sự định hài sai, sự định không phải sai.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Số điện thoại sai. Số điện thoại sai.",
-  "werNormalizedPredicted": "Sự định hài sai, sự định không phải sai.",
-  "qualityScore": 1,
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
+  "wer": 0.875,
+  "werNormalizedGold": "số điện thoại sai số điện thoại sai",
+  "werNormalizedPredicted": "sự định hài sai sự định không phải sai",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Số điện thoại sai. Số điện thoại sai.",
-  "sigWerNormalizedPredicted": "Sự định hài sai, sự định không phải sai.",
+  "sigWerNormalizedGold": "số điện thoại sai số điện thoại sai",
+  "sigWerNormalizedPredicted": "sự định hài sai sự định không phải sai",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Số' to 'định' at position 0",
-      "reason": "The actual sentence uses completely different words ('Sự định hài' instead of 'Số điện thoại'), which changes the meaning from 'phone number is wrong' to something incoherent or unrelated. This derails the intended meaning.",
+      "error": "Substitution: 'số' to 'sự' at position 0",
+      "reason": "'số' (number) and 'sự' (event/thing) are completely different words and meanings, which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'số' to 'định' at position 4",
+      "reason": "'điện' (electric/phone) and 'định' (determine) are unrelated, which makes the sentence incoherent.",
       "score": 1
     }
   ]

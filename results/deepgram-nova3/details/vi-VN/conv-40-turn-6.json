@@ -2,25 +2,20 @@
   "gold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.125,
-  "werNormalizedGold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Số điện thoại là cộng 84 91 1 2 3 4 5 6 7 8.",
-  "qualityScore": 3,
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Số điện thoại là cộng 84 91 1 2 3 4 5 6 7 8.",
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
-      "error": "Substitution: '9' to '91' at position 6",
-      "reason": "The digit '9' was transcribed as '91', which merges two separate digits into one. This changes the phone number and could lead to dialing the wrong number.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '1' at position 7",
-      "reason": "The digit '1' is missing from the sequence, which alters the phone number and makes it incorrect.",
-      "score": 1
+      "error": "Substitution: 'một' to 'mốt' at position 9",
+      "reason": "The insertion of 'mươi' changes the number from 'chín một' (91) to 'chín mươi mốt' (91), which is a different way of saying the same number in Vietnamese. In this context, both forms are commonly used and refer to the same number, so the meaning is preserved.",
+      "score": 3
     }
   ]
 }

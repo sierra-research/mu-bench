@@ -1,31 +1,36 @@
 {
   "gold": "你说得对，我现在等待新卡。想知道它的状态。",
-  "predicted": "润润说得对我现在当代野性卡想知道她的状态。",
+  "predicted": "润润说的对我现在当代性卡想知道他的状态。",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "你说得对，我现在等待新卡。想知道它的状态。",
-  "werNormalizedPredicted": "润润说得对，我现在当代野性卡。想知道她的状态。",
-  "qualityScore": 1,
-  "significantWer": 0.09523809523809523,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "你 说 得 对 ， 我 现 在 等 待 新 卡 。 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "润 润 说 得 对 ， 我 现 在 当 代 野 性 卡 。 想 知 道 她 的 状 态 。",
+  "wer": 0.3888888888888889,
+  "werNormalizedGold": "你 说 得 对 我 现在 等待 新 卡 想 知道 它 的 状态",
+  "werNormalizedPredicted": "润润 说 的 对 我 现在 当代 性 卡 想 知道 他 的 状态",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "你 说 得 对 我 现 在 等 待 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "润 润 说 的 对 我 现 在 当 代 性 卡 想 知 道 他 的 状 态",
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '润' at position 0",
-      "reason": "The extra '润' at the beginning adds a name or word not present in the original, which could confuse the subject of the sentence.",
+      "reason": "The extra '润' at the beginning is not present in the expected sentence and introduces an unrelated word, which can confuse the meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: '等' to '代' at position 8",
-      "reason": "Replacing '你' (you) with '润' (a name or unrelated word) changes the subject, significantly altering the meaning.",
+      "error": "Substitution: '得' to '的' at position 2",
+      "reason": "Replacing '你' (you) with '润' (run/moist) changes the subject and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: '它' to '她' at position 16",
-      "reason": "The insertion of '当' changes the phrase structure and could confuse the meaning of the sentence.",
+      "error": "Substitution: '等' to '当' at position 7",
+      "reason": "'得' and '的' are both function words in Chinese, but in this context, '得' is correct for expressing 'correctly/rightly'; using '的' is a minor grammatical error but does not derail the meaning.",
       "score": 2
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 14",
+      "reason": "'等' (wait) and '当' (when/serve as) have different meanings; substituting 'wait' with 'when' changes the action and confuses the sentence's intent.",
+      "score": 1
     }
   ]
 }

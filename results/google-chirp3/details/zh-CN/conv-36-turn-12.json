@@ -3,23 +3,23 @@
   "predicted": "要",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "你好。",
+  "werNormalizedGold": "你好",
   "werNormalizedPredicted": "要",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
   "sigWerNormalizedPredicted": "要",
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '要' at position 0",
-      "reason": "'你' means 'you' and '要' means 'want' or 'need'; this substitution completely changes the meaning of the sentence and makes it incoherent.",
+      "reason": "'你' means 'you' and '要' means 'want' or 'need'; this substitution changes the meaning of the sentence completely and makes it incoherent as a greeting.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "'好' means 'good' or 'hello' in this context; its deletion further derails the intended greeting, making the sentence incomplete and incoherent.",
+      "reason": "Omitting '好' ('good') removes the second half of the standard greeting '你好' ('hello'), making the sentence incomplete and changing its meaning significantly.",
       "score": 1
     }
   ]

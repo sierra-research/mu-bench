@@ -1,0 +1,26 @@
+{
+  "gold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Số điện thoại là 08491 12345678",
+  "unintelligible": false,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại là không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại là không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'không' at position 4",
+      "reason": "'Cộng' means 'plus' or indicates the country code (+), while 'không' means 'zero'. This changes the country code in the phone number, resulting in a completely different number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 6",
+      "reason": "'Mươi' is part of the number 'tám mươi bốn' (eighty-four), so omitting it changes 'eighty-four' to 'eight four', which is a different number and alters the phone number significantly.",
+      "score": 1
+    }
+  ]
+}

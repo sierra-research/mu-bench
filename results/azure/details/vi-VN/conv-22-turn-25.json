@@ -1,35 +1,25 @@
 {
   "gold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
-  "predicted": "Tôi không cần nhưng mà tôi cần tại vì tôi không có biết in rằng là tôi muốn được hỗ trợ để in cái giấy.",
+  "predicted": "Ơ ơ tôi không cần nhưng mà tôi cần tại vì tôi không có biết in rằng là tôi muốn ơ được hỗ trợ để in cái giấy.",
   "unintelligible": false,
-  "wer": 0.45,
-  "werNormalizedGold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
-  "werNormalizedPredicted": "Tôi không cần nhưng mà tôi cần tại vì tôi không có biết in rằng là tôi muốn được hỗ trợ để in cái giấy.",
-  "qualityScore": 2,
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
+  "wer": 0.1,
+  "werNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "werNormalizedPredicted": "tôi không cần tại vì tôi không biết in là tôi muốn được hỗ trợ để in giấy",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
-  "sigWerNormalizedPredicted": "Tôi không cần nhưng mà tôi cần tại vì tôi không có biết in rằng là tôi muốn được hỗ trợ để in cái giấy.",
+  "sigWerNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "sigWerNormalizedPredicted": "tôi không cần tại vì tôi không biết in là tôi muốn được hỗ trợ để in giấy",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'cần.' to 'cần' at position 2",
-      "reason": "The insertion of 'cần' (need) after 'không cần' (don't need) introduces a contradiction, making the sentence confusing and potentially changing the intended meaning.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'có' at position 7",
-      "reason": "The difference is only punctuation (period), which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'nên' to 'rằng' at position 9",
-      "reason": "The insertion of 'có' (have) in 'không có biết' instead of 'không biết' is a minor grammatical difference in Vietnamese and does not change the overall meaning.",
+      "error": "Deletion: 'nên' at position 9",
+      "reason": "Omitting 'nên' (which means 'so' or 'therefore') slightly changes the logical connection between the clauses, but the overall intent of the sentence remains clear.",
       "score": 2
     },
     {
-      "error": "Substitution: 'ra' to 'cái' at position 18",
-      "reason": "'Nên' (so/therefore) and 'rằng' (that) are different conjunctions, but in this context, the meaning of the sentence is preserved.",
+      "error": "Deletion: 'ra' at position 18",
+      "reason": "Omitting 'ra' (which means 'out' in 'in ra giấy' = 'print out paper') slightly changes the phrase, but 'in giấy' is still understandable as 'print paper'. The meaning is mostly preserved.",
       "score": 2
     }
   ]

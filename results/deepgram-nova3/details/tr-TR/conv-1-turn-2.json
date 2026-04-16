@@ -1,15 +1,26 @@
 {
   "gold": "İsmim Ahmet, soyismim Arslan.",
-  "predicted": "Ahmet nokta İsmim Ahmet, soy ismim Arslan.",
+  "predicted": "Ahmet nokta İsmim Ahmet, soy ismim Aslan.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "İsmim Ahmet, soyismim Arslan.",
-  "werNormalizedPredicted": "İsmim Ahmet, soyismim Arslan.",
-  "qualityScore": 2,
+  "wer": 1.25,
+  "werNormalizedGold": "ismim ahmet soyismim arslan",
+  "werNormalizedPredicted": "ahmet nokta ismim ahmet soy ismim aslan",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "İsmim Ahmet, soyismim Arslan.",
-  "sigWerNormalizedPredicted": "İsmim Ahmet, soyismim Arslan.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "ismim ahmet soyismim arslan",
+  "sigWerNormalizedPredicted": "ahmet nokta ismim ahmet soy ismim aslan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ahmet' at position 0",
+      "reason": "The word 'ahmet' is inserted at the beginning, but since 'ahmet' is already present as the name in the expected sentence, this does not change the overall meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'soyismim' to 'ismim' at position 2",
+      "reason": "The word 'nokta' (meaning 'dot' or 'point') is inserted, which does not exist in the expected sentence and adds an unrelated word, but does not derail the meaning.",
+      "score": 2
+    }
+  ]
 }

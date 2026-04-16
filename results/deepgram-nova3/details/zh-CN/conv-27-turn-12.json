@@ -1,26 +1,21 @@
 {
   "gold": "L E I dot L I N G at E M A I L dot C O M。",
-  "predicted": "m一i。cingemai。com。",
+  "predicted": "m一i。ling。",
   "unintelligible": false,
-  "wer": 0.10526315789473684,
-  "werNormalizedGold": "L E I dot L I N G at E M A I L dot C O M。",
-  "werNormalizedPredicted": "L E I dot L I N G at E M A I L dot C O M.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "L E I dot L I N G at E M A I L dot C O M 。",
-  "sigWerNormalizedPredicted": "L E I dot L I N G at E M A I L dot C O M.",
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
+  "werNormalizedPredicted": "l e i dot l i n g",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
+  "sigWerNormalizedPredicted": "l e i dot l i n g",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'M' to 'M.' at position 17",
-      "reason": "The only difference is the presence of a period at the end, which is a punctuation difference and should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: '。' at position 18",
-      "reason": "The missing '。' is a punctuation mark and does not affect the meaning of the sentence, so it should be ignored.",
-      "score": 3
+      "error": "Deletion: 'at' at position 8",
+      "reason": "The actual transcription omits the entire email domain ('at e m a i l dot c o m'), which is essential information for an email address. This omission makes the email address incomplete and unusable.",
+      "score": 1
     }
   ]
 }

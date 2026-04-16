@@ -1,21 +1,26 @@
 {
   "gold": "C N 4 1 9。",
-  "predicted": "CN419",
+  "predicted": "先诉药酒",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werNormalizedGold": "C N 4 1 9。",
-  "werNormalizedPredicted": "C N 4 1 9",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "C N 4 1 9 。",
-  "sigWerNormalizedPredicted": "C N 4 1 9",
+  "wer": 1.0,
+  "werNormalizedGold": "c n four one nine",
+  "werNormalizedPredicted": "先诉药酒",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n four one nine",
+  "sigWerNormalizedPredicted": "先 诉 药 酒",
   "sigWerErrors": [
     {
-      "error": "Deletion: '。' at position 5",
-      "reason": "The only difference is the omission of a punctuation mark, which does not affect the meaning of the sequence or the transcription.",
-      "score": 3
+      "error": "Substitution: 'c' to '先' at position 0",
+      "reason": "The actual transcription is in a completely different language (Chinese) instead of the expected English letter, making the transcription incoherent and unusable for the intended purpose.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nine' at position 4",
+      "reason": "The expected word 'nine' is missing in the actual transcription, which further derails the intended meaning of the sequence.",
+      "score": 1
     }
   ]
 }

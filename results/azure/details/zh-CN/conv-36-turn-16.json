@@ -1,26 +1,21 @@
 {
   "gold": "喂。",
-  "predicted": "Wait.",
+  "predicted": "Why?",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "喂。",
-  "werNormalizedPredicted": "Wait.",
-  "qualityScore": 1,
-  "significantWer": 0.5,
+  "werNormalizedGold": "喂",
+  "werNormalizedPredicted": "why",
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 1,
-  "totalWordsCount": 2,
-  "sigWerNormalizedGold": "喂 。",
-  "sigWerNormalizedPredicted": "Wait.",
+  "totalWordsCount": 1,
+  "sigWerNormalizedGold": "喂",
+  "sigWerNormalizedPredicted": "why",
   "sigWerErrors": [
     {
-      "error": "Substitution: '喂' to 'Wait.' at position 0",
-      "reason": "The expected word is in Chinese ('喂', meaning 'hello' or 'hey' as a greeting), while the actual is in English ('Wait.'). This is a different language and a different meaning, which completely changes the intent of the sentence.",
+      "error": "Substitution: '喂' to 'why' at position 0",
+      "reason": "The expected word is in Chinese ('喂', meaning 'hello' or 'hey'), while the actual transcription is in English ('why'). This is a language mismatch and changes the meaning entirely.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 1",
-      "reason": "Punctuation differences are to be ignored according to the guidance, so this does not affect the meaning.",
-      "score": 3
     }
   ]
 }

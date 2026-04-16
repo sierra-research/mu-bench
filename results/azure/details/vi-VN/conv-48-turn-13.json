@@ -1,21 +1,26 @@
 {
   "gold": "Tôi không thấy thông báo.",
-  "predicted": "Tôi không thấy cái thông báo.",
+  "predicted": "Rồi à? Không thấy cái thông báo.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Tôi không thấy thông báo.",
-  "werNormalizedPredicted": "Tôi không thấy cái thông báo.",
-  "qualityScore": 3,
+  "wer": 0.6,
+  "werNormalizedGold": "tôi không thấy thông báo",
+  "werNormalizedPredicted": "rồi à không thấy cái thông báo",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Tôi không thấy thông báo.",
-  "sigWerNormalizedPredicted": "Tôi không thấy cái thông báo.",
+  "sigWerNormalizedGold": "tôi không thấy thông báo",
+  "sigWerNormalizedPredicted": "rồi à không thấy cái thông báo",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'tôi' to 'à' at position 0",
+      "reason": "'rồi' is an extra word at the beginning, but it does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
       "error": "Insertion: 'cái' at position 3",
-      "reason": "'cái' is a classifier in Vietnamese and its insertion does not change the meaning of the sentence; the sentence remains fully understandable and accurate.",
-      "score": 3
+      "reason": "'tôi' (I) is replaced by 'à' (an interjection), which removes the subject but the main meaning (not seeing the notification) is still clear.",
+      "score": 2
     }
   ]
 }

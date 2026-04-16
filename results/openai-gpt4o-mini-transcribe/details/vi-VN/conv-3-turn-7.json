@@ -1,0 +1,31 @@
+{
+  "gold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
+  "predicted": "Không không không phải, đúng là Nguyễn Chấm Trần đã cộng điện theo Trấn Cơ",
+  "unintelligible": false,
+  "wer": 0.6153846153846154,
+  "werNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không không không phải đúng là nguyễn chấm trần đã cộng điện theo trấn cơ",
+  "qualityScore": null,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "không không không phải đúng là nguyễn chấm trần đã cộng điện theo trấn cơ",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'không' at position 2",
+      "reason": "The extra 'không' adds a negation, but in this context it does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'minh' to 'nguyễn' at position 5",
+      "reason": "'minh' and 'nguyễn' are different names; substituting the name changes the identity being referred to, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'a' to 'cộng' at position 8",
+      "reason": "The word 'đã' (already) is inserted, but it does not make the sentence incoherent, though it adds unnecessary information.",
+      "score": 2
+    }
+  ]
+}

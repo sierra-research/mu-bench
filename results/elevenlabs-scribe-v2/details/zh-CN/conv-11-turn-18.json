@@ -1,21 +1,21 @@
 {
   "gold": "我不再说。",
-  "predicted": "我不再说呀。",
+  "predicted": "我不在乎啊。",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "我不再说。",
-  "werNormalizedPredicted": "我不再说呀。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "我 不 再 说 。",
-  "sigWerNormalizedPredicted": "我 不 再 说 呀 。",
+  "wer": 0.5,
+  "werNormalizedGold": "我 不 再 说",
+  "werNormalizedPredicted": "我 不 在 乎",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "我 不 再 说",
+  "sigWerNormalizedPredicted": "我 不 在 乎",
   "sigWerErrors": [
     {
-      "error": "Insertion: '呀' at position 4",
-      "reason": "'呀' is a modal particle in Chinese that adds a softening or exclamatory tone but does not change the core meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: '再' to '在' at position 2",
+      "reason": "'再' means 'again' or 'anymore', while '在' means 'at' or 'in'. This substitution changes the meaning of the sentence from 'I will not say anymore' to 'I am not at', which makes the sentence incoherent and significantly alters the intended meaning.",
+      "score": 1
     }
   ]
 }

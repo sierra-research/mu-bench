@@ -2,35 +2,30 @@
   "gold": "Okay. I mean, I know that makes sense. Can you answer if someone wants to request an increase, is that usually something that you can do online or by calling in like this?",
   "predicted": "Okay, I mean, I know that makes sense. Can you answer if someone wanted to request an increase? Is that usually something they can do online or by calling in like this?",
   "unintelligible": false,
-  "wer": 0.15151515151515152,
-  "werNormalizedGold": "Okay. I mean, I know that makes sense. Can you answer if someone wants to request an increase, is that usually something that you can do online or by calling in like this?",
-  "werNormalizedPredicted": "Okay. I mean, I know that makes sense. Can you answer if someone wanted to request an increase? Is that usually something they can do online or by calling in like this?",
-  "qualityScore": 3,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "okay i mean i know that makes sense can you answer if someone wants to request an increase is that usually something that you can do online or by calling in like this",
+  "werNormalizedPredicted": "okay i mean i know that makes sense can you answer if someone wanted to request an increase is that usually something they can do online or by calling in like this",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 33,
-  "sigWerNormalizedGold": "Okay. I mean, I know that makes sense. Can you answer if someone wants to request an increase, is that usually something that you can do online or by calling in like this?",
-  "sigWerNormalizedPredicted": "Okay. I mean, I know that makes sense. Can you answer if someone wanted to request an increase? Is that usually something they can do online or by calling in like this?",
+  "sigWerNormalizedGold": "okay i mean i know that makes sense can you answer if someone wants to request an increase is that usually something that you can do online or by calling in like this",
+  "sigWerNormalizedPredicted": "okay i mean i know that makes sense can you answer if someone wanted to request an increase is that usually something they can do online or by calling in like this",
   "sigWerErrors": [
     {
       "error": "Substitution: 'wants' to 'wanted' at position 13",
-      "reason": "Change from present to past tense, but the overall meaning of the sentence remains the same in this context.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'increase,' to 'increase?' at position 17",
-      "reason": "Punctuation difference (comma vs question mark), which does not affect the meaning.",
+      "reason": "Past tense vs present tense, but in this context both refer to a hypothetical person and do not change the meaning of the sentence.",
       "score": 3
     },
     {
       "error": "Substitution: 'that' to 'they' at position 22",
-      "reason": "Switches the subject from 'that' to 'they', but in context both refer to the person requesting an increase, so the meaning is preserved.",
-      "score": 3
+      "reason": "'That you can do' vs 'they can do' shifts the subject from the listener to the hypothetical person, which slightly changes the meaning but does not derail the overall intent of the sentence.",
+      "score": 2
     },
     {
       "error": "Deletion: 'you' at position 23",
-      "reason": "Omitting 'you' changes the subject from 'you can do' to 'they can do', but in context, both refer to the person making the request, so the meaning is still clear.",
-      "score": 3
+      "reason": "Omitting 'you' in 'that you can do' to 'they can do' is part of the previous subject shift; the meaning is still clear, but the subject is different. This is a minor error.",
+      "score": 2
     }
   ]
 }

@@ -2,24 +2,24 @@
   "gold": "C N 2 6 6。",
   "predicted": "CNR Liu Liu。",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "C N 2 6 6。",
-  "werNormalizedPredicted": "C N Liu Liu。",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
+  "wer": 0.6,
+  "werNormalizedGold": "c n two six six",
+  "werNormalizedPredicted": "c n liu liu",
+  "qualityScore": null,
+  "significantWer": 0.4,
   "majorErrorsCount": 2,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "C N 2 6 6 。",
-  "sigWerNormalizedPredicted": "C N Liu Liu 。",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n two six six",
+  "sigWerNormalizedPredicted": "c n liu liu",
   "sigWerErrors": [
     {
-      "error": "Substitution: '2' to 'Liu' at position 2",
-      "reason": "'2' is a digit, while 'Liu' is a Chinese word for 'six'; this is a significant substitution that changes the intended sequence of numbers/letters.",
+      "error": "Substitution: 'two' to 'liu' at position 2",
+      "reason": "'liu' is not a numeric equivalent or a close phonetic match to 'two', and changes the intended sequence of numbers/letters, making the transcription incorrect and potentially confusing.",
       "score": 1
     },
     {
-      "error": "Deletion: '6' at position 4",
-      "reason": "The expected '6' is replaced by 'Liu', which is the Chinese pronunciation for 'six', but since the expected format is digits, this is a significant error in the context of a spelled-out sequence.",
+      "error": "Deletion: 'six' at position 4",
+      "reason": "'liu' is not a numeric equivalent or a close phonetic match to 'six', and changes the intended sequence of numbers/letters, making the transcription incorrect and potentially confusing.",
       "score": 1
     }
   ]

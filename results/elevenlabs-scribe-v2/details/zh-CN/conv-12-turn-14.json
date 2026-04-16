@@ -1,15 +1,21 @@
 {
   "gold": "听到吗？",
-  "predicted": "听到吗？",
+  "predicted": "青岛吗？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "听到吗？",
-  "werNormalizedPredicted": "听到吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "听 到 吗 ？",
-  "sigWerNormalizedPredicted": "听 到 吗 ？",
-  "sigWerErrors": []
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "听 到 吗",
+  "werNormalizedPredicted": "青 岛 吗",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "听 到 吗",
+  "sigWerNormalizedPredicted": "青 岛 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '青' at position 0",
+      "reason": "'听' means 'listen' or 'hear', while '青' means 'green' or 'blue' and is also part of the place name '青岛' (Qingdao). This substitution completely changes the meaning of the sentence from asking if someone can hear to referencing a place, which derails the intended meaning.",
+      "score": 1
+    }
+  ]
 }

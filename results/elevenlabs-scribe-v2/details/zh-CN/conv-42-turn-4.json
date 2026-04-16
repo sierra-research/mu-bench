@@ -1,15 +1,21 @@
 {
   "gold": "你有病吗？",
-  "predicted": "你有病吗？",
+  "predicted": "你有什么吗？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你有病吗？",
-  "werNormalizedPredicted": "你有病吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "你 有 病 吗 ？",
-  "sigWerNormalizedPredicted": "你 有 病 吗 ？",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "你 有 病 吗",
+  "werNormalizedPredicted": "你 有 什么 吗",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "你 有 病 吗",
+  "sigWerNormalizedPredicted": "你 有 什 么 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '病' to '么' at position 2",
+      "reason": "The insertion of '什' changes the meaning from 'Are you sick?' to 'What do you have?', which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
 }

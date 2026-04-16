@@ -1,20 +1,30 @@
 {
   "gold": "Xin chào. Tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng.",
-  "predicted": "Xin chào. Tôi gọi tới muốn muốn sinh ra gia tăng cái hạn mức thẻ tín dụng.",
+  "predicted": "Xin chào tôi gọi tới muốn muốn sinh ra gia gia tăng khách hàng mức thẻ tín dụng",
   "unintelligible": false,
-  "wer": 0.07142857142857142,
-  "werNormalizedGold": "Xin chào. Tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng.",
-  "werNormalizedPredicted": "Xin chào. Tôi gọi tới muốn muốn xin gia tăng hạn mức thẻ tín dụng.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
+  "werNormalizedPredicted": "xin chào tôi gọi tới muốn muốn sinh ra gia gia tăng khách hàng mức thẻ tín dụng",
+  "qualityScore": null,
+  "significantWer": 0.07142857142857142,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Xin chào. Tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng.",
-  "sigWerNormalizedPredicted": "Xin chào. Tôi gọi tới muốn muốn xin gia tăng hạn mức thẻ tín dụng.",
+  "sigWerNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
+  "sigWerNormalizedPredicted": "xin chào tôi gọi tới muốn muốn sinh ra gia gia tăng khách hàng mức thẻ tín dụng",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'muốn' at position 6",
-      "reason": "The extra 'muốn' (want) is a repetition that does not change the overall meaning of the sentence, as it is just a duplicated word and the intent remains clear.",
+      "error": "Substitution: 'xin' to 'ra' at position 6",
+      "reason": "The extra 'muốn' (want) is a repetition but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'gia' at position 8",
+      "reason": "'ra' (to come out) instead of 'xin' (to request) changes the meaning of the action, making the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hạn' to 'hàng' at position 9",
+      "reason": "The extra 'gia' is a repetition before 'gia tăng' (increase), which is redundant but does not change the meaning.",
       "score": 2
     }
   ]

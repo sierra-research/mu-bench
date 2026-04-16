@@ -2,14 +2,25 @@
   "gold": "S N 850.",
   "predicted": "Sene 850.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "S N 850.",
-  "werNormalizedPredicted": "S N 850.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "S N 850.",
-  "sigWerNormalizedPredicted": "S N 850.",
-  "sigWerErrors": []
+  "wer": 0.4,
+  "werNormalizedGold": "s n eight hundred fifty",
+  "werNormalizedPredicted": "sene eight hundred fifty",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "s n eight hundred fifty",
+  "sigWerNormalizedPredicted": "sene eight hundred fifty",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sene' at position 0",
+      "reason": "'sene' replaces 's n', merging two separate letters into one word, which changes the intended meaning, especially if these are initials or a spelled-out sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "The letter 'n' is missing, which is significant in a spelled-out sequence, as it alters the intended letters or initials.",
+      "score": 1
+    }
+  ]
 }

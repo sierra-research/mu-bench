@@ -1,0 +1,26 @@
+{
+  "gold": "O zaman bana fatura bilgilerimi verebilir misiniz? Yani ekstre bilgileri.",
+  "predicted": "O zaman bana fatura bilgilerini verebilir misiniz? Yani ekstra bilgileri.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werNormalizedGold": "o zaman bana fatura bilgilerimi verebilir misiniz yani ekstre bilgileri",
+  "werNormalizedPredicted": "o zaman bana fatura bilgilerini verebilir misiniz yani ekstra bilgileri",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "o zaman bana fatura bilgilerimi verebilir misiniz yani ekstre bilgileri",
+  "sigWerNormalizedPredicted": "o zaman bana fatura bilgilerini verebilir misiniz yani ekstra bilgileri",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bilgilerimi' to 'bilgilerini' at position 4",
+      "reason": "'bilgilerimi' (my information) vs 'bilgilerini' (your/his/her information) changes the possessive, but in context the meaning is still clear and the request is understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstre' to 'ekstra' at position 8",
+      "reason": "'ekstre' (statement, as in bank statement) vs 'ekstra' (extra) changes the meaning of the requested information, which could lead to misunderstanding of what is being asked for.",
+      "score": 1
+    }
+  ]
+}

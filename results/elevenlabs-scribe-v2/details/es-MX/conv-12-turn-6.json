@@ -1,31 +1,26 @@
 {
   "gold": "¡Ay disculpe! No escuché. ¿Lo puede repetir?",
-  "predicted": "Ay, disculpe. No, no escuché. ¿Me lo puede repetir?",
+  "predicted": "Ay, disculpe, no, no escuché. ¿Me puede repetir?",
   "unintelligible": false,
-  "wer": 0.7142857142857143,
-  "werNormalizedGold": "¡Ay disculpe! No escuché. ¿Lo puede repetir?",
-  "werNormalizedPredicted": "¡Ay, disculpe! No, no escuché. ¿Me lo puede repetir?",
-  "qualityScore": 3,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "ay disculpe no escuche lo puede repetir",
+  "werNormalizedPredicted": "ay disculpe no no escuche me puede repetir",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "¡Ay disculpe! No escuché. ¿Lo puede repetir?",
-  "sigWerNormalizedPredicted": "¡Ay, disculpe! No, no escuché. ¿Me lo puede repetir?",
+  "sigWerNormalizedGold": "ay disculpe no escuche lo puede repetir",
+  "sigWerNormalizedPredicted": "ay disculpe no no escuche me puede repetir",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¡Ay' to '¡Ay,' at position 0",
-      "reason": "Difference is only punctuation, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'No' to 'no' at position 2",
-      "reason": "The insertion of 'No,' adds a negation, but in this context it is a discourse marker and does not change the overall meaning.",
+      "error": "Insertion: 'no' at position 3",
+      "reason": "The extra 'no' introduces a repetition but does not significantly change the meaning of the sentence; it may sound like a hesitation or emphasis.",
       "score": 2
     },
     {
-      "error": "Substitution: '¿Lo' to 'lo' at position 4",
-      "reason": "Difference is only capitalization, which should be ignored.",
-      "score": 3
+      "error": "Substitution: 'lo' to 'me' at position 4",
+      "reason": "Changing 'lo' (it) to 'me' (me) alters the object of the request, which changes the meaning of the sentence from 'can you repeat it' to 'can you repeat to me', but the intent is still clear and the request is understandable.",
+      "score": 2
     }
   ]
 }

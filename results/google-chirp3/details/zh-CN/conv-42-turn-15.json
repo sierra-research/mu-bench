@@ -1,15 +1,31 @@
 {
   "gold": "我的邮件地址是郡凛 at email dot com。",
-  "predicted": "我的邮箱地址是 junling@email.com 。",
+  "predicted": "我的邮箱地址是0@email.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我的邮件地址是郡凛 at email dot com。",
-  "werNormalizedPredicted": "我的邮件地址是郡凛 at email dot com。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "我 的 邮 件 地 址 是 郡 凛 at email dot com 。",
-  "sigWerNormalizedPredicted": "我 的 邮 件 地 址 是 郡 凛 at email dot com 。",
-  "sigWerErrors": []
+  "wer": 0.23076923076923078,
+  "werNormalizedGold": "我的邮件地址是郡凛 at email dot com",
+  "werNormalizedPredicted": "我的邮箱地址是零 at email dot com",
+  "qualityScore": null,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 件 地 址 是 郡 凛 at email dot com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 零 at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '件' to '箱' at position 3",
+      "reason": "'邮件' (email) and '邮箱' (mailbox) are related but not the same; in this context, '邮箱地址' is commonly used for email address, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '郡' to '零' at position 7",
+      "reason": "'郡' is part of the expected email username, but '零' (zero) is a completely different character, changing the email address and making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 8",
+      "reason": "Omitting '凛' from the email username changes the email address, making it incorrect and potentially undeliverable.",
+      "score": 1
+    }
+  ]
 }

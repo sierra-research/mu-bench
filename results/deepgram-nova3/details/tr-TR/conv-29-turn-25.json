@@ -1,15 +1,21 @@
 {
   "gold": "Şu at mail dediğinizde mailin önünde E var değil mi?",
-  "predicted": "Şu et mail dediğinizde mailin önünde E var değil mi?",
+  "predicted": "Şu ad mail dediğinizde mailin önünde E var değil mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Şu at mail dediğinizde mailin önünde E var değil mi?",
-  "werNormalizedPredicted": "Şu at mail dediğinizde mailin önünde E var değil mi?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.1,
+  "werNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
+  "werNormalizedPredicted": "şu ad mail dediğinizde mailin önünde e var değil mi",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Şu at mail dediğinizde mailin önünde E var değil mi?",
-  "sigWerNormalizedPredicted": "Şu at mail dediğinizde mailin önünde E var değil mi?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
+  "sigWerNormalizedPredicted": "şu ad mail dediğinizde mailin önünde e var değil mi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'ad' at position 1",
+      "reason": "'at' and 'ad' are different words in Turkish; 'at' means 'horse' or 'to throw', while 'ad' means 'name'. This changes the meaning of the phrase and could confuse the listener.",
+      "score": 1
+    }
+  ]
 }

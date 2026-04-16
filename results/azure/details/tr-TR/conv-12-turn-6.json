@@ -1,46 +1,41 @@
 {
   "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "predicted": "Evet yan değil. Şöyle Ahmet Arslan dediğin zaman ahmet'le arslan arasında. Olacak Ahmet. Arslan.",
+  "predicted": "Evet yan değil. Şöyle Ahmet Arslan dediğin zaman ahmetle arslan arasında. Olacak Ahmet. Arslan.",
   "unintelligible": false,
-  "wer": 0.625,
-  "werNormalizedGold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "werNormalizedPredicted": "Evet, yan değil. Şöyle, Ahmet Arslan dediğin zaman Ahmet'le Arslan arasında olacak. Ahmet. Arslan.",
-  "qualityScore": 2,
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
+  "wer": 0.4375,
+  "werNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "evet yan degil soyle ahmet arslan dedigin zaman ahmetle arslan arasinda olacak ahmet arslan",
+  "qualityScore": null,
+  "significantWer": 0.1875,
+  "majorErrorsCount": 3,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "sigWerNormalizedPredicted": "Evet, yan değil. Şöyle, Ahmet Arslan dediğin zaman Ahmet'le Arslan arasında olacak. Ahmet. Arslan.",
+  "sigWerNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "evet yan degil soyle ahmet arslan dedigin zaman ahmetle arslan arasinda olacak ahmet arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'değil' to 'değil.' at position 1",
-      "reason": "'Yan' changes the meaning from 'değil şöyle' (not like this) to 'yan değil' (not side), which alters the intended meaning of the sentence.",
+      "error": "Insertion: 'yan' at position 1",
+      "reason": "'yan' changes the meaning of the phrase 'evet degil' (not yes) to 'evet yan degil', which is not a standard phrase and introduces confusion, derailing the intended meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: 'dediniz' to 'dediğin' at position 5",
-      "reason": "The only difference is punctuation, which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'dediniz' to 'dedigin' at position 5",
+      "reason": "'dediniz' (you said) vs 'dedigin' (when you say) changes the tense and person, but the overall meaning is preserved in context.",
+      "score": 2
     },
     {
       "error": "Deletion: 've' at position 8",
-      "reason": "'Dediniz' is formal/plural 'you said', 'dediğin' is informal/singular 'you say/said'; the meaning is mostly preserved but the formality changes.",
+      "reason": "Omitting 've' (and) slightly affects the sentence structure but does not significantly change the meaning.",
       "score": 2
     },
     {
       "error": "Deletion: 'nokta' at position 11",
-      "reason": "Omitting 've' (and) slightly changes the structure but does not significantly alter the meaning.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'Ahmet' to 'Ahmet.' at position 13",
-      "reason": "Missing 'nokta' (dot/period) removes the explicit instruction about the dot between names, which is important for the intended meaning.",
+      "reason": "Missing 'nokta' (dot/period) removes the instruction to put a dot between 'ahmet' and 'arslan', which is a significant part of the instruction.",
       "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 14",
-      "reason": "Difference is only punctuation, which does not affect meaning.",
-      "score": 3
+      "reason": "Again, omitting 'nokta' (dot/period) at the end removes the explicit instruction, which is crucial for the correct format.",
+      "score": 1
     }
   ]
 }

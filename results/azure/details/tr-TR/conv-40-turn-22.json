@@ -1,31 +1,31 @@
 {
   "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "predicted": "Daha önce bir hesap ekstra istemiştim. Aylık henüz şu ana kadar gelmedi. Bana gönderebilir misiniz hesap ekstresini?",
+  "predicted": "Daha önce behzat ekstra istemiştim. Aylık iş henüz şu ana kadar gelmedi. Bana gönderebilir misiniz hesap ekstresini?",
   "unintelligible": false,
-  "wer": 0.1875,
-  "werNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "werNormalizedPredicted": "Daha önce bir hesap ekstresi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misiniz hesap ekstresini?",
-  "qualityScore": 3,
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "wer": 0.3125,
+  "werNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha once behzat ekstra istemistim aylik is henuz su ana kadar gelmedi bana gonderebilir misiniz hesap ekstresini",
+  "qualityScore": null,
+  "significantWer": 0.1875,
+  "majorErrorsCount": 3,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "sigWerNormalizedPredicted": "Daha önce bir hesap ekstresi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misiniz hesap ekstresini?",
+  "sigWerNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha once behzat ekstra istemistim aylik is henuz su ana kadar gelmedi bana gonderebilir misiniz hesap ekstresini",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'bir' at position 2",
-      "reason": "'Bir' (a/an) is an optional article in Turkish and does not change the meaning of the sentence in this context.",
-      "score": 3
+      "error": "Substitution: 'hesap' to 'behzat' at position 2",
+      "reason": "'hesap' means 'account' and 'behzat' is a proper noun/name; this substitution completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'İstediğim' to 'Henüz' at position 6",
-      "reason": "'İstediğim' (what I requested) is replaced by 'Henüz' (yet/still), which changes the subject of the clause and alters the meaning of the sentence.",
+      "error": "Substitution: 'istedigim' to 'henuz' at position 6",
+      "reason": "The insertion of 'is' does not make sense in the context and disrupts the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'misin' to 'misiniz' at position 13",
-      "reason": "'Misin' is informal 'you', 'misiniz' is formal/plural 'you'; this is a minor formality difference and does not change the meaning.",
-      "score": 3
+      "reason": "'istedigim' means 'that I wanted' and 'henuz' means 'not yet'; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
     }
   ]
 }

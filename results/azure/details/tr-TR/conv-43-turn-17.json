@@ -1,26 +1,31 @@
 {
   "gold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
-  "predicted": "Hayır, tamamen yanlış. Faceddin tekrar söylüyorum, adını tekrar söylüyorum. Dinle+ 90 123 msıfır 90 45 67.",
+  "predicted": "Hayır, tamamen yanlış face ettin tekrar söylüyorum, adını tekrar söylüyorum. Dinle+ 90 120 3 Şubat 9045 67.",
   "unintelligible": false,
-  "wer": 0.5294117647058824,
-  "werNormalizedGold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
-  "werNormalizedPredicted": "Hayır, tamamen yanlış. Faceddin tekrar söylüyorum, adını tekrar söylüyorum. Dinle. Artı 90 123 0 90 45 67.",
-  "qualityScore": 2,
-  "significantWer": 0.11764705882352941,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
-  "sigWerNormalizedPredicted": "Hayır, tamamen yanlış. Faceddin tekrar söylüyorum, adını tekrar söylüyorum. Dinle. Artı 90 123 0 90 45 67.",
+  "wer": 0.3181818181818182,
+  "werNormalizedGold": "hayır tamamen yanlış kaydettin tekrar söyleyeceğim anna tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "hayır tamamen yanlış face ettin tekrar söylüyorum adını tekrar söylüyorum dinle artı doksan bir yüz yirmi üç şubat dokuz bin kırk beş altmış yedi",
+  "qualityScore": null,
+  "significantWer": 0.045454545454545456,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "hayır tamamen yanlış kaydettin tekrar söyleyeceğim anna tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır tamamen yanlış face ettin tekrar söylüyorum adını tekrar söylüyorum dinle artı doksan bir yüz yirmi üç şubat dokuz bin kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "'kaydettin' (you recorded) is replaced with 'Faceddin', which is not a Turkish word and does not make sense in context, making the sentence incoherent.",
+      "error": "Substitution: 'kaydettin' to 'ettin' at position 3",
+      "reason": "'face' is an English word inserted into a Turkish sentence, making the phrase incoherent and derailing the meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: 'yanlış' to 'yanlış.' at position 2",
-      "reason": "The phrase 'Tekrar söyleyeceğim Anna.' (I will repeat, Anna) is omitted, which removes the direct address and intent, significantly altering the meaning.",
-      "score": 1
+      "error": "Substitution: 'söyleyeceğim' to 'söylüyorum' at position 5",
+      "reason": "'kaydettin' means 'you recorded', while 'ettin' means 'you did'; the substitution removes the specific action, making the meaning less clear but not completely incoherent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sıfır' to 'dokuz' at position 16",
+      "reason": "'söyleyeceğim' means 'I will say', while 'söylüyorum' means 'I am saying'; this is a tense change but the overall meaning is preserved.",
+      "score": 3
     }
   ]
 }

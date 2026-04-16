@@ -1,0 +1,36 @@
+{
+  "gold": "Tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không?",
+  "predicted": "Ông tôi hỏi được tăng hạng bức nhờ vào việc khai thác tài sản không?",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
+  "werNormalizedPredicted": "ông tôi hỏi được tăng hạng bức nhờ vào việc khai thác tài sản không",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
+  "sigWerNormalizedPredicted": "ông tôi hỏi được tăng hạng bức nhờ vào việc khai thác tài sản không",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ông' at position 0",
+      "reason": "The insertion of 'ông' (grandfather) changes the subject of the sentence, altering the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'có' to 'hỏi' at position 1",
+      "reason": "Changing 'có' (can) to 'hỏi' (ask) changes the intent of the sentence from a request to a question about asking, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hạn' to 'hạng' at position 4",
+      "reason": "'hạn mức' (credit limit) and 'hạng bức' are not equivalent; this substitution makes the phrase incoherent and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'thế' to 'khai' at position 9",
+      "reason": "'thế chấp' (mortgage/pledge) and 'khai thác' (exploit) are completely different concepts, which changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

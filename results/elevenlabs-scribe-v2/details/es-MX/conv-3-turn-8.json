@@ -1,25 +1,20 @@
 {
   "gold": "¿El importe total quieres saber?",
-  "predicted": "El importe total que te están",
+  "predicted": "¿El importe total quiere saber?",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "¿El importe total quieres saber?",
-  "werNormalizedPredicted": "el importe total que te están",
-  "qualityScore": 2,
+  "wer": 0.2,
+  "werNormalizedGold": "el importe total quieres saber",
+  "werNormalizedPredicted": "el importe total quiere saber",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "¿El importe total quieres saber?",
-  "sigWerNormalizedPredicted": "el importe total que te están",
+  "sigWerNormalizedGold": "el importe total quieres saber",
+  "sigWerNormalizedPredicted": "el importe total quiere saber",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¿El' to 'el' at position 0",
-      "reason": "The only difference is the inverted question mark, which is punctuation and should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'quieres' to 'te' at position 3",
-      "reason": "The insertion of 'que' changes the grammatical structure but does not significantly alter the overall meaning.",
+      "error": "Substitution: 'quieres' to 'quiere' at position 3",
+      "reason": "The difference is between second person ('quieres' - you want) and third person ('quiere' - he/she/it wants). In this context, the subject changes from 'you' to 'he/she/it', which can change the meaning of the sentence but does not make it incoherent. The overall intent is still understandable, but the subject is different.",
       "score": 2
     }
   ]

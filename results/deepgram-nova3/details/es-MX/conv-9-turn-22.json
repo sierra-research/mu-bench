@@ -1,25 +1,25 @@
 {
   "gold": "No. Un pago en cuotas.",
-  "predicted": "Pago en.",
+  "predicted": "No, no, no, un pago en casa.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "No. Un pago en cuotas.",
-  "werNormalizedPredicted": "Pago en.",
-  "qualityScore": 1,
-  "significantWer": 0.4,
-  "majorErrorsCount": 2,
+  "wer": 0.6,
+  "werNormalizedGold": "no un pago en cuotas",
+  "werNormalizedPredicted": "no no no un pago en casa",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "No. Un pago en cuotas.",
-  "sigWerNormalizedPredicted": "Pago en.",
+  "sigWerNormalizedGold": "no un pago en cuotas",
+  "sigWerNormalizedPredicted": "no no no un pago en casa",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No.' to 'Pago' at position 0",
-      "reason": "The word 'No.' is omitted, which changes the meaning from a negative response to just a statement about payment. This significantly alters the intent of the sentence.",
-      "score": 1
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The repeated 'no' adds emphasis but does not change the overall meaning of the sentence, which is a negation. This is a minor error.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'pago' at position 2",
-      "reason": "The omission of 'cuotas.' removes the information that the payment is in installments, which is important to the meaning of the sentence.",
+      "error": "Substitution: 'cuotas' to 'casa' at position 4",
+      "reason": "'Cuotas' (installments) and 'casa' (house) are completely different words and change the meaning of the sentence significantly, making it incoherent in context.",
       "score": 1
     }
   ]

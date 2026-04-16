@@ -1,25 +1,30 @@
 {
   "gold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
-  "predicted": "Không phải cái email đúng là minh chấmgmail chấm com",
+  "predicted": "Không phải cái email đúng là link. Gmail chấm com",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Không phải. Cái email đúng là minh chấm gmail chấm com.",
-  "qualityScore": 1,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 2,
+  "wer": 0.35714285714285715,
+  "werNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không phải cái email đúng là link chấm gmail chấm com",
+  "qualityScore": null,
+  "significantWer": 0.21428571428571427,
+  "majorErrorsCount": 3,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Không phải. Cái email đúng là minh chấm gmail chấm com.",
+  "sigWerNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "không phải cái email đúng là link chấm gmail chấm com",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'minh' to 'link' at position 6",
+      "reason": "The username part of the email is completely changed, resulting in a different email address and thus a significant change in meaning.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'trần' to 'gmail' at position 8",
-      "reason": "'trần' is a Vietnamese name, while 'gmail' is an email service provider. Substituting a name for a service provider changes the entire email address and makes it incorrect.",
+      "reason": "The domain part of the email is changed from a personal/proper name to a generic email provider, which makes the email address completely different and changes the intended recipient.",
       "score": 1
     },
     {
       "error": "Deletion: 'a' at position 9",
-      "reason": "Missing the 'a' (which is part of 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable.",
+      "reason": "The missing 'a' (which is the Vietnamese word for '@') makes the email address invalid and unrecognizable, significantly affecting the meaning.",
       "score": 1
     }
   ]

@@ -1,41 +1,31 @@
 {
   "gold": "喂，我想提高我的信用卡额度。",
-  "predicted": "不对我想tgo的信用卡恶毒",
+  "predicted": "不对我乡te的信用卡二读",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werNormalizedGold": "喂，我想提高我的信用卡额度。",
-  "werNormalizedPredicted": "不对我想 tgo 的信用卡恶毒",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 4,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "喂 ， 我 想 提 高 我 的 信 用 卡 额 度 。",
-  "sigWerNormalizedPredicted": "不 对 我 想 tgo 的 信 用 卡 恶 毒",
+  "wer": 0.4166666666666667,
+  "werNormalizedGold": "喂 我 想 提高 我 的 信用卡 额度",
+  "werNormalizedPredicted": "不 对 我 想 提 高 的 信用卡 二 读",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "喂 我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "不 对 我 想 提 高 的 信 用 卡 二 读",
   "sigWerErrors": [
     {
-      "error": "Substitution: '喂' to '不' at position 0",
-      "reason": "'喂' is a greeting (hello), while '不' means 'no' or 'not', which changes the intent and meaning of the sentence.",
+      "error": "Substitution: '喂' to '对' at position 0",
+      "reason": "The insertion of '不' (no/not) at the beginning changes the intent of the sentence from a request to a negation, which significantly alters the meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: '提' to 'tgo' at position 4",
-      "reason": "'提' is part of the phrase '提高' (to increase), while 'tgo' is an incorrect transcription and not a valid word in this context, making the sentence incoherent.",
+      "error": "Deletion: '我' at position 5",
+      "reason": "'喂' is a greeting (hello), while '对' means 'correct' or 'right'; this changes the opening context and is not equivalent.",
       "score": 1
     },
     {
-      "error": "Deletion: '高' at position 5",
-      "reason": "Omitting '高' breaks the phrase '提高' (to increase), which is essential to the meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '额' to '恶' at position 11",
-      "reason": "'额' means 'limit' (as in credit limit), while '恶' means 'evil' or 'bad', which changes the meaning significantly.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 13",
-      "reason": "Punctuation differences should be ignored as per the guidance.",
-      "score": 3
+      "error": "Substitution: '额' to '二' at position 10",
+      "reason": "Omitting '我' (I) from '提高我的信用卡额度' (raise my credit card limit) makes the sentence less clear about whose credit card is being referred to, but the overall intent is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

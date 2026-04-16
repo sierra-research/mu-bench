@@ -1,15 +1,21 @@
 {
   "gold": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "predicted": "Söylüyorum hecere'yi söylüyorum. Ahmet. Arslan et gmail dat kom",
+  "predicted": "Söylüyorum, hecere'yi söylüyorum. Ahmet nokta arslan et email nokta com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "qualityScore": 2,
+  "wer": 0.1,
+  "werNormalizedGold": "söylüyorum heceleyerek söylüyorum ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "söylüyorum heceleyi söylüyorum ahmet nokta arslan at email nokta com",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "söylüyorum heceleyerek söylüyorum ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "söylüyorum heceleyi söylüyorum ahmet nokta arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'heceleyerek' to 'heceleyi' at position 1",
+      "reason": "'heceleyerek' means 'by spelling out' or 'syllabifying', while 'heceleyi' is not a standard word and could be interpreted as 'the syllable' or a truncated form. The substitution slightly changes the meaning but does not derail the overall intent of the sentence, which is to spell out the email address.",
+      "score": 2
+    }
+  ]
 }

@@ -1,21 +1,26 @@
 {
   "gold": "Have a great day.",
-  "predicted": "Have a good day.",
+  "predicted": "18",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Have a great day.",
-  "werNormalizedPredicted": "Have a good day.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "have a great day",
+  "werNormalizedPredicted": "eighteen",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Have a great day.",
-  "sigWerNormalizedPredicted": "Have a good day.",
+  "sigWerNormalizedGold": "have a great day",
+  "sigWerNormalizedPredicted": "eighteen",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'great' to 'good' at position 2",
-      "reason": "'Great' and 'good' are both positive adjectives and the overall sentiment and meaning of the sentence remain the same.",
-      "score": 3
+      "error": "Substitution: 'have' to 'eighteen' at position 0",
+      "reason": "The word 'eighteen' is completely unrelated to 'have', and this substitution makes the sentence incoherent and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 1",
+      "reason": "The word 'a' is missing, but since the main error already derails the meaning, this deletion further contributes to the incoherence.",
+      "score": 1
     }
   ]
 }

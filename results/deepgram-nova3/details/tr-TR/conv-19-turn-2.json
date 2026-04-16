@@ -3,19 +3,24 @@
   "predicted": "CN iki bin iki yüz iki, doğru mudur?",
   "unintelligible": false,
   "wer": 0.2857142857142857,
-  "werNormalizedGold": "C N 2 2 2. Doğru mudur?",
-  "werNormalizedPredicted": "C N 2 2 2, doğru mudur?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n two two two doğru mudur",
+  "werNormalizedPredicted": "c n two thousand two hundred two doğru mudur",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "C N 2 2 2. Doğru mudur?",
-  "sigWerNormalizedPredicted": "C N 2 2 2, doğru mudur?",
+  "sigWerNormalizedGold": "c n two two two doğru mudur",
+  "sigWerNormalizedPredicted": "c n two thousand two hundred two doğru mudur",
   "sigWerErrors": [
     {
-      "error": "Substitution: '2.' to '2,' at position 4",
-      "reason": "The only difference is the punctuation (period vs comma), which does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Insertion: 'thousand' at position 3",
+      "reason": "Inserting 'thousand' changes the number from 'two two two' (222) to 'two thousand two hundred two' (2202), which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'hundred' at position 4",
+      "reason": "Inserting 'hundred' further alters the number, making it 'two thousand two hundred two' instead of 'two two two', which significantly changes the intended value.",
+      "score": 1
     }
   ]
 }

@@ -1,25 +1,25 @@
 {
   "gold": "Hello? Can you give what is 7 6 2?",
-  "predicted": "Hello? Can you give me what is this? Seven six two.",
+  "predicted": "Hello? Can you give me what is this? Seven six two?",
   "unintelligible": false,
-  "wer": 0.5555555555555556,
-  "werNormalizedGold": "Hello? Can you give what is 7 6 2?",
-  "werNormalizedPredicted": "Hello? Can you give me what is this? Seven six two.",
-  "qualityScore": 2,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "hello can you give what is seven six two",
+  "werNormalizedPredicted": "hello can you give me what is this seven six two",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Hello? Can you give what is 7 6 2?",
-  "sigWerNormalizedPredicted": "Hello? Can you give me what is this? Seven six two.",
+  "sigWerNormalizedGold": "hello can you give what is seven six two",
+  "sigWerNormalizedPredicted": "hello can you give me what is this seven six two",
   "sigWerErrors": [
     {
       "error": "Insertion: 'me' at position 4",
-      "reason": "Adding 'me' does not change the overall meaning of the request; it is a minor grammatical difference.",
+      "reason": "'me' is an extra word that does not change the overall meaning of the sentence; the request is still clear.",
       "score": 2
     },
     {
-      "error": "Substitution: '7' to 'Seven' at position 6",
-      "reason": "Adding 'this?' changes the question slightly but does not derail the meaning; the intent of asking for 'what is 7 6 2' is still clear.",
+      "error": "Insertion: 'this' at position 6",
+      "reason": "Adding 'this' before 'seven six two' slightly changes the phrasing but does not alter the meaning of the question.",
       "score": 2
     }
   ]

@@ -1,20 +1,25 @@
 {
   "gold": "Xin cảm ơn.",
-  "predicted": "Xin chào ạ.",
+  "predicted": "Ừ.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "Xin cảm ơn.",
-  "werNormalizedPredicted": "xin chào ạ.",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "xin cảm ơn",
+  "werNormalizedPredicted": "ừ",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Xin cảm ơn.",
-  "sigWerNormalizedPredicted": "xin chào ạ.",
+  "sigWerNormalizedGold": "xin cảm ơn",
+  "sigWerNormalizedPredicted": "ừ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Xin' to 'xin' at position 0",
-      "reason": "The actual transcription changes the meaning from 'thank you' (xin cảm ơn) to 'hello' (xin chào), which is a completely different intent and derails the meaning of the sentence.",
+      "error": "Substitution: 'xin' to 'ừ' at position 0",
+      "reason": "'ừ' means 'yes' or 'uh-huh' in Vietnamese, while 'xin' is part of the polite phrase 'xin cảm ơn' meaning 'thank you'. The substitution changes the meaning of the sentence completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cảm' at position 1",
+      "reason": "'cảm' is part of the phrase 'cảm ơn' meaning 'thank you'. Its omission means the polite phrase is not conveyed at all, significantly altering the intended meaning.",
       "score": 1
     }
   ]

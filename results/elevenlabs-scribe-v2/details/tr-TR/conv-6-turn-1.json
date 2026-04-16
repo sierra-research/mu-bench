@@ -1,25 +1,20 @@
 {
   "gold": "Banka kartı. Yedek bir banka kartım olsun istiyorum.",
-  "predicted": "Banka kartı. Yedekli banka kartım olsun istiyorum",
+  "predicted": "Banka kartı. Yedekli banka kartı mı olsun istiyorum?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Banka kartı. Yedek bir banka kartım olsun istiyorum.",
-  "werNormalizedPredicted": "Banka kartı. Yedekli banka kartım olsun istiyorum.",
-  "qualityScore": 3,
+  "wer": 0.5,
+  "werNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
+  "werNormalizedPredicted": "banka kartı yedekli banka kartı mı olsun istiyorum",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Banka kartı. Yedek bir banka kartım olsun istiyorum.",
-  "sigWerNormalizedPredicted": "Banka kartı. Yedekli banka kartım olsun istiyorum.",
+  "sigWerNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
+  "sigWerNormalizedPredicted": "banka kartı yedekli banka kartı mı olsun istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Yedek' to 'Yedekli' at position 2",
-      "reason": "'Yedek' (spare) and 'Yedekli' (with spare) are similar, but 'Yedekli' changes the meaning to 'with a spare card' instead of 'a spare card'. The overall intent is still clear, but the nuance is different.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'bir' at position 3",
-      "reason": "Omitting 'bir' (a) slightly changes the specificity but does not significantly alter the meaning of the sentence.",
+      "error": "Substitution: 'yedek' to 'yedekli' at position 2",
+      "reason": "'Yedek' (spare) and 'yedekli' (with spare) are closely related; the meaning is only slightly changed and the intent is still clear.",
       "score": 2
     }
   ]

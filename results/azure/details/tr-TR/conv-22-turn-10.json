@@ -1,26 +1,31 @@
 {
   "gold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "predicted": "Kadın yalnız telefon numarası telefon numarasının sonu yine yanlış oldu. Siz 68 dediniz 67 olacak.",
+  "predicted": "Kadın yalnız telefon numarasın telefon numarasının sonu yine yanlış oldu. Siz 68 dediniz 67 olacak.",
   "unintelligible": false,
-  "wer": 0.3076923076923077,
-  "werNormalizedGold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "werNormalizedPredicted": "Kadın, yalnız telefon numarasının sonu yine yanlış oldu. Siz 68 dediniz, 67 olacak.",
-  "qualityScore": 2,
-  "significantWer": 0.07692307692307693,
+  "wer": 0.26666666666666666,
+  "werNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "werNormalizedPredicted": "kadın yalnız telefon numarasın telefon numarasının sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
   "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "sigWerNormalizedPredicted": "Kadın, yalnız telefon numarasının sonu yine yanlış oldu. Siz 68 dediniz, 67 olacak.",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "sigWerNormalizedPredicted": "kadın yalnız telefon numarasın telefon numarasının sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Pardon.' to 'Kadın,' at position 0",
-      "reason": "'Pardon.' is an interjection meaning 'excuse me' or 'sorry', while 'Kadın,' means 'woman'. This substitution changes the subject and the meaning of the sentence significantly.",
+      "error": "Substitution: 'pardon' to 'kadın' at position 0",
+      "reason": "'Pardon' means 'excuse me' or 'sorry', while 'kadın' means 'woman'. This substitution completely changes the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'oldu' to 'oldu.' at position 7",
-      "reason": "The only difference is the punctuation (period), which does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Insertion: 'numarasın' at position 3",
+      "reason": "The word 'numarasın' is a truncated or incorrect form of 'numarasının' and its insertion is redundant and does not add meaning, but does not derail the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'size' to 'siz' at position 8",
+      "reason": "'Size' means 'to you', while 'siz' means 'you' (formal/plural). The meaning is slightly changed but the overall intent is preserved.",
+      "score": 2
     }
   ]
 }

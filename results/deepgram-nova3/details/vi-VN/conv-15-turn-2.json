@@ -1,15 +1,21 @@
 {
   "gold": "Tôi muốn nhận số theo dõi của cuộc gọi này.",
-  "predicted": "Ôi muốn nhận số theo dõi của cuộc gọi này",
+  "predicted": "Ô. Muốn nhận số theo dõi của cuộc gọi này.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tôi muốn nhận số theo dõi của cuộc gọi này.",
-  "werNormalizedPredicted": "Tôi muốn nhận số theo dõi của cuộc gọi này.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.1,
+  "werNormalizedGold": "tôi muốn nhận số theo dõi của cuộc gọi này",
+  "werNormalizedPredicted": "ông muốn nhận số theo dõi của cuộc gọi này",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tôi muốn nhận số theo dõi của cuộc gọi này.",
-  "sigWerNormalizedPredicted": "Tôi muốn nhận số theo dõi của cuộc gọi này.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tôi muốn nhận số theo dõi của cuộc gọi này",
+  "sigWerNormalizedPredicted": "ông muốn nhận số theo dõi của cuộc gọi này",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tôi' to 'ông' at position 0",
+      "reason": "'tôi' means 'I' and 'ông' means 'you' (formal, male) in Vietnamese. This changes the subject of the sentence, altering who is making the request, which significantly changes the meaning.",
+      "score": 1
+    }
+  ]
 }

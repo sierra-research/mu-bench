@@ -1,26 +1,31 @@
 {
   "gold": "Email chưa đúng.",
-  "predicted": "à email siêu đúng",
+  "predicted": "À email CEO",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "Email chưa đúng.",
-  "werNormalizedPredicted": "à email chưa đúng",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "email chưa đúng",
+  "werNormalizedPredicted": "à email ceo",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Email chưa đúng.",
-  "sigWerNormalizedPredicted": "à email chưa đúng",
+  "sigWerNormalizedGold": "email chưa đúng",
+  "sigWerNormalizedPredicted": "à email ceo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Email' to 'email' at position 0",
-      "reason": "'à' is an extra word at the beginning, but it does not change the meaning of the sentence. It may be a filler or discourse marker in Vietnamese, so the main message remains unchanged.",
+      "error": "Insertion: 'à' at position 0",
+      "reason": "The word 'à' is added at the beginning, which does not relate to the intended meaning and may confuse the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'đúng.' to 'đúng' at position 2",
-      "reason": "Difference is only in capitalization, which should be ignored as per the guidance.",
-      "score": 3
+      "error": "Substitution: 'chưa' to 'ceo' at position 1",
+      "reason": "'chưa' means 'not yet' in Vietnamese, while 'ceo' is an English acronym for Chief Executive Officer. This substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đúng' at position 2",
+      "reason": "The word 'đúng' (meaning 'correct') is omitted, which is essential to the intended meaning of the sentence.",
+      "score": 1
     }
   ]
 }

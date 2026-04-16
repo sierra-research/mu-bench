@@ -1,26 +1,21 @@
 {
   "gold": "我已经知道了，好好，继。",
-  "predicted": "我已经知道了好好记述",
+  "predicted": "我已经知道了好好记住",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "我已经知道了，好好，继。",
-  "werNormalizedPredicted": "我已经知道了，好好记述",
-  "qualityScore": 2,
-  "significantWer": 0.08333333333333333,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "我 已经 知道 了 好好 继",
+  "werNormalizedPredicted": "我 已经 知道 了 好好 记住",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
   "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "我 已 经 知 道 了 ， 好 好 ， 继 。",
-  "sigWerNormalizedPredicted": "我 已 经 知 道 了 ， 好 好 记 述",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "我 已 经 知 道 了 好 好 继",
+  "sigWerNormalizedPredicted": "我 已 经 知 道 了 好 好 记 住",
   "sigWerErrors": [
     {
-      "error": "Substitution: '，' to '记' at position 9",
-      "reason": "The expected sentence ends with a pause and then the word '继' (continue), but the actual has '记' (remember) instead, which changes the meaning of the sentence.",
+      "error": "Substitution: '继' to '住' at position 8",
+      "reason": "'继' (continue) and '记' (remember) are different verbs and change the meaning of the phrase, leading to a different instruction or intent.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 11",
-      "reason": "Missing sentence-ending punctuation does not affect the meaning of the sentence.",
-      "score": 3
     }
   ]
 }

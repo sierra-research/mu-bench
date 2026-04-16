@@ -2,29 +2,19 @@
   "gold": "我的邮箱地址是美玲 at email dot com。",
   "predicted": "我的邀请地址是maylingemail。com。",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "我的邮箱地址是美玲 at email dot com。",
-  "werNormalizedPredicted": "我的邀请地址是mayling at email dot com。",
-  "qualityScore": 1,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "我 的 邀 请 地 址 是 mayling at email dot com 。",
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "我的邮箱地址是mayling at email dot com",
+  "werNormalizedPredicted": "我的邀请地址是mayling at email dot com",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 mayling at email dot com",
+  "sigWerNormalizedPredicted": "我 的 邀 请 地 址 是 mayling at email dot com",
   "sigWerErrors": [
     {
       "error": "Substitution: '邮' to '邀' at position 2",
-      "reason": "The word '邮' (mail) was replaced with '邀' (invite), which changes the meaning from 'email address' to 'invitation address', significantly altering the intended meaning.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '美' to 'mayling' at position 7",
-      "reason": "'美' is part of the name '美玲' (Meiling), but 'mayling' is a phonetic transcription of the full name. This is a minor error as the intended name is still recognizable.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: '玲' at position 8",
-      "reason": "The character '玲' is missing, which means the full name '美玲' (Meiling) is incomplete. This could cause confusion about the correct name, making it a significant error.",
+      "reason": "'邮' (mail) and '邀' (invite) are completely different in meaning. This changes '邮箱' (mailbox/email) to '邀请' (invitation), which derails the meaning of the sentence and makes it incoherent in context.",
       "score": 1
     }
   ]

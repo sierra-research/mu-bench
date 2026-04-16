@@ -1,15 +1,21 @@
 {
   "gold": "准备好了。",
-  "predicted": "准备好了。",
+  "predicted": "安排好了。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "准备好了。",
-  "werNormalizedPredicted": "准备好了。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "准 备 好 了 。",
-  "sigWerNormalizedPredicted": "准 备 好 了 。",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "准备好了",
+  "werNormalizedPredicted": "安排好了",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "准 备 好 了",
+  "sigWerNormalizedPredicted": "安 排 好 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '准' to '安' at position 0",
+      "reason": "'准备' (prepare) and '安排' (arrange) have different meanings; substituting '准' with '安' changes the intent of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

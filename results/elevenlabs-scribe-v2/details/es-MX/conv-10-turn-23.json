@@ -1,15 +1,26 @@
 {
   "gold": "Sí, ahora sí.",
-  "predicted": "Sí, ahora sí",
+  "predicted": "Sí, claro",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí, ahora sí.",
-  "werNormalizedPredicted": "Sí, ahora sí.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "si ahora si",
+  "werNormalizedPredicted": "si claro",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Sí, ahora sí.",
-  "sigWerNormalizedPredicted": "Sí, ahora sí.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "si ahora si",
+  "sigWerNormalizedPredicted": "si claro",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ahora' to 'claro' at position 1",
+      "reason": "'ahora' means 'now' and 'claro' means 'of course' or 'sure'; this changes the meaning of the sentence significantly, as the intent shifts from confirming a time to giving affirmation.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'si' at position 2",
+      "reason": "The second 'si' (yes) is omitted, which further alters the intended emphasis or confirmation in the sentence, making the meaning incomplete.",
+      "score": 1
+    }
+  ]
 }

@@ -1,20 +1,25 @@
 {
   "gold": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "predicted": "",
+  "predicted": "Thấy rồi bây giờ tốt hơn gì nữa",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "a thay roi bay gio toi lam gi nua",
+  "werNormalizedPredicted": "thay roi bay gio tot hon gi nua",
+  "qualityScore": null,
   "significantWer": 0.1111111111111111,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "a thay roi bay gio toi lam gi nua",
+  "sigWerNormalizedPredicted": "thay roi bay gio tot hon gi nua",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'À,' at position 0",
-      "reason": "The entire expected sentence is missing in the actual transcription, resulting in a complete loss of information and meaning.",
+      "error": "Deletion: 'a' at position 0",
+      "reason": "The word 'a' is a discourse marker in Vietnamese, and its omission does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'toi' to 'tot' at position 5",
+      "reason": "'toi' means 'I' (the speaker), while 'tot' means 'good' or 'better'. This substitution changes the subject to a comparative adjective, altering the meaning of the sentence significantly.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "No, that was it.",
-  "predicted": "No, that would be it",
+  "predicted": "No, za oboje",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "No, that was it.",
-  "werNormalizedPredicted": "No, that would be it.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.75,
+  "werNormalizedGold": "no that was it",
+  "werNormalizedPredicted": "no za oboje",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "No, that was it.",
-  "sigWerNormalizedPredicted": "No, that would be it.",
+  "sigWerNormalizedGold": "no that was it",
+  "sigWerNormalizedPredicted": "no za oboje",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'was' to 'be' at position 2",
-      "reason": "The insertion of 'would' instead of 'was' slightly changes the tense and modality, but the overall meaning of the sentence remains the same in this context.",
-      "score": 2
+      "error": "Substitution: 'that' to 'za' at position 1",
+      "reason": "'za' is a word from a different language (likely Polish or Serbian), replacing 'that' in English, which makes the sentence incoherent and changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'it' at position 3",
+      "reason": "The word 'it' is missing, which further contributes to the sentence being incomplete and incoherent.",
+      "score": 1
     }
   ]
 }

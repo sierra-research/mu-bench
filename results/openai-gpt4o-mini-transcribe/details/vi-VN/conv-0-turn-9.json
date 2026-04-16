@@ -1,0 +1,41 @@
+{
+  "gold": "Số điện thoại sai. Số điện thoại sai. Số điện thoại sai. Số điện thoại chính xác là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Số định phải sai, số định phải sai, số định phải sai, số định phải sai, số định phải chính xác là cộng 84 91112345678.",
+  "unintelligible": false,
+  "wer": 0.40625,
+  "werNormalizedGold": "số điện thoại sai số điện thoại sai số điện thoại sai số điện thoại chính xác là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số định phải sai số định phải sai số định phải sai số định phải sai số định phải chính xác là cộng tám mươi bốn chín một một một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.15625,
+  "majorErrorsCount": 5,
+  "totalWordsCount": 32,
+  "sigWerNormalizedGold": "số điện thoại sai số điện thoại sai số điện thoại sai số điện thoại chính xác là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số định phải sai số định phải sai số định phải sai số định phải sai số định phải chính xác là cộng tám mươi bốn chín một một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'điện' to 'định' at position 1",
+      "reason": "'điện thoại' means 'telephone/phone number', while 'định phải' is not a meaningful phrase and changes the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'điện' to 'định' at position 5",
+      "reason": "Repeats the same error as above, again making the phrase incoherent and changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'điện' to 'định' at position 9",
+      "reason": "Again, this substitution disrupts the meaning of the phrase, making it incorrect and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'điện' to 'định' at position 13",
+      "reason": "The extra 'định' is not part of the expected phrase and adds confusion, further derailing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'một' at position 23",
+      "reason": "This substitution continues the pattern of replacing 'điện' with 'định', which is a significant error as it changes the meaning.",
+      "score": 1
+    }
+  ]
+}

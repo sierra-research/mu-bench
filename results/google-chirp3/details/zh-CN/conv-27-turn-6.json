@@ -1,20 +1,25 @@
 {
   "gold": "辨认。",
-  "predicted": "骗人。",
+  "predicted": "人",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "辨认。",
-  "werNormalizedPredicted": "骗人。",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "辨 认 。",
-  "sigWerNormalizedPredicted": "骗 人 。",
+  "wer": 1.0,
+  "werNormalizedGold": "辨认",
+  "werNormalizedPredicted": "人",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "辨 认",
+  "sigWerNormalizedPredicted": "人",
   "sigWerErrors": [
     {
-      "error": "Substitution: '辨' to '骗' at position 0",
-      "reason": "'辨' (to distinguish/recognize) and '骗' (to deceive/cheat) have completely different meanings, which changes the meaning of the sentence significantly.",
+      "error": "Substitution: '辨' to '人' at position 0",
+      "reason": "'辨' (distinguish/discern) and '人' (person) are completely different words with unrelated meanings, which significantly changes the meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '认' at position 1",
+      "reason": "Omitting '认' (recognize) removes half of the intended phrase '辨认' (to identify/recognize), making the actual output incoherent and losing the original meaning.",
       "score": 1
     }
   ]

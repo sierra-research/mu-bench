@@ -1,20 +1,25 @@
 {
   "gold": "Lo siento, Juan López.",
-  "predicted": "No es cierto, con López, perdón.",
+  "predicted": "No state to call Pom Pom Con Lopez Perl.",
   "unintelligible": false,
-  "wer": 1.5,
-  "werNormalizedGold": "Lo siento, Juan López.",
-  "werNormalizedPredicted": "No es cierto, con López, perdón.",
-  "qualityScore": 1,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "wer": 2.0,
+  "werNormalizedGold": "lo siento juan lopez",
+  "werNormalizedPredicted": "no state to call pom pom con lopez perl",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Lo siento, Juan López.",
-  "sigWerNormalizedPredicted": "No es cierto, con López, perdón.",
+  "sigWerNormalizedGold": "lo siento juan lopez",
+  "sigWerNormalizedPredicted": "no state to call pom pom con lopez perl",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Lo' to 'cierto,' at position 0",
-      "reason": "'Lo siento' means 'I'm sorry', while 'No es cierto' means 'That's not true'. This completely changes the meaning of the sentence from an apology to a denial.",
+      "error": "Substitution: 'lo' to 'pom' at position 0",
+      "reason": "'no' is inserted at the beginning, which changes the meaning from an apology ('lo siento') to a negation, derailing the intended message.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'perl' at position 4",
+      "reason": "'lo' (from 'lo siento', meaning 'I'm sorry') is replaced with 'state', which is unrelated and makes the sentence incoherent.",
       "score": 1
     }
   ]

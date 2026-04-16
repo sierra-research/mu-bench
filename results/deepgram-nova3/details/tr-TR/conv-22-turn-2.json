@@ -1,21 +1,26 @@
 {
   "gold": "Hayır C N 593 dediniz ama, ben yanlış mı anladım?",
-  "predicted": "Hayır, eski cm593 dediniz ama ben yanlış mı anladım?",
+  "predicted": "Hayır, eski CHM beş yüz doksan üç dediniz ama ben yanlış mı anladım?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Hayır C N 593 dediniz ama, ben yanlış mı anladım?",
-  "werNormalizedPredicted": "Hayır, eski C N 593 dediniz ama, ben yanlış mı anladım?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Hayır C N 593 dediniz ama, ben yanlış mı anladım?",
-  "sigWerNormalizedPredicted": "Hayır, eski C N 593 dediniz ama, ben yanlış mı anladım?",
+  "wer": 0.23076923076923078,
+  "werNormalizedGold": "hayır c n five hundred ninety three dediniz ama ben yanlış mı anladım",
+  "werNormalizedPredicted": "hayır eski c h m five hundred ninety three dediniz ama ben yanlış mı anladım",
+  "qualityScore": null,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "hayır c n five hundred ninety three dediniz ama ben yanlış mı anladım",
+  "sigWerNormalizedPredicted": "hayır eski c h m five hundred ninety three dediniz ama ben yanlış mı anladım",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'eski' at position 0",
-      "reason": "The word 'eski' (meaning 'old' in Turkish) is inserted, which adds extra information not present in the original sentence. However, it does not change the overall meaning of the sentence, which is about confirming a code. The sentence remains coherent and understandable.",
-      "score": 2
+      "error": "Insertion: 'eski' at position 1",
+      "reason": "'eski' means 'old' in Turkish and its insertion changes the meaning of the sentence, making it potentially confusing or misleading.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'n' to 'm' at position 2",
+      "reason": "The insertion of 'h' in a sequence of letters (c n) alters the intended sequence, which could be a code or identifier, making it a significant error.",
+      "score": 1
     }
   ]
 }

@@ -1,15 +1,26 @@
 {
   "gold": "Thôi được rồi. Cảm ơn.",
-  "predicted": "À thôi được rồi, cảm ơn",
+  "predicted": "À thôi, thôi không muốn.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Thôi được rồi. Cảm ơn.",
-  "werNormalizedPredicted": "Thôi được rồi. Cảm ơn.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.8,
+  "werNormalizedGold": "thôi được rồi cảm ơn",
+  "werNormalizedPredicted": "thôi thôi không muốn",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Thôi được rồi. Cảm ơn.",
-  "sigWerNormalizedPredicted": "Thôi được rồi. Cảm ơn.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "thôi được rồi cảm ơn",
+  "sigWerNormalizedPredicted": "thôi thôi không muốn",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'được' to 'thôi' at position 1",
+      "reason": "'được' (okay) is replaced by 'thôi' (stop), which changes the meaning of the sentence from acceptance to repetition, significantly altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ơn' at position 4",
+      "reason": "'ơn' is part of 'cảm ơn' (thank you), and its omission means the phrase is incomplete and the meaning is lost.",
+      "score": 1
+    }
+  ]
 }

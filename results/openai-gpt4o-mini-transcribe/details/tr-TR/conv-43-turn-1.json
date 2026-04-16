@@ -1,0 +1,31 @@
+{
+  "gold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
+  "predicted": "Banka kartımızı sözleşmek üzere yalnız bana yeni bir kart gönderebilir misin?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "banka kartimin süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "werNormalizedPredicted": "banka kartimizi sözleşmek üzere yalnız bana yeni bir kart gönderebilir misin",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "banka kartimin süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "sigWerNormalizedPredicted": "banka kartimizi sözleşmek üzere yalnız bana yeni bir kart gönderebilir misin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartimin' to 'kartimizi' at position 1",
+      "reason": "The possessive pronoun changes from 'my' to 'our', which alters the subject of the sentence from singular to plural. This is a minor error as the main intent (about the bank card) is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'geçmek' at position 3",
+      "reason": "Omitting 'geçmek' (to expire) removes the information that the card is about to expire, which is crucial to the request. This significantly changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'anna' to 'yalnız' at position 5",
+      "reason": "'anna' is likely a name or a direct address, while 'yalnız' means 'only' or 'alone'. This substitution changes who is being addressed or the context of the request, which can significantly alter the meaning.",
+      "score": 1
+    }
+  ]
+}

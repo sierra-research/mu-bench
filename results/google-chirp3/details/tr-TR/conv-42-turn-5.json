@@ -1,26 +1,31 @@
 {
   "gold": "İsmim Ahmet Arslan, Anna.",
-  "predicted": "Ich bin Ahmet aus deiner Nähe.",
+  "predicted": "Ich bin Ahmet Aslan.",
   "unintelligible": false,
-  "wer": 1.25,
-  "werNormalizedGold": "İsmim Ahmet Arslan, Anna.",
-  "werNormalizedPredicted": "Ich bin Ahmet aus deiner Nähe.",
-  "qualityScore": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "ismim ahmet arslan anna",
+  "werNormalizedPredicted": "ich bin ahmet aslan",
+  "qualityScore": null,
   "significantWer": 0.5,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "İsmim Ahmet Arslan, Anna.",
-  "sigWerNormalizedPredicted": "Ich bin Ahmet aus deiner Nähe.",
+  "sigWerNormalizedGold": "ismim ahmet arslan anna",
+  "sigWerNormalizedPredicted": "ich bin ahmet aslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İsmim' to 'bin' at position 0",
-      "reason": "The actual transcription starts with a German word not present in the expected Turkish sentence, indicating a language mismatch and a significant change in meaning.",
+      "error": "Substitution: 'ismim' to 'bin' at position 0",
+      "reason": "'ich' is a German word meaning 'I', which is not present in the expected Turkish sentence. This introduces a different language and changes the meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: 'Arslan,' to 'deiner' at position 2",
-      "reason": "'İsmim' means 'my name is' in Turkish, while 'bin' means 'am' in German. This is a substitution across languages and changes the structure and meaning of the introduction.",
+      "error": "Substitution: 'arslan' to 'aslan' at position 2",
+      "reason": "'ismim' means 'my name is' in Turkish, while 'bin' means 'am' in German. This substitution changes the language and the meaning of the introduction.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'anna' at position 3",
+      "reason": "'arslan' and 'aslan' are very similar Turkish names/words, likely a minor spelling or pronunciation difference, but the meaning is preserved.",
+      "score": 2
     }
   ]
 }

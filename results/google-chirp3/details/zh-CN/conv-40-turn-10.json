@@ -1,15 +1,31 @@
 {
   "gold": "郡凛 at email dot com。",
-  "predicted": "junlin@email.com",
+  "predicted": "0@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "郡凛 at email dot com。",
-  "werNormalizedPredicted": "郡凛 at email dot com。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "郡 凛 at email dot com 。",
-  "sigWerNormalizedPredicted": "郡 凛 at email dot com 。",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "郡凛 at email dot com",
+  "werNormalizedPredicted": "zero at gmail dot com",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "郡 凛 at email dot com",
+  "sigWerNormalizedPredicted": "zero at gmail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'zero' at position 0",
+      "reason": "The expected word is a non-English (likely Japanese) character, while the actual is the English word 'zero'. This is a complete substitution of a name or identifier with an unrelated English word, which significantly changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "A key part of the expected email identifier is missing in the actual transcription, which makes the email address incorrect and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 3",
+      "reason": "The domain part of the email address is changed from 'email' to 'gmail', which is a significant error as it changes the destination of the email address.",
+      "score": 1
+    }
+  ]
 }

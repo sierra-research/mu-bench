@@ -1,25 +1,30 @@
 {
   "gold": "No. Aw, man. Try to transfer me one more time. Let me see if the live agent could help me.",
-  "predicted": "Oh, man. Try to transfer me one more time. Let me see if a live agent could help me.",
+  "predicted": "No. Oh man. Try to transfer me one more time. Let me see if a live agent can help me.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "No. Aw, man. Try to transfer me one more time. Let me see if the live agent could help me.",
-  "werNormalizedPredicted": "Aw, man. Try to transfer me one more time. Let me see if a live agent could help me.",
-  "qualityScore": 2,
+  "wer": 0.15,
+  "werNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
+  "werNormalizedPredicted": "no oh man try to transfer me one more time let me see if a live agent can help me",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "No. Aw, man. Try to transfer me one more time. Let me see if the live agent could help me.",
-  "sigWerNormalizedPredicted": "Aw, man. Try to transfer me one more time. Let me see if a live agent could help me.",
+  "sigWerNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
+  "sigWerNormalizedPredicted": "no oh man try to transfer me one more time let me see if a live agent can help me",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'No.' at position 0",
-      "reason": "The omission of 'No.' removes a direct response or rejection at the start, which could change the intent or context of the conversation.",
-      "score": 2
+      "error": "Substitution: 'aw' to 'oh' at position 1",
+      "reason": "'Aw' and 'oh' are both interjections expressing emotion, and in this context, they serve the same conversational function.",
+      "score": 3
     },
     {
       "error": "Substitution: 'the' to 'a' at position 14",
-      "reason": "Changing 'the live agent' to 'a live agent' is a minor difference in specificity but does not alter the overall meaning of the sentence.",
+      "reason": "Changing 'the' to 'a' slightly alters specificity but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'could' to 'can' at position 17",
+      "reason": "'Could' and 'can' both express ability in this context; the meaning remains the same.",
       "score": 3
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "Thôi được rồi.",
-  "predicted": "À thôi thôi được rồi.",
+  "predicted": "À sao sao được vậy?",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Thôi được rồi.",
-  "werNormalizedPredicted": "À, thôi thôi được rồi.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.3333333333333333,
+  "werNormalizedGold": "thoi duoc roi",
+  "werNormalizedPredicted": "a sao sao duoc vay",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Thôi được rồi.",
-  "sigWerNormalizedPredicted": "À, thôi thôi được rồi.",
+  "sigWerNormalizedGold": "thoi duoc roi",
+  "sigWerNormalizedPredicted": "a sao sao duoc vay",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thôi' to 'thôi' at position 0",
-      "reason": "'À' is an interjection that does not change the main meaning of the sentence; it just adds a conversational filler.",
-      "score": 2
+      "error": "Substitution: 'thoi' to 'sao' at position 0",
+      "reason": "The word 'a' is added at the beginning, which introduces a new element and changes the tone and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'roi' to 'vay' at position 2",
+      "reason": "'thoi' and 'sao' have different meanings in Vietnamese; this substitution changes the intent of the sentence significantly.",
+      "score": 1
     }
   ]
 }

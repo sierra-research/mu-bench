@@ -1,30 +1,25 @@
 {
   "gold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
-  "predicted": "Evet, tekrar kodlaya Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa. Arslan at.",
+  "predicted": "Evet, tekrar konuşalım. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa. Arslan at.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
-  "werNormalizedPredicted": "Evet. Tekrar kodlaya. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa. Arslan at.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat nigde edirne pırasa nokta arslan at",
+  "werNormalizedPredicted": "evet tekrar konusalim zonguldak adana yozgat nigde edirne pırasa arslan at",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
-  "sigWerNormalizedPredicted": "Evet. Tekrar kodlaya. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa. Arslan at.",
+  "sigWerNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat nigde edirne pırasa nokta arslan at",
+  "sigWerNormalizedPredicted": "evet tekrar konusalim zonguldak adana yozgat nigde edirne pırasa arslan at",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kodluyorum.' to 'kodlaya.' at position 2",
-      "reason": "'kodluyorum' means 'I am coding again', while 'kodlaya' is an incomplete or incorrect form, which makes the sentence less clear but the intent is still somewhat understandable.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'pırasa' to 'pırasa.' at position 8",
-      "reason": "The only difference is punctuation, which should be ignored according to the guidance.",
-      "score": 3
+      "error": "Substitution: 'kodluyorum' to 'konusalim' at position 2",
+      "reason": "'kodluyorum' means 'I am coding' and 'konusalim' means 'let's talk'; these are completely different actions and change the meaning of the sentence significantly.",
+      "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 9",
-      "reason": "'nokta' means 'dot' and is likely used to indicate a period or to separate items in a list. Its omission does not significantly change the meaning of the sentence.",
+      "reason": "'nokta' means 'dot' or 'period', which may be important if this is part of a dictated sequence (such as an email or code). Its omission could lead to misunderstanding or loss of information.",
       "score": 2
     }
   ]

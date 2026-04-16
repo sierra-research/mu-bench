@@ -2,29 +2,29 @@
   "gold": "不用了，不用记录我的邮箱了，能不能不用我这个邮箱。",
   "predicted": "不用了,不用进入我的邮箱了,能不能不用我的邮箱?",
   "unintelligible": false,
-  "wer": 0.16,
-  "werNormalizedGold": "不用了，不用记录我的邮箱了，能不能不用我这个邮箱。",
-  "werNormalizedPredicted": "不用了，不用进入我的邮箱了，能不能不用我的邮箱。",
-  "qualityScore": 2,
-  "significantWer": 0.04,
+  "wer": 0.18181818181818182,
+  "werNormalizedGold": "不用了 不用记录我的邮箱了 能不能不用我这个邮箱",
+  "werNormalizedPredicted": "不用了 不用进入我的邮箱了 能不能不用我的邮箱",
+  "qualityScore": null,
+  "significantWer": 0.045454545454545456,
   "majorErrorsCount": 1,
-  "totalWordsCount": 25,
-  "sigWerNormalizedGold": "不 用 了 ， 不 用 记 录 我 的 邮 箱 了 ， 能 不 能 不 用 我 这 个 邮 箱 。",
-  "sigWerNormalizedPredicted": "不 用 了 ， 不 用 进 入 我 的 邮 箱 了 ， 能 不 能 不 用 我 的 邮 箱 。",
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "不 用 了 不 用 记 录 我 的 邮 箱 了 能 不 能 不 用 我 这 个 邮 箱",
+  "sigWerNormalizedPredicted": "不 用 了 不 用 进 入 我 的 邮 箱 了 能 不 能 不 用 我 的 邮 箱",
   "sigWerErrors": [
     {
-      "error": "Substitution: '记' to '进' at position 6",
-      "reason": "The word '记' (record) was replaced with '进' (enter), which changes the action being described from recording the email to entering the email. This alters the meaning of the sentence significantly.",
+      "error": "Substitution: '记' to '进' at position 5",
+      "reason": "'记' (record) and '进' (enter) are different verbs and change the meaning of the action in the sentence, which could confuse the intent.",
       "score": 1
     },
     {
-      "error": "Substitution: '这' to '的' at position 20",
-      "reason": "The word '这' (this) was replaced with '的' (possessive particle), which changes the reference from 'this email' to 'my email'. However, in context, the meaning is only slightly changed and remains understandable.",
+      "error": "Substitution: '这' to '的' at position 18",
+      "reason": "'这' (this) and '的' (possessive particle) are different; substituting '这' with '的' changes the reference from 'this email' to 'my email', which alters the meaning but not drastically.",
       "score": 2
     },
     {
-      "error": "Deletion: '个' at position 21",
-      "reason": "The classifier '个' is missing, but its omission does not significantly affect the meaning or understanding of the sentence.",
+      "error": "Deletion: '个' at position 19",
+      "reason": "Omitting '个' (a measure word) is a minor grammatical error in Chinese and does not significantly affect the meaning of the sentence.",
       "score": 2
     }
   ]

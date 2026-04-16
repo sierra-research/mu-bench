@@ -1,15 +1,31 @@
 {
   "gold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "predicted": "Tabii Atatürk Caddesi no 45. 6 Kazım Karabekir, istanbul 34.660 Türkiye.",
+  "predicted": "Tabi Atatürk Caddesi no 45 6 Kazım Karabekir, istanbul 34.660 Türkiye.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "werNormalizedPredicted": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "sigWerNormalizedPredicted": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "sigWerErrors": []
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
+  "werNormalizedPredicted": "tabii atatürk caddesi no forty five six kazım karabekir istanbul thirty four six hundred sixty türkiye",
+  "qualityScore": null,
+  "significantWer": 0.045454545454545456,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
+  "sigWerNormalizedPredicted": "tabii atatürk caddesi no forty five six kazım karabekir istanbul thirty four six hundred sixty türkiye",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'taksim' at position 6",
+      "reason": "'Taksim' is a major location in Istanbul and its omission removes a key part of the address, making it incomplete and potentially misleading.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mahallesi' at position 10",
+      "reason": "'Mahallesi' means 'neighborhood' in Turkish and is an important part of the address structure. Its omission makes the address less precise but does not completely derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'posta' at position 14",
+      "reason": "'Posta' (post) is part of 'posta kodum' (postal code). Omitting 'posta' makes the phrase less clear but the meaning can still be inferred from context.",
+      "score": 2
+    }
+  ]
 }

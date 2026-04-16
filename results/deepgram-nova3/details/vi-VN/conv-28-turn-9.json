@@ -1,15 +1,31 @@
 {
   "gold": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Số điện thoại là cộng tám mươi bốn chín mươi một một hai ba mươi bốn năm sáu bảy tám",
+  "predicted": "Điện thoại là cộng tám mươi bốn chín mươi một một hai ba mươi bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "werNormalizedPredicted": "dien thoai la cong tam muoi bon chin muoi mot mot hai ba muoi bon nam sau bay tam",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedPredicted": "dien thoai la cong tam muoi bon chin muoi mot mot hai ba muoi bon nam sau bay tam",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'so' at position 0",
+      "reason": "'so' (meaning 'number') is omitted, which makes the sentence less clear as a phone number announcement.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'muoi' at position 9",
+      "reason": "Extra 'muoi' (meaning 'ten') changes the sequence of numbers, resulting in an incorrect phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 13",
+      "reason": "Another extra 'muoi' alters the phone number, making it incorrect.",
+      "score": 1
+    }
+  ]
 }

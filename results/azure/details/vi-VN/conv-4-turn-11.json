@@ -1,15 +1,26 @@
 {
   "gold": "Rồi. Mình sẵn sàng rồi.",
-  "predicted": "Rồi mình sẵn sàng rồi.",
+  "predicted": "Gio minh.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Rồi. Mình sẵn sàng rồi.",
-  "werNormalizedPredicted": "Rồi. Mình sẵn sàng rồi.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.8,
+  "werNormalizedGold": "rồi mình sẵn sàng rồi",
+  "werNormalizedPredicted": "giờ mình",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Rồi. Mình sẵn sàng rồi.",
-  "sigWerNormalizedPredicted": "Rồi. Mình sẵn sàng rồi.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "rồi mình sẵn sàng rồi",
+  "sigWerNormalizedPredicted": "giờ mình",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'rồi' to 'giờ' at position 0",
+      "reason": "'rồi' means 'already' or 'then', while 'giờ' means 'now'; this changes the temporal context and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sẵn' at position 2",
+      "reason": "'sẵn' (meaning 'ready') is omitted, which removes the key information about being ready, significantly altering the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

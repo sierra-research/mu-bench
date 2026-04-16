@@ -1,31 +1,21 @@
 {
   "gold": "Kết nối tôi với nhân viên đi.",
-  "predicted": "Chợ nó to với nhiều viên đi",
+  "predicted": "Chắc nó thu về nhiều view đi",
   "unintelligible": false,
-  "wer": 0.7142857142857143,
-  "werNormalizedGold": "Kết nối tôi với nhân viên đi.",
-  "werNormalizedPredicted": "Chợ nó to với nhiều viên đi",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "wer": 0.8571428571428571,
+  "werNormalizedGold": "kết nối tôi với nhân viên đi",
+  "werNormalizedPredicted": "chắc nó thu về nhiều view đi",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Kết nối tôi với nhân viên đi.",
-  "sigWerNormalizedPredicted": "Chợ nó to với nhiều viên đi",
+  "sigWerNormalizedGold": "kết nối tôi với nhân viên đi",
+  "sigWerNormalizedPredicted": "chắc nó thu về nhiều view đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Kết' to 'Chợ' at position 0",
-      "reason": "'Kết' (connect) and 'Chợ' (market) are completely different words and change the intent of the sentence from requesting a connection to talking about a market, which derails the meaning.",
+      "error": "Substitution: 'kết' to 'chắc' at position 0",
+      "reason": "The actual sentence is completely different in meaning from the expected sentence. 'kết nối tôi với nhân viên đi' means 'connect me to a staff member', while 'chắc nó thu về nhiều view đi' means 'it probably gets a lot of views'. The substitution changes the entire intent and meaning of the sentence.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'nhân' to 'nhiều' at position 4",
-      "reason": "'nhân' (staff/personnel) and 'nhiều' (many/much) are unrelated in meaning, which changes the subject of the sentence and makes it incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'đi.' to 'đi' at position 6",
-      "reason": "The difference is only punctuation, which does not affect the meaning.",
-      "score": 3
     }
   ]
 }

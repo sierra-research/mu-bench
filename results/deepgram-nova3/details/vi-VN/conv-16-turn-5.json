@@ -1,21 +1,26 @@
 {
   "gold": "Email như vậy không đúng. Email phải là minh chấm trần a còng email chấm com.",
-  "predicted": "Email như vậy không đúng Email phải là mình chấm trầngmail chấm com",
+  "predicted": "Email như vậy là không đúng, Email phải là mình chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werNormalizedGold": "Email như vậy không đúng. Email phải là minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Email như vậy không đúng. Email phải là mình chấm trần a còng email chấm com.",
-  "qualityScore": 2,
+  "wer": 0.125,
+  "werNormalizedGold": "email như vậy không đúng email phải là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email như vậy là không đúng email phải là mình chấm trần a còng email chấm com",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Email như vậy không đúng. Email phải là minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Email như vậy không đúng. Email phải là mình chấm trần a còng email chấm com.",
+  "sigWerNormalizedGold": "email như vậy không đúng email phải là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email như vậy là không đúng email phải là mình chấm trần a còng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'minh' to 'mình' at position 8",
-      "reason": "The substitution is between 'minh' (without tone) and 'mình' (with tone). In Vietnamese, this changes the word from a name ('minh') to a pronoun ('mình'), which could confuse the intended email address. Since this is part of an email address, accuracy is important, but the overall meaning is still understandable as an email address. However, it could cause an error if someone tries to use the wrong email. Therefore, this is a minor error.",
+      "error": "Insertion: 'là' at position 3",
+      "reason": "The insertion of 'là' ('is') does not significantly change the meaning of the sentence; it is a minor grammatical addition that does not derail the overall intent.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 8",
+      "reason": "'minh' and 'mình' are pronounced similarly and in this context refer to the same name or entity; the substitution does not change the meaning of the sentence.",
+      "score": 3
     }
   ]
 }

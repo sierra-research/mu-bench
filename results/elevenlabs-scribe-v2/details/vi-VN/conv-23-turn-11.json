@@ -1,31 +1,31 @@
 {
   "gold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
-  "predicted": "Ờm, tôi muốn hỏi nữa là tôi được cấp một lần hai thẻ không? Để làm school",
+  "predicted": "Ờm, tôi muốn hỏi nữa là tôi được cấp một lần thay thẻ không? Để làm school",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
-  "werNormalizedPredicted": "Ờm, tôi muốn hỏi nữa là tôi được cấp một lần hai thẻ không, để làm school",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.35714285714285715,
+  "werNormalizedGold": "toi muon hoi toi duoc cap mot lan hai the khong de so cua",
+  "werNormalizedPredicted": "toi muon hoi nua la toi duoc cap mot lan thay the khong de lam school",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
-  "sigWerNormalizedPredicted": "Ờm, tôi muốn hỏi nữa là tôi được cấp một lần hai thẻ không, để làm school",
+  "sigWerNormalizedGold": "toi muon hoi toi duoc cap mot lan hai the khong de so cua",
+  "sigWerNormalizedPredicted": "toi muon hoi nua la toi duoc cap mot lan thay the khong de lam school",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "'Ờm' is a filler word and does not affect the meaning of the sentence.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'hỏi,' to 'là' at position 2",
-      "reason": "Difference in capitalization only, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'sơ' to 'làm' at position 12",
-      "reason": "'Nữa' adds a nuance of 'also' or 'further', but does not change the main meaning of the sentence.",
+      "error": "Insertion: 'nua' at position 3",
+      "reason": "'nua' (meaning 'more' or 'again') adds an extra query nuance, but does not significantly change the intent of the question.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'hai' to 'thay' at position 8",
+      "reason": "'hai' means 'two' and 'thay' means 'replace'; this changes the meaning from asking about 'two cards' to 'replacement card', which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'so' to 'lam' at position 12",
+      "reason": "'so' means 'number' and 'lam' means 'do' or 'make'; this changes the meaning of the sentence, making it incoherent in context.",
+      "score": 1
     }
   ]
 }

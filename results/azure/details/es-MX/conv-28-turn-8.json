@@ -2,14 +2,25 @@
   "gold": "34 55.",
   "predicted": "3455.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "34 55.",
-  "werNormalizedPredicted": "34 55.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 2,
-  "sigWerNormalizedGold": "34 55.",
-  "sigWerNormalizedPredicted": "34 55.",
-  "sigWerErrors": []
+  "wer": 0.75,
+  "werNormalizedGold": "thirty four fifty five",
+  "werNormalizedPredicted": "three thousand four hundred fifty five",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "thirty four fifty five",
+  "sigWerNormalizedPredicted": "three thousand four hundred fifty five",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thirty' to 'thousand' at position 0",
+      "reason": "'Three' changes the number from 'thirty four' to 'three thousand four', which is a significant change in the value and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'hundred' at position 2",
+      "reason": "Replacing 'thirty' with 'thousand' changes the scale of the number, resulting in a completely different value.",
+      "score": 1
+    }
+  ]
 }

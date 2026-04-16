@@ -1,26 +1,31 @@
 {
   "gold": "Hayır yine yanlış. Zeynep diyorsunuz halbuki adım Zaynep. Z'den sonra A harfi var. E harfi değil.",
-  "predicted": "Hayır, yine yanlış, Zeynep diyorsunuz halbuki adım Zaynet. Z'den sonra A harfi var, E harfi değil.",
+  "predicted": "Hayır, yine yanlış, Zeynep diyorsunuz halbuki adım Zaynet. Z'den sonrada harfi var, e harfi değil.",
   "unintelligible": false,
-  "wer": 0.125,
-  "werNormalizedGold": "Hayır yine yanlış. Zeynep diyorsunuz halbuki adım Zaynep. Z'den sonra A harfi var. E harfi değil.",
-  "werNormalizedPredicted": "Hayır, yine yanlış. Zeynep diyorsunuz halbuki adım Zaynet. Z'den sonra A harfi var. E harfi değil.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Hayır yine yanlış. Zeynep diyorsunuz halbuki adım Zaynep. Z'den sonra A harfi var. E harfi değil.",
-  "sigWerNormalizedPredicted": "Hayır, yine yanlış. Zeynep diyorsunuz halbuki adım Zaynet. Z'den sonra A harfi var. E harfi değil.",
+  "wer": 0.17647058823529413,
+  "werNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
+  "werNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynet z den sonrada harfi var e harfi değil",
+  "qualityScore": null,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
+  "sigWerNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynet z den sonrada harfi var e harfi değil",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "Difference is only a comma (punctuation), which should be ignored as per guidance.",
-      "score": 3
+      "error": "Substitution: 'zaynep' to 'zaynet' at position 7",
+      "reason": "'zaynep' is a proper noun (a name), and the substitution to 'zaynet' changes the name, which could cause confusion but is still phonetically similar and recognizable.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'Zaynep.' to 'Zaynet.' at position 7",
-      "reason": "The name 'Zaynep' is misspelled as 'Zaynet', which is a minor error for a proper noun as a whole, as it is still recognizable and does not derail the meaning.",
+      "error": "Substitution: 'sonra' to 'sonrada' at position 10",
+      "reason": "'sonra' means 'after', while 'sonrada' is a non-standard form but still understandable in context; the meaning is not significantly changed.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'a' at position 11",
+      "reason": "The missing 'a' is important in the context of spelling out the name, so omitting it changes the intended spelling and could lead to misunderstanding.",
+      "score": 1
     }
   ]
 }

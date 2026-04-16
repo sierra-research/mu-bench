@@ -1,21 +1,26 @@
 {
   "gold": "我正在等待新卡，并想知道它的状态。",
-  "predicted": "我仍在等待新卡，并想知道它的状态。",
+  "predicted": "我仍在等待新卡，并想知道他的状态。",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werNormalizedGold": "我正在等待新卡，并想知道它的状态。",
-  "werNormalizedPredicted": "我仍在等待新卡，并想知道它的状态。",
-  "qualityScore": 3,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "我正在等待新卡 并想知道它的状态",
+  "werNormalizedPredicted": "我仍在等待新卡 并想知道他的状态",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 ， 并 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "我 仍 在 等 待 新 卡 ， 并 想 知 道 它 的 状 态 。",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 并 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 仍 在 等 待 新 卡 并 想 知 道 他 的 状 态",
   "sigWerErrors": [
     {
       "error": "Substitution: '正' to '仍' at position 1",
-      "reason": "'正' (currently) and '仍' (still) both indicate an ongoing action, and the overall meaning of the sentence remains the same. This is a minor difference in aspect, not affecting the main intent.",
-      "score": 3
+      "reason": "'正' (currently) and '仍' (still) both indicate ongoing action, so the overall meaning is only slightly changed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 11",
+      "reason": "'它' (it) and '他' (he) are different pronouns, but in this context both refer to the card, so the meaning is not significantly changed.",
+      "score": 2
     }
   ]
 }

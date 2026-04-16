@@ -1,15 +1,26 @@
 {
   "gold": "君玲。",
-  "predicted": "June Lin.",
+  "predicted": "Drilling.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "君玲。",
-  "werNormalizedPredicted": "君玲。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "君 玲 。",
-  "sigWerNormalizedPredicted": "君 玲 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "君玲",
+  "werNormalizedPredicted": "drilling",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "君 玲",
+  "sigWerNormalizedPredicted": "drilling",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drilling' at position 0",
+      "reason": "The expected word is a Chinese name character, but the actual transcription is an unrelated English word, resulting in a completely different meaning and loss of the original information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from the expected name is missing in the actual transcription, which significantly alters or removes the intended name.",
+      "score": 1
+    }
+  ]
 }

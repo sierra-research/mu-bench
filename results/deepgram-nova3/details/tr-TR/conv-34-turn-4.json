@@ -1,15 +1,26 @@
 {
   "gold": "N D 2 7 2 2. Doğru mudur?",
-  "predicted": "Nd iki yedi iki iki doğru mudur?",
+  "predicted": "Md iki yedi iki iki doğru mudur?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "N D 2 7 2 2. Doğru mudur?",
-  "werNormalizedPredicted": "N D 2 7 2 2. Doğru mudur?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.75,
+  "werNormalizedGold": "n d two seven two two doğru mudur",
+  "werNormalizedPredicted": "md iki yedi iki iki doğru mudur",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "N D 2 7 2 2. Doğru mudur?",
-  "sigWerNormalizedPredicted": "N D 2 7 2 2. Doğru mudur?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "n d two seven two two doğru mudur",
+  "sigWerNormalizedPredicted": "md iki yedi iki iki doğru mudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'n' to 'md' at position 0",
+      "reason": "The expected 'n' is replaced by 'md', which are different letters and could represent different initials or codes. This significantly changes the meaning if these are identifiers or codes.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'two' at position 5",
+      "reason": "The last 'two' in the expected sequence is missing in the actual transcription. This changes the sequence of numbers, which could be critical if these are codes or identifiers.",
+      "score": 1
+    }
+  ]
 }

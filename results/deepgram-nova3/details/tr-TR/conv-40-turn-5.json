@@ -1,15 +1,21 @@
 {
   "gold": "Evet okuyorum, E N 7 0 6 8.",
-  "predicted": "Evet okuyorum. E, N, yedi, sıfır, altı, sekiz.",
+  "predicted": "Evet okuyorum, e-n-yedi-altı-sekiz",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Evet okuyorum, E N 7 0 6 8.",
-  "werNormalizedPredicted": "Evet okuyorum, E N 7 0 6 8.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.125,
+  "werNormalizedGold": "evet okuyorum e n yedi sıfır altı sekiz",
+  "werNormalizedPredicted": "evet okuyorum e n yedi altı sekiz",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Evet okuyorum, E N 7 0 6 8.",
-  "sigWerNormalizedPredicted": "Evet okuyorum, E N 7 0 6 8.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "evet okuyorum e n yedi sıfır altı sekiz",
+  "sigWerNormalizedPredicted": "evet okuyorum e n yedi altı sekiz",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'sıfır' at position 5",
+      "reason": "Omitting 'sıfır' (zero) from a sequence of numbers changes the actual number sequence being read, which is significant for things like codes or phone numbers.",
+      "score": 1
+    }
+  ]
 }

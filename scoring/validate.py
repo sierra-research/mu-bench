@@ -1,9 +1,10 @@
 """Validate submission format against the manifest.
 
-Checks directory structure, metadata.yaml, and file coverage against manifest.json.
+Checks directory structure, metadata.yaml, latency.json, and transcript coverage
+against manifest.json. Run this locally before opening a PR.
 
 Usage:
-    python scoring/validate.py submissions/raw/deepgram-nova3 --manifest manifest.json
+    python scoring/validate.py submissions/raw/your-model-name --manifest manifest.json
 """
 
 import argparse
@@ -18,14 +19,16 @@ except ImportError:
 
 REQUIRED_METADATA_FIELDS = ["model", "organization", "version", "date"]
 
-MAX_FILE_SIZE_BYTES = 10_000  # 10 KB — no transcript should be longer than this
-MAX_TOTAL_SIZE_MB = 50  # 50 MB aggregate cap for the entire submission
-ALLOWED_FILES = {".txt"}  # Only .txt files allowed in locale dirs
+MAX_FILE_SIZE_BYTES = 10_000
+MAX_TOTAL_SIZE_MB = 50
+ALLOWED_FILES = {".txt"}
 ALLOWED_ROOT_FILES = {
     "metadata.yaml",
     "metadata.json",
     "latency.json",
-}  # Allowed in submission root
+}
+
+DOCS_POINTER = "See submissions/SUBMITTING.md for the full submission contract."
 
 
 def load_manifest(manifest_path):
@@ -49,11 +52,10 @@ def validate_metadata(submission_dir):
     metadata_path = submission_dir / "metadata.yaml"
 
     if not metadata_path.exists():
-        issues.append("metadata.yaml is missing")
+        issues.append("metadata.yaml is missing (required)")
         return issues
 
     if yaml is None:
-        # Fall back to basic check if pyyaml not installed
         content = metadata_path.read_text(encoding="utf-8")
         for field in REQUIRED_METADATA_FIELDS:
             if f"{field}:" not in content and f"{field} :" not in content:
@@ -89,13 +91,11 @@ def validate_submission_safety(submission_dir):
         if not path.is_file():
             continue
 
-        # Root-level files: only metadata.yaml/json allowed
         if path.parent == submission_dir:
             if path.name not in ALLOWED_ROOT_FILES:
                 issues.append(f"Unexpected file in submission root: {rel}")
             continue
 
-        # Inside locale dirs: only .txt files allowed
         if path.suffix not in ALLOWED_FILES:
             issues.append(f"Disallowed file type: {rel} (only .txt allowed)")
             continue
@@ -106,7 +106,6 @@ def validate_submission_safety(submission_dir):
         if size > MAX_FILE_SIZE_BYTES:
             issues.append(f"File too large: {rel} ({size:,} bytes, max {MAX_FILE_SIZE_BYTES:,})")
 
-        # Verify file is valid UTF-8 text
         try:
             path.read_text(encoding="utf-8")
         except UnicodeDecodeError:
@@ -119,77 +118,108 @@ def validate_submission_safety(submission_dir):
     return issues
 
 
-def validate_latency(submission_dir, locale_ids):
-    """Validate latency.json if present (optional file)."""
+def validate_latency(submission_dir, submitted_by_locale):
+    """Validate latency.json is present, valid, and covers every submitted transcript.
+
+    `submitted_by_locale` is {locale: set(utterance_ids)} — only locales/IDs the
+    submitter actually shipped. Partial-locale submissions are allowed, but within
+    each submitted locale every transcript must have a matching latency entry.
+    """
+    issues = []
     warnings = []
     latency_path = submission_dir / "latency.json"
+
     if not latency_path.exists():
-        return [], warnings
+        issues.append("latency.json is missing (required). Include per-utterance API latency in ms.")
+        return issues, warnings
 
     try:
         with open(latency_path, "r", encoding="utf-8") as f:
             data = json.load(f)
     except (json.JSONDecodeError, UnicodeDecodeError) as e:
-        return [f"latency.json is not valid JSON: {e}"], warnings
+        issues.append(f"latency.json is not valid JSON: {e}")
+        return issues, warnings
 
     if not isinstance(data, dict):
-        return ["latency.json must be a JSON object mapping utterance IDs to latency values"], warnings
-
-    all_ids = set()
-    for ids in locale_ids.values():
-        all_ids |= ids
+        issues.append("latency.json must be a JSON object mapping '<locale>/<utterance_id>' to latency in ms")
+        return issues, warnings
 
     bad_values = []
-    for uid, val in data.items():
+    bare_keys = []
+    for key, val in data.items():
         if not isinstance(val, (int, float)):
-            bad_values.append(uid)
+            bad_values.append(key)
+        if "/" not in key:
+            bare_keys.append(key)
 
     if bad_values:
-        return [f"latency.json has non-numeric values for: {', '.join(bad_values[:5])}"], warnings
+        issues.append(
+            f"latency.json has non-numeric values for {len(bad_values)} key(s); first few: {', '.join(bad_values[:5])}"
+        )
 
-    # Keys can be "locale/utterance_id" or bare "utterance_id"
-    all_keyed_ids = set()
-    for locale, ids in locale_ids.items():
+    if bare_keys:
+        issues.append(
+            f"latency.json has {len(bare_keys)} key(s) without '<locale>/' prefix; keys must be "
+            f"'<locale>/<utterance_id>' (e.g. 'en-US/conv-0-turn-0'). First few: "
+            f"{', '.join(bare_keys[:5])}"
+        )
+
+    required_keys = set()
+    for locale, ids in submitted_by_locale.items():
         for uid in ids:
-            all_keyed_ids.add(f"{locale}/{uid}")
-            all_keyed_ids.add(uid)
+            required_keys.add(f"{locale}/{uid}")
 
-    matched = sum(1 for k in data if k in all_keyed_ids)
-    extra_count = len(data) - matched
-    if extra_count:
-        warnings.append(f"latency.json has {extra_count} keys not matching manifest (will be ignored)")
+    missing_keys = required_keys - set(data.keys())
+    if missing_keys:
+        shown = sorted(missing_keys)[:10]
+        more = f" (+{len(missing_keys) - len(shown)} more)" if len(missing_keys) > len(shown) else ""
+        issues.append(
+            f"latency.json is missing {len(missing_keys)} entries that have transcript files:\n"
+            + "\n".join(f"    - {k}" for k in shown)
+            + more
+        )
 
-    print(f"  latency.json: {len(data)} entries ({matched} match manifest)")
-    return [], warnings
+    extra = set(data.keys()) - required_keys
+    if extra:
+        warnings.append(f"latency.json has {len(extra)} key(s) with no matching transcript (will be ignored)")
+
+    print(f"  latency.json: {len(data)} entries ({len(required_keys - missing_keys)} match shipped transcripts)")
+    return issues, warnings
 
 
-def validate_files(submission_dir, manifest_locales, locale_ids):
-    """Validate transcript files against the manifest."""
+def validate_files(submission_dir, locale_ids):
+    """Validate transcript files against the manifest.
+
+    Returns (issues, warnings, submitted_by_locale) where submitted_by_locale
+    is a {locale: set(utterance_ids)} map of what was actually shipped — partial
+    submissions (subset of locales) are allowed.
+    """
     issues = []
     warnings = []
+    submitted_by_locale = {}
     total_matched = 0
     total_expected = 0
 
-    # Find locale dirs in submission
     locale_dirs = [d for d in submission_dir.iterdir() if d.is_dir() and d.name in locale_ids]
 
     if not locale_dirs:
-        issues.append("No locale directories found matching manifest locales")
-        return issues, warnings
+        issues.append("No locale directories found matching manifest locales (en-US, es-MX, tr-TR, vi-VN, zh-CN)")
+        return issues, warnings, submitted_by_locale
 
     for locale_dir in sorted(locale_dirs, key=lambda d: d.name):
         locale = locale_dir.name
         expected_ids = locale_ids[locale]
-        total_expected += len(expected_ids)
 
         submission_ids = {f.stem for f in locale_dir.glob("*.txt")}
         matched = expected_ids & submission_ids
         missing = expected_ids - submission_ids
         extra = submission_ids - expected_ids
-        total_matched += len(matched)
+        submitted_by_locale[locale] = matched
 
-        # Check for empty files
         empty = [f.stem for f in locale_dir.glob("*.txt") if f.stat().st_size == 0]
+
+        total_expected += len(expected_ids)
+        total_matched += len(matched)
 
         status = f"  {locale}: {len(matched)}/{len(expected_ids)} utterances"
         if missing:
@@ -209,26 +239,37 @@ def validate_files(submission_dir, manifest_locales, locale_ids):
 
         if missing:
             missing_list = sorted(missing)
-            warnings.append(
-                f"{locale}: {len(missing)}/{len(expected_ids)} utterances missing "
-                f"(these will be scored as full errors):\n" + "\n".join(f"    - {m}" for m in missing_list)
+            issues.append(
+                f"{locale}: {len(missing)}/{len(expected_ids)} utterances missing. Within each included locale "
+                f"you must ship a .txt file for every utterance in the manifest:\n"
+                + "\n".join(f"    - {m}" for m in missing_list[:10])
+                + (f" (+{len(missing) - 10} more)" if len(missing) > 10 else "")
             )
 
         if empty:
-            warnings.append(f"{locale}: {len(empty)} empty transcript files")
+            warnings.append(
+                f"{locale}: {len(empty)} empty transcript file(s) — fine if the utterance is silent/inaudible"
+            )
 
-    # Check for unexpected locale dirs
+    submitted_locales = set(submitted_by_locale.keys())
+    skipped = set(locale_ids) - submitted_locales
+    if skipped:
+        warnings.append(
+            f"Partial submission: {len(skipped)} locale(s) skipped ({', '.join(sorted(skipped))}). "
+            "Only submitted locales will be scored."
+        )
+
     unknown_dirs = [
         d.name
         for d in submission_dir.iterdir()
         if d.is_dir() and d.name not in locale_ids and d.name not in (".", "..")
     ]
     if unknown_dirs:
-        warnings.append(f"Unknown locale directories: {', '.join(unknown_dirs)}")
+        warnings.append(f"Unknown locale directories (ignored): {', '.join(unknown_dirs)}")
 
-    print(f"\n  Total: {total_matched}/{total_expected} utterances matched")
+    print(f"\n  Total: {total_matched}/{total_expected} utterances matched across submitted locales")
 
-    return issues, warnings
+    return issues, warnings, submitted_by_locale
 
 
 def main():
@@ -250,27 +291,24 @@ def main():
 
     print(f"Validating: {submission_dir}\n")
 
-    # Safety checks first (file types, sizes, symlinks, encoding)
     print("Running safety checks...")
     safety_issues = validate_submission_safety(submission_dir)
     if safety_issues:
         print(f"\nSAFETY ISSUES ({len(safety_issues)}):")
         for issue in safety_issues:
             print(f"  - {issue}")
-        print("\nValidation FAILED (safety).")
+        print(f"\n{DOCS_POINTER}")
+        print("Validation FAILED (safety).")
         sys.exit(1)
     print("Safety checks passed.\n")
 
-    manifest_locales, locale_ids = load_manifest(manifest_path)
+    _, locale_ids = load_manifest(manifest_path)
 
-    # Validate metadata
     metadata_issues = validate_metadata(submission_dir)
 
-    # Validate files
-    file_issues, file_warnings = validate_files(submission_dir, manifest_locales, locale_ids)
+    file_issues, file_warnings, submitted_by_locale = validate_files(submission_dir, locale_ids)
 
-    # Validate latency (optional)
-    latency_issues, latency_warnings = validate_latency(submission_dir, locale_ids)
+    latency_issues, latency_warnings = validate_latency(submission_dir, submitted_by_locale)
     file_warnings.extend(latency_warnings)
 
     all_issues = metadata_issues + file_issues + latency_issues
@@ -284,7 +322,8 @@ def main():
         print(f"\nISSUES ({len(all_issues)}):")
         for issue in all_issues:
             print(f"  - {issue}")
-        print("\nValidation FAILED.")
+        print(f"\n{DOCS_POINTER}")
+        print("Validation FAILED.")
         sys.exit(1)
     else:
         print("\nValidation passed.")

@@ -2,20 +2,25 @@
   "gold": "那你还没听，听得到我的名字。",
   "predicted": "丹尼还没听得到我的名字",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "那你还没听，听得到我的名字。",
-  "werNormalizedPredicted": "丹尼还没听，听得到我的名字。",
-  "qualityScore": 2,
-  "significantWer": 0.07142857142857142,
+  "wer": 0.25,
+  "werNormalizedGold": "那你还没听听得到我的名字",
+  "werNormalizedPredicted": "丹尼还没听得到我的名字",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
   "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "那 你 还 没 听 ， 听 得 到 我 的 名 字 。",
-  "sigWerNormalizedPredicted": "丹 尼 还 没 听 ， 听 得 到 我 的 名 字 。",
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "那 你 还 没 听 听 得 到 我 的 名 字",
+  "sigWerNormalizedPredicted": "丹 尼 还 没 听 得 到 我 的 名 字",
   "sigWerErrors": [
     {
       "error": "Substitution: '那' to '丹' at position 0",
-      "reason": "'那' means 'that', while '丹' is a proper noun (a name, e.g., 'Dan'). This changes the subject of the sentence and alters the meaning significantly.",
+      "reason": "'那' (that) and '丹' (Dan, a name) are completely different in meaning; this substitution changes the subject and derails the meaning of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Deletion: '听' at position 4",
+      "reason": "One '听' (listen/hear) is missing, but the overall meaning is still understandable as '听得到' (can hear) is present; this is a minor error.",
+      "score": 2
     }
   ]
 }

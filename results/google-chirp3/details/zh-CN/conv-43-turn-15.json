@@ -1,31 +1,21 @@
 {
   "gold": "君玲 at email dot com。",
-  "predicted": "dreamlin@email.com",
+  "predicted": "",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
+  "wer": 1.0,
   "werNormalizedGold": "君玲 at email dot com。",
-  "werNormalizedPredicted": "dreamlin at email dot com",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "君 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "dreamlin at email dot com",
+  "sigWerNormalizedPredicted": "",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'dreamlin' at position 0",
-      "reason": "'君' is a Chinese name, while 'dreamlin' is an unrelated English word/name. This changes the identity in the email address and is a significant error.",
+      "error": "Deletion: '君' at position 0",
+      "reason": "The entire expected transcription is missing in the actual output, which means the information is not conveyed at all.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '玲' at position 1",
-      "reason": "'玲' is part of the name in the email address. Its omission changes the email identity, making it a significant error.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 6",
-      "reason": "Punctuation at the end of the sentence is missing, but this does not affect the meaning.",
-      "score": 3
     }
   ]
 }

@@ -1,15 +1,21 @@
 {
   "gold": "I need information on my new replacement card.",
-  "predicted": "I need information on my new replacement card.",
+  "predicted": "I need information on my new replacement car.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "I need information on my new replacement card.",
-  "werNormalizedPredicted": "I need information on my new replacement card.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.125,
+  "werNormalizedGold": "i need information on my new replacement card",
+  "werNormalizedPredicted": "i need information on my new replacement car",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "I need information on my new replacement card.",
-  "sigWerNormalizedPredicted": "I need information on my new replacement card.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "i need information on my new replacement card",
+  "sigWerNormalizedPredicted": "i need information on my new replacement car",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'card' to 'car' at position 7",
+      "reason": "'Card' and 'car' are completely different objects; this substitution changes the meaning of the sentence significantly, as the user is asking about a replacement card, not a car.",
+      "score": 1
+    }
+  ]
 }

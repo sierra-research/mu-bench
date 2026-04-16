@@ -1,0 +1,31 @@
+{
+  "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "predicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil, e-mail yani e, Edirne'nin E'siyle e-mail.com.",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "werNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e siyle email com",
+  "qualityScore": null,
+  "significantWer": 0.05263157894736842,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e siyle email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'si' to 'siyle' at position 14",
+      "reason": "'siyle' is a fusion of 'si' and 'ile', so the meaning is preserved, just a different way of expressing the same thing.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 15",
+      "reason": "'siyle' already includes the meaning of 'ile', so its omission does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 17",
+      "reason": "Omitting 'nokta' (dot) in an email address can cause confusion or incorrect address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,15 +1,26 @@
 {
   "gold": "Hayır, istemiyorum. İyi günler dilerim.",
-  "predicted": "Hayır, istemiyorum. İyi günler dilerim",
+  "predicted": "Hayır, istemiyorum. İkna ederim",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Hayır, istemiyorum. İyi günler dilerim.",
-  "werNormalizedPredicted": "Hayır, istemiyorum. İyi günler dilerim.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6,
+  "werNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "werNormalizedPredicted": "hayır istemiyorum ikna ederim",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Hayır, istemiyorum. İyi günler dilerim.",
-  "sigWerNormalizedPredicted": "Hayır, istemiyorum. İyi günler dilerim.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "sigWerNormalizedPredicted": "hayır istemiyorum ikna ederim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'ikna' at position 2",
+      "reason": "'iyi günler dilerim' means 'I wish you a good day', while 'ikna ederim' means 'I will convince (you)'. This substitution changes the intent and meaning of the sentence completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dilerim' at position 4",
+      "reason": "Omitting 'dilerim' ('I wish') removes the polite closing of the sentence, further altering the meaning and tone.",
+      "score": 1
+    }
+  ]
 }

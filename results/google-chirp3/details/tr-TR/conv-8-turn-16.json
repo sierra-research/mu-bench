@@ -1,15 +1,41 @@
 {
   "gold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
-  "predicted": "Adımın son harfi yanlış. Ben Zeynep P ile, pırasanın P'si ile söyledim. Siz bana T'li söylediniz. Zeynep email de aynı şekilde Zeynep olacak.",
+  "predicted": "Adımın son harfi yanlış. Ben Zeynep T ile, pırasanın P'si ile söyledim. Siz bana T ile söylediniz. Zeynep, email de aynı şekilde Zeynep olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
-  "werNormalizedPredicted": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
-  "qualityScore": 3,
+  "wer": 0.30434782608695654,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın p'si ile söyledim siz bana t ile söylediniz zeynep email de aynı şekilde zeynep olacak",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
-  "sigWerNormalizedPredicted": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın p'si ile söyledim siz bana t ile söylediniz zeynep email de aynı şekilde zeynep olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 5",
+      "reason": "'zaynep' and 'zeynep' are minor spelling variants of the same Turkish name, does not change meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'tli' to 'ile' at position 14",
+      "reason": "The insertion of 't' clarifies the letter being referenced, which is contextually correct and does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 16",
+      "reason": "'tli' (with t) and 'ile' (with) both refer to the method of spelling, but 'tli' is more specific. The substitution does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ile' to 'de' at position 18",
+      "reason": "Again, minor spelling difference in the name, does not affect understanding.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 21",
+      "reason": "'ile' means 'with', 'de' means 'also' or 'in'. In this context, both indicate the email is the same, so the meaning is preserved.",
+      "score": 2
+    }
+  ]
 }

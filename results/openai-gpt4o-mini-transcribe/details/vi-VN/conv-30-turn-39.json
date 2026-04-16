@@ -1,0 +1,31 @@
+{
+  "gold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
+  "predicted": "Ông cần tôi muốn nói chuyện với người trực tiếp.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "tôi không cần đâu tôi muốn nói chuyện với người trực tiếp",
+  "werNormalizedPredicted": "ông cần tôi muốn nói chuyện với người trực tiếp",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tôi không cần đâu tôi muốn nói chuyện với người trực tiếp",
+  "sigWerNormalizedPredicted": "ông cần tôi muốn nói chuyện với người trực tiếp",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tôi' to 'ông' at position 0",
+      "reason": "'tôi' means 'I' and 'ông' means 'you' (formal, male), which completely changes the subject of the sentence and alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'không' at position 1",
+      "reason": "'không' means 'not', and its omission reverses the meaning from 'I do not need' to 'you need', which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đâu' at position 3",
+      "reason": "'đâu' is used for emphasis in negation in Vietnamese; omitting it weakens or changes the intended negative emphasis, but the main negation is already lost due to the previous error.",
+      "score": 2
+    }
+  ]
+}

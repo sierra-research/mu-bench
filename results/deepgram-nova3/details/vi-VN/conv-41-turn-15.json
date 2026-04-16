@@ -2,35 +2,30 @@
   "gold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
   "predicted": "Lần đầu không biết dẫn giúp",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
-  "werNormalizedPredicted": "Lần đầu, không biết. Dẫn giúp.",
-  "qualityScore": 2,
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 2,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "werNormalizedPredicted": "lần đầu không biết dẫn giúp",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
-  "sigWerNormalizedPredicted": "Lần đầu, không biết. Dẫn giúp.",
+  "sigWerNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "sigWerNormalizedPredicted": "lần đầu không biết dẫn giúp",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Cái' to 'Lần' at position 0",
-      "reason": "'Cái này' means 'this', while 'Lần đầu' means 'first time'. Substituting 'Cái' with 'Lần' changes the meaning and omits the reference to 'this', which is significant for context.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'này' at position 1",
-      "reason": "'này' ('this') is omitted, which removes the reference to 'this' and makes the sentence less specific. This affects the clarity of what is being referred to.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'Hướng' to 'Dẫn' at position 6",
-      "reason": "'Hướng dẫn' together means 'guide' or 'instruction', but splitting and substituting 'Hướng' with 'Dẫn' changes the phrase to just 'guide' or 'lead', losing the full meaning of 'instruction'.",
+      "error": "Deletion: 'cái' at position 0",
+      "reason": "'cái' is a demonstrative word that sets context for the sentence. Its omission slightly reduces clarity but does not derail the overall meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'giùm.' at position 8",
-      "reason": "'giùm' means 'please (help)', which adds politeness and a request for help. Its omission makes the sentence less polite but does not change the core meaning.",
-      "score": 2
+      "error": "Deletion: 'hướng' at position 6",
+      "reason": "'hướng dẫn' means 'to guide' or 'to instruct'. Omitting 'hướng' changes 'hướng dẫn' (guide) to just 'dẫn' (lead), which weakens the meaning and could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'giùm' to 'giúp' at position 8",
+      "reason": "'giùm' and 'giúp' both mean 'help', but 'giùm' is more colloquial and polite. The substitution does not change the overall meaning.",
+      "score": 3
     }
   ]
 }

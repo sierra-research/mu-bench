@@ -3,29 +3,29 @@
   "predicted": "Mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nó như thế nào cho hợp lý",
   "unintelligible": false,
   "wer": 0.14285714285714285,
-  "werNormalizedGold": "Mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ?",
-  "werNormalizedPredicted": "mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ",
+  "werNormalizedPredicted": "mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nó như thế nào cho hợp lý",
+  "qualityScore": null,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ?",
-  "sigWerNormalizedPredicted": "mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ",
+  "sigWerNormalizedGold": "mình muốn hỏi là khi trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý nhờ",
+  "sigWerNormalizedPredicted": "mình muốn hỏi là khi mà trao đổi với ngân hàng thì mình cần nó như thế nào cho hợp lý",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Mình' to 'mình' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
-      "score": 3
-    },
-    {
       "error": "Insertion: 'mà' at position 5",
-      "reason": "The insertion of 'mà' is a minor discourse particle in Vietnamese and does not change the overall meaning of the sentence.",
+      "reason": "'mà' is a discourse particle in Vietnamese that does not significantly change the meaning of the sentence in this context.",
       "score": 2
     },
     {
-      "error": "Substitution: 'nhờ?' to 'nhờ' at position 20",
-      "reason": "Difference is only in punctuation, which should be ignored.",
-      "score": 3
+      "error": "Substitution: 'nói' to 'nó' at position 13",
+      "reason": "'nói' means 'to say' or 'to speak', while 'nó' means 'it'; this substitution makes the sentence less clear and changes the meaning, causing confusion.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhờ' at position 20",
+      "reason": "'nhờ' is a polite particle at the end of the sentence, its omission makes the sentence slightly less polite but does not change the main meaning.",
+      "score": 2
     }
   ]
 }

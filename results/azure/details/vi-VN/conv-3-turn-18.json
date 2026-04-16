@@ -1,26 +1,21 @@
 {
   "gold": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "predicted": "Ờ có vui lòng kỹ mua cho nhân viên.",
+  "predicted": "Ờ có vui lòng kỹ hơn cho nhân viên.",
   "unintelligible": false,
-  "wer": 0.625,
-  "werNormalizedGold": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "werNormalizedPredicted": "Ờ, có, vui lòng kỹ mua cho nhân viên.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.25,
+  "werNormalizedGold": "có vui lòng chuyển qua cho nhân viên",
+  "werNormalizedPredicted": "có vui lòng kỹ hơn cho nhân viên",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "sigWerNormalizedPredicted": "Ờ, có, vui lòng kỹ mua cho nhân viên.",
+  "sigWerNormalizedGold": "có vui lòng chuyển qua cho nhân viên",
+  "sigWerNormalizedPredicted": "có vui lòng kỹ hơn cho nhân viên",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Có.' to 'có,' at position 0",
-      "reason": "'Ờ,' is a filler word in Vietnamese, similar to 'uh' or 'um' in English. It does not change the meaning of the sentence.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'chuyển' to 'kỹ' at position 3",
-      "reason": "Difference in punctuation only; 'Có.' and 'có,' are equivalent in meaning and intent.",
-      "score": 3
+      "reason": "'chuyển qua' means 'transfer over', while 'kỹ hơn' means 'more carefully'; this changes the action being requested and alters the meaning of the sentence significantly.",
+      "score": 1
     }
   ]
 }

@@ -1,25 +1,25 @@
 {
   "gold": "Tôi chưa muốn chuyển.",
-  "predicted": "Rất chi là muốn chơi",
+  "predicted": "Rồi chưa muốn chưa?",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Tôi chưa muốn chuyển.",
-  "werNormalizedPredicted": "Rất chi là muốn chơi",
-  "qualityScore": 1,
+  "wer": 0.5,
+  "werNormalizedGold": "tôi chưa muốn chuyển",
+  "werNormalizedPredicted": "rồi chưa muốn chưa",
+  "qualityScore": null,
   "significantWer": 0.5,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Tôi chưa muốn chuyển.",
-  "sigWerNormalizedPredicted": "Rất chi là muốn chơi",
+  "sigWerNormalizedGold": "tôi chưa muốn chuyển",
+  "sigWerNormalizedPredicted": "rồi chưa muốn chưa",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'chi' at position 0",
-      "reason": "'Rất' (very) is an added word that changes the tone and meaning of the sentence, making it significantly different from the expected sentence.",
+      "error": "Substitution: 'tôi' to 'rồi' at position 0",
+      "reason": "'tôi' means 'I' (the subject), while 'rồi' means 'already'; this substitution changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'chuyển.' to 'chơi' at position 3",
-      "reason": "'Tôi' means 'I', while 'chi' is not a correct substitution and changes the subject of the sentence, resulting in a significant change in meaning.",
+      "error": "Substitution: 'chuyển' to 'chưa' at position 3",
+      "reason": "'chuyển' means 'to transfer' or 'to move', while 'chưa' means 'not yet'; this substitution removes the main action of the sentence, significantly altering the meaning.",
       "score": 1
     }
   ]

@@ -2,14 +2,20 @@
   "gold": "想提高我的信用卡额度。",
   "predicted": "想提高我的信用卡，恶毒。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "想提高我的信用卡额度。",
-  "werNormalizedPredicted": "想提高我的信用卡额度。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度 。",
-  "sigWerNormalizedPredicted": "想 提 高 我 的 信 用 卡 额 度 。",
-  "sigWerErrors": []
+  "wer": 0.2,
+  "werNormalizedGold": "想 提高 我 的 信用卡 额度",
+  "werNormalizedPredicted": "想 提高 我 的 信用卡 恶毒",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "想 提 高 我 的 信 用 卡 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '额' to '恶' at position 8",
+      "reason": "'额' (credit limit) and '恶' (evil) are completely different in meaning, and this substitution makes the sentence incoherent and changes the intended meaning significantly.",
+      "score": 1
+    }
+  ]
 }

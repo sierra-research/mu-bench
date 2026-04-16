@@ -1,15 +1,26 @@
 {
   "gold": "你听吧，你听吧。",
-  "predicted": "你停吧，你停吧。",
+  "predicted": "Nithin बोल, Nithin बोल।",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你听吧，你听吧。",
-  "werNormalizedPredicted": "你听吧，你听吧。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "你 听 吧 ， 你 听 吧 。",
-  "sigWerNormalizedPredicted": "你 听 吧 ， 你 听 吧 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你 听 吧 你 听 吧",
+  "werNormalizedPredicted": "nithin बोल nithin बोल",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "你 听 吧 你 听 吧",
+  "sigWerNormalizedPredicted": "nithin बोल nithin बोल",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'nithin' at position 0",
+      "reason": "The actual transcription is in a different language (Hindi/English) instead of the expected Chinese, which completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '听' at position 4",
+      "reason": "The expected word is missing and replaced by a word in a different language, which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
 }

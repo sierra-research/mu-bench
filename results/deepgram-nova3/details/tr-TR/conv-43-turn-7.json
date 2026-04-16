@@ -1,30 +1,20 @@
 {
   "gold": "Hayır, yanlış tamamen. Tekrar söylüyorum kaydet. Ahmet nokta Arslan at email nokta com.",
-  "predicted": "Hayır yanlış tamamıyla tekrar söylüyorum kaydet ahmet. Arsadan et email nokta com",
+  "predicted": "Hayır yanlış tamam, yine tekrar söylüyorum kaydet ahmet nokta arsadan et email nokta com",
   "unintelligible": false,
-  "wer": 0.3076923076923077,
-  "werNormalizedGold": "Hayır, yanlış tamamen. Tekrar söylüyorum kaydet. Ahmet nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "Hayır, yanlış tamamıyla. Tekrar söylüyorum kaydet. Ahmet. Arsadan at email nokta com.",
-  "qualityScore": 1,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "hayır yanlış tamam yine tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
+  "qualityScore": null,
   "significantWer": 0.07692307692307693,
   "majorErrorsCount": 1,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Hayır, yanlış tamamen. Tekrar söylüyorum kaydet. Ahmet nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "Hayır, yanlış tamamıyla. Tekrar söylüyorum kaydet. Ahmet. Arsadan at email nokta com.",
+  "sigWerNormalizedGold": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "hayır yanlış tamam yine tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tamamen.' to 'tamamıyla.' at position 2",
-      "reason": "'Tamamen' and 'tamamıyla' are synonyms in Turkish, both meaning 'completely', so the meaning is unchanged.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'Ahmet' to 'Ahmet.' at position 6",
-      "reason": "The only difference is punctuation (period), which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'Arslan' at position 8",
-      "reason": "'Arslan' is a proper noun (likely a surname), while 'Arsadan' is a different word and not a valid surname. This changes the intended email address and is a significant error.",
+      "error": "Substitution: 'tamamen' to 'yine' at position 2",
+      "reason": "'tamamen' means 'completely', while 'tamam' means 'okay' or 'alright'. This changes the meaning of the sentence, as the emphasis on 'completely' is lost.",
       "score": 1
     }
   ]

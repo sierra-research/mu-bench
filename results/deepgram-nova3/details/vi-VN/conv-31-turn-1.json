@@ -1,15 +1,21 @@
 {
   "gold": "C N 2 9 4, đúng không?",
-  "predicted": "CN294 đúng không?",
+  "predicted": "Cn24 đúng không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "C N 2 9 4, đúng không?",
-  "werNormalizedPredicted": "C N 2 9 4, đúng không?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "c n two nine four đúng không",
+  "werNormalizedPredicted": "c n two four đúng không",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "C N 2 9 4, đúng không?",
-  "sigWerNormalizedPredicted": "C N 2 9 4, đúng không?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n two nine four đúng không",
+  "sigWerNormalizedPredicted": "c n two four đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nine' at position 3",
+      "reason": "Omitting 'nine' changes the number sequence from 'two nine four' to 'two four', which is a significant error as it alters the intended number and could lead to misunderstanding or incorrect information.",
+      "score": 1
+    }
+  ]
 }

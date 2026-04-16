@@ -1,0 +1,31 @@
+{
+  "gold": "Họ tên đầy đủ là Trần Minh.",
+  "predicted": "Họ toàn đủ là Trần binh",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "họ tên đầy đủ là trần minh",
+  "werNormalizedPredicted": "họ toàn đủ là trần binh",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "họ tên đầy đủ là trần minh",
+  "sigWerNormalizedPredicted": "họ toàn đủ là trần binh",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tên' to 'toàn' at position 1",
+      "reason": "'tên' means 'name', while 'toàn' means 'all' or 'entire', which changes the meaning of the phrase and makes the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đầy' at position 2",
+      "reason": "Omitting 'đầy' ('full') changes the meaning of 'đầy đủ' ('full/complete'), making the phrase less clear but the overall intent is somewhat preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'minh' to 'binh' at position 6",
+      "reason": "'minh' and 'binh' are both common Vietnamese names, but substituting one for the other is a significant error as it changes the person's name entirely.",
+      "score": 1
+    }
+  ]
+}

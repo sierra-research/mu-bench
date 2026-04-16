@@ -1,25 +1,25 @@
 {
   "gold": "是的。",
-  "predicted": "The.",
+  "predicted": "Weather.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "是的。",
-  "werNormalizedPredicted": "the.",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
+  "werNormalizedGold": "是的",
+  "werNormalizedPredicted": "weather",
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "是 的 。",
-  "sigWerNormalizedPredicted": "the.",
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "是 的",
+  "sigWerNormalizedPredicted": "weather",
   "sigWerErrors": [
     {
-      "error": "Substitution: '是' to 'the.' at position 0",
-      "reason": "The expected word is in Chinese, while the actual is in English. This is a language mismatch and completely changes the meaning.",
+      "error": "Substitution: '是' to 'weather' at position 0",
+      "reason": "The actual transcription is in a different language and does not match the expected meaning at all, making the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '的' at position 1",
-      "reason": "A key word from the expected sentence is missing in the actual transcription, further making the sentence incoherent and incorrect.",
+      "reason": "A key word is missing, further contributing to the sentence being completely incorrect and incoherent.",
       "score": 1
     }
   ]

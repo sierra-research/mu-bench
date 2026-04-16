@@ -1,20 +1,30 @@
 {
   "gold": "Sí, eso es lo que no sé cómo encontrarlo, exacto.",
-  "predicted": "Sí, eso es lo que no, no sé cómo encontrarlo exacto",
+  "predicted": "Sí, esto es lo que no, no sé cómo encontrarlo",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "Sí, eso es lo que no sé cómo encontrarlo, exacto.",
-  "werNormalizedPredicted": "Sí, eso es lo que no, no sé cómo encontrarlo, exacto.",
-  "qualityScore": 3,
+  "wer": 0.3,
+  "werNormalizedGold": "si eso es lo que no se como encontrarlo exacto",
+  "werNormalizedPredicted": "si esto es lo que no no se como encontrarlo",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Sí, eso es lo que no sé cómo encontrarlo, exacto.",
-  "sigWerNormalizedPredicted": "Sí, eso es lo que no, no sé cómo encontrarlo, exacto.",
+  "sigWerNormalizedGold": "si eso es lo que no se como encontrarlo exacto",
+  "sigWerNormalizedPredicted": "si esto es lo que no no se como encontrarlo",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'no,' at position 5",
-      "reason": "The insertion of 'no,' adds a repetition but does not change the overall meaning of the sentence. It is a minor disfluency, but the intent and meaning remain clear.",
+      "error": "Substitution: 'eso' to 'esto' at position 1",
+      "reason": "'Eso' and 'esto' are demonstrative pronouns with similar meaning ('that' vs 'this'), and in this context, the overall meaning of the sentence is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'no' at position 6",
+      "reason": "The extra 'no' is a repetition that does not significantly change the meaning of the sentence, though it is a minor fluency error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'exacto' at position 9",
+      "reason": "Omitting 'exacto' removes the nuance of searching for something exact, which slightly changes the meaning but does not derail the sentence.",
       "score": 2
     }
   ]

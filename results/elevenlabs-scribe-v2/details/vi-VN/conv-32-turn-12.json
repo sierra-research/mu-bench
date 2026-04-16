@@ -1,30 +1,25 @@
 {
   "gold": "Từ từ đã. Cho em cái bản sao sao kê hoặc là hóa đơn gần nhất được không ạ? Anh chị gửi qua email đăng ký giúp em được không ạ?",
-  "predicted": "À từ từ đã cho em cái bản sao shop kia hoặc là hóa đơn gần nhất được không ạ? Anh chị gửi qua email đăng ký giúp em được không ạ?",
+  "predicted": "À từ từ đã cho em cái bản sao Shopee hoặc là hóa đơn gần nhất được không ạ? Anh chị gửi qua email đăng ký giúp em được không ạ?",
   "unintelligible": false,
-  "wer": 0.12903225806451613,
-  "werNormalizedGold": "Từ từ đã. Cho em cái bản sao sao kê hoặc là hóa đơn gần nhất được không ạ? Anh chị gửi qua email đăng ký giúp em được không ạ?",
-  "werNormalizedPredicted": "À, từ từ đã. Cho em cái bản sao shop kia hoặc là hóa đơn gần nhất được không ạ? Anh chị gửi qua email đăng ký giúp em được không ạ?",
-  "qualityScore": 2,
-  "significantWer": 0.03225806451612903,
-  "majorErrorsCount": 1,
+  "wer": 0.06451612903225806,
+  "werNormalizedGold": "từ từ đã cho em cái bản sao sao kê hoặc là hóa đơn gần nhất được không ạ anh chị gửi qua email đăng ký giúp em được không ạ",
+  "werNormalizedPredicted": "từ từ đã cho em cái bản sao shopee hoặc là hóa đơn gần nhất được không ạ anh chị gửi qua email đăng ký giúp em được không ạ",
+  "qualityScore": null,
+  "significantWer": 0.06451612903225806,
+  "majorErrorsCount": 2,
   "totalWordsCount": 31,
-  "sigWerNormalizedGold": "Từ từ đã. Cho em cái bản sao sao kê hoặc là hóa đơn gần nhất được không ạ? Anh chị gửi qua email đăng ký giúp em được không ạ?",
-  "sigWerNormalizedPredicted": "À, từ từ đã. Cho em cái bản sao shop kia hoặc là hóa đơn gần nhất được không ạ? Anh chị gửi qua email đăng ký giúp em được không ạ?",
+  "sigWerNormalizedGold": "từ từ đã cho em cái bản sao sao kê hoặc là hóa đơn gần nhất được không ạ anh chị gửi qua email đăng ký giúp em được không ạ",
+  "sigWerNormalizedPredicted": "từ từ đã cho em cái bản sao shopee hoặc là hóa đơn gần nhất được không ạ anh chị gửi qua email đăng ký giúp em được không ạ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Từ' to 'À,' at position 0",
-      "reason": "'À,' is an interjection added at the beginning, which does not change the meaning of the sentence. It is a minor addition for conversational tone.",
-      "score": 2
+      "error": "Substitution: 'sao' to 'shopee' at position 8",
+      "reason": "'sao kê' means 'statement' (as in bank statement), while 'shopee' is a brand name and unrelated to the context. This substitution changes the meaning of the request significantly.",
+      "score": 1
     },
     {
-      "error": "Insertion: 'từ' at position 2",
-      "reason": "The repetition of 'từ' does not change the meaning, as it is part of the phrase 'từ từ đã' (take it slow/hold on). This is a minor error.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'sao' to 'shop' at position 8",
-      "reason": "Substituting 'sao' (copy) with 'shop' changes the meaning of the request from asking for a copy of a statement to something about a shop, which derails the intended meaning.",
+      "error": "Deletion: 'kê' at position 9",
+      "reason": "Omitting 'kê' from 'sao kê' removes the meaning of 'statement', making the phrase incomplete and unclear in context.",
       "score": 1
     }
   ]

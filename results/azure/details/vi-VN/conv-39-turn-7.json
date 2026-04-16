@@ -1,31 +1,31 @@
 {
   "gold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "predicted": "Đúng rồi anh ạ. Chuẩn cám ơn 5 bạn nhá.",
+  "predicted": "Đúng rồi anh ạ, chuẩn ạ. Cảm ơn 5 bạn nhá.",
   "unintelligible": false,
   "wer": 0.5,
-  "werNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "werNormalizedPredicted": "Đúng rồi anh ạ. Chuẩn. Cám ơn 5 bạn nhá.",
-  "qualityScore": 2,
+  "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "werNormalizedPredicted": "đúng rồi anh ạ chuẩn ạ cảm ơn năm bạn nhá",
+  "qualityScore": null,
   "significantWer": 0.25,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "sigWerNormalizedPredicted": "Đúng rồi anh ạ. Chuẩn. Cám ơn 5 bạn nhá.",
+  "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "sigWerNormalizedPredicted": "đúng rồi anh ạ chuẩn ạ cảm ơn năm bạn nhá",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna.' to 'ạ.' at position 2",
-      "reason": "'Anh' (older brother/male) is inserted instead of the expected name 'Anna', which changes the addressee and alters the meaning of the sentence.",
+      "error": "Substitution: 'anna' to 'ạ' at position 2",
+      "reason": "'anh' is a different person from 'anna', so inserting 'anh' changes the subject and meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'Cảm' to 'Cám' at position 4",
-      "reason": "'Anna' is a name, while 'ạ' is a polite particle in Vietnamese. This substitution removes the addressee and changes the meaning significantly.",
+      "error": "Insertion: 'ạ' at position 4",
+      "reason": "Replacing 'anna' (a name) with 'ạ' (a polite particle) removes the reference to the person, significantly changing the meaning.",
       "score": 1
     },
     {
-      "error": "Insertion: '5' at position 6",
-      "reason": "'Cảm ơn' is the correct phrase for 'thank you' in Vietnamese. 'Cám ơn' is a common misspelling but widely understood and does not change the meaning.",
-      "score": 3
+      "error": "Insertion: 'năm' at position 6",
+      "reason": "Inserting 'ạ' is a minor politeness marker and does not change the overall meaning.",
+      "score": 2
     }
   ]
 }

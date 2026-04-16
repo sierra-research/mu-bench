@@ -1,21 +1,26 @@
 {
   "gold": "Have a great day.",
-  "predicted": "Have a good day.",
+  "predicted": "Good day.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Have a great day.",
-  "werNormalizedPredicted": "Have a good day.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.75,
+  "werNormalizedGold": "have a great day",
+  "werNormalizedPredicted": "good day",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Have a great day.",
-  "sigWerNormalizedPredicted": "Have a good day.",
+  "sigWerNormalizedGold": "have a great day",
+  "sigWerNormalizedPredicted": "good day",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'great' to 'good' at position 2",
-      "reason": "'Great' and 'good' are both positive adjectives and the overall sentiment and meaning of the sentence remain the same.",
-      "score": 3
+      "error": "Substitution: 'have' to 'good' at position 0",
+      "reason": "'Have a great day' is a positive farewell, while 'good day' is a different greeting/farewell. The substitution changes the tone and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 1",
+      "reason": "Omitting 'a' slightly changes the grammatical structure, but the main meaning is already lost due to the previous substitution.",
+      "score": 2
     }
   ]
 }

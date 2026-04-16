@@ -1,15 +1,26 @@
 {
   "gold": "Teşekkür ederim. Email adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekstreye, işlem yapacağım. Tekrar eder misiniz email adresimi lütfen?",
-  "predicted": "Teşekkür ederim. E mail adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var. O ekstreye işlem yapacağım. Tekrar eder misiniz? Email adresim lütfen.",
+  "predicted": "Teşekkür ederim. E mail adresimize bir hata yok değil mi? Çünkü acil olarak ihtiyacım var. O ekstreye işlem yapacağım. Tekrar eder misiniz? Email adresim lütfen.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Teşekkür ederim. Email adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekstreye, işlem yapacağım. Tekrar eder misiniz email adresimi lütfen?",
-  "werNormalizedPredicted": "Teşekkür ederim. Email adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekstreye, işlem yapacağım. Tekrar eder misiniz email adresimi lütfen?",
-  "qualityScore": 2,
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
+  "werNormalizedPredicted": "teşekkür ederim email adresimize bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresim lütfen",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "Teşekkür ederim. Email adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekstreye, işlem yapacağım. Tekrar eder misiniz email adresimi lütfen?",
-  "sigWerNormalizedPredicted": "Teşekkür ederim. Email adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekstreye, işlem yapacağım. Tekrar eder misiniz email adresimi lütfen?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
+  "sigWerNormalizedPredicted": "teşekkür ederim email adresimize bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresim lütfen",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adresimde' to 'adresimize' at position 3",
+      "reason": "The possessive suffix changes from 'my address' (adresimde) to 'our address' (adresimize), which could cause confusion about whose email address is being referred to, but the overall meaning of the sentence is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'adresimi' to 'adresim' at position 22",
+      "reason": "The difference is between 'my address' (adresim) and 'my address' in the accusative case (adresimi). This is a minor grammatical error that does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

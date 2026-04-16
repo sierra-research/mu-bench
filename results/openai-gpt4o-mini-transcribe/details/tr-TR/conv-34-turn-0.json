@@ -1,0 +1,36 @@
+{
+  "gold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "predicted": "Anladım, merhabalar. Öncelikle teşekkür ediyorum. Ben kredi kartı limitimin arttırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
+  "werNormalizedPredicted": "anladım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitimin artırılmasını talep ediyorum bu konuda bana yardımcı olabilir misiniz",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "anladım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitimin artırılmasını talep ediyorum bu konuda bana yardımcı olabilir misiniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anladım' at position 0",
+      "reason": "'anna' is a proper noun (a name), while 'anladım' means 'I understand' in Turkish. This substitution changes the addressee to a statement, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam') following a name. Its omission further removes the intended addressee and politeness from the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'limitinin' to 'limitimin' at position 9",
+      "reason": "'limitinin' means 'of the limit' (third person), while 'limitimin' means 'my limit' (first person). This changes the reference from a third party's card to the speaker's own card, but in context, the speaker is likely referring to their own card, so the meaning is not significantly changed.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'bana' at position 15",
+      "reason": "The insertion of 'bana' ('to me') clarifies the request for help is directed to the speaker, but does not change the overall meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

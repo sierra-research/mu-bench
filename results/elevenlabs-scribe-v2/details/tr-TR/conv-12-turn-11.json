@@ -3,18 +3,23 @@
   "predicted": "Hayır, yine yanlış oldu. Tekrarlıyorum. Ben harf harf kodlayayım belki daha iyi olacak. A-H-M-E-T nokta A-R-S-L-A-N et işareti E-M-A-İ-L nokta C-O-M",
   "unintelligible": false,
   "wer": 0.05714285714285714,
-  "werNormalizedGold": "Yine yanlış oldu, tekrarlıyorum ben. Harf harf kodlayayım, belki daha iyi olacak. A H M E T nokta A R S L A N at işareti E M A I L nokta C O M.",
-  "werNormalizedPredicted": "Hayır, yine yanlış oldu, tekrarlıyorum ben. Harf harf kodlayayım, belki daha iyi olacak. A H M E T nokta A R S L A N at işareti E M A I L nokta C O M.",
-  "qualityScore": 3,
+  "werNormalizedGold": "yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n at işareti e m a i l nokta c o m",
+  "werNormalizedPredicted": "hayır yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n et işareti e m a i l nokta c o m",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 35,
-  "sigWerNormalizedGold": "Yine yanlış oldu, tekrarlıyorum ben. Harf harf kodlayayım, belki daha iyi olacak. A H M E T nokta A R S L A N at işareti E M A I L nokta C O M.",
-  "sigWerNormalizedPredicted": "Hayır, yine yanlış oldu, tekrarlıyorum ben. Harf harf kodlayayım, belki daha iyi olacak. A H M E T nokta A R S L A N at işareti E M A I L nokta C O M.",
+  "sigWerNormalizedGold": "yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n at işareti e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "hayır yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n et işareti e m a i l nokta c o m",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Yine' to 'yine' at position 0",
-      "reason": "The insertion of 'Hayır,' (meaning 'No,') adds a negation at the start, which changes the tone but does not derail the overall meaning of the sentence. The main message remains the same.",
+      "error": "Insertion: 'hayır' at position 0",
+      "reason": "'Hayır' (meaning 'no') is inserted at the beginning, but the rest of the sentence is intact. This does not derail the meaning of the main sentence, just adds a minor interjection.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 24",
+      "reason": "'At işareti' (meaning 'at sign') is a fixed phrase in Turkish for '@'. 'Et işareti' is a common mispronunciation but still widely understood to mean the '@' symbol. The meaning is preserved, so this is a minor error.",
       "score": 2
     }
   ]

@@ -1,0 +1,31 @@
+{
+  "gold": "Có. Vui lòng hướng dẫn.",
+  "predicted": "ờ có khu lòng giúp.",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werNormalizedGold": "có vui lòng hướng dẫn",
+  "werNormalizedPredicted": "có khu lòng giúp",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "có vui lòng hướng dẫn",
+  "sigWerNormalizedPredicted": "có khu lòng giúp",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'khu' at position 1",
+      "reason": "'vui' means 'please' or 'kindly', while 'khu' means 'area' or 'zone'; this substitution changes the meaning of the request and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hướng' to 'giúp' at position 3",
+      "reason": "'hướng dẫn' means 'guide' or 'instruct', while 'giúp' means 'help'; although related, this changes the specific action being requested.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'dẫn' at position 4",
+      "reason": "Omitting 'dẫn' breaks the phrase 'hướng dẫn' ('guide'), resulting in a loss of the intended meaning.",
+      "score": 1
+    }
+  ]
+}

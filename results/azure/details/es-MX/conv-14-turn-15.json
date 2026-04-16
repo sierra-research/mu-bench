@@ -1,15 +1,26 @@
 {
   "gold": "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
-  "predicted": "Este el monto es de 3200 pesos, pues la fecha es de ayer en la noche y en el destinatario pues es una cuenta particular, no sé cuál es.",
+  "predicted": "Este el monto es de 3200 pesos, pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no sé cuál es.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
-  "werNormalizedPredicted": "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
-  "qualityScore": 3,
+  "wer": 0.06451612903225806,
+  "werNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
+  "werNormalizedPredicted": "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no se cual es",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 29,
-  "sigWerNormalizedGold": "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
-  "sigWerNormalizedPredicted": "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
-  "sigWerErrors": []
+  "totalWordsCount": 31,
+  "sigWerNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
+  "sigWerNormalizedPredicted": "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no se cual es",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'este' at position 0",
+      "reason": "'este' (this) instead of 'es' (is) slightly changes the meaning at the start, but the overall intent of the sentence is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'no' at position 26",
+      "reason": "Omitting one 'no' in 'no no se cual es' slightly reduces emphasis but does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

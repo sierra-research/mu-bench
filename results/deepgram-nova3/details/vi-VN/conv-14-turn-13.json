@@ -1,20 +1,25 @@
 {
   "gold": "Thu dấu chấm trần a còng email chấm com.",
-  "predicted": "",
+  "predicted": "Thu dấu chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Thu dấu chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "thu dấu chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "thu dấu chấm trần gmail chấm com",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Thu dấu chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "thu dấu chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "thu dấu chấm trần gmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Thu' at position 0",
-      "reason": "The entire expected transcription is missing in the actual output, which means all information is lost and the sentence is completely absent.",
+      "error": "Substitution: 'a' to 'gmail' at position 4",
+      "reason": "'a còng email' is the Vietnamese way to say 'at email' (as in an email address), but 'gmail' replaces both 'a còng email' with a specific service, changing the meaning from a generic email address to a specific one.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'còng' at position 5",
+      "reason": "'còng' (the Vietnamese word for '@') is omitted, which is essential for the structure of an email address. Its absence makes the phrase incorrect as an email address.",
       "score": 1
     }
   ]

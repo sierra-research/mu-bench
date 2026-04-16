@@ -2,39 +2,29 @@
   "gold": "Tôi muốn được xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì.",
   "predicted": "Ờm, tôi muốn được, ờm, xem cái tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại. Nhưng mà đã đợi, à, hai tuần mà vẫn chưa thấy thông tin gì",
   "unintelligible": false,
-  "wer": 0.25806451612903225,
-  "werNormalizedGold": "Tôi muốn được xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì.",
-  "werNormalizedPredicted": "Ờm, tôi muốn được, ờm, xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng mà đã đợi, à, hai tuần mà vẫn chưa thấy thông tin gì.",
-  "qualityScore": 3,
+  "wer": 0.0967741935483871,
+  "werNormalizedGold": "toi muon duoc xem tinh trang the cua toi toi lam mat the va co xin cap lai nhung da doi hai tuan roi ma van chua thay thong tin gi",
+  "werNormalizedPredicted": "toi muon duoc xem cai tinh trang the cua toi toi lam mat the va co xin cap lai nhung ma da doi hai tuan ma van chua thay thong tin gi",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 31,
-  "sigWerNormalizedGold": "Tôi muốn được xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì.",
-  "sigWerNormalizedPredicted": "Ờm, tôi muốn được, ờm, xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng mà đã đợi, à, hai tuần mà vẫn chưa thấy thông tin gì.",
+  "sigWerNormalizedGold": "toi muon duoc xem tinh trang the cua toi toi lam mat the va co xin cap lai nhung da doi hai tuan roi ma van chua thay thong tin gi",
+  "sigWerNormalizedPredicted": "toi muon duoc xem cai tinh trang the cua toi toi lam mat the va co xin cap lai nhung ma da doi hai tuan ma van chua thay thong tin gi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "'Ờm' is a filler word (like 'um' in English) and does not affect the meaning of the sentence.",
+      "error": "Insertion: 'cai' at position 4",
+      "reason": "'cai' is a minor filler word in Vietnamese and does not change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'được' to 'ờm,' at position 2",
-      "reason": "Difference in capitalization only, which should be ignored as per guidance.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'mà' at position 19",
-      "reason": "This is not an actual insertion; 'được' is present in both expected and actual. Likely a misalignment in error detection.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'đợi' to 'à,' at position 20",
-      "reason": "'Ờm' is a filler word replacing 'được' in this position, but the overall meaning is still clear. Minor error.",
+      "error": "Insertion: 'ma' at position 19",
+      "reason": "The extra 'ma' is a discourse particle in Vietnamese and does not significantly alter the meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'rồi' at position 23",
-      "reason": "'Mà' is a discourse particle in Vietnamese that does not change the core meaning of the sentence.",
+      "error": "Deletion: 'roi' at position 23",
+      "reason": "Omitting 'roi' (already) slightly affects the nuance of the sentence but does not change the overall meaning.",
       "score": 2
     }
   ]

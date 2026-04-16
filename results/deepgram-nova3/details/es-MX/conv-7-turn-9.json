@@ -1,30 +1,30 @@
 {
   "gold": "No, es incorrecto. El número es.",
-  "predicted": "Número es cinco cinco uno dos cuatro siete siete ocho. ¿Me puedes confirmar si está correcto? No, ese es incorrecto. El número es favor.",
+  "predicted": "Número es cinco cinco uno dos cuatro siete siete ocho. ¿Me puedes confirmar si está correcto? No, ese es incorrecto. El número es por favor.",
   "unintelligible": false,
-  "wer": 2.0,
-  "werNormalizedGold": "No, es incorrecto. El número es.",
-  "werNormalizedPredicted": "Número es 55124778. ¿Me puedes confirmar si está correcto? No, ese es incorrecto. El número es favor.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 3.1666666666666665,
+  "werNormalizedGold": "no es incorrecto el numero es",
+  "werNormalizedPredicted": "numero es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si esta correcto no ese es incorrecto el numero es por favor",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "No, es incorrecto. El número es.",
-  "sigWerNormalizedPredicted": "Número es 55124778. ¿Me puedes confirmar si está correcto? No, ese es incorrecto. El número es favor.",
+  "sigWerNormalizedGold": "no es incorrecto el numero es",
+  "sigWerNormalizedPredicted": "numero es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si esta correcto no ese es incorrecto el numero es por favor",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'Número' at position 0",
-      "reason": "The insertion of 'Número' at the beginning changes the structure but does not significantly alter the meaning, as the sentence is still about the number.",
-      "score": 2
+      "error": "Insertion: 'numero' at position 0",
+      "reason": "The actual transcript includes an entire phone number and additional context before the expected phrase, which changes the focus and meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Insertion: 'ese' at position 1",
-      "reason": "The insertion of 'ese' (that) adds clarification but does not change the overall meaning of the sentence.",
+      "reason": "The word 'ese' (that) is inserted, which slightly changes the phrasing but does not significantly alter the meaning in this context.",
       "score": 2
     },
     {
-      "error": "Substitution: 'es.' to 'favor.' at position 5",
-      "reason": "The extra 'es' is redundant and does not affect the meaning of the sentence.",
+      "error": "Insertion: 'por' at position 6",
+      "reason": "The addition of 'por favor' (please) is a polite addition and does not change the meaning of the sentence.",
       "score": 3
     }
   ]

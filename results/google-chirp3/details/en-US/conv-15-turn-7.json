@@ -1,25 +1,25 @@
 {
   "gold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
-  "predicted": "number would be 1221234567.",
+  "predicted": "number would be 1 2 and 2 1 2 3 4 5 6 7.",
   "unintelligible": false,
   "wer": 0.13333333333333333,
-  "werNormalizedGold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
-  "werNormalizedPredicted": "number would be 1 2 2 1 2 3 4 5 6 7.",
-  "qualityScore": 2,
+  "werNormalizedGold": "phone number would be one two one two one two three four five six seven",
+  "werNormalizedPredicted": "number would be one two and two one two three four five six seven",
+  "qualityScore": null,
   "significantWer": 0.13333333333333333,
   "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
-  "sigWerNormalizedPredicted": "number would be 1 2 2 1 2 3 4 5 6 7.",
+  "sigWerNormalizedGold": "phone number would be one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "number would be one two and two one two three four five six seven",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Phone' at position 0",
-      "reason": "Omitting 'Phone' removes the context that these numbers are a phone number, which could confuse the listener about what the numbers refer to.",
+      "error": "Deletion: 'phone' at position 0",
+      "reason": "Omitting 'phone' changes the meaning from a phone number to a generic number, which is a significant loss of information.",
       "score": 1
     },
     {
-      "error": "Deletion: '1' at position 6",
-      "reason": "The digit sequence is incorrect for a phone number; a single digit error in a phone number makes it invalid or connects to the wrong number.",
+      "error": "Substitution: 'one' to 'and' at position 6",
+      "reason": "Replacing 'one' with 'and' in a phone number sequence disrupts the numeric sequence, making the phone number incorrect and unusable.",
       "score": 1
     }
   ]

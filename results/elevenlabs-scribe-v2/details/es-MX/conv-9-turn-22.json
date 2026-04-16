@@ -1,20 +1,30 @@
 {
   "gold": "No. Un pago en cuotas.",
-  "predicted": "No, no, no, no, ¿puedo encontrar las?",
+  "predicted": "No, no, no, no, un poco en todas",
   "unintelligible": false,
-  "wer": 1.4,
-  "werNormalizedGold": "No. Un pago en cuotas.",
-  "werNormalizedPredicted": "No, no, no, no, ¿puedo encontrar las?",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "no un pago en cuotas",
+  "werNormalizedPredicted": "no no no no un poco en todas",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "No. Un pago en cuotas.",
-  "sigWerNormalizedPredicted": "No, no, no, no, ¿puedo encontrar las?",
+  "sigWerNormalizedGold": "no un pago en cuotas",
+  "sigWerNormalizedPredicted": "no no no no un poco en todas",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No.' to 'no,' at position 0",
-      "reason": "The actual transcription repeats 'no' multiple times and then introduces a completely unrelated question in Spanish, which changes the meaning of the sentence entirely and makes it incoherent with the expected sentence about payment in installments.",
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The repeated insertion of 'no' does not change the overall meaning, as the sentence still starts with 'no', but it makes the sentence less coherent and more repetitive.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'pago' to 'poco' at position 2",
+      "reason": "'pago' (payment) and 'poco' (little) are completely different words and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cuotas' to 'todas' at position 4",
+      "reason": "'cuotas' (installments) and 'todas' (all) are unrelated in meaning, which changes the intent of the sentence.",
       "score": 1
     }
   ]

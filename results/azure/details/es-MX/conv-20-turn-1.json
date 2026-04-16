@@ -1,15 +1,21 @@
 {
   "gold": "Sí, ya.",
-  "predicted": "Yeah.",
+  "predicted": "Yeah, yeah.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí, ya.",
-  "werNormalizedPredicted": "Sí, ya.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "si ya",
+  "werNormalizedPredicted": "yeah yeah",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Sí, ya.",
-  "sigWerNormalizedPredicted": "Sí, ya.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "si ya",
+  "sigWerNormalizedPredicted": "yeah yeah",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'si' to 'yeah' at position 0",
+      "reason": "'si' is Spanish for 'yes', and 'yeah' is an English informal 'yes'. The meaning is preserved despite the language change, but since the language is different, this is a significant error per the guidelines.",
+      "score": 1
+    }
+  ]
 }

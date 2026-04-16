@@ -1,15 +1,26 @@
 {
   "gold": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "Tổng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "tổng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "tổng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'tổng' at position 0",
+      "reason": "'Cộng' means 'plus' or 'add', while 'tổng' means 'total' or 'sum'. This changes the meaning of the sentence, as the operation or context is different.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 5",
+      "reason": "The insertion of 'mươi' (which means 'ten') changes the number being stated, resulting in a different sequence of numbers. This alters the intended information significantly.",
+      "score": 1
+    }
+  ]
 }

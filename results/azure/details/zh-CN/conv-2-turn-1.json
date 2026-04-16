@@ -1,15 +1,21 @@
 {
   "gold": "我正在等待我的信用卡，想知道它的状态。",
-  "predicted": "我正在等待我的信用卡，想知道它的状态。",
+  "predicted": "我正在等待我的信用卡，想知道他的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我正在等待我的信用卡，想知道它的状态。",
-  "werNormalizedPredicted": "我正在等待我的信用卡，想知道它的状态。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 ， 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 我 的 信 用 卡 ， 想 知 道 它 的 状 态 。",
-  "sigWerErrors": []
+  "wer": 0.058823529411764705,
+  "werNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
+  "werNormalizedPredicted": "我 正 在 等 待 我 的 信 用 卡 想 知 道 他 的 状 态",
+  "qualityScore": null,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 等 待 我 的 信 用 卡 想 知 道 他 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '它' to '他' at position 13",
+      "reason": "'它' refers to 'it' (an object, here the credit card), while '他' refers to 'he' (a person). This substitution changes the reference from an object to a person, which is a significant error in this context.",
+      "score": 1
+    }
+  ]
 }

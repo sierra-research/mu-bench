@@ -1,35 +1,35 @@
 {
   "gold": "Hayır ikinci harfim, bu defa ikinci harfini yanlış söylediniz. A değil. İkinci harfi E değil A olacak. Zaynep Arslan.",
-  "predicted": "Hayır, ikinci harfini bu defa ikinci harfini yanlış söylediniz. Adi ikinci harfi E değil A olacak. Zeynep Arslan",
+  "predicted": "Hayır, ikinci harfini bu defa ikinci harfini yanlış söylediniz. Adı ikinci harfi E değil A olacak. Zeynep Arslan",
   "unintelligible": false,
-  "wer": 0.2631578947368421,
-  "werNormalizedGold": "Hayır ikinci harfim, bu defa ikinci harfini yanlış söylediniz. A değil. İkinci harfi E değil A olacak. Zaynep Arslan.",
-  "werNormalizedPredicted": "Hayır, ikinci harfim, bu defa ikinci harfini yanlış söylediniz. Adı ikinci harfi E değil A olacak. Zeynep Arslan.",
-  "qualityScore": 2,
-  "significantWer": 0.10526315789473684,
-  "majorErrorsCount": 2,
+  "wer": 0.21052631578947367,
+  "werNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
+  "werNormalizedPredicted": "hayır ikinci harfini bu defa ikinci harfini yanlış söylediniz adı ikinci harfi e değil a olacak zeynep arslan",
+  "qualityScore": null,
+  "significantWer": 0.05263157894736842,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Hayır ikinci harfim, bu defa ikinci harfini yanlış söylediniz. A değil. İkinci harfi E değil A olacak. Zaynep Arslan.",
-  "sigWerNormalizedPredicted": "Hayır, ikinci harfim, bu defa ikinci harfini yanlış söylediniz. Adı ikinci harfi E değil A olacak. Zeynep Arslan.",
+  "sigWerNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
+  "sigWerNormalizedPredicted": "hayır ikinci harfini bu defa ikinci harfini yanlış söylediniz adı ikinci harfi e değil a olacak zeynep arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "Difference is only a comma, which is punctuation and should be ignored.",
-      "score": 3
+      "error": "Substitution: 'harfim' to 'harfini' at position 2",
+      "reason": "'harfim' means 'my letter', 'harfini' means 'your letter'; this changes the subject but the overall meaning of the sentence is still understandable.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'A' to 'Adı' at position 9",
-      "reason": "'A' (the letter) is replaced with 'Adı' (meaning 'name'), which changes the meaning of the sentence and could confuse the listener about what is being referred to. This is a significant error.",
+      "error": "Substitution: 'a' to 'adı' at position 9",
+      "reason": "'a' is a letter, 'adı' means 'name'; this changes the meaning of the sentence significantly, as it shifts from referring to a letter to referring to a name.",
       "score": 1
     },
     {
-      "error": "Deletion: 'İkinci' at position 11",
-      "reason": "Omitting 'İkinci' (meaning 'second') removes important information about which letter is being discussed, which can lead to misunderstanding. This is a significant error.",
-      "score": 1
+      "error": "Deletion: 'değil' at position 10",
+      "reason": "Omitting 'değil' ('not') changes the logical structure of the sentence, potentially altering its meaning, but the context still makes the intent somewhat clear.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'Zaynep' to 'Zeynep' at position 17",
-      "reason": "Minor misspelling of a proper noun, but the name is still recognizable and would not cause confusion in context.",
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 17",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
       "score": 2
     }
   ]

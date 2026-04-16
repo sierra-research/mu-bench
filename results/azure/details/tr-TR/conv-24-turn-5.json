@@ -1,20 +1,30 @@
 {
   "gold": "Adresim, Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodumuz 34 660 Türkiye.",
-  "predicted": "Adresim Atatürk Caddesi no 45. 6 Kazım Karabekir mahallesi Üsküdar, istanbul 34.664.",
+  "predicted": "Adresim Atatürk Caddesi no 45. 6 Kazım Karabekir, 34.664.",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werNormalizedGold": "Adresim, Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodumuz 34 660 Türkiye.",
-  "werNormalizedPredicted": "Adresim, Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodumuz 34 664 Türkiye.",
-  "qualityScore": 2,
-  "significantWer": 0.058823529411764705,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Adresim, Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodumuz 34 660 Türkiye.",
-  "sigWerNormalizedPredicted": "Adresim, Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodumuz 34 664 Türkiye.",
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "adresim ataturk caddesi no forty five taksim six kazim karabekir mahallesi uskudar istanbul posta kodumuz thirty four six hundred sixty turkiye",
+  "werNormalizedPredicted": "adresim ataturk caddesi no forty five six kazim karabekir thirty four six hundred sixty four",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "adresim ataturk caddesi no forty five taksim six kazim karabekir mahallesi uskudar istanbul posta kodumuz thirty four six hundred sixty turkiye",
+  "sigWerNormalizedPredicted": "adresim ataturk caddesi no forty five six kazim karabekir thirty four six hundred sixty four",
   "sigWerErrors": [
     {
-      "error": "Substitution: '660' to '664' at position 15",
-      "reason": "The postal code is a specific numeric identifier for an address. Changing '660' to '664' could result in mail being sent to a different location, which is a significant factual error.",
+      "error": "Deletion: 'taksim' at position 6",
+      "reason": "'Taksim' is a key location in the address. Its omission removes important information needed for identifying the address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mahallesi' at position 10",
+      "reason": "'Mahallesi' (meaning 'neighborhood') is a critical part of Turkish addresses. Its omission makes the address incomplete and less understandable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'turkiye' to 'four' at position 20",
+      "reason": "Replacing 'turkiye' (the country name) with 'four' completely changes the meaning and makes the address incoherent.",
       "score": 1
     }
   ]

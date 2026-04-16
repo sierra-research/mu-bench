@@ -1,15 +1,26 @@
 {
   "gold": "我的姓名是君玲。",
-  "predicted": "我的姓名是君临。",
+  "predicted": "我的心灵是君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我的姓名是君玲。",
-  "werNormalizedPredicted": "我的姓名是君玲。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 。",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲 。",
-  "sigWerErrors": []
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "我的姓名是君玲",
+  "werNormalizedPredicted": "我的心灵是君临",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲",
+  "sigWerNormalizedPredicted": "我 的 心 灵 是 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '心' at position 2",
+      "reason": "'姓' means 'surname' or 'family name', while '心' means 'heart'. This substitution changes the meaning of the sentence from talking about one's name to something unrelated, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 6",
+      "reason": "'玲' is a part of a person's name, while '临' is a different character with a different meaning. Changing a character in a proper name is a significant error as it refers to a different person.",
+      "score": 1
+    }
+  ]
 }

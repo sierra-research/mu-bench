@@ -1,30 +1,35 @@
 {
   "gold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "predicted": "Anne hanım, merhabalar ben ııı kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyam nedir?",
+  "predicted": "Annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyam nedir?",
   "unintelligible": false,
-  "wer": 0.23529411764705882,
-  "werNormalizedGold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "werNormalizedPredicted": "Anna Hanım, merhabalar. Ben ııı kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.29411764705882354,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
+  "werNormalizedPredicted": "annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyam nedir",
+  "qualityScore": null,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "sigWerNormalizedPredicted": "Anna Hanım, merhabalar. Ben ııı kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir?",
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
+  "sigWerNormalizedPredicted": "annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyam nedir",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hanım' to 'Hanım,' at position 1",
-      "reason": "Difference is only punctuation (comma), which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'anna' to 'annem' at position 0",
+      "reason": "'Anna' is a name, while 'annem' means 'my mother' in Turkish. This changes the addressee and the meaning of the sentence significantly.",
+      "score": 1
     },
     {
-      "error": "Insertion: 'ııı' at position 4",
-      "reason": "'ııı' is a filler word (hesitation), does not change the meaning of the sentence.",
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'Hanım' is a polite form of address (like 'Ms.' or 'Madam'). Its omission makes the greeting less formal but does not significantly change the meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'Limite' at position 15",
-      "reason": "Omitting 'Limite dair.' removes a clarifying phrase about the topic, but the main request is still clear and understandable.",
+      "error": "Substitution: 'bakiyem' to 'bakiyam' at position 13",
+      "reason": "'Bakiyem' is the correct form for 'my balance' in Turkish; 'bakiyam' is a minor misspelling but still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'limite' at position 15",
+      "reason": "Omitting 'limite dair' removes clarification about the balance being related to the limit, which could cause confusion about what balance is being referred to.",
       "score": 2
     }
   ]

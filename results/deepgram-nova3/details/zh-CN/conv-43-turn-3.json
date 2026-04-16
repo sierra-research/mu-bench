@@ -1,25 +1,25 @@
 {
   "gold": "我想的，我现在。",
-  "predicted": "呃我现在",
+  "predicted": "我希望",
   "unintelligible": false,
-  "wer": 0.375,
-  "werNormalizedGold": "我想的，我现在。",
-  "werNormalizedPredicted": "呃，我现在。",
-  "qualityScore": 2,
-  "significantWer": 0.25,
+  "wer": 0.8333333333333334,
+  "werNormalizedGold": "我想的我现在",
+  "werNormalizedPredicted": "我希望",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
   "majorErrorsCount": 2,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "我 想 的 ， 我 现 在 。",
-  "sigWerNormalizedPredicted": "呃 ， 我 现 在 。",
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "我 想 的 我 现 在",
+  "sigWerNormalizedPredicted": "我 希 望",
   "sigWerErrors": [
     {
-      "error": "Substitution: '我' to '呃' at position 0",
-      "reason": "'呃' is a filler word (like 'uh'), while '我' means 'I'; this changes the subject and coherence of the sentence, making it a significant error.",
+      "error": "Substitution: '想' to '希' at position 1",
+      "reason": "'想' means 'want' or 'think', while '希' (as in '希望') means 'hope'. This changes the intent of the sentence from wanting/thinking to hoping, which alters the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: '想' at position 1",
-      "reason": "Omitting '想' ('want/think') removes the main verb, which significantly alters the meaning of the sentence.",
+      "error": "Deletion: '我' at position 3",
+      "reason": "The omission of the second '我' ('I') removes a subject or emphasis, which can make the sentence incomplete or change its meaning.",
       "score": 1
     }
   ]

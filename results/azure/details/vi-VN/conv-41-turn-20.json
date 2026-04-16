@@ -1,15 +1,26 @@
 {
   "gold": "Rồi ạ. Vui lòng hướng dẫn tiếp tục. Xin chào.",
-  "predicted": "Rồi vui lòng hướng dẫn tiếp tục xin chào.",
+  "predicted": "Prolet vui lòng hướng dẫn tiếp tục xin chào.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Rồi ạ. Vui lòng hướng dẫn tiếp tục. Xin chào.",
-  "werNormalizedPredicted": "Rồi ạ. Vui lòng hướng dẫn tiếp tục. Xin chào.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "rồi ạ vui lòng hướng dẫn tiếp tục xin chào",
+  "werNormalizedPredicted": "prolet vui lòng hướng dẫn tiếp tục xin chào",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Rồi ạ. Vui lòng hướng dẫn tiếp tục. Xin chào.",
-  "sigWerNormalizedPredicted": "Rồi ạ. Vui lòng hướng dẫn tiếp tục. Xin chào.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "rồi ạ vui lòng hướng dẫn tiếp tục xin chào",
+  "sigWerNormalizedPredicted": "prolet vui lòng hướng dẫn tiếp tục xin chào",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'rồi' to 'prolet' at position 0",
+      "reason": "'prolet' is a completely different word from 'rồi', and is not a Vietnamese word. This makes the sentence incoherent at the start.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ạ' at position 1",
+      "reason": "'ạ' is a polite particle in Vietnamese. Its omission slightly reduces the politeness but does not change the main meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

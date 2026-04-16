@@ -1,20 +1,25 @@
 {
   "gold": "Thế anh chị cho em xin mã theo dõi đơn hàng với ạ, để cho em chủ động kiểm tra.",
-  "predicted": "Thế anh chị cho em xin kèm mã theo dõi đơn hàng để cho em chủ động kiểm tra",
+  "predicted": "Thế anh chị cho em xin kể mã theo dõi đơn hàng rồi ạ để cho em chủ động kiểm tra",
   "unintelligible": false,
   "wer": 0.1,
-  "werNormalizedGold": "Thế anh chị cho em xin mã theo dõi đơn hàng với ạ, để cho em chủ động kiểm tra.",
-  "werNormalizedPredicted": "Thế anh chị cho em xin mã theo dõi đơn hàng để cho em chủ động kiểm tra.",
-  "qualityScore": 2,
+  "werNormalizedGold": "thế anh chị cho em xin mã theo dõi đơn hàng với ạ để cho em chủ động kiểm tra",
+  "werNormalizedPredicted": "thế anh chị cho em xin kể mã theo dõi đơn hàng rồi ạ để cho em chủ động kiểm tra",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "Thế anh chị cho em xin mã theo dõi đơn hàng với ạ, để cho em chủ động kiểm tra.",
-  "sigWerNormalizedPredicted": "Thế anh chị cho em xin mã theo dõi đơn hàng để cho em chủ động kiểm tra.",
+  "sigWerNormalizedGold": "thế anh chị cho em xin mã theo dõi đơn hàng với ạ để cho em chủ động kiểm tra",
+  "sigWerNormalizedPredicted": "thế anh chị cho em xin kể mã theo dõi đơn hàng rồi ạ để cho em chủ động kiểm tra",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'với' at position 11",
-      "reason": "The word 'với' is a polite particle in Vietnamese, often used to soften requests. Its omission does not change the main meaning of the sentence, which is a request for the order tracking code, but it does make the sentence slightly less polite.",
+      "error": "Insertion: 'kể' at position 6",
+      "reason": "'kể' (meaning 'tell') is inserted before 'mã', but does not significantly change the request for the tracking code. The sentence remains understandable and the intent is clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'với' to 'rồi' at position 11",
+      "reason": "'với' (meaning 'please' or a polite particle) is replaced by 'rồi' (meaning 'already'), which slightly changes the tone but does not affect the main meaning of the request. The sentence is still polite and the intent is preserved.",
       "score": 2
     }
   ]

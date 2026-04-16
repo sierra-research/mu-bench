@@ -1,15 +1,26 @@
 {
   "gold": "C N 4 8 2。",
-  "predicted": "C N 482。",
+  "predicted": "C N Super。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "C N 4 8 2。",
-  "werNormalizedPredicted": "C N 4 8 2。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "C N 4 8 2 。",
-  "sigWerNormalizedPredicted": "C N 4 8 2 。",
-  "sigWerErrors": []
+  "wer": 0.6,
+  "werNormalizedGold": "c n four eight two",
+  "werNormalizedPredicted": "c n super",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n four eight two",
+  "sigWerNormalizedPredicted": "c n super",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'four' to 'super' at position 2",
+      "reason": "'super' is a completely different word from 'four', which is a digit in a sequence. This substitution makes the sequence incoherent and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'eight' at position 3",
+      "reason": "Omitting 'eight' from the sequence of numbers disrupts the intended sequence, making it incomplete and potentially unusable.",
+      "score": 1
+    }
+  ]
 }

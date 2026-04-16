@@ -1,21 +1,26 @@
 {
   "gold": "Anna merhaba. Daha önce bir talebim olmuştu, onun için arıyorum. Şu ana kadar gerçekleşmedi çünkü.",
-  "predicted": "Anna merhaba, daha önce bir talebim olmuştu. Onun ilgili hakkında şu ana kadar gerçekleşmedi çünkü.",
+  "predicted": "Hanım, merhaba, daha önce bir talebim olmuştu, onun ilgili hatırlıyorum. Şu ana kadar gerçekleşmedi çünkü.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Anna merhaba. Daha önce bir talebim olmuştu, onun için arıyorum. Şu ana kadar gerçekleşmedi çünkü.",
-  "werNormalizedPredicted": "Anna merhaba. Daha önce bir talebim olmuştu. Onun ilgili hakkında şu ana kadar gerçekleşmedi çünkü.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "anna merhaba daha once bir talebim olmustu onun icin ariyorum su ana kadar gerceklesmedi cunku",
+  "werNormalizedPredicted": "hanim merhaba daha once bir talebim olmustu onun ilgili hatirliyorum su ana kadar gerceklesmedi cunku",
+  "qualityScore": null,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Anna merhaba. Daha önce bir talebim olmuştu, onun için arıyorum. Şu ana kadar gerçekleşmedi çünkü.",
-  "sigWerNormalizedPredicted": "Anna merhaba. Daha önce bir talebim olmuştu. Onun ilgili hakkında şu ana kadar gerçekleşmedi çünkü.",
+  "sigWerNormalizedGold": "anna merhaba daha once bir talebim olmustu onun icin ariyorum su ana kadar gerceklesmedi cunku",
+  "sigWerNormalizedPredicted": "hanim merhaba daha once bir talebim olmustu onun ilgili hatirliyorum su ana kadar gerceklesmedi cunku",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'olmuştu,' to 'olmuştu.' at position 6",
-      "reason": "Difference is only in punctuation (comma vs period), which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'anna' to 'hanim' at position 0",
+      "reason": "'anna' is a proper noun (a name), while 'hanim' means 'lady' or 'madam' in Turkish. This changes the subject of the sentence and can confuse the listener about whom the sentence is about.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'icin' to 'ilgili' at position 8",
+      "reason": "'icin' means 'for' (indicating purpose), while 'ilgili' means 'about' or 'related to'. This changes the meaning of the sentence, as the purpose of the call is replaced with a reference, which can mislead the listener.",
+      "score": 1
     }
   ]
 }

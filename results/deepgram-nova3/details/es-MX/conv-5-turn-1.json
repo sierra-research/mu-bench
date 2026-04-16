@@ -2,30 +2,25 @@
   "gold": "Quería solicitar una ascensión de la tarjeta.",
   "predicted": "Solicitar una extensión de la tarjeta.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "Quería solicitar una ascensión de la tarjeta.",
-  "werNormalizedPredicted": "Solicitar una extensión de la tarjeta.",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "queria solicitar una ascension de la tarjeta",
+  "werNormalizedPredicted": "solicitar una extension de la tarjeta",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Quería solicitar una ascensión de la tarjeta.",
-  "sigWerNormalizedPredicted": "Solicitar una extensión de la tarjeta.",
+  "sigWerNormalizedGold": "queria solicitar una ascension de la tarjeta",
+  "sigWerNormalizedPredicted": "solicitar una extension de la tarjeta",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Quería' to 'Solicitar' at position 0",
-      "reason": "'Quería' expresses a desire or request ('I wanted'), while 'Solicitar' is an imperative or infinitive ('to request'). This changes the tone from a personal request to a general action, but the intent of requesting remains clear.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'solicitar' at position 1",
-      "reason": "'Ascensión' (promotion/upgrade) and 'extensión' (extension) are different actions regarding a card. This changes the meaning of the request significantly, as the user is asking for a different service.",
+      "error": "Deletion: 'queria' at position 0",
+      "reason": "The omission of 'queria' removes the subject's intent ('I wanted'), which changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'ascensión' to 'extensión' at position 3",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Substitution: 'ascension' to 'extension' at position 3",
+      "reason": "'Ascension' (promotion/upgrade) and 'extension' (lengthening) are different actions regarding a card; this changes the request's meaning.",
+      "score": 1
     }
   ]
 }

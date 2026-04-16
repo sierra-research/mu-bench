@@ -1,20 +1,25 @@
 {
   "gold": "嗯，对的，正确。",
-  "predicted": "嗯对的不正确",
+  "predicted": "是的不正确",
   "unintelligible": false,
-  "wer": 0.125,
-  "werNormalizedGold": "嗯，对的，正确。",
-  "werNormalizedPredicted": "嗯，对的，不正确。",
-  "qualityScore": 2,
-  "significantWer": 0.125,
+  "wer": 0.5,
+  "werNormalizedGold": "对的正确",
+  "werNormalizedPredicted": "是的 不正确",
+  "qualityScore": null,
+  "significantWer": 0.25,
   "majorErrorsCount": 1,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "嗯 ， 对 的 ， 正 确 。",
-  "sigWerNormalizedPredicted": "嗯 ， 对 的 ， 不 正 确 。",
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "对 的 正 确",
+  "sigWerNormalizedPredicted": "是 的 不 正 确",
   "sigWerErrors": [
     {
-      "error": "Insertion: '不' at position 5",
-      "reason": "The insertion of '不' negates the meaning of the sentence, changing it from 'correct' to 'not correct', which is a significant change in meaning.",
+      "error": "Substitution: '对' to '是' at position 0",
+      "reason": "'对' means 'correct' or 'right', while '是' means 'is'; this changes the structure but not the core meaning, as both can be used to affirm something, but in this context, it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '不' at position 2",
+      "reason": "'不' means 'not', which negates the meaning of 'correct'. This completely reverses the intended meaning, making it a significant error.",
       "score": 1
     }
   ]

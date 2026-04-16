@@ -8,6 +8,7 @@
  */
 
 import { readFileSync, writeFileSync } from "fs";
+import { execSync } from "child_process";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -131,4 +132,14 @@ export function getProviderLocaleScores(provider, metricKey) {
 `;
 
 writeFileSync(dataPath, output, "utf-8");
+
+try {
+    execSync(`npx prettier --write "${dataPath}"`, {
+        cwd: join(__dirname, ".."),
+        stdio: "inherit",
+    });
+} catch (e) {
+    console.warn(`Warning: prettier --write failed (${e.message}); generated file may fail lint check`);
+}
+
 console.log(`Wrote ${dataPath}`);

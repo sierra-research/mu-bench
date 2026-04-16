@@ -1,15 +1,21 @@
 {
   "gold": "你好。",
-  "predicted": "你好",
+  "predicted": "一好",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "你 好",
+  "werNormalizedPredicted": "一 好",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "一 好",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '一' at position 0",
+      "reason": "'你' means 'you' in Chinese, while '一' means 'one'. This substitution changes the meaning of the greeting from 'hello (to you)' to 'one good', making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

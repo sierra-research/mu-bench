@@ -2,20 +2,25 @@
   "gold": "我正在等待新卡。想知道它的状态。",
   "predicted": "我仍在当代信卡想知道它的状态",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werNormalizedGold": "我正在等待新卡。想知道它的状态。",
-  "werNormalizedPredicted": "我仍在等待新卡。想知道它的状态。",
-  "qualityScore": 2,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "我正在等待新卡 想知道它的状态",
+  "werNormalizedPredicted": "我仍在当代信卡想知道它的状态",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 。 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "我 仍 在 等 待 新 卡 。 想 知 道 它 的 状 态 。",
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 仍 在 当 代 信 卡 想 知 道 它 的 状 态",
   "sigWerErrors": [
     {
       "error": "Substitution: '正' to '仍' at position 1",
-      "reason": "'正' (currently) and '仍' (still) both indicate ongoing action, and the overall meaning of the sentence remains the same in this context.",
-      "score": 3
+      "reason": "'正' (currently) and '仍' (still) both indicate ongoing action, so the meaning is only slightly changed and the sentence remains coherent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '等' to '当' at position 3",
+      "reason": "'等' (wait) and '当' (when/as) are different in meaning, but in this context, the sentence is still understandable as referring to the card. However, it does slightly change the meaning, so it's a minor error.",
+      "score": 2
     }
   ]
 }

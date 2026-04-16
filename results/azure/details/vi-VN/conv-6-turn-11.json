@@ -1,15 +1,26 @@
 {
   "gold": "Sẵn sàng.",
-  "predicted": "Sang sang.",
+  "predicted": "Trong.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sẵn sàng.",
-  "werNormalizedPredicted": "Sẵn sàng.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "sẵn sàng",
+  "werNormalizedPredicted": "trong",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Sẵn sàng.",
-  "sigWerNormalizedPredicted": "Sẵn sàng.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sẵn sàng",
+  "sigWerNormalizedPredicted": "trong",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sẵn' to 'trong' at position 0",
+      "reason": "'trong' (meaning 'in' or 'inside') is completely different from 'sẵn' (meaning 'ready'), which changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 1",
+      "reason": "Omitting 'sàng' means the phrase 'sẵn sàng' ('ready') is not conveyed at all, resulting in a significant loss of meaning.",
+      "score": 1
+    }
+  ]
 }

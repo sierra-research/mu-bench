@@ -1,21 +1,26 @@
 {
   "gold": "不是，但是能不能别要我的电话号码了。",
-  "predicted": "不是，但是能不能别用我的电话号码了？",
+  "predicted": "不是，但是能不能别用我的电话号码？",
   "unintelligible": false,
-  "wer": 0.05555555555555555,
-  "werNormalizedGold": "不是，但是能不能别要我的电话号码了。",
-  "werNormalizedPredicted": "不是，但是能不能别要我的电话号码了？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "不 是 ， 但 是 能 不 能 别 要 我 的 电 话 号 码 了 。",
-  "sigWerNormalizedPredicted": "不 是 ， 但 是 能 不 能 别 要 我 的 电 话 号 码 了 ？",
+  "wer": 0.125,
+  "werNormalizedGold": "不是 但是 能不能 别 要 我 的 电话号码 了",
+  "werNormalizedPredicted": "不是 但是 能不能 别 用 我 的 电话号码",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "不 是 但 是 能 不 能 别 要 我 的 电 话 号 码 了",
+  "sigWerNormalizedPredicted": "不 是 但 是 能 不 能 别 用 我 的 电 话 号 码",
   "sigWerErrors": [
     {
-      "error": "Substitution: '。' to '？' at position 17",
-      "reason": "Difference is only in punctuation (period vs question mark), which does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: '要' to '用' at position 8",
+      "reason": "'要' means 'want' or 'need', while '用' means 'use'. This changes the action being requested, which alters the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 15",
+      "reason": "'了' is a modal particle indicating a completed action or change of state. Its omission slightly affects the aspect of the sentence but does not significantly change the overall meaning.",
+      "score": 2
     }
   ]
 }

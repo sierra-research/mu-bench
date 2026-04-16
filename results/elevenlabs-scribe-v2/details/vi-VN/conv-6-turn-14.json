@@ -1,15 +1,21 @@
 {
   "gold": "Xin chào.",
-  "predicted": "Xin chào.",
+  "predicted": "Chị kêu.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Xin chào.",
-  "werNormalizedPredicted": "Xin chào.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "xin chào",
+  "werNormalizedPredicted": "chị kêu",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Xin chào.",
-  "sigWerNormalizedPredicted": "Xin chào.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "xin chào",
+  "sigWerNormalizedPredicted": "chị kêu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xin' to 'chị' at position 0",
+      "reason": "'xin chào' means 'hello' in Vietnamese, while 'chị kêu' means 'older sister calls' or 'you (female) call'. The meaning is completely different and the sentence is derailed.",
+      "score": 1
+    }
+  ]
 }

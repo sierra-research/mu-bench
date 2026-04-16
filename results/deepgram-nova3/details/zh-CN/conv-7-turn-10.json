@@ -1,25 +1,25 @@
 {
   "gold": "没有，没有，再等一下，再等一下，我的姓名是君玲。",
-  "predicted": "在等一下子等一下我的姓名是君临。",
+  "predicted": "为王氏。",
   "unintelligible": false,
-  "wer": 0.2916666666666667,
-  "werNormalizedGold": "没有，没有，再等一下，再等一下，我的姓名是君玲。",
-  "werNormalizedPredicted": "再等一下，再等一下，我的姓名是君临。",
-  "qualityScore": 2,
-  "significantWer": 0.08333333333333333,
+  "wer": 1.0,
+  "werNormalizedGold": "没有 没有 再 等 一下 再 等 一下 我 的 姓名 是 君玲",
+  "werNormalizedPredicted": "为 王氏",
+  "qualityScore": null,
+  "significantWer": 0.10526315789473684,
   "majorErrorsCount": 2,
-  "totalWordsCount": 24,
-  "sigWerNormalizedGold": "没 有 ， 没 有 ， 再 等 一 下 ， 再 等 一 下 ， 我 的 姓 名 是 君 玲 。",
-  "sigWerNormalizedPredicted": "再 等 一 下 ， 再 等 一 下 ， 我 的 姓 名 是 君 临 。",
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "没 有 没 有 再 等 一 下 再 等 一 下 我 的 姓 名 是 君 玲",
+  "sigWerNormalizedPredicted": "为 王 氏",
   "sigWerErrors": [
     {
-      "error": "Deletion: '没' at position 0",
-      "reason": "The repeated '没有' (no, no) at the start is omitted, which removes a negative or denial statement from the sentence. This changes the meaning significantly, as the denial is lost.",
+      "error": "Substitution: '没' to '为' at position 0",
+      "reason": "The actual transcription is completely different from the expected, changing the meaning of the sentence entirely.",
       "score": 1
     },
     {
-      "error": "Substitution: '玲' to '临' at position 22",
-      "reason": "'君玲' and '君临' are different names. Substituting one character in a Chinese name changes the identity, which is a significant error for names.",
+      "error": "Deletion: '有' at position 3",
+      "reason": "The majority of the expected sentence is missing, resulting in a loss of all intended information.",
       "score": 1
     }
   ]

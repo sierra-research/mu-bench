@@ -1,31 +1,26 @@
 {
   "gold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
-  "predicted": "Hayır, yanlış yanlış siz bana demin CN 720 dediniz.",
+  "predicted": "Hayır, yanlış yanlış. Siz bana demediniz. CN 720 dediniz.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
-  "werNormalizedPredicted": "Hayır, yanlış. Siz bana demin CN 720 dediniz.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
-  "sigWerNormalizedPredicted": "Hayır, yanlış. Siz bana demin CN 720 dediniz.",
+  "wer": 0.18181818181818182,
+  "werNormalizedGold": "hayır yanlış siz bana demin c n seven hundred twenty dediniz",
+  "werNormalizedPredicted": "hayır yanlış yanlış siz bana demediniz c n seven hundred twenty dediniz",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "hayır yanlış siz bana demin c n seven hundred twenty dediniz",
+  "sigWerNormalizedPredicted": "hayır yanlış yanlış siz bana demediniz c n seven hundred twenty dediniz",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "Difference is only a comma, which is punctuation and should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'C' to 'CN' at position 5",
-      "reason": "'C N' is spoken as two separate letters, while 'CN' is a single combined token. This could cause confusion, especially if these are part of a code or identifier. However, the meaning is still clear in context.",
+      "error": "Insertion: 'yanlış' at position 2",
+      "reason": "The extra 'yanlış' (meaning 'wrong') repeats the word but does not change the overall meaning of the sentence, which is about correcting a statement.",
       "score": 2
     },
     {
-      "error": "Deletion: 'N' at position 6",
-      "reason": "The letter 'N' is omitted as a separate token, but it is present as part of 'CN' in the actual transcription. Since the information is not lost but merged, the meaning is preserved.",
-      "score": 2
+      "error": "Substitution: 'demin' to 'demediniz' at position 4",
+      "reason": "'demin' means 'just now' or 'earlier', while 'demediniz' means 'you did not say'. This changes the meaning of the sentence significantly, as it shifts from referencing a previous statement to denying that something was said.",
+      "score": 1
     }
   ]
 }

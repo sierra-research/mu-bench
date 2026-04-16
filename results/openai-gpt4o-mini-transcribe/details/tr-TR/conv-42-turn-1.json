@@ -1,0 +1,36 @@
+{
+  "gold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "predicted": "Anayasa beklesi istiyorum. Son senenin 2024 yılının Ocak-Aralık arasındaki hesap eklesi istiyorum.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
+  "werNormalizedPredicted": "anayasa beklesi istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasındaki hesap eklesi istiyorum",
+  "qualityScore": null,
+  "significantWer": 0.17647058823529413,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
+  "sigWerNormalizedPredicted": "anayasa beklesi istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasındaki hesap eklesi istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anayasa' at position 0",
+      "reason": "'anna' is a name, while 'anayasa' means 'constitution' in Turkish; this substitution completely changes the meaning and derails the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ekstresi' at position 2",
+      "reason": "Omitting 'ekstresi' (statement) removes a key part of the request, making the sentence unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'seneni' to 'senenin' at position 5",
+      "reason": "This is a minor grammatical correction; 'seneni' is a typo for 'senenin' (of the year), but the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'eklesi' at position 15",
+      "reason": "'ekstresini' (its statement) is replaced with 'eklesi', which is not a valid word and makes the request unclear, significantly affecting meaning.",
+      "score": 1
+    }
+  ]
+}

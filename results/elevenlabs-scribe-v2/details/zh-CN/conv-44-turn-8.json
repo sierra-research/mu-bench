@@ -1,25 +1,25 @@
 {
   "gold": "君，君，君玲。",
-  "predicted": "不推～君君君临。",
+  "predicted": "不对，君，君，君临。",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werNormalizedGold": "君，君，君玲。",
-  "werNormalizedPredicted": "不推～君君君玲。",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
+  "wer": 0.75,
+  "werNormalizedGold": "君 君 君玲",
+  "werNormalizedPredicted": "不对 君 君 君临",
+  "qualityScore": null,
+  "significantWer": 0.5,
   "majorErrorsCount": 2,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "君 ， 君 ， 君 玲 。",
-  "sigWerNormalizedPredicted": "不 推 ～ 君 君 君 玲 。",
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "君 君 君 玲",
+  "sigWerNormalizedPredicted": "不 对 君 君 君 临",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to '推' at position 0",
-      "reason": "'不' adds a negation at the start, which changes the meaning of the sentence significantly.",
+      "error": "Insertion: '不' at position 0",
+      "reason": "The insertion of '不' (meaning 'not') at the beginning changes the meaning of the sentence, potentially negating or altering the intended message.",
       "score": 1
     },
     {
-      "error": "Substitution: '，' to '君' at position 3",
-      "reason": "Replacing a punctuation mark with a word ('君') changes the structure and meaning of the sentence.",
+      "error": "Substitution: '玲' to '临' at position 3",
+      "reason": "'玲' and '临' are different Chinese characters with different meanings; substituting one for the other changes the intended name or word, which is a significant error.",
       "score": 1
     }
   ]

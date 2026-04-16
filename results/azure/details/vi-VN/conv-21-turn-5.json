@@ -1,21 +1,26 @@
 {
   "gold": "Tôi không.",
-  "predicted": "Tôi không?",
+  "predicted": "Vâng.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Tôi không.",
-  "werNormalizedPredicted": "tôi không.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "tôi không",
+  "werNormalizedPredicted": "vâng",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Tôi không.",
-  "sigWerNormalizedPredicted": "tôi không.",
+  "sigWerNormalizedGold": "tôi không",
+  "sigWerNormalizedPredicted": "vâng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "The only difference is capitalization, which does not affect meaning in Vietnamese or English.",
-      "score": 3
+      "error": "Substitution: 'tôi' to 'vâng' at position 0",
+      "reason": "'tôi' means 'I' or 'me' in Vietnamese, while 'vâng' means 'yes'. This substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'không' at position 1",
+      "reason": "'không' means 'no' or 'not' in Vietnamese. Its deletion further changes the meaning, making the sentence incoherent compared to the expected.",
+      "score": 1
     }
   ]
 }

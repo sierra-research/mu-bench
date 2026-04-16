@@ -1,15 +1,21 @@
 {
   "gold": "It's 1 2 1 2 1 2 3 4 5 6 7.",
-  "predicted": "12121234567",
+  "predicted": "1 2 1 2 1 2 3 4 5 6 7",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "It's 1 2 1 2 1 2 3 4 5 6 7.",
-  "werNormalizedPredicted": "It's 1 2 1 2 1 2 3 4 5 6 7.",
-  "qualityScore": 3,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "it is one two one two one two three four five six seven",
+  "werNormalizedPredicted": "one two one two one two three four five six seven",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "It's 1 2 1 2 1 2 3 4 5 6 7.",
-  "sigWerNormalizedPredicted": "It's 1 2 1 2 1 2 3 4 5 6 7.",
-  "sigWerErrors": []
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "it is one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "one two one two one two three four five six seven",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'it' at position 0",
+      "reason": "The word 'it' is missing at the beginning, but the rest of the sequence is intact. The omission does not significantly change the meaning, as the main content is the sequence of numbers.",
+      "score": 2
+    }
+  ]
 }

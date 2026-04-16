@@ -3,19 +3,24 @@
   "predicted": "Sí, ¿a qué se refiere en proceso?",
   "unintelligible": false,
   "wer": 0.2857142857142857,
-  "werNormalizedGold": "¿Y a qué se refiere el proceso?",
-  "werNormalizedPredicted": "Sí, ¿a qué se refiere el proceso?",
-  "qualityScore": 2,
+  "werNormalizedGold": "y a que se refiere el proceso",
+  "werNormalizedPredicted": "si a que se refiere en proceso",
+  "qualityScore": null,
   "significantWer": 0.14285714285714285,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "¿Y a qué se refiere el proceso?",
-  "sigWerNormalizedPredicted": "Sí, ¿a qué se refiere el proceso?",
+  "sigWerNormalizedGold": "y a que se refiere el proceso",
+  "sigWerNormalizedPredicted": "si a que se refiere en proceso",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¿Y' to 'Sí,' at position 0",
-      "reason": "The word '¿Y' (meaning 'And') is replaced by 'Sí,' (meaning 'Yes'), which changes the intent of the sentence from a follow-up or continuation to an affirmation. This alters the meaning of the sentence significantly.",
+      "error": "Substitution: 'y' to 'si' at position 0",
+      "reason": "'y' means 'and' while 'si' means 'yes' in Spanish; this changes the meaning of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'el' to 'en' at position 5",
+      "reason": "'el proceso' means 'the process', while 'en proceso' means 'in process'; this changes the meaning of the phrase, but the overall topic is still about the process.",
+      "score": 2
     }
   ]
 }

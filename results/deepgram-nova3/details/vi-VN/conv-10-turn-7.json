@@ -1,20 +1,30 @@
 {
   "gold": "Bạn có thể chuyển đến nhân viên chăm sóc khách hàng.",
-  "predicted": "",
+  "predicted": "Ta có thể chuyển đến nhân viên cho khách hàng.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Bạn có thể chuyển đến nhân viên chăm sóc khách hàng.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "ban co the chuyen den nhan vien cham soc khach hang",
+  "werNormalizedPredicted": "ta co the chuyen den nhan vien cho khach hang",
+  "qualityScore": null,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Bạn có thể chuyển đến nhân viên chăm sóc khách hàng.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "ban co the chuyen den nhan vien cham soc khach hang",
+  "sigWerNormalizedPredicted": "ta co the chuyen den nhan vien cho khach hang",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Bạn' at position 0",
-      "reason": "The actual transcription is completely empty, so the entire expected sentence is missing. This results in a total loss of meaning.",
+      "error": "Substitution: 'ban' to 'ta' at position 0",
+      "reason": "'ban' means 'you' and 'ta' means 'I' in Vietnamese, which completely changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cham' to 'cho' at position 7",
+      "reason": "'cham soc' means 'take care of', while 'cho' means 'for', so this changes the meaning of the service being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'soc' at position 8",
+      "reason": "Omitting 'soc' removes the meaning of 'take care of', making the phrase incomplete and changing the intended meaning.",
       "score": 1
     }
   ]

@@ -2,14 +2,20 @@
   "gold": "O zaman bana fatura bilgilerimi verebilir misiniz? Yani ekstre bilgileri.",
   "predicted": "O zaman bana fatura bilgilerimi verebilir misiniz? Yani ekstra bilgileri.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "O zaman bana fatura bilgilerimi verebilir misiniz? Yani ekstre bilgileri.",
-  "werNormalizedPredicted": "O zaman bana fatura bilgilerimi verebilir misiniz? Yani ekstre bilgileri.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.1,
+  "werNormalizedGold": "o zaman bana fatura bilgilerimi verebilir misiniz yani ekstre bilgileri",
+  "werNormalizedPredicted": "o zaman bana fatura bilgilerimi verebilir misiniz yani ekstra bilgileri",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "O zaman bana fatura bilgilerimi verebilir misiniz? Yani ekstre bilgileri.",
-  "sigWerNormalizedPredicted": "O zaman bana fatura bilgilerimi verebilir misiniz? Yani ekstre bilgileri.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "o zaman bana fatura bilgilerimi verebilir misiniz yani ekstre bilgileri",
+  "sigWerNormalizedPredicted": "o zaman bana fatura bilgilerimi verebilir misiniz yani ekstra bilgileri",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ekstre' to 'ekstra' at position 8",
+      "reason": "'Ekstre' (statement, as in bank statement) and 'ekstra' (extra) are different words; the substitution changes the meaning of the sentence from asking for a statement to asking for something extra, which could confuse the intent.",
+      "score": 1
+    }
+  ]
 }

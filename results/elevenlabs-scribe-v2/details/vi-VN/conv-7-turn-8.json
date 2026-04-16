@@ -1,31 +1,31 @@
 {
   "gold": "Hồi nãy, tôi mới nói xong. Mất thẻ, muốn làm lại, khi nào thì có?",
-  "predicted": "Hồi nãy mới nói sao mất thẻ. Muốn làm lại. Coi coi là khi nào thì có",
+  "predicted": "Hồi nãy mới nói sao mất thẻ, muốn làm lại. Coi coi là khi nào thì có",
   "unintelligible": false,
-  "wer": 0.6,
-  "werNormalizedGold": "Hồi nãy, tôi mới nói xong. Mất thẻ, muốn làm lại, khi nào thì có?",
-  "werNormalizedPredicted": "Hồi nãy, mới nói sao mất thẻ. Muốn làm lại. Coi coi là khi nào thì có?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "hồi nãy tôi mới nói xong mất thẻ muốn làm lại khi nào thì có",
+  "werNormalizedPredicted": "hồi nãy mới nói sao mất thẻ muốn làm lại coi coi là khi nào thì có",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Hồi nãy, tôi mới nói xong. Mất thẻ, muốn làm lại, khi nào thì có?",
-  "sigWerNormalizedPredicted": "Hồi nãy, mới nói sao mất thẻ. Muốn làm lại. Coi coi là khi nào thì có?",
+  "sigWerNormalizedGold": "hồi nãy tôi mới nói xong mất thẻ muốn làm lại khi nào thì có",
+  "sigWerNormalizedPredicted": "hồi nãy mới nói sao mất thẻ muốn làm lại coi coi là khi nào thì có",
   "sigWerErrors": [
     {
       "error": "Deletion: 'tôi' at position 2",
-      "reason": "Omitting 'tôi' (I) removes the subject, but the meaning is still clear from context in Vietnamese conversation.",
+      "reason": "The omission of 'tôi' (I) removes the subject of the sentence, which can make the sentence less clear about who is speaking, but in conversational Vietnamese, the subject is often dropped and still understood from context. The overall meaning is mostly preserved.",
       "score": 2
     },
     {
-      "error": "Substitution: 'xong.' to 'sao' at position 5",
-      "reason": "Changing 'xong' (finished) to 'sao' (why) alters the nuance but does not derail the overall meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'xong' to 'sao' at position 5",
+      "reason": "'xong' means 'finished' and 'sao' means 'why' or 'how'. This changes the meaning of the sentence, as it shifts from stating an action is completed to questioning something, which can confuse the intent of the sentence.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'lại,' to 'là' at position 10",
-      "reason": "Inserting 'lại.' (again) does not change the overall meaning, as it fits the context of wanting to redo something.",
-      "score": 3
+      "error": "Insertion: 'coi' at position 11",
+      "reason": "The insertion of 'coi' (look/check) adds a redundant or filler word that does not significantly alter the meaning of the sentence, as the main intent (asking when the card can be reissued) remains clear.",
+      "score": 2
     }
   ]
 }

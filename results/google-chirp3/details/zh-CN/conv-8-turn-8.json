@@ -1,25 +1,25 @@
 {
   "gold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
-  "predicted": "军兵兵兵",
+  "predicted": "军0军0",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
-  "werNormalizedPredicted": "军兵兵兵",
-  "qualityScore": 1,
-  "significantWer": 0.07692307692307693,
+  "werNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君玲 君玲",
+  "werNormalizedPredicted": "军 零 军 零",
+  "qualityScore": null,
+  "significantWer": 0.1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 26,
-  "sigWerNormalizedGold": "君 ， 你 说 得 不 对 ， 你 说 得 不 对 ， 你 说 得 不 对 ， 君 玲 ， 君 玲 。",
-  "sigWerNormalizedPredicted": "军 兵 兵 兵",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "军 零 军 零",
   "sigWerErrors": [
     {
       "error": "Substitution: '君' to '军' at position 0",
-      "reason": "'君' and '军' are different words with different meanings; this changes the subject and derails the meaning of the sentence.",
+      "reason": "'君' and '军' are different characters with different meanings; this changes the meaning of the name or subject being referred to.",
       "score": 1
     },
     {
-      "error": "Deletion: '得' at position 4",
-      "reason": "The entire repeated phrase and names are missing, which removes the main content and meaning of the sentence.",
+      "error": "Deletion: '不' at position 4",
+      "reason": "'玲' and '零' are different characters; '玲' is a common part of a name, while '零' means 'zero', which changes the meaning significantly.",
       "score": 1
     }
   ]

@@ -1,30 +1,30 @@
 {
   "gold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "predicted": "Ờm, tôi làm mất thẻ. À, tuần trước có xin cấp lại thẻ. À, không biết hiện tại là tình trạng thẻ như thế nào",
+  "predicted": "Ờm, tôi làm mất thẻ. À, tuần trước có xin cấp lại thẻ. À, không biết hiện tại là tình trạng thẻ như thế nào?",
   "unintelligible": false,
-  "wer": 0.3181818181818182,
-  "werNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "werNormalizedPredicted": "Ờm, tôi làm mất thẻ. À, tuần trước, tôi có xin cấp lại thẻ. À, không biết hiện tại tình trạng thẻ như thế nào?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.13636363636363635,
+  "werNormalizedGold": "toi la mat the tuan truoc toi co xin cap lai the khong biet hien tai tinh trang the nhu the nao",
+  "werNormalizedPredicted": "toi lam mat the tuan truoc co xin cap lai the khong biet hien tai la tinh trang the nhu the nao",
+  "qualityScore": null,
+  "significantWer": 0.045454545454545456,
+  "majorErrorsCount": 1,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "sigWerNormalizedPredicted": "Ờm, tôi làm mất thẻ. À, tuần trước, tôi có xin cấp lại thẻ. À, không biết hiện tại tình trạng thẻ như thế nào?",
+  "sigWerNormalizedGold": "toi la mat the tuan truoc toi co xin cap lai the khong biet hien tai tinh trang the nhu the nao",
+  "sigWerNormalizedPredicted": "toi lam mat the tuan truoc co xin cap lai the khong biet hien tai la tinh trang the nhu the nao",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "'Ờm,' is a filler word that does not affect the meaning of the sentence.",
+      "error": "Substitution: 'la' to 'lam' at position 1",
+      "reason": "'la' (to be) and 'lam' (to do/make) are different verbs in Vietnamese; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'toi' at position 6",
+      "reason": "Omitting 'toi' (I) removes the subject from the second clause, which can cause confusion about who is performing the action.",
       "score": 2
     },
     {
-      "error": "Substitution: 'Tuần' to 'tuần' at position 4",
-      "reason": "Difference in capitalization only, which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'Không' to 'không' at position 12",
-      "reason": "'À,' is a discourse marker/filler and does not change the meaning.",
+      "error": "Insertion: 'la' at position 16",
+      "reason": "Inserting 'la' (to be) before 'tinh trang' (status) is a minor grammatical error and does not significantly change the meaning of the sentence.",
       "score": 2
     }
   ]

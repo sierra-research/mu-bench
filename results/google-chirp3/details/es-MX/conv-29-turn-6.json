@@ -2,24 +2,24 @@
   "gold": "Sí, sí, ese es.",
   "predicted": "Sí, sí, sí, es ese.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Sí, sí, ese es.",
-  "werNormalizedPredicted": "sí, sí, sí, es ese.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "si si ese es",
+  "werNormalizedPredicted": "si si si es ese",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Sí, sí, ese es.",
-  "sigWerNormalizedPredicted": "sí, sí, sí, es ese.",
+  "sigWerNormalizedGold": "si si ese es",
+  "sigWerNormalizedPredicted": "si si si es ese",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ese' to 'es' at position 2",
-      "reason": "An extra 'sí' is inserted, but it does not change the overall meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'ese' to 'si' at position 2",
+      "reason": "The word 'ese' (that) is replaced by 'si' (yes), which changes the meaning of the sentence and could cause confusion about what is being affirmed or referenced.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'ese' to 'es' at position 2",
-      "reason": "'ese' (that) and 'es' (is) are different words, but in this context, the meaning is only slightly affected as the sentence structure is still understandable.",
+      "error": "Insertion: 'ese' at position 4",
+      "reason": "The extra 'ese' at the end adds redundancy but does not significantly change the meaning of the sentence, as the main affirmation is still present.",
       "score": 2
     }
   ]

@@ -2,14 +2,25 @@
   "gold": "Sí, es más 52 55 12 34 56 78.",
   "predicted": "Sí, es 525512345678.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí, es más 52 55 12 34 56 78.",
-  "werNormalizedPredicted": "Sí, es más 52 55 12 34 56 78.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Sí, es más 52 55 12 34 56 78.",
-  "sigWerNormalizedPredicted": "Sí, es más 52 55 12 34 56 78.",
-  "sigWerErrors": []
+  "wer": 0.10526315789473684,
+  "werNormalizedGold": "si es mas cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "si es cincuenta y dos cincuenta y five doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "qualityScore": null,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "si es mas cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "si es cincuenta y dos cincuenta y five doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'mas' at position 2",
+      "reason": "'mas' (meaning 'plus' or 'more') is omitted, which could change the meaning of the sentence, especially if it is part of a phone number or code. This omission can lead to misunderstanding the intended number or information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cinco' to 'five' at position 8",
+      "reason": "'cinco' is in Spanish and 'five' is in English. Mixing languages in a sequence of numbers can cause confusion and is a significant error in this context.",
+      "score": 1
+    }
+  ]
 }

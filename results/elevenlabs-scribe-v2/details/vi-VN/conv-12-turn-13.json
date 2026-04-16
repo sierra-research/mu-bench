@@ -1,15 +1,26 @@
 {
   "gold": "Đúng vậy. Đúng vậy.",
-  "predicted": "Đúng vậy, đúng vậy",
+  "predicted": "Đúng rồi, đúng rồi",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Đúng vậy. Đúng vậy.",
-  "werNormalizedPredicted": "Đúng vậy. Đúng vậy.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "đúng vậy đúng vậy",
+  "werNormalizedPredicted": "đúng rồi đúng rồi",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Đúng vậy. Đúng vậy.",
-  "sigWerNormalizedPredicted": "Đúng vậy. Đúng vậy.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "đúng vậy đúng vậy",
+  "sigWerNormalizedPredicted": "đúng rồi đúng rồi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vậy' to 'rồi' at position 1",
+      "reason": "'vậy' (meaning 'right' or 'correct') is substituted with 'rồi' (meaning 'already' or 'then'), which changes the affirmation to a statement of completion, altering the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'vậy' to 'rồi' at position 3",
+      "reason": "Repeats the same substitution as above, again changing the affirmation to a statement of completion, which significantly changes the intended meaning.",
+      "score": 1
+    }
+  ]
 }

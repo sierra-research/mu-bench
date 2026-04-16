@@ -1,15 +1,26 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "No.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "no",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "no",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'no' at position 0",
+      "reason": "The expected word is in Chinese ('你'), but the actual transcription is in English ('no'), which is a different language and changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "The word '好' is missing in the actual transcription, which omits a key part of the greeting and further derails the meaning.",
+      "score": 1
+    }
+  ]
 }

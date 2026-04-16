@@ -2,14 +2,25 @@
   "gold": "Ceyhan, Niğde 3 4 2. Doğru mudur?",
   "predicted": "Ceyhanlı'da üç dört iki doğru mudur?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Ceyhan, Niğde 3 4 2. Doğru mudur?",
-  "werNormalizedPredicted": "Ceyhan, Niğde 3 4 2. Doğru mudur?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "ceyhan nigde three four two dogru mudur",
+  "werNormalizedPredicted": "ceyhanlida three four two dogru mudur",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Ceyhan, Niğde 3 4 2. Doğru mudur?",
-  "sigWerNormalizedPredicted": "Ceyhan, Niğde 3 4 2. Doğru mudur?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "ceyhan nigde three four two dogru mudur",
+  "sigWerNormalizedPredicted": "ceyhanlida three four two dogru mudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ceyhan' to 'ceyhanlida' at position 0",
+      "reason": "'ceyhanlida' is a different word from 'ceyhan'; it could be a place name or a form of 'ceyhan' with a suffix, which changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nigde' at position 1",
+      "reason": "Omitting 'nigde', which is a place name, removes important information from the sentence and changes its meaning.",
+      "score": 1
+    }
+  ]
 }

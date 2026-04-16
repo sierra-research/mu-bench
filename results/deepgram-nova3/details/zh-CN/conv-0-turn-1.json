@@ -1,15 +1,21 @@
 {
   "gold": "我想提高信用卡的限额。",
-  "predicted": "我想提高信用卡的限额",
+  "predicted": "想剃构悉尼用卡的限额",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我想提高信用卡的限额。",
-  "werNormalizedPredicted": "我想提高信用卡的限额。",
-  "qualityScore": 3,
+  "wer": 0.1,
+  "werNormalizedGold": "我想提高信用卡的限额",
+  "werNormalizedPredicted": "想提高信用卡的限额",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额 。",
-  "sigWerNormalizedPredicted": "我 想 提 高 信 用 卡 的 限 额 。",
-  "sigWerErrors": []
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额",
+  "sigWerNormalizedPredicted": "想 提 高 信 用 卡 的 限 额",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '我' at position 0",
+      "reason": "The subject '我' (I) is omitted, but the intent of the sentence remains clear in context. In Chinese, omitting the subject is common and does not change the overall meaning.",
+      "score": 2
+    }
+  ]
 }

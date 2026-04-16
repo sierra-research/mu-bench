@@ -1,20 +1,25 @@
 {
   "gold": "C de casa.",
-  "predicted": "Seré tu casa.",
+  "predicted": "E.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "C de casa.",
-  "werNormalizedPredicted": "Seré tu casa.",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "c de casa",
+  "werNormalizedPredicted": "e",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "C de casa.",
-  "sigWerNormalizedPredicted": "Seré tu casa.",
+  "sigWerNormalizedGold": "c de casa",
+  "sigWerNormalizedPredicted": "e",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'C' to 'Seré' at position 0",
-      "reason": "'C de casa' is a letter clarification phrase, while 'Seré tu casa' is a full sentence with a completely different meaning. The substitution changes the entire intent and meaning of the utterance.",
+      "error": "Substitution: 'c' to 'e' at position 0",
+      "reason": "The letter 'c' is replaced by 'e', which changes the intended letter being referenced. In the context of spelling or letter clarification, this is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'de' at position 1",
+      "reason": "'de' is omitted, which removes the clarifying phrase that helps identify the letter. This makes the transcription incomplete and less clear.",
       "score": 1
     }
   ]

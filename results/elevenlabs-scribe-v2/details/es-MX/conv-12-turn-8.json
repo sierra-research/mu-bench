@@ -2,14 +2,25 @@
   "gold": "Es 55 1 2 3 4 56 78.",
   "predicted": "Este, 55, un, dos, tres, cuatro, 56, 78",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Es 55 1 2 3 4 56 78.",
-  "werNormalizedPredicted": "Es 55 1 2 3 4 56 78.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Es 55 1 2 3 4 56 78.",
-  "sigWerNormalizedPredicted": "Es 55 1 2 3 4 56 78.",
-  "sigWerErrors": []
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "es cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "este cincuenta y cinco un dos tres cuatro cincuenta y seis setenta y ocho",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "es cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "este cincuenta y cinco un dos tres cuatro cincuenta y seis setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'este' at position 0",
+      "reason": "'es' means 'is', while 'este' means 'this'; this changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'uno' to 'un' at position 4",
+      "reason": "'uno' is the number 'one', while 'un' is the indefinite article 'a/an'; in a sequence of numbers, this is a significant error.",
+      "score": 1
+    }
+  ]
 }

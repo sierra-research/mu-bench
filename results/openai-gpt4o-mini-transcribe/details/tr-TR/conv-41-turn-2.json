@@ -1,0 +1,31 @@
+{
+  "gold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "predicted": "Tamam. Kredi kartınla ilgili bir talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "unintelligible": false,
+  "wer": 0.23529411764705882,
+  "werNormalizedGold": "tamam kredi karti ile ilgili bir limit artisi talebim var onu yapmak istiyorum yardimci olur musun bana",
+  "werNormalizedPredicted": "tamam kredi kartinla ilgili bir talebim var onu yapmak istiyorum yardimci olur musun bana",
+  "qualityScore": null,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "tamam kredi karti ile ilgili bir limit artisi talebim var onu yapmak istiyorum yardimci olur musun bana",
+  "sigWerNormalizedPredicted": "tamam kredi kartinla ilgili bir talebim var onu yapmak istiyorum yardimci olur musun bana",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'karti' to 'kartinla' at position 2",
+      "reason": "'karti' (your card) and 'kartinla' (with your card) are different forms, but in this context, 'kartinla ilgili' (about your card) is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ile' at position 3",
+      "reason": "The word 'ile' (with) is omitted, but 'kartinla' already includes the meaning of 'with your card', so the omission does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'limit' at position 6",
+      "reason": "Omitting 'limit' (limit) removes the specific request for a limit increase, which is a significant part of the intent. This changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

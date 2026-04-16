@@ -1,21 +1,36 @@
 {
   "gold": "Để mình ghi lại nhá. C N 3 9 0 7, đúng không? C N.",
-  "predicted": "",
+  "predicted": "Để mình ghi lại nhé. Tn ba trăm chín mươi bảy đúng không?",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Để mình ghi lại nhá. C N 3 9 0 7, đúng không? C N.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 1,
+  "wer": 0.4,
+  "werNormalizedGold": "để mình ghi lại nhá c n ba chín không bảy đúng không c n",
+  "werNormalizedPredicted": "để mình ghi lại nhé t n ba trăm chín mươi bảy đúng không",
+  "qualityScore": null,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Để mình ghi lại nhá. C N 3 9 0 7, đúng không? C N.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "để mình ghi lại nhá c n ba chín không bảy đúng không c n",
+  "sigWerNormalizedPredicted": "để mình ghi lại nhé t n ba trăm chín mươi bảy đúng không",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Để' at position 0",
-      "reason": "The entire expected sentence is missing from the actual transcription, resulting in a complete loss of information and meaning.",
+      "error": "Substitution: 'nhá' to 'nhé' at position 4",
+      "reason": "'nhá' and 'nhé' are both Vietnamese sentence-ending particles with similar pragmatic meaning; the substitution does not change the overall meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'trăm' at position 8",
+      "reason": "'trăm' means 'hundred', which changes the number being referred to from 'ba chín không bảy' (397) to 'ba trăm chín mươi bảy' (397); this is a significant change in meaning.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'không' to 'mươi' at position 9",
+      "reason": "'không' means 'zero' and 'mươi' means 'ten', which alters the number being transcribed; this is a significant error as it changes the intended number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'c' at position 13",
+      "reason": "'c' is likely an initial for a name or code; omitting it could cause confusion or loss of information, but does not necessarily derail the whole meaning if context is clear. However, if it is a code or identifier, it could be significant.",
+      "score": 2
     }
   ]
 }

@@ -1,31 +1,36 @@
 {
   "gold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
-  "predicted": "Anna'yı istemek istemesi istiyorum. Son senenin iki bin yirmi dört yılının Ocak Aralık arasında kesmek istemesi istiyorum.",
+  "predicted": "Anlayışa bekçisi istiyorum. Son senenin iki bin yirmi dört yılının Ocak-Aralık arasında kesmek istesini istiyorum.",
   "unintelligible": false,
-  "wer": 0.6428571428571429,
-  "werNormalizedGold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
-  "werNormalizedPredicted": "Anna'yı istemek istemesi istiyorum. Son senenin 2024 yılının Ocak Aralık arasında kesmek istemesi istiyorum.",
-  "qualityScore": 2,
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
-  "sigWerNormalizedPredicted": "Anna'yı istemek istemesi istiyorum. Son senenin 2024 yılının Ocak Aralık arasında kesmek istemesi istiyorum.",
+  "wer": 0.4117647058823529,
+  "werNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
+  "werNormalizedPredicted": "anlayışa bekçisi istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasında kesmek istesini istiyorum",
+  "qualityScore": null,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
+  "sigWerNormalizedPredicted": "anlayışa bekçisi istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasında kesmek istesini istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna,' to 'Anna'yı' at position 0",
-      "reason": "'Anna,' is a direct address, while 'Anna'yı' means 'Anna' as an object (accusative case), which changes the grammatical role and meaning of the sentence.",
+      "error": "Substitution: 'anna' to 'anlayışa' at position 0",
+      "reason": "'anna' is a proper noun (likely a name), while 'anlayışa' means 'to understanding' in Turkish. This changes the subject and meaning of the sentence completely.",
       "score": 1
     },
     {
-      "error": "Substitution: 'seneni,' to 'senenin' at position 5",
-      "reason": "'seneni' is a typo or mishearing for 'senenin' (of the year), but the intended meaning is still clear in context.",
-      "score": 2
+      "error": "Deletion: 'ekstresi' at position 2",
+      "reason": "'ekstresi' means 'statement' (as in bank statement), and its omission removes a key part of the request, making the sentence unclear.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'ocak' to 'Ocak' at position 8",
-      "reason": "Only a difference in capitalization, which does not affect meaning.",
+      "error": "Substitution: 'seneni' to 'senenin' at position 5",
+      "reason": "This is a minor grammatical correction in Turkish ('seneni' is a typo for 'senenin', meaning 'of the year'). The meaning is preserved.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'arasındaki' to 'arasında' at position 13",
+      "reason": "'arasındaki' means 'between', while 'arasında' means 'among' or 'in between'. In this context, the meaning is only slightly changed and the intent is still clear.",
+      "score": 2
     }
   ]
 }

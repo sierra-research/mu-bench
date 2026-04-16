@@ -3,18 +3,23 @@
   "predicted": "¿Me puedes dar otra vez el el número de cuenta el tracking number, por favor?",
   "unintelligible": false,
   "wer": 0.25,
-  "werNormalizedGold": "¿Me puedes dar otra vez el número, el tracking number, por favor?",
-  "werNormalizedPredicted": "¿Me puedes dar otra vez el número de cuenta, el tracking number, por favor?",
-  "qualityScore": 2,
+  "werNormalizedGold": "me puedes dar otra vez el numero el tracking number por favor",
+  "werNormalizedPredicted": "me puedes dar otra vez el el numero de cuenta el tracking number por favor",
+  "qualityScore": null,
   "significantWer": 0.08333333333333333,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "¿Me puedes dar otra vez el número, el tracking number, por favor?",
-  "sigWerNormalizedPredicted": "¿Me puedes dar otra vez el número de cuenta, el tracking number, por favor?",
+  "sigWerNormalizedGold": "me puedes dar otra vez el numero el tracking number por favor",
+  "sigWerNormalizedPredicted": "me puedes dar otra vez el el numero de cuenta el tracking number por favor",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'número,' to 'cuenta,' at position 6",
-      "reason": "'de cuenta' adds a new concept (account number) that was not present in the original sentence, potentially confusing the meaning by asking for a different number than intended.",
+      "error": "Insertion: 'el' at position 6",
+      "reason": "The extra 'el' is a minor repetition and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'de' at position 7",
+      "reason": "The insertion of 'de cuenta' changes the meaning from asking for a tracking number to asking for an account number, which is a significant error.",
       "score": 1
     }
   ]

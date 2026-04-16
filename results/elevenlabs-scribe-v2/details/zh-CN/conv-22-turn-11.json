@@ -1,21 +1,26 @@
 {
   "gold": "还是不对呀。",
-  "predicted": "嗯，确实不对啊。",
+  "predicted": "嗯。确实不对啊。",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "还是不对呀。",
-  "werNormalizedPredicted": "嗯，确实不对呀。",
-  "qualityScore": 2,
+  "wer": 0.6,
+  "werNormalizedGold": "还是不对呀",
+  "werNormalizedPredicted": "确实不对啊",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "还 是 不 对 呀 。",
-  "sigWerNormalizedPredicted": "嗯 ， 确 实 不 对 呀 。",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "还 是 不 对 呀",
+  "sigWerNormalizedPredicted": "确 实 不 对 啊",
   "sigWerErrors": [
     {
       "error": "Substitution: '还' to '确' at position 0",
-      "reason": "'嗯' is a filler word meaning 'um' or 'well', which does not change the meaning of the sentence.",
+      "reason": "'还' (still/yet) and '确' (indeed/certainly) have different meanings and change the nuance of the sentence, but the overall meaning ('not correct') is still conveyed. This is a minor error.",
       "score": 2
+    },
+    {
+      "error": "Substitution: '呀' to '啊' at position 4",
+      "reason": "'呀' and '啊' are both sentence-ending particles in Chinese and are often interchangeable in casual speech, with little to no change in meaning.",
+      "score": 3
     }
   ]
 }

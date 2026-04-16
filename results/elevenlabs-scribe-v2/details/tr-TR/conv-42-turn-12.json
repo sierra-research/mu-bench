@@ -1,36 +1,31 @@
 {
   "gold": "Hayır beni dinle. Tam olarak söylemem lazım. Beni sonuna kadar dinle. Adresimi tekrar söylüyorum Anna.",
-  "predicted": "Hayır, beni dinle. Sonuç tam olarak söylemem lazım. Beni sonuna kadar dinle. Adre-adresi tekrar söylüyorum anladın mı?",
+  "predicted": "Hayır, beni dinle. Sonuç tam olarak söylemem lazım. Beni sonuna kadar dinle. Adresi tekrar söylüyorum anladın mı?",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "Hayır beni dinle. Tam olarak söylemem lazım. Beni sonuna kadar dinle. Adresimi tekrar söylüyorum Anna.",
-  "werNormalizedPredicted": "Hayır, beni dinle. Sonuç tam olarak söylemem lazım. Beni sonuna kadar dinle. Adre-adresi tekrar söylüyorum anladın mı?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.26666666666666666,
+  "werNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
+  "werNormalizedPredicted": "hayır beni dinle sonuç tam olarak söylemem lazım beni sonuna kadar dinle adresi tekrar söylüyorum anladın mı",
+  "qualityScore": null,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Hayır beni dinle. Tam olarak söylemem lazım. Beni sonuna kadar dinle. Adresimi tekrar söylüyorum Anna.",
-  "sigWerNormalizedPredicted": "Hayır, beni dinle. Sonuç tam olarak söylemem lazım. Beni sonuna kadar dinle. Adre-adresi tekrar söylüyorum anladın mı?",
+  "sigWerNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
+  "sigWerNormalizedPredicted": "hayır beni dinle sonuç tam olarak söylemem lazım beni sonuna kadar dinle adresi tekrar söylüyorum anladın mı",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "Difference is only punctuation (comma), which does not affect meaning.",
-      "score": 3
+      "error": "Insertion: 'sonuç' at position 3",
+      "reason": "'sonuç' (meaning 'result') is inserted and changes the meaning of the sentence, making it incoherent in context.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'Tam' to 'tam' at position 3",
-      "reason": "The word 'Sonuç' (meaning 'result') is inserted and interrupts the flow, but the overall meaning of the sentence is still understandable.",
+      "error": "Substitution: 'adresimi' to 'adresi' at position 11",
+      "reason": "'adresimi' (my address) is changed to 'adresi' (the address), which is a minor grammatical error but does not significantly change the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'Adresimi' to 'Adre-adresi' at position 11",
-      "reason": "Difference is only capitalization, which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'Anna.' to 'mı?' at position 14",
-      "reason": "'Adre-adresi' is a stuttered or repeated form of 'adresimi', but the meaning is still clear.",
-      "score": 3
+      "error": "Substitution: 'anna' to 'mı' at position 14",
+      "reason": "The insertion of 'anladın' (did you understand) adds a new question to the end, which changes the intent of the sentence.",
+      "score": 1
     }
   ]
 }

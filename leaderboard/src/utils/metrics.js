@@ -39,7 +39,11 @@ export const METRICS = {
     },
 };
 
+export const SHOW_QUALITY = false;
+
 export const METRIC_KEYS = Object.keys(METRICS);
+
+export const VISIBLE_METRIC_KEYS = SHOW_QUALITY ? METRIC_KEYS : METRIC_KEYS.filter((k) => k !== "qualityScore");
 
 export function getSortDirection(metricKey) {
     return METRICS[metricKey].lowerIsBetter ? "asc" : "desc";

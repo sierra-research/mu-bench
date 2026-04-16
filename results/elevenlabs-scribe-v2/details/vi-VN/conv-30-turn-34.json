@@ -1,21 +1,26 @@
 {
   "gold": "Qua ứng dụng đi.",
-  "predicted": "À, tôi ăn giùm đi",
+  "predicted": "Ờ, quán giống đi",
   "unintelligible": false,
-  "wer": 1.25,
-  "werNormalizedGold": "Qua ứng dụng đi.",
-  "werNormalizedPredicted": "À, tôi ăn giùm đi",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.75,
+  "werNormalizedGold": "qua ứng dụng đi",
+  "werNormalizedPredicted": "quán giống đi",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Qua ứng dụng đi.",
-  "sigWerNormalizedPredicted": "À, tôi ăn giùm đi",
+  "sigWerNormalizedGold": "qua ứng dụng đi",
+  "sigWerNormalizedPredicted": "quán giống đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Qua' to 'tôi' at position 0",
-      "reason": "The insertion of 'À,' adds an interjection that does not change the core meaning, but it is not present in the expected sentence. This is a minor error.",
-      "score": 2
+      "error": "Substitution: 'qua' to 'quán' at position 0",
+      "reason": "'quán' (shop/restaurant) is a completely different word from 'qua' (through/via), which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dụng' at position 2",
+      "reason": "Omitting 'dụng' (from 'ứng dụng' meaning 'application/app') removes the reference to the app, making the sentence unclear and changing its meaning.",
+      "score": 1
     }
   ]
 }

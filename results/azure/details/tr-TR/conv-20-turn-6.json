@@ -1,26 +1,31 @@
 {
   "gold": "Yalnız bir dakika. Adımın ikinci harfi yanlış oldu. Zeynep değil, Zaynep.",
-  "predicted": "Yalnız bir rak adımın ikinci harfi yanlış oldu. Zeynep değil Zeynep.",
+  "predicted": "Yalnız bir rakı adımın ikinci harfi yanlış olduğu Zeynep değil Zeynep.",
   "unintelligible": false,
   "wer": 0.2727272727272727,
-  "werNormalizedGold": "Yalnız bir dakika. Adımın ikinci harfi yanlış oldu. Zeynep değil, Zaynep.",
-  "werNormalizedPredicted": "Yalnız bir rak. Adımın ikinci harfi yanlış oldu. Zeynep değil Zeynep.",
-  "qualityScore": 2,
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
+  "werNormalizedPredicted": "yalnız bir rakı adımın ikinci harfi yanlış olduğu zeynep değil zeynep",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Yalnız bir dakika. Adımın ikinci harfi yanlış oldu. Zeynep değil, Zaynep.",
-  "sigWerNormalizedPredicted": "Yalnız bir rak. Adımın ikinci harfi yanlış oldu. Zeynep değil Zeynep.",
+  "sigWerNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
+  "sigWerNormalizedPredicted": "yalnız bir rakı adımın ikinci harfi yanlış olduğu zeynep değil zeynep",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dakika.' to 'rak.' at position 2",
-      "reason": "'rak' is not a word in this context and replaces 'dakika' (minute), which makes the sentence incoherent and changes the meaning significantly.",
+      "error": "Substitution: 'dakika' to 'rakı' at position 2",
+      "reason": "'dakika' (minute) and 'rakı' (a type of alcoholic drink) are completely different words and this substitution changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'değil,' to 'değil' at position 9",
-      "reason": "The only difference is the missing comma, which is punctuation and should be ignored.",
-      "score": 3
+      "error": "Substitution: 'oldu' to 'olduğu' at position 7",
+      "reason": "The difference between 'oldu' (became/happened) and 'olduğu' (that is/which is) is minor in this context and does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 10",
+      "reason": "The distinction between 'zaynep' and 'zeynep' is the main point of the sentence, as it is about the correct spelling of the name. Using the wrong spelling here is a significant error.",
+      "score": 1
     }
   ]
 }

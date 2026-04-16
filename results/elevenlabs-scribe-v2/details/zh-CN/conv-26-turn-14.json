@@ -1,20 +1,25 @@
 {
   "gold": "你为什么听不懂我？",
-  "predicted": "你为什么听不到我？",
+  "predicted": "你为什么这么不照顾我？",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werNormalizedGold": "你为什么听不懂我？",
-  "werNormalizedPredicted": "你为什么听不到我？",
-  "qualityScore": 2,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "你 为 什 么 听 不 懂 我 ？",
-  "sigWerNormalizedPredicted": "你 为 什 么 听 不 到 我 ？",
+  "wer": 0.5,
+  "werNormalizedGold": "你 为什么 听 不 懂 我",
+  "werNormalizedPredicted": "你 为什么 这么 不 照顾 我",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "你 为 什 么 听 不 懂 我",
+  "sigWerNormalizedPredicted": "你 为 什 么 这 么 不 照 顾 我",
   "sigWerErrors": [
     {
-      "error": "Substitution: '懂' to '到' at position 6",
-      "reason": "'懂' means 'understand' and '到' means 'hear'. Substituting '不懂' (do not understand) with '不到' (cannot hear) changes the meaning of the sentence significantly.",
+      "error": "Substitution: '听' to '么' at position 4",
+      "reason": "The insertion of '这' (this) changes the meaning from 'why don't you understand me' to 'why are you so not caring for me', which is a significant change in intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '懂' to '顾' at position 6",
+      "reason": "Replacing '听' (listen/understand) with '么' (a modal particle) disrupts the original meaning and contributes to a different sentence structure.",
       "score": 1
     }
   ]

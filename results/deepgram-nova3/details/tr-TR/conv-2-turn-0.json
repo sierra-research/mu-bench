@@ -1,31 +1,31 @@
 {
   "gold": "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
-  "predicted": "Merhaba, son hesap ekstresi mi bir kopyasına ihtiyacım vardı?",
+  "predicted": "Merhaba, son hesap ekstresinin bir kopyasına ihtiyacım vardı.",
   "unintelligible": false,
   "wer": 0.375,
-  "werNormalizedGold": "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
-  "werNormalizedPredicted": "Merhaba, son hesap ekstresinin bir kopyasına ihtiyacım vardı.",
-  "qualityScore": 3,
+  "werNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
+  "werNormalizedPredicted": "merhaba son hesap ekstresinin bir kopyasina ihtiyacim vardi",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
-  "sigWerNormalizedPredicted": "Merhaba, son hesap ekstresinin bir kopyasına ihtiyacım vardı.",
+  "sigWerNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
+  "sigWerNormalizedPredicted": "merhaba son hesap ekstresinin bir kopyasina ihtiyacim vardi",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 4",
-      "reason": "Adding 'bir' (meaning 'a') before 'kopyasına' ('copy') is a minor grammatical difference and does not change the overall meaning of the sentence.",
+      "reason": "'bir' (meaning 'a' or 'one') adds specificity but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'var' to 'vardi' at position 6",
+      "reason": "Present tense 'var' (there is) vs. past tense 'vardi' (there was); the intent remains clear and the meaning is not significantly changed in this context.",
       "score": 3
     },
     {
-      "error": "Substitution: 'var' to 'vardı.' at position 6",
-      "reason": "Changing 'var' (present tense 'there is') to 'vardı' (past tense 'there was') is a minor tense shift, but the request is still clear and the meaning is preserved in context.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'da.' at position 7",
-      "reason": "Omitting 'da' (which adds emphasis or a slight nuance) does not significantly alter the meaning of the sentence.",
-      "score": 3
+      "error": "Deletion: 'da' at position 7",
+      "reason": "'da' is a discourse particle in Turkish that adds emphasis or continuation, but its omission does not change the core meaning of the sentence.",
+      "score": 2
     }
   ]
 }

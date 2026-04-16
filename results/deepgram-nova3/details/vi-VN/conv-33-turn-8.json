@@ -1,45 +1,45 @@
 {
   "gold": "Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ?",
-  "predicted": "Bạn Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy Bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ?",
+  "predicted": "Bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy. Bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ?",
   "unintelligible": false,
-  "wer": 0.2571428571428571,
-  "werNormalizedGold": "Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ?",
-  "werNormalizedPredicted": "Bạn, tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy. Bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ?",
-  "qualityScore": 3,
+  "wer": 0.2,
+  "werNormalizedGold": "tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ",
+  "werNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 35,
-  "sigWerNormalizedGold": "Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ?",
-  "sigWerNormalizedPredicted": "Bạn, tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy. Bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ?",
+  "sigWerNormalizedGold": "tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ",
+  "sigWerNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "The insertion of 'Bạn,' at the beginning adds a direct address but does not change the meaning of the sentence.",
+      "error": "Insertion: 'bạn' at position 0",
+      "reason": "Adding 'bạn' (you/friend) at the start does not change the main meaning, just adds a conversational address.",
       "score": 2
     },
     {
-      "error": "Substitution: 'dụng.' to 'ấy.' at position 10",
-      "reason": "Difference in capitalization only, which does not affect meaning.",
-      "score": 3
+      "error": "Insertion: 'ấy' at position 11",
+      "reason": "Adding 'ấy' (that) after 'thẻ tín dụng' is a minor conversational filler, does not change the meaning.",
+      "score": 2
     },
     {
       "error": "Insertion: 'là' at position 15",
-      "reason": "The word 'ấy' is a discourse particle in Vietnamese, adding emphasis but not changing the core meaning.",
+      "reason": "Adding 'là' (is) before 'cái điều kiện' is a minor grammatical filler, does not affect the meaning.",
       "score": 2
     },
     {
       "error": "Insertion: 'cả' at position 18",
-      "reason": "'ấy.' is added after 'thẻ tín dụng', but 'dụng.' is not replaced; this is more of an insertion than a substitution. No actual substitution error here.",
-      "score": 3
+      "reason": "Adding 'cả' (also/and) before 'quy trình' is a minor conversational addition, does not change the meaning.",
+      "score": 2
     },
     {
       "error": "Insertion: 'là' at position 22",
-      "reason": "The insertion of 'là' (meaning 'is/that') is a filler and does not change the meaning.",
+      "reason": "Adding 'là' (is) before 'tôi cần cung cấp' is a minor grammatical filler, does not affect the meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'các' to 'cái' at position 26",
-      "reason": "The word 'cả' (meaning 'also/with') adds emphasis but does not change the meaning.",
+      "reason": "'các' (plural marker) and 'cái' (classifier) are both function words here; the substitution does not change the meaning of 'giấy tờ' (documents).",
       "score": 2
     }
   ]

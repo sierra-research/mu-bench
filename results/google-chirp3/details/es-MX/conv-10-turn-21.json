@@ -1,30 +1,25 @@
 {
   "gold": "No, email. E M A I L.",
-  "predicted": "en vez No, M M A I L.",
+  "predicted": "M No, M M A I L.",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werNormalizedGold": "No, email. E M A I L.",
-  "werNormalizedPredicted": "En vez No, M M A I L.",
-  "qualityScore": 1,
-  "significantWer": 0.42857142857142855,
-  "majorErrorsCount": 3,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "no email e m a i l",
+  "werNormalizedPredicted": "no m m a i l",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "No, email. E M A I L.",
-  "sigWerNormalizedPredicted": "En vez No, M M A I L.",
+  "sigWerNormalizedGold": "no email e m a i l",
+  "sigWerNormalizedPredicted": "no m m a i l",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'En' at position 0",
-      "reason": "'En' is a Spanish word inserted at the beginning, which is not present in the expected English sentence. This changes the language context and can confuse the meaning.",
+      "error": "Substitution: 'email' to 'm' at position 1",
+      "reason": "'email' is replaced by 'm', which is not a word and loses the intended meaning of the sentence. This makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'email.' to 'M' at position 1",
-      "reason": "'vez' is another Spanish word inserted, further shifting the language and making the sentence incoherent in English.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'E' at position 2",
-      "reason": "The word 'email.' is replaced with 'M', which loses the intended meaning and makes the sentence unclear.",
+      "error": "Deletion: 'e' at position 2",
+      "reason": "The letter 'e' is missing from the spelled-out sequence of 'email', which changes the spelling and makes it incorrect. This is a significant error for a spelled-out word.",
       "score": 1
     }
   ]

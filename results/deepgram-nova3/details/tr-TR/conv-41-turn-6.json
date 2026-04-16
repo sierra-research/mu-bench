@@ -2,14 +2,25 @@
   "gold": "K G mi K B mi?",
   "predicted": "KGM mi KB mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "K G mi K B mi?",
-  "werNormalizedPredicted": "K G mi K B mi?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "K G mi K B mi?",
-  "sigWerNormalizedPredicted": "K G mi K B mi?",
-  "sigWerErrors": []
+  "wer": 0.25,
+  "werNormalizedGold": "k g m i k b m i",
+  "werNormalizedPredicted": "k g m m i k b m m i",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "k g m i k b m i",
+  "sigWerNormalizedPredicted": "k g m m i k b m m i",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'm' at position 3",
+      "reason": "An extra letter in a spelled-out sequence changes the intended sequence, making the result incorrect and potentially unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'm' at position 6",
+      "reason": "Another extra letter in a spelled-out sequence further alters the intended sequence, making the result significantly different from the expected spelling.",
+      "score": 1
+    }
+  ]
 }

@@ -1,15 +1,26 @@
 {
   "gold": "İyi günler.",
-  "predicted": "İyi günler.",
+  "predicted": "İyiler.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "İyi günler.",
-  "werNormalizedPredicted": "İyi günler.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "iyi gunler",
+  "werNormalizedPredicted": "iyiler",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "İyi günler.",
-  "sigWerNormalizedPredicted": "İyi günler.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "iyi gunler",
+  "sigWerNormalizedPredicted": "iyiler",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'iyiler' at position 0",
+      "reason": "'iyiler' is a plural form and not a direct equivalent of 'iyi', and the phrase 'iyi gunler' is a standard greeting meaning 'good day(s)'. Changing it to 'iyiler' ('the good ones') makes the phrase lose its intended meaning as a greeting.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'gunler' at position 1",
+      "reason": "Omitting 'gunler' removes the core of the greeting 'iyi gunler', making the phrase incomplete and changing its meaning entirely.",
+      "score": 1
+    }
+  ]
 }

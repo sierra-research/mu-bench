@@ -171,8 +171,8 @@ export default function PaperAudioSamples() {
                         onPause={() => setPlaying(false)}
                         onEnded={() => setPlaying(false)}
                     />
-                    <div className={`as-player ${playing ? "as-player--on" : ""}`} onClick={toggle}>
-                        <button className="as-play" aria-label={playing ? "Pause" : "Play"}>
+                    <div className={`as-player ${playing ? "as-player--on" : ""}`}>
+                        <button className="as-play" onClick={toggle} aria-label={playing ? "Pause" : "Play"}>
                             {playing ? "\u23F8" : "\u25B6"}
                         </button>
                         <canvas className="as-canvas" ref={canvasRef} />

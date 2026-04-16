@@ -1,0 +1,36 @@
+{
+  "gold": "E-posta adresim ve numaramda yanlışlık var. E-posta adresim Zeynep nokta Arslan at email nokta com. Numaram ise 90 123 0 90 45 67.",
+  "predicted": "E-posta adresimle numaramda yanlışlık var. E-posta adresim zeynep.arslan@email.com. Numaramsa 90-123-090-4567.",
+  "unintelligible": false,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "e posta adresimle numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaramsa doksan sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "e posta adresimle numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaramsa doksan sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adresim' to 'adresimle' at position 2",
+      "reason": "'adresimle' means 'with my email address', while 'adresim' means 'my email address'. The addition of 'le' (with) is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 've' at position 3",
+      "reason": "Omitting 've' ('and') slightly changes the sentence structure but does not affect the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'numaram' to 'numaramsa' at position 17",
+      "reason": "'numaramsa' is a contraction of 'numaram ise' (my number is), so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ise' at position 18",
+      "reason": "'ise' is incorporated into 'numaramsa' as a contraction, so its deletion is not an error.",
+      "score": 3
+    }
+  ]
+}

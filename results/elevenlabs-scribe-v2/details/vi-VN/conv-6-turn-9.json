@@ -2,14 +2,25 @@
   "gold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Số điện gọi là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện gọi là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện gọi là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thoại' to 'gọi' at position 2",
+      "reason": "'thoại' means 'number' or 'phone' in the context of 'số điện thoại' (phone number), while 'gọi' means 'call'. This changes the meaning of the phrase from 'phone number' to 'call number', which is incorrect and derails the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 7",
+      "reason": "In Vietnamese, 'bốn' and 'tư' both mean 'four' and are interchangeable in this context. The meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

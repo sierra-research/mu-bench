@@ -1,20 +1,25 @@
 {
   "gold": "Rồi. Sẵn sàng.",
-  "predicted": "Rồi.",
+  "predicted": "Ừ.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Rồi. Sẵn sàng.",
-  "werNormalizedPredicted": "Rồi.",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "roi san sang",
+  "werNormalizedPredicted": "u",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Rồi. Sẵn sàng.",
-  "sigWerNormalizedPredicted": "Rồi.",
+  "sigWerNormalizedGold": "roi san sang",
+  "sigWerNormalizedPredicted": "u",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Sẵn' at position 1",
-      "reason": "The phrase 'Sẵn sàng.' (meaning 'Ready.') is omitted, which removes important information about readiness. The omission changes the meaning of the sentence, as the response is incomplete without confirming readiness.",
+      "error": "Substitution: 'roi' to 'u' at position 0",
+      "reason": "'u' is completely different from 'roi', and does not preserve the meaning or context of the original phrase. The sentence becomes incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'san' at position 1",
+      "reason": "'san' is missing, which removes a key part of the expected phrase and further derails the meaning.",
       "score": 1
     }
   ]

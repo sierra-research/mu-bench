@@ -2,40 +2,30 @@
   "gold": "Hola, este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema, no no saqué el dinero pero si me lo descontó de mi cuenta.",
   "predicted": "Hola, este es que estoy en estoy en el banco y pues estaba intentando sacar dinero del cajero, pero hubo un problema, no saqué el dinero, pero sí me lo descontó de mi cuenta.",
   "unintelligible": false,
-  "wer": 0.1875,
-  "werNormalizedGold": "Hola, este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema, no no saqué el dinero pero si me lo descontó de mi cuenta.",
-  "werNormalizedPredicted": "Hola, este es que estoy en estoy en el banco y estaba intentando sacar dinero del cajero, pero hubo un problema, no saqué el dinero, pero sí me lo descontó de mi cuenta.",
-  "qualityScore": 3,
-  "significantWer": 0.03125,
-  "majorErrorsCount": 1,
+  "wer": 0.125,
+  "werNormalizedGold": "hola este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saque el dinero pero si me lo desconto de mi cuenta",
+  "werNormalizedPredicted": "hola este es que estoy en estoy en el banco y pues estaba intentando sacar dinero del cajero pero hubo un problema no saque el dinero pero si me lo desconto de mi cuenta",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 32,
-  "sigWerNormalizedGold": "Hola, este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema, no no saqué el dinero pero si me lo descontó de mi cuenta.",
-  "sigWerNormalizedPredicted": "Hola, este es que estoy en estoy en el banco y estaba intentando sacar dinero del cajero, pero hubo un problema, no saqué el dinero, pero sí me lo descontó de mi cuenta.",
+  "sigWerNormalizedGold": "hola este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saque el dinero pero si me lo desconto de mi cuenta",
+  "sigWerNormalizedPredicted": "hola este es que estoy en estoy en el banco y pues estaba intentando sacar dinero del cajero pero hubo un problema no saque el dinero pero si me lo desconto de mi cuenta",
   "sigWerErrors": [
     {
       "error": "Insertion: 'estoy' at position 6",
-      "reason": "The repeated phrase 'estoy en' is a minor repetition and does not change the overall meaning of the sentence.",
+      "reason": "The repeated phrase 'estoy en' is redundant but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'cajero' to 'cajero,' at position 14",
-      "reason": "Difference is only punctuation, which should be ignored.",
+      "error": "Insertion: 'pues' at position 9",
+      "reason": "The word 'pues' is a filler and does not affect the meaning of the sentence.",
       "score": 3
     },
     {
-      "error": "Deletion: 'no' at position 20",
-      "reason": "The missing 'no' removes a negation, which changes the meaning of the sentence regarding whether the money was withdrawn.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'dinero' to 'dinero,' at position 23",
-      "reason": "Difference is only punctuation, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'si' to 'sí' at position 25",
-      "reason": "The difference is the accent mark, but in Spanish 'si' (if) and 'sí' (yes) have different meanings. In this context, 'sí' is correct and matches the intended meaning, so this is not an error.",
-      "score": 3
+      "error": "Deletion: 'no' at position 19",
+      "reason": "Omitting the second 'no' removes emphasis but does not change the essential meaning of the sentence.",
+      "score": 2
     }
   ]
 }

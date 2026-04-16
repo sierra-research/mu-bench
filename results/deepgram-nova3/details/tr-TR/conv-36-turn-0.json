@@ -1,15 +1,26 @@
 {
   "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "predicted": "Anna Hanım merhabalar, şimdi şöyle ben kredi kartıma dair ekstrem'in bir kopyasını istiyorum ya da ekstrem'in bir dökümünü istiyorum daha doğrusu.",
+  "predicted": "Anladım merhabalar, şimdi şöyle, ben kredi kartıma dair ekstrem'in bir kopyasını istiyorum ya da ekstrem'in bir dökümünü istiyorum daha doğrusu.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "werNormalizedPredicted": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.09523809523809523,
+  "werNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anladım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
+  "qualityScore": null,
+  "significantWer": 0.047619047619047616,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "sigWerNormalizedPredicted": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anladım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anladım' at position 0",
+      "reason": "'anna' is a name/addressing the person, while 'anladım' means 'I understand'; this changes the meaning and context of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam'), and its omission reduces the politeness and changes the tone, but the main request remains understandable.",
+      "score": 2
+    }
+  ]
 }

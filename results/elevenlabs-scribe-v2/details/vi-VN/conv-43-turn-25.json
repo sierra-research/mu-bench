@@ -1,21 +1,26 @@
 {
   "gold": "Đúng vậy.",
-  "predicted": "Đúng rồi",
+  "predicted": "Dubai",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Đúng vậy.",
-  "werNormalizedPredicted": "Đúng rồi.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "dung vay",
+  "werNormalizedPredicted": "dubai",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Đúng vậy.",
-  "sigWerNormalizedPredicted": "Đúng rồi.",
+  "sigWerNormalizedGold": "dung vay",
+  "sigWerNormalizedPredicted": "dubai",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'vậy.' to 'rồi.' at position 1",
-      "reason": "'Vậy' and 'rồi' are both used in Vietnamese to affirm or confirm something, but 'vậy' means 'that's right' or 'correct', while 'rồi' means 'already' or 'done'. The substitution slightly changes the nuance but does not derail the overall meaning of affirmation.",
-      "score": 2
+      "error": "Substitution: 'dung' to 'dubai' at position 0",
+      "reason": "'dubai' is a completely different word from 'dung', changing the meaning of the phrase entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'vay' at position 1",
+      "reason": "Omitting 'vay' further removes the intended meaning, making the actual transcription unrelated to the expected phrase.",
+      "score": 1
     }
   ]
 }

@@ -1,15 +1,21 @@
 {
   "gold": "Sí. El correo es María punto López arroba email punto com.",
-  "predicted": "Sí, el correo es maria.lopez@email.com",
+  "predicted": "Sí, el correo es maria.lopez@mi.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí. El correo es María punto López arroba email punto com.",
-  "werNormalizedPredicted": "Sí. El correo es María punto López arroba email punto com.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "si el correo es maria punto lopez arroba email punto com",
+  "werNormalizedPredicted": "si el correo es maria punto lopez arroba mi punto com",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Sí. El correo es María punto López arroba email punto com.",
-  "sigWerNormalizedPredicted": "Sí. El correo es María punto López arroba email punto com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "si el correo es maria punto lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "si el correo es maria punto lopez arroba mi punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'mi' at position 8",
+      "reason": "'email' is a generic email provider, while 'mi' is not a valid provider and changes the meaning of the email address, making it incorrect or unusable.",
+      "score": 1
+    }
+  ]
 }

@@ -1,21 +1,31 @@
 {
   "gold": "E-posta adresim Zaynep nokta Arslan at email nokta com.",
-  "predicted": "E posta adresim Zeynep arslan net email.com.",
+  "predicted": "E posta adresin Zeynep arslan net email.com.",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werNormalizedGold": "E-posta adresim Zaynep nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "E-posta adresim Zeynep nokta Arslan at email nokta com.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "E-posta adresim Zaynep nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "E-posta adresim Zeynep nokta Arslan at email nokta com.",
+  "wer": 0.3,
+  "werNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "e posta adresin zeynep arslan net email nokta com",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "e posta adresin zeynep arslan net email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Zaynep' to 'Zeynep' at position 2",
-      "reason": "Minor misspelling of a proper noun; the name is still easily recognizable and the meaning is not derailed.",
+      "error": "Substitution: 'adresim' to 'adresin' at position 2",
+      "reason": "'adresim' means 'my address' and 'adresin' means 'your address' in Turkish; this changes the reference from self to another person, which is a minor error as the overall meaning is still about an email address.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 4",
+      "reason": "Omitting 'nokta' (which means 'dot') in an email address changes the structure and could make the address invalid, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'net' at position 6",
+      "reason": "Replacing 'at' (the '@' symbol) with 'net' changes the domain structure of the email address, making it incorrect and unusable, which is a significant error.",
+      "score": 1
     }
   ]
 }

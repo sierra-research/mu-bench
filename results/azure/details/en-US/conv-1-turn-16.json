@@ -1,50 +1,35 @@
 {
   "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
-  "predicted": "6-7, I think that should be fine. Let's try to test transfer from you, and it doesn't work fine.",
+  "predicted": "6, 7, I think that should be fine. Let's try to transfer me from you right now and it doesn't work fine.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
-  "werNormalizedPredicted": "6 7. I think that should be fine. Let's try to test transfer from you, and it doesn't work fine.",
-  "qualityScore": 2,
-  "significantWer": 0.12,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 25,
-  "sigWerNormalizedGold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
-  "sigWerNormalizedPredicted": "6 7. I think that should be fine. Let's try to test transfer from you, and it doesn't work fine.",
+  "wer": 0.25,
+  "werNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
+  "werNormalizedPredicted": "six seven i think that should be fine let us try to transfer me from you right now and it does not work fine",
+  "qualityScore": null,
+  "significantWer": 0.07142857142857142,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 28,
+  "sigWerNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
+  "sigWerNormalizedPredicted": "six seven i think that should be fine let us try to transfer me from you right now and it does not work fine",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'You' at position 0",
-      "reason": "The phrase 'You know' is a discourse marker and its omission does not affect the main meaning of the sentence.",
+      "error": "Deletion: 'you' at position 0",
+      "reason": "The phrase 'you know' is a conversational filler and its omission does not change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'test' at position 13",
-      "reason": "Inserting 'test' changes the action from transferring to test transferring, which alters the intent of the sentence.",
+      "error": "Substitution: 'over' to 'you' at position 16",
+      "reason": "Inserting 'from' changes the meaning of the action being described (transfer me over vs transfer me from you), which could confuse the intent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'me' to 'from' at position 14",
-      "reason": "Changing 'transfer me over' to 'transfer from you' changes the subject and meaning of the transfer, which is a significant change.",
+      "error": "Deletion: 'if' at position 20",
+      "reason": "Replacing 'over' with 'you' alters the direction or recipient of the transfer, significantly changing the meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: 'right' at position 16",
-      "reason": "Omitting 'right now' removes the immediacy but does not significantly change the overall intent.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'if' at position 19",
-      "reason": "Omitting 'if' makes the sentence less clear and changes the conditional structure, which can confuse the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'work,' to 'work' at position 22",
-      "reason": "Punctuation difference only; no change in meaning.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'that's' at position 23",
-      "reason": "Omitting 'that's' from 'that's fine' to just 'fine' slightly reduces the politeness but does not change the meaning.",
+      "error": "Deletion: 'that' at position 25",
+      "reason": "Omitting 'if' removes the conditional structure, making the sentence less clear but the overall intent is still somewhat understandable.",
       "score": 2
     }
   ]

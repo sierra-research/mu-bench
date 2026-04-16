@@ -1,15 +1,26 @@
 {
   "gold": "嗯，我听清楚了。",
-  "predicted": "嗯，我听清楚了。",
+  "predicted": "嗯。哦，清醒住了。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "嗯，我听清楚了。",
-  "werNormalizedPredicted": "嗯，我听清楚了。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "嗯 ， 我 听 清 楚 了 。",
-  "sigWerNormalizedPredicted": "嗯 ， 我 听 清 楚 了 。",
-  "sigWerErrors": []
+  "wer": 0.8,
+  "werNormalizedGold": "我听清楚了",
+  "werNormalizedPredicted": "清醒住了",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "我 听 清 楚 了",
+  "sigWerNormalizedPredicted": "清 醒 住 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to '清' at position 0",
+      "reason": "The subject '我' (I) is replaced with '清' (clear), which changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '楚' at position 3",
+      "reason": "'楚' (clear/distinct) is missing, which further reduces the clarity and correctness of the sentence.",
+      "score": 1
+    }
+  ]
 }

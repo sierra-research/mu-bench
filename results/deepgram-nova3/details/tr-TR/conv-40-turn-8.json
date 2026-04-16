@@ -1,25 +1,20 @@
 {
   "gold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "predicted": "Hayır, Gmail değil. Email, email olarak yazacaksın. Email nokta com",
+  "predicted": "Hayır, Gmail değil. Email olarak yazacaksın. Email nokta com",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "werNormalizedPredicted": "Hayır, Gmail değil. Email olarak yazacaksın. Email nokta com.",
-  "qualityScore": 3,
+  "wer": 0.1,
+  "werNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "werNormalizedPredicted": "hayır gmail değil email olarak yazacaksın email nokta com",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "sigWerNormalizedPredicted": "Hayır, Gmail değil. Email olarak yazacaksın. Email nokta com.",
+  "sigWerNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "sigWerNormalizedPredicted": "hayır gmail değil email olarak yazacaksın email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'değil' to 'değil.' at position 2",
-      "reason": "The word 'email.' is omitted after 'Gmail değil', but the meaning of the sentence is still clear because 'email' is mentioned in the next sentence. The omission does not derail the overall meaning.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'email.' at position 3",
-      "reason": "infra_error",
+      "error": "Deletion: 'email' at position 4",
+      "reason": "The word 'email' is repeated in the expected transcript but missing in the actual. However, the overall meaning is preserved since 'email' is still present and the instruction is clear.",
       "score": 2
     }
   ]

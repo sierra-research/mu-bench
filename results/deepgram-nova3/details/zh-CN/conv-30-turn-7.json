@@ -2,24 +2,24 @@
   "gold": "不是邻居，是林俊，俊，俊。",
   "predicted": "不是邻居是邻居",
   "unintelligible": false,
-  "wer": 0.5384615384615384,
-  "werNormalizedGold": "不是邻居，是林俊，俊，俊。",
-  "werNormalizedPredicted": "不是邻居，是邻居",
-  "qualityScore": 1,
-  "significantWer": 0.15384615384615385,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "不是邻居是林俊俊俊",
+  "werNormalizedPredicted": "不是邻居是邻居",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
   "majorErrorsCount": 2,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "不 是 邻 居 ， 是 林 俊 ， 俊 ， 俊 。",
-  "sigWerNormalizedPredicted": "不 是 邻 居 ， 是 邻 居",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 俊",
+  "sigWerNormalizedPredicted": "不 是 邻 居 是 邻 居",
   "sigWerErrors": [
     {
-      "error": "Substitution: '林' to '邻' at position 6",
-      "reason": "'林' is a surname and '邻' means 'neighbor'; substituting a name for a common noun changes the meaning significantly, especially since the sentence is clarifying identity.",
+      "error": "Substitution: '林' to '邻' at position 5",
+      "reason": "'林' (a surname or name) is replaced with '邻' (neighbor), which changes the meaning of the sentence significantly, especially since it refers to a person's name versus a general noun.",
       "score": 1
     },
     {
-      "error": "Deletion: '，' at position 8",
-      "reason": "The repeated '俊' is part of the person's name and its omission removes the identification of the person, which is crucial to the sentence's meaning.",
+      "error": "Deletion: '俊' at position 7",
+      "reason": "The name '俊 俊 俊' is omitted, which removes the identification of the person being referred to, making the sentence incomplete and changing its meaning significantly.",
       "score": 1
     }
   ]

@@ -1,30 +1,25 @@
 {
   "gold": "Minh chấm trần a còng email chấm com.",
-  "predicted": "Minh. Cronggmail chấm com",
+  "predicted": "Minh. Ronggmail chấm com",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Minh. a còng gmail chấm com.",
-  "qualityScore": 1,
+  "wer": 0.625,
+  "werNormalizedGold": "minh cham tran a cong email cham com",
+  "werNormalizedPredicted": "minh ronggmail cham com",
+  "qualityScore": null,
   "significantWer": 0.25,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Minh. a còng gmail chấm com.",
+  "sigWerNormalizedGold": "minh cham tran a cong email cham com",
+  "sigWerNormalizedPredicted": "minh ronggmail cham com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Minh' to 'Minh.' at position 0",
-      "reason": "Difference is only punctuation, which should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'chấm' at position 1",
-      "reason": "Omitting 'chấm' (dot) in an email address changes the actual address, which can cause delivery failure. This is a significant error.",
+      "error": "Substitution: 'cham' to 'ronggmail' at position 1",
+      "reason": "'cham' is a separator (dot), while 'ronggmail' appears to be a misrecognition of an email username or domain, which changes the meaning and structure of the email address.",
       "score": 1
     },
     {
-      "error": "Substitution: 'email' to 'gmail' at position 5",
-      "reason": "Changing the domain from 'email' to 'gmail' changes the entire email address, which is a significant error as it leads to a different recipient.",
+      "error": "Deletion: 'tran' at position 2",
+      "reason": "Omitting 'tran' removes a key part of the email address, making the address incomplete and incorrect.",
       "score": 1
     }
   ]

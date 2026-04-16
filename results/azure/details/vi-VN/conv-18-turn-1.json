@@ -1,15 +1,26 @@
 {
   "gold": "Sẵn sàng.",
-  "predicted": "Sẵn sàng.",
+  "predicted": "Không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sẵn sàng.",
-  "werNormalizedPredicted": "Sẵn sàng.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "sẵn sàng",
+  "werNormalizedPredicted": "không",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Sẵn sàng.",
-  "sigWerNormalizedPredicted": "Sẵn sàng.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sẵn sàng",
+  "sigWerNormalizedPredicted": "không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sẵn' to 'không' at position 0",
+      "reason": "'sẵn sàng' means 'ready' while 'không' means 'no' or 'not', which completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 1",
+      "reason": "Omitting 'sàng' removes half of the phrase 'sẵn sàng', making the meaning incoherent and incomplete.",
+      "score": 1
+    }
+  ]
 }

@@ -1,26 +1,26 @@
 {
   "gold": "Sí, ahora sí.",
-  "predicted": "Sí, ahora",
+  "predicted": "y ahora",
   "unintelligible": false,
   "wer": 0.6666666666666666,
-  "werNormalizedGold": "Sí, ahora sí.",
-  "werNormalizedPredicted": "sí, ahora",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "si ahora si",
+  "werNormalizedPredicted": "y ahora",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Sí, ahora sí.",
-  "sigWerNormalizedPredicted": "sí, ahora",
+  "sigWerNormalizedGold": "si ahora si",
+  "sigWerNormalizedPredicted": "y ahora",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sí,' to 'sí,' at position 0",
-      "reason": "The final affirmation 'sí.' is missing, which could change the meaning from confirming twice to only once. This is a minor error as the main intent is still clear, but the emphasis is lost.",
-      "score": 2
+      "error": "Substitution: 'si' to 'y' at position 0",
+      "reason": "'si' (yes) and 'y' (and) are completely different words and change the meaning of the sentence, making it incoherent.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'sí.' at position 2",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Deletion: 'si' at position 2",
+      "reason": "Omitting the final 'si' (yes) removes a key part of the expected phrase, significantly altering the meaning.",
+      "score": 1
     }
   ]
 }

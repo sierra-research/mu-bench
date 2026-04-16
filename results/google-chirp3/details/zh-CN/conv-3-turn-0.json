@@ -1,20 +1,25 @@
 {
   "gold": "我正在等待我的信用卡，想知道它的状态。",
-  "predicted": "我想在等待我的信用卡,想知道它的状态。",
+  "predicted": "我想查账态,我的信用卡想听,想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.05263157894736842,
-  "werNormalizedGold": "我正在等待我的信用卡，想知道它的状态。",
-  "werNormalizedPredicted": "我想在等待我的信用卡，想知道它的状态。",
-  "qualityScore": 3,
-  "significantWer": 0.05263157894736842,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 ， 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "我 想 在 等 待 我 的 信 用 卡 ， 想 知 道 它 的 状 态 。",
+  "wer": 0.35294117647058826,
+  "werNormalizedGold": "我正在等待我的信用卡 想知道它的状态",
+  "werNormalizedPredicted": "我想查账态 我的信用卡想听 想知道它的状态",
+  "qualityScore": null,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 想 查 账 态 我 的 信 用 卡 想 听 想 知 道 它 的 状 态",
   "sigWerErrors": [
     {
       "error": "Substitution: '正' to '想' at position 1",
-      "reason": "'正' (currently) indicates an ongoing action, while '想' (want to) expresses desire. This changes the meaning of the sentence from 'I am waiting for my credit card' to 'I want to wait for my credit card', which alters the intent and meaning significantly.",
+      "reason": "'正' (currently) indicates an ongoing action, while '想' (want to) changes the meaning to an intention rather than an ongoing process. This alters the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '想' at position 10",
+      "reason": "'在等待' means 'waiting', while '查账态' means 'check account status'. This is a significant change in meaning, as the action and intent are different.",
       "score": 1
     }
   ]

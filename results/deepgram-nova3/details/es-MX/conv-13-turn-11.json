@@ -1,21 +1,31 @@
 {
   "gold": "A ver, permíteme un momento, déjame abrir la aplicación en mi teléfono, ¿OK?",
-  "predicted": "A ver, permíteme un momento, déjame abrirla en la aplicación mi teléfono, ¿ok?",
+  "predicted": "A ver, permítame un momento. Déjame abrirla en la aplicación mi teléfono, ¿ok?",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werNormalizedGold": "A ver, permíteme un momento, déjame abrir la aplicación en mi teléfono, ¿OK?",
-  "werNormalizedPredicted": "A ver, permíteme un momento, déjame abrir la aplicación en mi teléfono, ¿ok?",
-  "qualityScore": 2,
+  "wer": 0.3076923076923077,
+  "werNormalizedGold": "a ver permiteme un momento dejame abrir la aplicacion en mi telefono okay",
+  "werNormalizedPredicted": "a ver permitame un momento dejame abrirla en la aplicacion mi telefono okay",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "A ver, permíteme un momento, déjame abrir la aplicación en mi teléfono, ¿OK?",
-  "sigWerNormalizedPredicted": "A ver, permíteme un momento, déjame abrir la aplicación en mi teléfono, ¿ok?",
+  "sigWerNormalizedGold": "a ver permiteme un momento dejame abrir la aplicacion en mi telefono okay",
+  "sigWerNormalizedPredicted": "a ver permitame un momento dejame abrirla en la aplicacion mi telefono okay",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¿OK?' to '¿ok?' at position 12",
-      "reason": "The only difference is capitalization; 'OK' and 'ok' are semantically identical in this context.",
-      "score": 3
+      "error": "Substitution: 'permiteme' to 'permitame' at position 2",
+      "reason": "'Permíteme' vs 'permítame' is a minor grammatical difference (tú vs usted), does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'abrir' to 'en' at position 6",
+      "reason": "'Abrirla' (open it) is inserted, but in context, it refers to opening the app, so the meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'en' at position 9",
+      "reason": "This is a misalignment due to the insertion of 'abrirla', not a true substitution. The meaning is still clear.",
+      "score": 2
     }
   ]
 }

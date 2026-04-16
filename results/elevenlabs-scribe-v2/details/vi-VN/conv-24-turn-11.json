@@ -1,21 +1,26 @@
 {
   "gold": "Đúng rồi ạ.",
-  "predicted": "Được rồi ạ.",
+  "predicted": "Được rồi.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Đúng rồi ạ.",
-  "werNormalizedPredicted": "Được rồi ạ.",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "đúng rồi ạ",
+  "werNormalizedPredicted": "được rồi",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Đúng rồi ạ.",
-  "sigWerNormalizedPredicted": "Được rồi ạ.",
+  "sigWerNormalizedGold": "đúng rồi ạ",
+  "sigWerNormalizedPredicted": "được rồi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Đúng' to 'Được' at position 0",
-      "reason": "'Đúng' means 'correct' or 'right', while 'Được' means 'okay' or 'can'. This changes the affirmation from confirming correctness to simply acknowledging, which alters the meaning of the sentence.",
-      "score": 1
+      "error": "Substitution: 'đúng' to 'được' at position 0",
+      "reason": "'đúng' means 'correct' or 'right', while 'được' means 'okay' or 'can'. This changes the affirmation to a more neutral or permissive meaning, which can alter the intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ạ' at position 2",
+      "reason": "'ạ' is a polite particle in Vietnamese, its omission makes the sentence less polite but does not change the core meaning.",
+      "score": 2
     }
   ]
 }

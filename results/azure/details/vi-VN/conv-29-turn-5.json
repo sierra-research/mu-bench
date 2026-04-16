@@ -2,34 +2,19 @@
   "gold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
   "predicted": "Dự trí mail là minh. Trần a còngemail.com.",
   "unintelligible": false,
-  "wer": 0.4166666666666667,
-  "werNormalizedGold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Địa chỉ email là minh. trần a còng email.com.",
-  "qualityScore": 2,
-  "significantWer": 0.25,
-  "majorErrorsCount": 3,
+  "wer": 0.25,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "dự trí mail là minh chấm trần a còng email chấm com",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Địa chỉ email là minh. trần a còng email.com.",
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "dự trí mail là minh chấm trần a còng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'minh' to 'minh.' at position 4",
-      "reason": "The only difference is the punctuation (period), which should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'chấm' at position 5",
-      "reason": "Omitting 'chấm' (which means 'dot') in an email address changes the structure and could cause confusion or incorrect email transcription.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'email' to 'email.com.' at position 9",
-      "reason": "Combining 'email' and 'com' into 'email.com.' skips the explicit 'chấm' (dot) and could lead to misunderstanding the email address format.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'chấm' at position 10",
-      "reason": "Omitting 'chấm' (dot) before 'com' in an email address is a significant error as it affects the correct format of the email.",
+      "error": "Substitution: 'địa' to 'dự' at position 0",
+      "reason": "'địa chỉ' means 'address' in Vietnamese, while 'dự trí' is not a valid phrase and does not convey the intended meaning. This substitution makes the sentence incoherent and changes the meaning significantly.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "Ừ. Đúng rồi.",
-  "predicted": "Rất đúng rồi.",
+  "predicted": "Rất vui.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Ừ. Đúng rồi.",
-  "werNormalizedPredicted": "Rất đúng rồi.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "ừ đúng rồi",
+  "werNormalizedPredicted": "rất vui",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Ừ. Đúng rồi.",
-  "sigWerNormalizedPredicted": "Rất đúng rồi.",
+  "sigWerNormalizedGold": "ừ đúng rồi",
+  "sigWerNormalizedPredicted": "rất vui",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Ừ.' to 'Rất' at position 0",
-      "reason": "'Ừ.' is an affirmative interjection meaning 'yes' or 'uh-huh', while 'Rất' means 'very'. This changes the tone and meaning of the sentence from a simple affirmation to an emphasis, which alters the intent but does not derail the overall meaning that something is correct.",
-      "score": 2
+      "error": "Substitution: 'ừ' to 'rất' at position 0",
+      "reason": "The words have completely different meanings; 'ừ' is an affirmation ('yes'), while 'rất' means 'very'. This changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 2",
+      "reason": "The word 'rồi' ('already' or 'then') is missing, further contributing to the loss of the original sentence's meaning.",
+      "score": 1
     }
   ]
 }

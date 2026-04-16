@@ -1,25 +1,30 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Email là min chấmgmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
+  "predicted": "Email là minh chấm comgmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
   "unintelligible": false,
-  "wer": 0.16,
-  "werNormalizedGold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Email là minh chấm gmail chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "qualityScore": 1,
-  "significantWer": 0.08,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 25,
-  "sigWerNormalizedGold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Email là minh chấm gmail chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "wer": 0.18518518518518517,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là minh chấm com gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là minh chấm com gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'trần' to 'gmail' at position 4",
-      "reason": "The domain part of the email address is changed from a personal/proper name ('trần') to a generic service ('gmail'), which results in a completely different email address. This is a significant error as it changes the intended recipient or owner of the email.",
+      "error": "Substitution: 'trần' to 'com' at position 4",
+      "reason": "'trần' is likely a part of the email username, while 'com' is a domain suffix. This changes the email address entirely, making it impossible to contact the correct person.",
       "score": 1
     },
     {
-      "error": "Deletion: 'a' at position 5",
-      "reason": "The 'a' (Vietnamese for '@') is omitted, which makes the email address format invalid and unusable. This is a significant error as it prevents the email from being correctly interpreted or used.",
+      "error": "Deletion: 'còng' at position 6",
+      "reason": "'còng' (the Vietnamese word for '@') is essential in an email address. Its omission makes the email address invalid and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tám' to 'tháng' at position 26",
+      "reason": "'tám' means 'eight' (a digit in the phone number), while 'tháng' means 'month' and is not a number. This makes the phone number incorrect and unusable.",
       "score": 1
     }
   ]

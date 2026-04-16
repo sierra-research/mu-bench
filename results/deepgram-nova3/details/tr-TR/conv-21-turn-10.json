@@ -3,28 +3,23 @@
   "predicted": "Bir dakika, Ahmet isminde Ahmet Aslan dediniz Ahmet Arslan. R harfi var arada Ahmet Arslan.",
   "unintelligible": false,
   "wer": 0.2,
-  "werNormalizedGold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "werNormalizedPredicted": "Bir dakika. İsminde Ahmet Aslan dediniz, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "qualityScore": 3,
+  "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "werNormalizedPredicted": "bir dakika ahmet isminde ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "sigWerNormalizedPredicted": "Bir dakika. İsminde Ahmet Aslan dediniz, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
+  "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerNormalizedPredicted": "bir dakika ahmet isminde ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İsmimde' to 'İsminde' at position 2",
-      "reason": "'İsmimde' (in my name) vs 'İsminde' (in the name) changes the reference from self to general, but in this context, the meaning is only slightly affected and the sentence remains understandable.",
+      "error": "Substitution: 'ismimde' to 'isminde' at position 2",
+      "reason": "The extra 'ahmet' does not change the overall meaning of the sentence, as it is a repetition and does not introduce confusion.",
       "score": 2
     },
     {
-      "error": "Substitution: 'dediniz' to 'dediniz,' at position 5",
-      "reason": "The only difference is the comma, which should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'de,' at position 6",
-      "reason": "Omitting 'de' (which means 'also' or 'as for') slightly changes the nuance but does not derail the meaning of the sentence.",
+      "error": "Deletion: 'de' at position 6",
+      "reason": "'ismimde' means 'in my name', while 'isminde' means 'in the name'. This changes the reference from the speaker's own name to a general name, which is a minor but not significant change in this context.",
       "score": 2
     }
   ]

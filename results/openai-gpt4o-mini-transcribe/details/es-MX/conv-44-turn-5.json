@@ -1,0 +1,26 @@
+{
+  "gold": "Lo siento, Juan López.",
+  "predicted": "No es cierto. Juan López, perdón.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "lo siento juan lopez",
+  "werNormalizedPredicted": "no es cierto juan lopez perdon",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "lo siento juan lopez",
+  "sigWerNormalizedPredicted": "no es cierto juan lopez perdon",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lo' to 'es' at position 0",
+      "reason": "Adding 'no' changes the meaning from an apology ('lo siento') to a negation, which significantly alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'perdon' at position 4",
+      "reason": "Substituting 'lo' with 'es' changes the phrase from 'lo siento' (I'm sorry) to 'es cierto' (it's true), which completely changes the meaning.",
+      "score": 1
+    }
+  ]
+}

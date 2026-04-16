@@ -2,40 +2,35 @@
   "gold": "我正在等待我的信用卡，想知道它的状态。",
   "predicted": "网上在当代为的信用卡向知道的状态。",
   "unintelligible": false,
-  "wer": 0.42105263157894735,
-  "werNormalizedGold": "我正在等待我的信用卡，想知道它的状态。",
-  "werNormalizedPredicted": "网上在当代为的信用卡向知道的状态。",
-  "qualityScore": 1,
-  "significantWer": 0.2631578947368421,
-  "majorErrorsCount": 5,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 ， 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "网 上 在 当 代 为 的 信 用 卡 向 知 道 的 状 态 。",
+  "wer": 0.4117647058823529,
+  "werNormalizedGold": "我正在等待我的信用卡 想知道它的状态",
+  "werNormalizedPredicted": "网上在当代为的信用卡向知道的状态",
+  "qualityScore": null,
+  "significantWer": 0.17647058823529413,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "网 上 在 当 代 为 的 信 用 卡 向 知 道 的 状 态",
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to '网' at position 0",
-      "reason": "'我' means 'I' or 'me', while '网' means 'net' or 'internet'. This changes the subject of the sentence and makes the meaning incoherent.",
+      "reason": "'我' means 'I' or 'me', while '网' means 'net' or 'network'. This changes the subject of the sentence and makes the meaning incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: '等' to '当' at position 3",
-      "reason": "'等' means 'wait', while '当' means 'when' or 'serve as'. This changes the verb and disrupts the intended meaning of waiting.",
+      "reason": "'等' means 'wait', while '当' means 'when' or 'serve as'. This changes the action in the sentence and affects the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: '，' to '向' at position 10",
-      "reason": "'，' is a punctuation mark, while '向' means 'towards' or 'to'. Replacing punctuation with a word changes the sentence structure and meaning.",
+      "error": "Substitution: '想' to '向' at position 10",
+      "reason": "'想' means 'want' or 'think', while '向' means 'towards' or 'to'. This changes the intent of the sentence and alters the meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: '想' at position 11",
-      "reason": "'想' means 'want' or 'would like'. Its deletion removes the intent from the sentence, significantly altering the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '它' at position 14",
-      "reason": "'它' means 'it', referring to the credit card. Its deletion makes the sentence less clear about what is being referred to.",
-      "score": 1
+      "error": "Deletion: '它' at position 13",
+      "reason": "'它' means 'it', referring to the credit card. Omitting this pronoun makes the sentence less clear but does not completely derail the meaning.",
+      "score": 2
     }
   ]
 }

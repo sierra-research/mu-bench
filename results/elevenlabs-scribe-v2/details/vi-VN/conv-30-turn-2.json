@@ -1,20 +1,25 @@
 {
   "gold": "Rồi. Tôi sẵn sàng.",
-  "predicted": "Dạ thưa sinh sĩ",
+  "predicted": "Dạ, tôi xin chào anh.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "Rồi. Tôi sẵn sàng.",
-  "werNormalizedPredicted": "Dạ thưa sinh sĩ",
-  "qualityScore": 1,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "rồi tôi sẵn sàng",
+  "werNormalizedPredicted": "dạ tôi xin chào anh",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Rồi. Tôi sẵn sàng.",
-  "sigWerNormalizedPredicted": "Dạ thưa sinh sĩ",
+  "sigWerNormalizedGold": "rồi tôi sẵn sàng",
+  "sigWerNormalizedPredicted": "dạ tôi xin chào anh",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Rồi.' to 'Dạ' at position 0",
-      "reason": "The actual transcription is a completely different phrase with a different meaning, not matching the expected response at all.",
+      "error": "Substitution: 'rồi' to 'dạ' at position 0",
+      "reason": "'rồi' means 'then' or 'already', while 'dạ' is a polite particle, so the meaning of the sentence changes significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'sẵn' to 'chào' at position 2",
+      "reason": "'xin' (please) is an extra word not present in the expected sentence, further changing the meaning.",
       "score": 1
     }
   ]

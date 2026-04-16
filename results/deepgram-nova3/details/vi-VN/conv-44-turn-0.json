@@ -1,30 +1,25 @@
 {
   "gold": "Tôi muốn được gia tăng hạn mức thẻ tín dụng.",
-  "predicted": "Tôi muốn được gia tăng hệ mục tiêu",
+  "predicted": "Tôi muốn được gia tăng hệ mức giá ứng dụng",
   "unintelligible": false,
-  "wer": 0.6,
-  "werNormalizedGold": "Tôi muốn được gia tăng hạn mức thẻ tín dụng.",
-  "werNormalizedPredicted": "tôi muốn được gia tăng hệ mục tiêu",
-  "qualityScore": 1,
+  "wer": 0.3,
+  "werNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
+  "werNormalizedPredicted": "tôi muốn được gia tăng hệ mức giá ứng dụng",
+  "qualityScore": null,
   "significantWer": 0.2,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tôi muốn được gia tăng hạn mức thẻ tín dụng.",
-  "sigWerNormalizedPredicted": "tôi muốn được gia tăng hệ mục tiêu",
+  "sigWerNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
+  "sigWerNormalizedPredicted": "tôi muốn được gia tăng hệ mức giá ứng dụng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
-      "score": 3
-    },
-    {
       "error": "Substitution: 'hạn' to 'hệ' at position 5",
-      "reason": "'hạn mức thẻ tín dụng' (credit card limit) is replaced with 'hệ mục tiêu' (system target), which completely changes the meaning of the sentence.",
+      "reason": "'hạn mức' means 'limit' (as in credit limit), while 'hệ mức' is not a standard phrase and changes the meaning, making the sentence unclear or incorrect.",
       "score": 1
     },
     {
-      "error": "Deletion: 'tín' at position 8",
-      "reason": "'tín dụng' (credit) is missing, which removes the reference to credit and makes the sentence incoherent in the context of credit cards.",
+      "error": "Substitution: 'thẻ' to 'giá' at position 7",
+      "reason": "'thẻ tín dụng' means 'credit card', while 'giá ứng dụng' means 'application price', which is a completely different concept and changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

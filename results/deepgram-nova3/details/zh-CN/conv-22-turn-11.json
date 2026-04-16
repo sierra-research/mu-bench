@@ -1,21 +1,26 @@
 {
   "gold": "还是不对呀。",
-  "predicted": "嗯还是不对哦",
+  "predicted": "开始不对哦",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "还是不对呀。",
-  "werNormalizedPredicted": "嗯，还是不对呀。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "还 是 不 对 呀 。",
-  "sigWerNormalizedPredicted": "嗯 ， 还 是 不 对 呀 。",
+  "wer": 0.6,
+  "werNormalizedGold": "还是不对呀",
+  "werNormalizedPredicted": "开始不对哦",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "还 是 不 对 呀",
+  "sigWerNormalizedPredicted": "开 始 不 对 哦",
   "sigWerErrors": [
     {
-      "error": "Insertion: '嗯' at position 0",
-      "reason": "'嗯' is a filler or interjection that does not change the meaning of the sentence; the main content remains the same.",
-      "score": 2
+      "error": "Substitution: '还' to '开' at position 0",
+      "reason": "'还' (still) and '开' (open/start) are completely different in meaning and change the intent of the sentence, resulting in a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '呀' to '哦' at position 4",
+      "reason": "'呀' and '哦' are both sentence-ending particles in Chinese, often used for tone or emphasis, and do not significantly change the meaning of the sentence.",
+      "score": 3
     }
   ]
 }

@@ -1,15 +1,31 @@
 {
   "gold": "Sorry. Ashley dot Brown at email dot com. Ashley dot Brown at email dot com.",
-  "predicted": "Ashley brow sorry. Ashley dot Brown at Gmail dot com. Ashley dot Brown at Gmail dot com.",
+  "predicted": "Ashley bra sorry. Ashley dot Brown at Gmail dot com. Ashley dot Brown at Gmail dot com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sorry. Ashley dot Brown at email dot com. Ashley dot Brown at email dot com.",
-  "werNormalizedPredicted": "Sorry. Ashley dot Brown at email dot com. Ashley dot Brown at email dot com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.26666666666666666,
+  "werNormalizedGold": "sorry ashley dot brown at email dot com ashley dot brown at email dot com",
+  "werNormalizedPredicted": "ashley bra sorry ashley dot brown at gmail dot com ashley dot brown at gmail dot com",
+  "qualityScore": null,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Sorry. Ashley dot Brown at email dot com. Ashley dot Brown at email dot com.",
-  "sigWerNormalizedPredicted": "Sorry. Ashley dot Brown at email dot com. Ashley dot Brown at email dot com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sorry ashley dot brown at email dot com ashley dot brown at email dot com",
+  "sigWerNormalizedPredicted": "ashley bra sorry ashley dot brown at gmail dot com ashley dot brown at gmail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ashley' at position 0",
+      "reason": "The extra 'ashley' at the beginning does not change the meaning of the sentence, as it is just a repeated name before the actual content.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "Changing 'email' to 'gmail' changes the email address domain, which is a significant error as it would result in a different email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 12",
+      "reason": "Changing 'email' to 'gmail' changes the email address domain, which is a significant error as it would result in a different email address.",
+      "score": 1
+    }
+  ]
 }

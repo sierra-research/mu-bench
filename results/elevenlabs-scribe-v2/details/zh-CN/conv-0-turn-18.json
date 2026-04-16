@@ -1,15 +1,21 @@
 {
   "gold": "听到了吗？",
-  "predicted": "听到了吗？",
+  "predicted": "听得到了吗？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "听到了吗？",
-  "werNormalizedPredicted": "听到了吗？",
-  "qualityScore": 3,
+  "wer": 0.25,
+  "werNormalizedGold": "听 到 了 吗",
+  "werNormalizedPredicted": "听 得 到 了 吗",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "听 到 了 吗 ？",
-  "sigWerNormalizedPredicted": "听 到 了 吗 ？",
-  "sigWerErrors": []
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 了 吗",
+  "sigWerNormalizedPredicted": "听 得 到 了 吗",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '得' at position 1",
+      "reason": "'得' in '听得到' forms a common phrase meaning 'can hear', which is very close in meaning to '听到了' (heard). The insertion does not significantly change the meaning of the sentence, as both forms are used interchangeably in spoken Chinese to confirm hearing.",
+      "score": 3
+    }
+  ]
 }

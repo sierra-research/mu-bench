@@ -1,15 +1,31 @@
 {
   "gold": "邮箱地址是美玲 at email dot com。",
-  "predicted": "邮箱地址是 mei ling@email.com 。",
+  "predicted": "要想地址是 mail.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "邮箱地址是美玲 at email dot com。",
-  "werNormalizedPredicted": "邮箱地址是美玲 at email dot com。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "邮 箱 地 址 是 美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "邮 箱 地 址 是 美 玲 at email dot com 。",
-  "sigWerErrors": []
+  "wer": 0.5454545454545454,
+  "werNormalizedGold": "邮箱地址是美玲 at email dot com",
+  "werNormalizedPredicted": "要想地址是 mail dot com",
+  "qualityScore": null,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "要 想 地 址 是 mail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '要' at position 0",
+      "reason": "'邮' (mail/post) is replaced by '要' (want/need), which changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to 'mail' at position 5",
+      "reason": "'美' is part of a name ('美玲'), but is replaced by 'mail', which is an English word and not a name, causing a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 6",
+      "reason": "'玲' is the second character of the name '美玲'. Its omission means the name is incomplete, which is a significant error for an email address.",
+      "score": 1
+    }
+  ]
 }

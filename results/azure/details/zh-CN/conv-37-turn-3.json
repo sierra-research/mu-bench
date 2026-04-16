@@ -1,15 +1,26 @@
 {
   "gold": "明白了吗？",
-  "predicted": "明白了吗？",
+  "predicted": "Pimpanama.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "明白了吗？",
-  "werNormalizedPredicted": "明白了吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "明 白 了 吗 ？",
-  "sigWerNormalizedPredicted": "明 白 了 吗 ？",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "明白了吗",
+  "werNormalizedPredicted": "pimpanama",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "明 白 了 吗",
+  "sigWerNormalizedPredicted": "pimpanama",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '明' to 'pimpanama' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not correspond to the expected Chinese word, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '白' at position 1",
+      "reason": "The word '白' is missing entirely, further making the transcription unrelated and incoherent.",
+      "score": 1
+    }
+  ]
 }

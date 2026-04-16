@@ -1,20 +1,25 @@
 {
   "gold": "Kiểm tra hóa đơn qua ứng dụng đi.",
-  "predicted": "",
+  "predicted": "Qua hóa đường kiểm tra hóa đường qua ứng dụng đi",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Kiểm tra hóa đơn qua ứng dụng đi.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "kiểm tra hóa đơn qua ứng dụng đi",
+  "werNormalizedPredicted": "qua hóa đường kiểm tra hóa đường qua ứng dụng đi",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Kiểm tra hóa đơn qua ứng dụng đi.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "kiểm tra hóa đơn qua ứng dụng đi",
+  "sigWerNormalizedPredicted": "qua hóa đường kiểm tra hóa đường qua ứng dụng đi",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Kiểm' at position 0",
-      "reason": "The entire expected sentence is missing in the actual transcription, resulting in a complete loss of meaning.",
+      "error": "Insertion: 'qua' at position 0",
+      "reason": "The extra 'qua' at the beginning does not change the overall meaning of the sentence, as it is repeated and does not derail the intent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'đơn' to 'đường' at position 3",
+      "reason": "Substituting 'đơn' (bill) with 'đường' (street/sugar) changes the object of the action, making the sentence confusing and altering the intended meaning significantly.",
       "score": 1
     }
   ]

@@ -1,15 +1,21 @@
 {
   "gold": "Tabii, e-posta Ahmet nokta Arslan at email nokta com.",
-  "predicted": "Tabii e-posta ahmet. Arslan et gmail dat kom",
+  "predicted": "Tabii, e-posta ahmet nokta arslan et gmail nokta com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tabii, e-posta Ahmet nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "Tabii, e-posta Ahmet nokta Arslan at email nokta com.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Tabii, e-posta Ahmet nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "Tabii, e-posta Ahmet nokta Arslan at email nokta com.",
-  "sigWerErrors": []
+  "wer": 0.1,
+  "werNormalizedGold": "tabii e posta ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "tabii e posta ahmet nokta arslan at gmail nokta com",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii e posta ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabii e posta ahmet nokta arslan at gmail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "The domain part of the email address is changed from 'email' to 'gmail', which could result in a completely different and incorrect email address. This is a significant error as it changes the intended recipient or service.",
+      "score": 1
+    }
+  ]
 }

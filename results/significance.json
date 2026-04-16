@@ -1,0 +1,294 @@
+{
+  "providers": [
+    {
+      "id": "google-chirp3",
+      "name": "Google Chirp-3"
+    },
+    {
+      "id": "elevenlabs-scribe-v2",
+      "name": "ElevenLabs Scribe v2"
+    },
+    {
+      "id": "azure",
+      "name": "Azure Speech"
+    },
+    {
+      "id": "openai-gpt4o-transcribe",
+      "name": "OpenAI GPT-4o"
+    },
+    {
+      "id": "deepgram-nova3",
+      "name": "Deepgram Nova-3"
+    }
+  ],
+  "metrics": {
+    "significantWer": {
+      "means": {
+        "google-chirp3": 0.1051,
+        "elevenlabs-scribe-v2": 0.1631,
+        "azure": 0.1989,
+        "openai-gpt4o-transcribe": 0.2138,
+        "deepgram-nova3": 0.2578
+      },
+      "pairwise": [
+        [
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          null,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          null,
+          0.0214,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.982,
+          null,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          null
+        ]
+      ],
+      "numUtterances": 4243,
+      "numIterations": 10000
+    },
+    "wer": {
+      "means": {
+        "google-chirp3": 0.0687,
+        "elevenlabs-scribe-v2": 0.1331,
+        "azure": 0.1235,
+        "openai-gpt4o-transcribe": 0.1315,
+        "deepgram-nova3": 0.1703
+      },
+      "pairwise": [
+        [
+          null,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          null,
+          0.9723,
+          0.6189,
+          0.0
+        ],
+        [
+          1.0,
+          0.0268,
+          null,
+          0.0419,
+          0.0
+        ],
+        [
+          1.0,
+          0.3776,
+          0.9588,
+          null,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          null
+        ]
+      ],
+      "numUtterances": 4243,
+      "numIterations": 10000
+    }
+  },
+  "variance": {
+    "google-chirp3": {
+      "en-US": {
+        "wer": {
+          "mean": 0.0449,
+          "std": 0.0047,
+          "min": 0.0413,
+          "max": 0.0528,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.0537,
+          "std": 0.0036,
+          "min": 0.0509,
+          "max": 0.0596,
+          "n": 4
+        }
+      },
+      "zh-CN": {
+        "wer": {
+          "mean": 0.0898,
+          "std": 0.0017,
+          "min": 0.0881,
+          "max": 0.0917,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.1678,
+          "std": 0.0023,
+          "min": 0.1645,
+          "max": 0.1705,
+          "n": 4
+        }
+      }
+    },
+    "elevenlabs-scribe-v2": {
+      "en-US": {
+        "wer": {
+          "mean": 0.0664,
+          "std": 0.0006,
+          "min": 0.0658,
+          "max": 0.0673,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.0594,
+          "std": 0.0032,
+          "min": 0.0557,
+          "max": 0.0644,
+          "n": 4
+        }
+      },
+      "zh-CN": {
+        "wer": {
+          "mean": 0.1651,
+          "std": 0.0068,
+          "min": 0.1583,
+          "max": 0.1763,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.2347,
+          "std": 0.0088,
+          "min": 0.2217,
+          "max": 0.2464,
+          "n": 4
+        }
+      }
+    },
+    "azure": {
+      "en-US": {
+        "wer": {
+          "mean": 0.0384,
+          "std": 0.0018,
+          "min": 0.0372,
+          "max": 0.0416,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.0355,
+          "std": 0.0018,
+          "min": 0.0334,
+          "max": 0.0383,
+          "n": 4
+        }
+      },
+      "zh-CN": {
+        "wer": {
+          "mean": 0.1848,
+          "std": 0.016,
+          "min": 0.1728,
+          "max": 0.2123,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.2576,
+          "std": 0.0136,
+          "min": 0.2425,
+          "max": 0.2797,
+          "n": 4
+        }
+      }
+    },
+    "openai-gpt4o-transcribe": {
+      "en-US": {
+        "wer": {
+          "mean": 0.062,
+          "std": 0.0053,
+          "min": 0.0588,
+          "max": 0.0711,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.0755,
+          "std": 0.0044,
+          "min": 0.0683,
+          "max": 0.0795,
+          "n": 4
+        }
+      },
+      "zh-CN": {
+        "wer": {
+          "mean": 0.1558,
+          "std": 0.0034,
+          "min": 0.1505,
+          "max": 0.1592,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.2341,
+          "std": 0.0049,
+          "min": 0.2305,
+          "max": 0.2425,
+          "n": 4
+        }
+      }
+    },
+    "deepgram-nova3": {
+      "en-US": {
+        "wer": {
+          "mean": 0.0496,
+          "std": 0.0021,
+          "min": 0.0478,
+          "max": 0.0529,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.0579,
+          "std": 0.0035,
+          "min": 0.0518,
+          "max": 0.0603,
+          "n": 4
+        }
+      },
+      "zh-CN": {
+        "wer": {
+          "mean": 0.1955,
+          "std": 0.0057,
+          "min": 0.1903,
+          "max": 0.205,
+          "n": 4
+        },
+        "significantWer": {
+          "mean": 0.2918,
+          "std": 0.0063,
+          "min": 0.2873,
+          "max": 0.3025,
+          "n": 4
+        }
+      }
+    }
+  }
+}

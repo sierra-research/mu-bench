@@ -1,15 +1,26 @@
 {
   "gold": "美玲。",
-  "predicted": "Main Ling.",
+  "predicted": "Mainly.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "美玲。",
-  "werNormalizedPredicted": "美玲。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "美 玲 。",
-  "sigWerNormalizedPredicted": "美 玲 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "美玲",
+  "werNormalizedPredicted": "mainly",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "美 玲",
+  "sigWerNormalizedPredicted": "mainly",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mainly' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an unrelated English word, which completely changes the meaning and is not a valid substitution.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from the expected name is missing in the actual transcription, resulting in a significant loss of information and making the name unrecognizable.",
+      "score": 1
+    }
+  ]
 }

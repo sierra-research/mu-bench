@@ -2,35 +2,25 @@
   "gold": "是美玲 at email dot com。",
   "predicted": "She mailing at email.com.",
   "unintelligible": false,
-  "wer": 0.625,
-  "werNormalizedGold": "是美玲 at email dot com。",
-  "werNormalizedPredicted": "She mailing at email dot com.",
-  "qualityScore": 1,
-  "significantWer": 0.25,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "是美玲 at email dot com",
+  "werNormalizedPredicted": "she mailing at email dot com",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
   "majorErrorsCount": 2,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "是 美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "She mailing at email dot com.",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "she mailing at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '是' to 'She' at position 0",
-      "reason": "'是' is a Chinese character meaning 'is', while 'She' is an English pronoun. This is a language substitution and changes the meaning and language of the sentence.",
+      "error": "Substitution: '是' to 'she' at position 0",
+      "reason": "'是' is a Chinese character (part of a name or phrase), while 'she' is an English pronoun. This changes the meaning entirely and is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 2",
-      "reason": "'玲' is a Chinese character (likely part of a name), while 'at' is an English preposition. This is a significant substitution that changes both meaning and language.",
+      "reason": "'玲' is a Chinese character (likely part of a name) that is missing in the actual transcription, which omits important information and changes the meaning.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'com' to 'com.' at position 6",
-      "reason": "The only difference is the period at the end, which should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: '。' at position 7",
-      "reason": "The Chinese period '。' is equivalent to a regular period and can be ignored as per the guidance.",
-      "score": 3
     }
   ]
 }

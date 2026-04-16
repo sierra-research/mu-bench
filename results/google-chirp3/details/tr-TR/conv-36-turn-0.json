@@ -1,15 +1,36 @@
 {
   "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "predicted": "Anne Hanım merhabalar. Şimdi şöyle ben kredi kartıma dair ekstrenin bir kopyasını istiyorum ya da ekstrenin bir dökümünü istiyorum daha doğrusu.",
+  "predicted": "Anne Hanım merhabalar. Şimdi şöyle ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "werNormalizedPredicted": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.19047619047619047,
+  "werNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anne hanım merhabalar şimdi şöyle ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 3,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "sigWerNormalizedPredicted": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anne hanım merhabalar şimdi şöyle ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anne' at position 0",
+      "reason": "'Anna' and 'Anne' are both proper names, but refer to different people. However, in Turkish, 'anne' means 'mother' and 'anna' is a name. This changes the meaning from addressing a person named Anna to addressing someone's mother, which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'ekstra' at position 6",
+      "reason": "The word 'ekstra' (extra) is inserted before 'kredi kartıma dair', which could confuse the meaning, but the overall request for a credit card statement is still clear. This is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 9",
+      "reason": "'Ekstremin' (my statement) vs 'ekstramın' (my extra) changes the meaning from 'statement' to 'extra', which could confuse the request and affect understanding. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 15",
+      "reason": "Same as above: 'ekstremin' (my statement) vs 'ekstramın' (my extra) changes the meaning and could confuse the request. Significant error.",
+      "score": 1
+    }
+  ]
 }

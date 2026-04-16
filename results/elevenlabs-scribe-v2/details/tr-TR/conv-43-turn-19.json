@@ -1,20 +1,25 @@
 {
   "gold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
-  "predicted": "Evet var. Hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
+  "predicted": "Evet, vergi hesap ekstresi istiyorum. Bana 2023 vergi hesap ekstresini gönderir misin?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
-  "werNormalizedPredicted": "Evet var. Hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
-  "qualityScore": 3,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
-  "sigWerNormalizedPredicted": "Evet var. Hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
+  "werNormalizedPredicted": "evet vergi hesap ekstresi istiyorum bana iki bin yirmi üç vergi hesap ekstresini gönderir misin",
+  "qualityScore": null,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
+  "sigWerNormalizedPredicted": "evet vergi hesap ekstresi istiyorum bana iki bin yirmi üç vergi hesap ekstresini gönderir misin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Evet,' to 'Evet' at position 0",
-      "reason": "'ben' means 'I', while 'var' means 'there is'. This changes the subject and meaning of the sentence, making it incoherent in context.",
+      "error": "Substitution: 'ben' to 'vergi' at position 1",
+      "reason": "'ben' means 'I', while 'vergi' means 'tax'. This changes the subject of the sentence and introduces a different meaning, making the sentence about a tax statement instead of a personal statement.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yılının' to 'vergi' at position 10",
+      "reason": "'yılının' means 'of the year', while 'vergi' means 'tax'. This changes the requested document from a yearly statement to a tax statement, altering the meaning significantly.",
       "score": 1
     }
   ]

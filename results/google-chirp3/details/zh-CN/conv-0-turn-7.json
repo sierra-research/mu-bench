@@ -1,15 +1,21 @@
 {
   "gold": "是对的。",
-  "predicted": "是对的。",
+  "predicted": "去对的。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "是对的。",
-  "werNormalizedPredicted": "是对的。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "是 对 的 。",
-  "sigWerNormalizedPredicted": "是 对 的 。",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "是对的",
+  "werNormalizedPredicted": "去对的",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "是 对 的",
+  "sigWerNormalizedPredicted": "去 对 的",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to '去' at position 0",
+      "reason": "'是' means 'is' or 'correct', while '去' means 'go'. This substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    }
+  ]
 }

@@ -1,36 +1,21 @@
 {
   "gold": "Bạn còn cần thông tin gì không?",
-  "predicted": "Bạn có còn không tin gì không?",
+  "predicted": "Bạn còn còn thông tin gì không?",
   "unintelligible": false,
-  "wer": 0.7142857142857143,
-  "werNormalizedGold": "Bạn còn cần thông tin gì không?",
-  "werNormalizedPredicted": "bạn có còn không tin gì không",
-  "qualityScore": 2,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "bạn còn cần thông tin gì không",
+  "werNormalizedPredicted": "bạn còn còn thông tin gì không",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Bạn còn cần thông tin gì không?",
-  "sigWerNormalizedPredicted": "bạn có còn không tin gì không",
+  "sigWerNormalizedGold": "bạn còn cần thông tin gì không",
+  "sigWerNormalizedPredicted": "bạn còn còn thông tin gì không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Bạn' to 'có' at position 0",
-      "reason": "'cần' means 'need', while 'có' means 'have' or 'do/does', which changes the intent of the question and alters the meaning significantly.",
+      "error": "Substitution: 'cần' to 'còn' at position 2",
+      "reason": "The word 'cần' (need) is replaced by 'còn' (still), which changes the meaning of the question from asking if more information is needed to asking if there is still information. This alters the intent of the sentence.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'cần' to 'không' at position 2",
-      "reason": "'thông tin' means 'information', while 'không tin' is not a valid phrase and changes the meaning, making the sentence incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'thông' at position 3",
-      "reason": "infra_error",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'không?' to 'không' at position 6",
-      "reason": "infra_error",
-      "score": 2
     }
   ]
 }

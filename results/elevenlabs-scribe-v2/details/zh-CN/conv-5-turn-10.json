@@ -1,20 +1,25 @@
 {
   "gold": "不对的。",
-  "predicted": "木、五、日、六。",
+  "predicted": "புதனை தான்.",
   "unintelligible": false,
-  "wer": 1.75,
-  "werNormalizedGold": "不对的。",
-  "werNormalizedPredicted": "木、五、日、六。",
-  "qualityScore": 1,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "不 对 的 。",
-  "sigWerNormalizedPredicted": "木 、 五 、 日 、 六 。",
+  "wer": 1.0,
+  "werNormalizedGold": "不对的",
+  "werNormalizedPredicted": "புதனை தான்",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "不 对 的",
+  "sigWerNormalizedPredicted": "புதனை தான்",
   "sigWerErrors": [
     {
-      "error": "Substitution: '不' to '日' at position 0",
-      "reason": "The actual transcription is completely different from the expected. The expected means 'incorrect' or 'not right', while the actual lists unrelated words/characters ('wood', 'five', 'day', 'six'). This changes the meaning entirely and makes the sentence incoherent.",
+      "error": "Substitution: '不' to 'புதனை' at position 0",
+      "reason": "The actual transcription is in a completely different language (Tamil) compared to the expected (Chinese), making the meaning incoherent and unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 2",
+      "reason": "The word '的' is missing in the actual transcription, and since the actual is in a different language, the meaning is completely lost.",
       "score": 1
     }
   ]

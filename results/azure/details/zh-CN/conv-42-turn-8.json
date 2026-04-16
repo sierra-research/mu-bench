@@ -1,15 +1,21 @@
 {
   "gold": "你说吧。",
-  "predicted": "你说吧。",
+  "predicted": "You sure about?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你说吧。",
-  "werNormalizedPredicted": "你说吧。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "你 说 吧 。",
-  "sigWerNormalizedPredicted": "你 说 吧 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你 说 吧",
+  "werNormalizedPredicted": "you sure about",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "你 说 吧",
+  "sigWerNormalizedPredicted": "you sure about",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'you' at position 0",
+      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a major language mismatch and completely changes the meaning.",
+      "score": 1
+    }
+  ]
 }

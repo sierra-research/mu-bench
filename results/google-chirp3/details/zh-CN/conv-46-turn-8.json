@@ -1,30 +1,30 @@
 {
   "gold": "你可以再重复我的姓名？",
-  "predicted": "你可以在重复的声音。",
+  "predicted": "你可以在重复的心情。",
   "unintelligible": false,
-  "wer": 0.45454545454545453,
-  "werNormalizedGold": "你可以再重复我的姓名？",
-  "werNormalizedPredicted": "你可以在重复的声音。",
-  "qualityScore": 1,
-  "significantWer": 0.2727272727272727,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 可 以 再 重 复 我 的 姓 名 ？",
-  "sigWerNormalizedPredicted": "你 可 以 在 重 复 的 声 音 。",
+  "wer": 0.4,
+  "werNormalizedGold": "你 可以 再 重复 我 的 姓名",
+  "werNormalizedPredicted": "你 可以 在 重复 的 心情",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 可 以 再 重 复 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 可 以 在 重 复 的 心 情",
   "sigWerErrors": [
     {
       "error": "Substitution: '再' to '在' at position 3",
-      "reason": "The characters '再' (again) and '在' (at/in) have different meanings. '再' indicates repetition, which is important for the request to repeat. Substituting with '在' changes the meaning of the sentence.",
-      "score": 1
+      "reason": "'再' (again) and '在' (at/in) are different words with different meanings, but in this context, the substitution slightly changes the meaning but does not derail the sentence completely.",
+      "score": 2
     },
     {
       "error": "Deletion: '我' at position 6",
-      "reason": "Omitting '我' (my) removes the reference to 'my name', which is crucial to the meaning of the sentence.",
+      "reason": "Omitting '我' (I/me) removes the subject of the sentence, which significantly affects the meaning and clarity.",
       "score": 1
     },
     {
-      "error": "Substitution: '姓' to '声' at position 8",
-      "reason": "'姓' means 'surname' or 'family name', while '声' means 'sound'. This substitution changes the object of repetition from 'my name' to 'sound', which significantly alters the meaning.",
+      "error": "Substitution: '姓' to '心' at position 8",
+      "reason": "'姓' (surname) and '心' (heart) are completely different words, and this substitution changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

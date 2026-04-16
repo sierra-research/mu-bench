@@ -1,30 +1,35 @@
 {
   "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
-  "predicted": "E mail davranmadığım tekrar e mail verdim ben sonra Ahmet Arslan ars'de n at email.com.",
+  "predicted": "E mail davranmadığını tekrar e mail verinden sonra Ahmet arslanarsl.com.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
-  "werNormalizedPredicted": "Email davranmadığım tekrar email verdim ben sonra Ahmet nokta Arslan A R S L A N at email nokta com.",
-  "qualityScore": 1,
-  "significantWer": 0.1,
-  "majorErrorsCount": 2,
+  "wer": 0.3,
+  "werNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "werNormalizedPredicted": "email davranmadigini tekrar email verinden sonra ahmet arslan a r s l a n at email nokta com",
+  "qualityScore": null,
+  "significantWer": 0.15,
+  "majorErrorsCount": 3,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
-  "sigWerNormalizedPredicted": "Email davranmadığım tekrar email verdim ben sonra Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "sigWerNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "email davranmadigini tekrar email verinden sonra ahmet arslan a r s l a n at email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'daha' to 'davranmadığım' at position 1",
-      "reason": "'daha' means 'yet' or 'still', while 'davranmadığım' means 'that I did not behave'. This changes the meaning of the sentence significantly and makes it incoherent.",
+      "error": "Substitution: 'daha' to 'davranmadigini' at position 1",
+      "reason": "'daha' means 'yet' or 'still', while 'davranmadigini' means 'that you did not behave'. This changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'vereyim' to 'verdim' at position 4",
-      "reason": "'vereyim' means 'let me give', while 'verdim' means 'I gave'. This changes the tense and intent, but the overall meaning is still about giving the email.",
+      "error": "Substitution: 'vereyim' to 'verinden' at position 4",
+      "reason": "'vereyim' means 'let me give', while 'verinden' is not a correct word and does not make sense in this context, making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sana' at position 6",
+      "reason": "'sana' means 'to you', and its omission makes the sentence less clear but does not completely derail the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'sana.' to 'sonra' at position 6",
-      "reason": "'sana' means 'to you', while 'sonra' means 'after/later'. This changes the recipient to a time reference, which alters the meaning of the sentence.",
+      "error": "Deletion: 'nokta' at position 8",
+      "reason": "'nokta' means 'dot' and is important in an email address. Its omission could cause confusion or incorrect email transcription.",
       "score": 1
     }
   ]

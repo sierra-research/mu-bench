@@ -45,7 +45,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r scoring/requirements.txt
+        run: pip install -e .[scoring]
 
       - name: Validate submission
         run: python scoring/validate.py "${{ steps.detect.outputs.dir }}" --manifest manifest.json

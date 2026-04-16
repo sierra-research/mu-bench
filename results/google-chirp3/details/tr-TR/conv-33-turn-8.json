@@ -1,31 +1,26 @@
 {
   "gold": "Tabii. Zeynep nokta Arslan at, pardon çok özür dilerim tekrarlayacağım.",
-  "predicted": "Tabii, Zeynep Aslan et, pardon çok özür dilerim tekrar edeceğim.",
+  "predicted": "Tabii. Zeynep Arslan et Pardon, çok özür dilerim. Tekrar edeceğim.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "Tabii. Zeynep nokta Arslan at, pardon çok özür dilerim tekrarlayacağım.",
-  "werNormalizedPredicted": "Tabii, Zeynep nokta Aslan at, pardon çok özür dilerim tekrar edeceğim.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3,
+  "werNormalizedGold": "tabii zeynep nokta arslan at pardon cok ozur dilerim tekrarlayacagim",
+  "werNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tabii. Zeynep nokta Arslan at, pardon çok özür dilerim tekrarlayacağım.",
-  "sigWerNormalizedPredicted": "Tabii, Zeynep nokta Aslan at, pardon çok özür dilerim tekrar edeceğim.",
+  "sigWerNormalizedGold": "tabii zeynep nokta arslan at pardon cok ozur dilerim tekrarlayacagim",
+  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tabii.' to 'Tabii,' at position 0",
-      "reason": "Difference is only in punctuation (period vs comma), which does not affect meaning.",
+      "error": "Deletion: 'nokta' at position 2",
+      "reason": "'nokta' (meaning 'dot' or 'point') is omitted, which may be important if this is an email address or similar context. Its absence could cause confusion or loss of information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tekrarlayacagim' to 'edecegim' at position 9",
+      "reason": "'tekrar' (meaning 'again' or 'repeat') is inserted, but it is semantically similar to the expected word 'tekrarlayacagim' (I will repeat). This does not significantly change the meaning.",
       "score": 3
-    },
-    {
-      "error": "Substitution: 'Arslan' to 'Aslan' at position 3",
-      "reason": "Minor misspelling of a proper noun; 'Arslan' and 'Aslan' are very similar and likely refer to the same name.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'tekrarlayacağım.' to 'edeceğim.' at position 9",
-      "reason": "'tekrar' (again) is inserted, but in context with the following verb, it does not significantly change the meaning.",
-      "score": 2
     }
   ]
 }

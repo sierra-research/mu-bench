@@ -1,21 +1,26 @@
 {
   "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "predicted": "Ya e-posta adresime erişimi bir sıralar yok da yani farklı bir metod var mı acaba bana fatura göndermeniz için?",
+  "predicted": "Ya e-posta adresime erişimi bir sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werNormalizedGold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "werNormalizedPredicted": "Ya, e-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "sigWerNormalizedPredicted": "Ya, e-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
+  "wer": 0.15789473684210525,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "ya e posta adresime erişimi bir sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "qualityScore": null,
+  "significantWer": 0.05263157894736842,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "ya e posta adresime erişimi bir sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'E-posta' to 'e-posta' at position 0",
-      "reason": "'Ya' is an interjection meaning 'well' or 'hey' in Turkish, and its addition does not change the meaning of the sentence. It only adds a conversational nuance.",
+      "error": "Insertion: 'ya' at position 0",
+      "reason": "'ya' is a discourse marker in Turkish, often used for emphasis or to start a sentence, but does not change the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'erişimim' to 'erişimi' at position 3",
+      "reason": "'erişimim' means 'my access', while 'erişimi' means 'his/her/its access'. This changes the subject of the sentence and could cause confusion about whose access is being referred to, which is a significant error.",
+      "score": 1
     }
   ]
 }

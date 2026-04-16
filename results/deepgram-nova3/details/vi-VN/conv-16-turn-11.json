@@ -1,40 +1,35 @@
 {
   "gold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
-  "predicted": "Tôi muốn xem là thể hiện tại khi chừng nào thì mới có cái đậy nhé.",
+  "predicted": "Tôi muốn xem có thể hiện tại khi trình nào thì mới có tựa đậy",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
-  "werNormalizedPredicted": "tôi muốn xem là thẻ hiện tại khi chừng nào thì mới có cái đậy nhé.",
-  "qualityScore": 2,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.5833333333333334,
+  "werNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "werNormalizedPredicted": "tôi muốn xem có thể hiện tại khi trình nào thì mới có tựa đậy",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
-  "sigWerNormalizedPredicted": "tôi muốn xem là thẻ hiện tại khi chừng nào thì mới có cái đậy nhé.",
+  "sigWerNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "sigWerNormalizedPredicted": "tôi muốn xem có thể hiện tại khi trình nào thì mới có tựa đậy",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference in capitalization only, which does not affect meaning in Vietnamese.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'là' at position 3",
-      "reason": "The insertion of 'là' does not change the overall meaning of the sentence.",
+      "error": "Substitution: 'thẻ' to 'thể' at position 3",
+      "reason": "The insertion of 'có' changes the sentence structure but does not significantly alter the overall meaning.",
       "score": 2
     },
     {
-      "error": "Insertion: 'khi' at position 6",
-      "reason": "The insertion of 'khi' is redundant and does not change the intent or meaning of the question.",
-      "score": 2
+      "error": "Substitution: 'chừng' to 'trình' at position 6",
+      "reason": "'thẻ' (card) and 'thể' (can/ability) are completely different words and this substitution changes the meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Insertion: 'thì' at position 8",
-      "reason": "The word 'thì' is a discourse marker and does not alter the meaning of the sentence.",
-      "score": 2
+      "reason": "The insertion of 'khi' (when) changes the sentence structure and meaning, making the sentence less coherent.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'thẻ?' to 'nhé.' at position 11",
-      "reason": "'đậy' is a mistranscription for 'thẻ', which changes the meaning of the object being referred to, making the sentence confusing.",
+      "error": "Substitution: 'cái' to 'tựa' at position 10",
+      "reason": "'chừng' (when/about) and 'trình' (submit/present) are unrelated in meaning, which significantly alters the intended meaning.",
       "score": 1
     }
   ]

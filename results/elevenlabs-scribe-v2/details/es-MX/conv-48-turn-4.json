@@ -1,20 +1,25 @@
 {
   "gold": "No. Mi correo electrónico es Juan López, Juan punto López. Deja y te lo digo de nuevo.",
-  "predicted": "No, mi correo electrónico es Juan López, juan.lopez-- a ver, deja te lo digo de nuevo",
+  "predicted": "No, mi correo electrónico es Juan López, juan.lopez. A ver, deja te lo digo de nuevo",
   "unintelligible": false,
   "wer": 0.17647058823529413,
-  "werNormalizedGold": "No. Mi correo electrónico es Juan López, Juan punto López. Deja y te lo digo de nuevo.",
-  "werNormalizedPredicted": "No. Mi correo electrónico es Juan López, Juan punto López. A ver, deja y te lo digo de nuevo.",
-  "qualityScore": 3,
+  "werNormalizedGold": "no mi correo electronico es juan lopez juan punto lopez deja y te lo digo de nuevo",
+  "werNormalizedPredicted": "no mi correo electronico es juan lopez juan punto lopez a ver deja te lo digo de nuevo",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "No. Mi correo electrónico es Juan López, Juan punto López. Deja y te lo digo de nuevo.",
-  "sigWerNormalizedPredicted": "No. Mi correo electrónico es Juan López, Juan punto López. A ver, deja y te lo digo de nuevo.",
+  "sigWerNormalizedGold": "no mi correo electronico es juan lopez juan punto lopez deja y te lo digo de nuevo",
+  "sigWerNormalizedPredicted": "no mi correo electronico es juan lopez juan punto lopez a ver deja te lo digo de nuevo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Deja' to 'deja' at position 10",
-      "reason": "The phrase 'A ver,' is an interjection meaning 'let's see' or 'okay' in Spanish. Its insertion does not change the meaning of the sentence, which is to repeat the email address. It only adds a conversational filler.",
+      "error": "Insertion: 'a' at position 10",
+      "reason": "'a ver' is an interjection meaning 'let's see' or 'okay', which does not change the meaning of the sentence. It is a minor addition that does not derail the main message.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'y' at position 11",
+      "reason": "'a ver' is an interjection meaning 'let's see' or 'okay', which does not change the meaning of the sentence. It is a minor addition that does not derail the main message.",
       "score": 2
     }
   ]

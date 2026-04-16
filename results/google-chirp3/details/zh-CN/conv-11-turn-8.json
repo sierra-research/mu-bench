@@ -1,15 +1,21 @@
 {
   "gold": "对的。",
-  "predicted": "对的。",
+  "predicted": "你对的。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "对的。",
-  "werNormalizedPredicted": "对的。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "对 的 。",
-  "sigWerNormalizedPredicted": "对 的 。",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "对的",
+  "werNormalizedPredicted": "你对的",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "对 的",
+  "sigWerNormalizedPredicted": "你 对 的",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '你' at position 0",
+      "reason": "The insertion of '你' (you) changes the meaning of the phrase from 'correct' or 'right' to 'you correct', which alters the intent of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -2,29 +2,24 @@
   "gold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
   "predicted": "Anna Hanım merhabalar. Öncelikle teşekkür ediyorum. Eee, ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
-  "werNormalizedPredicted": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Eee, ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
-  "qualityScore": 3,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
+  "werNormalizedPredicted": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitimin artırılmasını talep ediyorum bu konuda bana yardımcı olabilir misiniz",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
-  "sigWerNormalizedPredicted": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Eee, ben kredi kartı limitimin artırılmasını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "sigWerNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitimin artırılmasını talep ediyorum bu konuda bana yardımcı olabilir misiniz",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Ben' to 'ben' at position 6",
-      "reason": "'Eee' is a filler word that does not affect the meaning of the sentence.",
-      "score": 3
-    },
-    {
       "error": "Substitution: 'limitinin' to 'limitimin' at position 9",
-      "reason": "Difference in capitalization only, which should be ignored.",
-      "score": 3
+      "reason": "The difference is in the possessive suffix: 'limitinin' (of the limit) vs 'limitimin' (my limit). This changes the reference from a general limit to the speaker's own limit, but in the context of a credit card request, both refer to the speaker's card limit. The meaning is not significantly changed.",
+      "score": 2
     },
     {
       "error": "Insertion: 'bana' at position 15",
-      "reason": "'Limitinin' (of the limit) vs 'limitimin' (of my limit) changes the possessive from general to personal, but in context, the meaning is still clear and the request is understood.",
+      "reason": "'Bana' means 'to me', making the request more explicit but not changing the overall meaning of the sentence. The intent remains the same: asking for help.",
       "score": 2
     }
   ]

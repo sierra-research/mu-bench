@@ -1,21 +1,26 @@
 {
   "gold": "Déjeme, encuentro dónde anotarlo.",
-  "predicted": "Eh, déjeme encuentro dónde anotarlo",
+  "predicted": "Eh, deje, me encuentro donde no está, ¿lo?",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Déjeme, encuentro dónde anotarlo.",
-  "werNormalizedPredicted": "Eh, déjeme, encuentro dónde anotarlo.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.25,
+  "werNormalizedGold": "dejeme encuentro donde anotarlo",
+  "werNormalizedPredicted": "deje me encuentro donde no esta lo",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Déjeme, encuentro dónde anotarlo.",
-  "sigWerNormalizedPredicted": "Eh, déjeme, encuentro dónde anotarlo.",
+  "sigWerNormalizedGold": "dejeme encuentro donde anotarlo",
+  "sigWerNormalizedPredicted": "deje me encuentro donde no esta lo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Déjeme,' to 'déjeme,' at position 0",
-      "reason": "'Eh' is a filler word that does not change the meaning of the sentence; it is a common hesitation or interjection in speech.",
-      "score": 2
+      "error": "Substitution: 'dejeme' to 'me' at position 0",
+      "reason": "'dejeme' (let me) is split into 'deje me' (leave me), which changes the meaning from a polite request to a different phrase.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'anotarlo' to 'lo' at position 3",
+      "reason": "The insertion of 'no esta' (is not) adds a negation and changes the meaning of the sentence, making it incoherent with the original intent.",
+      "score": 1
     }
   ]
 }

@@ -1,15 +1,26 @@
 {
   "gold": "哎呀。",
-  "predicted": "哎呀",
+  "predicted": "是",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "哎呀。",
-  "werNormalizedPredicted": "哎呀。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "哎 呀 。",
-  "sigWerNormalizedPredicted": "哎 呀 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "哎呀",
+  "werNormalizedPredicted": "是",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "哎 呀",
+  "sigWerNormalizedPredicted": "是",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '哎' to '是' at position 0",
+      "reason": "'哎' is an interjection expressing surprise or exclamation, while '是' means 'is' or 'yes'; this substitution completely changes the meaning of the utterance.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '呀' at position 1",
+      "reason": "'呀' is an exclamatory particle that adds emotional tone; its omission further removes the original intent and tone of the sentence.",
+      "score": 1
+    }
+  ]
 }

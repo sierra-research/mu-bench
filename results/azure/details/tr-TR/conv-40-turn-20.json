@@ -1,50 +1,45 @@
 {
   "gold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "predicted": "Anne baraj kot tekrar verir misin kodda? Çünkü ilk başta EN dedin sonra ea dedi. Kod tekrar bana söyler misin yavaş ya?",
+  "predicted": "Anne baraj kot tekrar verir misin kodda? Çünkü ilk başta EN dedi sonra ea dedi. Kod tekrar bana söyler misin yavaş ya?",
   "unintelligible": false,
   "wer": 0.4166666666666667,
-  "werNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "werNormalizedPredicted": "Anne, baraj kodu tekrar verir misin? Kodda çünkü ilk başta EN dedin sonra EA dedi. Kod tekrar bana söyler misin yavaşça?",
-  "qualityScore": 2,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 4,
+  "werNormalizedGold": "anna bana su kodu tekrar verir misin kodlar cunku ilk basta e n dedin sonra e a dedin kodu tekrar bana soyler misin yavasca",
+  "werNormalizedPredicted": "anne baraj kot tekrar verir misin kodda cunku ilk basta e n dedi sonra e a dedi kod tekrar bana soyler misin yavas ya",
+  "qualityScore": null,
+  "significantWer": 0.041666666666666664,
+  "majorErrorsCount": 1,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "sigWerNormalizedPredicted": "Anne, baraj kodu tekrar verir misin? Kodda çünkü ilk başta EN dedin sonra EA dedi. Kod tekrar bana söyler misin yavaşça?",
+  "sigWerNormalizedGold": "anna bana su kodu tekrar verir misin kodlar cunku ilk basta e n dedin sonra e a dedin kodu tekrar bana soyler misin yavasca",
+  "sigWerNormalizedPredicted": "anne baraj kot tekrar verir misin kodda cunku ilk basta e n dedi sonra e a dedi kod tekrar bana soyler misin yavas ya",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna,' to 'Anne,' at position 0",
-      "reason": "'Anna' and 'Anne' are both proper names, but refer to different people. However, in Turkish, 'Anne' means 'mother' and 'Anna' is a name, so this changes the meaning significantly.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'şu' at position 2",
-      "reason": "Omitting 'şu' ('this') slightly reduces clarity but does not significantly change the meaning of the request.",
+      "error": "Substitution: 'anna' to 'anne' at position 0",
+      "reason": "Minor spelling difference in a proper noun, but still recognizable as the same name.",
       "score": 2
     },
     {
-      "error": "Substitution: 'Kodlar' to 'Kodda' at position 7",
-      "reason": "'Kodlar' means 'codes' (plural), 'Kodda' means 'in the code' (singular, locative). This changes the meaning but the overall intent is still understandable.",
+      "error": "Deletion: 'kodu' at position 3",
+      "reason": "Omitting 'kodu' (the word for 'code') removes important information, making the sentence less clear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kodlar' to 'kodda' at position 7",
+      "reason": "'kodlar' (codes) and 'kodda' (in the code) are related but have different meanings; the substitution changes the meaning but not drastically.",
       "score": 2
     },
     {
-      "error": "Substitution: 'E' to 'EN' at position 11",
-      "reason": "Instead of the letter 'E', 'EN' is transcribed, which is a significant error in the context of spelling out a code.",
-      "score": 1
+      "error": "Substitution: 'dedin' to 'dedi' at position 13",
+      "reason": "Minor grammatical difference (you said vs. he/she said), but the overall meaning is mostly preserved.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'N' at position 12",
-      "reason": "Missing the letter 'N' in a spelled-out code is a significant error, as it changes the code entirely.",
-      "score": 1
+      "error": "Substitution: 'dedin' to 'dedi' at position 17",
+      "reason": "Same as above, minor grammatical difference, meaning is mostly preserved.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'E' to 'EA' at position 15",
-      "reason": "Instead of the letter 'E', 'EA' is transcribed, which is a significant error in the context of spelling out a code.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'Kodu' at position 18",
-      "reason": "Omitting 'Kodu' ('the code') slightly reduces clarity but does not significantly change the meaning of the request.",
+      "error": "Substitution: 'yavasca' to 'ya' at position 23",
+      "reason": "Inserting 'yavas' (slow) before 'ya' does not significantly change the meaning, as it relates to the manner of speaking.",
       "score": 2
     }
   ]

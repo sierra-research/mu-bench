@@ -1,15 +1,26 @@
 {
   "gold": "你听到了吗？",
-  "predicted": "你听到了吗？",
+  "predicted": "Ching daolama.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你听到了吗？",
-  "werNormalizedPredicted": "你听到了吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "你 听 到 了 吗 ？",
-  "sigWerNormalizedPredicted": "你 听 到 了 吗 ？",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你 听 到 了 吗",
+  "werNormalizedPredicted": "ching daolama",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "你 听 到 了 吗",
+  "sigWerNormalizedPredicted": "ching daolama",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'ching' at position 0",
+      "reason": "The actual transcription is in a different language and does not correspond to the expected Chinese word, resulting in a complete loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '到' at position 2",
+      "reason": "The actual transcription is in a different language and does not correspond to the expected Chinese word, resulting in a complete loss of meaning.",
+      "score": 1
+    }
+  ]
 }

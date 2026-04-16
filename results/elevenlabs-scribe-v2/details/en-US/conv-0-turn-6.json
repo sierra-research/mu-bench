@@ -1,20 +1,25 @@
 {
   "gold": "I see it.",
-  "predicted": "I see",
+  "predicted": "अछिये",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "I see it.",
-  "werNormalizedPredicted": "I see",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "i see it",
+  "werNormalizedPredicted": "अछिये",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "I see it.",
-  "sigWerNormalizedPredicted": "I see",
+  "sigWerNormalizedGold": "i see it",
+  "sigWerNormalizedPredicted": "अछिये",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'it.' at position 2",
-      "reason": "The word 'it' is omitted, which makes the sentence incomplete and changes the meaning. The listener does not know what is being seen.",
+      "error": "Substitution: 'i' to 'अछिये' at position 0",
+      "reason": "The actual transcription is in a different language (Hindi) than the expected (English), making the meaning completely different and incoherent for the intended context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'see' at position 1",
+      "reason": "The word 'see' is missing entirely, further derailing the meaning of the sentence.",
       "score": 1
     }
   ]

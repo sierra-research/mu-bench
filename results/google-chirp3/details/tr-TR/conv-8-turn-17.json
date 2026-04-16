@@ -1,21 +1,26 @@
 {
   "gold": "Hayır adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zaynep, Z A Y N E P ya da Türkçe olarak kodlayayım, Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa.",
-  "predicted": "Hayır, adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zeynep z a y n e p ya da Türkçe olarak kodlayayım. Zonguldak, Adana, Yozgat, Niğde, Edirne, Pırasa.",
+  "predicted": "Hayır, adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zeynep ZEYNEP ya da Türkçe olarak kodlayayım. Zonguldak, Adana, Yozgat, Niğde, Edirne, Pırasa",
   "unintelligible": false,
-  "wer": 0.037037037037037035,
-  "werNormalizedGold": "Hayır adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zaynep, Z A Y N E P ya da Türkçe olarak kodlayayım, Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa.",
-  "werNormalizedPredicted": "Hayır, adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zaynep, Z A Y N E P ya da Türkçe olarak kodlayayım, Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.07407407407407407,
+  "werNormalizedGold": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zaynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
+  "werNormalizedPredicted": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zeynep z e y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
+  "qualityScore": null,
+  "significantWer": 0.037037037037037035,
+  "majorErrorsCount": 1,
   "totalWordsCount": 27,
-  "sigWerNormalizedGold": "Hayır adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zaynep, Z A Y N E P ya da Türkçe olarak kodlayayım, Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa.",
-  "sigWerNormalizedPredicted": "Hayır, adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zaynep, Z A Y N E P ya da Türkçe olarak kodlayayım, Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa.",
+  "sigWerNormalizedGold": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zaynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
+  "sigWerNormalizedPredicted": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zeynep z e y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "The only difference is the presence of a comma, which is punctuation and should be ignored according to the guidance.",
-      "score": 3
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
+      "reason": "Minor misspelling of a proper noun, but the name is still recognizable and the meaning is clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'a' to 'e' at position 11",
+      "reason": "In a spelled-out name, a single letter difference changes the spelling and the intended name, which is a significant error.",
+      "score": 1
     }
   ]
 }

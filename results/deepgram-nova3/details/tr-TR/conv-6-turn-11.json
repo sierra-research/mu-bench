@@ -3,28 +3,28 @@
   "predicted": "Başka bir türlü yardımcı olmanız gerekiyor. Teşekkür ederim, iyi günler dilerim.",
   "unintelligible": false,
   "wer": 0.36363636363636365,
-  "werNormalizedGold": "Başka türlü yardımcı olmanıza gerek yok. Teşekkür ederim, iyi günler dilerim.",
-  "werNormalizedPredicted": "Başka bir türlü yardımcı olmanız gerekiyor. Teşekkür ederim, iyi günler dilerim.",
-  "qualityScore": 2,
+  "werNormalizedGold": "başka türlü yardımcı olmanıza gerek yok teşekkür ederim iyi günler dilerim",
+  "werNormalizedPredicted": "başka bir türlü yardımcı olmanız gerekiyor teşekkür ederim iyi günler dilerim",
+  "qualityScore": null,
   "significantWer": 0.09090909090909091,
   "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Başka türlü yardımcı olmanıza gerek yok. Teşekkür ederim, iyi günler dilerim.",
-  "sigWerNormalizedPredicted": "Başka bir türlü yardımcı olmanız gerekiyor. Teşekkür ederim, iyi günler dilerim.",
+  "sigWerNormalizedGold": "başka türlü yardımcı olmanıza gerek yok teşekkür ederim iyi günler dilerim",
+  "sigWerNormalizedPredicted": "başka bir türlü yardımcı olmanız gerekiyor teşekkür ederim iyi günler dilerim",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 1",
-      "reason": "Adding 'bir' (one/a) slightly changes the nuance but does not significantly alter the meaning of the sentence.",
+      "reason": "Adding 'bir' (one) before 'türlü' (way) does not significantly change the meaning of the sentence; it is a minor stylistic difference.",
       "score": 2
     },
     {
       "error": "Substitution: 'olmanıza' to 'olmanız' at position 3",
-      "reason": "'Olmanıza' (for you to be) vs 'olmanız' (you to be) is a minor grammatical difference in Turkish, but the intent remains clear.",
+      "reason": "Changing 'olmanıza' (for you to be) to 'olmanız' (you are) is a minor grammatical difference in this context and does not change the overall meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'yok.' at position 5",
-      "reason": "'Gerek yok' means 'not necessary', while 'gerekiyor' means 'necessary/required', which reverses the meaning of the sentence and causes a significant misunderstanding.",
+      "error": "Deletion: 'yok' at position 5",
+      "reason": "Omitting 'yok' (no/not) changes the meaning of the sentence, as it negates the need for help. Its absence makes the sentence say the opposite, which is a significant error.",
       "score": 1
     }
   ]

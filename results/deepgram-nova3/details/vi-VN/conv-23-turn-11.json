@@ -2,29 +2,29 @@
   "gold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
   "predicted": "Tôi muốn hỏi được là tôi được cấp một lần thay thẻ không để làm sức cua",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
-  "werNormalizedPredicted": "Tôi muốn hỏi, được là tôi được cấp một lần thay thẻ không, để làm sơ cua.",
-  "qualityScore": 2,
+  "wer": 0.35714285714285715,
+  "werNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
+  "werNormalizedPredicted": "tôi muốn hỏi được là tôi được cấp một lần thay thẻ không để làm sức cua",
+  "qualityScore": null,
   "significantWer": 0.07142857142857142,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
-  "sigWerNormalizedPredicted": "Tôi muốn hỏi, được là tôi được cấp một lần thay thẻ không, để làm sơ cua.",
+  "sigWerNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi được là tôi được cấp một lần thay thẻ không để làm sức cua",
   "sigWerErrors": [
     {
       "error": "Insertion: 'được' at position 3",
-      "reason": "The insertion of 'được' before 'là tôi được cấp' is redundant and does not change the overall meaning of the sentence.",
+      "reason": "The insertion of 'được' does not significantly change the meaning of the sentence; it is a minor grammatical addition.",
       "score": 2
     },
     {
       "error": "Substitution: 'hai' to 'thay' at position 8",
-      "reason": "Substituting 'hai' (two) with 'thay' (replace) changes the meaning from asking about receiving two cards to asking about replacing a card, which significantly alters the intent of the sentence.",
+      "reason": "'hai' means 'two' and 'thay' means 'replace'; this changes the meaning from asking about two cards to asking about replacing a card, which is a significant change.",
       "score": 1
     },
     {
-      "error": "Insertion: 'làm' at position 12",
-      "reason": "The insertion of 'làm' before 'sơ cua' is minor and does not change the overall meaning, as 'làm sơ cua' still refers to the purpose of having a spare card.",
+      "error": "Substitution: 'sơ' to 'sức' at position 12",
+      "reason": "The insertion of 'làm' (to do/make) before 'sức cua' adds an action that was not present, but does not make the sentence incoherent.",
       "score": 2
     }
   ]

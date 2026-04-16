@@ -1,15 +1,31 @@
 {
   "gold": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "predicted": "+25512345678",
+  "predicted": "2 5 5 1 2 3 4 5 6 7 8",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.23076923076923078,
+  "werNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "qualityScore": null,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'más' at position 0",
+      "reason": "'más' (meaning 'plus' or 'more') is omitted, which could change the meaning of the number sequence, especially if it is a phone number or code. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 2",
+      "reason": "'cincuenta' (fifty) is replaced with 'cinco' (five), which changes the number entirely and could result in a completely different code or phone number. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 3",
+      "reason": "'y' (meaning 'and') is omitted. In the context of reading numbers, this is a minor error as it does not change the numbers themselves, just the way they are grouped or read.",
+      "score": 2
+    }
+  ]
 }

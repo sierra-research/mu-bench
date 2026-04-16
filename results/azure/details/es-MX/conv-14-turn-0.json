@@ -2,30 +2,25 @@
   "gold": "Buenos días. Es que noté, me llegó una notificación en la app de una transferencia pero pues yo no la hice. Y me preocupa mucha.",
   "predicted": "Buenos días, es que no te me llegó una notificación en la app de una transferencia, pero pues yo no la hice y me preocupa mucho.",
   "unintelligible": false,
-  "wer": 0.16,
-  "werNormalizedGold": "Buenos días. Es que noté, me llegó una notificación en la app de una transferencia pero pues yo no la hice. Y me preocupa mucha.",
-  "werNormalizedPredicted": "Buenos días. Es que no te me llegó una notificación en la app de una transferencia, pero pues yo no la hice. Y me preocupa mucho.",
-  "qualityScore": 3,
-  "significantWer": 0.08,
-  "majorErrorsCount": 2,
+  "wer": 0.12,
+  "werNormalizedGold": "buenos dias es que note me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucha",
+  "werNormalizedPredicted": "buenos dias es que no te me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucho",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 25,
-  "sigWerNormalizedGold": "Buenos días. Es que noté, me llegó una notificación en la app de una transferencia pero pues yo no la hice. Y me preocupa mucha.",
-  "sigWerNormalizedPredicted": "Buenos días. Es que no te me llegó una notificación en la app de una transferencia, pero pues yo no la hice. Y me preocupa mucho.",
+  "sigWerNormalizedGold": "buenos dias es que note me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucha",
+  "sigWerNormalizedPredicted": "buenos dias es que no te me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucho",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'noté,' to 'te' at position 4",
-      "reason": "The insertion of 'no' changes the meaning of the sentence from 'I noticed' to 'I did not notice', which is a significant change in meaning.",
-      "score": 1
+      "error": "Substitution: 'note' to 'te' at position 4",
+      "reason": "'no' is inserted before 'te', but in context, this is likely a mis-segmentation of 'note' (should be 'note' not 'no te'). The meaning is not significantly changed, but the phrase is split incorrectly.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'transferencia' to 'transferencia,' at position 14",
-      "reason": "Replacing 'noté' (I noticed) with 'te' (to you) makes the sentence incoherent and changes the subject and meaning significantly.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'mucha.' to 'mucho.' at position 24",
-      "reason": "The only difference is the comma, which is a punctuation difference and does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'mucha' to 'mucho' at position 24",
+      "reason": "'note' (should be 'note' as in 'note me llegó') is split into 'no' and 'te', which is a minor error in segmentation but does not change the overall meaning of the sentence.",
+      "score": 2
     }
   ]
 }

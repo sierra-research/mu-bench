@@ -1,31 +1,26 @@
 {
   "gold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
-  "predicted": "Hayır tekrar baştan söylüyorum yazar mısın? Artı doksan, tekrar indirelim.",
+  "predicted": "Hayır, tekrar baştan söylüyorum, yazar mısın? Artı doksan. Tekrar indirin.",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werNormalizedGold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
-  "werNormalizedPredicted": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı doksan, tekrar indirelim.",
-  "qualityScore": 2,
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "wer": 0.18181818181818182,
+  "werNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "werNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar indirin",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
-  "sigWerNormalizedPredicted": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı doksan, tekrar indirelim.",
+  "sigWerNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "sigWerNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar indirin",
   "sigWerErrors": [
     {
-      "error": "Substitution: '90,' to 'doksan,' at position 7",
-      "reason": "'90' and 'doksan' are numeric equivalents (90 = doksan in Turkish), so this is not an error.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'dinle' to 'indirelim.' at position 9",
-      "reason": "'Dinle' means 'listen' and 'indirelim' means 'let's download'; this changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'dinle' to 'indirin' at position 9",
+      "reason": "'dinle' means 'listen' and 'indirin' means 'download' or 'lower'; this changes the action being requested and alters the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'beni.' at position 10",
-      "reason": "Omitting 'beni' ('me') changes the object of the command, which can affect the meaning but does not completely derail the sentence.",
-      "score": 2
+      "error": "Deletion: 'beni' at position 10",
+      "reason": "Omitting 'beni' ('me') removes the object of the action, making the sentence incomplete and less clear.",
+      "score": 1
     }
   ]
 }

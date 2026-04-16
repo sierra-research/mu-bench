@@ -2,25 +2,30 @@
   "gold": "Yedek kartla ana kartın bir farkı var mıdır acaba? Onu siz bilebiliyor musunuz?",
   "predicted": "Yedek kartla anakartın bir farkı var mıdır acaba? Bunu siz bilebiliyor musunuz?",
   "unintelligible": false,
-  "wer": 0.15384615384615385,
-  "werNormalizedGold": "Yedek kartla ana kartın bir farkı var mıdır acaba? Onu siz bilebiliyor musunuz?",
-  "werNormalizedPredicted": "Yedek kartla anakartın bir farkı var mıdır acaba? Onu siz bilebiliyor musunuz?",
-  "qualityScore": 3,
+  "wer": 0.23076923076923078,
+  "werNormalizedGold": "yedek kartla ana kartın bir farkı var mıdır acaba onu siz bilebiliyor musunuz",
+  "werNormalizedPredicted": "yedek kartla anakartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz",
+  "qualityScore": null,
   "significantWer": 0.15384615384615385,
   "majorErrorsCount": 2,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Yedek kartla ana kartın bir farkı var mıdır acaba? Onu siz bilebiliyor musunuz?",
-  "sigWerNormalizedPredicted": "Yedek kartla anakartın bir farkı var mıdır acaba? Onu siz bilebiliyor musunuz?",
+  "sigWerNormalizedGold": "yedek kartla ana kartın bir farkı var mıdır acaba onu siz bilebiliyor musunuz",
+  "sigWerNormalizedPredicted": "yedek kartla anakartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz",
   "sigWerErrors": [
     {
       "error": "Substitution: 'ana' to 'anakartın' at position 2",
-      "reason": "'ana' (mother/main) and 'anakartın' (your motherboard) are different words; 'anakartın' is a compound word that changes the meaning from 'main card' to 'your motherboard', which is a significant change in meaning.",
+      "reason": "'ana' (main) and 'anakartın' (your motherboard) are different words; 'anakartın' is a specific noun while 'ana' is an adjective. This changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'kartın' at position 3",
-      "reason": "'kartın' (your card) is omitted in the actual transcription, which further changes the meaning from 'main card' to 'motherboard', making the sentence refer to a different object.",
+      "reason": "The word 'kartın' (your card) is omitted because 'anakartın' is used instead. This is part of the previous substitution and contributes to the significant change in meaning.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'onu' to 'bunu' at position 9",
+      "reason": "'onu' (that) and 'bunu' (this) refer to different things. The substitution changes the reference in the sentence, but the overall meaning is still understandable.",
+      "score": 2
     }
   ]
 }

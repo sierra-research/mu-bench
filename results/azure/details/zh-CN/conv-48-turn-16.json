@@ -1,26 +1,21 @@
 {
   "gold": "君玲 at email dot com。已经说了几次。",
-  "predicted": "Dreamlin@email.com已经说了几次.",
+  "predicted": "Dreamlin@email.com已经说了这次.",
   "unintelligible": false,
-  "wer": 0.35714285714285715,
-  "werNormalizedGold": "君玲 at email dot com。已经说了几次。",
-  "werNormalizedPredicted": "君玲@email.com，已经说了几次。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "君 玲 at email dot com 。 已 经 说 了 几 次 。",
-  "sigWerNormalizedPredicted": "君 玲 @email.com ， 已 经 说 了 几 次 。",
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "君玲 at email dot com 已经说了几次",
+  "werNormalizedPredicted": "君玲 at email dot com 已经说了这次",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "君 玲 at email dot com 已 经 说 了 几 次",
+  "sigWerNormalizedPredicted": "君 玲 at email dot com 已 经 说 了 这 次",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'at' to '@email.com' at position 2",
-      "reason": "The actual transcription uses the symbol '@' and combines 'email.com' as a single token, whereas the expected transcription spells out 'at email dot com'. This is a format difference but the meaning is preserved (the email address is clear in both).",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'dot' at position 4",
-      "reason": "'dot' is omitted in the actual transcription because the email address is written as '@email.com', which is the standard way to write an email address. The meaning is unchanged.",
-      "score": 2
+      "error": "Substitution: '几' to '这' at position 10",
+      "reason": "'几次' means 'several times', while '这次' means 'this time'. This changes the meaning of the sentence from referring to multiple occurrences to a single occurrence, which is a significant change in meaning.",
+      "score": 1
     }
   ]
 }

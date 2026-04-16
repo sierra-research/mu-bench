@@ -1,20 +1,25 @@
 {
   "gold": "Thôi. Vậy thôi.",
-  "predicted": "Tôi chỉ thôi.",
+  "predicted": "Rồi.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Thôi. Vậy thôi.",
-  "werNormalizedPredicted": "Tôi chỉ thôi.",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "thôi vậy thôi",
+  "werNormalizedPredicted": "rồi",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Thôi. Vậy thôi.",
-  "sigWerNormalizedPredicted": "Tôi chỉ thôi.",
+  "sigWerNormalizedGold": "thôi vậy thôi",
+  "sigWerNormalizedPredicted": "rồi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thôi.' to 'Tôi' at position 0",
-      "reason": "'Thôi' means 'stop' or 'that's enough' in Vietnamese, while 'Tôi' means 'I' (the pronoun). This substitution changes the subject and meaning of the sentence, making it incoherent and significantly altering the intended message.",
+      "error": "Substitution: 'thôi' to 'rồi' at position 0",
+      "reason": "'thôi' and 'rồi' have different meanings in Vietnamese; 'thôi' means 'stop' or 'that's enough', while 'rồi' means 'already' or 'then'. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'vậy' at position 1",
+      "reason": "Omitting 'vậy' removes an important part of the phrase, making the actual transcription incomplete and altering the intended meaning.",
       "score": 1
     }
   ]

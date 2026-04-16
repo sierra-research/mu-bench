@@ -1,21 +1,26 @@
 {
   "gold": "Sí, ¿podrías notificar?",
-  "predicted": "Sí, sí, por podría podría hacer notificar.",
+  "predicted": "noticias",
   "unintelligible": false,
-  "wer": 2.3333333333333335,
-  "werNormalizedGold": "Sí, ¿podrías notificar?",
-  "werNormalizedPredicted": "sí, sí, por podría podría hacer notificar.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "si podrias notificar",
+  "werNormalizedPredicted": "noticias",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Sí, ¿podrías notificar?",
-  "sigWerNormalizedPredicted": "sí, sí, por podría podría hacer notificar.",
+  "sigWerNormalizedGold": "si podrias notificar",
+  "sigWerNormalizedPredicted": "noticias",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sí,' to 'podría' at position 0",
-      "reason": "The repeated 'sí,' adds redundancy but does not change the overall meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'si' to 'noticias' at position 0",
+      "reason": "'si' (if) is replaced by 'noticias' (news), which completely changes the meaning of the sentence and makes it incoherent with the expected intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'podrias' at position 1",
+      "reason": "The omission of 'podrias' (could you) removes the polite request structure, further derailing the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

@@ -1,20 +1,25 @@
 {
   "gold": "Sẵn sàng.",
-  "predicted": "Ừ ỉ.",
+  "predicted": "Ẩm.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "Sẵn sàng.",
-  "werNormalizedPredicted": "Ừ ỉ.",
-  "qualityScore": 1,
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "sẵn sàng",
+  "werNormalizedPredicted": "ẩm",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Sẵn sàng.",
-  "sigWerNormalizedPredicted": "Ừ ỉ.",
+  "sigWerNormalizedGold": "sẵn sàng",
+  "sigWerNormalizedPredicted": "ẩm",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sẵn' to 'Ừ' at position 0",
-      "reason": "'Sẵn sàng' means 'ready' in Vietnamese, while 'Ừ' is an informal affirmative like 'uh-huh' or 'yes', which does not convey the same meaning. This substitution changes the intent of the sentence completely.",
+      "error": "Substitution: 'sẵn' to 'ẩm' at position 0",
+      "reason": "'sẵn' and 'ẩm' are completely different words with unrelated meanings, which changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 1",
+      "reason": "Omitting 'sàng' removes a key part of the phrase, making the actual transcription incoherent and unrelated to the expected meaning.",
       "score": 1
     }
   ]

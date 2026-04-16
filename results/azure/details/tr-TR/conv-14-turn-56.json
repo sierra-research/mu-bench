@@ -1,15 +1,26 @@
 {
   "gold": "Bu defa tek tek söyleyeceğim, çünkü toplu olarak söyleyince anlamıyorsunuz. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "predicted": "Bu defa tek tek söyleyeceğim çünkü toplu olarak söyleyince anlamıyorsunuz+ 9012 üçsıfır dokuzsıfır, 4567.",
+  "predicted": "Bu defa tek tek söyleyeceğim çünkü toplu olarak söyleyenizi anlamıyorsunuz+ 9012 üçsıfır dokuzsıfır, 4567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Bu defa tek tek söyleyeceğim, çünkü toplu olarak söyleyince anlamıyorsunuz. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "werNormalizedPredicted": "Bu defa tek tek söyleyeceğim, çünkü toplu olarak söyleyince anlamıyorsunuz. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.08695652173913043,
+  "werNormalizedGold": "bu defa tek tek soyleyecegim cunku toplu olarak soyleyince anlamiyorsunuz arti dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
+  "werNormalizedPredicted": "bu defa tek tek soyleyecegim cunku toplu olarak soyleyenizi anlamiyorsunuz dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
+  "qualityScore": null,
+  "significantWer": 0.043478260869565216,
+  "majorErrorsCount": 1,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "Bu defa tek tek söyleyeceğim, çünkü toplu olarak söyleyince anlamıyorsunuz. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "sigWerNormalizedPredicted": "Bu defa tek tek söyleyeceğim, çünkü toplu olarak söyleyince anlamıyorsunuz. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "bu defa tek tek soyleyecegim cunku toplu olarak soyleyince anlamiyorsunuz arti dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
+  "sigWerNormalizedPredicted": "bu defa tek tek soyleyecegim cunku toplu olarak soyleyenizi anlamiyorsunuz dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'soyleyince' to 'soyleyenizi' at position 8",
+      "reason": "'soyleyince' means 'when you say', while 'soyleyenizi' is not a standard word and seems to be a misrecognition, making the sentence less coherent but the overall meaning is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'arti' at position 10",
+      "reason": "'Arti' (meaning 'plus') is omitted, which is significant in the context of reading out a phone number or code, as it changes the information being conveyed.",
+      "score": 1
+    }
+  ]
 }

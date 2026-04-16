@@ -1,26 +1,41 @@
 {
   "gold": "Shoo. For this one. I'm thinking. Ah, hold on. Hold on. Hold on. Let me see. Let me see. Man, this dog will not stop. Wooh. It's got to be annoying to hear that dog just snoring this whole day. Alright. It's John dot Brown at email dot com.",
-  "predicted": "Shoot. For this one, I'm thinking, uh... Hold on, hold on, hold on. Let me see, let me see. Man, this dog will not stop. That's gotta be annoying to hear that dog just, just snoring this whole day. All right. Um, it's john.brown@email.com",
+  "predicted": "Shoot, for this one, I'm thinking, uh... Hold on, hold on, hold on. Let me see, let me see. Man, this dog will not stop. That's gotta be annoying to hear that dog just, just snoring this whole day. All right. Um, it's john.brown@email.com",
   "unintelligible": false,
-  "wer": 0.04081632653061224,
-  "werNormalizedGold": "Shoo. For this one. I'm thinking. Ah, hold on. Hold on. Hold on. Let me see. Let me see. Man, this dog will not stop. Wooh. It's got to be annoying to hear that dog just snoring this whole day. Alright. It's John dot Brown at email dot com.",
-  "werNormalizedPredicted": "Shoo. For this one. I'm thinking. Ah, hold on. Hold on. Hold on. Let me see. Let me see. Man, this dog will not stop. That's got to be annoying to hear that dog just snoring this whole day. Alright. It's John dot Brown at email dot com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 49,
-  "sigWerNormalizedGold": "Shoo. For this one. I'm thinking. Ah, hold on. Hold on. Hold on. Let me see. Let me see. Man, this dog will not stop. Wooh. It's got to be annoying to hear that dog just snoring this whole day. Alright. It's John dot Brown at email dot com.",
-  "sigWerNormalizedPredicted": "Shoo. For this one. I'm thinking. Ah, hold on. Hold on. Hold on. Let me see. Let me see. Man, this dog will not stop. That's got to be annoying to hear that dog just snoring this whole day. Alright. It's John dot Brown at email dot com.",
+  "wer": 0.11764705882352941,
+  "werNormalizedGold": "shoo for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop wooh it is got to be annoying to hear that dog just snoring this whole day alright it is john dot brown at email dot com",
+  "werNormalizedPredicted": "shoot for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop that is got to be annoying to hear that dog just just snoring this whole day all right it is john dot brown at email dot com",
+  "qualityScore": null,
+  "significantWer": 0.0196078431372549,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 51,
+  "sigWerNormalizedGold": "shoo for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop wooh it is got to be annoying to hear that dog just snoring this whole day alright it is john dot brown at email dot com",
+  "sigWerNormalizedPredicted": "shoot for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop that is got to be annoying to hear that dog just just snoring this whole day all right it is john dot brown at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Wooh.' to 'That's' at position 25",
-      "reason": "'Wooh.' is an interjection expressing a reaction, while 'That's' starts a new clause and changes the structure of the sentence. However, the overall meaning (complaining about the dog snoring) is preserved.",
+      "error": "Substitution: 'shoo' to 'shoot' at position 0",
+      "reason": "'Shoo' is an interjection to drive something away, while 'shoot' is an exclamation or verb; the substitution changes the meaning at the start of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'wooh' to 'that' at position 25",
+      "reason": "'Wooh' is an exclamation expressing a reaction, while 'that' is a pronoun; this substitution removes the expressive reaction and changes the tone.",
       "score": 2
     },
     {
-      "error": "Deletion: 'It's' at position 26",
-      "reason": "'It's' is omitted, but the sentence still conveys the same idea about the annoyance of the dog snoring. The omission does not significantly change the meaning.",
+      "error": "Deletion: 'it' at position 26",
+      "reason": "Omitting 'it' from 'it is got to be annoying' makes the sentence less grammatical but the meaning is still understandable.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'just' at position 37",
+      "reason": "Repeating 'just' in 'that dog just just snoring' is a minor redundancy and does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'alright' to 'right' at position 41",
+      "reason": "Adding 'all' in 'all right' instead of 'alright' is a stylistic difference and does not affect meaning.",
+      "score": 3
     }
   ]
 }

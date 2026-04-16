@@ -2,35 +2,25 @@
   "gold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
   "predicted": "Ờm, tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức?",
   "unintelligible": false,
-  "wer": 0.3125,
-  "werNormalizedGold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
-  "werNormalizedPredicted": "Ờm, tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.125,
+  "werNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "werNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
-  "sigWerNormalizedPredicted": "Ờm, tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức?",
+  "sigWerNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "'Ờm,' is a filler word (like 'um' in English) and does not affect the meaning of the sentence.",
-      "score": 3
-    },
-    {
       "error": "Insertion: 'không' at position 10",
-      "reason": "Difference in capitalization only, which should be ignored.",
-      "score": 3
+      "reason": "The word 'không' (meaning 'no' or 'not') is inserted before 'để được tăng hạn mức', which changes the meaning of the sentence. It now asks if income proof is not needed to increase the limit, rather than if it is needed. This alters the intent of the question significantly.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'mức' to 'mức?' at position 14",
-      "reason": "The word 'không' (no/not) is moved in the sentence, but the overall meaning and intent of the question remain the same.",
+      "error": "Deletion: 'không' at position 15",
+      "reason": "The expected sentence ends with 'không', which is a common way to form a yes/no question in Vietnamese. Its omission in the actual sentence makes the sentence less clear as a question, but the main meaning is still somewhat understandable. However, combined with the earlier insertion, the overall meaning is significantly changed.",
       "score": 2
-    },
-    {
-      "error": "Deletion: 'không?' at position 15",
-      "reason": "Difference is only in punctuation, which should be ignored.",
-      "score": 3
     }
   ]
 }

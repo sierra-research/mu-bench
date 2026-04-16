@@ -1,15 +1,26 @@
 {
   "gold": "It's John Brown.",
-  "predicted": "It's John Brown.",
+  "predicted": "Yes, John Brown.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "It's John Brown.",
-  "werNormalizedPredicted": "It's John Brown.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "It's John Brown.",
-  "sigWerNormalizedPredicted": "It's John Brown.",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "it is john brown",
+  "werNormalizedPredicted": "yes john brown",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "it is john brown",
+  "sigWerNormalizedPredicted": "yes john brown",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'it' to 'yes' at position 0",
+      "reason": "'yes' is an affirmation, while 'it' is a pronoun referring to something specific. This substitution changes the meaning of the sentence and could confuse the listener about what is being affirmed.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 1",
+      "reason": "Omitting 'is' slightly affects the grammatical structure but does not significantly change the meaning, as 'john brown' is still identified. However, the sentence is less clear and less natural.",
+      "score": 2
+    }
+  ]
 }

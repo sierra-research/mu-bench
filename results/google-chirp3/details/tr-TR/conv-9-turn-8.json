@@ -2,14 +2,25 @@
   "gold": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
   "predicted": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet'le Arslan arasında nokta olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "werNormalizedPredicted": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "qualityScore": 3,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
+  "werNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmetinle arslan arasında nokta olacak",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "sigWerNormalizedPredicted": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "sigWerErrors": []
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
+  "sigWerNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmetinle arslan arasında nokta olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetinle' at position 8",
+      "reason": "'ahmetinle' is a grammatical fusion of 'ahmet' and 'ile' (meaning 'with Ahmet'), which changes the structure but not the overall meaning of the sentence. The intent (that there should be a dot between Ahmet and Arslan) is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ile' at position 9",
+      "reason": "'ile' (meaning 'with') is omitted because it was fused into 'ahmetinle'. The meaning is preserved, but the grammatical structure is altered.",
+      "score": 2
+    }
+  ]
 }

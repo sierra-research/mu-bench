@@ -1,20 +1,25 @@
 {
   "gold": "Tôi mới nói là C N 7 5 9 mà.",
-  "predicted": "Tôi mới nói bậy, tôi mới nói là CN759 mà.",
+  "predicted": "Tôi mới nói bậy, tôi mới nói là CM759 mà.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "Tôi mới nói là C N 7 5 9 mà.",
-  "werNormalizedPredicted": "Tôi mới nói bậy, tôi mới nói là C N 7 5 9 mà.",
-  "qualityScore": 2,
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "wer": 0.5,
+  "werNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "werNormalizedPredicted": "tôi mới nói bậy tôi mới nói là c m bảy năm chín mà",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tôi mới nói là C N 7 5 9 mà.",
-  "sigWerNormalizedPredicted": "Tôi mới nói bậy, tôi mới nói là C N 7 5 9 mà.",
+  "sigWerNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "sigWerNormalizedPredicted": "tôi mới nói bậy tôi mới nói là c m bảy năm chín mà",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'bậy,' at position 3",
-      "reason": "'bậy' means 'wrong' or 'nonsense' in Vietnamese, and its insertion changes the meaning of the sentence by implying the previous statement was incorrect or nonsense. This addition alters the intent and coherence of the original sentence.",
+      "error": "Insertion: 'bậy' at position 3",
+      "reason": "The insertion of 'bậy' ('bậy' means 'wrong' or 'nonsense' in Vietnamese) changes the meaning of the sentence, making it incoherent or suggesting the speaker said something wrong, which is not present in the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'n' to 'm' at position 5",
+      "reason": "Substituting 'n' with 'm' in the context of a code or identifier (like 'c n' vs 'c m') can significantly change the intended meaning, especially if these are initials or codes. This is a significant error.",
       "score": 1
     }
   ]

@@ -3,24 +3,19 @@
   "predicted": "How?",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "好。",
-  "werNormalizedPredicted": "How?",
-  "qualityScore": 1,
-  "significantWer": 0.5,
+  "werNormalizedGold": "好",
+  "werNormalizedPredicted": "how",
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 1,
-  "totalWordsCount": 2,
-  "sigWerNormalizedGold": "好 。",
-  "sigWerNormalizedPredicted": "How?",
+  "totalWordsCount": 1,
+  "sigWerNormalizedGold": "好",
+  "sigWerNormalizedPredicted": "how",
   "sigWerErrors": [
     {
-      "error": "Substitution: '好' to 'How?' at position 0",
-      "reason": "The expected word is in Chinese ('好', meaning 'good' or 'okay'), while the actual is an English question ('How?'). This is a language mismatch and a complete change in meaning.",
+      "error": "Substitution: '好' to 'how' at position 0",
+      "reason": "The expected word is in Chinese ('好', meaning 'good' or 'okay'), while the actual transcription is the English word 'how'. This is a language mismatch and the words are not semantically related, resulting in a significant error.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 1",
-      "reason": "Punctuation differences are to be ignored according to the guidance.",
-      "score": 3
     }
   ]
 }

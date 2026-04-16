@@ -1,31 +1,26 @@
 {
   "gold": "我想提高我的信用卡额度。",
-  "predicted": "我想提高的犀牛科恶毒",
+  "predicted": "我想提高的信有科恶毒。",
   "unintelligible": false,
-  "wer": 0.5833333333333334,
-  "werNormalizedGold": "我想提高我的信用卡额度。",
-  "werNormalizedPredicted": "我想提高的犀牛科恶毒",
-  "qualityScore": 1,
-  "significantWer": 0.16666666666666666,
+  "wer": 0.45454545454545453,
+  "werNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
+  "werNormalizedPredicted": "我 想 提 高 的 信 有 科 恶 毒",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
   "majorErrorsCount": 2,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度 。",
-  "sigWerNormalizedPredicted": "我 想 提 高 的 犀 牛 科 恶 毒",
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "我 想 提 高 的 信 有 科 恶 毒",
   "sigWerErrors": [
     {
       "error": "Deletion: '我' at position 4",
-      "reason": "The omission of '我' (I/my) removes the subject of the phrase '我的信用卡额度', making the sentence incomplete and confusing.",
+      "reason": "The omission of '我' (I) removes the subject of the clause, making the sentence less clear and potentially confusing the meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: '信' to '犀' at position 6",
-      "reason": "'信用卡' (credit card) is replaced with '犀牛科' (rhinoceros family), which is completely unrelated and changes the meaning of the sentence drastically.",
+      "error": "Substitution: '用' to '有' at position 7",
+      "reason": "'信用卡' (credit card) is a fixed phrase; substituting '用' (use) with '有' (have) breaks the phrase and makes the sentence incoherent, significantly altering the meaning.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 11",
-      "reason": "Missing punctuation at the end does not affect the meaning of the sentence.",
-      "score": 3
     }
   ]
 }

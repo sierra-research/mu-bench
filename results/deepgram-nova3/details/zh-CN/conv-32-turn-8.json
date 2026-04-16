@@ -1,30 +1,20 @@
 {
   "gold": "需要，请帮我提升额度。",
-  "predicted": "必要情报提升额度",
+  "predicted": "第二请帮我提升额度。",
   "unintelligible": false,
-  "wer": 0.45454545454545453,
-  "werNormalizedGold": "需要，请帮我提升额度。",
-  "werNormalizedPredicted": "必要情报，提升额度。",
-  "qualityScore": 1,
-  "significantWer": 0.18181818181818182,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "需 要 ， 请 帮 我 提 升 额 度 。",
-  "sigWerNormalizedPredicted": "必 要 情 报 ， 提 升 额 度 。",
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "需要 请帮我提升额度",
+  "werNormalizedPredicted": "第二 请帮我提升额度",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "需 要 请 帮 我 提 升 额 度",
+  "sigWerNormalizedPredicted": "第 二 请 帮 我 提 升 额 度",
   "sigWerErrors": [
     {
-      "error": "Substitution: '需' to '必' at position 0",
-      "reason": "'需' (need) and '必' (must/necessary) are similar in meaning, but '必' is stronger and changes the nuance of the request. The overall intent is still understandable.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: '，' to '情' at position 2",
-      "reason": "Replacing a comma with '情' (emotion/situation) introduces a new word and changes the sentence structure, making the meaning less clear.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '我' at position 5",
-      "reason": "Omitting '我' (I/me) removes the subject, making it unclear who is making the request. This significantly affects the meaning.",
+      "error": "Substitution: '需' to '第' at position 0",
+      "reason": "'需' means 'need' while '第' means 'number' or 'ordinal', which changes the meaning of the sentence and makes it incoherent in context.",
       "score": 1
     }
   ]

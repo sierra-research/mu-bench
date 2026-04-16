@@ -1,30 +1,30 @@
 {
   "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "predicted": "Daha önce web sitesi istemiştim aylık. Henüz şu ana kadar gelmedi. Bana gönderebilir misiniz web sitesini?",
+  "predicted": "Daha önce WhatsApp ekstresi istemiştim aylık. Henüz şu ana kadar gelmedi. Bana gönderebilir misiniz WhatsApp ekstresini?",
   "unintelligible": false,
-  "wer": 0.375,
-  "werNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "werNormalizedPredicted": "Daha önce web sitesi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misiniz web sitesini?",
-  "qualityScore": 1,
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
+  "wer": 0.25,
+  "werNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha once whatsapp ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misiniz whatsapp ekstresini",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "sigWerNormalizedPredicted": "Daha önce web sitesi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misiniz web sitesini?",
+  "sigWerNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha once whatsapp ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misiniz whatsapp ekstresini",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'hesap' to 'web' at position 2",
-      "reason": "'hesap ekstresi' (account statement) and 'web sitesi' (website) are completely different concepts, changing the meaning of the request.",
+      "error": "Substitution: 'hesap' to 'whatsapp' at position 2",
+      "reason": "'hesap' means 'account' and 'whatsapp' is a completely different entity; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'İstediğim' to 'Henüz' at position 6",
-      "reason": "'İstediğim' (what I requested) and 'Henüz' (yet/still) are different words and change the structure and meaning of the sentence.",
-      "score": 1
+      "error": "Substitution: 'istedigim' to 'henuz' at position 6",
+      "reason": "'istedigim' means 'that I wanted' and 'henuz' means 'not yet'; this changes the temporal meaning and intent of the sentence, but the overall context is still about the statement not being received.",
+      "score": 2
     },
     {
       "error": "Substitution: 'misin' to 'misiniz' at position 13",
-      "reason": "The difference is between informal ('misin') and formal ('misiniz') address; the meaning remains the same.",
+      "reason": "Both are forms of 'can you' in Turkish, with 'misiniz' being more formal/plural. The meaning is the same in context.",
       "score": 3
     }
   ]

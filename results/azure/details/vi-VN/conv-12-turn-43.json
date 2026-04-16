@@ -1,15 +1,26 @@
 {
   "gold": "Muốn nhưng mà tôi muốn nói chuyện với người trực tiếp.",
-  "predicted": "Muốn nhưng mà tôi muốn nói chuyện với người trực tiếp.",
+  "predicted": "MU nhưng mà tôi muốn nói chuyện.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Muốn nhưng mà tôi muốn nói chuyện với người trực tiếp.",
-  "werNormalizedPredicted": "Muốn nhưng mà tôi muốn nói chuyện với người trực tiếp.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.45454545454545453,
+  "werNormalizedGold": "muon nhung ma toi muon noi chuyen voi nguoi truc tiep",
+  "werNormalizedPredicted": "mu nhung ma toi muon noi chuyen",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Muốn nhưng mà tôi muốn nói chuyện với người trực tiếp.",
-  "sigWerNormalizedPredicted": "Muốn nhưng mà tôi muốn nói chuyện với người trực tiếp.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "muon nhung ma toi muon noi chuyen voi nguoi truc tiep",
+  "sigWerNormalizedPredicted": "mu nhung ma toi muon noi chuyen",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'muon' to 'mu' at position 0",
+      "reason": "'mu' is not a word in Vietnamese and is likely a truncation or mishearing of 'muon', which means 'want'. This changes the meaning and makes the sentence unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'voi' at position 7",
+      "reason": "Omitting 'voi' ('with') removes the preposition needed to indicate who the conversation is with, making the sentence incomplete and changing the meaning.",
+      "score": 1
+    }
+  ]
 }

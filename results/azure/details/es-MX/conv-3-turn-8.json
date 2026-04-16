@@ -2,29 +2,24 @@
   "gold": "¿El importe total quieres saber?",
   "predicted": "El importe total quiere.",
   "unintelligible": false,
-  "wer": 0.6,
-  "werNormalizedGold": "¿El importe total quieres saber?",
-  "werNormalizedPredicted": "El importe total quiere.",
-  "qualityScore": 2,
-  "significantWer": 0.4,
-  "majorErrorsCount": 2,
+  "wer": 0.4,
+  "werNormalizedGold": "el importe total quieres saber",
+  "werNormalizedPredicted": "el importe total quiere",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "¿El importe total quieres saber?",
-  "sigWerNormalizedPredicted": "El importe total quiere.",
+  "sigWerNormalizedGold": "el importe total quieres saber",
+  "sigWerNormalizedPredicted": "el importe total quiere",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¿El' to 'El' at position 0",
-      "reason": "The inverted question mark is a punctuation mark and does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'quieres' to 'quiere' at position 3",
+      "reason": "'quieres' is second person singular (you want), while 'quiere' is third person singular (he/she/it wants); this changes the subject of the sentence but the overall intent is still understandable.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'quieres' to 'quiere.' at position 3",
-      "reason": "'quieres' (you want) is second person, while 'quiere' (he/she/it wants) is third person; this changes the subject and meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'saber?' at position 4",
-      "reason": "Omitting 'saber' (to know) removes the main verb, making the sentence incomplete and changing the meaning.",
+      "error": "Deletion: 'saber' at position 4",
+      "reason": "Omitting 'saber' (to know) removes the purpose of the request, making the sentence incomplete and significantly altering the meaning.",
       "score": 1
     }
   ]

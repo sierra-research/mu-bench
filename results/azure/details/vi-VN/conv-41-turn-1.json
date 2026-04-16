@@ -1,31 +1,26 @@
 {
   "gold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
-  "predicted": "Ờ Xem hết luôn tiền rồi ngày ờ gì cũng Xem hết.",
+  "predicted": "Ờ Xem hết luôn tiền ờ, ngày ờ gì cũng Xem hết.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
-  "werNormalizedPredicted": "Ờ xem hết luôn. Tiền rồi ngày ờ gì cũng xem hết.",
-  "qualityScore": 2,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "werNormalizedPredicted": "xem hết luôn tiền ngày gì cũng xem hết",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
-  "sigWerNormalizedPredicted": "Ờ xem hết luôn. Tiền rồi ngày ờ gì cũng xem hết.",
+  "sigWerNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "sigWerNormalizedPredicted": "xem hết luôn tiền ngày gì cũng xem hết",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Xem' to 'xem' at position 0",
-      "reason": "'Ờ' is a filler word in Vietnamese and does not change the meaning of the sentence.",
-      "score": 3
+      "error": "Insertion: 'cũng' at position 6",
+      "reason": "The insertion of 'cũng' (meaning 'also' or 'too') does not significantly change the overall meaning of the sentence, which is about watching everything. It adds emphasis but does not derail the meaning.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'Tiền,' to 'rồi' at position 3",
-      "reason": "Difference is only in capitalization, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'gì.' to 'gì' at position 5",
-      "reason": "'Tiền' is not an insertion; it is present in both expected and actual. No error here.",
-      "score": 3
+      "error": "Deletion: 'luôn' at position 8",
+      "reason": "The omission of the final 'luôn' (meaning 'always' or 'completely') slightly reduces emphasis but does not change the core meaning of the sentence.",
+      "score": 2
     }
   ]
 }

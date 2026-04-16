@@ -1,20 +1,30 @@
 {
   "gold": "Urión, perdón. Urión 30, col. Tlatilco.",
-  "predicted": "Unión, perdón, no es Unión. Unión treinta, Collatilco.",
+  "predicted": "Unión, perdón, no español. Unión treinta, Old Platilco.",
   "unintelligible": false,
-  "wer": 1.1666666666666667,
-  "werNormalizedGold": "Urión, perdón. Urión 30, col. Tlatilco.",
-  "werNormalizedPredicted": "Unión, perdón, no es Unión. Unión treinta, col. Tlatilco.",
-  "qualityScore": 2,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "urion perdon urion treinta col tlatilco",
+  "werNormalizedPredicted": "union perdon no espanol union treinta old platilco",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Urión, perdón. Urión 30, col. Tlatilco.",
-  "sigWerNormalizedPredicted": "Unión, perdón, no es Unión. Unión treinta, col. Tlatilco.",
+  "sigWerNormalizedGold": "urion perdon urion treinta col tlatilco",
+  "sigWerNormalizedPredicted": "union perdon no espanol union treinta old platilco",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Urión,' to 'es' at position 0",
-      "reason": "'Urión' and 'Unión' are different words and likely refer to different entities (e.g., street names or places). This changes the meaning significantly, especially in an address context.",
+      "error": "Substitution: 'urion' to 'union' at position 0",
+      "reason": "'Urion' and 'union' are different words and likely refer to different things; this could confuse the meaning, especially if 'urion' is a name or specific term.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'urion' to 'union' at position 2",
+      "reason": "The insertion of 'no' adds negation, which can significantly change the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'col' to 'old' at position 4",
+      "reason": "Same as the first error: 'urion' and 'union' are different words, and this substitution could change the intended meaning.",
       "score": 1
     }
   ]

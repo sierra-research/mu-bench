@@ -3,23 +3,23 @@
   "predicted": "Daha önce bir hesap ekstresi istemiştim aylık. Henüz şu ana kadar gelmedi. Bana gönderebilir misin hesap ekstresini?",
   "unintelligible": false,
   "wer": 0.125,
-  "werNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "werNormalizedPredicted": "Daha önce bir hesap ekstresi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "qualityScore": 3,
+  "werNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha once bir hesap ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
-  "sigWerNormalizedPredicted": "Daha önce bir hesap ekstresi istemiştim, aylık. Henüz şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "sigWerNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha once bir hesap ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 2",
-      "reason": "'Bir' (a/an) is inserted before 'hesap ekstresi' (account statement). This does not change the overall meaning of the sentence, as it just adds an indefinite article, which is optional in Turkish.",
+      "reason": "'bir' (meaning 'a' or 'one') is inserted, but it does not significantly change the meaning of the sentence. The request for a statement is still clear.",
       "score": 2
     },
     {
-      "error": "Substitution: 'İstediğim' to 'Henüz' at position 6",
-      "reason": "'İstediğim' (the one I requested) is replaced with 'Henüz' (yet/still). This changes the structure of the sentence but the overall meaning remains: the statement has not arrived yet. The intent is preserved, so this is a minor error.",
+      "error": "Substitution: 'istedigim' to 'henuz' at position 6",
+      "reason": "'istedigim' means 'that I wanted', while 'henuz' means 'yet' or 'still'. This changes the nuance of the sentence but the overall meaning (that the statement has not arrived yet) is preserved.",
       "score": 2
     }
   ]

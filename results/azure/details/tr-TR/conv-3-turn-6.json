@@ -1,15 +1,21 @@
 {
   "gold": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 Türkiye.",
-  "predicted": "Atatürk Caddesi no 45 / 6 Kazım Karabekir mahallesi Üsküdar, istanbul 34.660, Türkiye.",
+  "predicted": "Atatürk Caddesi no 45 6 Kazım Karabekir mahallesi Üsküdar, istanbul 34.660, Türkiye.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 Türkiye.",
-  "werNormalizedPredicted": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 Türkiye.",
-  "qualityScore": 3,
+  "wer": 0.05263157894736842,
+  "werNormalizedGold": "atatürk caddesi numara forty five bölü six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
+  "werNormalizedPredicted": "atatürk caddesi numara forty five six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 Türkiye.",
-  "sigWerNormalizedPredicted": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 Türkiye.",
-  "sigWerErrors": []
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "atatürk caddesi numara forty five bölü six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
+  "sigWerNormalizedPredicted": "atatürk caddesi numara forty five six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'bölü' at position 5",
+      "reason": "'bölü' (meaning 'slash' or 'divided by' in Turkish) is used to indicate an address format (e.g., '45/6'). Omitting it may cause confusion in interpreting the address, but the numeric information is still present, so the overall meaning is mostly preserved.",
+      "score": 2
+    }
+  ]
 }

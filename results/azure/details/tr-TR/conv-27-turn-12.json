@@ -2,14 +2,25 @@
   "gold": "Ben tekrar heceleyeceğim. Zaynep nokta Arslan at email nokta com.",
   "predicted": "Ben tekrar heceleyeceğimzeyneparslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Ben tekrar heceleyeceğim. Zaynep nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "Ben tekrar heceleyeceğim. Zaynep nokta Arslan at email nokta com.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "ben tekrar heceleyeceğim zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ben tekrar heceleyeceğim zaynep arslan at email com",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Ben tekrar heceleyeceğim. Zaynep nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "Ben tekrar heceleyeceğim. Zaynep nokta Arslan at email nokta com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "ben tekrar heceleyeceğim zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ben tekrar heceleyeceğim zaynep arslan at email com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 4",
+      "reason": "Omitting 'nokta' (dot) in an email address changes the actual address, making it incorrect or undeliverable. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 8",
+      "reason": "Omitting 'nokta' (dot) before 'com' in an email address changes the domain, making the email address invalid. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

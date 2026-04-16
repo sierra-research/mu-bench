@@ -1,26 +1,26 @@
 {
   "gold": "Why does this have to be so hard?",
-  "predicted": "Does this have to be so hard?",
+  "predicted": "Does it have to be so hard?",
   "unintelligible": false,
   "wer": 0.25,
-  "werNormalizedGold": "Why does this have to be so hard?",
-  "werNormalizedPredicted": "Does this have to be so hard?",
-  "qualityScore": 2,
+  "werNormalizedGold": "why does this have to be so hard",
+  "werNormalizedPredicted": "does it have to be so hard",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Why does this have to be so hard?",
-  "sigWerNormalizedPredicted": "Does this have to be so hard?",
+  "sigWerNormalizedGold": "why does this have to be so hard",
+  "sigWerNormalizedPredicted": "does it have to be so hard",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Why' to 'Does' at position 0",
-      "reason": "Changing 'Why' to 'Does' alters the entire question type and meaning, resulting in a completely different sentence intent.",
+      "error": "Deletion: 'why' at position 0",
+      "reason": "Removing 'why' changes the sentence from a question about reason or motivation to a simple inquiry about necessity, which alters the intent and meaning significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'does' at position 1",
-      "reason": "'does' is not actually deleted; it is present in both sentences. The main error is the substitution at the start. No deletion error here.",
-      "score": 3
+      "error": "Substitution: 'this' to 'it' at position 2",
+      "reason": "Substituting 'this' with 'it' is a minor change; both refer to the subject at hand and do not significantly alter the meaning of the sentence.",
+      "score": 2
     }
   ]
 }

@@ -1,15 +1,26 @@
 {
   "gold": "你听吧，你听吧。",
-  "predicted": "你听吧",
+  "predicted": "你挺饱",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你听吧，你听吧。",
-  "werNormalizedPredicted": "你听吧，你听吧。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "你 听 吧 ， 你 听 吧 。",
-  "sigWerNormalizedPredicted": "你 听 吧 ， 你 听 吧 。",
-  "sigWerErrors": []
+  "wer": 0.8333333333333334,
+  "werNormalizedGold": "你 听 吧 你 听 吧",
+  "werNormalizedPredicted": "你 挺 饱",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "你 听 吧 你 听 吧",
+  "sigWerNormalizedPredicted": "你 挺 饱",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '挺' at position 1",
+      "reason": "'听' (listen) and '挺' (quite/very) are completely different words and meanings, which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '你' at position 3",
+      "reason": "'吧' (a modal particle) and '饱' (full) are unrelated in meaning, which makes the sentence incoherent and changes the intended meaning.",
+      "score": 1
+    }
+  ]
 }

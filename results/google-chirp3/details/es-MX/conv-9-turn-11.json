@@ -1,15 +1,21 @@
 {
   "gold": "El correo es María punto López arroba email punto com.",
-  "predicted": "El correo es maria.lopez@email.com.",
+  "predicted": "el correo de maria.lopez@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "El correo es María punto López arroba email punto com.",
-  "werNormalizedPredicted": "El correo es María punto López arroba email punto com.",
-  "qualityScore": 3,
+  "wer": 0.1,
+  "werNormalizedGold": "el correo es maria punto lopez arroba email punto com",
+  "werNormalizedPredicted": "el correo de maria punto lopez arroba email punto com",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "El correo es María punto López arroba email punto com.",
-  "sigWerNormalizedPredicted": "El correo es María punto López arroba email punto com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "el correo es maria punto lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "el correo de maria punto lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'de' at position 2",
+      "reason": "'es' means 'is' (identifying the email), while 'de' means 'of' (implying possession). This changes the structure but the overall meaning (identifying the email address) is still clear in context.",
+      "score": 2
+    }
+  ]
 }

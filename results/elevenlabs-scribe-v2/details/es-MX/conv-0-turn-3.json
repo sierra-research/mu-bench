@@ -1,26 +1,21 @@
 {
   "gold": "C de casa.",
-  "predicted": "¿Eh, de casa?",
+  "predicted": "¿Qué te causa?",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "C de casa.",
-  "werNormalizedPredicted": "¿eh de casa?",
-  "qualityScore": 2,
+  "wer": 1.0,
+  "werNormalizedGold": "c de casa",
+  "werNormalizedPredicted": "que te causa",
+  "qualityScore": null,
   "significantWer": 0.3333333333333333,
   "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "C de casa.",
-  "sigWerNormalizedPredicted": "¿eh de casa?",
+  "sigWerNormalizedGold": "c de casa",
+  "sigWerNormalizedPredicted": "que te causa",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'C' to '¿eh' at position 0",
-      "reason": "'C' is a letter being referenced, while '¿eh' is a Spanish interjection and not a letter. This changes the meaning completely and makes the sentence incoherent in context.",
+      "error": "Substitution: 'c' to 'que' at position 0",
+      "reason": "'c' is a single letter, likely intended as the letter 'C', while 'que' is a different word entirely. This changes the meaning and is a significant error.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'casa.' to 'casa?' at position 2",
-      "reason": "The only difference is punctuation (period vs question mark), which does not affect the meaning of the word or sentence.",
-      "score": 3
     }
   ]
 }

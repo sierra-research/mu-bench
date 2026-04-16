@@ -1,21 +1,26 @@
 {
   "gold": "Có. Vui lòng giúp tôi cái này.",
-  "predicted": "Có vui lòng chúng tôi cái này",
+  "predicted": "Có vui lòng chúng tôi thế này.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "Có. Vui lòng giúp tôi cái này.",
-  "werNormalizedPredicted": "Có. Vui lòng chúng tôi cái này.",
-  "qualityScore": 2,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "có vui lòng giúp tôi cái này",
+  "werNormalizedPredicted": "có vui lòng chúng tôi thế này",
+  "qualityScore": null,
   "significantWer": 0.14285714285714285,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Có. Vui lòng giúp tôi cái này.",
-  "sigWerNormalizedPredicted": "Có. Vui lòng chúng tôi cái này.",
+  "sigWerNormalizedGold": "có vui lòng giúp tôi cái này",
+  "sigWerNormalizedPredicted": "có vui lòng chúng tôi thế này",
   "sigWerErrors": [
     {
       "error": "Substitution: 'giúp' to 'chúng' at position 3",
-      "reason": "'giúp' means 'help', while 'chúng' means 'we/us'. This substitution changes the meaning of the sentence significantly, making it incoherent in context.",
+      "reason": "'giúp' means 'help', while 'chúng' means 'we/us'; this changes the subject and the meaning of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'cái' to 'thế' at position 5",
+      "reason": "'cái này' means 'this (thing)', while 'thế này' means 'like this' or 'this way'; this changes the object and intent of the request, altering the meaning.",
+      "score": 2
     }
   ]
 }

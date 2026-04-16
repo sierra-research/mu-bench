@@ -1,20 +1,25 @@
 {
   "gold": "我已经说了几次。",
-  "predicted": "我已经说了句词",
+  "predicted": "我一听说了地辞",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "我已经说了几次。",
-  "werNormalizedPredicted": "我已经说了句词。",
-  "qualityScore": 2,
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "我 已 经 说 了 几 次 。",
-  "sigWerNormalizedPredicted": "我 已 经 说 了 句 词 。",
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "我 已经 说 了 几 次",
+  "werNormalizedPredicted": "我 一 听 说 了 地 辞",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 已 经 说 了 几 次",
+  "sigWerNormalizedPredicted": "我 一 听 说 了 地 辞",
   "sigWerErrors": [
     {
-      "error": "Substitution: '几' to '句' at position 5",
-      "reason": "'几次' means 'several times', while '句词' means 'sentence word', which changes the meaning of the sentence and makes it incoherent.",
+      "error": "Substitution: '已' to '一' at position 1",
+      "reason": "'已' (already) and '一' (one) are completely different in meaning and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '几' to '地' at position 5",
+      "reason": "'几' (several) and '地' (particle or 'ground') are unrelated and this substitution makes the sentence incoherent.",
       "score": 1
     }
   ]

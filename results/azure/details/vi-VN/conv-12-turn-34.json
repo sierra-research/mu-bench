@@ -1,21 +1,26 @@
 {
   "gold": "Đợi xíu. Đợi xíu.",
-  "predicted": "Ờ det er i sy. Det er i sy.",
+  "predicted": "R.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Đợi xíu. Đợi xíu.",
-  "werNormalizedPredicted": "Ờ đợi xíu. Đợi xíu.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "doi xiu doi xiu",
+  "werNormalizedPredicted": "r",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Đợi xíu. Đợi xíu.",
-  "sigWerNormalizedPredicted": "Ờ đợi xíu. Đợi xíu.",
+  "sigWerNormalizedGold": "doi xiu doi xiu",
+  "sigWerNormalizedPredicted": "r",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Đợi' to 'đợi' at position 0",
-      "reason": "'Ờ' is a filler word in Vietnamese, similar to 'uh' or 'um' in English, and does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'doi' to 'r' at position 0",
+      "reason": "The actual transcription 'r' does not correspond in meaning or sound to 'doi', making the sentence incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'xiu' at position 1",
+      "reason": "The word 'xiu' is missing, which further derails the meaning and makes the transcription incomplete and incoherent.",
+      "score": 1
     }
   ]
 }

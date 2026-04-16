@@ -2,30 +2,25 @@
   "gold": "Espere. Deje y lo anoto.",
   "predicted": "Ay, ay, ay, espere, deje la nota",
   "unintelligible": false,
-  "wer": 1.4,
-  "werNormalizedGold": "Espere. Deje y lo anoto.",
-  "werNormalizedPredicted": "Ay, ay, ay, espere. Deje la nota.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6,
+  "werNormalizedGold": "espere deje y lo anoto",
+  "werNormalizedPredicted": "espere deje la nota",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Espere. Deje y lo anoto.",
-  "sigWerNormalizedPredicted": "Ay, ay, ay, espere. Deje la nota.",
+  "sigWerNormalizedGold": "espere deje y lo anoto",
+  "sigWerNormalizedPredicted": "espere deje la nota",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Espere.' to 'espere.' at position 0",
-      "reason": "The insertion of 'Ay, ay, ay,' adds an interjection but does not change the meaning of the sentence.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'y' to 'la' at position 2",
-      "reason": "Substituting 'y' (and) with 'la' (the) changes the grammatical structure but the overall meaning is still clear.",
-      "score": 2
+      "reason": "'y' means 'and' while 'la' means 'the'; this changes the structure and meaning of the sentence, making it less clear and potentially altering the intended message.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'anoto.' at position 4",
-      "reason": "'Lo anoto' (I write it down) vs 'la nota' (the note) changes the action to a noun, but the intent of noting something is preserved.",
-      "score": 2
+      "error": "Deletion: 'anoto' at position 4",
+      "reason": "Omitting 'anoto' ('I write it down') removes the main action of the sentence, significantly changing the meaning and making the sentence incomplete.",
+      "score": 1
     }
   ]
 }

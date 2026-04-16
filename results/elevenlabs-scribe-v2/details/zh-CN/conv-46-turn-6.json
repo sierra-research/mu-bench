@@ -1,15 +1,26 @@
 {
   "gold": "君玲。",
-  "predicted": "Jun Lin。",
+  "predicted": "Dreamlink",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "君玲。",
-  "werNormalizedPredicted": "君玲。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "君 玲 。",
-  "sigWerNormalizedPredicted": "君 玲 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "君玲",
+  "werNormalizedPredicted": "dreamlink",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "君 玲",
+  "sigWerNormalizedPredicted": "dreamlink",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamlink' at position 0",
+      "reason": "'dreamlink' is a completely different word and language from the expected Chinese character '君', resulting in a loss of the original meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of the character '玲' removes part of the expected name, significantly altering the intended meaning.",
+      "score": 1
+    }
+  ]
 }

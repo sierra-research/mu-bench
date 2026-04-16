@@ -3,23 +3,23 @@
   "predicted": "牛",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "你好。",
+  "werNormalizedGold": "你好",
   "werNormalizedPredicted": "牛",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
   "sigWerNormalizedPredicted": "牛",
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '牛' at position 0",
-      "reason": "'你' means 'you' and '牛' means 'cow' in Chinese; this is a completely different word and changes the meaning of the sentence entirely.",
+      "reason": "'你' means 'you' and '牛' means 'cow' in Chinese; this is a completely different word and changes the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "'好' means 'good' or 'hello' in this context; omitting it makes the greeting incomplete and incoherent.",
+      "reason": "'好' means 'good' or 'hello' in this context; omitting it removes the greeting, significantly altering the meaning.",
       "score": 1
     }
   ]

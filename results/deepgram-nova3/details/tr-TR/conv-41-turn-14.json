@@ -3,23 +3,23 @@
   "predicted": "Hayır ana, itiraz etmek istediğim bir şey yok, sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
   "unintelligible": false,
   "wer": 0.1875,
-  "werNormalizedGold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
-  "werNormalizedPredicted": "Hayır Anna, itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
-  "qualityScore": 2,
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "werNormalizedPredicted": "hayır ana itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
-  "sigWerNormalizedPredicted": "Hayır Anna, itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
+  "sigWerNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "sigWerNormalizedPredicted": "hayır ana itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna.' to 'Anna,' at position 1",
-      "reason": "Difference is only in punctuation (period vs comma), which should be ignored as per guidance.",
-      "score": 3
+      "error": "Substitution: 'anna' to 'ana' at position 1",
+      "reason": "'Anna' is a proper noun (likely a name), while 'ana' is a common word in Turkish meaning 'main' or 'mother'. This changes the reference from a person to a generic term, which can confuse the meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Substitution: 'için' to 'istediğim' at position 4",
-      "reason": "'İptal etmek için' means 'to cancel', while 'itiraz etmek istediğim' means 'that I want to object to'. This changes the meaning of the sentence from canceling something to objecting to something, which is a significant change in intent.",
+      "reason": "'İçin' means 'for', while 'istediğim' means 'that I want'. This substitution changes the structure and meaning of the sentence, making it incoherent and altering the intent.",
       "score": 1
     }
   ]

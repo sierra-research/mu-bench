@@ -1,15 +1,26 @@
 {
   "gold": "İyi günler.",
-  "predicted": "İyi günler",
+  "predicted": "Evet.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "İyi günler.",
-  "werNormalizedPredicted": "İyi günler.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "iyi günler",
+  "werNormalizedPredicted": "evet",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "İyi günler.",
-  "sigWerNormalizedPredicted": "İyi günler.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "iyi günler",
+  "sigWerNormalizedPredicted": "evet",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'evet' at position 0",
+      "reason": "'iyi' means 'good' and 'evet' means 'yes' in Turkish; this substitution completely changes the meaning of the greeting to an affirmation, making the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'günler' at position 1",
+      "reason": "Omitting 'günler' ('days') removes the second part of the greeting, further derailing the intended meaning.",
+      "score": 1
+    }
+  ]
 }

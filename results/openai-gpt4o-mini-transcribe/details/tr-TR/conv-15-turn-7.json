@@ -1,0 +1,31 @@
+{
+  "gold": "Soyadım da Arslan. R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
+  "predicted": "Soyadımda Arslan R harfi olacak. Ahmet Arslan dediniz, Ahmet Arslan olacak.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
+  "werNormalizedPredicted": "soyadımda arslan r harfi olacak ahmet arslan dediniz ahmet arslan olacak",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
+  "sigWerNormalizedPredicted": "soyadımda arslan r harfi olacak ahmet arslan dediniz ahmet arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'soyadım' to 'soyadımda' at position 0",
+      "reason": "'soyadımda' is a minor grammatical difference from 'soyadım da' (my surname vs. on my surname), but in this context, the meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'da' at position 1",
+      "reason": "The word 'da' is merged into 'soyadımda', so the information is not lost, just formatted differently.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'aslan' to 'arslan' at position 7",
+      "reason": "'Aslan' and 'Arslan' are variant spellings of the same Turkish surname, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

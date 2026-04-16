@@ -1,16 +1,16 @@
 {
   "gold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "predicted": "Hayır son son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak Pardon altmış sekiz dediniz Siz altmış yedi ile bitecek",
+  "predicted": "Hayır son son rakam yanlış oldu. Altmış yedi değil altmış sekiz olacak sonu. Altmış yedi olacak pardon. Altmış sekiz dediniz siz altmış yedi ile bitecek.",
   "unintelligible": false,
-  "wer": 0.631578947368421,
-  "werNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "werNormalizedPredicted": "Hayır. Son son rakam yanlış oldu. Altmış yedi değil, altmış sekiz olacak sonu. Altmış yedi olacak, pardon. Altmış sekiz dediniz siz, altmış yedi ile bitecek.",
-  "qualityScore": 2,
-  "significantWer": 0.05263157894736842,
+  "wer": 0.13043478260869565,
+  "werNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "werNormalizedPredicted": "hayır son son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "qualityScore": null,
+  "significantWer": 0.043478260869565216,
   "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "sigWerNormalizedPredicted": "Hayır. Son son rakam yanlış oldu. Altmış yedi değil, altmış sekiz olacak sonu. Altmış yedi olacak, pardon. Altmış sekiz dediniz siz, altmış yedi ile bitecek.",
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "sigWerNormalizedPredicted": "hayır son son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
   "sigWerErrors": [
     {
       "error": "Insertion: 'son' at position 2",
@@ -18,29 +18,14 @@
       "score": 2
     },
     {
-      "error": "Substitution: '60' to 'yedi' at position 5",
-      "reason": "'Altmış' means 'sixty', and is part of the number 'altmış yedi' (sixty-seven). Inserting it here is necessary for the Turkish number format, so this is not an error.",
-      "score": 3
+      "error": "Insertion: 'yedi' at position 6",
+      "reason": "The insertion of 'yedi' (seven) here is part of a phrase that is corrected in the following words, and does not derail the overall meaning.",
+      "score": 2
     },
     {
-      "error": "Substitution: '67' to 'sekiz' at position 7",
-      "reason": "In Turkish, 'altmış yedi' means 'sixty-seven', so splitting the number into words is equivalent to the numeral. No change in meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: '67' to 'yedi' at position 10",
-      "reason": "Again, 'altmış' is part of the number 'altmış sekiz' (sixty-eight), which is the correct Turkish format. No change in meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: '68' to 'sekiz' at position 13",
-      "reason": "Here, 'altmış sekiz' (sixty-eight) is used instead of 'altmış yedi' (sixty-seven). This changes the number being referred to, which is significant in this context.",
+      "error": "Substitution: 'yedi' to 'sekiz' at position 8",
+      "reason": "Substituting 'yedi' (seven) with 'sekiz' (eight) changes the number being referred to, which is significant in this context.",
       "score": 1
-    },
-    {
-      "error": "Substitution: '67' to 'yedi' at position 16",
-      "reason": "'Altmış' is part of the number 'altmış yedi' (sixty-seven), which is the correct Turkish format. No change in meaning.",
-      "score": 3
     }
   ]
 }

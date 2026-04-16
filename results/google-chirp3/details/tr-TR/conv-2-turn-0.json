@@ -2,20 +2,30 @@
   "gold": "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
   "predicted": "Merhaba, son hesap ekstresimin bir kopyasına ihtiyacım vardı.",
   "unintelligible": false,
-  "wer": 0.125,
-  "werNormalizedGold": "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
-  "werNormalizedPredicted": "Merhaba, son hesap ekstresinin bir kopyasına ihtiyacım var da.",
-  "qualityScore": 3,
+  "wer": 0.5,
+  "werNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
+  "werNormalizedPredicted": "merhaba son hesap ekstresimin bir kopyasina ihtiyacim vardi",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
-  "sigWerNormalizedPredicted": "Merhaba, son hesap ekstresinin bir kopyasına ihtiyacım var da.",
+  "sigWerNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
+  "sigWerNormalizedPredicted": "merhaba son hesap ekstresimin bir kopyasina ihtiyacim vardi",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'bir' at position 4",
-      "reason": "The word 'bir' (meaning 'a' or 'one') is inserted, but it does not change the overall meaning of the sentence. Both versions convey the same request for a copy of the statement.",
+      "error": "Substitution: 'ekstresinin' to 'bir' at position 3",
+      "reason": "'Ekstresinin' (of the statement) vs 'ekstresimin' (of my statement) is a minor possessive difference, does not change the overall meaning.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'var' to 'vardi' at position 6",
+      "reason": "Adding 'bir' (a) before 'kopyasina' (copy) is a minor grammatical addition, does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'da' at position 7",
+      "reason": "Present tense ('var' - there is) vs past tense ('vardi' - there was), but the request is still clear and the meaning is not significantly changed.",
+      "score": 3
     }
   ]
 }

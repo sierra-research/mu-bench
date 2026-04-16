@@ -1,21 +1,26 @@
 {
   "gold": "不用了谢谢。",
-  "predicted": "好友吗,谢谢。",
+  "predicted": "哎哟,我们谢谢。",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "不用了谢谢。",
-  "werNormalizedPredicted": "好友吗，谢谢。",
-  "qualityScore": 1,
-  "significantWer": 0.16666666666666666,
+  "wer": 0.6,
+  "werNormalizedGold": "不用了谢谢",
+  "werNormalizedPredicted": "我们谢谢",
+  "qualityScore": null,
+  "significantWer": 0.2,
   "majorErrorsCount": 1,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "不 用 了 谢 谢 。",
-  "sigWerNormalizedPredicted": "好 友 吗 ， 谢 谢 。",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "不 用 了 谢 谢",
+  "sigWerNormalizedPredicted": "我 们 谢 谢",
   "sigWerErrors": [
     {
-      "error": "Substitution: '不' to '友' at position 0",
-      "reason": "'不' (no/not) is replaced by '好' (good/okay), which completely changes the meaning of the response from a polite refusal to a positive or friendly statement.",
+      "error": "Substitution: '不' to '我' at position 0",
+      "reason": "'不' means 'no' or 'not', while '我' means 'I' or 'me'; this changes the subject and the meaning of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 2",
+      "reason": "'了' is a particle indicating completed action or change of state; omitting it slightly affects the nuance but does not drastically change the meaning in this context.",
+      "score": 2
     }
   ]
 }

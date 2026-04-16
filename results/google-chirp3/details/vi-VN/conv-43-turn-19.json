@@ -2,14 +2,40 @@
   "gold": "Không phải. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Không phải cộng 84 91 12 34 56 78.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Không phải. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Không phải. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Không phải. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Không phải. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.3125,
+  "werNormalizedGold": "khong phai cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "werNormalizedPredicted": "khong phai cong tam muoi bon chin muoi mot muoi hai ba muoi bon nam muoi sau bay muoi tam",
+  "qualityScore": null,
+  "significantWer": 0.3125,
+  "majorErrorsCount": 5,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "khong phai cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedPredicted": "khong phai cong tam muoi bon chin muoi mot muoi hai ba muoi bon nam muoi sau bay muoi tam",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'muoi' at position 7",
+      "reason": "Inserting 'muoi' (ten) changes the sequence of numbers, altering the intended number string significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'mot' to 'muoi' at position 8",
+      "reason": "Substituting 'mot' (one) with 'muoi' (ten) changes the digit in the number sequence, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 11",
+      "reason": "Inserting 'muoi' (ten) again alters the number sequence, making the transcription incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 13",
+      "reason": "Another insertion of 'muoi' (ten) further distorts the intended number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 15",
+      "reason": "This insertion continues to change the number sequence, making the transcription significantly different from the expected.",
+      "score": 1
+    }
+  ]
 }

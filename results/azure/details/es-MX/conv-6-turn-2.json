@@ -1,25 +1,30 @@
 {
   "gold": "C N 7 3 0.",
-  "predicted": "CNTTTT 3 cero.",
+  "predicted": "TNTTTT 3 cero.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "C N 7 3 0.",
-  "werNormalizedPredicted": "C N T T T T 3 cero.",
-  "qualityScore": 1,
-  "significantWer": 0.4,
-  "majorErrorsCount": 2,
+  "wer": 1.4,
+  "werNormalizedGold": "c n seven three zero",
+  "werNormalizedPredicted": "t n t t t t t three cero",
+  "qualityScore": null,
+  "significantWer": 0.6,
+  "majorErrorsCount": 3,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "C N 7 3 0.",
-  "sigWerNormalizedPredicted": "C N T T T T 3 cero.",
+  "sigWerNormalizedGold": "c n seven three zero",
+  "sigWerNormalizedPredicted": "t n t t t t t three cero",
   "sigWerErrors": [
     {
-      "error": "Substitution: '7' to 'T' at position 2",
-      "reason": "A digit was replaced by a letter in a spelled-out sequence, which changes the intended sequence significantly.",
+      "error": "Substitution: 'c' to 't' at position 0",
+      "reason": "In a spelled-out sequence, substituting 'c' with 't' changes the intended letter, which is a significant error.",
       "score": 1
     },
     {
-      "error": "Substitution: '0.' to 'cero.' at position 4",
-      "reason": "Extra letters inserted in a spelled-out sequence make the transcription incoherent and incorrect for the intended code.",
+      "error": "Substitution: 'seven' to 't' at position 2",
+      "reason": "Extra 't' inserted in a spelled-out sequence disrupts the intended sequence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zero' to 'cero' at position 4",
+      "reason": "Replacing 'seven' with 't' in a sequence of numbers and letters is a significant error, as it changes the meaning completely.",
       "score": 1
     }
   ]

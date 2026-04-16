@@ -1,26 +1,31 @@
 {
   "gold": "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
-  "predicted": "Es Orión 30, colonia Tlatilco, delegación Azcapotzalco, en la Ciudad de México, código postal 02860.",
+  "predicted": "Escurión 30, colonia Atlántico, delegación Azcapotzalco en la Ciudad de México, código postal 02860",
   "unintelligible": false,
-  "wer": 0.23529411764705882,
-  "werNormalizedGold": "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
-  "werNormalizedPredicted": "Es Orión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 8 6 0.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
-  "sigWerNormalizedPredicted": "Es Orión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 8 6 0.",
+  "wer": 0.15789473684210525,
+  "werNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ocho seis cero",
+  "werNormalizedPredicted": "escurion treinta colonia atlantico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ocho seis cero",
+  "qualityScore": null,
+  "significantWer": 0.15789473684210525,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ocho seis cero",
+  "sigWerNormalizedPredicted": "escurion treinta colonia atlantico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ocho seis cero",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Urión,' to 'Orión,' at position 1",
-      "reason": "'Urión' and 'Orión' are both proper nouns and similar in sound, but refer to different names/words. This is a minor error as it could cause confusion but does not derail the meaning of the address.",
-      "score": 2
+      "error": "Substitution: 'es' to 'escurion' at position 0",
+      "reason": "'escurion' is not a valid word and replaces 'es', which is a key part of the sentence structure, making the beginning unclear.",
+      "score": 1
     },
     {
-      "error": "Substitution: '860.' to '0.' at position 16",
-      "reason": "The actual transcription splits the postal code into individual digits, inserting an '8' where the expected had '860' as a group. This does not change the meaning, as the postal code is still correct, just formatted differently.",
-      "score": 3
+      "error": "Deletion: 'urion' at position 1",
+      "reason": "Omitting 'urion' removes a potentially important part of the address, which could lead to confusion or incorrect identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tlatilco' to 'atlantico' at position 4",
+      "reason": "'tlatilco' and 'atlantico' are completely different place names, which changes the meaning of the address significantly.",
+      "score": 1
     }
   ]
 }

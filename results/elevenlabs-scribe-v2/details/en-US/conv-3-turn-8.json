@@ -2,20 +2,20 @@
   "gold": "Can you verify what address it's been shipped to?",
   "predicted": "Can you, uh, verify what address it's being shipped to?",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Can you verify what address it's been shipped to?",
-  "werNormalizedPredicted": "Can you, uh, verify what address it's been shipped to?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Can you verify what address it's been shipped to?",
-  "sigWerNormalizedPredicted": "Can you, uh, verify what address it's been shipped to?",
+  "wer": 0.2,
+  "werNormalizedGold": "can you verify what address it has been shipped to",
+  "werNormalizedPredicted": "can you verify what address it is being shipped to",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "can you verify what address it has been shipped to",
+  "sigWerNormalizedPredicted": "can you verify what address it is being shipped to",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'you' to 'uh,' at position 1",
-      "reason": "'uh' is a filler word that does not change the meaning of the sentence; it is a minor disfluency.",
-      "score": 3
+      "error": "Substitution: 'has' to 'is' at position 6",
+      "reason": "Switching from 'has been shipped' (present perfect passive) to 'is being shipped' (present continuous passive) changes the tense and meaning: the first means the item has already shipped, the second means it is currently in the process of shipping. This could cause confusion about the shipping status.",
+      "score": 1
     }
   ]
 }

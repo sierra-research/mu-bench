@@ -1,0 +1,278 @@
+.sig-widget {
+    margin: 32px 0 40px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.sig-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.sig-tab {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #718096;
+    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+    font-family: inherit;
+}
+
+.sig-tab:hover {
+    color: #2d3748;
+    background: #edf2f7;
+}
+
+.sig-tab--active {
+    color: #111827;
+    background: white;
+    box-shadow: inset 0 -2px 0 #111827;
+}
+
+.sig-content {
+    padding: 20px 24px;
+}
+
+.sig-section {
+    margin-bottom: 28px;
+}
+
+.sig-section:last-child {
+    margin-bottom: 0;
+}
+
+.sig-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 12px;
+}
+
+/* Significance matrix */
+.sig-matrix-wrap {
+    overflow-x: auto;
+}
+
+.sig-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.sig-corner {
+    width: 160px;
+}
+
+.sig-col-header {
+    text-align: center;
+    padding: 8px 6px;
+    font-weight: 600;
+    color: #374151;
+    font-size: 11px;
+    vertical-align: bottom;
+    line-height: 1.3;
+}
+
+.sig-col-name {
+    display: block;
+    font-weight: 600;
+}
+
+.sig-col-score {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    color: #111827;
+    margin-top: 2px;
+}
+
+.sig-row-header {
+    text-align: left;
+    padding: 8px 10px;
+    font-weight: 600;
+    color: #374151;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.sig-rank {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #6b7280;
+    font-size: 10px;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.sig-cell {
+    text-align: center;
+    padding: 10px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+    transition: transform 0.12s ease;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.sig-cell--diag {
+    color: #d1d5db;
+}
+
+.sig-cell--sig {
+    color: #065f46;
+}
+
+.sig-cell--ns {
+    color: #9ca3af;
+}
+
+.sig-cell--hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.sig-caption {
+    font-size: 12px;
+    color: #9ca3af;
+    margin: 8px 0 0;
+    line-height: 1.5;
+}
+
+.sig-legend-sig {
+    color: #065f46;
+    font-weight: 600;
+}
+
+/* Variance chart */
+.var-locale-row {
+    display: flex;
+    gap: 32px;
+}
+
+.var-locale-col {
+    flex: 1;
+}
+
+.var-locale-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.var-chart {
+    padding: 4px 0;
+}
+
+.var-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    justify-content: center;
+}
+
+.var-bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 48px;
+}
+
+.var-bar-container {
+    position: relative;
+    width: 28px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.var-bar {
+    width: 100%;
+    background: #e0e7ff;
+    border-radius: 3px 3px 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.var-whisker {
+    position: absolute;
+    width: 2px;
+    background: #4f46e5;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.var-whisker::before,
+.var-whisker::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: #4f46e5;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.var-whisker::before {
+    top: 0;
+}
+
+.var-whisker::after {
+    bottom: 0;
+}
+
+.var-label {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.var-provider {
+    font-size: 10px;
+    color: #9ca3af;
+    margin-top: 4px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .sig-matrix {
+        font-size: 11px;
+    }
+    .sig-col-header {
+        font-size: 9px;
+    }
+    .sig-row-header {
+        font-size: 10px;
+    }
+    .var-locale-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .sig-content {
+        padding: 16px;
+    }
+}

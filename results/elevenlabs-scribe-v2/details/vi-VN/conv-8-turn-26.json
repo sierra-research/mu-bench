@@ -1,21 +1,26 @@
 {
   "gold": "OK. Thôi được rồi.",
-  "predicted": "OK. À thôi được rồi.",
+  "predicted": "Okay. ஆமாடி.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "OK. Thôi được rồi.",
-  "werNormalizedPredicted": "OK. À thôi được rồi.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.75,
+  "werNormalizedGold": "okay thôi được rồi",
+  "werNormalizedPredicted": "okay ஆமாடி",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "OK. Thôi được rồi.",
-  "sigWerNormalizedPredicted": "OK. À thôi được rồi.",
+  "sigWerNormalizedGold": "okay thôi được rồi",
+  "sigWerNormalizedPredicted": "okay ஆமாடி",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thôi' to 'thôi' at position 1",
-      "reason": "'À' is an interjection that does not change the meaning of the sentence; it just adds a slight hesitation or emphasis, so the overall meaning remains the same.",
-      "score": 2
+      "error": "Substitution: 'thôi' to 'ஆமாடி' at position 1",
+      "reason": "'thôi' (Vietnamese) is replaced by 'ஆமாடி' (Tamil), which is a different language and changes the meaning entirely, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'được' at position 2",
+      "reason": "'được' is missing from the actual transcription, which removes an important part of the phrase and further derails the meaning.",
+      "score": 1
     }
   ]
 }

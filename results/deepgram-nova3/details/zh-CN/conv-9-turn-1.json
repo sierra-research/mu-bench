@@ -1,31 +1,26 @@
 {
   "gold": "我想提高信用卡的限额。",
-  "predicted": "我想tiktok的限额",
+  "predicted": "我想tiktok信用科的限额",
   "unintelligible": false,
-  "wer": 0.5454545454545454,
-  "werNormalizedGold": "我想提高信用卡的限额。",
-  "werNormalizedPredicted": "我想 tiktok 的限额",
-  "qualityScore": 1,
-  "significantWer": 0.18181818181818182,
+  "wer": 0.2,
+  "werNormalizedGold": "我想提高信用卡的限额",
+  "werNormalizedPredicted": "我想 tiktok 信用卡的限额",
+  "qualityScore": null,
+  "significantWer": 0.2,
   "majorErrorsCount": 2,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额 。",
-  "sigWerNormalizedPredicted": "我 想 tiktok 的 限 额",
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额",
+  "sigWerNormalizedPredicted": "我 想 tiktok 信 用 卡 的 限 额",
   "sigWerErrors": [
     {
       "error": "Substitution: '提' to 'tiktok' at position 2",
-      "reason": "'tiktok' is an English brand name and completely unrelated to the intended meaning of '提' (to raise/lift), which derails the meaning of the sentence.",
+      "reason": "'tiktok' is an unrelated English word replacing a key verb in the sentence, making the sentence incoherent and changing the meaning entirely.",
       "score": 1
     },
     {
       "error": "Deletion: '高' at position 3",
-      "reason": "Omitting '高' (raise/increase) removes the key action from the sentence, making the request unclear.",
+      "reason": "Omitting '高' removes the verb 'increase/raise', which is essential to the intended meaning of the sentence.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 10",
-      "reason": "Missing punctuation does not affect the meaning of the sentence.",
-      "score": 3
     }
   ]
 }

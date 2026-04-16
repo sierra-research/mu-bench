@@ -1,25 +1,20 @@
 {
   "gold": "Tôi đã ghi xuống mã, không cần nghe lại.",
-  "predicted": "Tôi đã ghi xuống mã không còn nghe lại",
+  "predicted": "Tôi đã ghi xuống mã không còn nghe lại.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Tôi đã ghi xuống mã, không cần nghe lại.",
-  "werNormalizedPredicted": "tôi đã ghi xuống mã, không còn nghe lại.",
-  "qualityScore": 3,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "tôi đã ghi xuống mã không cần nghe lại",
+  "werNormalizedPredicted": "tôi đã ghi xuống mã không còn nghe lại",
+  "qualityScore": null,
   "significantWer": 0.1111111111111111,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Tôi đã ghi xuống mã, không cần nghe lại.",
-  "sigWerNormalizedPredicted": "tôi đã ghi xuống mã, không còn nghe lại.",
+  "sigWerNormalizedGold": "tôi đã ghi xuống mã không cần nghe lại",
+  "sigWerNormalizedPredicted": "tôi đã ghi xuống mã không còn nghe lại",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
-      "score": 3
-    },
-    {
       "error": "Substitution: 'cần' to 'còn' at position 6",
-      "reason": "'Cần' means 'need' and 'còn' means 'still'; this substitution changes the meaning of the sentence significantly.",
+      "reason": "'cần' means 'need' and 'còn' means 'still'; this substitution changes the meaning of the sentence significantly, as 'không cần nghe lại' means 'no need to listen again', while 'không còn nghe lại' means 'no longer listen again'. The intent is altered.",
       "score": 1
     }
   ]

@@ -1,21 +1,31 @@
 {
   "gold": "Cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ.",
-  "predicted": "Cho tôi một cái phương án khác vì tôi còn gấp ngay bây giờ",
+  "predicted": "Cho tôi một cái cô gái khác vì tôi còn gấp ngay bây giờ",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werNormalizedGold": "Cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ.",
-  "werNormalizedPredicted": "Cho tôi một cái phương án khác đi vì tôi cần gấp ngay bây giờ.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3125,
+  "werNormalizedGold": "cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ",
+  "werNormalizedPredicted": "cho tôi một cái cô gái khác vì tôi còn gấp ngay bây giờ",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ.",
-  "sigWerNormalizedPredicted": "Cho tôi một cái phương án khác đi vì tôi cần gấp ngay bây giờ.",
+  "sigWerNormalizedGold": "cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ",
+  "sigWerNormalizedPredicted": "cho tôi một cái cô gái khác vì tôi còn gấp ngay bây giờ",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'bởi' at position 8",
-      "reason": "The word 'bởi' (because) is omitted, but the sentence still makes sense and the overall meaning is preserved. The omission does not significantly change the intent of the sentence.",
+      "error": "Substitution: 'phương' to 'cô' at position 4",
+      "reason": "'phương án' means 'plan/option', while 'cô gái' means 'girl'; this substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đi' at position 7",
+      "reason": "Omitting 'đi' slightly changes the tone but does not significantly alter the meaning of the request.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'cần' to 'còn' at position 11",
+      "reason": "'cần' means 'need', while 'còn' means 'still'; this changes the meaning of the sentence and makes it less coherent.",
+      "score": 1
     }
   ]
 }

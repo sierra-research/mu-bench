@@ -1,26 +1,26 @@
 {
   "gold": "Thôi được rồi. Cảm ơn.",
-  "predicted": "Nghe được rồi cơ mà",
+  "predicted": "No, được rồi cơ mà",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "Thôi được rồi. Cảm ơn.",
-  "werNormalizedPredicted": "Nghe được rồi cơ mà",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 0.6,
+  "werNormalizedGold": "thôi được rồi cảm ơn",
+  "werNormalizedPredicted": "no được rồi cơ mà",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Thôi được rồi. Cảm ơn.",
-  "sigWerNormalizedPredicted": "Nghe được rồi cơ mà",
+  "sigWerNormalizedGold": "thôi được rồi cảm ơn",
+  "sigWerNormalizedPredicted": "no được rồi cơ mà",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thôi' to 'Nghe' at position 0",
-      "reason": "'Thôi' means 'stop' or 'that's enough', while 'Nghe' means 'listen' or 'heard'. This changes the intent and meaning of the sentence significantly.",
+      "error": "Substitution: 'thôi' to 'no' at position 0",
+      "reason": "'thôi' means 'okay' or 'enough' in Vietnamese, while 'no' is an English word meaning 'không', which changes the meaning and language of the sentence, making it incoherent in context.",
       "score": 1
     },
     {
-      "error": "Substitution: 'rồi.' to 'rồi' at position 2",
-      "reason": "The difference is only punctuation, which should be ignored as per the guidance.",
-      "score": 3
+      "error": "Substitution: 'cảm' to 'cơ' at position 3",
+      "reason": "'cảm' is part of 'cảm ơn' meaning 'thank you', while 'cơ' is a different word and does not convey the intended meaning, altering the sentence's intent.",
+      "score": 1
     }
   ]
 }

@@ -1,26 +1,21 @@
 {
   "gold": "Hayır baştan söylüyorum beni kesmeden dinle lütfen. Artı 90 123 0 90 45 67.",
-  "predicted": "Hayır baştan söylüyorum beni kesmeden ne istiyorsan artı doksan yüz yirmi üç doksan kırk beş altmış yedi",
+  "predicted": "Hayır, baştan söylüyorum, beni kesmeden önce lütfen artı doksan, yüz yirmi üç, sıfır doksan, kırk beş, altmış yedi.",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "Hayır baştan söylüyorum beni kesmeden dinle lütfen. Artı 90 123 0 90 45 67.",
-  "werNormalizedPredicted": "Hayır baştan söylüyorum beni kesmeden ne istiyorsan artı 90 123 0 90 45 67",
-  "qualityScore": 2,
-  "significantWer": 0.07142857142857142,
+  "wer": 0.05555555555555555,
+  "werNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "hayır baştan söylüyorum beni kesmeden önce lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
   "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Hayır baştan söylüyorum beni kesmeden dinle lütfen. Artı 90 123 0 90 45 67.",
-  "sigWerNormalizedPredicted": "Hayır baştan söylüyorum beni kesmeden ne istiyorsan artı 90 123 0 90 45 67",
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır baştan söylüyorum beni kesmeden önce lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dinle' to 'ne' at position 5",
-      "reason": "'dinle lütfen' means 'please listen', while 'ne istiyorsan' means 'whatever you want'. This substitution changes the intent and meaning of the sentence significantly, making the sentence incoherent with the original intent.",
+      "error": "Substitution: 'dinle' to 'önce' at position 5",
+      "reason": "'dinle' means 'listen' and 'önce' means 'before'; substituting these changes the instruction from asking to listen to referencing time, which alters the meaning of the sentence significantly.",
       "score": 1
-    },
-    {
-      "error": "Substitution: '67.' to '67' at position 13",
-      "reason": "The only difference is the period at the end, which is punctuation and does not affect the meaning.",
-      "score": 3
     }
   ]
 }

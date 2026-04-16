@@ -1,20 +1,25 @@
 {
   "gold": "是你的问题，好好。",
-  "predicted": "是",
+  "predicted": "是新唐。",
   "unintelligible": false,
-  "wer": 0.8888888888888888,
-  "werNormalizedGold": "是你的问题，好好。",
-  "werNormalizedPredicted": "是",
-  "qualityScore": 1,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "是 你 的 问 题 ， 好 好 。",
-  "sigWerNormalizedPredicted": "是",
+  "wer": 0.8571428571428571,
+  "werNormalizedGold": "是你的问题 好好",
+  "werNormalizedPredicted": "是新唐",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 你 的 问 题 好 好",
+  "sigWerNormalizedPredicted": "是 新 唐",
   "sigWerErrors": [
     {
-      "error": "Deletion: '你' at position 1",
-      "reason": "The deletion of '你' (you) removes the subject of the sentence, making the meaning incomplete and incoherent.",
+      "error": "Substitution: '你' to '新' at position 1",
+      "reason": "'你' means 'you', while '新' means 'new'; this changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '问' at position 3",
+      "reason": "'的' is a possessive particle, while '唐' is a proper noun or surname; this substitution makes the sentence incoherent and changes the meaning significantly.",
       "score": 1
     }
   ]

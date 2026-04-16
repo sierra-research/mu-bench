@@ -2,25 +2,20 @@
   "gold": "Denizli, Ordu 0 6 8 0. Doğru mu?",
   "predicted": "Denizli ordu 068 doğru mu?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Denizli, Ordu 0 6 8 0. Doğru mu?",
-  "werNormalizedPredicted": "Denizli, Ordu 0 6 8. Doğru mu?",
-  "qualityScore": 3,
+  "wer": 0.125,
+  "werNormalizedGold": "denizli ordu zero six eight zero doğru mu",
+  "werNormalizedPredicted": "denizli ordu zero six eight doğru mu",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Denizli, Ordu 0 6 8 0. Doğru mu?",
-  "sigWerNormalizedPredicted": "Denizli, Ordu 0 6 8. Doğru mu?",
+  "sigWerNormalizedGold": "denizli ordu zero six eight zero doğru mu",
+  "sigWerNormalizedPredicted": "denizli ordu zero six eight doğru mu",
   "sigWerErrors": [
     {
-      "error": "Substitution: '8' to '8.' at position 4",
-      "reason": "A digit is missing from a sequence of numbers, which could be a code or phone number. This is a significant error as it changes the information conveyed.",
+      "error": "Deletion: 'zero' at position 5",
+      "reason": "A digit is missing from a sequence of numbers, which can significantly change the intended number (e.g., 680 vs 6800 or 680 vs 680). This is a significant error as it alters the information conveyed.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '0.' at position 5",
-      "reason": "infra_error",
-      "score": 2
     }
   ]
 }

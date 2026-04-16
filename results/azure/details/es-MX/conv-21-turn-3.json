@@ -1,15 +1,31 @@
 {
   "gold": "El número de teléfono es 55 12 34 56 78.",
-  "predicted": "El número de teléfono es 5512345678.",
+  "predicted": "El número de teléfono es 552745678.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "El número de teléfono es 55 12 34 56 78.",
-  "werNormalizedPredicted": "El número de teléfono es 55 12 34 56 78.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "El número de teléfono es 55 12 34 56 78.",
-  "sigWerNormalizedPredicted": "El número de teléfono es 55 12 34 56 78.",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "el numero de telefono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "el numero de telefono es cincuenta y cinco veintisiete cuarenta y cinco sesenta y siete ochenta y ocho",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "el numero de telefono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "el numero de telefono es cincuenta y cinco veintisiete cuarenta y cinco sesenta y siete ochenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doce' to 'veintisiete' at position 8",
+      "reason": "'doce' (12) and 'veintisiete' (27) are completely different numbers, which changes the phone number significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cuatro' to 'cinco' at position 11",
+      "reason": "'cuatro' (4) and 'cinco' (5) are different digits, which alters the phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'seis' to 'siete' at position 14",
+      "reason": "'seis' (6) and 'siete' (7) are different digits, which alters the phone number.",
+      "score": 1
+    }
+  ]
 }

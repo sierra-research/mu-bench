@@ -1,25 +1,25 @@
 {
   "gold": "Tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không?",
-  "predicted": "Ờ tuấn muốn hỏi là có cần phải trả phí gì cho thế hệ hay không?",
+  "predicted": "Ờ tuấn muốn hỏi là có cần phải trả phí gì cho thế hệ không?",
   "unintelligible": false,
-  "wer": 0.35714285714285715,
-  "werNormalizedGold": "Tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không?",
-  "werNormalizedPredicted": "Ờ Tuấn muốn hỏi là có cần phải trả phí gì cho thế hệ hay không?",
-  "qualityScore": 2,
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "wer": 0.21428571428571427,
+  "werNormalizedGold": "tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không",
+  "werNormalizedPredicted": "tuấn muốn hỏi là có cần phải trả phí gì cho thế hệ không",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không?",
-  "sigWerNormalizedPredicted": "Ờ Tuấn muốn hỏi là có cần phải trả phí gì cho thế hệ hay không?",
+  "sigWerNormalizedGold": "tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không",
+  "sigWerNormalizedPredicted": "tuấn muốn hỏi là có cần phải trả phí gì cho thế hệ không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'Tuấn' at position 0",
-      "reason": "'Ờ' is a filler word in Vietnamese and does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: 'tôi' to 'tuấn' at position 0",
+      "reason": "'tôi' means 'I' (the speaker), while 'tuấn' is a proper name. This changes the subject of the sentence and alters the meaning significantly.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'cái' to 'hệ' at position 11",
-      "reason": "Substituting 'Tôi' (I) with 'Tuấn' (a person's name) changes the subject of the sentence, which significantly alters the meaning.",
+      "error": "Substitution: 'cái' to 'thế' at position 11",
+      "reason": "'cái thẻ' means 'the card', while 'thế hệ' means 'generation'. This changes the object being referred to and makes the sentence incoherent in context.",
       "score": 1
     }
   ]

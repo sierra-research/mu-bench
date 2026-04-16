@@ -2,19 +2,24 @@
   "gold": "Thường sẽ có mã theo dõi. Mã theo dõi là gì?",
   "predicted": "Ờ nhưng mà thường thì sẽ có mã theo dõi mã theo dõi là gì?",
   "unintelligible": false,
-  "wer": 0.36363636363636365,
-  "werNormalizedGold": "Thường sẽ có mã theo dõi. Mã theo dõi là gì?",
-  "werNormalizedPredicted": "Ờ, nhưng mà thường sẽ có mã theo dõi. Mã theo dõi là gì?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "thường sẽ có mã theo dõi mã theo dõi là gì",
+  "werNormalizedPredicted": "nhưng mà thường thì sẽ có mã theo dõi mã theo dõi là gì",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Thường sẽ có mã theo dõi. Mã theo dõi là gì?",
-  "sigWerNormalizedPredicted": "Ờ, nhưng mà thường sẽ có mã theo dõi. Mã theo dõi là gì?",
+  "sigWerNormalizedGold": "thường sẽ có mã theo dõi mã theo dõi là gì",
+  "sigWerNormalizedPredicted": "nhưng mà thường thì sẽ có mã theo dõi mã theo dõi là gì",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thường' to 'thường' at position 0",
-      "reason": "'Ờ,' is a filler word in Vietnamese, similar to 'uh' or 'well' in English. It does not change the meaning of the sentence.",
+      "error": "Insertion: 'nhưng' at position 0",
+      "reason": "'nhưng' means 'but', which introduces a contrast or exception and changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'thì' at position 1",
+      "reason": "'thì' is a discourse marker that does not significantly alter the meaning of the sentence in this context.",
       "score": 2
     }
   ]

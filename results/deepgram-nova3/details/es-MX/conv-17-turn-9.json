@@ -2,19 +2,24 @@
   "gold": "Sí, es María López arroba email punto com.",
   "predicted": "Sí, es María punto López arroba Gmail punto com.",
   "unintelligible": false,
-  "wer": 0.125,
-  "werNormalizedGold": "Sí, es María López arroba email punto com.",
-  "werNormalizedPredicted": "Sí, es María López arroba Gmail punto com.",
-  "qualityScore": 2,
+  "wer": 0.25,
+  "werNormalizedGold": "si es maria lopez arroba email punto com",
+  "werNormalizedPredicted": "si es maria punto lopez arroba gmail punto com",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Sí, es María López arroba email punto com.",
-  "sigWerNormalizedPredicted": "Sí, es María López arroba Gmail punto com.",
+  "sigWerNormalizedGold": "si es maria lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "si es maria punto lopez arroba gmail punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'Gmail' at position 5",
-      "reason": "'email' is a generic term for an email address, while 'Gmail' specifies a particular email provider. This changes the meaning of the email address and could result in a message being sent to the wrong address.",
+      "error": "Insertion: 'punto' at position 3",
+      "reason": "The insertion of 'punto' before 'lopez' does not change the overall meaning of the email address, as it is a common separator in email usernames. The address is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "Changing the domain from 'email' to 'gmail' significantly alters the email address, potentially leading to a completely different recipient. This is a significant error.",
       "score": 1
     }
   ]

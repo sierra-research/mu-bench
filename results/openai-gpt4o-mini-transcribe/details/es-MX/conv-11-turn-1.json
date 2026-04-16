@@ -1,0 +1,26 @@
+{
+  "gold": "Sí, deja encuentro algo para anotarlo.",
+  "predicted": "Sí, deja, encuentro dónde anotarlo.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "si deja encuentro algo para anotarlo",
+  "werNormalizedPredicted": "si deja encuentro donde anotarlo",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "si deja encuentro algo para anotarlo",
+  "sigWerNormalizedPredicted": "si deja encuentro donde anotarlo",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'algo' to 'donde' at position 3",
+      "reason": "'algo' (something) and 'donde' (where) are different concepts; this changes the meaning of the sentence from finding something to write on to finding where to write, which alters the intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'para' at position 4",
+      "reason": "Omitting 'para' (for) further changes the structure and meaning of the sentence, reinforcing the shift in intent caused by the previous substitution.",
+      "score": 1
+    }
+  ]
+}

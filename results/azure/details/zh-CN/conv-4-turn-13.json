@@ -1,25 +1,25 @@
 {
   "gold": "君，君灵，君灵。",
-  "predicted": "Drin, dwindling, dwindling.",
+  "predicted": "Drin, drinling, drinling.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "君，君灵，君灵。",
-  "werNormalizedPredicted": "Drin, dwindling, dwindling.",
-  "qualityScore": 1,
-  "significantWer": 0.25,
+  "werNormalizedGold": "君 君灵 君灵",
+  "werNormalizedPredicted": "drin drinling drinling",
+  "qualityScore": null,
+  "significantWer": 0.4,
   "majorErrorsCount": 2,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "君 ， 君 灵 ， 君 灵 。",
-  "sigWerNormalizedPredicted": "Drin, dwindling, dwindling.",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "君 君 灵 君 灵",
+  "sigWerNormalizedPredicted": "drin drinling drinling",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'Drin,' at position 0",
-      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), and the words do not correspond in meaning or sound. This is a significant error that makes the sentence incoherent.",
+      "error": "Substitution: '君' to 'drin' at position 0",
+      "reason": "The expected word is a Chinese character, but the actual transcription is an unrelated English-sounding word. This is a significant error as the meaning is completely lost.",
       "score": 1
     },
     {
-      "error": "Deletion: '灵' at position 3",
-      "reason": "The last expected word '灵' is missing in the actual transcription, which is already in a different language. This further contributes to the incoherence of the transcription.",
+      "error": "Deletion: '君' at position 3",
+      "reason": "A word from the expected transcription is missing in the actual transcription, which further reduces the accuracy and coherence of the output.",
       "score": 1
     }
   ]

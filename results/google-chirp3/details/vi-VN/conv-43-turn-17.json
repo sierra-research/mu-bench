@@ -1,30 +1,25 @@
 {
   "gold": "Chưa chính xác. Phải là cộng 84.",
-  "predicted": "chiều chính xác gọi là cộng 9 cộng 84",
+  "predicted": "chưa chính xác gọi là cộng 9 cộng 84",
   "unintelligible": false,
-  "wer": 0.8571428571428571,
-  "werNormalizedGold": "Chưa chính xác. Phải là cộng 84.",
-  "werNormalizedPredicted": "chưa chính xác gọi là cộng 9 cộng 84",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Chưa chính xác. Phải là cộng 84.",
-  "sigWerNormalizedPredicted": "chưa chính xác gọi là cộng 9 cộng 84",
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "chưa chính xác phải là cộng tám mươi bốn",
+  "werNormalizedPredicted": "chưa chính xác gọi là cộng chín cộng tám mươi bốn",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "chưa chính xác phải là cộng tám mươi bốn",
+  "sigWerNormalizedPredicted": "chưa chính xác gọi là cộng chín cộng tám mươi bốn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Chưa' to 'chưa' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'phải' to 'gọi' at position 3",
+      "reason": "'phải' means 'must' or 'should', while 'gọi' means 'call'; this changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'xác.' to 'xác' at position 2",
-      "reason": "Difference is only in punctuation, which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: '84.' to '84' at position 6",
-      "reason": "The insertion of '9' changes the meaning of the sentence, as it introduces an incorrect number in the context of the answer.",
+      "error": "Insertion: 'cộng' at position 5",
+      "reason": "The extra 'cộng' (meaning 'plus') introduces confusion and changes the structure of the number, which can mislead the listener about the correct number sequence.",
       "score": 1
     }
   ]

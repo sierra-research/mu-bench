@@ -1,0 +1,26 @@
+{
+  "gold": "Hayır e-posta adresimin sonu email nokta com, telefon numaramın sonu ise 45 67.",
+  "predicted": "Hayır, e-posta adresimiz sonu e-mail.com. Telefon numaramızın sonu ise 4567.",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werNormalizedGold": "hayır e posta adresimin sonu email nokta com telefon numaramın sonu ise kırk beş altmış yedi",
+  "werNormalizedPredicted": "hayır e posta adresimiz sonu email nokta com telefon numaramızın sonu ise kırk beş altmış yedi",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "hayır e posta adresimin sonu email nokta com telefon numaramın sonu ise kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır e posta adresimiz sonu email nokta com telefon numaramızın sonu ise kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adresimin' to 'adresimiz' at position 3",
+      "reason": "The possessive suffix changes from 'my' (benim) to 'our' (bizim), which changes the owner of the email address. This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaramın' to 'numaramızın' at position 9",
+      "reason": "The possessive suffix changes from 'my' (benim) to 'our' (bizim), which changes the owner of the phone number. This is a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

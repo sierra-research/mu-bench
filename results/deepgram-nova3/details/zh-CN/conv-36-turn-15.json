@@ -1,31 +1,26 @@
 {
   "gold": "你好，能听见我说话吗？",
-  "predicted": "等纪念文化吗",
+  "predicted": "你好等七点文化啊",
   "unintelligible": false,
-  "wer": 0.9090909090909091,
-  "werNormalizedGold": "你好，能听见我说话吗？",
-  "werNormalizedPredicted": "等纪念文化吗",
-  "qualityScore": 1,
-  "significantWer": 0.18181818181818182,
+  "wer": 0.7777777777777778,
+  "werNormalizedGold": "你好 能听见我说话吗",
+  "werNormalizedPredicted": "你好 等七点文化啊",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
   "majorErrorsCount": 2,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 好 ， 能 听 见 我 说 话 吗 ？",
-  "sigWerNormalizedPredicted": "等 纪 念 文 化 吗",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "你 好 能 听 见 我 说 话 吗",
+  "sigWerNormalizedPredicted": "你 好 等 七 点 文 化 啊",
   "sigWerErrors": [
     {
-      "error": "Substitution: '你' to '等' at position 0",
-      "reason": "The substitution changes the subject of the sentence, resulting in a completely different meaning and making the sentence incoherent compared to the expected greeting.",
+      "error": "Substitution: '能' to '等' at position 2",
+      "reason": "'能' means 'can' or 'able to', while '等' means 'wait'. This changes the intent of the sentence from asking about ability to something unrelated, significantly altering the meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: '见' at position 5",
-      "reason": "Omitting '见' removes part of the phrase '听见' (to hear), which is essential to the meaning of the sentence and causes a significant loss of intended meaning.",
+      "error": "Deletion: '吗' at position 8",
+      "reason": "'吗' is a question particle that turns the sentence into a question. Its omission removes the interrogative nature of the sentence.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '？' at position 10",
-      "reason": "Missing the question mark does not affect the meaning of the sentence in spoken language.",
-      "score": 3
     }
   ]
 }

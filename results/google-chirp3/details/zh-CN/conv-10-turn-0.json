@@ -1,15 +1,26 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "喵",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "喵",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "喵",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '喵' at position 0",
+      "reason": "'你' means 'you' (a greeting), while '喵' means 'meow' (the sound a cat makes). This substitution completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "'好' means 'good' or 'well' and is part of the standard greeting '你好' ('hello'). Its omission means the greeting is incomplete and the intended meaning is lost.",
+      "score": 1
+    }
+  ]
 }

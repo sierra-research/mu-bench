@@ -1,25 +1,25 @@
 {
   "gold": "没有没有没有，美玲 at email dot com。",
-  "predicted": "meelingmeel。com。",
+  "predicted": "内林。",
   "unintelligible": false,
-  "wer": 0.6428571428571429,
-  "werNormalizedGold": "没有没有没有，美玲 at email dot com。",
-  "werNormalizedPredicted": "meeling at email dot com。",
-  "qualityScore": 1,
-  "significantWer": 0.14285714285714285,
+  "wer": 0.8333333333333334,
+  "werNormalizedGold": "没有没有没有 美玲 at email dot com",
+  "werNormalizedPredicted": "美玲",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
   "majorErrorsCount": 2,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "没 有 没 有 没 有 ， 美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "meeling at email dot com 。",
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "没 有 没 有 没 有 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "美 玲",
   "sigWerErrors": [
     {
-      "error": "Substitution: '没' to 'meeling' at position 0",
-      "reason": "The expected contains repeated Chinese words meaning 'no, no, no' and a name '美玲', while the actual only has 'meeling', which is an attempt at the name but omits the repeated phrase. The omission of the repeated phrase changes the meaning and context significantly.",
+      "error": "Deletion: '没' at position 0",
+      "reason": "The repeated '没有' (meaning 'no' or 'none') is omitted entirely, which removes a key part of the sentence and changes the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: '有' at position 1",
-      "reason": "The repeated phrase '没 有 没 有 没 有 ，' (meaning 'no, no, no,') is completely missing from the actual transcription, which removes important context and changes the meaning of the sentence.",
+      "error": "Deletion: 'at' at position 8",
+      "reason": "Omitting 'at email dot com' removes the email address information, which is essential to the meaning of the sentence.",
       "score": 1
     }
   ]

@@ -1,31 +1,26 @@
 {
   "gold": "Rồi. Vui lòng cho tôi biết lại mã.",
-  "predicted": "Rồi vui lòng này cho tôi biết lại cái mã",
+  "predicted": "Rồi vui lòng này cho tôi viết lại cái mã",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Rồi. Vui lòng cho tôi biết lại mã.",
-  "werNormalizedPredicted": "Rồi, vui lòng này cho tôi biết lại cái mã.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.25,
+  "werNormalizedGold": "rồi vui lòng cho tôi biết lại mã",
+  "werNormalizedPredicted": "rồi vui lòng cho tôi viết lại cái mã",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Rồi. Vui lòng cho tôi biết lại mã.",
-  "sigWerNormalizedPredicted": "Rồi, vui lòng này cho tôi biết lại cái mã.",
+  "sigWerNormalizedGold": "rồi vui lòng cho tôi biết lại mã",
+  "sigWerNormalizedPredicted": "rồi vui lòng cho tôi viết lại cái mã",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Rồi.' to 'Rồi,' at position 0",
-      "reason": "Difference is only punctuation (period vs comma), which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'này' at position 3",
-      "reason": "The word 'này' (this) is an extra word, but does not change the overall meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'biết' to 'viết' at position 5",
+      "reason": "'biết' means 'to know' and 'viết' means 'to write'; this changes the meaning of the request significantly.",
+      "score": 1
     },
     {
       "error": "Insertion: 'cái' at position 7",
-      "reason": "The word 'cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
-      "score": 2
+      "reason": "The insertion of 'cái' (a classifier) before 'mã' does not change the meaning of the sentence in this context.",
+      "score": 3
     }
   ]
 }

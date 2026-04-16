@@ -1,15 +1,21 @@
 {
   "gold": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
-  "predicted": "Bueno, más cincuenta y dos, más cincuenta y dos, cincuenta y cinco, uno, dos, tres, cuatro, cinco, seis, siete, ocho.",
+  "predicted": "Bueno, más cincuenta y dos, más cincuenta y dos, cincuenta y cinco, uno dos tres cuatro cinco seis siete ocho.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Bueno, más 52 55 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.25,
+  "werNormalizedGold": "bueno mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "bueno mas cincuenta y dos mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "bueno mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "bueno mas cincuenta y dos mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'mas' at position 5",
+      "reason": "The extra 'mas' repeats the phrase 'mas cincuenta y dos', which could confuse the listener and alter the intended meaning, especially in a context like a phone number or code. This repetition is a significant error.",
+      "score": 1
+    }
+  ]
 }

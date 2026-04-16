@@ -1,15 +1,21 @@
 {
   "gold": "Mi nombre María punto López arroba email.",
-  "predicted": "Mi nombre: María.López@email",
+  "predicted": "Mi nombre: María. López@email",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Mi nombre María punto López arroba email.",
-  "werNormalizedPredicted": "Mi nombre María punto López arroba email.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "mi nombre maria punto lopez arroba email",
+  "werNormalizedPredicted": "mi nombre maria lopez arroba email",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Mi nombre María punto López arroba email.",
-  "sigWerNormalizedPredicted": "Mi nombre María punto López arroba email.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "mi nombre maria punto lopez arroba email",
+  "sigWerNormalizedPredicted": "mi nombre maria lopez arroba email",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'punto' at position 3",
+      "reason": "The word 'punto' (dot) is missing, which is important for correctly specifying an email address. Its omission could lead to confusion or an invalid email, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
 }

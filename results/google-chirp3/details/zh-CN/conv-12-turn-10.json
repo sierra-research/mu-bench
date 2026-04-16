@@ -1,25 +1,25 @@
 {
   "gold": "君，你听得不对，真的不对，我怎么办？",
-  "predicted": "你听得不对,听得不对,我怎么办?",
+  "predicted": "你听得不对,现在不对,我怎么办?",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "君，你听得不对，真的不对，我怎么办？",
-  "werNormalizedPredicted": "你听得不对，听得不对，我怎么办？",
-  "qualityScore": 3,
-  "significantWer": 0.05555555555555555,
+  "wer": 0.21428571428571427,
+  "werNormalizedGold": "君 你 听 得 不 对 真的 不 对 我 怎么办",
+  "werNormalizedPredicted": "你 听 得 不 对 现在 不 对 我 怎么办",
+  "qualityScore": null,
+  "significantWer": 0.07142857142857142,
   "majorErrorsCount": 1,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "君 ， 你 听 得 不 对 ， 真 的 不 对 ， 我 怎 么 办 ？",
-  "sigWerNormalizedPredicted": "你 听 得 不 对 ， 听 得 不 对 ， 我 怎 么 办 ？",
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "君 你 听 得 不 对 真 的 不 对 我 怎 么 办",
+  "sigWerNormalizedPredicted": "你 听 得 不 对 现 在 不 对 我 怎 么 办",
   "sigWerErrors": [
     {
       "error": "Deletion: '君' at position 0",
-      "reason": "'君' is a term of address (like 'you' or 'sir') at the start of the sentence. Its omission does not significantly change the meaning of the sentence, as '你' (you) is still present and the main message is preserved.",
+      "reason": "'君' is a term of address (like 'you' or 'sir') at the start of the sentence. Its omission does not significantly change the meaning of the sentence, as '你' (you) is still present.",
       "score": 2
     },
     {
-      "error": "Substitution: '真' to '听' at position 8",
-      "reason": "Replacing '真' ('really') with '听' ('listen') changes the meaning of the phrase from 'really not right' to a repetition of 'listen not right', which alters the emphasis and meaning of the sentence. This is a significant error as it changes the intended message.",
+      "error": "Substitution: '真' to '现' at position 6",
+      "reason": "'真' (really/truly) expresses emphasis, while '现' (now) changes the meaning to a temporal context. This substitution alters the meaning of the sentence significantly.",
       "score": 1
     }
   ]
