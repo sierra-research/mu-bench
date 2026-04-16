@@ -321,7 +321,13 @@ export default function Leaderboard() {
 
 function ProviderRow({ provider, sigWerMetric, latencyMetric, onRowClick }) {
     return (
-        <tr className="provider-row" onClick={onRowClick} onKeyDown={(e) => e.key === "Enter" && onRowClick()} tabIndex={0} role="button">
+        <tr
+            className="provider-row"
+            onClick={onRowClick}
+            onKeyDown={(e) => e.key === "Enter" && onRowClick()}
+            tabIndex={0}
+            role="button"
+        >
             <td className="col-rank">
                 <span
                     className={`rank-number ${provider.rank === 1 ? "rank-gold" : provider.rank === 2 ? "rank-silver" : provider.rank === 3 ? "rank-bronze" : ""}`}
@@ -384,7 +390,12 @@ function ProviderDetailOverall({ provider, providerId }) {
     return (
         <div className="provider-detail-sections">
             <div className="collapsible-section">
-                <button type="button" className="collapsible-toggle" onClick={() => setShowScores(!showScores)} aria-expanded={showScores}>
+                <button
+                    type="button"
+                    className="collapsible-toggle"
+                    onClick={() => setShowScores(!showScores)}
+                    aria-expanded={showScores}
+                >
                     <span className={`collapsible-caret ${showScores ? "open" : ""}`}>{"\u25B6"}</span>
                     <span className="collapsible-label">Metrics by Locale</span>
                 </button>
@@ -419,7 +430,12 @@ function ProviderDetailOverall({ provider, providerId }) {
             </div>
 
             <div className="collapsible-section">
-                <button type="button" className="collapsible-toggle" onClick={() => setShowUtterances(!showUtterances)} aria-expanded={showUtterances}>
+                <button
+                    type="button"
+                    className="collapsible-toggle"
+                    onClick={() => setShowUtterances(!showUtterances)}
+                    aria-expanded={showUtterances}
+                >
                     <span className={`collapsible-caret ${showUtterances ? "open" : ""}`}>{"\u25B6"}</span>
                     <span className="collapsible-label">Compare transcripts to ground truth</span>
                 </button>

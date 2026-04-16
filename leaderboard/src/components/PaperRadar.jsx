@@ -28,7 +28,13 @@ const PROVIDER_LABELS = {
     azure: "Microsoft Azure",
 };
 
-const PROVIDER_ORDER = ["google-chirp3", "elevenlabs-scribe-v2", "deepgram-nova3", "openai-gpt4o-mini-transcribe", "azure"];
+const PROVIDER_ORDER = [
+    "google-chirp3",
+    "elevenlabs-scribe-v2",
+    "deepgram-nova3",
+    "openai-gpt4o-mini-transcribe",
+    "azure",
+];
 const PROVIDERS = PROVIDER_ORDER.map((id) => ({
     id,
     label: PROVIDER_LABELS[id] || id,
