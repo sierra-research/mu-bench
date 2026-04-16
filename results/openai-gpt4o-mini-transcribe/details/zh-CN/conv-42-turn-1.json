@@ -1,0 +1,26 @@
+{
+  "gold": "我想提高我的信用卡额度。",
+  "predicted": "我想提个我的心情可恶毒。",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werNormalizedGold": "我 想 提高 我 的 信用卡 额度",
+  "werNormalizedPredicted": "我 想 提 个 我 的 心情 可 恶 毒",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "我 想 提 个 我 的 心 情 可 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '高' to '个' at position 3",
+      "reason": "'高' means 'increase' or 'raise', while '个' is a measure word and does not convey the intended meaning. This substitution changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '信' to '心' at position 6",
+      "reason": "'信' (credit) is part of '信用卡' (credit card), while '心' (heart/mood) changes the meaning entirely, making the sentence incoherent and unrelated to the original intent.",
+      "score": 1
+    }
+  ]
+}

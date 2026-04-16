@@ -29,12 +29,18 @@ jobs:
         id: detect
         run: |
           CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} HEAD -- submissions/raw/)
-          # Extract the submission dir (submissions/raw/<model-name>)
-          SUBMISSION_DIR=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u | head -1)
-          if [ -z "$SUBMISSION_DIR" ]; then
+          DIRS=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u)
+          if [ -z "$DIRS" ]; then
             echo "No submission directory detected from changed files"
             exit 1
           fi
+          DIR_COUNT=$(echo "$DIRS" | wc -l | tr -d ' ')
+          if [ "$DIR_COUNT" -gt 1 ]; then
+            echo "ERROR: Multiple submission directories detected. Please submit one model per PR."
+            echo "$DIRS"
+            exit 1
+          fi
+          SUBMISSION_DIR=$(echo "$DIRS" | head -1)
           echo "dir=$SUBMISSION_DIR" >> "$GITHUB_OUTPUT"
           echo "Detected submission: $SUBMISSION_DIR"
 

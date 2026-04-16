@@ -1,0 +1,36 @@
+{
+  "gold": "我已经几次说了。",
+  "predicted": "为经济说了。",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "我 已经 几 次 说 了",
+  "werNormalizedPredicted": "为 经济 说 了",
+  "qualityScore": null,
+  "significantWer": 0.5714285714285714,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 已 经 几 次 说 了",
+  "sigWerNormalizedPredicted": "为 经 济 说 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to '为' at position 0",
+      "reason": "'我' means 'I' or 'me', while '为' means 'for' or 'to do'. This changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '已' at position 1",
+      "reason": "'已' means 'already', and its omission removes important temporal information from the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '几' to '济' at position 3",
+      "reason": "'几' means 'several' or 'how many', while '济' is unrelated and means 'economy' or 'aid'. This substitution makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '次' at position 4",
+      "reason": "'次' means 'times' (as in occurrences), and its omission removes the quantification of the action, significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

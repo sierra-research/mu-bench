@@ -384,10 +384,15 @@ function ProviderDetailOverall({ provider, providerId }) {
     return (
         <div className="provider-detail-sections">
             <div className="collapsible-section">
-                <div className="collapsible-toggle" onClick={() => setShowScores(!showScores)}>
+                <button
+                    type="button"
+                    className="collapsible-toggle"
+                    onClick={() => setShowScores(!showScores)}
+                    aria-expanded={showScores}
+                >
                     <span className={`collapsible-caret ${showScores ? "open" : ""}`}>{"\u25B6"}</span>
                     <span className="collapsible-label">Metrics by Locale</span>
-                </div>
+                </button>
                 {showScores && (
                     <div className="collapsible-content">
                         <table className="scores-table">
@@ -419,10 +424,15 @@ function ProviderDetailOverall({ provider, providerId }) {
             </div>
 
             <div className="collapsible-section">
-                <div className="collapsible-toggle" onClick={() => setShowUtterances(!showUtterances)}>
+                <button
+                    type="button"
+                    className="collapsible-toggle"
+                    onClick={() => setShowUtterances(!showUtterances)}
+                    aria-expanded={showUtterances}
+                >
                     <span className={`collapsible-caret ${showUtterances ? "open" : ""}`}>{"\u25B6"}</span>
                     <span className="collapsible-label">Compare transcripts to ground truth</span>
-                </div>
+                </button>
                 {showUtterances && (
                     <div className="collapsible-content">
                         <table className="utterance-table">

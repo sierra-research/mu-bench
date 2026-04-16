@@ -20,7 +20,6 @@ load_dotenv()
 
 from scoring.llm import NORMALIZE_SCHEMA, get_responses, load_responses
 from scoring.metrics import is_unintelligible
-from scoring.prompts import NORMALIZE_AGAINST_GOLD_PROMPT
 
 TARGET_LOCALES = ["en-US", "es-MX", "tr-TR", "vi-VN", "zh-CN"]
 
@@ -70,6 +69,8 @@ def load_transcript_pairs(
 
 
 def main():
+    from scoring.prompts import NORMALIZE_AGAINST_GOLD_PROMPT
+
     parser = argparse.ArgumentParser(description="LLM-normalize submission transcripts")
     parser.add_argument("--submission-dir", type=Path, required=True, help="Submission directory")
     parser.add_argument(
@@ -82,7 +83,7 @@ def main():
         "--output-dir",
         type=Path,
         default=None,
-        help="Output directory (default: submissions_normalized/<name>)",
+        help="Output directory (default: submissions/normalized/<name>)",
     )
     parser.add_argument("--num-workers", type=int, default=15, help="Parallel LLM workers")
     parser.add_argument("--locales", nargs="+", default=None, help="Limit to specific locales (e.g. en-US zh-CN)")

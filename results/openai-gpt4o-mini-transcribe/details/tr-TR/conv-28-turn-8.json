@@ -14,12 +14,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'nokta' to 'arslan' at position 23",
-      "reason": "'nokta' (dot/period) is a separator in an email address, while 'arslan' is part of the username. This substitution merges the separator and the username, making the email address incorrect and potentially unusable.",
+      "reason": "The expected sequence spells out the email address letter by letter, with 'nokta' (dot) indicating a period before the domain. In the actual, 'arslan' is inserted as a whole word instead of being spelled out, skipping the dot and the individual letters. This changes the format of the email address and could lead to confusion or incorrect transcription of the email.",
       "score": 1
     },
     {
       "error": "Deletion: 'a' at position 24",
-      "reason": "The missing 'a' is part of the spelled-out surname 'a r s l a n'. Omitting a letter in a spelled-out name is a significant error as it changes the spelling and could result in an incorrect or undeliverable email address.",
+      "reason": "The letter 'a' is omitted from the spelled-out sequence of the email address, which could result in an incorrect email address being recorded. In spelled-out sequences, missing a letter is a significant error.",
       "score": 1
     }
   ]

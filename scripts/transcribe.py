@@ -133,17 +133,32 @@ DEEPGRAM_LOCALE_MAP = {
     "zh-CN": "zh",
 }
 
+MAX_RETRIES = 3
+RETRY_BACKOFF = 2.0
+RETRYABLE_STATUSES = {429, 500, 502, 503, 529}
+
+
+async def _post_with_retry(session: aiohttp.ClientSession, url: str, headers: dict, data, provider: str):
+    """POST with exponential backoff on rate-limit and server errors."""
+    for attempt in range(MAX_RETRIES):
+        async with session.post(url, headers=headers, data=data) as resp:
+            if resp.status in RETRYABLE_STATUSES and attempt < MAX_RETRIES - 1:
+                wait = RETRY_BACKOFF * (2**attempt)
+                print(f"  {provider} {resp.status}, retrying in {wait:.0f}s (attempt {attempt + 1}/{MAX_RETRIES})...")
+                await asyncio.sleep(wait)
+                continue
+            if resp.status != 200:
+                body = await resp.text()
+                raise Exception(f"{provider} {resp.status}: {body[:300]}")
+            return await resp.json()
+
 
 async def transcribe_deepgram(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
     api_key = os.environ["DEEPGRAM_API_KEY"]
     dg_locale = DEEPGRAM_LOCALE_MAP.get(locale, locale)
     url = f"https://api.deepgram.com/v1/listen?model=nova-3&language={dg_locale}&punctuate=true&smart_format=false"
     headers = {"Authorization": f"Token {api_key}", "Content-Type": "audio/wav"}
-    async with session.post(url, headers=headers, data=wav_bytes) as resp:
-        if resp.status != 200:
-            body = await resp.text()
-            raise Exception(f"Deepgram {resp.status}: {body[:300]}")
-        data = await resp.json()
+    data = await _post_with_retry(session, url, headers, wav_bytes, "Deepgram")
     return data["results"]["channels"][0]["alternatives"][0]["transcript"]
 
 
@@ -333,6 +348,21 @@ async def run_transcription(args):
     locales = [args.locale] if args.locale else all_locales
 
     provider_fn = PROVIDERS[args.provider]
+
+    required_env = {
+        "deepgram-nova3": ["DEEPGRAM_API_KEY"],
+        "google-chirp3": ["GOOGLE_SPEECH_CREDENTIALS"],
+        "azure": ["AZURE_SPEECH_ENDPOINT", "AZURE_SPEECH_KEY"],
+        "elevenlabs-scribe-v2": ["ELEVENLABS_API_KEY"],
+        "openai-gpt4o-transcribe": ["OPENAI_API_KEY"],
+        "openai-gpt4o-mini-transcribe": ["OPENAI_API_KEY"],
+        "openai-gpt-audio-1.5": ["OPENAI_API_KEY"],
+    }
+    missing = [k for k in required_env.get(args.provider, []) if not os.environ.get(k)]
+    if missing:
+        print(f"ERROR: Missing required environment variables for {args.provider}: {', '.join(missing)}")
+        print("Set them in your .env file or export them before running.")
+        return
 
     print(f"Provider: {args.provider}")
     print(f"Locales: {locales}")

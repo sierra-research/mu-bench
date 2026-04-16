@@ -31,7 +31,7 @@ load_dotenv()
 
 REPO_ID = "sierra-research/mu-bench"
 DURATION_TOLERANCE = 0.001  # seconds
-EXPECTED_SAMPLERATE = 24000
+EXPECTED_SAMPLERATE = 8000
 EXPECTED_CHANNELS = 1
 
 METADATA_REQUIRED_FIELDS = ("file_name", "locale", "conversation_id", "turn_index", "duration_sec", "transcript")

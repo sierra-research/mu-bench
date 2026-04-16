@@ -6,21 +6,21 @@
   "werNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
   "werNormalizedPredicted": "hayır ikinci harfini bu defa ikinci harfini yanlış söylediniz a ikinci harfi e değil a olacak zeynep arslan",
   "qualityScore": null,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 0.05263157894736842,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
   "sigWerNormalizedPredicted": "hayır ikinci harfini bu defa ikinci harfini yanlış söylediniz a ikinci harfi e değil a olacak zeynep arslan",
   "sigWerErrors": [
     {
       "error": "Substitution: 'harfim' to 'harfini' at position 2",
-      "reason": "'harfim' (my letter) vs 'harfini' (your letter) changes the possessive, but in context the meaning is still clear and the sentence remains coherent.",
+      "reason": "'harfim' (my letter) vs 'harfini' (your letter) changes the subject of the sentence, which can confuse the meaning but the overall context is still understandable.",
       "score": 2
     },
     {
       "error": "Deletion: 'değil' at position 10",
-      "reason": "Omitting 'değil' (not) removes a negation, which could potentially change the meaning, but in this context, the sentence is still understandable and the overall intent is preserved.",
-      "score": 2
+      "reason": "Omitting 'değil' (not) removes a negation, which can change the meaning of the sentence significantly.",
+      "score": 1
     },
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 17",

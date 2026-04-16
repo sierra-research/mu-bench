@@ -31,12 +31,12 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Inject leaderboard data
-        run: node leaderboard/scripts/inject-data.js
-
       - name: Install dependencies
         working-directory: leaderboard
         run: npm ci
+
+      - name: Inject leaderboard data
+        run: node leaderboard/scripts/inject-data.js
 
       - name: Build
         working-directory: leaderboard
