@@ -55,6 +55,9 @@ def main():
         info = LOCALE_LABELS.get(code, {"label": code, "flag": ""})
         locales.append({"code": code, "label": info["label"], "flag": info["flag"]})
 
+    if not providers:
+        print("WARNING: No providers found in results/*/scores.json — leaderboard will be empty")
+
     leaderboard = {"locales": locales, "providers": providers}
 
     output_path = results_dir / "leaderboard.json"
