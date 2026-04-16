@@ -17,11 +17,17 @@ from scoring.llm import (
     get_responses,
     load_responses,
 )
-from scoring.prompts import (
-    NORMALIZE_AGAINST_GOLD_PROMPT,
-    SCORE_TRANSCRIPT_PROMPT,
-    SIGNIFICANT_WORD_ERRORS_PROMPT,
-)
+
+
+def _load_prompts():
+    """Lazy-load scoring prompts so modules that don't need LLM calls can import metrics freely."""
+    from scoring.prompts import (
+        NORMALIZE_AGAINST_GOLD_PROMPT,
+        SCORE_TRANSCRIPT_PROMPT,
+        SIGNIFICANT_WORD_ERRORS_PROMPT,
+    )
+
+    return NORMALIZE_AGAINST_GOLD_PROMPT, SCORE_TRANSCRIPT_PROMPT, SIGNIFICANT_WORD_ERRORS_PROMPT
 
 
 @dataclass
@@ -125,13 +131,15 @@ def normalize_for_match(text: str) -> str:
 def normalize_transcript_pairs(
     rows: List[TranscriptRow],
     num_workers: int = 1,
-    normalization_prompt: str = NORMALIZE_AGAINST_GOLD_PROMPT,
+    normalization_prompt: str | None = None,
 ) -> Dict[int, Optional[Tuple[str, str]]]:
     """Normalize predicted transcripts toward gold format using LLM.
 
     Returns dict mapping row index to (gold, normalized_predicted),
     or None if normalization failed.
     """
+    if normalization_prompt is None:
+        normalization_prompt, _, _ = _load_prompts()
     normalization_pairs: List[Tuple[int, str]] = []
 
     for row_idx, r in enumerate(rows):
@@ -240,6 +248,7 @@ def compute_simple_wer(rows: List[TranscriptRow]) -> List[WERResult]:
 
 def compute_quality(rows: List[TranscriptRow], num_workers: int = 8) -> List[QualityResult]:
     """Compute LLM-judged quality score (0-3 scale)."""
+    _, SCORE_TRANSCRIPT_PROMPT, _ = _load_prompts()
     pairs: List[Tuple[int, str]] = []
     for row_idx, r in enumerate(rows):
         if not r.gold:
@@ -300,6 +309,7 @@ def compute_significant_wer(
     Word-level errors are found via jiwer alignment, then each error is scored
     by an LLM as significant (1), minor (2), or none (3).
     """
+    _, _, SIGNIFICANT_WORD_ERRORS_PROMPT = _load_prompts()
     # Find word-level errors and prepare scoring prompts
     error_scoring_prompts: List[Tuple[int, str, Dict[int, Dict[str, Any]]]] = []
     row_idx_to_result: Dict[int, SignificantWERResult] = {}

@@ -2,9 +2,11 @@
 
 **M**ultilingual **U**tterances Transcription Benchmark — an open benchmark for evaluating speech-to-text providers across multiple locales and metrics.
 
+**[Leaderboard](https://research.sierra.ai)** · **[Dataset](https://huggingface.co/datasets/sierra-research/mu-bench)** · **[Blog](https://research.sierra.ai/mubench/#paper)**
+
 ## Overview
 
-This benchmark compares transcription providers on real customer service phone conversations recorded at 8kHz mono. Human annotators produce word-level ground truth transcripts for each caller utterance.
+This benchmark compares transcription providers on real customer service phone conversations recorded at 24kHz mono. Human annotators produce word-level ground truth transcripts for each caller utterance.
 
 The dataset covers 5 locales with 4,270 utterances total:
 
@@ -16,71 +18,119 @@ The dataset covers 5 locales with 4,270 utterances total:
 | vi-VN | Vietnamese | 975 |
 | zh-CN | Chinese (Mandarin) | 840 |
 
-Live leaderboard: [research.sierra.ai/mubench](https://research.sierra.ai/mubench)
+## Getting Started
 
-## For Submitters (Benchmarking Your Model)
-
-If you want to evaluate your speech-to-text model on MU-Bench, read **[`submissions/SUBMITTING.md`](submissions/SUBMITTING.md)**. The short version:
-
-1. Request access to the [HuggingFace dataset](https://huggingface.co/datasets/sierra-research/mu-bench) and download the audio.
-2. Run your model, producing one `.txt` per utterance plus a `latency.json`.
-3. Drop a directory under `submissions/raw/<your-model-name>/` and open a PR.
-4. CI validates the format; a maintainer comments `/score` to run scoring; the leaderboard redeploys on merge.
-
-### Local validation (before opening a PR)
+### 1. Install System Dependencies
 
 ```bash
-pip install pyyaml              # or: pip install -e . from the repo root
-python scoring/validate.py submissions/raw/<your-model-name> --manifest manifest.json
+brew install ffmpeg   # macOS
+# or: apt-get install ffmpeg   # Linux
 ```
 
-### Downloading the audio
+### 2. Download Audio
+
+The audio is hosted as a gated dataset on HuggingFace. You'll need to:
+
+1. [Request access](https://huggingface.co/datasets/sierra-research/mu-bench) to the `sierra-research/mu-bench` dataset
+2. Create a [HuggingFace token](https://huggingface.co/settings/tokens) and set it as an environment variable
 
 ```bash
 export HF_TOKEN=your_token_here
-pip install -e .[tools]
+pip install -r scripts/requirements.txt
 python scripts/download_audio.py
 ```
 
-Audio files land in `audio/<locale>/`.
+This exports `.wav` files to `audio/<locale>/`.
 
-## Metrics
+### 3. View the Leaderboard Locally
 
-| Metric | Direction | Description |
-|---|---|---|
-| **WER** (Word Error Rate) | Lower is better | Percentage of words incorrectly transcribed after LLM normalization |
-| **UER** (Utterance Error Rate) | Lower is better | Fraction of utterances containing at least one meaning-changing error |
-| **Latency p95** | Lower is better | 95th percentile of per-request API response time (ms), measured at concurrency=1 |
+```bash
+cd leaderboard
+npm install
+npm run dev
+```
 
-The LLM prompt templates used for normalization and scoring are published alongside the audio on the HuggingFace dataset: [`sierra-research/mu-bench/blob/main/scoring/prompts.py`](https://huggingface.co/datasets/sierra-research/mu-bench/blob/main/scoring/prompts.py). See [`submissions/SUBMITTING.md`](submissions/SUBMITTING.md) for how each metric is computed.
+### 4. Explore the Manifest
+
+`manifest.json` contains every utterance in the benchmark with its ground truth transcript:
+
+```json
+{
+  "id": "conv-0-turn-0",
+  "locale": "en-US",
+  "conversation_id": "conv-0",
+  "turn_index": 0,
+  "transcript": "Hi. I'm calling to check the status of my card.",
+  "audio_path": "audio/en-US/conv-0-turn-0.wav",
+  "duration_sec": 2.246
+}
+```
+
+## Submitting Results
+
+See **[`submissions/SUBMITTING.md`](submissions/SUBMITTING.md)** for the full submission contract. The short version:
+
+1. **Download the audio** from the [HuggingFace dataset](https://huggingface.co/datasets/sierra-research/mu-bench)
+2. **Run your model** on all audio files listed in `manifest.json`
+3. **Save transcripts** as `.txt` files — one per utterance, plain text, no headers
+4. **Create `metadata.yaml`** with your model info
+5. **Create `latency.json`** mapping `"<locale>/<utterance_id>"` to API response time in milliseconds
+6. **Validate locally** with `python scoring/validate.py submissions/raw/your-model-name --manifest manifest.json`
+7. **Open a pull request** adding your submission under `submissions/raw/`
+
+See `submissions/raw/deepgram-nova3/` for a complete example.
+
+### Scoring
+
+Scoring is run by maintainers — submitters do not need to run it locally. When a maintainer comments `/score` on your PR, the CI pipeline runs automatically:
+
+| Metric | Description | Direction |
+|--------|-------------|-----------|
+| **WER** | Word Error Rate after LLM normalization | Lower is better |
+| **UER** | Utterance Error Rate — fraction with meaning-changing errors | Lower is better |
+| **Quality Score** | LLM-judged quality on a 0-3 scale | Higher is better |
+| **Latency (p95)** | 95th percentile API response time per utterance (ms) | Lower is better |
+
+Results are posted as a comment on your PR and added to the leaderboard on merge.
 
 ## Repository Structure
 
 ```
-manifest.json                # Audio list + ground truth transcripts
-pyproject.toml               # Python deps (base, [tools], [scoring], [transcribe] extras)
-submissions/
-  SUBMITTING.md              # Submitter guide (read this first)
-  raw/                       # One dir per provider: .txt transcripts + latency.json + metadata.yaml
-  normalized/                # LLM-normalized transcripts (auto-generated on merge)
-scoring/
-  validate.py                # Submission format validation (run locally, also by CI)
-  normalize.py               # LLM-based transcript normalization (CI only)
-  score.py                   # WER / UER / quality computation (CI only)
-  metrics.py                 # Core metric implementations
-  update_leaderboard.py      # Regenerates results/leaderboard.json
+manifest.json              # Audio file list + ground truth transcripts
 scripts/
-  download_audio.py          # Fetch audio from HuggingFace
-  transcribe.py              # Example: run provider APIs end-to-end
-  latency_stats.py           # Compute p50/p95 and patch scores.json
-  compare_transcripts.py     # Diff two submission bases utterance-by-utterance
-  significance_test.py       # Statistical significance between providers
+  download_audio.py        # Download audio from HuggingFace
+  transcribe.py            # Runs provider APIs to generate transcripts + latency
+  latency_stats.py         # Compute p50/p95 latency from latency.json files
+  requirements.txt         # Python dependencies
+submissions/
+  SUBMITTING.md            # Full submission contract
+  raw/                     # Raw transcripts + latency.json, one directory per provider
+  normalized/              # LLM-normalized transcripts (auto-generated by CI)
+scoring/
+  validate.py              # Submission format validation (run locally)
+  normalize.py             # LLM-based transcript normalization
+  score.py                 # Metrics computation (WER, quality, sig. WER)
+  metrics.py               # Core metric implementations
+  prompts.py               # ⚠️ Gitignored — injected from GitHub secret in CI
 results/
-  leaderboard.json           # Aggregated leaderboard
-  <provider>/scores.json     # Per-provider breakdown
-  <provider>/details/        # Per-utterance scoring detail
-leaderboard/                 # React/Vite web app for the public leaderboard (maintainer concern)
-.github/workflows/           # CI for validation, scoring, and deployment
+  leaderboard.json         # Aggregated leaderboard data
+  <provider>/scores.json   # Per-provider score breakdowns (includes latency)
+leaderboard/               # React/Vite leaderboard web app
+.github/workflows/         # CI for validation, scoring, and deployment
+```
+
+## Citing MU-Bench
+
+If you use MU-Bench in your research, please cite:
+
+```bibtex
+@misc{mubench2026,
+  title     = {MU-Bench: A Multilingual Transcription Benchmark from Real Phone Calls},
+  author    = {Li, Andrea and Ray, Soham},
+  year      = {2026},
+  url       = {https://github.com/sierra-research/mu-bench},
+  note      = {Dataset: https://huggingface.co/datasets/sierra-research/mu-bench}
+}
 ```
 
 ## License
