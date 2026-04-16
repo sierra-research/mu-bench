@@ -88,7 +88,9 @@ export default function App() {
                                     <span className="mu-symbol">&mu;</span>
                                     <span className="bench-text">-bench</span>
                                 </h1>
-                                <p className="hero-subtitle">Multilingual Utterances Transcription Benchmark</p>
+                                <p className="hero-subtitle">
+                                    <strong>M</strong>ultilingual <strong>U</strong>tterances Transcription Benchmark
+                                </p>
                             </section>
                         </div>
                         <Leaderboard />
