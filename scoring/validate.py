@@ -47,31 +47,48 @@ def load_manifest(manifest_path):
 
 
 def validate_metadata(submission_dir):
-    """Validate metadata.yaml exists and has required fields."""
+    """Validate metadata.yaml (or metadata.json) exists and has required fields."""
     issues = []
     metadata_path = submission_dir / "metadata.yaml"
+    metadata_json_path = submission_dir / "metadata.json"
 
-    if not metadata_path.exists():
-        issues.append("metadata.yaml is missing (required)")
+    if not metadata_path.exists() and not metadata_json_path.exists():
+        issues.append("metadata.yaml (or metadata.json) is missing (required)")
         return issues
 
-    if yaml is None:
-        content = metadata_path.read_text(encoding="utf-8")
-        for field in REQUIRED_METADATA_FIELDS:
-            if f"{field}:" not in content and f"{field} :" not in content:
-                issues.append(f"metadata.yaml may be missing required field: {field}")
-        return issues
+    metadata = None
 
-    with open(metadata_path, "r", encoding="utf-8") as f:
-        metadata = yaml.safe_load(f)
+    if metadata_path.exists():
+        if yaml is None:
+            content = metadata_path.read_text(encoding="utf-8")
+            for field in REQUIRED_METADATA_FIELDS:
+                if f"{field}:" not in content and f"{field} :" not in content:
+                    issues.append(f"metadata.yaml may be missing required field: {field}")
+            return issues
 
-    if not isinstance(metadata, dict):
-        issues.append("metadata.yaml is not a valid YAML mapping")
-        return issues
+        with open(metadata_path, "r", encoding="utf-8") as f:
+            metadata = yaml.safe_load(f)
+
+        if not isinstance(metadata, dict):
+            issues.append("metadata.yaml is not a valid YAML mapping")
+            return issues
+    elif metadata_json_path.exists():
+        import json as _json
+
+        try:
+            with open(metadata_json_path, "r", encoding="utf-8") as f:
+                metadata = _json.load(f)
+        except Exception as e:
+            issues.append(f"metadata.json is not valid JSON: {e}")
+            return issues
+
+        if not isinstance(metadata, dict):
+            issues.append("metadata.json is not a valid JSON object")
+            return issues
 
     for field in REQUIRED_METADATA_FIELDS:
         if field not in metadata or metadata[field] is None or str(metadata[field]).strip() == "":
-            issues.append(f"metadata.yaml missing required field: {field}")
+            issues.append(f"metadata missing required field: {field}")
 
     return issues
 

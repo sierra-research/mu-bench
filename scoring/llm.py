@@ -181,16 +181,15 @@ def load_responses(responses):
         List of parsed dicts (or None on parse error)
     """
     for i, response in enumerate(responses):
-        try:
-            if response is None:
-                responses[i] = None
-            else:
-                responses[i] = (
-                    json.loads(response.split("```json")[1].split("```")[0])
-                    if response.startswith("```json")
-                    else json.loads(response)
-                )
-        except Exception as e:
-            print(f"JSON parse error for response {i}: {e}")
+        if response is None:
             responses[i] = None
+            continue
+        try:
+            responses[i] = json.loads(response)
+        except json.JSONDecodeError:
+            try:
+                responses[i] = json.loads(response.split("```json")[1].split("```")[0])
+            except Exception as e:
+                print(f"JSON parse error for response {i}: {e}")
+                responses[i] = None
     return responses

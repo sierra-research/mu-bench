@@ -1,5 +1,10 @@
 # MU-Bench
 
+[![License: Apache 2.0](https://img.shields.io/badge/Code-Apache%202.0-blue.svg)](LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/Data-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![CI](https://github.com/sierra-research/mu-bench/actions/workflows/lint.yml/badge.svg)](https://github.com/sierra-research/mu-bench/actions/workflows/lint.yml)
+[![Dataset on HF](https://img.shields.io/badge/🤗-Dataset-yellow.svg)](https://huggingface.co/datasets/sierra-research/mu-bench)
+
 **M**ultilingual **U**tterances Transcription Benchmark — an open benchmark for evaluating speech-to-text providers across multiple locales and metrics.
 
 **[Leaderboard](https://research.sierra.ai)** · **[Dataset](https://huggingface.co/datasets/sierra-research/mu-bench)** · **[Blog](https://research.sierra.ai/mubench/#paper)**

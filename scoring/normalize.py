@@ -83,7 +83,7 @@ def main():
         "--output-dir",
         type=Path,
         default=None,
-        help="Output directory (default: submissions_normalized/<name>)",
+        help="Output directory (default: submissions/normalized/<name>)",
     )
     parser.add_argument("--num-workers", type=int, default=15, help="Parallel LLM workers")
     parser.add_argument("--locales", nargs="+", default=None, help="Limit to specific locales (e.g. en-US zh-CN)")
