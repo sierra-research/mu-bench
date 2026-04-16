@@ -80,8 +80,8 @@ The validator checks directory structure, file encoding, metadata fields, latenc
 
 ## What happens on your PR
 
-1. **`validate-submission.yml`** runs immediately on any PR that touches `submissions/raw/**`. It posts a comment with the validator output and passes or blocks the PR on the result.
-2. **A maintainer comments `/score`** to run the scoring pipeline (WER, Utterance Error Rate, Latency p95). Results are posted back as a PR comment.
+1. A validation script runs immediately on any PR that touches `submissions/raw/**` checking for missing files. It posts a comment with the validator output and passes or blocks the PR on the result.
+2. **A maintainer will review and comment `/score`** to run the scoring pipeline (WER, Utterance Error Rate, Latency p95). Results are posted back as a PR comment.
 3. **On merge**, `post-merge-score.yml` re-scores from scratch, commits `results/<your-model-name>/` and `submissions/normalized/<your-model-name>/` to main, and the leaderboard redeploys with your model added.
 
 Scoring requires secrets that aren't available locally (LLM-based normalization prompts + an OpenAI key), so you can't run the full pipeline yourself — `scoring/validate.py` is the most comprehensive local check we support.
@@ -93,13 +93,3 @@ Scoring requires secrets that aren't available locally (LLM-based normalization 
 | **WER** (Word Error Rate) | `scoring/score.py` after LLM-based normalization | Percentage of words incorrectly transcribed |
 | **UER** (Utterance Error Rate / Significant WER) | `scoring/score.py` | Fraction of utterances with ≥1 meaning-changing error |
 | **Latency p50 / p95** | `scripts/latency_stats.py` on your `latency.json` | Per-locale and overall percentiles |
-
-## Common pitfalls
-
-- **Wrong latency key format.** Keys must be `<locale>/<utterance_id>`, not bare IDs. The validator will tell you.
-- **Missing latency entries.** Every `.txt` you ship needs a matching latency key.
-- **Extra files in the submission root.** Only `metadata.yaml`, `metadata.json`, and `latency.json` are allowed at the top of the submission dir.
-- **Disallowed filetypes in locale dirs.** Only `.txt` files — no JSON, no timing sidecars, nothing else.
-- **Concurrent latency measurements.** Measure at concurrency=1 so your numbers are comparable across submissions.
-
-Open an issue if anything here is ambiguous.
