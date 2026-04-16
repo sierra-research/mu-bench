@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: scoring
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e11487 # v4
         with:
           ref: main
           fetch-depth: 0
@@ -27,13 +27,21 @@ jobs:
       - name: Detect and validate submission directory name
         id: detect
         run: |
-          MERGE_SHA=$(git log -1 --format='%H')
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- submissions/raw/)
-          SUBMISSION_DIR=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u | head -1)
-          if [ -z "$SUBMISSION_DIR" ]; then
+          MERGE_SHA=${{ github.event.pull_request.merge_commit_sha }}
+          echo "Merge commit: $MERGE_SHA"
+          CHANGED_FILES=$(git diff --name-only "${MERGE_SHA}^1" "${MERGE_SHA}" -- submissions/raw/)
+          DIRS=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u)
+          if [ -z "$DIRS" ]; then
             echo "No submission directory detected"
             exit 1
           fi
+          DIR_COUNT=$(echo "$DIRS" | wc -l | tr -d ' ')
+          if [ "$DIR_COUNT" -gt 1 ]; then
+            echo "ERROR: Multiple submission directories detected. PRs should contain exactly one submission."
+            echo "$DIRS"
+            exit 1
+          fi
+          SUBMISSION_DIR=$(echo "$DIRS" | head -1)
           SUBMISSION_NAME=$(basename "$SUBMISSION_DIR")
           if ! echo "$SUBMISSION_NAME" | grep -qE '^[a-zA-Z0-9_-]+$'; then
             echo "ERROR: Submission directory name contains disallowed characters: $SUBMISSION_NAME"
@@ -41,10 +49,10 @@ jobs:
           fi
           echo "dir=$SUBMISSION_DIR" >> "$GITHUB_OUTPUT"
           echo "name=$SUBMISSION_NAME" >> "$GITHUB_OUTPUT"
-          echo "Detected submission: $SUBMISSION_DIR (merge commit: $MERGE_SHA)"
+          echo "Detected submission: $SUBMISSION_DIR"
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69b # v5
         with:
           python-version: "3.12"
 
