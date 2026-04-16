@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: post-merge-score
+  cancel-in-progress: false
+
 jobs:
   score-and-commit:
     if: github.event.pull_request.merged == true
