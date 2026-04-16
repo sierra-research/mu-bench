@@ -14,13 +14,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'e' to 'email' at position 1",
-      "reason": "The expected transcription spells out 'email' letter by letter, while the actual transcription uses the whole word 'email'. This changes the format but not the meaning, as both refer to the same word.",
-      "score": 2
+      "reason": "The expected sequence spells out 'email' letter by letter, but the actual transcript uses the whole word 'email' instead. This does not change the meaning, as both represent the same word in the context of an email address.",
+      "score": 3
     },
     {
       "error": "Deletion: 'm' at position 2",
-      "reason": "The actual transcription omits the letter 'm' from the spelled-out sequence, but since the whole word 'email' is used instead, the meaning is preserved. This is a minor error in format, not meaning.",
-      "score": 2
+      "reason": "The actual transcript does not spell out 'email' letter by letter, but instead uses the whole word. Since the meaning is preserved and 'email' is clearly understood, this is a minor error in format, not meaning.",
+      "score": 3
     }
   ]
 }

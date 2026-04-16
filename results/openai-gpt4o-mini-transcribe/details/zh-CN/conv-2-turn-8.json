@@ -1,0 +1,31 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "Mailin@email.com niyetini de aldı mı?",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailin at email dot com niyetini de aldi mi",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailin at email dot com niyetini de aldi mi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailin' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is a romanized word that does not correspond to the original. This changes the identity and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from the expected name is missing, which makes the name incomplete and unrecognizable. This is a significant error for names or email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'niyetini' at position 6",
+      "reason": "The inserted phrase is in a different language (Turkish) and is unrelated to the expected content, which derails the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

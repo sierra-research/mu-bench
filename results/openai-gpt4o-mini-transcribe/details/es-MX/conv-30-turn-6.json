@@ -6,21 +6,21 @@
   "werNormalizedGold": "fifty five twelve thirty four este fifty six este seventy eight",
   "werNormalizedPredicted": "fifty five twelve thirty four fifty six seventy eight",
   "qualityScore": null,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "fifty five twelve thirty four este fifty six este seventy eight",
   "sigWerNormalizedPredicted": "fifty five twelve thirty four fifty six seventy eight",
   "sigWerErrors": [
     {
       "error": "Deletion: 'este' at position 5",
-      "reason": "'este' is likely a separator or marker between numbers, and its omission does not change the core meaning or the numbers being conveyed.",
-      "score": 2
+      "reason": "'este' is omitted, which may be a keyword or important marker in the sequence, potentially affecting the meaning or structure of the information (such as a code or address).",
+      "score": 1
     },
     {
       "error": "Deletion: 'este' at position 8",
-      "reason": "'este' is again omitted as a separator or marker, but the main information (the numbers) is preserved, so the meaning is not significantly changed.",
-      "score": 2
+      "reason": "Omitting 'este' again removes a potentially significant word that could be important for correct interpretation of the sequence.",
+      "score": 1
     }
   ]
 }

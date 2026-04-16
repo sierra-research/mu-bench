@@ -6,21 +6,21 @@
   "werNormalizedGold": "neu ma minh den xin thi ho co gui ca sao ke lan hoa don khong",
   "werNormalizedPredicted": "nhung ma minh den xin thi ho co ghi ca sao ke lan hoa don khong",
   "qualityScore": null,
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "neu ma minh den xin thi ho co gui ca sao ke lan hoa don khong",
   "sigWerNormalizedPredicted": "nhung ma minh den xin thi ho co ghi ca sao ke lan hoa don khong",
   "sigWerErrors": [
     {
       "error": "Substitution: 'neu' to 'nhung' at position 0",
-      "reason": "'neu' means 'if' and 'nhung' means 'but' in Vietnamese; this changes the logical meaning of the sentence significantly.",
+      "reason": "'neu' (if) and 'nhung' (but) are different conjunctions that change the logical meaning of the sentence, leading to a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'gui' to 'ghi' at position 8",
-      "reason": "'gui' means 'send' and 'ghi' means 'write/record'; this changes the action being described, which is a significant change in meaning.",
-      "score": 1
+      "reason": "'gui' (send) and 'ghi' (write/record) are different verbs and change the action described in the sentence, but the overall context is still about requesting a document, so the main intent is somewhat preserved.",
+      "score": 2
     }
   ]
 }

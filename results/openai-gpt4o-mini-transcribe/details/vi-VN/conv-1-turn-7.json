@@ -6,8 +6,8 @@
   "werNormalizedGold": "tu tu so dien thoai khong chinh xac so dien thoai nghe lai lan nua ne so dien thoai la cong tam bon chin mot mot hai ba bon nam sau bay tam",
   "werNormalizedPredicted": "so dien thoai di tu tu so dien thoai khong chinh xac so dien thoai nghe lai lan nua ne so dien thoai la khong tam bon chin mot mot hai ba bon nam sau bay tam",
   "qualityScore": null,
-  "significantWer": 0.030303030303030304,
-  "majorErrorsCount": 1,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 33,
   "sigWerNormalizedGold": "tu tu so dien thoai khong chinh xac so dien thoai nghe lai lan nua ne so dien thoai la cong tam bon chin mot mot hai ba bon nam sau bay tam",
   "sigWerNormalizedPredicted": "so dien thoai di tu tu so dien thoai khong chinh xac so dien thoai nghe lai lan nua ne so dien thoai la khong tam bon chin mot mot hai ba bon nam sau bay tam",
@@ -19,8 +19,8 @@
     },
     {
       "error": "Substitution: 'cong' to 'khong' at position 20",
-      "reason": "'Cong' (plus) is part of the phone number format, while 'khong' (zero) is a digit in the phone number. Substituting 'cong' with 'khong' changes the phone number entirely, which is a significant error.",
-      "score": 1
+      "reason": "'cong' (zero) and 'khong' (zero) are both used to represent the digit 0 in Vietnamese phone numbers, but 'cong' is the correct word in this context. However, 'khong' is still understandable as '0', so the meaning is preserved.",
+      "score": 2
     }
   ]
 }

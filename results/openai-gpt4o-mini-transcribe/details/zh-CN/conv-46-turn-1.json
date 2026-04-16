@@ -1,0 +1,31 @@
+{
+  "gold": "我想提高我的信用卡限额。",
+  "predicted": "向提高的信用卡限额。",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "我 想 提高 我 的 信用卡 限额",
+  "werNormalizedPredicted": "向 提高 的 信用卡 限额",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 限 额",
+  "sigWerNormalizedPredicted": "向 提 高 的 信 用 卡 限 额",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to '向' at position 0",
+      "reason": "'我' means 'I' (the speaker), while '向' means 'towards' or 'to'. This changes the subject of the sentence and makes the meaning unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '想' at position 1",
+      "reason": "'想' means 'want to', which expresses the intent of the speaker. Omitting it removes the intent from the sentence, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 4",
+      "reason": "The second '我' clarifies that the action is being done to the speaker's own credit card. Its omission makes the sentence less clear but does not completely derail the meaning.",
+      "score": 2
+    }
+  ]
+}

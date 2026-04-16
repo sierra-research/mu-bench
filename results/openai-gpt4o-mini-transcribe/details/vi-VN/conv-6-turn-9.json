@@ -14,12 +14,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'cộng' to 'không' at position 4",
-      "reason": "'Cộng' means 'plus' or indicates the country code (+), while 'không' means 'zero'. This changes the country code in the phone number, resulting in a completely different number.",
+      "reason": "'cộng' (plus) is the country code indicator, while 'không' (zero) is a digit; this changes the meaning of the phone number entirely.",
       "score": 1
     },
     {
       "error": "Deletion: 'mươi' at position 6",
-      "reason": "'Mươi' is part of the number 'tám mươi bốn' (eighty-four), so omitting it changes 'eighty-four' to 'eight four', which is a different number and alters the phone number significantly.",
+      "reason": "Omitting 'mươi' (which means 'ten' in 'tám mươi bốn' = 84) changes the number from 84 to 8 4, resulting in an incorrect phone number.",
       "score": 1
     }
   ]

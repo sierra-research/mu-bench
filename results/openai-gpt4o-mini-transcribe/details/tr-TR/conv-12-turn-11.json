@@ -6,21 +6,21 @@
   "werNormalizedGold": "yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n at işareti e m a i l nokta c o m",
   "werNormalizedPredicted": "hayır yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n et işareti e m a i l nokta c o m",
   "qualityScore": null,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 0.02857142857142857,
+  "majorErrorsCount": 1,
   "totalWordsCount": 35,
   "sigWerNormalizedGold": "yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n at işareti e m a i l nokta c o m",
   "sigWerNormalizedPredicted": "hayır yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n et işareti e m a i l nokta c o m",
   "sigWerErrors": [
     {
       "error": "Insertion: 'hayır' at position 0",
-      "reason": "'Hayır' (meaning 'no') is inserted at the beginning, but the rest of the sentence is intact. This does not derail the meaning of the main sentence, just adds an extra word.",
+      "reason": "'hayır' (meaning 'no') is added at the beginning, but the rest of the sentence is intact and the main meaning is preserved. This is a minor error as it does not derail the overall meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'at' to 'et' at position 24",
-      "reason": "'At işareti' (meaning 'at sign') is the correct Turkish term for '@', while 'et işareti' is a common mispronunciation but still widely understood in Turkish. The meaning is preserved, so this is a minor error.",
-      "score": 2
+      "reason": "The word 'at' (Turkish for 'at sign' in email addresses) is replaced with 'et', which is a common mishearing but could cause confusion in spelling out an email address. Since this is a key part of the email address, it is a significant error.",
+      "score": 1
     }
   ]
 }

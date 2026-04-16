@@ -6,26 +6,26 @@
   "werNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
   "werNormalizedPredicted": "muốn vừa lòng hướng dẫn slovenia cái đó đi",
   "qualityScore": null,
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
   "sigWerNormalizedPredicted": "muốn vừa lòng hướng dẫn slovenia cái đó đi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vui' to 'vừa' at position 1",
-      "reason": "'Vui lòng' means 'please' or 'kindly', while 'vừa lòng' means 'satisfied' or 'pleased'. The substitution changes the meaning of the request, but the sentence is still somewhat understandable.",
+      "reason": "'Vui lòng' means 'please' in Vietnamese, while 'vừa lòng' means 'satisfied' or 'pleased'. The substitution changes the politeness request to a statement about satisfaction, but the overall intent of requesting help is still somewhat understandable.",
       "score": 2
     },
     {
       "error": "Substitution: 'tôi' to 'slovenia' at position 5",
-      "reason": "'Tôi' means 'I' or 'me', while 'slovenia' is a country name and unrelated to the context. This substitution makes the sentence incoherent.",
+      "reason": "'Tôi' means 'I' or 'me', while 'slovenia' is a country name and completely unrelated. This substitution makes the sentence incoherent and derails the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'làm' at position 6",
-      "reason": "Omitting 'làm' ('do' or 'make') removes the verb, making the sentence less clear but still somewhat understandable in context.",
-      "score": 2
+      "reason": "Omitting 'làm' ('do' or 'make') removes the verb necessary for the action, making the sentence incomplete and confusing.",
+      "score": 1
     }
   ]
 }
