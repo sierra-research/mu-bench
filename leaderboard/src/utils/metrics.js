@@ -21,11 +21,11 @@ export const METRICS = {
     qualityScore: {
         key: "qualityScore",
         label: "Quality",
-        fullLabel: "Quality Score (1-3)",
+        fullLabel: "Quality Score (0-3)",
         lowerIsBetter: false,
         format: (v) => v.toFixed(2),
         unit: "",
-        description: "LLM-judged overall transcription quality score (1\u20133)",
+        description: "LLM-judged overall transcription quality score (0\u20133)",
     },
     latencyP95Ms: {
         key: "latencyP95Ms",
