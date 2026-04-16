@@ -283,15 +283,15 @@ export default function Leaderboard() {
                         <span className="action-card-title">Add Your Model</span>
                         <span className="action-card-desc">
                             Submit your model's transcripts and they will be automatically scored and ranked. See the
-                            submission guide for formatting and step-by-step instructions.
+                            GitHub for the formatting guidelines and detailed submission instructions.
                         </span>
                         <a
                             className="action-card-btn"
-                            href="https://github.com/sierra-research/mu-bench/blob/main/submissions/SUBMITTING.md"
+                            href="https://github.com/sierra-research/mu-bench"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Submission Instructions
+                            View on GitHub
                         </a>
                     </div>
                     <div className="action-card">

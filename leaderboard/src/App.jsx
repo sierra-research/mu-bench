@@ -62,7 +62,7 @@ export default function App() {
                             Dataset
                         </a>
                         <a
-                            href="https://github.com/sierra-research/mu-bench/blob/main/submissions/SUBMITTING.md"
+                            href="https://github.com/sierra-research/mu-bench"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="navbar-link"
