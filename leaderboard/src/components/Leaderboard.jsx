@@ -321,13 +321,7 @@ export default function Leaderboard() {
 
 function ProviderRow({ provider, sigWerMetric, latencyMetric, onRowClick }) {
     return (
-        <tr
-            className="provider-row"
-            onClick={onRowClick}
-            onKeyDown={(e) => e.key === "Enter" && onRowClick()}
-            tabIndex={0}
-            role="button"
-        >
+        <tr className="provider-row" onClick={onRowClick}>
             <td className="col-rank">
                 <span
                     className={`rank-number ${provider.rank === 1 ? "rank-gold" : provider.rank === 2 ? "rank-silver" : provider.rank === 3 ? "rank-bronze" : ""}`}
