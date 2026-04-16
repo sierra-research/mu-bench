@@ -18,11 +18,11 @@ const EXAMPLES = [
         id: "significant",
         title: "Significant Errors (Low WER, High UER)",
         description:
-            "Only one word differs in each transcription, but the person\u2019s name is wrong \u2014 a single substitution that changes meaning entirely.",
-        gold: "The name on the account is Mason Lee.",
+            "The caller is spelling out a case tracking code. Only one letter differs in each transcription, but that single substitution points to the wrong case entirely \u2014 exactly the kind of error a fluent-sounding ASR output can hide.",
+        gold: "My case tracking code is C N 7 3 4 7 8 5 8.",
         predictions: {
-            "Provider A": "The name on the account is Jason Lee.",
-            "Provider B": "The name on the account is Mason Li.",
+            "Provider A": "My case tracking code is C M 7 3 4 7 8 5 8.",
+            "Provider B": "My case tracking code is D N 7 3 4 7 8 5 8.",
         },
         locale: "en-US",
     },
