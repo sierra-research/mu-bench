@@ -1,0 +1,31 @@
+{
+  "gold": "Mi nombre es Juan López. Mi correo electrónico es Juan punto López arroba email punto com. Mi teléfono es 52 55 1 2 3 4 5 6 7 8. Mi dirección es Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
+  "predicted": "Mi nombre es Juan López, mi correo electrónico es juan.lopez@email.com, mi número de teléfono es 5255-1234-5678, mi dirección es Urión 30, Colonia Tlaltenco, Azcapotzalco, 02002, 860, Ciudad de México, México.",
+  "unintelligible": false,
+  "wer": 0.07692307692307693,
+  "werNormalizedGold": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es urion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
+  "werNormalizedPredicted": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es urion treinta colonia tlaltenco azcapotzalco cero dos cero cero dos ochocientos sesenta ciudad de mexico mexico",
+  "qualityScore": null,
+  "significantWer": 0.038461538461538464,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 52,
+  "sigWerNormalizedGold": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es urion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
+  "sigWerNormalizedPredicted": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es urion treinta colonia tlaltenco azcapotzalco cero dos cero cero dos ochocientos sesenta ciudad de mexico mexico",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'numero' at position 17",
+      "reason": "Adding 'numero de' before 'telefono' is a minor redundancy and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'tlatilco' to 'tlaltenco' at position 39",
+      "reason": "Substitution of one neighborhood name for another changes the address and could lead to confusion or misdelivery.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ocho' to 'ochocientos' at position 46",
+      "reason": "Changing 'ocho' (eight) to 'ochocientos' (eight hundred) significantly alters the numeric part of the address, which is a critical detail.",
+      "score": 1
+    }
+  ]
+}

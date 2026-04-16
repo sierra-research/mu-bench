@@ -1,15 +1,21 @@
 {
   "gold": "准备好了。",
-  "predicted": "准备好了。",
+  "predicted": "你准备好了。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "准备好了。",
-  "werNormalizedPredicted": "准备好了。",
-  "qualityScore": 3,
+  "wer": 0.25,
+  "werNormalizedGold": "准备好了",
+  "werNormalizedPredicted": "你准备好了",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "准 备 好 了 。",
-  "sigWerNormalizedPredicted": "准 备 好 了 。",
-  "sigWerErrors": []
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "准 备 好 了",
+  "sigWerNormalizedPredicted": "你 准 备 好 了",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '你' at position 0",
+      "reason": "The insertion of '你' (you) adds a subject to the sentence, but does not change the overall meaning of 'ready' or 'are you ready'. The sentence remains coherent and the intent is preserved.",
+      "score": 2
+    }
+  ]
 }

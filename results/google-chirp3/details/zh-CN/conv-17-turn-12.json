@@ -2,14 +2,20 @@
   "gold": "听到我的吗？",
   "predicted": "听到的吗?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "听到我的吗？",
-  "werNormalizedPredicted": "听到我的吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "听 到 我 的 吗 ？",
-  "sigWerNormalizedPredicted": "听 到 我 的 吗 ？",
-  "sigWerErrors": []
+  "wer": 0.2,
+  "werNormalizedGold": "听 到 我 的 吗",
+  "werNormalizedPredicted": "听 到 的 吗",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "听 到 我 的 吗",
+  "sigWerNormalizedPredicted": "听 到 的 吗",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '我' at position 2",
+      "reason": "Omitting '我' (which means 'I' or 'me') changes the meaning of the sentence from 'Can you hear me?' to 'Can you hear?', removing the subject and making the sentence less clear and potentially ambiguous.",
+      "score": 1
+    }
+  ]
 }

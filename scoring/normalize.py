@@ -1,8 +1,9 @@
-"""LLM-normalize submission transcripts toward ground truth format.
+"""LLM-normalize submission transcripts for fair WER comparison.
 
-Uses NORMALIZE_AGAINST_GOLD_PROMPT to normalize predictions toward the gold
-transcript's format (casing, punctuation, number format, etc.) without
-correcting transcription errors.
+Normalizes both gold and predicted transcripts symmetrically to a common
+format (lowercase, numbers to words, fillers removed, CJK homophones
+resolved for proper nouns). Writes normalized predicted as <id>.txt and
+normalized gold as <id>.gold.txt.
 
 Usage:
     python -m scoring.normalize --submission-dir submissions/raw/deepgram-nova3
@@ -12,6 +13,10 @@ import argparse
 import csv
 import json
 from pathlib import Path
+
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from scoring.llm import NORMALIZE_SCHEMA, get_responses, load_responses
 from scoring.metrics import is_unintelligible
@@ -80,7 +85,12 @@ def main():
         help="Output directory (default: submissions_normalized/<name>)",
     )
     parser.add_argument("--num-workers", type=int, default=15, help="Parallel LLM workers")
+    parser.add_argument("--locales", nargs="+", default=None, help="Limit to specific locales (e.g. en-US zh-CN)")
     args = parser.parse_args()
+
+    if args.locales:
+        global TARGET_LOCALES
+        TARGET_LOCALES = [loc for loc in TARGET_LOCALES if loc in args.locales]
 
     submission_dir = args.submission_dir.resolve()
     manifest_path = args.manifest.resolve()
@@ -218,8 +228,10 @@ def main():
                 out_file = normalized_dir / locale / filename
 
                 norm_pred = None
+                norm_gold = None
                 if i < len(loaded) and loaded[i] is not None and isinstance(loaded[i], dict):
                     norm_pred = loaded[i].get("normalized_actual")
+                    norm_gold = loaded[i].get("normalized_expected")
 
                 if norm_pred is None:
                     failed += 1
@@ -228,6 +240,11 @@ def main():
 
                 out_file.parent.mkdir(parents=True, exist_ok=True)
                 out_file.write_text(norm_pred, encoding="utf-8")
+
+                if norm_gold is not None:
+                    gold_file = normalized_dir / locale / f"{utterance_id}.gold.txt"
+                    gold_file.write_text(norm_gold, encoding="utf-8")
+
                 comp_writer.writerow([locale, filename, gold, predicted, norm_pred])
                 saved += 1
 

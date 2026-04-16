@@ -1,31 +1,36 @@
 {
   "gold": "不用了，不用记录我的邮箱了，能不能不用我这个邮箱。",
-  "predicted": "不用了不用进入我的邮箱了能不能不用我的邮箱",
+  "predicted": "不要了不要进入我的邮箱了能不能不用我的邮箱",
   "unintelligible": false,
-  "wer": 0.16,
-  "werNormalizedGold": "不用了，不用记录我的邮箱了，能不能不用我这个邮箱。",
-  "werNormalizedPredicted": "不用了，不用进入我的邮箱了，能不能不用我的邮箱。",
-  "qualityScore": 2,
-  "significantWer": 0.04,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 25,
-  "sigWerNormalizedGold": "不 用 了 ， 不 用 记 录 我 的 邮 箱 了 ， 能 不 能 不 用 我 这 个 邮 箱 。",
-  "sigWerNormalizedPredicted": "不 用 了 ， 不 用 进 入 我 的 邮 箱 了 ， 能 不 能 不 用 我 的 邮 箱 。",
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "不用了 不用记录我的邮箱了 能不能不用我这个邮箱",
+  "werNormalizedPredicted": "不要了 不要进入我的邮箱了 能不能不用我的邮箱",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "不 用 了 不 用 记 录 我 的 邮 箱 了 能 不 能 不 用 我 这 个 邮 箱",
+  "sigWerNormalizedPredicted": "不 要 了 不 要 进 入 我 的 邮 箱 了 能 不 能 不 用 我 的 邮 箱",
   "sigWerErrors": [
     {
-      "error": "Substitution: '记' to '进' at position 6",
-      "reason": "The word '记' (record) was replaced with '进' (enter), which changes the meaning of the sentence from 'do not record my email' to 'do not enter my email'. This alters the intent of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '这' to '的' at position 20",
-      "reason": "The word '这' (this) was replaced with '的' (possessive particle), which changes the reference from 'this email' to 'my email'. The overall meaning is still understandable, but the specific reference is lost.",
+      "error": "Substitution: '用' to '要' at position 1",
+      "reason": "'不用了' (no need) is changed to '不要了' (don't want), which is a minor difference in intent but does not derail the overall meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: '个' at position 21",
-      "reason": "The classifier '个' is missing, but this does not significantly affect the meaning of the sentence in Chinese.",
-      "score": 3
+      "error": "Substitution: '用' to '要' at position 4",
+      "reason": "Again, '不用' (no need) is changed to '不要' (don't want), which is a minor difference in intent but the sentence still makes sense.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '这' to '的' at position 18",
+      "reason": "'这个邮箱' (this email) is changed to '的邮箱' (of email), which makes the sentence less specific but does not completely change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '个' at position 19",
+      "reason": "Omitting '个' (a measure word) is a minor grammatical error and does not affect the overall meaning.",
+      "score": 2
     }
   ]
 }

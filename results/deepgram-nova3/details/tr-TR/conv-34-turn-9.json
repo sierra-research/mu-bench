@@ -2,14 +2,25 @@
   "gold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
   "predicted": "E-posta adresim zeynep nokta arslan et gmail nokta com. Telefon numaram sıfır yüz yirmi üç sıfır doksan kırk beş altmış yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
-  "werNormalizedPredicted": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
-  "sigWerNormalizedPredicted": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
-  "sigWerErrors": []
+  "wer": 0.13636363636363635,
+  "werNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "e posta adresim zeynep nokta arslan at gmail nokta com telefon numaram sıfır yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "e posta adresim zeynep nokta arslan at gmail nokta com telefon numaram sıfır yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "The domain part of the email address is changed from 'email' to 'gmail', which is a different service provider and could result in a completely different email address. This is a significant error as it changes the contact information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 13",
+      "reason": "The phone number changes from 'bir iki üç' (1 2 3) to 'yüz yirmi üç' (123), which is a significant change in the numeric sequence and alters the phone number entirely. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -1,21 +1,26 @@
 {
   "gold": "准备了。",
-  "predicted": "嗯，准备了。",
+  "predicted": "உம் ரொம்பவும்",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "准备了。",
-  "werNormalizedPredicted": "嗯，准备了。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "准 备 了 。",
-  "sigWerNormalizedPredicted": "嗯 ， 准 备 了 。",
+  "wer": 1.0,
+  "werNormalizedGold": "准备了",
+  "werNormalizedPredicted": "உம் ரொம்பவும்",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "准 备 了",
+  "sigWerNormalizedPredicted": "உம் ரொம்பவும்",
   "sigWerErrors": [
     {
-      "error": "Insertion: '嗯' at position 0",
-      "reason": "'嗯' is a filler or hesitation word and does not change the meaning of the sentence. The main content remains the same.",
-      "score": 2
+      "error": "Substitution: '准' to 'உம்' at position 0",
+      "reason": "The actual transcription is in a completely different language (Tamil) compared to the expected (Chinese), making the meaning incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 2",
+      "reason": "The expected word is missing entirely in the actual transcription, further contributing to the loss of meaning.",
+      "score": 1
     }
   ]
 }

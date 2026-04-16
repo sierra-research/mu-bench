@@ -1,15 +1,21 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "好，没好。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
+  "wer": 1.0,
+  "werNormalizedGold": "你 好",
+  "werNormalizedPredicted": "好 没 好",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "好 没 好",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '没' at position 0",
+      "reason": "The extra '好' at the beginning does not significantly change the meaning, as it just repeats the greeting, which is common in conversational Chinese.",
+      "score": 2
+    }
+  ]
 }

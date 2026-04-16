@@ -1,15 +1,31 @@
 {
   "gold": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
-  "predicted": "Ama pardon, telefon numaram yanlış oldu. Telefon numaramızı tekrar söyler misin telefon numarası veya ben bir daha söyleyeyim isterseniz.",
+  "predicted": "Ama pardon, telefon numaram yanlış oldu. Telefon numaramı tekrar söyler misiniz telefon numarasını veya ben bir daha söyleyeyim isterseniz.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
-  "werNormalizedPredicted": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
-  "qualityScore": 3,
+  "wer": 0.15789473684210525,
+  "werNormalizedGold": "ama pardon telefon numarasi yanlis oldu telefon numaramizi tekrar soyler misin telefon numarasini veya ben bir daha soyleyeyim isterseniz",
+  "werNormalizedPredicted": "ama pardon telefon numaram yanlis oldu telefon numarami tekrar soyler misiniz telefon numarasini veya ben bir daha soyleyeyim isterseniz",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
-  "sigWerNormalizedPredicted": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "ama pardon telefon numarasi yanlis oldu telefon numaramizi tekrar soyler misin telefon numarasini veya ben bir daha soyleyeyim isterseniz",
+  "sigWerNormalizedPredicted": "ama pardon telefon numaram yanlis oldu telefon numarami tekrar soyler misiniz telefon numarasini veya ben bir daha soyleyeyim isterseniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'numarasi' to 'numaram' at position 3",
+      "reason": "'numarasi' means 'his/her/its number', while 'numaram' means 'my number'; this changes the subject but the overall meaning of the sentence is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'numaramizi' to 'numarami' at position 7",
+      "reason": "'numaramizi' means 'our number', while 'numarami' means 'my number'; this changes the subject from plural to singular, but the intent of the sentence is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'misin' to 'misiniz' at position 10",
+      "reason": "'misin' is informal 'you', 'misiniz' is formal/plural 'you'; this is a formality difference and does not change the meaning.",
+      "score": 3
+    }
+  ]
 }

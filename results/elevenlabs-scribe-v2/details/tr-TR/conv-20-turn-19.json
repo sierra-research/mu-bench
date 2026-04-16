@@ -1,15 +1,26 @@
 {
   "gold": "İyi günler.",
-  "predicted": "İyi günler",
+  "predicted": "İgnas",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "İyi günler.",
-  "werNormalizedPredicted": "İyi günler.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "iyi gunler",
+  "werNormalizedPredicted": "ignas",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "İyi günler.",
-  "sigWerNormalizedPredicted": "İyi günler.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "iyi gunler",
+  "sigWerNormalizedPredicted": "ignas",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'ignas' at position 0",
+      "reason": "'ignas' is a completely different word from 'iyi', and does not preserve the meaning. The actual transcription is incoherent compared to the expected greeting.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'gunler' at position 1",
+      "reason": "'gunler' (meaning 'days' in Turkish) is missing, which removes a key part of the greeting and further derails the intended meaning.",
+      "score": 1
+    }
+  ]
 }

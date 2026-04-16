@@ -1,15 +1,21 @@
 {
   "gold": "你有什么问题？",
-  "predicted": "你有什么问题？",
+  "predicted": "有什么问题？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你有什么问题？",
-  "werNormalizedPredicted": "你有什么问题？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "你 有 什 么 问 题 ？",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题 ？",
-  "sigWerErrors": []
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "你 有 什么 问题",
+  "werNormalizedPredicted": "有 什么 问题",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "你 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "有 什 么 问 题",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '你' at position 0",
+      "reason": "The subject pronoun '你' (you) is missing, which changes the sentence from a question directed at someone ('Do you have any questions?') to a general statement or question. This significantly alters the meaning.",
+      "score": 1
+    }
+  ]
 }

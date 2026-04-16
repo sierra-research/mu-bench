@@ -1,25 +1,25 @@
 {
   "gold": "哎呀你有什么问题啊。",
-  "predicted": "贝尔牛士蒙恩吉尔。",
+  "predicted": "是",
   "unintelligible": false,
-  "wer": 0.9,
-  "werNormalizedGold": "哎呀你有什么问题啊。",
-  "werNormalizedPredicted": "贝尔牛士蒙恩吉尔。",
-  "qualityScore": 1,
-  "significantWer": 0.2,
+  "wer": 1.0,
+  "werNormalizedGold": "哎呀 你 有 什么 问题 啊",
+  "werNormalizedPredicted": "是",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
   "majorErrorsCount": 2,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 啊 。",
-  "sigWerNormalizedPredicted": "贝 尔 牛 士 蒙 恩 吉 尔 。",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 啊",
+  "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
-      "error": "Substitution: '哎' to '贝' at position 0",
-      "reason": "The actual transcription is completely different from the expected, with no semantic overlap. The actual string appears to be a list of unrelated names or words, not a conversational phrase. This substitution derails the meaning of the sentence.",
+      "error": "Substitution: '哎' to '是' at position 0",
+      "reason": "The word '是' (is/yes) is substituted for '哎' (an interjection like 'hey' or 'oh'), which changes the tone and meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: '啊' at position 8",
-      "reason": "The final particle '啊' is missing, but since the rest of the sentence is already completely incorrect, this deletion further contributes to the incoherence.",
+      "error": "Deletion: '呀' at position 1",
+      "reason": "The entire rest of the sentence is missing, which removes the question and context, resulting in a significant loss of meaning.",
       "score": 1
     }
   ]

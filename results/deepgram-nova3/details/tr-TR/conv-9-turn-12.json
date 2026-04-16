@@ -2,14 +2,25 @@
   "gold": "Numara yanlış oldu. Atatürk Caddesi No 45 taksim 6. Yani 45 bölü 6 olacak.",
   "predicted": "Numara yanlış oldu. Atatürk Caddesi no kırk beş altı yani kırk beş altı olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Numara yanlış oldu. Atatürk Caddesi No 45 taksim 6. Yani 45 bölü 6 olacak.",
-  "werNormalizedPredicted": "Numara yanlış oldu. Atatürk Caddesi No 45 taksim 6. Yani 45 bölü 6 olacak.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Numara yanlış oldu. Atatürk Caddesi No 45 taksim 6. Yani 45 bölü 6 olacak.",
-  "sigWerNormalizedPredicted": "Numara yanlış oldu. Atatürk Caddesi No 45 taksim 6. Yani 45 bölü 6 olacak.",
-  "sigWerErrors": []
+  "wer": 0.125,
+  "werNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı yani kırk beş bölü altı olacak",
+  "werNormalizedPredicted": "numara yanlış oldu atatürk caddesi no kırk beş altı yani kırk beş altı olacak",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı yani kırk beş bölü altı olacak",
+  "sigWerNormalizedPredicted": "numara yanlış oldu atatürk caddesi no kırk beş altı yani kırk beş altı olacak",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'taksim' at position 8",
+      "reason": "'Taksim' is used in Turkish to indicate a division (slash) in addresses, such as 'kırk beş taksim altı' meaning '45/6'. Omitting 'taksim' removes the indication of division, which can lead to misunderstanding the address format.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bölü' at position 13",
+      "reason": "'Bölü' also indicates division (slash) in addresses, as in 'kırk beş bölü altı' meaning '45/6'. Its omission removes the clarification of the address format, which can cause confusion or incorrect interpretation.",
+      "score": 1
+    }
+  ]
 }

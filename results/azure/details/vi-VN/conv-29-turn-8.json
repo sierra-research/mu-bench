@@ -1,20 +1,25 @@
 {
   "gold": "Rồi. Sẵn sàng rồi.",
-  "predicted": "Rồi.",
+  "predicted": "Ừ.",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "Rồi. Sẵn sàng rồi.",
-  "werNormalizedPredicted": "Rồi.",
-  "qualityScore": 2,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "rồi sẵn sàng rồi",
+  "werNormalizedPredicted": "ừ",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Rồi. Sẵn sàng rồi.",
-  "sigWerNormalizedPredicted": "Rồi.",
+  "sigWerNormalizedGold": "rồi sẵn sàng rồi",
+  "sigWerNormalizedPredicted": "ừ",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Sẵn' at position 1",
-      "reason": "The omission of 'Sẵn sàng rồi.' removes the information that someone is ready, which is a significant part of the sentence's meaning.",
+      "error": "Substitution: 'rồi' to 'ừ' at position 0",
+      "reason": "'rồi sẵn sàng rồi' means 'ready' or 'all set', while 'ừ' is just an affirmative like 'yes' or 'uh-huh', which does not convey the same meaning. The substitution changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sẵn' at position 1",
+      "reason": "The word 'sẵn' is missing, which is essential to the meaning 'ready'. Its absence makes the sentence incomplete and changes the meaning significantly.",
       "score": 1
     }
   ]

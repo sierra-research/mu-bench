@@ -1,20 +1,30 @@
 {
   "gold": "我想提高我的信用卡额度。",
-  "predicted": "我想提高我的信用卡恶露。",
+  "predicted": "我想听girl的信用卡恶毒。",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werNormalizedGold": "我想提高我的信用卡额度。",
-  "werNormalizedPredicted": "我想提高我的信用卡恶露。",
-  "qualityScore": 2,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度 。",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 恶 露 。",
+  "wer": 0.45454545454545453,
+  "werNormalizedGold": "我 想 提高 我 的 信用卡 额度",
+  "werNormalizedPredicted": "我 想 听 girl 的 信用卡 恶毒",
+  "qualityScore": null,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "我 想 听 girl 的 信 用 卡 恶 毒",
   "sigWerErrors": [
     {
+      "error": "Substitution: '提' to '听' at position 2",
+      "reason": "'提' (raise) and '听' (listen) are completely different in meaning, changing the intent of the sentence from raising something to listening, which derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 4",
+      "reason": "'高' (increase) is replaced by 'girl', an English word unrelated to the context, making the sentence incoherent and significantly changing the meaning.",
+      "score": 1
+    },
+    {
       "error": "Substitution: '额' to '恶' at position 9",
-      "reason": "'额' (credit limit) is replaced by '恶' (evil), which is a completely different word and makes the sentence incoherent and meaningless in context.",
+      "reason": "'额' (limit/amount) and '恶' (evil) are completely different in meaning, making the sentence nonsensical and derailing the intended meaning.",
       "score": 1
     }
   ]

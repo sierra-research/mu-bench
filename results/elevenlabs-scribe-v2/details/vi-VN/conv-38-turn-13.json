@@ -1,26 +1,21 @@
 {
   "gold": "Rồi. OK.",
-  "predicted": "Được.",
+  "predicted": "Okay.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Rồi. OK.",
-  "werNormalizedPredicted": "Được.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "roi okay",
+  "werNormalizedPredicted": "okay",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Rồi. OK.",
-  "sigWerNormalizedPredicted": "Được.",
+  "sigWerNormalizedGold": "roi okay",
+  "sigWerNormalizedPredicted": "okay",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Rồi.' to 'Được.' at position 0",
-      "reason": "'Rồi.' (Alright/Okay) and 'Được.' (Can/Okay) are similar in some contexts, but here 'Rồi.' is a confirmation while 'Được.' is more of a permission or agreement. The meaning is changed but not completely derailed.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'OK.' at position 1",
-      "reason": "'OK.' is missing from the actual transcription, which omits an explicit confirmation. This changes the tone but not the core meaning of the sentence.",
-      "score": 2
+      "error": "Deletion: 'roi' at position 0",
+      "reason": "The word 'roi' is missing from the transcription. If 'roi' is a key term (such as a name or acronym), its omission could significantly change the meaning or make the sentence incomplete.",
+      "score": 1
     }
   ]
 }

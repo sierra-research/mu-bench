@@ -2,34 +2,29 @@
   "gold": "Tôi dùng Android. Tôi không thấy được gì hết.",
   "predicted": "Tôi dùng màn trôi, tôi không thấy gì được hết.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Tôi dùng Android. Tôi không thấy được gì hết.",
-  "werNormalizedPredicted": "tôi dùng màn trôi. tôi không thấy gì được hết.",
-  "qualityScore": 2,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "tôi dùng android tôi không thấy được gì hết",
+  "werNormalizedPredicted": "tôi dùng màn trôi tôi không thấy gì được hết",
+  "qualityScore": null,
   "significantWer": 0.2222222222222222,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Tôi dùng Android. Tôi không thấy được gì hết.",
-  "sigWerNormalizedPredicted": "tôi dùng màn trôi. tôi không thấy gì được hết.",
+  "sigWerNormalizedGold": "tôi dùng android tôi không thấy được gì hết",
+  "sigWerNormalizedPredicted": "tôi dùng màn trôi tôi không thấy gì được hết",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'Android.' to 'trôi.' at position 2",
-      "reason": "'màn' is an extra word not present in the expected sentence, and it changes the meaning from 'Android' (an operating system) to something unrelated, making the sentence confusing.",
+      "error": "Substitution: 'android' to 'trôi' at position 2",
+      "reason": "'màn' is inserted before 'trôi', which is not present in the expected sentence and changes the meaning from 'android' (an operating system) to something unrelated, making the sentence confusing.",
       "score": 1
     },
     {
       "error": "Insertion: 'gì' at position 6",
-      "reason": "'Android' is a specific operating system, while 'trôi' means 'float' in Vietnamese, which is completely unrelated and changes the meaning of the sentence.",
+      "reason": "Substituting 'android' (a mobile OS) with 'trôi' (which means 'float' or 'drift' in Vietnamese) changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
     },
     {
       "error": "Deletion: 'gì' at position 7",
-      "reason": "The word 'gì' is repeated in the actual transcript, but this does not significantly change the meaning of the sentence.",
+      "reason": "'gì' is inserted earlier than in the expected sentence, but since it is present in both, this is a minor word order issue and does not change the meaning.",
       "score": 2
     }
   ]

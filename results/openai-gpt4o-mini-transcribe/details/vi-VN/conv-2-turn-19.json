@@ -1,0 +1,36 @@
+{
+  "gold": "Mở ứng dụng rồi. Vui lòng hướng dẫn nha.",
+  "predicted": "mớt được người vui lòng dẫn",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
+  "werNormalizedPredicted": "mớt được người vui lòng dẫn",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
+  "sigWerNormalizedPredicted": "mớt được người vui lòng dẫn",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mở' to 'mớt' at position 0",
+      "reason": "'mở' means 'open', while 'mớt' is not a standard word and changes the meaning, making the sentence unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "Omitting 'rồi' ('then') removes a connector that affects the flow but does not completely derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'hướng' at position 6",
+      "reason": "Missing 'hướng' ('guide') removes a key part of the instruction, making the request incomplete.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nha' at position 8",
+      "reason": "'nha' is a polite particle in Vietnamese; omitting it makes the sentence less polite but does not change the core meaning.",
+      "score": 2
+    }
+  ]
+}

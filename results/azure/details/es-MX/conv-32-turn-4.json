@@ -2,14 +2,20 @@
   "gold": "Es Juan López arroba arroba email punto com.",
   "predicted": "Es juanlopez@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Es Juan López arroba arroba email punto com.",
-  "werNormalizedPredicted": "Es Juan López arroba arroba email punto com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.125,
+  "werNormalizedGold": "es juan lopez arroba arroba email punto com",
+  "werNormalizedPredicted": "es juan lopez arroba email punto com",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Es Juan López arroba arroba email punto com.",
-  "sigWerNormalizedPredicted": "Es Juan López arroba arroba email punto com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es juan lopez arroba arroba email punto com",
+  "sigWerNormalizedPredicted": "es juan lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'arroba' at position 4",
+      "reason": "The repeated 'arroba' (which means '@') is missing in the actual transcription. This could result in an incorrect email address, which is a significant error as it changes the meaning and usability of the information.",
+      "score": 1
+    }
+  ]
 }

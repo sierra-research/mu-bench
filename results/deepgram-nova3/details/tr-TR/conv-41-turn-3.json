@@ -1,25 +1,25 @@
 {
   "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
-  "predicted": "Öncelikle ben bir kredi kart gibi tartışmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Taklit numaramı?",
+  "predicted": "Öncelikle bana bir kredi kartı gibi tartışmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Taklit numaramı.",
   "unintelligible": false,
   "wer": 0.2222222222222222,
-  "werNormalizedGold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
-  "werNormalizedPredicted": "öncelikle ben bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? taklit numaramı?",
-  "qualityScore": 2,
-  "significantWer": 0.05555555555555555,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "werNormalizedPredicted": "öncelikle bana bir kredi kartı gibi tartışmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin taklit numaramı",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 2,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
-  "sigWerNormalizedPredicted": "öncelikle ben bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? taklit numaramı?",
+  "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "sigWerNormalizedPredicted": "öncelikle bana bir kredi kartı gibi tartışmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin taklit numaramı",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Öncelikle' to 'öncelikle' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning in this context.",
-      "score": 3
+      "error": "Substitution: 'limit' to 'gibi' at position 5",
+      "reason": "'limit' (meaning 'limit') is replaced with 'gibi' (meaning 'like/as'), which changes the meaning of the sentence and makes it incoherent in context. The sentence no longer makes sense regarding a credit card limit increase.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'Takip' to 'taklit' at position 16",
-      "reason": "'Takip' means 'tracking' or 'follow', while 'taklit' means 'imitation' or 'fake'. This changes the meaning of the sentence significantly, as 'tracking number' and 'imitation number' are completely different concepts.",
+      "error": "Substitution: 'takip' to 'taklit' at position 16",
+      "reason": "'takip' (meaning 'tracking') is replaced with 'taklit' (meaning 'imitation'), which significantly changes the meaning of the phrase 'tracking number' to 'imitation number', making the request confusing and incorrect.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "C N 4 0 0, đúng không?",
-  "predicted": "Sẽ là 4 0 0 đúng không?",
+  "predicted": "Se ana mum kom c.",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "C N 4 0 0, đúng không?",
-  "werNormalizedPredicted": "Sẽ là C N 4 0 0, đúng không?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "C N 4 0 0, đúng không?",
-  "sigWerNormalizedPredicted": "Sẽ là C N 4 0 0, đúng không?",
+  "wer": 1.0,
+  "werNormalizedGold": "c n four hundred dung khong",
+  "werNormalizedPredicted": "se ana mum kom c",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n four hundred dung khong",
+  "sigWerNormalizedPredicted": "se ana mum kom c",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'Sẽ' at position 0",
-      "reason": "'Sẽ' means 'will' in Vietnamese and adds a future tense to the sentence, but does not change the core meaning of the sentence. The main information (C N 4 0 0, đúng không?) remains unchanged.",
-      "score": 2
+      "error": "Substitution: 'c' to 'se' at position 0",
+      "reason": "'c' and 'se' are completely different words and do not share meaning, which derails the intended meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'khong' at position 5",
+      "reason": "'khong' is missing from the actual transcription, which further reduces the coherence and completeness of the sentence.",
+      "score": 1
     }
   ]
 }

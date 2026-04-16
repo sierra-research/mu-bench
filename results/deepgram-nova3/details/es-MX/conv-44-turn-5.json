@@ -1,26 +1,31 @@
 {
   "gold": "Lo siento, Juan López.",
-  "predicted": "No es cierto. Juan Juan López, perdón.",
+  "predicted": "No es cierto. Juan Juan Juan López, perdón.",
   "unintelligible": false,
   "wer": 1.5,
-  "werNormalizedGold": "Lo siento, Juan López.",
-  "werNormalizedPredicted": "No es cierto. Juan Juan López, perdón.",
-  "qualityScore": 2,
+  "werNormalizedGold": "lo siento juan lopez",
+  "werNormalizedPredicted": "no es cierto juan juan juan lopez perdon",
+  "qualityScore": null,
   "significantWer": 0.5,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Lo siento, Juan López.",
-  "sigWerNormalizedPredicted": "No es cierto. Juan Juan López, perdón.",
+  "sigWerNormalizedGold": "lo siento juan lopez",
+  "sigWerNormalizedPredicted": "no es cierto juan juan juan lopez perdon",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Lo' to 'es' at position 0",
-      "reason": "The insertion of 'No' changes the meaning from an apology to a denial, which significantly alters the intent of the sentence.",
+      "error": "Substitution: 'lo' to 'es' at position 0",
+      "reason": "'No' changes the meaning from an apology ('lo siento') to a negation, which significantly alters the intent of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'López.' to 'perdón.' at position 3",
-      "reason": "Substituting 'Lo' (from 'Lo siento', meaning 'I'm sorry') with 'es' (from 'es cierto', meaning 'it's true') changes the meaning from an apology to an assertion, which is a significant change.",
+      "error": "Insertion: 'juan' at position 3",
+      "reason": "Substituting 'lo' (from 'lo siento', meaning 'I'm sorry') with 'es' (from 'es cierto', meaning 'it's true') changes the meaning of the phrase, resulting in a significant error.",
       "score": 1
+    },
+    {
+      "error": "Insertion: 'perdon' at position 4",
+      "reason": "Repeating 'juan' multiple times is a minor error as it does not change the overall meaning, but it is unnecessary repetition.",
+      "score": 2
     }
   ]
 }

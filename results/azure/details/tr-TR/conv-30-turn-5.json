@@ -1,20 +1,25 @@
 {
   "gold": "<foreign> dediğiniz ne?",
-  "predicted": "@ dediğiniz de.",
+  "predicted": "@ dediğinizde.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "<foreign> dediğiniz ne?",
-  "werNormalizedPredicted": "@ dediğiniz ne?",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "<foreign> dediğiniz ne?",
-  "sigWerNormalizedPredicted": "@ dediğiniz ne?",
+  "wer": 1.0,
+  "werNormalizedGold": "dediğiniz ne",
+  "werNormalizedPredicted": "dediğinizde",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "dediğiniz ne",
+  "sigWerNormalizedPredicted": "dediğinizde",
   "sigWerErrors": [
     {
-      "error": "Substitution: '<foreign>' to '@' at position 0",
-      "reason": "The word '<foreign>' is replaced by '@', which is not a meaningful word in this context and could confuse the meaning of the sentence.",
+      "error": "Substitution: 'dediğiniz' to 'dediğinizde' at position 0",
+      "reason": "'dediğinizde' is a different word from 'dediğiniz'; the suffix '-de' changes the meaning from 'what you said' to 'when you said', altering the sentence's meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ne' at position 1",
+      "reason": "Omitting 'ne' ('what') removes the question aspect of the sentence, changing it from 'what did you say' to just 'when you said', which significantly alters the meaning.",
       "score": 1
     }
   ]

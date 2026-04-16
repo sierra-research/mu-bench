@@ -1,36 +1,26 @@
 {
   "gold": "Sí. Es C N 7 8 7.",
-  "predicted": "E C 7 8 7",
+  "predicted": "E E C 7 8 7",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werNormalizedGold": "Sí. Es C N 7 8 7.",
-  "werNormalizedPredicted": "E C 7 8 7",
-  "qualityScore": 1,
-  "significantWer": 0.42857142857142855,
-  "majorErrorsCount": 3,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "si es c n siete ocho siete",
+  "werNormalizedPredicted": "e e c siete ocho siete",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Sí. Es C N 7 8 7.",
-  "sigWerNormalizedPredicted": "E C 7 8 7",
+  "sigWerNormalizedGold": "si es c n siete ocho siete",
+  "sigWerNormalizedPredicted": "e e c siete ocho siete",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sí.' to 'E' at position 0",
-      "reason": "'Sí.' is an affirmation in Spanish ('yes'), while 'E' is a letter and does not convey the same meaning. This changes the intent of the sentence.",
+      "error": "Substitution: 'si' to 'e' at position 0",
+      "reason": "'si' (yes) is replaced by 'e', which is a different word and changes the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'Es' at position 1",
-      "reason": "'Es' means 'is' in Spanish and is important for the sentence structure. Its omission makes the sentence incomplete.",
+      "error": "Deletion: 'n' at position 3",
+      "reason": "The letter 'n' is omitted from a sequence of letters/numbers, which can significantly alter the intended code or information.",
       "score": 1
-    },
-    {
-      "error": "Deletion: 'N' at position 3",
-      "reason": "Missing 'N' in a spelled-out sequence (C N 7 8 7) changes the information being conveyed, which is likely a code or identifier.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '7.' to '7' at position 6",
-      "reason": "The difference is only punctuation (period), which does not affect the meaning.",
-      "score": 3
     }
   ]
 }

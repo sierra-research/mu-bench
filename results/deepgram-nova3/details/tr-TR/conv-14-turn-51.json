@@ -2,19 +2,24 @@
   "gold": "Hayır maalesef yine yanlış anladınız. Herhalde sizin kulaklarınızda problem var.",
   "predicted": "Hayır maalesef, beni yanlış anladınız, herhalde sizin kulaklarınızda bir problem var.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "Hayır maalesef yine yanlış anladınız. Herhalde sizin kulaklarınızda problem var.",
-  "werNormalizedPredicted": "Hayır maalesef yine yanlış anladınız. Herhalde sizin kulaklarınızda bir problem var.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "hayır maalesef yine yanlış anladınız herhalde sizin kulaklarınızda problem var",
+  "werNormalizedPredicted": "hayır maalesef beni yanlış anladınız herhalde sizin kulaklarınızda bir problem var",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Hayır maalesef yine yanlış anladınız. Herhalde sizin kulaklarınızda problem var.",
-  "sigWerNormalizedPredicted": "Hayır maalesef yine yanlış anladınız. Herhalde sizin kulaklarınızda bir problem var.",
+  "sigWerNormalizedGold": "hayır maalesef yine yanlış anladınız herhalde sizin kulaklarınızda problem var",
+  "sigWerNormalizedPredicted": "hayır maalesef beni yanlış anladınız herhalde sizin kulaklarınızda bir problem var",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'yine' to 'beni' at position 2",
+      "reason": "'yine' means 'again' and 'beni' means 'me'; this changes the subject and focus of the sentence, which can alter the meaning significantly.",
+      "score": 1
+    },
+    {
       "error": "Insertion: 'bir' at position 8",
-      "reason": "'Bir' (meaning 'a' in Turkish) is inserted before 'problem', but it does not change the overall meaning of the sentence. The sentence is still coherent and the meaning is preserved.",
+      "reason": "The insertion of 'bir' ('a') before 'problem' does not significantly change the meaning of the sentence; it is a minor grammatical difference.",
       "score": 2
     }
   ]

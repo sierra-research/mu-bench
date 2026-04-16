@@ -1,20 +1,25 @@
 {
   "gold": "Merhaba, kredi kartımın limitini artırmak istiyorum.",
-  "predicted": "Merhaba hesabım-- eee, kredi kartımın limitini arttırmak istiyorum",
+  "predicted": "Merhaba hesabım-- eee, kredi kartımdan limitini arttırmak istiyorum",
   "unintelligible": false,
   "wer": 0.3333333333333333,
-  "werNormalizedGold": "Merhaba, kredi kartımın limitini artırmak istiyorum.",
-  "werNormalizedPredicted": "Merhaba, hesabım-- eee, kredi kartımın limitini artırmak istiyorum.",
-  "qualityScore": 3,
+  "werNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum",
+  "werNormalizedPredicted": "merhaba hesabim kredi kartimdan limitini artirmak istiyorum",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Merhaba, kredi kartımın limitini artırmak istiyorum.",
-  "sigWerNormalizedPredicted": "Merhaba, hesabım-- eee, kredi kartımın limitini artırmak istiyorum.",
+  "sigWerNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum",
+  "sigWerNormalizedPredicted": "merhaba hesabim kredi kartimdan limitini artirmak istiyorum",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'hesabım--' at position 1",
-      "reason": "The insertion of 'hesabım--' (my account) adds an extra phrase but does not change the main intent of the sentence, which is about increasing the credit card limit. The overall meaning remains clear.",
+      "error": "Insertion: 'hesabim' at position 1",
+      "reason": "'hesabim' (my account) is inserted, but it does not derail the meaning of the sentence, which is about increasing the credit card limit. It adds extra information but does not change the intent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kartimin' to 'kartimdan' at position 2",
+      "reason": "'kartimin' means 'my credit card's', while 'kartimdan' means 'from my credit card'. This changes the grammatical structure but the overall intent (increasing the credit card limit) remains clear.",
       "score": 2
     }
   ]

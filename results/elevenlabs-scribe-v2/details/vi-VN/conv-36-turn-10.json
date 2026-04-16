@@ -1,26 +1,36 @@
 {
   "gold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "predicted": "Thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đơn mới nhất có thể tiến dụng vậy?",
+  "predicted": "Thế làm thế nào để tôi có được cái bản self-assure hoặc là hóa đơn mới nhất có thể tiến dụng vậy?",
   "unintelligible": false,
-  "wer": 0.17391304347826086,
-  "werNormalizedGold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "werNormalizedPredicted": "Thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đơn mới nhất có thể tiến dụng vậy?",
-  "qualityScore": 3,
-  "significantWer": 0.043478260869565216,
-  "majorErrorsCount": 1,
+  "wer": 0.30434782608695654,
+  "werNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
+  "werNormalizedPredicted": "thế làm thế nào để tôi có được cái bản self assure hoặc là hóa đơn mới nhất có thể tiến dụng vậy",
+  "qualityScore": null,
+  "significantWer": 0.08695652173913043,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "sigWerNormalizedPredicted": "Thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đơn mới nhất có thể tiến dụng vậy?",
+  "sigWerNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
+  "sigWerNormalizedPredicted": "thế làm thế nào để tôi có được cái bản self assure hoặc là hóa đơn mới nhất có thể tiến dụng vậy",
   "sigWerErrors": [
     {
       "error": "Insertion: 'cái' at position 8",
-      "reason": "'cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence; it is a minor grammatical difference.",
-      "score": 3
+      "reason": "The insertion of 'cái' (a classifier in Vietnamese) does not change the overall meaning of the sentence, as it is a minor grammatical addition.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sao' to 'self' at position 9",
+      "reason": "'sao' (meaning 'copy') is substituted with 'self', which is an English word and does not make sense in this Vietnamese context, causing confusion and loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kê' at position 11",
+      "reason": "'sao kê' together means 'statement' or 'account statement'; omitting 'kê' breaks the meaning, making the phrase incomplete and unclear.",
+      "score": 1
     },
     {
       "error": "Substitution: 'của' to 'có' at position 18",
-      "reason": "Substituting 'của' (of) with 'có' (have/can) changes the grammatical structure and makes the sentence less coherent, affecting the meaning significantly.",
-      "score": 1
+      "reason": "'của' means 'of', while 'có' means 'have/has'; this substitution changes the grammatical structure but the overall meaning is still somewhat understandable in context.",
+      "score": 2
     }
   ]
 }

@@ -14,6 +14,7 @@ Usage:
 
 import argparse
 import asyncio
+import base64
 import io
 import json
 import os
@@ -56,11 +57,22 @@ def pcm16_to_wav_bytes(samples: np.ndarray, sample_rate: int) -> bytes:
 # ---------------------------------------------------------------------------
 
 
-def build_utterance_items(manifest: dict, locales: list[str], max_conversations: int | None = None):
+def build_utterance_items(
+    manifest: dict,
+    locales: list[str],
+    max_conversations: int | None = None,
+    target_sr: int | None = None,
+):
     """Build list of (utterance_id, locale, wav_bytes) items for utterance mode.
 
     Reads each utterance's audio_path directly from the manifest.
+    If target_sr is set, resamples audio to the given sample rate.
     """
+    if target_sr:
+        from math import gcd
+
+        from scipy.signal import resample_poly
+
     convos_by_key: dict[tuple[str, str], list[dict]] = {}
     for utt in manifest["utterances"]:
         if utt["locale"] not in locales:
@@ -83,6 +95,10 @@ def build_utterance_items(manifest: dict, locales: list[str], max_conversations:
                 continue
 
             samples, sr = read_wav_as_pcm16(wav_path)
+            if target_sr and target_sr != sr:
+                g = gcd(target_sr, sr)
+                samples = resample_poly(samples, target_sr // g, sr // g).astype(np.int16)
+                sr = target_sr
             wav_bytes = pcm16_to_wav_bytes(samples, sr)
             items.append({"id": utt["id"], "locale": locale, "wav_bytes": wav_bytes})
 
@@ -224,12 +240,70 @@ async def transcribe_openai(session: aiohttp.ClientSession, wav_bytes: bytes, lo
     return response.text.strip()
 
 
+async def transcribe_openai_mini(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    from openai import AsyncOpenAI
+
+    iso_locale = LOCALE_TO_ISO639_1.get(locale, locale[:2])
+    client = AsyncOpenAI()
+    response = await client.audio.transcriptions.create(
+        model="gpt-4o-mini-transcribe",
+        file=("audio.wav", wav_bytes, "audio/wav"),
+        language=iso_locale,
+    )
+    return response.text.strip()
+
+
+LOCALE_NAMES = {
+    "en-US": "English",
+    "es-MX": "Spanish",
+    "tr-TR": "Turkish",
+    "vi-VN": "Vietnamese",
+    "zh-CN": "Chinese",
+}
+
+
+async def transcribe_openai_gpt_audio(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    from openai import AsyncOpenAI
+
+    lang_name = LOCALE_NAMES.get(locale, "")
+    lang_hint = f" The audio is in {lang_name}." if lang_name else ""
+
+    client = AsyncOpenAI()
+    audio_b64 = base64.b64encode(wav_bytes).decode("utf-8")
+    response = await client.chat.completions.create(
+        model="gpt-audio-1.5",
+        modalities=["text", "audio"],
+        audio={"voice": "alloy", "format": "wav"},
+        messages=[
+            {
+                "role": "system",
+                "content": f"Transcribe the provided audio exactly. Return only the transcript text.{lang_hint}",
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "input_audio",
+                        "input_audio": {
+                            "data": audio_b64,
+                            "format": "wav",
+                        },
+                    }
+                ],
+            },
+        ],
+    )
+    return response.choices[0].message.audio.transcript.strip()
+
+
 PROVIDERS = {
     "deepgram-nova3": transcribe_deepgram,
     "google-chirp3": transcribe_google,
     "azure": transcribe_azure,
     "elevenlabs-scribe-v2": transcribe_elevenlabs,
     "openai-gpt4o-transcribe": transcribe_openai,
+    "openai-gpt4o-mini-transcribe": transcribe_openai_mini,
+    "openai-gpt-audio-1.5": transcribe_openai_gpt_audio,
 }
 
 PROVIDER_METADATA = {
@@ -238,6 +312,8 @@ PROVIDER_METADATA = {
     "azure": {"model": "Azure-Speech-v1", "organization": "Microsoft"},
     "elevenlabs-scribe-v2": {"model": "Scribe-v2", "organization": "ElevenLabs"},
     "openai-gpt4o-transcribe": {"model": "GPT-4o-Transcribe", "organization": "OpenAI"},
+    "openai-gpt4o-mini-transcribe": {"model": "GPT-4o-Mini-Transcribe", "organization": "OpenAI"},
+    "openai-gpt-audio-1.5": {"model": "GPT-Audio-1.5", "organization": "OpenAI"},
 }
 
 
@@ -263,8 +339,12 @@ async def run_transcription(args):
     print(f"Concurrency: {args.concurrency}")
     print()
 
+    resample_hz = getattr(args, "resample_hz", None)
+    if resample_hz:
+        print(f"Resampling audio to {resample_hz} Hz")
+
     print("Loading audio items...")
-    items = build_utterance_items(manifest, locales, args.max_conversations)
+    items = build_utterance_items(manifest, locales, args.max_conversations, target_sr=resample_hz)
 
     # Filter out items that already have output files (skip existing)
     filtered = []
@@ -368,6 +448,12 @@ def main():
         type=int,
         default=None,
         help="Max conversations per locale",
+    )
+    parser.add_argument(
+        "--resample-hz",
+        type=int,
+        default=None,
+        help="Resample audio to this sample rate before transcription (e.g. 8000)",
     )
     args = parser.parse_args()
 

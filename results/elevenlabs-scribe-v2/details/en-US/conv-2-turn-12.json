@@ -1,20 +1,25 @@
 {
   "gold": "You, too. Bye.",
-  "predicted": "Thank you. Bye",
+  "predicted": "Thank you. Bye.",
   "unintelligible": false,
   "wer": 0.6666666666666666,
-  "werNormalizedGold": "You, too. Bye.",
-  "werNormalizedPredicted": "Thank you. Bye.",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "you too bye",
+  "werNormalizedPredicted": "thank you bye",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "You, too. Bye.",
-  "sigWerNormalizedPredicted": "Thank you. Bye.",
+  "sigWerNormalizedGold": "you too bye",
+  "sigWerNormalizedPredicted": "thank you bye",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'You,' to 'Thank' at position 0",
-      "reason": "'You, too.' is a polite reciprocal farewell, while 'Thank you.' is an expression of gratitude. The substitution changes the intent and meaning of the exchange, making the conversation less coherent in context.",
+      "error": "Insertion: 'thank' at position 0",
+      "reason": "'thank' changes the meaning from a reciprocal farewell ('you too') to an expression of gratitude, which alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'too' at position 1",
+      "reason": "Omitting 'too' removes the reciprocal aspect of the farewell, changing the meaning of the exchange.",
       "score": 1
     }
   ]

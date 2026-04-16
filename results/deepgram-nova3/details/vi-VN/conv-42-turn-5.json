@@ -1,15 +1,26 @@
 {
   "gold": "Tên đầy đủ là Trần Minh.",
-  "predicted": "Tên đầy đủ là Trần Minh",
+  "predicted": "Kênh đầy đủ là chân minh",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tên đầy đủ là Trần Minh.",
-  "werNormalizedPredicted": "Tên đầy đủ là Trần Minh.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "tên đầy đủ là trần minh",
+  "werNormalizedPredicted": "kênh đầy đủ là chân minh",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Tên đầy đủ là Trần Minh.",
-  "sigWerNormalizedPredicted": "Tên đầy đủ là Trần Minh.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tên đầy đủ là trần minh",
+  "sigWerNormalizedPredicted": "kênh đầy đủ là chân minh",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tên' to 'kênh' at position 0",
+      "reason": "'tên' means 'name' while 'kênh' means 'channel'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'chân' at position 4",
+      "reason": "'trần' is a Vietnamese surname, while 'chân' means 'foot' or 'true'; this is a significant error in a proper noun.",
+      "score": 1
+    }
+  ]
 }

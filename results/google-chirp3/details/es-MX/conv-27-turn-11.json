@@ -1,21 +1,31 @@
 {
   "gold": "¿Y a qué se refiere el proceso?",
-  "predicted": "¿Y a qué se refiere en proceso?",
+  "predicted": "Sí, ¿a qué se refieren proceso?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "¿Y a qué se refiere el proceso?",
-  "werNormalizedPredicted": "¿Y a qué se refiere en proceso?",
-  "qualityScore": 2,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "y a que se refiere el proceso",
+  "werNormalizedPredicted": "si a que se refieren proceso",
+  "qualityScore": null,
   "significantWer": 0.14285714285714285,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "¿Y a qué se refiere el proceso?",
-  "sigWerNormalizedPredicted": "¿Y a qué se refiere en proceso?",
+  "sigWerNormalizedGold": "y a que se refiere el proceso",
+  "sigWerNormalizedPredicted": "si a que se refieren proceso",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'el' to 'en' at position 5",
-      "reason": "The substitution of 'el' (the) with 'en' (in) changes the meaning of the phrase from referring to 'the process' to 'in process', which alters the intent of the question significantly.",
+      "error": "Substitution: 'y' to 'si' at position 0",
+      "reason": "'y' (and) and 'si' (yes/if) are different conjunctions and change the meaning of the sentence, leading to a significant change in intent.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'refiere' to 'refieren' at position 4",
+      "reason": "Singular 'refiere' vs plural 'refieren' is a minor grammatical error that does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'el' at position 5",
+      "reason": "Omitting 'el' (the) is a minor grammatical error that does not significantly alter the meaning of the sentence.",
+      "score": 2
     }
   ]
 }

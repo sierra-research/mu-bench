@@ -1,30 +1,25 @@
 {
   "gold": "想提高我的信用卡额度。",
-  "predicted": "香提购，我的信用卡恶毒。",
+  "predicted": "想起个我的信用卡恶毒。",
   "unintelligible": false,
-  "wer": 0.45454545454545453,
-  "werNormalizedGold": "想提高我的信用卡额度。",
-  "werNormalizedPredicted": "香提购，我的信用卡恶毒。",
-  "qualityScore": 1,
-  "significantWer": 0.2727272727272727,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度 。",
-  "sigWerNormalizedPredicted": "香 提 购 ， 我 的 信 用 卡 恶 毒 。",
+  "wer": 0.4,
+  "werNormalizedGold": "想 提高 我 的 信用卡 额度",
+  "werNormalizedPredicted": "想 起 个 我 的 信用卡 恶毒",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "想 起 个 我 的 信 用 卡 恶 毒",
   "sigWerErrors": [
     {
-      "error": "Substitution: '想' to '香' at position 0",
-      "reason": "'想' means 'want' or 'wish', while '香' means 'fragrant' or 'aromatic'. This changes the intent of the sentence and makes it incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '高' to '，' at position 2",
-      "reason": "'购' means 'purchase' and is not present in the expected sentence. Its insertion disrupts the meaning and flow of the sentence.",
+      "error": "Substitution: '提' to '起' at position 1",
+      "reason": "'提' (raise/increase) is substituted with '起' (rise/start), which changes the meaning of the action in the sentence. The original intent is to increase the credit card limit, but '起' does not convey this meaning. This significantly alters the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: '额' to '恶' at position 8",
-      "reason": "'高' means 'increase' or 'raise', which is essential to the meaning of the sentence. Replacing it with a comma removes this meaning and makes the sentence incomplete.",
+      "reason": "'额' (limit/amount) is substituted with '恶' (evil), which is completely unrelated and makes the sentence incoherent. This is a significant error that derails the meaning.",
       "score": 1
     }
   ]

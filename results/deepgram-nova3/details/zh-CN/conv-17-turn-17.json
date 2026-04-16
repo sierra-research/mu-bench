@@ -1,15 +1,26 @@
 {
   "gold": "我几次说了，你有什么问题呀，为什么不听我，为什么听不懂我。",
-  "predicted": "我及此说了你有什么问题啊为什么不听我为什么听不懂我",
+  "predicted": "我即使说了你有什么问题啊为什么不听我为什么听不懂我",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我几次说了，你有什么问题呀，为什么不听我，为什么听不懂我。",
-  "werNormalizedPredicted": "我几次说了，你有什么问题呀，为什么不听我，为什么听不懂我。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 29,
-  "sigWerNormalizedGold": "我 几 次 说 了 ， 你 有 什 么 问 题 呀 ， 为 什 么 不 听 我 ， 为 什 么 听 不 懂 我 。",
-  "sigWerNormalizedPredicted": "我 几 次 说 了 ， 你 有 什 么 问 题 呀 ， 为 什 么 不 听 我 ， 为 什 么 听 不 懂 我 。",
-  "sigWerErrors": []
+  "wer": 0.12,
+  "werNormalizedGold": "我 几 次 说 了 你 有 什么 问题 呀 为什么 不 听 我 为什么 听 不 懂 我",
+  "werNormalizedPredicted": "我 即使 说 了 你 有 什么 问题 啊 为什么 不 听 我 为什么 听 不 懂 我",
+  "qualityScore": null,
+  "significantWer": 0.04,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "我 几 次 说 了 你 有 什 么 问 题 呀 为 什 么 不 听 我 为 什 么 听 不 懂 我",
+  "sigWerNormalizedPredicted": "我 即 使 说 了 你 有 什 么 问 题 啊 为 什 么 不 听 我 为 什 么 听 不 懂 我",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '几' to '即' at position 1",
+      "reason": "‘几’ (several/times) and ‘即’ (even/just) have different meanings and change the intent of the sentence, which could confuse the listener about the frequency or condition being discussed.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '呀' to '啊' at position 11",
+      "reason": "‘呀’ and ‘啊’ are both sentence-ending particles in Chinese and are often interchangeable in casual speech, with only a slight difference in tone or emphasis. The overall meaning is not affected.",
+      "score": 3
+    }
+  ]
 }

@@ -2,14 +2,20 @@
   "gold": "OK rồi.",
   "predicted": "Ok.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "OK rồi.",
-  "werNormalizedPredicted": "OK rồi.",
-  "qualityScore": 2,
+  "wer": 0.5,
+  "werNormalizedGold": "okay rồi",
+  "werNormalizedPredicted": "okay",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "OK rồi.",
-  "sigWerNormalizedPredicted": "OK rồi.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "okay rồi",
+  "sigWerNormalizedPredicted": "okay",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'rồi' at position 1",
+      "reason": "The word 'rồi' in Vietnamese means 'already' or indicates completion, so omitting it changes the aspect or completion of the statement. The meaning is somewhat affected but the core intent ('okay') remains understandable.",
+      "score": 2
+    }
+  ]
 }

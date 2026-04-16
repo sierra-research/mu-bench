@@ -1,15 +1,26 @@
 {
   "gold": "需要。",
-  "predicted": "需要",
+  "predicted": "七",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "需要。",
-  "werNormalizedPredicted": "需要。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "需 要 。",
-  "sigWerNormalizedPredicted": "需 要 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "需要",
+  "werNormalizedPredicted": "七",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "需 要",
+  "sigWerNormalizedPredicted": "七",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '需' to '七' at position 0",
+      "reason": "'需' means 'need' or 'require', while '七' means 'seven'; the substitution changes the meaning entirely and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '要' at position 1",
+      "reason": "'要' is an essential part of the phrase '需要' (need/require); its omission makes the phrase incomplete and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

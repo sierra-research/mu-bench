@@ -1,25 +1,30 @@
 {
   "gold": "Sẵn sàng. Vui lòng đọc lại giùm.",
-  "predicted": "Chán sảnh vui lòng đọc lại điểm.",
+  "predicted": "Chắc chắn anh ấy cũng có lòng đáp lại em rồi.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "Sẵn sàng. Vui lòng đọc lại giùm.",
-  "werNormalizedPredicted": "Chán sảnh. Vui lòng đọc lại điểm.",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "wer": 1.2857142857142858,
+  "werNormalizedGold": "sẵn sàng vui lòng đọc lại giùm",
+  "werNormalizedPredicted": "chắc chắn anh ấy cũng có lòng đáp lại em rồi",
+  "qualityScore": null,
+  "significantWer": 0.42857142857142855,
+  "majorErrorsCount": 3,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Sẵn sàng. Vui lòng đọc lại giùm.",
-  "sigWerNormalizedPredicted": "Chán sảnh. Vui lòng đọc lại điểm.",
+  "sigWerNormalizedGold": "sẵn sàng vui lòng đọc lại giùm",
+  "sigWerNormalizedPredicted": "chắc chắn anh ấy cũng có lòng đáp lại em rồi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sẵn' to 'Chán' at position 0",
-      "reason": "'Sẵn' means 'ready' while 'Chán' means 'bored'; this changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "error": "Substitution: 'sẵn' to 'ấy' at position 0",
+      "reason": "The word 'chắc' introduces a new meaning of certainty that is not present in the expected sentence, changing the intent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'giùm.' to 'điểm.' at position 6",
-      "reason": "'giùm' means 'please (help)' while 'điểm' means 'score/point'; this changes the request's meaning and makes the sentence incorrect in context.",
+      "error": "Substitution: 'đọc' to 'đáp' at position 4",
+      "reason": "'sẵn' (ready) is replaced by 'ấy' (he/him), which changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'giùm' to 'rồi' at position 6",
+      "reason": "'đọc' (read) is replaced by 'đáp' (respond), which changes the action being requested.",
       "score": 1
     }
   ]

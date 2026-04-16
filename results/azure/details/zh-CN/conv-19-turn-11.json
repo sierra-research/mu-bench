@@ -1,15 +1,26 @@
 {
   "gold": "哎呀。",
-  "predicted": "哎呀",
+  "predicted": "Yeah.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "哎呀。",
-  "werNormalizedPredicted": "哎呀。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "哎 呀 。",
-  "sigWerNormalizedPredicted": "哎 呀 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "哎呀",
+  "werNormalizedPredicted": "yeah",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "哎 呀",
+  "sigWerNormalizedPredicted": "yeah",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '哎' to 'yeah' at position 0",
+      "reason": "The expected word is in Chinese, while the actual transcription is in English. This is a language mismatch and a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '呀' at position 1",
+      "reason": "A word from the expected transcription is missing in the actual output, which further reduces accuracy and changes the meaning.",
+      "score": 1
+    }
+  ]
 }

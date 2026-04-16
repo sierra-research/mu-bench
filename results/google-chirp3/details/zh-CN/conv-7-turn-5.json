@@ -1,20 +1,25 @@
 {
   "gold": "C N 3 7 8 9。",
-  "predicted": "CN 3G 89",
+  "predicted": "CN 3G 8种",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "C N 3 7 8 9。",
-  "werNormalizedPredicted": "C N 3 G 8 9。",
-  "qualityScore": 1,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "C N 3 7 8 9 。",
-  "sigWerNormalizedPredicted": "C N 3 G 8 9 。",
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "c n three seven eight nine",
+  "werNormalizedPredicted": "c n three g eight",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n three seven eight nine",
+  "sigWerNormalizedPredicted": "c n three g eight",
   "sigWerErrors": [
     {
-      "error": "Substitution: '7' to 'G' at position 3",
-      "reason": "In a sequence of spelled-out letters and numbers, substituting a number with a letter changes the intended sequence significantly and could result in a completely different code or identifier.",
+      "error": "Substitution: 'seven' to 'g' at position 3",
+      "reason": "'seven' is a digit in a sequence, but 'g' is a letter; this changes the intended sequence and could cause significant confusion, especially in contexts like codes or serial numbers.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nine' at position 5",
+      "reason": "Omitting 'nine' from a sequence of characters/numbers significantly alters the information, especially if this is a code or identifier.",
       "score": 1
     }
   ]

@@ -1,21 +1,31 @@
 {
   "gold": "你可以再重复我的姓名？",
-  "predicted": "你可以在的重复我的姓名",
+  "predicted": "你可以在重复的心灵",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werNormalizedGold": "你可以再重复我的姓名？",
-  "werNormalizedPredicted": "你可以再重复我的姓名",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 可 以 再 重 复 我 的 姓 名 ？",
-  "sigWerNormalizedPredicted": "你 可 以 再 重 复 我 的 姓 名",
+  "wer": 0.4,
+  "werNormalizedGold": "你 可以 再 重复 我 的 姓名",
+  "werNormalizedPredicted": "你 可以 在 重复 的 心灵",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 可 以 再 重 复 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 可 以 在 重 复 的 心 灵",
   "sigWerErrors": [
     {
-      "error": "Deletion: '？' at position 10",
-      "reason": "The missing question mark is a punctuation difference and does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: '再' to '在' at position 3",
+      "reason": "These are different words with different meanings ('again' vs. 'at/in'), which changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 6",
+      "reason": "Omitting '我' ('I' or 'my') removes the subject/possessor, making the sentence unclear and changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '姓' to '心' at position 8",
+      "reason": "'姓' means 'surname' and '心' means 'heart', which are completely unrelated and change the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

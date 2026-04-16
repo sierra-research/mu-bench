@@ -1,26 +1,31 @@
 {
   "gold": "Hayır, posta kodunu sonunda bir de 0 var. 3466 0.",
-  "predicted": "Hayır, posta kodunun sonunda bir de sıfır var, üç bin dört yüz altmış altı sıfır.",
+  "predicted": "Hayır, posta kodunun sonunda bizde sıfır var, üç bin dört yüz altmış altı sıfır.",
   "unintelligible": false,
   "wer": 0.2,
-  "werNormalizedGold": "Hayır, posta kodunu sonunda bir de 0 var. 3466 0.",
-  "werNormalizedPredicted": "Hayır, posta kodunun sonunda bir de 0 var, 3466 0.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Hayır, posta kodunu sonunda bir de 0 var. 3466 0.",
-  "sigWerNormalizedPredicted": "Hayır, posta kodunun sonunda bir de 0 var, 3466 0.",
+  "werNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç bin dört yüz altmış altı sıfır",
+  "werNormalizedPredicted": "hayır posta kodunun sonunda bizde sıfır var üç bin dört yüz altmış altı sıfır",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç bin dört yüz altmış altı sıfır",
+  "sigWerNormalizedPredicted": "hayır posta kodunun sonunda bizde sıfır var üç bin dört yüz altmış altı sıfır",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kodunu' to 'kodunun' at position 2",
-      "reason": "The difference is a minor grammatical inflection in Turkish (accusative vs. genitive), but the meaning of the sentence remains clear and unchanged.",
+      "reason": "'kodunu' (the code) and 'kodunun' (of the code) are different grammatical forms but refer to the same object in context; the meaning is only slightly affected.",
       "score": 2
     },
     {
-      "error": "Substitution: 'var.' to 'var,' at position 7",
-      "reason": "Difference is only in punctuation (period vs comma), which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'bir' to 'bizde' at position 4",
+      "reason": "'bir' means 'one' or 'a', while 'bizde' means 'with us' or 'we have'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'de' at position 5",
+      "reason": "'de' is a particle meaning 'also' or 'too'; its omission slightly affects the nuance but not the main meaning.",
+      "score": 2
     }
   ]
 }

@@ -1,20 +1,25 @@
 {
   "gold": "C N 1 0 8。",
-  "predicted": "C in CNE 靈巴",
+  "predicted": "C-in CNE 靈巴",
   "unintelligible": false,
-  "wer": 0.8333333333333334,
-  "werNormalizedGold": "C N 1 0 8。",
-  "werNormalizedPredicted": "C N C N E 靈巴",
-  "qualityScore": 1,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "C N 1 0 8 。",
-  "sigWerNormalizedPredicted": "C N C N E 靈 巴",
+  "wer": 1.0,
+  "werNormalizedGold": "c n one zero eight",
+  "werNormalizedPredicted": "c in c n e 靈巴",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n one zero eight",
+  "sigWerNormalizedPredicted": "c in c n e 靈 巴",
   "sigWerErrors": [
     {
-      "error": "Substitution: '1' to 'N' at position 2",
-      "reason": "Extra 'C' inserted in a sequence that is likely a code or identifier, which can cause confusion or incorrect identification.",
+      "error": "Insertion: 'in' at position 1",
+      "reason": "The word 'in' is inserted where it does not belong, breaking the sequence of spelled-out characters/numbers and making the transcription confusing and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'one' to 'e' at position 2",
+      "reason": "Substituting 'one' with 'e' in a sequence of spelled-out characters/numbers is a significant error, as it changes the intended information completely.",
       "score": 1
     }
   ]

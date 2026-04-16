@@ -1,15 +1,21 @@
 {
   "gold": "De este mes.",
-  "predicted": "De este mes",
+  "predicted": "¿De qué mes?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "De este mes.",
-  "werNormalizedPredicted": "De este mes.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "de este mes",
+  "werNormalizedPredicted": "de que mes",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "De este mes.",
-  "sigWerNormalizedPredicted": "De este mes.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "de este mes",
+  "sigWerNormalizedPredicted": "de que mes",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'este' to 'que' at position 1",
+      "reason": "'este' means 'this' and 'que' means 'which' in Spanish. Substituting 'this' for 'which' changes the meaning of the phrase from 'of this month' to 'of which month', which significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
 }

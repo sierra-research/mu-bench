@@ -1,31 +1,26 @@
 {
   "gold": "À, thôi. Được rồi. Cảm ơn.",
-  "predicted": "Thôi được rồi.",
+  "predicted": "Tôi, tôi.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "À, thôi. Được rồi. Cảm ơn.",
-  "werNormalizedPredicted": "Thôi. Được rồi.",
-  "qualityScore": 2,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "a thoi duoc roi cam on",
+  "werNormalizedPredicted": "toi toi",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "À, thôi. Được rồi. Cảm ơn.",
-  "sigWerNormalizedPredicted": "Thôi. Được rồi.",
+  "sigWerNormalizedGold": "a thoi duoc roi cam on",
+  "sigWerNormalizedPredicted": "toi toi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'À,' to 'Thôi.' at position 0",
-      "reason": "'À,' is an interjection that sets the tone or context for the sentence. Its omission slightly reduces the nuance but does not change the main meaning.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'thôi.' at position 1",
-      "reason": "'Cảm ơn.' means 'Thank you.' Its omission removes an expression of gratitude, which is significant in conversational context.",
+      "error": "Substitution: 'a' to 'toi' at position 0",
+      "reason": "The word 'a' (which can mean 'okay' or 'alright' in Vietnamese) is replaced with 'toi' ('I'), which changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'Cảm' at position 4",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Deletion: 'duoc' at position 2",
+      "reason": "'duoc' (meaning 'can' or 'okay') is missing, which removes a key part of the sentence and makes the actual transcription incomplete and incoherent compared to the expected meaning.",
+      "score": 1
     }
   ]
 }

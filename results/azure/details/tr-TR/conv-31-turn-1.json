@@ -2,14 +2,30 @@
   "gold": "Ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum.",
   "predicted": "Ben yine bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum.",
-  "werNormalizedPredicted": "Ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.21428571428571427,
+  "werNormalizedGold": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
+  "werNormalizedPredicted": "ben yine bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum",
+  "qualityScore": null,
+  "significantWer": 0.07142857142857142,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum.",
-  "sigWerNormalizedPredicted": "Ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
+  "sigWerNormalizedPredicted": "ben yine bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yeni' to 'yine' at position 1",
+      "reason": "'yeni' means 'new' and 'yine' means 'again'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'durumu' to 'durumuyla' at position 8",
+      "reason": "'durumu' (its situation) and 'durumuyla' (with its situation) are very close in meaning and do not change the overall intent.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 9",
+      "reason": "The word 'ile' (with) is incorporated into 'durumuyla' in the actual, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

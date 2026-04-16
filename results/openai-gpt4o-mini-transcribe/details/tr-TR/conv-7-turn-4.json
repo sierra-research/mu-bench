@@ -1,0 +1,26 @@
+{
+  "gold": "Takip kodu C N 1 1 0. Doğru mudur?",
+  "predicted": "Hakim kodu CN1140 doğru mudur?",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "takip kodu c n one one zero dogru mudur",
+  "werNormalizedPredicted": "hakim kodu c n one one four zero dogru mudur",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "takip kodu c n one one zero dogru mudur",
+  "sigWerNormalizedPredicted": "hakim kodu c n one one four zero dogru mudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'takip' to 'hakim' at position 0",
+      "reason": "'takip' (tracking) and 'hakim' (judge) are completely different words and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'four' at position 6",
+      "reason": "The code is changed from 'one one zero' to 'one one four zero', which alters the tracking code and could lead to referencing a completely different code. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

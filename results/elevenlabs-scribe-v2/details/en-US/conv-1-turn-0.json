@@ -2,30 +2,25 @@
   "gold": "Yeah. I'm trying to find more money from my credit card.",
   "predicted": "Yeah. Uh, um, I'm trying to find, uh, more, more, more, more money, uh, for my credit card",
   "unintelligible": false,
-  "wer": 0.8181818181818182,
-  "werNormalizedGold": "Yeah. I'm trying to find more money from my credit card.",
-  "werNormalizedPredicted": "Yeah. Uh, um, I'm trying to find, uh, more, more, more, more money, uh, from my credit card.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Yeah. I'm trying to find more money from my credit card.",
-  "sigWerNormalizedPredicted": "Yeah. Uh, um, I'm trying to find, uh, more, more, more, more money, uh, from my credit card.",
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "yeah i am trying to find more money from my credit card",
+  "werNormalizedPredicted": "yeah i am trying to find more more more more money for my credit card",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "yeah i am trying to find more money from my credit card",
+  "sigWerNormalizedPredicted": "yeah i am trying to find more more more more money for my credit card",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'Uh,' at position 1",
-      "reason": "Filler word 'uh' does not change the meaning of the sentence, just adds hesitation.",
+      "error": "Insertion: 'more' at position 7",
+      "reason": "The repeated insertion of 'more' is a disfluency but does not change the overall meaning of the sentence; the intent is still clear.",
       "score": 2
     },
     {
-      "error": "Substitution: 'find' to 'more,' at position 4",
-      "reason": "Filler word 'um' does not change the meaning of the sentence, just adds hesitation.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'money' to 'uh,' at position 6",
-      "reason": "Filler word 'uh' does not change the meaning of the sentence, just adds hesitation.",
-      "score": 2
+      "error": "Substitution: 'from' to 'for' at position 8",
+      "reason": "Substituting 'from' with 'for' changes the meaning of the sentence, as 'money from my credit card' and 'money for my credit card' are different concepts.",
+      "score": 1
     }
   ]
 }

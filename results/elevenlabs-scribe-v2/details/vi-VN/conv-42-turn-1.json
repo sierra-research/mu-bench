@@ -1,26 +1,31 @@
 {
   "gold": "Rồi. Vui lòng cho tôi biết lại mã.",
-  "predicted": "Ờ, rồi vui lòng à cho tôi biết lại cái mã",
+  "predicted": "Ờ, rồi cô làm lại cho tôi viết lại cái mới á",
   "unintelligible": false,
-  "wer": 0.375,
-  "werNormalizedGold": "Rồi. Vui lòng cho tôi biết lại mã.",
-  "werNormalizedPredicted": "Ờ, rồi. Vui lòng à cho tôi biết lại mã.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.875,
+  "werNormalizedGold": "rồi vui lòng cho tôi biết lại mã",
+  "werNormalizedPredicted": "rồi cô làm lại cho tôi viết lại cái mới á",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Rồi. Vui lòng cho tôi biết lại mã.",
-  "sigWerNormalizedPredicted": "Ờ, rồi. Vui lòng à cho tôi biết lại mã.",
+  "sigWerNormalizedGold": "rồi vui lòng cho tôi biết lại mã",
+  "sigWerNormalizedPredicted": "rồi cô làm lại cho tôi viết lại cái mới á",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Rồi.' to 'rồi.' at position 0",
-      "reason": "'Ờ,' is a filler word in Vietnamese, similar to 'uh' or 'um', and does not change the meaning of the sentence.",
+      "error": "Substitution: 'vui' to 'làm' at position 1",
+      "reason": "'cô' (miss/madam) introduces a new subject, changing the sentence structure and potentially the meaning.",
       "score": 2
     },
     {
-      "error": "Insertion: 'à' at position 3",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'biết' to 'viết' at position 5",
+      "reason": "'vui lòng' means 'please', while 'làm' means 'do/make', changing the politeness and intent of the request.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'mã' to 'á' at position 7",
+      "reason": "'biết' means 'know', 'viết' means 'write', which changes the action being requested.",
+      "score": 1
     }
   ]
 }

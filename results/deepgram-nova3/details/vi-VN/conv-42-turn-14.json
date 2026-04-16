@@ -1,31 +1,26 @@
 {
   "gold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "predicted": "Chính xác chính xác chính xác xác",
+  "predicted": "Chính xác chính xác kiểm tra dẫn",
   "unintelligible": false,
-  "wer": 0.625,
-  "werNormalizedGold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "werNormalizedPredicted": "Chính xác. Chính xác. Chính xác. Xác.",
-  "qualityScore": 2,
+  "wer": 0.25,
+  "werNormalizedGold": "a chính xác chính xác kiểm tra giùm",
+  "werNormalizedPredicted": "chính xác chính xác kiểm tra dẫn",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "sigWerNormalizedPredicted": "Chính xác. Chính xác. Chính xác. Xác.",
+  "sigWerNormalizedGold": "a chính xác chính xác kiểm tra giùm",
+  "sigWerNormalizedPredicted": "chính xác chính xác kiểm tra dẫn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'À,' to 'Chính' at position 0",
-      "reason": "The interjection 'À,' is missing, which can affect the tone or intent of the sentence, but the main meaning remains.",
+      "error": "Deletion: 'a' at position 0",
+      "reason": "The word 'a' is a minor function word in Vietnamese and its omission does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Deletion: 'chính' at position 1",
-      "reason": "'Kiểm tra giùm.' (meaning 'please check') is replaced by repetitions of 'Chính xác' and 'Xác', which changes the request to a statement of correctness, altering the intent and meaning significantly.",
+      "error": "Substitution: 'giùm' to 'dẫn' at position 7",
+      "reason": "'Giùm' means 'please (help)' while 'dẫn' means 'lead' or 'guide'; this substitution changes the intent of the request, resulting in a significant change in meaning.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'Kiểm' to 'Chính' at position 5",
-      "reason": "infra_error",
-      "score": 2
     }
   ]
 }

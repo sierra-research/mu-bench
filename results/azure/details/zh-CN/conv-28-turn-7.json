@@ -2,25 +2,25 @@
   "gold": "美玲 at email dot com。",
   "predicted": "Mailing at email.com.",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "美玲 at email dot com。",
-  "werNormalizedPredicted": "美玲 at email dot com.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com.",
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailing at email dot com",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'com' to 'com.' at position 5",
-      "reason": "The difference is only in punctuation (period vs full-width period), which does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the intended meaning and identity.",
+      "score": 1
     },
     {
-      "error": "Deletion: '。' at position 6",
-      "reason": "The missing full-width period at the end is a punctuation difference and does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of '玲', which is part of a name, results in a loss of critical information (the person's name), making the transcription significantly incorrect.",
+      "score": 1
     }
   ]
 }

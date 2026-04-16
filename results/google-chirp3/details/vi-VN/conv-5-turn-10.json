@@ -1,15 +1,36 @@
 {
   "gold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
-  "predicted": "Ờ cảm ơn Anna nhé. Có gì cần mình gọi lên.",
+  "predicted": "Ờ cảm ơn Anna nhé. Có gì cần thì gọi liền.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
-  "werNormalizedPredicted": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.36363636363636365,
+  "werNormalizedGold": "ừ cảm ơn anna nhá có gì cần mình gọi lên",
+  "werNormalizedPredicted": "ờ cảm ơn anna nhé có gì cần thì gọi liền",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
-  "sigWerNormalizedPredicted": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "ừ cảm ơn anna nhá có gì cần mình gọi lên",
+  "sigWerNormalizedPredicted": "ờ cảm ơn anna nhé có gì cần thì gọi liền",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ừ' to 'ờ' at position 0",
+      "reason": "'ừ' and 'ờ' are both Vietnamese discourse markers with similar pragmatic meaning; the substitution does not change the overall meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 4",
+      "reason": "'nhá' and 'nhé' are both sentence-ending particles in Vietnamese with similar softening/affirmative functions; the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'mình' to 'thì' at position 8",
+      "reason": "'mình' (I/me) is replaced by 'thì' (then/as for), which changes the subject and structure of the sentence, altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lên' to 'liền' at position 10",
+      "reason": "'lên' (up/call up) and 'liền' (immediately) have different meanings; this changes the nuance of the action but the intent to call is still present.",
+      "score": 2
+    }
+  ]
 }

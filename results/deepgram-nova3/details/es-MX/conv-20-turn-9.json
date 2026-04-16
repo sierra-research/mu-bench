@@ -1,15 +1,21 @@
 {
   "gold": "Pues creo que no.",
-  "predicted": "Pues creo que no.",
+  "predicted": "Pues creo que nos",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Pues creo que no.",
-  "werNormalizedPredicted": "Pues creo que no.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.25,
+  "werNormalizedGold": "pues creo que no",
+  "werNormalizedPredicted": "pues creo que nos",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Pues creo que no.",
-  "sigWerNormalizedPredicted": "Pues creo que no.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "pues creo que no",
+  "sigWerNormalizedPredicted": "pues creo que nos",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'nos' at position 3",
+      "reason": "'no' (no) is a negation, while 'nos' (us) is a pronoun; this changes the meaning of the sentence from a negation to a reference to a group, which significantly alters the intent.",
+      "score": 1
+    }
+  ]
 }

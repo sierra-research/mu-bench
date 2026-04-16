@@ -1,15 +1,26 @@
 {
   "gold": "Tôi sẵn sàng.",
-  "predicted": "Tôi sẵn sàng",
+  "predicted": "Ừ sao sao?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tôi sẵn sàng.",
-  "werNormalizedPredicted": "Tôi sẵn sàng.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "tôi sẵn sàng",
+  "werNormalizedPredicted": "sao sao",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Tôi sẵn sàng.",
-  "sigWerNormalizedPredicted": "Tôi sẵn sàng.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tôi sẵn sàng",
+  "sigWerNormalizedPredicted": "sao sao",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tôi' to 'sao' at position 0",
+      "reason": "'tôi' means 'I' and 'sao' means 'why' or 'star' in Vietnamese; this substitution completely changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 2",
+      "reason": "'sàng' is part of the phrase 'sẵn sàng' meaning 'ready'; omitting it further derails the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

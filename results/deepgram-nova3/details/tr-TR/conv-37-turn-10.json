@@ -1,31 +1,26 @@
 {
   "gold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "predicted": "Tabii, Atatürk Caddesi, NOG beş altı, Kazım Karabekir Mahallesi, Üsküdar İstanbul, posta kodum otuz dört altı yüz altmış Türkiye.",
+  "predicted": "Tabii. Atatürk Caddesi, NOG beş altı, Kazım Karabekir Mahallesi, Üsküdar Taksim İstanbul, posta kodum otuz dört altı yüz altmış Türkiye.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "werNormalizedPredicted": "Tabii. Atatürk Caddesi No 56, Kazım Karabekir Mahallesi, Üsküdar İstanbul. Posta kodum 34 660 Türkiye.",
-  "qualityScore": 2,
-  "significantWer": 0.1111111111111111,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
+  "werNormalizedPredicted": "tabii atatürk caddesi no five six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
   "majorErrorsCount": 2,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "sigWerNormalizedPredicted": "Tabii. Atatürk Caddesi No 56, Kazım Karabekir Mahallesi, Üsküdar İstanbul. Posta kodum 34 660 Türkiye.",
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
+  "sigWerNormalizedPredicted": "tabii atatürk caddesi no five six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
   "sigWerErrors": [
     {
-      "error": "Substitution: '45' to '56,' at position 4",
-      "reason": "The house number is changed from 45 to 56, which is a significant factual error as it refers to a specific address.",
+      "error": "Deletion: 'forty' at position 4",
+      "reason": "Omitting 'forty' from the address number changes the address from 'forty five' to 'five', which is a significant error as it alters the specific location.",
       "score": 1
     },
     {
-      "error": "Deletion: 'taksim' at position 5",
-      "reason": "The omission of 'taksim' (which means 'slash' or 'apartment' in Turkish addresses) changes the specific apartment or unit information, which is important for the address.",
+      "error": "Deletion: 'taksim' at position 6",
+      "reason": "Omitting 'taksim' from the address removes a key location identifier, which can lead to confusion or incorrect delivery/location. This is a significant error.",
       "score": 1
-    },
-    {
-      "error": "Deletion: 'taksim' at position 11",
-      "reason": "The omission of 'taksim' before 'İstanbul' removes a part of the address that could be important for correct delivery or identification.",
-      "score": 2
     }
   ]
 }

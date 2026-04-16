@@ -1,15 +1,21 @@
 {
   "gold": "听到了吗？",
-  "predicted": "听到了吗？",
+  "predicted": "听得懂了吗？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "听到了吗？",
-  "werNormalizedPredicted": "听到了吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "听 到 了 吗 ？",
-  "sigWerNormalizedPredicted": "听 到 了 吗 ？",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "听 到 了 吗",
+  "werNormalizedPredicted": "听 得 懂 了 吗",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 了 吗",
+  "sigWerNormalizedPredicted": "听 得 懂 了 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '到' to '懂' at position 1",
+      "reason": "'得' is inserted, which changes the phrase from 'hear' (听到) to 'understand' (听得懂), altering the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

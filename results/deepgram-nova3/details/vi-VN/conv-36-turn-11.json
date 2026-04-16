@@ -1,20 +1,30 @@
 {
   "gold": "Tôi có yêu cầu phát hành thẻ mới, cái thẻ thay thế ấy. Muốn kiểm tra tình trạng xử lý. Bạn cho tôi biết là thẻ đã được phát hành chưa? Đã được gửi đi chưa?",
-  "predicted": "Tôi có yêu cầu phát hành thẻ mới kể thẻ thay thế và muốn kiểm tra tình trạng xử lý. Bạn cho tôi biết là thẻ đã được phát hành chưa, đã được gửi đi chưa",
+  "predicted": "Tôi có yêu cầu phát hành thẻ mới kể thẻ thay thế và muốn kiểm tra cái tình trạng xử lý. Bạn cho tôi biết là thẻ đã được phát hành chưa, đã được gửi đi chưa.",
   "unintelligible": false,
-  "wer": 0.05555555555555555,
-  "werNormalizedGold": "Tôi có yêu cầu phát hành thẻ mới, cái thẻ thay thế ấy. Muốn kiểm tra tình trạng xử lý. Bạn cho tôi biết là thẻ đã được phát hành chưa? Đã được gửi đi chưa?",
-  "werNormalizedPredicted": "Tôi có yêu cầu phát hành thẻ mới, cái thẻ thay thế và muốn kiểm tra tình trạng xử lý. Bạn cho tôi biết là thẻ đã được phát hành chưa? Đã được gửi đi chưa?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "toi co yeu cau phat hanh the moi cai the thay the ay muon kiem tra tinh trang xu ly ban cho toi biet la the da duoc phat hanh chua da duoc gui di chua",
+  "werNormalizedPredicted": "toi co yeu cau phat hanh the moi ke the thay the va muon kiem tra cai tinh trang xu ly ban cho toi biet la the da duoc phat hanh chua da duoc gui di chua",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
+  "majorErrorsCount": 2,
   "totalWordsCount": 36,
-  "sigWerNormalizedGold": "Tôi có yêu cầu phát hành thẻ mới, cái thẻ thay thế ấy. Muốn kiểm tra tình trạng xử lý. Bạn cho tôi biết là thẻ đã được phát hành chưa? Đã được gửi đi chưa?",
-  "sigWerNormalizedPredicted": "Tôi có yêu cầu phát hành thẻ mới, cái thẻ thay thế và muốn kiểm tra tình trạng xử lý. Bạn cho tôi biết là thẻ đã được phát hành chưa? Đã được gửi đi chưa?",
+  "sigWerNormalizedGold": "toi co yeu cau phat hanh the moi cai the thay the ay muon kiem tra tinh trang xu ly ban cho toi biet la the da duoc phat hanh chua da duoc gui di chua",
+  "sigWerNormalizedPredicted": "toi co yeu cau phat hanh the moi ke the thay the va muon kiem tra cai tinh trang xu ly ban cho toi biet la the da duoc phat hanh chua da duoc gui di chua",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ấy.' to 'và' at position 12",
-      "reason": "The word 'ấy.' (which refers to 'that' or 'the aforementioned') is replaced by 'và' ('and'), which changes the sentence structure but does not significantly alter the overall meaning. The intent of checking the status of the card remains clear.",
+      "error": "Substitution: 'cai' to 'ke' at position 8",
+      "reason": "'cai the thay the' (the replacement card) vs 'ke the thay the' (the replacement card holder) changes the meaning, as 'ke' means 'holder' or 'person', which is a significant difference in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ay' to 'va' at position 12",
+      "reason": "'ay' (that) is replaced by 'va' (and), which changes the sentence structure and meaning, making it less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'cai' at position 16",
+      "reason": "The extra 'cai' (classifier) before 'tinh trang' is a minor grammatical error and does not significantly change the meaning of the sentence.",
       "score": 2
     }
   ]

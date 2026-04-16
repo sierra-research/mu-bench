@@ -1,15 +1,26 @@
 {
   "gold": "Have a great day.",
-  "predicted": "Have a great day",
+  "predicted": "That's great, Jay",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Have a great day.",
-  "werNormalizedPredicted": "Have a great day.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.75,
+  "werNormalizedGold": "have a great day",
+  "werNormalizedPredicted": "that is great jay",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Have a great day.",
-  "sigWerNormalizedPredicted": "Have a great day.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "have a great day",
+  "sigWerNormalizedPredicted": "that is great jay",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'have' to 'that' at position 0",
+      "reason": "'That' changes the subject and meaning of the sentence, making it incoherent with the intended message.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'day' to 'jay' at position 3",
+      "reason": "'Jay' is a proper noun and not semantically equivalent to 'day', which changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

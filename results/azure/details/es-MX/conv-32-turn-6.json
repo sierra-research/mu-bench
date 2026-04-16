@@ -2,14 +2,25 @@
   "gold": "Sí, es el 55 2.",
   "predicted": "Sí, es el 552.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí, es el 55 2.",
-  "werNormalizedPredicted": "Sí, es el 55 2.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Sí, es el 55 2.",
-  "sigWerNormalizedPredicted": "Sí, es el 55 2.",
-  "sigWerErrors": []
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "si es el cincuenta y cinco dos",
+  "werNormalizedPredicted": "si es el quinientos cincuenta y dos",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "si es el cincuenta y cinco dos",
+  "sigWerNormalizedPredicted": "si es el quinientos cincuenta y dos",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'quinientos' at position 3",
+      "reason": "'quinientos' (five hundred) changes the number being referenced from 'cincuenta y cinco' (fifty-five) to 'quinientos cincuenta y dos' (five hundred fifty-two), which significantly alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cinco' at position 5",
+      "reason": "Omitting 'cinco' (five) changes the number from 'cincuenta y cinco' (fifty-five) to 'cincuenta y dos' (fifty-two), which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
 }

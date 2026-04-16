@@ -1,31 +1,31 @@
 {
   "gold": "Cộng 84 9 1 1 2 3 4 5 6 7 8. Sao đọc hoài mà không nghe vậy?",
-  "predicted": "+ 84 9112345678 sẽ đọc quà là không nghe vậy.",
+  "predicted": "+ 84 9112345678 xin đọc quà không nghe vậy.",
   "unintelligible": false,
-  "wer": 0.21052631578947367,
-  "werNormalizedGold": "Cộng 84 9 1 1 2 3 4 5 6 7 8. Sao đọc hoài mà không nghe vậy?",
-  "werNormalizedPredicted": "+84 9 1 1 2 3 4 5 6 7 8 sẽ đọc hoài mà không nghe vậy?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Cộng 84 9 1 1 2 3 4 5 6 7 8. Sao đọc hoài mà không nghe vậy?",
-  "sigWerNormalizedPredicted": "+84 9 1 1 2 3 4 5 6 7 8 sẽ đọc hoài mà không nghe vậy?",
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám sao đọc hoài mà không nghe vậy",
+  "werNormalizedPredicted": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám xin đọc quà không nghe vậy",
+  "qualityScore": null,
+  "significantWer": 0.09523809523809523,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám sao đọc hoài mà không nghe vậy",
+  "sigWerNormalizedPredicted": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám xin đọc quà không nghe vậy",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Cộng' to '+84' at position 0",
-      "reason": "'Cộng' is the Vietnamese word for 'plus', and '+84' is the country code with the plus sign. The substitution conveys the same meaning in the context of a phone number.",
-      "score": 3
+      "error": "Substitution: 'sao' to 'xin' at position 14",
+      "reason": "'sao' means 'why' and 'xin' means 'please'; this changes the intent of the sentence from asking a reason to making a request, which significantly alters the meaning.",
+      "score": 1
     },
     {
-      "error": "Deletion: '84' at position 1",
-      "reason": "The '84' is not actually deleted; it is included as part of '+84' in the actual transcription. No information is lost.",
-      "score": 3
+      "error": "Substitution: 'hoài' to 'quà' at position 16",
+      "reason": "'hoài' means 'forever/constantly' and 'quà' means 'gift'; this substitution makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
     },
     {
-      "error": "Substitution: '8.' to '8' at position 11",
-      "reason": "The period is punctuation and does not affect the meaning or content of the number.",
-      "score": 3
+      "error": "Deletion: 'mà' at position 17",
+      "reason": "'mà' is a conjunction that connects clauses and its omission makes the sentence less natural but does not significantly change the overall meaning.",
+      "score": 2
     }
   ]
 }

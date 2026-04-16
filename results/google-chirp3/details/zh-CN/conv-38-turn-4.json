@@ -1,25 +1,25 @@
 {
   "gold": "C N 4 1 3。",
-  "predicted": "先找医生。",
+  "predicted": "先输医生。",
   "unintelligible": false,
-  "wer": 0.8333333333333334,
-  "werNormalizedGold": "C N 4 1 3。",
-  "werNormalizedPredicted": "先找医生。",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
+  "wer": 1.0,
+  "werNormalizedGold": "c n four one three",
+  "werNormalizedPredicted": "先 输 医 生",
+  "qualityScore": null,
+  "significantWer": 0.4,
   "majorErrorsCount": 2,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "C N 4 1 3 。",
-  "sigWerNormalizedPredicted": "先 找 医 生 。",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n four one three",
+  "sigWerNormalizedPredicted": "先 输 医 生",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'C' to '先' at position 0",
-      "reason": "The actual transcription is in a completely different language (Chinese) compared to the expected spelled-out sequence of letters and numbers. This is a significant error as the meaning is entirely lost.",
+      "error": "Substitution: 'c' to '先' at position 0",
+      "reason": "The actual transcription is in a completely different language (Chinese) instead of the expected English letter, making the transcription incoherent and unusable for the intended meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: '3' at position 4",
-      "reason": "The actual transcription is in a different language and does not correspond to the expected number. This is a significant error as the meaning is completely changed.",
+      "error": "Deletion: 'three' at position 4",
+      "reason": "The expected word 'three' is missing in the actual transcription, further reducing the accuracy and completeness of the transcription.",
       "score": 1
     }
   ]

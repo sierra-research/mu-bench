@@ -1,40 +1,45 @@
 {
   "gold": "Ừ. Không. Vậy để 1 2 ngày làm việc, mình có cái sao kê gần nhất, thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
-  "predicted": "Ừ không, vậy đợi một hai ngày làm việc mình có sao kê phần nhất thì phần gì hỗ trợ mình sẽ gõ lên cho các bạn.",
+  "predicted": "Ờ không. Vậy đợi đợi một hai ngày làm việc mình có cái shopee phần nhất thì phần gì hỗ trợ mình cái cọ lên cho các bạn.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Ừ. Không. Vậy để 1 2 ngày làm việc, mình có cái sao kê gần nhất, thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
-  "werNormalizedPredicted": "Ừ. Không. Vậy đợi một hai ngày làm việc, mình có sao kê phần nhất, thì phần gì hỗ trợ mình sẽ gõ lên cho các bạn.",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 4,
+  "wer": 0.32142857142857145,
+  "werNormalizedGold": "ừ không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "werNormalizedPredicted": "ờ không vậy đợi đợi một hai ngày làm việc mình có cái shopee phần nhất thì phần gì hỗ trợ mình cái cọ lên cho các bạn",
+  "qualityScore": null,
+  "significantWer": 0.07142857142857142,
+  "majorErrorsCount": 2,
   "totalWordsCount": 28,
-  "sigWerNormalizedGold": "Ừ. Không. Vậy để 1 2 ngày làm việc, mình có cái sao kê gần nhất, thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
-  "sigWerNormalizedPredicted": "Ừ. Không. Vậy đợi một hai ngày làm việc, mình có sao kê phần nhất, thì phần gì hỗ trợ mình sẽ gõ lên cho các bạn.",
+  "sigWerNormalizedGold": "ừ không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "sigWerNormalizedPredicted": "ờ không vậy đợi đợi một hai ngày làm việc mình có cái shopee phần nhất thì phần gì hỗ trợ mình cái cọ lên cho các bạn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'để' to 'đợi' at position 3",
-      "reason": "'để' (let/so that) and 'đợi' (wait) have different meanings; this changes the intent of the sentence.",
-      "score": 1
+      "error": "Substitution: 'ừ' to 'ờ' at position 0",
+      "reason": "'ừ' and 'ờ' are both Vietnamese discourse markers with similar pragmatic function; the meaning is not significantly changed.",
+      "score": 3
     },
     {
-      "error": "Deletion: 'cái' at position 11",
-      "reason": "Omitting 'cái' (classifier) is a minor grammatical error in Vietnamese and does not change the meaning.",
+      "error": "Substitution: 'để' to 'đợi' at position 3",
+      "reason": "The extra 'đợi' (wait) is a repetition and does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gần' to 'phần' at position 14",
-      "reason": "'gần nhất' (most recent) vs. 'phần nhất' (nonsensical in this context); this makes the sentence unclear.",
+      "error": "Substitution: 'sao' to 'shopee' at position 12",
+      "reason": "'để' (to/for) and 'đợi' (wait) are different in meaning, but in this context, the sentence still makes sense and the intent is understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'gần' at position 14",
+      "reason": "'sao kê' (bank statement) is replaced by 'shopee' (an unrelated word, a shopping platform), which significantly changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'cần' to 'phần' at position 17",
-      "reason": "'cần gì hỗ trợ' (need any support) vs. 'phần gì hỗ trợ' (nonsensical); this changes the meaning and makes it incoherent.",
-      "score": 1
+      "reason": "Omitting 'gần' (nearest/recent) slightly reduces specificity but does not derail the meaning.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'gọi' to 'gõ' at position 23",
-      "reason": "'gọi lên' (call up) vs. 'gõ lên' (type up); this changes the action being described.",
+      "error": "Substitution: 'sẽ' to 'cái' at position 22",
+      "reason": "'cần' (need) is replaced by 'phần' (part/section), which changes the meaning of the request and can confuse the intent.",
       "score": 1
     }
   ]

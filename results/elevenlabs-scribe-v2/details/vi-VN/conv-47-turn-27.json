@@ -1,20 +1,25 @@
 {
   "gold": "Ghi là cửa hàng giày dép.",
-  "predicted": "Ờ vui lắm cô hẹn ngày gì em?",
+  "predicted": "Ờ thì là có hẹn dài gì ạ?",
   "unintelligible": false,
-  "wer": 1.3333333333333333,
-  "werNormalizedGold": "Ghi là cửa hàng giày dép.",
-  "werNormalizedPredicted": "Ờ vui lắm cô hẹn ngày gì em?",
-  "qualityScore": 1,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "ghi la cua hang giay dep",
+  "werNormalizedPredicted": "thi la co hen dai gi a",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Ghi là cửa hàng giày dép.",
-  "sigWerNormalizedPredicted": "Ờ vui lắm cô hẹn ngày gì em?",
+  "sigWerNormalizedGold": "ghi la cua hang giay dep",
+  "sigWerNormalizedPredicted": "thi la co hen dai gi a",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Ghi' to 'lắm' at position 0",
-      "reason": "The actual transcription is completely different from the expected sentence, with no overlapping meaning. The meaning of the sentence is entirely lost and incoherent compared to the reference.",
+      "error": "Substitution: 'ghi' to 'thi' at position 0",
+      "reason": "The substitution changes the meaning of the sentence entirely; 'ghi' (to record/write) and 'thi' (exam/test) are unrelated, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cua' to 'hen' at position 2",
+      "reason": "'co' (have) is inserted and does not fit the expected sentence structure, further derailing the meaning.",
       "score": 1
     }
   ]

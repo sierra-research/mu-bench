@@ -1,25 +1,35 @@
 {
   "gold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "predicted": "Thế làm thế nào để to có được cái bản sao sao kê hoặc là hóa đất mới nhất của thế tín dụng vậy?",
+  "predicted": "Thế làm thế nào để tôi có được cái bàn selfah kê hoặc là hóa đất mới ít của thế tín dụng vậy?",
   "unintelligible": false,
-  "wer": 0.08695652173913043,
-  "werNormalizedGold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "werNormalizedPredicted": "Thế làm thế nào để to có được bản sao sao kê hoặc là hóa đất mới nhất của thẻ tín dụng vậy?",
-  "qualityScore": 2,
-  "significantWer": 0.043478260869565216,
-  "majorErrorsCount": 1,
+  "wer": 0.2608695652173913,
+  "werNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
+  "werNormalizedPredicted": "thế làm thế nào để tôi có được cái bàn selfah kê hoặc là hóa đất mới ít của thế tín dụng vậy",
+  "qualityScore": null,
+  "significantWer": 0.13043478260869565,
+  "majorErrorsCount": 3,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "sigWerNormalizedPredicted": "Thế làm thế nào để to có được bản sao sao kê hoặc là hóa đất mới nhất của thẻ tín dụng vậy?",
+  "sigWerNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
+  "sigWerNormalizedPredicted": "thế làm thế nào để tôi có được cái bàn selfah kê hoặc là hóa đất mới ít của thế tín dụng vậy",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tôi' to 'to' at position 5",
-      "reason": "'to' is a misspelling of 'tôi', but the meaning is still clear in context and does not change the sentence's meaning.",
-      "score": 2
+      "error": "Substitution: 'bản' to 'cái' at position 8",
+      "reason": "'bản' (copy/document) and 'cái' (thing/object) are different words; this changes the meaning of the request and makes it unclear what is being asked for.",
+      "score": 1
     },
     {
       "error": "Substitution: 'đơn' to 'đất' at position 15",
-      "reason": "'đơn' (bill) and 'đất' (land) are completely different words; this substitution changes the meaning of the sentence significantly.",
+      "reason": "'đơn' (bill/document) and 'đất' (land/soil) are unrelated; this substitution makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhất' to 'ít' at position 17",
+      "reason": "'nhất' (most/newest) and 'ít' (few/little) have different meanings, but the overall intent of requesting a document is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'thế' at position 19",
+      "reason": "'thẻ' (card) and 'thế' (so/that) are different; this changes the meaning and makes the sentence confusing.",
       "score": 1
     }
   ]

@@ -1,15 +1,26 @@
 {
   "gold": "Merhaba, kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz?",
-  "predicted": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
+  "predicted": "Merhaba, kredi kartımın limitini artırmak istedim da yardımcı olabilir misiniz?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Merhaba, kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz?",
-  "werNormalizedPredicted": "Merhaba, kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz?",
-  "qualityScore": 3,
+  "wer": 0.2,
+  "werNormalizedGold": "merhaba kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz",
+  "werNormalizedPredicted": "merhaba kredi kartımın limitini artırmak istedim da yardımcı olabilir misiniz",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Merhaba, kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz?",
-  "sigWerNormalizedPredicted": "Merhaba, kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "merhaba kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "merhaba kredi kartımın limitini artırmak istedim da yardımcı olabilir misiniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'limitimi' to 'limitini' at position 3",
+      "reason": "'Limitimi' (my limit) vs 'limitini' (its limit) changes the possessive meaning, which could affect the intent of the request, but the overall meaning is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'istiyorum' to 'istedim' at position 5",
+      "reason": "Present tense ('istiyorum' - I want) vs past tense ('istedim' - I wanted) is a minor grammatical difference that does not change the overall intent of the sentence.",
+      "score": 3
+    }
+  ]
 }

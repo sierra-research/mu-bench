@@ -1,15 +1,21 @@
 {
   "gold": "那你还没听，听得到我的名字。",
-  "predicted": "那你还没听听得到我的名字。",
+  "predicted": "但你还没听听得到我的名字。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "那你还没听，听得到我的名字。",
-  "werNormalizedPredicted": "那你还没听，听得到我的名字。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "那 你 还 没 听 ， 听 得 到 我 的 名 字 。",
-  "sigWerNormalizedPredicted": "那 你 还 没 听 ， 听 得 到 我 的 名 字 。",
-  "sigWerErrors": []
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "那你还没听听得到我的名字",
+  "werNormalizedPredicted": "但你还没听听得到我的名字",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "那 你 还 没 听 听 得 到 我 的 名 字",
+  "sigWerNormalizedPredicted": "但 你 还 没 听 听 得 到 我 的 名 字",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to '但' at position 0",
+      "reason": "'那' (that) and '但' (but) are different words with different meanings. This substitution changes the meaning of the sentence from a statement ('that you...') to a contrast or exception ('but you...'), which can affect the overall intent of the sentence.",
+      "score": 1
+    }
+  ]
 }

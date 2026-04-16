@@ -1,40 +1,30 @@
 {
   "gold": "Bạn có thể chuyển đến nhân viên chăm sóc khách hàng.",
-  "predicted": "Lại có thể từ nynor viên tower ha.",
+  "predicted": "Bạn có thể try đến với việc thua wechat.",
   "unintelligible": false,
-  "wer": 0.7272727272727273,
-  "werNormalizedGold": "Bạn có thể chuyển đến nhân viên chăm sóc khách hàng.",
-  "werNormalizedPredicted": "Lại có thể từ nynor viên tower ha.",
-  "qualityScore": 1,
-  "significantWer": 0.45454545454545453,
-  "majorErrorsCount": 5,
+  "wer": 0.6363636363636364,
+  "werNormalizedGold": "bạn có thể chuyển đến nhân viên chăm sóc khách hàng",
+  "werNormalizedPredicted": "bạn có thể try đến với việc thua wechat",
+  "qualityScore": null,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Bạn có thể chuyển đến nhân viên chăm sóc khách hàng.",
-  "sigWerNormalizedPredicted": "Lại có thể từ nynor viên tower ha.",
+  "sigWerNormalizedGold": "bạn có thể chuyển đến nhân viên chăm sóc khách hàng",
+  "sigWerNormalizedPredicted": "bạn có thể try đến với việc thua wechat",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Bạn' to 'Lại' at position 0",
-      "reason": "'Bạn' means 'you' and 'Lại' means 'again' or 'return'; this changes the subject and intent of the sentence, making it incoherent.",
+      "error": "Substitution: 'chuyển' to 'try' at position 3",
+      "reason": "'chuyển' means 'transfer' or 'move', while 'try' is an English word meaning 'attempt'. This substitution changes the meaning of the action in the sentence and introduces a different language, making the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'chuyển' to 'từ' at position 3",
-      "reason": "'chuyển' means 'transfer' or 'move', while 'từ' means 'from'; this changes the action and meaning of the sentence significantly.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'nhân' at position 5",
-      "reason": "Omitting 'nhân' (part of 'nhân viên' meaning 'staff' or 'employee') removes a key part of the phrase, making the sentence unclear.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'chăm' to 'tower' at position 7",
-      "reason": "'chăm' (part of 'chăm sóc' meaning 'care') is replaced with 'tower', an unrelated English word, making the sentence incoherent.",
+      "error": "Substitution: 'nhân' to 'với' at position 5",
+      "reason": "'nhân' is part of 'nhân viên' (staff/employee), while 'với' means 'with'. This substitution disrupts the intended meaning of referring to a staff member.",
       "score": 1
     },
     {
       "error": "Deletion: 'khách' at position 9",
-      "reason": "Omitting 'khách' (part of 'khách hàng' meaning 'customer') removes essential meaning, making the sentence incomplete.",
+      "reason": "'khách' is part of 'khách hàng' (customer). Omitting this word removes the reference to 'customer', significantly altering the meaning.",
       "score": 1
     }
   ]

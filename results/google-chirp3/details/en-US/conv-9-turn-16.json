@@ -1,20 +1,25 @@
 {
   "gold": "Would a human agent know?",
-  "predicted": "What a human agent know?",
+  "predicted": "What a human agent now?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Would a human agent know?",
-  "werNormalizedPredicted": "What a human agent know?",
-  "qualityScore": 2,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 0.4,
+  "werNormalizedGold": "would a human agent know",
+  "werNormalizedPredicted": "what a human agent now",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Would a human agent know?",
-  "sigWerNormalizedPredicted": "What a human agent know?",
+  "sigWerNormalizedGold": "would a human agent know",
+  "sigWerNormalizedPredicted": "what a human agent now",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Would' to 'What' at position 0",
-      "reason": "Changing 'Would' to 'What' alters the sentence from a conditional question to a direct question, significantly changing the meaning of the sentence.",
+      "error": "Substitution: 'would' to 'what' at position 0",
+      "reason": "'Would' (modal verb indicating possibility or conditional) and 'what' (interrogative pronoun) have completely different meanings and change the intent of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'know' to 'now' at position 4",
+      "reason": "'Know' (verb meaning to be aware) and 'now' (adverb of time) are unrelated in meaning and this substitution makes the sentence incoherent.",
       "score": 1
     }
   ]

@@ -2,14 +2,25 @@
   "gold": "Yup, from the PlayStore.",
   "predicted": "Yep, from the the Play Store.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yup, from the PlayStore.",
-  "werNormalizedPredicted": "Yup, from the PlayStore.",
-  "qualityScore": 3,
+  "wer": 1.0,
+  "werNormalizedGold": "yup from the playstore",
+  "werNormalizedPredicted": "yep from the the play store",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Yup, from the PlayStore.",
-  "sigWerNormalizedPredicted": "Yup, from the PlayStore.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yup from the playstore",
+  "sigWerNormalizedPredicted": "yep from the the play store",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yup' to 'yep' at position 0",
+      "reason": "'Yup' and 'yep' are informal affirmations with the same meaning, only a minor difference in pronunciation/spelling.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'playstore' to 'store' at position 3",
+      "reason": "Extra 'the' does not change the meaning of the sentence, just a minor redundancy.",
+      "score": 2
+    }
+  ]
 }

@@ -3,24 +3,24 @@
   "predicted": "Siz de kredi ben anlamadım, not alamadım.",
   "unintelligible": false,
   "wer": 0.42857142857142855,
-  "werNormalizedGold": "Siz tekrar edin, ben alamadım, not alamadım.",
-  "werNormalizedPredicted": "Siz de kredi, ben anlamadım, not alamadım.",
-  "qualityScore": 2,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "werNormalizedPredicted": "siz de kredi ben anlamadım not alamadım",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Siz tekrar edin, ben alamadım, not alamadım.",
-  "sigWerNormalizedPredicted": "Siz de kredi, ben anlamadım, not alamadım.",
+  "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "sigWerNormalizedPredicted": "siz de kredi ben anlamadım not alamadım",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tekrar' to 'de' at position 1",
-      "reason": "'tekrar' means 'again' or 'repeat', while 'de' means 'also' or 'too'. This changes the instruction from asking to repeat to just adding 'also', which significantly alters the meaning of the sentence.",
+      "reason": "'tekrar edin' means 'repeat', while 'de kredi' means 'also credit', which changes the meaning of the sentence significantly and makes it incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'alamadım,' to 'anlamadım,' at position 4",
-      "reason": "'alamadım' means 'I couldn't get (it)' or 'I couldn't take (it)', while 'anlamadım' means 'I didn't understand'. This changes the meaning of the sentence from not being able to receive something to not understanding, which is a significant change in meaning.",
-      "score": 1
+      "error": "Substitution: 'alamadım' to 'anlamadım' at position 4",
+      "reason": "'alamadım' means 'I couldn't get', while 'anlamadım' means 'I didn't understand'; this changes the meaning of the sentence but does not derail the overall context, as both indicate a problem with comprehension or receipt.",
+      "score": 2
     }
   ]
 }

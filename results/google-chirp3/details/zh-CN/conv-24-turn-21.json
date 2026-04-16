@@ -1,21 +1,31 @@
 {
   "gold": "没通过吗，怎么那么慢？",
-  "predicted": "还翻错吗?怎么那么慢?",
+  "predicted": "还没播吗?怎么那么慢?",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werNormalizedGold": "没通过吗，怎么那么慢？",
-  "werNormalizedPredicted": "还翻错吗，怎么那么慢？",
-  "qualityScore": 2,
-  "significantWer": 0.09090909090909091,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "没通过吗 怎么那么慢",
+  "werNormalizedPredicted": "还没播吗 怎么那么慢",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
   "majorErrorsCount": 1,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "没 通 过 吗 ， 怎 么 那 么 慢 ？",
-  "sigWerNormalizedPredicted": "还 翻 错 吗 ， 怎 么 那 么 慢 ？",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "没 通 过 吗 怎 么 那 么 慢",
+  "sigWerNormalizedPredicted": "还 没 播 吗 怎 么 那 么 慢",
   "sigWerErrors": [
     {
-      "error": "Substitution: '没' to '还' at position 0",
-      "reason": "'没通过吗' means 'Did (it) not pass?', while '还翻错吗' means 'Still translating wrong?'. The substitution changes the meaning of the question entirely, making the sentence about a different topic.",
+      "error": "Insertion: '还' at position 0",
+      "reason": "The addition of '还' (still) adds a temporal aspect but does not significantly change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '通' to '播' at position 1",
+      "reason": "Substituting '通' (pass) with '播' (broadcast) changes the meaning of the sentence, making it about broadcasting instead of passing, which significantly alters the intent.",
       "score": 1
+    },
+    {
+      "error": "Deletion: '过' at position 2",
+      "reason": "Omitting '过' (indicating completion) slightly affects the aspect of the verb but does not drastically change the meaning in this context.",
+      "score": 2
     }
   ]
 }

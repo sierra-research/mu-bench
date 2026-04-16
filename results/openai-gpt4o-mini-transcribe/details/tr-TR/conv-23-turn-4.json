@@ -1,0 +1,41 @@
+{
+  "gold": "Ben Bol Bol Ye firması ile çalışıyorum. Adresim olan Atatürk Caddesi No 45'e 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34 660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerine bayağı bir zaman geçti. Ama yani maalesef henüz gelmedi evraklarım.",
+  "predicted": "Ben Bolbol diye firmasıyla çalışıyorum. Adresim olan Atatürk Caddesi No 45 şey 6 Kazım Karabekir Mahallesi Üsküdar İstanbul 34 660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım.",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werNormalizedGold": "ben bol bol ye firmasi ile calisiyorum adresim olan ataturk caddesi no kirk bes e alti kazim karabekir mahallesi uskudar istanbul otuz dort alti yuz altmis posta kodlu adresime gerekli sozlesme evraklarinin teslimini rica edecektim cunku basvurumun uzerine bayagi bir zaman gecti ama yani maalesef henuz gelmedi evraklarim",
+  "werNormalizedPredicted": "ben bolbol diye firmasi ile calisiyorum adresim olan ataturk caddesi no kirk bes sey alti kazim karabekir mahallesi uskudar istanbul otuz dort alti yuz altmis posta kodlu adresime gerekli sozlesme evraklarinin teslimini rica edecektim cunku basvurumun uzerinden bayagi bir zaman gecti ama yani maalesef ki henuz gelmedi evraklarim",
+  "qualityScore": null,
+  "significantWer": 0.020833333333333332,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 48,
+  "sigWerNormalizedGold": "ben bol bol ye firmasi ile calisiyorum adresim olan ataturk caddesi no kirk bes e alti kazim karabekir mahallesi uskudar istanbul otuz dort alti yuz altmis posta kodlu adresime gerekli sozlesme evraklarinin teslimini rica edecektim cunku basvurumun uzerine bayagi bir zaman gecti ama yani maalesef henuz gelmedi evraklarim",
+  "sigWerNormalizedPredicted": "ben bolbol diye firmasi ile calisiyorum adresim olan ataturk caddesi no kirk bes sey alti kazim karabekir mahallesi uskudar istanbul otuz dort alti yuz altmis posta kodlu adresime gerekli sozlesme evraklarinin teslimini rica edecektim cunku basvurumun uzerinden bayagi bir zaman gecti ama yani maalesef ki henuz gelmedi evraklarim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bol' to 'bolbol' at position 1",
+      "reason": "'bolbol' is a repetition or possible company name, while 'bol' is a single word; this changes the entity being referred to, but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ye' at position 3",
+      "reason": "Omitting 'ye' (which means 'to' in Turkish) slightly affects the grammatical structure but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'e' to 'sey' at position 14",
+      "reason": "'e' is a grammatical suffix meaning 'to', while 'sey' means 'thing'; this substitution introduces confusion and could derail the meaning of the address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'uzerine' to 'uzerinden' at position 37",
+      "reason": "The words are related ('on' vs. 'from on'), but the change does not significantly alter the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'ki' at position 45",
+      "reason": "Adding 'ki' (which can mean 'that' or be an intensifier) does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

@@ -1,31 +1,41 @@
 {
   "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
-  "predicted": "Minh không đúng, minh. Trần a. Cònggmail.com.",
+  "predicted": "Minh không không đúng minh. Trần a. Cònggmail.com.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "Không đúng. Minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Minh không đúng. Minh chấm Trần a còng gmail chấm com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "khong dung minh cham tran a cong email cham com",
+  "werNormalizedPredicted": "minh khong khong dung minh tran a cong gmail com",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Không đúng. Minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Minh không đúng. Minh chấm Trần a còng gmail chấm com.",
+  "sigWerNormalizedGold": "khong dung minh cham tran a cong email cham com",
+  "sigWerNormalizedPredicted": "minh khong khong dung minh tran a cong gmail com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Không' to 'không' at position 0",
-      "reason": "The insertion of 'Minh' at the beginning does not change the overall meaning, as it is just a repetition of the name already present in the sentence.",
+      "error": "Insertion: 'minh' at position 0",
+      "reason": "The extra 'minh' at the beginning does not change the overall meaning, as it is a repetition of a name and does not derail the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'trần' to 'Trần' at position 4",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
-      "score": 3
+      "error": "Insertion: 'khong' at position 1",
+      "reason": "The extra 'khong' (meaning 'not') could cause confusion, but in this context, it is likely a repetition and does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'cham' at position 3",
+      "reason": "'cham' is used to indicate a dot in an email address. Missing it could make the email address unclear or incorrect.",
+      "score": 1
     },
     {
       "error": "Substitution: 'email' to 'gmail' at position 7",
-      "reason": "Difference is only in capitalization of a proper noun, which does not affect meaning.",
-      "score": 3
+      "reason": "Changing 'email' to 'gmail' changes the domain of the email address, which is a significant error as it alters the actual address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cham' at position 8",
+      "reason": "Omitting the final 'cham' (dot) in the email address makes the address incomplete or incorrect.",
+      "score": 1
     }
   ]
 }

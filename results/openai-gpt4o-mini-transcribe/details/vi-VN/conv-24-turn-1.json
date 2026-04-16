@@ -1,0 +1,36 @@
+{
+  "gold": "Chào Anna nha. Mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
+  "predicted": "ờ Chả là nay mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
+  "unintelligible": false,
+  "wer": 0.28125,
+  "werNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "werNormalizedPredicted": "chả là nay mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "qualityScore": null,
+  "significantWer": 0.09375,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 32,
+  "sigWerNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "sigWerNormalizedPredicted": "chả là nay mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chào' to 'chả' at position 0",
+      "reason": "'Chào' is a greeting ('hello'), while 'chả' is a different word ('not' or 'no'), which changes the tone and meaning of the opening. This significantly alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'tiết' at position 9",
+      "reason": "'Tiết' inserted after 'chi' creates 'chi tiết' ('detail'), which changes the meaning from 'tối ưu chi tiêu' (optimize spending) to 'tối ưu chi tiết tối ưu chi tiêu' (optimize detail optimize spending). This is a minor redundancy but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'hạn' to 'hạng' at position 14",
+      "reason": "'Hạn mức' means 'limit' (credit limit), while 'hạng mức' is not a standard phrase and could confuse the meaning. This could cause misunderstanding about the financial term, so it's a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'về' at position 16",
+      "reason": "'Thẻ tín dụng' means 'credit card', but 'về tín dụng' ('about credit') changes the object of the sentence and makes it less clear. This alters the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

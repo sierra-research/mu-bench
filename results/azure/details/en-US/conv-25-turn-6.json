@@ -1,21 +1,26 @@
 {
   "gold": "It's John Brown.",
-  "predicted": "Ask John Brown.",
+  "predicted": "S. John Brown.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "It's John Brown.",
-  "werNormalizedPredicted": "Ask John Brown.",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "It's John Brown.",
-  "sigWerNormalizedPredicted": "Ask John Brown.",
+  "wer": 0.5,
+  "werNormalizedGold": "it is john brown",
+  "werNormalizedPredicted": "s john brown",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "it is john brown",
+  "sigWerNormalizedPredicted": "s john brown",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'It's' to 'Ask' at position 0",
-      "reason": "'It's' is a statement of identity or introduction, while 'Ask' is an imperative verb, completely changing the meaning of the sentence.",
-      "score": 1
+      "error": "Substitution: 'it' to 's' at position 0",
+      "reason": "Replacing 'it' with 's' (likely a mishearing of 'it's') changes the grammatical structure but does not significantly alter the meaning in this context; the sentence is still understandable as an introduction of a person.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'is' at position 1",
+      "reason": "Omitting 'is' slightly affects the grammatical correctness but does not change the overall meaning of the sentence; the identity of 'john brown' is still clear.",
+      "score": 2
     }
   ]
 }

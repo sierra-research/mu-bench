@@ -1,15 +1,21 @@
 {
   "gold": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. 36660 Türkiye.",
-  "predicted": "Atatürk Caddesi no 45 / 6 Kazım Karabekir mahallesi Üsküdar, istanbul 34.660, Türkiye.",
+  "predicted": "Atatürk Caddesi no 45 6 Kazım Karabekir mahallesi Üsküdar, istanbul 36.660, Türkiye.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. 36660 Türkiye.",
-  "werNormalizedPredicted": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. 36660 Türkiye.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. 36660 Türkiye.",
-  "sigWerNormalizedPredicted": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. 36660 Türkiye.",
-  "sigWerErrors": []
+  "wer": 0.05263157894736842,
+  "werNormalizedGold": "atatürk caddesi numara forty five bölü six kazım karabekir mahallesi üsküdar istanbul thirty six thousand six hundred sixty türkiye",
+  "werNormalizedPredicted": "atatürk caddesi numara forty five six kazım karabekir mahallesi üsküdar istanbul thirty six thousand six hundred sixty türkiye",
+  "qualityScore": null,
+  "significantWer": 0.05263157894736842,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "atatürk caddesi numara forty five bölü six kazım karabekir mahallesi üsküdar istanbul thirty six thousand six hundred sixty türkiye",
+  "sigWerNormalizedPredicted": "atatürk caddesi numara forty five six kazım karabekir mahallesi üsküdar istanbul thirty six thousand six hundred sixty türkiye",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'bölü' at position 5",
+      "reason": "'bölü' (meaning 'slash' or 'divided by') is used in Turkish addresses to indicate an apartment or unit number (e.g., 'forty five bölü six' means '45/6'). Omitting 'bölü' changes the meaning of the address, as 'forty five six' is not a standard way to express '45/6'. This could lead to confusion or incorrect addressing.",
+      "score": 1
+    }
+  ]
 }

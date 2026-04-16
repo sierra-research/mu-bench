@@ -1,26 +1,31 @@
 {
   "gold": "Vui lòng đọc lại cho tôi nghe số điện thoại.",
-  "predicted": "Ờ vui lòng lặp lại cho tô nghệ sĩ điện thoại.",
+  "predicted": "Ờ vừa lập lại cho tôi nghe sư điện thoại.",
   "unintelligible": false,
-  "wer": 0.3,
-  "werNormalizedGold": "Vui lòng đọc lại cho tôi nghe số điện thoại.",
-  "werNormalizedPredicted": "Ờ, vui lòng lặp lại cho tôi nghe số điện thoại.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.4,
+  "werNormalizedGold": "vui lòng đọc lại cho tôi nghe số điện thoại",
+  "werNormalizedPredicted": "vừa lập lại cho tôi nghe sư điện thoại",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Vui lòng đọc lại cho tôi nghe số điện thoại.",
-  "sigWerNormalizedPredicted": "Ờ, vui lòng lặp lại cho tôi nghe số điện thoại.",
+  "sigWerNormalizedGold": "vui lòng đọc lại cho tôi nghe số điện thoại",
+  "sigWerNormalizedPredicted": "vừa lập lại cho tôi nghe sư điện thoại",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Vui' to 'vui' at position 0",
-      "reason": "'Ờ,' is a filler word in Vietnamese, similar to 'um' or 'uh' in English. It does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: 'vui' to 'vừa' at position 0",
+      "reason": "'vui lòng' means 'please', while 'vừa' means 'just' or 'recently'; this changes the politeness and intent of the request.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'đọc' to 'lặp' at position 2",
-      "reason": "'Đọc lại' means 'read again', while 'lặp lại' means 'repeat'. In this context, both phrases are used to ask someone to say something again, so the meaning is preserved.",
-      "score": 3
+      "error": "Deletion: 'đọc' at position 2",
+      "reason": "'đọc lại' means 'read again', but omitting 'đọc' removes the action of reading, making the request unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'số' to 'sư' at position 7",
+      "reason": "'số điện thoại' means 'phone number', while 'sư điện thoại' is not meaningful; this makes the sentence incoherent.",
+      "score": 1
     }
   ]
 }

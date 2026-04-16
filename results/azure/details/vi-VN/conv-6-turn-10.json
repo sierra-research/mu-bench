@@ -1,30 +1,30 @@
 {
   "gold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Thế một một số cuối cùng phải đầy đủ là+ 84 9117345678.",
+  "predicted": "Ờ thế một một số cuối cùng phải đầy đủ là ờ+ 84 9117345678.",
   "unintelligible": false,
-  "wer": 0.23809523809523808,
-  "werNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Thế một một số cuối cùng phải đầy đủ là cộng 84 9 1 1 7 3 4 5 6 7 8.",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Thế một một số cuối cùng phải đầy đủ là cộng 84 9 1 1 7 3 4 5 6 7 8.",
+  "wer": 0.17391304347826086,
+  "werNormalizedGold": "thieu mat mot so cuoi cung day du la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "werNormalizedPredicted": "the mot mot so cuoi cung phai day du la cong tam muoi bon chin mot mot bay ba bon nam sau bay tam",
+  "qualityScore": null,
+  "significantWer": 0.08695652173913043,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "thieu mat mot so cuoi cung day du la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedPredicted": "the mot mot so cuoi cung phai day du la cong tam muoi bon chin mot mot bay ba bon nam sau bay tam",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thiếu' to 'Thế' at position 0",
-      "reason": "'Thiếu' means 'missing' or 'lacking', while 'Thế' means 'so' or 'thus'; this changes the meaning and intent of the sentence significantly.",
+      "error": "Substitution: 'thieu' to 'the' at position 0",
+      "reason": "'thieu' (missing/lacking) and 'the' are completely different words in Vietnamese; this changes the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'cùng,' to 'phải' at position 5",
-      "reason": "'cùng' means 'last' (as in 'last number'), while 'phải' means 'must'; this changes the structure and meaning of the sentence.",
-      "score": 1
+      "error": "Insertion: 'phai' at position 6",
+      "reason": "The insertion of 'phai' (must) adds a modal verb, which changes the tone and meaning of the instruction.",
+      "score": 2
     },
     {
-      "error": "Substitution: '2' to '7' at position 14",
-      "reason": "The digit '2' is replaced with '7' in a phone number sequence, which is a significant error as it changes the actual number.",
+      "error": "Substitution: 'hai' to 'bay' at position 16",
+      "reason": "'hai' (two) and 'bay' (seven) are different numbers, which is a significant factual error in a sequence of numbers.",
       "score": 1
     }
   ]

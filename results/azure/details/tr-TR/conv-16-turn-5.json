@@ -2,14 +2,20 @@
   "gold": "Yani adımda ve telefon numarasında yanlışlıklar var. Adım Ahmet Arslan. Soyadımda R harfi de var. Arslan.",
   "predicted": "Yani adımda ve telefon numarasına yanlışlıklar var. Adım Ahmet Arslan soyadımda r harfi de var arslan.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yani adımda ve telefon numarasında yanlışlıklar var. Adım Ahmet Arslan. Soyadımda R harfi de var. Arslan.",
-  "werNormalizedPredicted": "Yani adımda ve telefon numarasında yanlışlıklar var. Adım Ahmet Arslan. Soyadımda R harfi de var. Arslan.",
-  "qualityScore": 3,
+  "wer": 0.0625,
+  "werNormalizedGold": "yani adımda ve telefon numarasında yanlışlıklar var adım ahmet arslan soyadımda r harfi de var arslan",
+  "werNormalizedPredicted": "yani adımda ve telefon numarasına yanlışlıklar var adım ahmet arslan soyadımda r harfi de var arslan",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Yani adımda ve telefon numarasında yanlışlıklar var. Adım Ahmet Arslan. Soyadımda R harfi de var. Arslan.",
-  "sigWerNormalizedPredicted": "Yani adımda ve telefon numarasında yanlışlıklar var. Adım Ahmet Arslan. Soyadımda R harfi de var. Arslan.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yani adımda ve telefon numarasında yanlışlıklar var adım ahmet arslan soyadımda r harfi de var arslan",
+  "sigWerNormalizedPredicted": "yani adımda ve telefon numarasına yanlışlıklar var adım ahmet arslan soyadımda r harfi de var arslan",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'numarasında' to 'numarasına' at position 4",
+      "reason": "The substitution changes the case ending from 'in' (locative) to 'to' (dative), but in this context, the overall meaning of the sentence remains clear and is not significantly altered.",
+      "score": 2
+    }
+  ]
 }

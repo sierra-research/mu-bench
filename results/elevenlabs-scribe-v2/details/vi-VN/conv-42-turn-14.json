@@ -1,26 +1,26 @@
 {
   "gold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "predicted": "À chính, chính xác, chính xác, kiểm tra giúp",
+  "predicted": "À chính, chính xác, chính xác, chính xác giùm",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "werNormalizedPredicted": "À, chính, chính xác. Chính xác. Kiểm tra giúp.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.375,
+  "werNormalizedGold": "à chính xác chính xác kiểm tra giùm",
+  "werNormalizedPredicted": "à chính chính xác chính xác chính xác giùm",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "sigWerNormalizedPredicted": "À, chính, chính xác. Chính xác. Kiểm tra giúp.",
+  "sigWerNormalizedGold": "à chính xác chính xác kiểm tra giùm",
+  "sigWerNormalizedPredicted": "à chính chính xác chính xác chính xác giùm",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'chính,' at position 1",
-      "reason": "The insertion of 'chính,' repeats the word but does not change the overall meaning of the sentence.",
+      "error": "Insertion: 'chính' at position 2",
+      "reason": "The extra 'chính' is a repetition and does not change the overall meaning of the sentence, which is about checking accuracy.",
       "score": 2
     },
     {
-      "error": "Substitution: 'giùm.' to 'giúp.' at position 7",
-      "reason": "'Giùm' and 'giúp' are synonyms in Vietnamese and both mean 'help', so the meaning is preserved.",
-      "score": 3
+      "error": "Substitution: 'kiểm' to 'chính' at position 5",
+      "reason": "Replacing 'kiểm' (which means 'check') with 'chính' (which means 'correct') changes the action being requested, making the sentence less clear and potentially altering the intent.",
+      "score": 1
     }
   ]
 }

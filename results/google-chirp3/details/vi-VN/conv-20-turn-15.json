@@ -1,25 +1,30 @@
 {
   "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
-  "predicted": "mình không không đúng mình chấm trần a còng email.com",
+  "predicted": "mình không không đúng mình chấm trần a còng email chấm com",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "Không đúng. Minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Mình không không đúng. Mình chấm trần a còng email chấm com.",
-  "qualityScore": 2,
+  "wer": 0.3,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "mình không không đúng mình chấm trần a còng email chấm com",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Không đúng. Minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Mình không không đúng. Mình chấm trần a còng email chấm com.",
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "mình không không đúng mình chấm trần a còng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Không' to 'không' at position 0",
-      "reason": "The insertion of 'Mình' at the beginning changes the subject and makes the sentence less clear, potentially altering the meaning.",
+      "error": "Insertion: 'mình' at position 0",
+      "reason": "The insertion of 'mình' at the beginning adds a pronoun but does not change the overall meaning of the sentence, which is about an email address.",
       "score": 2
     },
     {
-      "error": "Substitution: 'Minh' to 'Mình' at position 2",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
+      "error": "Insertion: 'không' at position 1",
+      "reason": "The extra 'không' (no/not) could cause confusion or make the sentence less clear, but the main information about the email address remains intact.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 2",
+      "reason": "The substitution adds the accent to 'minh', making it 'mình', which is a minor spelling/diacritic difference in Vietnamese and does not change the meaning in this context.",
       "score": 3
     }
   ]

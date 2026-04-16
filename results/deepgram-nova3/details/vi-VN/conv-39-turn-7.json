@@ -1,25 +1,30 @@
 {
   "gold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "predicted": "Đúng rồi, anh ạ, chuẩn, cảm ơn năm bạn nhé.",
+  "predicted": "Đúng rồi anh ạ chuẩn cảm ơn năm bạn nhé",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "werNormalizedPredicted": "Đúng rồi, anh ạ, chuẩn, cảm ơn năm bạn nhá.",
-  "qualityScore": 2,
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "wer": 0.5,
+  "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "werNormalizedPredicted": "đúng rồi anh ạ chuẩn cảm ơn năm bạn nhé",
+  "qualityScore": null,
+  "significantWer": 0.375,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "sigWerNormalizedPredicted": "Đúng rồi, anh ạ, chuẩn, cảm ơn năm bạn nhá.",
+  "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "sigWerNormalizedPredicted": "đúng rồi anh ạ chuẩn cảm ơn năm bạn nhé",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'rồi' to 'anh' at position 1",
-      "reason": "'Anna' is a proper noun (a person's name), while 'anh ạ' is a Vietnamese phrase meaning 'older brother' or a polite address. This changes the addressee and the meaning of the sentence significantly.",
+      "error": "Substitution: 'anna' to 'ạ' at position 2",
+      "reason": "'anh' is a different person reference than 'anna', which changes the addressee and meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Insertion: 'năm' at position 6",
-      "reason": "'năm' means 'five' in Vietnamese and its insertion before 'bạn nhá' changes the meaning of the sentence, making it unclear and potentially confusing.",
+      "reason": "'anna' is a name, while 'ạ' is a Vietnamese particle; this substitution removes the addressee and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 7",
+      "reason": "'năm' (meaning 'five' or 'year') is not present in the expected sentence and its insertion makes the sentence confusing and changes the meaning.",
       "score": 1
     }
   ]

@@ -1,15 +1,15 @@
 {
   "gold": "美玲 at email dot com。",
-  "predicted": "mailing at email.com",
+  "predicted": "Mailing at email.com.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "美玲 at email dot com。",
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "美玲 at email dot com",
   "werNormalizedPredicted": "mailing at email dot com",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
   "majorErrorsCount": 2,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "美 玲 at email dot com 。",
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
   "sigWerNormalizedPredicted": "mailing at email dot com",
   "sigWerErrors": [
     {
@@ -19,13 +19,8 @@
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "'玲' is another Chinese character (likely part of the same name). Its omission results in the loss of the correct name, which is significant for identification.",
+      "reason": "'玲' is another Chinese character (likely part of a name), and its omission means the name is not transcribed at all, which is a significant loss of information.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 6",
-      "reason": "The deletion of the punctuation mark '。' does not affect the meaning of the sentence.",
-      "score": 3
     }
   ]
 }

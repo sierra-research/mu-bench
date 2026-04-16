@@ -1,35 +1,40 @@
 {
   "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
-  "predicted": "Xin chào, tôi đây là tôi làm mất thẻ á, cái tôi xin cấp thẻ mới, giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có.",
+  "predicted": "Ờ xin chào, rồi đây là tôi làm mất thẻ, cái tôi xin cấp thẻ mới, muốn hỏi coi là hiện tại khi nào thì chuẩn bị có.",
   "unintelligible": false,
-  "wer": 0.47619047619047616,
-  "werNormalizedGold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
-  "werNormalizedPredicted": "Xin chào. Tôi đây là tôi làm mất thẻ á. Cái tôi xin cấp thẻ mới. Giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có.",
-  "qualityScore": 3,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "werNormalizedPredicted": "xin chào đây là tôi làm mất thẻ cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào thì chuẩn bị có",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
-  "sigWerNormalizedPredicted": "Xin chào. Tôi đây là tôi làm mất thẻ á. Cái tôi xin cấp thẻ mới. Giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có.",
+  "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "sigWerNormalizedPredicted": "xin chào đây là tôi làm mất thẻ cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào thì chuẩn bị có",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'đây' at position 3",
-      "reason": "'đây' (here) is an extra word that adds emphasis but does not change the meaning of the sentence.",
+      "error": "Insertion: 'đây' at position 2",
+      "reason": "'đây' (here/this) is an extra word that introduces the speaker, but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'thẻ.' to 'Cái' at position 5",
-      "reason": "'là' (is) is an extra word that adds a bit of clarification but does not change the meaning.",
-      "score": 3
+      "error": "Insertion: 'cái' at position 6",
+      "reason": "'cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'giờ' at position 11",
+      "reason": "Omitting 'giờ' (now) slightly changes the temporal emphasis but does not significantly alter the meaning.",
+      "score": 2
     },
     {
       "error": "Insertion: 'coi' at position 14",
-      "reason": "'á' is a discourse particle in Vietnamese, used for emphasis or tone, and does not affect the meaning.",
-      "score": 3
+      "reason": "'coi' (to see/check) is an extra word that does not change the intent or meaning of the question.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'có?' to 'có.' at position 20",
-      "reason": "'Cái' is a classifier or discourse marker in Vietnamese, and its insertion here does not change the meaning.",
+      "error": "Insertion: 'thì' at position 18",
+      "reason": "'thì' is a discourse marker in Vietnamese and its insertion does not affect the meaning.",
       "score": 3
     }
   ]

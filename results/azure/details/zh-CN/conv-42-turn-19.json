@@ -1,15 +1,26 @@
 {
   "gold": "你不听我？",
-  "predicted": "你不听我。",
+  "predicted": "Nibhutin War.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你不听我？",
-  "werNormalizedPredicted": "你不听我？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "你 不 听 我 ？",
-  "sigWerNormalizedPredicted": "你 不 听 我 ？",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你 不 听 我",
+  "werNormalizedPredicted": "nibhutin war",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "你 不 听 我",
+  "sigWerNormalizedPredicted": "nibhutin war",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'nibhutin' at position 0",
+      "reason": "The actual transcription is in a different language and does not correspond to the expected Chinese word, resulting in a complete loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '听' at position 2",
+      "reason": "The word '听' is missing in the actual transcription, which further derails the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

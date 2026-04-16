@@ -1,31 +1,26 @@
 {
   "gold": "我需要提供最新账单。",
-  "predicted": "我需要提供随性账本",
+  "predicted": "我需要提供随信账本",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "我需要提供最新账单。",
-  "werNormalizedPredicted": "我需要提供随性账本",
-  "qualityScore": 1,
-  "significantWer": 0.2,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "我需要提供最新账单",
+  "werNormalizedPredicted": "我需要提供随信账本",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
   "majorErrorsCount": 2,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "我 需 要 提 供 最 新 账 单 。",
-  "sigWerNormalizedPredicted": "我 需 要 提 供 随 性 账 本",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "我 需 要 提 供 最 新 账 单",
+  "sigWerNormalizedPredicted": "我 需 要 提 供 随 信 账 本",
   "sigWerErrors": [
     {
       "error": "Substitution: '最' to '随' at position 5",
-      "reason": "'最新' means 'latest', while '随性' means 'casual' or 'random', which changes the meaning of the sentence significantly.",
+      "reason": "'最新账单' means 'latest bill', while '随信账本' means 'account book with the letter'. This substitution changes the meaning of what is being requested, making the sentence incoherent in context.",
       "score": 1
     },
     {
       "error": "Substitution: '单' to '本' at position 8",
-      "reason": "'账单' means 'bill' or 'statement', while '账本' means 'account book', which refers to a different concept and changes the meaning.",
+      "reason": "'账单' (bill) and '账本' (account book) are different financial documents. This substitution changes the type of document being referred to, which significantly alters the meaning.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 9",
-      "reason": "Missing punctuation does not affect the meaning of the sentence.",
-      "score": 3
     }
   ]
 }

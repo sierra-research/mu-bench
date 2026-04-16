@@ -2,19 +2,24 @@
   "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
   "predicted": "Email adresinde adımla soyarım arasına. Olması lazım. Ahmet dat arslan ya da Ahmet. Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werNormalizedGold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "werNormalizedPredicted": "Email adresinde adımla soyarım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "qualityScore": 2,
-  "significantWer": 0.058823529411764705,
-  "majorErrorsCount": 1,
+  "wer": 0.17647058823529413,
+  "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "werNormalizedPredicted": "email adresinde adımla soyarım arasına olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "qualityScore": null,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "sigWerNormalizedPredicted": "Email adresinde adımla soyarım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
+  "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerNormalizedPredicted": "email adresinde adımla soyarım arasına olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'soyadım' to 'soyarım' at position 3",
       "reason": "'Soyadım' means 'my surname', while 'soyarım' means 'I peel' or 'I strip'. This changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 5",
+      "reason": "The word 'nokta' (meaning 'dot') is omitted, which is crucial for the instruction about the email format. This omission makes the instruction incomplete and unclear.",
       "score": 1
     }
   ]

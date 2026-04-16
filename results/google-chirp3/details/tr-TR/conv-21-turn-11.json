@@ -2,14 +2,20 @@
   "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
   "predicted": "E-mail adresinde adım ve soyadımın arasında nokta olması lazım. Ahmet {dot} Arslan ya da Ahmet {nokta} Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "werNormalizedPredicted": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "qualityScore": 3,
+  "wer": 0.17647058823529413,
+  "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "werNormalizedPredicted": "email adresinde adım ve soyadımın arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "sigWerNormalizedPredicted": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerNormalizedPredicted": "email adresinde adım ve soyadımın arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adımla' to 've' at position 2",
+      "reason": "'adımla' means 'with my name', while 'adım ve' means 'my name and', which changes the structure but not the overall meaning of the sentence. The sentence still conveys that there should be a dot between the name and surname in the email address.",
+      "score": 2
+    }
+  ]
 }

@@ -1,15 +1,21 @@
 {
   "gold": "我的姓名，你还不知道我的姓名。",
-  "predicted": "我的姓名你还不知道我的姓名",
+  "predicted": "我的姓名还不知道我的姓名",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我的姓名，你还不知道我的姓名。",
-  "werNormalizedPredicted": "我的姓名，你还不知道我的姓名。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "我 的 姓 名 ， 你 还 不 知 道 我 的 姓 名 。",
-  "sigWerNormalizedPredicted": "我 的 姓 名 ， 你 还 不 知 道 我 的 姓 名 。",
-  "sigWerErrors": []
+  "wer": 0.07692307692307693,
+  "werNormalizedGold": "我的姓名你还不知道我的姓名",
+  "werNormalizedPredicted": "我的姓名还不知道我的姓名",
+  "qualityScore": null,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 姓 名 你 还 不 知 道 我 的 姓 名",
+  "sigWerNormalizedPredicted": "我 的 姓 名 还 不 知 道 我 的 姓 名",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '你' at position 4",
+      "reason": "The omission of '你' (you) removes the subject of the clause, which changes the meaning from 'You still don't know my name' to just 'Still don't know my name.' This significantly alters the meaning and clarity of the sentence.",
+      "score": 1
+    }
+  ]
 }

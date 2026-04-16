@@ -1,0 +1,26 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Email là minh.trầna@gmail.com, số điện thoại +84 91 1234 567",
+  "unintelligible": false,
+  "wer": 0.07692307692307693,
+  "werNormalizedGold": "email là minh trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là minh trần a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy",
+  "qualityScore": null,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 26,
+  "sigWerNormalizedGold": "email là minh trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là minh trần a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 6",
+      "reason": "The domain part of the email address is changed from 'email' to 'gmail', which would result in a completely different email address and could prevent correct contact. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tám' at position 25",
+      "reason": "The last digit of the phone number is missing, making the phone number incomplete and unusable. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,20 +1,25 @@
 {
   "gold": "Oh, oh, oh.",
-  "predicted": "Um, uh, uh, no",
+  "predicted": "Um, uh, no, no",
   "unintelligible": false,
-  "wer": 1.3333333333333333,
-  "werNormalizedGold": "Oh, oh, oh.",
-  "werNormalizedPredicted": "Um, uh, uh, no.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "oh oh oh",
+  "werNormalizedPredicted": "no no",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Oh, oh, oh.",
-  "sigWerNormalizedPredicted": "Um, uh, uh, no.",
+  "sigWerNormalizedGold": "oh oh oh",
+  "sigWerNormalizedPredicted": "no no",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Oh,' to 'uh,' at position 0",
-      "reason": "'Um' is a filler word not present in the expected transcript. It does not change the meaning significantly but is an unnecessary addition.",
+      "error": "Substitution: 'oh' to 'no' at position 0",
+      "reason": "'Oh' and 'no' have completely different meanings; this changes the intent of the utterance significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'oh' at position 2",
+      "reason": "Missing one repetition of 'oh' changes the pattern and could affect the intended meaning or emphasis.",
       "score": 2
     }
   ]

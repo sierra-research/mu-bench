@@ -1,15 +1,26 @@
 {
   "gold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "predicted": "Anla. Bana şu kodu tekrar verir misin? Koda çünkü ilk başta \"E-N\" dedin sonra \"E-A\" dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "predicted": "Anla. Bana şu kodu tekrar verir misin? Koda çünkü ilk başta \"EN\" dedin sonra \"EA\" dedin. Kodu tekrar bana söyler misin yavaşça?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "werNormalizedPredicted": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "werNormalizedPredicted": "anla bana şu kodu tekrar verir misin koda çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "qualityScore": null,
+  "significantWer": 0.041666666666666664,
+  "majorErrorsCount": 1,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "sigWerNormalizedPredicted": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "sigWerNormalizedPredicted": "anla bana şu kodu tekrar verir misin koda çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anna' is a name, while 'anla' is a verb meaning 'understand' in Turkish. This changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kodlar' to 'koda' at position 7",
+      "reason": "'kodlar' means 'codes' (plural), while 'koda' is the dative form of 'code' (singular). This changes the meaning but does not derail the overall intent of the sentence.",
+      "score": 2
+    }
+  ]
 }

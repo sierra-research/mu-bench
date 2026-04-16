@@ -1,20 +1,25 @@
 {
   "gold": "No es Gmail, es email.",
-  "predicted": "No, no, no es email.",
+  "predicted": "No, no es email.",
   "unintelligible": false,
-  "wer": 0.6,
-  "werNormalizedGold": "No es Gmail, es email.",
-  "werNormalizedPredicted": "No, no, no es email.",
-  "qualityScore": 2,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 0.4,
+  "werNormalizedGold": "no es gmail es email",
+  "werNormalizedPredicted": "no no es email",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "No es Gmail, es email.",
-  "sigWerNormalizedPredicted": "No, no, no es email.",
+  "sigWerNormalizedGold": "no es gmail es email",
+  "sigWerNormalizedPredicted": "no no es email",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No' to 'No,' at position 0",
-      "reason": "The repeated 'no' changes the tone and meaning of the sentence, making it sound like a strong negation or interruption, which is not present in the expected sentence.",
+      "error": "Substitution: 'es' to 'no' at position 1",
+      "reason": "The insertion of 'no' instead of 'es' changes the meaning of the sentence, introducing a double negative and making the sentence confusing or incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'gmail' at position 2",
+      "reason": "Omitting 'gmail' removes a key piece of information, making the sentence incomplete and changing its intended meaning.",
       "score": 1
     }
   ]

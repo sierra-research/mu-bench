@@ -1,15 +1,26 @@
 {
   "gold": "İyi günler.",
-  "predicted": "İyi günler",
+  "predicted": "değiller.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "İyi günler.",
-  "werNormalizedPredicted": "İyi günler.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "iyi gunler",
+  "werNormalizedPredicted": "degiller",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "İyi günler.",
-  "sigWerNormalizedPredicted": "İyi günler.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "iyi gunler",
+  "sigWerNormalizedPredicted": "degiller",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'degiller' at position 0",
+      "reason": "'iyi' means 'good' and 'degiller' means 'they are not' in Turkish; this substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'gunler' at position 1",
+      "reason": "'gunler' means 'days' in Turkish and its omission removes the main subject of the greeting, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

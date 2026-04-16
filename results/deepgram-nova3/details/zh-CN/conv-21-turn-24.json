@@ -1,26 +1,26 @@
 {
   "gold": "需要。",
-  "predicted": "是六",
+  "predicted": "是",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "需要。",
-  "werNormalizedPredicted": "是六",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "需 要 。",
-  "sigWerNormalizedPredicted": "是 六",
+  "werNormalizedGold": "需要",
+  "werNormalizedPredicted": "是",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "需 要",
+  "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
       "error": "Substitution: '需' to '是' at position 0",
-      "reason": "'需' means 'need' while '是' means 'is/yes'; this substitution completely changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "'需' means 'need' or 'require', while '是' means 'is' or 'yes'; this substitution changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: '。' at position 2",
-      "reason": "Omitting the period does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Deletion: '要' at position 1",
+      "reason": "'要' is part of the phrase '需要' (need/require); omitting it further distorts the intended meaning.",
+      "score": 1
     }
   ]
 }

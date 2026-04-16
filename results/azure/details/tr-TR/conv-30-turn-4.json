@@ -1,15 +1,26 @@
 {
   "gold": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "predicted": "Yo ben anlayamadım bi önceki koddan farklıydı çünkü lütfen tekrar eder misiniz?",
+  "predicted": "Yo ben anlayamadım. Bir önceki koddan farklıydı çünkü lütfen tekrar eder misin?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "werNormalizedPredicted": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "yok ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misiniz",
+  "werNormalizedPredicted": "yo ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misin",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "sigWerNormalizedPredicted": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yok ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misiniz",
+  "sigWerNormalizedPredicted": "yo ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yok' to 'yo' at position 0",
+      "reason": "'yo' is not a word in Turkish and does not convey the same meaning as 'yok', which means 'no' or 'none'. This changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'misiniz' to 'misin' at position 11",
+      "reason": "The change from 'misiniz' (formal/plural) to 'misin' (informal/singular) only affects the level of formality, not the core meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

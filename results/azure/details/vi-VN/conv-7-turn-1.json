@@ -1,20 +1,25 @@
 {
   "gold": "Rồi. Đọc lại đi.",
-  "predicted": "Rồi tập lại đi.",
+  "predicted": "Ừ.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Rồi. Đọc lại đi.",
-  "werNormalizedPredicted": "Rồi tập lại đi.",
-  "qualityScore": 2,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "rồi đọc lại đi",
+  "werNormalizedPredicted": "ừ",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Rồi. Đọc lại đi.",
-  "sigWerNormalizedPredicted": "Rồi tập lại đi.",
+  "sigWerNormalizedGold": "rồi đọc lại đi",
+  "sigWerNormalizedPredicted": "ừ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Rồi.' to 'Rồi' at position 0",
-      "reason": "'Đọc' means 'read' and 'tập' means 'practice'; substituting these changes the action being requested, which significantly alters the meaning of the sentence.",
+      "error": "Substitution: 'rồi' to 'ừ' at position 0",
+      "reason": "'rồi' means 'then' or 'already', while 'ừ' is an affirmative like 'yes'; this changes the intent and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đọc' at position 1",
+      "reason": "'đọc' means 'read', and its omission removes the main action of the sentence, making the actual transcription incoherent compared to the expected.",
       "score": 1
     }
   ]

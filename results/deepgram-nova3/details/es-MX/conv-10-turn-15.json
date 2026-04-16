@@ -1,31 +1,26 @@
 {
   "gold": "No. El correo lo tienes mal. No es Gmail, es email.",
-  "predicted": "No, el correo lo mal, no es es es es es es email.",
+  "predicted": "No, el correo lo que mal no es email.",
   "unintelligible": false,
-  "wer": 0.7272727272727273,
-  "werNormalizedGold": "No. El correo lo tienes mal. No es Gmail, es email.",
-  "werNormalizedPredicted": "No, el correo lo mal, no es es es es es es email.",
-  "qualityScore": 2,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "no el correo lo tienes mal no es gmail es email",
+  "werNormalizedPredicted": "no el correo lo que mal no es email",
+  "qualityScore": null,
   "significantWer": 0.09090909090909091,
   "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "No. El correo lo tienes mal. No es Gmail, es email.",
-  "sigWerNormalizedPredicted": "No, el correo lo mal, no es es es es es es email.",
+  "sigWerNormalizedGold": "no el correo lo tienes mal no es gmail es email",
+  "sigWerNormalizedPredicted": "no el correo lo que mal no es email",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No.' to 'No,' at position 0",
-      "reason": "Difference is only punctuation (period vs comma), which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'tienes' to 'mal,' at position 4",
-      "reason": "'Tienes mal' means 'you have it wrong', but 'lo mal' is incomplete and loses the subject, making the sentence less clear.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'Gmail,' to 'es' at position 8",
-      "reason": "Multiple insertions of 'es' ('is') create repetition and confusion, making the sentence incoherent.",
+      "error": "Substitution: 'tienes' to 'que' at position 4",
+      "reason": "'tienes mal' means 'you have it wrong', while 'lo que mal' is not a coherent phrase and loses the intended meaning, making the sentence confusing.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'es' at position 7",
+      "reason": "Omitting 'es' ('is') removes the verb from the phrase 'no es gmail es email', making the sentence grammatically incorrect but the overall meaning is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

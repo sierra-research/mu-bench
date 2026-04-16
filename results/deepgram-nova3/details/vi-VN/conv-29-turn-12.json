@@ -1,36 +1,26 @@
 {
   "gold": "Tôi không thấy gì hết. Có thể hỗ trợ ngay tại đây được không?",
-  "predicted": "Tôi không thể dễ có thể hỗ trợ ngay tại đây được không?",
+  "predicted": "Tôi không thể dễ có thể hỗ trợ ngay tại đây được không.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "Tôi không thấy gì hết. Có thể hỗ trợ ngay tại đây được không?",
+  "wer": 0.21428571428571427,
+  "werNormalizedGold": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
   "werNormalizedPredicted": "tôi không thể dễ có thể hỗ trợ ngay tại đây được không",
-  "qualityScore": 2,
+  "qualityScore": null,
   "significantWer": 0.07142857142857142,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Tôi không thấy gì hết. Có thể hỗ trợ ngay tại đây được không?",
+  "sigWerNormalizedGold": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
   "sigWerNormalizedPredicted": "tôi không thể dễ có thể hỗ trợ ngay tại đây được không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
-      "score": 3
-    },
-    {
       "error": "Substitution: 'thấy' to 'thể' at position 2",
-      "reason": "'thấy' means 'see' and 'thể' means 'can/able', which changes the meaning of the sentence significantly.",
+      "reason": "'thấy' means 'see' and 'thể' means 'can' or 'ability', which changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
     },
     {
-      "error": "Deletion: 'Có' at position 5",
-      "reason": "'Có' (can/there is) is present in the actual transcript, so this is not a deletion error.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'không?' to 'không' at position 13",
-      "reason": "The only difference is the missing question mark, which is punctuation and should be ignored.",
-      "score": 3
+      "error": "Deletion: 'hết' at position 4",
+      "reason": "Omitting 'hết' ('at all' or 'completely') changes the emphasis of the sentence, but the main meaning is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

@@ -1,20 +1,25 @@
 {
   "gold": "我再一遍告诉你，是郡凛。",
-  "predicted": "我在一边告诉你，告诉你是君临。",
+  "predicted": "我，我再一遍告诉你，告诉你是君临。",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "我再一遍告诉你，是郡凛。",
-  "werNormalizedPredicted": "我再一遍告诉你，告诉你是郡凛。",
-  "qualityScore": 2,
+  "wer": 0.4,
+  "werNormalizedGold": "我 再 一 遍 告诉 你 是 君临",
+  "werNormalizedPredicted": "我 我 再 一 遍 告诉 你 告诉 你 是 君临",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "我 再 一 遍 告 诉 你 ， 是 郡 凛 。",
-  "sigWerNormalizedPredicted": "我 再 一 遍 告 诉 你 ， 告 诉 你 是 郡 凛 。",
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 再 一 遍 告 诉 你 是 君 临",
+  "sigWerNormalizedPredicted": "我 我 再 一 遍 告 诉 你 告 诉 你 是 君 临",
   "sigWerErrors": [
     {
-      "error": "Insertion: '告' at position 8",
-      "reason": "The phrase '告 诉 你' is repeated in the actual transcription, which is redundant but does not change the overall meaning of the sentence. The sentence remains coherent and the intended message is still clear.",
+      "error": "Insertion: '我' at position 1",
+      "reason": "Repeating '我' (I) at the beginning does not change the overall meaning of the sentence, just adds emphasis or redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '告' at position 4",
+      "reason": "Repeating '告诉你' (tell you) is redundant but does not change the meaning of the sentence.",
       "score": 2
     }
   ]

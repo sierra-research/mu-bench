@@ -1,15 +1,21 @@
 {
   "gold": "Es todo, muchas gracias.",
-  "predicted": "Es todo, muchas gracias.",
+  "predicted": "Nada, es todo, muchas gracias.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Es todo, muchas gracias.",
-  "werNormalizedPredicted": "Es todo, muchas gracias.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.25,
+  "werNormalizedGold": "es todo muchas gracias",
+  "werNormalizedPredicted": "nada es todo muchas gracias",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Es todo, muchas gracias.",
-  "sigWerNormalizedPredicted": "Es todo, muchas gracias.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es todo muchas gracias",
+  "sigWerNormalizedPredicted": "nada es todo muchas gracias",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nada' at position 0",
+      "reason": "'Nada' means 'nothing' and its insertion at the beginning changes the meaning of the sentence from 'that's all, thank you very much' to 'nothing, that's all, thank you very much', which alters the intent significantly.",
+      "score": 1
+    }
+  ]
 }

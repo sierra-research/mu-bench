@@ -1,31 +1,31 @@
 {
   "gold": "¿Podría pedir un pago en cuotas de la factura?",
-  "predicted": "¿Podría un pago cuotas de la factura?",
+  "predicted": "¿Podría un pago cuota de la factura?",
   "unintelligible": false,
   "wer": 0.3333333333333333,
-  "werNormalizedGold": "¿Podría pedir un pago en cuotas de la factura?",
-  "werNormalizedPredicted": "¿podría un pago cuotas de la factura?",
-  "qualityScore": 2,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "podria pedir un pago en cuotas de la factura",
+  "werNormalizedPredicted": "podria un pago cuota de la factura",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "¿Podría pedir un pago en cuotas de la factura?",
-  "sigWerNormalizedPredicted": "¿podría un pago cuotas de la factura?",
+  "sigWerNormalizedGold": "podria pedir un pago en cuotas de la factura",
+  "sigWerNormalizedPredicted": "podria un pago cuota de la factura",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¿Podría' to '¿podría' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
-      "score": 3
-    },
-    {
       "error": "Deletion: 'pedir' at position 1",
-      "reason": "Omitting 'pedir' (to request) removes the action from the sentence, making the request unclear and significantly changing the meaning.",
+      "reason": "'pedir' (to request) is omitted, which removes the action from the sentence and makes the meaning incomplete.",
       "score": 1
     },
     {
-      "error": "Deletion: 'en' at position 4",
-      "reason": "Omitting 'en' (in) makes the phrase less clear but the general intent is still somewhat understandable.",
+      "error": "Substitution: 'en' to 'cuota' at position 4",
+      "reason": "The preposition 'en' (in) is replaced by 'cuota' (installment), which disrupts the grammatical structure but the general intent is still somewhat understandable.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'cuotas' at position 5",
+      "reason": "Omitting 'cuotas' (installments) changes the payment method being requested, which is a significant detail.",
+      "score": 1
     }
   ]
 }

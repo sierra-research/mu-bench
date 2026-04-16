@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SHOW_QUALITY } from "../utils/metrics.js";
 import "./PaperHeatmap.css";
 
 const LOCALES = ["en-US", "es-MX", "tr-TR", "vi-VN", "zh-CN"];
@@ -14,7 +15,7 @@ const PROVIDERS = [
     { id: "google-chirp3", label: "Google Chirp-3" },
     { id: "elevenlabs-scribe-v2", label: "ElevenLabs Scribe v2" },
     { id: "deepgram-nova3", label: "Deepgram Nova-3" },
-    { id: "openai-gpt4o-transcribe", label: "OpenAI GPT-4o" },
+    { id: "openai-gpt4o-mini-transcribe", label: "OpenAI GPT-4o Mini" },
     { id: "azure", label: "Microsoft Azure" },
 ];
 
@@ -40,12 +41,12 @@ const SCORES = {
         "vi-VN": { wer: 0.284, sigWer: 0.148, quality: 2.62, latencyP50: 432, latency: 821 },
         "zh-CN": { wer: 0.177, sigWer: 0.209, quality: 2.28, latencyP50: 376, latency: 560 },
     },
-    "openai-gpt4o-transcribe": {
-        "en-US": { wer: 0.076, sigWer: 0.072, quality: 2.87, latencyP50: 495, latency: 980 },
-        "es-MX": { wer: 0.108, sigWer: 0.101, quality: 2.78, latencyP50: 522, latency: 1075 },
-        "tr-TR": { wer: 0.133, sigWer: 0.142, quality: 2.66, latencyP50: 544, latency: 1159 },
-        "vi-VN": { wer: 0.172, sigWer: 0.229, quality: 2.59, latencyP50: 518, latency: 1042 },
-        "zh-CN": { wer: 0.202, sigWer: 0.262, quality: 2.19, latencyP50: 492, latency: 936 },
+    "openai-gpt4o-mini-transcribe": {
+        "en-US": { wer: 0.039, sigWer: 0.051, quality: 2.87, latencyP50: 664, latency: 1328 },
+        "es-MX": { wer: 0.111, sigWer: 0.145, quality: 2.78, latencyP50: 659, latency: 1375 },
+        "tr-TR": { wer: 0.113, sigWer: 0.178, quality: 2.66, latencyP50: 696, latency: 1652 },
+        "vi-VN": { wer: 0.209, sigWer: 0.319, quality: 2.59, latencyP50: 662, latency: 1281 },
+        "zh-CN": { wer: 0.165, sigWer: 0.225, quality: 2.19, latencyP50: 566, latency: 1116 },
     },
     azure: {
         "en-US": { wer: 0.046, sigWer: 0.033, quality: 2.92, latencyP50: 276, latency: 638 },
@@ -56,13 +57,15 @@ const SCORES = {
     },
 };
 
-const METRICS = [
+const ALL_METRICS = [
     { key: "wer", label: "WER", format: (v) => `${(v * 100).toFixed(1)}%`, lower: true },
     { key: "sigWer", label: "UER", format: (v) => `${(v * 100).toFixed(1)}%`, lower: true },
     { key: "quality", label: "Quality", format: (v) => v.toFixed(2), lower: false },
     { key: "latencyP50", label: "Latency (p50)", format: (v) => `${Math.round(v)} ms`, lower: true },
     { key: "latency", label: "Latency (p95)", format: (v) => `${Math.round(v)} ms`, lower: true },
 ];
+
+const METRICS = SHOW_QUALITY ? ALL_METRICS : ALL_METRICS.filter((m) => m.key !== "quality");
 
 const COLOR_RANGES = {
     wer: { min: 0, max: 0.55 },

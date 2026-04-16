@@ -1,0 +1,26 @@
+{
+  "gold": "Sí. ¿Me podrías repetir? Porque se cortó un poco.",
+  "predicted": "¿te podrías repetir? porque se cortó un poco.",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "si me podrias repetir porque se corto un poco",
+  "werNormalizedPredicted": "te podrias repetir porque se corto un poco",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "si me podrias repetir porque se corto un poco",
+  "sigWerNormalizedPredicted": "te podrias repetir porque se corto un poco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'si' to 'te' at position 0",
+      "reason": "'si' (if) and 'te' (you) are different pronouns and change the subject and meaning of the request, which can confuse the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'me' at position 1",
+      "reason": "Omitting 'me' (to me) removes the recipient of the action, making the sentence less clear about who is being asked to repeat, which affects the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -2,19 +2,24 @@
   "gold": "No, no tengo. ¿Me podías mandar un correo electrónico?",
   "predicted": "No, no tengo este acceso a la app, ¿me podrías mandar un correo electrónico?",
   "unintelligible": false,
-  "wer": 0.8888888888888888,
-  "werNormalizedGold": "No, no tengo. ¿Me podías mandar un correo electrónico?",
-  "werNormalizedPredicted": "No, no tengo este acceso a la app, ¿me podrías mandar un correo electrónico?",
-  "qualityScore": 2,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "no no tengo me podias mandar un correo electronico",
+  "werNormalizedPredicted": "no no tengo este acceso a la app me podrias mandar un correo electronico",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "No, no tengo. ¿Me podías mandar un correo electrónico?",
-  "sigWerNormalizedPredicted": "No, no tengo este acceso a la app, ¿me podrías mandar un correo electrónico?",
+  "sigWerNormalizedGold": "no no tengo me podias mandar un correo electronico",
+  "sigWerNormalizedPredicted": "no no tengo este acceso a la app me podrias mandar un correo electronico",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tengo.' to 'app,' at position 2",
-      "reason": "The insertion adds extra information about not having access to the app, which is not present in the expected sentence. However, it does not contradict or derail the original meaning, as the main point ('no tengo') is preserved and the request for an email remains clear.",
+      "error": "Insertion: 'este' at position 3",
+      "reason": "The insertion of 'este' (this) does not significantly change the meaning of the sentence; it adds a minor detail but the overall intent remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'podias' to 'podrias' at position 4",
+      "reason": "The addition of 'acceso a la app' (access to the app) adds extra information but does not derail the meaning of the sentence; the main request is still to send an email.",
       "score": 2
     }
   ]

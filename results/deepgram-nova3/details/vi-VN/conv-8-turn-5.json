@@ -3,23 +3,23 @@
   "predicted": "Địa chỉ email là minh chấmgmail chấm com",
   "unintelligible": false,
   "wer": 0.3333333333333333,
-  "werNormalizedGold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Địa chỉ email là minh chấm gmail chấm com.",
-  "qualityScore": 1,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "địa chỉ email là minh chấm gmail chấm com",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Địa chỉ email là minh chấm gmail chấm com.",
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh chấm gmail chấm com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'trần' to 'gmail' at position 6",
-      "reason": "The actual transcription replaces the surname 'trần' (a proper noun, likely part of the email address) with 'gmail' (an email service provider), which changes the intended email address and makes it incorrect.",
+      "reason": "The expected email address contains a name ('trần'), but the actual transcription replaces it with 'gmail', which is a domain. This changes the entire email address and makes it incorrect.",
       "score": 1
     },
     {
       "error": "Deletion: 'a' at position 7",
-      "reason": "The missing 'a' (from 'a còng', meaning '@') omits a critical part of the email address, making the email address incomplete and unusable.",
+      "reason": "The missing 'a' (which stands for 'at' or '@') is essential for the structure of an email address. Its omission makes the email address invalid.",
       "score": 1
     }
   ]

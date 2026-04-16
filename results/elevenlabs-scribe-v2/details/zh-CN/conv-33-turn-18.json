@@ -1,15 +1,26 @@
 {
   "gold": "确认。",
-  "predicted": "确认。",
+  "predicted": "是。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "确认。",
-  "werNormalizedPredicted": "确认。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "确 认 。",
-  "sigWerNormalizedPredicted": "确 认 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "确认",
+  "werNormalizedPredicted": "是",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "确 认",
+  "sigWerNormalizedPredicted": "是",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '确' to '是' at position 0",
+      "reason": "'确' (confirm/true) is replaced by '是' (is/yes), which changes the meaning from 'confirm' to 'yes', altering the intent of the response significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '认' at position 1",
+      "reason": "The character '认' (recognize/acknowledge) is missing, making the phrase incomplete and changing the meaning from 'confirm' to just 'is/yes'.",
+      "score": 1
+    }
+  ]
 }

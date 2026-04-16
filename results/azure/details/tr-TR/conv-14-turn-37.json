@@ -1,15 +1,31 @@
 {
   "gold": "Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "predicted": "+ 901230 dokuzsıfır, 4567.",
+  "predicted": "+ 9 12, 309 4567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "werNormalizedPredicted": "Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.23076923076923078,
+  "werNormalizedGold": "artı nine zero one two three zero nine zero four five six seven",
+  "werNormalizedPredicted": "artı nine one two three three zero nine four five six seven",
+  "qualityScore": null,
+  "significantWer": 0.23076923076923078,
+  "majorErrorsCount": 3,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "sigWerNormalizedPredicted": "Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "artı nine zero one two three zero nine zero four five six seven",
+  "sigWerNormalizedPredicted": "artı nine one two three three zero nine four five six seven",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'zero' at position 2",
+      "reason": "Omitting a digit in a sequence of numbers (such as a phone number or code) changes the value entirely and can lead to incorrect information.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'three' at position 6",
+      "reason": "Adding an extra digit in a sequence of numbers alters the intended sequence, which is a significant error for things like codes or phone numbers.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'zero' at position 8",
+      "reason": "Missing a digit in a numeric sequence is a significant error as it changes the entire sequence's meaning or value.",
+      "score": 1
+    }
+  ]
 }

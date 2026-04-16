@@ -1,15 +1,26 @@
 {
   "gold": "你有什么问题呀？",
-  "predicted": "你有什么问题啊？",
+  "predicted": "You know some of India?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你有什么问题呀？",
-  "werNormalizedPredicted": "你有什么问题呀？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "你 有 什 么 问 题 呀 ？",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题 呀 ？",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你 有 什 么 问 题 呀",
+  "werNormalizedPredicted": "you know some of india",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 呀",
+  "sigWerNormalizedPredicted": "you know some of india",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'you' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), resulting in a total loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '题' at position 5",
+      "reason": "The word '题' is missing in the actual transcription, which is already in a different language, compounding the significant error.",
+      "score": 1
+    }
+  ]
 }

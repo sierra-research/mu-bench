@@ -1,50 +1,50 @@
 {
   "gold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
-  "predicted": "Tamamım. Kredi kartımla ilgili bir limit arbim var. Onu yapmak istiyorum. Yardımcı olduğunuzu bana.",
+  "predicted": "Tamamım. Kredi kartımla ilgili limit artış talebim var. Onu yapmak istiyorum. Yardımcı olduğunuzu bana.",
   "unintelligible": false,
   "wer": 0.4117647058823529,
-  "werNormalizedGold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
-  "werNormalizedPredicted": "Tamamım. Kredi kartımla ilgili bir limit arbim var. Onu yapmak istiyorum. Yardımcı olduğunuzu bana?",
-  "qualityScore": 2,
-  "significantWer": 0.23529411764705882,
-  "majorErrorsCount": 4,
+  "werNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
+  "werNormalizedPredicted": "tamamım kredi kartımla ilgili limit artış talebim var onu yapmak istiyorum yardımcı olduğunuzu bana",
+  "qualityScore": null,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
-  "sigWerNormalizedPredicted": "Tamamım. Kredi kartımla ilgili bir limit arbim var. Onu yapmak istiyorum. Yardımcı olduğunuzu bana?",
+  "sigWerNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
+  "sigWerNormalizedPredicted": "tamamım kredi kartımla ilgili limit artış talebim var onu yapmak istiyorum yardımcı olduğunuzu bana",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tamam.' to 'Tamamım.' at position 0",
-      "reason": "'Tamam' means 'okay', while 'Tamamım' means 'I am okay' or 'I am done'. The meaning is slightly changed but the intent is still clear.",
+      "error": "Substitution: 'tamam' to 'tamamım' at position 0",
+      "reason": "'tamam' means 'okay', while 'tamamım' means 'I am okay'; this changes the subject but does not derail the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'kartı' to 'kartımla' at position 2",
-      "reason": "'kartı' means 'the card', 'kartımla' means 'with my card'. The meaning is slightly changed but the context is still understandable.",
+      "reason": "'kartı' means 'the card', 'kartımla' means 'with my card'; this is a minor grammatical difference and does not change the overall meaning.",
       "score": 2
     },
     {
       "error": "Deletion: 'ile' at position 3",
-      "reason": "'ile' means 'with', but 'kartımla' already includes the meaning of 'with my card', so the deletion does not change the meaning.",
+      "reason": "'ile' means 'with', but 'kartımla' already includes the meaning of 'with my card', so the meaning is preserved.",
       "score": 3
     },
     {
-      "error": "Substitution: 'artışı' to 'arbim' at position 7",
-      "reason": "'artışı' means 'increase', 'arbim' is a non-word and does not make sense in context, making the sentence confusing.",
-      "score": 1
+      "error": "Deletion: 'bir' at position 5",
+      "reason": "'bir' means 'a' or 'one', omitting it does not significantly change the meaning in this context.",
+      "score": 3
     },
     {
-      "error": "Deletion: 'talebim' at position 8",
-      "reason": "'talebim' means 'my request', and its omission removes the subject of the request, making the sentence incomplete.",
-      "score": 1
+      "error": "Substitution: 'artışı' to 'artış' at position 7",
+      "reason": "'artışı' is the accusative form of 'increase', 'artış' is the nominative; this is a minor grammatical error, meaning is preserved.",
+      "score": 2
     },
     {
       "error": "Substitution: 'olur' to 'olduğunuzu' at position 14",
-      "reason": "'olur musun' means 'can you', 'olduğunuzu' means 'that you are', which changes the request to a statement, altering the meaning significantly.",
+      "reason": "'olur musun' means 'can you help', 'olduğunuzu' means 'that you are (helpful)'; this changes the sentence from a request to a statement, which significantly alters the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'musun' at position 15",
-      "reason": "Omitting 'musun' removes the question form, turning a request into a statement, which significantly changes the meaning.",
+      "reason": "Omitting 'musun' removes the question/request form, which is essential to the intent of the sentence.",
       "score": 1
     }
   ]

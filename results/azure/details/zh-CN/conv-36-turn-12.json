@@ -1,15 +1,26 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "Yeah.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "yeah",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "yeah",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'yeah' at position 0",
+      "reason": "The expected word is in Chinese ('你', meaning 'you'), but the actual transcription is in English ('yeah'), which is a completely different language and meaning. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "The word '好' (meaning 'good' or 'hello' in Chinese) is missing entirely from the actual transcription, which further derails the intended meaning. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

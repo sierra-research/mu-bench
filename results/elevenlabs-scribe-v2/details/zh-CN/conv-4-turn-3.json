@@ -1,15 +1,21 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "嗯，好。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
+  "wer": 0.5,
+  "werNormalizedGold": "你 好",
+  "werNormalizedPredicted": "好",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "好",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '你' at position 0",
+      "reason": "The word '你' (you) is missing, which changes the greeting from 'hello (to you)' to just 'hello'. While the overall intent is still a greeting, omitting the subject makes it less personal but does not derail the meaning.",
+      "score": 2
+    }
+  ]
 }

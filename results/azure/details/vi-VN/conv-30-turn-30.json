@@ -1,20 +1,25 @@
 {
   "gold": "Thấy rồi.",
-  "predicted": "Det var vi.",
+  "predicted": "Ừ.",
   "unintelligible": false,
-  "wer": 1.5,
-  "werNormalizedGold": "Thấy rồi.",
-  "werNormalizedPredicted": "Det var vi.",
-  "qualityScore": 1,
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "thấy rồi",
+  "werNormalizedPredicted": "ừ",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Thấy rồi.",
-  "sigWerNormalizedPredicted": "Det var vi.",
+  "sigWerNormalizedGold": "thấy rồi",
+  "sigWerNormalizedPredicted": "ừ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thấy' to 'var' at position 0",
-      "reason": "The actual transcription is in a completely different language (Swedish) than the expected (Vietnamese), making the meaning incoherent and unrelated.",
+      "error": "Substitution: 'thấy' to 'ừ' at position 0",
+      "reason": "'thấy' means 'see/saw' while 'ừ' is an affirmative response like 'uh-huh' or 'yes', which changes the meaning of the sentence completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 1",
+      "reason": "'rồi' means 'already' or 'done', and its omission further changes the meaning, making the actual response unrelated to the expected sentence.",
       "score": 1
     }
   ]

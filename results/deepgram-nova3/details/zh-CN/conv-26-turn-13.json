@@ -1,31 +1,26 @@
 {
   "gold": "美玲 美玲。",
-  "predicted": "是美国地区",
+  "predicted": "是",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "美玲 美玲。",
-  "werNormalizedPredicted": "是美国地区",
-  "qualityScore": 1,
-  "significantWer": 0.4,
+  "werNormalizedGold": "美玲 美玲",
+  "werNormalizedPredicted": "是",
+  "qualityScore": null,
+  "significantWer": 0.5,
   "majorErrorsCount": 2,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "美 玲 美 玲 。",
-  "sigWerNormalizedPredicted": "是 美 国 地 区",
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "美 玲 美 玲",
+  "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
-      "error": "Insertion: '是' at position 0",
-      "reason": "The word '是' (is/are) is not present in the expected sentence and changes the meaning of the sentence.",
+      "error": "Substitution: '美' to '是' at position 0",
+      "reason": "'是' (means 'is/are') is completely different in meaning from '美' (means 'beautiful'), which derails the intended meaning and does not preserve the original name or word.",
       "score": 1
     },
     {
-      "error": "Substitution: '玲' to '国' at position 1",
-      "reason": "Substituting '玲' (a name character) with '国' (country) changes the meaning entirely and makes the sentence incoherent.",
+      "error": "Deletion: '玲' at position 1",
+      "reason": "Omitting '玲' (a part of the name '美玲') results in a significant loss of information, especially since names are important to preserve exactly.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 4",
-      "reason": "Missing punctuation does not affect the meaning of the sentence.",
-      "score": 3
     }
   ]
 }

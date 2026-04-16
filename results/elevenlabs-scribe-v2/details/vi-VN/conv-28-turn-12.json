@@ -1,15 +1,21 @@
 {
   "gold": "Làm nhanh giúp mình.",
-  "predicted": "Làm nhanh giúp mình",
+  "predicted": "Làm nhanh cũng được.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Làm nhanh giúp mình.",
-  "werNormalizedPredicted": "Làm nhanh giúp mình.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "làm nhanh giúp mình",
+  "werNormalizedPredicted": "làm nhanh cũng được",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Làm nhanh giúp mình.",
-  "sigWerNormalizedPredicted": "Làm nhanh giúp mình.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "làm nhanh giúp mình",
+  "sigWerNormalizedPredicted": "làm nhanh cũng được",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'giúp' to 'cũng' at position 2",
+      "reason": "'giúp' means 'help' and 'cũng' means 'also'; this changes the intent from asking for help to simply stating that something is also acceptable, which significantly alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -1,20 +1,25 @@
 {
   "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
-  "predicted": "Sí, más cincuenta y dos, cincuenta y cinco, uno dos tres cuatro cinco seis siete ocho.",
+  "predicted": "Sí, más cincuenta y dos, cincuenta y cinco, uno dos tres cuatro cinco seis siete ocho. Decir",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
-  "werNormalizedGold": "Más 52 55 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Sí, más 52 55 1 2 3 4 5 6 7 8.",
-  "qualityScore": 3,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "si mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho decir",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Más 52 55 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Sí, más 52 55 1 2 3 4 5 6 7 8.",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "si mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho decir",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Más' to 'más' at position 0",
-      "reason": "The insertion of 'Sí,' (meaning 'Yes,') adds a polite affirmation but does not change the meaning or content of the main information (the phone number).",
+      "error": "Insertion: 'si' at position 0",
+      "reason": "'si' (yes) at the beginning adds an affirmation that is not present in the expected sentence, but does not change the core meaning of the information being conveyed.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'decir' at position 15",
+      "reason": "'decir' (to say) at the end is an extraneous word that does not alter the meaning of the main content, but is unnecessary.",
       "score": 2
     }
   ]

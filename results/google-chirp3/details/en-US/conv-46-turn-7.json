@@ -1,26 +1,26 @@
 {
   "gold": "That's done.",
-  "predicted": "done",
+  "predicted": "son",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "That's done.",
-  "werNormalizedPredicted": "Done.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 2,
-  "sigWerNormalizedGold": "That's done.",
-  "sigWerNormalizedPredicted": "Done.",
+  "werNormalizedGold": "that is done",
+  "werNormalizedPredicted": "son",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "that is done",
+  "sigWerNormalizedPredicted": "son",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'That's' to 'Done.' at position 0",
-      "reason": "'That's done.' is a confirmation of completion, while 'Done.' simply states completion. The omission of 'That's' slightly changes the tone but not the overall meaning.",
-      "score": 2
+      "error": "Substitution: 'that' to 'son' at position 0",
+      "reason": "'son' is a completely different word from 'that', changing the meaning of the sentence and making it incoherent.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'done.' at position 1",
-      "reason": "'Done.' is present in the actual, so this is not a true deletion. The main issue is the omission of 'That's', not 'done.'",
-      "score": 3
+      "error": "Deletion: 'is' at position 1",
+      "reason": "Omitting 'is' further breaks the grammatical structure and meaning of the sentence, contributing to incoherence.",
+      "score": 1
     }
   ]
 }

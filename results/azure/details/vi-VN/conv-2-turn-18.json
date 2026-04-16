@@ -1,25 +1,30 @@
 {
   "gold": "Rồi. Mở rồi. Mở rồi.",
-  "predicted": "Ôi rồi.",
+  "predicted": "M rồi m rồi.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "Rồi. Mở rồi. Mở rồi.",
-  "werNormalizedPredicted": "Ôi rồi.",
-  "qualityScore": 1,
-  "significantWer": 0.4,
-  "majorErrorsCount": 2,
+  "wer": 0.6,
+  "werNormalizedGold": "rồi mở rồi mở rồi",
+  "werNormalizedPredicted": "m rồi m rồi",
+  "qualityScore": null,
+  "significantWer": 0.6,
+  "majorErrorsCount": 3,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Rồi. Mở rồi. Mở rồi.",
-  "sigWerNormalizedPredicted": "Ôi rồi.",
+  "sigWerNormalizedGold": "rồi mở rồi mở rồi",
+  "sigWerNormalizedPredicted": "m rồi m rồi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Rồi.' to 'Ôi' at position 0",
-      "reason": "'Rồi' means 'already' or 'done', while 'Ôi' is an exclamation like 'oh'. This changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'rồi' to 'm' at position 0",
+      "reason": "'m' is not semantically related to 'rồi', which means 'then' or 'already' in Vietnamese. This substitution makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'Mở' at position 1",
-      "reason": "The repeated phrase 'Mở rồi' ('opened already') is missing, which removes the main information about the action being completed. This is a significant omission.",
+      "error": "Deletion: 'mở' at position 1",
+      "reason": "Omitting 'mở' ('open') removes a key action from the sentence, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'mở' to 'm' at position 3",
+      "reason": "Again, 'm' does not convey the meaning of 'mở' ('open'), resulting in a loss of intended meaning.",
       "score": 1
     }
   ]

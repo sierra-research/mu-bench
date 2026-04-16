@@ -1,31 +1,31 @@
 {
   "gold": "Maybe you can hear that snoring in the background, we're going to party.",
-  "predicted": "You can hear that snoring in the background. We got a party.",
+  "predicted": "And you can hear that snoring in the background. We got a party.",
   "unintelligible": false,
-  "wer": 0.38461538461538464,
-  "werNormalizedGold": "Maybe you can hear that snoring in the background, we're going to party.",
-  "werNormalizedPredicted": "You can hear that snoring in the background, we got a party.",
-  "qualityScore": 3,
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Maybe you can hear that snoring in the background, we're going to party.",
-  "sigWerNormalizedPredicted": "You can hear that snoring in the background, we got a party.",
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
+  "werNormalizedPredicted": "and you can hear that snoring in the background we got a party",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
+  "sigWerNormalizedPredicted": "and you can hear that snoring in the background we got a party",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Maybe' to 'You' at position 0",
-      "reason": "'Maybe' introduces uncertainty or possibility, while 'You' directly addresses the listener. This changes the tone and intent of the sentence, but the main information about hearing snoring remains. Minor change in meaning.",
+      "error": "Substitution: 'maybe' to 'and' at position 0",
+      "reason": "'Maybe' introduces uncertainty or possibility, while 'and' is a conjunction; this changes the nuance but not the core meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Deletion: 'you' at position 1",
-      "reason": "The word 'you' is omitted, but the sentence still addresses the listener and remains understandable. The meaning is only slightly affected.",
+      "error": "Substitution: 'are' to 'got' at position 10",
+      "reason": "'We are going to party' vs. 'we got a party' changes the tense and slightly the meaning, but both indicate a party is happening; minor change.",
       "score": 2
     },
     {
-      "error": "Substitution: 'we're' to 'we' at position 9",
-      "reason": "'We're going to party' means an intention to party, while 'we got a party' means there is a party. This changes the meaning from intent to possession, which is a significant shift.",
-      "score": 1
+      "error": "Deletion: 'to' at position 12",
+      "reason": "Omitting 'to' in 'going to party' vs. 'got a party' is part of the previous substitution and does not significantly alter the meaning.",
+      "score": 2
     }
   ]
 }

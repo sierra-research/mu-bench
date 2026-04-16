@@ -1,15 +1,26 @@
 {
   "gold": "美玲。",
-  "predicted": "May ling.",
+  "predicted": "Maybe.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "美玲。",
-  "werNormalizedPredicted": "美玲。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "美 玲 。",
-  "sigWerNormalizedPredicted": "美 玲 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "美玲",
+  "werNormalizedPredicted": "maybe",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "美 玲",
+  "sigWerNormalizedPredicted": "maybe",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'maybe' at position 0",
+      "reason": "The actual transcription 'maybe' is an English word and does not correspond to the Chinese character '美', which is a proper noun or name. This is a significant error as it completely changes the meaning and language.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The character '玲' is missing entirely from the actual transcription, resulting in loss of information and making the transcription incomplete. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

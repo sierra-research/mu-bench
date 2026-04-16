@@ -1,20 +1,25 @@
 {
   "gold": "Sí, sí, ese es.",
-  "predicted": "sí, ese es.",
+  "predicted": "sí, eso es.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Sí, sí, ese es.",
-  "werNormalizedPredicted": "sí, ese es.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "si si ese es",
+  "werNormalizedPredicted": "si eso es",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Sí, sí, ese es.",
-  "sigWerNormalizedPredicted": "sí, ese es.",
+  "sigWerNormalizedGold": "si si ese es",
+  "sigWerNormalizedPredicted": "si eso es",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Sí,' at position 0",
-      "reason": "The omission of the first 'Sí,' removes an initial affirmation, but the overall meaning of the sentence remains clear and affirmative. The intent is preserved.",
+      "error": "Substitution: 'si' to 'eso' at position 1",
+      "reason": "'si' (yes) and 'eso' (that) are different words, and this changes the meaning of the phrase from affirmation to referencing something, which can confuse the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ese' at position 2",
+      "reason": "Omitting 'ese' (that) removes a demonstrative pronoun, which can make the sentence less clear or change its meaning.",
       "score": 2
     }
   ]

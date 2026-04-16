@@ -1,15 +1,36 @@
 {
   "gold": "C N 1 2 2. C N 122.",
-  "predicted": "CN bir iki iki. CN 122",
+  "predicted": "JN bir iki iki. JN yüz yirmi iki",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "C N 1 2 2. C N 122.",
-  "werNormalizedPredicted": "C N 1 2 2. C N 122.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "C N 1 2 2. C N 122.",
-  "sigWerNormalizedPredicted": "C N 1 2 2. C N 122.",
-  "sigWerErrors": []
+  "wer": 0.36363636363636365,
+  "werNormalizedGold": "c n one two two c n one hundred twenty two",
+  "werNormalizedPredicted": "jn one two two jn one hundred twenty two",
+  "qualityScore": null,
+  "significantWer": 0.36363636363636365,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "c n one two two c n one hundred twenty two",
+  "sigWerNormalizedPredicted": "jn one two two jn one hundred twenty two",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'jn' at position 0",
+      "reason": "'c' and 'jn' are completely different letters; in a spelled-out sequence, this changes the intended information significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting a letter in a spelled-out sequence alters the intended code or information, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'jn' at position 5",
+      "reason": "Same as above: 'c' and 'jn' are unrelated letters, which is a significant error in a spelled-out context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 6",
+      "reason": "Omitting 'n' in a spelled-out sequence changes the intended information, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

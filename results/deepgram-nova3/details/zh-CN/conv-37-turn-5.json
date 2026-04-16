@@ -1,15 +1,21 @@
 {
   "gold": "你说吧。",
-  "predicted": "你说吧",
+  "predicted": "你说我吧",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你说吧。",
-  "werNormalizedPredicted": "你说吧。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "你 说 吧 。",
-  "sigWerNormalizedPredicted": "你 说 吧 。",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "你 说 吧",
+  "werNormalizedPredicted": "你 说 我 吧",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "你 说 吧",
+  "sigWerNormalizedPredicted": "你 说 我 吧",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '我' at position 2",
+      "reason": "The insertion of '我' ('I' or 'me') changes the meaning of the sentence from an open-ended prompt ('You speak') to a statement involving the speaker ('You say me'), which alters the intent and coherence of the sentence.",
+      "score": 1
+    }
+  ]
 }

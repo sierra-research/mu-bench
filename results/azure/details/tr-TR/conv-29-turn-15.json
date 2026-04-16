@@ -1,30 +1,25 @@
 {
   "gold": "Hayır. Evet. Zaynep nokta Arslan olacak.",
-  "predicted": "Hayır eee. Evet Zeynep. Arslan olacak.",
+  "predicted": "Hayır, zayn arslan olacak.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Hayır. Evet. Zaynep nokta Arslan olacak.",
-  "werNormalizedPredicted": "Hayır eee. Evet. Zeynep. Arslan olacak.",
-  "qualityScore": 2,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "hayır evet zaynep nokta arslan olacak",
+  "werNormalizedPredicted": "hayır zaynep arslan olacak",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Hayır. Evet. Zaynep nokta Arslan olacak.",
-  "sigWerNormalizedPredicted": "Hayır eee. Evet. Zeynep. Arslan olacak.",
+  "sigWerNormalizedGold": "hayır evet zaynep nokta arslan olacak",
+  "sigWerNormalizedPredicted": "hayır zaynep arslan olacak",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır.' to 'eee.' at position 0",
-      "reason": "The filler 'eee' does not change the meaning of the sentence, it is a minor disfluency.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'Zaynep' to 'Zeynep.' at position 2",
-      "reason": "Minor spelling difference in a proper noun, but the name is still clearly recognizable.",
-      "score": 2
+      "error": "Deletion: 'evet' at position 1",
+      "reason": "'evet' means 'yes' in Turkish and its omission removes an affirmation from the sentence, which could change the intended meaning.",
+      "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 3",
-      "reason": "Omitting 'nokta' (meaning 'dot') removes an important part of the information, especially if this is an email or web address, which can significantly change the meaning.",
+      "reason": "'nokta' means 'dot' and is likely part of a name or email address (e.g., 'zaynep.arlsan'), so omitting it can significantly change the information conveyed.",
       "score": 1
     }
   ]

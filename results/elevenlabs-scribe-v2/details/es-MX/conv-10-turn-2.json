@@ -1,20 +1,25 @@
 {
   "gold": "C N 7 8 7.",
-  "predicted": "CN siete ocho ocho siete",
+  "predicted": "CR siete ocho ocho siete",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "C N 7 8 7.",
-  "werNormalizedPredicted": "C N 7 8 8 7.",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 0.4,
+  "werNormalizedGold": "c n seven eight seven",
+  "werNormalizedPredicted": "c r seven eight eight seven",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "C N 7 8 7.",
-  "sigWerNormalizedPredicted": "C N 7 8 8 7.",
+  "sigWerNormalizedGold": "c n seven eight seven",
+  "sigWerNormalizedPredicted": "c r seven eight eight seven",
   "sigWerErrors": [
     {
-      "error": "Insertion: '8' at position 4",
-      "reason": "An extra digit was inserted in a spelled-out sequence, which changes the intended sequence and could result in a completely different code or number.",
+      "error": "Substitution: 'n' to 'r' at position 1",
+      "reason": "In a sequence of spelled-out letters, substituting 'n' with 'r' changes the intended sequence, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'eight' at position 3",
+      "reason": "Adding an extra 'eight' in a sequence of numbers/letters changes the intended sequence, which is a significant error.",
       "score": 1
     }
   ]

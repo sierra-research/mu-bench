@@ -1,15 +1,26 @@
 {
   "gold": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "predicted": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por mail?",
+  "predicted": "Yo no puedo verificar eso o me revisará su de qué manera, por mail",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "werNormalizedPredicted": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3076923076923077,
+  "werNormalizedGold": "donde puedo verificar eso o me avisaras tu de que manera por email",
+  "werNormalizedPredicted": "yo no puedo verificar eso o me revisara su de que manera por email",
+  "qualityScore": null,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "sigWerNormalizedPredicted": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "donde puedo verificar eso o me avisaras tu de que manera por email",
+  "sigWerNormalizedPredicted": "yo no puedo verificar eso o me revisara su de que manera por email",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'donde' to 'no' at position 0",
+      "reason": "The insertion of 'yo' (I) changes the subject of the sentence, which can alter the meaning but does not derail the overall intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'avisaras' to 'revisara' at position 6",
+      "reason": "Substituting 'donde' (where) with 'no' (no) changes the meaning of the sentence significantly, as it alters the context from asking 'where' to a negation, which derails the intended meaning.",
+      "score": 1
+    }
+  ]
 }

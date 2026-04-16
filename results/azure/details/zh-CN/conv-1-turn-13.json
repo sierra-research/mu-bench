@@ -1,15 +1,21 @@
 {
   "gold": "听到了吗？",
-  "predicted": "听到了吗？",
+  "predicted": "听到的吗？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "听到了吗？",
-  "werNormalizedPredicted": "听到了吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "听 到 了 吗 ？",
-  "sigWerNormalizedPredicted": "听 到 了 吗 ？",
-  "sigWerErrors": []
+  "wer": 0.25,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "听到的吗",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 了 吗",
+  "sigWerNormalizedPredicted": "听 到 的 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '了' to '的' at position 2",
+      "reason": "'了' indicates a completed action (past tense), while '的' is a possessive or descriptive particle. Substituting '了' with '的' changes the grammatical structure and meaning of the sentence, making it unclear or incorrect in context.",
+      "score": 1
+    }
+  ]
 }

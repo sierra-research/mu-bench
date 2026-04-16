@@ -1,36 +1,36 @@
 {
   "gold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
-  "predicted": "Evet varya sabit istiyorum bana 2023 yılında gönderir misin?",
+  "predicted": "Evet var hesap ekseni istiyorum bana 2023 yılında gönderir misin?",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
-  "werNormalizedPredicted": "Evet, varya sabit istiyorum. Bana 2023 yılında gönderir misin?",
-  "qualityScore": 2,
-  "significantWer": 0.25,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
-  "sigWerNormalizedPredicted": "Evet, varya sabit istiyorum. Bana 2023 yılında gönderir misin?",
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
+  "werNormalizedPredicted": "evet var hesap ekseni istiyorum bana iki bin yirmi üç yılında gönderir misin",
+  "qualityScore": null,
+  "significantWer": 0.13333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
+  "sigWerNormalizedPredicted": "evet var hesap ekseni istiyorum bana iki bin yirmi üç yılında gönderir misin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ben' to 'varya' at position 1",
-      "reason": "'ben' means 'I', while 'varya' is not a correct word in this context and makes the sentence incoherent.",
+      "error": "Substitution: 'ben' to 'var' at position 1",
+      "reason": "'ben' means 'I', indicating the speaker, while 'var' means 'there is/are', which changes the subject and intent of the sentence, significantly altering the meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: 'ekstresi' at position 3",
-      "reason": "Omitting 'ekstresi' (statement) removes the key object of the request, significantly changing the meaning.",
+      "error": "Substitution: 'ekstresi' to 'ekseni' at position 3",
+      "reason": "'ekstresi' means 'statement' (as in bank statement), while 'ekseni' means 'axis', which is unrelated and makes the sentence incoherent in context.",
       "score": 1
     },
     {
-      "error": "Substitution: 'yılının' to 'yılında' at position 7",
-      "reason": "'yılının' (of the year) specifies possession, while 'yılında' (in the year) is a minor grammatical difference that does not change the overall meaning.",
+      "error": "Substitution: 'yılının' to 'yılında' at position 10",
+      "reason": "'yılının' means 'of the year', indicating possession, while 'yılında' means 'in the year', which is a minor grammatical difference and does not significantly change the meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'hesap' at position 8",
-      "reason": "Omitting 'hesap' (account) removes the subject of the statement, making the request unclear.",
-      "score": 1
+      "error": "Deletion: 'hesap' at position 11",
+      "reason": "Omitting 'hesap' (account) before 'ekstresi' (statement) makes the phrase less clear, but since 'ekstresi' is already mentioned, the meaning is still mostly understandable.",
+      "score": 2
     }
   ]
 }

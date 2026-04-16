@@ -1,20 +1,30 @@
 {
   "gold": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi khi nào thì nhận được cái thẻ đó?",
-  "predicted": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi là khi nào thì nhận được cái thẻ đó mới.",
+  "predicted": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi là khi nào nhận được cái thẻ đó mới.",
   "unintelligible": false,
-  "wer": 0.10526315789473684,
-  "werNormalizedGold": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi khi nào thì nhận được cái thẻ đó?",
-  "werNormalizedPredicted": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi khi nào thì nhận được cái thẻ đó mới?",
-  "qualityScore": 3,
+  "wer": 0.15789473684210525,
+  "werNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
+  "werNormalizedPredicted": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi là khi nào nhận được cái thẻ đó mới",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi khi nào thì nhận được cái thẻ đó?",
-  "sigWerNormalizedPredicted": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi khi nào thì nhận được cái thẻ đó mới?",
+  "sigWerNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
+  "sigWerNormalizedPredicted": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi là khi nào nhận được cái thẻ đó mới",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'đó?' to 'mới?' at position 18",
-      "reason": "The word 'mới' (meaning 'new' or 'just') is added at the end, which slightly changes the nuance of the question but does not alter the main meaning. The sentence still asks about when the card will be received, with 'mới' adding a nuance of 'when will I actually get it', but the intent remains clear.",
+      "error": "Insertion: 'là' at position 11",
+      "reason": "The insertion of 'là' (which means 'is' in Vietnamese) does not significantly change the meaning of the sentence; it is a minor grammatical addition that does not affect the intent or clarity.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'thì' at position 13",
+      "reason": "The omission of 'thì' (which is often used as a linking word similar to 'then' or 'so') does not change the overall meaning of the sentence; the sentence remains clear and understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'mới' at position 19",
+      "reason": "The addition of 'mới' (which means 'just' or 'only then') slightly changes the nuance, implying the card is only received at that time, but does not derail the main meaning of the sentence.",
       "score": 2
     }
   ]

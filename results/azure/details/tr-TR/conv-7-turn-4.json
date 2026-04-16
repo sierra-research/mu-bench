@@ -1,15 +1,31 @@
 {
   "gold": "Takip kodu C N 1 1 0. Doğru mudur?",
-  "predicted": "Takip kodu.cn birsıfır doğru mudur?",
+  "predicted": "Hakim kodu CM birsıfır doğru mudur?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Takip kodu C N 1 1 0. Doğru mudur?",
-  "werNormalizedPredicted": "Takip kodu C N 1 1 0. Doğru mudur?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "takip kodu c n bir bir sıfır doğru mudur",
+  "werNormalizedPredicted": "hakim kodu c m bir sıfır doğru mudur",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 3,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Takip kodu C N 1 1 0. Doğru mudur?",
-  "sigWerNormalizedPredicted": "Takip kodu C N 1 1 0. Doğru mudur?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "takip kodu c n bir bir sıfır doğru mudur",
+  "sigWerNormalizedPredicted": "hakim kodu c m bir sıfır doğru mudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'takip' to 'hakim' at position 0",
+      "reason": "'takip' (tracking) and 'hakim' (judge) are completely different words and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'n' to 'm' at position 3",
+      "reason": "Changing 'n' to 'm' in a code sequence can result in an incorrect code, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 4",
+      "reason": "Omitting one of the 'bir' (one) digits in a code sequence changes the code, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

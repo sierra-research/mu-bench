@@ -1,21 +1,26 @@
 {
   "gold": "Sí, claro. Es el número de registrador el que necesitas, ¿verdad?",
-  "predicted": "Sí, claro. Es el número de registrador que necesitas, ¿verdad?",
+  "predicted": "Sí, claro. Es el número registrado que necesitas, ¿verdad?",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werNormalizedGold": "Sí, claro. Es el número de registrador el que necesitas, ¿verdad?",
-  "werNormalizedPredicted": "Sí, claro. Es el número de registrador que necesitas, ¿verdad?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "si claro es el numero de registrador el que necesitas verdad",
+  "werNormalizedPredicted": "si claro es el numero registrado que necesitas verdad",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Sí, claro. Es el número de registrador el que necesitas, ¿verdad?",
-  "sigWerNormalizedPredicted": "Sí, claro. Es el número de registrador que necesitas, ¿verdad?",
+  "sigWerNormalizedGold": "si claro es el numero de registrador el que necesitas verdad",
+  "sigWerNormalizedPredicted": "si claro es el numero registrado que necesitas verdad",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'el' at position 7",
-      "reason": "The omission of 'el' (the) before 'que necesitas' is a minor grammatical error in Spanish, but it does not change the overall meaning of the sentence. The listener still understands what is being referred to.",
-      "score": 2
+      "error": "Substitution: 'de' to 'registrado' at position 5",
+      "reason": "'de' is a preposition, while 'registrado' is a past participle; this changes the grammatical structure and meaning of the phrase, making the sentence less clear and potentially confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'registrador' at position 6",
+      "reason": "Omitting 'registrador' removes the noun that specifies what number is being referred to, which significantly alters the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

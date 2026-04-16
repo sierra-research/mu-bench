@@ -3,24 +3,24 @@
   "predicted": "Pardon, ilk söylediğinizle ikinci söylediğiniz farklı oldu. Siz bir daha söyler misiniz?",
   "unintelligible": false,
   "wer": 0.15384615384615385,
-  "werNormalizedGold": "Pardon. İlk söylediğiniz ve ikinci söylediğiniz farklı oldu. Siz bir daha söyler misiniz?",
-  "werNormalizedPredicted": "Pardon. İlk söylediğinizle ikinci söylediğiniz farklı oldu. Siz bir daha söyler misiniz?",
-  "qualityScore": 3,
+  "werNormalizedGold": "pardon ilk söylediğiniz ve ikinci söylediğiniz farklı oldu siz bir daha söyler misiniz",
+  "werNormalizedPredicted": "pardon ilk söylediğinizle ikinci söylediğiniz farklı oldu siz bir daha söyler misiniz",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Pardon. İlk söylediğiniz ve ikinci söylediğiniz farklı oldu. Siz bir daha söyler misiniz?",
-  "sigWerNormalizedPredicted": "Pardon. İlk söylediğinizle ikinci söylediğiniz farklı oldu. Siz bir daha söyler misiniz?",
+  "sigWerNormalizedGold": "pardon ilk söylediğiniz ve ikinci söylediğiniz farklı oldu siz bir daha söyler misiniz",
+  "sigWerNormalizedPredicted": "pardon ilk söylediğinizle ikinci söylediğiniz farklı oldu siz bir daha söyler misiniz",
   "sigWerErrors": [
     {
       "error": "Substitution: 'söylediğiniz' to 'söylediğinizle' at position 2",
-      "reason": "The word 'söylediğinizle' (with what you said) combines 'söylediğiniz' (what you said) and the conjunction 've' (and) into a single word, but the meaning of the sentence remains the same.",
-      "score": 3
+      "reason": "The word 'söylediğinizle' (with what you said) merges 'söylediğiniz' (what you said) and the conjunction 've' (and), but the overall meaning of the sentence remains the same.",
+      "score": 2
     },
     {
       "error": "Deletion: 've' at position 3",
-      "reason": "The conjunction 've' (and) is omitted because 'söylediğinizle' already implies the connection between the two items. The overall meaning is unchanged.",
-      "score": 3
+      "reason": "The conjunction 've' (and) is omitted, but its meaning is incorporated into 'söylediğinizle', so the sentence meaning is preserved.",
+      "score": 2
     }
   ]
 }

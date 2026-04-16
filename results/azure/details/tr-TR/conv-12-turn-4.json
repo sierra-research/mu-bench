@@ -1,15 +1,51 @@
 {
   "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "predicted": "Yalnız e posta adresimi yanlış oldu. Sonu gmail değil e mail yani edirne'nin nesiyleemail.com.",
+  "predicted": "Yalnız e posta adresimi yanlış oldu. Sonuç gmail değil e mail yani edirne'nin nesiyleemail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "werNormalizedPredicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "sigWerNormalizedPredicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "sigWerErrors": []
+  "wer": 0.47368421052631576,
+  "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "werNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonuç gmail değil e mail yani edirnenin nesiyle email com",
+  "qualityScore": null,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonuç gmail değil e mail yani edirnenin nesiyle email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adresim' to 'adresimi' at position 3",
+      "reason": "'adresim' (my address) vs 'adresimi' (my address as object); minor grammatical error, does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sonu' to 'sonuç' at position 6",
+      "reason": "'sonu' means 'the end (of)', 'sonuç' means 'result'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 9",
+      "reason": "Extra 'e' before 'mail'; does not change the meaning, as 'e-mail' and 'email' are equivalent.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'e' at position 11",
+      "reason": "'email' vs 'mail'; in context, 'email' is more specific, but 'mail' could be ambiguous. Minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'e' to 'nesiyle' at position 13",
+      "reason": "Missing 'e' in the explanation of the email spelling; could cause confusion in spelling out the address.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'si' at position 14",
+      "reason": "'e' (the letter) vs 'nesiyle' (with its 'n'); this changes the explanation of the email spelling, making it confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 17",
+      "reason": "Missing 'si' (its) in the phrase 'e si ile' (with its e); minor grammatical error, does not change overall meaning.",
+      "score": 2
+    }
+  ]
 }

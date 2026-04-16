@@ -1,15 +1,31 @@
 {
   "gold": "我正在等待信卡，想知道它状态。",
-  "predicted": "我正在等待信用卡，想知道它的状态。",
+  "predicted": "我正在也等待新卡，想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我正在等待信卡，想知道它状态。",
-  "werNormalizedPredicted": "我正在等待信卡，想知道它状态。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "我 正 在 等 待 信 卡 ， 想 知 道 它 状 态 。",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 信 卡 ， 想 知 道 它 状 态 。",
-  "sigWerErrors": []
+  "wer": 0.23076923076923078,
+  "werNormalizedGold": "我正在等待信卡 想知道它状态",
+  "werNormalizedPredicted": "我正在也等待新卡 想知道它的状态",
+  "qualityScore": null,
+  "significantWer": 0.07692307692307693,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 正 在 等 待 信 卡 想 知 道 它 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 也 等 待 新 卡 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '也' at position 3",
+      "reason": "The insertion of '也' (also) does not significantly change the meaning of the sentence; it adds emphasis but the intent remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '信' to '新' at position 5",
+      "reason": "'信卡' (credit card) is changed to '新卡' (new card), which changes the meaning from asking about a credit card to asking about a new card. This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '的' at position 11",
+      "reason": "The insertion of '的' is a minor grammatical addition that does not affect the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

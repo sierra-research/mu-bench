@@ -1,15 +1,21 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "是，好。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "是 好",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "是 好",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '是' at position 0",
+      "reason": "'你' means 'you' and '是' means 'is/are', so the subject of the sentence is changed, resulting in a significant change in meaning.",
+      "score": 1
+    }
+  ]
 }

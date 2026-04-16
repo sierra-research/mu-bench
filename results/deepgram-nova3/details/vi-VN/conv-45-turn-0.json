@@ -1,40 +1,35 @@
 {
   "gold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "predicted": "Tôi làm mất thẻ tuần trước có sinh cấp lại thẻ không biết hiện tại là tình trạng thẻ như thế nào",
+  "predicted": "Tôi làm mất thẻ. Tuần trước có sinh cấp lại thẻ. Không biết hiện tại là từng trạng thẻ như thế nào.",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "werNormalizedPredicted": "tôi làm mất thẻ. tuần trước, có xin cấp lại thẻ. không biết hiện tại là tình trạng thẻ như thế nào?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.22727272727272727,
+  "werNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
+  "werNormalizedPredicted": "tôi làm mất thẻ tuần trước có sinh cấp lại thẻ không biết hiện tại là từng trạng thẻ như thế nào",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
+  "majorErrorsCount": 2,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "sigWerNormalizedPredicted": "tôi làm mất thẻ. tuần trước, có xin cấp lại thẻ. không biết hiện tại là tình trạng thẻ như thế nào?",
+  "sigWerNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
+  "sigWerNormalizedPredicted": "tôi làm mất thẻ tuần trước có sinh cấp lại thẻ không biết hiện tại là từng trạng thẻ như thế nào",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'Tuần' to 'tuần' at position 4",
-      "reason": "Difference is only in capitalization, which should be ignored.",
-      "score": 3
+      "error": "Substitution: 'là' to 'làm' at position 1",
+      "reason": "'là' (to be) and 'làm' (to do/make) are different verbs; this changes the meaning of the sentence and makes it less coherent.",
+      "score": 1
     },
     {
       "error": "Deletion: 'tôi' at position 6",
-      "reason": "Omitting the subject 'tôi' (I) in the second clause does not change the meaning, as it is implied from context.",
-      "score": 3
+      "reason": "Omitting 'tôi' (I) removes the subject from the second clause, but the meaning is still mostly understandable from context.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'Không' to 'không' at position 12",
-      "reason": "Difference is only in capitalization, which should be ignored.",
-      "score": 3
+      "error": "Substitution: 'xin' to 'sinh' at position 8",
+      "reason": "'xin' (to request) and 'sinh' (to be born) are completely different in meaning; this substitution makes the sentence confusing and changes the intent.",
+      "score": 1
     },
     {
-      "error": "Insertion: 'là' at position 16",
-      "reason": "The insertion of 'là' (is) slightly changes the sentence structure but does not alter the overall meaning.",
+      "error": "Substitution: 'tình' to 'từng' at position 16",
+      "reason": "Inserting 'là' (to be) here is a minor grammatical error and does not significantly change the meaning of the sentence.",
       "score": 2
     }
   ]

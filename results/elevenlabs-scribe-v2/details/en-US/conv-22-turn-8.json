@@ -1,15 +1,21 @@
 {
   "gold": "Bye.",
-  "predicted": "Bye",
+  "predicted": "Hi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Bye.",
-  "werNormalizedPredicted": "Bye.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "bye",
+  "werNormalizedPredicted": "hi",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 1,
   "totalWordsCount": 1,
-  "sigWerNormalizedGold": "Bye.",
-  "sigWerNormalizedPredicted": "Bye.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "bye",
+  "sigWerNormalizedPredicted": "hi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bye' to 'hi' at position 0",
+      "reason": "'Bye' and 'hi' are greetings with opposite meanings (farewell vs. greeting), so the meaning of the sentence is completely changed.",
+      "score": 1
+    }
+  ]
 }

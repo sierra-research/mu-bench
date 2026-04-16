@@ -1,25 +1,25 @@
 {
   "gold": "1 3 9。1 3 9。",
-  "predicted": "伊森祝。伊森祝。",
+  "predicted": "Ethan Zhu。Ethan Zhu。",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "1 3 9。1 3 9。",
-  "werNormalizedPredicted": "伊森祝。伊森祝。",
-  "qualityScore": 1,
-  "significantWer": 0.25,
+  "wer": 1.0,
+  "werNormalizedGold": "one three nine one three nine",
+  "werNormalizedPredicted": "ethan zhu ethan zhu",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
   "majorErrorsCount": 2,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "1 3 9 。 1 3 9 。",
-  "sigWerNormalizedPredicted": "伊 森 祝 。 伊 森 祝 。",
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "one three nine one three nine",
+  "sigWerNormalizedPredicted": "ethan zhu ethan zhu",
   "sigWerErrors": [
     {
-      "error": "Substitution: '1' to '伊' at position 0",
-      "reason": "The expected transcription is a sequence of numbers, but the actual transcription is in a different language (Chinese characters), which completely changes the meaning and makes the transcription incoherent.",
+      "error": "Substitution: 'one' to 'ethan' at position 0",
+      "reason": "'one' is a number, while 'ethan' is a name; this completely changes the meaning and makes the transcription incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: '1' to '伊' at position 4",
-      "reason": "The expected transcription is a sequence of numbers, but the actual transcription is in a different language (Chinese characters), which completely changes the meaning and makes the transcription incoherent.",
+      "error": "Deletion: 'three' at position 4",
+      "reason": "The number 'three' is missing from the actual transcription, which is a significant omission in a sequence of numbers.",
       "score": 1
     }
   ]

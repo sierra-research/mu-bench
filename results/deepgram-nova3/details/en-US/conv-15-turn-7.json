@@ -2,25 +2,20 @@
   "gold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
   "predicted": "Number would be one two one two one two three four five six seven.",
   "unintelligible": false,
-  "wer": 0.13333333333333333,
-  "werNormalizedGold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
-  "werNormalizedPredicted": "Number would be 1 2 1 2 1 2 3 4 5 6 7.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.06666666666666667,
+  "werNormalizedGold": "phone number would be one two one two one two three four five six seven",
+  "werNormalizedPredicted": "number would be one two one two one two three four five six seven",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Phone number would be 1 2 1 2 1 2 3 4 5 6 7.",
-  "sigWerNormalizedPredicted": "Number would be 1 2 1 2 1 2 3 4 5 6 7.",
+  "sigWerNormalizedGold": "phone number would be one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "number would be one two one two one two three four five six seven",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Phone' to 'Number' at position 0",
-      "reason": "'Phone number' is a common phrase, but substituting 'Phone' with 'Number' slightly changes the specificity. However, in this context, 'Number would be...' is still understandable and refers to the same thing, so the meaning is not significantly changed.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'number' at position 1",
-      "reason": "'Phone number' is a set phrase, and omitting 'number' after 'Number' makes the phrase less natural but does not derail the meaning. The listener still understands that a phone number is being given.",
-      "score": 2
+      "error": "Deletion: 'phone' at position 0",
+      "reason": "The word 'phone' is missing, which changes the meaning from a general 'number' to specifically a 'phone number'. This is a significant error as it could lead to confusion about what type of number is being referred to.",
+      "score": 1
     }
   ]
 }

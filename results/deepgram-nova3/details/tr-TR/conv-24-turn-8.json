@@ -1,15 +1,26 @@
 {
   "gold": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "predicted": "Tekrar ediyorum, hayvanı yüze sekiz üç sıfır üç doğru mu?",
+  "predicted": "Tekrar ediyorum, ay bana yüz seksen üç üç doğru mu?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "werNormalizedPredicted": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3,
+  "werNormalizedGold": "tekrar ediyorum haymana rize sekiz üç sıfır üç doğru mu",
+  "werNormalizedPredicted": "tekrar ediyorum haymana rize yüz seksen üç üç doğru mu",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "sigWerNormalizedPredicted": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tekrar ediyorum haymana rize sekiz üç sıfır üç doğru mu",
+  "sigWerNormalizedPredicted": "tekrar ediyorum haymana rize yüz seksen üç üç doğru mu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sekiz' to 'seksen' at position 4",
+      "reason": "'yüz' (one hundred) is inserted, which changes the number sequence and the meaning of the information being conveyed (likely a code or number).",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sıfır' at position 6",
+      "reason": "'sekiz' (eight) is replaced with 'seksen' (eighty), which significantly alters the intended number and meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -1,25 +1,30 @@
 {
   "gold": "Có thể hỗ trợ tự động, không cần nói chuyện với nhân viên.",
-  "predicted": "Có thể hỗ trợ cho tự động, không cần nói chuyện với y huy.",
+  "predicted": "Có thể hỏi chờ được không tự động không cần mấy chuyện với y như.",
   "unintelligible": false,
-  "wer": 0.23076923076923078,
-  "werNormalizedGold": "Có thể hỗ trợ tự động, không cần nói chuyện với nhân viên.",
-  "werNormalizedPredicted": "Có thể hỗ trợ cho tự động, không cần nói chuyện với y huy.",
-  "qualityScore": 2,
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "wer": 0.5384615384615384,
+  "werNormalizedGold": "có thể hỗ trợ tự động không cần nói chuyện với nhân viên",
+  "werNormalizedPredicted": "có thể hỏi chờ được không tự động không cần mấy chuyện với y như",
+  "qualityScore": null,
+  "significantWer": 0.23076923076923078,
+  "majorErrorsCount": 3,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Có thể hỗ trợ tự động, không cần nói chuyện với nhân viên.",
-  "sigWerNormalizedPredicted": "Có thể hỗ trợ cho tự động, không cần nói chuyện với y huy.",
+  "sigWerNormalizedGold": "có thể hỗ trợ tự động không cần nói chuyện với nhân viên",
+  "sigWerNormalizedPredicted": "có thể hỏi chờ được không tự động không cần mấy chuyện với y như",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'cho' at position 4",
-      "reason": "The insertion of 'cho' ('for') before 'tự động' ('automatic') does not significantly change the meaning of the sentence; it is a minor grammatical difference in Vietnamese and the intent remains clear.",
-      "score": 2
+      "error": "Substitution: 'hỗ' to 'được' at position 2",
+      "reason": "The word 'hỏi' (ask) is inserted, which introduces a new intent (asking) not present in the original sentence, potentially confusing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nói' to 'mấy' at position 8",
+      "reason": "'hỗ' (support) is replaced by 'được' (can/be able to), which changes the meaning of the sentence from 'support' to 'can', altering the intent.",
+      "score": 1
     },
     {
       "error": "Substitution: 'nhân' to 'y' at position 11",
-      "reason": "Substituting 'nhân viên' (staff) with 'y huy' changes the meaning of the sentence, as 'y huy' is not a correct or meaningful replacement for 'nhân viên', making the sentence confusing and incoherent at the end.",
+      "reason": "'nói' (speak) is replaced by 'mấy' (some/several), which changes the meaning of the phrase and makes the sentence less coherent.",
       "score": 1
     }
   ]

@@ -2,14 +2,20 @@
   "gold": "Es 55 1 2 3 4 56 78.",
   "predicted": "Este 5512345678.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Es 55 1 2 3 4 56 78.",
-  "werNormalizedPredicted": "Es 55 1 2 3 4 56 78.",
-  "qualityScore": 2,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "este cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Es 55 1 2 3 4 56 78.",
-  "sigWerNormalizedPredicted": "Es 55 1 2 3 4 56 78.",
-  "sigWerErrors": []
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "este cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'este' at position 0",
+      "reason": "'es' means 'is' in Spanish, while 'este' means 'this'. The substitution changes the subject of the sentence but does not derail the overall meaning, as the rest of the sentence is a sequence of numbers. The intent (providing a number sequence) is still clear.",
+      "score": 2
+    }
+  ]
 }

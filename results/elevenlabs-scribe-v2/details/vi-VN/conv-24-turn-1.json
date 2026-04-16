@@ -1,30 +1,20 @@
 {
   "gold": "Chào Anna nha. Mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
-  "predicted": "Ờ, chào Anna nha. Mình đang muốn tối ưu chi tiết, tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
+  "predicted": "Ờ, chào Anna nha. Mình đang muốn tối ưu chi tiết-- tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
   "unintelligible": false,
-  "wer": 0.21875,
-  "werNormalizedGold": "Chào Anna nha. Mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
-  "werNormalizedPredicted": "Ờ, chào Anna nha. Mình đang muốn tối ưu chi tiết, tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
-  "qualityScore": 2,
+  "wer": 0.03125,
+  "werNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "werNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 32,
-  "sigWerNormalizedGold": "Chào Anna nha. Mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
-  "sigWerNormalizedPredicted": "Ờ, chào Anna nha. Mình đang muốn tối ưu chi tiết, tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
+  "sigWerNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "sigWerNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Chào' to 'chào' at position 0",
-      "reason": "'Ờ,' is a filler word at the beginning and does not change the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: 'tiết,' at position 9",
-      "reason": "Difference in capitalization only, which should be ignored as per guidance.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'thẻ' to 'về' at position 16",
-      "reason": "'Tối ưu chi tiết' is an extra phrase, but the main intent of optimizing personal spending remains clear. The insertion does not derail the meaning.",
+      "error": "Deletion: 'thẻ' at position 16",
+      "reason": "'thẻ tín dụng' means 'credit card', while 'tín dụng' alone means 'credit'. Omitting 'thẻ' changes the meaning from 'credit card limit' to just 'credit limit', which could cause confusion but is still related to the main topic.",
       "score": 2
     }
   ]

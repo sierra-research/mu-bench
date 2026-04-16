@@ -1,15 +1,26 @@
 {
   "gold": "不是卡片发没发货，我是说我的卡冻结了，刷不了。",
-  "predicted": "不是卡片发没发货，我是说我的卡冻结了，刷不了。",
+  "predicted": "不是卡片发没发货，我说是我的卡冻结了，刷不了。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "不是卡片发没发货，我是说我的卡冻结了，刷不了。",
-  "werNormalizedPredicted": "不是卡片发没发货，我是说我的卡冻结了，刷不了。",
-  "qualityScore": 3,
+  "wer": 0.1,
+  "werNormalizedGold": "不是卡片发没发货 我是说我的卡冻结了 刷不了",
+  "werNormalizedPredicted": "不是卡片发没发货 我说是我的卡冻结了 刷不了",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 23,
-  "sigWerNormalizedGold": "不 是 卡 片 发 没 发 货 ， 我 是 说 我 的 卡 冻 结 了 ， 刷 不 了 。",
-  "sigWerNormalizedPredicted": "不 是 卡 片 发 没 发 货 ， 我 是 说 我 的 卡 冻 结 了 ， 刷 不 了 。",
-  "sigWerErrors": []
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "不 是 卡 片 发 没 发 货 我 是 说 我 的 卡 冻 结 了 刷 不 了",
+  "sigWerNormalizedPredicted": "不 是 卡 片 发 没 发 货 我 说 是 我 的 卡 冻 结 了 刷 不 了",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '说' at position 9",
+      "reason": "The word '说' (say) is inserted before '是', which slightly changes the sentence structure but does not alter the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '说' at position 9",
+      "reason": "The word order is swapped ('是 说' becomes '说 是'), but both words are present and the meaning is preserved. This is a minor error in word order, not affecting the main intent.",
+      "score": 2
+    }
+  ]
 }

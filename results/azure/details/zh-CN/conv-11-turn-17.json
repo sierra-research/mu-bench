@@ -2,30 +2,25 @@
   "gold": "你说的不对！你为什么不听好呀。",
   "predicted": "你说的不对，你为什么听不听我呀？",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "你说的不对！你为什么不听好呀。",
-  "werNormalizedPredicted": "你说的不对！你为什么听不听我呀？",
-  "qualityScore": 2,
-  "significantWer": 0.13333333333333333,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "你 说 的 不 对 你 为 什么 不 听 好 呀",
+  "werNormalizedPredicted": "你 说 的 不 对 你 为 什么 听 不 听 我 呀",
+  "qualityScore": null,
+  "significantWer": 0.15384615384615385,
   "majorErrorsCount": 2,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "你 说 的 不 对 ！ 你 为 什 么 不 听 好 呀 。",
-  "sigWerNormalizedPredicted": "你 说 的 不 对 ！ 你 为 什 么 听 不 听 我 呀 ？",
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "你 说 的 不 对 你 为 什 么 不 听 好 呀",
+  "sigWerNormalizedPredicted": "你 说 的 不 对 你 为 什 么 听 不 听 我 呀",
   "sigWerErrors": [
     {
-      "error": "Insertion: '听' at position 10",
-      "reason": "The insertion of '听' changes the sentence structure and meaning, making the question more repetitive and less clear.",
+      "error": "Insertion: '听' at position 9",
+      "reason": "The insertion of '听' (listen) changes the structure of the question from 'why don't you listen well' to 'why listen or not listen', which alters the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: '好' to '我' at position 12",
-      "reason": "Substituting '好' (good) with '我' (me) changes the object of the verb, altering the meaning of the sentence significantly.",
+      "error": "Substitution: '好' to '我' at position 11",
+      "reason": "Substituting '好' (well/good) with '我' (me/I) changes the object and meaning of the sentence, making it incoherent and significantly different from the original intent.",
       "score": 1
-    },
-    {
-      "error": "Substitution: '。' to '？' at position 14",
-      "reason": "Punctuation difference between period and question mark does not affect the meaning in this context.",
-      "score": 3
     }
   ]
 }

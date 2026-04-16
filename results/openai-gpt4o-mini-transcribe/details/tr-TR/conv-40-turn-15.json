@@ -1,0 +1,31 @@
+{
+  "gold": "Yazıyor musun? Artı 90 123.",
+  "predicted": "Yazıyor musun? Artık doksan yüz yirmi.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "werNormalizedPredicted": "yazıyor musun artık doksan yüz yirmi",
+  "qualityScore": null,
+  "significantWer": 0.42857142857142855,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "sigWerNormalizedPredicted": "yazıyor musun artık doksan yüz yirmi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'artı' to 'artık' at position 2",
+      "reason": "'artı' means 'plus' (used for phone numbers), while 'artık' means 'anymore' or 'now'. This changes the meaning of the sentence significantly, especially in the context of reciting a phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 4",
+      "reason": "'bir' means 'one', 'yüz' means 'hundred'. This is a significant change in the number sequence, altering the intended phone number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'üç' at position 6",
+      "reason": "'iki üç' means 'two three', while 'yirmi' means 'twenty'. This changes the digits in the number, which is a significant error in the context of a phone number.",
+      "score": 1
+    }
+  ]
+}

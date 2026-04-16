@@ -1,15 +1,31 @@
 {
   "gold": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "predicted": "Thấy rồi, bây giờ tôi làm gì nữa.",
+  "predicted": "Ờ thế rồi bây giờ tôi sẽ nghĩ nữa.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "werNormalizedPredicted": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "a thay roi bay gio toi lam gi nua",
+  "werNormalizedPredicted": "the roi bay gio toi se nghi nua",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "sigWerNormalizedPredicted": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "a thay roi bay gio toi lam gi nua",
+  "sigWerNormalizedPredicted": "the roi bay gio toi se nghi nua",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'the' at position 0",
+      "reason": "'a' is a Vietnamese word meaning 'ah' or an exclamation, while 'the' is an English article; this changes the language and meaning at the start of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'thay' at position 1",
+      "reason": "'thay' means 'see' or 'realize' in Vietnamese; omitting it removes important context from the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lam' to 'se' at position 6",
+      "reason": "'lam' means 'do' or 'make', while 'se' means 'will'; this changes the verb tense and the meaning of the action in the sentence.",
+      "score": 2
+    }
+  ]
 }

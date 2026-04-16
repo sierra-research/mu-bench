@@ -1,15 +1,26 @@
 {
   "gold": "No, ya va ahí.",
-  "predicted": "No, ya, bye",
+  "predicted": "No, ya bye",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "No, ya va ahí.",
-  "werNormalizedPredicted": "No, ya va ahí.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.5,
+  "werNormalizedGold": "no ya va ahi",
+  "werNormalizedPredicted": "no ya bye",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "No, ya va ahí.",
-  "sigWerNormalizedPredicted": "No, ya va ahí.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "no ya va ahi",
+  "sigWerNormalizedPredicted": "no ya bye",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'va' to 'bye' at position 2",
+      "reason": "'va' (Spanish for 'goes') is replaced with 'bye' (English farewell), which changes the meaning and language of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ahi' at position 3",
+      "reason": "The omission of 'ahi' ('there' in Spanish) removes important information about location, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -1,21 +1,26 @@
 {
   "gold": "Cảm ơn bạn. Chúc Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
-  "predicted": "Cảm ơn bạn, chúc mừng Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhé. Mình cảm ơn.",
+  "predicted": "Cảm ơn bạn. Chúc Anna một ngày vui vẻ. Mình Anna kết thúc cuộc gọi cho mình nhé. Mình cảm ơn.",
   "unintelligible": false,
-  "wer": 0.05,
-  "werNormalizedGold": "Cảm ơn bạn. Chúc Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
-  "werNormalizedPredicted": "Cảm ơn bạn. Chúc mừng Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
-  "qualityScore": 3,
+  "wer": 0.1,
+  "werNormalizedGold": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
+  "werNormalizedPredicted": "cảm ơn bạn chúc anna một ngày vui vẻ mình anna kết thúc cuộc gọi cho mình nhé mình cảm ơn",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "Cảm ơn bạn. Chúc Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
-  "sigWerNormalizedPredicted": "Cảm ơn bạn. Chúc mừng Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
+  "sigWerNormalizedGold": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
+  "sigWerNormalizedPredicted": "cảm ơn bạn chúc anna một ngày vui vẻ mình anna kết thúc cuộc gọi cho mình nhé mình cảm ơn",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'mừng' at position 4",
-      "reason": "'Chúc Anna một ngày vui vẻ' (Wish Anna a happy day) vs. 'Chúc mừng Anna một ngày vui vẻ' (Congratulate Anna a happy day). The insertion of 'mừng' changes the meaning from simply wishing to congratulating, which is a different intent but does not derail the overall meaning of the sentence.",
+      "error": "Insertion: 'mình' at position 9",
+      "reason": "The insertion of 'mình' before 'anna' does not change the overall meaning of the sentence; it is a minor redundancy but does not derail the intent or clarity.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 16",
+      "reason": "'Nhá' and 'nhé' are both Vietnamese sentence-ending particles with similar meanings and tone; the substitution does not affect the meaning of the sentence.",
+      "score": 3
     }
   ]
 }

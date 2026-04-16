@@ -1,15 +1,31 @@
 {
   "gold": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp.",
-  "predicted": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp",
+  "predicted": "Không phải lòng người đâu ai liền nhân viên hoặc là trực tiếp",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp.",
-  "werNormalizedPredicted": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.7272727272727273,
+  "werNormalizedGold": "vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp",
+  "werNormalizedPredicted": "không phải lòng người đâu ai liền nhân viên hoặc là trực tiếp",
+  "qualityScore": null,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp.",
-  "sigWerNormalizedPredicted": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp",
+  "sigWerNormalizedPredicted": "không phải lòng người đâu ai liền nhân viên hoặc là trực tiếp",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'phải' at position 0",
+      "reason": "'không' (no/not) introduces negation, which changes the intent of the sentence from a polite request to a negative statement.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chuyển' to 'đâu' at position 2",
+      "reason": "'vui' (please) is a polite request, while 'phải' (must/should) changes the tone and meaning, making the sentence less polite and altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hỗ' to 'hoặc' at position 7",
+      "reason": "The insertion of 'người' (person) adds confusion and disrupts the original meaning, making the sentence less coherent.",
+      "score": 1
+    }
+  ]
 }

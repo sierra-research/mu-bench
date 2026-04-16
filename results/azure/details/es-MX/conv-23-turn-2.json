@@ -1,21 +1,31 @@
 {
   "gold": "Espere. Deje y lo anoto.",
-  "predicted": "Ay, espere, deje lo noto.",
+  "predicted": "Ay, espere, deje la noto.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "Espere. Deje y lo anoto.",
-  "werNormalizedPredicted": "Ay, espere. Deje y lo anoto.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.8,
+  "werNormalizedGold": "espere deje y lo anoto",
+  "werNormalizedPredicted": "ay espere deje la noto",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Espere. Deje y lo anoto.",
-  "sigWerNormalizedPredicted": "Ay, espere. Deje y lo anoto.",
+  "sigWerNormalizedGold": "espere deje y lo anoto",
+  "sigWerNormalizedPredicted": "ay espere deje la noto",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Espere.' to 'espere.' at position 0",
-      "reason": "'Ay' is an interjection expressing surprise or attention, but does not change the meaning of the sentence. The main instruction remains the same.",
+      "error": "Insertion: 'ay' at position 0",
+      "reason": "'Ay' is an interjection expressing surprise or attention, but its addition does not change the main meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'y' to 'la' at position 2",
+      "reason": "Substituting 'y' (and) with 'la' (the/her) changes the structure of the sentence, but the overall intent (waiting and noting something) is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'anoto' at position 4",
+      "reason": "'Anoto' (I note/write down) is missing, which removes the main action of the sentence and significantly alters the meaning.",
+      "score": 1
     }
   ]
 }

@@ -1,26 +1,26 @@
 {
   "gold": "I don't know how I feel about this.",
-  "predicted": "Don't know how I feel about this.",
+  "predicted": "Don't know how you feel about this.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "I don't know how I feel about this.",
-  "werNormalizedPredicted": "Don't know how I feel about this.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "I don't know how I feel about this.",
-  "sigWerNormalizedPredicted": "Don't know how I feel about this.",
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "i do not know how i feel about this",
+  "werNormalizedPredicted": "do not know how you feel about this",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "i do not know how i feel about this",
+  "sigWerNormalizedPredicted": "do not know how you feel about this",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'I' to 'Don't' at position 0",
-      "reason": "Dropping 'I' does not change the overall meaning of the sentence; the subject is still implied and the intent is clear.",
-      "score": 3
+      "error": "Deletion: 'i' at position 0",
+      "reason": "The subject 'I' is omitted, but the sentence still makes sense as a general statement. The omission does not significantly change the overall meaning, though it does shift the perspective slightly.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'don't' at position 1",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Substitution: 'i' to 'you' at position 5",
+      "reason": "Changing 'I' to 'you' shifts the perspective from first person to second person, which alters who the sentence is about. This is a significant change in meaning.",
+      "score": 1
     }
   ]
 }

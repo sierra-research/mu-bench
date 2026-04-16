@@ -1,25 +1,25 @@
 {
   "gold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "predicted": "Bir dakika, Ahmet ismim de Ahmet Aslan dediniz ya Ahmet Arslan R harfi var arada Ahmet Arslan.",
+  "predicted": "Bir dakika, Ahmet ismim de Ahmet Aslan dediniz, Ahmet Arslan R harfi var arada Ahmet Arslan.",
   "unintelligible": false,
   "wer": 0.26666666666666666,
-  "werNormalizedGold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "werNormalizedPredicted": "Bir dakika. Ahmet ismim de Ahmet Aslan dediniz ya, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "qualityScore": 3,
+  "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "werNormalizedPredicted": "bir dakika ahmet ismim de ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
-  "sigWerNormalizedPredicted": "Bir dakika. Ahmet ismim de Ahmet Aslan dediniz ya, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
+  "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerNormalizedPredicted": "bir dakika ahmet ismim de ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İsmimde' to 'de' at position 2",
-      "reason": "The insertion of 'Ahmet' repeats the name unnecessarily but does not change the overall meaning of the sentence.",
+      "error": "Substitution: 'ismimde' to 'de' at position 2",
+      "reason": "The word 'ahmet' is inserted before 'ismim de', but since 'ahmet' is already mentioned and the overall meaning is not changed, this is a minor error.",
       "score": 2
     },
     {
-      "error": "Substitution: 'de,' to 'ya,' at position 6",
-      "reason": "'İsmimde' (in my name) is replaced with 'de' (too/as well), which slightly changes the structure but the meaning is still clear in context.",
+      "error": "Deletion: 'de' at position 6",
+      "reason": "'ismimde' (in my name) is replaced with 'de' (too/also), which changes the structure but the context is still understandable. The meaning is only slightly affected.",
       "score": 2
     }
   ]

@@ -1,21 +1,31 @@
 {
   "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "",
+  "predicted": "Cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu mươi tám",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "wer": 0.3076923076923077,
+  "werNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu mươi tám",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu mươi tám",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Cộng' at position 0",
-      "reason": "The entire expected transcription is missing in the actual output, which means all information is lost and the sentence is completely absent.",
-      "score": 1
+      "error": "Insertion: 'mươi' at position 2",
+      "reason": "'mươi' changes 'tám bốn' (84) to 'tám mươi bốn' (84), which is a different way of saying the same number, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'một' to 'mốt' at position 4",
+      "reason": "'mươi' changes 'chín một' (91) to 'chín mươi mốt' (91), which is a different way of saying the same number, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'bảy' to 'mươi' at position 11",
+      "reason": "'mốt' is a variant of 'một' used in Vietnamese numbers (e.g., 'chín mươi mốt' for 91), so the meaning is the same.",
+      "score": 3
     }
   ]
 }

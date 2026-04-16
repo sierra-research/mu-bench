@@ -1,21 +1,21 @@
 {
   "gold": "OK. Thôi được rồi.",
-  "predicted": "Ok. À thôi được rồi.",
+  "predicted": "Ok.",
   "unintelligible": false,
   "wer": 0.75,
-  "werNormalizedGold": "OK. Thôi được rồi.",
-  "werNormalizedPredicted": "Okay. À thôi được rồi.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "okay thôi được rồi",
+  "werNormalizedPredicted": "okay",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "OK. Thôi được rồi.",
-  "sigWerNormalizedPredicted": "Okay. À thôi được rồi.",
+  "sigWerNormalizedGold": "okay thôi được rồi",
+  "sigWerNormalizedPredicted": "okay",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'OK.' to 'À' at position 0",
-      "reason": "'OK.' and 'Okay.' are semantically equivalent; this is just a variant spelling/word form.",
-      "score": 3
+      "error": "Deletion: 'thôi' at position 1",
+      "reason": "'thôi' is an important part of the phrase 'okay thôi được rồi', which together means 'okay, that's enough' or 'alright, that's it'. Omitting 'thôi' and the following words significantly changes or truncates the intended meaning.",
+      "score": 1
     }
   ]
 }

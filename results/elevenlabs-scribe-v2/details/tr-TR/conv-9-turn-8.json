@@ -2,14 +2,25 @@
   "gold": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
   "predicted": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet'le Arslan arasında nokta olacak",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "werNormalizedPredicted": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "sigWerNormalizedPredicted": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
-  "sigWerErrors": []
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
+  "werNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet'sle arslan arasında nokta olacak",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
+  "sigWerNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet'sle arslan arasında nokta olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ahmet' to 'ahmet'sle' at position 8",
+      "reason": "'ahmet'sle' is a misrecognition of 'ahmet ile' (meaning 'ahmet and'), merging the two words and introducing an incorrect form. This could confuse the meaning, especially in an email address context where the dot between names is important.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ile' at position 9",
+      "reason": "The word 'ile' (meaning 'and') is missing, which is important for correctly conveying the structure of the email address. Its absence could lead to misunderstanding the address format.",
+      "score": 1
+    }
+  ]
 }

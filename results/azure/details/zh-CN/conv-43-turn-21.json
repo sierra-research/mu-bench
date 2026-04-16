@@ -1,21 +1,26 @@
 {
   "gold": "我，我的姓名是君玲，君玲。",
-  "predicted": "我的姓名是君临，君临。",
+  "predicted": "Well, the same name is Jun Ling Jun Ling.",
   "unintelligible": false,
-  "wer": 0.15384615384615385,
-  "werNormalizedGold": "我，我的姓名是君玲，君玲。",
-  "werNormalizedPredicted": "我的姓名是君玲，君玲。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "我 ， 我 的 姓 名 是 君 玲 ， 君 玲 。",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲 ， 君 玲 。",
+  "wer": 0.6,
+  "werNormalizedGold": "我 我的姓名是君玲 君玲",
+  "werNormalizedPredicted": "the same name is 君玲 君玲",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 我 的 姓 名 是 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "the same name is 君 玲 君 玲",
   "sigWerErrors": [
     {
-      "error": "Deletion: '，' at position 1",
-      "reason": "The missing comma is only a punctuation difference and does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: '我' to 'the' at position 0",
+      "reason": "The word '我' (I) is replaced with 'the', which is a different language and changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '名' at position 4",
+      "reason": "'名' (given name) is missing in the actual transcription, which omits important information about the name structure.",
+      "score": 1
     }
   ]
 }

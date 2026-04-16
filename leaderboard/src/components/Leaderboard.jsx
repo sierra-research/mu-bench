@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { LOCALES, PROVIDERS, SAMPLE_UTTERANCES, getProviderScore } from "../data/data.js";
-import { METRICS, METRIC_KEYS, getSortDirection } from "../utils/metrics.js";
+import { METRICS, VISIBLE_METRIC_KEYS, getSortDirection } from "../utils/metrics.js";
 import "./Leaderboard.css";
 import sampleEnUS_0 from "../samples/en-US/conv-39-turn-8.wav";
 import sampleEsMX_0 from "../samples/es-MX/conv-49-turn-5.wav";
@@ -263,66 +263,47 @@ export default function Leaderboard() {
                     * Fraction of utterances containing at least one meaning-changing transcription error.
                 </p>
 
-                <a
-                    className="metrics-blog-link"
-                    href="#paper"
-                    onClick={(e) => {
-                        e.preventDefault();
-                        window.location.hash = "#paper";
-                        setTimeout(() => {
-                            const el = document.getElementById("how-we-measure");
-                            if (el) {
-                                const y = el.getBoundingClientRect().top + window.scrollY - 90;
-                                window.scrollTo(0, y);
-                            }
-                        }, 100);
-                    }}
-                >
-                    For metric definitions, read our blog here
-                </a>
-
-                <div className="metrics-info-text">
-                    <h3 className="metrics-info-title">Our Dataset</h3>
-                    <p className="metrics-info-desc">
-                        The benchmark dataset comprises 250 scripted phone conversations with Sierra's voice AI banking
-                        agent across {LOCALES.length} locales, yielding 4,270 human-annotated utterances totaling 5.1
-                        hours of audio. Callers used their own phones from real environments, producing natural
-                        background noise, disfluencies, and emotional variation at 24 kHz mono telephony quality.
-                    </p>
-                    <p className="metrics-info-desc" style={{ marginTop: "8px" }}>
-                        Professional native-speaking annotators produce ground truth transcripts for each caller
-                        utterance. All personal details (names, emails, phone numbers, addresses) are fictional. Only
-                        the caller's speech is included -- agent responses are excluded.
-                    </p>
-                </div>
-
                 <div className="action-cards">
-                    <a
-                        href="https://huggingface.co/datasets/sierra-research/mu-bench"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="action-card"
-                    >
-                        <span className="action-card-title">Download Dataset</span>
+                    <div className="action-card">
+                        <span className="action-card-title">View the Dataset</span>
                         <span className="action-card-desc">
-                            Get the full benchmark audio dataset and gold-standard transcripts.
+                            This dataset contains 250 real phone calls spanning 5.1 hours of audio, in which users
+                            across five locales spoke to an AI banking agent about their credit card details.
                         </span>
-                        <span className="action-card-btn">Download</span>
-                    </a>
-                    <a href="https://github.com/sierra-research/mu-bench" className="action-card">
-                        <span className="action-card-title">Submit via Pull Request</span>
+                        <a
+                            className="action-card-btn"
+                            href="https://huggingface.co/datasets/sierra-research/mu-bench"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Download on Hugging Face
+                        </a>
+                    </div>
+                    <div className="action-card">
+                        <span className="action-card-title">Add Your Model</span>
                         <span className="action-card-desc">
-                            Add your model's results to the leaderboard through a GitHub PR.
+                            Submit your model's transcripts and they will be automatically scored and ranked. See the
+                            submission guide for formatting and step-by-step instructions.
                         </span>
-                        <span className="action-card-btn">Submit</span>
-                    </a>
-                    <a href="#paper" className="action-card">
-                        <span className="action-card-title">Read Blog</span>
+                        <a
+                            className="action-card-btn"
+                            href="https://github.com/sierra-research/mu-bench/blob/main/submissions/SUBMITTING.md"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Submission Instructions
+                        </a>
+                    </div>
+                    <div className="action-card">
+                        <span className="action-card-title">Read About Our Metrics</span>
                         <span className="action-card-desc">
-                            Read about our evaluation methodology, metrics, and scoring criteria.
+                            We focus on the metrics that matter in production: latency and semantic accuracy,
+                            emphasizing meaning-changing transcription errors over surface-level formatting.
                         </span>
-                        <span className="action-card-btn">Read Blog</span>
-                    </a>
+                        <a className="action-card-btn" href="#paper">
+                            Read the Sierra Blog
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -487,7 +468,7 @@ function ProviderDetailLocale({ provider, locale }) {
                 </tr>
             </thead>
             <tbody>
-                {METRIC_KEYS.map((mk) => {
+                {VISIBLE_METRIC_KEYS.map((mk) => {
                     const val = getProviderScore(provider, mk, locale);
                     return (
                         <tr key={mk}>
@@ -528,12 +509,12 @@ function ProviderDetail({ providerId, providers, locale, onClose }) {
 
                 <div className="provider-detail-footer">
                     <a
-                        href="https://github.com/sierra-research/mu-bench/tree/main/submissions"
+                        href="https://github.com/sierra-research/mu-bench/blob/main/submissions/SUBMITTING.md"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="provider-detail-link"
                     >
-                        View all submissions on GitHub &rarr;
+                        Submit your own model &rarr;
                     </a>
                 </div>
             </div>

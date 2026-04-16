@@ -1,15 +1,21 @@
 {
   "gold": "对的。",
-  "predicted": "对的",
+  "predicted": "听得到。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "对的。",
-  "werNormalizedPredicted": "对的。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "对 的 。",
-  "sigWerNormalizedPredicted": "对 的 。",
-  "sigWerErrors": []
+  "wer": 1.5,
+  "werNormalizedGold": "对的",
+  "werNormalizedPredicted": "听得到",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "对 的",
+  "sigWerNormalizedPredicted": "听 得 到",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '对' to '得' at position 0",
+      "reason": "'对' means 'correct' or 'yes', while '听' means 'listen' or 'hear'; this changes the meaning of the sentence completely.",
+      "score": 1
+    }
+  ]
 }

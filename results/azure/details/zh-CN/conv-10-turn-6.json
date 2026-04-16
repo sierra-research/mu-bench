@@ -2,24 +2,24 @@
   "gold": "那我的姓，姓名呢？",
   "predicted": "那我的性命呢？",
   "unintelligible": false,
-  "wer": 0.4444444444444444,
-  "werNormalizedGold": "那我的姓，姓名呢？",
-  "werNormalizedPredicted": "那我的性命呢？",
-  "qualityScore": 1,
-  "significantWer": 0.2222222222222222,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "那 我的 姓 姓名 呢",
+  "werNormalizedPredicted": "那 我的 性命 呢",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
   "majorErrorsCount": 2,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "那 我 的 姓 ， 姓 名 呢 ？",
-  "sigWerNormalizedPredicted": "那 我 的 性 命 呢 ？",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "那 我 的 姓 姓 名 呢",
+  "sigWerNormalizedPredicted": "那 我 的 性 命 呢",
   "sigWerErrors": [
     {
       "error": "Substitution: '姓' to '性' at position 3",
-      "reason": "'姓' means 'surname' while '性' means 'sex/gender'; this changes the meaning of the sentence significantly.",
+      "reason": "'姓' means 'surname' while '性' means 'sex/gender'; this changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
     },
     {
-      "error": "Deletion: '姓' at position 5",
-      "reason": "Omitting the second '姓' (surname) removes the reference to 'surname' in the phrase 'surname, full name', which changes the intended meaning.",
+      "error": "Deletion: '名' at position 5",
+      "reason": "Omitting '名' (which means 'name') changes the meaning from 'surname and name' to just 'surname' or 'life', which derails the intended meaning.",
       "score": 1
     }
   ]

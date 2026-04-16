@@ -1,21 +1,26 @@
 {
   "gold": "好，谢谢。",
-  "predicted": "谢谢",
+  "predicted": "是",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "好，谢谢。",
-  "werNormalizedPredicted": "谢谢。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "好 ， 谢 谢 。",
-  "sigWerNormalizedPredicted": "谢 谢 。",
+  "wer": 1.0,
+  "werNormalizedGold": "好 谢谢",
+  "werNormalizedPredicted": "是",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "好 谢 谢",
+  "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
-      "error": "Deletion: '好' at position 0",
-      "reason": "The word '好' (meaning 'hello' or 'good') is a polite greeting or acknowledgment at the start of the sentence. Its omission does not significantly change the meaning of the sentence, which is still a polite expression of thanks.",
-      "score": 2
+      "error": "Substitution: '好' to '是' at position 0",
+      "reason": "'好' means 'good' or 'okay', while '是' means 'is' or 'yes'; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '谢' at position 1",
+      "reason": "'谢' means 'thank', and its omission removes the meaning of gratitude from the sentence, significantly altering the intended message.",
+      "score": 1
     }
   ]
 }

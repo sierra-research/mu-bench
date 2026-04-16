@@ -1,20 +1,30 @@
 {
   "gold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "predicted": "Zainnap. Altıncı harf P olacak. Pırasanın P'si, T değil.",
+  "predicted": "Zainnet altıncı harf p olacak, pırasanın p'si değil.",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werNormalizedGold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "werNormalizedPredicted": "Zainnap. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "sigWerNormalizedPredicted": "Zainnap. Altıncı harf P olacak. Pırasanın P'si, T değil.",
+  "wer": 0.4,
+  "werNormalizedGold": "zaynep altinci harf p olacak pirasanin ps i t degil",
+  "werNormalizedPredicted": "zainnet altinci harf p olacak pirasanin psi degil",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "zaynep altinci harf p olacak pirasanin ps i t degil",
+  "sigWerNormalizedPredicted": "zainnet altinci harf p olacak pirasanin psi degil",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Zaynep.' to 'Zainnap.' at position 0",
-      "reason": "The name 'Zaynep' is misspelled as 'Zainnap', which is a significant change in a proper noun and could lead to confusion or misidentification.",
+      "error": "Substitution: 'zaynep' to 'zainnet' at position 0",
+      "reason": "'zaynep' is a proper noun (likely a name), and 'zainnet' is a significant misspelling that makes the name unrecognizable, which could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ps' to 'psi' at position 6",
+      "reason": "'ps' and 'psi' are related, but 'psi' is a different term (the Greek letter or a word), which could change the intended meaning in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'i' at position 7",
+      "reason": "Omitting 'i' after 'ps' changes the structure of the phrase, but the overall meaning is still mostly clear.",
       "score": 2
     }
   ]

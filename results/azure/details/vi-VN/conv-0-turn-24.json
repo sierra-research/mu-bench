@@ -1,20 +1,25 @@
 {
   "gold": "9 1.",
-  "predicted": "Chỉ có.",
+  "predicted": "Chỉ.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "9 1.",
-  "werNormalizedPredicted": "Chỉ có.",
-  "qualityScore": 1,
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "nine one",
+  "werNormalizedPredicted": "chi",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "9 1.",
-  "sigWerNormalizedPredicted": "Chỉ có.",
+  "sigWerNormalizedGold": "nine one",
+  "sigWerNormalizedPredicted": "chi",
   "sigWerErrors": [
     {
-      "error": "Substitution: '9' to 'Chỉ' at position 0",
-      "reason": "The actual transcription is in a different language (Vietnamese) than the expected (English/numeric), making the meaning completely different and incoherent.",
+      "error": "Substitution: 'nine' to 'chi' at position 0",
+      "reason": "'chi' is a completely different word from 'nine', changing the meaning entirely and making the transcription incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'one' at position 1",
+      "reason": "The omission of 'one' removes important information, significantly altering the intended meaning.",
       "score": 1
     }
   ]

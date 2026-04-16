@@ -1,20 +1,25 @@
 {
   "gold": "Trả thêm vớ.",
-  "predicted": "Chạy thêm vơ?",
+  "predicted": "Chả thêm bơ",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Trả thêm vớ.",
-  "werNormalizedPredicted": "Chạy thêm vớ.",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "trả thêm vớ",
+  "werNormalizedPredicted": "chả thêm bơ",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Trả thêm vớ.",
-  "sigWerNormalizedPredicted": "Chạy thêm vớ.",
+  "sigWerNormalizedGold": "trả thêm vớ",
+  "sigWerNormalizedPredicted": "chả thêm bơ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Trả' to 'Chạy' at position 0",
-      "reason": "'Trả' means 'to pay' while 'Chạy' means 'to run' in Vietnamese. This substitution completely changes the meaning of the sentence and makes it incoherent in context.",
+      "error": "Substitution: 'trả' to 'chả' at position 0",
+      "reason": "'trả' (to pay) and 'chả' (Vietnamese sausage) are completely different words and meanings, which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'vớ' to 'bơ' at position 2",
+      "reason": "'vớ' (sock) and 'bơ' (butter) are unrelated words, which makes the sentence incoherent and changes the intended meaning.",
       "score": 1
     }
   ]

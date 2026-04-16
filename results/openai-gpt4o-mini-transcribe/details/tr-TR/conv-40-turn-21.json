@@ -1,0 +1,31 @@
+{
+  "gold": "Not aldım evet. Anna bir nokta daha var. Bir şey istiyorum senden.",
+  "predicted": "Not aldım evet. Anlağım yokta daha var. Bir şey daha istiyorum senden.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "not aldım evet anna bir nokta daha var bir şey istiyorum senden",
+  "werNormalizedPredicted": "not aldım evet anlağım yokta daha var bir şey daha istiyorum senden",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "not aldım evet anna bir nokta daha var bir şey istiyorum senden",
+  "sigWerNormalizedPredicted": "not aldım evet anlağım yokta daha var bir şey daha istiyorum senden",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlağım' at position 3",
+      "reason": "'anna' is a proper noun (likely a name), while 'anlağım' is a Turkish word meaning 'my understanding'. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 5",
+      "reason": "'nokta' means 'point' or 'dot' in Turkish, and its omission removes a key detail from the sentence, altering the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'daha' at position 10",
+      "reason": "The extra 'daha' ('more' or 'again') slightly changes the nuance but does not significantly alter the overall meaning.",
+      "score": 2
+    }
+  ]
+}

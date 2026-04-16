@@ -3,19 +3,19 @@
   "predicted": "Yes, do a slow, please.",
   "unintelligible": false,
   "wer": 0.2,
-  "werNormalizedGold": "Yes. Do it slow, please.",
-  "werNormalizedPredicted": "Yes. Do a slow, please.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "yes do it slow please",
+  "werNormalizedPredicted": "yes do a slow please",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Yes. Do it slow, please.",
-  "sigWerNormalizedPredicted": "Yes. Do a slow, please.",
+  "sigWerNormalizedGold": "yes do it slow please",
+  "sigWerNormalizedPredicted": "yes do a slow please",
   "sigWerErrors": [
     {
       "error": "Substitution: 'it' to 'a' at position 2",
-      "reason": "Substituting 'it' with 'a' changes the meaning of the instruction from 'do it slow' (referring to an action) to 'do a slow' (which is less clear and less natural in English). This could cause confusion about what is being requested.",
-      "score": 2
+      "reason": "'it' refers to the action being requested, while 'a' changes the sentence to 'do a slow', which is ungrammatical and unclear. This substitution makes the sentence less coherent and changes the intended meaning.",
+      "score": 1
     }
   ]
 }

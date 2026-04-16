@@ -1,36 +1,26 @@
 {
   "gold": "君，君玲 at email dot com。",
-  "predicted": "dreamlingatimild。gar。",
+  "predicted": "dreamlinreamindd",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "君，君玲 at email dot com。",
-  "werNormalizedPredicted": "dreamling at email dot gar.",
-  "qualityScore": 1,
-  "significantWer": 0.2222222222222222,
+  "wer": 1.0,
+  "werNormalizedGold": "君 君玲 at email dot com",
+  "werNormalizedPredicted": "dreamlinreamindd",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
   "majorErrorsCount": 2,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "君 ， 君 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "dreamling at email dot gar.",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "dreamlinreamindd",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'dreamling' at position 0",
-      "reason": "'君' is a Chinese character (likely a name), while 'dreamling' is an English word with no semantic or phonetic similarity. The meaning is completely changed.",
+      "error": "Substitution: '君' to 'dreamlinreamindd' at position 0",
+      "reason": "The actual transcription is completely different from the expected, replacing a Chinese character with an unrelated English string, making the meaning incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: '，' at position 1",
-      "reason": "Punctuation differences are ignored as per guidance.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'com' to 'gar.' at position 7",
-      "reason": "'com' is a standard email domain ending, while 'gar.' is not a valid domain and changes the meaning of the email address.",
+      "error": "Deletion: '君' at position 1",
+      "reason": "A key part of the expected name is missing, which significantly alters the intended meaning and makes the transcription unusable for its purpose.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 8",
-      "reason": "Punctuation differences are ignored as per guidance.",
-      "score": 3
     }
   ]
 }

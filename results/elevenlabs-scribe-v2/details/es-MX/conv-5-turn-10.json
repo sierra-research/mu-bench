@@ -1,20 +1,25 @@
 {
   "gold": "Sí, ¿podrías notificar?",
-  "predicted": "Sí, sí, po-podrí-podría, eh, notificar",
+  "predicted": "Sí, sí, po-po-podría, podría, eh, notificar",
   "unintelligible": false,
-  "wer": 1.3333333333333333,
-  "werNormalizedGold": "Sí, ¿podrías notificar?",
-  "werNormalizedPredicted": "Sí, sí, po-podrí-podría, eh, notificar",
-  "qualityScore": 2,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "si podrias notificar",
+  "werNormalizedPredicted": "si si podrias podria notificar",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Sí, ¿podrías notificar?",
-  "sigWerNormalizedPredicted": "Sí, sí, po-podrí-podría, eh, notificar",
+  "sigWerNormalizedGold": "si podrias notificar",
+  "sigWerNormalizedPredicted": "si si podrias podria notificar",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¿podrías' to 'eh,' at position 1",
-      "reason": "Repeating 'sí' (yes) does not change the meaning of the sentence, as it is just a repetition for emphasis or hesitation, which is common in speech.",
+      "error": "Insertion: 'si' at position 1",
+      "reason": "The extra 'si' (yes) is a repetition and does not change the overall meaning of the sentence, just adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'podria' at position 2",
+      "reason": "The extra 'podria' (could) is a repetition of the modal verb, which makes the sentence slightly awkward but does not change the intended meaning.",
       "score": 2
     }
   ]

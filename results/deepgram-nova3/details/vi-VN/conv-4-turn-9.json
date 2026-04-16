@@ -1,15 +1,41 @@
 {
   "gold": "Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Số điện thoại của mình là cộng tám mươi bốn, chín mươi mốt, một, hai, ba mươi bốn, năm mươi sáu, bảy mươi tám.",
+  "predicted": "Ở số điện thoại của mình là cộng tám mươi bốn, chín mươi mốt, một, hai mươi ba, bốn năm mươi sáu, bảy mươi tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.25,
+  "werNormalizedGold": "so dien thoai cua minh la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "werNormalizedPredicted": "o so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai muoi ba bon nam muoi sau bay muoi tam",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "so dien thoai cua minh la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedPredicted": "o so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai muoi ba bon nam muoi sau bay muoi tam",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'o' at position 0",
+      "reason": "The word 'o' at the beginning is an extra word that does not change the meaning of the sentence, as the main content is about providing a phone number.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'muoi' at position 11",
+      "reason": "The insertion of 'muoi' (ten) changes the number sequence in the phone number, resulting in an incorrect phone number being transcribed.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 14",
+      "reason": "The insertion of 'muoi' (ten) again alters the phone number, making it incorrect and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 17",
+      "reason": "This extra 'muoi' (ten) further changes the phone number, which is critical information.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'muoi' at position 19",
+      "reason": "Another insertion of 'muoi' (ten) at the end of the number sequence, making the phone number incorrect.",
+      "score": 1
+    }
+  ]
 }

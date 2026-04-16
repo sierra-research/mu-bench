@@ -1,0 +1,26 @@
+{
+  "gold": "İyi günler, teşekkürler.",
+  "predicted": "İgnal, teşekkürler.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "iyi günler teşekkürler",
+  "werNormalizedPredicted": "ignal teşekkürler",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "iyi günler teşekkürler",
+  "sigWerNormalizedPredicted": "ignal teşekkürler",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'ignal' at position 0",
+      "reason": "'iyi' (meaning 'good' in Turkish) is replaced with 'ignal', which is not a Turkish word and does not convey the intended greeting, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'günler' at position 1",
+      "reason": "Omitting 'günler' ('days') removes the second part of the greeting 'iyi günler' ('good day'), significantly altering the meaning and making the greeting incomplete.",
+      "score": 1
+    }
+  ]
+}

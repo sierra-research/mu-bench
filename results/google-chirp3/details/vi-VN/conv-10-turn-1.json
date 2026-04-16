@@ -2,30 +2,25 @@
   "gold": "Nhận ngay bây giờ.",
   "predicted": "nghe bây giờ",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "Nhận ngay bây giờ.",
+  "wer": 0.5,
+  "werNormalizedGold": "nhận ngay bây giờ",
   "werNormalizedPredicted": "nghe bây giờ",
-  "qualityScore": 2,
+  "qualityScore": null,
   "significantWer": 0.5,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Nhận ngay bây giờ.",
+  "sigWerNormalizedGold": "nhận ngay bây giờ",
   "sigWerNormalizedPredicted": "nghe bây giờ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Nhận' to 'nghe' at position 0",
-      "reason": "'Nhận' means 'receive' and 'nghe' means 'listen' in Vietnamese; this changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'nhận' to 'nghe' at position 0",
+      "reason": "'nhận' means 'receive' while 'nghe' means 'listen'; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'ngay' at position 1",
-      "reason": "Omitting 'ngay' ('right now') removes the immediacy from the sentence, which changes the intended meaning.",
+      "reason": "Omitting 'ngay' ('immediately') changes the urgency and meaning of the sentence.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'giờ.' to 'giờ' at position 3",
-      "reason": "The difference is only punctuation (period), which does not affect meaning.",
-      "score": 3
     }
   ]
 }

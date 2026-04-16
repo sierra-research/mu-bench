@@ -1,36 +1,41 @@
 {
   "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "predicted": "İlk ikinci harf hep yanlış ve ikinci harfim a olacak. Z'den sonra a var e değil, zaynep.",
+  "predicted": "İlk ikinci harf hep yanlış ve ikinci harfim A olacak. Z'den sonrada var e değil.",
   "unintelligible": false,
-  "wer": 0.4666666666666667,
-  "werNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "werNormalizedPredicted": "İlk ikinci harfi hep yanlış ve ikinci harfim A olacak. Z'den sonra A var, E değil, Zaynep.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
+  "werNormalizedPredicted": "ilk ikinci harf hep yanlis ve ikinci harfim a olacak zden sonrada var e degil",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 3,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "sigWerNormalizedPredicted": "İlk ikinci harfi hep yanlış ve ikinci harfim A olacak. Z'den sonra A var, E değil, Zaynep.",
+  "sigWerNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
+  "sigWerNormalizedPredicted": "ilk ikinci harf hep yanlis ve ikinci harfim a olacak zden sonrada var e degil",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İkinci' to 'ikinci' at position 0",
-      "reason": "'İlk' (meaning 'first') is inserted at the beginning, which changes the reference from 'second letter' to 'first second letter', potentially confusing the meaning.",
+      "error": "Insertion: 'ilk' at position 0",
+      "reason": "'ilk' (meaning 'first') is inserted at the beginning, which changes the reference from 'second letter' to 'first second letter', potentially confusing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'harfi' to 'harf' at position 1",
+      "reason": "'harfi' is the possessive form ('its letter'), while 'harf' is just 'letter'; the meaning is only slightly changed and still understandable in context.",
       "score": 2
     },
     {
-      "error": "Substitution: 'söylüyorsunuz.' to 've' at position 4",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Turkish.",
-      "score": 3
+      "error": "Substitution: 'soyluyorsunuz' to 've' at position 4",
+      "reason": "'soyluyorsunuz' means 'you are saying', while 've' means 'and'; this substitution removes the action and replaces it with a conjunction, which significantly alters the sentence structure and meaning.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'olacak,' to 'olacak.' at position 8",
-      "reason": "Replacing 'söylüyorsunuz.' ('you are saying') with 've' ('and') breaks the sentence structure and omits the main verb, making the sentence less clear.",
+      "error": "Substitution: 'sonra' to 'sonrada' at position 10",
+      "reason": "'sonra' means 'after', while 'sonrada' is a colloquial or incorrect form but still understandable as 'after that'; minor grammatical error.",
       "score": 2
     },
     {
-      "error": "Substitution: 'değil.' to 'Zaynep.' at position 14",
-      "reason": "Difference is only punctuation (comma vs period), which does not affect meaning.",
-      "score": 3
+      "error": "Deletion: 'a' at position 11",
+      "reason": "Omitting 'a' after 'sonra' removes the explicit mention of the letter 'a', which is important for the instruction and changes the meaning.",
+      "score": 1
     }
   ]
 }

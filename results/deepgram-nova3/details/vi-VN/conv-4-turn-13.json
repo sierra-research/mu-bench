@@ -1,21 +1,26 @@
 {
   "gold": "Rồi, OK bạn. Thank you nha.",
-  "predicted": "",
+  "predicted": "Ờ ok bạn Thank you nhé",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Rồi, OK bạn. Thank you nha.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "roi okay ban thank you nha",
+  "werNormalizedPredicted": "o okay ban thank you nhe",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Rồi, OK bạn. Thank you nha.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "roi okay ban thank you nha",
+  "sigWerNormalizedPredicted": "o okay ban thank you nhe",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Rồi,' at position 0",
-      "reason": "The entire expected sentence is missing from the actual transcription, resulting in a complete loss of meaning.",
+      "error": "Substitution: 'roi' to 'o' at position 0",
+      "reason": "'roi' and 'o' are different words; 'roi' means 'already' in Vietnamese, while 'o' is not a valid substitution and changes the meaning of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'nha' to 'nhe' at position 5",
+      "reason": "'nha' and 'nhe' are both Vietnamese sentence-ending particles with similar softening functions; the substitution does not significantly change the meaning.",
+      "score": 3
     }
   ]
 }

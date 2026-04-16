@@ -1,15 +1,31 @@
 {
   "gold": "Soyadım da Arslan. R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
-  "predicted": "Soyadımda arslan r harfi olacak. Ahmet aslan dediniz, Ahmet Arslan olacak.",
+  "predicted": "Soyadımda arslan r harfi olacak. Ahmet aslan dediğiniz Ahmet Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Soyadım da Arslan. R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
-  "werNormalizedPredicted": "Soyadım da Arslan. R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
-  "qualityScore": 3,
+  "wer": 0.25,
+  "werNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
+  "werNormalizedPredicted": "soyadımda arslan r harfi olacak ahmet aslan dediğiniz ahmet arslan olacak",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Soyadım da Arslan. R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
-  "sigWerNormalizedPredicted": "Soyadım da Arslan. R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
+  "sigWerNormalizedPredicted": "soyadımda arslan r harfi olacak ahmet aslan dediğiniz ahmet arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'soyadım' to 'soyadımda' at position 0",
+      "reason": "'soyadımda' combines 'soyadım' and 'da' into one word, but the meaning is preserved in context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'da' at position 1",
+      "reason": "'da' is merged into the previous word as 'soyadımda', so the information is not lost and the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'dediniz' to 'dediğiniz' at position 8",
+      "reason": "Minor grammatical difference (formal vs. possessive), but the meaning in context is the same.",
+      "score": 3
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "gold": "Cho tôi nghe tổng số dư trước đi.",
+  "predicted": "ừm cho tôi nghe tập đầu trước đi",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werNormalizedGold": "cho tôi nghe tổng số dư trước đi",
+  "werNormalizedPredicted": "cho tôi nghe tập đầu trước đi",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "cho tôi nghe tổng số dư trước đi",
+  "sigWerNormalizedPredicted": "cho tôi nghe tập đầu trước đi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tổng' to 'tập' at position 3",
+      "reason": "'tổng số dư' means 'total balance', while 'tập đầu' means 'first episode'. This substitution changes the meaning of the request from asking for a balance to asking for an episode, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dư' at position 5",
+      "reason": "Omitting 'dư' (balance) removes the key information about what is being requested, further derailing the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

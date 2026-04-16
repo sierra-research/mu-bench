@@ -1,21 +1,26 @@
 {
   "gold": "Vui lòng đọc lại lần nữa. Tùm lum vậy?",
-  "predicted": "À, vui lòng lặp lại lần nữa. Trong lớp gì?",
+  "predicted": "À, vui lòng hợp lại lần nữa. Cảm ơn nhiều.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Vui lòng đọc lại lần nữa. Tùm lum vậy?",
-  "werNormalizedPredicted": "À, vui lòng đọc lại lần nữa. Tùm lum vậy?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "vui lòng đọc lại lần nữa tùm lum vậy",
+  "werNormalizedPredicted": "vui lòng hợp lại lần nữa cảm ơn nhiều",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Vui lòng đọc lại lần nữa. Tùm lum vậy?",
-  "sigWerNormalizedPredicted": "À, vui lòng đọc lại lần nữa. Tùm lum vậy?",
+  "sigWerNormalizedGold": "vui lòng đọc lại lần nữa tùm lum vậy",
+  "sigWerNormalizedPredicted": "vui lòng hợp lại lần nữa cảm ơn nhiều",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Vui' to 'vui' at position 0",
-      "reason": "'À,' is a discourse marker or interjection that does not change the meaning of the sentence. It simply adds a conversational nuance.",
-      "score": 2
+      "error": "Substitution: 'đọc' to 'hợp' at position 2",
+      "reason": "'đọc lại' means 'read again', while 'hợp lại' means 'combine again' or 'gather again', which changes the action being requested and alters the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tùm' to 'cảm' at position 6",
+      "reason": "'tùm lum vậy' is a colloquial phrase meaning 'all over the place' or 'messy', while 'cảm ơn nhiều' means 'thank you very much', which is a completely different meaning and changes the intent of the sentence.",
+      "score": 1
     }
   ]
 }

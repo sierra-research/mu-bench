@@ -2,14 +2,25 @@
   "gold": "You, too. Goodbye.",
   "predicted": "YouTube. Goodbye",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "You, too. Goodbye.",
-  "werNormalizedPredicted": "You, too. Goodbye.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "you too goodbye",
+  "werNormalizedPredicted": "youtube goodbye",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "You, too. Goodbye.",
-  "sigWerNormalizedPredicted": "You, too. Goodbye.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "you too goodbye",
+  "sigWerNormalizedPredicted": "youtube goodbye",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'you' to 'youtube' at position 0",
+      "reason": "'youtube' is a completely different word from 'you', changing the meaning of the sentence and making it incoherent in context",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'too' at position 1",
+      "reason": "Omitting 'too' changes the intended farewell ('you too') to just 'youtube', which is not a proper response and alters the meaning significantly",
+      "score": 1
+    }
+  ]
 }

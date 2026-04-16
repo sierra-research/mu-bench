@@ -1,20 +1,25 @@
 {
   "gold": "哎呀！",
-  "predicted": "是英。",
+  "predicted": "是",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "哎呀！",
-  "werNormalizedPredicted": "是英。",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "哎 呀 ！",
-  "sigWerNormalizedPredicted": "是 英 。",
+  "werNormalizedGold": "哎呀",
+  "werNormalizedPredicted": "是",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "哎 呀",
+  "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
       "error": "Substitution: '哎' to '是' at position 0",
-      "reason": "The words are completely different in meaning; '哎呀' is an exclamation of surprise or frustration, while '是英' means 'is English' or 'is Ying', which is unrelated. This substitution makes the sentence incoherent and changes the meaning entirely.",
+      "reason": "'哎' is an interjection expressing surprise or exclamation, while '是' means 'is/yes', which completely changes the meaning of the utterance.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '呀' at position 1",
+      "reason": "'呀' is an interjection that adds to the exclamatory tone; its omission further alters the intended meaning and tone of the sentence.",
       "score": 1
     }
   ]

@@ -1,26 +1,26 @@
 {
   "gold": "Có. Vui lòng hướng dẫn.",
-  "predicted": "À có vui lòng nguy hiểm.",
+  "predicted": "À có vui lòng.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Có. Vui lòng hướng dẫn.",
-  "werNormalizedPredicted": "À, có, vui lòng nguy hiểm.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6,
+  "werNormalizedGold": "co vui long huong dan",
+  "werNormalizedPredicted": "a co vui long",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Có. Vui lòng hướng dẫn.",
-  "sigWerNormalizedPredicted": "À, có, vui lòng nguy hiểm.",
+  "sigWerNormalizedGold": "co vui long huong dan",
+  "sigWerNormalizedPredicted": "a co vui long",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Có.' to 'có,' at position 0",
-      "reason": "'À,' is an interjection that does not change the overall meaning of the sentence, as it is just a filler or hesitation word.",
+      "error": "Insertion: 'a' at position 0",
+      "reason": "The insertion of 'a' at the beginning does not change the overall meaning of the sentence, as it is likely a filler or extraneous word.",
       "score": 2
     },
     {
-      "error": "Substitution: 'hướng' to 'nguy' at position 3",
-      "reason": "Difference in punctuation only; 'Có.' and 'có,' are semantically identical.",
-      "score": 3
+      "error": "Deletion: 'huong' at position 3",
+      "reason": "Omitting 'huong' removes a key part of the instruction, making the sentence incomplete and significantly altering the intended meaning.",
+      "score": 1
     }
   ]
 }

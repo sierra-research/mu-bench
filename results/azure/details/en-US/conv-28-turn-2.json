@@ -1,30 +1,25 @@
 {
   "gold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "predicted": "Are you trying to get a pen? Alright, I got my pen. Ready?",
+  "predicted": "trying to get a pen. All right, I got my pen. Ready?",
   "unintelligible": false,
-  "wer": 0.4,
-  "werNormalizedGold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "werNormalizedPredicted": "Are you trying to get a pen? All right, I got my pen. Ready?",
-  "qualityScore": 2,
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "sigWerNormalizedPredicted": "Are you trying to get a pen? All right, I got my pen. Ready?",
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "let me try and get a pen all right i got my pen ready",
+  "werNormalizedPredicted": "trying to get a pen all right i got my pen ready",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "let me try and get a pen all right i got my pen ready",
+  "sigWerNormalizedPredicted": "trying to get a pen all right i got my pen ready",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Let' to 'Are' at position 0",
-      "reason": "The substitution changes the speaker from expressing intent to do something ('Let me try and get a pen') to asking if someone else is trying to do it ('Are you trying to get a pen?'), which changes the meaning and the subject of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'pen.' to 'pen?' at position 6",
-      "reason": "The affirmation 'Yeah.' is omitted, which removes a minor acknowledgment but does not significantly change the overall meaning.",
+      "error": "Substitution: 'let' to 'trying' at position 0",
+      "reason": "'Let me try' expresses intent to attempt, while 'trying' is a present participle and omits the subject. The meaning is similar (someone is attempting to get a pen), so the overall intent is preserved.",
       "score": 2
     },
     {
-      "error": "Deletion: 'Yeah.' at position 7",
-      "reason": "infra_error",
+      "error": "Deletion: 'try' at position 2",
+      "reason": "'Try' is omitted, but 'trying' already conveys the act of attempting. The omission does not significantly change the meaning of the sentence.",
       "score": 2
     }
   ]

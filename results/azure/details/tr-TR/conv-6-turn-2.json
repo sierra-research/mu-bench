@@ -1,21 +1,31 @@
 {
   "gold": "Evet hazırım lütfen söyleyin. Evet hazırım.",
-  "predicted": "Evet, o durum lütfen söyleyin, evet hazırım.",
+  "predicted": "Evet o da unutma lütfen söyleyeyim, evet alırım.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Evet hazırım lütfen söyleyin. Evet hazırım.",
-  "werNormalizedPredicted": "Evet, o durum lütfen söyleyin. Evet hazırım.",
-  "qualityScore": 2,
+  "wer": 0.8333333333333334,
+  "werNormalizedGold": "evet hazirim lutfen soyleyin evet hazirim",
+  "werNormalizedPredicted": "evet o da unutma lutfen soyleyeyim evet alirim",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Evet hazırım lütfen söyleyin. Evet hazırım.",
-  "sigWerNormalizedPredicted": "Evet, o durum lütfen söyleyin. Evet hazırım.",
+  "sigWerNormalizedGold": "evet hazirim lutfen soyleyin evet hazirim",
+  "sigWerNormalizedPredicted": "evet o da unutma lutfen soyleyeyim evet alirim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Evet' to 'o' at position 0",
-      "reason": "The phrase 'o durum' (that situation) is inserted, which changes the meaning of the sentence by introducing a new subject/context not present in the original. This significantly alters the intended meaning.",
+      "error": "Substitution: 'hazirim' to 'unutma' at position 1",
+      "reason": "'o' is an extra word that does not appear in the expected sentence. It does not significantly change the meaning, but it adds unnecessary content.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'soyleyin' to 'soyleyeyim' at position 3",
+      "reason": "Substituting 'hazirim' (I am ready) with 'unutma' (don't forget) changes the meaning of the sentence significantly, as it introduces a new command instead of confirming readiness.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'hazirim' to 'alirim' at position 5",
+      "reason": "'soyleyin' (please say/tell) vs 'soyleyeyim' (let me say/tell) changes the direction of the action but the overall context of communication remains. This is a minor error.",
+      "score": 2
     }
   ]
 }

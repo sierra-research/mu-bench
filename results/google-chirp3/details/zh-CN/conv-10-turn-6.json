@@ -1,36 +1,31 @@
 {
   "gold": "那我的姓，姓名呢？",
-  "predicted": "老的性命呢?",
+  "predicted": "老的姓名呢?",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "那我的姓，姓名呢？",
-  "werNormalizedPredicted": "老的性命呢？",
-  "qualityScore": 1,
-  "significantWer": 0.4444444444444444,
-  "majorErrorsCount": 4,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "那 我 的 姓 ， 姓 名 呢 ？",
-  "sigWerNormalizedPredicted": "老 的 性 命 呢 ？",
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "那我的姓姓名呢",
+  "werNormalizedPredicted": "老的姓名呢",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "那 我 的 姓 姓 名 呢",
+  "sigWerNormalizedPredicted": "老 的 姓 名 呢",
   "sigWerErrors": [
     {
       "error": "Substitution: '那' to '老' at position 0",
-      "reason": "'那' (that) and '老' (old) are completely different words and change the meaning of the sentence.",
+      "reason": "'那' (that) and '老' (old) are completely different words and change the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '我' at position 1",
-      "reason": "Omitting '我' (I/my) removes the subject/possessive, which significantly alters the meaning.",
+      "reason": "Omitting '我' (I/my) removes the subject/possessor, which significantly alters the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: '姓' to '性' at position 3",
-      "reason": "'姓' (surname) and '性' (nature/character/sex) are different words with unrelated meanings, causing confusion.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '姓' at position 5",
-      "reason": "Omitting '姓' (surname) removes a key part of the question about name, significantly changing the meaning.",
-      "score": 1
+      "error": "Deletion: '姓' at position 3",
+      "reason": "Omitting one '姓' (surname) changes the structure and meaning, as the repetition emphasizes the surname and its omission makes the sentence less clear.",
+      "score": 2
     }
   ]
 }

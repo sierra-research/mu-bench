@@ -2,25 +2,20 @@
   "gold": "我的姓名是君玲，君玲。",
   "predicted": "我的行命是君临。",
   "unintelligible": false,
-  "wer": 0.36363636363636365,
-  "werNormalizedGold": "我的姓名是君玲，君玲。",
-  "werNormalizedPredicted": "我的姓名是君临。",
-  "qualityScore": 1,
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 ， 君 玲 。",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 临 。",
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "我的姓名是君玲君玲",
+  "werNormalizedPredicted": "我的姓名是君玲",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲",
   "sigWerErrors": [
     {
-      "error": "Substitution: '玲' to '临' at position 6",
-      "reason": "'玲' and '临' are different Chinese characters with different meanings, and this changes the person's name, which is a significant error.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '，' at position 7",
-      "reason": "Punctuation differences such as commas do not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Deletion: '君' at position 7",
+      "reason": "The repetition of the name '君玲' is omitted in the actual transcription. While the name is still present once, the expected repetition may be important for clarity or emphasis, but the overall meaning (the person's name) is still conveyed.",
+      "score": 2
     }
   ]
 }

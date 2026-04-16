@@ -1,20 +1,25 @@
 {
   "gold": "Sí. Es C N 7 8 7.",
-  "predicted": "Y es C-Siete, ocho, siete",
+  "predicted": "Y es C siete ocho siete",
   "unintelligible": false,
   "wer": 0.2857142857142857,
-  "werNormalizedGold": "Sí. Es C N 7 8 7.",
-  "werNormalizedPredicted": "Y es C N 7 8 7.",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "si es c n siete ocho siete",
+  "werNormalizedPredicted": "y es c siete ocho siete",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Sí. Es C N 7 8 7.",
-  "sigWerNormalizedPredicted": "Y es C N 7 8 7.",
+  "sigWerNormalizedGold": "si es c n siete ocho siete",
+  "sigWerNormalizedPredicted": "y es c siete ocho siete",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sí.' to 'Y' at position 0",
-      "reason": "'Sí.' means 'Yes.' in Spanish, while 'Y' means 'And.' This changes the affirmation to a conjunction, altering the intent of the sentence significantly.",
+      "error": "Substitution: 'si' to 'y' at position 0",
+      "reason": "'si' (yes) and 'y' (and) are different words and change the meaning of the sentence, leading to a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 3",
+      "reason": "Omitting 'n' from the sequence could cause confusion, especially if this is a code or identifier, making it a significant error.",
       "score": 1
     }
   ]

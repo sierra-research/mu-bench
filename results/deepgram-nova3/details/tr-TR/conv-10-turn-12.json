@@ -1,15 +1,26 @@
 {
   "gold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
-  "predicted": "Hayır email ve telefon numarası yanlış. Email'de adımın son harfi p olacak. T değil p. Zainep p.",
+  "predicted": "Hayır email ve telefon numarası yanlış. Email'de adımın son harfi olacak. T değil T. Zainnet T.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
-  "werNormalizedPredicted": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.23529411764705882,
+  "werNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
+  "werNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi olacak t değil t zainnet t",
+  "qualityScore": null,
+  "significantWer": 0.11764705882352941,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
-  "sigWerNormalizedPredicted": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
+  "sigWerNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi olacak t değil t zainnet t",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'p' at position 10",
+      "reason": "The letter 'p' is omitted where the expected transcript specifies that the last letter of the name in the email should be 'p'. This omission could cause confusion about the correct spelling of the name in the email, which is critical information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'p' to 't' at position 14",
+      "reason": "The expected transcript says the last letter should be 'p', but the actual transcript says 't'. This is a significant error because it changes the correct spelling of the name in the email, which is essential for identification or communication.",
+      "score": 1
+    }
+  ]
 }

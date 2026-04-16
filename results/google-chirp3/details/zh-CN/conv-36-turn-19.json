@@ -1,26 +1,21 @@
 {
   "gold": "你好。",
-  "predicted": "要",
+  "predicted": "好。",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "要",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "要",
+  "wer": 0.5,
+  "werNormalizedGold": "你 好",
+  "werNormalizedPredicted": "好",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "好",
   "sigWerErrors": [
     {
-      "error": "Substitution: '你' to '要' at position 0",
-      "reason": "'你' means 'you' and '要' means 'want' or 'need'; this substitution completely changes the meaning of the sentence and makes it incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '好' at position 1",
-      "reason": "'好' means 'good' or 'hello' in this context; its deletion further derails the intended greeting, making the sentence incomplete and incoherent.",
-      "score": 1
+      "error": "Deletion: '你' at position 0",
+      "reason": "The word '你' (you) is missing, which changes the greeting from 'hello (to you)' to just 'hello'. The omission makes the greeting less personal but does not derail the overall meaning of the sentence.",
+      "score": 2
     }
   ]
 }

@@ -1,15 +1,26 @@
 {
   "gold": "不对。不对。我几次说我是不对。",
-  "predicted": "不对,我几次说我是不对。",
+  "predicted": "不对,我觉得是我是不对。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "不对。不对。我几次说我是不对。",
-  "werNormalizedPredicted": "不对。不对。我几次说我是不对。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "不 对 。 不 对 。 我 几 次 说 我 是 不 对 。",
-  "sigWerNormalizedPredicted": "不 对 。 不 对 。 我 几 次 说 我 是 不 对 。",
-  "sigWerErrors": []
+  "wer": 0.4166666666666667,
+  "werNormalizedGold": "不对 不对 我几次说我是不对",
+  "werNormalizedPredicted": "不对 我觉得是我是不对",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "不 对 不 对 我 几 次 说 我 是 不 对",
+  "sigWerNormalizedPredicted": "不 对 我 觉 得 是 我 是 不 对",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '不' at position 2",
+      "reason": "The repeated '不对' emphasizes the speaker's disagreement. Omitting one '不' slightly reduces the emphasis but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '几' to '觉' at position 5",
+      "reason": "'几次说' means 'said several times', while '觉得' means 'think/feel'. This substitution changes the meaning of the sentence significantly, as it alters the speaker's intent from repetition to opinion.",
+      "score": 1
+    }
+  ]
 }

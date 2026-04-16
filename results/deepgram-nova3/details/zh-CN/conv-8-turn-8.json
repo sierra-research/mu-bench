@@ -1,31 +1,21 @@
 {
   "gold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
-  "predicted": "君君陵。",
+  "predicted": "君。",
   "unintelligible": false,
-  "wer": 0.8846153846153846,
-  "werNormalizedGold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
-  "werNormalizedPredicted": "君君陵。",
-  "qualityScore": 1,
-  "significantWer": 0.038461538461538464,
+  "wer": 0.95,
+  "werNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君玲 君玲",
+  "werNormalizedPredicted": "君",
+  "qualityScore": null,
+  "significantWer": 0.05,
   "majorErrorsCount": 1,
-  "totalWordsCount": 26,
-  "sigWerNormalizedGold": "君 ， 你 说 得 不 对 ， 你 说 得 不 对 ， 你 说 得 不 对 ， 君 玲 ， 君 玲 。",
-  "sigWerNormalizedPredicted": "君 君 陵 。",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "君",
   "sigWerErrors": [
     {
-      "error": "Deletion: '，' at position 1",
-      "reason": "Punctuation differences are to be ignored as per guidance.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: '玲' to '陵' at position 21",
-      "reason": "'玲' and '陵' are different characters with different meanings, and this changes the name being referenced, which is a significant error for a proper noun.",
+      "error": "Deletion: '你' at position 1",
+      "reason": "The actual transcription omits almost the entire expected sentence, leaving only the first word. This results in a significant loss of meaning and makes the transcription incoherent compared to the reference.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '，' at position 22",
-      "reason": "Punctuation differences are to be ignored as per guidance.",
-      "score": 3
     }
   ]
 }

@@ -1,36 +1,21 @@
 {
   "gold": "Ahmet nokta Arslan, A R S L A N at email nokta com.",
-  "predicted": "Ahmet. Arslan arsdan et gmail dat kom",
+  "predicted": "Ahmet. Arslan arsd an et gmail dat kom",
   "unintelligible": false,
-  "wer": 0.3076923076923077,
-  "werNormalizedGold": "Ahmet nokta Arslan, A R S L A N at email nokta com.",
-  "werNormalizedPredicted": "Ahmet. Arslan, A R S D A N at email dot com.",
-  "qualityScore": 1,
-  "significantWer": 0.07692307692307693,
+  "wer": 0.09090909090909091,
+  "werNormalizedGold": "ahmet arslan a r s l a n at email com",
+  "werNormalizedPredicted": "ahmet arslan a r s l a n at gmail com",
+  "qualityScore": null,
+  "significantWer": 0.09090909090909091,
   "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Ahmet nokta Arslan, A R S L A N at email nokta com.",
-  "sigWerNormalizedPredicted": "Ahmet. Arslan, A R S D A N at email dot com.",
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "ahmet arslan a r s l a n at email com",
+  "sigWerNormalizedPredicted": "ahmet arslan a r s l a n at gmail com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Ahmet' to 'Ahmet.' at position 0",
-      "reason": "Difference is only punctuation, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'nokta' at position 1",
-      "reason": "'nokta' (meaning 'dot' in Turkish) is omitted before 'Arslan', but its omission does not significantly change the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'L' to 'D' at position 6",
-      "reason": "In a spelled-out name, a single letter error changes the identity being spelled, which is a significant error.",
+      "error": "Substitution: 'email' to 'gmail' at position 9",
+      "reason": "'email' and 'gmail' are different email providers; substituting one for the other could result in an incorrect or undeliverable email address, which is a significant error.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'nokta' to 'dot' at position 11",
-      "reason": "'nokta' and 'dot' are equivalent (Turkish and English for the same symbol in an email address), so this is not an error.",
-      "score": 3
     }
   ]
 }

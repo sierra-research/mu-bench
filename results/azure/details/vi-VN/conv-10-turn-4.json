@@ -1,20 +1,25 @@
 {
   "gold": "Tôi chưa muốn chuyển.",
-  "predicted": "Tôi chưa **** chờ.",
+  "predicted": "Từ chối.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Tôi chưa muốn chuyển.",
-  "werNormalizedPredicted": "Tôi chưa **** chờ.",
-  "qualityScore": 2,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "tôi chưa muốn chuyển",
+  "werNormalizedPredicted": "từ chối",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Tôi chưa muốn chuyển.",
-  "sigWerNormalizedPredicted": "Tôi chưa **** chờ.",
+  "sigWerNormalizedGold": "tôi chưa muốn chuyển",
+  "sigWerNormalizedPredicted": "từ chối",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'muốn' to '****' at position 2",
-      "reason": "The word 'muốn' (want) is replaced by '****', which is an unintelligible or censored word, making the meaning unclear and derailing the sentence's intent.",
+      "error": "Substitution: 'tôi' to 'từ' at position 0",
+      "reason": "The substitution changes the subject 'I' to 'from', which completely alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'muốn' at position 2",
+      "reason": "Omitting 'muốn' ('want') removes the main verb, making the sentence's meaning incoherent compared to the expected intent.",
       "score": 1
     }
   ]

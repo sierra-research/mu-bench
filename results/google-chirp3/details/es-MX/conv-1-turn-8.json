@@ -1,31 +1,36 @@
 {
   "gold": "Sí, eso es lo que no sé cómo encontrarlo, exacto.",
-  "predicted": "Sí, eso es lo que no, no sé cómo",
+  "predicted": "Sí, esto es lo que no no sé cómo encontrar.",
   "unintelligible": false,
   "wer": 0.4,
-  "werNormalizedGold": "Sí, eso es lo que no sé cómo encontrarlo, exacto.",
-  "werNormalizedPredicted": "sí, eso es lo que no, no sé cómo",
-  "qualityScore": 2,
-  "significantWer": 0.2,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "si eso es lo que no se como encontrarlo exacto",
+  "werNormalizedPredicted": "si esto es lo que no no se como encontrar",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Sí, eso es lo que no sé cómo encontrarlo, exacto.",
-  "sigWerNormalizedPredicted": "sí, eso es lo que no, no sé cómo",
+  "sigWerNormalizedGold": "si eso es lo que no se como encontrarlo exacto",
+  "sigWerNormalizedPredicted": "si esto es lo que no no se como encontrar",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sí,' to 'sí,' at position 0",
-      "reason": "Only difference is capitalization, which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'eso' to 'esto' at position 1",
+      "reason": "'Eso' and 'esto' both refer to 'that' and 'this' respectively; in this context, the meaning is only slightly changed, but the overall intent is preserved.",
+      "score": 2
     },
     {
-      "error": "Insertion: 'no,' at position 5",
-      "reason": "The extra 'no' introduces a negation that changes the meaning of the sentence.",
-      "score": 1
+      "error": "Insertion: 'no' at position 6",
+      "reason": "The extra 'no' introduces a repetition but does not significantly alter the meaning of the sentence.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'encontrarlo,' at position 8",
-      "reason": "Omitting 'encontrarlo' (to find it) removes a key part of the sentence, making it incomplete and changing the meaning.",
-      "score": 1
+      "error": "Substitution: 'encontrarlo' to 'encontrar' at position 8",
+      "reason": "'Encontrarlo' (to find it) vs 'encontrar' (to find); omitting the pronoun 'lo' makes the sentence less specific but the main meaning is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'exacto' at position 9",
+      "reason": "Omitting 'exacto' (exact) removes a qualifier, making the sentence less precise, but the main intent is still understandable.",
+      "score": 2
     }
   ]
 }

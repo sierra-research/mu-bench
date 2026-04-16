@@ -1,20 +1,25 @@
 {
   "gold": "我的邮箱地址是美玲 at email dot com。",
-  "predicted": "我的邮箱地址是Nay Ling at email.com 。",
+  "predicted": "Wow, I have the email address at email.com.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "我的邮箱地址是美玲 at email dot com。",
-  "werNormalizedPredicted": "我的邮箱地址是Nay Ling at email dot com。",
-  "qualityScore": 1,
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 Nay Ling at email dot com 。",
+  "wer": 0.6923076923076923,
+  "werNormalizedGold": "我的邮箱地址是美玲 at email dot com",
+  "werNormalizedPredicted": "i have the email address at email dot com",
+  "qualityScore": null,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "i have the email address at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '美' to 'Nay' at position 7",
-      "reason": "The expected name '美' (Mei) is replaced with 'Nay', which is a completely different name and changes the identity in the email address. This is a significant error as it could result in sending information to the wrong person.",
+      "error": "Substitution: '我' to 'i' at position 0",
+      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a language mismatch and results in a significant error as the meaning and language are completely different.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '址' at position 5",
+      "reason": "The word '址' (address) is missing in the actual transcription, which omits a key part of the expected information. This is a significant error as it affects the meaning of the sentence.",
       "score": 1
     }
   ]

@@ -1,15 +1,26 @@
 {
   "gold": "Heceleyerek tekrar edebilir misiniz acaba?",
-  "predicted": "Heceleyerek tekrar edebilir misiniz acaba?",
+  "predicted": "Hediyelere tekrar edilebilir misiniz acaba?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Heceleyerek tekrar edebilir misiniz acaba?",
-  "werNormalizedPredicted": "Heceleyerek tekrar edebilir misiniz acaba?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.4,
+  "werNormalizedGold": "heceleyerek tekrar edebilir misiniz acaba",
+  "werNormalizedPredicted": "hediyelere tekrar edilebilir misiniz acaba",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Heceleyerek tekrar edebilir misiniz acaba?",
-  "sigWerNormalizedPredicted": "Heceleyerek tekrar edebilir misiniz acaba?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "heceleyerek tekrar edebilir misiniz acaba",
+  "sigWerNormalizedPredicted": "hediyelere tekrar edilebilir misiniz acaba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'heceleyerek' to 'hediyelere' at position 0",
+      "reason": "'heceleyerek' means 'by spelling out' and 'hediyelere' means 'to the gifts'; this substitution completely changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'edebilir' to 'edilebilir' at position 2",
+      "reason": "The change from 'edebilir' (can do) to 'edilebilir' (can be done) is a minor grammatical difference and does not significantly alter the meaning in this context.",
+      "score": 2
+    }
+  ]
 }

@@ -1,21 +1,26 @@
 {
   "gold": "你再说一遍。",
-  "predicted": "嗯，你再说一遍。",
+  "predicted": "Need to show you.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "你再说一遍。",
-  "werNormalizedPredicted": "嗯，你再说一遍。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "你 再 说 一 遍 。",
-  "sigWerNormalizedPredicted": "嗯 ， 你 再 说 一 遍 。",
+  "wer": 1.0,
+  "werNormalizedGold": "你 再 说 一 遍",
+  "werNormalizedPredicted": "need to show you",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "你 再 说 一 遍",
+  "sigWerNormalizedPredicted": "need to show you",
   "sigWerErrors": [
     {
-      "error": "Insertion: '嗯' at position 0",
-      "reason": "'嗯' is a filler word (like 'um' or 'well') and does not change the meaning of the sentence. The main content is preserved.",
-      "score": 2
+      "error": "Substitution: '你' to 'need' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), resulting in a total loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '遍' at position 4",
+      "reason": "The word '遍' is missing entirely in the actual transcription, which is already in a different language and does not preserve the meaning.",
+      "score": 1
     }
   ]
 }

@@ -1,26 +1,26 @@
 {
   "gold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "predicted": "When you're trying to get a pen. Yeah, you get... All right, I got my pen. Ready?",
+  "predicted": "Are you trying to get a pen? Yeah, you get All right, I got my pen. Ready?",
   "unintelligible": false,
   "wer": 0.4,
-  "werNormalizedGold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "werNormalizedPredicted": "When you're trying to get a pen. Yeah. You get... All right, I got my pen. Ready?",
-  "qualityScore": 2,
-  "significantWer": 0.13333333333333333,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "werNormalizedPredicted": "are you trying to get a pen yeah you get all right i got my pen ready",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "sigWerNormalizedPredicted": "When you're trying to get a pen. Yeah. You get... All right, I got my pen. Ready?",
+  "sigWerNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "sigWerNormalizedPredicted": "are you trying to get a pen yeah you get all right i got my pen ready",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Let' to 'When' at position 0",
-      "reason": "The substitution changes the sentence from a statement of intent ('Let me try and get a pen') to a general description ('When you're trying to get a pen'), which alters the meaning and context of the conversation.",
+      "error": "Substitution: 'let' to 'are' at position 0",
+      "reason": "Changes the subject and intent of the sentence from a self-action ('let me try') to a question directed at someone else ('are you trying'), which significantly alters the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Insertion: 'You' at position 8",
-      "reason": "The insertion of 'You get...' adds an unrelated phrase that interrupts the flow and coherence of the original sentence, making the meaning less clear.",
-      "score": 1
+      "error": "Insertion: 'you' at position 8",
+      "reason": "The insertion of 'you' before 'get' creates confusion and disrupts the flow of the sentence, making it less coherent, but the overall meaning is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

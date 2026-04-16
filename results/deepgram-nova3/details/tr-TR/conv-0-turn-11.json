@@ -1,15 +1,26 @@
 {
   "gold": "İyi günler dilerim. İyi günler, teşekkür ederim.",
-  "predicted": "İyi günler diliyorum. İyi günler, teşekkür ederim.",
+  "predicted": "İyi günler diliyorum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "İyi günler dilerim. İyi günler, teşekkür ederim.",
-  "werNormalizedPredicted": "İyi günler dilerim. İyi günler, teşekkür ederim.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "iyi günler dilerim iyi günler teşekkür ederim",
+  "werNormalizedPredicted": "iyi günler diliyorum",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "İyi günler dilerim. İyi günler, teşekkür ederim.",
-  "sigWerNormalizedPredicted": "İyi günler dilerim. İyi günler, teşekkür ederim.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "iyi günler dilerim iyi günler teşekkür ederim",
+  "sigWerNormalizedPredicted": "iyi günler diliyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dilerim' to 'diliyorum' at position 2",
+      "reason": "Both words are forms of expressing a wish or greeting; 'dilerim' means 'I wish' and 'diliyorum' means 'I am wishing'. The meaning is nearly the same in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'iyi' at position 3",
+      "reason": "The entire phrase 'iyi günler teşekkür ederim' ('good day, thank you') is missing, which removes the act of thanking from the sentence and changes the overall meaning significantly.",
+      "score": 1
+    }
+  ]
 }

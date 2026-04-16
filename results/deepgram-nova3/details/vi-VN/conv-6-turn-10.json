@@ -1,35 +1,25 @@
 {
   "gold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Thiếu một một số cuối cùng phải đầy đủ là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
+  "predicted": "Thiếu mất một số cuối cùng phải đầy đủ là cộng tám mươi bốn chín mươi mốt một hai ba bốn nằm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.23809523809523808,
-  "werNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Thiếu một một số cuối cùng phải đầy đủ là cộng 84 91 1 2 3 4 5 6 7 8.",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Thiếu một một số cuối cùng phải đầy đủ là cộng 84 91 1 2 3 4 5 6 7 8.",
+  "wer": 0.13043478260869565,
+  "werNormalizedGold": "thiếu mất một số cuối cùng đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "thiếu mất một số cuối cùng phải đầy đủ là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.043478260869565216,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "thiếu mất một số cuối cùng đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "thiếu mất một số cuối cùng phải đầy đủ là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'mất' to 'một' at position 1",
-      "reason": "'mất' means 'missing' while 'một' means 'one'; this changes the meaning of the sentence and makes it less clear that something is missing.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'cùng,' to 'phải' at position 5",
-      "reason": "'cùng,' (end) is replaced by 'phải' (must), which changes the structure but the overall intent is still understandable.",
+      "error": "Insertion: 'phải' at position 6",
+      "reason": "'phải' (must) adds a modal meaning that slightly changes the nuance but does not derail the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: '9' to '91' at position 11",
-      "reason": "Combining '9' and '1' into '91' changes the phone number, which is a significant factual error.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '1' at position 12",
-      "reason": "Omitting a digit from a phone number is a significant error as it makes the number incorrect.",
+      "error": "Substitution: 'một' to 'mốt' at position 14",
+      "reason": "Inserting 'mươi' changes the number from 'bốn chín' (49) to 'bốn chín mươi' (490), which significantly alters the intended number.",
       "score": 1
     }
   ]

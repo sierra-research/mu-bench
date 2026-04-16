@@ -1,15 +1,21 @@
 {
   "gold": "55 12 34 56 7 8.",
-  "predicted": "55 12 34 56 7 8",
+  "predicted": "55 12 34 56 78",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "55 12 34 56 7 8.",
-  "werNormalizedPredicted": "55 12 34 56 7 8.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "55 12 34 56 7 8.",
-  "sigWerNormalizedPredicted": "55 12 34 56 7 8.",
-  "sigWerErrors": []
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "fifty five twelve thirty four fifty six seven eight",
+  "werNormalizedPredicted": "fifty five twelve thirty four fifty six seventy eight",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "fifty five twelve thirty four fifty six seven eight",
+  "sigWerNormalizedPredicted": "fifty five twelve thirty four fifty six seventy eight",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'seven' to 'seventy' at position 7",
+      "reason": "'Seven' and 'seventy' are numerically very different; this changes the meaning of the number sequence significantly.",
+      "score": 1
+    }
+  ]
 }

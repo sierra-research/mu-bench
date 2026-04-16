@@ -1,20 +1,25 @@
 {
   "gold": "终于到了。",
-  "predicted": "嗯，对的。",
+  "predicted": "உம் உம் அதேதான் ma'am.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "终于到了。",
-  "werNormalizedPredicted": "嗯，对的。",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "终 于 到 了 。",
-  "sigWerNormalizedPredicted": "嗯 ， 对 的 。",
+  "wer": 1.0,
+  "werNormalizedGold": "终于到了",
+  "werNormalizedPredicted": "அதே தான் maam",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "终 于 到 了",
+  "sigWerNormalizedPredicted": "அதே தான் maam",
   "sigWerErrors": [
     {
-      "error": "Substitution: '终' to '嗯' at position 0",
-      "reason": "The actual transcription is a completely different phrase ('嗯，对的' means 'yes, that's right'), while the expected is '终于到了' ('finally arrived'). The meaning is entirely changed and unrelated.",
+      "error": "Substitution: '终' to 'அதே' at position 0",
+      "reason": "The actual transcription is in a completely different language (Tamil and English) compared to the expected (Chinese), making the meaning entirely different and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 3",
+      "reason": "The expected word is missing entirely in the actual transcription, which is already in a different language, further derailing the meaning.",
       "score": 1
     }
   ]

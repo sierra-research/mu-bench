@@ -2,20 +2,25 @@
   "gold": "Để mình làm thử nhá.",
   "predicted": "Đợi mình làm thử nhé.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Để mình làm thử nhá.",
-  "werNormalizedPredicted": "Đợi mình làm thử nhá.",
-  "qualityScore": 2,
+  "wer": 0.4,
+  "werNormalizedGold": "để mình làm thử nhá",
+  "werNormalizedPredicted": "đợi mình làm thử nhé",
+  "qualityScore": null,
   "significantWer": 0.2,
   "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Để mình làm thử nhá.",
-  "sigWerNormalizedPredicted": "Đợi mình làm thử nhá.",
+  "sigWerNormalizedGold": "để mình làm thử nhá",
+  "sigWerNormalizedPredicted": "đợi mình làm thử nhé",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Để' to 'Đợi' at position 0",
-      "reason": "'Để' means 'let' (as in 'let me'), while 'Đợi' means 'wait'. This changes the intent of the sentence from offering to do something to asking someone to wait, which significantly alters the meaning.",
+      "error": "Substitution: 'để' to 'đợi' at position 0",
+      "reason": "'để' means 'to' or 'let', while 'đợi' means 'wait'. This changes the intent of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 4",
+      "reason": "'nhá' and 'nhé' are both sentence-ending particles in Vietnamese with similar softening/confirming functions. The meaning is not significantly changed.",
+      "score": 3
     }
   ]
 }

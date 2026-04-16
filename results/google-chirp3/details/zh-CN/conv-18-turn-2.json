@@ -1,31 +1,26 @@
 {
   "gold": "C N 负 0 0。",
-  "predicted": "A N 400",
+  "predicted": "AN200",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "C N 负 0 0。",
-  "werNormalizedPredicted": "A N 4 0 0",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
+  "wer": 0.4,
+  "werNormalizedGold": "c n 负 zero zero",
+  "werNormalizedPredicted": "a n two zero zero",
+  "qualityScore": null,
+  "significantWer": 0.4,
   "majorErrorsCount": 2,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "C N 负 0 0 。",
-  "sigWerNormalizedPredicted": "A N 4 0 0",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n 负 zero zero",
+  "sigWerNormalizedPredicted": "a n two zero zero",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'C' to 'A' at position 0",
-      "reason": "'C' and 'A' are different letters in a spelled-out sequence, which changes the intended meaning or code.",
+      "error": "Substitution: 'c' to 'a' at position 0",
+      "reason": "Spelled-out letter error; a single letter difference in a sequence changes the meaning significantly, especially for codes or identifiers.",
       "score": 1
     },
     {
-      "error": "Substitution: '负' to '4' at position 2",
-      "reason": "'负' is a Chinese character meaning 'negative' or 'minus', while '4' is a number. This is a significant change in meaning.",
+      "error": "Substitution: '负' to 'two' at position 2",
+      "reason": "'负' is a Chinese character meaning 'negative' or 'minus', while 'two' is a number; this is a significant semantic error that changes the meaning completely.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '。' at position 5",
-      "reason": "Punctuation differences are ignored according to the guidance.",
-      "score": 3
     }
   ]
 }

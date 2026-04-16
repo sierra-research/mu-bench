@@ -1,26 +1,31 @@
 {
   "gold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "predicted": "Ama öyle değil iki bin yirmi dört yıl tekrar söylüyorum iki bin yirmi dört yılı için Ocak Aralık ayları arasındaki hesap ekstrem istiyorum",
+  "predicted": "Ama öyle değil. İki bin yirmi dört, tekrar söylüyorum, iki bin yirmi dört yılı için Ocak, Aralık ayları arasında kebap ister istiyorum.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "werNormalizedPredicted": "Ama, öyle değil. Tekrar söylüyorum. 2024 yılı için Ocak Aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "qualityScore": 3,
-  "significantWer": 0.06666666666666667,
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstremi istiyorum",
+  "werNormalizedPredicted": "ama oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasinda kebap ister istiyorum",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
   "majorErrorsCount": 1,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "sigWerNormalizedPredicted": "Ama, öyle değil. Tekrar söylüyorum. 2024 yılı için Ocak Aralık ayları arasındaki hesap ekstremi istiyorum.",
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstremi istiyorum",
+  "sigWerNormalizedPredicted": "ama oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasinda kebap ister istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna,' to 'Ama,' at position 0",
-      "reason": "'Anna' is a proper noun (a name), while 'Ama' means 'but' in Turkish. This changes the subject and meaning of the sentence significantly.",
+      "error": "Substitution: 'anna' to 'ama' at position 0",
+      "reason": "'anna' is a name or specific word, while 'ama' means 'but' in Turkish; this changes the subject and meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'ocak' to 'Ocak' at position 8",
-      "reason": "The only difference is capitalization, which does not affect meaning.",
-      "score": 3
+      "error": "Insertion: 'iki' at position 3",
+      "reason": "The insertion of 'iki' (meaning 'two') repeats the year phrase but does not significantly change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arasindaki' to 'arasinda' at position 14",
+      "reason": "'arasindaki' means 'between the', while 'arasinda' means 'between'; this is a minor grammatical difference and does not change the meaning.",
+      "score": 2
     }
   ]
 }

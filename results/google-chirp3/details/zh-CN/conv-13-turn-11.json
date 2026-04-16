@@ -1,15 +1,21 @@
 {
   "gold": "听到吗？",
-  "predicted": "听到吗?",
+  "predicted": "听懂吗?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "听到吗？",
-  "werNormalizedPredicted": "听到吗？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "听 到 吗 ？",
-  "sigWerNormalizedPredicted": "听 到 吗 ？",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "听到吗",
+  "werNormalizedPredicted": "听懂吗",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "听 到 吗",
+  "sigWerNormalizedPredicted": "听 懂 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '到' to '懂' at position 1",
+      "reason": "'到' (arrive/heard) and '懂' (understand) have different meanings; this changes the intent of the question from 'Did you hear?' to 'Do you understand?', which significantly alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

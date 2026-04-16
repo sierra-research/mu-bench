@@ -1,31 +1,36 @@
 {
   "gold": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "predicted": "¿Dónde puedo puedo verificar eso? ¿O me avisarás tú, Du, de qué? ¿Por el?",
+  "predicted": "¿Dónde puedo verificar eso? ¿O me revisará tu DU de qué? ¿Por?",
   "unintelligible": false,
-  "wer": 0.23076923076923078,
-  "werNormalizedGold": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "werNormalizedPredicted": "¿Dónde puedo puedo verificar eso? ¿O me avisarás tú de qué? ¿Por email?",
-  "qualityScore": 2,
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "wer": 0.3076923076923077,
+  "werNormalizedGold": "donde puedo verificar eso o me avisaras tu de que manera por email",
+  "werNormalizedPredicted": "donde puedo verificar eso o me revisara tu du de que por",
+  "qualityScore": null,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "sigWerNormalizedPredicted": "¿Dónde puedo puedo verificar eso? ¿O me avisarás tú de qué? ¿Por email?",
+  "sigWerNormalizedGold": "donde puedo verificar eso o me avisaras tu de que manera por email",
+  "sigWerNormalizedPredicted": "donde puedo verificar eso o me revisara tu du de que por",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'puedo' at position 2",
-      "reason": "The repeated word 'puedo' is a minor disfluency but does not change the meaning of the sentence.",
+      "error": "Substitution: 'avisaras' to 'revisara' at position 6",
+      "reason": "'Avisaras' means 'you will notify', while 'revisara' means 'will review'. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'du' at position 8",
+      "reason": "'du' is not a Spanish word and its insertion makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'manera' at position 10",
+      "reason": "Omitting 'manera' ('way' or 'manner') removes important information about how the notification will be made, but the general intent is still somewhat understandable.",
       "score": 2
     },
     {
-      "error": "Substitution: 'qué' to 'qué?' at position 9",
-      "reason": "The only difference is the punctuation mark, which should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'manera?' at position 10",
-      "reason": "Omitting 'manera?' removes information about the manner in which the notification will be given, which changes the meaning of the question.",
-      "score": 1
+      "error": "Deletion: 'email' at position 12",
+      "reason": "Omitting 'email' removes the method of notification, which is important information, but the sentence could still be partially understood.",
+      "score": 2
     }
   ]
 }

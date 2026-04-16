@@ -1,0 +1,31 @@
+{
+  "gold": "Vào được rồi. Vào được rồi.",
+  "predicted": "Rồi rồi rồi rồi rồi",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "vào được rồi vào được rồi",
+  "werNormalizedPredicted": "rồi rồi rồi rồi rồi",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "vào được rồi vào được rồi",
+  "sigWerNormalizedPredicted": "rồi rồi rồi rồi rồi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vào' to 'rồi' at position 0",
+      "reason": "'vào' (enter) is replaced by 'rồi' (already), which changes the meaning of the sentence from indicating entry to just stating 'already'. This significantly alters the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'vào' to 'rồi' at position 3",
+      "reason": "Again, 'vào' (enter) is replaced by 'rồi' (already), which removes the action of entering and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'được' at position 4",
+      "reason": "Omitting 'được' (can/be able to) removes the sense of ability or permission, which is crucial to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

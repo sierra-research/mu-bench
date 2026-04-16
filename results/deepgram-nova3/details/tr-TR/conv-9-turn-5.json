@@ -2,14 +2,25 @@
   "gold": "Hayır yanlış, e-posta adresim, evet.",
   "predicted": "Hayır ya, e-posta adresi. Evet.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Hayır yanlış, e-posta adresim, evet.",
-  "werNormalizedPredicted": "Hayır yanlış, e-posta adresim, evet.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Hayır yanlış, e-posta adresim, evet.",
-  "sigWerNormalizedPredicted": "Hayır yanlış, e-posta adresim, evet.",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "hayır yanlış e posta adresim evet",
+  "werNormalizedPredicted": "hayır ya e posta adresi evet",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "hayır yanlış e posta adresim evet",
+  "sigWerNormalizedPredicted": "hayır ya e posta adresi evet",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yanlış' to 'ya' at position 1",
+      "reason": "'yanlış' means 'wrong' while 'ya' is an interjection or filler, which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'adresim' to 'adresi' at position 4",
+      "reason": "'adresim' means 'my address' while 'adresi' means 'the address', which is a minor change and does not derail the overall meaning.",
+      "score": 2
+    }
+  ]
 }

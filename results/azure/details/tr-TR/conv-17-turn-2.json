@@ -2,14 +2,25 @@
   "gold": "S N 631.",
   "predicted": "Sen. 631.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "S N 631.",
-  "werNormalizedPredicted": "S N 631.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "S N 631.",
-  "sigWerNormalizedPredicted": "S N 631.",
-  "sigWerErrors": []
+  "wer": 0.4,
+  "werNormalizedGold": "s n six three one",
+  "werNormalizedPredicted": "senate six three one",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "s n six three one",
+  "sigWerNormalizedPredicted": "senate six three one",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'senate' at position 0",
+      "reason": "'s' is a single letter, likely part of a spelled-out sequence, while 'senate' is a completely different word. This changes the intended meaning and disrupts the sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Missing a letter in a spelled-out sequence significantly alters the intended information, especially if these are meant to be individual letters or codes.",
+      "score": 1
+    }
+  ]
 }

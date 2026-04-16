@@ -1,31 +1,31 @@
 {
   "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "predicted": "Ya e-posta adresime erişememiş soralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
+  "predicted": "Ya e-posta adresime erişemediğim sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
   "unintelligible": false,
-  "wer": 0.2777777777777778,
-  "werNormalizedGold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "werNormalizedPredicted": "Ya, e-posta adresime erişememiş soralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "qualityScore": 2,
-  "significantWer": 0.05555555555555555,
+  "wer": 0.15789473684210525,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "ya e posta adresime erişemediğim sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "qualityScore": null,
+  "significantWer": 0.05263157894736842,
   "majorErrorsCount": 1,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "sigWerNormalizedPredicted": "Ya, e-posta adresime erişememiş soralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "ya e posta adresime erişemediğim sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'E-posta' to 'e-posta' at position 0",
-      "reason": "'Ya' is an interjection in Turkish, often used for emphasis or to get attention. Its insertion does not change the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'erişimim' to 'erişememiş' at position 2",
-      "reason": "Difference is only in capitalization, which should be ignored.",
+      "error": "Insertion: 'ya' at position 0",
+      "reason": "'ya' is a discourse marker in Turkish, often used for emphasis or to start a sentence. Its presence does not change the meaning of the sentence.",
       "score": 3
     },
     {
-      "error": "Deletion: 'sıralar' at position 4",
-      "reason": "'Erişimim' means 'my access', while 'erişememiş' means 'could not access'. This changes the subject and the meaning of the sentence significantly.",
+      "error": "Substitution: 'erişimim' to 'erişemediğim' at position 3",
+      "reason": "'erişimim' means 'my access', while 'erişemediğim' means 'that I cannot access'. This changes the meaning of the sentence significantly, as it shifts from stating a lack of access to specifying an inability to access, which could affect the interpretation of the situation.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'şu' at position 4",
+      "reason": "'şu' means 'these' or 'this' in Turkish and specifies the time frame. Its omission slightly reduces specificity but does not significantly alter the overall meaning of the sentence.",
+      "score": 2
     }
   ]
 }

@@ -1,25 +1,30 @@
 {
   "gold": "Mở ứng dụng rồi. Vui lòng hướng dẫn nha.",
-  "predicted": "Mới dùng rồi, vui lòng hướng dẫn nha.",
+  "predicted": "Mới dùng lề vui lòng hướng dẫn.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Mở ứng dụng rồi. Vui lòng hướng dẫn nha.",
-  "werNormalizedPredicted": "Mới dùng rồi. Vui lòng hướng dẫn nha.",
-  "qualityScore": 2,
+  "wer": 0.5555555555555556,
+  "werNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
+  "werNormalizedPredicted": "mới dùng lề vui lòng hướng dẫn",
+  "qualityScore": null,
   "significantWer": 0.1111111111111111,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Mở ứng dụng rồi. Vui lòng hướng dẫn nha.",
-  "sigWerNormalizedPredicted": "Mới dùng rồi. Vui lòng hướng dẫn nha.",
+  "sigWerNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
+  "sigWerNormalizedPredicted": "mới dùng lề vui lòng hướng dẫn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Mở' to 'Mới' at position 0",
-      "reason": "'Mở' means 'open' and 'Mới' means 'just' or 'new'; this changes the meaning of the sentence significantly, as the action is different.",
+      "error": "Substitution: 'mở' to 'mới' at position 0",
+      "reason": "'mở' means 'open' while 'mới' means 'new' in Vietnamese; this changes the intent of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'dụng' at position 2",
-      "reason": "Omitting 'dụng' (from 'ứng dụng' meaning 'application') makes the phrase less clear, but the overall intent can still be inferred from context.",
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "'rồi' means 'already/then', which helps indicate sequence; omitting it slightly affects the flow but not the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nha' at position 8",
+      "reason": "'nha' is a sentence-ending particle that softens the request; omitting it does not change the main meaning.",
       "score": 2
     }
   ]

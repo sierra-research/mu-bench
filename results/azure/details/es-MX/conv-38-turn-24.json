@@ -2,25 +2,25 @@
   "gold": "No. ¿Entonces me vas a transferir con algún agente?",
   "predicted": "¿No, entonces me vas a transferir con alguna gente?",
   "unintelligible": false,
-  "wer": 0.4444444444444444,
-  "werNormalizedGold": "No. ¿Entonces me vas a transferir con algún agente?",
-  "werNormalizedPredicted": "No, ¿entonces me vas a transferir con alguna gente?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "numero entonces me vas a transferir con algun agente",
+  "werNormalizedPredicted": "no entonces me vas a transferir con alguna gente",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "No. ¿Entonces me vas a transferir con algún agente?",
-  "sigWerNormalizedPredicted": "No, ¿entonces me vas a transferir con alguna gente?",
+  "sigWerNormalizedGold": "numero entonces me vas a transferir con algun agente",
+  "sigWerNormalizedPredicted": "no entonces me vas a transferir con alguna gente",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No.' to 'No,' at position 0",
-      "reason": "Difference is only in punctuation (period vs comma), which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'numero' to 'no' at position 0",
+      "reason": "'numero' (number) is replaced by 'no' (no), which changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'algún' to 'alguna' at position 7",
-      "reason": "'Algún' (masculine) vs 'alguna' (feminine) changes the gender, but in this context, it does not significantly alter the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'algun' to 'alguna' at position 7",
+      "reason": "'algun' and 'alguna' are gender variants of the same word, and in this context, the meaning is preserved.",
+      "score": 3
     }
   ]
 }

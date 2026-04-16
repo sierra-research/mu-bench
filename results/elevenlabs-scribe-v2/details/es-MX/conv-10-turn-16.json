@@ -1,21 +1,26 @@
 {
   "gold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "predicted": "No, no, no, te falta, te fal-falta el punto: maría.lopez@email.com",
+  "predicted": "No, no, no, te falta, te falta el punto: cariria.lo@email.com",
   "unintelligible": false,
-  "wer": 0.5833333333333334,
-  "werNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "werNormalizedPredicted": "No, no, no, te falta, te fal-falta el punto. María punto López arroba email punto com.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "werNormalizedPredicted": "no te falta el punto cariria punto lo arroba email punto com",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "sigWerNormalizedPredicted": "No, no, no, te falta, te fal-falta el punto. María punto López arroba email punto com.",
+  "sigWerNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "no te falta el punto cariria punto lo arroba email punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No.' to 'falta,' at position 0",
-      "reason": "The repeated 'No, no, no,' at the beginning is an extra insertion that does not change the overall meaning of the sentence, as the main instruction and information are still present.",
-      "score": 2
+      "error": "Substitution: 'maria' to 'cariria' at position 5",
+      "reason": "'cariria' is a completely different name from 'maria', which significantly changes the intended email address and could cause communication errors.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lopez' to 'lo' at position 7",
+      "reason": "'lo' is an incomplete and incorrect version of the surname 'lopez', which makes the email address invalid and unrecognizable.",
+      "score": 1
     }
   ]
 }

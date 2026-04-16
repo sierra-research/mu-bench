@@ -1,25 +1,30 @@
 {
   "gold": "OK. Đợi tôi xíu nhé.",
-  "predicted": "Ok đợi.",
+  "predicted": "Ok để tôi si.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "OK. Đợi tôi xíu nhé.",
-  "werNormalizedPredicted": "OK. Đợi.",
-  "qualityScore": 2,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 0.6,
+  "werNormalizedGold": "okay đợi tôi xíu nhé",
+  "werNormalizedPredicted": "okay để tôi si",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "OK. Đợi tôi xíu nhé.",
-  "sigWerNormalizedPredicted": "OK. Đợi.",
+  "sigWerNormalizedGold": "okay đợi tôi xíu nhé",
+  "sigWerNormalizedPredicted": "okay để tôi si",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Đợi' to 'Đợi.' at position 1",
-      "reason": "The phrase 'tôi xíu nhé.' ('wait for me a moment, okay?') is omitted, which removes the polite and informative part of the sentence, making the response abrupt and less clear.",
+      "error": "Substitution: 'đợi' to 'để' at position 1",
+      "reason": "'đợi' means 'wait', while 'để' means 'to let' or 'to put'; this changes the intent of the sentence and makes it less coherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'tôi' at position 2",
-      "reason": "infra_error",
+      "error": "Substitution: 'xíu' to 'si' at position 3",
+      "reason": "'xíu' means 'a moment' or 'a bit', while 'si' is not a correct word in this context and makes the sentence unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhé' at position 4",
+      "reason": "'nhé' is a softener particle in Vietnamese, its omission makes the sentence less polite but does not significantly change the meaning.",
       "score": 2
     }
   ]

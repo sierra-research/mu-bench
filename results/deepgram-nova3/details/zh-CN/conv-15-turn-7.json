@@ -1,25 +1,25 @@
 {
   "gold": "是美玲 at email dot com。",
-  "predicted": "是mailingemail。com",
+  "predicted": "是梅琳email。com",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "是美玲 at email dot com。",
-  "werNormalizedPredicted": "是mailing@email.com。",
-  "qualityScore": 1,
-  "significantWer": 0.25,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "是美玲 at email dot com",
+  "werNormalizedPredicted": "是美玲 email com",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
   "majorErrorsCount": 2,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "是 美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "是 mailing@email.com 。",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "是 美 玲 email com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '美' to 'mailing@email.com' at position 1",
-      "reason": "The expected is a Chinese name component, but the actual is an email address, which changes the meaning entirely.",
+      "error": "Deletion: 'at' at position 3",
+      "reason": "'at' is a key part of the email address format. Omitting it makes the email address unclear or unusable.",
       "score": 1
     },
     {
-      "error": "Deletion: '玲' at position 2",
-      "reason": "A part of the name is missing, which significantly alters the intended identity in the sentence.",
+      "error": "Deletion: 'dot' at position 5",
+      "reason": "'dot' is necessary to indicate the period in the email address. Its omission makes the email address incomplete and potentially unusable.",
       "score": 1
     }
   ]

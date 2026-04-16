@@ -2,14 +2,20 @@
   "gold": "Yok, şu anlık yardımcı olduğunuz konuydu zaten, bu kadardı benim problemim, teşekkür ederim.",
   "predicted": "Yok, şu anlık yardımcı olduğunuz konu buydu zaten. Bu kadardı benim problemim. Teşekkür ederim.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Yok, şu anlık yardımcı olduğunuz konuydu zaten, bu kadardı benim problemim, teşekkür ederim.",
-  "werNormalizedPredicted": "Yok, şu anlık yardımcı olduğunuz konuydu zaten, bu kadardı benim problemim, teşekkür ederim.",
-  "qualityScore": 3,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "yok şu anlık yardımcı olduğunuz konuydu zaten bu kadardı benim problemim teşekkür ederim",
+  "werNormalizedPredicted": "yok şu anlık yardımcı olduğunuz konu buydu zaten bu kadardı benim problemim teşekkür ederim",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Yok, şu anlık yardımcı olduğunuz konuydu zaten, bu kadardı benim problemim, teşekkür ederim.",
-  "sigWerNormalizedPredicted": "Yok, şu anlık yardımcı olduğunuz konuydu zaten, bu kadardı benim problemim, teşekkür ederim.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yok şu anlık yardımcı olduğunuz konuydu zaten bu kadardı benim problemim teşekkür ederim",
+  "sigWerNormalizedPredicted": "yok şu anlık yardımcı olduğunuz konu buydu zaten bu kadardı benim problemim teşekkür ederim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'konuydu' to 'buydu' at position 5",
+      "reason": "The model split the word 'konuydu' (which means 'it was the topic') into two words 'konu buydu' ('the topic was this'). This changes the grammatical structure but the overall meaning of the sentence remains the same in context.",
+      "score": 2
+    }
+  ]
 }

@@ -1,15 +1,21 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "नी हाँ",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "你好。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "你 好 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你 好",
+  "werNormalizedPredicted": "नी हाँ",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "नी हाँ",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'नी' at position 0",
+      "reason": "The expected word is in Chinese, while the actual word is in Hindi. This is a substitution of both language and meaning, making the sentence incoherent for the intended language context.",
+      "score": 1
+    }
+  ]
 }

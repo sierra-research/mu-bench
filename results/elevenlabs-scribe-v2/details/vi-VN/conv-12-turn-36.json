@@ -1,31 +1,31 @@
 {
   "gold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
-  "predicted": "À chưa, chưa. Nó hay nó đang bị đơ. Đợi xíu",
+  "predicted": "À queue, queue. Nó hay-- nó đang bị đơ. Đợi xíu",
   "unintelligible": false,
   "wer": 0.625,
-  "werNormalizedGold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
-  "werNormalizedPredicted": "À, chưa, chưa. Nó hay nó đang bị đơ. Đợi xíu.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "chưa chưa nó đang bị đứng đợi xíu",
+  "werNormalizedPredicted": "queue queue nó hay nó đang bị đơ đợi xíu",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
-  "sigWerNormalizedPredicted": "À, chưa, chưa. Nó hay nó đang bị đơ. Đợi xíu.",
+  "sigWerNormalizedGold": "chưa chưa nó đang bị đứng đợi xíu",
+  "sigWerNormalizedPredicted": "queue queue nó hay nó đang bị đơ đợi xíu",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Chưa,' to 'chưa,' at position 0",
-      "reason": "'À' is an interjection that does not change the meaning of the sentence; it just adds a conversational filler.",
-      "score": 2
+      "error": "Substitution: 'chưa' to 'queue' at position 0",
+      "reason": "'queue' is an English word substituted for the Vietnamese 'chưa', which changes the language and meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Insertion: 'hay' at position 3",
-      "reason": "No real difference; only capitalization, which should be ignored.",
-      "score": 3
+      "reason": "The insertion of 'hay' ('or' in Vietnamese) adds ambiguity and changes the meaning of the sentence.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'đứng.' to 'đơ.' at position 5",
-      "reason": "The insertion of 'hay' (meaning 'or') introduces ambiguity about the subject, but the overall meaning is still understandable.",
-      "score": 2
+      "error": "Substitution: 'đứng' to 'đơ' at position 5",
+      "reason": "'đứng' (standing/stuck) and 'đơ' (frozen) are similar in context, both describing a non-responsive state, so the meaning is mostly preserved.",
+      "score": 3
     }
   ]
 }

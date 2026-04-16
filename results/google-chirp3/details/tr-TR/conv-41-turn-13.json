@@ -1,25 +1,20 @@
 {
   "gold": "Kredi kartı limit artışı istiyorum.",
-  "predicted": "Dimi tartışıyor istiyorum.",
+  "predicted": "limit artışı istiyorum.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "Kredi kartı limit artışı istiyorum.",
-  "werNormalizedPredicted": "dimi tartışıyor istiyorum.",
-  "qualityScore": 1,
-  "significantWer": 0.4,
-  "majorErrorsCount": 2,
+  "wer": 0.4,
+  "werNormalizedGold": "kredi kartı limit artışı istiyorum",
+  "werNormalizedPredicted": "limit artışı istiyorum",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Kredi kartı limit artışı istiyorum.",
-  "sigWerNormalizedPredicted": "dimi tartışıyor istiyorum.",
+  "sigWerNormalizedGold": "kredi kartı limit artışı istiyorum",
+  "sigWerNormalizedPredicted": "limit artışı istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Kredi' to 'dimi' at position 0",
-      "reason": "'Kredi' (credit) is replaced with 'dimi', which is not a word in Turkish and does not convey the intended meaning. This significantly changes the meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'limit' at position 2",
-      "reason": "The word 'limit' is missing, which is essential to the meaning of the request about increasing a credit card limit.",
+      "error": "Deletion: 'kredi' at position 0",
+      "reason": "The word 'kredi' (credit) is missing, which changes the meaning from a general limit increase request to a specific credit card limit increase request. This omission significantly alters the intent of the sentence.",
       "score": 1
     }
   ]

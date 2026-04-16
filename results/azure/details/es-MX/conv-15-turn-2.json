@@ -1,15 +1,26 @@
 {
   "gold": "Sí, es C N 205.",
-  "predicted": "Sí, es CN 205.",
+  "predicted": "Sí, SN 205.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí, es C N 205.",
-  "werNormalizedPredicted": "Sí, es C N 205.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Sí, es C N 205.",
-  "sigWerNormalizedPredicted": "Sí, es C N 205.",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "si es c n doscientos cinco",
+  "werNormalizedPredicted": "si s n doscientos cinco",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "si es c n doscientos cinco",
+  "sigWerNormalizedPredicted": "si s n doscientos cinco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 's' at position 1",
+      "reason": "'es' is the Spanish word for 'is', while 's' alone is not a word and loses the meaning, making the sentence less clear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'c' at position 2",
+      "reason": "Omitting 'c' changes the information being conveyed, as it may refer to a code or letter in a sequence, which is significant in context.",
+      "score": 1
+    }
+  ]
 }

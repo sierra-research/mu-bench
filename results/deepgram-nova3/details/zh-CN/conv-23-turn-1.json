@@ -1,21 +1,26 @@
 {
   "gold": "我正在等待新卡，想知道它的状态。",
-  "predicted": "我仍在等待信卡想知道它的状态",
+  "predicted": "我仍在登灾信卡想知道它的状态",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werNormalizedGold": "我正在等待新卡，想知道它的状态。",
-  "werNormalizedPredicted": "我仍在等待新卡，想知道它的状态。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 ， 想 知 道 它 的 状 态 。",
-  "sigWerNormalizedPredicted": "我 仍 在 等 待 新 卡 ， 想 知 道 它 的 状 态 。",
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "我正在等待新卡 想知道它的状态",
+  "werNormalizedPredicted": "我仍在登灾信卡 想知道它的状态",
+  "qualityScore": null,
+  "significantWer": 0.07142857142857142,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 仍 在 登 灾 信 卡 想 知 道 它 的 状 态",
   "sigWerErrors": [
     {
       "error": "Substitution: '正' to '仍' at position 1",
-      "reason": "'正' (currently) and '仍' (still) both indicate ongoing action, and the overall meaning of the sentence remains the same in this context.",
-      "score": 3
+      "reason": "'正' (currently) and '仍' (still) are both temporal adverbs, but '仍' implies continuity from the past, while '正' emphasizes the present ongoing action. The overall meaning is only slightly changed, as both indicate the action is happening, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '等' to '登' at position 3",
+      "reason": "'等' (wait) is the correct verb, while '登' (register/log in) is a completely different action. This changes the meaning of the sentence significantly, as it alters what the speaker is doing.",
+      "score": 1
     }
   ]
 }

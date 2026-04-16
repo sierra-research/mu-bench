@@ -1,26 +1,31 @@
 {
   "gold": "是对的是对的，你继续吧。",
-  "predicted": "啊，是对的，是对的，你继续吧。",
+  "predicted": "啊，是这样的，是这样的。你记一下。",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "是对的是对的，你继续吧。",
-  "werNormalizedPredicted": "啊，是对的，是对的，你继续吧。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "是 对 的 是 对 的 ， 你 继 续 吧 。",
-  "sigWerNormalizedPredicted": "啊 ， 是 对 的 ， 是 对 的 ， 你 继 续 吧 。",
+  "wer": 0.7,
+  "werNormalizedGold": "是对的是对的你继续吧",
+  "werNormalizedPredicted": "是这样的是这样的你记一下",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "是 对 的 是 对 的 你 继 续 吧",
+  "sigWerNormalizedPredicted": "是 这 样 的 是 这 样 的 你 记 一 下",
   "sigWerErrors": [
     {
-      "error": "Insertion: '啊' at position 0",
-      "reason": "'啊' is a discourse particle often used as a filler or to express emotion, but its presence does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: '对' to '样' at position 1",
+      "reason": "The insertion of '这' changes the phrase from '对的' (correct) to '这样的' (like this), which alters the meaning.",
+      "score": 1
     },
     {
-      "error": "Insertion: '，' at position 3",
-      "reason": "Punctuation differences such as an extra comma do not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: '对' to '样' at position 4",
+      "reason": "Substituting '对' (correct) with '样' (like/appearance) changes the meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '继' to '记' at position 7",
+      "reason": "The repeated insertion of '这' again changes the phrase from '对的' to '这样的', altering the meaning.",
+      "score": 1
     }
   ]
 }

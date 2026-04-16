@@ -1,31 +1,31 @@
 {
   "gold": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "predicted": "Yok, ben anlayamadım. Bir önceki koddandı çünkü. Lütfen tekrar eder misiniz?",
+  "predicted": "Yok, ben anlayamadım. Bir önceki koddandı çünkü. Lütfen tekrar eder misin?",
   "unintelligible": false,
   "wer": 0.25,
-  "werNormalizedGold": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "werNormalizedPredicted": "Yok, ben anlayamadım. Bir önceki koddandı çünkü. Lütfen tekrar eder misiniz?",
-  "qualityScore": 2,
+  "werNormalizedGold": "yok ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misiniz",
+  "werNormalizedPredicted": "yok ben anlayamadım bir önceki koddandı çünkü lütfen tekrar eder misin",
+  "qualityScore": null,
   "significantWer": 0.08333333333333333,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Yok ben anlayamadım. Bir önceki koddan farklıydı çünkü. Lütfen tekrar eder misiniz?",
-  "sigWerNormalizedPredicted": "Yok, ben anlayamadım. Bir önceki koddandı çünkü. Lütfen tekrar eder misiniz?",
+  "sigWerNormalizedGold": "yok ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misiniz",
+  "sigWerNormalizedPredicted": "yok ben anlayamadım bir önceki koddandı çünkü lütfen tekrar eder misin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Yok' to 'Yok,' at position 0",
-      "reason": "The only difference is the presence of a comma, which is punctuation and does not affect meaning.",
-      "score": 3
-    },
-    {
       "error": "Substitution: 'koddan' to 'koddandı' at position 5",
-      "reason": "'koddandı' is a grammatical contraction of 'koddan' and 'idi' (was), which slightly changes the structure but not the overall meaning of the sentence.",
+      "reason": "'koddandı' is a grammatical form meaning 'it was from the code', while 'koddan' means 'from the code'. The meaning is only slightly changed, but the sentence remains understandable.",
       "score": 2
     },
     {
       "error": "Deletion: 'farklıydı' at position 6",
-      "reason": "Omitting 'farklıydı' ('was different') removes important information about the previous code being different, which significantly changes the meaning.",
+      "reason": "'farklıydı' means 'it was different', and its omission removes an important part of the sentence, changing the meaning significantly.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'misiniz' to 'misin' at position 11",
+      "reason": "'misiniz' is the polite/plural form, while 'misin' is the singular/informal form. The meaning is mostly preserved, only the level of formality changes.",
+      "score": 2
     }
   ]
 }

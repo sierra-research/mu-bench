@@ -1,21 +1,26 @@
 {
   "gold": "我已经几次说了，哎呀！",
-  "predicted": "我已仅几次说了",
+  "predicted": "我已谨记次说了",
   "unintelligible": false,
-  "wer": 0.36363636363636365,
-  "werNormalizedGold": "我已经几次说了，哎呀！",
-  "werNormalizedPredicted": "我已经几次说了",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "我 已 经 几 次 说 了 ， 哎 呀 ！",
-  "sigWerNormalizedPredicted": "我 已 经 几 次 说 了",
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "我 已经 几 次 说 了 哎呀",
+  "werNormalizedPredicted": "我 已 谨 记 次 说 了",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "我 已 经 几 次 说 了 哎 呀",
+  "sigWerNormalizedPredicted": "我 已 谨 记 次 说 了",
   "sigWerErrors": [
     {
-      "error": "Deletion: '，' at position 7",
-      "reason": "Punctuation differences are to be ignored according to the guidance, so this is not an error.",
-      "score": 3
+      "error": "Substitution: '经' to '谨' at position 2",
+      "reason": "'经' (already) and '谨' (cautiously) are completely different in meaning and change the sense of the sentence, making it confusing or incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '哎' at position 7",
+      "reason": "'哎' is an interjection expressing emotion or emphasis; its omission slightly reduces the expressiveness but does not change the core meaning of the sentence.",
+      "score": 2
     }
   ]
 }

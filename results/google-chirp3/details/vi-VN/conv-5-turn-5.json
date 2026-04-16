@@ -2,25 +2,20 @@
   "gold": "Họ tên đầy đủ của mình là Trần Minh.",
   "predicted": "Tên đầy đủ của mình là Trần Minh.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Họ tên đầy đủ của mình là Trần Minh.",
-  "werNormalizedPredicted": "Tên đầy đủ của mình là Trần Minh.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "ho ten day du cua minh la tran minh",
+  "werNormalizedPredicted": "ten day du cua minh la tran minh",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Họ tên đầy đủ của mình là Trần Minh.",
-  "sigWerNormalizedPredicted": "Tên đầy đủ của mình là Trần Minh.",
+  "sigWerNormalizedGold": "ho ten day du cua minh la tran minh",
+  "sigWerNormalizedPredicted": "ten day du cua minh la tran minh",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Họ' to 'Tên' at position 0",
-      "reason": "'Họ tên' together means 'full name', while 'tên' alone means 'name'. The actual transcript omits 'họ', but since 'tên đầy đủ' still conveys the meaning of 'full name', the overall meaning is preserved.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'tên' at position 1",
-      "reason": "'Họ tên' is a set phrase meaning 'full name', but 'tên đầy đủ' also means 'full name'. The omission of 'họ' does not significantly change the meaning in this context.",
-      "score": 2
+      "error": "Deletion: 'ho' at position 0",
+      "reason": "'ho' is part of the full name phrase in Vietnamese ('ho ten day du' means 'full name'), so omitting 'ho' makes the phrase incomplete and changes the meaning.",
+      "score": 1
     }
   ]
 }

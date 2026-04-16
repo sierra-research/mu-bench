@@ -1,15 +1,26 @@
 {
   "gold": "Rica ederim.",
-  "predicted": "Rica ederim",
+  "predicted": "Çadırın",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Rica ederim.",
-  "werNormalizedPredicted": "Rica ederim.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "rica ederim",
+  "werNormalizedPredicted": "çadırın",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Rica ederim.",
-  "sigWerNormalizedPredicted": "Rica ederim.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "rica ederim",
+  "sigWerNormalizedPredicted": "çadırın",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'rica' to 'çadırın' at position 0",
+      "reason": "'rica' means 'you're welcome' in Turkish, while 'çadırın' means 'your tent'; this is a completely different word and changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ederim' at position 1",
+      "reason": "'ederim' is part of the phrase 'rica ederim' which means 'you're welcome'; omitting it makes the sentence incomplete and incoherent in this context.",
+      "score": 1
+    }
+  ]
 }

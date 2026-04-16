@@ -1,26 +1,31 @@
 {
   "gold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "predicted": "Đúng rồi anh ạ, chuẩn đấy, cảm ơn năm bạn nhé.",
+  "predicted": "Đúng rồi, chuẩn đấy. Cảm ơn năm bạn nhé.",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "werNormalizedPredicted": "Đúng rồi anh ạ, chuẩn đấy, cảm ơn năm bạn nhá.",
-  "qualityScore": 2,
+  "wer": 0.5,
+  "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "werNormalizedPredicted": "đúng rồi chuẩn đấy cảm ơn năm bạn nhé",
+  "qualityScore": null,
   "significantWer": 0.25,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "sigWerNormalizedPredicted": "Đúng rồi anh ạ, chuẩn đấy, cảm ơn năm bạn nhá.",
+  "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "sigWerNormalizedPredicted": "đúng rồi chuẩn đấy cảm ơn năm bạn nhé",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna.' to 'chuẩn' at position 2",
-      "reason": "'Anh' (sir/brother) is inserted where the expected was addressing 'Anna' (a name), which changes the addressee and could confuse the meaning.",
+      "error": "Substitution: 'anna' to 'chuẩn' at position 2",
+      "reason": "'anna' is a proper noun (likely a name), while 'chuẩn' is an adjective meaning 'correct' or 'standard'; this substitution removes the reference to a person and changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'năm' at position 6",
-      "reason": "'Anna' (a person's name) is replaced by 'ạ' (a polite particle), which removes the addressee and changes the meaning of the sentence.",
+      "reason": "'năm' means 'five' or 'year' in Vietnamese and its insertion here is out of context, making the sentence confusing and altering its meaning.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 7",
+      "reason": "'nhá' and 'nhé' are both Vietnamese sentence-ending particles with similar softening/affirmative functions; this is a minor difference and does not change the meaning.",
+      "score": 3
     }
   ]
 }

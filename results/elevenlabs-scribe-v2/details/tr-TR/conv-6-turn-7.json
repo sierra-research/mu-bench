@@ -3,24 +3,24 @@
   "predicted": "Yedek kartın anakarttan farkı nedir peki ha?",
   "unintelligible": false,
   "wer": 0.42857142857142855,
-  "werNormalizedGold": "Yedek kartımın ana karttan farkı nedir peki?",
-  "werNormalizedPredicted": "Yedek kartın ana karttan farkı nedir peki ha?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
+  "werNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Yedek kartımın ana karttan farkı nedir peki?",
-  "sigWerNormalizedPredicted": "Yedek kartın ana karttan farkı nedir peki ha?",
+  "sigWerNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
+  "sigWerNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kartımın' to 'kartın' at position 1",
-      "reason": "The possessive suffix changes from 'my backup card' to 'the backup card', which slightly alters the meaning but does not derail the overall intent of the sentence.",
+      "reason": "'kartımın' means 'of my card' while 'kartın' means 'of your card'; this changes the possessive from first person to second person, which is a minor error as the overall meaning of the sentence is still clear, but the subject changes.",
       "score": 2
     },
     {
-      "error": "Substitution: 'peki?' to 'ha?' at position 6",
-      "reason": "'Ha?' is an interjection that does not change the meaning of the sentence, it just adds a conversational nuance.",
-      "score": 2
+      "error": "Deletion: 'karttan' at position 3",
+      "reason": "'ana karttan' (from the main card) and 'anakarttan' (from the motherboard) are different words; however, in Turkish, 'anakart' can sometimes be used to refer to 'main card' in certain contexts, but here it likely changes the meaning from 'main card' to 'motherboard', which is a significant error as it can confuse the meaning.",
+      "score": 1
     }
   ]
 }

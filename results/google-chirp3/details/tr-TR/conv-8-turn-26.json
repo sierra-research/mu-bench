@@ -1,31 +1,31 @@
 {
   "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "predicted": "İlk ikinci harfi hep yanlış söylüyor. İkinci harfim A olacak. Z'den sonra A var, E değil. Zeynep",
+  "predicted": "İkinci harf hep yanlış. İkinci harfim A olacak. Z'den sonra A var, E değil. Zeynep",
   "unintelligible": false,
-  "wer": 0.26666666666666666,
-  "werNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "werNormalizedPredicted": "İlk ikinci harfi hep yanlış söylüyor. İkinci harfim A olacak, Z'den sonra A var, E değil. Zeynep",
-  "qualityScore": 2,
+  "wer": 0.2,
+  "werNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
+  "werNormalizedPredicted": "ikinci harf hep yanlis ikinci harfim a olacak zden sonra a var e degil zeynep",
+  "qualityScore": null,
   "significantWer": 0.06666666666666667,
   "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "sigWerNormalizedPredicted": "İlk ikinci harfi hep yanlış söylüyor. İkinci harfim A olacak, Z'den sonra A var, E değil. Zeynep",
+  "sigWerNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
+  "sigWerNormalizedPredicted": "ikinci harf hep yanlis ikinci harfim a olacak zden sonra a var e degil zeynep",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İkinci' to 'ikinci' at position 0",
-      "reason": "Adding 'İlk' (meaning 'first') changes the reference from 'second letter' to 'first second letter', which can confuse the meaning and context of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'söylüyorsunuz.' to 'söylüyor.' at position 4",
-      "reason": "Difference is only in capitalization, which does not affect meaning in this context.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'Zeynep' at position 15",
-      "reason": "'Söylüyorsunuz' is second person plural/formal ('you are saying'), while 'söylüyor' is third person singular ('he/she/it is saying'). This changes the subject and can cause confusion, but the overall meaning is still understandable.",
+      "error": "Substitution: 'harfi' to 'harf' at position 1",
+      "reason": "'harfi' is the correct grammatical form in this context, but 'harf' (the base word) still conveys the intended meaning. This is a minor grammatical error that does not change the overall meaning.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'soyluyorsunuz' at position 4",
+      "reason": "Omitting 'soyluyorsunuz' ('you are saying') removes a part of the sentence that addresses the listener, but the main message about the letter remains clear. This is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'zeynep' at position 15",
+      "reason": "'zeynep' is an unrelated word inserted at the end, which could confuse the listener or change the context. This is a significant error as it introduces unrelated information.",
+      "score": 1
     }
   ]
 }

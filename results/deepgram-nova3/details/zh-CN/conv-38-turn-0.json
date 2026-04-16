@@ -3,23 +3,23 @@
   "predicted": "零",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "你好。",
+  "werNormalizedGold": "你好",
   "werNormalizedPredicted": "零",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
   "sigWerNormalizedPredicted": "零",
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '零' at position 0",
-      "reason": "'你' means 'you' and '零' means 'zero'; this is a completely different word and changes the meaning of the sentence entirely.",
+      "reason": "'你' means 'you' (a greeting as part of '你好'), while '零' means 'zero'; this is a completely different word and changes the meaning of the sentence entirely.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "'好' means 'good' or 'hello' in this context; omitting it makes the greeting incomplete and incoherent.",
+      "reason": "'好' is the second character in the greeting '你好' (hello); omitting it makes the greeting incomplete and incoherent.",
       "score": 1
     }
   ]

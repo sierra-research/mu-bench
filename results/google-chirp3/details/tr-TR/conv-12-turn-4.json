@@ -1,26 +1,26 @@
 {
   "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "predicted": "Yalnız e-posta adresim yanlış oldu. Sonu gmail değil email yani E Edirne'nin N'si ile email.com.",
+  "predicted": "Yalnız e-posta adresim yanlış oldu. Sonu gmail değil email yani e Edirne'nin n'si ile email.com.",
   "unintelligible": false,
-  "wer": 0.17647058823529413,
-  "werNormalizedGold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "werNormalizedPredicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email.com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "sigWerNormalizedPredicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email.com.",
+  "wer": 0.10526315789473684,
+  "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "werNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin n si ile email com",
+  "qualityScore": null,
+  "significantWer": 0.10526315789473684,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin n si ile email com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'email.com.' at position 14",
-      "reason": "The actual transcript combines 'email', 'nokta', and 'com' into 'email.com.', but the intended meaning (the domain 'email.com') is preserved. This is a formatting difference, not a semantic one.",
-      "score": 3
+      "error": "Substitution: 'e' to 'n' at position 13",
+      "reason": "The expected phrase is 'e edirnenin e si', which means 'the letter e as in Edirne', but the actual says 'n si', which means 'the letter n'. This changes the email address and is a significant error.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'nokta' at position 15",
-      "reason": "'Nokta' means 'dot' in Turkish, and its omission is compensated by the use of '.' in 'email.com.' in the actual transcript. The meaning is unchanged, only the format differs.",
-      "score": 3
+      "error": "Deletion: 'nokta' at position 17",
+      "reason": "'nokta' means 'dot' and is necessary for the correct format of the email address (dot com). Omitting it makes the email address incorrect, which is a significant error.",
+      "score": 1
     }
   ]
 }

@@ -1,36 +1,31 @@
 {
   "gold": "Tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không?",
-  "predicted": "Tôi có thể được tăng hạng bước nhờ vào việc tái chấp tài sản không?",
+  "predicted": "Tôi có thể được tăng hạn bước nhờ vào việc tái chất tài sản không?",
   "unintelligible": false,
   "wer": 0.2857142857142857,
-  "werNormalizedGold": "Tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không?",
-  "werNormalizedPredicted": "tôi có thể được tăng hạng mức nhờ vào việc tái chấp tài sản không?",
-  "qualityScore": 2,
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
+  "werNormalizedPredicted": "tôi có thể được tăng hạn bước nhờ vào việc tái chất tài sản không",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không?",
-  "sigWerNormalizedPredicted": "tôi có thể được tăng hạng mức nhờ vào việc tái chấp tài sản không?",
+  "sigWerNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
+  "sigWerNormalizedPredicted": "tôi có thể được tăng hạn bước nhờ vào việc tái chất tài sản không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
-      "score": 3
-    },
-    {
       "error": "Insertion: 'được' at position 3",
-      "reason": "Adding 'được' (can/be allowed to) does not significantly change the meaning of the sentence in this context.",
+      "reason": "'Được' adds a nuance of permission or being allowed, but does not significantly change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'hạn' to 'hạng' at position 4",
-      "reason": "'hạn mức' means 'limit' (usually financial), while 'hạng mức' is not a standard phrase and could confuse the meaning.",
+      "error": "Substitution: 'mức' to 'bước' at position 5",
+      "reason": "'Mức' (limit/level) and 'bước' (step) are different in meaning; this substitution changes the meaning of the sentence and makes it less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'thế' to 'tái' at position 9",
-      "reason": "'thế chấp' means 'mortgage/pledge', while 'tái chấp' means 're-mortgage', which changes the meaning of the action.",
-      "score": 2
+      "reason": "'Thế chấp' means 'mortgage/collateral', while 'tái chất' is not a standard phrase and changes the meaning, making the sentence confusing.",
+      "score": 1
     }
   ]
 }

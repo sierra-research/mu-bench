@@ -1,20 +1,25 @@
 {
   "gold": "你好。",
-  "predicted": "拟合。",
+  "predicted": "零",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "拟合。",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "拟 合 。",
+  "wer": 1.0,
+  "werNormalizedGold": "你 好",
+  "werNormalizedPredicted": "零",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "零",
   "sigWerErrors": [
     {
-      "error": "Substitution: '你' to '拟' at position 0",
-      "reason": "'你' means 'you' and '拟' means 'to imitate' or 'draft', which are completely different words and meanings. This substitution changes the meaning of the sentence entirely.",
+      "error": "Substitution: '你' to '零' at position 0",
+      "reason": "'你' means 'you' (a greeting as part of '你好' meaning 'hello'), while '零' means 'zero'. This is a completely different word and changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "'好' is the second character in the greeting '你好' ('hello'). Its omission means the greeting is incomplete and the meaning is lost.",
       "score": 1
     }
   ]

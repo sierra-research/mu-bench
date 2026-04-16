@@ -1,21 +1,26 @@
 {
   "gold": "Có. Xin cảm ơn.",
-  "predicted": "À, dạ xin chào mừng",
+  "predicted": "À, vâng. Xin chào mọi người.",
   "unintelligible": false,
-  "wer": 0.75,
-  "werNormalizedGold": "Có. Xin cảm ơn.",
-  "werNormalizedPredicted": "À, dạ xin cảm ơn.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "có xin cảm ơn",
+  "werNormalizedPredicted": "vâng xin chào mọi người",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Có. Xin cảm ơn.",
-  "sigWerNormalizedPredicted": "À, dạ xin cảm ơn.",
+  "sigWerNormalizedGold": "có xin cảm ơn",
+  "sigWerNormalizedPredicted": "vâng xin chào mọi người",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Có.' to 'dạ' at position 0",
-      "reason": "'À,' is a polite interjection in Vietnamese, often used to acknowledge or start a response. Its addition does not change the meaning of the sentence, which is an affirmative and polite reply.",
-      "score": 2
+      "error": "Substitution: 'có' to 'vâng' at position 0",
+      "reason": "'có' means 'yes/have' and 'vâng' means 'yes' in Vietnamese, but in this context, 'có xin cảm ơn' (thank you) is replaced with a greeting, which changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cảm' to 'mọi' at position 2",
+      "reason": "'chào' means 'hello', which is not present in the expected phrase and shifts the meaning from expressing thanks to greeting.",
+      "score": 1
     }
   ]
 }

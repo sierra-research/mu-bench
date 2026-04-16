@@ -1,20 +1,25 @@
 {
   "gold": "Muốn ạ. Vui lòng hỗ trợ tôi với.",
-  "predicted": "",
+  "predicted": "Muốn vui lòng hỏi trạng tôi với",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Muốn ạ. Vui lòng hỗ trợ tôi với.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
+  "wer": 0.375,
+  "werNormalizedGold": "muốn ạ vui lòng hỗ trợ tôi với",
+  "werNormalizedPredicted": "muốn vui lòng hỏi trạng tôi với",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Muốn ạ. Vui lòng hỗ trợ tôi với.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "muốn ạ vui lòng hỗ trợ tôi với",
+  "sigWerNormalizedPredicted": "muốn vui lòng hỏi trạng tôi với",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Muốn' at position 0",
-      "reason": "The entire expected sentence is missing from the actual transcription, resulting in a complete loss of meaning.",
+      "error": "Deletion: 'ạ' at position 1",
+      "reason": "'ạ' is a polite particle in Vietnamese that adds politeness to the request. Its omission makes the sentence less polite but does not change the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'hỗ' to 'hỏi' at position 4",
+      "reason": "The word 'hỗ' (from 'hỗ trợ' meaning 'support') is replaced with 'hỏi' ('ask'), which changes the meaning of the sentence from requesting support to asking something. This significantly alters the intent of the sentence.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "OK. Đợi tôi xíu nhé.",
-  "predicted": "Ok đợi chút xíu nha",
+  "predicted": "Ok để tôi suy nghĩ",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "OK. Đợi tôi xíu nhé.",
-  "werNormalizedPredicted": "Okay. Đợi tôi xíu nhé.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6,
+  "werNormalizedGold": "okay đợi tôi xíu nhé",
+  "werNormalizedPredicted": "okay để tôi suy nghĩ",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "OK. Đợi tôi xíu nhé.",
-  "sigWerNormalizedPredicted": "Okay. Đợi tôi xíu nhé.",
+  "sigWerNormalizedGold": "okay đợi tôi xíu nhé",
+  "sigWerNormalizedPredicted": "okay để tôi suy nghĩ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'OK.' to 'Okay.' at position 0",
-      "reason": "'OK' and 'Okay' are semantically equivalent and interchangeable in this context.",
-      "score": 3
+      "error": "Substitution: 'đợi' to 'để' at position 1",
+      "reason": "'đợi' means 'wait', while 'để' means 'to let' or 'in order to'; this changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'xíu' to 'suy' at position 3",
+      "reason": "'xíu' means 'a moment' or 'a bit', while 'suy' is the root of 'suy nghĩ' meaning 'think'; this changes the meaning of the sentence from asking to wait a moment to thinking, which is a significant change.",
+      "score": 1
     }
   ]
 }

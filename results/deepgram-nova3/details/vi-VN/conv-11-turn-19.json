@@ -1,36 +1,26 @@
 {
   "gold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "predicted": "Ý là tôi muốn được sinh cấp một lần hai cái thẻ để một cái dự phòng",
+  "predicted": "Ý là tôi muốn được sinh cấp một lần hai cái thẻ để một cái dịch vụ",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "werNormalizedPredicted": "ý là tôi muốn được sinh cấp một lần hai cái thẻ. để một cái dự phòng",
-  "qualityScore": 2,
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "wer": 0.1875,
+  "werNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
+  "werNormalizedPredicted": "ý là tôi muốn được sinh cấp một lần hai cái thẻ để một cái dịch vụ",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "sigWerNormalizedPredicted": "ý là tôi muốn được sinh cấp một lần hai cái thẻ. để một cái dự phòng",
+  "sigWerNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
+  "sigWerNormalizedPredicted": "ý là tôi muốn được sinh cấp một lần hai cái thẻ để một cái dịch vụ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Ý' to 'ý' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
-      "score": 3
-    },
-    {
       "error": "Insertion: 'sinh' at position 5",
-      "reason": "The word 'sinh' is inserted, which does not fit the context and makes the sentence less coherent. It changes the meaning and introduces confusion.",
+      "reason": "'sinh' is an extra word that does not fit the context and makes the sentence less coherent, potentially confusing the meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: 'Để' to 'để' at position 11",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'phòng.' to 'phòng' at position 15",
-      "reason": "Difference is only in punctuation, which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'dự' to 'dịch' at position 14",
+      "reason": "Substituting 'dự phòng' (backup/spare) with 'dịch vụ' (service) changes the meaning of the sentence significantly, as it refers to a different concept.",
+      "score": 1
     }
   ]
 }

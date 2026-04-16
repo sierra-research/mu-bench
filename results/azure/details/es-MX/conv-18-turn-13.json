@@ -1,15 +1,26 @@
 {
   "gold": "Sí, es C N 8 5 2.",
-  "predicted": "Sí, es CN 852.",
+  "predicted": "Sí, SN 852.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí, es C N 8 5 2.",
-  "werNormalizedPredicted": "Sí, es C N 8 5 2.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "si es c n eight five two",
+  "werNormalizedPredicted": "si s n eight five two",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Sí, es C N 8 5 2.",
-  "sigWerNormalizedPredicted": "Sí, es C N 8 5 2.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "si es c n eight five two",
+  "sigWerNormalizedPredicted": "si s n eight five two",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 's' at position 1",
+      "reason": "'es' and 's' are different; 'es' could be a Spanish word or a letter, while 's' is just the letter. If 'es' is meant as a letter, this is a minor error, but if it is the Spanish word for 'is', this changes the meaning. Given the context of a sequence with letters and numbers, it's likely a letter, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'c' at position 2",
+      "reason": "Omitting a letter in a sequence (possibly a code or identifier) is a significant error, as it changes the information being conveyed.",
+      "score": 1
+    }
+  ]
 }

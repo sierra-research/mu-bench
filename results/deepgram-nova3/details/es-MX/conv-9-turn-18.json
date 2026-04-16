@@ -1,21 +1,26 @@
 {
   "gold": "¿Me podrías adelantar el monto de la factura?",
-  "predicted": "¿Me podrías el monto de la factura?",
+  "predicted": "¿Me podrías adelanto monto de la factura?",
   "unintelligible": false,
-  "wer": 0.125,
-  "werNormalizedGold": "¿Me podrías adelantar el monto de la factura?",
-  "werNormalizedPredicted": "¿Me podrías el monto de la factura?",
-  "qualityScore": 2,
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
+  "wer": 0.25,
+  "werNormalizedGold": "me podrias adelantar el monto de la factura",
+  "werNormalizedPredicted": "me podrias adelanto monto de la factura",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "¿Me podrías adelantar el monto de la factura?",
-  "sigWerNormalizedPredicted": "¿Me podrías el monto de la factura?",
+  "sigWerNormalizedGold": "me podrias adelantar el monto de la factura",
+  "sigWerNormalizedPredicted": "me podrias adelanto monto de la factura",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'adelantar' at position 2",
-      "reason": "The omission of 'adelantar' removes the main action of the request, making the sentence incomplete and unclear. The meaning is significantly changed.",
-      "score": 1
+      "error": "Substitution: 'adelantar' to 'adelanto' at position 2",
+      "reason": "'Adelantar' (to advance) is a verb in infinitive form, while 'adelanto' (I advance/advance) is a noun or first person verb. This changes the grammatical structure but the intent of the sentence is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'el' at position 3",
+      "reason": "Omitting 'el' (the) makes the sentence less grammatically correct but does not significantly change the meaning; the listener can still understand the request.",
+      "score": 2
     }
   ]
 }

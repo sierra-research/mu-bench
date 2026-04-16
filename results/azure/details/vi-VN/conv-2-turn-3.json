@@ -2,24 +2,19 @@
   "gold": "Đã sẵn sàng. Vui lòng đọc lại mã.",
   "predicted": "Để đã sẵn sàng vui lòng, đọc lại mạng.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Đã sẵn sàng. Vui lòng đọc lại mã.",
-  "werNormalizedPredicted": "Đã sẵn sàng. Vui lòng, đọc lại mạng.",
-  "qualityScore": 2,
+  "wer": 0.125,
+  "werNormalizedGold": "đã sẵn sàng vui lòng đọc lại mã",
+  "werNormalizedPredicted": "đã sẵn sàng vui lòng đọc lại mạng",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Đã sẵn sàng. Vui lòng đọc lại mã.",
-  "sigWerNormalizedPredicted": "Đã sẵn sàng. Vui lòng, đọc lại mạng.",
+  "sigWerNormalizedGold": "đã sẵn sàng vui lòng đọc lại mã",
+  "sigWerNormalizedPredicted": "đã sẵn sàng vui lòng đọc lại mạng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'lòng' to 'lòng,' at position 4",
-      "reason": "The only difference is the addition of a comma, which is punctuation and should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'mã.' to 'mạng.' at position 7",
-      "reason": "'Mã' (code) and 'mạng' (network) are completely different words and meanings. This substitution changes the meaning of the sentence significantly, as it asks the user to read back a code versus a network.",
+      "error": "Substitution: 'mã' to 'mạng' at position 7",
+      "reason": "'Mã' means 'code' while 'mạng' means 'network'; this changes the meaning of the instruction from asking to repeat a code to asking to repeat a network, which derails the intended meaning of the sentence.",
       "score": 1
     }
   ]

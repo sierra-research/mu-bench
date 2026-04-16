@@ -1,15 +1,26 @@
 {
   "gold": "君灵，君灵。",
-  "predicted": "Drinling.",
+  "predicted": "Drainling.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "君灵，君灵。",
-  "werNormalizedPredicted": "君灵，君灵。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "君 灵 ， 君 灵 。",
-  "sigWerNormalizedPredicted": "君 灵 ， 君 灵 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "君灵 君灵",
+  "werNormalizedPredicted": "drainling",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "君 灵 君 灵",
+  "sigWerNormalizedPredicted": "drainling",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drainling' at position 0",
+      "reason": "The expected word is a Chinese character, but the actual transcription is an unrelated English word, resulting in a complete loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "The expected word is missing entirely from the actual transcription, which significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
 }

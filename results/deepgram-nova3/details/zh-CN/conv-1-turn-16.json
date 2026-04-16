@@ -1,15 +1,21 @@
 {
   "gold": "我已经几次说了。",
-  "predicted": "我已经几次说了",
+  "predicted": "我已经第一次说了",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我已经几次说了。",
-  "werNormalizedPredicted": "我已经几次说了。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "我 已 经 几 次 说 了 。",
-  "sigWerNormalizedPredicted": "我 已 经 几 次 说 了 。",
-  "sigWerErrors": []
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "我 已经 几 次 说 了",
+  "werNormalizedPredicted": "我 已经 第一次 说 了",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 已 经 几 次 说 了",
+  "sigWerNormalizedPredicted": "我 已 经 第 一 次 说 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '几' to '一' at position 3",
+      "reason": "The insertion of '第' changes the meaning from 'several times' to 'the first time', which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -4,7 +4,7 @@
 
 ## Overview
 
-This benchmark compares transcription providers on real customer service phone conversations recorded at 24kHz mono. Human annotators produce word-level ground truth transcripts for each caller utterance.
+This benchmark compares transcription providers on real customer service phone conversations recorded at 8kHz mono. Human annotators produce word-level ground truth transcripts for each caller utterance.
 
 The dataset covers 5 locales with 4,270 utterances total:
 
@@ -16,180 +16,71 @@ The dataset covers 5 locales with 4,270 utterances total:
 | vi-VN | Vietnamese | 975 |
 | zh-CN | Chinese (Mandarin) | 840 |
 
-## Getting Started
+Live leaderboard: [research.sierra.ai/mubench](https://research.sierra.ai/mubench)
 
-### 1. Install System Dependencies
+## For Submitters (Benchmarking Your Model)
+
+If you want to evaluate your speech-to-text model on MU-Bench, read **[`submissions/SUBMITTING.md`](submissions/SUBMITTING.md)**. The short version:
+
+1. Request access to the [HuggingFace dataset](https://huggingface.co/datasets/sierra-research/mu-bench) and download the audio.
+2. Run your model, producing one `.txt` per utterance plus a `latency.json`.
+3. Drop a directory under `submissions/raw/<your-model-name>/` and open a PR.
+4. CI validates the format; a maintainer comments `/score` to run scoring; the leaderboard redeploys on merge.
+
+### Local validation (before opening a PR)
 
 ```bash
-brew install ffmpeg   # macOS
-# or: apt-get install ffmpeg   # Linux
+pip install pyyaml              # or: pip install -e . from the repo root
+python scoring/validate.py submissions/raw/<your-model-name> --manifest manifest.json
 ```
 
-### 2. Download Audio
-
-The audio is hosted as a gated dataset on HuggingFace. You'll need to:
-
-1. [Request access](https://huggingface.co/datasets/sierra-research/mu-bench) to the `sierra-research/mu-bench` dataset
-2. Create a [HuggingFace token](https://huggingface.co/settings/tokens) and set it as an environment variable
+### Downloading the audio
 
 ```bash
 export HF_TOKEN=your_token_here
-pip install -r scripts/requirements.txt
+pip install -e .[tools]
 python scripts/download_audio.py
 ```
 
-This exports `.wav` files to `audio/<locale>/`.
+Audio files land in `audio/<locale>/`.
 
-### 3. View the Leaderboard Locally
+## Metrics
 
-```bash
-cd leaderboard
-npm install
-npm run dev
-```
+| Metric | Direction | Description |
+|---|---|---|
+| **WER** (Word Error Rate) | Lower is better | Percentage of words incorrectly transcribed after LLM normalization |
+| **UER** (Utterance Error Rate) | Lower is better | Fraction of utterances containing at least one meaning-changing error |
+| **Latency p95** | Lower is better | 95th percentile of per-request API response time (ms), measured at concurrency=1 |
 
-### 4. Explore the Manifest
-
-`manifest.json` contains every utterance in the benchmark with its ground truth transcript:
-
-```json
-{
-  "id": "conv-0-turn-0",
-  "locale": "en-US",
-  "conversation_id": "conv-0",
-  "turn_index": 0,
-  "transcript": "Hi. I'm calling to check the status of my card.",
-  "audio_path": "audio/en-US/conv-0-turn-0.wav",
-  "duration_sec": 2.246
-}
-```
-
-## Submitting Results
-
-### Submission Format
-
-Create a directory under `submissions/raw/<your-model-name>/` with the following structure:
-
-```
-submissions/raw/your-model-name/
-  metadata.yaml
-  latency.json              # Optional — per-utterance API latency
-  en-US/
-    conv-0-turn-0.txt
-    conv-0-turn-1.txt
-    ...
-  es-MX/
-    ...
-  tr-TR/
-    ...
-  vi-VN/
-    ...
-  zh-CN/
-    ...
-```
-
-**Transcript files:** One `.txt` file per utterance containing only the transcript text. File names must match the utterance IDs in `manifest.json` (e.g., `conv-0-turn-0.txt`).
-
-**latency.json (optional):** Per-utterance API response time in milliseconds, measured as wall-clock time from request send to response received:
-
-```json
-{
-  "conv-0-turn-0": 234.5,
-  "conv-0-turn-1": 187.2
-}
-```
-
-If included, p50 and p95 latency statistics will be computed and displayed on the leaderboard.
-
-**metadata.yaml:** Include basic model information:
-
-```yaml
-model: Your-Model-Name
-organization: Your Organization
-version: "1.0"
-date: "2026-04-01"
-contact: your-email@example.com
-notes: ""
-```
-
-### Required Fields
-
-| Field | Description |
-|-------|-------------|
-| `model` | Name of the transcription model |
-| `organization` | Company or team name |
-| `version` | Model version string |
-| `date` | Submission date (YYYY-MM-DD) |
-| `contact` | Email for questions (optional) |
-| `notes` | Any additional context (optional) |
-
-### Step-by-Step
-
-1. **Download the audio** from the HuggingFace dataset (or use `scripts/download_audio.py`)
-2. **Run your model** on all audio files listed in `manifest.json`
-3. **Save transcripts** as `.txt` files — one per utterance, plain text, no headers
-4. **Create `metadata.yaml`** with your model info
-5. **(Optional) Create `latency.json`** mapping utterance IDs to API response times in milliseconds
-6. **Open a pull request** to this repo adding your submission under `submissions/raw/`
-
-You do not need to submit transcripts for every locale. Missing locales will be noted but the submission will still be accepted. Missing utterances within a locale will be scored as full errors.
-
-### Validation
-
-You can validate your submission locally before opening a PR:
-
-```bash
-pip install -r scoring/requirements.txt
-python scoring/validate.py submissions/raw/your-model-name --manifest manifest.json
-```
-
-When you open a PR, CI runs the same check automatically. Validation verifies:
-- `metadata.yaml` is present with required fields
-- All `.txt` file names match utterance IDs in the manifest
-- Warns about missing utterances (scored as full errors)
-- Warns about empty transcript files
-
-### Scoring
-
-Scoring is run by maintainers — submitters do not need to run it locally. When a maintainer comments `/score` on your PR, the CI pipeline runs automatically:
-
-1. **Normalization** — Your raw transcripts are LLM-normalized toward the ground truth format (handling differences in number formatting, punctuation, contractions, etc.)
-2. **Scoring** — Four metrics are computed:
-
-| Metric | Description | Direction |
-|--------|-------------|-----------|
-| **WER** | Word Error Rate after LLM normalization | Lower is better |
-| **Significant WER** | Rate of semantically significant word errors | Lower is better |
-| **Quality Score** | LLM-judged quality on a 0-3 scale (computed on raw transcripts) | Higher is better |
-| **Latency (p95)** | 95th percentile API response time per utterance (ms) | Lower is better |
-
-Results are posted as a comment on your PR and added to the leaderboard on merge. The scoring prompts and API keys are stored as GitHub secrets and are not available outside CI.
-
-See `submissions/raw/deepgram-nova3/` for a complete example submission.
+See [`submissions/SUBMITTING.md`](submissions/SUBMITTING.md) for how each metric is computed.
 
 ## Repository Structure
 
 ```
-manifest.json              # Audio file list + ground truth transcripts
-scripts/
-  download_audio.py        # Download audio from HuggingFace
-  transcribe.py            # Runs provider APIs to generate transcripts + latency
-  latency_stats.py         # Compute p50/p95 latency from latency.json files
-  requirements.txt         # Python dependencies
+manifest.json                # Audio list + ground truth transcripts
+pyproject.toml               # Python deps (base, [tools], [scoring], [transcribe] extras)
 submissions/
-  raw/                     # Raw transcripts + latency.json, one directory per provider
-  normalized/              # LLM-normalized transcripts (auto-generated)
+  SUBMITTING.md              # Submitter guide (read this first)
+  raw/                       # One dir per provider: .txt transcripts + latency.json + metadata.yaml
+  normalized/                # LLM-normalized transcripts (auto-generated on merge)
 scoring/
-  validate.py              # Submission format validation
-  normalize.py             # LLM-based transcript normalization
-  score.py                 # Metrics computation (WER, quality, sig. WER)
-  metrics.py               # Core metric implementations
-  prompts.py               # LLM prompt templates
+  validate.py                # Submission format validation (run locally, also by CI)
+  normalize.py               # LLM-based transcript normalization (CI only)
+  score.py                   # WER / UER / quality computation (CI only)
+  metrics.py                 # Core metric implementations
+  update_leaderboard.py      # Regenerates results/leaderboard.json
+scripts/
+  download_audio.py          # Fetch audio from HuggingFace
+  transcribe.py              # Example: run provider APIs end-to-end
+  latency_stats.py           # Compute p50/p95 and patch scores.json
+  compare_transcripts.py     # Diff two submission bases utterance-by-utterance
+  significance_test.py       # Statistical significance between providers
 results/
-  leaderboard.json         # Aggregated leaderboard data
-  <provider>/scores.json   # Per-provider score breakdowns (includes latency)
-leaderboard/               # React/Vite leaderboard web app
-.github/workflows/         # CI for validation, scoring, and deployment
+  leaderboard.json           # Aggregated leaderboard
+  <provider>/scores.json     # Per-provider breakdown
+  <provider>/details/        # Per-utterance scoring detail
+leaderboard/                 # React/Vite web app for the public leaderboard (maintainer concern)
+.github/workflows/           # CI for validation, scoring, and deployment
 ```
 
 ## License

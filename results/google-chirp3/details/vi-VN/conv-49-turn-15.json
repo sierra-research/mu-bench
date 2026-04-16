@@ -1,21 +1,26 @@
 {
   "gold": "Thôi được rồi. Cảm ơn.",
-  "predicted": "À thôi được rồi, cảm ơn.",
+  "predicted": "Sorry rồi, cảm ơn.",
   "unintelligible": false,
   "wer": 0.4,
-  "werNormalizedGold": "Thôi được rồi. Cảm ơn.",
-  "werNormalizedPredicted": "À thôi được rồi. Cảm ơn.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "thôi được rồi cảm ơn",
+  "werNormalizedPredicted": "sorry rồi cảm ơn",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Thôi được rồi. Cảm ơn.",
-  "sigWerNormalizedPredicted": "À thôi được rồi. Cảm ơn.",
+  "sigWerNormalizedGold": "thôi được rồi cảm ơn",
+  "sigWerNormalizedPredicted": "sorry rồi cảm ơn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Thôi' to 'thôi' at position 0",
-      "reason": "'À' is a discourse marker in Vietnamese, often used to express realization or attention. Its presence does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'thôi' to 'sorry' at position 0",
+      "reason": "'thôi' is a Vietnamese word meaning 'that's enough' or 'stop', while 'sorry' is an English apology. This changes the language and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'được' at position 1",
+      "reason": "'được' is omitted, which removes part of the intended meaning in the Vietnamese sentence.",
+      "score": 1
     }
   ]
 }

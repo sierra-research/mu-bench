@@ -1,20 +1,25 @@
 {
   "gold": "İyi günler.",
-  "predicted": "Ney konuş?",
+  "predicted": "Neymiş?",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "İyi günler.",
-  "werNormalizedPredicted": "Ney konuş?",
-  "qualityScore": 1,
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "iyi günler",
+  "werNormalizedPredicted": "neymiş",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "İyi günler.",
-  "sigWerNormalizedPredicted": "Ney konuş?",
+  "sigWerNormalizedGold": "iyi günler",
+  "sigWerNormalizedPredicted": "neymiş",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İyi' to 'Ney' at position 0",
-      "reason": "The actual transcription is a completely different phrase in Turkish, changing the meaning from a greeting ('Good day') to a question ('What talk?'), which derails the intended meaning of the sentence.",
+      "error": "Substitution: 'iyi' to 'neymiş' at position 0",
+      "reason": "'iyi' means 'good' and 'neymiş' means 'what is it' in Turkish; this substitution completely changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'günler' at position 1",
+      "reason": "'günler' means 'days' and is part of the greeting 'iyi günler' ('good day'); omitting it further derails the intended greeting.",
       "score": 1
     }
   ]

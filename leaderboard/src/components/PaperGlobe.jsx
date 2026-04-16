@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { geoOrthographic, geoPath, geoGraticule10 } from "d3-geo";
+import { geoOrthographic, geoPath, geoGraticule10, geoDistance } from "d3-geo";
 import * as topojson from "topojson-client";
 import "./PaperGlobe.css";
 
@@ -148,6 +148,7 @@ export default function PaperGlobe() {
             .clipAngle(90);
         const path = geoPath(projection, ctx);
         const globeRadius = WIDTH / 2.15;
+        const center = [-rotationRef.current[0], -rotationRef.current[1]];
 
         ctx.clearRect(0, 0, WIDTH, HEIGHT);
 
@@ -189,10 +190,9 @@ export default function PaperGlobe() {
 
         // Radial glow around each locale pin for visual presence
         for (const pin of LOCALE_PINS) {
+            if (geoDistance([pin.lng, pin.lat], center) > Math.PI / 2) continue;
             const coords = projection([pin.lng, pin.lat]);
             if (!coords) continue;
-            const dist = Math.sqrt((coords[0] - WIDTH / 2) ** 2 + (coords[1] - HEIGHT / 2) ** 2);
-            if (dist > globeRadius) continue;
 
             const colors = STATUS_COLORS[pin.status];
             const glowR = pin.open ? 28 : 20;
@@ -207,10 +207,9 @@ export default function PaperGlobe() {
 
         // Small dot pins on top
         for (const pin of LOCALE_PINS) {
+            if (geoDistance([pin.lng, pin.lat], center) > Math.PI / 2) continue;
             const coords = projection([pin.lng, pin.lat]);
             if (!coords) continue;
-            const dist = Math.sqrt((coords[0] - WIDTH / 2) ** 2 + (coords[1] - HEIGHT / 2) ** 2);
-            if (dist > globeRadius) continue;
 
             const r = pin.open ? 4 : 3;
             const dotColor = pin.open ? "#4f46e5" : pin.status === "completed" ? "#059669" : "#d97706";
@@ -266,8 +265,8 @@ export default function PaperGlobe() {
             const dy = e.clientY - lastMouseRef.current.y;
             const scale = 0.3;
             rotationRef.current = [
-                rotationRef.current[0] - dx * scale,
-                Math.max(-89, Math.min(89, rotationRef.current[1] + dy * scale)),
+                rotationRef.current[0] + dx * scale,
+                Math.max(-89, Math.min(89, rotationRef.current[1] - dy * scale)),
                 rotationRef.current[2],
             ];
             lastMouseRef.current = { x: e.clientX, y: e.clientY };
@@ -284,9 +283,11 @@ export default function PaperGlobe() {
                 .rotate(rotationRef.current)
                 .clipAngle(90);
 
+            const center = [-rotationRef.current[0], -rotationRef.current[1]];
             let closest = null;
             let closestDist = 20;
             for (const pin of LOCALE_PINS) {
+                if (geoDistance([pin.lng, pin.lat], center) > Math.PI / 2) continue;
                 const coords = projection([pin.lng, pin.lat]);
                 if (!coords) continue;
                 const d = Math.sqrt((coords[0] - mx) ** 2 + (coords[1] - my) ** 2);

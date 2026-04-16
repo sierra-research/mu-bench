@@ -1,25 +1,25 @@
 {
   "gold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "predicted": "Annem bana takip olduğunu tekrar söyle yazamadım, tek tek söyle tane tane.",
+  "predicted": "Anladım ben takip olduğunu tekrar söyle yazamadım tek tek söyle tane tane.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werNormalizedGold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "werNormalizedPredicted": "Annem, bana takip olduğunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "qualityScore": 2,
+  "wer": 0.25,
+  "werNormalizedGold": "anna bana takip kodunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "werNormalizedPredicted": "anladım ben takip olduğunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "sigWerNormalizedPredicted": "Annem, bana takip olduğunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
+  "sigWerNormalizedGold": "anna bana takip kodunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "sigWerNormalizedPredicted": "anladım ben takip olduğunu tekrar söyle yazamadım tek tek söyle tane tane",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna,' to 'Annem,' at position 0",
-      "reason": "'Anna' is a proper noun (a person's name), while 'Annem' means 'my mother' in Turkish. This changes the addressee of the sentence, which significantly alters the meaning.",
+      "error": "Substitution: 'anna' to 'anladım' at position 0",
+      "reason": "'anna' is a name or direct address, while 'anladım' means 'I understood' in Turkish. This changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'kodunu' to 'olduğunu' at position 3",
-      "reason": "'Kodunu' means 'the code' (object of the sentence), while 'olduğunu' means 'that it is' or 'that it was', which changes the object and meaning of the sentence. This substitution makes the sentence incoherent and derails the intended meaning.",
+      "reason": "'kodunu' means 'your code', while 'olduğunu' means 'that it is'. This substitution changes the object of the sentence and alters the intended meaning.",
       "score": 1
     }
   ]

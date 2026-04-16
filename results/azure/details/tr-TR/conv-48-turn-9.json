@@ -2,14 +2,20 @@
   "gold": "Tekrar et ve onaylayalım.",
   "predicted": "Tekrar@ ve onaylayalım.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Tekrar et ve onaylayalım.",
-  "werNormalizedPredicted": "Tekrar et ve onaylayalım.",
-  "qualityScore": 3,
+  "wer": 0.25,
+  "werNormalizedGold": "tekrar et ve onaylayalım",
+  "werNormalizedPredicted": "tekrar ve onaylayalım",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Tekrar et ve onaylayalım.",
-  "sigWerNormalizedPredicted": "Tekrar et ve onaylayalım.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tekrar et ve onaylayalım",
+  "sigWerNormalizedPredicted": "tekrar ve onaylayalım",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'et' at position 1",
+      "reason": "The verb 'et' (meaning 'do' or 'repeat') is omitted, which changes the command from 'repeat and let's confirm' to just 'repeat and let's confirm' without the explicit action. The omission slightly reduces clarity but the overall intent is still understandable.",
+      "score": 2
+    }
+  ]
 }

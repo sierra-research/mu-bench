@@ -1,20 +1,25 @@
 {
   "gold": "不对啊，郡凛。",
-  "predicted": "不对呀，军令。",
+  "predicted": "Boutueria Jun Liu.",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werNormalizedGold": "不对啊，郡凛。",
-  "werNormalizedPredicted": "不对啊，军令。",
-  "qualityScore": 1,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "不 对 啊 ， 郡 凛 。",
-  "sigWerNormalizedPredicted": "不 对 啊 ， 军 令 。",
+  "wer": 1.0,
+  "werNormalizedGold": "不对啊 郡凛",
+  "werNormalizedPredicted": "jun lin",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "不 对 啊 郡 凛",
+  "sigWerNormalizedPredicted": "jun lin",
   "sigWerErrors": [
     {
-      "error": "Substitution: '郡' to '军' at position 4",
-      "reason": "'郡' (county) and '军' (army) are completely different words with unrelated meanings, which changes the meaning of the sentence significantly.",
+      "error": "Substitution: '不' to 'jun' at position 0",
+      "reason": "The expected transcription is in Chinese, while the actual transcription is in pinyin/romanized form. This is a significant error as it changes the language and could confuse the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '啊' at position 2",
+      "reason": "The word '啊' is missing in the actual transcription, which could affect the tone or meaning in Chinese. Its omission is a significant error in this context.",
       "score": 1
     }
   ]

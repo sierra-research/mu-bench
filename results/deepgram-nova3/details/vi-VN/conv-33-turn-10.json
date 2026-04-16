@@ -1,15 +1,41 @@
 {
   "gold": "Thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với, tình trạng ngày phát hành, ngày gửi nếu có. Với cả cung cấp mã theo dõi giúp mình với nhé.",
-  "predicted": "Thế bạn kiểm tra thẻ mới hoặc là cái thẻ thay thế giúp mình với cái tình trạng ngày phát hành ngày gửi nếu có nhé với cả cung cấp mã theo dõi cho mình với nhé",
+  "predicted": "Thế bạn kiểm tra thẻ mới hoặc là thẻ thay thế giúp mình với cái tình trạng này phát hành ngày gửi nếu có nhé với cả cung cấp mã theo dõi cho mình với nhé",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với, tình trạng ngày phát hành, ngày gửi nếu có. Với cả cung cấp mã theo dõi giúp mình với nhé.",
-  "werNormalizedPredicted": "Thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với, tình trạng ngày phát hành, ngày gửi nếu có. Với cả cung cấp mã theo dõi giúp mình với nhé.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.18181818181818182,
+  "werNormalizedGold": "thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với tình trạng ngày phát hành ngày gửi nếu có với cả cung cấp mã theo dõi giúp mình với nhé",
+  "werNormalizedPredicted": "thế bạn kiểm tra thẻ mới hoặc là thẻ thay thế giúp mình với cái tình trạng này phát hành ngày gửi nếu có nhé với cả cung cấp mã theo dõi cho mình với nhé",
+  "qualityScore": null,
+  "significantWer": 0.030303030303030304,
+  "majorErrorsCount": 1,
   "totalWordsCount": 33,
-  "sigWerNormalizedGold": "Thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với, tình trạng ngày phát hành, ngày gửi nếu có. Với cả cung cấp mã theo dõi giúp mình với nhé.",
-  "sigWerNormalizedPredicted": "Thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với, tình trạng ngày phát hành, ngày gửi nếu có. Với cả cung cấp mã theo dõi giúp mình với nhé.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với tình trạng ngày phát hành ngày gửi nếu có với cả cung cấp mã theo dõi giúp mình với nhé",
+  "sigWerNormalizedPredicted": "thế bạn kiểm tra thẻ mới hoặc là thẻ thay thế giúp mình với cái tình trạng này phát hành ngày gửi nếu có nhé với cả cung cấp mã theo dõi cho mình với nhé",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hay' to 'là' at position 6",
+      "reason": "'hoặc' (or) is inserted before 'là', but in this context, it serves a similar function to 'hay' (or), so the meaning is not significantly changed.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 13",
+      "reason": "'hay' (or) is replaced by 'là' (is), but since 'hoặc là' together means 'or', the overall meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ngày' to 'này' at position 15",
+      "reason": "The insertion of 'cái' (a classifier) before 'tình trạng' does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'nhé' at position 22",
+      "reason": "'ngày' (day) is replaced by 'này' (this), which changes the meaning of the phrase from 'ngày phát hành' (issue date) to 'tình trạng này phát hành' (this status issued), which makes the sentence less clear and could confuse the listener.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'giúp' to 'cho' at position 29",
+      "reason": "The addition of 'nhé' (a softener particle) does not affect the meaning.",
+      "score": 3
+    }
+  ]
 }

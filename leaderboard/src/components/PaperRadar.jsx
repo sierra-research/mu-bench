@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SHOW_QUALITY } from "../utils/metrics.js";
 import "./PaperRadar.css";
 
 const LOCALES = ["en-US", "es-MX", "tr-TR", "vi-VN", "zh-CN"];
@@ -14,7 +15,7 @@ const PROVIDERS = [
     { id: "google-chirp3", label: "Google Chirp-3", color: "#059669" },
     { id: "elevenlabs-scribe-v2", label: "ElevenLabs Scribe v2", color: "#7c3aed" },
     { id: "deepgram-nova3", label: "Deepgram Nova-3", color: "#2563eb" },
-    { id: "openai-gpt4o-transcribe", label: "OpenAI GPT-4o", color: "#dc2626" },
+    { id: "openai-gpt4o-mini-transcribe", label: "OpenAI GPT-4o Mini", color: "#dc2626" },
     { id: "azure", label: "Microsoft Azure", color: "#d97706" },
 ];
 
@@ -40,12 +41,12 @@ const SCORES = {
         "vi-VN": { wer: 0.284, sigWer: 0.148, quality: 2.62, latency: 821 },
         "zh-CN": { wer: 0.177, sigWer: 0.209, quality: 2.28, latency: 560 },
     },
-    "openai-gpt4o-transcribe": {
-        "en-US": { wer: 0.076, sigWer: 0.072, quality: 2.87, latency: 980 },
-        "es-MX": { wer: 0.108, sigWer: 0.101, quality: 2.78, latency: 1075 },
-        "tr-TR": { wer: 0.133, sigWer: 0.142, quality: 2.66, latency: 1159 },
-        "vi-VN": { wer: 0.172, sigWer: 0.229, quality: 2.59, latency: 1042 },
-        "zh-CN": { wer: 0.202, sigWer: 0.262, quality: 2.19, latency: 936 },
+    "openai-gpt4o-mini-transcribe": {
+        "en-US": { wer: 0.039, sigWer: 0.051, quality: 2.87, latency: 1328 },
+        "es-MX": { wer: 0.111, sigWer: 0.145, quality: 2.78, latency: 1375 },
+        "tr-TR": { wer: 0.113, sigWer: 0.178, quality: 2.66, latency: 1652 },
+        "vi-VN": { wer: 0.209, sigWer: 0.319, quality: 2.59, latency: 1281 },
+        "zh-CN": { wer: 0.165, sigWer: 0.225, quality: 2.19, latency: 1116 },
     },
     azure: {
         "en-US": { wer: 0.046, sigWer: 0.033, quality: 2.92, latency: 638 },
@@ -56,12 +57,14 @@ const SCORES = {
     },
 };
 
-const METRICS = [
+const ALL_METRICS = [
     { key: "wer", label: "WER", max: 0.55, invert: true },
     { key: "sigWer", label: "UER", max: 0.6, invert: true },
     { key: "quality", label: "Quality", max: 3.0, invert: false },
     { key: "latency", label: "Latency (p95)", max: 2500, invert: true },
 ];
+
+const METRICS = SHOW_QUALITY ? ALL_METRICS : ALL_METRICS.filter((m) => m.key !== "quality");
 
 const CX = 200;
 const CY = 200;

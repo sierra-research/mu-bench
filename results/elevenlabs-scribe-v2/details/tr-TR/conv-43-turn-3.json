@@ -1,20 +1,25 @@
 {
   "gold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "predicted": "Anla. Ben takip odun tekrar söyle yazamadım. Tek tek söyle tane tane",
+  "predicted": "Anla ben takip odun tekrar söyle yazamadım. Tek tek söyle tane tane",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werNormalizedGold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "werNormalizedPredicted": "Anla, ben takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "qualityScore": 2,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.25,
+  "werNormalizedGold": "anna bana takip kodunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "werNormalizedPredicted": "anla ben takip odun tekrar söyle yazamadım tek tek söyle tane tane",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
-  "sigWerNormalizedPredicted": "Anla, ben takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
+  "sigWerNormalizedGold": "anna bana takip kodunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "sigWerNormalizedPredicted": "anla ben takip odun tekrar söyle yazamadım tek tek söyle tane tane",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna,' to 'Anla,' at position 0",
-      "reason": "'Anna' is a person's name, while 'Anla' is a verb in Turkish meaning 'understand'; this changes the subject and meaning of the sentence significantly.",
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anna' is a name, while 'anla' means 'understand' in Turkish. This changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kodunu' to 'odun' at position 3",
+      "reason": "'kodunu' means 'your code', while 'odun' means 'wood' in Turkish. This substitution makes the sentence incoherent and changes the intended meaning significantly.",
       "score": 1
     }
   ]

@@ -1,20 +1,25 @@
 {
   "gold": "Tôi muốn liên lạc với nhân viên hỗ trợ.",
-  "predicted": "Tôi muốn linh a ring wing wing hot det.",
+  "predicted": "Tôi muốn lên a ring ring.",
   "unintelligible": false,
   "wer": 0.7777777777777778,
-  "werNormalizedGold": "Tôi muốn liên lạc với nhân viên hỗ trợ.",
-  "werNormalizedPredicted": "Tôi muốn linh a ring wing wing hot det.",
-  "qualityScore": 1,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tôi muốn liên lạc với nhân viên hỗ trợ",
+  "werNormalizedPredicted": "tôi muốn lên a ring ring",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Tôi muốn liên lạc với nhân viên hỗ trợ.",
-  "sigWerNormalizedPredicted": "Tôi muốn linh a ring wing wing hot det.",
+  "sigWerNormalizedGold": "tôi muốn liên lạc với nhân viên hỗ trợ",
+  "sigWerNormalizedPredicted": "tôi muốn lên a ring ring",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'liên' to 'linh' at position 2",
-      "reason": "'liên' and 'linh' are completely different words in Vietnamese, changing the meaning of the phrase and making the sentence incoherent.",
+      "error": "Substitution: 'liên' to 'lên' at position 2",
+      "reason": "'liên lạc' means 'contact', while 'lên' means 'go up' or 'ascend'; this changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'viên' at position 6",
+      "reason": "'viên' is part of 'nhân viên' (staff), and its omission further derails the meaning.",
       "score": 1
     }
   ]

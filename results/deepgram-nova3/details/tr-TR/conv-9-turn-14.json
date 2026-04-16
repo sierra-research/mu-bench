@@ -1,15 +1,21 @@
 {
   "gold": "Hayır pardon bir dakika. Posta kodu yanlış oldu tekrar.",
-  "predicted": "Hayır, pardon bir dakika! Posta kodu yanlış oldu tekrar.",
+  "predicted": "Pardon bir dakika! Posta kodu yanlış oldu tekrar.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Hayır pardon bir dakika. Posta kodu yanlış oldu tekrar.",
-  "werNormalizedPredicted": "Hayır pardon bir dakika. Posta kodu yanlış oldu tekrar.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "hayır pardon bir dakika posta kodu yanlış oldu tekrar",
+  "werNormalizedPredicted": "pardon bir dakika posta kodu yanlış oldu tekrar",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Hayır pardon bir dakika. Posta kodu yanlış oldu tekrar.",
-  "sigWerNormalizedPredicted": "Hayır pardon bir dakika. Posta kodu yanlış oldu tekrar.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "hayır pardon bir dakika posta kodu yanlış oldu tekrar",
+  "sigWerNormalizedPredicted": "pardon bir dakika posta kodu yanlış oldu tekrar",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'hayır' at position 0",
+      "reason": "'hayır' means 'no' in Turkish and its omission removes a negation from the sentence, which can significantly change the meaning of the response.",
+      "score": 1
+    }
+  ]
 }

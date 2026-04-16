@@ -1,15 +1,26 @@
 {
   "gold": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "predicted": "À, có vui lòng chuyển qua cho nhân viên",
+  "predicted": "À có, cô làm cái gì mà chẳng nên duyên",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "werNormalizedPredicted": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.125,
+  "werNormalizedGold": "có vui lòng chuyển qua cho nhân viên",
+  "werNormalizedPredicted": "à có cô làm cái gì mà chẳng nên duyên",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "sigWerNormalizedPredicted": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "có vui lòng chuyển qua cho nhân viên",
+  "sigWerNormalizedPredicted": "à có cô làm cái gì mà chẳng nên duyên",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'à' at position 0",
+      "reason": "The word 'à' is an interjection not present in the expected sentence and does not contribute to the intended meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'vui' to 'làm' at position 1",
+      "reason": "'cô' (meaning 'miss' or 'lady') is not present in the expected sentence and introduces a different subject, which changes the meaning.",
+      "score": 1
+    }
+  ]
 }

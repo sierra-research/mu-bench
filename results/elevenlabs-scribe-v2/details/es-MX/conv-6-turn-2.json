@@ -1,20 +1,30 @@
 {
   "gold": "C N 7 3 0.",
-  "predicted": "CNNTTT tres cero",
+  "predicted": "Te-ne, te, te, te, te, tres ceros",
   "unintelligible": false,
-  "wer": 0.6,
-  "werNormalizedGold": "C N 7 3 0.",
-  "werNormalizedPredicted": "C N T T T 3 0.",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 2.4,
+  "werNormalizedGold": "c n seven three zero",
+  "werNormalizedPredicted": "t e n e t e t e t e t e three zeros",
+  "qualityScore": null,
+  "significantWer": 0.6,
+  "majorErrorsCount": 3,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "C N 7 3 0.",
-  "sigWerNormalizedPredicted": "C N T T T 3 0.",
+  "sigWerNormalizedGold": "c n seven three zero",
+  "sigWerNormalizedPredicted": "t e n e t e t e t e t e three zeros",
   "sigWerErrors": [
     {
-      "error": "Substitution: '7' to 'T' at position 2",
-      "reason": "In a spelled-out sequence (likely an ID or code), substituting a number with a letter changes the entire value and is a significant error.",
+      "error": "Substitution: 'c' to 'e' at position 0",
+      "reason": "Extra letter inserted at the start of a spelled-out sequence, which disrupts the intended sequence and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'seven' to 'e' at position 2",
+      "reason": "First letter of a spelled-out sequence is incorrect, which significantly alters the intended code or word.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zero' to 'zeros' at position 4",
+      "reason": "Extra letter inserted in the middle of a spelled-out sequence, making the sequence incorrect and unrecognizable.",
       "score": 1
     }
   ]

@@ -1,15 +1,26 @@
 {
   "gold": "峻岭。",
-  "predicted": "June Ling.",
+  "predicted": "Running.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "峻岭。",
-  "werNormalizedPredicted": "峻岭。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "峻 岭 。",
-  "sigWerNormalizedPredicted": "峻 岭 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "峻岭",
+  "werNormalizedPredicted": "running",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "峻 岭",
+  "sigWerNormalizedPredicted": "running",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '峻' to 'running' at position 0",
+      "reason": "The expected word is a Chinese character, but the actual transcription is an unrelated English word. This is a significant error as it completely changes the meaning and language.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '岭' at position 1",
+      "reason": "A Chinese character present in the expected transcription is missing in the actual transcription, which results in loss of information and meaning.",
+      "score": 1
+    }
+  ]
 }

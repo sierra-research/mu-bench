@@ -1,31 +1,26 @@
 {
   "gold": "Có. Đọc lại cho mình để mình ghi với.",
-  "predicted": "Có đáp lại cho mình để mình ghi.",
+  "predicted": "Có đáp lại cho mình để mình ghi vấn.",
   "unintelligible": false,
-  "wer": 0.4444444444444444,
-  "werNormalizedGold": "Có. Đọc lại cho mình để mình ghi với.",
-  "werNormalizedPredicted": "Có đáp lại cho mình để mình ghi.",
-  "qualityScore": 2,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "wer": 0.2222222222222222,
+  "werNormalizedGold": "có đọc lại cho mình để mình ghi với",
+  "werNormalizedPredicted": "có đáp lại cho mình để mình ghi vấn",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Có. Đọc lại cho mình để mình ghi với.",
-  "sigWerNormalizedPredicted": "Có đáp lại cho mình để mình ghi.",
+  "sigWerNormalizedGold": "có đọc lại cho mình để mình ghi với",
+  "sigWerNormalizedPredicted": "có đáp lại cho mình để mình ghi vấn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Có.' to 'Có' at position 0",
-      "reason": "'Đọc lại' (read again) and 'đáp lại' (respond) have different meanings, which changes the intent of the sentence.",
+      "error": "Substitution: 'đọc' to 'đáp' at position 1",
+      "reason": "'đọc lại' means 'read again', while 'đáp lại' means 'respond again'; this changes the action being requested and alters the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'ghi' to 'ghi.' at position 7",
-      "reason": "Omitting 'với' (with) slightly changes the tone but does not significantly alter the main meaning.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'với.' at position 8",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Substitution: 'với' to 'vấn' at position 8",
+      "reason": "'với' means 'with', which is a common sentence ending in Vietnamese, while 'vấn' is not appropriate in this context and makes the sentence incoherent.",
+      "score": 1
     }
   ]
 }

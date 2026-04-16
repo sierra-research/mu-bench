@@ -1,21 +1,31 @@
 {
   "gold": "No, solo una M. Una sola M. Email, con una sola M.",
-  "predicted": "No, solo una e, solo, solo una sola e. E-mail con una sola m",
+  "predicted": "No, solo una e, solo, solo una sola e-mail o una sola m",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "No, solo una M. Una sola M. Email, con una sola M.",
-  "werNormalizedPredicted": "No, solo una M. Solo, solo una sola M. Email, con una sola M.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "no solo una m una sola m email con una sola m",
+  "werNormalizedPredicted": "no solo una m solo solo una sola email o una sola m",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "No, solo una M. Una sola M. Email, con una sola M.",
-  "sigWerNormalizedPredicted": "No, solo una M. Solo, solo una sola M. Email, con una sola M.",
+  "sigWerNormalizedGold": "no solo una m una sola m email con una sola m",
+  "sigWerNormalizedPredicted": "no solo una m solo solo una sola email o una sola m",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Una' to 'una' at position 4",
-      "reason": "The insertion of 'Solo,' repeats the idea of 'solo una M' but does not change the meaning of the sentence. It is a redundant repetition, so the overall meaning is preserved.",
+      "error": "Insertion: 'solo' at position 4",
+      "reason": "The extra 'solo' is a repetition that does not change the overall meaning of the sentence, as it just repeats an existing word without altering the intent.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'm' at position 6",
+      "reason": "The missing 'm' could cause confusion, as the sentence is about specifying 'una sola m' (a single m), so omitting one instance could make the instruction less clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'con' to 'o' at position 8",
+      "reason": "Changing 'con' (with) to 'o' (or) alters the meaning of the instruction, as it changes from specifying 'email with a single m' to 'email or a single m', which is a significant change in meaning.",
+      "score": 1
     }
   ]
 }

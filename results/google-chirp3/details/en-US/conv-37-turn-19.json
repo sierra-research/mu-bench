@@ -3,19 +3,24 @@
   "predicted": "Okay, YouTube.",
   "unintelligible": false,
   "wer": 0.6666666666666666,
-  "werNormalizedGold": "Okay. You, too.",
-  "werNormalizedPredicted": "Okay, you too.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "okay you too",
+  "werNormalizedPredicted": "okay youtube",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Okay. You, too.",
-  "sigWerNormalizedPredicted": "Okay, you too.",
+  "sigWerNormalizedGold": "okay you too",
+  "sigWerNormalizedPredicted": "okay youtube",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Okay.' to 'Okay,' at position 0",
-      "reason": "Difference is only in punctuation (period vs comma), which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'you' to 'youtube' at position 1",
+      "reason": "'youtube' is a completely different word from 'you', and changes the meaning of the phrase from a polite farewell ('okay you too') to a reference to the website 'YouTube', making the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'too' at position 2",
+      "reason": "Omitting 'too' removes the reciprocal aspect of the farewell, further derailing the intended meaning.",
+      "score": 1
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "gold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
+  "predicted": "giờ tôi muốn xem là hệ hiện tại khi chừng nào thì mới có dịch đẩy đấy.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "werNormalizedPredicted": "giờ tôi muốn xem là hệ hiện tại khi chừng nào thì mới có dịch đẩy đấy",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "sigWerNormalizedPredicted": "giờ tôi muốn xem là hệ hiện tại khi chừng nào thì mới có dịch đẩy đấy",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'giờ' at position 0",
+      "reason": "'giờ' (now) adds a temporal context not present in the original, but does not derail the main intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'hệ' at position 3",
+      "reason": "'là' (is) is a minor grammatical insertion that does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'khi' at position 6",
+      "reason": "'thẻ' (card) is substituted with 'hệ' (system), which changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'thì' at position 8",
+      "reason": "'khi' (when) is an unnecessary insertion but does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cái' to 'đẩy' at position 10",
+      "reason": "'thì' (then) is a minor discourse marker and does not affect the main meaning.",
+      "score": 2
+    }
+  ]
+}

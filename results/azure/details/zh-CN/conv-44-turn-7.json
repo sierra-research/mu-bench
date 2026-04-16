@@ -3,23 +3,23 @@
   "predicted": "Dreamling.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "君玲。",
-  "werNormalizedPredicted": "Dreamling.",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
+  "werNormalizedGold": "君玲",
+  "werNormalizedPredicted": "dreamling",
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "君 玲 。",
-  "sigWerNormalizedPredicted": "Dreamling.",
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "君 玲",
+  "sigWerNormalizedPredicted": "dreamling",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'Dreamling.' at position 0",
-      "reason": "The expected text is in Chinese ('君'), while the actual transcription is an English word ('Dreamling.'). This is a complete language mismatch and changes the meaning entirely.",
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an unrelated English word. This is a significant error as the meaning and language are completely different.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "The character '玲' is missing from the actual transcription, which further distorts the intended meaning and makes the transcription incoherent.",
+      "reason": "The second expected character is missing entirely from the actual transcription, which omits a key part of the name. This is a significant error.",
       "score": 1
     }
   ]

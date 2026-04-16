@@ -1,20 +1,25 @@
 {
   "gold": "需要提供最新账单。",
-  "predicted": "需要提供最新证件。",
+  "predicted": "需要提高最新正版。",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "需要提供最新账单。",
-  "werNormalizedPredicted": "需要提供最新证件。",
-  "qualityScore": 1,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "需 要 提 供 最 新 账 单 。",
-  "sigWerNormalizedPredicted": "需 要 提 供 最 新 证 件 。",
+  "wer": 0.375,
+  "werNormalizedGold": "需要 提供 最新 账单",
+  "werNormalizedPredicted": "需要 提高 最新 正版",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "需 要 提 供 最 新 账 单",
+  "sigWerNormalizedPredicted": "需 要 提 高 最 新 正 版",
   "sigWerErrors": [
     {
-      "error": "Substitution: '账' to '证' at position 6",
-      "reason": "'账单' means 'bill' or 'statement', while '证件' means 'document' or 'ID'. This substitution changes the required item from a bill to an ID, which significantly alters the meaning of the sentence.",
+      "error": "Substitution: '供' to '高' at position 3",
+      "reason": "'提供' (provide) is replaced by '提高' (raise/improve), which changes the action and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '账' to '正' at position 6",
+      "reason": "'账单' (bill/statement) is replaced by '正版' (genuine/original version), which completely changes the object being referred to and derails the meaning of the sentence.",
       "score": 1
     }
   ]

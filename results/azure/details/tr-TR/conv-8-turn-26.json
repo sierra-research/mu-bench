@@ -1,36 +1,26 @@
 {
   "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "predicted": "Ilk ikinci harf hep yanlış, ikinci harfim ağ olacak z'den sonra ağ var e değil zaynep.",
+  "predicted": "Ikinci harfi hep yanlış, ikinci harfim ağ olacak z'den sonra ağ var e değil zaynep.",
   "unintelligible": false,
-  "wer": 0.4666666666666667,
-  "werNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "werNormalizedPredicted": "İlk ikinci harfi hep yanlış, ikinci harfim A olacak, Z'den sonra A var, E değil Zeynep.",
-  "qualityScore": 2,
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "werNormalizedPredicted": "ikinci harfi hep yanlış ikinci harfim a olacak zden sonra a var e değil zaynep",
+  "qualityScore": null,
   "significantWer": 0.06666666666666667,
   "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "sigWerNormalizedPredicted": "İlk ikinci harfi hep yanlış, ikinci harfim A olacak, Z'den sonra A var, E değil Zeynep.",
+  "sigWerNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "sigWerNormalizedPredicted": "ikinci harfi hep yanlış ikinci harfim a olacak zden sonra a var e değil zaynep",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İkinci' to 'ikinci' at position 0",
-      "reason": "'İlk' (meaning 'first') is inserted at the beginning, which changes the meaning from 'second letter' to 'first second letter', making the sentence confusing and potentially incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'yanlış' to 'yanlış,' at position 3",
-      "reason": "Difference in capitalization only; in Turkish, sentence-initial capitalization is standard, but this does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'İkinci' at position 5",
-      "reason": "Only a punctuation difference (comma), which does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'değil.' to 'Zeynep.' at position 14",
-      "reason": "Omitting the repeated 'İkinci' (second) slightly reduces clarity but does not change the overall meaning of the sentence.",
+      "error": "Deletion: 'söylüyorsunuz' at position 4",
+      "reason": "The omission of 'söylüyorsunuz' ('you are saying') removes the reference to the listener's repeated mistake, but the overall meaning of the sentence is still understandable.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'zaynep' at position 15",
+      "reason": "The addition of 'zaynep' (a proper noun) at the end is unrelated to the rest of the sentence and could confuse the listener, significantly altering the meaning.",
+      "score": 1
     }
   ]
 }

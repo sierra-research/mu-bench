@@ -1,25 +1,35 @@
 {
   "gold": "Tôi bị làm mất thẻ, tuần trước có xin cấp thẻ mới. Nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào?",
-  "predicted": "Tôi biết làm bậc thẻ. Tuần trước có sinh cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào.",
+  "predicted": "Tôi biết làm bậc thẻ ở tuần trước có sinh cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
   "unintelligible": false,
   "wer": 0.13793103448275862,
-  "werNormalizedGold": "Tôi bị làm mất thẻ, tuần trước có xin cấp thẻ mới. Nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào?",
-  "werNormalizedPredicted": "Tôi biết làm bậc thẻ. Tuần trước có xin cấp thẻ mới. Nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào?",
-  "qualityScore": 2,
-  "significantWer": 0.06896551724137931,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
+  "werNormalizedPredicted": "tôi biết làm bậc thẻ ở tuần trước có sinh cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
+  "qualityScore": null,
+  "significantWer": 0.10344827586206896,
+  "majorErrorsCount": 3,
   "totalWordsCount": 29,
-  "sigWerNormalizedGold": "Tôi bị làm mất thẻ, tuần trước có xin cấp thẻ mới. Nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào?",
-  "sigWerNormalizedPredicted": "Tôi biết làm bậc thẻ. Tuần trước có xin cấp thẻ mới. Nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào?",
+  "sigWerNormalizedGold": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
+  "sigWerNormalizedPredicted": "tôi biết làm bậc thẻ ở tuần trước có sinh cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
   "sigWerErrors": [
     {
       "error": "Substitution: 'bị' to 'biết' at position 1",
-      "reason": "'bị' means 'to be' (in the sense of suffering an action), while 'biết' means 'to know'. This changes the meaning of the sentence significantly, making it incoherent.",
+      "reason": "'bị' means 'to be (affected by)' while 'biết' means 'to know'; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'mất' to 'bậc' at position 3",
-      "reason": "'mất' means 'lost', while 'bậc' means 'level' or 'step'. This substitution makes the sentence incoherent and changes the meaning completely.",
+      "reason": "'mất' means 'lost' while 'bậc' means 'level/step'; this substitution makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'ở' at position 5",
+      "reason": "The insertion of 'ở' ('at') does not significantly change the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'xin' to 'sinh' at position 8",
+      "reason": "'xin' means 'to request/apply' while 'sinh' means 'to give birth' or 'generate'; this is a significant error that makes the sentence confusing.",
       "score": 1
     }
   ]

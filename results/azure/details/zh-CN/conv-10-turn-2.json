@@ -1,35 +1,30 @@
 {
   "gold": "你先告诉我的追踪号码。",
-  "predicted": "你现告诉我我的尊重号吗？",
+  "predicted": "你想告诉我我的尊重号吗？",
   "unintelligible": false,
-  "wer": 0.5454545454545454,
-  "werNormalizedGold": "你先告诉我的追踪号码。",
-  "werNormalizedPredicted": "你现告诉我我的尊重号吗？",
-  "qualityScore": 2,
-  "significantWer": 0.18181818181818182,
+  "wer": 0.3,
+  "werNormalizedGold": "你 先 告诉 我 的 追踪 号码",
+  "werNormalizedPredicted": "你 想 告诉 我 我 的 追踪 号码 吗",
+  "qualityScore": null,
+  "significantWer": 0.2,
   "majorErrorsCount": 2,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 先 告 诉 我 的 追 踪 号 码 。",
-  "sigWerNormalizedPredicted": "你 现 告 诉 我 我 的 尊 重 号 吗 ？",
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 先 告 诉 我 的 追 踪 号 码",
+  "sigWerNormalizedPredicted": "你 想 告 诉 我 我 的 追 踪 号 码 吗",
   "sigWerErrors": [
     {
-      "error": "Substitution: '先' to '现' at position 1",
-      "reason": "The substitution changes the meaning from 'first' (先) to 'now' (现), which alters the temporal context of the instruction.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: '我' at position 5",
-      "reason": "The extra '我' (I/me) is redundant but does not significantly change the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: '追' to '尊' at position 6",
-      "reason": "The substitution changes 'tracking' (追踪) to 'respect' (尊重), which makes the phrase incoherent and derails the intended meaning of 'tracking number'.",
+      "error": "Substitution: '先' to '想' at position 1",
+      "reason": "The word '先' (first) is replaced by '想' (want), which changes the intent of the sentence from asking to first provide the tracking number to asking if the person wants to provide it. This alters the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: '码' to '吗' at position 9",
-      "reason": "The substitution changes 'number' (码) to the question particle '吗', which removes the key information and changes the sentence structure.",
+      "error": "Insertion: '我' at position 5",
+      "reason": "The extra '我' (I) is inserted, which is redundant but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '吗' at position 10",
+      "reason": "The addition of '吗' turns the statement into a question, which changes the sentence from a statement to a question, altering the intent.",
       "score": 1
     }
   ]

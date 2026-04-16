@@ -1,15 +1,21 @@
 {
   "gold": "No, gracias.",
-  "predicted": "No, gracias.",
+  "predicted": "No, that's.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "No, gracias.",
-  "werNormalizedPredicted": "No, gracias.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "no gracias",
+  "werNormalizedPredicted": "no that is",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "No, gracias.",
-  "sigWerNormalizedPredicted": "No, gracias.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "no gracias",
+  "sigWerNormalizedPredicted": "no that is",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'gracias' to 'is' at position 1",
+      "reason": "'that' is inserted, which changes the meaning from a simple refusal ('no thanks') to the start of a new phrase ('no that is'), making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

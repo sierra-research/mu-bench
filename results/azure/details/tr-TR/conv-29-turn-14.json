@@ -3,38 +3,38 @@
   "predicted": "Her şey doğru, anneannem her şey doğru. Sadece Zeynep ve arslan arasında. Işareti var. Sadece oraya. Koyacaksınız. Diğerleri hepsi doğru.",
   "unintelligible": false,
   "wer": 0.21739130434782608,
-  "werNormalizedGold": "Her şey doğru, Anna Hanım, her şey doğru. Sadece Zaynep ve Arslan arasında nokta işareti var. Sadece oraya nokta koyacaksınız. Diğerleri hepsi doğru.",
-  "werNormalizedPredicted": "Her şey doğru, anneannem, her şey doğru. Sadece Zeynep ve Arslan arasında işareti var. Sadece oraya koyacaksınız. Diğerleri hepsi doğru.",
-  "qualityScore": 2,
+  "werNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "werNormalizedPredicted": "her şey doğru anneannem her şey doğru sadece zeynep ve arslan arasında işareti var sadece oraya koyacaksınız diğerleri hepsi doğru",
+  "qualityScore": null,
   "significantWer": 0.13043478260869565,
   "majorErrorsCount": 3,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "Her şey doğru, Anna Hanım, her şey doğru. Sadece Zaynep ve Arslan arasında nokta işareti var. Sadece oraya nokta koyacaksınız. Diğerleri hepsi doğru.",
-  "sigWerNormalizedPredicted": "Her şey doğru, anneannem, her şey doğru. Sadece Zeynep ve Arslan arasında işareti var. Sadece oraya koyacaksınız. Diğerleri hepsi doğru.",
+  "sigWerNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "sigWerNormalizedPredicted": "her şey doğru anneannem her şey doğru sadece zeynep ve arslan arasında işareti var sadece oraya koyacaksınız diğerleri hepsi doğru",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna' to 'anneannem,' at position 3",
-      "reason": "'Anna' is a proper name, while 'anneannem' means 'my grandmother' in Turkish. This changes the subject of the sentence and alters the meaning significantly.",
+      "error": "Substitution: 'anna' to 'anneannem' at position 3",
+      "reason": "'anna' (a name) is replaced with 'anneannem' (my grandmother), which changes the subject of the sentence and alters the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'Hanım,' at position 4",
-      "reason": "'Hanım' is a respectful title (like 'Ms.' or 'Mrs.') following a name. Its omission reduces the formality but does not significantly change the meaning.",
+      "error": "Deletion: 'hanım' at position 4",
+      "reason": "'hanım' (a polite title, like 'Ms.') is omitted, which slightly reduces the politeness but does not significantly change the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'Zaynep' to 'Zeynep' at position 9",
-      "reason": "This is a minor spelling difference in a proper noun, but the name is still recognizable.",
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
+      "reason": "Minor spelling difference in a proper noun, but the name is still recognizable.",
       "score": 2
     },
     {
       "error": "Deletion: 'nokta' at position 13",
-      "reason": "Omitting 'nokta' (meaning 'dot' or 'period') removes the specific instruction about what mark is between the names, which is important for the sentence's meaning.",
+      "reason": "Omitting 'nokta' (dot/period) removes the specific information about what kind of mark is between the names, which could cause confusion.",
       "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 18",
-      "reason": "Again, omitting 'nokta' removes the instruction about what to place, which is significant for the intended meaning.",
+      "reason": "Omitting 'nokta' (dot/period) again removes the instruction about what to place, which is important for the meaning.",
       "score": 1
     }
   ]

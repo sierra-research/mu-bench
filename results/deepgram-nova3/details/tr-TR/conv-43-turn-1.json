@@ -1,25 +1,25 @@
 {
   "gold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
-  "predicted": "Banka kartımı söz geçmek üzere onunla bana yeni bir kart gönderebilir misin?",
+  "predicted": "Banka kartımız söz geçmek üzere, yeni bir kart gönderebilir misin?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
-  "werNormalizedPredicted": "Banka kartımı söz geçmek üzere onunla. Bana yeni bir kart gönderebilir misin?",
-  "qualityScore": 2,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "banka kartimin suresi gecmek uzere anna bana yeni bir kart gonderebilir misin",
+  "werNormalizedPredicted": "banka kartimiz soz gecmek uzere yeni bir kart gonderebilir misin",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
-  "sigWerNormalizedPredicted": "Banka kartımı söz geçmek üzere onunla. Bana yeni bir kart gönderebilir misin?",
+  "sigWerNormalizedGold": "banka kartimin suresi gecmek uzere anna bana yeni bir kart gonderebilir misin",
+  "sigWerNormalizedPredicted": "banka kartimiz soz gecmek uzere yeni bir kart gonderebilir misin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kartımın' to 'kartımı' at position 1",
-      "reason": "'kartımın' means 'of my card' (possessive), while 'kartımı' means 'my card' (accusative). This changes the grammatical structure but does not significantly alter the overall meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'kartimin' to 'kartimiz' at position 1",
+      "reason": "'kartimin' means 'my card' while 'kartimiz' means 'our card'; this changes the subject from singular to plural, which is a significant change in meaning.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'Anna.' to 'onunla.' at position 5",
-      "reason": "'Anna' is a proper noun (likely a person's name), while 'onunla' means 'with him/her/it'. This substitution changes the addressee of the sentence and makes the sentence incoherent, significantly altering the meaning.",
+      "error": "Deletion: 'anna' at position 5",
+      "reason": "'anna' is a name or direct address in the sentence, and its omission removes the addressee, which significantly changes the context and meaning of the request.",
       "score": 1
     }
   ]

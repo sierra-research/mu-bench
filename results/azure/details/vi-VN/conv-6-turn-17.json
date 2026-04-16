@@ -1,20 +1,25 @@
 {
   "gold": "Đã xác nhận. Đã xác nhận.",
-  "predicted": "Dạ thích những dạ, thích những.",
+  "predicted": "Dạ thích nhận dạ, thích nhận.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Đã xác nhận. Đã xác nhận.",
-  "werNormalizedPredicted": "Dạ thích những dạ, thích những.",
-  "qualityScore": 1,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "đã xác nhận đã xác nhận",
+  "werNormalizedPredicted": "dạ thích nhận dạ thích nhận",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Đã xác nhận. Đã xác nhận.",
-  "sigWerNormalizedPredicted": "Dạ thích những dạ, thích những.",
+  "sigWerNormalizedGold": "đã xác nhận đã xác nhận",
+  "sigWerNormalizedPredicted": "dạ thích nhận dạ thích nhận",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Đã' to 'Dạ' at position 0",
-      "reason": "The actual transcription is completely different in meaning and content from the expected. The expected means 'Confirmed', while the actual is unrelated and incoherent in this context.",
+      "error": "Substitution: 'đã' to 'dạ' at position 0",
+      "reason": "'đã' means 'already' or indicates confirmation, while 'dạ' is a polite particle meaning 'yes' or 'okay'. This substitution changes the meaning of the sentence from confirmation to a polite response, which significantly alters the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đã' to 'dạ' at position 3",
+      "reason": "Repeats the same error as above, again changing the meaning from confirmation to a polite response, which is a significant change in meaning.",
       "score": 1
     }
   ]

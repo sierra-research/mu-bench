@@ -1,20 +1,30 @@
 {
   "gold": "Yo creo que sería en 4000.",
-  "predicted": "Sí, yo creo que serían 4.000",
+  "predicted": "Sí, yo creo que serían cuatro mil",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Yo creo que sería en 4000.",
-  "werNormalizedPredicted": "Sí, yo creo que sería en 4000.",
-  "qualityScore": 3,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "yo creo que seria en cuatro mil",
+  "werNormalizedPredicted": "si yo creo que serian cuatro mil",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Yo creo que sería en 4000.",
-  "sigWerNormalizedPredicted": "Sí, yo creo que sería en 4000.",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "yo creo que seria en cuatro mil",
+  "sigWerNormalizedPredicted": "si yo creo que serian cuatro mil",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Yo' to 'yo' at position 0",
-      "reason": "The insertion of 'Sí,' (meaning 'Yes,') adds an affirmation but does not change the meaning of the main sentence. The overall intent remains the same.",
+      "error": "Insertion: 'si' at position 0",
+      "reason": "The addition of 'si' (yes) at the beginning does not change the overall meaning of the sentence, as it simply adds an affirmative interjection.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'seria' to 'serian' at position 3",
+      "reason": "The change from 'seria' (would be, singular) to 'serian' (would be, plural) is a minor grammatical error and does not significantly alter the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'en' at position 4",
+      "reason": "Omitting 'en' (in) slightly affects the grammatical structure but does not derail the overall meaning of the sentence.",
       "score": 2
     }
   ]

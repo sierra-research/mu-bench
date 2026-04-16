@@ -1,26 +1,21 @@
 {
   "gold": "Tôi muốn được gia tăng hạn mức thẻ tín dụng.",
-  "predicted": "Tôi muốn được gia tăng hạng mức thẻ tín dụng",
+  "predicted": "Tôi muốn được gia tăng hạng bút thẻ tín dụng",
   "unintelligible": false,
   "wer": 0.2,
-  "werNormalizedGold": "Tôi muốn được gia tăng hạn mức thẻ tín dụng.",
-  "werNormalizedPredicted": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
+  "werNormalizedPredicted": "tôi muốn được gia tăng hạng bút thẻ tín dụng",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tôi muốn được gia tăng hạn mức thẻ tín dụng.",
-  "sigWerNormalizedPredicted": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
+  "sigWerNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
+  "sigWerNormalizedPredicted": "tôi muốn được gia tăng hạng bút thẻ tín dụng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which should be ignored as per guidance.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'dụng.' to 'dụng' at position 9",
-      "reason": "Difference is only in punctuation, which should be ignored as per guidance.",
-      "score": 3
+      "error": "Substitution: 'hạn' to 'hạng' at position 5",
+      "reason": "'hạn mức' means 'limit' (as in credit limit), while 'hạng bút' is not a meaningful phrase in this context and changes the meaning of the request, making the sentence incoherent.",
+      "score": 1
     }
   ]
 }

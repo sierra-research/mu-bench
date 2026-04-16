@@ -1,30 +1,35 @@
 {
   "gold": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình với.",
-  "predicted": "Xin chào Anan mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần cấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình nữa",
+  "predicted": "Xin chào Anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần cấp bản sao sao kê tháng trước để mở cho công ty mà tìm mãi con thấy bạn giúp mình",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werNormalizedGold": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình với.",
-  "werNormalizedPredicted": "Xin chào Anan. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần cấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình nữa.",
-  "qualityScore": 2,
-  "significantWer": 0.02564102564102564,
-  "majorErrorsCount": 1,
+  "wer": 0.10256410256410256,
+  "werNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
+  "werNormalizedPredicted": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần cấp bản sao sao kê tháng trước để mở cho công ty mà tìm mãi con thấy bạn giúp mình",
+  "qualityScore": null,
+  "significantWer": 0.05128205128205128,
+  "majorErrorsCount": 2,
   "totalWordsCount": 39,
-  "sigWerNormalizedGold": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình với.",
-  "sigWerNormalizedPredicted": "Xin chào Anan. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần cấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình nữa.",
+  "sigWerNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
+  "sigWerNormalizedPredicted": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần cấp bản sao sao kê tháng trước để mở cho công ty mà tìm mãi con thấy bạn giúp mình",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna.' to 'Anan.' at position 2",
-      "reason": "Minor misspelling of a proper noun, but still recognizable as the intended name.",
+      "error": "Substitution: 'gấp' to 'cấp' at position 18",
+      "reason": "'Gấp' means urgent, while 'cấp' means to provide or issue. The substitution changes the urgency of the request, but the overall intent (requesting a document) is still clear.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gấp' to 'cấp' at position 18",
-      "reason": "'Gấp' means urgent, while 'cấp' means to provide; this changes the urgency of the request, which is significant for the meaning.",
+      "error": "Substitution: 'nộp' to 'mở' at position 26",
+      "reason": "'Nộp' means to submit, while 'mở' means to open. This changes the action being requested for the document, which can confuse the purpose of the request.",
       "score": 1
     },
     {
-      "error": "Substitution: 'với.' to 'nữa.' at position 38",
-      "reason": "'Với' (with) and 'nữa' (more/again) have different meanings, but the overall request for help is still clear.",
+      "error": "Substitution: 'không' to 'con' at position 33",
+      "reason": "'Không' means 'not', while 'con' means 'child' or 'still'. This substitution makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'với' at position 38",
+      "reason": "Omitting 'với' (with) slightly affects the politeness or completeness of the request, but the main meaning is still understandable.",
       "score": 2
     }
   ]

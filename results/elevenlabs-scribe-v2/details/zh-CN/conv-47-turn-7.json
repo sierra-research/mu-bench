@@ -2,19 +2,24 @@
   "gold": "峻岭，峻岭，我的名字是峻岭。",
   "predicted": "没有。君灵，君灵，我的名字是君灵。",
   "unintelligible": false,
-  "wer": 0.21428571428571427,
-  "werNormalizedGold": "峻岭，峻岭，我的名字是峻岭。",
-  "werNormalizedPredicted": "没有。峻岭，峻岭，我的名字是峻岭。",
-  "qualityScore": 1,
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "峻 岭 ， 峻 岭 ， 我 的 名 字 是 峻 岭 。",
-  "sigWerNormalizedPredicted": "没 有 。 峻 岭 ， 峻 岭 ， 我 的 名 字 是 峻 岭 。",
+  "wer": 0.7272727272727273,
+  "werNormalizedGold": "峻岭 峻岭 我的名字是峻岭",
+  "werNormalizedPredicted": "没有 君灵 君灵 我的名字是君灵",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "峻 岭 峻 岭 我 的 名 字 是 峻 岭",
+  "sigWerNormalizedPredicted": "没 有 君 灵 君 灵 我 的 名 字 是 君 灵",
   "sigWerErrors": [
     {
-      "error": "Insertion: '没' at position 0",
-      "reason": "The insertion of '没 有' (meaning 'no' or 'not have') at the beginning changes the meaning of the sentence, introducing a negation that was not present in the original. This significantly alters the intent of the sentence.",
+      "error": "Substitution: '峻' to '君' at position 0",
+      "reason": "The insertion of '没' (meaning 'no' or 'not') at the beginning changes the meaning of the sentence, potentially negating the statement and derailing the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '峻' to '君' at position 9",
+      "reason": "'峻' and '君' are different characters with different meanings and pronunciations; this changes the name and is a significant error for a proper noun.",
       "score": 1
     }
   ]

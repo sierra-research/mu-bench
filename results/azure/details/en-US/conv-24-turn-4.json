@@ -2,19 +2,24 @@
   "gold": "That's phone number 2 1 2 1 2 3 4 5 6 7.",
   "predicted": "The phone number 212-123-4567.",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werNormalizedGold": "That's phone number 2 1 2 1 2 3 4 5 6 7.",
-  "werNormalizedPredicted": "The phone number 2 1 2 1 2 3 4 5 6 7.",
-  "qualityScore": 3,
+  "wer": 0.14285714285714285,
+  "werNormalizedGold": "that is phone number two one two one two three four five six seven",
+  "werNormalizedPredicted": "the phone number two one two one two three four five six seven",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "That's phone number 2 1 2 1 2 3 4 5 6 7.",
-  "sigWerNormalizedPredicted": "The phone number 2 1 2 1 2 3 4 5 6 7.",
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "that is phone number two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "the phone number two one two one two three four five six seven",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'That's' to 'The' at position 0",
-      "reason": "'That's' specifies or points out the phone number, while 'The' is more general. The overall meaning is not significantly changed, as both introduce the phone number, but the specificity is slightly reduced.",
+      "error": "Substitution: 'that' to 'the' at position 0",
+      "reason": "'That' and 'the' are both determiners, but 'that' is specific and 'the' is general. In this context, the meaning is only slightly changed and the sentence remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'is' at position 1",
+      "reason": "Omitting 'is' makes the sentence less grammatical but does not significantly change the meaning; the intent is still clear.",
       "score": 2
     }
   ]

@@ -3,23 +3,23 @@
   "predicted": "是",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "听到了吗？",
+  "werNormalizedGold": "听 到 了 吗",
   "werNormalizedPredicted": "是",
-  "qualityScore": 1,
-  "significantWer": 0.4,
+  "qualityScore": null,
+  "significantWer": 0.5,
   "majorErrorsCount": 2,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "听 到 了 吗 ？",
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 了 吗",
   "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
       "error": "Substitution: '听' to '是' at position 0",
-      "reason": "'听到了吗？' is a question asking if someone heard something, while '是' means 'yes' or 'is'. The substitution completely changes the meaning of the sentence, making it incoherent in context.",
+      "reason": "'听到了吗' means 'Did you hear?', while '是' means 'Yes'. The substitution completely changes the meaning of the sentence and does not answer the question or convey the same intent.",
       "score": 1
     },
     {
       "error": "Deletion: '到' at position 1",
-      "reason": "The word '到' is part of the phrase '听到了吗？', which is a complete question. Its deletion, along with the other errors, results in a loss of the original meaning.",
+      "reason": "The word '到' is missing, which is part of the phrase '听到了吗' ('Did you hear?'). Its absence, along with the substitution, results in a sentence with a completely different meaning.",
       "score": 1
     }
   ]

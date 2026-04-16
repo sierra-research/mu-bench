@@ -1,31 +1,26 @@
 {
   "gold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
-  "predicted": "007 đúng là minh chấm trần a còng email chấm com",
+  "predicted": "0 0 7 đúng là linh chấm trần a còng email chấm com",
   "unintelligible": false,
-  "wer": 0.38461538461538464,
-  "werNormalizedGold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "007 đúng là minh chấm trần a còng email chấm com",
-  "qualityScore": 2,
+  "wer": 0.15384615384615385,
+  "werNormalizedGold": "khong khong phai dung la minh cham tran a cong email cham com",
+  "werNormalizedPredicted": "khong khong bay dung la linh cham tran a cong email cham com",
+  "qualityScore": null,
   "significantWer": 0.07692307692307693,
   "majorErrorsCount": 1,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "007 đúng là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedGold": "khong khong phai dung la minh cham tran a cong email cham com",
+  "sigWerNormalizedPredicted": "khong khong bay dung la linh cham tran a cong email cham com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Không.' to '007' at position 0",
-      "reason": "'Không.' means 'No.' in Vietnamese, while '007' is a number and unrelated to the intended meaning. This substitution changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'phai' to 'bay' at position 2",
+      "reason": "'phai' means 'must' or 'correct', while 'bay' means 'seven' in Vietnamese. This changes the meaning of the sentence significantly and makes it incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'phải.' at position 2",
-      "reason": "'Không phải.' means 'No' or 'Not correct.' Omitting 'phải.' removes a negation, which can change the meaning, but since the rest of the sentence is present, the main information is still conveyed. This is a minor error.",
+      "error": "Substitution: 'minh' to 'linh' at position 5",
+      "reason": "'minh' and 'linh' are both Vietnamese names, but substituting one for the other changes the intended person's name, which is a minor error if the context is about a person's name.",
       "score": 2
-    },
-    {
-      "error": "Substitution: 'com.' to 'com' at position 12",
-      "reason": "Difference is only punctuation (period at the end), which does not affect meaning.",
-      "score": 3
     }
   ]
 }

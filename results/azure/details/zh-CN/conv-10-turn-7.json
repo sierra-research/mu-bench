@@ -1,21 +1,26 @@
 {
   "gold": "怎么了？",
-  "predicted": "嗯，怎么了？",
+  "predicted": "Zomolo.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "怎么了？",
-  "werNormalizedPredicted": "嗯，怎么了？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "怎 么 了 ？",
-  "sigWerNormalizedPredicted": "嗯 ， 怎 么 了 ？",
+  "wer": 1.0,
+  "werNormalizedGold": "怎么了",
+  "werNormalizedPredicted": "zomolo",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "怎 么 了",
+  "sigWerNormalizedPredicted": "zomolo",
   "sigWerErrors": [
     {
-      "error": "Insertion: '嗯' at position 0",
-      "reason": "'嗯' is a filler or interjection that does not change the meaning of the sentence; the main content remains the same.",
-      "score": 2
+      "error": "Substitution: '怎' to 'zomolo' at position 0",
+      "reason": "The expected is a Chinese character, but the actual is a romanized string that does not correspond to the correct pinyin or meaning. This is a significant error as the language and meaning are completely different.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '么' at position 1",
+      "reason": "A key character is missing from the transcription, which changes the meaning and makes the sentence incomplete in Chinese.",
+      "score": 1
     }
   ]
 }

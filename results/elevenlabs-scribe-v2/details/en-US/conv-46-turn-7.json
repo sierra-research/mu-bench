@@ -1,25 +1,25 @@
 {
   "gold": "That's done.",
-  "predicted": "Afghanistan",
+  "predicted": "Yes, ma'am",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "That's done.",
-  "werNormalizedPredicted": "Afghanistan",
-  "qualityScore": 1,
-  "significantWer": 1.0,
+  "werNormalizedGold": "that is done",
+  "werNormalizedPredicted": "yes maam",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
   "majorErrorsCount": 2,
-  "totalWordsCount": 2,
-  "sigWerNormalizedGold": "That's done.",
-  "sigWerNormalizedPredicted": "Afghanistan",
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "that is done",
+  "sigWerNormalizedPredicted": "yes maam",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'That's' to 'Afghanistan' at position 0",
-      "reason": "'Afghanistan' is a completely unrelated word to 'That's', making the sentence incoherent and changing the meaning entirely.",
+      "error": "Substitution: 'that' to 'yes' at position 0",
+      "reason": "'Yes' is an affirmation, while 'that' is a demonstrative pronoun; this substitution changes the meaning of the sentence entirely and makes the response incoherent with the expected meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: 'done.' at position 1",
-      "reason": "The word 'done.' is missing, which is essential to the meaning of the sentence. Its absence further derails the intended message.",
+      "error": "Deletion: 'done' at position 2",
+      "reason": "The word 'done' is omitted, which removes the main action from the sentence and further derails the intended meaning.",
       "score": 1
     }
   ]

@@ -2,14 +2,20 @@
   "gold": "G H 0 4 1 2 3 4 5 6.",
   "predicted": "GH zero four bir, iki, üç, dört, beş, altı",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "G H 0 4 1 2 3 4 5 6.",
-  "werNormalizedPredicted": "G H 0 4 1 2 3 4 5 6.",
-  "qualityScore": 1,
+  "wer": 0.6,
+  "werNormalizedGold": "g h zero four one two three four five six",
+  "werNormalizedPredicted": "g h zero four bir iki üç dört beş altı",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "G H 0 4 1 2 3 4 5 6.",
-  "sigWerNormalizedPredicted": "G H 0 4 1 2 3 4 5 6.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "g h zero four one two three four five six",
+  "sigWerNormalizedPredicted": "g h zero four bir iki üç dört beş altı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'one' to 'bir' at position 4",
+      "reason": "'bir' is the Turkish word for 'one', so the meaning is preserved despite the language change. However, since the transcription switches languages mid-sequence, this could cause confusion, but the semantic meaning is the same.",
+      "score": 2
+    }
+  ]
 }

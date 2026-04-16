@@ -1,15 +1,21 @@
 {
   "gold": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "predicted": "Mamás, dos, cinco, cinco, uno, dos, tres, cuatro, cinco, seis, siete, ocho.",
+  "predicted": "Dos cinco cinco uno dos tres cuatro cinco seis siete ocho.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Más 2 55 1 2 3 4 5 6 7 8.",
-  "sigWerErrors": []
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "mas dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "mas dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'mas' at position 0",
+      "reason": "The word 'mas' (meaning 'more' in Spanish) is omitted, which could change the meaning of the sentence, especially if it is part of a command or request for more numbers. The omission significantly alters the intent.",
+      "score": 1
+    }
+  ]
 }

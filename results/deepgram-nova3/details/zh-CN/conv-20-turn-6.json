@@ -2,25 +2,20 @@
   "gold": "不对不对，你说我的名字不对。",
   "predicted": "部队部队你是我的名字部队",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "不对不对，你说我的名字不对。",
-  "werNormalizedPredicted": "不对不对你说我的名字不对",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "不 对 不 对 ， 你 说 我 的 名 字 不 对 。",
-  "sigWerNormalizedPredicted": "不 对 不 对 你 说 我 的 名 字 不 对",
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "不 对 不 对 你 说 我 的 名字 不 对",
+  "werNormalizedPredicted": "不 对 不 对 你 是 我 的 名字 不 对",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "不 对 不 对 你 说 我 的 名 字 不 对",
+  "sigWerNormalizedPredicted": "不 对 不 对 你 是 我 的 名 字 不 对",
   "sigWerErrors": [
     {
-      "error": "Deletion: '，' at position 4",
-      "reason": "Punctuation differences are to be ignored as per the guidance, so this does not affect meaning.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: '。' at position 13",
-      "reason": "Punctuation differences are to be ignored as per the guidance, so this does not affect meaning.",
-      "score": 3
+      "error": "Substitution: '说' to '是' at position 5",
+      "reason": "'说' means 'say' and '是' means 'is/are'. This changes the meaning of the sentence from 'you say my name is not correct' to 'you are my name is not correct', which makes the sentence incoherent.",
+      "score": 1
     }
   ]
 }

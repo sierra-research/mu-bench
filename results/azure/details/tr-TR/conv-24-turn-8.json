@@ -1,20 +1,25 @@
 {
   "gold": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "predicted": "Tekrar ediyorum haymana rize 800 üçüncü sıfır üç doğru mu?",
+  "predicted": "Tekrar ediyorum haymana rize 8 üçüncü doğru mu?",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "werNormalizedPredicted": "Tekrar ediyorum. Haymana, Rize 8 0 0 3. Doğru mu?",
-  "qualityScore": 2,
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "wer": 0.3,
+  "werNormalizedGold": "tekrar ediyorum haymana rize sekiz üç sıfır üç doğru mu",
+  "werNormalizedPredicted": "tekrar ediyorum haymana rize sekiz üçüncü doğru mu",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
-  "sigWerNormalizedPredicted": "Tekrar ediyorum. Haymana, Rize 8 0 0 3. Doğru mu?",
+  "sigWerNormalizedGold": "tekrar ediyorum haymana rize sekiz üç sıfır üç doğru mu",
+  "sigWerNormalizedPredicted": "tekrar ediyorum haymana rize sekiz üçüncü doğru mu",
   "sigWerErrors": [
     {
-      "error": "Substitution: '3' to '0' at position 5",
-      "reason": "Changing '3' to '0' in a sequence of numbers (likely an address, code, or identifier) can significantly alter the intended information, making it a significant error.",
+      "error": "Substitution: 'üç' to 'üçüncü' at position 5",
+      "reason": "'üç' means 'three' and 'üçüncü' means 'third'; this changes the meaning from a number to an ordinal, which can confuse the intended information (e.g., a code or sequence).",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sıfır' at position 6",
+      "reason": "Omitting 'sıfır' ('zero') removes a digit from what appears to be a sequence of numbers, which significantly alters the information, especially if this is a code or identifier.",
       "score": 1
     }
   ]

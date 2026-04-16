@@ -1,15 +1,31 @@
 {
   "gold": "G H 0 4 1 2 3 4 5 6.",
-  "predicted": "GH, sıfır bir iki üç dört beş altı.",
+  "predicted": "GH-yüz dört bin beş yüz altı",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "G H 0 4 1 2 3 4 5 6.",
-  "werNormalizedPredicted": "G H 0 4 1 2 3 4 5 6.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6,
+  "werNormalizedGold": "g h zero four one two three four five six",
+  "werNormalizedPredicted": "g h one hundred four thousand five hundred six",
+  "qualityScore": null,
+  "significantWer": 0.3,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "G H 0 4 1 2 3 4 5 6.",
-  "sigWerNormalizedPredicted": "G H 0 4 1 2 3 4 5 6.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "g h zero four one two three four five six",
+  "sigWerNormalizedPredicted": "g h one hundred four thousand five hundred six",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'zero' at position 2",
+      "reason": "'zero' is a single digit, while 'one hundred' is a completely different number, changing the intended sequence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'two' to 'hundred' at position 5",
+      "reason": "'one' is a single digit, 'four thousand' is a large number, which changes the meaning of the sequence completely.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'hundred' at position 9",
+      "reason": "'two' is a single digit, 'five hundred' is a large number, which alters the intended sequence significantly.",
+      "score": 1
+    }
+  ]
 }

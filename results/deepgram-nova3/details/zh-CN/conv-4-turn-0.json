@@ -3,23 +3,23 @@
   "predicted": "是",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "你好。",
+  "werNormalizedGold": "你好",
   "werNormalizedPredicted": "是",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
   "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '是' at position 0",
-      "reason": "'你' means 'you' and '是' means 'is/are/am'; this substitution changes the subject to a verb, making the sentence incoherent and completely changing the meaning.",
+      "reason": "'你' means 'you' and '是' means 'is/are', which completely changes the meaning of the greeting and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "'好' means 'good' or 'hello' in this context; its deletion removes the greeting, further derailing the intended meaning.",
+      "reason": "'好' means 'good' and is essential to the greeting '你好' ('hello'). Its omission makes the sentence incomplete and changes the meaning significantly.",
       "score": 1
     }
   ]

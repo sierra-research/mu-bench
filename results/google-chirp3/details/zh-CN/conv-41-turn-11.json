@@ -1,20 +1,25 @@
 {
   "gold": "What are you.",
-  "predicted": "没有。",
+  "predicted": "我有。",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "What are you.",
-  "werNormalizedPredicted": "没有。",
-  "qualityScore": 1,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "what are you",
+  "werNormalizedPredicted": "我有",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "What are you.",
-  "sigWerNormalizedPredicted": "没 有 。",
+  "sigWerNormalizedGold": "what are you",
+  "sigWerNormalizedPredicted": "我 有",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'What' to '没' at position 0",
-      "reason": "The actual transcription is in a different language (Chinese) than the expected (English), making the meaning completely different and incoherent.",
+      "error": "Substitution: 'what' to '我' at position 0",
+      "reason": "The actual transcription is in a different language (Chinese) than the expected (English), which completely changes the meaning and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'you' at position 2",
+      "reason": "The word 'you' is missing in the actual transcription, further contributing to the incoherence and loss of intended meaning.",
       "score": 1
     }
   ]

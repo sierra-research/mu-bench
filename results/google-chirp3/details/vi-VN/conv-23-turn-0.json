@@ -3,14 +3,14 @@
   "predicted": "Tôi muốn được tại vì tuần trước tôi làm mất thẻ, tôi có xin lại rồi nhưng mà hiện tại chưa thấy thông báo gì hết nên muốn coi tình trạng nó như thế nào.",
   "unintelligible": false,
   "wer": 0.11764705882352941,
-  "werNormalizedGold": "Tôi muốn được tại vì tuần trước tôi làm mất thẻ, tôi có xin lại rồi mà giờ chưa thấy thông báo gì hết, nên tôi muốn coi tình trạng nó như thế nào.",
-  "werNormalizedPredicted": "Tôi muốn được tại vì tuần trước tôi làm mất thẻ, tôi có xin lại rồi nhưng mà hiện tại chưa thấy thông báo gì hết, nên muốn coi tình trạng nó như thế nào.",
-  "qualityScore": 3,
+  "werNormalizedGold": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi mà giờ chưa thấy thông báo gì hết nên tôi muốn coi tình trạng nó như thế nào",
+  "werNormalizedPredicted": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi nhưng mà hiện tại chưa thấy thông báo gì hết nên muốn coi tình trạng nó như thế nào",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 34,
-  "sigWerNormalizedGold": "Tôi muốn được tại vì tuần trước tôi làm mất thẻ, tôi có xin lại rồi mà giờ chưa thấy thông báo gì hết, nên tôi muốn coi tình trạng nó như thế nào.",
-  "sigWerNormalizedPredicted": "Tôi muốn được tại vì tuần trước tôi làm mất thẻ, tôi có xin lại rồi nhưng mà hiện tại chưa thấy thông báo gì hết, nên muốn coi tình trạng nó như thế nào.",
+  "sigWerNormalizedGold": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi mà giờ chưa thấy thông báo gì hết nên tôi muốn coi tình trạng nó như thế nào",
+  "sigWerNormalizedPredicted": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi nhưng mà hiện tại chưa thấy thông báo gì hết nên muốn coi tình trạng nó như thế nào",
   "sigWerErrors": [
     {
       "error": "Insertion: 'nhưng' at position 16",
@@ -19,13 +19,13 @@
     },
     {
       "error": "Substitution: 'giờ' to 'tại' at position 17",
-      "reason": "'hiện' (current/present) adds a temporal clarification to 'tại' (at), making 'hiện tại' (currently), which is a minor clarification and does not change the overall meaning.",
-      "score": 2
+      "reason": "'hiện' (current/present) is added as part of the phrase 'hiện tại' (currently), which is a more explicit way to say 'now'. The meaning remains the same.",
+      "score": 3
     },
     {
       "error": "Deletion: 'tôi' at position 25",
-      "reason": "This is not a direct substitution; 'giờ' (now) in the expected is replaced by 'hiện tại' (currently) in the actual. The meaning is preserved, so this is a minor error.",
-      "score": 2
+      "reason": "'giờ' (now) is replaced by 'tại' as part of 'hiện tại' (currently). Both express the same time reference, so the meaning is preserved.",
+      "score": 3
     }
   ]
 }

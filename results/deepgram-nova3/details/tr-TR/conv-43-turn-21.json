@@ -1,25 +1,25 @@
 {
   "gold": "Hayır daha sonra tekrar ararım ben. Teşekkür ederim.",
-  "predicted": "Hayır, daha sonra tekrar arıyorum ben, teşekkür ederim.",
+  "predicted": "Hayır, daha sonra tekrar öğrenmem, teşekkür ederim.",
   "unintelligible": false,
   "wer": 0.25,
-  "werNormalizedGold": "Hayır daha sonra tekrar ararım ben. Teşekkür ederim.",
-  "werNormalizedPredicted": "Hayır, daha sonra tekrar arıyorum ben. Teşekkür ederim.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "hayır daha sonra tekrar ararım ben teşekkür ederim",
+  "werNormalizedPredicted": "hayır daha sonra tekrar öğrenmem teşekkür ederim",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Hayır daha sonra tekrar ararım ben. Teşekkür ederim.",
-  "sigWerNormalizedPredicted": "Hayır, daha sonra tekrar arıyorum ben. Teşekkür ederim.",
+  "sigWerNormalizedGold": "hayır daha sonra tekrar ararım ben teşekkür ederim",
+  "sigWerNormalizedPredicted": "hayır daha sonra tekrar öğrenmem teşekkür ederim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hayır' to 'Hayır,' at position 0",
-      "reason": "Difference is only punctuation (comma), which does not affect meaning.",
-      "score": 3
+      "error": "Substitution: 'ararım' to 'öğrenmem' at position 4",
+      "reason": "'ararım' means 'I will call' and 'öğrenmem' means 'I will learn'; this changes the action and meaning of the sentence significantly.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'ararım' to 'arıyorum' at position 4",
-      "reason": "'Ararım' means 'I will call' (future tense), 'arıyorum' means 'I am calling' (present continuous). The tense is different, but the overall meaning (the act of calling) is preserved in context.",
+      "error": "Deletion: 'ben' at position 5",
+      "reason": "Omitting 'ben' (meaning 'I') slightly affects the sentence structure but does not significantly change the meaning, as the subject is still implied.",
       "score": 2
     }
   ]

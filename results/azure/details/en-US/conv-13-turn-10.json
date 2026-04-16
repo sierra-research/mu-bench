@@ -1,26 +1,31 @@
 {
   "gold": "Like are they based on usage, payment history, or how long you had the card.",
-  "predicted": "are they based more on usage, payment history, or how long you've had the card?",
+  "predicted": "Mike, are they based more on usage, payment history, or how long you've had the card?",
   "unintelligible": false,
-  "wer": 0.13333333333333333,
-  "werNormalizedGold": "Like are they based on usage, payment history, or how long you had the card.",
-  "werNormalizedPredicted": "Are they based on usage, payment history, or how long you had the card.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "like are they based on usage payment history or how long you had the card",
+  "werNormalizedPredicted": "mike are they based more on usage payment history or how long you have had the card",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Like are they based on usage, payment history, or how long you had the card.",
-  "sigWerNormalizedPredicted": "Are they based on usage, payment history, or how long you had the card.",
+  "sigWerNormalizedGold": "like are they based on usage payment history or how long you had the card",
+  "sigWerNormalizedPredicted": "mike are they based more on usage payment history or how long you have had the card",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Like' to 'Are' at position 0",
-      "reason": "'Like' at the beginning is a discourse marker and its omission does not change the meaning of the sentence.",
+      "error": "Substitution: 'like' to 'mike' at position 0",
+      "reason": "'mike' is a proper noun and completely changes the meaning of the sentence, making it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'more' at position 4",
+      "reason": "Adding 'more' slightly changes the nuance but does not derail the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Deletion: 'are' at position 1",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Insertion: 'have' at position 12",
+      "reason": "Adding 'have' ('how long you have had the card' vs 'how long you had the card') is a minor grammatical difference and does not change the meaning.",
+      "score": 3
     }
   ]
 }

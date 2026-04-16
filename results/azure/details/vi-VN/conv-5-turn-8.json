@@ -2,24 +2,29 @@
   "gold": "Ừ. Đúng rồi. Rồi, Anna ơi. Chuẩn rồi.",
   "predicted": "Ừm ừm đúng rồi, đúng rồi rồi rồi rồi anna chuẩn rồi.",
   "unintelligible": false,
-  "wer": 0.875,
-  "werNormalizedGold": "Ừ. Đúng rồi. Rồi, Anna ơi. Chuẩn rồi.",
-  "werNormalizedPredicted": "Ừ, ừm, đúng rồi. Đúng rồi. Rồi, rồi, rồi, Anna. Chuẩn rồi.",
-  "qualityScore": 2,
+  "wer": 0.7142857142857143,
+  "werNormalizedGold": "dung roi roi anna oi chuan roi",
+  "werNormalizedPredicted": "dung roi dung roi roi roi roi anna chuan roi",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Ừ. Đúng rồi. Rồi, Anna ơi. Chuẩn rồi.",
-  "sigWerNormalizedPredicted": "Ừ, ừm, đúng rồi. Đúng rồi. Rồi, rồi, rồi, Anna. Chuẩn rồi.",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "dung roi roi anna oi chuan roi",
+  "sigWerNormalizedPredicted": "dung roi dung roi roi roi roi anna chuan roi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Ừ.' to 'rồi.' at position 0",
-      "reason": "The insertion of 'ừm' (a filler word similar to 'um') does not change the meaning of the sentence, just adds a hesitation.",
+      "error": "Insertion: 'dung' at position 2",
+      "reason": "The extra 'dung' is a repetition and does not change the overall meaning of the sentence, which is a confirmation or affirmation.",
       "score": 2
     },
     {
-      "error": "Substitution: 'Anna' to 'rồi,' at position 4",
-      "reason": "The repeated insertion of 'rồi,' (meaning 'already' or 'okay') is redundant but does not change the meaning of the sentence.",
+      "error": "Insertion: 'roi' at position 3",
+      "reason": "The extra 'roi' is a repetition and does not alter the meaning of the sentence, which remains a confirmation.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'oi' at position 4",
+      "reason": "'oi' is a vocative particle in Vietnamese, often used to call someone's attention. Its omission slightly reduces the directness or personal address but does not significantly change the overall meaning.",
       "score": 2
     }
   ]

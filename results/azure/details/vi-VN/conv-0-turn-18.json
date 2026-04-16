@@ -1,26 +1,26 @@
 {
   "gold": "Số điện thoại sai. Số điện thoại sai.",
-  "predicted": "Souly.",
+  "predicted": "Sony.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "Số điện thoại sai. Số điện thoại sai.",
-  "werNormalizedPredicted": "Souly.",
-  "qualityScore": 1,
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "so dien thoai sai so dien thoai sai",
+  "werNormalizedPredicted": "sony",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Số điện thoại sai. Số điện thoại sai.",
-  "sigWerNormalizedPredicted": "Souly.",
+  "sigWerNormalizedGold": "so dien thoai sai so dien thoai sai",
+  "sigWerNormalizedPredicted": "sony",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Số' to 'Souly.' at position 0",
-      "reason": "The actual transcription is a single English-sounding word ('Souly.') instead of the expected Vietnamese sentence ('Số điện thoại sai. Số điện thoại sai.'), which means 'The phone number is wrong.' This is a significant error as the meaning is completely lost and the languages do not match.",
+      "error": "Substitution: 'so' to 'sony' at position 0",
+      "reason": "'sony' is a completely different word from 'so', and does not preserve the meaning of the original phrase. The substitution makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'điện' at position 1",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Deletion: 'dien' at position 1",
+      "reason": "Omitting 'dien' removes a key part of the phrase, resulting in a loss of meaning and making the sentence incoherent.",
+      "score": 1
     }
   ]
 }

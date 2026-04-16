@@ -1,15 +1,26 @@
 {
   "gold": "你再说一遍我的姓名。",
-  "predicted": "你再说一遍我的姓名。",
+  "predicted": "Is that sure Ibn with a sing me?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你再说一遍我的姓名。",
-  "werNormalizedPredicted": "你再说一遍我的姓名。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "你 再 说 一 遍 我 的 姓 名 。",
-  "sigWerNormalizedPredicted": "你 再 说 一 遍 我 的 姓 名 。",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werNormalizedGold": "你 再 说 一 遍 我 的 姓名",
+  "werNormalizedPredicted": "is that sure ibn with a sing me",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "你 再 说 一 遍 我 的 姓 名",
+  "sigWerNormalizedPredicted": "is that sure ibn with a sing me",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'is' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), resulting in a total loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '名' at position 8",
+      "reason": "The actual word is in a different language and does not correspond to the expected meaning, causing a significant error.",
+      "score": 1
+    }
+  ]
 }

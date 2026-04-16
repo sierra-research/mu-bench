@@ -1,15 +1,21 @@
 {
   "gold": "美玲。",
-  "predicted": "May Ling.",
+  "predicted": "May 0.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "美玲。",
-  "werNormalizedPredicted": "美玲。",
-  "qualityScore": 3,
+  "wer": 1.0,
+  "werNormalizedGold": "美玲",
+  "werNormalizedPredicted": "mei ling",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "美 玲 。",
-  "sigWerNormalizedPredicted": "美 玲 。",
-  "sigWerErrors": []
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "美 玲",
+  "sigWerNormalizedPredicted": "mei ling",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mei' at position 0",
+      "reason": "'美' is a Chinese character and 'mei' is its romanized pinyin form. While they represent the same name, the script is different. If the expected output is in Chinese characters, using pinyin instead is a minor error as the meaning is preserved but the script is not.",
+      "score": 2
+    }
+  ]
 }

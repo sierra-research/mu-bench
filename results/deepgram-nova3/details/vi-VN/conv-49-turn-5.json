@@ -1,15 +1,26 @@
 {
   "gold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
-  "predicted": "Địa chỉ email là thu. Trngmail chấm com",
+  "predicted": "Địa chỉ email là thu. Gmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
-  "werNormalizedPredicted": "Địa chỉ email là thu chấm trần a còng email chấm com.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "địa chỉ email là thu chấm gmail chấm com",
+  "qualityScore": null,
+  "significantWer": 0.16666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
-  "sigWerNormalizedPredicted": "Địa chỉ email là thu chấm trần a còng email chấm com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là thu chấm gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'gmail' at position 6",
+      "reason": "Substituting the local part of the email ('trần') with 'gmail' changes the actual email address, which is a significant error as it results in a completely different and incorrect email.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 7",
+      "reason": "Omitting the 'a' (from 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

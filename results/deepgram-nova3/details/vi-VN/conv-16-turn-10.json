@@ -1,26 +1,31 @@
 {
   "gold": "Tôi muốn xem cái tình trạng thẻ xin cấp lại như thế nào? Xin từ tuần trước mà tới giờ chưa thấy phản hồi.",
-  "predicted": "Tôi muốn xem cái tình trạng thẻ sinh cấp lại như thế nào xin từ tuần trước mà tới giờ chưa thể phản hồi.",
+  "predicted": "Tôi muốn xem cái tình trạng thẻ sinh cấp lại như thế nào tin từ tuần trước mà tới giờ chưa thể phản hồi",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werNormalizedGold": "Tôi muốn xem cái tình trạng thẻ xin cấp lại như thế nào? Xin từ tuần trước mà tới giờ chưa thấy phản hồi.",
-  "werNormalizedPredicted": "Tôi muốn xem cái tình trạng thẻ sinh cấp lại như thế nào? Xin từ tuần trước mà tới giờ chưa thể phản hồi.",
-  "qualityScore": 2,
+  "wer": 0.125,
+  "werNormalizedGold": "tôi muốn xem cái tình trạng thẻ xin cấp lại như thế nào xin từ tuần trước mà tới giờ chưa thấy phản hồi",
+  "werNormalizedPredicted": "tôi muốn xem cái tình trạng thẻ sinh cấp lại như thế nào tin từ tuần trước mà tới giờ chưa thể phản hồi",
+  "qualityScore": null,
   "significantWer": 0.08333333333333333,
   "majorErrorsCount": 2,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "Tôi muốn xem cái tình trạng thẻ xin cấp lại như thế nào? Xin từ tuần trước mà tới giờ chưa thấy phản hồi.",
-  "sigWerNormalizedPredicted": "Tôi muốn xem cái tình trạng thẻ sinh cấp lại như thế nào? Xin từ tuần trước mà tới giờ chưa thể phản hồi.",
+  "sigWerNormalizedGold": "tôi muốn xem cái tình trạng thẻ xin cấp lại như thế nào xin từ tuần trước mà tới giờ chưa thấy phản hồi",
+  "sigWerNormalizedPredicted": "tôi muốn xem cái tình trạng thẻ sinh cấp lại như thế nào tin từ tuần trước mà tới giờ chưa thể phản hồi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'xin' to 'sinh' at position 7",
-      "reason": "'Xin cấp lại' means 'request re-issuance', while 'sinh cấp lại' is not a valid phrase and changes the meaning, making the sentence confusing.",
+      "reason": "'xin' (to request) and 'sinh' (to be born) are completely different words and change the meaning of the phrase about reissuing a card. This substitution makes the sentence confusing and potentially incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'xin' to 'tin' at position 13",
+      "reason": "'xin' (to request) and 'tin' (news/information) are unrelated in this context. This substitution changes the meaning of the sentence and makes it less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'thấy' to 'thể' at position 21",
-      "reason": "'Chưa thấy phản hồi' means 'have not seen a response', while 'chưa thể phản hồi' means 'cannot respond yet', which changes the meaning of the sentence significantly.",
-      "score": 1
+      "reason": "'thấy' (to see) and 'thể' (can/ability) are different in meaning, but the overall intent of the sentence (not receiving a response) is still somewhat understandable. The error is significant but does not completely derail the meaning.",
+      "score": 2
     }
   ]
 }

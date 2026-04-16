@@ -1,25 +1,20 @@
 {
   "gold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
-  "predicted": "Tôi cần được tôi muốn nói chuyện với người trực tiếp.",
+  "predicted": "Tôi muốn nói chuyện với người trực tiếp.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werNormalizedGold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
-  "werNormalizedPredicted": "Tôi cần được. Tôi muốn nói chuyện với người trực tiếp.",
-  "qualityScore": 2,
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 2,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "tôi không cần đâu tôi muốn nói chuyện với người trực tiếp",
+  "werNormalizedPredicted": "tôi muốn nói chuyện với người trực tiếp",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
-  "sigWerNormalizedPredicted": "Tôi cần được. Tôi muốn nói chuyện với người trực tiếp.",
+  "sigWerNormalizedGold": "tôi không cần đâu tôi muốn nói chuyện với người trực tiếp",
+  "sigWerNormalizedPredicted": "tôi muốn nói chuyện với người trực tiếp",
   "sigWerErrors": [
     {
       "error": "Deletion: 'không' at position 1",
-      "reason": "Removing 'không' (not) reverses the meaning of the sentence from 'I do not need' to 'I need', which is a significant change in intent.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'đâu.' to 'được.' at position 3",
-      "reason": "Substituting 'đâu.' (at all) with 'được.' (can/be able to) further changes the meaning, making the sentence incoherent compared to the original intent.",
+      "reason": "Omitting 'không' (no/not) changes the meaning from a negative statement ('I do not need') to a positive or neutral one, significantly altering the intent of the sentence.",
       "score": 1
     }
   ]

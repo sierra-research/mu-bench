@@ -2,24 +2,24 @@
   "gold": "C N 3 7 8 9。",
   "predicted": "CN Sensi Bajro.",
   "unintelligible": false,
-  "wer": 0.7142857142857143,
-  "werNormalizedGold": "C N 3 7 8 9。",
-  "werNormalizedPredicted": "C N Sensi Bajro.",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "c n three seven eight nine",
+  "werNormalizedPredicted": "c n sensi bajro",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
   "majorErrorsCount": 2,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "C N 3 7 8 9 。",
-  "sigWerNormalizedPredicted": "C N Sensi Bajro.",
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n three seven eight nine",
+  "sigWerNormalizedPredicted": "c n sensi bajro",
   "sigWerErrors": [
     {
-      "error": "Substitution: '3' to 'Sensi' at position 2",
-      "reason": "'Sensi' is a completely different word from the digit '3', and this substitution makes the sequence unrecognizable, especially in a context where a specific code or number is expected. This is a significant error.",
+      "error": "Substitution: 'three' to 'sensi' at position 2",
+      "reason": "'sensi' is a completely different word from 'three', which is a digit in a sequence. This substitution makes the sequence of numbers and letters incoherent and unrecognizable as the intended sequence.",
       "score": 1
     },
     {
-      "error": "Deletion: '8' at position 4",
-      "reason": "Omitting a digit in a sequence (likely a code or number) changes the entire meaning and makes the transcription incorrect for its intended use. Significant error.",
+      "error": "Deletion: 'eight' at position 4",
+      "reason": "The digit 'eight' is missing from the sequence, making the transcription incomplete and incorrect for contexts where the exact sequence is important (e.g., codes, numbers).",
       "score": 1
     }
   ]

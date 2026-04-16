@@ -1,25 +1,25 @@
 {
   "gold": "Ne zaman bildirim göndereceksiniz siz? Anlayamadım.",
-  "predicted": "Ne zaman bildirim gönderecekse anlayamadım.",
+  "predicted": "Ne zaman bildirimlendirerek sizi anlayamadım.",
   "unintelligible": false,
   "wer": 0.5,
-  "werNormalizedGold": "Ne zaman bildirim göndereceksiniz siz? Anlayamadım.",
-  "werNormalizedPredicted": "Ne zaman bildirim gönderecekse anlayamadım.",
-  "qualityScore": 2,
+  "werNormalizedGold": "ne zaman bildirim göndereceksiniz siz anlayamadım",
+  "werNormalizedPredicted": "ne zaman bildirimlendirerek sizi anlayamadım",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Ne zaman bildirim göndereceksiniz siz? Anlayamadım.",
-  "sigWerNormalizedPredicted": "Ne zaman bildirim gönderecekse anlayamadım.",
+  "sigWerNormalizedGold": "ne zaman bildirim göndereceksiniz siz anlayamadım",
+  "sigWerNormalizedPredicted": "ne zaman bildirimlendirerek sizi anlayamadım",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'göndereceksiniz' to 'gönderecekse' at position 3",
-      "reason": "The substitution changes the sentence from a direct question ('will you send') to a conditional clause ('if [someone] will send'), which alters the meaning and makes the sentence less coherent as a question.",
+      "error": "Substitution: 'bildirim' to 'bildirimlendirerek' at position 2",
+      "reason": "'bildirimlendirerek' is a different verb form and meaning from 'bildirim göndereceksiniz'; it changes the action from 'sending a notification' to 'by notifying', which alters the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'Anlayamadım.' at position 5",
-      "reason": "The word 'siz?' (meaning 'you?') is omitted, which removes the direct address to the listener and changes the sentence structure, but the main intent is still somewhat understandable.",
+      "error": "Deletion: 'siz' at position 4",
+      "reason": "Omitting 'siz' (you) removes the subject of the verb, which can cause confusion about who is being addressed, but the overall meaning is still somewhat understandable from context.",
       "score": 2
     }
   ]

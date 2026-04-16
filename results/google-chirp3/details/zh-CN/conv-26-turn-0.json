@@ -2,24 +2,24 @@
   "gold": "你好。",
   "predicted": "有。",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "你好。",
-  "werNormalizedPredicted": "有。",
-  "qualityScore": 1,
-  "significantWer": 0.6666666666666666,
+  "wer": 1.0,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "有",
+  "qualityScore": null,
+  "significantWer": 1.0,
   "majorErrorsCount": 2,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "你 好 。",
-  "sigWerNormalizedPredicted": "有 。",
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "有",
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '有' at position 0",
-      "reason": "'你' means 'you' and '有' means 'have'; this substitution changes the meaning of the sentence completely and makes it incoherent in context.",
+      "reason": "'你' means 'you' and '有' means 'have'; this substitution changes the meaning of the greeting and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "Omitting '好' ('good' or 'hello' in this context) removes the greeting, further derailing the intended meaning.",
+      "reason": "'好' means 'good' and is essential to the greeting '你好' ('hello'); omitting it makes the phrase incomplete and changes the meaning significantly.",
       "score": 1
     }
   ]

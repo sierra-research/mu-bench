@@ -2,24 +2,29 @@
   "gold": "Maybe you can hear that snoring in the background, we're going to party.",
   "predicted": "And you can hear that snoring in the background. We get a party.",
   "unintelligible": false,
-  "wer": 0.3076923076923077,
-  "werNormalizedGold": "Maybe you can hear that snoring in the background, we're going to party.",
-  "werNormalizedPredicted": "And you can hear that snoring in the background, we get a party.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Maybe you can hear that snoring in the background, we're going to party.",
-  "sigWerNormalizedPredicted": "And you can hear that snoring in the background, we get a party.",
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
+  "werNormalizedPredicted": "and you can hear that snoring in the background we get a party",
+  "qualityScore": null,
+  "significantWer": 0.07142857142857142,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
+  "sigWerNormalizedPredicted": "and you can hear that snoring in the background we get a party",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Maybe' to 'And' at position 0",
-      "reason": "'Maybe' introduces uncertainty or possibility, while 'And' simply connects clauses. This changes the nuance but not the core meaning of the sentence.",
+      "error": "Substitution: 'maybe' to 'and' at position 0",
+      "reason": "'Maybe' introduces uncertainty or possibility, while 'and' is a conjunction; this changes the nuance but not the core meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'we're' to 'we' at position 9",
-      "reason": "'We're' means 'we are', while 'we' is just the pronoun. The omission of 'are' is a minor grammatical error and does not change the meaning.",
+      "error": "Substitution: 'are' to 'get' at position 10",
+      "reason": "'We are going to party' means an intention or plan, while 'we get a party' implies receiving or having a party, which changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'to' at position 12",
+      "reason": "Missing 'to' in 'going to party' makes the phrase less grammatical but does not significantly alter the meaning.",
       "score": 2
     }
   ]

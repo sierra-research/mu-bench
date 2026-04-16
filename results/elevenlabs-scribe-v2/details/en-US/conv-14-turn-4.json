@@ -1,30 +1,30 @@
 {
   "gold": "Hello? Can you give what is 7 6 2?",
-  "predicted": "Yo, c-can, can you give me what is this s-s-seven six two?",
+  "predicted": "So c-can you give me what is the s-s-seven six two?",
   "unintelligible": false,
-  "wer": 0.8888888888888888,
-  "werNormalizedGold": "Hello? Can you give what is 7 6 2?",
-  "werNormalizedPredicted": "Yo, c-can, can you give me what is this s-s-seven six two?",
-  "qualityScore": 2,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "hello can you give what is seven six two",
+  "werNormalizedPredicted": "so can you give me what is the seven six two",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Hello? Can you give what is 7 6 2?",
-  "sigWerNormalizedPredicted": "Yo, c-can, can you give me what is this s-s-seven six two?",
+  "sigWerNormalizedGold": "hello can you give what is seven six two",
+  "sigWerNormalizedPredicted": "so can you give me what is the seven six two",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Hello?' to 'c-can,' at position 0",
-      "reason": "'Yo' is an informal greeting that does not change the meaning of the sentence, just adds informality.",
+      "error": "Substitution: 'hello' to 'so' at position 0",
+      "reason": "'hello' is a greeting, while 'so' is a discourse marker; the substitution slightly changes the tone but does not derail the meaning of the request.",
       "score": 2
     },
     {
       "error": "Insertion: 'me' at position 4",
-      "reason": "'c-can,' is a stuttered form of 'can' and does not convey the same greeting as 'Hello?'. The greeting is lost, which slightly changes the tone but not the core meaning.",
-      "score": 2
+      "reason": "Adding 'me' clarifies the request but does not change the overall meaning of the sentence.",
+      "score": 3
     },
     {
-      "error": "Substitution: '7' to 's-s-seven' at position 6",
-      "reason": "Adding 'me' to 'can you give me' is a minor grammatical difference and does not change the meaning.",
+      "error": "Insertion: 'the' at position 6",
+      "reason": "Adding 'the' before the numbers is a minor grammatical difference and does not affect the meaning.",
       "score": 3
     }
   ]

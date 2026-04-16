@@ -1,31 +1,41 @@
 {
   "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
-  "predicted": "Anlar. Son transferimde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana e-mail'le gönderebilir misin son transferimin detaylarını?",
+  "predicted": "Anlar. Son transferimde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana e-mail ile gönderebilir misin son transferimin detaylarını?",
   "unintelligible": false,
-  "wer": 0.2777777777777778,
-  "werNormalizedGold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
-  "werNormalizedPredicted": "Anna, son transferimde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana email gönderir misin son transferimin detaylarını?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3888888888888889,
+  "werNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
+  "werNormalizedPredicted": "anlar son transferimde biraz gecikme olmustu son transferimi bir goz atar misin bana email ile gonderebilir misin son transferimin detaylarini",
+  "qualityScore": null,
+  "significantWer": 0.05555555555555555,
+  "majorErrorsCount": 1,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
-  "sigWerNormalizedPredicted": "Anna, son transferimde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana email gönderir misin son transferimin detaylarını?",
+  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
+  "sigWerNormalizedPredicted": "anlar son transferimde biraz gecikme olmustu son transferimi bir goz atar misin bana email ile gonderebilir misin son transferimin detaylarini",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'anna' to 'anlar' at position 0",
+      "reason": "'anna' is a proper noun (a name), while 'anlar' is a Turkish word meaning 'moments' or 'they understand'; this changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'transferinde' to 'transferimde' at position 2",
-      "reason": "'Transferinde' (in your transfer) vs 'transferimde' (in my transfer) changes the subject of the transfer, but the overall meaning is still clear in context.",
+      "reason": "The difference is between 'his/her transfer' (transferinde) and 'my transfer' (transferimde); this changes the subject of the transfer but does not derail the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gösterir' to 'atar' at position 9",
-      "reason": "The phrase 'göz atar mısın' (can you take a look) is inserted instead of 'gösterir misin' (can you show), but both serve a similar function in this context.",
+      "error": "Substitution: 'gosterir' to 'atar' at position 9",
+      "reason": "The word 'goz' (eye) is inserted, but in context it is part of the phrase 'goz atar' (to take a look), which replaces 'gosterir' (shows). This changes the action but not the overall intent.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'gonderir' to 'gonderebilir' at position 13",
+      "reason": "'gosterir' means 'shows', while 'goz atar' means 'take a look'; the action is similar (reviewing or showing), so the meaning is preserved.",
+      "score": 3
     },
     {
       "error": "Substitution: 'transferin' to 'transferimin' at position 16",
-      "reason": "'Gösterir misin' (can you show) vs 'göz atar mısın' (can you take a look) are different verbs, but the intent is similar and does not derail the meaning.",
-      "score": 2
+      "reason": "The word 'ile' (with/by) is inserted, specifying the method of sending the email, which does not change the overall meaning.",
+      "score": 3
     }
   ]
 }

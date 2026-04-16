@@ -1,15 +1,36 @@
 {
   "gold": "我的电话号码是 8 6 1 3 9 0 1 2 3 4 5 6 7。",
-  "predicted": "我的电影号号码是86尧三九灵尧二三四五六七",
+  "predicted": "有点好好吗是86尧三尧林尧r三四五六七",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "我的电话号码是 8 6 1 3 9 0 1 2 3 4 5 6 7。",
-  "werNormalizedPredicted": "我的电话号码是 8 6 1 3 9 0 1 2 3 4 5 6 7。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "我 的 电 话 号 码 是 8 6 1 3 9 0 1 2 3 4 5 6 7 。",
-  "sigWerNormalizedPredicted": "我 的 电 话 号 码 是 8 6 1 3 9 0 1 2 3 4 5 6 7 。",
-  "sigWerErrors": []
+  "wer": 0.55,
+  "werNormalizedGold": "我的电话号码是 八 六 一 三 九 零 一 二 三 四 五 六 七",
+  "werNormalizedPredicted": "有点好好吗是 八 六 尧 三 尧 林 尧 r 三 四 五 六 七",
+  "qualityScore": null,
+  "significantWer": 0.15,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "我 的 电 话 号 码 是 八 六 一 三 九 零 一 二 三 四 五 六 七",
+  "sigWerNormalizedPredicted": "有 点 好 好 吗 是 八 六 尧 三 尧 林 尧 r 三 四 五 六 七",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to '有' at position 0",
+      "reason": "'我' (I) is substituted with '有' (have), which changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '码' at position 5",
+      "reason": "Omitting '码' (number) from '电话号码' (phone number) makes the phrase incomplete but still somewhat understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '一' to '尧' at position 9",
+      "reason": "'一' (one) is replaced with '尧' (a surname or unrelated character), which is a significant error in a phone number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '九' to '尧' at position 11",
+      "reason": "'九' (nine) is replaced with '尧', which is a significant error in a phone number sequence.",
+      "score": 1
+    }
+  ]
 }

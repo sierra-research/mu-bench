@@ -3,23 +3,23 @@
   "predicted": "Tôi muốn được sinh gia tăng hạng mức thẻ tín dụng.",
   "unintelligible": false,
   "wer": 0.18181818181818182,
-  "werNormalizedGold": "Tôi muốn được xin gia tăng hạn mức thẻ tín dụng.",
-  "werNormalizedPredicted": "tôi muốn được sinh gia tăng hạn mức thẻ tín dụng.",
-  "qualityScore": 2,
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tôi muốn được xin gia tăng hạn mức thẻ tín dụng",
+  "werNormalizedPredicted": "tôi muốn được sinh gia tăng hạng mức thẻ tín dụng",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Tôi muốn được xin gia tăng hạn mức thẻ tín dụng.",
-  "sigWerNormalizedPredicted": "tôi muốn được sinh gia tăng hạn mức thẻ tín dụng.",
+  "sigWerNormalizedGold": "tôi muốn được xin gia tăng hạn mức thẻ tín dụng",
+  "sigWerNormalizedPredicted": "tôi muốn được sinh gia tăng hạng mức thẻ tín dụng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Difference is only in capitalization, which does not affect meaning in Vietnamese.",
-      "score": 3
+      "error": "Substitution: 'xin' to 'sinh' at position 3",
+      "reason": "'xin' means 'to request' while 'sinh' means 'to give birth' or 'generate'; this changes the meaning of the request and makes the sentence confusing or incoherent.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'xin' to 'sinh' at position 3",
-      "reason": "'Xin' (to request) and 'sinh' (to give birth) are completely different words; this substitution changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'hạn' to 'hạng' at position 6",
+      "reason": "'hạn mức' means 'limit' (as in credit limit), while 'hạng mức' is not a standard phrase and changes the meaning, making the sentence less clear or incorrect in context.",
       "score": 1
     }
   ]

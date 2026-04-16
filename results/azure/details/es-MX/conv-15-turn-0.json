@@ -2,29 +2,24 @@
   "gold": "Buenas días, quiero solicitar, bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a hacer aquí con el banco.",
   "predicted": "Buenos días, quiero solicitar, bueno, es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a ser aquí con el banco.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "Buenas días, quiero solicitar, bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a hacer aquí con el banco.",
-  "werNormalizedPredicted": "Buenos días, quiero solicitar, bueno, es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a ser aquí con el banco.",
-  "qualityScore": 3,
+  "wer": 0.06666666666666667,
+  "werNormalizedGold": "buenas dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a hacer aqui con el banco",
+  "werNormalizedPredicted": "buenos dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a ser aqui con el banco",
+  "qualityScore": null,
   "significantWer": 0.03333333333333333,
   "majorErrorsCount": 1,
   "totalWordsCount": 30,
-  "sigWerNormalizedGold": "Buenas días, quiero solicitar, bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a hacer aquí con el banco.",
-  "sigWerNormalizedPredicted": "Buenos días, quiero solicitar, bueno, es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a ser aquí con el banco.",
+  "sigWerNormalizedGold": "buenas dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a hacer aqui con el banco",
+  "sigWerNormalizedPredicted": "buenos dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a ser aqui con el banco",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Buenas' to 'Buenos' at position 0",
-      "reason": "'Buenas días' is grammatically incorrect in Spanish; 'Buenos días' is the correct greeting. The substitution actually corrects the phrase, so the meaning is unchanged.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'bueno' to 'bueno,' at position 4",
-      "reason": "The only difference is the addition of a comma, which is ignored per the guidance.",
-      "score": 3
+      "error": "Substitution: 'buenas' to 'buenos' at position 0",
+      "reason": "'buenas dias' is a common error for 'buenos dias', but 'buenos dias' is the correct greeting in Spanish. The meaning is unchanged, so this is a minor error.",
+      "score": 2
     },
     {
       "error": "Substitution: 'hacer' to 'ser' at position 25",
-      "reason": "Changing 'hacer' (to do/make) to 'ser' (to be) alters the meaning of the sentence, as it changes the action being referred to in the context of future procedures.",
+      "reason": "'hacer' (to do/make) and 'ser' (to be) are different verbs. In this context, 'hacer' is correct and 'ser' changes the meaning of the sentence, making it confusing or incorrect for the intended action. This is a significant error.",
       "score": 1
     }
   ]

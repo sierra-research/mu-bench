@@ -3,18 +3,23 @@
   "predicted": "¿La dirección de mi domicilio o de mail?",
   "unintelligible": false,
   "wer": 0.2857142857142857,
-  "werNormalizedGold": "¿Dirección de mi domicilio o el mail?",
-  "werNormalizedPredicted": "¿La dirección de mi domicilio o el mail?",
-  "qualityScore": 3,
+  "werNormalizedGold": "direccion de mi domicilio o el mail",
+  "werNormalizedPredicted": "la direccion de mi domicilio o de mail",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "¿Dirección de mi domicilio o el mail?",
-  "sigWerNormalizedPredicted": "¿La dirección de mi domicilio o el mail?",
+  "sigWerNormalizedGold": "direccion de mi domicilio o el mail",
+  "sigWerNormalizedPredicted": "la direccion de mi domicilio o de mail",
   "sigWerErrors": [
     {
-      "error": "Substitution: '¿Dirección' to 'dirección' at position 0",
-      "reason": "Adding 'La' before 'dirección' is a minor grammatical change that does not alter the meaning of the sentence.",
+      "error": "Insertion: 'la' at position 0",
+      "reason": "Adding 'la' at the beginning does not change the meaning of the sentence, as it is just an article and does not affect the core information.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'el' to 'de' at position 5",
+      "reason": "Substituting 'el' with 'de' slightly changes the grammatical structure but the meaning remains clear; the listener would still understand the reference to the email address.",
       "score": 2
     }
   ]

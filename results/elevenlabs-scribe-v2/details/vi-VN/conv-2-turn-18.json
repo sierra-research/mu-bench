@@ -3,18 +3,23 @@
   "predicted": "Ờ mà thôi, mà thôi.",
   "unintelligible": false,
   "wer": 1.0,
-  "werNormalizedGold": "Rồi. Mở rồi. Mở rồi.",
-  "werNormalizedPredicted": "Ờ mà thôi, mà thôi.",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "rồi mở rồi mở rồi",
+  "werNormalizedPredicted": "mà thôi mà thôi",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Rồi. Mở rồi. Mở rồi.",
-  "sigWerNormalizedPredicted": "Ờ mà thôi, mà thôi.",
+  "sigWerNormalizedGold": "rồi mở rồi mở rồi",
+  "sigWerNormalizedPredicted": "mà thôi mà thôi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Rồi.' to 'Ờ' at position 0",
-      "reason": "The actual transcription starts with a hesitation/interjection ('Ờ') instead of confirming action ('Rồi.'), which changes the intent and meaning of the sentence.",
+      "error": "Substitution: 'rồi' to 'mà' at position 0",
+      "reason": "'rồi' and 'mà' are completely different words in Vietnamese and change the meaning of the sentence. The overall meaning is lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 4",
+      "reason": "The repeated structure is lost, and the omission further derails the intended meaning of the sentence.",
       "score": 1
     }
   ]

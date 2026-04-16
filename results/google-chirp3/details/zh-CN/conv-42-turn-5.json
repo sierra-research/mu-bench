@@ -1,25 +1,25 @@
 {
   "gold": "终于到了。",
-  "predicted": "可以的。",
+  "predicted": "嗯,可以的。",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "终于到了。",
-  "werNormalizedPredicted": "可以的。",
-  "qualityScore": 1,
-  "significantWer": 0.4,
+  "wer": 1.0,
+  "werNormalizedGold": "终于到了",
+  "werNormalizedPredicted": "可以的",
+  "qualityScore": null,
+  "significantWer": 0.5,
   "majorErrorsCount": 2,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "终 于 到 了 。",
-  "sigWerNormalizedPredicted": "可 以 的 。",
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "终 于 到 了",
+  "sigWerNormalizedPredicted": "可 以 的",
   "sigWerErrors": [
     {
       "error": "Substitution: '终' to '可' at position 0",
-      "reason": "The words are completely different and change the meaning of the sentence. '终于到了' means 'finally arrived', while '可以的' means 'it's okay' or 'can do'. This substitution makes the sentence incoherent with the expected meaning.",
+      "reason": "The substituted word changes the meaning of the sentence entirely; '终于到了' means 'finally arrived', while '可以的' means 'it's okay/can do', which is unrelated.",
       "score": 1
     },
     {
       "error": "Deletion: '了' at position 3",
-      "reason": "'了' is a particle indicating completion, and its omission further removes the intended meaning of the sentence.",
+      "reason": "Omitting '了' removes the aspect marker that completes the meaning of 'finally arrived', further derailing the sentence's meaning.",
       "score": 1
     }
   ]

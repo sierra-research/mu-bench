@@ -1,41 +1,41 @@
 {
   "gold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "predicted": "Anna bana şu kod tekrar verir misin? Kod da çünkü ilk başta en dedin sonra ea dedin. Kod tekrar bana söyler misin yavaş ya?",
+  "predicted": "Anla, bana şu kod tekrar verir misin? Kod da çünkü ilk başta EN dedin sonra EA dedin. Kod tekrar bana söyler misin yavaş ya?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "werNormalizedPredicted": "Anna, bana şu kodu tekrar verir misin? Kod da çünkü ilk başta EN dedin sonra EA dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "qualityScore": 3,
-  "significantWer": 0.125,
-  "majorErrorsCount": 3,
+  "wer": 0.2916666666666667,
+  "werNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "werNormalizedPredicted": "anla bana şu kod tekrar verir misin kod da çünkü ilk başta e n dedin sonra e a dedin kod tekrar bana söyler misin yavaş ya",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 2,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
-  "sigWerNormalizedPredicted": "Anna, bana şu kodu tekrar verir misin? Kod da çünkü ilk başta EN dedin sonra EA dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "sigWerNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "sigWerNormalizedPredicted": "anla bana şu kod tekrar verir misin kod da çünkü ilk başta e n dedin sonra e a dedin kod tekrar bana söyler misin yavaş ya",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Kodlar' to 'da' at position 7",
-      "reason": "The word 'Kod' is inserted, but it is contextually related to the following word and does not change the meaning of the sentence.",
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anna' is a name, 'anla' means 'understand' in Turkish; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kodu' to 'kod' at position 3",
+      "reason": "'kodu' is the accusative form of 'kod' (code), but in this context, the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'kodlar' to 'da' at position 7",
+      "reason": "Extra 'kod' does not change the overall meaning, just a repetition.",
       "score": 2
     },
     {
-      "error": "Substitution: 'E' to 'EN' at position 11",
-      "reason": "'Kodlar' (codes) is replaced with 'da' (also/as well), which changes the grammatical structure but the overall meaning is still understandable.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'N' at position 12",
-      "reason": "The expected spelled letter 'E' is replaced by 'EN', which could be interpreted as the letters 'E' and 'N' together. This could cause confusion in a code context.",
+      "error": "Substitution: 'kodu' to 'kod' at position 18",
+      "reason": "'kodlar' means 'codes', 'da' means 'also' or 'in'; this changes the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'E' to 'EA' at position 15",
-      "reason": "The letter 'N' is omitted from the spelled code, which is significant in a context where the code must be accurate.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'A' at position 16",
-      "reason": "The expected letter 'E' is replaced by 'EA', which could be interpreted as two letters instead of one, causing a significant error in a code context.",
-      "score": 1
+      "error": "Substitution: 'yavaşça' to 'ya' at position 23",
+      "reason": "Again, 'kodu' (the code) vs 'kod' (code) is a minor grammatical difference, meaning is preserved.",
+      "score": 3
     }
   ]
 }

@@ -1,20 +1,25 @@
 {
   "gold": "Anna kredi kartımın limitini artırmak istiyorum.",
-  "predicted": "Anna kredi kartının limitini arttırmak istiyorum.",
+  "predicted": "Anna, kredi kartının limitini atmak istiyorum.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werNormalizedGold": "Anna kredi kartımın limitini artırmak istiyorum.",
-  "werNormalizedPredicted": "Anna kredi kartının limitini artırmak istiyorum.",
-  "qualityScore": 3,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "anna kredi kartimin limitini artirmak istiyorum",
+  "werNormalizedPredicted": "anna kredi kartinin limitini atmak istiyorum",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "Anna kredi kartımın limitini artırmak istiyorum.",
-  "sigWerNormalizedPredicted": "Anna kredi kartının limitini artırmak istiyorum.",
+  "sigWerNormalizedGold": "anna kredi kartimin limitini artirmak istiyorum",
+  "sigWerNormalizedPredicted": "anna kredi kartinin limitini atmak istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kartımın' to 'kartının' at position 2",
-      "reason": "The possessive pronoun changes from 'my' (kartımın) to 'your' (kartının), which alters the meaning of whose credit card is being referred to. This is a significant change in meaning.",
+      "error": "Substitution: 'kartimin' to 'kartinin' at position 2",
+      "reason": "'kartimin' (my card) vs 'kartinin' (your card) changes the ownership, but the overall intent of the sentence (requesting a limit change) is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'artirmak' to 'atmak' at position 4",
+      "reason": "'artirmak' means 'to increase', while 'atmak' means 'to throw'. This changes the meaning of the request entirely, making the sentence incoherent in context.",
       "score": 1
     }
   ]

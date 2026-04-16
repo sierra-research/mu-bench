@@ -1,25 +1,25 @@
 {
   "gold": "Sí, está bien.",
-  "predicted": "Sí, sí.",
+  "predicted": "Yes, sir.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werNormalizedGold": "Sí, está bien.",
-  "werNormalizedPredicted": "Sí, sí.",
-  "qualityScore": 2,
-  "significantWer": 0.6666666666666666,
-  "majorErrorsCount": 2,
+  "wer": 1.0,
+  "werNormalizedGold": "si esta bien",
+  "werNormalizedPredicted": "yes sir",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Sí, está bien.",
-  "sigWerNormalizedPredicted": "Sí, sí.",
+  "sigWerNormalizedGold": "si esta bien",
+  "sigWerNormalizedPredicted": "yes sir",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'está' to 'sí.' at position 1",
-      "reason": "'está bien' means 'it's fine' or 'okay', while repeating 'sí' ('yes') changes the meaning and does not convey agreement or acceptance as in the original sentence.",
-      "score": 1
+      "error": "Substitution: 'si' to 'yes' at position 0",
+      "reason": "'si' is Spanish for 'yes', so this is a correct translation, but since the rest of the sentence is not translated, the context is lost. Still, the meaning of 'si' and 'yes' is the same.",
+      "score": 3
     },
     {
-      "error": "Deletion: 'bien.' at position 2",
-      "reason": "Omitting 'bien' removes the confirmation or agreement from the sentence, significantly altering the intended meaning.",
+      "error": "Deletion: 'bien' at position 2",
+      "reason": "'esta bien' means 'it's fine' or 'okay' in Spanish, while 'sir' is a form of address in English. This substitution changes the meaning of the sentence and makes it incoherent in context.",
       "score": 1
     }
   ]

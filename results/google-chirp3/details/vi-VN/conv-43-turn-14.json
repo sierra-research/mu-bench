@@ -1,15 +1,26 @@
 {
   "gold": "Đúng rồi.",
-  "predicted": "Đúng rồi.",
+  "predicted": "10",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Đúng rồi.",
-  "werNormalizedPredicted": "Đúng rồi.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 1.0,
+  "werNormalizedGold": "dung roi",
+  "werNormalizedPredicted": "muoi",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Đúng rồi.",
-  "sigWerNormalizedPredicted": "Đúng rồi.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "dung roi",
+  "sigWerNormalizedPredicted": "muoi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dung' to 'muoi' at position 0",
+      "reason": "'dung' and 'muoi' are completely different words with unrelated meanings, which changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'roi' at position 1",
+      "reason": "Omitting 'roi' removes important information from the sentence, making the actual transcription incomplete and significantly altering the intended meaning.",
+      "score": 1
+    }
+  ]
 }

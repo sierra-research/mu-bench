@@ -3,18 +3,14 @@ import "./PaperErrorExamples.css";
 
 const EXAMPLES = [
     {
-        id: "cosmetic",
-        title: "Cosmetic Errors (High WER, Low UER)",
+        id: "surface-level",
+        title: "Surface-Level Errors (High WER, Low UER)",
         description:
-            "Filler words and minor verb-form differences inflate WER but preserve the caller\u2019s name and intent.",
-        gold: "Okay. Hopefully, I get all that information for you. Let\u2019s see here. My full name for this account would be John Brown.",
+            "Filler words and rephrasing inflate WER significantly, but the caller\u2019s intent and every key detail are preserved.",
+        gold: "I\u2019d like to dispute a charge on my account for fifty dollars.",
         predictions: {
-            Deepgram:
-                "Oh, okay. Hopefully, I got all that information for you. Let\u2019s see here. My full name for this account would be John Brown.",
-            ElevenLabs:
-                "Uh, okay. Hopefully, I get all that information for you. Let\u2019s see here. Uh, my full name for this account would be John Brown.",
-            Google: "Okay. Hopefully, I got all that information for you. Let\u2019s see here. My full name for this account would be John Brown.",
-            Azure: "Okay. Hopefully, I got all that information for you. Let\u2019s see here. My full name for this account would be John Brown.",
+            "Provider A": "Uh, so I\u2019d like to, um, dispute a charge on my account for, like, fifty dollars, yeah.",
+            "Provider B": "Oh, I\u2019d like to, uh, dispute like a charge on my account for fifty dollars I think.",
         },
         locale: "en-US",
     },
@@ -22,15 +18,13 @@ const EXAMPLES = [
         id: "significant",
         title: "Significant Errors (Low WER, High UER)",
         description:
-            "Only one or two characters differ, but they change the person\u2019s name entirely \u2014 \u7F8E\u2192\u6885, \u73B2\u2192\u94C3.",
-        gold: "\u662F\u7F8E\u70B9\u73B2 at email dot com\u3002",
+            "Only one word differs in each transcription, but the person\u2019s name is wrong \u2014 a single substitution that changes meaning entirely.",
+        gold: "The name on the account is Mason Lee.",
         predictions: {
-            Deepgram: "\u662F\u6885\u70B9\u94C3 at email dot com.",
-            ElevenLabs: "\u662F\u7F8E\u70B9\u73B2 at email dot com.",
-            Google: "\u662F\u6CA1\u70B9\u96F6 at email dot com.",
-            Azure: "She made Dian Ling at email dot com.",
+            "Provider A": "The name on the account is Jason Lee.",
+            "Provider B": "The name on the account is Mason Li.",
         },
-        locale: "zh-CN",
+        locale: "en-US",
     },
 ];
 

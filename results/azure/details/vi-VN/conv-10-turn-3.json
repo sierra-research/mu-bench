@@ -1,20 +1,25 @@
 {
   "gold": "Trang web này là nền tảng như thế nào?",
-  "predicted": "Trang web này là em đặt như thế nào?",
+  "predicted": "ASA wef na'n elen da ni na.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werNormalizedGold": "Trang web này là nền tảng như thế nào?",
-  "werNormalizedPredicted": "Trang web này là em đặt như thế nào?",
-  "qualityScore": 2,
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "trang web này là nền tảng như thế nào",
+  "werNormalizedPredicted": "asa wef nan elen da ni na",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Trang web này là nền tảng như thế nào?",
-  "sigWerNormalizedPredicted": "Trang web này là em đặt như thế nào?",
+  "sigWerNormalizedGold": "trang web này là nền tảng như thế nào",
+  "sigWerNormalizedPredicted": "asa wef nan elen da ni na",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'nền' to 'em' at position 4",
-      "reason": "'nền tảng' means 'platform' while 'em đặt' means 'I place/order', which changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "error": "Substitution: 'trang' to 'asa' at position 0",
+      "reason": "The actual transcription is in a completely different language and none of the words correspond to the expected Vietnamese words, making the sentence incoherent and the meaning completely lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'thế' at position 7",
+      "reason": "A key word is missing, further contributing to the loss of meaning and coherence.",
       "score": 1
     }
   ]

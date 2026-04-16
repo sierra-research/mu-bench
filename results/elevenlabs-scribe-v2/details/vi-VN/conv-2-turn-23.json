@@ -1,20 +1,25 @@
 {
   "gold": "Muốn. Muốn. Muốn. Vui lòng.",
-  "predicted": "À, bốn bốn bốn mười lăm",
+  "predicted": "À, ừm, ừm, ừm, ừm. Ừ, làm.",
   "unintelligible": false,
-  "wer": 1.2,
-  "werNormalizedGold": "Muốn. Muốn. Muốn. Vui lòng.",
-  "werNormalizedPredicted": "À, bốn bốn bốn mười lăm",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "muốn muốn muốn vui lòng",
+  "werNormalizedPredicted": "làm",
+  "qualityScore": null,
+  "significantWer": 0.4,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "Muốn. Muốn. Muốn. Vui lòng.",
-  "sigWerNormalizedPredicted": "À, bốn bốn bốn mười lăm",
+  "sigWerNormalizedGold": "muốn muốn muốn vui lòng",
+  "sigWerNormalizedPredicted": "làm",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Muốn.' to 'bốn' at position 0",
-      "reason": "'Muốn.' means 'want' in Vietnamese, while 'bốn' means 'four'. This is a completely different word and changes the meaning of the sentence entirely.",
+      "error": "Substitution: 'muốn' to 'làm' at position 0",
+      "reason": "'muốn' means 'want' and 'làm' means 'do/make' in Vietnamese; this changes the intent of the sentence completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'muốn' at position 1",
+      "reason": "The repeated word 'muốn' emphasizes the desire; omitting it removes this emphasis and changes the meaning.",
       "score": 1
     }
   ]

@@ -2,20 +2,20 @@
   "gold": "Tôi muốn được hỗ trợ in sao kê.",
   "predicted": "Ờ tôi muốn được hỗ trợ, sao kê?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Tôi muốn được hỗ trợ in sao kê.",
-  "werNormalizedPredicted": "Ờ, tôi muốn được hỗ trợ in sao kê.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.125,
+  "werNormalizedGold": "tôi muốn được hỗ trợ in sao kê",
+  "werNormalizedPredicted": "tôi muốn được hỗ trợ sao kê",
+  "qualityScore": null,
+  "significantWer": 0.125,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Tôi muốn được hỗ trợ in sao kê.",
-  "sigWerNormalizedPredicted": "Ờ, tôi muốn được hỗ trợ in sao kê.",
+  "sigWerNormalizedGold": "tôi muốn được hỗ trợ in sao kê",
+  "sigWerNormalizedPredicted": "tôi muốn được hỗ trợ sao kê",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "'Ờ,' is a filler word in Vietnamese, similar to 'uh' or 'um' in English. It does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Deletion: 'in' at position 5",
+      "reason": "The omission of 'in' (which means 'print' in Vietnamese) changes the request from asking for support to print a statement to just asking for support with the statement. This alters the specific action being requested, making it a significant error.",
+      "score": 1
     }
   ]
 }

@@ -1,21 +1,31 @@
 {
   "gold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
-  "predicted": "No, sí, ayúdenme, deja, encuentra un lugar para anotar.",
+  "predicted": "No, sí, ayúdame, deja, encuentra un lugar para anotar.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
-  "werNormalizedPredicted": "No. Sí, ayúdenme. Deja que encuentre un lugar para anotar.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.3,
+  "werNormalizedGold": "no si ayudeme deja que encuentre un lugar para anotar",
+  "werNormalizedPredicted": "no si ayudame deja encuentra un lugar para anotar",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
-  "sigWerNormalizedPredicted": "No. Sí, ayúdenme. Deja que encuentre un lugar para anotar.",
+  "sigWerNormalizedGold": "no si ayudeme deja que encuentre un lugar para anotar",
+  "sigWerNormalizedPredicted": "no si ayudame deja encuentra un lugar para anotar",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ayúdeme.' to 'ayúdenme.' at position 2",
-      "reason": "The difference is between 'ayúdeme' (help me, formal singular) and 'ayúdenme' (help me, plural or formal plural). The overall meaning (requesting help) is preserved, only the addressee changes from one person to multiple people. This does not derail the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'ayudeme' to 'ayudame' at position 2",
+      "reason": "'Ayudeme' (formal) and 'ayudame' (informal) both mean 'help me'; the difference is only in formality, not meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'que' to 'encuentra' at position 4",
+      "reason": "Replacing 'que' ('that') with 'encuentra' ('finds') changes the sentence structure and meaning, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'encuentre' at position 5",
+      "reason": "Omitting 'encuentre' ('find') removes the verb needed for the sentence to make sense, significantly altering the meaning.",
+      "score": 1
     }
   ]
 }

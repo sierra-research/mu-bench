@@ -1,20 +1,25 @@
 {
   "gold": "No, nada más.",
-  "predicted": "Oh, nada más.",
+  "predicted": "Oh, normas.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "No, nada más.",
-  "werNormalizedPredicted": "Oh, nada más.",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "no nada mas",
+  "werNormalizedPredicted": "oh normas",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "No, nada más.",
-  "sigWerNormalizedPredicted": "Oh, nada más.",
+  "sigWerNormalizedGold": "no nada mas",
+  "sigWerNormalizedPredicted": "oh normas",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No,' to 'Oh,' at position 0",
-      "reason": "'No' and 'Oh' have very different meanings; 'No' is a negation while 'Oh' is an exclamation, which changes the intent of the sentence significantly.",
+      "error": "Substitution: 'no' to 'oh' at position 0",
+      "reason": "'no' (Spanish for 'no') is replaced with 'oh' (an English interjection), which changes the meaning and language of the sentence, making it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mas' at position 2",
+      "reason": "'nada mas' (Spanish for 'nothing more') is replaced with 'normas' (Spanish for 'rules'), which completely changes the meaning of the sentence.",
       "score": 1
     }
   ]

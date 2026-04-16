@@ -1,15 +1,26 @@
 {
   "gold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "predicted": "Alo! Yalnız telefon numarasının sonu yine yanlış oldu, siz altmış sekiz dediniz altmış yedi olacak.",
+  "predicted": "Alo. Yalnız telefon numarasının sonu yine yanlış oldu siz. Altmış sekiz dediniz altmış yedi olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "werNormalizedPredicted": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "sigWerNormalizedPredicted": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
-  "sigWerErrors": []
+  "wer": 0.13333333333333333,
+  "werNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "werNormalizedPredicted": "alo yalnız telefon numarasının sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "sigWerNormalizedPredicted": "alo yalnız telefon numarasının sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'pardon' to 'alo' at position 0",
+      "reason": "'Pardon' is an apology or request for attention, while 'alo' is a greeting (like 'hello'). This changes the intent and meaning at the start of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'size' to 'siz' at position 8",
+      "reason": "'Size' (to you) and 'siz' (you) are very close in meaning in this context and do not change the overall meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

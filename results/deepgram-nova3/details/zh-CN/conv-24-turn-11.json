@@ -1,15 +1,26 @@
 {
   "gold": "林美 at email 点 com。",
-  "predicted": "琳美email。com",
+  "predicted": "林美email。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "林美 at email 点 com。",
-  "werNormalizedPredicted": "林美 at email 点 com。",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "林 美 at email 点 com 。",
-  "sigWerNormalizedPredicted": "林 美 at email 点 com 。",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werNormalizedGold": "林美 at email 点 com",
+  "werNormalizedPredicted": "林美 email",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "林 美 at email 点 com",
+  "sigWerNormalizedPredicted": "林 美 email",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "'at' is part of the email address format, and its omission makes the email address incomplete or unclear, which can cause misunderstanding or failure to use the email address correctly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '点' at position 4",
+      "reason": "'点' (Chinese for 'dot') is essential in the email address to indicate the dot before 'com'. Its omission makes the email address incomplete and potentially unusable.",
+      "score": 1
+    }
+  ]
 }

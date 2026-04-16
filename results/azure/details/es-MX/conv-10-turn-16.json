@@ -1,30 +1,30 @@
 {
   "gold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "predicted": "No, no, no te falta, te falta el punto arroba email.com.",
+  "predicted": "No, no te falta, te falta el punto arroba email punto com.",
   "unintelligible": false,
-  "wer": 0.8333333333333334,
-  "werNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "werNormalizedPredicted": "No, no, no te falta, te falta el punto. Arroba email punto com.",
-  "qualityScore": 2,
+  "wer": 0.4166666666666667,
+  "werNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "werNormalizedPredicted": "no no te falta te falta el punto arroba email punto com",
+  "qualityScore": null,
   "significantWer": 0.16666666666666666,
   "majorErrorsCount": 2,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "sigWerNormalizedPredicted": "No, no, no te falta, te falta el punto. Arroba email punto com.",
+  "sigWerNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "no no te falta te falta el punto arroba email punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No.' to 'falta,' at position 0",
-      "reason": "The repeated 'No, no, no' adds extra negation and repetition, which changes the tone and intent of the sentence, making it more emphatic or possibly confusing.",
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The extra 'no' introduces a negation that could confuse the meaning, but in this context, it is likely a repetition and does not significantly change the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'María' to 'Arroba' at position 5",
-      "reason": "The substitution of 'No.' with 'falta,' changes the structure and meaning of the sentence, making it less clear and potentially incoherent.",
+      "error": "Substitution: 'el' to 'te' at position 3",
+      "reason": "Changing 'el' (the) to 'te' (you) alters the grammatical structure and could confuse the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'punto' at position 6",
-      "reason": "Replacing the name 'María' with 'Arroba' (the '@' symbol) significantly alters the meaning, as a person's name is replaced by a symbol, making the email address incorrect.",
+      "error": "Deletion: 'lopez' at position 7",
+      "reason": "Omitting 'lopez' from the email address makes the email incomplete and incorrect, which is a significant error.",
       "score": 1
     }
   ]

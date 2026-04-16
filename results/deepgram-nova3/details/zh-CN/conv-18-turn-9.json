@@ -1,21 +1,26 @@
 {
   "gold": "不对，我的邮箱是林梅 at email 点 com。",
-  "predicted": "不对我的邮箱是林美email。com。",
+  "predicted": "哦对我的邮箱是林美艾特email。",
   "unintelligible": false,
-  "wer": 0.06666666666666667,
-  "werNormalizedGold": "不对，我的邮箱是林梅 at email 点 com。",
-  "werNormalizedPredicted": "不对，我的邮箱是林美 at email 点 com。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "不 对 ， 我 的 邮 箱 是 林 梅 at email 点 com 。",
-  "sigWerNormalizedPredicted": "不 对 ， 我 的 邮 箱 是 林 美 at email 点 com 。",
+  "wer": 0.23076923076923078,
+  "werNormalizedGold": "不对 我的邮箱是林梅 at email 点 com",
+  "werNormalizedPredicted": "对我的邮箱是林梅 at email",
+  "qualityScore": null,
+  "significantWer": 0.15384615384615385,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "不 对 我 的 邮 箱 是 林 梅 at email 点 com",
+  "sigWerNormalizedPredicted": "对 我 的 邮 箱 是 林 梅 at email",
   "sigWerErrors": [
     {
-      "error": "Substitution: '梅' to '美' at position 9",
-      "reason": "Both are common Chinese surnames or given names, but substituting one character for another in a name is a minor error as it does not derail the meaning of the sentence, though it is incorrect for the person's identity.",
-      "score": 2
+      "error": "Deletion: '不' at position 0",
+      "reason": "The word '不' negates the statement, so its deletion changes the meaning from 'not correct' to 'correct', which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '点' at position 11",
+      "reason": "'点' is part of the email address (meaning 'dot'), and its omission makes the email address incomplete or incorrect, which is a significant error for contact information.",
+      "score": 1
     }
   ]
 }

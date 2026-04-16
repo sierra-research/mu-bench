@@ -2,24 +2,24 @@
   "gold": "Tabii ki Anna.",
   "predicted": "Tabii dinliyorum.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Tabii ki Anna.",
-  "werNormalizedPredicted": "Tabii, dinliyorum.",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "tabii ki anna",
+  "werNormalizedPredicted": "tabii dinliyorum",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Tabii ki Anna.",
-  "sigWerNormalizedPredicted": "Tabii, dinliyorum.",
+  "sigWerNormalizedGold": "tabii ki anna",
+  "sigWerNormalizedPredicted": "tabii dinliyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tabii' to 'Tabii,' at position 0",
-      "reason": "The only difference is the comma, which is punctuation and should be ignored according to the guidance. No semantic difference.",
-      "score": 3
+      "error": "Substitution: 'ki' to 'dinliyorum' at position 1",
+      "reason": "'ki' is a conjunction meaning 'that' in Turkish, while 'dinliyorum' means 'I am listening'. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'Anna.' at position 2",
-      "reason": "The name 'Anna' is omitted entirely, which removes the addressee and changes the meaning of the sentence. This is a significant error.",
+      "error": "Deletion: 'anna' at position 2",
+      "reason": "The word 'anna' is missing from the actual transcription, which could refer to a name or important content. Its omission makes the sentence incomplete and changes the intended meaning.",
       "score": 1
     }
   ]

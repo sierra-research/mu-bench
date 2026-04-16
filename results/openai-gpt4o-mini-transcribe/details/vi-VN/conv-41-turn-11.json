@@ -1,0 +1,31 @@
+{
+  "gold": "Chưa. Số điện thoại chính xác phải là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Chưa, số điểm chính xác phải là tổng tám mươi bốn chín một, một hai ba bốn, năm sáu bảy tám.",
+  "unintelligible": false,
+  "wer": 0.13636363636363635,
+  "werNormalizedGold": "chưa số điện thoại chính xác phải là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "chưa số điểm chính xác phải là tổng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.13636363636363635,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "chưa số điện thoại chính xác phải là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "chưa số điểm chính xác phải là tổng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'điện' to 'điểm' at position 2",
+      "reason": "'điện' (electric) and 'điểm' (point/score) are completely different words and change the meaning of the phrase from 'phone number' to 'score number', which derails the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'thoại' at position 3",
+      "reason": "Omitting 'thoại' removes the word 'phone' from 'điện thoại' (phone), making the phrase incomplete and unclear, significantly affecting the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cộng' to 'tổng' at position 8",
+      "reason": "'cộng' (plus) is used for country code in phone numbers, while 'tổng' (total) is unrelated in this context, changing the meaning and making the phone number reference incorrect.",
+      "score": 1
+    }
+  ]
+}

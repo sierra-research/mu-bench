@@ -1,21 +1,31 @@
 {
   "gold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "predicted": "Tôi làm mất thẻ, tuần trước có xin cấp lại thẻ, không biết hiện tại là tình trạng thẻ như thế nào.",
+  "predicted": "Tôi làm mất thẻ tuần trước có xin cấp lại thẻ, không biết hiện tại là tình trạng thẻ như thế nào.",
   "unintelligible": false,
-  "wer": 0.045454545454545456,
-  "werNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "werNormalizedPredicted": "Tôi làm mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.13636363636363635,
+  "werNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
+  "werNormalizedPredicted": "tôi làm mất thẻ tuần trước có xin cấp lại thẻ không biết hiện tại là tình trạng thẻ như thế nào",
+  "qualityScore": null,
+  "significantWer": 0.045454545454545456,
+  "majorErrorsCount": 1,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
-  "sigWerNormalizedPredicted": "Tôi làm mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
+  "sigWerNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
+  "sigWerNormalizedPredicted": "tôi làm mất thẻ tuần trước có xin cấp lại thẻ không biết hiện tại là tình trạng thẻ như thế nào",
   "sigWerErrors": [
     {
       "error": "Substitution: 'là' to 'làm' at position 1",
-      "reason": "'là' (to be) and 'làm' (to do/make) are different verbs, but in this context, 'Tôi là mất thẻ' is a non-standard way to say 'I lost my card', while 'Tôi làm mất thẻ' is the correct and natural way in Vietnamese. The substitution actually improves the sentence and does not change the intended meaning.",
-      "score": 3
+      "reason": "'là' (to be) and 'làm' (to do) are different verbs; this changes the meaning of the sentence and makes it less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tôi' at position 6",
+      "reason": "Omitting 'tôi' (I) removes the subject from the second clause, but the sentence is still understandable in context. Minor impact on meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'là' at position 16",
+      "reason": "Inserting 'là' (to be) before 'tình trạng' is a minor grammatical error and does not change the overall meaning of the sentence.",
+      "score": 2
     }
   ]
 }

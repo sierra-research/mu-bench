@@ -1,31 +1,36 @@
 {
   "gold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "predicted": "Allah öyle değil. 2024 tekrar söylüyorum. 2024 yılı için ocak aralık aylar arasındaki hesap isterim istiyorum.",
+  "predicted": "Öyle değil. 2024 tekrar söylüyorum. 2024 yılı için ocak aralık aylar arasındaki hesap ekstra istiyorum.",
   "unintelligible": false,
-  "wer": 0.26666666666666666,
-  "werNormalizedGold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "werNormalizedPredicted": "Allah, öyle değil. 2024, tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap isterim istiyorum.",
-  "qualityScore": 2,
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "sigWerNormalizedPredicted": "Allah, öyle değil. 2024, tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap isterim istiyorum.",
+  "wer": 0.3888888888888889,
+  "werNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstresini istiyorum",
+  "werNormalizedPredicted": "oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylar arasindaki hesap ekstra istiyorum",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstresini istiyorum",
+  "sigWerNormalizedPredicted": "oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylar arasindaki hesap ekstra istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Anna,' to 'Allah,' at position 0",
-      "reason": "'Anna' is a person's name, while 'Allah' refers to God in Turkish. This substitution completely changes the subject and meaning of the sentence.",
+      "error": "Deletion: 'anna' at position 0",
+      "reason": "'anna' is a proper noun at the start of the sentence, likely the addressee or subject. Its omission removes important context and changes the meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: 'Tekrar' to 'tekrar' at position 3",
-      "reason": "The extra '2024' is a repetition and does not change the overall meaning of the sentence.",
+      "error": "Insertion: 'iki' at position 3",
+      "reason": "The extra 'iki' (two) repeats the year phrase but does not significantly change the meaning of the request.",
       "score": 2
     },
     {
-      "error": "Substitution: 'ekstremi' to 'isterim' at position 13",
-      "reason": "Difference is only in capitalization, which does not affect meaning.",
+      "error": "Substitution: 'aylari' to 'aylar' at position 13",
+      "reason": "'aylari' (the months of) vs 'aylar' (months) is a minor grammatical difference in Turkish, does not change the meaning.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'ekstra' at position 16",
+      "reason": "'ekstresini' (the statement) is the correct banking term, while 'ekstra' (extra) is a different word and changes the meaning of the request.",
+      "score": 1
     }
   ]
 }

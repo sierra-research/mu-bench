@@ -1,30 +1,25 @@
 {
   "gold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
-  "predicted": "Chu chu nó hay nó đang bị đến.",
+  "predicted": "Ờ QQ ư?",
   "unintelligible": false,
-  "wer": 0.625,
-  "werNormalizedGold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
-  "werNormalizedPredicted": "Chưa, chưa. Nó hay nó đang bị đến.",
-  "qualityScore": 2,
-  "significantWer": 0.375,
-  "majorErrorsCount": 3,
+  "wer": 1.0,
+  "werNormalizedGold": "chua chua no dang bi dung doi xiu",
+  "werNormalizedPredicted": "qq u",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Chưa, chưa. Nó đang bị đứng. Đợi xíu.",
-  "sigWerNormalizedPredicted": "Chưa, chưa. Nó hay nó đang bị đến.",
+  "sigWerNormalizedGold": "chua chua no dang bi dung doi xiu",
+  "sigWerNormalizedPredicted": "qq u",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'hay' at position 3",
-      "reason": "The word 'hay' (meaning 'or') is inserted, which introduces ambiguity and changes the structure of the sentence, potentially confusing the meaning.",
+      "error": "Substitution: 'chua' to 'qq' at position 0",
+      "reason": "'qq' is not a valid substitution for 'chua' and does not preserve the meaning; the actual transcription is incoherent compared to the expected Vietnamese phrase.",
       "score": 1
     },
     {
-      "error": "Substitution: 'đứng.' to 'đến.' at position 5",
-      "reason": "The word 'đứng' (stuck/frozen) is substituted with 'đến' (come/arrive), which changes the meaning of the sentence significantly.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'Đợi' at position 6",
-      "reason": "The omission of 'Đợi' (wait) removes an imperative instruction, which is important for the meaning of the sentence.",
+      "error": "Deletion: 'no' at position 2",
+      "reason": "The word 'no' is missing from the actual transcription, which further reduces the coherence and meaning of the sentence.",
       "score": 1
     }
   ]

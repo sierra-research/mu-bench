@@ -2,24 +2,19 @@
   "gold": "Sí, es 5 5 1 2 3 4 5 6 7 8.",
   "predicted": "Es 5512345678.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werNormalizedGold": "Sí, es 5 5 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Es 5 5 1 2 3 4 5 6 7 8.",
-  "qualityScore": 3,
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "wer": 0.08333333333333333,
+  "werNormalizedGold": "si es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Sí, es 5 5 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Es 5 5 1 2 3 4 5 6 7 8.",
+  "sigWerNormalizedGold": "si es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Sí,' to 'Es' at position 0",
-      "reason": "'Sí' means 'yes' and 'es' means 'is' in Spanish. The substitution changes an affirmation to a statement, which alters the intent of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'es' at position 1",
-      "reason": "infra_error",
+      "error": "Deletion: 'si' at position 0",
+      "reason": "The word 'si' (yes) at the beginning is omitted, but the rest of the sentence is a sequence of numbers. The omission of 'si' does not change the meaning of the main content, which is the number sequence.",
       "score": 2
     }
   ]

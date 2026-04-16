@@ -1,0 +1,31 @@
+{
+  "gold": "Tại sao không thể kết nối với tôi ngay bây giờ?",
+  "predicted": "Tại sao không thể nói tôi nghe bây giờ?",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werNormalizedGold": "tại sao không thể kết nối với tôi ngay bây giờ",
+  "werNormalizedPredicted": "tại sao không thể nói tôi nghe bây giờ",
+  "qualityScore": null,
+  "significantWer": 0.2727272727272727,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "tại sao không thể kết nối với tôi ngay bây giờ",
+  "sigWerNormalizedPredicted": "tại sao không thể nói tôi nghe bây giờ",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kết' to 'nói' at position 4",
+      "reason": "'kết nối' means 'connect', while 'nói' means 'speak'; this changes the action from connecting to speaking, altering the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nối' at position 5",
+      "reason": "Omitting 'nối' removes the word 'connect', further changing the intended meaning from 'connect' to 'speak'. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ngay' to 'nghe' at position 8",
+      "reason": "'ngay' means 'right now', while 'nghe' means 'listen' or 'hear'; this changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    }
+  ]
+}

@@ -1,26 +1,31 @@
 {
   "gold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Thiếu một một số cuối cùng phải đầy đủ là cộng 84 91 1234 5678.",
+  "predicted": "Thiếu một số cuối cùng phải đầy đủ là cộng 84 91 1234 5678.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "werNormalizedPredicted": "Thiếu một một số cuối cùng phải đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "qualityScore": 2,
-  "significantWer": 0.047619047619047616,
+  "wer": 0.13043478260869565,
+  "werNormalizedGold": "thiếu mất một số cuối cùng đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "thiếu một số cuối cùng phải đầy đủ là cộng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
+  "qualityScore": null,
+  "significantWer": 0.043478260869565216,
   "majorErrorsCount": 1,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "sigWerNormalizedPredicted": "Thiếu một một số cuối cùng phải đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "thiếu mất một số cuối cùng đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "thiếu một số cuối cùng phải đầy đủ là cộng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'mất' to 'một' at position 1",
-      "reason": "'mất' (missing) and 'một' (one) are completely different in meaning, and this substitution makes the sentence less coherent and changes the intended meaning.",
-      "score": 1
+      "error": "Deletion: 'mất' at position 1",
+      "reason": "'mất' (missing) emphasizes the absence of something, and its omission slightly changes the nuance but not the core meaning of the sentence.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'cùng,' to 'phải' at position 5",
-      "reason": "The extra 'một' (one) is a repetition that makes the sentence awkward but does not significantly change the overall meaning.",
+      "error": "Insertion: 'phải' at position 6",
+      "reason": "The insertion of 'phải' (must) adds a sense of obligation, but the overall meaning about needing the full number remains clear.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'mươi' at position 14",
+      "reason": "Adding 'mươi' changes 'chín' (nine) to 'chín mươi' (ninety), which significantly alters the number being referenced and thus the factual content of the sentence.",
+      "score": 1
     }
   ]
 }

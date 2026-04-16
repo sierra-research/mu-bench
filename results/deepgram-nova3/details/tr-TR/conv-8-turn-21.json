@@ -1,21 +1,26 @@
 {
   "gold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
-  "predicted": "Evet tekrar kodlayalım. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa, nokta, arslan, et,",
+  "predicted": "Evet. Tekrar kodlayalım. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta arslan et",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werNormalizedGold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
-  "werNormalizedPredicted": "Evet. Tekrar kodlayalım. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat niğde edirne pırasa nokta arslan at",
+  "werNormalizedPredicted": "evet tekrar kodlayalım zonguldak adana yozgat niğde edirne pırasa nokta arslan et",
+  "qualityScore": null,
+  "significantWer": 0.08333333333333333,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
-  "sigWerNormalizedPredicted": "Evet. Tekrar kodlayalım. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
+  "sigWerNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat niğde edirne pırasa nokta arslan at",
+  "sigWerNormalizedPredicted": "evet tekrar kodlayalım zonguldak adana yozgat niğde edirne pırasa nokta arslan et",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kodluyorum.' to 'kodlayalım.' at position 2",
-      "reason": "The substitution changes the verb from 'I am coding' (first person singular) to 'let's code' (first person plural imperative). While the subject and intent shift slightly, the overall meaning of the sentence remains similar in context.",
+      "error": "Substitution: 'kodluyorum' to 'kodlayalım' at position 2",
+      "reason": "The verb tense and person changes from 'I am coding' (kodluyorum) to 'let's code' (kodlayalım), which slightly changes the meaning but does not derail the overall intent of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 11",
+      "reason": "'at' and 'et' are different words in Turkish with different meanings ('horse' vs. 'meat'), which significantly changes the meaning of the word in context.",
+      "score": 1
     }
   ]
 }

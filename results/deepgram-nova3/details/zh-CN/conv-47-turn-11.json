@@ -2,24 +2,24 @@
   "gold": "峻，峻岭。",
   "predicted": "军陵。",
   "unintelligible": false,
-  "wer": 0.8,
-  "werNormalizedGold": "峻，峻岭。",
-  "werNormalizedPredicted": "军陵。",
-  "qualityScore": 1,
-  "significantWer": 0.4,
+  "wer": 1.0,
+  "werNormalizedGold": "峻 峻 岭",
+  "werNormalizedPredicted": "军 陵",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
   "majorErrorsCount": 2,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "峻 ， 峻 岭 。",
-  "sigWerNormalizedPredicted": "军 陵 。",
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "峻 峻 岭",
+  "sigWerNormalizedPredicted": "军 陵",
   "sigWerErrors": [
     {
       "error": "Substitution: '峻' to '军' at position 0",
-      "reason": "'峻' (steep, high) and '军' (army) are completely different in meaning, which changes the meaning of the sentence significantly.",
+      "reason": "'峻' and '军' are different Chinese characters with different meanings; this changes the meaning of the word and potentially the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: '峻' at position 2",
-      "reason": "'岭' (mountain ridge) and '陵' (mausoleum, hill) are different words and meanings, which alters the intended meaning of the phrase.",
+      "error": "Deletion: '岭' at position 2",
+      "reason": "'岭' is missing from the actual transcription, which omits a key part of the expected phrase and alters the meaning significantly.",
       "score": 1
     }
   ]

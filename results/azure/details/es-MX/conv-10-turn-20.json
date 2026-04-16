@@ -1,36 +1,26 @@
 {
   "gold": "No, solo una M. Una sola M. Email, con una sola M.",
-  "predicted": "No solo una e, solo una sola email con una sola m.",
+  "predicted": "No solo una m, solo una sola email con una sola m.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "No, solo una M. Una sola M. Email, con una sola M.",
-  "werNormalizedPredicted": "No, solo una e. Solo una sola email, con una sola m.",
-  "qualityScore": 2,
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 4,
+  "wer": 0.16666666666666666,
+  "werNormalizedGold": "no solo una m una sola m email con una sola m",
+  "werNormalizedPredicted": "no solo una m solo una sola email con una sola m",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "No, solo una M. Una sola M. Email, con una sola M.",
-  "sigWerNormalizedPredicted": "No, solo una e. Solo una sola email, con una sola m.",
+  "sigWerNormalizedGold": "no solo una m una sola m email con una sola m",
+  "sigWerNormalizedPredicted": "no solo una m solo una sola email con una sola m",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'M.' to 'Solo' at position 3",
-      "reason": "The letter 'e' is inserted instead of 'M', which is significant because the instruction is about the letter 'M', not 'e'. This changes the meaning.",
-      "score": 1
+      "error": "Insertion: 'solo' at position 4",
+      "reason": "The extra 'solo' is redundant but does not change the overall meaning of the sentence, which is about specifying 'una sola m' in the email.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'M.' to 'email,' at position 6",
-      "reason": "'Solo' is not equivalent to 'M.'; this disrupts the instruction about the letter 'M', making the meaning unclear.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'Email,' at position 7",
-      "reason": "Replacing 'M.' with 'email,' changes the focus from the letter to the word, which alters the meaning of the instruction.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'M.' to 'm.' at position 11",
-      "reason": "Omitting 'Email,' removes a key part of the instruction, which could confuse the listener about what the 'M' refers to.",
-      "score": 1
+      "error": "Deletion: 'm' at position 6",
+      "reason": "The missing 'm' is part of the phrase 'una sola m', but since the phrase is repeated correctly later and the meaning is still clear, this is a minor error.",
+      "score": 2
     }
   ]
 }

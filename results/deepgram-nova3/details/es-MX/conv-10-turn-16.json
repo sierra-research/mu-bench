@@ -1,26 +1,41 @@
 {
   "gold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "predicted": "No, no, te falta, te falta el punto, punto los arroba Gmail punto com.",
+  "predicted": "No, no, te falta, te falta el punto. Punto arroba Gmail punto com.",
   "unintelligible": false,
   "wer": 0.5,
-  "werNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "werNormalizedPredicted": "No, no, te falta, te falta el punto. María punto López arroba Gmail punto com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "werNormalizedPredicted": "no no te falta te falta el punto punto arroba gmail punto com",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "sigWerNormalizedPredicted": "No, no, te falta, te falta el punto. María punto López arroba Gmail punto com.",
+  "sigWerNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "no no te falta te falta el punto punto arroba gmail punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'No.' to 'falta,' at position 0",
-      "reason": "The repeated 'No,' at the beginning adds emphasis but does not change the overall meaning of the sentence.",
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The extra 'no' introduces a negation that could confuse the meaning, but the overall intent is still understandable.",
       "score": 2
     },
     {
-      "error": "Substitution: 'email' to 'Gmail' at position 9",
-      "reason": "The substitution of 'No.' to 'falta,' is a result of the repeated phrase structure, but the main instruction remains clear. The meaning is not significantly changed.",
+      "error": "Insertion: 'te' at position 3",
+      "reason": "Repeating 'te falta' is redundant but does not change the overall meaning.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'maria' at position 5",
+      "reason": "Omitting 'maria' from the email address significantly alters the intended email, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lopez' at position 7",
+      "reason": "Omitting 'lopez' from the email address significantly alters the intended email, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 9",
+      "reason": "Changing the domain from 'email' to 'gmail' results in a completely different email address, which is a significant error.",
+      "score": 1
     }
   ]
 }

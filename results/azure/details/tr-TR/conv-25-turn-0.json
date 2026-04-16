@@ -2,14 +2,25 @@
   "gold": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
   "predicted": "Anlamanım merhabalar ben sizden yardım istemiştim.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
-  "werNormalizedPredicted": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
+  "werNormalizedPredicted": "anlamanım merhabalar ben sizden yardım istemiştim",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
-  "sigWerNormalizedPredicted": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
+  "sigWerNormalizedPredicted": "anlamanım merhabalar ben sizden yardım istemiştim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlamanım' at position 0",
+      "reason": "'anlamanım' is a completely different word from 'anna', changing the intended addressee and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "Omitting 'hanım' (a polite form of address) slightly reduces politeness but does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

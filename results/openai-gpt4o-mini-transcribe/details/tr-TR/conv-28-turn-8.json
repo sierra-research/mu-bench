@@ -1,0 +1,26 @@
+{
+  "gold": "Lütfen harf harf söylediğimde araya girmezseniz çok sevinirim. Not ediyor musunuz? Not ediyor musunuz? Başlıyorum. Z tamam. Z A Y N E P nokta A R S L A N at email nokta com.",
+  "predicted": "Lütfen harf harf söylediğimde araya girmezseniz çok sevinirim. Not ediyor musunuz? Not ediyor musunuz? Başlıyorum. Z. Tamam. Z. a. y. neep. arslanet. e-mail.com.",
+  "unintelligible": false,
+  "wer": 0.20588235294117646,
+  "werNormalizedGold": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p nokta a r s l a n at email nokta com",
+  "werNormalizedPredicted": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p arslan at email nokta com",
+  "qualityScore": null,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 34,
+  "sigWerNormalizedGold": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p nokta a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nokta' to 'arslan' at position 23",
+      "reason": "'nokta' (dot/period) is a separator in an email address, while 'arslan' is part of the username. This substitution merges the separator and the username, making the email address incorrect and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 24",
+      "reason": "The missing 'a' is part of the spelled-out surname 'a r s l a n'. Omitting a letter in a spelled-out name is a significant error as it changes the spelling and could result in an incorrect or undeliverable email address.",
+      "score": 1
+    }
+  ]
+}

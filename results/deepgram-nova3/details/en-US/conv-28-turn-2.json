@@ -3,29 +3,24 @@
   "predicted": "Are you trying to get a pen? Yeah. You can't Alright. I got my pen. Ready?",
   "unintelligible": false,
   "wer": 0.4666666666666667,
-  "werNormalizedGold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "werNormalizedPredicted": "Are you trying to get a pen? Yeah. You can't. All right, I got my pen. Ready?",
-  "qualityScore": 2,
+  "werNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "werNormalizedPredicted": "are you trying to get a pen yeah you cannot alright i got my pen ready",
+  "qualityScore": null,
   "significantWer": 0.13333333333333333,
   "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
-  "sigWerNormalizedPredicted": "Are you trying to get a pen? Yeah. You can't. All right, I got my pen. Ready?",
+  "sigWerNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "sigWerNormalizedPredicted": "are you trying to get a pen yeah you cannot alright i got my pen ready",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Let' to 'Are' at position 0",
-      "reason": "The substitution changes the speaker from expressing intent ('Let me try') to asking a question ('Are you trying'), which alters the meaning and perspective of the sentence.",
+      "error": "Substitution: 'let' to 'are' at position 0",
+      "reason": "'let me try' is a statement of intent, while 'are you trying' is a question directed at someone else. This changes the speaker and the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'pen.' to 'pen?' at position 6",
-      "reason": "The insertion of 'You can't.' introduces a new statement that is not present in the expected transcript and changes the meaning by implying the action cannot be done, which derails the original intent.",
+      "error": "Substitution: 'all' to 'cannot' at position 8",
+      "reason": "The insertion of 'you' changes the subject and structure of the sentence, contributing to a shift in meaning.",
       "score": 1
-    },
-    {
-      "error": "Insertion: 'You' at position 8",
-      "reason": "infra_error",
-      "score": 2
     }
   ]
 }

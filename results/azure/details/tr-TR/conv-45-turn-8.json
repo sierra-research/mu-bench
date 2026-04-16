@@ -2,14 +2,30 @@
   "gold": "1 2 3 0 90 45 67.",
   "predicted": "1230 94? 5? 67?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "1 2 3 0 90 45 67.",
-  "werNormalizedPredicted": "1 2 3 0 90 45 67.",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "1 2 3 0 90 45 67.",
-  "sigWerNormalizedPredicted": "1 2 3 0 90 45 67.",
-  "sigWerErrors": []
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "one two three zero ninety forty five sixty seven",
+  "werNormalizedPredicted": "one thousand two hundred thirty ninety four five sixty seven",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "one two three zero ninety forty five sixty seven",
+  "sigWerNormalizedPredicted": "one thousand two hundred thirty ninety four five sixty seven",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'thousand' at position 1",
+      "reason": "'Thousand' changes the magnitude of the number sequence, making the meaning significantly different.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'three' to 'hundred' at position 2",
+      "reason": "'Two' is inserted, altering the intended number sequence and changing the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'forty' to 'four' at position 5",
+      "reason": "'Four' instead of 'forty' changes the number sequence, which is significant in this context.",
+      "score": 1
+    }
+  ]
 }

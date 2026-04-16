@@ -1,20 +1,25 @@
 {
   "gold": "Ne gibi konularda yardımcı olabilirsiniz siz başka?",
-  "predicted": "Ne gibi konularda yardımcı olabiliriz size başka?",
+  "predicted": "Ne gibi konularla yardımcı olabiliriz size başka?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "Ne gibi konularda yardımcı olabilirsiniz siz başka?",
-  "werNormalizedPredicted": "Ne gibi konularda yardımcı olabiliriz siz başka?",
-  "qualityScore": 3,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "ne gibi konularda yardimci olabilirsiniz siz baska",
+  "werNormalizedPredicted": "ne gibi konularla yardimci olabiliriz size baska",
+  "qualityScore": null,
   "significantWer": 0.14285714285714285,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Ne gibi konularda yardımcı olabilirsiniz siz başka?",
-  "sigWerNormalizedPredicted": "Ne gibi konularda yardımcı olabiliriz siz başka?",
+  "sigWerNormalizedGold": "ne gibi konularda yardimci olabilirsiniz siz baska",
+  "sigWerNormalizedPredicted": "ne gibi konularla yardimci olabiliriz size baska",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'konularda' to 'konularla' at position 2",
+      "reason": "'Konularda' means 'about the topics', while 'konularla' means 'with the topics'; the meaning is slightly changed but the overall intent is still understandable.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'olabilirsiniz' to 'olabiliriz' at position 4",
-      "reason": "The substitution changes the subject from 'you can help' (olabilirsiniz) to 'we can help' (olabiliriz), which alters the meaning of the sentence significantly.",
+      "reason": "'Olabilirsiniz' means 'you can be', while 'olabiliriz' means 'we can be'; this changes the subject from second person to first person plural, which alters the meaning significantly.",
       "score": 1
     }
   ]

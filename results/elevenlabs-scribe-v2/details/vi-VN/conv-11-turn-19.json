@@ -1,20 +1,25 @@
 {
   "gold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "predicted": "Ý là tôi muốn được, à, xin cấp một lần hai cái thẻ để một cái dự phòng",
+  "predicted": "Ý là tôi muốn được, à, xin cấp một lần hai cái thẻ ATM để một cái dự phòng",
   "unintelligible": false,
   "wer": 0.125,
-  "werNormalizedGold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "werNormalizedPredicted": "Ý là tôi muốn được, à, cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "qualityScore": 3,
+  "werNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
+  "werNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ atm để một cái dự phòng",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "sigWerNormalizedPredicted": "Ý là tôi muốn được, à, cấp một lần hai cái thẻ. Để một cái dự phòng.",
+  "sigWerNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
+  "sigWerNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ atm để một cái dự phòng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'được' to 'à,' at position 4",
-      "reason": "The word 'à,' is an interjection that does not change the meaning of the sentence; it simply adds a conversational filler.",
+      "error": "Insertion: 'xin' at position 5",
+      "reason": "'Xin' (to request) is inserted before 'cấp' (to issue), but in this context, it does not change the overall meaning of the sentence, as both 'được cấp' and 'được xin cấp' convey the intent to request issuance.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'atm' at position 11",
+      "reason": "The word 'atm' specifies the type of card being requested. While it adds detail, it does not change the overall meaning of the sentence, which is about requesting two cards, one as a backup.",
       "score": 2
     }
   ]

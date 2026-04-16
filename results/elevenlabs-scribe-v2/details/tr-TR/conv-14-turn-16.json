@@ -1,21 +1,26 @@
 {
   "gold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "predicted": "Zeynep altıncı harf P olacak. Pırasanın P'si T değil",
+  "predicted": "Zayn net altıncı harf T olacak. Pırasanın P'si T değil",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werNormalizedGold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "werNormalizedPredicted": "Zeynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "sigWerNormalizedPredicted": "Zeynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
+  "wer": 0.3,
+  "werNormalizedGold": "zaynep altinci harf p olacak pirasanin ps i t degil",
+  "werNormalizedPredicted": "zayn net altinci harf t olacak pirasanin ps i t degil",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "zaynep altinci harf p olacak pirasanin ps i t degil",
+  "sigWerNormalizedPredicted": "zayn net altinci harf t olacak pirasanin ps i t degil",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Zaynep.' to 'Zeynep.' at position 0",
-      "reason": "Minor misspelling of a proper noun, but the name is still easily recognizable and does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'zaynep' to 'net' at position 0",
+      "reason": "'zayn' is inserted before the expected name 'zaynep', which could confuse the identity being referred to and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'p' to 't' at position 3",
+      "reason": "'zaynep' is a proper noun (likely a name), and substituting it with 'net' changes the meaning entirely and makes the sentence incoherent.",
+      "score": 1
     }
   ]
 }

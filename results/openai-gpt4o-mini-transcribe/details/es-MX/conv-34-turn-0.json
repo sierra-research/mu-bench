@@ -1,0 +1,26 @@
+{
+  "gold": "Hola, Ana. ¿Cómo estás? Quería obtener una copia de mi estado de cuenta de mi tarjeta.",
+  "predicted": "Hola, Ana, ¿cómo estás? Quería obtener una copia del estado de cuenta de mi tarjeta.",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werNormalizedGold": "hola ana como estas queria obtener una copia de mi estado de cuenta de mi tarjeta",
+  "werNormalizedPredicted": "hola ana como estas queria obtener una copia del estado de cuenta de mi tarjeta",
+  "qualityScore": null,
+  "significantWer": 0.0625,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "hola ana como estas queria obtener una copia de mi estado de cuenta de mi tarjeta",
+  "sigWerNormalizedPredicted": "hola ana como estas queria obtener una copia del estado de cuenta de mi tarjeta",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'de' to 'del' at position 8",
+      "reason": "'del' is a contraction of 'de el', while 'de' means 'of'. In this context, 'de mi estado de cuenta' (of my account statement) vs 'del estado de cuenta' (of the account statement) changes the ownership from 'my' to general, but the following word 'mi' (my) is missing in the actual, so the meaning is affected.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'mi' at position 9",
+      "reason": "Omitting 'mi' (my) removes the reference to the speaker's own account statement, which changes the meaning from a personal request to a general one. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

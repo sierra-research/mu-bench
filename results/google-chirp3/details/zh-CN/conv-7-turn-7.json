@@ -2,24 +2,19 @@
   "gold": "你再说我的追踪号码。",
   "predicted": "你在说我的瑞众号码?",
   "unintelligible": false,
-  "wer": 0.3,
-  "werNormalizedGold": "你再说我的追踪号码。",
-  "werNormalizedPredicted": "你在说我的瑞众号码。",
-  "qualityScore": 2,
-  "significantWer": 0.1,
+  "wer": 0.1111111111111111,
+  "werNormalizedGold": "你 再 说 我 的 追踪 号码",
+  "werNormalizedPredicted": "你 在 说 我 的 追踪 号码",
+  "qualityScore": null,
+  "significantWer": 0.1111111111111111,
   "majorErrorsCount": 1,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "你 再 说 我 的 追 踪 号 码 。",
-  "sigWerNormalizedPredicted": "你 在 说 我 的 瑞 众 号 码 。",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "你 再 说 我 的 追 踪 号 码",
+  "sigWerNormalizedPredicted": "你 在 说 我 的 追 踪 号 码",
   "sigWerErrors": [
     {
       "error": "Substitution: '再' to '在' at position 1",
-      "reason": "'再说' means 'say again' or 'repeat', while '在说' means 'is saying' or 'currently saying'. This changes the tense and intent of the sentence, but the overall meaning is still understandable in context.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: '追' to '瑞' at position 5",
-      "reason": "'追踪号码' means 'tracking number', while '瑞众号码' is not a valid phrase and loses the intended meaning of 'tracking number', making the sentence confusing and derailing the meaning.",
+      "reason": "'再' (again) and '在' (at/in) are different words in Chinese. The substitution changes the meaning of the sentence from 'say again' to 'say at', which makes the sentence less coherent and alters the intended meaning significantly.",
       "score": 1
     }
   ]

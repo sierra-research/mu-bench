@@ -2,25 +2,25 @@
   "gold": "我想提高我的用卡额度。",
   "predicted": "我想提高我的信用额度。",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
-  "werNormalizedGold": "我想提高我的用卡额度。",
-  "werNormalizedPredicted": "我想提高我的信用额度。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "我 想 提 高 我 的 用 卡 额 度 。",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 额 度 。",
+  "wer": 0.2,
+  "werNormalizedGold": "我想提高我的用卡额度",
+  "werNormalizedPredicted": "我想提高我的信用额度",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 用 卡 额 度",
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 额 度",
   "sigWerErrors": [
     {
       "error": "Insertion: '信' at position 6",
-      "reason": "'信用额度' (credit limit) is a more specific term than '用卡额度' (card limit), but in most banking contexts, they refer to the same concept. The insertion of '信' changes the phrase to a more standard term, but does not change the overall meaning.",
-      "score": 2
+      "reason": "'用卡' (card usage) was replaced by '信用' (credit), which changes the meaning from 'card limit' to 'credit limit'. This is a significant change in the context of banking terminology.",
+      "score": 1
     },
     {
       "error": "Deletion: '卡' at position 7",
-      "reason": "Omitting '卡' changes '用卡额度' (card limit) to '信用额度' (credit limit), which is a more standard term in banking. The meaning remains the same in context, so this is a minor error.",
-      "score": 2
+      "reason": "Omitting '卡' (card) removes the reference to 'card', further shifting the meaning from 'card limit' to 'credit limit', which is a significant error in this context.",
+      "score": 1
     }
   ]
 }

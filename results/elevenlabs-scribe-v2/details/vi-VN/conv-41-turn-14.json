@@ -1,21 +1,26 @@
 {
   "gold": "Vậy muốn xem thì phải làm sao?",
-  "predicted": "Ờ, vậy em muốn xem hình phải làm sao?",
+  "predicted": "Ờ, vậy muốn xem hip làm sao?",
   "unintelligible": false,
   "wer": 0.2857142857142857,
-  "werNormalizedGold": "Vậy muốn xem thì phải làm sao?",
-  "werNormalizedPredicted": "Ờ, vậy muốn xem thì phải làm sao?",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "vậy muốn xem thì phải làm sao",
+  "werNormalizedPredicted": "vậy muốn xem hip làm sao",
+  "qualityScore": null,
+  "significantWer": 0.2857142857142857,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Vậy muốn xem thì phải làm sao?",
-  "sigWerNormalizedPredicted": "Ờ, vậy muốn xem thì phải làm sao?",
+  "sigWerNormalizedGold": "vậy muốn xem thì phải làm sao",
+  "sigWerNormalizedPredicted": "vậy muốn xem hip làm sao",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Vậy' to 'vậy' at position 0",
-      "reason": "'Ờ,' is a filler word in Vietnamese, similar to 'uh' or 'well' in English. Its presence does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'thì' to 'hip' at position 3",
+      "reason": "'hip' is a completely unrelated word to 'thì' in Vietnamese, which disrupts the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'phải' at position 4",
+      "reason": "Omitting 'phải' removes an important part of the sentence structure, making the sentence incomplete and affecting its meaning.",
+      "score": 1
     }
   ]
 }

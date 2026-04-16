@@ -2,24 +2,29 @@
   "gold": "君玲 at email dot com。",
   "predicted": "dreamingemail。com",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "君玲 at email dot com。",
-  "werNormalizedPredicted": "dreamingemail.com",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "君 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "dreamingemail.com",
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "dreaming email com",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "dreaming email com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'dreamingemail.com' at position 0",
-      "reason": "The actual transcription replaces a Chinese name with an unrelated English email address, completely changing the meaning and making the sentence incoherent.",
+      "error": "Substitution: '君' to 'dreaming' at position 0",
+      "reason": "'君' is a Chinese name, while 'dreaming' is an unrelated English word. This changes the meaning entirely and makes the email address unrecognizable.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "A part of the name is missing, which significantly alters the intended information and makes the transcription incorrect.",
+      "reason": "Omitting '玲', which is part of the name in the email address, makes the address incomplete and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Missing 'dot' in the email address format makes the email address invalid.",
       "score": 1
     }
   ]

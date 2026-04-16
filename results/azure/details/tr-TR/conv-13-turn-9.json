@@ -1,45 +1,40 @@
 {
   "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "predicted": "Yanı, pardon, e-posta adresinde bir noktayı unuttunuz. Ahmetle arslanasında. Olacak Ahmet. Arslan.",
+  "predicted": "Yanı pardon e posta adresinde bir noktayı unuttunuz. Ahmet'le arsanıza. Olacak Ahmet. Arslan.",
   "unintelligible": false,
-  "wer": 0.625,
-  "werNormalizedGold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "werNormalizedPredicted": "Yanı, pardon, e-posta adresinde bir noktayı unuttunuz. Ahmetle Arslan arasında. Olacak Ahmet. Arslan.",
-  "qualityScore": 2,
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "sigWerNormalizedPredicted": "Yanı, pardon, e-posta adresinde bir noktayı unuttunuz. Ahmetle Arslan arasında. Olacak Ahmet. Arslan.",
+  "wer": 0.47058823529411764,
+  "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "yanı pardon e posta adresinde bir noktayı unuttunuz ahmetle arsanıza olacak ahmet arslan",
+  "qualityScore": null,
+  "significantWer": 0.17647058823529413,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "yanı pardon e posta adresinde bir noktayı unuttunuz ahmetle arsanıza olacak ahmet arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Yalnız,' to 'Yanı,' at position 0",
-      "reason": "'Yalnız' means 'only' or 'just', while 'Yanı' is not a correct word in Turkish and is likely a mishearing of 'Yalnız'. This makes the sentence less clear but does not derail the overall meaning.",
+      "error": "Substitution: 'yalnız' to 'yanı' at position 0",
+      "reason": "'yalnız' means 'only' or 'just', while 'yanı' is not a word in Turkish and is likely a mishearing. This makes the sentence less clear but does not derail the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'adresimde' to 'adresinde' at position 3",
-      "reason": "'Adresimde' means 'in my address', while 'adresinde' means 'in the address'. This changes the reference from the speaker's address to a general address, which is a minor but not critical change.",
+      "error": "Substitution: 'adresimde' to 'adresinde' at position 4",
+      "reason": "'adresimde' means 'in my address', while 'adresinde' means 'in your/his/her address'. This changes the reference of whose address is being discussed, which can be significant in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetle' at position 8",
+      "reason": "'ahmet' is a name, 'ahmetle' means 'with Ahmet'. This changes the structure of the sentence but the meaning is still somewhat understandable.",
       "score": 2
     },
     {
-      "error": "Substitution: 'Ahmet' to 'Ahmetle' at position 7",
-      "reason": "'Ahmet' is a name, 'Ahmetle' means 'with Ahmet'. This changes the structure of the sentence but the meaning is still understandable in context.",
-      "score": 2
+      "error": "Deletion: 'arslan' at position 10",
+      "reason": "Omitting 'arslan' (a name) removes a key part of the email address, which is critical information.",
+      "score": 1
     },
     {
-      "error": "Deletion: 've' at position 8",
-      "reason": "Omitting 've' ('and') removes the explicit connection between 'Ahmet' and 'Arslan', but the meaning is still clear from context.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'arasında' to 'arasında.' at position 10",
-      "reason": "The only difference is punctuation, which should be ignored according to the guidance.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'Ahmet' at position 13",
-      "reason": "Omitting the repeated 'Ahmet' in the clarification about the email address could cause confusion about the structure of the address, which is significant for correct communication.",
+      "error": "Deletion: 'nokta' at position 15",
+      "reason": "Omitting 'nokta' (dot) in the context of an email address changes the address and can cause communication errors.",
       "score": 1
     }
   ]

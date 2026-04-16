@@ -1,15 +1,26 @@
 {
   "gold": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
-  "predicted": "Merhaba, kredi kartımın limitini arttırmak istiyorum da yardımcı olabilir misiniz?",
+  "predicted": "Merhaba, kredi kartının limitini arttırmak istiyorum, yardımcı olabilir misiniz?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
-  "werNormalizedPredicted": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum da yardimci olabilir misiniz",
+  "werNormalizedPredicted": "merhaba kredi kartinin limitini artirmak istiyorum yardimci olabilir misiniz",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
-  "sigWerNormalizedPredicted": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum da yardimci olabilir misiniz",
+  "sigWerNormalizedPredicted": "merhaba kredi kartinin limitini artirmak istiyorum yardimci olabilir misiniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartimin' to 'kartinin' at position 2",
+      "reason": "The possessive suffix changes from 'my' (benim) to 'his/her' (onun), which changes the meaning of whose credit card is being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'da' at position 6",
+      "reason": "'da' is a discourse particle in Turkish that adds emphasis or a softener, but its omission does not significantly change the main meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

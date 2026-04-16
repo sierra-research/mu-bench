@@ -2,20 +2,25 @@
   "gold": "Kredi limitimi ne kadara kadar artırabilirim peki?",
   "predicted": "Kredi limiti mi ne kadara kadar artırabiliyorum peki.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "Kredi limitimi ne kadara kadar artırabilirim peki?",
-  "werNormalizedPredicted": "Kredi limitimi ne kadara kadar artırabiliyorum peki?",
-  "qualityScore": 3,
+  "wer": 0.42857142857142855,
+  "werNormalizedGold": "kredi limitimi ne kadara kadar artirabilirim peki",
+  "werNormalizedPredicted": "kredi limiti mi ne kadara kadar artirabiliyorum peki",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Kredi limitimi ne kadara kadar artırabilirim peki?",
-  "sigWerNormalizedPredicted": "Kredi limitimi ne kadara kadar artırabiliyorum peki?",
+  "sigWerNormalizedGold": "kredi limitimi ne kadara kadar artirabilirim peki",
+  "sigWerNormalizedPredicted": "kredi limiti mi ne kadara kadar artirabiliyorum peki",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'artırabilirim' to 'artırabiliyorum' at position 5",
-      "reason": "The substitution changes the verb from 'I can increase' (potential) to 'I am increasing' (present continuous). The overall meaning is very similar and the intent of the sentence is preserved.",
-      "score": 3
+      "error": "Substitution: 'limitimi' to 'mi' at position 1",
+      "reason": "The model split 'limitimi' (my limit) into 'limiti mi' (is it the limit), which slightly changes the meaning but the overall intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'artirabilirim' to 'artirabiliyorum' at position 5",
+      "reason": "'artirabilirim' means 'I can increase', while 'artirabiliyorum' means 'I am increasing' or 'I am able to increase'. The tense changes but the meaning is very close in this context.",
+      "score": 2
     }
   ]
 }

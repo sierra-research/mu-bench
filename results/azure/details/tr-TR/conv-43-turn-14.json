@@ -2,30 +2,25 @@
   "gold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
   "predicted": "Hayır, tekrar baştan söylüyorum, yazar mısın+ 90 tekrar dinlerim.",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werNormalizedGold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
-  "werNormalizedPredicted": "Hayır, tekrar baştan söylüyorum, yazar mısın? Artı 90, tekrar dinlerim.",
-  "qualityScore": 2,
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "wer": 0.18181818181818182,
+  "werNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "werNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinlerim",
+  "qualityScore": null,
+  "significantWer": 0.18181818181818182,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
-  "sigWerNormalizedPredicted": "Hayır, tekrar baştan söylüyorum, yazar mısın? Artı 90, tekrar dinlerim.",
+  "sigWerNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "sigWerNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinlerim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'söylüyorum' to 'söylüyorum,' at position 3",
-      "reason": "The only difference is the comma, which is punctuation and should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'dinle' to 'dinlerim.' at position 9",
-      "reason": "'dinle' (imperative: 'listen') is substituted with 'dinlerim' (first person: 'I listen'), which changes the subject and the meaning of the command.",
+      "error": "Substitution: 'dinle' to 'dinlerim' at position 9",
+      "reason": "'dinle' is the imperative form ('listen'), while 'dinlerim' is the first person singular present tense ('I listen'). This changes the subject and the intent of the command, altering the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'beni.' at position 10",
-      "reason": "The word 'beni' ('me') is omitted, which removes the object of the command and makes the sentence less clear.",
-      "score": 2
+      "error": "Deletion: 'beni' at position 10",
+      "reason": "'beni' means 'me', and its omission removes the object of the command, making the sentence incomplete and changing the meaning significantly.",
+      "score": 1
     }
   ]
 }

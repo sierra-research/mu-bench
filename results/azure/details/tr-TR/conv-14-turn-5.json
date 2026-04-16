@@ -2,24 +2,24 @@
   "gold": "Hayır, doğru değil. Her birinde hata var.",
   "predicted": "Hayır, doğru değil dedi. Her birinde bir hata var.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "Hayır, doğru değil. Her birinde hata var.",
-  "werNormalizedPredicted": "Hayır, doğru değil dedi. Her birinde bir hata var.",
-  "qualityScore": 2,
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "hayır doğru değil her birinde hata var",
+  "werNormalizedPredicted": "hayır doğru değil dedi her birinde bir hata var",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Hayır, doğru değil. Her birinde hata var.",
-  "sigWerNormalizedPredicted": "Hayır, doğru değil dedi. Her birinde bir hata var.",
+  "sigWerNormalizedGold": "hayır doğru değil her birinde hata var",
+  "sigWerNormalizedPredicted": "hayır doğru değil dedi her birinde bir hata var",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'değil.' to 'dedi.' at position 2",
-      "reason": "The word 'dedi.' (said) is inserted, which changes the sentence from a statement ('Hayır, doğru değil.' - 'No, that's not correct.') to a reported speech ('Hayır, doğru değil dedi.' - 'He/she said no, that's not correct.'). This changes the meaning from a direct statement to indirect/reported speech, which is a significant change.",
-      "score": 1
+      "error": "Insertion: 'dedi' at position 3",
+      "reason": "The insertion of 'dedi' (said) adds a reporting verb but does not change the overall meaning of the sentence, which is about errors being present in each case.",
+      "score": 2
     },
     {
       "error": "Insertion: 'bir' at position 5",
-      "reason": "The word 'bir' (a) is inserted before 'hata var' ('there is an error'), making it 'bir hata var' ('there is an error') instead of 'hata var' ('there is error'). This does not significantly change the meaning of the sentence.",
+      "reason": "The insertion of 'bir' (a) before 'hata' (error) adds a minor detail but does not change the overall meaning of the sentence.",
       "score": 2
     }
   ]

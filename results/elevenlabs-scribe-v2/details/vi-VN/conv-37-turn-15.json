@@ -1,15 +1,61 @@
 {
   "gold": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
-  "predicted": "Thẻ đang có đang bị chậm hay là có vấn đề gì trong quá trình giao không ạ? Nếu mà có thì cho tôi xin cái phương án hỗ trợ tạm thời, ví dụ như là sử dụng thẻ ảo hoặc là các giải pháp thay thế để tôi không bị gián đoạn trong cái việc thanh toán ý",
+  "predicted": "Thẻ đang có đang bị chậm hay là có vấn đề gì trong quá trình giao không ạ? Nếu mà có thì cho tôi xin cái phương án hỗ trợ tạm thời, ví dụ như là sử dụng thẻ ảo hoặc là các giải pháp thay thế để tôi không bị gián đoạn trong cái việc thanh toán ấy.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
-  "werNormalizedPredicted": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
-  "qualityScore": 3,
+  "wer": 0.2,
+  "werNormalizedGold": "thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán",
+  "werNormalizedPredicted": "thẻ đang có đang bị chậm hay là có vấn đề gì trong quá trình giao không ạ nếu mà có thì cho tôi xin cái phương án hỗ trợ tạm thời ví dụ như là sử dụng thẻ ảo hoặc là các giải pháp thay thế để tôi không bị gián đoạn trong cái việc thanh toán ấy",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 50,
-  "sigWerNormalizedGold": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
-  "sigWerNormalizedPredicted": "Thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ? Nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "thẻ có đang bị chậm hay có vấn đề trong quá trình giao không ạ nếu có thì cho tôi xin phương án hỗ trợ tạm thời như là sử dụng thẻ ảo hay là các giải pháp thay thế để tôi không bị gián đoạn trong việc thanh toán",
+  "sigWerNormalizedPredicted": "thẻ đang có đang bị chậm hay là có vấn đề gì trong quá trình giao không ạ nếu mà có thì cho tôi xin cái phương án hỗ trợ tạm thời ví dụ như là sử dụng thẻ ảo hoặc là các giải pháp thay thế để tôi không bị gián đoạn trong cái việc thanh toán ấy",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'đang' at position 1",
+      "reason": "The extra 'đang' does not change the meaning of the sentence, as it only adds emphasis to the ongoing state. The sentence remains coherent and the intent is clear.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'là' at position 6",
+      "reason": "Adding 'là' here is a minor grammatical difference in Vietnamese and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'gì' at position 9",
+      "reason": "The addition of 'gì' (what) slightly clarifies the question but does not change the overall meaning or intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'mà' at position 16",
+      "reason": "The word 'mà' is a discourse particle in Vietnamese and its presence does not alter the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 21",
+      "reason": "The word 'cái' is a classifier and its addition is a minor grammatical difference that does not affect the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'ví' at position 27",
+      "reason": "'Ví dụ' (for example) is added to clarify the following example, which is a minor addition and does not change the intent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'hay' to 'hoặc' at position 33",
+      "reason": "'Hay' and 'hoặc' both mean 'or' in Vietnamese, and are interchangeable in this context. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'cái' at position 47",
+      "reason": "The word 'cái' is a classifier and its addition is a minor grammatical difference that does not affect the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'ấy' at position 50",
+      "reason": "'Ấy' is a discourse particle that adds emphasis but does not change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

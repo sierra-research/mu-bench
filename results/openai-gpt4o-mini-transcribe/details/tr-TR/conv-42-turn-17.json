@@ -1,0 +1,31 @@
+{
+  "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
+  "predicted": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana e-mail ile gönderebilir misin son transferim detaylarını?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "werNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi bir göz atar mısın bana email ile gönderebilir misin son transferim detaylarını",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "sigWerNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi bir göz atar mısın bana email ile gönderebilir misin son transferim detaylarını",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'gösterir' to 'atar' at position 9",
+      "reason": "'göz atar mısın' is a common phrase meaning 'can you take a look', which replaces 'gösterir misin' ('can you show me'). The insertion is part of a phrase substitution, but the overall intent (asking for help with the transfer) is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'gönderir' to 'gönderebilir' at position 13",
+      "reason": "'gösterir misin' means 'can you show me', while 'göz atar mısın' means 'can you take a look'. The meaning is similar in this context, as both are requests for assistance with the transfer.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'transferin' to 'transferim' at position 16",
+      "reason": "Adding 'ile' ('with') in 'email ile gönderebilir misin' ('can you send with email') is a minor grammatical difference and does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

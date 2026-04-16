@@ -2,24 +2,29 @@
   "gold": "1 2 3 0 90 45 67.",
   "predicted": "1,30 94? 5 67?",
   "unintelligible": false,
-  "wer": 0.8571428571428571,
-  "werNormalizedGold": "1 2 3 0 90 45 67.",
-  "werNormalizedPredicted": "1 30 94 5 67",
-  "qualityScore": 1,
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "1 2 3 0 90 45 67.",
-  "sigWerNormalizedPredicted": "1 30 94 5 67",
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "one two three zero ninety forty five sixty seven",
+  "werNormalizedPredicted": "one thirty ninety four five sixty seven",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "one two three zero ninety forty five sixty seven",
+  "sigWerNormalizedPredicted": "one thirty ninety four five sixty seven",
   "sigWerErrors": [
     {
-      "error": "Substitution: '2' to '30' at position 1",
-      "reason": "'2' and '30' are numerically very different, which significantly changes the meaning of the sequence of numbers.",
+      "error": "Substitution: 'two' to 'thirty' at position 1",
+      "reason": "'Two' and 'thirty' are completely different numbers, which significantly changes the meaning of the sequence.",
       "score": 1
     },
     {
-      "error": "Deletion: '45' at position 5",
-      "reason": "Missing '45' in a sequence of numbers is a significant omission, as it changes the sequence's meaning.",
+      "error": "Deletion: 'three' at position 2",
+      "reason": "Omitting 'three' from a sequence of numbers is a significant error as it alters the intended sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'forty' to 'four' at position 5",
+      "reason": "'Forty' and 'four' are different numbers, which changes the meaning of the number sequence.",
       "score": 1
     }
   ]

@@ -1,20 +1,25 @@
 {
   "gold": "Nhanh giúp mình nhé.",
-  "predicted": "Nhưng giúp mình nhé",
+  "predicted": "Nhưng giúp mình gì?",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Nhanh giúp mình nhé.",
-  "werNormalizedPredicted": "Nhưng giúp mình nhé.",
-  "qualityScore": 2,
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "wer": 0.5,
+  "werNormalizedGold": "nhanh giup minh nhe",
+  "werNormalizedPredicted": "nhung giup minh gi",
+  "qualityScore": null,
+  "significantWer": 0.5,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "Nhanh giúp mình nhé.",
-  "sigWerNormalizedPredicted": "Nhưng giúp mình nhé.",
+  "sigWerNormalizedGold": "nhanh giup minh nhe",
+  "sigWerNormalizedPredicted": "nhung giup minh gi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Nhanh' to 'Nhưng' at position 0",
-      "reason": "'Nhanh' means 'quickly' and 'Nhưng' means 'but' in Vietnamese; this substitution changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'nhanh' to 'nhung' at position 0",
+      "reason": "'nhanh' means 'quickly' or 'fast', while 'nhung' means 'but' in Vietnamese; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhe' to 'gi' at position 3",
+      "reason": "'nhe' is a softener or polite particle, while 'gi' means 'what'; this substitution changes the intent and meaning of the sentence.",
       "score": 1
     }
   ]

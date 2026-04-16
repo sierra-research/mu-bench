@@ -1,26 +1,26 @@
 {
   "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "predicted": "Evet, yanlış değil, şöyle Ahmet Arslan dediğiniz zaman Ahmet'le Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "Evet, değil şöyle, Ahmet Arslan dediğiniz zaman Ahmet'le Arslan arasında nokta olacak Ahmet nokta Arslan.",
   "unintelligible": false,
   "wer": 0.25,
-  "werNormalizedGold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "werNormalizedPredicted": "Evet, yanlış değil, şöyle, Ahmet Arslan dediğiniz zaman Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "qualityScore": 3,
+  "werNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "evet degil soyle ahmet arslan dediginiz zaman ahmetle arslan arasinda nokta olacak ahmet nokta arslan",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "sigWerNormalizedPredicted": "Evet, yanlış değil, şöyle, Ahmet Arslan dediğiniz zaman Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "sigWerNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "evet degil soyle ahmet arslan dediginiz zaman ahmetle arslan arasinda nokta olacak ahmet nokta arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'değil' to 'değil,' at position 1",
-      "reason": "The insertion of 'yanlış' (meaning 'wrong') changes the nuance of the sentence, but the overall meaning remains understandable and the main instruction is unaffected.",
+      "error": "Substitution: 'dediniz' to 'dediginiz' at position 5",
+      "reason": "Minor verb form difference, does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'dediniz' to 'dediğiniz' at position 5",
-      "reason": "The only difference is the addition of a comma, which is punctuation and should be ignored according to the guidance.",
-      "score": 3
+      "error": "Deletion: 've' at position 8",
+      "reason": "'ve' means 'and', 'le' is a suffix meaning 'with'; in this context, both indicate a connection between 'ahmet' and 'arslan', so the meaning is preserved.",
+      "score": 2
     }
   ]
 }

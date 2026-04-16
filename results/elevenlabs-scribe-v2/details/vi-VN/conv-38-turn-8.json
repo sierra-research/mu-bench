@@ -1,20 +1,25 @@
 {
   "gold": "Chính xác.",
-  "predicted": "Xin chào em.",
+  "predicted": "Sao?",
   "unintelligible": false,
-  "wer": 1.5,
-  "werNormalizedGold": "Chính xác.",
-  "werNormalizedPredicted": "Xin chào em.",
-  "qualityScore": 1,
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "wer": 1.0,
+  "werNormalizedGold": "chinh xac",
+  "werNormalizedPredicted": "sao",
+  "qualityScore": null,
+  "significantWer": 1.0,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "Chính xác.",
-  "sigWerNormalizedPredicted": "Xin chào em.",
+  "sigWerNormalizedGold": "chinh xac",
+  "sigWerNormalizedPredicted": "sao",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Chính' to 'chào' at position 0",
-      "reason": "The actual transcription is a greeting ('Xin chào em') instead of confirming correctness ('Chính xác'), which completely changes the meaning of the sentence.",
+      "error": "Substitution: 'chinh' to 'sao' at position 0",
+      "reason": "'chinh xac' means 'accurate' or 'correct' in Vietnamese, while 'sao' means 'star' or 'why', which is completely different and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'xac' at position 1",
+      "reason": "The word 'xac' is missing, which is essential to the meaning 'chinh xac' (accurate/correct). Its omission makes the phrase incoherent.",
       "score": 1
     }
   ]

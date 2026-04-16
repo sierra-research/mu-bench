@@ -1,26 +1,36 @@
 {
   "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "predicted": "İlk-- ikinci harf hep yanlış söy-- ikinci harfim A olacak. Z'den sonra A var, E değil. Zayneb",
+  "predicted": "İp-- ikinci harf hep yanlış ve ikinci harfim \"A\" olacak. \"Z\"den sonra \"A\" var, \"E\" değil. Zaynet",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "werNormalizedPredicted": "İlk, ikinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil. Zayneb",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.26666666666666666,
+  "werNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
+  "werNormalizedPredicted": "ip ikinci harf hep yanlis ve ikinci harfim a olacak zden sonra a var e degil zaynet",
+  "qualityScore": null,
+  "significantWer": 0.06666666666666667,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "sigWerNormalizedPredicted": "İlk, ikinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil. Zayneb",
+  "sigWerNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
+  "sigWerNormalizedPredicted": "ip ikinci harf hep yanlis ve ikinci harfim a olacak zden sonra a var e degil zaynet",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'İkinci' to 'ikinci' at position 0",
-      "reason": "The insertion of 'İlk,' (meaning 'First,') at the beginning adds extra information but does not change the meaning of the sentence, which is about the second letter. It is a minor error.",
+      "error": "Insertion: 'ip' at position 0",
+      "reason": "'ip' is an extra word at the beginning and is unrelated to the sentence, but does not derail the meaning of the rest of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'Zayneb' at position 15",
-      "reason": "The only difference is capitalization, which does not affect meaning in this context.",
+      "error": "Substitution: 'harfi' to 'harf' at position 1",
+      "reason": "'harfi' (the letter) vs 'harf' (letter) is a minor grammatical difference in Turkish, does not change the meaning.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'soyluyorsunuz' to 've' at position 4",
+      "reason": "Replacing 'soyluyorsunuz' (you are saying) with 've' (and) removes the reference to the repeated error and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'zaynet' at position 15",
+      "reason": "'zaynet' is an extra word at the end, unrelated to the sentence, and could cause confusion.",
+      "score": 2
     }
   ]
 }

@@ -1,21 +1,31 @@
 {
   "gold": "哎呀你有什么问题啊。",
-  "predicted": "哎呀，你什么问题啊？",
+  "predicted": "哎呀，你为什么这样？",
   "unintelligible": false,
-  "wer": 0.1,
-  "werNormalizedGold": "哎呀你有什么问题啊。",
-  "werNormalizedPredicted": "哎呀，你有什么问题啊。",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 啊 。",
-  "sigWerNormalizedPredicted": "哎 呀 ， 你 有 什 么 问 题 啊 。",
+  "wer": 0.4444444444444444,
+  "werNormalizedGold": "哎呀 你 有 什么 问题 啊",
+  "werNormalizedPredicted": "哎呀 你 为什么 这样",
+  "qualityScore": null,
+  "significantWer": 0.2222222222222222,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 啊",
+  "sigWerNormalizedPredicted": "哎 呀 你 为 什 么 这 样",
   "sigWerErrors": [
     {
-      "error": "Insertion: '，' at position 2",
-      "reason": "The insertion of a comma does not affect the meaning of the sentence, as punctuation differences should be ignored according to the guidance.",
-      "score": 3
+      "error": "Substitution: '有' to '为' at position 3",
+      "reason": "'有' (have) and '为' (for/why) are completely different in meaning and change the intent of the question.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '问' to '这' at position 6",
+      "reason": "'问' (question/ask) and '这' (this) are unrelated, which alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '啊' at position 8",
+      "reason": "'啊' is a sentence-final particle that adds tone but does not change the core meaning.",
+      "score": 2
     }
   ]
 }

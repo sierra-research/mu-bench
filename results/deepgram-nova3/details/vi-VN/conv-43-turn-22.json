@@ -1,20 +1,25 @@
 {
   "gold": "Tôi muốn xem lại sao kê ngay bây giờ. Tôi cần có chuyện gấp.",
-  "predicted": "Tôi muốn xem lại sao kê ngay bây giờ tôi còn có chuyện gấp",
+  "predicted": "Tôi muốn xem lại sao ok ngay bây giờ tôi còn có chân đắp",
   "unintelligible": false,
-  "wer": 0.07142857142857142,
-  "werNormalizedGold": "Tôi muốn xem lại sao kê ngay bây giờ. Tôi cần có chuyện gấp.",
-  "werNormalizedPredicted": "Tôi muốn xem lại sao kê ngay bây giờ. Tôi còn có chuyện gấp.",
-  "qualityScore": 3,
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "wer": 0.21428571428571427,
+  "werNormalizedGold": "tôi muốn xem lại sao kê ngay bây giờ tôi cần có chuyện gấp",
+  "werNormalizedPredicted": "tôi muốn xem lại sao kê ngay bây giờ tôi còn có chân đắp",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "Tôi muốn xem lại sao kê ngay bây giờ. Tôi cần có chuyện gấp.",
-  "sigWerNormalizedPredicted": "Tôi muốn xem lại sao kê ngay bây giờ. Tôi còn có chuyện gấp.",
+  "sigWerNormalizedGold": "tôi muốn xem lại sao kê ngay bây giờ tôi cần có chuyện gấp",
+  "sigWerNormalizedPredicted": "tôi muốn xem lại sao kê ngay bây giờ tôi còn có chân đắp",
   "sigWerErrors": [
     {
       "error": "Substitution: 'cần' to 'còn' at position 10",
-      "reason": "'Cần' means 'need' while 'còn' means 'still' or 'remain'; this changes the meaning of the sentence from expressing urgency/necessity to a different nuance, which can confuse the intent.",
+      "reason": "'cần' means 'need' while 'còn' means 'still' or 'remain'; this changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chuyện' to 'chân' at position 12",
+      "reason": "'chuyện' means 'matter/issue' while 'chân' means 'leg'; this substitution makes the sentence incoherent and changes the meaning completely.",
       "score": 1
     }
   ]

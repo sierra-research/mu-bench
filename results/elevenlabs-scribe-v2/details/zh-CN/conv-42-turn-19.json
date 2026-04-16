@@ -1,15 +1,21 @@
 {
   "gold": "你不听我？",
-  "predicted": "你不听我？",
+  "predicted": "你不出声吗？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你不听我？",
-  "werNormalizedPredicted": "你不听我？",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "你 不 听 我 ？",
-  "sigWerNormalizedPredicted": "你 不 听 我 ？",
-  "sigWerErrors": []
+  "wer": 0.75,
+  "werNormalizedGold": "你 不 听 我",
+  "werNormalizedPredicted": "你 不 出 声 吗",
+  "qualityScore": null,
+  "significantWer": 0.25,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "你 不 听 我",
+  "sigWerNormalizedPredicted": "你 不 出 声 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '声' at position 2",
+      "reason": "The insertion of '出' (go out/emit) changes the meaning from 'listen to me' to 'make a sound', which alters the intent of the sentence.",
+      "score": 1
+    }
+  ]
 }

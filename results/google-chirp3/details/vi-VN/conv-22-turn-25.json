@@ -1,26 +1,31 @@
 {
   "gold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
-  "predicted": "Tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
+  "predicted": "Tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in cái giấy.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werNormalizedGold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
-  "werNormalizedPredicted": "Tôi không cần nhưng mà tôi cần. Tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
-  "qualityScore": 2,
+  "wer": 0.3,
+  "werNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "werNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in cái giấy",
+  "qualityScore": null,
   "significantWer": 0.05,
   "majorErrorsCount": 1,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
-  "sigWerNormalizedPredicted": "Tôi không cần nhưng mà tôi cần. Tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
+  "sigWerNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "sigWerNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in cái giấy",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'cần' at position 2",
-      "reason": "The insertion of 'nhưng mà tôi cần' ('but I need') directly contradicts the original statement 'Tôi không cần' ('I don't need'), which changes the meaning of the sentence from not needing something to expressing a need. This is a significant error as it reverses the intent.",
+      "error": "Insertion: 'nhưng' at position 3",
+      "reason": "The insertion of 'nhưng' (but) introduces a contrast that was not present in the original sentence, potentially changing the meaning and coherence of the statement.",
       "score": 1
     },
     {
       "error": "Insertion: 'có' at position 7",
-      "reason": "The addition of 'có' in 'tôi không có biết in' is a minor grammatical difference in Vietnamese. Both 'tôi không biết in' and 'tôi không có biết in' are commonly used and mean 'I don't know how to print.' The overall meaning is unchanged.",
-      "score": 3
+      "reason": "The insertion of 'có' (have) is a minor grammatical difference in Vietnamese and does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ra' to 'cái' at position 18",
+      "reason": "Substituting 'ra' (out) with 'cái' (the) changes the meaning from 'print out paper' to 'print the paper', which is a minor difference in this context.",
+      "score": 2
     }
   ]
 }

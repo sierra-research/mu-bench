@@ -1,26 +1,26 @@
 {
   "gold": "Tôi mới nói là C N 7 5 9 mà.",
-  "predicted": "Tôi mới nói là CM 7 5 trên mà.",
+  "predicted": "Tôi mới nói 7 tôi mới nói là cn 7 5 chiếc mà.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "Tôi mới nói là C N 7 5 9 mà.",
-  "werNormalizedPredicted": "Tôi mới nói là C M 7 5 trên mà.",
-  "qualityScore": 1,
-  "significantWer": 0.2,
-  "majorErrorsCount": 2,
+  "wer": 0.5,
+  "werNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "werNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm chín chiếc mà",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tôi mới nói là C N 7 5 9 mà.",
-  "sigWerNormalizedPredicted": "Tôi mới nói là C M 7 5 trên mà.",
+  "sigWerNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "sigWerNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm chín chiếc mà",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'N' to 'M' at position 5",
-      "reason": "In a spelled-out sequence, substituting 'N' with 'M' changes the intended letter, which is a significant error as it alters the information being conveyed.",
-      "score": 1
+      "error": "Insertion: 'bảy' at position 3",
+      "reason": "The insertion of 'bảy' (seven) repeats information already present in the sentence, making the sentence redundant but not changing the overall meaning.",
+      "score": 2
     },
     {
-      "error": "Substitution: '9' to 'trên' at position 8",
-      "reason": "'9' is a digit in a sequence, while 'trên' is a Vietnamese word meaning 'above/on'. This substitution changes the meaning and disrupts the intended sequence, making it a significant error.",
-      "score": 1
+      "error": "Insertion: 'chiếc' at position 9",
+      "reason": "The insertion of 'chiếc' (a classifier for objects) at the end adds an extra word that does not change the main meaning of the sentence, but makes it slightly awkward.",
+      "score": 2
     }
   ]
 }

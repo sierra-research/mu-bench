@@ -2,19 +2,24 @@
   "gold": "Sí, muy bien, este, entonces, tú me vas a enviar un correo, ¿verdad? O un mensaje a la aplicación del banco.",
   "predicted": "Sí, muy bien. Este, entonces, tú me vas a enviar un correo, ¿verdad? Al o una un mensaje a la aplicación del banco.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "Sí, muy bien, este, entonces, tú me vas a enviar un correo, ¿verdad? O un mensaje a la aplicación del banco.",
-  "werNormalizedPredicted": "Sí, muy bien, este, entonces, tú me vas a enviar un correo, ¿verdad? Al o una un mensaje a la aplicación del banco.",
-  "qualityScore": 2,
+  "wer": 0.09523809523809523,
+  "werNormalizedGold": "si muy bien este entonces tu me vas a enviar un correo verdad o un mensaje a la aplicacion del banco",
+  "werNormalizedPredicted": "si muy bien este entonces tu me vas a enviar un correo verdad al o una un mensaje a la aplicacion del banco",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "Sí, muy bien, este, entonces, tú me vas a enviar un correo, ¿verdad? O un mensaje a la aplicación del banco.",
-  "sigWerNormalizedPredicted": "Sí, muy bien, este, entonces, tú me vas a enviar un correo, ¿verdad? Al o una un mensaje a la aplicación del banco.",
+  "sigWerNormalizedGold": "si muy bien este entonces tu me vas a enviar un correo verdad o un mensaje a la aplicacion del banco",
+  "sigWerNormalizedPredicted": "si muy bien este entonces tu me vas a enviar un correo verdad al o una un mensaje a la aplicacion del banco",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'O' to 'una' at position 13",
-      "reason": "The insertion of 'Al' (to the) before 'o un mensaje' adds a preposition that does not change the overall meaning of the sentence. The recipient still understands that a message will be sent to the bank application.",
+      "error": "Insertion: 'al' at position 13",
+      "reason": "'al' is inserted before 'o un mensaje', which could cause confusion as it is not part of the original sentence structure, but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'una' at position 14",
+      "reason": "'una' is inserted before 'un mensaje', which is redundant but does not change the overall meaning of the sentence.",
       "score": 2
     }
   ]

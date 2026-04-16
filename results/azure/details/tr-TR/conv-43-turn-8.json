@@ -1,15 +1,26 @@
 {
   "gold": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "predicted": "Söylüyorum, hecelesoyluyorumahmetarslan@email.com.",
+  "predicted": "Söylüyorum, hecele söylüyorum. Ahmet arslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "werNormalizedPredicted": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2,
+  "werNormalizedGold": "soyluyorum heceleyerek soyluyorum ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "soyluyorum hecele soyluyorum ahmet arslan at email nokta com",
+  "qualityScore": null,
+  "significantWer": 0.1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "sigWerNormalizedPredicted": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "soyluyorum heceleyerek soyluyorum ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "soyluyorum hecele soyluyorum ahmet arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'heceleyerek' to 'hecele' at position 1",
+      "reason": "'heceleyerek' means 'by spelling out' or 'syllabifying', while 'hecele' is the imperative 'spell' or 'syllabify'. The meaning is similar but not identical; the nuance of 'by spelling out' is lost, but the overall intent is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 4",
+      "reason": "Omitting 'nokta' (which means 'dot') from the email address changes the actual email address, which is a significant error as it makes the address incorrect.",
+      "score": 1
+    }
+  ]
 }

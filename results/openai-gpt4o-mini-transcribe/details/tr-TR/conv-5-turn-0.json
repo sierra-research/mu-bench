@@ -1,0 +1,31 @@
+{
+  "gold": "Merhaba, faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba?",
+  "predicted": "Merhaba, faturamın bir kopyasını ihtiyacım vardı. Yardımcı olabilir misiniz acaba?",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werNormalizedGold": "merhaba faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba",
+  "werNormalizedPredicted": "merhaba faturamın bir kopyasını ihtiyacım vardı yardımcı olabilir misiniz acaba",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "merhaba faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba",
+  "sigWerNormalizedPredicted": "merhaba faturamın bir kopyasını ihtiyacım vardı yardımcı olabilir misiniz acaba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kopyasına' to 'kopyasını' at position 3",
+      "reason": "The suffix changes the grammatical case (dative to accusative), but in this context, the meaning is still clear and the request is understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'var' to 'vardı' at position 5",
+      "reason": "Present tense ('var') vs. past tense ('vardı'), but the overall intent of needing a copy is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'da' at position 6",
+      "reason": "Omitting 'da' (meaning 'also' or 'just') slightly changes the nuance but does not affect the main meaning of the request.",
+      "score": 2
+    }
+  ]
+}

@@ -1,15 +1,26 @@
 {
   "gold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "predicted": "Anna Hanım merhabalar, ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir limite dair?",
+  "predicted": "Anlamıyorum merhabalar, ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir limite dair?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "werNormalizedPredicted": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.11764705882352941,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
+  "werNormalizedPredicted": "anlamıyorum merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
+  "qualityScore": null,
+  "significantWer": 0.058823529411764705,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "sigWerNormalizedPredicted": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
+  "sigWerNormalizedPredicted": "anlamıyorum merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlamıyorum' at position 0",
+      "reason": "'anna' is a proper noun (a name), while 'anlamıyorum' means 'I don't understand' in Turkish. This substitution completely changes the meaning of the sentence and derails the context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam') following the name. Its omission reduces the politeness and changes the intended addressee, but the main request remains understandable.",
+      "score": 2
+    }
+  ]
 }

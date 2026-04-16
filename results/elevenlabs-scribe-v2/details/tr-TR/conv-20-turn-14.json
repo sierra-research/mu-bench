@@ -1,41 +1,31 @@
 {
   "gold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "predicted": "Hayır son, son rakam yanlış oldu. Altmış yedi değil altmış sekiz olacak sonu. Altmış yedi olacak pardon. Altmış sekiz dediniz siz. Altmış yedi ile bitecek.",
+  "predicted": "Hayır son, son rakam yanlış oldu. Altmış yedi değil altmış sekiz olacak sonu. Altmış yedi olacak pardon. Altmış sekiz dediniz siz altmış yedi ile bitecek.",
   "unintelligible": false,
-  "wer": 0.5263157894736842,
-  "werNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "werNormalizedPredicted": "Hayır. Son rakam yanlış oldu. Altmış yedi değil, altmış sekiz olacak sonu. Altmış yedi olacak pardon. Altmış sekiz dediniz siz, altmış yedi ile bitecek.",
-  "qualityScore": 2,
-  "significantWer": 0.05263157894736842,
+  "wer": 0.13043478260869565,
+  "werNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "werNormalizedPredicted": "hayır son son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "qualityScore": null,
+  "significantWer": 0.043478260869565216,
   "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "sigWerNormalizedPredicted": "Hayır. Son rakam yanlış oldu. Altmış yedi değil, altmış sekiz olacak sonu. Altmış yedi olacak pardon. Altmış sekiz dediniz siz, altmış yedi ile bitecek.",
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "sigWerNormalizedPredicted": "hayır son son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
   "sigWerErrors": [
     {
-      "error": "Substitution: '60' to 'yedi' at position 5",
-      "reason": "'Altmış' is the Turkish word for '60', which is equivalent to the numeral '60' in the expected transcript. This is a numeric equivalent, so it does not change the meaning.",
-      "score": 3
+      "error": "Insertion: 'son' at position 2",
+      "reason": "Repeating 'son' does not change the meaning of the sentence, it is a minor redundancy.",
+      "score": 2
     },
     {
-      "error": "Substitution: '67' to 'sekiz' at position 7",
-      "reason": "The expected is '60' (sixty), but the actual has 'yedi' (seven) as part of 'altmış yedi' (sixty-seven). This is not a true substitution, but rather a different way of expressing the number. The meaning is preserved.",
-      "score": 3
+      "error": "Insertion: 'yedi' at position 6",
+      "reason": "The insertion of 'yedi' here is actually a result of the phrase structure changing, but it does not alter the overall meaning since the sentence is about correcting the number at the end.",
+      "score": 2
     },
     {
-      "error": "Substitution: '67' to 'yedi' at position 10",
-      "reason": "'altmış' is '60', and is part of the number 'altmış sekiz' (sixty-eight), which matches the expected '68'. This is a numeric equivalent.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: '68' to 'sekiz' at position 13",
-      "reason": "The expected is '67' (sixty-seven), but the actual says 'altmış sekiz' (sixty-eight). This changes the number and thus the meaning, as 67 and 68 are different numbers.",
+      "error": "Substitution: 'yedi' to 'sekiz' at position 8",
+      "reason": "This substitution changes the number being referenced, which is the key information being corrected in the sentence. This is a significant error as it changes the intended meaning.",
       "score": 1
-    },
-    {
-      "error": "Substitution: '67' to 'yedi' at position 16",
-      "reason": "'Altmış' is '60', and is part of 'altmış yedi' (sixty-seven), which matches the expected '67'. This is a numeric equivalent.",
-      "score": 3
     }
   ]
 }

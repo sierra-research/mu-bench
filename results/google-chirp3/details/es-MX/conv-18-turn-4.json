@@ -2,24 +2,29 @@
   "gold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
   "predicted": "No, sí, ayúdenme. Deja, encuentro un lugar para anotar.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werNormalizedGold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
-  "werNormalizedPredicted": "No. Sí, ayúdenme. Deja que encuentro un lugar para anotar.",
-  "qualityScore": 3,
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "wer": 0.3,
+  "werNormalizedGold": "no si ayudeme deja que encuentre un lugar para anotar",
+  "werNormalizedPredicted": "no si ayudenme deja encuentro un lugar para anotar",
+  "qualityScore": null,
+  "significantWer": 0.2,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
-  "sigWerNormalizedPredicted": "No. Sí, ayúdenme. Deja que encuentro un lugar para anotar.",
+  "sigWerNormalizedGold": "no si ayudeme deja que encuentre un lugar para anotar",
+  "sigWerNormalizedPredicted": "no si ayudenme deja encuentro un lugar para anotar",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ayúdeme.' to 'ayúdenme.' at position 2",
-      "reason": "The difference is between the formal singular ('ayúdeme') and the formal plural ('ayúdenme') form of address. This changes who is being addressed (one person vs. multiple people), but the overall intent of asking for help remains clear.",
-      "score": 2
+      "error": "Substitution: 'ayudeme' to 'ayudenme' at position 2",
+      "reason": "'Ayudeme' (help me) and 'ayudenme' (help me, plural) are very close in meaning; the only difference is singular vs plural, which does not significantly change the meaning in this context.",
+      "score": 3
     },
     {
-      "error": "Substitution: 'encuentre' to 'encuentro' at position 5",
-      "reason": "'Encuentre' is the subjunctive form (let/find), while 'encuentro' is the indicative (I find). This changes the meaning of the sentence from a request ('let me find') to a statement ('I find'), which alters the intent and coherence of the sentence.",
+      "error": "Substitution: 'que' to 'encuentro' at position 4",
+      "reason": "'Que' (that) is a conjunction, while 'encuentro' (I find) is a verb; this substitution changes the grammatical structure and meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'encuentre' at position 5",
+      "reason": "Omitting 'encuentre' (I find/subjunctive) removes the verb needed for the intended meaning, further derailing the sentence's coherence.",
       "score": 1
     }
   ]

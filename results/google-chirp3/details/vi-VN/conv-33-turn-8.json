@@ -2,34 +2,44 @@
   "gold": "Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ?",
   "predicted": "Bạn, tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy. Bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werNormalizedGold": "Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ?",
-  "werNormalizedPredicted": "Bạn, tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem là điều kiện với quy trình cũng như là tôi cần cung cấp giấy tờ gì để được xét duyệt nhỉ?",
-  "qualityScore": 3,
+  "wer": 0.2,
+  "werNormalizedGold": "tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ",
+  "werNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 35,
-  "sigWerNormalizedGold": "Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ?",
-  "sigWerNormalizedPredicted": "Bạn, tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem là điều kiện với quy trình cũng như là tôi cần cung cấp giấy tờ gì để được xét duyệt nhỉ?",
+  "sigWerNormalizedGold": "tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ",
+  "sigWerNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "Adding 'Bạn,' at the beginning slightly changes the tone by directly addressing the listener, but does not change the overall meaning of the sentence.",
+      "error": "Insertion: 'bạn' at position 0",
+      "reason": "'bạn' at the beginning adds a direct address but does not change the main meaning of the sentence.",
       "score": 2
     },
     {
+      "error": "Insertion: 'ấy' at position 11",
+      "reason": "'ấy' is a filler word in this context and does not affect the meaning.",
+      "score": 3
+    },
+    {
       "error": "Insertion: 'là' at position 15",
-      "reason": "Difference in capitalization only, which is not significant in Vietnamese and does not affect meaning.",
+      "reason": "The insertion of 'là' is a minor grammatical addition and does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'cả' at position 18",
+      "reason": "'cả' is an intensifier and does not change the core meaning.",
       "score": 3
     },
     {
       "error": "Insertion: 'là' at position 22",
-      "reason": "The insertion of 'là' is a minor grammatical addition that does not change the meaning of the sentence.",
-      "score": 2
+      "reason": "Another minor grammatical addition, does not affect the meaning.",
+      "score": 3
     },
     {
-      "error": "Deletion: 'các' at position 26",
-      "reason": "Again, the insertion of 'là' is a minor grammatical addition and does not affect the overall meaning.",
+      "error": "Substitution: 'các' to 'cái' at position 26",
+      "reason": "'các' (plural marker) vs 'cái' (classifier) is a minor grammatical difference, but the meaning is still clear.",
       "score": 2
     }
   ]

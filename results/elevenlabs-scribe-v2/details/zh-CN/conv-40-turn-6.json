@@ -2,14 +2,20 @@
   "gold": "你说吧。",
   "predicted": "你 sure 吧？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "你说吧。",
-  "werNormalizedPredicted": "你说吧。",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "你 说 吧 。",
-  "sigWerNormalizedPredicted": "你 说 吧 。",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werNormalizedGold": "你 说 吧",
+  "werNormalizedPredicted": "你 sure 吧",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "你 说 吧",
+  "sigWerNormalizedPredicted": "你 sure 吧",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '说' to 'sure' at position 1",
+      "reason": "The word '说' (which means 'say' in Chinese) was replaced with 'sure' (an English word with a completely different meaning). This not only changes the language but also the meaning of the sentence, making it incoherent.",
+      "score": 1
+    }
+  ]
 }

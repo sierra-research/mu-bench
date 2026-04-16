@@ -1,20 +1,25 @@
 {
   "gold": "À, đúng vậy.",
-  "predicted": "À run vai?",
+  "predicted": "Đúng rồi.",
   "unintelligible": false,
   "wer": 0.6666666666666666,
-  "werNormalizedGold": "À, đúng vậy.",
-  "werNormalizedPredicted": "À, run vai?",
-  "qualityScore": 1,
+  "werNormalizedGold": "a dung vay",
+  "werNormalizedPredicted": "dung roi",
+  "qualityScore": null,
   "significantWer": 0.3333333333333333,
   "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "À, đúng vậy.",
-  "sigWerNormalizedPredicted": "À, run vai?",
+  "sigWerNormalizedGold": "a dung vay",
+  "sigWerNormalizedPredicted": "dung roi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'đúng' to 'run' at position 1",
-      "reason": "'đúng' means 'correct' or 'right' in Vietnamese, while 'run' is an English word with a completely different meaning. This substitution makes the sentence incoherent and changes the meaning entirely.",
+      "error": "Deletion: 'a' at position 0",
+      "reason": "The word 'a' is a discourse marker in Vietnamese, often used for emphasis or politeness. Its omission does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'vay' to 'roi' at position 2",
+      "reason": "'Vay' and 'roi' are both discourse particles in Vietnamese, but they have different meanings. 'Vay' is used to confirm or clarify, while 'roi' indicates completion or affirmation. Substituting one for the other changes the nuance and meaning of the sentence.",
       "score": 1
     }
   ]

@@ -1,26 +1,26 @@
 {
   "gold": "Tôi mới nói là C N 7 5 9 mà.",
-  "predicted": "Tôi mới nói bảy s-- tôi mới nói là CN bảy năm triệu mà",
+  "predicted": "Tôi mới nói bảy-- tôi mới nói là CN bảy năm trước mà",
   "unintelligible": false,
-  "wer": 0.6,
-  "werNormalizedGold": "Tôi mới nói là C N 7 5 9 mà.",
-  "werNormalizedPredicted": "Tôi mới nói bảy s-- tôi mới nói là C N 7 5 9 mà",
-  "qualityScore": 1,
+  "wer": 0.5,
+  "werNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "werNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm trước mà",
+  "qualityScore": null,
   "significantWer": 0.1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "Tôi mới nói là C N 7 5 9 mà.",
-  "sigWerNormalizedPredicted": "Tôi mới nói bảy s-- tôi mới nói là C N 7 5 9 mà",
+  "sigWerNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "sigWerNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm trước mà",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bảy' at position 3",
-      "reason": "The word 'bảy' (seven) is inserted, which is not present in the expected sentence. This changes the meaning by adding an extra number, making the sentence confusing and potentially misleading.",
-      "score": 1
+      "reason": "The insertion of 'bảy' repeats information but does not change the overall meaning of the sentence, which is about a time reference. The sentence remains coherent.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'mà.' to 'mà' at position 9",
-      "reason": "The only difference is the missing period, which does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: 'chín' to 'trước' at position 8",
+      "reason": "Substituting 'chín' (nine) with 'trước' (before/ago) changes the specific year reference ('năm chín' = 'year nine' or 1979) to a vague time reference ('năm trước' = 'last year'), which significantly alters the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

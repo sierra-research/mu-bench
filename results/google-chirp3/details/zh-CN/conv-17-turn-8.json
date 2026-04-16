@@ -1,31 +1,26 @@
 {
   "gold": "美玲 at email dot com。",
-  "predicted": "Meiling@gmail.com",
+  "predicted": "mailing and email.com",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "美玲 at email dot com。",
-  "werNormalizedPredicted": "Meiling at email dot com",
-  "qualityScore": 1,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "美 玲 at email dot com 。",
-  "sigWerNormalizedPredicted": "Meiling at email dot com",
+  "wer": 0.5,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailing and email dot com",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing and email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '美' to 'Meiling' at position 0",
-      "reason": "'美' is a Chinese character and 'Meiling' is its romanized form; the meaning is preserved though the script is different.",
-      "score": 3
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character, likely a name, substituted with 'mailing', which is an English word with a completely different meaning. This changes the identity and meaning of the sentence.",
+      "score": 1
     },
     {
-      "error": "Deletion: '玲' at position 1",
-      "reason": "'玲' is the second character of the name '美玲' (Meiling); since 'Meiling' in the actual covers both characters, the meaning is preserved.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: '。' at position 6",
-      "reason": "Punctuation differences are ignored as per guidance.",
-      "score": 3
+      "error": "Deletion: 'at' at position 2",
+      "reason": "The word 'at' is missing, which is important for the structure of an email address. Its omission makes the email address incorrect.",
+      "score": 1
     }
   ]
 }

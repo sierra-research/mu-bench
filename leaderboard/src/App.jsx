@@ -59,10 +59,10 @@ export default function App() {
                             rel="noopener noreferrer"
                             className="navbar-link"
                         >
-                            Download
+                            Dataset
                         </a>
                         <a
-                            href="https://github.com/sierra-research/mu-bench"
+                            href="https://github.com/sierra-research/mu-bench/blob/main/submissions/SUBMITTING.md"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="navbar-link"
@@ -88,10 +88,7 @@ export default function App() {
                                     <span className="mu-symbol">&mu;</span>
                                     <span className="bench-text">-bench</span>
                                 </h1>
-                                <p className="hero-subtitle">
-                                    <span className="hero-highlight">M</span>ultilingual{" "}
-                                    <span className="hero-highlight">U</span>tterances Transcription Benchmark
-                                </p>
+                                <p className="hero-subtitle">Multilingual Utterances Transcription Benchmark</p>
                             </section>
                         </div>
                         <Leaderboard />
@@ -107,10 +104,6 @@ export default function App() {
                         For questions or feedback, contact{" "}
                         <a href="mailto:soham@sierra.ai" className="footer-email">
                             soham@sierra.ai
-                        </a>{" "}
-                        or{" "}
-                        <a href="https://github.com/sierra-research/mu-bench/issues" className="footer-email">
-                            open an issue on GitHub
                         </a>
                     </p>
                 </div>

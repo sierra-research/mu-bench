@@ -1,20 +1,25 @@
 {
   "gold": "Ahmet Arslan adım.",
-  "predicted": "Evet, Ahmet Arslan adım.",
+  "predicted": "Evet, Ahmet Arslan adım adım.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werNormalizedGold": "Ahmet Arslan adım.",
-  "werNormalizedPredicted": "Evet, Ahmet Arslan adım.",
-  "qualityScore": 3,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "ahmet arslan adim",
+  "werNormalizedPredicted": "evet ahmet arslan adim adim",
+  "qualityScore": null,
   "significantWer": 0.0,
   "majorErrorsCount": 0,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Ahmet Arslan adım.",
-  "sigWerNormalizedPredicted": "Evet, Ahmet Arslan adım.",
+  "sigWerNormalizedGold": "ahmet arslan adim",
+  "sigWerNormalizedPredicted": "evet ahmet arslan adim adim",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'Evet,' at position 0",
-      "reason": "The word 'Evet' (meaning 'Yes') is added at the beginning, but it does not change the meaning of the sentence. The main information ('Ahmet Arslan adım' - 'My name is Ahmet Arslan') remains clear and unchanged.",
+      "error": "Insertion: 'evet' at position 0",
+      "reason": "'evet' means 'yes' in Turkish and is an extra word that does not change the meaning of the sentence, just adds a polite affirmation.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'adim' at position 2",
+      "reason": "Repeating 'adim' (which means 'my name' or 'step' in Turkish) at the end does not change the meaning, just adds redundancy.",
       "score": 2
     }
   ]

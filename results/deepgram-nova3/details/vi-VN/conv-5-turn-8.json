@@ -1,21 +1,26 @@
 {
   "gold": "Ừ. Đúng rồi. Rồi, Anna ơi. Chuẩn rồi.",
-  "predicted": "",
+  "predicted": "Ừ. Đúng rồi. Đúng rồi. Rồi rồi. Rồi. Rồi. Rồi. Chọn rồi.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werNormalizedGold": "Ừ. Đúng rồi. Rồi, Anna ơi. Chuẩn rồi.",
-  "werNormalizedPredicted": "",
-  "qualityScore": 0,
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
+  "wer": 0.75,
+  "werNormalizedGold": "ừ đúng rồi rồi anna ơi chuẩn rồi",
+  "werNormalizedPredicted": "ừ đúng rồi đúng rồi rồi rồi rồi rồi chọn rồi",
+  "qualityScore": null,
+  "significantWer": 0.0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Ừ. Đúng rồi. Rồi, Anna ơi. Chuẩn rồi.",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "ừ đúng rồi rồi anna ơi chuẩn rồi",
+  "sigWerNormalizedPredicted": "ừ đúng rồi đúng rồi rồi rồi rồi rồi chọn rồi",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'Ừ.' at position 0",
-      "reason": "The entire expected transcript is missing in the actual transcription, resulting in a complete loss of meaning.",
-      "score": 1
+      "error": "Insertion: 'đúng' at position 3",
+      "reason": "The repeated 'đúng' does not change the overall meaning, as it just repeats affirmation, which is common in spoken language.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'anna' to 'rồi' at position 4",
+      "reason": "The extra 'rồi' is a repetition and does not change the meaning of the sentence, just adds redundancy.",
+      "score": 2
     }
   ]
 }

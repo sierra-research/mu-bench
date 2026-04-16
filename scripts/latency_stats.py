@@ -156,7 +156,7 @@ def process_provider(
                 if locale in scores.get("locales", {}):
                     scores["locales"][locale]["latencyP50Ms"] = data["latencyP50Ms"]
                     scores["locales"][locale]["latencyP95Ms"] = data["latencyP95Ms"]
-            if stats.get("overall") and "overall" in scores:
+            if stats.get("overall") and scores.get("overall"):
                 scores["overall"]["latencyP50Ms"] = stats["overall"]["latencyP50Ms"]
                 scores["overall"]["latencyP95Ms"] = stats["overall"]["latencyP95Ms"]
             with open(scores_path, "w", encoding="utf-8") as f:

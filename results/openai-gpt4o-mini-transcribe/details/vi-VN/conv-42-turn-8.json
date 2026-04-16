@@ -1,0 +1,26 @@
+{
+  "gold": "Số điện thoại. Số đầy đủ.",
+  "predicted": "sơ đầy đầy đủ",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "số điện thoại số đầy đủ",
+  "werNormalizedPredicted": "sơ đầy đầy đủ",
+  "qualityScore": null,
+  "significantWer": 0.3333333333333333,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "số điện thoại số đầy đủ",
+  "sigWerNormalizedPredicted": "sơ đầy đầy đủ",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'số' to 'sơ' at position 0",
+      "reason": "'số' means 'number' while 'sơ' is a different word in Vietnamese, changing the meaning of the phrase and making it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'thoại' at position 2",
+      "reason": "Omitting 'thoại' (which means 'phone' in 'số điện thoại' = 'phone number') removes the key part of the phrase, making the meaning incomplete and confusing.",
+      "score": 1
+    }
+  ]
+}

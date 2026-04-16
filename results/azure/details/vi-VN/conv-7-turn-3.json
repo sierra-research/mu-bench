@@ -2,25 +2,25 @@
   "gold": "Tôi cần nghe lại mã theo dõi.",
   "predicted": "Tôi, tôi cần nghe lại mẹ theo dõi.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werNormalizedGold": "Tôi cần nghe lại mã theo dõi.",
-  "werNormalizedPredicted": "tôi, tôi cần nghe lại mẹ theo dõi.",
-  "qualityScore": 2,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.2857142857142857,
+  "werNormalizedGold": "tôi cần nghe lại mã theo dõi",
+  "werNormalizedPredicted": "tôi tôi cần nghe lại mẹ theo dõi",
+  "qualityScore": null,
+  "significantWer": 0.14285714285714285,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "Tôi cần nghe lại mã theo dõi.",
-  "sigWerNormalizedPredicted": "tôi, tôi cần nghe lại mẹ theo dõi.",
+  "sigWerNormalizedGold": "tôi cần nghe lại mã theo dõi",
+  "sigWerNormalizedPredicted": "tôi tôi cần nghe lại mẹ theo dõi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "The extra 'tôi,' at the beginning is redundant but does not change the meaning of the sentence.",
+      "error": "Insertion: 'tôi' at position 1",
+      "reason": "Repeating 'tôi' does not change the meaning of the sentence, as it is just a redundant repetition of the subject.",
       "score": 2
     },
     {
       "error": "Substitution: 'mã' to 'mẹ' at position 4",
-      "reason": "Difference in capitalization only, which does not affect meaning.",
-      "score": 3
+      "reason": "'mã' (code) and 'mẹ' (mother) are completely different words and this substitution changes the meaning of the sentence significantly.",
+      "score": 1
     }
   ]
 }

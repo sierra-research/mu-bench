@@ -1,30 +1,20 @@
 {
   "gold": "Tôi muốn được hỗ trợ in sao kê.",
-  "predicted": "Ờ, tôi muốn được hỗ trợ sake",
+  "predicted": "Ờ. Tôi muốn được hỗ trợ sao kê",
   "unintelligible": false,
-  "wer": 0.5,
-  "werNormalizedGold": "Tôi muốn được hỗ trợ in sao kê.",
-  "werNormalizedPredicted": "Ờ, tôi muốn được hỗ trợ sao kê",
-  "qualityScore": 2,
+  "wer": 0.125,
+  "werNormalizedGold": "tôi muốn được hỗ trợ in sao kê",
+  "werNormalizedPredicted": "tôi muốn được hỗ trợ sao kê",
+  "qualityScore": null,
   "significantWer": 0.125,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "Tôi muốn được hỗ trợ in sao kê.",
-  "sigWerNormalizedPredicted": "Ờ, tôi muốn được hỗ trợ sao kê",
+  "sigWerNormalizedGold": "tôi muốn được hỗ trợ in sao kê",
+  "sigWerNormalizedPredicted": "tôi muốn được hỗ trợ sao kê",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'Tôi' to 'tôi' at position 0",
-      "reason": "'Ờ,' is a filler word in Vietnamese and does not affect the meaning of the sentence.",
-      "score": 3
-    },
-    {
       "error": "Deletion: 'in' at position 5",
-      "reason": "Difference in capitalization only, which should be ignored.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'kê.' to 'kê' at position 7",
-      "reason": "Omitting 'in' changes the request from 'print statement' to just 'statement', which alters the specific service being requested.",
+      "reason": "The omission of 'in' (which means 'print' in Vietnamese) changes the request from asking for support to print a statement to just asking for support with the statement. This alters the specific action being requested, making it a significant error.",
       "score": 1
     }
   ]

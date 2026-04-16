@@ -1,15 +1,26 @@
 {
   "gold": "Sí, está bien.",
-  "predicted": "Sí, está bien",
+  "predicted": "Sí, señor",
   "unintelligible": false,
-  "wer": 0.0,
-  "werNormalizedGold": "Sí, está bien.",
-  "werNormalizedPredicted": "Sí, está bien.",
-  "qualityScore": 3,
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "wer": 0.6666666666666666,
+  "werNormalizedGold": "si esta bien",
+  "werNormalizedPredicted": "si senor",
+  "qualityScore": null,
+  "significantWer": 0.6666666666666666,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "Sí, está bien.",
-  "sigWerNormalizedPredicted": "Sí, está bien.",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "si esta bien",
+  "sigWerNormalizedPredicted": "si senor",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'esta' to 'senor' at position 1",
+      "reason": "'esta' (is) and 'senor' (sir) are completely different words and change the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bien' at position 2",
+      "reason": "Omitting 'bien' (well) removes the confirmation or approval from the sentence, significantly altering its meaning.",
+      "score": 1
+    }
+  ]
 }
