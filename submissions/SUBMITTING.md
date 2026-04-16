@@ -84,7 +84,7 @@ The validator checks directory structure, file encoding, metadata fields, latenc
 2. **A maintainer will review and comment `/score`** to run the scoring pipeline (WER, Utterance Error Rate, Latency p95). Results are posted back as a PR comment.
 3. **On merge**, `post-merge-score.yml` re-scores from scratch, commits `results/<your-model-name>/` and `submissions/normalized/<your-model-name>/` to main, and the leaderboard redeploys with your model added.
 
-Scoring requires secrets that aren't available locally (LLM-based normalization prompts + an OpenAI key), so you can't run the full pipeline yourself — `scoring/validate.py` is the most comprehensive local check we support.
+Scoring requires an OpenAI key so you can't run the full pipeline in this repo locally — `scoring/validate.py` is the most comprehensive local check we support. The LLM prompt templates themselves are published alongside the audio on the HuggingFace dataset at [`sierra-research/mu-bench/blob/main/scoring/prompts.py`](https://huggingface.co/datasets/sierra-research/mu-bench/blob/main/scoring/prompts.py).
 
 ## How we measure
 

@@ -52,7 +52,7 @@ Audio files land in `audio/<locale>/`.
 | **UER** (Utterance Error Rate) | Lower is better | Fraction of utterances containing at least one meaning-changing error |
 | **Latency p95** | Lower is better | 95th percentile of per-request API response time (ms), measured at concurrency=1 |
 
-See [`submissions/SUBMITTING.md`](submissions/SUBMITTING.md) for how each metric is computed.
+The LLM prompt templates used for normalization and scoring are published alongside the audio on the HuggingFace dataset: [`sierra-research/mu-bench/blob/main/scoring/prompts.py`](https://huggingface.co/datasets/sierra-research/mu-bench/blob/main/scoring/prompts.py). See [`submissions/SUBMITTING.md`](submissions/SUBMITTING.md) for how each metric is computed.
 
 ## Repository Structure
 
