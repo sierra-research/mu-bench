@@ -154,8 +154,7 @@ def validate_latency(submission_dir, submitted_by_locale):
 
     if bad_values:
         issues.append(
-            f"latency.json has non-numeric values for {len(bad_values)} key(s); first few: "
-            f"{', '.join(bad_values[:5])}"
+            f"latency.json has non-numeric values for {len(bad_values)} key(s); first few: {', '.join(bad_values[:5])}"
         )
 
     if bare_keys:
