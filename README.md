@@ -11,7 +11,7 @@
 
 ## Overview
 
-This benchmark compares transcription providers on real customer service phone conversations recorded at 24kHz mono. Human annotators produce word-level ground truth transcripts for each caller utterance.
+This benchmark compares transcription providers on real customer service phone conversations recorded at 8kHz mono. Human annotators produce word-level ground truth transcripts for each caller utterance.
 
 The dataset covers 5 locales with 4,270 utterances total:
 
