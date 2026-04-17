@@ -22,7 +22,7 @@ scoring/
   validate.py                  # Submission format validation (safe to run locally)
   normalize.py                 # LLM-based transcript normalization (requires scoring/prompts.py)
   score.py                     # Metrics computation (requires scoring/prompts.py)
-  metrics.py                   # Core metric implementations (WER, quality, significant WER)
+  metrics.py                   # Core metric implementations (WER, significant WER)
   llm.py                       # OpenAI API wrapper for scoring
   update_leaderboard.py        # Regenerates results/leaderboard.json from all scores.json files
   prompts.py                   # GITIGNORED — injected from GitHub secret in CI

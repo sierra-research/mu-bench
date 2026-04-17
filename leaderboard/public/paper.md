@@ -118,7 +118,7 @@ This normalization is powered by GPT-4.1 with temperature 0. The full prompt tem
 
 #### Word Error Rate (WER) vs Utterance Error Rate (UER)
 
-Word Error Rate is the standard metric used by most ASR benchmarks. It measures the minimum edit distance between reference and hypothesis transcripts at the word level — substitutions, deletions, and insertions divided by the number of reference words. WER is computed on LLM-normalized transcripts. For CJK locales (zh-CN in this set), we insert spaces around each character before alignment, converting to approximate character-level WER. Per-locale WER is the arithmetic mean of per-utterance values.
+Word Error Rate is the standard metric used by most ASR benchmarks. It measures the minimum edit distance between reference and hypothesis transcripts at the word level — substitutions, deletions, and insertions divided by the number of reference words. WER is computed on LLM-normalized transcripts. For CJK locales (zh-CN in this set), we insert spaces around each character before alignment, computing WER at the character level (equivalent to CER). Per-locale WER is the arithmetic mean of per-utterance values.
 
 However, WER treats all errors equally — a dropped "uh" counts the same as a misheard phone number digit. This makes it an unreliable signal for production use, where what matters is whether the meaning of an utterance was preserved.
 

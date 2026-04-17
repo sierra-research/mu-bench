@@ -18,15 +18,6 @@ export const METRICS = {
         description:
             "Utterance Error Rate \u2014 fraction of utterances containing at least one meaning-changing error",
     },
-    qualityScore: {
-        key: "qualityScore",
-        label: "Quality",
-        fullLabel: "Quality Score (0-3)",
-        lowerIsBetter: false,
-        format: (v) => v.toFixed(2),
-        unit: "",
-        description: "LLM-judged overall transcription quality score (0\u20133)",
-    },
     latencyP95Ms: {
         key: "latencyP95Ms",
         label: "Latency",
@@ -39,11 +30,9 @@ export const METRICS = {
     },
 };
 
-export const SHOW_QUALITY = false;
-
 export const METRIC_KEYS = Object.keys(METRICS);
 
-export const VISIBLE_METRIC_KEYS = SHOW_QUALITY ? METRIC_KEYS : METRIC_KEYS.filter((k) => k !== "qualityScore");
+export const VISIBLE_METRIC_KEYS = METRIC_KEYS;
 
 export function getSortDirection(metricKey) {
     return METRICS[metricKey].lowerIsBetter ? "asc" : "desc";

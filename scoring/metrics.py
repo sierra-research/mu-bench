@@ -1,4 +1,4 @@
-"""Core metrics implementation: WER, Quality Score, Significant WER.
+"""Core metrics implementation: WER and Significant WER.
 
 Self-contained module adapted from the benchmark evaluation pipeline.
 Uses LLM-based normalization via OpenAI for fair transcript comparison.
@@ -12,7 +12,6 @@ from jiwer import process_words, wer
 
 from scoring.llm import (
     NORMALIZE_SCHEMA,
-    QUALITY_SCORE_SCHEMA,
     SIGNIFICANT_WER_SCHEMA,
     get_responses,
     load_responses,
@@ -23,11 +22,10 @@ def _load_prompts():
     """Lazy-load scoring prompts so modules that don't need LLM calls can import metrics freely."""
     from scoring.prompts import (
         NORMALIZE_AGAINST_GOLD_PROMPT,
-        SCORE_TRANSCRIPT_PROMPT,
         SIGNIFICANT_WORD_ERRORS_PROMPT,
     )
 
-    return NORMALIZE_AGAINST_GOLD_PROMPT, SCORE_TRANSCRIPT_PROMPT, SIGNIFICANT_WORD_ERRORS_PROMPT
+    return NORMALIZE_AGAINST_GOLD_PROMPT, SIGNIFICANT_WORD_ERRORS_PROMPT
 
 
 @dataclass
@@ -54,17 +52,6 @@ class WERResult:
 
 
 @dataclass
-class QualityResult:
-    """Result from quality scoring."""
-
-    locale: str
-    utterance_id: str
-    gold: str
-    predicted: str
-    score: Optional[int] = None  # 0-3
-
-
-@dataclass
 class SignificantWERResult:
     """Result from significant WER computation."""
 
@@ -74,7 +61,6 @@ class SignificantWERResult:
     predicted: str
     normalized_gold: Optional[str] = None
     normalized_predicted: Optional[str] = None
-    major_error_rate: Optional[float] = None
     major_errors_count: Optional[int] = None
     total_words_count: Optional[int] = None
     all_errors_with_scores: Optional[List[Dict[str, Any]]] = None
@@ -139,7 +125,7 @@ def normalize_transcript_pairs(
     or None if normalization failed.
     """
     if normalization_prompt is None:
-        normalization_prompt, _, _ = _load_prompts()
+        normalization_prompt, _ = _load_prompts()
     normalization_pairs: List[Tuple[int, str]] = []
 
     for row_idx, r in enumerate(rows):
@@ -246,59 +232,6 @@ def compute_simple_wer(rows: List[TranscriptRow]) -> List[WERResult]:
     return results
 
 
-def compute_quality(rows: List[TranscriptRow], num_workers: int = 8) -> List[QualityResult]:
-    """Compute LLM-judged quality score (0-3 scale)."""
-    _, SCORE_TRANSCRIPT_PROMPT, _ = _load_prompts()
-    pairs: List[Tuple[int, str]] = []
-    for row_idx, r in enumerate(rows):
-        if not r.gold:
-            continue
-        pairs.append(
-            (
-                row_idx,
-                SCORE_TRANSCRIPT_PROMPT.format(gold_transcript=r.gold, llm_transcript=r.predicted),
-            )
-        )
-
-    row_idx_to_score: Dict[int, Optional[int]] = {}
-    if pairs:
-        chunk_size = max(1, min(num_workers, len(pairs)))
-        for i in range(0, len(pairs), chunk_size):
-            chunk = pairs[i : i + chunk_size]
-            prompts = [p for _, p in chunk]
-            responses = get_responses(prompts, num_workers=num_workers, response_format=QUALITY_SCORE_SCHEMA)
-            loaded = load_responses(responses)
-
-            for j, (row_idx, _) in enumerate(chunk):
-                score = None
-                if is_unintelligible(rows[row_idx].gold):
-                    row_idx_to_score[row_idx] = None
-                    continue
-                if j < len(loaded) and loaded[j] is not None:
-                    resp = loaded[j]
-                    if isinstance(resp, dict) and "score" in resp:
-                        try:
-                            score = int(resp["score"])
-                        except Exception:
-                            score = None
-                row_idx_to_score[row_idx] = score
-
-            print(f"Quality scoring: {min(i + chunk_size, len(pairs))}/{len(pairs)} processed")
-
-    results = []
-    for row_idx, r in enumerate(rows):
-        results.append(
-            QualityResult(
-                locale=r.locale,
-                utterance_id=r.utterance_id,
-                gold=r.gold,
-                predicted=r.predicted,
-                score=row_idx_to_score.get(row_idx),
-            )
-        )
-    return results
-
-
 def compute_significant_wer(
     rows: List[TranscriptRow],
     num_workers: int = 8,
@@ -309,7 +242,7 @@ def compute_significant_wer(
     Word-level errors are found via jiwer alignment, then each error is scored
     by an LLM as significant (1), minor (2), or none (3).
     """
-    _, _, SIGNIFICANT_WORD_ERRORS_PROMPT = _load_prompts()
+    _, SIGNIFICANT_WORD_ERRORS_PROMPT = _load_prompts()
     # Find word-level errors and prepare scoring prompts
     error_scoring_prompts: List[Tuple[int, str, Dict[int, Dict[str, Any]]]] = []
     row_idx_to_result: Dict[int, SignificantWERResult] = {}
@@ -321,7 +254,6 @@ def compute_significant_wer(
                 utterance_id=r.utterance_id,
                 gold=r.gold,
                 predicted=r.predicted,
-                major_error_rate=None,
                 major_errors_count=0,
                 total_words_count=0,
             )
@@ -391,7 +323,6 @@ def compute_significant_wer(
                 predicted=r.predicted,
                 normalized_gold=norm_g,
                 normalized_predicted=norm_p,
-                major_error_rate=0.0,
                 major_errors_count=0,
                 total_words_count=total_words,
                 all_errors_with_scores=[],
@@ -467,7 +398,6 @@ def compute_significant_wer(
                 predicted=r.predicted,
                 normalized_gold=norm_g,
                 normalized_predicted=norm_p,
-                major_error_rate=None,
                 major_errors_count=None,
                 total_words_count=None,
                 all_errors_with_scores=None,
@@ -488,8 +418,6 @@ def compute_significant_wer(
             if err.get("score") == 1:
                 major_errors_count += 1
 
-        major_error_rate = major_errors_count / total_words if total_words > 0 else 0.0
-
         row_idx_to_result[row_idx] = SignificantWERResult(
             locale=r.locale,
             utterance_id=r.utterance_id,
@@ -497,7 +425,6 @@ def compute_significant_wer(
             predicted=r.predicted,
             normalized_gold=norm_g,
             normalized_predicted=norm_p,
-            major_error_rate=major_error_rate,
             major_errors_count=major_errors_count,
             total_words_count=total_words,
             all_errors_with_scores=all_errors_with_scores,

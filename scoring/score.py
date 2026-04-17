@@ -1,10 +1,10 @@
 """Calculate metrics for a submission by comparing against ground truth.
 
-Computes WER, quality score, and significant WER for each utterance,
-then aggregates per-locale and overall. Reads ground truth from manifest.json.
+Computes WER and significant WER for each utterance, then aggregates per-locale
+and overall. Reads ground truth from manifest.json.
 
-Quality is computed on raw submissions. WER and significant WER are computed
-on LLM-normalized submissions (run scoring.normalize first).
+WER and significant WER are computed on LLM-normalized submissions (run
+scoring.normalize first).
 
 Saves both per-utterance detail files and a scores.json with aggregated metrics.
 
@@ -12,7 +12,7 @@ Usage:
     # Step 1: Normalize submissions
     python -m scoring.normalize --submission-dir submissions/raw/deepgram-nova3
 
-    # Step 2: Score (uses raw for quality, normalized for WER/sigWER)
+    # Step 2: Score
     python -m scoring.score --submission-dir submissions/raw/deepgram-nova3
 
     # Or with simple WER (no LLM needed):
@@ -29,7 +29,6 @@ load_dotenv()
 
 from scoring.metrics import (
     TranscriptRow,
-    compute_quality,
     compute_significant_wer,
     compute_simple_wer,
     compute_wer,
@@ -123,7 +122,7 @@ def main():
         type=Path,
         default=None,
         help="LLM-normalized submission directory (default: submissions/normalized/<name>). "
-        "Used for WER and significant WER. Quality always uses raw submissions.",
+        "Used for WER and significant WER.",
     )
     parser.add_argument(
         "--manifest",
@@ -142,8 +141,8 @@ def main():
     parser.add_argument(
         "--metrics",
         nargs="+",
-        default=["wer", "quality", "significantWer"],
-        help="Metrics to compute. Options: wer, quality, significantWer",
+        default=["wer", "significantWer"],
+        help="Metrics to compute. Options: wer, significantWer",
     )
     parser.add_argument(
         "--simple-wer",
@@ -194,7 +193,7 @@ def main():
     # Load ground truth from manifest
     ground_truth = load_ground_truth_from_manifest(manifest_path)
 
-    # Load raw transcript pairs (used for quality scoring)
+    # Load raw transcript pairs (used as the master utterance index)
     print("Loading raw transcript pairs...")
     raw_pairs = load_transcript_pairs(submission_dir, ground_truth)
     print(f"Loaded {len(raw_pairs)} raw utterance pairs")
@@ -226,8 +225,6 @@ def main():
     if not pairs:
         print("No matching utterances found")
         return
-
-    all_raw_rows = [row for _, _, row in pairs]
 
     # Build normalized rows aligned to raw pairs by utterance_id
     normalized_by_key = {(loc, uid): row for loc, uid, row in normalized_pairs}
@@ -262,7 +259,6 @@ def main():
                 "wer",
                 "werNormalizedGold",
                 "werNormalizedPredicted",
-                "qualityScore",
                 "significantWer",
                 "majorErrorsCount",
                 "totalWordsCount",
@@ -284,8 +280,6 @@ def main():
                 locale_stats[locale] = {
                     "wer_sum": 0.0,
                     "wer_count": 0,
-                    "quality_sum": 0,
-                    "quality_count": 0,
                     "sig_wer_has_error": 0,
                     "sig_wer_total": 0,
                     "utterance_count": 0,
@@ -298,9 +292,6 @@ def main():
             if detail["wer"] is not None:
                 stats["wer_sum"] += detail["wer"]
                 stats["wer_count"] += 1
-            if detail["qualityScore"] is not None:
-                stats["quality_sum"] += detail["qualityScore"]
-                stats["quality_count"] += 1
             if detail["significantWer"] is not None:
                 stats["sig_wer_total"] += 1
                 if detail.get("majorErrorsCount") and detail["majorErrorsCount"] > 0:
@@ -336,8 +327,11 @@ def main():
                 num_workers=args.num_workers,
             )
             for idx, i in enumerate(needs_sig_wer):
-                computed_values[i]["significantWer"] = sig_wer_results[idx].major_error_rate
-                computed_values[i]["majorErrorsCount"] = sig_wer_results[idx].major_errors_count
+                count = sig_wer_results[idx].major_errors_count
+                computed_values[i]["significantWer"] = (
+                    1 if (count is not None and count > 0) else (0 if count is not None else None)
+                )
+                computed_values[i]["majorErrorsCount"] = count
                 computed_values[i]["totalWordsCount"] = sig_wer_results[idx].total_words_count
                 computed_values[i]["sigWerNormalizedGold"] = sig_wer_results[idx].normalized_gold
                 computed_values[i]["sigWerNormalizedPredicted"] = sig_wer_results[idx].normalized_predicted
@@ -380,30 +374,6 @@ def main():
         print("Flushing WER results to disk...")
         flush_details_to_disk()
 
-    # --- Quality ---
-    if "quality" in metrics_to_run:
-        existing_details = load_all_existing_details()
-        needs_quality = [
-            i
-            for i in range(len(pairs))
-            if existing_details[i] is None or existing_details[i].get("qualityScore") is None
-        ]
-        for i in range(len(pairs)):
-            if i not in set(needs_quality) and existing_details[i] is not None:
-                computed_values[i]["qualityScore"] = existing_details[i].get("qualityScore")
-
-        if not needs_quality:
-            print(f"Quality: all {len(pairs)} utterances already computed, skipping")
-        else:
-            print(f"Computing quality scores for {len(needs_quality)} utterances (raw transcripts)...")
-            rows_to_compute = [all_raw_rows[i] for i in needs_quality]
-            quality_results = compute_quality(rows_to_compute, num_workers=args.num_workers)
-            for idx, i in enumerate(needs_quality):
-                computed_values[i]["qualityScore"] = quality_results[idx].score
-
-        print("Flushing quality results to disk...")
-        flush_details_to_disk()
-
     # Final flush to collect locale stats for summary
     locale_stats = flush_details_to_disk()
 
@@ -413,7 +383,6 @@ def main():
 
     summary_locales = {}
     total_wer_sum, total_wer_count = 0.0, 0
-    total_quality_sum, total_quality_count = 0, 0
     total_sig_wer_has_error, total_sig_wer_total = 0, 0
     total_utterances, total_unintelligible = 0, 0
 
@@ -423,15 +392,12 @@ def main():
         s = locale_stats[locale]
         summary_locales[locale] = {
             "wer": avg(s["wer_sum"], s["wer_count"]),
-            "qualityScore": avg(s["quality_sum"], s["quality_count"]),
             "significantWer": avg(s["sig_wer_has_error"], s["sig_wer_total"]),
             "utteranceCount": s["utterance_count"],
             "unintelligibleCount": s["unintelligible_count"],
         }
         total_wer_sum += s["wer_sum"]
         total_wer_count += s["wer_count"]
-        total_quality_sum += s["quality_sum"]
-        total_quality_count += s["quality_count"]
         total_sig_wer_has_error += s["sig_wer_has_error"]
         total_sig_wer_total += s["sig_wer_total"]
         total_utterances += s["utterance_count"]
@@ -442,7 +408,6 @@ def main():
     if all_locales_present:
         overall = {
             "wer": avg(total_wer_sum, total_wer_count),
-            "qualityScore": avg(total_quality_sum, total_quality_count),
             "significantWer": avg(total_sig_wer_has_error, total_sig_wer_total),
             "utteranceCount": total_utterances,
             "unintelligibleCount": total_unintelligible,
@@ -469,12 +434,12 @@ def main():
     print(f"\nMetrics written to: {metrics_dir}")
     for locale, scores in summary_locales.items():
         print(
-            f"  {locale}: WER={scores['wer']}, Quality={scores['qualityScore']}, "
+            f"  {locale}: WER={scores['wer']}, "
             f"Sig.WER={scores['significantWer']} ({scores['utteranceCount']} utterances)"
         )
     if overall:
         print(
-            f"  Overall: WER={overall['wer']}, Quality={overall['qualityScore']}, "
+            f"  Overall: WER={overall['wer']}, "
             f"Sig.WER={overall['significantWer']} ({overall['utteranceCount']} utterances)"
         )
 
