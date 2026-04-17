@@ -77,31 +77,15 @@ SIGNIFICANT_WER_SCHEMA = {
 }
 
 
-_api_keys = None
-_key_counter = 0
-_key_lock = __import__("threading").Lock()
-
-
-def _next_api_key() -> str:
-    """Round-robin across available OpenAI API keys for better rate-limit headroom."""
-    global _api_keys, _key_counter
-    if _api_keys is None:
-        _api_keys = [k for var in ("OPENAI_API_KEY", "OPENAI_EVAL_GLOBAL_API_KEY") if (k := os.environ.get(var))]
-        if not _api_keys:
-            raise ValueError("OPENAI_API_KEY (or OPENAI_EVAL_GLOBAL_API_KEY) environment variable is not set")
-    with _key_lock:
-        key = _api_keys[_key_counter % len(_api_keys)]
-        _key_counter += 1
-    return key
-
-
 def call_llm(prompt: str, response_format: dict | None = None) -> str:
     """Call the OpenAI Chat Completions API with retries.
 
     Retries on 429 (rate limit) and 5xx errors with exponential backoff.
     Logs response body on non-retryable failures for debugging.
     """
-    api_key = _next_api_key()
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY environment variable is not set")
 
     url = "https://api.openai.com/v1/chat/completions"
     headers = {
