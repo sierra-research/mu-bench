@@ -354,6 +354,7 @@ def main():
     # --- WER ---
     if "wer" in metrics_to_run:
         existing_details = load_all_existing_details()
+
         # Treat missing edits/ref_words components as needs-recompute so old
         # detail files from the per-utterance-mean era get backfilled rather
         # than approximated.
@@ -438,7 +439,9 @@ def main():
             summary_locales[loc]["wer"] for loc in TARGET_LOCALES if summary_locales[loc]["wer"] is not None
         ]
         overall_wer = (
-            round(sum(per_locale_wers) / len(per_locale_wers), 4) if len(per_locale_wers) == len(TARGET_LOCALES) else None
+            round(sum(per_locale_wers) / len(per_locale_wers), 4)
+            if len(per_locale_wers) == len(TARGET_LOCALES)
+            else None
         )
         overall = {
             "wer": overall_wer,

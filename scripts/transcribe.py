@@ -19,6 +19,7 @@ import io
 import json
 import os
 import time
+import uuid
 import wave
 from pathlib import Path
 
@@ -138,6 +139,72 @@ RETRY_BACKOFF = 2.0
 RETRYABLE_STATUSES = {429, 500, 502, 503, 529}
 
 
+# ---------------------------------------------------------------------------
+# Persistent client caches
+#
+# Google and OpenAI SDKs both expect clients to be constructed once and reused
+# across requests. Fresh-per-request construction wastes auth (OAuth token
+# mint for Google, httpx pool init for OpenAI), TLS handshakes, and gRPC
+# channel setup. Production code always reuses. The caches below hold one
+# client per run and are reset at the start of each run_transcription call.
+#
+# Deepgram, ElevenLabs, and Azure use plain HTTP with static key-in-header
+# auth, so the shared aiohttp.ClientSession created in run_transcription is
+# already the right pattern — no additional per-provider caching needed.
+# ---------------------------------------------------------------------------
+
+_google_client_cache: dict = {}
+_openai_client_cache: dict = {}
+
+
+def _reset_clients() -> None:
+    """Clear persistent-client caches. Called at the start of run_transcription."""
+    _google_client_cache.clear()
+    _openai_client_cache.clear()
+
+
+def _get_google_client():
+    """Return a persistent SpeechAsyncClient, creating it on first call.
+
+    Also caches project_id and region so callers don't re-parse credentials.
+    GOOGLE_SPEECH_REGION defaults to "us" (multi-region endpoint). Set to a
+    specific region like "us-central1" for strict reproducibility.
+    """
+    if "client" in _google_client_cache:
+        return _google_client_cache
+
+    from google.cloud.speech_v2 import SpeechAsyncClient
+
+    creds_json = os.environ["GOOGLE_SPEECH_CREDENTIALS"]
+    account_dict = json.loads(creds_json)
+    region = os.environ.get("GOOGLE_SPEECH_REGION", "us")
+
+    client = SpeechAsyncClient.from_service_account_info(
+        account_dict,
+        client_options={"api_endpoint": f"{region}-speech.googleapis.com"},
+    )
+    _google_client_cache["client"] = client
+    _google_client_cache["project_id"] = account_dict["project_id"]
+    _google_client_cache["region"] = region
+    return _google_client_cache
+
+
+def _get_openai_client():
+    """Return a persistent AsyncOpenAI client, creating it on first call.
+
+    The OpenAI SDK explicitly recommends reusing a single client instance
+    so its internal httpx connection pool can keep TLS connections warm.
+    """
+    if "client" in _openai_client_cache:
+        return _openai_client_cache["client"]
+
+    from openai import AsyncOpenAI
+
+    client = AsyncOpenAI()
+    _openai_client_cache["client"] = client
+    return client
+
+
 async def _post_with_retry(session: aiohttp.ClientSession, url: str, headers: dict, data, provider: str):
     """POST with exponential backoff on rate-limit and server errors."""
     for attempt in range(MAX_RETRIES):
@@ -166,19 +233,17 @@ GOOGLE_LOCALE_MAP = {"zh-CN": "cmn-Hans-CN", "zh-HK": "yue-Hant-HK"}
 
 
 async def transcribe_google(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from google.cloud.speech_v2 import SpeechAsyncClient
+    # Session is unused: Google Speech v2 uses gRPC via SpeechAsyncClient, not HTTP.
+    # The client is persistent (see _get_google_client) so auth, gRPC channel, and
+    # TLS handshake are paid once per run rather than per request.
     from google.cloud.speech_v2.types import cloud_speech
 
-    creds_json = os.environ["GOOGLE_SPEECH_CREDENTIALS"]
-    account_dict = json.loads(creds_json)
-    project_id = account_dict["project_id"]
-    region = os.environ.get("GOOGLE_SPEECH_REGION", "us")
+    cache = _get_google_client()
+    client = cache["client"]
+    project_id = cache["project_id"]
+    region = cache["region"]
     google_locale = GOOGLE_LOCALE_MAP.get(locale, locale)
 
-    client = SpeechAsyncClient.from_service_account_info(
-        account_dict,
-        client_options={"api_endpoint": f"{region}-speech.googleapis.com"},
-    )
     config = cloud_speech.RecognitionConfig(
         auto_decoding_config=cloud_speech.AutoDetectDecodingConfig(),
         language_codes=[google_locale],
@@ -197,10 +262,11 @@ async def transcribe_google(session: aiohttp.ClientSession, wav_bytes: bytes, lo
 
 
 async def transcribe_azure(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    # Azure region is baked into AZURE_SPEECH_ENDPOINT (e.g. eastus2 in the host).
+    # Subscription-key auth means no token to mint/cache, so the shared aiohttp
+    # ClientSession is the right pattern here.
     endpoint = os.environ["AZURE_SPEECH_ENDPOINT"]
     api_key = os.environ["AZURE_SPEECH_KEY"]
-    import uuid
-
     session_id = str(uuid.uuid4()).replace("-", "")
 
     data = aiohttp.FormData()
@@ -243,10 +309,10 @@ async def transcribe_elevenlabs(session: aiohttp.ClientSession, wav_bytes: bytes
 
 
 async def transcribe_openai(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from openai import AsyncOpenAI
-
+    # OpenAI SDK has its own httpx pool — _get_openai_client returns a persistent
+    # AsyncOpenAI so connections stay warm across requests (SDK-recommended).
     iso_locale = LOCALE_TO_ISO639_1.get(locale, locale[:2])
-    client = AsyncOpenAI()
+    client = _get_openai_client()
     response = await client.audio.transcriptions.create(
         model="gpt-4o-transcribe",
         file=("audio.wav", wav_bytes, "audio/wav"),
@@ -256,10 +322,8 @@ async def transcribe_openai(session: aiohttp.ClientSession, wav_bytes: bytes, lo
 
 
 async def transcribe_openai_mini(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from openai import AsyncOpenAI
-
     iso_locale = LOCALE_TO_ISO639_1.get(locale, locale[:2])
-    client = AsyncOpenAI()
+    client = _get_openai_client()
     response = await client.audio.transcriptions.create(
         model="gpt-4o-mini-transcribe",
         file=("audio.wav", wav_bytes, "audio/wav"),
@@ -278,12 +342,10 @@ LOCALE_NAMES = {
 
 
 async def transcribe_openai_gpt_audio(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from openai import AsyncOpenAI
-
     lang_name = LOCALE_NAMES.get(locale, "")
     lang_hint = f" The audio is in {lang_name}." if lang_name else ""
 
-    client = AsyncOpenAI()
+    client = _get_openai_client()
     audio_b64 = base64.b64encode(wav_bytes).decode("utf-8")
     response = await client.chat.completions.create(
         model="gpt-audio-1.5",
@@ -338,6 +400,8 @@ PROVIDER_METADATA = {
 
 
 async def run_transcription(args):
+    _reset_clients()
+
     manifest_path = Path(args.manifest)
     output_dir = Path(args.output_dir)
 

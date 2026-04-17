@@ -62,10 +62,26 @@ HF_TOKEN=...                   # HuggingFace token
 OPENAI_API_KEY=...             # For scoring
 DEEPGRAM_API_KEY=...           # Provider-specific keys for transcription
 ELEVENLABS_API_KEY=...
-AZURE_SPEECH_ENDPOINT=...
+AZURE_SPEECH_ENDPOINT=...      # Regional Azure endpoint URL (region is baked in, e.g. eastus2)
 AZURE_SPEECH_KEY=...
-GOOGLE_SPEECH_CREDENTIALS=...
+GOOGLE_SPEECH_CREDENTIALS=...  # Full service-account JSON (not a file path)
+GOOGLE_SPEECH_REGION=us        # Optional. Default "us" (multi-region). Set to a specific
+                               # region like "us-central1" for strict reproducibility.
 ```
+
+### Regions and latency comparability
+
+Different providers expose regional configuration differently:
+
+| Provider | Where region is set | Default |
+|----------|--------------------|---------|
+| Google   | `GOOGLE_SPEECH_REGION` env var | `us` multi-region |
+| Azure    | baked into `AZURE_SPEECH_ENDPOINT` URL | — (whatever you configured) |
+| Deepgram | not configurable in this repo; uses `api.deepgram.com` (US) | US |
+| ElevenLabs | globally routed; no region knob | — |
+| OpenAI   | single API (`api.openai.com`); no region knob | — |
+
+For cross-provider latency numbers to be comparable, **run all measurements from the same geographic location** and document it in your submission's notes. A single-region Google endpoint (e.g. `us-central1`) is preferable to the `us` multi-region for reproducibility, though both are valid.
 
 ## Common Workflows
 
