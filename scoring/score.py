@@ -68,9 +68,8 @@ def _collect_judge_block() -> dict:
 
     Records the pinned model / temperature / seed from scoring.llm plus the
     (truncated) SHA of each prompt constant in scoring.prompts. Missing
-    prompts (e.g. in the back-compat window before the secret is updated)
-    record an empty string so the drift-checker still catches partial
-    rollouts.
+    prompts record an empty SHA so the drift-checker still catches the
+    gap instead of silently omitting the field.
     """
     import datetime
 
@@ -87,17 +86,13 @@ def _collect_judge_block() -> dict:
             return ""
         return prompt_sha(val)
 
-    # Prefer the new canonical-gold split; fall back to the legacy prompt.
-    gold_prompt_sha = _sha("NORMALIZE_GOLD_PROMPT") or _sha("NORMALIZE_AGAINST_GOLD_PROMPT")
-    pred_prompt_sha = _sha("NORMALIZE_PRED_AGAINST_GOLD_PROMPT") or _sha("NORMALIZE_AGAINST_GOLD_PROMPT")
-
     return {
         "model": JUDGE_CONFIG["model"],
         "modelSnapshot": JUDGE_CONFIG["model"],
         "temperature": JUDGE_CONFIG["temperature"],
         "seed": JUDGE_CONFIG["seed"],
-        "normalizeGoldPromptSha": gold_prompt_sha,
-        "normalizePredPromptSha": pred_prompt_sha,
+        "normalizeGoldPromptSha": _sha("NORMALIZE_GOLD_PROMPT"),
+        "normalizePredPromptSha": _sha("NORMALIZE_PRED_AGAINST_GOLD_PROMPT"),
         "significantErrorsPromptSha": _sha("SIGNIFICANT_WORD_ERRORS_PROMPT"),
         "scoredAt": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
     }

@@ -29,7 +29,6 @@ load_dotenv()
 
 from scoring.llm import (
     NORMALIZE_GOLD_SCHEMA,
-    NORMALIZE_SCHEMA,
     get_responses,
     load_responses,
 )
@@ -83,28 +82,8 @@ def write_cached_gold_hash(cache_dir: Path, digest: str) -> None:
 
 
 def _format_gold_prompt(prompt_template: str, gold: str) -> str:
-    """Format the gold-normalization prompt.
-
-    Works with both the new single-input prompt (``NORMALIZE_GOLD_PROMPT``
-    expects only ``{expected_transcript}``) and the legacy two-input prompt
-    (``NORMALIZE_AGAINST_GOLD_PROMPT`` expects both ``{expected_transcript}``
-    and ``{actual_transcript}`` — we pass an empty prediction). This lets
-    the code-only PR land before the secret prompts file is updated.
-    """
-    try:
-        return prompt_template.format(expected_transcript=gold)
-    except KeyError:
-        return prompt_template.format(expected_transcript=gold, actual_transcript="")
-
-
-def _response_schema_for(prompt_template: str) -> dict:
-    """Pick the JSON schema that matches the prompt template in use."""
-    # The new single-input prompt only produces normalized_expected. The
-    # legacy two-input prompt produces both expected and actual; we still
-    # honor its schema so calls don't fail validation.
-    if "{actual_transcript}" in prompt_template:
-        return NORMALIZE_SCHEMA
-    return NORMALIZE_GOLD_SCHEMA
+    """Format the gold-only normalization prompt with the single gold input."""
+    return prompt_template.format(expected_transcript=gold)
 
 
 def _extract_normalized_gold(resp: object) -> str | None:
@@ -192,7 +171,7 @@ def main():
         return
 
     prompt_template = _load_gold_prompt()
-    response_format = _response_schema_for(prompt_template)
+    response_format = NORMALIZE_GOLD_SCHEMA
 
     total = len(to_normalize)
     batch_size = 100
