@@ -30,50 +30,25 @@ from scoring.llm import (
 
 
 def _load_prompts():
-    """Lazy-load scoring prompts so modules that don't need LLM calls can import metrics freely.
+    """Lazy-load scoring prompts.
 
-    Returns (normalize_prompt, sig_errors_prompt). Prefers the new split
-    prompts introduced for canonical gold normalization (item 1):
-      - ``NORMALIZE_PRED_AGAINST_GOLD_PROMPT`` (blind-gold + prediction)
-    and falls back to the legacy ``NORMALIZE_AGAINST_GOLD_PROMPT`` when the
-    secret ``scoring/prompts.py`` hasn't been updated yet.
+    Returns ``(NORMALIZE_PRED_AGAINST_GOLD_PROMPT, SIGNIFICANT_WORD_ERRORS_PROMPT)``.
+    Kept lazy so modules that don't touch the LLM (validator, leaderboard
+    update) can import ``scoring.metrics`` without the secret prompts file.
     """
-    from scoring import prompts as _prompts  # type: ignore[attr-defined]
+    from scoring.prompts import (  # type: ignore[attr-defined]
+        NORMALIZE_PRED_AGAINST_GOLD_PROMPT,
+        SIGNIFICANT_WORD_ERRORS_PROMPT,
+    )
 
-    normalize_prompt = getattr(_prompts, "NORMALIZE_PRED_AGAINST_GOLD_PROMPT", None)
-    if normalize_prompt is None:
-        normalize_prompt = getattr(_prompts, "NORMALIZE_AGAINST_GOLD_PROMPT", None)
-    if normalize_prompt is None:
-        raise ImportError(
-            "scoring.prompts is missing NORMALIZE_PRED_AGAINST_GOLD_PROMPT "
-            "(and legacy NORMALIZE_AGAINST_GOLD_PROMPT). Make sure the "
-            "SCORING_PROMPTS_PY secret has been injected."
-        )
-    sig_prompt = _prompts.SIGNIFICANT_WORD_ERRORS_PROMPT
-    return normalize_prompt, sig_prompt
+    return NORMALIZE_PRED_AGAINST_GOLD_PROMPT, SIGNIFICANT_WORD_ERRORS_PROMPT
 
 
 def _load_gold_prompt() -> str:
-    """Return the canonical gold-only normalization prompt.
+    """Return the canonical gold-only normalization prompt."""
+    from scoring.prompts import NORMALIZE_GOLD_PROMPT  # type: ignore[attr-defined]
 
-    Prefers ``NORMALIZE_GOLD_PROMPT``. Falls back to the legacy
-    ``NORMALIZE_AGAINST_GOLD_PROMPT`` (which also receives the prediction,
-    but callers pass an empty ``actual_transcript``) when the split prompts
-    haven't been deployed yet.
-    """
-    from scoring import prompts as _prompts  # type: ignore[attr-defined]
-
-    gold_prompt = getattr(_prompts, "NORMALIZE_GOLD_PROMPT", None)
-    if gold_prompt is not None:
-        return gold_prompt
-    legacy = getattr(_prompts, "NORMALIZE_AGAINST_GOLD_PROMPT", None)
-    if legacy is not None:
-        return legacy
-    raise ImportError(
-        "scoring.prompts is missing NORMALIZE_GOLD_PROMPT (and legacy "
-        "NORMALIZE_AGAINST_GOLD_PROMPT). Make sure the SCORING_PROMPTS_PY "
-        "secret has been injected."
-    )
+    return NORMALIZE_GOLD_PROMPT
 
 
 @dataclass

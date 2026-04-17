@@ -13,10 +13,6 @@ writes ``<id>.txt`` per utterance. The submitter-specific
 ``<id>.gold.txt`` files are no longer written here; consumers should read
 the canonical cache instead.
 
-For back-compat (and so the legacy ``NORMALIZE_AGAINST_GOLD_PROMPT`` still
-works), this script falls back to the old symmetric-normalization flow
-when the new ``NORMALIZE_PRED_AGAINST_GOLD_PROMPT`` isn't available yet.
-
 Usage:
     python -m scoring.normalize --submission-dir submissions/raw/deepgram-nova3
 """
@@ -32,7 +28,6 @@ load_dotenv()
 
 from scoring.llm import (
     NORMALIZE_PRED_SCHEMA,
-    NORMALIZE_SCHEMA,
     get_responses,
     load_responses,
 )
@@ -105,28 +100,11 @@ def load_transcript_pairs(
     return rows
 
 
-def _select_pred_prompt() -> tuple[str, dict, str]:
-    """Return (prompt_template, response_schema, mode).
+def _load_pred_prompt() -> tuple[str, dict]:
+    """Return ``(prompt_template, response_schema)`` for prediction normalization."""
+    from scoring.prompts import NORMALIZE_PRED_AGAINST_GOLD_PROMPT  # type: ignore[attr-defined]
 
-    Prefers the new prediction-only prompt (gold is already normalized and
-    passed in only for style reference). Falls back to the legacy symmetric
-    prompt. ``mode`` is one of ``"pred_only"`` or ``"legacy_symmetric"``
-    and controls how we pull fields out of the response.
-    """
-    from scoring import prompts as _prompts  # type: ignore[attr-defined]
-
-    pred_prompt = getattr(_prompts, "NORMALIZE_PRED_AGAINST_GOLD_PROMPT", None)
-    if pred_prompt is not None:
-        return pred_prompt, NORMALIZE_PRED_SCHEMA, "pred_only"
-    legacy = getattr(_prompts, "NORMALIZE_AGAINST_GOLD_PROMPT", None)
-    if legacy is not None:
-        print("WARNING: using legacy NORMALIZE_AGAINST_GOLD_PROMPT; gold will be re-derived per prediction.")
-        return legacy, NORMALIZE_SCHEMA, "legacy_symmetric"
-    raise ImportError(
-        "scoring.prompts is missing NORMALIZE_PRED_AGAINST_GOLD_PROMPT "
-        "(and legacy NORMALIZE_AGAINST_GOLD_PROMPT). Make sure the "
-        "SCORING_PROMPTS_PY secret has been injected."
-    )
+    return NORMALIZE_PRED_AGAINST_GOLD_PROMPT, NORMALIZE_PRED_SCHEMA
 
 
 def main():
@@ -259,8 +237,7 @@ def main():
         print("All files already normalized")
         return
 
-    prompt_template, response_schema, prompt_mode = _select_pred_prompt()
-    print(f"Using prompt mode: {prompt_mode}")
+    prompt_template, response_schema = _load_pred_prompt()
 
     total = len(to_normalize)
     batch_size = 100
