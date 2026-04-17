@@ -3,11 +3,11 @@
 Self-contained module adapted from the benchmark evaluation pipeline.
 Uses LLM-based normalization via OpenAI for fair transcript comparison.
 
-For each utterance we record the count of edit operations
-(substitutions + deletions + insertions) and the reference word count.
-Per-locale WER is the ratio of summed edits to summed reference words
-across the locale's utterances; overall WER is the unweighted mean of
-per-locale WERs (computed in scoring.score).
+WER is reported as **corpus WER**: per utterance we record the count of
+edit operations (substitutions + deletions + insertions) and the
+reference word count. Per-locale WER is the ratio of summed edits to
+summed reference words across the locale's utterances; overall WER is
+the unweighted mean of per-locale corpus WERs (computed in scoring.score).
 """
 
 import re
@@ -49,9 +49,8 @@ class WERResult:
     """Result from WER computation.
 
     `wer` is the per-utterance rate (edits / ref_words), preserved for
-    distribution plots and back-compat. Per-locale and overall
-    aggregation should sum `edits` and `ref_words` directly so the
-    headline numbers are sum/sum, not the mean of per-utterance rates.
+    distribution plots and back-compat. Corpus aggregation should use
+    `edits` and `ref_words` directly.
     """
 
     locale: str
@@ -137,7 +136,7 @@ def normalize_for_simple_wer(text: str) -> str:
 
     Lowercases and strips punctuation but keeps spaces so that the result
     has meaningful word boundaries for jiwer's word-level alignment and
-    for the reference word count.
+    for the corpus-WER reference word count.
     """
     if text is None:
         return ""
@@ -223,7 +222,7 @@ def compute_wer(rows: List[TranscriptRow]) -> List[WERResult]:
     """Compute per-utterance WER components on pre-normalized transcripts.
 
     Records per-utterance edits and reference word count so that callers can
-    aggregate WER as sum(edits) / sum(ref_words) per locale. The
+    aggregate corpus WER (sum(edits) / sum(ref_words)) per locale. The
     per-utterance `wer` rate is also returned for distributions and
     back-compat.
 
@@ -262,8 +261,7 @@ def compute_simple_wer(rows: List[TranscriptRow]) -> List[WERResult]:
     """Compute WER with simple normalization (no LLM calls needed).
 
     Uses `normalize_for_simple_wer` so word boundaries are preserved and
-    both the per-utterance rate and the aggregated edits/ref_words
-    components are meaningful.
+    both the per-utterance rate and corpus components are meaningful.
     """
     results = []
     for r in rows:

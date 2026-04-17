@@ -91,7 +91,7 @@ Scoring is run by maintainers — submitters do not need to run it locally. When
 
 | Metric | Description | Direction |
 |--------|-------------|-----------|
-| **WER** | Word Error Rate after LLM normalization. Per-locale: total word edits divided by total reference words. Overall: unweighted mean of the five per-locale WERs. | Lower is better |
+| **WER** | Corpus Word Error Rate (sum of word edits / sum of reference words) after LLM normalization. Overall is the unweighted mean of the five per-locale corpus WERs. | Lower is better |
 | **UER** | Utterance Error Rate — fraction with meaning-changing errors | Lower is better |
 | **Latency (p95)** | 95th percentile API response time per utterance (ms) | Lower is better |
 
@@ -113,7 +113,7 @@ submissions/
 scoring/
   validate.py              # Submission format validation (run locally)
   normalize.py             # LLM-based transcript normalization
-  score.py                 # Metrics computation (WER, sig. WER)
+  score.py                 # Metrics computation (corpus WER, sig. WER)
   metrics.py               # Core metric implementations
   prompts.py               # ⚠️ Gitignored — injected from GitHub secret in CI
 results/
