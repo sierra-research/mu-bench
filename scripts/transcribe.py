@@ -164,21 +164,34 @@ async def transcribe_deepgram(session: aiohttp.ClientSession, wav_bytes: bytes, 
 
 GOOGLE_LOCALE_MAP = {"zh-CN": "cmn-Hans-CN", "zh-HK": "yue-Hant-HK"}
 
+# Lazy-cached gRPC client: constructing SpeechAsyncClient pays for OAuth, gRPC channel
+# setup, and TLS handshake. Reusing one client across requests amortizes that cost
+# per the SDK's documented usage pattern.
+_google_state = None
+
+
+def _get_google_state():
+    global _google_state
+    if _google_state is None:
+        from google.cloud.speech_v2 import SpeechAsyncClient
+
+        creds_json = os.environ["GOOGLE_SPEECH_CREDENTIALS"]
+        account_dict = json.loads(creds_json)
+        project_id = account_dict["project_id"]
+        region = os.environ.get("GOOGLE_SPEECH_REGION", "us")
+        client = SpeechAsyncClient.from_service_account_info(
+            account_dict,
+            client_options={"api_endpoint": f"{region}-speech.googleapis.com"},
+        )
+        _google_state = (client, project_id, region)
+    return _google_state
+
 
 async def transcribe_google(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from google.cloud.speech_v2 import SpeechAsyncClient
     from google.cloud.speech_v2.types import cloud_speech
 
-    creds_json = os.environ["GOOGLE_SPEECH_CREDENTIALS"]
-    account_dict = json.loads(creds_json)
-    project_id = account_dict["project_id"]
-    region = os.environ.get("GOOGLE_SPEECH_REGION", "us")
+    client, project_id, region = _get_google_state()
     google_locale = GOOGLE_LOCALE_MAP.get(locale, locale)
-
-    client = SpeechAsyncClient.from_service_account_info(
-        account_dict,
-        client_options={"api_endpoint": f"{region}-speech.googleapis.com"},
-    )
     config = cloud_speech.RecognitionConfig(
         auto_decoding_config=cloud_speech.AutoDetectDecodingConfig(),
         language_codes=[google_locale],
@@ -242,11 +255,25 @@ async def transcribe_elevenlabs(session: aiohttp.ClientSession, wav_bytes: bytes
     return json_data.get("text", "")
 
 
-async def transcribe_openai(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from openai import AsyncOpenAI
+# Lazy-cached OpenAI client: AsyncOpenAI() instantiates a fresh internal httpx
+# AsyncClient with its own connection pool, so reusing one client preserves TLS
+# connections across requests. The OpenAI SDK explicitly recommends instantiating
+# the client once in application code.
+_openai_client = None
 
+
+def _get_openai_client():
+    global _openai_client
+    if _openai_client is None:
+        from openai import AsyncOpenAI
+
+        _openai_client = AsyncOpenAI()
+    return _openai_client
+
+
+async def transcribe_openai(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
     iso_locale = LOCALE_TO_ISO639_1.get(locale, locale[:2])
-    client = AsyncOpenAI()
+    client = _get_openai_client()
     response = await client.audio.transcriptions.create(
         model="gpt-4o-transcribe",
         file=("audio.wav", wav_bytes, "audio/wav"),
@@ -256,10 +283,8 @@ async def transcribe_openai(session: aiohttp.ClientSession, wav_bytes: bytes, lo
 
 
 async def transcribe_openai_mini(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from openai import AsyncOpenAI
-
     iso_locale = LOCALE_TO_ISO639_1.get(locale, locale[:2])
-    client = AsyncOpenAI()
+    client = _get_openai_client()
     response = await client.audio.transcriptions.create(
         model="gpt-4o-mini-transcribe",
         file=("audio.wav", wav_bytes, "audio/wav"),
@@ -278,12 +303,10 @@ LOCALE_NAMES = {
 
 
 async def transcribe_openai_gpt_audio(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
-    from openai import AsyncOpenAI
-
     lang_name = LOCALE_NAMES.get(locale, "")
     lang_hint = f" The audio is in {lang_name}." if lang_name else ""
 
-    client = AsyncOpenAI()
+    client = _get_openai_client()
     audio_b64 = base64.b64encode(wav_bytes).decode("utf-8")
     response = await client.chat.completions.create(
         model="gpt-audio-1.5",
