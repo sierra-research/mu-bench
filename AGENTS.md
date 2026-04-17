@@ -118,6 +118,15 @@ source .env
 ```
 Requires `scoring/prompts.py` (from GitHub secret) and `OPENAI_API_KEY`. In CI, triggered by a maintainer commenting `/score` on a PR.
 
+### Resuming failed runs
+
+Both `scoring.normalize` and `scoring.score` are idempotent — if a batch API call fails or the pipeline is interrupted, just re-run the same command against the same output directory. No `--force` flag is needed.
+
+- `normalize.py` skips any `<id>.txt` already written in the output dir; only missing files get re-sent to OpenAI. Batch-level failures print `Batch failed: ... Skipping batch, will retry on next run.` and move on.
+- `score.py --metrics wer` treats a detail as cached iff it has `werEdits` and `werRefWords`; missing/failed rows are recomputed. The `significantWer` path caches on `significantWer is not None`.
+
+To **force** a re-score of everything, delete the relevant `results/<provider>/details/` directory (or the specific detail files you want to invalidate). To force fresh normalization, delete or relocate the target `submissions/normalized/<provider>/` directory.
+
 ## CI Workflows
 
 | Workflow | Trigger | What it does |

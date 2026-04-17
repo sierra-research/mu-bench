@@ -6,7 +6,8 @@ export const METRICS = {
         lowerIsBetter: true,
         format: (v) => `${(v * 100).toFixed(1)}%`,
         unit: "%",
-        description: "Word Error Rate \u2014 percentage of words incorrectly transcribed",
+        description:
+            "Word Error Rate \u2014 per-locale: total word edits divided by total reference words. Overall: unweighted mean of the five per-locale WERs.",
     },
     significantWer: {
         key: "significantWer",

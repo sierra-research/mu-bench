@@ -118,7 +118,7 @@ This normalization is powered by GPT-4.1 with temperature 0. The full prompt tem
 
 #### Word Error Rate (WER) vs Utterance Error Rate (UER)
 
-Word Error Rate is the standard metric used by most ASR benchmarks. It measures the minimum edit distance between reference and hypothesis transcripts at the word level — substitutions, deletions, and insertions divided by the number of reference words. WER is computed on LLM-normalized transcripts. For CJK locales (zh-CN in this set), we insert spaces around each character before alignment, computing WER at the character level (equivalent to CER). Per-locale WER is the arithmetic mean of per-utterance values.
+Word Error Rate is the standard metric used by most ASR benchmarks. It measures the minimum edit distance between reference and hypothesis transcripts at the word level — substitutions, deletions, and insertions divided by the number of reference words. WER is computed on LLM-normalized transcripts. For CJK locales (zh-CN in this set), we insert spaces around each character before alignment, computing WER at the character level (equivalent to CER). Per-locale WER is the sum of word edits across the locale's utterances divided by the sum of reference words, so longer utterances contribute proportionally to the score. The headline overall WER is the unweighted mean of the five per-locale WERs, giving every language equal weight regardless of utterance count.
 
 However, WER treats all errors equally — a dropped "uh" counts the same as a misheard phone number digit. This makes it an unreliable signal for production use, where what matters is whether the meaning of an utterance was preserved.
 
@@ -160,13 +160,13 @@ Results are drawn from the current leaderboard as of April 2026, and the key fin
 
 <!-- widget:radar -->
 
-**WER alone is misleading.** Deepgram Nova-3 has 4.1% WER on en-US with 5.2% UER — nearly all its errors change meaning. Microsoft Azure has 3.7% WER but only 3.3% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
+**WER alone is misleading.** Deepgram Nova-3 has 4.6% WER on en-US with 5.2% UER — nearly all its errors change meaning. Microsoft Azure has 3.7% WER but only 3.3% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
 
 **English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–7% on en-US. The gap narrows dramatically for structured inputs like names and tracking codes.
 
-**Chinese remains the most challenging locale.** Mandarin sees UER between 16–29%, meaning a substantial fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 7.3% WER while Deepgram Nova-3 reaches 39.3%.
+**Chinese remains the most challenging locale.** Mandarin sees UER between 16–29%, meaning a substantial fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 5.7% WER while Deepgram Nova-3 reaches 21.1%.
 
-**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (6.9%) and UER (10.5%). ElevenLabs Scribe v2 is second-best on UER (16.3%), while Azure achieves the lowest UER on en-US (3.3%) but struggles on tr-TR and vi-VN. OpenAI GPT-4o Mini Transcribe comes in close to Azure overall (UER 18.9%) and ties Chirp-3 for the best en-US UER (4.8%).
+**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (6.0%) and UER (10.5%). ElevenLabs Scribe v2 is second-best on both WER (7.9%) and UER (16.3%), while Azure achieves the lowest UER on en-US (3.3%) but struggles on tr-TR and vi-VN. OpenAI GPT-4o Mini Transcribe comes in close to Azure overall (UER 18.9%) and is second-best on en-US UER (4.8%).
 
 **Accuracy and speed do not correlate.** Deepgram Nova-3 has the best p50 latency (239ms) and p95 (761ms), while Google Chirp-3, the accuracy leader, has the highest p50 (1,212ms) and p95 (2,006ms). ElevenLabs Scribe v2 offers a good balance with strong accuracy (UER 16.3%) and moderate latency (p50 425ms, p95 800ms). The right choice depends on whether the deployment prioritizes accuracy or throughput.
 
@@ -176,7 +176,7 @@ Are these ranking differences real, or could they be artifacts of which conversa
 
 <!-- widget:significance -->
 
-On UER, most pairwise differences are statistically significant (p < 0.05) — the exception is Azure vs. OpenAI (p = 0.89), which are not distinguishable. On WER, the middle cluster (ElevenLabs, Azure, OpenAI) is tight — none of the three are significantly different from each other. Google's lead and Deepgram's position are robust across both metrics.
+On UER, most pairwise differences are statistically significant (p < 0.05) — the exception is Azure vs. OpenAI (p = 0.93), which are not distinguishable. On WER, ElevenLabs separates from Azure and OpenAI (p < 0.001 each), and the only indistinguishable pair is Azure vs. OpenAI (p = 0.07). Google's lead and Deepgram's position are robust across both metrics.
 
 To verify that the LLM-based scoring pipeline itself is stable, we re-ran the full normalization and scoring pipeline 4 times independently. Standard deviations across runs are 0.1–0.5 percentage points; rankings never changed between runs.
 

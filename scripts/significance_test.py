@@ -35,17 +35,22 @@ SHORT_NAMES = {
 }
 
 
-def load_utterance_scores(results_dir: Path, provider: str, locales: list[str], metric: str) -> dict[str, float]:
+def load_utterance_scores(
+    results_dir: Path, provider: str, locales: list[str], metric: str
+) -> dict[str, tuple[float, float] | float]:
     """Load per-utterance scores for a provider.
 
-    Returns {utterance_key: score} where utterance_key is 'locale/utterance_id'.
+    Returns {utterance_key: value} where utterance_key is 'locale/utterance_id'.
     Skips utterances where the metric is None (unintelligible, etc.).
 
-    For significantWer, uses the binary "has any major error" (1 or 0) to match
-    the leaderboard's aggregation (fraction of utterances with errors), NOT the
-    per-utterance error rate (majorErrorsCount / totalWordsCount).
+    For metric == "wer", returns (edits, ref_words) tuples so the caller can
+    compute WER as a ratio of sums under bootstrap resampling.
+
+    For metric == "significantWer", returns the binary "has any major error"
+    (1.0 or 0.0) to match the leaderboard's aggregation (fraction of utterances
+    with errors), NOT the per-utterance error rate.
     """
-    scores = {}
+    scores: dict[str, tuple[float, float] | float] = {}
     for locale in locales:
         detail_dir = results_dir / provider / "details" / locale
         if not detail_dir.exists():
@@ -61,6 +66,12 @@ def load_utterance_scores(results_dir: Path, provider: str, locales: list[str], 
                     continue
                 major = detail.get("majorErrorsCount", 0) or 0
                 scores[f"{locale}/{utterance_id}"] = 1.0 if major > 0 else 0.0
+            elif metric == "wer":
+                edits = detail.get("werEdits")
+                ref_words = detail.get("werRefWords")
+                if edits is None or ref_words is None or ref_words <= 0:
+                    continue
+                scores[f"{locale}/{utterance_id}"] = (float(edits), float(ref_words))
             else:
                 val = detail.get(metric)
                 if val is not None:
@@ -68,13 +79,13 @@ def load_utterance_scores(results_dir: Path, provider: str, locales: list[str], 
     return scores
 
 
-def paired_bootstrap(
+def paired_bootstrap_mean(
     scores_a: np.ndarray,
     scores_b: np.ndarray,
     n_iterations: int,
     rng: np.random.Generator,
 ) -> tuple[float, float, float]:
-    """Paired bootstrap test: is mean(A) < mean(B)?
+    """Paired bootstrap test on means: is mean(A) < mean(B)?
 
     Returns (p_value, mean_diff, mean_diff_std) where p_value is the
     fraction of bootstrap samples where A >= B (i.e., low p means A is
@@ -84,6 +95,30 @@ def paired_bootstrap(
     indices = rng.integers(0, n, size=(n_iterations, n))
     boot_a = scores_a[indices].mean(axis=1)
     boot_b = scores_b[indices].mean(axis=1)
+    diffs = boot_a - boot_b
+    p_value = (diffs >= 0).mean()
+    return float(p_value), float(diffs.mean()), float(diffs.std())
+
+
+def paired_bootstrap_ratio(
+    edits_a: np.ndarray,
+    refs_a: np.ndarray,
+    edits_b: np.ndarray,
+    refs_b: np.ndarray,
+    n_iterations: int,
+    rng: np.random.Generator,
+) -> tuple[float, float, float]:
+    """Paired bootstrap test on ratio of sums.
+
+    For each resample of utterance indices, computes
+        sum(edits[idx]) / sum(ref_words[idx])
+    per provider and uses the difference as the test statistic. Reflects the
+    real per-locale WER aggregation.
+    """
+    n = len(edits_a)
+    indices = rng.integers(0, n, size=(n_iterations, n))
+    boot_a = edits_a[indices].sum(axis=1) / refs_a[indices].sum(axis=1)
+    boot_b = edits_b[indices].sum(axis=1) / refs_b[indices].sum(axis=1)
     diffs = boot_a - boot_b
     p_value = (diffs >= 0).mean()
     return float(p_value), float(diffs.mean()), float(diffs.std())
@@ -157,13 +192,24 @@ def main():
         return
 
     sorted_keys = sorted(common_keys)
+    is_wer = args.metric == "wer"
 
-    # Compute overall means
-    print(f"\n=== Overall {args.metric} ===")
-    means = {}
+    # Build per-provider arrays (or array pairs for WER ratio)
+    arrays: dict[str, np.ndarray | tuple[np.ndarray, np.ndarray]] = {}
+    means: dict[str, float] = {}
     for p in available:
-        vals = [all_scores[p][k] for k in sorted_keys]
-        means[p] = np.mean(vals)
+        if is_wer:
+            edits = np.array([all_scores[p][k][0] for k in sorted_keys], dtype=float)
+            refs = np.array([all_scores[p][k][1] for k in sorted_keys], dtype=float)
+            arrays[p] = (edits, refs)
+            means[p] = edits.sum() / refs.sum() if refs.sum() > 0 else float("nan")
+        else:
+            vals = np.array([all_scores[p][k] for k in sorted_keys], dtype=float)
+            arrays[p] = vals
+            means[p] = float(vals.mean())
+
+    # Overall summary
+    print(f"\n=== Overall {args.metric} ===")
     ranked = sorted(available, key=lambda p: means[p])
     for i, p in enumerate(ranked):
         print(f"  {i + 1}. {SHORT_NAMES[p]:<15} {means[p]:.4f}")
@@ -171,11 +217,6 @@ def main():
     # Pairwise bootstrap tests
     print(f"\n=== Pairwise Bootstrap Significance ({args.iterations} iterations) ===")
     print("p-value = P(row provider >= col provider), low p = row is significantly better\n")
-
-    # Build arrays
-    arrays = {}
-    for p in available:
-        arrays[p] = np.array([all_scores[p][k] for k in sorted_keys])
 
     # Header
     name_width = 12
@@ -193,7 +234,12 @@ def main():
             if p_row == p_col:
                 row += f"{'--':>{col_width}}"
             else:
-                p_val, mean_diff, _ = paired_bootstrap(arrays[p_row], arrays[p_col], args.iterations, rng)
+                if is_wer:
+                    e_a, r_a = arrays[p_row]
+                    e_b, r_b = arrays[p_col]
+                    p_val, _, _ = paired_bootstrap_ratio(e_a, r_a, e_b, r_b, args.iterations, rng)
+                else:
+                    p_val, _, _ = paired_bootstrap_mean(arrays[p_row], arrays[p_col], args.iterations, rng)
                 if p_val < 0.001:
                     cell = "p<0.001"
                 else:
@@ -216,11 +262,18 @@ def main():
     if len(locales) > 1:
         print("\n=== Per-Locale Rankings ===")
         for locale in locales:
-            locale_scores = {}
+            locale_scores: dict[str, float] = {}
+            prefix = f"{locale}/"
             for p in available:
-                vals = [all_scores[p][k] for k in sorted_keys if k.startswith(f"{locale}/")]
-                if vals:
-                    locale_scores[p] = np.mean(vals)
+                if is_wer:
+                    e = np.array([all_scores[p][k][0] for k in sorted_keys if k.startswith(prefix)], dtype=float)
+                    r = np.array([all_scores[p][k][1] for k in sorted_keys if k.startswith(prefix)], dtype=float)
+                    if r.sum() > 0:
+                        locale_scores[p] = float(e.sum() / r.sum())
+                else:
+                    vals = [all_scores[p][k] for k in sorted_keys if k.startswith(prefix)]
+                    if vals:
+                        locale_scores[p] = float(np.mean(vals))
             if locale_scores:
                 loc_ranked = sorted(locale_scores.keys(), key=lambda p: locale_scores[p])
                 ranking = ", ".join(
