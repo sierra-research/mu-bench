@@ -22,7 +22,7 @@ scoring/
   validate.py                  # Submission format validation (safe to run locally)
   normalize.py                 # LLM-based transcript normalization (requires scoring/prompts.py)
   score.py                     # Metrics computation (requires scoring/prompts.py)
-  metrics.py                   # Core metric implementations (WER, significant WER)
+  metrics.py                   # Core metric implementations (corpus WER, significant WER)
   llm.py                       # OpenAI API wrapper for scoring
   update_leaderboard.py        # Regenerates results/leaderboard.json from all scores.json files
   prompts.py                   # GITIGNORED — injected from GitHub secret in CI
@@ -117,15 +117,6 @@ source .env
 .venv/bin/python -m scoring.update_leaderboard
 ```
 Requires `scoring/prompts.py` (from GitHub secret) and `OPENAI_API_KEY`. In CI, triggered by a maintainer commenting `/score` on a PR.
-
-### Resuming failed runs
-
-Both `scoring.normalize` and `scoring.score` are idempotent — if a batch API call fails or the pipeline is interrupted, just re-run the same command against the same output directory. No `--force` flag is needed.
-
-- `normalize.py` skips any `<id>.txt` already written in the output dir; only missing files get re-sent to OpenAI. Batch-level failures print `Batch failed: ... Skipping batch, will retry on next run.` and move on.
-- `score.py --metrics wer` treats a detail as cached iff it has `werEdits` and `werRefWords`; missing/failed rows are recomputed. The `significantWer` path caches on `significantWer is not None`.
-
-To **force** a re-score of everything, delete the relevant `results/<provider>/details/` directory (or the specific detail files you want to invalidate). To force fresh normalization, delete or relocate the target `submissions/normalized/<provider>/` directory.
 
 ## CI Workflows
 

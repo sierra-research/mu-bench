@@ -191,7 +191,7 @@ jobs:
                 ') for details.';
             } else {
               const scores = JSON.parse(fs.readFileSync(scoresPath, 'utf8'));
-              let table = '| Locale | WER | Sig. WER |\n|--------|-----|----------|\n';
+              let table = '| Locale | WER (corpus) | Sig. WER |\n|--------|--------------|----------|\n';
               for (const [locale, data] of Object.entries(scores.locales || {})) {
                 const w = data.wer !== null ? `${(data.wer * 100).toFixed(1)}%` : '-';
                 const s = data.significantWer !== null ? `${(data.significantWer * 100).toFixed(1)}%` : '-';
