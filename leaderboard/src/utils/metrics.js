@@ -27,9 +27,34 @@ export const METRICS = {
         format: (v) => `${Math.round(v)} ms`,
         unit: "ms",
         description:
-            "95th percentile (p95) API response time per utterance in milliseconds. Median (p50) latency is also recorded but p95 better reflects worst-case production performance.",
+            "95th percentile (p95) time to complete transcript, per utterance, in milliseconds. For batch providers this is request-to-response round-trip; for streaming providers it is send to final transcript. Median (p50) latency is also recorded but p95 better reflects worst-case production performance.",
     },
 };
+
+/**
+ * Return the unified sortable latency p95 for a provider/locale combo,
+ * preferring the new `completeP95Ms` field (batch + streaming) and
+ * falling back to the legacy `latencyP95Ms` when a score.json hasn't
+ * been re-scored under the new latency schema yet.
+ */
+export function pickLatencyP95(localeResult) {
+    if (!localeResult) return null;
+    const c = localeResult.completeP95Ms;
+    if (c !== null && c !== undefined) return c;
+    const legacy = localeResult.latencyP95Ms;
+    return legacy !== null && legacy !== undefined ? legacy : null;
+}
+
+/**
+ * Return the streaming TTFT p95 when the provider reports streaming
+ * measurements; null otherwise. Used to render the `+TTFT` annotation
+ * on streaming rows without influencing the sort.
+ */
+export function pickTtftP95(localeResult) {
+    if (!localeResult) return null;
+    const t = localeResult.ttftP95Ms;
+    return t !== null && t !== undefined ? t : null;
+}
 
 export const METRIC_KEYS = Object.keys(METRICS);
 

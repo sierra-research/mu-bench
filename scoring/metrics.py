@@ -8,6 +8,11 @@ edit operations (substitutions + deletions + insertions) and the
 reference word count. Per-locale WER is the ratio of summed edits to
 summed reference words across the locale's utterances; overall WER is
 the unweighted mean of per-locale corpus WERs (computed in scoring.score).
+
+Silent clips with a non-``<unintelligible>`` empty gold contribute any
+hypothesis words as pure insertion errors. Both numerator and denominator
+receive the hyp word count so silence hallucinations show up in corpus WER
+directly rather than being silently dropped.
 """
 
 import re
@@ -25,13 +30,50 @@ from scoring.llm import (
 
 
 def _load_prompts():
-    """Lazy-load scoring prompts so modules that don't need LLM calls can import metrics freely."""
-    from scoring.prompts import (
-        NORMALIZE_AGAINST_GOLD_PROMPT,
-        SIGNIFICANT_WORD_ERRORS_PROMPT,
-    )
+    """Lazy-load scoring prompts so modules that don't need LLM calls can import metrics freely.
 
-    return NORMALIZE_AGAINST_GOLD_PROMPT, SIGNIFICANT_WORD_ERRORS_PROMPT
+    Returns (normalize_prompt, sig_errors_prompt). Prefers the new split
+    prompts introduced for canonical gold normalization (item 1):
+      - ``NORMALIZE_PRED_AGAINST_GOLD_PROMPT`` (blind-gold + prediction)
+    and falls back to the legacy ``NORMALIZE_AGAINST_GOLD_PROMPT`` when the
+    secret ``scoring/prompts.py`` hasn't been updated yet.
+    """
+    from scoring import prompts as _prompts  # type: ignore[attr-defined]
+
+    normalize_prompt = getattr(_prompts, "NORMALIZE_PRED_AGAINST_GOLD_PROMPT", None)
+    if normalize_prompt is None:
+        normalize_prompt = getattr(_prompts, "NORMALIZE_AGAINST_GOLD_PROMPT", None)
+    if normalize_prompt is None:
+        raise ImportError(
+            "scoring.prompts is missing NORMALIZE_PRED_AGAINST_GOLD_PROMPT "
+            "(and legacy NORMALIZE_AGAINST_GOLD_PROMPT). Make sure the "
+            "SCORING_PROMPTS_PY secret has been injected."
+        )
+    sig_prompt = _prompts.SIGNIFICANT_WORD_ERRORS_PROMPT
+    return normalize_prompt, sig_prompt
+
+
+def _load_gold_prompt() -> str:
+    """Return the canonical gold-only normalization prompt.
+
+    Prefers ``NORMALIZE_GOLD_PROMPT``. Falls back to the legacy
+    ``NORMALIZE_AGAINST_GOLD_PROMPT`` (which also receives the prediction,
+    but callers pass an empty ``actual_transcript``) when the split prompts
+    haven't been deployed yet.
+    """
+    from scoring import prompts as _prompts  # type: ignore[attr-defined]
+
+    gold_prompt = getattr(_prompts, "NORMALIZE_GOLD_PROMPT", None)
+    if gold_prompt is not None:
+        return gold_prompt
+    legacy = getattr(_prompts, "NORMALIZE_AGAINST_GOLD_PROMPT", None)
+    if legacy is not None:
+        return legacy
+    raise ImportError(
+        "scoring.prompts is missing NORMALIZE_GOLD_PROMPT (and legacy "
+        "NORMALIZE_AGAINST_GOLD_PROMPT). Make sure the SCORING_PROMPTS_PY "
+        "secret has been injected."
+    )
 
 
 @dataclass
@@ -218,22 +260,44 @@ def _wer_components(tok_gold: str, tok_pred: str) -> Tuple[int, int]:
     return edits, ref_words
 
 
+def _silence_hallucination_components(tok_pred: str) -> Tuple[int, int]:
+    """Return (edits, ref_words) when the gold is empty (silent clip).
+
+    Every hypothesis word is a pure insertion, so both the numerator
+    (edits) and denominator (ref_words) get the hyp word count. This
+    folds silence hallucinations into corpus WER instead of dropping them.
+
+    Returns (0, 0) for a truly silent pair (both gold and pred empty);
+    `compute_wer` maps that to a no-op contribution.
+    """
+    hyp_words = len(tok_pred.split()) if tok_pred else 0
+    return hyp_words, hyp_words
+
+
 def compute_wer(rows: List[TranscriptRow]) -> List[WERResult]:
     """Compute per-utterance WER components on pre-normalized transcripts.
 
     Records per-utterance edits and reference word count so that callers can
-    aggregate corpus WER (sum(edits) / sum(ref_words)) per locale. The
-    per-utterance `wer` rate is also returned for distributions and
-    back-compat.
+    aggregate corpus WER (sum(edits) / sum(ref_words)) per locale.
 
     Expects rows with gold and predicted already normalized (via
     scoring.normalize). Uses character-level tokenization for CJK locales,
     so CJK WER is effectively character-level.
+
+    Silent-clip handling (item 6): when ``r.gold`` is empty but not
+    ``<unintelligible>``, every hyp word contributes as a pure insertion
+    to both the numerator and denominator; the per-utterance ``wer`` stays
+    ``None`` for silent/silent pairs (``0/0``) to avoid corrupting
+    distribution plots, but corpus sums are unaffected because we add 0/0.
     """
     results = []
     for r in rows:
-        if is_unintelligible(r.gold) or not r.gold:
+        if is_unintelligible(r.gold):
             w, edits, ref_words = None, None, None
+        elif not r.gold:
+            tok_pred = tokenize_for_alignment(r.predicted, r.locale)
+            edits, ref_words = _silence_hallucination_components(tok_pred)
+            w = 1.0 if edits > 0 else None
         else:
             tok_gold = tokenize_for_alignment(r.gold, r.locale)
             tok_pred = tokenize_for_alignment(r.predicted, r.locale)
@@ -262,17 +326,21 @@ def compute_simple_wer(rows: List[TranscriptRow]) -> List[WERResult]:
 
     Uses `normalize_for_simple_wer` so word boundaries are preserved and
     both the per-utterance rate and corpus components are meaningful.
+
+    Silent-clip handling matches ``compute_wer`` — see that docstring.
     """
     results = []
     for r in rows:
-        if is_unintelligible(r.gold) or not r.gold:
+        if is_unintelligible(r.gold):
             w, edits, ref_words = None, None, None
             norm_g, norm_p = None, None
         else:
             norm_g = normalize_for_simple_wer(r.gold)
             norm_p = normalize_for_simple_wer(r.predicted)
             if not norm_g:
-                w, edits, ref_words = None, None, None
+                # Silent (non-unintelligible) gold — count hyp words as insertions.
+                edits, ref_words = _silence_hallucination_components(norm_p)
+                w = 1.0 if edits > 0 else None
             else:
                 edits, ref_words = _wer_components(norm_g, norm_p)
                 w = (edits / ref_words) if ref_words > 0 else None
@@ -283,8 +351,8 @@ def compute_simple_wer(rows: List[TranscriptRow]) -> List[WERResult]:
                 utterance_id=r.utterance_id,
                 gold=r.gold,
                 predicted=r.predicted,
-                normalized_gold=norm_g if r.gold else None,
-                normalized_predicted=norm_p if r.gold else None,
+                normalized_gold=norm_g,
+                normalized_predicted=norm_p,
                 wer=w,
                 edits=edits,
                 ref_words=ref_words,

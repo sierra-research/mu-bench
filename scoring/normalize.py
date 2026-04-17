@@ -1,9 +1,21 @@
-"""LLM-normalize submission transcripts for fair WER comparison.
+"""LLM-normalize submission predictions for fair WER comparison.
 
-Normalizes both gold and predicted transcripts symmetrically to a common
-format (lowercase, numbers to words, fillers removed, CJK homophones
-resolved for proper nouns). Writes normalized predicted as <id>.txt and
-normalized gold as <id>.gold.txt.
+The gold side of the comparison is produced **once** from ``manifest.json``
+by ``scoring.normalize_gold`` and lives under
+``submissions/normalized/_gold/<locale>/<id>.gold.txt`` — it is the same
+string every provider is scored against, so that provider-conditioned
+normalization drift cannot leak into the leaderboard (item 1 of the
+fairness-fixes plan).
+
+This module normalizes only the **predicted** side. It reads the canonical
+normalized gold for reference (so the LLM knows the target style), and
+writes ``<id>.txt`` per utterance. The submitter-specific
+``<id>.gold.txt`` files are no longer written here; consumers should read
+the canonical cache instead.
+
+For back-compat (and so the legacy ``NORMALIZE_AGAINST_GOLD_PROMPT`` still
+works), this script falls back to the old symmetric-normalization flow
+when the new ``NORMALIZE_PRED_AGAINST_GOLD_PROMPT`` isn't available yet.
 
 Usage:
     python -m scoring.normalize --submission-dir submissions/raw/deepgram-nova3
@@ -18,8 +30,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from scoring.llm import NORMALIZE_SCHEMA, get_responses, load_responses
+from scoring.llm import (
+    NORMALIZE_PRED_SCHEMA,
+    NORMALIZE_SCHEMA,
+    get_responses,
+    load_responses,
+)
 from scoring.metrics import is_unintelligible
+from scoring.normalize_gold import GOLD_CACHE_DIR
 
 TARGET_LOCALES = ["en-US", "es-MX", "tr-TR", "vi-VN", "zh-CN"]
 
@@ -39,6 +57,25 @@ def load_ground_truth_from_manifest(manifest_path: Path) -> dict[str, dict[str, 
             gt[locale] = {}
         gt[locale][utt["id"]] = utt["transcript"]
     return gt
+
+
+def load_canonical_gold(cache_dir: Path) -> dict[tuple[str, str], str]:
+    """Load canonical normalized gold from ``submissions/normalized/_gold``.
+
+    Returns a mapping ``{(locale, utterance_id): normalized_gold_text}``.
+    Missing files are skipped (caller decides whether that's fatal).
+    """
+    gold: dict[tuple[str, str], str] = {}
+    if not cache_dir.exists():
+        return gold
+    for locale_dir in cache_dir.iterdir():
+        if not locale_dir.is_dir():
+            continue
+        locale = locale_dir.name
+        for gf in locale_dir.glob("*.gold.txt"):
+            uid = gf.name[: -len(".gold.txt")]
+            gold[(locale, uid)] = gf.read_text(encoding="utf-8").strip()
+    return gold
 
 
 def load_transcript_pairs(
@@ -68,10 +105,32 @@ def load_transcript_pairs(
     return rows
 
 
-def main():
-    from scoring.prompts import NORMALIZE_AGAINST_GOLD_PROMPT
+def _select_pred_prompt() -> tuple[str, dict, str]:
+    """Return (prompt_template, response_schema, mode).
 
-    parser = argparse.ArgumentParser(description="LLM-normalize submission transcripts")
+    Prefers the new prediction-only prompt (gold is already normalized and
+    passed in only for style reference). Falls back to the legacy symmetric
+    prompt. ``mode`` is one of ``"pred_only"`` or ``"legacy_symmetric"``
+    and controls how we pull fields out of the response.
+    """
+    from scoring import prompts as _prompts  # type: ignore[attr-defined]
+
+    pred_prompt = getattr(_prompts, "NORMALIZE_PRED_AGAINST_GOLD_PROMPT", None)
+    if pred_prompt is not None:
+        return pred_prompt, NORMALIZE_PRED_SCHEMA, "pred_only"
+    legacy = getattr(_prompts, "NORMALIZE_AGAINST_GOLD_PROMPT", None)
+    if legacy is not None:
+        print("WARNING: using legacy NORMALIZE_AGAINST_GOLD_PROMPT; gold will be re-derived per prediction.")
+        return legacy, NORMALIZE_SCHEMA, "legacy_symmetric"
+    raise ImportError(
+        "scoring.prompts is missing NORMALIZE_PRED_AGAINST_GOLD_PROMPT "
+        "(and legacy NORMALIZE_AGAINST_GOLD_PROMPT). Make sure the "
+        "SCORING_PROMPTS_PY secret has been injected."
+    )
+
+
+def main():
+    parser = argparse.ArgumentParser(description="LLM-normalize submission predictions against canonical gold")
     parser.add_argument("--submission-dir", type=Path, required=True, help="Submission directory")
     parser.add_argument(
         "--manifest",
@@ -84,6 +143,15 @@ def main():
         type=Path,
         default=None,
         help="Output directory (default: submissions/normalized/<name>)",
+    )
+    parser.add_argument(
+        "--gold-cache-dir",
+        type=Path,
+        default=GOLD_CACHE_DIR,
+        help=(
+            "Canonical gold cache dir (default: submissions/normalized/_gold). "
+            "Produced by `python -m scoring.normalize_gold`."
+        ),
     )
     parser.add_argument("--num-workers", type=int, default=15, help="Parallel LLM workers")
     parser.add_argument("--locales", nargs="+", default=None, help="Limit to specific locales (e.g. en-US zh-CN)")
@@ -104,11 +172,24 @@ def main():
         normalized_dir = Path("submissions/normalized") / submission_name
         normalized_dir = normalized_dir.resolve()
 
+    gold_cache_dir = args.gold_cache_dir.resolve()
+
     print(f"Submission dir: {submission_dir}")
-    print(f"Output dir: {normalized_dir}")
+    print(f"Output dir:     {normalized_dir}")
+    print(f"Gold cache:     {gold_cache_dir}")
 
     # Load ground truth from manifest
     ground_truth = load_ground_truth_from_manifest(manifest_path)
+
+    # Load the canonical gold cache (may be empty if normalize_gold hasn't run).
+    canonical_gold = load_canonical_gold(gold_cache_dir)
+    if canonical_gold:
+        print(f"Loaded {len(canonical_gold)} canonical normalized gold entries.")
+    else:
+        print(
+            "WARNING: canonical gold cache is empty. Run `python -m scoring.normalize_gold` "
+            "first for item-1 fairness. Falling back to raw manifest gold in prompts."
+        )
 
     # Load pairs
     print("Loading transcript pairs...")
@@ -178,6 +259,9 @@ def main():
         print("All files already normalized")
         return
 
+    prompt_template, response_schema, prompt_mode = _select_pred_prompt()
+    print(f"Using prompt mode: {prompt_mode}")
+
     total = len(to_normalize)
     batch_size = 100
     print(f"Normalizing {total} pairs with {args.num_workers} workers in batches of {batch_size}...")
@@ -207,16 +291,19 @@ def main():
             batch = to_normalize[batch_start:batch_end]
             print(f"Batch {batch_start + 1}-{batch_end} / {total}...")
 
-            prompts = [
-                NORMALIZE_AGAINST_GOLD_PROMPT.format(expected_transcript=gold, actual_transcript=predicted)
-                for _, _, gold, predicted in batch
-            ]
+            prompts = []
+            for locale, uid, gold, predicted in batch:
+                # Prefer the canonical normalized gold as the reference
+                # string passed to the LLM; fall back to the raw manifest
+                # gold if the cache isn't populated yet.
+                gold_ref = canonical_gold.get((locale, uid), gold)
+                prompts.append(prompt_template.format(expected_transcript=gold_ref, actual_transcript=predicted))
 
             try:
                 responses = get_responses(
                     prompts,
                     num_workers=args.num_workers,
-                    response_format=NORMALIZE_SCHEMA,
+                    response_format=response_schema,
                 )
                 loaded = load_responses(responses)
             except Exception as e:
@@ -229,10 +316,8 @@ def main():
                 out_file = normalized_dir / locale / filename
 
                 norm_pred = None
-                norm_gold = None
-                if i < len(loaded) and loaded[i] is not None and isinstance(loaded[i], dict):
+                if i < len(loaded) and isinstance(loaded[i], dict):
                     norm_pred = loaded[i].get("normalized_actual")
-                    norm_gold = loaded[i].get("normalized_expected")
 
                 if norm_pred is None:
                     failed += 1
@@ -241,10 +326,6 @@ def main():
 
                 out_file.parent.mkdir(parents=True, exist_ok=True)
                 out_file.write_text(norm_pred, encoding="utf-8")
-
-                if norm_gold is not None:
-                    gold_file = normalized_dir / locale / f"{utterance_id}.gold.txt"
-                    gold_file.write_text(norm_gold, encoding="utf-8")
 
                 comp_writer.writerow([locale, filename, gold, predicted, norm_pred])
                 saved += 1

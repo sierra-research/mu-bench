@@ -3,6 +3,23 @@
 Walks the results/ directory, reads each provider's scores.json, and
 produces a single leaderboard.json consumed by the leaderboard web app.
 
+Propagates the new fields introduced by the fairness-fixes plan so the
+UI can render them:
+
+  * ``completeP50Ms`` / ``completeP95Ms`` — unified cross-protocol
+    latency metric (batch round-trip or streaming time-to-complete).
+  * ``ttftP50Ms`` / ``ttftP95Ms`` — streaming-only, rendered as the
+    ``+TTFT`` annotation in the UI.
+  * ``latencyMeta`` — ``{protocol, region}`` so the UI can stamp a
+    badge on each row. Region is also recorded here (not shown in the
+    main row per plan, but available via the data file).
+  * ``meta.config`` — inference-config disclosure surfaced in the
+    provider detail panel.
+
+Legacy ``latencyP50Ms`` / ``latencyP95Ms`` are kept as aliases of the
+unified ``complete*`` fields so the UI fallback path works even when an
+old scores.json hasn't been re-scored yet.
+
 Usage:
     python -m scoring.update_leaderboard
 """
@@ -18,6 +35,36 @@ LOCALE_LABELS = {
     "zh-CN": {"label": "Chinese (CN)", "flag": "\U0001f1e8\U0001f1f3"},
 }
 
+# Per-locale latency fields propagated into leaderboard.json.
+LATENCY_LOCALE_FIELDS = (
+    "completeP50Ms",
+    "completeP95Ms",
+    "roundTripP50Ms",
+    "roundTripP95Ms",
+    "ttftP50Ms",
+    "ttftP95Ms",
+    "latencyP50Ms",
+    "latencyP95Ms",
+)
+
+
+def _extract_locale_fields(data: dict) -> dict:
+    out = {
+        "wer": data.get("wer"),
+        "significantWer": data.get("significantWer"),
+    }
+    for field in LATENCY_LOCALE_FIELDS:
+        if field in data:
+            out[field] = data.get(field)
+    # Back-compat aliases: if a score.json was produced before this release
+    # it only has latencyP50/95Ms. Populate completeP50/95Ms from them so
+    # the UI can sort on a single field without a fallback.
+    if out.get("completeP50Ms") is None and "latencyP50Ms" in data:
+        out["completeP50Ms"] = data["latencyP50Ms"]
+    if out.get("completeP95Ms") is None and "latencyP95Ms" in data:
+        out["completeP95Ms"] = data["latencyP95Ms"]
+    return out
+
 
 def main():
     results_dir = Path("results")
@@ -32,22 +79,32 @@ def main():
         locale_results = {}
         for locale, data in scores.get("locales", {}).items():
             all_locales.add(locale)
-            locale_results[locale] = {
-                "wer": data.get("wer"),
-                "significantWer": data.get("significantWer"),
-                "latencyP50Ms": data.get("latencyP50Ms"),
-                "latencyP95Ms": data.get("latencyP95Ms"),
-            }
+            locale_results[locale] = _extract_locale_fields(data)
 
-        providers.append(
-            {
-                "id": provider_id,
-                "model": scores.get("model", provider_id),
-                "organization": scores.get("organization", ""),
-                "modelDate": scores.get("date", ""),
-                "localeResults": locale_results,
+        overall = scores.get("overall") or {}
+        latency_meta = scores.get("latencyMeta") or {}
+        meta = scores.get("meta") or {}
+
+        provider_entry = {
+            "id": provider_id,
+            "model": scores.get("model", provider_id),
+            "organization": scores.get("organization", ""),
+            "modelDate": scores.get("date", ""),
+            "localeResults": locale_results,
+        }
+        if overall:
+            provider_entry["overall"] = _extract_locale_fields(overall) if isinstance(overall, dict) else None
+        if latency_meta:
+            provider_entry["latencyMeta"] = {
+                "protocol": latency_meta.get("protocol", "batch"),
+                "region": latency_meta.get("region", "unknown"),
             }
-        )
+        # Surface the declared inference-config block for the provider
+        # detail panel. Empty dict is fine; UI shows nothing in that case.
+        config_block = meta.get("config") if isinstance(meta, dict) else None
+        if isinstance(config_block, dict) and config_block:
+            provider_entry["inferenceConfig"] = config_block
+        providers.append(provider_entry)
 
     locales = []
     for code in sorted(all_locales):
