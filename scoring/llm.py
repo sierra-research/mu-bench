@@ -32,22 +32,6 @@ NORMALIZE_SCHEMA = {
     },
 }
 
-QUALITY_SCORE_SCHEMA = {
-    "type": "json_schema",
-    "json_schema": {
-        "name": "quality_score_response",
-        "strict": True,
-        "schema": {
-            "type": "object",
-            "properties": {
-                "score": {"type": "integer"},
-            },
-            "required": ["score"],
-            "additionalProperties": False,
-        },
-    },
-}
-
 SIGNIFICANT_WER_SCHEMA = {
     "type": "json_schema",
     "json_schema": {

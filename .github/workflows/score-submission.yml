@@ -191,19 +191,17 @@ jobs:
                 ') for details.';
             } else {
               const scores = JSON.parse(fs.readFileSync(scoresPath, 'utf8'));
-              let table = '| Locale | WER | Sig. WER | Quality |\n|--------|-----|----------|--------|\n';
+              let table = '| Locale | WER | Sig. WER |\n|--------|-----|----------|\n';
               for (const [locale, data] of Object.entries(scores.locales || {})) {
                 const w = data.wer !== null ? `${(data.wer * 100).toFixed(1)}%` : '-';
                 const s = data.significantWer !== null ? `${(data.significantWer * 100).toFixed(1)}%` : '-';
-                const q = data.qualityScore !== null ? data.qualityScore.toFixed(2) : '-';
-                table += `| ${locale} | ${w} | ${s} | ${q} |\n`;
+                table += `| ${locale} | ${w} | ${s} |\n`;
               }
               if (scores.overall) {
                 const o = scores.overall;
                 const w = o.wer !== null ? `${(o.wer * 100).toFixed(1)}%` : '-';
                 const s = o.significantWer !== null ? `${(o.significantWer * 100).toFixed(1)}%` : '-';
-                const q = o.qualityScore !== null ? o.qualityScore.toFixed(2) : '-';
-                table += `| **Overall** | **${w}** | **${s}** | **${q}** |\n`;
+                table += `| **Overall** | **${w}** | **${s}** |\n`;
               }
               body = `## Scoring Results for ${scores.model || name}\n\n${table}\n\n` +
                 `Results saved to \`results/${name}/scores.json\`. ` +

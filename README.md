@@ -93,7 +93,6 @@ Scoring is run by maintainers — submitters do not need to run it locally. When
 |--------|-------------|-----------|
 | **WER** | Word Error Rate after LLM normalization | Lower is better |
 | **UER** | Utterance Error Rate — fraction with meaning-changing errors | Lower is better |
-| **Quality Score** | LLM-judged quality on a 0-3 scale | Higher is better |
 | **Latency (p95)** | 95th percentile API response time per utterance (ms) | Lower is better |
 
 Results are posted as a comment on your PR and added to the leaderboard on merge.
@@ -114,7 +113,7 @@ submissions/
 scoring/
   validate.py              # Submission format validation (run locally)
   normalize.py             # LLM-based transcript normalization
-  score.py                 # Metrics computation (WER, quality, sig. WER)
+  score.py                 # Metrics computation (WER, sig. WER)
   metrics.py               # Core metric implementations
   prompts.py               # ⚠️ Gitignored — injected from GitHub secret in CI
 results/

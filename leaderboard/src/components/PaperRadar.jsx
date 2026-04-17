@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { PROVIDERS as DATA_PROVIDERS } from "../data/data.js";
-import { SHOW_QUALITY } from "../utils/metrics.js";
 import "./PaperRadar.css";
 
 const LOCALES = ["en-US", "es-MX", "tr-TR", "vi-VN", "zh-CN"];
@@ -49,7 +48,6 @@ function buildScores() {
             scores[p.id][locale] = {
                 wer: lr.wer,
                 sigWer: lr.significantWer,
-                quality: lr.qualityScore,
                 latency: lr.latencyP95Ms,
             };
         }
@@ -58,14 +56,11 @@ function buildScores() {
 }
 const SCORES = buildScores();
 
-const ALL_METRICS = [
+const METRICS = [
     { key: "sigWer", label: "UER", max: 0.6, invert: true },
     { key: "wer", label: "WER", max: 0.55, invert: true },
-    { key: "quality", label: "Quality", max: 3.0, invert: false },
     { key: "latency", label: "Latency (p95)", max: 2500, invert: true },
 ];
-
-const METRICS = SHOW_QUALITY ? ALL_METRICS : ALL_METRICS.filter((m) => m.key !== "quality");
 
 const CX = 200;
 const CY = 200;

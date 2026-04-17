@@ -35,7 +35,6 @@ def main():
             locale_results[locale] = {
                 "wer": data.get("wer"),
                 "significantWer": data.get("significantWer"),
-                "qualityScore": data.get("qualityScore"),
                 "latencyP50Ms": data.get("latencyP50Ms"),
                 "latencyP95Ms": data.get("latencyP95Ms"),
             }

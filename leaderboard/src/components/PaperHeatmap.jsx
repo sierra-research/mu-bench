@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { PROVIDERS as DATA_PROVIDERS } from "../data/data.js";
-import { SHOW_QUALITY } from "../utils/metrics.js";
 import "./PaperHeatmap.css";
 
 const LOCALES = ["en-US", "es-MX", "tr-TR", "vi-VN", "zh-CN"];
@@ -37,7 +36,6 @@ function buildScores() {
             scores[p.id][locale] = {
                 wer: lr.wer,
                 sigWer: lr.significantWer,
-                quality: lr.qualityScore,
                 latencyP50: lr.latencyP50Ms,
                 latency: lr.latencyP95Ms,
             };
@@ -47,20 +45,16 @@ function buildScores() {
 }
 const SCORES = buildScores();
 
-const ALL_METRICS = [
+const METRICS = [
     { key: "sigWer", label: "UER", format: (v) => `${(v * 100).toFixed(1)}%`, lower: true },
     { key: "wer", label: "WER", format: (v) => `${(v * 100).toFixed(1)}%`, lower: true },
-    { key: "quality", label: "Quality", format: (v) => v.toFixed(2), lower: false },
     { key: "latencyP50", label: "Latency (p50)", format: (v) => `${Math.round(v)} ms`, lower: true },
     { key: "latency", label: "Latency (p95)", format: (v) => `${Math.round(v)} ms`, lower: true },
 ];
 
-const METRICS = SHOW_QUALITY ? ALL_METRICS : ALL_METRICS.filter((m) => m.key !== "quality");
-
 const COLOR_RANGES = {
     wer: { min: 0, max: 0.55 },
     sigWer: { min: 0, max: 0.55 },
-    quality: { min: 1.5, max: 3.0 },
     latencyP50: { min: 200, max: 1400 },
     latency: { min: 400, max: 2500 },
 };
