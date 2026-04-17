@@ -131,11 +131,24 @@ export default function Leaderboard() {
     };
 
     const rankedProviders = useMemo(() => {
-        const withScores = PROVIDERS.map((p) => ({
-            ...p,
-            sigWer: getProviderScore(p, "significantWer", locale),
-            latency: getProviderScore(p, "latencyP95Ms", locale),
-        })).filter((p) => p.sigWer !== null);
+        const withScores = PROVIDERS.map((p) => {
+            const localeResult = locale === "overall" ? p.overall : p.localeResults?.[locale];
+            const ttft =
+                localeResult && localeResult.ttftP95Ms !== undefined && localeResult.ttftP95Ms !== null
+                    ? localeResult.ttftP95Ms
+                    : null;
+            return {
+                ...p,
+                sigWer: getProviderScore(p, "significantWer", locale),
+                // Unified cross-protocol sortable metric. getProviderScore
+                // prefers `completeP95Ms` (batch round-trip or streaming
+                // time-to-complete) and falls back to the legacy
+                // `latencyP95Ms` when a score.json hasn't been re-scored.
+                latency: getProviderScore(p, "latencyP95Ms", locale),
+                ttft,
+                protocol: p.latencyMeta?.protocol || "batch",
+            };
+        }).filter((p) => p.sigWer !== null);
 
         const dir = getSortDirection(sortBy);
         withScores.sort((a, b) => {
@@ -231,8 +244,10 @@ export default function Leaderboard() {
                                 <th
                                     className={`col-latency sortable ${sortBy === "latencyP95Ms" ? "sorted" : ""}`}
                                     onClick={() => setSortBy("latencyP95Ms")}
+                                    title="Time to complete transcript (request-to-response round-trip for batch; send-to-final-transcript for streaming). Apples-to-apples across protocols."
                                 >
                                     Latency (p95) {sortBy === "latencyP95Ms" ? "▲" : ""}
+                                    <span className="col-latency-footnote">{"\u2020"}</span>
                                 </th>
                                 <th className="col-arrow"></th>
                             </tr>
@@ -260,7 +275,16 @@ export default function Leaderboard() {
                 </div>
 
                 <p className="uer-footnote">
-                    * Fraction of utterances containing at least one meaning-changing transcription error.
+                    * Fraction of utterances containing at least one meaning-changing transcription error. Per-locale
+                    WER / UER are computed at the corpus level (total edits over total reference words within the
+                    locale); the overall column is the unweighted mean of the per-locale values so each locale weighs
+                    equally regardless of utterance count.
+                </p>
+                <p className="uer-footnote">
+                    &dagger; Latency p95 is time to complete transcript &mdash; request-to-response round-trip for batch
+                    providers, send-to-final-transcript for streaming providers. For streaming submissions, TTFT (time
+                    to first partial transcript) is shown as an auxiliary &plus;TTFT annotation but is not used in the
+                    sort.
                 </p>
 
                 <div className="action-cards">
@@ -343,7 +367,27 @@ function ProviderRow({ provider, sigWerMetric, latencyMetric, onRowClick }) {
             </td>
             <td className="col-latency">
                 {provider.latency !== null ? (
-                    <span className="score-value">{latencyMetric.format(provider.latency)}</span>
+                    <span className="latency-cell">
+                        <span className="score-value">{latencyMetric.format(provider.latency)}</span>
+                        <span
+                            className={`latency-badge latency-badge-${provider.protocol}`}
+                            title={
+                                provider.protocol === "streaming"
+                                    ? "Streaming: primary number is time from request send to final transcript. TTFT shown below."
+                                    : "Batch: request-to-response round-trip."
+                            }
+                        >
+                            {provider.protocol}
+                        </span>
+                        {provider.ttft !== null && (
+                            <span
+                                className="latency-ttft"
+                                title="Streaming TTFT (time to first partial transcript). Informational; not sortable because batch has no analog."
+                            >
+                                +TTFT {latencyMetric.format(provider.ttft)}
+                            </span>
+                        )}
+                    </span>
                 ) : (
                     <span className="no-data">&mdash;</span>
                 )}
@@ -468,6 +512,46 @@ function ProviderDetailOverall({ provider, providerId }) {
     );
 }
 
+/**
+ * Render the inference-config block declared in the provider's
+ * metadata.yaml. Shows a small key -> value table and a "Default-only"
+ * badge when every key is set to `default`. Omits the section entirely
+ * if the provider's scores.json predates the config block.
+ */
+function InferenceConfigPanel({ provider }) {
+    const cfg = provider.inferenceConfig;
+    if (!cfg || typeof cfg !== "object" || Object.keys(cfg).length === 0) {
+        return null;
+    }
+    const entries = Object.entries(cfg);
+    const allDefault = entries.every(([, v]) => typeof v === "string" && v.trim() === "default");
+    return (
+        <div className="collapsible-section">
+            <div className="inference-config-header">
+                <span className="collapsible-label">Inference config</span>
+                {allDefault && (
+                    <span
+                        className="inference-config-default-badge"
+                        title="Every declared config key is set to the provider default."
+                    >
+                        Default-only
+                    </span>
+                )}
+            </div>
+            <table className="scores-table">
+                <tbody>
+                    {entries.map(([k, v]) => (
+                        <tr key={k}>
+                            <td>{k}</td>
+                            <td>{v || "\u2014"}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    );
+}
+
 function ProviderDetailLocale({ provider, locale }) {
     return (
         <table className="scores-table">
@@ -516,6 +600,8 @@ function ProviderDetail({ providerId, providers, locale, onClose }) {
                 ) : (
                     <ProviderDetailLocale provider={provider} locale={locale} />
                 )}
+
+                <InferenceConfigPanel provider={provider} />
 
                 <div className="provider-detail-footer">
                     <a

@@ -150,9 +150,20 @@ jobs:
           fi
           printenv SCORING_PROMPTS_PY > scoring/prompts.py
 
+      - name: Refresh canonical gold cache
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SCORING_MODEL: gpt-4.1-2025-04-14
+          SCORING_TEMPERATURE: "0.0"
+          SCORING_SEED: "7"
+        run: python -m scoring.normalize_gold --manifest manifest.json
+
       - name: Normalize submissions
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SCORING_MODEL: gpt-4.1-2025-04-14
+          SCORING_TEMPERATURE: "0.0"
+          SCORING_SEED: "7"
         run: |
           python -m scoring.normalize \
             --submission-dir "${{ steps.detect.outputs.dir }}" \
@@ -162,6 +173,9 @@ jobs:
       - name: Calculate metrics
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SCORING_MODEL: gpt-4.1-2025-04-14
+          SCORING_TEMPERATURE: "0.0"
+          SCORING_SEED: "7"
         run: |
           python -m scoring.score \
             --submission-dir "${{ steps.detect.outputs.dir }}" \
@@ -169,6 +183,13 @@ jobs:
             --manifest manifest.json \
             --output-dir "results/${{ steps.detect.outputs.name }}" \
             --num-workers 8
+
+      - name: Merge latency statistics into scores.json
+        run: |
+          python scripts/latency_stats.py \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --manifest manifest.json \
+            --output-dir "results/${{ steps.detect.outputs.name }}"
 
       - name: Update leaderboard.json
         run: python -m scoring.update_leaderboard

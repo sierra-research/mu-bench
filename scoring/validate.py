@@ -5,6 +5,15 @@ against manifest.json. Run this locally before opening a PR.
 
 Usage:
     python scoring/validate.py submissions/raw/your-model-name --manifest manifest.json
+
+New in the fairness-fixes release:
+  * ``metadata.yaml`` must include a ``config:`` block with the six
+    required keys (item 5). Values must be ``default`` or an explicit
+    disclosure string; non-default values require an ``override: <key>``
+    line in ``notes``.
+  * ``latency.json`` may be either the legacy flat map (warns during the
+    back-compat window) or the new schema with ``meta.protocol``,
+    ``meta.region``, and protocol-specific per-entry fields (item 4).
 """
 
 import argparse
@@ -18,6 +27,33 @@ except ImportError:
     yaml = None
 
 REQUIRED_METADATA_FIELDS = ["model", "organization", "version", "date"]
+
+# Required inference-config disclosure (item 5). Keys are fixed; values
+# must be ``default`` unless explicitly disclosed with an ``override:`` line
+# in ``notes``.
+REQUIRED_CONFIG_KEYS = (
+    "beamSize",
+    "languageHint",
+    "customVocabulary",
+    "noiseSuppression",
+    "domainAdaptation",
+    "keywordBoosting",
+)
+
+# Allowed regions for ``latency.json meta.region``. Small pinned set so
+# cross-provider latency comparisons stay apples-to-apples. Expand by PR
+# when a new region is needed; adding a region requires a maintainer
+# decision because it changes what counts as a valid submission.
+ALLOWED_LATENCY_REGIONS = {
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+    "eu-west-1",
+    "eu-central-1",
+    "ap-southeast-1",
+    "ap-northeast-1",
+}
 
 MAX_FILE_SIZE_BYTES = 10_000
 MAX_TOTAL_SIZE_MB = 50
@@ -46,6 +82,77 @@ def load_manifest(manifest_path):
     return manifest["locales"], locale_ids
 
 
+def _validate_config_block(metadata):
+    """Check the ``config:`` block. Returns a list of issue strings.
+
+    Rules:
+      * ``config`` must be a mapping.
+      * Every required key must be present; no extras allowed.
+      * Each value must be a non-empty string (either ``default`` or an
+        explicit disclosure like ``"10"`` or ``"enabled: 42 terms"``).
+      * If any value is not ``default``, ``notes`` must contain a line
+        ``override: <key>`` (possibly along with free text) so reviewers
+        can see the justification at a glance.
+    """
+    issues = []
+    if "config" not in metadata:
+        issues.append(
+            "metadata is missing required 'config' block. It must declare the six inference-config "
+            f"keys: {', '.join(REQUIRED_CONFIG_KEYS)}. Each value must be 'default' or an explicit "
+            "disclosure string; see submissions/SUBMITTING.md."
+        )
+        return issues
+    cfg = metadata.get("config")
+    if not isinstance(cfg, dict):
+        issues.append("metadata 'config' block must be a YAML mapping")
+        return issues
+
+    present_keys = set(cfg.keys())
+    required = set(REQUIRED_CONFIG_KEYS)
+    missing = required - present_keys
+    extra = present_keys - required
+    if missing:
+        issues.append(f"metadata.config is missing required key(s): {', '.join(sorted(missing))}")
+    if extra:
+        issues.append(f"metadata.config has unknown key(s): {', '.join(sorted(extra))} (not in the v1 schema)")
+
+    non_default_keys = []
+    for key in REQUIRED_CONFIG_KEYS:
+        if key not in cfg:
+            continue
+        val = cfg[key]
+        if val is None or (isinstance(val, str) and val.strip() == ""):
+            issues.append(f"metadata.config.{key} must be a non-empty string ('default' or an explicit value)")
+            continue
+        if not isinstance(val, str):
+            # YAML might load "10" as int; accept after coercion but require string in file.
+            issues.append(
+                f"metadata.config.{key} must be a string (got {type(val).__name__}); "
+                f'quote the value in metadata.yaml, e.g. "{val}"'
+            )
+            continue
+        if val.strip() != "default":
+            non_default_keys.append(key)
+
+    if non_default_keys:
+        notes = metadata.get("notes") or ""
+        notes_str = notes if isinstance(notes, str) else ""
+        notes_lines = [ln.strip() for ln in notes_str.splitlines()]
+        missing_overrides = []
+        for key in non_default_keys:
+            marker = f"override: {key}"
+            if not any(ln.startswith(marker) for ln in notes_lines):
+                missing_overrides.append(key)
+        if missing_overrides:
+            issues.append(
+                "metadata.config declares non-default value(s) without a matching "
+                f"'override: <key>' line in notes: {', '.join(missing_overrides)}. "
+                "Add a line to `notes:` like `override: beamSize because ...` for each."
+            )
+
+    return issues
+
+
 def validate_metadata(submission_dir):
     """Validate metadata.yaml (or metadata.json) exists and has required fields."""
     issues = []
@@ -64,6 +171,10 @@ def validate_metadata(submission_dir):
             for field in REQUIRED_METADATA_FIELDS:
                 if f"{field}:" not in content and f"{field} :" not in content:
                     issues.append(f"metadata.yaml may be missing required field: {field}")
+            if "config:" not in content:
+                issues.append(
+                    "metadata.yaml may be missing required 'config:' block (install PyYAML for a full schema check)"
+                )
             return issues
 
         with open(metadata_path, "r", encoding="utf-8") as f:
@@ -90,6 +201,7 @@ def validate_metadata(submission_dir):
         if field not in metadata or metadata[field] is None or str(metadata[field]).strip() == "":
             issues.append(f"metadata missing required field: {field}")
 
+    issues.extend(_validate_config_block(metadata))
     return issues
 
 
@@ -135,12 +247,182 @@ def validate_submission_safety(submission_dir):
     return issues
 
 
+def _validate_latency_legacy(data, submitted_by_locale, warnings):
+    """Validate the legacy flat latency.json schema.
+
+    Back-compat fence during rollout: accepted with a warning, interpreted
+    as ``protocol=batch``, ``region=unknown``. Drops when the rollout PR
+    migrates every provider to the new schema.
+    """
+    issues = []
+    bad_values = []
+    bare_keys = []
+    for key, val in data.items():
+        if not isinstance(val, (int, float)):
+            bad_values.append(key)
+        if "/" not in key:
+            bare_keys.append(key)
+
+    if bad_values:
+        issues.append(
+            f"latency.json has non-numeric values for {len(bad_values)} key(s); first few: {', '.join(bad_values[:5])}"
+        )
+    if bare_keys:
+        issues.append(
+            f"latency.json has {len(bare_keys)} key(s) without '<locale>/' prefix; keys must be "
+            f"'<locale>/<utterance_id>' (e.g. 'en-US/conv-0-turn-0'). First few: "
+            f"{', '.join(bare_keys[:5])}"
+        )
+
+    required_keys = set()
+    for locale, ids in submitted_by_locale.items():
+        for uid in ids:
+            required_keys.add(f"{locale}/{uid}")
+    missing_keys = required_keys - set(data.keys())
+    if missing_keys:
+        shown = sorted(missing_keys)[:10]
+        more = f" (+{len(missing_keys) - len(shown)} more)" if len(missing_keys) > len(shown) else ""
+        issues.append(
+            f"latency.json is missing {len(missing_keys)} entries that have transcript files:\n"
+            + "\n".join(f"    - {k}" for k in shown)
+            + more
+        )
+
+    extra = set(data.keys()) - required_keys
+    if extra:
+        warnings.append(f"latency.json has {len(extra)} key(s) with no matching transcript (will be ignored)")
+
+    warnings.append(
+        "latency.json is using the legacy flat schema (string keys -> latency ms). "
+        "This is accepted for now as protocol=batch / region=unknown. Migrate to the "
+        "new schema with a 'meta' block and per-entry 'roundTripMs' / 'ttftMs' / "
+        "'completeMs' before the rollout PR lands — see submissions/SUBMITTING.md."
+    )
+    print(f"  latency.json (legacy): {len(data)} entries ({len(required_keys - missing_keys)} match transcripts)")
+    return issues
+
+
+def _validate_latency_new_schema(data, submitted_by_locale, warnings):
+    """Validate the new latency.json schema.
+
+    Top-level shape:
+        {"meta": {"protocol": "batch"|"streaming", "region": "us-east-1", ...},
+         "measurements": {"<locale>/<uid>": {"roundTripMs": 123.4} | ...}}
+    """
+    issues = []
+
+    meta = data.get("meta")
+    measurements = data.get("measurements")
+
+    if not isinstance(meta, dict):
+        issues.append("latency.json 'meta' block is missing or not a mapping")
+    if not isinstance(measurements, dict):
+        issues.append("latency.json 'measurements' block is missing or not a mapping")
+    if issues:
+        return issues
+
+    protocol = meta.get("protocol")
+    if protocol not in {"batch", "streaming"}:
+        issues.append(f"latency.json meta.protocol must be 'batch' or 'streaming'; got {protocol!r}")
+    region = meta.get("region")
+    if not isinstance(region, str) or not region.strip():
+        issues.append("latency.json meta.region is required (non-empty string)")
+    elif region not in ALLOWED_LATENCY_REGIONS:
+        issues.append(
+            f"latency.json meta.region={region!r} is not in the allowed set "
+            f"{sorted(ALLOWED_LATENCY_REGIONS)}. Ask a maintainer to expand the list "
+            "if you need a new region."
+        )
+
+    # Soft meta-fields that we record but don't gate on.
+    if "clientLocation" not in meta:
+        warnings.append("latency.json meta.clientLocation is recommended (e.g. 'aws:us-east-1')")
+    if "concurrency" in meta:
+        conc = meta["concurrency"]
+        if not isinstance(conc, int) or conc < 1:
+            issues.append("latency.json meta.concurrency must be a positive integer")
+        elif conc != 1:
+            warnings.append(
+                f"latency.json meta.concurrency={conc}; cross-provider latency is only comparable at concurrency=1."
+            )
+
+    # Validate per-entry fields by protocol.
+    bad_keys = []
+    missing_fields = []
+    bad_values = []
+    for key, entry in measurements.items():
+        if "/" not in key:
+            bad_keys.append(key)
+            continue
+        if not isinstance(entry, dict):
+            bad_values.append(key)
+            continue
+        if protocol == "batch":
+            rt = entry.get("roundTripMs")
+            if not isinstance(rt, (int, float)):
+                missing_fields.append(f"{key} (missing/invalid roundTripMs)")
+        elif protocol == "streaming":
+            ttft = entry.get("ttftMs")
+            complete = entry.get("completeMs")
+            if not isinstance(ttft, (int, float)):
+                missing_fields.append(f"{key} (missing/invalid ttftMs)")
+            if not isinstance(complete, (int, float)):
+                missing_fields.append(f"{key} (missing/invalid completeMs)")
+
+    if bad_keys:
+        issues.append(
+            f"latency.json measurements has {len(bad_keys)} key(s) without '<locale>/' prefix; "
+            f"first few: {', '.join(bad_keys[:5])}"
+        )
+    if bad_values:
+        issues.append(
+            f"latency.json measurements has {len(bad_values)} non-object entry value(s); "
+            f"first few: {', '.join(bad_values[:5])}"
+        )
+    if missing_fields:
+        shown = missing_fields[:10]
+        more = f" (+{len(missing_fields) - len(shown)} more)" if len(missing_fields) > len(shown) else ""
+        issues.append(
+            f"latency.json measurements has {len(missing_fields)} entry(ies) missing required "
+            f"fields for protocol={protocol}:\n" + "\n".join(f"    - {k}" for k in shown) + more
+        )
+
+    # Coverage against shipped transcripts.
+    required_keys = set()
+    for locale, ids in submitted_by_locale.items():
+        for uid in ids:
+            required_keys.add(f"{locale}/{uid}")
+    missing_keys = required_keys - set(measurements.keys())
+    if missing_keys:
+        shown = sorted(missing_keys)[:10]
+        more = f" (+{len(missing_keys) - len(shown)} more)" if len(missing_keys) > len(shown) else ""
+        issues.append(
+            f"latency.json measurements is missing {len(missing_keys)} entries that have "
+            f"transcript files:\n" + "\n".join(f"    - {k}" for k in shown) + more
+        )
+
+    extra = set(measurements.keys()) - required_keys
+    if extra:
+        warnings.append(
+            f"latency.json measurements has {len(extra)} key(s) with no matching transcript (will be ignored)"
+        )
+
+    print(
+        f"  latency.json (new schema): protocol={protocol}, region={region}, "
+        f"{len(measurements)} entries ({len(required_keys - missing_keys)} match transcripts)"
+    )
+    return issues
+
+
+def _looks_like_new_schema(data) -> bool:
+    return isinstance(data, dict) and "meta" in data and "measurements" in data
+
+
 def validate_latency(submission_dir, submitted_by_locale):
     """Validate latency.json is present, valid, and covers every submitted transcript.
 
-    `submitted_by_locale` is {locale: set(utterance_ids)} — only locales/IDs the
-    submitter actually shipped. Partial-locale submissions are allowed, but within
-    each submitted locale every transcript must have a matching latency entry.
+    Accepts either the legacy flat schema (back-compat during rollout; warns)
+    or the new schema with ``meta`` + ``measurements`` (item 4).
     """
     issues = []
     warnings = []
@@ -158,49 +440,17 @@ def validate_latency(submission_dir, submitted_by_locale):
         return issues, warnings
 
     if not isinstance(data, dict):
-        issues.append("latency.json must be a JSON object mapping '<locale>/<utterance_id>' to latency in ms")
+        issues.append(
+            "latency.json must be a JSON object: either {'meta': ..., 'measurements': ...} (new) "
+            "or a flat map '<locale>/<uid>' -> ms (legacy)"
+        )
         return issues, warnings
 
-    bad_values = []
-    bare_keys = []
-    for key, val in data.items():
-        if not isinstance(val, (int, float)):
-            bad_values.append(key)
-        if "/" not in key:
-            bare_keys.append(key)
+    if _looks_like_new_schema(data):
+        issues.extend(_validate_latency_new_schema(data, submitted_by_locale, warnings))
+    else:
+        issues.extend(_validate_latency_legacy(data, submitted_by_locale, warnings))
 
-    if bad_values:
-        issues.append(
-            f"latency.json has non-numeric values for {len(bad_values)} key(s); first few: {', '.join(bad_values[:5])}"
-        )
-
-    if bare_keys:
-        issues.append(
-            f"latency.json has {len(bare_keys)} key(s) without '<locale>/' prefix; keys must be "
-            f"'<locale>/<utterance_id>' (e.g. 'en-US/conv-0-turn-0'). First few: "
-            f"{', '.join(bare_keys[:5])}"
-        )
-
-    required_keys = set()
-    for locale, ids in submitted_by_locale.items():
-        for uid in ids:
-            required_keys.add(f"{locale}/{uid}")
-
-    missing_keys = required_keys - set(data.keys())
-    if missing_keys:
-        shown = sorted(missing_keys)[:10]
-        more = f" (+{len(missing_keys) - len(shown)} more)" if len(missing_keys) > len(shown) else ""
-        issues.append(
-            f"latency.json is missing {len(missing_keys)} entries that have transcript files:\n"
-            + "\n".join(f"    - {k}" for k in shown)
-            + more
-        )
-
-    extra = set(data.keys()) - required_keys
-    if extra:
-        warnings.append(f"latency.json has {len(extra)} key(s) with no matching transcript (will be ignored)")
-
-    print(f"  latency.json: {len(data)} entries ({len(required_keys - missing_keys)} match shipped transcripts)")
     return issues, warnings
 
 

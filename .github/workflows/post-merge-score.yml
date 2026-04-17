@@ -72,9 +72,24 @@ jobs:
           fi
           printenv SCORING_PROMPTS_PY > scoring/prompts.py
 
+      # Rebuild the canonical gold cache (submissions/normalized/_gold/) if
+      # the manifest gold hash has changed. Idempotent — a no-op when the
+      # cache already matches. See scoring/normalize_gold.py.
+      - name: Refresh canonical gold cache
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # Pinned judge config — keep synchronized across providers.
+          SCORING_MODEL: gpt-4.1-2025-04-14
+          SCORING_TEMPERATURE: "0.0"
+          SCORING_SEED: "7"
+        run: python -m scoring.normalize_gold --manifest manifest.json
+
       - name: Normalize submissions
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SCORING_MODEL: gpt-4.1-2025-04-14
+          SCORING_TEMPERATURE: "0.0"
+          SCORING_SEED: "7"
         run: |
           python -m scoring.normalize \
             --submission-dir "${{ steps.detect.outputs.dir }}" \
@@ -84,6 +99,9 @@ jobs:
       - name: Calculate metrics
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SCORING_MODEL: gpt-4.1-2025-04-14
+          SCORING_TEMPERATURE: "0.0"
+          SCORING_SEED: "7"
         run: |
           python -m scoring.score \
             --submission-dir "${{ steps.detect.outputs.dir }}" \
@@ -92,6 +110,16 @@ jobs:
             --output-dir "results/${{ steps.detect.outputs.name }}" \
             --num-workers 8
 
+      - name: Merge latency statistics into scores.json
+        run: |
+          python scripts/latency_stats.py \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --manifest manifest.json \
+            --output-dir "results/${{ steps.detect.outputs.name }}"
+
+      - name: Check judge-config consistency across providers
+        run: python scripts/check_judge_drift.py --results-dir results
+
       - name: Update leaderboard.json
         run: python -m scoring.update_leaderboard
 
@@ -99,6 +127,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Commit canonical gold cache too — it's a per-repo artifact and
+          # its hash feeds scores.json cache invalidation.
           git add results/ submissions/normalized/
           git diff --cached --quiet || git commit -m "Add scoring results for ${{ steps.detect.outputs.name }}"
           git push

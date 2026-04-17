@@ -607,25 +607,48 @@ export const SAMPLE_UTTERANCES = {
 };
 
 /**
+ * Read one metric value from a localeResults entry.
+ *
+ * Back-compat: for the latency metric we prefer the new unified
+ * cross-protocol field `completeP95Ms` (and p50) and fall back to the
+ * legacy `latencyP95Ms` when a score.json hasn't been re-scored under
+ * the new latency schema yet. See scoring/update_leaderboard.py for the
+ * symmetric producer side.
+ */
+function readMetricValue(result, metricKey) {
+    if (!result) return null;
+    if (metricKey === "latencyP95Ms") {
+        const c = result.completeP95Ms;
+        if (c !== undefined && c !== null) return c;
+    }
+    if (metricKey === "latencyP50Ms") {
+        const c = result.completeP50Ms;
+        if (c !== undefined && c !== null) return c;
+    }
+    const val = result[metricKey];
+    return val !== undefined && val !== null ? val : null;
+}
+
+/**
  * Get the score for a provider given filters.
- * If locale is 'overall', averages across all locales.
+ *
+ * When locale === "overall":
+ *   * Prefer provider.overall[metricKey] (produced by scoring.score's
+ *     locale-macro aggregation so WER and UER use the same weighting).
+ *   * Fall back to averaging per-locale values for legacy leaderboard.json
+ *     files that predate the overall block.
  */
 export function getProviderScore(provider, metricKey, locale) {
     if (locale === "overall") {
-        const scores = LOCALES.map((l) => {
-            const result = provider.localeResults[l.code];
-            return result && result[metricKey] !== undefined && result[metricKey] !== null ? result[metricKey] : null;
-        });
+        const overallVal = readMetricValue(provider.overall, metricKey);
+        if (overallVal !== null) return overallVal;
+        const scores = LOCALES.map((l) => readMetricValue(provider.localeResults[l.code], metricKey));
         if (scores.some((s) => s === null)) return null;
         const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
         return Math.round(avg * 100) / 100;
     }
 
-    const result = provider.localeResults[locale];
-    if (result && result[metricKey] !== undefined && result[metricKey] !== null) {
-        return result[metricKey];
-    }
-    return null;
+    return readMetricValue(provider.localeResults[locale], metricKey);
 }
 
 /**

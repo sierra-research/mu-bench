@@ -91,9 +91,11 @@ Scoring is run by maintainers — submitters do not need to run it locally. When
 
 | Metric | Description | Direction |
 |--------|-------------|-----------|
-| **WER** | Corpus Word Error Rate (sum of word edits / sum of reference words) after LLM normalization. Overall is the unweighted mean of the five per-locale corpus WERs. | Lower is better |
-| **UER** | Utterance Error Rate — fraction with meaning-changing errors | Lower is better |
-| **Latency (p95)** | 95th percentile API response time per utterance (ms) | Lower is better |
+| **WER** | Corpus Word Error Rate (sum of word edits / sum of reference words) after LLM normalization, computed against a canonical per-utterance gold normalized once from `manifest.json` so every provider is scored against the same reference. Silent clips with non-`<unintelligible>` empty gold count any hypothesis words as insertion errors (both numerator and denominator receive the hyp word count). Overall is the unweighted mean of the five per-locale corpus WERs. | Lower is better |
+| **UER** | Utterance Error Rate — fraction of utterances with at least one meaning-changing error. Overall is the unweighted mean of the five per-locale UERs (same locale-macro convention as WER). | Lower is better |
+| **Latency (p95)** | 95th percentile time-to-complete-transcript per utterance (ms). For batch APIs this is request-to-response round-trip; for streaming APIs it is send-to-final-transcript. Streaming submissions additionally surface TTFT as a `+TTFT` annotation. | Lower is better |
+
+The scoring pipeline is pinned for reproducibility: `scoring/llm.py` targets a specific judge model snapshot at `temperature=0` with a fixed `seed`, and each `scores.json` records the model, seed, and prompt SHAs under a top-level `judge` block.
 
 Results are posted as a comment on your PR and added to the leaderboard on merge.
 

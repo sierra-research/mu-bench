@@ -665,3 +665,73 @@
         padding: 0 48px 100px;
     }
 }
+
+/* ===== Latency cell: badge + TTFT annotation (fairness-fixes rollout) ===== */
+.latency-cell {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    line-height: 1.2;
+}
+
+.latency-cell .score-value {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.latency-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: #edf2f7;
+    color: #4a5568;
+    vertical-align: middle;
+}
+
+.latency-badge-streaming {
+    background: #e6fffa;
+    color: #234e52;
+}
+
+.latency-badge-batch {
+    background: #edf2f7;
+    color: #4a5568;
+}
+
+.latency-ttft {
+    font-size: 11px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.col-latency-footnote {
+    font-size: 10px;
+    color: #a0aec0;
+    margin-left: 2px;
+    vertical-align: super;
+}
+
+/* ===== Inference config panel (fairness-fixes item 5) ===== */
+.inference-config-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 6px;
+}
+
+.inference-config-default-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #e6fffa;
+    color: #234e52;
+    letter-spacing: 0.02em;
+}

@@ -12,14 +12,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install ruff
-        run: pip install ruff
+      - name: Install ruff + pytest
+        run: pip install ruff pytest jiwer python-dotenv pyyaml requests
 
       - name: Check formatting
-        run: ruff format --check scripts/ scoring/
+        run: ruff format --check scripts/ scoring/ tests/
 
       - name: Check lint rules
-        run: ruff check scripts/ scoring/
+        run: ruff check scripts/ scoring/ tests/
+
+      - name: Run unit tests
+        run: pytest tests/ -v
 
   javascript:
     runs-on: ubuntu-latest

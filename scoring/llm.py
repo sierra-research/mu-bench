@@ -2,9 +2,18 @@
 
 Handles parallel OpenAI API calls and JSON response parsing.
 Requires OPENAI_API_KEY environment variable.
+
+Judge config (model snapshot, temperature, seed) is pinned for
+reproducibility via the SCORING_MODEL / SCORING_TEMPERATURE / SCORING_SEED
+env vars. The defaults below are the pinned reference values; override in
+.env only if you are intentionally running a drift / sensitivity experiment.
+
+Every call records the effective config on the module-level JUDGE_CONFIG
+dict so scoring.score can copy it into scores.json for auditability.
 """
 
 import concurrent.futures
+import hashlib
 import json
 import os
 import time
@@ -13,6 +22,39 @@ import requests
 
 MAX_RETRIES = 3
 RETRY_BACKOFF = 2.0
+
+
+# Pinned judge configuration. Defaults are the reference values used to
+# produce the leaderboard's published numbers. Set SCORING_MODEL /
+# SCORING_TEMPERATURE / SCORING_SEED in the environment only when running
+# drift experiments; changing these without re-scoring every submission
+# produces an inconsistent leaderboard.
+DEFAULT_SCORING_MODEL = "gpt-4.1-2025-04-14"
+DEFAULT_SCORING_TEMPERATURE = 0.0
+DEFAULT_SCORING_SEED = 7
+
+
+def _load_judge_config() -> dict:
+    """Read the pinned judge config from env, falling back to defaults.
+
+    Returns a dict with model, temperature, seed. Values are snapshot at
+    import time so a single scoring run uses one config end-to-end.
+    """
+    return {
+        "model": os.environ.get("SCORING_MODEL", DEFAULT_SCORING_MODEL),
+        "temperature": float(os.environ.get("SCORING_TEMPERATURE", DEFAULT_SCORING_TEMPERATURE)),
+        "seed": int(os.environ.get("SCORING_SEED", DEFAULT_SCORING_SEED)),
+    }
+
+
+JUDGE_CONFIG = _load_judge_config()
+
+
+def prompt_sha(prompt_text: str) -> str:
+    """Return a short sha256 hex digest of a prompt string for scores.json."""
+    if prompt_text is None:
+        return ""
+    return hashlib.sha256(prompt_text.encode("utf-8")).hexdigest()[:16]
 
 
 NORMALIZE_SCHEMA = {
@@ -27,6 +69,43 @@ NORMALIZE_SCHEMA = {
                 "normalized_actual": {"type": "string"},
             },
             "required": ["normalized_expected", "normalized_actual"],
+            "additionalProperties": False,
+        },
+    },
+}
+
+# Schema for the new canonical-gold-only normalization prompt (item 1).
+# Prompt takes only the gold; output is normalized_expected.
+NORMALIZE_GOLD_SCHEMA = {
+    "type": "json_schema",
+    "json_schema": {
+        "name": "normalize_gold_response",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "properties": {
+                "normalized_expected": {"type": "string"},
+            },
+            "required": ["normalized_expected"],
+            "additionalProperties": False,
+        },
+    },
+}
+
+# Schema for the new prediction-only normalization prompt (item 1).
+# Prompt takes the already-normalized gold (for style reference) and the
+# raw prediction; output is only normalized_actual.
+NORMALIZE_PRED_SCHEMA = {
+    "type": "json_schema",
+    "json_schema": {
+        "name": "normalize_pred_response",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "properties": {
+                "normalized_actual": {"type": "string"},
+            },
+            "required": ["normalized_actual"],
             "additionalProperties": False,
         },
     },
@@ -64,8 +143,9 @@ SIGNIFICANT_WER_SCHEMA = {
 def call_llm(prompt: str, response_format: dict | None = None) -> str:
     """Call the OpenAI Chat Completions API with retries.
 
-    Retries on 429 (rate limit) and 5xx errors with exponential backoff.
-    Logs response body on non-retryable failures for debugging.
+    Uses the pinned JUDGE_CONFIG (model, temperature, seed) so every call is
+    reproducible. Retries on 429 (rate limit) and 5xx errors with exponential
+    backoff. Logs response body on non-retryable failures.
     """
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
@@ -77,11 +157,12 @@ def call_llm(prompt: str, response_format: dict | None = None) -> str:
         "Authorization": f"Bearer {api_key}",
     }
     payload = {
-        "model": "gpt-4.1",
+        "model": JUDGE_CONFIG["model"],
         "messages": [
             {"role": "user", "content": prompt},
         ],
-        "temperature": 0.0,
+        "temperature": JUDGE_CONFIG["temperature"],
+        "seed": JUDGE_CONFIG["seed"],
         "max_tokens": 8192,
     }
     if response_format is not None:

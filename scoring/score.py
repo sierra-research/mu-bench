@@ -32,6 +32,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+from scoring.llm import JUDGE_CONFIG, prompt_sha
 from scoring.metrics import (
     TranscriptRow,
     compute_significant_wer,
@@ -40,8 +41,79 @@ from scoring.metrics import (
     is_unintelligible,
 )
 from scoring.normalize import load_ground_truth_from_manifest
+from scoring.normalize_gold import (
+    GOLD_CACHE_DIR,
+    compute_manifest_gold_hash,
+    load_manifest_gold,
+    read_cached_gold_hash,
+)
 
 TARGET_LOCALES = ["en-US", "es-MX", "tr-TR", "vi-VN", "zh-CN"]
+
+
+# Required metadata.yaml config keys. Kept here so scoring.score and
+# scoring.validate agree on the schema without a circular import.
+CONFIG_BLOCK_KEYS = (
+    "beamSize",
+    "languageHint",
+    "customVocabulary",
+    "noiseSuppression",
+    "domainAdaptation",
+    "keywordBoosting",
+)
+
+
+def _collect_judge_block() -> dict:
+    """Build the ``judge`` block for scores.json.
+
+    Records the pinned model / temperature / seed from scoring.llm plus the
+    (truncated) SHA of each prompt constant in scoring.prompts. Missing
+    prompts (e.g. in the back-compat window before the secret is updated)
+    record an empty string so the drift-checker still catches partial
+    rollouts.
+    """
+    import datetime
+
+    try:
+        from scoring import prompts as _prompts  # type: ignore[attr-defined]
+    except Exception:
+        _prompts = None  # pragma: no cover
+
+    def _sha(name: str) -> str:
+        if _prompts is None:
+            return ""
+        val = getattr(_prompts, name, None)
+        if val is None:
+            return ""
+        return prompt_sha(val)
+
+    # Prefer the new canonical-gold split; fall back to the legacy prompt.
+    gold_prompt_sha = _sha("NORMALIZE_GOLD_PROMPT") or _sha("NORMALIZE_AGAINST_GOLD_PROMPT")
+    pred_prompt_sha = _sha("NORMALIZE_PRED_AGAINST_GOLD_PROMPT") or _sha("NORMALIZE_AGAINST_GOLD_PROMPT")
+
+    return {
+        "model": JUDGE_CONFIG["model"],
+        "modelSnapshot": JUDGE_CONFIG["model"],
+        "temperature": JUDGE_CONFIG["temperature"],
+        "seed": JUDGE_CONFIG["seed"],
+        "normalizeGoldPromptSha": gold_prompt_sha,
+        "normalizePredPromptSha": pred_prompt_sha,
+        "significantErrorsPromptSha": _sha("SIGNIFICANT_WORD_ERRORS_PROMPT"),
+        "scoredAt": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+    }
+
+
+def _extract_config_block(metadata: dict) -> dict:
+    """Pull the metadata.yaml ``config:`` block out for scores.json.
+
+    Unknown keys are passed through (the validator rejects them at submit
+    time). Missing ``config`` returns an empty dict so legacy submissions
+    don't break scoring.
+    """
+    cfg = metadata.get("config") if isinstance(metadata, dict) else None
+    if not isinstance(cfg, dict):
+        return {}
+    return {k: cfg.get(k, "default") for k in CONFIG_BLOCK_KEYS}
 
 
 def load_transcript_pairs(
@@ -299,7 +371,12 @@ def main():
                 stats["unintelligible_count"] += 1
             edits = detail.get("werEdits")
             ref_words = detail.get("werRefWords")
-            if edits is not None and ref_words is not None and ref_words > 0:
+            # Silence-hallucination fix (item 6): drop the ``ref_words > 0``
+            # guard so silent-clip insertions flow into the corpus sums.
+            # ``compute_wer`` reports (edits=hyp_words, ref_words=hyp_words)
+            # for silent clips; a truly silent pair is (0, 0) and adds
+            # nothing.
+            if edits is not None and ref_words is not None:
                 stats["wer_edits_sum"] += edits
                 stats["wer_ref_words_sum"] += ref_words
                 stats["wer_count"] += 1
@@ -443,9 +520,23 @@ def main():
             if len(per_locale_wers) == len(TARGET_LOCALES)
             else None
         )
+        # Overall UER (item 3): switch from utterance-micro across all
+        # locales to the unweighted mean of per-locale UERs (locale-macro),
+        # symmetric with the WER overall above. Same field name, same shape
+        # in scores.json — only the value changes.
+        per_locale_uers = [
+            summary_locales[loc]["significantWer"]
+            for loc in TARGET_LOCALES
+            if summary_locales[loc]["significantWer"] is not None
+        ]
+        overall_sig_wer = (
+            round(sum(per_locale_uers) / len(per_locale_uers), 4)
+            if len(per_locale_uers) == len(TARGET_LOCALES)
+            else None
+        )
         overall = {
             "wer": overall_wer,
-            "significantWer": avg(total_sig_wer_has_error, total_sig_wer_total),
+            "significantWer": overall_sig_wer,
             "utteranceCount": total_utterances,
             "unintelligibleCount": total_unintelligible,
         }
@@ -454,12 +545,28 @@ def main():
         print(f"Overall metrics not computed — missing locales: {missing}")
         overall = None
 
+    # Reproducibility metadata: judge pin, prompt SHAs, manifest-gold
+    # hash, and the declared inference config. These feed
+    # scripts/check_judge_drift.py and the leaderboard's provider detail.
+    try:
+        manifest_gold_hash = compute_manifest_gold_hash(load_manifest_gold(manifest_path))
+    except Exception as e:  # pragma: no cover — manifest issues surface elsewhere
+        print(f"WARNING: could not compute manifest_gold_hash: {e}")
+        manifest_gold_hash = ""
+    cached_gold_hash = read_cached_gold_hash(GOLD_CACHE_DIR.resolve())
+
     summary = {
         "model": metadata.get("model", ""),
         "organization": metadata.get("organization", metadata.get("company", "")),
         "date": metadata.get("date", metadata.get("modelVersion", "")),
         "locales": summary_locales,
         "overall": overall,
+        "judge": _collect_judge_block(),
+        "meta": {
+            "config": _extract_config_block(metadata),
+            "manifestGoldHash": manifest_gold_hash,
+            "canonicalGoldCacheHash": cached_gold_hash or "",
+        },
     }
 
     metrics_dir.mkdir(parents=True, exist_ok=True)
