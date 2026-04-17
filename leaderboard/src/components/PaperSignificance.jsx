@@ -71,8 +71,8 @@ const VARIANCE = {
         "zh-CN": { wer: { mean: 0.1278, std: 0.0033 }, significantWer: { mean: 0.2137, std: 0.0022 } },
     },
     "deepgram-nova3": {
-        "en-US": { wer: { mean: 0.0463, std: 0.0021 }, significantWer: { mean: 0.052, std: 0.0035 } },
-        "zh-CN": { wer: { mean: 0.1568, std: 0.0057 }, significantWer: { mean: 0.2897, std: 0.0063 } },
+        "en-US": { wer: { mean: 0.0456, std: 0.0005 }, significantWer: { mean: 0.0498, std: 0.0025 } },
+        "zh-CN": { wer: { mean: 0.154, std: 0.0034 }, significantWer: { mean: 0.282, std: 0.0161 } },
     },
 };
 
