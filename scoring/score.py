@@ -3,6 +3,10 @@
 Computes WER and significant WER for each utterance, then aggregates per-locale
 and overall. Reads ground truth from manifest.json.
 
+Per utterance we record the edit count (substitutions + deletions + insertions)
+and reference word count. Per-locale WER is sum(edits) / sum(ref_words); overall
+WER is the unweighted mean of the per-locale WERs (macro across locales).
+
 WER and significant WER are computed on LLM-normalized submissions (run
 scoring.normalize first).
 
@@ -257,6 +261,8 @@ def main():
             }
             for key in [
                 "wer",
+                "werEdits",
+                "werRefWords",
                 "werNormalizedGold",
                 "werNormalizedPredicted",
                 "significantWer",
@@ -278,7 +284,8 @@ def main():
 
             if locale not in locale_stats:
                 locale_stats[locale] = {
-                    "wer_sum": 0.0,
+                    "wer_edits_sum": 0,
+                    "wer_ref_words_sum": 0,
                     "wer_count": 0,
                     "sig_wer_has_error": 0,
                     "sig_wer_total": 0,
@@ -289,8 +296,11 @@ def main():
             stats["utterance_count"] += 1
             if detail["unintelligible"]:
                 stats["unintelligible_count"] += 1
-            if detail["wer"] is not None:
-                stats["wer_sum"] += detail["wer"]
+            edits = detail.get("werEdits")
+            ref_words = detail.get("werRefWords")
+            if edits is not None and ref_words is not None and ref_words > 0:
+                stats["wer_edits_sum"] += edits
+                stats["wer_ref_words_sum"] += ref_words
                 stats["wer_count"] += 1
             if detail["significantWer"] is not None:
                 stats["sig_wer_total"] += 1
@@ -343,12 +353,20 @@ def main():
     # --- WER ---
     if "wer" in metrics_to_run:
         existing_details = load_all_existing_details()
-        needs_wer = [
-            i for i in range(len(pairs)) if existing_details[i] is None or existing_details[i].get("wer") is None
-        ]
+        # A row is cached iff it has the edit components on disk. This
+        # forces a one-time backfill of pre-refactor details that only
+        # carry the per-utterance rate. Subsequent runs hit the cache
+        # normally. Gold is never empty or unintelligible in this
+        # benchmark, so we don't need a special case for those.
+        def _wer_cached(d: dict | None) -> bool:
+            return d is not None and d.get("werEdits") is not None and d.get("werRefWords") is not None
+
+        needs_wer = [i for i in range(len(pairs)) if not _wer_cached(existing_details[i])]
         for i in range(len(pairs)):
             if i not in set(needs_wer) and existing_details[i] is not None:
                 computed_values[i]["wer"] = existing_details[i].get("wer")
+                computed_values[i]["werEdits"] = existing_details[i].get("werEdits")
+                computed_values[i]["werRefWords"] = existing_details[i].get("werRefWords")
                 computed_values[i]["werNormalizedGold"] = existing_details[i].get("werNormalizedGold")
                 computed_values[i]["werNormalizedPredicted"] = existing_details[i].get("werNormalizedPredicted")
 
@@ -368,6 +386,8 @@ def main():
 
             for idx, i in enumerate(needs_wer):
                 computed_values[i]["wer"] = wer_results[idx].wer
+                computed_values[i]["werEdits"] = wer_results[idx].edits
+                computed_values[i]["werRefWords"] = wer_results[idx].ref_words
                 computed_values[i]["werNormalizedGold"] = wer_results[idx].normalized_gold
                 computed_values[i]["werNormalizedPredicted"] = wer_results[idx].normalized_predicted
 
@@ -381,8 +401,12 @@ def main():
     def avg(s, c):
         return round(s / c, 4) if c > 0 else None
 
+    def locale_wer(s):
+        """Per-locale WER: sum(edits) / sum(ref_words)."""
+        n, d = s["wer_edits_sum"], s["wer_ref_words_sum"]
+        return round(n / d, 4) if d > 0 else None
+
     summary_locales = {}
-    total_wer_sum, total_wer_count = 0.0, 0
     total_sig_wer_has_error, total_sig_wer_total = 0, 0
     total_utterances, total_unintelligible = 0, 0
 
@@ -391,13 +415,11 @@ def main():
             continue
         s = locale_stats[locale]
         summary_locales[locale] = {
-            "wer": avg(s["wer_sum"], s["wer_count"]),
+            "wer": locale_wer(s),
             "significantWer": avg(s["sig_wer_has_error"], s["sig_wer_total"]),
             "utteranceCount": s["utterance_count"],
             "unintelligibleCount": s["unintelligible_count"],
         }
-        total_wer_sum += s["wer_sum"]
-        total_wer_count += s["wer_count"]
         total_sig_wer_has_error += s["sig_wer_has_error"]
         total_sig_wer_total += s["sig_wer_total"]
         total_utterances += s["utterance_count"]
@@ -406,8 +428,18 @@ def main():
     # Overall only when all locales present
     all_locales_present = all(loc in locale_stats for loc in TARGET_LOCALES)
     if all_locales_present:
+        # Overall WER is the unweighted mean of per-locale WERs
+        # (macro across locales). Matches the leaderboard UI's overall column.
+        per_locale_wers = [
+            summary_locales[loc]["wer"] for loc in TARGET_LOCALES if summary_locales[loc]["wer"] is not None
+        ]
+        overall_wer = (
+            round(sum(per_locale_wers) / len(per_locale_wers), 4)
+            if len(per_locale_wers) == len(TARGET_LOCALES)
+            else None
+        )
         overall = {
-            "wer": avg(total_wer_sum, total_wer_count),
+            "wer": overall_wer,
             "significantWer": avg(total_sig_wer_has_error, total_sig_wer_total),
             "utteranceCount": total_utterances,
             "unintelligibleCount": total_unintelligible,

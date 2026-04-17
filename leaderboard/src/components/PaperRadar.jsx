@@ -58,7 +58,7 @@ const SCORES = buildScores();
 
 const METRICS = [
     { key: "sigWer", label: "UER", max: 0.6, invert: true },
-    { key: "wer", label: "WER", max: 0.55, invert: true },
+    { key: "wer", label: "WER", max: 0.25, invert: true },
     { key: "latency", label: "Latency (p95)", max: 2500, invert: true },
 ];
 

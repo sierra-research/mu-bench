@@ -2,13 +2,19 @@
 
 Self-contained module adapted from the benchmark evaluation pipeline.
 Uses LLM-based normalization via OpenAI for fair transcript comparison.
+
+For each utterance we record the count of edit operations
+(substitutions + deletions + insertions) and the reference word count.
+Per-locale WER is the ratio of summed edits to summed reference words
+across the locale's utterances; overall WER is the unweighted mean of
+per-locale WERs (computed in scoring.score).
 """
 
 import re
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 
-from jiwer import process_words, wer
+from jiwer import process_words
 
 from scoring.llm import (
     NORMALIZE_SCHEMA,
@@ -40,7 +46,13 @@ class TranscriptRow:
 
 @dataclass
 class WERResult:
-    """Result from WER computation."""
+    """Result from WER computation.
+
+    `wer` is the per-utterance rate (edits / ref_words), preserved for
+    distribution plots and back-compat. Per-locale and overall
+    aggregation should sum `edits` and `ref_words` directly so the
+    headline numbers are sum/sum, not the mean of per-utterance rates.
+    """
 
     locale: str
     utterance_id: str
@@ -49,6 +61,8 @@ class WERResult:
     normalized_gold: Optional[str] = None
     normalized_predicted: Optional[str] = None
     wer: Optional[float] = None
+    edits: Optional[int] = None
+    ref_words: Optional[int] = None
 
 
 @dataclass
@@ -105,13 +119,32 @@ def tokenize_for_alignment(text: str, locale: str) -> str:
 
 
 def normalize_for_match(text: str) -> str:
-    """Simple normalization: lowercase, remove punctuation/spaces."""
+    """Simple normalization: lowercase, remove punctuation/spaces.
+
+    Used for legacy string-equality matching; not appropriate for word-level
+    WER because it collapses whitespace.
+    """
     if text is None:
         return ""
     t = str(text).lower()
     for ch in [",", ".", "-", "_", "/", "\\", "(", ")", "[", "]", ":", ";", " "]:
         t = t.replace(ch, "")
     return t
+
+
+def normalize_for_simple_wer(text: str) -> str:
+    """Whitespace-preserving simple normalization for WER.
+
+    Lowercases and strips punctuation but keeps spaces so that the result
+    has meaningful word boundaries for jiwer's word-level alignment and
+    for the reference word count.
+    """
+    if text is None:
+        return ""
+    t = str(text).lower()
+    for ch in [",", ".", "-", "_", "/", "\\", "(", ")", "[", "]", ":", ";"]:
+        t = t.replace(ch, " ")
+    return " ".join(t.split())
 
 
 def normalize_transcript_pairs(
@@ -174,20 +207,39 @@ def normalize_transcript_pairs(
     return row_idx_to_normalized
 
 
-def compute_wer(rows: List[TranscriptRow]) -> List[WERResult]:
-    """Compute Word Error Rate on pre-normalized transcript pairs.
+def _wer_components(tok_gold: str, tok_pred: str) -> Tuple[int, int]:
+    """Return (edits, ref_words) for a tokenized gold/hyp pair.
 
-    Expects rows with gold and predicted already normalized (via scoring.normalize).
-    Uses character-level tokenization for CJK locales.
+    edits = substitutions + deletions + insertions, the numerator of WER.
+    ref_words = number of tokens in the reference, the denominator.
+    """
+    res = process_words(tok_gold, tok_pred)
+    edits = res.substitutions + res.deletions + res.insertions
+    ref_words = len(tok_gold.split())
+    return edits, ref_words
+
+
+def compute_wer(rows: List[TranscriptRow]) -> List[WERResult]:
+    """Compute per-utterance WER components on pre-normalized transcripts.
+
+    Records per-utterance edits and reference word count so that callers can
+    aggregate WER as sum(edits) / sum(ref_words) per locale. The
+    per-utterance `wer` rate is also returned for distributions and
+    back-compat.
+
+    Expects rows with gold and predicted already normalized (via
+    scoring.normalize). Uses character-level tokenization for CJK locales,
+    so CJK WER is effectively character-level.
     """
     results = []
     for r in rows:
         if is_unintelligible(r.gold) or not r.gold:
-            w = None
+            w, edits, ref_words = None, None, None
         else:
             tok_gold = tokenize_for_alignment(r.gold, r.locale)
             tok_pred = tokenize_for_alignment(r.predicted, r.locale)
-            w = float(wer(tok_gold, tok_pred))
+            edits, ref_words = _wer_components(tok_gold, tok_pred)
+            w = (edits / ref_words) if ref_words > 0 else None
 
         results.append(
             WERResult(
@@ -198,6 +250,8 @@ def compute_wer(rows: List[TranscriptRow]) -> List[WERResult]:
                 normalized_gold=r.gold,
                 normalized_predicted=r.predicted,
                 wer=w,
+                edits=edits,
+                ref_words=ref_words,
             )
         )
 
@@ -205,18 +259,25 @@ def compute_wer(rows: List[TranscriptRow]) -> List[WERResult]:
 
 
 def compute_simple_wer(rows: List[TranscriptRow]) -> List[WERResult]:
-    """Compute WER with simple normalization (no LLM calls needed)."""
+    """Compute WER with simple normalization (no LLM calls needed).
+
+    Uses `normalize_for_simple_wer` so word boundaries are preserved and
+    both the per-utterance rate and the aggregated edits/ref_words
+    components are meaningful.
+    """
     results = []
     for r in rows:
         if is_unintelligible(r.gold) or not r.gold:
-            w = None
+            w, edits, ref_words = None, None, None
+            norm_g, norm_p = None, None
         else:
-            norm_g = normalize_for_match(r.gold)
-            norm_p = normalize_for_match(r.predicted)
+            norm_g = normalize_for_simple_wer(r.gold)
+            norm_p = normalize_for_simple_wer(r.predicted)
             if not norm_g:
-                w = None
+                w, edits, ref_words = None, None, None
             else:
-                w = float(wer(norm_g, norm_p))
+                edits, ref_words = _wer_components(norm_g, norm_p)
+                w = (edits / ref_words) if ref_words > 0 else None
 
         results.append(
             WERResult(
@@ -224,9 +285,11 @@ def compute_simple_wer(rows: List[TranscriptRow]) -> List[WERResult]:
                 utterance_id=r.utterance_id,
                 gold=r.gold,
                 predicted=r.predicted,
-                normalized_gold=normalize_for_match(r.gold) if r.gold else None,
-                normalized_predicted=normalize_for_match(r.predicted) if r.predicted else None,
+                normalized_gold=norm_g if r.gold else None,
+                normalized_predicted=norm_p if r.gold else None,
                 wer=w,
+                edits=edits,
+                ref_words=ref_words,
             )
         )
     return results

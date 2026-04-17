@@ -15,14 +15,14 @@ const SIG_DATA = {
             "google-chirp3": 0.1049,
             "elevenlabs-scribe-v2": 0.1631,
             azure: 0.1988,
-            "openai-gpt4o-mini-transcribe": 0.1886,
+            "openai-gpt4o-mini-transcribe": 0.1889,
             "deepgram-nova3": 0.2572,
         },
         pairwise: [
             [null, 0.0, 0.0, 0.0, 0.0],
             [1.0, null, 0.0, 0.0, 0.0],
-            [1.0, 1.0, null, 0.8864, 0.0],
-            [1.0, 1.0, 0.1144, null, 0.0],
+            [1.0, 1.0, null, 0.929, 0.0],
+            [1.0, 1.0, 0.073, null, 0.0],
             [1.0, 1.0, 1.0, 1.0, null],
         ],
         numConversations: 250,
@@ -30,17 +30,17 @@ const SIG_DATA = {
     },
     wer: {
         means: {
-            "google-chirp3": 0.0687,
-            "elevenlabs-scribe-v2": 0.1334,
-            azure: 0.1242,
-            "openai-gpt4o-mini-transcribe": 0.1298,
-            "deepgram-nova3": 0.1706,
+            "google-chirp3": 0.0596,
+            "elevenlabs-scribe-v2": 0.0789,
+            azure: 0.09,
+            "openai-gpt4o-mini-transcribe": 0.0928,
+            "deepgram-nova3": 0.1149,
         },
         pairwise: [
             [null, 0.0, 0.0, 0.0, 0.0],
-            [1.0, null, 0.9357, 0.7228, 0.0],
-            [1.0, 0.0643, null, 0.1461, 0.0],
-            [1.0, 0.2772, 0.8539, null, 0.0],
+            [1.0, null, 0.0, 0.0, 0.0],
+            [1.0, 1.0, null, 0.069, 0.0],
+            [1.0, 1.0, 0.925, null, 0.0],
             [1.0, 1.0, 1.0, 1.0, null],
         ],
         numConversations: 250,
@@ -48,26 +48,31 @@ const SIG_DATA = {
     },
 };
 
+// Means come from the latest scoring run. The std values were measured
+// across 4 independent re-runs of the full normalization+scoring pipeline
+// and reflect LLM-scoring stability, which is not affected by the WER
+// aggregation method, so they're carried forward as a representative
+// indication of run-to-run variability.
 const VARIANCE = {
     "google-chirp3": {
-        "en-US": { wer: { mean: 0.0449, std: 0.0047 }, significantWer: { mean: 0.0537, std: 0.0036 } },
-        "zh-CN": { wer: { mean: 0.0898, std: 0.0017 }, significantWer: { mean: 0.1678, std: 0.0023 } },
+        "en-US": { wer: { mean: 0.0454, std: 0.0047 }, significantWer: { mean: 0.0509, std: 0.0036 } },
+        "zh-CN": { wer: { mean: 0.0723, std: 0.0017 }, significantWer: { mean: 0.1645, std: 0.0023 } },
     },
     "elevenlabs-scribe-v2": {
-        "en-US": { wer: { mean: 0.0664, std: 0.0006 }, significantWer: { mean: 0.0594, std: 0.0032 } },
-        "zh-CN": { wer: { mean: 0.1651, std: 0.0068 }, significantWer: { mean: 0.2347, std: 0.0088 } },
+        "en-US": { wer: { mean: 0.0408, std: 0.0006 }, significantWer: { mean: 0.0644, std: 0.0032 } },
+        "zh-CN": { wer: { mean: 0.1112, std: 0.0068 }, significantWer: { mean: 0.2337, std: 0.0088 } },
     },
     azure: {
-        "en-US": { wer: { mean: 0.0384, std: 0.0018 }, significantWer: { mean: 0.0355, std: 0.0018 } },
-        "zh-CN": { wer: { mean: 0.1848, std: 0.016 }, significantWer: { mean: 0.2576, std: 0.0136 } },
+        "en-US": { wer: { mean: 0.0366, std: 0.0018 }, significantWer: { mean: 0.0334, std: 0.0018 } },
+        "zh-CN": { wer: { mean: 0.1288, std: 0.016 }, significantWer: { mean: 0.2524, std: 0.0136 } },
     },
     "openai-gpt4o-mini-transcribe": {
-        "en-US": { wer: { mean: 0.0381, std: 0.0007 }, significantWer: { mean: 0.0518, std: 0.001 } },
-        "zh-CN": { wer: { mean: 0.1632, std: 0.0033 }, significantWer: { mean: 0.2208, std: 0.0022 } },
+        "en-US": { wer: { mean: 0.0375, std: 0.0007 }, significantWer: { mean: 0.0484, std: 0.001 } },
+        "zh-CN": { wer: { mean: 0.1278, std: 0.0033 }, significantWer: { mean: 0.2137, std: 0.0022 } },
     },
     "deepgram-nova3": {
-        "en-US": { wer: { mean: 0.0496, std: 0.0021 }, significantWer: { mean: 0.0579, std: 0.0035 } },
-        "zh-CN": { wer: { mean: 0.1955, std: 0.0057 }, significantWer: { mean: 0.2918, std: 0.0063 } },
+        "en-US": { wer: { mean: 0.0463, std: 0.0021 }, significantWer: { mean: 0.052, std: 0.0035 } },
+        "zh-CN": { wer: { mean: 0.1568, std: 0.0057 }, significantWer: { mean: 0.2897, std: 0.0063 } },
     },
 };
 

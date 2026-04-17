@@ -91,7 +91,7 @@ Scoring is run by maintainers — submitters do not need to run it locally. When
 
 | Metric | Description | Direction |
 |--------|-------------|-----------|
-| **WER** | Word Error Rate after LLM normalization | Lower is better |
+| **WER** | Word Error Rate after LLM normalization. Per-locale: total word edits divided by total reference words. Overall: unweighted mean of the five per-locale WERs. | Lower is better |
 | **UER** | Utterance Error Rate — fraction with meaning-changing errors | Lower is better |
 | **Latency (p95)** | 95th percentile API response time per utterance (ms) | Lower is better |
 

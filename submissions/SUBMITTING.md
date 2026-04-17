@@ -90,6 +90,6 @@ Scoring requires an OpenAI key so you can't run the full pipeline in this repo l
 
 | Metric | Source | Notes |
 |---|---|---|
-| **WER** (Word Error Rate) | `scoring/score.py` after LLM-based normalization | Percentage of words incorrectly transcribed |
+| **WER** (Word Error Rate) | `scoring/score.py` after LLM-based normalization | Per-locale: total word edits divided by total reference words across the locale's utterances. Overall: unweighted mean of the five per-locale WERs. |
 | **UER** (Utterance Error Rate / Significant WER) | `scoring/score.py` | Fraction of utterances with ≥1 meaning-changing error |
 | **Latency p50 / p95** | `scripts/latency_stats.py` on your `latency.json` | Per-locale and overall percentiles |
