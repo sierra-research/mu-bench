@@ -7,9 +7,7 @@ import "./PaperSignificance.css";
 // providers field (which is sorted best -> worst by the metric the
 // JSON was last written under). For the VarianceChart we use the same
 // order so the two side-by-side widgets stay aligned.
-const PROVIDER_NAMES = Object.fromEntries(
-    (LB_PROVIDERS || []).map((p) => [p.id, p.model || p.id]),
-);
+const PROVIDER_NAMES = Object.fromEntries((LB_PROVIDERS || []).map((p) => [p.id, p.model || p.id]));
 const PROVIDERS = (SIGNIFICANCE_PROVIDERS || []).map((p) => ({
     id: p.id,
     name: PROVIDER_NAMES[p.id] || p.name || p.id,
@@ -136,8 +134,7 @@ function VarianceChart({ metric, locale }) {
 function variancePresent(metric) {
     return Object.values(VARIANCE).some(
         (locales) =>
-            locales &&
-            Object.values(locales).some((m) => m && m[metric] && typeof m[metric].mean === "number"),
+            locales && Object.values(locales).some((m) => m && m[metric] && typeof m[metric].mean === "number"),
     );
 }
 

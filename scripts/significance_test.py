@@ -322,12 +322,8 @@ def main():
             locale_scores: dict[str, float] = {}
             prefix = f"{locale}/"
             for p in available:
-                nums = np.array(
-                    [all_scores[p][k][0] for k in sorted_keys if k.startswith(prefix)], dtype=float
-                )
-                dens = np.array(
-                    [all_scores[p][k][1] for k in sorted_keys if k.startswith(prefix)], dtype=float
-                )
+                nums = np.array([all_scores[p][k][0] for k in sorted_keys if k.startswith(prefix)], dtype=float)
+                dens = np.array([all_scores[p][k][1] for k in sorted_keys if k.startswith(prefix)], dtype=float)
                 if dens.sum() > 0:
                     locale_scores[p] = float(nums.sum() / dens.sum())
             if locale_scores:
@@ -345,9 +341,7 @@ def main():
                 doc = json.load(f)
         else:
             doc = {}
-        doc["providers"] = [
-            {"id": p, "name": SHORT_NAMES[p]} for p in ranked
-        ]
+        doc["providers"] = [{"id": p, "name": SHORT_NAMES[p]} for p in ranked]
         doc.setdefault("metrics", {})
         doc["metrics"][args.metric] = {
             "means": {p: round(means[p], 4) for p in ranked},
