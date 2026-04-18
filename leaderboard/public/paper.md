@@ -203,7 +203,7 @@ We're expanding MU-Bench to more locales — we benchmark 42 languages internall
 
 - **Dataset**: [`sierra-research/mu-bench`](https://huggingface.co/datasets/sierra-research/mu-bench) on HuggingFace
 - **Code & submissions**: [github.com/sierra-research/mu-bench](https://github.com/sierra-research/mu-bench)
-- **Leaderboard**: [research.sierra.ai](https://research.sierra.ai)
+- **Leaderboard**: [research.sierra.ai/mubench](https://research.sierra.ai/mubench)
 
 ---
 
