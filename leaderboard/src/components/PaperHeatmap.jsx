@@ -54,7 +54,7 @@ const METRICS = [
 
 const COLOR_RANGES = {
     wer: { min: 0, max: 0.55 },
-    sigWer: { min: 0, max: 0.55 },
+    sigWer: { min: 0, max: 0.65 },
     latencyP50: { min: 200, max: 1400 },
     latency: { min: 400, max: 2500 },
 };

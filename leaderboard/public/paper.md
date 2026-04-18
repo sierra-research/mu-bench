@@ -8,7 +8,7 @@ Representing work by Katie Echavia, Venu Satuluri, Ola Zytek, Victor Barres, Min
 
 [Only about a quarter of the world speaks English.](https://sierra.ai/blog/multilingual-voice-agents) Yet it's the basis for most public automatic speech recognition (ASR) benchmarks — and the ones that cover other languages typically rely on read speech recorded in quiet studios. That leaves a huge gap in what you can measure before deploying a voice agent to handle real customer conversations in Turkish, Vietnamese, Mandarin, Spanish, or English.
 
-To support voice across 70+ languages, Sierra uses a constellation of models as no single provider performs best across them all. When we started measuring ASR accuracy across them, we saw that transcription accuracy in Mandarin can be 3x worse than in English.
+To support voice across 70+ languages, Sierra uses a constellation of models as no single provider performs best across them all. When we started measuring ASR accuracy across them, we saw that transcription accuracy in Mandarin can be 5x worse than in English.
 
 Without per-locale measurements, we can't choose the right model for each language, route traffic between providers, tune our pipeline for different conditions, or pinpoint where and why the agent is failing. So we built our own benchmark. Internally, we benchmark 79 locale variants across 42 languages and 13+ providers.
 
@@ -79,11 +79,9 @@ We report a new metric, Utterance Error Rate (UER), alongside the traditional Wo
 
 ### LLM-based normalization
 
-Before computing any metrics, transcripts must be normalized to a common surface form. This is traditionally done with deterministic rules such as lowercasing, punctuation stripping, and rule-based number expansion. While that approach works reasonably well for English, it breaks down in multilingual settings. 
+Before computing any metrics, transcripts must be normalized to a common surface form. This is traditionally done with deterministic rules such as lowercasing, punctuation stripping, and rule-based number expansion. While that approach works reasonably well for English, it breaks down in multilingual settings.
 
-Consider the following example:
-
-In Chinese, many characters are homophones, and the audio alone is often insufficient to disambiguate them. When there is little semantic context, for example when someone states their name, it is unreasonable to expect an ASR system to recover the exact character sequence:
+Take Chinese, where many characters are homophones and the audio alone is often insufficient to disambiguate them. When there is little semantic context — for example when someone states their name — it is unreasonable to expect an ASR system to recover the exact character sequence:
 
 > **Actual:** <br>
 > 我叫羽凡。 *(My name is Yǔfán.)* <br>
@@ -118,16 +116,9 @@ This normalization is powered by GPT-4.1 with temperature 0. The full prompt tem
 
 #### Word Error Rate (WER) vs Utterance Error Rate (UER)
 
-Word Error Rate is the standard metric used by most ASR benchmarks. It measures the minimum edit distance between reference and hypothesis transcripts at the word level — substitutions, deletions, and insertions divided by the number of reference words. WER is computed on LLM-normalized transcripts. For CJK locales (zh-CN in this set), we insert spaces around each character before alignment, computing WER at the character level (equivalent to CER). We report **corpus WER**: per-locale WER is the sum of word edits across the locale's utterances divided by the sum of reference words, rather than an arithmetic mean of per-utterance rates. This avoids letting short utterances with high relative error rates dominate the score. The headline overall WER is the unweighted mean of the five per-locale corpus WERs (macro across locales), giving every language equal weight regardless of utterance count. **Overall UER uses the same convention**: per-locale UER is the fraction of utterances with a meaning-changing error in that locale, and the overall UER column is the unweighted mean of the five per-locale UERs — consistent with WER so the summary row doesn't mix weighting schemes.
+Word Error Rate is the standard metric used by most ASR benchmarks. It measures the minimum edit distance between reference and hypothesis at the word level — substitutions, deletions, and insertions divided by the number of reference words.
 
-Two details worth calling out:
-
-- **Silent clips are not free.** When the ground truth for an utterance is empty but not marked `<unintelligible>` and a provider hallucinates text anyway, every hallucinated word is counted as an insertion error. Both the numerator and denominator of corpus WER receive the hypothesis word count, so hallucinations on silence show up in WER directly instead of being silently discarded.
-- **Gold is normalized once.** The reference transcript for each utterance is LLM-normalized from `manifest.json` into a canonical cache that every submission is scored against. This means provider A and provider B are compared against the same reference string — an earlier revision of the pipeline re-derived the reference per submission, which opened a small fairness gap.
-
-However, WER treats all errors equally — a dropped "uh" counts the same as a misheard phone number digit. This makes it an unreliable signal for production use, where what matters is whether the meaning of an utterance was preserved.
-
-To address this, we introduce Utterance Error Rate, which isolates meaning-changing errors from surface-level ones.
+But WER treats all errors equally — a dropped "uh" counts the same as a misheard phone number digit. This makes it an unreliable signal for production use, where what matters is whether the meaning of an utterance was preserved. To address this, we introduce Utterance Error Rate, which isolates meaning-changing errors from surface-level ones.
 
 After word alignment, each error (substitution, deletion, insertion) is scored by an LLM into one of three categories:
 
@@ -139,9 +130,16 @@ UER is the fraction of utterances containing at least one significant error.
 
 <!-- widget:error-examples -->
 
+#### Implementation notes
+
+- WER is computed on LLM-normalized transcripts. For CJK locales (zh-CN in this set) we tokenize at the character level instead, since Chinese doesn't use whitespace — equivalent to character error rate (CER).
+- Per-locale WER is corpus WER (sum of edits over sum of reference words). Overall WER is the unweighted mean of the five per-locale rates so each language counts equally; UER uses the same locale-macro aggregation.
+
 ### Latency
 
-We measure per-utterance wall-clock latency from a single pinned client location at concurrency=1. The leaderboard's **Latency p95** column is time-to-complete-transcript, defined uniformly across protocols: for batch providers it is the request-to-response round-trip; for streaming providers it is the time from sending the request to receiving the final transcript. This keeps the latency column apples-to-apples even when batch and streaming submissions share the leaderboard. For streaming submissions we additionally report TTFT (time to first partial transcript) as an auxiliary `+TTFT` annotation — informational, not part of the sort, because batch has no analog. Median (p50) latency is also recorded per utterance. Submissions declare their protocol (`batch` or `streaming`) and measurement region in `latency.json meta`; the leaderboard renders a small `batch` / `streaming` badge next to each p95 value. The validator's region allowlist contains a small set of AWS-style names (`us-east-1`, `us-east-2`, `us-west-1`, …) plus the multi-region escape values `us` and `eu` for providers whose model under test isn't available in a single region (e.g., Google Chirp-3 is currently routable only via the `us` multi-region endpoint).
+In a real conversation, the only latency that matters is how long the user waits before the assistant can act on what they said. We measure that as wall-clock time per utterance, from a single pinned client location at concurrency=1. The headline **Latency p95** column is time-to-complete-transcript: for batch providers, the full request-to-response round-trip; for streaming providers, the time from sending the request to receiving the final transcript. Defining it this way keeps batch and streaming submissions on the same axis.
+
+Streaming has a second number worth knowing — TTFT, the time to the first partial transcript, which is what governs whether downstream systems can start reacting before the user finishes speaking. We surface it as a `+TTFT` annotation under the p95 cell, but we don't sort on it, since batch APIs have no analog.
 
 ## Providers evaluated
 
@@ -159,21 +157,21 @@ The benchmark accepts any transcription mode (batch, streaming, or real-time), a
 
 ## Results
 
-Results are drawn from the current leaderboard as of April 2026, and the key findings were as follows:
+Results are drawn from the current leaderboard as of April 2026.
 
 <!-- widget:heatmap -->
 
 <!-- widget:radar -->
 
-**WER alone is misleading.** Deepgram Nova-3 has 5.4% WER on en-US with 5.8% UER — most of its errors change meaning. Microsoft Azure has 4.2% WER but only 3.1% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
+**WER alone is misleading.** Deepgram Nova-3 has 5.4% WER on en-US with 5.8% UER — nearly every utterance with errors contains at least one meaning-changing one. Microsoft Azure has 4.2% WER but only 3.1% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
 
-**English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–7% on en-US (Azure best at 3.1%, OpenAI weakest at 6.2%). The gap narrows dramatically for structured inputs like names and tracking codes.
+**English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–7% on en-US (Azure best at 3.1%, OpenAI weakest at 6.2%).
 
-**Chinese remains the most challenging locale.** Mandarin sees UER between 30–55%, meaning a substantial-to-majority fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 5.6% WER while Deepgram Nova-3 reaches 24.7%, driven heavily by Deepgram returning empty transcripts for 33% of Vietnamese utterances.
+**Chinese remains the most challenging locale.** Mandarin sees UER between 29–55%, meaning a substantial-to-majority fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 5.6% WER while Deepgram Nova-3 reaches 24.7%, driven heavily by Deepgram returning empty transcripts for 33% of Vietnamese utterances.
 
-**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (8.0%) and UER (14.1%). ElevenLabs Scribe v2 is second-best on UER (21.2%), narrowly ahead of Azure (24.6%). Azure achieves the lowest UER on en-US (3.1%) but struggles on tr-TR (30.7%) and vi-VN (33.9%). OpenAI GPT-4o Mini Transcribe comes in fourth (UER 27.3%), and Deepgram Nova-3 last (UER 32.6%) — Deepgram's headline number is dragged down primarily by its Vietnamese performance.
+**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (8.0%) and UER (14.1%). ElevenLabs Scribe v2 is second on UER (21.2%), with Azure third (24.6%). Azure achieves the lowest UER on en-US (3.1%) but struggles on tr-TR (30.7%) and vi-VN (33.9%). OpenAI GPT-4o Mini Transcribe comes in fourth (UER 27.3%), and Deepgram Nova-3 last (UER 32.6%) — Deepgram's headline number is dragged down by its Vietnamese (61% UER) and Chinese (55% UER) performance.
 
-**Accuracy and speed do not correlate.** Deepgram Nova-3 has the best p50 latency (107ms) and p95 (376ms), while Google Chirp-3, the accuracy leader, has the highest p50 (833ms) and p95 (1,281ms). ElevenLabs Scribe v2 offers a strong balance: second-best UER (21.2%) with moderate latency (p50 415ms, p95 847ms). Azure's overall p95 of 1,179ms is dominated by Turkish, where its p95 is 1,781ms — roughly 4× its other locales — so for non-Turkish workloads its tail is closer to ~600ms. The right choice depends on whether the deployment prioritizes accuracy or throughput.
+**Accuracy and speed do not correlate.** Deepgram Nova-3 has the best p50 latency (107ms) and p95 (376ms), while the slower providers — Google Chirp-3, OpenAI, and Azure — all sit above 1,000ms p95 (Google p50 833ms / p95 1,281ms; OpenAI p95 1,376ms; Azure p95 1,179ms). ElevenLabs Scribe v2 offers a strong balance: second-best UER (21.2%) with moderate latency (p50 415ms, p95 847ms). Azure's overall p95 is dominated by Turkish, where its p95 is 1,781ms — roughly 3–4× its other locales — so for non-Turkish workloads its tail is closer to ~600ms. The right choice depends on whether the deployment prioritizes accuracy or throughput.
 
 ## Statistical validity
 
@@ -181,25 +179,25 @@ Are these ranking differences real, or could they be artifacts of which conversa
 
 <!-- widget:significance -->
 
-On UER, **all 10 pairwise differences are statistically significant (p < 0.001)** — the full ranking Google &lt; ElevenLabs &lt; Azure &lt; OpenAI &lt; Deepgram is robust under conversation-level resampling. On WER, 9 of 10 pairs are significant; the one exception is ElevenLabs vs Azure (p ≈ 0.12), which are statistically tied on WER even though they're cleanly separated on UER. Google's lead and Deepgram's last place are robust across both metrics.
+On UER, **all 10 pairwise differences are statistically significant (p < 0.001)** — the full ranking Google → ElevenLabs → Azure → OpenAI → Deepgram (best to worst) is robust under conversation-level resampling. On WER, 9 of 10 pairs are significant; the one exception is ElevenLabs vs Azure (p ≈ 0.12), which are statistically tied on WER even though they're cleanly separated on UER. Google's lead and Deepgram's last place are robust across both metrics.
 
-To verify that the LLM-based scoring pipeline itself is stable, we re-ran the full transcription + normalization + scoring pipeline 4 times independently end-to-end (waves A, B, C, D — same code, fresh provider API calls each time). Standard deviations across runs are at most 0.8 percentage points (most are under 0.5); rankings never changed between runs. The widget below shows the per-locale variance for English and Chinese.
+We also ran the full pipeline end-to-end four times — fresh transcripts, fresh scoring — to check that the headline numbers don't depend on a lucky run. Standard deviations stay under 1 percentage point across providers and locales, and the ranking never flipped.
 
 ## Beyond accuracy: production considerations
 
 MU-Bench measures transcription accuracy in isolation, but accuracy alone doesn't determine which provider is the best fit for production voice agents. In our deployments, several other factors shape the choice:
 
-**Latency matters as much as accuracy.** A voice agent needs transcripts fast enough to respond naturally. Deepgram Nova-3's p50 of 239ms gives it a 5x edge over Google Chirp-3's 1,212ms — a difference that directly affects conversation flow, even though Google leads on accuracy.
+**Latency matters as much as accuracy.** A voice agent needs transcripts fast enough to respond naturally. Deepgram Nova-3's p50 of 107ms gives it nearly an 8× edge over Google Chirp-3's 833ms — a difference that directly affects conversation flow, even though Google leads on accuracy.
 
 **Features like keyword boosting and noise cancellation shift rankings.** Deepgram excels at keyword boosting for domain-specific terms (product names, account codes, proper nouns), while Azure and Google struggle. Noise cancellation (e.g., Krisp) and sample rate both shift results — helping some providers while degrading others.
 
-**Reliability and integration.** Rate limits, uptime SLAs, streaming API quality, and error handling all vary. A provider with slightly worse accuracy but rock-solid reliability and low-latency streaming may be the better production choice.
+**Reliability and integration vary widely.** Rate limits, uptime SLAs, streaming API quality, and error handling all differ across providers. A provider with slightly worse accuracy but rock-solid reliability and low-latency streaming may be the better production choice.
 
 In practice, we don't rely on a single provider. We combine multiple providers and techniques to push transcription quality beyond what any single API delivers out of the box. More on these techniques soon.
 
 ## What's next
 
-We're expanding MU-Bench to more locales -- we benchmark 42 languages internally and plan to open-source additional locales over time. We're also working on incorporating production-realistic conditions into the benchmark, including keyword boosting, noise cancellation, and latency-aware evaluation.
+We're expanding MU-Bench to more locales — we benchmark 42 languages internally and plan to open-source additional locales over time. We're also working on incorporating production-realistic conditions into the benchmark, including keyword boosting, noise cancellation, and latency-aware evaluation.
 
 ## Try it
 
