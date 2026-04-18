@@ -2,15 +2,26 @@
   "gold": "Takip numaram C N 9 9 5 9'du, değil mi?",
   "predicted": "Takip numaram CN dokuz bin dokuz yüz beş dokuzdu değil mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 12,
-  "werNormalizedGold": "takip numaram c n dokuz bin dokuz yüz beş dokuzdu değil mi",
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "takip numaram c n dokuz dokuz beş dokuzdu değil mi",
   "werNormalizedPredicted": "takip numaram c n dokuz bin dokuz yüz beş dokuzdu değil mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "takip numaram c n dokuz bin dokuz yüz beş dokuzdu değil mi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "takip numaram c n dokuz dokuz beş dokuzdu değil mi",
   "sigWerNormalizedPredicted": "takip numaram c n dokuz bin dokuz yüz beş dokuzdu değil mi",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'bin' at position 5",
+      "reason": "'bin' (thousand) changes the number from 'dokuz dokuz beş dokuz' (9959) to 'dokuz bin dokuz yüz beş dokuz' (99059), which is a significant change in the reference number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'yüz' at position 6",
+      "reason": "'yüz' (hundred) further alters the number, compounding the error and making the reference number incorrect. This is a significant error as it changes the intended number.",
+      "score": 1
+    }
+  ]
 }

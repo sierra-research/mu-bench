@@ -2,15 +2,21 @@
   "gold": "C N 1 0 8。",
   "predicted": "cne领拔。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "c n one zero eight",
-  "werNormalizedPredicted": "c n one zero eight",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 一 零 八",
+  "werNormalizedPredicted": "c n e 领 拔",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n one zero eight",
-  "sigWerNormalizedPredicted": "c n one zero eight",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 一 零 八",
+  "sigWerNormalizedPredicted": "c n e 领 拔",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '一' to 'e' at position 2",
+      "reason": "The expected character '一' (Chinese for 'one') was replaced with 'e', which is a completely different character and not a number. This changes the meaning significantly, especially in a sequence of numbers or codes.",
+      "score": 1
+    }
+  ]
 }

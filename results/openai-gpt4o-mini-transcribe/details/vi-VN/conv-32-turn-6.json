@@ -2,15 +2,26 @@
   "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Cộng tầm bốn chín một, một hai ba bốn, năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 13,
-  "werNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng tầm bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng tầm bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tám' to 'tầm' at position 1",
+      "reason": "'tám' means 'eight' (a number), while 'tầm' means 'about/around' (not a number). This changes the meaning of the number sequence and makes the sentence incoherent as a number string.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 2",
+      "reason": "'mươi' is part of the number 'tám mươi bốn' (eighty-four). Its deletion changes 'eighty-four' to just 'four', significantly altering the intended number sequence.",
+      "score": 1
+    }
+  ]
 }

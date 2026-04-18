@@ -1,16 +1,27 @@
 {
   "gold": "君玲。",
-  "predicted": "джынлин",
+  "predicted": "Джинлин",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
-  "werNormalizedPredicted": "君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "джинлин",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
-  "sigWerNormalizedPredicted": "君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "джинлин",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'джинлин' at position 0",
+      "reason": "The expected word is in Chinese, while the actual transcription is in Cyrillic script (Russian letters), representing a completely different language and not a transliteration or translation. This makes the meaning incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A whole character from the expected name is missing in the actual transcription, which significantly alters the intended name and meaning.",
+      "score": 1
+    }
+  ]
 }

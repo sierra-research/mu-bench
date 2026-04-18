@@ -2,26 +2,26 @@
   "gold": "Tabii. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet nokta arslan et gmail nokta com",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 2,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "ahmet nokta arslan at gmail nokta com",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "ahmet nokta arslan et gmail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "ahmet nokta arslan at gmail nokta com",
+  "sigWerNormalizedPredicted": "ahmet nokta arslan et gmail nokta com",
   "sigWerErrors": [
     {
       "error": "Deletion: 'tabii' at position 0",
-      "reason": "'tabii' is likely an important part of the email address (could be a username or prefix), and its omission changes the identity of the email address, making it a significant error.",
+      "reason": "'tabii' is likely a part of the email address or a username. Its omission changes the intended recipient or address, which is significant in the context of an email address.",
       "score": 1
     },
     {
-      "error": "Substitution: 'email' to 'gmail' at position 5",
-      "reason": "Changing 'email' to 'gmail' changes the email provider, which is a significant change in the address and could result in a completely different recipient.",
-      "score": 1
+      "error": "Substitution: 'at' to 'et' at position 4",
+      "reason": "'at' is the English word for '@' in email addresses, while 'et' is a common mishearing or mispronunciation. However, in this context, it does not change the meaning as both refer to the '@' symbol in an email address.",
+      "score": 3
     }
   ]
 }

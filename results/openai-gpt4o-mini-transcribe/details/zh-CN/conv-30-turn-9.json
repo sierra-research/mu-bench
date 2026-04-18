@@ -1,21 +1,26 @@
 {
   "gold": "不是邻居，是林俊。",
-  "predicted": "不是林芝,是林俊。",
+  "predicted": "不是靈芝,是靈菌。",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 2,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "不是邻居 是林俊",
-  "werNormalizedPredicted": "不是林俊 是林俊",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "不是靈芝 是靈菌",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "不 是 邻 居 是 林 俊",
-  "sigWerNormalizedPredicted": "不 是 林 俊 是 林 俊",
+  "sigWerNormalizedPredicted": "不 是 靈 芝 是 靈 菌",
   "sigWerErrors": [
     {
-      "error": "Substitution: '邻' to '林' at position 2",
-      "reason": "'邻居' means 'neighbor', while '林俊' is a name. Substituting '邻' with '林' changes the meaning from 'neighbor' to a person's name, which significantly alters the meaning of the sentence.",
+      "error": "Substitution: '邻' to '靈' at position 2",
+      "reason": "'邻居' (neighbor) and '靈芝' (Ganoderma, a type of mushroom) are completely different words with unrelated meanings, which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '靈' at position 5",
+      "reason": "'林俊' is a proper name, while '靈菌' is unrelated and refers to a type of fungus, making the meaning completely different.",
       "score": 1
     }
   ]

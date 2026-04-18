@@ -5,18 +5,18 @@
   "wer": 0.1111111111111111,
   "werEdits": 1,
   "werRefWords": 9,
-  "werNormalizedGold": "ho ten day du cua minh la tran minh",
-  "werNormalizedPredicted": "ten day du cua minh la tran minh",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "họ tên đầy đủ của mình là trần minh",
+  "werNormalizedPredicted": "tên đầy đủ của mình là trần minh",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "ho ten day du cua minh la tran minh",
-  "sigWerNormalizedPredicted": "ten day du cua minh la tran minh",
+  "sigWerNormalizedGold": "họ tên đầy đủ của mình là trần minh",
+  "sigWerNormalizedPredicted": "tên đầy đủ của mình là trần minh",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'ho' at position 0",
-      "reason": "'ho' is part of the full name phrase in Vietnamese ('ho ten day du' means 'full name'), so omitting 'ho' makes the phrase incomplete and could cause confusion about what is being asked for.",
-      "score": 1
+      "error": "Deletion: 'họ' at position 0",
+      "reason": "Omitting 'họ' (family name) slightly reduces the specificity of the phrase 'full name', but the overall meaning remains clear as 'tên đầy đủ' still refers to the full name. The sentence is still understandable and the intent is preserved.",
+      "score": 2
     }
   ]
 }

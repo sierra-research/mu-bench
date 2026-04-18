@@ -2,15 +2,26 @@
   "gold": "Minh chấm trần a còng email chấm com.",
   "predicted": "Minh chấm trậngmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
   "werNormalizedGold": "minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "minh chấm trậngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "minh chấm trậngmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trậngmail' at position 2",
+      "reason": "'trậngmail' merges 'trần' and 'a còng email' into one word, making the email address incoherent and unrecognizable. This significantly alters the meaning and usability of the information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 3",
+      "reason": "Missing 'a' (which stands for 'a còng', meaning '@') in an email address makes the address invalid and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

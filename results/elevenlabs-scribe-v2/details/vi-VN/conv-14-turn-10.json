@@ -2,15 +2,26 @@
   "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 13,
-  "werNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 2",
+      "reason": "'tám mươi bốn' (eighty four) and 'tám tư' (eighty four) are equivalent ways to say the number 84 in Vietnamese, so this is a semantic match.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bốn' at position 3",
+      "reason": "'bốn' is omitted after 'tư', but 'tám tư' already means 'eighty four', so the omission does not change the meaning or information.",
+      "score": 3
+    }
+  ]
 }

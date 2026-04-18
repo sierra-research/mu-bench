@@ -2,20 +2,25 @@
   "gold": "君灵，君灵。",
   "predicted": "军陵。",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 2,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "君灵 君灵",
-  "werNormalizedPredicted": "君灵",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "军陵",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "君 灵 君 灵",
-  "sigWerNormalizedPredicted": "君 灵",
+  "sigWerNormalizedPredicted": "军 陵",
   "sigWerErrors": [
     {
+      "error": "Substitution: '君' to '军' at position 0",
+      "reason": "'君' and '军' are different Chinese characters with different meanings; this changes the meaning of the word and potentially the sentence.",
+      "score": 1
+    },
+    {
       "error": "Deletion: '君' at position 2",
-      "reason": "A repeated word is missing from the actual transcription. If the repetition is important for meaning or emphasis, its omission can change the intended message, especially in names or phrases where repetition is significant.",
+      "reason": "An entire word ('君') is missing, which alters the repetition and meaning of the phrase.",
       "score": 1
     }
   ]

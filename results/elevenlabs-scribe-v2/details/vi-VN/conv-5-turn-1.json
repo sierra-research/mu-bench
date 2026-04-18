@@ -2,15 +2,26 @@
   "gold": "Để mình ghi lại nhá. C N 3 9 0 7, đúng không? C N.",
   "predicted": "Ừm. Để, để, để mình ghi lại nhé. CN ba chín không bảy đúng không? CN",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 3,
   "werRefWords": 15,
-  "werNormalizedGold": "de minh ghi lai nhe c n ba chin khong bay dung khong c n",
-  "werNormalizedPredicted": "de minh ghi lai nhe c n ba chin khong bay dung khong c n",
-  "significantWer": 0.0,
+  "werNormalizedGold": "để mình ghi lại nhá c n ba chín không bảy đúng không c n",
+  "werNormalizedPredicted": "để để để mình ghi lại nhé c n ba chín không bảy đúng không c n",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "de minh ghi lai nhe c n ba chin khong bay dung khong c n",
-  "sigWerNormalizedPredicted": "de minh ghi lai nhe c n ba chin khong bay dung khong c n",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "để mình ghi lại nhá c n ba chín không bảy đúng không c n",
+  "sigWerNormalizedPredicted": "để để để mình ghi lại nhé c n ba chín không bảy đúng không c n",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'để' at position 1",
+      "reason": "The repeated insertion of 'để' does not change the meaning of the sentence, as it is just a repetition and the rest of the sentence is intact.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 4",
+      "reason": "'nhá' and 'nhé' are minor variants in Vietnamese with similar pragmatic meaning, so the overall meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

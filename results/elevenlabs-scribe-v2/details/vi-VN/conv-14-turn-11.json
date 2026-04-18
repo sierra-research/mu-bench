@@ -1,13 +1,13 @@
 {
   "gold": "Email hình như đang sai rồi.",
-  "predicted": "Em yêu anh hình như đang xa nhau.",
+  "predicted": "Em yêu anh hình như đang xa nhau",
   "unintelligible": false,
   "wer": 0.8333333333333334,
   "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "email hình như đang sai rồi",
   "werNormalizedPredicted": "em yêu anh hình như đang xa nhau",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "email hình như đang sai rồi",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'email' to 'anh' at position 0",
-      "reason": "'em' is an extra word that changes the subject and context of the sentence, making the meaning different from the expected sentence.",
+      "reason": "'em' is an extra word not present in the expected sentence, and it changes the subject and meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'sai' to 'xa' at position 4",
-      "reason": "'email' (referring to an email) is replaced by 'anh' (meaning 'you' or 'older brother'), which completely changes the subject and meaning of the sentence.",
+      "reason": "'email' (referring to email) is replaced by 'anh' (meaning 'you' or 'older brother'), which completely changes the subject and meaning of the sentence.",
       "score": 1
     }
   ]

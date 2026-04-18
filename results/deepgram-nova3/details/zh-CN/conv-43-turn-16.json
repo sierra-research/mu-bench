@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "junelinexemanodon。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 6,
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
-  "werNormalizedPredicted": "君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "junelinexemanodon",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "junelinexemanodon",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junelinexemanodon' at position 0",
+      "reason": "The expected contains a Chinese name character, but the actual is a long string that does not correspond to the name and is not a reasonable transliteration or translation. This makes the meaning unrecognizable and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The second character of the name is missing entirely in the actual transcription, which is a significant omission for a name and makes the transcription incorrect.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
   "predicted": "Yalnız email adresim yanlış oldu. Zeynep değil, Zayneb olacak. zayneb.arslan@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep değil zayneb olacak zayneb nokta arslan at email nokta com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep değil zayneb olacak zayneb nokta arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zayneb' at position 7",
+      "reason": "Minor misspelling of a proper noun (email username), still recognizable and does not derail the meaning, but could cause an error in email delivery.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zayneb' at position 9",
+      "reason": "Minor misspelling of a proper noun (email username), still recognizable and does not derail the meaning, but could cause an error in email delivery.",
+      "score": 2
+    }
+  ]
 }

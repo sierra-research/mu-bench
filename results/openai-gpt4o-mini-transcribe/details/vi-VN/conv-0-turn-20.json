@@ -1,13 +1,13 @@
 {
   "gold": "Số điện thoại là cộng.",
-  "predicted": "Xin lỗi là cộng",
+  "predicted": "xin lỗi là cộng",
   "unintelligible": false,
   "wer": 0.6,
   "werEdits": 3,
   "werRefWords": 5,
   "werNormalizedGold": "số điện thoại là cộng",
   "werNormalizedPredicted": "xin lỗi là cộng",
-  "significantWer": 0.4,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "số điện thoại là cộng",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'số' to 'xin' at position 0",
-      "reason": "The substitution changes the meaning from 'number' to 'sorry', which completely alters the intent of the sentence.",
+      "reason": "The substitution changes the meaning from 'number' (số) to 'sorry' (xin), which makes the sentence about apologizing instead of providing a phone number. This derails the intended meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'thoại' at position 2",
-      "reason": "Omitting 'thoại' ('phone') removes essential information, making the sentence incomplete and changing its meaning significantly.",
+      "reason": "Omitting 'thoại' (which means 'phone') removes the key information that the sentence is about a phone number, significantly altering the meaning.",
       "score": 1
     }
   ]

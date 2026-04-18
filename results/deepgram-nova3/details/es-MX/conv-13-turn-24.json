@@ -2,26 +2,31 @@
   "gold": "Sí, ya la puedo ver aquí. Oye ¿y me podrían hacer llegar también llegar el estado de cuenta por correo fisco?",
   "predicted": "Sí, ya la puedo ver aquí. Oye, ¿y me podrías hacer también llegar el estado de cuenta por correo físico?",
   "unintelligible": false,
-  "wer": 0.09523809523809523,
-  "werEdits": 2,
+  "wer": 0.14285714285714285,
+  "werEdits": 3,
   "werRefWords": 21,
-  "werNormalizedGold": "si ya la puedo ver aqui oye y me podrian hacer llegar tambien llegar el estado de cuenta por correo fisico",
-  "werNormalizedPredicted": "si ya la puedo ver aqui oye y me podrias hacer tambien llegar el estado de cuenta por correo fisico",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí ya la puedo ver aquí oye y me podrían hacer llegar también llegar el estado de cuenta por correo fisco",
+  "werNormalizedPredicted": "sí ya la puedo ver aquí oye y me podrías hacer también llegar el estado de cuenta por correo físico",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "si ya la puedo ver aqui oye y me podrian hacer llegar tambien llegar el estado de cuenta por correo fisico",
-  "sigWerNormalizedPredicted": "si ya la puedo ver aqui oye y me podrias hacer tambien llegar el estado de cuenta por correo fisico",
+  "sigWerNormalizedGold": "sí ya la puedo ver aquí oye y me podrían hacer llegar también llegar el estado de cuenta por correo fisco",
+  "sigWerNormalizedPredicted": "sí ya la puedo ver aquí oye y me podrías hacer también llegar el estado de cuenta por correo físico",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'podrian' to 'podrias' at position 9",
-      "reason": "The change from 'podrian' (they could) to 'podrias' (you could) changes the subject from plural to singular, but the overall intent of the request remains clear in context.",
-      "score": 2
+      "error": "Substitution: 'podrían' to 'podrías' at position 9",
+      "reason": "Change from plural/formal to singular/informal, but the overall meaning of the request remains the same.",
+      "score": 3
     },
     {
       "error": "Deletion: 'llegar' at position 11",
-      "reason": "The omission of the first 'llegar' removes a redundant word, as 'hacer llegar' and 'llegar' are repeated in the expected. The meaning of the sentence is preserved and remains clear.",
+      "reason": "The word 'llegar' is repeated in the expected transcript, but omitting the first instance does not change the overall meaning of the sentence.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'fisco' to 'físico' at position 20",
+      "reason": "'Fisco' (tax authority) and 'físico' (physical) are completely different words; this changes the meaning of the sentence significantly.",
+      "score": 1
     }
   ]
 }

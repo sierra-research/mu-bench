@@ -2,21 +2,31 @@
   "gold": "Sonu Gmail değil email, G yok. Sadece email nokta com.",
   "predicted": "Sonuç Gmail değil email, g yokusade email nokta com",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "sonu gmail değil email g yok sadece email nokta com",
-  "werNormalizedPredicted": "sonuç gmail değil email g yok sadece email nokta com",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "sonuç gmail değil email g yokusade email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "sonu gmail değil email g yok sadece email nokta com",
-  "sigWerNormalizedPredicted": "sonuç gmail değil email g yok sadece email nokta com",
+  "sigWerNormalizedPredicted": "sonuç gmail değil email g yokusade email nokta com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'sonu' to 'sonuç' at position 0",
-      "reason": "'sonu' means 'the end' or 'ending', while 'sonuç' means 'result' in Turkish. This changes the meaning of the sentence significantly.",
+      "reason": "'sonu' (meaning 'end' or 'ending') and 'sonuç' (meaning 'result') are different words with different meanings, which can change the intended meaning of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'yok' to 'yokusade' at position 5",
+      "reason": "'yok' means 'there is not', while 'yokusade' is not a standard word and appears to be a mistranscription or concatenation of 'yok' and 'sadece', making the sentence confusing and less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sadece' at position 6",
+      "reason": "Omitting 'sadece' ('only') removes a clarifying word, which can affect the specificity and clarity of the sentence.",
+      "score": 2
     }
   ]
 }

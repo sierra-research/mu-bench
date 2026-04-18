@@ -7,7 +7,7 @@
   "werRefWords": 14,
   "werNormalizedGold": "我正在等待新卡 想知道它的状态",
   "werNormalizedPredicted": "我正在等待信用卡 想知道它的状态",
-  "significantWer": 0.07142857142857142,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "我 正 在 等 待 新 卡 想 知 道 它 的 状 态",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '新' to '用' at position 5",
-      "reason": "'信' is inserted before '用卡', changing '新卡' (new card) to '信用卡' (credit card), which changes the meaning from 'new card' to 'credit card'. This is a significant change in meaning.",
+      "reason": "'信' is the first character of '信用卡' (credit card), which is inserted in place of '新卡' (new card). This changes the meaning from 'new card' to 'credit card', which is a significant change in the context of the sentence.",
       "score": 1
     }
   ]

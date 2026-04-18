@@ -2,21 +2,31 @@
   "gold": "Sí. ¿Me vas a mandar un correo? ¿Me van a llamar? ¿Cómo me van a hacer saber cuándo esté listo?",
   "predicted": "Sí, me vas a mandar un correo, me van a llamar, cómo me van a a hacer saber, este, cuando esté lista.",
   "unintelligible": false,
-  "wer": 0.05,
-  "werEdits": 1,
+  "wer": 0.15,
+  "werEdits": 3,
   "werRefWords": 20,
-  "werNormalizedGold": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este listo",
-  "werNormalizedPredicted": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este lista",
-  "significantWer": 0.0,
+  "werNormalizedGold": "sí me vas a mandar un correo me van a llamar cómo me van a hacer saber cuándo esté listo",
+  "werNormalizedPredicted": "sí me vas a mandar un correo me van a llamar cómo me van a a hacer saber cuando esté lista",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este listo",
-  "sigWerNormalizedPredicted": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este lista",
+  "sigWerNormalizedGold": "sí me vas a mandar un correo me van a llamar cómo me van a hacer saber cuándo esté listo",
+  "sigWerNormalizedPredicted": "sí me vas a mandar un correo me van a llamar cómo me van a a hacer saber cuando esté lista",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'listo' to 'lista' at position 19",
-      "reason": "'Listo' and 'lista' are gender variants of the same word ('ready') in Spanish. The meaning of the sentence remains the same, only the gender changes, which does not affect the overall intent.",
+      "error": "Insertion: 'a' at position 15",
+      "reason": "The extra 'a' is a repetition and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cuándo' to 'cuando' at position 17",
+      "reason": "The only difference is the missing accent mark, which does not affect the meaning in this context.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'listo' to 'lista' at position 19",
+      "reason": "'Listo' (masculine) and 'lista' (feminine) refer to readiness; the gender change may be relevant depending on the subject, but the overall meaning remains the same.",
+      "score": 2
     }
   ]
 }

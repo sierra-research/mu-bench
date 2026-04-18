@@ -2,15 +2,31 @@
   "gold": "我正在等待我的信用卡，想知道它的状态。",
   "predicted": "我正在当代我的喜牛卡而相识到她的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5294117647058824,
+  "werEdits": 9,
   "werRefWords": 17,
-  "werNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
-  "werNormalizedPredicted": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "我正在等待我的信用卡 想知道它的状态",
+  "werNormalizedPredicted": "我正在当代我的喜牛卡而相识到她的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 当 代 我 的 喜 牛 卡 而 相 识 到 她 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '等' to '当' at position 3",
+      "reason": "The substitution changes the meaning from 'waiting' (等) to 'contemporary/acting as' (当), which makes the sentence incoherent and derails the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '信' to '喜' at position 7",
+      "reason": "'信用卡' means 'credit card', but '喜牛卡' is not a valid term and changes the meaning, making it confusing and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '想' to '相' at position 10",
+      "reason": "The insertion of '而' ('and/but') adds an unnecessary conjunction, but does not significantly change the overall meaning.",
+      "score": 2
+    }
+  ]
 }

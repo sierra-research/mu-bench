@@ -2,15 +2,21 @@
   "gold": "美玲。",
   "predicted": "梅林。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "美玲",
-  "werNormalizedPredicted": "美玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "梅林",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "美 玲",
-  "sigWerNormalizedPredicted": "美 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "梅 林",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '梅' at position 0",
+      "reason": "Both are Chinese characters but represent different names/words; '美' (meaning 'beautiful') and '梅' (meaning 'plum') are not semantically equivalent and refer to different people or concepts. This changes the identity of the name.",
+      "score": 1
+    }
+  ]
 }

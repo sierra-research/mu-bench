@@ -5,37 +5,32 @@
   "wer": 0.25,
   "werEdits": 5,
   "werRefWords": 20,
-  "werNormalizedGold": "so dien thoai cua minh la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "o so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai muoi ba bon nam muoi sau bay muoi tam",
-  "significantWer": 0.2,
-  "majorErrorsCount": 4,
+  "werNormalizedGold": "số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại của mình là cộng tám mươi bốn chín mươi mốt một hai mươi ba bốn mươi sáu bảy mươi tám",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "so dien thoai cua minh la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "o so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai muoi ba bon nam muoi sau bay muoi tam",
+  "sigWerNormalizedGold": "số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại của mình là cộng tám mươi bốn chín mươi mốt một hai mươi ba bốn mươi sáu bảy mươi tám",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'o' at position 0",
-      "reason": "The word 'o' at the beginning is an extra word that does not change the meaning of the sentence, as the main content is about providing a phone number.",
+      "error": "Substitution: 'một' to 'mốt' at position 11",
+      "reason": "The insertion of 'mươi' changes the number from 'chín một một' (911) to 'chín mươi mốt' (91), which alters the phone number significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 14",
+      "reason": "'một' (1) and 'mốt' (1, but used in compound numbers like 21, 31, etc.) are not interchangeable here; this changes the intended number sequence in the phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'năm' to 'mươi' at position 16",
+      "reason": "The insertion of 'mươi' changes 'hai ba' (23) to 'hai mươi ba' (23), which is correct in Vietnamese, but if the original intent was to list digits, this could confuse the phone number format. However, in context, it does not change the number value.",
       "score": 2
     },
     {
-      "error": "Insertion: 'muoi' at position 11",
-      "reason": "The insertion of 'muoi' (ten) changes the number sequence in the phone number, resulting in an incorrect phone number being transcribed.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'muoi' at position 14",
-      "reason": "The insertion of 'muoi' (ten) again alters the phone number, making it incorrect and potentially unusable.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'muoi' at position 17",
-      "reason": "This extra 'muoi' (ten) further changes the phone number, which is critical information.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'muoi' at position 19",
-      "reason": "Another insertion of 'muoi' (ten) at the end of the number sequence, making the phone number incorrect.",
+      "error": "Insertion: 'mươi' at position 19",
+      "reason": "'năm' (5) is replaced by 'mươi' (tens), which disrupts the digit sequence of the phone number, making it incorrect.",
       "score": 1
     }
   ]

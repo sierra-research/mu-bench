@@ -2,15 +2,21 @@
   "gold": "不对呀，你有什么问题。",
   "predicted": "不对啊,你有什么问题?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "不对呀 你有什么问题",
-  "werNormalizedPredicted": "不对呀 你有什么问题",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "不对 你有什么问题",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "不 对 呀 你 有 什 么 问 题",
-  "sigWerNormalizedPredicted": "不 对 呀 你 有 什 么 问 题",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 对 你 有 什 么 问 题",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '呀' at position 2",
+      "reason": "'呀' is a modal particle in Chinese that adds a softening or exclamatory tone, but its omission does not change the core meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

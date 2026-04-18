@@ -1,21 +1,26 @@
 {
   "gold": "Không phải. Minh chấm trần at email chấm com.",
-  "predicted": "Đúng phải minh.cham.tran@gmail.com",
+  "predicted": "phải minh.chamtrần@gmail.com",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
-  "werNormalizedGold": "khong phai minh cham tran at email cham com",
-  "werNormalizedPredicted": "dung phai minh cham tran at email cham com",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "không phải minh chấm trần at email chấm com",
+  "werNormalizedPredicted": "phải minh chấm trần at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "khong phai minh cham tran at email cham com",
-  "sigWerNormalizedPredicted": "dung phai minh cham tran at email cham com",
+  "sigWerNormalizedGold": "không phải minh chấm trần at email chấm com",
+  "sigWerNormalizedPredicted": "phải minh chấm trần at gmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'khong' to 'dung' at position 0",
-      "reason": "'khong' means 'no' or 'not', while 'dung' means 'yes' or 'correct' in Vietnamese. This substitution reverses the meaning of the sentence, making it the opposite of what was intended.",
+      "error": "Deletion: 'không' at position 0",
+      "reason": "'không' means 'no' or 'not' in Vietnamese, so its deletion reverses the meaning of the sentence, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 6",
+      "reason": "Substituting 'email' with 'gmail' changes the specific email provider, which could cause a message to be sent to the wrong address. This is a significant error.",
       "score": 1
     }
   ]

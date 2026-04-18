@@ -1,16 +1,27 @@
 {
   "gold": "Mã của tôi là C N 8 7 6.",
-  "predicted": "mã của tôi là Sena tám bảy sáu.",
+  "predicted": "Mã của tôi là Sena tám bảy sáu",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "mã của tôi là c n tám bảy sáu",
-  "werNormalizedPredicted": "mã của tôi là c n tám bảy sáu",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "mã của tôi là sena tám bảy sáu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "mã của tôi là c n tám bảy sáu",
-  "sigWerNormalizedPredicted": "mã của tôi là c n tám bảy sáu",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "mã của tôi là sena tám bảy sáu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'sena' at position 4",
+      "reason": "'c' is a single letter, likely part of a code or identifier, replaced by 'sena' which is a completely different word. This changes the intended code and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 5",
+      "reason": "A letter in a code or identifier is missing, which makes the code incorrect. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

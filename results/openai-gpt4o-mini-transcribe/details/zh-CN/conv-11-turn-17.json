@@ -1,16 +1,27 @@
 {
   "gold": "你说的不对！你为什么不听好呀。",
-  "predicted": "你说的不对,你为什么听不听话呀?",
+  "predicted": "你说的不对,你为什么总不听我呀?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "你 说 的 不 对 你 为 什么 不 听 好 呀",
-  "werNormalizedPredicted": "你 说 的 不 对 你 为 什么 不 听 好 呀",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你说的不对你为什么不听好呀",
+  "werNormalizedPredicted": "你说的不对你为什么总不听我呀",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "你 说 的 不 对 你 为 什 么 不 听 好 呀",
-  "sigWerNormalizedPredicted": "你 说 的 不 对 你 为 什 么 不 听 好 呀",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 说 的 不 对 你 为 什 么 总 不 听 我 呀",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '总' at position 9",
+      "reason": "The insertion of '总' (always) adds emphasis to the frequency of not listening, but does not fundamentally change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '好' to '我' at position 11",
+      "reason": "Substituting '好' (good) with '我' (me) changes the object of 'listen' from 'good' (as in 'listen well') to 'me' (as in 'listen to me'), which alters the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

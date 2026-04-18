@@ -2,15 +2,31 @@
   "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
   "predicted": "Ờ xin chào rồi ờ đây là tôi làm mất thầy á cái ờ tôi xin cấp thẻ mới giờ muốn hỏi coi là ờ hiện tại khi nào chuẩn bị có?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.38095238095238093,
+  "werEdits": 8,
   "werRefWords": 21,
   "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "werNormalizedPredicted": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "xin chào rồi đây là tôi làm mất thầy á cái tôi xin cấp thẻ mới giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "sigWerNormalizedPredicted": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "xin chào rồi đây là tôi làm mất thầy á cái tôi xin cấp thẻ mới giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'rồi' at position 2",
+      "reason": "'rồi' (meaning 'already' or 'then') is an extra word that does not change the main meaning of the sentence, just adds a conversational filler.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'cái' at position 5",
+      "reason": "'thầy' (meaning 'teacher') is inserted where 'thẻ' (meaning 'card') is expected. This changes the meaning significantly, as it refers to a person instead of an object, making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'coi' at position 14",
+      "reason": "'cái' is a classifier and does not carry the same meaning as 'thẻ' (card). This substitution, especially combined with the previous error, makes the sentence unclear.",
+      "score": 1
+    }
+  ]
 }

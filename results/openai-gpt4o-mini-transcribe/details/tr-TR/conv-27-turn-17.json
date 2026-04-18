@@ -1,21 +1,31 @@
 {
   "gold": "Z, tamam kodluyorum, baştan başlıyorum. Z A Y N E P nokta A R S L A N at E M A İ L nokta C O M.",
-  "predicted": "Z Tamam, kodluyorum. Baştan başlıyorum. Z-A-Y-N-E-P nokta A-R-S-L-A-N-E et E-M-A-İ-L nokta C-O-M",
+  "predicted": "Tamam, kodluyorum. Baştan başlıyorum. Z, A, Y, N, E, P. nokta A, R, S, L, A, N, E, E, M, A, İ, LE nokta C, O, M.",
   "unintelligible": false,
-  "wer": 0.03571428571428571,
-  "werEdits": 1,
+  "wer": 0.10714285714285714,
+  "werEdits": 3,
   "werRefWords": 28,
   "werNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at e m a i l nokta c o m",
-  "werNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n e at e m a i l nokta c o m",
-  "significantWer": 0.03571428571428571,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n e e m a i l e nokta c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 28,
   "sigWerNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at e m a i l nokta c o m",
-  "sigWerNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n e at e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n e e m a i l e nokta c o m",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'e' at position 18",
-      "reason": "An extra 'e' was inserted in the spelled-out email username, which changes the actual email address and makes it incorrect. For spelled-out email addresses, any extra or missing letter is a significant error.",
+      "error": "Deletion: 'z' at position 0",
+      "reason": "The initial 'z' is omitted, which may be a label or identifier. Its absence could cause confusion or loss of information, especially if it is part of a code or identifier.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'e' at position 18",
+      "reason": "The word 'at' (likely representing the '@' symbol in an email address) is replaced with 'e', which makes the email address incorrect and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'e' at position 24",
+      "reason": "An extra 'e' is inserted in the domain part of the email address, making the email address invalid and changing its meaning significantly.",
       "score": 1
     }
   ]

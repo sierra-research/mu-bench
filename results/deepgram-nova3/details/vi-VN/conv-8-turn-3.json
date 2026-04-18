@@ -2,15 +2,26 @@
   "gold": "Mã là C N 2 8 4.",
   "predicted": "Mã là cn-hai trăm tám mươi bốn",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "mã là c n hai trăm tám mươi bốn",
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "mã là c n hai tám bốn",
   "werNormalizedPredicted": "mã là c n hai trăm tám mươi bốn",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "mã là c n hai trăm tám mươi bốn",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "mã là c n hai tám bốn",
   "sigWerNormalizedPredicted": "mã là c n hai trăm tám mươi bốn",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 5",
+      "reason": "'trăm' means 'hundred', which changes the number from 'hai tám bốn' (284) to 'hai trăm tám mươi bốn' (284), so the meaning is numerically the same, just a different way of saying the number.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mươi' at position 6",
+      "reason": "'mươi' is part of the Vietnamese way to say numbers, and in this context, 'hai tám bốn' and 'hai trăm tám mươi bốn' both refer to 284. The meaning is preserved, just a different format.",
+      "score": 3
+    }
+  ]
 }

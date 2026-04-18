@@ -2,25 +2,30 @@
   "gold": "姓名是林俊，英俊的俊。",
   "predicted": "你是凌俊,英俊的俊。",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
   "werNormalizedGold": "姓名是林俊 英俊的俊",
-  "werNormalizedPredicted": "你是林俊 英俊的俊",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "你是凌俊 英俊的俊",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "姓 名 是 林 俊 英 俊 的 俊",
-  "sigWerNormalizedPredicted": "你 是 林 俊 英 俊 的 俊",
+  "sigWerNormalizedPredicted": "你 是 凌 俊 英 俊 的 俊",
   "sigWerErrors": [
     {
       "error": "Substitution: '姓' to '你' at position 0",
-      "reason": "'姓' means 'surname' and '你' means 'you'; this substitution changes the meaning of the sentence from stating a name to addressing someone, which derails the intended meaning.",
+      "reason": "'姓' (surname) is replaced by '你' (you), which changes the meaning of the sentence and makes it incoherent as an introduction of a name.",
       "score": 1
     },
     {
       "error": "Deletion: '名' at position 1",
-      "reason": "'名' means 'name' and its omission removes important information about the subject's name, making the sentence incomplete and changing its meaning significantly.",
+      "reason": "Omitting '名' (name) removes part of the phrase '姓名' (full name), which is important for clarity and correctness.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '凌' at position 3",
+      "reason": "'林' and '凌' are different surnames in Chinese; substituting one for the other is a significant error in a name context.",
       "score": 1
     }
   ]

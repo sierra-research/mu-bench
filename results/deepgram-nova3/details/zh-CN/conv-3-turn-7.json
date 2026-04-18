@@ -5,9 +5,9 @@
   "wer": 0.5,
   "werEdits": 5,
   "werRefWords": 10,
-  "werNormalizedGold": "你 写 了 我 的 电子 邮箱 吗",
-  "werNormalizedPredicted": "那 你 斜 了 我 的 垫子 有 香 吗",
-  "significantWer": 0.4,
+  "werNormalizedGold": "你写了我的电子邮箱吗",
+  "werNormalizedPredicted": "那你斜了我的垫子有香吗",
+  "significantWer": 1,
   "majorErrorsCount": 4,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "你 写 了 我 的 电 子 邮 箱 吗",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '那' at position 0",
-      "reason": "'那' (that) is an extra word at the beginning, which changes the subject and context of the sentence.",
+      "reason": "The insertion of '那' ('that') changes the subject and context of the sentence, making it incoherent with the original meaning.",
       "score": 1
     },
     {
       "error": "Substitution: '写' to '斜' at position 1",
-      "reason": "'写' means 'write', while '斜' means 'slant/tilt', which completely changes the meaning of the action in the sentence.",
+      "reason": "'写' means 'write' while '斜' means 'slant/tilt', which completely changes the action described and derails the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: '电' to '垫' at position 5",
-      "reason": "'电' (electric) is part of '电子邮箱' (email), while '垫' (mat/cushion) is unrelated and changes the meaning of the noun phrase.",
+      "reason": "'电' (electric) is part of '电子邮箱' (email), while '垫' (mat/cushion) is unrelated, making the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: '邮' to '有' at position 7",
-      "reason": "'邮' (mail) is part of '邮箱' (mailbox/email), while '有' (have) is a verb, which disrupts the meaning of the phrase.",
+      "reason": "'邮' (mail) is part of '邮箱' (mailbox/email), while '有' (have) changes the meaning and breaks the phrase, making the sentence incoherent.",
       "score": 1
     }
   ]

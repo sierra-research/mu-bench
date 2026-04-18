@@ -5,9 +5,9 @@
   "wer": 0.6,
   "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "我 正在 等待",
-  "werNormalizedPredicted": "我 现在 正在",
-  "significantWer": 0.2,
+  "werNormalizedGold": "我正在等待",
+  "werNormalizedPredicted": "我现在正在",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "我 正 在 等 待",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '正' to '现' at position 1",
-      "reason": "'正' (in the process of) was replaced by '现' (now), which changes the temporal aspect of the sentence but does not derail the overall meaning, as both indicate a current or ongoing state.",
+      "reason": "'正' (in the process of) is replaced by '现' (now), which changes the temporal aspect of the sentence but does not derail the overall meaning of waiting; minor error.",
       "score": 2
     },
     {
       "error": "Substitution: '等' to '正' at position 3",
-      "reason": "'等' (wait) was replaced by '正' (in the process of), which removes the main action of waiting and makes the sentence incoherent or incomplete in meaning.",
+      "reason": "'等' (wait) is replaced by '正' (in the process of), which removes the main verb and makes the sentence incomplete and unclear; significant error.",
       "score": 1
     }
   ]

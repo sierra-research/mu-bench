@@ -2,15 +2,26 @@
   "gold": "我的邮箱地址是君玲 at email dot com。",
   "predicted": "我的邮箱地址是0@email.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是君玲 at email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的邮箱地址是 零 at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 零 at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '零' at position 7",
+      "reason": "'君' is a part of the name or identifier in the email address, but '零' means 'zero' and is a completely different character. This changes the intended email address and makes it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "Missing a character in the name or identifier of the email address significantly alters the email address, making it incorrect and potentially undeliverable.",
+      "score": 1
+    }
+  ]
 }

@@ -1,16 +1,27 @@
 {
   "gold": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "Số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 17,
-  "werNormalizedGold": "số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "wer": 0.1111111111111111,
+  "werEdits": 2,
+  "werRefWords": 18,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerNormalizedPredicted": "số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 6",
+      "reason": "'tám mươi bốn' (eighty four) is a standard way to say 84 in Vietnamese, while 'tám tư' is a colloquial way to say 84. The meaning is preserved, just a different way of saying the number.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bốn' at position 7",
+      "reason": "In the actual transcription, 'bốn' is omitted because 'tám tư' already means 84, so the word 'bốn' is not needed. The meaning is still preserved as the phone number is correct.",
+      "score": 3
+    }
+  ]
 }

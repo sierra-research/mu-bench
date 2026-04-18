@@ -2,15 +2,31 @@
   "gold": "Tôi bị làm mất thẻ, tuần trước có xin cấp thẻ mới. Nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào?",
   "predicted": "Ờ tôi muốn a tôi, tôi bị làm mất thẻ á ờ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xin tình trạng thẻ như thế nào?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.20689655172413793,
+  "werEdits": 6,
   "werRefWords": 29,
   "werNormalizedGold": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "werNormalizedPredicted": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tôi muốn a tôi tôi bị làm mất thẻ á tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xin tình trạng thẻ như thế nào",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 29,
   "sigWerNormalizedGold": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "sigWerNormalizedPredicted": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi muốn a tôi tôi bị làm mất thẻ á tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xin tình trạng thẻ như thế nào",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'muốn' at position 1",
+      "reason": "The insertion of 'muốn' (want) at the beginning slightly changes the focus of the sentence but does not derail the overall meaning, as the main intent (inquiring about the card status) remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'á' at position 5",
+      "reason": "The insertion of 'á' is a filler or interjection in Vietnamese, which does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'xem' to 'xin' at position 22",
+      "reason": "Substituting 'xem' (to see/check) with 'xin' (to request/ask) slightly changes the nuance, but the overall intent of asking about the card status is still clear. This is a minor error.",
+      "score": 2
+    }
+  ]
 }

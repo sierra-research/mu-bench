@@ -1,16 +1,27 @@
 {
   "gold": "Email, John dot Brown at email dot com.",
-  "predicted": "Email john.brown@email.com.",
+  "predicted": "Email johndoebrown@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "email john dot brown at email dot com",
-  "werNormalizedPredicted": "email john dot brown at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email johndoebrown at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "email john dot brown at email dot com",
-  "sigWerNormalizedPredicted": "email john dot brown at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email johndoebrown at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'john' to 'johndoebrown' at position 1",
+      "reason": "The actual transcription merged 'john', 'doe', and 'brown' into a single username, which is a significant change from the expected 'john dot brown'. This could result in an incorrect or undeliverable email address, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 2",
+      "reason": "Omitting 'dot' changes the structure of the email address, making it invalid or referring to a different address. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

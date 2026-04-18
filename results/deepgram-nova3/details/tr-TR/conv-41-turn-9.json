@@ -2,21 +2,26 @@
   "gold": "Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet. Arsadan et gmail dat kom",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
-  "werRefWords": 5,
-  "werNormalizedGold": "ahmet arslan at email com",
-  "werNormalizedPredicted": "ahmet arslan at gmail com",
-  "significantWer": 0.2,
+  "wer": 0.8571428571428571,
+  "werEdits": 6,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet arsadan et gmail dat kom",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "ahmet arslan at email com",
-  "sigWerNormalizedPredicted": "ahmet arslan at gmail com",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet arsadan et gmail dat kom",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'gmail' at position 3",
-      "reason": "Substituting 'email' with 'gmail' changes the domain of the email address, which is a significant change in meaning and could lead to incorrect communication or delivery.",
+      "error": "Substitution: 'nokta' to 'arsadan' at position 1",
+      "reason": "'nokta' means 'dot' in Turkish and is part of the email address structure, while 'arsadan' is a completely different word/name, changing the structure and meaning of the email address.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'com' at position 6",
+      "reason": "'com' and 'kom' are phonetically similar, and in some languages 'k' is used instead of 'c', but for an email address, this is a minor error as it could cause the address to be invalid.",
+      "score": 2
     }
   ]
 }

@@ -1,37 +1,32 @@
 {
   "gold": "Mở ứng dụng rồi. Vui lòng hướng dẫn nha.",
-  "predicted": "mớt được người vui lòng dẫn",
+  "predicted": "mới đụng người vừa lòng không giận nha",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werEdits": 6,
+  "wer": 0.7777777777777778,
+  "werEdits": 7,
   "werRefWords": 9,
   "werNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
-  "werNormalizedPredicted": "mớt được người vui lòng dẫn",
-  "significantWer": 0.2222222222222222,
+  "werNormalizedPredicted": "mới đụng người vừa lòng không giận nha",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
-  "sigWerNormalizedPredicted": "mớt được người vui lòng dẫn",
+  "sigWerNormalizedPredicted": "mới đụng người vừa lòng không giận nha",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'mở' to 'mớt' at position 0",
-      "reason": "'mở' means 'open', while 'mớt' is not a standard word and does not convey the intended action, making the sentence unclear.",
+      "error": "Substitution: 'mở' to 'mới' at position 0",
+      "reason": "'mở' means 'open' while 'mới' means 'new'; this changes the intent of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'rồi' at position 3",
-      "reason": "'rồi' means 'then', which helps sequence the actions. Its omission slightly affects the flow but not the main meaning.",
+      "error": "Deletion: 'vui' at position 4",
+      "reason": "Omitting 'vui' ('please') removes the politeness/request aspect, which changes the tone but not the core meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'hướng' at position 6",
-      "reason": "'hướng dẫn' means 'guide/instruct'. Omitting 'hướng' leaves only 'dẫn', which is incomplete and changes the meaning.",
+      "error": "Substitution: 'hướng' to 'không' at position 6",
+      "reason": "'hướng' means 'guide' while 'không' means 'no/not'; this substitution changes the meaning of the sentence completely, making it incoherent compared to the original intent.",
       "score": 1
-    },
-    {
-      "error": "Deletion: 'nha' at position 8",
-      "reason": "'nha' is a polite particle in Vietnamese, its omission makes the sentence less polite but does not change the main meaning.",
-      "score": 2
     }
   ]
 }

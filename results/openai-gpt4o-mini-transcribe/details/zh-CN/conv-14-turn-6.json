@@ -1,16 +1,22 @@
 {
   "gold": "你可以再一遍，说。",
-  "predicted": "你可以再一遍说。",
+  "predicted": "你可以再一边说。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
   "werRefWords": 7,
-  "werNormalizedGold": "你 可以 再 一 遍 说",
-  "werNormalizedPredicted": "你 可以 再 一 遍 说",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你可以再一遍说",
+  "werNormalizedPredicted": "你可以再一边说",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "你 可 以 再 一 遍 说",
-  "sigWerNormalizedPredicted": "你 可 以 再 一 遍 说",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 可 以 再 一 边 说",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '遍' to '边' at position 5",
+      "reason": "'遍' means 'time' (as in 'one more time'), while '边' means 'side'; this substitution changes the meaning of the sentence and makes it confusing or incorrect in context.",
+      "score": 1
+    }
+  ]
 }

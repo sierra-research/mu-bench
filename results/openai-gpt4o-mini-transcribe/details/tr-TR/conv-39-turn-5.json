@@ -1,36 +1,36 @@
 {
   "gold": "Tabii ek bilgi alırım o zaman sizden, eğer aktarılıyorsa. Ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim?",
-  "predicted": "Tabii ek bilgi alayım o zaman sizden eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
+  "predicted": "Tabi ek bilgi alayım o zaman sizden eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
   "unintelligible": false,
   "wer": 0.19047619047619047,
   "werEdits": 4,
   "werRefWords": 21,
-  "werNormalizedGold": "tabii ek bilgi alirim o zaman sizden eger aktariliyorsa ben eger otomatik odeme yaparsam limitim yetmedigi takdirde nasil bir yol izlemeliyim",
-  "werNormalizedPredicted": "tabii ek bilgi alayim o zaman sizden eger aktaramiyorsaniz ben eger otomatik odeme yaparsam limitimin yetmedigi takdirde nasil bir sey yol izlemeliyim",
-  "significantWer": 0.047619047619047616,
+  "werNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "werNormalizedPredicted": "tabi ek bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "tabii ek bilgi alirim o zaman sizden eger aktariliyorsa ben eger otomatik odeme yaparsam limitim yetmedigi takdirde nasil bir yol izlemeliyim",
-  "sigWerNormalizedPredicted": "tabii ek bilgi alayim o zaman sizden eger aktaramiyorsaniz ben eger otomatik odeme yaparsam limitimin yetmedigi takdirde nasil bir sey yol izlemeliyim",
+  "sigWerNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "sigWerNormalizedPredicted": "tabi ek bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'alirim' to 'alayim' at position 3",
-      "reason": "'Alirim' (I will take/get) and 'alayim' (let me take/get) are different verb forms but the intent and meaning in this context are nearly the same.",
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are spelling variants of the same word in Turkish, both meaning 'of course'; the meaning is unchanged.",
       "score": 3
     },
     {
-      "error": "Substitution: 'aktariliyorsa' to 'aktaramiyorsaniz' at position 8",
-      "reason": "'Aktariliyorsa' (if it is being transferred) and 'aktaramiyorsaniz' (if you cannot transfer) have opposite meanings, which changes the condition and intent of the sentence.",
+      "error": "Substitution: 'alırım' to 'alayım' at position 3",
+      "reason": "'alırım' means 'I will take/get', 'alayım' means 'let me take/get'; the difference is minor and does not change the overall meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'aktarılıyorsa' to 'aktaramıyorsanız' at position 8",
+      "reason": "'aktarılıyorsa' means 'if it is being transferred', 'aktaramıyorsanız' means 'if you cannot transfer'; this changes the subject and the meaning of the condition, which can affect the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'limitim' to 'limitimin' at position 14",
-      "reason": "'Limitim' (my limit) and 'limitimin' (of my limit) are closely related; the possessive suffix changes the grammatical structure but not the overall meaning.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'sey' at position 19",
-      "reason": "The insertion of 'sey' (thing) adds a vague word but does not change the overall meaning or intent of the sentence.",
+      "reason": "'limitim' means 'my limit', 'limitimin' is the possessive/genitive form 'of my limit'; this is a minor grammatical difference and does not change the meaning.",
       "score": 2
     }
   ]

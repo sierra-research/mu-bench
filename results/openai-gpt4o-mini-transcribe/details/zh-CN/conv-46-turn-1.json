@@ -1,31 +1,41 @@
 {
   "gold": "我想提高我的信用卡限额。",
-  "predicted": "向提高的信用卡限额。",
+  "predicted": "向提供的信用卡信用额。",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werEdits": 3,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
   "werRefWords": 11,
-  "werNormalizedGold": "我 想 提高 我 的 信用卡 限额",
-  "werNormalizedPredicted": "向 提高 的 信用卡 限额",
-  "significantWer": 0.18181818181818182,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "我想提高我的信用卡限额",
+  "werNormalizedPredicted": "向提供的信用卡信用额",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 限 额",
-  "sigWerNormalizedPredicted": "向 提 高 的 信 用 卡 限 额",
+  "sigWerNormalizedPredicted": "向 提 供 的 信 用 卡 信 用 额",
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to '向' at position 0",
-      "reason": "'我' means 'I' (the speaker), while '向' means 'towards' or 'to'. This changes the subject of the sentence and makes the meaning unclear.",
+      "reason": "'我' means 'I' (the speaker), while '向' means 'towards' or 'to'. This changes the subject and meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: '想' at position 1",
-      "reason": "'想' means 'want to', which expresses the intent of the speaker. Omitting it removes the intent from the sentence, significantly altering the meaning.",
+      "reason": "'想' means 'want' or 'would like', and its omission removes the intent from the sentence, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '高' to '供' at position 3",
+      "reason": "'高' is part of '提高' (to increase), while '供' means 'to provide'. This changes the action described in the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: '我' at position 4",
-      "reason": "The second '我' clarifies that the action is being done to the speaker's own credit card. Its omission makes the sentence less clear but does not completely derail the meaning.",
+      "reason": "Omitting the second '我' (my) removes the possessive, making the sentence less clear about whose credit card is being referred to.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '限' to '用' at position 9",
+      "reason": "An extra '信' (credit) is inserted, which is redundant but does not significantly change the meaning.",
       "score": 2
     }
   ]

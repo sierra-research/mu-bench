@@ -1,16 +1,22 @@
 {
   "gold": "Tabii, söylüyorum. Artı 9 0 1 2.",
-  "predicted": "Tabii, söylüyorum. Artı dokuz sıfır bir iki.",
+  "predicted": "Tabii. Söylüyorum. Artı dokuz sıfır, bir iki.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki",
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "tabii söylüyorum artı doksan bir iki",
   "werNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "tabii söylüyorum artı doksan bir iki",
   "sigWerNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 3",
+      "reason": "The expected number 'doksan' (ninety) was transcribed as 'dokuz sıfır' (nine zero), which is a literal spelling out of the digits but does not match the intended number. This could cause confusion, especially in contexts like phone numbers or codes, so it is a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -1,27 +1,27 @@
 {
   "gold": "没通过吗，怎么那么慢？",
-  "predicted": "發貨碼怎麼那麼慢",
+  "predicted": "发货怎么那么慢。",
   "unintelligible": false,
   "wer": 0.4444444444444444,
   "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "沒通過嗎 怎麼那麼慢",
-  "werNormalizedPredicted": "發貨碼怎麼那麼慢",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "没通过吗 怎么那么慢",
+  "werNormalizedPredicted": "发货怎么那么慢",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "沒 通 過 嗎 怎 麼 那 麼 慢",
-  "sigWerNormalizedPredicted": "發 貨 碼 怎 麼 那 麼 慢",
+  "sigWerNormalizedGold": "没 通 过 吗 怎 么 那 么 慢",
+  "sigWerNormalizedPredicted": "发 货 怎 么 那 么 慢",
   "sigWerErrors": [
     {
-      "error": "Substitution: '沒' to '發' at position 0",
-      "reason": "'沒' (not/no) and '發' (send/issue) are completely different in meaning and change the intent of the sentence, resulting in a significant change in meaning.",
+      "error": "Substitution: '没' to '发' at position 0",
+      "reason": "'没通过' means 'did not pass', while '发货' means 'ship goods'; this substitution changes the entire meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: '嗎' at position 3",
-      "reason": "'嗎' is a question particle in Chinese, and its omission slightly affects the sentence's tone but does not change the core meaning as much as the previous substitutions.",
-      "score": 2
+      "error": "Deletion: '过' at position 2",
+      "reason": "Omitting '过' from '没通过' removes part of the phrase 'did not pass', further altering the intended meaning.",
+      "score": 1
     }
   ]
 }

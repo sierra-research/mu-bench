@@ -2,15 +2,21 @@
   "gold": "你还没听到我的正确的姓名，我的姓名是君灵。",
   "predicted": "你还没听到我的正确的姓名，我的姓名是君林。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.05263157894736842,
+  "werEdits": 1,
   "werRefWords": 19,
   "werNormalizedGold": "你还没听到我的正确的姓名 我的姓名是君灵",
-  "werNormalizedPredicted": "你还没听到我的正确的姓名 我的姓名是君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "你还没听到我的正确的姓名 我的姓名是君林",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 是 君 灵",
-  "sigWerNormalizedPredicted": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 是 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 是 君 林",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '灵' to '林' at position 18",
+      "reason": "Both are common Chinese surnames but refer to different names; this changes the person's name and is a significant error in the context of identifying someone.",
+      "score": 1
+    }
+  ]
 }

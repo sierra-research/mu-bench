@@ -2,15 +2,26 @@
   "gold": "C N 3 0 5。",
   "predicted": "an三零五",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
   "werNormalizedGold": "c n 三 零 五",
-  "werNormalizedPredicted": "c n 三 零 五",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "an 三 零 五",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "c n 三 零 五",
-  "sigWerNormalizedPredicted": "c n 三 零 五",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "an 三 零 五",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'an' at position 0",
+      "reason": "'c' is a single letter, while 'an' is a completely different sequence; in a context where letters are being spelled out, this is a significant error as it changes the intended sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting a letter in a spelled-out sequence changes the intended code or word, making it a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,31 @@
   "gold": "我正在等待换我的卡，想知道它的状态。",
   "predicted": "我正在等待欢乐的卡日到她的状态",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 6,
   "werRefWords": 16,
   "werNormalizedGold": "我正在等待换我的卡 想知道它的状态",
-  "werNormalizedPredicted": "我正在等待换我的卡 想知道它的状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我正在等待欢乐的卡日到她的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 等 待 欢 乐 的 卡 日 到 她 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '换' to '欢' at position 5",
+      "reason": "The word '换' (change/replace) is replaced by '欢' (joy/happy), which changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '想' to '日' at position 9",
+      "reason": "The word '想' (want/think) is replaced by '日' (day/sun), which is unrelated and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '它' at position 12",
+      "reason": "The pronoun '它' (it) is omitted, which makes the reference unclear but does not completely derail the meaning.",
+      "score": 2
+    }
+  ]
 }

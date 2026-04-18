@@ -2,21 +2,26 @@
   "gold": "Số điện là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "số điện thoại là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werEdits": 1,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
-  "werNormalizedGold": "số điện là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedGold": "số điện là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.058823529411764705,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "số điện là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedGold": "số điện là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
       "error": "Insertion: 'thoại' at position 2",
-      "reason": "'thoại' is inserted, changing 'số điện' (number electricity) to 'số điện thoại' (phone number). This changes the meaning of the sentence from referring to an electricity number to a phone number, which is a significant change in meaning.",
+      "reason": "The word 'thoại' (meaning 'phone') is inserted, changing 'số điện' (electric number) to 'số điện thoại' (phone number). This changes the meaning of the phrase from 'electric number' to 'phone number', which is a significant change in context.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 6",
+      "reason": "In Vietnamese, 'bốn' and 'tư' both mean 'four' and are interchangeable in this context. The substitution does not change the meaning of the number sequence.",
+      "score": 3
     }
   ]
 }

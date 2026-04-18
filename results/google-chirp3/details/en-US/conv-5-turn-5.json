@@ -2,15 +2,31 @@
   "gold": "It's Ashley A S H L E Y dot Brown B R O W N at email E M A I L dot com.",
   "predicted": "It's ashley.brown@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.64,
+  "werEdits": 16,
   "werRefWords": 25,
   "werNormalizedGold": "it is ashley a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "werNormalizedPredicted": "it is ashley a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "it is ashley dot brown at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 25,
   "sigWerNormalizedGold": "it is ashley a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "sigWerNormalizedPredicted": "it is ashley a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "it is ashley dot brown at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'a' at position 3",
+      "reason": "The spelled-out letters for 'ashley' are omitted. If the context requires the spelling for clarity (e.g., for an email address or proper name), omitting the spelling can lead to confusion or errors in understanding or transcription. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'b' at position 11",
+      "reason": "The spelled-out letters for 'brown' are omitted. As with 'ashley', omitting the spelling can cause confusion or incorrect transcription of the name, which is significant in contexts like email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'e' at position 18",
+      "reason": "The spelled-out letters for 'email' are omitted. If the spelling is required for clarity or to avoid errors, omitting it is a significant error.",
+      "score": 1
+    }
+  ]
 }

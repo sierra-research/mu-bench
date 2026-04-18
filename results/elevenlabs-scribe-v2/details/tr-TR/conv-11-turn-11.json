@@ -2,15 +2,26 @@
   "gold": "Tamam. Atatürk Caddesi No 45 bölü 6. Kazım Karabekir Mahallesi Üsküdar İstanbul 34 660 Türkiye.",
   "predicted": "Tamam. Atatürk Caddesi No: 45/6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660, Türkiye.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
   "werRefWords": 19,
-  "werNormalizedGold": "tamam ataturk caddesi numara forty five bolu six kazim karabekir mahallesi uskudar istanbul thirty four six hundred sixty turkiye",
-  "werNormalizedPredicted": "tamam ataturk caddesi numara forty five bolu six kazim karabekir mahallesi uskudar istanbul thirty four six hundred sixty turkiye",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tamam atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış türkiye",
+  "werNormalizedPredicted": "tamam atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul üç dört altı altı sıfır türkiye",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "tamam ataturk caddesi numara forty five bolu six kazim karabekir mahallesi uskudar istanbul thirty four six hundred sixty turkiye",
-  "sigWerNormalizedPredicted": "tamam ataturk caddesi numara forty five bolu six kazim karabekir mahallesi uskudar istanbul thirty four six hundred sixty turkiye",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tamam atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "tamam atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul üç dört altı altı sıfır türkiye",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'otuz' to 'üç' at position 13",
+      "reason": "'otuz dört' means 'thirty four', while 'üç dört' means 'three four'. This changes the address number significantly and could lead to a completely different location.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yüz' to 'altı' at position 16",
+      "reason": "'altı yüz altmış' means 'six hundred sixty', while 'altı altı sıfır' means 'six six zero'. This changes the number in the address, which is critical information and alters the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

@@ -1,16 +1,22 @@
 {
   "gold": "Tabii, söylüyorum. Artı 9 0 1 2.",
-  "predicted": "Tabii. Söylüyorum. Artı dokuz sıfır bir iki",
+  "predicted": "Tabii. Söylüyorum. Artı dokuz, sıfır, bir, iki",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "tabii soyluyorum arti dokuz sifir bir iki",
-  "werNormalizedPredicted": "tabii soyluyorum arti dokuz sifir bir iki",
-  "significantWer": 0.0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "tabii söylüyorum artı doksan bir iki",
+  "werNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "tabii soyluyorum arti dokuz sifir bir iki",
-  "sigWerNormalizedPredicted": "tabii soyluyorum arti dokuz sifir bir iki",
-  "sigWerErrors": []
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "tabii söylüyorum artı doksan bir iki",
+  "sigWerNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 3",
+      "reason": "The number 'doksan' (ninety) was transcribed as 'dokuz sıfır' (nine zero), which is a literal spelling out of the digits but still represents the same number. The meaning is preserved, though the format is different.",
+      "score": 3
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "hayır maalesef bu sefer hiç alakasız tamamen yanlış numara oldu",
   "werNormalizedPredicted": "hayır maalesef hiç alakasız tamamen yanlış bir numara oldu",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hayır maalesef bu sefer hiç alakasız tamamen yanlış numara oldu",
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'bu' at position 2",
-      "reason": "'bu sefer' means 'this time', and its omission slightly changes the nuance but does not derail the overall meaning of the sentence.",
+      "reason": "Omitting 'bu sefer' ('this time') removes a temporal reference, but the main meaning about the number being completely wrong remains clear.",
       "score": 2
     },
     {
       "error": "Insertion: 'bir' at position 8",
-      "reason": "Adding 'bir' ('a') before 'numara' ('number') is a minor grammatical difference and does not change the overall meaning of the sentence.",
-      "score": 2
+      "reason": "Adding 'bir' ('a') before 'numara' ('number') is a minor grammatical difference and does not change the meaning of the sentence.",
+      "score": 3
     }
   ]
 }

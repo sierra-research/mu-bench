@@ -2,21 +2,21 @@
   "gold": "Email nokta com adresime.",
   "predicted": "email.com adresine, evet.",
   "unintelligible": false,
-  "wer": 0.75,
-  "werEdits": 3,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "email nokta com adresime",
-  "werNormalizedPredicted": "email com adresine evet",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "email nokta com adresine evet",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "email nokta com adresime",
-  "sigWerNormalizedPredicted": "email com adresine evet",
+  "sigWerNormalizedPredicted": "email nokta com adresine evet",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'nokta' to 'com' at position 1",
-      "reason": "'nokta' (which means 'dot' in Turkish, as in 'dot com') is omitted and replaced by 'com', which changes the structure of the email address and makes it incorrect. The meaning is significantly altered as the email address is not properly formed.",
-      "score": 1
+      "error": "Substitution: 'adresime' to 'evet' at position 3",
+      "reason": "'adresime' and 'adresine' are similar words in Turkish but have different grammatical cases ('to my address' vs 'to the address'), which may slightly change the meaning but not derail the overall intent.",
+      "score": 2
     }
   ]
 }

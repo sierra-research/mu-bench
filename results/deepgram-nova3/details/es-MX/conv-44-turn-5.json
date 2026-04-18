@@ -5,28 +5,28 @@
   "wer": 1.5,
   "werEdits": 6,
   "werRefWords": 4,
-  "werNormalizedGold": "lo siento juan lopez",
-  "werNormalizedPredicted": "no es cierto juan juan juan lopez perdon",
-  "significantWer": 0.5,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "lo siento juan lópez",
+  "werNormalizedPredicted": "no es cierto juan juan juan lópez perdón",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "lo siento juan lopez",
-  "sigWerNormalizedPredicted": "no es cierto juan juan juan lopez perdon",
+  "sigWerNormalizedGold": "lo siento juan lópez",
+  "sigWerNormalizedPredicted": "no es cierto juan juan juan lópez perdón",
   "sigWerErrors": [
     {
       "error": "Substitution: 'lo' to 'es' at position 0",
-      "reason": "'No' changes the meaning from an apology ('lo siento') to a negation, which significantly alters the intent of the sentence.",
+      "reason": "'No' introduces negation, which completely changes the meaning from an apology ('lo siento') to a denial. This derails the intended meaning.",
       "score": 1
     },
     {
       "error": "Insertion: 'juan' at position 3",
-      "reason": "Substituting 'lo' (from 'lo siento', meaning 'I'm sorry') with 'es' (from 'es cierto', meaning 'it's true') changes the meaning of the phrase, resulting in a significant error.",
+      "reason": "'Lo siento' means 'I'm sorry', while 'es cierto' means 'it's true'. This substitution changes the meaning from an apology to an affirmation, which is a significant error.",
       "score": 1
     },
     {
-      "error": "Insertion: 'perdon' at position 4",
-      "reason": "Repeating 'juan' multiple times is a minor error as it does not change the overall meaning, but it is unnecessary repetition.",
-      "score": 2
+      "error": "Insertion: 'perdón' at position 4",
+      "reason": "Repeating 'juan' multiple times is unnecessary and makes the sentence incoherent, affecting the clarity of the message.",
+      "score": 1
     }
   ]
 }

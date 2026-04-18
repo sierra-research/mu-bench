@@ -2,25 +2,30 @@
   "gold": "Yalnız Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
   "predicted": "Ahmetle arslan arasında nokta var. Ahmet. Arslan.",
   "unintelligible": false,
-  "wer": 0.3,
-  "werEdits": 3,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "yalnız ahmet ve arslan arasında nokta var ahmet nokta arslan",
-  "werNormalizedPredicted": "ahmetle arslan arasında nokta var ahmet nokta arslan",
-  "significantWer": 0.2,
+  "werNormalizedPredicted": "ahmetle arslan arasında nokta var ahmet arslan",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "yalnız ahmet ve arslan arasında nokta var ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "ahmetle arslan arasında nokta var ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "ahmetle arslan arasında nokta var ahmet arslan",
   "sigWerErrors": [
     {
       "error": "Substitution: 'yalnız' to 'ahmetle' at position 0",
-      "reason": "'yalnız' means 'only' or 'just', while 'ahmetle' means 'with Ahmet'. This changes the meaning of the sentence significantly, as it shifts from specifying exclusivity to indicating a relationship or grouping.",
+      "reason": "'yalnız' means 'only' or 'just', while 'ahmetle' means 'with Ahmet'; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'ahmet' at position 1",
-      "reason": "The word 'ahmet' is omitted because 'ahmetle' is used instead, but this omission is part of the previous substitution and does not further change the meaning beyond the first error. However, since the main error is already scored as significant, this deletion does not add a new error.",
+      "reason": "Omitting 'ahmet' at this position removes a key subject from the sentence, which affects clarity but the names are mentioned later, so the overall meaning is partially preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 8",
+      "reason": "Omitting 'nokta' (meaning 'dot' or 'period') changes the meaning, as the sentence is about the presence of a dot between names.",
       "score": 1
     }
   ]

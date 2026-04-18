@@ -1,31 +1,26 @@
 {
   "gold": "Có. Vui lòng hướng dẫn.",
-  "predicted": "ờ có khu lòng giúp.",
+  "predicted": "Có vô lâm giúp.",
   "unintelligible": false,
-  "wer": 0.6,
-  "werEdits": 3,
+  "wer": 0.8,
+  "werEdits": 4,
   "werRefWords": 5,
   "werNormalizedGold": "có vui lòng hướng dẫn",
-  "werNormalizedPredicted": "có khu lòng giúp",
-  "significantWer": 0.4,
+  "werNormalizedPredicted": "có vô lâm giúp",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "có vui lòng hướng dẫn",
-  "sigWerNormalizedPredicted": "có khu lòng giúp",
+  "sigWerNormalizedPredicted": "có vô lâm giúp",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'vui' to 'khu' at position 1",
-      "reason": "'vui lòng' means 'please' or 'kindly', while 'khu lòng' is not a correct phrase and changes the meaning, making the sentence unclear.",
+      "error": "Substitution: 'vui' to 'vô' at position 1",
+      "reason": "'vui' (happy/please) and 'vô' (enter) are completely different in meaning, changing the intent of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'hướng' to 'giúp' at position 3",
-      "reason": "'hướng dẫn' means 'guide', while 'giúp' means 'help'; this changes the specific action requested, but the overall intent (asking for assistance) is similar.",
-      "score": 2
-    },
-    {
       "error": "Deletion: 'dẫn' at position 4",
-      "reason": "Omitting 'dẫn' breaks the phrase 'hướng dẫn' ('guide'), making the request incomplete and less clear.",
+      "reason": "'lòng' (please/kindness) and 'lâm' (forest or a name) are unrelated, which makes the sentence incoherent.",
       "score": 1
     }
   ]

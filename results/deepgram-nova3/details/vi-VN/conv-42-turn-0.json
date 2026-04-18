@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
   "werNormalizedPredicted": "tôi muốn sinh tập thẻ mới muốn biết cái tình trạng thẻ như thế nào đã sinh lời",
-  "significantWer": 0.11764705882352941,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'xin' to 'sinh' at position 2",
-      "reason": "'xin' means 'to request/apply', while 'sinh' means 'to be born' or 'generate'; this changes the meaning of the sentence significantly.",
+      "reason": "'xin' (to request/apply) and 'sinh' (to be born) are completely different verbs in Vietnamese, changing the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'cái' at position 8",
-      "reason": "The insertion of 'cái' (a classifier) does not change the overall meaning of the sentence, as it is a minor grammatical addition.",
+      "reason": "The insertion of 'cái' (a classifier) before 'tình trạng' does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'xin' to 'sinh' at position 15",
-      "reason": "Again, 'xin' (to request) is replaced by 'sinh' (to be born/generate), which changes the meaning of the phrase 'đã xin rồi' (already requested) to 'đã sinh lời' (already generated profit), which is a significant change in meaning.",
+      "reason": "'xin rồi' (already applied/requested) vs 'sinh lời' (already generated profit) are completely different in meaning, derailing the intent of the sentence.",
       "score": 1
     }
   ]

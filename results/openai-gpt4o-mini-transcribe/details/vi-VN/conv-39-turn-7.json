@@ -7,7 +7,7 @@
   "werRefWords": 8,
   "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
   "werNormalizedPredicted": "đúng rồi anna chuẩn đấy cảm ơn năm bạn nhé",
-  "significantWer": 0.125,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'đấy' at position 4",
-      "reason": "'đấy' is an interjection that adds emphasis but does not change the overall meaning of the sentence.",
+      "reason": "'đấy' is an interjection that does not change the overall meaning of the sentence, just adds emphasis.",
       "score": 2
     },
     {
       "error": "Insertion: 'năm' at position 6",
-      "reason": "'năm' (meaning 'five') is inserted before 'bạn', which could confuse the meaning by implying 'five friends' or 'five you', thus altering the intended meaning significantly.",
+      "reason": "'năm' (meaning 'five') is inserted before 'bạn', which could confuse the meaning, as it may sound like addressing 'five friends' instead of just 'bạn' (friend). This changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'nhá' to 'nhé' at position 7",
-      "reason": "'nhá' and 'nhé' are both Vietnamese sentence-ending particles with similar meanings and politeness, so this is a minor difference.",
+      "reason": "'nhá' and 'nhé' are both sentence-ending particles in Vietnamese with similar meanings, used for softening or confirming. The substitution does not change the overall meaning.",
       "score": 3
     }
   ]

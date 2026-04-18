@@ -2,21 +2,26 @@
   "gold": "Es Juan punto López arroba email punto com.",
   "predicted": "No es juan.lopez@email.com.",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 1,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "es juan punto lopez arroba email punto com",
+  "werNormalizedGold": "es juan punto lópez arroba email punto com",
   "werNormalizedPredicted": "no es juan punto lopez arroba email punto com",
-  "significantWer": 0.125,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "es juan punto lopez arroba email punto com",
+  "sigWerNormalizedGold": "es juan punto lópez arroba email punto com",
   "sigWerNormalizedPredicted": "no es juan punto lopez arroba email punto com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 0",
-      "reason": "The insertion of 'no' at the beginning changes the meaning from a positive statement ('es juan...') to a negative one ('no es juan...'), which significantly alters the intent of the sentence.",
+      "reason": "The insertion of 'no' changes the meaning from a statement of identity to a negation, which significantly alters the intent of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "The only difference is the missing accent on the 'o', which does not change the meaning or recognizability of the name in this context.",
+      "score": 3
     }
   ]
 }

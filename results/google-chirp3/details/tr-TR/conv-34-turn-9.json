@@ -2,15 +2,31 @@
   "gold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
   "predicted": "E-posta adresim zeynep.arslan@email.com, telefon numaram 0123 090 4567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 23,
-  "werNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero nine zero four five six seven",
-  "werNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero nine zero four five six seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 23,
-  "sigWerNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero nine zero four five six seven",
-  "sigWerNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero nine zero four five six seven",
-  "sigWerErrors": []
+  "wer": 0.19047619047619047,
+  "werEdits": 4,
+  "werRefWords": 21,
+  "werNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan beş kırk yedi",
+  "werNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan beş kırk yedi",
+  "sigWerNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan sıfır dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 3",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'sıfır' at position 18",
+      "reason": "Extra digit inserted in the phone number, which changes the actual number and could cause communication failure.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kırk' to 'altı' at position 19",
+      "reason": "Changing a digit in the phone number alters the contact information significantly.",
+      "score": 1
+    }
+  ]
 }

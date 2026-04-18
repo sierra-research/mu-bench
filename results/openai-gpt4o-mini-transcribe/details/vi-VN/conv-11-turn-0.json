@@ -1,37 +1,37 @@
 {
   "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
-  "predicted": "Xin chào, tôi đi làm mất thầy á, cái tôi xin cấp thẻ mới, muốn hỏi coi là hiện tại khi nào chuẩn bị có?",
+  "predicted": "Xin chào, tôi đi làm mất thầy á, cái tôi xin cấp thẻ mới, muốn hỏi coi là hiện tại khi nào chuẩn bị có.",
   "unintelligible": false,
-  "wer": 0.23809523809523808,
-  "werEdits": 5,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
   "werRefWords": 21,
   "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "werNormalizedPredicted": "xin chào tôi đi làm mất thẻ cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào chuẩn bị có",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "xin chào tôi đi làm mất thầy cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "sigWerNormalizedPredicted": "xin chào tôi đi làm mất thẻ cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "sigWerNormalizedPredicted": "xin chào tôi đi làm mất thầy cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào chuẩn bị có",
   "sigWerErrors": [
     {
       "error": "Insertion: 'đi' at position 3",
-      "reason": "The insertion of 'đi' (go) slightly changes the meaning, as 'tôi làm mất thẻ' means 'I lost my card', while 'tôi đi làm mất thẻ' could be interpreted as 'I went to lose my card' or 'I lost my card while going to work', but the overall intent is still clear.",
-      "score": 2
+      "reason": "'đi' (go) changes the meaning from 'I lost my card' to 'I went to lose my card', which alters the intent of the sentence.",
+      "score": 1
     },
     {
-      "error": "Insertion: 'cái' at position 6",
-      "reason": "The insertion of 'cái' (a classifier) before 'tôi xin cấp thẻ mới' is a minor grammatical addition and does not change the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: 'thẻ' to 'cái' at position 5",
+      "reason": "'thầy' (teacher) is unrelated to the context of losing a card and introduces confusion, making the sentence less coherent.",
+      "score": 1
     },
     {
       "error": "Deletion: 'giờ' at position 11",
-      "reason": "Omitting 'giờ' (now) slightly affects the temporal context, but the main question about when the new card will be ready is still clear.",
-      "score": 2
+      "reason": "'thẻ' (card) is replaced by 'cái' (thing), which is a generic word and loses the specific meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Insertion: 'coi' at position 14",
-      "reason": "The insertion of 'coi' (to see/check) adds a nuance of 'want to check/see', but does not change the main intent of asking about the timing.",
-      "score": 3
+      "reason": "Omitting 'giờ' (now) slightly changes the temporal context but does not significantly alter the overall meaning.",
+      "score": 2
     }
   ]
 }

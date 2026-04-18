@@ -2,15 +2,36 @@
   "gold": "O zaman kodluyorum. Zonguldak, Adana, Yalova, Niğde, Edirne, Polatlı, nokta Adana, Rize, Sivas, Lüleburgaz, Adana, Niğde at email nokta com.",
   "predicted": "O zaman kodluyorumzonguldakadanayalovanigdeedirnepolatlıadanarizesivaslüleburgazadananigde@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 19,
-  "werNormalizedGold": "o zaman kodluyorum zonguldak adana yalova nigde edirne polatlı adana rize sivas luleburgaz adana nigde at email nokta com",
+  "wer": 0.2,
+  "werEdits": 4,
+  "werRefWords": 20,
+  "werNormalizedGold": "o zaman kodluyorum zonguldak adana yalova niğde edirne polatlı nokta adana rize sivas lüleburgaz adana niğde at email nokta com",
   "werNormalizedPredicted": "o zaman kodluyorum zonguldak adana yalova nigde edirne polatlı adana rize sivas luleburgaz adana nigde at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "o zaman kodluyorum zonguldak adana yalova nigde edirne polatlı adana rize sivas luleburgaz adana nigde at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "o zaman kodluyorum zonguldak adana yalova niğde edirne polatlı nokta adana rize sivas lüleburgaz adana niğde at email nokta com",
   "sigWerNormalizedPredicted": "o zaman kodluyorum zonguldak adana yalova nigde edirne polatlı adana rize sivas luleburgaz adana nigde at email nokta com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'niğde' to 'nigde' at position 6",
+      "reason": "The only difference is the omission of the Turkish character 'ğ', which does not significantly change the recognizability or meaning of the word in this context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 9",
+      "reason": "'nokta' means 'dot' and is important for the structure of the email address. Its omission could cause confusion or incorrect interpretation of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lüleburgaz' to 'luleburgaz' at position 13",
+      "reason": "The only difference is the omission of the Turkish character 'ü', which does not significantly change the recognizability or meaning of the word in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'niğde' to 'nigde' at position 15",
+      "reason": "The only difference is the omission of the Turkish character 'ğ', which does not significantly change the recognizability or meaning of the word in this context.",
+      "score": 2
+    }
+  ]
 }

@@ -2,21 +2,26 @@
   "gold": "A ver espérame un tantito. Déjame ir a por pluma y papel. ¿OK?",
   "predicted": "A ver, espérame un tantito. Déjame ir por pluma y papel, ¿okey?",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "a ver esperame un tantito dejame ir a por pluma y papel okay",
-  "werNormalizedPredicted": "a ver esperame un tantito dejame ir por pluma y papel okay",
-  "significantWer": 0.0,
+  "werNormalizedGold": "a ver espérame un tantito déjame ir a por pluma y papel okay",
+  "werNormalizedPredicted": "a ver espérame un tantito déjame ir por pluma y papel okey",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "a ver esperame un tantito dejame ir a por pluma y papel okay",
-  "sigWerNormalizedPredicted": "a ver esperame un tantito dejame ir por pluma y papel okay",
+  "sigWerNormalizedGold": "a ver espérame un tantito déjame ir a por pluma y papel okay",
+  "sigWerNormalizedPredicted": "a ver espérame un tantito déjame ir por pluma y papel okey",
   "sigWerErrors": [
     {
       "error": "Deletion: 'a' at position 7",
-      "reason": "The omission of 'a' in 'ir a por' (Spanish) to 'ir por' is a minor grammatical difference; both forms are commonly used and the meaning of the sentence remains unchanged.",
+      "reason": "Omitting 'a' in 'ir a por' (Spanish) changes the grammatical structure, but the meaning 'go get pen and paper' is still clear in context. In some dialects, 'ir por' is also used, so this is a minor error.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'okay' to 'okey' at position 12",
+      "reason": "'Okey' is a phonetic spelling of 'okay' in Spanish and is commonly used interchangeably. No change in meaning.",
+      "score": 3
     }
   ]
 }

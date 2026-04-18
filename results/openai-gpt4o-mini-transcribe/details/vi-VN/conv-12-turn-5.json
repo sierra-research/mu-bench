@@ -1,26 +1,21 @@
 {
   "gold": "C N 6 0 0.",
-  "predicted": "trên sáu không không",
+  "predicted": "Trên là sáu không không",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 5,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n six zero zero",
-  "werNormalizedPredicted": "trên sáu không không",
-  "significantWer": 0.4,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "c n sáu không không",
+  "werNormalizedPredicted": "trên là sáu không không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n six zero zero",
-  "sigWerNormalizedPredicted": "trên sáu không không",
+  "sigWerNormalizedGold": "c n sáu không không",
+  "sigWerNormalizedPredicted": "trên là sáu không không",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'trên' at position 0",
-      "reason": "'c' is a letter in English, 'trên' is a Vietnamese word meaning 'above'; this is a language mismatch and changes the meaning completely.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'zero' at position 4",
-      "reason": "The digit 'zero' is missing from the actual transcription, which is significant in a sequence of numbers or codes.",
+      "reason": "'trên' (meaning 'above/on') is a completely different word from 'c' (which could be a letter or abbreviation), changing the meaning of the sentence significantly.",
       "score": 1
     }
   ]

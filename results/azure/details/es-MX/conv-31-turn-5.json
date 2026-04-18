@@ -2,15 +2,21 @@
   "gold": "Es 55 12.",
   "predicted": "Es 5512.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "es cinco cinco uno dos",
-  "werNormalizedPredicted": "es cinco cinco uno dos",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es cincuenta y cinco doce",
+  "werNormalizedPredicted": "es cinco mil quinientos doce",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "es cinco cinco uno dos",
-  "sigWerNormalizedPredicted": "es cinco cinco uno dos",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es cincuenta y cinco doce",
+  "sigWerNormalizedPredicted": "es cinco mil quinientos doce",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 1",
+      "reason": "'Cincuenta' means fifty, while 'cinco' means five. This changes the number being referred to and alters the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

@@ -2,20 +2,25 @@
   "gold": "At email nokta com değil mi? Email nokta com.",
   "predicted": "Et gmail dat kom",
   "unintelligible": false,
-  "wer": 0.5555555555555556,
-  "werEdits": 5,
+  "wer": 1.0,
+  "werEdits": 9,
   "werRefWords": 9,
-  "werNormalizedGold": "at email nokta com degil mi email nokta com",
-  "werNormalizedPredicted": "at email nokta com",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "at email nokta com değil mi email nokta com",
+  "werNormalizedPredicted": "et gmail dat kom",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "at email nokta com degil mi email nokta com",
-  "sigWerNormalizedPredicted": "at email nokta com",
+  "sigWerNormalizedGold": "at email nokta com değil mi email nokta com",
+  "sigWerNormalizedPredicted": "et gmail dat kom",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'degil' at position 4",
-      "reason": "'degil' means 'not' in Turkish, so omitting it removes the negation and changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'at' to 'et' at position 0",
+      "reason": "'at' and 'et' are different words; 'at' is an English preposition or part of an email address, while 'et' is not correct in this context. This changes the meaning and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'değil' at position 4",
+      "reason": "Omitting 'değil' ('not' in Turkish) changes the meaning of the sentence, as it negates the statement.",
       "score": 1
     }
   ]

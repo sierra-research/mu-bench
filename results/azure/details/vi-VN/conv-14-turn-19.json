@@ -2,15 +2,31 @@
   "gold": "Quần jeans hơi chật cho nên tôi muốn trả lại.",
   "predicted": "Quần jean hơi chặt cho nên tôi muốn trở lại.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "werNormalizedPredicted": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "quần jean hơi chặt cho nên tôi muốn trở lại",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "sigWerNormalizedPredicted": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "quần jean hơi chặt cho nên tôi muốn trở lại",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'jeans' to 'jean' at position 1",
+      "reason": "'jeans' and 'jean' are very similar and often used interchangeably in Vietnamese to refer to denim pants; the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'chật' to 'chặt' at position 3",
+      "reason": "'chật' means 'tight' (correct in context), while 'chặt' means 'tight' in the sense of 'firmly' or 'to cut/chop'; this changes the meaning and makes the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trả' to 'trở' at position 8",
+      "reason": "'trả lại' means 'return (an item)', while 'trở lại' means 'come back/return (oneself)'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

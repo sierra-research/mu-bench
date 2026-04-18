@@ -2,15 +2,21 @@
   "gold": "C N 6 7 8.",
   "predicted": "Si CN678.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "c n six seven eight",
-  "werNormalizedPredicted": "c n six seven eight",
-  "significantWer": 0.0,
+  "werNormalizedGold": "c n seis siete ocho",
+  "werNormalizedPredicted": "si c n seis siete ocho",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n six seven eight",
-  "sigWerNormalizedPredicted": "c n six seven eight",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n seis siete ocho",
+  "sigWerNormalizedPredicted": "si c n seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'si' at position 0",
+      "reason": "'si' is an extra word at the beginning, but it does not change the meaning of the rest of the sequence. The intended sequence is still clear.",
+      "score": 2
+    }
+  ]
 }

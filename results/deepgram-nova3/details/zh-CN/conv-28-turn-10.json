@@ -5,9 +5,9 @@
   "wer": 1.0,
   "werEdits": 6,
   "werRefWords": 6,
-  "werNormalizedGold": "你 有 什 么 问 题",
-  "werNormalizedPredicted": "金 圣 为 金",
-  "significantWer": 0.3333333333333333,
+  "werNormalizedGold": "你有什么问题",
+  "werNormalizedPredicted": "金圣为金",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 有 什 么 问 题",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '金' at position 0",
-      "reason": "The actual transcription is completely different from the expected, with unrelated words that change the meaning of the sentence entirely.",
+      "reason": "The substituted word is completely different and changes the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '问' at position 4",
-      "reason": "The key word '问' (question) is missing, which is essential to the meaning of the expected sentence.",
+      "reason": "A key word is missing, further reducing the sentence's coherence and meaning.",
       "score": 1
     }
   ]

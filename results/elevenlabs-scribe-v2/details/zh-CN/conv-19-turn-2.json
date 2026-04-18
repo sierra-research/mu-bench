@@ -2,15 +2,21 @@
   "gold": "C N 7 8 6。",
   "predicted": "CNC芭六。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n seven eight six",
-  "werNormalizedPredicted": "c n seven eight six",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 七 八 六",
+  "werNormalizedPredicted": "c n c 芭 六",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n seven eight six",
-  "sigWerNormalizedPredicted": "c n seven eight six",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 七 八 六",
+  "sigWerNormalizedPredicted": "c n c 芭 六",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '七' to 'c' at position 2",
+      "reason": "The digit '七' (seven in Chinese) was replaced with 'c', which is a letter and not a number. This changes the meaning of the sequence, especially since the context is likely a code or number sequence.",
+      "score": 1
+    }
+  ]
 }

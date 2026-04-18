@@ -2,31 +2,26 @@
   "gold": "E-posta adresinde nokta eksik yine. Ahmet nokta Arslan olacak.",
   "predicted": "E-posta adresinde nokta eksikliğine ahmet. Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.3,
-  "werEdits": 3,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "e posta adresinde nokta eksik yine ahmet nokta arslan olacak",
-  "werNormalizedPredicted": "e posta adresinde nokta eksikligine ahmet arslan olacak",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "e posta adresinde nokta eksikliğine ahmet nokta arslan olacak",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "e posta adresinde nokta eksik yine ahmet nokta arslan olacak",
-  "sigWerNormalizedPredicted": "e posta adresinde nokta eksikligine ahmet arslan olacak",
+  "sigWerNormalizedPredicted": "e posta adresinde nokta eksikliğine ahmet nokta arslan olacak",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'eksik' to 'eksikligine' at position 4",
-      "reason": "'eksik' (missing) and 'eksikligine' (to its deficiency) are related but 'eksikligine' changes the grammatical structure and meaning, making the sentence less clear.",
+      "error": "Substitution: 'eksik' to 'eksikliğine' at position 4",
+      "reason": "'eksik' (missing) and 'eksikliğine' (to its deficiency) are related, but 'eksikliğine' is a grammatical change that does not significantly alter the meaning in this context.",
       "score": 2
     },
     {
       "error": "Deletion: 'yine' at position 5",
-      "reason": "Omitting 'yine' (again) removes emphasis but does not significantly change the overall meaning.",
+      "reason": "'yine' means 'again', and its omission slightly changes the nuance but not the core meaning of the sentence.",
       "score": 2
-    },
-    {
-      "error": "Deletion: 'nokta' at position 7",
-      "reason": "Omitting 'nokta' (dot) is significant because it is crucial for the correct email address format, which can lead to misunderstanding.",
-      "score": 1
     }
   ]
 }

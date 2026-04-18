@@ -2,15 +2,26 @@
   "gold": "Mã đúng là C N 2 3 5, đúng không?",
   "predicted": "Mã, mã đúng là hai-- CN235 đúng không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "mã đúng là c n two three five đúng không",
-  "werNormalizedPredicted": "mã đúng là c n two three five đúng không",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "werNormalizedPredicted": "mã mã đúng là hai c n hai ba năm đúng không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "mã đúng là c n two three five đúng không",
-  "sigWerNormalizedPredicted": "mã đúng là c n two three five đúng không",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "sigWerNormalizedPredicted": "mã mã đúng là hai c n hai ba năm đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'mã' at position 1",
+      "reason": "The repeated word 'mã' does not change the meaning of the sentence, as it is just a repetition and does not introduce confusion.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'hai' at position 3",
+      "reason": "The insertion of 'hai' before 'c n hai ba năm' could cause confusion about the code, as it may be interpreted as part of the code, potentially leading to misunderstanding.",
+      "score": 1
+    }
+  ]
 }

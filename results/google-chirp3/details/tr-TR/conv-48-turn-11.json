@@ -2,15 +2,21 @@
   "gold": "Takip kodum A P 0 6 49'du, değil mi?",
   "predicted": "Takip kodum AP0649'du, değil mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 11,
-  "werNormalizedGold": "takip kodum a p zero six four nine du degil mi",
-  "werNormalizedPredicted": "takip kodum a p zero six four nine du degil mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "takip kodum a p zero six four nine du degil mi",
-  "sigWerNormalizedPredicted": "takip kodum a p zero six four nine du degil mi",
-  "sigWerErrors": []
+  "wer": 0.1,
+  "werEdits": 1,
+  "werRefWords": 10,
+  "werNormalizedGold": "takip kodum a p sıfır altı kırk dokuzdu değil mi",
+  "werNormalizedPredicted": "takip kodum a p sıfır altı dört dokuzdu değil mi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "takip kodum a p sıfır altı kırk dokuzdu değil mi",
+  "sigWerNormalizedPredicted": "takip kodum a p sıfır altı dört dokuzdu değil mi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kırk' to 'dört' at position 6",
+      "reason": "'kırk' means 'forty' and 'dört' means 'four' in Turkish. This changes the number in the code, which is a significant factual error as it alters the code's value.",
+      "score": 1
+    }
+  ]
 }

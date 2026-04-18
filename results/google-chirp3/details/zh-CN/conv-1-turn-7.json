@@ -5,17 +5,22 @@
   "wer": 0.4,
   "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n five zero eight",
-  "werNormalizedPredicted": "five zero eight",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n 五 零 八",
+  "werNormalizedPredicted": "先 五 零 八",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n five zero eight",
-  "sigWerNormalizedPredicted": "five zero eight",
+  "sigWerNormalizedGold": "c n 五 零 八",
+  "sigWerNormalizedPredicted": "先 五 零 八",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'c' at position 0",
-      "reason": "The letter 'c' is missing from the beginning of a sequence that appears to be a code or identifier. Omitting a character from such a sequence can significantly change its meaning or reference.",
+      "error": "Substitution: 'c' to '先' at position 0",
+      "reason": "'c' is an English letter, while '先' is a Chinese character with a completely different meaning. This substitution makes the transcription incorrect and potentially confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "The letter 'n' is omitted, which is significant in a sequence of letters and numbers, likely an identifier or code. This omission changes the intended information.",
       "score": 1
     }
   ]

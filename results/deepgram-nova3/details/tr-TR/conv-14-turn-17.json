@@ -2,26 +2,31 @@
   "gold": "Tamam, daha iyi anlamanız için tek tek veriyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "Tamam, iyi anlamanız için tek tek söylüyorum. Artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi.",
   "unintelligible": false,
-  "wer": 0.09523809523809523,
-  "werEdits": 2,
-  "werRefWords": 21,
-  "werNormalizedGold": "tamam daha iyi anlamanız için tek tek veriyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "wer": 0.2,
+  "werEdits": 4,
+  "werRefWords": 20,
+  "werNormalizedGold": "tamam daha iyi anlamanız için tek tek veriyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "werNormalizedPredicted": "tamam iyi anlamanız için tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "tamam daha iyi anlamanız için tek tek veriyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "tamam daha iyi anlamanız için tek tek veriyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerNormalizedPredicted": "tamam iyi anlamanız için tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerErrors": [
     {
       "error": "Deletion: 'daha' at position 1",
-      "reason": "Omitting 'daha' (meaning 'more') slightly changes the nuance of the sentence but does not significantly alter the overall meaning.",
+      "reason": "'daha' (meaning 'more') adds emphasis to 'better understanding', but its omission does not significantly change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'veriyorum' to 'söylüyorum' at position 7",
-      "reason": "'Veriyorum' means 'I am giving', while 'söylüyorum' means 'I am saying'. In this context, both can be used to indicate the speaker is providing information, so the meaning is preserved.",
+      "reason": "'veriyorum' means 'I am giving', while 'söylüyorum' means 'I am saying'. In this context, both can be used to indicate providing information, so the meaning is preserved.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 9",
+      "reason": "Inserting 'dokuz' (nine) changes the sequence of numbers, which is likely a phone number or code. This alters the intended information significantly.",
+      "score": 1
     }
   ]
 }

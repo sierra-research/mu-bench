@@ -5,23 +5,23 @@
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "ay disculpe no escuche lo puede repetir",
-  "werNormalizedPredicted": "ay disculpe no no escuche me puede repetir",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "ay disculpe no escuché lo puede repetir",
+  "werNormalizedPredicted": "ay disculpe no no escuché me puede repetir",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "ay disculpe no escuche lo puede repetir",
-  "sigWerNormalizedPredicted": "ay disculpe no no escuche me puede repetir",
+  "sigWerNormalizedGold": "ay disculpe no escuché lo puede repetir",
+  "sigWerNormalizedPredicted": "ay disculpe no no escuché me puede repetir",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 3",
-      "reason": "The extra 'no' introduces a repetition but does not significantly change the meaning of the sentence; it may sound like a hesitation or emphasis.",
+      "reason": "The extra 'no' introduces a repetition but does not significantly change the meaning of the sentence; it could be interpreted as a hesitation or emphasis.",
       "score": 2
     },
     {
       "error": "Substitution: 'lo' to 'me' at position 4",
-      "reason": "Changing 'lo' (it) to 'me' (me) alters the object of the request, which changes the meaning of the sentence from 'can you repeat it' to 'can you repeat to me', but the overall intent is still understandable.",
-      "score": 2
+      "reason": "Changing 'lo' to 'me' alters the object of the request from 'it' to 'me', which changes the meaning of the sentence in a significant way.",
+      "score": 1
     }
   ]
 }

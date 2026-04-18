@@ -2,20 +2,25 @@
   "gold": "Ahmet Arslan adım.",
   "predicted": "Evet, Ahmet Arslanadım.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 1,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
-  "werNormalizedGold": "ahmet arslan adim",
-  "werNormalizedPredicted": "evet ahmet arslan adim",
-  "significantWer": 0.0,
+  "werNormalizedGold": "ahmet arslan adım",
+  "werNormalizedPredicted": "ahmet arslanadım",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "ahmet arslan adim",
-  "sigWerNormalizedPredicted": "evet ahmet arslan adim",
+  "sigWerNormalizedGold": "ahmet arslan adım",
+  "sigWerNormalizedPredicted": "ahmet arslanadım",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'evet' at position 0",
-      "reason": "'evet' means 'yes' in Turkish and is an extra word at the beginning. It does not change the meaning of the sentence, just adds a polite affirmation.",
+      "error": "Substitution: 'arslan' to 'arslanadım' at position 1",
+      "reason": "The words 'arslan' and 'arslanadım' are merged together, which could cause confusion as it combines a name and a word meaning 'my name' in Turkish. However, the meaning is still somewhat understandable in context, as the intended words are present, just concatenated.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'adım' at position 2",
+      "reason": "'adım' (meaning 'my name' in Turkish) is not present as a separate word, but its content is included in the merged word 'arslanadım'. The information is not lost, just not separated, so the meaning is preserved.",
       "score": 2
     }
   ]

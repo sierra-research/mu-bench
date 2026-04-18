@@ -2,15 +2,31 @@
   "gold": "美玲 at email dot com。",
   "predicted": "梅林email。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "梅林 email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "梅 林 email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '梅' at position 0",
+      "reason": "Different Chinese characters; likely a name, so this changes the identity and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "Missing 'at' in the email address format, which can cause confusion or make the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Missing 'dot' in the email address format, which can cause confusion or make the email address invalid.",
+      "score": 1
+    }
+  ]
 }

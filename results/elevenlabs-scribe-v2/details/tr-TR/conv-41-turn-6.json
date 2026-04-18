@@ -2,15 +2,36 @@
   "gold": "K G mi K B mi?",
   "predicted": "Kage mi, kabe mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 4,
-  "werNormalizedGold": "kage mi kabe mi",
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "k g mi k b mi",
   "werNormalizedPredicted": "kage mi kabe mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "kage mi kabe mi",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "k g mi k b mi",
   "sigWerNormalizedPredicted": "kage mi kabe mi",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'k' to 'kage' at position 0",
+      "reason": "'kage' is a different word from 'k', which could significantly change the meaning, especially if these are meant to be individual letters or syllables.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'g' at position 1",
+      "reason": "Omitting 'g' changes the sequence, which is significant if these are meant to be precise letters or syllables.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'k' to 'kabe' at position 3",
+      "reason": "'kabe' is a different word from 'k', which could significantly change the meaning, especially if these are meant to be individual letters or syllables.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'b' at position 4",
+      "reason": "Omitting 'b' changes the sequence, which is significant if these are meant to be precise letters or syllables.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,31 @@
   "gold": "Necesito saber mi nueva tarjeta por qué no ha llegado.",
   "predicted": "Necesito una saber mi nueva tarjeta porque no ha llegado.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "werNormalizedPredicted": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "significantWer": 0.0,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "necesito saber mi nueva tarjeta por que no ha llegado",
+  "werNormalizedPredicted": "necesito una saber mi nueva tarjeta porque no ha llegado",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "sigWerNormalizedPredicted": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "sigWerErrors": []
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "necesito saber mi nueva tarjeta por que no ha llegado",
+  "sigWerNormalizedPredicted": "necesito una saber mi nueva tarjeta porque no ha llegado",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'una' at position 1",
+      "reason": "The insertion of 'una' ('a') does not change the overall meaning of the sentence; it is a minor grammatical addition.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'por' to 'porque' at position 5",
+      "reason": "'por que' (why) and 'porque' (because) are different, but in this context, both could be interpreted as asking for the reason the card hasn't arrived. The meaning is only slightly affected.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'que' at position 6",
+      "reason": "The deletion of 'que' is a result of the previous substitution ('por que' to 'porque'), so it does not further change the meaning beyond what was already scored.",
+      "score": 2
+    }
+  ]
 }

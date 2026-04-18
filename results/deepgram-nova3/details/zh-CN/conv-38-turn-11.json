@@ -2,15 +2,21 @@
   "gold": "你听不到我哦。",
   "predicted": "你听不倒我哦",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.16666666666666666,
+  "werEdits": 1,
   "werRefWords": 6,
-  "werNormalizedGold": "你 听 不 到 我 哦",
-  "werNormalizedPredicted": "你 听 不 到 我 哦",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你听不到我哦",
+  "werNormalizedPredicted": "你听不倒我哦",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 听 不 到 我 哦",
-  "sigWerNormalizedPredicted": "你 听 不 到 我 哦",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 听 不 倒 我 哦",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '到' to '倒' at position 3",
+      "reason": "'到' (arrive/reach) and '倒' (fall/invert) are different words with different meanings. In the phrase '听不到', '到' is correct and means 'cannot hear'. Using '倒' makes the phrase incorrect and confusing, significantly changing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

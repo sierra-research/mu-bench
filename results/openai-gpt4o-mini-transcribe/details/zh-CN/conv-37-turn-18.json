@@ -1,16 +1,27 @@
 {
   "gold": "我的邮箱地址是君玲 at email dot com。",
-  "predicted": "我的邮箱地址是dreamling@email.com。",
+  "predicted": "我的邮箱地址是dreamlin@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是君玲 at email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的邮箱地址是 dreamlin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 dreamlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamlin' at position 7",
+      "reason": "'君' is a Chinese name, while 'dreamlin' is an unrelated English word/name. This substitution completely changes the intended email address and identity, making the sentence misleading.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "Omitting '玲' removes part of the intended name in the email address, resulting in an incorrect and unrecognizable email. This is a significant error as it changes the identity.",
+      "score": 1
+    }
+  ]
 }

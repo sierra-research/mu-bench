@@ -2,15 +2,21 @@
   "gold": "C N 0 2 0，听到吗？",
   "predicted": "CN020听到么？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "c n zero two zero 听到吗",
-  "werNormalizedPredicted": "c n zero two zero 听到吗",
-  "significantWer": 0.0,
+  "werNormalizedGold": "c n 零 二 零 听到吗",
+  "werNormalizedPredicted": "c n 零 二 零 听到么",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "c n zero two zero 听 到 吗",
-  "sigWerNormalizedPredicted": "c n zero two zero 听 到 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 零 二 零 听 到 吗",
+  "sigWerNormalizedPredicted": "c n 零 二 零 听 到 么",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '吗' to '么' at position 7",
+      "reason": "'吗' and '么' are both sentence-ending particles in Chinese, but '吗' is a standard question marker while '么' is more colloquial and can sometimes change the nuance. However, in this context, the overall meaning (asking a question) is preserved.",
+      "score": 2
+    }
+  ]
 }

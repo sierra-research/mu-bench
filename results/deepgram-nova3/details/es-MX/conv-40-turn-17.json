@@ -5,27 +5,27 @@
   "wer": 0.2,
   "werEdits": 3,
   "werRefWords": 15,
-  "werNormalizedGold": "a ver permiteme un momento es que vas muy rapido dame un par de segundos",
-  "werNormalizedPredicted": "a ver permiteme un momento es que muy rapido dame uno un par de segundos okay",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "a ver permíteme un momento es que vas muy rápido dame un par de segundos",
+  "werNormalizedPredicted": "a ver permíteme un momento es que muy rápido dame uno un par de segundos okay",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "a ver permiteme un momento es que vas muy rapido dame un par de segundos",
-  "sigWerNormalizedPredicted": "a ver permiteme un momento es que muy rapido dame uno un par de segundos okay",
+  "sigWerNormalizedGold": "a ver permíteme un momento es que vas muy rápido dame un par de segundos",
+  "sigWerNormalizedPredicted": "a ver permíteme un momento es que muy rápido dame uno un par de segundos okay",
   "sigWerErrors": [
     {
       "error": "Deletion: 'vas' at position 7",
-      "reason": "Omitting 'vas' removes the subject of the phrase 'es que vas muy rapido', but the overall meaning (someone is going too fast) is still clear from context.",
-      "score": 2
+      "reason": "Omitting 'vas' ('you go') removes the subject of the phrase 'es que vas muy rápido', making the sentence less clear and changing the meaning significantly.",
+      "score": 1
     },
     {
       "error": "Insertion: 'uno' at position 11",
-      "reason": "Inserting 'uno' before 'un par de segundos' is a minor redundancy and does not change the meaning of the sentence.",
+      "reason": "Inserting 'uno' ('one') before 'un par de segundos' ('a couple of seconds') is a minor error, as it adds redundancy but does not change the overall meaning.",
       "score": 2
     },
     {
       "error": "Insertion: 'okay' at position 15",
-      "reason": "Adding 'okay' at the end is an extra affirmation and does not affect the meaning of the original sentence.",
+      "reason": "Adding 'okay' at the end is a minor addition that does not affect the meaning of the sentence.",
       "score": 2
     }
   ]

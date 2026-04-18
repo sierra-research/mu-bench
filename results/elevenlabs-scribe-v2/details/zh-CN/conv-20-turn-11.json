@@ -5,9 +5,9 @@
   "wer": 0.3888888888888889,
   "werEdits": 7,
   "werRefWords": 18,
-  "werNormalizedGold": "你 正 在 说 什么 你 正 在 说 什么 你 是 不 是 傻 子",
-  "werNormalizedPredicted": "哇 哦 你 是 你 你 正 在 说 什么 你 正 在 说 什么 你 是 个 傻 子",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "你正在说什么你正在说什么你是不是傻子",
+  "werNormalizedPredicted": "哇哦 你是 你 你正在说什么 你正在说什么 你是个傻子",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '哇' at position 0",
-      "reason": "The insertion of '哇' (an exclamation like 'wow') adds an interjection but does not change the main meaning of the sentence.",
+      "reason": "The insertion of '哇' (an exclamation like 'wow') adds an interjection but does not change the core meaning of the sentence.",
       "score": 2
     },
     {
@@ -25,13 +25,13 @@
     },
     {
       "error": "Substitution: '不' to '个' at position 14",
-      "reason": "The extra '你' (you) is redundant but does not change the meaning of the sentence.",
-      "score": 2
+      "reason": "Changing '不' (not) to '个' (a classifier) alters the meaning from 'are you not a fool' to 'are you a fool', which is a significant change in meaning.",
+      "score": 1
     },
     {
       "error": "Deletion: '是' at position 15",
-      "reason": "Changing '不' (not) to '个' (a classifier) alters the meaning from 'are you not a fool' to 'are you a fool', which is a significant change.",
-      "score": 1
+      "reason": "Omitting '是' (is/are) at the end makes the sentence less grammatically correct but the meaning is still mostly clear.",
+      "score": 2
     }
   ]
 }

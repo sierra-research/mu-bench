@@ -5,23 +5,23 @@
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "juan punto lopez arroba email punto com",
-  "werNormalizedPredicted": "john lopez arroba email punto com",
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "john punto lopez arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "juan punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "john lopez arroba email punto com",
+  "sigWerNormalizedGold": "juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "john punto lopez arroba email punto com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'juan' to 'john' at position 0",
-      "reason": "'Juan' and 'John' are different names; substituting one for the other changes the identity of the person, which is significant in an email address context.",
+      "reason": "'Juan' and 'John' are different names and refer to different people, which could lead to a significant misunderstanding, especially in an email address.",
       "score": 1
     },
     {
-      "error": "Deletion: 'punto' at position 1",
-      "reason": "Omitting 'punto' (dot) in an email address changes the structure and could make the email invalid or refer to a different address.",
-      "score": 1
+      "error": "Substitution: 'lópez' to 'lopez' at position 2",
+      "reason": "The only difference is the accent on the 'o'; this is a minor spelling difference and does not change the meaning or pronunciation significantly.",
+      "score": 2
     }
   ]
 }

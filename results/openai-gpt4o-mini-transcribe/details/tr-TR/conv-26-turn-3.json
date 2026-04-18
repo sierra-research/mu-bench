@@ -1,16 +1,27 @@
 {
   "gold": "C E E 2 6 2 X.",
-  "predicted": "C, E, E, iki, altı, iki, X.",
+  "predicted": "CEEEİKİALTIİKX",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "c e e two six two x",
-  "werNormalizedPredicted": "c e e two six two x",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c e e iki altı iki x",
+  "werNormalizedPredicted": "c e e e iki altı iki i k x",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "c e e two six two x",
-  "sigWerNormalizedPredicted": "c e e two six two x",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c e e iki altı iki x",
+  "sigWerNormalizedPredicted": "c e e e iki altı iki i k x",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'e' at position 3",
+      "reason": "An extra 'e' in a spelled-out sequence can change the intended sequence, making the result incorrect for things like codes or names.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'i' at position 6",
+      "reason": "An extra 'i' in a spelled-out sequence alters the intended sequence, which is significant for codes or identifiers.",
+      "score": 1
+    }
+  ]
 }

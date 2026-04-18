@@ -2,20 +2,25 @@
   "gold": "林美 at email dot com。",
   "predicted": "林美email。",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
-  "werRefWords": 5,
-  "werNormalizedGold": "林美 email dot com",
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "林美 at email dot com",
   "werNormalizedPredicted": "林美 email",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "林 美 email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "林 美 at email dot com",
   "sigWerNormalizedPredicted": "林 美 email",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'dot' at position 3",
-      "reason": "'dot' is a critical part of an email address format (e.g., 'email dot com'), and omitting it makes the address incomplete and unusable.",
+      "error": "Deletion: 'at' at position 2",
+      "reason": "'at' is a critical part of an email address format; omitting it makes the email address incomplete and unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "'dot' is necessary to indicate the domain separator in an email address; its omission makes the email address format invalid and confusing.",
       "score": 1
     }
   ]

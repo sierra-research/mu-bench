@@ -1,21 +1,26 @@
 {
   "gold": "C N 6 9 5.",
-  "predicted": "N năm sáu chín năm",
+  "predicted": "Nờ sáu chín năm",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 5,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n six nine five",
-  "werNormalizedPredicted": "n năm sáu chín năm",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n sáu chín năm",
+  "werNormalizedPredicted": "nờ sáu chín năm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n six nine five",
-  "sigWerNormalizedPredicted": "n năm sáu chín năm",
+  "sigWerNormalizedGold": "c n sáu chín năm",
+  "sigWerNormalizedPredicted": "nờ sáu chín năm",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'n' at position 0",
-      "reason": "The expected word 'c' is a letter, but the actual word 'n' is a different letter. In a spelled-out sequence, a single letter difference is a significant error as it changes the intended sequence.",
+      "error": "Substitution: 'c' to 'nờ' at position 0",
+      "reason": "'c' and 'nờ' are different letters in Vietnamese, and if this is a spelled-out sequence (as it appears), substituting one letter for another changes the intended meaning or code significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting a letter in a spelled-out sequence alters the intended code or word, which is a significant error in this context.",
       "score": 1
     }
   ]

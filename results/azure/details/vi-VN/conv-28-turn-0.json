@@ -7,7 +7,7 @@
   "werRefWords": 39,
   "werNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
   "werNormalizedPredicted": "xin chào an a mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nổ cho thông tin mà thì mãi không thấy bạn giúp mình với",
-  "significantWer": 0.05128205128205128,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 39,
   "sigWerNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'a' at position 2",
-      "reason": "The name 'anna' was split into 'an a', which is a minor error as the intended name is still recognizable.",
+      "reason": "'an' is inserted before 'a', splitting the name 'anna' into 'an a', which could cause confusion about the intended name but does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'nộp' to 'nổ' at position 26",
-      "reason": "The name 'anna' was partially transcribed as 'a', losing part of the name but still somewhat recognizable in context.",
+      "reason": "The name 'anna' is split into 'an a', making the name unclear. This is a minor error as the context still suggests a greeting to someone, but the name is not correctly transcribed.",
       "score": 2
     },
     {
       "error": "Substitution: 'công' to 'thông' at position 28",
-      "reason": "'nộp' (submit) was changed to 'nổ' (explode), which significantly changes the meaning of the sentence.",
+      "reason": "'nộp' means 'submit', while 'nổ' means 'explode'. This substitution changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
     },
     {
       "error": "Substitution: 'tìm' to 'thì' at position 31",
-      "reason": "'công ty' (company) was changed to 'thông tin' (information), which alters the recipient of the action and changes the meaning.",
+      "reason": "'công ty' means 'company', while 'thông tin' means 'information'. This substitution changes the recipient of the action, altering the meaning of the sentence.",
       "score": 1
     }
   ]

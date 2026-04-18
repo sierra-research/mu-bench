@@ -2,20 +2,25 @@
   "gold": "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
   "predicted": "Este el monto es de 3200 pesos, pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
   "unintelligible": false,
-  "wer": 0.03225806451612903,
-  "werEdits": 1,
+  "wer": 0.06451612903225806,
+  "werEdits": 2,
   "werRefWords": 31,
-  "werNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
-  "werNormalizedPredicted": "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
-  "significantWer": 0.0,
+  "werNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no sé cuál es",
+  "werNormalizedPredicted": "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no no sé cuál es",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 31,
-  "sigWerNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
-  "sigWerNormalizedPredicted": "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
+  "sigWerNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no sé cuál es",
+  "sigWerNormalizedPredicted": "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no no sé cuál es",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'es' to 'este' at position 0",
-      "reason": "'es' (is) and 'este' (this) are different words; 'este' changes the subject from 'is' to 'this', which slightly alters the meaning but does not derail the overall sentence.",
+      "error": "Deletion: 'es' at position 0",
+      "reason": "Omitting 'es' at the start slightly changes the sentence structure but does not affect the overall meaning; the information remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'pues' at position 21",
+      "reason": "Omitting 'pues' (a discourse marker) does not change the factual content or meaning of the sentence.",
       "score": 2
     }
   ]

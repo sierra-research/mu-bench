@@ -2,30 +2,30 @@
   "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
   "predicted": "E-mail daha vermedim, tekrar email vereyim ben sana. Ahmet nokta arslan arslan et email nokta com",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 8,
+  "wer": 0.45,
+  "werEdits": 9,
   "werRefWords": 20,
   "werNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "werNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan arslan at email nokta com",
-  "significantWer": 0.1,
+  "werNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan arslan et email nokta com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "sigWerNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan arslan at email nokta com",
+  "sigWerNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan arslan et email nokta com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vermedin' to 'tekrar' at position 2",
-      "reason": "'vermedim' (I did not give) is inserted, which is a minor tense/person difference from 'vermedin' (you did not give), but does not change the overall meaning.",
+      "reason": "'vermedim' (I did not give) is inserted instead of 'vermedin' (you did not give), which slightly changes the subject but does not derail the overall meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'a' to 'arslan' at position 10",
-      "reason": "'vermedin' (you did not give) is replaced by 'tekrar' (again), which changes the meaning of the sentence and causes confusion.",
+      "reason": "'vermedin' (you did not give) is replaced by 'tekrar' (again), which changes the meaning of the sentence and causes confusion about the action being described.",
       "score": 1
     },
     {
-      "error": "Deletion: 'r' at position 11",
-      "reason": "Instead of spelling out 'arslan' letter by letter, the word 'arslan' is repeated as a whole, which loses the intended spelling and could cause confusion in an email address.",
+      "error": "Deletion: 's' at position 12",
+      "reason": "Instead of spelling out 'arslan' as 'a r s l a n', the word 'arslan' is repeated, which means the email address is not spelled out correctly and could cause a significant misunderstanding.",
       "score": 1
     }
   ]

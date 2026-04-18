@@ -2,25 +2,35 @@
   "gold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
   "predicted": "Ơ ơ tôi không cần nhưng mà tôi cần tại vì tôi không có biết in rằng là tôi muốn ơ được hỗ trợ để in cái giấy.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 2,
+  "wer": 0.35,
+  "werEdits": 7,
   "werRefWords": 20,
   "werNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
-  "werNormalizedPredicted": "tôi không cần tại vì tôi không biết in là tôi muốn được hỗ trợ để in giấy",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in rằng là tôi muốn được hỗ trợ để in cái giấy",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
-  "sigWerNormalizedPredicted": "tôi không cần tại vì tôi không biết in là tôi muốn được hỗ trợ để in giấy",
+  "sigWerNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in rằng là tôi muốn được hỗ trợ để in cái giấy",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'nên' at position 9",
-      "reason": "Omitting 'nên' (which means 'so' or 'therefore') slightly changes the logical connection between the clauses, but the overall intent of the sentence remains clear.",
+      "error": "Insertion: 'nhưng' at position 3",
+      "reason": "The insertion of 'nhưng' (but) introduces a contrast that was not present in the original sentence, which can change the meaning and coherence of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'có' at position 7",
+      "reason": "The insertion of 'có' (have) is a minor grammatical addition that does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Deletion: 'ra' at position 18",
-      "reason": "Omitting 'ra' (which means 'out' in 'in ra giấy' = 'print out paper') slightly changes the phrase, but 'in giấy' is still understandable as 'print paper'. The meaning is mostly preserved.",
+      "error": "Substitution: 'nên' to 'rằng' at position 9",
+      "reason": "'nên' (so/therefore) and 'rằng' (that) serve different grammatical functions; this substitution changes the structure but the overall intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ra' to 'cái' at position 18",
+      "reason": "'ra giấy' (print out paper) vs. 'cái giấy' (the paper) changes the object from the action of printing to the paper itself, which slightly alters the meaning but does not derail the intent.",
       "score": 2
     }
   ]

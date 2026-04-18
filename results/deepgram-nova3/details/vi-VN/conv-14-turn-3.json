@@ -2,15 +2,21 @@
   "gold": "C N 8 9 5 5, đúng không?",
   "predicted": "Cn tám kg55 đúng không",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "c n eight nine five five dung khong",
-  "werNormalizedPredicted": "c n eight nine five five dung khong",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n tám chín năm năm đúng không",
+  "werNormalizedPredicted": "c n tám kg năm năm đúng không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "c n eight nine five five dung khong",
-  "sigWerNormalizedPredicted": "c n eight nine five five dung khong",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n tám chín năm năm đúng không",
+  "sigWerNormalizedPredicted": "c n tám kg năm năm đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chín' to 'kg' at position 3",
+      "reason": "'chín' means 'nine' in Vietnamese, while 'kg' is an abbreviation for 'kilogram'; this substitution changes a number to a unit, making the sentence incoherent and derailing the intended meaning.",
+      "score": 1
+    }
+  ]
 }

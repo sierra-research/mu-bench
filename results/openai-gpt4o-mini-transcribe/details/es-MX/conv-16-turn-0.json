@@ -1,16 +1,22 @@
 {
   "gold": "Buenos días. Es que fui a una tienda y se bloqueó mi tarjeta porque puse el NIF mal muchas veces.",
-  "predicted": "Buenos días, es que fui a una tienda y se bloqueó mi tarjeta porque puse el NIF mal muchas veces.",
+  "predicted": "Buenos días, es que fui a una tienda y se bloqueó mi tarjeta porque puse el NIP mal muchas veces.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.05,
+  "werEdits": 1,
   "werRefWords": 20,
-  "werNormalizedGold": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
-  "werNormalizedPredicted": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "buenos días es que fui a una tienda y se bloqueó mi tarjeta porque puse el nif mal muchas veces",
+  "werNormalizedPredicted": "buenos días es que fui a una tienda y se bloqueó mi tarjeta porque puse el nip mal muchas veces",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
-  "sigWerNormalizedPredicted": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "buenos días es que fui a una tienda y se bloqueó mi tarjeta porque puse el nif mal muchas veces",
+  "sigWerNormalizedPredicted": "buenos días es que fui a una tienda y se bloqueó mi tarjeta porque puse el nip mal muchas veces",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nif' to 'nip' at position 16",
+      "reason": "'NIF' and 'NIP' are different acronyms in Spanish; 'NIF' refers to a tax identification number, while 'NIP' refers to a PIN. This changes the meaning of the sentence significantly, as it refers to a different credential.",
+      "score": 1
+    }
+  ]
 }

@@ -77,11 +77,11 @@ Measurement guidelines:
 - **Wall-clock time** from when your client sends the request to when it receives the relevant response event. For batch that's the complete response; for streaming that's both the first partial (`ttftMs`) and the final transcript (`completeMs`).
 - **One request at a time** (`concurrency: 1`). Bulk/parallel measurements inflate latency and aren't comparable across submissions.
 - **Milliseconds, as a number** (int or float).
-- **Single pinned region.** Set `meta.region` to the AWS-style region your client is running in. The validator accepts a small allowlist today (`us-east-1`, `us-east-2`, `us-west-1`, `us-west-2`, `eu-west-1`, `eu-central-1`, `ap-southeast-1`, `ap-northeast-1`). If you need a new region, ask a maintainer to add it in `scoring/validate.py`.
+- **Single pinned region.** Set `meta.region` to the AWS-style region your client is running in. The validator accepts a small allowlist today (`us-east-1`, `us-east-2`, `us-west-1`, `us-west-2`, `eu-west-1`, `eu-central-1`, `ap-southeast-1`, `ap-northeast-1`). The multi-region values `us` and `eu` are also accepted as an escape hatch for providers whose model under test isn't available in a single region (e.g. Google Chirp-3 today is only routable via `us` multi-region). Prefer a specific single region whenever the provider supports one. If you need a new region, ask a maintainer to add it in `scoring/validate.py`.
 - **Keys must match exactly** the utterances you shipped `.txt` files for. Every `.txt` needs a matching `measurements` entry (the validator enforces this).
 - Keys without a `<locale>/` prefix are rejected — same utterance IDs appear across locales so bare IDs are ambiguous.
 
-**Legacy flat schema** (`{"en-US/conv-0-turn-0": 269.1, ...}`) is still accepted during the rollout window but warns; it is interpreted as `protocol=batch`, `region=unknown`. Migrate to the new schema when you next re-measure.
+The legacy flat `{"en-US/conv-0-turn-0": 269.1, ...}` schema is no longer accepted (it was deprecated during the fairness-fixes rollout and removed when every published submission migrated). The validator hard-rejects flat-schema files with a pointer to the new shape above.
 
 ### `metadata.yaml` (required)
 

@@ -7,7 +7,7 @@
   "werRefWords": 33,
   "werNormalizedGold": "thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với tình trạng ngày phát hành ngày gửi nếu có với cả cung cấp mã theo dõi giúp mình với nhé",
   "werNormalizedPredicted": "thế bạn kiểm tra thẻ mới hoặc là thẻ thay thế giúp mình với cái tình trạng này phát hành ngày gửi nếu có nhé với cả cung cấp mã theo dõi cho mình với nhé",
-  "significantWer": 0.030303030303030304,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 33,
   "sigWerNormalizedGold": "thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với tình trạng ngày phát hành ngày gửi nếu có với cả cung cấp mã theo dõi giúp mình với nhé",
@@ -15,27 +15,27 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'hay' to 'là' at position 6",
-      "reason": "'hoặc' (or) is inserted before 'là', but in this context, it serves a similar function to 'hay' (or), so the meaning is not significantly changed.",
-      "score": 2
+      "reason": "'hoặc' (or) is inserted before 'là', but together 'hoặc là' is a common way to say 'or' in Vietnamese, similar to 'hay' in the expected. This does not change the meaning.",
+      "score": 3
     },
     {
       "error": "Insertion: 'cái' at position 13",
-      "reason": "'hay' (or) is replaced by 'là' (is), but since 'hoặc là' together means 'or', the overall meaning is preserved.",
-      "score": 2
+      "reason": "'hay' and 'hoặc là' both mean 'or' in this context, so the substitution does not affect the meaning.",
+      "score": 3
     },
     {
       "error": "Substitution: 'ngày' to 'này' at position 15",
-      "reason": "The insertion of 'cái' (a classifier) before 'tình trạng' does not change the meaning of the sentence.",
+      "reason": "The insertion of 'cái' (a classifier) before 'tình trạng' is a minor grammatical addition and does not change the meaning.",
       "score": 3
     },
     {
       "error": "Insertion: 'nhé' at position 22",
-      "reason": "'ngày' (day) is replaced by 'này' (this), which changes the meaning of the phrase from 'ngày phát hành' (issue date) to 'tình trạng này phát hành' (this status issued), which makes the sentence less clear and could confuse the listener.",
+      "reason": "'ngày' (day) is replaced by 'này' (this), which changes the meaning of the phrase from 'tình trạng ngày phát hành' (status of issue date) to 'tình trạng này phát hành' (this status issues), which makes the sentence less clear and changes the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'giúp' to 'cho' at position 29",
-      "reason": "The addition of 'nhé' (a softener particle) does not affect the meaning.",
+      "reason": "'nhé' is a sentence-ending particle for politeness and does not affect the meaning.",
       "score": 3
     }
   ]

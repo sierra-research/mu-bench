@@ -2,15 +2,21 @@
   "gold": "Takip kodum E V 4 4 8 1, doğru mu?",
   "predicted": "Takip kodum e ve 4481 doğru mu?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "takip kodum e v dört dört sekiz bir doğru mu",
-  "werNormalizedPredicted": "takip kodum e v dört dört sekiz bir doğru mu",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "takip kodum e ve dört dört sekiz bir doğru mu",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "takip kodum e v dört dört sekiz bir doğru mu",
-  "sigWerNormalizedPredicted": "takip kodum e v dört dört sekiz bir doğru mu",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "takip kodum e ve dört dört sekiz bir doğru mu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'v' to 've' at position 3",
+      "reason": "'v' is the letter 'v', while 've' is the Turkish word for 'and'. In the context of a code, 'v' as a letter is important and substituting it with 've' changes the meaning, making it a significant error.",
+      "score": 1
+    }
+  ]
 }

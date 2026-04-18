@@ -2,15 +2,26 @@
   "gold": "Sí, ¿este número de folio o de reporte es para rastrear la tarjeta?",
   "predicted": "Am, ¿si este número de, de folio o de reporte es para rastrear la tarjeta?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
-  "werNormalizedGold": "si este numero de folio o de reporte es para rastrear la tarjeta",
-  "werNormalizedPredicted": "si este numero de folio o de reporte es para rastrear la tarjeta",
-  "significantWer": 0.0,
+  "werNormalizedGold": "sí este número de folio o de reporte es para rastrear la tarjeta",
+  "werNormalizedPredicted": "si este numero de de folio o de reporte es para rastrear la tarjeta",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "si este numero de folio o de reporte es para rastrear la tarjeta",
-  "sigWerNormalizedPredicted": "si este numero de folio o de reporte es para rastrear la tarjeta",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sí este número de folio o de reporte es para rastrear la tarjeta",
+  "sigWerNormalizedPredicted": "si este numero de de folio o de reporte es para rastrear la tarjeta",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'si' at position 0",
+      "reason": "'sí' (with accent) means 'yes' in Spanish, while 'si' (without accent) means 'if'. The meaning changes, but in this context, it is likely still understood as 'yes', so it's a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'número' to 'de' at position 2",
+      "reason": "Missing accent on 'número', but the word is still clearly understood as 'número'.",
+      "score": 3
+    }
+  ]
 }

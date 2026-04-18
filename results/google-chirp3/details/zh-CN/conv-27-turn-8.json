@@ -2,15 +2,21 @@
   "gold": "林美 at email 点 com。",
   "predicted": "0妹@ email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "林美 at email 点 com",
-  "werNormalizedPredicted": "林美 at email 点 com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "零妹 at email 点 com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "林 美 at email 点 com",
-  "sigWerNormalizedPredicted": "林 美 at email 点 com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "零 妹 at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '零' at position 0",
+      "reason": "'林' is a common Chinese surname meaning 'forest', while '零' means 'zero' and is not a name. This changes the identity of the person and is a significant error.",
+      "score": 1
+    }
+  ]
 }

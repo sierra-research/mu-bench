@@ -1,31 +1,41 @@
 {
   "gold": "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
-  "predicted": "Isurión treinta, colonia Atlántico, delegación Azcapotzalco, en la Ciudad de México, código postal cero dos ochocientos sesenta.",
+  "predicted": "Isurión treinta, Colonia Atlántico, delegación Azcapotzalco, en la ciudad de México, código postal cero dos ochocientos sesenta.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 3,
-  "werRefWords": 18,
-  "werNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "werNormalizedPredicted": "isurion treinta colonia atlantico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "sigWerNormalizedPredicted": "isurion treinta colonia atlantico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
+  "wer": 0.3157894736842105,
+  "werEdits": 6,
+  "werRefWords": 19,
+  "werNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "werNormalizedPredicted": "isurión treinta colonia atlántico delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "sigWerNormalizedPredicted": "isurión treinta colonia atlántico delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'es' to 'isurion' at position 0",
-      "reason": "'isurion' is not a valid substitution for 'es'; it introduces a completely different and unrelated word, making the sentence incoherent at the start.",
+      "error": "Substitution: 'es' to 'isurión' at position 0",
+      "reason": "'es' (is) is a common Spanish word, while 'isurión' is not a word and appears to be a misrecognition, making the sentence start incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'urion' at position 1",
-      "reason": "'urion' is omitted, which removes a key part of the address and makes the information incomplete.",
+      "error": "Deletion: 'urión' at position 1",
+      "reason": "'urión' is missing, which could be a name or important identifier; its absence removes key information.",
       "score": 1
     },
     {
-      "error": "Substitution: 'tlatilco' to 'atlantico' at position 4",
-      "reason": "'tlatilco' and 'atlantico' are completely different place names, which changes the meaning of the address significantly.",
+      "error": "Substitution: 'tlatilco' to 'atlántico' at position 4",
+      "reason": "'tlatilco' is a specific place name, while 'atlántico' is a completely different word (Atlantic), changing the location referenced.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ocho' to 'ochocientos' at position 16",
+      "reason": "'ocho' (eight) and 'ochocientos' (eight hundred) are numerically very different, which significantly alters the postal code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cero' at position 18",
+      "reason": "Omitting 'cero' (zero) from the postal code changes the number, which is critical information.",
       "score": 1
     }
   ]

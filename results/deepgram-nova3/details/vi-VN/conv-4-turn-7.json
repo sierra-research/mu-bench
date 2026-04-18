@@ -2,25 +2,25 @@
   "gold": "Địa chỉ email là minh chấn trần a còng email chấm com.",
   "predicted": "Ở địa chỉ email là minh. Trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 2,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
   "werRefWords": 12,
   "werNormalizedGold": "địa chỉ email là minh chấn trần a còng email chấm com",
-  "werNormalizedPredicted": "ở địa chỉ email là minh trần a còng email chấm com",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "địa chỉ email là minh trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "địa chỉ email là minh chấn trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "ở địa chỉ email là minh trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh trầngmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'ở' at position 0",
-      "reason": "The insertion of 'ở' (meaning 'at') at the beginning does not change the meaning of the sentence, as it just adds a preposition that is contextually appropriate.",
-      "score": 3
+      "error": "Substitution: 'chấn' to 'trầngmail' at position 5",
+      "reason": "'trầngmail' is a concatenation of 'trần' and 'gmail', which merges two separate elements (the name and the email provider) and omits 'chấn' entirely. This makes the email address incoherent and unrecognizable, significantly altering the intended meaning.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'chấn' at position 5",
-      "reason": "Omitting 'chấn' from the name 'minh chấn trần' changes the person's full name, which is significant for identification or contact information.",
+      "error": "Deletion: 'trần' at position 6",
+      "reason": "The omission of 'trần' (a part of the name in the email address) further distorts the email, making it impossible to reconstruct the correct address. This is a significant error as it changes the identity in the email.",
       "score": 1
     }
   ]

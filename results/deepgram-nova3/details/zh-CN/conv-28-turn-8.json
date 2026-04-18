@@ -2,15 +2,31 @@
   "gold": "哎呀，是美玲 at email dot com。",
   "predicted": "是maylingit'invento'com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "是美玲 at email dot com",
-  "werNormalizedPredicted": "是美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "wer": 0.7777777777777778,
+  "werEdits": 7,
+  "werRefWords": 9,
+  "werNormalizedGold": "哎呀 是美玲 at email dot com",
+  "werNormalizedPredicted": "是 maylingit invento com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "哎 呀 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "是 maylingit invento com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '哎' at position 0",
+      "reason": "The deletion of '哎' removes a part of the name or phrase, which could be important for identification, especially in a name or email context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to 'maylingit' at position 3",
+      "reason": "'美' is a Chinese character, while 'maylingit' is an incorrect and unrelated English word; this substitution significantly alters the intended name and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 5",
+      "reason": "Omitting 'at' in an email address makes the address incomplete and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

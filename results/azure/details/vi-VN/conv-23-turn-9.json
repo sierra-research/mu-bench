@@ -2,25 +2,35 @@
   "gold": "Tôi muốn hỏi xem là có được cấp hai thẻ luôn được không, để sơ cua.",
   "predicted": "Ờ tôi muốn hỏi Xem là có thể được cấp ờ 2 thẻ lưu được không để scure?",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 2,
+  "wer": 0.25,
+  "werEdits": 4,
   "werRefWords": 16,
   "werNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
-  "werNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lưu được không để sơ cua",
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lưu được không để scure",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
-  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lưu được không để sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lưu được không để scure",
   "sigWerErrors": [
     {
       "error": "Insertion: 'thể' at position 6",
-      "reason": "The insertion of 'thể' (can/may) does not significantly change the meaning of the sentence, as the intent (asking about being able to get two cards) remains clear.",
+      "reason": "'có được' (can get) vs 'có thể được' (may be able to get) is a minor difference in modality, but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'luôn' to 'lưu' at position 10",
-      "reason": "'luôn' (immediately/at once) and 'lưu' (save/store) have different meanings. This substitution changes the meaning of the sentence, making it less coherent and potentially confusing the intent.",
+      "reason": "'luôn' means 'immediately' or 'at once', while 'lưu' means 'save' or 'store'. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'sơ' to 'scure' at position 14",
+      "reason": "'sơ cua' is a Vietnamese phrase meaning 'spare' (as in a spare card), while 'scure' is not a Vietnamese word and appears to be a mishearing of 'sơ cua'. This makes the meaning unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cua' at position 15",
+      "reason": "Omitting 'cua' from 'sơ cua' breaks the Vietnamese phrase for 'spare', making the meaning incomplete.",
       "score": 1
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "Anytown, California, 9 0 2 1 0.",
   "predicted": "Uh, any town, California, nine zero two one zero",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "anytown california nine zero two one zero",
-  "werNormalizedPredicted": "anytown california nine zero two one zero",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "any town california nine zero two one zero",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "anytown california nine zero two one zero",
-  "sigWerNormalizedPredicted": "anytown california nine zero two one zero",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "any town california nine zero two one zero",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anytown' to 'town' at position 0",
+      "reason": "'anytown' and 'any town' are the same location, just split into two words. The meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

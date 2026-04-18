@@ -1,26 +1,36 @@
 {
   "gold": "Tôi muốn hỏi xem là có được cấp hai thẻ luôn được không, để sơ cua.",
-  "predicted": "ờ Tôi muốn hỏi xem là có thể được cấp hai thẻ lương được không để secure?",
+  "predicted": "à tôi muốn hỏi xem là có thể được cấp hai thẻ lương được không để secure",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 2,
+  "wer": 0.25,
+  "werEdits": 4,
   "werRefWords": 16,
-  "werNormalizedGold": "toi muon hoi xem la co duoc cap hai the luon duoc khong de so cua",
-  "werNormalizedPredicted": "toi muon hoi xem la co the duoc cap hai the luong duoc khong de so cua",
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
+  "werNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lương được không để secure",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "toi muon hoi xem la co duoc cap hai the luon duoc khong de so cua",
-  "sigWerNormalizedPredicted": "toi muon hoi xem la co the duoc cap hai the luong duoc khong de so cua",
+  "sigWerNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lương được không để secure",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'the' at position 6",
-      "reason": "The insertion of 'the' does not change the overall meaning of the sentence; it is a minor grammatical error.",
+      "error": "Insertion: 'thể' at position 6",
+      "reason": "'thể' (can/may) is inserted, but the sentence still makes sense and the overall meaning is not significantly changed.",
       "score": 2
     },
     {
-      "error": "Substitution: 'luon' to 'luong' at position 10",
-      "reason": "'luon' (always) and 'luong' (salary/amount) are completely different in meaning and this substitution changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'luôn' to 'lương' at position 10",
+      "reason": "'luôn' (always/at once) is replaced by 'lương' (salary), which changes the meaning of the sentence and could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'sơ' to 'secure' at position 14",
+      "reason": "'sơ cua' (spare/backup) is replaced by 'secure' (an English word), which is a different language and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cua' at position 15",
+      "reason": "Omitting 'cua' breaks the Vietnamese phrase 'sơ cua' (spare/backup), making the meaning unclear.",
       "score": 1
     }
   ]

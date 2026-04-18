@@ -2,15 +2,26 @@
   "gold": "Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet Aslan Ahmet.Aslan@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "ahmet arslan at email com",
-  "werNormalizedPredicted": "ahmet arslan at email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "ahmet arslan at email com",
-  "sigWerNormalizedPredicted": "ahmet arslan at email com",
-  "sigWerErrors": []
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet aslan ahmet nokta aslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet aslan ahmet nokta aslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'aslan' at position 1",
+      "reason": "'aslan' is inserted before the email address, which could cause confusion about the correct email username, but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 2",
+      "reason": "'arslan' and 'aslan' are similar-sounding Turkish surnames, but they are different names. This could result in an incorrect email address, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

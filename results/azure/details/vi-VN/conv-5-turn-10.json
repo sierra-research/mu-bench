@@ -2,35 +2,30 @@
   "gold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
   "predicted": "Ờ cảm ơn anh an nhá, có gì cần gọi lại?",
   "unintelligible": false,
-  "wer": 0.45454545454545453,
-  "werEdits": 5,
-  "werRefWords": 11,
-  "werNormalizedGold": "ừ cảm ơn anna nhá có gì cần mình gọi lên",
-  "werNormalizedPredicted": "ờ cảm ơn anh an nhá có gì cần gọi lại",
-  "significantWer": 0.18181818181818182,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "cảm ơn anna nhá có gì cần mình gọi lên",
+  "werNormalizedPredicted": "cảm ơn anh an nhá có gì cần gọi lại",
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "ừ cảm ơn anna nhá có gì cần mình gọi lên",
-  "sigWerNormalizedPredicted": "ờ cảm ơn anh an nhá có gì cần gọi lại",
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "cảm ơn anna nhá có gì cần mình gọi lên",
+  "sigWerNormalizedPredicted": "cảm ơn anh an nhá có gì cần gọi lại",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ừ' to 'ờ' at position 0",
-      "reason": "'ừ' and 'ờ' are both Vietnamese discourse markers with similar pragmatic function, so this does not significantly change the meaning.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'anna' to 'an' at position 3",
-      "reason": "'anh' is a pronoun meaning 'older brother' or a polite way to address a male, which changes the addressee from 'anna' (a name) to 'anh' (a pronoun), altering the meaning of the sentence.",
+      "error": "Substitution: 'anna' to 'an' at position 2",
+      "reason": "'anh' (meaning 'Mr.' or 'older brother') is inserted, which changes the addressee from 'anna' to a male person, altering the intended recipient.",
       "score": 1
     },
     {
-      "error": "Deletion: 'mình' at position 8",
-      "reason": "'anna' is a name, while 'an' could be a different name or a truncation, which could confuse the identity of the person being addressed. This is a significant error if the name is important for context.",
+      "error": "Deletion: 'mình' at position 7",
+      "reason": "'anna' is a female name, while 'an' is a different name (typically male); this changes the person being addressed.",
       "score": 1
     },
     {
-      "error": "Substitution: 'lên' to 'lại' at position 10",
-      "reason": "'mình' means 'I' or 'me', and its omission removes the subject of the action, which can make the sentence less clear but the overall intent is still somewhat understandable.",
+      "error": "Substitution: 'lên' to 'lại' at position 9",
+      "reason": "'mình' (meaning 'I' or 'me') is omitted, which removes the subject of the action, but the overall intent is still somewhat clear.",
       "score": 2
     }
   ]

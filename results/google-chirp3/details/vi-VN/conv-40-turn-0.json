@@ -7,7 +7,7 @@
   "werRefWords": 14,
   "werNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
   "werNormalizedPredicted": "xin chào tôi gọi tới muốn muốn gia tăng cái hạn mức thẻ tín dụng",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'xin' to 'muốn' at position 6",
-      "reason": "The word 'muốn' (want) is repeated, but this does not change the overall meaning of the sentence. It is a minor redundancy.",
+      "reason": "The word 'xin' (to request) is replaced by 'muốn' (to want), but the sentence already contains 'muốn' before, and the intent of requesting a credit limit increase is still clear. This is a minor error as the overall meaning is preserved.",
       "score": 2
     },
     {
       "error": "Insertion: 'cái' at position 9",
-      "reason": "The word 'cái' is an article/classifier in Vietnamese and its insertion does not change the meaning of the sentence. It is a minor error.",
+      "reason": "The insertion of 'cái' (a classifier) before 'hạn mức' does not change the meaning of the sentence. It is a minor grammatical addition that does not affect understanding.",
       "score": 2
     }
   ]

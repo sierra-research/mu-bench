@@ -5,9 +5,9 @@
   "wer": 0.15384615384615385,
   "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "你 说 的 不 对 你 为 什么 不 听 好 呀",
-  "werNormalizedPredicted": "你 说 的 不 对 你 为 什么 听 不 听 我 呀",
-  "significantWer": 0.15384615384615385,
+  "werNormalizedGold": "你说的不对你为什么不听好呀",
+  "werNormalizedPredicted": "你说的不对你为什么听不听我呀",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "你 说 的 不 对 你 为 什 么 不 听 好 呀",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '听' at position 9",
-      "reason": "The insertion of '听' (listen) changes the structure of the question from 'why don't you listen well' to 'why listen or not listen', which alters the meaning of the sentence significantly.",
+      "reason": "The insertion of '听' (listen) changes the structure of the question from 'why don't you listen well' to 'why do you listen or not listen', which alters the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: '好' to '我' at position 11",
-      "reason": "Substituting '好' (well/good) with '我' (me/I) changes the object and meaning of the sentence, making it incoherent and significantly different from the original intent.",
+      "reason": "Substituting '好' (well/good) with '我' (me/I) changes the object and meaning of the sentence, making it incoherent compared to the original intent.",
       "score": 1
     }
   ]

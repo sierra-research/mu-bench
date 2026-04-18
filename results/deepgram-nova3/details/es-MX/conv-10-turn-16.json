@@ -1,41 +1,41 @@
 {
   "gold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "predicted": "No, no, te falta, te falta el punto. Punto arroba Gmail punto com.",
+  "predicted": "No, no, te falta, te falta el punto, punto lock arroba Gmail punto com.",
   "unintelligible": false,
   "wer": 0.5,
   "werEdits": 6,
   "werRefWords": 12,
-  "werNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "no no te falta te falta el punto punto arroba gmail punto com",
-  "significantWer": 0.25,
-  "majorErrorsCount": 3,
+  "werNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "no no te falta te falta el punto punto lock arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "no no te falta te falta el punto punto arroba gmail punto com",
+  "sigWerNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "no no te falta te falta el punto punto lock arroba gmail punto com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 1",
-      "reason": "The extra 'no' introduces a negation that could confuse the meaning, but the overall intent is still understandable.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: 'te' at position 3",
-      "reason": "Repeating 'te falta' is redundant but does not change the overall meaning.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'maria' at position 5",
-      "reason": "Omitting 'maria' from the email address significantly alters the intended email, making it incorrect.",
+      "reason": "The extra 'no' introduces a negation that could confuse the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'lopez' at position 7",
-      "reason": "Omitting 'lopez' from the email address significantly alters the intended email, making it incorrect.",
+      "error": "Insertion: 'te' at position 3",
+      "reason": "Repeating 'te falta' is redundant but does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'maría' at position 5",
+      "reason": "Omitting 'maría' from the email address changes the identity of the email, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lock' at position 7",
+      "reason": "'lock' is a completely different word from 'lópez', changing the email address and making it incorrect.",
       "score": 1
     },
     {
       "error": "Substitution: 'email' to 'gmail' at position 9",
-      "reason": "Changing the domain from 'email' to 'gmail' results in a completely different email address, which is a significant error.",
+      "reason": "Changing the domain from 'email' to 'gmail' alters the email address, which is a significant error.",
       "score": 1
     }
   ]

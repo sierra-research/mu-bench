@@ -2,15 +2,26 @@
   "gold": "Tôi có thể nào xin thẻ tạm được không, trong quá trình đợi thẻ mới?",
   "predicted": "Ờm, tôi có thể nào sinh thể tạm được không trong quá trình đẩy thể mới?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
   "werRefWords": 15,
-  "werNormalizedGold": "toi co the nao xin the tam duoc khong trong qua trinh doi the moi",
-  "werNormalizedPredicted": "toi co the nao xin the tam duoc khong trong qua trinh doi the moi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tôi có thể nào xin thẻ tạm được không trong quá trình đợi thẻ mới",
+  "werNormalizedPredicted": "tôi có thể nào sinh thể tạm được không trong quá trình đẩy thể mới",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "toi co the nao xin the tam duoc khong trong qua trinh doi the moi",
-  "sigWerNormalizedPredicted": "toi co the nao xin the tam duoc khong trong qua trinh doi the moi",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tôi có thể nào xin thẻ tạm được không trong quá trình đợi thẻ mới",
+  "sigWerNormalizedPredicted": "tôi có thể nào sinh thể tạm được không trong quá trình đẩy thể mới",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xin' to 'sinh' at position 4",
+      "reason": "'xin' means 'to request' or 'to ask for', while 'sinh' means 'to give birth' or 'to generate'. This substitution changes the meaning of the request and makes the sentence confusing or incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đợi' to 'đẩy' at position 12",
+      "reason": "'đợi' means 'to wait', while 'đẩy' means 'to push'. This substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    }
+  ]
 }

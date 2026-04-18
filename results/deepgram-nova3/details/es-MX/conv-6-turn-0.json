@@ -2,15 +2,36 @@
   "gold": "Necesito averiguar por qué no me llegó la tarjeta nueva. La tarjeta de crédito. ¿Qué pudo pasar?",
   "predicted": "Necesito averiguar, porque no me llegó la tarjeta nueva, la tarjeta de crédito. ¿Qué pudo pasar?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
   "werRefWords": 17,
-  "werNormalizedGold": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
-  "werNormalizedPredicted": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
-  "significantWer": 0.0,
+  "werNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "werNormalizedPredicted": "necesito averiguar porque no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
-  "sigWerNormalizedPredicted": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "sigWerNormalizedPredicted": "necesito averiguar porque no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'por' to 'porque' at position 2",
+      "reason": "'por qué' (why) is a question phrase, while 'porque' (because) is an answer phrase; this changes the meaning but in context the intent is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'qué' at position 3",
+      "reason": "The omission of 'qué' in 'por qué' further changes 'why' to 'because', but the overall intent of the sentence is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'llegó' to 'llego' at position 6",
+      "reason": "Accent missing in 'llegó' (past tense), but the word is still understood in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 13",
+      "reason": "Missing accent in 'crédito', but the meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

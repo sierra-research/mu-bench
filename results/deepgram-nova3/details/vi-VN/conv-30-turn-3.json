@@ -2,15 +2,26 @@
   "gold": "Mã của tôi là C N 8 7 6.",
   "predicted": "Mã của tôi là cn tám trăm bảy mươi sáu",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "mã của tôi là c n tám bảy sáu",
-  "werNormalizedPredicted": "mã của tôi là c n tám bảy sáu",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "mã của tôi là c n tám trăm bảy mươi sáu",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "mã của tôi là c n tám bảy sáu",
-  "sigWerNormalizedPredicted": "mã của tôi là c n tám bảy sáu",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "mã của tôi là c n tám trăm bảy mươi sáu",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 7",
+      "reason": "'trăm' means 'hundred', which changes the number from 'tám bảy sáu' (eight seven six, i.e., 876) to 'tám trăm bảy mươi sáu' (eight hundred seventy six, i.e., 876). The meaning is numerically the same, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'mươi' at position 8",
+      "reason": "'mươi' is part of the Vietnamese way to say 'seventy' in 'bảy mươi sáu' (seventy six). The actual transcription expands the number but the value remains 876, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

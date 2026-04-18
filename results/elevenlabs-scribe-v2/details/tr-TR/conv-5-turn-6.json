@@ -2,15 +2,26 @@
   "gold": "45 68 yerine sondaki rakam 8 yerine 7 yaparsanız her şey doğru olacak.",
   "predicted": "45 altm-- 4568 yerine sondaki rakamı sekiz yerine yedi yaparsanız her şey doğru olacak",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 3,
   "werRefWords": 15,
   "werNormalizedGold": "kırk beş altmış sekiz yerine sondaki rakam sekiz yerine yedi yaparsanız her şey doğru olacak",
-  "werNormalizedPredicted": "kırk beş altmış sekiz yerine sondaki rakam sekiz yerine yedi yaparsanız her şey doğru olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "kırk beş altmış beş altmış sekiz yerine sondaki rakamı sekiz yerine yedi yaparsanız her şey doğru olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "kırk beş altmış sekiz yerine sondaki rakam sekiz yerine yedi yaparsanız her şey doğru olacak",
-  "sigWerNormalizedPredicted": "kırk beş altmış sekiz yerine sondaki rakam sekiz yerine yedi yaparsanız her şey doğru olacak",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "kırk beş altmış beş altmış sekiz yerine sondaki rakamı sekiz yerine yedi yaparsanız her şey doğru olacak",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'beş' at position 3",
+      "reason": "The extra 'beş' (five) inserted changes the sequence of numbers, which could lead to confusion about which numbers are being referenced. This significantly alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'rakam' to 'rakamı' at position 6",
+      "reason": "The change from 'rakam' (number/digit) to 'rakamı' (the number/digit, accusative case) is a minor grammatical difference and does not affect the overall meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

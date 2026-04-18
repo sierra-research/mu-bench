@@ -2,15 +2,31 @@
   "gold": "没有没有没有，你，我正在等待我的新卡，想知道它的状态。",
   "predicted": "没有没有没有你我正在当代我的信卡想知道他的状态",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.17391304347826086,
+  "werEdits": 4,
   "werRefWords": 23,
   "werNormalizedGold": "没有没有没有 你 我正在等待我的新卡 想知道它的状态",
-  "werNormalizedPredicted": "没有没有没有 你 我正在等待我的新卡 想知道它的状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "没有没有没有 你 我正在当代我的信卡 想知道他的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "没 有 没 有 没 有 你 我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "没 有 没 有 没 有 你 我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 有 没 有 没 有 你 我 正 在 当 代 我 的 信 卡 想 知 道 他 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '等' to '当' at position 10",
+      "reason": "'等' (wait) and '当' (act as/serve as) have different meanings and change the action being described, which affects the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '新' to '信' at position 14",
+      "reason": "'新卡' (new card) vs '信卡' (credit card) changes the type of card being referred to, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 19",
+      "reason": "'它' (it) and '他' (he) are different pronouns; using 'he' instead of 'it' for a card is a grammatical and semantic error, but the referent is still clear in context.",
+      "score": 2
+    }
+  ]
 }

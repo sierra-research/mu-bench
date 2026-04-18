@@ -2,16 +2,16 @@
   "gold": "El número de teléfono es 55 12 34 56 78.",
   "predicted": "El número de teléfono es 552745678.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 6,
+  "wer": 0.3888888888888889,
+  "werEdits": 7,
   "werRefWords": 18,
-  "werNormalizedGold": "el numero de telefono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
-  "werNormalizedPredicted": "el numero de telefono es cincuenta y cinco veintisiete cuarenta y cinco sesenta y siete ochenta y ocho",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 3,
+  "werNormalizedGold": "el número de teléfono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "el número de teléfono es cincuenta y cinco veintisiete cuarenta y cinco sesenta y siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "el numero de telefono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
-  "sigWerNormalizedPredicted": "el numero de telefono es cincuenta y cinco veintisiete cuarenta y cinco sesenta y siete ochenta y ocho",
+  "sigWerNormalizedGold": "el número de teléfono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "el número de teléfono es cincuenta y cinco veintisiete cuarenta y cinco sesenta y siete ocho",
   "sigWerErrors": [
     {
       "error": "Substitution: 'doce' to 'veintisiete' at position 8",
@@ -26,6 +26,11 @@
     {
       "error": "Substitution: 'seis' to 'siete' at position 14",
       "reason": "'seis' (6) and 'siete' (7) are different digits, which alters the phone number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'setenta' at position 15",
+      "reason": "Omitting 'setenta' (70) removes a significant part of the phone number, making it incomplete or incorrect.",
       "score": 1
     }
   ]

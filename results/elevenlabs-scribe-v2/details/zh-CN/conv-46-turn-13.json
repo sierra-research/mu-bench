@@ -2,15 +2,21 @@
   "gold": "嗯对的。",
   "predicted": "உம். இதோ இதான்",
   "unintelligible": false,
-  "wer": null,
-  "werEdits": null,
-  "werRefWords": null,
-  "werNormalizedGold": "",
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "对的",
   "werNormalizedPredicted": "",
-  "significantWer": null,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 0,
-  "sigWerNormalizedGold": null,
-  "sigWerNormalizedPredicted": null,
-  "sigWerErrors": null
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "对 的",
+  "sigWerNormalizedPredicted": "",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '对' at position 0",
+      "reason": "The entire expected phrase is missing in the actual transcription, resulting in a complete loss of meaning.",
+      "score": 1
+    }
+  ]
 }

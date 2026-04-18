@@ -4,52 +4,90 @@
   "date": "2026-04-14",
   "locales": {
     "en-US": {
-      "wer": 0.0408,
-      "significantWer": 0.0644,
+      "wer": 0.0554,
+      "significantWer": 0.0588,
       "utteranceCount": 817,
       "unintelligibleCount": 0,
-      "latencyP50Ms": 430.0,
-      "latencyP95Ms": 890.0
+      "completeP50Ms": 415.0,
+      "completeP95Ms": 891.6,
+      "roundTripP50Ms": 415.0,
+      "roundTripP95Ms": 891.6
     },
     "es-MX": {
-      "wer": 0.0751,
-      "significantWer": 0.1149,
+      "wer": 0.1095,
+      "significantWer": 0.1275,
       "utteranceCount": 792,
       "unintelligibleCount": 0,
-      "latencyP50Ms": 429.3,
-      "latencyP95Ms": 828.1
+      "completeP50Ms": 419.8,
+      "completeP95Ms": 816.8,
+      "roundTripP50Ms": 419.8,
+      "roundTripP95Ms": 816.8
     },
     "tr-TR": {
-      "wer": 0.0627,
-      "significantWer": 0.1253,
+      "wer": 0.0943,
+      "significantWer": 0.1915,
       "utteranceCount": 846,
       "unintelligibleCount": 0,
-      "latencyP50Ms": 455.6,
-      "latencyP95Ms": 902.6
+      "completeP50Ms": 458.9,
+      "completeP95Ms": 909.9,
+      "roundTripP50Ms": 458.9,
+      "roundTripP95Ms": 909.9
     },
     "vi-VN": {
-      "wer": 0.1046,
-      "significantWer": 0.2577,
+      "wer": 0.1308,
+      "significantWer": 0.3087,
       "utteranceCount": 975,
       "unintelligibleCount": 0,
-      "latencyP50Ms": 432.3,
-      "latencyP95Ms": 821.0
+      "completeP50Ms": 445.4,
+      "completeP95Ms": 917.3,
+      "roundTripP50Ms": 445.4,
+      "roundTripP95Ms": 917.3
     },
     "zh-CN": {
-      "wer": 0.1112,
-      "significantWer": 0.2337,
+      "wer": 0.1686,
+      "significantWer": 0.3714,
       "utteranceCount": 840,
       "unintelligibleCount": 0,
-      "latencyP50Ms": 375.6,
-      "latencyP95Ms": 559.9
+      "completeP50Ms": 372.8,
+      "completeP95Ms": 570.5,
+      "roundTripP50Ms": 372.8,
+      "roundTripP95Ms": 570.5
     }
   },
   "overall": {
-    "wer": 0.0789,
-    "significantWer": 0.1633,
+    "wer": 0.1117,
+    "significantWer": 0.2116,
     "utteranceCount": 4270,
     "unintelligibleCount": 0,
-    "latencyP50Ms": 419.5,
-    "latencyP95Ms": 828.2
+    "completeP50Ms": 415.1,
+    "completeP95Ms": 847.0,
+    "roundTripP50Ms": 415.1,
+    "roundTripP95Ms": 847.0
+  },
+  "judge": {
+    "model": "gpt-4.1-2025-04-14",
+    "modelSnapshot": "gpt-4.1-2025-04-14",
+    "temperature": 0.0,
+    "seed": 7,
+    "normalizeGoldPromptSha": "12d7da52ee922737",
+    "normalizePredPromptSha": "f69f6a10f7431f35",
+    "significantErrorsPromptSha": "2f9c01aef815373b",
+    "scoredAt": "2026-04-18T03:23:15+00:00"
+  },
+  "meta": {
+    "config": {
+      "beamSize": "default",
+      "languageHint": "default",
+      "customVocabulary": "default",
+      "noiseSuppression": "default",
+      "domainAdaptation": "default",
+      "keywordBoosting": "default"
+    },
+    "manifestGoldHash": "e7432da0ef4d0dc16f85c9e7fb0da8cdbb7b4454c406b292ce73cff7ea7d1ab2",
+    "canonicalGoldCacheHash": "e7432da0ef4d0dc16f85c9e7fb0da8cdbb7b4454c406b292ce73cff7ea7d1ab2"
+  },
+  "latencyMeta": {
+    "protocol": "batch",
+    "region": "us-east-2"
   }
 }

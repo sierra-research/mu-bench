@@ -2,15 +2,26 @@
   "gold": "Sí, necesito información adicional.",
   "predicted": "Sí, necesito información adi-adicional",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
-  "werNormalizedGold": "si necesito informacion adicional",
-  "werNormalizedPredicted": "si necesito informacion adicional",
-  "significantWer": 0.0,
+  "werNormalizedGold": "sí necesito información adicional",
+  "werNormalizedPredicted": "si necesito informacion adi adicional",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "si necesito informacion adicional",
-  "sigWerNormalizedPredicted": "si necesito informacion adicional",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sí necesito información adicional",
+  "sigWerNormalizedPredicted": "si necesito informacion adi adicional",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'si' at position 0",
+      "reason": "Missing accent mark changes 'yes' (affirmation) to 'if' (conditional), but in context it is still understood as 'yes'.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'información' to 'adi' at position 2",
+      "reason": "Missing accent mark does not change the meaning of the word in context.",
+      "score": 3
+    }
+  ]
 }

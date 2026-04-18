@@ -2,15 +2,31 @@
   "gold": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, P olacak. Pırasanın P'si, siz T ile söylediniz. Zaynep Arslan olacak.",
   "predicted": "Yani e posta adresi doğru ama adımda ve telefon numarasını hata var. Adımda son harf zayn t olacak. Pırasa'nın ps'i siz t ile söylediniz zayn arslan olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2692307692307692,
+  "werEdits": 7,
   "werRefWords": 26,
-  "werNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın ps'i siz t ile söylediniz zaynep arslan olacak",
-  "werNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın ps'i siz t ile söylediniz zaynep arslan olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın psi siz t ile söylediniz zaynep arslan olacak",
+  "werNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zayn t olacak pırasa nın ps i siz t ile söylediniz zayn arslan olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 26,
-  "sigWerNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın ps'i siz t ile söylediniz zaynep arslan olacak",
-  "sigWerNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın ps'i siz t ile söylediniz zaynep arslan olacak",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın psi siz t ile söylediniz zaynep arslan olacak",
+  "sigWerNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zayn t olacak pırasa nın ps i siz t ile söylediniz zayn arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zayn' at position 14",
+      "reason": "The name 'zaynep' is missing the last two letters, which is significant in the context of spelling out a name. This could lead to confusion or incorrect identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'pırasanın' to 'ps' at position 17",
+      "reason": "'pırasa' is not an insertion but part of the phrase explaining the letter 'p' as in 'pırasa'. The actual error is in the following word.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zayn' at position 23",
+      "reason": "The expected phrase 'pırasanın psi' (the 'ps' of 'pırasa') is replaced with just 'ps', which omits the clarifying context. However, the meaning is still mostly clear in context.",
+      "score": 2
+    }
+  ]
 }

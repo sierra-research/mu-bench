@@ -1,26 +1,31 @@
 {
   "gold": "Hayır baştan söylüyorum beni kesmeden dinle lütfen. Artı 90 123 0 90 45 67.",
-  "predicted": "Hayır, baştan söylüyorum. Belki kesmedediniz lütfen. Artı doksan, yüz yirmi üç, sıfır doksan, kırk beş, altmış yedi.",
+  "predicted": "Hayır, baştan söylüyorum. Beyin kesmeden lütfen. Artı doksan, yüz yirmi üç, sıfır doksan, kırk beş, altmış yedi.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 3,
+  "wer": 0.2222222222222222,
+  "werEdits": 4,
   "werRefWords": 18,
-  "werNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "hayır baştan söylüyorum belki kesmedediniz lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "hayır baştan söylüyorum beyin kesmeden lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "hayır baştan söylüyorum belki kesmedediniz lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır baştan söylüyorum beyin kesmeden lütfen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'beni' to 'belki' at position 3",
-      "reason": "'Beni' means 'me', while 'belki' means 'maybe'; this substitution changes the meaning of the sentence and makes it incoherent.",
+      "error": "Substitution: 'beni' to 'beyin' at position 3",
+      "reason": "'Beni' means 'me', while 'beyin' means 'brain' in Turkish. This substitution changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'dinle' at position 5",
-      "reason": "Omitting 'dinle' ('listen') removes the imperative instruction, which is important for the meaning of the sentence.",
+      "reason": "Omitting 'dinle' ('listen') removes the imperative verb, making the sentence incomplete and changing the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 9",
+      "reason": "'Bir' means 'one', 'yüz' means 'hundred'. This changes the phone number sequence, which is a significant factual error.",
       "score": 1
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "美林。",
   "predicted": "美玲。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
-  "werNormalizedGold": "美玲",
+  "werNormalizedGold": "美林",
   "werNormalizedPredicted": "美玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "美 玲",
+  "sigWerNormalizedGold": "美 林",
   "sigWerNormalizedPredicted": "美 玲",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '玲' at position 1",
+      "reason": "Both are common Chinese given names but refer to different characters and meanings. Substituting one for the other changes the person's name, which is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
 }

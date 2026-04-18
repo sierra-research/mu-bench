@@ -2,20 +2,25 @@
   "gold": "C N 9 5 8。",
   "predicted": "an958。",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n nine five eight",
-  "werNormalizedPredicted": "a n nine five eight",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n 九 五 八",
+  "werNormalizedPredicted": "an 九 五 八",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n nine five eight",
-  "sigWerNormalizedPredicted": "a n nine five eight",
+  "sigWerNormalizedGold": "c n 九 五 八",
+  "sigWerNormalizedPredicted": "an 九 五 八",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'a' at position 0",
-      "reason": "This is a substitution of a single letter in a spelled-out sequence, which changes the intended letter and could result in a completely different code or meaning.",
+      "error": "Substitution: 'c' to 'an' at position 0",
+      "reason": "'c' is a single letter, likely part of a spelled-out sequence, while 'an' is a completely different word. This changes the intended sequence and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from a spelled-out sequence alters the intended sequence, which is a significant error in this context.",
       "score": 1
     }
   ]

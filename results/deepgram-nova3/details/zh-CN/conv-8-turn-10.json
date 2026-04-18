@@ -2,15 +2,31 @@
   "gold": "君玲 at email dot com。",
   "predicted": "junyingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
-  "werNormalizedPredicted": "君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "junying email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "junying email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junying' at position 0",
+      "reason": "'君' is a Chinese character, while 'junying' is a romanized name and not a direct translation or equivalent. This changes the identity being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of '玲', which is part of the name, results in a different name and thus a significant error in identifying the person.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Omitting 'dot' from the email address makes the email incomplete and unusable.",
+      "score": 1
+    }
+  ]
 }

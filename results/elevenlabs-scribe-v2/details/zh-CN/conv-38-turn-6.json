@@ -2,15 +2,26 @@
   "gold": "君玲，君玲。",
   "predicted": "Dreamline，Dreamline。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "君玲 君玲",
-  "werNormalizedPredicted": "君玲 君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreamline dreamline",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "君 玲 君 玲",
-  "sigWerNormalizedPredicted": "君 玲 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreamline dreamline",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamline' at position 0",
+      "reason": "The word '君' (a Chinese character) is replaced with 'dreamline', which is an unrelated English word. This is a significant error as the meaning is completely changed and the language is different.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 2",
+      "reason": "The expected repetition of '君' is missing in the actual transcription, which further derails the intended meaning and structure.",
+      "score": 1
+    }
+  ]
 }

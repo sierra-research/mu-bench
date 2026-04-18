@@ -2,16 +2,16 @@
   "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
   "predicted": "Anla, son transferinde biraz gecikme olmuştu. Son transferime bir göz atar mısın? Bana email gönderebilir misin son transferinin detaylarını?",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 6,
+  "wer": 0.3888888888888889,
+  "werEdits": 7,
   "werRefWords": 18,
-  "werNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
-  "werNormalizedPredicted": "anla son transferinde biraz gecikme olmustu son transferime bir goz atar misin bana email gonderebilir misin son transferinin detaylarini",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "werNormalizedPredicted": "anla son transferinde biraz gecikme olmuştu son transferime bir göz atar mısın bana email gönderebilir misin son transferinin detaylarını",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
-  "sigWerNormalizedPredicted": "anla son transferinde biraz gecikme olmustu son transferime bir goz atar misin bana email gonderebilir misin son transferinin detaylarini",
+  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "sigWerNormalizedPredicted": "anla son transferinde biraz gecikme olmuştu son transferime bir göz atar mısın bana email gönderebilir misin son transferinin detaylarını",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anla' at position 0",
@@ -20,22 +20,22 @@
     },
     {
       "error": "Substitution: 'transferimi' to 'transferime' at position 7",
-      "reason": "Minor grammatical error; 'transferimi' (my transfer) vs 'transferime' (to my transfer). The meaning is still clear in context.",
+      "reason": "Minor misspelling, the meaning is still clear and refers to the same thing.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gosterir' to 'atar' at position 9",
-      "reason": "The insertion of 'goz' (eye) changes the phrase to 'take a look at', which is a minor change in how the request is phrased, but the intent remains the same.",
+      "error": "Substitution: 'gösterir' to 'atar' at position 9",
+      "reason": "The insertion of 'göz' (eye) changes the phrase to 'take a look at' instead of 'show', but the overall intent (to check or show the transfer) is similar.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gonderir' to 'gonderebilir' at position 13",
-      "reason": "'Gosterir' means 'show', while 'atar' means 'throw' or 'send'. In this context, 'goz atar' is an idiom meaning 'take a look at', so the meaning is preserved.",
-      "score": 3
+      "error": "Substitution: 'gönderir' to 'gönderebilir' at position 13",
+      "reason": "'Gösterir' means 'show', while 'atar' means 'throw' or 'send'. In this context, 'göz atar' is a common phrase meaning 'take a look at', which is a minor change in action but does not derail the meaning.",
+      "score": 2
     },
     {
       "error": "Substitution: 'transferin' to 'transferinin' at position 16",
-      "reason": "'Gonderir' means 'send', 'gonderebilir' means 'can send'. The addition of ability does not change the overall intent of the request.",
+      "reason": "'Gönderir' means 'send', 'gönderebilir' means 'can send'. The addition of ability does not change the overall meaning significantly.",
       "score": 3
     }
   ]

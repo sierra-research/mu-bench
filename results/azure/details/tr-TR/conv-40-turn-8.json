@@ -2,20 +2,30 @@
   "gold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
   "predicted": "Hayır g mail email olarak yazacaksın e mail.com.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 5,
   "werRefWords": 10,
   "werNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
-  "werNormalizedPredicted": "hayır gmail email olarak yazacaksın email nokta com",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "hayır g mail email olarak yazacaksın e mail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
-  "sigWerNormalizedPredicted": "hayır gmail email olarak yazacaksın email nokta com",
+  "sigWerNormalizedPredicted": "hayır g mail email olarak yazacaksın e mail com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'değil' at position 2",
-      "reason": "Omitting 'değil' (which means 'not') reverses the meaning of the sentence, changing it from 'not gmail' to 'gmail', which is a significant change in meaning.",
+      "error": "Substitution: 'gmail' to 'g' at position 1",
+      "reason": "'gmail' is a single word referring to the email service, while 'g' is just a letter and does not convey the same meaning. This substitution makes the sentence unclear and could confuse the listener about what is being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 4",
+      "reason": "Omitting one instance of 'email' slightly reduces clarity but does not significantly change the overall meaning, as 'email' is still mentioned elsewhere in the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'e' at position 7",
+      "reason": "'email' is a full word, while 'e' alone does not convey the intended meaning in this context. This substitution makes the phrase incomplete and unclear, especially in the context of an email address.",
       "score": 1
     }
   ]

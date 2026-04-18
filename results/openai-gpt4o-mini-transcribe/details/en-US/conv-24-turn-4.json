@@ -7,7 +7,7 @@
   "werRefWords": 14,
   "werNormalizedGold": "that is phone number two one two one two three four five six seven",
   "werNormalizedPredicted": "the phone number two one two one two three four five six seven",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "that is phone number two one two one two three four five six seven",
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'that' to 'the' at position 0",
-      "reason": "'That' and 'the' are both determiners and do not significantly change the meaning in this context.",
-      "score": 3
+      "reason": "'That' and 'the' are both determiners, but 'that' is specific and 'the' is general. In this context, the meaning is only slightly changed and the sentence remains clear.",
+      "score": 2
     },
     {
       "error": "Deletion: 'is' at position 1",
-      "reason": "Omitting 'is' does not change the overall meaning of the sentence; the intent is still clear.",
-      "score": 3
+      "reason": "Omitting 'is' makes the sentence less grammatical but does not significantly change the meaning; the intent is still clear.",
+      "score": 2
     }
   ]
 }

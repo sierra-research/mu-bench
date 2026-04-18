@@ -2,15 +2,21 @@
   "gold": "你好。",
   "predicted": "您好",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
-  "werNormalizedGold": "你 好",
-  "werNormalizedPredicted": "你 好",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "您好",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
-  "sigWerNormalizedPredicted": "你 好",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "您 好",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '您' at position 0",
+      "reason": "'你' and '您' both mean 'you' in Chinese, but '您' is the polite/formal form. The overall meaning of the sentence remains the same, only the level of politeness changes.",
+      "score": 2
+    }
+  ]
 }

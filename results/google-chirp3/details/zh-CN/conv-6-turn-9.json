@@ -2,15 +2,26 @@
   "gold": "我的姓名是君玲，君玲。",
   "predicted": "我的姓名是军军玲。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
   "werNormalizedGold": "我的姓名是君玲君玲",
-  "werNormalizedPredicted": "我的姓名是君玲君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的姓名是军军玲",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 君 玲",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 军 军 玲",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '军' at position 5",
+      "reason": "'君' and '军' are different Chinese characters with different meanings and pronunciations, so this changes the name and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 7",
+      "reason": "Omitting one occurrence of '君' changes the full name repetition, which is important for clarity in names, especially in Chinese naming conventions. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

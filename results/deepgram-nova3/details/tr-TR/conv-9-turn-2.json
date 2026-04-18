@@ -2,20 +2,25 @@
   "gold": "C N 0 242.",
   "predicted": "Sin iki yüz kırk iki.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
-  "werRefWords": 7,
-  "werNormalizedGold": "c n zero two hundred forty two",
-  "werNormalizedPredicted": "c n two hundred forty two",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "c n zero two hundred forty two",
-  "sigWerNormalizedPredicted": "c n two hundred forty two",
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
+  "werRefWords": 6,
+  "werNormalizedGold": "c n sıfır iki dört iki",
+  "werNormalizedPredicted": "sin iki yüz kırk iki",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n sıfır iki dört iki",
+  "sigWerNormalizedPredicted": "sin iki yüz kırk iki",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'zero' at position 2",
-      "reason": "Omitting 'zero' changes the numeric value being referenced, which can significantly alter the meaning, especially in contexts like codes or numbers.",
+      "error": "Substitution: 'c' to 'sin' at position 0",
+      "reason": "'c' is a single letter, likely part of a spelled-out code or identifier, while 'sin' is a completely different word. This changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dört' at position 4",
+      "reason": "'dört' (four) is omitted, which changes the numeric sequence and thus the meaning of the entire string, especially if this is a code or number.",
       "score": 1
     }
   ]

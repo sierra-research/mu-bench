@@ -2,15 +2,26 @@
   "gold": "İsmim Ahmet Arslan, Anna.",
   "predicted": "İş mim Ahmet Aslısan ana",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "ismim ahmet arslan anna",
-  "werNormalizedPredicted": "ismim ahmet arslan anna",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "iş mim ahmet aslısan ana",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "ismim ahmet arslan anna",
-  "sigWerNormalizedPredicted": "ismim ahmet arslan anna",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "iş mim ahmet aslısan ana",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ismim' to 'mim' at position 0",
+      "reason": "'iş' is an extra word at the beginning, which changes the meaning of the sentence and introduces confusion about the subject.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslısan' at position 2",
+      "reason": "'ismim' means 'my name is' in Turkish, while 'mim' is not meaningful in this context, causing a significant loss of meaning.",
+      "score": 1
+    }
+  ]
 }

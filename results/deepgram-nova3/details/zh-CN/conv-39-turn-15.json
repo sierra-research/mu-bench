@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "君 君玲 at email dot com",
   "werNormalizedPredicted": "dreamlinreamindd",
-  "significantWer": 0.2857142857142857,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "君 君 玲 at email dot com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '君' to 'dreamlinreamindd' at position 0",
-      "reason": "The actual transcription is completely different from the expected, replacing a Chinese character with an unrelated English string, making the meaning incoherent.",
+      "reason": "The actual transcription is completely different from the expected, replacing a Chinese name with an unrelated string, making the meaning incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '君' at position 1",
-      "reason": "A key part of the expected name is missing, which significantly alters the intended meaning and makes the transcription unusable for its purpose.",
+      "reason": "A repeated character in the expected (likely part of a name) is missing in the actual, further distorting the intended meaning and making the transcription unusable for its purpose.",
       "score": 1
     }
   ]

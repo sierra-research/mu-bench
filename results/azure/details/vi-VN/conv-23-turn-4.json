@@ -2,15 +2,21 @@
   "gold": "Email là thu chấm trần email chấm com.",
   "predicted": "Ờ email là thu. Trần a. Còngemail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "email là thu chấm trần email chấm com",
-  "werNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là thu chấm trần a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "email là thu chấm trần email chấm com",
-  "sigWerNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là thu chấm trần a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'a' at position 5",
+      "reason": "'a còng' means '@' in Vietnamese and is inserted before 'email'. This changes the structure of the email address, as the expected does not have '@' at this position. Adding '@' here could confuse the actual email address, making it invalid or misleading.",
+      "score": 1
+    }
+  ]
 }

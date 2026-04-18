@@ -2,15 +2,26 @@
   "gold": "我想提高我的信用卡的限额。",
   "predicted": "我想提高我的信用code限额",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
   "werRefWords": 12,
   "werNormalizedGold": "我想提高我的信用卡的限额",
-  "werNormalizedPredicted": "我想提高我的信用卡的限额",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想提高我的信用 code 限额",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 的 限 额",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 的 限 额",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 code 限 额",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '卡' to 'code' at position 8",
+      "reason": "'卡' means 'card' in Chinese, while 'code' is an English word with a completely different meaning. This substitution makes the sentence confusing and changes the intended meaning from 'credit card' to 'credit code', which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 9",
+      "reason": "'的' is a grammatical particle in Chinese that connects '信用卡' (credit card) to '限额' (limit). Its omission slightly affects the grammatical correctness but does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

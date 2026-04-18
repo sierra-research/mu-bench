@@ -2,20 +2,30 @@
   "gold": "No. ¿Entonces me puedes transferir con algún agente?",
   "predicted": "No, entonces, ¿me podías transferir con algún agente?",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 1,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
-  "werNormalizedGold": "no entonces me puedes transferir con algun agente",
+  "werNormalizedGold": "número entonces me puedes transferir con algún agente",
   "werNormalizedPredicted": "no entonces me podias transferir con algun agente",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "no entonces me puedes transferir con algun agente",
+  "sigWerNormalizedGold": "número entonces me puedes transferir con algún agente",
   "sigWerNormalizedPredicted": "no entonces me podias transferir con algun agente",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) is replaced by 'no' (no), which completely changes the meaning of the sentence and removes the request for a number.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'puedes' to 'podias' at position 3",
-      "reason": "The substitution changes the verb tense from present ('puedes' - you can) to past imperfect ('podias' - you could), but the overall request and meaning of the sentence remain clear and unchanged in context.",
+      "reason": "'puedes' (you can) vs 'podias' (you could) is a tense change, but the meaning in context is similar.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'algún' to 'algun' at position 6",
+      "reason": "Missing accent on 'algún' does not change the meaning.",
       "score": 3
     }
   ]

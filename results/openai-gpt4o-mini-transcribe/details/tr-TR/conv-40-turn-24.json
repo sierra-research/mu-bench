@@ -1,27 +1,27 @@
 {
   "gold": "İyi çalışmalar diliyorum, kolay gelsin.",
-  "predicted": "İyi çalışma gecesi.",
+  "predicted": "İyi çalışmacı, kolay gelsin.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werEdits": 4,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "iyi calismalar diliyorum kolay gelsin",
-  "werNormalizedPredicted": "iyi calisma gecesi",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "iyi çalışmalar diliyorum kolay gelsin",
+  "werNormalizedPredicted": "iyi çalışmacı kolay gelsin",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "iyi calismalar diliyorum kolay gelsin",
-  "sigWerNormalizedPredicted": "iyi calisma gecesi",
+  "sigWerNormalizedGold": "iyi çalışmalar diliyorum kolay gelsin",
+  "sigWerNormalizedPredicted": "iyi çalışmacı kolay gelsin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'calismalar' to 'calisma' at position 1",
-      "reason": "'calismalar' means 'studies' (plural), while 'calisma' means 'study' (singular); this changes the nuance but not the overall meaning of wishing well for work/studies.",
+      "error": "Substitution: 'çalışmalar' to 'çalışmacı' at position 1",
+      "reason": "'çalışmalar' means 'works' or 'studies', while 'çalışmacı' means 'worker' or 'participant'; this changes the meaning of the phrase but the overall intent of wishing well remains mostly understandable.",
       "score": 2
     },
     {
-      "error": "Deletion: 'kolay' at position 3",
-      "reason": "'kolay gelsin' is a common Turkish phrase meaning 'may it be easy for you'; omitting 'kolay' removes this phrase, which is significant in the context of well-wishing.",
-      "score": 1
+      "error": "Deletion: 'diliyorum' at position 2",
+      "reason": "Omitting 'diliyorum' ('I wish') removes the explicit act of wishing, which weakens the politeness and intent of the sentence, but the general sentiment is still somewhat conveyed.",
+      "score": 2
     }
   ]
 }

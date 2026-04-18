@@ -2,20 +2,40 @@
   "gold": "Es 55 1 2 3 4 56 78.",
   "predicted": "Este 5512345678.",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werEdits": 1,
-  "werRefWords": 11,
-  "werNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "este cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "este cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "wer": 0.35714285714285715,
+  "werEdits": 5,
+  "werRefWords": 14,
+  "werNormalizedGold": "es cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "es cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'es' to 'este' at position 0",
-      "reason": "'es' means 'is' in Spanish, while 'este' means 'this'. The substitution changes the subject of the sentence but does not derail the overall meaning, as the rest of the sentence is a sequence of numbers. The intent (providing a number sequence) is still clear.",
+      "error": "Deletion: 'es' at position 0",
+      "reason": "'es' is the verb 'is' in Spanish and its omission slightly affects the grammatical completeness but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 8",
+      "reason": "'cincuenta' (fifty) is replaced by 'cinco' (five), which is a significant change in the number sequence and alters the intended information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 9",
+      "reason": "Omitting 'y' (and) between numbers is a minor grammatical error and does not change the meaning of the number sequence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'setenta' to 'siete' at position 11",
+      "reason": "'setenta' (seventy) is replaced by 'siete' (seven), which is a significant change in the number sequence and alters the intended information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 12",
+      "reason": "Omitting 'y' (and) between numbers is a minor grammatical error and does not change the meaning of the number sequence.",
       "score": 2
     }
   ]

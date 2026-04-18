@@ -2,15 +2,26 @@
   "gold": "Hayır alamadım çünkü araya İngilizce de serpiştirdiniz. Ben gayet Türkçe bir takip kodu alabilir miyim? Lütfen yavaşça.",
   "predicted": "Hayır alamadım, çünkü araya İngilizcede serpiştirdiniz. Ben gayet Türkçe bir takip kodu alabilir miyim lütfen yavaşça?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
   "werNormalizedGold": "hayır alamadım çünkü araya ingilizce de serpiştirdiniz ben gayet türkçe bir takip kodu alabilir miyim lütfen yavaşça",
-  "werNormalizedPredicted": "hayır alamadım çünkü araya ingilizce de serpiştirdiniz ben gayet türkçe bir takip kodu alabilir miyim lütfen yavaşça",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "hayır alamadım çünkü araya ingilizcede serpiştirdiniz ben gayet türkçe bir takip kodu alabilir miyim lütfen yavaşça",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "hayır alamadım çünkü araya ingilizce de serpiştirdiniz ben gayet türkçe bir takip kodu alabilir miyim lütfen yavaşça",
-  "sigWerNormalizedPredicted": "hayır alamadım çünkü araya ingilizce de serpiştirdiniz ben gayet türkçe bir takip kodu alabilir miyim lütfen yavaşça",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır alamadım çünkü araya ingilizcede serpiştirdiniz ben gayet türkçe bir takip kodu alabilir miyim lütfen yavaşça",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ingilizce' to 'ingilizcede' at position 4",
+      "reason": "The word 'ingilizce' (English) was changed to 'ingilizcede' (in English), which adds a locative suffix. In this context, the meaning is only slightly altered and does not derail the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'de' at position 5",
+      "reason": "The word 'de' (also/as well) was omitted, but its absence does not significantly change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

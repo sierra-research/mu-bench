@@ -2,15 +2,26 @@
   "gold": "Juan punto López arroba email punto com.",
   "predicted": "juan.lopez@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "juan punto lopez arroba email punto com",
-  "werNormalizedPredicted": "juan punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "juan punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "juan punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "juan punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "juan punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 2",
+      "reason": "Accent missing on 'ó', but the name is still clearly recognizable and pronounced the same in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 4",
+      "reason": "'email' is a generic term for an email provider, while 'gmail' is a specific provider. This changes the actual email address and could result in a message being sent to the wrong address.",
+      "score": 1
+    }
+  ]
 }

@@ -1,22 +1,22 @@
 {
   "gold": "Tôi đã nghe rõ rồi.",
-  "predicted": "Ô rồi anh nghe rõ rồi.",
+  "predicted": "Ừ đã nghe rõ rồi.",
   "unintelligible": false,
-  "wer": 0.6,
-  "werEdits": 3,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
   "werNormalizedGold": "tôi đã nghe rõ rồi",
-  "werNormalizedPredicted": "ô rồi anh nghe rõ rồi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "đã nghe rõ rồi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "tôi đã nghe rõ rồi",
-  "sigWerNormalizedPredicted": "ô rồi anh nghe rõ rồi",
+  "sigWerNormalizedPredicted": "đã nghe rõ rồi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tôi' to 'rồi' at position 0",
-      "reason": "'ô' is an extra word at the beginning, but does not change the overall meaning of the sentence.",
-      "score": 2
+      "error": "Deletion: 'tôi' at position 0",
+      "reason": "The subject 'tôi' (I) is omitted, which removes the information about who is performing the action. This significantly changes the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

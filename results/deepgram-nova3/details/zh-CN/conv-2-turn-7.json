@@ -2,15 +2,26 @@
   "gold": "美玲 at email dot com。",
   "predicted": "melinemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "melinemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "melinemail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'melinemail' at position 0",
+      "reason": "The expected contains a Chinese character (likely a name), but the actual has an English string 'melinemail' which does not correspond to the original name and changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from the expected name is missing in the actual transcription, resulting in loss of important information (the person's name).",
+      "score": 1
+    }
+  ]
 }

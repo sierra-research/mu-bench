@@ -7,7 +7,7 @@
   "werRefWords": 11,
   "werNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
   "werNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinlerim",
-  "significantWer": 0.18181818181818182,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'dinle' to 'dinlerim' at position 9",
-      "reason": "'dinle' is the imperative form ('listen'), while 'dinlerim' is the first person singular present tense ('I listen'). This changes the subject and the intent of the command, altering the meaning of the sentence.",
+      "reason": "'dinle' is the imperative form ('listen'), while 'dinlerim' is the first person singular present tense ('I listen'). This changes the sentence from a command/request to a statement about oneself, which alters the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'beni' at position 10",
-      "reason": "'beni' means 'me', and its omission removes the object of the command, making the sentence incomplete and changing the meaning significantly.",
+      "reason": "'beni' means 'me', and its omission removes the object of the command/request, making the sentence incomplete and changing the intended meaning.",
       "score": 1
     }
   ]

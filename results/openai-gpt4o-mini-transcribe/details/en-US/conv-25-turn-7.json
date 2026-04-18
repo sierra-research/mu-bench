@@ -1,36 +1,31 @@
 {
   "gold": "Shoo. For this one. I'm thinking. Ah, hold on. Hold on. Hold on. Let me see. Let me see. Man, this dog will not stop. Wooh. It's got to be annoying to hear that dog just snoring this whole day. Alright. It's John dot Brown at email dot com.",
-  "predicted": "Shoot, for this one, I'm thinking, hold on, hold on, let me see, let me see. Man, this dog will not stop. That's got to be annoying to hear that dog just snoring this whole day. All right, is John.Brown at email.com.",
+  "predicted": "Shoot, for this one, I'm thinking, hold on, hold on, hold on, let me see, let me see. Man, this dog will not stop. That's got to be annoying to hear that dog just snoring this whole day. All right, is John.Brown at email.com?",
   "unintelligible": false,
-  "wer": 0.12,
-  "werEdits": 6,
-  "werRefWords": 50,
-  "werNormalizedGold": "shoo for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop it is got to be annoying to hear that dog just snoring this whole day alright it is john dot brown at email dot com",
-  "werNormalizedPredicted": "shoot for this one i am thinking hold on hold on let me see let me see man this dog will not stop that is got to be annoying to hear that dog just snoring this whole day all right is john dot brown at email dot com",
-  "significantWer": 0.0,
+  "wer": 0.08163265306122448,
+  "werEdits": 4,
+  "werRefWords": 49,
+  "werNormalizedGold": "for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop it is got to be annoying to hear that dog just snoring this whole day alright it is john dot brown at email dot com",
+  "werNormalizedPredicted": "shoot for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop that is got to be annoying to hear that dog just snoring this whole day all right is john dot brown at email dot com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 50,
-  "sigWerNormalizedGold": "shoo for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop it is got to be annoying to hear that dog just snoring this whole day alright it is john dot brown at email dot com",
-  "sigWerNormalizedPredicted": "shoot for this one i am thinking hold on hold on let me see let me see man this dog will not stop that is got to be annoying to hear that dog just snoring this whole day all right is john dot brown at email dot com",
+  "totalWordsCount": 49,
+  "sigWerNormalizedGold": "for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop it is got to be annoying to hear that dog just snoring this whole day alright it is john dot brown at email dot com",
+  "sigWerNormalizedPredicted": "shoot for this one i am thinking hold on hold on hold on let me see let me see man this dog will not stop that is got to be annoying to hear that dog just snoring this whole day all right is john dot brown at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'shoo' to 'shoot' at position 0",
-      "reason": "'Shoo' is an interjection to drive something away, while 'shoot' is an exclamation or verb. In this context, the meaning is slightly changed but the intent to start the sentence is similar.",
+      "error": "Insertion: 'shoot' at position 0",
+      "reason": "'Shoot' is an interjection at the start and does not affect the meaning of the rest of the sentence.",
       "score": 2
     },
     {
-      "error": "Deletion: 'hold' at position 11",
-      "reason": "One repetition of 'hold on' is missing, but the overall meaning and intent are unchanged.",
-      "score": 3
+      "error": "Substitution: 'it' to 'that' at position 24",
+      "reason": "Substituting 'it' with 'that' in 'it is got to be annoying' vs 'that is got to be annoying' does not significantly change the meaning of the sentence.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'it' to 'that' at position 25",
-      "reason": "Substituting 'it' with 'that' does not significantly change the meaning of the sentence.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'alright' to 'all' at position 40",
-      "reason": "'Alright' was split into 'all right', which is an acceptable variant and does not change the meaning.",
+      "error": "Substitution: 'alright' to 'all' at position 39",
+      "reason": "'alright' vs 'all right' are equivalent expressions and mean the same thing in this context.",
       "score": 3
     }
   ]

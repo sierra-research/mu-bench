@@ -1,21 +1,26 @@
 {
   "gold": "¿Podría pedir un pago en cuotas de la factura?",
-  "predicted": "¿Podría pedir un pago de cuotas de la factura?",
+  "predicted": "¿Podría hacer un pago de cuotas de la factura?",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "podria pedir un pago en cuotas de la factura",
-  "werNormalizedPredicted": "podria pedir un pago de cuotas de la factura",
-  "significantWer": 0.0,
+  "werNormalizedGold": "podría pedir un pago en cuotas de la factura",
+  "werNormalizedPredicted": "podria hacer un pago de cuotas de la factura",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "podria pedir un pago en cuotas de la factura",
-  "sigWerNormalizedPredicted": "podria pedir un pago de cuotas de la factura",
+  "sigWerNormalizedGold": "podría pedir un pago en cuotas de la factura",
+  "sigWerNormalizedPredicted": "podria hacer un pago de cuotas de la factura",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'podría' to 'podria' at position 0",
+      "reason": "Missing accent on 'podría' is a minor spelling error in Spanish, does not change meaning or pronunciation significantly.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'en' to 'de' at position 4",
-      "reason": "The preposition changes from 'en cuotas' (in installments) to 'de cuotas' (of installments), which slightly alters the meaning but does not derail the overall intent of requesting payment in installments.",
+      "reason": "'en cuotas' (in installments) vs 'de cuotas' (of installments); 'en cuotas' is the correct phrase for paying in installments, while 'de cuotas' is less idiomatic but still understandable. The meaning is only slightly affected.",
       "score": 2
     }
   ]

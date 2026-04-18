@@ -5,23 +5,23 @@
   "wer": 0.125,
   "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "neu ma minh den xin thi ho co gui ca sao ke lan hoa don khong",
-  "werNormalizedPredicted": "nhung ma minh den xin thi ho co ghi ca sao ke lan hoa don khong",
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "nếu mà mình đến xin thì họ có gửi cả sao kê lẫn hóa đơn không",
+  "werNormalizedPredicted": "nhưng mà mình đến xin thì họ có ghi cả sao kê lẫn hóa đơn không",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "neu ma minh den xin thi ho co gui ca sao ke lan hoa don khong",
-  "sigWerNormalizedPredicted": "nhung ma minh den xin thi ho co ghi ca sao ke lan hoa don khong",
+  "sigWerNormalizedGold": "nếu mà mình đến xin thì họ có gửi cả sao kê lẫn hóa đơn không",
+  "sigWerNormalizedPredicted": "nhưng mà mình đến xin thì họ có ghi cả sao kê lẫn hóa đơn không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'neu' to 'nhung' at position 0",
-      "reason": "'neu' (if) and 'nhung' (but) are different conjunctions that change the logical meaning of the sentence, leading to a significant change in meaning.",
+      "error": "Substitution: 'nếu' to 'nhưng' at position 0",
+      "reason": "'nếu' means 'if' and 'nhưng' means 'but'; this changes the logical structure and meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'gui' to 'ghi' at position 8",
-      "reason": "'gui' (send) and 'ghi' (write/record) are different verbs and change the action described in the sentence, but the overall context is still about requesting a document, so the main intent is somewhat preserved.",
-      "score": 2
+      "error": "Substitution: 'gửi' to 'ghi' at position 8",
+      "reason": "'gửi' means 'send' and 'ghi' means 'write/record'; this changes the action being described, which is a significant change in meaning.",
+      "score": 1
     }
   ]
 }

@@ -1,32 +1,37 @@
 {
   "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
-  "predicted": "Öncelikle bana bir takip numarası yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaramı.",
+  "predicted": "Öncelikle bana bir takip tarış yapmak istiyorum ama önce bana bir numaramı verir misin? Takip numaramı?",
   "unintelligible": false,
-  "wer": 0.2777777777777778,
-  "werEdits": 5,
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
   "werRefWords": 18,
   "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
-  "werNormalizedPredicted": "öncelikle bana bir takip numarası yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaramı",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "öncelikle bana bir takip tarış yapmak istiyorum ama önce bana bir numaramı verir misin takip numaramı",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
-  "sigWerNormalizedPredicted": "öncelikle bana bir takip numarası yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaramı",
+  "sigWerNormalizedPredicted": "öncelikle bana bir takip tarış yapmak istiyorum ama önce bana bir numaramı verir misin takip numaramı",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kredi' to 'takip' at position 3",
-      "reason": "'kredi kartı limit artışı' (credit card limit increase) is replaced with 'takip numarası' (tracking number), which completely changes the intent and meaning of the request.",
+      "reason": "'kredi' (credit) and 'takip' (tracking) are completely different concepts, changing the meaning of the request from a credit card limit increase to a tracking action.",
       "score": 1
     },
     {
       "error": "Deletion: 'limit' at position 5",
-      "reason": "Omitting 'limit' removes a key part of the intended action (limit increase), further derailing the meaning.",
+      "reason": "Omitting 'limit' removes the specific request for a limit increase, making the sentence less clear and changing the intent.",
       "score": 1
     },
     {
+      "error": "Substitution: 'öncelikle' to 'önce' at position 10",
+      "reason": "'öncelikle' (first of all) and 'önce' (before) are similar in meaning and do not significantly change the intent of the sentence.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'numaranı' to 'numaramı' at position 17",
-      "reason": "Changing 'numaranı' (your number) to 'numaramı' (my number) alters the reference, but the overall request is still understandable.",
-      "score": 2
+      "reason": "'numaranı' (your number) vs. 'numaramı' (my number) changes the subject of the request, which can cause confusion about whose number is being referred to.",
+      "score": 1
     }
   ]
 }

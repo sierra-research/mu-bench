@@ -1,16 +1,27 @@
 {
   "gold": "Tôi dùng Android. Tôi không thấy được gì hết.",
-  "predicted": "tôi dùng Android, tôi không thấy gì được hết",
+  "predicted": "Tôi dùng Android, tôi không thấy gì được hết.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "tôi dùng android tôi không thấy được gì hết",
-  "werNormalizedPredicted": "tôi dùng android tôi không thấy được gì hết",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tôi dùng android tôi không thấy gì được hết",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "tôi dùng android tôi không thấy được gì hết",
-  "sigWerNormalizedPredicted": "tôi dùng android tôi không thấy được gì hết",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi dùng android tôi không thấy gì được hết",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'gì' at position 6",
+      "reason": "The word 'được' is omitted, but the sentence still makes sense and the overall meaning is preserved in Vietnamese. The omission does not significantly change the intent.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'gì' at position 7",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
 }

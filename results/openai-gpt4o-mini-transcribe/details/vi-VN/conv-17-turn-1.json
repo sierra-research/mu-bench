@@ -1,16 +1,22 @@
 {
   "gold": "Bạn đọc đi.",
-  "predicted": "Bạn đọc đi.",
+  "predicted": "Bắt đầu đi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
   "werNormalizedGold": "bạn đọc đi",
-  "werNormalizedPredicted": "bạn đọc đi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "bắt đầu đi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "bạn đọc đi",
-  "sigWerNormalizedPredicted": "bạn đọc đi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "bắt đầu đi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bạn' to 'bắt' at position 0",
+      "reason": "'bạn đọc đi' means 'you read (it)', while 'bắt đầu đi' means 'start (go ahead)'. The substitution changes the meaning of the instruction entirely, resulting in a significant change in intent.",
+      "score": 1
+    }
+  ]
 }

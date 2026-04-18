@@ -7,7 +7,7 @@
   "werRefWords": 19,
   "werNormalizedGold": "okay i guess can you try to transfer me again to a live agent give me one more shot",
   "werNormalizedPredicted": "okay i guess i get can you try to transfer me again to a live agent and give it one more shot",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "okay i guess can you try to transfer me again to a live agent give me one more shot",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'i' at position 3",
-      "reason": "The insertion of 'i' and 'get' (as in 'i get') slightly interrupts the flow but does not change the overall meaning of the sentence, which is a request to be transferred to a live agent.",
+      "reason": "The insertion of 'i' before 'get' creates a minor grammatical disruption but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: 'and' at position 14",
-      "reason": "The addition of 'and' before 'give it one more shot' does not change the meaning of the sentence; it is a minor grammatical difference.",
-      "score": 3
+      "reason": "The addition of 'and' before 'give' slightly changes the flow but does not alter the intent or meaning of the sentence.",
+      "score": 2
     },
     {
       "error": "Substitution: 'me' to 'it' at position 15",
-      "reason": "Changing 'give me one more shot' to 'give it one more shot' slightly shifts the focus from the speaker to the process, but the intent of asking for another chance remains clear. This is a minor error.",
+      "reason": "Changing 'give me one more shot' to 'give it one more shot' shifts the recipient of the action, but in context, the meaning is still clear and the request is understandable.",
       "score": 2
     }
   ]

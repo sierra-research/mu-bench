@@ -2,20 +2,30 @@
   "gold": "C N 2 47.",
   "predicted": "Sí, no hay dos conectas ahí",
   "unintelligible": false,
-  "wer": 1.2,
+  "wer": 1.0,
   "werEdits": 6,
-  "werRefWords": 5,
-  "werNormalizedGold": "c n two forty seven",
-  "werNormalizedPredicted": "si no hay dos conectas ahi",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n two forty seven",
-  "sigWerNormalizedPredicted": "si no hay dos conectas ahi",
+  "werRefWords": 6,
+  "werNormalizedGold": "c n dos cuarenta y siete",
+  "werNormalizedPredicted": "sí no hay dos conectas ahí",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n dos cuarenta y siete",
+  "sigWerNormalizedPredicted": "sí no hay dos conectas ahí",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'no' at position 0",
-      "reason": "The actual transcription is in a different language (Spanish) and does not correspond at all to the expected spelled-out sequence and numbers. This completely changes the meaning and makes the transcription incoherent with the expected content.",
+      "reason": "'sí' is an extra word not present in the expected transcription and changes the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cuarenta' to 'conectas' at position 3",
+      "reason": "'c' is a letter, possibly part of a code or identifier, while 'no' is a word with a completely different meaning, derailing the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'siete' at position 5",
+      "reason": "'cuarenta' (forty) is a number, while 'conectas' (you connect) is a verb, which changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

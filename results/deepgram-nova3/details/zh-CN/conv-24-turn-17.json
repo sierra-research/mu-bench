@@ -2,21 +2,31 @@
   "gold": "中国北京市海淀区北京路 1 2 3号。",
   "predicted": "中国北京市海定区北京路一百二十三号。",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werEdits": 1,
-  "werRefWords": 17,
-  "werNormalizedGold": "中国北京市海淀区北京路一百二十三号",
-  "werNormalizedPredicted": "中国北京市海定区北京路一百二十三号",
-  "significantWer": 0.058823529411764705,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "中国北京市海淀区北京路 一 二 三号",
+  "werNormalizedPredicted": "中国北京市海定区北京路 一 百 二 十 三号",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "中 国 北 京 市 海 淀 区 北 京 路 一 二 三 号",
   "sigWerNormalizedPredicted": "中 国 北 京 市 海 定 区 北 京 路 一 百 二 十 三 号",
   "sigWerErrors": [
     {
       "error": "Substitution: '淀' to '定' at position 6",
-      "reason": "'海淀区' and '海定区' are different place names; '海淀区' is a real district in Beijing, while '海定区' does not exist. This changes the address to an incorrect or non-existent location, which is a significant error.",
+      "reason": "'海淀区' and '海定区' are both place names, but '海淀区' is a real district in Beijing, while '海定区' does not exist. This changes the address to an incorrect or non-existent location.",
       "score": 1
+    },
+    {
+      "error": "Insertion: '百' at position 12",
+      "reason": "The expected address is '一二三号' (123), but the actual is '一百二十三号' (123). Both represent the same number, just in different formats (digit-by-digit vs. full number).",
+      "score": 3
+    },
+    {
+      "error": "Insertion: '十' at position 13",
+      "reason": "Same as above, '一二三' and '一百二十三' both mean 123, just different ways of saying the number. No change in meaning.",
+      "score": 3
     }
   ]
 }

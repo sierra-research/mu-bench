@@ -2,20 +2,25 @@
   "gold": "C N 5 3 30.",
   "predicted": "C, en, 5 3 3.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
-  "werRefWords": 5,
-  "werNormalizedGold": "c n five three thirty",
-  "werNormalizedPredicted": "c n five three three",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n five three thirty",
-  "sigWerNormalizedPredicted": "c n five three three",
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "c n năm ba ba mươi",
+  "werNormalizedPredicted": "c en năm ba ba",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n năm ba ba mươi",
+  "sigWerNormalizedPredicted": "c en năm ba ba",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'thirty' to 'three' at position 4",
-      "reason": "'Thirty' and 'three' are different numbers, which significantly changes the meaning of the sequence, especially in contexts like codes or numbers.",
+      "error": "Substitution: 'n' to 'en' at position 1",
+      "reason": "'n' and 'en' are phonetically similar, but in a spelled-out context, a single letter difference can change the meaning or intended letter, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 5",
+      "reason": "Omitting 'mươi' (which means 'ten' in Vietnamese numbers) changes the number being stated, resulting in a significant change in meaning.",
       "score": 1
     }
   ]

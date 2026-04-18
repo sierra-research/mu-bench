@@ -1,16 +1,27 @@
 {
   "gold": "嗯对的。",
-  "predicted": "嗯,对的。",
+  "predicted": "Hm, duido.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "对的",
-  "werNormalizedPredicted": "对的",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "duido",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "对 的",
-  "sigWerNormalizedPredicted": "对 的",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "duido",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '对' to 'duido' at position 0",
+      "reason": "The expected word is in Chinese ('对'), but the actual transcription is a romanized string ('duido'), which is not a correct representation or transliteration. This makes the meaning unclear or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 1",
+      "reason": "The word '的' is missing in the actual transcription, which omits part of the expected phrase and can change the meaning or make it incomplete.",
+      "score": 1
+    }
+  ]
 }

@@ -5,22 +5,22 @@
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "anna kredi kartimin limitini artirmak istiyorum",
-  "werNormalizedPredicted": "anna kredi kartinin limitini atmak istiyorum",
-  "significantWer": 0.16666666666666666,
+  "werNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
+  "werNormalizedPredicted": "anna kredi kartının limitini atmak istiyorum",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "anna kredi kartimin limitini artirmak istiyorum",
-  "sigWerNormalizedPredicted": "anna kredi kartinin limitini atmak istiyorum",
+  "sigWerNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
+  "sigWerNormalizedPredicted": "anna kredi kartının limitini atmak istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kartimin' to 'kartinin' at position 2",
-      "reason": "'kartimin' (my card) vs 'kartinin' (your card) changes the ownership, but the overall intent of the sentence (requesting a limit change) is still clear.",
+      "error": "Substitution: 'kartımın' to 'kartının' at position 2",
+      "reason": "'kartımın' means 'my card's' while 'kartının' means 'your card's'; this changes the owner of the card but does not derail the overall intent of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'artirmak' to 'atmak' at position 4",
-      "reason": "'artirmak' means 'to increase', while 'atmak' means 'to throw'. This changes the meaning of the request entirely, making the sentence incoherent in context.",
+      "error": "Substitution: 'artırmak' to 'atmak' at position 4",
+      "reason": "'artırmak' means 'to increase' while 'atmak' means 'to throw'; this completely changes the meaning of the sentence from increasing the limit to throwing the limit, making the sentence incoherent.",
       "score": 1
     }
   ]

@@ -1,32 +1,32 @@
 {
   "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "predicted": "Ya e-posta adresime iletişmemiş sorular yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
+  "predicted": "Ya e-posta adresime erişmemiş sorular yok da yani farklı bir metod var mı acaba bana fatura göndermeniz için?",
   "unintelligible": false,
-  "wer": 0.21052631578947367,
+  "wer": 0.2222222222222222,
   "werEdits": 4,
-  "werRefWords": 19,
-  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "werNormalizedPredicted": "ya e posta adresime iletişmemiş sorular yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "significantWer": 0.05263157894736842,
+  "werRefWords": 18,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "e posta adresime erişmemiş sorular yok da farklı bir metod var mı acaba bana fatura göndermeniz için",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "sigWerNormalizedPredicted": "ya e posta adresime iletişmemiş sorular yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "e posta adresime erişmemiş sorular yok da farklı bir metod var mı acaba bana fatura göndermeniz için",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'ya' at position 0",
-      "reason": "'ya' is an interjection that does not change the meaning of the sentence; it is a minor addition for emphasis or tone.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'erişimim' to 'iletişmemiş' at position 3",
-      "reason": "'erişimim' means 'my access', while 'iletişmemiş' means 'has not communicated'; this substitution changes the meaning significantly and makes the sentence incoherent.",
+      "error": "Substitution: 'erişimim' to 'erişmemiş' at position 3",
+      "reason": "'erişimim' means 'my access', while 'erişmemiş' means 'has not accessed' or 'not accessed'. This changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'sıralar' at position 5",
-      "reason": "'şu sıralar' means 'these days' or 'currently', and omitting 'sıralar' slightly reduces temporal clarity but does not derail the overall meaning.",
+      "reason": "'şu sıralar' means 'these days' or 'currently', and its omission removes important temporal context but does not completely derail the meaning.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'metot' to 'metod' at position 10",
+      "reason": "'metot' and 'metod' are spelling variants of the same word in Turkish, both meaning 'method'.",
+      "score": 3
     }
   ]
 }

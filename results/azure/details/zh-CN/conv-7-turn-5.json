@@ -5,22 +5,22 @@
   "wer": 0.6666666666666666,
   "werEdits": 4,
   "werRefWords": 6,
-  "werNormalizedGold": "c n three seven eight nine",
+  "werNormalizedGold": "c n 三 七 八 九",
   "werNormalizedPredicted": "c n sensi bajro",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n three seven eight nine",
+  "sigWerNormalizedGold": "c n 三 七 八 九",
   "sigWerNormalizedPredicted": "c n sensi bajro",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'three' to 'sensi' at position 2",
-      "reason": "'sensi' is a completely different word from 'three', which is a digit in a sequence. This substitution makes the sequence of numbers and letters incoherent and unrecognizable as the intended sequence.",
+      "error": "Substitution: '三' to 'sensi' at position 2",
+      "reason": "'三' is the Chinese character for 'three', while 'sensi' is not a correct transcription or translation and is unrelated in meaning, causing a significant error in the sequence of numbers.",
       "score": 1
     },
     {
-      "error": "Deletion: 'eight' at position 4",
-      "reason": "The digit 'eight' is missing from the sequence, making the transcription incomplete and incorrect for contexts where the exact sequence is important (e.g., codes, numbers).",
+      "error": "Deletion: '八' at position 4",
+      "reason": "'八' (eight) is missing from the actual transcription, which disrupts the sequence of numbers and is a significant error.",
       "score": 1
     }
   ]

@@ -1,32 +1,27 @@
 {
   "gold": "Tôi làm mất thẻ. Tôi xin cấp lại, muốn hỏi chừng nào có?",
-  "predicted": "Ờm, tôi nghĩ là mất cái thẻ. Tôi xin cấp lại. Muốn hỏi coi là chừng nào có",
+  "predicted": "Ờm, tôi làm mất cái thẻ. Tôi xin cấp lại. Muốn hỏi coi là chừng nào có?",
   "unintelligible": false,
-  "wer": 0.38461538461538464,
-  "werEdits": 5,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
-  "werNormalizedGold": "toi lam mat the toi xin cap lai muon hoi chung nao co",
-  "werNormalizedPredicted": "toi nghi la mat cai the toi xin cap lai muon hoi coi la chung nao co",
-  "significantWer": 0.15384615384615385,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
+  "werNormalizedPredicted": "tôi làm mất cái thẻ tôi xin cấp lại muốn hỏi coi là chừng nào có",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "toi lam mat the toi xin cap lai muon hoi chung nao co",
-  "sigWerNormalizedPredicted": "toi nghi la mat cai the toi xin cap lai muon hoi coi la chung nao co",
+  "sigWerNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
+  "sigWerNormalizedPredicted": "tôi làm mất cái thẻ tôi xin cấp lại muốn hỏi coi là chừng nào có",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'lam' to 'la' at position 1",
-      "reason": "'nghi' (think) adds a new meaning, changing the intent from 'I lost my card' to 'I think I lost my card', which alters the certainty and meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'cai' at position 3",
-      "reason": "'lam' (do/make) is replaced by 'la' (is), which changes the grammatical structure and meaning of the phrase, making it less clear.",
-      "score": 1
+      "error": "Insertion: 'cái' at position 3",
+      "reason": "'cái' is a classifier in Vietnamese and its insertion does not change the meaning of the sentence in this context.",
+      "score": 3
     },
     {
       "error": "Insertion: 'coi' at position 10",
-      "reason": "'cai' (classifier for objects) is a minor addition that does not significantly change the meaning of the sentence.",
-      "score": 2
+      "reason": "'coi' in this context is a filler word meaning 'see' or 'check', and its insertion does not alter the overall meaning of the sentence.",
+      "score": 3
     }
   ]
 }

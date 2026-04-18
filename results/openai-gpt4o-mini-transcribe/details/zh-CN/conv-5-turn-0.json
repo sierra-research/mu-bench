@@ -2,15 +2,21 @@
   "gold": "我正在等待换我的卡，想知道它的状态。",
   "predicted": "我正在等待欢乐的卡,想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
   "werNormalizedGold": "我正在等待换我的卡 想知道它的状态",
-  "werNormalizedPredicted": "我正在等待换我的卡 想知道它的状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我正在等待欢乐的卡 想知道它的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 等 待 欢 乐 的 卡 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '换' to '欢' at position 5",
+      "reason": "'换' means 'to change' or 'replace', while '欢' means 'happy' or 'joy'. This substitution changes the meaning of the sentence from waiting to change a card to waiting for a happy card, which derails the intended meaning.",
+      "score": 1
+    }
+  ]
 }

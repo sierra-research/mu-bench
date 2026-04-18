@@ -1,26 +1,26 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Email là minh.trầna@gmail.com, số điện thoại +84 91 1234 567",
+  "predicted": "Email là minh.trầna@gmail.com, số điện thoại +84 91 123456789.",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
+  "wer": 0.07407407407407407,
   "werEdits": 2,
-  "werRefWords": 26,
-  "werNormalizedGold": "email là minh trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "email là minh trần a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy",
-  "significantWer": 0.07692307692307693,
+  "werRefWords": 27,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là minh chấm trần a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám chín",
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 26,
-  "sigWerNormalizedGold": "email là minh trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "email là minh trần a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy",
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là minh chấm trần a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám chín",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'gmail' at position 6",
-      "reason": "The domain part of the email address is changed from 'email' to 'gmail', which is a significant error as it changes the actual email address and could result in failed communication.",
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "The domain part of the email address is changed from 'email' to 'gmail', which would result in a completely different email address and could cause communication to fail.",
       "score": 1
     },
     {
-      "error": "Deletion: 'tám' at position 25",
-      "reason": "The last digit of the phone number is missing, which makes the phone number incomplete and unusable. This is a significant error.",
+      "error": "Insertion: 'chín' at position 27",
+      "reason": "An extra digit is added to the phone number, making it incorrect and potentially unreachable.",
       "score": 1
     }
   ]

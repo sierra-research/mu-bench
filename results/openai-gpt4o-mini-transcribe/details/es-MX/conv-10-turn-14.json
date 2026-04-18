@@ -2,15 +2,31 @@
   "gold": "Urión 30, col. Tlatilco.",
   "predicted": "Orion, Treinta, Coltratlilco",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
-  "werNormalizedGold": "urion treinta col tlatilco",
-  "werNormalizedPredicted": "urion treinta col tlatilco",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "urión treinta col tlatilco",
+  "werNormalizedPredicted": "orion treinta coltratlilco",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "urion treinta col tlatilco",
-  "sigWerNormalizedPredicted": "urion treinta col tlatilco",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "urión treinta col tlatilco",
+  "sigWerNormalizedPredicted": "orion treinta coltratlilco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'urión' to 'orion' at position 0",
+      "reason": "'urión' and 'orion' are different proper nouns; this changes the meaning significantly, especially if these are names or locations.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'col' to 'coltratlilco' at position 2",
+      "reason": "'coltratlilco' appears to be a concatenation of 'col' and 'tlatilco', which merges two distinct words into one, making the meaning unclear and potentially confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tlatilco' at position 3",
+      "reason": "'tlatilco' is omitted as a separate word, which removes a key part of the address or phrase, significantly altering the meaning.",
+      "score": 1
+    }
+  ]
 }

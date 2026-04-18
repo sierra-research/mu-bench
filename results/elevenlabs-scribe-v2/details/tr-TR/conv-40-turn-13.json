@@ -2,20 +2,35 @@
   "gold": "Sonu Gmail değil email, G yok. Sadece email nokta com.",
   "predicted": "Sonuç Gmail değil, emaill. G yok, sadece emaill.com",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
-  "werRefWords": 9,
-  "werNormalizedGold": "sonu gmail değil email g yok sadece email com",
-  "werNormalizedPredicted": "sonuç gmail değil email g yok sadece email com",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "sonu gmail değil email g yok sadece email com",
-  "sigWerNormalizedPredicted": "sonuç gmail değil email g yok sadece email com",
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "sonu gmail değil email g yok sadece email nokta com",
+  "werNormalizedPredicted": "sonuç gmail değil emaill g yok sadece emaill com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "sonu gmail değil email g yok sadece email nokta com",
+  "sigWerNormalizedPredicted": "sonuç gmail değil emaill g yok sadece emaill com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'sonu' to 'sonuç' at position 0",
-      "reason": "'sonu' (meaning 'end' or 'ending') and 'sonuç' (meaning 'result') are different words with different meanings, which could change the intended meaning of the sentence.",
+      "reason": "'sonu' means 'ending' or 'the end', while 'sonuç' means 'result'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'emaill' at position 3",
+      "reason": "'emaill' is a minor misspelling of 'email', does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'emaill' at position 7",
+      "reason": "'emaill' is a minor misspelling of 'email', does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 8",
+      "reason": "Missing 'nokta' (dot) changes the structure of the email address, which can make it invalid or confusing.",
       "score": 1
     }
   ]

@@ -2,26 +2,21 @@
   "gold": "你有什么问题呀，我说得很。",
   "predicted": "有什么问题啊?我说得很",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
-  "werEdits": 2,
-  "werRefWords": 11,
-  "werNormalizedGold": "你 有 什么 问题 呀 我 说 得 很",
-  "werNormalizedPredicted": "有 什么 问题 啊 我 说 得 很",
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 有 什 么 问 题 呀 我 说 得 很",
-  "sigWerNormalizedPredicted": "有 什 么 问 题 啊 我 说 得 很",
+  "wer": 0.1,
+  "werEdits": 1,
+  "werRefWords": 10,
+  "werNormalizedGold": "你有什么问题我说得很",
+  "werNormalizedPredicted": "有什么问题我说得很",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 我 说 得 很",
+  "sigWerNormalizedPredicted": "有 什 么 问 题 我 说 得 很",
   "sigWerErrors": [
     {
       "error": "Deletion: '你' at position 0",
-      "reason": "Omitting the pronoun '你' (you) removes the subject of the sentence, which can significantly affect the meaning and clarity of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '呀' to '啊' at position 6",
-      "reason": "'呀' and '啊' are both sentence-final particles in Chinese and are often used interchangeably to soften the tone or indicate a question. The substitution does not change the overall meaning of the sentence.",
-      "score": 3
+      "reason": "The subject '你' (you) is omitted, but the rest of the sentence still makes sense and the question is understandable in context. The omission does not derail the meaning of the sentence, but it does remove the explicit subject.",
+      "score": 2
     }
   ]
 }

@@ -2,15 +2,21 @@
   "gold": "哎呀你有什么问题啊。",
   "predicted": "哎哟,你有什么问题啊?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "哎呀 你 有 什么 问题 啊",
-  "werNormalizedPredicted": "哎呀 你 有 什么 问题 啊",
-  "significantWer": 0.0,
+  "wer": 0.125,
+  "werEdits": 1,
+  "werRefWords": 8,
+  "werNormalizedGold": "哎呀你有什么问题",
+  "werNormalizedPredicted": "哎哟 你有什么问题",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 啊",
-  "sigWerNormalizedPredicted": "哎 呀 你 有 什 么 问 题 啊",
-  "sigWerErrors": []
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "哎 哟 你 有 什 么 问 题",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '呀' to '哟' at position 1",
+      "reason": "'呀' and '哟' are both interjections used for emphasis or exclamation in Chinese, and substituting one for the other does not change the meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

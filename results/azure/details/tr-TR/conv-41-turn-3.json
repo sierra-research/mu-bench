@@ -7,30 +7,30 @@
   "werRefWords": 18,
   "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
   "werNormalizedPredicted": "öncelikle ben bir kredi kartı gibi tartış yapmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin taksit numaramı",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
   "sigWerNormalizedPredicted": "öncelikle ben bir kredi kartı gibi tartış yapmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin taksit numaramı",
   "sigWerErrors": [
     {
       "error": "Substitution: 'bana' to 'ben' at position 1",
-      "reason": "'bana' means 'to me', while 'ben' means 'I'; this changes the subject of the sentence and affects the meaning, but the overall intent is still somewhat clear.",
-      "score": 2
+      "reason": "'bana' means 'to me', while 'ben' means 'I'; this changes the subject and meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Substitution: 'limit' to 'gibi' at position 5",
-      "reason": "'limit' (limit) is replaced with 'gibi' (like/as), which changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "reason": "'limit' (limit) is replaced with 'gibi' (like/as), which makes the sentence incoherent and changes the intended meaning.",
       "score": 1
     },
     {
       "error": "Insertion: 'yapmak' at position 8",
-      "reason": "Repeating 'yapmak' (to do/make) is a minor redundancy and does not change the overall meaning.",
+      "reason": "Repeating 'yapmak' (to do/make) is redundant but does not significantly change the meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'takip' to 'taksit' at position 16",
-      "reason": "'takip' (tracking) and 'taksit' (installment) are completely different concepts; this substitution changes the meaning of the request.",
+      "reason": "'takip' (tracking) and 'taksit' (installment) are completely different concepts, which changes the meaning of the request.",
       "score": 1
     }
   ]

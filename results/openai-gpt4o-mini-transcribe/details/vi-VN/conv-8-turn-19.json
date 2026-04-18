@@ -1,21 +1,26 @@
 {
   "gold": "Thôi như vậy được rồi.",
-  "predicted": "ờ thôi như vậy đi thôi.",
+  "predicted": "ờ tôi như vậy đi thôi.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
   "werNormalizedGold": "thôi như vậy được rồi",
-  "werNormalizedPredicted": "thôi như vậy đi thôi",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tôi như vậy đi thôi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "thôi như vậy được rồi",
-  "sigWerNormalizedPredicted": "thôi như vậy đi thôi",
+  "sigWerNormalizedPredicted": "tôi như vậy đi thôi",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'thôi' to 'tôi' at position 0",
+      "reason": "'thôi' means 'stop' or 'that's enough', while 'tôi' means 'I' or 'me'. This changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'được' to 'đi' at position 3",
-      "reason": "'được rồi' means 'that's enough' or 'that's fine', while 'đi thôi' means 'let's go'. This substitution changes the intent and meaning of the sentence significantly.",
+      "reason": "'được' means 'can' or 'okay', while 'đi' means 'go'. This changes the intent of the sentence, making it incoherent compared to the original meaning.",
       "score": 1
     }
   ]

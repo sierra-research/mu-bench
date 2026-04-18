@@ -1,16 +1,27 @@
 {
   "gold": "是妹玲 at email dot com。",
-  "predicted": "shimeiling@email.com",
+  "predicted": "shimeiing@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "shimeiling at email dot com",
-  "werNormalizedPredicted": "shimeiling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "shimeiling at email dot com",
-  "sigWerNormalizedPredicted": "shimeiling at email dot com",
-  "sigWerErrors": []
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是妹玲 at email dot com",
+  "werNormalizedPredicted": "shimeiing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 妹 玲 at email dot com",
+  "sigWerNormalizedPredicted": "shimeiing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shimeiing' at position 0",
+      "reason": "The expected contains Chinese characters representing a name, while the actual has an English transliteration that does not accurately represent the original name. This is a significant error as it changes the identity being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '妹' at position 1",
+      "reason": "A character from the name is missing in the actual transcription, which alters the intended name and could lead to incorrect identification. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "那我的姓，姓名呢？",
   "predicted": "那我的singing，呃，singing呢？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "那 我的 姓 姓名 呢",
-  "werNormalizedPredicted": "那 我的 姓 姓名 呢",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "那我的姓姓名呢",
+  "werNormalizedPredicted": "那我的singing singing呢",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "那 我 的 姓 姓 名 呢",
-  "sigWerNormalizedPredicted": "那 我 的 姓 姓 名 呢",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "那 我 的 singing singing 呢",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to 'singing' at position 3",
+      "reason": "The word '姓' (surname) is replaced with 'singing', which is a completely different word in a different language, making the sentence incoherent and changing the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '名' at position 5",
+      "reason": "The word '名' (name) is missing, which removes important information from the sentence and makes it incomplete.",
+      "score": 1
+    }
+  ]
 }

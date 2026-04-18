@@ -1,13 +1,13 @@
 {
   "gold": "Thank you. Have a good day.",
-  "predicted": "Okay, I have to try.",
+  "predicted": "Okay, I have to try",
   "unintelligible": false,
   "wer": 0.8333333333333334,
   "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "thank you have a good day",
   "werNormalizedPredicted": "okay i have to try",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "thank you have a good day",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'thank' to 'okay' at position 0",
-      "reason": "'Thank you' is an expression of gratitude, while 'okay' is an acknowledgment or agreement. The substitution changes the intent and meaning of the sentence.",
+      "reason": "'Thank' is an expression of gratitude, while 'okay' is an acknowledgment or agreement; this changes the intent and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'a' to 'to' at position 3",
-      "reason": "'Have a good day' is a farewell wish, while 'have to try' is an unrelated phrase. The substitution changes the meaning significantly.",
+      "reason": "'A' is an article, while 'to' is a preposition; this substitution disrupts the grammatical structure and meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'day' at position 5",
-      "reason": "Omitting 'day' removes the completion of the farewell phrase, making the sentence incomplete and changing its meaning.",
+      "reason": "Omitting 'day' removes the object of the farewell phrase, making the sentence incomplete and changing its meaning.",
       "score": 1
     }
   ]

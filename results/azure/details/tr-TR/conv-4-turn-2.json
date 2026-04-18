@@ -2,15 +2,21 @@
   "gold": "C N 662. 6 6 2.",
   "predicted": "CN 662 662.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 8,
-  "werNormalizedGold": "c n six six two six six two",
-  "werNormalizedPredicted": "c n six six two six six two",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "c n six six two six six two",
-  "sigWerNormalizedPredicted": "c n six six two six six two",
-  "sigWerErrors": []
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "c n altı yüz altmış iki altı altı iki",
+  "werNormalizedPredicted": "c n altı yüz altmış iki altı yüz altmış iki",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "c n altı yüz altmış iki altı altı iki",
+  "sigWerNormalizedPredicted": "c n altı yüz altmış iki altı yüz altmış iki",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'altı' to 'altmış' at position 7",
+      "reason": "The insertion of 'yüz' (hundred) changes the numeric value being transcribed, which is significant in a sequence of numbers.",
+      "score": 1
+    }
+  ]
 }

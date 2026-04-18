@@ -1,27 +1,27 @@
 {
   "gold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
-  "predicted": "Hayır son rakam yanlış oldu. 67-68 olacak sonu. 67 olacak pardon 68 dediniz siz 67 ile bitecek.",
+  "predicted": "Hayır son rakam yanlış oldu. 67-68 olacak sonu. 67 olacak pardon. 68 dediniz siz. 67 ile bitecek.",
   "unintelligible": false,
   "wer": 0.08695652173913043,
   "werEdits": 2,
   "werRefWords": 23,
   "werNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
   "werNormalizedPredicted": "hayır son rakam yanlış oldu altmış yedi altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
-  "significantWer": 0.043478260869565216,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
   "sigWerNormalizedPredicted": "hayır son rakam yanlış oldu altmış yedi altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
   "sigWerErrors": [
     {
       "error": "Substitution: 'değil' to 'yedi' at position 6",
-      "reason": "'değil' means 'not', while 'yedi' means 'seven'; this changes the meaning of the sentence, as the negation is lost and a number is inserted instead, which derails the intended meaning.",
+      "reason": "The word 'değil' (meaning 'not') is replaced with 'yedi' (meaning 'seven'), which changes the meaning of the sentence from 'not sixty' to 'sixty seven', significantly altering the intended message.",
       "score": 1
     },
     {
       "error": "Substitution: 'yedi' to 'sekiz' at position 8",
-      "reason": "'yedi' means 'seven' and 'sekiz' means 'eight'; this changes the specific number referenced, which is important in this context, but does not derail the overall meaning of the sentence.",
-      "score": 2
+      "reason": "The word 'yedi' (seven) is replaced with 'sekiz' (eight), which changes the number being referred to. This is a significant factual error as it alters the specific information being conveyed.",
+      "score": 1
     }
   ]
 }

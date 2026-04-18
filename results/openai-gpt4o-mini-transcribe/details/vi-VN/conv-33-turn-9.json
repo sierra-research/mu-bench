@@ -1,26 +1,31 @@
 {
   "gold": "Tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất. Bạn có thể giúp tôi được không Gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải.",
-  "predicted": "Tôi đang cần bản sao sau khi học hóa đơn mới nhất, bạn có giúp tôi được không? Gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải.",
+  "predicted": "Tôi đang cần bạn sao sau khi học hóa đơn mới nhất, bạn có giúp tôi được không? Gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải.",
   "unintelligible": false,
-  "wer": 0.12903225806451613,
-  "werEdits": 4,
+  "wer": 0.16129032258064516,
+  "werEdits": 5,
   "werRefWords": 31,
   "werNormalizedGold": "tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất bạn có thể giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
-  "werNormalizedPredicted": "tôi đang cần bản sao sau khi học hóa đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
-  "significantWer": 0.03225806451612903,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tôi đang cần bạn sao sau khi học hóa đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 31,
   "sigWerNormalizedGold": "tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất bạn có thể giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
-  "sigWerNormalizedPredicted": "tôi đang cần bản sao sau khi học hóa đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
+  "sigWerNormalizedPredicted": "tôi đang cần bạn sao sau khi học hóa đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'bản' to 'bạn' at position 3",
+      "reason": "'bản sao' means 'copy', while 'bạn sao' is not a meaningful phrase and changes the intended meaning of the request.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'sao' to 'sau' at position 5",
-      "reason": "'sao' (meaning 'statement' or 'extract') is replaced by 'sau' (meaning 'after'), which changes the meaning of the request and makes the sentence incoherent in context.",
+      "reason": "'sao kê' means 'statement', while 'sau khi' means 'after', which changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'thể' at position 14",
-      "reason": "Omitting 'thể' ('can') changes the sentence from a polite request ('bạn có thể giúp tôi' = 'can you help me') to a more direct form ('bạn có giúp tôi'), which is less polite but the overall meaning is still understandable.",
+      "reason": "Omitting 'có thể' ('can you') changes the politeness and structure but does not significantly alter the request's meaning.",
       "score": 2
     }
   ]

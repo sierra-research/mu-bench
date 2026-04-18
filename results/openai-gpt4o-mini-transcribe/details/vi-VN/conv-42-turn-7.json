@@ -1,16 +1,27 @@
 {
   "gold": "Số điện thoại là cộng 84.",
-  "predicted": "Số điện thoại là cộng tám mươi tư",
+  "predicted": "Số điện thoại là cần tám mươi tư",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "số điện thoại là cộng tám mươi tư",
-  "werNormalizedPredicted": "số điện thoại là cộng tám mươi tư",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn",
+  "werNormalizedPredicted": "số điện thoại là cần tám mươi tư",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi tư",
-  "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi tư",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn",
+  "sigWerNormalizedPredicted": "số điện thoại là cần tám mươi tư",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'cần' at position 4",
+      "reason": "'cộng' means 'plus' or 'country code' in the context of a phone number, while 'cần' means 'need', which changes the meaning of the sentence and makes it incoherent in this context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 7",
+      "reason": "'bốn' and 'tư' both mean 'four' in Vietnamese, and are interchangeable in this context, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

@@ -2,15 +2,31 @@
   "gold": "Tôi muốn đổi địa chỉ giao thẻ tới nhà. Tôi muốn đổi địa chỉ nhận thẻ.",
   "predicted": "Tôi muốn đổi cái địa chỉ mà giao thẻ tới nhà, tôi muốn đổi cái địa chỉ nhận thẻ.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1875,
+  "werEdits": 3,
   "werRefWords": 16,
   "werNormalizedGold": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận thẻ",
-  "werNormalizedPredicted": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận thẻ",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tôi muốn đổi cái địa chỉ mà giao thẻ tới nhà tôi muốn đổi cái địa chỉ nhận thẻ",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận thẻ",
-  "sigWerNormalizedPredicted": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận thẻ",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi muốn đổi cái địa chỉ mà giao thẻ tới nhà tôi muốn đổi cái địa chỉ nhận thẻ",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'cái' at position 3",
+      "reason": "'cái' is a classifier in Vietnamese and its insertion does not change the meaning of the sentence in this context.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'mà' at position 5",
+      "reason": "The word 'mà' is a discourse particle here and its insertion does not significantly alter the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 12",
+      "reason": "Again, 'cái' is a classifier and its presence does not change the intended meaning in this context.",
+      "score": 2
+    }
+  ]
 }

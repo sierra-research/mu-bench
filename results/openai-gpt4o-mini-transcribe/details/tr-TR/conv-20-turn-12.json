@@ -1,16 +1,27 @@
 {
   "gold": "Tabii. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "predicted": "Tabii, artı dokuz sıfır bir, iki, üç, sıfır dokuz, dört, beş, altı, yedi.",
+  "predicted": "Tabii. Artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
-  "werNormalizedGold": "tabii arti dokuz sifir bir iki uc sifir dokuz dort bes alti yedi",
-  "werNormalizedPredicted": "tabii arti dokuz sifir bir iki uc sifir dokuz dort bes alti yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tabii artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedPredicted": "tabii artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "tabii arti dokuz sifir bir iki uc sifir dokuz dort bes alti yedi",
-  "sigWerNormalizedPredicted": "tabii arti dokuz sifir bir iki uc sifir dokuz dort bes alti yedi",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tabii artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedPredicted": "tabii artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 2",
+      "reason": "'doksan' means 'ninety' and 'dokuz' means 'nine' in Turkish; substituting these changes the number entirely, which is a significant error for a sequence like a phone number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sıfır' at position 8",
+      "reason": "Omitting a digit in a number sequence (here, 'sıfır'/'zero') alters the entire number, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

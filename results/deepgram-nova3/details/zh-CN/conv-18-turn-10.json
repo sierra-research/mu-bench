@@ -2,20 +2,25 @@
   "gold": "不对，我的名字是林梅。",
   "predicted": "我对我的名字是林美。",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "不对 我的名字是林梅",
-  "werNormalizedPredicted": "我对我的名字是林梅",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "我对我的名字是林美",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "不 对 我 的 名 字 是 林 梅",
-  "sigWerNormalizedPredicted": "我 对 我 的 名 字 是 林 梅",
+  "sigWerNormalizedPredicted": "我 对 我 的 名 字 是 林 美",
   "sigWerErrors": [
     {
       "error": "Substitution: '不' to '我' at position 0",
-      "reason": "The word '不' means 'no' or 'not', while '我' means 'I' or 'me'. This substitution completely changes the meaning of the sentence from a negation to a statement about oneself, which derails the intended meaning.",
+      "reason": "The substitution of '不' (no/not) with '我' (I) reverses the meaning of the sentence, making it incoherent and significantly changing the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '梅' to '美' at position 8",
+      "reason": "'梅' (a surname, Mei) is replaced with '美' (beautiful), which changes the name and could cause confusion about the person's identity. This is a significant error for a name.",
       "score": 1
     }
   ]

@@ -5,23 +5,23 @@
   "wer": 0.125,
   "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
-  "werNormalizedPredicted": "daha once bir hesap ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce bir hesap ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
-  "sigWerNormalizedPredicted": "daha once bir hesap ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce bir hesap ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 2",
-      "reason": "'bir' (meaning 'a' or 'one') is inserted, but it does not significantly change the meaning of the sentence. The request for a statement is still clear.",
-      "score": 2
+      "reason": "'bir' (meaning 'a' or 'one') is an optional article in Turkish and does not change the meaning of the sentence in this context.",
+      "score": 3
     },
     {
-      "error": "Substitution: 'istedigim' to 'henuz' at position 6",
-      "reason": "'istedigim' means 'that I wanted', while 'henuz' means 'yet' or 'still'. This changes the nuance of the sentence but the overall meaning (that the statement has not arrived yet) is preserved.",
-      "score": 2
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "'istediğim' means 'that I requested' while 'henüz' means 'yet' or 'still'. This substitution changes the meaning of the sentence, as it removes the information that the statement refers to a previously requested monthly statement and instead adds a temporal aspect. This is a significant change in meaning.",
+      "score": 1
     }
   ]
 }

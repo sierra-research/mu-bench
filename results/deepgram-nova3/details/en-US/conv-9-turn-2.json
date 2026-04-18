@@ -1,16 +1,22 @@
 {
   "gold": "How about one more time?",
-  "predicted": "How about one more time?",
+  "predicted": "About one more time?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
   "werNormalizedGold": "how about one more time",
-  "werNormalizedPredicted": "how about one more time",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "about one more time",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "how about one more time",
-  "sigWerNormalizedPredicted": "how about one more time",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "about one more time",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'how' at position 0",
+      "reason": "The omission of 'how' removes the question form of the sentence, changing it from a question to a statement, which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
 }

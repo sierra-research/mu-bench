@@ -1,21 +1,26 @@
 {
   "gold": "Email nokta com adresime.",
-  "predicted": "imail.com adresine, evet.",
+  "predicted": "imien.com adresine evet.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 4,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "email nokta com adresime",
-  "werNormalizedPredicted": "imail com adresine evet",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "imien nokta com adresine evet",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "email nokta com adresime",
-  "sigWerNormalizedPredicted": "imail com adresine evet",
+  "sigWerNormalizedPredicted": "imien nokta com adresine evet",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'imail' at position 0",
-      "reason": "'imail' is a misspelling of 'email', but the meaning is still clear in context.",
+      "error": "Substitution: 'email' to 'imien' at position 0",
+      "reason": "'email' and 'imien' are completely different words with different meanings; 'imien' is not a variant or misspelling of 'email'.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'adresime' to 'evet' at position 3",
+      "reason": "'adresime' and 'adresine' are similar but have different grammatical endings in Turkish, which changes the meaning (to my address vs. to your address).",
       "score": 2
     }
   ]

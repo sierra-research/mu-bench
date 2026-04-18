@@ -2,15 +2,26 @@
   "gold": "Email là thu chấm trần email chấm com.",
   "predicted": "Email là thu chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "email là thu chấm trần email chấm com",
-  "werNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là thu chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "email là thu chấm trần email chấm com",
-  "sigWerNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là thu chấm trầngmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 4",
+      "reason": "'trầngmail' is a concatenation of 'trần' and 'gmail', which changes the intended meaning and makes the email address incorrect and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 5",
+      "reason": "Omitting 'email' from the address makes the email address incomplete and incorrect, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

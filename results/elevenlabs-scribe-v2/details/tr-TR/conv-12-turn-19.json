@@ -2,21 +2,31 @@
   "gold": "Hayır, posta kodunu sonunda bir de 0 var. 3466 0.",
   "predicted": "Hayır, posta kodunun sonunda bir de sıfır var. Üç bin dört yüz altmış altı sıfır",
   "unintelligible": false,
-  "wer": 0.06666666666666667,
-  "werEdits": 1,
-  "werRefWords": 15,
-  "werNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç bin dört yüz altmış altı sıfır",
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
+  "werRefWords": 13,
+  "werNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç dört altı altı sıfır",
   "werNormalizedPredicted": "hayır posta kodunun sonunda bir de sıfır var üç bin dört yüz altmış altı sıfır",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç bin dört yüz altmış altı sıfır",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç dört altı altı sıfır",
   "sigWerNormalizedPredicted": "hayır posta kodunun sonunda bir de sıfır var üç bin dört yüz altmış altı sıfır",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kodunu' to 'kodunun' at position 2",
-      "reason": "The difference is a minor grammatical inflection (accusative 'kodunu' vs. genitive 'kodunun'). The overall meaning of the sentence remains clear and unchanged.",
+      "reason": "'kodunu' (accusative) and 'kodunun' (possessive) are different grammatical forms, but the meaning in context is not significantly changed.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'bin' at position 9",
+      "reason": "Adding 'bin' (thousand) changes the number from 3466 to 3466 or 3466 to 3466, but in Turkish, 'üç bin dört yüz altmış altı' is 3466, which is a different number than 'üç dört altı altı' (3 4 6 6). This changes the actual postal code, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'altı' to 'altmış' at position 10",
+      "reason": "Adding 'yüz' (hundred) further changes the number, compounding the error in the postal code, which is critical information.",
+      "score": 1
     }
   ]
 }

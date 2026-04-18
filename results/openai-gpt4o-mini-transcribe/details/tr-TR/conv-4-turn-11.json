@@ -1,26 +1,26 @@
 {
   "gold": "Hayır, istemiyorum. İyi günler dilerim.",
-  "predicted": "Hayır, istemiyorum. İgnatlarım.",
+  "predicted": "Haydi semer miyim.",
   "unintelligible": false,
-  "wer": 0.6,
-  "werEdits": 3,
+  "wer": 1.0,
+  "werEdits": 5,
   "werRefWords": 5,
   "werNormalizedGold": "hayır istemiyorum iyi günler dilerim",
-  "werNormalizedPredicted": "hayır istemiyorum ignatlarım",
-  "significantWer": 0.4,
+  "werNormalizedPredicted": "haydi semer miyim",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "hayır istemiyorum iyi günler dilerim",
-  "sigWerNormalizedPredicted": "hayır istemiyorum ignatlarım",
+  "sigWerNormalizedPredicted": "haydi semer miyim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'iyi' to 'ignatlarım' at position 2",
-      "reason": "'ignatlarım' is a completely different word from 'iyi' and does not convey the intended meaning of 'good'. This substitution makes the sentence incoherent.",
+      "error": "Substitution: 'hayır' to 'haydi' at position 0",
+      "reason": "'hayır' means 'no' and 'haydi' means 'come on' in Turkish; this changes the intent and meaning of the sentence completely.",
       "score": 1
     },
     {
       "error": "Deletion: 'günler' at position 3",
-      "reason": "Omitting 'günler' ('days') removes a key part of the phrase 'iyi günler dilerim' ('I wish you a good day'), significantly altering the meaning.",
+      "reason": "'günler' means 'days' and is part of the phrase 'iyi günler' ('good day'); its omission removes the polite closing.",
       "score": 1
     }
   ]

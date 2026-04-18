@@ -2,15 +2,31 @@
   "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
   "predicted": "Um, you know, uh, six, seven, um, l- I, I think that should be fine. Uh, uh, uh, uh, uh, let's try to transfer, transfer me over right now, and if it doesn't work, then it's fine",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 4,
   "werRefWords": 28,
   "werNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
-  "werNormalizedPredicted": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "you know six seven i i think that should be fine let us try to transfer transfer me over right now and if it does not work then it is fine",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 28,
   "sigWerNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
-  "sigWerNormalizedPredicted": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "you know six seven i i think that should be fine let us try to transfer transfer me over right now and if it does not work then it is fine",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'i' at position 5",
+      "reason": "Extra 'i' does not change the meaning of the sentence, just a minor repetition.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'transfer' at position 15",
+      "reason": "Repeating 'transfer' does not change the meaning, just a minor disfluency.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'that' to 'it' at position 25",
+      "reason": "Adding 'then' before 'it is fine' does not change the overall meaning.",
+      "score": 2
+    }
+  ]
 }

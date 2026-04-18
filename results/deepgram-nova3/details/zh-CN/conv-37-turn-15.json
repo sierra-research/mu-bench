@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "junelinget'emendusguard。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 6,
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
-  "werNormalizedPredicted": "君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "junelinget emendusguard",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "junelinget emendusguard",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junelinget' at position 0",
+      "reason": "'junelinget' is a completely different word from '君', which is a Chinese character likely representing a name. The substitution changes the meaning entirely and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "The word 'at' is missing, which is essential for the structure of an email address. Its absence makes the email address format incorrect and the meaning unclear.",
+      "score": 1
+    }
+  ]
 }

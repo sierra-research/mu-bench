@@ -2,15 +2,31 @@
   "gold": "34 56 78.",
   "predicted": "345678",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "thirty four fifty six seventy eight",
-  "werNormalizedPredicted": "thirty four fifty six seventy eight",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "thirty four fifty six seventy eight",
-  "sigWerNormalizedPredicted": "thirty four fifty six seventy eight",
-  "sigWerErrors": []
+  "wer": 0.6666666666666666,
+  "werEdits": 6,
+  "werRefWords": 9,
+  "werNormalizedGold": "treinta y cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "trescientos cuarenta y cinco mil seiscientos setenta y ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "trescientos cuarenta y cinco mil seiscientos setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'treinta' to 'cuarenta' at position 0",
+      "reason": "'Trescientos' (three hundred) is a large number prefix that completely changes the value being stated, making the number much larger than expected.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cuatro' to 'cinco' at position 2",
+      "reason": "'Cuatro' (four) and 'cinco' (five) are different numbers, which changes the meaning of the number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'seis' at position 5",
+      "reason": "'Seis' (six) and 'setenta' (seventy) are different numbers, which changes the meaning of the number sequence.",
+      "score": 1
+    }
+  ]
 }

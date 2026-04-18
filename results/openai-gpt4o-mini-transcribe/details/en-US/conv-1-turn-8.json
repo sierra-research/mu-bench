@@ -1,16 +1,22 @@
 {
   "gold": "Okay. So my phone number is 1 2 1 2 1 2 3 4 5 6 7. 6 7.",
-  "predicted": "Okay, so my phone number is 1-212-123-4567. 67.",
+  "predicted": "Okay, so my phone number is 1-212-123-4567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.10526315789473684,
+  "werEdits": 2,
   "werRefWords": 19,
   "werNormalizedGold": "okay so my phone number is one two one two one two three four five six seven six seven",
-  "werNormalizedPredicted": "okay so my phone number is one two one two one two three four five six seven six seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "okay so my phone number is one two one two one two three four five six seven",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "okay so my phone number is one two one two one two three four five six seven six seven",
-  "sigWerNormalizedPredicted": "okay so my phone number is one two one two one two three four five six seven six seven",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "okay so my phone number is one two one two one two three four five six seven",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'six' at position 17",
+      "reason": "Omitting a digit from a phone number results in an incomplete and incorrect phone number, which is a significant error as it makes the information unusable.",
+      "score": 1
+    }
+  ]
 }

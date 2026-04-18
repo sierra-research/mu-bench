@@ -2,21 +2,26 @@
   "gold": "Tamam baştan alıyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "Baştan Tamam, baştan alıyorum. Artı dokuz sıfır, bir iki üç, sıfır dokuz sıfır, dört beş altı yedi.",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
-  "werRefWords": 16,
-  "werNormalizedGold": "tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "tamam baştan alıyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "werNormalizedPredicted": "baştan tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "tamam baştan alıyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerNormalizedPredicted": "baştan tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerErrors": [
     {
       "error": "Insertion: 'baştan' at position 0",
-      "reason": "The insertion of 'baştan' at the beginning does not change the overall meaning of the sentence, as it simply repeats a word that is already present and does not derail the intent or information conveyed.",
+      "reason": "Adding 'baştan' at the beginning does not change the overall meaning, as it just repeats a word already present in the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 4",
+      "reason": "Inserting 'dokuz' before the number sequence changes the sequence of numbers, which is likely a phone number or code. This alters the intended information significantly.",
+      "score": 1
     }
   ]
 }

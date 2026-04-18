@@ -2,15 +2,26 @@
   "gold": "林美。",
   "predicted": "是林妹。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "林美",
-  "werNormalizedPredicted": "林美",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是林妹",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "林 美",
-  "sigWerNormalizedPredicted": "林 美",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 林 妹",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '是' at position 0",
+      "reason": "The word '是' (meaning 'is' or 'yes') is inserted at the beginning, which changes the sentence from just a name to a statement or affirmation, altering the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to '妹' at position 1",
+      "reason": "'美' (meaning 'beautiful') is substituted with '妹' (meaning 'younger sister'), which changes the meaning of the name and could refer to a different person entirely.",
+      "score": 1
+    }
+  ]
 }

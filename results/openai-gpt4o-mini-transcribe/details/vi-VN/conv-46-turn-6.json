@@ -1,22 +1,32 @@
 {
   "gold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "email là số điện thoại chứ, số điện thoại là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "email là ờ số điện thoại số điện thoại là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
   "wer": 0.3333333333333333,
   "werEdits": 6,
   "werRefWords": 18,
-  "werNormalizedGold": "so dien thoai la cong tam muoi tu chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "email la so dien thoai chu so dien thoai la cong tam muoi tu chin mot mot hai ba bon nam sau bay tam",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là số điện thoại số điện thoại là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "so dien thoai la cong tam muoi tu chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "email la so dien thoai chu so dien thoai la cong tam muoi tu chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là số điện thoại số điện thoại là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
       "error": "Insertion: 'email' at position 0",
-      "reason": "The insertion of 'email' at the beginning changes the meaning of the sentence from providing a phone number to referencing an email, which derails the intended meaning.",
+      "reason": "The insertion of 'email' at the beginning changes the topic from phone number to email, which significantly alters the meaning of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Insertion: 'số' at position 3",
+      "reason": "The repeated phrase 'số điện thoại' is redundant but does not change the overall meaning, just adds repetition.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 7",
+      "reason": "'Bốn' and 'tư' are both used for the number 4 in Vietnamese, so this is a variant with the same meaning.",
+      "score": 3
     }
   ]
 }

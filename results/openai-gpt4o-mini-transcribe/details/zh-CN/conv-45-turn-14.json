@@ -1,16 +1,27 @@
 {
   "gold": "你有什么问题啊？",
-  "predicted": "Niusamawensia?",
+  "predicted": "Niusha mavinziha.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 6,
   "werRefWords": 6,
-  "werNormalizedGold": "你 有 什 么 问 题",
-  "werNormalizedPredicted": "你 有 什 么 问 题",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你有什么问题",
+  "werNormalizedPredicted": "niusha mavinziha",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 有 什 么 问 题",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "niusha mavinziha",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'niusha' at position 0",
+      "reason": "'niusha' is not a correct transcription or transliteration of the Chinese character '你', and the actual transcription is in a different language or is a nonsensical string, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '什' at position 2",
+      "reason": "The word '什' is missing in the actual transcription, which further derails the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

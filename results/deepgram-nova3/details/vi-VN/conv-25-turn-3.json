@@ -2,21 +2,26 @@
   "gold": "À. Email của mình là minh chấm trần a còng Gmail chấm com.",
   "predicted": "Email của mình là ming. Tungmail chấm com",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
-  "werRefWords": 13,
-  "werNormalizedGold": "a email của mình là minh chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "email của mình là minh chấm trần a còng gmail chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "a email của mình là minh chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "email của mình là minh chấm trần a còng gmail chấm com",
+  "wer": 0.5,
+  "werEdits": 6,
+  "werRefWords": 12,
+  "werNormalizedGold": "email của mình là minh chấm trần a còng gmail chấm com",
+  "werNormalizedPredicted": "email của mình là ming tungmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "email của mình là minh chấm trần a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "email của mình là ming tungmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'a' at position 0",
-      "reason": "The word 'a' at the beginning is a minor filler and its omission does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'minh' to 'ming' at position 4",
+      "reason": "'minh' and 'ming' are different names; this changes the email address and could result in a failed email delivery or misidentification.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 6",
+      "reason": "Omitting 'trần' removes a key part of the email address, making the email incorrect and unusable.",
+      "score": 1
     }
   ]
 }

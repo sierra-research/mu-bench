@@ -5,27 +5,27 @@
   "wer": 0.8333333333333334,
   "werEdits": 5,
   "werRefWords": 6,
-  "werNormalizedGold": "evet hazirim lutfen soyleyin evet hazirim",
-  "werNormalizedPredicted": "evet o da unutma lutfen soyleyeyim evet alirim",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "evet hazırım lütfen söyleyin evet hazırım",
+  "werNormalizedPredicted": "evet o da unutma lütfen söyleyeyim evet alırım",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "evet hazirim lutfen soyleyin evet hazirim",
-  "sigWerNormalizedPredicted": "evet o da unutma lutfen soyleyeyim evet alirim",
+  "sigWerNormalizedGold": "evet hazırım lütfen söyleyin evet hazırım",
+  "sigWerNormalizedPredicted": "evet o da unutma lütfen söyleyeyim evet alırım",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'hazirim' to 'unutma' at position 1",
-      "reason": "'o' is an extra word that does not appear in the expected sentence. It does not significantly change the meaning, but it adds unnecessary content.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'soyleyin' to 'soyleyeyim' at position 3",
-      "reason": "Substituting 'hazirim' (I am ready) with 'unutma' (don't forget) changes the meaning of the sentence significantly, as it introduces a new command instead of confirming readiness.",
+      "error": "Substitution: 'hazırım' to 'unutma' at position 1",
+      "reason": "'o' (meaning 'he/she/it' or 'that' in Turkish) is not present in the expected sentence and its addition does not fit the context, making the sentence less coherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'hazirim' to 'alirim' at position 5",
-      "reason": "'soyleyin' (please say/tell) vs 'soyleyeyim' (let me say/tell) changes the direction of the action but the overall context of communication remains. This is a minor error.",
+      "error": "Substitution: 'söyleyin' to 'söyleyeyim' at position 3",
+      "reason": "'hazırım' means 'I am ready', while 'unutma' means 'don't forget'; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hazırım' to 'alırım' at position 5",
+      "reason": "'söyleyin' means 'say (you, plural/formal)', while 'söyleyeyim' means 'let me say'; this changes the subject and intent but the overall meaning is similar in context.",
       "score": 2
     }
   ]

@@ -5,22 +5,22 @@
   "wer": 0.3,
   "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "tabii zeynep nokta arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "werNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
-  "significantWer": 0.1,
+  "werNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "werNormalizedPredicted": "tabii zeynep arslan at pardon çok özür dilerim tekrar edeceğim",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "tabii zeynep nokta arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
+  "sigWerNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon çok özür dilerim tekrar edeceğim",
   "sigWerErrors": [
     {
       "error": "Deletion: 'nokta' at position 2",
-      "reason": "'nokta' (meaning 'dot' or 'point') is omitted, which may be important if this is an email address or similar context. Its absence could cause confusion or loss of information.",
+      "reason": "'nokta' (meaning 'dot' or 'point') is omitted, which may be important if it refers to an email address or username. Its omission could change the meaning or make the information incomplete.",
       "score": 1
     },
     {
-      "error": "Substitution: 'tekrarlayacagim' to 'edecegim' at position 9",
-      "reason": "'tekrar' (meaning 'again' or 'repeat') is inserted, but it is semantically similar to the expected word 'tekrarlayacagim' (I will repeat). This does not significantly change the meaning.",
+      "error": "Substitution: 'tekrarlayacağım' to 'edeceğim' at position 9",
+      "reason": "'tekrar' (meaning 'again' or 'repeat') is inserted, but it is part of the phrase 'tekrar edeceğim' (I will repeat), which is a valid alternative to 'tekrarlayacağım'. The overall meaning is preserved.",
       "score": 3
     }
   ]

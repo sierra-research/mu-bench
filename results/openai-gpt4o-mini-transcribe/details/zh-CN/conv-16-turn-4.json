@@ -1,16 +1,22 @@
 {
   "gold": "A N 0 6 7。",
-  "predicted": "A安零六七",
+  "predicted": "A按零六七",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
   "werNormalizedGold": "a n 零 六 七",
-  "werNormalizedPredicted": "a n 零 六 七",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "a 按 零 六 七",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "a n 零 六 七",
-  "sigWerNormalizedPredicted": "a n 零 六 七",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "a 按 零 六 七",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'n' to '按' at position 1",
+      "reason": "'n' is an English letter, while '按' is a Chinese character with a completely different meaning. In a sequence of spelled-out characters, this substitution makes the sequence incorrect and unrecognizable as intended.",
+      "score": 1
+    }
+  ]
 }

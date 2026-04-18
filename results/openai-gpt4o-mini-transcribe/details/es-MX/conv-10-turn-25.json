@@ -1,16 +1,27 @@
 {
   "gold": "María punto López arroba E M.",
-  "predicted": "maria.lopez@em",
+  "predicted": "maría.lopez@em",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "maria punto lopez arroba e m",
-  "werNormalizedPredicted": "maria punto lopez arroba e m",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "maría punto lópez arroba e m",
+  "werNormalizedPredicted": "maría lopez arroba e m",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "maria punto lopez arroba e m",
-  "sigWerNormalizedPredicted": "maria punto lopez arroba e m",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "maría punto lópez arroba e m",
+  "sigWerNormalizedPredicted": "maría lopez arroba e m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'punto' to 'lopez' at position 1",
+      "reason": "'punto' (dot) is a separator in an email address, while 'lopez' is a surname. Substituting a separator with a name changes the structure and meaning of the email address, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lópez' at position 2",
+      "reason": "Omitting 'lópez' removes a key part of the email address, which would make the address incorrect and unusable. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

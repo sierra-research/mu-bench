@@ -7,7 +7,7 @@
   "werRefWords": 5,
   "werNormalizedGold": "rồi mở rồi mở rồi",
   "werNormalizedPredicted": "m rồi m rồi",
-  "significantWer": 0.6,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "rồi mở rồi mở rồi",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'rồi' to 'm' at position 0",
-      "reason": "'m' is not semantically related to 'rồi', which means 'then' or 'already' in Vietnamese. This substitution makes the sentence incoherent.",
+      "reason": "'m' is not semantically related to 'rồi', which means 'then' in Vietnamese. This substitution makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'mở' at position 1",
-      "reason": "Omitting 'mở' ('open') removes a key action from the sentence, significantly altering the meaning.",
+      "reason": "Omitting 'mở' ('open') removes a key action from the sentence, significantly changing the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'mở' to 'm' at position 3",
-      "reason": "Again, 'm' does not convey the meaning of 'mở' ('open'), resulting in a loss of intended meaning.",
+      "reason": "'m' is not a valid substitution for 'mở' and causes loss of meaning, making the sentence unclear.",
       "score": 1
     }
   ]

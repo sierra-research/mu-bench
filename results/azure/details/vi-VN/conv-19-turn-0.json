@@ -2,15 +2,26 @@
   "gold": "Tôi muốn xin được gia tăng hạn mức thẻ tín dụng.",
   "predicted": "Ờm, tôi muốn à sinh được gia tăng hạn mức hệ tín dụng.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "tôi muốn xin được gia tăng hạn mức thẻ tín dụng",
-  "werNormalizedPredicted": "tôi muốn xin được gia tăng hạn mức thẻ tín dụng",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi muốn sinh được gia tăng hạn mức hệ tín dụng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "tôi muốn xin được gia tăng hạn mức thẻ tín dụng",
-  "sigWerNormalizedPredicted": "tôi muốn xin được gia tăng hạn mức thẻ tín dụng",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi muốn sinh được gia tăng hạn mức hệ tín dụng",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xin' to 'sinh' at position 2",
+      "reason": "'xin' means 'to request' while 'sinh' means 'to give birth' or 'generate'; this changes the meaning of the request and makes the sentence confusing or incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'hệ' at position 8",
+      "reason": "'thẻ' means 'card' (as in credit card), while 'hệ' means 'system'; this substitution changes the object of the sentence and makes it unclear, significantly altering the meaning.",
+      "score": 1
+    }
+  ]
 }

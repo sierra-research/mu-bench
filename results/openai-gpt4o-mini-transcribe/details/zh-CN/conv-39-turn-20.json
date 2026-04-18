@@ -2,21 +2,26 @@
   "gold": "你有什么问题呀？",
   "predicted": "你什么问题啊?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "你 有 什么 问题 呀",
-  "werNormalizedPredicted": "你 有 什么 问题 啊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你有什么问题呀",
+  "werNormalizedPredicted": "你什么问题",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "你 有 什 么 问 题 呀",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题 啊",
+  "sigWerNormalizedPredicted": "你 什 么 问 题",
   "sigWerErrors": [
     {
-      "error": "Substitution: '呀' to '啊' at position 6",
-      "reason": "'呀' and '啊' are both sentence-final particles in Chinese that serve similar pragmatic functions and do not change the meaning of the sentence.",
-      "score": 3
+      "error": "Deletion: '有' at position 1",
+      "reason": "'有' (have) is an important verb in the sentence. Its omission changes the grammatical structure and meaning, making the sentence incomplete.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '呀' at position 6",
+      "reason": "'呀' is a sentence-final particle that adds a softening or questioning tone, but its omission does not change the core meaning of the sentence.",
+      "score": 2
     }
   ]
 }

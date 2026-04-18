@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "merhaba benim banka kartımın süresi dolmuştu yenisini istemiştim ama hala elime ulaşmadı",
   "werNormalizedPredicted": "merhaba benim banka kartımın süresiz olmuştu yenisini istemiştim ama hala yerime ulaşmadı",
-  "significantWer": 0.08333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "merhaba benim banka kartımın süresi dolmuştu yenisini istemiştim ama hala elime ulaşmadı",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'süresi' to 'süresiz' at position 4",
-      "reason": "'Süresi' means 'duration/expiry', while 'süresiz' means 'without duration/perpetual'. This changes the meaning of the sentence significantly, as it implies the card is perpetual instead of expired.",
+      "reason": "'Süresi' means 'duration/expiry', while 'süresiz' means 'without duration/perpetual'. This changes the meaning of the sentence significantly, as it implies the card has no expiry instead of being expired.",
       "score": 1
     },
     {
       "error": "Substitution: 'elime' to 'yerime' at position 10",
-      "reason": "'Elime' means 'to my hand' (i.e., I have received it), while 'yerime' means 'to my place' (i.e., to my location). This changes the meaning but the overall intent (not having received the card) is still understandable.",
+      "reason": "'Elime' means 'to my hand' (i.e., I have not received it), while 'yerime' means 'to my place' (i.e., to my location). The overall intent is similar (not received), but the specific meaning is slightly changed.",
       "score": 2
     }
   ]

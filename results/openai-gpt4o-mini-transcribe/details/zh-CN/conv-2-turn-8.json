@@ -1,31 +1,31 @@
 {
   "gold": "美玲 at email dot com。",
-  "predicted": "Mailin@email.com niyetini de aldı mı?",
+  "predicted": "mailing@email.com ne için daldı mı?",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 6,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "mailin at email dot com niyetini de aldi mi",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "mailing at email dot com ne için daldı mı",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "mailin at email dot com niyetini de aldi mi",
+  "sigWerNormalizedPredicted": "mailing at email dot com ne için daldı mı",
   "sigWerErrors": [
     {
-      "error": "Substitution: '美' to 'mailin' at position 0",
-      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is a romanized word that does not correspond to the original. This changes the identity and meaning significantly.",
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "The expected word is a Chinese name character, but it was replaced with an unrelated English word, completely changing the meaning and identity.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "A character from the expected name is missing, which makes the name incomplete and unrecognizable. This is a significant error for names or email addresses.",
+      "reason": "A key part of the name is missing, which significantly alters the intended email address and identity.",
       "score": 1
     },
     {
-      "error": "Insertion: 'niyetini' at position 6",
-      "reason": "The inserted phrase is in a different language (Turkish) and is unrelated to the expected content, which derails the meaning of the sentence.",
+      "error": "Insertion: 'ne' at position 6",
+      "reason": "Unrelated Turkish words were inserted, making the sentence incoherent and derailing the meaning.",
       "score": 1
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "2 1 2 1 2 3 45 67.",
   "predicted": "2121234567",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "two one two one two three four five six seven",
+  "werNormalizedGold": "two one two one two three forty five sixty seven",
   "werNormalizedPredicted": "two one two one two three four five six seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "two one two one two three four five six seven",
+  "sigWerNormalizedGold": "two one two one two three forty five sixty seven",
   "sigWerNormalizedPredicted": "two one two one two three four five six seven",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'forty' to 'four' at position 6",
+      "reason": "'Forty' and 'four' are different numbers; this changes the intended number sequence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'sixty' to 'six' at position 8",
+      "reason": "'Sixty' and 'six' are different numbers; this alters the intended number sequence and could cause confusion, especially in contexts like phone numbers or codes.",
+      "score": 1
+    }
+  ]
 }

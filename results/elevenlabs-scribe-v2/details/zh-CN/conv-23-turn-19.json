@@ -2,20 +2,25 @@
   "gold": "唉呀，你听到吗？",
   "predicted": "哎呀，你听得懂吗？",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
-  "werNormalizedGold": "哎呀 你听到吗",
-  "werNormalizedPredicted": "哎呀 你听得懂吗",
-  "significantWer": 0.16666666666666666,
+  "werNormalizedGold": "唉呀你听到吗",
+  "werNormalizedPredicted": "哎呀你听得懂吗",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "哎 呀 你 听 到 吗",
+  "sigWerNormalizedGold": "唉 呀 你 听 到 吗",
   "sigWerNormalizedPredicted": "哎 呀 你 听 得 懂 吗",
   "sigWerErrors": [
     {
+      "error": "Substitution: '唉' to '哎' at position 0",
+      "reason": "'唉' and '哎' are both interjections with similar pronunciation and meaning in Chinese, so this does not affect the meaning.",
+      "score": 3
+    },
+    {
       "error": "Substitution: '到' to '懂' at position 4",
-      "reason": "'得' is part of the phrase '听得懂', which means 'can understand by listening'. Its insertion changes the verb structure from 'hear' (听到) to 'understand' (听得懂), altering the meaning of the sentence.",
+      "reason": "'得' is part of the phrase '听得懂', which changes the meaning from 'hear' (听到) to 'understand' (听得懂), altering the intent of the sentence.",
       "score": 1
     }
   ]

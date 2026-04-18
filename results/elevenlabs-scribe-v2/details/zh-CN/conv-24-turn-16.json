@@ -1,16 +1,22 @@
 {
   "gold": "我的住址是中国市北京，我的住址是中国。",
-  "predicted": "我的住址是中国市北京。我的住址是中国。",
+  "predicted": "我的住址是中国是北京，我的住址是中国。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
   "werRefWords": 17,
-  "werNormalizedGold": "我的住址是中国市北京 我的住址是中国",
-  "werNormalizedPredicted": "我的住址是中国市北京 我的住址是中国",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "我的住址是中国市北京我的住址是中国",
+  "werNormalizedPredicted": "我的住址是中国是北京我的住址是中国",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "我 的 住 址 是 中 国 市 北 京 我 的 住 址 是 中 国",
-  "sigWerNormalizedPredicted": "我 的 住 址 是 中 国 市 北 京 我 的 住 址 是 中 国",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 住 址 是 中 国 是 北 京 我 的 住 址 是 中 国",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '市' to '是' at position 7",
+      "reason": "'市' means 'city' and is part of the place name '北京市' (Beijing City), while '是' means 'is' and changes the structure and meaning of the address, making it incoherent and incorrect as an address.",
+      "score": 1
+    }
+  ]
 }

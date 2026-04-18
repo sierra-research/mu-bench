@@ -1,26 +1,26 @@
 {
   "gold": "Lütfen harf harf söylediğimde araya girmezseniz çok sevinirim. Not ediyor musunuz? Not ediyor musunuz? Başlıyorum. Z tamam. Z A Y N E P nokta A R S L A N at email nokta com.",
-  "predicted": "Lütfen harf harf söylediğimde araya girmezseniz çok sevinirim. Not ediyor musunuz? Not ediyor musunuz? Başlıyorum. Z. Tamam. Z. a. y. neep. arslanet. e-mail.com.",
+  "predicted": "Lütfen harf harf söylediğimde araya girmezseniz çok sevinirim. Not ediyor musunuz? Not ediyor musunuz? Başlıyorum. Z, tamam. ZAYNEP.ARSLAINEC.EMAIL.COM",
   "unintelligible": false,
-  "wer": 0.20588235294117646,
-  "werEdits": 7,
+  "wer": 0.11764705882352941,
+  "werEdits": 4,
   "werRefWords": 34,
   "werNormalizedGold": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p nokta a r s l a n at email nokta com",
-  "werNormalizedPredicted": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p arslan at email nokta com",
-  "significantWer": 0.058823529411764705,
+  "werNormalizedPredicted": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p nokta a r s l a i n e c nokta email nokta com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 34,
   "sigWerNormalizedGold": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p nokta a r s l a n at email nokta com",
-  "sigWerNormalizedPredicted": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p arslan at email nokta com",
+  "sigWerNormalizedPredicted": "lütfen harf harf söylediğimde araya girmezseniz çok sevinirim not ediyor musunuz not ediyor musunuz başlıyorum z tamam z a y n e p nokta a r s l a i n e c nokta email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'nokta' to 'arslan' at position 23",
-      "reason": "The expected sequence spells out the email address letter by letter, with 'nokta' (dot) indicating a period before the domain. In the actual, 'arslan' is inserted as a whole word instead of being spelled out, skipping the dot and the individual letters. This changes the format of the email address and could lead to confusion or incorrect transcription of the email.",
+      "error": "Insertion: 'i' at position 29",
+      "reason": "An extra letter 'i' was inserted in the spelled-out email address, which changes the intended spelling and makes the email address incorrect.",
       "score": 1
     },
     {
-      "error": "Deletion: 'a' at position 24",
-      "reason": "The letter 'a' is omitted from the spelled-out sequence of the email address, which could result in an incorrect email address being recorded. In spelled-out sequences, missing a letter is a significant error.",
+      "error": "Substitution: 'at' to 'nokta' at position 30",
+      "reason": "An extra letter 'e' was inserted in the spelled-out email address, further corrupting the intended spelling and making the email address incorrect.",
       "score": 1
     }
   ]

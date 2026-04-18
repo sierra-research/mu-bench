@@ -2,30 +2,40 @@
   "gold": "Tabii. E-posta adresimi kodluyorum. Zonguldak, pardon tekrar başlıyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at işareti, daha sonra Edirne, Manisa, Adana, İstanbul, Lüleburgaz nokta Ceyhan, Ordu, Manisa.",
   "predicted": "Tabii efes posta adresimi kodluyorum Zonguldak, Zonguldak pardon tekrar başlıyorum Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa. Adana, rize, Samsun Lüleburgaz, Adana, Niğde at işareti, daha sonra Edirne, Manisa, Adana, istanbul, lavurgaz. Ceyhan ordu Manisa.",
   "unintelligible": false,
-  "wer": 0.08571428571428572,
-  "werEdits": 3,
+  "wer": 0.14285714285714285,
+  "werEdits": 5,
   "werRefWords": 35,
   "werNormalizedGold": "tabii e posta adresimi kodluyorum zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa nokta adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lüleburgaz nokta ceyhan ordu manisa",
-  "werNormalizedPredicted": "tabii e posta adresimi kodluyorum zonguldak zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lüleburgaz ceyhan ordu manisa",
-  "significantWer": 0.08571428571428572,
-  "majorErrorsCount": 3,
+  "werNormalizedPredicted": "tabii efes posta adresimi kodluyorum zonguldak zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lavurgaz ceyhan ordu manisa",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 35,
   "sigWerNormalizedGold": "tabii e posta adresimi kodluyorum zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa nokta adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lüleburgaz nokta ceyhan ordu manisa",
-  "sigWerNormalizedPredicted": "tabii e posta adresimi kodluyorum zonguldak zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lüleburgaz ceyhan ordu manisa",
+  "sigWerNormalizedPredicted": "tabii efes posta adresimi kodluyorum zonguldak zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lavurgaz ceyhan ordu manisa",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'e' to 'efes' at position 1",
+      "reason": "'e' is a single letter, likely part of a spelled-out email address. 'Efes' is a word (the Turkish spelling alphabet for 'F'), so this changes the intended letter and could result in a completely different email address.",
+      "score": 1
+    },
+    {
       "error": "Insertion: 'zonguldak' at position 6",
-      "reason": "An extra 'zonguldak' is inserted in the email spelling sequence, which could cause confusion in the email address and lead to an incorrect address being communicated.",
+      "reason": "An extra 'zonguldak' (spelling alphabet word for 'Z') is inserted, which would add an extra letter to the email address, significantly altering it.",
       "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 15",
-      "reason": "Omitting 'nokta' (dot) in the email spelling sequence can result in a completely different or invalid email address, as the dot is essential for correct formatting.",
+      "reason": "'Nokta' means 'dot' and is crucial in an email address. Omitting it would make the email address invalid or incorrect.",
       "score": 1
     },
     {
+      "error": "Substitution: 'lüleburgaz' to 'lavurgaz' at position 30",
+      "reason": "Minor misspelling of a spelling alphabet word, but still phonetically similar and likely understandable in context.",
+      "score": 2
+    },
+    {
       "error": "Deletion: 'nokta' at position 31",
-      "reason": "Missing 'nokta' (dot) again in the email spelling sequence can cause the email address to be misinterpreted or invalid, which is a significant error.",
+      "reason": "Omitting 'nokta' (dot) again removes a critical separator in the email address, making it incorrect.",
       "score": 1
     }
   ]

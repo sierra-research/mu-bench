@@ -1,22 +1,27 @@
 {
   "gold": "Hayır adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zaynep, Z A Y N E P ya da Türkçe olarak kodlayayım, Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa.",
-  "predicted": "Hayır, adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zeynep, Z-A-Y-N-E-P ya da Türkçe olarak kodlayayım. Zonguldak, Adana, Yozgat, Niğde, Edirne, Pırasa.",
+  "predicted": "Hayır, adım yine yanlış oldu. Adımı ben kodlamak istiyorum. Zeynep, Z-E-Y-N-E-P ya da Türkçe olarak kodlayayım. Zonguldak, Adana, Yozgat, Niğde, Edirne, Pırasa.",
   "unintelligible": false,
-  "wer": 0.037037037037037035,
-  "werEdits": 1,
+  "wer": 0.07407407407407407,
+  "werEdits": 2,
   "werRefWords": 27,
   "werNormalizedGold": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zaynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
-  "werNormalizedPredicted": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zeynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zeynep z e y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 27,
   "sigWerNormalizedGold": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zaynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
-  "sigWerNormalizedPredicted": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zeynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
+  "sigWerNormalizedPredicted": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zeynep z e y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
-      "reason": "Minor misspelling of a proper noun, but the name is still clearly recognizable and the meaning is preserved.",
+      "reason": "Minor misspelling of a proper noun, but the name is still clearly recognizable and does not change the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'a' to 'e' at position 11",
+      "reason": "In a spelled-out name, a single letter difference changes the spelling and could result in a different name, which is a significant error.",
+      "score": 1
     }
   ]
 }

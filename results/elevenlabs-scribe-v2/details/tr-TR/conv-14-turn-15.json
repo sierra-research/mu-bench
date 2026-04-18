@@ -2,15 +2,31 @@
   "gold": "Evet, Arslan doğru. Sonrasında at E M A İ L nokta C O M.",
   "predicted": "Evet, Arslan doğru. Sonrasında et e m a i l nokta com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 12,
-  "werNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta com",
-  "werNormalizedPredicted": "evet arslan doğru sonrasında at e m a i l nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta com",
-  "sigWerNormalizedPredicted": "evet arslan doğru sonrasında at e m a i l nokta com",
-  "sigWerErrors": []
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
+  "werRefWords": 14,
+  "werNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta c o m",
+  "werNormalizedPredicted": "evet arslan doğru sonrasında et e m a i l nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "evet arslan doğru sonrasında et e m a i l nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'et' at position 4",
+      "reason": "'at' is the English word for '@', while 'et' is a misspelling and could cause confusion in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'com' at position 11",
+      "reason": "Instead of spelling out 'c o m', the model wrote 'com' as a whole, which is a minor error since the meaning (the domain ending) is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'o' at position 12",
+      "reason": "Missing a letter in the spelled-out domain 'c o m' changes the spelling, which is significant for an email address.",
+      "score": 1
+    }
+  ]
 }

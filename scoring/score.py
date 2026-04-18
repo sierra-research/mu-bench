@@ -144,23 +144,35 @@ def load_transcript_pairs(
 
 def load_normalized_pairs_with_gold(
     normalized_dir: Path,
+    gold_cache_dir: Path = GOLD_CACHE_DIR,
 ) -> list[tuple[str, str, TranscriptRow]]:
-    """Load transcript pairs where both gold and predicted come from symmetric normalization.
+    """Load transcript pairs where both gold and predicted come from canonical
+    normalization.
 
-    Reads normalized predicted from <utterance_id>.txt and normalized gold from
-    <utterance_id>.gold.txt. Both sides have been symmetrically normalized.
+    Reads normalized predicted from ``<normalized_dir>/<locale>/<utterance_id>.txt``
+    and canonical normalized gold from
+    ``<gold_cache_dir>/<locale>/<utterance_id>.gold.txt`` (built by
+    ``scoring.normalize_gold``; item 1 of the fairness-fixes plan). Every
+    provider is scored against the same gold string, so
+    provider-conditioned normalization drift cannot leak into the leaderboard.
+
+    Unintelligible / silent golds are represented by empty ``.gold.txt`` files
+    in the cache (see ``scoring.normalize_gold``) and are loaded as empty
+    strings here — downstream metrics code treats those as "no lexical gold"
+    and scores hypothesis-only clips accordingly.
     """
     rows = []
     for locale in TARGET_LOCALES:
-        locale_dir = normalized_dir / locale
-        if not locale_dir.exists():
+        locale_pred_dir = normalized_dir / locale
+        locale_gold_dir = gold_cache_dir / locale
+        if not locale_pred_dir.exists() or not locale_gold_dir.exists():
             continue
 
-        for txt_file in sorted(locale_dir.glob("*.txt")):
+        for txt_file in sorted(locale_pred_dir.glob("*.txt")):
             if txt_file.name.endswith(".gold.txt"):
                 continue
             utterance_id = txt_file.stem
-            gold_file = locale_dir / f"{utterance_id}.gold.txt"
+            gold_file = locale_gold_dir / f"{utterance_id}.gold.txt"
             if not gold_file.exists():
                 continue
 
@@ -270,17 +282,50 @@ def main():
     raw_pairs = load_transcript_pairs(submission_dir, ground_truth)
     print(f"Loaded {len(raw_pairs)} raw utterance pairs")
 
-    # Load normalized transcript pairs (used for WER/sigWER)
+    # Load normalized transcript pairs (used for WER/sigWER).
+    #
+    # Both sides (gold + predicted) must be canonically normalized so provider A
+    # and provider B are scored against the same gold string (item 1 of the
+    # fairness-fixes plan). The predicted side lives at
+    # ``<normalized_dir>/<locale>/<utterance_id>.txt`` (written by
+    # ``scoring.normalize``); the gold side lives at
+    # ``submissions/normalized/_gold/<locale>/<utterance_id>.gold.txt`` (written
+    # by ``scoring.normalize_gold``).
     has_normalized = normalized_dir.exists()
     if has_normalized and not args.simple_wer:
+        gold_cache_ready = GOLD_CACHE_DIR.exists() and any(GOLD_CACHE_DIR.glob("*/*.gold.txt"))
+        if not gold_cache_ready:
+            raise RuntimeError(
+                f"Canonical gold cache is missing at {GOLD_CACHE_DIR}. Run "
+                "`python -m scoring.normalize_gold` before scoring (item 1 of the "
+                "fairness-fixes plan). Scoring cannot fall back to raw manifest "
+                "gold without silently corrupting WER and UER."
+            )
         print(f"Loading normalized transcripts from {normalized_dir}...")
-        # Try loading with .gold.txt files first (symmetric normalization)
+        print(f"Loading canonical normalized gold from {GOLD_CACHE_DIR}...")
         normalized_pairs = load_normalized_pairs_with_gold(normalized_dir)
-        if normalized_pairs:
-            print(f"Loaded {len(normalized_pairs)} normalized utterance pairs (both sides normalized)")
-        else:
-            normalized_pairs = load_transcript_pairs(normalized_dir, ground_truth)
-            print(f"Loaded {len(normalized_pairs)} normalized utterance pairs")
+        print(f"Loaded {len(normalized_pairs)} canonical-gold utterance pairs (both sides normalized)")
+        # Hard-fail if normalization didn't cover every raw utterance we have
+        # a gold for. Without this guard, the per-utterance fallback below
+        # (``normalized_by_key.get((loc, uid), raw_row)``) silently scores
+        # unnormalized predictions against the canonical gold, which inflates
+        # WER by ~3-10x (punctuation, casing, digit form, etc.) and silently
+        # corrupts the leaderboard. We hit this in the fairness-fixes rollout
+        # when the normalize step ran into rate limits and only produced
+        # partial output for a provider.
+        raw_ids = {(loc, uid) for loc, uid, _ in raw_pairs}
+        norm_ids = {(loc, uid) for loc, uid, _ in normalized_pairs}
+        missing = raw_ids - norm_ids
+        if missing:
+            sample = sorted(missing)[:5]
+            raise RuntimeError(
+                f"Normalization coverage is incomplete: {len(missing)} of "
+                f"{len(raw_ids)} raw utterances have no matching normalized "
+                f"prediction under {normalized_dir}. Scoring refuses to fall "
+                f"back to raw transcripts silently — re-run "
+                f"`python -m scoring.normalize --submission-dir {submission_dir}` "
+                f"to fill the gaps before scoring. First 5 missing: {sample}"
+            )
     else:
         if not args.simple_wer and ("wer" in args.metrics or "significantWer" in args.metrics):
             print(f"WARNING: Normalized directory not found at {normalized_dir}")

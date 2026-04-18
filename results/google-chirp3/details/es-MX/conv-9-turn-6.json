@@ -2,20 +2,25 @@
   "gold": "María punto López arroba email punto com.",
   "predicted": "maria.perez@email.com",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "maria punto lopez arroba email punto com",
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
   "werNormalizedPredicted": "maria punto perez arroba email punto com",
-  "significantWer": 0.14285714285714285,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "maria punto lopez arroba email punto com",
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
   "sigWerNormalizedPredicted": "maria punto perez arroba email punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'lopez' to 'perez' at position 2",
-      "reason": "'Lopez' and 'Perez' are both common surnames, but substituting one for the other changes the identity of the person, which is significant in contexts like email addresses.",
+      "error": "Substitution: 'maría' to 'maria' at position 0",
+      "reason": "Accent missing in 'maria', but the name is still clearly recognizable and refers to the same person.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'lópez' to 'perez' at position 2",
+      "reason": "'López' and 'Pérez' are completely different surnames, which changes the identity of the person and is a significant error.",
       "score": 1
     }
   ]

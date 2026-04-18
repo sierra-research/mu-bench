@@ -2,15 +2,21 @@
   "gold": "Hayır, yanlış tamamen. Tekrar söylüyorum kaydet. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Hayır, yanlış tamamiyletekrarsoyluyorumkaydetahmetarslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07692307692307693,
+  "werEdits": 1,
   "werRefWords": 13,
   "werNormalizedGold": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 7",
+      "reason": "Omitting 'nokta' (which means 'dot' in Turkish) from an email address can cause the email to be incorrect or undeliverable, significantly changing the meaning and function of the sentence.",
+      "score": 1
+    }
+  ]
 }

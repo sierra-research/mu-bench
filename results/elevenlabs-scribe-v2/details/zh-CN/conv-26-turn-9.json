@@ -2,15 +2,26 @@
   "gold": "你听到了吗？",
   "predicted": "你聽得到了嗎？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "你 聽 到 了 嗎",
-  "werNormalizedPredicted": "你 聽 到 了 嗎",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你听到了吗",
+  "werNormalizedPredicted": "你聽得到了嗎",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "你 聽 到 了 嗎",
-  "sigWerNormalizedPredicted": "你 聽 到 了 嗎",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "你 听 到 了 吗",
+  "sigWerNormalizedPredicted": "你 聽 得 到 了 嗎",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '得' at position 1",
+      "reason": "'聽' is the traditional form of '听', so this is not a true insertion but a script variant. The meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '吗' to '嗎' at position 4",
+      "reason": "'听' (simplified) and '聽' (traditional) are equivalent, but '得' is an extra word. However, in Mandarin, '聽得到' is a common phrase meaning 'can hear', which is a natural way to say this. The meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

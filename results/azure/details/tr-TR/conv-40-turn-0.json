@@ -5,23 +5,23 @@
   "wer": 0.2,
   "werEdits": 3,
   "werRefWords": 15,
-  "werNormalizedGold": "anna merhaba daha once bir talebim olmustu onun icin ariyorum su ana kadar gerceklesmedi cunku",
-  "werNormalizedPredicted": "hanim merhaba daha once bir talebim olmustu onun ilgili hatirliyorum su ana kadar gerceklesmedi cunku",
-  "significantWer": 0.13333333333333333,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "werNormalizedPredicted": "hanım merhaba daha önce bir talebim olmuştu onun ilgili hatırlıyorum şu ana kadar gerçekleşmedi çünkü",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "anna merhaba daha once bir talebim olmustu onun icin ariyorum su ana kadar gerceklesmedi cunku",
-  "sigWerNormalizedPredicted": "hanim merhaba daha once bir talebim olmustu onun ilgili hatirliyorum su ana kadar gerceklesmedi cunku",
+  "sigWerNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "sigWerNormalizedPredicted": "hanım merhaba daha önce bir talebim olmuştu onun ilgili hatırlıyorum şu ana kadar gerçekleşmedi çünkü",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'anna' to 'hanim' at position 0",
-      "reason": "'anna' is a proper noun (a name), while 'hanim' means 'lady' or 'madam' in Turkish. This changes the subject of the sentence and can confuse the listener about whom the sentence is about.",
+      "error": "Substitution: 'anna' to 'hanım' at position 0",
+      "reason": "'Anna' is a proper noun (a name), while 'hanım' is a Turkish honorific meaning 'lady' or 'madam'. This substitution changes the addressee and alters the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'icin' to 'ilgili' at position 8",
-      "reason": "'icin' means 'for' (indicating purpose), while 'ilgili' means 'about' or 'related to'. This changes the meaning of the sentence, as the purpose of the call is replaced with a reference, which can mislead the listener.",
-      "score": 1
+      "error": "Substitution: 'için' to 'ilgili' at position 8",
+      "reason": "'İçin' means 'for', while 'ilgili' means 'related to' or 'about'. This changes the meaning of the sentence, but the overall intent is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

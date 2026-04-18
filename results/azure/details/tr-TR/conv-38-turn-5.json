@@ -2,20 +2,25 @@
   "gold": "Telefon numaram artı 90 123 0 90 45 67.",
   "predicted": "Telefon numaram+ 90 123 ağır 90 45 67.",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "telefon numaram artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "telefon numaram artı doksan yüz yirmi üç ağır doksan kırk beş altmış yedi",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "telefon numaram artı doksan bir yüz yirmi üç ağır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "telefon numaram artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "telefon numaram artı doksan yüz yirmi üç ağır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "telefon numaram artı doksan bir yüz yirmi üç ağır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'bir' at position 4",
+      "reason": "'bir' (one) is inserted into the phone number, which changes the numeric sequence and results in an incorrect phone number. This is a significant error as it alters the information conveyed.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'sıfır' to 'ağır' at position 7",
-      "reason": "'sıfır' means 'zero' (a digit in a phone number), while 'ağır' means 'heavy' and is not a number. This changes the phone number and makes it unusable.",
+      "reason": "'sıfır' (zero) is replaced with 'ağır' (heavy), which is not a number and makes the phone number incorrect and incoherent. This is a significant error as it disrupts the meaning and accuracy of the phone number.",
       "score": 1
     }
   ]

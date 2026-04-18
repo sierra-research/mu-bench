@@ -2,20 +2,25 @@
   "gold": "Muchas gracias, así está bien.",
   "predicted": "Ay, muchas gracias. Ya, así está bien.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "muchas gracias asi esta bien",
-  "werNormalizedPredicted": "muchas gracias ya asi esta bien",
-  "significantWer": 0.0,
+  "werNormalizedGold": "muchas gracias así está bien",
+  "werNormalizedPredicted": "ay muchas gracias ya así está bien",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "muchas gracias asi esta bien",
-  "sigWerNormalizedPredicted": "muchas gracias ya asi esta bien",
+  "sigWerNormalizedGold": "muchas gracias así está bien",
+  "sigWerNormalizedPredicted": "ay muchas gracias ya así está bien",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'ay' at position 0",
+      "reason": "'Ay' is an interjection expressing emotion, but its presence does not change the main meaning of the sentence, which is expressing thanks and confirmation.",
+      "score": 2
+    },
+    {
       "error": "Insertion: 'ya' at position 2",
-      "reason": "'Ya' (already/now) adds a nuance but does not significantly change the overall meaning of the sentence, which is expressing thanks and confirmation that something is fine.",
+      "reason": "'Ya' means 'already' or 'now' in Spanish, but in this context, its addition does not significantly alter the meaning of the sentence.",
       "score": 2
     }
   ]

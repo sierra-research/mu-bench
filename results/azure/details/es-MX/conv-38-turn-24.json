@@ -5,23 +5,23 @@
   "wer": 0.3333333333333333,
   "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "numero entonces me vas a transferir con algun agente",
+  "werNormalizedGold": "número entonces me vas a transferir con algún agente",
   "werNormalizedPredicted": "no entonces me vas a transferir con alguna gente",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "numero entonces me vas a transferir con algun agente",
+  "sigWerNormalizedGold": "número entonces me vas a transferir con algún agente",
   "sigWerNormalizedPredicted": "no entonces me vas a transferir con alguna gente",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'numero' to 'no' at position 0",
-      "reason": "'numero' (number) is replaced by 'no' (no), which changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) and 'no' (no) are completely different words and change the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'algun' to 'alguna' at position 7",
-      "reason": "'algun' and 'alguna' are gender variants of the same word, and in this context, the meaning is preserved.",
-      "score": 3
+      "error": "Substitution: 'algún' to 'alguna' at position 7",
+      "reason": "'algún' (some, masculine) and 'alguna' (some, feminine) are minor gender mismatches; the meaning is mostly preserved.",
+      "score": 2
     }
   ]
 }

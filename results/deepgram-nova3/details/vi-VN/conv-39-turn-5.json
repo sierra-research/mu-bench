@@ -2,21 +2,31 @@
   "gold": "Mình đọc nhá. Địa chỉ email của mình là minh chấm trần a còng email chấm com. Tất cả đều viết không dấu.",
   "predicted": "Mình đọc nhé, địa chỉ email của mình là minh. Tầngmail chấm com tất cả đều viết không dấu",
   "unintelligible": false,
-  "wer": 0.043478260869565216,
-  "werEdits": 1,
+  "wer": 0.2608695652173913,
+  "werEdits": 6,
   "werRefWords": 23,
   "werNormalizedGold": "mình đọc nhá địa chỉ email của mình là minh chấm trần a còng email chấm com tất cả đều viết không dấu",
-  "werNormalizedPredicted": "mình đọc nhé địa chỉ email của mình là minh chấm trần a còng email chấm com tất cả đều viết không dấu",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "mình đọc nhé địa chỉ email của mình là minh tầngmail chấm com tất cả đều viết không dấu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "mình đọc nhá địa chỉ email của mình là minh chấm trần a còng email chấm com tất cả đều viết không dấu",
-  "sigWerNormalizedPredicted": "mình đọc nhé địa chỉ email của mình là minh chấm trần a còng email chấm com tất cả đều viết không dấu",
+  "sigWerNormalizedPredicted": "mình đọc nhé địa chỉ email của mình là minh tầngmail chấm com tất cả đều viết không dấu",
   "sigWerErrors": [
     {
       "error": "Substitution: 'nhá' to 'nhé' at position 2",
-      "reason": "'nhá' and 'nhé' are both Vietnamese sentence-ending particles with similar meanings and politeness levels; the substitution does not change the overall meaning of the sentence.",
+      "reason": "'nhá' and 'nhé' are both Vietnamese sentence-ending particles with similar meanings and do not change the intent of the sentence.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'chấm' to 'tầngmail' at position 10",
+      "reason": "'chấm' (dot) is replaced by 'tầngmail', which is not a valid word and disrupts the structure of the email address, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 11",
+      "reason": "Omitting 'trần' removes a key part of the email address (the username), making the email incorrect and unusable.",
+      "score": 1
     }
   ]
 }

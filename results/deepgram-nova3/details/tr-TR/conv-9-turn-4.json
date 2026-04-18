@@ -2,20 +2,25 @@
   "gold": "Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet. Arslan et gmail dat kom",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
-  "werRefWords": 5,
-  "werNormalizedGold": "ahmet arslan at email com",
-  "werNormalizedPredicted": "ahmet arslan at gmail com",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "ahmet arslan at email com",
-  "sigWerNormalizedPredicted": "ahmet arslan at gmail com",
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet arslan et gmail dat kom",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet arslan et gmail dat kom",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'gmail' at position 3",
-      "reason": "'email' and 'gmail' are different email providers; substituting one for the other changes the address and could result in a message being sent to the wrong place, which is a significant error.",
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' (meaning 'dot' in Turkish, used for email addresses) is omitted, which makes the email address format incorrect and confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 3",
+      "reason": "'at' is the correct word for the '@' symbol in email addresses, while 'et' is a mispronunciation or misspelling, which could cause confusion in understanding the email address.",
       "score": 1
     }
   ]

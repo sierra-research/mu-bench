@@ -2,15 +2,21 @@
   "gold": "林梅女士。",
   "predicted": "林美女士",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
-  "werNormalizedGold": "林美女士",
+  "werNormalizedGold": "林梅女士",
   "werNormalizedPredicted": "林美女士",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "林 美 女 士",
+  "sigWerNormalizedGold": "林 梅 女 士",
   "sigWerNormalizedPredicted": "林 美 女 士",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '梅' to '美' at position 1",
+      "reason": "Both are common Chinese given names and differ by one character. The meaning of the name changes, but the overall sentence structure and intent (referring to a female with the surname 林) remains clear. This is a minor error as the name is still plausible and does not derail the meaning.",
+      "score": 2
+    }
+  ]
 }

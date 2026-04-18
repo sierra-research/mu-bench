@@ -2,15 +2,26 @@
   "gold": "C N 9 8 9.",
   "predicted": "Cene dokuz sekiz dokuz.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n nine eight nine",
-  "werNormalizedPredicted": "c n nine eight nine",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n dokuz sekiz dokuz",
+  "werNormalizedPredicted": "cene dokuz sekiz dokuz",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n nine eight nine",
-  "sigWerNormalizedPredicted": "c n nine eight nine",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n dokuz sekiz dokuz",
+  "sigWerNormalizedPredicted": "cene dokuz sekiz dokuz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'cene' at position 0",
+      "reason": "'c' is a single letter, likely part of a spelled-out sequence, while 'cene' is a full word. This changes the meaning and disrupts the intended information, especially if this is a code or identifier.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from a sequence of letters (likely a code or identifier) is a significant error, as it changes the sequence and could result in incorrect information being conveyed.",
+      "score": 1
+    }
+  ]
 }

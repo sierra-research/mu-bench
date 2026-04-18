@@ -2,15 +2,26 @@
   "gold": "美玲 at email dot com。",
   "predicted": "mailing@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "meiling at email dot com",
-  "werNormalizedPredicted": "meiling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "meiling at email dot com",
-  "sigWerNormalizedPredicted": "meiling at email dot com",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an English word with a completely different meaning, which changes the identity being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A part of the name is missing in the actual transcription, which significantly alters the intended email address and the identity being referenced.",
+      "score": 1
+    }
+  ]
 }

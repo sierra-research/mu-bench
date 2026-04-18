@@ -2,20 +2,25 @@
   "gold": "Artı 90 123 0 90 45 67.",
   "predicted": "+ 90 123. Ağır, 90 45 67.",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
-  "werRefWords": 12,
-  "werNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "artı doksan bir yüz yirmi üç ağır doksan kırk beş altmış yedi",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "artı doksan bir yüz yirmi üç ağır doksan kırk beş altmış yedi",
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "artı doksan bir iki üç ağır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "artı doksan bir iki üç ağır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sıfır' to 'ağır' at position 6",
-      "reason": "'sıfır' means 'zero' (a number), while 'ağır' means 'heavy' (an adjective). This changes a digit in a sequence of numbers to an unrelated word, making the sequence incorrect and potentially unusable, especially if this is a code or phone number.",
+      "error": "Substitution: 'yüz' to 'bir' at position 2",
+      "reason": "'yüz' means 'hundred' and 'bir' means 'one'; this changes the numeric value significantly, altering the meaning of the sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'sıfır' to 'ağır' at position 5",
+      "reason": "'sıfır' means 'zero' and 'ağır' means 'heavy'; this is a substitution of a number with an unrelated word, making the sequence incoherent.",
       "score": 1
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "不是不是不是，是君，君。",
   "predicted": "不是不是不是,是尊尊。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
-  "werNormalizedGold": "不是不是不是是君君",
-  "werNormalizedPredicted": "不是不是不是是君君",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "不是不是不是 是君君",
+  "werNormalizedPredicted": "不是不是不是 是尊尊",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "不 是 不 是 不 是 是 君 君",
-  "sigWerNormalizedPredicted": "不 是 不 是 不 是 是 君 君",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 是 不 是 不 是 是 尊 尊",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '尊' at position 7",
+      "reason": "'君' and '尊' are different words with different meanings in Chinese. '君' (jun) means 'lord' or 'gentleman', while '尊' (zun) means 'respect' or 'honor'. Substituting these changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

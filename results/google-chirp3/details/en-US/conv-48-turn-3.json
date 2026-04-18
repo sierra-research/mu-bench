@@ -2,15 +2,21 @@
   "gold": "Let me confirm that code. I have C as in cat, N as in Nancy, 6 2 2 6 2 0 6.",
   "predicted": "Let me confirm that code. I have C as in cat and N as in Nancy 6226206.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.045454545454545456,
+  "werEdits": 1,
   "werRefWords": 22,
   "werNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "werNormalizedPredicted": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "let me confirm that code i have c as in cat and n as in nancy six two two six two zero six",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "sigWerNormalizedPredicted": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "let me confirm that code i have c as in cat and n as in nancy six two two six two zero six",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'and' at position 11",
+      "reason": "The insertion of 'and' before 'n as in nancy' does not change the meaning of the sentence; it is a minor grammatical addition that does not affect the code being confirmed.",
+      "score": 2
+    }
+  ]
 }

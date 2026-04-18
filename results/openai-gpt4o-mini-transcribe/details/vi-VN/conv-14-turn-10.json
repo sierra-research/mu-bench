@@ -1,16 +1,27 @@
 {
   "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "Cộng tám trăm chín một, một hai ba bốn, năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 13,
-  "werNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng tám trăm chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng tám trăm chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'trăm' at position 2",
+      "reason": "Changing 'mươi' (tens) to 'trăm' (hundreds) alters the number from eighty-four to eight hundred, which significantly changes the meaning of the number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bốn' at position 3",
+      "reason": "Omitting 'bốn' (four) from the number sequence changes the intended number, which is significant in a string of digits or numbers.",
+      "score": 1
+    }
+  ]
 }

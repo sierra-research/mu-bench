@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "需要",
   "werNormalizedPredicted": "yeah",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "需 要",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '需' to 'yeah' at position 0",
-      "reason": "'yeah' is an English word substituted for a Chinese character, which completely changes the meaning and language of the sentence.",
+      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '要' at position 1",
-      "reason": "The word '要' is missing, which further removes the intended meaning of the original sentence.",
+      "reason": "A key word from the expected phrase is missing, and the actual transcription is in a different language, resulting in a significant loss of meaning.",
       "score": 1
     }
   ]

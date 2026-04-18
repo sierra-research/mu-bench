@@ -2,15 +2,26 @@
   "gold": "Mã là C N 1 8 1 8.",
   "predicted": "Mã là cn một nghìn tám trăm mười tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "mã là c n một tám một tám",
-  "werNormalizedPredicted": "mã là c n một tám một tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "mã là c n một nghìn tám trăm mười tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "mã là c n một tám một tám",
-  "sigWerNormalizedPredicted": "mã là c n một tám một tám",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "mã là c n một nghìn tám trăm mười tám",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nghìn' at position 5",
+      "reason": "The insertion of 'nghìn' (thousand) changes the number from 1818 to 1818 or 1818, but in Vietnamese, 'một tám một tám' is 1818, while 'một nghìn tám trăm mười tám' is 1818. This changes the value being referred to, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'một' to 'mười' at position 6",
+      "reason": "The insertion of 'trăm' (hundred) further changes the number structure, making the actual transcription refer to a different number than expected. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

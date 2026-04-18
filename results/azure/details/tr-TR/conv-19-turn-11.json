@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "evet gördüm peki limit artışım ne zaman kartıma yansımış olur",
   "werNormalizedPredicted": "evet gördüm peki limit artışını ne zaman kartı var yanılmış olur",
-  "significantWer": 0.1,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "evet gördüm peki limit artışım ne zaman kartıma yansımış olur",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'artışım' to 'artışını' at position 4",
-      "reason": "'artışım' means 'my increase' (possessive), while 'artışını' means 'the increase' (accusative). This changes the reference from personal to general, but the overall meaning is still understandable.",
+      "reason": "'artışım' means 'my increase' while 'artışını' means 'the increase' (object form). This changes the possessive meaning but does not derail the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'kartıma' to 'var' at position 7",
-      "reason": "'kartı' (the card) is inserted before 'var', which is not present in the expected sentence. This makes the sentence less coherent and introduces confusion.",
+      "reason": "'kartı' (the card) is inserted before 'var', which is not present in the expected sentence. This creates confusion and makes the sentence less coherent.",
       "score": 1
     }
   ]

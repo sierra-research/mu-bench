@@ -6,21 +6,21 @@
   "werEdits": 4,
   "werRefWords": 15,
   "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
-  "werNormalizedPredicted": "bir dakika ahmet ismini de ahmet aslan dediniz ya ahmet arslan r harfi var arada ahmet arslan",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "bir dakika ahmet ismini de ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
-  "sigWerNormalizedPredicted": "bir dakika ahmet ismini de ahmet aslan dediniz ya ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerNormalizedPredicted": "bir dakika ahmet ismini de ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
   "sigWerErrors": [
     {
       "error": "Substitution: 'ismimde' to 'de' at position 2",
-      "reason": "The insertion of 'ahmet' repeats the name but does not change the overall meaning of the sentence, as the sentence is about the name 'ahmet aslan/arslan'.",
+      "reason": "The insertion of 'ahmet' before 'ismini' does not change the overall meaning, as the sentence is still about the name 'ahmet aslan'.",
       "score": 2
     },
     {
-      "error": "Substitution: 'de' to 'ya' at position 6",
-      "reason": "Replacing 'ismimde' (in my name) with 'de' (too/also) slightly changes the structure but the context is still clear that the discussion is about the name. The meaning is mostly preserved.",
+      "error": "Deletion: 'de' at position 6",
+      "reason": "'ismimde' (in my name) is replaced with 'de' (also), which slightly changes the structure but the main meaning about the name remains clear.",
       "score": 2
     }
   ]

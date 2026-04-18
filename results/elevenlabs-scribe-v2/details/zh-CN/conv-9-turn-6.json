@@ -2,15 +2,26 @@
   "gold": "8 6 1 3 9 0 你等一下我还没说完呢。",
   "predicted": "八六幺三九零。你等一下，我还没说完了。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "八 六 幺 三 九 零 你 等 一 下 我 还 没 说 完 呢",
-  "werNormalizedPredicted": "八 六 幺 三 九 零 你 等 一 下 我 还 没 说 完 呢",
-  "significantWer": 0.0,
+  "werNormalizedGold": "八 六 一 三 九 零 你等一下我还没说完呢",
+  "werNormalizedPredicted": "八 六 幺 三 九 零 你等一下我还没说完了",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "八 六 幺 三 九 零 你 等 一 下 我 还 没 说 完 呢",
-  "sigWerNormalizedPredicted": "八 六 幺 三 九 零 你 等 一 下 我 还 没 说 完 呢",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "八 六 一 三 九 零 你 等 一 下 我 还 没 说 完 呢",
+  "sigWerNormalizedPredicted": "八 六 幺 三 九 零 你 等 一 下 我 还 没 说 完 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '一' to '幺' at position 2",
+      "reason": "'一' and '幺' are both used to represent the number one in Chinese, especially in contexts like phone numbers to avoid confusion. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '呢' to '了' at position 15",
+      "reason": "'呢' and '了' are different sentence-ending particles in Chinese. '呢' indicates an ongoing action or softens the tone, while '了' indicates completion. This changes the nuance but not the main meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

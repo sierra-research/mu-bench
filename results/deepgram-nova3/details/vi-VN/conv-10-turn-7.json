@@ -5,27 +5,27 @@
   "wer": 0.2727272727272727,
   "werEdits": 3,
   "werRefWords": 11,
-  "werNormalizedGold": "ban co the chuyen den nhan vien cham soc khach hang",
-  "werNormalizedPredicted": "ta co the chuyen den nhan vien cho khach hang",
-  "significantWer": 0.2727272727272727,
-  "majorErrorsCount": 3,
+  "werNormalizedGold": "bạn có thể chuyển đến nhân viên chăm sóc khách hàng",
+  "werNormalizedPredicted": "ta có thể chuyển đến nhân viên cho khách hàng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "ban co the chuyen den nhan vien cham soc khach hang",
-  "sigWerNormalizedPredicted": "ta co the chuyen den nhan vien cho khach hang",
+  "sigWerNormalizedGold": "bạn có thể chuyển đến nhân viên chăm sóc khách hàng",
+  "sigWerNormalizedPredicted": "ta có thể chuyển đến nhân viên cho khách hàng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ban' to 'ta' at position 0",
-      "reason": "'ban' means 'you' and 'ta' means 'I' in Vietnamese, which completely changes the subject and meaning of the sentence.",
+      "error": "Substitution: 'bạn' to 'ta' at position 0",
+      "reason": "'bạn' means 'you' and 'ta' means 'I' or 'we', which changes the subject of the sentence and alters the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'cham' to 'cho' at position 7",
-      "reason": "'cham soc' means 'take care of', while 'cho' means 'for', so this changes the meaning of the service being referred to.",
-      "score": 1
+      "error": "Substitution: 'chăm' to 'cho' at position 7",
+      "reason": "'chăm' (as in 'chăm sóc' meaning 'care') is replaced by 'cho' ('for'), which changes the meaning of the phrase from 'customer care staff' to 'staff for customers', losing the specific meaning of 'care'.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'soc' at position 8",
-      "reason": "Omitting 'soc' removes the meaning of 'take care of', making the phrase incomplete and changing the intended meaning.",
+      "error": "Deletion: 'sóc' at position 8",
+      "reason": "Omitting 'sóc' removes the word 'care' from 'chăm sóc khách hàng' ('customer care'), which significantly changes the meaning of the staff's role.",
       "score": 1
     }
   ]

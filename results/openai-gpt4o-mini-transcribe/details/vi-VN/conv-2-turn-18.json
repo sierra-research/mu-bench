@@ -1,26 +1,31 @@
 {
   "gold": "Rồi. Mở rồi. Mở rồi.",
-  "predicted": "ờ mà rồi mà rồi.",
+  "predicted": "ờ mà rồi mà rồi",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
   "werNormalizedGold": "rồi mở rồi mở rồi",
-  "werNormalizedPredicted": "rồi mà rồi mà rồi",
-  "significantWer": 0.4,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "mà rồi mà rồi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "rồi mở rồi mở rồi",
-  "sigWerNormalizedPredicted": "rồi mà rồi mà rồi",
+  "sigWerNormalizedPredicted": "mà rồi mà rồi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'mở' to 'mà' at position 1",
-      "reason": "'mở' means 'open' while 'mà' is a conjunction or particle in Vietnamese; substituting 'mở' with 'mà' changes the meaning of the sentence and makes it incoherent.",
+      "error": "Substitution: 'rồi' to 'mà' at position 0",
+      "reason": "'rồi' and 'mà' are different words with different meanings in Vietnamese; this changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mở' at position 1",
+      "reason": "Omitting 'mở' removes a key word, significantly altering the meaning and coherence of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'mở' to 'mà' at position 3",
-      "reason": "Again, 'mở' (open) is replaced by 'mà', which alters the intended meaning and disrupts the coherence of the sentence.",
+      "reason": "'mở' and 'mà' are unrelated in meaning, causing a significant change in the sentence's intent.",
       "score": 1
     }
   ]

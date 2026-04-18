@@ -5,22 +5,22 @@
   "wer": 0.125,
   "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "hola ana como estas queria obtener una copia de mi estado de cuenta de mi tarjeta",
-  "werNormalizedPredicted": "hola ana como estas queria obtener una copia del estado de cuenta de mi tarjeta",
-  "significantWer": 0.0,
+  "werNormalizedGold": "hola ana cómo estás quería obtener una copia de mi estado de cuenta de mi tarjeta",
+  "werNormalizedPredicted": "hola ana cómo estás quería obtener una copia del estado de cuenta de mi tarjeta",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "hola ana como estas queria obtener una copia de mi estado de cuenta de mi tarjeta",
-  "sigWerNormalizedPredicted": "hola ana como estas queria obtener una copia del estado de cuenta de mi tarjeta",
+  "sigWerNormalizedGold": "hola ana cómo estás quería obtener una copia de mi estado de cuenta de mi tarjeta",
+  "sigWerNormalizedPredicted": "hola ana cómo estás quería obtener una copia del estado de cuenta de mi tarjeta",
   "sigWerErrors": [
     {
       "error": "Substitution: 'de' to 'del' at position 8",
-      "reason": "'del' is a contraction of 'de el', but the expected phrase is 'de mi', so this changes the ownership from 'my' to 'the', which is a minor change in meaning but does not derail the sentence.",
+      "reason": "'del' is a contraction of 'de el', but the expected phrase is 'de mi', so this changes the possessive from 'my' to 'the', which is a minor change in meaning but does not derail the sentence.",
       "score": 2
     },
     {
       "error": "Deletion: 'mi' at position 9",
-      "reason": "Omitting 'mi' changes the meaning from 'my account statement' to 'the account statement', which is a minor error as the overall intent is still clear, but the ownership is lost.",
+      "reason": "Omitting 'mi' removes the possessive 'my', changing the meaning from 'my account statement' to 'the account statement', which is a minor error as the main intent is still clear.",
       "score": 2
     }
   ]

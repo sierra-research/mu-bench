@@ -1,26 +1,31 @@
 {
   "gold": "Tôi muốn gặp nhân viên chăm sóc khách hàng.",
-  "predicted": "tôi muốn được giao tiếp",
+  "predicted": "tôi muốn được đi với chăm sóc anh",
   "unintelligible": false,
-  "wer": 0.7777777777777778,
-  "werEdits": 7,
+  "wer": 0.5555555555555556,
+  "werEdits": 5,
   "werRefWords": 9,
   "werNormalizedGold": "tôi muốn gặp nhân viên chăm sóc khách hàng",
-  "werNormalizedPredicted": "tôi muốn được giao tiếp",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "tôi muốn được đi với chăm sóc anh",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "tôi muốn gặp nhân viên chăm sóc khách hàng",
-  "sigWerNormalizedPredicted": "tôi muốn được giao tiếp",
+  "sigWerNormalizedPredicted": "tôi muốn được đi với chăm sóc anh",
   "sigWerErrors": [
     {
       "error": "Substitution: 'gặp' to 'được' at position 2",
-      "reason": "'gặp' means 'to meet', while 'được' means 'to be able to' or 'to get'. This changes the action and intent of the sentence, resulting in a significant change in meaning.",
+      "reason": "'gặp' means 'meet', while 'được' means 'to be able to' or 'receive'; this changes the action and intent of the sentence, making the meaning significantly different.",
       "score": 1
     },
     {
-      "error": "Deletion: 'chăm' at position 5",
-      "reason": "The entire phrase specifying 'customer service staff' is missing, which removes the main subject of the request and makes the sentence incomplete and changes its intent.",
+      "error": "Substitution: 'khách' to 'anh' at position 7",
+      "reason": "'khách' means 'customer', while 'anh' means 'you' (male); this changes the object of the sentence from 'customer' to 'you', which alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hàng' at position 8",
+      "reason": "'hàng' is part of 'khách hàng' (customer); omitting it makes the phrase incomplete and changes the meaning, leading to confusion about the intended recipient.",
       "score": 1
     }
   ]

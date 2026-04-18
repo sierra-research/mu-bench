@@ -1,27 +1,32 @@
 {
   "gold": "还是不对呀。",
-  "predicted": "嗯。确实不对啊。",
+  "predicted": "嗯，确实不贵啊。",
   "unintelligible": false,
-  "wer": 0.6,
-  "werEdits": 3,
+  "wer": 0.8,
+  "werEdits": 4,
   "werRefWords": 5,
   "werNormalizedGold": "还是不对呀",
-  "werNormalizedPredicted": "确实不对啊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "确实不贵",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "还 是 不 对 呀",
-  "sigWerNormalizedPredicted": "确 实 不 对 啊",
+  "sigWerNormalizedPredicted": "确 实 不 贵",
   "sigWerErrors": [
     {
       "error": "Substitution: '还' to '确' at position 0",
-      "reason": "'还' (still/yet) and '确' (indeed/certainly) have different meanings and change the nuance of the sentence, but the overall meaning ('not correct') is still conveyed. This is a minor error.",
-      "score": 2
+      "reason": "The substitution changes the meaning from 'still' (还) to 'indeed' (确), which alters the intent of the sentence significantly.",
+      "score": 1
     },
     {
-      "error": "Substitution: '呀' to '啊' at position 4",
-      "reason": "'呀' and '啊' are both sentence-ending particles in Chinese and are often interchangeable in casual speech, with little to no change in meaning.",
-      "score": 3
+      "error": "Substitution: '对' to '贵' at position 3",
+      "reason": "The substitution changes 'correct' (对) to 'expensive' (贵), which completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '呀' at position 4",
+      "reason": "The deletion of the modal particle '呀' slightly affects the tone but does not significantly change the meaning of the sentence.",
+      "score": 2
     }
   ]
 }

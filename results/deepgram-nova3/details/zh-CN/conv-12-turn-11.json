@@ -2,15 +2,21 @@
   "gold": "我的姓名是君灵。",
   "predicted": "我的姓名是君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
   "werRefWords": 7,
   "werNormalizedGold": "我的姓名是君灵",
-  "werNormalizedPredicted": "我的姓名是君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的姓名是君临",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "我 的 姓 名 是 君 灵",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '灵' to '临' at position 6",
+      "reason": "The last character is a different Chinese character, which changes the name entirely. For names, a single character difference is a significant error as it refers to a different person.",
+      "score": 1
+    }
+  ]
 }

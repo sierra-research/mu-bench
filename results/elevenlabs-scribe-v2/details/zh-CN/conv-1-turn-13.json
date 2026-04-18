@@ -5,9 +5,9 @@
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "听 到 了 吗",
-  "werNormalizedPredicted": "听 得 到 吗",
-  "significantWer": 0.5,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "听得到吗",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '得' at position 1",
-      "reason": "'得' is inserted, changing '听到了吗' (Did you hear it?) to '听得到吗' (Can you hear it?). This changes the sentence from asking about a completed action to asking about ability, which alters the meaning significantly.",
+      "reason": "'得' is inserted, changing '听到了吗' (Did you hear it?) to '听得到吗' (Can you hear it?). This changes the meaning from asking if something was heard (past) to asking if something can be heard (ability/present).",
       "score": 1
     },
     {
       "error": "Deletion: '了' at position 2",
-      "reason": "Omitting '了' removes the aspect marker indicating completion, further shifting the meaning from a completed action to a general ability, which is a significant change in meaning.",
+      "reason": "Omitting '了' removes the aspect marker indicating completion, which changes the sentence from asking about a completed action to a general ability. This alters the meaning significantly.",
       "score": 1
     }
   ]

@@ -5,9 +5,9 @@
   "wer": 1.0,
   "werEdits": 7,
   "werRefWords": 7,
-  "werNormalizedGold": "是 你 的 问题 好好",
+  "werNormalizedGold": "是你的问题 好好",
   "werNormalizedPredicted": "she need a wendy",
-  "significantWer": 0.2857142857142857,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 你 的 问 题 好 好",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '是' to 'she' at position 0",
-      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), resulting in a complete loss of meaning.",
+      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), resulting in a completely different meaning and incoherent sentence.",
       "score": 1
     },
     {
       "error": "Deletion: '题' at position 4",
-      "reason": "The actual transcription omits this word entirely and is in a different language, so the meaning is lost.",
+      "reason": "The expected word is missing in the actual transcription, which is already incoherent due to language mismatch.",
       "score": 1
     }
   ]

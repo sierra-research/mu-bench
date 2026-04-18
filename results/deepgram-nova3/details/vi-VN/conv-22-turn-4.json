@@ -2,15 +2,21 @@
   "gold": "C N 7 1 8.",
   "predicted": "Cnbảy trăm mười tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n seven one eight",
-  "werNormalizedPredicted": "c n seven one eight",
-  "significantWer": 0.0,
+  "werNormalizedGold": "c n bảy một tám",
+  "werNormalizedPredicted": "c n bảy trăm mười tám",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n seven one eight",
-  "sigWerNormalizedPredicted": "c n seven one eight",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n bảy một tám",
+  "sigWerNormalizedPredicted": "c n bảy trăm mười tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'một' to 'mười' at position 3",
+      "reason": "'trăm' means 'hundred' in Vietnamese, which changes the number from 'bảy một tám' (718) to 'bảy trăm mười tám' (718), but the structure is different and could cause confusion in numeric interpretation.",
+      "score": 2
+    }
+  ]
 }

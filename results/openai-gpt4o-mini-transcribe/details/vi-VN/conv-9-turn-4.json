@@ -1,16 +1,22 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com.",
-  "predicted": "email là minh.chamtrn@email.com",
+  "predicted": "Email là minh.chamtrung@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minh chấm trung a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minh chấm trung a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trung' at position 4",
+      "reason": "'trần' and 'trung' are completely different Vietnamese names, so this changes the recipient of the email address and is a significant error.",
+      "score": 1
+    }
+  ]
 }

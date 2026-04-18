@@ -1,16 +1,27 @@
 {
   "gold": "Tamam. At email nokta com.",
-  "predicted": "Tamam. etemein.com",
+  "predicted": "Tamam. Et emeğnokta.com. Hı hı.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 4,
-  "werNormalizedGold": "tamam at email com",
-  "werNormalizedPredicted": "tamam at email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "tamam at email com",
-  "sigWerNormalizedPredicted": "tamam at email com",
-  "sigWerErrors": []
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "tamam at email nokta com",
+  "werNormalizedPredicted": "tamam et emegnokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "tamam at email nokta com",
+  "sigWerNormalizedPredicted": "tamam et emegnokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'et' at position 1",
+      "reason": "'at' is the English word for the '@' symbol in email addresses, while 'et' is a misspelling or mispronunciation that could confuse the listener, especially in the context of an email address. This could lead to misunderstanding the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 3",
+      "reason": "'email nokta' (meaning 'email dot') is merged and misspelled as 'emegnokta', which makes the email address unclear and potentially unusable. This significantly affects the ability to understand or use the email address correctly.",
+      "score": 1
+    }
+  ]
 }

@@ -2,21 +2,26 @@
   "gold": "Hayır email adresi yine yanlış oldu.",
   "predicted": "Hayır, hayır, e mail adresi gine yanlış oldu.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 1,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "hayır email adresi yine yanlış oldu",
-  "werNormalizedPredicted": "hayır hayır email adresi yine yanlış oldu",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "hayır hayır e mail adresi gine yanlış oldu",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "hayır email adresi yine yanlış oldu",
-  "sigWerNormalizedPredicted": "hayır hayır email adresi yine yanlış oldu",
+  "sigWerNormalizedPredicted": "hayır hayır e mail adresi gine yanlış oldu",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'hayır' at position 1",
-      "reason": "The repeated 'hayır' (no) does not change the overall meaning of the sentence, as it simply adds emphasis or repetition without altering the intent.",
+      "error": "Substitution: 'email' to 'mail' at position 1",
+      "reason": "Repeating 'hayır' (no) does not change the overall meaning of the sentence, just adds emphasis.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'yine' to 'gine' at position 3",
+      "reason": "'email' and 'e mail' are equivalent forms of the same word, only differing in spacing.",
+      "score": 3
     }
   ]
 }

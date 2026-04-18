@@ -2,25 +2,30 @@
   "gold": "Tôi muốn xem lại sao kê ngay bây giờ. Tôi cần có chuyện gấp.",
   "predicted": "Tôi muốn xem lại sao ok ngay bây giờ tôi còn có chân đắp",
   "unintelligible": false,
-  "wer": 0.21428571428571427,
-  "werEdits": 3,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "tôi muốn xem lại sao kê ngay bây giờ tôi cần có chuyện gấp",
-  "werNormalizedPredicted": "tôi muốn xem lại sao kê ngay bây giờ tôi còn có chân đắp",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedPredicted": "tôi muốn xem lại sao ok ngay bây giờ tôi còn có chân đắp",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi muốn xem lại sao kê ngay bây giờ tôi cần có chuyện gấp",
-  "sigWerNormalizedPredicted": "tôi muốn xem lại sao kê ngay bây giờ tôi còn có chân đắp",
+  "sigWerNormalizedPredicted": "tôi muốn xem lại sao ok ngay bây giờ tôi còn có chân đắp",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'cần' to 'còn' at position 10",
-      "reason": "'cần' means 'need' while 'còn' means 'still' or 'remain'; this changes the intent of the sentence significantly.",
+      "error": "Substitution: 'kê' to 'ok' at position 5",
+      "reason": "'kê' (statement/account) is replaced with 'ok', which is an English word and does not fit the context, making the sentence incoherent.",
       "score": 1
     },
     {
+      "error": "Substitution: 'cần' to 'còn' at position 10",
+      "reason": "'cần' (need) is replaced with 'còn' (still), which changes the meaning of the sentence but does not make it incoherent.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'chuyện' to 'chân' at position 12",
-      "reason": "'chuyện' means 'matter/issue' while 'chân' means 'leg'; this substitution makes the sentence incoherent and changes the meaning completely.",
+      "reason": "'chuyện' (matter/issue) is replaced with 'chân' (leg), which makes the sentence incoherent and changes the meaning significantly.",
       "score": 1
     }
   ]

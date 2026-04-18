@@ -1,21 +1,26 @@
 {
   "gold": "Số điện thoại chưa chính xác. Số điện thoại là cộng 84.",
-  "predicted": "số điện thoại của chị say số điện thoại là cộng tám mươi tư",
+  "predicted": "Số điện thoại di động gì sấy, số điện thoại là cộng tám mươi tư",
   "unintelligible": false,
-  "wer": 0.21428571428571427,
-  "werEdits": 3,
+  "wer": 0.35714285714285715,
+  "werEdits": 5,
   "werRefWords": 14,
   "werNormalizedGold": "số điện thoại chưa chính xác số điện thoại là cộng tám mươi bốn",
-  "werNormalizedPredicted": "số điện thoại của chị say số điện thoại là cộng tám mươi bốn",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "số điện thoại di động gì sấy số điện thoại là cộng tám mươi tư",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "số điện thoại chưa chính xác số điện thoại là cộng tám mươi bốn",
-  "sigWerNormalizedPredicted": "số điện thoại của chị say số điện thoại là cộng tám mươi bốn",
+  "sigWerNormalizedPredicted": "số điện thoại di động gì sấy số điện thoại là cộng tám mươi tư",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'chưa' to 'của' at position 3",
-      "reason": "'chưa chính xác' means 'not correct', while 'của chị' means 'of you (female)'. This changes the meaning of the sentence from indicating the phone number is incorrect to referring to someone's phone number, which is a significant change in meaning.",
+      "error": "Substitution: 'chưa' to 'động' at position 3",
+      "reason": "'di' is inserted and changes the meaning of the sentence, making it incoherent and unrelated to the original intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 13",
+      "reason": "Substituting 'chưa' (not yet) with 'động' (mobile) changes the meaning of the sentence significantly, leading to a loss of the intended message.",
       "score": 1
     }
   ]

@@ -2,20 +2,25 @@
   "gold": "Đúng vậy.",
   "predicted": "À, rùm bai",
   "unintelligible": false,
-  "wer": 1.5,
-  "werEdits": 3,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "dung vay",
-  "werNormalizedPredicted": "a rum bai",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "đúng vậy",
+  "werNormalizedPredicted": "bai",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "dung vay",
-  "sigWerNormalizedPredicted": "a rum bai",
+  "sigWerNormalizedGold": "đúng vậy",
+  "sigWerNormalizedPredicted": "bai",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dung' to 'rum' at position 0",
-      "reason": "The word 'a' is inserted at the beginning, which is not present in the expected phrase and changes the meaning of the sentence.",
+      "error": "Substitution: 'đúng' to 'bai' at position 0",
+      "reason": "'bai' is a completely different word from 'đúng', changing the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'vậy' at position 1",
+      "reason": "Omitting 'vậy' removes part of the expected phrase, further altering the intended meaning.",
       "score": 1
     }
   ]

@@ -2,30 +2,25 @@
   "gold": "¿Tiene el límite de la tarjeta original o es límite menor?",
   "predicted": "¿Tiene el mismo límite que la tar-tarjeta original o es un límite menor?",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werEdits": 3,
+  "wer": 0.45454545454545453,
+  "werEdits": 5,
   "werRefWords": 11,
-  "werNormalizedGold": "tiene el limite de la tarjeta original o es limite menor",
+  "werNormalizedGold": "tiene el límite de la tarjeta original o es límite menor",
   "werNormalizedPredicted": "tiene el mismo limite que la tarjeta original o es un limite menor",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "tiene el limite de la tarjeta original o es limite menor",
+  "sigWerNormalizedGold": "tiene el límite de la tarjeta original o es límite menor",
   "sigWerNormalizedPredicted": "tiene el mismo limite que la tarjeta original o es un limite menor",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'mismo' at position 2",
-      "reason": "'mismo' (same) adds clarification but does not change the overall meaning of the sentence.",
+      "error": "Substitution: 'límite' to 'limite' at position 2",
+      "reason": "'mismo' (same) is added, but it does not significantly change the meaning of the sentence, as both versions refer to the limit of the original card.",
       "score": 2
     },
     {
-      "error": "Substitution: 'de' to 'que' at position 3",
-      "reason": "The substitution of 'de' (of) to 'que' (that) slightly changes the grammatical structure but the meaning remains clear in context.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: 'un' at position 9",
-      "reason": "The insertion of 'un' (a) before 'limite menor' is a minor grammatical addition and does not affect the meaning.",
+      "error": "Substitution: 'límite' to 'limite' at position 9",
+      "reason": "The only difference is the missing accent on 'límite', which does not affect meaning in this context.",
       "score": 3
     }
   ]

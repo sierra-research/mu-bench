@@ -1,16 +1,27 @@
 {
   "gold": "M A R I A punto L O P E Z arroba E M A I L.",
-  "predicted": "maria.lopez@gmail",
+  "predicted": "maria.lopez@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
   "werRefWords": 17,
   "werNormalizedGold": "m a r i a punto l o p e z arroba e m a i l",
-  "werNormalizedPredicted": "m a r i a punto l o p e z arroba e m a i l",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "m a r i a punto l o p e z arroba g m a i l punto c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "m a r i a punto l o p e z arroba e m a i l",
-  "sigWerNormalizedPredicted": "m a r i a punto l o p e z arroba e m a i l",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "m a r i a punto l o p e z arroba g m a i l punto c o m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'g' at position 12",
+      "reason": "The domain part of the email is spelled out, and 'e' vs 'g' changes the email provider from 'email' to 'gmail', which is a significant error as it results in a completely different email address.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'punto' at position 17",
+      "reason": "Adding 'punto' and the following 'c o m' changes the email from a domain without a TLD to a full domain with '.com'. This is a significant error as it changes the actual email address.",
+      "score": 1
+    }
+  ]
 }

@@ -1,36 +1,36 @@
 {
   "gold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
-  "predicted": "Ama öyle değil. 2024 yılı, tekrar söylüyorum, 2024 yılı için Ocak, Aralık ayları arasında hesap etmek istiyorum.",
+  "predicted": "Ama öyle değil. 2024 tekrar söylüyorum. 2024 yılı için Ocak-Aralık ayları arasında kesimek istiyorum.",
   "unintelligible": false,
   "wer": 0.4444444444444444,
   "werEdits": 8,
   "werRefWords": 18,
-  "werNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstremi istiyorum",
-  "werNormalizedPredicted": "ama oyle degil iki bin yirmi dort yili tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasinda hesap etmek istiyorum",
-  "significantWer": 0.1111111111111111,
+  "werNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "werNormalizedPredicted": "ama öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasında kesimek istiyorum",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstremi istiyorum",
-  "sigWerNormalizedPredicted": "ama oyle degil iki bin yirmi dort yili tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasinda hesap etmek istiyorum",
+  "sigWerNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "sigWerNormalizedPredicted": "ama öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasında kesimek istiyorum",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'ama' at position 0",
-      "reason": "'anna' is a name or address, while 'ama' means 'but' in Turkish; this changes the meaning and context of the sentence.",
+      "reason": "'anna' is a name or address, 'ama' means 'but' in Turkish; this changes the meaning and context of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'iki' at position 3",
-      "reason": "The extra 'iki' (meaning 'two') is a repetition but does not significantly change the meaning, as the year is still clear.",
+      "reason": "The extra 'iki' (two) repeats the year phrase, but does not derail the overall meaning; it is a minor error.",
       "score": 2
     },
     {
-      "error": "Substitution: 'arasindaki' to 'arasinda' at position 14",
-      "reason": "'arasindaki' means 'between' (possessive), while 'arasinda' means 'between' (locative); the meaning is nearly the same in this context.",
-      "score": 3
+      "error": "Substitution: 'arasındaki' to 'arasında' at position 14",
+      "reason": "'arasındaki' means 'between', 'arasında' means 'among' or 'in between'; in this context, the meaning is only slightly changed and the intent is still clear.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'ekstremi' to 'etmek' at position 16",
-      "reason": "'ekstremi' means 'my statement', while 'etmek' means 'to do/make'; this changes the request from asking for a statement to asking to do something, which is a significant change.",
+      "error": "Deletion: 'ekstremi' at position 16",
+      "reason": "Omitting 'ekstremi' (my statement) removes the object of the request, making the sentence incomplete and unclear.",
       "score": 1
     }
   ]

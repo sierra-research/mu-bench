@@ -2,15 +2,26 @@
   "gold": "Ashley dot Brown at email dot com.",
   "predicted": "ashley.brown@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "ashley brown at email com",
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "ashley dot brown at email dot com",
   "werNormalizedPredicted": "ashley brown at email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "ashley brown at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ashley dot brown at email dot com",
   "sigWerNormalizedPredicted": "ashley brown at email com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'dot' at position 1",
+      "reason": "Omitting 'dot' in an email address can cause confusion and make the address invalid, significantly affecting the meaning and usability.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 5",
+      "reason": "Omitting 'dot' before 'com' in an email address makes the address invalid and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

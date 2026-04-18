@@ -1,16 +1,27 @@
 {
   "gold": "你可以说是的，是，是这样。",
-  "predicted": "你可以说,是的,是是这样的。",
+  "predicted": "嗯,你可以说是个,是是这样的。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "你 可以 说 是 的 是 是 这样",
-  "werNormalizedPredicted": "你 可以 说 是 的 是 是 这样",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你可以说是的 是 是这样",
+  "werNormalizedPredicted": "你可以说是个 是是这样的",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "你 可 以 说 是 的 是 是 这 样",
-  "sigWerNormalizedPredicted": "你 可 以 说 是 的 是 是 这 样",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 可 以 说 是 个 是 是 这 样 的",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '的' to '个' at position 5",
+      "reason": "'的' and '个' are both common particles in Chinese, but they serve different grammatical functions. In this context, substituting '的' with '个' does not significantly change the overall meaning of the sentence, though it is a minor grammatical error.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '的' at position 10",
+      "reason": "The insertion of '的' at the end does not change the meaning of the sentence, as it is a common sentence-ending particle in Chinese and does not affect the core message.",
+      "score": 3
+    }
+  ]
 }

@@ -2,21 +2,21 @@
   "gold": "Takip numaram C N 9 9 5 9'du, değil mi?",
   "predicted": "Takip numaram CN99599 değil mi?",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
-  "werRefWords": 13,
-  "werNormalizedGold": "takip numaram c n doksan dokuz bin beş yüz doksan dokuzdu değil mi",
-  "werNormalizedPredicted": "takip numaram c n doksan dokuz bin beş yüz doksan dokuz değil mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "takip numaram c n doksan dokuz bin beş yüz doksan dokuzdu değil mi",
-  "sigWerNormalizedPredicted": "takip numaram c n doksan dokuz bin beş yüz doksan dokuz değil mi",
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "takip numaram c n dokuz dokuz beş dokuzdu değil mi",
+  "werNormalizedPredicted": "takip numaram c n dokuz dokuz beş dokuz dokuz değil mi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "takip numaram c n dokuz dokuz beş dokuzdu değil mi",
+  "sigWerNormalizedPredicted": "takip numaram c n dokuz dokuz beş dokuz dokuz değil mi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dokuzdu' to 'dokuz' at position 10",
-      "reason": "The word 'dokuzdu' means 'it was ninety-nine', while 'dokuz' means just 'ninety-nine'. The omission of the '-du' suffix removes the past tense aspect, but the main information (the number) is preserved and the overall meaning is still clear in context.",
-      "score": 2
+      "error": "Substitution: 'dokuzdu' to 'dokuz' at position 7",
+      "reason": "An extra 'dokuz' (nine) is inserted in the sequence of numbers, which changes the reference number and could lead to referencing the wrong item or record. This is a significant error as it alters the intended meaning.",
+      "score": 1
     }
   ]
 }

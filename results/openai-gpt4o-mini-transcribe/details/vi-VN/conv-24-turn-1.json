@@ -1,36 +1,36 @@
 {
   "gold": "Chào Anna nha. Mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
-  "predicted": "ờ Chả là nay mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
+  "predicted": "à Chả là này mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
   "unintelligible": false,
   "wer": 0.28125,
   "werEdits": 9,
   "werRefWords": 32,
   "werNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "werNormalizedPredicted": "chả là nay mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "significantWer": 0.09375,
-  "majorErrorsCount": 3,
+  "werNormalizedPredicted": "chả là này mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "sigWerNormalizedPredicted": "chả là nay mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "sigWerNormalizedPredicted": "chả là này mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạng mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
   "sigWerErrors": [
     {
       "error": "Substitution: 'chào' to 'chả' at position 0",
-      "reason": "'chào' is a greeting ('hello'), while 'chả' is a different word ('not' or 'pork sausage'), which changes the opening and tone of the sentence.",
+      "reason": "'chào' is a greeting ('hello'), while 'chả' is a different word ('not' or 'pork sausage'), which changes the intent of the opening and makes the sentence less coherent.",
       "score": 1
     },
     {
       "error": "Insertion: 'tiết' at position 9",
-      "reason": "The insertion of 'tiết' ('detail') in 'tối ưu chi tiết tối ưu chi tiêu' is a minor redundancy and does not change the overall meaning of optimizing personal spending.",
+      "reason": "The insertion of 'tiết' (making 'chi tiết tối ưu' instead of just 'tối ưu') adds unnecessary detail but does not significantly change the overall meaning of optimizing personal spending.",
       "score": 2
     },
     {
       "error": "Substitution: 'hạn' to 'hạng' at position 14",
-      "reason": "'hạn mức' (credit limit) is the correct financial term, while 'hạng mức' is incorrect and could confuse the meaning.",
-      "score": 1
+      "reason": "'hạn mức' means 'limit' (credit limit), while 'hạng mức' is not a standard phrase and could confuse the meaning, but the context still suggests a limit, so it's a minor error.",
+      "score": 2
     },
     {
       "error": "Substitution: 'thẻ' to 'về' at position 16",
-      "reason": "'thẻ tín dụng' means 'credit card', but 'về tín dụng' ('about credit') changes the meaning and omits the reference to the card.",
+      "reason": "'thẻ tín dụng' means 'credit card', but 'về tín dụng' ('about credit') changes the meaning and omits the specific reference to the card, which is significant for the context.",
       "score": 1
     }
   ]

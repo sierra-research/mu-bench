@@ -5,22 +5,22 @@
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "c n three seven eight nine",
-  "werNormalizedPredicted": "c n three g eight",
-  "significantWer": 0.3333333333333333,
+  "werNormalizedGold": "c n 三 七 八 九",
+  "werNormalizedPredicted": "c n 三 g 八种",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n three seven eight nine",
-  "sigWerNormalizedPredicted": "c n three g eight",
+  "sigWerNormalizedGold": "c n 三 七 八 九",
+  "sigWerNormalizedPredicted": "c n 三 g 八 种",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'seven' to 'g' at position 3",
-      "reason": "'seven' is a digit in a sequence, but 'g' is a letter; this changes the intended sequence and could cause significant confusion, especially in contexts like codes or serial numbers.",
+      "error": "Substitution: '七' to 'g' at position 3",
+      "reason": "'七' is the Chinese character for 'seven', while 'g' is an unrelated Latin letter. This substitution makes the sequence incoherent and breaks the intended meaning, especially in a context where a sequence of numbers is expected.",
       "score": 1
     },
     {
-      "error": "Deletion: 'nine' at position 5",
-      "reason": "Omitting 'nine' from a sequence of characters/numbers significantly alters the information, especially if this is a code or identifier.",
+      "error": "Substitution: '九' to '种' at position 5",
+      "reason": "'九' is the Chinese character for 'nine', while '种' means 'type' or 'kind' in Chinese and is not a number. This substitution disrupts the numeric sequence and changes the meaning significantly.",
       "score": 1
     }
   ]

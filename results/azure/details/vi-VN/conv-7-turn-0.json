@@ -2,15 +2,31 @@
   "gold": "Tôi làm mất thẻ. Tôi xin cấp lại, muốn hỏi chừng nào có?",
   "predicted": "Ờm tôi là mất cái thầy, tôi xin cấp lại, muốn hỏi coi là chừng nào có.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.38461538461538464,
+  "werEdits": 5,
   "werRefWords": 13,
   "werNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "werNormalizedPredicted": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi là mất cái thầy tôi xin cấp lại muốn hỏi coi là chừng nào có",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "sigWerNormalizedPredicted": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi là mất cái thầy tôi xin cấp lại muốn hỏi coi là chừng nào có",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'làm' to 'là' at position 1",
+      "reason": "'làm' means 'do/make' while 'là' means 'is/are', which changes the grammatical structure but the overall meaning is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'thầy' at position 3",
+      "reason": "The insertion of 'cái' (a classifier) does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'coi' at position 10",
+      "reason": "'thẻ' means 'card' while 'thầy' means 'teacher', which significantly changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

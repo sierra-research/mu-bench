@@ -2,20 +2,30 @@
   "gold": "No. ¿Entonces me puedes transferir con algún agente?",
   "predicted": "No, entonces, ¿me podrías transferir con algún agente?",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 1,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
-  "werNormalizedGold": "no entonces me puedes transferir con algun agente",
+  "werNormalizedGold": "número entonces me puedes transferir con algún agente",
   "werNormalizedPredicted": "no entonces me podrias transferir con algun agente",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "no entonces me puedes transferir con algun agente",
+  "sigWerNormalizedGold": "número entonces me puedes transferir con algún agente",
   "sigWerNormalizedPredicted": "no entonces me podrias transferir con algun agente",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) and 'no' (no) are completely different words and change the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'puedes' to 'podrias' at position 3",
-      "reason": "'puedes' (you can) and 'podrías' (you could) are both polite requests and the meaning of the sentence remains the same in context.",
+      "reason": "'puedes' (you can) and 'podrías' (you could) are different verb forms but the meaning in context is nearly the same (politeness/tense difference only).",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'algún' to 'algun' at position 6",
+      "reason": "The only difference is the accent mark, which does not change the meaning in this context.",
       "score": 3
     }
   ]

@@ -2,26 +2,26 @@
   "gold": "Tôi không thấy thông báo.",
   "predicted": "Rồi à? Không thấy cái thông báo.",
   "unintelligible": false,
-  "wer": 0.6,
-  "werEdits": 3,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
   "werNormalizedGold": "tôi không thấy thông báo",
-  "werNormalizedPredicted": "rồi à không thấy cái thông báo",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "không thấy cái thông báo",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "tôi không thấy thông báo",
-  "sigWerNormalizedPredicted": "rồi à không thấy cái thông báo",
+  "sigWerNormalizedPredicted": "không thấy cái thông báo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tôi' to 'à' at position 0",
-      "reason": "'rồi' is an extra word at the beginning, but it does not change the overall meaning of the sentence.",
+      "error": "Deletion: 'tôi' at position 0",
+      "reason": "The subject 'tôi' (I) is omitted, but the rest of the sentence still conveys the main message. In Vietnamese, omitting the subject is common and does not significantly change the meaning.",
       "score": 2
     },
     {
       "error": "Insertion: 'cái' at position 3",
-      "reason": "'tôi' (I) is replaced by 'à' (an interjection), which removes the subject but the main meaning (not seeing the notification) is still clear.",
-      "score": 2
+      "reason": "The word 'cái' is an article/classifier in Vietnamese and its insertion does not change the meaning of the sentence.",
+      "score": 3
     }
   ]
 }

@@ -2,21 +2,26 @@
   "gold": "Zeynep nokta Arslan at email nokta com.",
   "predicted": "Zynap nokta arslan et gmail nokta com",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
   "werNormalizedGold": "zeynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "zeynep nokta arslan at gmail nokta com",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "zynap nokta arslan et gmail nokta com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "zeynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "zeynep nokta arslan at gmail nokta com",
+  "sigWerNormalizedPredicted": "zynap nokta arslan et gmail nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'gmail' at position 4",
-      "reason": "'gmail' is a specific email provider, while 'email' is generic. This changes the actual address and could result in a message being sent to the wrong place, which is a significant error.",
-      "score": 1
+      "error": "Substitution: 'zeynep' to 'zynap' at position 0",
+      "reason": "Misspelling of a proper noun (name), but still phonetically similar and recognizable as the same person.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 3",
+      "reason": "'at' and 'et' are both used to represent the '@' symbol in email addresses, and are often confused in speech; meaning is preserved.",
+      "score": 3
     }
   ]
 }

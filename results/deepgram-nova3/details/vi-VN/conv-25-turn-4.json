@@ -2,15 +2,21 @@
   "gold": "OK. Số điện thoại của mình là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Ok số điện thoại của mình là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 22,
-  "werNormalizedGold": "okay so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "okay so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 22,
-  "sigWerNormalizedGold": "okay so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "okay so dien thoai cua minh la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam",
-  "sigWerErrors": []
+  "wer": 0.09523809523809523,
+  "werEdits": 2,
+  "werRefWords": 21,
+  "werNormalizedGold": "okay số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "okay số điện thoại của mình là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "okay số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "okay số điện thoại của mình là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'một' to 'mốt' at position 12",
+      "reason": "The insertion of 'mươi' changes the number from 'chín một một' (911) to 'chín mươi mốt' (91), which significantly alters the phone number and thus the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

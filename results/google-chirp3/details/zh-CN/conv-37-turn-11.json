@@ -2,15 +2,21 @@
   "gold": "嗯对的。",
   "predicted": "嗯,对了。",
   "unintelligible": false,
-  "wer": null,
-  "werEdits": null,
-  "werRefWords": null,
-  "werNormalizedGold": "",
-  "werNormalizedPredicted": "",
-  "significantWer": null,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 0,
-  "sigWerNormalizedGold": null,
-  "sigWerNormalizedPredicted": null,
-  "sigWerErrors": null
+  "wer": 0.5,
+  "werEdits": 1,
+  "werRefWords": 2,
+  "werNormalizedGold": "对的",
+  "werNormalizedPredicted": "对了",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "对 的",
+  "sigWerNormalizedPredicted": "对 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '的' to '了' at position 1",
+      "reason": "'的' and '了' have different grammatical functions in Chinese; substituting '的' (possessive/attributive marker) with '了' (aspect marker) changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

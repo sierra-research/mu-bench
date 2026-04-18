@@ -2,36 +2,56 @@
   "gold": "Sí, este, sí, ver si tienen bien la dirección porque ya han enviado las tarjetas a otra dirección diferente que no es la mía.",
   "predicted": "Y, este, si ver si tienen bien la dirección, porque ya me han-- ya han enviado las tarjetas a otra dirección diferente que no era la mía",
   "unintelligible": false,
-  "wer": 0.20833333333333334,
-  "werEdits": 5,
-  "werRefWords": 24,
-  "werNormalizedGold": "si este si ver si tienen bien la direccion porque ya han enviado las tarjetas a otra direccion diferente que no es la mia",
-  "werNormalizedPredicted": "y este si ver si tienen bien la direccion porque ya me han ya han enviado las tarjetas a otra direccion diferente que no era la mia",
-  "significantWer": 0.041666666666666664,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 24,
-  "sigWerNormalizedGold": "si este si ver si tienen bien la direccion porque ya han enviado las tarjetas a otra direccion diferente que no es la mia",
-  "sigWerNormalizedPredicted": "y este si ver si tienen bien la direccion porque ya me han ya han enviado las tarjetas a otra direccion diferente que no era la mia",
+  "wer": 0.391304347826087,
+  "werEdits": 9,
+  "werRefWords": 23,
+  "werNormalizedGold": "sí sí ver si tienen bien la dirección porque ya han enviado las tarjetas a otra dirección diferente que no es la mía",
+  "werNormalizedPredicted": "si ver si tienen bien la direccion porque ya me han ya han enviado las tarjetas a otra direccion diferente que no era la mia",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "sí sí ver si tienen bien la dirección porque ya han enviado las tarjetas a otra dirección diferente que no es la mía",
+  "sigWerNormalizedPredicted": "si ver si tienen bien la direccion porque ya me han ya han enviado las tarjetas a otra direccion diferente que no era la mia",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'si' to 'y' at position 0",
-      "reason": "'si' (yes/if) and 'y' (and) are different conjunctions; this changes the meaning at the start of the sentence, making it less coherent.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'me' at position 11",
-      "reason": "Adding 'me' (to me) slightly personalizes the sentence but does not significantly change the overall meaning.",
+      "error": "Substitution: 'sí' to 'si' at position 0",
+      "reason": "'sí' (with accent) means 'yes', while 'si' (without accent) means 'if'; in this context, the accent is important for meaning, but the overall intent is still clear.",
       "score": 2
     },
     {
-      "error": "Insertion: 'ya' at position 12",
-      "reason": "The extra 'ya' (already) is redundant but does not change the meaning of the sentence.",
+      "error": "Deletion: 'sí' at position 1",
+      "reason": "The repeated 'sí' (yes) is omitted, which slightly changes the emphasis but not the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'es' to 'era' at position 21",
-      "reason": "'es' (is) vs 'era' (was) changes the tense, but the overall meaning remains clear in context.",
+      "error": "Substitution: 'dirección' to 'direccion' at position 7",
+      "reason": "Missing accent on 'dirección' is a minor orthographic error, does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'me' at position 10",
+      "reason": "Insertion of 'me' changes the subject slightly ('ya me han' vs 'ya han'), but the overall meaning is preserved.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'ya' at position 11",
+      "reason": "Redundant 'ya' does not change the meaning, just a repetition.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'dirección' to 'direccion' at position 16",
+      "reason": "Missing accent on 'dirección' is a minor orthographic error, does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'es' to 'era' at position 20",
+      "reason": "Changing 'es' (is) to 'era' (was) alters the tense, which could affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'mía' to 'mia' at position 22",
+      "reason": "Missing accent on 'mía' is a minor orthographic error, does not affect meaning.",
+      "score": 3
     }
   ]
 }

@@ -2,15 +2,26 @@
   "gold": "你还没听到我的正确的姓名，我的姓名是君灵。",
   "predicted": "你还没听到我的正确的姓名我的姓名是dreamlin",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.10526315789473684,
+  "werEdits": 2,
   "werRefWords": 19,
-  "werNormalizedGold": "你 还 没 听 到 我 的 正确 的 姓名 我 的 姓名 是 君灵",
-  "werNormalizedPredicted": "你 还 没 听 到 我 的 正确 的 姓名 我 的 姓名 是 君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你还没听到我的正确的姓名 我的姓名是君灵",
+  "werNormalizedPredicted": "你还没听到我的正确的姓名 我的姓名是 dreamlin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 是 君 灵",
-  "sigWerNormalizedPredicted": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 是 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 是 dreamlin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamlin' at position 17",
+      "reason": "'君' is a Chinese character and 'dreamlin' is an English word; this is a substitution of a proper noun in a different language, which makes the name unrecognizable and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 18",
+      "reason": "The second character of the name is missing, making the name incomplete and unrecognizable, which is a significant error for a name.",
+      "score": 1
+    }
+  ]
 }

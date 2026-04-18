@@ -2,15 +2,21 @@
   "gold": "你不，你还不知道我的电子地址，你还。",
   "predicted": "你不,你还不知道我的电子邮址,你还",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.06666666666666667,
+  "werEdits": 1,
   "werRefWords": 15,
-  "werNormalizedGold": "你 不 你 还 不 知道 我 的 电子 地址 你 还",
-  "werNormalizedPredicted": "你 不 你 还 不 知道 我 的 电子 地址 你 还",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你不你还不知道我的电子地址你还",
+  "werNormalizedPredicted": "你不你还不知道我的电子邮址你还",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "你 不 你 还 不 知 道 我 的 电 子 地 址 你 还",
-  "sigWerNormalizedPredicted": "你 不 你 还 不 知 道 我 的 电 子 地 址 你 还",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 不 你 还 不 知 道 我 的 电 子 邮 址 你 还",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '地' to '邮' at position 11",
+      "reason": "'电子地址' means 'email address', while '电子邮址' is a non-standard but understandable variant. The substitution does not significantly change the meaning, as both refer to an email address, though '电子地址' is more standard. The overall meaning is preserved.",
+      "score": 2
+    }
+  ]
 }

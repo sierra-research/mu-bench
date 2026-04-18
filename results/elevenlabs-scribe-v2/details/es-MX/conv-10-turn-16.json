@@ -1,26 +1,36 @@
 {
   "gold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "predicted": "No, no, no, te falta, te falta el punto: cariria.lo@email.com",
+  "predicted": "No, no, no, te falta, te falta el punto:aría.lo@email.com",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 6,
   "werRefWords": 12,
-  "werNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "no te falta el punto cariria punto lo arroba email punto com",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "no no no te falta te falta el punto maría lo arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "no te falta el punto cariria punto lo arroba email punto com",
+  "sigWerNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "no no no te falta te falta el punto maría lo arroba email punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'maria' to 'cariria' at position 5",
-      "reason": "'cariria' is a completely different name from 'maria', which significantly changes the intended email address and could cause communication errors.",
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The repeated 'no' adds unnecessary negation, which could confuse the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'lopez' to 'lo' at position 7",
-      "reason": "'lo' is an incomplete and incorrect version of the surname 'lopez', which makes the email address invalid and unrecognizable.",
+      "error": "Insertion: 'te' at position 3",
+      "reason": "The repeated 'te falta' is redundant but does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'punto' to 'lo' at position 6",
+      "reason": "'lo' instead of 'punto' omits a critical part of the email address, making it incomplete and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lópez' at position 7",
+      "reason": "Omitting 'lópez' removes a key part of the email address, which is a significant error.",
       "score": 1
     }
   ]

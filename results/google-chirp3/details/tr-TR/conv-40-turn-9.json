@@ -2,15 +2,26 @@
   "gold": "Ahmet nokta Arslan, A R S L A N at email nokta com.",
   "predicted": "ahmet.arslan arslan@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "ahmet arslan arslan at email com",
-  "werNormalizedPredicted": "ahmet arslan arslan at email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "ahmet arslan arslan at email com",
-  "sigWerNormalizedPredicted": "ahmet arslan arslan at email com",
-  "sigWerErrors": []
+  "wer": 0.46153846153846156,
+  "werEdits": 6,
+  "werRefWords": 13,
+  "werNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "werNormalizedPredicted": "ahmet nokta arslan arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet nokta arslan arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'arslan' at position 3",
+      "reason": "Instead of spelling out the surname letter by letter, the model repeated the full word 'arslan' where only the letter 'a' was expected. This disrupts the intended spelling and could cause confusion in contexts like email addresses or usernames.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'r' at position 4",
+      "reason": "A letter is missing from the spelled-out surname, which changes the spelling and could result in an incorrect email address or identification.",
+      "score": 1
+    }
+  ]
 }

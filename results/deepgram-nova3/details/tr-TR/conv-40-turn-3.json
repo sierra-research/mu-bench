@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
   "werNormalizedPredicted": "siz de kredi ben anlamadım not alamadım",
-  "significantWer": 0.14285714285714285,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'tekrar' to 'de' at position 1",
-      "reason": "'tekrar edin' means 'repeat', while 'de kredi' means 'also credit', which changes the meaning of the sentence significantly and makes it incoherent.",
+      "reason": "'tekrar edin' means 'repeat', while 'de kredi' is unrelated and changes the meaning of the instruction, making the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'alamadım' to 'anlamadım' at position 4",
-      "reason": "'alamadım' means 'I couldn't get', while 'anlamadım' means 'I didn't understand'; this changes the meaning of the sentence but does not derail the overall context, as both indicate a problem with comprehension or receipt.",
+      "reason": "'alamadım' means 'I couldn't get (it)', while 'anlamadım' means 'I didn't understand'; this changes the meaning of the sentence but does not derail it completely, as both indicate a problem with comprehension or receipt.",
       "score": 2
     }
   ]

@@ -5,27 +5,27 @@
   "wer": 0.3333333333333333,
   "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "podria pedir un pago en cuotas de la factura",
-  "werNormalizedPredicted": "podria un pago cuota de la factura",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "podría pedir un pago en cuotas de la factura",
+  "werNormalizedPredicted": "podría un pago cuota de la factura",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "podria pedir un pago en cuotas de la factura",
-  "sigWerNormalizedPredicted": "podria un pago cuota de la factura",
+  "sigWerNormalizedGold": "podría pedir un pago en cuotas de la factura",
+  "sigWerNormalizedPredicted": "podría un pago cuota de la factura",
   "sigWerErrors": [
     {
       "error": "Deletion: 'pedir' at position 1",
-      "reason": "'pedir' (to request) is omitted, which removes the action from the sentence and makes the meaning incomplete.",
+      "reason": "'pedir' (to request) is omitted, which removes the action from the sentence and changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'en' to 'cuota' at position 4",
-      "reason": "The preposition 'en' (in) is replaced by 'cuota' (installment), which disrupts the grammatical structure but the general intent is still somewhat understandable.",
-      "score": 2
+      "reason": "'en' (in) is replaced by 'cuota' (installment), which disrupts the grammatical structure and meaning of the request.",
+      "score": 1
     },
     {
       "error": "Deletion: 'cuotas' at position 5",
-      "reason": "Omitting 'cuotas' (installments) changes the payment method being requested, which is a significant detail.",
+      "reason": "Omitting 'cuotas' (installments) changes the payment method being requested, altering the intent of the sentence.",
       "score": 1
     }
   ]

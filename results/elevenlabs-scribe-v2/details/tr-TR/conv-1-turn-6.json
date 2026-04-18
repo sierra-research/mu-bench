@@ -2,20 +2,25 @@
   "gold": "Uygulama. Tamam gönderin, ben bildirimi tıklayacağım hemen şimdi.",
   "predicted": "Uygulama... Tabi gönderin. Ben bildirime tıklayacağım hemen şimdi",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 1,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "uygulama tamam gönderin ben bildirimi tıklayacağım hemen şimdi",
-  "werNormalizedPredicted": "uygulama tamam gönderin ben bildirime tıklayacağım hemen şimdi",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "uygulama tabi gönderin ben bildirime tıklayacağım hemen şimdi",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "uygulama tamam gönderin ben bildirimi tıklayacağım hemen şimdi",
-  "sigWerNormalizedPredicted": "uygulama tamam gönderin ben bildirime tıklayacağım hemen şimdi",
+  "sigWerNormalizedPredicted": "uygulama tabi gönderin ben bildirime tıklayacağım hemen şimdi",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'tamam' to 'tabi' at position 1",
+      "reason": "'tamam' means 'okay' or 'alright', while 'tabi' means 'of course' or 'sure'. The intent is similar and does not change the overall meaning of the sentence.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'bildirimi' to 'bildirime' at position 4",
-      "reason": "The substitution changes the case ending from accusative ('bildirimi' - 'the notification') to dative ('bildirime' - 'to the notification'). In this context, both could be understood as referring to interacting with the notification, and the overall meaning of the sentence is preserved.",
+      "reason": "'bildirimi' (the notification, accusative) vs 'bildirime' (to my notification, dative). This is a minor grammatical error and does not change the overall meaning of the sentence.",
       "score": 2
     }
   ]

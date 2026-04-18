@@ -2,31 +2,26 @@
   "gold": "Hello? Can you give what is 7 6 2?",
   "predicted": "Can you what is 762?",
   "unintelligible": false,
-  "wer": 0.4444444444444444,
-  "werEdits": 4,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "hello can you give what is seven six two",
-  "werNormalizedPredicted": "can you what is seven hundred sixty two",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "can you what is seven six two",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "hello can you give what is seven six two",
-  "sigWerNormalizedPredicted": "can you what is seven hundred sixty two",
+  "sigWerNormalizedPredicted": "can you what is seven six two",
   "sigWerErrors": [
     {
       "error": "Deletion: 'hello' at position 0",
-      "reason": "'hello' is a greeting and its omission does not affect the main meaning of the sentence.",
+      "reason": "'hello' is a greeting and its omission does not affect the main meaning of the sentence, which is a request for information.",
       "score": 2
     },
     {
       "error": "Deletion: 'give' at position 3",
-      "reason": "Omitting 'give' slightly changes the structure but the main request is still clear.",
+      "reason": "Omitting 'give' changes the sentence structure and makes the request less clear, but the intent of asking for 'what is seven six two' is still understandable.",
       "score": 2
-    },
-    {
-      "error": "Substitution: 'six' to 'sixty' at position 7",
-      "reason": "Inserting 'hundred' changes the number from 762 to 762 (seven hundred sixty two), which is numerically equivalent to 'seven six two' in this context, so the meaning is preserved.",
-      "score": 3
     }
   ]
 }

@@ -2,15 +2,21 @@
   "gold": "我还没说我的邮箱地址。",
   "predicted": "我还没说我的有相地址。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "我还没说我的邮箱地址",
-  "werNormalizedPredicted": "我还没说我的邮箱地址",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我还没说我的有相地址",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 还 没 说 我 的 邮 箱 地 址",
-  "sigWerNormalizedPredicted": "我 还 没 说 我 的 邮 箱 地 址",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 还 没 说 我 的 有 相 地 址",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '有' at position 6",
+      "reason": "'邮' (mail) and '有' (have) are completely different words; this substitution changes the meaning of the phrase '邮箱' (email address) to '有相', which is not meaningful in this context and derails the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

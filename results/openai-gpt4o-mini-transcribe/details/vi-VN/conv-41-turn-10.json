@@ -1,27 +1,32 @@
 {
   "gold": "Chưa phải. Số điện thoại là cộng 84 1 2. Xin đọc lại. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Chưa phải, số điện thoại là cộng tám mươi bốn một hai cộng xin lặp lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "Chứ phải số điện thoại là cộng tám mươi bốn một hai, rồi xin gặp lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.06896551724137931,
-  "werEdits": 2,
+  "wer": 0.10344827586206896,
+  "werEdits": 3,
   "werRefWords": 29,
   "werNormalizedGold": "chưa phải số điện thoại là cộng tám mươi bốn một hai xin đọc lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "chưa phải số điện thoại là cộng tám mươi bốn một hai cộng xin lặp lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "chứ phải số điện thoại là cộng tám mươi bốn một hai rồi xin gặp lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 29,
   "sigWerNormalizedGold": "chưa phải số điện thoại là cộng tám mươi bốn một hai xin đọc lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "chưa phải số điện thoại là cộng tám mươi bốn một hai cộng xin lặp lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "chứ phải số điện thoại là cộng tám mươi bốn một hai rồi xin gặp lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'cộng' at position 12",
-      "reason": "The extra 'cộng' (meaning 'plus' or 'country code') is inserted before 'xin lặp lại'. This does not change the overall meaning of the sentence, as it is a repetition and does not derail the intent or information.",
+      "error": "Substitution: 'chưa' to 'chứ' at position 0",
+      "reason": "'chưa' (not yet) and 'chứ' (but/though) have different meanings and can change the intent of the sentence, potentially confusing the listener.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'rồi' at position 12",
+      "reason": "The insertion of 'rồi' (already/then) adds a temporal aspect but does not significantly change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'đọc' to 'lặp' at position 13",
-      "reason": "'đọc lại' means 'read again', while 'lặp lại' means 'repeat'. In this context, both phrases serve a similar function (asking to repeat or read again), so the meaning is preserved.",
-      "score": 3
+      "error": "Substitution: 'đọc' to 'gặp' at position 13",
+      "reason": "'đọc' (read) and 'gặp' (meet) are completely different actions, which changes the instruction from 'please read again' to 'please meet again', significantly altering the meaning.",
+      "score": 1
     }
   ]
 }

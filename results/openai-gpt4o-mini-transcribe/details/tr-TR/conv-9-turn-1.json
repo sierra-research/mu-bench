@@ -1,21 +1,26 @@
 {
   "gold": "Tamam. Buyurun, buyurun evet.",
-  "predicted": "Evet.",
+  "predicted": "Evet. Evet.",
   "unintelligible": false,
   "wer": 0.75,
   "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "tamam buyurun buyurun evet",
-  "werNormalizedPredicted": "evet",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "evet evet",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "tamam buyurun buyurun evet",
-  "sigWerNormalizedPredicted": "evet",
+  "sigWerNormalizedPredicted": "evet evet",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'tamam' at position 0",
-      "reason": "Omitting 'tamam' removes an initial acknowledgment or confirmation, which can change the tone or intent of the sentence significantly.",
+      "error": "Substitution: 'tamam' to 'evet' at position 0",
+      "reason": "'tamam' means 'okay' and 'evet' means 'yes' in Turkish; substituting 'okay' with 'yes' changes the meaning of the response, which can affect the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'buyurun' at position 1",
+      "reason": "'buyurun' means 'here you go' or 'please' in Turkish and is an important part of the expected phrase. Its omission removes a polite or directive element, which changes the tone and meaning of the sentence.",
       "score": 1
     }
   ]

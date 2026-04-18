@@ -1,16 +1,22 @@
 {
   "gold": "你，我的邮箱地址是美玲 at email dot com。",
-  "predicted": "nei,我的邮箱地址是mailing@email.com。",
+  "predicted": "我的邮箱地址是mei-ling@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "你 我的邮箱地址是美玲 at email dot com",
-  "werNormalizedPredicted": "你 我的邮箱地址是美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的邮箱地址是美玲 at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "你 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "你 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '你' at position 0",
+      "reason": "The word '你' (you) is missing at the beginning, which changes the subject of the sentence from 'you' to an ambiguous or missing subject. This significantly alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

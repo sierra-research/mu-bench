@@ -7,26 +7,26 @@
   "werRefWords": 11,
   "werNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
   "werNormalizedPredicted": "yalnız bir rakı adımın ikinci harfi yanlış olduğu zeynep değil zeynep",
-  "significantWer": 0.18181818181818182,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
   "sigWerNormalizedPredicted": "yalnız bir rakı adımın ikinci harfi yanlış olduğu zeynep değil zeynep",
   "sigWerErrors": [
     {
       "error": "Substitution: 'dakika' to 'rakı' at position 2",
-      "reason": "'dakika' (minute) and 'rakı' (a type of alcoholic drink) are completely different words and this substitution changes the meaning of the sentence significantly.",
+      "reason": "'dakika' means 'minute' and 'rakı' is an alcoholic beverage; this substitution changes the meaning of the sentence significantly and makes it incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'oldu' to 'olduğu' at position 7",
-      "reason": "The difference between 'oldu' (became/happened) and 'olduğu' (that is/which is) is minor in this context and does not significantly change the meaning of the sentence.",
+      "reason": "'oldu' (became/happened) and 'olduğu' (that it is/was) are similar but the tense and structure change is minor in this context and does not derail the meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 10",
-      "reason": "The distinction between 'zaynep' and 'zeynep' is the main point of the sentence, as it is about the correct spelling of the name. Using the wrong spelling here is a significant error.",
-      "score": 1
+      "reason": "The difference is a single letter in a proper noun, but both are recognizable Turkish names and the meaning is clear in context.",
+      "score": 2
     }
   ]
 }

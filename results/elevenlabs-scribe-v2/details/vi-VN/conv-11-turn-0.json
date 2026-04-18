@@ -2,15 +2,31 @@
   "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
   "predicted": "Ờ, xin chào. Tôi à, đây là tôi làm mất thẻ á. Cái à, tôi xin cấp thẻ mới. Giờ muốn hỏi coi là à, hiện tại khi nào chuẩn bị có",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
   "werRefWords": 21,
   "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "werNormalizedPredicted": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "xin chào tôi đây là tôi làm mất thẻ cái tôi xin cấp thẻ mới giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "sigWerNormalizedPredicted": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "xin chào tôi đây là tôi làm mất thẻ cái tôi xin cấp thẻ mới giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'đây' at position 3",
+      "reason": "'đây' (here/this) adds a self-identification phrase ('tôi đây là tôi'), which is redundant but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 6",
+      "reason": "'cái' (classifier for objects) before 'thẻ' (card) is a minor grammatical addition in Vietnamese and does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'coi' at position 14",
+      "reason": "'coi' (to see/check) is an extra word that does not change the intent or meaning of the question.",
+      "score": 3
+    }
+  ]
 }

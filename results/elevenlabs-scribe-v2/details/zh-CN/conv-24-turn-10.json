@@ -1,16 +1,32 @@
 {
   "gold": "邮箱地址是林美 at email 点 com。",
-  "predicted": "我的邮箱地址是linmei at email.com。",
+  "predicted": "我的邮箱地址是linmei at email点com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 13,
-  "werNormalizedGold": "我的邮箱地址是林美 at email 点 com",
-  "werNormalizedPredicted": "我的邮箱地址是林美 at email 点 com",
-  "significantWer": 0.0,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
+  "werRefWords": 11,
+  "werNormalizedGold": "邮箱地址是林美 at email 点 com",
+  "werNormalizedPredicted": "我的邮箱地址是 linmei at email 点 com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 林 美 at email 点 com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 林 美 at email 点 com",
-  "sigWerErrors": []
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "邮 箱 地 址 是 林 美 at email 点 com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 linmei at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '我' at position 0",
+      "reason": "The addition of '我' (I) does not change the meaning of the sentence, as it simply makes the subject explicit.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '林' to 'linmei' at position 5",
+      "reason": "'林美' is a Chinese name, and 'linmei' is the pinyin representation of the same name. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '美' at position 6",
+      "reason": "'林美' is a full name, but 'linmei' in the actual transcription represents both characters together, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

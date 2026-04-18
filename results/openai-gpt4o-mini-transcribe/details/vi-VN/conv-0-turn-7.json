@@ -1,16 +1,32 @@
 {
   "gold": "Email chính xác là minh chấm trần a còng email chấm com.",
-  "predicted": "Email chính xác là minh.trần@email.com",
+  "predicted": "Email chính xác là minh.trầna cộng email chấm cơm",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
   "werRefWords": 12,
   "werNormalizedGold": "email chính xác là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email chính xác là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email chính xác là minh chấm trầna cộng email chấm cơm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "email chính xác là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email chính xác là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email chính xác là minh chấm trầna cộng email chấm cơm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trầna' at position 6",
+      "reason": "The actual word 'trầna' appears to be a misspelling or concatenation of 'trần' and 'a', which could cause confusion in an email address, but the intended meaning is still somewhat clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'còng' at position 8",
+      "reason": "'còng' (the Vietnamese word for '@') is missing, which is critical for an email address and makes the email invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'cơm' at position 11",
+      "reason": "'com' (as in '.com') is replaced with 'cơm' (which means 'rice' in Vietnamese), changing the domain and making the email address invalid.",
+      "score": 1
+    }
+  ]
 }

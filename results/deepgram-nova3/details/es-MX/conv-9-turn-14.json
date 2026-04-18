@@ -7,7 +7,7 @@
   "werRefWords": 3,
   "werNormalizedGold": "urión treinta tlatilco",
   "werNormalizedPredicted": "unión treinta platícoco",
-  "significantWer": 0.6666666666666666,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "urión treinta tlatilco",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'urión' to 'unión' at position 0",
-      "reason": "'urión' and 'unión' are different words with different meanings; this changes the meaning of the sentence, especially if these are proper nouns or place names.",
+      "reason": "'urión' and 'unión' are different words with different meanings; 'unión' means 'union' while 'urión' is a proper noun or name. This changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'tlatilco' to 'platícoco' at position 2",
-      "reason": "'tlatilco' and 'platícoco' are completely different words, likely proper nouns or place names, and the substitution makes the sentence incoherent or refers to a different entity.",
+      "reason": "'tlatilco' is a specific place name, while 'platícoco' is not a recognizable word and is a significant distortion, making the sentence incoherent.",
       "score": 1
     }
   ]

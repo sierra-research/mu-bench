@@ -7,7 +7,7 @@
   "werRefWords": 13,
   "werNormalizedGold": "yedek kartla ana kartın bir farkı var mıdır acaba onu siz bilebiliyor musunuz",
   "werNormalizedPredicted": "yedek kartla anakartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "yedek kartla ana kartın bir farkı var mıdır acaba onu siz bilebiliyor musunuz",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'ana' to 'anakartın' at position 2",
-      "reason": "'anakartın' (of the motherboard) is a compound word that includes both 'ana' (main) and 'kartın' (of the card), so this substitution merges two words into one but preserves the meaning in context.",
-      "score": 3
+      "reason": "'anakartın' (of the motherboard) is a compound word that includes both 'ana' (main) and 'kartın' (your card's), so this substitution merges two words into one, but the meaning is preserved in context.",
+      "score": 2
     },
     {
       "error": "Deletion: 'kartın' at position 3",
-      "reason": "'kartın' is merged into 'anakartın' in the actual transcription, so the information is not lost, just combined. The meaning is preserved.",
+      "reason": "'kartın' is merged into 'anakartın' in the actual transcription, so the information is not lost, just combined; meaning is preserved.",
       "score": 3
     },
     {
       "error": "Substitution: 'onu' to 'bunu' at position 9",
-      "reason": "'onu' (that) and 'bunu' (this) are different demonstratives, but in this context, the meaning of the sentence is not significantly changed.",
+      "reason": "'onu' (that) and 'bunu' (this) refer to different things and can change the meaning of the sentence, as the reference shifts from 'that' to 'this'.",
       "score": 2
     }
   ]

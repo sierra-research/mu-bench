@@ -2,20 +2,25 @@
   "gold": "Hayır. Zaynep nokta, nokta.",
   "predicted": "Hayır Zeynep.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 2,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
-  "werNormalizedGold": "hayır zeynep nokta nokta",
+  "werNormalizedGold": "hayır zaynep nokta nokta",
   "werNormalizedPredicted": "hayır zeynep",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "hayır zeynep nokta nokta",
+  "sigWerNormalizedGold": "hayır zaynep nokta nokta",
   "sigWerNormalizedPredicted": "hayır zeynep",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 1",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "score": 2
+    },
+    {
       "error": "Deletion: 'nokta' at position 2",
-      "reason": "The word 'nokta' (meaning 'dot' or 'point') is omitted, which could be important if this is part of a name, email, or address. Omitting it can change the intended meaning or make the information incomplete.",
+      "reason": "'nokta' (meaning 'dot' or 'point') is omitted, which could be important if this is part of an email or web address, making the information incomplete.",
       "score": 1
     }
   ]

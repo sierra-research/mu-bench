@@ -2,15 +2,21 @@
   "gold": "C N 9 9 5.",
   "predicted": "CN dokuz yüz doksan beş.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n nine nine five",
-  "werNormalizedPredicted": "c n nine nine five",
-  "significantWer": 0.0,
+  "werNormalizedGold": "c n dokuz dokuz beş",
+  "werNormalizedPredicted": "c n dokuz yüz doksan beş",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n nine nine five",
-  "sigWerNormalizedPredicted": "c n nine nine five",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n dokuz dokuz beş",
+  "sigWerNormalizedPredicted": "c n dokuz yüz doksan beş",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dokuz' to 'doksan' at position 3",
+      "reason": "'yüz' means 'hundred' in Turkish, which changes the number being transcribed from 'nine nine five' (995) to 'nine hundred ninety five' (995). However, in Turkish, 'dokuz dokuz beş' (9 9 5) and 'dokuz yüz doksan beş' (995) are different ways to say the same number, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

@@ -2,21 +2,26 @@
   "gold": "Este sí, la fecha pues fue el 16 de noviembre de 2025. La hora fue pues aproximadamente 11 de la mañana y la sucursal pues es de ustedes en Azcapotzalco.",
   "predicted": "Este, sí, el la fecha, pues, fue el dieciséis de noviembre de dos mil veinticinco, la hora fue, pues, aproximadamente once de la mañana, y la sucursal, pues, es de ustedes en la que está en Azcapultzalco.",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 4,
-  "werRefWords": 32,
-  "werNormalizedGold": "este si la fecha pues fue el dieciseis de noviembre de dos mil veinticinco la hora fue pues aproximadamente once de la manana y la sucursal pues es de ustedes en azcapotzalco",
-  "werNormalizedPredicted": "este si la fecha pues fue el dieciseis de noviembre de dos mil veinticinco la hora fue pues aproximadamente once de la manana y la sucursal pues es de ustedes en la que esta en azcapotzalco",
-  "significantWer": 0.0,
+  "wer": 0.2413793103448276,
+  "werEdits": 7,
+  "werRefWords": 29,
+  "werNormalizedGold": "este sí la fecha fue el dieciséis de noviembre de dos mil veinticinco la hora fue aproximadamente once de la mañana y la sucursal es de ustedes en azcapotzalco",
+  "werNormalizedPredicted": "sí el la fecha fue el dieciséis de noviembre de dos mil veinticinco la hora fue aproximadamente once de la mañana y la sucursal es de ustedes en la que está en azcapultzalco",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 32,
-  "sigWerNormalizedGold": "este si la fecha pues fue el dieciseis de noviembre de dos mil veinticinco la hora fue pues aproximadamente once de la manana y la sucursal pues es de ustedes en azcapotzalco",
-  "sigWerNormalizedPredicted": "este si la fecha pues fue el dieciseis de noviembre de dos mil veinticinco la hora fue pues aproximadamente once de la manana y la sucursal pues es de ustedes en la que esta en azcapotzalco",
+  "totalWordsCount": 29,
+  "sigWerNormalizedGold": "este sí la fecha fue el dieciséis de noviembre de dos mil veinticinco la hora fue aproximadamente once de la mañana y la sucursal es de ustedes en azcapotzalco",
+  "sigWerNormalizedPredicted": "sí el la fecha fue el dieciséis de noviembre de dos mil veinticinco la hora fue aproximadamente once de la mañana y la sucursal es de ustedes en la que está en azcapultzalco",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'la' at position 31",
-      "reason": "The insertion of 'la que esta en' before 'azcapotzalco' adds a clarifying phrase ('the one that is in'), but does not change the overall meaning of the sentence, as it still refers to the same branch location.",
+      "error": "Substitution: 'este' to 'sí' at position 0",
+      "reason": "'este' is a demonstrative pronoun ('this'), while 'sí' is an affirmation ('yes'). This changes the meaning at the start of the sentence, but the rest of the sentence provides the main information. The overall meaning is mostly preserved, but the introduction is altered.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'azcapotzalco' to 'azcapultzalco' at position 28",
+      "reason": "The insertion of 'la' before 'que está en azcapultzalco' adds a clarifying article, but does not change the meaning of the sentence. The information about the branch location remains clear.",
+      "score": 3
     }
   ]
 }

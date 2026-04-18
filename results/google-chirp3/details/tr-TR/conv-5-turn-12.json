@@ -2,30 +2,25 @@
   "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
   "predicted": "Ya e-posta adresime erişemediğim sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
   "unintelligible": false,
-  "wer": 0.15789473684210525,
-  "werEdits": 3,
-  "werRefWords": 19,
-  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "werNormalizedPredicted": "ya e posta adresime erişemediğim sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "significantWer": 0.05263157894736842,
+  "wer": 0.1111111111111111,
+  "werEdits": 2,
+  "werRefWords": 18,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "e posta adresime erişemediğim sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "sigWerNormalizedPredicted": "ya e posta adresime erişemediğim sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "e posta adresime erişemediğim sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'ya' at position 0",
-      "reason": "'ya' is a discourse marker in Turkish, often used for emphasis or to start a sentence. Its presence does not change the meaning of the sentence.",
-      "score": 3
-    },
-    {
       "error": "Substitution: 'erişimim' to 'erişemediğim' at position 3",
-      "reason": "'erişimim' means 'my access', while 'erişemediğim' means 'that I cannot access'. This changes the meaning of the sentence significantly, as it shifts from stating a lack of access to specifying an inability to access, which could affect the interpretation of the situation.",
+      "reason": "'erişimim' means 'my access', while 'erişemediğim' means 'that I cannot access'. This changes the meaning of the sentence from stating lack of access to stating inability to access, which is a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'şu' at position 4",
-      "reason": "'şu' means 'these' or 'this' in Turkish and specifies the time frame. Its omission slightly reduces specificity but does not significantly alter the overall meaning of the sentence.",
+      "reason": "'şu' means 'these' or 'currently', and its omission removes the temporal context, but the main meaning of the sentence is still understandable.",
       "score": 2
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "林美。",
   "predicted": "Lingmi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "林美",
-  "werNormalizedPredicted": "林美",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "lingmi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "林 美",
-  "sigWerNormalizedPredicted": "林 美",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "lingmi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'lingmi' at position 0",
+      "reason": "The Chinese character '林' is replaced with the romanized string 'lingmi', which does not accurately represent the original character and changes the meaning. This is a significant error, especially for names or proper nouns in a different script.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "The character '美' is missing entirely from the actual transcription, omitting a significant part of the name. This is a significant error as it alters the identity being transcribed.",
+      "score": 1
+    }
+  ]
 }

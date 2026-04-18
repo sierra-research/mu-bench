@@ -1,16 +1,22 @@
 {
   "gold": "Email là thu chấm trần a còng email chấm com.",
-  "predicted": "Email là thu.trầna@gmail.com",
+  "predicted": "email là thu.tranA@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "email là thu trần a còng email chấm com",
-  "werNormalizedPredicted": "email là thu trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "email là thu trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là thu trần a còng email chấm com",
-  "sigWerErrors": []
+  "wer": 0.1,
+  "werEdits": 1,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là thu chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là thu chấm trana a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là thu chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là thu chấm trana a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trana' at position 4",
+      "reason": "'trần' is a Vietnamese surname, while 'trana' is not a valid Vietnamese word or name. This changes the email address and could result in an incorrect or undeliverable email, making it a significant error.",
+      "score": 1
+    }
+  ]
 }

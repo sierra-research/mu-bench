@@ -7,7 +7,7 @@
   "werRefWords": 19,
   "werNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
   "werNormalizedPredicted": "làm mất thẻ có sinh cặp lại thẻ muốn hỏi câu lạc khi nào nhận được cái thẻ đó không",
-  "significantWer": 0.21052631578947367,
+  "significantWer": 1,
   "majorErrorsCount": 4,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'xin' to 'sinh' at position 4",
-      "reason": "'xin' (to request) and 'sinh' (to be born) are completely different words and meanings; this changes the meaning of the sentence.",
+      "reason": "'xin' (to request) and 'sinh' (to give birth) are completely different in meaning, which makes the sentence confusing and changes the intent.",
       "score": 1
     },
     {
       "error": "Substitution: 'coi' to 'lạc' at position 10",
-      "reason": "'cấp lại thẻ' means 're-issue card', while 'cặp lại thẻ' is not a meaningful phrase in this context; this substitution makes the sentence confusing.",
+      "reason": "'cấp lại thẻ' means 'reissue card', while 'cặp lại thẻ' is not a meaningful phrase in this context, causing confusion.",
       "score": 1
     },
     {
       "error": "Deletion: 'thì' at position 13",
-      "reason": "The insertion of 'câu' (sentence) before 'lạc' does not fit the context and makes the sentence less coherent.",
+      "reason": "Inserting 'câu' (sentence) before 'lạc' does not make sense in this context and disrupts the meaning.",
       "score": 1
     },
     {
       "error": "Insertion: 'không' at position 19",
-      "reason": "'coi' (to see/check) and 'lạc' (lost) are unrelated in this context; this substitution changes the meaning and makes the sentence incoherent.",
+      "reason": "'coi' (to see/check) and 'lạc' (lost) are unrelated in this context, which changes the meaning of the question.",
       "score": 1
     }
   ]

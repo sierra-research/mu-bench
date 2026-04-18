@@ -7,25 +7,25 @@
   "werRefWords": 14,
   "werNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
   "werNormalizedPredicted": "and you can hear that snoring in the background we got a party",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
   "sigWerNormalizedPredicted": "and you can hear that snoring in the background we got a party",
   "sigWerErrors": [
     {
       "error": "Substitution: 'maybe' to 'and' at position 0",
-      "reason": "'Maybe' introduces uncertainty or possibility, while 'and' is a conjunction; this changes the nuance but not the core meaning of the sentence.",
+      "reason": "'Maybe' introduces uncertainty or possibility, while 'and' is a conjunction. This changes the nuance but does not derail the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'are' to 'got' at position 10",
-      "reason": "'We are going to party' vs. 'we got a party' changes the tense and slightly the meaning, but both indicate a party is happening; minor change.",
-      "score": 2
+      "reason": "'We are going to party' (future intent) vs. 'we got a party' (present possession or event). This changes the tense and meaning of the action, making it a significant error.",
+      "score": 1
     },
     {
       "error": "Deletion: 'to' at position 12",
-      "reason": "Omitting 'to' in 'going to party' vs. 'got a party' is part of the previous substitution and does not significantly alter the meaning.",
+      "reason": "Missing 'to' in 'going to party' makes the phrase less grammatical but the meaning is still understandable in context.",
       "score": 2
     }
   ]

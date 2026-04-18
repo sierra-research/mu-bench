@@ -1,21 +1,26 @@
 {
   "gold": "Quần jeans và vớ.",
-  "predicted": "quần jean và áo phở",
+  "predicted": "quần jean và váy",
   "unintelligible": false,
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "quần jeans và vớ",
-  "werNormalizedPredicted": "quần jeans và áo phở",
-  "significantWer": 0.25,
+  "werNormalizedPredicted": "quần jean và váy",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "quần jeans và vớ",
-  "sigWerNormalizedPredicted": "quần jeans và áo phở",
+  "sigWerNormalizedPredicted": "quần jean và váy",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'vớ' to 'phở' at position 3",
-      "reason": "The word 'áo' (shirt) is inserted where it should not be, introducing a new item of clothing and changing the meaning of the list.",
+      "error": "Substitution: 'jeans' to 'jean' at position 1",
+      "reason": "'Jeans' and 'jean' are closely related clothing items; in Vietnamese, 'quần jean' and 'quần jeans' are often used interchangeably to refer to denim pants. This does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'vớ' to 'váy' at position 3",
+      "reason": "'Vớ' means 'socks' and 'váy' means 'skirt' in Vietnamese. This substitution changes the meaning of the sentence significantly, as they refer to completely different items of clothing.",
       "score": 1
     }
   ]

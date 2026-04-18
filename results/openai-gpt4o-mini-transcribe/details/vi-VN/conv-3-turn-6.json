@@ -1,31 +1,26 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com.",
-  "predicted": "Email là vinhquocchung2000emailtrinhcuong",
+  "predicted": "Email là huynhquangchung2000email chính cường.",
   "unintelligible": false,
   "wer": 0.7,
   "werEdits": 7,
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là vinhquocchung hai nghìn email trinh cuong",
-  "significantWer": 0.3,
-  "majorErrorsCount": 3,
+  "werNormalizedPredicted": "email là huynhquangchung hai không không không email chính cường",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là vinhquocchung hai nghìn email trinh cuong",
+  "sigWerNormalizedPredicted": "email là huynhquangchung hai không không không email chính cường",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'minh' to 'vinhquocchung' at position 2",
-      "reason": "'minh' is a single name, while 'vinhquocchung' is a completely different name, changing the identity in the email address.",
+      "error": "Substitution: 'minh' to 'huynhquangchung' at position 2",
+      "reason": "The expected email username 'minh' is replaced with a completely different name 'huynhquangchung', which changes the identity and meaning of the email address.",
       "score": 1
     },
     {
-      "error": "Deletion: 'a' at position 5",
-      "reason": "Missing the 'a' (likely part of 'a còng' meaning '@'), which is essential for the correct email format.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'chấm' to 'trinh' at position 8",
-      "reason": "'chấm' means 'dot' ('.') in an email address, while 'trinh' is a completely unrelated word, making the email address incorrect.",
+      "error": "Substitution: 'chấm' to 'chính' at position 8",
+      "reason": "'chấm' (dot) is replaced with 'chính' (main/correct), which disrupts the structure of the email address and makes it invalid.",
       "score": 1
     }
   ]

@@ -1,16 +1,32 @@
 {
   "gold": "Jandarma, Ceyhan 1 9 9 5.",
-  "predicted": "Jandarma Ceyhan, 1.995",
+  "predicted": "Jandarma Ceyhan, bir dokuz dokuz beş.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "jandarma ceyhan one nine nine five",
-  "werNormalizedPredicted": "jandarma ceyhan one nine nine five",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "jandarma ceyhan one nine nine five",
-  "sigWerNormalizedPredicted": "jandarma ceyhan one nine nine five",
-  "sigWerErrors": []
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "jandarma ceyhan bin dokuz yüz doksan beş",
+  "werNormalizedPredicted": "jandarma ceyhan bir dokuz dokuz beş",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "jandarma ceyhan bin dokuz yüz doksan beş",
+  "sigWerNormalizedPredicted": "jandarma ceyhan bir dokuz dokuz beş",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bin' to 'bir' at position 2",
+      "reason": "'bin' means 'thousand' and 'bir' means 'one' in Turkish; this changes the number entirely and results in a completely different year.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yüz' to 'dokuz' at position 4",
+      "reason": "'yüz' means 'hundred' and 'dokuz' means 'nine'; this changes the structure of the number and results in a different year.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'doksan' at position 5",
+      "reason": "Omitting 'doksan' ('ninety') changes the year from 1995 to 1995 (incorrectly constructed), making the number incoherent.",
+      "score": 1
+    }
+  ]
 }

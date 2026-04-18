@@ -2,20 +2,25 @@
   "gold": "不是，但是能不能别要我的电话号码了。",
   "predicted": "不是但是能不能别用我的电话号码",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "不是但是能不能别要我的电话号码了",
-  "werNormalizedPredicted": "不是但是能不能别要我的电话号码",
-  "significantWer": 0.0,
+  "werNormalizedGold": "不是 但是能不能别要我的电话号码了",
+  "werNormalizedPredicted": "不是但是能不能别用我的电话号码",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "不 是 但 是 能 不 能 别 要 我 的 电 话 号 码 了",
-  "sigWerNormalizedPredicted": "不 是 但 是 能 不 能 别 要 我 的 电 话 号 码",
+  "sigWerNormalizedPredicted": "不 是 但 是 能 不 能 别 用 我 的 电 话 号 码",
   "sigWerErrors": [
     {
+      "error": "Substitution: '要' to '用' at position 8",
+      "reason": "'要' (want/need) and '用' (use) have different meanings, which changes the intent of the sentence from 'don't want my phone number' to 'don't use my phone number', but the overall request is similar (not to do something with the phone number), so the meaning is only slightly changed.",
+      "score": 2
+    },
+    {
       "error": "Deletion: '了' at position 15",
-      "reason": "The omission of '了' (a modal particle indicating completed action or change of state) slightly affects the aspect of the sentence but does not change the overall meaning. The request remains clear without it.",
+      "reason": "'了' is a modal particle indicating completion or change of state; omitting it slightly affects the tone but not the core meaning of the sentence.",
       "score": 2
     }
   ]

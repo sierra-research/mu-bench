@@ -2,15 +2,21 @@
   "gold": "我想提高我的信用卡额度。",
   "predicted": "我想提高我的信用，可二路",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 11,
-  "werNormalizedGold": "我想提高我的信用卡额度",
-  "werNormalizedPredicted": "我想提高我的信用卡额度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 额 度",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "我想提高我的信用卡额度。",
+  "werNormalizedPredicted": "我想提高我的信用，可二路",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度 。",
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 ， 可 二 路",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '卡' to '，' at position 8",
+      "reason": "The word '卡' (card) is replaced by a comma, which omits a key part of the intended meaning (credit card).",
+      "score": 1
+    }
+  ]
 }

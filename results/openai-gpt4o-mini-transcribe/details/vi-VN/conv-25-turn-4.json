@@ -2,15 +2,26 @@
   "gold": "OK. Số điện thoại của mình là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Ô kê, số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 20,
-  "werNormalizedGold": "okay so dien thoai cua minh la cong tam tu chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "okay so dien thoai cua minh la cong tam tu chin mot mot hai ba bon nam sau bay tam",
-  "significantWer": 0.0,
+  "wer": 0.09523809523809523,
+  "werEdits": 2,
+  "werRefWords": 21,
+  "werNormalizedGold": "okay số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "okay số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "okay so dien thoai cua minh la cong tam tu chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "okay so dien thoai cua minh la cong tam tu chin mot mot hai ba bon nam sau bay tam",
-  "sigWerErrors": []
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "okay số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "okay số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 9",
+      "reason": "'tám mươi bốn' (84) is a standard way to say 'eighty-four' in Vietnamese, while 'tám tư' is a colloquial way to say the same number. The meaning is preserved, just a different variant.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bốn' at position 10",
+      "reason": "'bốn' is omitted after 'tư', but in the colloquial form 'tám tư', 'bốn' is not needed. The number '84' is still clearly communicated, so the meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

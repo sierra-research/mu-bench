@@ -2,15 +2,26 @@
   "gold": "Không phải. Không phải. Minh chấm trần a còng email chấm com.",
   "predicted": "Không phải không phải minh chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
   "werRefWords": 12,
   "werNormalizedGold": "không phải không phải minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "không phải không phải minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "không phải không phải minh chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "không phải không phải minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "không phải không phải minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "không phải không phải minh chấm trầngmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 6",
+      "reason": "'trầngmail' merges 'trần' and 'gmail', losing the separation between the name and the email provider, which makes the email address incoherent and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 7",
+      "reason": "Missing the 'a' (which stands for 'a còng' or '@') in the email address makes the email invalid and unrecognizable as a proper email address.",
+      "score": 1
+    }
+  ]
 }

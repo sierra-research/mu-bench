@@ -1,17 +1,17 @@
 {
   "gold": "Son rakamı 8 değil 7 olacak.",
-  "predicted": "Sonra kamsekiz yedi yedi olacak.",
+  "predicted": "Sonra kam sekiz yedi yedi olacak.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werEdits": 4,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
-  "werNormalizedGold": "son rakami sekiz degil yedi olacak",
-  "werNormalizedPredicted": "sonra kamsekiz yedi yedi olacak",
-  "significantWer": 0.3333333333333333,
+  "werNormalizedGold": "son rakamı sekiz değil yedi olacak",
+  "werNormalizedPredicted": "sonra kam sekiz yedi yedi olacak",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "son rakami sekiz degil yedi olacak",
-  "sigWerNormalizedPredicted": "sonra kamsekiz yedi yedi olacak",
+  "sigWerNormalizedGold": "son rakamı sekiz değil yedi olacak",
+  "sigWerNormalizedPredicted": "sonra kam sekiz yedi yedi olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'son' to 'sonra' at position 0",
@@ -19,8 +19,8 @@
       "score": 1
     },
     {
-      "error": "Deletion: 'degil' at position 3",
-      "reason": "'degil' means 'not' in Turkish. Omitting this word reverses the intended meaning of the sentence, making it a significant error.",
+      "error": "Substitution: 'değil' to 'yedi' at position 3",
+      "reason": "'değil' means 'not', while 'yedi' means 'seven'. This substitution removes the negation and replaces it with a number, which changes the intended meaning of the sentence.",
       "score": 1
     }
   ]

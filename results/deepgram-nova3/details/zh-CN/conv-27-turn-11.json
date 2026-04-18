@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "林美 at email dot com",
   "werNormalizedPredicted": "林美 email com",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "林 美 at email dot com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'at' at position 2",
-      "reason": "Omitting 'at' removes the connector in the email address, making it unclear and potentially unusable as an email address.",
+      "reason": "Omitting 'at' removes the connector in the email address, making it unclear that this is an email format and potentially confusing the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'dot' at position 4",
-      "reason": "Omitting 'dot' from the email address format makes the address incomplete and unusable, significantly changing the meaning.",
+      "reason": "Omitting 'dot' from the email address makes it incomplete and not a valid email format, which significantly changes the meaning and usability of the information.",
       "score": 1
     }
   ]

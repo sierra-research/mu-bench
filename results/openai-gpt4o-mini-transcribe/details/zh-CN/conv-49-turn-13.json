@@ -1,16 +1,22 @@
 {
   "gold": "At email dot com。",
-  "predicted": "atemails.com",
+  "predicted": "at emails.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
   "werNormalizedGold": "at email dot com",
-  "werNormalizedPredicted": "at email dot com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "at emails dot com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "at email dot com",
-  "sigWerNormalizedPredicted": "at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "at emails dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'emails' at position 1",
+      "reason": "Pluralizing 'email' to 'emails' does not change the overall meaning in this context, as the phrase still refers to an email address format.",
+      "score": 2
+    }
+  ]
 }

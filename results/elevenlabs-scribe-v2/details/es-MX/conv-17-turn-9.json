@@ -2,15 +2,26 @@
   "gold": "Sí, es María López arroba email punto com.",
   "predicted": "Sí, es maria.lopez@e-mail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
-  "werNormalizedGold": "si es maria lopez arroba email punto com",
-  "werNormalizedPredicted": "si es maria lopez arroba email punto com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "sí es maría lópez arroba email punto com",
+  "werNormalizedPredicted": "sí es maria lópez arroba e mail punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "si es maria lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "si es maria lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sí es maría lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "sí es maria lópez arroba e mail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 2",
+      "reason": "Missing accent on 'í' in 'maría', but the name is still clearly recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 5",
+      "reason": "Splitting 'email' into 'e mail' does not change the meaning; both forms are commonly used and understood as the same word.",
+      "score": 3
+    }
+  ]
 }

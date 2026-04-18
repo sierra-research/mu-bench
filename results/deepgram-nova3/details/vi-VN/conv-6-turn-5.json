@@ -2,15 +2,26 @@
   "gold": "Đúng. C N 9 6 8.",
   "predicted": "Đúng CN chín trăm sáu mươi tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "đúng c n chín sáu tám",
-  "werNormalizedPredicted": "đúng c n chín sáu tám",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "đúng c n chín trăm sáu mươi tám",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "đúng c n chín sáu tám",
-  "sigWerNormalizedPredicted": "đúng c n chín sáu tám",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "đúng c n chín trăm sáu mươi tám",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 4",
+      "reason": "'trăm' (hundred) changes the number from 968 to 968 or 9680 depending on context, but in Vietnamese, 'chín sáu tám' (968) and 'chín trăm sáu mươi tám' (968) can refer to the same number, just different ways of saying it. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mươi' at position 5",
+      "reason": "'mươi' (ten) is part of the standard way to say numbers in Vietnamese. Both forms refer to the same number (968), so the meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

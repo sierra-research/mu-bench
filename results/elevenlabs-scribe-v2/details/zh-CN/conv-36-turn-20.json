@@ -2,26 +2,21 @@
   "gold": "不是，但是能不能别要我的电话号码了。",
   "predicted": "不是，但是能不能别用我的电话号码？",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 2,
+  "wer": 0.0625,
+  "werEdits": 1,
   "werRefWords": 16,
-  "werNormalizedGold": "不是 但是 能不能 别 要 我 的 电话号码 了",
-  "werNormalizedPredicted": "不是 但是 能不能 别 用 我 的 电话号码",
-  "significantWer": 0.0625,
+  "werNormalizedGold": "不是 但是能不能别要我的电话号码了",
+  "werNormalizedPredicted": "不是 但是能不能别用我的电话号码了",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "不 是 但 是 能 不 能 别 要 我 的 电 话 号 码 了",
-  "sigWerNormalizedPredicted": "不 是 但 是 能 不 能 别 用 我 的 电 话 号 码",
+  "sigWerNormalizedPredicted": "不 是 但 是 能 不 能 别 用 我 的 电 话 号 码 了",
   "sigWerErrors": [
     {
       "error": "Substitution: '要' to '用' at position 8",
-      "reason": "'要' means 'want' or 'need', while '用' means 'use'. This changes the action being requested, which alters the meaning of the sentence significantly.",
+      "reason": "'要' means 'want' or 'need', while '用' means 'use'. This changes the meaning of the sentence, as it shifts from 'don't want my phone number' to 'don't use my phone number', which is a significant difference in intent.",
       "score": 1
-    },
-    {
-      "error": "Deletion: '了' at position 15",
-      "reason": "'了' is a modal particle indicating a completed action or change of state. Its omission slightly affects the aspect of the sentence but does not significantly change the overall meaning.",
-      "score": 2
     }
   ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 9,
   "werNormalizedGold": "tôi muốn liên lạc với nhân viên hỗ trợ",
   "werNormalizedPredicted": "tôi muốn lên a ring ring",
-  "significantWer": 0.2222222222222222,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "tôi muốn liên lạc với nhân viên hỗ trợ",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'liên' to 'lên' at position 2",
-      "reason": "'liên lạc' means 'contact', while 'lên' means 'go up' or 'ascend'; this changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "reason": "'liên lạc' means 'contact', while 'lên' means 'go up' or 'ascend'; this changes the meaning of the sentence and makes it incoherent in context.",
       "score": 1
     },
     {
       "error": "Deletion: 'viên' at position 6",
-      "reason": "'viên' is part of 'nhân viên' (staff), and its omission further derails the meaning.",
+      "reason": "'viên' is part of 'nhân viên' (staff); its omission removes the reference to staff, which is crucial to the sentence's meaning.",
       "score": 1
     }
   ]

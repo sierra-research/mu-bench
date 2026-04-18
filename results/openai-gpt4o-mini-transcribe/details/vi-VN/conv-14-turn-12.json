@@ -1,16 +1,27 @@
 {
   "gold": "Thu trần a còng email chấm com.",
-  "predicted": "Tofuchan@Email.com",
+  "predicted": "tobuchanaccountemail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "tofuchan at email dot com",
-  "werNormalizedPredicted": "tofuchan at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "tofuchan at email dot com",
-  "sigWerNormalizedPredicted": "tofuchan at email dot com",
-  "sigWerErrors": []
+  "wer": 0.8571428571428571,
+  "werEdits": 6,
+  "werRefWords": 7,
+  "werNormalizedGold": "thu trần a còng email chấm com",
+  "werNormalizedPredicted": "tobuchanaccountemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "thu trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "tobuchanaccountemail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thu' to 'tobuchanaccountemail' at position 0",
+      "reason": "The actual transcription replaces the expected name 'thu' with an unrelated string 'tobuchanaccountemail', which is not semantically similar and changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 1",
+      "reason": "The expected name 'trần' is missing in the actual transcription, which omits a key part of the information (likely a person's name), significantly altering the meaning.",
+      "score": 1
+    }
+  ]
 }

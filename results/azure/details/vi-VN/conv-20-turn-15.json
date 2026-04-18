@@ -2,40 +2,35 @@
   "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
   "predicted": "Minh không không đúng minh. Trần a. Cònggmail.com.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 5,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
-  "werNormalizedGold": "khong dung minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "minh khong khong dung minh tran a cong gmail com",
-  "significantWer": 0.3,
-  "majorErrorsCount": 3,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh không không đúng minh trần a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "khong dung minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "minh khong khong dung minh tran a cong gmail com",
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh không không đúng minh trần a còng gmail chấm com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'minh' at position 0",
-      "reason": "The extra 'minh' at the beginning does not change the overall meaning, as it is a repetition of a name and does not derail the sentence.",
+      "reason": "The extra 'minh' at the beginning does not change the overall meaning, as it is a repetition of a name already present in the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'khong' at position 1",
-      "reason": "The extra 'khong' (meaning 'not') could cause confusion, but in this context, it is likely a repetition and does not significantly change the meaning.",
+      "error": "Insertion: 'không' at position 1",
+      "reason": "The extra 'không' (meaning 'not') at this position could cause confusion or make the sentence less clear, but the main meaning is still understandable.",
       "score": 2
     },
     {
-      "error": "Deletion: 'cham' at position 3",
-      "reason": "'cham' is used to indicate a dot in an email address. Missing it could make the email address unclear or incorrect.",
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "'chấm' (meaning 'dot' in an email address) is missing, which could make the email address incorrect or unusable.",
       "score": 1
     },
     {
       "error": "Substitution: 'email' to 'gmail' at position 7",
-      "reason": "Changing 'email' to 'gmail' changes the domain of the email address, which is a significant error as it alters the actual address.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'cham' at position 8",
-      "reason": "Omitting the final 'cham' (dot) in the email address makes the address incomplete or incorrect.",
+      "reason": "Changing 'email' to 'gmail' changes the domain of the email address, which is a significant error as it results in a different email address.",
       "score": 1
     }
   ]

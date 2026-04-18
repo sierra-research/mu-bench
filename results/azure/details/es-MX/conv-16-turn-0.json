@@ -2,15 +2,26 @@
   "gold": "Buenos días. Es que fui a una tienda y se bloqueó mi tarjeta porque puse el NIF mal muchas veces.",
   "predicted": "Buenos días, es que fui a una tienda y se bloqueó mi tarjeta porque puse el NIF mal muchas veces.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 2,
   "werRefWords": 20,
-  "werNormalizedGold": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
+  "werNormalizedGold": "buenos días es que fui a una tienda y se bloqueó mi tarjeta porque puse el nif mal muchas veces",
   "werNormalizedPredicted": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
+  "sigWerNormalizedGold": "buenos días es que fui a una tienda y se bloqueó mi tarjeta porque puse el nif mal muchas veces",
   "sigWerNormalizedPredicted": "buenos dias es que fui a una tienda y se bloqueo mi tarjeta porque puse el nif mal muchas veces",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'días' to 'dias' at position 1",
+      "reason": "The only difference is the missing accent on 'i'; the meaning is unchanged and the word is fully understandable in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'bloqueó' to 'bloqueo' at position 10",
+      "reason": "The only difference is the missing accent on 'o'; the meaning is unchanged and the word is fully understandable in context.",
+      "score": 3
+    }
+  ]
 }

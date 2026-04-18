@@ -5,27 +5,27 @@
   "wer": 0.42857142857142855,
   "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "bildirimi gonderirseniz eger isleme hemen devam edebilirim",
-  "werNormalizedPredicted": "bildirime gonderirseniz eger islemeden devam edebilirim",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedGold": "bildirimi gönderirseniz eğer işleme hemen devam edebilirim",
+  "werNormalizedPredicted": "bildirime gönderirseniz eğer işlemeden devam edebilirim",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "bildirimi gonderirseniz eger isleme hemen devam edebilirim",
-  "sigWerNormalizedPredicted": "bildirime gonderirseniz eger islemeden devam edebilirim",
+  "sigWerNormalizedGold": "bildirimi gönderirseniz eğer işleme hemen devam edebilirim",
+  "sigWerNormalizedPredicted": "bildirime gönderirseniz eğer işlemeden devam edebilirim",
   "sigWerErrors": [
     {
       "error": "Substitution: 'bildirimi' to 'bildirime' at position 0",
-      "reason": "'bildirimi' (the notification, accusative) vs 'bildirime' (to my notification, dative) changes the grammatical case and meaning, but the overall intent is still understandable in context.",
+      "reason": "'bildirimi' (the notification) and 'bildirime' (to my notification) have different grammatical cases, which could change the meaning, but the overall intent is still understandable.",
       "score": 2
     },
     {
-      "error": "Substitution: 'isleme' to 'islemeden' at position 3",
-      "reason": "'isleme' (to process) vs 'islemeden' (without processing) reverses the meaning of the action, which significantly changes the intent of the sentence.",
+      "error": "Substitution: 'işleme' to 'işlemeden' at position 3",
+      "reason": "'işleme' (to the process) and 'işlemeden' (without processing) have opposite meanings, which significantly changes the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'hemen' at position 4",
-      "reason": "Omitting 'hemen' (immediately) removes the sense of urgency but does not derail the overall meaning.",
+      "reason": "Omitting 'hemen' (immediately) removes the sense of urgency, but the main action is still clear.",
       "score": 2
     }
   ]

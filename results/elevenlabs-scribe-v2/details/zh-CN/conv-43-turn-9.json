@@ -2,15 +2,21 @@
   "gold": "C N 9 4 6。",
   "predicted": "CN046",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "c n zero four six",
-  "werNormalizedPredicted": "c n zero four six",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 九 四 六",
+  "werNormalizedPredicted": "c n 零 四 六",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n zero four six",
-  "sigWerNormalizedPredicted": "c n zero four six",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 九 四 六",
+  "sigWerNormalizedPredicted": "c n 零 四 六",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '九' to '零' at position 2",
+      "reason": "The digit '九' (nine) was replaced with '零' (zero), which changes the number entirely and results in a significant error in the sequence.",
+      "score": 1
+    }
+  ]
 }

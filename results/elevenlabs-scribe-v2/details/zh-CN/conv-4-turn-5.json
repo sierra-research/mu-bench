@@ -5,9 +5,9 @@
   "wer": 0.75,
   "werEdits": 6,
   "werRefWords": 8,
-  "werNormalizedGold": "你 说 得 对 你 说 得 对",
-  "werNormalizedPredicted": "你 收 到 就 对 你 收 到 就 对",
-  "significantWer": 0.25,
+  "werNormalizedGold": "你说得对 你说得对",
+  "werNormalizedPredicted": "你收到就对 你收到就对",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "你 说 得 对 你 说 得 对",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '说' to '到' at position 1",
-      "reason": "The word '说' (say) is replaced by '收' (receive), which changes the meaning of the phrase significantly.",
+      "reason": "The word '收' (receive) is inserted, which changes the meaning of the phrase from 'you are right' to something unrelated.",
       "score": 1
     },
     {
       "error": "Substitution: '说' to '到' at position 5",
-      "reason": "The word '得' (used as a structural particle) is replaced by '到' (arrive/receive), which alters the meaning and structure of the sentence.",
+      "reason": "The word '收' (receive) is inserted again, changing the meaning of the repeated phrase.",
       "score": 1
     }
   ]

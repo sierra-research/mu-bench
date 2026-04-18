@@ -1,27 +1,27 @@
 {
   "gold": "Chào Anna. Em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em.",
-  "predicted": "Chào anh anh ạ, em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em ý.",
+  "predicted": "Chào anh ạ, em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em ý.",
   "unintelligible": false,
-  "wer": 0.19047619047619047,
-  "werEdits": 4,
+  "wer": 0.09523809523809523,
+  "werEdits": 2,
   "werRefWords": 21,
   "werNormalizedGold": "chào anna em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em",
-  "werNormalizedPredicted": "chào anh anh ạ em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em ý",
-  "significantWer": 0.09523809523809523,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "chào anh em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em ý",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "chào anna em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em",
-  "sigWerNormalizedPredicted": "chào anh anh ạ em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em ý",
+  "sigWerNormalizedPredicted": "chào anh em gọi để nhờ mình hỗ trợ một vài thông tin liên quan đến thẻ tín dụng của em ý",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'anna' to 'ạ' at position 1",
-      "reason": "The insertion of 'anh' changes the addressee from 'anna' (a specific person) to 'anh' (a generic male pronoun), which alters the meaning of the greeting.",
+      "error": "Substitution: 'anna' to 'anh' at position 1",
+      "reason": "'anna' is a name, while 'anh' is a pronoun meaning 'older brother' or a way to address a male in Vietnamese. This changes the addressee and the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'ý' at position 21",
-      "reason": "Replacing 'anna' (a specific name) with 'ạ' (a polite particle) removes the intended recipient and changes the meaning of the sentence.",
-      "score": 1
+      "reason": "The word 'ý' at the end adds a nuance but does not change the main meaning of the sentence.",
+      "score": 2
     }
   ]
 }

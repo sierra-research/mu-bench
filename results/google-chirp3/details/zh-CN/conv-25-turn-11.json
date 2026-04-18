@@ -2,15 +2,21 @@
   "gold": "我已经几次说了，哎呀！",
   "predicted": "我已经第几次说了?哎呀!",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
-  "werNormalizedGold": "我 已经 几 次 说 了 哎呀",
-  "werNormalizedPredicted": "我 已经 几 次 说 了 哎呀",
-  "significantWer": 0.0,
+  "werNormalizedGold": "我已经几次说了 哎呀",
+  "werNormalizedPredicted": "我已经第几次说了 哎呀",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "我 已 经 几 次 说 了 哎 呀",
-  "sigWerNormalizedPredicted": "我 已 经 几 次 说 了 哎 呀",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 已 经 第 几 次 说 了 哎 呀",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '第' at position 3",
+      "reason": "The insertion of '第' before '几次' changes the meaning from 'how many times' to 'the number of times', which slightly alters the nuance but does not derail the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

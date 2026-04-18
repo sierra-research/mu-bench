@@ -1,22 +1,27 @@
 {
   "gold": "Xin chào. Tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng.",
-  "predicted": "Xin chào, tôi gọi tới muốn muốn tăng cái hạn mức thẻ tín dụng.",
+  "predicted": "Xin chào, tôi gọi tới muốn muốn sang gia tăng cái hạn mức thẻ tín dụng.",
   "unintelligible": false,
   "wer": 0.21428571428571427,
   "werEdits": 3,
   "werRefWords": 14,
   "werNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
-  "werNormalizedPredicted": "xin chào tôi gọi tới muốn muốn tăng cái hạn mức thẻ tín dụng",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "xin chào tôi gọi tới muốn muốn sang gia tăng cái hạn mức thẻ tín dụng",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
-  "sigWerNormalizedPredicted": "xin chào tôi gọi tới muốn muốn tăng cái hạn mức thẻ tín dụng",
+  "sigWerNormalizedPredicted": "xin chào tôi gọi tới muốn muốn sang gia tăng cái hạn mức thẻ tín dụng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'xin' to 'muốn' at position 6",
-      "reason": "The word 'xin' (to request) is replaced by 'muốn' (to want), which changes the nuance of the request but does not significantly alter the overall intent of the sentence, which is to increase the credit card limit.",
+      "error": "Substitution: 'xin' to 'sang' at position 6",
+      "reason": "The extra 'muốn' (want) is a repetition and does not change the overall meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 9",
+      "reason": "'Sang' (to move/transfer) instead of 'xin' (to request) changes the intent of the action, which can confuse the meaning of the request.",
+      "score": 1
     }
   ]
 }

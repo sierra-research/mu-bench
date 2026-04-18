@@ -2,20 +2,25 @@
   "gold": "Hola, es que quiero cambiar los beneficiarios de mi cuenta.",
   "predicted": "Hola, es que quiero cambiar los beneficiarios de mi de mi cuenta.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "hola es que quiero cambiar los beneficiarios de mi cuenta",
-  "werNormalizedPredicted": "hola es que quiero cambiar los beneficiarios de mi de mi cuenta",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "hola quiero cambiar los beneficiarios de mi de mi cuenta",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hola es que quiero cambiar los beneficiarios de mi cuenta",
-  "sigWerNormalizedPredicted": "hola es que quiero cambiar los beneficiarios de mi de mi cuenta",
+  "sigWerNormalizedPredicted": "hola quiero cambiar los beneficiarios de mi de mi cuenta",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'de' at position 9",
-      "reason": "The repeated 'de' does not change the meaning of the sentence; it is a minor repetition that does not affect understanding.",
+      "error": "Deletion: 'es' at position 1",
+      "reason": "Omitting 'es que' slightly changes the tone but does not affect the main meaning of the sentence, which is about changing beneficiaries.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'de' at position 7",
+      "reason": "Repeating 'de mi' is a minor redundancy and does not change the meaning of the sentence.",
       "score": 2
     }
   ]

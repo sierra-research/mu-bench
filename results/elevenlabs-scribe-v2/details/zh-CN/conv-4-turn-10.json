@@ -2,15 +2,21 @@
   "gold": "你还听不到，不好，是君，君灵。",
   "predicted": "你还听不到，不好，是君，君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
   "werRefWords": 11,
-  "werNormalizedGold": "你 还 听 不 到 不 好 是 君 君灵",
-  "werNormalizedPredicted": "你 还 听 不 到 不 好 是 君 君灵",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你还听不到不好是君君灵",
+  "werNormalizedPredicted": "你还听不到 不好 是君 君临",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 还 听 不 到 不 好 是 君 君 灵",
-  "sigWerNormalizedPredicted": "你 还 听 不 到 不 好 是 君 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 还 听 不 到 不 好 是 君 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '灵' to '临' at position 10",
+      "reason": "'灵' and '临' are different Chinese characters with different meanings. If this is a name or a specific term, the substitution could change the intended meaning or reference, but the sentence structure remains intact. This is a minor error unless context shows it is critical, so it should be scored as a minor error.",
+      "score": 2
+    }
+  ]
 }

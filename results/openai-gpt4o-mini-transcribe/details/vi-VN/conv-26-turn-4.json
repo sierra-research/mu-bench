@@ -2,15 +2,26 @@
   "gold": "Số điện thoại bị sai rồi. Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Số điện thoại bị sai rồi. Số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 25,
-  "werNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "wer": 0.07692307692307693,
+  "werEdits": 2,
+  "werRefWords": 26,
+  "werNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 25,
-  "sigWerNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "totalWordsCount": 26,
+  "sigWerNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerNormalizedPredicted": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 14",
+      "reason": "'tám mươi bốn' means 'eighty four', while 'tám tư' is a colloquial way in Vietnamese to say 'eighty four' as well. The meaning is preserved, just a different way of saying the same number.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bốn' at position 15",
+      "reason": "'bốn' is omitted in the actual transcript, but 'tám tư' already conveys the number 'eighty four' in Vietnamese, so the omission does not change the meaning.",
+      "score": 3
+    }
+  ]
 }

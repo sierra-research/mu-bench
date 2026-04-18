@@ -7,20 +7,20 @@
   "werRefWords": 15,
   "werNormalizedGold": "email chưa chính xác email phải là minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "email chưa chính xác email với lại minh trần a còng email chấm com",
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "email chưa chính xác email phải là minh chấm trần a còng email chấm com",
   "sigWerNormalizedPredicted": "email chưa chính xác email với lại minh trần a còng email chấm com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'phải' to 'với' at position 5",
-      "reason": "'phải' means 'must/be' (indicating necessity), while 'với' means 'with'. This changes the structure of the sentence but does not derail the overall meaning, which is about the correct email format.",
-      "score": 2
+      "reason": "'phải' means 'must/be' (indicating necessity), while 'với' means 'with' (indicating accompaniment). This changes the structure and meaning of the sentence, making it less clear that the email must be in a certain format.",
+      "score": 1
     },
     {
       "error": "Deletion: 'chấm' at position 8",
-      "reason": "Missing 'chấm' (dot) in the email address changes the actual email address, which is critical information. This is a significant error as it can lead to an incorrect email being used.",
+      "reason": "'chấm' (dot) is missing before 'trần', which is important for the correct email format. Omitting 'chấm' changes the email address and could cause confusion or incorrect information.",
       "score": 1
     }
   ]

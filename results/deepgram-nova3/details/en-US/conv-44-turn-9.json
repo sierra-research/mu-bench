@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "i would also like to know the status of my new card",
   "werNormalizedPredicted": "would also like to know the status of my new car",
-  "significantWer": 0.08333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "i would also like to know the status of my new card",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'i' at position 0",
-      "reason": "Dropping the pronoun 'I' does not significantly change the meaning of the request; the intent is still clear.",
+      "reason": "Omitting the pronoun 'I' does not significantly change the meaning of the request, as the rest of the sentence still clearly communicates the intent.",
       "score": 2
     },
     {
       "error": "Substitution: 'card' to 'car' at position 11",
-      "reason": "'Card' and 'car' are completely different objects; this substitution changes the meaning of the sentence significantly.",
+      "reason": "Substituting 'card' with 'car' changes the object being referred to, which significantly alters the meaning of the sentence and could lead to misunderstanding.",
       "score": 1
     }
   ]

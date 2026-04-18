@@ -2,15 +2,21 @@
   "gold": "妹玲 at email dot com。",
   "predicted": "May Leon at email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "may leon at email dot com",
+  "werNormalizedGold": "妹玲 at email dot com",
   "werNormalizedPredicted": "may leon at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "may leon at email dot com",
+  "sigWerNormalizedGold": "妹 玲 at email dot com",
   "sigWerNormalizedPredicted": "may leon at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '妹' to 'may' at position 0",
+      "reason": "'妹' is a Chinese character meaning 'younger sister', while 'may' is an English name or word. The substitution changes the meaning and identity completely, especially as this is likely a name or part of an email address. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

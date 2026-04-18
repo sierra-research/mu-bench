@@ -5,9 +5,9 @@
   "wer": 0.25,
   "werEdits": 3,
   "werRefWords": 12,
-  "werNormalizedGold": "那你还没听听得到我的名字",
+  "werNormalizedGold": "那你还没听 听得到我的名字",
   "werNormalizedPredicted": "丹尼还没听得到我的名字",
-  "significantWer": 0.08333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "那 你 还 没 听 听 得 到 我 的 名 字",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '那' to '丹' at position 0",
-      "reason": "'那' (that) and '丹' (Dan, a name) are completely different in meaning; this substitution changes the subject and derails the meaning of the sentence.",
+      "reason": "'那' (that) is replaced by '丹' (Dan, a name), which changes the subject of the sentence and alters the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: '听' at position 4",
-      "reason": "One '听' (listen/hear) is missing, but the overall meaning is still understandable as '听得到' (can hear) is present; this is a minor error.",
+      "reason": "One occurrence of '听' (listen) is missing, but the overall meaning of the sentence is still understandable as '听得到' (can hear) remains. This is a minor repetition error.",
       "score": 2
     }
   ]

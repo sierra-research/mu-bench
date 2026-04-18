@@ -2,20 +2,25 @@
   "gold": "Urión, Tlatilco.",
   "predicted": "unión",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 1,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "union tlatilco",
-  "werNormalizedPredicted": "union",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "urión tlatilco",
+  "werNormalizedPredicted": "unión",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "union tlatilco",
-  "sigWerNormalizedPredicted": "union",
+  "sigWerNormalizedGold": "urión tlatilco",
+  "sigWerNormalizedPredicted": "unión",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'urión' to 'unión' at position 0",
+      "reason": "'urión' and 'unión' are different words with different meanings, and this changes the reference to a specific name or place to a common word, which can confuse the meaning.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'tlatilco' at position 1",
-      "reason": "The omission of 'tlatilco' removes a key part of the phrase, likely a proper noun or location, which significantly changes or loses the intended meaning.",
+      "reason": "Omitting 'tlatilco' removes a key part of the expected phrase, likely a proper noun or place name, which significantly alters the meaning.",
       "score": 1
     }
   ]

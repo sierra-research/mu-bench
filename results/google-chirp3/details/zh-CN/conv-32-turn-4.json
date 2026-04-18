@@ -2,15 +2,21 @@
   "gold": "林梅 at email dot com。",
   "predicted": "@ email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "林梅 at email dot com",
-  "werNormalizedPredicted": "林梅 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "林 梅 at email dot com",
-  "sigWerNormalizedPredicted": "林 梅 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '林' at position 0",
+      "reason": "The name '林' (a proper noun) is completely omitted, which removes the identity of the person associated with the email. This is a significant error as it changes the meaning of the sentence and loses critical information.",
+      "score": 1
+    }
+  ]
 }

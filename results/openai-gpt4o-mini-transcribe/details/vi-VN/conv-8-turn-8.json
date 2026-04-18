@@ -1,22 +1,27 @@
 {
   "gold": "Chưa đúng. Số chính xác phải là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "à chưa đúng, số chính xác là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "À chưa đúng, số chính xác là cộng tám mươi tư chín một, một hai ba bốn, năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.047619047619047616,
-  "werEdits": 1,
+  "wer": 0.09523809523809523,
+  "werEdits": 2,
   "werRefWords": 21,
-  "werNormalizedGold": "chưa đúng số chính xác phải là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedGold": "chưa đúng số chính xác phải là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "chưa đúng số chính xác là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "chưa đúng số chính xác phải là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedGold": "chưa đúng số chính xác phải là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerNormalizedPredicted": "chưa đúng số chính xác là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
       "error": "Deletion: 'phải' at position 5",
-      "reason": "The word 'phải' (meaning 'must' or 'should') is omitted, but the overall meaning of the sentence remains clear and is not significantly changed.",
+      "reason": "The word 'phải' (meaning 'must' or 'should') is omitted, but the sentence still conveys the main information about the correct number. The omission does not significantly change the meaning.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 10",
+      "reason": "In Vietnamese, 'bốn' and 'tư' both mean 'four' and are interchangeable in this context. The meaning is preserved.",
+      "score": 3
     }
   ]
 }

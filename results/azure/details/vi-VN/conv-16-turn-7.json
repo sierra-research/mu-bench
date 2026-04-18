@@ -7,7 +7,7 @@
   "werRefWords": 8,
   "werNormalizedGold": "minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "vinh trần a còng gmail chấm com",
-  "significantWer": 0.375,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'minh' to 'vinh' at position 0",
-      "reason": "'Minh' and 'Vinh' are both Vietnamese names, but substituting one for the other changes the identity of the person, which is a significant error.",
+      "reason": "'minh' and 'vinh' are different Vietnamese names; substituting one for the other changes the identity being referred to, which is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: 'chấm' at position 1",
-      "reason": "Omitting 'chấm' (which means 'dot' in Vietnamese) changes the structure of the email address, making it incorrect or unusable.",
+      "reason": "Omitting 'chấm' (dot) in an email address can lead to an incorrect or invalid email, which is a significant error.",
       "score": 1
     },
     {
       "error": "Substitution: 'email' to 'gmail' at position 5",
-      "reason": "Changing the domain from 'email' to 'gmail' alters the email address to a different provider, which is a significant error as it would send to a different address.",
+      "reason": "'email' and 'gmail' refer to different email domains; this changes the actual email address, which is a significant error.",
       "score": 1
     }
   ]

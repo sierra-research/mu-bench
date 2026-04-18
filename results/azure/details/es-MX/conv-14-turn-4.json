@@ -2,15 +2,36 @@
   "gold": "Es en el banco. Ah ya. Es María punto López arroba email punto com.",
   "predicted": "Es en el banco ya es maria.lopez@gmail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 13,
-  "werNormalizedGold": "es en el banco ya es maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es en el banco ya es maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "es en el banco ya es maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es en el banco ya es maria punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
+  "werRefWords": 14,
+  "werNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es en el banco ya es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es en el banco ya es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'ah' at position 4",
+      "reason": "'ah' is a filler word and its omission does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 7",
+      "reason": "The only difference is the accent on the 'i', which does not change the meaning or pronunciation significantly in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 9",
+      "reason": "The only difference is the accent on the 'o', which does not change the meaning or pronunciation significantly in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 11",
+      "reason": "Changing 'email' to 'gmail' changes the email address domain, which is a significant error as it would result in a different email address.",
+      "score": 1
+    }
+  ]
 }

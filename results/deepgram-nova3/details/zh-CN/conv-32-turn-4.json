@@ -1,16 +1,27 @@
 {
   "gold": "林梅 at email dot com。",
-  "predicted": "琳梅atemail。com",
+  "predicted": "盈眉email。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "林梅 at email dot com",
-  "werNormalizedPredicted": "林梅 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "盈眉 email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "林 梅 at email dot com",
-  "sigWerNormalizedPredicted": "林 梅 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "盈 眉 email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '盈' at position 0",
+      "reason": "Different Chinese characters, likely different names, which is a significant error for an email address or name context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "Omitting 'at' in an email address format makes the address unclear or incorrect, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

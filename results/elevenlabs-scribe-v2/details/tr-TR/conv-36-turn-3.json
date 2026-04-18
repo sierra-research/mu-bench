@@ -5,22 +5,22 @@
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "ceyhan nigde three four two dogru mudur",
-  "werNormalizedPredicted": "ceyhanlida three four two dogru mudur",
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "ceyhan niğde üç dört iki doğru mudur",
+  "werNormalizedPredicted": "ceyhanlıda üç dört iki doğru mudur",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "ceyhan nigde three four two dogru mudur",
-  "sigWerNormalizedPredicted": "ceyhanlida three four two dogru mudur",
+  "sigWerNormalizedGold": "ceyhan niğde üç dört iki doğru mudur",
+  "sigWerNormalizedPredicted": "ceyhanlıda üç dört iki doğru mudur",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ceyhan' to 'ceyhanlida' at position 0",
-      "reason": "'ceyhanlida' is a different word from 'ceyhan'; it could be a place name or a form of 'ceyhan' with a suffix, which changes the meaning significantly.",
-      "score": 1
+      "error": "Substitution: 'ceyhan' to 'ceyhanlıda' at position 0",
+      "reason": "'ceyhan' is a city name, 'ceyhanlıda' means 'in Ceyhan' or could be a different location or form, which changes the reference and could confuse the meaning, especially in a context where precise location matters.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'nigde' at position 1",
-      "reason": "Omitting 'nigde', which is a place name, removes important information from the sentence and changes its meaning.",
+      "error": "Deletion: 'niğde' at position 1",
+      "reason": "'niğde' is another city name that is omitted in the actual transcription, which removes important information and significantly alters the meaning of the sentence.",
       "score": 1
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "İsmim Ahmet, soyismim Arslan.",
   "predicted": "Ahmet. Ismim Ahmet soy ismim arslan.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "ismim ahmet soyismim arslan",
-  "werNormalizedPredicted": "ismim ahmet soyismim arslan",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "ahmet ismim ahmet soy ismim arslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "ismim ahmet soyismim arslan",
-  "sigWerNormalizedPredicted": "ismim ahmet soyismim arslan",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ahmet ismim ahmet soy ismim arslan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ahmet' at position 0",
+      "reason": "The extra 'ahmet' at the beginning is redundant but does not change the meaning of the sentence, as it simply repeats the name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'soyismim' to 'ismim' at position 2",
+      "reason": "The word 'soy' is an incomplete form of 'soyismim' (surname), but since it is immediately followed by 'ismim arslan', the meaning is still clear and not derailed.",
+      "score": 2
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
   "werNormalizedPredicted": "mailing as email dot com",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '美' to 'mailing' at position 0",
-      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an English word 'mailing', which is completely different in meaning and language. This significantly changes the intended meaning and identity.",
+      "reason": "The expected word is a Chinese name character, but the actual transcription is an unrelated English word ('mailing'), which completely changes the meaning and identity of the email address.",
       "score": 1
     },
     {
       "error": "Deletion: 'at' at position 2",
-      "reason": "The expected word is another Chinese character (likely part of a name), but the actual transcription is the English word 'as', which is unrelated and changes the meaning and identity.",
+      "reason": "The expected word is another Chinese name character, but the actual transcription is the English word 'as', which is unrelated and changes the intended email address.",
       "score": 1
     }
   ]

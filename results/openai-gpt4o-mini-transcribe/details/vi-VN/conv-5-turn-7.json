@@ -1,22 +1,27 @@
 {
   "gold": "Ừ. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "ừ số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy đấy ạ.",
+  "predicted": "Ừ, cái điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy đấy ạ.",
   "unintelligible": false,
-  "wer": 0.05555555555555555,
-  "werEdits": 1,
+  "wer": 0.16666666666666666,
+  "werEdits": 3,
   "werRefWords": 18,
-  "werNormalizedGold": "ừ số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "ừ số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cái điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy đấy ạ",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "ừ số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "ừ số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy",
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cái điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy đấy ạ",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'tám' at position 17",
-      "reason": "The last digit of the phone number is missing, which makes the phone number incomplete and unusable. This is a significant error as it changes the meaning and utility of the sentence.",
+      "error": "Substitution: 'số' to 'cái' at position 0",
+      "reason": "'số điện thoại' means 'phone number', while 'cái điện thoại' means 'the phone' (the object). This changes the meaning from referring to the number to referring to the device.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'tám' to 'ạ' at position 17",
+      "reason": "'đấy' is an extra word at the end, which is a discourse particle and does not change the meaning of the sentence.",
+      "score": 2
     }
   ]
 }

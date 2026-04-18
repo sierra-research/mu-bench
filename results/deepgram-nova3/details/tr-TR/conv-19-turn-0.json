@@ -2,25 +2,30 @@
   "gold": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
   "predicted": "Merhaba, kredi kartının limitini arttırmak istiyorum, yardımcı olabilir misiniz?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum da yardimci olabilir misiniz",
-  "werNormalizedPredicted": "merhaba kredi kartinin limitini artirmak istiyorum yardimci olabilir misiniz",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz",
+  "werNormalizedPredicted": "merhaba kredi kartının limitini arttırmak istiyorum yardımcı olabilir misiniz",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum da yardimci olabilir misiniz",
-  "sigWerNormalizedPredicted": "merhaba kredi kartinin limitini artirmak istiyorum yardimci olabilir misiniz",
+  "sigWerNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "merhaba kredi kartının limitini arttırmak istiyorum yardımcı olabilir misiniz",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kartimin' to 'kartinin' at position 2",
-      "reason": "The possessive suffix changes from 'my' (benim) to 'his/her' (onun), which changes the meaning of whose credit card is being referred to.",
-      "score": 1
+      "error": "Substitution: 'kartımın' to 'kartının' at position 2",
+      "reason": "'kartımın' (my credit card's) vs 'kartının' (your credit card's) changes the possessive from first person to second person, but in context the intent is still clear and the meaning of the request is not derailed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'artırmak' to 'arttırmak' at position 4",
+      "reason": "Both 'artırmak' and 'arttırmak' are accepted variants in Turkish for 'to increase', so this is a minor orthographic difference with no change in meaning.",
+      "score": 3
     },
     {
       "error": "Deletion: 'da' at position 6",
-      "reason": "'da' is a discourse particle in Turkish that adds emphasis or a softener, but its omission does not significantly change the main meaning of the sentence.",
+      "reason": "Omitting 'da' (which acts as a softener or connector) does not change the main intent or meaning of the sentence.",
       "score": 2
     }
   ]

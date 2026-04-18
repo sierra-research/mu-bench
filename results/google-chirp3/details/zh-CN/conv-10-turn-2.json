@@ -5,9 +5,9 @@
   "wer": 0.3,
   "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "你 先 告诉 我 的 追踪 号码",
-  "werNormalizedPredicted": "你 想 告诉 我 的 尊重 号码",
-  "significantWer": 0.2,
+  "werNormalizedGold": "你先告诉我的追踪号码",
+  "werNormalizedPredicted": "你想告诉我的尊重号码",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "你 先 告 诉 我 的 追 踪 号 码",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '先' to '想' at position 1",
-      "reason": "'先' means 'first' or 'before', while '想' means 'want' or 'think'. This changes the intent of the sentence, making it a significant error.",
+      "reason": "'先' means 'first' or 'before', while '想' means 'want' or 'think'. This changes the intent of the sentence and affects the meaning significantly.",
       "score": 1
     },
     {
       "error": "Substitution: '追' to '尊' at position 6",
-      "reason": "'追踪' means 'tracking', while '尊重' means 'respect'. This substitution changes the meaning of the noun phrase from 'tracking number' to 'respect number', which is incoherent in this context.",
+      "reason": "'追踪号码' means 'tracking number', while '尊重号码' is not a valid phrase and changes the meaning completely, making the sentence incoherent.",
       "score": 1
     }
   ]

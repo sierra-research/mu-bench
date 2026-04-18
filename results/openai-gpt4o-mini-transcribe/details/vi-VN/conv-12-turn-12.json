@@ -2,15 +2,26 @@
   "gold": "Địa chỉ email là minh chấm trần at email chấm com.",
   "predicted": "địa chỉ email là minh.tran@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "địa chỉ email là minh.tran@email.com",
-  "werNormalizedPredicted": "địa chỉ email là minh.tran@email.com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "địa chỉ email là minh.tran@email.com",
-  "sigWerNormalizedPredicted": "địa chỉ email là minh.tran@email.com",
-  "sigWerErrors": []
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
+  "werRefWords": 11,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần at email chấm com",
+  "werNormalizedPredicted": "địa chỉ email là minh chấm tran at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần at email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh chấm tran at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 6",
+      "reason": "'trần' is a Vietnamese name with a diacritic, while 'tran' is the same name without the diacritic. The meaning is preserved and the name is still recognizable, but the spelling is less accurate.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 8",
+      "reason": "Changing 'email' to 'gmail' changes the domain of the email address, which could result in a completely different and incorrect email address.",
+      "score": 1
+    }
+  ]
 }

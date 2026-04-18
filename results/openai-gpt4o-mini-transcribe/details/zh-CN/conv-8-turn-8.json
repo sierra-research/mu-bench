@@ -1,32 +1,37 @@
 {
   "gold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
-  "predicted": "这是不对的,你说的不对,你说的不对。均临均临",
+  "predicted": "君临君临",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 5,
+  "wer": 0.9,
+  "werEdits": 18,
   "werRefWords": 20,
-  "werNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君玲 君玲",
-  "werNormalizedPredicted": "这 是 不 对 的 你 说 得 不 对 你 说 得 不 对 君玲 君玲",
-  "significantWer": 0.1,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "君 你说得不对 你说得不对 你说得不对 君玲 君玲",
+  "werNormalizedPredicted": "君临 君临",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君 玲 君 玲",
-  "sigWerNormalizedPredicted": "这 是 不 对 的 你 说 得 不 对 你 说 得 不 对 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "君 临 君 临",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to '这' at position 0",
-      "reason": "'君' (you, formal) is replaced by '这' (this), which changes the subject and meaning of the sentence significantly.",
+      "error": "Substitution: '你' to '临' at position 1",
+      "reason": "'你' (you) and '临' (approach/arrive) are completely different words with unrelated meanings, which changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: '说' at position 2",
-      "reason": "Omitting '说' (say) removes the verb, making the sentence incomplete and changing its meaning.",
+      "reason": "Omitting '说' (say) removes a key verb from the sentence, making the meaning incomplete and incoherent.",
       "score": 1
     },
     {
-      "error": "Insertion: '的' at position 6",
-      "reason": "Inserting '的' (a structural particle) slightly changes the grammatical structure but does not significantly alter the meaning in this context.",
-      "score": 2
+      "error": "Substitution: '玲' to '临' at position 17",
+      "reason": "'玲' (a name or part of a name) and '临' (approach/arrive) are unrelated, which significantly alters the intended meaning, especially for a proper noun.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 18",
+      "reason": "Omitting '君' (a name or title) removes a key part of the expected phrase, which is significant for understanding the reference.",
+      "score": 1
     }
   ]
 }

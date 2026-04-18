@@ -7,7 +7,7 @@
   "werRefWords": 13,
   "werNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
   "werNormalizedPredicted": "dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "significantWer": 0.15384615384615385,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'más' at position 0",
-      "reason": "'más' (meaning 'plus' or 'more') is omitted, which could change the meaning of the number sequence, especially if it is a phone number or code. This is a significant error.",
+      "reason": "'más' (meaning 'plus' or 'more') is omitted, which could change the meaning of the number sequence, especially if it is a phone number or code. This omission can significantly alter the intended information.",
       "score": 1
     },
     {
       "error": "Substitution: 'cincuenta' to 'cinco' at position 2",
-      "reason": "'cincuenta' (fifty) is replaced with 'cinco' (five), which changes the number entirely and could result in a completely different code or phone number. This is a significant error.",
+      "reason": "'cincuenta' (fifty) is replaced with 'cinco' (five), which is a significant numerical error and changes the value being communicated.",
       "score": 1
     },
     {
       "error": "Deletion: 'y' at position 3",
-      "reason": "'y' (meaning 'and') is omitted. In the context of reading numbers, this is a minor error as it does not change the numbers themselves, just the way they are grouped or read.",
+      "reason": "Omitting 'y' (meaning 'and') in a number sequence in Spanish can make the sequence less clear, but the main numbers are still present. This is a minor error.",
       "score": 2
     }
   ]

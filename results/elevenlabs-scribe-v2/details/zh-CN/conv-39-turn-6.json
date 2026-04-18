@@ -2,15 +2,21 @@
   "gold": "是君玲，君。",
   "predicted": "是 jun ling，jun。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "是君玲君",
-  "werNormalizedPredicted": "是君玲君",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "是 jun ling jun",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "是 君 玲 君",
-  "sigWerNormalizedPredicted": "是 君 玲 君",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 jun ling jun",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'jun' at position 1",
+      "reason": "'君' is a Chinese character and 'jun' is its romanized form (pinyin). The meaning is preserved, only the script is different.",
+      "score": 3
+    }
+  ]
 }

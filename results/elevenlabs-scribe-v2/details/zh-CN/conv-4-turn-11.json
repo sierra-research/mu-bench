@@ -2,15 +2,26 @@
   "gold": "君灵，君灵。",
   "predicted": "钻灵，钻灵。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "君灵 君灵",
-  "werNormalizedPredicted": "君灵 君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "钻灵 钻灵",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "君 灵 君 灵",
-  "sigWerNormalizedPredicted": "君 灵 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "钻 灵 钻 灵",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '钻' at position 0",
+      "reason": "'君' and '钻' are completely different Chinese characters with unrelated meanings, which significantly changes the meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to '钻' at position 2",
+      "reason": "'君' and '钻' are unrelated characters, and this substitution alters the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

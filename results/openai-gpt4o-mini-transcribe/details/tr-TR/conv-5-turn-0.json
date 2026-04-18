@@ -1,31 +1,36 @@
 {
   "gold": "Merhaba, faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba?",
-  "predicted": "Merhaba, faturamın bir kopyasını ihtiyacım vardı. Yardımcı olabilir misiniz acaba?",
+  "predicted": "Merhaba, faturamı bir kopyasını ihtiyacım vardı. Yardımcı olabilir misiniz acaba?",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werEdits": 3,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
   "werRefWords": 11,
   "werNormalizedGold": "merhaba faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba",
-  "werNormalizedPredicted": "merhaba faturamın bir kopyasını ihtiyacım vardı yardımcı olabilir misiniz acaba",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "merhaba faturamı bir kopyasını ihtiyacım vardı yardımcı olabilir misiniz acaba",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "merhaba faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba",
-  "sigWerNormalizedPredicted": "merhaba faturamın bir kopyasını ihtiyacım vardı yardımcı olabilir misiniz acaba",
+  "sigWerNormalizedPredicted": "merhaba faturamı bir kopyasını ihtiyacım vardı yardımcı olabilir misiniz acaba",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'faturamın' to 'faturamı' at position 1",
+      "reason": "'faturamın' (my invoice's) and 'faturamı' (my invoice) are different grammatical cases, but the overall meaning is preserved in context.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'kopyasına' to 'kopyasını' at position 3",
-      "reason": "The words differ in suffix: 'kopyasına' (to its copy) vs 'kopyasını' (its copy as object). This changes the grammatical case but the overall meaning (requesting a copy of the bill) is preserved in context.",
+      "reason": "'kopyasına' (to a copy) and 'kopyasını' (the copy) are different cases, but the intent of needing a copy is clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'var' to 'vardı' at position 5",
-      "reason": "'Var' (there is) vs 'vardı' (there was) is a tense change, but the intent of needing a copy is still clear and unchanged in context.",
-      "score": 3
+      "reason": "'var' (there is) and 'vardı' (there was) differ in tense, but the request for help is still understandable.",
+      "score": 2
     },
     {
       "error": "Deletion: 'da' at position 6",
-      "reason": "'Da' is a discourse particle meaning 'also' or 'just', which adds politeness or emphasis but its omission does not change the main meaning of the sentence.",
+      "reason": "'da' (also/too) is a minor discourse particle; its omission does not significantly change the meaning.",
       "score": 2
     }
   ]

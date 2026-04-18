@@ -1,32 +1,27 @@
 {
   "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
-  "predicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil, e-mail yani e, Edirne'nin E'siyle e-mail.com.",
+  "predicted": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil, e-mail, yani E, Edirne'nin E'siyle, email.com.",
   "unintelligible": false,
-  "wer": 0.15789473684210525,
-  "werEdits": 3,
+  "wer": 0.10526315789473684,
+  "werEdits": 2,
   "werRefWords": 19,
   "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
-  "werNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e siyle email com",
-  "significantWer": 0.05263157894736842,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e siyle email nokta com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
-  "sigWerNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e siyle email com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e siyle email nokta com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'si' to 'siyle' at position 14",
-      "reason": "'siyle' is a fusion of 'si' and 'ile', so the meaning is preserved, just a different way of saying 'with e'.",
-      "score": 3
+      "reason": "'e si ile' (with the letter e) is a common way to clarify spelling in Turkish. 'e siyle' merges 'si' and 'ile' into one word, which is a colloquial or informal way of saying the same thing. The meaning is preserved, so this is a minor error.",
+      "score": 2
     },
     {
       "error": "Deletion: 'ile' at position 15",
-      "reason": "'siyle' already includes the meaning of 'ile' (with), so omitting 'ile' does not change the meaning.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'nokta' at position 17",
-      "reason": "Omitting 'nokta' (dot) in an email address can cause confusion or incorrect transcription of the address, as 'email nokta com' is standard for 'email.com'.",
-      "score": 1
+      "reason": "'ile' (meaning 'with') is omitted because it is merged into 'siyle' in the actual transcription. The meaning is still clear and unchanged, so this is a minor error.",
+      "score": 2
     }
   ]
 }

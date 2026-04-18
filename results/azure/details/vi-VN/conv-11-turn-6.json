@@ -2,15 +2,21 @@
   "gold": "Email là minh chấm tran at email chấm com.",
   "predicted": "Email là minh. Trend at email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "email là minh chấm tran at email chấm com",
-  "werNormalizedPredicted": "email là minh chấm tran at email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minh chấm trend at email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "email là minh chấm tran at email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm tran at email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minh chấm trend at email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tran' to 'trend' at position 4",
+      "reason": "The word 'tran' is likely a part of an email address or a proper noun, and substituting it with 'trend' changes the intended recipient or meaning significantly, especially in the context of an email address.",
+      "score": 1
+    }
+  ]
 }

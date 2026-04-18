@@ -1,21 +1,26 @@
 {
   "gold": "Bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách nào trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác hơn nha.",
-  "predicted": "Bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách tải trực tiếp trên app thì giúp, ưm, cho em để lần sau em chủ động thao tác luôn nhé.",
+  "predicted": "Bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách tải trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác luôn nhé",
   "unintelligible": false,
-  "wer": 0.05405405405405406,
-  "werEdits": 2,
+  "wer": 0.08108108108108109,
+  "werEdits": 3,
   "werRefWords": 37,
   "werNormalizedGold": "bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách nào trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác hơn nha",
-  "werNormalizedPredicted": "bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách nào trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác luôn nhé",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách tải trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác luôn nhé",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 37,
   "sigWerNormalizedGold": "bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách nào trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác hơn nha",
-  "sigWerNormalizedPredicted": "bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách nào trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác luôn nhé",
+  "sigWerNormalizedPredicted": "bạn gửi cho em giúp cái email đã đăng ký với ngân hàng hoặc là nếu có cách tải trực tiếp trên app thì giúp cho em để lần sau em chủ động thao tác luôn nhé",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'nào' to 'tải' at position 18",
+      "reason": "'nào' (which means 'which' or 'any') is replaced by 'tải' (which means 'download'), changing the meaning of the sentence from asking about any way to a specific action (downloading). This alters the intent of the sentence.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'hơn' to 'luôn' at position 35",
-      "reason": "'hơn' means 'more' or 'better', indicating improvement in future actions, while 'luôn' means 'always' or 'immediately', which changes the nuance but not the core meaning of the sentence. The overall intent (helping the user be more proactive next time) is preserved.",
+      "reason": "'hơn' (meaning 'more' or 'better') is replaced by 'luôn' (meaning 'always' or 'immediately'), which changes the nuance but does not significantly alter the overall meaning of the sentence.",
       "score": 2
     }
   ]

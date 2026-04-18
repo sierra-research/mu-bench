@@ -1,16 +1,27 @@
 {
   "gold": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám.",
+  "predicted": "tổng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
-  "werNormalizedGold": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "tổng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "tổng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'tổng' at position 0",
+      "reason": "'cộng' means 'plus' and 'tổng' means 'total' in Vietnamese; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 3",
+      "reason": "'bốn' and 'tư' both mean 'four' in Vietnamese and are interchangeable in this context.",
+      "score": 3
+    }
+  ]
 }

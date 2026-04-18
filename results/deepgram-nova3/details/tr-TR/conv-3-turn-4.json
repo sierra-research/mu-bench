@@ -2,21 +2,26 @@
   "gold": "Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet Aslan ahmet nokta arslan et gmail dat kom",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 2,
+  "wer": 0.8571428571428571,
+  "werEdits": 6,
   "werRefWords": 7,
   "werNormalizedGold": "ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "ahmet nokta arslan at gmail dot com",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "ahmet aslan ahmet nokta arslan et gmail dat kom",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "ahmet nokta arslan at gmail dot com",
+  "sigWerNormalizedPredicted": "ahmet aslan ahmet nokta arslan et gmail dat kom",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'gmail' at position 4",
-      "reason": "'gmail' is a specific email provider, while 'email' is generic. This changes the actual email address, which is a significant error as it could lead to sending to the wrong address.",
-      "score": 1
+      "error": "Insertion: 'aslan' at position 1",
+      "reason": "'aslan' is an extra word inserted before the email address, which could cause confusion about the correct email address but does not completely derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 3",
+      "reason": "'at' is replaced with 'et', which is a common mishearing of the '@' symbol in email addresses. This could cause confusion in understanding or writing the correct email address, but the intent is still clear.",
+      "score": 2
     }
   ]
 }

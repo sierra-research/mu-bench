@@ -7,7 +7,7 @@
   "werRefWords": 13,
   "werNormalizedGold": "我明白了我明白了继续吧继续",
   "werNormalizedPredicted": "是",
-  "significantWer": 0.15384615384615385,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 明 白 了 我 明 白 了 继 续 吧 继 续",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to '是' at position 0",
-      "reason": "The actual transcription only contains '是', which is a completely different word from '我' and does not convey the same meaning. The expected sentence is much longer and has a different meaning.",
+      "reason": "The actual transcription only contains '是' (yes/is), which does not convey the same meaning as the repeated phrase '我明白了继续吧继续' (I understand, continue). The meaning of the sentence is completely lost.",
       "score": 1
     },
     {
       "error": "Deletion: '明' at position 1",
-      "reason": "The word '明' is missing from the actual transcription, which results in a loss of meaning and makes the actual output incoherent compared to the expected sentence.",
+      "reason": "The entire expected phrase is missing except for the first character, so all the intended meaning is lost. This is a significant error.",
       "score": 1
     }
   ]

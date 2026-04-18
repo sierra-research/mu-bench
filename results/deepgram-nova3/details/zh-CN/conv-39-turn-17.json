@@ -2,15 +2,31 @@
   "gold": "对，但是我的邮箱是君临 at email dot com。",
   "predicted": "对但是我的优祥是dreamlingemaildotcom。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5714285714285714,
+  "werEdits": 8,
   "werRefWords": 14,
-  "werNormalizedGold": "对但是我的邮箱是君临 at email dot com",
-  "werNormalizedPredicted": "对但是我的邮箱是君临 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "对 但是我的邮箱是君临 at email dot com",
+  "werNormalizedPredicted": "对但是我的优祥是 dreamlingemaildotcom",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "对 但 是 我 的 邮 箱 是 君 临 at email dot com",
-  "sigWerNormalizedPredicted": "对 但 是 我 的 邮 箱 是 君 临 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "对 但 是 我 的 优 祥 是 dreamlingemaildotcom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '优' at position 5",
+      "reason": "'邮' means 'mail' or 'post', while '优' means 'excellent' or 'superior'; this changes the meaning of the sentence and makes it confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to 'dreamlingemaildotcom' at position 8",
+      "reason": "'君' is part of a name or email address, but it was replaced with an English email address, which is a completely different entity and changes the intended information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '临' at position 9",
+      "reason": "'临' is part of the name or email address; omitting it results in an incomplete or incorrect email/name, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "我正在等待信卡，想知道它的状态。",
   "predicted": "我正在当代野信卡向指导它的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.42857142857142855,
+  "werEdits": 6,
   "werRefWords": 14,
-  "werNormalizedGold": "我正在等待信卡想知道它的状态",
-  "werNormalizedPredicted": "我正在等待信卡想知道它的状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "我正在等待信卡 想知道它的状态",
+  "werNormalizedPredicted": "我正在当代野信卡向指导它的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "我 正 在 等 待 信 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 信 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 当 代 野 信 卡 向 指 导 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '等' to '代' at position 3",
+      "reason": "'等' (wait) and '当' (when/serve as) are different words; this changes the meaning of the sentence and makes it less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '想' to '向' at position 7",
+      "reason": "'想' (want/think) and '向' (towards) have different meanings; this substitution changes the intent of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "Minh chấm trần a còng Gmail chấm com.",
   "predicted": "Minh chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
   "werNormalizedGold": "minh chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "minh chấm trần a còng gmail chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "minh chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "minh chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "minh chấm trần a còng gmail chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "minh chấm trầngmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 2",
+      "reason": "'trầngmail' merges 'trần' and 'gmail', losing the separation between the name and the email provider, which makes the email address unclear and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 3",
+      "reason": "Missing the 'a' (which stands for 'at' in an email address) makes the email address invalid and unrecognizable as a proper email format.",
+      "score": 1
+    }
+  ]
 }

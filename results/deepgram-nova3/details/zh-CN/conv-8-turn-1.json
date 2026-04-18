@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "我正在等待我的信用卡 想知道它的状态",
   "werNormalizedPredicted": "我正在等待我的信用卡 想知道他的状态",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '它' to '他' at position 13",
-      "reason": "'它' refers to 'it' (an object, in this case the credit card), while '他' refers to 'he' (a person). Using '他' instead of '它' is a minor grammatical error in Chinese, but the meaning of the sentence is still clear and not derailed.",
+      "reason": "'它' refers to 'it' (the credit card), while '他' means 'he' (a person). This substitution changes the reference from an object to a person, which could cause confusion but the overall meaning is still understandable in context.",
       "score": 2
     }
   ]

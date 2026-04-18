@@ -5,10 +5,10 @@
   "wer": 0.5,
   "werEdits": 4,
   "werRefWords": 8,
-  "werNormalizedGold": "俊不是邻居是林俊",
-  "werNormalizedPredicted": "去不是邻居去是邻居",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "俊 不是邻居 是林俊",
+  "werNormalizedPredicted": "去不是邻居 去是邻居",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "俊 不 是 邻 居 是 林 俊",
   "sigWerNormalizedPredicted": "去 不 是 邻 居 去 是 邻 居",
@@ -20,13 +20,13 @@
     },
     {
       "error": "Insertion: '去' at position 5",
-      "reason": "The insertion of '去' (meaning 'go') introduces an unrelated word, making the sentence less coherent and altering its meaning.",
+      "reason": "The extra '去' (go) inserted changes the structure and meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: '林' to '邻' at position 6",
-      "reason": "'林' (a surname or word meaning 'forest') is substituted with '邻' (meaning 'neighbor'), which changes the intended name or meaning, but the context still refers to a person, so the overall meaning is only slightly changed.",
-      "score": 2
+      "reason": "'林' (a surname or word) is replaced by '邻' (neighbor), which changes the intended meaning, especially since both are proper nouns or key words in the sentence.",
+      "score": 1
     }
   ]
 }

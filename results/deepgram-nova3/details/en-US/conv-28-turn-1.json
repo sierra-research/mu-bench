@@ -2,15 +2,26 @@
   "gold": "Let me get a pen real quick, all right. Hold on.",
   "predicted": "Let me get a pen real quick. Alright? Hold on.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "let me get a pen real quick all right hold on",
-  "werNormalizedPredicted": "let me get a pen real quick all right hold on",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "let me get a pen real quick alright hold on",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "let me get a pen real quick all right hold on",
-  "sigWerNormalizedPredicted": "let me get a pen real quick all right hold on",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "let me get a pen real quick alright hold on",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'all' to 'alright' at position 7",
+      "reason": "'all right' and 'alright' are commonly used interchangeably and mean the same thing in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'right' at position 8",
+      "reason": "'alright' is a single word variant of 'all right', so omitting 'right' when 'alright' is used does not change the meaning.",
+      "score": 3
+    }
+  ]
 }

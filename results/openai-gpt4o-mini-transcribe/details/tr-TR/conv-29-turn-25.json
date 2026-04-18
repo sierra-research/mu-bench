@@ -1,16 +1,22 @@
 {
   "gold": "Şu at mail dediğinizde mailin önünde E var değil mi?",
-  "predicted": "Şu e-mail dediğinizde mailin önünde e var değil mi?",
+  "predicted": "Şu et mail dediğinizde mailin önünde e var değil mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
-  "werNormalizedGold": "şu e mail dediğinizde mailin önünde e var değil mi",
-  "werNormalizedPredicted": "şu e mail dediğinizde mailin önünde e var değil mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
+  "werNormalizedPredicted": "şu et mail dediğinizde mailin önünde e var değil mi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "şu e mail dediğinizde mailin önünde e var değil mi",
-  "sigWerNormalizedPredicted": "şu e mail dediğinizde mailin önünde e var değil mi",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
+  "sigWerNormalizedPredicted": "şu et mail dediğinizde mailin önünde e var değil mi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'et' at position 1",
+      "reason": "'at' and 'et' are different words; in this context, 'at mail' refers to the English word 'at' (as in email addresses), while 'et' is not meaningful in this context and could confuse the listener. This substitution significantly affects the meaning.",
+      "score": 1
+    }
+  ]
 }

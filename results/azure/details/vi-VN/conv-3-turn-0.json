@@ -2,15 +2,36 @@
   "gold": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi khi nào thì nhận được cái thẻ đó?",
   "predicted": "Ờ là mất thẻ có xin cập lại thẻ ờ muốn hỏi coi là khi nào thì nhận được cái thẻ đó không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.21052631578947367,
+  "werEdits": 4,
   "werRefWords": 19,
-  "werNormalizedGold": "lam mat the co xin cap lai the muon hoi coi khi nao thi nhan duoc cai the do",
-  "werNormalizedPredicted": "lam mat the co xin cap lai the muon hoi coi khi nao thi nhan duoc cai the do",
-  "significantWer": 0.0,
+  "werNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
+  "werNormalizedPredicted": "là mất thẻ có xin cập lại thẻ muốn hỏi coi là khi nào thì nhận được cái thẻ đó không",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "lam mat the co xin cap lai the muon hoi coi khi nao thi nhan duoc cai the do",
-  "sigWerNormalizedPredicted": "lam mat the co xin cap lai the muon hoi coi khi nao thi nhan duoc cai the do",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
+  "sigWerNormalizedPredicted": "là mất thẻ có xin cập lại thẻ muốn hỏi coi là khi nào thì nhận được cái thẻ đó không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'làm' to 'là' at position 0",
+      "reason": "'làm mất thẻ' means 'lost the card', while 'là mất thẻ' is less natural and could confuse the meaning, but the intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cấp' to 'cập' at position 5",
+      "reason": "'cấp lại thẻ' means 'reissue the card', while 'cập lại thẻ' is a typo and not a valid phrase, but the context still makes the meaning clear.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'là' at position 11",
+      "reason": "Adding 'là' before 'khi nào' is a minor grammatical difference and does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'không' at position 19",
+      "reason": "Adding 'không' at the end turns the sentence into a yes/no question, but the main intent of asking about the card's arrival remains clear.",
+      "score": 2
+    }
+  ]
 }

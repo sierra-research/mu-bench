@@ -36,8 +36,8 @@ function buildScores() {
             scores[p.id][locale] = {
                 wer: lr.wer,
                 sigWer: lr.significantWer,
-                latencyP50: lr.latencyP50Ms,
-                latency: lr.latencyP95Ms,
+                latencyP50: lr.completeP50Ms,
+                latency: lr.completeP95Ms,
             };
         }
     }

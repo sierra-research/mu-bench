@@ -2,15 +2,26 @@
   "gold": "我的姓名不是丁俊，是林俊。",
   "predicted": "我的姓名不是鼎具是邻居",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
   "werRefWords": 11,
   "werNormalizedGold": "我的姓名不是丁俊是林俊",
-  "werNormalizedPredicted": "我的姓名不是丁俊是林俊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的姓名不是鼎具是邻居",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 的 姓 名 不 是 丁 俊 是 林 俊",
-  "sigWerNormalizedPredicted": "我 的 姓 名 不 是 丁 俊 是 林 俊",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 姓 名 不 是 鼎 具 是 邻 居",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '丁' to '鼎' at position 6",
+      "reason": "'丁' and '鼎' are completely different Chinese characters with unrelated meanings. This changes the name being referred to, which is significant in the context of identifying a person.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '邻' at position 9",
+      "reason": "'林' and '邻' are different characters with different meanings, changing the name and thus the identity being referred to.",
+      "score": 1
+    }
+  ]
 }

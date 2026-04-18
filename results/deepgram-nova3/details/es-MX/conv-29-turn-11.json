@@ -2,20 +2,30 @@
   "gold": "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
   "predicted": "Es Urión treinta, colonia Atlatico, delegación Azcapotzalco, en la Ciudad de México, código postal cero dos ochocientos sesenta.",
   "unintelligible": false,
-  "wer": 0.05555555555555555,
-  "werEdits": 1,
-  "werRefWords": 18,
-  "werNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "werNormalizedPredicted": "es urion treinta colonia atlatico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "significantWer": 0.05555555555555555,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "sigWerNormalizedPredicted": "es urion treinta colonia atlatico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
+  "wer": 0.21052631578947367,
+  "werEdits": 4,
+  "werRefWords": 19,
+  "werNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "werNormalizedPredicted": "es urión treinta colonia atlatico delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "sigWerNormalizedPredicted": "es urión treinta colonia atlatico delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tlatilco' to 'atlatico' at position 4",
-      "reason": "'Tlatilco' and 'atlatico' are different place names; substituting one for the other changes the specific location being referenced, which is a significant error in the context of an address.",
+      "reason": "The name of the colonia (neighborhood) is changed to a different word, which could lead to confusion or incorrect address information. This is a significant error as it affects the location.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ocho' to 'ochocientos' at position 16",
+      "reason": "The postal code changes from 'ocho' (8) to 'ochocientos' (800), which drastically alters the postal code and could result in a completely different address. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cero' at position 18",
+      "reason": "The last digit of the postal code is missing, which makes the postal code incomplete and could prevent correct mail delivery. This is a significant error.",
       "score": 1
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 3,
   "werNormalizedGold": "số điện thoại",
   "werNormalizedPredicted": "suit",
-  "significantWer": 0.6666666666666666,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "số điện thoại",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'số' to 'suit' at position 0",
-      "reason": "'suit' is an English word unrelated in meaning or language to 'số', which is Vietnamese for 'number'. This substitution makes the sentence incoherent and changes the meaning completely.",
+      "reason": "'suit' is an English word unrelated in meaning or language to 'số', which is Vietnamese for 'number'. This is a significant error that makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'điện' at position 1",
-      "reason": "'điện' (meaning 'electric' or part of 'phone number' in Vietnamese) is missing, which further derails the intended meaning of the phrase 'số điện thoại' (phone number).",
+      "reason": "The word 'điện' (meaning 'electric' or part of 'phone number' in Vietnamese) is missing, which further derails the intended meaning of the phrase.",
       "score": 1
     }
   ]

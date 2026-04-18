@@ -2,15 +2,21 @@
   "gold": "喂。",
   "predicted": "为",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 1,
   "werRefWords": 1,
   "werNormalizedGold": "喂",
-  "werNormalizedPredicted": "喂",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "为",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 1,
   "sigWerNormalizedGold": "喂",
-  "sigWerNormalizedPredicted": "喂",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "为",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '喂' to '为' at position 0",
+      "reason": "'喂' is a common greeting in Chinese (like 'hello' on the phone), while '为' means 'for' or 'because of' and is not used as a greeting. This substitution changes the meaning entirely and makes the sentence incoherent in context.",
+      "score": 1
+    }
+  ]
 }

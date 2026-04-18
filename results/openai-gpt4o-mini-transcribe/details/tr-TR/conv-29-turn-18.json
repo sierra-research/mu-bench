@@ -1,16 +1,22 @@
 {
   "gold": "At email nokta com değil mi? Email nokta com.",
-  "predicted": "at email.com, değil mi? Email.com.",
+  "predicted": "et email.com, değil mi? email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "at email nokta com değil mi email nokta com",
-  "werNormalizedPredicted": "at email nokta com değil mi email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "et email nokta com değil mi email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "at email nokta com değil mi email nokta com",
-  "sigWerNormalizedPredicted": "at email nokta com değil mi email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "et email nokta com değil mi email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'et' at position 0",
+      "reason": "'at' and 'et' are different words; 'at' is an English preposition or the symbol '@', while 'et' is not meaningful in this context. This could confuse the meaning, especially in an email context where 'at' is expected.",
+      "score": 1
+    }
+  ]
 }

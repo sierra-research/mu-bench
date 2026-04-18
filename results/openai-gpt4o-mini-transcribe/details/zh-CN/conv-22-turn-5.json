@@ -1,16 +1,27 @@
 {
   "gold": "C N 4 8 2。",
-  "predicted": "细恩四宝二。",
+  "predicted": "四音四宝二。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "细恩四八二",
-  "werNormalizedPredicted": "细恩四八二",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 四 八 二",
+  "werNormalizedPredicted": "四 音 四 宝 二",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "细 恩 四 八 二",
-  "sigWerNormalizedPredicted": "细 恩 四 八 二",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 四 八 二",
+  "sigWerNormalizedPredicted": "四 音 四 宝 二",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '四' at position 0",
+      "reason": "'c' is a letter and '四' is the Chinese character for 'four'; this is a significant substitution that changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '八' to '宝' at position 3",
+      "reason": "'八' means 'eight' and '宝' means 'treasure' in Chinese; this is a significant error as it changes a number to an unrelated word.",
+      "score": 1
+    }
+  ]
 }

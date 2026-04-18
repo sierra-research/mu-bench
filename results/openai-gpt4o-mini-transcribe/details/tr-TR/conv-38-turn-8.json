@@ -1,27 +1,32 @@
 {
   "gold": "İşleniyor derken ne demek istediniz? Ben bakiyeyi öğrenmek istiyorum. Yani kalan limitin miktarı nedir?",
-  "predicted": "İşleniyordayken ne demek istediniz? Ben bakiyeyi öğrenmek istiyorum. Yani kalan limitin miktarı nedir?",
+  "predicted": "İşleniyordayken ne demek istediniz? Ben bakiyeyi öğrenmek istedim. Yani kalan limitin miktarı nedir?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 2,
-  "werRefWords": 14,
-  "werNormalizedGold": "isleniyor derken ne demek istediniz ben bakiyeyi ogrenmek istiyorum yani kalan limitin miktari nedir",
-  "werNormalizedPredicted": "isleniyordayken ne demek istediniz ben bakiyeyi ogrenmek istiyorum yani kalan limitin miktari nedir",
-  "significantWer": 0.0,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "işleniyor derken ne demek istediniz ben bakiyeyi öğrenmek istiyorum kalan limitin miktarı nedir",
+  "werNormalizedPredicted": "işleniyordayken ne demek istediniz ben bakiyeyi öğrenmek istedim kalan limitin miktarı nedir",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "isleniyor derken ne demek istediniz ben bakiyeyi ogrenmek istiyorum yani kalan limitin miktari nedir",
-  "sigWerNormalizedPredicted": "isleniyordayken ne demek istediniz ben bakiyeyi ogrenmek istiyorum yani kalan limitin miktari nedir",
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "işleniyor derken ne demek istediniz ben bakiyeyi öğrenmek istiyorum kalan limitin miktarı nedir",
+  "sigWerNormalizedPredicted": "işleniyordayken ne demek istediniz ben bakiyeyi öğrenmek istedim kalan limitin miktarı nedir",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'isleniyor' to 'isleniyordayken' at position 0",
-      "reason": "'isleniyordayken' combines 'isleniyor' and 'derken' into one word, which changes the temporal nuance but the overall meaning of the sentence is still understandable.",
+      "error": "Substitution: 'işleniyor' to 'işleniyordayken' at position 0",
+      "reason": "'işleniyordayken' (while it is being processed) changes the temporal context compared to 'işleniyor' (it is being processed), but the overall meaning is still understandable in context.",
       "score": 2
     },
     {
       "error": "Deletion: 'derken' at position 1",
-      "reason": "'derken' is omitted because its meaning is partially absorbed into 'isleniyordayken', so the main intent is preserved, but the nuance is slightly changed.",
+      "reason": "Omitting 'derken' (while saying) slightly changes the nuance but does not significantly alter the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'istiyorum' to 'istedim' at position 8",
+      "reason": "Changing from present tense ('I want') to past tense ('I wanted') does not change the intent in this context.",
+      "score": 3
     }
   ]
 }

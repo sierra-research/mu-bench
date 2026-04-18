@@ -2,15 +2,21 @@
   "gold": "你好，我想要取消我银行卡的手续费。",
   "predicted": "您好,我想要取消我银行卡的手续费。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.06666666666666667,
+  "werEdits": 1,
   "werRefWords": 15,
-  "werNormalizedGold": "你 好 我 想 要 取 消 我 银 行 卡 的 手 续 费",
-  "werNormalizedPredicted": "你 好 我 想 要 取 消 我 银 行 卡 的 手 续 费",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你好 我想要取消我银行卡的手续费",
+  "werNormalizedPredicted": "您好 我想要取消我银行卡的手续费",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "你 好 我 想 要 取 消 我 银 行 卡 的 手 续 费",
-  "sigWerNormalizedPredicted": "你 好 我 想 要 取 消 我 银 行 卡 的 手 续 费",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "您 好 我 想 要 取 消 我 银 行 卡 的 手 续 费",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '您' at position 0",
+      "reason": "'你' and '您' both mean 'you', but '您' is a more polite or formal version. The meaning of the sentence remains the same, only the level of politeness changes.",
+      "score": 3
+    }
+  ]
 }

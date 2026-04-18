@@ -1,26 +1,31 @@
 {
   "gold": "Ừ. Cảm ơn Anna nhá. Có gì cần mình gọi lên.",
-  "predicted": "Ừ, cảm ơn Anna nhé. Có gì cần thì gọi liền",
+  "predicted": "Ừ, cảm ơn anh Na nhé. Có gì cần thì gọi đi",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
-  "werEdits": 2,
-  "werRefWords": 11,
-  "werNormalizedGold": "ừ cảm ơn anna nhé có gì cần mình gọi lên",
-  "werNormalizedPredicted": "ừ cảm ơn anna nhé có gì cần thì gọi liền",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "ừ cảm ơn anna nhé có gì cần mình gọi lên",
-  "sigWerNormalizedPredicted": "ừ cảm ơn anna nhé có gì cần thì gọi liền",
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "cảm ơn anna nhá có gì cần mình gọi lên",
+  "werNormalizedPredicted": "cảm ơn anh na nhé có gì cần thì gọi đi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "cảm ơn anna nhá có gì cần mình gọi lên",
+  "sigWerNormalizedPredicted": "cảm ơn anh na nhé có gì cần thì gọi đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'mình' to 'thì' at position 8",
-      "reason": "'mình' (I/myself) is replaced by 'thì' (then), which changes the subject and structure of the sentence, but the overall intent (to call if needed) is still understandable.",
-      "score": 2
+      "error": "Substitution: 'anna' to 'na' at position 2",
+      "reason": "'anh' (meaning 'older brother' or a polite address) is inserted before the name, which changes the addressee from 'anna' to 'anh na', potentially addressing a different person. This alters the meaning of the sentence.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'lên' to 'liền' at position 10",
-      "reason": "'lên' (up) is replaced by 'liền' (immediately), which changes the nuance of the action from 'call up' to 'call immediately', but the main meaning (to call) is preserved.",
+      "error": "Substitution: 'mình' to 'thì' at position 7",
+      "reason": "The name 'anna' is changed to 'na', which is a different name and could refer to a different person. This is a significant error as it changes the intended recipient.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lên' to 'đi' at position 9",
+      "reason": "'mình' (meaning 'I' or 'me') is replaced with 'thì' (a conjunction/particle), which changes the subject and structure of the sentence but the overall intent (to call if needed) remains. This is a minor error.",
       "score": 2
     }
   ]

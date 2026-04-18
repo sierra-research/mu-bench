@@ -2,30 +2,35 @@
   "gold": "I don't know. Maybe like get me to like a live agent because I really need to know how much money I could spend because it's just like we want to get a couple hotels, we had to get a couple limos. Alright, we're going to party.",
   "predicted": "Um, I don't know. Maybe like get me to like a, a live agent because I really need to know how much money I could spend because just like we wanna get a couple hotels, we gotta get a couple limos. Like we're gonna party",
   "unintelligible": false,
-  "wer": 0.08,
-  "werEdits": 4,
+  "wer": 0.1,
+  "werEdits": 5,
   "werRefWords": 50,
   "werNormalizedGold": "i do not know maybe like get me to like a live agent because i really need to know how much money i could spend because it is just like we want to get a couple hotels we had to get a couple limos alright we are going to party",
-  "werNormalizedPredicted": "i do not know maybe like get me to like a live agent because i really need to know how much money i could spend because just like we want to get a couple hotels we have to get a couple limos like we are going to party",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "i do not know maybe like get me to like a a live agent because i really need to know how much money i could spend because just like we want to get a couple hotels we have to get a couple limos like we are going to party",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 50,
   "sigWerNormalizedGold": "i do not know maybe like get me to like a live agent because i really need to know how much money i could spend because it is just like we want to get a couple hotels we had to get a couple limos alright we are going to party",
-  "sigWerNormalizedPredicted": "i do not know maybe like get me to like a live agent because i really need to know how much money i could spend because just like we want to get a couple hotels we have to get a couple limos like we are going to party",
+  "sigWerNormalizedPredicted": "i do not know maybe like get me to like a a live agent because i really need to know how much money i could spend because just like we want to get a couple hotels we have to get a couple limos like we are going to party",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'a' at position 11",
+      "reason": "The extra 'a' before 'live agent' is a repetition and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
       "error": "Deletion: 'it' at position 26",
-      "reason": "Omitting 'it is' slightly changes the flow but does not alter the overall meaning of the sentence.",
+      "reason": "Omitting 'it' in 'because it is just like' slightly affects the flow but does not change the overall meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'had' to 'have' at position 38",
-      "reason": "Switching from past to present tense ('had' to 'have') is a minor grammatical error and does not change the overall meaning.",
-      "score": 2
+      "reason": "'Had' and 'have' are different tenses, but in this context, the meaning is preserved.",
+      "score": 3
     },
     {
       "error": "Substitution: 'alright' to 'like' at position 44",
-      "reason": "Replacing 'alright' with 'like' changes the tone but the intent of going to party is still clear; minor impact on meaning.",
+      "reason": "Replacing 'alright' with 'like' changes the tone but not the core meaning of the sentence.",
       "score": 2
     }
   ]

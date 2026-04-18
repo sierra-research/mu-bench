@@ -2,15 +2,21 @@
   "gold": "郡。我的姓名是郡凛。郡。",
   "predicted": "我的姓名是君临君。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "我的姓名是君临",
-  "werNormalizedPredicted": "我的姓名是君临",
-  "significantWer": 0.0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
+  "werRefWords": 9,
+  "werNormalizedGold": "郡 我的姓名是郡凛 郡",
+  "werNormalizedPredicted": "我的姓名是郡凛郡",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "我 的 姓 名 是 君 临",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 临",
-  "sigWerErrors": []
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "郡 我 的 姓 名 是 郡 凛 郡",
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 郡 凛 郡",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '郡' at position 0",
+      "reason": "The deletion of the initial '郡' removes a word that may be part of a name or title, but the rest of the sentence still clearly communicates the name. The overall meaning is preserved, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

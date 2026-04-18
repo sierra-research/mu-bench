@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "我想的我现在",
   "werNormalizedPredicted": "我希望",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "我 想 的 我 现 在",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '想' to '希' at position 1",
-      "reason": "'想' means 'want' or 'think', while '希' (as in '希望') means 'hope'. This changes the intent of the sentence from wanting/thinking to hoping, which alters the meaning significantly.",
+      "reason": "'想' means 'want' and '希' (as in '希望') means 'hope', which changes the intent of the sentence from wanting to hoping, altering the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: '我' at position 3",
-      "reason": "The omission of the second '我' ('I') removes a subject or emphasis, which can make the sentence incomplete or change its meaning.",
+      "reason": "Omitting '我' (I/me) removes the subject from the latter part of the sentence, making the sentence incomplete and changing its meaning.",
       "score": 1
     }
   ]

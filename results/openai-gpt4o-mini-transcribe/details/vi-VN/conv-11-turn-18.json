@@ -1,26 +1,21 @@
 {
   "gold": "Tôi muốn xin được cấp 2 thẻ, được không?",
-  "predicted": "Tôi muốn xin được cấp khai hệ",
+  "predicted": "tôi muốn xin được cấp tài hệ được không?",
   "unintelligible": false,
-  "wer": 0.4444444444444444,
-  "werEdits": 4,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "tôi muốn xin được cấp hai thẻ được không",
-  "werNormalizedPredicted": "tôi muốn xin được cấp khai hệ",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "tôi muốn xin được cấp tài hệ được không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "tôi muốn xin được cấp hai thẻ được không",
-  "sigWerNormalizedPredicted": "tôi muốn xin được cấp khai hệ",
+  "sigWerNormalizedPredicted": "tôi muốn xin được cấp tài hệ được không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'hai' to 'khai' at position 5",
-      "reason": "'hai' means 'two' (a quantity), while 'khai' is a different word entirely and changes the meaning of the request, making the sentence incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'được' at position 7",
-      "reason": "Omitting 'được' removes a key part of the request structure in Vietnamese, making the sentence incomplete and less clear.",
+      "error": "Substitution: 'hai' to 'tài' at position 5",
+      "reason": "'hai' means 'two' (a quantity), while 'tài' is unrelated and changes the meaning of the request from asking for two cards to something incoherent. This derails the intended meaning of the sentence.",
       "score": 1
     }
   ]

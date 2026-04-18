@@ -5,9 +5,9 @@
   "wer": 0.16666666666666666,
   "werEdits": 2,
   "werRefWords": 12,
-  "werNormalizedGold": "不 对 不 对 我 几 次 说 我 是 不 对",
-  "werNormalizedPredicted": "不 对 不 对 我 这 次 说 的 是 不 对",
-  "significantWer": 0.16666666666666666,
+  "werNormalizedGold": "不对不对我几次说我是不对",
+  "werNormalizedPredicted": "不对 不对 我这次说的是不对",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "不 对 不 对 我 几 次 说 我 是 不 对",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '几' to '这' at position 5",
-      "reason": "'几次' means 'several times', while '这次' means 'this time'; this changes the meaning of the sentence from talking about multiple times to a specific time, which is a significant change.",
+      "reason": "'几次' means 'several times', while '这次' means 'this time'; this changes the meaning of the sentence from talking about multiple times to a single instance, which is a significant change.",
       "score": 1
     },
     {
       "error": "Substitution: '我' to '的' at position 8",
-      "reason": "'我' means 'I', while '的' is a possessive particle; this changes the grammatical structure and meaning of the sentence, making it less coherent.",
+      "reason": "'我' means 'I', while '的' is a possessive particle; this changes the subject and structure of the sentence, affecting the meaning significantly.",
       "score": 1
     }
   ]

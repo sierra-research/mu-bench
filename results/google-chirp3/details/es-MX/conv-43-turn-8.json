@@ -2,21 +2,26 @@
   "gold": "Ya, ya, yo ya lo recibí.",
   "predicted": "Ya, ya, ya está. Ya lo recibí.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
-  "werNormalizedGold": "ya ya yo ya lo recibi",
+  "werNormalizedGold": "ya ya yo ya lo recibí",
   "werNormalizedPredicted": "ya ya ya esta ya lo recibi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "ya ya yo ya lo recibi",
+  "sigWerNormalizedGold": "ya ya yo ya lo recibí",
   "sigWerNormalizedPredicted": "ya ya ya esta ya lo recibi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'yo' to 'esta' at position 2",
-      "reason": "The extra 'ya' does not change the overall meaning of the sentence, which is about having received something. It is a minor repetition.",
+      "reason": "The extra 'ya' does not change the overall meaning of the sentence, as it is a repetition of an interjection.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'recibí' to 'recibi' at position 5",
+      "reason": "Substituting 'yo' (I) with 'esta' (this) changes the subject and alters the meaning of the sentence significantly.",
+      "score": 1
     }
   ]
 }

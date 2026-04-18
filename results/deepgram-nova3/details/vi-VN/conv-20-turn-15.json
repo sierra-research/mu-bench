@@ -2,21 +2,31 @@
   "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
   "predicted": "Minh không đúng. Minh chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.5,
+  "werEdits": 5,
   "werRefWords": 10,
-  "werNormalizedGold": "khong dung minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "minh khong dung minh cham tran a cong email cham com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh không đúng minh chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "khong dung minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "minh khong dung minh cham tran a cong email cham com",
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh không đúng minh chấm trầngmail chấm com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'minh' at position 0",
-      "reason": "The insertion of 'minh' at the beginning does not change the overall meaning of the sentence, as it is just an extra word and the rest of the sentence remains intact.",
+      "reason": "The extra 'minh' at the beginning does not change the overall meaning of the sentence, as it is just a repetition of the name.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 4",
+      "reason": "'trầngmail' merges the name 'trần' and the word 'gmail', which makes the email address incorrect and unrecognizable. This is a significant error as it affects the ability to understand or use the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 5",
+      "reason": "Missing the 'a' in the email address changes the actual email, making it incorrect and potentially undeliverable. This is a significant error.",
+      "score": 1
     }
   ]
 }

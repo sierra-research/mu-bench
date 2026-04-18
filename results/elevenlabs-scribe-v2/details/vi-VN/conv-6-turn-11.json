@@ -6,16 +6,21 @@
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "sẵn sàng",
-  "werNormalizedPredicted": "à shanghai",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "shanghai",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "sẵn sàng",
-  "sigWerNormalizedPredicted": "à shanghai",
+  "sigWerNormalizedPredicted": "shanghai",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sẵn' to 'à' at position 0",
-      "reason": "The actual transcription uses a completely different word in a different language, which changes the meaning entirely and makes the sentence incoherent compared to the expected phrase.",
+      "error": "Substitution: 'sẵn' to 'shanghai' at position 0",
+      "reason": "'shanghai' is a completely different word and meaning from 'sẵn', which is Vietnamese for 'ready'. This substitution makes the sentence incoherent and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 1",
+      "reason": "The word 'sàng' is missing, which further derails the intended meaning of the phrase 'sẵn sàng' ('ready').",
       "score": 1
     }
   ]

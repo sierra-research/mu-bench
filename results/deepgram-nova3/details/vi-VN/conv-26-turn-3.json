@@ -2,26 +2,41 @@
   "gold": "Tên của mình là Trần Minh. Email là minh chấm trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, Thành phố Hồ Chí Minh, 700000, Việt Nam.",
   "predicted": "Tên của mình là Trần Minh email là minh chấm orggmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường Lê Lợi TP HCM bảy trăm nghìn Việt Nam",
   "unintelligible": false,
-  "wer": 0.07407407407407407,
-  "werEdits": 4,
-  "werRefWords": 54,
-  "werNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
-  "werNormalizedPredicted": "tên của mình là trần minh email là minh chấm orggmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
-  "significantWer": 0.037037037037037035,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 54,
-  "sigWerNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
-  "sigWerNormalizedPredicted": "tên của mình là trần minh email là minh chấm orggmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "wer": 0.20754716981132076,
+  "werEdits": 11,
+  "werRefWords": 53,
+  "werNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "tên của mình là trần minh email là minh chấm orggmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi tp hcm bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 53,
+  "sigWerNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "tên của mình là trần minh email là minh chấm orggmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi tp hcm bảy trăm nghìn việt nam",
   "sigWerErrors": [
     {
       "error": "Substitution: 'trần' to 'orggmail' at position 10",
-      "reason": "'orggmail' is not a valid replacement for 'trần' in an email address, making the email address incorrect and unusable.",
+      "reason": "'trần' is a Vietnamese surname, while 'orggmail' is a concatenation of unrelated words, making the email address incorrect and unrecognizable.",
       "score": 1
     },
     {
       "error": "Deletion: 'a' at position 11",
-      "reason": "Missing the 'a' (for 'a còng', meaning '@') in the email address makes the email invalid and unusable.",
+      "reason": "Missing 'a' (from 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'một' to 'mốt' at position 25",
+      "reason": "Inserting 'mươi' changes the phone number from 'chín một một' (911) to 'chín mươi mốt' (91), which is a significant change in the phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'thành' to 'tp' at position 43",
+      "reason": "'một' (1) and 'mốt' (1, but used in 21, 31, etc.) are different in Vietnamese numbers; here, it changes the phone number, which is significant.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hồ' at position 45",
+      "reason": "'tp' is a common abbreviation for 'thành phố' (city) in Vietnamese, so the meaning is preserved.",
+      "score": 3
     }
   ]
 }

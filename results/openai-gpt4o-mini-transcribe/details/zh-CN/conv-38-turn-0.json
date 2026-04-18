@@ -1,16 +1,22 @@
 {
   "gold": "你好。",
-  "predicted": "你好。",
+  "predicted": "斯尼尔。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.5,
+  "werEdits": 3,
   "werRefWords": 2,
-  "werNormalizedGold": "你 好",
-  "werNormalizedPredicted": "你 好",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "斯尼尔",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
-  "sigWerNormalizedPredicted": "你 好",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "斯 尼 尔",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '尼' at position 0",
+      "reason": "'斯' is a completely different character from '你', changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

@@ -2,21 +2,26 @@
   "gold": "Alright. I got that. Let me repeat that to you.",
   "predicted": "All right, I got that. Let me repeat that to you. Ready?",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "alright i got that let me repeat that to you",
-  "werNormalizedPredicted": "alright i got that let me repeat that to you ready",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "all right i got that let me repeat that to you ready",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "alright i got that let me repeat that to you",
-  "sigWerNormalizedPredicted": "alright i got that let me repeat that to you ready",
+  "sigWerNormalizedPredicted": "all right i got that let me repeat that to you ready",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'alright' to 'right' at position 0",
+      "reason": "'all right' is a common variant spelling of 'alright', so this is not a meaningful insertion.",
+      "score": 3
+    },
+    {
       "error": "Insertion: 'ready' at position 10",
-      "reason": "The word 'ready' is added at the end, but it does not change the meaning of the original sentence. The main message remains the same.",
-      "score": 2
+      "reason": "'alright' and 'all right' are semantically equivalent and commonly interchangeable.",
+      "score": 3
     }
   ]
 }

@@ -1,16 +1,27 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com.",
-  "predicted": "Email là minh.trần@gmail.com",
+  "predicted": "Email là minh.trần2@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minh chấm trần hai a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minh chấm trần hai a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'hai' at position 5",
+      "reason": "'hai' (meaning 'two') is inserted in the email address, which could make the email invalid or refer to a different address. This significantly changes the meaning and correctness of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing the domain from 'email' to 'gmail' changes the entire email provider, which is a significant error as it would send the email to a different address.",
+      "score": 1
+    }
+  ]
 }

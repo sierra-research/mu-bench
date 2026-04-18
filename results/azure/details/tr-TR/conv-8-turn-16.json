@@ -2,26 +2,46 @@
   "gold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
   "predicted": "Adımın son harfi yanlış, ben zaynet teyle pırasa'nın fesih ile söyledim. Siz bana t'yi söylediniz, zayn net email aynı şekilde olacak.",
   "unintelligible": false,
-  "wer": 0.08695652173913043,
-  "werEdits": 2,
+  "wer": 0.4782608695652174,
+  "werEdits": 11,
   "werRefWords": 23,
-  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana t'li söylediniz zaynep email ile aynı şekilde zaynep olacak",
-  "werNormalizedPredicted": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana t'li söylediniz zaynep email aynı şekilde olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zaynet teyle pırasa'nın fesih ile söyledim siz bana t yi söylediniz zayn net email aynı şekilde olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana t'li söylediniz zaynep email ile aynı şekilde zaynep olacak",
-  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana t'li söylediniz zaynep email aynı şekilde olacak",
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zaynet teyle pırasa'nın fesih ile söyledim siz bana t yi söylediniz zayn net email aynı şekilde olacak",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'zaynep' to 'zaynet' at position 5",
+      "reason": "'zaynep' is a proper noun (a name), and 'zaynet' is a minor misspelling but still recognizable as the intended name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'psi' at position 9",
+      "reason": "'psi' refers to the letter 'p' in the context of spelling, and its omission makes the explanation about the spelling unclear, which is significant in this context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tli' to 'yi' at position 14",
+      "reason": "The insertion of 't' changes the letter being referenced, which is important in the context of spelling a name, leading to confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'net' at position 16",
+      "reason": "'tli' and 'yi' are different letter references; this changes the letter being discussed, which is significant for spelling.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'ile' at position 18",
-      "reason": "The omission of 'ile' (meaning 'with') in this context does not significantly change the meaning of the sentence, as the main information about the email being the same is still conveyed.",
+      "reason": "The insertion of 'zayn' splits the name and could cause confusion, but the overall meaning is still somewhat clear.",
       "score": 2
     },
     {
       "error": "Deletion: 'zaynep' at position 21",
-      "reason": "The omission of the repeated 'zaynep' at the end slightly reduces clarity but does not derail the meaning, since the context already established the name and the sentence still makes sense.",
-      "score": 2
+      "reason": "'zaynep' is replaced with 'net', which is not the intended name and changes the meaning significantly.",
+      "score": 1
     }
   ]
 }

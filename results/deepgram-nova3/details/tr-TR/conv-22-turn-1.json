@@ -2,15 +2,21 @@
   "gold": "C N 593.",
   "predicted": "CN beş yüz doksan üç.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "c n five hundred ninety three",
-  "werNormalizedPredicted": "c n five hundred ninety three",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n five hundred ninety three",
-  "sigWerNormalizedPredicted": "c n five hundred ninety three",
-  "sigWerErrors": []
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n beş dokuz üç",
+  "werNormalizedPredicted": "c n beş yüz doksan üç",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n beş dokuz üç",
+  "sigWerNormalizedPredicted": "c n beş yüz doksan üç",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dokuz' to 'doksan' at position 3",
+      "reason": "'yüz' means 'hundred' in Turkish, which changes the number from 'five nine three' to 'five hundred ninety three', significantly altering the meaning of the number sequence.",
+      "score": 1
+    }
+  ]
 }

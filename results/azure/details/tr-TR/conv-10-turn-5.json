@@ -2,15 +2,26 @@
   "gold": "Zaynep nokta Arslan at email nokta com.",
   "predicted": "Zaynetarslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "zaynep arslan at email com",
-  "werNormalizedPredicted": "zaynep arslan at email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "zaynep arslan at email com",
-  "sigWerNormalizedPredicted": "zaynep arslan at email com",
-  "sigWerErrors": []
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zaynetarslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zaynetarslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zaynetarslan' at position 0",
+      "reason": "The actual merges the first and third words ('zaynep' and 'arslan') into one, losing the separation and the 'nokta' (dot) between them, which is critical for an email address or username. This makes the transcription significantly different and potentially unusable for its intended purpose.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "Omitting 'nokta' (dot) changes the structure of the email or username, which is a significant error as it alters the meaning and usability of the information.",
+      "score": 1
+    }
+  ]
 }

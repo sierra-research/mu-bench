@@ -5,27 +5,27 @@
   "wer": 0.375,
   "werEdits": 3,
   "werRefWords": 8,
-  "werNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
-  "werNormalizedPredicted": "merhaba son hesap ekstresinin bir kopyasina ihtiyacim vardi",
-  "significantWer": 0.0,
+  "werNormalizedGold": "merhaba son hesap ekstresinin kopyasına ihtiyacım var da",
+  "werNormalizedPredicted": "merhaba son hesap ekstresinin bir kopyasına ihtiyacım vardı",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
-  "sigWerNormalizedPredicted": "merhaba son hesap ekstresinin bir kopyasina ihtiyacim vardi",
+  "sigWerNormalizedGold": "merhaba son hesap ekstresinin kopyasına ihtiyacım var da",
+  "sigWerNormalizedPredicted": "merhaba son hesap ekstresinin bir kopyasına ihtiyacım vardı",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 4",
-      "reason": "'bir' (meaning 'a' or 'one') adds specificity but does not change the overall meaning of the sentence.",
+      "reason": "'bir' (a) adds a minor detail (a copy vs. copy), but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'var' to 'vardi' at position 6",
-      "reason": "Present tense 'var' (there is) vs. past tense 'vardi' (there was); the intent remains clear and the meaning is not significantly changed in this context.",
+      "error": "Substitution: 'var' to 'vardı' at position 6",
+      "reason": "Changing 'var' (there is) to 'vardı' (there was) shifts the tense from present to past, but the request for a copy remains clear and the intent is still understandable.",
       "score": 3
     },
     {
       "error": "Deletion: 'da' at position 7",
-      "reason": "'da' is a discourse particle in Turkish that adds emphasis or continuation, but its omission does not change the core meaning of the sentence.",
+      "reason": "'da' is a discourse particle in Turkish that adds emphasis or softens the request, but its omission does not change the core meaning of the sentence.",
       "score": 2
     }
   ]

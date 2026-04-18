@@ -2,15 +2,21 @@
   "gold": "İsmim Ahmet, soyismim Arslan.",
   "predicted": "Ahmet nokta-- ııh, ismim Ahmet, soyismim Arslan",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
   "werNormalizedGold": "ismim ahmet soyismim arslan",
-  "werNormalizedPredicted": "ismim ahmet soyismim arslan",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "ahmet ismim ahmet soyismim arslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "ismim ahmet soyismim arslan",
-  "sigWerNormalizedPredicted": "ismim ahmet soyismim arslan",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ahmet ismim ahmet soyismim arslan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ahmet' at position 0",
+      "reason": "The insertion of 'ahmet' at the beginning does not change the meaning of the sentence, as it is simply a repetition of the name already present in the expected transcription. The overall meaning remains the same.",
+      "score": 2
+    }
+  ]
 }

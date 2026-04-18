@@ -1,16 +1,22 @@
 {
   "gold": "Anna, kredi kartımın limitini artırmak istiyorum.",
-  "predicted": "anna, kredi kartımın limitini artırmak istiyorum.",
+  "predicted": "Anna kredi kartımı limitimi artırmak istiyorum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
-  "werNormalizedPredicted": "anna kredi kartımın limitini artırmak istiyorum",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "anna kredi kartımı limitimi artırmak istiyorum",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
-  "sigWerNormalizedPredicted": "anna kredi kartımın limitini artırmak istiyorum",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "anna kredi kartımı limitimi artırmak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartımın' to 'kartımı' at position 2",
+      "reason": "'kartımın' (of my credit card) is possessive, while 'kartımı' (my credit card as object) changes the grammatical role but the overall intent of increasing the credit card limit remains clear. The meaning is not derailed, but there is a minor grammatical error.",
+      "score": 2
+    }
+  ]
 }

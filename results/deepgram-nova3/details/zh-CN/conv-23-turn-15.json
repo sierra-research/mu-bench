@@ -2,15 +2,31 @@
   "gold": "妹玲 at email dot com。",
   "predicted": "maylingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "mayling at email dot com",
-  "werNormalizedPredicted": "mayling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "mayling at email dot com",
-  "sigWerNormalizedPredicted": "mayling at email dot com",
-  "sigWerErrors": []
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "妹玲 at email dot com",
+  "werNormalizedPredicted": "mayling email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "妹 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mayling email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '妹' to 'mayling' at position 0",
+      "reason": "'妹' is a Chinese character and 'mayling' is an attempt to phonetically transcribe the name, but the script and representation are different. This could cause confusion, especially in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of '玲', which is part of the name, results in an incomplete or incorrect email username, significantly altering the intended address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Missing 'dot' in the email address makes the address incomplete and unusable.",
+      "score": 1
+    }
+  ]
 }

@@ -2,25 +2,25 @@
   "gold": "À, thôi. Được rồi.",
   "predicted": "À sorry, sorry.",
   "unintelligible": false,
-  "wer": 0.75,
+  "wer": 1.0,
   "werEdits": 3,
-  "werRefWords": 4,
-  "werNormalizedGold": "a thoi duoc roi",
-  "werNormalizedPredicted": "a sorry sorry",
-  "significantWer": 0.5,
+  "werRefWords": 3,
+  "werNormalizedGold": "thôi được rồi",
+  "werNormalizedPredicted": "sorry sorry",
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "a thoi duoc roi",
-  "sigWerNormalizedPredicted": "a sorry sorry",
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "thôi được rồi",
+  "sigWerNormalizedPredicted": "sorry sorry",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'thoi' to 'sorry' at position 1",
-      "reason": "'thoi' is a Vietnamese word meaning 'that's enough' or 'stop', while 'sorry' is an English apology; this changes the meaning and language, making the sentence incoherent.",
+      "error": "Substitution: 'thôi' to 'sorry' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Vietnamese), which completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'roi' at position 3",
-      "reason": "'roi' is part of the Vietnamese phrase meaning 'already' or 'done', and its omission further derails the intended meaning of the sentence.",
+      "error": "Deletion: 'rồi' at position 2",
+      "reason": "A key word from the expected sentence is missing, further derailing the intended meaning.",
       "score": 1
     }
   ]

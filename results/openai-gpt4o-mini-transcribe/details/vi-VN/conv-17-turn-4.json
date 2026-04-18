@@ -1,16 +1,32 @@
 {
   "gold": "Thu chấm trần a còng Gmail chấm com.",
-  "predicted": "Tuu cham cen a ngam go mew jonggom.",
+  "predicted": "Tu chấm chân à ngòm gờ mèo",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.875,
+  "werEdits": 7,
   "werRefWords": 8,
-  "werNormalizedGold": "thu cham tran a cong gmail cham com",
-  "werNormalizedPredicted": "thu cham tran a cong gmail cham com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "thu chấm trần a còng gmail chấm com",
+  "werNormalizedPredicted": "tu chấm chân à ngòm gờ mèo",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "thu cham tran a cong gmail cham com",
-  "sigWerNormalizedPredicted": "thu cham tran a cong gmail cham com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "thu chấm trần a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "tu chấm chân à ngòm gờ mèo",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thu' to 'tu' at position 0",
+      "reason": "'thu' and 'tu' are different Vietnamese words with different meanings; this changes the intended email username.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'chân' at position 2",
+      "reason": "'trần' is a common Vietnamese surname, while 'chân' means 'foot' or 'leg'; this is a significant change in a proper noun.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'com' at position 7",
+      "reason": "'com' is the correct domain ending, while 'ngòm' is not a valid domain ending, making the email address invalid.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "I need from September thirteenth of 2025.",
   "predicted": "I need from September thirteenth of twenty twenty five.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "i need from september thirteenth of two thousand twenty five",
-  "werNormalizedPredicted": "i need from september thirteenth of two thousand twenty five",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "i need from september thirteenth of twenty twenty five",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "i need from september thirteenth of two thousand twenty five",
-  "sigWerNormalizedPredicted": "i need from september thirteenth of two thousand twenty five",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "i need from september thirteenth of twenty twenty five",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'two' to 'twenty' at position 6",
+      "reason": "'two thousand twenty five' is the standard way to say the year 2025; 'twenty twenty five' is also commonly used and understood to mean the same year. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'thousand' at position 7",
+      "reason": "Omitting 'thousand' in the year 'two thousand twenty five' to say 'twenty twenty five' is a common alternative phrasing for the year 2025. The meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

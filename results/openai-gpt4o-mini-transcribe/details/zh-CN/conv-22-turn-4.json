@@ -1,21 +1,26 @@
 {
   "gold": "对吗？",
-  "predicted": "Tu emoção?",
+  "predicted": "Duymo?",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "对吗",
-  "werNormalizedPredicted": "tu emoção",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "duymo",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "对 吗",
-  "sigWerNormalizedPredicted": "tu emoção",
+  "sigWerNormalizedPredicted": "duymo",
   "sigWerErrors": [
     {
-      "error": "Substitution: '对' to 'tu' at position 0",
-      "reason": "The actual transcription is in a different language (Portuguese) than the expected (Chinese), resulting in a completely different meaning and making the sentence incoherent.",
+      "error": "Substitution: '对' to 'duymo' at position 0",
+      "reason": "The expected word is in Chinese ('对'), but the actual transcription is a romanized string ('duymo') that does not correspond to the expected word or meaning. This is a significant error as it changes the language and meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吗' at position 1",
+      "reason": "The question particle '吗' is missing in the actual transcription, which removes the interrogative meaning of the sentence. This is a significant error as it changes the sentence from a question to a statement or something incoherent.",
       "score": 1
     }
   ]

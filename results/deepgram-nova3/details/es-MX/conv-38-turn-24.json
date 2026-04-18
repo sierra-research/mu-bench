@@ -2,15 +2,26 @@
   "gold": "No. ¿Entonces me vas a transferir con algún agente?",
   "predicted": "No. Entonces, ¿me vas a transferir con algún agente?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
-  "werNormalizedGold": "no entonces me vas a transferir con algun agente",
+  "werNormalizedGold": "número entonces me vas a transferir con algún agente",
   "werNormalizedPredicted": "no entonces me vas a transferir con algun agente",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "no entonces me vas a transferir con algun agente",
+  "sigWerNormalizedGold": "número entonces me vas a transferir con algún agente",
   "sigWerNormalizedPredicted": "no entonces me vas a transferir con algun agente",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) and 'no' (no) are completely different words and change the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'algún' to 'algun' at position 7",
+      "reason": "The only difference is the missing accent; the meaning is unchanged in context.",
+      "score": 3
+    }
+  ]
 }

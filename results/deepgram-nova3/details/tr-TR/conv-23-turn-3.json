@@ -2,31 +2,21 @@
   "gold": "Şimdi şöyle, benim bir işletmem var ve ben işletmemde diğer kartın geçişini sağlamak istiyorum. Bir yemek kartı firması ile çalışıyorum sizlerle.",
   "predicted": "Şimdi şöyle, benim bir işletmem var ve ben işletmemde yemek kartı geçişini sağlamak istiyorum. Bir yemek kartı firmasıyla çalışıyorum sizlerle.",
   "unintelligible": false,
-  "wer": 0.19047619047619047,
-  "werEdits": 4,
-  "werRefWords": 21,
-  "werNormalizedGold": "şimdi şöyle benim bir işletmem var ve ben işletmemde diğer kartın geçişini sağlamak istiyorum bir yemek kartı firması ile çalışıyorum sizlerle",
-  "werNormalizedPredicted": "şimdi şöyle benim bir işletmem var ve ben işletmemde yemek kartı geçişini sağlamak istiyorum bir yemek kartı firmasıyla çalışıyorum sizlerle",
-  "significantWer": 0.047619047619047616,
+  "wer": 0.1,
+  "werEdits": 2,
+  "werRefWords": 20,
+  "werNormalizedGold": "simdi benim bir isletmem var ve ben isletmemde diger kartin gecisini saglamak istiyorum bir yemek karti firmasi ile calisiyorum sizlerle",
+  "werNormalizedPredicted": "simdi benim bir isletmem var ve ben isletmemde yemek karti gecisini saglamak istiyorum bir yemek karti firmasi ile calisiyorum sizlerle",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "şimdi şöyle benim bir işletmem var ve ben işletmemde diğer kartın geçişini sağlamak istiyorum bir yemek kartı firması ile çalışıyorum sizlerle",
-  "sigWerNormalizedPredicted": "şimdi şöyle benim bir işletmem var ve ben işletmemde yemek kartı geçişini sağlamak istiyorum bir yemek kartı firmasıyla çalışıyorum sizlerle",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "simdi benim bir isletmem var ve ben isletmemde diger kartin gecisini saglamak istiyorum bir yemek karti firmasi ile calisiyorum sizlerle",
+  "sigWerNormalizedPredicted": "simdi benim bir isletmem var ve ben isletmemde yemek karti gecisini saglamak istiyorum bir yemek karti firmasi ile calisiyorum sizlerle",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'diğer' to 'yemek' at position 9",
-      "reason": "'diğer kartın geçişini sağlamak' (to enable the transition of the other card) is changed to 'yemek kartı geçişini sağlamak' (to enable the transition of the meal card). This changes the meaning from a general/other card to specifically a meal card, which is a significant change in intent.",
+      "error": "Substitution: 'diger' to 'yemek' at position 8",
+      "reason": "The omission of 'diger kartin' (other card) changes the meaning, as the original sentence refers to enabling the passage of another card, while the actual transcript refers only to 'yemek karti' (meal card). This is a significant change in meaning.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'firması' to 'firmasıyla' at position 17",
-      "reason": "'firması' (company) to 'firmasıyla' (with the company) is a minor grammatical difference; the meaning is preserved in context.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'ile' at position 18",
-      "reason": "'ile' (with) is omitted, but 'firmasıyla' already means 'with the company', so the meaning is preserved and this is a minor grammatical difference.",
-      "score": 3
     }
   ]
 }

@@ -2,15 +2,26 @@
   "gold": "美玲 at email dot com。",
   "predicted": "maylingisemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "maylingisemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "maylingisemail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'maylingisemail' at position 0",
+      "reason": "The Chinese character '美' is replaced with 'maylingisemail', which is a significant change and does not preserve the original meaning or identity. This is a major error, especially since it is a name or identifier.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The character '玲' is missing entirely, which omits part of the name or identifier. This is a significant error as it changes the intended email address or identity.",
+      "score": 1
+    }
+  ]
 }

@@ -1,27 +1,32 @@
 {
   "gold": "Mi nombre es Juan López. Mi correo electrónico es Juan punto López arroba email punto com. Mi teléfono es 52 55 1 2 3 4 5 6 7 8. Mi dirección es Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
-  "predicted": "Eh, mi nombre es Juan López. Mi correo electrónico es juan.lopez@gmail.com. Mi número de teléfono es cincuenta y dos, cincuenta y cinco, uno, dos, tres, cuatro, cinco, seis, siete, ocho. Eh, mi dirección es Orión treinta, colonia Tlatilco, Azcapotzalco, cero dos cero cero dos, ocho sesenta, Ciudad de México, México",
+  "predicted": "Eh, mi nombre es Juan López. Mi correo electrónico es juan.lopez@gmail.com. Mi número de teléfono es cincuenta y dos, cincuenta y cinco, uno, dos, tres, cuatro, cinco, seis, siete, ocho. Eh, mi dirección es Orión treinta, colonia Tlatilco, Azcapotzalco. Cero, dos, cero, cero, dos, ocho, sesenta, Ciudad de México, México",
   "unintelligible": false,
-  "wer": 0.057692307692307696,
-  "werEdits": 3,
+  "wer": 0.07692307692307693,
+  "werEdits": 4,
   "werRefWords": 52,
-  "werNormalizedGold": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es orion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
-  "werNormalizedPredicted": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba gmail punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es orion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
-  "significantWer": 0.019230769230769232,
+  "werNormalizedGold": "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba email punto com mi teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es urión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
+  "werNormalizedPredicted": "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba gmail punto com mi número de teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es orión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 52,
-  "sigWerNormalizedGold": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es orion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
-  "sigWerNormalizedPredicted": "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba gmail punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es orion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
+  "sigWerNormalizedGold": "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba email punto com mi teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es urión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
+  "sigWerNormalizedPredicted": "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba gmail punto com mi número de teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es orión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
   "sigWerErrors": [
     {
       "error": "Substitution: 'email' to 'gmail' at position 13",
-      "reason": "The domain of the email address is changed from 'email' to 'gmail', which could result in an incorrect or undeliverable email address. This is a significant error as it changes the contact information.",
+      "reason": "The domain of the email address is changed from 'email' to 'gmail', which could result in a completely different and incorrect email address. This is a significant error as it would prevent correct contact.",
       "score": 1
     },
     {
-      "error": "Insertion: 'numero' at position 17",
-      "reason": "The insertion of 'numero' before 'de telefono' does not change the meaning of the sentence, as 'mi telefono es' and 'mi numero de telefono es' are semantically equivalent in this context.",
+      "error": "Insertion: 'número' at position 17",
+      "reason": "The insertion of 'número' before 'de teléfono' does not change the meaning of the sentence, as 'mi teléfono' and 'mi número de teléfono' are semantically equivalent in this context.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'urión' to 'orión' at position 36",
+      "reason": "The street name is changed from 'urión' to 'orión'. This is a minor error as it could cause confusion in address delivery, but the rest of the address is intact and the names are similar.",
+      "score": 2
     }
   ]
 }

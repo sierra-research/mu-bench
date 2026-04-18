@@ -7,7 +7,7 @@
   "werRefWords": 16,
   "werNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
   "werNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
-  "significantWer": 0.125,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'không' at position 10",
-      "reason": "The word 'không' (meaning 'no' or 'not') is inserted in the middle of the sentence, which changes the meaning from asking if income proof is needed to asking if income proof is not needed. This alters the intent of the question significantly.",
+      "reason": "The word 'không' (meaning 'no' or 'not') is inserted in the middle of the sentence, which changes the logical structure and meaning of the question. It splits the sentence and makes it unclear whether 'không' applies to 'chứng minh thu nhập' or 'tăng hạn mức', potentially confusing the intent.",
       "score": 1
     },
     {
       "error": "Deletion: 'không' at position 15",
-      "reason": "The word 'không' is missing at the end of the sentence, which is important for forming a yes/no question in Vietnamese. Its absence changes the structure and meaning of the question.",
+      "reason": "The word 'không' is missing from its correct position at the end of the sentence, which is important for forming a yes/no question in Vietnamese. Its absence at the end further confuses the meaning and structure of the sentence.",
       "score": 1
     }
   ]

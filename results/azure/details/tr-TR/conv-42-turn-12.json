@@ -7,20 +7,20 @@
   "werRefWords": 15,
   "werNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
   "werNormalizedPredicted": "hayır beni dinle sonuç tam olarak söylemem lazım beni sonuna kadar dinle atatürk adresimi tekrar söylüyorum anna",
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
   "sigWerNormalizedPredicted": "hayır beni dinle sonuç tam olarak söylemem lazım beni sonuna kadar dinle atatürk adresimi tekrar söylüyorum anna",
   "sigWerErrors": [
     {
       "error": "Insertion: 'sonuç' at position 3",
-      "reason": "The word 'sonuç' (meaning 'result') is inserted and interrupts the flow of the sentence, but the overall meaning is still understandable as the rest of the sentence continues as expected.",
-      "score": 2
+      "reason": "The insertion of 'sonuç' (meaning 'result') changes the meaning of the sentence and interrupts the flow, making the sentence less coherent.",
+      "score": 1
     },
     {
       "error": "Insertion: 'atatürk' at position 11",
-      "reason": "The word 'atatürk' is inserted before the address statement, which could confuse the listener about the address being given, potentially derailing the meaning of the sentence.",
+      "reason": "The insertion of 'atatürk' (a proper noun, unrelated to the context) before 'adresimi tekrar söylüyorum' introduces an unrelated concept, which can confuse the meaning of the sentence.",
       "score": 1
     }
   ]

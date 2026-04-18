@@ -1,36 +1,31 @@
 {
   "gold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
-  "predicted": "你有什么问题你为什么听不懂我你有没有什么问题你有没有让我真的没有那份",
+  "predicted": "你有什么问题你为什么听不懂我有什么问题有什么问题让我真的没有那份",
   "unintelligible": false,
-  "wer": 0.6,
-  "werEdits": 18,
+  "wer": 0.4666666666666667,
+  "werEdits": 14,
   "werRefWords": 30,
-  "werNormalizedGold": "你 有 什么 问题 你 有 什么 问题 为什么 听 不 懂 我 你 有 什么 问题 有 什么 问题",
-  "werNormalizedPredicted": "你 有 什么 问题 你 为什么 听 不 懂 我 你 有 没有 什么 问题 你 有 没有 让 我 真 的 没有 那 份",
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "你有什么问题 你有什么问题 为什么听不懂我 你有什么问题 有什么问题",
+  "werNormalizedPredicted": "你有什么问题 你为什么听不懂我 有什么问题 有什么问题 让我真的没有那份",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 30,
   "sigWerNormalizedGold": "你 有 什 么 问 题 你 有 什 么 问 题 为 什 么 听 不 懂 我 你 有 什 么 问 题 有 什 么 问 题",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题 你 为 什 么 听 不 懂 我 你 有 没 有 什 么 问 题 你 有 没 有 让 我 真 的 没 有 那 份",
+  "sigWerNormalizedPredicted": "你 有 什 么 问 题 你 为 什 么 听 不 懂 我 有 什 么 问 题 有 什 么 问 题 让 我 真 的 没 有 那 份",
   "sigWerErrors": [
     {
       "error": "Deletion: '有' at position 7",
-      "reason": "Omitting '有' changes the structure of the question and can affect the meaning, but the overall intent is still somewhat clear.",
+      "reason": "Omitting '有' ('have') in the phrase '你有什麼問題' ('Do you have any questions?') makes the sentence less clear and grammatically incomplete, but the overall meaning is still understandable.",
       "score": 2
     },
     {
-      "error": "Insertion: '没' at position 21",
-      "reason": "Inserting '没' (not) changes the meaning of the question from asking if there is a problem to asking if there is not a problem, which is a significant change.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: '你' at position 25",
-      "reason": "Adding another '你' (you) is redundant but does not significantly change the meaning.",
+      "error": "Deletion: '你' at position 19",
+      "reason": "Omitting '你' ('you') from '你有什麼問題' removes the subject, which can cause confusion about who is being referred to, but the context still suggests the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: '什' to '没' at position 26",
-      "reason": "Inserting '没' again introduces negation, which alters the meaning of the sentence significantly.",
+      "error": "Insertion: '让' at position 30",
+      "reason": "The insertion of '让 我 真 的 没 有 那 份' ('let me really not have that') adds unrelated content, which can derail the meaning and coherence of the sentence.",
       "score": 1
     }
   ]

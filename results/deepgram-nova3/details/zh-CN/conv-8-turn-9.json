@@ -2,21 +2,26 @@
   "gold": "对的，你说得对。",
   "predicted": "你说的对",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "对的 你说得对",
-  "werNormalizedPredicted": "你说得对",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "你说的对",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "对 的 你 说 得 对",
-  "sigWerNormalizedPredicted": "你 说 得 对",
+  "sigWerNormalizedPredicted": "你 说 的 对",
   "sigWerErrors": [
     {
       "error": "Deletion: '对' at position 0",
-      "reason": "The word '对' at the beginning is an affirmation (meaning 'correct' or 'yes'), and its omission slightly reduces the emphasis but does not change the overall meaning of the sentence, which is still an affirmation. The sentence remains coherent and the main message is preserved.",
+      "reason": "The omission of the initial '对' removes an affirmation, but the remaining sentence '你说的对' still conveys the main meaning ('what you said is right'). The overall meaning is preserved.",
       "score": 2
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 4",
+      "reason": "In this context, '得' and '的' are often confused in spoken Mandarin, and the meaning is not significantly changed. The sentence remains understandable and correct in meaning.",
+      "score": 3
     }
   ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 13,
   "werNormalizedGold": "có thể hỗ trợ tự động không cần nói chuyện với nhân viên",
   "werNormalizedPredicted": "có thể hỏi chờ được không tự động không cần mấy chuyện với y như",
-  "significantWer": 0.23076923076923078,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "có thể hỗ trợ tự động không cần nói chuyện với nhân viên",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'hỗ' to 'được' at position 2",
-      "reason": "The word 'hỏi' (ask) is inserted, which introduces a new intent (asking) not present in the original sentence, potentially confusing the meaning.",
+      "reason": "The word 'hỏi' (ask) is inserted, which changes the intent of the sentence from support to asking, altering the meaning significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'nói' to 'mấy' at position 8",
-      "reason": "'hỗ' (support) is replaced by 'được' (can/be able to), which changes the meaning of the sentence from 'support' to 'can', altering the intent.",
+      "reason": "'hỗ' (support) is replaced by 'được' (can/be able to), which changes the meaning of the sentence and makes it less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'nhân' to 'y' at position 11",
-      "reason": "'nói' (speak) is replaced by 'mấy' (some/several), which changes the meaning of the phrase and makes the sentence less coherent.",
+      "reason": "'nói' (speak) is replaced by 'mấy' (some/several), which changes the meaning of the phrase and makes the sentence confusing.",
       "score": 1
     }
   ]

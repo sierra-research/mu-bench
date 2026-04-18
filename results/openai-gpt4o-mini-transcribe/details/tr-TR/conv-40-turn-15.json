@@ -1,31 +1,26 @@
 {
   "gold": "Yazıyor musun? Artı 90 123.",
-  "predicted": "Yazıyor musun? Artık doksan yüz yirmi.",
+  "predicted": "Yazıyor musun? Artı doksan yüz yirmi.",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werEdits": 4,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
   "werNormalizedGold": "yazıyor musun artı doksan bir iki üç",
-  "werNormalizedPredicted": "yazıyor musun artık doksan yüz yirmi",
-  "significantWer": 0.42857142857142855,
-  "majorErrorsCount": 3,
+  "werNormalizedPredicted": "yazıyor musun artı doksan yüz yirmi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "yazıyor musun artı doksan bir iki üç",
-  "sigWerNormalizedPredicted": "yazıyor musun artık doksan yüz yirmi",
+  "sigWerNormalizedPredicted": "yazıyor musun artı doksan yüz yirmi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'artı' to 'artık' at position 2",
-      "reason": "'artı' means 'plus' and 'artık' means 'anymore' or 'now', which are completely different words and change the meaning of the sentence.",
-      "score": 1
-    },
-    {
       "error": "Substitution: 'bir' to 'yüz' at position 4",
-      "reason": "'bir' means 'one' and 'yüz' means 'hundred', which are different numbers and significantly change the intended numeric value.",
+      "reason": "'bir iki üç' (one two three) is a sequence of numbers, but 'yüz yirmi' (one hundred twenty) is a completely different number, changing the intended number sequence and meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'üç' at position 6",
-      "reason": "Missing 'üç' ('three') changes the numeric sequence, which is significant if the numbers are important (e.g., phone number or code).",
+      "reason": "The omission of 'üç' (three) from the number sequence further changes the intended number, resulting in a significant error in the information conveyed.",
       "score": 1
     }
   ]

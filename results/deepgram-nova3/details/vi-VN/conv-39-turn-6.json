@@ -2,15 +2,36 @@
   "gold": "OK. Số điện thoại của mình là, mình đọc đầy đủ nhá, cộng 8 4 9 1 1 2 3 4 5 6 7 8. Anna nghe được không?",
   "predicted": "Ờ, ok, số điện thoại của mình là mình đọc đầy đủ nhé. Cộng tám mươi bốn, chín mươi mốt, một hai, ba mươi bốn, năm mươi sáu, bảy mươi tám. Anna nghe được không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 34,
-  "werNormalizedGold": "okay so dien thoai cua minh la minh doc day du nhe cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay muoi tam anna nghe duoc khong",
-  "werNormalizedPredicted": "okay so dien thoai cua minh la minh doc day du nhe cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay muoi tam anna nghe duoc khong",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 34,
-  "sigWerNormalizedGold": "okay so dien thoai cua minh la minh doc day du nhe cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay muoi tam anna nghe duoc khong",
-  "sigWerNormalizedPredicted": "okay so dien thoai cua minh la minh doc day du nhe cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay muoi tam anna nghe duoc khong",
-  "sigWerErrors": []
+  "wer": 0.16666666666666666,
+  "werEdits": 5,
+  "werRefWords": 30,
+  "werNormalizedGold": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám anna nghe được không",
+  "werNormalizedPredicted": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám mươi bốn chín mươi mốt một hai ba mươi bốn năm mươi sáu bảy mươi tám anna nghe được không",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám anna nghe được không",
+  "sigWerNormalizedPredicted": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám mươi bốn chín mươi mốt một hai ba mươi bốn năm mươi sáu bảy mươi tám anna nghe được không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'một' to 'mốt' at position 17",
+      "reason": "The actual transcription says 'chín mươi mốt' instead of 'chín một', which changes the number from 91 to 91 (but in Vietnamese, 'chín mươi mốt' is 91, while 'chín một' is not a standard way to say a phone number digit-by-digit). This changes the intended digit sequence, which is significant for a phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 21",
+      "reason": "'một' and 'mốt' both mean 'one' in Vietnamese, but 'mốt' is used in compound numbers (like 21, 31, 41, etc.), not for digit-by-digit reading. In a phone number, this substitution could cause confusion or an incorrect number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 23",
+      "reason": "The actual transcription says 'ba mươi bốn' instead of 'ba bốn', changing the digit sequence from 3 4 to 34, which is a significant error in a phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 25",
+      "reason": "The actual transcription says 'năm mươi sáu' instead of 'năm sáu', changing the digit sequence from 5 6 to 56, which is a significant error in a phone number.",
+      "score": 1
+    }
+  ]
 }

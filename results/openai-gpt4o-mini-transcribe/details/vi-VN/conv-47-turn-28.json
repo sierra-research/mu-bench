@@ -1,26 +1,31 @@
 {
   "gold": "Đúng rồi. Tôi không có nhớ là mình đã thực hiện cái thanh toán này. Vui lòng truy cứu lại giúp tôi.",
-  "predicted": "Đúng rồi, tôi không có nhớ là mình đã thực hiện các thanh toán này. Vui lòng là chiếu cứu lại giúp tôi.",
+  "predicted": "Đúng rồi, tôi không nhớ là mình đã thực hiện các thanh toán này. Vui lòng là chi cứu lại giúp tôi.",
   "unintelligible": false,
-  "wer": 0.13636363636363635,
-  "werEdits": 3,
+  "wer": 0.18181818181818182,
+  "werEdits": 4,
   "werRefWords": 22,
   "werNormalizedGold": "đúng rồi tôi không có nhớ là mình đã thực hiện cái thanh toán này vui lòng truy cứu lại giúp tôi",
-  "werNormalizedPredicted": "đúng rồi tôi không có nhớ là mình đã thực hiện các thanh toán này vui lòng là chiếu cứu lại giúp tôi",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "đúng rồi tôi không nhớ là mình đã thực hiện các thanh toán này vui lòng là chi cứu lại giúp tôi",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "đúng rồi tôi không có nhớ là mình đã thực hiện cái thanh toán này vui lòng truy cứu lại giúp tôi",
-  "sigWerNormalizedPredicted": "đúng rồi tôi không có nhớ là mình đã thực hiện các thanh toán này vui lòng là chiếu cứu lại giúp tôi",
+  "sigWerNormalizedPredicted": "đúng rồi tôi không nhớ là mình đã thực hiện các thanh toán này vui lòng là chi cứu lại giúp tôi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'cái' to 'các' at position 11",
-      "reason": "'cái' (the) and 'các' (the, plural) both refer to the payment, but 'các' makes it plural. This changes the meaning slightly but does not derail the overall meaning of the sentence.",
+      "error": "Deletion: 'có' at position 4",
+      "reason": "'có' adds emphasis to the memory aspect, but its omission does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'truy' to 'chiếu' at position 17",
-      "reason": "The insertion of 'là' (is) is unnecessary but does not change the overall meaning of the sentence.",
+      "error": "Substitution: 'cái' to 'các' at position 11",
+      "reason": "'cái' (singular) vs 'các' (plural) changes the number of items referenced, but the overall meaning about the payment remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'truy' to 'chi' at position 17",
+      "reason": "The insertion of 'là' is unnecessary but does not affect the meaning of the request.",
       "score": 2
     }
   ]

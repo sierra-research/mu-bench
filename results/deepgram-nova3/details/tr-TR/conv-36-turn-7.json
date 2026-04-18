@@ -2,15 +2,21 @@
   "gold": "Tabii, hemen okuyorum. Telefon numaram artı 90 123 0 90 45 67.",
   "predicted": "Tabii hemen okuyorum, telefon numaram artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 16,
-  "werNormalizedGold": "tabii hemen okuyorum telefon numaram artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
+  "werRefWords": 17,
+  "werNormalizedGold": "tabii hemen okuyorum telefon numaram artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "werNormalizedPredicted": "tabii hemen okuyorum telefon numaram artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "tabii hemen okuyorum telefon numaram artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "tabii hemen okuyorum telefon numaram artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerNormalizedPredicted": "tabii hemen okuyorum telefon numaram artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'bir' at position 7",
+      "reason": "Omitting 'bir' (one) from the phone number changes the actual digits of the phone number, which is a significant error as it leads to an incorrect phone number.",
+      "score": 1
+    }
+  ]
 }

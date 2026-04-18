@@ -2,15 +2,21 @@
   "gold": "我想提高我的信用卡额度。",
   "predicted": "我想提高我的信用课额度。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
   "werRefWords": 11,
   "werNormalizedGold": "我想提高我的信用卡额度",
-  "werNormalizedPredicted": "我想提高我的信用卡额度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想提高我的信用课额度",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 课 额 度",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '卡' to '课' at position 8",
+      "reason": "'卡' means 'card' (as in credit card), while '课' means 'class' or 'lesson'. This substitution changes the meaning of the sentence and makes it incoherent in context, as 'credit class limit' does not make sense.",
+      "score": 1
+    }
+  ]
 }

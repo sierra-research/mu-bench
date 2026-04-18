@@ -2,15 +2,31 @@
   "gold": "Quiero saber cómo puedo aumentar mi línea de crédito.",
   "predicted": "Ah, quiero saber qué-- cómo puedo aumentar mi línea de crédito",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "quiero saber como puedo aumentar mi linea de credito",
-  "werNormalizedPredicted": "quiero saber como puedo aumentar mi linea de credito",
-  "significantWer": 0.0,
+  "werNormalizedGold": "quiero saber cómo puedo aumentar mi línea de crédito",
+  "werNormalizedPredicted": "quiero saber que como puedo aumentar mi linea de credito",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "quiero saber como puedo aumentar mi linea de credito",
-  "sigWerNormalizedPredicted": "quiero saber como puedo aumentar mi linea de credito",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "quiero saber cómo puedo aumentar mi línea de crédito",
+  "sigWerNormalizedPredicted": "quiero saber que como puedo aumentar mi linea de credito",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cómo' to 'como' at position 2",
+      "reason": "The insertion of 'que' does not significantly change the meaning of the sentence; it is a minor grammatical error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'línea' to 'linea' at position 6",
+      "reason": "'cómo' (with accent) means 'how', while 'como' (without accent) can mean 'as' or 'like', but in this context, the meaning is still clear. Minor error due to missing accent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 8",
+      "reason": "Missing accent on 'línea' is a minor orthographic error and does not affect meaning.",
+      "score": 3
+    }
+  ]
 }

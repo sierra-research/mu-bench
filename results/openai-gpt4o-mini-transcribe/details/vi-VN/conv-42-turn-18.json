@@ -1,26 +1,26 @@
 {
   "gold": "OK. Xin cảm ơn.",
-  "predicted": "Ok, siga moi.",
+  "predicted": "OK, sí, cómo",
   "unintelligible": false,
   "wer": 0.75,
   "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "okay xin cảm ơn",
-  "werNormalizedPredicted": "okay siga moi",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "okay sí cómo",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "okay xin cảm ơn",
-  "sigWerNormalizedPredicted": "okay siga moi",
+  "sigWerNormalizedPredicted": "okay sí cómo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'xin' to 'siga' at position 1",
-      "reason": "'siga' is a completely different word from 'xin' and is in a different language, which changes the meaning of the sentence and makes it incoherent in context.",
+      "error": "Substitution: 'xin' to 'sí' at position 1",
+      "reason": "'xin' is Vietnamese for 'please' or part of 'thank you', while 'sí' is Spanish for 'yes'; this is a language substitution and changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'ơn' at position 3",
-      "reason": "The word 'ơn' is missing, which is essential to the meaning of the phrase 'xin cảm ơn' (thank you) in Vietnamese. Its omission makes the sentence incomplete and changes the intended meaning.",
+      "reason": "'ơn' is part of the Vietnamese phrase for 'thank you'; omitting it makes the phrase incomplete and changes the meaning.",
       "score": 1
     }
   ]

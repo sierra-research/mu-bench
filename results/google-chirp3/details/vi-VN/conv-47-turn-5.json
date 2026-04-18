@@ -2,15 +2,26 @@
   "gold": "Địa chỉ email là minh chấm trần.",
   "predicted": "địa chỉ email là Minh Minh chấm trưởng",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "địa chỉ email là minh chấm trần",
-  "werNormalizedPredicted": "địa chỉ email là minh chấm trần",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "địa chỉ email là minh minh chấm trưởng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "địa chỉ email là minh chấm trần",
-  "sigWerNormalizedPredicted": "địa chỉ email là minh chấm trần",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "địa chỉ email là minh minh chấm trưởng",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'minh' at position 5",
+      "reason": "The extra 'minh' in the email address makes the address incorrect and unusable, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'trưởng' at position 6",
+      "reason": "Substituting 'trần' with 'trưởng' changes the email address to a different name, making it incorrect and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

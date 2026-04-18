@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "email là vanquocchanh a còng email chấm com",
-  "significantWer": 0.2,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'minh' to 'vanquocchanh' at position 2",
-      "reason": "'minh' and 'vanquocchanh' are completely different names in the email address, which changes the identity of the email and is a significant error.",
+      "reason": "The username part of the email is completely different, which would result in a different email address and failure to contact the intended recipient.",
       "score": 1
     },
     {
       "error": "Deletion: 'chấm' at position 3",
-      "reason": "Omitting 'chấm' (dot) in the email address changes the structure and makes the email address incorrect, which is a significant error.",
+      "reason": "Missing 'chấm' (dot) changes the structure of the email address, making it invalid or incorrect.",
       "score": 1
     }
   ]

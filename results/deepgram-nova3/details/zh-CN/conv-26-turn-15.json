@@ -2,15 +2,21 @@
   "gold": "你还不知道我的邮箱地址。",
   "predicted": "你还不知道我的有想必是",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
   "werRefWords": 11,
-  "werNormalizedGold": "你 还 不 知道 我 的 邮箱 地址",
-  "werNormalizedPredicted": "你 还 不 知道 我 的 邮箱 地址",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你还不知道我的邮箱地址",
+  "werNormalizedPredicted": "你还不知道我的有想必是",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 还 不 知 道 我 的 邮 箱 地 址",
-  "sigWerNormalizedPredicted": "你 还 不 知 道 我 的 邮 箱 地 址",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 还 不 知 道 我 的 有 想 必 是",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '有' at position 7",
+      "reason": "'邮' (mail) is substituted with '有' (have), which changes the meaning of the phrase from 'mailbox address' to something incoherent in context.",
+      "score": 1
+    }
+  ]
 }

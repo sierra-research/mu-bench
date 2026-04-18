@@ -5,27 +5,27 @@
   "wer": 0.25,
   "werEdits": 4,
   "werRefWords": 16,
-  "werNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
-  "werNormalizedPredicted": "daha once whatsapp ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misiniz whatsapp ekstresini",
-  "significantWer": 0.0625,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce whatsapp ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz whatsapp ekstresini",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
-  "sigWerNormalizedPredicted": "daha once whatsapp ekstresi istemistim aylik henuz su ana kadar gelmedi bana gonderebilir misiniz whatsapp ekstresini",
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce whatsapp ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz whatsapp ekstresini",
   "sigWerErrors": [
     {
       "error": "Substitution: 'hesap' to 'whatsapp' at position 2",
-      "reason": "'hesap' means 'account' and 'whatsapp' is a completely different entity; this changes the meaning of the sentence significantly.",
+      "reason": "'hesap' (account) and 'whatsapp' are completely different entities; this changes the subject of the request and derails the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'istedigim' to 'henuz' at position 6",
-      "reason": "'istedigim' means 'that I wanted' and 'henuz' means 'not yet'; this changes the temporal meaning and intent of the sentence, but the overall context is still about the statement not being received.",
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "'istediğim' (that I requested) and 'henüz' (yet) are different in meaning, but the overall intent of the sentence (not having received something) is still clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'misin' to 'misiniz' at position 13",
-      "reason": "Both are forms of 'can you' in Turkish, with 'misiniz' being more formal/plural. The meaning is the same in context.",
+      "reason": "This is a change from informal ('misin') to formal ('misiniz') address; the meaning is unchanged.",
       "score": 3
     }
   ]

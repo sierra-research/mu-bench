@@ -2,15 +2,21 @@
   "gold": "Tamam önce e-postayı tekrar ediyorum. Z A Y N E P nokta A R S L A N at.",
   "predicted": "Tamam, önce e postayı tekrar ediyorum. ZAYNEP. ARSLAN at.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.05,
+  "werEdits": 1,
   "werRefWords": 20,
-  "werNormalizedGold": "tamam once e postayi tekrar ediyorum z a y n e p nokta a r s l a n at",
-  "werNormalizedPredicted": "tamam once e postayi tekrar ediyorum z a y n e p nokta a r s l a n at",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tamam önce e postayı tekrar ediyorum z a y n e p nokta a r s l a n at",
+  "werNormalizedPredicted": "tamam önce e postayı tekrar ediyorum z a y n e p a r s l a n at",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "tamam once e postayi tekrar ediyorum z a y n e p nokta a r s l a n at",
-  "sigWerNormalizedPredicted": "tamam once e postayi tekrar ediyorum z a y n e p nokta a r s l a n at",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tamam önce e postayı tekrar ediyorum z a y n e p nokta a r s l a n at",
+  "sigWerNormalizedPredicted": "tamam önce e postayı tekrar ediyorum z a y n e p a r s l a n at",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 12",
+      "reason": "'nokta' (meaning 'dot' or 'period') is important in an email address to separate the username and domain. Its omission could cause confusion or incorrect transcription of the email address.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "美玲，美玲。",
   "predicted": "美美玲",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
   "werNormalizedGold": "美玲 美玲",
-  "werNormalizedPredicted": "美玲 美玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "美美玲",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "美 玲 美 玲",
-  "sigWerNormalizedPredicted": "美 玲 美 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "美 美 玲",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from a repeated name is missing, which could cause confusion or misidentification, especially in names where repetition is meaningful.",
+      "score": 1
+    }
+  ]
 }

@@ -5,9 +5,9 @@
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "对的正确",
+  "werNormalizedGold": "对的 正确",
   "werNormalizedPredicted": "是的 不正确",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "对 的 正 确",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '对' to '是' at position 0",
-      "reason": "'对' means 'correct' or 'right', while '是' means 'is'; this changes the structure but not the core meaning, as both can be used to affirm something, but in this context, it is a minor error.",
+      "reason": "'对' means 'correct' or 'right', while '是' means 'is'; this changes the sentence structure but does not completely derail the meaning, as both can be used in similar contexts. However, it is not semantically identical.",
       "score": 2
     },
     {
       "error": "Insertion: '不' at position 2",
-      "reason": "'不' means 'not', which negates the meaning of 'correct'. This completely reverses the intended meaning, making it a significant error.",
+      "reason": "'不' means 'not', which negates the meaning of 'correct' to 'not correct', completely reversing the intended meaning of the sentence.",
       "score": 1
     }
   ]

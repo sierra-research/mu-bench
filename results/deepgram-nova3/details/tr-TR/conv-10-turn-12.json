@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
   "werNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi olacak t değil t zainnet t",
-  "significantWer": 0.11764705882352941,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'p' at position 10",
-      "reason": "The letter 'p' is omitted where the expected transcript specifies that the last letter of the name in the email should be 'p'. This omission could cause confusion about the correct spelling of the name in the email, which is critical information.",
+      "reason": "The letter 'p' is omitted where the expected transcript specifies that the last letter of the name in the email should be 'p'. This omission can cause confusion about the correct spelling of the name in the email, which is significant for identification or communication.",
       "score": 1
     },
     {
       "error": "Substitution: 'p' to 't' at position 14",
-      "reason": "The expected transcript says the last letter should be 'p', but the actual transcript says 't'. This is a significant error because it changes the correct spelling of the name in the email, which is essential for identification or communication.",
+      "reason": "The expected transcript says the last letter should be 'p', but the actual transcript says 't'. This is a significant error because it changes the correct spelling of the name in the email, which is critical information.",
       "score": 1
     }
   ]

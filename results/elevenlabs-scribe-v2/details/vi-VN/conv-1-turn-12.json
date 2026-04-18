@@ -7,7 +7,7 @@
   "werRefWords": 4,
   "werNormalizedGold": "có xin cảm ơn",
   "werNormalizedPredicted": "vâng xin chào mọi người",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "có xin cảm ơn",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'có' to 'vâng' at position 0",
-      "reason": "'có' means 'yes/have' and 'vâng' means 'yes' in Vietnamese, but in this context, 'có xin cảm ơn' (thank you) is replaced with a greeting, which changes the intent of the sentence.",
+      "reason": "'có' means 'yes/have' and 'vâng' means 'yes' or 'okay', but in this context, the substitution changes the intent of the sentence and does not preserve the original meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'cảm' to 'mọi' at position 2",
-      "reason": "'chào' means 'hello', which is not present in the expected phrase and shifts the meaning from expressing thanks to greeting.",
+      "reason": "The word 'chào' (hello) is inserted, which changes the sentence from an expression of thanks to a greeting, altering the meaning significantly.",
       "score": 1
     }
   ]

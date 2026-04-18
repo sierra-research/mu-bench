@@ -2,15 +2,26 @@
   "gold": "不对，我的邮箱是林梅 at email 点 com。",
   "predicted": "我对,我的邮箱是0美@ email.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
   "werNormalizedGold": "不对 我的邮箱是林梅 at email 点 com",
-  "werNormalizedPredicted": "不对 我的邮箱是林梅 at email 点 com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我对 我的邮箱是 零 美 at email 点 com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "不 对 我 的 邮 箱 是 林 梅 at email 点 com",
-  "sigWerNormalizedPredicted": "不 对 我 的 邮 箱 是 林 梅 at email 点 com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 对 我 的 邮 箱 是 零 美 at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '我' at position 0",
+      "reason": "'不对' means 'not correct', while '我对' means 'I am correct' or 'I am right'. This completely reverses the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '零' at position 7",
+      "reason": "'林梅' is a name, while '零美' is a different word and not a valid name. This is a significant error in the context of an email address or name.",
+      "score": 1
+    }
+  ]
 }

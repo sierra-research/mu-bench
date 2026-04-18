@@ -1,21 +1,31 @@
 {
   "gold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
-  "predicted": "Ananımerhabalar, ben kredi kartımda otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "predicted": "Ananım merhabalar, ben kredi kartımda otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
   "unintelligible": false,
-  "wer": 0.06666666666666667,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 3,
   "werRefWords": 15,
   "werNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
-  "werNormalizedPredicted": "anna hanım merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "ananım merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
-  "sigWerNormalizedPredicted": "anna hanım merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerNormalizedPredicted": "ananım merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'anna' to 'ananım' at position 0",
+      "reason": "'ananım' is a significant distortion of the name 'anna', making it unrecognizable and changing the intended addressee.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "Omitting 'hanım' (a polite form of address) reduces the politeness but does not change the core meaning of the sentence.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'kartında' to 'kartımda' at position 5",
-      "reason": "The substitution changes the possessive from 'on the card' (kartında) to 'on my card' (kartımda), which is a minor difference in meaning but does not derail the overall intent of the sentence.",
+      "reason": "'kartında' (on the card) vs 'kartımda' (on my card) changes the ownership, but in context, the meaning is only slightly altered.",
       "score": 2
     }
   ]

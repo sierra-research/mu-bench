@@ -2,15 +2,21 @@
   "gold": "55 12 34 56 78.",
   "predicted": "Es cincuenta y cinco, doce treinta y cuatro, cincuenta y seis, setenta y ocho.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07692307692307693,
+  "werEdits": 1,
   "werRefWords": 13,
   "werNormalizedGold": "cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
-  "werNormalizedPredicted": "cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
-  "sigWerNormalizedPredicted": "cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'es' at position 0",
+      "reason": "The insertion of 'es' (which means 'is' in Spanish) at the beginning does not change the meaning of the sequence of numbers; it simply adds a copula that is often used in natural speech. The main information (the numbers) remains unchanged.",
+      "score": 2
+    }
+  ]
 }

@@ -2,15 +2,31 @@
   "gold": "北京市海鼎区北京路123号。",
   "predicted": "北京市海淀区北京路一百二十三号。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 15,
-  "werNormalizedGold": "北京市海淀区北京路一百二十三号",
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "北京市海鼎区北京路一二三号",
   "werNormalizedPredicted": "北京市海淀区北京路一百二十三号",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "北 京 市 海 鼎 区 北 京 路 一 二 三 号",
   "sigWerNormalizedPredicted": "北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '鼎' to '淀' at position 4",
+      "reason": "The district name is changed from '海鼎区' to '海淀区', which refers to a completely different administrative region in Beijing. This is a significant error as it changes the location.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '百' at position 10",
+      "reason": "The number changes from '一二三' (123) to '一百二十三' (123), which is a different way of expressing the same number. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: '十' at position 11",
+      "reason": "The number changes from '一二三' (123) to '一百二十三' (123), which is a different way of expressing the same number. The meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

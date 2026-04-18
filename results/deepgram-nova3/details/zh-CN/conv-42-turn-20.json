@@ -2,15 +2,26 @@
   "gold": "郡凛 at email dot com。",
   "predicted": "dreamingatemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "郡凛 at email dot com",
-  "werNormalizedPredicted": "郡凛 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreamingatemail dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "郡 凛 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreamingatemail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'dreamingatemail' at position 0",
+      "reason": "The expected word is a Chinese character, likely a name or important identifier, but the actual transcription is a completely unrelated English word. This changes the meaning entirely and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "A key part of the expected email address (likely a name or identifier) is missing in the actual transcription, which makes the email address incorrect and unrecognizable.",
+      "score": 1
+    }
+  ]
 }

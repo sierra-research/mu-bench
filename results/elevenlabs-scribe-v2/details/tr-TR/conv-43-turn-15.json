@@ -5,22 +5,22 @@
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "artı ninety",
+  "werNormalizedGold": "artı doksan",
   "werNormalizedPredicted": "artık",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "artı ninety",
+  "sigWerNormalizedGold": "artı doksan",
   "sigWerNormalizedPredicted": "artık",
   "sigWerErrors": [
     {
       "error": "Substitution: 'artı' to 'artık' at position 0",
-      "reason": "'artı' and 'artık' are different words in Turkish with different meanings; this changes the meaning of the phrase.",
+      "reason": "'artı' (meaning 'plus') is changed to 'artık' (meaning 'anymore' or 'now'), which is a completely different word and changes the meaning of the phrase.",
       "score": 1
     },
     {
-      "error": "Deletion: 'ninety' at position 1",
-      "reason": "The number 'ninety' is missing, which removes a key part of the information and significantly alters the meaning.",
+      "error": "Deletion: 'doksan' at position 1",
+      "reason": "The number 'doksan' (meaning 'ninety') is omitted, which removes a key part of the information and significantly alters the meaning.",
       "score": 1
     }
   ]

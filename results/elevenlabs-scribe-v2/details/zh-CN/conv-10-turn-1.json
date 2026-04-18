@@ -6,8 +6,8 @@
   "werEdits": 11,
   "werRefWords": 11,
   "werNormalizedGold": "我提高我的信用卡的限额",
-  "werNormalizedPredicted": "我想提高的是因为我看得是很恶",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "我想提高的 是因为我看得是很恶",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 提 高 我 的 信 用 卡 的 限 额",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '想' at position 1",
-      "reason": "The word '想' (want) adds intent that was not present in the original sentence, but does not derail the overall meaning of requesting a credit card limit increase.",
+      "reason": "The word '想' (want) adds intent that was not present in the original sentence, but does not derail the meaning of the sentence, which is about increasing a credit card limit.",
       "score": 2
     },
     {
       "error": "Substitution: '我' to '因' at position 3",
-      "reason": "The extra '的' does not significantly change the meaning or structure of the sentence.",
+      "reason": "The extra '的' (a possessive or descriptive particle) does not significantly change the meaning or structure of the sentence.",
       "score": 3
     }
   ]

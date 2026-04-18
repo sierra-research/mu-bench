@@ -1,21 +1,26 @@
 {
   "gold": "我，我的姓名是君玲，君玲。",
-  "predicted": "我的姓名是均玲。",
+  "predicted": "我的姓名是均霖。",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
-  "werRefWords": 9,
-  "werNormalizedGold": "我的姓名是君玲 君玲",
-  "werNormalizedPredicted": "我的姓名是君玲",
-  "significantWer": 0.0,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "我 我的姓名是君玲 君玲",
+  "werNormalizedPredicted": "我 的 姓名 是 君玲",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 君 玲",
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 我 的 姓 名 是 君 玲 君 玲",
   "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲",
   "sigWerErrors": [
     {
-      "error": "Deletion: '君' at position 7",
-      "reason": "The repetition of the name '君玲' is omitted in the actual transcription. While the core meaning (the person's name) is still clear, the repetition may be important for emphasis or correctness in formal contexts, but does not change the identity being conveyed.",
+      "error": "Deletion: '我' at position 1",
+      "reason": "The repetition of '我' (I) at the beginning is omitted, but the meaning of the sentence remains clear and unchanged.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '君' at position 6",
+      "reason": "The repetition of the name '君玲' is omitted at the end, but the main information (the name) is still present and understandable.",
       "score": 2
     }
   ]

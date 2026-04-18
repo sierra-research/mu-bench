@@ -2,16 +2,16 @@
   "gold": "I think I'll probably give a call back in a day or two. Do I just reference that track number?",
   "predicted": "I think I'll I think I'll probably give a callback in a day or two. Do I just reference that track number for three? Okay.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 7,
+  "wer": 0.42857142857142855,
+  "werEdits": 9,
   "werRefWords": 21,
   "werNormalizedGold": "i think i will probably give a call back in a day or two do i just reference that track number",
-  "werNormalizedPredicted": "i think i will i think i will probably give a call back in a day or two do i just reference that track number for three okay",
-  "significantWer": 0.047619047619047616,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "i think i will i think i will probably give a callback in a day or two do i just reference that track number for three okay",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "i think i will probably give a call back in a day or two do i just reference that track number",
-  "sigWerNormalizedPredicted": "i think i will i think i will probably give a call back in a day or two do i just reference that track number for three okay",
+  "sigWerNormalizedPredicted": "i think i will i think i will probably give a callback in a day or two do i just reference that track number for three okay",
   "sigWerErrors": [
     {
       "error": "Insertion: 'i' at position 4",
@@ -19,9 +19,19 @@
       "score": 2
     },
     {
+      "error": "Substitution: 'call' to 'callback' at position 7",
+      "reason": "'Callback' instead of 'call back' is a minor difference in phrasing; the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'back' at position 8",
+      "reason": "The word 'back' is omitted, but since 'callback' was used, the meaning is still clear.",
+      "score": 3
+    },
+    {
       "error": "Insertion: 'for' at position 21",
-      "reason": "The addition of 'for three okay' at the end adds extra, unrelated information that could confuse the intent of the sentence, making the meaning less clear.",
-      "score": 1
+      "reason": "The addition of 'for' before 'three okay' adds extraneous information that could confuse the meaning, but the main intent of the sentence is still understandable.",
+      "score": 2
     }
   ]
 }

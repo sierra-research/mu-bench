@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "email là minh vũ trần hệ thống email",
-  "significantWer": 0.3,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'chấm' to 'vũ' at position 3",
-      "reason": "'chấm' is part of the email address format (dot), while 'vũ' is a completely different word (a name), which changes the structure and meaning of the email address.",
+      "reason": "'chấm' (dot, as in email address) is replaced by 'vũ' (a name), which changes the structure and meaning of the email address.",
       "score": 1
     },
     {
       "error": "Substitution: 'a' to 'hệ' at position 5",
-      "reason": "'a' is part of 'a còng' (the Vietnamese way to say '@'), while 'hệ' is unrelated and changes the meaning, making the email address incoherent.",
+      "reason": "'a' (from 'a còng', meaning '@') is replaced by 'hệ' (system), which disrupts the email address format and meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'chấm' at position 8",
-      "reason": "'chấm' (dot) is necessary for the correct email format; omitting it makes the email address incomplete or incorrect.",
+      "reason": "Missing 'chấm' (dot) at the end means the email domain is incomplete, making the email address invalid.",
       "score": 1
     }
   ]

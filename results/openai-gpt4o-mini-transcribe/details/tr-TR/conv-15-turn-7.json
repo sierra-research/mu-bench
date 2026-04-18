@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
   "werNormalizedPredicted": "soyadımda arslan r harfi olacak ahmet arslan dediniz ahmet arslan olacak",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'soyadım' to 'soyadımda' at position 0",
-      "reason": "'soyadımda' is a minor grammatical difference from 'soyadım da' (my surname vs. on my surname), but the meaning in context is clear and not significantly changed.",
-      "score": 2
+      "reason": "'soyadımda' combines 'soyadım' and 'da' into one word, but the meaning is preserved in context.",
+      "score": 3
     },
     {
       "error": "Deletion: 'da' at position 1",
-      "reason": "The word 'da' is merged into 'soyadımda' in the actual transcript, which is a minor grammatical error but does not change the overall meaning.",
-      "score": 2
+      "reason": "'da' is merged into the previous word as 'soyadımda', so the information is not lost.",
+      "score": 3
     },
     {
       "error": "Substitution: 'aslan' to 'arslan' at position 7",
-      "reason": "'aslan' and 'arslan' are variant spellings of the same Turkish surname and are semantically equivalent in this context.",
+      "reason": "'aslan' and 'arslan' are variant spellings of the same Turkish surname, so the meaning is unchanged.",
       "score": 3
     }
   ]

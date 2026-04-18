@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "junlin at email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
-  "werNormalizedPredicted": "君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "junlin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "junlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junlin' at position 0",
+      "reason": "'君' is a Chinese character, while 'junlin' is a romanized name. The substitution changes the name entirely and could lead to a completely different person or meaning, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of '玲', which is part of the full name, results in an incomplete or incorrect name, which is a significant error for names and email addresses.",
+      "score": 1
+    }
+  ]
 }

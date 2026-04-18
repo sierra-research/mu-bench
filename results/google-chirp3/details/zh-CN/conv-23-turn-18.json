@@ -2,15 +2,26 @@
   "gold": "是妹玲 at email dot com。",
   "predicted": "shimeiling@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "shimeiling at email dot com",
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是妹玲 at email dot com",
   "werNormalizedPredicted": "shimeiling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "shimeiling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 妹 玲 at email dot com",
   "sigWerNormalizedPredicted": "shimeiling at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shimeiling' at position 0",
+      "reason": "The expected contains three separate Chinese characters, while the actual combines them into a single romanized string. This changes the format and could cause confusion, especially if the email address is meant to be in Chinese characters. The meaning is significantly altered.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '妹' at position 1",
+      "reason": "The character '妹' is missing in the actual transcription, which is significant if each character is important for the email address. This omission could result in an incorrect or undeliverable email address.",
+      "score": 1
+    }
+  ]
 }

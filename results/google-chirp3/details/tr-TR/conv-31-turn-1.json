@@ -2,15 +2,26 @@
   "gold": "Ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum.",
   "predicted": "Ben yeni bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
-  "werNormalizedPredicted": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "ben yeni bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
-  "sigWerNormalizedPredicted": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ben yeni bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'durumu' to 'durumuyla' at position 8",
+      "reason": "'durumu' (its situation) and 'durumuyla' (with its situation) are very close in meaning in this context; the meaning of the sentence is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 9",
+      "reason": "'ile' (with) is omitted, but 'durumuyla' already includes the meaning of 'with its situation', so the omission does not change the meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

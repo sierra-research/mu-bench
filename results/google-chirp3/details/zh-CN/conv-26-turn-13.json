@@ -7,7 +7,7 @@
   "werRefWords": 4,
   "werNormalizedGold": "美玲 美玲",
   "werNormalizedPredicted": "喂 喂 喂",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "美 玲 美 玲",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '美' to '喂' at position 0",
-      "reason": "'美玲' is a proper name, while '喂' means 'hello' or 'hey' in Chinese. Substituting a name with a greeting completely changes the meaning and makes the sentence incoherent.",
+      "reason": "'美' (a name or word) is replaced by '喂' (which means 'hello' or 'hey' in Chinese, used for greeting on the phone). This completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 3",
-      "reason": "The last character of the name is missing, further making the transcription unrecognizable as the intended name.",
+      "reason": "The expected word '玲' is missing in the actual transcription, which further derails the intended meaning.",
       "score": 1
     }
   ]

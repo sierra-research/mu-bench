@@ -2,25 +2,40 @@
   "gold": "我的邮箱地址是美林 at email dot com。",
   "predicted": "有相地址是maylinemail。com。",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 4,
-  "werRefWords": 12,
-  "werNormalizedGold": "我的邮箱地址是maylin at email dot com",
-  "werNormalizedPredicted": "有相地址是maylin at email dot com",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 maylin at email dot com",
-  "sigWerNormalizedPredicted": "有 相 地 址 是 maylin at email dot com",
+  "wer": 0.6153846153846154,
+  "werEdits": 8,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的邮箱地址是美林 at email dot com",
+  "werNormalizedPredicted": "有相地址是 maylin email com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 林 at email dot com",
+  "sigWerNormalizedPredicted": "有 相 地 址 是 maylin email com",
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to '有' at position 0",
-      "reason": "'我' means 'I' or 'my', while '有' means 'have' or 'there is'. This changes the subject of the sentence and makes the meaning unclear or incorrect.",
+      "reason": "'我' means 'I' or 'my', while '有' means 'have'; this changes the subject and meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: '邮' at position 2",
-      "reason": "'邮' is part of '邮箱' (email), and its omission makes the phrase incomplete and unclear, significantly affecting the meaning.",
+      "reason": "'邮' is part of '邮箱' (email), and its omission makes the phrase incomplete and unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to 'maylin' at position 7",
+      "reason": "'美林' is a name, and 'maylin' is a phonetic attempt at the same name; the meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '林' at position 8",
+      "reason": "'美林' is a proper noun (name); omitting '林' makes the name incomplete and potentially unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 11",
+      "reason": "Omitting 'dot' in an email address makes the address incomplete and unusable.",
       "score": 1
     }
   ]

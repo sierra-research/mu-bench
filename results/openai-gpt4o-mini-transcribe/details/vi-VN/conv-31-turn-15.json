@@ -1,27 +1,32 @@
 {
   "gold": "Tôi cần bản sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng. Bạn giúp tôi gửi qua email đã đăng ký nhé.",
-  "predicted": "ờ tôi cần cái bản sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng ấy, bạn giúp tôi gửi qua email đã đăng ký nhá.",
+  "predicted": "ờm tôi cần cái bản sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng ấy, bạn giúp tôi gửi qua email đã đăng ký nớ.",
   "unintelligible": false,
-  "wer": 0.08,
-  "werEdits": 2,
+  "wer": 0.12,
+  "werEdits": 3,
   "werRefWords": 25,
-  "werNormalizedGold": "toi can ban sao ke hoac la hoa don moi nhat cua the tin dung ban giup toi gui qua email da dang ky nhe",
-  "werNormalizedPredicted": "toi can cai ban sao ke hoac la hoa don moi nhat cua the tin dung ay ban giup toi gui qua email da dang ky nhe",
-  "significantWer": 0.0,
+  "werNormalizedGold": "tôi cần bản sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng bạn giúp tôi gửi qua email đã đăng ký nhé",
+  "werNormalizedPredicted": "tôi cần cái bản sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng ấy bạn giúp tôi gửi qua email đã đăng ký nớ",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 25,
-  "sigWerNormalizedGold": "toi can ban sao ke hoac la hoa don moi nhat cua the tin dung ban giup toi gui qua email da dang ky nhe",
-  "sigWerNormalizedPredicted": "toi can cai ban sao ke hoac la hoa don moi nhat cua the tin dung ay ban giup toi gui qua email da dang ky nhe",
+  "sigWerNormalizedGold": "tôi cần bản sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng bạn giúp tôi gửi qua email đã đăng ký nhé",
+  "sigWerNormalizedPredicted": "tôi cần cái bản sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng ấy bạn giúp tôi gửi qua email đã đăng ký nớ",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'cai' at position 2",
-      "reason": "'cai' is an extra word that does not change the overall meaning of the sentence; it is a minor grammatical addition in Vietnamese and does not derail the intent.",
+      "error": "Insertion: 'cái' at position 2",
+      "reason": "'cái' is a common classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'ay' at position 15",
-      "reason": "'ay' refers to 'that' (as in 'that credit card'), which adds a slight clarification but does not change the overall meaning or intent of the sentence.",
+      "error": "Insertion: 'ấy' at position 15",
+      "reason": "'ấy' is a colloquial particle that adds emphasis but does not change the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'nhé' to 'nớ' at position 24",
+      "reason": "'nhé' and 'nớ' are both sentence-ending particles in Vietnamese with similar pragmatic functions; the substitution does not change the overall meaning.",
+      "score": 3
     }
   ]
 }

@@ -5,18 +5,18 @@
   "wer": 0.05263157894736842,
   "werEdits": 1,
   "werRefWords": 19,
-  "werNormalizedGold": "atatürk caddesi numara forty five bölü six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
-  "werNormalizedPredicted": "atatürk caddesi numara forty five six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "atatürk caddesi numara kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
+  "werNormalizedPredicted": "atatürk caddesi numara kırk beş altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "atatürk caddesi numara forty five bölü six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
-  "sigWerNormalizedPredicted": "atatürk caddesi numara forty five six kazım karabekir mahallesi üsküdar istanbul thirty four thousand six hundred sixty türkiye",
+  "sigWerNormalizedGold": "atatürk caddesi numara kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "atatürk caddesi numara kırk beş altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
   "sigWerErrors": [
     {
       "error": "Deletion: 'bölü' at position 5",
-      "reason": "'bölü' (meaning 'slash' or 'divided by' in Turkish) is used to indicate an address format (e.g., '45/6'). Omitting it may cause confusion in interpreting the address, but the numeric information is still present, so the overall meaning is mostly preserved.",
-      "score": 2
+      "reason": "'bölü' (meaning 'slash' or 'division') is important for distinguishing address or number formats (e.g., '45/6' vs '456'). Its omission changes the meaning of the address, potentially leading to confusion or incorrect delivery.",
+      "score": 1
     }
   ]
 }

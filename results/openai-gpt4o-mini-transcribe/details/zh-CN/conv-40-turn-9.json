@@ -1,16 +1,27 @@
 {
   "gold": "郡凛 at email dot com。",
-  "predicted": "dreambean@e-mail.com",
+  "predicted": "Dreambean@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "郡凛 at email dot com",
-  "werNormalizedPredicted": "郡凛 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreambean at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "郡 凛 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreambean at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'dreambean' at position 0",
+      "reason": "The actual transcription replaces a Chinese name with an unrelated English word, completely changing the identity and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "A key part of the name is missing, which significantly alters the intended email address and identity.",
+      "score": 1
+    }
+  ]
 }

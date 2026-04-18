@@ -1,16 +1,22 @@
 {
   "gold": "林美 at email。",
-  "predicted": "你每app,email",
+  "predicted": "您没,APP,email。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "林美 at email",
-  "werNormalizedPredicted": "林美 at email",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "您没 app email",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "林 美 at email",
-  "sigWerNormalizedPredicted": "林 美 at email",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "您 没 app email",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '您' at position 0",
+      "reason": "'林' is a proper noun (a name), while '您' is a pronoun meaning 'you' in Chinese. This substitution completely changes the subject and meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

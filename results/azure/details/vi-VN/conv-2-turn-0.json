@@ -2,15 +2,31 @@
   "gold": "Xin chào. Muốn nâng hạn mức của thẻ tín dụng.",
   "predicted": "À xin chào ạ, ờ muốn a muốn a nâng nâng hạn mức của đẻ sẽ tín dụng.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "werNormalizedPredicted": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "xin chào muốn muốn nâng nâng hạn mức của đẻ sẽ tín dụng",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "sigWerNormalizedPredicted": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "xin chào muốn muốn nâng nâng hạn mức của đẻ sẽ tín dụng",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'muốn' at position 3",
+      "reason": "Repeating 'muốn' (want) does not change the overall meaning of the sentence, just adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'nâng' at position 4",
+      "reason": "Repeating 'nâng' (increase) is redundant but does not change the intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'sẽ' at position 7",
+      "reason": "'đẻ' (to give birth) is unrelated to the context and introduces confusion, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

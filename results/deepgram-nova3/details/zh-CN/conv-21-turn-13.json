@@ -2,20 +2,30 @@
   "gold": "林美 at E M A I L 点 C O M。",
   "predicted": "林美i一mail。com。",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
+  "wer": 0.75,
+  "werEdits": 9,
   "werRefWords": 12,
   "werNormalizedGold": "林美 at e m a i l 点 c o m",
-  "werNormalizedPredicted": "林美 e m a i l 点 c o m",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "林美 i 一 mail com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "林 美 at e m a i l 点 c o m",
-  "sigWerNormalizedPredicted": "林 美 e m a i l 点 c o m",
+  "sigWerNormalizedPredicted": "林 美 i 一 mail com",
   "sigWerErrors": [
     {
       "error": "Deletion: 'at' at position 2",
-      "reason": "The omission of 'at' removes the connector between the name and the email address, making the email address incomplete and potentially unusable. This is a significant error as it affects the meaning and function of the sentence.",
+      "reason": "'at' is a critical part of an email address, replacing it with 'i' makes the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'l' to '一' at position 7",
+      "reason": "Missing 'l' in the spelled-out email address changes the spelling and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'o' at position 10",
+      "reason": "Missing 'o' in the domain part of the email address makes the domain incomplete and incorrect.",
       "score": 1
     }
   ]

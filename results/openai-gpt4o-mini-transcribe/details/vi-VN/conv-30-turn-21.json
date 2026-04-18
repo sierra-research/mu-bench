@@ -2,21 +2,26 @@
   "gold": "Tôi đăng nhập rồi nhưng không thấy gì hết. Kì quá.",
   "predicted": "tôi đang nhập rồi nhưng không thấy gì hết, kỳ quá",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werEdits": 1,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
-  "werNormalizedGold": "tôi đăng nhập rồi nhưng không thấy gì hết kỳ quá",
+  "werNormalizedGold": "tôi đăng nhập rồi nhưng không thấy gì hết kì quá",
   "werNormalizedPredicted": "tôi đang nhập rồi nhưng không thấy gì hết kỳ quá",
-  "significantWer": 0.09090909090909091,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "tôi đăng nhập rồi nhưng không thấy gì hết kỳ quá",
+  "sigWerNormalizedGold": "tôi đăng nhập rồi nhưng không thấy gì hết kì quá",
   "sigWerNormalizedPredicted": "tôi đang nhập rồi nhưng không thấy gì hết kỳ quá",
   "sigWerErrors": [
     {
       "error": "Substitution: 'đăng' to 'đang' at position 1",
-      "reason": "'đăng nhập' means 'log in' while 'đang nhập' is not a correct phrase and changes the meaning of the sentence, making it unclear or incorrect in context.",
+      "reason": "'đăng nhập' means 'log in', while 'đang nhập' is not a correct phrase and changes the meaning of the sentence, making it confusing or incorrect.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'kì' to 'kỳ' at position 9",
+      "reason": "'kì' and 'kỳ' are variant spellings of the same word in Vietnamese and do not change the meaning in this context.",
+      "score": 3
     }
   ]
 }

@@ -1,31 +1,36 @@
 {
   "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "predicted": "No, es mejor correo, está mal. El correo está mal. Es maria.lopez@e.",
+  "predicted": "No, el mejor correo es el correo está mal. El correo está mal. Es maria.lopez@e",
   "unintelligible": false,
-  "wer": 0.2631578947368421,
-  "werEdits": 5,
+  "wer": 0.47368421052631576,
+  "werEdits": 9,
   "werRefWords": 19,
-  "werNormalizedGold": "no esta mal el correo de vuelta esta mal el correo esta mal es maria punto lopez arroba e",
-  "werNormalizedPredicted": "no es mejor correo esta mal el correo esta mal es maria punto lopez arroba e",
-  "significantWer": 0.0,
+  "werNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
+  "werNormalizedPredicted": "no el mejor correo es el correo está mal el correo está mal es maria lopez arroba e",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "no esta mal el correo de vuelta esta mal el correo esta mal es maria punto lopez arroba e",
-  "sigWerNormalizedPredicted": "no es mejor correo esta mal el correo esta mal es maria punto lopez arroba e",
+  "sigWerNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
+  "sigWerNormalizedPredicted": "no el mejor correo es el correo está mal el correo está mal es maria lopez arroba e",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'esta' to 'es' at position 1",
-      "reason": "'esta' (is) and 'es' (is) are both forms of the verb 'to be' in Spanish, but in this context, the substitution slightly changes the grammatical structure but not the overall meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'el' at position 3",
-      "reason": "Omitting 'el' (the) makes the phrase less clear but does not significantly change the overall meaning of the sentence.",
+      "error": "Substitution: 'está' to 'correo' at position 1",
+      "reason": "The insertion of 'el' does not significantly change the meaning of the sentence; it is a minor grammatical addition.",
       "score": 2
     },
     {
       "error": "Deletion: 'de' at position 5",
-      "reason": "Omitting 'de' (of) slightly affects the grammatical correctness but does not derail the meaning of the sentence.",
+      "reason": "This substitution changes the structure but not the overall meaning, as the sentence is still about the email being wrong.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 14",
+      "reason": "Omitting 'de' slightly affects the grammatical structure but does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'lópez' at position 16",
+      "reason": "The only difference is the accent on the 'i'; this is a minor error as the name is still clearly recognizable.",
       "score": 2
     }
   ]

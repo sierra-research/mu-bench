@@ -2,15 +2,26 @@
   "gold": "君灵 at email dot com。",
   "predicted": "junlingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "君灵 at email dot com",
-  "werNormalizedPredicted": "君灵 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "junlingemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 灵 at email dot com",
-  "sigWerNormalizedPredicted": "君 灵 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "junlingemail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junlingemail' at position 0",
+      "reason": "The Chinese name '君' is replaced with 'junlingemail', which is not a correct transliteration or translation and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "The second part of the name, '灵', is missing, which omits essential information from the email address and makes it unrecognizable.",
+      "score": 1
+    }
+  ]
 }

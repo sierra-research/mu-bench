@@ -2,25 +2,35 @@
   "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
   "predicted": "Email adresinde adımla soyarım arasına. Olması lazım. Ahmet dat arslan ya da Ahmet. Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.17647058823529413,
-  "werEdits": 3,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
   "werRefWords": 17,
   "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "werNormalizedPredicted": "email adresinde adımla soyarım arasına olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "significantWer": 0.11764705882352941,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "email adresinde adımla soyarım arasına olması lazım ahmet dat arslan ya da ahmet arslan olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "sigWerNormalizedPredicted": "email adresinde adımla soyarım arasına olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerNormalizedPredicted": "email adresinde adımla soyarım arasına olması lazım ahmet dat arslan ya da ahmet arslan olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'soyadım' to 'soyarım' at position 3",
-      "reason": "'Soyadım' means 'my surname', while 'soyarım' means 'I peel' or 'I strip'. This changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "'soyadım' means 'my surname', while 'soyarım' means 'I peel' or 'I strip'; this changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 5",
-      "reason": "The word 'nokta' (meaning 'dot') is omitted, which is crucial for the instruction about the email format. This omission makes the instruction incomplete and unclear.",
+      "reason": "Omitting 'nokta' (meaning 'dot') removes the instruction about the dot in the email, which is important for the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'dot' to 'dat' at position 9",
+      "reason": "'dot' is the correct English word for the symbol in an email address; 'dat' is a different word and confuses the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 14",
+      "reason": "Omitting 'nokta' again removes the instruction about the dot, which is essential for the correct email format.",
       "score": 1
     }
   ]

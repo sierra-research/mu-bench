@@ -7,16 +7,16 @@
   "werRefWords": 2,
   "werNormalizedGold": "ahmet arslan",
   "werNormalizedPredicted": "mehmet arslan",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "ahmet arslan",
   "sigWerNormalizedPredicted": "mehmet arslan",
   "sigWerErrors": [
     {
       "error": "Substitution: 'ahmet' to 'mehmet' at position 0",
-      "reason": "Both are common Turkish first names, but substituting one for the other changes the identity of the person, which is a significant error.",
-      "score": 1
+      "reason": "Both are Turkish proper names and differ by only one letter, but they refer to different people. This is a minor error as the overall structure is preserved but the identity is changed.",
+      "score": 2
     }
   ]
 }

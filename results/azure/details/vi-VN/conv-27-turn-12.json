@@ -2,20 +2,25 @@
   "gold": "Thế mình cần chuẩn bị những giấy tờ gì nhỉ?",
   "predicted": "Thế mình chuẩn cần chuẩn bị những cái giấy, tờ gì nhỉ?",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "thế mình cần chuẩn bị những giấy tờ gì nhỉ",
-  "werNormalizedPredicted": "thế mình cần chuẩn bị những cái giấy tờ gì nhỉ",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "thế mình chuẩn cần chuẩn bị những cái giấy tờ gì nhỉ",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "thế mình cần chuẩn bị những giấy tờ gì nhỉ",
-  "sigWerNormalizedPredicted": "thế mình cần chuẩn bị những cái giấy tờ gì nhỉ",
+  "sigWerNormalizedPredicted": "thế mình chuẩn cần chuẩn bị những cái giấy tờ gì nhỉ",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'chuẩn' at position 2",
+      "reason": "'chuẩn' is an extra word that does not fit the context and interrupts the natural flow of the sentence, making it less coherent.",
+      "score": 1
+    },
+    {
       "error": "Insertion: 'cái' at position 6",
-      "reason": "'cái' is a classifier in Vietnamese and its insertion before 'giấy tờ' (documents) does not change the meaning of the sentence. The overall meaning remains the same.",
+      "reason": "The insertion of 'cái' before 'giấy tờ' is a minor grammatical addition in Vietnamese and does not change the overall meaning of the sentence.",
       "score": 2
     }
   ]

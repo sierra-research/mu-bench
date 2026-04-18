@@ -1,16 +1,22 @@
 {
   "gold": "Email của tôi là thu chấm trần a còng Gmail chấm com.",
-  "predicted": "Email của tôi là thu.trm@gmail.com",
+  "predicted": "email của tôi là thu.chamchan@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08333333333333333,
+  "werEdits": 1,
   "werRefWords": 12,
   "werNormalizedGold": "email của tôi là thu chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "email của tôi là thu chấm trần a còng gmail chấm com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "email của tôi là thu chấm chan a còng gmail chấm com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "email của tôi là thu chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "email của tôi là thu chấm trần a còng gmail chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email của tôi là thu chấm chan a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'chan' at position 6",
+      "reason": "'trần' is a Vietnamese surname and a proper noun, while 'chan' is a different word and not a valid Vietnamese surname. This changes the intended email address and could cause delivery failure or confusion, but the structure of the sentence is still clear.",
+      "score": 2
+    }
+  ]
 }

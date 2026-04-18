@@ -1,21 +1,26 @@
 {
   "gold": "我不想告诉你电子邮箱地址。",
-  "predicted": "我不想搞瞬间,只要我想地址。",
+  "predicted": "我不想搞瞬间只有小地址。",
   "unintelligible": false,
   "wer": 0.5833333333333334,
   "werEdits": 7,
   "werRefWords": 12,
-  "werNormalizedGold": "我 不 想 告诉 你 电子 邮箱 地址",
-  "werNormalizedPredicted": "我 不 想 搞 瞬间 只要 我 想 地址",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "我不想告诉你电子邮箱地址",
+  "werNormalizedPredicted": "我不想搞瞬间只有小地址",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "我 不 想 告 诉 你 电 子 邮 箱 地 址",
-  "sigWerNormalizedPredicted": "我 不 想 搞 瞬 间 只 要 我 想 地 址",
+  "sigWerNormalizedPredicted": "我 不 想 搞 瞬 间 只 有 小 地 址",
   "sigWerErrors": [
     {
       "error": "Substitution: '告' to '搞' at position 3",
-      "reason": "'告' (tell) and '搞' (do/make) are completely different in meaning, changing the intent of the sentence.",
+      "reason": "'告' (tell) is replaced by '搞' (do/make), which changes the meaning of the sentence and makes it incoherent in context. The sentence no longer expresses the intent to tell something.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '箱' at position 9",
+      "reason": "'箱' (box, as in '邮箱' for mailbox/email) is missing, so the key term '邮箱' (email) is incomplete, making the meaning unclear.",
       "score": 1
     }
   ]

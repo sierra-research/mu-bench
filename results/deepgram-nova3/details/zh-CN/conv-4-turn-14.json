@@ -2,21 +2,36 @@
   "gold": "没有没有没有没有没有没有没有没有没有没有，我的姓名是君灵。",
   "predicted": "没有没有没有没有没有没有我的性命是dreamlin",
   "unintelligible": false,
-  "wer": 0.2962962962962963,
-  "werEdits": 8,
+  "wer": 0.4444444444444444,
+  "werEdits": 12,
   "werRefWords": 27,
-  "werNormalizedGold": "没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 我 的 姓名 是 君灵",
-  "werNormalizedPredicted": "没有 没有 没有 没有 没有 没有 我 的 姓名 是 君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "没有没有没有没有没有没有没有没有没有没有 我的姓名是君灵",
+  "werNormalizedPredicted": "没有没有没有没有没有没有我的性命是 dreamlin",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 27,
   "sigWerNormalizedGold": "没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 我 的 姓 名 是 君 灵",
-  "sigWerNormalizedPredicted": "没 有 没 有 没 有 没 有 没 有 没 有 我 的 姓 名 是 君 灵",
+  "sigWerNormalizedPredicted": "没 有 没 有 没 有 没 有 没 有 没 有 我 的 性 命 是 dreamlin",
   "sigWerErrors": [
     {
       "error": "Deletion: '没' at position 12",
-      "reason": "The repeated phrase '没有' (meaning 'no' or 'none') is used for emphasis or to indicate a strong negation. Deleting one instance out of many does not change the overall meaning of the sentence, as the intent and information remain clear.",
+      "reason": "Omitting one of the repeated '没' does not change the overall meaning, as the phrase is repeated for emphasis.",
       "score": 2
+    },
+    {
+      "error": "Substitution: '姓' to '性' at position 22",
+      "reason": "Substituting '姓' (surname) with '性' (nature/character or 'life' in this context) changes the meaning of the sentence from 'my name is' to 'my life is', which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to 'dreamlin' at position 25",
+      "reason": "'君' is a Chinese name, while 'dreamlin' is an English word or name, which is a major error and changes the identity being stated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 26",
+      "reason": "Omitting '灵' from the name changes the full name being stated, which is significant for proper nouns.",
+      "score": 1
     }
   ]
 }

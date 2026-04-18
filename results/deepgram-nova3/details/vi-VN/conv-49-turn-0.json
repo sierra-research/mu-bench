@@ -2,20 +2,40 @@
   "gold": "Tôi muốn được xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì.",
   "predicted": "Tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và có sinh cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa lấy thông tin gì",
   "unintelligible": false,
-  "wer": 0.03225806451612903,
-  "werEdits": 1,
+  "wer": 0.16129032258064516,
+  "werEdits": 5,
   "werRefWords": 31,
   "werNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
-  "werNormalizedPredicted": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần mà vẫn chưa thấy thông tin gì",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và có sinh cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa lấy thông tin gì",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 31,
   "sigWerNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
-  "sigWerNormalizedPredicted": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần mà vẫn chưa thấy thông tin gì",
+  "sigWerNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và có sinh cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa lấy thông tin gì",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'cái' at position 4",
+      "reason": "'cái' is an extra classifier word that does not change the meaning of the sentence in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'xin' to 'sinh' at position 15",
+      "reason": "'xin cấp lại' means 'request re-issuance', while 'sinh cấp lại' is a mispronunciation or typo that does not make sense in this context, but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'mà' at position 19",
+      "reason": "'mà' is a discourse particle that does not change the core meaning of the sentence.",
+      "score": 3
+    },
+    {
       "error": "Deletion: 'rồi' at position 23",
-      "reason": "The word 'rồi' (already) is omitted, but the overall meaning of the sentence (waiting for two weeks and still no information) is preserved. The omission does not significantly change the intent or meaning.",
+      "reason": "'rồi' indicates completion, but its omission does not significantly alter the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thấy' to 'lấy' at position 27",
+      "reason": "'thấy thông tin' means 'see information', while 'lấy thông tin' means 'get information'; this changes the nuance but not the core intent of the sentence.",
       "score": 2
     }
   ]

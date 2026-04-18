@@ -2,15 +2,21 @@
   "gold": "Artı 90 123 0 90.",
   "predicted": "Artı 90 123 0.90",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan",
-  "werNormalizedPredicted": "artı doksan yüz yirmi üç sıfır doksan",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan",
-  "sigWerNormalizedPredicted": "artı doksan yüz yirmi üç sıfır doksan",
-  "sigWerErrors": []
+  "wer": 0.125,
+  "werEdits": 1,
+  "werRefWords": 8,
+  "werNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan",
+  "werNormalizedPredicted": "artı doksan bir yüz yirmi üç sıfır nokta doksan",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan",
+  "sigWerNormalizedPredicted": "artı doksan bir yüz yirmi üç sıfır nokta doksan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nokta' at position 7",
+      "reason": "'Nokta' means 'point' or 'dot' and its insertion changes the number from 'sıfır doksan' (zero ninety, i.e., 0 90) to 'sıfır nokta doksan' (zero point ninety, i.e., 0.90), which changes the numerical meaning significantly.",
+      "score": 1
+    }
+  ]
 }

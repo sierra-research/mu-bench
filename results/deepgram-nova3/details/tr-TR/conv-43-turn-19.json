@@ -7,7 +7,7 @@
   "werRefWords": 15,
   "werNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
   "werNormalizedPredicted": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılında hesap ekstresi gönderir misin",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'yılının' to 'yılında' at position 10",
-      "reason": "Changing from 'of the year' (yılının) to 'in the year' (yılında) is a minor grammatical difference in Turkish and does not change the overall meaning of the sentence.",
+      "reason": "The substitution changes the possessive form ('of the year' vs 'in the year'), but the overall meaning of requesting the account statement for 2023 is preserved.",
       "score": 2
     },
     {
       "error": "Substitution: 'ekstresini' to 'ekstresi' at position 12",
-      "reason": "Omitting the possessive suffix '-ni' in 'ekstresini' (its statement) to 'ekstresi' (statement) is a minor grammatical error, but the meaning remains clear in context.",
+      "reason": "The omission of the possessive suffix slightly changes the grammatical correctness but does not affect the overall meaning of the request.",
       "score": 2
     }
   ]

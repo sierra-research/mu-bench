@@ -7,7 +7,7 @@
   "werRefWords": 30,
   "werNormalizedGold": "sai rồi đọc nãy giờ mà không nghe được số điện thoại nghe cho kĩ nè cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "ai rồi đọc nãy giờ mà không nghe được số điện thoại nghe cho kỷ này cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.03333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 30,
   "sigWerNormalizedGold": "sai rồi đọc nãy giờ mà không nghe được số điện thoại nghe cho kĩ nè cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'sai' to 'ai' at position 0",
-      "reason": "'sai' means 'wrong' or 'incorrect', while 'ai' means 'who'. This changes the meaning of the sentence significantly.",
+      "reason": "'sai' means 'wrong' or 'incorrect', while 'ai' means 'who' in Vietnamese. This substitution changes the meaning of the sentence significantly, making it incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'kĩ' to 'kỷ' at position 14",
-      "reason": "'kĩ' (carefully) and 'kỷ' (record, discipline, or era) are different words, but in this context, the intended meaning is 'carefully'. The substitution changes the meaning, but the overall intent of listening carefully is still somewhat understandable.",
+      "reason": "'kĩ' and 'kỷ' are different words in Vietnamese, but in this context ('nghe cho kĩ' vs 'nghe cho kỷ'), 'kĩ' means 'carefully' and 'kỷ' is incorrect here. The meaning is slightly affected but the intent is still understandable.",
       "score": 2
     }
   ]

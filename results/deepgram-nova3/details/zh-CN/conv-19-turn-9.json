@@ -5,9 +5,9 @@
   "wer": 0.3333333333333333,
   "werEdits": 7,
   "werRefWords": 21,
-  "werNormalizedGold": "已经说了几次你为什么不分辨你为什么不会帮我",
-  "werNormalizedPredicted": "已经说了几次你为什么不会帮我",
-  "significantWer": 0.047619047619047616,
+  "werNormalizedGold": "已经说了几次 你为什么不分辨 你为什么不会帮我",
+  "werNormalizedPredicted": "已经说了几次 你为什么不会帮我",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "已 经 说 了 几 次 你 为 什 么 不 分 辨 你 为 什 么 不 会 帮 我",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Deletion: '分' at position 11",
-      "reason": "The word '分' (distinguish) is missing, which changes the meaning of the sentence from 'why don't you distinguish' to 'why don't you help me', omitting an important part of the question and making the sentence incomplete.",
+      "reason": "The deletion of '分' from '分辨' changes the meaning of the phrase. '分辨' means 'to distinguish/discern', and removing '分' leaves '辨', which is not a standalone word in this context. This omission makes the sentence incomplete and unclear at that point, significantly affecting the meaning.",
       "score": 1
     }
   ]

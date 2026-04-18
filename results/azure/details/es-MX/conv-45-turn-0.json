@@ -2,26 +2,31 @@
   "gold": "Hola, quiero saber qué hago para aumentar mi el límite de crédito de mi tarjeta.",
   "predicted": "Hola, quiero saber qué hago para aumentar mi límite de crédito a mi tarjeta.",
   "unintelligible": false,
-  "wer": 0.13333333333333333,
-  "werEdits": 2,
-  "werRefWords": 15,
-  "werNormalizedGold": "hola quiero saber que hago para aumentar mi el limite de credito de mi tarjeta",
+  "wer": 0.35714285714285715,
+  "werEdits": 5,
+  "werRefWords": 14,
+  "werNormalizedGold": "hola quiero saber qué hago para aumentar el límite de crédito de mi tarjeta",
   "werNormalizedPredicted": "hola quiero saber que hago para aumentar mi limite de credito a mi tarjeta",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "hola quiero saber que hago para aumentar mi el limite de credito de mi tarjeta",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "hola quiero saber qué hago para aumentar el límite de crédito de mi tarjeta",
   "sigWerNormalizedPredicted": "hola quiero saber que hago para aumentar mi limite de credito a mi tarjeta",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'el' at position 8",
-      "reason": "Omitting 'el' (the) is a minor grammatical error in Spanish, but the meaning of the sentence remains clear and unchanged.",
+      "error": "Substitution: 'qué' to 'que' at position 3",
+      "reason": "'qué' (with accent) is the interrogative form, while 'que' (without accent) is a conjunction. In this context, the meaning is mostly preserved, but the grammatical nuance is lost.",
       "score": 2
     },
     {
-      "error": "Substitution: 'de' to 'a' at position 12",
-      "reason": "Changing 'de' (of) to 'a' (to) slightly alters the relationship between 'credito' and 'mi tarjeta', but the overall intent of increasing the credit limit on the card is still understandable.",
-      "score": 2
+      "error": "Substitution: 'el' to 'mi' at position 7",
+      "reason": "Changing 'el' (the) to 'mi' (my) changes the ownership of the credit limit, which could alter the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 10",
+      "reason": "Missing accent on 'crédito' is a minor orthographic error and does not affect meaning.",
+      "score": 3
     }
   ]
 }

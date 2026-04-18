@@ -1,21 +1,21 @@
 {
   "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "predicted": "Pardon, e-posta adresinde bir noktayı unuttunuz. Ahmet ile Arslan arasında nokta olacak. Ahmet.arslan.",
+  "predicted": "Pardon, e-posta adresinde bir noktayı unuttunuz. Ahmet'le Arslan arasında nokta olacak. ahmet.arslan.",
   "unintelligible": false,
   "wer": 0.17647058823529413,
   "werEdits": 3,
   "werRefWords": 17,
   "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "werNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmet ile arslan arasında nokta olacak ahmet nokta arslan",
-  "significantWer": 0.058823529411764705,
+  "werNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmet le arslan arasında nokta olacak ahmet nokta arslan",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmet ile arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmet le arslan arasında nokta olacak ahmet nokta arslan",
   "sigWerErrors": [
     {
       "error": "Deletion: 'yalnız' at position 0",
-      "reason": "'Yalnız' is a discourse marker meaning 'just' or 'by the way' in this context. Its omission does not change the main meaning of the sentence.",
+      "reason": "'Yalnız' means 'just' or 'only' and sets the tone for the sentence, but its omission does not significantly change the main meaning of the instruction.",
       "score": 2
     },
     {
@@ -24,9 +24,9 @@
       "score": 1
     },
     {
-      "error": "Substitution: 've' to 'ile' at position 9",
-      "reason": "'Ve' means 'and', 'ile' means 'with'. In this context, both are used to connect names and the meaning remains the same.",
-      "score": 3
+      "error": "Substitution: 've' to 'le' at position 9",
+      "reason": "'Ve' means 'and', while 'le' means 'with'. In this context, 'ahmet ve arslan arasında' (between Ahmet and Arslan) vs. 'ahmet le arslan arasında' (between Ahmet with Arslan) is a minor grammatical error but does not derail the meaning.",
+      "score": 2
     }
   ]
 }

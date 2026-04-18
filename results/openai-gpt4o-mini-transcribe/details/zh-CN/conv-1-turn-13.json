@@ -1,27 +1,27 @@
 {
   "gold": "听到了吗？",
-  "predicted": "Tsinktavdma?",
+  "predicted": "Тингдавдама?",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "听到了吗",
-  "werNormalizedPredicted": "tsinktavdma",
-  "significantWer": 0.5,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "тингдавдама",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
-  "sigWerNormalizedPredicted": "tsinktavdma",
+  "sigWerNormalizedPredicted": "тингдавдама",
   "sigWerErrors": [
     {
-      "error": "Substitution: '听' to 'tsinktavdma' at position 0",
-      "reason": "The actual transcription is in a completely different language and does not correspond to the expected Chinese word, making the sentence incoherent.",
+      "error": "Substitution: '听' to 'тингдавдама' at position 0",
+      "reason": "The actual transcription is in a completely different language (Cyrillic script, likely Russian or a transliteration), which makes the sentence incoherent and unrecognizable compared to the expected Chinese. This is a significant error as the meaning is completely lost.",
       "score": 1
     },
     {
       "error": "Deletion: '到' at position 1",
-      "reason": "The word '到' is missing, further making the transcription incomprehensible and derailing the meaning.",
-      "score": 1
+      "reason": "infra_error",
+      "score": 2
     }
   ]
 }

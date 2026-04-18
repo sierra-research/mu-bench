@@ -7,25 +7,25 @@
   "werRefWords": 18,
   "werNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
   "werNormalizedPredicted": "hayır başlar söylüyorum beni kesmeden dinlerirsen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
   "sigWerNormalizedPredicted": "hayır başlar söylüyorum beni kesmeden dinlerirsen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'baştan' to 'başlar' at position 1",
-      "reason": "'baştan' means 'from the beginning', while 'başlar' means 'begins/starts'; this changes the meaning of the sentence and makes it less coherent.",
+      "reason": "'baştan' means 'from the beginning', while 'başlar' means 'begins/starts'; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'dinle' to 'dinlerirsen' at position 5",
-      "reason": "'dinle' is an imperative 'listen', while 'dinlerirsen' is not a standard word and seems to be a mistaken form, making the sentence confusing.",
-      "score": 1
+      "reason": "'dinle' means 'listen', while 'dinlerirsen' is a grammatically incorrect form, possibly intended as 'dinlersen' ('if you listen'); this introduces confusion but the intent is somewhat clear.",
+      "score": 2
     },
     {
       "error": "Deletion: 'lütfen' at position 6",
-      "reason": "Omitting 'lütfen' (please) removes politeness but does not significantly change the core meaning.",
+      "reason": "Omitting 'lütfen' ('please') removes politeness but does not change the core meaning of the sentence.",
       "score": 2
     }
   ]

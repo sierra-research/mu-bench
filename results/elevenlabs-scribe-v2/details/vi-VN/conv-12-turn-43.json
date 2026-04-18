@@ -2,20 +2,25 @@
   "gold": "Muốn nhưng mà tôi muốn nói chuyện với người trực tiếp.",
   "predicted": "À muốn nhưng mà tui muốn nói chuyện với nói chuyện tiếp",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
-  "werEdits": 2,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
   "werNormalizedGold": "muốn nhưng mà tôi muốn nói chuyện với người trực tiếp",
-  "werNormalizedPredicted": "muốn nhưng mà tôi muốn nói chuyện với nói chuyện tiếp",
-  "significantWer": 0.09090909090909091,
+  "werNormalizedPredicted": "muốn nhưng mà tui muốn nói chuyện với nói chuyện tiếp",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "muốn nhưng mà tôi muốn nói chuyện với người trực tiếp",
-  "sigWerNormalizedPredicted": "muốn nhưng mà tôi muốn nói chuyện với nói chuyện tiếp",
+  "sigWerNormalizedPredicted": "muốn nhưng mà tui muốn nói chuyện với nói chuyện tiếp",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'tôi' to 'tui' at position 3",
+      "reason": "'tôi' and 'tui' are regional variants in Vietnamese for 'I', meaning is preserved.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'người' to 'nói' at position 8",
-      "reason": "'người' means 'person' and 'nói' means 'to speak'; substituting 'person' with 'to speak' changes the meaning of the sentence and makes it incoherent.",
+      "reason": "'người' means 'person' while 'nói' means 'speak'; this changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "1 2 3 Main Street Apartment 4, Anytown, California, 9 0 2 1 0.",
   "predicted": "One two three Main Street, Apartment four, Anytown, California, nine o two one zero",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "one two three main street apartment four anytown california nine zero two one zero",
-  "werNormalizedPredicted": "one two three main street apartment four anytown california nine zero two one zero",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "one two three main street apartment four anytown california nine o two one zero",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "one two three main street apartment four anytown california nine zero two one zero",
-  "sigWerNormalizedPredicted": "one two three main street apartment four anytown california nine zero two one zero",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "one two three main street apartment four anytown california nine o two one zero",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zero' to 'o' at position 10",
+      "reason": "'O' is often used as a spoken substitute for 'zero' in addresses and phone numbers, and does not change the meaning in this context.",
+      "score": 3
+    }
+  ]
 }

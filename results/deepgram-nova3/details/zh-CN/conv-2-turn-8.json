@@ -2,15 +2,21 @@
   "gold": "美玲 at email dot com。",
   "predicted": "mailingemail。com你听到的吗",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.3333333333333333,
+  "werEdits": 8,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "mailing email com 你听到的吗",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "mailing email com 你 听 到 的 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'com' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This substitution makes the sentence incoherent and changes the intended meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -1,31 +1,41 @@
 {
   "gold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
-  "predicted": "Tamam. Kredi kartınla ilgili bir talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "predicted": "Tamam. Kredi kartıyla ilgili bir talebim var. Onu yapmak istiyorum. Yazabilir misin bana?",
   "unintelligible": false,
-  "wer": 0.23529411764705882,
-  "werEdits": 4,
+  "wer": 0.4117647058823529,
+  "werEdits": 7,
   "werRefWords": 17,
-  "werNormalizedGold": "tamam kredi karti ile ilgili bir limit artisi talebim var onu yapmak istiyorum yardimci olur musun bana",
-  "werNormalizedPredicted": "tamam kredi kartinla ilgili bir talebim var onu yapmak istiyorum yardimci olur musun bana",
-  "significantWer": 0.058823529411764705,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
+  "werNormalizedPredicted": "tamam kredi kartıyla ilgili bir talebim var onu yapmak istiyorum yazabilir misin bana",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "tamam kredi karti ile ilgili bir limit artisi talebim var onu yapmak istiyorum yardimci olur musun bana",
-  "sigWerNormalizedPredicted": "tamam kredi kartinla ilgili bir talebim var onu yapmak istiyorum yardimci olur musun bana",
+  "sigWerNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
+  "sigWerNormalizedPredicted": "tamam kredi kartıyla ilgili bir talebim var onu yapmak istiyorum yazabilir misin bana",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'karti' to 'kartinla' at position 2",
-      "reason": "'karti' (the card) and 'kartinla' (with your card) are different forms, but in this context, 'kartinla ilgili' (about your card) conveys a similar meaning to 'kredi karti ile ilgili' (about the credit card). The possessive 'your' is added, but the meaning is mostly preserved.",
-      "score": 2
+      "error": "Substitution: 'kartı' to 'kartıyla' at position 2",
+      "reason": "'kartı' (the card) and 'kartıyla' (with the card) are very close in meaning, and in this context, the meaning is preserved.",
+      "score": 3
     },
     {
       "error": "Deletion: 'ile' at position 3",
-      "reason": "'ile' (with) is omitted, but 'kartinla' already includes the meaning of 'with your card', so the omission does not change the meaning.",
+      "reason": "'ile' (with) is merged into 'kartıyla' in the actual, so the meaning is preserved.",
       "score": 3
     },
     {
       "error": "Deletion: 'limit' at position 6",
-      "reason": "The phrase 'limit artisi' (limit increase) is missing, which removes the specific request for a credit limit increase. This significantly changes the intent of the sentence.",
+      "reason": "Omitting 'limit' (limit) removes the specific request for a limit increase, which is a significant change in the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yardımcı' to 'yazabilir' at position 13",
+      "reason": "'yardımcı olur musun' (can you help) is replaced with 'yazabilir misin' (can you write), which changes the request from asking for help to asking to write, altering the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'musun' at position 15",
+      "reason": "'musun' (can you) is part of the phrase 'yardımcı olur musun' which is already substituted, so this deletion is part of the previous significant error.",
       "score": 1
     }
   ]

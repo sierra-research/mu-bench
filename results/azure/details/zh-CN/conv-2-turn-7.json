@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
   "werNormalizedPredicted": "mailing at email dot com",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '美' to 'mailing' at position 0",
-      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the intended recipient or subject of the email address, making the meaning incoherent.",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the intended meaning and identity.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "'玲' is the second part of the name (likely '美玲' as a full name). Its omission means the name is incomplete or incorrect, which is significant for an email address.",
+      "reason": "The omission of '玲', which is part of a name, results in a loss of critical information (the person's full name), making the transcription incomplete and misleading.",
       "score": 1
     }
   ]

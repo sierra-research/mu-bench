@@ -2,21 +2,31 @@
   "gold": "No, no es Gmail. Está mal. El correo está mal.",
   "predicted": "no es Gmail, está mal, el correo está mal.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "no no es gmail esta mal el correo esta mal",
+  "werNormalizedGold": "no no es gmail está mal el correo está mal",
   "werNormalizedPredicted": "no es gmail esta mal el correo esta mal",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "no no es gmail esta mal el correo esta mal",
+  "sigWerNormalizedGold": "no no es gmail está mal el correo está mal",
   "sigWerNormalizedPredicted": "no es gmail esta mal el correo esta mal",
   "sigWerErrors": [
     {
       "error": "Deletion: 'no' at position 1",
-      "reason": "The deletion of the second 'no' removes an explicit negation, which could change the emphasis or meaning of the sentence, potentially making it less clear that the email is not Gmail. This could lead to misunderstanding.",
+      "reason": "Omitting the second 'no' slightly changes the emphasis but does not alter the overall meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'está' to 'esta' at position 4",
+      "reason": "Missing accent in 'está' vs 'esta' does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'está' to 'esta' at position 8",
+      "reason": "Missing accent in 'está' vs 'esta' does not change the meaning in this context.",
+      "score": 3
     }
   ]
 }

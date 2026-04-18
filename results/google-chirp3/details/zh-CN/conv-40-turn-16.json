@@ -2,20 +2,25 @@
   "gold": "哎呀你有什么问题啊。郡凛 at email dot com！",
   "predicted": "哎呀,你有什么问题啊?",
   "unintelligible": false,
-  "wer": 0.46153846153846156,
-  "werEdits": 6,
-  "werRefWords": 13,
-  "werNormalizedGold": "你 有 什么 问题 啊 郡凛 at email dot com",
-  "werNormalizedPredicted": "你 有 什么 问题 啊",
-  "significantWer": 0.07692307692307693,
+  "wer": 0.5714285714285714,
+  "werEdits": 8,
+  "werRefWords": 14,
+  "werNormalizedGold": "哎呀你有什么问题 郡凛 at email dot com",
+  "werNormalizedPredicted": "你有什么问题",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "你 有 什 么 问 题 啊 郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题 啊",
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 郡 凛 at email dot com",
+  "sigWerNormalizedPredicted": "你 有 什 么 问 题",
   "sigWerErrors": [
     {
-      "error": "Deletion: '郡' at position 7",
-      "reason": "The deletion of '郡 凛 at email dot com' omits a likely name and contact information, which is significant information loss and derails the meaning if the intent was to provide an email address.",
+      "error": "Deletion: '哎' at position 0",
+      "reason": "'哎' is an interjection that adds emotional tone but does not affect the core meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '郡' at position 8",
+      "reason": "The entire email address is missing, which is critical information for the sentence. This omission significantly changes the meaning and utility of the sentence.",
       "score": 1
     }
   ]

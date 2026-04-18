@@ -2,30 +2,30 @@
   "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
   "predicted": "Evet, yalnız değil. Şöyle Ahmet Arslan dediniz ama Ahmet'le Arslan arasında nokta olacak. Ahmet nokta Arslan",
   "unintelligible": false,
-  "wer": 0.1875,
+  "wer": 0.2,
   "werEdits": 3,
-  "werRefWords": 16,
-  "werNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
-  "werNormalizedPredicted": "evet yalniz degil soyle ahmet arslan dediniz ama ahmetle arslan arasinda nokta olacak ahmet nokta arslan",
-  "significantWer": 0.0,
+  "werRefWords": 15,
+  "werNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "evet değil şöyle ahmet arslan dediniz ama ahmetle arslan arasında nokta olacak ahmet nokta arslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "evet yalniz degil soyle ahmet arslan dediniz ama ahmetle arslan arasinda nokta olacak ahmet nokta arslan",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "evet değil şöyle ahmet arslan dediniz ama ahmetle arslan arasında nokta olacak ahmet nokta arslan",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'yalniz' at position 1",
-      "reason": "'yalniz' (meaning 'only' or 'alone') is inserted, but it does not significantly change the overall meaning of the sentence in this context.",
+      "error": "Insertion: 'şöyle' at position 2",
+      "reason": "'şöyle' (meaning 'like this' or 'so') is an extra word that adds a slight nuance but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'ahmet' to 'ahmetle' at position 7",
-      "reason": "'ahmetle' means 'with Ahmet', while 'ahmet' is just the name. This changes the structure of the sentence but does not derail the overall meaning, as the context is about the relationship between Ahmet and Arslan.",
+      "error": "Substitution: 'ahmet' to 'ahmetle' at position 6",
+      "reason": "'ahmetle' means 'with Ahmet', while 'ahmet' is just the name. In this context, it slightly changes the grammatical structure but the meaning about the dot between Ahmet and Arslan remains clear.",
       "score": 2
     },
     {
-      "error": "Deletion: 've' at position 8",
-      "reason": "'ve' means 'and', and its omission changes the phrase from 'Ahmet and Arslan' to 'Ahmetle Arslan' (with Ahmet Arslan). This is a minor error as the meaning is still understandable in context.",
+      "error": "Deletion: 've' at position 7",
+      "reason": "'ve' means 'and', and its omission changes 'ahmet ve arslan' (Ahmet and Arslan) to 'ahmetle arslan' (with Ahmet Arslan). This is a minor grammatical change but does not derail the meaning.",
       "score": 2
     }
   ]

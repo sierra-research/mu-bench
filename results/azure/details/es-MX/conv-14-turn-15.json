@@ -2,26 +2,36 @@
   "gold": "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
   "predicted": "Este el monto es de 3200 pesos, pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no sé cuál es.",
   "unintelligible": false,
-  "wer": 0.06451612903225806,
-  "werEdits": 2,
+  "wer": 0.16129032258064516,
+  "werEdits": 5,
   "werRefWords": 31,
-  "werNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
-  "werNormalizedPredicted": "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no se cual es",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no sé cuál es",
+  "werNormalizedPredicted": "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no se cual es",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 31,
-  "sigWerNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
-  "sigWerNormalizedPredicted": "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no se cual es",
+  "sigWerNormalizedGold": "es el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no sé cuál es",
+  "sigWerNormalizedPredicted": "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no se cual es",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'es' to 'este' at position 0",
-      "reason": "'este' (this) instead of 'es' (is) slightly changes the meaning at the start, but the overall intent of the sentence is still clear.",
+      "error": "Deletion: 'es' at position 0",
+      "reason": "Omitting 'es' at the start slightly changes the sentence structure but does not affect the overall meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'no' at position 26",
-      "reason": "Omitting one 'no' in 'no no se cual es' slightly reduces emphasis but does not change the overall meaning of the sentence.",
-      "score": 2
+      "error": "Deletion: 'pues' at position 21",
+      "reason": "Omitting 'pues' (a discourse marker) does not change the factual content or meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'no' to 'se' at position 27",
+      "reason": "The expected phrase 'no no sé cuál es' (I don't know which it is) becomes 'no se cual es' (does not know which it is), which changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cuál' at position 29",
+      "reason": "Omitting 'cuál' (which) makes the sentence incomplete and unclear, significantly affecting the meaning.",
+      "score": 1
     }
   ]
 }

@@ -1,16 +1,22 @@
 {
   "gold": "Tabii söylüyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "predicted": "Tabii, söylüyorum. Artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi.",
+  "predicted": "Tabii, söylüyorum. Artı dokuz sıfır bir, iki, üç, sıfır, dokuz, sıfır, dört, beş, altı, yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 15,
-  "werNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii söylüyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "werNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii söylüyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 3",
+      "reason": "'doksan' means 'ninety' and 'dokuz' means 'nine'; substituting these changes the phone number significantly, which is critical information.",
+      "score": 1
+    }
+  ]
 }

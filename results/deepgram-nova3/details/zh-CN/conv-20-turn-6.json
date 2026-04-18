@@ -2,20 +2,30 @@
   "gold": "不对不对，你说我的名字不对。",
   "predicted": "部队部队你是我的名字部队",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
+  "wer": 0.5833333333333334,
+  "werEdits": 7,
   "werRefWords": 12,
-  "werNormalizedGold": "不 对 不 对 你 说 我 的 名字 不 对",
-  "werNormalizedPredicted": "不 对 不 对 你 是 我 的 名字 不 对",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "不对不对你说我的名字不对",
+  "werNormalizedPredicted": "部队部队你是我的名字部队",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "不 对 不 对 你 说 我 的 名 字 不 对",
-  "sigWerNormalizedPredicted": "不 对 不 对 你 是 我 的 名 字 不 对",
+  "sigWerNormalizedPredicted": "部 队 部 队 你 是 我 的 名 字 部 队",
   "sigWerErrors": [
     {
+      "error": "Substitution: '不' to '部' at position 0",
+      "reason": "'不对' means 'not correct', while '部队' means 'troops' or 'army unit'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
       "error": "Substitution: '说' to '是' at position 5",
-      "reason": "'说' means 'say' and '是' means 'is/are'. This changes the meaning of the sentence from 'you say my name is not correct' to 'you are my name is not correct', which makes the sentence incoherent.",
+      "reason": "'你说我的名字' means 'you say my name', while '你是我的名字' means 'you are my name'; this changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '不' to '部' at position 10",
+      "reason": "Again, '不对' means 'not correct', while '部队' means 'troops'; this substitution changes the meaning significantly.",
       "score": 1
     }
   ]

@@ -2,25 +2,35 @@
   "gold": "林美 at email 点 C O M。",
   "predicted": "Me at e-mail.com.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 2,
+  "wer": 0.75,
+  "werEdits": 6,
   "werRefWords": 8,
-  "werNormalizedGold": "lin mei at email dot c o m",
-  "werNormalizedPredicted": "me at email dot c o m",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "林美 at email 点 c o m",
+  "werNormalizedPredicted": "me at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "lin mei at email dot c o m",
-  "sigWerNormalizedPredicted": "me at email dot c o m",
+  "sigWerNormalizedGold": "林 美 at email 点 c o m",
+  "sigWerNormalizedPredicted": "me at email com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'lin' to 'me' at position 0",
-      "reason": "'lin' and 'me' are completely different words and likely refer to different entities, which significantly changes the meaning, especially in an email address context.",
+      "error": "Substitution: '林' to 'me' at position 0",
+      "reason": "'林' is a Chinese character (likely a name), while 'me' is an English pronoun; this changes the meaning entirely and loses the intended information.",
       "score": 1
     },
     {
-      "error": "Deletion: 'mei' at position 1",
-      "reason": "Omitting 'mei' from the email address changes the identity of the email, making it a significant error.",
+      "error": "Deletion: '美' at position 1",
+      "reason": "'美' is another Chinese character (likely part of a name); omitting it removes important identifying information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '点' to 'com' at position 4",
+      "reason": "'点' means 'dot' in Chinese and is part of the email address; substituting it with 'com' confuses the structure of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'c' at position 5",
+      "reason": "Omitting 'c' from the spelled-out 'c o m' changes the email domain and makes it incorrect.",
       "score": 1
     }
   ]

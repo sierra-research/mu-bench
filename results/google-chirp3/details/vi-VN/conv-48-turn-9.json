@@ -2,15 +2,21 @@
   "gold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "email là minh.trinh@email.com số điện thoại +84 911 234 5678",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 20,
-  "werNormalizedGold": "email là minh.trinh@email.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "email là minh.trinh@email.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "email là minh.trinh@email.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "email là minh.trinh@email.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "wer": 0.037037037037037035,
+  "werEdits": 1,
+  "werRefWords": 27,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là minh chấm trinh a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là minh chấm trinh a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trinh' at position 4",
+      "reason": "'Trần' and 'Trinh' are both Vietnamese proper names, but they refer to completely different people. Substituting one for the other could result in sending information to the wrong person, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

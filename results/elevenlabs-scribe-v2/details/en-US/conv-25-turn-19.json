@@ -2,16 +2,16 @@
   "gold": "Oh, don't mind that. I got somebody. People are walking up in here in the bathroom people be doing stuff, man. You know, I need privacy up here. You know what? Just send me to somebody real quick, see if I could talk to them. I don't want to bother you anymore with this. Got dogs got up in here just snoring, other people just tooting. Alright. Yeah. Send me to somebody, please.",
   "predicted": "Oh, don't mind that. Uh, I got, I got somebody... People be walking up in here in the bathroom, people be doing stuff, man. You know, I need privacy over here. Uh, you know what? I'm gonna... Let me, um... Just send me to somebody real quick, see if I can talk to them. Um, I don't wanna bother you anymore with this. Got dog g-up in here just snoring, other people just tooting. All right. Yeah, send me to somebody, please",
   "unintelligible": false,
-  "wer": 0.17333333333333334,
-  "werEdits": 13,
+  "wer": 0.38666666666666666,
+  "werEdits": 29,
   "werRefWords": 75,
   "werNormalizedGold": "oh do not mind that i got somebody people are walking up in here in the bathroom people be doing stuff man you know i need privacy up here you know what just send me to somebody real quick see if i could talk to them i do not want to bother you anymore with this got dogs got up in here just snoring other people just tooting alright yeah send me to somebody please",
-  "werNormalizedPredicted": "oh do not mind that i got i got somebody people be walking up in here in the bathroom people be doing stuff man you know i need privacy over here you know what i am going to let me just send me to somebody real quick see if i can talk to them i do not want to bother you anymore with this got dog g up in here just snoring other people just tooting alright yeah send me to somebody please",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "oh do not mind that i got i got somebody people be walking up in here in the bathroom people be doing stuff man you know i need privacy over here you know what i am going to let me just send me to somebody real quick see if i can talk to them just send me to somebody real quick see if i can talk to them i do not want to bother you anymore with this got dog g up in here just snoring other people just tooting all right yeah send me to somebody please",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 75,
   "sigWerNormalizedGold": "oh do not mind that i got somebody people are walking up in here in the bathroom people be doing stuff man you know i need privacy up here you know what just send me to somebody real quick see if i could talk to them i do not want to bother you anymore with this got dogs got up in here just snoring other people just tooting alright yeah send me to somebody please",
-  "sigWerNormalizedPredicted": "oh do not mind that i got i got somebody people be walking up in here in the bathroom people be doing stuff man you know i need privacy over here you know what i am going to let me just send me to somebody real quick see if i can talk to them i do not want to bother you anymore with this got dog g up in here just snoring other people just tooting alright yeah send me to somebody please",
+  "sigWerNormalizedPredicted": "oh do not mind that i got i got somebody people be walking up in here in the bathroom people be doing stuff man you know i need privacy over here you know what i am going to let me just send me to somebody real quick see if i can talk to them just send me to somebody real quick see if i can talk to them i do not want to bother you anymore with this got dog g up in here just snoring other people just tooting all right yeah send me to somebody please",
   "sigWerErrors": [
     {
       "error": "Insertion: 'i' at position 7",
@@ -21,16 +21,16 @@
     {
       "error": "Substitution: 'are' to 'be' at position 9",
       "reason": "'People are walking' vs 'people be walking' is a minor grammatical difference, but the meaning is preserved.",
-      "score": 3
+      "score": 2
     },
     {
       "error": "Substitution: 'up' to 'over' at position 27",
-      "reason": "'Privacy up here' vs 'privacy over here' both indicate a location and do not change the intent.",
+      "reason": "'Privacy up here' vs 'privacy over here' both indicate a location and intent, so the meaning is unchanged.",
       "score": 3
     },
     {
       "error": "Insertion: 'i' at position 32",
-      "reason": "The extra 'i' is part of a disfluent phrase ('i am going to let me just'), which is awkward but does not derail the meaning.",
+      "reason": "The extra 'i' is part of a disfluent phrase but does not change the meaning.",
       "score": 2
     },
     {
@@ -39,8 +39,23 @@
       "score": 3
     },
     {
+      "error": "Insertion: 'just' at position 46",
+      "reason": "The extra 'just' is a minor addition and does not affect the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'can' at position 47",
+      "reason": "The extra 'can' is a repetition and does not change the meaning.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'dogs' to 'dog' at position 57",
-      "reason": "Singular vs plural, but the context ('got dog up in here just snoring') is still understandable.",
+      "reason": "Singular vs plural, but the context is clear and the meaning is not significantly changed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'alright' to 'right' at position 68",
+      "reason": "The addition of 'all' before 'right' is a minor difference and does not affect the meaning.",
       "score": 2
     }
   ]

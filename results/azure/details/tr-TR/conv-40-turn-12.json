@@ -2,40 +2,30 @@
   "gold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
   "predicted": "Hayır, hayır, yanlış aldım. Tamamen yanlış almışsıntıklasöylehayfakodluyorumadanahataymuglaedirnetrabzonadanarizesamsunlüleburgazadananigde@email.com.",
   "unintelligible": false,
-  "wer": 0.25925925925925924,
-  "werEdits": 7,
-  "werRefWords": 27,
-  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
-  "werNormalizedPredicted": "hayır hayır yanlış aldım tamamen yanlış almışsın tıkla söyle hayfa kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email nokta com",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 27,
-  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
-  "sigWerNormalizedPredicted": "hayır hayır yanlış aldım tamamen yanlış almışsın tıkla söyle hayfa kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email nokta com",
+  "wer": 0.16,
+  "werEdits": 4,
+  "werRefWords": 25,
+  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "werNormalizedPredicted": "hayır hayır yanlış aldım tamamen yanlış almışsın tıkla söyle harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "sigWerNormalizedPredicted": "hayır hayır yanlış aldım tamamen yanlış almışsın tıkla söyle harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'hayır' at position 1",
-      "reason": "Repeating 'hayır' (no) does not change the overall meaning, just adds emphasis.",
+      "reason": "Repeating 'hayır' (no) does not change the overall meaning of the sentence, just adds emphasis.",
       "score": 2
     },
     {
       "error": "Substitution: 'yazdın' to 'aldım' at position 2",
-      "reason": "'yazdın' means 'you wrote', 'aldım' means 'I took/received'; this changes the subject and meaning of the sentence.",
+      "reason": "'yazdın' means 'you wrote', 'aldım' means 'I took/received'; this changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'tekrar' to 'tıkla' at position 6",
-      "reason": "'tekrar' means 'again', 'tıkla' means 'click'; this is a completely different word and changes the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'harf' at position 9",
-      "reason": "Omitting 'harf' (letter) from 'harf harf kodluyorum' (I am spelling out letter by letter) makes the phrase less clear but the intent is still somewhat understandable.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'nokta' at position 16",
-      "reason": "Omitting 'nokta' (dot) from an email address can cause confusion or incorrect transcription of the address.",
+      "reason": "'tekrar' means 'again', 'tıkla' means 'click'; this is a completely different word and changes the meaning of the instruction.",
       "score": 1
     }
   ]

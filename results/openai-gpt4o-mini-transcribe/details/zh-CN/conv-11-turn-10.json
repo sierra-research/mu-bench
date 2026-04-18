@@ -1,36 +1,31 @@
 {
   "gold": "郡。我的姓名是郡凛。郡。",
-  "predicted": "Dream的新名是Dream灵,Dream",
+  "predicted": "Drin Drin我的新名是Drin林Drin",
   "unintelligible": false,
   "wer": 0.6666666666666666,
   "werEdits": 6,
   "werRefWords": 9,
   "werNormalizedGold": "郡 我的姓名是郡凛 郡",
-  "werNormalizedPredicted": "dream的新名是dream灵 dream",
-  "significantWer": 0.4444444444444444,
-  "majorErrorsCount": 4,
+  "werNormalizedPredicted": "drin drin 我的新名是 drin 林 drin",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "郡 我 的 姓 名 是 郡 凛 郡",
-  "sigWerNormalizedPredicted": "dream 的 新 名 是 dream 灵 dream",
+  "sigWerNormalizedPredicted": "drin drin 我 的 新 名 是 drin 林 drin",
   "sigWerErrors": [
     {
-      "error": "Substitution: '郡' to 'dream' at position 0",
-      "reason": "The word '郡' (a Chinese surname) is replaced with 'dream' (an English word), which is a completely different word and language, making the meaning incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '我' at position 1",
-      "reason": "The pronoun '我' (I/me) is missing, which removes the subject of the sentence and significantly alters the meaning.",
+      "error": "Substitution: '郡' to 'drin' at position 0",
+      "reason": "The word 'drin' is inserted at the beginning, which is not present in the expected sentence and does not contribute to the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: '姓' to '新' at position 3",
-      "reason": "'姓' means 'surname' and '新' means 'new'; substituting these changes the meaning of the sentence from talking about a surname to talking about something new, which is a significant change.",
+      "reason": "'drin' is a phonetic or incorrect transcription of the Chinese character '郡', which is a proper noun and critical to the meaning. This substitution makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: '郡' to 'dream' at position 6",
-      "reason": "Again, '郡' (surname) is replaced with 'dream', which is a different word and language, making the sentence incoherent.",
+      "error": "Substitution: '郡' to 'drin' at position 6",
+      "reason": "'姓' means 'surname' and '新' means 'new'; substituting these changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

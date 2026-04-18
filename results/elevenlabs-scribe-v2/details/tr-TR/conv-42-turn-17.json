@@ -2,40 +2,40 @@
   "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
   "predicted": "Anlar. Son transferimde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana e-mail ile gönderebilir misin son transferimin detaylarını?",
   "unintelligible": false,
-  "wer": 0.3888888888888889,
-  "werEdits": 7,
+  "wer": 0.5555555555555556,
+  "werEdits": 10,
   "werRefWords": 18,
-  "werNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
-  "werNormalizedPredicted": "anlar son transferimde biraz gecikme olmustu son transferimi bir goz atar misin bana email ile gonderebilir misin son transferimin detaylarini",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "werNormalizedPredicted": "anlar son transferimde biraz gecikme olmuştu son transferimi bir göz atar mısın bana e mail ile gönderebilir misin son transferimin detaylarını",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
-  "sigWerNormalizedPredicted": "anlar son transferimde biraz gecikme olmustu son transferimi bir goz atar misin bana email ile gonderebilir misin son transferimin detaylarini",
+  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "sigWerNormalizedPredicted": "anlar son transferimde biraz gecikme olmuştu son transferimi bir göz atar mısın bana e mail ile gönderebilir misin son transferimin detaylarını",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anlar' at position 0",
-      "reason": "'anna' is a proper noun (a name), while 'anlar' is a Turkish word meaning 'moments' or 'they understand'; this changes the subject and meaning of the sentence significantly.",
+      "reason": "'anna' is a proper noun (likely a name), while 'anlar' is a Turkish word meaning 'moments' or 'they understand'; this changes the subject and meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'transferinde' to 'transferimde' at position 2",
-      "reason": "The difference is between 'his/her transfer' (transferinde) and 'my transfer' (transferimde); this changes the subject of the transfer but does not derail the overall meaning.",
+      "reason": "The difference is between 'your transfer' and 'my transfer', which changes the perspective but not the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gosterir' to 'atar' at position 9",
-      "reason": "The word 'goz' (eye) is inserted, but in context it is part of the phrase 'goz atar' (to take a look), which replaces 'gosterir' (shows). This changes the action but not the overall intent.",
+      "error": "Substitution: 'gösterir' to 'atar' at position 9",
+      "reason": "The insertion of 'göz' (eye) as part of the phrase 'göz atar mısın' (can you take a look) is a minor stylistic change and does not alter the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gonderir' to 'gonderebilir' at position 13",
-      "reason": "'gosterir' means 'shows', while 'goz atar' means 'take a look'; the action is similar (reviewing or showing), so the meaning is preserved.",
+      "error": "Substitution: 'email' to 'ile' at position 12",
+      "reason": "'gösterir' means 'show', while 'atar' in this context is part of 'göz atar' (take a look); both are requests to check or review, so the meaning is preserved.",
       "score": 3
     },
     {
       "error": "Substitution: 'transferin' to 'transferimin' at position 16",
-      "reason": "The word 'ile' (with/by) is inserted, specifying the method of sending the email, which does not change the overall meaning.",
+      "reason": "The insertion of 'e' is part of the phrase 'e mail', which is equivalent to 'email'; this does not change the meaning.",
       "score": 3
     }
   ]

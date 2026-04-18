@@ -1,21 +1,21 @@
 {
   "gold": "我已经几次说了。",
-  "predicted": "我已经对此说了。",
+  "predicted": "我已经没词说了。",
   "unintelligible": false,
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "我 已经 几 次 说 了",
-  "werNormalizedPredicted": "我 已经 对 此 说 了",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedGold": "我已经几次说了",
+  "werNormalizedPredicted": "我已经没词说了",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "我 已 经 几 次 说 了",
-  "sigWerNormalizedPredicted": "我 已 经 对 此 说 了",
+  "sigWerNormalizedPredicted": "我 已 经 没 词 说 了",
   "sigWerErrors": [
     {
-      "error": "Substitution: '几' to '对' at position 3",
-      "reason": "'几次' means 'several times', while '对此' means 'to this'; this substitution changes the meaning of the sentence significantly.",
+      "error": "Substitution: '几' to '没' at position 3",
+      "reason": "'几' means 'several' or 'a few', while '没' means 'no' or 'not'. This substitution changes the meaning of the sentence from 'I have already said it several times' to 'I have already said no words', which is a significant change in meaning and makes the sentence incoherent.",
       "score": 1
     }
   ]

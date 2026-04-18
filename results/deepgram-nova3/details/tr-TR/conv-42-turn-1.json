@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
   "werNormalizedPredicted": "anlayışa bekçisi istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasında kesmek istesini istiyorum",
-  "significantWer": 0.11764705882352941,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anlayışa' at position 0",
-      "reason": "'anna' is a proper noun (likely a name), while 'anlayışa' means 'to understanding' in Turkish. This changes the subject and meaning of the sentence completely.",
+      "reason": "'anna' is a name or specific term, while 'anlayışa' means 'to understanding' in Turkish; this substitution completely changes the meaning and derails the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'ekstresi' at position 2",
-      "reason": "'ekstresi' means 'statement' (as in bank statement), and its omission removes a key part of the request, making the sentence unclear.",
+      "reason": "'ekstresi' (statement) is a key word in the context of requesting a bank statement; its omission makes the request unclear.",
       "score": 1
     },
     {
       "error": "Substitution: 'seneni' to 'senenin' at position 5",
-      "reason": "This is a minor grammatical correction in Turkish ('seneni' is a typo for 'senenin', meaning 'of the year'). The meaning is preserved.",
+      "reason": "This is a minor grammatical correction in Turkish ('seneni' is a typo for 'senenin', meaning 'of the year'); the meaning is preserved.",
       "score": 3
     },
     {
       "error": "Substitution: 'arasındaki' to 'arasında' at position 13",
-      "reason": "'arasındaki' means 'between', while 'arasında' means 'among' or 'in between'. In this context, the meaning is only slightly changed and the intent is still clear.",
+      "reason": "'arasındaki' means 'between', while 'arasında' means 'among' or 'in between'; in this context, the meaning is only slightly changed and the intent is still clear.",
       "score": 2
     }
   ]

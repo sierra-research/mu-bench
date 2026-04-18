@@ -5,27 +5,27 @@
   "wer": 0.3,
   "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "no si ayudeme deja que encuentre un lugar para anotar",
-  "werNormalizedPredicted": "no si ayudenme deja encuentro un lugar para anotar",
-  "significantWer": 0.2,
+  "werNormalizedGold": "no sí ayúdeme deja que encuentre un lugar para anotar",
+  "werNormalizedPredicted": "no sí ayúdenme deja encuentro un lugar para anotar",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "no si ayudeme deja que encuentre un lugar para anotar",
-  "sigWerNormalizedPredicted": "no si ayudenme deja encuentro un lugar para anotar",
+  "sigWerNormalizedGold": "no sí ayúdeme deja que encuentre un lugar para anotar",
+  "sigWerNormalizedPredicted": "no sí ayúdenme deja encuentro un lugar para anotar",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ayudeme' to 'ayudenme' at position 2",
-      "reason": "'Ayudeme' (help me) and 'ayudenme' (help me, plural) are very close in meaning; the only difference is singular vs plural, which does not significantly change the meaning in this context.",
-      "score": 3
+      "error": "Substitution: 'ayúdeme' to 'ayúdenme' at position 2",
+      "reason": "Change from singular to plural form of address (usted to ustedes), but the overall intent (asking for help) remains clear.",
+      "score": 2
     },
     {
       "error": "Substitution: 'que' to 'encuentro' at position 4",
-      "reason": "'Que' (that) is a conjunction, while 'encuentro' (I find) is a verb; this substitution changes the grammatical structure and meaning of the sentence, making it incoherent.",
+      "reason": "'que' is a conjunction introducing a subordinate clause, while 'encuentro' is a verb; this substitution disrupts the sentence structure and meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'encuentre' at position 5",
-      "reason": "Omitting 'encuentre' (I find/subjunctive) removes the verb needed for the intended meaning, further derailing the sentence's coherence.",
+      "reason": "Omitting 'encuentre' removes the verb that is necessary for the intended meaning ('let me find'), making the sentence incomplete and changing the meaning significantly.",
       "score": 1
     }
   ]

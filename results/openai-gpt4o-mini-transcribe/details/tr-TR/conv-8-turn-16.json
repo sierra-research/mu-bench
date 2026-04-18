@@ -1,37 +1,42 @@
 {
   "gold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
-  "predicted": "Adımın son harfi yanlış. Ben Zeynep T ile. Pırasanın P'si ile söyledim. Siz bana T'li söylediniz. Zeynep, e-mail de aynı şekilde Zeynep olacak.",
+  "predicted": "Adımın son harfi yanlış. Ben Zeynep T ile, pırasanın P'si ile söyledim. Siz bana T'li söylediniz. Zeynep. E-mail aynı şekilde Zeynep olacak.",
   "unintelligible": false,
-  "wer": 0.20833333333333334,
-  "werEdits": 5,
-  "werRefWords": 24,
-  "werNormalizedGold": "adimin son harfi yanlis ben zaynep p ile pirasanin ps i ile soyledim siz bana tli soylediniz zaynep email ile ayni sekilde zaynep olacak",
-  "werNormalizedPredicted": "adimin son harfi yanlis ben zeynep t ile pirasanin ps i ile soyledim siz bana tli soylediniz zeynep email de ayni sekilde zeynep olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 24,
-  "sigWerNormalizedGold": "adimin son harfi yanlis ben zaynep p ile pirasanin ps i ile soyledim siz bana tli soylediniz zaynep email ile ayni sekilde zaynep olacak",
-  "sigWerNormalizedPredicted": "adimin son harfi yanlis ben zeynep t ile pirasanin ps i ile soyledim siz bana tli soylediniz zeynep email de ayni sekilde zeynep olacak",
+  "wer": 0.43478260869565216,
+  "werEdits": 10,
+  "werRefWords": 23,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın p si ile söyledim siz bana t li söylediniz zeynep e mail aynı şekilde zeynep olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın p si ile söyledim siz bana t li söylediniz zeynep e mail aynı şekilde zeynep olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 5",
-      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "reason": "Minor misspelling of a proper noun, but the name is still clearly recognizable.",
       "score": 2
     },
     {
-      "error": "Substitution: 'zaynep' to 'zeynep' at position 17",
-      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "error": "Substitution: 'psi' to 'si' at position 9",
+      "reason": "The insertion of 'p' clarifies the spelling of the word, but does not change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'ile' to 'de' at position 19",
-      "reason": "The word 'ile' (with) was replaced by 'de' (also/at), which slightly changes the meaning but does not derail the overall sentence.",
+      "error": "Substitution: 'tli' to 'li' at position 14",
+      "reason": "'psi' refers to the letter 'p' in Turkish, while 'si' refers to the letter 's'. This changes the intended letter, which is significant in the context of spelling a name.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 16",
+      "reason": "The insertion of 't' is part of the clarification of the letter, and does not change the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'zaynep' to 'zeynep' at position 22",
-      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
-      "score": 2
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 21",
+      "reason": "Omitting the 't' changes the letter being referenced, which is significant in the context of spelling.",
+      "score": 1
     }
   ]
 }

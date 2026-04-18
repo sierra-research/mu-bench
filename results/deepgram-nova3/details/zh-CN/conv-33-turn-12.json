@@ -2,15 +2,21 @@
   "gold": "不是邻居，是林俊，俊，J U N。",
   "predicted": "不是邻居是邻居俊jun。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
-  "werNormalizedGold": "不是 邻居 是 林俊 俊 j u n",
-  "werNormalizedPredicted": "不是 邻居 是 林俊 俊 j u n",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "不是邻居 是林俊 俊 j u n",
+  "werNormalizedPredicted": "不是邻居是邻居俊 j u n",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 j u n",
-  "sigWerNormalizedPredicted": "不 是 邻 居 是 林 俊 俊 j u n",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 是 邻 居 是 邻 居 俊 j u n",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '邻' at position 5",
+      "reason": "'林' is a surname and a proper noun, while '邻' means 'neighbor'; substituting a name with a common noun changes the meaning significantly, especially in a context where a person's name is being identified.",
+      "score": 1
+    }
+  ]
 }

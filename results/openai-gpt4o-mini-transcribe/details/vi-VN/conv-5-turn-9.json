@@ -1,46 +1,36 @@
 {
   "gold": "Ừ. Không. Vậy để 1 2 ngày làm việc, mình có cái sao kê gần nhất, thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
-  "predicted": "Ở không vậy đợi một hai ngày đi làm việc mình có cái cập kê phần nhất thì phần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
+  "predicted": "ừ không, vậy đợi một hai ngày đi làm việc mình có cái thắc mắc phần nhất thì phần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
   "unintelligible": false,
-  "wer": 0.21428571428571427,
+  "wer": 0.2222222222222222,
   "werEdits": 6,
-  "werRefWords": 28,
-  "werNormalizedGold": "ừ không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
-  "werNormalizedPredicted": "ở không vậy đợi một hai ngày đi làm việc mình có cái cập kê phần nhất thì phần gì hỗ trợ mình sẽ gọi lên cho các bạn",
-  "significantWer": 0.17857142857142858,
-  "majorErrorsCount": 5,
-  "totalWordsCount": 28,
-  "sigWerNormalizedGold": "ừ không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
-  "sigWerNormalizedPredicted": "ở không vậy đợi một hai ngày đi làm việc mình có cái cập kê phần nhất thì phần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "werRefWords": 27,
+  "werNormalizedGold": "không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "werNormalizedPredicted": "không vậy đợi một hai ngày đi làm việc mình có cái thắc mắc phần nhất thì phần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "sigWerNormalizedPredicted": "không vậy đợi một hai ngày đi làm việc mình có cái thắc mắc phần nhất thì phần gì hỗ trợ mình sẽ gọi lên cho các bạn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ừ' to 'ở' at position 0",
-      "reason": "'ừ' is an affirmative particle (like 'yes'), while 'ở' means 'at' or 'in'; this changes the intent of the sentence.",
+      "error": "Substitution: 'để' to 'đợi' at position 2",
+      "reason": "'để' (to let/allow) and 'đợi' (to wait) have different meanings and change the intent of the sentence, which can confuse the listener about the action being discussed.",
       "score": 1
     },
     {
-      "error": "Substitution: 'để' to 'đợi' at position 3",
-      "reason": "'để' means 'to' or 'in order to', while 'đợi' means 'wait'; this changes the action described in the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'đi' at position 7",
-      "reason": "The insertion of 'đi' ('go') slightly changes the flow but does not significantly alter the meaning.",
+      "error": "Insertion: 'đi' at position 6",
+      "reason": "The insertion of 'đi' (go) slightly changes the flow but does not significantly alter the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'sao' to 'cập' at position 12",
-      "reason": "'sao kê' means 'statement' (as in bank statement), while 'cập kê' is not a meaningful phrase; this makes the sentence unclear.",
+      "error": "Substitution: 'sao' to 'thắc' at position 11",
+      "reason": "'sao kê' (bank statement) is replaced with 'thắc mắc' (question/doubt), which completely changes the meaning of what the speaker has or is referring to, leading to a significant misunderstanding.",
       "score": 1
     },
     {
-      "error": "Substitution: 'gần' to 'phần' at position 14",
-      "reason": "'gần nhất' means 'nearest' or 'most recent', while 'phần nhất' is not a standard phrase and changes the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'cần' to 'phần' at position 17",
-      "reason": "'cần gì hỗ trợ' means 'need any support', while 'phần gì hỗ trợ' is not meaningful and makes the sentence unclear.",
+      "error": "Substitution: 'cần' to 'phần' at position 16",
+      "reason": "'cần' (need) and 'phần' (part/section) are unrelated in this context, which changes the meaning of the sentence and can confuse the listener about what is being referred to.",
       "score": 1
     }
   ]

@@ -5,9 +5,9 @@
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "听 到 了 吗",
-  "werNormalizedPredicted": "听 得 到 吗",
-  "significantWer": 0.0,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "听得到吗",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '得' at position 1",
-      "reason": "'听得到吗' (Can you hear?) and '听到了吗' (Did you hear?) are similar in meaning, both asking about hearing, but one is about ability and the other about completion. The insertion of '得' changes the aspect from completed action to ability, but the overall intent of asking about hearing is preserved.",
+      "reason": "'听得到吗' (Can you hear) and '听到了吗' (Did you hear) are similar but differ in tense/aspect. The insertion of '得' changes the meaning from a completed action to an ability, which is a minor but not significant change in meaning.",
       "score": 2
     },
     {
       "error": "Deletion: '了' at position 2",
-      "reason": "Omitting '了' changes the aspect from completed action to ability, but the sentence still asks about hearing. The overall meaning is still clear, though the nuance is different.",
+      "reason": "Omitting '了' removes the aspect marker indicating completion, changing the sentence from 'Did you hear?' to 'Can you hear?'. This is a minor error as the overall context is about hearing, but the nuance of completion is lost.",
       "score": 2
     }
   ]

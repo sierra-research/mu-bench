@@ -2,15 +2,21 @@
   "gold": "我没有电子邮箱地址。",
   "predicted": "我没有电子邮件地址。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
-  "werNormalizedGold": "我没有电子邮件地址",
+  "werNormalizedGold": "我没有电子邮箱地址",
   "werNormalizedPredicted": "我没有电子邮件地址",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "我 没 有 电 子 邮 件 地 址",
+  "sigWerNormalizedGold": "我 没 有 电 子 邮 箱 地 址",
   "sigWerNormalizedPredicted": "我 没 有 电 子 邮 件 地 址",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '箱' to '件' at position 6",
+      "reason": "'邮箱' (email inbox/address) and '邮件' (email/message) are related but not the same; substituting '箱' with '件' changes the meaning from 'email address' to 'email message', which could confuse the listener about what is being referred to.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "我想提高我的信用卡的额度。",
   "predicted": "我想提高我的信用靠的恶毒",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 3,
   "werRefWords": 12,
   "werNormalizedGold": "我想提高我的信用卡的额度",
-  "werNormalizedPredicted": "我想提高我的信用卡的额度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想提高我的信用靠的恶毒",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 的 额 度",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 的 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 靠 的 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '卡' to '靠' at position 8",
+      "reason": "'卡' means 'card' (as in credit card), while '靠' means 'rely' or 'lean on', which changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '恶' at position 10",
+      "reason": "'额' means 'limit' (as in credit limit), while '恶' means 'evil' or 'bad', which makes the sentence nonsensical and changes the intended meaning significantly.",
+      "score": 1
+    }
+  ]
 }

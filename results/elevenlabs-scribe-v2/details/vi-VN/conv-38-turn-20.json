@@ -2,20 +2,25 @@
   "gold": "À, không. Cảm ơn.",
   "predicted": "À, công tắc á",
   "unintelligible": false,
-  "wer": 0.75,
+  "wer": 1.0,
   "werEdits": 3,
-  "werRefWords": 4,
-  "werNormalizedGold": "a khong cam on",
-  "werNormalizedPredicted": "a cong tac a",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "a khong cam on",
-  "sigWerNormalizedPredicted": "a cong tac a",
+  "werRefWords": 3,
+  "werNormalizedGold": "không cảm ơn",
+  "werNormalizedPredicted": "công tắc",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "không cảm ơn",
+  "sigWerNormalizedPredicted": "công tắc",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'khong' to 'cong' at position 1",
-      "reason": "'khong' means 'no' or 'not', while 'cong' means 'work' or 'public'. This substitution changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'không' to 'công' at position 0",
+      "reason": "'không cảm ơn' means 'no thank you', while 'công tắc' means 'switch' in Vietnamese. The substitution changes the meaning completely and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ơn' at position 2",
+      "reason": "The word 'ơn' is part of the phrase 'cảm ơn' (thank you). Its deletion, along with the other errors, results in a sentence with a completely different meaning.",
       "score": 1
     }
   ]

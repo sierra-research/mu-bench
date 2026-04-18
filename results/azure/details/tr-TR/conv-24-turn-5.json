@@ -5,27 +5,27 @@
   "wer": 0.3333333333333333,
   "werEdits": 7,
   "werRefWords": 21,
-  "werNormalizedGold": "adresim ataturk caddesi no forty five taksim six kazim karabekir mahallesi uskudar istanbul posta kodumuz thirty four six hundred sixty turkiye",
-  "werNormalizedPredicted": "adresim ataturk caddesi no forty five six kazim karabekir thirty four six hundred sixty four",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedGold": "adresim atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar istanbul posta kodumuz otuz dört altı yüz altmış türkiye",
+  "werNormalizedPredicted": "adresim atatürk caddesi no kırk beş altı kazım karabekir otuz dört altı yüz altmış dört",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "adresim ataturk caddesi no forty five taksim six kazim karabekir mahallesi uskudar istanbul posta kodumuz thirty four six hundred sixty turkiye",
-  "sigWerNormalizedPredicted": "adresim ataturk caddesi no forty five six kazim karabekir thirty four six hundred sixty four",
+  "sigWerNormalizedGold": "adresim atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar istanbul posta kodumuz otuz dört altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "adresim atatürk caddesi no kırk beş altı kazım karabekir otuz dört altı yüz altmış dört",
   "sigWerErrors": [
     {
       "error": "Deletion: 'taksim' at position 6",
-      "reason": "'Taksim' is a key location in the address. Its omission removes important information needed for identifying the address.",
+      "reason": "'Taksim' is a specific location that helps identify the address. Its omission removes important address information, which could lead to confusion or incorrect delivery.",
       "score": 1
     },
     {
       "error": "Deletion: 'mahallesi' at position 10",
-      "reason": "'Mahallesi' (meaning 'neighborhood') is a critical part of Turkish addresses. Its omission makes the address incomplete and less understandable.",
+      "reason": "'Mahallesi' (meaning 'neighborhood') is a key part of Turkish addresses. Its omission makes the address incomplete and less likely to be understood or used correctly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'turkiye' to 'four' at position 20",
-      "reason": "Replacing 'turkiye' (the country name) with 'four' completely changes the meaning and makes the address incoherent.",
+      "error": "Substitution: 'türkiye' to 'dört' at position 20",
+      "reason": "Replacing 'türkiye' (the country) with 'dört' (the number four) completely changes the meaning and makes the address incoherent, as the country is essential for understanding the location.",
       "score": 1
     }
   ]

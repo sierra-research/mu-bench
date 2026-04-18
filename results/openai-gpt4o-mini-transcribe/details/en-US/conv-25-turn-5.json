@@ -1,21 +1,26 @@
 {
   "gold": "Oh, hold on. Don't mind that dogs snoring in the background. That thing, my dog is loud. Sorry about that. Go ahead.",
-  "predicted": "hold on, don't mind that dog snoring in the background. That thing, my dog is loud. Sorry about that. Go ahead.",
+  "predicted": "Hold on, don't mind that dog snoring in the background. That thing, my dog is loud. Sorry about that. Go ahead.",
   "unintelligible": false,
-  "wer": 0.043478260869565216,
-  "werEdits": 1,
+  "wer": 0.08695652173913043,
+  "werEdits": 2,
   "werRefWords": 23,
-  "werNormalizedGold": "oh hold on do not mind that dog snoring in the background that thing my dog is loud sorry about that go ahead",
+  "werNormalizedGold": "oh hold on do not mind that dogs snoring in the background that thing my dog is loud sorry about that go ahead",
   "werNormalizedPredicted": "hold on do not mind that dog snoring in the background that thing my dog is loud sorry about that go ahead",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "oh hold on do not mind that dog snoring in the background that thing my dog is loud sorry about that go ahead",
+  "sigWerNormalizedGold": "oh hold on do not mind that dogs snoring in the background that thing my dog is loud sorry about that go ahead",
   "sigWerNormalizedPredicted": "hold on do not mind that dog snoring in the background that thing my dog is loud sorry about that go ahead",
   "sigWerErrors": [
     {
       "error": "Deletion: 'oh' at position 0",
-      "reason": "'Oh' is an interjection that does not affect the overall meaning of the sentence; its omission does not change the intent or information conveyed.",
+      "reason": "'Oh' is an interjection that does not affect the meaning of the sentence; its omission does not change the intent or information conveyed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dogs' to 'dog' at position 7",
+      "reason": "Changing 'dogs' to 'dog' slightly alters the number, but in context, it refers to the same animal snoring in the background and does not change the overall meaning.",
       "score": 2
     }
   ]

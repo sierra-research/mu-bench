@@ -1,22 +1,27 @@
 {
   "gold": "Pues no. Te lo agradezco mucho. Que tengas muy buen día Ana.",
-  "predicted": "Muy buenos, pero la verdad es como mucho que tengas muy buen día, Ana.",
+  "predicted": "Pues no, pero la verdad es como cho que tengas muy buen día, Ana.",
   "unintelligible": false,
   "wer": 0.5833333333333334,
   "werEdits": 7,
   "werRefWords": 12,
-  "werNormalizedGold": "pues no te lo agradezco mucho que tengas muy buen dia ana",
-  "werNormalizedPredicted": "muy buenos pero la verdad es como mucho que tengas muy buen dia ana",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "pues no te lo agradezco mucho que tengas muy buen día ana",
+  "werNormalizedPredicted": "pues no pero la verdad es como cho que tengas muy buen dia ana",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "pues no te lo agradezco mucho que tengas muy buen dia ana",
-  "sigWerNormalizedPredicted": "muy buenos pero la verdad es como mucho que tengas muy buen dia ana",
+  "sigWerNormalizedGold": "pues no te lo agradezco mucho que tengas muy buen día ana",
+  "sigWerNormalizedPredicted": "pues no pero la verdad es como cho que tengas muy buen dia ana",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'pues' to 'pero' at position 0",
-      "reason": "The substitution of 'pues' (well) with 'muy' (very) changes the introductory context of the sentence, but does not derail the overall meaning, as the main message is still present.",
-      "score": 2
+      "error": "Substitution: 'te' to 'verdad' at position 2",
+      "reason": "The insertion of 'pero' ('but') changes the meaning of the sentence by introducing a contrast or contradiction that was not present in the original, which can derail the intended message.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'día' to 'dia' at position 10",
+      "reason": "The only difference is the missing accent on 'día', which does not change the meaning or pronunciation in this context.",
+      "score": 3
     }
   ]
 }

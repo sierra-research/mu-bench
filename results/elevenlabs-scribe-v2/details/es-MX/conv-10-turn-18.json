@@ -2,15 +2,26 @@
   "gold": "No, no es Gmail. Está mal. El correo está mal.",
   "predicted": "No, no es Gmail. Está mal. El correo está mal",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "no no es gmail esta mal el correo esta mal",
+  "werNormalizedGold": "no no es gmail está mal el correo está mal",
   "werNormalizedPredicted": "no no es gmail esta mal el correo esta mal",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "no no es gmail esta mal el correo esta mal",
+  "sigWerNormalizedGold": "no no es gmail está mal el correo está mal",
   "sigWerNormalizedPredicted": "no no es gmail esta mal el correo esta mal",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'está' to 'esta' at position 4",
+      "reason": "The only difference is the missing accent on 'á', which does not change the meaning in this context. Both are understood as 'is' in Spanish, and the sentence remains clear.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'está' to 'esta' at position 8",
+      "reason": "Again, the only difference is the missing accent on 'á'. The meaning is preserved and the sentence is still correct in context.",
+      "score": 3
+    }
+  ]
 }

@@ -1,16 +1,32 @@
 {
   "gold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
-  "predicted": "Đệ chỉ email là thu trần thu chấm trầngmail chấm com.",
+  "predicted": "Đệ chỉ email là thu trần thu chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
   "werRefWords": 12,
   "werNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "đệ chỉ email là thu trần thu chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "đệ chỉ email là thu trần thu chấm trầngmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'địa' to 'đệ' at position 0",
+      "reason": "'địa chỉ' means 'address', while 'đệ chỉ' is not a valid phrase and changes the meaning, making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 5",
+      "reason": "Missing 'chấm' (dot) in the email address changes the structure of the email, which can make it invalid or confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'a' to 'thu' at position 7",
+      "reason": "Replacing 'a' (from 'a còng', meaning '@') with 'thu' changes the email address and makes it incorrect.",
+      "score": 1
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 20,
   "werNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
   "werNormalizedPredicted": "oh man try to transfer me one more time let me see if a live agent can help me",
-  "significantWer": 0.05,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'no' to 'oh' at position 0",
-      "reason": "'No' expresses refusal or negation, while 'oh' is an exclamation; this changes the intent of the sentence.",
+      "reason": "'No' expresses negation or refusal, while 'oh' is an exclamation; this changes the tone and intent of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'aw' at position 1",
-      "reason": "'Aw' is an interjection expressing emotion, and its omission slightly reduces the emotional tone but does not change the meaning.",
+      "reason": "'Aw' is an interjection expressing emotion, its omission slightly changes the emotional tone but not the meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'the' to 'a' at position 14",
-      "reason": "Changing 'the live agent' to 'a live agent' is a minor grammatical difference and does not affect the overall meaning.",
-      "score": 3
+      "reason": "Changing 'the live agent' to 'a live agent' is a minor difference in specificity, but does not change the overall meaning.",
+      "score": 2
     },
     {
       "error": "Substitution: 'could' to 'can' at position 17",
-      "reason": "'Could' and 'can' are both modal verbs here and are interchangeable in this context.",
+      "reason": "'Could' and 'can' are both modal verbs here, with only a slight difference in formality or possibility; meaning is preserved.",
       "score": 3
     }
   ]

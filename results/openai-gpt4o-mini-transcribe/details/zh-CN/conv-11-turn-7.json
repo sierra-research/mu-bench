@@ -1,16 +1,27 @@
 {
   "gold": "C N 0 3 8。",
-  "predicted": "Si en linksenba.",
+  "predicted": "Sien linxemba?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 5,
   "werRefWords": 5,
-  "werNormalizedGold": "c n zero three eight",
-  "werNormalizedPredicted": "c n zero three eight",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 零 三 八",
+  "werNormalizedPredicted": "sien linxemba",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n zero three eight",
-  "sigWerNormalizedPredicted": "c n zero three eight",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 零 三 八",
+  "sigWerNormalizedPredicted": "sien linxemba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'sien' at position 0",
+      "reason": "'sien' is not a valid substitution for the letter 'c', especially in a context where individual letters and numbers are being transcribed. This changes the intended meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '零' at position 2",
+      "reason": "The character '零' (zero) is missing from the actual transcription, which is a significant omission in a sequence of numbers/letters.",
+      "score": 1
+    }
+  ]
 }

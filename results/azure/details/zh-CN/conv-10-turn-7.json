@@ -7,7 +7,7 @@
   "werRefWords": 3,
   "werNormalizedGold": "怎么了",
   "werNormalizedPredicted": "zomolo",
-  "significantWer": 0.6666666666666666,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "怎 么 了",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '怎' to 'zomolo' at position 0",
-      "reason": "The expected is a Chinese character, but the actual is a romanized string that does not correspond to the correct pinyin or meaning. This is a significant error as the language and meaning are completely different.",
+      "reason": "The expected transcription is in Chinese characters, while the actual transcription is in Roman letters and does not represent the same word or meaning. This is a significant error as the language and content are completely different.",
       "score": 1
     },
     {
       "error": "Deletion: '么' at position 1",
-      "reason": "A key character is missing from the transcription, which changes the meaning and makes the sentence incomplete in Chinese.",
+      "reason": "A key character from the expected Chinese phrase is missing in the actual transcription, which further derails the meaning. This is a significant error.",
       "score": 1
     }
   ]

@@ -1,21 +1,36 @@
 {
   "gold": "Tabii, hemen ileteyim bir saniye. Telefon numaram artı 90 123 0 90 45 67.",
-  "predicted": "Tabii, hemen ileteyim bir saniye. Telefon numaram 90 123 090 4567.",
+  "predicted": "Tabii, hemen iletayım bir saniye. Telefon numaram 90-123-090-4567.",
   "unintelligible": false,
-  "wer": 0.05263157894736842,
-  "werEdits": 1,
-  "werRefWords": 19,
-  "werNormalizedGold": "tabii hemen ileteyim bir saniye telefon numaram artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "tabii hemen ileteyim bir saniye telefon numaram doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.05263157894736842,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "tabii hemen ileteyim bir saniye telefon numaram artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "tabii hemen ileteyim bir saniye telefon numaram doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "wer": 0.2777777777777778,
+  "werEdits": 5,
+  "werRefWords": 18,
+  "werNormalizedGold": "tabii hemen ileteyim bir saniye telefon numaram artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii hemen iletayım bir saniye telefon numaram doksan bir iki üç sıfır doksan sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "tabii hemen ileteyim bir saniye telefon numaram artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii hemen iletayım bir saniye telefon numaram doksan bir iki üç sıfır doksan sıfır dört beş altı yedi",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'ileteyim' to 'iletayım' at position 2",
+      "reason": "'ileteyim' and 'iletayım' are minor spelling/pronunciation variants in Turkish, and the meaning is preserved in context.",
+      "score": 3
+    },
+    {
       "error": "Deletion: 'artı' at position 7",
-      "reason": "'artı' (meaning 'plus') is part of the international dialing code ('artı doksan bir' = '+91'). Omitting 'artı' changes the phone number format and could cause confusion or incorrect dialing.",
+      "reason": "'artı' (plus) is the country code prefix in a phone number. Omitting it may cause confusion or incorrect dialing, but the rest of the number is present.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kırk' to 'dört' at position 14",
+      "reason": "An extra 'sıfır' (zero) is inserted in the phone number, which changes the actual number and would result in dialing a different number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'altmış' to 'altı' at position 16",
+      "reason": "'kırk' (forty) is replaced with 'dört' (four), which significantly alters the phone number and would result in a different number being dialed.",
       "score": 1
     }
   ]

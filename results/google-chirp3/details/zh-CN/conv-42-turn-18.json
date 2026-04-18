@@ -2,15 +2,26 @@
   "gold": "郡凛 at email dot com。",
   "predicted": "dreaming@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "郡凛 at email dot com",
-  "werNormalizedPredicted": "郡凛 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreaming at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "郡 凛 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreaming at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'dreaming' at position 0",
+      "reason": "The expected word is a Chinese character, likely a name or important identifier, but it was replaced with an unrelated English word, completely changing the meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "A key part of the expected identifier (likely a name) is missing, which significantly alters the intended meaning and could cause confusion or misidentification.",
+      "score": 1
+    }
+  ]
 }

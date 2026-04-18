@@ -1,16 +1,27 @@
 {
   "gold": "Họ tên đầy đủ là Trần Minh.",
-  "predicted": "À họ tên đủ là Trần Minh",
+  "predicted": "À họ sẽ đố là Trần Minh",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "ho ten day du la tran minh",
-  "werNormalizedPredicted": "ho ten day du la tran minh",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "họ tên đầy đủ là trần minh",
+  "werNormalizedPredicted": "họ sẽ đố là trần minh",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "ho ten day du la tran minh",
-  "sigWerNormalizedPredicted": "ho ten day du la tran minh",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "họ tên đầy đủ là trần minh",
+  "sigWerNormalizedPredicted": "họ sẽ đố là trần minh",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tên' to 'sẽ' at position 1",
+      "reason": "'tên' means 'name', while 'sẽ' means 'will'; this substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đủ' at position 3",
+      "reason": "'đủ' means 'full' or 'complete', and its omission changes the meaning from 'full name' to just 'name', which is a minor change but does not derail the overall meaning.",
+      "score": 2
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "我正在等待信卡，想知道它状态。",
   "predicted": "我正在等待新卡，想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 14,
-  "werNormalizedGold": "我正在等待新卡 想知道它的状态",
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
+  "werRefWords": 13,
+  "werNormalizedGold": "我正在等待信卡 想知道它状态",
   "werNormalizedPredicted": "我正在等待新卡 想知道它的状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "我 正 在 等 待 新 卡 想 知 道 它 的 状 态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 正 在 等 待 信 卡 想 知 道 它 状 态",
   "sigWerNormalizedPredicted": "我 正 在 等 待 新 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '信' to '新' at position 5",
+      "reason": "'信卡' (credit card) is replaced with '新卡' (new card), which changes the meaning of the sentence significantly. The user is asking about a credit card, but the transcription refers to a new card, which could be any card. This derails the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '的' at position 11",
+      "reason": "The insertion of '的' (possessive particle) before '状态' (status) is a minor grammatical difference and does not change the overall meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

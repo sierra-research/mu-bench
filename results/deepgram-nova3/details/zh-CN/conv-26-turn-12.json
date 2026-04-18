@@ -2,20 +2,25 @@
   "gold": "美玲 at email dot com。",
   "predicted": "梅林。",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werEdits": 4,
+  "wer": 1.0,
+  "werEdits": 6,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "梅林",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲",
+  "sigWerNormalizedPredicted": "梅 林",
   "sigWerErrors": [
     {
+      "error": "Substitution: '美' to '梅' at position 0",
+      "reason": "These are different Chinese characters with different meanings and are likely different names. This is a significant error, especially for names.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'at' at position 2",
-      "reason": "Omitting 'at email dot com' removes the entire email address, which is critical information and changes the meaning of the sentence significantly.",
+      "reason": "The connector 'at' is missing, which is essential for an email address format. This makes the email address incomplete and unusable.",
       "score": 1
     }
   ]

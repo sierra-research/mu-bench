@@ -2,15 +2,26 @@
   "gold": "没有没有没有，美玲 at email dot com。",
   "predicted": "没有没有没有，meiling@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
   "werRefWords": 12,
   "werNormalizedGold": "没有没有没有 美玲 at email dot com",
-  "werNormalizedPredicted": "没有没有没有 美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "没有没有没有 meiling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "没 有 没 有 没 有 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "没 有 没 有 没 有 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 有 没 有 没 有 meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 6",
+      "reason": "The Chinese character '美' (mei) is replaced by the full pinyin 'meiling', which is a significant change because it replaces a single character with a full name in pinyin, potentially confusing the intended meaning or identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 7",
+      "reason": "The character '玲' (ling) is omitted, so the full name '美玲' (Meiling) is not properly represented, which is a significant error as it changes the person's name.",
+      "score": 1
+    }
+  ]
 }

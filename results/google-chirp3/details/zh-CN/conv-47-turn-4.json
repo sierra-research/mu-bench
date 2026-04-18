@@ -5,22 +5,22 @@
   "wer": 1.0,
   "werEdits": 5,
   "werRefWords": 5,
-  "werNormalizedGold": "c n four one nine",
+  "werNormalizedGold": "c n 四 一 九",
   "werNormalizedPredicted": "先诉药酒",
-  "significantWer": 0.4,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n four one nine",
+  "sigWerNormalizedGold": "c n 四 一 九",
   "sigWerNormalizedPredicted": "先 诉 药 酒",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to '先' at position 0",
-      "reason": "The actual transcription is in a completely different language (Chinese) instead of the expected English letter, making the transcription incoherent and unusable for the intended purpose.",
+      "reason": "The expected sequence is a mix of Latin letters and Chinese numerals, but the actual transcription is entirely different Chinese words, making the meaning completely different and unrecognizable.",
       "score": 1
     },
     {
-      "error": "Deletion: 'nine' at position 4",
-      "reason": "The expected word 'nine' is missing in the actual transcription, which further derails the intended meaning of the sequence.",
+      "error": "Deletion: '九' at position 4",
+      "reason": "The expected numeral '九' (nine) is missing from the actual transcription, which is a significant omission in a sequence of numbers/letters.",
       "score": 1
     }
   ]

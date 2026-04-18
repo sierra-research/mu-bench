@@ -2,15 +2,26 @@
   "gold": "À, đúng vậy.",
   "predicted": "À rùm bye",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 3,
-  "werNormalizedGold": "a dung vay",
-  "werNormalizedPredicted": "a dung vay",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "a dung vay",
-  "sigWerNormalizedPredicted": "a dung vay",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "đúng vậy",
+  "werNormalizedPredicted": "bye",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "đúng vậy",
+  "sigWerNormalizedPredicted": "bye",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đúng' to 'bye' at position 0",
+      "reason": "'đúng' means 'correct' or 'right' in Vietnamese, while 'bye' is an English farewell; this is a complete change of meaning and language.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'vậy' at position 1",
+      "reason": "'vậy' is omitted, further making the actual transcription incoherent and unrelated to the expected meaning.",
+      "score": 1
+    }
+  ]
 }

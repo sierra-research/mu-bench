@@ -1,31 +1,26 @@
 {
   "gold": "你有什么问题？",
-  "predicted": "为什么会这样?",
+  "predicted": "为什么问题",
   "unintelligible": false,
-  "wer": 0.8333333333333334,
-  "werEdits": 5,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "你 有 什么 问题",
-  "werNormalizedPredicted": "为 什么 会 这样",
-  "significantWer": 0.5,
-  "majorErrorsCount": 3,
+  "werNormalizedGold": "你有什么问题",
+  "werNormalizedPredicted": "为什么问题",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 有 什 么 问 题",
-  "sigWerNormalizedPredicted": "为 什 么 会 这 样",
+  "sigWerNormalizedPredicted": "为 什 么 问 题",
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '为' at position 0",
-      "reason": "The substitution changes the subject from 'you' to 'why', which completely alters the meaning of the sentence.",
+      "reason": "'你' means 'you', while '为' means 'for' or 'why' in this context. This changes the subject and the meaning of the question, resulting in a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '有' at position 1",
-      "reason": "Omitting '有' ('have') removes a key part of the original question structure, making the sentence incoherent compared to the expected meaning.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '问' to '这' at position 4",
-      "reason": "The insertion of '会' ('will' or 'can') introduces a new concept not present in the original sentence, further changing the meaning.",
+      "reason": "'有' means 'have', and its omission changes the structure and meaning of the sentence, making it a different question.",
       "score": 1
     }
   ]

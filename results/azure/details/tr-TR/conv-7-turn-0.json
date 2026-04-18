@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "merhaba kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz",
   "werNormalizedPredicted": "merhaba kredi kartımın limitini artırmak istedim da yardımcı olabilir misiniz",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "merhaba kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'limitimi' to 'limitini' at position 3",
-      "reason": "'Limitimi' (my limit) vs 'limitini' (its limit) changes the possessive meaning, which could affect the intent of the request, but the overall meaning is still understandable in context.",
+      "reason": "'Limitimi' (my limit) vs 'limitini' (its limit) changes the possessive meaning, but in context the intent is still clear and the request is understandable.",
       "score": 2
     },
     {
       "error": "Substitution: 'istiyorum' to 'istedim' at position 5",
-      "reason": "Present tense ('istiyorum' - I want) vs past tense ('istedim' - I wanted) is a minor grammatical difference that does not change the overall intent of the sentence.",
+      "reason": "Present tense ('I want') vs past tense ('I wanted'), but the overall intent of the request remains clear in context.",
       "score": 3
     }
   ]

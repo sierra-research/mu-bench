@@ -1,16 +1,32 @@
 {
   "gold": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Cộng cộng tám mươi tư chín bộ một hai ba bốn năm sáu bảy tám.",
+  "predicted": "Cộng tổng tám mươi tư chín bộ một hai ba bốn năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
   "werRefWords": 14,
-  "werNormalizedGold": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng tổng tám mươi tư chín bộ một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng tổng tám mươi tư chín bộ một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'tổng' at position 1",
+      "reason": "'tổng' (meaning 'total') is inserted after 'cộng' (meaning 'add'), which is redundant but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 3",
+      "reason": "'bốn' and 'tư' are both used for the number 4 in Vietnamese, so this is a variant with the same meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'một' to 'bộ' at position 5",
+      "reason": "'một' means 'one', while 'bộ' is a completely different word and changes the meaning of the number sequence, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

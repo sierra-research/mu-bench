@@ -1,32 +1,32 @@
 {
   "gold": "Zaynep. Altıncı harf P olacak. Pırasanın P'si, T değil.",
-  "predicted": "Zaynet, altıncı harf T olacak, Fransa'nın P'si T değil.",
+  "predicted": "Zaynet, altıncı harf T olacak, Plas'ın P'si T değil.",
   "unintelligible": false,
-  "wer": 0.3,
+  "wer": 0.3333333333333333,
   "werEdits": 3,
-  "werRefWords": 10,
-  "werNormalizedGold": "zaynep altinci harf p olacak pirasanin ps i t degil",
-  "werNormalizedPredicted": "zaynet altinci harf t olacak fransanin ps i t degil",
-  "significantWer": 0.2,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "zaynep altinci harf p olacak pirasanin ps i t degil",
-  "sigWerNormalizedPredicted": "zaynet altinci harf t olacak fransanin ps i t degil",
+  "werRefWords": 9,
+  "werNormalizedGold": "zaynep altıncı harf p olacak pırasanın p'si t değil",
+  "werNormalizedPredicted": "zaynet altıncı harf t olacak plasın p'si t değil",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "zaynep altıncı harf p olacak pırasanın p'si t değil",
+  "sigWerNormalizedPredicted": "zaynet altıncı harf t olacak plasın p'si t değil",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'zaynet' at position 0",
-      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "reason": "'zaynep' is a proper noun (a name), and the substitution to 'zaynet' is a minor misspelling but still recognizable as the same name.",
       "score": 2
     },
     {
       "error": "Substitution: 'p' to 't' at position 3",
-      "reason": "The letter to be used is changed from 'p' to 't', which is a significant error as it changes the intended answer.",
+      "reason": "The letter 'p' is explicitly referenced as the correct letter, but it is substituted with 't', which changes the intended letter and meaning. This is a significant error.",
       "score": 1
     },
     {
-      "error": "Substitution: 'pirasanin' to 'fransanin' at position 5",
-      "reason": "'Pirasanin' and 'fransanin' are different words (likely 'of Pira' vs 'of France'), which changes the meaning of the sentence significantly.",
-      "score": 1
+      "error": "Substitution: 'pırasanın' to 'plasın' at position 5",
+      "reason": "'pırasanın' (of the leek) is substituted with 'plasın', which is not a correct word and loses the intended reference. This makes the sentence less clear but the context is somewhat preserved.",
+      "score": 2
     }
   ]
 }

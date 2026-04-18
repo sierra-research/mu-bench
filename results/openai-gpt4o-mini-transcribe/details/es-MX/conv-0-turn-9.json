@@ -1,27 +1,27 @@
 {
   "gold": "Sí es más 52 55 1 2 3 4 5 6 7 8.",
-  "predicted": "Sí, es más 525555123456780.",
+  "predicted": "Sí, es más 525515123456780.",
   "unintelligible": false,
-  "wer": 0.4117647058823529,
-  "werEdits": 7,
+  "wer": 0.17647058823529413,
+  "werEdits": 3,
   "werRefWords": 17,
-  "werNormalizedGold": "si es mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "si es mas cincuenta y dos cincuenta y cinco cincuenta y cinco cincuenta y cinco uno dos tres cuatro cinco seis siete ocho cero",
-  "significantWer": 0.11764705882352941,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "sí es más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "sí es más cincuenta y dos cincuenta y cinco uno cinco uno dos tres cuatro cinco seis siete ocho cero",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "si es mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "si es mas cincuenta y dos cincuenta y cinco cincuenta y cinco cincuenta y cinco uno dos tres cuatro cinco seis siete ocho cero",
+  "sigWerNormalizedGold": "sí es más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "sí es más cincuenta y dos cincuenta y cinco uno cinco uno dos tres cuatro cinco seis siete ocho cero",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'cincuenta' at position 9",
-      "reason": "The repeated insertion of 'cincuenta y cinco' adds extra numbers to what appears to be a sequence, which could change the intended meaning, especially if this is a phone number or code. This is a significant error.",
+      "error": "Insertion: 'cinco' at position 10",
+      "reason": "An extra 'cinco' (five) is inserted in the sequence of numbers, which disrupts the intended numeric sequence and could cause confusion if these numbers are meant to be a code or phone number.",
       "score": 1
     },
     {
       "error": "Insertion: 'cero' at position 17",
-      "reason": "The addition of 'cero' at the end introduces an extra digit to the sequence, which could alter the meaning or correctness of the information, such as a phone number or code. This is a significant error.",
-      "score": 1
+      "reason": "An extra 'cero' (zero) is added at the end of the numeric sequence, which could change the meaning if the numbers are important (e.g., a phone number or code), but as it is at the end, it is less disruptive than an insertion in the middle.",
+      "score": 2
     }
   ]
 }

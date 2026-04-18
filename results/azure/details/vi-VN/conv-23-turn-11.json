@@ -2,26 +2,26 @@
   "gold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
   "predicted": "Ờ tôi muốn hỏi đó là tôi được cấp một lần 2 thẻ không để làm scure.",
   "unintelligible": false,
-  "wer": 0.21428571428571427,
-  "werEdits": 3,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
-  "werNormalizedPredicted": "tôi muốn hỏi đó là tôi được cấp một lần hai thẻ không để làm sơ cua",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi muốn hỏi đó là tôi được cấp một lần hai thẻ không để làm scure",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
-  "sigWerNormalizedPredicted": "tôi muốn hỏi đó là tôi được cấp một lần hai thẻ không để làm sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi đó là tôi được cấp một lần hai thẻ không để làm scure",
   "sigWerErrors": [
     {
       "error": "Insertion: 'đó' at position 3",
-      "reason": "'đó' (that) is inserted but does not change the overall meaning of the sentence; it just adds a slight clarification or emphasis.",
+      "reason": "The insertion of 'đó' ('that') does not significantly change the meaning of the sentence; it adds a minor clarification but does not derail the intent.",
       "score": 2
     },
     {
-      "error": "Insertion: 'làm' at position 12",
-      "reason": "'làm' (to do/make) is inserted before 'sơ cua', but in this context, it does not significantly change the meaning of the sentence. The intent remains clear.",
-      "score": 2
+      "error": "Substitution: 'sơ' to 'làm' at position 12",
+      "reason": "Substituting 'sơ' (from 'sơ cua', meaning 'spare' or 'backup') with 'làm' ('to do') changes the meaning of the phrase, making the sentence incoherent and losing the intended meaning of 'for backup'.",
+      "score": 1
     }
   ]
 }

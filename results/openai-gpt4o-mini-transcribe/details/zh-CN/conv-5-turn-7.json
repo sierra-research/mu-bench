@@ -1,21 +1,26 @@
 {
   "gold": "君玲。",
-  "predicted": "隶英",
+  "predicted": "Дриннин",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
-  "werNormalizedPredicted": "隶英",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "дриннин",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
-  "sigWerNormalizedPredicted": "隶 英",
+  "sigWerNormalizedPredicted": "дриннин",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to '隶' at position 0",
-      "reason": "Completely different Chinese characters with unrelated meanings; this changes the identity or meaning significantly.",
+      "error": "Substitution: '君' to 'дриннин' at position 0",
+      "reason": "The expected word is a Chinese character, but the actual transcription is in Cyrillic script and does not correspond in meaning or sound. This is a significant error as it completely changes the content and language.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The second expected character is missing entirely from the actual transcription, which omits important information and further derails the meaning.",
       "score": 1
     }
   ]

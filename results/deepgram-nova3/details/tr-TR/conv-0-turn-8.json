@@ -5,22 +5,22 @@
   "wer": 0.15384615384615385,
   "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "alirken kendim mi almam gerekiyor yoksa yakin cevremden birisi alsa da olur mu",
-  "werNormalizedPredicted": "alirken kendin mi almam gerekiyor yoksa yakin cevremden birisi olsa da olur mu",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "alırken kendim mi almam gerekiyor yoksa yakın çevremden birisi alsa da olur mu",
+  "werNormalizedPredicted": "alırken kendin mi almam gerekiyor yoksa yakın çevremden birisi olsa da olur mu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "alirken kendim mi almam gerekiyor yoksa yakin cevremden birisi alsa da olur mu",
-  "sigWerNormalizedPredicted": "alirken kendin mi almam gerekiyor yoksa yakin cevremden birisi olsa da olur mu",
+  "sigWerNormalizedGold": "alırken kendim mi almam gerekiyor yoksa yakın çevremden birisi alsa da olur mu",
+  "sigWerNormalizedPredicted": "alırken kendin mi almam gerekiyor yoksa yakın çevremden birisi olsa da olur mu",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kendim' to 'kendin' at position 1",
-      "reason": "'Kendim' means 'myself' and 'kendin' means 'yourself'; this changes the subject of the sentence but the overall intent of the question remains clear.",
-      "score": 2
+      "reason": "'Kendim' means 'myself' and 'kendin' means 'yourself'; this changes the subject of the sentence, which can alter the meaning significantly.",
+      "score": 1
     },
     {
       "error": "Substitution: 'alsa' to 'olsa' at position 9",
-      "reason": "'Alsa' means 'if (someone) takes (it)' and 'olsa' means 'if (someone) is (it)'; this changes the meaning of the sentence and makes it less coherent, as the verb is replaced with a different verb, affecting the core meaning.",
+      "reason": "'Alsa' means 'if (someone) takes' and 'olsa' means 'if (someone) is'; this changes the verb and the meaning of the clause, making the sentence incoherent.",
       "score": 1
     }
   ]

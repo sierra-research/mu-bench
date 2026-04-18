@@ -6,21 +6,21 @@
   "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
-  "werNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmetinle arslan arasında nokta olacak",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmetle arslan arasında nokta olacak",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
-  "sigWerNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmetinle arslan arasında nokta olacak",
+  "sigWerNormalizedPredicted": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmetle arslan arasında nokta olacak",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ahmet' to 'ahmetinle' at position 8",
-      "reason": "'ahmetinle' is a grammatical fusion of 'ahmet' and 'ile' (meaning 'with Ahmet'), which changes the structure but not the overall meaning of the sentence. The intent (that there should be a dot between Ahmet and Arslan) is still clear.",
+      "error": "Substitution: 'ahmet' to 'ahmetle' at position 8",
+      "reason": "'ahmetle' is a concatenation of 'ahmet' and 'ile', which slightly changes the structure but not the meaning of the sentence. The intent remains clear.",
       "score": 2
     },
     {
       "error": "Deletion: 'ile' at position 9",
-      "reason": "'ile' (meaning 'with') is omitted because it was fused into 'ahmetinle'. The meaning is preserved, but the grammatical structure is altered.",
+      "reason": "'ile' (meaning 'with') is omitted because it was merged into 'ahmetle'. The meaning is preserved, as 'ahmetle' means 'with Ahmet'.",
       "score": 2
     }
   ]

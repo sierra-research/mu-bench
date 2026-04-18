@@ -1,31 +1,31 @@
 {
   "gold": "Vào được rồi. Vào được rồi.",
-  "predicted": "Rồi rồi rồi rồi rồi",
+  "predicted": "rồi rồi rồi",
   "unintelligible": false,
   "wer": 0.6666666666666666,
   "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "vào được rồi vào được rồi",
-  "werNormalizedPredicted": "rồi rồi rồi rồi rồi",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "rồi rồi rồi",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "vào được rồi vào được rồi",
-  "sigWerNormalizedPredicted": "rồi rồi rồi rồi rồi",
+  "sigWerNormalizedPredicted": "rồi rồi rồi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vào' to 'rồi' at position 0",
-      "reason": "'vào' means 'enter' or 'go in', while 'rồi' means 'already' or 'done'; substituting 'vào' with 'rồi' changes the meaning of the sentence significantly.",
+      "reason": "'vào' (enter) and 'rồi' (already/done) have different meanings; this changes the intent of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'vào' to 'rồi' at position 3",
-      "reason": "Again, 'vào' is replaced with 'rồi', which alters the intended meaning and makes the sentence incoherent.",
+      "error": "Deletion: 'được' at position 1",
+      "reason": "Omitting 'được' (can/be able to) removes the sense of possibility or ability, which is important to the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'được' at position 4",
-      "reason": "Omitting 'được' ('can' or 'able to') removes a key part of the phrase, making the sentence lose its original meaning.",
+      "error": "Deletion: 'vào' at position 3",
+      "reason": "Missing the second 'vào' (enter) further reduces the clarity and intent of the repeated phrase, significantly altering the meaning.",
       "score": 1
     }
   ]

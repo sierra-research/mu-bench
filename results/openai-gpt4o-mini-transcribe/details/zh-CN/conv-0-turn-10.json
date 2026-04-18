@@ -1,16 +1,22 @@
 {
   "gold": "不对呀。",
-  "predicted": "不對啊",
+  "predicted": "不都要",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
-  "werNormalizedGold": "不對呀",
-  "werNormalizedPredicted": "不對呀",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "不对呀",
+  "werNormalizedPredicted": "不都要",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "不 對 呀",
-  "sigWerNormalizedPredicted": "不 對 呀",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "不 对 呀",
+  "sigWerNormalizedPredicted": "不 都 要",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '对' to '都' at position 1",
+      "reason": "'对' means 'correct' or 'right', while '都' means 'all' or 'both'. This substitution changes the meaning of the sentence from a negation of correctness to a statement about all, which significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
 }

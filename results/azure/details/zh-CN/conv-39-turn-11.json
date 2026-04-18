@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
   "werNormalizedPredicted": "drilling",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '君' to 'drilling' at position 0",
-      "reason": "The expected word is a Chinese name character, but the actual transcription is an unrelated English word, resulting in a completely different meaning and loss of the original information.",
+      "reason": "The expected word is a Chinese name character, but the actual transcription is an unrelated English word. This is a significant error as it completely changes the meaning and language.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "A character from the expected name is missing in the actual transcription, which significantly alters or removes the intended name.",
+      "reason": "A character from the expected name is missing entirely in the actual transcription, which results in a loss of important information (the person's name).",
       "score": 1
     }
   ]

@@ -5,9 +5,9 @@
   "wer": 0.45454545454545453,
   "werEdits": 5,
   "werRefWords": 11,
-  "werNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
-  "werNormalizedPredicted": "我 想 提 高 的 信 有 科 恶 毒",
-  "significantWer": 0.18181818181818182,
+  "werNormalizedGold": "我想提高我的信用卡额度",
+  "werNormalizedPredicted": "我想提高的信有科恶毒",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Deletion: '我' at position 4",
-      "reason": "The omission of '我' (I) removes the subject of the clause, making the sentence less clear and potentially confusing the meaning.",
+      "reason": "The omission of '我' (I) removes the subject of the sentence, making the sentence incomplete and confusing. This significantly affects the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: '用' to '有' at position 7",
-      "reason": "'信用卡' (credit card) is a fixed phrase; substituting '用' (use) with '有' (have) breaks the phrase and makes the sentence incoherent, significantly altering the meaning.",
+      "reason": "'信用卡' (credit card) is mistranscribed as '信有科', which is not a valid phrase and changes the meaning entirely. This makes the sentence incoherent.",
       "score": 1
     }
   ]

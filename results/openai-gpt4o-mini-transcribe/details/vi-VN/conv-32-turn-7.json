@@ -1,27 +1,27 @@
 {
   "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8 ạ.",
-  "predicted": "cộng toàn vốn, chỉ một, một hai ba bốn, năm sáu bảy tám á.",
+  "predicted": "cốc tám bốn, chín một, một hai ba bốn, năm sáu bảy tám ạ.",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 4,
-  "werRefWords": 14,
-  "werNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám ạ",
-  "werNormalizedPredicted": "cộng toàn vốn chỉ một một hai ba bốn năm sáu bảy tám á",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám ạ",
-  "sigWerNormalizedPredicted": "cộng toàn vốn chỉ một một hai ba bốn năm sáu bảy tám á",
+  "wer": 0.13333333333333333,
+  "werEdits": 2,
+  "werRefWords": 15,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám ạ",
+  "werNormalizedPredicted": "cốc tám bốn chín một một hai ba bốn năm sáu bảy tám ạ",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám ạ",
+  "sigWerNormalizedPredicted": "cốc tám bốn chín một một hai ba bốn năm sáu bảy tám ạ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tám' to 'toàn' at position 1",
-      "reason": "'tám' is the number eight, while 'toàn' is a completely different word, changing the meaning of the sequence of numbers. This is a significant error.",
+      "error": "Substitution: 'cộng' to 'cốc' at position 0",
+      "reason": "'Cộng' (meaning 'plus' or 'add') is replaced by 'cốc' (meaning 'cup'), which is a completely different word and changes the meaning of the sentence, especially in the context of reading out numbers or codes.",
       "score": 1
     },
     {
-      "error": "Substitution: 'ạ' to 'á' at position 13",
-      "reason": "'ạ' and 'á' are different sentence-ending particles in Vietnamese. The change does not significantly alter the meaning of the sentence, as both are polite sentence endings, so this is a minor error.",
-      "score": 2
+      "error": "Deletion: 'mươi' at position 2",
+      "reason": "Omitting 'mươi' (which means 'tens' in Vietnamese numbers) changes 'tám mươi bốn' (eighty-four) to 'tám bốn' (eight four), which significantly alters the intended number and meaning.",
+      "score": 1
     }
   ]
 }

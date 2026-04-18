@@ -2,15 +2,21 @@
   "gold": "我的。",
   "predicted": "沃登。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "我的",
-  "werNormalizedPredicted": "我的",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "沃登",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "我 的",
-  "sigWerNormalizedPredicted": "我 的",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "沃 登",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to '沃' at position 0",
+      "reason": "'我' means 'I' or 'me' in Chinese, while '沃' is a completely different character with a different meaning ('fertile' or 'rich'). This substitution changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    }
+  ]
 }

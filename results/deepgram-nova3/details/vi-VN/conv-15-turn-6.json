@@ -2,21 +2,26 @@
   "gold": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp.",
   "predicted": "Vui lòng chuyện tôi đến nhấn viên hỗ trợ trực tiếp",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werEdits": 1,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp",
-  "werNormalizedPredicted": "vui lòng chuyện tôi đến nhân viên hỗ trợ trực tiếp",
-  "significantWer": 0.09090909090909091,
+  "werNormalizedPredicted": "vui lòng chuyện tôi đến nhấn viên hỗ trợ trực tiếp",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp",
-  "sigWerNormalizedPredicted": "vui lòng chuyện tôi đến nhân viên hỗ trợ trực tiếp",
+  "sigWerNormalizedPredicted": "vui lòng chuyện tôi đến nhấn viên hỗ trợ trực tiếp",
   "sigWerErrors": [
     {
       "error": "Substitution: 'chuyển' to 'chuyện' at position 2",
-      "reason": "'chuyển' means 'transfer' while 'chuyện' means 'story' in Vietnamese; this changes the meaning of the request and makes the sentence incoherent in context.",
+      "reason": "'Chuyển' means 'transfer' or 'connect', while 'chuyện' means 'story' or 'matter'. This changes the meaning of the request and makes the sentence confusing.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'nhân' to 'nhấn' at position 5",
+      "reason": "'Nhân viên' means 'staff' or 'employee', while 'nhấn viên' is not a valid phrase and could confuse the meaning, but the intent is still somewhat understandable in context.",
+      "score": 2
     }
   ]
 }

@@ -2,15 +2,21 @@
   "gold": "Đúng rồi bạn ạ. Chuẩn rồi Anna ơi.",
   "predicted": "Đúng rồi bạn ạ chuẩn rồi ăn Na ơi",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "đúng rồi bạn ạ chuẩn rồi anna ơi",
-  "werNormalizedPredicted": "đúng rồi bạn ạ chuẩn rồi anna ơi",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "đúng rồi bạn ạ chuẩn rồi ăn na ơi",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "đúng rồi bạn ạ chuẩn rồi anna ơi",
-  "sigWerNormalizedPredicted": "đúng rồi bạn ạ chuẩn rồi anna ơi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "đúng rồi bạn ạ chuẩn rồi ăn na ơi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'na' at position 6",
+      "reason": "'anna' is a proper noun (a name), but it was split into two words 'ăn' and 'na', which changes the name and could cause confusion about the intended person. However, the context still makes it somewhat understandable, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

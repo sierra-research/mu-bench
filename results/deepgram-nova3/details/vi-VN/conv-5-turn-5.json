@@ -5,22 +5,22 @@
   "wer": 0.2222222222222222,
   "werEdits": 2,
   "werRefWords": 9,
-  "werNormalizedGold": "ho ten day du cua minh la tran minh",
-  "werNormalizedPredicted": "o ten day du minh la tran minh",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "họ tên đầy đủ của mình là trần minh",
+  "werNormalizedPredicted": "tên đầy đủ mình là trần minh",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "ho ten day du cua minh la tran minh",
-  "sigWerNormalizedPredicted": "o ten day du minh la tran minh",
+  "sigWerNormalizedGold": "họ tên đầy đủ của mình là trần minh",
+  "sigWerNormalizedPredicted": "tên đầy đủ mình là trần minh",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ho' to 'o' at position 0",
-      "reason": "'ho' (family name) is replaced by 'o', which is not a word in this context and makes the sentence less clear, potentially confusing the meaning.",
-      "score": 1
+      "error": "Deletion: 'họ' at position 0",
+      "reason": "Omitting 'họ' (family name) slightly reduces the specificity of the phrase but does not change the overall meaning, as 'tên đầy đủ' (full name) still conveys the intent.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'cua' at position 4",
-      "reason": "Omitting 'cua' ('of') changes the grammatical structure and clarity of the sentence, making it less precise about whose full name is being referred to.",
+      "error": "Deletion: 'của' at position 4",
+      "reason": "Omitting 'của' (of) is a minor grammatical error in Vietnamese, but the sentence remains understandable and the meaning is preserved.",
       "score": 2
     }
   ]

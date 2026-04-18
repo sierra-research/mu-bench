@@ -2,15 +2,26 @@
   "gold": "Email là minh chấm trần a còng email chấm com.",
   "predicted": "Email là minh. Tràgmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 5,
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minh tràgmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minh tràgmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'tràgmail' at position 3",
+      "reason": "'tràgmail' is a nonsensical word in this context and replaces 'chấm' (dot), which is crucial for an email address. This makes the email address incoherent and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 4",
+      "reason": "Omitting 'trần' (a part of the email username) significantly alters the email address, making it incorrect and unusable.",
+      "score": 1
+    }
+  ]
 }

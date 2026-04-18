@@ -2,20 +2,25 @@
   "gold": "Chào Anna. Tôi đang có yêu cầu tăng hạn mức thẻ tín dụng. Không biết mình hỗ trợ như thế nào nhỉ?",
   "predicted": "Chào an a, tôi đang có yêu cầu tăng hạn mức thẻ tín dụng không biết là mình hỗ trợ như thế nào nhỉ?",
   "unintelligible": false,
-  "wer": 0.045454545454545456,
-  "werEdits": 1,
+  "wer": 0.13636363636363635,
+  "werEdits": 3,
   "werRefWords": 22,
   "werNormalizedGold": "chào anna tôi đang có yêu cầu tăng hạn mức thẻ tín dụng không biết mình hỗ trợ như thế nào nhỉ",
-  "werNormalizedPredicted": "chào anna tôi đang có yêu cầu tăng hạn mức thẻ tín dụng không biết là mình hỗ trợ như thế nào nhỉ",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "chào an a tôi đang có yêu cầu tăng hạn mức thẻ tín dụng không biết là mình hỗ trợ như thế nào nhỉ",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "chào anna tôi đang có yêu cầu tăng hạn mức thẻ tín dụng không biết mình hỗ trợ như thế nào nhỉ",
-  "sigWerNormalizedPredicted": "chào anna tôi đang có yêu cầu tăng hạn mức thẻ tín dụng không biết là mình hỗ trợ như thế nào nhỉ",
+  "sigWerNormalizedPredicted": "chào an a tôi đang có yêu cầu tăng hạn mức thẻ tín dụng không biết là mình hỗ trợ như thế nào nhỉ",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'anna' to 'a' at position 1",
+      "reason": "'an a' is a mis-segmentation of the name 'anna', splitting it into two words. The intended meaning (the name 'anna') is still clear, so this is a minor error.",
+      "score": 2
+    },
+    {
       "error": "Insertion: 'là' at position 15",
-      "reason": "The insertion of 'là' (which means 'is' in Vietnamese) does not change the overall meaning of the sentence. It is a minor grammatical addition that does not affect the intent or clarity.",
+      "reason": "The name 'anna' is split into 'an a', which is a minor error as the intended name is still recognizable.",
       "score": 2
     }
   ]

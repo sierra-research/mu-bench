@@ -6,16 +6,16 @@
   "werEdits": 9,
   "werRefWords": 19,
   "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
-  "werNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonuç gmail değil e mail yani edirnenin nesiyle email com",
-  "significantWer": 0.10526315789473684,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonuç gmail değil e mail yani edirne'nin nesiyle email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
-  "sigWerNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonuç gmail değil e mail yani edirnenin nesiyle email com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonuç gmail değil e mail yani edirne'nin nesiyle email com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'adresim' to 'adresimi' at position 3",
-      "reason": "'adresim' (my address) vs 'adresimi' (my address as object); minor grammatical error, does not change the meaning.",
+      "reason": "'adresim' (my address) vs 'adresimi' (my address as object); the meaning is only slightly changed, context is still clear.",
       "score": 2
     },
     {
@@ -24,29 +24,19 @@
       "score": 1
     },
     {
-      "error": "Substitution: 'email' to 'mail' at position 9",
-      "reason": "Extra 'e' before 'mail'; does not change the meaning, as 'e-mail' and 'email' are equivalent.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'e' at position 11",
-      "reason": "'email' vs 'mail'; in context, 'email' is more specific, but 'mail' could be ambiguous. Minor error.",
+      "error": "Deletion: 'email' at position 9",
+      "reason": "Omitting 'email' in the context of explaining the email address structure can cause confusion but the overall meaning is still somewhat clear.",
       "score": 2
     },
     {
-      "error": "Substitution: 'e' to 'nesiyle' at position 13",
-      "reason": "Missing 'e' in the explanation of the email spelling; could cause confusion in spelling out the address.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'si' at position 14",
-      "reason": "'e' (the letter) vs 'nesiyle' (with its 'n'); this changes the explanation of the email spelling, making it confusing.",
+      "error": "Substitution: 'edirnenin' to 'mail' at position 12",
+      "reason": "'edirnenin' (of Edirne, a Turkish spelling reference) replaced with 'mail' changes the explanation of the spelling, which is important for clarity.",
       "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 17",
-      "reason": "Missing 'si' (its) in the phrase 'e si ile' (with its e); minor grammatical error, does not change overall meaning.",
-      "score": 2
+      "reason": "'nokta' means 'dot', which is important in an email address; omitting it can lead to misunderstanding the address.",
+      "score": 1
     }
   ]
 }

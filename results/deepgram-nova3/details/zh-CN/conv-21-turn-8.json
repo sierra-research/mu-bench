@@ -5,22 +5,22 @@
   "wer": 0.4,
   "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n five six five",
-  "werNormalizedPredicted": "an five six five",
-  "significantWer": 0.4,
+  "werNormalizedGold": "c n 五 六 五",
+  "werNormalizedPredicted": "an 五 六 五",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n five six five",
-  "sigWerNormalizedPredicted": "an five six five",
+  "sigWerNormalizedGold": "c n 五 六 五",
+  "sigWerNormalizedPredicted": "an 五 六 五",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'an' at position 0",
-      "reason": "'c' is a single letter, likely part of a code or identifier, and 'an' is a completely different word. This changes the meaning significantly, especially in contexts like codes or spelled-out sequences.",
+      "reason": "'c' is a single letter, but 'an' is a completely different sequence and not a letter. In a context where letters are being spelled out, this is a significant error as it changes the intended letter.",
       "score": 1
     },
     {
       "error": "Deletion: 'n' at position 1",
-      "reason": "Omitting 'n' from a sequence of letters or code changes the intended information, which is a significant error in such contexts.",
+      "reason": "Missing a letter in a spelled-out sequence is a significant error, as it changes the intended sequence or code.",
       "score": 1
     }
   ]

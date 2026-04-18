@@ -2,25 +2,30 @@
   "gold": "我的邮件地址是郡凛 at email dot com。",
   "predicted": "What is the address for Jun Ling at email.com?",
   "unintelligible": false,
-  "wer": 0.6923076923076923,
-  "werEdits": 9,
+  "wer": 0.7692307692307693,
+  "werEdits": 10,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮件地址是郡凛 at email dot com",
-  "werNormalizedPredicted": "what is the address for jun ling at email dot com",
-  "significantWer": 0.15384615384615385,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "what is the address for jun ling at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 件 地 址 是 郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "what is the address for jun ling at email dot com",
+  "sigWerNormalizedPredicted": "what is the address for jun ling at email com",
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to 'what' at position 0",
-      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a major language mismatch and derails the meaning of the sentence.",
+      "reason": "The expected transcription is in Chinese, but the actual transcription is in English. This is a major language mismatch and completely changes the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '郡' at position 7",
-      "reason": "The Chinese name '郡' is omitted and replaced with 'jun', which is a romanization but not an exact match. The language switch and loss of the original character is a significant error.",
+      "reason": "The Chinese name '郡' is omitted in the actual transcription, which is a significant error as it is part of a proper noun (the email address).",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 11",
+      "reason": "The word 'dot' is missing in the actual transcription, which is critical for the correct format of an email address.",
       "score": 1
     }
   ]

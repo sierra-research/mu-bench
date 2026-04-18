@@ -2,15 +2,26 @@
   "gold": "Không phải. Minh chấm trần at email chấm com.",
   "predicted": "Không phải. minh.tran@gmail-- @emailđăngký.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
   "werNormalizedGold": "không phải minh chấm trần at email chấm com",
-  "werNormalizedPredicted": "không phải minh chấm trần at email chấm com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "không phải minh chấm trần a còng email đăng ký chấm com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "không phải minh chấm trần at email chấm com",
-  "sigWerNormalizedPredicted": "không phải minh chấm trần at email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "không phải minh chấm trần a còng email đăng ký chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'còng' at position 5",
+      "reason": "'a còng' is the Vietnamese way to say '@', which is equivalent to 'at' in the expected transcript. The insertion of 'a' is part of the phrase and does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'đăng' at position 7",
+      "reason": "'còng' is the Vietnamese word for '@', which is equivalent to 'at' in the context of an email address. This is a language variant but the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

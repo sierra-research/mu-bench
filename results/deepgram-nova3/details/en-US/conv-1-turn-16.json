@@ -2,36 +2,41 @@
   "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
   "predicted": "You know, six, seven? I I think that should be fine. Let's try to transfer me you. Oh, my phone. And it doesn't work, fine. Fine.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 7,
+  "wer": 0.2857142857142857,
+  "werEdits": 8,
   "werRefWords": 28,
   "werNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
-  "werNormalizedPredicted": "you know six seven i think that should be fine let us try to transfer me you oh my phone and it does not work fine fine",
-  "significantWer": 0.10714285714285714,
+  "werNormalizedPredicted": "you know six seven i i think that should be fine let us try to transfer me you oh my phone and it does not work fine fine",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 28,
   "sigWerNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
-  "sigWerNormalizedPredicted": "you know six seven i think that should be fine let us try to transfer me you oh my phone and it does not work fine fine",
+  "sigWerNormalizedPredicted": "you know six seven i i think that should be fine let us try to transfer me you oh my phone and it does not work fine fine",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'i' at position 5",
+      "reason": "Repeating 'i' does not change the meaning of the sentence, just a minor disfluency.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'over' to 'oh' at position 16",
-      "reason": "The insertion of 'you' adds confusion to the sentence and disrupts the intended meaning of transferring 'me over', making the sentence less coherent.",
+      "reason": "Inserting 'you' in this context adds confusion and disrupts the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'if' at position 20",
-      "reason": "Substituting 'over' with 'oh' changes the meaning of the action being described, making the sentence unclear and incoherent.",
+      "reason": "'over' is replaced with 'oh', which changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'that' to 'fine' at position 25",
-      "reason": "The insertion of 'my phone' introduces unrelated content, derailing the meaning of the sentence and making it incoherent.",
-      "score": 1
+      "reason": "Omitting 'if' makes the conditional structure of the sentence unclear, but the overall meaning can still be inferred.",
+      "score": 2
     },
     {
       "error": "Deletion: 'is' at position 26",
-      "reason": "Omitting 'if' makes the conditional structure of the sentence unclear, but the overall meaning can still be inferred.",
-      "score": 2
+      "reason": "Replacing 'that' with 'fine' changes the meaning of the sentence and makes it less coherent.",
+      "score": 1
     }
   ]
 }

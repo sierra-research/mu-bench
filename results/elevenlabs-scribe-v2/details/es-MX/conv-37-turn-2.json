@@ -2,15 +2,26 @@
   "gold": "¿Por qué no tienes acceso si no sabes ni siquiera cuál es mi nombre?",
   "predicted": "¿Por qué nos-- no tienes acceso si no sabes ni siquiera cuál es mi nombre?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
   "werRefWords": 14,
-  "werNormalizedGold": "por que no tienes acceso si no sabes ni siquiera cual es mi nombre",
-  "werNormalizedPredicted": "por que no tienes acceso si no sabes ni siquiera cual es mi nombre",
-  "significantWer": 0.0,
+  "werNormalizedGold": "por qué no tienes acceso si no sabes ni siquiera cuál es mi nombre",
+  "werNormalizedPredicted": "por que nos no tienes acceso si no sabes ni siquiera cual es mi nombre",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "por que no tienes acceso si no sabes ni siquiera cual es mi nombre",
-  "sigWerNormalizedPredicted": "por que no tienes acceso si no sabes ni siquiera cual es mi nombre",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "por qué no tienes acceso si no sabes ni siquiera cuál es mi nombre",
+  "sigWerNormalizedPredicted": "por que nos no tienes acceso si no sabes ni siquiera cual es mi nombre",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'qué' to 'nos' at position 1",
+      "reason": "Missing accent on 'qué' does not change the meaning in this context, as both are understood as 'why'.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'cuál' to 'cual' at position 10",
+      "reason": "Missing accent on 'cuál' does not change the meaning in this context, as both are understood as 'which'.",
+      "score": 3
+    }
+  ]
 }

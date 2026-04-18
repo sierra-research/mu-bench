@@ -6,26 +6,26 @@
   "werEdits": 5,
   "werRefWords": 27,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "email là minh chấm com gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
-  "significantWer": 0.1111111111111111,
+  "werNormalizedPredicted": "email là minh chấm comgmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 27,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "email là minh chấm com gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
+  "sigWerNormalizedPredicted": "email là minh chấm comgmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tháng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'trần' to 'com' at position 4",
-      "reason": "'trần' is likely a part of the email username, while 'com' is a domain suffix. This changes the email address entirely, making it impossible to contact the correct person.",
+      "error": "Substitution: 'trần' to 'comgmail' at position 4",
+      "reason": "'trần' is a Vietnamese name, while 'comgmail' is a concatenation of 'com' and 'gmail', which is not a name and changes the meaning of the email address significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'còng' at position 6",
-      "reason": "'còng' (the Vietnamese word for '@') is essential in an email address. Its omission makes the email address invalid and unusable.",
+      "error": "Deletion: 'a' at position 5",
+      "reason": "Missing the 'a' (which stands for 'a còng' or '@') in the email address makes the email invalid and unrecognizable.",
       "score": 1
     },
     {
       "error": "Substitution: 'tám' to 'tháng' at position 26",
-      "reason": "'tám' means 'eight' (a digit in the phone number), while 'tháng' means 'month' and is not a number. This makes the phone number incorrect and unusable.",
+      "reason": "'tám' means 'eight' (a digit in the phone number), while 'tháng' means 'month', which is a completely different word and makes the phone number incorrect.",
       "score": 1
     }
   ]

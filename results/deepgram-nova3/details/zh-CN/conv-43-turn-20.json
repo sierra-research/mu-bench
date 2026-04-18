@@ -2,21 +2,26 @@
   "gold": "没有，没有，是君玲。",
   "predicted": "是润玲。",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werEdits": 4,
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
   "werRefWords": 7,
-  "werNormalizedGold": "没有 没有 是君玲",
-  "werNormalizedPredicted": "是君玲",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedGold": "没有没有是君玲",
+  "werNormalizedPredicted": "是润玲",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "没 有 没 有 是 君 玲",
-  "sigWerNormalizedPredicted": "是 君 玲",
+  "sigWerNormalizedPredicted": "是 润 玲",
   "sigWerErrors": [
     {
       "error": "Deletion: '没' at position 0",
-      "reason": "The repeated phrase '没有没有' (meaning 'no, no' or 'there isn't') is omitted, which removes a negation or denial from the sentence, significantly changing the meaning.",
+      "reason": "The phrase '没有没有' (no, no) is omitted, which removes a negation and changes the meaning of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Substitution: '君' to '润' at position 5",
+      "reason": "'君玲' is a name, but '润玲' is a different name; substituting one character in a proper noun (name) is a minor error as the name is still recognizable but incorrect.",
+      "score": 2
     }
   ]
 }

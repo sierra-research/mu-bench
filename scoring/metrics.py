@@ -436,6 +436,11 @@ def compute_significant_wer(
     row_idx_to_scored_errors: Dict[int, List[Dict[str, Any]]] = {}
 
     if error_scoring_prompts:
+        print(
+            f"Significant WER scoring: {len(error_scoring_prompts)} utterances have "
+            f"alignment errors and need LLM scoring (chunk_size={min(num_workers, len(error_scoring_prompts))})",
+            flush=True,
+        )
         chunk_size = max(1, min(num_workers, len(error_scoring_prompts)))
         for i in range(0, len(error_scoring_prompts), chunk_size):
             chunk = error_scoring_prompts[i : i + chunk_size]
@@ -484,7 +489,8 @@ def compute_significant_wer(
                     row_idx_to_scored_errors[row_idx] = None
 
             print(
-                f"Significant WER scoring: {min(i + chunk_size, len(error_scoring_prompts))}/{len(error_scoring_prompts)} processed"
+                f"Significant WER scoring: {min(i + chunk_size, len(error_scoring_prompts))}/{len(error_scoring_prompts)} processed",
+                flush=True,
             )
 
     # Build final results for rows with errors

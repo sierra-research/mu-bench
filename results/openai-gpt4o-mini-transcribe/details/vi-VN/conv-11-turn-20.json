@@ -1,16 +1,27 @@
 {
   "gold": "À, thôi. Được rồi.",
-  "predicted": "ờm thôi được rồi.",
+  "predicted": "ờm thôi đi",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
   "werNormalizedGold": "thôi được rồi",
-  "werNormalizedPredicted": "thôi được rồi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "thôi đi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "thôi được rồi",
-  "sigWerNormalizedPredicted": "thôi được rồi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "thôi đi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'được' to 'đi' at position 1",
+      "reason": "'được rồi' means 'okay' or 'that's enough', while 'đi' means 'go'. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 2",
+      "reason": "Omitting 'rồi' removes the sense of completion or finality, further altering the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

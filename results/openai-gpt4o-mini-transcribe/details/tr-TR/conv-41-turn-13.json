@@ -1,26 +1,26 @@
 {
   "gold": "Kredi kartı limit artışı istiyorum.",
-  "predicted": "Demitartışa istiyorum.",
+  "predicted": "Demi tartışa istiyorum.",
   "unintelligible": false,
   "wer": 0.8,
   "werEdits": 4,
   "werRefWords": 5,
   "werNormalizedGold": "kredi kartı limit artışı istiyorum",
-  "werNormalizedPredicted": "demitartışa istiyorum",
-  "significantWer": 0.4,
+  "werNormalizedPredicted": "demi tartışa istiyorum",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "kredi kartı limit artışı istiyorum",
-  "sigWerNormalizedPredicted": "demitartışa istiyorum",
+  "sigWerNormalizedPredicted": "demi tartışa istiyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kredi' to 'demitartışa' at position 0",
-      "reason": "'demitartışa' is not a valid substitution for 'kredi' and does not preserve the meaning; the main subject of the request is lost, making the sentence incoherent.",
+      "error": "Substitution: 'kredi' to 'demi' at position 0",
+      "reason": "'kredi' (credit) and 'demi' are completely different words with unrelated meanings, which changes the intent of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'kartı' at position 1",
-      "reason": "Omitting 'kartı' (card) removes a key part of the request, making it unclear what limit increase is being requested for, which significantly changes the meaning.",
+      "error": "Deletion: 'limit' at position 2",
+      "reason": "Omitting 'limit' removes a key part of the request, making the sentence incomplete and changing the intended meaning.",
       "score": 1
     }
   ]

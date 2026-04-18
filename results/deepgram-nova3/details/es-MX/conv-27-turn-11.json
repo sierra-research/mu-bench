@@ -2,21 +2,26 @@
   "gold": "¿Y a qué se refiere el proceso?",
   "predicted": "¿Y a qué se refiere en proceso?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "y a que se refiere el proceso",
+  "werNormalizedGold": "y a qué se refiere el proceso",
   "werNormalizedPredicted": "y a que se refiere en proceso",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "y a que se refiere el proceso",
+  "sigWerNormalizedGold": "y a qué se refiere el proceso",
   "sigWerNormalizedPredicted": "y a que se refiere en proceso",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'el' to 'en' at position 5",
-      "reason": "'el' (the) and 'en' (in) are different prepositions/articles in Spanish. This changes the grammatical structure but does not significantly alter the overall meaning of the sentence.",
+      "error": "Substitution: 'qué' to 'que' at position 2",
+      "reason": "Accent missing on 'qué' changes it from an interrogative to a conjunction, but in this context the meaning is mostly preserved.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'el' to 'en' at position 5",
+      "reason": "Changing 'el' (the) to 'en' (in) alters the meaning of the phrase, making the sentence less coherent and changing the reference of the process.",
+      "score": 1
     }
   ]
 }

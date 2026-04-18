@@ -2,15 +2,26 @@
   "gold": "你可以重复我的追踪号吗？",
   "predicted": "妳可以重复我的尊重号吗",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
-  "werNormalizedGold": "你 可以 重复 我 的 追踪 号 吗",
-  "werNormalizedPredicted": "你 可以 重复 我 的 追踪 号 吗",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你可以重复我的追踪号吗",
+  "werNormalizedPredicted": "妳可以重复我的尊重号吗",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 可 以 重 复 我 的 追 踪 号 吗",
-  "sigWerNormalizedPredicted": "你 可 以 重 复 我 的 追 踪 号 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "妳 可 以 重 复 我 的 尊 重 号 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to '妳' at position 0",
+      "reason": "'你' and '妳' are both pronounced the same and mean 'you', but '妳' is the female form. The meaning in context is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '追' to '尊' at position 7",
+      "reason": "'追踪号' means 'tracking number', while '尊重号' is not a valid phrase and changes the meaning significantly, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

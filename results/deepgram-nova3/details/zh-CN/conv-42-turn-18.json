@@ -2,20 +2,25 @@
   "gold": "郡凛 at email dot com。",
   "predicted": "junemane。",
   "unintelligible": false,
-  "wer": 0.8,
-  "werEdits": 4,
-  "werRefWords": 5,
-  "werNormalizedGold": "junemane at email dot com",
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "郡凛 at email dot com",
   "werNormalizedPredicted": "junemane",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "junemane at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "郡 凛 at email dot com",
   "sigWerNormalizedPredicted": "junemane",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'at' at position 1",
-      "reason": "The omission of 'at email dot com' removes the entire email address domain, making the contact information incomplete and unusable. This significantly changes the meaning and utility of the sentence.",
+      "error": "Substitution: '郡' to 'junemane' at position 0",
+      "reason": "The expected word is a Chinese character, while the actual is a completely different romanized string. The meaning is entirely lost and the transcription is incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "A key part of the expected name is missing, which makes the transcription incomplete and unrecognizable as the intended phrase.",
       "score": 1
     }
   ]

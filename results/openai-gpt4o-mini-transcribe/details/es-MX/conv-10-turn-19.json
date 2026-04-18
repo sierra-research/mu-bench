@@ -1,21 +1,36 @@
 {
   "gold": "Es María punto López arroba email, se escribe email punto com.",
-  "predicted": "Es maría.undo.lopez@email.com.",
+  "predicted": "Es maria.undo.lopez@gmail.com",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werEdits": 3,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
   "werRefWords": 11,
-  "werNormalizedGold": "es maria punto lopez arroba email se escribe email punto com",
-  "werNormalizedPredicted": "es maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "werNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "es maria punto lopez arroba email se escribe email punto com",
-  "sigWerNormalizedPredicted": "es maria punto lopez arroba email punto com",
+  "sigWerNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'maría' to 'maria' at position 1",
+      "reason": "Accent missing on the proper noun, but the name is still clearly recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "Accent missing on the proper noun, but the name is still clearly recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "'email' and 'gmail' are different email providers; this changes the actual email address and could cause a failure in communication.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'se' at position 6",
-      "reason": "The phrase 'se escribe email punto com' is a clarification or instruction, but omitting 'se' does not significantly change the meaning since the email address is still clear and understandable.",
+      "reason": "Omitting 'se' from 'se escribe email' slightly affects the clarity of the instruction, but the main meaning is still understandable.",
       "score": 2
     }
   ]

@@ -1,16 +1,27 @@
 {
   "gold": "君灵 at email dot com。",
-  "predicted": "juneyemail。com",
+  "predicted": "juningemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "君灵 at email dot com",
-  "werNormalizedPredicted": "君灵 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "juningemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 灵 at email dot com",
-  "sigWerNormalizedPredicted": "君 灵 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "juningemail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'juningemail' at position 0",
+      "reason": "The expected word is a Chinese name character, but the actual transcription is a concatenation of English letters that does not represent the original name or meaning. This is a significant error as the identity is completely lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "A key part of the name is missing in the actual transcription, which results in loss of important information and changes the intended meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "Hayır, sonu 45 67 olacak.",
   "predicted": "Hayır, sonu 4567 olacak",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "hayır sonu kırk beş altmış yedi olacak",
-  "werNormalizedPredicted": "hayır sonu kırk beş altmış yedi olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır sonu dört beş altı yedi olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "hayır sonu kırk beş altmış yedi olacak",
-  "sigWerNormalizedPredicted": "hayır sonu kırk beş altmış yedi olacak",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır sonu dört beş altı yedi olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kırk' to 'dört' at position 2",
+      "reason": "'kırk' means 'forty' and 'dört' means 'four'; this is a significant change in the number, which can completely alter the intended meaning (e.g., a code or number sequence).",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'altmış' to 'altı' at position 4",
+      "reason": "'altmış' means 'sixty' and 'altı' means 'six'; this is a significant change in the number, which can completely alter the intended meaning (e.g., a code or number sequence).",
+      "score": 1
+    }
+  ]
 }

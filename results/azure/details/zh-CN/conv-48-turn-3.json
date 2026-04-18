@@ -5,33 +5,33 @@
   "wer": 0.5833333333333334,
   "werEdits": 7,
   "werRefWords": 12,
-  "werNormalizedGold": "喂 我 想 提高 我 的 信用卡 额度",
-  "werNormalizedPredicted": "不对 我 想 去 购 的 信用卡 二楼",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 4,
+  "werNormalizedGold": "喂 我想提高我的信用卡额度",
+  "werNormalizedPredicted": "不对 我想去购的信用卡二楼",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "喂 我 想 提 高 我 的 信 用 卡 额 度",
   "sigWerNormalizedPredicted": "不 对 我 想 去 购 的 信 用 卡 二 楼",
   "sigWerErrors": [
     {
       "error": "Substitution: '喂' to '对' at position 0",
-      "reason": "The insertion of '不' (no/not) at the beginning changes the tone and meaning of the sentence, making it sound like a negation or disagreement, which derails the original intent.",
+      "reason": "The insertion of '不' (no/not) at the beginning changes the tone and meaning of the sentence, making it sound like a negation or disagreement rather than a greeting or request.",
       "score": 1
     },
     {
       "error": "Substitution: '提' to '去' at position 3",
-      "reason": "'喂' is a greeting (hello), while '对' means 'correct' or 'right'; this substitution changes the opening context and affects the meaning.",
+      "reason": "'喂' is a greeting (hello), while '对' means 'correct' or 'right'; this substitution changes the intent from greeting to affirmation, altering the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '我' at position 5",
-      "reason": "'提' means 'raise' (as in 'raise the limit'), while '去' means 'go'; this changes the action being requested, altering the meaning significantly.",
+      "reason": "'提' means 'raise' (as in raise a limit), while '去' means 'go'; this changes the action being requested, which significantly alters the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: '额' to '二' at position 10",
-      "reason": "Omitting '我' (I/me) removes the subject of the sentence, making the sentence less clear and affecting the meaning.",
-      "score": 1
+      "reason": "Omitting '我' (I/me) removes the subject, making the sentence less clear about who is performing the action, but the context still implies the speaker. This is a minor error.",
+      "score": 2
     }
   ]
 }

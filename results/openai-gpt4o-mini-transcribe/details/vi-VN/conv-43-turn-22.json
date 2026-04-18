@@ -1,21 +1,31 @@
 {
   "gold": "Tôi muốn xem lại sao kê ngay bây giờ. Tôi cần có chuyện gấp.",
-  "predicted": "ờ Tôi muốn xem lại sau kê ngay bây giờ tôi còn có chuyện gấp.",
+  "predicted": "Tôi muốn xem lại sau kê ngay bây giờ tôi còn có chức gấp.",
   "unintelligible": false,
-  "wer": 0.07142857142857142,
-  "werEdits": 1,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
   "werRefWords": 14,
   "werNormalizedGold": "tôi muốn xem lại sao kê ngay bây giờ tôi cần có chuyện gấp",
-  "werNormalizedPredicted": "tôi muốn xem lại sao kê ngay bây giờ tôi còn có chuyện gấp",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tôi muốn xem lại sau kê ngay bây giờ tôi còn có chức gấp",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi muốn xem lại sao kê ngay bây giờ tôi cần có chuyện gấp",
-  "sigWerNormalizedPredicted": "tôi muốn xem lại sao kê ngay bây giờ tôi còn có chuyện gấp",
+  "sigWerNormalizedPredicted": "tôi muốn xem lại sau kê ngay bây giờ tôi còn có chức gấp",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'sao' to 'sau' at position 4",
+      "reason": "'sao kê' (bank statement) and 'sau kê' are not the same; 'sau kê' is not a valid phrase and changes the meaning significantly.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'cần' to 'còn' at position 10",
-      "reason": "'cần' means 'need' and 'còn' means 'still' in Vietnamese. This substitution changes the meaning of the sentence from expressing a need to expressing something remaining, which significantly alters the intent of the sentence.",
+      "reason": "'cần' (need) and 'còn' (still/have) are different in meaning, which changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chuyện' to 'chức' at position 12",
+      "reason": "'chuyện' (matter/issue) and 'chức' (position/role) are unrelated, which makes the sentence incoherent.",
       "score": 1
     }
   ]

@@ -2,25 +2,30 @@
   "gold": "Sí, este. ¿El agente me puede ayudar también a saber cuál sería el monto para el aumento de cuenta en el límite de la tarjeta?",
   "predicted": "Sí, este, eh, ¿la gente me puede ayudar también a saber cuál sería el monto para una me-- para el aumento de cuenta en mi límite de la tarjeta?",
   "unintelligible": false,
-  "wer": 0.12,
-  "werEdits": 3,
-  "werRefWords": 25,
-  "werNormalizedGold": "si este el agente me puede ayudar tambien a saber cual seria el monto para el aumento de cuenta en el limite de la tarjeta",
-  "werNormalizedPredicted": "si este la gente me puede ayudar tambien a saber cual seria el monto para el aumento de cuenta en mi limite de la tarjeta",
-  "significantWer": 0.04,
+  "wer": 0.25,
+  "werEdits": 6,
+  "werRefWords": 24,
+  "werNormalizedGold": "sí el agente me puede ayudar también a saber cuál sería el monto para el aumento de cuenta en el límite de la tarjeta",
+  "werNormalizedPredicted": "sí la gente me puede ayudar también a saber cuál sería el monto para una me para el aumento de cuenta en mi límite de la tarjeta",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 25,
-  "sigWerNormalizedGold": "si este el agente me puede ayudar tambien a saber cual seria el monto para el aumento de cuenta en el limite de la tarjeta",
-  "sigWerNormalizedPredicted": "si este la gente me puede ayudar tambien a saber cual seria el monto para el aumento de cuenta en mi limite de la tarjeta",
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "sí el agente me puede ayudar también a saber cuál sería el monto para el aumento de cuenta en el límite de la tarjeta",
+  "sigWerNormalizedPredicted": "sí la gente me puede ayudar también a saber cuál sería el monto para una me para el aumento de cuenta en mi límite de la tarjeta",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'el' to 'la' at position 2",
-      "reason": "'el agente' (the agent) is changed to 'la gente' (the people), which changes the subject of the sentence and alters the meaning significantly.",
+      "error": "Substitution: 'el' to 'la' at position 1",
+      "reason": "'el agente' (the agent) becomes 'la gente' (the people), which changes the subject from a specific agent to people in general, altering the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'el' to 'mi' at position 20",
-      "reason": "'el limite de la tarjeta' (the card's limit) is changed to 'mi limite de la tarjeta' (my card's limit), which is a minor change as it personalizes the limit but does not derail the overall meaning of the sentence.",
+      "error": "Insertion: 'una' at position 14",
+      "reason": "The insertion of 'una' (a) before 'me' creates confusion in the sentence structure, but the overall intent is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'el' to 'mi' at position 19",
+      "reason": "Changing 'el límite de la tarjeta' (the card limit) to 'mi límite de la tarjeta' (my card limit) personalizes the statement but does not significantly alter the overall meaning.",
       "score": 2
     }
   ]

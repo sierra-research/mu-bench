@@ -2,20 +2,30 @@
   "gold": "我的邮箱地址是美玲 at email dot com。",
   "predicted": "我的邮箱地址是内灵email。",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 2,
-  "werRefWords": 12,
-  "werNormalizedGold": "我的邮箱地址是美玲 email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是美玲 email",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 美 玲 email",
+  "wer": 0.38461538461538464,
+  "werEdits": 5,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的邮箱地址是美玲 at email dot com",
+  "werNormalizedPredicted": "我的邮箱地址是内灵 email",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 内 灵 email",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'dot' at position 10",
-      "reason": "Omitting 'dot' from the email address makes the address incomplete and unusable, which is a significant error.",
+      "error": "Substitution: '美' to '内' at position 7",
+      "reason": "The character '美' (mei) is replaced with '内' (nei), which changes the name in the email address and could result in a completely different email address. This is a significant error as it affects the core information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 9",
+      "reason": "The word 'at' is missing, which is essential for the format of an email address. Its absence makes the email address incomplete and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 11",
+      "reason": "The word 'dot' is missing, which is necessary for the correct format of an email address. Without it, the email address is incomplete and could not be used as intended.",
       "score": 1
     }
   ]

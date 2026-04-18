@@ -2,15 +2,31 @@
   "gold": "美玲 at email dot com。",
   "predicted": "milingexemendotgon。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "miling at email dot gon",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "miling at email dot gon",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'miling' at position 0",
+      "reason": "'美' is a Chinese character, while 'miling' is a romanized name. The substitution changes the language and representation, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is omitted entirely, losing part of the name and making the transcription incomplete. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'gon' at position 5",
+      "reason": "'com' is a standard domain ending, while 'gon' is not valid and would cause communication failure. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

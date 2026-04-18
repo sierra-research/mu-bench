@@ -1,16 +1,22 @@
 {
   "gold": "1 2 3 北京路的海淀，海淀区北京区，中国。",
-  "predicted": "呃 一二三北京肉的海淀，海淀区，北京区，中国。",
+  "predicted": "呃 一二三北京肉的海淀，海淀区北京区，中国。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
   "werRefWords": 17,
-  "werNormalizedGold": "one two three 北京路的海淀 海淀区北京区中国",
-  "werNormalizedPredicted": "one two three 北京路的海淀 海淀区北京区中国",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "一 二 三 北京路的海淀 海淀区北京区中国",
+  "werNormalizedPredicted": "一 二 三 北京肉的海淀 海淀区北京区中国",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "one two three 北 京 路 的 海 淀 海 淀 区 北 京 区 中 国",
-  "sigWerNormalizedPredicted": "one two three 北 京 路 的 海 淀 海 淀 区 北 京 区 中 国",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "一 二 三 北 京 路 的 海 淀 海 淀 区 北 京 区 中 国",
+  "sigWerNormalizedPredicted": "一 二 三 北 京 肉 的 海 淀 海 淀 区 北 京 区 中 国",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '路' to '肉' at position 5",
+      "reason": "'路' means 'road' and '肉' means 'meat'; this changes the meaning of the address and makes it incoherent, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

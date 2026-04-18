@@ -1,16 +1,27 @@
 {
   "gold": "你写了我的电子邮箱吗？",
-  "predicted": "那你写了我的电子有香吗?",
+  "predicted": "那你写了我的电子邮件有相吗?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
-  "werNormalizedGold": "你 写 了 我 的 电子 邮箱 吗",
-  "werNormalizedPredicted": "你 写 了 我 的 电子 邮箱 吗",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你写了我的电子邮箱吗",
+  "werNormalizedPredicted": "那你写了我的电子邮件有相吗",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "你 写 了 我 的 电 子 邮 箱 吗",
-  "sigWerNormalizedPredicted": "你 写 了 我 的 电 子 邮 箱 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "那 你 写 了 我 的 电 子 邮 件 有 相 吗",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '那' at position 0",
+      "reason": "The addition of '那' (which means 'then' or 'in that case') at the beginning does not change the core meaning of the sentence, it just adds a discourse marker.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '箱' to '相' at position 8",
+      "reason": "The word '邮件' (email) is a synonym for '邮箱' (mailbox/email inbox) in some contexts, but here it changes the object from 'mailbox' to 'email', which is a minor change in meaning.",
+      "score": 2
+    }
+  ]
 }

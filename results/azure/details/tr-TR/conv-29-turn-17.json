@@ -2,20 +2,25 @@
   "gold": "Evet. Zaynep nokta.",
   "predicted": "Evet, Zeynep.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 1,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
-  "werNormalizedGold": "evet zeynep nokta",
+  "werNormalizedGold": "evet zaynep nokta",
   "werNormalizedPredicted": "evet zeynep",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "evet zeynep nokta",
+  "sigWerNormalizedGold": "evet zaynep nokta",
   "sigWerNormalizedPredicted": "evet zeynep",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 1",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "score": 2
+    },
+    {
       "error": "Deletion: 'nokta' at position 2",
-      "reason": "'nokta' means 'dot' or 'period' in Turkish and is likely important for things like email addresses or URLs. Omitting it could change the meaning or make the information incomplete.",
+      "reason": "'nokta' means 'dot' or 'point' and its omission could change the meaning, especially if it is part of an email or web address.",
       "score": 1
     }
   ]

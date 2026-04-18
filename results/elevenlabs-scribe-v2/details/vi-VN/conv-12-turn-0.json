@@ -2,15 +2,21 @@
   "gold": "Tôi muốn được xem lại sao kê của tháng trước.",
   "predicted": "Ờm, tôi muốn, a, s-- được xem lại cái sau kê của tháng trước",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "tôi muốn được xem lại sao kê của tháng trước",
-  "werNormalizedPredicted": "tôi muốn được xem lại sao kê của tháng trước",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tôi muốn được xem lại cái sau kê của tháng trước",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tôi muốn được xem lại sao kê của tháng trước",
-  "sigWerNormalizedPredicted": "tôi muốn được xem lại sao kê của tháng trước",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi muốn được xem lại cái sau kê của tháng trước",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sao' to 'sau' at position 5",
+      "reason": "The insertion of 'cái' (a classifier in Vietnamese) does not change the overall meaning of the sentence, as it is sometimes used in spoken language for emphasis or clarification, but is not necessary here.",
+      "score": 2
+    }
+  ]
 }

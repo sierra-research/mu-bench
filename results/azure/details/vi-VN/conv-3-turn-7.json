@@ -2,20 +2,25 @@
   "gold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
   "predicted": "0 0 0 phải đúng là minh. Trần a. Còngemail.com.",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "khong khong phai dung la minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "khong khong khong phai dung la minh cham tran a cong email cham com",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không không không phải đúng là minh trần a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "khong khong phai dung la minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "khong khong khong phai dung la minh cham tran a cong email cham com",
+  "sigWerNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "không không không phải đúng là minh trần a còng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'khong' at position 2",
-      "reason": "The extra 'khong' (which means 'no' or 'not' in Vietnamese) changes the meaning of the sentence by adding an additional negation, which could confuse the listener or alter the intended message.",
+      "error": "Insertion: 'không' at position 2",
+      "reason": "The extra 'không' (no) changes the structure of the sentence and could confuse the meaning, as it adds an additional negation that is not present in the original sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 6",
+      "reason": "Omitting 'chấm' (dot) in an email address can make the email address incorrect or unusable, which is a significant error.",
       "score": 1
     }
   ]

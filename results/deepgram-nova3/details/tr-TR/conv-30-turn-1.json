@@ -7,7 +7,7 @@
   "werRefWords": 19,
   "werNormalizedGold": "ben yeni kredi kartı çıkartmıştım da onu bekliyorum onun durumu ile alakalı bilgi almak istiyorum şu an nerede kartım",
   "werNormalizedPredicted": "ben bir yeni kredi kartı çıkartmıştım da onu bekliyorum onun durumuyla alakalı bilgi almak istiyorum şu an nerede kartın",
-  "significantWer": 0.05263157894736842,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "ben yeni kredi kartı çıkartmıştım da onu bekliyorum onun durumu ile alakalı bilgi almak istiyorum şu an nerede kartım",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 1",
-      "reason": "'bir' (meaning 'a' or 'one') is inserted, but it does not change the overall meaning of the sentence in this context.",
+      "reason": "The insertion of 'bir' (meaning 'a' or 'one') before 'yeni kredi kartı' does not change the overall meaning of the sentence. It is a minor addition that does not affect the intent.",
       "score": 2
     },
     {
       "error": "Substitution: 'durumu' to 'durumuyla' at position 9",
-      "reason": "'durumu' (its situation) and 'durumuyla' (with its situation) are very close in meaning and do not change the intent of the sentence.",
-      "score": 3
+      "reason": "'Durumu' means 'its situation/status', while 'durumuyla' means 'with its situation/status'. The meaning is nearly the same in this context, as both refer to the status of the card. This is a minor grammatical difference.",
+      "score": 2
     },
     {
       "error": "Deletion: 'ile' at position 10",
-      "reason": "The word 'ile' (with) is omitted, but 'durumuyla' already includes the meaning of 'ile', so the meaning is preserved.",
-      "score": 3
+      "reason": "'ile' means 'with', and its omission is compensated by the use of 'durumuyla' (which already includes 'with'). The meaning is preserved, so this is a minor error.",
+      "score": 2
     },
     {
       "error": "Substitution: 'kartım' to 'kartın' at position 18",
-      "reason": "'kartım' means 'my card', while 'kartın' means 'your card'. This changes the meaning from first person to second person, which is a significant error.",
+      "reason": "'Kartım' means 'my card', while 'kartın' means 'your card'. This changes the possessor of the card, which can alter the meaning of the sentence significantly, as it refers to a different person's card.",
       "score": 1
     }
   ]

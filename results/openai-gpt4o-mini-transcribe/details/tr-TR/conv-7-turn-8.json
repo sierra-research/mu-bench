@@ -1,16 +1,22 @@
 {
   "gold": "Evet doğrudur.",
-  "predicted": "Evet, doğrudur.",
+  "predicted": "Evet, oradır.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "evet doğrudur",
-  "werNormalizedPredicted": "evet doğrudur",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "evet oradır",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "evet doğrudur",
-  "sigWerNormalizedPredicted": "evet doğrudur",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "evet oradır",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doğrudur' to 'oradır' at position 1",
+      "reason": "'doğrudur' means 'it is correct' while 'oradır' means 'it is there'; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

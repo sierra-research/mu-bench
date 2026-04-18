@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
   "werNormalizedPredicted": "banka kartımın söz geçmek üzerine bana yeni bir kart gönderebilir misiniz",
-  "significantWer": 0.08333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'süresi' to 'söz' at position 2",
-      "reason": "'süresi' (duration/expiry) and 'söz' (word/promise) are completely different words and change the meaning of the sentence significantly.",
+      "reason": "'Süresi' (duration/expiry) and 'söz' (word/promise) are completely different words and change the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'üzere' to 'üzerine' at position 4",
-      "reason": "'üzere' (about to) and 'üzerine' (on/upon) are different, but in this context, the meaning is only slightly changed and the intent is still understandable.",
+      "reason": "'Üzere' (about to) and 'üzerine' (on/upon) are different in meaning, but in this context, the sentence remains understandable.",
       "score": 2
     },
     {
       "error": "Deletion: 'anna' at position 5",
-      "reason": "Omitting 'anna' (a name or addressee) removes the direct address, which can be important for context but does not derail the main request.",
+      "reason": "Omitting 'anna' (a name or addressee) removes the direct address, which could affect who the request is directed to, but the main request is still clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'misin' to 'misiniz' at position 11",
-      "reason": "Both are forms of 'can you' in Turkish, with 'misiniz' being more formal/plural. The meaning is preserved.",
+      "reason": "Both are forms of 'can you', with 'misiniz' being more formal/plural. The meaning is unchanged.",
       "score": 3
     }
   ]

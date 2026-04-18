@@ -2,30 +2,25 @@
   "gold": "Email chưa đúng.",
   "predicted": "À email CEO",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 3,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
   "werNormalizedGold": "email chưa đúng",
-  "werNormalizedPredicted": "à email ceo",
-  "significantWer": 0.6666666666666666,
+  "werNormalizedPredicted": "email ceo",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "email chưa đúng",
-  "sigWerNormalizedPredicted": "à email ceo",
+  "sigWerNormalizedPredicted": "email ceo",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'à' at position 0",
-      "reason": "The word 'à' is added at the beginning, which does not relate to the intended meaning and may confuse the sentence.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'chưa' to 'ceo' at position 1",
-      "reason": "'chưa' means 'not yet' in Vietnamese, while 'ceo' is an English acronym for Chief Executive Officer. This substitution completely changes the meaning of the sentence.",
+      "reason": "'chưa' means 'not yet' in Vietnamese, while 'ceo' is an English acronym for 'Chief Executive Officer'; this substitution completely changes the meaning of the sentence and makes it incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'đúng' at position 2",
-      "reason": "The word 'đúng' (meaning 'correct') is omitted, which is essential to the intended meaning of the sentence.",
+      "reason": "'đúng' means 'correct' in Vietnamese; omitting this word further removes the intended meaning of the sentence, making the actual transcription significantly different and incoherent.",
       "score": 1
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "想提高我的信用卡额度。",
   "predicted": "熊体高我的信用靠饿喽",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 5,
   "werRefWords": 10,
-  "werNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
-  "werNormalizedPredicted": "想 提 高 我 的 信 用 卡 额 度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "想提高我的信用卡额度",
+  "werNormalizedPredicted": "熊体高我的信用靠饿喽",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
-  "sigWerNormalizedPredicted": "想 提 高 我 的 信 用 卡 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "熊 体 高 我 的 信 用 靠 饿 喽",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '想' to '熊' at position 0",
+      "reason": "'想' (want) and '熊' (bear) are completely different words and meanings; this substitution makes the sentence incoherent and changes the intent entirely.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '卡' to '靠' at position 7",
+      "reason": "'卡' (card) and '靠' (lean/rely) are unrelated in meaning; this substitution disrupts the meaning of the sentence and makes it confusing.",
+      "score": 1
+    }
+  ]
 }

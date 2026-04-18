@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "junling@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "junling at email dot com",
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
   "werNormalizedPredicted": "junling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "junling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
   "sigWerNormalizedPredicted": "junling at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junling' at position 0",
+      "reason": "'君' is a Chinese character, while 'junling' is a romanized form that may represent both '君' and '玲' together, but the script and representation are completely different. This could cause confusion or loss of intended meaning, especially for names or email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is missing in the actual transcription, which omits part of the name or email address, leading to a significant error in the context of an email address or proper noun.",
+      "score": 1
+    }
+  ]
 }

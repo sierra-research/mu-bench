@@ -5,9 +5,9 @@
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "我 已经 明白 了",
-  "werNormalizedPredicted": "已经 明白 啦",
-  "significantWer": 0.0,
+  "werNormalizedGold": "我已经明白了",
+  "werNormalizedPredicted": "已经明白啦",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "我 已 经 明 白 了",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Deletion: '我' at position 0",
-      "reason": "The subject '我' (I) is omitted, which could cause ambiguity about who understands, but in conversational Chinese, the subject is often dropped when context is clear. The overall meaning is still understandable.",
+      "reason": "The subject '我' (I) is omitted, which can change the meaning by removing the explicit subject, but in conversational Chinese, the subject is often dropped and still understood from context. Minor error.",
       "score": 2
     },
     {
       "error": "Substitution: '了' to '啦' at position 5",
-      "reason": "'了' and '啦' are both sentence-ending particles; '啦' is more colloquial and softens the tone, but the core meaning (understanding something) is unchanged.",
+      "reason": "'了' and '啦' are both sentence-final particles in Chinese. '啦' is a more informal or emphatic variant of '了', but the overall meaning remains the same. No significant change in meaning.",
       "score": 3
     }
   ]

@@ -1,17 +1,17 @@
 {
   "gold": "Tôi đang muốn hỏi về cách xác nhận thanh toán.",
-  "predicted": "Ông đang muốn hỏi về paystack nhận thành toán?",
+  "predicted": "Ông đang muốn hỏi về cái xác nhận thành toán.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 4,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "tôi đang muốn hỏi về cách xác nhận thanh toán",
-  "werNormalizedPredicted": "ông đang muốn hỏi về paystack nhận thành toán",
-  "significantWer": 0.4,
-  "majorErrorsCount": 4,
+  "werNormalizedPredicted": "ông đang muốn hỏi về cái xác nhận thành toán",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tôi đang muốn hỏi về cách xác nhận thanh toán",
-  "sigWerNormalizedPredicted": "ông đang muốn hỏi về paystack nhận thành toán",
+  "sigWerNormalizedPredicted": "ông đang muốn hỏi về cái xác nhận thành toán",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tôi' to 'ông' at position 0",
@@ -19,19 +19,14 @@
       "score": 1
     },
     {
-      "error": "Substitution: 'cách' to 'paystack' at position 5",
-      "reason": "'cách' means 'way/method' while 'paystack' is a company name. This substitution changes the meaning and introduces an unrelated concept.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'xác' at position 6",
-      "reason": "'xác nhận' means 'confirm' together; omitting 'xác' breaks the meaning of the phrase and makes it unclear.",
-      "score": 1
+      "error": "Substitution: 'cách' to 'cái' at position 5",
+      "reason": "'cách' means 'way/method' and 'cái' is a classifier or means 'thing'. This changes the meaning but the sentence is still somewhat understandable.",
+      "score": 2
     },
     {
       "error": "Substitution: 'thanh' to 'thành' at position 8",
-      "reason": "'thanh toán' means 'payment', while 'thành toán' is not a correct phrase in Vietnamese and changes the meaning.",
-      "score": 1
+      "reason": "'thanh toán' means 'payment', while 'thành toán' is a misspelling but still close in sound and context. The meaning is mostly preserved.",
+      "score": 2
     }
   ]
 }

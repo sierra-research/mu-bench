@@ -1,16 +1,22 @@
 {
   "gold": "Thấy rồi. Bây giờ làm gì nữa?",
-  "predicted": "ờ thấy rồi, bây giờ làm gì nữa?",
+  "predicted": "ờ thấy rồi, bây giờ làm gì được",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
   "werRefWords": 7,
   "werNormalizedGold": "thấy rồi bây giờ làm gì nữa",
-  "werNormalizedPredicted": "thấy rồi bây giờ làm gì nữa",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "thấy rồi bây giờ làm gì được",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "thấy rồi bây giờ làm gì nữa",
-  "sigWerNormalizedPredicted": "thấy rồi bây giờ làm gì nữa",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "thấy rồi bây giờ làm gì được",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nữa' to 'được' at position 6",
+      "reason": "'nữa' means 'more' or 'next', while 'được' means 'can' or 'able to'. This substitution changes the intent of the question from asking what to do next to asking what can be done, which alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

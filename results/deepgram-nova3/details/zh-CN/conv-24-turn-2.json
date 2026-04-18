@@ -2,15 +2,21 @@
   "gold": "确认。",
   "predicted": "盖人。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "确认",
-  "werNormalizedPredicted": "确认",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "盖人",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "确 认",
-  "sigWerNormalizedPredicted": "确 认",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "盖 人",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '确' to '盖' at position 0",
+      "reason": "The substituted character changes the meaning entirely; '确' means 'sure' or 'confirm', while '盖' means 'cover' or 'lid', which is unrelated and makes the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

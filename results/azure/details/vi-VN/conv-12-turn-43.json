@@ -5,23 +5,23 @@
   "wer": 0.45454545454545453,
   "werEdits": 5,
   "werRefWords": 11,
-  "werNormalizedGold": "muon nhung ma toi muon noi chuyen voi nguoi truc tiep",
-  "werNormalizedPredicted": "mu nhung ma toi muon noi chuyen",
-  "significantWer": 0.18181818181818182,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "muốn nhưng mà tôi muốn nói chuyện với người trực tiếp",
+  "werNormalizedPredicted": "mu nhưng mà tôi muốn nói chuyện",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "muon nhung ma toi muon noi chuyen voi nguoi truc tiep",
-  "sigWerNormalizedPredicted": "mu nhung ma toi muon noi chuyen",
+  "sigWerNormalizedGold": "muốn nhưng mà tôi muốn nói chuyện với người trực tiếp",
+  "sigWerNormalizedPredicted": "mu nhưng mà tôi muốn nói chuyện",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'muon' to 'mu' at position 0",
-      "reason": "'mu' is not a word in Vietnamese and is likely a truncation or mishearing of 'muon', which means 'want'. This changes the meaning and makes the sentence unclear.",
+      "error": "Substitution: 'muốn' to 'mu' at position 0",
+      "reason": "'mu' is not a word in Vietnamese and is a truncation of 'muốn', which means 'want'. This makes the sentence incomplete and unclear at the start, significantly affecting meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: 'voi' at position 7",
-      "reason": "Omitting 'voi' ('with') removes the preposition needed to indicate who the conversation is with, making the sentence incomplete and changing the meaning.",
-      "score": 1
+      "error": "Deletion: 'với' at position 7",
+      "reason": "Omitting 'với' ('with') removes the preposition that connects the action to the person, making the sentence incomplete and less clear, but the main intent is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

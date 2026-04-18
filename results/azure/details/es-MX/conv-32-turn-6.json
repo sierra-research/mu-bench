@@ -5,22 +5,22 @@
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "si es el cincuenta y cinco dos",
-  "werNormalizedPredicted": "si es el quinientos cincuenta y dos",
-  "significantWer": 0.2857142857142857,
+  "werNormalizedGold": "sí es el cincuenta y cinco dos",
+  "werNormalizedPredicted": "sí es el quinientos cincuenta y dos",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "si es el cincuenta y cinco dos",
-  "sigWerNormalizedPredicted": "si es el quinientos cincuenta y dos",
+  "sigWerNormalizedGold": "sí es el cincuenta y cinco dos",
+  "sigWerNormalizedPredicted": "sí es el quinientos cincuenta y dos",
   "sigWerErrors": [
     {
       "error": "Insertion: 'quinientos' at position 3",
-      "reason": "'quinientos' (five hundred) changes the number being referenced from 'cincuenta y cinco' (fifty-five) to 'quinientos cincuenta y dos' (five hundred fifty-two), which significantly alters the meaning of the sentence.",
+      "reason": "'quinientos' (five hundred) is a completely different number than 'cincuenta y cinco' (fifty five), which changes the meaning of the number being communicated.",
       "score": 1
     },
     {
       "error": "Deletion: 'cinco' at position 5",
-      "reason": "Omitting 'cinco' (five) changes the number from 'cincuenta y cinco' (fifty-five) to 'cincuenta y dos' (fifty-two), which is a significant change in meaning.",
+      "reason": "Omitting 'cinco' (five) changes the number being communicated, resulting in a different value and thus a significant error.",
       "score": 1
     }
   ]

@@ -2,25 +2,25 @@
   "gold": "Thu dấu chấm trần a còng email chấm com.",
   "predicted": "Thu dấu chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 3,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
   "werNormalizedGold": "thu dấu chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "thu dấu chấm trần gmail chấm com",
-  "significantWer": 0.2222222222222222,
+  "werNormalizedPredicted": "thu dấu chấm trầngmail chấm com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "thu dấu chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "thu dấu chấm trần gmail chấm com",
+  "sigWerNormalizedPredicted": "thu dấu chấm trầngmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'a' to 'gmail' at position 4",
-      "reason": "'a còng email' is the Vietnamese way to say 'at email' (as in an email address), but 'gmail' replaces both 'a còng email' with a specific service, changing the meaning from a generic email address to a specific one.",
+      "error": "Substitution: 'trần' to 'trầngmail' at position 3",
+      "reason": "'trầngmail' merges 'trần' and 'gmail', which confuses the meaning and makes the email address incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'còng' at position 5",
-      "reason": "'còng' (the Vietnamese word for '@') is omitted, which is essential for the structure of an email address. Its absence makes the phrase incorrect as an email address.",
+      "error": "Deletion: 'a' at position 4",
+      "reason": "Missing 'a' (which stands for 'a còng' or '@') in an email address makes the address invalid and changes the meaning significantly.",
       "score": 1
     }
   ]

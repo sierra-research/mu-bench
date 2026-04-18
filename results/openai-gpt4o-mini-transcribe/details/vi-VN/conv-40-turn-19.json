@@ -1,16 +1,27 @@
 {
   "gold": "OK. Địa chỉ liên lạc là 1 2 3 Lê Lợi, Hồ Chí Minh, Việt Nam. Zip code là 700000.",
-  "predicted": "ô kê, địa chỉ liên lạc là 123 Lê Lợi, Hồ Chí Minh, Việt Nam, zip code là bảy trăm ngàn.",
+  "predicted": "Okay, địa chỉ liên lạc là 123 Lê Lợi, Hồ Chí Minh, Việt Nam, zipcode là bảy trăm nghìn.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09090909090909091,
+  "werEdits": 2,
   "werRefWords": 22,
-  "werNormalizedGold": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm ngàn",
-  "werNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm ngàn",
-  "significantWer": 0.0,
+  "werNormalizedGold": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm nghìn",
+  "werNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zipcode là bảy trăm nghìn",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm ngàn",
-  "sigWerNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm ngàn",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm nghìn",
+  "sigWerNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zipcode là bảy trăm nghìn",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zip' to 'zipcode' at position 16",
+      "reason": "'zip code' and 'zipcode' are semantically equivalent; the difference is only in spacing, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'code' at position 17",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
 }

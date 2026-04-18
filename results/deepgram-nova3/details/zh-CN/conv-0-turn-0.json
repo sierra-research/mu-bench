@@ -1,16 +1,22 @@
 {
   "gold": "您好。",
-  "predicted": "名侯",
+  "predicted": "名侯。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "您好",
-  "werNormalizedPredicted": "您好",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "名侯",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "您 好",
-  "sigWerNormalizedPredicted": "您 好",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "名 侯",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '您' to '名' at position 0",
+      "reason": "The word '您' (you) is substituted with '名' (name), which completely changes the meaning of the greeting and makes the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

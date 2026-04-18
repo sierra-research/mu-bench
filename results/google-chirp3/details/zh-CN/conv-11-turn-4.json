@@ -5,9 +5,9 @@
   "wer": 0.2222222222222222,
   "werEdits": 4,
   "werRefWords": 18,
-  "werNormalizedGold": "你 说 得 对 我 现在 等待 新 卡 想 知道 它 的 状态",
-  "werNormalizedPredicted": "然后 你 说 得 对 我 现在 装 在 新 卡 想 知道 它 的 状态",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "你说得对 我现在等待新卡 想知道它的状态",
+  "werNormalizedPredicted": "然后你说得对 我现在装在新卡 想知道它的状态",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "你 说 得 对 我 现 在 等 待 新 卡 想 知 道 它 的 状 态",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '然' at position 0",
-      "reason": "The insertion of '然' at the beginning does not change the meaning of the sentence, as it is often used as a discourse marker or filler in Chinese and does not affect the core message.",
+      "reason": "The insertion of '然' at the beginning does not change the meaning of the sentence; it is a discourse marker and does not affect the main content.",
       "score": 2
     },
     {
       "error": "Substitution: '等' to '装' at position 7",
-      "reason": "Substituting '等' (wait) with '装' (install) significantly changes the meaning of the sentence, as it alters the action being described from waiting for a new card to installing a new card, which is a major change in intent.",
+      "reason": "Substituting '等' (wait) with '装' (install) changes the meaning of the sentence significantly, as it alters the action being described from waiting for a new card to installing a new card.",
       "score": 1
     }
   ]

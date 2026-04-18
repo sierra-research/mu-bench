@@ -2,25 +2,35 @@
   "gold": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
   "predicted": "Yalnız email adresim yanlış oldu. Zeynep değil Zeynep olacak. Zeynep. Arslan@ email.com.",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 2,
+  "wer": 0.25,
+  "werEdits": 4,
   "werRefWords": 16,
-  "werNormalizedGold": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep arslan at email com",
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep zeynep olacak zeynep arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep arslan at email com",
+  "sigWerNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep zeynep olacak zeynep arslan at email nokta com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'nokta' at position 10",
-      "reason": "Omitting 'nokta' (dot) in an email address changes the structure and can make the email invalid or direct it to a different address. This is a significant error.",
+      "error": "Substitution: 'değil' to 'zeynep' at position 6",
+      "reason": "'değil' means 'not', which negates the previous word. Replacing it with 'zeynep' removes the negation and repeats the name, significantly changing the meaning.",
       "score": 1
     },
     {
-      "error": "Deletion: 'nokta' at position 14",
-      "reason": "Omitting 'nokta' (dot) in the domain part of the email address ('email nokta com') changes the domain and makes the email address invalid. This is a significant error.",
+      "error": "Deletion: 'zaynep' at position 7",
+      "reason": "Omitting 'zaynep' removes the correction to the name, which is the main point of the sentence. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
+      "reason": "The correct spelling 'zaynep' is replaced with 'zeynep', which is the original (incorrect) version. This undermines the correction and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 10",
+      "reason": "Omitting 'nokta' (dot) in an email address changes the address and can make it invalid. This is a significant error.",
       "score": 1
     }
   ]

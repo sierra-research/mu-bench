@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "at email nokta com adres evet",
   "werNormalizedPredicted": "etemein com adresi evet",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "at email nokta com adres evet",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'at' to 'etemein' at position 0",
-      "reason": "'at' is a common word or part of an email address, while 'etemein' is not a valid word and changes the meaning completely, making the sentence incoherent.",
+      "reason": "'etemein' is a significant mistranscription of 'at', which is a key part of an email address. This changes the meaning and makes the email address incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'email' at position 1",
-      "reason": "Omitting 'email' removes a key part of the address, making it unclear that the reference is to an email address.",
+      "reason": "Omitting 'email' removes a key word that clarifies the context, leading to confusion about what is being referred to.",
       "score": 1
     },
     {
       "error": "Substitution: 'adres' to 'adresi' at position 4",
-      "reason": "'adres' and 'adresi' are closely related in Turkish, with 'adresi' being the possessive form. The meaning is only slightly changed.",
+      "reason": "'adresi' is a minor grammatical variation of 'adres' in Turkish (possessive form), which does not significantly change the meaning.",
       "score": 2
     }
   ]

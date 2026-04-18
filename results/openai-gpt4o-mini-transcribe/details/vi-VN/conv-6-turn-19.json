@@ -1,22 +1,27 @@
 {
   "gold": "Tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hạn mức hay không?",
-  "predicted": "Tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hệ mức hay không?",
+  "predicted": "tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hệ mức gì không?",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werEdits": 1,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
   "werNormalizedGold": "tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hạn mức hay không",
-  "werNormalizedPredicted": "tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hệ mức hay không",
-  "significantWer": 0.058823529411764705,
+  "werNormalizedPredicted": "tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hệ mức gì không",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hạn mức hay không",
-  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hệ mức hay không",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có yêu cầu gì cho cái việc tăng hệ mức gì không",
   "sigWerErrors": [
     {
       "error": "Substitution: 'hạn' to 'hệ' at position 13",
-      "reason": "'hạn mức' means 'limit' (e.g., credit limit), while 'hệ mức' is not a standard phrase and changes the meaning, making the sentence unclear or incorrect.",
+      "reason": "'hạn mức' means 'limit' (e.g., credit limit), while 'hệ mức' is not a standard phrase and changes the meaning, making the sentence confusing or incorrect.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'hay' to 'gì' at position 15",
+      "reason": "'hay không' is a common phrase meaning 'or not' in Vietnamese, while 'gì không' is less natural and changes the structure, but the overall intent is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

@@ -1,16 +1,27 @@
 {
   "gold": "听到了吗？",
-  "predicted": "听到了吗?",
+  "predicted": "聽到了嗎?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "听 到 了 吗",
-  "werNormalizedPredicted": "听 到 了 吗",
-  "significantWer": 0.0,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "聽到了嗎",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
-  "sigWerNormalizedPredicted": "听 到 了 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "聽 到 了 嗎",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '聽' at position 0",
+      "reason": "'听' and '聽' are simplified and traditional forms of the same Chinese character, meaning the same thing. The meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '吗' to '嗎' at position 3",
+      "reason": "'吗' and '嗎' are simplified and traditional forms of the same Chinese character, meaning the same thing. The meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

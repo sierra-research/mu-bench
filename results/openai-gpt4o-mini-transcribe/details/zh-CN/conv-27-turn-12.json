@@ -1,16 +1,32 @@
 {
   "gold": "L E I dot L I N G at E M A I L dot C O M。",
-  "predicted": "email.ei.ing@email.com",
+  "predicted": "emaileiring@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
   "werRefWords": 18,
   "werNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
-  "werNormalizedPredicted": "l e i dot l i n g at e m a i l dot c o m",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "e m a i l e i r i n g at e m a i l dot c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
-  "sigWerNormalizedPredicted": "l e i dot l i n g at e m a i l dot c o m",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "e m a i l e i r i n g at e m a i l dot c o m",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'e' at position 0",
+      "reason": "The insertion of 'e' at the beginning changes the start of the email address, making it incorrect and unrecognizable as the intended address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'dot' to 'r' at position 3",
+      "reason": "Substituting 'dot' with 'r' in a spelled-out email address changes the structure and meaning, resulting in an invalid or incorrect email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'l' at position 4",
+      "reason": "Omitting a letter in a spelled-out email address changes the actual address, making it incorrect and potentially undeliverable.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "郡凛 at email dot com。",
   "predicted": "June Ling at email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "june ling at email dot com",
+  "werNormalizedGold": "郡凛 at email dot com",
   "werNormalizedPredicted": "june ling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "june ling at email dot com",
+  "sigWerNormalizedGold": "郡 凛 at email dot com",
   "sigWerNormalizedPredicted": "june ling at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'june' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an English word ('june'), which is a completely different name and language. This changes the identity and meaning significantly.",
+      "score": 1
+    }
+  ]
 }

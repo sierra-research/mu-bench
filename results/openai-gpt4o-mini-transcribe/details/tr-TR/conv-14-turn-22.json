@@ -1,16 +1,22 @@
 {
   "gold": "Tamam baştan alıyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
-  "predicted": "Tamam baştan alıyorum. Artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi.",
+  "predicted": "Tamam, baştan alıyorum. Artı dokuz sıfır, bir, iki, üç, sıfır dokuz sıfır, dört, beş, altı, yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 16,
-  "werNormalizedGold": "tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "wer": 0.13333333333333333,
+  "werEdits": 2,
+  "werRefWords": 15,
+  "werNormalizedGold": "tamam baştan alıyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "werNormalizedPredicted": "tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "tamam baştan alıyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerNormalizedPredicted": "tamam baştan alıyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 4",
+      "reason": "'doksan' means 'ninety' and 'dokuz' means 'nine'; this changes the phone number significantly and would result in a completely different number being communicated.",
+      "score": 1
+    }
+  ]
 }

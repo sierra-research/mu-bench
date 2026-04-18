@@ -2,20 +2,25 @@
   "gold": "君玲，君玲。",
   "predicted": "君临",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 2,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "君玲 君玲",
-  "werNormalizedPredicted": "君玲",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "君临",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "君 玲 君 玲",
-  "sigWerNormalizedPredicted": "君 玲",
+  "sigWerNormalizedPredicted": "君 临",
   "sigWerErrors": [
     {
+      "error": "Substitution: '玲' to '临' at position 1",
+      "reason": "'玲' and '临' are different Chinese characters with different meanings, so this substitution significantly changes the intended name or meaning.",
+      "score": 1
+    },
+    {
       "error": "Deletion: '君' at position 2",
-      "reason": "A repeated name was omitted. If the repetition is important for identification or emphasis, its omission could be significant. In many contexts, omitting a repeated name may not change the core meaning, but if this is a proper noun or a name being confirmed, the deletion could be significant. Given the lack of context, erring on the side of caution, this is a significant error.",
+      "reason": "Omitting one occurrence of '君' changes the repetition pattern of the name, which is significant for names or phrases where repetition is meaningful.",
       "score": 1
     }
   ]

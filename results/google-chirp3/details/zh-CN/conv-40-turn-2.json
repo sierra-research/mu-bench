@@ -2,15 +2,21 @@
   "gold": "我正在等待新卡。想知道它的状态。",
   "predicted": "我正在办在信卡,想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
   "werRefWords": 14,
   "werNormalizedGold": "我正在等待新卡 想知道它的状态",
-  "werNormalizedPredicted": "我正在等待新卡 想知道它的状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我正在办在信卡 想知道它的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "我 正 在 等 待 新 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 新 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 办 在 信 卡 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '等' to '办' at position 3",
+      "reason": "'等' means 'wait' and '办' means 'handle/do'. This changes the meaning of the sentence from 'waiting for a new card' to 'handling a new card', which is a significant change in intent.",
+      "score": 1
+    }
+  ]
 }

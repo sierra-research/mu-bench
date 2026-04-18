@@ -1,21 +1,26 @@
 {
   "gold": "Vâng ạ.",
-  "predicted": "반가워",
+  "predicted": "不好",
   "unintelligible": false,
-  "wer": 1.5,
-  "werEdits": 3,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "vâng ạ",
-  "werNormalizedPredicted": "반 가 워",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "不好",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "vâng ạ",
-  "sigWerNormalizedPredicted": "반 가 워",
+  "sigWerNormalizedPredicted": "不好",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'vâng' to '가' at position 0",
-      "reason": "The actual transcription is in a completely different language (Korean) than the expected (Vietnamese), making the meaning incoherent and unrecognizable.",
+      "error": "Substitution: 'vâng' to '不好' at position 0",
+      "reason": "The actual transcription is in a completely different language (Chinese instead of Vietnamese), which makes the meaning incoherent and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ạ' at position 1",
+      "reason": "'ạ' is missing in the actual transcription, further contributing to the loss of intended meaning. Combined with the language mismatch, this is a significant error.",
       "score": 1
     }
   ]

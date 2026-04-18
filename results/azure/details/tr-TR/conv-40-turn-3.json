@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
   "werNormalizedPredicted": "size kredi ben anlamadım not alamadım",
-  "significantWer": 0.2857142857142857,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'siz' to 'size' at position 0",
-      "reason": "'siz' (you) and 'size' (to you) are closely related in Turkish and do not significantly change the meaning in this context.",
+      "reason": "'siz' means 'you' in Turkish, while 'size' means 'to you'; the meaning is slightly changed but the overall intent is preserved.",
       "score": 2
     },
     {
       "error": "Deletion: 'edin' at position 2",
-      "reason": "'tekrar edin' means 'repeat' while 'kredi' means 'credit'; this substitution changes the meaning of the sentence significantly.",
+      "reason": "'tekrar edin' means 'repeat' in Turkish, while 'kredi' means 'credit'; this substitution completely changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'alamadım' to 'anlamadım' at position 4",
-      "reason": "'alamadım' means 'I couldn't get' and 'anlamadım' means 'I didn't understand'; this changes the meaning of the sentence.",
+      "reason": "'alamadım' means 'I couldn't get' and 'anlamadım' means 'I didn't understand'; this changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

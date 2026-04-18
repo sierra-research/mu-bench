@@ -2,15 +2,36 @@
   "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
   "predicted": "Más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
   "werRefWords": 15,
   "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 1",
+      "reason": "'Cincuenta' (fifty) and 'cinco' (five) are different numbers, which changes the meaning of the numeric sequence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 2",
+      "reason": "Omitting 'y' (and) in a numeric sequence can cause confusion in how the numbers are grouped or understood, but the main numbers are still present.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 4",
+      "reason": "Again, 'cincuenta' (fifty) and 'cinco' (five) are different numbers, which significantly alters the intended number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 5",
+      "reason": "Omitting 'y' (and) in a numeric sequence can cause minor confusion, but the main numbers are still present.",
+      "score": 2
+    }
+  ]
 }

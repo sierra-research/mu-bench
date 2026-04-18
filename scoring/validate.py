@@ -11,9 +11,10 @@ New in the fairness-fixes release:
     required keys (item 5). Values must be ``default`` or an explicit
     disclosure string; non-default values require an ``override: <key>``
     line in ``notes``.
-  * ``latency.json`` may be either the legacy flat map (warns during the
-    back-compat window) or the new schema with ``meta.protocol``,
+  * ``latency.json`` must use the new schema with ``meta.protocol``,
     ``meta.region``, and protocol-specific per-entry fields (item 4).
+    The legacy flat ``{"<locale>/<uid>": ms}`` schema was dropped with
+    the rollout PR.
 """
 
 import argparse
@@ -53,6 +54,13 @@ ALLOWED_LATENCY_REGIONS = {
     "eu-central-1",
     "ap-southeast-1",
     "ap-northeast-1",
+    # Multi-region. Permitted for providers that don't expose a
+    # single-region endpoint for the model under test (e.g. Google
+    # Chirp-3 is only routable via the "us" multi-region today). Less
+    # ideal for reproducibility than a single region, so prefer the
+    # specific names above when the provider supports them.
+    "us",
+    "eu",
 }
 
 MAX_FILE_SIZE_BYTES = 10_000
@@ -247,61 +255,6 @@ def validate_submission_safety(submission_dir):
     return issues
 
 
-def _validate_latency_legacy(data, submitted_by_locale, warnings):
-    """Validate the legacy flat latency.json schema.
-
-    Back-compat fence during rollout: accepted with a warning, interpreted
-    as ``protocol=batch``, ``region=unknown``. Drops when the rollout PR
-    migrates every provider to the new schema.
-    """
-    issues = []
-    bad_values = []
-    bare_keys = []
-    for key, val in data.items():
-        if not isinstance(val, (int, float)):
-            bad_values.append(key)
-        if "/" not in key:
-            bare_keys.append(key)
-
-    if bad_values:
-        issues.append(
-            f"latency.json has non-numeric values for {len(bad_values)} key(s); first few: {', '.join(bad_values[:5])}"
-        )
-    if bare_keys:
-        issues.append(
-            f"latency.json has {len(bare_keys)} key(s) without '<locale>/' prefix; keys must be "
-            f"'<locale>/<utterance_id>' (e.g. 'en-US/conv-0-turn-0'). First few: "
-            f"{', '.join(bare_keys[:5])}"
-        )
-
-    required_keys = set()
-    for locale, ids in submitted_by_locale.items():
-        for uid in ids:
-            required_keys.add(f"{locale}/{uid}")
-    missing_keys = required_keys - set(data.keys())
-    if missing_keys:
-        shown = sorted(missing_keys)[:10]
-        more = f" (+{len(missing_keys) - len(shown)} more)" if len(missing_keys) > len(shown) else ""
-        issues.append(
-            f"latency.json is missing {len(missing_keys)} entries that have transcript files:\n"
-            + "\n".join(f"    - {k}" for k in shown)
-            + more
-        )
-
-    extra = set(data.keys()) - required_keys
-    if extra:
-        warnings.append(f"latency.json has {len(extra)} key(s) with no matching transcript (will be ignored)")
-
-    warnings.append(
-        "latency.json is using the legacy flat schema (string keys -> latency ms). "
-        "This is accepted for now as protocol=batch / region=unknown. Migrate to the "
-        "new schema with a 'meta' block and per-entry 'roundTripMs' / 'ttftMs' / "
-        "'completeMs' before the rollout PR lands — see submissions/SUBMITTING.md."
-    )
-    print(f"  latency.json (legacy): {len(data)} entries ({len(required_keys - missing_keys)} match transcripts)")
-    return issues
-
-
 def _validate_latency_new_schema(data, submitted_by_locale, warnings):
     """Validate the new latency.json schema.
 
@@ -414,15 +367,13 @@ def _validate_latency_new_schema(data, submitted_by_locale, warnings):
     return issues
 
 
-def _looks_like_new_schema(data) -> bool:
-    return isinstance(data, dict) and "meta" in data and "measurements" in data
-
-
 def validate_latency(submission_dir, submitted_by_locale):
     """Validate latency.json is present, valid, and covers every submitted transcript.
 
-    Accepts either the legacy flat schema (back-compat during rollout; warns)
-    or the new schema with ``meta`` + ``measurements`` (item 4).
+    Requires the new schema with ``meta`` + ``measurements`` (item 4 of the
+    fairness-fixes plan). The legacy flat ``{"<locale>/<uid>": ms}`` schema
+    was dropped with the rollout PR; submitters must include the ``meta``
+    block declaring ``protocol`` and ``region``.
     """
     issues = []
     warnings = []
@@ -439,18 +390,16 @@ def validate_latency(submission_dir, submitted_by_locale):
         issues.append(f"latency.json is not valid JSON: {e}")
         return issues, warnings
 
-    if not isinstance(data, dict):
+    if not isinstance(data, dict) or "meta" not in data or "measurements" not in data:
         issues.append(
-            "latency.json must be a JSON object: either {'meta': ..., 'measurements': ...} (new) "
-            "or a flat map '<locale>/<uid>' -> ms (legacy)"
+            "latency.json must be a JSON object of the form "
+            "{'meta': {'protocol': ..., 'region': ...}, 'measurements': {...}}. "
+            "The legacy flat '<locale>/<uid>' -> ms schema is no longer accepted; "
+            "see submissions/SUBMITTING.md."
         )
         return issues, warnings
 
-    if _looks_like_new_schema(data):
-        issues.extend(_validate_latency_new_schema(data, submitted_by_locale, warnings))
-    else:
-        issues.extend(_validate_latency_legacy(data, submitted_by_locale, warnings))
-
+    issues.extend(_validate_latency_new_schema(data, submitted_by_locale, warnings))
     return issues, warnings
 
 

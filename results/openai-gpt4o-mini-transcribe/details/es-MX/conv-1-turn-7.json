@@ -1,37 +1,32 @@
 {
   "gold": "Sí, por favor. Quisiera saber cuál es el número de envío, el seguimiento para poder verificarlo. No sé si tengo que hacerlo por la aplicación o por email.",
-  "predicted": "Sí, por favor, quisiera saber cuál es el número de envío de seguimiento para poder revisarlo. No sé si tengo que hacerlo en la aplicación o en el informe electrónico.",
+  "predicted": "Sí, por favor, quisiera saber cuál es el número de envío, el seguimiento para poder revisarlo. No sé si tengo que hacerlo en la aplicación o en el informe de envío.",
   "unintelligible": false,
   "wer": 0.25,
   "werEdits": 7,
   "werRefWords": 28,
-  "werNormalizedGold": "si por favor quisiera saber cual es el numero de envio el seguimiento para poder verificarlo no se si tengo que hacerlo por la aplicacion o por email",
-  "werNormalizedPredicted": "si por favor quisiera saber cual es el numero de envio de seguimiento para poder revisarlo no se si tengo que hacerlo en la aplicacion o en el informe electronico",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder verificarlo no sé si tengo que hacerlo por la aplicación o por email",
+  "werNormalizedPredicted": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder revisarlo no sé si tengo que hacerlo en la aplicación o en el informe de envío",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 28,
-  "sigWerNormalizedGold": "si por favor quisiera saber cual es el numero de envio el seguimiento para poder verificarlo no se si tengo que hacerlo por la aplicacion o por email",
-  "sigWerNormalizedPredicted": "si por favor quisiera saber cual es el numero de envio de seguimiento para poder revisarlo no se si tengo que hacerlo en la aplicacion o en el informe electronico",
+  "sigWerNormalizedGold": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder verificarlo no sé si tengo que hacerlo por la aplicación o por email",
+  "sigWerNormalizedPredicted": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder revisarlo no sé si tengo que hacerlo en la aplicación o en el informe de envío",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'el' to 'de' at position 11",
-      "reason": "The preposition changes from 'el seguimiento' (the tracking) to 'de seguimiento' (of tracking), which is a minor grammatical change and does not alter the overall meaning.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'verificarlo' to 'revisarlo' at position 15",
-      "reason": "'Verificarlo' (to verify it) and 'revisarlo' (to check it) are very close in meaning in this context; both refer to checking the status, so the meaning is preserved.",
+      "reason": "'Verificarlo' (to verify it) and 'revisarlo' (to check/review it) are very close in meaning in this context; both refer to checking the status of the shipment.",
       "score": 3
     },
     {
       "error": "Substitution: 'por' to 'en' at position 22",
-      "reason": "Changing 'por la aplicacion' (through the app) to 'en la aplicacion' (in the app) is a minor prepositional difference and does not change the intended meaning.",
+      "reason": "Changing 'por la aplicación' (through the app) to 'en la aplicación' (in the app) does not change the overall meaning; both refer to using the app.",
       "score": 3
     },
     {
-      "error": "Substitution: 'por' to 'informe' at position 26",
-      "reason": "The insertion of 'en' before 'el informe electronico' (in the electronic report) slightly changes the grammatical structure but does not significantly affect the meaning.",
-      "score": 2
+      "error": "Substitution: 'por' to 'de' at position 26",
+      "reason": "The phrase 'en el informe de envío' (in the shipping report) is inserted instead of 'por email' (by email), which changes the method of checking the shipment. This alters the meaning significantly.",
+      "score": 1
     }
   ]
 }

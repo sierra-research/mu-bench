@@ -1,16 +1,27 @@
 {
   "gold": "Tôi muốn xin cấp thẻ mới. Muốn biết tình trạng thẻ như thế nào? Đã xin rồi.",
-  "predicted": "Ờ tôi muốn là xin cấp thẻ mới, à, muốn biết cái tình trạng thẻ như thế nào. Đã xin rồi",
+  "predicted": "Ờ tôi muốn à, xin cấp thẻ mới và muốn biết cái tình trạng thẻ như thế nào. Đã xin rồi",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
   "werNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
-  "werNormalizedPredicted": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tôi muốn xin cấp thẻ mới và muốn biết cái tình trạng thẻ như thế nào đã xin rồi",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
-  "sigWerNormalizedPredicted": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi muốn xin cấp thẻ mới và muốn biết cái tình trạng thẻ như thế nào đã xin rồi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'và' at position 6",
+      "reason": "The insertion of 'và' (meaning 'and') adds a conjunction but does not change the overall meaning of the sentence. The intent and information remain the same.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 8",
+      "reason": "The insertion of 'cái' (a classifier in Vietnamese) before 'tình trạng' is a minor grammatical addition that does not alter the meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

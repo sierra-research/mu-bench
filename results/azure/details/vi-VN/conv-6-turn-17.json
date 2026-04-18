@@ -6,21 +6,31 @@
   "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "đã xác nhận đã xác nhận",
-  "werNormalizedPredicted": "dạ thích nhận dạ thích nhận",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "thích nhận thích nhận",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "đã xác nhận đã xác nhận",
-  "sigWerNormalizedPredicted": "dạ thích nhận dạ thích nhận",
+  "sigWerNormalizedPredicted": "thích nhận thích nhận",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'đã' to 'dạ' at position 0",
-      "reason": "'đã' means 'already' or indicates confirmation, while 'dạ' is a polite particle meaning 'yes' or 'okay'. This substitution changes the meaning of the sentence from confirmation to a polite response, which significantly alters the intent.",
+      "error": "Substitution: 'đã' to 'thích' at position 0",
+      "reason": "'đã' means 'already' or indicates confirmation, while 'thích' means 'like'; this changes the meaning of the sentence completely.",
       "score": 1
     },
     {
-      "error": "Substitution: 'đã' to 'dạ' at position 3",
-      "reason": "Repeats the same error as above, again changing the meaning from confirmation to a polite response, which is a significant change in meaning.",
+      "error": "Deletion: 'xác' at position 1",
+      "reason": "Omitting 'xác' (from 'xác nhận' meaning 'confirm') removes the confirmation meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đã' to 'thích' at position 3",
+      "reason": "Same as above, this substitution changes the meaning from confirmation to preference, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'xác' at position 4",
+      "reason": "Again, omitting 'xác' removes the confirmation meaning, resulting in a significant change in meaning.",
       "score": 1
     }
   ]

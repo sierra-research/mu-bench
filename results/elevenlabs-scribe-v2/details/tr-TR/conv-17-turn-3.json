@@ -2,15 +2,26 @@
   "gold": "C N C N.",
   "predicted": "Cene, cene",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "c n c n",
-  "werNormalizedPredicted": "c n c n",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "cene cene",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "c n c n",
-  "sigWerNormalizedPredicted": "c n c n",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "cene cene",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'cene' at position 0",
+      "reason": "The expected is a single letter 'c', but the actual is 'cene', which is not a single letter and changes the intended spelled-out sequence. This significantly alters the meaning, especially in a context where each letter matters (e.g., spelling out a code or name).",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'c' at position 2",
+      "reason": "The expected sequence has a 'c' at this position, but it is missing in the actual transcription. Omitting a letter in a spelled-out sequence is a significant error as it changes the intended output.",
+      "score": 1
+    }
+  ]
 }

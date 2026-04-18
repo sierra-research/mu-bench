@@ -2,15 +2,31 @@
   "gold": "Necesito saber mi nueva tarjeta por qué no ha llegado.",
   "predicted": "Necesito una saber mi nueva tarjeta porque no ha llegado.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "werNormalizedPredicted": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "significantWer": 0.0,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "necesito saber mi nueva tarjeta por que no ha llegado",
+  "werNormalizedPredicted": "necesito una saber mi nueva tarjeta porque no ha llegado",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "sigWerNormalizedPredicted": "necesito saber mi nueva tarjeta porque no ha llegado",
-  "sigWerErrors": []
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "necesito saber mi nueva tarjeta por que no ha llegado",
+  "sigWerNormalizedPredicted": "necesito una saber mi nueva tarjeta porque no ha llegado",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'una' at position 1",
+      "reason": "The insertion of 'una' ('a') before 'saber' does not significantly change the meaning of the sentence; it is a minor grammatical error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'por' to 'porque' at position 5",
+      "reason": "'por que' (why) and 'porque' (because) have different meanings, but in this context, the intent is still clear and the overall meaning is not derailed.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'que' at position 6",
+      "reason": "The word 'que' is omitted because 'porque' was used instead of 'por que', but the sentence remains understandable and the meaning is preserved.",
+      "score": 2
+    }
+  ]
 }

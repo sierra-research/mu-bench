@@ -2,31 +2,26 @@
   "gold": "Urión 30, col. Tlatilco.",
   "predicted": "Orión 30, Coltlatlico",
   "unintelligible": false,
-  "wer": 0.75,
-  "werEdits": 3,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "urión treinta col tlatilco",
-  "werNormalizedPredicted": "orión treinta coltlatlico",
-  "significantWer": 0.5,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "urión treinta coltlatlico",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "urión treinta col tlatilco",
-  "sigWerNormalizedPredicted": "orión treinta coltlatlico",
+  "sigWerNormalizedPredicted": "urión treinta coltlatlico",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'urión' to 'orión' at position 0",
-      "reason": "'urión' and 'orión' are similar phonetically, but if these are proper nouns or place names, a single letter difference can be a minor error as the meaning is still likely clear.",
+      "error": "Substitution: 'col' to 'coltlatlico' at position 2",
+      "reason": "'coltlatlico' appears to be a concatenation of 'col' and 'tlatilco', merging two separate words into one. This could cause confusion in understanding the address or location, but the overall meaning is still somewhat recoverable.",
       "score": 2
     },
     {
-      "error": "Substitution: 'col' to 'coltlatlico' at position 2",
-      "reason": "'coltlatlico' appears to be a concatenation of 'col' and 'tlatilco', which could confuse the meaning or refer to a different entity, making this a significant error.",
-      "score": 1
-    },
-    {
       "error": "Deletion: 'tlatilco' at position 3",
-      "reason": "'tlatilco' is omitted as a separate word, which could result in loss of important information, especially if these are place names or addresses.",
-      "score": 1
+      "reason": "'tlatilco' is not present as a separate word, but its content is merged into 'coltlatlico'. The information is not lost, just formatted incorrectly, so the meaning is mostly preserved.",
+      "score": 2
     }
   ]
 }

@@ -2,15 +2,21 @@
   "gold": "Rồi. Xin cảm ơn.",
   "predicted": "À thôi rồi. Xin cảm ơn.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
   "werNormalizedGold": "rồi xin cảm ơn",
-  "werNormalizedPredicted": "rồi xin cảm ơn",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "thôi rồi xin cảm ơn",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "rồi xin cảm ơn",
-  "sigWerNormalizedPredicted": "rồi xin cảm ơn",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "thôi rồi xin cảm ơn",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'thôi' at position 0",
+      "reason": "'thôi' (meaning 'stop' or 'that's enough') is added at the beginning, but the rest of the sentence is unchanged. The overall meaning is only slightly altered, as the main message of thanking remains clear.",
+      "score": 2
+    }
+  ]
 }

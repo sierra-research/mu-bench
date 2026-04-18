@@ -1,22 +1,27 @@
 {
   "gold": "Thôi được rồi. Cảm ơn.",
-  "predicted": "nó đi rồi cảm ơn",
+  "predicted": "nó là cảm ơn",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "thoi duoc roi cam on",
-  "werNormalizedPredicted": "no di roi cam on",
-  "significantWer": 0.2,
+  "werNormalizedGold": "thôi được rồi cảm ơn",
+  "werNormalizedPredicted": "nó là cảm ơn",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "thoi duoc roi cam on",
-  "sigWerNormalizedPredicted": "no di roi cam on",
+  "sigWerNormalizedGold": "thôi được rồi cảm ơn",
+  "sigWerNormalizedPredicted": "nó là cảm ơn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'thoi' to 'no' at position 0",
-      "reason": "'thoi' (meaning 'that's enough' or 'stop' in Vietnamese) is replaced by 'no' (meaning 'it' or 'that'), which changes the intent of the sentence significantly and alters the meaning.",
+      "error": "Substitution: 'thôi' to 'nó' at position 0",
+      "reason": "'thôi' means 'okay' or 'that's enough', while 'nó' means 'it' or 'he/she/they'; this substitution changes the subject and meaning of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 2",
+      "reason": "'rồi' means 'already' or 'then', and its omission changes the nuance and completeness of the sentence, but the main intent ('cảm ơn' - thank you) is still present.",
+      "score": 2
     }
   ]
 }

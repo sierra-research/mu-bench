@@ -2,15 +2,31 @@
   "gold": "听到了吗？",
   "predicted": "聽得到嗎？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
-  "werNormalizedGold": "聽得到嗎",
+  "werNormalizedGold": "听到了吗",
   "werNormalizedPredicted": "聽得到嗎",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "聽 得 到 嗎",
+  "sigWerNormalizedGold": "听 到 了 吗",
   "sigWerNormalizedPredicted": "聽 得 到 嗎",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '得' at position 0",
+      "reason": "'听' and '聽' are simplified and traditional forms of the same word, so the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '了' to '嗎' at position 2",
+      "reason": "'了' (le) is a particle indicating completion, while '得' (de) is a structural particle; this changes the grammatical structure but the overall meaning ('Did you hear?') is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '吗' at position 3",
+      "reason": "'吗' and '嗎' are simplified and traditional forms of the same word, so the meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

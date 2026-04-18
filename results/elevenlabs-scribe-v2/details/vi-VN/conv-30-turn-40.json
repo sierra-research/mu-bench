@@ -5,22 +5,22 @@
   "wer": 0.8,
   "werEdits": 4,
   "werRefWords": 5,
-  "werNormalizedGold": "thoi duoc roi cam on",
-  "werNormalizedPredicted": "thoi goi cho man",
-  "significantWer": 0.4,
+  "werNormalizedGold": "thôi được rồi cảm ơn",
+  "werNormalizedPredicted": "thôi gọi cho mận",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "thoi duoc roi cam on",
-  "sigWerNormalizedPredicted": "thoi goi cho man",
+  "sigWerNormalizedGold": "thôi được rồi cảm ơn",
+  "sigWerNormalizedPredicted": "thôi gọi cho mận",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'duoc' to 'goi' at position 1",
-      "reason": "'duoc' means 'okay' or 'can', while 'goi' means 'call'; this changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'được' to 'gọi' at position 1",
+      "reason": "'được rồi cảm ơn' means 'that's fine, thank you', while 'gọi cho mận' means 'call Mận' (a name). This substitution changes the meaning of the sentence completely.",
       "score": 1
     },
     {
-      "error": "Deletion: 'on' at position 4",
-      "reason": "'on' is part of 'cam on' (thank you); omitting it makes the phrase incomplete and changes the meaning.",
+      "error": "Deletion: 'ơn' at position 4",
+      "reason": "'ơn' completes 'cảm ơn' (thank you). Its omission means the phrase 'thank you' is not present, which is a significant change in meaning.",
       "score": 1
     }
   ]

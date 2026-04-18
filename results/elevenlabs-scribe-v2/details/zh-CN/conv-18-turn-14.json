@@ -2,15 +2,26 @@
   "gold": "我的邮箱地址是林梅 at email 点 com。",
   "predicted": "我的邮箱地址是lingmei at email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是林梅 at email 点 com",
-  "werNormalizedPredicted": "我的邮箱地址是林梅 at email 点 com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "我的邮箱地址是 lingmei at email 点 com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 林 梅 at email 点 com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 林 梅 at email 点 com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 lingmei at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'lingmei' at position 7",
+      "reason": "The expected is a single Chinese character '林', but the actual is the full pinyin 'lingmei', which represents both '林' and '梅' together. This changes the format from Chinese characters to pinyin, but the meaning (the name) is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '梅' at position 8",
+      "reason": "'梅' is missing as a separate character in the actual, but it is included as part of 'lingmei' in pinyin. The name is still fully represented, just in a different format.",
+      "score": 2
+    }
+  ]
 }

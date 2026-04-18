@@ -5,9 +5,9 @@
   "wer": 0.5,
   "werEdits": 4,
   "werRefWords": 8,
-  "werNormalizedGold": "帮 我 转 接 人 工 客 服",
-  "werNormalizedPredicted": "高 展 兼 人 工 客 服",
-  "significantWer": 0.25,
+  "werNormalizedGold": "帮我转接人工客服",
+  "werNormalizedPredicted": "高展兼人工客服",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "帮 我 转 接 人 工 客 服",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '帮' to '高' at position 0",
-      "reason": "'帮' (help) is replaced with '高' (tall/high), which is unrelated and changes the meaning of the request, making the sentence incoherent.",
+      "reason": "'帮' (help) is replaced with '高' (tall/high), which changes the meaning of the request and makes the sentence incoherent in context.",
       "score": 1
     },
     {
       "error": "Deletion: '接' at position 3",
-      "reason": "'接' (connect) is missing, which is essential to the meaning of the sentence (requesting to be connected to customer service).",
+      "reason": "Missing '接' (connect), which is essential for the meaning of 'transfer/connect to customer service', making the request incomplete.",
       "score": 1
     }
   ]

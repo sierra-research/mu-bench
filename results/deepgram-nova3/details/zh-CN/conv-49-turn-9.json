@@ -2,15 +2,26 @@
   "gold": "是美玲 at email dot com。",
   "predicted": "是魅灵email。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "是美玲 at email dot com",
-  "werNormalizedPredicted": "是美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是美玲 email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 美 玲 email com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'at' at position 3",
+      "reason": "'at' is a key part of the email address format. Omitting it makes the email address incomplete and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 5",
+      "reason": "'dot' is necessary to indicate the period in the email address. Its omission makes the email address format incorrect and unusable.",
+      "score": 1
+    }
+  ]
 }

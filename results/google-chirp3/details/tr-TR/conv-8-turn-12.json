@@ -2,20 +2,25 @@
   "gold": "Tabii. Adım Zaynep soyadım Arslan.",
   "predicted": "Adım Zeynep, soyadım Arslan.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "tabii adım zeynep soyadım arslan",
+  "werNormalizedGold": "tabii adım zaynep soyadım arslan",
   "werNormalizedPredicted": "adım zeynep soyadım arslan",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "tabii adım zeynep soyadım arslan",
+  "sigWerNormalizedGold": "tabii adım zaynep soyadım arslan",
   "sigWerNormalizedPredicted": "adım zeynep soyadım arslan",
   "sigWerErrors": [
     {
       "error": "Deletion: 'tabii' at position 0",
-      "reason": "'tabii' is a discourse marker meaning 'of course' in Turkish. Its omission does not change the core meaning of the sentence, which is introducing oneself. The main information (name and surname) is preserved.",
+      "reason": "'tabii' is a polite filler word meaning 'of course' in Turkish; its omission does not change the main meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 2",
+      "reason": "Minor misspelling of a proper noun, but the name is still clearly recognizable as 'zeynep'.",
       "score": 2
     }
   ]

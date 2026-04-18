@@ -1,16 +1,22 @@
 {
   "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
-  "predicted": "E-mail adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
+  "predicted": "E-mail adresinde adımla soyadım arasında nokta olması lazım. Ahmet.arslan ya da ahmet.arslan olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
   "werRefWords": 17,
   "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "werNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet nokta arslan ya da ahmet nokta arslan olacak",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "sigWerNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet nokta arslan ya da ahmet nokta arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dot' to 'nokta' at position 9",
+      "reason": "'dot' and 'nokta' mean the same thing ('dot' is English, 'nokta' is Turkish), and in this context both are used to indicate the period in an email address. The meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

@@ -2,21 +2,26 @@
   "gold": "Tabii. Atatürk Caddesi No 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodu 34 660.",
   "predicted": "Tabii. Atatürk Caddesi No 45/6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul, posta kodu 34600",
   "unintelligible": false,
-  "wer": 0.047619047619047616,
-  "werEdits": 1,
-  "werRefWords": 21,
-  "werNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört bin altı yüz altmış",
-  "werNormalizedPredicted": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört bin altı yüz",
-  "significantWer": 0.047619047619047616,
+  "wer": 0.2,
+  "werEdits": 4,
+  "werRefWords": 20,
+  "werNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
+  "werNormalizedPredicted": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu üç yüz kırk altı yüz",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört bin altı yüz altmış",
-  "sigWerNormalizedPredicted": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört bin altı yüz",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
+  "sigWerNormalizedPredicted": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu üç yüz kırk altı yüz",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'altmış' at position 20",
-      "reason": "The omission of 'altmış' (sixty) from the postal code changes the address and could result in mail being undeliverable or misdirected. This is a significant error as it affects the accuracy of the address.",
+      "error": "Substitution: 'otuz' to 'yüz' at position 15",
+      "reason": "The expected phrase 'otuz dört altı yüz altmış' (34660) is replaced with 'üç yüz kırk altı yüz' (34600), which changes the postal code. This is a significant error as it alters a critical piece of information.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'altmış' at position 19",
+      "reason": "infra_error",
+      "score": 2
     }
   ]
 }

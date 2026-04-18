@@ -2,15 +2,26 @@
   "gold": "所以你听不懂。",
   "predicted": "Zoe你听不懂。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "所以你听不懂",
-  "werNormalizedPredicted": "所以你听不懂",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "zoe 你听不懂",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "所 以 你 听 不 懂",
-  "sigWerNormalizedPredicted": "所 以 你 听 不 懂",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "zoe 你 听 不 懂",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '所' to 'zoe' at position 0",
+      "reason": "'所' is a Chinese character meaning 'so' or 'therefore', while 'zoe' is an unrelated English word/name, making the sentence incoherent and changing the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '以' at position 1",
+      "reason": "'以' is part of the phrase '所以', which together means 'so' or 'therefore'. Its omission breaks the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

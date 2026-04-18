@@ -1,16 +1,22 @@
 {
   "gold": "Merhaba. Ben kredi kartı limitimi artırmak istiyordum.",
-  "predicted": "Merhaba, ben kredi kartı limitimi artırmak istiyordum.",
+  "predicted": "Merhaba, banka kredi kartı limitimi arttırmak istiyordum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
   "werRefWords": 7,
   "werNormalizedGold": "merhaba ben kredi kartı limitimi artırmak istiyordum",
-  "werNormalizedPredicted": "merhaba ben kredi kartı limitimi artırmak istiyordum",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "merhaba banka kredi kartı limitimi artırmak istiyordum",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "merhaba ben kredi kartı limitimi artırmak istiyordum",
-  "sigWerNormalizedPredicted": "merhaba ben kredi kartı limitimi artırmak istiyordum",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "merhaba banka kredi kartı limitimi artırmak istiyordum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ben' to 'banka' at position 1",
+      "reason": "'ben' means 'I', while 'banka' means 'bank'; this changes the subject of the sentence and alters the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

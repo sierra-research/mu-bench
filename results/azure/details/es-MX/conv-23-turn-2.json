@@ -7,25 +7,25 @@
   "werRefWords": 5,
   "werNormalizedGold": "espere deje y lo anoto",
   "werNormalizedPredicted": "ay espere deje la noto",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "espere deje y lo anoto",
   "sigWerNormalizedPredicted": "ay espere deje la noto",
   "sigWerErrors": [
     {
       "error": "Insertion: 'ay' at position 0",
-      "reason": "'Ay' is an interjection expressing surprise or attention, but its addition does not change the main meaning of the sentence.",
+      "reason": "'Ay' is an interjection expressing surprise or attention, but does not change the main meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'y' to 'la' at position 2",
-      "reason": "Substituting 'y' (and) with 'la' (the/her) changes the structure of the sentence, but the overall intent (waiting and noting something) is still understandable.",
-      "score": 2
+      "reason": "Substituting 'y' (and) with 'la' (the/her) changes the structure and meaning of the sentence, as it alters what is being noted.",
+      "score": 1
     },
     {
       "error": "Deletion: 'anoto' at position 4",
-      "reason": "'Anoto' (I note/write down) is missing, which removes the main action of the sentence and significantly alters the meaning.",
+      "reason": "'Anoto' (I write down) is missing, which removes the main action of the sentence and significantly changes the meaning.",
       "score": 1
     }
   ]

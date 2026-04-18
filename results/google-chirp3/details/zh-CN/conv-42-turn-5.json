@@ -7,7 +7,7 @@
   "werRefWords": 4,
   "werNormalizedGold": "终于到了",
   "werNormalizedPredicted": "可以的",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "终 于 到 了",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '终' to '可' at position 0",
-      "reason": "The substituted word changes the meaning of the sentence entirely; '终于到了' means 'finally arrived', while '可以的' means 'it's okay/can do', which is unrelated.",
+      "reason": "The first word is completely different, changing the meaning of the sentence entirely.",
       "score": 1
     },
     {
       "error": "Deletion: '了' at position 3",
-      "reason": "Omitting '了' removes the aspect marker that completes the meaning of 'finally arrived', further derailing the sentence's meaning.",
+      "reason": "The final word is missing, further making the sentence incoherent compared to the expected.",
       "score": 1
     }
   ]

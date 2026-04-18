@@ -7,25 +7,25 @@
   "werRefWords": 8,
   "werNormalizedGold": "rồi vui lòng cho tôi biết lại mã",
   "werNormalizedPredicted": "rồi cô làm lại cho tôi viết lại cái mới á",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "rồi vui lòng cho tôi biết lại mã",
   "sigWerNormalizedPredicted": "rồi cô làm lại cho tôi viết lại cái mới á",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vui' to 'làm' at position 1",
-      "reason": "'cô' (miss/madam) introduces a new subject, changing the sentence structure and potentially the meaning.",
-      "score": 2
+      "reason": "'cô' (miss/madam) introduces a different subject, which changes the meaning and context of the request.",
+      "score": 1
     },
     {
       "error": "Substitution: 'biết' to 'viết' at position 5",
-      "reason": "'vui lòng' means 'please', while 'làm' means 'do/make', changing the politeness and intent of the request.",
+      "reason": "'vui' (please) is a polite request, while 'làm' (do) changes the intent from a polite request to an action, altering the tone and meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'mã' to 'á' at position 7",
-      "reason": "'biết' means 'know', 'viết' means 'write', which changes the action being requested.",
+      "reason": "'biết' (know) and 'viết' (write) are completely different verbs, changing the meaning of the request.",
       "score": 1
     }
   ]

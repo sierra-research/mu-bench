@@ -5,23 +5,23 @@
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "si deja encuentro algo para anotarlo",
-  "werNormalizedPredicted": "si deja encuentro donde anotarlo",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí deja encuentro algo para anotarlo",
+  "werNormalizedPredicted": "sí deja encuentro dónde anotarlo",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "si deja encuentro algo para anotarlo",
-  "sigWerNormalizedPredicted": "si deja encuentro donde anotarlo",
+  "sigWerNormalizedGold": "sí deja encuentro algo para anotarlo",
+  "sigWerNormalizedPredicted": "sí deja encuentro dónde anotarlo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'algo' to 'donde' at position 3",
-      "reason": "'algo' (something) and 'donde' (where) are different words, but in this context, both refer to a place or thing to write on. The overall intent of the sentence remains the same: finding a way to write something down.",
-      "score": 2
+      "error": "Substitution: 'algo' to 'dónde' at position 3",
+      "reason": "'algo' (something) and 'dónde' (where) are completely different in meaning; this changes the intent of the sentence from finding something to write with to finding where to write, which alters the meaning significantly.",
+      "score": 1
     },
     {
       "error": "Deletion: 'para' at position 4",
-      "reason": "Omitting 'para' (for) slightly changes the grammatical structure, but the meaning of the sentence is still clear and unchanged in context.",
-      "score": 2
+      "reason": "Omitting 'para' (for) further disrupts the intended meaning, making the sentence less coherent and changing the structure of the action being described.",
+      "score": 1
     }
   ]
 }

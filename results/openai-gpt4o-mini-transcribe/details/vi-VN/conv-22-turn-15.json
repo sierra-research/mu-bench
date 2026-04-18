@@ -1,26 +1,21 @@
 {
   "gold": "Cho tôi nghe tổng số dư trước đi.",
-  "predicted": "ừm cho tôi nghe tập đầu trước đi",
+  "predicted": "ờ cho tôi nghe tập thôi nhiều trước đi",
   "unintelligible": false,
   "wer": 0.375,
   "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "cho tôi nghe tổng số dư trước đi",
-  "werNormalizedPredicted": "cho tôi nghe tập đầu trước đi",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "cho tôi nghe tập thôi nhiều trước đi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "cho tôi nghe tổng số dư trước đi",
-  "sigWerNormalizedPredicted": "cho tôi nghe tập đầu trước đi",
+  "sigWerNormalizedPredicted": "cho tôi nghe tập thôi nhiều trước đi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tổng' to 'tập' at position 3",
-      "reason": "'Tổng số dư' means 'total balance', while 'tập đầu' means 'first episode'. This substitution changes the meaning of the request entirely, from asking for a balance to asking for an episode.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'dư' at position 5",
-      "reason": "Omitting 'dư' (balance) further removes the reference to the account balance, making the sentence about something else entirely.",
+      "reason": "'Tổng số dư' means 'total balance', while 'tập' means 'exercise' or 'book', which changes the meaning of the request entirely and makes the sentence incoherent in the banking context.",
       "score": 1
     }
   ]

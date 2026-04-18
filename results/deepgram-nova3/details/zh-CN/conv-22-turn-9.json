@@ -2,15 +2,31 @@
   "gold": "C C N 4 8 2。",
   "predicted": "西恩四报二",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
-  "werNormalizedGold": "c c n four eight two",
-  "werNormalizedPredicted": "c c n four eight two",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c c n 四 八 二",
+  "werNormalizedPredicted": "西恩四报二",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c c n four eight two",
-  "sigWerNormalizedPredicted": "c c n four eight two",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c c n 四 八 二",
+  "sigWerNormalizedPredicted": "西 恩 四 报 二",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '西' at position 0",
+      "reason": "'c' is the English letter C, while '西' is the Chinese character for 'west'; this is a significant error as the meaning and representation are completely different.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 2",
+      "reason": "'n' is missing in the actual transcription, which is a significant error as it omits a letter in a sequence, changing the intended content.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '八' to '报' at position 4",
+      "reason": "'八' means 'eight' in Chinese, while '报' means 'report' or 'newspaper'; this is a significant error as it changes a number to an unrelated word, altering the meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -2,25 +2,20 @@
   "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
   "predicted": "Yalnız pardon, e-posta adresimde bir noktayı unuttunuz. Ahmet'le Arslan arasında nokta olacak. Ahmet nokta Arslan.",
   "unintelligible": false,
-  "wer": 0.11764705882352941,
-  "werEdits": 2,
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
   "werRefWords": 17,
   "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "werNormalizedPredicted": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmetle arslan arasında nokta olacak ahmet nokta arslan",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet le arslan arasında nokta olacak ahmet nokta arslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmetle arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet le arslan arasında nokta olacak ahmet nokta arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ahmet' to 'ahmetle' at position 8",
-      "reason": "'ahmetle' means 'with Ahmet' in Turkish, while 'ahmet' is just the name. This changes the structure of the phrase but does not derail the overall meaning, as the context is about an email address and the dot between names.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 've' at position 9",
-      "reason": "'ve' means 'and' in Turkish, so omitting it slightly changes the phrasing ('ahmet and arslan' vs 'ahmetle arslan'), but the meaning is still clear in context. The sentence still communicates that there is a dot between Ahmet and Arslan.",
+      "error": "Substitution: 've' to 'le' at position 9",
+      "reason": "'ve' means 'and' in Turkish, while 'le' is a suffix meaning 'with'; substituting 'and' for 'with' changes the relationship between the names and could confuse the meaning of the sentence, but the overall intent (inserting a dot between two names) is still understandable.",
       "score": 2
     }
   ]

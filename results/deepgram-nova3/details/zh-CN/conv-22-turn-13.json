@@ -2,26 +2,21 @@
   "gold": "美玲 at email dot com。",
   "predicted": "梅琳是email。com",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲是 email com",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "梅琳是 email dot com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 是 email com",
+  "sigWerNormalizedPredicted": "梅 琳 是 email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'at' to '是' at position 2",
-      "reason": "'at' is a critical part of the email address format, while '是' means 'is' in Chinese and does not serve the same function. This substitution makes the email address incoherent and unusable.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'dot' at position 4",
-      "reason": "Omitting 'dot' from the email address makes it incomplete and invalid, significantly affecting the meaning and usability of the address.",
-      "score": 1
+      "error": "Substitution: '美' to '梅' at position 0",
+      "reason": "Both are Chinese characters and common given names, but they are different characters with different meanings. In the context of a name, this is a minor error as the name is still recognizable but not exact.",
+      "score": 2
     }
   ]
 }

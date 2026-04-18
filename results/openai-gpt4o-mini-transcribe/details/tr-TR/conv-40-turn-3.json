@@ -1,26 +1,26 @@
 {
   "gold": "Siz tekrar edin, ben alamadım, not alamadım.",
-  "predicted": "Çiçekaydı, ben alamadım, not alamadım.",
+  "predicted": "Çiçekayı bir alamadım, not alamadım.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werEdits": 3,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
-  "werNormalizedPredicted": "çiçekaydı ben alamadım not alamadım",
-  "significantWer": 0.2857142857142857,
+  "werNormalizedPredicted": "çiçekayı bir alamadım not alamadım",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
-  "sigWerNormalizedPredicted": "çiçekaydı ben alamadım not alamadım",
+  "sigWerNormalizedPredicted": "çiçekayı bir alamadım not alamadım",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'siz' to 'çiçekaydı' at position 0",
-      "reason": "'çiçekaydı' is a completely different word from 'siz' (which means 'you' in Turkish), changing the subject and meaning of the sentence.",
+      "error": "Substitution: 'siz' to 'çiçekayı' at position 0",
+      "reason": "'çiçekayı' is a completely different word from 'siz' (which means 'you' in Turkish), changing the subject and making the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'tekrar' at position 1",
-      "reason": "Omitting 'tekrar' ('again' or 'repeat') removes the request to repeat, which changes the intent of the sentence.",
+      "error": "Deletion: 'edin' at position 2",
+      "reason": "'edin' is a verb meaning 'do' or 'make', and its omission removes the imperative structure of the sentence, making it incomplete and unclear.",
       "score": 1
     }
   ]

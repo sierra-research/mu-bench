@@ -2,20 +2,30 @@
   "gold": "Tabii. Artı 90 123. Tamam baştan alıyorum. Artı 90 123 0 90 45 67.",
   "predicted": "Tabii+ 90 120 3 Nisan baştan alıyorum+ 90 123 sıfır 90 45 67.",
   "unintelligible": false,
-  "wer": 0.05,
-  "werEdits": 1,
-  "werRefWords": 20,
-  "werNormalizedGold": "tabii artı doksan bir iki üç tamam baştan alıyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "tabii artı doksan bir iki üç nisan baştan alıyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "tabii artı doksan bir iki üç tamam baştan alıyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "tabii artı doksan bir iki üç nisan baştan alıyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "wer": 0.13636363636363635,
+  "werEdits": 3,
+  "werRefWords": 22,
+  "werNormalizedGold": "tabii artı doksan bir yüz yirmi üç tamam baştan alıyorum artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii artı doksan yüz yirmi üç nisan baştan alıyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "tabii artı doksan bir yüz yirmi üç tamam baştan alıyorum artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii artı doksan yüz yirmi üç nisan baştan alıyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tamam' to 'nisan' at position 6",
-      "reason": "'tamam' means 'okay' or 'done', while 'nisan' means 'April' (a month). This substitution changes the meaning of the sentence and could cause confusion in context.",
+      "error": "Deletion: 'bir' at position 3",
+      "reason": "Omitting 'bir' (one) from the phone number changes the numeric value, which is critical information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tamam' to 'nisan' at position 7",
+      "reason": "'tamam' means 'okay' or 'done', while 'nisan' is a month ('April'); this substitution makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 12",
+      "reason": "Omitting 'bir' (one) from the phone number again changes the numeric value, which is critical information.",
       "score": 1
     }
   ]

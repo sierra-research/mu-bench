@@ -2,15 +2,26 @@
   "gold": "不对。",
   "predicted": "Budwe.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "不对",
-  "werNormalizedPredicted": "不对",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "budwe",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "不 对",
-  "sigWerNormalizedPredicted": "不 对",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "budwe",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to 'budwe' at position 0",
+      "reason": "The actual transcription is in a different language and does not correspond to the expected Chinese character, resulting in a complete loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '对' at position 1",
+      "reason": "A key word is missing, further making the transcription incoherent and unrelated to the expected meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -2,21 +2,26 @@
   "gold": "Ay ¿qué?",
   "predicted": "¿Qué?",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 1,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "ay que",
+  "werNormalizedGold": "ay qué",
   "werNormalizedPredicted": "que",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "ay que",
+  "sigWerNormalizedGold": "ay qué",
   "sigWerNormalizedPredicted": "que",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'ay' at position 0",
-      "reason": "'ay' is an interjection in Spanish that expresses emotion or emphasis. Its omission changes the tone and meaning of the phrase, making the sentence less expressive and potentially altering its intent.",
-      "score": 2
+      "error": "Substitution: 'ay' to 'que' at position 0",
+      "reason": "'ay' is an interjection expressing emotion, while 'que' is a conjunction or pronoun; substituting 'ay' with 'que' changes the meaning and removes the emotional context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'qué' at position 1",
+      "reason": "Omitting 'qué' removes a key part of the phrase, making the actual transcription incomplete and changing the intended meaning.",
+      "score": 1
     }
   ]
 }

@@ -1,36 +1,41 @@
 {
   "gold": "Thế thì khi mà mình trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý giờ?",
-  "predicted": "À, thế thì khi mà mình chào đón người hàng thì mình có những tiện ích nào hấp dẫn gì ạ?",
+  "predicted": "À, thế thì khi mà mình chào đón người hàng thì mình cần những tiêu chí nào chủ yếu lý ạ?",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werEdits": 12,
+  "wer": 0.47619047619047616,
+  "werEdits": 10,
   "werRefWords": 21,
   "werNormalizedGold": "thế thì khi mà mình trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý giờ",
-  "werNormalizedPredicted": "thế thì khi mà mình chào đón người hàng thì mình có những tiện ích nào hấp dẫn gì ạ",
-  "significantWer": 0.19047619047619047,
-  "majorErrorsCount": 4,
+  "werNormalizedPredicted": "thế thì khi mà mình chào đón người hàng thì mình cần những tiêu chí nào chủ yếu lý ạ",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "thế thì khi mà mình trao đổi với ngân hàng thì mình cần nói như thế nào cho hợp lý giờ",
-  "sigWerNormalizedPredicted": "thế thì khi mà mình chào đón người hàng thì mình có những tiện ích nào hấp dẫn gì ạ",
+  "sigWerNormalizedPredicted": "thế thì khi mà mình chào đón người hàng thì mình cần những tiêu chí nào chủ yếu lý ạ",
   "sigWerErrors": [
     {
       "error": "Substitution: 'trao' to 'chào' at position 5",
-      "reason": "'Trao đổi' (to discuss/exchange) and 'chào đón' (to welcome) are completely different actions, changing the meaning of the sentence.",
+      "reason": "'trao đổi' (to exchange/discuss) and 'chào đón' (to welcome) are completely different actions, changing the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'ngân' at position 8",
-      "reason": "Omitting 'ngân hàng' (bank) removes the main subject of the sentence, making the context unclear.",
+      "reason": "Omitting 'ngân' from 'ngân hàng' (bank) changes the subject from 'bank' to just 'hàng' (goods), which is a significant change in meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: 'cần' to 'có' at position 12",
-      "reason": "'Cần' (need) and 'có' (have) express different intentions, altering the meaning of the sentence.",
+      "error": "Substitution: 'nói' to 'những' at position 13",
+      "reason": "'nói' (to speak/say) is replaced by 'những' (some/criteria), which changes the sentence structure and meaning significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'cho' to 'hấp' at position 17",
-      "reason": "'Cho hợp lý' (to be reasonable) and 'hấp dẫn' (attractive) are unrelated in meaning, significantly changing the intent.",
+      "error": "Substitution: 'cho' to 'chủ' at position 17",
+      "reason": "'cho' (for) and 'chủ' (main/principal) are unrelated in this context, altering the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'giờ' to 'ạ' at position 20",
+      "reason": "'giờ' (now/time) is replaced by 'ạ' (a polite particle), which removes the temporal aspect and changes the sentence's intent.",
       "score": 1
     }
   ]

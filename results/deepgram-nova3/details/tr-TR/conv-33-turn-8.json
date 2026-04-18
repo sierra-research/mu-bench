@@ -2,21 +2,31 @@
   "gold": "Tabii. Zeynep nokta Arslan at, pardon çok özür dilerim tekrarlayacağım.",
   "predicted": "Tabii, Zeynep Arslanet. Pardon, çok özür dilerim. Tekrar edeceğim.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
-  "werRefWords": 9,
-  "werNormalizedGold": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "werNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "werNormalizedPredicted": "tabii zeynep arslanet pardon çok özür dilerim tekrar edeceğim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "sigWerNormalizedPredicted": "tabii zeynep arslanet pardon çok özür dilerim tekrar edeceğim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tekrarlayacagim' to 'edecegim' at position 8",
-      "reason": "'tekrarlayacagim' (I will repeat) and 'tekrar edecegim' (I will repeat) are semantically equivalent; the actual splits the verb into two words but the meaning is unchanged.",
-      "score": 3
+      "error": "Substitution: 'nokta' to 'arslanet' at position 2",
+      "reason": "'nokta' (meaning 'dot' or 'point') is replaced with 'arslanet', which appears to be a concatenation of 'arslan' and 'et', resulting in a loss of the intended meaning (possibly an email address or similar). This significantly changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arslan' at position 3",
+      "reason": "The word 'arslan' (a proper noun, likely a surname) is missing, which can cause confusion or loss of information, especially if this is part of a name or email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tekrarlayacağım' to 'edeceğim' at position 9",
+      "reason": "'tekrar' (meaning 'again') is inserted, but it is semantically similar to the expected verb form 'tekrarlayacağım' (I will repeat). This does not significantly change the meaning.",
+      "score": 2
     }
   ]
 }

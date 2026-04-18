@@ -1,16 +1,22 @@
 {
   "gold": "Hayır, tekrar söylüyorum. Ahmet nokta Arslan at email nokta com.",
-  "predicted": "Hayır, tekrar söylüyorum: ahmet.arslan@e-mail.com",
+  "predicted": "Hayır tekrar söylüyorum. ahmet.arslan@e-mail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "hayır tekrar söylüyorum ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "hayır tekrar söylüyorum ahmet nokta arslan at email nokta com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "hayır tekrar söylüyorum ahmet nokta arslan at e mail nokta com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hayır tekrar söylüyorum ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "hayır tekrar söylüyorum ahmet nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır tekrar söylüyorum ahmet nokta arslan at e mail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'mail' at position 7",
+      "reason": "The word 'email' was split into 'e mail', but the meaning is preserved and it is still clear that the email address is being referenced.",
+      "score": 3
+    }
+  ]
 }

@@ -2,15 +2,41 @@
   "gold": "Số điện thoại của tôi là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Số điện thoại của tôi là cộng tám mươi bốn chín trăm mười một hai trăm ba mươi bốn năm sáu trăm bảy mươi tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3,
+  "werEdits": 6,
   "werRefWords": 20,
   "werNormalizedGold": "số điện thoại của tôi là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "số điện thoại của tôi là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "số điện thoại của tôi là cộng tám mươi bốn chín trăm mười một hai trăm ba mươi bốn năm sáu trăm bảy mươi tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "số điện thoại của tôi là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "số điện thoại của tôi là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "số điện thoại của tôi là cộng tám mươi bốn chín trăm mười một hai trăm ba mươi bốn năm sáu trăm bảy mươi tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'một' to 'mười' at position 11",
+      "reason": "The insertion of 'trăm' (hundred) changes the number from 'chín một một' (911) to 'chín trăm mười một' (911), which is a different way of saying the same number, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'trăm' at position 14",
+      "reason": "The substitution of 'một' (one) to 'mười' (ten) in the context of a phone number changes the digit, resulting in an incorrect phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 15",
+      "reason": "The insertion of 'trăm' (hundred) changes the number from 'hai ba bốn' (234) to 'hai trăm ba mươi bốn' (234), which is a different way of saying the same number, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'trăm' at position 18",
+      "reason": "The insertion of 'mươi' (ten) as part of 'ba mươi bốn' (thirty-four) is a different way of saying 'ba bốn' (three four), but in the context of a phone number, this changes the digit sequence, making the number incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 19",
+      "reason": "The insertion of 'trăm' (hundred) changes 'sáu bảy tám' (678) to 'sáu trăm bảy mươi tám' (678), which is a different way of saying the same number, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

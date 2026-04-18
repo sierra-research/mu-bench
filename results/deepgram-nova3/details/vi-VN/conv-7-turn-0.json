@@ -2,15 +2,31 @@
   "gold": "Tôi làm mất thẻ. Tôi xin cấp lại, muốn hỏi chừng nào có?",
   "predicted": "Tôi làm mất thế tôi xin cấp lại câu hỏi coi là chừng nào có",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
   "werRefWords": 13,
   "werNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "werNormalizedPredicted": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi làm mất thế tôi xin cấp lại câu hỏi coi là chừng nào có",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "sigWerNormalizedPredicted": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi làm mất thế tôi xin cấp lại câu hỏi coi là chừng nào có",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thẻ' to 'thế' at position 3",
+      "reason": "'thẻ' means 'card' and 'thế' means 'so/then' or 'situation'; this changes the meaning of the sentence significantly, as the speaker is talking about losing a card, not a situation.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'muốn' to 'câu' at position 8",
+      "reason": "'muốn' means 'want' and 'câu' means 'sentence' or 'question'; this changes the intent of the sentence from expressing a desire to simply stating a noun, which alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'coi' at position 10",
+      "reason": "'coi' means 'to see' or 'to check'; its insertion does not significantly change the overall meaning, as the sentence is still about asking when something will be available.",
+      "score": 2
+    }
+  ]
 }

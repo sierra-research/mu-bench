@@ -2,15 +2,31 @@
   "gold": "Chào Anna nha. Mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
   "predicted": "Ờ chào an an nha mình đang muốn tối ưu chi tiết ừm tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng, bạn có thể giúp mình Xem là cần chuẩn bị cái gì không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.21875,
+  "werEdits": 7,
   "werRefWords": 32,
   "werNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "werNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "chào an an nha mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "sigWerNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "chào an an nha mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'an' at position 1",
+      "reason": "The extra 'an' repeats the name but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'tiết' at position 9",
+      "reason": "'an' is a truncation of the name 'anna', which could cause confusion about the intended recipient, but the context still suggests a greeting. Minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'về' at position 16",
+      "reason": "The insertion of 'tiết' in 'tối ưu chi tiết tối ưu chi tiêu' adds redundancy but does not change the overall meaning.",
+      "score": 2
+    }
+  ]
 }

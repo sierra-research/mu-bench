@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "bạn hướng dẫn lại cho mình với mình vẫn chưa rõ lắm",
   "werNormalizedPredicted": "bạn vừa dẫn lẽ mình rồi mình vẫn chưa rõ lắm",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "bạn hướng dẫn lại cho mình với mình vẫn chưa rõ lắm",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'hướng' to 'vừa' at position 1",
-      "reason": "'hướng dẫn' means 'to guide/instruct', while 'vừa dẫn' means 'just led'. This changes the meaning from asking for guidance to referencing a recent action, which significantly alters the intent.",
+      "reason": "'hướng dẫn' means 'guide/instruct', while 'vừa dẫn' means 'just led'. This changes the meaning of the action being requested, making the sentence less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'lại' to 'lẽ' at position 3",
-      "reason": "'lại' means 'again', indicating a request for repetition, while 'lẽ' is not appropriate in this context and makes the phrase unclear, affecting the meaning.",
+      "reason": "'lại' means 'again', indicating a request for repetition, while 'lẽ' is not appropriate in this context and makes the sentence confusing.",
       "score": 1
     },
     {
       "error": "Deletion: 'cho' at position 4",
-      "reason": "Omitting 'cho' ('for') makes the sentence less clear about who the action is for, but the overall request is still somewhat understandable.",
+      "reason": "Omitting 'cho' ('for') slightly affects the sentence structure but does not significantly change the overall meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'với' to 'rồi' at position 6",
-      "reason": "'với' ('with') is used to connect the request, while 'rồi' ('already') changes the temporal aspect and disrupts the sentence flow, altering the meaning.",
+      "reason": "'với' means 'with', connecting the request, while 'rồi' means 'already', which changes the intent and flow of the sentence.",
       "score": 1
     }
   ]

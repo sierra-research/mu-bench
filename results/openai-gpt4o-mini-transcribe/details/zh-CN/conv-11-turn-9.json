@@ -1,16 +1,27 @@
 {
   "gold": "郡凛。",
-  "predicted": "drinlin",
+  "predicted": "Дринлин",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "郡凛",
-  "werNormalizedPredicted": "郡凛",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "дринлин",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "郡 凛",
-  "sigWerNormalizedPredicted": "郡 凛",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "дринлин",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'дринлин' at position 0",
+      "reason": "The actual transcription is in a completely different script and language (Cyrillic vs. Chinese), making the intended meaning unrecognizable and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "A key character from the expected transcription is missing, which significantly alters the meaning, especially for names or proper nouns in non-Latin scripts.",
+      "score": 1
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
   "werNormalizedPredicted": "e posta adresimi zeynep arslan e mail com",
-  "significantWer": 0.3,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
@@ -20,7 +20,7 @@
     },
     {
       "error": "Deletion: 'nokta' at position 4",
-      "reason": "Missing 'nokta' (dot) in the email address makes the address incorrect and unusable.",
+      "reason": "Missing 'nokta' (dot) in the email address makes the address incomplete or incorrect, which is significant for email accuracy.",
       "score": 1
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "error": "Deletion: 'nokta' at position 8",
-      "reason": "Missing 'nokta' (dot) in the domain part of the email address makes the address incorrect.",
+      "reason": "Missing 'nokta' (dot) before 'com' in the email address makes the address invalid, which is a significant error.",
       "score": 1
     }
   ]

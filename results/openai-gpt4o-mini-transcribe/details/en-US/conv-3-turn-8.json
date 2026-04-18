@@ -2,21 +2,21 @@
   "gold": "Can you verify what address it's been shipped to?",
   "predicted": "Can you verify what address it's being shipped to?",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "can you verify what address it is been shipped to",
+  "werNormalizedGold": "can you verify what address it has been shipped to",
   "werNormalizedPredicted": "can you verify what address it is being shipped to",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "can you verify what address it is been shipped to",
+  "sigWerNormalizedGold": "can you verify what address it has been shipped to",
   "sigWerNormalizedPredicted": "can you verify what address it is being shipped to",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'been' to 'being' at position 7",
-      "reason": "'Been' and 'being' are different verb forms, but in this context, the meaning of the sentence remains clear and is not significantly changed.",
-      "score": 2
+      "error": "Substitution: 'has' to 'is' at position 6",
+      "reason": "The tense changes from present perfect ('has been shipped') to present continuous ('is being shipped'), which changes the meaning from a completed action to an ongoing action. This could affect understanding of whether the shipment is already sent or still in process.",
+      "score": 1
     }
   ]
 }

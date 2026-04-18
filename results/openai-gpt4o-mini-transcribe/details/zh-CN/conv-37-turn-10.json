@@ -2,26 +2,26 @@
   "gold": "你，你可以重复我的姓名啊。",
   "predicted": "你可以重复我的姓名吗?",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
+  "wer": 0.2,
   "werEdits": 2,
-  "werRefWords": 11,
-  "werNormalizedGold": "你 你 可以 重复 我 的 姓名 啊",
-  "werNormalizedPredicted": "你 可以 重复 我 的 姓名 吗",
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名 啊",
+  "werRefWords": 10,
+  "werNormalizedGold": "你 你可以重复我的姓名",
+  "werNormalizedPredicted": "你可以重复我的姓名吗",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名",
   "sigWerNormalizedPredicted": "你 可 以 重 复 我 的 姓 名 吗",
   "sigWerErrors": [
     {
       "error": "Deletion: '你' at position 1",
-      "reason": "The repetition of '你' (you) at the beginning is a minor emphasis in Chinese, but its omission does not change the meaning of the sentence.",
+      "reason": "The repeated '你' at the beginning is omitted, but the sentence remains understandable and polite in Chinese. The omission does not significantly change the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: '啊' to '吗' at position 10",
-      "reason": "'啊' is a modal particle expressing emphasis or suggestion, while '吗' turns the sentence into a yes/no question. This changes the sentence from a statement/request to a question, which alters the intent significantly.",
-      "score": 1
+      "error": "Insertion: '吗' at position 10",
+      "reason": "The addition of '吗' turns the statement into a question, which slightly changes the intent but not the core meaning. The request is still clear.",
+      "score": 2
     }
   ]
 }

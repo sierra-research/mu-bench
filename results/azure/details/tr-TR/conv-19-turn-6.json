@@ -2,15 +2,26 @@
   "gold": "Artı 90 123 0 90 45 67.",
   "predicted": "+ 90 123 msıfır 90 45 67.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "artı doksan bir yüz yirmi üç m sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "artı doksan bir yüz yirmi üç m sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'bir' at position 2",
+      "reason": "'bir' (one) is inserted into a sequence of numbers, which changes the intended numeric sequence and could lead to a significant misunderstanding, especially if this is a code or phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'm' at position 5",
+      "reason": "The insertion of 'm' in a numeric sequence introduces a non-numeric character, which disrupts the sequence and could cause confusion or error in contexts like codes or phone numbers.",
+      "score": 1
+    }
+  ]
 }

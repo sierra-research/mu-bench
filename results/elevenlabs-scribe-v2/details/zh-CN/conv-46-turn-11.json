@@ -5,9 +5,9 @@
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "听 到 了 吗",
-  "werNormalizedPredicted": "行 到 啦 吗",
-  "significantWer": 0.25,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "行到啦吗",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '听' to '行' at position 0",
-      "reason": "'听' means 'listen' or 'hear', while '行' means 'okay' or 'alright'. This changes the intent of the sentence from asking if someone heard to asking if something is okay, which significantly alters the meaning.",
+      "reason": "'听' means 'listen' or 'hear', while '行' means 'okay' or 'alright'. This substitution changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: '了' to '啦' at position 2",
-      "reason": "'了' is a particle indicating completion, while '啦' is a modal particle often used for emphasis or softening. The substitution slightly changes the tone but not the core meaning, so it's a minor error.",
+      "reason": "'了' is a particle indicating completion, while '啦' is a modal particle often used for emphasis or softening. This changes the tone but not the core meaning, so it's a minor error.",
       "score": 2
     }
   ]

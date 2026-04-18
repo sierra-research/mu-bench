@@ -2,15 +2,26 @@
   "gold": "C N 720.",
   "predicted": "Cene yedi yüz yirmi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n seven hundred twenty",
-  "werNormalizedPredicted": "c n seven hundred twenty",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n yedi yüz yirmi",
+  "werNormalizedPredicted": "cene yedi yüz yirmi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n seven hundred twenty",
-  "sigWerNormalizedPredicted": "c n seven hundred twenty",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n yedi yüz yirmi",
+  "sigWerNormalizedPredicted": "cene yedi yüz yirmi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'cene' at position 0",
+      "reason": "'c' is a single letter, likely part of a spelled-out sequence, while 'cene' is a full word. This changes the meaning and disrupts the intended sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from a spelled-out sequence significantly alters the intended letters, making the transcription incorrect.",
+      "score": 1
+    }
+  ]
 }

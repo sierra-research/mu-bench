@@ -2,15 +2,21 @@
   "gold": "不是邻居，是林俊，俊，俊。",
   "predicted": "不是林居，是林俊俊俊。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "不是林俊俊俊",
-  "werNormalizedPredicted": "不是林俊俊俊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "不 是 林 俊 俊 俊",
-  "sigWerNormalizedPredicted": "不 是 林 俊 俊 俊",
-  "sigWerErrors": []
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
+  "werRefWords": 9,
+  "werNormalizedGold": "不是邻居 是林俊 俊 俊",
+  "werNormalizedPredicted": "不是林居 是林俊俊俊",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 俊",
+  "sigWerNormalizedPredicted": "不 是 林 居 是 林 俊 俊 俊",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邻' to '林' at position 2",
+      "reason": "'邻' (neighbor) and '林' (forest, or a surname) are different words with different meanings. This substitution changes the meaning of the phrase from 'neighbor' to a name or unrelated word, which can confuse the sentence meaning.",
+      "score": 1
+    }
+  ]
 }

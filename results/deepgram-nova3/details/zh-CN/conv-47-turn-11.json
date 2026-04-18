@@ -5,9 +5,9 @@
   "wer": 1.0,
   "werEdits": 3,
   "werRefWords": 3,
-  "werNormalizedGold": "峻 峻 岭",
+  "werNormalizedGold": "峻 峻岭",
   "werNormalizedPredicted": "军 陵",
-  "significantWer": 0.6666666666666666,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "峻 峻 岭",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '峻' to '军' at position 0",
-      "reason": "'峻' and '军' are different Chinese characters with different meanings; this changes the meaning of the word and potentially the sentence.",
+      "reason": "'峻' and '军' are completely different Chinese characters with different meanings, which significantly alters the meaning of the word or name.",
       "score": 1
     },
     {
       "error": "Deletion: '岭' at position 2",
-      "reason": "'岭' is missing from the actual transcription, which omits a key part of the expected phrase and alters the meaning significantly.",
+      "reason": "Omitting '岭' removes a key part of the expected phrase, resulting in a significant loss of meaning.",
       "score": 1
     }
   ]

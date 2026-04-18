@@ -2,25 +2,25 @@
   "gold": "峻岭，峻岭，我的名字是峻岭。",
   "predicted": "没有用，君临，君临，我的名字是君临。",
   "unintelligible": false,
-  "wer": 0.5454545454545454,
-  "werEdits": 6,
+  "wer": 0.8181818181818182,
+  "werEdits": 9,
   "werRefWords": 11,
   "werNormalizedGold": "峻岭 峻岭 我的名字是峻岭",
-  "werNormalizedPredicted": "君临 君临 我的名字是君临",
-  "significantWer": 0.18181818181818182,
+  "werNormalizedPredicted": "没有用 君临 君临 我的名字是君临",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "峻 岭 峻 岭 我 的 名 字 是 峻 岭",
-  "sigWerNormalizedPredicted": "君 临 君 临 我 的 名 字 是 君 临",
+  "sigWerNormalizedPredicted": "没 有 用 君 临 君 临 我 的 名 字 是 君 临",
   "sigWerErrors": [
     {
       "error": "Substitution: '峻' to '君' at position 0",
-      "reason": "'峻岭' and '君临' are completely different names with different meanings; substituting one for the other changes the identity being stated, which is a significant error.",
+      "reason": "The insertion of '没' (meaning 'no' or 'not') at the beginning changes the meaning of the sentence, making it incoherent and derailing the intended message.",
       "score": 1
     },
     {
       "error": "Substitution: '峻' to '君' at position 9",
-      "reason": "Again, '峻岭' and '君临' are different names, and this substitution changes the stated name, which is a significant error.",
+      "reason": "'峻' and '君' are different characters with different meanings and pronunciations; this substitution changes the name and is a significant error.",
       "score": 1
     }
   ]

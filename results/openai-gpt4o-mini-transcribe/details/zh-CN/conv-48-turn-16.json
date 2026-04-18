@@ -1,16 +1,37 @@
 {
   "gold": "君玲 at email dot com。已经说了几次。",
-  "predicted": "drinlin@email.com. Izingshwala zit",
+  "predicted": "Drenlin at email.com idzing shualazi tsu.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
   "werRefWords": 12,
   "werNormalizedGold": "君玲 at email dot com 已经说了几次",
-  "werNormalizedPredicted": "君玲 at email dot com 已经说了几次",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "drenlin at email dot com idzing shualazi tsu",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "君 玲 at email dot com 已 经 说 了 几 次",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com 已 经 说 了 几 次",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "drenlin at email dot com idzing shualazi tsu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drenlin' at position 0",
+      "reason": "'君' is a Chinese name or word, while 'drenlin' is an unrelated English-like string; this is a major error that completely changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is missing from the actual transcription, which omits a key part of the name or phrase, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '已' to 'idzing' at position 6",
+      "reason": "'已' is a Chinese word meaning 'already', while 'idzing' is an unrelated string; this is a significant error that disrupts the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 9",
+      "reason": "'了' is a grammatical particle in Chinese that affects the tense/aspect of the sentence; its omission changes the meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -2,26 +2,26 @@
   "gold": "Thu trần a còng email chấm com.",
   "predicted": "xutran@email.com",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 7,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "thu tran a cong email cham com",
-  "werNormalizedPredicted": "xutran@email.com",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "thu trần a còng email chấm com",
+  "werNormalizedPredicted": "xutran a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "thu tran a cong email cham com",
-  "sigWerNormalizedPredicted": "xutran@email.com",
+  "sigWerNormalizedGold": "thu trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "xutran a còng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'thu' to 'xutran@email.com' at position 0",
-      "reason": "The expected is a Vietnamese spelling-out of an email address, while the actual is the compact English email address. The actual transcription does not preserve the structure or the individual components of the expected, making it difficult to verify correctness or correspondence. This is a significant error as the spelled-out address could be different from the actual email address transcribed.",
+      "error": "Substitution: 'thu' to 'xutran' at position 0",
+      "reason": "'thu' and 'xutran' are completely different words; 'xutran' appears to be a name or username, while 'thu' is a different word or name. This changes the intended recipient or meaning significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'tran' at position 1",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Deletion: 'trần' at position 1",
+      "reason": "Omitting 'trần' removes a key part of the name or email address, which can result in a completely different or invalid email. This is a significant error.",
+      "score": 1
     }
   ]
 }

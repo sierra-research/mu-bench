@@ -1,16 +1,22 @@
 {
   "gold": "İyi günler.",
-  "predicted": "İyi günler.",
+  "predicted": "İyi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "iyi günler",
-  "werNormalizedPredicted": "iyi günler",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "iyi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "iyi günler",
-  "sigWerNormalizedPredicted": "iyi günler",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "iyi",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'günler' at position 1",
+      "reason": "Omitting 'günler' removes the greeting part of the phrase, changing 'good day' to just 'good', which significantly alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

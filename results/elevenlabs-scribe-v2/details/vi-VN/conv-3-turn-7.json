@@ -1,16 +1,27 @@
 {
   "gold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
-  "predicted": "Không, không, không phải. Đúng là minh chấm tran@email chấm com",
+  "predicted": "Không, không, không phải. Đúng là minh chấm tran at email chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "không không phải đúng là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "không không không phải đúng là minh chấm tran a còng email chấm com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "không không phải đúng là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "không không không phải đúng là minh chấm tran a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'không' at position 2",
+      "reason": "The extra 'không' (no) adds a negation, but in this context, it does not significantly change the overall meaning of the sentence, which is about providing an email address.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 7",
+      "reason": "'trần' is a Vietnamese proper noun (name) and 'tran' is a common misspelling or unaccented version. The meaning is still clear and refers to the same name, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

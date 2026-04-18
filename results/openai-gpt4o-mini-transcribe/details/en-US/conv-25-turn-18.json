@@ -2,15 +2,26 @@
   "gold": "Yup, from the PlayStore.",
   "predicted": "Yup, from the Play Store.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
-  "werNormalizedGold": "yup from the playstore",
-  "werNormalizedPredicted": "yup from the playstore",
-  "significantWer": 0.0,
+  "werNormalizedGold": "yes from the playstore",
+  "werNormalizedPredicted": "yup from the play store",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "yup from the playstore",
-  "sigWerNormalizedPredicted": "yup from the playstore",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yes from the playstore",
+  "sigWerNormalizedPredicted": "yup from the play store",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'yup' at position 0",
+      "reason": "'Yup' and 'yes' are informal variants with the same meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'playstore' to 'store' at position 3",
+      "reason": "'Play store' is a common way to refer to 'playstore'; splitting into two words does not change the meaning.",
+      "score": 3
+    }
+  ]
 }

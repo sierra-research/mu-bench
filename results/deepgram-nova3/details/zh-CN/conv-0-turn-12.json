@@ -1,16 +1,22 @@
 {
   "gold": "说什么？",
-  "predicted": "说什么",
+  "predicted": "求什么",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 1,
   "werRefWords": 3,
   "werNormalizedGold": "说什么",
-  "werNormalizedPredicted": "说什么",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "求什么",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "说 什 么",
-  "sigWerNormalizedPredicted": "说 什 么",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "求 什 么",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '说' to '求' at position 0",
+      "reason": "'说' means 'to speak' or 'to say', while '求' means 'to request' or 'to seek'. This substitution changes the meaning of the sentence significantly, making it incoherent or incorrect in context.",
+      "score": 1
+    }
+  ]
 }

@@ -5,9 +5,9 @@
   "wer": 0.5454545454545454,
   "werEdits": 6,
   "werRefWords": 11,
-  "werNormalizedGold": "你 搞 错 你 搞 错 你 还 没 给 我",
-  "werNormalizedPredicted": "你 告诉 我 你 告诉 我 你 还 没 给 我",
-  "significantWer": 0.18181818181818182,
+  "werNormalizedGold": "你搞错你搞错你还没给我",
+  "werNormalizedPredicted": "你告诉我 你告诉我 你还没给我",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 搞 错 你 搞 错 你 还 没 给 我",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '搞' to '诉' at position 1",
-      "reason": "The word '告' is inserted, which changes the phrase from '你搞错' (you are mistaken) to '你告诉我' (you tell me), altering the meaning significantly.",
+      "reason": "'告' is inserted where '搞' is expected, changing the phrase from '搞错' (make a mistake) to '告诉' (tell), which alters the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: '搞' to '诉' at position 4",
-      "reason": "Substituting '搞' (do/make) with '诉' (tell) changes the meaning from 'mistake' to 'tell', which is a significant change in meaning.",
+      "reason": "'搞' (do/make) is substituted with '诉' (tell/complain), which changes the meaning from '搞错' (make a mistake) to '告诉' (tell), significantly altering the intended meaning.",
       "score": 1
     }
   ]

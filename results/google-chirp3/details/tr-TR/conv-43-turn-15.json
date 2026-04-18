@@ -2,15 +2,21 @@
   "gold": "Artı 90.",
   "predicted": "+9",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "artı doksan",
-  "werNormalizedPredicted": "artı doksan",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "artı dokuz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "artı doksan",
-  "sigWerNormalizedPredicted": "artı doksan",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "artı dokuz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'dokuz' at position 1",
+      "reason": "'doksan' means 'ninety' and 'dokuz' means 'nine' in Turkish. This changes the number significantly and alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

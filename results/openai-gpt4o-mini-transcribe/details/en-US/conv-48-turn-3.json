@@ -1,16 +1,22 @@
 {
   "gold": "Let me confirm that code. I have C as in cat, N as in Nancy, 6 2 2 6 2 0 6.",
-  "predicted": "Let me confirm that code. I have seen it in chat and it is in Nancy6226206.",
+  "predicted": "Let me confirm that code I have seen in chat and it is a Nancy622-6206.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3181818181818182,
+  "werEdits": 7,
   "werRefWords": 22,
   "werNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "werNormalizedPredicted": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "let me confirm that code i have seen in chat and it is a nancy six two two six two zero six",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "sigWerNormalizedPredicted": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "let me confirm that code i have seen in chat and it is a nancy six two two six two zero six",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'seen' at position 7",
+      "reason": "The expected phrase is spelling out 'c as in cat n as in nancy', which is a standard way to clarify letters in a code. The actual phrase 'seen in chat and it is a nancy' does not communicate the intended code letters and changes the meaning, making the code confirmation unclear and potentially incorrect.",
+      "score": 1
+    }
+  ]
 }

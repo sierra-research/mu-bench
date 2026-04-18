@@ -7,7 +7,7 @@
   "werRefWords": 8,
   "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
   "werNormalizedPredicted": "đúng rồi anh ạ chuẩn ạ cảm ơn năm bạn nhá",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'ạ' at position 2",
-      "reason": "'anh' is a different person from 'anna', so inserting 'anh' changes the subject and meaning of the sentence.",
+      "reason": "'anh' (meaning 'older brother' or a male pronoun) changes the addressee from 'anna' (a specific name) to a generic male, which alters the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Insertion: 'ạ' at position 4",
-      "reason": "Replacing 'anna' (a name) with 'ạ' (a polite particle) removes the reference to the person, significantly changing the meaning.",
+      "reason": "'anna' is a specific name, while 'ạ' is a polite particle in Vietnamese. This substitution removes the reference to the person 'anna', significantly changing the meaning.",
       "score": 1
     },
     {
       "error": "Insertion: 'năm' at position 6",
-      "reason": "Inserting 'ạ' is a minor politeness marker and does not change the overall meaning.",
+      "reason": "'ạ' is a polite particle in Vietnamese, its insertion does not change the core meaning of the sentence.",
       "score": 2
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "Tên đầy đủ là Trần Minh.",
-  "predicted": "Tên đầy đủ là John Ming.",
+  "predicted": "Cái này đủ là chuẩn mi",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
-  "werNormalizedGold": "ten day du la tran minh",
-  "werNormalizedPredicted": "ten day du la john ming",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tên đầy đủ là trần minh",
+  "werNormalizedPredicted": "cái này đủ là chuẩn mi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "ten day du la tran minh",
-  "sigWerNormalizedPredicted": "ten day du la john ming",
+  "sigWerNormalizedGold": "tên đầy đủ là trần minh",
+  "sigWerNormalizedPredicted": "cái này đủ là chuẩn mi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tran' to 'john' at position 4",
-      "reason": "'Tran' and 'John' are completely different names; substituting one for the other changes the identity being referred to, which is a significant error.",
+      "error": "Substitution: 'tên' to 'cái' at position 0",
+      "reason": "'tên' means 'name', while 'cái' means 'thing' or 'this', which completely changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'chuẩn' at position 4",
+      "reason": "'trần' is a proper noun (a name), while 'chuẩn' means 'standard' or 'correct', which is a significant change and makes the sentence incorrect in context.",
       "score": 1
     }
   ]

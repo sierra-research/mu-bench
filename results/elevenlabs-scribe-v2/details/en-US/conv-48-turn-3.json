@@ -1,27 +1,27 @@
 {
   "gold": "Let me confirm that code. I have C as in cat, N as in Nancy, 6 2 2 6 2 0 6.",
-  "predicted": "Let me confirm that code. I have Steven, Kat, and as in Nancy, six two two six two zero six",
+  "predicted": "Let me confirm that code. I have Steve and Kat and is it Nancy six two two six two zero six",
   "unintelligible": false,
-  "wer": 0.22727272727272727,
-  "werEdits": 5,
+  "wer": 0.3181818181818182,
+  "werEdits": 7,
   "werRefWords": 22,
   "werNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "werNormalizedPredicted": "let me confirm that code i have steven kat and as in nancy six two two six two zero six",
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "let me confirm that code i have steve and kat and is it nancy six two two six two zero six",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
-  "sigWerNormalizedPredicted": "let me confirm that code i have steven kat and as in nancy six two two six two zero six",
+  "sigWerNormalizedPredicted": "let me confirm that code i have steve and kat and is it nancy six two two six two zero six",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'steven' at position 7",
-      "reason": "The expected letter 'c' (likely as part of a code) is replaced by the name 'steven', which is a completely different word and changes the intended code, making it a significant error.",
+      "error": "Substitution: 'c' to 'steve' at position 7",
+      "reason": "'c' is a single letter being confirmed, but 'steve' is a completely different word and not a letter. This changes the meaning of the code being confirmed.",
       "score": 1
     },
     {
-      "error": "Deletion: 'cat' at position 10",
-      "reason": "The word 'cat' is missing, which is important for clarifying the letter 'c' in the code. Its absence makes the code ambiguous, which is a significant error.",
-      "score": 1
+      "error": "Deletion: 'in' at position 13",
+      "reason": "The letter 'n' is replaced by 'nancy', which is the confirmation word for 'n'. This is semantically the same.",
+      "score": 3
     }
   ]
 }

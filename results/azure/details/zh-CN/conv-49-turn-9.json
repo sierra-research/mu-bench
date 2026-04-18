@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "是美玲 at email dot com",
   "werNormalizedPredicted": "she mailing at email dot com",
-  "significantWer": 0.2857142857142857,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 美 玲 at email dot com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '是' to 'she' at position 0",
-      "reason": "'是' is a Chinese character (part of a name or phrase), while 'she' is an English pronoun. This changes the meaning entirely and is a significant error.",
+      "reason": "'是' is a Chinese character and 'she' is an English pronoun; this is a language substitution and changes the meaning completely.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 2",
-      "reason": "'玲' is a Chinese character (likely part of a name) that is missing in the actual transcription, which omits important information and changes the meaning.",
+      "reason": "'玲' is omitted entirely, which is a significant omission of a name component.",
       "score": 1
     }
   ]

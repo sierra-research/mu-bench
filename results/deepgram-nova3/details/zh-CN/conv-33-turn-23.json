@@ -2,26 +2,41 @@
   "gold": "收货地址是北京市海淀区北京路 1 2 3号。",
   "predicted": "多个地址是中国北京市海定区北京路一百二十三号。",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 4,
-  "werRefWords": 20,
-  "werNormalizedGold": "收货地址是北京市海淀区北京路一百二十三号",
-  "werNormalizedPredicted": "多个地址是中国北京市海淀区北京路一百二十三号",
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
-  "sigWerNormalizedPredicted": "多 个 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "wer": 0.3888888888888889,
+  "werEdits": 7,
+  "werRefWords": 18,
+  "werNormalizedGold": "收货地址是北京市海淀区北京路 一 二 三号",
+  "werNormalizedPredicted": "多个地址是中国北京市海定区北京路 一 百 二 十 三号",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 二 三 号",
+  "sigWerNormalizedPredicted": "多 个 地 址 是 中 国 北 京 市 海 定 区 北 京 路 一 百 二 十 三 号",
   "sigWerErrors": [
     {
       "error": "Substitution: '收' to '多' at position 0",
-      "reason": "'收货地址' means 'shipping address', while '多个地址' means 'multiple addresses'. This changes the meaning of the sentence significantly, as it is no longer about a single shipping address but about multiple addresses.",
+      "reason": "'收' (receive) is replaced by '多' (many), which changes the meaning from 'receiving address' to 'many addresses', significantly altering the intent.",
       "score": 1
     },
     {
       "error": "Insertion: '中' at position 5",
-      "reason": "The insertion of '中国' (China) before '北京市' (Beijing City) adds extra information but does not change the essential meaning of the address. It is a minor error as the address is still clear and correct.",
+      "reason": "The insertion of '中' (China) adds extra information not present in the original, but does not derail the main meaning of the address.",
       "score": 2
+    },
+    {
+      "error": "Substitution: '淀' to '定' at position 9",
+      "reason": "'海淀区' (Haidian District) is a specific place name, but '海定区' is not a valid district, making the address incorrect and potentially misleading.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '百' at position 15",
+      "reason": "The insertion of '百' (hundred) changes the house number from '123' to '123', but in Chinese, '一二三' (one two three) is different from '一百二十三' (one hundred twenty-three), which is a significant change in address.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '十' at position 16",
+      "reason": "Similar to the previous error, the insertion of '十' (ten) is part of changing the house number, which alters the address significantly.",
+      "score": 1
     }
   ]
 }

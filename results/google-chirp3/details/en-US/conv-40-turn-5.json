@@ -2,15 +2,21 @@
   "gold": "It is 1 2 1 2 1 2 3 4 5 6 7.",
   "predicted": "It is 12121234567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "it is one two one two one two three four five six seven",
-  "werNormalizedPredicted": "it is one two one two one two three four five six seven",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "it is one two one two three four five six seven",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "it is one two one two one two three four five six seven",
-  "sigWerNormalizedPredicted": "it is one two one two one two three four five six seven",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "it is one two one two three four five six seven",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'one' at position 6",
+      "reason": "The repeated 'one two' pattern is broken by omitting 'one' at this position, but the overall meaning (counting sequence) is still clear and understandable.",
+      "score": 2
+    }
+  ]
 }

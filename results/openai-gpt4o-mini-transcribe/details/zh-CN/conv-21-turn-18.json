@@ -2,15 +2,21 @@
   "gold": "海淀区，不是海定区。",
   "predicted": "海电区不是海定区。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
   "werNormalizedGold": "海淀区 不是海定区",
-  "werNormalizedPredicted": "海淀区 不是海定区",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "海电区 不是海定区",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "海 淀 区 不 是 海 定 区",
-  "sigWerNormalizedPredicted": "海 淀 区 不 是 海 定 区",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "海 电 区 不 是 海 定 区",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '淀' to '电' at position 1",
+      "reason": "'淀' and '电' are different Chinese characters with different meanings. This changes the name of the district from 'Haidian' (海淀区) to 'Haiden' (海电区), which is a significant error as it refers to a different place.",
+      "score": 1
+    }
+  ]
 }

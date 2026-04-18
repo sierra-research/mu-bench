@@ -7,7 +7,7 @@
   "werRefWords": 5,
   "werNormalizedGold": "muốn muốn muốn vui lòng",
   "werNormalizedPredicted": "làm",
-  "significantWer": 0.4,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "muốn muốn muốn vui lòng",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'muốn' to 'làm' at position 0",
-      "reason": "'muốn' means 'want' and 'làm' means 'do/make' in Vietnamese; this changes the intent of the sentence completely.",
+      "reason": "'muốn' means 'want' and 'làm' means 'do/make' in Vietnamese; this changes the intent of the sentence completely, resulting in a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'muốn' at position 1",
-      "reason": "The repeated word 'muốn' emphasizes the desire; omitting it removes this emphasis and changes the meaning.",
+      "reason": "Omitting the repeated 'muốn' (want) further removes the intended meaning and politeness of the original sentence, making the actual transcription incoherent compared to the expected.",
       "score": 1
     }
   ]

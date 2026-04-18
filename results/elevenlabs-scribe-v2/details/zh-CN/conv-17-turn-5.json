@@ -2,15 +2,26 @@
   "gold": "继续吧。",
   "predicted": "Ji Shubha",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "继续吧",
-  "werNormalizedPredicted": "继续吧",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "ji shubha",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "继 续 吧",
-  "sigWerNormalizedPredicted": "继 续 吧",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ji shubha",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '继' to 'ji' at position 0",
+      "reason": "The expected is in Chinese, but the actual is in romanized letters that do not correspond to the correct Chinese words. This is a language mismatch and a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吧' at position 2",
+      "reason": "The final word is missing entirely from the actual transcription, which further derails the meaning.",
+      "score": 1
+    }
+  ]
 }

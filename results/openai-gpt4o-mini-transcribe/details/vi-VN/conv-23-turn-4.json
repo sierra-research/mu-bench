@@ -1,16 +1,22 @@
 {
   "gold": "Email là thu chấm trần email chấm com.",
-  "predicted": "Email là thu.tran@email.com",
+  "predicted": "email là thu.tran@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
   "werNormalizedGold": "email là thu chấm trần email chấm com",
-  "werNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "email là thu chấm tran email chấm com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "email là thu chấm trần email chấm com",
-  "sigWerNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là thu chấm tran email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 4",
+      "reason": "The word 'trần' is a Vietnamese name with a diacritic, while 'tran' without the diacritic is a common misspelling but still recognizable as the intended name. The meaning is preserved and the email address would likely still work, but the spelling is technically incorrect for the proper noun.",
+      "score": 2
+    }
+  ]
 }

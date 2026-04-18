@@ -1,26 +1,31 @@
 {
   "gold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "predicted": "Tabip Atatürk Caddesi No 45 Taksim 6, Kadıköy Karabekir Mahallesi, Üsküdar, Taksim, İstanbul, Posta kodum 34660 Türkiye.",
+  "predicted": "Tabip, Atatürk Caddesi, No: 45 Taksim 6, Kazım Karabekir Mahallesi, Üsküdar Taksim, İstanbul, posta kodum 34660, Türkiye.",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werEdits": 2,
+  "wer": 0.18181818181818182,
+  "werEdits": 4,
   "werRefWords": 22,
-  "werNormalizedGold": "tabii ataturk caddesi no forty five taksim six kazim karabekir mahallesi uskudar taksim istanbul posta kodum thirty four six hundred sixty turkiye",
-  "werNormalizedPredicted": "tabip ataturk caddesi no forty five taksim six kadikoy karabekir mahallesi uskudar taksim istanbul posta kodum thirty four six hundred sixty turkiye",
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "werNormalizedPredicted": "tabip atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum üç dört altı altı sıfır türkiye",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "tabii ataturk caddesi no forty five taksim six kazim karabekir mahallesi uskudar taksim istanbul posta kodum thirty four six hundred sixty turkiye",
-  "sigWerNormalizedPredicted": "tabip ataturk caddesi no forty five taksim six kadikoy karabekir mahallesi uskudar taksim istanbul posta kodum thirty four six hundred sixty turkiye",
+  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "tabip atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum üç dört altı altı sıfır türkiye",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tabii' to 'tabip' at position 0",
-      "reason": "'tabii' and 'tabip' are completely different words in Turkish ('tabii' means 'of course' or 'natural', 'tabip' means 'doctor'), which changes the meaning of the address and could cause confusion.",
+      "reason": "'tabii' means 'of course' or 'natural', while 'tabip' means 'doctor'; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'kazim' to 'kadikoy' at position 8",
-      "reason": "'kazim' is a personal name, while 'kadikoy' is a district in Istanbul; substituting a person's name for a place name significantly alters the address and meaning.",
+      "error": "Substitution: 'otuz' to 'üç' at position 16",
+      "reason": "'otuz' means 'thirty', 'üç' means 'three'; this is a significant change in a postal code or address number, which can lead to incorrect information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yüz' to 'altı' at position 19",
+      "reason": "'yüz' means 'hundred', 'altı' means 'six'; this changes the numeric value in the postal code or address, which is a significant error.",
       "score": 1
     }
   ]

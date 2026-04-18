@@ -1,31 +1,31 @@
 {
   "gold": "Başka türlü yardımcı olmanıza gerek yok. Teşekkür ederim, iyi günler dilerim.",
-  "predicted": "Başka bir türlü yardımcımızda gerekiyor. Teşekkür ederim. İyi günler dilerim.",
+  "predicted": "Başka bir türlü yardımcı olmanız gerekiyor. Teşekkür ederim. İyi günler dilerim.",
   "unintelligible": false,
-  "wer": 0.45454545454545453,
-  "werEdits": 5,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
   "werRefWords": 11,
-  "werNormalizedGold": "baska turlu yardimci olmaniza gerek yok tesekkur ederim iyi gunler dilerim",
-  "werNormalizedPredicted": "baska bir turlu yardimcimizda gerekiyor tesekkur ederim iyi gunler dilerim",
-  "significantWer": 0.18181818181818182,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "başka türlü yardımcı olmanıza gerek yok teşekkür ederim iyi günler dilerim",
+  "werNormalizedPredicted": "başka bir türlü yardımcı olmanız gerekiyor teşekkür ederim iyi günler dilerim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "baska turlu yardimci olmaniza gerek yok tesekkur ederim iyi gunler dilerim",
-  "sigWerNormalizedPredicted": "baska bir turlu yardimcimizda gerekiyor tesekkur ederim iyi gunler dilerim",
+  "sigWerNormalizedGold": "başka türlü yardımcı olmanıza gerek yok teşekkür ederim iyi günler dilerim",
+  "sigWerNormalizedPredicted": "başka bir türlü yardımcı olmanız gerekiyor teşekkür ederim iyi günler dilerim",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 1",
-      "reason": "'bir' (meaning 'a' or 'one') is added, but does not significantly change the meaning of the sentence.",
+      "reason": "Adding 'bir' (one/a) before 'türlü' does not significantly change the meaning of the sentence; it is a minor stylistic difference.",
       "score": 2
     },
     {
-      "error": "Substitution: 'yardimci' to 'yardimcimizda' at position 2",
-      "reason": "'yardimci' means 'helper' or 'to help', while 'yardimcimizda' means 'at our helper' or 'in our helper', which is a grammatical and semantic error that makes the sentence less clear.",
-      "score": 1
+      "error": "Substitution: 'olmanıza' to 'olmanız' at position 3",
+      "reason": "'olmanıza' (for you to be) vs 'olmanız' (you to be) is a minor grammatical difference in Turkish, but the meaning remains clear and unchanged in context.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'gerek' at position 4",
-      "reason": "Omitting 'gerek' ('necessary') changes the meaning, as it removes the necessity aspect from the sentence.",
+      "error": "Deletion: 'yok' at position 5",
+      "reason": "Omitting 'yok' (no/not) changes the meaning from 'there is no need for your help' to 'your help is needed', which is a significant change in intent.",
       "score": 1
     }
   ]

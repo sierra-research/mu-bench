@@ -2,15 +2,36 @@
   "gold": "是对的，我的邮箱地址是峻岭 at email dot com。",
   "predicted": "是对的我的有想地址是junelingemail。com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 6,
   "werRefWords": 16,
   "werNormalizedGold": "是对的 我的邮箱地址是峻岭 at email dot com",
-  "werNormalizedPredicted": "是对的 我的邮箱地址是峻岭 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是对的我的有想地址是 juneling email com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "是 对 的 我 的 邮 箱 地 址 是 峻 岭 at email dot com",
-  "sigWerNormalizedPredicted": "是 对 的 我 的 邮 箱 地 址 是 峻 岭 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 对 的 我 的 有 想 地 址 是 juneling email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '有' at position 5",
+      "reason": "'邮' (mail) is replaced with '有' (have), which changes the meaning of the phrase from 'email address' to something incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '峻' to 'juneling' at position 10",
+      "reason": "'峻' is a Chinese character, while 'juneling' is a romanized string that does not correspond directly. This is a significant error as it changes the name and could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '岭' at position 11",
+      "reason": "Omitting '岭' (part of the name '峻岭') results in an incomplete or incorrect name, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 14",
+      "reason": "Missing 'dot' in the email address makes the email incomplete and unusable.",
+      "score": 1
+    }
+  ]
 }

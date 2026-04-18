@@ -2,20 +2,30 @@
   "gold": "Không phải. Minh, minh là tên đó. Trần là họ đó. Minh chấm trần a còng email chấm com.",
   "predicted": "Phải. Minh. Minh là tên đó. Trần là họ đó Minh chấm Trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.05263157894736842,
-  "werEdits": 1,
+  "wer": 0.2631578947368421,
+  "werEdits": 5,
   "werRefWords": 19,
-  "werNormalizedGold": "khong phai minh minh la ten do tran la ho do minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "phai minh minh la ten do tran la ho do minh cham tran a cong email cham com",
-  "significantWer": 0.05263157894736842,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "phải minh minh là tên đó trần là họ đó minh chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "khong phai minh minh la ten do tran la ho do minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "phai minh minh la ten do tran la ho do minh cham tran a cong email cham com",
+  "sigWerNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "phải minh minh là tên đó trần là họ đó minh chấm trầngmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'khong' at position 0",
-      "reason": "The word 'khong' means 'not' in Vietnamese, and its deletion reverses the meaning of the sentence, making it the opposite of what was intended.",
+      "error": "Deletion: 'không' at position 0",
+      "reason": "Omitting 'không' (no/not) reverses the meaning of the sentence, making it the opposite of the intended statement.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 13",
+      "reason": "'trầngmail' merges the surname 'trần' with 'gmail', making the email address incorrect and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 14",
+      "reason": "Missing 'a' (from 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable.",
       "score": 1
     }
   ]

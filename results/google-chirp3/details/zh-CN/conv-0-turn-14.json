@@ -2,15 +2,21 @@
   "gold": "不对呀。",
   "predicted": "不对喔。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 1,
   "werRefWords": 3,
-  "werNormalizedGold": "不 对 呀",
-  "werNormalizedPredicted": "不 对 呀",
-  "significantWer": 0.0,
+  "werNormalizedGold": "不对呀",
+  "werNormalizedPredicted": "不对喔",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "不 对 呀",
-  "sigWerNormalizedPredicted": "不 对 呀",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 对 喔",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '呀' to '喔' at position 2",
+      "reason": "'呀' and '喔' are both sentence-final particles in Chinese that soften the tone or add emphasis, but they have slightly different nuances. The substitution does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "Tabii söylüyorum, yazarsan. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Tabii söylüyorum, yazarsan ahmet nokta aslolan et email nokta com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tabii söylüyorum yazarsan ahmet nokta aslolan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tabii söylüyorum yazarsan ahmet nokta aslolan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'arslan' to 'aslolan' at position 5",
+      "reason": "'arslan' is a Turkish surname, while 'aslolan' is a Turkish word meaning 'the essential thing' or 'what matters'. This substitution changes a proper noun (likely an email username) to a common word, which would make the email address incorrect and unusable.",
+      "score": 1
+    }
+  ]
 }

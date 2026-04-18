@@ -2,15 +2,21 @@
   "gold": "我的邮箱地址是美玲 at email dot com。",
   "predicted": "我的邮箱地址是 mei ling@email.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是美玲 at email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是美玲 at email dot com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "我的邮箱地址是 mei ling at email dot com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 mei ling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mei' at position 7",
+      "reason": "The expected word '美' is a Chinese character, while 'mei' is its pinyin (romanized spelling). In this context, both refer to the same name and are semantically equivalent, just in different scripts.",
+      "score": 3
+    }
+  ]
 }

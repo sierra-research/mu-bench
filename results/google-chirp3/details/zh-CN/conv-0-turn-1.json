@@ -2,15 +2,21 @@
   "gold": "我想提高信用卡的限额。",
   "predicted": "我想提高信用卡的额度。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "我想提高信用卡的额度",
+  "werNormalizedGold": "我想提高信用卡的限额",
   "werNormalizedPredicted": "我想提高信用卡的额度",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 额 度",
+  "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额",
   "sigWerNormalizedPredicted": "我 想 提 高 信 用 卡 的 额 度",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '限' to '额' at position 8",
+      "reason": "'限额' (credit limit) is a fixed phrase, while '额度' (amount/limit) is a broader term. In this context, both refer to increasing the credit card limit, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

@@ -1,26 +1,21 @@
 {
   "gold": "C N 0 6 7 数字 0 6 7。",
-  "predicted": "C20167,数字067。",
+  "predicted": "C2-067,数字067。",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
-  "werNormalizedGold": "c n zero six seven 数字 zero six seven",
-  "werNormalizedPredicted": "c two zero one six seven 数字 zero six seven",
-  "significantWer": 0.2,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "c n 零 六 七 数字 零 六 七",
+  "werNormalizedPredicted": "c 二 零 六 七 数字 零 六 七",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "c n zero six seven 数 字 zero six seven",
-  "sigWerNormalizedPredicted": "c two zero one six seven 数 字 zero six seven",
+  "sigWerNormalizedGold": "c n 零 六 七 数 字 零 六 七",
+  "sigWerNormalizedPredicted": "c 二 零 六 七 数 字 零 六 七",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'n' to 'two' at position 1",
-      "reason": "'n' is a letter, while 'two' is a number; this changes the content and could lead to confusion, especially if this is a code or identifier. The meaning is significantly altered.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'one' at position 3",
-      "reason": "Adding 'one' changes the sequence of numbers/letters, which is critical in codes or identifiers. This is a significant error as it alters the intended sequence.",
+      "error": "Substitution: 'n' to '二' at position 1",
+      "reason": "'n' is an English letter, while '二' is the Chinese character for '2'; this is a significant substitution that changes the intended content, especially in a sequence where each character is important (such as a code or identifier).",
       "score": 1
     }
   ]

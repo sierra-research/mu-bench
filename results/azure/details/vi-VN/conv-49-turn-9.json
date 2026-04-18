@@ -2,20 +2,35 @@
   "gold": "Tôi muốn đổi địa chỉ giao thẻ tới nhà. Tôi muốn đổi địa chỉ nhận thẻ.",
   "predicted": "Ờ tôi muốn đổi cái địa chỉ mà giao thẻ tới nhà tôi muốn đổi cái địa chỉ nhận này á.",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
+  "wer": 0.25,
+  "werEdits": 4,
   "werRefWords": 16,
   "werNormalizedGold": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận thẻ",
-  "werNormalizedPredicted": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận này",
-  "significantWer": 0.0625,
+  "werNormalizedPredicted": "tôi muốn đổi cái địa chỉ mà giao thẻ tới nhà tôi muốn đổi cái địa chỉ nhận này",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận thẻ",
-  "sigWerNormalizedPredicted": "tôi muốn đổi địa chỉ giao thẻ tới nhà tôi muốn đổi địa chỉ nhận này",
+  "sigWerNormalizedPredicted": "tôi muốn đổi cái địa chỉ mà giao thẻ tới nhà tôi muốn đổi cái địa chỉ nhận này",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'cái' at position 3",
+      "reason": "'Cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mà' at position 5",
+      "reason": "'Mà' is a conjunction that adds a slight nuance but does not alter the overall meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'cái' at position 12",
+      "reason": "Again, 'cái' is a classifier and its presence does not affect the meaning.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'thẻ' to 'này' at position 15",
-      "reason": "'thẻ' means 'card' and 'này' means 'this'; substituting 'card' with 'this' changes the object being referred to and makes the sentence unclear or incorrect in context, significantly altering the meaning.",
+      "reason": "Substituting 'thẻ' (card) with 'này' (this) changes the object being referred to, which could confuse the meaning of the sentence.",
       "score": 1
     }
   ]

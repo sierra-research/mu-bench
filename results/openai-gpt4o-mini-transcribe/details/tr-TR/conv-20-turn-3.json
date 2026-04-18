@@ -2,15 +2,26 @@
   "gold": "S N 575.",
   "predicted": "Sene beş yüz yetmiş beş.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "s n five hundred seventy five",
-  "werNormalizedPredicted": "s n five hundred seventy five",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "s n beş yüz yetmiş beş",
+  "werNormalizedPredicted": "sene beş yüz yetmiş beş",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "s n five hundred seventy five",
-  "sigWerNormalizedPredicted": "s n five hundred seventy five",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "s n beş yüz yetmiş beş",
+  "sigWerNormalizedPredicted": "sene beş yüz yetmiş beş",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sene' at position 0",
+      "reason": "'s' is a single letter, likely an initial or part of a spelled-out sequence, while 'sene' is a full word with a different meaning. This changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from a spelled-out sequence or initial can change the intended meaning or reference, making it a significant error.",
+      "score": 1
+    }
+  ]
 }

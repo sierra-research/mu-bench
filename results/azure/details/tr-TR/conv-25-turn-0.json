@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
   "werNormalizedPredicted": "anlamanım merhabalar ben sizden yardım istemiştim",
-  "significantWer": 0.14285714285714285,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anlamanım' at position 0",
-      "reason": "'anlamanım' is a completely different word from 'anna', changing the intended addressee and making the sentence incoherent.",
+      "reason": "'anlamanım' is a completely different word from 'anna', changing the meaning and making the sentence incoherent. This is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: 'hanım' at position 1",
-      "reason": "Omitting 'hanım' (a polite form of address) slightly reduces politeness but does not significantly change the meaning of the sentence.",
+      "reason": "Omitting 'hanım' (a polite form of address) slightly reduces politeness but does not derail the main meaning of the sentence.",
       "score": 2
     }
   ]

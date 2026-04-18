@@ -2,15 +2,26 @@
   "gold": "Okay. Okay. What would you like?",
   "predicted": "What? Okay. Okay. What, what would you like?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "okay okay what would you like",
-  "werNormalizedPredicted": "okay okay what would you like",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "what okay okay what what would you like",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "okay okay what would you like",
-  "sigWerNormalizedPredicted": "okay okay what would you like",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "what okay okay what what would you like",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'what' at position 0",
+      "reason": "The extra 'what' at the beginning does not change the overall meaning of the sentence, as it is a repetition and does not derail the intent or coherence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'what' at position 2",
+      "reason": "The repeated 'what' in the middle is a minor disfluency and does not change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

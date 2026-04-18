@@ -2,35 +2,40 @@
   "gold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Sau điện thoại là tổng tám mươi bốn chín mươi mốt một hai ba bốn nằm sau bảy mươi tám",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 4,
+  "wer": 0.3888888888888889,
+  "werEdits": 7,
   "werRefWords": 18,
-  "werNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "sau dien thoai la tong tam muoi bon chin muoi mot mot hai ba bon nam sau bay muoi tam",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 4,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "sau điện thoại là tổng tám mươi bốn chín mươi mốt một hai ba bốn nằm sau bảy mươi tám",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "sau dien thoai la tong tam muoi bon chin muoi mot mot hai ba bon nam sau bay muoi tam",
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "sau điện thoại là tổng tám mươi bốn chín mươi mốt một hai ba bốn nằm sau bảy mươi tám",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'so' to 'sau' at position 0",
-      "reason": "'so' (number) and 'sau' (after/six) are different words in Vietnamese; this changes the meaning of the sentence and can confuse the listener about the subject.",
+      "error": "Substitution: 'số' to 'sau' at position 0",
+      "reason": "'số' means 'number' and 'sau' means 'after' in Vietnamese; this changes the meaning of the sentence and makes it incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'cong' to 'tong' at position 4",
-      "reason": "'cong' (plus) and 'tong' (total) are different words; this changes the meaning of the phone number prefix, which is critical information.",
+      "error": "Substitution: 'cộng' to 'tổng' at position 4",
+      "reason": "'cộng' is used for the international dialing code ('plus'), while 'tổng' means 'total' or 'sum', which is incorrect in this context and confuses the meaning.",
       "score": 1
     },
     {
-      "error": "Insertion: 'muoi' at position 9",
-      "reason": "Inserting 'muoi' (ten) changes the sequence of numbers in the phone number, which is significant for understanding or using the number.",
+      "error": "Substitution: 'một' to 'mốt' at position 9",
+      "reason": "The insertion of 'mươi' ('ten') changes the number sequence, which is critical for a phone number.",
       "score": 1
     },
     {
-      "error": "Insertion: 'muoi' at position 17",
-      "reason": "Inserting 'muoi' (ten) again alters the phone number, making it incorrect and unusable.",
+      "error": "Substitution: 'năm' to 'nằm' at position 14",
+      "reason": "'một' is 'one' and 'mốt' is a variant of 'one' used after 'mươi', but in this context, it changes the phone number and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 17",
+      "reason": "'năm' means 'five' (a digit in the phone number), while 'nằm' means 'to lie down', which is a completely different word and changes the phone number.",
       "score": 1
     }
   ]

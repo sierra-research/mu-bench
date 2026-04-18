@@ -2,21 +2,26 @@
   "gold": "¿Me la enviarás por email?",
   "predicted": "¿Me la enviará por mail?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "me la enviaras por email",
-  "werNormalizedPredicted": "me la enviara por email",
-  "significantWer": 0.0,
+  "werNormalizedGold": "me la enviarás por email",
+  "werNormalizedPredicted": "me la enviara por mail",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "me la enviaras por email",
-  "sigWerNormalizedPredicted": "me la enviara por email",
+  "sigWerNormalizedGold": "me la enviarás por email",
+  "sigWerNormalizedPredicted": "me la enviara por mail",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'enviaras' to 'enviara' at position 2",
-      "reason": "The difference is between 'enviaras' (second person singular, 'you send') and 'enviara' (third person singular or subjunctive, 'he/she would send' or 'I/he/she sent'). In this context, the meaning is slightly changed but the overall intent of the sentence remains clear.",
+      "error": "Substitution: 'enviarás' to 'enviara' at position 2",
+      "reason": "The difference is the presence/absence of the accent, which changes the verb from future tense ('you will send') to past subjunctive ('you sent' or 'if you sent'). In context, this is a minor grammatical error but does not derail the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 4",
+      "reason": "'Email' and 'mail' are often used interchangeably in informal Spanish to refer to electronic mail. The meaning is preserved in context.",
+      "score": 3
     }
   ]
 }

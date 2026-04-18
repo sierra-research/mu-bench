@@ -1,32 +1,32 @@
 {
   "gold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
-  "predicted": "Ý là tôi muốn được xin cấp một lần hai cái thẻ SD cho một cái dụng phong.",
+  "predicted": "Ý là tôi muốn được xin cấp một lần hai cái thẻ F để một cái dịch phòng.",
   "unintelligible": false,
-  "wer": 0.3125,
-  "werEdits": 5,
+  "wer": 0.1875,
+  "werEdits": 3,
   "werRefWords": 16,
   "werNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
-  "werNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ sd cho một cái dụng phong",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ f để một cái dịch phòng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
-  "sigWerNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ sd cho một cái dụng phong",
+  "sigWerNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ f để một cái dịch phòng",
   "sigWerErrors": [
     {
       "error": "Insertion: 'xin' at position 5",
-      "reason": "'Xin' (to request) is redundant in this context and does not change the overall meaning of the sentence.",
+      "reason": "'xin' (to request) is redundant with 'muốn được cấp' (want to be issued), and does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'để' to 'cho' at position 11",
-      "reason": "'sd' (likely shorthand for 'sử dụng' or 'sim data') is an extra word that adds minor detail but does not derail the main meaning.",
-      "score": 2
+      "error": "Insertion: 'f' at position 11",
+      "reason": "'f' is an extraneous character in the context of 'thẻ' (card), which could cause confusion about the type of card, making the meaning less clear.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'dự' to 'dụng' at position 14",
-      "reason": "'Để' (in order to) and 'cho' (for) are similar in this context and do not significantly change the meaning.",
-      "score": 3
+      "error": "Substitution: 'dự' to 'dịch' at position 14",
+      "reason": "'dự phòng' means 'backup' or 'reserve', while 'dịch phòng' is not a standard phrase and changes the intended meaning, making the sentence confusing.",
+      "score": 1
     }
   ]
 }

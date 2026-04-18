@@ -2,15 +2,21 @@
   "gold": "我正在等待我的信用卡，想知道它的状态。",
   "predicted": "我正在等待我的信用卡，想提-- 想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
   "werNormalizedGold": "我正在等待我的信用卡 想知道它的状态",
-  "werNormalizedPredicted": "我正在等待我的信用卡 想知道它的状态",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "我正在等待我的信用卡 想提 想知道它的状态",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 等 待 我 的 信 用 卡 想 提 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '提' at position 11",
+      "reason": "The insertion of '提' (which means 'raise' or 'mention') before '想知道' ('want to know') slightly disrupts the sentence flow but does not significantly change the overall meaning, as the main intent of wanting to know the credit card status remains clear.",
+      "score": 2
+    }
+  ]
 }

@@ -1,16 +1,27 @@
 {
   "gold": "Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám.",
+  "predicted": "Số điện thoại của mình là 0849112345678.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 19,
-  "werNormalizedGold": "số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "wer": 0.1,
+  "werEdits": 2,
+  "werRefWords": 20,
+  "werNormalizedGold": "số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại của mình là không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại của mình là không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'không' at position 6",
+      "reason": "'Cộng' (plus) is used to indicate the international dialing code, while 'không' (zero) is a digit. This substitution changes the country code and results in a completely different phone number, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 8",
+      "reason": "'Mươi' is part of the number 'tám mươi bốn' (eighty-four), which is the country code. Omitting 'mươi' changes 'eighty-four' to 'eight four', which is not a valid country code and alters the phone number significantly.",
+      "score": 1
+    }
+  ]
 }

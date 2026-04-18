@@ -1,22 +1,27 @@
 {
   "gold": "Doğrudur, onaylıyorum.",
-  "predicted": "Doğru olan diyorum.",
+  "predicted": "Doğrulanıyorum.",
   "unintelligible": false,
-  "wer": 1.5,
-  "werEdits": 3,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "dogrudur onayliyorum",
-  "werNormalizedPredicted": "dogru olan diyorum",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "doğrudur onaylıyorum",
+  "werNormalizedPredicted": "doğrulanıyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "dogrudur onayliyorum",
-  "sigWerNormalizedPredicted": "dogru olan diyorum",
+  "sigWerNormalizedGold": "doğrudur onaylıyorum",
+  "sigWerNormalizedPredicted": "doğrulanıyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dogrudur' to 'olan' at position 0",
-      "reason": "'dogrudur' means 'it is correct' or 'that's right', while 'dogru olan' means 'the correct one' or 'what is correct'. This changes the meaning from a confirmation to a description, which can confuse the intent of the sentence.",
-      "score": 2
+      "error": "Substitution: 'doğrudur' to 'doğrulanıyorum' at position 0",
+      "reason": "'doğrudur' means 'it is correct', while 'doğrulanıyorum' means 'I am being verified'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'onaylıyorum' at position 1",
+      "reason": "'onaylıyorum' means 'I approve', and its omission removes an important part of the intended meaning.",
+      "score": 1
     }
   ]
 }

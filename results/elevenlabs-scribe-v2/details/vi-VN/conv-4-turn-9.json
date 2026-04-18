@@ -2,15 +2,26 @@
   "gold": "Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Ờ, số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 19,
-  "werNormalizedGold": "so dien thoai cua minh la cong tam bon chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "so dien thoai cua minh la cong tam bon chin mot mot hai ba bon nam sau bay tam",
-  "significantWer": 0.0,
+  "wer": 0.1,
+  "werEdits": 2,
+  "werRefWords": 20,
+  "werNormalizedGold": "số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "so dien thoai cua minh la cong tam bon chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "so dien thoai cua minh la cong tam bon chin mot mot hai ba bon nam sau bay tam",
-  "sigWerErrors": []
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 8",
+      "reason": "'tám mươi bốn' means 'eighty four' (84), while 'tám tư' is a colloquial way to say 'eighty four' in Vietnamese. The meaning is preserved, just a different way of saying the same number.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bốn' at position 9",
+      "reason": "'tám tư' already expresses 'eighty four', so omitting 'bốn' does not change the meaning. The phone number is still correctly conveyed.",
+      "score": 3
+    }
+  ]
 }

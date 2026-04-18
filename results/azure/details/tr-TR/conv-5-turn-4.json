@@ -2,21 +2,26 @@
   "gold": "Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet.arslanemail.com.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
-  "werRefWords": 5,
-  "werNormalizedGold": "ahmet arslan at email com",
-  "werNormalizedPredicted": "ahmet arslan email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "ahmet arslan at email com",
-  "sigWerNormalizedPredicted": "ahmet arslan email com",
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet arslanemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet arslanemail com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'at' at position 2",
-      "reason": "The omission of 'at' removes the connector typically used in email addresses, which could cause confusion or make the email address unclear, but the overall meaning (an email address is being given) is still understandable.",
-      "score": 2
+      "error": "Substitution: 'nokta' to 'arslanemail' at position 1",
+      "reason": "'nokta' (meaning 'dot' in Turkish, used for email addresses) is missing, which makes the email address format incorrect and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arslan' at position 2",
+      "reason": "Missing 'at' breaks the standard email address format, making it unclear and potentially unusable.",
+      "score": 1
     }
   ]
 }

@@ -2,21 +2,31 @@
   "gold": "收货地址是北京市海淀区北京路 1 2 3号。",
   "predicted": "收货地址是中国北京市海淀区北京路一百二十三号。",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 2,
-  "werRefWords": 20,
-  "werNormalizedGold": "收货地址是北京市海淀区北京路一百二十三号",
-  "werNormalizedPredicted": "收货地址是中国北京市海淀区北京路一百二十三号",
-  "significantWer": 0.0,
+  "wer": 0.2222222222222222,
+  "werEdits": 4,
+  "werRefWords": 18,
+  "werNormalizedGold": "收货地址是北京市海淀区北京路 一 二 三号",
+  "werNormalizedPredicted": "收货地址是中国北京市海淀区北京路 一 百 二 十 三号",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 二 三 号",
   "sigWerNormalizedPredicted": "收 货 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
   "sigWerErrors": [
     {
       "error": "Insertion: '中' at position 5",
-      "reason": "The insertion of '中' (China) before '北京' (Beijing) adds extra information but does not change the meaning of the address, as Beijing is in China and the address remains clear.",
+      "reason": "The insertion of '中' (China) before '国' (country) adds 'China' to the address, but since the rest of the address is still correct and adding the country does not change the meaning significantly, this is a minor error.",
       "score": 2
+    },
+    {
+      "error": "Insertion: '百' at position 15",
+      "reason": "The expected address number is '一二三' (123), but the actual is '一百二十三' (123). The insertion of '百' (hundred) is just a different way of expressing the same number, so the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: '十' at position 16",
+      "reason": "Similarly, the insertion of '十' (ten) is part of the correct way to write '123' as '一百二十三'. This is just a different numeric format, so the meaning is unchanged.",
+      "score": 3
     }
   ]
 }

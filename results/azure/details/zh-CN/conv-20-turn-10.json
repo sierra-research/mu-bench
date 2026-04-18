@@ -6,21 +6,21 @@
   "werEdits": 9,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是美玲 at email dot com",
-  "werNormalizedPredicted": "i have the email address at email dot com",
-  "significantWer": 0.15384615384615385,
+  "werNormalizedPredicted": "wow i have the email address at email dot com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "i have the email address at email dot com",
+  "sigWerNormalizedPredicted": "wow i have the email address at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '我' to 'i' at position 0",
-      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a language mismatch and results in a significant error as the meaning and language are completely different.",
+      "error": "Substitution: '我' to 'wow' at position 0",
+      "reason": "The expected word is in Chinese ('我' meaning 'I'), but the actual transcription uses 'wow', which is an English exclamation and not a translation or equivalent. This changes the meaning and language, making the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: '址' at position 5",
-      "reason": "The word '址' (address) is missing in the actual transcription, which omits a key part of the expected information. This is a significant error as it affects the meaning of the sentence.",
+      "error": "Deletion: '是' at position 6",
+      "reason": "'是' means 'is' in Chinese and is omitted in the actual transcription. This omission affects the grammatical structure, but since the actual sentence is in English, the omission is part of the overall language mismatch.",
       "score": 1
     }
   ]

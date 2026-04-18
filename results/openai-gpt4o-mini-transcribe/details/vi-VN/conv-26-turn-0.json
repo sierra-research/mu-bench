@@ -1,26 +1,31 @@
 {
   "gold": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng. Bạn có thể xem giúp mình cần chuẩn bị những gì không?",
-  "predicted": "Chào Anan nhé, mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng. Bạn có thể xem là giúp mình cần những chuẩn bị những gì không?",
+  "predicted": "Chào Anan nhé, mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạng mức thẻ tín dụng. Bạn có thể xem là giúp mình cần chuẩn bị những gì không?",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 2,
+  "wer": 0.09375,
+  "werEdits": 3,
   "werRefWords": 32,
   "werNormalizedGold": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem giúp mình cần chuẩn bị những gì không",
-  "werNormalizedPredicted": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem là giúp mình cần những chuẩn bị những gì không",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "chào anan nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạng mức thẻ tín dụng bạn có thể xem là giúp mình cần chuẩn bị những gì không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem giúp mình cần chuẩn bị những gì không",
-  "sigWerNormalizedPredicted": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem là giúp mình cần những chuẩn bị những gì không",
+  "sigWerNormalizedPredicted": "chào anan nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạng mức thẻ tín dụng bạn có thể xem là giúp mình cần chuẩn bị những gì không",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'là' at position 24",
-      "reason": "The insertion of 'là' (which means 'is/that') does not significantly change the meaning of the sentence in this context; it is a minor grammatical addition.",
+      "error": "Substitution: 'anna' to 'anan' at position 1",
+      "reason": "Minor misspelling of a proper noun, but still recognizable as the intended name.",
       "score": 2
     },
     {
-      "error": "Insertion: 'những' at position 27",
-      "reason": "The extra 'những' (which means 'those' or 'the') is redundant but does not change the meaning of the sentence.",
+      "error": "Substitution: 'hạn' to 'hạng' at position 15",
+      "reason": "The words 'hạn' (limit) and 'hạng' (rank) have different meanings, which changes the meaning of the phrase 'hạn mức thẻ tín dụng' (credit card limit) to 'hạng mức thẻ tín dụng' (credit card rank), making the sentence confusing or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'là' at position 24",
+      "reason": "The insertion of 'là' (is) does not significantly change the meaning of the sentence in this context.",
       "score": 2
     }
   ]

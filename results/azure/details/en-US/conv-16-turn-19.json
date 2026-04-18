@@ -2,20 +2,25 @@
   "gold": "Ah, yeah. Yeah. Send me to a live agent, please. I mean, but before going to that live A, like is this pretty common?",
   "predicted": "Yeah, send me to a live agent please. I mean, but before going to that live agent, like is this pretty common?",
   "unintelligible": false,
-  "wer": 0.043478260869565216,
-  "werEdits": 1,
+  "wer": 0.08695652173913043,
+  "werEdits": 2,
   "werRefWords": 23,
-  "werNormalizedGold": "yeah yeah send me to a live agent please i mean but before going to that live agent like is this pretty common",
+  "werNormalizedGold": "yeah yeah send me to a live agent please i mean but before going to that live a like is this pretty common",
   "werNormalizedPredicted": "yeah send me to a live agent please i mean but before going to that live agent like is this pretty common",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "yeah yeah send me to a live agent please i mean but before going to that live agent like is this pretty common",
+  "sigWerNormalizedGold": "yeah yeah send me to a live agent please i mean but before going to that live a like is this pretty common",
   "sigWerNormalizedPredicted": "yeah send me to a live agent please i mean but before going to that live agent like is this pretty common",
   "sigWerErrors": [
     {
       "error": "Deletion: 'yeah' at position 1",
-      "reason": "Dropping the repeated 'yeah' at the start does not change the meaning of the sentence; it is a minor omission that does not affect understanding.",
+      "reason": "Dropping the repeated 'yeah' at the start does not change the meaning of the sentence; it is a minor omission of a filler word.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'a' to 'agent' at position 17",
+      "reason": "Substituting 'a' with 'agent' slightly changes the phrase but does not derail the meaning of the sentence; the intent remains clear.",
       "score": 2
     }
   ]

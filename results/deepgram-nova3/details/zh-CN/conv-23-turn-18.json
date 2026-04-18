@@ -2,20 +2,25 @@
   "gold": "是妹玲 at email dot com。",
   "predicted": "史梅林。",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werEdits": 4,
+  "wer": 1.0,
+  "werEdits": 7,
   "werRefWords": 7,
-  "werNormalizedGold": "史梅林 at email dot com",
+  "werNormalizedGold": "是妹玲 at email dot com",
   "werNormalizedPredicted": "史梅林",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "史 梅 林 at email dot com",
+  "sigWerNormalizedGold": "是 妹 玲 at email dot com",
   "sigWerNormalizedPredicted": "史 梅 林",
   "sigWerErrors": [
     {
+      "error": "Substitution: '是' to '史' at position 0",
+      "reason": "The first character is a different Chinese character, which may change the meaning or the name being transcribed. In the context of a name or email, this is a significant error.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'at' at position 3",
-      "reason": "The omission of 'at email dot com' removes the entire email address, which is critical information. This significantly changes the meaning and completeness of the transcription.",
+      "reason": "The entire email domain is missing, which is critical information for an email address. This is a significant error.",
       "score": 1
     }
   ]

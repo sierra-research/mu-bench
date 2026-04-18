@@ -2,15 +2,31 @@
   "gold": "Es María punto López arroba email punto com.",
   "predicted": "esmaria.lopez@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
-  "werNormalizedGold": "es maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "es maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es maria punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 1",
+      "reason": "Missing accent on the name, but the word is still clearly the same name and meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "Missing accent on the surname, but the word is still clearly the same name and meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "'email' and 'gmail' are different email providers; this changes the actual email address and could cause a message to be sent to the wrong address.",
+      "score": 1
+    }
+  ]
 }

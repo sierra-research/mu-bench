@@ -2,21 +2,26 @@
   "gold": "Hayır. Hayır yanlış söylediniz. Telefon numarasını tekrar söylüyorum. Artı 90 123 0 90 45 67.",
   "predicted": "Hayır, hayır yanlış söyledin. Telefon numarasını tekrar söylüyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi.",
   "unintelligible": false,
-  "wer": 0.05263157894736842,
-  "werEdits": 1,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
   "werRefWords": 19,
-  "werNormalizedGold": "hayır hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedGold": "hayır hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
   "werNormalizedPredicted": "hayır hayır yanlış söyledin telefon numarasını tekrar söylüyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "hayır hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedGold": "hayır hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
   "sigWerNormalizedPredicted": "hayır hayır yanlış söyledin telefon numarasını tekrar söylüyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'söylediniz' to 'söyledin' at position 3",
-      "reason": "The difference is between the formal/plural ('söylediniz') and informal/singular ('söyledin') forms of 'you said'. The overall meaning of the sentence remains the same, only the level of formality changes.",
-      "score": 2
+      "reason": "The difference is between the formal ('söylediniz') and informal ('söyledin') forms of 'you said'. The meaning is the same, only the level of formality changes.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 10",
+      "reason": "'Bir' means 'one' and 'yüz' means 'hundred'. This changes the phone number significantly, resulting in a completely different number.",
+      "score": 1
     }
   ]
 }

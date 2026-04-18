@@ -2,25 +2,30 @@
   "gold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
   "predicted": "Okay. How how would I reference, you know basically, I don't wanna go through everything we already talked about. So is there, like, a case number?",
   "unintelligible": false,
-  "wer": 0.11538461538461539,
-  "werEdits": 3,
+  "wer": 0.15384615384615385,
+  "werEdits": 4,
   "werRefWords": 26,
   "werNormalizedGold": "okay how would i reference you know basically i do not want to go through everything we already talked about so zero like our case number",
-  "werNormalizedPredicted": "okay how would i reference you know basically i do not want to go through everything we already talked about so is there like a case number",
-  "significantWer": 0.038461538461538464,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "okay how how would i reference you know basically i do not want to go through everything we already talked about so is there like a case number",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 26,
   "sigWerNormalizedGold": "okay how would i reference you know basically i do not want to go through everything we already talked about so zero like our case number",
-  "sigWerNormalizedPredicted": "okay how would i reference you know basically i do not want to go through everything we already talked about so is there like a case number",
+  "sigWerNormalizedPredicted": "okay how how would i reference you know basically i do not want to go through everything we already talked about so is there like a case number",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'zero' to 'there' at position 21",
-      "reason": "The insertion of 'is' changes the structure of the sentence but does not significantly alter the overall meaning, as the intent to ask about a case number remains clear.",
+      "error": "Insertion: 'how' at position 2",
+      "reason": "The extra 'how' is a repetition that does not change the meaning of the sentence; it is a minor disfluency.",
       "score": 2
     },
     {
+      "error": "Substitution: 'zero' to 'there' at position 21",
+      "reason": "The insertion of 'is' changes the structure to a question ('is there like a case number') instead of referencing a specific case number ('zero like our case number'), which alters the meaning significantly.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'our' to 'a' at position 23",
-      "reason": "Substituting 'zero' with 'there' changes the reference from a specific number to a general location or existence, which alters the meaning of the sentence and could cause confusion about what is being referenced.",
+      "reason": "Substituting 'zero' (which refers to a specific number or identifier) with 'there' changes the meaning from referencing a specific case number to asking if a case number exists, which is a significant change.",
       "score": 1
     }
   ]

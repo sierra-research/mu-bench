@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
   "werNormalizedPredicted": "tôi muốn hỏi là cái software này tôi có in ra bản giấy có được không",
-  "significantWer": 0.11764705882352941,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'sao' to 'software' at position 5",
-      "reason": "'sao kê' means 'statement' (e.g., bank statement) in Vietnamese, while 'software' is a completely different concept. This substitution changes the meaning of the sentence significantly.",
+      "reason": "'sao kê' means 'statement' (as in bank statement), while 'software' is a completely different concept. This substitution changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'kê' at position 6",
-      "reason": "Omitting 'kê' from 'sao kê' breaks the meaning of 'statement', making the phrase incomplete and unclear.",
+      "reason": "Omitting 'kê' breaks the phrase 'sao kê', which is necessary to convey the correct meaning ('statement'). This omission further derails the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'muốn' to 'có' at position 9",
-      "reason": "'muốn' means 'want', while 'có' means 'have'. This changes the intent of the sentence but does not completely derail the meaning, as the context is still about printing a paper copy.",
+      "reason": "'muốn' means 'want', while 'có' means 'can' or 'have'. This changes the intent of the sentence from expressing a desire to asking about possibility, but the overall request about printing a paper copy is still understandable.",
       "score": 2
     }
   ]

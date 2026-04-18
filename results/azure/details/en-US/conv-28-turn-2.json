@@ -2,26 +2,31 @@
   "gold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
   "predicted": "trying to get a pen. All right, I got my pen. Ready?",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 4,
-  "werRefWords": 14,
-  "werNormalizedGold": "let me try and get a pen all right i got my pen ready",
+  "wer": 0.3333333333333333,
+  "werEdits": 5,
+  "werRefWords": 15,
+  "werNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
   "werNormalizedPredicted": "trying to get a pen all right i got my pen ready",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "let me try and get a pen all right i got my pen ready",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
   "sigWerNormalizedPredicted": "trying to get a pen all right i got my pen ready",
   "sigWerErrors": [
     {
       "error": "Substitution: 'let' to 'trying' at position 0",
-      "reason": "'Let me try' expresses intent to attempt, while 'trying' is a present participle and omits the subject. The meaning is similar (someone is attempting to get a pen), so the overall intent is preserved.",
+      "reason": "'Let me try' expresses intent to attempt, while 'trying' is a different grammatical structure and omits the subject. The meaning is somewhat preserved but the sentence structure and nuance change.",
       "score": 2
     },
     {
       "error": "Deletion: 'try' at position 2",
-      "reason": "'Try' is omitted, but 'trying' already conveys the act of attempting. The omission does not significantly change the meaning of the sentence.",
+      "reason": "'Let me try and get a pen' vs 'trying to get a pen'—the omission of 'try' is absorbed by the change in sentence structure, so the overall meaning is still clear.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'yeah' at position 7",
+      "reason": "'Yeah' is a filler/acknowledgment word and its omission does not affect the meaning of the sentence.",
+      "score": 3
     }
   ]
 }

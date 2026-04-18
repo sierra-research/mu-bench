@@ -2,15 +2,21 @@
   "gold": "Tôi đã thấy thông báo.",
   "predicted": "Ờ tôi đã hãy thông báo.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
   "werNormalizedGold": "tôi đã thấy thông báo",
-  "werNormalizedPredicted": "tôi đã thấy thông báo",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi đã hãy thông báo",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "tôi đã thấy thông báo",
-  "sigWerNormalizedPredicted": "tôi đã thấy thông báo",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi đã hãy thông báo",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thấy' to 'hãy' at position 2",
+      "reason": "'thấy' means 'see' while 'hãy' is an imperative marker ('please' or 'let's'), which changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

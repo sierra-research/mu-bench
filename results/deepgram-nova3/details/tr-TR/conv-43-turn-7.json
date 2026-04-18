@@ -2,21 +2,26 @@
   "gold": "Hayır, yanlış tamamen. Tekrar söylüyorum kaydet. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Hayır yanlış tamam, yine tekrar söylüyorum kaydet ahmet nokta arsadan et email nokta com",
   "unintelligible": false,
-  "wer": 0.15384615384615385,
-  "werEdits": 2,
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
   "werRefWords": 13,
   "werNormalizedGold": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "hayır yanlış tamam yine tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "hayır yanlış tamam yine tekrar söylüyorum kaydet ahmet nokta arsadan et email nokta com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "hayır yanlış tamamen tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "hayır yanlış tamam yine tekrar söylüyorum kaydet ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "hayır yanlış tamam yine tekrar söylüyorum kaydet ahmet nokta arsadan et email nokta com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tamamen' to 'yine' at position 2",
-      "reason": "'tamamen' means 'completely', while 'tamam' means 'okay' or 'alright'. This changes the meaning of the sentence, as the emphasis on 'completely' is lost.",
-      "score": 1
+      "reason": "'tamam' (okay) is inserted, but does not significantly change the meaning of the sentence, which is a sequence of commands or statements.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arslan' to 'arsadan' at position 8",
+      "reason": "'tamamen' (completely) is replaced with 'yine' (again), which changes the nuance but not the overall intent of repeating the statement.",
+      "score": 2
     }
   ]
 }

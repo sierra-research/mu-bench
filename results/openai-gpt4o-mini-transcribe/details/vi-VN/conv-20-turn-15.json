@@ -1,27 +1,27 @@
 {
   "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
-  "predicted": "Mình không đúng, mình chấm Trần a cộng email.com",
+  "predicted": "Mình không đúng, minh.cham.trần@gmail.com",
   "unintelligible": false,
   "wer": 0.2,
   "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "không đúng minh chấm trần a cộng email chấm com",
-  "werNormalizedPredicted": "mình không đúng mình chấm trần a cộng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "mình không đúng minh chấm trần a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "không đúng minh chấm trần a cộng email chấm com",
-  "sigWerNormalizedPredicted": "mình không đúng mình chấm trần a cộng email chấm com",
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "mình không đúng minh chấm trần a còng gmail chấm com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'mình' at position 0",
-      "reason": "The insertion of 'mình' at the beginning adds a subject pronoun but does not significantly change the meaning of the sentence, which is about an email address. The overall intent remains clear.",
+      "reason": "The insertion of 'mình' at the beginning does not change the overall meaning of the sentence, as it is a pronoun that does not derail the intent or information being conveyed.",
       "score": 2
     },
     {
-      "error": "Substitution: 'minh' to 'mình' at position 2",
-      "reason": "The substitution is a minor spelling difference due to the diacritic, but in Vietnamese, 'minh' and 'mình' can have different meanings. However, in the context of an email address, this is likely a minor error as it does not derail the meaning.",
-      "score": 2
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Substituting 'email' with 'gmail' changes the actual email address domain, which is a significant error as it leads to a completely different address.",
+      "score": 1
     }
   ]
 }

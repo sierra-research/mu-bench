@@ -2,15 +2,36 @@
   "gold": "你再等一下，我的意思是，我现在等待新卡，并想知道它的状态。",
   "predicted": "你在等一下我的意思是我现在当代显卡像是到她的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.36,
+  "werEdits": 9,
   "werRefWords": 25,
-  "werNormalizedGold": "你 再 等 一 下 我 的 意思 是 我 现在 等 待 新 卡 并 想 知道 它 的 状态",
-  "werNormalizedPredicted": "你 再 等 一 下 我 的 意思 是 我 现在 等 待 新 卡 并 想 知道 它 的 状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你再等一下 我的意思是 我现在等待新卡 并想知道它的状态",
+  "werNormalizedPredicted": "你在等一下我的意思是我现在当代显卡像是到她的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 25,
   "sigWerNormalizedGold": "你 再 等 一 下 我 的 意 思 是 我 现 在 等 待 新 卡 并 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "你 再 等 一 下 我 的 意 思 是 我 现 在 等 待 新 卡 并 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 在 等 一 下 我 的 意 思 是 我 现 在 当 代 显 卡 像 是 到 她 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 1",
+      "reason": "‘再’ means 'again' or 'more', while ‘在’ means 'at' or 'in'. This changes the meaning of the sentence, as '再等一下' means 'wait a bit longer', but '在等一下' is not a standard phrase and loses the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '等' to '当' at position 13",
+      "reason": "‘等’ means 'wait', while ‘当’ means 'act as' or 'when'. This substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '并' to '像' at position 17",
+      "reason": "‘并’ means 'and' or 'also', while ‘像’ means 'like' or 'as'. This changes the logical connection in the sentence, but the overall intent may still be partially understood.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '它' at position 21",
+      "reason": "‘它’ means 'it', referring to the card. Omitting this pronoun makes the sentence less clear but does not completely derail the meaning.",
+      "score": 2
+    }
+  ]
 }

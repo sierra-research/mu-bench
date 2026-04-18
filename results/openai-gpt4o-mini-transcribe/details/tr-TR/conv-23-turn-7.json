@@ -1,21 +1,31 @@
 {
   "gold": "Verildi. Başvuru numaram 975. Referans numaram ise 22 56 15.",
-  "predicted": "Veriler başvuru numaram 975, referans numaram ise 225615.",
+  "predicted": "Veriler, başvuru numaram 975, referans numaram ise 225615.",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
+  "wer": 0.375,
+  "werEdits": 6,
   "werRefWords": 16,
   "werNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
-  "werNormalizedPredicted": "veriler başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "veriler başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş altı yüz on beş",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
-  "sigWerNormalizedPredicted": "veriler başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
+  "sigWerNormalizedPredicted": "veriler başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş altı yüz on beş",
   "sigWerErrors": [
     {
       "error": "Substitution: 'verildi' to 'veriler' at position 0",
-      "reason": "'verildi' means 'was given' (a verb), while 'veriler' means 'data' (a noun). This changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "'verildi' means 'was given' while 'veriler' means 'data'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'iki' at position 10",
+      "reason": "Inserting 'iki' (two) changes the reference number, which is critical information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'iki' to 'beş' at position 11",
+      "reason": "Changing 'iki' (two) to 'beş' (five) alters the reference number, which is significant for identification.",
       "score": 1
     }
   ]

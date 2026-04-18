@@ -2,15 +2,26 @@
   "gold": "Tabii söylüyorum, yazarsan. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Tabi söylüyorum yazarsanahmetaslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 8,
-  "werNormalizedGold": "tabii söylüyorum yazarsan ahmet arslan at email com",
-  "werNormalizedPredicted": "tabii söylüyorum yazarsan ahmet arslan at email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "tabii söylüyorum yazarsan ahmet arslan at email com",
-  "sigWerNormalizedPredicted": "tabii söylüyorum yazarsan ahmet arslan at email com",
-  "sigWerErrors": []
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "tabi söylüyorum yazarsan ahmet arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabi söylüyorum yazarsan ahmet arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "Minor spelling difference, both words are understood as the same in Turkish and do not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 4",
+      "reason": "Omitting 'nokta' (dot) in an email address changes the actual address and can cause communication errors.",
+      "score": 1
+    }
+  ]
 }

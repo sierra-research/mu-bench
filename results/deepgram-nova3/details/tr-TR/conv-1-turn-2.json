@@ -2,25 +2,25 @@
   "gold": "İsmim Ahmet, soyismim Arslan.",
   "predicted": "Ahmet nokta İsmim Ahmet, soy ismim Aslan.",
   "unintelligible": false,
-  "wer": 1.25,
-  "werEdits": 5,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "ismim ahmet soyismim arslan",
-  "werNormalizedPredicted": "ahmet nokta ismim ahmet soy ismim aslan",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "ahmet ismim ahmet soy ismim aslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "ismim ahmet soyismim arslan",
-  "sigWerNormalizedPredicted": "ahmet nokta ismim ahmet soy ismim aslan",
+  "sigWerNormalizedPredicted": "ahmet ismim ahmet soy ismim aslan",
   "sigWerErrors": [
     {
       "error": "Insertion: 'ahmet' at position 0",
-      "reason": "The word 'ahmet' is inserted at the beginning, but since 'ahmet' is already present as the name in the expected sentence, this does not change the overall meaning.",
-      "score": 3
+      "reason": "The word 'ahmet' is inserted at the beginning, but since 'ahmet' is already present as the name, this does not change the overall meaning of the sentence.",
+      "score": 2
     },
     {
       "error": "Substitution: 'soyismim' to 'ismim' at position 2",
-      "reason": "The word 'nokta' (meaning 'dot' or 'point') is inserted, which does not exist in the expected sentence and adds an unrelated word, but does not derail the meaning.",
+      "reason": "The word 'soy' is inserted, splitting 'soyismim' into two words. This does not change the meaning, as 'soy ismim' together still means 'my surname'.",
       "score": 2
     }
   ]

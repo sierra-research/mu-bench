@@ -2,26 +2,31 @@
   "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
   "predicted": "Chưa đầy đủ đó là: Một, hai, ba đường Lợi Hồ Chí Minh City, zip code là bảy trăm ngàn, Việt Nam",
   "unintelligible": false,
-  "wer": 0.08695652173913043,
-  "werEdits": 2,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
   "werRefWords": 23,
   "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "werNormalizedPredicted": "chưa đầy đủ đó là một hai ba đường lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "significantWer": 0.043478260869565216,
+  "werNormalizedPredicted": "chưa đầy đủ đó là một hai ba đường lợi hồ chí minh city zip code là bảy trăm ngàn việt nam",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "sigWerNormalizedPredicted": "chưa đầy đủ đó là một hai ba đường lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chưa đầy đủ đó là một hai ba đường lợi hồ chí minh city zip code là bảy trăm ngàn việt nam",
   "sigWerErrors": [
     {
       "error": "Substitution: 'phải' to 'đó' at position 3",
-      "reason": "'phải' means 'must' or 'should', while 'đó' means 'that'. This changes the meaning of the sentence, as it alters the intent from a requirement to a statement.",
+      "reason": "'phải' means 'must' or 'should', while 'đó' means 'that'. This changes the intent of the sentence from a requirement to a statement, which alters the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'lê' at position 9",
-      "reason": "'lê' is part of the street name 'lê lợi'. Omitting 'lê' changes the proper noun and could lead to confusion about the address.",
+      "reason": "'lê' is part of the street name 'lê lợi'. Omitting 'lê' changes the proper noun and could cause confusion about the address, but the general meaning is still somewhat clear.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'nghìn' to 'ngàn' at position 20",
+      "reason": "'nghìn' and 'ngàn' are synonyms in Vietnamese, both meaning 'thousand'. This does not change the meaning.",
+      "score": 3
     }
   ]
 }

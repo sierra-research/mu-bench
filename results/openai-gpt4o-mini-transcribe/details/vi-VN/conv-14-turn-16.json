@@ -1,16 +1,27 @@
 {
   "gold": "Xác nhận đơn hàng.",
-  "predicted": "Xác nhận đơn hàng.",
+  "predicted": "sát đẹp đơn giản",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "xác nhận đơn hàng",
-  "werNormalizedPredicted": "xác nhận đơn hàng",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "sát đẹp đơn giản",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "xác nhận đơn hàng",
-  "sigWerNormalizedPredicted": "xác nhận đơn hàng",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sát đẹp đơn giản",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xác' to 'sát' at position 0",
+      "reason": "'xác' (confirm) and 'sát' (close/kill) are completely different words and change the meaning of the phrase significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hàng' to 'giản' at position 3",
+      "reason": "'hàng' (goods/order) and 'giản' (simple) are unrelated, which makes the sentence incoherent and changes the intended meaning.",
+      "score": 1
+    }
+  ]
 }

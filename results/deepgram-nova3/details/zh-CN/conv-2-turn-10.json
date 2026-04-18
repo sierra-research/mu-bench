@@ -5,9 +5,9 @@
   "wer": 0.6,
   "werEdits": 9,
   "werRefWords": 15,
-  "werNormalizedGold": "你 不 你 还 不 知道 我 的 电子 地址 你 还",
-  "werNormalizedPredicted": "海 布 知道 我 的 电子 历史",
-  "significantWer": 0.26666666666666666,
+  "werNormalizedGold": "你不你还不知道我的电子地址你还",
+  "werNormalizedPredicted": "海布知道我的电子历史",
+  "significantWer": 1,
   "majorErrorsCount": 4,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "你 不 你 还 不 知 道 我 的 电 子 地 址 你 还",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '海' at position 0",
-      "reason": "'你' means 'you', while '海' means 'sea'; this changes the subject and meaning of the sentence significantly.",
+      "reason": "'你' (you) and '海' (sea) are completely different words and change the subject of the sentence, making the meaning incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '你' at position 2",
-      "reason": "Omitting '你' ('you') removes a subject reference, which affects the clarity and meaning of the sentence.",
+      "reason": "Omitting '你' (you) removes a subject reference, which can significantly alter the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: '地' to '历' at position 11",
-      "reason": "'地' (as in '地址', address) is replaced by '历' (as in '历史', history), which changes the meaning from 'address' to 'history', a significant semantic error.",
+      "reason": "'地' (as in '地址', address) and '历' (as in '历史', history) are unrelated words, changing the meaning from 'address' to 'history', which is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: '你' at position 13",
-      "reason": "Omitting '你' ('you') again removes a subject reference, which is important for the sentence's meaning.",
+      "reason": "Omitting '你' (you) again removes a subject reference, which is important for the sentence's meaning.",
       "score": 1
     }
   ]

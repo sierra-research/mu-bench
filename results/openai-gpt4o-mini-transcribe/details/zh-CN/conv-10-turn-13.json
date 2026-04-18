@@ -1,16 +1,27 @@
 {
   "gold": "君玲。",
-  "predicted": "Drinlin",
+  "predicted": "drenlin",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
-  "werNormalizedPredicted": "君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "drenlin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
-  "sigWerNormalizedPredicted": "君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "drenlin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drenlin' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is a completely unrelated English-sounding word, which changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from the expected name is missing in the actual transcription, resulting in a significant loss of information and incorrect name transcription.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "Şu at mail dediğinizde mailin önünde E var değil mi?",
   "predicted": "Şu @mail dediğinizde mail'in önünde e var, değil mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "werNormalizedPredicted": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "şu mail dediğinizde mailin önünde e var değil mi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "sigWerNormalizedPredicted": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "şu mail dediğinizde mailin önünde e var değil mi",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'at' at position 1",
+      "reason": "The omission of 'at' removes a key part of the phrase 'at mail', which could change the meaning or reference of the sentence, as 'şu at mail' and 'şu mail' may refer to different things. This could cause confusion about what is being discussed.",
+      "score": 1
+    }
+  ]
 }

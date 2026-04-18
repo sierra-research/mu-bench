@@ -2,15 +2,31 @@
   "gold": "Es María punto López arroba email, se escribe email punto com.",
   "predicted": "Es maria.lopez@ema-- email, es se escribe email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
-  "werNormalizedGold": "es maria punto lopez arroba email se escribe email punto com",
-  "werNormalizedPredicted": "es maria punto lopez arroba email se escribe email punto com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "werNormalizedPredicted": "es maria punto lopez arroba email es se escribe email punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "es maria punto lopez arroba email se escribe email punto com",
-  "sigWerNormalizedPredicted": "es maria punto lopez arroba email se escribe email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba email es se escribe email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 1",
+      "reason": "Missing accent on a common first name; does not change meaning or recognition.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "Missing accent on a common last name; does not change meaning or recognition.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'es' at position 6",
+      "reason": "Extra word 'es' slightly disrupts the flow but does not change the meaning of the email address.",
+      "score": 2
+    }
+  ]
 }

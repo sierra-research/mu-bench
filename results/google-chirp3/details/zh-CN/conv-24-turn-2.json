@@ -6,16 +6,21 @@
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "确认",
-  "werNormalizedPredicted": "对啊",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "对",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "确 认",
-  "sigWerNormalizedPredicted": "对 啊",
+  "sigWerNormalizedPredicted": "对",
   "sigWerErrors": [
     {
       "error": "Substitution: '确' to '对' at position 0",
-      "reason": "'确' (confirm) and '对' (correct/yes) have different meanings and are not semantically equivalent. This substitution changes the intent of the sentence.",
+      "reason": "'对' (correct/right) is a different word from '确' (confirm/true), and this changes the meaning of the phrase from 'confirm' to simply 'correct', which is a significant change in intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '认' at position 1",
+      "reason": "Omitting '认' means the phrase '确认' (confirm) is incomplete, resulting in a loss of the intended meaning.",
       "score": 1
     }
   ]

@@ -2,15 +2,31 @@
   "gold": "Es en el banco. Ah ya. Es María punto López arroba email punto com.",
   "predicted": "Es en el banco... Ah, ya. Es maria.lopez@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
   "werRefWords": 14,
-  "werNormalizedGold": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es en el banco ah ya es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es en el banco ah ya es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 7",
+      "reason": "Missing accent on the 'i' in 'maría', but the name is still clearly recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 9",
+      "reason": "Missing accent on the 'o' in 'lópez', but the surname is still clearly recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 11",
+      "reason": "'email' and 'gmail' are different email providers; this changes the actual email address and could result in a message being sent to the wrong address.",
+      "score": 1
+    }
+  ]
 }

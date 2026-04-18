@@ -7,7 +7,7 @@
   "werRefWords": 4,
   "werNormalizedGold": "美玲 美玲",
   "werNormalizedPredicted": "是",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "美 玲 美 玲",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '美' to '是' at position 0",
-      "reason": "'是' (means 'is/are') is completely different in meaning from '美' (means 'beautiful'), which derails the intended meaning and does not preserve the original name or word.",
+      "reason": "'是' (means 'is/are') is completely different in meaning from '美' (means 'beautiful'), which derails the intended meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "Omitting '玲' (a part of the name '美玲') results in a significant loss of information, especially since names are important to preserve exactly.",
+      "reason": "Omitting '玲' (a part of the name '美玲') results in a significant loss of information, especially since names are important for identification.",
       "score": 1
     }
   ]

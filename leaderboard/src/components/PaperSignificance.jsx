@@ -1,80 +1,17 @@
 import { useState } from "react";
+import { PROVIDERS as LB_PROVIDERS, SIGNIFICANCE, SIGNIFICANCE_PROVIDERS, VARIANCE } from "../data/data.js";
 import "./PaperSignificance.css";
 
-const PROVIDERS = [
-    { id: "google-chirp3", name: "Google Chirp-3" },
-    { id: "elevenlabs-scribe-v2", name: "ElevenLabs Scribe v2" },
-    { id: "azure", name: "Microsoft Azure" },
-    { id: "openai-gpt4o-mini-transcribe", name: "OpenAI GPT-4o Mini" },
-    { id: "deepgram-nova3", name: "Deepgram Nova-3" },
-];
-
-const SIG_DATA = {
-    significantWer: {
-        means: {
-            "google-chirp3": 0.1049,
-            "elevenlabs-scribe-v2": 0.1631,
-            azure: 0.1988,
-            "openai-gpt4o-mini-transcribe": 0.1889,
-            "deepgram-nova3": 0.2572,
-        },
-        pairwise: [
-            [null, 0.0, 0.0, 0.0, 0.0],
-            [1.0, null, 0.0, 0.0, 0.0],
-            [1.0, 1.0, null, 0.929, 0.0],
-            [1.0, 1.0, 0.073, null, 0.0],
-            [1.0, 1.0, 1.0, 1.0, null],
-        ],
-        numConversations: 250,
-        numIterations: 10000,
-    },
-    wer: {
-        means: {
-            "google-chirp3": 0.0596,
-            "elevenlabs-scribe-v2": 0.0789,
-            azure: 0.09,
-            "openai-gpt4o-mini-transcribe": 0.0928,
-            "deepgram-nova3": 0.1149,
-        },
-        pairwise: [
-            [null, 0.0, 0.0, 0.0, 0.0],
-            [1.0, null, 0.0, 0.0, 0.0],
-            [1.0, 1.0, null, 0.069, 0.0],
-            [1.0, 1.0, 0.925, null, 0.0],
-            [1.0, 1.0, 1.0, 1.0, null],
-        ],
-        numConversations: 250,
-        numIterations: 10000,
-    },
-};
-
-// Means come from the latest scoring run. The std values were measured
-// across 4 independent re-runs of the full normalization+scoring pipeline
-// and reflect LLM-scoring stability, which is not affected by the WER
-// aggregation method, so they're carried forward as a representative
-// indication of run-to-run variability.
-const VARIANCE = {
-    "google-chirp3": {
-        "en-US": { wer: { mean: 0.0449, std: 0.0005 }, significantWer: { mean: 0.0509, std: 0.0036 } },
-        "zh-CN": { wer: { mean: 0.0718, std: 0.0008 }, significantWer: { mean: 0.1645, std: 0.0023 } },
-    },
-    "elevenlabs-scribe-v2": {
-        "en-US": { wer: { mean: 0.0417, std: 0.0007 }, significantWer: { mean: 0.0644, std: 0.0032 } },
-        "zh-CN": { wer: { mean: 0.1109, std: 0.0017 }, significantWer: { mean: 0.2337, std: 0.0088 } },
-    },
-    azure: {
-        "en-US": { wer: { mean: 0.0364, std: 0.0002 }, significantWer: { mean: 0.0334, std: 0.0018 } },
-        "zh-CN": { wer: { mean: 0.1271, std: 0.0015 }, significantWer: { mean: 0.2524, std: 0.0136 } },
-    },
-    "openai-gpt4o-mini-transcribe": {
-        "en-US": { wer: { mean: 0.037, std: 0.0004 }, significantWer: { mean: 0.0484, std: 0.001 } },
-        "zh-CN": { wer: { mean: 0.131, std: 0.0021 }, significantWer: { mean: 0.2137, std: 0.0022 } },
-    },
-    "deepgram-nova3": {
-        "en-US": { wer: { mean: 0.0456, std: 0.0005 }, significantWer: { mean: 0.0498, std: 0.0025 } },
-        "zh-CN": { wer: { mean: 0.154, std: 0.0034 }, significantWer: { mean: 0.282, std: 0.0161 } },
-    },
-};
+// Build display-name lookup from the leaderboard provider list, then
+// compose the SignificanceMatrix's row order from significance.json's
+// providers field (which is sorted best -> worst by the metric the
+// JSON was last written under). For the VarianceChart we use the same
+// order so the two side-by-side widgets stay aligned.
+const PROVIDER_NAMES = Object.fromEntries((LB_PROVIDERS || []).map((p) => [p.id, p.model || p.id]));
+const PROVIDERS = (SIGNIFICANCE_PROVIDERS || []).map((p) => ({
+    id: p.id,
+    name: PROVIDER_NAMES[p.id] || p.name || p.id,
+}));
 
 const METRICS = [
     { key: "significantWer", label: "UER" },
@@ -99,8 +36,16 @@ function cellColor(p, isLowerTriangle) {
 }
 
 function SignificanceMatrix({ metric }) {
-    const data = SIG_DATA[metric];
+    const data = SIGNIFICANCE[metric];
     const [hoveredCell, setHoveredCell] = useState(null);
+
+    if (!data || !data.pairwise || !data.means) {
+        return (
+            <div className="sig-matrix-wrap">
+                <p className="sig-caption">No significance data for {metric} yet.</p>
+            </div>
+        );
+    }
 
     return (
         <div className="sig-matrix-wrap">
@@ -186,9 +131,29 @@ function VarianceChart({ metric, locale }) {
     );
 }
 
+function variancePresent(metric) {
+    return Object.values(VARIANCE).some(
+        (locales) =>
+            locales && Object.values(locales).some((m) => m && m[metric] && typeof m[metric].mean === "number"),
+    );
+}
+
+function nWaves() {
+    // Use the first provider/locale's _n_waves to label the chart.
+    const firstProv = Object.values(VARIANCE)[0];
+    if (!firstProv) return 4;
+    const firstLoc = Object.values(firstProv)[0];
+    return firstLoc?._n_waves ?? 4;
+}
+
 export default function PaperSignificance() {
     const [metric, setMetric] = useState("significantWer");
     const metricLabel = METRICS.find((m) => m.key === metric)?.label;
+    const sig = SIGNIFICANCE[metric] || {};
+    const iters = sig.numIterations ? sig.numIterations.toLocaleString() : "?";
+    const convs = sig.numConversations ? sig.numConversations.toLocaleString() : "?";
+    const N = nWaves();
+    const showVariance = variancePresent(metric);
 
     return (
         <div className="sig-widget">
@@ -209,31 +174,34 @@ export default function PaperSignificance() {
                     <h4 className="sig-section-title">Pairwise significance — {metricLabel}</h4>
                     <SignificanceMatrix metric={metric} />
                     <p className="sig-caption">
-                        Paired bootstrap resampling ({SIG_DATA[metric].numIterations.toLocaleString()} iterations,{" "}
-                        {SIG_DATA[metric].numConversations.toLocaleString()} conversations). Resampled at the
+                        Paired bootstrap resampling ({iters} iterations, {convs} conversations). Resampled at the
                         conversation level to account for within-conversation correlation. p-value = P(row ≥ column).{" "}
                         <span className="sig-legend-sig">Green</span> = significant (p &lt; 0.05). Gray = not
                         distinguishable.
                     </p>
                 </div>
 
-                <div className="sig-section">
-                    <h4 className="sig-section-title">Scorer stability — {metricLabel} across 4 independent runs</h4>
-                    <div className="var-locale-row">
-                        <div className="var-locale-col">
-                            <span className="var-locale-label">en-US</span>
-                            <VarianceChart metric={metric} locale="en-US" />
+                {showVariance && (
+                    <div className="sig-section">
+                        <h4 className="sig-section-title">
+                            Scorer stability — {metricLabel} across {N} independent runs
+                        </h4>
+                        <div className="var-locale-row">
+                            <div className="var-locale-col">
+                                <span className="var-locale-label">en-US</span>
+                                <VarianceChart metric={metric} locale="en-US" />
+                            </div>
+                            <div className="var-locale-col">
+                                <span className="var-locale-label">zh-CN</span>
+                                <VarianceChart metric={metric} locale="zh-CN" />
+                            </div>
                         </div>
-                        <div className="var-locale-col">
-                            <span className="var-locale-label">zh-CN</span>
-                            <VarianceChart metric={metric} locale="zh-CN" />
-                        </div>
+                        <p className="sig-caption">
+                            Error bars show ±1 standard deviation across {N} full pipeline re-runs. Rankings never
+                            changed between runs.
+                        </p>
                     </div>
-                    <p className="sig-caption">
-                        Error bars show ±1 standard deviation across 4 full pipeline re-runs. Rankings never changed
-                        between runs.
-                    </p>
-                </div>
+                )}
             </div>
         </div>
     );

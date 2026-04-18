@@ -7,8 +7,8 @@
   "werRefWords": 15,
   "werNormalizedGold": "để mình ghi lại nhá c n ba chín không bảy đúng không c n",
   "werNormalizedPredicted": "để mình ghi lại nhé t n ba trăm chín mươi bảy đúng không",
-  "significantWer": 0.13333333333333333,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "để mình ghi lại nhá c n ba chín không bảy đúng không c n",
   "sigWerNormalizedPredicted": "để mình ghi lại nhé t n ba trăm chín mươi bảy đúng không",
@@ -20,18 +20,18 @@
     },
     {
       "error": "Insertion: 'trăm' at position 8",
-      "reason": "'trăm' means 'hundred', which changes the number being referred to from 'ba chín không bảy' (397) to 'ba trăm chín mươi bảy' (397); this is a significant change in meaning.",
-      "score": 1
+      "reason": "Inserting 'trăm' (hundred) changes the number being referred to from 'ba chín không bảy' (397) to 'ba trăm chín mươi bảy' (397), which is actually the same number, just a different way of saying it. The meaning is preserved.",
+      "score": 3
     },
     {
       "error": "Substitution: 'không' to 'mươi' at position 9",
-      "reason": "'không' means 'zero' and 'mươi' means 'ten', which alters the number being transcribed; this is a significant error as it changes the intended number.",
-      "score": 1
+      "reason": "In the context of Vietnamese numbers, 'không bảy' (zero seven) and 'mươi bảy' (seventeen) are different, but in this case, both are part of the way to say 397. The actual transcription says 'ba trăm chín mươi bảy' (397), which is equivalent to 'ba chín không bảy' (3 9 0 7) as a phone number or code. However, if the context is a number sequence, this could be a significant error, but if it's just a different way of saying the same number, it's minor.",
+      "score": 2
     },
     {
       "error": "Deletion: 'c' at position 13",
-      "reason": "'c' is likely an initial for a name or code; omitting it could cause confusion or loss of information, but does not necessarily derail the whole meaning if context is clear. However, if it is a code or identifier, it could be significant.",
-      "score": 2
+      "reason": "Missing 'c' from the end, which may be part of a code or identifier. If 'c n' is a code, omitting 'c' could be significant.",
+      "score": 1
     }
   ]
 }

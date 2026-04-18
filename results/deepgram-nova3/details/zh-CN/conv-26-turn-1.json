@@ -5,9 +5,9 @@
   "wer": 0.25,
   "werEdits": 4,
   "werRefWords": 16,
-  "werNormalizedGold": "我正在等待我的新卡想知道它的状态",
+  "werNormalizedGold": "我正在等待我的新卡 想知道它的状态",
   "werNormalizedPredicted": "我让在当代我的信卡想知道它的状态",
-  "significantWer": 0.125,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '正' to '让' at position 1",
-      "reason": "'正' (in the process of) and '让' (let/make) have very different meanings and change the intent of the sentence.",
+      "reason": "'正' (in the process of) and '让' (let/make) have very different meanings and change the intent of the sentence, making it confusing.",
       "score": 1
     },
     {
       "error": "Substitution: '等' to '当' at position 3",
-      "reason": "'等' (wait) and '当' (when/serve as) are unrelated in meaning, which makes the sentence confusing.",
+      "reason": "'等' (wait) and '当' (when/serve as) are unrelated in meaning, which disrupts the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: '新' to '信' at position 7",
-      "reason": "'新卡' (new card) vs '信卡' (not a standard phrase, likely a mishearing of '新卡'), but the intent is still somewhat clear.",
+      "reason": "'新卡' (new card) vs '信卡' (not a standard phrase, likely intended to be '信用卡' for credit card); this changes the meaning but the context of a card is still present.",
       "score": 2
     }
   ]

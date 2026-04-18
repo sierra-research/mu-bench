@@ -1,16 +1,22 @@
 {
   "gold": "Yok, onlar kalabilir. Çünkü sisteme kaydetmiştim, gerek yok teşekkür ederim.",
-  "predicted": "Yok, onlar kalabilir. Çünkü sisteme kaydetmiştim. Gerek yok, teşekkür ederim.",
+  "predicted": "Yok, online kalabilir. Çünkü sisteme kaydetmiştim. Gerek yok, teşekkür ederim.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
-  "werNormalizedGold": "yok onlar kalabilir çünkü sisteme kaydetmistim gerek yok teşekkür ederim",
-  "werNormalizedPredicted": "yok onlar kalabilir çünkü sisteme kaydetmistim gerek yok teşekkür ederim",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "yok onlar kalabilir çünkü sisteme kaydetmiştim gerek yok teşekkür ederim",
+  "werNormalizedPredicted": "yok online kalabilir çünkü sisteme kaydetmiştim gerek yok teşekkür ederim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "yok onlar kalabilir çünkü sisteme kaydetmistim gerek yok teşekkür ederim",
-  "sigWerNormalizedPredicted": "yok onlar kalabilir çünkü sisteme kaydetmistim gerek yok teşekkür ederim",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yok onlar kalabilir çünkü sisteme kaydetmiştim gerek yok teşekkür ederim",
+  "sigWerNormalizedPredicted": "yok online kalabilir çünkü sisteme kaydetmiştim gerek yok teşekkür ederim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'onlar' to 'online' at position 1",
+      "reason": "'onlar' means 'they' in Turkish, while 'online' is an English word meaning 'connected to the internet'. This substitution changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "score": 1
+    }
+  ]
 }

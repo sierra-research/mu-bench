@@ -7,20 +7,20 @@
   "werRefWords": 9,
   "werNormalizedGold": "mình sẵn sàng rồi bạn giúp mình với nhé",
   "werNormalizedPredicted": "mình sẵn sàng vừa vặn giúp mình vừa nhé",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "mình sẵn sàng rồi bạn giúp mình với nhé",
   "sigWerNormalizedPredicted": "mình sẵn sàng vừa vặn giúp mình vừa nhé",
   "sigWerErrors": [
     {
       "error": "Substitution: 'rồi' to 'vừa' at position 3",
-      "reason": "'rồi' means 'already' or 'then', while 'vừa' means 'just' or 'fit'; this changes the temporal meaning of the sentence, which can confuse the intent.",
-      "score": 2
+      "reason": "'rồi' means 'already' or 'done', while 'vừa' means 'just' or 'fit'. This changes the timing and meaning of the sentence, making it less clear and potentially confusing.",
+      "score": 1
     },
     {
       "error": "Substitution: 'với' to 'vừa' at position 7",
-      "reason": "'với' means 'with', which is important for the request for help; substituting it with 'vừa' ('just') makes the sentence less coherent and changes the meaning significantly.",
+      "reason": "'với' means 'with', which is important for the request for help. 'vừa' does not fit the context and makes the sentence incoherent at the end.",
       "score": 1
     }
   ]

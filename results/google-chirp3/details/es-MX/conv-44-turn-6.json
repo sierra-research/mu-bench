@@ -2,15 +2,26 @@
   "gold": "Juan punto López arroba email punto com.",
   "predicted": "home.lopez@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "juan punto lopez arroba email punto com",
-  "werNormalizedPredicted": "juan punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "home punto lopez arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "juan punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "juan punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "home punto lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'juan' to 'home' at position 0",
+      "reason": "'juan' is a proper noun (a person's name), while 'home' is a completely different word with unrelated meaning. This substitution changes the intended recipient of the email address, making the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 2",
+      "reason": "The only difference is the omission of the accent on the 'o' in 'lópez'. This is a minor spelling difference and does not change the meaning or recognizability of the name.",
+      "score": 2
+    }
+  ]
 }

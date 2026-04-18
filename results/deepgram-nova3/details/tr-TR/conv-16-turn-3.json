@@ -2,15 +2,26 @@
   "gold": "Tabii. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Tabii ahmet. Arsadan et email nokta com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "tabii ahmet nokta arslan at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tabii ahmet arsadan et email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "tabii ahmet nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tabii ahmet arsadan et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nokta' to 'arsadan' at position 2",
+      "reason": "'nokta' (meaning 'dot' in Turkish, used in email addresses) is replaced with 'arsadan', which is a completely different word and disrupts the structure of the email address, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 4",
+      "reason": "Omitting 'at' in an email address format makes the address invalid and unrecognizable as an email, significantly changing the meaning.",
+      "score": 1
+    }
+  ]
 }

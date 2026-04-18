@@ -2,15 +2,26 @@
   "gold": "Sí, la alcaldía es Azcapotzalco, código postal 0 2 860 en la Ciudad de México.",
   "predicted": "Sí, la alcaldía es Azcapotzalco, código postal cero dos ochocientos sesenta en la Ciudad de México",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 16,
-  "werNormalizedGold": "si la alcaldia es azcapotzalco codigo postal cero dos ochocientos sesenta en la ciudad de mexico",
-  "werNormalizedPredicted": "si la alcaldia es azcapotzalco codigo postal cero dos ochocientos sesenta en la ciudad de mexico",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "si la alcaldia es azcapotzalco codigo postal cero dos ochocientos sesenta en la ciudad de mexico",
-  "sigWerNormalizedPredicted": "si la alcaldia es azcapotzalco codigo postal cero dos ochocientos sesenta en la ciudad de mexico",
-  "sigWerErrors": []
+  "wer": 0.17647058823529413,
+  "werEdits": 3,
+  "werRefWords": 17,
+  "werNormalizedGold": "sí la alcaldía es azcapotzalco código postal cero dos ocho seis cero en la ciudad de méxico",
+  "werNormalizedPredicted": "sí la alcaldía es azcapotzalco código postal cero dos ochocientos sesenta en la ciudad de méxico",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "sí la alcaldía es azcapotzalco código postal cero dos ocho seis cero en la ciudad de méxico",
+  "sigWerNormalizedPredicted": "sí la alcaldía es azcapotzalco código postal cero dos ochocientos sesenta en la ciudad de méxico",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ocho' to 'ochocientos' at position 9",
+      "reason": "'Ocho' (eight) and 'ochocientos' (eight hundred) are numerically very different, which changes the postal code completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cero' at position 11",
+      "reason": "Omitting the final 'cero' (zero) changes the postal code, making it incorrect.",
+      "score": 1
+    }
+  ]
 }

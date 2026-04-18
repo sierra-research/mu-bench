@@ -1,16 +1,22 @@
 {
   "gold": "Merhaba, eşim için ek kredi kartı çıkartmak istiyorum.",
-  "predicted": "Merhaba, eşim için ek kredi kartı çıkartmak istiyorum.",
+  "predicted": "Merhaba, işim için ek kredi kartı çıkartmak istiyorum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
   "werNormalizedGold": "merhaba eşim için ek kredi kartı çıkartmak istiyorum",
-  "werNormalizedPredicted": "merhaba eşim için ek kredi kartı çıkartmak istiyorum",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "merhaba işim için ek kredi kartı çıkartmak istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "merhaba eşim için ek kredi kartı çıkartmak istiyorum",
-  "sigWerNormalizedPredicted": "merhaba eşim için ek kredi kartı çıkartmak istiyorum",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "merhaba işim için ek kredi kartı çıkartmak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'eşim' to 'işim' at position 1",
+      "reason": "'Eşim' means 'my spouse' and 'işim' means 'my job'; this changes the subject of the request and alters the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

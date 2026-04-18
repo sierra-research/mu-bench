@@ -2,21 +2,31 @@
   "gold": "Hola, quiero ver cómo aumentar mi línea de crédito.",
   "predicted": "Hola, quiero ver cómo puedo aumentar mi línea de crédito.",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "hola quiero ver como aumentar mi linea de credito",
+  "werNormalizedGold": "hola quiero ver cómo aumentar mi línea de crédito",
   "werNormalizedPredicted": "hola quiero ver como puedo aumentar mi linea de credito",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "hola quiero ver como aumentar mi linea de credito",
+  "sigWerNormalizedGold": "hola quiero ver cómo aumentar mi línea de crédito",
   "sigWerNormalizedPredicted": "hola quiero ver como puedo aumentar mi linea de credito",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'puedo' at position 4",
-      "reason": "The insertion of 'puedo' (can) does not change the overall meaning of the sentence, as both versions express the intent to see how to increase the credit line. The sentence remains coherent and the main intent is preserved.",
-      "score": 2
+      "error": "Substitution: 'cómo' to 'puedo' at position 3",
+      "reason": "The word 'cómo' (how) lost its accent, but the meaning is preserved in context. In Spanish, 'como' without an accent can be ambiguous, but here it is clear from context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'línea' to 'linea' at position 6",
+      "reason": "Missing accent on 'línea', but the word is still clearly understood as 'linea' in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 8",
+      "reason": "Missing accent on 'crédito', but the word is still clearly understood as 'credito' in context.",
+      "score": 3
     }
   ]
 }

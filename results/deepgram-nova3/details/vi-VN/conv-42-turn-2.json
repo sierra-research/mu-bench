@@ -2,15 +2,36 @@
   "gold": "C N 5 8 8 hay là C N 5 8 7?",
   "predicted": "Cn-năm trăm tám mươi tám hay là cnnăm trăm tám mươi bảy",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 16,
-  "werNormalizedGold": "c n năm trăm tám mươi tám hay là c n năm trăm tám mươi bảy",
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "c n năm tám tám hay là c n năm tám bảy",
   "werNormalizedPredicted": "c n năm trăm tám mươi tám hay là c n năm trăm tám mươi bảy",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "c n năm trăm tám mươi tám hay là c n năm trăm tám mươi bảy",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "c n năm tám tám hay là c n năm tám bảy",
   "sigWerNormalizedPredicted": "c n năm trăm tám mươi tám hay là c n năm trăm tám mươi bảy",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 3",
+      "reason": "'trăm' means 'hundred', so 'năm trăm tám mươi tám' means 'five hundred eighty eight' instead of 'fifty eight'. This changes the number completely and alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 4",
+      "reason": "'mươi' is part of the number construction for 'eighty eight' instead of 'fifty eight'. This, together with 'trăm', changes the number and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'trăm' at position 10",
+      "reason": "Again, 'trăm' means 'hundred', so 'năm trăm tám mươi bảy' is 'five hundred eighty seven' instead of 'fifty seven'. This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 11",
+      "reason": "'mươi' is part of the number construction for 'eighty seven' instead of 'fifty seven'. This, together with 'trăm', changes the number and meaning significantly.",
+      "score": 1
+    }
+  ]
 }

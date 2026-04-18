@@ -2,20 +2,30 @@
   "gold": "你正在说什么，你正在说什么，你是不是傻子。",
   "predicted": "哇,你正在说什么?你正在说什么?你是个傻子。",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
-  "werRefWords": 16,
-  "werNormalizedGold": "你 正 在 说 什么 你 正 在 说 什么 你 是 傻子",
-  "werNormalizedPredicted": "你 正 在 说 什么 你 正 在 说 什么 你 是 个 傻子",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 傻 子",
-  "sigWerNormalizedPredicted": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 个 傻 子",
+  "wer": 0.16666666666666666,
+  "werEdits": 3,
+  "werRefWords": 18,
+  "werNormalizedGold": "你正在说什么你正在说什么你是不是傻子",
+  "werNormalizedPredicted": "哇 你正在说什么 你正在说什么 你是个傻子",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
+  "sigWerNormalizedPredicted": "哇 你 正 在 说 什 么 你 正 在 说 什 么 你 是 个 傻 子",
   "sigWerErrors": [
     {
-      "error": "Insertion: '个' at position 14",
-      "reason": "The insertion of '个' (a common measure word in Chinese) before '傻子' does not change the overall meaning of the sentence. Both '你是傻子' and '你是个傻子' mean 'you are a fool' in Chinese, with or without the measure word. The sentence remains coherent and the meaning is preserved.",
+      "error": "Insertion: '哇' at position 0",
+      "reason": "The insertion of '哇' (an exclamation like 'wow') adds an interjection but does not change the main meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '不' to '个' at position 14",
+      "reason": "Substituting '不' (not) with '个' (a measure word) changes the meaning from 'are you not a fool' to 'are you a fool', which reverses the intent of the question.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '是' at position 15",
+      "reason": "The deletion of '是' (to be) slightly affects the grammatical structure but the meaning is still understandable in context.",
       "score": 2
     }
   ]

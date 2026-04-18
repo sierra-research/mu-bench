@@ -2,15 +2,21 @@
   "gold": "Email của mình là minh chấm trần a còng Gmail chấm com.",
   "predicted": "Email của mình là minh. Trần a cònggmail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08333333333333333,
+  "werEdits": 1,
   "werRefWords": 12,
   "werNormalizedGold": "email của mình là minh chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "email của mình là minh chấm trần a còng gmail chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email của mình là minh trần a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "email của mình là minh chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "email của mình là minh chấm trần a còng gmail chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email của mình là minh trần a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'chấm' at position 5",
+      "reason": "The word 'chấm' (dot) is missing between 'minh' and 'trần', which is crucial for correctly specifying the email address format. Omitting 'chấm' changes the email address and could cause communication errors.",
+      "score": 1
+    }
+  ]
 }
