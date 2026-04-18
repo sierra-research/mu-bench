@@ -1,9 +1,28 @@
 """Transcribe benchmark audio using provider batch APIs directly.
 
 Reads per-utterance .wav files and calls provider APIs with no middleware.
+Writes ``<output-dir>/<locale>/<utt_id>.txt`` per utterance, plus
+``<output-dir>/latency.json`` in the schema the leaderboard's strict
+validator expects:
+
+    {
+      "meta": {
+        "protocol": "batch",
+        "region": "<--region, default us-east-2>",
+        "clientLocation": "<--client-location>",
+        "concurrency": <--concurrency>,
+        "wrappedAt": "<isoformat utc>"
+      },
+      "measurements": {
+        "<locale>/<utt_id>": {"roundTripMs": <float>}
+      }
+    }
 
 Usage:
     python scripts/transcribe.py --provider deepgram-nova3 --output-dir submissions/raw/deepgram-nova3
+
+    # Pin region (defaults to us-east-2). Use --region us for Google Chirp-3.
+    python scripts/transcribe.py --provider google-chirp3 --output-dir submissions/raw/google-chirp3 --region us
 
     # Limit to one locale
     python scripts/transcribe.py --provider deepgram-nova3 --locale en-US --output-dir /tmp/test
@@ -15,6 +34,7 @@ Usage:
 import argparse
 import asyncio
 import base64
+import datetime
 import io
 import json
 import os
@@ -509,16 +529,45 @@ async def run_transcription(args):
         tasks = [process_one(item, session) for item in items]
         await asyncio.gather(*tasks)
 
-    # Merge with any existing latency data and write latency.json
+    # Write latency.json in the new schema (item 4 of the fairness-fixes
+    # plan): top-level ``meta`` block declaring protocol/region/etc., plus a
+    # ``measurements`` map keyed by ``"<locale>/<utt_id>"`` with per-entry
+    # ``{"roundTripMs": <float>}`` (batch). When the file already exists we
+    # merge new measurements into the previous run's so partial re-runs
+    # accumulate. Region defaults to ``us-east-2`` to match the published
+    # benchmark; pass ``--region us`` for Google Chirp-3 (multi-region) and
+    # any other provider whose model isn't routable via a single region.
+    new_measurements = {key: {"roundTripMs": ms} for key, ms in latency_records.items()}
     latency_path = output_dir / "latency.json"
     if latency_path.exists():
         with open(latency_path, "r", encoding="utf-8") as f:
             existing = json.load(f)
-        existing.update(latency_records)
-        latency_records = existing
+        if isinstance(existing, dict) and "measurements" in existing:
+            measurements = existing.get("measurements", {})
+            measurements.update(new_measurements)
+        else:
+            # Legacy flat schema on disk — migrate by wrapping its entries
+            # plus the new measurements into the new shape.
+            measurements = {k: {"roundTripMs": v} for k, v in (existing or {}).items() if isinstance(v, (int, float))}
+            measurements.update(new_measurements)
+    else:
+        measurements = new_measurements
+    out = {
+        "meta": {
+            "protocol": "batch",
+            "region": args.region,
+            "clientLocation": args.client_location,
+            "concurrency": args.concurrency,
+            "wrappedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        },
+        "measurements": measurements,
+    }
     with open(latency_path, "w", encoding="utf-8") as f:
-        json.dump(latency_records, f, indent=2, ensure_ascii=False)
-    print(f"\nLatency recorded for {len(latency_records)} utterances -> {latency_path}")
+        json.dump(out, f, indent=2, ensure_ascii=False)
+    print(
+        f"\nLatency recorded for {len(measurements)} utterances "
+        f"(meta.protocol=batch meta.region={args.region}) -> {latency_path}"
+    )
 
     elapsed = time.time() - start_time
     print(f"Done. {completed} succeeded, {failed} failed in {elapsed:.1f}s")
@@ -548,6 +597,28 @@ def main():
         type=int,
         default=None,
         help="Resample audio to this sample rate before transcription (e.g. 8000)",
+    )
+    parser.add_argument(
+        "--region",
+        default="us-east-2",
+        help=(
+            "Server-side region label written to latency.json meta.region. Must be in "
+            "scoring/validate.py ALLOWED_LATENCY_REGIONS — currently the AWS-style names "
+            "(us-east-1, us-east-2, us-west-1, us-west-2, eu-west-1, eu-central-1, "
+            "ap-southeast-1, ap-northeast-1) plus the multi-region escapes 'us' and 'eu'. "
+            "Pass --region us for Google Chirp-3 (chirp_3 is only routable via the us "
+            "multi-region today). Default: us-east-2."
+        ),
+    )
+    parser.add_argument(
+        "--client-location",
+        default="aws:us-east-1",
+        help=(
+            "Free-text label describing where THIS process is running, written to "
+            "latency.json meta.clientLocation. Pin a single physical location for the "
+            "whole submission so cross-provider latency is comparable. Examples: "
+            "'aws:us-east-1', 'gcp:us-central1', 'SF macOS laptop, residential'."
+        ),
     )
     args = parser.parse_args()
 
