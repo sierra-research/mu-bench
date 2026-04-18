@@ -281,7 +281,7 @@ export default function Leaderboard() {
                 <p className="uer-footnote">
                     &dagger; Latency p95 is time to complete transcript &mdash; request-to-response round-trip for batch
                     providers, send-to-final-transcript for streaming providers. For streaming submissions, TTFT (time
-                    to first partial transcript) is shown as an auxiliary &plus;TTFT annotation but is not used in the
+                    to first partial transcript) is shown as an auxiliary +TTFT annotation but is not used in the
                     sort.
                 </p>
 
