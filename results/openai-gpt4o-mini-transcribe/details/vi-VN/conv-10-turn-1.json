@@ -1,21 +1,26 @@
 {
   "gold": "Nhận ngay bây giờ.",
-  "predicted": "mặn em đi rồi.",
+  "predicted": "Đây đây.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "nhận ngay bây giờ",
-  "werNormalizedPredicted": "mặn em đi rồi",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "đây đây",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "nhận ngay bây giờ",
-  "sigWerNormalizedPredicted": "mặn em đi rồi",
+  "sigWerNormalizedPredicted": "đây đây",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'nhận' to 'mặn' at position 0",
-      "reason": "The words are completely different in meaning, and the substitution changes the intent of the sentence, making it incoherent compared to the expected meaning.",
+      "error": "Substitution: 'nhận' to 'đây' at position 0",
+      "reason": "'nhận' means 'receive' while 'đây' means 'here'; this substitution changes the meaning of the sentence completely and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bây' at position 2",
+      "reason": "'bây' is part of the phrase 'bây giờ' meaning 'now'; omitting it further derails the intended meaning of the sentence.",
       "score": 1
     }
   ]

@@ -1,16 +1,22 @@
 {
   "gold": "Yes. Plus 1 2 1 2 1 2 3 4 5 6 7.",
-  "predicted": "Yes, plus 1-212-123-4567.",
+  "predicted": "IS+1-212-123-4567",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07692307692307693,
+  "werEdits": 1,
   "werRefWords": 13,
   "werNormalizedGold": "yes plus one two one two one two three four five six seven",
-  "werNormalizedPredicted": "yes plus one two one two one two three four five six seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "is plus one two one two one two three four five six seven",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "yes plus one two one two one two three four five six seven",
-  "sigWerNormalizedPredicted": "yes plus one two one two one two three four five six seven",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "is plus one two one two one two three four five six seven",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'is' at position 0",
+      "reason": "'Yes' is an affirmative response, while 'is' is a verb and does not serve the same function in this context. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

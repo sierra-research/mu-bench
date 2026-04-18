@@ -2,21 +2,26 @@
   "gold": "Déjeme, encuentro dónde anotarlo.",
   "predicted": "Deje, me encuentro donde anotarlo.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 2,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
-  "werNormalizedGold": "dejeme encuentro donde anotarlo",
+  "werNormalizedGold": "déjeme encuentro dónde anotarlo",
   "werNormalizedPredicted": "deje me encuentro donde anotarlo",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "dejeme encuentro donde anotarlo",
+  "sigWerNormalizedGold": "déjeme encuentro dónde anotarlo",
   "sigWerNormalizedPredicted": "deje me encuentro donde anotarlo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dejeme' to 'me' at position 0",
-      "reason": "'dejeme' is a contraction of 'deje me' in Spanish; splitting it into two words does not change the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: 'déjeme' to 'me' at position 0",
+      "reason": "The word 'déjeme' (let me) was split into 'deje me', which is a minor grammatical error but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dónde' to 'donde' at position 2",
+      "reason": "The accent is missing in 'donde', but the meaning is still clear in context. This is a minor error.",
+      "score": 2
     }
   ]
 }

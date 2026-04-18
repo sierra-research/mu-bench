@@ -1,16 +1,22 @@
 {
   "gold": "听到了吗？",
-  "predicted": "挺刀的吗?",
+  "predicted": "停刀了吗?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "听 到 了 吗",
-  "werNormalizedPredicted": "听 到 了 吗",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "停刀了吗",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
-  "sigWerNormalizedPredicted": "听 到 了 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "停 刀 了 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '停' at position 0",
+      "reason": "'听' means 'to listen' or 'to hear', while '停' means 'to stop'. This substitution changes the meaning of the sentence significantly, making it incoherent in context.",
+      "score": 1
+    }
+  ]
 }

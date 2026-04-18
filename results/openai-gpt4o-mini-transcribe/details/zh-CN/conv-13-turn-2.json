@@ -2,15 +2,26 @@
   "gold": "没有没有没有没有，想提高信用卡的额度。",
   "predicted": "没有没有没有没有,想起告信用卡的恶毒。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.23529411764705882,
+  "werEdits": 4,
   "werRefWords": 17,
   "werNormalizedGold": "没有没有没有没有 想提高信用卡的额度",
-  "werNormalizedPredicted": "没有没有没有没有 想提高信用卡的额度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "没有没有没有没有 想起告信用卡的恶毒",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "没 有 没 有 没 有 没 有 想 提 高 信 用 卡 的 额 度",
-  "sigWerNormalizedPredicted": "没 有 没 有 没 有 没 有 想 提 高 信 用 卡 的 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 有 没 有 没 有 没 有 想 起 告 信 用 卡 的 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '提' to '起' at position 9",
+      "reason": "'提' (raise/lift) and '起' (rise/start) are different verbs. In the context of '提高额度' (raise credit card limit), substituting '提' with '起' makes the phrase '起告信用卡的恶毒', which is not meaningful and changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '恶' at position 15",
+      "reason": "'额' (limit/amount) is a key word in '信用卡的额度' (credit card limit). Substituting it with '恶' (evil) makes the phrase nonsensical and completely changes the meaning.",
+      "score": 1
+    }
+  ]
 }

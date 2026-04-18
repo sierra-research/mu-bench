@@ -1,27 +1,22 @@
 {
   "gold": "Vâng ạ.",
-  "predicted": "Đó.",
+  "predicted": "Đó ạ.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "vâng ạ",
-  "werNormalizedPredicted": "đó",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "đó ạ",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "vâng ạ",
-  "sigWerNormalizedPredicted": "đó",
+  "sigWerNormalizedPredicted": "đó ạ",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vâng' to 'đó' at position 0",
-      "reason": "'vâng ạ' is an affirmative polite response (like 'yes, sir/ma'am'), while 'đó' means 'that' or 'there', which is unrelated and changes the meaning completely.",
+      "reason": "'vâng' means 'yes' or 'I agree', while 'đó' means 'that' or 'there'. This substitution changes the meaning of the response completely, making the sentence incoherent in context.",
       "score": 1
-    },
-    {
-      "error": "Deletion: 'ạ' at position 1",
-      "reason": "'ạ' is a polite particle in Vietnamese, and its omission reduces politeness but does not change the core meaning. However, since the main word was already substituted incorrectly, this deletion is less significant on its own.",
-      "score": 2
     }
   ]
 }

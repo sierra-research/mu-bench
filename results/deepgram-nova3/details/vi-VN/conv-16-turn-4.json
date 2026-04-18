@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "email là minh chấm gmail chấm com",
-  "significantWer": 0.2,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'trần' to 'gmail' at position 4",
-      "reason": "The expected email username 'trần' was replaced with 'gmail', which is a domain and not a valid username. This changes the entire email address and makes it incorrect.",
+      "reason": "The expected email username 'trần' was replaced with 'gmail', which is a domain name. This changes the entire email address and makes it incorrect.",
       "score": 1
     },
     {
       "error": "Deletion: 'a' at position 5",
-      "reason": "The 'a' (from 'a còng', meaning '@') is missing, which is essential for a valid email address. This omission makes the email address incomplete and unusable.",
+      "reason": "The missing 'a' (from 'a còng', meaning '@') omits the '@' symbol in the email address, making the email address invalid and unrecognizable.",
       "score": 1
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "再说一遍。",
   "predicted": "在show IBM。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "再说一遍",
-  "werNormalizedPredicted": "再说一遍",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "在 show ibm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "再 说 一 遍",
-  "sigWerNormalizedPredicted": "再 说 一 遍",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "在 show ibm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 0",
+      "reason": "'再' (again) and '在' (at/in) are different words with different meanings, which changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '遍' at position 3",
+      "reason": "'遍' (time/iteration) is missing, which is essential to the meaning of the phrase 'say it again'.",
+      "score": 1
+    }
+  ]
 }

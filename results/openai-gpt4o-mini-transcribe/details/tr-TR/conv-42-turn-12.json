@@ -1,32 +1,32 @@
 {
   "gold": "Hayır beni dinle. Tam olarak söylemem lazım. Beni sonuna kadar dinle. Adresimi tekrar söylüyorum Anna.",
-  "predicted": "Hayır, beni dinle. Tam olarak söylemem lazım. En sonuna kadar dinle. Adresi tekrar söylüyorum anladın mı?",
+  "predicted": "Hayır, beni dinle. Tam olarak söylemem lazım. En sonuna kadar dinle. Adresi tekrar söylüyorum, anladın mı?",
   "unintelligible": false,
   "wer": 0.26666666666666666,
   "werEdits": 4,
   "werRefWords": 15,
   "werNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
   "werNormalizedPredicted": "hayır beni dinle tam olarak söylemem lazım en sonuna kadar dinle adresi tekrar söylüyorum anladın mı",
-  "significantWer": 0.13333333333333333,
-  "majorErrorsCount": 2,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
   "sigWerNormalizedPredicted": "hayır beni dinle tam olarak söylemem lazım en sonuna kadar dinle adresi tekrar söylüyorum anladın mı",
   "sigWerErrors": [
     {
       "error": "Substitution: 'beni' to 'en' at position 7",
-      "reason": "'beni' (me) is replaced with 'en' (most), which changes the meaning of the sentence and makes it less coherent.",
-      "score": 1
+      "reason": "'beni' (me) is replaced with 'en' (most), which changes the meaning of the phrase from 'listen to me until the end' to 'listen until the very end', removing the reference to the speaker. This alters the meaning but does not derail the whole sentence.",
+      "score": 2
     },
     {
       "error": "Substitution: 'adresimi' to 'adresi' at position 11",
-      "reason": "'adresimi' (my address) is replaced with 'adresi' (the address), which is a minor error as it slightly changes the meaning but does not derail the sentence.",
+      "reason": "'adresimi' (my address) is replaced with 'adresi' (the address), which changes the possessive meaning. This is a minor error as the overall intent is still clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'anna' to 'mı' at position 14",
-      "reason": "The insertion of 'anladın' (did you understand) adds a new question to the end, which changes the intent of the sentence.",
-      "score": 1
+      "reason": "The phrase 'anladın mı' (did you understand) is inserted at the end, which adds a question to the sentence but does not change the original meaning or intent of the main sentence.",
+      "score": 2
     }
   ]
 }

@@ -2,20 +2,30 @@
   "gold": "是美点玲 at email dot com。",
   "predicted": "是梅点铃email。com",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 1,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "是美点玲 at email dot com",
-  "werNormalizedPredicted": "是美点玲 email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是梅点铃 email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "是 美 点 玲 at email dot com",
-  "sigWerNormalizedPredicted": "是 美 点 玲 email dot com",
+  "sigWerNormalizedPredicted": "是 梅 点 铃 email dot com",
   "sigWerErrors": [
     {
+      "error": "Substitution: '美' to '梅' at position 1",
+      "reason": "'美' (beautiful) and '梅' (plum) are different Chinese characters and likely represent different names or words. This changes the intended meaning or the correct name.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '铃' at position 3",
+      "reason": "'玲' and '铃' are different Chinese characters, both used in names but not interchangeable. This could result in an incorrect name or email address.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'at' at position 4",
-      "reason": "The omission of 'at' before the email address is a minor error, as the meaning is still clear and the email address is still understandable.",
+      "reason": "Omitting 'at' before the email address can cause confusion about the structure of the email, but since 'email dot com' follows, the meaning is still mostly clear.",
       "score": 2
     }
   ]

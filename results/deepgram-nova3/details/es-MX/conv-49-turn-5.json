@@ -2,15 +2,21 @@
   "gold": "Es Juan punto López arroba email punto com.",
   "predicted": "Es, no, es Juan punto López arroba Email punto com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "es juan punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es juan punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es no es juan punto lópez arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "es juan punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es juan punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es no es juan punto lópez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The insertion of 'no' changes the meaning of the sentence from a statement of identity ('es juan...') to a negation ('es no es juan...'), which makes the sentence incoherent and derails the intended meaning.",
+      "score": 1
+    }
+  ]
 }

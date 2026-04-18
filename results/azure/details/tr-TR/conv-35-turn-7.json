@@ -2,25 +2,45 @@
   "gold": "E-posta adresim ve numaramda yanlışlık var. E-posta adresim Zeynep nokta Arslan at email nokta com. Numaram ise 90 123 0 90 45 67.",
   "predicted": "E posta adresi ve numaram da yanlışlık var. E posta adresimidayanıp.arslanemail.com numaramıza 90 123 sıfır 90 45 67.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 3,
+  "wer": 0.4,
+  "werEdits": 12,
   "werRefWords": 30,
-  "werNormalizedGold": "e posta adresim ve numaramda yanlislik var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yuz yirmi uc sifir doksan kirk bes altmis yedi",
-  "werNormalizedPredicted": "e posta adresi ve numaram da yanlislik var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yuz yirmi uc sifir doksan kirk bes altmis yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "e posta adresi ve numaram da yanlışlık var e posta adresimidayanıp arslanemail com numaramıza doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 30,
-  "sigWerNormalizedGold": "e posta adresim ve numaramda yanlislik var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yuz yirmi uc sifir doksan kirk bes altmis yedi",
-  "sigWerNormalizedPredicted": "e posta adresi ve numaram da yanlislik var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yuz yirmi uc sifir doksan kirk bes altmis yedi",
+  "sigWerNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "e posta adresi ve numaram da yanlışlık var e posta adresimidayanıp arslanemail com numaramıza doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'adresim' to 'adresi' at position 2",
-      "reason": "'adresim' means 'my address' while 'adresi' means 'the address'; the possessive is lost but the meaning is still clear in context.",
+      "reason": "'adresim' means 'my address', while 'adresi' means 'the address'; this changes the reference from personal to general, but the meaning is still mostly clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'numaramda' to 'da' at position 4",
-      "reason": "'numaram' ('my number') is repeated unnecessarily, but does not change the meaning of the sentence.",
+      "reason": "The insertion of 'numaram' ('my number') is redundant but does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'adresim' to 'adresimidayanıp' at position 9",
+      "reason": "'numaramda' means 'in my number', while 'da' means 'also' or 'in'; this substitution makes the sentence less clear and omits the reference to the number, which is significant for the context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 11",
+      "reason": "'adresimidayanıp' is a concatenation and not a valid word, making the email address incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaram' to 'numaramıza' at position 17",
+      "reason": "Omitting 'nokta' (dot) in an email address makes the address invalid and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ise' at position 18",
+      "reason": "'numaram' means 'my number', 'numaramıza' means 'to our number'; this changes the ownership and could cause confusion, but the context is still somewhat understandable.",
       "score": 2
     }
   ]

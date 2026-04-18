@@ -2,35 +2,30 @@
   "gold": "C N 1 2 2. C N 122.",
   "predicted": "JN bir iki iki. JN yüz yirmi iki",
   "unintelligible": false,
-  "wer": 0.36363636363636365,
-  "werEdits": 4,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
-  "werNormalizedGold": "c n one two two c n one hundred twenty two",
-  "werNormalizedPredicted": "jn one two two jn one hundred twenty two",
-  "significantWer": 0.36363636363636365,
-  "majorErrorsCount": 4,
+  "werNormalizedGold": "c n bir iki iki c n bir yüz yirmi iki",
+  "werNormalizedPredicted": "j n bir iki iki j n yüz yirmi iki",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "c n one two two c n one hundred twenty two",
-  "sigWerNormalizedPredicted": "jn one two two jn one hundred twenty two",
+  "sigWerNormalizedGold": "c n bir iki iki c n bir yüz yirmi iki",
+  "sigWerNormalizedPredicted": "j n bir iki iki j n yüz yirmi iki",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'jn' at position 0",
-      "reason": "'c' and 'jn' are completely different letters; in a spelled-out sequence, this changes the intended information significantly.",
+      "error": "Substitution: 'c' to 'j' at position 0",
+      "reason": "'c' and 'j' are different letters, and in a spelled-out sequence, a single letter difference is a significant error as it changes the intended sequence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'n' at position 1",
-      "reason": "Omitting a letter in a spelled-out sequence alters the intended code or information, making it a significant error.",
+      "error": "Substitution: 'c' to 'j' at position 5",
+      "reason": "'c' and 'j' are different letters, and in a spelled-out sequence, a single letter difference is a significant error as it changes the intended sequence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'c' to 'jn' at position 5",
-      "reason": "Same as above: 'c' and 'jn' are unrelated letters, which is a significant error in a spelled-out context.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'n' at position 6",
-      "reason": "Omitting 'n' in a spelled-out sequence changes the intended information, which is a significant error.",
+      "error": "Deletion: 'bir' at position 7",
+      "reason": "Omitting 'bir' (which means 'one') changes the numeric sequence, which is significant in this context.",
       "score": 1
     }
   ]

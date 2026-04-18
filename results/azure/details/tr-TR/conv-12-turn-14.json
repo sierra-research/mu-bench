@@ -2,20 +2,30 @@
   "gold": "Tabii. Atatürk Caddesi No 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodu 34 660.",
   "predicted": "Tabi Atatürk Caddesi no 45 / 6 Kazım Karabekir mahallesi Üsküdar, istanbul, psako 34.606.",
   "unintelligible": false,
-  "wer": 0.05,
-  "werEdits": 1,
+  "wer": 0.15,
+  "werEdits": 3,
   "werRefWords": 20,
-  "werNormalizedGold": "tabii atatürk caddesi no forty five bölü six kazım karabekir mahallesi üsküdar istanbul posta kodu thirty four six hundred sixty",
-  "werNormalizedPredicted": "tabii atatürk caddesi no forty five bölü six kazım karabekir mahallesi üsküdar istanbul posta kodu thirty four six hundred six",
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
+  "werNormalizedPredicted": "tabi atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul psako otuz dört altı yüz altmış",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "tabii atatürk caddesi no forty five bölü six kazım karabekir mahallesi üsküdar istanbul posta kodu thirty four six hundred sixty",
-  "sigWerNormalizedPredicted": "tabii atatürk caddesi no forty five bölü six kazım karabekir mahallesi üsküdar istanbul posta kodu thirty four six hundred six",
+  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
+  "sigWerNormalizedPredicted": "tabi atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul psako otuz dört altı yüz altmış",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sixty' to 'six' at position 19",
-      "reason": "'Sixty' (60) and 'six' (6) are numerically very different, which changes the postal code significantly. This is a significant error as it could lead to incorrect addressing.",
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are minor spelling variants in Turkish, and the meaning is preserved in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'posta' to 'psako' at position 13",
+      "reason": "'psako' is a significant mistranscription of 'posta', which changes the meaning and makes the address unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kodu' at position 14",
+      "reason": "Omitting 'kodu' (meaning 'code') from 'posta kodu' ('postal code') makes the address incomplete and less understandable.",
       "score": 1
     }
   ]

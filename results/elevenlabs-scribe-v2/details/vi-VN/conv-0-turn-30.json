@@ -2,21 +2,26 @@
   "gold": "Có. Vui lòng hướng dẫn ạ.",
   "predicted": "À có, cô làm hướng dẫn ạ",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
-  "werRefWords": 6,
-  "werNormalizedGold": "có vui lòng hướng dẫn ạ",
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "có vui lòng hướng dẫn",
   "werNormalizedPredicted": "có cô làm hướng dẫn ạ",
-  "significantWer": 0.16666666666666666,
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "có vui lòng hướng dẫn ạ",
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "có vui lòng hướng dẫn",
   "sigWerNormalizedPredicted": "có cô làm hướng dẫn ạ",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vui' to 'cô' at position 1",
-      "reason": "'vui lòng' means 'please' (polite request), while 'cô làm' means 'you (female) do', which changes the sentence from a polite request to a statement or command, significantly altering the meaning.",
+      "reason": "'vui lòng' means 'please' (polite request), while 'cô làm' means 'you (female) do', which changes the sentence from a polite request to a statement or command, altering the intent and politeness of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Insertion: 'ạ' at position 5",
+      "reason": "'ạ' is a polite particle in Vietnamese, which adds politeness but does not change the meaning of the sentence significantly.",
+      "score": 2
     }
   ]
 }

@@ -1,16 +1,22 @@
 {
   "gold": "Có. Vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp.",
-  "predicted": "Có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp?",
+  "predicted": "ờ Có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp",
-  "werNormalizedPredicted": "có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp không",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp",
-  "sigWerNormalizedPredicted": "có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "có vui lòng chuyển tôi sang nhân viên để được hỗ trợ trực tiếp không",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'không' at position 14",
+      "reason": "The word 'không' (meaning 'no' or 'not') is added at the end, turning the statement into a yes/no question. This changes the sentence from a request to a question, which alters the intent but does not make the sentence incoherent.",
+      "score": 2
+    }
+  ]
 }

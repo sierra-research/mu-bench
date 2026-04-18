@@ -2,21 +2,31 @@
   "gold": "Hola, quiero saber qué hago para aumentar mi el límite de crédito de mi tarjeta.",
   "predicted": "Hola, quiero saber qué hago para aumentar mi límite de crédito de mi tarjeta.",
   "unintelligible": false,
-  "wer": 0.06666666666666667,
-  "werEdits": 1,
-  "werRefWords": 15,
-  "werNormalizedGold": "hola quiero saber que hago para aumentar mi el limite de credito de mi tarjeta",
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
+  "werRefWords": 14,
+  "werNormalizedGold": "hola quiero saber qué hago para aumentar el límite de crédito de mi tarjeta",
   "werNormalizedPredicted": "hola quiero saber que hago para aumentar mi limite de credito de mi tarjeta",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "hola quiero saber que hago para aumentar mi el limite de credito de mi tarjeta",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "hola quiero saber qué hago para aumentar el límite de crédito de mi tarjeta",
   "sigWerNormalizedPredicted": "hola quiero saber que hago para aumentar mi limite de credito de mi tarjeta",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'el' at position 8",
-      "reason": "The omission of 'el' (the) before 'limite' is a minor grammatical error in Spanish, but it does not change the overall meaning of the sentence. The request is still clear and understandable.",
-      "score": 2
+      "error": "Substitution: 'qué' to 'que' at position 3",
+      "reason": "'qué' (with accent) is the interrogative form, while 'que' (without accent) is a conjunction. In this context, the meaning is preserved and the sentence remains understandable.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'el' to 'mi' at position 7",
+      "reason": "Changing 'el' (the) to 'mi' (my) changes the ownership of the credit limit being referenced, which alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 10",
+      "reason": "Missing accent on 'crédito' is a minor orthographic error and does not affect the meaning.",
+      "score": 3
     }
   ]
 }

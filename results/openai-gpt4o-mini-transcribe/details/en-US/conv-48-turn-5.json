@@ -1,16 +1,37 @@
 {
   "gold": "There is a name. It's Ashley period Brown at email dot com.",
-  "predicted": "There is a name, it's ashley.brown@email.com.",
+  "predicted": "Here is the name is ashley.period.brown@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
   "werRefWords": 12,
   "werNormalizedGold": "there is a name it is ashley brown at email dot com",
-  "werNormalizedPredicted": "there is a name it is ashley brown at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "here is the name is ashley period brown at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "there is a name it is ashley brown at email dot com",
-  "sigWerNormalizedPredicted": "there is a name it is ashley brown at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "here is the name is ashley period brown at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'there' to 'here' at position 0",
+      "reason": "'There is a name' and 'here is the name' both introduce the name, but 'there' and 'here' have slightly different meanings. However, in this context, the meaning is not significantly changed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'a' to 'the' at position 2",
+      "reason": "'A name' vs 'the name' changes the specificity, but does not derail the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'it' at position 4",
+      "reason": "Omitting 'it' in 'it is ashley brown' makes the sentence less grammatical but does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'period' at position 7",
+      "reason": "Inserting 'period' between 'ashley' and 'brown' could cause confusion, as it may be interpreted as punctuation or part of the name, which could affect understanding of the name.",
+      "score": 1
+    }
+  ]
 }

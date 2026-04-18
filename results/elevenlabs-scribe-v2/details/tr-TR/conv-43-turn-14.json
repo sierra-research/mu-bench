@@ -1,16 +1,32 @@
 {
   "gold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
-  "predicted": "Hayır, tekrar baştan söylüyorum. Yazar mısın? Artı 90. Tek-tekrar dinle beni",
+  "predicted": "Hayır, tekrar baştan söylüyorum. Yazar mısın? Artı 90. Tek-tekrar dinleyelim",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
   "werNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
-  "werNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tek tekrar dinleyelim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
-  "sigWerNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tek tekrar dinleyelim",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'tek' at position 8",
+      "reason": "The insertion of 'tek' (meaning 'only' or 'single') before 'tekrar' slightly changes the nuance but does not derail the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dinle' to 'dinleyelim' at position 9",
+      "reason": "'dinle' means 'listen' (imperative, singular), while 'dinleyelim' means 'let's listen' (first person plural). This changes the subject from a command to a suggestion, which is a minor shift in meaning but does not make the sentence incoherent.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'beni' at position 10",
+      "reason": "Omitting 'beni' ('me') removes the object of the verb 'listen', which makes the sentence less clear and changes the meaning significantly, as it is no longer clear who should be listened to.",
+      "score": 1
+    }
+  ]
 }

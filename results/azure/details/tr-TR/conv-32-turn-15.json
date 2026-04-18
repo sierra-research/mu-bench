@@ -2,15 +2,21 @@
   "gold": "Peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire? Belki de çalındı. Kapatsak daha iyi olmaz mı kredi kartımı?",
   "predicted": "Peki bu süreçte ne yapayım? Eğer kredi kartım çalınmışsa vesaire belki de çalındı. Kapatsak daha iyi olmaz mı, kredi kartı mı?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 2,
   "werRefWords": 20,
   "werNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
-  "werNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartı mı",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
-  "sigWerNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartı mı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartımı' to 'mı' at position 19",
+      "reason": "The actual splits the word 'kartımı' (my credit card) into 'kartı mı' (is it the card), which changes the meaning from possessive to a question. This alters the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

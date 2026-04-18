@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "我想提高我的用卡额度",
   "werNormalizedPredicted": "我想提高我的信用额度",
-  "significantWer": 0.2,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 想 提 高 我 的 用 卡 额 度",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '信' at position 6",
-      "reason": "'用卡' (card usage) was replaced by '信用' (credit), which changes the meaning from 'card limit' to 'credit limit'. This is a significant change in the context of banking terminology.",
+      "reason": "'信用' (credit) is inserted instead of just '用卡' (card usage), changing the meaning from 'card usage limit' to 'credit limit', which is a significant difference in banking context.",
       "score": 1
     },
     {
       "error": "Deletion: '卡' at position 7",
-      "reason": "Omitting '卡' (card) removes the reference to 'card', further shifting the meaning from 'card limit' to 'credit limit', which is a significant error in this context.",
+      "reason": "Omitting '卡' (card) changes the phrase from '用卡额度' (card usage limit) to '信用额度' (credit limit), which alters the specific type of limit being referred to, making it a significant error.",
       "score": 1
     }
   ]

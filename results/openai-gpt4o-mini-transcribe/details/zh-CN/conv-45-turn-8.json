@@ -1,26 +1,26 @@
 {
   "gold": "听到了吗？",
-  "predicted": "听懂了。",
+  "predicted": "听懂吗?",
   "unintelligible": false,
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "听 到 了 吗",
-  "werNormalizedPredicted": "听 懂 了",
-  "significantWer": 0.5,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "听懂吗",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
-  "sigWerNormalizedPredicted": "听 懂 了",
+  "sigWerNormalizedPredicted": "听 懂 吗",
   "sigWerErrors": [
     {
       "error": "Substitution: '到' to '懂' at position 1",
-      "reason": "'听到' means 'heard', while '听懂' means 'understood'. This changes the meaning of the sentence significantly, as hearing and understanding are different actions.",
+      "reason": "'听到了吗' means 'Did you hear (it)?', while '听懂吗' means 'Did you understand?'. The substitution changes the meaning of the question significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: '吗' at position 3",
-      "reason": "'吗' is a question particle in Chinese, indicating that the sentence is a question. Its omission changes the sentence from a question to a statement, which is a significant change in meaning.",
+      "error": "Deletion: '了' at position 2",
+      "reason": "Omitting '了' changes the aspect of the verb, but in this context, the main meaning is already lost due to the previous substitution. The deletion further reduces the accuracy, but the main error is already significant.",
       "score": 1
     }
   ]

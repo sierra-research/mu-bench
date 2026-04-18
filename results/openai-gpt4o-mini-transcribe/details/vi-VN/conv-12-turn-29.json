@@ -1,32 +1,27 @@
 {
   "gold": "Muốn. Vui lòng hướng dẫn tôi làm cái đó đi.",
-  "predicted": "à muốn vừa lòng hướng dẫn Slovenia cái đó đi.",
+  "predicted": "à Bụng vừa lòng hướng dẫn tôi làm cái cái cái đó đi.",
   "unintelligible": false,
-  "wer": 0.3,
-  "werEdits": 3,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
-  "werNormalizedPredicted": "muốn vừa lòng hướng dẫn slovenia cái đó đi",
-  "significantWer": 0.2,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "bụng vừa lòng hướng dẫn tôi làm cái cái cái đó đi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
-  "sigWerNormalizedPredicted": "muốn vừa lòng hướng dẫn slovenia cái đó đi",
+  "sigWerNormalizedPredicted": "bụng vừa lòng hướng dẫn tôi làm cái cái cái đó đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'vui' to 'vừa' at position 1",
-      "reason": "'Vui lòng' means 'please' in Vietnamese, while 'vừa lòng' means 'satisfied' or 'pleased'. The substitution changes the politeness request to a statement about satisfaction, but the overall intent of requesting help is still somewhat understandable.",
+      "error": "Substitution: 'muốn' to 'bụng' at position 0",
+      "reason": "'muốn' means 'want' (expressing desire), while 'bụng' means 'stomach' (a body part); this substitution completely changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'cái' at position 7",
+      "reason": "The repeated insertion of 'cái' ('the/that/thing') is redundant and makes the sentence awkward but does not significantly change the overall meaning.",
       "score": 2
-    },
-    {
-      "error": "Substitution: 'tôi' to 'slovenia' at position 5",
-      "reason": "'Tôi' means 'I' or 'me', while 'slovenia' is a country name and completely unrelated. This substitution makes the sentence incoherent and derails the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'làm' at position 6",
-      "reason": "Omitting 'làm' ('do' or 'make') removes the verb necessary for the action, making the sentence incomplete and confusing.",
-      "score": 1
     }
   ]
 }

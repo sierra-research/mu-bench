@@ -1,21 +1,26 @@
 {
   "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "predicted": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstrenin bir dökümünü istiyorum daha doğrusu.",
+  "predicted": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstreme bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
   "unintelligible": false,
-  "wer": 0.047619047619047616,
-  "werEdits": 1,
-  "werRefWords": 21,
-  "werNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
-  "werNormalizedPredicted": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstrenin bir dökümünü istiyorum daha doğrusu",
-  "significantWer": 0.0,
+  "wer": 0.1,
+  "werEdits": 2,
+  "werRefWords": 20,
+  "werNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anna hanım merhabalar ben kredi kartıma dair ekstreme bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
-  "sigWerNormalizedPredicted": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstrenin bir dökümünü istiyorum daha doğrusu",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anna hanım merhabalar ben kredi kartıma dair ekstreme bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ekstremin' to 'ekstrenin' at position 15",
-      "reason": "'ekstremin' is the possessive form ('of my statement'), while 'ekstrenin' is the possessive form for 'of the statement'. This changes the reference from personal to general, but in the context of the sentence, the overall meaning (requesting a statement breakdown) is still clear and not derailed.",
+      "error": "Deletion: 'şimdi' at position 3",
+      "reason": "Omitting 'şimdi' (meaning 'now') removes a temporal reference, but the main request is still clear and understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstreme' at position 8",
+      "reason": "'Ekstremin' (my statement) vs 'ekstreme' (to my statement) is a minor grammatical error that does not change the overall meaning of the request.",
       "score": 2
     }
   ]

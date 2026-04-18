@@ -2,15 +2,26 @@
   "gold": "君玲，君玲。",
   "predicted": "君临，君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "君玲 君玲",
-  "werNormalizedPredicted": "君玲 君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "君临 君临",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "君 玲 君 玲",
-  "sigWerNormalizedPredicted": "君 玲 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "君 临 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '玲' to '临' at position 1",
+      "reason": "'玲' and '临' are different Chinese characters with different meanings and pronunciations. Substituting one for the other changes the name entirely, which is a significant error, especially for proper nouns or names.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 3",
+      "reason": "Repeats the same significant error as above; the name is changed, which is a major mistake for proper nouns.",
+      "score": 1
+    }
+  ]
 }

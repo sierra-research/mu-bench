@@ -2,20 +2,25 @@
   "gold": "Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet. Arslan at email.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
-  "werRefWords": 5,
-  "werNormalizedGold": "ahmet arslan at email com",
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
   "werNormalizedPredicted": "ahmet arslan at email",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "ahmet arslan at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
   "sigWerNormalizedPredicted": "ahmet arslan at email",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'com' at position 4",
-      "reason": "Omitting 'com' from an email address makes it incomplete and unusable, significantly changing the meaning and function of the information.",
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'Nokta' is used to indicate a dot (.) in email addresses, and its omission makes the email address incomplete or incorrect, which can lead to failure in communication or delivery.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 5",
+      "reason": "Omitting 'nokta' again removes the dot before 'com', making the email address invalid and unusable.",
       "score": 1
     }
   ]

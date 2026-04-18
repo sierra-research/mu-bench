@@ -2,15 +2,26 @@
   "gold": "Es María punto López arroba email punto com.",
   "predicted": "es maria.lopez@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "es maria lopez arroba email punto com",
-  "werNormalizedPredicted": "es maria lopez arroba email punto com",
-  "significantWer": 0.0,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es maria punto lopez arroba email punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "es maria lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es maria lopez arroba email punto com",
-  "sigWerErrors": []
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 1",
+      "reason": "The only difference is the missing accent on the 'i'. The name is still clearly recognizable and the meaning is unchanged.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "The only difference is the missing accent on the 'o'. The name is still clearly recognizable and the meaning is unchanged.",
+      "score": 2
+    }
+  ]
 }

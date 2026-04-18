@@ -2,30 +2,35 @@
   "gold": "Hayır, posta kodunu sonunda bir de 0 var. 3466 0.",
   "predicted": "Hayır, posta kodunun sonunda bire sıfır var, 3460 altısıfır.",
   "unintelligible": false,
-  "wer": 0.23076923076923078,
-  "werEdits": 3,
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
   "werRefWords": 13,
   "werNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç dört altı altı sıfır",
-  "werNormalizedPredicted": "hayır posta kodunun sonunda bir sıfır var üç dört altı sıfır altı sıfır",
-  "significantWer": 0.07692307692307693,
+  "werNormalizedPredicted": "hayır posta kodunun sonunda bire sıfır var üç dört altı sıfır",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç dört altı altı sıfır",
-  "sigWerNormalizedPredicted": "hayır posta kodunun sonunda bir sıfır var üç dört altı sıfır altı sıfır",
+  "sigWerNormalizedPredicted": "hayır posta kodunun sonunda bire sıfır var üç dört altı sıfır",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kodunu' to 'kodunun' at position 2",
-      "reason": "'kodunu' (accusative case) and 'kodunun' (possessive case) are different grammatical forms, but in this context both refer to the postal code and do not change the overall meaning of the sentence.",
+      "reason": "'kodunu' (your postal code - accusative) vs 'kodunun' (of your postal code - genitive) is a minor grammatical difference that does not change the overall meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'bir' to 'bire' at position 4",
+      "reason": "'bir' (one) vs 'bire' (to one) is a minor grammatical error; the meaning is still clear in the context of listing numbers.",
       "score": 2
     },
     {
       "error": "Deletion: 'de' at position 5",
-      "reason": "Omitting 'de' ('also' or 'too') slightly changes the nuance but does not affect the main meaning of the sentence.",
+      "reason": "Missing 'de' (also) slightly affects the nuance but does not change the main meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'sıfır' at position 11",
-      "reason": "An extra 'sıfır' (zero) in the sequence of numbers changes the actual postal code, which is a significant factual error.",
+      "error": "Deletion: 'altı' at position 10",
+      "reason": "Omitting one 'altı' (six) from the sequence of numbers changes the postal code, which is a significant factual error.",
       "score": 1
     }
   ]

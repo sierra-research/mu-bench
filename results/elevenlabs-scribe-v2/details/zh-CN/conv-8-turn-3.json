@@ -5,22 +5,22 @@
   "wer": 1.0,
   "werEdits": 5,
   "werRefWords": 5,
-  "werNormalizedGold": "c n one zero eight",
+  "werNormalizedGold": "c n 一 零 八",
   "werNormalizedPredicted": "c in c n e 靈巴",
-  "significantWer": 0.4,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n one zero eight",
+  "sigWerNormalizedGold": "c n 一 零 八",
   "sigWerNormalizedPredicted": "c in c n e 靈 巴",
   "sigWerErrors": [
     {
       "error": "Insertion: 'in' at position 1",
-      "reason": "The word 'in' is inserted where it does not belong, breaking the sequence of spelled-out characters/numbers and making the transcription confusing and incoherent.",
+      "reason": "'in' is an extra word that does not belong in the sequence, which can confuse the intended meaning, especially in a sequence like a code or identifier.",
       "score": 1
     },
     {
-      "error": "Substitution: 'one' to 'e' at position 2",
-      "reason": "Substituting 'one' with 'e' in a sequence of spelled-out characters/numbers is a significant error, as it changes the intended information completely.",
+      "error": "Substitution: '一' to 'e' at position 2",
+      "reason": "Substituting the Chinese character '一' (one) with 'e' is a significant error, as it changes the meaning of the sequence, especially if this is a code or number.",
       "score": 1
     }
   ]

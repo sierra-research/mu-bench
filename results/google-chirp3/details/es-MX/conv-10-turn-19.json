@@ -2,26 +2,26 @@
   "gold": "Es María punto López arroba email, se escribe email punto com.",
   "predicted": "Es María {punto} López {arroba} m e mail. Es escribe e mail {punto} com.",
   "unintelligible": false,
-  "wer": 0.9090909090909091,
-  "werEdits": 10,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
   "werRefWords": 11,
-  "werNormalizedGold": "es maria punto lopez arroba email se escribe email punto com",
-  "werNormalizedPredicted": "es maria punto lopez arroba e m a i l se escribe e m a i l punto com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "werNormalizedPredicted": "es maría punto lópez arroba m e mail es escribe e mail punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "es maria punto lopez arroba email se escribe email punto com",
-  "sigWerNormalizedPredicted": "es maria punto lopez arroba e m a i l se escribe e m a i l punto com",
+  "sigWerNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "sigWerNormalizedPredicted": "es maría punto lópez arroba m e mail es escribe e mail punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'l' at position 5",
-      "reason": "The model spelled out 'email' as 'e m a i l' instead of using the word 'email'. This does not change the meaning, as both forms refer to the same word.",
-      "score": 3
+      "error": "Substitution: 'email' to 'mail' at position 5",
+      "reason": "The word 'email' was spelled out as 'm e mail' instead of just 'email'. This does not change the meaning, as it is still clear the intended word is 'email'.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'email' to 'l' at position 8",
-      "reason": "This is not a true substitution; the model is spelling out 'email' letter by letter. The 'l' is part of the spelled word. Since the meaning is preserved, this is not a significant error.",
-      "score": 3
+      "error": "Substitution: 'email' to 'mail' at position 8",
+      "reason": "The word 'email' was split into 'm e mail', but the meaning is preserved and it is still understood as 'email'.",
+      "score": 2
     }
   ]
 }

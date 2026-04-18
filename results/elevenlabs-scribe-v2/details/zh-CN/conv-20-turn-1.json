@@ -2,15 +2,26 @@
   "gold": "我想提高我的信用卡额度。",
   "predicted": "我想提高我的心流卡二度",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
   "werNormalizedGold": "我想提高我的信用卡额度",
-  "werNormalizedPredicted": "我想提高我的信用卡额度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想提高我的心流卡二度",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 心 流 卡 二 度",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '信' to '心' at position 6",
+      "reason": "'信' (credit) and '心' (heart) are completely different words and change the meaning of the phrase from 'credit card' to 'heart flow card', which is not meaningful in this context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '二' at position 9",
+      "reason": "'额' (limit/amount) is replaced by '二' (two), which makes the phrase incoherent and changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

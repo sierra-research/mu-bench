@@ -2,15 +2,26 @@
   "gold": "C N 1 2 2. C N 122.",
   "predicted": "CN122 CN122",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 10,
-  "werNormalizedGold": "c n one two two c n one two two",
-  "werNormalizedPredicted": "c n one two two c n one two two",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "c n one two two c n one two two",
-  "sigWerNormalizedPredicted": "c n one two two c n one two two",
-  "sigWerErrors": []
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
+  "werRefWords": 11,
+  "werNormalizedGold": "c n bir iki iki c n bir yüz yirmi iki",
+  "werNormalizedPredicted": "c n bir iki iki c n bir iki iki",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "c n bir iki iki c n bir yüz yirmi iki",
+  "sigWerNormalizedPredicted": "c n bir iki iki c n bir iki iki",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yüz' to 'iki' at position 8",
+      "reason": "'yüz' (hundred) is replaced by 'iki' (two), which changes the numeric value significantly and alters the meaning of the number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'yirmi' at position 9",
+      "reason": "'yirmi' (twenty) is missing, which significantly changes the intended number (should be 'one hundred twenty two' but is now just 'two').",
+      "score": 1
+    }
+  ]
 }

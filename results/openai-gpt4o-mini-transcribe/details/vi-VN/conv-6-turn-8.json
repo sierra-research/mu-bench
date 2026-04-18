@@ -1,16 +1,27 @@
 {
   "gold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
-  "predicted": "Không phải, cái email đúng là minh.tran.a@email.com",
+  "predicted": "Không phải, cái email đúng là minh.trana@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "không phải cái email đúng là minh chấm trana a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "không phải cái email đúng là minh chấm trana a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trana' at position 8",
+      "reason": "'trần' is a Vietnamese surname or name, while 'trana' is a misspelling that could confuse the intended recipient or address. Since this is part of an email address, a single letter error in a proper noun within an email can cause delivery failure or misidentification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 11",
+      "reason": "Changing the domain from 'email' to 'gmail' completely changes the email address and would result in sending to a different provider or person. This is a significant error as it derails the intended meaning and function of the sentence.",
+      "score": 1
+    }
+  ]
 }

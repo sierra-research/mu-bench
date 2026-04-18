@@ -5,32 +5,27 @@
   "wer": 0.15789473684210525,
   "werEdits": 3,
   "werRefWords": 19,
-  "werNormalizedGold": "ama pardon telefon numarasi yanlis oldu telefon numaramizi tekrar soyler misin telefon numarasini veya ben bir daha soyleyeyim isterseniz",
-  "werNormalizedPredicted": "ama pardon telefon numaraniz yanlis oldu telefon numaranizi tekrar soyler misiniz telefon numarasini veya ben bir daha soyleyeyim isterseniz",
-  "significantWer": 0.0,
+  "werNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
+  "werNormalizedPredicted": "ama pardon telefon numaranız yanlış oldu telefon numaranızı tekrar söyler misiniz telefon numarasını veya ben bir daha söyleyeyim isterseniz",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
-  "sigWerNormalizedGold": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
-  "sigWerNormalizedPredicted": "Ama pardon, telefon numaranız yanlış oldu. Telefon numaranızı tekrar söyler misiniz telefon numarasını? Veya ben bir daha söyleyeyim isterseniz",
+  "sigWerNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
+  "sigWerNormalizedPredicted": "ama pardon telefon numaranız yanlış oldu telefon numaranızı tekrar söyler misiniz telefon numarasını veya ben bir daha söyleyeyim isterseniz",
   "sigWerErrors": [
     {
       "error": "Substitution: 'numarası' to 'numaranız' at position 3",
-      "reason": "'numarası' (his/her/its number) vs 'numaranız' (your number) changes the possessive, but in context both refer to the phone number being discussed, so the meaning is only slightly affected.",
+      "reason": "'Numarası' (his/her/its number) vs 'numaranız' (your number) changes the possessive from third person to second person, but the overall meaning of the sentence remains clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'numaramızı' to 'numaranızı' at position 7",
-      "reason": "'numaramızı' (our number) vs 'numaranızı' (your number) changes the possessive, but the overall intent of asking to repeat the phone number remains clear.",
+      "reason": "'Numaramızı' (our number) vs 'numaranızı' (your number) changes the possessive from first person plural to second person plural, but the intent of asking for the phone number is still clear.",
       "score": 2
     },
     {
-      "error": "Substitution: 'misin?' to 'misiniz' at position 10",
-      "reason": "Singular informal ('misin?') vs plural/formal ('misiniz'), but both are requests to repeat the number; the meaning is unchanged.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'isterseniz.' to 'isterseniz' at position 18",
-      "reason": "Difference is only punctuation (period), which does not affect meaning.",
+      "error": "Substitution: 'misin' to 'misiniz' at position 10",
+      "reason": "'Misin' (informal 'are you') vs 'misiniz' (formal/plural 'are you') is a formality difference, but does not change the meaning of the request.",
       "score": 3
     }
   ]

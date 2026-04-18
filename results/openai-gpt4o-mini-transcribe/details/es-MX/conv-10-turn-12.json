@@ -1,16 +1,27 @@
 {
   "gold": "Más 52 5 5 1 2 3 4 5 6 7 8.",
-  "predicted": "más cincuenta y dos cinco cinco uno dos tres cuatro cinco seis siete ocho.",
+  "predicted": "más cinco dos cinco cinco uno, dos, tres, cuatro, cinco, seis, siete, ocho.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "más cincuenta y dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "más cincuenta y dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "más cincuenta y dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "más cincuenta y dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 1",
+      "reason": "'Cincuenta' means 'fifty' and 'cinco' means 'five'; substituting fifty for five changes the number entirely, which is significant especially in contexts like phone numbers or codes.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 2",
+      "reason": "The conjunction 'y' (and) is omitted, which could cause confusion in understanding the structure of the number, especially in Spanish where 'y' is used to separate tens and units. However, the main error is the number change, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

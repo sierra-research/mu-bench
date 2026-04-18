@@ -1,31 +1,36 @@
 {
   "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
-  "predicted": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana e-mail ile gönderebilir misin son transferim detaylarını?",
+  "predicted": "Annes son transferinde biraz gecikme olmuştu. Son transferimi bir göz atar mısın? Bana e-mail ile gönderebilir misin son transferim detaylarını?",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 6,
+  "wer": 0.5,
+  "werEdits": 9,
   "werRefWords": 18,
   "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
-  "werNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi bir göz atar mısın bana email ile gönderebilir misin son transferim detaylarını",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "annes son transferinde biraz gecikme olmuştu son transferimi bir göz atar mısın bana e mail ile gönderebilir misin son transferim detaylarını",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
-  "sigWerNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi bir göz atar mısın bana email ile gönderebilir misin son transferim detaylarını",
+  "sigWerNormalizedPredicted": "annes son transferinde biraz gecikme olmuştu son transferimi bir göz atar mısın bana e mail ile gönderebilir misin son transferim detaylarını",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'anna' to 'annes' at position 0",
+      "reason": "'Anna' is a proper noun (name), 'annes' is a different word/name, which could confuse the subject of the sentence.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'gösterir' to 'atar' at position 9",
-      "reason": "'göz atar mısın' is a different phrase from 'gösterir misin', but the insertion of 'göz' is part of the alternate phrase and does not significantly change the overall meaning.",
+      "reason": "The insertion of 'göz' (meaning 'eye') changes the phrase from 'show me' to 'take a look', which is a minor change in meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gönderir' to 'gönderebilir' at position 13",
-      "reason": "'gösterir misin' (can you show) and 'göz atar mısın' (can you take a look) are different verbs, but in this context both mean to check or review, so the meaning is preserved.",
-      "score": 3
+      "error": "Substitution: 'email' to 'ile' at position 12",
+      "reason": "'Gösterir' means 'show', 'atar' means 'throw' or 'take (a look)' in this context. The meaning shifts from 'show' to 'look at', which is a minor change.",
+      "score": 2
     },
     {
       "error": "Substitution: 'transferin' to 'transferim' at position 16",
-      "reason": "Adding 'ile' (with) in 'email ile gönderebilir misin' (can you send with email) is a minor grammatical difference and does not change the meaning.",
+      "reason": "The insertion of 'e' is part of the phrase 'e mail', which is an acceptable variant of 'email'.",
       "score": 3
     }
   ]

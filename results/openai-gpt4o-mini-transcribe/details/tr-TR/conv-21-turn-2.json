@@ -2,15 +2,26 @@
   "gold": "S N 801.",
   "predicted": "Sene sekiz yüz bir.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "s n eight hundred one",
-  "werNormalizedPredicted": "s n eight hundred one",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "s n sekiz yüz bir",
+  "werNormalizedPredicted": "sene sekiz yüz bir",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "s n eight hundred one",
-  "sigWerNormalizedPredicted": "s n eight hundred one",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "s n sekiz yüz bir",
+  "sigWerNormalizedPredicted": "sene sekiz yüz bir",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sene' at position 0",
+      "reason": "'s' and 'n' are likely intended as spelled-out letters, while 'sene' is a full word meaning 'year' in Turkish. This substitution changes the meaning and loses the intended letter sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting the letter 'n' from a spelled-out sequence is a significant error, as it alters the intended sequence of letters.",
+      "score": 1
+    }
+  ]
 }

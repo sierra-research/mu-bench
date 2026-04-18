@@ -2,20 +2,25 @@
   "gold": "Zaynep nokta Arslan at email nokta com.",
   "predicted": "Tabi zaynetarslan@email.com.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
   "werNormalizedGold": "zaynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "zaynep arslan at email nokta com",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tabi zaynetarslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "zaynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "zaynep arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabi zaynetarslan at email nokta com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'nokta' at position 1",
-      "reason": "The word 'nokta' (meaning 'dot' in Turkish) is used to indicate a period in an email address. Omitting it could lead to an incorrect or undeliverable email address, which is a significant error.",
+      "error": "Substitution: 'zaynep' to 'tabi' at position 0",
+      "reason": "'tabi' is a completely different word from 'zaynep', which is a proper noun (likely a name). This substitution changes the intended recipient or subject, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arslan' at position 2",
+      "reason": "The omission of 'arslan', which is likely a surname and part of an email address, significantly alters the identity being referenced. This is a significant error as it changes the meaning and could result in incorrect information.",
       "score": 1
     }
   ]

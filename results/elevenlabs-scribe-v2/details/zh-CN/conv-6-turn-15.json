@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "drillin@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
-  "werNormalizedPredicted": "君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "drillin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "drillin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drillin' at position 0",
+      "reason": "The name '君' (a Chinese name) is completely replaced by 'drillin', which is not a name and is unrelated. This changes the identity and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The second part of the name '玲' is missing entirely, which further distorts the intended email address and identity.",
+      "score": 1
+    }
+  ]
 }

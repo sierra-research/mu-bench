@@ -1,21 +1,26 @@
 {
   "gold": "C N 8 9.",
-  "predicted": "Xê Na tạm biệt.",
+  "predicted": "Xên à tạm thiệp",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
-  "werNormalizedGold": "c n eight nine",
-  "werNormalizedPredicted": "xê na tạm biệt",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n tám chín",
+  "werNormalizedPredicted": "xên tạm thiệp",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "c n eight nine",
-  "sigWerNormalizedPredicted": "xê na tạm biệt",
+  "sigWerNormalizedGold": "c n tám chín",
+  "sigWerNormalizedPredicted": "xên tạm thiệp",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'xê' at position 0",
-      "reason": "The actual transcription is in a different language (Vietnamese) than the expected (English letters/numbers), making the meaning completely different and unrecognizable.",
+      "error": "Substitution: 'c' to 'xên' at position 0",
+      "reason": "'c' and 'xên' are completely different words with different meanings, causing a significant change in the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chín' at position 3",
+      "reason": "'chín' (nine) is missing, which removes important information from the expected sequence.",
       "score": 1
     }
   ]

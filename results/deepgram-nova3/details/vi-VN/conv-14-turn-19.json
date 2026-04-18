@@ -2,15 +2,26 @@
   "gold": "Quần jeans hơi chật cho nên tôi muốn trả lại.",
   "predicted": "Quần zin hơi chập cho nên tôi muốn trả lại.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "werNormalizedPredicted": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "quần zin hơi chập cho nên tôi muốn trả lại",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "sigWerNormalizedPredicted": "quần jeans hơi chật cho nên tôi muốn trả lại",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "quần zin hơi chập cho nên tôi muốn trả lại",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'jeans' to 'zin' at position 1",
+      "reason": "'Zin' is a common Vietnamese phonetic spelling for 'jeans', and in this context, both refer to the same type of clothing. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'chật' to 'chập' at position 3",
+      "reason": "'Chật' means 'tight', while 'chập' is unrelated and does not make sense in this context, changing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

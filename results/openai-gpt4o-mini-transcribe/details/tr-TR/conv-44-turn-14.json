@@ -1,16 +1,22 @@
 {
   "gold": "G H 0 4 1 2 3 4 5 6.",
-  "predicted": "GH04123456",
+  "predicted": "GH044123456",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
-  "werNormalizedGold": "g h zero four one two three four five six",
-  "werNormalizedPredicted": "g h zero four one two three four five six",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "g h sıfır dört bir iki üç dört beş altı",
+  "werNormalizedPredicted": "g h sıfır dört dört bir iki üç dört beş altı",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "g h zero four one two three four five six",
-  "sigWerNormalizedPredicted": "g h zero four one two three four five six",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "g h sıfır dört bir iki üç dört beş altı",
+  "sigWerNormalizedPredicted": "g h sıfır dört dört bir iki üç dört beş altı",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'dört' at position 4",
+      "reason": "An extra 'dört' (four) is inserted in a sequence of numbers/letters, which changes the intended sequence and could cause confusion or incorrect information, especially if this is a code or phone number.",
+      "score": 1
+    }
+  ]
 }

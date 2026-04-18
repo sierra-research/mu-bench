@@ -2,30 +2,30 @@
   "gold": "No, solo una M. Una sola M. Email, con una sola M.",
   "predicted": "No, solo una e, solo, solo una sola e-mail o una sola m",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 4,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
   "werRefWords": 12,
   "werNormalizedGold": "no solo una m una sola m email con una sola m",
-  "werNormalizedPredicted": "no solo una m solo solo una sola email o una sola m",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "no solo una e solo solo una sola email o una sola m",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "no solo una m una sola m email con una sola m",
-  "sigWerNormalizedPredicted": "no solo una m solo solo una sola email o una sola m",
+  "sigWerNormalizedPredicted": "no solo una e solo solo una sola email o una sola m",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'solo' at position 4",
-      "reason": "The extra 'solo' is a repetition that does not change the overall meaning of the sentence, as it just repeats an existing word without altering the intent.",
-      "score": 2
+      "error": "Substitution: 'm' to 'solo' at position 3",
+      "reason": "The insertion of 'e' instead of 'm' changes the intended letter, which is important for clarity, especially if spelling out an email or word. This can confuse the listener about the correct letter.",
+      "score": 1
     },
     {
       "error": "Deletion: 'm' at position 6",
-      "reason": "The missing 'm' could cause confusion, as the sentence is about specifying 'una sola m' (a single m), so omitting one instance could make the instruction less clear.",
-      "score": 2
+      "reason": "Replacing the letter 'm' with the word 'solo' significantly alters the meaning, especially if the context is spelling or specifying a letter. This is a major error.",
+      "score": 1
     },
     {
       "error": "Substitution: 'con' to 'o' at position 8",
-      "reason": "Changing 'con' (with) to 'o' (or) alters the meaning of the instruction, as it changes from specifying 'email with a single m' to 'email or a single m', which is a significant change in meaning.",
+      "reason": "Omitting the letter 'm' when it is being specified is a significant error, as it can lead to misunderstanding of the intended word or email.",
       "score": 1
     }
   ]

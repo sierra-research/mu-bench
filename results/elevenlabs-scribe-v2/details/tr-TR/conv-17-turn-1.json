@@ -1,16 +1,22 @@
 {
   "gold": "S N 634.",
-  "predicted": "SN altı yüz otuz dört.",
+  "predicted": "SN altı yüz otuz dört",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "s n six hundred thirty four",
-  "werNormalizedPredicted": "s n six hundred thirty four",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "s n six hundred thirty four",
-  "sigWerNormalizedPredicted": "s n six hundred thirty four",
-  "sigWerErrors": []
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "s n altı üç dört",
+  "werNormalizedPredicted": "s n altı yüz otuz dört",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "s n altı üç dört",
+  "sigWerNormalizedPredicted": "s n altı yüz otuz dört",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'üç' to 'otuz' at position 3",
+      "reason": "'yüz' means 'hundred' and its insertion changes the number being stated from 'six three four' (634) to something in the hundreds, altering the intended value significantly.",
+      "score": 1
+    }
+  ]
 }

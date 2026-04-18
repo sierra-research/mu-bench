@@ -2,15 +2,31 @@
   "gold": "郡凛 at email dot com。",
   "predicted": "Dreamling@gmail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "郡凛 at email dot com",
-  "werNormalizedPredicted": "郡凛 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreamling at gmail dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "郡 凛 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreamling at gmail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'dreamling' at position 0",
+      "reason": "'郡' is a Chinese character, while 'dreamling' is an English word and a completely different name; this is a major error that changes the identity entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "The second character '凛' is missing in the actual transcription, which omits a significant part of the name/email and changes the intended recipient.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 3",
+      "reason": "Changing the email provider from 'email' to 'gmail' alters the address and could result in a message being sent to the wrong domain.",
+      "score": 1
+    }
+  ]
 }

@@ -140,11 +140,9 @@ export default function Leaderboard() {
             return {
                 ...p,
                 sigWer: getProviderScore(p, "significantWer", locale),
-                // Unified cross-protocol sortable metric. getProviderScore
-                // prefers `completeP95Ms` (batch round-trip or streaming
-                // time-to-complete) and falls back to the legacy
-                // `latencyP95Ms` when a score.json hasn't been re-scored.
-                latency: getProviderScore(p, "latencyP95Ms", locale),
+                // Unified cross-protocol sortable metric: batch round-trip
+                // or streaming time-to-complete.
+                latency: getProviderScore(p, "completeP95Ms", locale),
                 ttft,
                 protocol: p.latencyMeta?.protocol || "batch",
             };
@@ -152,8 +150,8 @@ export default function Leaderboard() {
 
         const dir = getSortDirection(sortBy);
         withScores.sort((a, b) => {
-            const aVal = sortBy === "latencyP95Ms" ? a.latency : a.sigWer;
-            const bVal = sortBy === "latencyP95Ms" ? b.latency : b.sigWer;
+            const aVal = sortBy === "completeP95Ms" ? a.latency : a.sigWer;
+            const bVal = sortBy === "completeP95Ms" ? b.latency : b.sigWer;
             if (aVal === null && bVal === null) return 0;
             if (aVal === null) return 1;
             if (bVal === null) return -1;
@@ -167,7 +165,7 @@ export default function Leaderboard() {
     }, [sortBy, locale]);
 
     const sigWerMetric = METRICS.significantWer;
-    const latencyMetric = METRICS.latencyP95Ms;
+    const latencyMetric = METRICS.completeP95Ms;
 
     return (
         <div className="leaderboard">
@@ -242,11 +240,11 @@ export default function Leaderboard() {
                                     <span className="col-sig-wer-footnote">*</span>
                                 </th>
                                 <th
-                                    className={`col-latency sortable ${sortBy === "latencyP95Ms" ? "sorted" : ""}`}
-                                    onClick={() => setSortBy("latencyP95Ms")}
+                                    className={`col-latency sortable ${sortBy === "completeP95Ms" ? "sorted" : ""}`}
+                                    onClick={() => setSortBy("completeP95Ms")}
                                     title="Time to complete transcript (request-to-response round-trip for batch; send-to-final-transcript for streaming). Apples-to-apples across protocols."
                                 >
-                                    Latency (p95) {sortBy === "latencyP95Ms" ? "▲" : ""}
+                                    Latency (p95) {sortBy === "completeP95Ms" ? "▲" : ""}
                                     <span className="col-latency-footnote">{"\u2020"}</span>
                                 </th>
                                 <th className="col-arrow"></th>
@@ -404,17 +402,17 @@ function ProviderDetailOverall({ provider, providerId }) {
     const [showUtterances, setShowUtterances] = useState(false);
 
     const sigWerMetric = METRICS.significantWer;
-    const latencyMetric = METRICS.latencyP95Ms;
+    const latencyMetric = METRICS.completeP95Ms;
 
     const scoreRows = useMemo(() => {
         const overallSigWer = getProviderScore(provider, "significantWer", "overall");
-        const overallLatency = getProviderScore(provider, "latencyP95Ms", "overall");
+        const overallLatency = getProviderScore(provider, "completeP95Ms", "overall");
         const rows = [{ label: "Overall", sigWer: overallSigWer, latency: overallLatency, isOverall: true }];
         for (const l of LOCALES) {
             rows.push({
                 label: l.code,
                 sigWer: getProviderScore(provider, "significantWer", l.code),
-                latency: getProviderScore(provider, "latencyP95Ms", l.code),
+                latency: getProviderScore(provider, "completeP95Ms", l.code),
                 isOverall: false,
             });
         }

@@ -1,16 +1,32 @@
 {
   "gold": "Sí, es mi nombre, María punto López arroba e.",
-  "predicted": "Sí, es mi nombre, maria.lopez@",
+  "predicted": "Sí, es mi nombre, Maria.Lopez@",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "si es mi nombre maria punto lopez arroba e",
-  "werNormalizedPredicted": "si es mi nombre maria punto lopez arroba e",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí es mi nombre maría punto lópez arroba e",
+  "werNormalizedPredicted": "sí es mi nombre maria punto lopez arroba",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "si es mi nombre maria punto lopez arroba e",
-  "sigWerNormalizedPredicted": "si es mi nombre maria punto lopez arroba e",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sí es mi nombre maría punto lópez arroba e",
+  "sigWerNormalizedPredicted": "sí es mi nombre maria punto lopez arroba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 4",
+      "reason": "Accent is missing but the name is still clearly recognizable and refers to the same person.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 6",
+      "reason": "Accent is missing but the surname is still clearly recognizable and refers to the same person.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'e' at position 8",
+      "reason": "Missing the letter 'e' at the end, which could be part of an email address or identifier, potentially causing confusion or error in communication.",
+      "score": 1
+    }
+  ]
 }

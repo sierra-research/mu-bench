@@ -5,22 +5,22 @@
   "wer": 0.42857142857142855,
   "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "yaziyor musun arti doksan bir iki uc",
-  "werNormalizedPredicted": "yaziyor musun arti doksan yuz yirmi",
-  "significantWer": 0.2857142857142857,
+  "werNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "werNormalizedPredicted": "yazıyor musun artı doksan yüz yirmi",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "yaziyor musun arti doksan bir iki uc",
-  "sigWerNormalizedPredicted": "yaziyor musun arti doksan yuz yirmi",
+  "sigWerNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "sigWerNormalizedPredicted": "yazıyor musun artı doksan yüz yirmi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'bir' to 'yuz' at position 4",
-      "reason": "'bir' means 'one' and 'yuz' means 'hundred' in Turkish; substituting a single digit with a completely different number changes the meaning significantly, especially in a sequence of numbers.",
+      "error": "Substitution: 'bir' to 'yüz' at position 4",
+      "reason": "'bir iki üç' means 'one two three', but 'yüz yirmi' means 'one hundred twenty'. This changes the intended number sequence completely, which is significant especially if this is a phone number or code.",
       "score": 1
     },
     {
-      "error": "Deletion: 'uc' at position 6",
-      "reason": "'uc' means 'three' in Turkish and its omission changes the sequence of numbers, which is significant if the numbers are meant to be precise (e.g., a phone number or code).",
+      "error": "Deletion: 'üç' at position 6",
+      "reason": "The number 'üç' (three) is missing, which alters the intended sequence and could cause misunderstanding, especially for numbers or codes.",
       "score": 1
     }
   ]

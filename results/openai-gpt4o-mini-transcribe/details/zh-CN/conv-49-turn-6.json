@@ -1,16 +1,22 @@
 {
   "gold": "你可以确认我的姓名？",
-  "predicted": "你可以确认我的姓名吗?",
+  "predicted": "你可以取人我的姓名。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
-  "werNormalizedGold": "你 可以 确认 我 的 姓名",
-  "werNormalizedPredicted": "你 可以 确认 我 的 姓名",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你可以确认我的姓名",
+  "werNormalizedPredicted": "你可以取人我的姓名",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "你 可 以 确 认 我 的 姓 名",
-  "sigWerNormalizedPredicted": "你 可 以 确 认 我 的 姓 名",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 可 以 取 人 我 的 姓 名",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '确' to '取' at position 3",
+      "reason": "'确' (confirm) and '取' (take) have very different meanings, and this substitution changes the intent of the sentence from confirming to taking, which derails the meaning.",
+      "score": 1
+    }
+  ]
 }

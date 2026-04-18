@@ -1,16 +1,27 @@
 {
   "gold": "君灵，君灵。",
-  "predicted": "转林 转林",
+  "predicted": "Drenlin",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "君灵 君灵",
-  "werNormalizedPredicted": "君灵 君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "drenlin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "君 灵 君 灵",
-  "sigWerNormalizedPredicted": "君 灵 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "drenlin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drenlin' at position 0",
+      "reason": "The expected transcription is in Chinese characters, while the actual transcription is a completely unrelated English-like word. This is a major language and content mismatch, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "The word '灵' is missing from the actual transcription, which further derails the intended meaning and makes the transcription incoherent.",
+      "score": 1
+    }
+  ]
 }

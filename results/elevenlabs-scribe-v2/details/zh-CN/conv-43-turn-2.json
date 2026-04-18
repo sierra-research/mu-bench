@@ -1,16 +1,22 @@
 {
   "gold": "你可以说是的，是，是这样。",
-  "predicted": "嗯嗯嗯，你可以说是的，是是这样的。",
+  "predicted": "嗯嗯嗯，你可以说是的，是，是这样的。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
-  "werNormalizedGold": "你 可以 说 是 的 是 是 这样",
-  "werNormalizedPredicted": "你 可以 说 是 的 是 是 这样",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你可以说是的 是 是这样",
+  "werNormalizedPredicted": "你可以说是的 是 是这样的",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "你 可 以 说 是 的 是 是 这 样",
-  "sigWerNormalizedPredicted": "你 可 以 说 是 的 是 是 这 样",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 可 以 说 是 的 是 是 这 样 的",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '的' at position 10",
+      "reason": "The insertion of '的' at the end does not change the overall meaning of the sentence; it is a common grammatical particle in Chinese that can be optionally used for emphasis or style.",
+      "score": 2
+    }
+  ]
 }

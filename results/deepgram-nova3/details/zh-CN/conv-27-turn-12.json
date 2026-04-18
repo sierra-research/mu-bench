@@ -2,20 +2,35 @@
   "gold": "L E I dot L I N G at E M A I L dot C O M。",
   "predicted": "m一i。ling。",
   "unintelligible": false,
-  "wer": 0.5555555555555556,
-  "werEdits": 10,
+  "wer": 0.8888888888888888,
+  "werEdits": 16,
   "werRefWords": 18,
   "werNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
-  "werNormalizedPredicted": "l e i dot l i n g",
-  "significantWer": 0.05555555555555555,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "m 一 i ling",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
-  "sigWerNormalizedPredicted": "l e i dot l i n g",
+  "sigWerNormalizedPredicted": "m 一 i ling",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'at' at position 8",
-      "reason": "The actual transcription omits the entire email domain ('at e m a i l dot c o m'), which is essential information for an email address. This omission makes the email address incomplete and unusable.",
+      "error": "Deletion: 'l' at position 0",
+      "reason": "The first letter 'l' is missing from the spelled-out email, which changes the email address and makes it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'a' to '一' at position 11",
+      "reason": "'一' is a Chinese character and not a valid letter in an email address, making the transcription incoherent and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'l' to 'ling' at position 13",
+      "reason": "The single letter 'l' is replaced by the word 'ling', which is not a valid substitution in a spelled-out email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 14",
+      "reason": "Missing 'dot' in the email address changes the structure and makes the email invalid.",
       "score": 1
     }
   ]

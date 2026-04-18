@@ -2,30 +2,25 @@
   "gold": "C N 负 0 0。",
   "predicted": "A N400.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werEdits": 4,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
   "werNormalizedGold": "c n 负 零 零",
-  "werNormalizedPredicted": "a n 四百",
-  "significantWer": 0.6,
-  "majorErrorsCount": 3,
+  "werNormalizedPredicted": "a n 四 零 零",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "c n 负 零 零",
-  "sigWerNormalizedPredicted": "a n 四 百",
+  "sigWerNormalizedPredicted": "a n 四 零 零",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'a' at position 0",
-      "reason": "Changing a letter in a spelled-out sequence alters the intended code or word, making it a significant error.",
+      "reason": "In a spelled-out sequence, substituting 'c' with 'a' changes the intended letter, which is a significant error.",
       "score": 1
     },
     {
       "error": "Substitution: '负' to '四' at position 2",
-      "reason": "These are completely different Chinese characters with unrelated meanings ('负' means negative, '四' means four), which significantly changes the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '零' at position 4",
-      "reason": "Omitting a digit in a sequence (especially numbers) changes the value or code, which is a significant error.",
+      "reason": "'负' (negative) and '四' (four) are completely different in meaning, which significantly alters the intended number or value.",
       "score": 1
     }
   ]

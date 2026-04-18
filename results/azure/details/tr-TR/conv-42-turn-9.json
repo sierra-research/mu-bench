@@ -2,25 +2,25 @@
   "gold": "Artı 90 123 0 90 45 67.",
   "predicted": "+ 90 120, 3 Ağustos 9045 67.",
   "unintelligible": false,
-  "wer": 0.45454545454545453,
-  "werEdits": 5,
-  "werRefWords": 11,
-  "werNormalizedGold": "artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "artı doksan bir yüz yirmi üç ağustos dokuz bin kırk beş altmış yedi",
-  "significantWer": 0.18181818181818182,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "artı doksan yüz yirmi üç ağustos dokuz bin kırk beş altmış yedi",
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "artı doksan bir yüz yirmi üç ağustos dokuz bin kırk beş altmış yedi",
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "artı doksan yüz yirmi üç ağustos dokuz bin kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'iki' to 'yirmi' at position 3",
-      "reason": "'yüz' (one hundred) is inserted where the expected sequence is a string of single digits, which changes the intended number sequence significantly.",
+      "error": "Deletion: 'bir' at position 2",
+      "reason": "Omitting 'bir' (one) changes the numeric sequence, which is likely a phone number or code. This is a significant error as it alters the intended number.",
       "score": 1
     },
     {
-      "error": "Substitution: 'sıfır' to 'dokuz' at position 5",
-      "reason": "'iki' (two) is replaced with 'yirmi' (twenty), which alters the number sequence and changes the meaning significantly.",
+      "error": "Substitution: 'sıfır' to 'dokuz' at position 6",
+      "reason": "Inserting 'ağustos' (August) introduces an unrelated word into a numeric sequence, making the transcription incoherent and derailing the meaning.",
       "score": 1
     }
   ]

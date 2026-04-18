@@ -1,26 +1,26 @@
 {
   "gold": "Takip kodu C N 1 1 0. Doğru mudur?",
-  "predicted": "Hakim kodu CN1140 doğru mudur?",
+  "predicted": "Hakip kodu CN1140'a doğru mudur?",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "takip kodu c n one one zero dogru mudur",
-  "werNormalizedPredicted": "hakim kodu c n one one four zero dogru mudur",
-  "significantWer": 0.2222222222222222,
+  "werNormalizedGold": "takip kodu c n bir bir sıfır doğru mudur",
+  "werNormalizedPredicted": "hakip kodu c n bir bir dört sıfıra doğru mudur",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "takip kodu c n one one zero dogru mudur",
-  "sigWerNormalizedPredicted": "hakim kodu c n one one four zero dogru mudur",
+  "sigWerNormalizedGold": "takip kodu c n bir bir sıfır doğru mudur",
+  "sigWerNormalizedPredicted": "hakip kodu c n bir bir dört sıfıra doğru mudur",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'takip' to 'hakim' at position 0",
-      "reason": "'takip kodu' means 'tracking code' while 'hakim kodu' means 'judge code'; this changes the subject and meaning of the sentence significantly.",
+      "error": "Substitution: 'takip' to 'hakip' at position 0",
+      "reason": "'takip' and 'hakip' are different words; 'takip' means 'tracking' in Turkish, while 'hakip' is not a valid word and could confuse the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Insertion: 'four' at position 6",
-      "reason": "Adding 'four' changes the code sequence, which is critical information in this context, making it a significant error.",
+      "error": "Substitution: 'sıfır' to 'sıfıra' at position 6",
+      "reason": "The insertion of 'dört' (which means 'four') changes the code being referenced, which is critical information in this context.",
       "score": 1
     }
   ]

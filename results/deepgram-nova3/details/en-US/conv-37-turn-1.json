@@ -2,15 +2,26 @@
   "gold": "Sorry. I have some background noise. My T V is on. Yeah. I'm ready.",
   "predicted": "Sorry. I have some background noise. My TV is on. Yeah. I'm ready.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.13333333333333333,
+  "werEdits": 2,
   "werRefWords": 15,
   "werNormalizedGold": "sorry i have some background noise my t v is on yeah i am ready",
-  "werNormalizedPredicted": "sorry i have some background noise my t v is on yeah i am ready",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "sorry i have some background noise my tv is on yeah i am ready",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "sorry i have some background noise my t v is on yeah i am ready",
-  "sigWerNormalizedPredicted": "sorry i have some background noise my t v is on yeah i am ready",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sorry i have some background noise my tv is on yeah i am ready",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 't' to 'tv' at position 7",
+      "reason": "'t v' and 'tv' are equivalent; the only difference is spacing, which should be ignored according to the guidance.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'v' at position 8",
+      "reason": "'t v' and 'tv' are equivalent; the only difference is spacing, which should be ignored according to the guidance.",
+      "score": 3
+    }
+  ]
 }

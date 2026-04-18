@@ -2,21 +2,26 @@
   "gold": "Muy bien. ¿Me podrías dar el código, por favor?",
   "predicted": "Muy bien, ¿me podría dar el código, por favor?",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
-  "werNormalizedGold": "muy bien me podrias dar el codigo por favor",
+  "werNormalizedGold": "muy bien me podrías dar el código por favor",
   "werNormalizedPredicted": "muy bien me podria dar el codigo por favor",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "muy bien me podrias dar el codigo por favor",
+  "sigWerNormalizedGold": "muy bien me podrías dar el código por favor",
   "sigWerNormalizedPredicted": "muy bien me podria dar el codigo por favor",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'podrias' to 'podria' at position 3",
-      "reason": "The difference is between 'podrias' (you could) and 'podria' (I/he/she/it could). This changes the subject of the request but does not derail the overall meaning of the sentence, which is still a polite request for the code.",
-      "score": 2
+      "error": "Substitution: 'podrías' to 'podria' at position 3",
+      "reason": "Missing accent on 'i' in 'podrías' does not change the meaning in context, as the word is still clearly understood as the verb form.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'código' to 'codigo' at position 6",
+      "reason": "Missing accent on 'o' in 'código' does not change the meaning; the word is still clearly understood as 'code'.",
+      "score": 3
     }
   ]
 }

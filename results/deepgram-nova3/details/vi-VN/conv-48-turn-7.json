@@ -2,15 +2,41 @@
   "gold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Số điện thoại là cộng tám mươi bốn chín trăm mười một hai trăm ba mươi bốn năm trăm sáu mươi bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
   "werRefWords": 18,
   "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín trăm mười một hai trăm ba mươi bốn năm trăm sáu mươi bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín trăm mười một hai trăm ba mươi bốn năm trăm sáu mươi bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'một' to 'mười' at position 9",
+      "reason": "Inserting 'trăm' (hundred) changes the number structure, resulting in a completely different phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'trăm' at position 12",
+      "reason": "Substituting 'một' (one) with 'mười' (ten) changes the digit in the phone number, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 13",
+      "reason": "Inserting 'trăm' (hundred) alters the number sequence, resulting in an incorrect phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'trăm' at position 15",
+      "reason": "Inserting 'mươi' (ten) changes the number grouping, making the phone number incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 16",
+      "reason": "Inserting 'trăm' (hundred) again changes the digit grouping, resulting in a wrong phone number.",
+      "score": 1
+    }
+  ]
 }

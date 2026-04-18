@@ -3,15 +3,15 @@
   "predicted": "Hi, you're from Olympia.",
   "unintelligible": false,
   "wer": 1.0,
-  "werEdits": 9,
-  "werRefWords": 9,
-  "werNormalizedGold": "哎呀 你 有 什么 问题 啊",
-  "werNormalizedPredicted": "hi you are from olympia",
-  "significantWer": 0.2222222222222222,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "哎呀你有什么问题",
+  "werNormalizedPredicted": "hi you re from olympia",
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 啊",
-  "sigWerNormalizedPredicted": "hi you are from olympia",
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "hi you re from olympia",
   "sigWerErrors": [
     {
       "error": "Substitution: '哎' to 'hi' at position 0",
@@ -20,7 +20,7 @@
     },
     {
       "error": "Deletion: '么' at position 5",
-      "reason": "The word '么' is missing and the actual transcription is in a different language, so the meaning is lost.",
+      "reason": "The expected word is missing entirely in the actual transcription, which is also in a different language, making this a significant error.",
       "score": 1
     }
   ]

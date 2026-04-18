@@ -7,21 +7,21 @@
   "werRefWords": 14,
   "werNormalizedGold": "tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê",
   "werNormalizedPredicted": "tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kề",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê",
   "sigWerNormalizedPredicted": "tôi muốn nói chuyện với nhân viên trực tiếp để sinh cái sao kề",
   "sigWerErrors": [
     {
       "error": "Substitution: 'xin' to 'sinh' at position 10",
-      "reason": "'xin' means 'to request' while 'sinh' means 'to give birth' in Vietnamese; this changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "reason": "'xin' means 'to request' or 'to ask for', while 'sinh' means 'to give birth' or 'to generate'. This changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
     },
     {
       "error": "Substitution: 'kê' to 'kề' at position 13",
-      "reason": "'kê' (as in 'sao kê', meaning 'statement' or 'account statement') is a specific banking term, while 'kề' is a different word with a different meaning; this substitution makes the phrase incorrect but the intent is still somewhat understandable in context.",
-      "score": 2
+      "reason": "'kê' (in 'sao kê') means 'statement' (as in bank statement), while 'kề' means 'next to' or 'beside'. This substitution changes the meaning of the phrase and makes the sentence incorrect in context.",
+      "score": 1
     }
   ]
 }

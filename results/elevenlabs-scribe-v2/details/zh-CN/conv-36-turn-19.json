@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "你好",
   "werNormalizedPredicted": "是 好",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '是' at position 0",
-      "reason": "'你' means 'you' and '是' means 'is/are', so the subject of the sentence is changed, resulting in a significant change in meaning.",
+      "reason": "'你' means 'you' and '是' means 'is/are/am' in Chinese. Substituting 'you' with 'is' changes the subject of the sentence and makes the greeting incoherent, significantly altering the meaning.",
       "score": 1
     }
   ]

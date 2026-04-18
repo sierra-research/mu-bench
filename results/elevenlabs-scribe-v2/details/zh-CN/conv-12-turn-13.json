@@ -1,16 +1,27 @@
 {
   "gold": "君灵 at email dot com。",
-  "predicted": "junliang at email dot com",
+  "predicted": "junliang at email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "junliang at email dot com",
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君灵 at email dot com",
   "werNormalizedPredicted": "junliang at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "junliang at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 灵 at email dot com",
   "sigWerNormalizedPredicted": "junliang at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junliang' at position 0",
+      "reason": "'君' is a Chinese character, while 'junliang' is a romanized name. The substitution changes the language and the representation of the name, which could lead to confusion or incorrect identification, especially in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "The character '灵' is missing from the actual transcription, which significantly alters the intended name or email address, making it a major error for identification purposes.",
+      "score": 1
+    }
+  ]
 }

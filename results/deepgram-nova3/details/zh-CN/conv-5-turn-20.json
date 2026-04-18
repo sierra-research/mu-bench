@@ -2,15 +2,31 @@
   "gold": "是君玲 at email dot com。",
   "predicted": "是junlingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "是君玲 at email dot com",
-  "werNormalizedPredicted": "是君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是 junling email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "是 君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 junling email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junling' at position 1",
+      "reason": "'君' is a Chinese character, while 'junling' is a pinyin or romanized form that combines both '君' and '玲', losing the distinction between the two separate characters. This could cause confusion in an email address or name context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "'玲' is omitted in the actual transcription, which changes the intended name or email address, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 5",
+      "reason": "Omitting 'dot' in an email address changes the structure and could make the email invalid or unusable.",
+      "score": 1
+    }
+  ]
 }

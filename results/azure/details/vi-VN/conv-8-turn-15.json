@@ -2,20 +2,25 @@
   "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
   "predicted": "Chưa đầy đủ cái là 1 2 3 đường lê lợi Hồ Chí Minh city sit cốt là 700.000 Việt Nam.",
   "unintelligible": false,
-  "wer": 0.043478260869565216,
-  "werEdits": 1,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
   "werRefWords": 23,
   "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "werNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "significantWer": 0.043478260869565216,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lê lợi hồ chí minh city sit cốt là bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "sigWerNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lê lợi hồ chí minh city sit cốt là bảy trăm nghìn việt nam",
   "sigWerErrors": [
     {
       "error": "Substitution: 'phải' to 'cái' at position 3",
-      "reason": "'phải' means 'must' or 'should', while 'cái' is a classifier or means 'thing'; this changes the meaning of the sentence and makes it less coherent.",
+      "reason": "'phải' means 'must' or 'should', while 'cái' is a classifier or means 'thing'. This changes the meaning of the sentence and makes it less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zip' to 'sit' at position 15",
+      "reason": "'zip code' is a standard term, while 'sit cốt' is not meaningful in this context and confuses the meaning of the address.",
       "score": 1
     }
   ]

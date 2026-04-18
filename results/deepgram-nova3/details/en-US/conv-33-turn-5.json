@@ -2,15 +2,21 @@
   "gold": "Ashley dot Brown at email dot com.",
   "predicted": "Ashley dot brown at g mail dot com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "ashley dot brown at email dot com",
-  "werNormalizedPredicted": "ashley dot brown at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "ashley dot brown at g mail dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "ashley dot brown at email dot com",
-  "sigWerNormalizedPredicted": "ashley dot brown at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ashley dot brown at g mail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'mail' at position 4",
+      "reason": "The insertion of 'g' changes the email domain from 'email.com' to 'gmail.com', which is a completely different address and could result in the message being sent to the wrong recipient.",
+      "score": 1
+    }
+  ]
 }

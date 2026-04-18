@@ -2,20 +2,30 @@
   "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
   "predicted": "Email daha vermedim. Tekrar email vereyim ben sana. Ahmet.aslan arslan@email.com",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 2,
+  "wer": 0.45,
+  "werEdits": 9,
   "werRefWords": 20,
   "werNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "werNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta aslan arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "sigWerNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "email daha vermedim tekrar email vereyim ben sana ahmet nokta aslan arslan at email nokta com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vermedin' to 'tekrar' at position 2",
-      "reason": "'vermedin' (you didn't give) vs 'vermedim' (I didn't give) changes the subject of the sentence, but the overall meaning is still clear in context. Minor error.",
+      "reason": "'vermedim' (I did not give) is inserted, but the expected word is 'vermedin' (you did not give). This changes the subject from 'you' to 'I', which can confuse the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'aslan' at position 9",
+      "reason": "'vermedin' (you did not give) is replaced by 'tekrar' (again), which changes the meaning of the sentence significantly, as it removes the reference to the previous action and instead adds a repetition.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 10",
+      "reason": "'aslan' is inserted before the spelled-out 'arslan', which could cause confusion in the email address, but since 'aslan' and 'arslan' are similar and the spelled-out version follows, the meaning is mostly preserved.",
       "score": 2
     }
   ]

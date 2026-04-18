@@ -6,25 +6,20 @@
   "werEdits": 5,
   "werRefWords": 16,
   "werNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
-  "werNormalizedPredicted": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş bin altı yüz on beş",
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş altı yüz on beş",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
-  "sigWerNormalizedPredicted": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş bin altı yüz on beş",
+  "sigWerNormalizedPredicted": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş altı yüz on beş",
   "sigWerErrors": [
     {
       "error": "Insertion: 'iki' at position 10",
-      "reason": "'iki' (two hundred) changes the reference number from 'yirmi iki' (twenty two) to 'iki yüz yirmi beş' (two hundred twenty five), which is a significant change in the number and alters the meaning.",
+      "reason": "The reference numbers are completely different; the actual transcription gives a different set of numbers, which would result in referencing the wrong information. This is a significant error as it changes the meaning and function of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'iki' to 'beş' at position 11",
-      "reason": "The expected number 'yirmi iki elli altı' (2256) is replaced with 'iki yüz yirmi beş bin altı yüz' (225600), which is a completely different number and significantly changes the reference number.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'yüz' at position 14",
       "reason": "infra_error",
       "score": 2
     }

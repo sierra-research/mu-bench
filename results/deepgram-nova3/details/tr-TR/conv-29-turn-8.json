@@ -2,20 +2,25 @@
   "gold": "Tabii ki. Artı 90 123 0 90 45 67.",
   "predicted": "Tabii ki, sıfır doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
-  "werRefWords": 13,
-  "werNormalizedGold": "tabii ki arti doksan bir iki üç sifir doksan kirk bes altmis yedi",
-  "werNormalizedPredicted": "tabii ki sifir doksan bir iki üç sifir doksan kirk bes altmis yedi",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "tabii ki arti doksan bir iki üç sifir doksan kirk bes altmis yedi",
-  "sigWerNormalizedPredicted": "tabii ki sifir doksan bir iki üç sifir doksan kirk bes altmis yedi",
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii ki sıfır doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii ki sıfır doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'arti' to 'sifir' at position 2",
-      "reason": "'Arti' means 'plus' and 'sifir' means 'zero' in Turkish; substituting 'plus' with 'zero' changes the meaning of the sequence of numbers, which could be critical in contexts like phone numbers or codes.",
+      "error": "Substitution: 'artı' to 'sıfır' at position 2",
+      "reason": "'artı' (plus) and 'sıfır' (zero) are completely different; 'artı' is the country code prefix, while 'sıfır' is a digit. This changes the meaning of the phone number significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 4",
+      "reason": "Omitting 'bir' (one) from the phone number changes the actual number, which is a significant error for phone numbers.",
       "score": 1
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 4,
   "werNormalizedGold": "cảm ơn cảm ơn",
   "werNormalizedPredicted": "vâng",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "cảm ơn cảm ơn",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'cảm' to 'vâng' at position 0",
-      "reason": "'cảm ơn' means 'thank you' in Vietnamese, while 'vâng' means 'yes'. This changes the meaning of the sentence completely.",
+      "reason": "'cảm ơn' means 'thank you' in Vietnamese, while 'vâng' means 'yes'. This substitution changes the meaning of the sentence completely.",
       "score": 1
     },
     {
       "error": "Deletion: 'ơn' at position 1",
-      "reason": "The word 'ơn' is missing, so the phrase 'cảm ơn' (thank you) is incomplete and the meaning is lost.",
+      "reason": "The word 'ơn' is missing, which is essential to the phrase 'cảm ơn' (thank you). Its deletion results in a loss of the intended meaning.",
       "score": 1
     }
   ]

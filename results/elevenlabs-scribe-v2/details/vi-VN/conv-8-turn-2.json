@@ -5,17 +5,22 @@
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "san sang",
-  "werNormalizedPredicted": "a sensei",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "sẵn sàng",
+  "werNormalizedPredicted": "sensei",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "san sang",
-  "sigWerNormalizedPredicted": "a sensei",
+  "sigWerNormalizedGold": "sẵn sàng",
+  "sigWerNormalizedPredicted": "sensei",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'san' to 'a' at position 0",
-      "reason": "'san' and 'a' are completely different words with unrelated meanings, which changes the meaning of the phrase significantly.",
+      "error": "Substitution: 'sẵn' to 'sensei' at position 0",
+      "reason": "'sensei' is a completely different word in a different language from 'sẵn', which changes the meaning entirely and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 1",
+      "reason": "The word 'sàng' is missing, which further derails the intended meaning of the phrase.",
       "score": 1
     }
   ]

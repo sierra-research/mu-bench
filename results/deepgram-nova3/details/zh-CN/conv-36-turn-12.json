@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "你好",
   "werNormalizedPredicted": "一",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '一' at position 0",
-      "reason": "'你' (you) and '一' (one) are completely different words with unrelated meanings, which makes the sentence incoherent.",
+      "reason": "'你' (you) is substituted with '一' (one), which is a completely different word and changes the meaning of the greeting to something incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "Omitting '好' (good/hello) removes the greeting, making the sentence incomplete and changing its meaning significantly.",
+      "reason": "The word '好' (good) is missing, so the greeting is incomplete and the meaning is lost.",
       "score": 1
     }
   ]

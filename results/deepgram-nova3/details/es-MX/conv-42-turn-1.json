@@ -2,20 +2,25 @@
   "gold": "Sí, a ver dame un momento porque necesito abrir mi computadora para anotarlo.",
   "predicted": "Sí, da, a ver, dame un momento, porque necesito abrir mi computadora para anotarlo, ¿ok?",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "si a ver dame un momento porque necesito abrir mi computadora para anotarlo",
-  "werNormalizedPredicted": "si a ver dame un momento porque necesito abrir mi computadora para anotarlo okay",
-  "significantWer": 0.0,
+  "werNormalizedGold": "sí a ver dame un momento porque necesito abrir mi computadora para anotarlo",
+  "werNormalizedPredicted": "sí da a ver dame un momento porque necesito abrir mi computadora para anotarlo okay",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "si a ver dame un momento porque necesito abrir mi computadora para anotarlo",
-  "sigWerNormalizedPredicted": "si a ver dame un momento porque necesito abrir mi computadora para anotarlo okay",
+  "sigWerNormalizedGold": "sí a ver dame un momento porque necesito abrir mi computadora para anotarlo",
+  "sigWerNormalizedPredicted": "sí da a ver dame un momento porque necesito abrir mi computadora para anotarlo okay",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'da' at position 1",
+      "reason": "'da' is inserted after 'sí', but does not significantly change the meaning of the sentence. The overall intent and information remain the same.",
+      "score": 2
+    },
+    {
       "error": "Insertion: 'okay' at position 13",
-      "reason": "The word 'okay' is added at the end but does not change the meaning of the sentence; it is a minor addition that does not derail or alter the intent.",
+      "reason": "'okay' is added at the end as a discourse marker, which does not affect the meaning of the main sentence.",
       "score": 2
     }
   ]

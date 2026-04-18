@@ -1,16 +1,32 @@
 {
   "gold": "Tôi bị làm mất thẻ, tuần trước có xin cấp thẻ mới. Nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào?",
-  "predicted": "Ờm, tôi muốn, a, tôi, tôi bị, bị làm mất thẻ ạ. Ờ, tuần trước có xin cấp thẻ mới, nhưng mààà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào.",
+  "predicted": "Ờm, tôi muốn, a, tôi, tôi bị, bị làm mất thẻ ạ. Ờ, tuần trước có xin cấp thẻ mới, nhưng màaa chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1724137931034483,
+  "werEdits": 5,
   "werRefWords": 29,
   "werNormalizedGold": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "werNormalizedPredicted": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tôi muốn tôi tôi bị bị làm mất thẻ ạ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 29,
   "sigWerNormalizedGold": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "sigWerNormalizedPredicted": "tôi bị làm mất thẻ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi muốn tôi tôi bị bị làm mất thẻ ạ tuần trước có xin cấp thẻ mới nhưng mà chưa thấy phản hồi gì thì muốn hỏi xem tình trạng thẻ như thế nào",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'muốn' at position 1",
+      "reason": "The word 'muốn' (want) is inserted at the beginning, but the rest of the sentence still communicates the main issue about losing the card and asking about its status. The meaning is not derailed, just a redundant phrase.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'bị' at position 2",
+      "reason": "The word 'bị' (suffered) is repeated, which is redundant but does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'ạ' at position 5",
+      "reason": "The word 'ạ' is a polite particle in Vietnamese, and its insertion does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

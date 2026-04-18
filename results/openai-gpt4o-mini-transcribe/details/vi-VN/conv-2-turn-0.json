@@ -1,16 +1,27 @@
 {
   "gold": "Xin chào. Muốn nâng hạn mức của thẻ tín dụng.",
-  "predicted": "Xin chào ạ, muốn nâng hạng mức cổ thể tuyển dụng",
+  "predicted": "Xin chào ạ, muốn nâng hạng mức cổ để tuyển dụng.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "werNormalizedPredicted": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "xin chào muốn nâng hạng mức cổ để tuyển dụng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "sigWerNormalizedPredicted": "xin chào muốn nâng hạn mức của thẻ tín dụng",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "xin chào muốn nâng hạng mức cổ để tuyển dụng",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hạn' to 'hạng' at position 4",
+      "reason": "'hạn mức' means 'credit limit', while 'hạng mức' is not a standard phrase and changes the meaning, making the sentence unclear or incorrect in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'của' to 'cổ' at position 6",
+      "reason": "'của' means 'of', which is necessary for the phrase 'of the credit card', while 'cổ' means 'neck' or 'old', which makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

@@ -1,16 +1,27 @@
 {
   "gold": "C N 211.",
-  "predicted": "Cne iki yüz on bir.",
+  "predicted": "Cne iki yüz eleven",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "c n two hundred eleven",
-  "werNormalizedPredicted": "c n two hundred eleven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n iki bir bir",
+  "werNormalizedPredicted": "c n e iki yüz on bir",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n two hundred eleven",
-  "sigWerNormalizedPredicted": "c n two hundred eleven",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n iki bir bir",
+  "sigWerNormalizedPredicted": "c n e iki yüz on bir",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'e' at position 2",
+      "reason": "'e' is an extra letter inserted in a sequence that appears to be a spelled-out or code sequence, which can significantly alter the intended meaning or code.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bir' to 'on' at position 3",
+      "reason": "'yüz' (meaning 'hundred' in Turkish) is inserted, which changes the numeric value being conveyed, resulting in a significant change in meaning.",
+      "score": 1
+    }
+  ]
 }

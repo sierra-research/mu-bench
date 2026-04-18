@@ -2,26 +2,31 @@
   "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
   "predicted": "Chưa đầy đủ cái là một hai ba đường lưu lợi Hồ Chí Minh City Zippo code là bảy trăm nghìn Việt Nam",
   "unintelligible": false,
-  "wer": 0.08695652173913043,
-  "werEdits": 2,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
   "werRefWords": 23,
   "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "werNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lưu lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "significantWer": 0.043478260869565216,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lưu lợi hồ chí minh city zippo code là bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
-  "sigWerNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lưu lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chưa đầy đủ cái là một hai ba đường lưu lợi hồ chí minh city zippo code là bảy trăm nghìn việt nam",
   "sigWerErrors": [
     {
       "error": "Substitution: 'phải' to 'cái' at position 3",
-      "reason": "'phải' means 'must' or 'should', while 'cái' is a classifier or means 'thing'; this changes the structure and meaning of the sentence, making it less coherent.",
+      "reason": "'phải' means 'must' or 'should', while 'cái' is a classifier or means 'thing'; this changes the meaning of the sentence and makes it less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'lê' to 'lưu' at position 9",
-      "reason": "'lê lợi' is a proper noun (a street name), while 'lưu lợi' is not a recognized street name and changes the intended address, but the overall meaning (an address) is still somewhat clear.",
+      "reason": "'lê lợi' is a proper noun (a street name), while 'lưu lợi' is not a recognized street name and changes the reference.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'zip' to 'zippo' at position 15",
+      "reason": "'zip code' is a standard term for postal code, while 'zippo code' is not a valid term and could confuse the meaning.",
+      "score": 1
     }
   ]
 }

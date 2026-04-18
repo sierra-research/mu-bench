@@ -1,26 +1,21 @@
 {
   "gold": "Qua ứng dụng đi.",
-  "predicted": "Ờ, quán giống đi",
+  "predicted": "Ờ, qua ăn uống đi",
   "unintelligible": false,
-  "wer": 0.75,
-  "werEdits": 3,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "qua ứng dụng đi",
-  "werNormalizedPredicted": "quán giống đi",
-  "significantWer": 0.5,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "qua ăn uống đi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "qua ứng dụng đi",
-  "sigWerNormalizedPredicted": "quán giống đi",
+  "sigWerNormalizedPredicted": "qua ăn uống đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'qua' to 'quán' at position 0",
-      "reason": "'quán' (shop/restaurant) is a completely different word from 'qua' (through/via), which changes the meaning of the sentence significantly.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'dụng' at position 2",
-      "reason": "Omitting 'dụng' (from 'ứng dụng' meaning 'application/app') removes the reference to the app, making the sentence unclear and changing its meaning.",
+      "error": "Substitution: 'ứng' to 'ăn' at position 1",
+      "reason": "'ứng dụng' means 'application' while 'ăn uống' means 'eating and drinking'; this substitution changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

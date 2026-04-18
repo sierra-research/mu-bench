@@ -2,20 +2,30 @@
   "gold": "Tên đầy đủ là Trần Minh.",
   "predicted": "Đây đầy đủ là Tranmin",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 1,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
-  "werNormalizedGold": "ten day du la tran minh",
-  "werNormalizedPredicted": "day day du la tran minh",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tên đầy đủ là trần minh",
+  "werNormalizedPredicted": "đây đầy đủ là tranmin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "ten day du la tran minh",
-  "sigWerNormalizedPredicted": "day day du la tran minh",
+  "sigWerNormalizedGold": "tên đầy đủ là trần minh",
+  "sigWerNormalizedPredicted": "đây đầy đủ là tranmin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ten' to 'day' at position 0",
-      "reason": "'ten' (which could mean 'name' in Vietnamese) is replaced by 'day' (which could mean 'this'), changing the meaning of the sentence and making it incoherent in context.",
+      "error": "Substitution: 'tên' to 'đây' at position 0",
+      "reason": "'tên' means 'name', while 'đây' means 'here'; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'tranmin' at position 4",
+      "reason": "'trần' is a Vietnamese surname, while 'tranmin' appears to be a misspelling or merging of 'trần minh'; this makes the name unclear but still somewhat recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'minh' at position 5",
+      "reason": "Omitting 'minh' removes part of the full name, which is important information.",
       "score": 1
     }
   ]

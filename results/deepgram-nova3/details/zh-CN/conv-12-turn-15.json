@@ -2,20 +2,30 @@
   "gold": "君灵 at email dot com 已经说了。",
   "predicted": "juneingethinotcrom已经热了。",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.7,
+  "werEdits": 7,
   "werRefWords": 10,
   "werNormalizedGold": "君灵 at email dot com 已经说了",
-  "werNormalizedPredicted": "君灵 at email dot com 已经热了",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "juneingethinotcrom 已经热了",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了",
-  "sigWerNormalizedPredicted": "君 灵 at email dot com 已 经 热 了",
+  "sigWerNormalizedPredicted": "juneingethinotcrom 已 经 热 了",
   "sigWerErrors": [
     {
+      "error": "Substitution: '君' to 'juneingethinotcrom' at position 0",
+      "reason": "The expected word is a Chinese name, but the actual is a long, unrelated string in a different language/script, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "A key part of the name is missing, which significantly alters the intended meaning and identification.",
+      "score": 1
+    },
+    {
       "error": "Substitution: '说' to '热' at position 8",
-      "reason": "'说' means 'said' or 'speak', while '热' means 'hot'. This substitution changes the meaning of the sentence and makes it incoherent in context, as 'hot' does not fit where 'said' is expected.",
+      "reason": "The words have completely different meanings ('said' vs 'hot'), which changes the meaning of the sentence.",
       "score": 1
     }
   ]

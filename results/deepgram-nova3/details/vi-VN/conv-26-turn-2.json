@@ -2,15 +2,26 @@
   "gold": "C N 8 4 5.",
   "predicted": "CNtám trăm bốn mươi lăm",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "c n eight four five",
-  "werNormalizedPredicted": "c n eight four five",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n tám bốn năm",
+  "werNormalizedPredicted": "c n tám trăm bốn mươi lăm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n eight four five",
-  "sigWerNormalizedPredicted": "c n eight four five",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n tám bốn năm",
+  "sigWerNormalizedPredicted": "c n tám trăm bốn mươi lăm",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 3",
+      "reason": "'trăm' means 'hundred', which changes the number from 84 5 to 800-something, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'năm' to 'lăm' at position 4",
+      "reason": "'mươi' is used to form numbers like 'forty', further changing the number structure and meaning.",
+      "score": 1
+    }
+  ]
 }

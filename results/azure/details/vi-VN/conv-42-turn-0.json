@@ -2,21 +2,36 @@
   "gold": "Tôi muốn xin cấp thẻ mới. Muốn biết tình trạng thẻ như thế nào? Đã xin rồi.",
   "predicted": "Tôi muốn là xin cấp thẻ mới và muốn biết cái tình trạng thẻ như thế nào đã sinh rồi.",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werEdits": 1,
+  "wer": 0.23529411764705882,
+  "werEdits": 4,
   "werRefWords": 17,
   "werNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
-  "werNormalizedPredicted": "tôi muốn xin cấp thẻ mới và muốn biết tình trạng thẻ như thế nào đã xin rồi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi muốn là xin cấp thẻ mới và muốn biết cái tình trạng thẻ như thế nào đã sinh rồi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
-  "sigWerNormalizedPredicted": "tôi muốn xin cấp thẻ mới và muốn biết tình trạng thẻ như thế nào đã xin rồi",
+  "sigWerNormalizedPredicted": "tôi muốn là xin cấp thẻ mới và muốn biết cái tình trạng thẻ như thế nào đã sinh rồi",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'là' at position 2",
+      "reason": "'là' (is) is a filler word here and does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
       "error": "Insertion: 'và' at position 6",
-      "reason": "The insertion of 'và' (which means 'and') does not change the overall meaning of the sentence. It simply adds a conjunction, making the sentence slightly more fluent but not altering its intent or information.",
-      "score": 2
+      "reason": "'và' (and) is a minor connector that does not alter the intent or meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'cái' at position 8",
+      "reason": "'cái' is a classifier in Vietnamese and its presence does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'xin' to 'sinh' at position 15",
+      "reason": "'xin' (to request/apply) and 'sinh' (to be born) are completely different words; this changes the meaning of the sentence significantly.",
+      "score": 1
     }
   ]
 }

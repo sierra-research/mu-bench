@@ -1,22 +1,27 @@
 {
   "gold": "不用了谢谢。",
-  "predicted": "哎呦啊,谢谢。",
+  "predicted": "好的,谢谢。",
   "unintelligible": false,
   "wer": 0.6,
   "werEdits": 3,
   "werRefWords": 5,
   "werNormalizedGold": "不用了谢谢",
-  "werNormalizedPredicted": "谢谢",
-  "significantWer": 0.2,
+  "werNormalizedPredicted": "好的 谢谢",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "不 用 了 谢 谢",
-  "sigWerNormalizedPredicted": "谢 谢",
+  "sigWerNormalizedPredicted": "好 的 谢 谢",
   "sigWerErrors": [
     {
-      "error": "Deletion: '不' at position 0",
-      "reason": "The omission of '不' ('no' or 'not') changes the meaning from a polite refusal ('no need, thank you') to just 'thank you', which is a significant change in intent.",
+      "error": "Substitution: '不' to '好' at position 0",
+      "reason": "'不' means 'no' or 'not', while '好' means 'okay' or 'good'; this changes the intent from refusal to agreement, which is a significant change in meaning.",
       "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 2",
+      "reason": "'了' indicates completion or change of state in Chinese; omitting it slightly changes the nuance but does not drastically alter the meaning in this context.",
+      "score": 2
     }
   ]
 }

@@ -2,40 +2,35 @@
   "gold": "Tabii ek bilgi alırım o zaman sizden, eğer aktarılıyorsa. Ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim?",
   "predicted": "Tabii, bilgi alayım o zaman sizden eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
   "unintelligible": false,
-  "wer": 0.23809523809523808,
-  "werEdits": 5,
+  "wer": 0.19047619047619047,
+  "werEdits": 4,
   "werRefWords": 21,
-  "werNormalizedGold": "tabii ek bilgi alirim o zaman sizden eger aktariliyorsa ben eger otomatik odeme yaparsam limitim yetmedigi takdirde nasil bir yol izlemeliyim",
-  "werNormalizedPredicted": "tabii bilgi alayim o zaman sizden eger aktaramiyorsaniz ben eger otomatik odeme yaparsam limitimin yetmedigi takdirde nasil bir sey yol izlemeliyim",
-  "significantWer": 0.047619047619047616,
+  "werNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "werNormalizedPredicted": "tabii bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "tabii ek bilgi alirim o zaman sizden eger aktariliyorsa ben eger otomatik odeme yaparsam limitim yetmedigi takdirde nasil bir yol izlemeliyim",
-  "sigWerNormalizedPredicted": "tabii bilgi alayim o zaman sizden eger aktaramiyorsaniz ben eger otomatik odeme yaparsam limitimin yetmedigi takdirde nasil bir sey yol izlemeliyim",
+  "sigWerNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "sigWerNormalizedPredicted": "tabii bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
   "sigWerErrors": [
     {
       "error": "Deletion: 'ek' at position 1",
-      "reason": "'ek bilgi' means 'additional information'; omitting 'ek' changes the meaning to just 'information', which is a minor change but does not derail the sentence.",
+      "reason": "'ek bilgi' (additional information) is reduced to just 'bilgi' (information), which slightly reduces the specificity but does not derail the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'alirim' to 'alayim' at position 3",
-      "reason": "'alirim' (I will take) vs 'alayim' (let me take) are similar in meaning and intent in this context; the overall meaning is preserved.",
+      "error": "Substitution: 'alırım' to 'alayım' at position 3",
+      "reason": "'alırım' (I will get) and 'alayım' (let me get) are close in meaning and intent in this context, both expressing a request for information.",
       "score": 3
     },
     {
-      "error": "Substitution: 'aktariliyorsa' to 'aktaramiyorsaniz' at position 8",
-      "reason": "'aktariliyorsa' means 'if it can be transferred', while 'aktaramiyorsaniz' means 'if you cannot transfer'; this changes the condition and reverses the meaning, which is a significant error.",
+      "error": "Substitution: 'aktarılıyorsa' to 'aktaramıyorsanız' at position 8",
+      "reason": "'aktarılıyorsa' (if it is being transferred) and 'aktaramıyorsanız' (if you cannot transfer) are opposite in meaning, which changes the condition and could confuse the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'limitim' to 'limitimin' at position 14",
-      "reason": "Adding the possessive suffix '-in' ('my limit' vs 'of my limit') is a minor grammatical difference and does not change the meaning.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'sey' at position 19",
-      "reason": "Inserting 'sey' ('thing') adds a filler word but does not change the meaning of the sentence.",
+      "reason": "The difference is a possessive suffix, both refer to 'my limit' and do not change the meaning in this context.",
       "score": 3
     }
   ]

@@ -5,27 +5,27 @@
   "wer": 0.23529411764705882,
   "werEdits": 8,
   "werRefWords": 34,
-  "werNormalizedGold": "tu tu so dien thoai khong chinh xac so dien thoai nghe lai lan nua ne so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "sorry so dien thoai tu tu tu tu tu so dien thoai khong co chinh xac so dien thoai nghe lai lan nua ne so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "significantWer": 0.029411764705882353,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "từ từ số điện thoại không chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "sorry số điện thoại từ từ từ từ từ số điện thoại không có chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 34,
-  "sigWerNormalizedGold": "tu tu so dien thoai khong chinh xac so dien thoai nghe lai lan nua ne so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "sorry so dien thoai tu tu tu tu tu so dien thoai khong co chinh xac so dien thoai nghe lai lan nua ne so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedGold": "từ từ số điện thoại không chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "sorry số điện thoại từ từ từ từ từ số điện thoại không có chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
       "error": "Insertion: 'sorry' at position 0",
-      "reason": "The word 'sorry' is an extra polite interjection at the beginning and does not change the meaning of the sentence.",
+      "reason": "'Sorry' is an English apology inserted at the start, but does not change the meaning of the Vietnamese sentence that follows.",
       "score": 2
     },
     {
-      "error": "Insertion: 'tu' at position 2",
-      "reason": "The repeated insertion of 'tu' before 'so dien thoai' is redundant and could cause confusion, making the sentence less clear and potentially incoherent.",
-      "score": 1
+      "error": "Insertion: 'từ' at position 2",
+      "reason": "Extra repetition of 'từ' (meaning 'slowly'), which does not change the meaning of the sentence.",
+      "score": 2
     },
     {
-      "error": "Insertion: 'co' at position 6",
-      "reason": "The insertion of 'co' changes the phrase from 'khong chinh xac' (not correct) to 'khong co chinh xac' (does not have correctness), which is a minor grammatical change but does not significantly alter the overall meaning.",
+      "error": "Insertion: 'có' at position 6",
+      "reason": "The insertion of 'có' (meaning 'have') in 'không có chính xác' instead of 'không chính xác' slightly changes the phrasing but the meaning ('not correct') remains the same.",
       "score": 2
     }
   ]

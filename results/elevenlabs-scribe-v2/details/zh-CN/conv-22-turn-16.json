@@ -2,25 +2,35 @@
   "gold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
   "predicted": "mailing at email.com 是我的邮箱地址。你们先说吧。",
   "unintelligible": false,
-  "wer": 0.35,
-  "werEdits": 7,
-  "werRefWords": 20,
-  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern i will get it",
-  "werNormalizedPredicted": "美玲 at email dot com 是我的邮箱地址 你们先说吧",
-  "significantWer": 0.1,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern i will get it",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com 是 我 的 邮 箱 地 址 你 们 先 说 吧",
+  "wer": 0.42105263157894735,
+  "werEdits": 8,
+  "werRefWords": 19,
+  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern ill get it",
+  "werNormalizedPredicted": "mailing at email dot com 是我的邮箱地址 你们先说吧",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern ill get it",
+  "sigWerNormalizedPredicted": "mailing at email dot com 是 我 的 邮 箱 地 址 你 们 先 说 吧",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'when' to '你' at position 13",
-      "reason": "The phrase after the email address is replaced with unrelated words in a different language, which changes the meaning of the sentence and makes it incoherent.",
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese name or character, while 'mailing' is an English word with a completely different meaning. This substitution changes the intended meaning and identity.",
       "score": 1
     },
     {
-      "error": "Deletion: 'get' at position 18",
-      "reason": "The entire final English phrase is missing and replaced by unrelated content, which significantly alters the meaning.",
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name '美玲'. Omitting it results in an incomplete or incorrect name, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'when' to '你' at position 13",
+      "reason": "'when' (English) is replaced by '你' (Chinese for 'you'), which changes the language and meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'it' at position 18",
+      "reason": "Omitting 'it' from the phrase 'ill get it' removes the object of the action, making the sentence incomplete.",
       "score": 1
     }
   ]

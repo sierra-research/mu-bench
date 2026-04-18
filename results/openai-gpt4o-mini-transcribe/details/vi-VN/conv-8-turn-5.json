@@ -2,15 +2,26 @@
   "gold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
   "predicted": "địa chỉ email là minh.trầna@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 11,
-  "werNormalizedGold": "địa chỉ email là minh trần a còng email chấm com",
-  "werNormalizedPredicted": "địa chỉ email là minh trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "địa chỉ email là minh trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "địa chỉ email là minh trần a còng email chấm com",
-  "sigWerErrors": []
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "địa chỉ email là minh chấm trầna a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh chấm trầna a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trầna' at position 6",
+      "reason": "The word 'trầna' appears to be a minor misspelling or an extra character added to 'trần', but the intended name is still clear and recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 9",
+      "reason": "Changing 'email' to 'gmail' changes the email provider, which is a significant change in meaning for an email address.",
+      "score": 1
+    }
+  ]
 }

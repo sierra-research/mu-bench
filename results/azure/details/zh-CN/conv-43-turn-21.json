@@ -2,25 +2,25 @@
   "gold": "我，我的姓名是君玲，君玲。",
   "predicted": "Well, the same name is Jun Ling Jun Ling.",
   "unintelligible": false,
-  "wer": 0.6,
-  "werEdits": 6,
+  "wer": 1.0,
+  "werEdits": 10,
   "werRefWords": 10,
   "werNormalizedGold": "我 我的姓名是君玲 君玲",
-  "werNormalizedPredicted": "the same name is 君玲 君玲",
-  "significantWer": 0.2,
+  "werNormalizedPredicted": "well the same name is jun ling jun ling",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 我 的 姓 名 是 君 玲 君 玲",
-  "sigWerNormalizedPredicted": "the same name is 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "well the same name is jun ling jun ling",
   "sigWerErrors": [
     {
-      "error": "Substitution: '我' to 'the' at position 0",
-      "reason": "The word '我' (I) is replaced with 'the', which is a different language and changes the meaning completely.",
+      "error": "Substitution: '我' to 'well' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: '名' at position 4",
-      "reason": "'名' (given name) is missing in the actual transcription, which omits important information about the name structure.",
+      "error": "Deletion: '玲' at position 9",
+      "reason": "The last character of the name is missing, which is significant for proper nouns, especially names, as it changes the identity being referred to.",
       "score": 1
     }
   ]

@@ -1,26 +1,31 @@
 {
   "gold": "Ne gibi konularda yardımcı olabilirsiniz siz başka?",
-  "predicted": "Ne gibi konularda yardımcı olabilirsin başka?",
+  "predicted": "Ne gibi konulara yardımcı olabilirsin başka?",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 2,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "ne gibi konularda yardimci olabilirsiniz siz baska",
-  "werNormalizedPredicted": "ne gibi konularda yardimci olabilirsin baska",
-  "significantWer": 0.0,
+  "werNormalizedGold": "ne gibi konularda yardımcı olabilirsiniz siz başka",
+  "werNormalizedPredicted": "ne gibi konulara yardımcı olabilirsin başka",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "ne gibi konularda yardimci olabilirsiniz siz baska",
-  "sigWerNormalizedPredicted": "ne gibi konularda yardimci olabilirsin baska",
+  "sigWerNormalizedGold": "ne gibi konularda yardımcı olabilirsiniz siz başka",
+  "sigWerNormalizedPredicted": "ne gibi konulara yardımcı olabilirsin başka",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'konularda' to 'konulara' at position 2",
+      "reason": "The word changes from 'about topics' (konularda) to 'to topics' (konulara), which is a minor grammatical difference and does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'olabilirsiniz' to 'olabilirsin' at position 4",
-      "reason": "The substitution changes the formality and plurality (from formal/plural 'you can' to informal/singular 'you can'), but the overall meaning of the sentence remains the same in context.",
+      "reason": "The verb changes from formal/plural 'you can' (olabilirsiniz) to informal/singular 'you can' (olabilirsin), which is a minor difference in formality but does not affect the meaning.",
       "score": 2
     },
     {
       "error": "Deletion: 'siz' at position 5",
-      "reason": "'Siz' is a pronoun reinforcing the formal/plural 'you', but its omission does not significantly change the meaning of the sentence, as the verb form already conveys the subject.",
+      "reason": "The explicit pronoun 'siz' (you, formal/plural) is omitted, but the meaning is still clear from the verb conjugation. This is a minor error.",
       "score": 2
     }
   ]

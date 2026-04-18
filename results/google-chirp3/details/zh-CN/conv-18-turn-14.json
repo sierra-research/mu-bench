@@ -6,8 +6,8 @@
   "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是林梅 at email 点 com",
-  "werNormalizedPredicted": "我的邮箱地址是零美 at email 点 com",
-  "significantWer": 0.07692307692307693,
+  "werNormalizedPredicted": "我的邮箱地址是 零 美 at email 点 com",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 林 梅 at email 点 com",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '林' to '零' at position 7",
-      "reason": "'林' is a common Chinese surname, while '零' means 'zero' and is not a name. This changes the intended name in the email address, which is a significant error as it affects the correctness of the email address.",
+      "reason": "'林' is a surname (Lin), while '零' means 'zero'. This changes the name in the email address, which is a significant error as it would result in an incorrect email address.",
       "score": 1
     }
   ]

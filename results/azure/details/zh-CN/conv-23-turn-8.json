@@ -2,15 +2,21 @@
   "gold": "不对的。",
   "predicted": "部队的。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
   "werNormalizedGold": "不对的",
-  "werNormalizedPredicted": "不对的",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "部队的",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "不 对 的",
-  "sigWerNormalizedPredicted": "不 对 的",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "部 队 的",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '部' at position 0",
+      "reason": "'不' means 'not' or 'no', while '部' means 'department' or 'unit'; this substitution completely changes the meaning of the phrase from 'not correct' to 'unit team correct', making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

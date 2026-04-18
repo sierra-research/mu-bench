@@ -7,7 +7,7 @@
   "werRefWords": 19,
   "werNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
   "werNormalizedPredicted": "hayır ikinci harfini bu defa ikinci harfini yanlış söylediniz adı ikinci harfi e değil a olacak zeynep arslan",
-  "significantWer": 0.05263157894736842,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'harfim' to 'harfini' at position 2",
-      "reason": "'harfim' means 'my letter', 'harfini' means 'your letter'; this changes the subject but the overall meaning of the sentence is still understandable.",
+      "reason": "'harfim' means 'my letter', 'harfini' means 'your letter'; this changes the possessive but does not derail the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'a' to 'adı' at position 9",
-      "reason": "'a' is a letter, 'adı' means 'name'; this changes the meaning of the sentence significantly, as it shifts from referring to a letter to referring to a name.",
+      "reason": "'a' is a letter, 'adı' means 'name'; this changes the meaning of the sentence significantly, as it refers to a different concept.",
       "score": 1
     },
     {
       "error": "Deletion: 'değil' at position 10",
-      "reason": "Omitting 'değil' ('not') changes the logical structure of the sentence, potentially altering its meaning, but the context still makes the intent somewhat clear.",
+      "reason": "Omitting 'değil' ('not') changes the logical structure of the sentence, potentially altering its meaning, but the context still makes the intent clear.",
       "score": 2
     },
     {

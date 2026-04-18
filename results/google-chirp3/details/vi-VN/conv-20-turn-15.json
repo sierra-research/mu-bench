@@ -7,25 +7,25 @@
   "werRefWords": 10,
   "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "mình không không đúng mình chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
   "sigWerNormalizedPredicted": "mình không không đúng mình chấm trần a còng email chấm com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'mình' at position 0",
-      "reason": "The insertion of 'mình' at the beginning adds a pronoun but does not change the overall meaning of the sentence, which is about an email address.",
+      "reason": "The insertion of 'mình' at the beginning adds a subject pronoun, which does not significantly change the meaning of the sentence in this context.",
       "score": 2
     },
     {
       "error": "Insertion: 'không' at position 1",
-      "reason": "The extra 'không' (no/not) could cause confusion or make the sentence less clear, but the main information about the email address remains intact.",
-      "score": 2
+      "reason": "The extra 'không' (no/not) introduces a double negative, which could cause confusion or alter the intended meaning, making the sentence less clear.",
+      "score": 1
     },
     {
       "error": "Substitution: 'minh' to 'mình' at position 2",
-      "reason": "The substitution adds the accent to 'minh', making it 'mình', which is a minor spelling/diacritic difference in Vietnamese and does not change the meaning in this context.",
+      "reason": "The substitution corrects the spelling to include the diacritic, which is the proper form in Vietnamese, but does not change the meaning.",
       "score": 3
     }
   ]

@@ -2,15 +2,31 @@
   "gold": "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
   "predicted": "Es Urion treinta, Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal cero dos ochocientos sesenta",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 18,
-  "werNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "werNormalizedPredicted": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "sigWerNormalizedPredicted": "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
-  "sigWerErrors": []
+  "wer": 0.21052631578947367,
+  "werEdits": 4,
+  "werRefWords": 19,
+  "werNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "werNormalizedPredicted": "es urion treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "sigWerNormalizedPredicted": "es urion treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'urión' to 'urion' at position 1",
+      "reason": "Minor misspelling of a proper noun, but still recognizable and does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ocho' to 'ochocientos' at position 16",
+      "reason": "'Ocho' (eight) and 'ochocientos' (eight hundred) are completely different numbers, which changes the postal code and thus the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cero' at position 18",
+      "reason": "Omitting a digit from the postal code changes the code entirely, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

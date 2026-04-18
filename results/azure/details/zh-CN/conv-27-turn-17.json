@@ -2,15 +2,21 @@
   "gold": "我的联系地址是中国北京市海定区北京路123号。",
   "predicted": "我的联系地址是中国北京市海淀区北京路123号。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.045454545454545456,
+  "werEdits": 1,
   "werRefWords": 22,
-  "werNormalizedGold": "我的联系地址是中国北京市海淀区北京路一二三号",
-  "werNormalizedPredicted": "我的联系地址是中国北京市海淀区北京路一二三号",
-  "significantWer": 0.0,
+  "werNormalizedGold": "我的联系地址是中国北京市海定区北京路一二三号",
+  "werNormalizedPredicted": "我的联系地址是中国北京市海淀区北京路 一 二 三 号",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "我 的 联 系 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 二 三 号",
+  "sigWerNormalizedGold": "我 的 联 系 地 址 是 中 国 北 京 市 海 定 区 北 京 路 一 二 三 号",
   "sigWerNormalizedPredicted": "我 的 联 系 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 二 三 号",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '定' to '淀' at position 13",
+      "reason": "'海定区' and '海淀区' are both possible district names, but '海淀区' is the correct and well-known district in Beijing. The substitution corrects the district name, so the actual transcription is more accurate. However, if the expected was '海定区', changing to '海淀区' is a minor error as it does not derail the meaning of the address, just a small factual inaccuracy.",
+      "score": 2
+    }
+  ]
 }

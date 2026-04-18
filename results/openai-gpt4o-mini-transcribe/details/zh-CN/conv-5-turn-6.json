@@ -1,16 +1,27 @@
 {
   "gold": "君玲。",
-  "predicted": "dreamlin",
+  "predicted": "dreaming",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
-  "werNormalizedPredicted": "君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreaming",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
-  "sigWerNormalizedPredicted": "君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreaming",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreaming' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not represent the expected name at all, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A key part of the expected name is missing, which significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
 }

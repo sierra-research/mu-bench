@@ -2,15 +2,31 @@
   "gold": "A ver, creo que estoy mal o me diste un número diferente. ¿Es C N 6 4 5 o C N 6 4 4?",
   "predicted": "A ver, creo que estoy mal o me diste un número diferente, es CN 645 o CN 644.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2916666666666667,
+  "werEdits": 7,
   "werRefWords": 24,
-  "werNormalizedGold": "a ver creo que estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
-  "werNormalizedPredicted": "a ver creo que estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
-  "significantWer": 0.0,
+  "werNormalizedGold": "a ver creo que estoy mal o me diste un número diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
+  "werNormalizedPredicted": "a ver creo que estoy mal o me diste un numero diferente es c n seiscientos cuarenta y cinco o c n seiscientos cuarenta y cuatro",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "a ver creo que estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
-  "sigWerNormalizedPredicted": "a ver creo que estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "a ver creo que estoy mal o me diste un número diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
+  "sigWerNormalizedPredicted": "a ver creo que estoy mal o me diste un numero diferente es c n seiscientos cuarenta y cinco o c n seiscientos cuarenta y cuatro",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'número' to 'numero' at position 10",
+      "reason": "Only the accent is missing; this does not change the meaning in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'seis' to 'cuarenta' at position 15",
+      "reason": "'seiscientos cuarenta y cinco' is the full numeric form of 'seis cuatro cinco'; both represent the same number (645), just in different formats.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'seis' to 'cuarenta' at position 21",
+      "reason": "In the phrase 'seis cuatro cinco', the actual transcript uses the full number 'seiscientos cuarenta y cinco', which is equivalent to 'seis cuatro cinco' (645). This is a format difference, not a semantic error.",
+      "score": 3
+    }
+  ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 4,
   "werNormalizedGold": "ismim ahmet arslan anna",
   "werNormalizedPredicted": "ich bin ahmet aslan",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "ismim ahmet arslan anna",
@@ -20,12 +20,12 @@
     },
     {
       "error": "Substitution: 'arslan' to 'aslan' at position 2",
-      "reason": "'ismim' means 'my name is' in Turkish, while 'bin' means 'am' in German. This substitution changes the language and the meaning of the introduction.",
+      "reason": "'ismim' means 'my name is' in Turkish, while 'bin' means 'am' in German. This is a language and meaning substitution, making the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'anna' at position 3",
-      "reason": "'arslan' and 'aslan' are very similar Turkish names/words, likely a minor spelling or pronunciation difference, but the meaning is preserved.",
+      "reason": "'arslan' and 'aslan' are very similar Turkish names/words (both meaning 'lion'), likely a minor spelling/pronunciation difference, so the meaning is preserved.",
       "score": 2
     }
   ]

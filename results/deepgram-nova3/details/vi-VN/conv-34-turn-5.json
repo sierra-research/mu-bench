@@ -2,25 +2,50 @@
   "gold": "Đầu tiên, em muốn hỏi về việc tăng hạn mức thẻ tín dụng của em, tại vì dạo gần đây nhu cầu của em có tăng. Chi tiêu công việc, đi lại với một số khoản thanh toán lớn nên em muốn xem liệu hạn mức có thể được nâng lên hay không. Anh chị giúp em kiểm tra xem thẻ của em có nằm trong diện được xét tăng hạn mức không ạ?",
   "predicted": "Đầu tiên em muốn hỏi về việc tăng hạn mức thể tín dụng của em tại vì dạo gần đây nhu cầu của em có tăng ấy kiểu như là chi tiêu công việc đi lại với cả một số khoản thanh toán lớn Nên là em muốn xem liệu hạn mức có thể được nâng lên hay không. Anh chị giữ em kiểm tra xem là thẻ của em có nằm trong diện đợt chất tăng hạn mức không ạ?",
   "unintelligible": false,
-  "wer": 0.04054054054054054,
-  "werEdits": 3,
+  "wer": 0.14864864864864866,
+  "werEdits": 11,
   "werRefWords": 74,
   "werNormalizedGold": "đầu tiên em muốn hỏi về việc tăng hạn mức thẻ tín dụng của em tại vì dạo gần đây nhu cầu của em có tăng chi tiêu công việc đi lại với một số khoản thanh toán lớn nên em muốn xem liệu hạn mức có thể được nâng lên hay không anh chị giúp em kiểm tra xem thẻ của em có nằm trong diện được xét tăng hạn mức không ạ",
-  "werNormalizedPredicted": "đầu tiên em muốn hỏi về việc tăng hạn mức thẻ tín dụng của em tại vì dạo gần đây nhu cầu của em có tăng chi tiêu công việc đi lại với một số khoản thanh toán lớn nên em muốn xem liệu hạn mức có thể được nâng lên hay không anh chị giữ em kiểm tra xem thẻ của em có nằm trong diện đợt chất tăng hạn mức không ạ",
-  "significantWer": 0.02702702702702703,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "đầu tiên em muốn hỏi về việc tăng hạn mức thể tín dụng của em tại vì dạo gần đây nhu cầu của em có tăng ấy kiểu như là chi tiêu công việc đi lại với cả một số khoản thanh toán lớn nên là em muốn xem liệu hạn mức có thể được nâng lên hay không anh chị giữ em kiểm tra xem là thẻ của em có nằm trong diện đợt chất tăng hạn mức không ạ",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 74,
   "sigWerNormalizedGold": "đầu tiên em muốn hỏi về việc tăng hạn mức thẻ tín dụng của em tại vì dạo gần đây nhu cầu của em có tăng chi tiêu công việc đi lại với một số khoản thanh toán lớn nên em muốn xem liệu hạn mức có thể được nâng lên hay không anh chị giúp em kiểm tra xem thẻ của em có nằm trong diện được xét tăng hạn mức không ạ",
-  "sigWerNormalizedPredicted": "đầu tiên em muốn hỏi về việc tăng hạn mức thẻ tín dụng của em tại vì dạo gần đây nhu cầu của em có tăng chi tiêu công việc đi lại với một số khoản thanh toán lớn nên em muốn xem liệu hạn mức có thể được nâng lên hay không anh chị giữ em kiểm tra xem thẻ của em có nằm trong diện đợt chất tăng hạn mức không ạ",
+  "sigWerNormalizedPredicted": "đầu tiên em muốn hỏi về việc tăng hạn mức thể tín dụng của em tại vì dạo gần đây nhu cầu của em có tăng ấy kiểu như là chi tiêu công việc đi lại với cả một số khoản thanh toán lớn nên là em muốn xem liệu hạn mức có thể được nâng lên hay không anh chị giữ em kiểm tra xem là thẻ của em có nằm trong diện đợt chất tăng hạn mức không ạ",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'giúp' to 'giữ' at position 55",
-      "reason": "'giúp' means 'help', while 'giữ' means 'keep'. This changes the meaning of the request from asking for help to asking to keep, which makes the sentence confusing and alters the intent.",
+      "error": "Substitution: 'thẻ' to 'thể' at position 10",
+      "reason": "'thẻ' (card) and 'thể' (form/body) are different words; here, 'thẻ tín dụng' is a fixed phrase meaning 'credit card', so this substitution changes the meaning and could cause confusion.",
       "score": 1
     },
     {
+      "error": "Insertion: 'ấy' at position 26",
+      "reason": "The insertion of 'ấy' ('that') adds a filler but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cả' at position 33",
+      "reason": "The insertion of 'cả' ('also/with') is a minor filler and does not affect the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'là' at position 40",
+      "reason": "The insertion of 'là' ('is') is a minor grammatical filler and does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'giúp' to 'giữ' at position 55",
+      "reason": "'giúp' means 'help', 'giữ' means 'keep/hold'; this substitution changes the meaning of the request, making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'là' at position 60",
+      "reason": "The insertion of 'là' ('is') is a minor grammatical filler and does not change the meaning.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'được' to 'đợt' at position 67",
-      "reason": "'được' means 'can/be able to', while 'đợt' means 'batch/period'. This substitution makes the sentence incoherent and changes the meaning significantly.",
+      "reason": "'được' means 'eligible/able', 'đợt' means 'batch/period'; this substitution changes the meaning of the phrase and could cause misunderstanding.",
       "score": 1
     }
   ]

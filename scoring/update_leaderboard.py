@@ -3,8 +3,8 @@
 Walks the results/ directory, reads each provider's scores.json, and
 produces a single leaderboard.json consumed by the leaderboard web app.
 
-Propagates the new fields introduced by the fairness-fixes plan so the
-UI can render them:
+Propagates the fields introduced by the fairness-fixes plan so the UI
+can render them:
 
   * ``completeP50Ms`` / ``completeP95Ms`` — unified cross-protocol
     latency metric (batch round-trip or streaming time-to-complete).
@@ -16,9 +16,8 @@ UI can render them:
   * ``meta.config`` — inference-config disclosure surfaced in the
     provider detail panel.
 
-Legacy ``latencyP50Ms`` / ``latencyP95Ms`` are kept as aliases of the
-unified ``complete*`` fields so the UI fallback path works even when an
-old scores.json hasn't been re-scored yet.
+Legacy ``latencyP50Ms`` / ``latencyP95Ms`` aliases were dropped with
+the rollout PR; the UI sorts on ``completeP95Ms`` directly.
 
 Usage:
     python -m scoring.update_leaderboard
@@ -43,8 +42,6 @@ LATENCY_LOCALE_FIELDS = (
     "roundTripP95Ms",
     "ttftP50Ms",
     "ttftP95Ms",
-    "latencyP50Ms",
-    "latencyP95Ms",
 )
 
 
@@ -56,13 +53,6 @@ def _extract_locale_fields(data: dict) -> dict:
     for field in LATENCY_LOCALE_FIELDS:
         if field in data:
             out[field] = data.get(field)
-    # Back-compat aliases: if a score.json was produced before this release
-    # it only has latencyP50/95Ms. Populate completeP50/95Ms from them so
-    # the UI can sort on a single field without a fallback.
-    if out.get("completeP50Ms") is None and "latencyP50Ms" in data:
-        out["completeP50Ms"] = data["latencyP50Ms"]
-    if out.get("completeP95Ms") is None and "latencyP95Ms" in data:
-        out["completeP95Ms"] = data["latencyP95Ms"]
     return out
 
 

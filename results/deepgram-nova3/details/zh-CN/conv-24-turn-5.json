@@ -2,15 +2,21 @@
   "gold": "林美 at email 点 com。",
   "predicted": "林妹email。com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.16666666666666666,
+  "werEdits": 1,
   "werRefWords": 6,
   "werNormalizedGold": "林美 at email 点 com",
-  "werNormalizedPredicted": "林美 at email 点 com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "林美 email 点 com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "林 美 at email 点 com",
-  "sigWerNormalizedPredicted": "林 美 at email 点 com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "林 美 email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "The omission of 'at' removes the connector in the email phrase, but the meaning is still clear and understandable in context.",
+      "score": 2
+    }
+  ]
 }

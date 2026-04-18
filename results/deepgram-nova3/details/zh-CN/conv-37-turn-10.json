@@ -2,25 +2,25 @@
   "gold": "你，你可以重复我的姓名啊。",
   "predicted": "你可以重复我的刑命吗",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
-  "werEdits": 2,
-  "werRefWords": 11,
-  "werNormalizedGold": "你 你 可以 重复 我 的 姓名 啊",
-  "werNormalizedPredicted": "你 可以 重复 我 的 姓名 吗",
-  "significantWer": 0.09090909090909091,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "你 你可以重复我的姓名",
+  "werNormalizedPredicted": "你可以重复我的刑命吗",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名 啊",
-  "sigWerNormalizedPredicted": "你 可 以 重 复 我 的 姓 名 吗",
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 可 以 重 复 我 的 刑 命 吗",
   "sigWerErrors": [
     {
       "error": "Deletion: '你' at position 1",
-      "reason": "The repetition of '你' (you) at the beginning is a minor emphasis in Chinese, but its omission does not change the overall meaning of the sentence.",
+      "reason": "The repeated '你' (you) at the start is omitted, but the overall meaning of the sentence is still clear and not significantly changed.",
       "score": 2
     },
     {
-      "error": "Substitution: '啊' to '吗' at position 10",
-      "reason": "'啊' is a modal particle expressing emphasis or suggestion, while '吗' turns the sentence into a question. This changes the sentence from a statement/request to a question, which is a significant change in meaning.",
+      "error": "Substitution: '姓' to '命' at position 8",
+      "reason": "The word '刑' (punishment) is inserted where '姓' (surname) is expected, which changes the meaning of the sentence from asking to repeat a name to something unrelated.",
       "score": 1
     }
   ]

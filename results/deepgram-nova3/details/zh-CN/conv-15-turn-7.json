@@ -2,25 +2,30 @@
   "gold": "是美玲 at email dot com。",
   "predicted": "是梅琳email。com",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 2,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "是美玲 at email dot com",
-  "werNormalizedPredicted": "是美玲 email com",
-  "significantWer": 0.2857142857142857,
+  "werNormalizedPredicted": "是梅琳 email com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "是 美 玲 email com",
+  "sigWerNormalizedPredicted": "是 梅 琳 email com",
   "sigWerErrors": [
     {
+      "error": "Substitution: '美' to '梅' at position 1",
+      "reason": "Both are common Chinese given names and may sound similar, but they are different characters with different meanings. However, in the context of a name, this is a minor error as the overall meaning (a person's name) is preserved, but the specific name is incorrect.",
+      "score": 2
+    },
+    {
       "error": "Deletion: 'at' at position 3",
-      "reason": "'at' is a key part of the email address format. Omitting it makes the email address unclear or unusable.",
+      "reason": "Omitting 'at' in an email address makes the address incomplete and unusable, which is a significant error as it prevents correct communication.",
       "score": 1
     },
     {
       "error": "Deletion: 'dot' at position 5",
-      "reason": "'dot' is necessary to indicate the period in the email address. Its omission makes the email address incomplete and potentially unusable.",
+      "reason": "Omitting 'dot' in an email address makes the address incomplete and unusable, which is a significant error as it prevents correct communication.",
       "score": 1
     }
   ]

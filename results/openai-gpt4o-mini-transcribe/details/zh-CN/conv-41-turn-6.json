@@ -1,16 +1,22 @@
 {
   "gold": "C N 6 2 7。",
-  "predicted": "Cn liu arci",
+  "predicted": "Cn留耳机",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "c n six two seven",
-  "werNormalizedPredicted": "c n six two seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 六 二 七",
+  "werNormalizedPredicted": "c n 留耳机",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n six two seven",
-  "sigWerNormalizedPredicted": "c n six two seven",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 六 二 七",
+  "sigWerNormalizedPredicted": "c n 留 耳 机",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '六' to '留' at position 2",
+      "reason": "'六' means 'six' and '留' means 'stay' in Chinese; this is a completely different word and changes the intended meaning, especially in a sequence of numbers or codes.",
+      "score": 1
+    }
+  ]
 }

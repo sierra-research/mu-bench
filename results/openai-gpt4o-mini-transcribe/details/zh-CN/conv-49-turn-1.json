@@ -1,16 +1,32 @@
 {
   "gold": "我想提高我的用卡额度。",
-  "predicted": "我向听告得心用科恶毒。",
+  "predicted": "我想听高的信用卡恶毒。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 5,
   "werRefWords": 10,
   "werNormalizedGold": "我想提高我的用卡额度",
-  "werNormalizedPredicted": "我想提高我的用卡额度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想听高的信用卡恶毒",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 想 提 高 我 的 用 卡 额 度",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 用 卡 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 听 高 的 信 用 卡 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '提' to '听' at position 2",
+      "reason": "The word '提' (raise) is replaced by '听' (listen), which changes the meaning of the sentence from 'raise' to 'listen', making the intent unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '我' to '的' at position 4",
+      "reason": "The pronoun '我' (I/my) is replaced by '的' (possessive particle), which disrupts the grammatical structure and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '恶' at position 8",
+      "reason": "'额' (limit/amount) is replaced by '恶' (evil), which completely changes the meaning and makes the sentence nonsensical.",
+      "score": 1
+    }
+  ]
 }

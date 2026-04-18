@@ -2,15 +2,21 @@
   "gold": "林美。",
   "predicted": "四棱妹。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.5,
+  "werEdits": 3,
   "werRefWords": 2,
   "werNormalizedGold": "林美",
-  "werNormalizedPredicted": "林美",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "四棱妹",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "林 美",
-  "sigWerNormalizedPredicted": "林 美",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "四 棱 妹",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '棱' at position 0",
+      "reason": "'林' is a Chinese surname, while '四' means 'four' and is not a name. This substitution completely changes the meaning and identity, making the sentence incoherent in context.",
+      "score": 1
+    }
+  ]
 }

@@ -2,20 +2,25 @@
   "gold": "Tabii ki. Artı 90 123 0 90 45 67.",
   "predicted": "Tabii ki. 090 123 090 45 67",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
-  "werRefWords": 13,
-  "werNormalizedGold": "tabii ki artı doksan bir iki üç sıfır doksan dört beş altı yedi",
-  "werNormalizedPredicted": "tabii ki sıfır doksan bir iki üç sıfır doksan dört beş altı yedi",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "tabii ki artı doksan bir iki üç sıfır doksan dört beş altı yedi",
-  "sigWerNormalizedPredicted": "tabii ki sıfır doksan bir iki üç sıfır doksan dört beş altı yedi",
+  "wer": 0.35714285714285715,
+  "werEdits": 5,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii ki sıfır dokuz sıfır bir yüz yirmi üç sıfır dokuz sıfır kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii ki sıfır dokuz sıfır bir yüz yirmi üç sıfır dokuz sıfır kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'artı' to 'sıfır' at position 2",
-      "reason": "'artı' means 'plus' and 'sıfır' means 'zero'; substituting 'plus' with 'zero' in a phone number or numeric sequence changes the meaning and value significantly.",
+      "error": "Substitution: 'artı' to 'dokuz' at position 2",
+      "reason": "An extra digit is inserted at the start of the phone number, which changes the number entirely.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 9",
+      "reason": "'artı' (plus) is replaced with 'dokuz' (nine), which changes the country code prefix to a digit, significantly altering the meaning and correctness of the phone number.",
       "score": 1
     }
   ]

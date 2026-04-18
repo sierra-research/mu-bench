@@ -2,36 +2,36 @@
   "gold": "Ừ. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Ờ, số điện thoại là cộng tám mươi bốn, chín mươi mốt, một, hai, ba mươi bốn, năm mươi sáu bảy đá.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 4,
+  "wer": 0.2777777777777778,
+  "werEdits": 5,
   "werRefWords": 18,
-  "werNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "so dien thoai la cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay da",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 4,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba mươi bốn năm mươi sáu bảy đá",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "so dien thoai la cong tam muoi bon chin muoi mot mot hai ba muoi bon nam muoi sau bay da",
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba mươi bốn năm mươi sáu bảy đá",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'muoi' at position 9",
-      "reason": "The insertion of 'muoi' (ten) changes the sequence of numbers in the phone number, which is critical information.",
-      "score": 1
+      "error": "Substitution: 'một' to 'mốt' at position 9",
+      "reason": "The insertion of 'mươi' changes the number from 'chín một' (91) to 'chín mươi mốt' (91), which is a different way to say the same number in Vietnamese. This does not change the meaning.",
+      "score": 3
     },
     {
-      "error": "Insertion: 'muoi' at position 13",
-      "reason": "The insertion of 'muoi' (ten) again alters the phone number, making it incorrect.",
-      "score": 1
+      "error": "Insertion: 'mươi' at position 13",
+      "reason": "'một' and 'mốt' both represent the number 1 in Vietnamese, with 'mốt' used after 'mươi' for numbers like 21, 31, etc. In this context, 'chín mươi mốt' is a correct way to say 91, so the meaning is preserved.",
+      "score": 3
     },
     {
-      "error": "Insertion: 'muoi' at position 15",
-      "reason": "Another insertion of 'muoi' (ten) further distorts the phone number, which is essential information.",
-      "score": 1
+      "error": "Insertion: 'mươi' at position 15",
+      "reason": "The insertion of 'mươi' changes 'ba bốn' (34) to 'ba mươi bốn' (34), which is the standard way to say 34 in Vietnamese. No change in meaning.",
+      "score": 3
     },
     {
-      "error": "Substitution: 'tam' to 'da' at position 17",
-      "reason": "Substituting 'tam' (eight) with 'da' (not a number) changes the last digit of the phone number, making it incorrect.",
-      "score": 1
+      "error": "Substitution: 'tám' to 'đá' at position 17",
+      "reason": "The insertion of 'mươi' changes 'năm sáu' (56) to 'năm mươi sáu' (56), which is the standard way to say 56 in Vietnamese. No change in meaning.",
+      "score": 3
     }
   ]
 }

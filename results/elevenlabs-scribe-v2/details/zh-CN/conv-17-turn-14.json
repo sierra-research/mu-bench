@@ -2,15 +2,26 @@
   "gold": "美玲，美玲。",
   "predicted": "没，没领。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "美玲 美玲",
-  "werNormalizedPredicted": "美玲 美玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "没 没领",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "美 玲 美 玲",
-  "sigWerNormalizedPredicted": "美 玲 美 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 没 领",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '没' at position 0",
+      "reason": "'美' and '没' are different characters with different meanings in Chinese, which changes the intended name and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 3",
+      "reason": "Omitting '玲' results in an incomplete and incorrect transcription of the name, significantly altering the intended meaning.",
+      "score": 1
+    }
+  ]
 }

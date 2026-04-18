@@ -1,16 +1,22 @@
 {
   "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
-  "predicted": "Sí, más 525512345678.",
+  "predicted": "Sí, más 5255-123-456-78.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.06666666666666667,
+  "werEdits": 1,
   "werRefWords": 15,
-  "werNormalizedGold": "mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "significantWer": 0.0,
+  "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "sí más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "mas cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "sí más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'sí' at position 0",
+      "reason": "'sí' (yes) is inserted at the beginning, but it does not change the meaning of the rest of the sentence, which is a sequence of numbers. The overall intent and information are preserved.",
+      "score": 2
+    }
+  ]
 }

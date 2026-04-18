@@ -2,25 +2,30 @@
   "gold": "No es Gmail, es email.",
   "predicted": "No, no es email email.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "no es email es email",
+  "werNormalizedGold": "no es gmail es email",
   "werNormalizedPredicted": "no no es email email",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "no es email es email",
+  "sigWerNormalizedGold": "no es gmail es email",
   "sigWerNormalizedPredicted": "no no es email email",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 1",
-      "reason": "The extra 'no' does not significantly change the meaning of the sentence, as the main information about 'es email' is still present. However, it could cause minor confusion.",
+      "reason": "The extra 'no' does not significantly change the meaning, as the sentence is still understandable as a correction or emphasis.",
       "score": 2
     },
     {
+      "error": "Substitution: 'gmail' to 'email' at position 2",
+      "reason": "Replacing 'gmail' with 'email' changes the specific service being referred to, which can confuse the listener about whether the address is a Gmail or a general email address.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'es' at position 3",
-      "reason": "Omitting 'es' before the second 'email' slightly affects the grammatical structure but does not change the overall meaning of the sentence.",
+      "reason": "Omitting 'es' (is) slightly affects the grammatical structure but does not significantly change the overall meaning.",
       "score": 2
     }
   ]

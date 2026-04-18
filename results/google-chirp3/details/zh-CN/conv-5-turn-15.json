@@ -2,15 +2,21 @@
   "gold": "我心想你重复我的姓名。",
   "predicted": "我先想你重复我的姓名。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "我心想你重复我的姓名",
-  "werNormalizedPredicted": "我心想你重复我的姓名",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我先想你重复我的姓名",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 心 想 你 重 复 我 的 姓 名",
-  "sigWerNormalizedPredicted": "我 心 想 你 重 复 我 的 姓 名",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 先 想 你 重 复 我 的 姓 名",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '心' to '先' at position 1",
+      "reason": "'心' (heart) and '先' (first) are completely different in meaning. This substitution changes the meaning of the phrase and could confuse the listener about the intended message.",
+      "score": 1
+    }
+  ]
 }

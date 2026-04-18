@@ -7,7 +7,7 @@
   "werRefWords": 9,
   "werNormalizedGold": "iyi onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
   "werNormalizedPredicted": "yok onlara ihtiyacım yok çok teşekkür ederim",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "iyi onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'iyi' to 'yok' at position 0",
-      "reason": "'iyi' means 'good' or 'no thanks', while 'yok' means 'no' or 'there isn't'. This substitution changes the intent of the sentence from a polite refusal to a direct negation, which significantly alters the meaning.",
+      "reason": "'iyi' means 'good' or 'I'm fine', while 'yok' means 'no' or 'there isn't'. This substitution changes the meaning of the sentence significantly, as the initial intent is lost.",
       "score": 1
     },
     {
       "error": "Deletion: 'yardımınız' at position 7",
-      "reason": "Omitting 'yardımınız' ('your help') removes the reference to the help being thanked for, but the overall meaning of gratitude is still mostly preserved in the context of 'çok teşekkür ederim' ('thank you very much').",
+      "reason": "'yardımınız' means 'your help', and its omission removes the reference to the help being thanked for, but the overall meaning of gratitude is still present in the sentence.",
       "score": 2
     }
   ]

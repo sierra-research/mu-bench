@@ -1,13 +1,13 @@
 {
   "gold": "My phone number, it is 1 2 1 2 1 2 3 4 5 6 7. 6 7.",
-  "predicted": "My phone number is... Sorry, it is 1-212-123-4567.",
+  "predicted": "My phone number is, sorry, it is 1-212-123-4567.",
   "unintelligible": false,
   "wer": 0.2222222222222222,
   "werEdits": 4,
   "werRefWords": 18,
   "werNormalizedGold": "my phone number it is one two one two one two three four five six seven six seven",
   "werNormalizedPredicted": "my phone number is sorry it is one two one two one two three four five six seven",
-  "significantWer": 0.05555555555555555,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "my phone number it is one two one two one two three four five six seven six seven",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'is' at position 3",
-      "reason": "Adding 'is' before 'sorry' does not change the meaning of the sentence; it is a minor grammatical difference.",
+      "reason": "The insertion of 'is' does not change the meaning of the sentence; it is a minor grammatical difference.",
       "score": 3
     },
     {
       "error": "Deletion: 'six' at position 14",
-      "reason": "Omitting 'six' from the phone number changes the actual phone number, which is a significant factual error.",
+      "reason": "The omission of 'six' from the phone number changes the actual phone number, which is a significant error as it alters critical information.",
       "score": 1
     }
   ]

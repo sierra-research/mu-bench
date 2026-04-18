@@ -1,16 +1,27 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com.",
-  "predicted": "email là minh.trần@email.com",
+  "predicted": "email là minh.trầna@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minh chấm trầna a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minh chấm trầna a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trầna' at position 4",
+      "reason": "The word 'trầna' appears to be a minor misspelling or an extra character added to the name 'trần', but the intended name is still clear and recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing 'email' to 'gmail' changes the email domain, which is a significant error as it would result in a completely different email address.",
+      "score": 1
+    }
+  ]
 }

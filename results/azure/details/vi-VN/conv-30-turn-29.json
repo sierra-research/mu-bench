@@ -7,7 +7,7 @@
   "werRefWords": 4,
   "werNormalizedGold": "thấy rồi thấy rồi",
   "werNormalizedPredicted": "hello hello",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "thấy rồi thấy rồi",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'thấy' to 'hello' at position 0",
-      "reason": "The word 'hello' is in a different language and has a completely different meaning from 'thấy', which significantly changes the meaning of the sentence.",
+      "reason": "'hello' is a completely different word from 'thấy', and the substitution changes the meaning entirely, making the sentence incoherent in context.",
       "score": 1
     },
     {
       "error": "Deletion: 'thấy' at position 2",
-      "reason": "The word 'hello' is in a different language and has a completely different meaning from 'rồi', which significantly changes the meaning of the sentence.",
+      "reason": "'hello' is not semantically related to 'rồi', and this substitution results in a sentence with a completely different meaning.",
       "score": 1
     }
   ]

@@ -2,25 +2,20 @@
   "gold": "Kolay gelsin Anna Hanım. Ben kredi kartı bilgilerimi öğrenmek için, yani IBAN numaramı öğrenebilir miyim?",
   "predicted": "Eee, kolay gelsin Anna Hanım. Ben, eee, kredi kartı bilgilerimi öğrenmek istiyorum. Yani hani IBAN numaramı öğrenebilir miyim?",
   "unintelligible": false,
-  "wer": 0.13333333333333333,
-  "werEdits": 2,
-  "werRefWords": 15,
-  "werNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için yani iban numaramı öğrenebilir miyim",
-  "werNormalizedPredicted": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek istiyorum yani hani iban numaramı öğrenebilir miyim",
-  "significantWer": 0.0,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
+  "werRefWords": 14,
+  "werNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için iban numaramı öğrenebilir miyim",
+  "werNormalizedPredicted": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek istiyorum iban numaramı öğrenebilir miyim",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için yani iban numaramı öğrenebilir miyim",
-  "sigWerNormalizedPredicted": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek istiyorum yani hani iban numaramı öğrenebilir miyim",
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için iban numaramı öğrenebilir miyim",
+  "sigWerNormalizedPredicted": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek istiyorum iban numaramı öğrenebilir miyim",
   "sigWerErrors": [
     {
       "error": "Substitution: 'için' to 'istiyorum' at position 9",
-      "reason": "'için' means 'for' and 'istiyorum' means 'I want'. This changes the intent of the sentence from 'to learn my credit card information' to 'I want to learn my credit card information', which is a minor change in meaning but does not derail the overall intent.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: 'hani' at position 11",
-      "reason": "'hani' is a filler word in Turkish, similar to 'you know' in English. Its insertion does not change the meaning of the sentence.",
+      "reason": "'için' means 'for' (to/for the purpose of), while 'istiyorum' means 'I want'. This changes the structure of the sentence but the overall intent (to learn IBAN number) remains clear. The meaning is only slightly altered, not derailed.",
       "score": 2
     }
   ]

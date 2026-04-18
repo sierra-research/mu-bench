@@ -1,16 +1,22 @@
 {
   "gold": "Hayır, barslan değil Arslan. Oradaki B harfi fazla.",
-  "predicted": "Hayır, barslan değil arslan, oradaki B harfi fazla.",
+  "predicted": "Hayır, Barslan değil, Arslan. Oradaki B harfi fazla.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "hayır barslan değil arslan oradaki b harfi fazla",
+  "werNormalizedGold": "hayır arslan değil arslan oradaki b harfi fazla",
   "werNormalizedPredicted": "hayır barslan değil arslan oradaki b harfi fazla",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "hayır barslan değil arslan oradaki b harfi fazla",
+  "sigWerNormalizedGold": "hayır arslan değil arslan oradaki b harfi fazla",
   "sigWerNormalizedPredicted": "hayır barslan değil arslan oradaki b harfi fazla",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'arslan' to 'barslan' at position 1",
+      "reason": "The word 'arslan' (meaning 'lion' in Turkish) is changed to 'barslan', which is not a standard word and could confuse the meaning, especially since the sentence is about the presence of an extra 'b' in 'arslan'. This substitution significantly affects the clarity and meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

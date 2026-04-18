@@ -2,15 +2,21 @@
   "gold": "¿Puedo verla en la aplicación?",
   "predicted": "¿Puedo verla en el aplicación?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "puedo verla en la aplicacion",
-  "werNormalizedPredicted": "puedo verla en la aplicacion",
-  "significantWer": 0.0,
+  "werNormalizedGold": "puedo verla en la aplicación",
+  "werNormalizedPredicted": "puedo verla en el aplicación",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "puedo verla en la aplicacion",
-  "sigWerNormalizedPredicted": "puedo verla en la aplicacion",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "puedo verla en la aplicación",
+  "sigWerNormalizedPredicted": "puedo verla en el aplicación",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'la' to 'el' at position 3",
+      "reason": "'la' and 'el' are both articles, but 'aplicación' is feminine, so 'la' is grammatically correct. Using 'el' is a minor grammatical error but does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

@@ -48,7 +48,7 @@ function buildScores() {
             scores[p.id][locale] = {
                 wer: lr.wer,
                 sigWer: lr.significantWer,
-                latency: lr.latencyP95Ms,
+                latency: lr.completeP95Ms,
             };
         }
     }

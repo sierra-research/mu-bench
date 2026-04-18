@@ -1,26 +1,31 @@
 {
   "gold": "你还听不到，不好，是君，君灵。",
-  "predicted": "你还挺不好,是drunkling。",
+  "predicted": "你还挺不好,是drain、drain零。",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werEdits": 3,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
   "werRefWords": 11,
-  "werNormalizedGold": "你 还 听 不 到 不 好 是 君 君 灵",
-  "werNormalizedPredicted": "你 还 挺 不 好 是 君 君 灵",
-  "significantWer": 0.18181818181818182,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "你还听不到不好是君君灵",
+  "werNormalizedPredicted": "你还挺不好 是 drain drain 零",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 还 听 不 到 不 好 是 君 君 灵",
-  "sigWerNormalizedPredicted": "你 还 挺 不 好 是 君 君 灵",
+  "sigWerNormalizedPredicted": "你 还 挺 不 好 是 drain drain 零",
   "sigWerErrors": [
     {
       "error": "Substitution: '听' to '挺' at position 2",
-      "reason": "'听' means 'to hear' and '挺' means 'quite' or 'very'; this changes the meaning of the sentence significantly.",
+      "reason": "'听' (listen/hear) and '挺' (quite/very) are completely different words and change the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: '不' at position 3",
-      "reason": "Omitting '不' (which means 'not') alters the meaning of the sentence, making it incoherent or incorrect in context.",
+      "error": "Deletion: '到' at position 4",
+      "reason": "Omitting '到' (arrive/reach) disrupts the grammatical structure and meaning of the sentence, leading to confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to 'drain' at position 8",
+      "reason": "'君' is a Chinese word (meaning 'you' or a respectful form of address), while 'drain' is an English word with no relation, making the sentence incoherent and switching languages.",
       "score": 1
     }
   ]

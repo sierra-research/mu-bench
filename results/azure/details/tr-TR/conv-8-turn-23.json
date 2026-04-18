@@ -2,15 +2,26 @@
   "gold": "Hayır yine yanlış. Zeynep diyorsunuz halbuki adım Zaynep. Z'den sonra A harfi var. E harfi değil.",
   "predicted": "Hayır, yine yanlış Zeynep diyorsunuz. Halbuki adım zaynet z'den sonra a harfi var. E harfi değil.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.17647058823529413,
+  "werEdits": 3,
   "werRefWords": 17,
   "werNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "werNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynet zden sonra a harfi var e harfi değil",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "sigWerNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynet zden sonra a harfi var e harfi değil",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zaynet' at position 7",
+      "reason": "The name 'zaynep' is a proper noun and changing the last letter from 'p' to 't' results in a different name, which could cause confusion but is still recognizable as a minor misspelling.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'den' at position 9",
+      "reason": "The omission of 'den' (meaning 'from' in Turkish) slightly affects the grammatical structure but does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

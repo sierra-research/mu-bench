@@ -2,15 +2,21 @@
   "gold": "不对，我的名字是林梅。",
   "predicted": "不对,我的名字是林美。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
-  "werNormalizedGold": "不 对 我 的 名 字 是 林梅",
-  "werNormalizedPredicted": "不 对 我 的 名 字 是 林梅",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "不对 我的名字是林梅",
+  "werNormalizedPredicted": "不对 我的名字是林美",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "不 对 我 的 名 字 是 林 梅",
-  "sigWerNormalizedPredicted": "不 对 我 的 名 字 是 林 梅",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 对 我 的 名 字 是 林 美",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '梅' to '美' at position 8",
+      "reason": "Both '梅' and '美' are common Chinese surnames or given names, but they are different characters with different meanings. In the context of a name, substituting one character for another changes the person's name, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

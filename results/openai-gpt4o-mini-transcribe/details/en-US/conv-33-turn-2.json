@@ -2,15 +2,21 @@
   "gold": "No. Repeat that, please.",
   "predicted": "Now repeat that, please.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
-  "werNormalizedGold": "now repeat that please",
+  "werNormalizedGold": "no repeat that please",
   "werNormalizedPredicted": "now repeat that please",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "now repeat that please",
+  "sigWerNormalizedGold": "no repeat that please",
   "sigWerNormalizedPredicted": "now repeat that please",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'now' at position 0",
+      "reason": "'No' is a negation, while 'now' refers to time; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

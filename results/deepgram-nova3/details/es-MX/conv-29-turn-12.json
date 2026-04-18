@@ -2,15 +2,26 @@
   "gold": "No, código postal 0 2 860.",
   "predicted": "No, código postal cero dos ochocientos sesenta.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "no codigo postal cero dos ochocientos sesenta",
-  "werNormalizedPredicted": "no codigo postal cero dos ochocientos sesenta",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "no codigo postal cero dos ochocientos sesenta",
-  "sigWerNormalizedPredicted": "no codigo postal cero dos ochocientos sesenta",
-  "sigWerErrors": []
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "no código postal cero dos ocho seis cero",
+  "werNormalizedPredicted": "no código postal cero dos ochocientos sesenta",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "no código postal cero dos ocho seis cero",
+  "sigWerNormalizedPredicted": "no código postal cero dos ochocientos sesenta",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ocho' to 'ochocientos' at position 5",
+      "reason": "'Ocho' means 'eight', while 'ochocientos' means 'eight hundred'; this changes the postal code number significantly, resulting in a different code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cero' at position 7",
+      "reason": "Omitting the final 'cero' (zero) changes the postal code, resulting in a completely different number.",
+      "score": 1
+    }
+  ]
 }

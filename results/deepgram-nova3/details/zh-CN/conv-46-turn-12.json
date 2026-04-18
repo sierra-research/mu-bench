@@ -2,15 +2,21 @@
   "gold": "我的姓名是君玲。",
   "predicted": "我的姓名是君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
   "werRefWords": 7,
   "werNormalizedGold": "我的姓名是君玲",
-  "werNormalizedPredicted": "我的姓名是君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的姓名是君临",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "我 的 姓 名 是 君 玲",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '玲' to '临' at position 6",
+      "reason": "Both '玲' and '临' are Chinese characters and can be used as names, but they are completely different characters with different meanings and pronunciations. Substituting one for the other in a name changes the identity being referred to, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

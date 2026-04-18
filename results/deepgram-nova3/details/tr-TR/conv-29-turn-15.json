@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "hayır evet zaynep nokta arslan olacak",
   "werNormalizedPredicted": "evet ryanap nokta arslan olacak",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "hayır evet zaynep nokta arslan olacak",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'hayır' at position 0",
-      "reason": "'hayır' (no) is omitted, which removes a key part of the meaning and changes the intent of the sentence.",
+      "reason": "'hayır' (no) is omitted, which removes a key part of the sentence and changes the meaning from a statement that includes both 'no' and 'yes' to just 'yes'. This significantly alters the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'zaynep' to 'ryanap' at position 2",
-      "reason": "'zaynep' is a Turkish name, while 'ryanap' is not a valid name and is unrecognizable, making it a significant error for a proper noun.",
+      "reason": "The name 'zaynep' is replaced with 'ryanap', which is a completely different name and could cause confusion or misidentification. This is a significant error for proper nouns.",
       "score": 1
     }
   ]

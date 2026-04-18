@@ -1,16 +1,27 @@
 {
   "gold": "Email là minh trần at Gmail chấm com.",
-  "predicted": "Email là minhchun@gmail.com",
+  "predicted": "Email là minhchanh@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "email là minh chun at gmail chấm com",
-  "werNormalizedPredicted": "email là minh chun at gmail chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "email là minh trần at gmail chấm com",
+  "werNormalizedPredicted": "email là minhchanh at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "email là minh chun at gmail chấm com",
-  "sigWerNormalizedPredicted": "email là minh chun at gmail chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "email là minh trần at gmail chấm com",
+  "sigWerNormalizedPredicted": "email là minhchanh at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'minhchanh' at position 2",
+      "reason": "'minhchanh' is a different name from 'minh', which changes the identity in the email address. This is a significant error as it could result in an incorrect or undeliverable email.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 3",
+      "reason": "'trần' is a key part of the expected name in the email address. Its omission changes the intended recipient, making this a significant error.",
+      "score": 1
+    }
+  ]
 }

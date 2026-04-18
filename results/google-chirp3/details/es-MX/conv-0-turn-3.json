@@ -6,16 +6,21 @@
   "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "c de casa",
-  "werNormalizedPredicted": "en este caso",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "en caso",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "c de casa",
-  "sigWerNormalizedPredicted": "en este caso",
+  "sigWerNormalizedPredicted": "en caso",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'en' at position 0",
-      "reason": "'c de casa' is a letter reference (the letter C as in 'casa'), while 'en este caso' is a completely different phrase in Spanish meaning 'in this case'. The meaning is entirely changed and the reference to the letter is lost.",
+      "reason": "'c' is a letter being referenced, while 'en' is a preposition in Spanish; this changes the meaning entirely and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'casa' at position 2",
+      "reason": "The word 'casa' is omitted, which removes the reference to the example word for the letter 'c', making the intended meaning unclear.",
       "score": 1
     }
   ]

@@ -5,9 +5,9 @@
   "wer": 0.1111111111111111,
   "werEdits": 2,
   "werRefWords": 18,
-  "werNormalizedGold": "收货地址是北京市海淀区北京路一二三号",
-  "werNormalizedPredicted": "收货地址是中国北京市海淀区北京路一二三号",
-  "significantWer": 0.0,
+  "werNormalizedGold": "收货地址是北京市海淀区北京路 一 二 三号",
+  "werNormalizedPredicted": "收货地址是中国北京市海淀区北京路 一 二 三号",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 二 三 号",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '中' at position 5",
-      "reason": "The insertion of '中' (China) before '北京' (Beijing) adds extra geographic information but does not change the meaning of the address, as Beijing is in China. The overall meaning remains clear and correct.",
+      "reason": "The insertion of '中' (China) before '北京' (Beijing) adds extra geographic information but does not change the meaning of the address, as Beijing is in China. The overall meaning and intent remain the same.",
       "score": 2
     }
   ]

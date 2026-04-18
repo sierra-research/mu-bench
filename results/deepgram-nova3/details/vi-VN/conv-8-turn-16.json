@@ -7,7 +7,7 @@
   "werRefWords": 24,
   "werNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
   "werNormalizedPredicted": "chưa số chính sách là một hai ba lê lợi hồ chí minh city dứt code bảy nghìn nghìn nghìn nghìn nghìn việt nam",
-  "significantWer": 0.125,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 24,
   "sigWerNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'xác' to 'sách' at position 3",
-      "reason": "'xác' (exact) and 'sách' (policy/book) are completely different words and change the meaning of the phrase 'số chính xác' (exact number) to 'số chính sách' (policy number), which is a significant change in meaning.",
+      "reason": "'xác' (exact) and 'sách' (policy/book) are completely different words and change the meaning of the phrase 'chính xác' (exact) to 'chính sách' (policy), which derails the intended meaning.",
       "score": 1
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "error": "Substitution: 'không' to 'nghìn' at position 17",
-      "reason": "'không' means 'zero' and 'nghìn' means 'thousand'; substituting all zeros in a zip code with 'thousand' completely changes the meaning and makes the zip code incorrect.",
+      "reason": "'không' means 'zero' and 'nghìn' means 'thousand'; substituting all the zeros in a zip code with 'thousand' changes the numbers entirely, making the zip code incorrect and the information unusable.",
       "score": 1
     }
   ]

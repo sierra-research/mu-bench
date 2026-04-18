@@ -5,27 +5,27 @@
   "wer": 0.5555555555555556,
   "werEdits": 5,
   "werRefWords": 9,
-  "werNormalizedGold": "khong phai minh cham tran at email cham com",
-  "werNormalizedPredicted": "phai minh tran at gmail at gmail com",
-  "significantWer": 0.3333333333333333,
+  "werNormalizedGold": "không phải minh chấm trần at email chấm com",
+  "werNormalizedPredicted": "phải minh trần at gmail at gmail com",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "khong phai minh cham tran at email cham com",
-  "sigWerNormalizedPredicted": "phai minh tran at gmail at gmail com",
+  "sigWerNormalizedGold": "không phải minh chấm trần at email chấm com",
+  "sigWerNormalizedPredicted": "phải minh trần at gmail at gmail com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'khong' at position 0",
-      "reason": "'khong' means 'not' in Vietnamese, and its omission reverses the meaning of the sentence.",
+      "error": "Deletion: 'không' at position 0",
+      "reason": "'không phải' means 'not', so deleting 'không' reverses the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Deletion: 'cham' at position 3",
-      "reason": "'cham' is used to indicate a dot ('.') in email addresses; omitting it makes the email address incorrect.",
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "'chấm' is used to indicate a dot in an email address; omitting it makes the email address incorrect.",
       "score": 1
     },
     {
       "error": "Substitution: 'email' to 'at' at position 6",
-      "reason": "Inserting 'gmail' changes the email domain, which is a significant factual error.",
+      "reason": "Inserting 'gmail' changes the domain of the email address, resulting in an incorrect email.",
       "score": 1
     }
   ]

@@ -2,21 +2,31 @@
   "gold": "Quiero saber cómo puedo aumentar mi línea de crédito.",
   "predicted": "Quiero saber qué puedo aumentar mi línea de crédito.",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "quiero saber como puedo aumentar mi linea de credito",
+  "werNormalizedGold": "quiero saber cómo puedo aumentar mi línea de crédito",
   "werNormalizedPredicted": "quiero saber que puedo aumentar mi linea de credito",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "quiero saber como puedo aumentar mi linea de credito",
+  "sigWerNormalizedGold": "quiero saber cómo puedo aumentar mi línea de crédito",
   "sigWerNormalizedPredicted": "quiero saber que puedo aumentar mi linea de credito",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'como' to 'que' at position 2",
-      "reason": "'como' (how) and 'que' (what/that) are different question words; this changes the meaning of the sentence from asking 'how' to asking 'what/that', which significantly alters the intent of the question.",
+      "error": "Substitution: 'cómo' to 'que' at position 2",
+      "reason": "'cómo' (how) and 'que' (that) are different words and change the meaning of the sentence, making it less clear and potentially confusing.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'línea' to 'linea' at position 6",
+      "reason": "The only difference is the missing accent; the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 8",
+      "reason": "The only difference is the missing accent; the meaning is preserved.",
+      "score": 3
     }
   ]
 }

@@ -1,31 +1,26 @@
 {
   "gold": "Email chưa đúng. Email phải là minh chấm trần a còng email chấm com.",
-  "predicted": "email email chưa đủ, email phải là minh.tran@gmail.com email.com",
+  "predicted": "email chưa đủ, email phải là minh.tran@email.com",
   "unintelligible": false,
-  "wer": 0.35714285714285715,
-  "werEdits": 5,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "email chưa đúng email phải là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email email chưa đủ email phải là minh chấm trần a còng email chấm com email chấm com",
-  "significantWer": 0.07142857142857142,
+  "werNormalizedPredicted": "email chưa đủ email phải là minh chấm tran a còng email chấm com",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "email chưa đúng email phải là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email email chưa đủ email phải là minh chấm trần a còng email chấm com email chấm com",
+  "sigWerNormalizedPredicted": "email chưa đủ email phải là minh chấm tran a còng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'email' at position 1",
-      "reason": "The extra 'email' at the beginning is redundant but does not change the meaning of the sentence.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'đúng' to 'đủ' at position 2",
-      "reason": "'đúng' (correct) and 'đủ' (enough) have different meanings; this changes the meaning of the sentence and could cause misunderstanding.",
+      "reason": "'đúng' means 'correct' and 'đủ' means 'enough'; this changes the meaning of the sentence and could confuse the intent.",
       "score": 1
     },
     {
-      "error": "Insertion: 'email' at position 11",
-      "reason": "The extra 'email' at the end is redundant and does not affect the overall meaning of the sentence.",
+      "error": "Substitution: 'trần' to 'tran' at position 8",
+      "reason": "'trần' is a Vietnamese name with a diacritic, while 'tran' is the same name without the diacritic; this is a minor error as the name is still recognizable.",
       "score": 2
     }
   ]

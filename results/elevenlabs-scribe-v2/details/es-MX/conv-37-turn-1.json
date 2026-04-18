@@ -2,21 +2,31 @@
   "gold": "Pero, ¿por qué no tienes acceso a mi estado de cuenta? ¿No sabes siquiera quién soy?",
   "predicted": "Pero ¿por qué no tienes acceso a mi estado de cuenta? No sabes ni siquiera quién soy",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
+  "wer": 0.1875,
+  "werEdits": 3,
   "werRefWords": 16,
-  "werNormalizedGold": "pero por que no tienes acceso a mi estado de cuenta no sabes siquiera quien soy",
+  "werNormalizedGold": "pero por qué no tienes acceso a mi estado de cuenta no sabes siquiera quién soy",
   "werNormalizedPredicted": "pero por que no tienes acceso a mi estado de cuenta no sabes ni siquiera quien soy",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "pero por que no tienes acceso a mi estado de cuenta no sabes siquiera quien soy",
+  "sigWerNormalizedGold": "pero por qué no tienes acceso a mi estado de cuenta no sabes siquiera quién soy",
   "sigWerNormalizedPredicted": "pero por que no tienes acceso a mi estado de cuenta no sabes ni siquiera quien soy",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'qué' to 'que' at position 2",
+      "reason": "Missing accent mark does not change the meaning in this context; both are understood as 'why'.",
+      "score": 3
+    },
+    {
       "error": "Insertion: 'ni' at position 13",
-      "reason": "The insertion of 'ni' (making 'ni siquiera' instead of 'siquiera') is a minor difference in Spanish. Both 'no sabes siquiera' and 'no sabes ni siquiera' are commonly used and mean essentially the same thing ('you don't even know'). The overall meaning of the sentence does not change.",
+      "reason": "Adding 'ni' ('not even') slightly emphasizes the statement but does not change the overall meaning.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'quién' to 'quien' at position 14",
+      "reason": "Missing accent mark on 'quién' does not change the meaning in this context; both are understood as 'who'.",
+      "score": 3
     }
   ]
 }

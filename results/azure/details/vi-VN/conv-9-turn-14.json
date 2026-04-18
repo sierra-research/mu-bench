@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "có vui lòng hỗ trợ cái này",
   "werNormalizedPredicted": "c c g",
-  "significantWer": 0.2857142857142857,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "có vui lòng hỗ trợ cái này",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'có' to 'c' at position 0",
-      "reason": "'c' is just a single letter and does not convey the meaning of 'có', which is an important word in the sentence. This substitution makes the sentence incoherent.",
+      "reason": "'có' is a word meaning 'have' or 'yes' in Vietnamese, while 'c' is just a single letter and does not convey the same meaning. This substitution makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'hỗ' at position 3",
-      "reason": "'hỗ' is missing, which removes a key part of the phrase and further reduces the sentence's coherence.",
+      "reason": "'hỗ' is part of 'hỗ trợ' (support/assist), and its omission removes a key part of the request, making the sentence incomplete and incoherent.",
       "score": 1
     }
   ]

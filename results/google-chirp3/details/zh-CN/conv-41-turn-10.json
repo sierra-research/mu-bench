@@ -2,21 +2,26 @@
   "gold": "也不对的，我刚才说是我的姓名。",
   "predicted": "你不对的,我刚才说的是我的姓名。",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "也 不 对 的 我 刚才 说 是 我 的 姓名",
-  "werNormalizedPredicted": "你 不 对 的 我 刚才 说 是 我 的 姓名",
-  "significantWer": 0.07692307692307693,
+  "werNormalizedGold": "也不对的 我刚才说是我的姓名",
+  "werNormalizedPredicted": "你不对的 我刚才说的是我的姓名",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "也 不 对 的 我 刚 才 说 是 我 的 姓 名",
-  "sigWerNormalizedPredicted": "你 不 对 的 我 刚 才 说 是 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 不 对 的 我 刚 才 说 的 是 我 的 姓 名",
   "sigWerErrors": [
     {
       "error": "Substitution: '也' to '你' at position 0",
-      "reason": "'也' (also) and '你' (you) are completely different words and change the subject and meaning of the sentence, which can lead to misunderstanding of who or what is being referred to.",
+      "reason": "'也' (also) and '你' (you) are completely different words and change the subject of the sentence, which significantly alters the meaning.",
       "score": 1
+    },
+    {
+      "error": "Insertion: '的' at position 8",
+      "reason": "The extra '的' does not change the overall meaning of the sentence; it is a minor grammatical addition.",
+      "score": 2
     }
   ]
 }

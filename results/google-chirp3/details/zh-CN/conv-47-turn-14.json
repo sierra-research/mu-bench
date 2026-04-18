@@ -2,15 +2,26 @@
   "gold": "是对的，我的邮箱地址是峻岭 at email dot com。",
   "predicted": "是对的,我的邮箱地址是0@email.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "是 对 的 我 的 邮箱 地址 是 峻岭 at email dot com",
-  "werNormalizedPredicted": "是 对 的 我 的 邮箱 地址 是 峻岭 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "是对的 我的邮箱地址是峻岭 at email dot com",
+  "werNormalizedPredicted": "是对的 我的邮箱地址是 零 at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "是 对 的 我 的 邮 箱 地 址 是 峻 岭 at email dot com",
-  "sigWerNormalizedPredicted": "是 对 的 我 的 邮 箱 地 址 是 峻 岭 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 对 的 我 的 邮 箱 地 址 是 零 at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '峻' to '零' at position 10",
+      "reason": "'峻' is a character in a proper noun (likely a name), while '零' means 'zero' and is unrelated. This substitution changes the intended name completely, making it unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '岭' at position 11",
+      "reason": "'岭' is the second character of the proper noun (name). Its omission results in an incomplete or incorrect name, which is a significant error for names or email addresses.",
+      "score": 1
+    }
+  ]
 }

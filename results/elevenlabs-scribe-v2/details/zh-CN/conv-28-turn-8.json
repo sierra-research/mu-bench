@@ -2,15 +2,26 @@
   "gold": "哎呀，是美玲 at email dot com。",
   "predicted": "哎呀，是meiling@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "哎呀 是美玲 at email dot com",
-  "werNormalizedPredicted": "哎呀 是美玲 at email dot com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "哎呀 是 meiling at email dot com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "哎 呀 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "哎 呀 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "哎 呀 是 meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 3",
+      "reason": "The Chinese character '美' (mei) is replaced by the full pinyin 'meiling', which combines both '美' and '玲'. This substitution merges two expected words into one, but the intended name is still clear and recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 4",
+      "reason": "The character '玲' is omitted as it is merged into 'meiling'. However, since 'meiling' represents both '美' and '玲', the meaning is preserved and the name is still correct.",
+      "score": 2
+    }
+  ]
 }

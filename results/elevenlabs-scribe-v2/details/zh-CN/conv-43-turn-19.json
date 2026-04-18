@@ -2,15 +2,21 @@
   "gold": "君，君玲。",
   "predicted": "Jun，Jun Lin。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "君 君玲",
-  "werNormalizedPredicted": "君 君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "jun jun lin",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "君 君 玲",
-  "sigWerNormalizedPredicted": "君 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "jun jun lin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'jun' at position 0",
+      "reason": "'君' is a Chinese character and 'jun' is its romanization (pinyin). While the pronunciation is similar, the script is different and the meaning may not be clear to someone expecting the character. This is a significant error in transcription between scripts.",
+      "score": 1
+    }
+  ]
 }

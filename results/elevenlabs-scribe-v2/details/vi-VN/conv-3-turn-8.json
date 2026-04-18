@@ -7,7 +7,7 @@
   "werRefWords": 14,
   "werNormalizedGold": "email chưa đúng email phải là minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "email email chiêu đâu email của làm bên chấm com account email chấm com",
-  "significantWer": 0.21428571428571427,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "email chưa đúng email phải là minh chấm trần a còng email chấm com",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'chưa' to 'chiêu' at position 1",
-      "reason": "The repeated 'email' does not change the meaning significantly, as it is just a redundant repetition.",
+      "reason": "The extra 'email' does not change the overall meaning, as it is a repetition and does not derail the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'phải' to 'của' at position 4",
-      "reason": "'chưa' means 'not yet' or 'incorrect', while 'chiêu' is unrelated and changes the meaning of the sentence.",
+      "reason": "'chưa' (not yet) and 'chiêu' (trick/shift) are completely different in meaning, which changes the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'trần' to 'com' at position 8",
-      "reason": "'phải' means 'must' or 'should', while 'của' means 'of', which changes the structure and meaning of the sentence.",
+      "reason": "'phải' (must) and 'của' (of) are different in meaning and affect the structure and intent of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'còng' at position 10",
-      "reason": "'trần' is a part of the email username, while 'com' is the domain; this substitution makes the email address incorrect.",
+      "reason": "'trần' is a part of the email username, while 'com' is a domain; this substitution makes the email address incorrect.",
       "score": 1
     }
   ]

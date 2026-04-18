@@ -1,21 +1,26 @@
 {
   "gold": "C N 2 3 5.",
-  "predicted": "Xe nâng hai ba lăm",
+  "predicted": "Xe đời hai ba lăm",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 5,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "c n two three five",
-  "werNormalizedPredicted": "xe nâng hai ba lăm",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n hai ba năm",
+  "werNormalizedPredicted": "xe đời hai ba lăm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n two three five",
-  "sigWerNormalizedPredicted": "xe nâng hai ba lăm",
+  "sigWerNormalizedGold": "c n hai ba năm",
+  "sigWerNormalizedPredicted": "xe đời hai ba lăm",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'xe' at position 0",
-      "reason": "The actual transcription is in a different language (Vietnamese) than the expected (English letters/numbers), making the meaning completely different and incoherent.",
+      "reason": "'c' and 'xe' are completely different words with unrelated meanings, changing the subject of the sentence and derailing the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'năm' to 'lăm' at position 4",
+      "reason": "'năm' means 'five' and 'lăm' is a variant of 'five' used after 'mươi' (e.g., 'twenty five' is 'hai mươi lăm'), but here it is used incorrectly, which changes the meaning of the number and makes the sentence incoherent.",
       "score": 1
     }
   ]

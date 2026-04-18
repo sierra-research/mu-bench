@@ -2,21 +2,26 @@
   "gold": "My mobile banking app. Okay. Can you Alright, let me just open that really quickly.",
   "predicted": "My mobile banking not. Okay, can you? All right, let me just open that really quickly.",
   "unintelligible": false,
-  "wer": 0.06666666666666667,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 3,
   "werRefWords": 15,
   "werNormalizedGold": "my mobile banking app okay can you alright let me just open that really quickly",
-  "werNormalizedPredicted": "my mobile banking not okay can you alright let me just open that really quickly",
-  "significantWer": 0.06666666666666667,
+  "werNormalizedPredicted": "my mobile banking not okay can you all right let me just open that really quickly",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "my mobile banking app okay can you alright let me just open that really quickly",
-  "sigWerNormalizedPredicted": "my mobile banking not okay can you alright let me just open that really quickly",
+  "sigWerNormalizedPredicted": "my mobile banking not okay can you all right let me just open that really quickly",
   "sigWerErrors": [
     {
       "error": "Substitution: 'app' to 'not' at position 3",
-      "reason": "'app' and 'not' are completely different words; substituting 'app' with 'not' changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "Substituting 'app' with 'not' changes the meaning of the sentence, as 'app' refers to the application being discussed, while 'not' negates the previous statement, making the sentence incoherent.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'alright' to 'right' at position 7",
+      "reason": "Inserting 'all' before 'right' does not significantly change the meaning, as 'alright' and 'all right' are commonly used interchangeably.",
+      "score": 3
     }
   ]
 }

@@ -2,31 +2,26 @@
   "gold": "À, thấy rồi. Bây giờ tôi làm gì nữa?",
   "predicted": "Ờ thế rồi bây giờ tôi sẽ nghĩ nữa.",
   "unintelligible": false,
-  "wer": 0.4444444444444444,
-  "werEdits": 4,
-  "werRefWords": 9,
-  "werNormalizedGold": "a thay roi bay gio toi lam gi nua",
-  "werNormalizedPredicted": "the roi bay gio toi se nghi nua",
-  "significantWer": 0.2222222222222222,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "thấy rồi bây giờ tôi làm gì nữa",
+  "werNormalizedPredicted": "thế rồi bây giờ tôi sẽ nghĩ nữa",
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "a thay roi bay gio toi lam gi nua",
-  "sigWerNormalizedPredicted": "the roi bay gio toi se nghi nua",
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "thấy rồi bây giờ tôi làm gì nữa",
+  "sigWerNormalizedPredicted": "thế rồi bây giờ tôi sẽ nghĩ nữa",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'a' to 'the' at position 0",
-      "reason": "'a' is a Vietnamese word meaning 'ah' or an exclamation, while 'the' is an English article; this changes the language and meaning at the start of the sentence.",
+      "error": "Substitution: 'thấy' to 'thế' at position 0",
+      "reason": "'thấy' means 'see' or 'saw', while 'thế' means 'so' or 'then'; this changes the meaning at the start of the sentence and can derail the intended message.",
       "score": 1
     },
     {
-      "error": "Deletion: 'thay' at position 1",
-      "reason": "'thay' means 'see' or 'realize' in Vietnamese; omitting it removes important context from the sentence.",
+      "error": "Substitution: 'làm' to 'sẽ' at position 5",
+      "reason": "'làm' means 'do', while 'sẽ' means 'will'; this changes the action from asking what to do next to what will happen next, altering the intent of the sentence.",
       "score": 1
-    },
-    {
-      "error": "Substitution: 'lam' to 'se' at position 6",
-      "reason": "'lam' means 'do' or 'make', while 'se' means 'will'; this changes the verb tense and the meaning of the action in the sentence.",
-      "score": 2
     }
   ]
 }

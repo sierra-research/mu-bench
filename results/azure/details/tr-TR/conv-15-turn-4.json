@@ -2,15 +2,21 @@
   "gold": "Ahmet nokta Arslan at email nokta com.",
   "predicted": "Ahmet arslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "ahmet arslan at email com",
-  "werNormalizedPredicted": "ahmet arslan at email com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "ahmet arslan at email com",
-  "sigWerNormalizedPredicted": "ahmet arslan at email com",
-  "sigWerErrors": []
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' is missing between 'ahmet' and 'arslan', which could be part of an email address or a name. Its omission may cause confusion or incorrect identification, especially if 'nokta' is meant to represent a dot or separator in an email or username. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -1,13 +1,13 @@
 {
   "gold": "Not alamadım, tekrar eder misin lütfen? Ama Türkçe söyle, İngilizce değil.",
-  "predicted": "Not alalım tekrar eder misin sen? Ama Türkçe söyle, İngilizce değil.",
+  "predicted": "Not alalım, tekrar eder misin sen? Ama Türkçe söyle, İngilizce değil.",
   "unintelligible": false,
   "wer": 0.18181818181818182,
   "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "not alamadım tekrar eder misin lütfen ama türkçe söyle ingilizce değil",
   "werNormalizedPredicted": "not alalım tekrar eder misin sen ama türkçe söyle ingilizce değil",
-  "significantWer": 0.18181818181818182,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "not alamadım tekrar eder misin lütfen ama türkçe söyle ingilizce değil",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'alamadım' to 'alalım' at position 1",
-      "reason": "'alamadım' means 'I couldn't get (it)' while 'alalım' means 'let's take (it)'; this changes the meaning of the sentence significantly.",
+      "reason": "'alamadım' means 'I couldn't get' or 'I didn't understand', while 'alalım' means 'let's take'. This changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'lütfen' to 'sen' at position 5",
-      "reason": "'lütfen' means 'please', which is a polite request, while 'sen' means 'you', which changes the tone and meaning of the request.",
+      "reason": "'lütfen' means 'please', while 'sen' means 'you'. This changes the politeness and the subject of the sentence, altering the meaning.",
       "score": 1
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 15,
   "werNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
   "werNormalizedPredicted": "hayır beni dinle sonuç tam olarak söylemem lazım beni sonuna kadar dinle adresi tekrar söylüyorum anladın mı",
-  "significantWer": 0.13333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "hayır beni dinle tam olarak söylemem lazım beni sonuna kadar dinle adresimi tekrar söylüyorum anna",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'sonuç' at position 3",
-      "reason": "'sonuç' (meaning 'result') is inserted and changes the meaning of the sentence, making it incoherent in context.",
+      "reason": "The word 'sonuç' (meaning 'result') is inserted and does not fit the context, making the sentence less coherent and potentially confusing the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'adresimi' to 'adresi' at position 11",
-      "reason": "'adresimi' (my address) is changed to 'adresi' (the address), which is a minor grammatical error but does not significantly change the meaning.",
+      "reason": "'adresimi' means 'my address' while 'adresi' means 'the address'; this changes the reference from personal to general, but the overall meaning is still understandable.",
       "score": 2
     },
     {
       "error": "Substitution: 'anna' to 'mı' at position 14",
-      "reason": "The insertion of 'anladın' (did you understand) adds a new question to the end, which changes the intent of the sentence.",
+      "reason": "'anladın' (meaning 'did you understand') is an extra phrase that changes the intent of the sentence by turning a statement into a question, which alters the meaning significantly.",
       "score": 1
     }
   ]

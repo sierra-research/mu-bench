@@ -5,9 +5,9 @@
   "wer": 0.4444444444444444,
   "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "我 已经 几 次 说 了 哎呀",
-  "werNormalizedPredicted": "我 已 谨 记 次 说 了",
-  "significantWer": 0.1111111111111111,
+  "werNormalizedGold": "我已经几次说了 哎呀",
+  "werNormalizedPredicted": "我已谨记次说了",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "我 已 经 几 次 说 了 哎 呀",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '经' to '谨' at position 2",
-      "reason": "'经' (already) and '谨' (cautiously) are completely different in meaning and change the sense of the sentence, making it confusing or incoherent.",
+      "reason": "'经' and '谨' are different words with different meanings. This substitution changes the meaning of the phrase and could cause confusion in understanding.",
       "score": 1
     },
     {
       "error": "Deletion: '哎' at position 7",
-      "reason": "'哎' is an interjection expressing emotion or emphasis; its omission slightly reduces the expressiveness but does not change the core meaning of the sentence.",
+      "reason": "'哎' is an interjection that adds emotional tone but does not change the core meaning of the sentence. Its omission is a minor error.",
       "score": 2
     }
   ]

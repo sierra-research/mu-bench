@@ -2,41 +2,41 @@
   "gold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
   "predicted": "Vậy tôi muốn Xem là thể hiện tại khi chừng nào thì mới có cái rẫy đấy.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 6,
+  "wer": 0.5833333333333334,
+  "werEdits": 7,
   "werRefWords": 12,
   "werNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
-  "werNormalizedPredicted": "vậy tôi muốn xem là thẻ hiện tại khi chừng nào thì mới có cái rẫy đấy",
-  "significantWer": 0.08333333333333333,
+  "werNormalizedPredicted": "vậy tôi muốn xem là thể hiện tại khi chừng nào thì mới có cái rẫy đấy",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
-  "sigWerNormalizedPredicted": "vậy tôi muốn xem là thẻ hiện tại khi chừng nào thì mới có cái rẫy đấy",
+  "sigWerNormalizedPredicted": "vậy tôi muốn xem là thể hiện tại khi chừng nào thì mới có cái rẫy đấy",
   "sigWerErrors": [
     {
       "error": "Insertion: 'vậy' at position 0",
-      "reason": "'vậy' adds a conversational filler at the start, does not change the main meaning.",
+      "reason": "'vậy' adds an introductory word that does not change the main meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'là' at position 3",
-      "reason": "'là' is a minor grammatical addition, does not affect the meaning.",
-      "score": 3
+      "error": "Substitution: 'thẻ' to 'thể' at position 3",
+      "reason": "'là' is a filler word here and does not affect the overall meaning.",
+      "score": 2
     },
     {
       "error": "Insertion: 'khi' at position 6",
-      "reason": "'khi' is an unnecessary word here, but does not change the intent of the question.",
-      "score": 2
+      "reason": "'thẻ' (card) and 'thể' (form/body) are different words and change the meaning of the sentence significantly.",
+      "score": 1
     },
     {
       "error": "Insertion: 'thì' at position 8",
-      "reason": "'thì' is a discourse marker, does not affect the meaning.",
-      "score": 3
+      "reason": "'khi' (when) is redundant with 'chừng nào' (when), but does not change the meaning.",
+      "score": 2
     },
     {
       "error": "Substitution: 'thẻ' to 'đấy' at position 11",
-      "reason": "'rẫy' (field/farm) is a completely different word from 'thẻ' (card), which changes the meaning of what is being asked about.",
-      "score": 1
+      "reason": "'thì' is a discourse marker and does not affect the main meaning.",
+      "score": 2
     }
   ]
 }

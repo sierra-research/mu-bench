@@ -2,25 +2,30 @@
   "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
   "predicted": "Anna son transferinde biraz gecikme olmuştu. Son transferimi göz atar mısın? Bana email'e gönderebilir misin son transferim detaylarını?",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 4,
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
   "werRefWords": 18,
   "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
-  "werNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi göz atar mısın bana email gönderir misin son transferim detaylarını",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi göz atar mısın bana emaile gönderebilir misin son transferim detaylarını",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
-  "sigWerNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi göz atar mısın bana email gönderir misin son transferim detaylarını",
+  "sigWerNormalizedPredicted": "anna son transferinde biraz gecikme olmuştu son transferimi göz atar mısın bana emaile gönderebilir misin son transferim detaylarını",
   "sigWerErrors": [
     {
       "error": "Substitution: 'bir' to 'göz' at position 8",
-      "reason": "'bir gösterir misin' means 'can you show me', while 'göz atar mısın' means 'can you take a look'. The intent is similar (asking for help to check something), so the overall meaning is preserved.",
+      "reason": "'bir gösterir misin' means 'can you show me one', while 'göz atar mısın' means 'can you take a look'. The intent changes from asking to show to asking to look, but the overall meaning (requesting an action regarding the transfer) is similar and does not derail the sentence.",
       "score": 2
     },
     {
+      "error": "Substitution: 'email' to 'emaile' at position 12",
+      "reason": "'emaile' is a minor grammatical error (dative case in Turkish), but the meaning is clear and unchanged.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'transferin' to 'transferim' at position 16",
-      "reason": "'transferin' means 'your transfer', while 'transferim' means 'my transfer'. This changes the subject of the transfer, which can affect the meaning of the sentence significantly.",
+      "reason": "'transferin' (your transfer) vs 'transferim' (my transfer) changes the subject of the transfer, which can cause confusion about whose transfer is being discussed. This is a significant error as it can change the meaning of the request.",
       "score": 1
     }
   ]

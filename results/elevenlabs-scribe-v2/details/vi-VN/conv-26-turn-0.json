@@ -2,25 +2,30 @@
   "gold": "Chào Anna nhé. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng. Bạn có thể xem giúp mình cần chuẩn bị những gì không?",
   "predicted": "Chào Anna nhỉ. Mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng. Bạn có thể xem là giúp mình cần những-- chuẩn bị những gì không?",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 2,
+  "wer": 0.09375,
+  "werEdits": 3,
   "werRefWords": 32,
   "werNormalizedGold": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem giúp mình cần chuẩn bị những gì không",
-  "werNormalizedPredicted": "chào anna nhỉ mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem là giúp mình cần chuẩn bị những gì không",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "chào anna nhỉ mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem là giúp mình cần những chuẩn bị những gì không",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "chào anna nhé mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem giúp mình cần chuẩn bị những gì không",
-  "sigWerNormalizedPredicted": "chào anna nhỉ mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem là giúp mình cần chuẩn bị những gì không",
+  "sigWerNormalizedPredicted": "chào anna nhỉ mình đang muốn tối ưu chi tiêu cá nhân và muốn tăng hạn mức thẻ tín dụng bạn có thể xem là giúp mình cần những chuẩn bị những gì không",
   "sigWerErrors": [
     {
       "error": "Substitution: 'nhé' to 'nhỉ' at position 2",
-      "reason": "'Nhé' and 'nhỉ' are both Vietnamese sentence-ending particles with different nuances. The substitution does not change the overall meaning of the sentence, just the tone.",
+      "reason": "'Nhé' and 'nhỉ' are both Vietnamese sentence-ending particles with similar softening or polite effects. The substitution does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: 'là' at position 24",
-      "reason": "The insertion of 'là' ('xem là giúp mình') is a minor grammatical change that does not alter the main meaning of the sentence.",
+      "reason": "The insertion of 'là' (meaning 'is/that') slightly changes the sentence structure but does not affect the overall meaning or intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'những' at position 27",
+      "reason": "The extra 'những' (a plural marker) is redundant but does not change the meaning of the sentence.",
       "score": 2
     }
   ]

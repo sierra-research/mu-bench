@@ -7,21 +7,21 @@
   "werRefWords": 4,
   "werNormalizedGold": "rồi tôi sẵn sàng",
   "werNormalizedPredicted": "dạ tôi xin chào anh",
-  "significantWer": 0.5,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "rồi tôi sẵn sàng",
   "sigWerNormalizedPredicted": "dạ tôi xin chào anh",
   "sigWerErrors": [
     {
       "error": "Substitution: 'rồi' to 'dạ' at position 0",
-      "reason": "'rồi' means 'then' or 'already', while 'dạ' is a polite particle, so the meaning of the sentence changes significantly.",
+      "reason": "'rồi' (then/already) and 'dạ' (yes/sir) are completely different in meaning and change the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'sẵn' to 'chào' at position 2",
-      "reason": "'xin' (please) is an extra word not present in the expected sentence, further changing the meaning.",
-      "score": 1
+      "reason": "'xin' (please) is an extra word not present in the expected sentence and changes the meaning and politeness level.",
+      "score": 2
     }
   ]
 }

@@ -5,32 +5,32 @@
   "wer": 0.4166666666666667,
   "werEdits": 5,
   "werRefWords": 12,
-  "werNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "werNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
   "werNormalizedPredicted": "no no te falta te falta el punto punto loco arroba email punto com",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
+  "sigWerNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
   "sigWerNormalizedPredicted": "no no te falta te falta el punto punto loco arroba email punto com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 1",
-      "reason": "The extra 'no' introduces a negation that could confuse the meaning, but the overall intent is still understandable.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: 'te' at position 3",
-      "reason": "Repeating 'te falta' is redundant but does not change the overall meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'maria' at position 5",
-      "reason": "Omitting 'maria' from the email address changes the actual email, which is a significant error.",
+      "reason": "The extra 'no' introduces a negation that could confuse the meaning of the sentence, making it less clear.",
       "score": 1
     },
     {
-      "error": "Substitution: 'lopez' to 'loco' at position 7",
-      "reason": "Replacing 'lopez' with 'loco' in the email address results in a completely different and incorrect email, which is a significant error.",
+      "error": "Insertion: 'te' at position 3",
+      "reason": "Repeating 'te falta' does not significantly change the meaning, but it is a minor redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'maría' at position 5",
+      "reason": "Omitting the name 'maría' from the email address changes the actual email, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lópez' to 'loco' at position 7",
+      "reason": "Substituting 'lópez' (a surname) with 'loco' (meaning 'crazy') in an email address completely changes the intended address and meaning.",
       "score": 1
     }
   ]

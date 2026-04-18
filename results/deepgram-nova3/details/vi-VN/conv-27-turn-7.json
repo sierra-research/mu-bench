@@ -7,7 +7,7 @@
   "werRefWords": 18,
   "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín mươi một một hai ba bốn năm sáu nghìn trăm tám",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'mươi' at position 9",
-      "reason": "The insertion of 'mươi' changes the number sequence from 'chín một một' (911) to 'chín mươi một một' (91 1), which alters the intended phone number.",
+      "reason": "Inserting 'mươi' (which means 'ten') changes the number sequence, resulting in an incorrect phone number.",
       "score": 1
     },
     {
       "error": "Substitution: 'bảy' to 'trăm' at position 16",
-      "reason": "The insertion of 'nghìn' (thousand) in a phone number context introduces a word that does not belong, making the number incoherent.",
+      "reason": "Inserting 'nghìn' (which means 'thousand') alters the number sequence, making the phone number incorrect.",
       "score": 1
     }
   ]

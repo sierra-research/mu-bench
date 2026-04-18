@@ -2,25 +2,30 @@
   "gold": "Oh, hold on. Don't mind that dogs snoring in the background. That thing, my dog is loud. Sorry about that. Go ahead.",
   "predicted": "Oh, hold on. Don't don't don't mind that dog snoring in the background. That thing I my dog is loud. Sorry about that. Go ahead.",
   "unintelligible": false,
-  "wer": 0.21739130434782608,
-  "werEdits": 5,
+  "wer": 0.2608695652173913,
+  "werEdits": 6,
   "werRefWords": 23,
-  "werNormalizedGold": "oh hold on do not mind that dog snoring in the background that thing my dog is loud sorry about that go ahead",
+  "werNormalizedGold": "oh hold on do not mind that dogs snoring in the background that thing my dog is loud sorry about that go ahead",
   "werNormalizedPredicted": "oh hold on do not do not do not mind that dog snoring in the background that thing i my dog is loud sorry about that go ahead",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "oh hold on do not mind that dog snoring in the background that thing my dog is loud sorry about that go ahead",
+  "sigWerNormalizedGold": "oh hold on do not mind that dogs snoring in the background that thing my dog is loud sorry about that go ahead",
   "sigWerNormalizedPredicted": "oh hold on do not do not do not mind that dog snoring in the background that thing i my dog is loud sorry about that go ahead",
   "sigWerErrors": [
     {
       "error": "Insertion: 'do' at position 5",
-      "reason": "The repeated 'do not' does not change the overall meaning of the sentence, as it is a repetition/disfluency that does not derail the meaning.",
+      "reason": "The repeated 'do not' is a disfluency but does not change the meaning of the sentence; it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dogs' to 'dog' at position 7",
+      "reason": "Singular vs plural, but the meaning is clear in context; minor error.",
       "score": 2
     },
     {
       "error": "Insertion: 'i' at position 14",
-      "reason": "The insertion of 'i' before 'my dog is loud' is a minor disfluency and does not change the meaning of the sentence.",
+      "reason": "The extra 'i' is a disfluency and does not affect the meaning of the sentence; minor error.",
       "score": 2
     }
   ]

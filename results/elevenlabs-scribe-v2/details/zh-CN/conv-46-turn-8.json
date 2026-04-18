@@ -5,9 +5,9 @@
   "wer": 0.4,
   "werEdits": 4,
   "werRefWords": 10,
-  "werNormalizedGold": "你 可以 再 重复 我 的 姓名",
-  "werNormalizedPredicted": "你 可以 在 重复 的 心灵",
-  "significantWer": 0.3,
+  "werNormalizedGold": "你可以再重复我的姓名",
+  "werNormalizedPredicted": "你可以在重复的心灵",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "你 可 以 再 重 复 我 的 姓 名",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '再' to '在' at position 3",
-      "reason": "These are different words with different meanings ('again' vs. 'at/in'), which changes the intent of the sentence.",
+      "reason": "'再' (again) and '在' (at/in) are different words and change the meaning of the sentence, leading to confusion about the action being repeated.",
       "score": 1
     },
     {
       "error": "Deletion: '我' at position 6",
-      "reason": "Omitting '我' ('I' or 'my') removes the subject/possessor, making the sentence unclear and changing the meaning.",
+      "reason": "Omitting '我' (me/my) removes the subject/possessor, making the sentence unclear about whose name is being repeated.",
       "score": 1
     },
     {
       "error": "Substitution: '姓' to '心' at position 8",
-      "reason": "'姓' means 'surname' and '心' means 'heart', which are completely unrelated and change the meaning of the sentence.",
+      "reason": "'姓' (surname) and '心' (heart) are completely different in meaning, which derails the intended meaning of the sentence.",
       "score": 1
     }
   ]

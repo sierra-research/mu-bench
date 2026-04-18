@@ -2,15 +2,26 @@
   "gold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
   "predicted": "Ơ, ơ tôi không cần, nhưng mà tôi cần a-- tại vì tôi không có biết in nên là tôi muốn a, được hỗ trợ để in ra giấy",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 5,
   "werRefWords": 20,
   "werNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
-  "werNormalizedPredicted": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
-  "sigWerNormalizedPredicted": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nhưng' at position 3",
+      "reason": "The insertion of 'nhưng' (but) introduces a contrast that was not present in the original sentence, potentially changing the meaning and coherence of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'có' at position 7",
+      "reason": "The insertion of 'có' (have) does not significantly change the meaning of the sentence, as 'không biết in' and 'không có biết in' are both commonly used and understood as 'do not know how to print' in Vietnamese.",
+      "score": 3
+    }
+  ]
 }

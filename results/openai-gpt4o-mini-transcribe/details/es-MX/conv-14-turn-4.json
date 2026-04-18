@@ -1,16 +1,37 @@
 {
   "gold": "Es en el banco. Ah ya. Es María punto López arroba email punto com.",
-  "predicted": "es en el banco... Ah, ya. Es Maria.Lopez@gmail.com.",
+  "predicted": "Es en el banco, ah, ya. es maria.lopez@gmail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
-  "werNormalizedGold": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es en el banco ya es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es en el banco ah ya es maria punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es en el banco ya es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'ah' at position 4",
+      "reason": "'ah' is a filler word and its omission does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 7",
+      "reason": "Accent is missing but the name is still clearly recognizable and unchanged in meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 9",
+      "reason": "Accent is missing but the surname is still clearly recognizable and unchanged in meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 11",
+      "reason": "Changing 'email' to 'gmail' changes the actual email address, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

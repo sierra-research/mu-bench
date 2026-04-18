@@ -1,16 +1,22 @@
 {
   "gold": "Có. Vui lòng chuyển qua cho nhân viên.",
-  "predicted": "Có vui lòng chuyển qua cho nhân viên.",
+  "predicted": "Có buồn lòng chuyển qua cho nhân viên.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
   "werNormalizedGold": "có vui lòng chuyển qua cho nhân viên",
-  "werNormalizedPredicted": "có vui lòng chuyển qua cho nhân viên",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "có buồn lòng chuyển qua cho nhân viên",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "có vui lòng chuyển qua cho nhân viên",
-  "sigWerNormalizedPredicted": "có vui lòng chuyển qua cho nhân viên",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "có buồn lòng chuyển qua cho nhân viên",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'buồn' at position 1",
+      "reason": "'vui' means 'happy' and 'buồn' means 'sad'; this substitution changes the sentiment and meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

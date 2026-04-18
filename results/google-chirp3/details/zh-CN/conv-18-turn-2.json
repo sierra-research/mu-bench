@@ -5,22 +5,22 @@
   "wer": 0.4,
   "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n 负 zero zero",
-  "werNormalizedPredicted": "a n two zero zero",
-  "significantWer": 0.4,
+  "werNormalizedGold": "c n 负 零 零",
+  "werNormalizedPredicted": "a n 二 零 零",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n 负 zero zero",
-  "sigWerNormalizedPredicted": "a n two zero zero",
+  "sigWerNormalizedGold": "c n 负 零 零",
+  "sigWerNormalizedPredicted": "a n 二 零 零",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'a' at position 0",
-      "reason": "Spelled-out letter error; a single letter difference in a sequence changes the meaning significantly, especially for codes or identifiers.",
+      "reason": "In a spelled-out sequence, substituting 'c' with 'a' changes the intended letter, which is a significant error.",
       "score": 1
     },
     {
-      "error": "Substitution: '负' to 'two' at position 2",
-      "reason": "'负' is a Chinese character meaning 'negative' or 'minus', while 'two' is a number; this is a significant semantic error that changes the meaning completely.",
+      "error": "Substitution: '负' to '二' at position 2",
+      "reason": "'负' (negative) and '二' (two) are completely different in meaning, especially in a sequence of numbers or codes, making this a significant error.",
       "score": 1
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "Tekrarlıyorum. C E T 4 8 9.",
   "predicted": "Tekrarlıyorum, CEAT dört sekiz dokuz.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
   "werRefWords": 7,
   "werNormalizedGold": "tekrarlıyorum c e t dört sekiz dokuz",
-  "werNormalizedPredicted": "tekrarlıyorum c e t dört sekiz dokuz",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tekrarlıyorum c e a t dört sekiz dokuz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "tekrarlıyorum c e t dört sekiz dokuz",
-  "sigWerNormalizedPredicted": "tekrarlıyorum c e t dört sekiz dokuz",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tekrarlıyorum c e a t dört sekiz dokuz",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'a' at position 3",
+      "reason": "An extra letter 'a' is inserted in a spelled-out sequence, which changes the intended sequence of letters. In spelled-out sequences, any extra or missing letter is a significant error as it alters the information being conveyed.",
+      "score": 1
+    }
+  ]
 }

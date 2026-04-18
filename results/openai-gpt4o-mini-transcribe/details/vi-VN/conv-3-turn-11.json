@@ -1,16 +1,27 @@
 {
   "gold": "Email là minh chấm trần.",
-  "predicted": "email là minh.gon",
+  "predicted": "email là minh.gm",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
   "werNormalizedGold": "email là minh chấm trần",
-  "werNormalizedPredicted": "email là minh chấm trần",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minh gm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "email là minh chấm trần",
-  "sigWerNormalizedPredicted": "email là minh chấm trần",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minh gm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'gm' at position 3",
+      "reason": "'chấm' means 'dot' ('.') in Vietnamese, which is a critical part of an email address. 'gm' is not a valid substitution and changes the meaning entirely, making the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 4",
+      "reason": "Omitting 'trần', which is likely a surname or part of the email address, results in an incomplete or incorrect email address, significantly altering the intended information.",
+      "score": 1
+    }
+  ]
 }

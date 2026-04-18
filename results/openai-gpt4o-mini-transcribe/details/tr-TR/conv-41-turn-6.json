@@ -1,16 +1,27 @@
 {
   "gold": "K G mi K B mi?",
-  "predicted": "Kaği mi, kabe mi?",
+  "predicted": "Kağ mı, Kabe mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "k g mi k b mi",
-  "werNormalizedPredicted": "k g mi k b mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "kağ mı kabe mi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "k g mi k b mi",
-  "sigWerNormalizedPredicted": "k g mi k b mi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "kağ mı kabe mi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'k' to 'kağ' at position 0",
+      "reason": "'kağ' is a different word from 'k', and may confuse the meaning, especially if these are meant to be spelled-out letters or abbreviations. This is a significant error if the context is spelling or code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'k' at position 3",
+      "reason": "The expected 'k' is a letter, while 'mi' is a question particle. This changes the intended meaning, especially if the context is spelling or code.",
+      "score": 1
+    }
+  ]
 }

@@ -2,20 +2,30 @@
   "gold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
   "predicted": "maylingimail。com是我的邮箱地址。",
   "unintelligible": false,
-  "wer": 0.35,
-  "werEdits": 7,
-  "werRefWords": 20,
-  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern i will get it",
-  "werNormalizedPredicted": "美玲 at email dot com 是我的邮箱地址",
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern i will get it",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com 是 我 的 邮 箱 地 址",
+  "wer": 0.5789473684210527,
+  "werEdits": 11,
+  "werRefWords": 19,
+  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern ill get it",
+  "werNormalizedPredicted": "maylingimail com 是我的邮箱地址",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern ill get it",
+  "sigWerNormalizedPredicted": "maylingimail com 是 我 的 邮 箱 地 址",
   "sigWerErrors": [
     {
+      "error": "Substitution: '美' to 'maylingimail' at position 0",
+      "reason": "'美' is a Chinese character (likely part of a name), while 'maylingimail' is an English string that appears to be an email username. This is a significant change and makes the meaning unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is the second character of the name, and its omission changes the name entirely, which is significant for identification.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'when' at position 13",
-      "reason": "The phrase 'when i concern i will get it' is missing from the actual transcription. This omission removes information about when the speaker will receive the email, which is important for understanding the full meaning of the sentence.",
+      "reason": "The phrase 'when i concern ill get it' is omitted, which removes information about when the person will get the email. This is a significant omission affecting the meaning.",
       "score": 1
     }
   ]

@@ -2,15 +2,31 @@
   "gold": "是美玲 at email dot com。",
   "predicted": "是maylingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "是美玲 at email dot com",
-  "werNormalizedPredicted": "是美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是 mayling email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 mayling email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mayling' at position 1",
+      "reason": "'美' is a Chinese character and 'mayling' is an attempt to phonetically represent the full name '美玲' in English, but it does not accurately capture the original meaning or spelling. This could cause confusion about the person's name.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "Omitting '玲' means the full name is not transcribed, which is a significant error for names.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 5",
+      "reason": "Missing 'dot' in an email address can cause the email to be unusable or misunderstood.",
+      "score": 1
+    }
+  ]
 }

@@ -2,20 +2,25 @@
   "gold": "Tabii. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "Bak. Artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "unintelligible": false,
-  "wer": 0.07142857142857142,
-  "werEdits": 1,
-  "werRefWords": 14,
-  "werNormalizedGold": "tabii arti dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
-  "werNormalizedPredicted": "bak arti dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "tabii arti dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
-  "sigWerNormalizedPredicted": "bak arti dokuz sifir bir iki uc sifir dokuz sifir dort bes alti yedi",
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "tabii artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedPredicted": "bak artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "tabii artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedPredicted": "bak artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tabii' to 'bak' at position 0",
-      "reason": "'tabii' (meaning 'of course' in Turkish) and 'bak' (meaning 'look') are completely different words and change the meaning of the sentence significantly.",
+      "reason": "'tabii' (meaning 'of course' in Turkish) and 'bak' (meaning 'look') are completely different words and change the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 2",
+      "reason": "The insertion of 'dokuz' (nine) changes the sequence of numbers, which is critical in contexts like phone numbers or codes.",
       "score": 1
     }
   ]

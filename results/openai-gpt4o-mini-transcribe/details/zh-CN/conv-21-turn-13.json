@@ -1,16 +1,22 @@
 {
   "gold": "林美 at E M A I L 点 C O M。",
-  "predicted": "林美爱iemail.com",
+  "predicted": "林美爱email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08333333333333333,
+  "werEdits": 1,
   "werRefWords": 12,
   "werNormalizedGold": "林美 at e m a i l 点 c o m",
-  "werNormalizedPredicted": "林美 at e m a i l 点 c o m",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "林美爱 e m a i l 点 c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "林 美 at e m a i l 点 c o m",
-  "sigWerNormalizedPredicted": "林 美 at e m a i l 点 c o m",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "林 美 爱 e m a i l 点 c o m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to '爱' at position 2",
+      "reason": "'at' is the English word for the '@' symbol in an email address, while '爱' means 'love' in Chinese and is unrelated. This substitution makes the email address incorrect and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

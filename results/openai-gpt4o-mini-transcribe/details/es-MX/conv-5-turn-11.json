@@ -1,21 +1,31 @@
 {
   "gold": "¿En dónde lo harías, por mail o la app?",
-  "predicted": "¿En dónde lo harías? ¿por mail o por colab?",
+  "predicted": "¿En dónde lo harías? ¿Por mail o por colab?",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "en donde lo harias por mail o la app",
+  "werNormalizedGold": "en dónde lo harías por mail o la app",
   "werNormalizedPredicted": "en donde lo harias por mail o por colab",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "en donde lo harias por mail o la app",
+  "sigWerNormalizedGold": "en dónde lo harías por mail o la app",
   "sigWerNormalizedPredicted": "en donde lo harias por mail o por colab",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'dónde' to 'donde' at position 1",
+      "reason": "Accent missing in 'donde', but meaning is unchanged in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'harías' to 'harias' at position 3",
+      "reason": "Accent missing in 'harias', but meaning is unchanged in context.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'la' to 'por' at position 7",
-      "reason": "The substitution of 'la' (the) with 'por' (by/for) changes the structure of the sentence, and in this context, it alters the meaning by introducing a new preposition, making the sentence less coherent and potentially confusing. This is a significant error.",
+      "reason": "Changes the object from 'the app' to 'by colab', which alters the meaning of the sentence.",
       "score": 1
     }
   ]

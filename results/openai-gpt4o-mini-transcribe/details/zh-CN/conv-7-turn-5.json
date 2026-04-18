@@ -1,16 +1,27 @@
 {
   "gold": "C N 3 7 8 9。",
-  "predicted": "西恩三七霸州。",
+  "predicted": "CNN份巴州。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
-  "werNormalizedGold": "西恩三七八九",
-  "werNormalizedPredicted": "西恩三七八九",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 三 七 八 九",
+  "werNormalizedPredicted": "c n 份 巴 州",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "西 恩 三 七 八 九",
-  "sigWerNormalizedPredicted": "西 恩 三 七 八 九",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 三 七 八 九",
+  "sigWerNormalizedPredicted": "c n 份 巴 州",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '三' to '份' at position 2",
+      "reason": "'三' means 'three' and '份' means 'portion' or 'copy'; this is a substitution of a number with an unrelated word, which significantly changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '九' at position 5",
+      "reason": "'九' means 'nine' and is missing in the actual transcription, which omits part of the intended sequence of numbers, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
 }

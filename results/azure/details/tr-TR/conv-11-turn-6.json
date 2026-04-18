@@ -7,7 +7,7 @@
   "werRefWords": 19,
   "werNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
   "werNormalizedPredicted": "hayır ikinci artırayım bu defa ikinci harfini yanlış söylediniz adi ikinci harfi e değil a olacak zeynep arslan",
-  "significantWer": 0.15789473684210525,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'harfim' to 'artırayım' at position 2",
-      "reason": "'harfim' (my letter) is replaced with 'artırayım' (let me increase), which changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "'harfim' (my letter) and 'artırayım' (let me increase) are completely different words and meanings; this substitution makes the sentence incoherent and changes the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'a' to 'adi' at position 9",
-      "reason": "'a' (the letter) is replaced with 'adi' (which means 'its name' or 'ordinary'), which changes the meaning and disrupts the spelling context.",
+      "reason": "'a' is a single letter, while 'adi' is a word meaning 'ordinary' or 'name' in Turkish; this substitution changes the meaning and disrupts the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'değil' at position 10",
-      "reason": "Omitting 'değil' (not) changes the logical structure of the sentence, potentially reversing the intended meaning.",
+      "reason": "Omitting 'değil' (not) reverses the meaning of the sentence, which is significant for understanding.",
       "score": 1
     },
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 17",
-      "reason": "Minor misspelling of a proper noun, but the name is still recognizable.",
+      "reason": "Minor misspelling of a proper noun; the name is still recognizable and does not change the meaning.",
       "score": 2
     }
   ]

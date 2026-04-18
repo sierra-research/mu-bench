@@ -2,21 +2,26 @@
   "gold": "Este ¿ya terminado aquí entonces?",
   "predicted": "Este, ¿ya terminamos aquí entonces?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "este ya terminado aqui entonces",
-  "werNormalizedPredicted": "este ya terminamos aqui entonces",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "este ya terminado aquí entonces",
+  "werNormalizedPredicted": "ya terminamos aquí entonces",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "este ya terminado aqui entonces",
-  "sigWerNormalizedPredicted": "este ya terminamos aqui entonces",
+  "sigWerNormalizedGold": "este ya terminado aquí entonces",
+  "sigWerNormalizedPredicted": "ya terminamos aquí entonces",
   "sigWerErrors": [
     {
+      "error": "Deletion: 'este' at position 0",
+      "reason": "Omitting 'este' (this) removes the subject of the sentence, which can change the meaning and clarity of what is finished. This is a significant error.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'terminado' to 'terminamos' at position 2",
-      "reason": "'Terminado' (finished) is a past participle, while 'terminamos' (we finished) is a verb in first person plural past tense. In this context, both indicate that something is finished, and the overall meaning of the sentence remains the same.",
-      "score": 3
+      "reason": "'Terminado' (finished) is a past participle, while 'terminamos' (we finished) is a verb in first person plural. This changes the grammatical structure and meaning, shifting from a description to an action. This is a significant error.",
+      "score": 1
     }
   ]
 }

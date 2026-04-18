@@ -2,15 +2,26 @@
   "gold": "我知道，我现在说是我的邮箱地址，是美玲 at email dot com。",
   "predicted": "哦，我知道，我现在说是我的邮箱地址，是meiling@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09523809523809523,
+  "werEdits": 2,
   "werRefWords": 21,
-  "werNormalizedGold": "我 知道 我 现在 说 是 我 的 邮箱 地址 是 美玲 at email dot com",
-  "werNormalizedPredicted": "我 知道 我 现在 说 是 我 的 邮箱 地址 是 美玲 at email dot com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "我知道 我现在说是我的邮箱地址 是美玲 at email dot com",
+  "werNormalizedPredicted": "我知道 我现在说是我的邮箱地址 是 meiling at email dot com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "我 知 道 我 现 在 说 是 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "我 知 道 我 现 在 说 是 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 知 道 我 现 在 说 是 我 的 邮 箱 地 址 是 meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 15",
+      "reason": "The expected word is the Chinese character '美', but the actual transcription uses the full pinyin 'meiling', which represents both '美' and '玲' together. This is a minor error because the meaning (the name) is still clear, just represented in a different script.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 16",
+      "reason": "The character '玲' is missing in the actual transcription, but since 'meiling' in pinyin covers both '美玲', the name is still conveyed. This is a minor error as the meaning is preserved, just in a different form.",
+      "score": 2
+    }
+  ]
 }

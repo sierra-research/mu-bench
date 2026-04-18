@@ -1,16 +1,22 @@
 {
   "gold": "邮箱地址为林点美 at。",
-  "predicted": "邮箱地址为零.美@",
+  "predicted": "邮箱地址为零.美at",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "邮箱地址为林点美 at",
-  "werNormalizedPredicted": "邮箱地址为林点美 at",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "邮箱地址为零点美 at",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "邮 箱 地 址 为 林 点 美 at",
-  "sigWerNormalizedPredicted": "邮 箱 地 址 为 林 点 美 at",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "邮 箱 地 址 为 零 点 美 at",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '零' at position 5",
+      "reason": "'林' (a surname or word meaning 'forest') is replaced by '零' (meaning 'zero'). In the context of an email address or name, this changes the intended character, which could result in a completely different email or name. This is a significant error as it affects the correctness of the address.",
+      "score": 1
+    }
+  ]
 }

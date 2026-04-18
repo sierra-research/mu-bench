@@ -5,27 +5,27 @@
   "wer": 0.5,
   "werEdits": 4,
   "werRefWords": 8,
-  "werNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
-  "werNormalizedPredicted": "merhaba son hesap ekstresimin bir kopyasina ihtiyacim vardi",
-  "significantWer": 0.0,
+  "werNormalizedGold": "merhaba son hesap ekstresinin kopyasına ihtiyacım var da",
+  "werNormalizedPredicted": "merhaba son hesap ekstresimin bir kopyasına ihtiyacım vardı",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "merhaba son hesap ekstresinin kopyasina ihtiyacim var da",
-  "sigWerNormalizedPredicted": "merhaba son hesap ekstresimin bir kopyasina ihtiyacim vardi",
+  "sigWerNormalizedGold": "merhaba son hesap ekstresinin kopyasına ihtiyacım var da",
+  "sigWerNormalizedPredicted": "merhaba son hesap ekstresimin bir kopyasına ihtiyacım vardı",
   "sigWerErrors": [
     {
       "error": "Substitution: 'ekstresinin' to 'bir' at position 3",
-      "reason": "'Ekstresinin' (of the statement) vs 'ekstresimin' (of my statement) is a minor possessive difference, does not change the overall meaning.",
+      "reason": "'Ekstresinin' (of the statement) vs 'ekstresimin' (of my statement) changes the possessive from third person to first person, but the overall meaning is still clear in context.",
       "score": 2
     },
     {
-      "error": "Substitution: 'var' to 'vardi' at position 6",
-      "reason": "Adding 'bir' (a) before 'kopyasina' (copy) is a minor grammatical addition, does not change the meaning.",
+      "error": "Substitution: 'var' to 'vardı' at position 6",
+      "reason": "The word 'bir' (a) is inserted, but it does not change the meaning of the sentence.",
       "score": 3
     },
     {
       "error": "Deletion: 'da' at position 7",
-      "reason": "Present tense ('var' - there is) vs past tense ('vardi' - there was), but the request is still clear and the meaning is not significantly changed.",
+      "reason": "'Var' (there is) vs 'vardı' (there was) changes the tense, but the request is still understandable.",
       "score": 3
     }
   ]

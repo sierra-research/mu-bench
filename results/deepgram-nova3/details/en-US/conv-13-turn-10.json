@@ -1,22 +1,27 @@
 {
   "gold": "Like are they based on usage, payment history, or how long you had the card.",
-  "predicted": "Like, are they based more on usage, payment history, or how long you had the card?",
+  "predicted": "Like, are they based more on usage, payment history, or how long you've had the card?",
   "unintelligible": false,
-  "wer": 0.06666666666666667,
-  "werEdits": 1,
+  "wer": 0.13333333333333333,
+  "werEdits": 2,
   "werRefWords": 15,
   "werNormalizedGold": "like are they based on usage payment history or how long you had the card",
-  "werNormalizedPredicted": "like are they based more on usage payment history or how long you had the card",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "like are they based more on usage payment history or how long you have had the card",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "like are they based on usage payment history or how long you had the card",
-  "sigWerNormalizedPredicted": "like are they based more on usage payment history or how long you had the card",
+  "sigWerNormalizedPredicted": "like are they based more on usage payment history or how long you have had the card",
   "sigWerErrors": [
     {
       "error": "Insertion: 'more' at position 4",
-      "reason": "The insertion of 'more' slightly changes the nuance of the question, suggesting a comparison or emphasis, but the overall meaning of the sentence remains the same.",
+      "reason": "Adding 'more' slightly changes the nuance of the question but does not derail the overall meaning; the intent is still clear.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'have' at position 12",
+      "reason": "Adding 'have' changes the tense from past to present perfect, but the meaning of the sentence remains the same in context.",
+      "score": 3
     }
   ]
 }

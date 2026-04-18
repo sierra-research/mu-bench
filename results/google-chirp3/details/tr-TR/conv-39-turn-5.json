@@ -2,35 +2,30 @@
   "gold": "Tabii ek bilgi alırım o zaman sizden, eğer aktarılıyorsa. Ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim?",
   "predicted": "Tabii ek bilgi alayım o zaman sizden eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
   "unintelligible": false,
-  "wer": 0.19047619047619047,
-  "werEdits": 4,
+  "wer": 0.14285714285714285,
+  "werEdits": 3,
   "werRefWords": 21,
-  "werNormalizedGold": "tabii ek bilgi alirim o zaman sizden eger aktariliyorsa ben eger otomatik odeme yaparsam limitim yetmedigi takdirde nasil bir yol izlemeliyim",
-  "werNormalizedPredicted": "tabii ek bilgi alayim o zaman sizden eger aktaramiyorsaniz ben eger otomatik odeme yaparsam limitimin yetmedigi takdirde nasil bir sey yol izlemeliyim",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "werNormalizedPredicted": "tabii ek bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "tabii ek bilgi alirim o zaman sizden eger aktariliyorsa ben eger otomatik odeme yaparsam limitim yetmedigi takdirde nasil bir yol izlemeliyim",
-  "sigWerNormalizedPredicted": "tabii ek bilgi alayim o zaman sizden eger aktaramiyorsaniz ben eger otomatik odeme yaparsam limitimin yetmedigi takdirde nasil bir sey yol izlemeliyim",
+  "sigWerNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "sigWerNormalizedPredicted": "tabii ek bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'alirim' to 'alayim' at position 3",
-      "reason": "'Alirim' (I will take/get) and 'alayim' (let me take/get) are very close in meaning and intent in this context; the overall meaning is preserved.",
+      "error": "Substitution: 'alırım' to 'alayım' at position 3",
+      "reason": "'Alırım' (I will take/get) and 'alayım' (let me take/get) are different verb forms, but in this context, both convey a similar intent and do not change the overall meaning of the sentence.",
       "score": 3
     },
     {
-      "error": "Substitution: 'aktariliyorsa' to 'aktaramiyorsaniz' at position 8",
-      "reason": "'Aktariliyorsa' means 'if it is being transferred', while 'aktaramiyorsaniz' means 'if you cannot transfer'. This changes the subject and the condition, which can affect the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'aktarılıyorsa' to 'aktaramıyorsanız' at position 8",
+      "reason": "'Aktarılıyorsa' (if it is being transferred) and 'aktaramıyorsanız' (if you cannot transfer) have opposite meanings, which changes the condition and intent of the sentence significantly.",
+      "score": 1
     },
     {
       "error": "Substitution: 'limitim' to 'limitimin' at position 14",
-      "reason": "The difference is a possessive suffix, 'limitim' (my limit) vs 'limitimin' (of my limit). In this context, the meaning is only slightly affected.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: 'sey' at position 19",
-      "reason": "The insertion of 'sey' (thing) adds a filler word but does not change the overall meaning of the sentence.",
+      "reason": "'Limitim' (my limit) and 'limitimin' (of my limit) are minor grammatical differences and do not affect the overall meaning in this context.",
       "score": 3
     }
   ]

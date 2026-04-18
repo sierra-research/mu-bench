@@ -2,20 +2,25 @@
   "gold": "María López.",
   "predicted": "López.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 1,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "maría lópez",
-  "werNormalizedPredicted": "lópez",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "lopez",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "maría lópez",
-  "sigWerNormalizedPredicted": "lópez",
+  "sigWerNormalizedPredicted": "lopez",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'maría' at position 0",
-      "reason": "The first name 'maría' is missing, which is a significant omission in a person's full name and could lead to confusion or misidentification.",
+      "error": "Substitution: 'maría' to 'lopez' at position 0",
+      "reason": "The first name 'maría' was replaced with the last name 'lopez', resulting in a loss of the actual first name and making the name incorrect and misleading.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lópez' at position 1",
+      "reason": "The last name 'lópez' was omitted, so the full name is incomplete and the identity is not preserved.",
       "score": 1
     }
   ]

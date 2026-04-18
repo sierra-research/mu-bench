@@ -1,21 +1,26 @@
 {
   "gold": "Quần jeans và vớ.",
-  "predicted": "Quần jeans và áo thớ",
+  "predicted": "Quần jean và áo thun",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 2,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "quần jeans và vớ",
-  "werNormalizedPredicted": "quần jeans và áo thớ",
-  "significantWer": 0.25,
+  "werNormalizedPredicted": "quần jean và áo thun",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "quần jeans và vớ",
-  "sigWerNormalizedPredicted": "quần jeans và áo thớ",
+  "sigWerNormalizedPredicted": "quần jean và áo thun",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'vớ' to 'thớ' at position 3",
-      "reason": "'áo' (shirt) is inserted where 'vớ' (socks) is expected, introducing a new clothing item and changing the meaning of the sentence.",
+      "error": "Substitution: 'jeans' to 'jean' at position 1",
+      "reason": "'jeans' and 'jean' are very similar; in Vietnamese, both can refer to denim pants, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'vớ' to 'thun' at position 3",
+      "reason": "'áo' (shirt) is an extra word not present in the expected transcript, introducing a new clothing item and changing the meaning of the sentence.",
       "score": 1
     }
   ]

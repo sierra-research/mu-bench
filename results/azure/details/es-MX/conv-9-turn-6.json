@@ -2,15 +2,26 @@
   "gold": "María punto López arroba email punto com.",
   "predicted": "maria.pez@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "maria punto pez arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "maria punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "maria punto pez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 0",
+      "reason": "Missing accent on 'í' in 'maría' is a minor error; the name is still clearly recognizable as 'Maria'.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'pez' at position 2",
+      "reason": "'lópez' (a surname) was transcribed as 'pez' (the Spanish word for 'fish'), which changes the meaning and makes the email address incorrect and unrecognizable as the intended name.",
+      "score": 1
+    }
+  ]
 }

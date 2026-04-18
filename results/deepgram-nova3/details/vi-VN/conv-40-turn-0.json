@@ -7,7 +7,7 @@
   "werRefWords": 14,
   "werNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
   "werNormalizedPredicted": "xin chào tôi gọi tới muốn muốn sinh ra gia gia tăng khách hàng mức thẻ tín dụng",
-  "significantWer": 0.07142857142857142,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'xin' to 'ra' at position 6",
-      "reason": "The extra 'muốn' (want) is a repetition but does not change the overall meaning of the sentence.",
+      "reason": "The repeated word 'muốn' (want) is redundant but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: 'gia' at position 8",
-      "reason": "'ra' (to come out) instead of 'xin' (to request) changes the meaning of the action, making the sentence less coherent.",
+      "reason": "The word 'ra' (to come out) instead of 'xin' (to request) changes the meaning of the action, making the sentence less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'hạn' to 'hàng' at position 9",
-      "reason": "The extra 'gia' is a repetition before 'gia tăng' (increase), which is redundant but does not change the meaning.",
+      "reason": "The extra 'gia' is a repetition and does not significantly alter the meaning.",
       "score": 2
     }
   ]

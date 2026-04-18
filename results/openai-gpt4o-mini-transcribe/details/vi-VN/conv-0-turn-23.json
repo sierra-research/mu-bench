@@ -1,31 +1,31 @@
 {
   "gold": "Vui lòng nghe cho kĩ. Số điện thoại là cộng 84.",
-  "predicted": "Vui lòng nghe cho kỹ, số điểm phải là tổng tám mươi bốn.",
+  "predicted": "Vui lòng nghe cho kỹ, số này phải là tổng tám mươi bốn.",
   "unintelligible": false,
   "wer": 0.3076923076923077,
   "werEdits": 4,
   "werRefWords": 13,
   "werNormalizedGold": "vui lòng nghe cho kĩ số điện thoại là cộng tám mươi bốn",
-  "werNormalizedPredicted": "vui lòng nghe cho kỹ số điểm phải là tổng tám mươi bốn",
-  "significantWer": 0.15384615384615385,
+  "werNormalizedPredicted": "vui lòng nghe cho kỹ số này phải là tổng tám mươi bốn",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "vui lòng nghe cho kĩ số điện thoại là cộng tám mươi bốn",
-  "sigWerNormalizedPredicted": "vui lòng nghe cho kỹ số điểm phải là tổng tám mươi bốn",
+  "sigWerNormalizedPredicted": "vui lòng nghe cho kỹ số này phải là tổng tám mươi bốn",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kĩ' to 'kỹ' at position 4",
-      "reason": "'kĩ' and 'kỹ' are variant spellings of the same word in Vietnamese, meaning is unchanged.",
+      "reason": "'kĩ' and 'kỹ' are different spellings of the same word in Vietnamese and are semantically equivalent in this context.",
       "score": 3
     },
     {
-      "error": "Substitution: 'điện' to 'điểm' at position 6",
-      "reason": "'điện thoại' means 'telephone', while 'điểm' means 'score' or 'point'; this changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'điện' to 'này' at position 6",
+      "reason": "'điện' (part of 'điện thoại' meaning 'phone') is replaced by 'này' ('this'), which changes the meaning of the sentence and makes it less clear that a phone number is being referenced.",
       "score": 1
     },
     {
       "error": "Substitution: 'cộng' to 'tổng' at position 9",
-      "reason": "'cộng' means 'plus' or 'add', used for country code, while 'tổng' means 'total'; this changes the meaning in the context of a phone number.",
+      "reason": "'cộng' means 'plus' (used for country code), while 'tổng' means 'total' or 'sum', which is incorrect in this context and changes the meaning.",
       "score": 1
     }
   ]

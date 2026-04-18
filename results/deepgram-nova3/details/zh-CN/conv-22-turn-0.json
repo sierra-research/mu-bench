@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "你好",
   "werNormalizedPredicted": "后",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '后' at position 0",
-      "reason": "'你' means 'you' and '后' means 'after' or 'back'; the substitution changes the meaning entirely and makes the sentence incoherent.",
+      "reason": "'你' means 'you' and '后' means 'after' or 'back'; this is a completely different word and changes the meaning of the greeting.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "'好' means 'good' or 'hello' in this context; its deletion removes a key part of the greeting, making the sentence incomplete and incoherent.",
+      "reason": "'好' means 'good' and is essential to the greeting '你好' (hello); omitting it makes the phrase incomplete and incoherent as a greeting.",
       "score": 1
     }
   ]

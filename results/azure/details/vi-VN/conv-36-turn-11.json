@@ -7,7 +7,7 @@
   "werRefWords": 36,
   "werNormalizedGold": "tôi có yêu cầu phát hành thẻ mới cái thẻ thay thế ấy muốn kiểm tra tình trạng xử lý bạn cho tôi biết là thẻ đã được phát hành chưa đã được gửi đi chưa",
   "werNormalizedPredicted": "tôi có yêu cầu phát hành thẻ mới kẻ thẻ thay thế và muốn kiểm tra cái tình trạng xử lý bạn cho tôi biết là thẻ đã được phát hành chưa đã được gửi đi chưa",
-  "significantWer": 0.05555555555555555,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 36,
   "sigWerNormalizedGold": "tôi có yêu cầu phát hành thẻ mới cái thẻ thay thế ấy muốn kiểm tra tình trạng xử lý bạn cho tôi biết là thẻ đã được phát hành chưa đã được gửi đi chưa",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'cái' to 'kẻ' at position 8",
-      "reason": "'kẻ' is a different word from 'cái' and changes the meaning of the phrase, making the sentence confusing and potentially incoherent.",
+      "reason": "'kẻ' is a different word from 'cái' and does not fit the context of 'cái thẻ thay thế' (the replacement card), which makes the sentence confusing and changes the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'ấy' to 'và' at position 12",
-      "reason": "'ấy' (that) is replaced by 'và' (and), which changes the structure and meaning of the sentence, leading to confusion.",
+      "reason": "'ấy' (that) refers to the replacement card, while 'và' (and) changes the sentence structure and meaning, making it less coherent.",
       "score": 1
     },
     {
       "error": "Insertion: 'cái' at position 16",
-      "reason": "The extra 'cái' does not significantly change the meaning of the sentence, but it is unnecessary and slightly affects fluency.",
+      "reason": "The extra 'cái' (the) before 'tình trạng' (status) is unnecessary but does not significantly change the meaning of the sentence.",
       "score": 2
     }
   ]

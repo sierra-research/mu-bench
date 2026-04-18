@@ -1,16 +1,27 @@
 {
   "gold": "Mình mới thấy cái chỗ sao kê theo kỳ, đúng không?",
-  "predicted": "mình mới thấy cái chỗ sao kê theo kỳ đúng không?",
+  "predicted": "Mình mới thấy cái chỗ sao kia theo kì đúng không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "mình mới thấy cái chỗ sao kê theo kỳ đúng không",
-  "werNormalizedPredicted": "mình mới thấy cái chỗ sao kê theo kỳ đúng không",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "mình mới thấy cái chỗ sao kia theo kì đúng không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "mình mới thấy cái chỗ sao kê theo kỳ đúng không",
-  "sigWerNormalizedPredicted": "mình mới thấy cái chỗ sao kê theo kỳ đúng không",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "mình mới thấy cái chỗ sao kia theo kì đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kê' to 'kia' at position 6",
+      "reason": "'kê' (statement, as in 'sao kê' meaning 'statement') and 'kia' (that/over there) are completely different words and meanings. This substitution changes the meaning of the phrase and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kỳ' to 'kì' at position 8",
+      "reason": "'kỳ' and 'kì' are different spellings of the same word in Vietnamese, both commonly used and understood as 'period' or 'term' in this context. The meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

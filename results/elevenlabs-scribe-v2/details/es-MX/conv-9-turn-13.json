@@ -2,15 +2,26 @@
   "gold": "El correo es María punto López email punto com.",
   "predicted": "El correo es maria.lopez@ima-mai-email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.7777777777777778,
+  "werEdits": 7,
   "werRefWords": 9,
-  "werNormalizedGold": "el correo es maria punto lopez email punto com",
-  "werNormalizedPredicted": "el correo es maria punto lopez email punto com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "el correo es maría punto lópez email punto com",
+  "werNormalizedPredicted": "el correo es maria punto lopez arroba ima guion mai guion email punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "el correo es maria punto lopez email punto com",
-  "sigWerNormalizedPredicted": "el correo es maria punto lopez email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "el correo es maría punto lópez email punto com",
+  "sigWerNormalizedPredicted": "el correo es maria punto lopez arroba ima guion mai guion email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 3",
+      "reason": "Accent missing in 'maria', but the name is still clearly understood and refers to the same person.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'guion' at position 5",
+      "reason": "Accent missing in 'lopez', but the name is still clearly understood and refers to the same person.",
+      "score": 2
+    }
+  ]
 }

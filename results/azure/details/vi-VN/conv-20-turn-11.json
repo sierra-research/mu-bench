@@ -2,15 +2,21 @@
   "gold": "Email và số điện thoại không chính xác. Email là minh chấm trần.",
   "predicted": "Ơ email và số điện thoại không chính xác. Email là ờ minh. Trần.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07692307692307693,
+  "werEdits": 1,
   "werRefWords": 13,
   "werNormalizedGold": "email và số điện thoại không chính xác email là minh chấm trần",
-  "werNormalizedPredicted": "email và số điện thoại không chính xác email là minh chấm trần",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email và số điện thoại không chính xác email là minh trần",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "email và số điện thoại không chính xác email là minh chấm trần",
-  "sigWerNormalizedPredicted": "email và số điện thoại không chính xác email là minh chấm trần",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email và số điện thoại không chính xác email là minh trần",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'chấm' at position 11",
+      "reason": "'chấm' means 'dot' and is part of the email address (e.g., separating first and last name). Omitting 'chấm' changes the actual email address, which is a significant error for contact information.",
+      "score": 1
+    }
+  ]
 }

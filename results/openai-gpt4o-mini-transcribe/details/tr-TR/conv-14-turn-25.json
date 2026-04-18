@@ -1,27 +1,22 @@
 {
   "gold": "Hayır yine arada bir rakam unuttunuz. 0 90 olacak.",
-  "predicted": "Hayır, yine arada bir rakam unuttun. 0.90 olacak.",
+  "predicted": "Hayır, yine arada bir rakam unuttun. Sıfır doksan olacak.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "hayır yine arada bir rakam unuttunuz sıfır doksan olacak",
-  "werNormalizedPredicted": "hayır yine arada bir rakam unuttun sıfır nokta doksan olacak",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "hayır yine arada bir rakam unuttun sıfır doksan olacak",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "hayır yine arada bir rakam unuttunuz sıfır doksan olacak",
-  "sigWerNormalizedPredicted": "hayır yine arada bir rakam unuttun sıfır nokta doksan olacak",
+  "sigWerNormalizedPredicted": "hayır yine arada bir rakam unuttun sıfır doksan olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'unuttunuz' to 'unuttun' at position 5",
-      "reason": "Both are forms of the verb 'to forget' in Turkish, differing only in formality (plural/formal vs. singular/informal). The meaning of the sentence remains the same.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'nokta' at position 7",
-      "reason": "'Nokta' means 'point' or 'dot', so 'sıfır doksan' (zero ninety) becomes 'sıfır nokta doksan' (zero point ninety), which changes the meaning from 'ninety' to 'zero point ninety'. This is a significant change in meaning, especially for numbers.",
-      "score": 1
+      "reason": "The difference is in the verb form: 'unuttunuz' is formal/plural ('you forgot'), while 'unuttun' is informal/singular ('you forgot'). The overall meaning of the sentence remains the same, only the level of formality changes.",
+      "score": 2
     }
   ]
 }

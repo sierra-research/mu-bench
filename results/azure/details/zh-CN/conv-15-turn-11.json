@@ -2,15 +2,21 @@
   "gold": "你真的有病啊，哎呀。",
   "predicted": "你真的***，哎呀。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 8,
-  "werNormalizedGold": "你 真的 有 病 啊 哎 呀",
-  "werNormalizedPredicted": "你 真的 有 病 啊 哎 呀",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "你 真 的 有 病 啊 哎 呀",
-  "sigWerNormalizedPredicted": "你 真 的 有 病 啊 哎 呀",
-  "sigWerErrors": []
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "你真的有病",
+  "werNormalizedPredicted": "你真的",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "你 真 的 有 病",
+  "sigWerNormalizedPredicted": "你 真 的",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '有' at position 3",
+      "reason": "The word '有' (have) is missing, which is essential to the meaning of the phrase. Its absence makes the sentence incomplete and changes the intended meaning significantly.",
+      "score": 1
+    }
+  ]
 }

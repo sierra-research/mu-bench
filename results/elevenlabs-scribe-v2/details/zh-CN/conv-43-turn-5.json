@@ -2,20 +2,25 @@
   "gold": "没有，我的那个追踪号码。",
   "predicted": "没有。呃，我的那个观众号吗？",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "没有 我的那个追踪号码",
-  "werNormalizedPredicted": "没有 我的那个观众号码",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "没有 我的那个观众号吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "没 有 我 的 那 个 追 踪 号 码",
-  "sigWerNormalizedPredicted": "没 有 我 的 那 个 观 众 号 码",
+  "sigWerNormalizedPredicted": "没 有 我 的 那 个 观 众 号 吗",
   "sigWerErrors": [
     {
       "error": "Substitution: '追' to '观' at position 6",
       "reason": "'追踪号码' means 'tracking number', while '观众号码' means 'audience number'. This substitution changes the meaning of the sentence significantly, as it refers to a completely different concept.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '码' to '吗' at position 9",
+      "reason": "'码' means 'number/code', while '吗' is a question particle. This substitution changes the sentence from a statement about a number to a question, altering the meaning significantly.",
       "score": 1
     }
   ]

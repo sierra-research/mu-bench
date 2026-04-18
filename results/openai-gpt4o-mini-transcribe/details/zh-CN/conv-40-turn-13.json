@@ -1,16 +1,22 @@
 {
   "gold": "对，但是我的问题是你知道我的姓名是什么吗？",
-  "predicted": "对,但是,我的问题是,你知道我的姓名是什么吗?",
+  "predicted": "对,灯尺,我的问题是,你知道我的姓名是什么吗?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.10526315789473684,
+  "werEdits": 2,
   "werRefWords": 19,
-  "werNormalizedGold": "对 但是 我的 问题 是 你 知道 我 的 姓名 是 什么 吗",
-  "werNormalizedPredicted": "对 但是 我的 问题 是 你 知道 我 的 姓名 是 什么 吗",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "对 但是我的问题是你知道我的姓名是什么吗",
+  "werNormalizedPredicted": "对 灯尺 我的问题是 你知道我的姓名是什么吗",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "对 但 是 我 的 问 题 是 你 知 道 我 的 姓 名 是 什 么 吗",
-  "sigWerNormalizedPredicted": "对 但 是 我 的 问 题 是 你 知 道 我 的 姓 名 是 什 么 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "对 灯 尺 我 的 问 题 是 你 知 道 我 的 姓 名 是 什 么 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '但' to '灯' at position 1",
+      "reason": "'但' means 'but', which is a conjunction important for the sentence's logic, while '灯' means 'lamp' and is unrelated, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

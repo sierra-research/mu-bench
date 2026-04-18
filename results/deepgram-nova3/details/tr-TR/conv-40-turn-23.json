@@ -2,20 +2,30 @@
   "gold": "Şu an itibari ile yok, teşekkür ederim.",
   "predicted": "Şu an itibariyle yok, teşekkür ediyorum.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 1,
-  "werRefWords": 6,
-  "werNormalizedGold": "şu an itibariyle yok teşekkür ederim",
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "şu an itibari ile yok teşekkür ederim",
   "werNormalizedPredicted": "şu an itibariyle yok teşekkür ediyorum",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "şu an itibariyle yok teşekkür ederim",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "şu an itibari ile yok teşekkür ederim",
   "sigWerNormalizedPredicted": "şu an itibariyle yok teşekkür ediyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ederim' to 'ediyorum' at position 5",
-      "reason": "'ederim' (I thank) and 'ediyorum' (I am thanking) are different verb forms but convey the same polite intent in this context; the meaning of the sentence is unchanged.",
+      "error": "Substitution: 'itibari' to 'itibariyle' at position 2",
+      "reason": "'itibariyle' is a grammatical form of 'itibari ile' (with respect to), so the meaning is preserved despite the difference in form.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 3",
+      "reason": "'itibariyle' already includes the meaning of 'ile', so omitting 'ile' does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ederim' to 'ediyorum' at position 6",
+      "reason": "'Teşekkür ederim' (I thank you) and 'teşekkür ediyorum' (I am thanking you) are both polite forms of expressing thanks in Turkish, with only a slight difference in tense, not affecting the meaning.",
       "score": 3
     }
   ]

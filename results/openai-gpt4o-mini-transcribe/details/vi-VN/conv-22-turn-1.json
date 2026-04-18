@@ -1,21 +1,26 @@
 {
   "gold": "Đã sẵn sàng.",
-  "predicted": "Đó là sự",
+  "predicted": "ờ đại sản",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "đã sẵn sàng",
-  "werNormalizedPredicted": "đó là sự",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "đại sản",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "đã sẵn sàng",
-  "sigWerNormalizedPredicted": "đó là sự",
+  "sigWerNormalizedPredicted": "đại sản",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'đã' to 'đó' at position 0",
-      "reason": "'đã sẵn sàng' means 'ready', while 'đó là sự' means 'that is the', which completely changes the meaning of the sentence and makes it incoherent.",
+      "error": "Substitution: 'đã' to 'đại' at position 0",
+      "reason": "'đã' means 'already' or indicates readiness, while 'đại' means 'big' or 'great', which changes the meaning of the phrase significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 2",
+      "reason": "'sàng' is essential to the phrase 'sẵn sàng' (ready), and its omission makes the sentence incomplete and changes the intended meaning.",
       "score": 1
     }
   ]

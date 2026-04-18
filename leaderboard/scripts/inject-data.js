@@ -14,6 +14,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const leaderboardJsonPath = join(__dirname, "..", "..", "results", "leaderboard.json");
+const significanceJsonPath = join(__dirname, "..", "..", "results", "significance.json");
 const manifestPath = join(__dirname, "..", "..", "manifest.json");
 const submissionsBase = join(__dirname, "..", "..", "submissions", "normalized");
 const dataPath = join(__dirname, "..", "src", "data", "data.js");
@@ -29,6 +30,26 @@ try {
     console.log(`Injecting ${locales.length} locales and ${providers.length} providers from leaderboard.json`);
 } catch (e) {
     console.warn(`Warning: could not read leaderboard.json (${e.message}), using empty data`);
+}
+
+// Significance + variance from results/significance.json. Empty defaults so
+// the widget can still render in dev when scoring hasn't been run yet.
+let significanceMetrics = {};
+let varianceBlock = {};
+let significanceProviders = [];
+try {
+    const raw = readFileSync(significanceJsonPath, "utf-8");
+    const data = JSON.parse(raw);
+    if (data.metrics && typeof data.metrics === "object") significanceMetrics = data.metrics;
+    if (data.variance && typeof data.variance === "object") varianceBlock = data.variance;
+    if (Array.isArray(data.providers)) significanceProviders = data.providers;
+    const metricKeys = Object.keys(significanceMetrics);
+    console.log(
+        `Injecting significance: ${metricKeys.length} metrics (${metricKeys.join(", ")}) ` +
+            `+ variance for ${Object.keys(varianceBlock).length} providers`,
+    );
+} catch (e) {
+    console.warn(`Warning: could not read significance.json (${e.message}), using empty data`);
 }
 
 const AUDIO_SAMPLES = {
@@ -92,6 +113,18 @@ export const LOCALES = ${JSON.stringify(locales, null, 4)};
 export const PROVIDERS = ${JSON.stringify(providers, null, 4)};
 
 export const SAMPLE_UTTERANCES = ${JSON.stringify(sampleUtterances, null, 4)};
+
+// Pairwise significance + per-metric means from
+// scripts/significance_test.py (conversation-level paired bootstrap).
+// Provider order matches significance.json#/providers (best -> worst,
+// per the metric chosen at output-json write time).
+export const SIGNIFICANCE_PROVIDERS = ${JSON.stringify(significanceProviders, null, 4)};
+
+export const SIGNIFICANCE = ${JSON.stringify(significanceMetrics, null, 4)};
+
+// Variance block: tmp/aggregate_variance.py output. Per-provider per-locale
+// {wer:{mean,std}, significantWer:{mean,std}, _n_waves, _wave_n_utterances}.
+export const VARIANCE = ${JSON.stringify(varianceBlock, null, 4)};
 
 /**
  * Get the score for a provider given filters.

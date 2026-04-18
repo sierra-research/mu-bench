@@ -7,7 +7,7 @@
   "werRefWords": 28,
   "werNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
   "werNormalizedPredicted": "six seven i think that should be fine let us try to transfer me from you right now and it does not work fine",
-  "significantWer": 0.07142857142857142,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 28,
   "sigWerNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
@@ -20,17 +20,17 @@
     },
     {
       "error": "Substitution: 'over' to 'you' at position 16",
-      "reason": "Inserting 'from' changes the meaning of the action being described (transfer me over vs transfer me from you), which could confuse the intent.",
+      "reason": "Inserting 'from' changes the meaning of the transfer action, making it unclear who is being transferred and potentially confusing the intent.",
       "score": 1
     },
     {
       "error": "Deletion: 'if' at position 20",
-      "reason": "Replacing 'over' with 'you' alters the direction or recipient of the transfer, significantly changing the meaning.",
+      "reason": "Substituting 'over' with 'you' in the phrase 'transfer me over' to 'transfer me from you' changes the direction and meaning of the transfer, which can lead to misunderstanding.",
       "score": 1
     },
     {
       "error": "Deletion: 'that' at position 25",
-      "reason": "Omitting 'if' removes the conditional structure, making the sentence less clear but the overall intent is still somewhat understandable.",
+      "reason": "Omitting 'if' removes the conditional structure, but the overall meaning is still somewhat understandable.",
       "score": 2
     }
   ]

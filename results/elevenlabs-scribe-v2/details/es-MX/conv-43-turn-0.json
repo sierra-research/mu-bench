@@ -2,20 +2,30 @@
   "gold": "Hola, quiero saber cómo aumentar mi línea de crédito.",
   "predicted": "Hola, quiero saber cómo incrementar mi línea de crédito",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "hola quiero saber como aumentar mi linea de credito",
+  "werNormalizedGold": "hola quiero saber cómo aumentar mi línea de crédito",
   "werNormalizedPredicted": "hola quiero saber como incrementar mi linea de credito",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "hola quiero saber como aumentar mi linea de credito",
+  "sigWerNormalizedGold": "hola quiero saber cómo aumentar mi línea de crédito",
   "sigWerNormalizedPredicted": "hola quiero saber como incrementar mi linea de credito",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'aumentar' to 'incrementar' at position 4",
-      "reason": "Both 'aumentar' and 'incrementar' mean 'to increase' in Spanish and are interchangeable in this context. The meaning of the sentence is unchanged.",
+      "error": "Substitution: 'cómo' to 'como' at position 3",
+      "reason": "Missing accent mark, but the meaning of the sentence remains clear in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'línea' to 'linea' at position 6",
+      "reason": "Missing accent mark, but the word is still easily understood and the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 8",
+      "reason": "Missing accent mark, but the word is still clear and the meaning is not affected.",
       "score": 3
     }
   ]

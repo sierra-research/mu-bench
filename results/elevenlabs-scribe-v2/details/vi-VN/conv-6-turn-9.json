@@ -7,7 +7,7 @@
   "werRefWords": 18,
   "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện gọi là cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.05555555555555555,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'thoại' to 'gọi' at position 2",
-      "reason": "'thoại' means 'number' or 'phone' in the context of 'số điện thoại' (phone number), while 'gọi' means 'call'. This changes the meaning of the phrase from 'phone number' to 'call number', which is incorrect and derails the intended meaning.",
+      "reason": "'thoại' means 'phone' and 'gọi' means 'call'; this changes the meaning of the phrase from 'phone number' to 'call number', which is a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'bốn' to 'tư' at position 7",
-      "reason": "In Vietnamese, 'bốn' and 'tư' both mean 'four' and are interchangeable in this context. The meaning is preserved.",
+      "reason": "In Vietnamese, 'bốn' and 'tư' both mean 'four' and are interchangeable in this context, so the meaning is preserved.",
       "score": 3
     }
   ]

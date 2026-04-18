@@ -2,15 +2,31 @@
   "gold": "我的邮件地址是郡凛 at email dot com。",
   "predicted": "我的邮箱地址是dreamlingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 12,
-  "werNormalizedGold": "我的邮箱地址是dreamling at email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是dreamling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 dreamling at email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 dreamling at email dot com",
-  "sigWerErrors": []
+  "wer": 0.46153846153846156,
+  "werEdits": 6,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的邮件地址是郡凛 at email dot com",
+  "werNormalizedPredicted": "我的邮箱地址是 dreamlingemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 件 地 址 是 郡 凛 at email dot com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 dreamlingemail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '件' to '箱' at position 3",
+      "reason": "Both '邮件' and '邮箱' refer to email, but '邮件' means 'email (message)' and '邮箱' means 'mailbox'. In this context, the meaning is only slightly changed and does not derail the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '郡' to 'dreamlingemail' at position 7",
+      "reason": "'郡' is a part of the email username, but 'dreamlingemail' is a completely different string, making the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 8",
+      "reason": "'凛' is part of the expected email username, and its omission makes the email address incorrect and unrecognizable.",
+      "score": 1
+    }
+  ]
 }

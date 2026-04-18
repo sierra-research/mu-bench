@@ -2,15 +2,31 @@
   "gold": "郡。我的姓名是郡凛。郡。",
   "predicted": "我的姓名是珍玲。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "我的姓名是郡凛",
-  "werNormalizedPredicted": "我的姓名是郡凛",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "我 的 姓 名 是 郡 凛",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 郡 凛",
-  "sigWerErrors": []
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "郡 我的姓名是郡凛 郡",
+  "werNormalizedPredicted": "我的姓名是珍玲",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "郡 我 的 姓 名 是 郡 凛 郡",
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 珍 玲",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '郡' at position 0",
+      "reason": "The surname '郡' is omitted at the start, which is important for identifying the person's full name. This significantly changes the meaning and completeness of the name.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '郡' to '珍' at position 6",
+      "reason": "The surname '郡' is replaced with '珍', which is a completely different character and changes the person's name, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '郡' at position 8",
+      "reason": "The surname '郡' is omitted at the end, which is important for the full name structure in Chinese. This omission significantly alters the intended name.",
+      "score": 1
+    }
+  ]
 }

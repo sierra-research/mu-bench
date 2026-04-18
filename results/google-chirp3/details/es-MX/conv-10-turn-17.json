@@ -7,7 +7,7 @@
   "werRefWords": 5,
   "werNormalizedGold": "no es gmail es email",
   "werNormalizedPredicted": "no no es email",
-  "significantWer": 0.4,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "no es gmail es email",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'es' to 'no' at position 1",
-      "reason": "The insertion of 'no' instead of 'es' changes the meaning of the sentence, introducing a double negative and making the sentence confusing or incoherent.",
+      "reason": "The word 'no' is inserted where 'es' should be, which changes the meaning from 'it is gmail' to 'no no is email', making the sentence confusing and incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'gmail' at position 2",
-      "reason": "Omitting 'gmail' removes a key piece of information, making the sentence incomplete and changing its intended meaning.",
+      "reason": "Omitting 'gmail' removes the key information about what is being referred to, significantly altering the meaning of the sentence.",
       "score": 1
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 8,
   "werNormalizedGold": "có kết nối tôi với nhân viên đi",
   "werNormalizedPredicted": "có nó tối với những viên đi",
-  "significantWer": 0.375,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "có kết nối tôi với nhân viên đi",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'kết' to 'nó' at position 1",
-      "reason": "'kết' (connect) is replaced by 'nó' (it), which changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "'kết' (connect) is replaced by 'nó' (it), which changes the action of connecting to a pronoun, making the sentence incoherent and derailing the intended meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'tôi' at position 3",
-      "reason": "Omitting 'tôi' (me) removes the subject of the action, significantly altering the meaning of the sentence.",
+      "reason": "Omitting 'tôi' (me) removes the subject of the request, making it unclear who is to be connected, which significantly affects the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'nhân' to 'những' at position 5",
-      "reason": "'nhân viên' (staff) is changed to 'những viên' (those pieces), which makes the sentence incoherent and changes the intended meaning.",
+      "reason": "'nhân viên' means 'staff' or 'employee', while 'những viên' is not a meaningful phrase in this context, making the sentence confusing and changing the intended meaning.",
       "score": 1
     }
   ]

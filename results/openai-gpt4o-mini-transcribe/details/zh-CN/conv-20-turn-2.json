@@ -1,16 +1,27 @@
 {
   "gold": "没有没有没有，你，我正在等待我的新卡，想知道它的状态。",
-  "predicted": "没有没有没有,你,我正在等待我的信卡,想知道它的状态。",
+  "predicted": "没有没有没有,我正在等待我的信卡,想知道它的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08695652173913043,
+  "werEdits": 2,
   "werRefWords": 23,
   "werNormalizedGold": "没有没有没有 你 我正在等待我的新卡 想知道它的状态",
-  "werNormalizedPredicted": "没有没有没有 你 我正在等待我的新卡 想知道它的状态",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "没有没有没有 我正在等待我的信卡 想知道它的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "没 有 没 有 没 有 你 我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "没 有 没 有 没 有 你 我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 有 没 有 没 有 我 正 在 等 待 我 的 信 卡 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '你' at position 6",
+      "reason": "The deletion of '你' (you) removes the subject of the sentence, which changes the meaning from 'I am waiting for your new card' to 'I am waiting for my new card.' This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '新' to '信' at position 14",
+      "reason": "'新卡' means 'new card' while '信卡' is a common abbreviation for 'credit card' in Chinese. This changes the type of card being referred to, but the overall intent of checking the card status remains similar. Thus, it is a minor error.",
+      "score": 2
+    }
+  ]
 }

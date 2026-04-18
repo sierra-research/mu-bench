@@ -1,26 +1,31 @@
 {
   "gold": "Số điện thoại. Vui lòng nghe cho kĩ. Vui lòng nghe cho kĩ số điện thoại. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Vui lòng nghe cho kỹ số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "Vui lòng nghe cho kỹ số điện thoại. Số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.3235294117647059,
-  "werEdits": 11,
+  "wer": 0.2647058823529412,
+  "werEdits": 9,
   "werRefWords": 34,
-  "werNormalizedGold": "so dien thoai vui long nghe cho ki vui long nghe cho ki so dien thoai so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "werNormalizedPredicted": "vui long nghe cho ki so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "significantWer": 0.0,
+  "werNormalizedGold": "số điện thoại vui lòng nghe cho kĩ vui lòng nghe cho kĩ số điện thoại số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "vui lòng nghe cho kỹ số điện thoại số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 34,
-  "sigWerNormalizedGold": "so dien thoai vui long nghe cho ki vui long nghe cho ki so dien thoai so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
-  "sigWerNormalizedPredicted": "vui long nghe cho ki so dien thoai la cong tam muoi bon chin mot mot hai ba bon nam sau bay tam",
+  "sigWerNormalizedGold": "số điện thoại vui lòng nghe cho kĩ vui lòng nghe cho kĩ số điện thoại số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "vui lòng nghe cho kỹ số điện thoại số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'so' at position 0",
-      "reason": "The deleted word 'so' (number) at the start is a minor repetition and does not change the overall meaning of the sentence, as the main information is still conveyed.",
+      "error": "Deletion: 'số' at position 0",
+      "reason": "The word 'số' (number) is omitted at the beginning, but the rest of the sentence still clearly communicates the phone number and the instruction. The overall meaning is preserved.",
       "score": 2
     },
     {
+      "error": "Substitution: 'kĩ' to 'kỹ' at position 7",
+      "reason": "'kĩ' and 'kỹ' are spelling variants of the same word in Vietnamese, both meaning 'carefully'. The meaning is unchanged.",
+      "score": 3
+    },
+    {
       "error": "Deletion: 'vui' at position 8",
-      "reason": "The deleted word 'vui' (please) is part of a repeated polite phrase, but its omission does not affect the main meaning or intent of the sentence.",
+      "reason": "The second occurrence of 'vui lòng nghe cho kĩ' is missing 'vui', but the instruction is still understandable and the overall meaning is not significantly affected.",
       "score": 2
     }
   ]

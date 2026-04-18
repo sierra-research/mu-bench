@@ -2,15 +2,26 @@
   "gold": "Tabii söylüyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "Tabi söylüyorum+ 901230904567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 15,
-  "werNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "werNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerErrors": []
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii söylüyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedPredicted": "tabi söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii söylüyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedPredicted": "tabi söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are variant spellings of the same Turkish word, meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 3",
+      "reason": "'doksan' means 'ninety' and 'dokuz' means 'nine' in Turkish; this changes the phone number significantly.",
+      "score": 1
+    }
+  ]
 }

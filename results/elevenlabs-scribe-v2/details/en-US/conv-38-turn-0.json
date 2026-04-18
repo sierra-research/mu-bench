@@ -1,16 +1,22 @@
 {
   "gold": "Hi, Anna. I wanted to see if I could possibly get an increase to my credit limit.",
-  "predicted": "Hi, Anna. Um, I wanted to see if I could possibly get an increase, um, to my credit limits",
+  "predicted": "Hi, Anna. Um, I wanted to see if I could possibly get an increase, um, to my credit limits.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
   "werRefWords": 17,
   "werNormalizedGold": "hi anna i wanted to see if i could possibly get an increase to my credit limit",
-  "werNormalizedPredicted": "hi anna i wanted to see if i could possibly get an increase to my credit limit",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "hi anna i wanted to see if i could possibly get an increase to my credit limits",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "hi anna i wanted to see if i could possibly get an increase to my credit limit",
-  "sigWerNormalizedPredicted": "hi anna i wanted to see if i could possibly get an increase to my credit limit",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hi anna i wanted to see if i could possibly get an increase to my credit limits",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'limit' to 'limits' at position 16",
+      "reason": "The pluralization from 'limit' to 'limits' does not change the overall meaning of the sentence in this context, as both refer to the credit limit(s) of the speaker.",
+      "score": 2
+    }
+  ]
 }

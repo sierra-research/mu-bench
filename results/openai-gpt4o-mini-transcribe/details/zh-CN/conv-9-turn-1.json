@@ -1,16 +1,27 @@
 {
   "gold": "我想提高信用卡的限额。",
-  "predicted": "我想起高心牛卡德西安鄂。",
+  "predicted": "我想提告新黨和的現二。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 6,
   "werRefWords": 10,
   "werNormalizedGold": "我想提高信用卡的限额",
-  "werNormalizedPredicted": "我想提高信用卡的限额",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想提告新黨和的現二",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额",
-  "sigWerNormalizedPredicted": "我 想 提 高 信 用 卡 的 限 额",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 提 告 新 黨 和 的 現 二",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '高' to '告' at position 3",
+      "reason": "'高' (increase/raise) is substituted with '告' (tell/accuse), which changes the meaning of the action in the sentence and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '限' to '現' at position 8",
+      "reason": "'信' (credit) is substituted with '新' (new), which changes the meaning of the noun phrase and makes the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

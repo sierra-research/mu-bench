@@ -1,16 +1,22 @@
 {
   "gold": "Sí, más.",
-  "predicted": "Sí, más...",
+  "predicted": "Sí, mac",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "sí más",
-  "werNormalizedPredicted": "sí más",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "sí mac",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "sí más",
-  "sigWerNormalizedPredicted": "sí más",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sí mac",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'más' to 'mac' at position 1",
+      "reason": "'más' means 'more' in Spanish, while 'mac' is not a Spanish word and changes the meaning of the phrase, making it incoherent in context.",
+      "score": 1
+    }
+  ]
 }

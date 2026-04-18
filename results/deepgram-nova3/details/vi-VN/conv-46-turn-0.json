@@ -7,20 +7,20 @@
   "werRefWords": 10,
   "werNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
   "werNormalizedPredicted": "tôi muốn được sinh gia tăng hẹn mức thẻ tín dụng",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
   "sigWerNormalizedPredicted": "tôi muốn được sinh gia tăng hẹn mức thẻ tín dụng",
   "sigWerErrors": [
     {
       "error": "Insertion: 'sinh' at position 3",
-      "reason": "The word 'sinh' is inserted but does not significantly change the meaning of the sentence, which is about increasing the credit card limit. The sentence remains understandable and coherent.",
-      "score": 2
+      "reason": "'sinh' is an extra word that does not belong in the sentence and makes the meaning unclear or incoherent in this context.",
+      "score": 1
     },
     {
       "error": "Substitution: 'hạn' to 'hẹn' at position 5",
-      "reason": "'hạn mức' means 'limit' while 'hẹn mức' is not a correct phrase in Vietnamese and could confuse the meaning, making the request unclear. This substitution significantly affects the meaning of the sentence.",
+      "reason": "The substitution changes the meaning from 'limit' (hạn) to 'appointment' (hẹn), which significantly alters the meaning of the sentence.",
       "score": 1
     }
   ]

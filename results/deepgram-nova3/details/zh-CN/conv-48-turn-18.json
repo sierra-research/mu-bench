@@ -5,9 +5,9 @@
   "wer": 0.8333333333333334,
   "werEdits": 5,
   "werRefWords": 6,
-  "werNormalizedGold": "你 听 吧 你 听 吧",
-  "werNormalizedPredicted": "你 挺 饱",
-  "significantWer": 0.3333333333333333,
+  "werNormalizedGold": "你听吧你听吧",
+  "werNormalizedPredicted": "你挺饱",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 听 吧 你 听 吧",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '听' to '挺' at position 1",
-      "reason": "'听' (listen) and '挺' (quite/very) are completely different words and meanings, which changes the meaning of the sentence significantly.",
+      "reason": "'听' (listen) and '挺' (quite/very) are completely different words and change the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '你' at position 3",
-      "reason": "'吧' (a modal particle) and '饱' (full) are unrelated in meaning, which makes the sentence incoherent and changes the intended meaning.",
+      "reason": "'吧' (a modal particle) and '饱' (full) are unrelated, which significantly alters the meaning and coherence of the sentence.",
       "score": 1
     }
   ]

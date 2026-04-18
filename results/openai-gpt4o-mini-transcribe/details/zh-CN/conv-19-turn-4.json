@@ -1,16 +1,37 @@
 {
   "gold": "美，你说得不对，是美玲，美玲。",
-  "predicted": "没,你说的不对,是魅灵,魅灵。",
+  "predicted": "没,你说的不对,是媚玲,媚玲。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
   "werRefWords": 11,
   "werNormalizedGold": "美 你说得不对 是美玲 美玲",
-  "werNormalizedPredicted": "美 你说得不对 是美玲 美玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "没 你说的不对 是媚玲 媚玲",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "美 你 说 得 不 对 是 美 玲 美 玲",
-  "sigWerNormalizedPredicted": "美 你 说 得 不 对 是 美 玲 美 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 你 说 的 不 对 是 媚 玲 媚 玲",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '没' at position 0",
+      "reason": "'美' (beautiful) and '没' (not/none) are completely different in meaning and change the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 3",
+      "reason": "'得' and '的' are both grammatical particles, but they serve different functions. Here, the substitution does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '美' to '媚' at position 7",
+      "reason": "'美' (beautiful) and '媚' (charming/coquettish) are different words, but in the context of a name, this is a minor error as the name is still recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '美' to '媚' at position 9",
+      "reason": "Same as above: '美' to '媚' in a name is a minor error, as the name is still recognizable.",
+      "score": 2
+    }
+  ]
 }

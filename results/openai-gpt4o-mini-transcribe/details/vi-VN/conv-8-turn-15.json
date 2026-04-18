@@ -1,27 +1,37 @@
 {
   "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
-  "predicted": "Chưa đầy đủ PLA một hai ba đường Lê Lợi, Hồ Chí Minh City giết cốt là bảy trăm ngàn Việt Nam",
+  "predicted": "Chưa đầyopolis một hai ba đường Lê Lợi, Hồ Chí Minh City, chiết khấu là bảy trăm ngàn Việt Nam.",
   "unintelligible": false,
-  "wer": 0.08695652173913043,
-  "werEdits": 2,
+  "wer": 0.30434782608695654,
+  "werEdits": 7,
   "werRefWords": 23,
-  "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm ngàn việt nam",
-  "werNormalizedPredicted": "chưa đầy đủ pla một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm ngàn việt nam",
-  "significantWer": 0.043478260869565216,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "chưa đầyopolis một hai ba đường lê lợi hồ chí minh city chiết khấu là bảy trăm ngàn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm ngàn việt nam",
-  "sigWerNormalizedPredicted": "chưa đầy đủ pla một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm ngàn việt nam",
+  "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chưa đầyopolis một hai ba đường lê lợi hồ chí minh city chiết khấu là bảy trăm ngàn việt nam",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'phải' to 'pla' at position 3",
-      "reason": "'pla' is not a Vietnamese word and replaces 'phải', which is important for the meaning of the sentence. This substitution makes the sentence less coherent.",
+      "error": "Substitution: 'đầy' to 'đầyopolis' at position 1",
+      "reason": "'đầyopolis' is a nonsensical word and changes the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'là' at position 4",
-      "reason": "Omitting 'là' (which means 'is/are') slightly affects the grammatical structure but the overall meaning is still understandable.",
-      "score": 2
+      "error": "Deletion: 'đủ' at position 2",
+      "reason": "Omitting 'đủ' changes the meaning of the phrase 'chưa đầy đủ', which means 'not enough' or 'incomplete', thus altering the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zip' to 'chiết' at position 15",
+      "reason": "'zip code' is replaced with 'chiết khấu' (which means 'discount'), which is a completely different concept and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nghìn' to 'ngàn' at position 20",
+      "reason": "'nghìn' and 'ngàn' are synonyms in Vietnamese, both meaning 'thousand', so the meaning is preserved.",
+      "score": 3
     }
   ]
 }

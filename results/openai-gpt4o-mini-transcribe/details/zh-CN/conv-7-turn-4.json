@@ -1,21 +1,26 @@
 {
   "gold": "你再说，说一遍。",
-  "predicted": "你再说一遍。",
+  "predicted": "再说一遍。",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 1,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "你 再 说 说 一 遍",
-  "werNormalizedPredicted": "你 再 说 一 遍",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你再说 说一遍",
+  "werNormalizedPredicted": "再说一遍",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 再 说 说 一 遍",
-  "sigWerNormalizedPredicted": "你 再 说 一 遍",
+  "sigWerNormalizedPredicted": "再 说 一 遍",
   "sigWerErrors": [
     {
-      "error": "Deletion: '说' at position 3",
-      "reason": "The missing '说' (repeat) slightly changes the emphasis but the overall meaning 'say it again' is still clear and understandable.",
+      "error": "Deletion: '你' at position 0",
+      "reason": "Omitting '你' (you) removes the subject of the sentence, which can make the command less clear or ambiguous in Chinese. The meaning is significantly affected.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '说' at position 2",
+      "reason": "Omitting the second '说' (say) changes the emphasis and structure of the phrase, which in Chinese is used for emphasis or clarity. The meaning is somewhat affected but the main intent remains.",
       "score": 2
     }
   ]

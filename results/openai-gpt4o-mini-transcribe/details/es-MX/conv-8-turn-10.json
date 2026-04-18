@@ -1,31 +1,31 @@
 {
   "gold": "¿Dónde puedo verificar eso? ¿O me avisarás tú de qué manera? ¿Por email?",
-  "predicted": "¿Dónde puedo verificar eso? ¿O me lo instalarás tú de qué transporto por mail?",
+  "predicted": "¿Dónde puedo verificar eso? ¿O me revisarás todo de qué más transforme?",
   "unintelligible": false,
-  "wer": 0.3076923076923077,
-  "werEdits": 4,
+  "wer": 0.38461538461538464,
+  "werEdits": 5,
   "werRefWords": 13,
   "werNormalizedGold": "donde puedo verificar eso o me avisaras tu de que manera por email",
-  "werNormalizedPredicted": "donde puedo verificar eso o me lo instalaras tu de que transporto por mail",
-  "significantWer": 0.15384615384615385,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "donde puedo verificar eso o me revisaras todo de que mas transforme",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "donde puedo verificar eso o me avisaras tu de que manera por email",
-  "sigWerNormalizedPredicted": "donde puedo verificar eso o me lo instalaras tu de que transporto por mail",
+  "sigWerNormalizedPredicted": "donde puedo verificar eso o me revisaras todo de que mas transforme",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'avisaras' to 'instalaras' at position 6",
-      "reason": "The insertion of 'lo' does not significantly change the meaning of the sentence; it is a minor grammatical addition.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'manera' to 'transporto' at position 10",
-      "reason": "'Avisaras' (you will notify) and 'instalaras' (you will install) have completely different meanings and change the intent of the sentence.",
+      "error": "Substitution: 'avisaras' to 'revisaras' at position 6",
+      "reason": "'Avisaras' means 'you will notify', while 'revisaras' means 'you will review'. This changes the action being discussed and alters the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'email' to 'mail' at position 12",
-      "reason": "'Manera' (way/manner) and 'transporto' (I transport/transport) are unrelated and this substitution makes the sentence incoherent.",
+      "error": "Substitution: 'manera' to 'mas' at position 10",
+      "reason": "'Manera' means 'way' or 'manner', while 'mas' means 'more'. This substitution makes the sentence incoherent and changes the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 12",
+      "reason": "Omitting 'email' removes the method of notification, which is important information in the sentence.",
       "score": 1
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "Tabii. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "Tabii, artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 14,
-  "werNormalizedGold": "tabii artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "werNormalizedPredicted": "tabii artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "tabii artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerNormalizedPredicted": "tabii artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerErrors": []
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "tabii artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedPredicted": "tabii artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "tabii artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedPredicted": "tabii artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 2",
+      "reason": "The number 'dokuz' (nine) is inserted at the beginning of the number sequence, which changes the intended number and can lead to a significant misunderstanding, especially in contexts like phone numbers or codes.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sıfır' at position 8",
+      "reason": "Substituting 'doksan' (ninety) with 'sıfır' (zero) drastically changes the numeric value, which is a significant error in a sequence of numbers.",
+      "score": 1
+    }
+  ]
 }

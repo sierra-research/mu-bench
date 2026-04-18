@@ -2,15 +2,21 @@
   "gold": "OK. Địa chỉ liên lạc là 1 2 3 Lê Lợi, Hồ Chí Minh, Việt Nam. Zip code là 700000.",
   "predicted": "Ok địa chỉ liên lạc là một hai ba lê lợi Hồ Chí Minh Nam zip code là bảy trăm nghìn",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.045454545454545456,
+  "werEdits": 1,
   "werRefWords": 22,
   "werNormalizedGold": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm nghìn",
-  "werNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm nghìn",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh nam zip code là bảy trăm nghìn",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm nghìn",
-  "sigWerNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh việt nam zip code là bảy trăm nghìn",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "okay địa chỉ liên lạc là một hai ba lê lợi hồ chí minh nam zip code là bảy trăm nghìn",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'việt' at position 14",
+      "reason": "Omitting 'việt' from 'việt nam' changes the country name from 'Vietnam' to just 'nam', which is incomplete and could cause confusion about the location. This significantly alters the meaning.",
+      "score": 1
+    }
+  ]
 }

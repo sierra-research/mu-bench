@@ -2,15 +2,26 @@
   "gold": "Es María punto López arroba email, se escribe email punto com.",
   "predicted": "Es maria.lopez@email, se escribe email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 10,
-  "werNormalizedGold": "es maria lopez arroba email se escribe email punto com",
-  "werNormalizedPredicted": "es maria lopez arroba email se escribe email punto com",
-  "significantWer": 0.0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
+  "werRefWords": 11,
+  "werNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "werNormalizedPredicted": "es maria punto lopez arroba email se escribe email punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 10,
-  "sigWerNormalizedGold": "es maria lopez arroba email se escribe email punto com",
-  "sigWerNormalizedPredicted": "es maria lopez arroba email se escribe email punto com",
-  "sigWerErrors": []
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba email se escribe email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 1",
+      "reason": "Accent missing on 'i' in 'maría', but the name is still clearly recognizable and the meaning is unchanged.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "Accent missing on 'o' in 'lópez', but the surname is still clearly recognizable and the meaning is unchanged.",
+      "score": 2
+    }
+  ]
 }

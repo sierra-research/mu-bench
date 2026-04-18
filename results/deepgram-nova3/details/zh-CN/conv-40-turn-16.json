@@ -2,15 +2,31 @@
   "gold": "哎呀你有什么问题啊。郡凛 at email dot com！",
   "predicted": "哎呀你有什么问题啊dreamingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 13,
-  "werNormalizedGold": "你 有 什么 问题 啊 郡凛 at email dot com",
-  "werNormalizedPredicted": "你 有 什么 问题 啊 郡凛 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "你 有 什 么 问 题 啊 郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "你 有 什 么 问 题 啊 郡 凛 at email dot com",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werEdits": 7,
+  "werRefWords": 14,
+  "werNormalizedGold": "哎呀你有什么问题 郡凛 at email dot com",
+  "werNormalizedPredicted": "你有什么问题 dreamingemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 郡 凛 at email dot com",
+  "sigWerNormalizedPredicted": "你 有 什 么 问 题 dreamingemail com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '哎' at position 0",
+      "reason": "'哎' is an interjection that sets the tone or context for the sentence. Its omission does not significantly change the meaning of the main message.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '郡' to 'dreamingemail' at position 8",
+      "reason": "'郡' is a part of a name or email address, but 'dreamingemail' is a completely different word and not a transliteration or translation. This changes the intended email address, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 9",
+      "reason": "'凛' is also part of the name or email address. Its omission results in an incorrect or incomplete email address, which is a significant error for contact information.",
+      "score": 1
+    }
+  ]
 }

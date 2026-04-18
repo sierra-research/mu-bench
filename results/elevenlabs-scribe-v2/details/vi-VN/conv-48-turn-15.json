@@ -5,27 +5,27 @@
   "wer": 0.375,
   "werEdits": 3,
   "werRefWords": 8,
-  "werNormalizedGold": "doi toi mot xiu de toi kiem tra",
-  "werNormalizedPredicted": "de toi xem de toi kiem tra",
-  "significantWer": 0.25,
+  "werNormalizedGold": "đợi tôi một xíu để tôi kiểm tra",
+  "werNormalizedPredicted": "để tôi xem để tôi kiểm tra",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "doi toi mot xiu de toi kiem tra",
-  "sigWerNormalizedPredicted": "de toi xem de toi kiem tra",
+  "sigWerNormalizedGold": "đợi tôi một xíu để tôi kiểm tra",
+  "sigWerNormalizedPredicted": "để tôi xem để tôi kiểm tra",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'doi' to 'de' at position 0",
-      "reason": "'doi' (wait) and 'de' (so that) have different meanings and change the intent of the sentence, making it less coherent.",
+      "error": "Substitution: 'đợi' to 'để' at position 0",
+      "reason": "'đợi' means 'wait', while 'để' means 'to/let', changing the intent from asking someone to wait to simply starting a statement. This alters the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'mot' to 'xem' at position 2",
-      "reason": "'mot' (a/one) and 'xem' (see/check) are completely different words and this substitution changes the meaning of the sentence.",
+      "error": "Substitution: 'một' to 'xem' at position 2",
+      "reason": "'một' means 'a' or 'one', while 'xem' means 'see' or 'look', which changes the meaning of the sentence and the action being requested.",
       "score": 1
     },
     {
-      "error": "Deletion: 'xiu' at position 3",
-      "reason": "Omitting 'xiu' (a little) removes a modifier that affects the nuance of the request, but the main intent is still understandable.",
+      "error": "Deletion: 'xíu' at position 3",
+      "reason": "'xíu' means 'a moment' or 'a bit', and its omission removes the nuance of asking for a short wait, which changes the politeness and intent.",
       "score": 2
     }
   ]

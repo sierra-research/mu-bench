@@ -1,16 +1,22 @@
 {
   "gold": "Tôi không thấy gì hết. Có thể hỗ trợ ngay tại đây được không?",
-  "predicted": "tôi không thấy gì hết, có thể hỗ trợ ngay tại đây được không?",
+  "predicted": "tôi không thấy gì hết, có thể hỗ trợ nghe tại đây được không?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
-  "werNormalizedPredicted": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi không thấy gì hết có thể hỗ trợ nghe tại đây được không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
-  "sigWerNormalizedPredicted": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi không thấy gì hết có thể hỗ trợ nghe tại đây được không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ngay' to 'nghe' at position 9",
+      "reason": "'ngay' means 'right now' or 'immediately', while 'nghe' means 'listen'. This substitution changes the meaning of the sentence from asking for immediate support to asking for listening support, which significantly alters the intent.",
+      "score": 1
+    }
+  ]
 }

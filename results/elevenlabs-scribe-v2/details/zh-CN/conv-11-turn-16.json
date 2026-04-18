@@ -1,26 +1,21 @@
 {
   "gold": "1 3 9。1 3 9。",
-  "predicted": "Ethan Zhu。Ethan Zhu。",
+  "predicted": "E sends you。E sends you。",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 6,
   "werRefWords": 6,
-  "werNormalizedGold": "one three nine one three nine",
-  "werNormalizedPredicted": "ethan zhu ethan zhu",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "一 三 九 一 三 九",
+  "werNormalizedPredicted": "e sends you e sends you",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "one three nine one three nine",
-  "sigWerNormalizedPredicted": "ethan zhu ethan zhu",
+  "sigWerNormalizedGold": "一 三 九 一 三 九",
+  "sigWerNormalizedPredicted": "e sends you e sends you",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'one' to 'ethan' at position 0",
-      "reason": "'one' is a number, while 'ethan' is a name; this completely changes the meaning and makes the transcription incoherent.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'three' at position 4",
-      "reason": "The number 'three' is missing from the actual transcription, which is a significant omission in a sequence of numbers.",
+      "error": "Substitution: '一' to 'e' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese numerals), making the meaning incoherent and unrelated.",
       "score": 1
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "All lower case Ashley dot Brown at email dot com.",
   "predicted": "All lowercase, ashley dot brown at email dot com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "all lowercase ashley dot brown at email dot com",
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "all lower case ashley dot brown at email dot com",
   "werNormalizedPredicted": "all lowercase ashley dot brown at email dot com",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "all lowercase ashley dot brown at email dot com",
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "all lower case ashley dot brown at email dot com",
   "sigWerNormalizedPredicted": "all lowercase ashley dot brown at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lower' to 'lowercase' at position 1",
+      "reason": "'lowercase' is a single word that conveys the same meaning as 'lower case' in this context; the difference does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'case' at position 2",
+      "reason": "'lowercase' as one word is equivalent in meaning to 'lower case' as two words; the omission of 'case' is not an error in this context.",
+      "score": 3
+    }
+  ]
 }

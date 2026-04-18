@@ -2,21 +2,26 @@
   "gold": "不对啊，郡凛。",
   "predicted": "不对呀dreamlink。",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
-  "werRefWords": 5,
-  "werNormalizedGold": "不 对 啊 郡 凛",
-  "werNormalizedPredicted": "不 对 呀 郡 凛",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "不 对 啊 郡 凛",
-  "sigWerNormalizedPredicted": "不 对 呀 郡 凛",
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "不对 郡凛",
+  "werNormalizedPredicted": "不对 dreamlink",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "不 对 郡 凛",
+  "sigWerNormalizedPredicted": "不 对 dreamlink",
   "sigWerErrors": [
     {
-      "error": "Substitution: '啊' to '呀' at position 2",
-      "reason": "'啊' and '呀' are both Chinese modal particles used for tone or emphasis, and the substitution does not change the meaning of the sentence.",
-      "score": 3
+      "error": "Substitution: '郡' to 'dreamlink' at position 2",
+      "reason": "'dreamlink' is a completely different word and language from the expected Chinese character '郡', which significantly changes the meaning and coherence of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 3",
+      "reason": "The omission of the character '凛' removes a key part of the expected phrase, resulting in a significant loss of meaning.",
+      "score": 1
     }
   ]
 }

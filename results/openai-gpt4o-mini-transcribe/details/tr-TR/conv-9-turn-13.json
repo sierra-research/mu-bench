@@ -2,15 +2,26 @@
   "gold": "Posta kodu yanlış oldu. Posta kodunu tekrar söylüyorum. 34 660.",
   "predicted": "Posta kodu yanlış oldu. Posta kodunu tekrar söylüyorum. 34660.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 14,
-  "werNormalizedGold": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum otuz dört bin altı yüz altmış",
-  "werNormalizedPredicted": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum otuz dört bin altı yüz altmış",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum otuz dört bin altı yüz altmış",
-  "sigWerNormalizedPredicted": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum otuz dört bin altı yüz altmış",
-  "sigWerErrors": []
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum otuz dört altı yüz altmış",
+  "werNormalizedPredicted": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum üç dört altı altı sıfır",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum otuz dört altı yüz altmış",
+  "sigWerNormalizedPredicted": "posta kodu yanlış oldu posta kodunu tekrar söylüyorum üç dört altı altı sıfır",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'otuz' to 'üç' at position 8",
+      "reason": "'Otuz' means 'thirty' and 'üç' means 'three'; this changes the numeric value of the postal code, which is a significant factual error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yüz' to 'altı' at position 11",
+      "reason": "'Yüz' means 'hundred' and 'altı' means 'six'; this changes the numeric value in the postal code, making it a significant error as the code is now incorrect.",
+      "score": 1
+    }
+  ]
 }

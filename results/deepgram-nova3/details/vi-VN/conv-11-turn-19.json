@@ -7,7 +7,7 @@
   "werRefWords": 16,
   "werNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
   "werNormalizedPredicted": "ý là tôi muốn được sinh cấp một lần hai cái thẻ để một cái dịch vụ",
-  "significantWer": 0.125,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'sinh' at position 5",
-      "reason": "'sinh' is an extra word that does not fit the context and makes the sentence less coherent, potentially confusing the meaning.",
+      "reason": "'sinh' (meaning 'birth' or 'generate') is inserted and does not fit the context of requesting to be issued cards, making the sentence less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'dự' to 'dịch' at position 14",
-      "reason": "Substituting 'dự phòng' (backup/spare) with 'dịch vụ' (service) changes the meaning of the sentence significantly, as it refers to a different concept.",
+      "reason": "Substituting 'dự phòng' (backup/reserve) with 'dịch vụ' (service) changes the intended meaning of the sentence significantly, as it refers to a different purpose for the card.",
       "score": 1
     }
   ]

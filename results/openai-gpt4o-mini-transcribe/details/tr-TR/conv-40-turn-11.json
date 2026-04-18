@@ -1,21 +1,31 @@
 {
   "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
-  "predicted": "E-mail adresine tekrar e-mail vereyim ben sana. ahmet.arslanarslan@email.com.",
+  "predicted": "email davamı tek email vereyim ben sana. ahmet.arslanareslane@email.com.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 2,
+  "wer": 0.55,
+  "werEdits": 11,
   "werRefWords": 20,
   "werNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "werNormalizedPredicted": "email adresine tekrar email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "email davamı tek email vereyim ben sana ahmet nokta arslan a r e s l a n a r e s l a n e at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "sigWerNormalizedPredicted": "email adresine tekrar email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "email davamı tek email vereyim ben sana ahmet nokta arslan a r e s l a n a r e s l a n e at email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'daha' to 'adresine' at position 1",
-      "reason": "'daha' means 'yet' or 'still', while 'adresine' means 'to the address'; this changes the meaning of the sentence significantly, as it shifts the context from whether the email has been given yet to specifying an address.",
+      "error": "Substitution: 'daha' to 'davamı' at position 1",
+      "reason": "'daha' means 'more' or 'yet', while 'davamı' means 'the rest' or 'continuation'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'e' at position 12",
+      "reason": "The expected spelling is 'a r s l a n', but the actual has 'a r e s l a n', introducing an extra 'e' in the spelled-out name. In a spelled-out sequence, a single letter error is significant as it changes the name.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'a' at position 16",
+      "reason": "The actual transcription repeats the spelling 'a r e s l a n' and adds an extra 'a', which is not present in the expected. This alters the spelled-out name, which is a significant error for names and emails.",
       "score": 1
     }
   ]

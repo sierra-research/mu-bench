@@ -2,15 +2,31 @@
   "gold": "Pero. ¡No! Está mal la dirección de correo electrónico.",
   "predicted": "Ay, pero No, está mal la dirección del correo electrónico.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "pero no esta mal la direccion de correo electronico",
-  "werNormalizedPredicted": "pero no esta mal la direccion de correo electronico",
-  "significantWer": 0.0,
+  "werNormalizedGold": "pero no está mal la dirección de correo electrónico",
+  "werNormalizedPredicted": "pero no esta mal la direccion del correo electronico",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "pero no esta mal la direccion de correo electronico",
-  "sigWerNormalizedPredicted": "pero no esta mal la direccion de correo electronico",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "pero no está mal la dirección de correo electrónico",
+  "sigWerNormalizedPredicted": "pero no esta mal la direccion del correo electronico",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'está' to 'esta' at position 2",
+      "reason": "Missing accent on 'está' does not change the meaning in this context; both are understood as 'is' in spoken Spanish.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'dirección' to 'direccion' at position 5",
+      "reason": "Missing accent on 'dirección' does not affect the meaning; the word is still clearly 'address'.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'electrónico' to 'electronico' at position 8",
+      "reason": "Missing accent on 'electrónico' does not change the meaning; the word is still understood as 'electronic'.",
+      "score": 3
+    }
+  ]
 }

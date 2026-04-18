@@ -1,16 +1,27 @@
 {
   "gold": "C N 8 7 7。",
-  "predicted": "Sien ba ci ci.",
+  "predicted": "Sien batzyci.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 5,
   "werRefWords": 5,
-  "werNormalizedGold": "c n eight seven seven",
-  "werNormalizedPredicted": "c n eight seven seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 八 七 七",
+  "werNormalizedPredicted": "sien batzyci",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n eight seven seven",
-  "sigWerNormalizedPredicted": "c n eight seven seven",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 八 七 七",
+  "sigWerNormalizedPredicted": "sien batzyci",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'sien' at position 0",
+      "reason": "'c' is a single letter, while 'sien' is a completely different word and does not represent the same letter or sound. This changes the intended content significantly, especially in a context where letters are being spelled out.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '八' at position 2",
+      "reason": "'八' (the Chinese character for 'eight') is missing entirely in the actual transcription, which omits a key part of the expected sequence. This is a significant omission.",
+      "score": 1
+    }
+  ]
 }

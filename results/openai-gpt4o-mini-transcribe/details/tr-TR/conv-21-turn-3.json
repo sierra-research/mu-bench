@@ -2,15 +2,26 @@
   "gold": "S N 850.",
   "predicted": "Sene sekiz yüz elli.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "s n eight hundred fifty",
-  "werNormalizedPredicted": "s n eight hundred fifty",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "s n sekiz yüz elli",
+  "werNormalizedPredicted": "sene sekiz yüz elli",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "s n eight hundred fifty",
-  "sigWerNormalizedPredicted": "s n eight hundred fifty",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "s n sekiz yüz elli",
+  "sigWerNormalizedPredicted": "sene sekiz yüz elli",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sene' at position 0",
+      "reason": "'s' is likely an abbreviation or initial, while 'sene' is a full word meaning 'year' in Turkish; this changes the meaning of the phrase significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from the sequence alters the intended meaning, especially if these are initials or part of a code, making it a significant error.",
+      "score": 1
+    }
+  ]
 }

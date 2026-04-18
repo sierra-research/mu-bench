@@ -2,25 +2,25 @@
   "gold": "Numara yanlış oldu. Atatürk Caddesi No 45 taksim 6. Yani 45 bölü 6 olacak.",
   "predicted": "Numara yanlış oldu. Atatürk Caddesi no kırk beş altı yani kırk beş altı olacak.",
   "unintelligible": false,
-  "wer": 0.125,
+  "wer": 0.13333333333333333,
   "werEdits": 2,
-  "werRefWords": 16,
-  "werNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı yani kırk beş bölü altı olacak",
-  "werNormalizedPredicted": "numara yanlış oldu atatürk caddesi no kırk beş altı yani kırk beş altı olacak",
-  "significantWer": 0.125,
+  "werRefWords": 15,
+  "werNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı kırk beş bölü altı olacak",
+  "werNormalizedPredicted": "numara yanlış oldu atatürk caddesi no kırk beş altı kırk beş altı olacak",
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı yani kırk beş bölü altı olacak",
-  "sigWerNormalizedPredicted": "numara yanlış oldu atatürk caddesi no kırk beş altı yani kırk beş altı olacak",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı kırk beş bölü altı olacak",
+  "sigWerNormalizedPredicted": "numara yanlış oldu atatürk caddesi no kırk beş altı kırk beş altı olacak",
   "sigWerErrors": [
     {
       "error": "Deletion: 'taksim' at position 8",
-      "reason": "'Taksim' is used in Turkish to indicate a division (slash) in addresses, such as 'kırk beş taksim altı' meaning '45/6'. Omitting 'taksim' removes the indication of division, which can lead to misunderstanding the address format.",
+      "reason": "'taksim' (meaning 'slash' or indicating an address format) is omitted, which can cause confusion in the address and may lead to incorrect interpretation or delivery.",
       "score": 1
     },
     {
-      "error": "Deletion: 'bölü' at position 13",
-      "reason": "'Bölü' also indicates division (slash) in addresses, as in 'kırk beş bölü altı' meaning '45/6'. Its omission removes the clarification of the address format, which can cause confusion or incorrect interpretation.",
+      "error": "Deletion: 'bölü' at position 12",
+      "reason": "'bölü' (meaning 'divided by' or 'slash' in address context) is omitted, which is important for the correct format of the address and can cause misunderstanding.",
       "score": 1
     }
   ]

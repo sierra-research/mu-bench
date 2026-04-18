@@ -2,15 +2,21 @@
   "gold": "Không phải. Minh, minh là tên đó. Trần là họ đó. Minh chấm trần a còng email chấm com.",
   "predicted": "Không phải. Minh, Minh là tên đó, Trần là họ đó. minh chấm tran at email chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.05263157894736842,
+  "werEdits": 1,
   "werRefWords": 19,
   "werNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm tran a còng email chấm com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm tran a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 13",
+      "reason": "'trần' is a Vietnamese proper noun with a diacritic, while 'tran' is the same name without the diacritic. The meaning is still clear and refers to the same name, but the lack of diacritic is a minor error in Vietnamese.",
+      "score": 2
+    }
+  ]
 }

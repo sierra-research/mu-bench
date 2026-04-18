@@ -7,7 +7,7 @@
   "werRefWords": 15,
   "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
   "werNormalizedPredicted": "bir dakika ahmet isminde ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'ismimde' to 'isminde' at position 2",
-      "reason": "The extra 'ahmet' does not change the overall meaning of the sentence, as it is a repetition and does not introduce confusion.",
+      "reason": "The insertion of 'ahmet' before 'isminde' slightly changes the sentence structure but does not alter the overall meaning.",
       "score": 2
     },
     {
       "error": "Deletion: 'de' at position 6",
-      "reason": "'ismimde' means 'in my name', while 'isminde' means 'in the name'. This changes the reference from the speaker's own name to a general name, which is a minor but not significant change in this context.",
+      "reason": "'ismimde' (in my name) vs 'isminde' (in the name) is a minor grammatical difference, but the intended meaning is still clear in context.",
       "score": 2
     }
   ]

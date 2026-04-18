@@ -2,25 +2,30 @@
   "gold": "你说得对，我现在等待新卡。想知道它的状态。",
   "predicted": "嗯，你说的对，我现在等的也心卡，想知道他的状态。",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 4,
+  "wer": 0.2777777777777778,
+  "werEdits": 5,
   "werRefWords": 18,
-  "werNormalizedGold": "你 说 得 对 我 现在 等待 新 卡 想 知道 它 的 状态",
-  "werNormalizedPredicted": "你 说 得 对 我 现在 等 的 也 心 卡 想 知道 他 的 状态",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "你说得对 我现在等待新卡 想知道它的状态",
+  "werNormalizedPredicted": "你说的对 我现在等的也心卡 想知道他的状态",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "你 说 得 对 我 现 在 等 待 新 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "你 说 得 对 我 现 在 等 的 也 心 卡 想 知 道 他 的 状 态",
+  "sigWerNormalizedPredicted": "你 说 的 对 我 现 在 等 的 也 心 卡 想 知 道 他 的 状 态",
   "sigWerErrors": [
     {
+      "error": "Substitution: '得' to '的' at position 2",
+      "reason": "In this context, '得' and '的' are different grammatical particles in Chinese. '得' is correct for expressing 'you are right', while '的' is a possessive or descriptive particle. This is a minor grammatical error but does not change the overall meaning.",
+      "score": 2
+    },
+    {
       "error": "Substitution: '待' to '也' at position 8",
-      "reason": "The insertion of '的' does not significantly change the meaning of the sentence; it is a minor grammatical addition.",
+      "reason": "The extra '的' after '等' is a minor grammatical error and does not affect the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: '它' to '他' at position 14",
-      "reason": "Substituting '待' (wait) with '也' (also) changes the meaning of the sentence, making it less coherent and potentially confusing the intent.",
+      "reason": "'待' means 'to wait', while '也' means 'also'. This substitution changes the meaning of the sentence and makes it less coherent, as '等待新卡' (waiting for the new card) becomes '等的也心卡', which is not meaningful.",
       "score": 1
     }
   ]

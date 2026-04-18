@@ -5,23 +5,23 @@
   "wer": 0.125,
   "werEdits": 2,
   "werRefWords": 16,
-  "werNormalizedGold": "toi muon hoi la co can chung minh thu nhap de duoc tang han muc khong",
-  "werNormalizedPredicted": "toi muon hoi la co can chung minh thu nhap khong de duoc tang han muc",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "werNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "toi muon hoi la co can chung minh thu nhap de duoc tang han muc khong",
-  "sigWerNormalizedPredicted": "toi muon hoi la co can chung minh thu nhap khong de duoc tang han muc",
+  "sigWerNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'khong' at position 10",
-      "reason": "'khong' (meaning 'no' or 'not') is inserted earlier in the sentence, which changes the structure but does not significantly alter the overall meaning of the question.",
-      "score": 2
+      "error": "Insertion: 'không' at position 10",
+      "reason": "The word 'không' (meaning 'no' or 'not') is inserted in the middle of the sentence, which changes the meaning from asking if income proof is needed to asking if income proof is not needed. This alters the intent of the question significantly.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'khong' at position 15",
-      "reason": "'khong' is missing from its expected position at the end, but since it appears earlier, the intent of the question remains clear. This is a minor error in word order, not meaning.",
-      "score": 2
+      "error": "Deletion: 'không' at position 15",
+      "reason": "The word 'không' is missing at the end of the sentence, which is important for forming a yes/no question in Vietnamese. Its absence makes the sentence incomplete and changes the meaning.",
+      "score": 1
     }
   ]
 }

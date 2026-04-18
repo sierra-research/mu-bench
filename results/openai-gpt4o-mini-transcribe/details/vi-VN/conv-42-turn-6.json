@@ -1,21 +1,31 @@
 {
   "gold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
-  "predicted": "Địa chỉ email là binh.tran@email.com",
+  "predicted": "địa chỉ email là binh.tran@gmail.com",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
+  "wer": 0.25,
+  "werEdits": 3,
   "werRefWords": 12,
   "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "địa chỉ email là binh chấm trần a còng email chấm com",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "địa chỉ email là binh chấm tran a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "địa chỉ email là binh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là binh chấm tran a còng gmail chấm com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'minh' to 'binh' at position 4",
-      "reason": "'minh' and 'binh' are both Vietnamese names, but substituting one for the other changes the identity of the email address owner, which is a significant error in this context.",
+      "reason": "'minh' and 'binh' are different Vietnamese names; substituting one for the other changes the identity in the email address, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 6",
+      "reason": "'trần' is the correct Vietnamese spelling with diacritics, while 'tran' is the non-accented version. In the context of an email address, this is a minor error as email addresses often omit diacritics, but it could affect the actual address.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 9",
+      "reason": "'email' and 'gmail' are different domains; substituting one for the other changes the destination of the email address, which is a significant error.",
       "score": 1
     }
   ]

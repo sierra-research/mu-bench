@@ -1,27 +1,37 @@
 {
   "gold": "¿Me puedes repetir de nuevo el correo de confirmación, por favor? Digo, ¿el número de confirmación?",
-  "predicted": "¿Me puede repetir de nuevo el número de confirmación, por favor? Digo, el número de confirmación.",
+  "predicted": "¿me puede repetir de nuevo el correo de confirmación, por favor? Digo, el número de confirmación.",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 2,
+  "wer": 0.25,
+  "werEdits": 4,
   "werRefWords": 16,
-  "werNormalizedGold": "me puedes repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
-  "werNormalizedPredicted": "me puede repetir de nuevo el numero de confirmacion por favor digo el numero de confirmacion",
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "me puedes repetir de nuevo el correo de confirmación por favor digo el número de confirmación",
+  "werNormalizedPredicted": "me puede repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "me puedes repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
-  "sigWerNormalizedPredicted": "me puede repetir de nuevo el numero de confirmacion por favor digo el numero de confirmacion",
+  "sigWerNormalizedGold": "me puedes repetir de nuevo el correo de confirmación por favor digo el número de confirmación",
+  "sigWerNormalizedPredicted": "me puede repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
   "sigWerErrors": [
     {
       "error": "Substitution: 'puedes' to 'puede' at position 1",
-      "reason": "Change from informal (tú) to formal (usted) form; does not affect the meaning of the request.",
+      "reason": "'puedes' is informal (tú), 'puede' is formal (usted); both mean 'can you', so the meaning is preserved in context.",
       "score": 3
     },
     {
-      "error": "Substitution: 'correo' to 'numero' at position 6",
-      "reason": "Changes the requested information from 'confirmation email' to 'confirmation number', which significantly alters the meaning of the sentence.",
-      "score": 1
+      "error": "Substitution: 'confirmación' to 'confirmacion' at position 8",
+      "reason": "The only difference is the missing accent on the 'o'; this does not change the meaning or pronunciation in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'número' to 'numero' at position 13",
+      "reason": "The only difference is the missing accent on the 'u'; this does not change the meaning or pronunciation in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'confirmación' to 'confirmacion' at position 15",
+      "reason": "The only difference is the missing accent on the 'o'; this does not change the meaning or pronunciation in context.",
+      "score": 3
     }
   ]
 }

@@ -2,21 +2,21 @@
   "gold": "Email nokta com adresime.",
   "predicted": "Email nokta com adresine evet.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 2,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
   "werNormalizedGold": "email nokta com adresime",
-  "werNormalizedPredicted": "email nokta com adresine evet",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email nokta com adresime evet",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "email nokta com adresime",
-  "sigWerNormalizedPredicted": "email nokta com adresine evet",
+  "sigWerNormalizedPredicted": "email nokta com adresime evet",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'adresime' to 'evet' at position 3",
-      "reason": "'adresime' and 'adresine' are different grammatical cases in Turkish ('to my address' vs 'to the address'), which can change the meaning but are closely related. The overall meaning is mostly preserved, but it is a minor error.",
-      "score": 2
+      "error": "Insertion: 'evet' at position 4",
+      "reason": "'evet' means 'yes' in Turkish and its addition changes the meaning of the sentence by adding an affirmation that was not present in the original, potentially confusing the intent.",
+      "score": 1
     }
   ]
 }

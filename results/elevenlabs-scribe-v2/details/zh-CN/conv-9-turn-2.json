@@ -1,16 +1,27 @@
 {
   "gold": "你再说一遍。",
-  "predicted": "嗯，你再说一遍。",
+  "predicted": "嗯，你这样说也对。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8,
+  "werEdits": 4,
   "werRefWords": 5,
-  "werNormalizedGold": "你 再 说 一 遍",
-  "werNormalizedPredicted": "你 再 说 一 遍",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你再说一遍",
+  "werNormalizedPredicted": "你这样说也对",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "你 再 说 一 遍",
-  "sigWerNormalizedPredicted": "你 再 说 一 遍",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 这 样 说 也 对",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '样' at position 1",
+      "reason": "The word '这' ('this') is inserted, which changes the meaning of the sentence from 'say it again' to something else.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '一' to '也' at position 3",
+      "reason": "'再' ('again') is substituted with '样' ('like/way'), which significantly alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,31 @@
   "gold": "Ana, quisiera saber qué necesito para poder aumentar el límite de mi tarjeta de crédito.",
   "predicted": "Ana, quisiera saber qué necesito para poder aumentar el límite de mi tarjeta de crédito.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 3,
   "werRefWords": 15,
-  "werNormalizedGold": "ana quisiera saber que necesito para poder aumentar el limite de mi tarjeta de credito",
+  "werNormalizedGold": "ana quisiera saber qué necesito para poder aumentar el límite de mi tarjeta de crédito",
   "werNormalizedPredicted": "ana quisiera saber que necesito para poder aumentar el limite de mi tarjeta de credito",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "ana quisiera saber que necesito para poder aumentar el limite de mi tarjeta de credito",
+  "sigWerNormalizedGold": "ana quisiera saber qué necesito para poder aumentar el límite de mi tarjeta de crédito",
   "sigWerNormalizedPredicted": "ana quisiera saber que necesito para poder aumentar el limite de mi tarjeta de credito",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'qué' to 'que' at position 3",
+      "reason": "Missing accent mark; in this context, both forms are commonly used in spoken Spanish and do not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'límite' to 'limite' at position 9",
+      "reason": "Missing accent mark; the word is still clearly understood and the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 14",
+      "reason": "Missing accent mark; the word is still clearly understood and the meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

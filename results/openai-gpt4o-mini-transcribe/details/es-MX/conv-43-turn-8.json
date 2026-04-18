@@ -1,22 +1,27 @@
 {
   "gold": "Ya, ya, yo ya lo recibí.",
-  "predicted": "Ya, ya el chorizo ya está. Ya lo recibí.",
+  "predicted": "Ya, ya el cheque está. Ya lo recibí.",
   "unintelligible": false,
   "wer": 0.6666666666666666,
   "werEdits": 4,
   "werRefWords": 6,
-  "werNormalizedGold": "ya ya yo ya lo recibi",
-  "werNormalizedPredicted": "ya ya el chorizo ya esta ya lo recibi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "ya ya yo ya lo recibí",
+  "werNormalizedPredicted": "ya ya el cheque esta ya lo recibi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "ya ya yo ya lo recibi",
-  "sigWerNormalizedPredicted": "ya ya el chorizo ya esta ya lo recibi",
+  "sigWerNormalizedGold": "ya ya yo ya lo recibí",
+  "sigWerNormalizedPredicted": "ya ya el cheque esta ya lo recibi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'yo' to 'esta' at position 2",
-      "reason": "The insertion of 'el' and 'chorizo' adds unrelated content to the sentence, which could confuse the meaning, but since the main message 'ya lo recibi' is still present, the overall intent is preserved.",
+      "reason": "'el' introduces a new subject ('the'), which adds information but does not derail the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'recibí' to 'recibi' at position 5",
+      "reason": "Replacing 'yo' (I) with 'cheque' (check) changes the subject and meaning of the sentence significantly.",
+      "score": 1
     }
   ]
 }

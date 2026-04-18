@@ -1,32 +1,37 @@
 {
   "gold": "Đúng rồi. Nhưng mà email là trần minh. Nhầm. Nói lại. Email là minh chấm trần a còng email chấm com.",
-  "predicted": "Đúng rồi, email là nhưng mà email là Trần Minh, à nhầm, nói lại, nói lại, email là minh.trần@congemail.com",
+  "predicted": "Đúng rồi, email là nhưng mà email là Trần Minh... à nhầm, nói lại nói lại, email là Minh.Chân@compoundemail.com",
   "unintelligible": false,
-  "wer": 0.23809523809523808,
-  "werEdits": 5,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
   "werRefWords": 21,
   "werNormalizedGold": "đúng rồi nhưng mà email là trần minh nhầm nói lại email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "đúng rồi email là nhưng mà email là trần minh à nhầm nói lại nói lại email là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "đúng rồi email là nhưng mà email là trần minh nhầm nói lại nói lại email là minh chấm chân a còng compoundemail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "đúng rồi nhưng mà email là trần minh nhầm nói lại email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "đúng rồi email là nhưng mà email là trần minh à nhầm nói lại nói lại email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "đúng rồi email là nhưng mà email là trần minh nhầm nói lại nói lại email là minh chấm chân a còng compoundemail chấm com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'email' at position 2",
-      "reason": "The insertion of 'email' at this position does not change the overall meaning of the sentence, as the context is still about providing an email address.",
+      "reason": "The extra 'email' does not change the overall meaning, as the sentence is still about providing an email address.",
       "score": 2
     },
     {
-      "error": "Insertion: 'à' at position 8",
-      "reason": "The word 'à' is a filler or hesitation word in Vietnamese and does not affect the meaning of the sentence.",
-      "score": 3
+      "error": "Insertion: 'nói' at position 11",
+      "reason": "Repeating 'nói lại' (say again) is redundant but does not change the meaning of the sentence.",
+      "score": 2
     },
     {
-      "error": "Insertion: 'nói' at position 9",
-      "reason": "The repetition of 'nói lại' (say again) is redundant but does not change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'trần' to 'chân' at position 15",
+      "reason": "'trần' is a Vietnamese surname, while 'chân' means 'foot' or 'true'. This changes the name in the email address, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'compoundemail' at position 18",
+      "reason": "Changing 'email' to 'compoundemail' in the email address makes the address incorrect and unusable, which is a significant error.",
+      "score": 1
     }
   ]
 }

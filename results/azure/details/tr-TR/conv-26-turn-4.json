@@ -5,17 +5,17 @@
   "wer": 0.125,
   "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "e e two one three four five six",
-  "werNormalizedPredicted": "e two one three four five six",
-  "significantWer": 0.125,
+  "werNormalizedGold": "e e iki bir üç dört beş altı",
+  "werNormalizedPredicted": "e iki bir üç dört beş altı",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "e e two one three four five six",
-  "sigWerNormalizedPredicted": "e two one three four five six",
+  "sigWerNormalizedGold": "e e iki bir üç dört beş altı",
+  "sigWerNormalizedPredicted": "e iki bir üç dört beş altı",
   "sigWerErrors": [
     {
       "error": "Deletion: 'e' at position 1",
-      "reason": "A letter is missing in a spelled-out sequence, which changes the intended sequence and could result in a different code or identifier.",
+      "reason": "The expected sequence contains two 'e's at the start, which suggests a spelled-out or enumerated sequence. Omitting one 'e' changes the sequence and could lead to confusion, especially if these are meant to be individual elements (such as letters or numbers). This is a significant error in contexts where each element matters.",
       "score": 1
     }
   ]

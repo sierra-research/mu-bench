@@ -1,36 +1,31 @@
 {
   "gold": "Tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không?",
-  "predicted": "Ông tôi hỏi được tăng hạng bức nhờ vào việc khai thác tài sản không?",
+  "predicted": "ông Tôn Hè được tăng hạng bức nhờ vào việc khai thác tài sản không?",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 7,
+  "wer": 0.5714285714285714,
+  "werEdits": 8,
   "werRefWords": 14,
   "werNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
-  "werNormalizedPredicted": "ông tôi hỏi được tăng hạng bức nhờ vào việc khai thác tài sản không",
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 4,
+  "werNormalizedPredicted": "ông tôn hè được tăng hạng bức nhờ vào việc khai thác tài sản không",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
-  "sigWerNormalizedPredicted": "ông tôi hỏi được tăng hạng bức nhờ vào việc khai thác tài sản không",
+  "sigWerNormalizedPredicted": "ông tôn hè được tăng hạng bức nhờ vào việc khai thác tài sản không",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'ông' at position 0",
-      "reason": "The insertion of 'ông' (grandfather) changes the subject of the sentence, which significantly alters the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'có' to 'hỏi' at position 1",
-      "reason": "Changing 'có' (can) to 'hỏi' (ask) changes the intent from asking about possibility to reporting a question, which significantly changes the meaning.",
+      "error": "Substitution: 'tôi' to 'tôn' at position 0",
+      "reason": "'ông' (sir/mr) is inserted at the beginning, changing the subject from first person ('tôi' - I) to third person, which alters the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'hạn' to 'hạng' at position 4",
-      "reason": "'hạn mức' (limit) and 'hạng bức' are not equivalent; this substitution makes the phrase unclear and changes the meaning.",
+      "reason": "'tôi' means 'I', while 'tôn' is a different word and not a pronoun, making the sentence incoherent and changing the subject.",
       "score": 1
     },
     {
       "error": "Substitution: 'thế' to 'khai' at position 9",
-      "reason": "'thế chấp' (mortgage/pledge) and 'khai thác' (exploit) are completely different concepts, which significantly changes the meaning of the sentence.",
+      "reason": "'hạn mức' (credit limit) is a financial term, while 'hạng bức' is not a valid phrase and changes the meaning, making the sentence unclear.",
       "score": 1
     }
   ]

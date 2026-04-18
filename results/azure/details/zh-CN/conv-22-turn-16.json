@@ -2,20 +2,30 @@
   "gold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
   "predicted": "Mailing at email.com.",
   "unintelligible": false,
-  "wer": 0.6875,
-  "werEdits": 11,
-  "werRefWords": 16,
-  "werNormalizedGold": "meiling at email dot com is my email address when i concern i will get it",
-  "werNormalizedPredicted": "meiling at email dot com",
-  "significantWer": 0.0625,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "meiling at email dot com is my email address when i concern i will get it",
-  "sigWerNormalizedPredicted": "meiling at email dot com",
+  "wer": 0.7894736842105263,
+  "werEdits": 15,
+  "werRefWords": 19,
+  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern ill get it",
+  "werNormalizedPredicted": "mailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern ill get it",
+  "sigWerNormalizedPredicted": "mailing at email dot com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'is' at position 5",
-      "reason": "The entire second part of the sentence, which provides the context and purpose of the email address, is missing. This omission significantly changes the meaning and completeness of the information provided.",
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This changes the intended meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name (美玲), and its omission results in a loss of the correct name, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '是' at position 6",
+      "reason": "'是' means 'is' in Chinese and is important for the sentence structure and meaning. Its omission makes the sentence incomplete and unclear.",
       "score": 1
     }
   ]

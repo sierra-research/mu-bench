@@ -2,20 +2,25 @@
   "gold": "嗯对的，对的对的。",
   "predicted": "是的对的",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "对的对的对的",
-  "werNormalizedPredicted": "对的对的",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "是的对的",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "对 的 对 的 对 的",
-  "sigWerNormalizedPredicted": "对 的 对 的",
+  "sigWerNormalizedPredicted": "是 的 对 的",
   "sigWerErrors": [
     {
-      "error": "Deletion: '对' at position 4",
-      "reason": "The last repetition of '对 的' is missing, but the overall meaning (affirmation/confirmation) is preserved as the phrase is repeated multiple times. The omission does not change the intent or meaning of the sentence.",
+      "error": "Substitution: '对' to '是' at position 0",
+      "reason": "'对' means 'correct' or 'right', while '是' means 'is' or 'yes'. Substituting '对' with '是' changes the affirmation from 'correct' to a general affirmation, which is a minor change but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '的' at position 1",
+      "reason": "Omitting '的' slightly changes the structure but does not significantly alter the meaning in this repetitive affirmation context.",
       "score": 2
     }
   ]

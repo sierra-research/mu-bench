@@ -5,27 +5,27 @@
   "wer": 0.2,
   "werEdits": 3,
   "werRefWords": 15,
-  "werNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
-  "werNormalizedPredicted": "ikinci harf hep yanlis ikinci harfim a olacak zden sonra a var e degil zeynep",
-  "significantWer": 0.06666666666666667,
+  "werNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "werNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak zden sonra a var e değil zeynep",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
-  "sigWerNormalizedPredicted": "ikinci harf hep yanlis ikinci harfim a olacak zden sonra a var e degil zeynep",
+  "sigWerNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "sigWerNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak zden sonra a var e değil zeynep",
   "sigWerErrors": [
     {
       "error": "Substitution: 'harfi' to 'harf' at position 1",
-      "reason": "'harfi' is the correct grammatical form in this context, but 'harf' (the base word) still conveys the intended meaning. This is a minor grammatical error that does not change the overall meaning.",
+      "reason": "'harfi' is the correct grammatical form (possessive), while 'harf' is the base word. The meaning is still clear in context, so this is a minor error.",
       "score": 2
     },
     {
-      "error": "Deletion: 'soyluyorsunuz' at position 4",
-      "reason": "Omitting 'soyluyorsunuz' ('you are saying') removes a part of the sentence that addresses the listener, but the main message about the letter remains clear. This is a minor error.",
+      "error": "Deletion: 'söylüyorsunuz' at position 4",
+      "reason": "Omitting 'söylüyorsunuz' ('you are saying') removes the reference to the repeated action, but the main meaning of the sentence is still understandable.",
       "score": 2
     },
     {
       "error": "Insertion: 'zeynep' at position 15",
-      "reason": "'zeynep' is an unrelated word inserted at the end, which could confuse the listener or change the context. This is a significant error as it introduces unrelated information.",
+      "reason": "Adding 'zeynep' (a proper noun) at the end introduces an unrelated word, which could confuse the listener and derail the meaning.",
       "score": 1
     }
   ]

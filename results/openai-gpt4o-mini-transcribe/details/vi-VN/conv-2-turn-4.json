@@ -1,16 +1,22 @@
 {
   "gold": "C N 2 3 3.",
-  "predicted": "sẽ là hai ba ba",
+  "predicted": "sẽ nờ hai ba ba",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n two three three",
-  "werNormalizedPredicted": "c n two three three",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n hai ba ba",
+  "werNormalizedPredicted": "sẽ nờ hai ba ba",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n two three three",
-  "sigWerNormalizedPredicted": "c n two three three",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n hai ba ba",
+  "sigWerNormalizedPredicted": "sẽ nờ hai ba ba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'sẽ' at position 0",
+      "reason": "'c' is a letter (possibly part of a spelled-out sequence), while 'sẽ' is a different word with a different meaning in Vietnamese. This changes the meaning and disrupts the intended sequence.",
+      "score": 1
+    }
+  ]
 }

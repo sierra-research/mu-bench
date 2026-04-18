@@ -5,32 +5,32 @@
   "wer": 0.5555555555555556,
   "werEdits": 5,
   "werRefWords": 9,
-  "werNormalizedGold": "xem het luon tien ngay gi xem het luon",
-  "werNormalizedPredicted": "xem het luong tien roi ngay gi cung cung xem het",
-  "significantWer": 0.1111111111111111,
+  "werNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "werNormalizedPredicted": "xem hết lương tiền rồi ngày gì cũng cũng xem hết",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "xem het luon tien ngay gi xem het luon",
-  "sigWerNormalizedPredicted": "xem het luong tien roi ngay gi cung cung xem het",
+  "sigWerNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "sigWerNormalizedPredicted": "xem hết lương tiền rồi ngày gì cũng cũng xem hết",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'luon' to 'luong' at position 2",
-      "reason": "'luon' and 'luong' are different words in Vietnamese; this changes the meaning of the phrase.",
+      "error": "Substitution: 'luôn' to 'lương' at position 2",
+      "reason": "'luôn' (always) and 'lương' (salary) are completely different words and change the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Insertion: 'roi' at position 4",
-      "reason": "The word 'roi' adds a new element to the sentence, which can change the meaning or intent.",
+      "error": "Insertion: 'rồi' at position 4",
+      "reason": "The insertion of 'rồi' (already/then) adds a temporal aspect but does not significantly change the overall meaning.",
       "score": 2
     },
     {
-      "error": "Insertion: 'cung' at position 6",
-      "reason": "The repeated insertion of 'cung' adds redundancy and changes the structure of the sentence.",
+      "error": "Insertion: 'cũng' at position 6",
+      "reason": "The insertion of 'cũng' (also) adds emphasis but does not change the main meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'luon' at position 8",
-      "reason": "Omitting 'luon' at the end removes emphasis or a concluding element, which can affect the meaning.",
+      "error": "Deletion: 'luôn' at position 8",
+      "reason": "Omitting 'luôn' (always) slightly reduces emphasis but does not derail the meaning.",
       "score": 2
     }
   ]

@@ -5,32 +5,32 @@
   "wer": 0.3888888888888889,
   "werEdits": 7,
   "werRefWords": 18,
-  "werNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstresini istiyorum",
-  "werNormalizedPredicted": "oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylar arasindaki hesap ekstra istiyorum",
-  "significantWer": 0.1111111111111111,
+  "werNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "werNormalizedPredicted": "öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık aylar arasındaki hesap ekstra istiyorum",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstresini istiyorum",
-  "sigWerNormalizedPredicted": "oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylar arasindaki hesap ekstra istiyorum",
+  "sigWerNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "sigWerNormalizedPredicted": "öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık aylar arasındaki hesap ekstra istiyorum",
   "sigWerErrors": [
     {
       "error": "Deletion: 'anna' at position 0",
-      "reason": "'anna' is a proper noun at the start of the sentence, likely the addressee or subject. Its omission removes important context and changes the meaning.",
+      "reason": "'anna' is a proper noun at the start of the sentence, likely the addressee or subject. Its omission removes the subject and can make the sentence less clear or change the context.",
       "score": 1
     },
     {
       "error": "Insertion: 'iki' at position 3",
-      "reason": "The extra 'iki' (two) repeats the year phrase but does not significantly change the meaning of the request.",
+      "reason": "The extra 'iki' (two) repeats the year phrase, but does not significantly change the meaning of the request. It is a minor redundancy.",
       "score": 2
     },
     {
-      "error": "Substitution: 'aylari' to 'aylar' at position 13",
-      "reason": "'aylari' (the months of) vs 'aylar' (months) is a minor grammatical difference in Turkish, does not change the meaning.",
-      "score": 3
+      "error": "Substitution: 'ayları' to 'aylar' at position 13",
+      "reason": "'ayları' is the accusative/plural form, while 'aylar' is nominative/plural. The meaning is nearly the same in this context, as both refer to the months, so this is a minor grammatical error.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'ekstresini' to 'ekstra' at position 16",
-      "reason": "'ekstresini' (the statement) is the correct banking term, while 'ekstra' (extra) is a different word and changes the meaning of the request.",
+      "error": "Substitution: 'ekstremi' to 'ekstra' at position 16",
+      "reason": "'ekstremi' means 'my statement' (as in bank statement), while 'ekstra' means 'extra'. This changes the meaning of what is being requested and makes the sentence incoherent.",
       "score": 1
     }
   ]

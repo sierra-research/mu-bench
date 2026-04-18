@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
   "werNormalizedPredicted": "是",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '君' to '是' at position 0",
-      "reason": "'君' is a name or part of an email address, while '是' means 'is' in Chinese. This substitution completely changes the meaning and makes the transcription incoherent.",
+      "reason": "'君' is a name and '是' means 'is' in Chinese; this substitution completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "'玲' is missing from the transcription, which is significant as it is part of the name or email address, making the transcription incomplete and incorrect.",
+      "reason": "Omitting '玲', which is part of the name, results in an incomplete and incorrect email address, significantly altering the intended meaning.",
       "score": 1
     }
   ]

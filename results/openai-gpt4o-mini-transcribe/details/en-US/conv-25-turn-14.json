@@ -7,7 +7,7 @@
   "werRefWords": 14,
   "werNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
   "werNormalizedPredicted": "you can hear that snoring in the background we got a party",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "maybe you can hear that snoring in the background we are going to party",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'maybe' at position 0",
-      "reason": "'Maybe' is a hedging word that adds uncertainty or possibility to the statement, but its absence does not significantly change the core meaning of the sentence.",
+      "reason": "'Maybe' is a hedging word that adds uncertainty or possibility, but its absence does not significantly change the main meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'are' to 'got' at position 10",
-      "reason": "'We are going to party' vs. 'we got a party' both indicate a party is happening, but 'got' changes the tense and slightly the meaning, though the overall intent is preserved.",
+      "reason": "'We are going to party' vs 'we got a party' both indicate a party is happening, but 'got' changes the tense and slightly the meaning, though the overall intent is preserved.",
       "score": 2
     },
     {
       "error": "Deletion: 'to' at position 12",
-      "reason": "Omitting 'to' in 'going to party' makes the phrase less grammatical but does not significantly alter the meaning.",
+      "reason": "Omitting 'to' in 'going to party' vs 'got a party' is a result of the previous substitution and does not further change the meaning.",
       "score": 2
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "Tabii. Zaynep nokta Arslan at email nokta com.",
   "predicted": "Tabii Zeynep arslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "tabii zeynep arslan at email dot com",
-  "werNormalizedPredicted": "tabii zeynep arslan at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "tabii zeynep arslan at email dot com",
-  "sigWerNormalizedPredicted": "tabii zeynep arslan at email dot com",
-  "sigWerErrors": []
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "tabii zeynep arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabii zeynep arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 1",
+      "reason": "Minor misspelling of a proper noun, but the name is still clearly recognizable as 'zeynep', which is a common Turkish name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 2",
+      "reason": "'nokta' means 'dot' and is important for the structure of the email address. Omitting it could cause confusion or an incorrect email address.",
+      "score": 1
+    }
+  ]
 }

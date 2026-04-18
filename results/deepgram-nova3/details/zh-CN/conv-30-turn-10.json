@@ -2,25 +2,30 @@
   "gold": "俊，不是邻居，是林俊。",
   "predicted": "不是林去是林郡",
   "unintelligible": false,
-  "wer": 0.375,
-  "werEdits": 3,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
-  "werNormalizedGold": "俊不是邻居是林俊",
-  "werNormalizedPredicted": "不是林俊是林俊",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "俊 不是邻居 是林俊",
+  "werNormalizedPredicted": "不是林去是林郡",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "俊 不 是 邻 居 是 林 俊",
-  "sigWerNormalizedPredicted": "不 是 林 俊 是 林 俊",
+  "sigWerNormalizedPredicted": "不 是 林 去 是 林 郡",
   "sigWerErrors": [
     {
       "error": "Deletion: '俊' at position 0",
-      "reason": "The missing '俊' at the beginning removes the subject or key information, which can significantly change the meaning of the sentence.",
+      "reason": "The omission of the surname '俊' at the beginning removes a key part of the name, which can significantly change the meaning or identity being referred to.",
       "score": 1
     },
     {
       "error": "Substitution: '邻' to '林' at position 3",
-      "reason": "Substituting '邻' (neighbor) with '林' (a surname or forest) changes the meaning of the sentence, as it confuses the intended subject or object, leading to a significant error.",
+      "reason": "Substituting '邻' (neighbor) with '林' (forest or a surname) changes the meaning of the phrase from 'neighbor' to a name or unrelated word, which alters the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '俊' to '郡' at position 7",
+      "reason": "'俊' and '郡' are different characters with different meanings and pronunciations; this changes the name or word being referenced, which is a significant error.",
       "score": 1
     }
   ]

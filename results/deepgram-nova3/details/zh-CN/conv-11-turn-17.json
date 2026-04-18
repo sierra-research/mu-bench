@@ -2,20 +2,25 @@
   "gold": "你说的不对！你为什么不听好呀。",
   "predicted": "你说的不对你为什么评不评我呀",
   "unintelligible": false,
-  "wer": 0.3076923076923077,
-  "werEdits": 4,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
-  "werNormalizedGold": "你 说 的 不 对 你 为 什么 不 听 好 呀",
-  "werNormalizedPredicted": "你 说 的 不 对 你 为 什么 不 评 不 评 我 呀",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "你说的不对你为什么不听好呀",
+  "werNormalizedPredicted": "你说的不对你为什么评不评我呀",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "你 说 的 不 对 你 为 什 么 不 听 好 呀",
-  "sigWerNormalizedPredicted": "你 说 的 不 对 你 为 什 么 不 评 不 评 我 呀",
+  "sigWerNormalizedPredicted": "你 说 的 不 对 你 为 什 么 评 不 评 我 呀",
   "sigWerErrors": [
     {
+      "error": "Insertion: '评' at position 9",
+      "reason": "The insertion of '评' (evaluate/comment) changes the meaning of the sentence, making it incoherent and altering the intent from 'not listen' to something about 'evaluate'.",
+      "score": 1
+    },
+    {
       "error": "Substitution: '听' to '评' at position 10",
-      "reason": "'听' (listen) and '评' (comment/evaluate) are completely different in meaning, and this changes the intent of the sentence significantly.",
+      "reason": "Substituting '听' (listen) with '评' (evaluate/comment) significantly changes the meaning of the sentence, derailing the original intent.",
       "score": 1
     }
   ]

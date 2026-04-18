@@ -2,20 +2,30 @@
   "gold": "Tabii. Z A Y N E P nokta A R S L A N.",
   "predicted": "Tabi ZAYNET. ARSLAN.",
   "unintelligible": false,
-  "wer": 0.07142857142857142,
-  "werEdits": 1,
+  "wer": 0.5714285714285714,
+  "werEdits": 8,
   "werRefWords": 14,
   "werNormalizedGold": "tabii z a y n e p nokta a r s l a n",
-  "werNormalizedPredicted": "tabii z a y n e p a r s l a n",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tabi z a y n e p arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tabii z a y n e p nokta a r s l a n",
-  "sigWerNormalizedPredicted": "tabii z a y n e p a r s l a n",
+  "sigWerNormalizedPredicted": "tabi z a y n e p arslan",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'nokta' at position 7",
-      "reason": "'nokta' (meaning 'dot' or 'period') is part of a spelled-out email or username. Omitting it changes the structure and could lead to an incorrect or unusable address/identifier.",
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are minor spelling variants of the same word, and the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'nokta' to 'arslan' at position 7",
+      "reason": "'nokta' means 'dot' (as in an email address or spelled sequence), while 'arslan' is a surname. Replacing 'dot' with the surname changes the structure and meaning of the spelled-out name/email.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 8",
+      "reason": "Omitting a letter in a spelled-out sequence (likely part of a name or email) is a significant error as it changes the intended spelling.",
       "score": 1
     }
   ]

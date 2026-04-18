@@ -2,15 +2,31 @@
   "gold": "Urión 30, col. Tlatilco.",
   "predicted": "Unión treinta, Coltlatlilco.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
-  "werNormalizedGold": "union treinta col tlatilco",
-  "werNormalizedPredicted": "union treinta col tlatilco",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "urión treinta col tlatilco",
+  "werNormalizedPredicted": "unión treinta coltlatlilco",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "union treinta col tlatilco",
-  "sigWerNormalizedPredicted": "union treinta col tlatilco",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "urión treinta col tlatilco",
+  "sigWerNormalizedPredicted": "unión treinta coltlatlilco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'urión' to 'unión' at position 0",
+      "reason": "'Urion' and 'unión' are different words with different meanings; 'unión' means 'union' in Spanish, while 'urión' is likely a proper noun or specific name. This changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'col' to 'coltlatlilco' at position 2",
+      "reason": "'col' is likely an abbreviation for 'colonia' (neighborhood), while 'coltlatlilco' appears to be a concatenation of 'col' and 'tlatilco', which could confuse the address or location being referenced.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'tlatilco' at position 3",
+      "reason": "Omitting 'tlatilco' removes a key part of the address or location, which can lead to misunderstanding or misidentification of the place.",
+      "score": 1
+    }
+  ]
 }

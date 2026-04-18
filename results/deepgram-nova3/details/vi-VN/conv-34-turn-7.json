@@ -2,45 +2,40 @@
   "gold": "Thế em muốn xin bản sao sao kê hoặc là hóa đơn kỳ gần nhất của thẻ tín dụng được không ạ? Tại vì hiện tại em đang tổng hợp lại một vài chi tiêu của vài tháng gần đây nên cần bản sao kê mới nhất để theo dõi cho chính xác.",
   "predicted": "Thế em muốn xin cái bản sao sao kê hoặc là hóa đơn kỳ gần những của thẻ tín dụng được không ạ Tại vì hiện tại em đang tổng hợp lại một vài chi tiêu chi tiêu của vài tháng gần đây ấy nên là cần bản sao kê mới nhất để theo dõi cho nó chính xác",
   "unintelligible": false,
-  "wer": 0.1320754716981132,
-  "werEdits": 7,
-  "werRefWords": 53,
-  "werNormalizedGold": "thế em muốn xin bản sao sao kê hoặc là hóa đơn kỳ gần nhất của thẻ tín dụng được không ạ tại vì hiện tại em đang tổng hợp lại một vài chi tiêu của vài tháng gần đây nên cần bản sao kê mới nhất để theo dõi cho chính xác",
-  "werNormalizedPredicted": "thế em muốn xin cái bản sao sao kê hoặc là hóa đơn kỳ gần những của thẻ tín dụng được không ạ tại vì hiện tại em đang tổng hợp lại một vài chi tiêu chi tiêu của vài tháng gần đây ấy nên là cần bản sao kê mới nhất để theo dõi cho nó chính xác",
-  "significantWer": 0.018867924528301886,
+  "wer": 0.11538461538461539,
+  "werEdits": 6,
+  "werRefWords": 52,
+  "werNormalizedGold": "thế em muốn xin bản sao sao kê hoặc là hóa đơn kỳ gần nhất của thẻ tín dụng được không tại vì hiện tại em đang tổng hợp lại một vài chi tiêu của vài tháng gần đây nên cần bản sao kê mới nhất để theo dõi cho chính xác",
+  "werNormalizedPredicted": "thế em muốn xin cái bản sao sao kê hoặc là hóa đơn kỳ gần những của thẻ tín dụng được không tại vì hiện tại em đang tổng hợp lại một vài chi tiêu chi tiêu của vài tháng gần đây nên là cần bản sao kê mới nhất để theo dõi cho nó chính xác",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 53,
-  "sigWerNormalizedGold": "thế em muốn xin bản sao sao kê hoặc là hóa đơn kỳ gần nhất của thẻ tín dụng được không ạ tại vì hiện tại em đang tổng hợp lại một vài chi tiêu của vài tháng gần đây nên cần bản sao kê mới nhất để theo dõi cho chính xác",
-  "sigWerNormalizedPredicted": "thế em muốn xin cái bản sao sao kê hoặc là hóa đơn kỳ gần những của thẻ tín dụng được không ạ tại vì hiện tại em đang tổng hợp lại một vài chi tiêu chi tiêu của vài tháng gần đây ấy nên là cần bản sao kê mới nhất để theo dõi cho nó chính xác",
+  "totalWordsCount": 52,
+  "sigWerNormalizedGold": "thế em muốn xin bản sao sao kê hoặc là hóa đơn kỳ gần nhất của thẻ tín dụng được không tại vì hiện tại em đang tổng hợp lại một vài chi tiêu của vài tháng gần đây nên cần bản sao kê mới nhất để theo dõi cho chính xác",
+  "sigWerNormalizedPredicted": "thế em muốn xin cái bản sao sao kê hoặc là hóa đơn kỳ gần những của thẻ tín dụng được không tại vì hiện tại em đang tổng hợp lại một vài chi tiêu chi tiêu của vài tháng gần đây nên là cần bản sao kê mới nhất để theo dõi cho nó chính xác",
   "sigWerErrors": [
     {
       "error": "Insertion: 'cái' at position 4",
-      "reason": "'cái' is a common classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
+      "reason": "'cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
       "score": 3
     },
     {
       "error": "Substitution: 'nhất' to 'những' at position 14",
-      "reason": "'nhất' means 'the most' or 'the latest', while 'những' means 'some' or 'several'. This changes the meaning from requesting the latest bill to requesting several bills, which is a significant change.",
+      "reason": "'nhất' means 'the most' or 'latest', while 'những' means 'some' or 'several'. This changes the meaning from requesting the latest statement to requesting several statements, which is a significant change.",
       "score": 1
     },
     {
-      "error": "Insertion: 'chi' at position 35",
-      "reason": "The repetition of 'chi tiêu' (spending) is redundant but does not change the overall meaning.",
+      "error": "Insertion: 'chi' at position 34",
+      "reason": "The word 'chi' is repeated, resulting in 'chi tiêu chi tiêu'. This is a minor repetition and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'là' at position 40",
+      "reason": "The insertion of 'là' ('so' or 'thus') is a minor filler and does not affect the meaning.",
       "score": 3
     },
     {
-      "error": "Insertion: 'ấy' at position 40",
-      "reason": "'ấy' is a filler word in Vietnamese, often used for emphasis or to sound more natural in conversation. It does not change the meaning.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'là' at position 41",
-      "reason": "'là' is a linking word and its insertion here does not affect the meaning of the sentence.",
-      "score": 3
-    },
-    {
-      "error": "Insertion: 'nó' at position 51",
-      "reason": "'nó' (it) adds emphasis to 'chính xác' (exactly), but does not change the meaning of the sentence.",
+      "error": "Insertion: 'nó' at position 50",
+      "reason": "The addition of 'nó' ('it') in 'cho nó chính xác' instead of 'cho chính xác' is a minor stylistic difference and does not change the meaning.",
       "score": 3
     }
   ]

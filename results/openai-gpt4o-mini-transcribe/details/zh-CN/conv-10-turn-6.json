@@ -5,9 +5,9 @@
   "wer": 0.14285714285714285,
   "werEdits": 1,
   "werRefWords": 7,
-  "werNormalizedGold": "那 我的 姓 姓名 呢",
-  "werNormalizedPredicted": "那 我的 姓名 呢",
-  "significantWer": 0.0,
+  "werNormalizedGold": "那我的姓姓名呢",
+  "werNormalizedPredicted": "那我的姓名呢",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "那 我 的 姓 姓 名 呢",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Deletion: '姓' at position 4",
-      "reason": "The word '姓' (surname) is missing, which may cause confusion or loss of clarity about the structure of the name being asked for, but the overall meaning is still understandable as a request for name information.",
+      "reason": "The word '姓' (surname) is repeated in the expected transcript, but only appears once in the actual. The deletion of the repeated '姓' does not change the overall meaning of the sentence, as '姓' and '姓名' together still convey the idea of asking for the surname and full name. The sentence remains coherent and understandable.",
       "score": 2
     }
   ]

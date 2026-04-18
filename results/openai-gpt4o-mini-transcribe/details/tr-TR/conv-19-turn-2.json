@@ -5,22 +5,22 @@
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "c n two two two dogru mudur",
-  "werNormalizedPredicted": "cene two two two dogru mudur",
-  "significantWer": 0.2857142857142857,
+  "werNormalizedGold": "c n iki iki iki doğru mudur",
+  "werNormalizedPredicted": "cene iki iki iki doğru mudur",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "c n two two two dogru mudur",
-  "sigWerNormalizedPredicted": "cene two two two dogru mudur",
+  "sigWerNormalizedGold": "c n iki iki iki doğru mudur",
+  "sigWerNormalizedPredicted": "cene iki iki iki doğru mudur",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'cene' at position 0",
-      "reason": "'c' is a single letter, possibly an initial or part of a spelled-out sequence, while 'cene' is a completely different word. This changes the meaning significantly, especially if 'c n' is meant to be a code or initials.",
+      "reason": "'c n' appears to be a sequence of spelled-out letters, while 'cene' is a word. This changes the meaning and is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: 'n' at position 1",
-      "reason": "Omitting 'n' from a sequence like 'c n' (possibly initials or a code) is a significant error, as it alters the intended information.",
+      "reason": "Omitting a letter in a spelled-out sequence is a significant error as it changes the intended sequence.",
       "score": 1
     }
   ]

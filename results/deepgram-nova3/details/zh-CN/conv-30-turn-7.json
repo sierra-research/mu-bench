@@ -5,9 +5,9 @@
   "wer": 0.4444444444444444,
   "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "不是邻居是林俊俊俊",
+  "werNormalizedGold": "不是邻居 是林俊 俊 俊",
   "werNormalizedPredicted": "不是邻居是邻居",
-  "significantWer": 0.2222222222222222,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 俊",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '林' to '邻' at position 5",
-      "reason": "'林' (a surname or name) is replaced with '邻' (neighbor), which changes the meaning of the sentence significantly, especially since it refers to a person's name versus a general noun.",
+      "reason": "'林' (a surname or given name) is replaced with '邻' (neighbor), which changes the meaning of the sentence from referring to a person to referring to a neighbor. This is a significant error as it alters the subject of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: '俊' at position 7",
-      "reason": "The name '俊 俊 俊' is omitted, which removes the identification of the person being referred to, making the sentence incomplete and changing its meaning significantly.",
+      "reason": "The repeated '俊' (a name or part of a name) is omitted, which removes the reference to the person entirely. This is a significant error as it changes the meaning and removes the intended subject.",
       "score": 1
     }
   ]

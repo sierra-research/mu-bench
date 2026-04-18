@@ -5,37 +5,37 @@
   "wer": 0.3333333333333333,
   "werEdits": 5,
   "werRefWords": 15,
-  "werNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
-  "werNormalizedPredicted": "ilk ikinci harf hep yanlis ve ikinci harfim a olacak zden sonrada var e degil",
-  "significantWer": 0.2,
+  "werNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "werNormalizedPredicted": "ilk ikinci harf hep yanlış ve ikinci harfim a olacak zden sonrada var e değil",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "ikinci harfi hep yanlis soyluyorsunuz ikinci harfim a olacak zden sonra a var e degil",
-  "sigWerNormalizedPredicted": "ilk ikinci harf hep yanlis ve ikinci harfim a olacak zden sonrada var e degil",
+  "sigWerNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "sigWerNormalizedPredicted": "ilk ikinci harf hep yanlış ve ikinci harfim a olacak zden sonrada var e değil",
   "sigWerErrors": [
     {
       "error": "Insertion: 'ilk' at position 0",
-      "reason": "'ilk' (meaning 'first') is inserted at the beginning, which changes the reference from 'second letter' to 'first second letter', potentially confusing the meaning.",
+      "reason": "'ilk' (meaning 'first') is inserted at the beginning, which changes the meaning from 'second letter' to 'first second letter', causing confusion in the context of spelling. This derails the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'harfi' to 'harf' at position 1",
-      "reason": "'harfi' is the possessive form ('its letter'), while 'harf' is just 'letter'; the meaning is only slightly changed and still understandable in context.",
+      "reason": "'harfi' is the possessive form ('its letter'), while 'harf' is just 'letter'. The meaning is only slightly changed and still understandable in context.",
       "score": 2
     },
     {
-      "error": "Substitution: 'soyluyorsunuz' to 've' at position 4",
-      "reason": "'soyluyorsunuz' means 'you are saying', while 've' means 'and'; this substitution removes the action and replaces it with a conjunction, which significantly alters the sentence structure and meaning.",
+      "error": "Substitution: 'söylüyorsunuz' to 've' at position 4",
+      "reason": "Replacing 'söylüyorsunuz' ('you are saying') with 've' ('and') removes the action and changes the sentence structure, making the sentence incoherent and losing the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'sonra' to 'sonrada' at position 10",
-      "reason": "'sonra' means 'after', while 'sonrada' is a colloquial or incorrect form but still understandable as 'after that'; minor grammatical error.",
+      "reason": "'sonra' means 'after', while 'sonrada' is a colloquial or incorrect form but still understandable as 'after that'. The meaning is preserved.",
       "score": 2
     },
     {
       "error": "Deletion: 'a' at position 11",
-      "reason": "Omitting 'a' after 'sonra' removes the explicit mention of the letter 'a', which is important for the instruction and changes the meaning.",
+      "reason": "Omitting 'a' after 'zden sonra' ('after z') removes the information about which letter comes after 'z', which is crucial to the meaning. This is a significant error.",
       "score": 1
     }
   ]

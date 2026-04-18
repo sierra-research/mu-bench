@@ -2,15 +2,46 @@
   "gold": "Tên của mình là Trần Minh. Email là minh trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ của mình là số 1 2 3, đường Lê Lợi, Hồ Chí Minh, 700 000, Việt Nam.",
   "predicted": "Ờ tên của mình là Trần Minh Email là minhtrangmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường Lê Lợi TP. HCM bảy trăm nghìn ở Việt Nam",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 54,
-  "werNormalizedGold": "ten cua minh la tran minh email la minh tran a cong gmail cham com so dien thoai la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam dia chi cua minh la so mot hai ba duong le loi ho chi minh bay tram nghin viet nam",
-  "werNormalizedPredicted": "ten cua minh la tran minh email la minh tran a cong gmail cham com so dien thoai la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam dia chi cua minh la so mot hai ba duong le loi ho chi minh bay tram nghin viet nam",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 54,
-  "sigWerNormalizedGold": "ten cua minh la tran minh email la minh tran a cong gmail cham com so dien thoai la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam dia chi cua minh la so mot hai ba duong le loi ho chi minh bay tram nghin viet nam",
-  "sigWerNormalizedPredicted": "ten cua minh la tran minh email la minh tran a cong gmail cham com so dien thoai la cong tam muoi bon chin muoi mot mot hai ba bon nam sau bay tam dia chi cua minh la so mot hai ba duong le loi ho chi minh bay tram nghin viet nam",
-  "sigWerErrors": []
+  "wer": 0.20754716981132076,
+  "werEdits": 11,
+  "werRefWords": 53,
+  "werNormalizedGold": "tên của mình là trần minh email là minh trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi hồ chí minh bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "tên của mình là trần minh email là minhtrangmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi tp hcm bảy trăm nghìn ở việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 53,
+  "sigWerNormalizedGold": "tên của mình là trần minh email là minh trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "tên của mình là trần minh email là minhtrangmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi tp hcm bảy trăm nghìn ở việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'minhtrangmail' at position 8",
+      "reason": "'minhtrangmail' is a concatenation of the name and the word 'mail', which changes the email username and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 9",
+      "reason": "Omitting 'trần' from the email username changes the email address, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'một' to 'mốt' at position 24",
+      "reason": "Inserting 'mươi' changes the phone number sequence, which can result in an incorrect phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hồ' to 'tp' at position 45",
+      "reason": "'một' (one) and 'mốt' (one, but used in numbers like 'twenty one') are different in Vietnamese number reading; this changes the phone number and can cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'minh' at position 47",
+      "reason": "'hồ chí minh' is the full city name, while 'tp hcm' is an abbreviation for 'thành phố hồ chí minh'; the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'ở' at position 51",
+      "reason": "Omitting 'minh' from 'hồ chí minh' still leaves the city recognizable as 'tp hcm', which is a common abbreviation.",
+      "score": 3
+    }
+  ]
 }

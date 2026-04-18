@@ -7,7 +7,7 @@
   "werRefWords": 18,
   "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
   "werNormalizedPredicted": "öncelikle bana bir kredi kartı gibi tartışmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin taklit numaramı",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'limit' to 'gibi' at position 5",
-      "reason": "'limit' (meaning 'limit') is replaced with 'gibi' (meaning 'like/as'), which changes the meaning of the sentence and makes it incoherent in context. The sentence no longer makes sense regarding a credit card limit increase.",
+      "reason": "'limit' (meaning 'limit') is replaced with 'gibi' (meaning 'like/as'), which changes the meaning of the phrase from 'credit card limit increase' to something incoherent ('credit card like discussion'), derailing the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'takip' to 'taklit' at position 16",
-      "reason": "'takip' (meaning 'tracking') is replaced with 'taklit' (meaning 'imitation'), which significantly changes the meaning of the phrase 'tracking number' to 'imitation number', making the request confusing and incorrect.",
+      "reason": "'takip' (meaning 'tracking') is replaced with 'taklit' (meaning 'imitation'), which changes the meaning of 'tracking number' to 'imitation number', making the sentence confusing and incorrect in context.",
       "score": 1
     }
   ]

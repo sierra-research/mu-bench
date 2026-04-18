@@ -5,27 +5,27 @@
   "wer": 0.5714285714285714,
   "werEdits": 4,
   "werRefWords": 7,
-  "werNormalizedGold": "我 已 经 几 次 说 了",
-  "werNormalizedPredicted": "为 经 及 此 说 了",
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "我已经几次说了",
+  "werNormalizedPredicted": "为经及此说了",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "我 已 经 几 次 说 了",
   "sigWerNormalizedPredicted": "为 经 及 此 说 了",
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to '为' at position 0",
-      "reason": "'我' means 'I' or 'me', while '为' means 'for' or 'to do'. This changes the subject of the sentence and alters the meaning significantly.",
+      "reason": "'我' means 'I' or 'me', while '为' means 'for' or 'because of'; this changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: '已' at position 1",
-      "reason": "'已' means 'already', and its omission removes the aspect of completion from the sentence, which is important to the meaning.",
-      "score": 2
+      "reason": "'已' means 'already', and its omission changes the tense and meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Substitution: '几' to '及' at position 3",
-      "reason": "'几' means 'several' or 'how many', while '及' means 'and' or 'reach'. This substitution changes the meaning of the sentence and makes it incoherent.",
+      "reason": "'几' means 'several' or 'how many', while '及' means 'and' or 'reach'; this substitution changes the meaning of the sentence.",
       "score": 1
     }
   ]

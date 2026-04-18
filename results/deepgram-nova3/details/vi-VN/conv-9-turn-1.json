@@ -2,15 +2,26 @@
   "gold": "Mã của tôi là C N 6 6 6, phải không?",
   "predicted": "Mã của tôi là Cnsáu trăm sáu mươi sáu phải không",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "mã của tôi là c n sáu sáu sáu phải không",
-  "werNormalizedPredicted": "mã của tôi là c n sáu sáu sáu phải không",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "mã của tôi là c n sáu trăm sáu mươi sáu phải không",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "mã của tôi là c n sáu sáu sáu phải không",
-  "sigWerNormalizedPredicted": "mã của tôi là c n sáu sáu sáu phải không",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "mã của tôi là c n sáu trăm sáu mươi sáu phải không",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 7",
+      "reason": "'sáu sáu sáu' (six six six) is a sequence of digits, while 'sáu trăm sáu mươi sáu' (six hundred sixty six) is the number 666. The insertion of 'trăm' and 'mươi' changes the format from digit sequence to a number, but the meaning (the code is 666) is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'mươi' at position 8",
+      "reason": "Same as above, the insertion changes the format from digit sequence to a number, but the intended code (666) is still clear and unchanged in meaning.",
+      "score": 2
+    }
+  ]
 }

@@ -2,25 +2,40 @@
   "gold": "Yalnız e-posta adresimde bir noktayı eksik söylediniz. Ahmet ile Arslan arasında nokta olacak.",
   "predicted": "E posta adresinde bir noktayı eksik söylediniz. Ahmetle arslan arasında. Olacak.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 2,
+  "wer": 0.35714285714285715,
+  "werEdits": 5,
   "werRefWords": 14,
   "werNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
-  "werNormalizedPredicted": "e posta adresinde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
-  "significantWer": 0.07142857142857142,
+  "werNormalizedPredicted": "e posta adresinde bir noktayı eksik söylediniz ahmetle arslan arasında olacak",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "yalnız e posta adresimde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
-  "sigWerNormalizedPredicted": "e posta adresinde bir noktayı eksik söylediniz ahmet ile arslan arasında nokta olacak",
+  "sigWerNormalizedPredicted": "e posta adresinde bir noktayı eksik söylediniz ahmetle arslan arasında olacak",
   "sigWerErrors": [
     {
       "error": "Deletion: 'yalnız' at position 0",
-      "reason": "'Yalnız' means 'only' or 'just' and sets the tone that the following statement is a clarification or correction. Its omission slightly reduces the emphasis but does not change the core meaning of the sentence.",
+      "reason": "'yalnız' means 'only' or 'just', which adds emphasis but its omission does not change the core meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'adresimde' to 'adresinde' at position 3",
-      "reason": "'Adresimde' means 'in my address', while 'adresinde' means 'in the address'. This changes the reference from a personal address to a general address, which could cause confusion about whose address is being discussed. This is a significant change in meaning.",
+      "reason": "'adresimde' means 'in my address', 'adresinde' means 'in the address'; this changes the reference from personal to general, but the main meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetle' at position 8",
+      "reason": "'ahmetle' means 'with Ahmet', which merges 'ahmet' and 'ile' into one word; this is a minor grammatical difference and does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 9",
+      "reason": "'ile' means 'with', but its meaning is already included in 'ahmetle', so its omission does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 12",
+      "reason": "Omitting 'nokta' ('dot') removes the explicit instruction that a dot should be present between 'ahmet' and 'arslan', which is crucial for the email address and changes the meaning significantly.",
       "score": 1
     }
   ]

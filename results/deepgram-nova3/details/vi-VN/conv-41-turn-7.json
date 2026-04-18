@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "địa chỉ email là minh chấm gmail chấm com",
-  "significantWer": 0.16666666666666666,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'trần' to 'gmail' at position 6",
-      "reason": "The surname 'trần' is replaced with 'gmail', which changes the entire email address and makes it incorrect. This is a significant error as it results in a completely different email address.",
+      "reason": "'trần' is a Vietnamese surname, while 'gmail' is a service provider; this changes the actual email address and makes it incorrect.",
       "score": 1
     },
     {
       "error": "Deletion: 'a' at position 7",
-      "reason": "The missing 'a' (from 'a còng', meaning '@') makes the email address format incomplete and incorrect, which is a significant error for understanding or using the email address.",
+      "reason": "Missing the 'a' (for 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable.",
       "score": 1
     }
   ]

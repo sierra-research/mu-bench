@@ -5,22 +5,22 @@
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "c e e six five two x",
-  "werNormalizedPredicted": "c e six five two",
-  "significantWer": 0.2857142857142857,
+  "werNormalizedGold": "c e e altı beş iki x",
+  "werNormalizedPredicted": "c e altı beş iki",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "c e e six five two x",
-  "sigWerNormalizedPredicted": "c e six five two",
+  "sigWerNormalizedGold": "c e e altı beş iki x",
+  "sigWerNormalizedPredicted": "c e altı beş iki",
   "sigWerErrors": [
     {
       "error": "Deletion: 'e' at position 2",
-      "reason": "A missing letter in a spelled-out sequence changes the intended sequence, which is significant for things like codes or identifiers.",
+      "reason": "A letter is missing in a spelled-out sequence, which changes the intended sequence and could lead to misunderstanding, especially if this is a code or identifier.",
       "score": 1
     },
     {
       "error": "Deletion: 'x' at position 6",
-      "reason": "Omitting a character at the end of a spelled-out sequence can result in an incorrect code or identifier, which is a significant error.",
+      "reason": "A character at the end of a sequence is missing, which could significantly alter the meaning or validity of the code or identifier.",
       "score": 1
     }
   ]

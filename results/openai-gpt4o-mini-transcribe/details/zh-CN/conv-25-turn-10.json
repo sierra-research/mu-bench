@@ -2,15 +2,26 @@
   "gold": "不对的，不对！是美玲 at email dot com。",
   "predicted": "不对的,不对,是meiling@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
   "werRefWords": 12,
-  "werNormalizedGold": "不对的不对是美玲 at email dot com",
-  "werNormalizedPredicted": "不对的不对是美玲 at email dot com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "不对的不对 是美玲 at email dot com",
+  "werNormalizedPredicted": "不对的不对 是 meiling at email dot com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "不 对 的 不 对 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "不 对 的 不 对 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 对 的 不 对 是 meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 6",
+      "reason": "The Chinese character '美' (part of a name) is replaced by the full pinyin 'meiling', which represents both '美' and '玲' together. This is a minor error since the intended name is still clear, just written in a different script.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 7",
+      "reason": "The character '玲' is omitted in the actual transcription, but its sound is included in the pinyin 'meiling'. The meaning is preserved, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

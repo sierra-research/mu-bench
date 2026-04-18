@@ -2,15 +2,21 @@
   "gold": "君玲。",
   "predicted": "Jun Ling。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
-  "werNormalizedPredicted": "君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "jun ling",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
-  "sigWerNormalizedPredicted": "君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "jun ling",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'jun' at position 0",
+      "reason": "'君' is a Chinese character and 'jun' is its romanized form (pinyin). While the pronunciation is similar, the script and representation are different. If the context requires the original script, this is a significant error; if romanization is acceptable, it could be minor. However, since the expected is in Chinese characters and the actual is in Latin script, this is a significant error in transcription fidelity.",
+      "score": 1
+    }
+  ]
 }

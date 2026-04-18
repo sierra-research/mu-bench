@@ -2,20 +2,25 @@
   "gold": "美玲 at email dot com。",
   "predicted": "美玲email。com",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
-  "werRefWords": 5,
-  "werNormalizedGold": "美玲 email dot com",
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
   "werNormalizedPredicted": "美玲 email com",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "美 玲 email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
   "sigWerNormalizedPredicted": "美 玲 email com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'dot' at position 3",
-      "reason": "Omitting 'dot' in an email address changes the actual address and could prevent correct delivery, making it a significant error.",
+      "error": "Deletion: 'at' at position 2",
+      "reason": "Omitting 'at' removes the connector in the email address, making it unclear and potentially unusable as an email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Omitting 'dot' removes the separator in the email address, making it unclear and potentially unusable as an email address.",
       "score": 1
     }
   ]

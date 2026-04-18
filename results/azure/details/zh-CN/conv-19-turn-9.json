@@ -5,9 +5,9 @@
   "wer": 0.09523809523809523,
   "werEdits": 2,
   "werRefWords": 21,
-  "werNormalizedGold": "已经 说 了 几 次 你 为什么 不 分辨 你 为什么 不 会 帮 我",
-  "werNormalizedPredicted": "已经 说 了 几 次 你 为什么 不 会 你 为什么 不 会 帮 我",
-  "significantWer": 0.09523809523809523,
+  "werNormalizedGold": "已经说了几次 你为什么不分辨 你为什么不会帮我",
+  "werNormalizedPredicted": "已经说了几次 你为什么不会 你为什么不会帮我",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "已 经 说 了 几 次 你 为 什 么 不 分 辨 你 为 什 么 不 会 帮 我",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '分' to '会' at position 11",
-      "reason": "'分辨' means 'distinguish', while '不会' means 'cannot'. This substitution changes the meaning of the sentence, making it incoherent in context.",
+      "reason": "'分辨' means 'distinguish' or 'discern', while '不会' means 'cannot' or 'do not know how'. This substitution changes the meaning of the sentence, as it removes the concept of 'distinguishing' and instead repeats 'cannot'. This significantly alters the intended meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '辨' at position 12",
-      "reason": "Omitting '辨' removes the word 'distinguish' from the sentence, which significantly alters the intended meaning.",
+      "reason": "The deletion of '辨' completes the loss of the word '分辨', which is essential to the meaning of the sentence. Without it, the sentence loses the idea of 'distinguishing', making the meaning incoherent.",
       "score": 1
     }
   ]

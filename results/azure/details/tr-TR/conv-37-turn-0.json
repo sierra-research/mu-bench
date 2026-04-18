@@ -7,25 +7,25 @@
   "werRefWords": 21,
   "werNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
   "werNormalizedPredicted": "anna hanım merhabalar ben son internet faturanın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
   "sigWerNormalizedPredicted": "anna hanım merhabalar ben son internet faturanın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
   "sigWerErrors": [
     {
       "error": "Substitution: 'faturamın' to 'faturanın' at position 6",
-      "reason": "The possessive suffix changes from 'my bill' (faturamın) to 'your bill' (faturanın), which changes the subject of the request but does not derail the overall meaning of the sentence.",
-      "score": 2
+      "reason": "The possessive suffix changes from 'my bill' (faturamın) to 'your bill' (faturanın), which changes the subject of the request. This is a significant error as it alters who the bill belongs to.",
+      "score": 1
     },
     {
       "error": "Insertion: 'onu' at position 15",
-      "reason": "The insertion of 'onu' ('it') adds a redundant pronoun but does not change the overall meaning or cause confusion.",
+      "reason": "The insertion of 'onu' ('it') does not change the overall meaning of the sentence, as it refers back to the bill. The request remains clear.",
       "score": 2
     },
     {
       "error": "Insertion: 'da' at position 17",
-      "reason": "The insertion of 'da' ('also') is a minor addition that does not affect the main meaning of the sentence.",
+      "reason": "The insertion of 'da' ('also') is a minor addition that does not change the main intent or meaning of the sentence.",
       "score": 2
     }
   ]

@@ -1,26 +1,36 @@
 {
   "gold": "Muốn. Vui lòng cho gặp nhận viên hỗ trợ trực tiếp.",
-  "predicted": "muốn vui lòng là cho gặp nhân viên của tôi trực tiếp.",
+  "predicted": "muốn vui lòng là cho gặp nhân viên của trực tiếp.",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werEdits": 3,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
   "werRefWords": 11,
   "werNormalizedGold": "muốn vui lòng cho gặp nhận viên hỗ trợ trực tiếp",
-  "werNormalizedPredicted": "muốn vui lòng cho gặp nhân viên của tôi trực tiếp",
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "muốn vui lòng là cho gặp nhân viên của trực tiếp",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "muốn vui lòng cho gặp nhận viên hỗ trợ trực tiếp",
-  "sigWerNormalizedPredicted": "muốn vui lòng cho gặp nhân viên của tôi trực tiếp",
+  "sigWerNormalizedPredicted": "muốn vui lòng là cho gặp nhân viên của trực tiếp",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'nhận' to 'nhân' at position 5",
-      "reason": "'nhận viên' is a mishearing of 'nhân viên', which is the correct term for 'staff' or 'employee' in Vietnamese. This is a minor error as the intended meaning is still clear.",
+      "error": "Insertion: 'là' at position 3",
+      "reason": "'là' is an unnecessary word in this context and does not change the overall meaning of the sentence, but it is not required.",
       "score": 2
     },
     {
+      "error": "Substitution: 'nhận' to 'nhân' at position 5",
+      "reason": "'nhận viên' is a mishearing of 'nhân viên' (staff/employee), which is a significant error as it changes the meaning of the phrase.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'hỗ' to 'của' at position 7",
-      "reason": "'hỗ trợ' means 'support', while 'của tôi' means 'of mine'. This substitution changes the meaning of the sentence from requesting to meet a support staff to requesting to meet 'my staff', which significantly alters the intent.",
+      "reason": "Replacing 'hỗ' (from 'hỗ trợ' meaning 'support') with 'của' ('of') changes the meaning and makes the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trợ' at position 8",
+      "reason": "Omitting 'trợ' from 'hỗ trợ' removes the meaning of 'support', which is important for the sentence's intent.",
       "score": 1
     }
   ]

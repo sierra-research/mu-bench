@@ -2,15 +2,31 @@
   "gold": "我的联系地址是中国北京市海定区北京路123号。",
   "predicted": "我的联系地址是中国北京市海淀区北京路一百二十三号。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 24,
-  "werNormalizedGold": "我的联系地址是中国北京市海淀区北京路一百二十三号",
+  "wer": 0.13636363636363635,
+  "werEdits": 3,
+  "werRefWords": 22,
+  "werNormalizedGold": "我的联系地址是中国北京市海定区北京路一二三号",
   "werNormalizedPredicted": "我的联系地址是中国北京市海淀区北京路一百二十三号",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 24,
-  "sigWerNormalizedGold": "我 的 联 系 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "我 的 联 系 地 址 是 中 国 北 京 市 海 定 区 北 京 路 一 二 三 号",
   "sigWerNormalizedPredicted": "我 的 联 系 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '定' to '淀' at position 13",
+      "reason": "'海定区' and '海淀区' are both place names in Beijing, but '海淀区' is the correct district. This changes the address to a different district, which is a significant error for an address.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '百' at position 19",
+      "reason": "The expected address is '一二三号' (123), but the actual is '一百二十三号' (123). Both represent the same number, just in different formats (digit-by-digit vs. full number). This does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: '十' at position 20",
+      "reason": "Same as above, '一百二十三号' is just another way to say '123号'. No change in meaning.",
+      "score": 3
+    }
+  ]
 }

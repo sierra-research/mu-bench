@@ -6,21 +6,21 @@
   "werEdits": 7,
   "werRefWords": 9,
   "werNormalizedGold": "你好 能听见我说话吗",
-  "werNormalizedPredicted": "你好 等七点文化啊",
-  "significantWer": 0.2222222222222222,
+  "werNormalizedPredicted": "你好等七点文化",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "你 好 能 听 见 我 说 话 吗",
-  "sigWerNormalizedPredicted": "你 好 等 七 点 文 化 啊",
+  "sigWerNormalizedPredicted": "你 好 等 七 点 文 化",
   "sigWerErrors": [
     {
       "error": "Substitution: '能' to '等' at position 2",
-      "reason": "'能' means 'can' or 'able to', while '等' means 'wait'. This changes the intent of the sentence from asking about ability to something unrelated, significantly altering the meaning.",
+      "reason": "'能' means 'can' or 'able to', while '等' means 'wait'. This changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
     },
     {
-      "error": "Deletion: '吗' at position 8",
-      "reason": "'吗' is a question particle that turns the sentence into a question. Its omission removes the interrogative nature of the sentence.",
+      "error": "Deletion: '话' at position 7",
+      "reason": "'话' means 'words' or 'speech', and its omission further derails the intended meaning of the sentence.",
       "score": 1
     }
   ]

@@ -2,26 +2,26 @@
   "gold": "No es Gmail, es email.",
   "predicted": "No, no es email, e-email",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "no es email es email",
-  "werNormalizedPredicted": "no no es email email",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "no es gmail es email",
+  "werNormalizedPredicted": "no no es email e email",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "no es email es email",
-  "sigWerNormalizedPredicted": "no no es email email",
+  "sigWerNormalizedGold": "no es gmail es email",
+  "sigWerNormalizedPredicted": "no no es email e email",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 1",
-      "reason": "The extra 'no' introduces a negation that could confuse the meaning, but in this context, the sentence is still understandable as a repetition and does not completely derail the meaning.",
+      "reason": "The extra 'no' introduces a repeated negation, which could cause confusion but does not fundamentally change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Deletion: 'es' at position 3",
-      "reason": "Omitting 'es' slightly affects the grammatical structure but does not significantly change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'gmail' to 'email' at position 2",
+      "reason": "Substituting 'gmail' with 'email' changes the specific service being referred to, which is significant because 'gmail' is a specific email provider, while 'email' is generic. This alters the intended meaning.",
+      "score": 1
     }
   ]
 }

@@ -2,15 +2,21 @@
   "gold": "Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "Artı dokuz sıfır bir iki üç sıfır, dokuz, sıfır, dört, beş, altı, yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07692307692307693,
+  "werEdits": 1,
   "werRefWords": 13,
-  "werNormalizedGold": "artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedGold": "artı doksan sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "werNormalizedPredicted": "artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedGold": "artı doksan sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerNormalizedPredicted": "artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'dokuz' at position 1",
+      "reason": "'Doksan' means 'ninety' and 'dokuz' means 'nine' in Turkish. This changes the number in the sequence significantly, which could lead to a completely different phone number or code.",
+      "score": 1
+    }
+  ]
 }

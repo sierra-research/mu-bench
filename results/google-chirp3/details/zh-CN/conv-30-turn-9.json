@@ -2,15 +2,26 @@
   "gold": "不是邻居，是林俊。",
   "predicted": "不是灵芝,是灵俊。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "不是林俊 是林俊",
-  "werNormalizedPredicted": "不是林俊 是林俊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "不是邻居 是林俊",
+  "werNormalizedPredicted": "不是灵芝 是灵俊",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "不 是 林 俊 是 林 俊",
-  "sigWerNormalizedPredicted": "不 是 林 俊 是 林 俊",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "不 是 邻 居 是 林 俊",
+  "sigWerNormalizedPredicted": "不 是 灵 芝 是 灵 俊",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邻' to '灵' at position 2",
+      "reason": "'邻' (neighbor) and '灵' (spirit) are completely different words and meanings; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '灵' at position 5",
+      "reason": "'林' (forest, also a surname) and '灵' (spirit) are different words; this changes the intended name and meaning, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

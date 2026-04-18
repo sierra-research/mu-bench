@@ -1,22 +1,27 @@
 {
   "gold": "Yedek kartımın ana karttan farkı nedir peki?",
-  "predicted": "İyi de kartın anakarttan farkı nedir peki?",
+  "predicted": "İyide kartın anakarttan farkı nedir peki?",
   "unintelligible": false,
   "wer": 0.5714285714285714,
   "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
-  "werNormalizedPredicted": "iyi de kartın anakarttan farkı nedir peki",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedPredicted": "iyide kartın anakarttan farkı nedir peki",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
-  "sigWerNormalizedPredicted": "iyi de kartın anakarttan farkı nedir peki",
+  "sigWerNormalizedPredicted": "iyide kartın anakarttan farkı nedir peki",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'yedek' to 'iyi' at position 0",
-      "reason": "'yedek' means 'spare' or 'backup', while 'iyi' means 'good' or 'well'. This substitution changes the subject of the sentence and alters the meaning significantly.",
+      "error": "Substitution: 'yedek' to 'iyide' at position 0",
+      "reason": "'yedek' means 'spare' or 'backup', while 'iyide' is a colloquial phrase meaning 'well then' or 'anyway'; this changes the meaning of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'karttan' at position 3",
+      "reason": "'karttan' (from the card) is omitted, but 'anakarttan' (from the main card) is present, so the comparison is still somewhat understandable, but the omission makes the sentence less clear.",
+      "score": 2
     }
   ]
 }

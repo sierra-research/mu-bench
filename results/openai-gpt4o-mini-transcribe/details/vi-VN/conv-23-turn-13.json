@@ -1,21 +1,26 @@
 {
   "gold": "Có. Vui lòng giúp tôi.",
-  "predicted": "Có vô lòng giúp tôi.",
+  "predicted": "à có volume giúp tôi.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
   "werNormalizedGold": "có vui lòng giúp tôi",
-  "werNormalizedPredicted": "có vô lòng giúp tôi",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "có volume giúp tôi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "có vui lòng giúp tôi",
-  "sigWerNormalizedPredicted": "có vô lòng giúp tôi",
+  "sigWerNormalizedPredicted": "có volume giúp tôi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'vui' to 'vô' at position 1",
-      "reason": "'vui lòng' means 'please' or 'kindly', while 'vô lòng' is not a standard phrase and changes the meaning, making the sentence confusing or incorrect.",
+      "error": "Substitution: 'vui' to 'volume' at position 1",
+      "reason": "'vui' means 'please' in Vietnamese, while 'volume' is an unrelated English word, making the sentence incoherent and changing the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lòng' at position 2",
+      "reason": "'vui lòng' together means 'please' in Vietnamese; omitting 'lòng' breaks the polite request and makes the sentence less coherent.",
       "score": 1
     }
   ]

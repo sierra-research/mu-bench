@@ -1,16 +1,27 @@
 {
   "gold": "Minh chấm trần a còng email chấm com.",
-  "predicted": "minhchamcham@gmail.com",
+  "predicted": "minhchamchang@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "minh cham tran a cong email cham com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh chấm trăng a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "minh cham tran a cong email cham com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh chấm trăng a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trăng' at position 2",
+      "reason": "'Trần' and 'trăng' are completely different words and names in Vietnamese; this changes the intended recipient or subject, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "'Email' and 'gmail' refer to different email services; this could cause the email address to be incorrect, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

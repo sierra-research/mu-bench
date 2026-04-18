@@ -2,15 +2,26 @@
   "gold": "Şu at mail dediğinizde mailin önünde E var değil mi?",
   "predicted": "Şu et mail dediğinizde mail'ın önünde E var değil mi?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "werNormalizedPredicted": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "şu et mail dediğinizde mailın önünde e var değil mi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "sigWerNormalizedPredicted": "şu at mail dediğinizde mailin önünde e var değil mi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "şu et mail dediğinizde mailın önünde e var değil mi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'et' at position 1",
+      "reason": "'at' and 'et' are different words in Turkish; 'at' means 'horse' or 'send', while 'et' means 'meat' or 'do'. In this context, the substitution changes the meaning and could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'mailin' to 'mailın' at position 4",
+      "reason": "The only difference is the Turkish dotted 'i' vs. dotless 'ı'. In this context, it is a minor spelling error and does not change the meaning of the word.",
+      "score": 2
+    }
+  ]
 }

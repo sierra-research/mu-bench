@@ -7,20 +7,20 @@
   "werRefWords": 6,
   "werNormalizedGold": "林美 at email 点 com",
   "werNormalizedPredicted": "林美 email",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "林 美 at email 点 com",
   "sigWerNormalizedPredicted": "林 美 email",
   "sigWerErrors": [
     {
       "error": "Deletion: 'at' at position 2",
-      "reason": "'at' is part of the email address format, and its omission makes the email address incomplete or unclear, which can cause misunderstanding or failure to use the email address correctly.",
-      "score": 1
+      "reason": "The omission of 'at' removes the connector between the name and the email, making the phrase less clear but still somewhat understandable in context.",
+      "score": 2
     },
     {
       "error": "Deletion: '点' at position 4",
-      "reason": "'点' (Chinese for 'dot') is essential in the email address to indicate the dot before 'com'. Its omission makes the email address incomplete and potentially unusable.",
+      "reason": "The omission of '点' (which means 'dot' in Chinese) removes the separator in the email address, which could cause confusion or make the email address incorrect.",
       "score": 1
     }
   ]

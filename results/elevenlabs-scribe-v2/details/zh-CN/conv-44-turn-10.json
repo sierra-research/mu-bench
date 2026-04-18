@@ -5,9 +5,9 @@
   "wer": 0.43333333333333335,
   "werEdits": 13,
   "werRefWords": 30,
-  "werNormalizedGold": "你 有 什么 问题 你 有 什么 问题 为什么 听 不 懂 我 你 有 什么 问题 有 什么 问题",
-  "werNormalizedPredicted": "你 有 什么 问题 你 为什么 问题 你 为什么 听 不 懂 我 你 有 什么 问题 你 有 什么 问题 让 我 认真 地 没有 那 一 份",
-  "significantWer": 0.06666666666666667,
+  "werNormalizedGold": "你有什么问题 你有什么问题 为什么听不懂我 你有什么问题 有什么问题",
+  "werNormalizedPredicted": "你有什么问题 你为什么问题 你为什么听不懂我 你有什么问题 你有什么问题 让我认真地没有那一份",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 30,
   "sigWerNormalizedGold": "你 有 什 么 问 题 你 有 什 么 问 题 为 什 么 听 不 懂 我 你 有 什 么 问 题 有 什 么 问 题",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '有' to '为' at position 7",
-      "reason": "This changes the meaning from 'have' to 'why', which alters the question structure and meaning significantly.",
+      "reason": "Replacing '有' (have) with '为' (why/for) changes the meaning of the question, making the sentence less coherent.",
       "score": 1
     },
     {
       "error": "Insertion: '你' at position 12",
-      "reason": "This adds an extra 'you' in the sentence, which is redundant but does not significantly change the meaning.",
+      "reason": "Inserting an extra '你' (you) does not significantly change the meaning of the sentence, but it is a minor redundancy.",
       "score": 2
     },
     {
       "error": "Insertion: '你' at position 25",
-      "reason": "This is another redundant 'you' that does not significantly alter the meaning.",
+      "reason": "Another redundant '你' (you) is inserted, which does not derail the meaning but is unnecessary.",
       "score": 2
     },
     {
       "error": "Insertion: '让' at position 30",
-      "reason": "The phrase starting from '让' introduces a new idea ('let me seriously...') that is not present in the original, which derails the meaning of the sentence.",
+      "reason": "The insertion of a long phrase ('让 我 认 真 地 没 有 那 一 份' - 'let me seriously not have that one') adds unrelated content, making the sentence incoherent.",
       "score": 1
     }
   ]

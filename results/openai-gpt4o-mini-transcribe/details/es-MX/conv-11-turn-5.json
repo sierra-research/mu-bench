@@ -1,13 +1,13 @@
 {
   "gold": "No me acuerdo. Deja lo checo.",
-  "predicted": "No me acuerdo. Déjalo checo.",
+  "predicted": "No me acuerdo dejalo checo.",
   "unintelligible": false,
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "no me acuerdo deja lo checo",
   "werNormalizedPredicted": "no me acuerdo dejalo checo",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "no me acuerdo deja lo checo",
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'deja' to 'dejalo' at position 3",
-      "reason": "'deja' (leave) and 'dejalo' (leave it) are very similar in meaning in this context; the addition of 'lo' as a suffix does not significantly change the intent of the sentence.",
+      "reason": "'dejalo' combines 'deja' and 'lo' into one word, which is a minor grammatical error but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Deletion: 'lo' at position 4",
-      "reason": "'lo' is incorporated into 'dejalo' as a suffix in the actual transcription, so the meaning is preserved and nothing is actually missing from the sentence.",
-      "score": 3
+      "reason": "'lo' is omitted as a separate word because it was merged into 'dejalo', but the meaning is preserved in context.",
+      "score": 2
     }
   ]
 }

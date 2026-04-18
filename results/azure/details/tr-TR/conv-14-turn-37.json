@@ -2,30 +2,20 @@
   "gold": "Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "+ 9 12, 309 4567.",
   "unintelligible": false,
-  "wer": 0.23076923076923078,
-  "werEdits": 3,
-  "werRefWords": 13,
-  "werNormalizedGold": "artı nine zero one two three zero nine zero four five six seven",
-  "werNormalizedPredicted": "artı nine one two three three zero nine four five six seven",
-  "significantWer": 0.23076923076923078,
-  "majorErrorsCount": 3,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "artı nine zero one two three zero nine zero four five six seven",
-  "sigWerNormalizedPredicted": "artı nine one two three three zero nine four five six seven",
+  "wer": 0.08333333333333333,
+  "werEdits": 1,
+  "werRefWords": 12,
+  "werNormalizedGold": "artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedPredicted": "artı doksan bir iki üç sıfır dokuz dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedPredicted": "artı doksan bir iki üç sıfır dokuz dört beş altı yedi",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'zero' at position 2",
-      "reason": "Omitting a digit in a sequence of numbers (such as a phone number or code) changes the value entirely and can lead to incorrect information.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'three' at position 6",
-      "reason": "Adding an extra digit in a sequence of numbers alters the intended sequence, which is a significant error for things like codes or phone numbers.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'zero' at position 8",
-      "reason": "Missing a digit in a numeric sequence is a significant error as it changes the entire sequence's meaning or value.",
+      "error": "Deletion: 'sıfır' at position 7",
+      "reason": "A digit is missing from the sequence of numbers, which changes the actual number being conveyed. This is a significant error as it alters the intended information.",
       "score": 1
     }
   ]

@@ -1,16 +1,27 @@
 {
   "gold": "C N 770.",
-  "predicted": "Sena setecientos setenta.",
+  "predicted": "Sena setecienta setenta.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "c n setecientos setenta",
-  "werNormalizedPredicted": "c n setecientos setenta",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "sena setecienta setenta",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "c n setecientos setenta",
-  "sigWerNormalizedPredicted": "c n setecientos setenta",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sena setecienta setenta",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'sena' at position 0",
+      "reason": "'c n' is likely an abbreviation or spelled-out letters, while 'sena' is a completely different word, changing the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'setecientos' at position 2",
+      "reason": "'setecientos' (seven hundred) and 'setecienta' is a gender/number error, but the intended number is still clear in context.",
+      "score": 2
+    }
+  ]
 }

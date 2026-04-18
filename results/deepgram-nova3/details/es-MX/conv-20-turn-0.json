@@ -2,21 +2,31 @@
   "gold": "Hola, este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema, no no saqué el dinero pero si me lo descontó de mi cuenta.",
   "predicted": "Hola. Este, es que estoy en estoy en el banco y, pues, estaba intentando sacar dinero del cajero, pero hubo un problema, no no saqué el dinero, pero sí me lo descontó de mi cuenta.",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 2,
-  "werRefWords": 32,
-  "werNormalizedGold": "hola este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saque el dinero pero si me lo desconto de mi cuenta",
-  "werNormalizedPredicted": "hola este es que estoy en estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saque el dinero pero si me lo desconto de mi cuenta",
-  "significantWer": 0.0,
+  "wer": 0.12903225806451613,
+  "werEdits": 4,
+  "werRefWords": 31,
+  "werNormalizedGold": "hola es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saqué el dinero pero si me lo descontó de mi cuenta",
+  "werNormalizedPredicted": "hola es que estoy en estoy en el banco y pues estaba intentando sacar dinero del cajero pero hubo un problema no no saqué el dinero pero sí me lo descontó de mi cuenta",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 32,
-  "sigWerNormalizedGold": "hola este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saque el dinero pero si me lo desconto de mi cuenta",
-  "sigWerNormalizedPredicted": "hola este es que estoy en estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saque el dinero pero si me lo desconto de mi cuenta",
+  "totalWordsCount": 31,
+  "sigWerNormalizedGold": "hola es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saqué el dinero pero si me lo descontó de mi cuenta",
+  "sigWerNormalizedPredicted": "hola es que estoy en estoy en el banco y pues estaba intentando sacar dinero del cajero pero hubo un problema no no saqué el dinero pero sí me lo descontó de mi cuenta",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'estoy' at position 6",
-      "reason": "The word 'estoy' is repeated, but this does not change the overall meaning of the sentence. The sentence remains coherent and understandable.",
+      "error": "Insertion: 'estoy' at position 5",
+      "reason": "Repeating 'estoy en' does not change the meaning of the sentence, just adds redundancy.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'pues' at position 8",
+      "reason": "Adding 'pues' is a discourse marker and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'si' to 'sí' at position 24",
+      "reason": "The accent on 'sí' clarifies affirmation, but in this context both forms are understood as 'yes', so the meaning is unchanged.",
+      "score": 3
     }
   ]
 }

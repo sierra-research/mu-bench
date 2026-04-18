@@ -2,15 +2,26 @@
   "gold": "美玲 at email dot com。",
   "predicted": "美玲imandoskon。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "美玲 imandoskon",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "美 玲 imandoskon",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'imandoskon' at position 2",
+      "reason": "'imandoskon' is a completely different word and does not represent 'at', which is crucial for the meaning of an email address. This substitution makes the email address incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "Omitting 'email' from the address removes a key part of the expected email format, making the address incomplete and incoherent.",
+      "score": 1
+    }
+  ]
 }

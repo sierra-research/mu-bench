@@ -2,25 +2,25 @@
   "gold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
   "predicted": "Địa chỉ email là thu. Gmail chấm com",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 4,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
   "werRefWords": 12,
   "werNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "địa chỉ email là thu chấm gmail chấm com",
-  "significantWer": 0.16666666666666666,
+  "werNormalizedPredicted": "địa chỉ email là thu gmail chấm com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "địa chỉ email là thu chấm gmail chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là thu gmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'trần' to 'gmail' at position 6",
-      "reason": "Substituting the local part of the email ('trần') with 'gmail' changes the actual email address, which is a significant error as it results in a completely different and incorrect email.",
+      "error": "Substitution: 'chấm' to 'gmail' at position 5",
+      "reason": "'gmail' replaces 'chấm', which is a separator (dot) in an email address. This changes the structure and meaning of the email address, making it incorrect and misleading.",
       "score": 1
     },
     {
-      "error": "Deletion: 'a' at position 7",
-      "reason": "Omitting the 'a' (from 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable, which is a significant error.",
+      "error": "Deletion: 'trần' at position 6",
+      "reason": "'trần' is part of the email username. Its omission significantly alters the email address, making it incomplete and incorrect.",
       "score": 1
     }
   ]

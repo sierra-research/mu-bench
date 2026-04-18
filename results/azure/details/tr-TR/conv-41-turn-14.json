@@ -7,7 +7,7 @@
   "werRefWords": 16,
   "werNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
   "werNormalizedPredicted": "hayır anna itiraz etmek istediğim bir şey yok sadece kredi kartım aylık harcamanı bitimi arttırmak istiyorum",
-  "significantWer": 0.125,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'iptal' to 'itiraz' at position 2",
-      "reason": "'iptal' means 'cancel', 'itiraz' means 'object', which are different actions and change the intent of the sentence.",
+      "reason": "'iptal' means 'cancel', while 'itiraz' means 'object', which are different actions and change the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'için' to 'istediğim' at position 4",
-      "reason": "'için' means 'for', 'istediğim' means 'that I want', which changes the structure and meaning of the sentence.",
+      "reason": "'için' means 'for', while 'istediğim' means 'that I want', which changes the structure and meaning of the sentence.",
       "score": 1
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "error": "Substitution: 'harcama' to 'harcamanı' at position 12",
-      "reason": "'harcama' means 'spending', 'harcamanı' means 'your spending'; this changes the subject of the spending but the overall intent is still clear.",
+      "reason": "'harcama' means 'spending', 'harcamanı' means 'your spending'; this changes the subject but the overall intent is still clear.",
       "score": 2
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
   "werNormalizedPredicted": "tamamım kredi kartımla ilgili limit artış talebim var onu yapmak istiyorum yardımcı olduğunuzu bana",
-  "significantWer": 0.11764705882352941,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
@@ -15,28 +15,28 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'tamam' to 'tamamım' at position 0",
-      "reason": "'tamam' means 'okay', while 'tamamım' means 'I am okay'; this changes the subject but does not derail the meaning of the sentence.",
+      "reason": "'tamam' means 'okay', while 'tamamım' means 'I am okay'; the meaning is slightly changed but the intent is still clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'kartı' to 'kartımla' at position 2",
-      "reason": "'kartı' means 'the card', 'kartımla' means 'with my card'; this is a minor grammatical difference and does not change the overall meaning.",
+      "reason": "'kartı' means 'the card', 'kartımla' means 'with my card'; this changes the possessive and adds an instrumental meaning, but the overall intent is still understandable.",
       "score": 2
     },
     {
       "error": "Deletion: 'ile' at position 3",
-      "reason": "'ile' means 'with', but 'kartımla' already includes the meaning of 'with my card', so the meaning is preserved.",
+      "reason": "'ile' means 'with', which is partially compensated by 'kartımla' (with my card), so the meaning is preserved.",
       "score": 3
     },
     {
       "error": "Deletion: 'bir' at position 5",
-      "reason": "'bir' means 'a' or 'one', omitting it does not significantly change the meaning in this context.",
+      "reason": "'bir' means 'a' or 'one', its omission does not significantly change the meaning of the sentence.",
       "score": 3
     },
     {
       "error": "Substitution: 'artışı' to 'artış' at position 7",
-      "reason": "'artışı' is the accusative form of 'increase', 'artış' is the nominative; this is a minor grammatical error, meaning is preserved.",
-      "score": 2
+      "reason": "'artışı' is the accusative form of 'increase', 'artış' is the nominative; the meaning is nearly the same in this context.",
+      "score": 3
     },
     {
       "error": "Substitution: 'olur' to 'olduğunuzu' at position 14",
@@ -45,7 +45,7 @@
     },
     {
       "error": "Deletion: 'musun' at position 15",
-      "reason": "Omitting 'musun' removes the question/request form, which is essential to the intent of the sentence.",
+      "reason": "Omitting 'musun' removes the question/request form, making the sentence less clear and changing it from a request to a statement.",
       "score": 1
     }
   ]

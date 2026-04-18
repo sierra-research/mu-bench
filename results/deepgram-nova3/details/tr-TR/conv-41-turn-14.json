@@ -7,20 +7,20 @@
   "werRefWords": 16,
   "werNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
   "werNormalizedPredicted": "hayır ana itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
-  "significantWer": 0.125,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
   "sigWerNormalizedPredicted": "hayır ana itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'ana' at position 1",
-      "reason": "'Anna' is a proper noun (likely a name), while 'ana' is a common word in Turkish meaning 'main' or 'mother'. This changes the reference from a person to a generic term, which can confuse the meaning of the sentence.",
-      "score": 1
+      "reason": "'anna' is a proper noun (likely a name), while 'ana' is a different word/name; this is a minor error as it does not derail the sentence meaning but changes the referenced person.",
+      "score": 2
     },
     {
       "error": "Substitution: 'için' to 'istediğim' at position 4",
-      "reason": "'İçin' means 'for', while 'istediğim' means 'that I want'. This substitution changes the structure and meaning of the sentence, making it incoherent and altering the intent.",
+      "reason": "'için' means 'for', while 'istediğim' means 'that I want'; this changes the meaning of the sentence significantly, as the intent shifts from 'to cancel' to 'that I want to object', which derails the meaning.",
       "score": 1
     }
   ]

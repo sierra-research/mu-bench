@@ -2,21 +2,36 @@
   "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
   "predicted": "Yalnız, pardon e-posta adresinde bir noktayı unuttunuz. Ahmet'le Arslan arasında nokta olacak. ahmet.arslan",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werEdits": 1,
+  "wer": 0.23529411764705882,
+  "werEdits": 4,
   "werRefWords": 17,
   "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "werNormalizedPredicted": "yalnız pardon e posta adresinde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "yalnız pardon e posta adresinde bir noktayı unuttunuz ahmetle arslan arasında nokta olacak ahmet arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "yalnız pardon e posta adresinde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "yalnız pardon e posta adresinde bir noktayı unuttunuz ahmetle arslan arasında nokta olacak ahmet arslan",
   "sigWerErrors": [
     {
       "error": "Substitution: 'adresimde' to 'adresinde' at position 4",
-      "reason": "'adresimde' means 'in my address' while 'adresinde' means 'in the address'; this changes the reference from personal to general, but the overall meaning of the sentence is still clear in context.",
+      "reason": "'adresimde' (in my address) vs 'adresinde' (in the address) changes the reference from personal to general, but in this context, the meaning is still clear and the instruction is understandable.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetle' at position 8",
+      "reason": "'ahmetle' means 'with Ahmet', while 'ahmet' is just the name. In this context, 'ahmetle arslan arasında' (between Ahmet and Arslan) is a natural way to say 'between Ahmet and Arslan', so this is a minor grammatical difference that does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 've' at position 9",
+      "reason": "Omitting 've' (and) in 'ahmet ve arslan arasında' to 'ahmetle arslan arasında' is a stylistic difference in Turkish; both forms are commonly used and the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 15",
+      "reason": "Omitting 'nokta' (dot) in the final 'ahmet nokta arslan' to 'ahmet arslan' removes the explicit instruction about the dot in the email address, which is crucial for the correct address. This is a significant error as it changes the information.",
+      "score": 1
     }
   ]
 }

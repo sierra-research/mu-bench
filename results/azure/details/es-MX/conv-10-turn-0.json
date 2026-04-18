@@ -5,22 +5,22 @@
   "wer": 0.15384615384615385,
   "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "si necesitaría saber que me envíen el extracto de mi cuenta una copia",
-  "werNormalizedPredicted": "y necesitaría saber que me envíen el extracto de mi cuenta una cosa",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "sí necesitaría saber que me envíen el extracto de mi cuenta una copia",
+  "werNormalizedPredicted": "y necesitaría saber que me envíen el extracto de mi cuenta una cosa",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "si necesitaría saber que me envíen el extracto de mi cuenta una copia",
-  "sigWerNormalizedPredicted": "y necesitaría saber que me envíen el extracto de mi cuenta una cosa",
+  "sigWerNormalizedGold": "sí necesitaría saber que me envíen el extracto de mi cuenta una copia",
+  "sigWerNormalizedPredicted": "y necesitaría saber que me envíen el extracto de mi cuenta una cosa",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'si' to 'y' at position 0",
-      "reason": "'si' (if) and 'y' (and) are different conjunctions; this changes the logical structure of the sentence but does not derail the overall meaning, as the main request remains clear.",
-      "score": 2
+      "error": "Substitution: 'sí' to 'y' at position 0",
+      "reason": "'sí' (yes) is an affirmative response, while 'y' (and) is a conjunction; this changes the intent of the sentence and can derail the meaning.",
+      "score": 1
     },
     {
       "error": "Substitution: 'copia' to 'cosa' at position 12",
-      "reason": "'copia' (copy) is specific, while 'cosa' (thing) is vague and changes the meaning of the request, making it unclear what is being asked for. This significantly alters the intent of the sentence.",
+      "reason": "'copia' (copy) is a specific request for a document, while 'cosa' (thing) is vague and changes the meaning of the request significantly.",
       "score": 1
     }
   ]

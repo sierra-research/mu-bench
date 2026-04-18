@@ -2,15 +2,31 @@
   "gold": "Pardon S N 707 dedim ben size, tekrar söyler misiniz kodu?",
   "predicted": "7 pardon sen 707 dedim ben size tekrar söyler misiniz kodu?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
-  "werNormalizedGold": "pardon s n seven zero seven dedim ben size tekrar söyler misiniz kodu",
-  "werNormalizedPredicted": "pardon s n seven zero seven dedim ben size tekrar söyler misiniz kodu",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "pardon s n yedi yüz yedi dedim ben size tekrar söyler misiniz kodu",
+  "werNormalizedPredicted": "yedi pardon sen yedi yüz yedi dedim ben size tekrar söyler misiniz kodu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "pardon s n seven zero seven dedim ben size tekrar söyler misiniz kodu",
-  "sigWerNormalizedPredicted": "pardon s n seven zero seven dedim ben size tekrar söyler misiniz kodu",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "pardon s n yedi yüz yedi dedim ben size tekrar söyler misiniz kodu",
+  "sigWerNormalizedPredicted": "yedi pardon sen yedi yüz yedi dedim ben size tekrar söyler misiniz kodu",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'yedi' at position 0",
+      "reason": "The word 'yedi' (seven) is inserted at the beginning, but it does not significantly change the meaning of the sentence as the main content is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 's' to 'sen' at position 1",
+      "reason": "'s' is likely part of a spelled-out code, while 'sen' means 'you' in Turkish. This changes the meaning and could cause confusion, especially if a code is being communicated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 2",
+      "reason": "If 's n' is part of a code, omitting 'n' makes the code incorrect, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -1,21 +1,26 @@
 {
   "gold": "Takip kodunu tekrar söyler misin?",
-  "predicted": "Takip konuda tekrar söyler misin?",
+  "predicted": "Takipkutun tekrar söyler misin?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "takip kodunu tekrar soyler misin",
-  "werNormalizedPredicted": "takip konuda tekrar soyler misin",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "takip kodunu tekrar söyler misin",
+  "werNormalizedPredicted": "takipkutun tekrar söyler misin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "takip kodunu tekrar soyler misin",
-  "sigWerNormalizedPredicted": "takip konuda tekrar soyler misin",
+  "sigWerNormalizedGold": "takip kodunu tekrar söyler misin",
+  "sigWerNormalizedPredicted": "takipkutun tekrar söyler misin",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kodunu' to 'konuda' at position 1",
-      "reason": "'kodunu' means 'your code' while 'konuda' means 'about the topic'; this changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "error": "Substitution: 'takip' to 'takipkutun' at position 0",
+      "reason": "'takipkutun' is a concatenation of 'takip' and something resembling 'kutun', which is not present in the expected sentence. This changes the meaning and makes the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kodunu' at position 1",
+      "reason": "Omitting 'kodunu' (your code) removes a key part of the sentence, making the request unclear and incomplete.",
       "score": 1
     }
   ]

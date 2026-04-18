@@ -7,16 +7,16 @@
   "werRefWords": 14,
   "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "cộng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerNormalizedPredicted": "cộng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
       "error": "Insertion: 'mươi' at position 5",
-      "reason": "'mươi' (meaning 'ten' in Vietnamese) changes the number from 'chín một một' (911) to 'chín mươi một một' (91 1 1), which alters the intended sequence of numbers and could lead to misunderstanding, especially if this is a phone number or code.",
-      "score": 1
+      "reason": "'mươi' (meaning 'ten' in Vietnamese) changes the number from 'chín một' (91) to 'chín mươi một' (91), so the meaning is preserved and the overall number sequence is not derailed. However, the insertion is redundant and does not change the intended number sequence, so it is a minor error.",
+      "score": 2
     }
   ]
 }

@@ -2,20 +2,30 @@
   "gold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
   "predicted": "Địa trí email là minh chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
   "werRefWords": 12,
   "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "địa trí email là minh chấm trần a còng email chấm com",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "địa trí email là minh chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "địa trí email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa trí email là minh chấm trầngmail chấm com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'chỉ' to 'trí' at position 1",
-      "reason": "'chỉ' means 'address' in this context, while 'trí' is a different word and does not make sense here, making the sentence confusing and changing the intended meaning.",
+      "reason": "'chỉ' (address) and 'trí' (intellect) are completely different words and change the meaning of the phrase 'địa chỉ email' (email address) to something incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 6",
+      "reason": "'trầngmail' merges the name 'trần' with 'gmail', which makes the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 7",
+      "reason": "Missing 'a' (the Vietnamese word for '@') in the email address makes the email invalid and unrecognizable.",
       "score": 1
     }
   ]

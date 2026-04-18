@@ -2,20 +2,25 @@
   "gold": "Thế mình cần chuẩn bị những giấy tờ gì nhỉ?",
   "predicted": "Thế mình cần cần chuẩn bị những cái giấy tờ gì nhỉ?",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "thế mình cần chuẩn bị những giấy tờ gì nhỉ",
-  "werNormalizedPredicted": "thế mình cần cần chuẩn bị những giấy tờ gì nhỉ",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "thế mình cần cần chuẩn bị những cái giấy tờ gì nhỉ",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "thế mình cần chuẩn bị những giấy tờ gì nhỉ",
-  "sigWerNormalizedPredicted": "thế mình cần cần chuẩn bị những giấy tờ gì nhỉ",
+  "sigWerNormalizedPredicted": "thế mình cần cần chuẩn bị những cái giấy tờ gì nhỉ",
   "sigWerErrors": [
     {
       "error": "Insertion: 'cần' at position 3",
-      "reason": "The word 'cần' is repeated, but this does not change the overall meaning of the sentence. It is a minor redundancy and does not derail understanding.",
+      "reason": "The repeated 'cần' (need) is a redundancy but does not change the meaning of the sentence; it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 6",
+      "reason": "The insertion of 'cái' (a classifier) before 'giấy tờ' is a minor grammatical addition in Vietnamese and does not change the meaning of the sentence.",
       "score": 2
     }
   ]

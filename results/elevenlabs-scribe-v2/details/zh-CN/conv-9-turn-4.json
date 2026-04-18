@@ -2,15 +2,26 @@
   "gold": "C N 8 1 7。",
   "predicted": "四N八一C。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n eight one seven",
-  "werNormalizedPredicted": "c n eight one seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 八 一 七",
+  "werNormalizedPredicted": "四 n 八 一 c",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n eight one seven",
-  "sigWerNormalizedPredicted": "c n eight one seven",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 八 一 七",
+  "sigWerNormalizedPredicted": "四 n 八 一 c",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '四' at position 0",
+      "reason": "'c' is an English letter, while '四' is the Chinese character for 'four'; this is a substitution between different scripts and meanings, which significantly alters the intended content.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '七' to 'c' at position 4",
+      "reason": "'七' is the Chinese character for 'seven', while 'c' is an English letter; this substitution changes both the script and the meaning, resulting in a significant error.",
+      "score": 1
+    }
+  ]
 }

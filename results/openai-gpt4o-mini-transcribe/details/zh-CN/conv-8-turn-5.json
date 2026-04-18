@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "dreamling@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "junling at email dot com",
-  "werNormalizedPredicted": "junling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "junling at email dot com",
-  "sigWerNormalizedPredicted": "junling at email dot com",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "The actual transcription replaces a Chinese name with an unrelated English word, completely changing the identity and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A part of the name is missing, which significantly alters the intended email address and identity.",
+      "score": 1
+    }
+  ]
 }

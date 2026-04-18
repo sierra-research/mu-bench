@@ -1,16 +1,32 @@
 {
   "gold": "Sí. C de Casa, N de Nancy, 1 1 7.",
-  "predicted": "Sí, sede casa en Ed Nancy 117.",
+  "predicted": "Sí, sede casa en el Nancy 117.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "si c de casa n de nancy ciento diecisiete",
-  "werNormalizedPredicted": "si c de casa n de nancy ciento diecisiete",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "si c de casa n de nancy ciento diecisiete",
-  "sigWerNormalizedPredicted": "si c de casa n de nancy ciento diecisiete",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "sí c de casa n de nancy uno uno siete",
+  "werNormalizedPredicted": "sí c de casa en el nancy ciento diecisiete",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "sí c de casa n de nancy uno uno siete",
+  "sigWerNormalizedPredicted": "sí c de casa en el nancy ciento diecisiete",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'n' to 'en' at position 4",
+      "reason": "'n' is a single letter, likely part of a spelled-out code or identifier, while 'en' is a word; this changes the intended letter and could cause confusion in a code or identifier.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'uno' to 'ciento' at position 7",
+      "reason": "'el' is an extra word inserted, but it does not significantly change the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'siete' at position 9",
+      "reason": "'uno uno siete' (1 1 7) is a sequence of digits, while 'ciento diecisiete' is 117; both represent the same number, so this is a numeric equivalent.",
+      "score": 3
+    }
+  ]
 }

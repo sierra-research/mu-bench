@@ -1,16 +1,22 @@
 {
   "gold": "不对啊。",
-  "predicted": "不对啊",
+  "predicted": "都对啊",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 3,
-  "werNormalizedGold": "不 对 啊",
-  "werNormalizedPredicted": "不 对 啊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "不 对 啊",
-  "sigWerNormalizedPredicted": "不 对 啊",
-  "sigWerErrors": []
+  "wer": 0.5,
+  "werEdits": 1,
+  "werRefWords": 2,
+  "werNormalizedGold": "不对",
+  "werNormalizedPredicted": "都对",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "不 对",
+  "sigWerNormalizedPredicted": "都 对",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '都' at position 0",
+      "reason": "'不对' means 'not correct' or 'incorrect', while '都对' means 'all correct'. This substitution completely changes the meaning of the sentence from negative to positive, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

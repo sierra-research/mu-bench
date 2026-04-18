@@ -2,25 +2,20 @@
   "gold": "N D 2 7 2 2. Doğru mudur?",
   "predicted": "Md iki yedi iki iki doğru mudur?",
   "unintelligible": false,
-  "wer": 0.75,
-  "werEdits": 6,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "n d two seven two two doğru mudur",
-  "werNormalizedPredicted": "md iki yedi iki iki doğru mudur",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "n d iki yedi iki iki doğru mudur",
+  "werNormalizedPredicted": "m d iki yedi iki iki doğru mudur",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "n d two seven two two doğru mudur",
-  "sigWerNormalizedPredicted": "md iki yedi iki iki doğru mudur",
+  "sigWerNormalizedGold": "n d iki yedi iki iki doğru mudur",
+  "sigWerNormalizedPredicted": "m d iki yedi iki iki doğru mudur",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'n' to 'md' at position 0",
-      "reason": "The expected 'n' is replaced by 'md', which are different letters and could represent different initials or codes. This significantly changes the meaning if these are identifiers or codes.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'two' at position 5",
-      "reason": "The last 'two' in the expected sequence is missing in the actual transcription. This changes the sequence of numbers, which could be critical if these are codes or identifiers.",
+      "error": "Substitution: 'n' to 'm' at position 0",
+      "reason": "The first letter is different. If this is a spelled-out sequence (such as a code or identifier), a single letter difference is a significant error as it changes the entire meaning or code.",
       "score": 1
     }
   ]

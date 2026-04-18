@@ -2,15 +2,26 @@
   "gold": "Tabii. S N 7 6 5.",
   "predicted": "Tabii, sene yedi altı beş.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "tabii s n yedi altı beş",
-  "werNormalizedPredicted": "tabii s n yedi altı beş",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tabii sene yedi altı beş",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "tabii s n yedi altı beş",
-  "sigWerNormalizedPredicted": "tabii s n yedi altı beş",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tabii sene yedi altı beş",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sene' at position 1",
+      "reason": "'s' is a single letter, likely part of a spelled-out sequence, while 'sene' is a full word. This changes the meaning and disrupts the intended sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 2",
+      "reason": "Omitting 'n' from a spelled-out sequence significantly alters the intended information, especially if it is part of a code or identifier.",
+      "score": 1
+    }
+  ]
 }

@@ -2,25 +2,30 @@
   "gold": "Tôi muốn được tư vấn về việc tăng hạn mức của thẻ tín dụng. Tôi muốn hỏi điều kiện để nâng hạn mức nhằm sử dụng thẻ thuận tiện hơn là gì?",
   "predicted": "Tôi muốn được 4 vấn về việc tăng hạn mức của thẻ tín dụng. Tôi muốn hỏi là điều kiện để nâng hạn mức nhằm sử dụng thẻ tận tiện hơn là gì?",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 2,
+  "wer": 0.09375,
+  "werEdits": 3,
   "werRefWords": 32,
   "werNormalizedGold": "tôi muốn được tư vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi điều kiện để nâng hạn mức nhằm sử dụng thẻ thuận tiện hơn là gì",
-  "werNormalizedPredicted": "tôi muốn được tư vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi là điều kiện để nâng hạn mức nhằm sử dụng thẻ tận tiện hơn là gì",
-  "significantWer": 0.03125,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tôi muốn được bốn vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi là điều kiện để nâng hạn mức nhằm sử dụng thẻ tận tiện hơn là gì",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "tôi muốn được tư vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi điều kiện để nâng hạn mức nhằm sử dụng thẻ thuận tiện hơn là gì",
-  "sigWerNormalizedPredicted": "tôi muốn được tư vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi là điều kiện để nâng hạn mức nhằm sử dụng thẻ tận tiện hơn là gì",
+  "sigWerNormalizedPredicted": "tôi muốn được bốn vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi là điều kiện để nâng hạn mức nhằm sử dụng thẻ tận tiện hơn là gì",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'tư' to 'bốn' at position 3",
+      "reason": "'tư vấn' means 'consult/advice', while 'bốn vấn' is not a valid phrase and 'bốn' means 'four', which makes the sentence incoherent.",
+      "score": 1
+    },
+    {
       "error": "Insertion: 'là' at position 17",
-      "reason": "The insertion of 'là' (which means 'is/that') does not change the overall meaning of the sentence; it is a minor grammatical addition that does not affect comprehension.",
+      "reason": "Adding 'là' ('is/that') here does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'thuận' to 'tận' at position 27",
-      "reason": "'Thuận tiện' means 'convenient', while 'tận tiện' is not a standard phrase in Vietnamese and could confuse the meaning, making the sentence less clear or even incoherent.",
+      "reason": "'thuận tiện' means 'convenient', while 'tận tiện' is not a valid phrase and changes the meaning, making the sentence less clear.",
       "score": 1
     }
   ]

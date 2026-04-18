@@ -1,16 +1,27 @@
 {
   "gold": "Es C N 171.",
-  "predicted": "Es CN ciento setenta y uno.",
+  "predicted": "SN171",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "es c n ciento setenta y uno",
-  "werNormalizedPredicted": "es c n ciento setenta y uno",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "s n ciento setenta y uno",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "es c n ciento setenta y uno",
-  "sigWerNormalizedPredicted": "es c n ciento setenta y uno",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "s n ciento setenta y uno",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 's' at position 0",
+      "reason": "'es' is a full syllable/word in Spanish, while 's' is just a letter; this changes the meaning and could cause confusion, especially if this is part of a spelled-out sequence or code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'c' at position 1",
+      "reason": "Omitting 'c' from the sequence changes the information being conveyed, especially if this is a code or spelled-out word, making it a significant error.",
+      "score": 1
+    }
+  ]
 }

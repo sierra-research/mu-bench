@@ -1,27 +1,27 @@
 {
   "gold": "Cảm ơn bạn. Chúc Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
-  "predicted": "Ở còn bạn chúc mừng Anna một ngày vui vẻ. Mình ờ Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
+  "predicted": "ờ cảm ơn bạn, chúc mà Anna một ngày vui vẻ. Mình à Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
   "unintelligible": false,
   "wer": 0.1,
   "werEdits": 2,
   "werRefWords": 20,
   "werNormalizedGold": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
-  "werNormalizedPredicted": "còn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
-  "significantWer": 0.1,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "cảm ơn bạn chúc mà anna một ngày vui vẻ mình anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
-  "sigWerNormalizedPredicted": "còn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
+  "sigWerNormalizedPredicted": "cảm ơn bạn chúc mà anna một ngày vui vẻ mình anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'cảm' to 'còn' at position 0",
-      "reason": "'cảm ơn' means 'thank you' in Vietnamese, while 'còn' means 'still' or 'remaining'. This substitution changes the meaning of the sentence and makes the greeting incoherent.",
-      "score": 1
+      "error": "Insertion: 'mà' at position 4",
+      "reason": "'mà' is an extra word that does not change the overall meaning of the sentence, as the main intent (wishing Anna a nice day) is preserved.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'ơn' at position 1",
-      "reason": "Omitting 'ơn' from 'cảm ơn' removes the word 'thank' from 'thank you', making the phrase incomplete and changing the intended meaning.",
-      "score": 1
+      "error": "Insertion: 'mình' at position 9",
+      "reason": "'mình' is inserted before 'anna kết thúc cuộc gọi', but the sentence remains understandable and the meaning is not significantly changed.",
+      "score": 2
     }
   ]
 }

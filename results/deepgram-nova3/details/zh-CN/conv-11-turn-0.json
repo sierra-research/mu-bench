@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "你好",
   "werNormalizedPredicted": "零",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to '零' at position 0",
-      "reason": "'你' means 'you' (a greeting), while '零' means 'zero'; the substitution changes the meaning completely and makes the sentence incoherent as a greeting.",
+      "reason": "'你' means 'you' and '零' means 'zero'; this is a completely different word and changes the meaning of the sentence entirely.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "'好' is part of the greeting '你好' (hello); omitting it makes the greeting incomplete and changes the meaning significantly.",
+      "reason": "'好' means 'good' or 'hello' in this context; omitting it makes the greeting incomplete and incoherent.",
       "score": 1
     }
   ]

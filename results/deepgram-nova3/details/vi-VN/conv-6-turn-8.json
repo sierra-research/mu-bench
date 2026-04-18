@@ -2,16 +2,16 @@
   "gold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
   "predicted": "Không phải cái email đúng là link. Gmail chấm com",
   "unintelligible": false,
-  "wer": 0.35714285714285715,
-  "werEdits": 5,
+  "wer": 0.42857142857142855,
+  "werEdits": 6,
   "werRefWords": 14,
   "werNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "không phải cái email đúng là link chấm gmail chấm com",
-  "significantWer": 0.21428571428571427,
-  "majorErrorsCount": 3,
+  "werNormalizedPredicted": "không phải cái email đúng là link gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "không phải cái email đúng là link chấm gmail chấm com",
+  "sigWerNormalizedPredicted": "không phải cái email đúng là link gmail chấm com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'minh' to 'link' at position 6",
@@ -19,13 +19,8 @@
       "score": 1
     },
     {
-      "error": "Substitution: 'trần' to 'gmail' at position 8",
-      "reason": "The domain part of the email is changed from a personal/proper name to a generic email provider, which makes the email address completely different and changes the intended recipient.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'a' at position 9",
-      "reason": "The missing 'a' (which is the Vietnamese word for '@') makes the email address invalid and unrecognizable, significantly affecting the meaning.",
+      "error": "Deletion: 'trần' at position 8",
+      "reason": "Omitting 'trần' from the email address changes the entire email identity, making it a significant error.",
       "score": 1
     }
   ]

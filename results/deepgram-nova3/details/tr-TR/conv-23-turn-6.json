@@ -7,7 +7,7 @@
   "werRefWords": 22,
   "werNormalizedGold": "online başvuru yaptım açıkçası bol bol ye sitesinde beş dakikada üye ol kampanya vardı o yolu izledim ama geri dönüş sağlanmadı tarafıma",
   "werNormalizedPredicted": "online başvuru yaptım açıkçası bol bol yeni sitesinde beş dakikada üye ol adlı bir kampanya vardı o yolu izledim ama geri dönüş sağlanmadı tarafıma",
-  "significantWer": 0.045454545454545456,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "online başvuru yaptım açıkçası bol bol ye sitesinde beş dakikada üye ol kampanya vardı o yolu izledim ama geri dönüş sağlanmadı tarafıma",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'ye' to 'yeni' at position 6",
-      "reason": "'ye' is a preposition meaning 'to', while 'yeni' means 'new'; this changes the meaning of the sentence and could confuse the listener about which site is being referenced.",
+      "reason": "'ye' is a short form or possibly a typo for 'yeni' (meaning 'new' in Turkish), but in this context, 'ye sitesinde' vs 'yeni sitesinde' changes the meaning of the sentence, as 'ye' does not make sense and 'yeni' (new) is a meaningful adjective for the site. This substitution clarifies the meaning, but since 'ye' is not a word here, the error is significant for understanding.",
       "score": 1
     },
     {
       "error": "Insertion: 'adlı' at position 12",
-      "reason": "'adlı' means 'named', which adds clarification but does not significantly change the overall meaning of the sentence.",
+      "reason": "'adlı' means 'named' in Turkish and its insertion adds clarification about the campaign ('üye ol adlı bir kampanya' = 'a campaign named sign up'). However, its absence in the expected transcript does not significantly change the overall meaning, as the main information about the campaign remains. This is a minor error.",
       "score": 2
     }
   ]

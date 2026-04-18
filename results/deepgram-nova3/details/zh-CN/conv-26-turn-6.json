@@ -2,15 +2,26 @@
   "gold": "C N 7 0 7 0 6。",
   "predicted": "西恩七零六",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
-  "werNormalizedGold": "西恩七零七零六",
-  "werNormalizedPredicted": "西恩七零七零六",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 七 零 七 零 六",
+  "werNormalizedPredicted": "西恩 七 零 六",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "西 恩 七 零 七 零 六",
-  "sigWerNormalizedPredicted": "西 恩 七 零 七 零 六",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 七 零 七 零 六",
+  "sigWerNormalizedPredicted": "西 恩 七 零 六",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '西' at position 0",
+      "reason": "'c' is an English letter, while '西' is a Chinese character with a different meaning and pronunciation. This changes the intended content significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '七' at position 2",
+      "reason": "A digit is missing from the sequence, which changes the intended number and is a significant error.",
+      "score": 1
+    }
+  ]
 }

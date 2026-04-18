@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "tôi muốn coi cái hóa đơn thanh toán gần nhất",
   "werNormalizedPredicted": "tôi muốn coi quá đơn thanh toán gần nhất",
-  "significantWer": 0.2,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tôi muốn coi cái hóa đơn thanh toán gần nhất",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'cái' to 'quá' at position 3",
-      "reason": "'cái' is a classifier meaning 'the', while 'quá' means 'too' or 'very', which changes the meaning of the phrase and makes the sentence confusing or incoherent.",
+      "reason": "'cái' is a classifier/article, while 'quá' means 'too' or 'over', which changes the meaning of the phrase and makes the sentence confusing or incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'hóa' at position 4",
-      "reason": "Missing 'hóa' in 'hóa đơn' changes the meaning from 'invoice' to 'đơn', which is not the correct term and makes the request unclear.",
+      "reason": "Missing 'hóa' in 'hóa đơn' changes the meaning from 'invoice/bill' to 'đơn', which is not the correct term and makes the request unclear.",
       "score": 1
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "确认",
   "werNormalizedPredicted": "是",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "确 认",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '确' to '是' at position 0",
-      "reason": "'确' (confirm/true) is replaced by '是' (is/yes), which changes the meaning of the phrase from 'confirm' to simply 'yes' or 'is', making the sentence meaning significantly different.",
+      "reason": "'确' (confirm) and '是' (is/yes) have different meanings; substituting 'confirm' with 'is' changes the intent of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: '认' at position 1",
-      "reason": "The character '认' (recognize/acknowledge) is missing, so the phrase '确认' (confirm) is incomplete and the intended meaning is lost.",
+      "reason": "Omitting '认' (part of '确认', meaning 'confirm') results in loss of the intended meaning, making the sentence incomplete and incoherent.",
       "score": 1
     }
   ]

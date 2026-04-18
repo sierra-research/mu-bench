@@ -2,21 +2,31 @@
   "gold": "我的姓名是君玲，君玲。",
   "predicted": "我的行命是君临。",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
+  "wer": 0.5555555555555556,
+  "werEdits": 5,
   "werRefWords": 9,
   "werNormalizedGold": "我的姓名是君玲君玲",
-  "werNormalizedPredicted": "我的姓名是君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的行命是君临",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 君 玲",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲",
+  "sigWerNormalizedPredicted": "我 的 行 命 是 君 临",
   "sigWerErrors": [
     {
+      "error": "Substitution: '姓' to '行' at position 2",
+      "reason": "'姓' means 'surname' while '行' means 'row' or 'profession'; this changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 6",
+      "reason": "'玲' is a part of the name, while '临' is a different character with a different meaning; this alters the person's name, which is a significant error.",
+      "score": 1
+    },
+    {
       "error": "Deletion: '君' at position 7",
-      "reason": "The repetition of the name '君玲' is omitted in the actual transcription. While the name is still present once, the expected repetition may be important for clarity or emphasis, but the overall meaning (the person's name) is still conveyed.",
-      "score": 2
+      "reason": "Omitting a character from the repeated name changes the full name and is a significant error for proper nouns.",
+      "score": 1
     }
   ]
 }

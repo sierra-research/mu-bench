@@ -2,30 +2,35 @@
   "gold": "Chào Anna. Em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng. Không biết là hiện tại em có đủ điều kiện không nhỉ? Với cả chị giúp em cách nộp hồ sơ hay các giấy tờ cần thiết nhé.",
   "predicted": "Ừm, chào anna, em đang muốn hỏi về việc đăng hạn, mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ? Với cả bạn, chị giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá.",
   "unintelligible": false,
-  "wer": 0.09523809523809523,
-  "werEdits": 4,
+  "wer": 0.11904761904761904,
+  "werEdits": 5,
   "werRefWords": 42,
   "werNormalizedGold": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả chị giúp em cách nộp hồ sơ hay các giấy tờ cần thiết nhé",
-  "werNormalizedPredicted": "chào anna em đang muốn hỏi về việc đăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả chị giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
-  "significantWer": 0.023809523809523808,
+  "werNormalizedPredicted": "chào anna em đang muốn hỏi về việc đăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả bạn chị giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 42,
   "sigWerNormalizedGold": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả chị giúp em cách nộp hồ sơ hay các giấy tờ cần thiết nhé",
-  "sigWerNormalizedPredicted": "chào anna em đang muốn hỏi về việc đăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả chị giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
+  "sigWerNormalizedPredicted": "chào anna em đang muốn hỏi về việc đăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả bạn chị giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tăng' to 'đăng' at position 8",
-      "reason": "'tăng' means 'increase' and 'đăng' means 'register' or 'post'; this changes the meaning of the request about increasing credit limit to registering credit limit, which is a significant change.",
+      "reason": "'tăng' means 'increase' while 'đăng' means 'register' or 'post'; this changes the meaning of the request about increasing credit limit to registering for a credit limit, which is a significant change.",
       "score": 1
     },
     {
+      "error": "Insertion: 'bạn' at position 28",
+      "reason": "The insertion of 'bạn' before 'chị' creates a phrase 'bạn chị' (your sister/friend) instead of just addressing 'chị' (older sister/ma'am), which could cause confusion but does not significantly change the overall intent.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'hay' to 'hoặc' at position 35",
-      "reason": "'hay' and 'hoặc' both mean 'or' in Vietnamese, but 'hay' is more conversational and 'hoặc' is more formal; the meaning does not change.",
+      "reason": "'hay' and 'hoặc' both mean 'or' in Vietnamese, with 'hay' being more conversational and 'hoặc' more formal; the meaning is unchanged.",
       "score": 3
     },
     {
       "error": "Substitution: 'nhé' to 'nhá' at position 41",
-      "reason": "'nhé' and 'nhá' are both sentence-ending particles in Vietnamese with similar softening/encouraging tones; the meaning is unchanged.",
+      "reason": "'nhé' and 'nhá' are both sentence-ending particles in Vietnamese with similar softening/asking nuance; the meaning is unchanged.",
       "score": 3
     }
   ]

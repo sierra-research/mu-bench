@@ -2,15 +2,26 @@
   "gold": "Địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi.",
   "predicted": "Địa chỉ email chỉ là thu chấm trầngmail chấm com thôi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
-  "werNormalizedPredicted": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "địa chỉ email chỉ là thu chấm trầngmail chấm com thôi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
-  "sigWerNormalizedPredicted": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "địa chỉ email chỉ là thu chấm trầngmail chấm com thôi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 7",
+      "reason": "'trầngmail' merges 'trần' and 'gmail', which changes the structure and meaning of the email address, making it incorrect and potentially unusable as an email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 8",
+      "reason": "Missing 'a' (from 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

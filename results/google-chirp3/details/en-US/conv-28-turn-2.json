@@ -2,21 +2,26 @@
   "gold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
   "predicted": "Are you trying to get a pen? All right, I got my pen. Ready?",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 4,
-  "werRefWords": 14,
-  "werNormalizedGold": "let me try and get a pen all right i got my pen ready",
+  "wer": 0.3333333333333333,
+  "werEdits": 5,
+  "werRefWords": 15,
+  "werNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
   "werNormalizedPredicted": "are you trying to get a pen all right i got my pen ready",
-  "significantWer": 0.07142857142857142,
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "let me try and get a pen all right i got my pen ready",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
   "sigWerNormalizedPredicted": "are you trying to get a pen all right i got my pen ready",
   "sigWerErrors": [
     {
       "error": "Substitution: 'let' to 'are' at position 0",
-      "reason": "The substitution changes the sentence from a statement of intent ('let me try and get a pen') to a question directed at someone else ('are you trying to get a pen'), which significantly alters the meaning of the sentence.",
+      "reason": "Changes the sentence from a statement of intent ('let me try') to a question ('are you trying'), which alters the speaker and the meaning of the sentence significantly.",
       "score": 1
+    },
+    {
+      "error": "Deletion: 'yeah' at position 7",
+      "reason": "'Yeah' is a minor interjection that does not affect the overall meaning of the sentence.",
+      "score": 2
     }
   ]
 }

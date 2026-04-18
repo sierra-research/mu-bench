@@ -2,25 +2,30 @@
   "gold": "Tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không?",
   "predicted": "Ờm, tôi có thể được tăng hạng mức nhờ vào việc khai trách tài sản không?",
   "unintelligible": false,
-  "wer": 0.21428571428571427,
-  "werEdits": 3,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
-  "werNormalizedPredicted": "tôi có thể được tăng hạn mức nhờ vào việc khai trách tài sản không",
-  "significantWer": 0.07142857142857142,
+  "werNormalizedPredicted": "tôi có thể được tăng hạng mức nhờ vào việc khai trách tài sản không",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi có thể tăng hạn mức nhờ vào việc thế chấp tài sản không",
-  "sigWerNormalizedPredicted": "tôi có thể được tăng hạn mức nhờ vào việc khai trách tài sản không",
+  "sigWerNormalizedPredicted": "tôi có thể được tăng hạng mức nhờ vào việc khai trách tài sản không",
   "sigWerErrors": [
     {
       "error": "Insertion: 'được' at position 3",
-      "reason": "The insertion of 'được' (can/be allowed to) does not significantly change the meaning of the sentence in this context; it is a minor grammatical addition.",
+      "reason": "'được' (meaning 'to be' or 'allowed to') adds a nuance of permission or passiveness, but does not significantly change the intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'hạn' to 'hạng' at position 4",
+      "reason": "'hạn mức' means 'limit' (usually financial), while 'hạng mức' is not a standard phrase and could confuse the meaning, but the context still suggests a limit. Minor error.",
       "score": 2
     },
     {
       "error": "Substitution: 'thế' to 'khai' at position 9",
-      "reason": "Substituting 'thế' (as in 'thế chấp' = mortgage/pledge) with 'khai' (as in 'khai trách', which is not a valid phrase) changes the meaning of the sentence and makes it incoherent, as 'khai trách' does not make sense in this context.",
+      "reason": "'thế chấp' means 'mortgage/pledge', while 'khai trách' is not a valid phrase and changes the meaning, making the sentence incoherent.",
       "score": 1
     }
   ]

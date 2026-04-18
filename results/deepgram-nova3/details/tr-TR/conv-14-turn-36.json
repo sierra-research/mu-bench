@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "hayır maalesef bu sefer hiç alakasız tamamen yanlış numara oldu",
   "werNormalizedPredicted": "hayır maalesef bu sefer hiç alakasız tamamen yanlış bir numara oldu",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hayır maalesef bu sefer hiç alakasız tamamen yanlış numara oldu",
@@ -15,8 +15,8 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 8",
-      "reason": "The insertion of 'bir' (which means 'a' or 'one' in Turkish) before 'numara' ('number') does not change the overall meaning of the sentence. Both versions convey the same message, with or without the indefinite article.",
-      "score": 3
+      "reason": "'bir' (meaning 'a' or 'one') is inserted before 'numara'. In Turkish, adding 'bir' here does not change the overall meaning of the sentence; it just makes it slightly more explicit ('a wrong number' vs 'wrong number').",
+      "score": 2
     }
   ]
 }

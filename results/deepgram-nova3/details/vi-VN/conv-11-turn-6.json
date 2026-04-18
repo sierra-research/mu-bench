@@ -2,15 +2,26 @@
   "gold": "Email là minh chấm tran at email chấm com.",
   "predicted": "Email là minh chấm trendgmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
   "werNormalizedGold": "email là minh chấm tran at email chấm com",
-  "werNormalizedPredicted": "email là minh chấm tran at email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minh chấm trendgmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "email là minh chấm tran at email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm tran at email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minh chấm trendgmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tran' to 'trendgmail' at position 4",
+      "reason": "'trendgmail' is a significant distortion of the intended email username 'tran', making the email address incorrect and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 5",
+      "reason": "Omitting 'at' in the email address format makes the email address invalid and unrecognizable as a proper email address.",
+      "score": 1
+    }
+  ]
 }

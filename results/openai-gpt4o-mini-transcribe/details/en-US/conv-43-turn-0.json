@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "i would like information on raising my limit for my credit card",
   "werNormalizedPredicted": "can you provide information on raising my limit for my critical",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "i would like information on raising my limit for my credit card",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'i' to 'can' at position 0",
-      "reason": "The subject of the sentence changes from first person ('I') to second person ('can you'), which changes the intent and meaning of the request.",
+      "reason": "Changes the subject and intent of the sentence from a personal request to a question, altering the meaning significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'credit' to 'critical' at position 10",
-      "reason": "'Credit' and 'critical' are completely different words; this substitution makes the sentence incoherent and changes the meaning significantly.",
+      "reason": "'Critical' is a completely different word from 'credit' and changes the meaning of the phrase, making the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'card' at position 11",
-      "reason": "Omitting 'card' leaves the phrase 'my critical' incomplete and unclear, making the sentence incoherent.",
+      "reason": "Omitting 'card' leaves the object of the request incomplete, making the sentence unclear.",
       "score": 1
     }
   ]

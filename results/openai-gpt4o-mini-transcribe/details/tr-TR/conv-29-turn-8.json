@@ -1,21 +1,31 @@
 {
   "gold": "Tabii ki. Artı 90 123 0 90 45 67.",
-  "predicted": "Tabii ki. 090-123-090-4567",
+  "predicted": "Tabii ki, 090-123-090-4567.",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
-  "werRefWords": 13,
-  "werNormalizedGold": "tabii ki artı doksan bir iki üç sıfır doksan dört beş altı yedi",
-  "werNormalizedPredicted": "tabii ki sıfır doksan bir iki üç sıfır doksan dört beş altı yedi",
-  "significantWer": 0.07692307692307693,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "tabii ki artı doksan bir iki üç sıfır doksan dört beş altı yedi",
-  "sigWerNormalizedPredicted": "tabii ki sıfır doksan bir iki üç sıfır doksan dört beş altı yedi",
+  "wer": 0.42857142857142855,
+  "werEdits": 6,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii ki sıfır doksan sıfır bir yüz yirmi üç sıfır doksan dört yüz elli altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii ki sıfır doksan sıfır bir yüz yirmi üç sıfır doksan dört yüz elli altı yedi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'artı' to 'sıfır' at position 2",
-      "reason": "'artı' means 'plus' and 'sıfır' means 'zero' in Turkish. In the context of a phone number, 'artı' indicates the international dialing prefix ('plus'), while 'sıfır' is a digit. Substituting 'plus' with 'zero' changes the meaning and could result in dialing a completely different number.",
+      "reason": "'artı' (plus) is a critical part of the phone number format (country code), while 'sıfır' (zero) is a digit; this changes the meaning and structure of the number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'sıfır' at position 4",
+      "reason": "An extra 'sıfır' (zero) changes the digit sequence of the phone number, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kırk' to 'yüz' at position 10",
+      "reason": "An extra 'dört' (four) alters the digit sequence, resulting in an incorrect phone number.",
       "score": 1
     }
   ]

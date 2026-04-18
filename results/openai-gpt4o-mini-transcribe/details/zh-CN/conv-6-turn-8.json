@@ -1,16 +1,22 @@
 {
   "gold": "嗯好好好。",
-  "predicted": "日號好好。",
+  "predicted": "日号好好。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
-  "werNormalizedGold": "好 好 好",
-  "werNormalizedPredicted": "好 好 好",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "好好好",
+  "werNormalizedPredicted": "日号好好",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "好 好 好",
-  "sigWerNormalizedPredicted": "好 好 好",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "日 号 好 好",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '好' to '号' at position 0",
+      "reason": "The extra character '日' at the beginning changes the meaning and makes the sentence incoherent compared to the expected repetition of '好'.",
+      "score": 1
+    }
+  ]
 }

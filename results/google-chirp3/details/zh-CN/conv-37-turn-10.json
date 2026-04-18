@@ -2,26 +2,26 @@
   "gold": "你，你可以重复我的姓名啊。",
   "predicted": "你可以重复我的姓名吗?",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
+  "wer": 0.2,
   "werEdits": 2,
-  "werRefWords": 11,
-  "werNormalizedGold": "你 你 可以 重复 我的 姓名 啊",
-  "werNormalizedPredicted": "你 可以 重复 我的 姓名 吗",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名 啊",
+  "werRefWords": 10,
+  "werNormalizedGold": "你 你可以重复我的姓名",
+  "werNormalizedPredicted": "你可以重复我的姓名吗",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名",
   "sigWerNormalizedPredicted": "你 可 以 重 复 我 的 姓 名 吗",
   "sigWerErrors": [
     {
       "error": "Deletion: '你' at position 1",
-      "reason": "The repetition of '你' (you) at the beginning is omitted, but the overall meaning of the sentence remains the same. The sentence is still a request to repeat the name.",
+      "reason": "The second '你' is a repetition for emphasis or politeness in Chinese, but omitting it does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: '啊' to '吗' at position 10",
-      "reason": "'啊' is a modal particle expressing a soft tone, while '吗' turns the sentence into a yes/no question. This changes the sentence from a statement/request to a question, which alters the intent.",
-      "score": 2
+      "error": "Insertion: '吗' at position 10",
+      "reason": "'吗' is a question particle in Chinese, turning the sentence into a question. This changes the sentence from a statement to a question, which is a significant change in meaning.",
+      "score": 1
     }
   ]
 }

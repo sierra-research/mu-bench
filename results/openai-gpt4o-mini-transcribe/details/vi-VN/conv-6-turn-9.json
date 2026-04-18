@@ -1,13 +1,13 @@
 {
   "gold": "Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Số điện thoại là 08491 12345678",
+  "predicted": "Số điện thoại là 08491-12345678",
   "unintelligible": false,
   "wer": 0.1111111111111111,
   "werEdits": 2,
   "werRefWords": 18,
   "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại là không tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'cộng' to 'không' at position 4",
-      "reason": "'cộng' (plus) is the country code indicator, while 'không' (zero) is a digit; this changes the meaning of the phone number entirely.",
+      "reason": "'Cộng' (plus) is the country code indicator, while 'không' (zero) is a digit; this changes the meaning of the phone number entirely and makes it incorrect.",
       "score": 1
     },
     {
       "error": "Deletion: 'mươi' at position 6",
-      "reason": "Omitting 'mươi' (which means 'ten' in 'tám mươi bốn' = 84) changes the number from 84 to 8 4, resulting in an incorrect phone number.",
+      "reason": "'Mươi' is part of the number 'tám mươi bốn' (eighty-four), so omitting it changes the number from 'eighty-four' to 'eight four', which is a significant error in a phone number context.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "C N 5 3 8.",
-  "predicted": "Sẽ là năm ba tám",
+  "predicted": "xe in là năm ba tháng",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 5,
+  "wer": 0.8,
+  "werEdits": 4,
   "werRefWords": 5,
-  "werNormalizedGold": "c n five three eight",
-  "werNormalizedPredicted": "se la nam ba tam",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n năm ba tám",
+  "werNormalizedPredicted": "xe in là năm ba tháng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n five three eight",
-  "sigWerNormalizedPredicted": "se la nam ba tam",
+  "sigWerNormalizedGold": "c n năm ba tám",
+  "sigWerNormalizedPredicted": "xe in là năm ba tháng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'se' at position 0",
-      "reason": "The expected word is a spelled-out letter, but the actual word is a completely different syllable, making the transcription unrecognizable and changing the intended meaning.",
+      "error": "Substitution: 'c' to 'in' at position 0",
+      "reason": "'xe' is an extra word at the beginning and is unrelated to the expected content, which can confuse the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tám' to 'tháng' at position 4",
+      "reason": "'c' is likely a letter or code, while 'in' is a different word entirely, changing the intended meaning.",
       "score": 1
     }
   ]

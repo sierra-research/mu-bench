@@ -5,28 +5,28 @@
   "wer": 0.3888888888888889,
   "werEdits": 7,
   "werRefWords": 18,
-  "werNormalizedGold": "你 正 在 说 什么 你 正 在 说 什么 你 是 不 是 傻 子",
-  "werNormalizedPredicted": "你 是 你 你 正 在 说 什么 你 正 在 说 什么 你 是 个",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "你正在说什么你正在说什么你是不是傻子",
+  "werNormalizedPredicted": "你是你你正在说什么你正在说什么你是个",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
   "sigWerNormalizedPredicted": "你 是 你 你 正 在 说 什 么 你 正 在 说 什 么 你 是 个",
   "sigWerErrors": [
     {
       "error": "Insertion: '是' at position 1",
-      "reason": "The extra '是' at the beginning repeats the subject and makes the sentence awkward but does not significantly change the overall meaning.",
+      "reason": "The extra '是' at the beginning repeats the subject but does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: '不' to '个' at position 14",
-      "reason": "Replacing '不' (not) with '个' (a/one) changes the meaning from 'are you not a fool' to 'are you a fool', which is a significant change in meaning.",
+      "reason": "Substituting '不' (not) with '个' (a/one) changes the meaning from 'are you not a fool' to 'are you a fool', which is a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '是' at position 15",
-      "reason": "Omitting the final '是' (to be) in the phrase '是不是傻子' makes the sentence incomplete and ungrammatical, significantly affecting the meaning.",
-      "score": 1
+      "reason": "Omitting the final '是' in the phrase '是不是傻子' (are you a fool) makes the sentence incomplete and affects the grammatical correctness, but the meaning is still mostly understandable.",
+      "score": 2
     }
   ]
 }

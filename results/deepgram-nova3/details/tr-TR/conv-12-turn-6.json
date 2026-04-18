@@ -2,25 +2,30 @@
   "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
   "predicted": "Evet, değil şöyle, Ahmet Arslan dediğiniz zaman Ahmet'le Arslan arasında nokta olacak Ahmet nokta Arslan.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 4,
-  "werRefWords": 16,
-  "werNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
-  "werNormalizedPredicted": "evet degil soyle ahmet arslan dediginiz zaman ahmetle arslan arasinda nokta olacak ahmet nokta arslan",
-  "significantWer": 0.0,
+  "wer": 0.3333333333333333,
+  "werEdits": 5,
+  "werRefWords": 15,
+  "werNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "evet değil şöyle ahmet arslan dediğiniz zaman ahmetle arslan arasında nokta olacak ahmet nokta arslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 16,
-  "sigWerNormalizedGold": "evet degil soyle ahmet arslan dediniz ama ahmet ve arslan arasinda nokta olacak ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "evet degil soyle ahmet arslan dediginiz zaman ahmetle arslan arasinda nokta olacak ahmet nokta arslan",
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "evet değil şöyle ahmet arslan dediğiniz zaman ahmetle arslan arasında nokta olacak ahmet nokta arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dediniz' to 'dediginiz' at position 5",
-      "reason": "Minor verb form difference, does not change the overall meaning of the sentence.",
+      "error": "Insertion: 'şöyle' at position 2",
+      "reason": "The insertion of 'şöyle' (meaning 'like this' or 'so') adds a minor clarification but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Deletion: 've' at position 8",
-      "reason": "'ve' means 'and', 'le' is a suffix meaning 'with'; in this context, both indicate a connection between 'ahmet' and 'arslan', so the meaning is preserved.",
+      "error": "Substitution: 'dediniz' to 'dediğiniz' at position 4",
+      "reason": "The change from 'dediniz' to 'dediğiniz' is a minor grammatical difference (past tense vs. participle), but the meaning remains the same in context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 've' at position 7",
+      "reason": "Omitting 've' (meaning 'and') slightly changes the structure but does not alter the overall meaning of the sentence.",
       "score": 2
     }
   ]

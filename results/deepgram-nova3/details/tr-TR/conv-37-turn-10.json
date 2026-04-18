@@ -2,25 +2,30 @@
   "gold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
   "predicted": "Tabii. Atatürk Caddesi, NOG beş altı, Kazım Karabekir Mahallesi, Üsküdar Taksim İstanbul, posta kodum otuz dört altı yüz altmış Türkiye.",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werEdits": 2,
+  "wer": 0.13636363636363635,
+  "werEdits": 3,
   "werRefWords": 22,
-  "werNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "werNormalizedPredicted": "tabii atatürk caddesi no five six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "significantWer": 0.09090909090909091,
+  "werNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "werNormalizedPredicted": "tabii atatürk caddesi nog beş altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "sigWerNormalizedPredicted": "tabii atatürk caddesi no five six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
+  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "tabii atatürk caddesi nog beş altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'forty' at position 4",
-      "reason": "Omitting 'forty' from the address number changes the address from 'forty five' to 'five', which is a significant error as it alters the specific location.",
+      "error": "Substitution: 'no' to 'nog' at position 3",
+      "reason": "'nog' is a misspelling of 'no', which is a common abbreviation for 'number' in addresses. The meaning is still clear in context, but it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'kırk' at position 4",
+      "reason": "'kırk' (forty) is a crucial part of the address (the street number). Its omission significantly changes the address, making it incomplete or incorrect.",
       "score": 1
     },
     {
       "error": "Deletion: 'taksim' at position 6",
-      "reason": "Omitting 'taksim' from the address removes a key location identifier, which can lead to confusion or incorrect delivery/location. This is a significant error.",
+      "reason": "Omitting 'taksim' removes a key location reference in the address, which can lead to confusion or incorrect delivery/location. This is a significant error.",
       "score": 1
     }
   ]

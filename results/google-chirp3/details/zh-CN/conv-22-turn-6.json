@@ -2,15 +2,21 @@
   "gold": "C N 4 8 2。",
   "predicted": "c n 182",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "c n one eight two",
-  "werNormalizedPredicted": "c n one eight two",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 四 八 二",
+  "werNormalizedPredicted": "c n 一 八 二",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n one eight two",
-  "sigWerNormalizedPredicted": "c n one eight two",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 四 八 二",
+  "sigWerNormalizedPredicted": "c n 一 八 二",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '四' to '一' at position 2",
+      "reason": "The digit '四' (four) was replaced with '一' (one), which changes the number entirely and alters the meaning of the sequence. This is a significant error, especially in contexts where the exact numbers are important.",
+      "score": 1
+    }
+  ]
 }

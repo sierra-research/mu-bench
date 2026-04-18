@@ -2,15 +2,21 @@
   "gold": "Muốn. Chuyển tôi qua, tôi muốn nói chuyện với nhân viên tư vấn.",
   "predicted": "Ờ muốn chuyển tôi qua, tôi muốn nói chuyện với nhân viên 4 vấn.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07692307692307693,
+  "werEdits": 1,
   "werRefWords": 13,
   "werNormalizedGold": "muốn chuyển tôi qua tôi muốn nói chuyện với nhân viên tư vấn",
-  "werNormalizedPredicted": "muốn chuyển tôi qua tôi muốn nói chuyện với nhân viên tư vấn",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "muốn chuyển tôi qua tôi muốn nói chuyện với nhân viên bốn vấn",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "muốn chuyển tôi qua tôi muốn nói chuyện với nhân viên tư vấn",
-  "sigWerNormalizedPredicted": "muốn chuyển tôi qua tôi muốn nói chuyện với nhân viên tư vấn",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "muốn chuyển tôi qua tôi muốn nói chuyện với nhân viên bốn vấn",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tư' to 'bốn' at position 11",
+      "reason": "'tư vấn' means 'consultant' or 'advisory', while 'bốn vấn' is not a valid phrase and 'bốn' means 'four', which makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

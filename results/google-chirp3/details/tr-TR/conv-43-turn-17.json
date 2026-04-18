@@ -2,21 +2,31 @@
   "gold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
   "predicted": "Hayır, tamamen yanlış kaydettin. Tekrar söylüyorum, dinle. +90 123 090 4567",
   "unintelligible": false,
-  "wer": 0.13636363636363635,
-  "werEdits": 3,
+  "wer": 0.2727272727272727,
+  "werEdits": 6,
   "werRefWords": 22,
   "werNormalizedGold": "hayır tamamen yanlış kaydettin tekrar söyleyeceğim anna tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "hayır tamamen yanlış kaydettin tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır tamamen yanlış kaydettin tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan dört bin beş yüz altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "hayır tamamen yanlış kaydettin tekrar söyleyeceğim anna tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "hayır tamamen yanlış kaydettin tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır tamamen yanlış kaydettin tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan dört bin beş yüz altmış yedi",
   "sigWerErrors": [
     {
       "error": "Deletion: 'söyleyeceğim' at position 5",
-      "reason": "The omission of 'söyleyeceğim' ('I will say') removes an explicit statement of intent, but the following phrase 'tekrar söylüyorum' ('I am saying again') conveys a similar meaning. The overall intent of the sentence is preserved, so this is a minor error.",
+      "reason": "The omission of 'söyleyeceğim' (I will say) removes a statement of intent, but the overall meaning is still mostly preserved as the rest of the sentence continues with the instruction. This is a minor error.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'kırk' to 'bin' at position 18",
+      "reason": "The insertion of 'dört' (four) changes the number sequence, which is likely a phone number or code. This significantly alters the intended information.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'yüz' at position 20",
+      "reason": "Substituting 'kırk' (forty) with 'bin' (thousand) in a number sequence drastically changes the value, which is critical in contexts like phone numbers or codes. This is a significant error.",
+      "score": 1
     }
   ]
 }

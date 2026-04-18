@@ -7,7 +7,7 @@
   "werRefWords": 5,
   "werNormalizedGold": "thôi được rồi cảm ơn",
   "werNormalizedPredicted": "thôi thôi không muốn",
-  "significantWer": 0.4,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "thôi được rồi cảm ơn",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'được' to 'thôi' at position 1",
-      "reason": "'được' (okay) is replaced by 'thôi' (stop), which changes the meaning of the sentence from acceptance to repetition, significantly altering the intent.",
+      "reason": "'được' (meaning 'okay' or 'alright') is replaced with 'thôi' (meaning 'stop' or 'enough'), which changes the intent and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'ơn' at position 4",
-      "reason": "'ơn' is part of 'cảm ơn' (thank you), and its omission means the phrase is incomplete and the meaning is lost.",
+      "reason": "'ơn' is missing, so the phrase 'cảm ơn' (thank you) is incomplete, removing the intended meaning of gratitude.",
       "score": 1
     }
   ]

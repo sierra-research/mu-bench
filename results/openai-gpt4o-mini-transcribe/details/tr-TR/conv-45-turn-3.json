@@ -1,26 +1,21 @@
 {
   "gold": "C N 9 9 5 9.",
-  "predicted": "Çene dokuz dokuz beş dokuz.",
+  "predicted": "C ne dokuz dokuz beş dokuz.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 6,
+  "wer": 0.16666666666666666,
+  "werEdits": 1,
   "werRefWords": 6,
-  "werNormalizedGold": "c n nine nine five nine",
-  "werNormalizedPredicted": "çene dokuz dokuz beş dokuz",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "c n dokuz dokuz beş dokuz",
+  "werNormalizedPredicted": "c ne dokuz dokuz beş dokuz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n nine nine five nine",
-  "sigWerNormalizedPredicted": "çene dokuz dokuz beş dokuz",
+  "sigWerNormalizedGold": "c n dokuz dokuz beş dokuz",
+  "sigWerNormalizedPredicted": "c ne dokuz dokuz beş dokuz",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'çene' at position 0",
-      "reason": "'c' is a single letter, likely part of a spelled-out code or identifier, while 'çene' is a Turkish word meaning 'jaw' and not a letter. This is a significant error as it completely changes the intended meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'nine' at position 5",
-      "reason": "'nine' and 'dokuz' both mean '9', but 'dokuz' is in Turkish while the expected is in English. Since the language is different, this is a significant error.",
+      "error": "Substitution: 'n' to 'ne' at position 1",
+      "reason": "'n' is a single letter, while 'ne' is a different word in Turkish ('ne' means 'what'). This changes the meaning of the sequence, especially if this is a code or spelled-out sequence. This is a significant error.",
       "score": 1
     }
   ]

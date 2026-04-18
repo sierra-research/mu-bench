@@ -1,27 +1,32 @@
 {
   "gold": "Evet, ben zaten onun için aramıştım.",
-  "predicted": "Evet, zaten onu düşünüyorum istiyorum.",
+  "predicted": "Evet, zaten onu düşünüyorum işte.",
   "unintelligible": false,
   "wer": 0.6666666666666666,
   "werEdits": 4,
   "werRefWords": 6,
-  "werNormalizedGold": "evet ben zaten onun icin aramistim",
-  "werNormalizedPredicted": "evet zaten onu dusunuyorum istiyorum",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "evet ben zaten onun için aramıştım",
+  "werNormalizedPredicted": "evet zaten onu düşünüyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "evet ben zaten onun icin aramistim",
-  "sigWerNormalizedPredicted": "evet zaten onu dusunuyorum istiyorum",
+  "sigWerNormalizedGold": "evet ben zaten onun için aramıştım",
+  "sigWerNormalizedPredicted": "evet zaten onu düşünüyorum",
   "sigWerErrors": [
     {
       "error": "Deletion: 'ben' at position 1",
-      "reason": "The omission of 'ben' (I) removes the subject of the sentence, which significantly changes the meaning and who is performing the action.",
+      "reason": "Omitting 'ben' (I) removes the subject of the sentence, which changes who is performing the action and alters the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'onun' to 'onu' at position 3",
-      "reason": "'onun' means 'his/her/its' (possessive), while 'onu' means 'it/him/her' (accusative). This changes the grammatical role and meaning in the sentence, but the general topic remains similar.",
+      "reason": "'Onun' (his/her/its) and 'onu' (him/her/it) are different grammatical forms; this changes the meaning of the sentence but not as drastically as a full subject or verb change.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'aramıştım' at position 5",
+      "reason": "Omitting 'aramıştım' (I had called) removes the main verb and action of the sentence, making the actual sentence about something else entirely.",
+      "score": 1
     }
   ]
 }

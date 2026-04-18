@@ -1,27 +1,37 @@
 {
   "gold": "Necesito averiguar por qué no me llegó la tarjeta nueva. La tarjeta de crédito. ¿Qué pudo pasar?",
-  "predicted": "Necesito recordar porque no me llegó la tarjeta nueva, la tarjeta de crédito. ¿Qué puedo pasar?",
+  "predicted": "Necesito hablar porque no me llegó la tarjeta nueva, la tarjeta de crédito. ¿Qué puedo pasar?",
   "unintelligible": false,
-  "wer": 0.11764705882352941,
-  "werEdits": 2,
+  "wer": 0.4117647058823529,
+  "werEdits": 7,
   "werRefWords": 17,
-  "werNormalizedGold": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
-  "werNormalizedPredicted": "necesito recordar por que no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
-  "significantWer": 0.058823529411764705,
+  "werNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "werNormalizedPredicted": "necesito hablar porque no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "necesito averiguar por que no me llego la tarjeta nueva la tarjeta de credito que pudo pasar",
-  "sigWerNormalizedPredicted": "necesito recordar por que no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
+  "sigWerNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "sigWerNormalizedPredicted": "necesito hablar porque no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'averiguar' to 'recordar' at position 1",
-      "reason": "'Averiguar' (to find out) and 'recordar' (to remember) are different actions; this changes the intent of the request and alters the meaning of the sentence.",
+      "error": "Substitution: 'averiguar' to 'hablar' at position 1",
+      "reason": "'Averiguar' (to find out) and 'hablar' (to talk) are completely different actions and change the intent of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'pudo' to 'puedo' at position 15",
-      "reason": "'Pudo' (could, past tense) vs. 'puedo' (can, present tense) changes the timeframe but does not significantly alter the overall meaning in this context.",
+      "error": "Deletion: 'qué' at position 3",
+      "reason": "Omitting 'qué' ('why') removes the question word, but the overall intent is still somewhat clear.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'llegó' to 'llego' at position 6",
+      "reason": "Difference in accent only; both are understood as 'arrived' in context, minor grammatical error.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 13",
+      "reason": "Missing accent does not change the meaning in this context.",
+      "score": 3
     }
   ]
 }

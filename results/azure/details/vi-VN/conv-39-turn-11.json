@@ -2,15 +2,26 @@
   "gold": "Cảm ơn Anna. Bye Anna.",
   "predicted": "Cảm ơn anh a bye anh a.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8,
+  "werEdits": 4,
   "werRefWords": 5,
   "werNormalizedGold": "cảm ơn anna bye anna",
-  "werNormalizedPredicted": "cảm ơn anna bye anna",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "cảm ơn anh a bye anh a",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "cảm ơn anna bye anna",
-  "sigWerNormalizedPredicted": "cảm ơn anna bye anna",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "cảm ơn anh a bye anh a",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'a' at position 2",
+      "reason": "'anh' is a different word from 'anna' and changes the addressee, which can alter the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'anna' to 'a' at position 4",
+      "reason": "'a' is not a valid substitute for the name 'anna', making the addressee unclear and significantly changing the meaning.",
+      "score": 1
+    }
+  ]
 }

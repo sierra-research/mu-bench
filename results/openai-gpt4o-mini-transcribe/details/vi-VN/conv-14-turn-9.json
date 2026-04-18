@@ -1,22 +1,27 @@
 {
   "gold": "Số điện thoại là cộng 8 4.",
-  "predicted": "số điện thoại là 084",
+  "predicted": "Số điện thoại là học tám tư",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "số điện thoại là cộng tám bốn",
-  "werNormalizedPredicted": "số điện thoại là không tám bốn",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedPredicted": "số điện thoại là học tám tư",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "số điện thoại là cộng tám bốn",
-  "sigWerNormalizedPredicted": "số điện thoại là không tám bốn",
+  "sigWerNormalizedPredicted": "số điện thoại là học tám tư",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'cộng' to 'không' at position 4",
-      "reason": "'cộng' means 'plus' (used for country code), while 'không' means 'zero'; this changes the meaning of the phone number entirely and leads to an incorrect number.",
+      "error": "Substitution: 'cộng' to 'học' at position 4",
+      "reason": "'cộng' (meaning 'plus' or indicating the country code '+') is replaced by 'học' (meaning 'study'), which is unrelated and changes the meaning of the phone number, making it incoherent.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 6",
+      "reason": "'bốn' and 'tư' both mean 'four' in Vietnamese, so this substitution does not change the meaning.",
+      "score": 3
     }
   ]
 }

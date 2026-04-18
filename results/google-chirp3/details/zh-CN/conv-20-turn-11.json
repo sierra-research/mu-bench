@@ -5,9 +5,9 @@
   "wer": 0.2222222222222222,
   "werEdits": 4,
   "werRefWords": 18,
-  "werNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
-  "werNormalizedPredicted": "哇 你 你 正 在 说 什 么 你 正 在 说 什 么 你 是 个 傻 子",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "你正在说什么你正在说什么你是不是傻子",
+  "werNormalizedPredicted": "哇 你 你正在说什么 你正在说什么 你是个傻子",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '哇' at position 0",
-      "reason": "'哇' is an interjection expressing surprise or exclamation, which adds emotion but does not change the core meaning of the sentence.",
+      "reason": "'哇' is an interjection that adds emotion but does not change the core meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: '你' at position 1",
-      "reason": "The extra '你' (you) is a repetition and does not change the meaning of the sentence, just adds redundancy.",
+      "reason": "The extra '你' (you) is redundant but does not change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: '不' to '个' at position 14",
-      "reason": "'不' (not) is replaced by '个' (a/one), which changes the meaning from 'are you not a fool' to 'are you a fool', reversing the intent of the question.",
+      "reason": "Changing '不' (not) to '个' (a/one) alters the meaning from 'are you not a fool' to 'are you a fool', which is a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '是' at position 15",
-      "reason": "The omission of '是' (is/are) slightly affects the grammatical structure but the meaning is still understandable in context.",
+      "reason": "Omitting '是' (is/are) slightly affects the grammatical structure but the meaning is still understandable in context.",
       "score": 2
     }
   ]

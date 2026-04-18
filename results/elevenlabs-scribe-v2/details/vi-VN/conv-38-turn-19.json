@@ -1,16 +1,22 @@
 {
   "gold": "Được. Được. Cảm ơn.",
-  "predicted": "Được, được. Cảm ơn",
+  "predicted": "Được, được cả mừng",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "được được cảm ơn",
-  "werNormalizedPredicted": "được được cảm ơn",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "được được cả mừng",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "được được cảm ơn",
-  "sigWerNormalizedPredicted": "được được cảm ơn",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "được được cả mừng",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cảm' to 'cả' at position 2",
+      "reason": "'Cảm ơn' means 'thank you', while 'cả mừng' means 'very happy' or 'glad'. The substitution changes the meaning of the phrase significantly.",
+      "score": 1
+    }
+  ]
 }

@@ -7,15 +7,15 @@
   "werRefWords": 23,
   "werNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
   "werNormalizedPredicted": "thế làm thế nào để tôi có được cái bàn selfah kê hoặc là hóa đất mới ít của thế tín dụng vậy",
-  "significantWer": 0.13043478260869565,
-  "majorErrorsCount": 3,
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
   "sigWerNormalizedPredicted": "thế làm thế nào để tôi có được cái bàn selfah kê hoặc là hóa đất mới ít của thế tín dụng vậy",
   "sigWerErrors": [
     {
       "error": "Substitution: 'bản' to 'cái' at position 8",
-      "reason": "'bản' (copy/document) and 'cái' (thing/object) are different words; this changes the meaning of the request and makes it unclear what is being asked for.",
+      "reason": "'bản' (copy/document) and 'cái' (thing) are different words; this changes the meaning of the request and makes it unclear what is being asked for.",
       "score": 1
     },
     {
@@ -25,12 +25,12 @@
     },
     {
       "error": "Substitution: 'nhất' to 'ít' at position 17",
-      "reason": "'nhất' (most/newest) and 'ít' (few/little) have different meanings, but the overall intent of requesting a document is still somewhat understandable.",
-      "score": 2
+      "reason": "'nhất' (most/newest) and 'ít' (least/few) are opposite in meaning and change the intent of the request.",
+      "score": 1
     },
     {
       "error": "Substitution: 'thẻ' to 'thế' at position 19",
-      "reason": "'thẻ' (card) and 'thế' (so/that) are different; this changes the meaning and makes the sentence confusing.",
+      "reason": "'thẻ' (card) and 'thế' (how/so) are different words; this substitution makes the phrase about 'credit card' incorrect.",
       "score": 1
     }
   ]

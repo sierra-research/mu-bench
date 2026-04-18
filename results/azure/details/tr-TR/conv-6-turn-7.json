@@ -2,15 +2,26 @@
   "gold": "Yedek kartımın ana karttan farkı nedir peki?",
   "predicted": "Yedek kartım anakarttan farkı nedir peki?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
   "werNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
-  "werNormalizedPredicted": "yedek kartımın ana karttan farkı nedir peki",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "yedek kartım anakarttan farkı nedir peki",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
-  "sigWerNormalizedPredicted": "yedek kartımın ana karttan farkı nedir peki",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "yedek kartım anakarttan farkı nedir peki",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartımın' to 'kartım' at position 1",
+      "reason": "The possessive suffix '-ın' is missing in 'kartım', but the meaning is still clear in context; minor grammatical error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'karttan' at position 3",
+      "reason": "'karttan' (from the card) is omitted, but 'anakarttan' (from the main card) is present, so the meaning is still understandable; minor omission.",
+      "score": 2
+    }
+  ]
 }

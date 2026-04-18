@@ -1,16 +1,42 @@
 {
   "gold": "君灵 at email dot com 已经说了。",
-  "predicted": "Dreamling at email.com mi jinxuelo.",
+  "predicted": "dreamling@gmail.com. Sizincuala.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.7,
+  "werEdits": 7,
   "werRefWords": 10,
   "werNormalizedGold": "君灵 at email dot com 已经说了",
-  "werNormalizedPredicted": "君灵 at email dot com 已经说了",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreamling at gmail dot com sizincuala",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了",
-  "sigWerNormalizedPredicted": "君 灵 at email dot com 已 经 说 了",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreamling at gmail dot com sizincuala",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "'君' is a Chinese character and 'dreamling' is an English word; the substitution changes the language and meaning completely, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "'灵' is missing, which is part of a name or identifier; its absence significantly alters the intended meaning or identity.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 3",
+      "reason": "'email' and 'gmail' are different email domains; substituting one for the other changes the actual email address, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '已' to 'sizincuala' at position 6",
+      "reason": "'已' is a Chinese character and 'sizincuala' is an unrelated string in a different language, making the sentence incoherent and changing the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '经' at position 7",
+      "reason": "'经' is missing, which is part of the phrase '已经' (already); its absence changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

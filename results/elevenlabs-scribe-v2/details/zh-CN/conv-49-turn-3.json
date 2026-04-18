@@ -5,22 +5,22 @@
   "wer": 0.6666666666666666,
   "werEdits": 4,
   "werRefWords": 6,
-  "werNormalizedGold": "c n three four seven seven",
+  "werNormalizedGold": "c n 三 四 七 七",
   "werNormalizedPredicted": "c n c c",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n three four seven seven",
+  "sigWerNormalizedGold": "c n 三 四 七 七",
   "sigWerNormalizedPredicted": "c n c c",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'three' to 'c' at position 2",
-      "reason": "A digit was replaced by a letter in a sequence that appears to be a code or identifier, which significantly changes the meaning and makes the sequence incorrect.",
+      "error": "Substitution: '三' to 'c' at position 2",
+      "reason": "The Chinese character '三' (three) is replaced with 'c', which is a completely different character and meaning. This significantly alters the intended sequence, especially in a context where each character is important (such as a code or identifier).",
       "score": 1
     },
     {
-      "error": "Deletion: 'seven' at position 4",
-      "reason": "A digit was omitted from a sequence, making the code incomplete and incorrect.",
+      "error": "Deletion: '七' at position 4",
+      "reason": "The character '七' (seven) is missing from the actual transcription. Omitting a character in a sequence like this is a significant error, as it changes the information conveyed.",
       "score": 1
     }
   ]

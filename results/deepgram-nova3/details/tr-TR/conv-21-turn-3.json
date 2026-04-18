@@ -1,16 +1,27 @@
 {
   "gold": "S N 850.",
-  "predicted": "SN sekiz yüz elli.",
+  "predicted": "Sen sekiz yüz elli.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "s n eight hundred fifty",
-  "werNormalizedPredicted": "s n eight hundred fifty",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "s n sekiz yüz elli",
+  "werNormalizedPredicted": "sen sekiz yüz elli",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "s n eight hundred fifty",
-  "sigWerNormalizedPredicted": "s n eight hundred fifty",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "s n sekiz yüz elli",
+  "sigWerNormalizedPredicted": "sen sekiz yüz elli",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sen' at position 0",
+      "reason": "'s n' is likely a spelled-out sequence, but 'sen' is a word; this changes the meaning from a spelled-out form to a regular word, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting a letter in a spelled-out sequence changes the intended letters, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

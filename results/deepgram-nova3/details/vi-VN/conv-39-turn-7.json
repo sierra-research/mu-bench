@@ -7,7 +7,7 @@
   "werRefWords": 8,
   "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
   "werNormalizedPredicted": "đúng rồi anh ạ chuẩn cảm ơn năm bạn nhé",
-  "significantWer": 0.375,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'ạ' at position 2",
-      "reason": "'anh' is a different person reference than 'anna', which changes the addressee and meaning of the sentence.",
+      "reason": "'anh' is a different word from 'anna' and changes the addressee, which can significantly alter the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Insertion: 'năm' at position 6",
-      "reason": "'anna' is a name, while 'ạ' is a Vietnamese particle; this substitution removes the addressee and changes the meaning.",
+      "reason": "'anna' is a name, while 'ạ' is a particle; this substitution removes the addressee and changes the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'nhá' to 'nhé' at position 7",
-      "reason": "'năm' (meaning 'five' or 'year') is not present in the expected sentence and its insertion makes the sentence confusing and changes the meaning.",
+      "reason": "'năm' (meaning 'five' or 'year') is not present in the expected sentence and its insertion makes the sentence confusing and incoherent.",
       "score": 1
     }
   ]

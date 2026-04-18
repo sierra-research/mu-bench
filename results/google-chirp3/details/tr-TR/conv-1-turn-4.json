@@ -2,15 +2,31 @@
   "gold": "Artı 90 123 0 90 45 67.",
   "predicted": "+90 123 090 4567",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 12,
-  "werNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerErrors": []
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
+  "werRefWords": 11,
+  "werNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "artı doksan bir yüz yirmi üç sıfır doksan dört bin beş yüz altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "artı doksan bir yüz yirmi üç sıfır doksan dört bin beş yüz altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'bir' at position 2",
+      "reason": "'bir' (one) is inserted after 'doksan' (ninety), changing the number from 'doksan' (90) to 'doksan bir' (91), which alters the intended numeric value.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kırk' to 'bin' at position 7",
+      "reason": "'dört' (four) is inserted before 'bin', which changes the numeric sequence and meaning, resulting in a different number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'yüz' at position 9",
+      "reason": "'kırk' (forty) is replaced with 'bin' (thousand), which significantly changes the numeric value and meaning.",
+      "score": 1
+    }
+  ]
 }

@@ -2,20 +2,25 @@
   "gold": "Tabii. Zeynep nokta Arslan at, pardon çok özür dilerim tekrarlayacağım.",
   "predicted": "Tabii Zeynep arslan@ pardon çok özür dilerim tekrar edicem.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
-  "werRefWords": 9,
-  "werNormalizedGold": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "werNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrar edecegim",
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "werNormalizedPredicted": "tabii zeynep arslan at pardon çok özür dilerim tekrar edeceğim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon çok özür dilerim tekrar edeceğim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tekrarlayacagim' to 'edecegim' at position 8",
-      "reason": "'tekrarlayacagim' (I will repeat) and 'tekrar edecegim' (I will repeat) are semantically equivalent; the actual splits the verb into two words but the meaning is unchanged.",
+      "error": "Deletion: 'nokta' at position 2",
+      "reason": "'nokta' (meaning 'dot' or 'point') is omitted, which may be important if it refers to an email address or username. Its absence could change the meaning or make the information incomplete.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tekrarlayacağım' to 'edeceğim' at position 9",
+      "reason": "'tekrar' (meaning 'again' or 'repeat') is inserted, but it is part of the phrase 'tekrar edeceğim' (I will repeat), which is a valid alternative to 'tekrarlayacağım'. The overall meaning is preserved.",
       "score": 3
     }
   ]

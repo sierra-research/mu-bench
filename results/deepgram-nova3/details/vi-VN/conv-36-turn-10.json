@@ -2,30 +2,35 @@
   "gold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
   "predicted": "Thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đất mới của thể tín dụng vậy",
   "unintelligible": false,
-  "wer": 0.13043478260869565,
-  "werEdits": 3,
+  "wer": 0.17391304347826086,
+  "werEdits": 4,
   "werRefWords": 23,
   "werNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
-  "werNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đất mới của thẻ tín dụng vậy",
-  "significantWer": 0.043478260869565216,
+  "werNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đất mới của thể tín dụng vậy",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
-  "sigWerNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đất mới của thẻ tín dụng vậy",
+  "sigWerNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sao sao kê hoặc là hóa đất mới của thể tín dụng vậy",
   "sigWerErrors": [
     {
       "error": "Insertion: 'cái' at position 8",
-      "reason": "'cái' is an extra classifier word that does not change the meaning of the sentence in this context.",
-      "score": 2
+      "reason": "'cái' is a classifier in Vietnamese and its insertion does not change the meaning of the sentence.",
+      "score": 3
     },
     {
       "error": "Substitution: 'đơn' to 'đất' at position 15",
-      "reason": "Substituting 'đơn' (bill) with 'đất' (land) changes the meaning significantly, making the sentence incoherent.",
+      "reason": "'hóa đơn' means 'invoice' or 'bill', while 'hóa đất' is nonsensical in this context and changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'nhất' at position 17",
-      "reason": "Omitting 'nhất' (most/recent) slightly reduces specificity but does not derail the overall meaning.",
+      "reason": "Omitting 'nhất' ('most' or 'latest') removes the specificity about wanting the latest document, but the main request is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'thể' at position 19",
+      "reason": "'thẻ' means 'card' (as in credit card), while 'thể' is a different word and changes the meaning, but the context still makes it somewhat understandable.",
       "score": 2
     }
   ]

@@ -1,16 +1,22 @@
 {
   "gold": "M H 7 2 7 5.",
-  "predicted": "Me hê yedi iki yedi beş.",
+  "predicted": "M he ye di iki yedi beş.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "m h seven two seven five",
-  "werNormalizedPredicted": "m h seven two seven five",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "m h yedi iki yedi beş",
+  "werNormalizedPredicted": "m h ye di iki yedi beş",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "m h seven two seven five",
-  "sigWerNormalizedPredicted": "m h seven two seven five",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "m h yedi iki yedi beş",
+  "sigWerNormalizedPredicted": "m h ye di iki yedi beş",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yedi' to 'di' at position 2",
+      "reason": "'ye' is inserted before 'di', splitting the word 'yedi' into two parts. This disrupts the correct sequence of the spelled-out number and makes the transcription confusing or incorrect for someone trying to interpret the intended number.",
+      "score": 1
+    }
+  ]
 }

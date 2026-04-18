@@ -1,21 +1,26 @@
 {
   "gold": "Woah. Woah, woah. Let's slow that down. Let's do that one more time. I can't keep, slow it down a bit.",
-  "predicted": "Woah. Woah. Woah. Let's slow that down. Let's do that one more time. We can keep slow it down a bit.",
+  "predicted": "Woah. Woah. Woah. Woah. Let's slow that down. Let's do that one more time. We can keep slow it down a bit.",
   "unintelligible": false,
-  "wer": 0.08695652173913043,
-  "werEdits": 2,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
   "werRefWords": 23,
   "werNormalizedGold": "woah woah woah let us slow that down let us do that one more time i cannot keep slow it down a bit",
-  "werNormalizedPredicted": "woah woah woah let us slow that down let us do that one more time we can keep slow it down a bit",
-  "significantWer": 0.043478260869565216,
+  "werNormalizedPredicted": "woah woah woah woah let us slow that down let us do that one more time we can keep slow it down a bit",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "woah woah woah let us slow that down let us do that one more time i cannot keep slow it down a bit",
-  "sigWerNormalizedPredicted": "woah woah woah let us slow that down let us do that one more time we can keep slow it down a bit",
+  "sigWerNormalizedPredicted": "woah woah woah woah let us slow that down let us do that one more time we can keep slow it down a bit",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'woah' at position 3",
+      "reason": "Repeating 'woah' one extra time does not change the meaning or coherence of the sentence; it is a minor repetition.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'i' to 'we' at position 15",
-      "reason": "Changing 'i' to 'we' alters the subject of the sentence from singular to plural, which significantly changes the meaning of who is performing the action.",
+      "reason": "Changing 'I cannot keep' to 'we can keep' reverses the meaning of the sentence, making it incoherent and significantly altering the intent.",
       "score": 1
     }
   ]

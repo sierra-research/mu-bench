@@ -1,26 +1,26 @@
 {
   "gold": "君玲，君玲。",
-  "predicted": "Джин Лием",
+  "predicted": "Джин Лим",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "君玲 君玲",
-  "werNormalizedPredicted": "джин лием",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "джин лим",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "君 玲 君 玲",
-  "sigWerNormalizedPredicted": "джин лием",
+  "sigWerNormalizedPredicted": "джин лим",
   "sigWerErrors": [
     {
       "error": "Substitution: '君' to 'джин' at position 0",
-      "reason": "The actual transcription is in a different language/script (Cyrillic vs Chinese), which makes the meaning completely different and unrecognizable.",
+      "reason": "The expected word is in Chinese, while the actual is in Cyrillic script (Russian), representing a completely different language and meaning. This is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: '君' at position 2",
-      "reason": "A repeated character in the expected transcription is missing in the actual, further reducing accuracy and making the transcription incomplete.",
+      "reason": "An expected word is missing in the actual transcription, which further derails the intended meaning.",
       "score": 1
     }
   ]

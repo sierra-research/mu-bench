@@ -1,26 +1,26 @@
 {
   "gold": "Thấy rồi. Thấy rồi.",
-  "predicted": "Hello, hello.",
+  "predicted": "Thế rồi thế rồi",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 4,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "thấy rồi thấy rồi",
-  "werNormalizedPredicted": "hello hello",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "thế rồi thế rồi",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "thấy rồi thấy rồi",
-  "sigWerNormalizedPredicted": "hello hello",
+  "sigWerNormalizedPredicted": "thế rồi thế rồi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'thấy' to 'hello' at position 0",
-      "reason": "'hello' is a completely different word from 'thấy', and the substitution changes the meaning entirely. The actual transcription is in a different language, which derails the meaning of the sentence.",
+      "error": "Substitution: 'thấy' to 'thế' at position 0",
+      "reason": "'thấy' (to see) and 'thế' (so/then) are different words in Vietnamese and change the meaning of the phrase, making the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'thấy' at position 2",
-      "reason": "'hello' is a completely different word from 'rồi', and the substitution changes the meaning entirely. The actual transcription is in a different language, which derails the meaning of the sentence.",
+      "error": "Substitution: 'thấy' to 'thế' at position 2",
+      "reason": "Repeating the same substitution, the meaning is again changed and the sentence does not make sense as intended.",
       "score": 1
     }
   ]

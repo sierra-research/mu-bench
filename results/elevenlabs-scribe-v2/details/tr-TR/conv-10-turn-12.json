@@ -2,30 +2,25 @@
   "gold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
   "predicted": "Hayır, e-mail ve telefon numarası yanlış. E-mailde adımın son harfi T olacak, T değil T. Zeynep T.",
   "unintelligible": false,
-  "wer": 0.17647058823529413,
-  "werEdits": 3,
+  "wer": 0.23529411764705882,
+  "werEdits": 4,
   "werRefWords": 17,
-  "werNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zeynep p",
+  "werNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
   "werNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi t olacak t değil t zeynep t",
-  "significantWer": 0.17647058823529413,
-  "majorErrorsCount": 3,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zeynep p",
+  "sigWerNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
   "sigWerNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi t olacak t değil t zeynep t",
   "sigWerErrors": [
     {
       "error": "Substitution: 'p' to 't' at position 10",
-      "reason": "The expected letter for the last character of the name in the email is 'p', but the actual transcript says 't'. This changes the actual email address or name spelling, which is a significant error.",
+      "reason": "The expected letter for the last character of the name in the email is 'p', but the actual transcript says 't'. This is a significant error because it changes the email address and could cause communication failure.",
       "score": 1
     },
     {
       "error": "Substitution: 'p' to 't' at position 14",
-      "reason": "The expected letter to clarify the correct spelling is 'p', but the actual transcript says 't'. This misidentifies the correct letter, which is a significant error for names or email addresses.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'p' to 't' at position 16",
-      "reason": "The expected letter for the name 'zeynep' is 'p', but the actual transcript says 't'. This changes the spelling of the name, which is a significant error.",
+      "reason": "The name 'zaynep' is spelled with a 'p' at the end, but the actual transcript says 'zeynep t'. This is a significant error as it changes the spelling of the name, which is critical for identification and email correctness.",
       "score": 1
     }
   ]

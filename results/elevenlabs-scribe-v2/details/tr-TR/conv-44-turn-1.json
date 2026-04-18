@@ -2,15 +2,21 @@
   "gold": "Galiba kredi kartım hacklendi.",
   "predicted": "Galiba kredi kartım hacklen-- hack--",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "galiba kredi kartım hacklendi",
-  "werNormalizedPredicted": "galiba kredi kartım hacklendi",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "galiba kredi kartım hacklen hack",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "galiba kredi kartım hacklendi",
-  "sigWerNormalizedPredicted": "galiba kredi kartım hacklendi",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "galiba kredi kartım hacklen hack",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hacklendi' to 'hack' at position 3",
+      "reason": "The word 'hacklen' is inserted before the correct word. It is a fragment of the correct word 'hacklendi', which may cause confusion but does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

@@ -1,16 +1,22 @@
 {
   "gold": "君，你说得不对，你听得不对，听得不对，你再等一下。",
-  "predicted": "君,你说的不对,你听的不对,听的不对,你再等一下。",
+  "predicted": "Dream,你说的不对,你听的不对,听的不对,你再等一下。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.05,
+  "werEdits": 1,
   "werRefWords": 20,
   "werNormalizedGold": "君 你说得不对 你听得不对 听得不对 你再等一下",
-  "werNormalizedPredicted": "君 你说得不对 你听得不对 听得不对 你再等一下",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dream 你说得不对 你听得不对 听得不对 你再等一下",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "君 你 说 得 不 对 你 听 得 不 对 听 得 不 对 你 再 等 一 下",
-  "sigWerNormalizedPredicted": "君 你 说 得 不 对 你 听 得 不 对 听 得 不 对 你 再 等 一 下",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dream 你 说 得 不 对 你 听 得 不 对 听 得 不 对 你 再 等 一 下",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dream' at position 0",
+      "reason": "The word '君' (a Chinese pronoun meaning 'you' or 'sir') is replaced with 'dream', which is an English word with a completely different meaning and in a different language. This significantly changes the meaning and coherence of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 86 0, Ciudad de México, México.",
   "predicted": "Orión 30, colonia Tlatilco, Azcapotzalco 02860, Ciudad de México, México",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 14,
-  "werNormalizedGold": "orion treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de mexico mexico",
-  "werNormalizedPredicted": "orion treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de mexico mexico",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "orion treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de mexico mexico",
-  "sigWerNormalizedPredicted": "orion treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de mexico mexico",
-  "sigWerErrors": []
+  "wer": 0.13333333333333333,
+  "werEdits": 2,
+  "werRefWords": 15,
+  "werNormalizedGold": "urión treinta colonia tlatilco azcapotzalco cero dos ochenta y seis cero ciudad de méxico méxico",
+  "werNormalizedPredicted": "urión treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de méxico méxico",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "urión treinta colonia tlatilco azcapotzalco cero dos ochenta y seis cero ciudad de méxico méxico",
+  "sigWerNormalizedPredicted": "urión treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de méxico méxico",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ochenta' to 'ocho' at position 7",
+      "reason": "'Ochenta' means eighty, while 'ocho' means eight. This changes the number in the address, which is a significant factual error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 8",
+      "reason": "The conjunction 'y' (and) is omitted, which could cause confusion in the sequence of numbers, especially in addresses. This is a significant error in this context.",
+      "score": 1
+    }
+  ]
 }

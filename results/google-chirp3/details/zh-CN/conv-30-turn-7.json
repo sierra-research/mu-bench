@@ -2,15 +2,26 @@
   "gold": "不是邻居，是林俊，俊，俊。",
   "predicted": "不是灵芝,是灵俊,俊,俊。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "不是林俊俊俊",
-  "werNormalizedPredicted": "不是林俊俊俊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "不 是 林 俊 俊 俊",
-  "sigWerNormalizedPredicted": "不 是 林 俊 俊 俊",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
+  "werRefWords": 9,
+  "werNormalizedGold": "不是邻居 是林俊 俊 俊",
+  "werNormalizedPredicted": "不是灵俊 是灵俊 俊 俊",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 俊",
+  "sigWerNormalizedPredicted": "不 是 灵 俊 是 灵 俊 俊 俊",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邻' to '灵' at position 2",
+      "reason": "'邻' (neighbor) and '灵' (spirit) are completely different words and meanings. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '灵' at position 5",
+      "reason": "'林' (forest, or a surname) and '灵' (spirit) are different words. If '林' is a name, substituting it with '灵' changes the identity, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

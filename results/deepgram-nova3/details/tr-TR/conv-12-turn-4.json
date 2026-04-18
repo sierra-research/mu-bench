@@ -2,31 +2,31 @@
   "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
   "predicted": "Yalnız e-posta adresim yanlış oldu, sonuç Gmail değil email yani e-edrinin n'siyle email nokta com",
   "unintelligible": false,
-  "wer": 0.15789473684210525,
-  "werEdits": 3,
+  "wer": 0.21052631578947367,
+  "werEdits": 4,
   "werRefWords": 19,
   "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
-  "werNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonuç gmail değil email yani e edirnenin e siyle email nokta com",
-  "significantWer": 0.05263157894736842,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonuç gmail değil email yani e edirnenin n siyle email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
-  "sigWerNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonuç gmail değil email yani e edirnenin e siyle email nokta com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonuç gmail değil email yani e edirnenin n siyle email nokta com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'sonu' to 'sonuç' at position 6",
-      "reason": "'sonu' means 'the end (of)', while 'sonuç' means 'result'; this changes the meaning of the sentence significantly, as it refers to a different concept.",
+      "reason": "'sonu' means 'the end' or 'ending', while 'sonuç' means 'result'. This changes the meaning of the sentence and makes it incoherent in context, as it refers to the ending of the email address, not a result.",
       "score": 1
     },
     {
-      "error": "Substitution: 'si' to 'siyle' at position 14",
-      "reason": "'siyle' means 'with its', while 'si' is just 'its'; in this context, the difference is minor and does not change the overall meaning.",
-      "score": 2
+      "error": "Substitution: 'e' to 'n' at position 13",
+      "reason": "The expected letter is 'e' (as in 'edirne'), but the actual is 'n'. This is a significant error in the context of spelling out an email address, as it changes the actual address.",
+      "score": 1
     },
     {
       "error": "Deletion: 'ile' at position 15",
-      "reason": "'ile' means 'with', but since 'siyle' already includes the meaning of 'with its', the omission does not change the meaning.",
-      "score": 3
+      "reason": "'ile' means 'with' in Turkish and is used to clarify how the letter is being used. Its omission is a minor error, as the meaning is still mostly clear from context.",
+      "score": 2
     }
   ]
 }

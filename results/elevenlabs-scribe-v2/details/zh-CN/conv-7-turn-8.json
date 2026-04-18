@@ -2,20 +2,25 @@
   "gold": "C N 3 7 8 对吗？",
   "predicted": "CNN七吧，对吗？",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 1,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "c n three seven eight 对吗",
-  "werNormalizedPredicted": "c n n seven eight 对吗",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n 三 七 八 对吗",
+  "werNormalizedPredicted": "c n 七 吧 对吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "c n three seven eight 对 吗",
-  "sigWerNormalizedPredicted": "c n n seven eight 对 吗",
+  "sigWerNormalizedGold": "c n 三 七 八 对 吗",
+  "sigWerNormalizedPredicted": "c n 七 吧 对 吗",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'three' to 'n' at position 2",
-      "reason": "A digit in a sequence (likely a code or number) was replaced by a letter, which significantly changes the meaning and makes the sequence incorrect.",
+      "error": "Deletion: '三' at position 2",
+      "reason": "The number '三' (three) is missing, which changes the sequence of numbers and could lead to misunderstanding, especially if these are meant to be a code or list. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '八' to '吧' at position 4",
+      "reason": "'八' (eight) is a number, while '吧' is a modal particle in Chinese. This substitution changes the meaning from a number to a particle, which is a significant error in the context of a sequence of numbers.",
       "score": 1
     }
   ]

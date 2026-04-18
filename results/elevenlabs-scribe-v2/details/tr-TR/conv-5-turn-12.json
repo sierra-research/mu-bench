@@ -1,21 +1,26 @@
 {
   "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
-  "predicted": "Ya Apple sitesine erişimim şu sıralar yok da yani, eee, farklı bir metot var mı acaba bana fatura göndermeniz için?",
+  "predicted": "Ya Apple sitesime erişimim şu sıralar yok da yani, eee, farklı bir metot var mı acaba bana fatura göndermeniz için?",
   "unintelligible": false,
-  "wer": 0.15789473684210525,
+  "wer": 0.16666666666666666,
   "werEdits": 3,
-  "werRefWords": 19,
-  "werNormalizedGold": "e posta adresime erisimim su siralar yok da yani farkli bir metot var mi acaba bana fatura gondermeniz icin",
-  "werNormalizedPredicted": "ya apple sitesine erisimim su siralar yok da yani farkli bir metot var mi acaba bana fatura gondermeniz icin",
-  "significantWer": 0.05263157894736842,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "e posta adresime erisimim su siralar yok da yani farkli bir metot var mi acaba bana fatura gondermeniz icin",
-  "sigWerNormalizedPredicted": "ya apple sitesine erisimim su siralar yok da yani farkli bir metot var mi acaba bana fatura gondermeniz icin",
+  "werRefWords": 18,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "apple sitesime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "apple sitesime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'e' to 'ya' at position 0",
-      "reason": "The substitution changes the subject from 'my email address' to 'the Apple site', which significantly alters the meaning of the sentence and the context of the request.",
+      "error": "Substitution: 'e' to 'apple' at position 0",
+      "reason": "'e posta' means 'email' in Turkish, but 'apple site' is unrelated and changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'adresime' at position 2",
+      "reason": "Omitting 'adresime' ('to my address') removes important information about where the email should be sent, significantly altering the meaning.",
       "score": 1
     }
   ]

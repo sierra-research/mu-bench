@@ -2,15 +2,26 @@
   "gold": "Tabii. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Tabi Ahmet arslan@email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "tabii ahmet arslan at email dot com",
-  "werNormalizedPredicted": "tabii ahmet arslan at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "tabii ahmet arslan at email dot com",
-  "sigWerNormalizedPredicted": "tabii ahmet arslan at email dot com",
-  "sigWerErrors": []
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "tabi ahmet arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabi ahmet arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "Minor spelling difference, pronunciation and meaning are the same in context, does not affect understanding.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 2",
+      "reason": "'nokta' (meaning 'dot') is missing, which is important for the structure of an email address. This omission could cause confusion or incorrect email formatting.",
+      "score": 1
+    }
+  ]
 }

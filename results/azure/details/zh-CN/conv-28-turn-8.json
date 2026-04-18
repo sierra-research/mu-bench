@@ -2,26 +2,21 @@
   "gold": "哎呀，是美玲 at email dot com。",
   "predicted": "Ayah, Shremeling at email.com.",
   "unintelligible": false,
-  "wer": 0.5555555555555556,
-  "werEdits": 5,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "哎呀 是美玲 at email dot com",
-  "werNormalizedPredicted": "ayah shremeling at email dot com",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "是美玲 at email dot com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "哎 呀 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "ayah shremeling at email dot com",
+  "sigWerNormalizedPredicted": "是 美 玲 at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '哎' to 'ayah' at position 0",
-      "reason": "The expected is a Chinese character, but the actual is a romanized approximation. The meaning may be preserved phonetically, but the language is changed and the transcription is not accurate.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '是' at position 2",
-      "reason": "The expected is a Chinese character meaning 'is', but the actual is a romanized string that does not correspond to the original. This is a significant error as it changes the meaning.",
-      "score": 1
+      "error": "Deletion: '哎' at position 0",
+      "reason": "'哎' is an interjection, and its omission does not change the main meaning of the sentence. The rest of the information is preserved.",
+      "score": 2
     }
   ]
 }

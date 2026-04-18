@@ -1,16 +1,22 @@
 {
   "gold": "不对呀。",
-  "predicted": "不对呀",
+  "predicted": "不對啊",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 1,
   "werRefWords": 3,
   "werNormalizedGold": "不对呀",
-  "werNormalizedPredicted": "不对呀",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "不对",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "不 对 呀",
-  "sigWerNormalizedPredicted": "不 对 呀",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 对",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '呀' at position 2",
+      "reason": "'呀' is a modal particle in Chinese that adds a softening or exclamatory tone, but its omission does not change the core meaning of the sentence '不对' (not correct).",
+      "score": 2
+    }
+  ]
 }

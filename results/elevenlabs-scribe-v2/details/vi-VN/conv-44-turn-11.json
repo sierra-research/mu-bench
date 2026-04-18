@@ -1,16 +1,27 @@
 {
   "gold": "Cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Cộng, cộng tám mươi tư. Chín một, một hai ba bốn, năm sáu bảy tám",
+  "predicted": "Cộng, cộng tám mươi tư. Chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
-  "werNormalizedGold": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng cộng tám mươi tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'cộng' at position 1",
+      "reason": "The extra 'cộng' does not change the meaning of the sentence, as it is just a repeated word at the beginning and does not affect the sequence of numbers.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 3",
+      "reason": "'bốn' and 'tư' are both used to represent the number 4 in Vietnamese, so this is a variant with the same meaning.",
+      "score": 3
+    }
+  ]
 }

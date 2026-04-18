@@ -5,22 +5,22 @@
   "wer": 0.2,
   "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "g h zero four one two three four five six",
-  "werNormalizedPredicted": "g h zira one two three four five six",
-  "significantWer": 0.2,
+  "werNormalizedGold": "g h sıfır dört bir iki üç dört beş altı",
+  "werNormalizedPredicted": "g h zira bir iki üç dört beş altı",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "g h zero four one two three four five six",
-  "sigWerNormalizedPredicted": "g h zira one two three four five six",
+  "sigWerNormalizedGold": "g h sıfır dört bir iki üç dört beş altı",
+  "sigWerNormalizedPredicted": "g h zira bir iki üç dört beş altı",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'zero' to 'zira' at position 2",
-      "reason": "'zira' is not a valid substitution for 'zero' in a spelled-out sequence, and it changes the intended digit, making the sequence incorrect.",
+      "error": "Substitution: 'sıfır' to 'zira' at position 2",
+      "reason": "'sıfır' means 'zero' (a number), while 'zira' is a completely different word in Turkish (meaning 'because' or 'since'), which changes the meaning and disrupts the sequence of numbers.",
       "score": 1
     },
     {
-      "error": "Deletion: 'four' at position 3",
-      "reason": "Missing a digit in a sequence of numbers significantly alters the intended information, especially in contexts like codes or phone numbers.",
+      "error": "Deletion: 'dört' at position 3",
+      "reason": "The number 'dört' (four) is missing from the sequence, which is significant in a string of numbers or codes, as it alters the intended information.",
       "score": 1
     }
   ]

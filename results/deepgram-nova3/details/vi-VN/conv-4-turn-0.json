@@ -2,15 +2,21 @@
   "gold": "Chào Anna, tôi là.",
   "predicted": "Chào anh á, tô lệnh.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "chào anna tôi là",
-  "werNormalizedPredicted": "chào anna tôi là",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "chào anh á tô lệnh",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "chào anna tôi là",
-  "sigWerNormalizedPredicted": "chào anna tôi là",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "chào anh á tô lệnh",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'á' at position 1",
+      "reason": "'anna' is a name and 'anh' is a different word in Vietnamese (meaning 'older brother' or 'you'), which changes the addressee and meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
 }

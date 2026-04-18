@@ -5,17 +5,17 @@
   "wer": 0.16666666666666666,
   "werEdits": 1,
   "werRefWords": 6,
-  "werNormalizedGold": "c n three four seven seven",
-  "werNormalizedPredicted": "c n three seven seven",
-  "significantWer": 0.16666666666666666,
+  "werNormalizedGold": "c n 三 四 七 七",
+  "werNormalizedPredicted": "c n 三 七 七",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n three four seven seven",
-  "sigWerNormalizedPredicted": "c n three seven seven",
+  "sigWerNormalizedGold": "c n 三 四 七 七",
+  "sigWerNormalizedPredicted": "c n 三 七 七",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'four' at position 3",
-      "reason": "Omitting 'four' from a sequence of numbers/letters changes the value or code being communicated, which is a significant error.",
+      "error": "Deletion: '四' at position 3",
+      "reason": "Omitting '四' (which means 'four') from a sequence of numbers changes the intended sequence, which is critical information. This is a significant error as it alters the meaning of the sequence.",
       "score": 1
     }
   ]

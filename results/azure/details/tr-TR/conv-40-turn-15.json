@@ -2,30 +2,35 @@
   "gold": "Yazıyor musun? Artı 90 123.",
   "predicted": "Yazıyo musun? Artık 90 120.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werEdits": 3,
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
   "werRefWords": 7,
-  "werNormalizedGold": "yaziyor musun arti doksan bir iki üç",
-  "werNormalizedPredicted": "yaziyo musun artik doksan bir iki sıfır",
-  "significantWer": 0.2857142857142857,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "werNormalizedPredicted": "yazıyo musun artık doksan yüz yirmi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "yaziyor musun arti doksan bir iki üç",
-  "sigWerNormalizedPredicted": "yaziyo musun artik doksan bir iki sıfır",
+  "sigWerNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "sigWerNormalizedPredicted": "yazıyo musun artık doksan yüz yirmi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'yaziyor' to 'yaziyo' at position 0",
-      "reason": "'yaziyo' is a colloquial or informal pronunciation of 'yaziyor', meaning is preserved.",
+      "error": "Substitution: 'yazıyor' to 'yazıyo' at position 0",
+      "reason": "'yazıyo' is a colloquial or informal pronunciation of 'yazıyor', meaning is preserved.",
       "score": 3
     },
     {
-      "error": "Substitution: 'arti' to 'artik' at position 2",
-      "reason": "'arti' means 'plus' or 'and', while 'artik' means 'now' or 'anymore'; this changes the meaning of the sentence.",
+      "error": "Substitution: 'artı' to 'artık' at position 2",
+      "reason": "'artı' means 'plus' (used for phone numbers), while 'artık' means 'anymore' or 'now', which changes the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'üç' to 'sıfır' at position 6",
-      "reason": "'üç' means 'three', 'sıfır' means 'zero'; this is a significant change, especially if these are part of a number sequence.",
+      "error": "Substitution: 'bir' to 'yüz' at position 4",
+      "reason": "'bir' means 'one', 'yüz' means 'hundred'; this changes the number completely and alters the intended information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'üç' at position 6",
+      "reason": "Missing 'üç' ('three') in a sequence of numbers changes the information, especially if it's a phone number.",
       "score": 1
     }
   ]

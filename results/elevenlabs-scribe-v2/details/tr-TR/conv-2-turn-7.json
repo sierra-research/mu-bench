@@ -2,15 +2,26 @@
   "gold": "3 tane 0 yerine ortasında 9 olacak. Sondaki rakam 7 olacak. Onun dışında her şey doğru.",
   "predicted": "Üç tane sıfır yerine a-ortasında do-dokuz olacak. Sondaki rakam yedi olacak. Onun dışında her şey doğru",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
   "werNormalizedGold": "üç tane sıfır yerine ortasında dokuz olacak sondaki rakam yedi olacak onun dışında her şey doğru",
-  "werNormalizedPredicted": "üç tane sıfır yerine ortasında dokuz olacak sondaki rakam yedi olacak onun dışında her şey doğru",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "üç tane sıfır yerine a ortasında do dokuz olacak sondaki rakam yedi olacak onun dışında her şey doğru",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "üç tane sıfır yerine ortasında dokuz olacak sondaki rakam yedi olacak onun dışında her şey doğru",
-  "sigWerNormalizedPredicted": "üç tane sıfır yerine ortasında dokuz olacak sondaki rakam yedi olacak onun dışında her şey doğru",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "üç tane sıfır yerine a ortasında do dokuz olacak sondaki rakam yedi olacak onun dışında her şey doğru",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'a' at position 4",
+      "reason": "The insertion of 'a' does not make sense in the context and disrupts the meaning of the sentence, making it confusing.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'do' at position 5",
+      "reason": "The insertion of 'do' before 'dokuz' is not meaningful in Turkish and makes the sentence incoherent at that point.",
+      "score": 1
+    }
+  ]
 }

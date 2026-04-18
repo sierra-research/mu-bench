@@ -2,15 +2,31 @@
   "gold": "美玲 at email dot com。",
   "predicted": "meelingemaildotgre。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "meeling email dot gre",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "meeling email dot gre",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meeling' at position 0",
+      "reason": "The Chinese character '美' is replaced with 'meeling', which is a phonetic approximation but not a correct transcription or translation. This significantly alters the intended meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The character '玲' is missing entirely, which omits part of the name and is a significant error for names or email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'gre' at position 5",
+      "reason": "The domain ending 'com' is replaced with 'gre', which changes the email address and makes it invalid, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
 }

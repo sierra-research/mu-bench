@@ -2,15 +2,26 @@
   "gold": "No. Dame un momento. Necesito conseguir papel y una pluma, por favor.",
   "predicted": "No, dame un momento. Necesito conseguir, eh, papel y, y una pluma, por favor",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
   "werRefWords": 12,
-  "werNormalizedGold": "no dame un momento necesito conseguir papel y una pluma por favor",
-  "werNormalizedPredicted": "no dame un momento necesito conseguir papel y una pluma por favor",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "número dame un momento necesito conseguir papel y una pluma por favor",
+  "werNormalizedPredicted": "no dame un momento necesito conseguir papel y y una pluma por favor",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "no dame un momento necesito conseguir papel y una pluma por favor",
-  "sigWerNormalizedPredicted": "no dame un momento necesito conseguir papel y una pluma por favor",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "número dame un momento necesito conseguir papel y una pluma por favor",
+  "sigWerNormalizedPredicted": "no dame un momento necesito conseguir papel y y una pluma por favor",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) is replaced by 'no' (no), which completely changes the meaning of the sentence and derails the intent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'y' at position 7",
+      "reason": "The extra 'y' (and) is a minor repetition that does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

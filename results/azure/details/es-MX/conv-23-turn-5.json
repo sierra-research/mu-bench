@@ -2,15 +2,21 @@
   "gold": "Es Juan punto López arroba email punto com.",
   "predicted": "Es juan.lopez@mail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "es juan punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es juan punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es juan punto lópez arroba mail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "es juan punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es juan punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es juan punto lópez arroba mail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'mail' at position 5",
+      "reason": "'mail' omits the 'e' from 'email', but in the context of an email address, 'mail.com' is a different domain than 'email.com', which could lead to a message being sent to the wrong address. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

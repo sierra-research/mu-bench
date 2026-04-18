@@ -2,15 +2,26 @@
   "gold": "你还不知道我的邮箱地址。",
   "predicted": "你还不知道我的幽想地质",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
-  "werNormalizedGold": "你 还 不 知道 我 的 邮箱 地址",
-  "werNormalizedPredicted": "你 还 不 知道 我 的 邮箱 地址",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你还不知道我的邮箱地址",
+  "werNormalizedPredicted": "你还不知道我的幽想地质",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 还 不 知 道 我 的 邮 箱 地 址",
-  "sigWerNormalizedPredicted": "你 还 不 知 道 我 的 邮 箱 地 址",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 还 不 知 道 我 的 幽 想 地 质",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '幽' at position 7",
+      "reason": "'邮' (mail) and '幽' (hidden) are completely different in meaning, changing the meaning of the phrase from 'email address' to something incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '址' to '质' at position 10",
+      "reason": "'址' (address) and '质' (quality) are unrelated, which makes the phrase '邮箱地址' (email address) become incoherent.",
+      "score": 1
+    }
+  ]
 }

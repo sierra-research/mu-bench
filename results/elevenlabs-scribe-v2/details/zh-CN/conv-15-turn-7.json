@@ -2,15 +2,26 @@
   "gold": "是美玲 at email dot com。",
   "predicted": "是meilingatemail.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "是 meiling at email dot com",
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "是美玲 at email dot com",
   "werNormalizedPredicted": "是 meiling at email dot com",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "是 meiling at email dot com",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
   "sigWerNormalizedPredicted": "是 meiling at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 1",
+      "reason": "The Chinese character '美' is replaced by the pinyin 'meiling', which combines both '美' and '玲' into one word. This changes the representation from characters to a romanized form, but the intended name is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "The character '玲' is omitted in the actual transcription, but its sound is included in 'meiling'. The meaning is preserved, though the format is different.",
+      "score": 2
+    }
+  ]
 }

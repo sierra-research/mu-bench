@@ -7,7 +7,7 @@
   "werRefWords": 18,
   "werNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
   "werNormalizedPredicted": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitimin artırılmasını talep ediyorum bu konuda bana yardımcı olabilir misiniz",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'limitinin' to 'limitimin' at position 9",
-      "reason": "The word 'limitinin' (of the limit) was changed to 'limitimin' (of my limit). This changes the possessive from general to personal, but in the context of a credit card limit increase request, both refer to the speaker's own limit. The meaning of the sentence is not significantly changed.",
+      "reason": "The difference is in the possessive suffix: 'limitinin' (of the limit) vs 'limitimin' (my limit). This changes the reference from the card's limit to the speaker's own limit, but in context, both refer to the speaker's credit card limit. The meaning is not significantly changed.",
       "score": 2
     },
     {
       "error": "Insertion: 'bana' at position 15",
-      "reason": "The word 'bana' (to me) is inserted, making the request more explicit but not changing the overall meaning. The sentence still asks for help regarding the credit card limit increase.",
+      "reason": "'bana' means 'to me', which is implicit in the request for help. Its addition does not change the overall meaning of the sentence.",
       "score": 2
     }
   ]

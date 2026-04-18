@@ -1,31 +1,31 @@
 {
   "gold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
-  "predicted": "Ờm, tôi muốn hỏi nữa là tôi được cấp một lần thay thẻ không? Để làm school",
+  "predicted": "Ờm, tôi muốn hỏi nữa là tôi được cấp một lần thay thẻ không để làm school",
   "unintelligible": false,
   "wer": 0.35714285714285715,
   "werEdits": 5,
   "werRefWords": 14,
-  "werNormalizedGold": "toi muon hoi toi duoc cap mot lan hai the khong de so cua",
-  "werNormalizedPredicted": "toi muon hoi nua la toi duoc cap mot lan thay the khong de lam school",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
+  "werNormalizedPredicted": "tôi muốn hỏi nữa là tôi được cấp một lần thay thẻ không để làm school",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "toi muon hoi toi duoc cap mot lan hai the khong de so cua",
-  "sigWerNormalizedPredicted": "toi muon hoi nua la toi duoc cap mot lan thay the khong de lam school",
+  "sigWerNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi nữa là tôi được cấp một lần thay thẻ không để làm school",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'nua' at position 3",
-      "reason": "'nua' (meaning 'more' or 'again') adds an extra query nuance, but does not significantly change the intent of the question.",
+      "error": "Insertion: 'nữa' at position 3",
+      "reason": "The insertion of 'nữa' (meaning 'more' or 'again') adds a nuance but does not significantly change the overall meaning of the sentence, which is about asking a question regarding card issuance.",
       "score": 2
     },
     {
       "error": "Substitution: 'hai' to 'thay' at position 8",
-      "reason": "'hai' means 'two' and 'thay' means 'replace'; this changes the meaning from asking about 'two cards' to 'replacement card', which is a significant change in meaning.",
+      "reason": "Substituting 'hai' (two) with 'thay' (replace) changes the meaning from asking about being issued two cards to asking about replacing a card, which is a significant change in intent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'so' to 'lam' at position 12",
-      "reason": "'so' means 'number' and 'lam' means 'do' or 'make'; this changes the meaning of the sentence, making it incoherent in context.",
+      "error": "Substitution: 'sơ' to 'làm' at position 12",
+      "reason": "Substituting 'sơ' (in 'sơ cua', meaning 'spare') with 'làm' (to do/make) alters the meaning from keeping a spare card to doing something else, which derails the intended meaning.",
       "score": 1
     }
   ]

@@ -1,27 +1,27 @@
 {
   "gold": "Déjeme, encuentro dónde anotarlo.",
-  "predicted": "Eh, deje, me encuentro donde no está, ¿lo?",
+  "predicted": "Eh, deje me encuentro donde notarlo",
   "unintelligible": false,
-  "wer": 1.25,
-  "werEdits": 5,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
-  "werNormalizedGold": "dejeme encuentro donde anotarlo",
-  "werNormalizedPredicted": "deje me encuentro donde no esta lo",
-  "significantWer": 0.5,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "déjeme encuentro dónde anotarlo",
+  "werNormalizedPredicted": "deje me encuentro donde notarlo",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "dejeme encuentro donde anotarlo",
-  "sigWerNormalizedPredicted": "deje me encuentro donde no esta lo",
+  "sigWerNormalizedGold": "déjeme encuentro dónde anotarlo",
+  "sigWerNormalizedPredicted": "deje me encuentro donde notarlo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dejeme' to 'me' at position 0",
-      "reason": "'dejeme' (let me) is split into 'deje me' (leave me), which changes the meaning from a polite request to a different phrase.",
+      "error": "Substitution: 'déjeme' to 'me' at position 0",
+      "reason": "'déjeme' (let me) is split into 'deje me' (leave me), which changes the meaning from a polite request to a possible command or statement, altering the intent of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'anotarlo' to 'lo' at position 3",
-      "reason": "The insertion of 'no esta' (is not) adds a negation and changes the meaning of the sentence, making it incoherent with the original intent.",
-      "score": 1
+      "error": "Substitution: 'dónde' to 'donde' at position 2",
+      "reason": "'dónde' (where) is a question word, while 'donde' (where) is a relative pronoun; in this context, the difference is minor and does not significantly change the meaning of the sentence.",
+      "score": 2
     }
   ]
 }

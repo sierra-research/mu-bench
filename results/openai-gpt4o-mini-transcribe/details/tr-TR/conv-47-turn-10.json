@@ -1,16 +1,22 @@
 {
   "gold": "Doğru Anna.",
-  "predicted": "Doğru anna.",
+  "predicted": "Doğru ana.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "doğru anna",
-  "werNormalizedPredicted": "doğru anna",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "doğru ana",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "doğru anna",
-  "sigWerNormalizedPredicted": "doğru anna",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "doğru ana",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'ana' at position 1",
+      "reason": "'Anna' and 'Ana' are both proper nouns and common names, but they refer to different people. The substitution changes the identity being referred to, which is a minor error since the overall meaning (referring to a person named Anna/Ana) is preserved, but the specific person is different.",
+      "score": 2
+    }
+  ]
 }

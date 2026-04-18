@@ -1,16 +1,27 @@
 {
   "gold": "Sí es que no me ha llegado el este, ¿cómo se llama? El estado de cuenta de este mes.",
-  "predicted": "Sí, bueno, es que no me ha llegado el, el, este, el-- ¿cómo se llama? El estado de cuenta de este mes",
+  "predicted": "Sí, bueno, es que no me ha llegado el, el, este, el, ¿cómo se llama? El estado de cuenta de este mes",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 19,
-  "werNormalizedGold": "si es que no me ha llegado el este como se llama el estado de cuenta de este mes",
-  "werNormalizedPredicted": "si es que no me ha llegado el este como se llama el estado de cuenta de este mes",
-  "significantWer": 0.0,
+  "wer": 0.16666666666666666,
+  "werEdits": 3,
+  "werRefWords": 18,
+  "werNormalizedGold": "sí es que no me ha llegado el cómo se llama el estado de cuenta de este mes",
+  "werNormalizedPredicted": "sí es que no me ha llegado el el el estado de cuenta de este mes",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "si es que no me ha llegado el este como se llama el estado de cuenta de este mes",
-  "sigWerNormalizedPredicted": "si es que no me ha llegado el este como se llama el estado de cuenta de este mes",
-  "sigWerErrors": []
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "sí es que no me ha llegado el cómo se llama el estado de cuenta de este mes",
+  "sigWerNormalizedPredicted": "sí es que no me ha llegado el el el estado de cuenta de este mes",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cómo' to 'el' at position 8",
+      "reason": "'cómo' (how) is replaced by 'el' (the), which removes the phrase 'cómo se llama' (what is it called), making the sentence less clear but the main intent (about the account statement) is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'se' at position 9",
+      "reason": "Omitting 'se' from 'cómo se llama' further reduces clarity, but the overall meaning about the account statement for this month is still mostly preserved.",
+      "score": 2
+    }
+  ]
 }

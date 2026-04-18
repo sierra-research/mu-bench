@@ -2,15 +2,26 @@
   "gold": "8 6 1 3 9 0 1 2 3 4 5 6 7。",
   "predicted": "八六一三九零幺二三四五六级",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
-  "werNormalizedGold": "八六一三九零幺二三四五六级",
-  "werNormalizedPredicted": "八六一三九零幺二三四五六级",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "八 六 一 三 九 零 一 二 三 四 五 六 七",
+  "werNormalizedPredicted": "八 六 一 三 九 零 幺 二 三 四 五 六 级",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "八 六 一 三 九 零 幺 二 三 四 五 六 级",
+  "sigWerNormalizedGold": "八 六 一 三 九 零 一 二 三 四 五 六 七",
   "sigWerNormalizedPredicted": "八 六 一 三 九 零 幺 二 三 四 五 六 级",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '一' to '幺' at position 6",
+      "reason": "'一' (yi, meaning 'one') and '幺' (yao, also used for 'one' in contexts like phone numbers or serials) are often interchangeable in spoken Chinese for clarity, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '七' to '级' at position 12",
+      "reason": "'七' means 'seven', while '级' means 'level' or 'grade'; this changes the meaning and makes the sequence incorrect.",
+      "score": 1
+    }
+  ]
 }

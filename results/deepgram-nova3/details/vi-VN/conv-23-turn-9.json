@@ -2,15 +2,26 @@
   "gold": "Tôi muốn hỏi xem là có được cấp hai thẻ luôn được không, để sơ cua.",
   "predicted": "Tôi muốn hỏi xem là có thể được cấp hai thẻ luôn được không để sờ cua",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
   "werNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
-  "werNormalizedPredicted": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ luôn được không để sờ cua",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
-  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ luôn được không để sờ cua",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'thể' at position 6",
+      "reason": "'có được' (can get) vs 'có thể được' (can possibly get) – the insertion of 'thể' slightly changes the nuance but does not alter the main meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sơ' to 'sờ' at position 14",
+      "reason": "'sơ cua' (spare/backup) is a fixed phrase in Vietnamese, while 'sờ cua' is a mispronunciation and does not make sense in this context, making the sentence confusing.",
+      "score": 1
+    }
+  ]
 }

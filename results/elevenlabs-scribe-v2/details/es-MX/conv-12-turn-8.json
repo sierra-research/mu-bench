@@ -2,26 +2,21 @@
   "gold": "Es 55 1 2 3 4 56 78.",
   "predicted": "Este, 55, un, dos, tres, cuatro, 56, 78",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 2,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "es cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
-  "werNormalizedPredicted": "este cincuenta y cinco un dos tres cuatro cincuenta y seis setenta y ocho",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "es cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
-  "sigWerNormalizedPredicted": "este cincuenta y cinco un dos tres cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "cincuenta y cinco uno dos tres cuatro cincuenta y seis setenta y ocho",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'es' to 'este' at position 0",
-      "reason": "'es' means 'is', while 'este' means 'this'; this changes the subject and meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'uno' to 'un' at position 4",
-      "reason": "'uno' is the number 'one', while 'un' is the indefinite article 'a/an'; in a sequence of numbers, this is a significant error.",
-      "score": 1
+      "error": "Deletion: 'es' at position 0",
+      "reason": "The word 'es' (meaning 'is' in Spanish) is omitted. However, in the context of a list of numbers, this omission does not significantly change the meaning, as the main information (the numbers) is preserved.",
+      "score": 2
     }
   ]
 }

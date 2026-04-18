@@ -5,22 +5,22 @@
   "wer": 0.4,
   "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n seven nine one",
-  "werNormalizedPredicted": "c n c nine e",
-  "significantWer": 0.4,
+  "werNormalizedGold": "c n 七 九 一",
+  "werNormalizedPredicted": "c n c 九 e",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n seven nine one",
-  "sigWerNormalizedPredicted": "c n c nine e",
+  "sigWerNormalizedGold": "c n 七 九 一",
+  "sigWerNormalizedPredicted": "c n c 九 e",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'seven' to 'c' at position 2",
-      "reason": "In a sequence of letters and numbers, substituting a number with a letter changes the intended code or identifier, making it a significant error.",
+      "error": "Substitution: '七' to 'c' at position 2",
+      "reason": "'七' is the Chinese character for 'seven', while 'c' is a Latin letter. This is a significant substitution that changes the meaning and makes the sequence incorrect, especially in a context where each character is important (such as a code or ID).",
       "score": 1
     },
     {
-      "error": "Substitution: 'one' to 'e' at position 4",
-      "reason": "In a sequence of letters and numbers, substituting a number with a letter changes the intended code or identifier, making it a significant error.",
+      "error": "Substitution: '一' to 'e' at position 4",
+      "reason": "'一' is the Chinese character for 'one', while 'e' is a Latin letter. This is a significant error as it changes the intended character in a sequence where accuracy is critical.",
       "score": 1
     }
   ]

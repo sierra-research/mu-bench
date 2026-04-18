@@ -2,15 +2,21 @@
   "gold": "你有，你有什么问题，我几次说是美玲。",
   "predicted": "你有你有什么问题?我几次说是妹玲。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.06666666666666667,
+  "werEdits": 1,
   "werRefWords": 15,
-  "werNormalizedGold": "你 有 你 有 什么 问题 我 几 次 说 是 美玲",
-  "werNormalizedPredicted": "你 有 你 有 什么 问题 我 几 次 说 是 美玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你有 你有什么问题 我几次说是美玲",
+  "werNormalizedPredicted": "你有 你有什么问题 我几次说是妹玲",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "你 有 你 有 什 么 问 题 我 几 次 说 是 美 玲",
-  "sigWerNormalizedPredicted": "你 有 你 有 什 么 问 题 我 几 次 说 是 美 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 有 你 有 什 么 问 题 我 几 次 说 是 妹 玲",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '妹' at position 13",
+      "reason": "'美' (meaning 'beautiful') and '妹' (meaning 'younger sister') are completely different characters with different meanings. This changes the name being referred to, which could lead to confusion about the person's identity.",
+      "score": 1
+    }
+  ]
 }

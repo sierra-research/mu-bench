@@ -2,21 +2,26 @@
   "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
   "predicted": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet. Arslan ya da ahmet. Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.058823529411764705,
-  "werEdits": 1,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
   "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "werNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet dot arslan olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet arslan ya da ahmet arslan olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
-  "sigWerNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet dot arslan olacak",
+  "sigWerNormalizedPredicted": "email adresinde adımla soyadım arasında nokta olması lazım ahmet arslan ya da ahmet arslan olacak",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'nokta' to 'dot' at position 14",
-      "reason": "'dot' and 'nokta' both mean 'dot' in this context (one is English, one is Turkish), and both are commonly used in email addresses in Turkish. The meaning is preserved.",
-      "score": 3
+      "error": "Deletion: 'dot' at position 9",
+      "reason": "The word 'dot' is omitted, which is crucial for specifying the correct email format. Without 'dot', the instruction is incomplete and could lead to misunderstanding.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 14",
+      "reason": "The word 'nokta' (meaning 'dot' in Turkish) is omitted, which is essential for conveying the correct email format. Its absence significantly changes the meaning and could cause confusion.",
+      "score": 1
     }
   ]
 }

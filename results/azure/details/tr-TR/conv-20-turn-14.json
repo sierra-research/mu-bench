@@ -7,7 +7,7 @@
   "werRefWords": 23,
   "werNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
   "werNormalizedPredicted": "hayır son rakam yanlış oldu altmış yedi altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
-  "significantWer": 0.043478260869565216,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'değil' to 'yedi' at position 6",
-      "reason": "'değil' means 'not', while 'yedi' means 'seven'; this changes the meaning of the sentence, as the negation is lost and the number is introduced incorrectly, making the sentence confusing.",
+      "reason": "'değil' means 'not', while 'yedi' means 'seven'; this changes the meaning of the sentence from 'not sixty' to 'sixty seven', which significantly alters the intended correction.",
       "score": 1
     },
     {
       "error": "Substitution: 'yedi' to 'sekiz' at position 8",
-      "reason": "'yedi' (seven) is replaced with 'sekiz' (eight), which changes the specific number referenced, but the overall meaning of the sentence (about correcting a number) is still understandable.",
+      "reason": "'yedi' means 'seven' and 'sekiz' means 'eight'; this changes the number being referred to, which is important for the meaning of the sentence, but the overall context is still about correcting a number. This is a minor error.",
       "score": 2
     }
   ]

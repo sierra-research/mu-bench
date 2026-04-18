@@ -2,15 +2,21 @@
   "gold": "君玲。",
   "predicted": "June Lim.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "june lim",
+  "werNormalizedGold": "君玲",
   "werNormalizedPredicted": "june lim",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "june lim",
+  "sigWerNormalizedGold": "君 玲",
   "sigWerNormalizedPredicted": "june lim",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'june' at position 0",
+      "reason": "The expected word is a Chinese name character, while the actual is an English name with a different pronunciation and meaning. This is a significant error as it completely changes the identity.",
+      "score": 1
+    }
+  ]
 }

@@ -2,35 +2,35 @@
   "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
   "predicted": "Anne Hanım merhabalar. Şimdi şöyle ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu.",
   "unintelligible": false,
-  "wer": 0.19047619047619047,
+  "wer": 0.2,
   "werEdits": 4,
-  "werRefWords": 21,
-  "werNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
-  "werNormalizedPredicted": "anne hanım merhabalar şimdi şöyle ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
-  "significantWer": 0.14285714285714285,
+  "werRefWords": 20,
+  "werNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anne hanım merhabalar şimdi ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
+  "significantWer": 1,
   "majorErrorsCount": 3,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
-  "sigWerNormalizedPredicted": "anne hanım merhabalar şimdi şöyle ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anne hanım merhabalar şimdi ben ekstra kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anne' at position 0",
-      "reason": "'Anna' and 'Anne' are both proper names, but refer to different people. However, in Turkish, 'anne' means 'mother' and 'anna' is a name. This changes the meaning from addressing a person named Anna to addressing someone's mother, which is a significant change.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'ekstra' at position 6",
-      "reason": "The word 'ekstra' (extra) is inserted before 'kredi kartıma dair', which could confuse the meaning, but the overall request for a credit card statement is still clear. This is a minor error.",
+      "reason": "Minor difference in the proper noun, likely still refers to the same person and does not change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 9",
-      "reason": "'Ekstremin' (my statement) vs 'ekstramın' (my extra) changes the meaning from 'statement' to 'extra', which could confuse the request and affect understanding. This is a significant error.",
+      "error": "Insertion: 'ekstra' at position 5",
+      "reason": "The insertion of 'ekstra' (meaning 'extra') before 'kredi kartıma' changes the meaning, as it now refers to an 'extra credit card' instead of just 'my credit card', which could confuse the intent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 15",
-      "reason": "Same as above: 'ekstremin' (my statement) vs 'ekstramın' (my extra) changes the meaning and could confuse the request. Significant error.",
+      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 8",
+      "reason": "'Ekstremin' (my statement) vs 'ekstramın' (my extra) changes the meaning from a financial statement to something extra, which is a significant error in this context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 14",
+      "reason": "Same as above, this substitution changes the meaning from 'my statement' to 'my extra', which is a significant error for the request being made.",
       "score": 1
     }
   ]

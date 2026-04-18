@@ -2,15 +2,31 @@
   "gold": "那你还没听，听得到我的名字。",
   "predicted": "Danny还没听得到我的名字。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 3,
   "werRefWords": 12,
-  "werNormalizedGold": "那你还没听听得到我的名字",
-  "werNormalizedPredicted": "那你还没听听得到我的名字",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "那你还没听 听得到我的名字",
+  "werNormalizedPredicted": "danny 还没听得到我的名字",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "那 你 还 没 听 听 得 到 我 的 名 字",
-  "sigWerNormalizedPredicted": "那 你 还 没 听 听 得 到 我 的 名 字",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "danny 还 没 听 得 到 我 的 名 字",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to 'danny' at position 0",
+      "reason": "'那' is a Chinese word meaning 'that', while 'danny' is an English name. This is a language substitution and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '你' at position 1",
+      "reason": "The pronoun '你' (you) is missing, which removes the subject and affects the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '听' at position 4",
+      "reason": "One occurrence of '听' (listen) is missing, but the overall meaning is still understandable as the phrase '听得到' (can hear) remains.",
+      "score": 2
+    }
+  ]
 }

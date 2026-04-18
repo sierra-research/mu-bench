@@ -2,15 +2,21 @@
   "gold": "君玲。",
   "predicted": "June Lin.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "jun lin",
-  "werNormalizedPredicted": "jun lin",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "君玲",
+  "werNormalizedPredicted": "june lin",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "jun lin",
-  "sigWerNormalizedPredicted": "jun lin",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "君 玲",
+  "sigWerNormalizedPredicted": "june lin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'june' at position 0",
+      "reason": "'君' is a Chinese name, while 'june' is an English name with a different pronunciation and meaning. This is a significant error as the names are not equivalent and the language is different.",
+      "score": 1
+    }
+  ]
 }

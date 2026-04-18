@@ -2,15 +2,26 @@
   "gold": "Tabii. Zeynep nokta Arslan at, pardon çok özür dilerim tekrarlayacağım.",
   "predicted": "Tabii. Zeynep Arslan et-- pardon, çok özür dilerim. Tekrar edeceğim",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "werNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon cok ozur dilerim tekrarlayacagim",
-  "sigWerErrors": []
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "werNormalizedPredicted": "tabii zeynep arslan at pardon çok özür dilerim tekrar edeceğim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "sigWerNormalizedPredicted": "tabii zeynep arslan at pardon çok özür dilerim tekrar edeceğim",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 2",
+      "reason": "'nokta' (meaning 'dot' or 'point') is omitted, which could be important if it refers to an email address or username. Its omission may cause confusion or loss of information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tekrarlayacağım' to 'edeceğim' at position 9",
+      "reason": "'tekrar' (meaning 'again' or 'repeat') is inserted, but it is part of the phrase 'tekrar edeceğim' (I will repeat), which is a valid alternative to 'tekrarlayacağım'. The meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

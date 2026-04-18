@@ -2,20 +2,30 @@
   "gold": "君灵 at email dot com 已经说了。",
   "predicted": "dreamlin@email.com，一整个小写。",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 5,
+  "wer": 0.7,
+  "werEdits": 7,
   "werRefWords": 10,
   "werNormalizedGold": "君灵 at email dot com 已经说了",
-  "werNormalizedPredicted": "君灵 at email dot com 一整个小写",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "dreamlin at email dot com 一 整 个 小 写",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了",
-  "sigWerNormalizedPredicted": "君 灵 at email dot com 一 整 个 小 写",
+  "sigWerNormalizedPredicted": "dreamlin at email dot com 一 整 个 小 写",
   "sigWerErrors": [
     {
+      "error": "Substitution: '君' to 'dreamlin' at position 0",
+      "reason": "'君' is a Chinese character (likely a name), while 'dreamlin' is an English word/name. This is a complete change in language and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "'灵' is omitted entirely, which removes part of the name or phrase, significantly altering the meaning.",
+      "score": 1
+    },
+    {
       "error": "Substitution: '已' to '整' at position 6",
-      "reason": "'已' (already) is replaced by '一' (one), which changes the meaning of the sentence significantly.",
+      "reason": "'一' is inserted where it does not belong, introducing unrelated content and changing the meaning.",
       "score": 1
     }
   ]

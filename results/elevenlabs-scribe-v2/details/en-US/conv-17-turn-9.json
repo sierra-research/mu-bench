@@ -2,15 +2,21 @@
   "gold": "Yeah. Actually, do the email again. I just wanna make sure it's correct.",
   "predicted": "Uh, yeah. C-c-- wait, actually do the, um, email again. I just wanna make sure it's correct",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 6,
   "werRefWords": 15,
   "werNormalizedGold": "yeah actually do the email again i just want to make sure it is correct",
-  "werNormalizedPredicted": "yeah actually do the email again i just want to make sure it is correct",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "yeah actually do the c c wait actually do the email again i just want to make sure it is correct",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "yeah actually do the email again i just want to make sure it is correct",
-  "sigWerNormalizedPredicted": "yeah actually do the email again i just want to make sure it is correct",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "yeah actually do the c c wait actually do the email again i just want to make sure it is correct",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'c' at position 4",
+      "reason": "The insertion of 'c' does not make sense in the context and interrupts the flow of the sentence, making it confusing and potentially incoherent.",
+      "score": 1
+    }
+  ]
 }

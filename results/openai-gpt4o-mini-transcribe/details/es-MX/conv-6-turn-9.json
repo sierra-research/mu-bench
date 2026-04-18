@@ -1,26 +1,36 @@
 {
   "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
-  "predicted": "MAC52-55-123456-789",
+  "predicted": "más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
   "unintelligible": false,
-  "wer": 0.13333333333333333,
-  "werEdits": 2,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
   "werRefWords": 15,
   "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "mac cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho nueve",
-  "significantWer": 0.13333333333333333,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "mac cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho nueve",
+  "sigWerNormalizedPredicted": "más cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'más' to 'mac' at position 0",
-      "reason": "'más' means 'plus' or 'more' in Spanish, while 'mac' is not a number or relevant word in this context. This changes the meaning of the sentence, especially if this is a phone number or code.",
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 1",
+      "reason": "'Cincuenta' (fifty) and 'cinco' (five) are numerically very different, which significantly changes the meaning of the number sequence.",
       "score": 1
     },
     {
-      "error": "Insertion: 'nueve' at position 15",
-      "reason": "Adding 'nueve' (nine) at the end introduces an extra digit to what appears to be a sequence of numbers, likely a phone number or code, which significantly alters the intended information.",
+      "error": "Deletion: 'y' at position 2",
+      "reason": "The conjunction 'y' (and) is important in Spanish number sequences to distinguish between numbers like 'cincuenta y dos' (fifty-two) and 'cinco dos' (five two), so its omission changes the intended number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 4",
+      "reason": "Again, substituting 'cincuenta' (fifty) with 'cinco' (five) changes the number being communicated, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 5",
+      "reason": "Omitting 'y' (and) in the number sequence alters the structure and meaning of the numbers, leading to a significant error.",
       "score": 1
     }
   ]

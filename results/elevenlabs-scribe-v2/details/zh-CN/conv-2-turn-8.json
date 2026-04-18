@@ -2,20 +2,30 @@
   "gold": "美玲 at email dot com。",
   "predicted": "meilingatemail.com，你听到了吗？",
   "unintelligible": false,
-  "wer": 0.8333333333333334,
-  "werEdits": 5,
+  "wer": 1.1666666666666667,
+  "werEdits": 7,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com 你听到了吗",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "meiling at email dot com 你听到了吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com 你 听 到 了 吗",
+  "sigWerNormalizedPredicted": "meiling at email dot com 你 听 到 了 吗",
   "sigWerErrors": [
     {
+      "error": "Substitution: '美' to 'meiling' at position 0",
+      "reason": "The Chinese character '美' is replaced with the pinyin 'meiling', which is a romanized form of the name. While it is not the same script, the meaning is preserved as it refers to the same name, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The character '玲' is missing from the actual transcription, which omits part of the name. This could cause confusion about the correct name, so it is a significant error.",
+      "score": 1
+    },
+    {
       "error": "Insertion: '你' at position 6",
-      "reason": "The phrase '你 听 到 了 吗' (Did you hear?) is an additional sentence unrelated to the email address, which changes the meaning by adding an extra question.",
+      "reason": "The phrase '你 听 到 了 吗' (Did you hear it?) is inserted at the end, which adds unrelated content and changes the meaning of the sentence, making it incoherent for the intended email address context.",
       "score": 1
     }
   ]

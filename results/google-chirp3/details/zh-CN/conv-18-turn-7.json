@@ -2,15 +2,26 @@
   "gold": "林梅，林梅，林梅 at。",
   "predicted": "0美0美0美@",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 7,
   "werRefWords": 7,
   "werNormalizedGold": "林梅 林梅 林梅 at",
-  "werNormalizedPredicted": "林梅 林梅 林梅 at",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "零美零美零美",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "林 梅 林 梅 林 梅 at",
-  "sigWerNormalizedPredicted": "林 梅 林 梅 林 梅 at",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "零 美 零 美 零 美",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '零' at position 0",
+      "reason": "'林' and '零' are completely different Chinese characters with different meanings; this changes the intended name or word significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 6",
+      "reason": "The word 'at' is missing, which could affect the meaning or completeness of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -1,21 +1,26 @@
 {
   "gold": "你有病吗？",
-  "predicted": "你有什么吗？",
+  "predicted": "你 opin 吗？",
   "unintelligible": false,
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "你 有 病 吗",
-  "werNormalizedPredicted": "你 有 什么 吗",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "你有病吗",
+  "werNormalizedPredicted": "你 opin 吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "你 有 病 吗",
-  "sigWerNormalizedPredicted": "你 有 什 么 吗",
+  "sigWerNormalizedPredicted": "你 opin 吗",
   "sigWerErrors": [
     {
-      "error": "Substitution: '病' to '么' at position 2",
-      "reason": "The insertion of '什' changes the meaning from 'Are you sick?' to 'What do you have?', which is a significant change in meaning.",
+      "error": "Substitution: '有' to 'opin' at position 1",
+      "reason": "'opin' is not a valid substitution for '有' in Chinese; it is a nonsensical word in this context and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '病' at position 2",
+      "reason": "Omitting '病' removes the key word that gives the sentence its meaning ('Are you sick?'), making the sentence incomplete and unclear.",
       "score": 1
     }
   ]

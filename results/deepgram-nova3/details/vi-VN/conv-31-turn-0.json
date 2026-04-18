@@ -7,7 +7,7 @@
   "werRefWords": 35,
   "werNormalizedGold": "chào anna nhé tôi đang muốn xem xét tăng hạn mức thẻ tín dụng của tôi bạn giúp tôi xem điều kiện với cả quy trình để được tăng hạn mức như thế nào với",
   "werNormalizedPredicted": "chào anna nhé tôi đang muốn xem xét tăng hạn mức cái thẻ tín dụng của tôi ấy bạn giúp tôi xem là cái điều kiện về cả quy trình để được tăng hạn mức như thế nào với",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 35,
   "sigWerNormalizedGold": "chào anna nhé tôi đang muốn xem xét tăng hạn mức thẻ tín dụng của tôi bạn giúp tôi xem điều kiện với cả quy trình để được tăng hạn mức như thế nào với",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'cái' at position 11",
-      "reason": "'cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
-      "score": 3
+      "reason": "'cái' is an extra classifier before 'thẻ', but does not change the meaning of the sentence.",
+      "score": 2
     },
     {
       "error": "Insertion: 'ấy' at position 16",
-      "reason": "'ấy' is a discourse particle that adds emphasis but does not alter the meaning.",
-      "score": 3
+      "reason": "'ấy' is a discourse particle that adds emphasis but does not change the meaning.",
+      "score": 2
     },
     {
       "error": "Insertion: 'là' at position 20",
-      "reason": "'là' is a filler word in this context and does not affect the overall meaning.",
-      "score": 3
+      "reason": "'là' is a filler word in this context and does not affect the meaning.",
+      "score": 2
     },
     {
       "error": "Substitution: 'với' to 'về' at position 22",
-      "reason": "The substitution from 'với' (with) to 'về' (about) slightly changes the prepositional nuance, but the overall meaning of the sentence remains the same.",
+      "reason": "'với' and 'về' both connect to 'cả quy trình', and the meaning is preserved in context.",
       "score": 2
     }
   ]

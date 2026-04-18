@@ -6,8 +6,8 @@
   "werEdits": 3,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮件地址是郡凛 at email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是零 at email dot com",
-  "significantWer": 0.15384615384615385,
+  "werNormalizedPredicted": "我的邮箱地址是 零 at email dot com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 件 地 址 是 郡 凛 at email dot com",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '件' to '箱' at position 3",
-      "reason": "'邮件' (email) and '邮箱' (mailbox) are related but not the same; in this context, '邮箱地址' is commonly used for email address, so this is a minor error.",
-      "score": 2
+      "reason": "'邮件' (email) and '邮箱' (mailbox) are often used interchangeably in Chinese to refer to email address, so this does not change the meaning in this context.",
+      "score": 3
     },
     {
       "error": "Substitution: '郡' to '零' at position 7",
-      "reason": "'郡' is part of the expected email username, but '零' (zero) is a completely different character, changing the email address and making it incorrect.",
+      "reason": "'郡' is likely part of a proper noun (name or username), while '零' means 'zero'; this changes the actual email address, which is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: '凛' at position 8",
-      "reason": "Omitting '凛' from the email username changes the email address, making it incorrect and potentially undeliverable.",
+      "reason": "Omitting a character from a proper noun or username in an email address changes the address, which is a significant error.",
       "score": 1
     }
   ]

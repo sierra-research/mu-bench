@@ -2,20 +2,25 @@
   "gold": "C N 2 3 5.",
   "predicted": "Cn-hai trăm ba mươi lăm",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 5,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "c n two three five",
+  "werNormalizedGold": "c n hai ba năm",
   "werNormalizedPredicted": "c n hai trăm ba mươi lăm",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n two three five",
+  "sigWerNormalizedGold": "c n hai ba năm",
   "sigWerNormalizedPredicted": "c n hai trăm ba mươi lăm",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'two' to 'ba' at position 2",
-      "reason": "The actual transcription is in a different language (Vietnamese) instead of English, which is a significant error as it completely changes the language and meaning for the intended audience.",
+      "error": "Insertion: 'trăm' at position 3",
+      "reason": "'trăm' means 'hundred', which changes the number from '23' to '235', significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'năm' to 'lăm' at position 4",
+      "reason": "'mươi' is used in Vietnamese to form numbers like 'thirty', further changing the number structure and meaning.",
       "score": 1
     }
   ]

@@ -2,15 +2,31 @@
   "gold": "Urión 30, col. Tlatilco.",
   "predicted": "Urion 30 Coltratlilco.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
-  "werNormalizedGold": "urion thirty col tlatilco",
-  "werNormalizedPredicted": "urion thirty col tlatilco",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "urión treinta col tlatilco",
+  "werNormalizedPredicted": "urion treinta coltratlilco",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "urion thirty col tlatilco",
-  "sigWerNormalizedPredicted": "urion thirty col tlatilco",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "urión treinta col tlatilco",
+  "sigWerNormalizedPredicted": "urion treinta coltratlilco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'urión' to 'urion' at position 0",
+      "reason": "The accent is missing, but the word is still phonetically and semantically the same in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'col' to 'coltratlilco' at position 2",
+      "reason": "'coltratlilco' appears to be a fusion of 'col' and 'tlatilco', which could cause confusion about the address or location being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tlatilco' at position 3",
+      "reason": "'tlatilco' is missing as a separate word, which is important for clarity in the address or location.",
+      "score": 1
+    }
+  ]
 }

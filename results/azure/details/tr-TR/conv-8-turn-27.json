@@ -2,20 +2,30 @@
   "gold": "Hayır yine yanlış. Çünkü Zaynep. Altıncı harfimi siz T olarak söylediniz halbuki P. Altıncı harf pırasanın P'si.",
   "predicted": "Hayır, yine yanlış çünkü zayn net altıncı harfimiz siz t olarak söylediniz. Halbuki p altıncı harf pırasa'nın p si.",
   "unintelligible": false,
-  "wer": 0.05555555555555555,
-  "werEdits": 1,
-  "werRefWords": 18,
-  "werNormalizedGold": "hayır yine yanlış çünkü zaynep altıncı harfimi siz t olarak söylediniz halbuki p altıncı harf pırasanın p si",
-  "werNormalizedPredicted": "hayır yine yanlış çünkü zaynep altıncı harfimiz siz t olarak söylediniz halbuki p altıncı harf pırasanın p si",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 18,
-  "sigWerNormalizedGold": "hayır yine yanlış çünkü zaynep altıncı harfimi siz t olarak söylediniz halbuki p altıncı harf pırasanın p si",
-  "sigWerNormalizedPredicted": "hayır yine yanlış çünkü zaynep altıncı harfimiz siz t olarak söylediniz halbuki p altıncı harf pırasanın p si",
+  "wer": 0.35294117647058826,
+  "werEdits": 6,
+  "werRefWords": 17,
+  "werNormalizedGold": "hayır yine yanlış çünkü zaynep altıncı harfimi siz t olarak söylediniz halbuki p altıncı harf pırasanın psi",
+  "werNormalizedPredicted": "hayır yine yanlış çünkü zayn net altıncı harfimiz siz t olarak söylediniz halbuki p altıncı harf pırasa'nın p si",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "hayır yine yanlış çünkü zaynep altıncı harfimi siz t olarak söylediniz halbuki p altıncı harf pırasanın psi",
+  "sigWerNormalizedPredicted": "hayır yine yanlış çünkü zayn net altıncı harfimiz siz t olarak söylediniz halbuki p altıncı harf pırasa'nın p si",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'zaynep' to 'net' at position 4",
+      "reason": "'zayn' is an incomplete form of the name 'zaynep' and its insertion creates confusion in the sentence, making the meaning unclear.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'harfimi' to 'harfimiz' at position 6",
-      "reason": "'harfimi' means 'my letter' and 'harfimiz' means 'our letter'; this changes the possessive from singular to plural, but does not derail the meaning of the sentence.",
+      "reason": "Replacing the name 'zaynep' with 'net' changes the subject and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'pırasanın' to 'p' at position 15",
+      "reason": "'harfimi' (my letter) vs 'harfimiz' (our letter) is a minor grammatical error, but the overall meaning is preserved.",
       "score": 2
     }
   ]

@@ -2,21 +2,31 @@
   "gold": "君玲 at email dot com。已经说了几次。",
   "predicted": "dreamingitemail。com已经说了句词。",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 2,
+  "wer": 0.5833333333333334,
+  "werEdits": 7,
   "werRefWords": 12,
   "werNormalizedGold": "君玲 at email dot com 已经说了几次",
-  "werNormalizedPredicted": "君玲 at email dot com 已经说了句词",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "dreamingitemail com已经说了句词",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "君 玲 at email dot com 已 经 说 了 几 次",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com 已 经 说 了 句 词",
+  "sigWerNormalizedPredicted": "dreamingitemail com 已 经 说 了 句 词",
   "sigWerErrors": [
     {
-      "error": "Substitution: '几' to '句' at position 10",
-      "reason": "'几次' means 'several times', while '句词' means 'sentence word' or 'phrase', which changes the meaning of the sentence and makes it incoherent.",
+      "error": "Substitution: '君' to 'dreamingitemail' at position 0",
+      "reason": "'君' is a Chinese name, while 'dreamingitemail' is an unrelated English phrase, completely changing the meaning and making the sentence incoherent.",
       "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name '君玲', and its omission results in an incomplete or incorrect name, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '几' to '句' at position 10",
+      "reason": "'几' means 'several' or 'a few', while '句' means 'sentence'; this changes the meaning of the phrase but does not derail the overall sentence.",
+      "score": 2
     }
   ]
 }

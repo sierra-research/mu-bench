@@ -2,15 +2,26 @@
   "gold": "Arroba E M A I L punto com.",
   "predicted": "Eh, @e, eme, a, i, ele, punto com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "arroba e m a i l punto com",
-  "werNormalizedPredicted": "arroba e m a i l punto com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "arroba e eme a i ele punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "arroba e m a i l punto com",
-  "sigWerNormalizedPredicted": "arroba e m a i l punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "arroba e eme a i ele punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'm' to 'eme' at position 2",
+      "reason": "'m' and 'eme' are the same letter, just different formats (letter name vs. letter), so the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'l' to 'ele' at position 5",
+      "reason": "'l' and 'ele' are the same letter, just different formats (letter name vs. letter), so the meaning is unchanged.",
+      "score": 3
+    }
+  ]
 }

@@ -1,16 +1,27 @@
 {
   "gold": "Thu dấu chấm trần a còng email chấm com.",
-  "predicted": "thu.giấu chấm trần a cộng email chấm com",
+  "predicted": "thu dấu chấm chần a cộng email chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "thu dấu chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "thu dấu chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "thu dấu chấm chần a cộng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "thu dấu chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "thu dấu chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "thu dấu chấm chần a cộng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'chần' at position 3",
+      "reason": "'trần' and 'chần' are different words in Vietnamese; this changes the meaning of the phrase and could cause confusion, especially in the context of dictating an email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 5",
+      "reason": "'còng' is the Vietnamese word for the '@' symbol in email addresses, while 'cộng' means 'plus' and is incorrect in this context, leading to a significant error in the email address transcription.",
+      "score": 1
+    }
+  ]
 }

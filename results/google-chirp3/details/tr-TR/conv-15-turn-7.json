@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
   "werNormalizedPredicted": "soyadımda arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'soyadım' to 'soyadımda' at position 0",
-      "reason": "The actual transcription merges 'soyadım' and 'da' into 'soyadımda', which is a minor grammatical difference in Turkish and does not change the overall meaning of the sentence.",
-      "score": 2
+      "reason": "The actual transcription merges 'soyadım' and 'da' into 'soyadımda', but the meaning remains the same in context. This is a minor grammatical difference that does not affect understanding.",
+      "score": 3
     },
     {
       "error": "Deletion: 'da' at position 1",
-      "reason": "'da' is merged into the previous word as 'soyadımda', so it is not missing but combined; this does not affect the meaning of the sentence.",
-      "score": 2
+      "reason": "'da' is merged into the previous word as 'soyadımda', so it is not actually missing, just combined. The meaning is preserved.",
+      "score": 3
     }
   ]
 }

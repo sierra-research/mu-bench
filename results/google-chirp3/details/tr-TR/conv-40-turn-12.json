@@ -2,40 +2,40 @@
   "gold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
   "predicted": "Hayır, hayır yanlış yazdım. Tamam yanlış anlamışsın. Tekrar söylüyorum. Hay Hay kodluyorum. Adana Hatay Muğla Edirne Trabzon {nokta} Adana Rize Samsun Kırklareli Adana Niğde @email.com",
   "unintelligible": false,
-  "wer": 0.25925925925925924,
+  "wer": 0.28,
   "werEdits": 7,
-  "werRefWords": 27,
-  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
-  "werNormalizedPredicted": "hayır hayır yanlış yazdım tamam yanlış anlamışsın tekrar söylüyorum hay hay kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun kırklareli adana niğde at email nokta com",
-  "significantWer": 0.037037037037037035,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 27,
-  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
-  "sigWerNormalizedPredicted": "hayır hayır yanlış yazdım tamam yanlış anlamışsın tekrar söylüyorum hay hay kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun kırklareli adana niğde at email nokta com",
+  "werRefWords": 25,
+  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "werNormalizedPredicted": "hayır hayır yanlış yazdım tamam yanlış anlamışsın tekrar söylüyorum hay hay kodluyorum adana hatay muğla edirne trabzon adana rize samsun kırklareli adana niğde at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "sigWerNormalizedPredicted": "hayır hayır yanlış yazdım tamam yanlış anlamışsın tekrar söylüyorum hay hay kodluyorum adana hatay muğla edirne trabzon adana rize samsun kırklareli adana niğde at email com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'hayır' at position 1",
-      "reason": "Repeating 'hayır' (no) adds emphasis but does not change the overall meaning of the sentence.",
+      "reason": "Repeating 'hayır' (no) does not change the overall meaning, just adds emphasis.",
       "score": 2
     },
     {
       "error": "Substitution: 'yazdın' to 'yazdım' at position 2",
-      "reason": "'yazdın' means 'you wrote', 'yazdım' means 'I wrote'; this changes the subject of the sentence, which can affect the meaning.",
+      "reason": "'yazdın' (you wrote) vs 'yazdım' (I wrote) changes the subject of the sentence, which can affect meaning but does not derail the overall context.",
       "score": 2
     },
     {
       "error": "Substitution: 'almışsın' to 'anlamışsın' at position 5",
-      "reason": "'almışsın' means 'you took', 'anlamışsın' means 'you understood'; this changes the meaning of the sentence significantly.",
+      "reason": "'almışsın' (you took/received) vs 'anlamışsın' (you understood) changes the meaning of the sentence significantly, as it refers to a different action.",
       "score": 1
     },
     {
       "error": "Substitution: 'harf' to 'hay' at position 8",
-      "reason": "'harf' means 'letter', 'hay' is not a correct word in this context; this makes the sentence less clear but the intent (spelling) is still somewhat understandable.",
-      "score": 2
+      "reason": "'harf' (letter) is replaced with 'hay', which is not a Turkish word and makes the sentence incoherent at this point.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'lüleburgaz' to 'kırklareli' at position 20",
-      "reason": "Both are Turkish city names used in spelling alphabets; substituting one for the other is a minor error as the intent (spelling a letter) is preserved.",
+      "error": "Substitution: 'lüleburgaz' to 'kırklareli' at position 19",
+      "reason": "Both are city names in Turkey and are used as code words for letters; substituting one for the other is a minor error as it may affect the spelling being communicated but does not derail the overall meaning.",
       "score": 2
     }
   ]

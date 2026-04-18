@@ -2,26 +2,31 @@
   "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
   "predicted": "E posta adresime erişmemiş sıralar yok da yani farklı bir metod var mı acaba bana fatura göndermeniz için?",
   "unintelligible": false,
-  "wer": 0.10526315789473684,
-  "werEdits": 2,
-  "werRefWords": 19,
-  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "werNormalizedPredicted": "e posta adresime erişmemiş sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "significantWer": 0.05263157894736842,
+  "wer": 0.16666666666666666,
+  "werEdits": 3,
+  "werRefWords": 18,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "e posta adresime erişmemiş sıralar yok da farklı bir metod var mı acaba bana fatura göndermeniz için",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
-  "sigWerNormalizedPredicted": "e posta adresime erişmemiş sıralar yok da yani farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "e posta adresime erişmemiş sıralar yok da farklı bir metod var mı acaba bana fatura göndermeniz için",
   "sigWerErrors": [
     {
       "error": "Substitution: 'erişimim' to 'erişmemiş' at position 3",
-      "reason": "'erişimim' means 'my access', while 'erişmemiş' means 'has not accessed' or 'did not access'. This changes the subject and the meaning of the sentence, making it unclear who lacks access. This is a significant error.",
+      "reason": "'erişimim' means 'my access', while 'erişmemiş' means 'has not accessed' or 'not accessed'. This changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'şu' at position 4",
-      "reason": "'şu' means 'these' or 'currently', and its omission slightly reduces the temporal clarity but does not significantly change the overall meaning of the sentence.",
+      "reason": "Omitting 'şu' (meaning 'these' or 'currently') slightly reduces the temporal clarity but does not significantly change the overall meaning.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'metot' to 'metod' at position 10",
+      "reason": "'metot' and 'metod' are spelling variants of the same word in Turkish, both meaning 'method'.",
+      "score": 3
     }
   ]
 }

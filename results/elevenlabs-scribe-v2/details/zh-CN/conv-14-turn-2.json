@@ -1,22 +1,22 @@
 {
   "gold": "听到了吗？",
-  "predicted": "听得懂了吗？",
+  "predicted": "听得到了吗？",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 2,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
-  "werNormalizedGold": "听 到 了 吗",
-  "werNormalizedPredicted": "听 得 懂 了 吗",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "听得到了吗",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
-  "sigWerNormalizedPredicted": "听 得 懂 了 吗",
+  "sigWerNormalizedPredicted": "听 得 到 了 吗",
   "sigWerErrors": [
     {
-      "error": "Substitution: '到' to '懂' at position 1",
-      "reason": "'得' is inserted, which changes the phrase from 'hear' (听到) to 'understand' (听得懂), altering the meaning of the sentence.",
-      "score": 1
+      "error": "Insertion: '得' at position 1",
+      "reason": "'得' is often used in Mandarin to indicate possibility or capability, and its insertion here ('听得到了吗' vs '听到了吗') changes the nuance from 'Did you hear?' to 'Were you able to hear?'. The overall meaning is very similar and the intent is preserved, so this is a minor error.",
+      "score": 2
     }
   ]
 }

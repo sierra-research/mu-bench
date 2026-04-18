@@ -2,15 +2,26 @@
   "gold": "对，但是我的邮箱是君临 at email dot com。",
   "predicted": "对,但是我的邮箱是dreamling@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "对 但是我的邮箱是君临 at email dot com",
-  "werNormalizedPredicted": "对 但是我的邮箱是君临 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "对 但是我的邮箱是 dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "对 但 是 我 的 邮 箱 是 君 临 at email dot com",
-  "sigWerNormalizedPredicted": "对 但 是 我 的 邮 箱 是 君 临 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "对 但 是 我 的 邮 箱 是 dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 8",
+      "reason": "'君' is a Chinese character and 'dreamling' is an English word; this is a completely different word and changes the intended email address, making it unrecognizable and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '临' at position 9",
+      "reason": "Missing the character '临' in the email address further distorts the intended address, making it impossible to reconstruct the correct email; this is a significant error.",
+      "score": 1
+    }
+  ]
 }

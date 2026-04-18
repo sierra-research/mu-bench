@@ -3,24 +3,24 @@
   "predicted": "Vâng.",
   "unintelligible": false,
   "wer": 1.0,
-  "werEdits": 4,
-  "werRefWords": 4,
-  "werNormalizedGold": "à thôi được rồi",
+  "werEdits": 3,
+  "werRefWords": 3,
+  "werNormalizedGold": "thôi được rồi",
   "werNormalizedPredicted": "vâng",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "à thôi được rồi",
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "thôi được rồi",
   "sigWerNormalizedPredicted": "vâng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'à' to 'vâng' at position 0",
-      "reason": "'à thôi được rồi' means 'okay, that's enough' or 'alright, that's fine', while 'vâng' means 'yes' or 'okay'. The substitution changes the intent and meaning of the response, making it a significant error.",
+      "error": "Substitution: 'thôi' to 'vâng' at position 0",
+      "reason": "'thôi được rồi' means 'that's enough' or 'okay, that's fine', while 'vâng' means 'yes' or 'okay' in a different context. The substitution changes the intent and meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'thôi' at position 1",
-      "reason": "'thôi' is part of the phrase that signals stopping or ending something. Its omission further changes the meaning of the sentence, contributing to a significant loss of intended meaning.",
+      "error": "Deletion: 'được' at position 1",
+      "reason": "The word 'được' is missing, which is essential to the meaning of the phrase 'thôi được rồi'. Its absence further changes the meaning of the sentence.",
       "score": 1
     }
   ]

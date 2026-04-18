@@ -2,15 +2,21 @@
   "gold": "还是不对呀。",
   "predicted": "还是不对喔。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "还是 不 对 呀",
-  "werNormalizedPredicted": "还是 不 对 呀",
-  "significantWer": 0.0,
+  "werNormalizedGold": "还是不对呀",
+  "werNormalizedPredicted": "还是不对喔",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "还 是 不 对 呀",
-  "sigWerNormalizedPredicted": "还 是 不 对 呀",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "还 是 不 对 喔",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '呀' to '喔' at position 4",
+      "reason": "'呀' and '喔' are both sentence-ending particles in Chinese that express tone or mood, but they have slightly different nuances. The substitution does not change the overall meaning of the sentence, which remains a statement of something still being incorrect.",
+      "score": 2
+    }
+  ]
 }

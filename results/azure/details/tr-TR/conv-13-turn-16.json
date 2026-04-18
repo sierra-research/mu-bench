@@ -2,15 +2,21 @@
   "gold": "Tabii. Söylüyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
   "predicted": "Tabii söylüyorum+ 9012 üçsıfır dokuzsıfır, 4567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 15,
-  "werNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "werNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 15,
-  "sigWerNormalizedGold": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerNormalizedPredicted": "tabii söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
-  "sigWerErrors": []
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii söylüyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedPredicted": "tabii söylüyorum artı doksan sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii söylüyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedPredicted": "tabii söylüyorum artı doksan sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'sıfır' at position 4",
+      "reason": "The insertion of 'sıfır' (zero) at the start of the phone number sequence changes the actual number being communicated, which is critical information. This significantly alters the intended meaning (the phone number), making it a significant error.",
+      "score": 1
+    }
+  ]
 }

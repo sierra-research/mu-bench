@@ -1,16 +1,27 @@
 {
   "gold": "Số điện thoại đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Số điện thoại đầy đủ là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "Số điện thoại đầy đủ là cộng tám tư chín một một hai ba bốn năm sáu bảy tám.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 19,
-  "werNormalizedGold": "số điện thoại đầy đủ là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "wer": 0.1,
+  "werEdits": 2,
+  "werRefWords": 20,
+  "werNormalizedGold": "số điện thoại đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại đầy đủ là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 19,
-  "sigWerNormalizedGold": "số điện thoại đầy đủ là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "số điện thoại đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerNormalizedPredicted": "số điện thoại đầy đủ là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 8",
+      "reason": "'tám mươi bốn' (84) is replaced by 'tám tư' (also means 84 in Vietnamese, though less formal). The meaning is preserved, just a different way of saying the number.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bốn' at position 9",
+      "reason": "'tám tư' is a colloquial way to say 'tám mươi bốn' (84), so the omission of 'bốn' is not an error in meaning, as 'tám tư' already conveys '84'.",
+      "score": 3
+    }
+  ]
 }

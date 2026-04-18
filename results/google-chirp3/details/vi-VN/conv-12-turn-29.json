@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
   "werNormalizedPredicted": "muốn vừa lòng hướng dẫn tôi làm cái cái cái cái đó đi",
-  "significantWer": 0.1,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'vui' to 'vừa' at position 1",
-      "reason": "'Vui lòng' means 'please' or 'kindly', while 'vừa lòng' means 'satisfied' or 'pleased'. This changes the intent of the request from asking politely to expressing satisfaction, which alters the meaning of the sentence.",
+      "reason": "'Vui lòng' means 'please' or 'kindly', while 'vừa lòng' means 'satisfied' or 'pleased'. The substitution changes the intent from a polite request to a statement about satisfaction, which alters the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'cái' at position 7",
-      "reason": "The repeated insertion of 'cái' (which means 'thing') is redundant and makes the sentence awkward but does not significantly change the overall meaning of the request.",
+      "reason": "The repeated insertion of 'cái' (which means 'thing') is redundant and makes the sentence awkward and less coherent, but the overall request is still understandable.",
       "score": 2
     }
   ]

@@ -1,26 +1,26 @@
 {
   "gold": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
-  "predicted": "Anladım, merhabalar. Ben sizden yardım istemiştim.",
+  "predicted": "Anlamadım, merhabalar. Ben sizden yardım istemiştim.",
   "unintelligible": false,
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
-  "werNormalizedPredicted": "anladım merhabalar ben sizden yardım istemiştim",
-  "significantWer": 0.14285714285714285,
+  "werNormalizedPredicted": "anlamadım merhabalar ben sizden yardım istemiştim",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
-  "sigWerNormalizedPredicted": "anladım merhabalar ben sizden yardım istemiştim",
+  "sigWerNormalizedPredicted": "anlamadım merhabalar ben sizden yardım istemiştim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'anna' to 'anladım' at position 0",
-      "reason": "'anna' is a proper noun (a name), while 'anladım' means 'I understand' in Turkish. This substitution completely changes the meaning and derails the context of the sentence.",
+      "error": "Substitution: 'anna' to 'anlamadım' at position 0",
+      "reason": "'anna' is a proper noun (a name), while 'anlamadım' means 'I did not understand' in Turkish. This substitution completely changes the meaning of the sentence and derails the context.",
       "score": 1
     },
     {
       "error": "Deletion: 'hanım' at position 1",
-      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam') in Turkish. Its omission removes the polite address, which is a significant change in the context of the sentence.",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam') following the name. Its omission reduces the politeness and changes the intended addressee, but the main request remains understandable.",
       "score": 2
     }
   ]

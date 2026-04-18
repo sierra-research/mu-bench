@@ -5,9 +5,9 @@
   "wer": 0.6,
   "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "我 正 在 等 待",
-  "werNormalizedPredicted": "我 现 在 当 代",
-  "significantWer": 0.2,
+  "werNormalizedGold": "我正在等待",
+  "werNormalizedPredicted": "我现在当代",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "我 正 在 等 待",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '正' to '现' at position 1",
-      "reason": "'正' (in the process of) and '现' (now) are different words; this changes the meaning of the sentence from 'I am waiting' to 'I am now waiting' or 'I am now', which alters the temporal aspect but does not derail the overall meaning.",
+      "reason": "'正' (in the process of) and '现' (now) are different words, but both can indicate time or state. However, '正' is part of the phrase '正在' (in the process of), while '现在' means 'now', which changes the aspect of the sentence but not the overall meaning.",
       "score": 2
     },
     {
       "error": "Substitution: '等' to '当' at position 3",
-      "reason": "'等' (wait) and '当' (act as/serve as) are completely different in meaning; this substitution makes the sentence incoherent and changes the intended meaning significantly.",
+      "reason": "'等' (wait) and '当' (act as, serve as) are completely different in meaning. This substitution changes the meaning of the sentence significantly, making it incoherent.",
       "score": 1
     }
   ]

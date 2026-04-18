@@ -5,23 +5,23 @@
   "wer": 0.12,
   "werEdits": 3,
   "werRefWords": 25,
-  "werNormalizedGold": "buenos dias es que note me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucha",
-  "werNormalizedPredicted": "buenos dias es que no te me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucho",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "buenos días es que noté me llegó una notificación en la app de una transferencia pero pues yo no la hice y me preocupa mucha",
+  "werNormalizedPredicted": "buenos días es que no te me llegó una notificación en la app de una transferencia pero pues yo no la hice y me preocupa mucho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 25,
-  "sigWerNormalizedGold": "buenos dias es que note me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucha",
-  "sigWerNormalizedPredicted": "buenos dias es que no te me llego una notificacion en la app de una transferencia pero pues yo no la hice y me preocupa mucho",
+  "sigWerNormalizedGold": "buenos días es que noté me llegó una notificación en la app de una transferencia pero pues yo no la hice y me preocupa mucha",
+  "sigWerNormalizedPredicted": "buenos días es que no te me llegó una notificación en la app de una transferencia pero pues yo no la hice y me preocupa mucho",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'note' to 'te' at position 4",
-      "reason": "'no' is inserted before 'te', but in context, this is likely a mis-segmentation of 'note' (should be 'note' not 'no te'). The meaning is not significantly changed, but the phrase is split incorrectly.",
-      "score": 2
+      "error": "Substitution: 'noté' to 'te' at position 4",
+      "reason": "The insertion of 'no' before 'te' changes the meaning of the sentence, as 'noté' (I noticed) is replaced by 'no te' (I didn't to you), which makes the sentence less coherent.",
+      "score": 1
     },
     {
       "error": "Substitution: 'mucha' to 'mucho' at position 24",
-      "reason": "'note' (should be 'note' as in 'note me llegó') is split into 'no' and 'te', which is a minor error in segmentation but does not change the overall meaning of the sentence.",
-      "score": 2
+      "reason": "'noté' (I noticed) is replaced by 'te' (to you), which removes the subject and action, significantly altering the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

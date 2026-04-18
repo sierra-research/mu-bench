@@ -1,21 +1,26 @@
 {
   "gold": "请问，请问，再等一下，是 C N 3 8 9。",
-  "predicted": "请问,请问,这道你叫是CN389?",
+  "predicted": "请问,请问,再问一下,是CN3849?",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 4,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
-  "werNormalizedGold": "请问 请问 再等一下 是 c n three eight nine",
-  "werNormalizedPredicted": "请问 请问 这道你叫是 c n three eight nine",
-  "significantWer": 0.07142857142857142,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "请问 请问 再等一下 是 c n 三 八 九",
+  "werNormalizedPredicted": "请问 请问 再问一下 是 c n 三 八 四 九",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "请 问 请 问 再 等 一 下 是 c n three eight nine",
-  "sigWerNormalizedPredicted": "请 问 请 问 这 道 你 叫 是 c n three eight nine",
+  "sigWerNormalizedGold": "请 问 请 问 再 等 一 下 是 c n 三 八 九",
+  "sigWerNormalizedPredicted": "请 问 请 问 再 问 一 下 是 c n 三 八 四 九",
   "sigWerErrors": [
     {
-      "error": "Substitution: '再' to '这' at position 4",
-      "reason": "'再' means 'again' or 'wait', while '这' means 'this'. This changes the meaning of the sentence and could confuse the listener about the intended action.",
+      "error": "Substitution: '等' to '问' at position 5",
+      "reason": "The word '等' (wait) was replaced with '问' (ask), which changes the meaning of the sentence and could confuse the listener about the intended action.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '四' at position 13",
+      "reason": "The digit '四' (four) was inserted in a sequence of numbers, which changes the intended number and could lead to significant misunderstanding, especially if this is an ID or code.",
       "score": 1
     }
   ]

@@ -1,16 +1,22 @@
 {
   "gold": "Posta kodu yanlış. Posta kodunu isterseniz ben tek tek söyleyeyim. 3 4 6 6 0.",
-  "predicted": "Posta kodu yanlış. Posta kodunu isterseniz ben tek tek söyleyeyim. 34660.",
+  "predicted": "Posta kodu yanlış. Posta kodunu isterseniz ben tek tek söyleyeyim. 346660.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.06666666666666667,
+  "werEdits": 1,
   "werRefWords": 15,
   "werNormalizedGold": "posta kodu yanlış posta kodunu isterseniz ben tek tek söyleyeyim üç dört altı altı sıfır",
-  "werNormalizedPredicted": "posta kodu yanlış posta kodunu isterseniz ben tek tek söyleyeyim üç dört altı altı sıfır",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "posta kodu yanlış posta kodunu isterseniz ben tek tek söyleyeyim üç dört altı altı altı sıfır",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "posta kodu yanlış posta kodunu isterseniz ben tek tek söyleyeyim üç dört altı altı sıfır",
-  "sigWerNormalizedPredicted": "posta kodu yanlış posta kodunu isterseniz ben tek tek söyleyeyim üç dört altı altı sıfır",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "posta kodu yanlış posta kodunu isterseniz ben tek tek söyleyeyim üç dört altı altı altı sıfır",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'altı' at position 14",
+      "reason": "An extra digit ('altı' meaning 'six') was inserted in the postal code sequence, which changes the actual postal code and could lead to incorrect information being conveyed.",
+      "score": 1
+    }
+  ]
 }

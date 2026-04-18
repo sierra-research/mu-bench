@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "你好",
   "werNormalizedPredicted": "yeah",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '你' to 'yeah' at position 0",
-      "reason": "The expected word is in Chinese ('你', meaning 'you'), but the actual transcription is in English ('yeah'), which is a completely different language and meaning. This is a significant error.",
+      "reason": "'你' is a Chinese character meaning 'you', while 'yeah' is an English affirmation. The languages are different and the meaning is not preserved.",
       "score": 1
     },
     {
       "error": "Deletion: '好' at position 1",
-      "reason": "The word '好' (meaning 'good' or 'hello' in Chinese) is missing entirely from the actual transcription, which further derails the intended meaning. This is a significant error.",
+      "reason": "'好' is a Chinese character meaning 'good' or 'hello' in this context. Its omission results in a loss of the intended greeting, making the sentence incomplete and incoherent.",
       "score": 1
     }
   ]

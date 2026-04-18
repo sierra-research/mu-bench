@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "email chính xác là minh chấm trần a còng email chấm com",
   "werNormalizedPredicted": "email chính xác là minh chấm gmail chấm gương",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "email chính xác là minh chấm trần a còng email chấm com",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'trần' to 'gmail' at position 6",
-      "reason": "'trần' is a surname, while 'gmail' is an email service provider. This changes the entire email address and its meaning.",
+      "reason": "'trần' is a surname in the email address, while 'gmail' is a domain provider. This substitution changes the entire structure and meaning of the email address, making it unrecognizable and unusable.",
       "score": 1
     },
     {
       "error": "Deletion: 'a' at position 7",
-      "reason": "Missing the 'a' (for 'a còng', meaning '@') in the email address makes the email invalid and unrecognizable.",
+      "reason": "The missing 'a' (from 'a còng', meaning '@') removes the '@' symbol from the email address, making it invalid and unusable.",
       "score": 1
     },
     {
       "error": "Substitution: 'com' to 'gương' at position 11",
-      "reason": "'com' is the domain ending for an email, while 'gương' is a completely unrelated word, making the email address incorrect.",
+      "reason": "'com' is the standard domain ending for emails, while 'gương' is a completely unrelated word. This substitution makes the email address invalid.",
       "score": 1
     }
   ]

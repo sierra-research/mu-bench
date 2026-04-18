@@ -2,15 +2,21 @@
   "gold": "C E E 2 B 2 X 3.",
   "predicted": "CE iki b ikix üç.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "c e e two b two x three",
-  "werNormalizedPredicted": "c e e two b two x three",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c e e iki b iki x üç",
+  "werNormalizedPredicted": "c e iki b iki x üç",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "c e e two b two x three",
-  "sigWerNormalizedPredicted": "c e e two b two x three",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c e e iki b iki x üç",
+  "sigWerNormalizedPredicted": "c e iki b iki x üç",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'e' at position 2",
+      "reason": "A letter is missing in a spelled-out sequence, which changes the intended sequence and could result in a different word or code being spelled. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

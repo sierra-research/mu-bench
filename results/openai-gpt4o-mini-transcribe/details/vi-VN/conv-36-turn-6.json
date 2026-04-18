@@ -1,16 +1,27 @@
 {
   "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "cọc tam bốn chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 13,
-  "werNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 13,
-  "sigWerNormalizedGold": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cọc tam bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cọc tam bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'cọc' at position 0",
+      "reason": "'Cộng' means 'plus' or 'add', while 'cọc' is a different word with unrelated meaning. This changes the meaning of the sentence significantly, especially in a numeric context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 2",
+      "reason": "'Tám mươi' means 'eighty', while 'tam' means 'three'. This is a significant change in the number, which alters the intended numeric sequence.",
+      "score": 1
+    }
+  ]
 }

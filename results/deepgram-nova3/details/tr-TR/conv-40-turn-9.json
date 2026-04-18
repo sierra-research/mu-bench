@@ -2,20 +2,30 @@
   "gold": "Ahmet nokta Arslan, A R S L A N at email nokta com.",
   "predicted": "Ahmet. Arslan arsd an et gmail dat kom",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werEdits": 1,
-  "werRefWords": 11,
-  "werNormalizedGold": "ahmet arslan a r s l a n at email com",
-  "werNormalizedPredicted": "ahmet arslan a r s l a n at gmail com",
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "ahmet arslan a r s l a n at email com",
-  "sigWerNormalizedPredicted": "ahmet arslan a r s l a n at gmail com",
+  "wer": 0.8461538461538461,
+  "werEdits": 11,
+  "werRefWords": 13,
+  "werNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "werNormalizedPredicted": "ahmet arslan arsd an et gmail dat kom",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet arslan arsd an et gmail dat kom",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'gmail' at position 9",
-      "reason": "'email' and 'gmail' are different email providers; substituting one for the other could result in an incorrect or undeliverable email address, which is a significant error.",
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' (meaning 'dot' in Turkish, used for email addresses) is missing, which makes the email address unclear and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'a' to 'arsd' at position 3",
+      "reason": "'a' is the first letter of the spelled surname 'arslan', but 'arsd' is not a correct letter in the sequence, breaking the correct spelling of the name.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 9",
+      "reason": "Missing 'at' in the email address structure makes the email address format incorrect and unusable.",
       "score": 1
     }
   ]

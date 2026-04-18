@@ -1,21 +1,26 @@
 {
   "gold": "Tên đầy đủ là Trần Thu.",
-  "predicted": "tôi đầy đủ là trần thu",
+  "predicted": "Có đầy đủ loại chần thu",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 1,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
-  "werNormalizedGold": "ten day du la tran thu",
-  "werNormalizedPredicted": "toi day du la tran thu",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tên đầy đủ là trần thu",
+  "werNormalizedPredicted": "có đầy đủ loại chần thu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "ten day du la tran thu",
-  "sigWerNormalizedPredicted": "toi day du la tran thu",
+  "sigWerNormalizedGold": "tên đầy đủ là trần thu",
+  "sigWerNormalizedPredicted": "có đầy đủ loại chần thu",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'ten' to 'toi' at position 0",
-      "reason": "'ten' and 'toi' are completely different words in Vietnamese and change the meaning of the sentence, making it incoherent or incorrect.",
+      "error": "Substitution: 'tên' to 'có' at position 0",
+      "reason": "'tên' means 'name' while 'có' means 'have'; this changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'là' to 'loại' at position 3",
+      "reason": "'là' means 'is' (to be) while 'loại' means 'type' or 'kind'; this substitution changes the structure and meaning of the sentence, making it incoherent.",
       "score": 1
     }
   ]

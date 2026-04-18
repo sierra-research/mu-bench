@@ -2,26 +2,31 @@
   "gold": "Urión, perdón. Urión 30, col. Tlatilco.",
   "predicted": "Unión, perdón, no es unión, Urión 30 Col Platilco.",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werEdits": 4,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
-  "werNormalizedGold": "urion perdon urion treinta col tlatilco",
-  "werNormalizedPredicted": "union perdon no es union urion treinta col tlatilco",
-  "significantWer": 0.3333333333333333,
+  "werNormalizedGold": "urión perdón urión treinta col tlatilco",
+  "werNormalizedPredicted": "unión perdón no es unión urión treinta col platilco",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "urion perdon urion treinta col tlatilco",
-  "sigWerNormalizedPredicted": "union perdon no es union urion treinta col tlatilco",
+  "sigWerNormalizedGold": "urión perdón urión treinta col tlatilco",
+  "sigWerNormalizedPredicted": "unión perdón no es unión urión treinta col platilco",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'urion' to 'union' at position 0",
-      "reason": "'Union' and 'urion' are different words and likely refer to different entities or names, which could change the meaning, especially if these are proper nouns or addresses.",
+      "error": "Substitution: 'urión' to 'unión' at position 0",
+      "reason": "'Urion' and 'union' are different words and likely refer to different entities or names, which could cause confusion in meaning.",
       "score": 1
     },
     {
       "error": "Insertion: 'no' at position 2",
-      "reason": "The insertion of 'no' introduces negation, which can significantly alter the meaning of the sentence.",
+      "reason": "The insertion of 'no' introduces a negation that changes the meaning of the sentence.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'tlatilco' to 'platilco' at position 5",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the intended place name.",
+      "score": 2
     }
   ]
 }

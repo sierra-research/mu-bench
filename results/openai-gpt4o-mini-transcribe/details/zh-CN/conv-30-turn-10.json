@@ -1,21 +1,31 @@
 {
   "gold": "俊，不是邻居，是林俊。",
-  "predicted": "去,不是邻去,是邻俊。",
+  "predicted": "去,不是鄰去,是鄰郡。",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 1,
+  "wer": 0.625,
+  "werEdits": 5,
   "werRefWords": 8,
-  "werNormalizedGold": "俊不是邻居是林俊",
-  "werNormalizedPredicted": "俊不是邻俊是林俊",
-  "significantWer": 0.125,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "俊 不是邻居 是林俊",
+  "werNormalizedPredicted": "去 不是鄰去 是鄰郡",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "俊 不 是 邻 居 是 林 俊",
-  "sigWerNormalizedPredicted": "俊 不 是 邻 俊 是 林 俊",
+  "sigWerNormalizedPredicted": "去 不 是 鄰 去 是 鄰 郡",
   "sigWerErrors": [
     {
-      "error": "Substitution: '居' to '俊' at position 4",
-      "reason": "'居' (neighbor) and '俊' (a name or adjective meaning handsome) are completely different words, and this substitution changes the meaning of the sentence, making it incoherent.",
+      "error": "Substitution: '俊' to '去' at position 0",
+      "reason": "'俊' and '去' are completely different characters with unrelated meanings, which significantly changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邻' to '鄰' at position 3",
+      "reason": "'邻' and '鄰' are simplified and traditional forms of the same character, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '林' to '鄰' at position 6",
+      "reason": "'林' (forest) and '鄰' (neighbor) are completely different words, which changes the meaning of the sentence.",
       "score": 1
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "我已打开app。",
   "predicted": "我一打开 App 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "我已打开 app",
-  "werNormalizedPredicted": "我已打开 app",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "我已打开app",
+  "werNormalizedPredicted": "我一打开 app",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "我 已 打 开 app",
-  "sigWerNormalizedPredicted": "我 已 打 开 app",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 一 打 开 app",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '已' to '一' at position 1",
+      "reason": "'已' means 'already', indicating a completed action, while '一' means 'one', which changes the meaning of the sentence and makes it less coherent. This substitution significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
 }

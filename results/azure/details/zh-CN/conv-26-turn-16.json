@@ -2,15 +2,26 @@
   "gold": "邮箱地址呢？邮箱地址你知道吗？",
   "predicted": "有箱地址呢，有箱地址你知道吗？",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "邮箱地址呢 邮箱地址你知道吗",
-  "werNormalizedPredicted": "邮箱地址呢 邮箱地址你知道吗",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "有箱地址呢 有箱地址你知道吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "邮 箱 地 址 呢 邮 箱 地 址 你 知 道 吗",
-  "sigWerNormalizedPredicted": "邮 箱 地 址 呢 邮 箱 地 址 你 知 道 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "有 箱 地 址 呢 有 箱 地 址 你 知 道 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '有' at position 0",
+      "reason": "'邮' (mail) and '有' (have) are completely different words; this changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '有' at position 5",
+      "reason": "Again, '邮' (mail) is replaced by '有' (have), which significantly alters the meaning and makes the sentence incorrect.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "C N 9 9 5.",
   "predicted": "Cene dokuz dokuz beş.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
-  "werNormalizedGold": "c n nine nine five",
-  "werNormalizedPredicted": "c n nine nine five",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n dokuz dokuz beş",
+  "werNormalizedPredicted": "cene dokuz dokuz beş",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n nine nine five",
-  "sigWerNormalizedPredicted": "c n nine nine five",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n dokuz dokuz beş",
+  "sigWerNormalizedPredicted": "cene dokuz dokuz beş",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'cene' at position 0",
+      "reason": "'c' is a single letter, likely part of a spelled-out sequence, while 'cene' is a full word; this changes the intended meaning and disrupts the sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from a spelled-out sequence significantly alters the intended sequence, making it a major error.",
+      "score": 1
+    }
+  ]
 }

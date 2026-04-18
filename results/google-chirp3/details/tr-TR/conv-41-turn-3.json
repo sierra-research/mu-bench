@@ -7,7 +7,7 @@
   "werRefWords": 18,
   "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
   "werNormalizedPredicted": "öncelikle bana bir kredi kartı gibi tartışma yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaramı",
-  "significantWer": 0.05555555555555555,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'limit' to 'gibi' at position 5",
-      "reason": "'limit' (meaning 'limit' or 'credit limit') is replaced with 'gibi' (meaning 'like/as'), which changes the meaning of the sentence and makes it incoherent in context.",
+      "reason": "'limit' (meaning 'limit') is replaced with 'gibi' (meaning 'like/as'), which changes the meaning of the sentence significantly and makes it incoherent in context.",
       "score": 1
     },
     {
       "error": "Substitution: 'numaranı' to 'numaramı' at position 17",
-      "reason": "'numaranı' (your number) is replaced with 'numaramı' (my number), which changes the reference and could cause confusion, but the overall intent of the sentence is still understandable.",
+      "reason": "Minor difference between 'numaranı' (your number) and 'numaramı' (my number), but the intended meaning is still understandable in context.",
       "score": 2
     }
   ]

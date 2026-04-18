@@ -2,31 +2,41 @@
   "gold": "¿Me puedes repetir de nuevo el correo de confirmación, por favor? Digo, ¿el número de confirmación?",
   "predicted": "¿Me puede repetir de nuevo el el correo de confirmación, por favor? Digo, el el número de confirmación.",
   "unintelligible": false,
-  "wer": 0.1875,
-  "werEdits": 3,
+  "wer": 0.375,
+  "werEdits": 6,
   "werRefWords": 16,
-  "werNormalizedGold": "me puedes repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
+  "werNormalizedGold": "me puedes repetir de nuevo el correo de confirmación por favor digo el número de confirmación",
   "werNormalizedPredicted": "me puede repetir de nuevo el el correo de confirmacion por favor digo el el numero de confirmacion",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "me puedes repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
+  "sigWerNormalizedGold": "me puedes repetir de nuevo el correo de confirmación por favor digo el número de confirmación",
   "sigWerNormalizedPredicted": "me puede repetir de nuevo el el correo de confirmacion por favor digo el el numero de confirmacion",
   "sigWerErrors": [
     {
       "error": "Substitution: 'puedes' to 'puede' at position 1",
-      "reason": "'puedes' (you can, informal) vs 'puede' (you can, formal); both convey the same request, only differing in formality, so the meaning is unchanged.",
-      "score": 3
+      "reason": "'puedes' is second person singular (you can), 'puede' is third person singular (he/she/it can); in context, this is a minor grammatical error that does not change the overall meaning.",
+      "score": 2
     },
     {
       "error": "Insertion: 'el' at position 6",
-      "reason": "Extra 'el' does not change the meaning of the sentence, just a minor repetition.",
+      "reason": "Extra 'el' is a repetition that does not affect the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'el' at position 12",
-      "reason": "Extra 'el' is a minor repetition and does not affect the meaning of the sentence.",
+      "error": "Substitution: 'confirmación' to 'confirmacion' at position 8",
+      "reason": "Only the accent is missing; this does not change the meaning or pronunciation in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'número' to 'numero' at position 13",
+      "reason": "Extra 'el' is a repetition that does not affect the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'confirmación' to 'confirmacion' at position 15",
+      "reason": "Only the accent is missing; this does not change the meaning or pronunciation in context.",
+      "score": 3
     }
   ]
 }

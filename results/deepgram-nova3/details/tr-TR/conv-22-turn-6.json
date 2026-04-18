@@ -2,15 +2,31 @@
   "gold": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
   "predicted": "Yalnız email adresim yanlış oldu. Zeynep değil, Zeynep olacak. Zeynep nokta arslan et email nokta com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1875,
+  "werEdits": 3,
   "werRefWords": 16,
-  "werNormalizedGold": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep değil zeynep olacak zeynep nokta arslan et email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "yalnız email adresim yanlış oldu zaynep değil zaynep olacak zaynep nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep değil zeynep olacak zeynep nokta arslan et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 7",
+      "reason": "The correct name is 'zaynep', but 'zeynep' is a different spelling. Since this is a proper noun (a name), a single letter difference is a minor error as the name is still recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
+      "reason": "Again, the name 'zaynep' is misspelled as 'zeynep'. As above, this is a minor error for a proper noun.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 12",
+      "reason": "In the context of an email address, 'at' and 'et' are phonetically similar, but 'at' is the correct English word for the '@' symbol. Using 'et' could cause confusion in an email address, making this a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -6,16 +6,21 @@
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "không xin cảm ơn",
-  "werNormalizedPredicted": "tom sy n gamen",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "tom sy'n gamen",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "không xin cảm ơn",
-  "sigWerNormalizedPredicted": "tom sy n gamen",
+  "sigWerNormalizedPredicted": "tom sy'n gamen",
   "sigWerErrors": [
     {
       "error": "Substitution: 'không' to 'tom' at position 0",
-      "reason": "The actual transcription is in a completely different language and none of the words match the expected Vietnamese phrase, resulting in a total loss of meaning.",
+      "reason": "The actual transcription is in a different language and does not preserve the meaning of the expected phrase, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ơn' at position 3",
+      "reason": "The word 'ơn' is missing in the actual transcription, further contributing to the loss of meaning and making the sentence incoherent.",
       "score": 1
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 19,
   "werNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
   "werNormalizedPredicted": "ama pardon telefon numaramız yanlış oldu telefon numaramızı tekrar söyler misiniz telefon numarasını veya ben bir daha söyleyeyim isterseniz",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'numarası' to 'numaramız' at position 3",
-      "reason": "'numarası' (his/her/its number) vs 'numaramız' (our number) changes the subject from third person to first person plural, but in context the sentence is about the speaker's number, so the meaning is only slightly affected.",
+      "reason": "'numarası' (his/her/its number) vs 'numaramız' (our number) changes the subject from third person to first person plural, but in context the meaning of the sentence is still clear and the intent is preserved.",
       "score": 2
     },
     {
       "error": "Substitution: 'misin' to 'misiniz' at position 10",
-      "reason": "'misin' is informal singular 'you', 'misiniz' is formal/plural 'you'; this changes the level of formality but not the core meaning of the request.",
-      "score": 2
+      "reason": "'misin' is informal singular, 'misiniz' is formal/plural; this is a formality difference and does not change the meaning of the request.",
+      "score": 3
     }
   ]
 }

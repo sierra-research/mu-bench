@@ -1,16 +1,22 @@
 {
   "gold": "C N 7 6 2。",
-  "predicted": "CN762",
+  "predicted": "cn362",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "c n seven six two",
-  "werNormalizedPredicted": "c n seven six two",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n 七 六 二",
+  "werNormalizedPredicted": "c n 三 六 二",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n seven six two",
-  "sigWerNormalizedPredicted": "c n seven six two",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n 七 六 二",
+  "sigWerNormalizedPredicted": "c n 三 六 二",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '七' to '三' at position 2",
+      "reason": "The digit '七' (seven) was replaced with '三' (three), which is a different number and changes the meaning of the sequence. This is a significant error, especially in contexts like codes or numbers where accuracy is critical.",
+      "score": 1
+    }
+  ]
 }

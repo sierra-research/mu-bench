@@ -1,22 +1,27 @@
 {
   "gold": "Yani, özellikle telefon numarasında çok hata var, diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış. Tekrar söylüyorum telefon numarasını. Artı 90 123 0 90 45 67.",
-  "predicted": "Yani özellikle telefon numarasında çok hata var. Diğerlerinde birer harf ama telefon numarası tamamen neredeyse yanlış. Tekrar söylüyorum telefon numarasını. Artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi.",
+  "predicted": "Yani özellikle telefon numarasında çok hata var. Diğerlerinde birer harf ama telefon numarası tamamen neredeyse yanlış. Tekrar söylüyorum telefon numarasını. Artı doksan yüz yirmi üç, sıfır doksan kırk beş altmış yedi.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 3,
-  "werRefWords": 30,
-  "werNormalizedGold": "yani özellikle telefon numarasında çok hata var diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "yani özellikle telefon numarasında çok hata var diğerlerinde birer harf ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 30,
-  "sigWerNormalizedGold": "yani özellikle telefon numarasında çok hata var diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "yani özellikle telefon numarasında çok hata var diğerlerinde birer harf ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "wer": 0.1724137931034483,
+  "werEdits": 5,
+  "werRefWords": 29,
+  "werNormalizedGold": "özellikle telefon numarasında çok hata var diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "özellikle telefon numarasında çok hata var diğerlerinde birer harf ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 29,
+  "sigWerNormalizedGold": "özellikle telefon numarasında çok hata var diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "özellikle telefon numarasında çok hata var diğerlerinde birer harf ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'diğerlerini' to 'birer' at position 7",
-      "reason": "'diğerlerini' (the others) was replaced with 'diğerlerinde' (in the others), which slightly changes the meaning but does not derail the overall sentence. The main message is still clear.",
+      "error": "Substitution: 'diğerlerini' to 'birer' at position 6",
+      "reason": "'diğerlerini' (the others) changed to 'diğerlerinde' (in the others), which slightly changes the meaning but does not derail the overall sentence.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 20",
+      "reason": "In the phone number, 'bir' (one) is replaced with 'yüz' (hundred), which significantly changes the phone number and makes it incorrect.",
+      "score": 1
     }
   ]
 }

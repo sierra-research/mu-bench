@@ -2,31 +2,36 @@
   "gold": "No, es incorrecto. El número es.",
   "predicted": "Número es cinco cinco uno dos cuatro siete siete ocho. ¿Me puedes confirmar si está correcto? No, ese es incorrecto. El número es por favor.",
   "unintelligible": false,
-  "wer": 3.1666666666666665,
-  "werEdits": 19,
+  "wer": 3.3333333333333335,
+  "werEdits": 20,
   "werRefWords": 6,
-  "werNormalizedGold": "no es incorrecto el numero es",
+  "werNormalizedGold": "no es incorrecto el número es",
   "werNormalizedPredicted": "numero es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si esta correcto no ese es incorrecto el numero es por favor",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "no es incorrecto el numero es",
+  "sigWerNormalizedGold": "no es incorrecto el número es",
   "sigWerNormalizedPredicted": "numero es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si esta correcto no ese es incorrecto el numero es por favor",
   "sigWerErrors": [
     {
       "error": "Insertion: 'numero' at position 0",
-      "reason": "The actual transcript includes an entire phone number and additional context before the expected phrase, which changes the focus and meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'ese' at position 1",
-      "reason": "The word 'ese' (that) is inserted, which slightly changes the phrasing but does not significantly alter the meaning in this context.",
+      "reason": "The insertion of 'numero' at the beginning does not change the overall meaning, as it is contextually related to the expected phrase.",
       "score": 2
     },
     {
-      "error": "Insertion: 'por' at position 6",
-      "reason": "The addition of 'por favor' (please) is a polite addition and does not change the meaning of the sentence.",
+      "error": "Insertion: 'ese' at position 1",
+      "reason": "The insertion of 'ese' (that) adds a minor clarification but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'número' to 'numero' at position 4",
+      "reason": "The only difference is the missing accent on 'número', which does not affect meaning or pronunciation in this context.",
       "score": 3
+    },
+    {
+      "error": "Insertion: 'por' at position 6",
+      "reason": "The insertion of 'por' (please) at the end is a polite addition and does not change the meaning of the sentence.",
+      "score": 2
     }
   ]
 }

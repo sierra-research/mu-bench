@@ -1,41 +1,46 @@
 {
   "gold": "Tôi đang muốn xem xét tăng hạn mức thẻ tín dụng. Bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ?",
-  "predicted": "Bạn, ờ tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy. Bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ?",
+  "predicted": "Bạn ờ tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy. Bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ?",
   "unintelligible": false,
-  "wer": 0.17142857142857143,
-  "werEdits": 6,
+  "wer": 0.2,
+  "werEdits": 7,
   "werRefWords": 35,
   "werNormalizedGold": "tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ",
-  "werNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 35,
   "sigWerNormalizedGold": "tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem điều kiện với quy trình cũng như tôi cần cung cấp các giấy tờ gì để được xét duyệt nhỉ",
-  "sigWerNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
+  "sigWerNormalizedPredicted": "bạn tôi đang muốn xem xét tăng hạn mức thẻ tín dụng ấy bạn cho tôi xem là cái điều kiện với cả quy trình cũng như là tôi cần cung cấp cái giấy tờ gì để được xét duyệt nhỉ",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bạn' at position 0",
-      "reason": "Adding 'bạn' (you/friend) at the start does not change the overall meaning, as it just adds an address to the listener.",
+      "reason": "Adding 'bạn' (you/friend) at the start slightly changes the focus but does not derail the meaning of the sentence.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'ấy' at position 11",
+      "reason": "'ấy' is a filler word in Vietnamese, used for emphasis or clarification, and does not change the meaning.",
+      "score": 3
     },
     {
       "error": "Insertion: 'là' at position 15",
-      "reason": "Adding 'là' (is/that) here is a filler word in Vietnamese and does not change the meaning of the sentence.",
-      "score": 2
+      "reason": "'là' is a filler word here and does not affect the meaning of the sentence.",
+      "score": 3
     },
     {
       "error": "Insertion: 'cả' at position 18",
-      "reason": "Adding 'cả' (also/and) is a minor addition that does not change the meaning of the sentence.",
-      "score": 2
+      "reason": "'cả' adds emphasis to 'quy trình' (the process), but the overall meaning remains unchanged.",
+      "score": 3
     },
     {
       "error": "Insertion: 'là' at position 22",
-      "reason": "Another filler 'là' that does not affect the meaning of the sentence.",
-      "score": 2
+      "reason": "'là' is a filler word and does not change the meaning of the sentence.",
+      "score": 3
     },
     {
       "error": "Substitution: 'các' to 'cái' at position 26",
-      "reason": "'các' (plural marker) vs 'cái' (classifier) is a minor grammatical difference in Vietnamese and does not change the meaning in this context.",
+      "reason": "'các' (plural marker) to 'cái' (classifier) is a minor grammatical change in Vietnamese, but the meaning is still clear and unchanged.",
       "score": 2
     }
   ]

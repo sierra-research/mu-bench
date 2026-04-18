@@ -5,27 +5,27 @@
   "wer": 0.6,
   "werEdits": 6,
   "werRefWords": 10,
-  "werNormalizedGold": "g h zero four one two three four five six",
-  "werNormalizedPredicted": "g h one hundred four thousand five hundred six",
-  "significantWer": 0.3,
+  "werNormalizedGold": "g h sıfır dört bir iki üç dört beş altı",
+  "werNormalizedPredicted": "g h yüz dört bin beş yüz altı",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "g h zero four one two three four five six",
-  "sigWerNormalizedPredicted": "g h one hundred four thousand five hundred six",
+  "sigWerNormalizedGold": "g h sıfır dört bir iki üç dört beş altı",
+  "sigWerNormalizedPredicted": "g h yüz dört bin beş yüz altı",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'zero' at position 2",
-      "reason": "'zero' is a single digit, while 'one hundred' is a completely different number, changing the intended sequence significantly.",
+      "error": "Substitution: 'sıfır' to 'yüz' at position 2",
+      "reason": "'sıfır' means 'zero' and 'yüz' means 'hundred' in Turkish; this changes the numeric value significantly.",
       "score": 1
     },
     {
-      "error": "Substitution: 'two' to 'hundred' at position 5",
-      "reason": "'one' is a single digit, 'four thousand' is a large number, which changes the meaning of the sequence completely.",
+      "error": "Substitution: 'bir' to 'bin' at position 4",
+      "reason": "'bir' means 'one' and 'bin' means 'thousand' in Turkish; this is a major change in the number sequence.",
       "score": 1
     },
     {
-      "error": "Insertion: 'hundred' at position 9",
-      "reason": "'two' is a single digit, 'five hundred' is a large number, which alters the intended sequence significantly.",
+      "error": "Deletion: 'dört' at position 7",
+      "reason": "Omitting 'dört' (four) from the sequence alters the intended number, which is significant in a digit sequence.",
       "score": 1
     }
   ]

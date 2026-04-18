@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "tôi cần nghe lại mã theo dõi",
   "werNormalizedPredicted": "tôi tôi cần nghe lại mẹ theo dõi",
-  "significantWer": 0.14285714285714285,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "tôi cần nghe lại mã theo dõi",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'tôi' at position 1",
-      "reason": "Repeating 'tôi' does not change the meaning of the sentence, as it is just a redundant repetition of the subject.",
+      "reason": "Repeating 'tôi' (I) does not change the meaning of the sentence, as it is just a redundant subject and does not derail the meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'mã' to 'mẹ' at position 4",
-      "reason": "'mã' (code) and 'mẹ' (mother) are completely different words and this substitution changes the meaning of the sentence significantly.",
+      "reason": "'mã' means 'code' and 'mẹ' means 'mother' in Vietnamese; substituting 'code' with 'mother' completely changes the meaning of the sentence and makes it incoherent in context.",
       "score": 1
     }
   ]

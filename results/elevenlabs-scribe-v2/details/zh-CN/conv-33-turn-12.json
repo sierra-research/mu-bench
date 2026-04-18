@@ -1,16 +1,22 @@
 {
   "gold": "不是邻居，是林俊，俊，J U N。",
-  "predicted": "不是邻居，是邻俊，俊，J U N。",
+  "predicted": "不是邻居，是邻俊，俊，JUN。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
   "werRefWords": 11,
   "werNormalizedGold": "不是邻居 是林俊 俊 j u n",
-  "werNormalizedPredicted": "不是邻居 是林俊 俊 j u n",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "不是邻居 是邻俊 俊 j u n",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 j u n",
-  "sigWerNormalizedPredicted": "不 是 邻 居 是 林 俊 俊 j u n",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "不 是 邻 居 是 邻 俊 俊 j u n",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '邻' at position 5",
+      "reason": "'林' and '邻' are different Chinese characters with different meanings. Substituting '林' (a common surname or means 'forest') with '邻' (means 'neighbor') changes the meaning of the sentence and could cause confusion, especially in a name context.",
+      "score": 1
+    }
+  ]
 }

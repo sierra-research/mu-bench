@@ -2,20 +2,25 @@
   "gold": "Chào Anna nha. Mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
   "predicted": "Ờ, chào Anna nha. Mình đang muốn tối ưu chi tiết-- tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng. Bạn có thể giúp mình xem là cần chuẩn bị cái gì không?",
   "unintelligible": false,
-  "wer": 0.03125,
-  "werEdits": 1,
+  "wer": 0.15625,
+  "werEdits": 5,
   "werRefWords": 32,
   "werNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "werNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
-  "sigWerNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
+  "sigWerNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiết tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'thẻ' at position 16",
-      "reason": "'thẻ tín dụng' means 'credit card', while 'tín dụng' alone means 'credit'. Omitting 'thẻ' changes the meaning from 'credit card limit' to just 'credit limit', which could cause confusion but is still related to the main topic.",
+      "error": "Insertion: 'tiết' at position 9",
+      "reason": "The insertion of 'tiết' in 'tối ưu chi tiết tối ưu chi tiêu' adds redundancy but does not change the overall meaning of the sentence, as the main intent about optimizing personal spending remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'về' at position 16",
+      "reason": "Replacing 'thẻ' (card) with 'về' (about) changes the meaning of the phrase from 'tăng hạn mức thẻ tín dụng' (increase credit card limit) to 'tăng hạn mức về tín dụng' (increase limit about credit), which is less precise but still understandable in context. The main intent is preserved, but the specificity is lost.",
       "score": 2
     }
   ]

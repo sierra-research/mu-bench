@@ -1,16 +1,32 @@
 {
   "gold": "Sí. El correo es María punto López arroba email punto com.",
-  "predicted": "Sí, el correo es maria.lopez@gmail.com.",
+  "predicted": "Sí, el correo es maria.lopez@mi.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
-  "werNormalizedGold": "si el correo es maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "si el correo es maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí el correo es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "sí el correo es maria punto lopez arroba mi punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "si el correo es maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "si el correo es maria punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sí el correo es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "sí el correo es maria punto lopez arroba mi punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 4",
+      "reason": "Missing accent on 'í' in 'maría' is a minor spelling error, but the name is still clearly recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 6",
+      "reason": "Missing accent on 'ó' in 'lópez' is a minor spelling error, but the name is still clearly recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'mi' at position 8",
+      "reason": "'email' is replaced with 'mi', which changes the domain of the email address and makes it incorrect. This is a significant error as it alters the meaning and correctness of the email.",
+      "score": 1
+    }
+  ]
 }

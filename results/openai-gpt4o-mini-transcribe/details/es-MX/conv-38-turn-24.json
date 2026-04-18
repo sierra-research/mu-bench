@@ -1,21 +1,31 @@
 {
   "gold": "No. ¿Entonces me vas a transferir con algún agente?",
-  "predicted": "No, entonces nada más te vas a transferir con algún agente?",
+  "predicted": "No, entonces no vas a transferir con alguna gente?",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 3,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "no entonces me vas a transferir con algun agente",
-  "werNormalizedPredicted": "no entonces nada mas te vas a transferir con algun agente",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "número entonces me vas a transferir con algún agente",
+  "werNormalizedPredicted": "no entonces no vas a transferir con alguna gente",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "no entonces me vas a transferir con algun agente",
-  "sigWerNormalizedPredicted": "no entonces nada mas te vas a transferir con algun agente",
+  "sigWerNormalizedGold": "número entonces me vas a transferir con algún agente",
+  "sigWerNormalizedPredicted": "no entonces no vas a transferir con alguna gente",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'me' to 'te' at position 2",
-      "reason": "'nada mas' (just) adds emphasis but does not change the overall meaning of the sentence; the intent remains the same.",
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) is replaced by 'no' (no), which changes the meaning of the sentence significantly and removes the reference to a number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'me' to 'no' at position 2",
+      "reason": "'me' (to me) is replaced by 'no' (no), which changes the meaning from a personal action to a negation, significantly altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'algún' to 'alguna' at position 7",
+      "reason": "'algún' (some, masculine) is replaced by 'alguna' (some, feminine), which is a minor grammatical error but does not change the overall meaning.",
       "score": 2
     }
   ]

@@ -7,20 +7,20 @@
   "werRefWords": 7,
   "werNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
   "werNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
   "sigWerNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kartımın' to 'kartın' at position 1",
-      "reason": "'kartımın' means 'of my card' while 'kartın' means 'of your card'; this changes the possessive from first person to second person, which is a minor error as the overall meaning of the sentence is still clear, but the subject changes.",
-      "score": 2
+      "reason": "'kartımın' means 'of my card' (possessive), while 'kartın' means 'of your card' (possessive). This changes the subject from first person to second person, which is a significant change in meaning.",
+      "score": 1
     },
     {
       "error": "Deletion: 'karttan' at position 3",
-      "reason": "'ana karttan' (from the main card) and 'anakarttan' (from the motherboard) are different words; however, in Turkish, 'anakart' can sometimes be used to refer to 'main card' in certain contexts, but here it likely changes the meaning from 'main card' to 'motherboard', which is a significant error as it can confuse the meaning.",
+      "reason": "'ana karttan' (from the main card) and 'anakarttan' (from the motherboard) are different words; 'anakart' is a technical term for motherboard, while 'ana kart' means main card. This substitution changes the meaning significantly.",
       "score": 1
     }
   ]

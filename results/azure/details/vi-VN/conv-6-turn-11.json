@@ -7,7 +7,7 @@
   "werRefWords": 2,
   "werNormalizedGold": "sẵn sàng",
   "werNormalizedPredicted": "trong",
-  "significantWer": 1.0,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "sẵn sàng",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'sẵn' to 'trong' at position 0",
-      "reason": "'trong' (meaning 'in' or 'inside') is completely different from 'sẵn' (meaning 'ready'), which changes the meaning of the sentence entirely.",
+      "reason": "'trong' means 'in' or 'inside' in Vietnamese, while 'sẵn' means 'ready'. This substitution completely changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'sàng' at position 1",
-      "reason": "Omitting 'sàng' means the phrase 'sẵn sàng' ('ready') is not conveyed at all, resulting in a significant loss of meaning.",
+      "reason": "The word 'sàng' is missing, which is necessary to complete the phrase 'sẵn sàng' meaning 'ready'. Its omission makes the phrase incomplete and changes the meaning.",
       "score": 1
     }
   ]

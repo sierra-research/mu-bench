@@ -2,15 +2,26 @@
   "gold": "Juan punto López arroba email punto com.",
   "predicted": "juan.lopez@emael.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "juan punto lopez arroba email punto com",
-  "werNormalizedPredicted": "juan punto lopez arroba email punto com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "juan punto lopez arroba emael punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "juan punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "juan punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "juan punto lopez arroba emael punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 2",
+      "reason": "Accent missing in 'lopez', but the name is still clearly recognizable and the meaning is not changed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'emael' at position 4",
+      "reason": "'emael' is a misspelling of 'email', but it is still understandable in context and does not change the meaning.",
+      "score": 2
+    }
+  ]
 }

@@ -2,26 +2,21 @@
   "gold": "Tôi muốn.",
   "predicted": "Rồi muốn à?",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 2,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "tôi muốn",
-  "werNormalizedPredicted": "rồi muốn à",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "muốn",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "tôi muốn",
-  "sigWerNormalizedPredicted": "rồi muốn à",
+  "sigWerNormalizedPredicted": "muốn",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tôi' to 'rồi' at position 0",
-      "reason": "'tôi' means 'I' (first person pronoun), while 'rồi' means 'already' or 'then'; this changes the subject and meaning of the sentence significantly.",
+      "error": "Deletion: 'tôi' at position 0",
+      "reason": "The subject 'tôi' (I) is missing, which removes the subject from the sentence and makes the meaning incomplete or ambiguous.",
       "score": 1
-    },
-    {
-      "error": "Insertion: 'à' at position 2",
-      "reason": "'à' is a discourse particle that adds a questioning or softening tone, but its presence does not significantly change the core meaning of the sentence.",
-      "score": 2
     }
   ]
 }

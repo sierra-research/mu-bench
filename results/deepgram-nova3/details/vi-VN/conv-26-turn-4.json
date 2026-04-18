@@ -7,7 +7,7 @@
   "werRefWords": 26,
   "werNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám mươi bốn chín mươi một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 26,
   "sigWerNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
@@ -15,8 +15,8 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'mươi' at position 17",
-      "reason": "The insertion of 'mươi' changes the number from 'chín một' (91) to 'chín mươi một' (91), which in Vietnamese is actually the same number, but the way it is spoken is different. However, in this context, both refer to the same phone number digit sequence, so the meaning is preserved.",
-      "score": 3
+      "reason": "The insertion of 'mươi' changes the number from 'chín một' (91) to 'chín mươi một' (91), which in Vietnamese both mean 91, but 'chín một' is a non-standard way to say 91, while 'chín mươi một' is the standard. The meaning (the phone number) is preserved, so this is a minor error.",
+      "score": 2
     }
   ]
 }

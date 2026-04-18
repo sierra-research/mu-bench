@@ -1,21 +1,26 @@
 {
   "gold": "Oh, hold on. Oh crap. I'm sorry. I forgot I didn't have paper. Hold on. Let me get a piece of paper.",
-  "predicted": "Oh, hold on a sec. I'm sorry, I forgot. I didn't have paper. Hold on. Let me get a piece of paper.",
+  "predicted": "Oh, hold on, Chat. I'm sorry, I forgot. I didn't have paper. Hold on. Let me get a piece of paper.",
   "unintelligible": false,
   "wer": 0.08333333333333333,
   "werEdits": 2,
   "werRefWords": 24,
   "werNormalizedGold": "oh hold on oh crap i am sorry i forgot i did not have paper hold on let me get a piece of paper",
-  "werNormalizedPredicted": "oh hold on a sec i am sorry i forgot i did not have paper hold on let me get a piece of paper",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "oh hold on chat i am sorry i forgot i did not have paper hold on let me get a piece of paper",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 24,
   "sigWerNormalizedGold": "oh hold on oh crap i am sorry i forgot i did not have paper hold on let me get a piece of paper",
-  "sigWerNormalizedPredicted": "oh hold on a sec i am sorry i forgot i did not have paper hold on let me get a piece of paper",
+  "sigWerNormalizedPredicted": "oh hold on chat i am sorry i forgot i did not have paper hold on let me get a piece of paper",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'oh' to 'a' at position 3",
-      "reason": "'a sec' is an inserted phrase that adds a minor clarification ('hold on a sec' instead of just 'hold on'), but does not change the overall meaning of the sentence.",
+      "error": "Substitution: 'oh' to 'chat' at position 3",
+      "reason": "'crap' is an exclamation expressing frustration or surprise, while 'chat' is a noun/verb referring to conversation. The substitution changes the meaning of the utterance but does not derail the overall intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'crap' at position 4",
+      "reason": "infra_error",
       "score": 2
     }
   ]

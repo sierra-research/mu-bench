@@ -2,15 +2,36 @@
   "gold": "美玲 at email dot com。",
   "predicted": "meilingemailtodgram。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "meiling email todgram",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "meiling email todgram",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 0",
+      "reason": "'美' is a Chinese character, while 'meiling' is a romanized name. The substitution changes the script and may not be recognized as the same name, which is significant in contexts like email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The character '玲' is missing, which is part of the full name. Omitting part of a name in an email address is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'dot' to 'todgram' at position 4",
+      "reason": "'dot' is replaced with 'todgram', which is not a valid domain separator and changes the meaning and function of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'com' at position 5",
+      "reason": "Missing 'com' at the end of the email address makes the address incomplete and unusable.",
+      "score": 1
+    }
+  ]
 }

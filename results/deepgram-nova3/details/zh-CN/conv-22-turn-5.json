@@ -2,20 +2,25 @@
   "gold": "C N 4 8 2。",
   "predicted": "四宝二",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "c n four eight two",
-  "werNormalizedPredicted": "four eight two",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n 四 八 二",
+  "werNormalizedPredicted": "四 宝 二",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n four eight two",
-  "sigWerNormalizedPredicted": "four eight two",
+  "sigWerNormalizedGold": "c n 四 八 二",
+  "sigWerNormalizedPredicted": "四 宝 二",
   "sigWerErrors": [
     {
       "error": "Deletion: 'c' at position 0",
-      "reason": "The letter 'c' is missing from the beginning of a sequence of spelled-out letters/numbers, which changes the intended sequence and could result in a completely different code or identifier.",
+      "reason": "'c' is part of a spelled-out sequence at the start; omitting a letter in a spelled-out sequence is a significant error as it changes the intended content.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '八' to '宝' at position 3",
+      "reason": "'八' (eight) and '宝' (treasure) are completely different words in Chinese; this changes the meaning and is a significant error.",
       "score": 1
     }
   ]

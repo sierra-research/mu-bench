@@ -7,7 +7,7 @@
   "werRefWords": 15,
   "werNormalizedGold": "phone number would be one two one two one two three four five six seven",
   "werNormalizedPredicted": "number would be one two one two one two three four five six seven",
-  "significantWer": 0.06666666666666667,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "phone number would be one two one two one two three four five six seven",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'phone' at position 0",
-      "reason": "The word 'phone' is missing, which changes the meaning from a general 'number' to specifically a 'phone number'. This is a significant error as it could lead to confusion about what type of number is being referred to.",
+      "reason": "The word 'phone' specifies what kind of number is being referred to. Its omission could cause confusion, as 'number' alone is less specific and could refer to any number, not necessarily a phone number. This changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

@@ -5,28 +5,28 @@
   "wer": 0.3125,
   "werEdits": 5,
   "werRefWords": 16,
-  "werNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
-  "werNormalizedPredicted": "daha once behzat ekstra istemistim aylik is henuz su ana kadar gelmedi bana gonderebilir misiniz hesap ekstresini",
-  "significantWer": 0.1875,
-  "majorErrorsCount": 3,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce behzat ekstra istemiştim aylık iş henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap ekstresini",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "daha once hesap ekstresi istemistim aylik istedigim su ana kadar gelmedi bana gonderebilir misin hesap ekstresini",
-  "sigWerNormalizedPredicted": "daha once behzat ekstra istemistim aylik is henuz su ana kadar gelmedi bana gonderebilir misiniz hesap ekstresini",
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce behzat ekstra istemiştim aylık iş henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap ekstresini",
   "sigWerErrors": [
     {
       "error": "Substitution: 'hesap' to 'behzat' at position 2",
-      "reason": "'hesap' means 'account' and 'behzat' is a proper noun/name; this substitution completely changes the meaning and makes the sentence incoherent.",
+      "reason": "'hesap' (account) is replaced with 'behzat' (a Turkish name), which completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'istedigim' to 'henuz' at position 6",
-      "reason": "The insertion of 'is' does not make sense in the context and disrupts the meaning of the sentence.",
-      "score": 1
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "The insertion of 'iş' (work) does not significantly change the overall meaning of the sentence, as the main request is still clear.",
+      "score": 2
     },
     {
       "error": "Substitution: 'misin' to 'misiniz' at position 13",
-      "reason": "'istedigim' means 'that I wanted' and 'henuz' means 'not yet'; this substitution changes the meaning of the sentence significantly.",
-      "score": 1
+      "reason": "'istediğim' (that I wanted) is replaced with 'henüz' (yet), which changes the nuance but the main intent of the sentence remains understandable.",
+      "score": 2
     }
   ]
 }

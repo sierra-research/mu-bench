@@ -5,22 +5,22 @@
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum",
-  "werNormalizedPredicted": "merhaba hesap kredi kartinin limitini artirmak istiyorum",
-  "significantWer": 0.16666666666666666,
+  "werNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum",
+  "werNormalizedPredicted": "merhaba hesap kredi kartının limitini artırmak istiyorum",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum",
-  "sigWerNormalizedPredicted": "merhaba hesap kredi kartinin limitini artirmak istiyorum",
+  "sigWerNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum",
+  "sigWerNormalizedPredicted": "merhaba hesap kredi kartının limitini artırmak istiyorum",
   "sigWerErrors": [
     {
       "error": "Insertion: 'hesap' at position 1",
-      "reason": "The word 'hesap' (account) is inserted, but the main intent of the sentence (increasing the credit card limit) remains clear. The addition does not derail the meaning, but adds unnecessary information.",
+      "reason": "The word 'hesap' (account) is inserted, which adds an extra concept but does not derail the overall meaning of the sentence, which is about increasing a card limit.",
       "score": 2
     },
     {
-      "error": "Substitution: 'kartimin' to 'kartinin' at position 2",
-      "reason": "'Kartimin' means 'my card' and 'kartinin' means 'your card'. This changes the ownership of the card, which is significant in the context of a request to increase a card limit, as it could refer to a different person's card.",
+      "error": "Substitution: 'kartımın' to 'kartının' at position 2",
+      "reason": "'kartımın' means 'my card's' and 'kartının' means 'your card's'; this changes the ownership from first person to second person, which is a significant change in meaning.",
       "score": 1
     }
   ]

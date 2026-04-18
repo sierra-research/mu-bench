@@ -2,21 +2,26 @@
   "gold": "Evet doğru ancak Zaynep ve Arslan arasında nokta işareti var.",
   "predicted": "Evet doğru, ancak Zeynep ve arslan arasında. Işareti var.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "evet doğru ancak zeynep ve arslan arasında nokta işareti var",
+  "werNormalizedGold": "evet doğru ancak zaynep ve arslan arasında nokta işareti var",
   "werNormalizedPredicted": "evet doğru ancak zeynep ve arslan arasında işareti var",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "evet doğru ancak zeynep ve arslan arasında nokta işareti var",
+  "sigWerNormalizedGold": "evet doğru ancak zaynep ve arslan arasında nokta işareti var",
   "sigWerNormalizedPredicted": "evet doğru ancak zeynep ve arslan arasında işareti var",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'nokta' at position 7",
-      "reason": "The word 'nokta' (meaning 'dot' or 'period') is omitted, which removes the specific information about what kind of sign is between 'zeynep' and 'arslan'. The sentence still conveys that there is a sign between the names, but the type of sign is lost. This is a minor error as the overall meaning is mostly preserved, but some detail is missing.",
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 3",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 7",
+      "reason": "Omitting 'nokta' (meaning 'dot' or 'period') removes a key detail about what kind of 'işareti' (sign/mark) is being referred to, which changes the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

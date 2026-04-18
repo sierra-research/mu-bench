@@ -2,21 +2,31 @@
   "gold": "Tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất. Bạn có thể giúp tôi được không Gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải.",
   "predicted": "Tôi đang cần bản sao sao kê hoặc nó đơn mới nhất. Bạn có giúp tôi được không? Gửi qua email đăng ký hoặc là hướng dẫn vô cách tải.",
   "unintelligible": false,
-  "wer": 0.03225806451612903,
-  "werEdits": 1,
+  "wer": 0.0967741935483871,
+  "werEdits": 3,
   "werRefWords": 31,
   "werNormalizedGold": "tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất bạn có thể giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
-  "werNormalizedPredicted": "tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi đang cần bản sao sao kê hoặc nó đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn vô cách tải",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 31,
   "sigWerNormalizedGold": "tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất bạn có thể giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
-  "sigWerNormalizedPredicted": "tôi đang cần bản sao sao kê hoặc hóa đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn tôi cách tải",
+  "sigWerNormalizedPredicted": "tôi đang cần bản sao sao kê hoặc nó đơn mới nhất bạn có giúp tôi được không gửi qua email đăng ký hoặc là hướng dẫn vô cách tải",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'hóa' to 'nó' at position 8",
+      "reason": "'hóa đơn' means 'invoice' or 'bill', while 'nó đơn' is not a valid phrase and changes the meaning, making the sentence confusing.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'thể' at position 14",
-      "reason": "The word 'thể' (can) is omitted, but the sentence still makes sense and the request is understandable. The omission does not significantly change the meaning of the sentence.",
+      "reason": "Missing 'thể' in 'bạn có thể giúp tôi' changes 'can you help me' to 'you help me', but the request is still understandable.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'tôi' to 'vô' at position 28",
+      "reason": "'hướng dẫn tôi cách tải' means 'guide me how to download', but 'hướng dẫn vô cách tải' is ungrammatical and unclear, significantly affecting meaning.",
+      "score": 1
     }
   ]
 }

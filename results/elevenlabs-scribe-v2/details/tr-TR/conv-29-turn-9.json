@@ -1,16 +1,22 @@
 {
   "gold": "Teşekkür ederim. Email adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekstreye, işlem yapacağım. Tekrar eder misiniz email adresimi lütfen?",
-  "predicted": "Teşekkür ederim. Eee, e-mail adresimde bir hata yok, değil mi? Çünkü acil olarak ihtiyacım var o ekstreye. İşlem yapacağım. Tekrar eder misiniz e-mail adresimi lütfen?",
+  "predicted": "Teşekkür ederim. Eee, e-mail adresimde bir hata yok, değil mi? Çünkü acil olarak ihtiyacım var o Xray'e. İşlem yapacağım. Tekrar eder misiniz e-mail adresimi lütfen?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08333333333333333,
+  "werEdits": 2,
   "werRefWords": 24,
   "werNormalizedGold": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
-  "werNormalizedPredicted": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o xray e işlem yapacağım tekrar eder misiniz email adresimi lütfen",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 24,
   "sigWerNormalizedGold": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
-  "sigWerNormalizedPredicted": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o xray e işlem yapacağım tekrar eder misiniz email adresimi lütfen",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ekstreye' to 'e' at position 15",
+      "reason": "'ekstreye' (meaning 'to the statement' in Turkish, referring to a bank statement or similar) was replaced with 'xray e', which is a completely different word and meaning. This substitution makes the sentence incoherent and changes the intended meaning significantly.",
+      "score": 1
+    }
+  ]
 }

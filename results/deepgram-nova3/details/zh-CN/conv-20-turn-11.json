@@ -5,9 +5,9 @@
   "wer": 0.2222222222222222,
   "werEdits": 4,
   "werRefWords": 18,
-  "werNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
-  "werNormalizedPredicted": "你 你 你 正 在 说 什 么 你 正 在 说 什 么 你 是 个 傻 子",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "你正在说什么你正在说什么你是不是傻子",
+  "werNormalizedPredicted": "你 你 你 正在 说 什么 你 正在 说 什么 你 是 个 傻子",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '你' at position 1",
-      "reason": "The extra '你' (you) at the beginning is repetitive but does not change the overall meaning of the sentence.",
+      "reason": "The extra '你' at the beginning is a repetition and does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: '不' to '个' at position 14",
-      "reason": "Replacing '不' (not) with '个' (a/one) changes the meaning from 'are you not a fool' to 'are you a fool', which reverses the intent of the sentence.",
+      "reason": "Changing '不' (not) to '个' (a/one) alters the meaning from 'are you not a fool' to 'are you a fool', which is a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '是' at position 15",
-      "reason": "Omitting '是' (is/are) in this context makes the sentence less grammatically correct but does not significantly alter the meaning.",
+      "reason": "Omitting '是' (is/are) slightly affects the grammatical structure but the meaning is still understandable in context.",
       "score": 2
     }
   ]

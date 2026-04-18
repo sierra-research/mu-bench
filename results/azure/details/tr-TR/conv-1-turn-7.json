@@ -5,22 +5,22 @@
   "wer": 0.42857142857142855,
   "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "kredi limitimi ne kadara kadar artirabilirim peki",
-  "werNormalizedPredicted": "kredi limiti mi ne kadara kadar artirabiliyorum peki",
-  "significantWer": 0.0,
+  "werNormalizedGold": "kredi limitimi ne kadara kadar artırabilirim peki",
+  "werNormalizedPredicted": "kredi limiti mi ne kadara kadar artırabiliyorum peki",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "kredi limitimi ne kadara kadar artirabilirim peki",
-  "sigWerNormalizedPredicted": "kredi limiti mi ne kadara kadar artirabiliyorum peki",
+  "sigWerNormalizedGold": "kredi limitimi ne kadara kadar artırabilirim peki",
+  "sigWerNormalizedPredicted": "kredi limiti mi ne kadara kadar artırabiliyorum peki",
   "sigWerErrors": [
     {
       "error": "Substitution: 'limitimi' to 'mi' at position 1",
-      "reason": "The model split 'limitimi' (my limit) into 'limiti mi' (is it the limit), which slightly changes the meaning but the overall intent is still understandable.",
+      "reason": "'limiti' is inserted as a separate word, but in the expected transcript it is part of the word 'limitimi'. This changes the grammatical structure but does not significantly alter the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'artirabilirim' to 'artirabiliyorum' at position 5",
-      "reason": "'artirabilirim' means 'I can increase', while 'artirabiliyorum' means 'I am increasing' or 'I am able to increase'. The tense changes but the meaning is very close in this context.",
+      "error": "Substitution: 'artırabilirim' to 'artırabiliyorum' at position 5",
+      "reason": "'limitimi' (my limit) is split into 'limiti' (limit) and 'mi' (question particle) in the actual transcript. The meaning is preserved, but the structure is different.",
       "score": 2
     }
   ]

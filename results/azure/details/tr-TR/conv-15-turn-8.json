@@ -2,25 +2,30 @@
   "gold": "Ha, bu arada yalnız bir dakika bir şey söyleyeceğim.",
   "predicted": "Bu arada yalnız yalnız bir dakika bir şey söyleyeceğim.",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
-  "werRefWords": 9,
-  "werNormalizedGold": "ha bu arada yalnız bir dakika bir şey söyleyeceğim",
-  "werNormalizedPredicted": "bu arada yalnız yalnız bir dakika bir şey söyleyeceğim",
-  "significantWer": 0.0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "ha bu arada yalnız bir dakika söyleyeceğim",
+  "werNormalizedPredicted": "bu arada yalnız yalnız bir dakika bir söyleyeceğim",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "ha bu arada yalnız bir dakika bir şey söyleyeceğim",
-  "sigWerNormalizedPredicted": "bu arada yalnız yalnız bir dakika bir şey söyleyeceğim",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ha bu arada yalnız bir dakika söyleyeceğim",
+  "sigWerNormalizedPredicted": "bu arada yalnız yalnız bir dakika bir söyleyeceğim",
   "sigWerErrors": [
     {
       "error": "Deletion: 'ha' at position 0",
-      "reason": "'Ha' is an interjection that adds emphasis or draws attention, but its omission does not significantly change the meaning of the sentence.",
+      "reason": "'ha' is an interjection that adds emphasis or context, but its omission does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'yalnız' at position 3",
-      "reason": "The extra 'yalnız' (meaning 'only' or 'alone') is redundant but does not change the overall meaning of the sentence.",
+      "error": "Insertion: 'yalnız' at position 4",
+      "reason": "Repeating 'yalnız' (alone) is redundant but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'bir' at position 6",
+      "reason": "The extra 'bir' (one/a) is redundant and does not alter the meaning of the sentence.",
       "score": 2
     }
   ]

@@ -2,15 +2,31 @@
   "gold": "我，我的姓名是君玲，君玲。",
   "predicted": "我的姓名是临君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 7,
-  "werNormalizedGold": "我的姓名是君玲",
-  "werNormalizedPredicted": "我的姓名是君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 7,
-  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲",
-  "sigWerErrors": []
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "我 我的姓名是君玲 君玲",
+  "werNormalizedPredicted": "我 的 姓名 是 君 临 君 临",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 我 的 姓 名 是 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 临 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '我' at position 1",
+      "reason": "The repeated '我' (I) at the beginning is omitted, but the overall meaning of the sentence is still clear and not significantly changed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 7",
+      "reason": "'玲' and '临' are different characters and likely represent different names. Substituting a character in a proper name changes the identity, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 9",
+      "reason": "Repeating the same substitution in the name again compounds the significant error, as the name is consistently mistranscribed.",
+      "score": 1
+    }
+  ]
 }

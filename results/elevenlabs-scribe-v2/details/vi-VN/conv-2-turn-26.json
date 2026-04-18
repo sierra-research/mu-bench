@@ -6,21 +6,26 @@
   "werEdits": 8,
   "werRefWords": 9,
   "werNormalizedGold": "tôi muốn liên lạc với nhân viên hỗ trợ",
-  "werNormalizedPredicted": "sorry muốn lên à vậy thì về ngồi chờ",
-  "significantWer": 0.2222222222222222,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "sorry muốn lên vậy thì về ngồi chờ",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "tôi muốn liên lạc với nhân viên hỗ trợ",
-  "sigWerNormalizedPredicted": "sorry muốn lên à vậy thì về ngồi chờ",
+  "sigWerNormalizedPredicted": "sorry muốn lên vậy thì về ngồi chờ",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tôi' to 'sorry' at position 0",
-      "reason": "The subject changes from 'I' (tôi) to an English apology ('sorry'), which completely alters the meaning and coherence of the sentence.",
+      "reason": "The subject changes from 'I' (tôi) to 'sorry', which is a completely different meaning and derails the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'liên' to 'lên' at position 2",
-      "reason": "'liên' (connect) is replaced by 'lên' (go up), which changes the intended action and meaning of the sentence significantly.",
+      "reason": "'liên' (connect) is substituted with 'lên' (go up), which changes the meaning of the action and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trợ' at position 8",
+      "reason": "Omitting 'trợ' (support) removes the key part of 'hỗ trợ' (support), making the sentence incomplete and losing the intended meaning.",
       "score": 1
     }
   ]

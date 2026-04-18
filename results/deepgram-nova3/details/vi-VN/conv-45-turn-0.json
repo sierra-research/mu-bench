@@ -7,7 +7,7 @@
   "werRefWords": 22,
   "werNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
   "werNormalizedPredicted": "tôi làm mất thẻ tuần trước có sinh cấp lại thẻ không biết hiện tại là từng trạng thẻ như thế nào",
-  "significantWer": 0.09090909090909091,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 22,
   "sigWerNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'là' to 'làm' at position 1",
-      "reason": "'là' (to be) and 'làm' (to do/make) are different verbs; this changes the meaning of the sentence and makes it less coherent.",
+      "reason": "'là' (to be) and 'làm' (to do) are different verbs; this changes the meaning of the sentence and makes it less coherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'tôi' at position 6",
-      "reason": "Omitting 'tôi' (I) removes the subject from the second clause, but the meaning is still mostly understandable from context.",
+      "reason": "Omitting 'tôi' (I) removes the subject from the clause, but the sentence is still understandable in context.",
       "score": 2
     },
     {
       "error": "Substitution: 'xin' to 'sinh' at position 8",
-      "reason": "'xin' (to request) and 'sinh' (to be born) are completely different in meaning; this substitution makes the sentence confusing and changes the intent.",
+      "reason": "'xin' (to request) and 'sinh' (to be born) are completely different words; this substitution makes the sentence confusing and changes the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'tình' to 'từng' at position 16",
-      "reason": "Inserting 'là' (to be) here is a minor grammatical error and does not significantly change the meaning of the sentence.",
+      "reason": "Inserting 'là' (to be) here is unnecessary but does not significantly change the meaning of the sentence.",
       "score": 2
     }
   ]

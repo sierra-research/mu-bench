@@ -5,9 +5,9 @@
   "wer": 0.21052631578947367,
   "werEdits": 4,
   "werRefWords": 19,
-  "werNormalizedGold": "没有 没有 再等一下 再等一下 我的姓名是君玲",
-  "werNormalizedPredicted": "没有没有 稍等一下子 等一下 我的姓名是零零",
-  "significantWer": 0.10526315789473684,
+  "werNormalizedGold": "没有没有再等一下再等一下我的姓名是君玲",
+  "werNormalizedPredicted": "没有没有稍等一下子等一下我的姓名是 零 零",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "没 有 没 有 再 等 一 下 再 等 一 下 我 的 姓 名 是 君 玲",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '再' to '稍' at position 4",
-      "reason": "'再等一下' means 'wait a bit more' or 'wait again', while '稍等一下' means 'wait a moment'. The meaning is similar in context, both asking someone to wait, so this is a minor error.",
-      "score": 2
+      "reason": "'再等一下' means 'wait a moment again', while '稍等一下' means 'wait a moment'. The meaning is very similar and does not change the intent of the sentence.",
+      "score": 3
     },
     {
       "error": "Substitution: '再' to '子' at position 8",
-      "reason": "'再等一下' is a common phrase meaning 'wait a bit more', but '子等一下' is not a standard phrase and is confusing in context, making the sentence less coherent.",
+      "reason": "'再等一下' is a common phrase meaning 'wait a moment again', but '子等一下' is not a standard phrase and is confusing, making the sentence less coherent.",
       "score": 1
     },
     {
       "error": "Substitution: '君' to '零' at position 17",
-      "reason": "'君玲' is a name, but '零零' is not a name and changes the identity being stated. This is a significant error as it completely changes the person's name.",
+      "reason": "'君玲' is a name, but '零零' is not the same name and changes the identity being referred to, which is a significant error for names.",
       "score": 1
     }
   ]

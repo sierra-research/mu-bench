@@ -1,16 +1,27 @@
 {
   "gold": "Vui lòng đọc lại. Sao mã tùm lum vậy?",
-  "predicted": "vui lòng đọc lại sao mãt lâm vậy",
+  "predicted": "Vui lòng đọc lại số mã thử lum vậy.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "vui lòng đọc lại sao mã tùm lum vậy",
-  "werNormalizedPredicted": "vui lòng đọc lại sao mã tùm lum vậy",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "vui lòng đọc lại số mã thử lum vậy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "vui lòng đọc lại sao mã tùm lum vậy",
-  "sigWerNormalizedPredicted": "vui lòng đọc lại sao mã tùm lum vậy",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "vui lòng đọc lại số mã thử lum vậy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sao' to 'số' at position 4",
+      "reason": "'sao mã' means 'why code' or 'star code', while 'số mã' means 'number code'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tùm' to 'thử' at position 6",
+      "reason": "'tùm lum' is a Vietnamese phrase meaning 'all over the place' or 'messy', while 'thử lum' does not make sense in this context and changes the meaning of the phrase.",
+      "score": 1
+    }
+  ]
 }

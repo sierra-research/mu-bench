@@ -1,16 +1,27 @@
 {
   "gold": "Zeynep nokta Arslan at email nokta com.",
-  "predicted": "zainab.aslan8@email.com",
+  "predicted": "zainap.aslaneightemail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "zeynep arslan at email com",
-  "werNormalizedPredicted": "zeynep arslan at email com",
-  "significantWer": 0.0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "zeynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zainap nokta aslan at email nokta com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "zeynep arslan at email com",
-  "sigWerNormalizedPredicted": "zeynep arslan at email com",
-  "sigWerErrors": []
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "zeynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zainap nokta aslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zeynep' to 'zainap' at position 0",
+      "reason": "'Zeynep' and 'zainap' are both proper nouns (names), but the substitution changes the name to a different one, which could refer to a different person. This is a minor error as the intent is still clear but the name is incorrect.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 2",
+      "reason": "'Arslan' and 'aslan' are very similar Turkish surnames and could be minor spelling variations or typos, but they may refer to different people. This is a minor error as the meaning is mostly preserved but the name is not exactly correct.",
+      "score": 2
+    }
+  ]
 }

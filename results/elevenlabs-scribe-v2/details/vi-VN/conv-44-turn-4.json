@@ -2,20 +2,25 @@
   "gold": "C N 4 0 7.",
   "predicted": "Xem em có không buy",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 5,
+  "wer": 0.8,
+  "werEdits": 4,
   "werRefWords": 5,
-  "werNormalizedGold": "c n four zero seven",
-  "werNormalizedPredicted": "xem em co khong buy",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "c n bốn không bảy",
+  "werNormalizedPredicted": "xem em có không buy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n four zero seven",
-  "sigWerNormalizedPredicted": "xem em co khong buy",
+  "sigWerNormalizedGold": "c n bốn không bảy",
+  "sigWerNormalizedPredicted": "xem em có không buy",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'xem' at position 0",
-      "reason": "The actual transcription is in a different language and does not correspond to the expected spelled-out letter, making the meaning completely different and unrecognizable.",
+      "reason": "'c' is a letter (possibly part of a code or spelled sequence), while 'xem' is a completely different word in Vietnamese ('see'), which changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bảy' to 'buy' at position 4",
+      "reason": "'bảy' is the Vietnamese word for 'seven', while 'buy' is an English verb, which is unrelated and changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

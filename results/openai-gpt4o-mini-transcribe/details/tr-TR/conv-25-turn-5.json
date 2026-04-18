@@ -1,22 +1,27 @@
 {
   "gold": "Ceyhan, Niğde, 0 88 15 33.",
-  "predicted": "Ceyhan Nida, 0-8-8-15-33",
+  "predicted": "Ceyhan Nida 0.58.15.33",
   "unintelligible": false,
-  "wer": 0.125,
-  "werEdits": 1,
-  "werRefWords": 8,
-  "werNormalizedGold": "ceyhan nigde zero eighty eight fifteen thirty three",
-  "werNormalizedPredicted": "ceyhan nida zero eighty eight fifteen thirty three",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "ceyhan nigde zero eighty eight fifteen thirty three",
-  "sigWerNormalizedPredicted": "ceyhan nida zero eighty eight fifteen thirty three",
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "ceyhan niğde sıfır seksen sekiz on beş otuz üç",
+  "werNormalizedPredicted": "ceyhan nida sıfır elli sekiz on beş otuz üç",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "ceyhan niğde sıfır seksen sekiz on beş otuz üç",
+  "sigWerNormalizedPredicted": "ceyhan nida sıfır elli sekiz on beş otuz üç",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'nigde' to 'nida' at position 1",
-      "reason": "'nigde' and 'nida' are both proper nouns (likely place names), but they refer to different entities. This could cause confusion or incorrect information, but the overall structure of the sentence is preserved.",
-      "score": 2
+      "error": "Substitution: 'niğde' to 'nida' at position 1",
+      "reason": "'Niğde' and 'nida' are different words; 'Niğde' is a city name used in Turkish spelling alphabets, while 'nida' is not a standard code word. This could cause confusion in contexts like spelling out information or codes.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'seksen' to 'elli' at position 3",
+      "reason": "'Seksen' means eighty and 'elli' means fifty in Turkish. This is a significant change in a number sequence, which alters the information being conveyed.",
+      "score": 1
     }
   ]
 }

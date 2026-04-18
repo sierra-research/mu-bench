@@ -1,21 +1,26 @@
 {
   "gold": "Số điện thoại.",
-  "predicted": "So chi tiết",
+  "predicted": "So Details",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werEdits": 2,
+  "wer": 1.0,
+  "werEdits": 3,
   "werRefWords": 3,
-  "werNormalizedGold": "so dien thoai",
-  "werNormalizedPredicted": "so chi tiet",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "số điện thoại",
+  "werNormalizedPredicted": "so details",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "so dien thoai",
-  "sigWerNormalizedPredicted": "so chi tiet",
+  "sigWerNormalizedGold": "số điện thoại",
+  "sigWerNormalizedPredicted": "so details",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dien' to 'chi' at position 1",
-      "reason": "'dien thoai' means 'phone number' in Vietnamese, while 'chi tiet' means 'details'. Substituting 'dien' with 'chi' changes the meaning of the phrase entirely, making the sentence incoherent with respect to the original intent.",
+      "error": "Substitution: 'số' to 'so' at position 0",
+      "reason": "The word 'số' (Vietnamese for 'number') is replaced with 'so', which is an English word with a completely different meaning. This changes the language and meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'thoại' at position 2",
+      "reason": "'điện thoại' means 'phone' in Vietnamese, but 'details' is an unrelated English word. This substitution changes both the language and the meaning, making the sentence incoherent.",
       "score": 1
     }
   ]

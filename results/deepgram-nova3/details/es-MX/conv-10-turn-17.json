@@ -2,25 +2,30 @@
   "gold": "No es Gmail, es email.",
   "predicted": "No, no es email, email.",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 2,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "no es email es email",
+  "werNormalizedGold": "no es gmail es email",
   "werNormalizedPredicted": "no no es email email",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "no es email es email",
+  "sigWerNormalizedGold": "no es gmail es email",
   "sigWerNormalizedPredicted": "no no es email email",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 1",
-      "reason": "The extra 'no' at the beginning does not significantly change the meaning of the sentence, as the main information about 'es email es email' is still present.",
+      "reason": "The extra 'no' introduces a negation that could confuse the meaning, but since the rest of the sentence is similar, the overall intent is still somewhat clear.",
       "score": 2
     },
     {
+      "error": "Substitution: 'gmail' to 'email' at position 2",
+      "reason": "Substituting 'gmail' with 'email' changes the specific service being referred to, which can significantly alter the meaning of the sentence.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'es' at position 3",
-      "reason": "Omitting 'es' before the second 'email' slightly affects the grammatical structure but does not change the overall meaning of the sentence.",
+      "reason": "Omitting 'es' (is) makes the sentence less grammatical in Spanish, but the main meaning can still be inferred from context.",
       "score": 2
     }
   ]

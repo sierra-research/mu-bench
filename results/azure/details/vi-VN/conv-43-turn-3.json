@@ -6,22 +6,22 @@
   "werEdits": 5,
   "werRefWords": 10,
   "werNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
-  "werNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm chín chiếc mà",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm chiếc mà",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
-  "sigWerNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm chín chiếc mà",
+  "sigWerNormalizedPredicted": "tôi mới nói bảy tôi mới nói là c n bảy năm chiếc mà",
   "sigWerErrors": [
     {
       "error": "Insertion: 'bảy' at position 3",
-      "reason": "The insertion of 'bảy' (seven) repeats information already present in the sentence, making the sentence redundant but not changing the overall meaning.",
+      "reason": "The insertion of 'bảy' repeats a number already present in the sentence, but does not significantly change the overall meaning or make the sentence incoherent.",
       "score": 2
     },
     {
-      "error": "Insertion: 'chiếc' at position 9",
-      "reason": "The insertion of 'chiếc' (a classifier for objects) at the end adds an extra word that does not change the main meaning of the sentence, but makes it slightly awkward.",
-      "score": 2
+      "error": "Substitution: 'chín' to 'chiếc' at position 8",
+      "reason": "'Chín' means 'nine' (a number), while 'chiếc' is a classifier for objects in Vietnamese. This substitution changes the meaning of the sentence and makes it confusing or incoherent, especially since the context expects a number.",
+      "score": 1
     }
   ]
 }

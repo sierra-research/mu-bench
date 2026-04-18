@@ -2,15 +2,26 @@
   "gold": "我的邮箱是林梅 at email 点 com。",
   "predicted": "我的邮箱是linmei at email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
-  "werNormalizedGold": "我的邮箱是林梅 at email dot com",
-  "werNormalizedPredicted": "我的邮箱是林梅 at email dot com",
-  "significantWer": 0.0,
+  "werNormalizedGold": "我的邮箱是林梅 at email 点 com",
+  "werNormalizedPredicted": "我的邮箱是 linmei at email 点 com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "我 的 邮 箱 是 林 梅 at email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 是 林 梅 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "我 的 邮 箱 是 林 梅 at email 点 com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 是 linmei at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'linmei' at position 5",
+      "reason": "'林梅' is a Chinese name, but 'linmei' is the pinyin (romanized) form of the full name. The meaning is preserved, but the script is different. This is a minor error since the identity is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '梅' at position 6",
+      "reason": "'梅' is omitted in the actual transcription because 'linmei' already represents both '林' and '梅' in pinyin. The information is not lost, just represented differently. This is a minor error.",
+      "score": 2
+    }
+  ]
 }

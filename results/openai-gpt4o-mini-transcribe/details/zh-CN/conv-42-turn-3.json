@@ -1,16 +1,32 @@
 {
   "gold": "想提高我的信用卡额度。",
-  "predicted": "相起告我的信用卡惡了",
+  "predicted": "想起高我的信用卡惡",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
-  "werNormalizedPredicted": "想 提 高 我 的 信 用 卡 额 度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "想提高我的信用卡额度",
+  "werNormalizedPredicted": "想起高我的信用卡惡",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
-  "sigWerNormalizedPredicted": "想 提 高 我 的 信 用 卡 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "想 起 高 我 的 信 用 卡 惡",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '提' to '起' at position 1",
+      "reason": "The word '提' (raise) is replaced by '起' (rise/start), which changes the meaning of the action in the sentence. The intent of increasing the credit card limit is lost, making the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '惡' at position 8",
+      "reason": "'额' (limit/amount) is replaced by '惡' (evil), which is a completely unrelated word and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '度' at position 9",
+      "reason": "Missing '度' (degree/limit) at the end makes the phrase incomplete and the meaning unclear.",
+      "score": 1
+    }
+  ]
 }

@@ -5,22 +5,22 @@
   "wer": 0.4666666666666667,
   "werEdits": 7,
   "werRefWords": 15,
-  "werNormalizedGold": "anna merhaba daha once bir talebim olmustu onun icin ariyorum su ana kadar gerceklesmedi cunku",
-  "werNormalizedPredicted": "andan merhaba daha once bir talebim olmustu onu da iyi duruma karariyorum henuz su ana kadar gerceklesmedi cunku",
-  "significantWer": 0.06666666666666667,
+  "werNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "werNormalizedPredicted": "andan merhaba daha önce bir talebim olmuştu onu da iyi duruma kararıyorum henüz şu ana kadar gerçekleşmedi çünkü",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "anna merhaba daha once bir talebim olmustu onun icin ariyorum su ana kadar gerceklesmedi cunku",
-  "sigWerNormalizedPredicted": "andan merhaba daha once bir talebim olmustu onu da iyi duruma karariyorum henuz su ana kadar gerceklesmedi cunku",
+  "sigWerNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "sigWerNormalizedPredicted": "andan merhaba daha önce bir talebim olmuştu onu da iyi duruma kararıyorum henüz şu ana kadar gerçekleşmedi çünkü",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'andan' at position 0",
-      "reason": "'Anna' is a proper noun (likely a name), while 'andan' is a different word and not a name. This changes the subject of the sentence and can confuse the meaning.",
+      "reason": "'Anna' is a proper noun (likely a name), while 'andan' is not a name and changes the subject of the sentence, making it a significant error.",
       "score": 1
     },
     {
       "error": "Substitution: 'onun' to 'duruma' at position 7",
-      "reason": "'Onu' (meaning 'it' or 'him/her' in Turkish) is inserted, but the overall meaning of the sentence is not significantly changed by this insertion.",
+      "reason": "The insertion of 'onu' ('it/him/her') does not significantly change the meaning of the sentence in this context, as it refers to the same object as 'onun için' in the expected sentence.",
       "score": 2
     }
   ]

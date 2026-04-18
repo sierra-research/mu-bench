@@ -2,31 +2,41 @@
   "gold": "Ben Bol Bol Ye firması ile çalışıyorum. Adresim olan Atatürk Caddesi No 45'e 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34 660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerine bayağı bir zaman geçti. Ama yani maalesef henüz gelmedi evraklarım.",
   "predicted": "Ben BolBol Ye firması ile çalışıyorum. Adresim olan Atatürk Caddesi No 45 şey 6 Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım.",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 4,
-  "werRefWords": 48,
-  "werNormalizedGold": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi numara kırk beşe altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerine bayağı bir zaman geçti ama yani maalesef henüz gelmedi evraklarım",
-  "werNormalizedPredicted": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi numara kırk beş şey altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım",
-  "significantWer": 0.020833333333333332,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 48,
-  "sigWerNormalizedGold": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi numara kırk beşe altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerine bayağı bir zaman geçti ama yani maalesef henüz gelmedi evraklarım",
-  "sigWerNormalizedPredicted": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi numara kırk beş şey altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım",
+  "wer": 0.15217391304347827,
+  "werEdits": 7,
+  "werRefWords": 46,
+  "werNormalizedGold": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi no kırk beşe altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerine bayağı bir zaman geçti ama maalesef henüz gelmedi evraklarım",
+  "werNormalizedPredicted": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi no kırk beş altı kazım karabekir mahallesi üsküdar istanbul üç yüz kırk altı altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerinden bayağı bir zaman geçti ama maalesef ki henüz gelmedi evraklarım",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 46,
+  "sigWerNormalizedGold": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi no kırk beşe altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerine bayağı bir zaman geçti ama maalesef henüz gelmedi evraklarım",
+  "sigWerNormalizedPredicted": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi no kırk beş altı kazım karabekir mahallesi üsküdar istanbul üç yüz kırk altı altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerinden bayağı bir zaman geçti ama maalesef ki henüz gelmedi evraklarım",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'beşe' to 'şey' at position 13",
-      "reason": "'beş' is repeated due to the following substitution error, but the overall meaning about the address number is still understandable.",
+      "error": "Substitution: 'beşe' to 'beş' at position 13",
+      "reason": "'beşe' (to forty-five) is the dative form, while 'beş' (forty-five) is nominative; the meaning is only slightly affected in the address context.",
       "score": 2
     },
     {
-      "error": "Substitution: 'üzerine' to 'üzerinden' at position 37",
-      "reason": "'beşe' (to 5) is replaced with 'şey' (thing), which makes the address less clear and could cause confusion in an address context.",
+      "error": "Substitution: 'otuz' to 'yüz' at position 20",
+      "reason": "Adding 'üç' (three) changes the address number significantly, which could lead to a different location.",
       "score": 1
     },
     {
-      "error": "Insertion: 'ki' at position 45",
-      "reason": "The change from 'üzerine' (upon) to 'üzerinden' (over/from) is a minor grammatical difference and does not change the overall meaning of the sentence.",
-      "score": 3
+      "error": "Deletion: 'yüz' at position 23",
+      "reason": "'otuz' (thirty) replaced by 'yüz' (hundred) changes the numeric value in the address, which is significant for postal accuracy.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'üzerine' to 'üzerinden' at position 36",
+      "reason": "Omitting 'yüz' (hundred) from the address number alters the address, which is significant.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'ki' at position 43",
+      "reason": "The difference between 'üzerine' (upon) and 'üzerinden' (since) is minor in this context and does not change the overall meaning.",
+      "score": 2
     }
   ]
 }

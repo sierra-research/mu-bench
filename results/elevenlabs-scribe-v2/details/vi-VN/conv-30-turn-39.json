@@ -1,21 +1,26 @@
 {
   "gold": "Tôi không cần đâu. Tôi muốn nói chuyện với người trực tiếp.",
-  "predicted": "Ờ không cần được. Tôi muốn nói chuyện với, a, người trực tiếp",
+  "predicted": "Ờ không cần được. Tôi muốn nói chuyện với, a, ừm, người trực tiếp",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
   "werRefWords": 12,
   "werNormalizedGold": "tôi không cần đâu tôi muốn nói chuyện với người trực tiếp",
-  "werNormalizedPredicted": "tôi không cần được tôi muốn nói chuyện với người trực tiếp",
-  "significantWer": 0.08333333333333333,
+  "werNormalizedPredicted": "không cần được tôi muốn nói chuyện với người trực tiếp",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "tôi không cần đâu tôi muốn nói chuyện với người trực tiếp",
-  "sigWerNormalizedPredicted": "tôi không cần được tôi muốn nói chuyện với người trực tiếp",
+  "sigWerNormalizedPredicted": "không cần được tôi muốn nói chuyện với người trực tiếp",
   "sigWerErrors": [
     {
+      "error": "Deletion: 'tôi' at position 0",
+      "reason": "The subject pronoun 'tôi' (I) is omitted, which removes the explicit subject from the sentence. However, in Vietnamese, the subject can sometimes be dropped without losing meaning, especially in context, but here it slightly reduces clarity.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'đâu' to 'được' at position 3",
-      "reason": "'đâu' (meaning 'at all' or 'no need') and 'được' (meaning 'can' or 'allowed') have different meanings. This substitution changes the intent of the sentence from a refusal to a statement about ability, which significantly alters the meaning.",
+      "reason": "'đâu' (at all) is replaced with 'được' (can/be allowed), which changes the meaning of the sentence. The original expresses refusal or lack of need, while the substitution implies permission or possibility, significantly altering the intent.",
       "score": 1
     }
   ]

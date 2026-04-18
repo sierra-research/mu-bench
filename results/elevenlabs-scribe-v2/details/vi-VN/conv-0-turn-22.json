@@ -2,20 +2,25 @@
   "gold": "Không đúng. Không đúng. Không đúng. Không đúng. Nghe mấy lần rồi mà. Không đúng.",
   "predicted": "Không đúng, không đúng, không đúng, không đúng. Nghề mấy làng đó mà. Không đúng",
   "unintelligible": false,
-  "wer": 0.13333333333333333,
-  "werEdits": 2,
+  "wer": 0.2,
+  "werEdits": 3,
   "werRefWords": 15,
-  "werNormalizedGold": "khong dung khong dung khong dung khong dung nghe may lan roi ma khong dung",
-  "werNormalizedPredicted": "khong dung khong dung khong dung khong dung nghe may lang do ma khong dung",
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "không đúng không đúng không đúng không đúng nghe mấy lần rồi mà không đúng",
+  "werNormalizedPredicted": "không đúng không đúng không đúng không đúng nghề mấy làng đó mà không đúng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
-  "sigWerNormalizedGold": "khong dung khong dung khong dung khong dung nghe may lan roi ma khong dung",
-  "sigWerNormalizedPredicted": "khong dung khong dung khong dung khong dung nghe may lang do ma khong dung",
+  "sigWerNormalizedGold": "không đúng không đúng không đúng không đúng nghe mấy lần rồi mà không đúng",
+  "sigWerNormalizedPredicted": "không đúng không đúng không đúng không đúng nghề mấy làng đó mà không đúng",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'lan' to 'lang' at position 10",
-      "reason": "'lan' and 'lang' are different words in Vietnamese; 'lan' means 'times' (as in 'many times'), while 'lang' means 'village'. This changes the meaning of the phrase and makes the sentence less coherent.",
+      "error": "Substitution: 'nghe' to 'nghề' at position 8",
+      "reason": "'nghe' means 'listen' while 'nghề' means 'profession'; this changes the meaning of the phrase and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lần' to 'làng' at position 10",
+      "reason": "'lần' means 'time' (as in 'number of times'), while 'làng' means 'village'; this substitution makes the sentence incoherent and changes the intended meaning significantly.",
       "score": 1
     }
   ]

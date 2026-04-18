@@ -1,16 +1,22 @@
 {
   "gold": "郡。我的姓名是郡凛。郡。",
-  "predicted": "Jun，Jun。我的姓名是Jun Ling。Jun。",
+  "predicted": "Jun，Jun。我的姓名是Jun Ling。Jun",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "郡 我的姓名是郡凛 郡",
-  "werNormalizedPredicted": "郡 我的姓名是郡凛 郡",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "郡 郡 我的姓名是郡凛 郡",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "郡 我 的 姓 名 是 郡 凛 郡",
-  "sigWerNormalizedPredicted": "郡 我 的 姓 名 是 郡 凛 郡",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "郡 郡 我 的 姓 名 是 郡 凛 郡",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '郡' at position 1",
+      "reason": "The extra '郡' at the beginning does not change the meaning of the sentence, as it is simply a repetition and does not derail or alter the intended message.",
+      "score": 2
+    }
+  ]
 }

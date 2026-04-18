@@ -1,16 +1,27 @@
 {
   "gold": "Ahmet nokta Arslan at email nokta com.",
-  "predicted": "ahmet.nokta.arslan@email.com",
+  "predicted": "ahmet.moktaarslan@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "ahmet nokta arslan at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "ahmet moktaarslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "ahmet nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ahmet moktaarslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nokta' to 'moktaarslan' at position 1",
+      "reason": "'moktaarslan' merges 'mokta' and 'arslan', which distorts the intended separation of the name and the word 'nokta' (meaning 'dot'). This could cause confusion in an email address or username context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arslan' at position 2",
+      "reason": "'arslan' is missing as a separate word, which is important for clarity in a name or email address. Its omission or merging changes the structure and could lead to miscommunication.",
+      "score": 1
+    }
+  ]
 }

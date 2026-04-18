@@ -1,16 +1,22 @@
 {
   "gold": "准备好了。",
-  "predicted": "準備好了!",
+  "predicted": "准备好啦",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
   "werNormalizedGold": "准备好了",
-  "werNormalizedPredicted": "准备好了",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "准备好啦",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "准 备 好 了",
-  "sigWerNormalizedPredicted": "准 备 好 了",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "准 备 好 啦",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '了' to '啦' at position 3",
+      "reason": "'了' and '啦' are both sentence-final particles in Chinese, but '了' indicates completion while '啦' is more of an exclamatory or softening particle. The overall meaning is only slightly changed and the sentence remains understandable.",
+      "score": 2
+    }
+  ]
 }

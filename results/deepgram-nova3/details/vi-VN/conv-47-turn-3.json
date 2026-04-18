@@ -2,15 +2,26 @@
   "gold": "C N 4 7 4.",
   "predicted": "Cnbốn trăm bảy mươi bốn",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "c n four hundred seventy four",
-  "werNormalizedPredicted": "c n four hundred seventy four",
-  "significantWer": 0.0,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n bốn bảy bốn",
+  "werNormalizedPredicted": "c n bốn trăm bảy mươi bốn",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n four hundred seventy four",
-  "sigWerNormalizedPredicted": "c n four hundred seventy four",
-  "sigWerErrors": []
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n bốn bảy bốn",
+  "sigWerNormalizedPredicted": "c n bốn trăm bảy mươi bốn",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 3",
+      "reason": "'trăm' means 'hundred', which changes the number from '474' to '474' or '400 74' depending on context, but in Vietnamese, 'bốn bảy bốn' is '474', while 'bốn trăm bảy mươi bốn' is '474'. The insertion does not change the meaning, as both represent the same number.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mươi' at position 4",
+      "reason": "'mươi' is part of the Vietnamese way to say numbers like 'seventy', so 'bảy mươi bốn' is 'seventy four'. The full phrase 'bốn trăm bảy mươi bốn' is '474', which matches the expected number. The insertion does not change the meaning.",
+      "score": 3
+    }
+  ]
 }

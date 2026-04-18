@@ -2,20 +2,30 @@
   "gold": "¿Me puedes repetir de nuevo el correo de confirmación, por favor? Digo, ¿el número de confirmación?",
   "predicted": "Eh, ¿me puede repetir de nuevo el, el correo de confirmación, por favor? Digo, el, el número de confirmación",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
+  "wer": 0.1875,
+  "werEdits": 3,
   "werRefWords": 16,
-  "werNormalizedGold": "me puedes repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
-  "werNormalizedPredicted": "me puede repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
-  "significantWer": 0.0,
+  "werNormalizedGold": "me puedes repetir de nuevo el correo de confirmación por favor digo el número de confirmación",
+  "werNormalizedPredicted": "me puede repetir de nuevo el el correo de confirmación por favor digo el el número de confirmación",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
-  "sigWerNormalizedGold": "me puedes repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
-  "sigWerNormalizedPredicted": "me puede repetir de nuevo el correo de confirmacion por favor digo el numero de confirmacion",
+  "sigWerNormalizedGold": "me puedes repetir de nuevo el correo de confirmación por favor digo el número de confirmación",
+  "sigWerNormalizedPredicted": "me puede repetir de nuevo el el correo de confirmación por favor digo el el número de confirmación",
   "sigWerErrors": [
     {
       "error": "Substitution: 'puedes' to 'puede' at position 1",
-      "reason": "'puedes' is informal (tú), 'puede' is formal (usted); both mean 'can you' and do not change the meaning of the sentence in this context.",
+      "reason": "'puedes' is second person (you can), 'puede' is third person (he/she/it can); in context, this is a minor grammatical error that does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'el' at position 6",
+      "reason": "The extra 'el' is a repetition that does not affect the meaning or understanding of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'el' at position 12",
+      "reason": "The extra 'el' is a repetition that does not affect the meaning or understanding of the sentence.",
       "score": 3
     }
   ]

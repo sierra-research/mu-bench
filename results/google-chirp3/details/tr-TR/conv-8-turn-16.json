@@ -5,37 +5,37 @@
   "wer": 0.30434782608695654,
   "werEdits": 7,
   "werRefWords": 23,
-  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
-  "werNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın p'si ile söyledim siz bana t ile söylediniz zeynep email de aynı şekilde zeynep olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın psi ile söyledim siz bana t ile söylediniz zeynep email de aynı şekilde zeynep olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın p'si ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
-  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın p'si ile söyledim siz bana t ile söylediniz zeynep email de aynı şekilde zeynep olacak",
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın psi ile söyledim siz bana t ile söylediniz zeynep email de aynı şekilde zeynep olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 5",
-      "reason": "'zaynep' and 'zeynep' are minor spelling variants of the same Turkish name, does not change meaning.",
+      "reason": "'zaynep' and 'zeynep' are both proper nouns (names), and the difference is a minor spelling error that does not change the referent.",
       "score": 2
     },
     {
       "error": "Substitution: 'tli' to 'ile' at position 14",
-      "reason": "The insertion of 't' clarifies the letter being referenced, which is contextually correct and does not change the meaning.",
-      "score": 3
+      "reason": "The insertion of 't' instead of 'tli' changes the way the letter is specified, which could cause confusion in the context of spelling or clarifying a name. This is a significant error because it may lead to misunderstanding the intended letter.",
+      "score": 1
     },
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 16",
-      "reason": "'tli' (with t) and 'ile' (with) both refer to the method of spelling, but 'tli' is more specific. The substitution does not significantly change the meaning.",
-      "score": 2
+      "reason": "'tli' (meaning 'with t') is replaced by 'ile' (meaning 'with'), which omits the specification of the letter. This is a significant error as it removes the clarification about the letter, which is crucial in this context.",
+      "score": 1
     },
     {
       "error": "Substitution: 'ile' to 'de' at position 18",
-      "reason": "Again, minor spelling difference in the name, does not affect understanding.",
+      "reason": "Again, a minor spelling difference in the name, but the referent is clear.",
       "score": 2
     },
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 21",
-      "reason": "'ile' means 'with', 'de' means 'also' or 'in'. In this context, both indicate the email is the same, so the meaning is preserved.",
+      "reason": "'ile' (with) and 'de' (in/at) are different words, but in this context ('email ile' vs 'email de'), the meaning is only slightly changed and does not derail the sentence.",
       "score": 2
     }
   ]

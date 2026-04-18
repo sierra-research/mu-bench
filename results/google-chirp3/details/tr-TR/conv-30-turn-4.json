@@ -7,7 +7,7 @@
   "werRefWords": 12,
   "werNormalizedGold": "yok ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misiniz",
   "werNormalizedPredicted": "yok ben anlayamadım bir önceki koddandı çünkü lütfen tekrar eder misin",
-  "significantWer": 0.08333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "yok ben anlayamadım bir önceki koddan farklıydı çünkü lütfen tekrar eder misiniz",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'koddan' to 'koddandı' at position 5",
-      "reason": "'koddandı' is a grammatical form meaning 'it was from the code', while 'koddan' means 'from the code'. The meaning is only slightly changed, but the sentence remains understandable.",
+      "reason": "'koddandı' is a grammatical form meaning 'it was from the code', which slightly changes the nuance but does not significantly alter the meaning in this context.",
       "score": 2
     },
     {
       "error": "Deletion: 'farklıydı' at position 6",
-      "reason": "'farklıydı' means 'it was different', and its omission removes an important part of the sentence, changing the meaning significantly.",
+      "reason": "Omitting 'farklıydı' ('it was different') removes important information about why the code was not understood, which significantly changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'misiniz' to 'misin' at position 11",
-      "reason": "'misiniz' is the polite/plural form, while 'misin' is the singular/informal form. The meaning is mostly preserved, only the level of formality changes.",
+      "reason": "'misiniz' is the polite/plural form, 'misin' is the singular/informal; this is a minor difference in formality, not meaning.",
       "score": 2
     }
   ]

@@ -2,20 +2,30 @@
   "gold": "¿Habrá algún correo electrónico al que yo pueda escribir al banco?",
   "predicted": "¿Habrá algún correo electrónico al que yo pueda escribir en el banco?",
   "unintelligible": false,
-  "wer": 0.18181818181818182,
-  "werEdits": 2,
+  "wer": 0.45454545454545453,
+  "werEdits": 5,
   "werRefWords": 11,
-  "werNormalizedGold": "habra algun correo electronico al que yo pueda escribir al banco",
+  "werNormalizedGold": "habrá algún correo electrónico al que yo pueda escribir al banco",
   "werNormalizedPredicted": "habra algun correo electronico al que yo pueda escribir en el banco",
-  "significantWer": 0.09090909090909091,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "habra algun correo electronico al que yo pueda escribir al banco",
+  "sigWerNormalizedGold": "habrá algún correo electrónico al que yo pueda escribir al banco",
   "sigWerNormalizedPredicted": "habra algun correo electronico al que yo pueda escribir en el banco",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'habrá' to 'habra' at position 0",
+      "reason": "Missing accent mark, but the meaning is unchanged in context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'electrónico' to 'electronico' at position 3",
+      "reason": "Missing accent mark, but the word is still clearly understood.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'al' to 'el' at position 9",
-      "reason": "The insertion of 'en' changes the phrase from 'escribir al banco' (write to the bank) to 'escribir en el banco' (write in the bank), which alters the meaning of the sentence significantly.",
+      "reason": "Adding 'en' changes the phrase from 'to the bank' to 'in the bank', which alters the meaning of the sentence.",
       "score": 1
     }
   ]

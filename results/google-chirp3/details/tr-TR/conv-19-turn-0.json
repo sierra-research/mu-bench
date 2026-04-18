@@ -2,21 +2,26 @@
   "gold": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
   "predicted": "Merhaba, kredi kartının limitini arttırmak istiyorum da yardımcı olabilir misiniz?",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
-  "werNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum da yardimci olabilir misiniz",
-  "werNormalizedPredicted": "merhaba kredi kartinin limitini artirmak istiyorum da yardimci olabilir misiniz",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz",
+  "werNormalizedPredicted": "merhaba kredi kartının limitini arttırmak istiyorum da yardımcı olabilir misiniz",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "merhaba kredi kartimin limitini artirmak istiyorum da yardimci olabilir misiniz",
-  "sigWerNormalizedPredicted": "merhaba kredi kartinin limitini artirmak istiyorum da yardimci olabilir misiniz",
+  "sigWerNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "merhaba kredi kartının limitini arttırmak istiyorum da yardımcı olabilir misiniz",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'kartimin' to 'kartinin' at position 2",
-      "reason": "The possessive suffix changes from 'my credit card' (kartimin) to 'his/her credit card' (kartinin), which changes the subject of the request. This alters the meaning of the sentence significantly.",
-      "score": 1
+      "error": "Substitution: 'kartımın' to 'kartının' at position 2",
+      "reason": "'kartımın' (my credit card's) vs 'kartının' (your credit card's) changes the owner from first person to second person, but in context the intent of the request is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'artırmak' to 'arttırmak' at position 4",
+      "reason": "'artırmak' and 'arttırmak' are spelling variants in Turkish, both meaning 'to increase'; the meaning is unchanged.",
+      "score": 3
     }
   ]
 }

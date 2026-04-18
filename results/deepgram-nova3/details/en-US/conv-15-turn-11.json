@@ -1,16 +1,22 @@
 {
   "gold": "Do you know how long the shipping time would be?",
-  "predicted": "Do you know how long the shipping time would be?",
+  "predicted": "You know how long the shipping time would be?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "do you know how long the shipping time would be",
-  "werNormalizedPredicted": "do you know how long the shipping time would be",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "you know how long the shipping time would be",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "do you know how long the shipping time would be",
-  "sigWerNormalizedPredicted": "do you know how long the shipping time would be",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "you know how long the shipping time would be",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'do' at position 0",
+      "reason": "Omitting 'do' slightly changes the sentence from a question to a statement, but the intent and meaning are still clear in context.",
+      "score": 2
+    }
+  ]
 }

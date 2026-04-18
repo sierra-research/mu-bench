@@ -1,16 +1,27 @@
 {
   "gold": "Đúng rồi. Sao kê của tháng trước.",
-  "predicted": "ờ đúng rồi sao kê của hãng trước",
+  "predicted": "À đúng rồi, sao cái của hãng trước.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "đúng rồi sao kê của tháng trước",
-  "werNormalizedPredicted": "đúng rồi sao kê của tháng trước",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "đúng rồi sao cái của hãng trước",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "đúng rồi sao kê của tháng trước",
-  "sigWerNormalizedPredicted": "đúng rồi sao kê của tháng trước",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "đúng rồi sao cái của hãng trước",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kê' to 'cái' at position 3",
+      "reason": "'kê' (statement/account) and 'cái' (thing) are completely different words and change the meaning of the phrase from 'statement of last month' to something incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tháng' to 'hãng' at position 5",
+      "reason": "'tháng' (month) and 'hãng' (company/brand) are unrelated, which changes the meaning from 'last month' to 'last company', making the sentence confusing and incorrect.",
+      "score": 1
+    }
+  ]
 }

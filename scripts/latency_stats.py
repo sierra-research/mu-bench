@@ -1,18 +1,17 @@
 """Compute p50 and p95 latency statistics from latency.json files.
 
-Supports two schemas (item 4 of the fairness-fixes plan):
+Requires the new schema (item 4 of the fairness-fixes plan):
 
-1. **New schema** (preferred):
-       {
-         "meta": {"protocol": "batch"|"streaming", "region": "us-east-1", ...},
-         "measurements": {
-           "en-US/conv-0-turn-0": {"roundTripMs": 269.1},
-           "en-US/conv-0-turn-1": {"ttftMs": 190.0, "completeMs": 780.0}
-         }
-       }
+    {
+      "meta": {"protocol": "batch"|"streaming", "region": "us-east-1", ...},
+      "measurements": {
+        "en-US/conv-0-turn-0": {"roundTripMs": 269.1},
+        "en-US/conv-0-turn-1": {"ttftMs": 190.0, "completeMs": 780.0}
+      }
+    }
 
-2. **Legacy flat schema** (accepted with warning during rollout):
-       {"en-US/conv-0-turn-0": 269.1, ...}
+The legacy flat ``{"<locale>/<uid>": ms}`` schema was dropped with the
+rollout PR.
 
 Output fields merged into ``scores.json`` under each locale and
 ``overall``:
@@ -24,8 +23,6 @@ Output fields merged into ``scores.json`` under each locale and
   * ``roundTripP50Ms`` / ``roundTripP95Ms`` — batch-only.
   * ``ttftP50Ms`` / ``ttftP95Ms`` — streaming-only, rendered as a
     ``+TTFT`` annotation.
-  * Legacy ``latencyP50Ms`` / ``latencyP95Ms`` kept as aliases for
-    ``completeP50/95Ms`` so the leaderboard fallback path keeps working.
 
 ``scores.json`` also carries a ``latencyMeta`` block with protocol and
 region (preserved from the input) so drift checks and the UI can pick
@@ -72,58 +69,49 @@ def _percentiles(values: list[float]) -> dict[str, float]:
 
 
 def _parse_latency_input(latency: dict, manifest: dict) -> tuple[str, str, dict[str, dict[str, float]]]:
-    """Normalize the two supported latency.json shapes into a common form.
+    """Parse the new-schema latency.json into a common per-entry form.
 
     Returns ``(protocol, region, per_entry)`` where ``per_entry`` is
     ``{"<locale>/<uid>": {"roundTripMs": ..., "ttftMs": ..., "completeMs": ...}}``.
-    For batch, ``completeMs`` aliases ``roundTripMs``. Legacy flat maps
-    are interpreted as batch / unknown.
+    For batch, ``completeMs`` aliases ``roundTripMs``.
     """
     locale_map = {utt["id"]: utt["locale"] for utt in manifest["utterances"]}
 
-    if isinstance(latency, dict) and "meta" in latency and "measurements" in latency:
-        meta = latency.get("meta", {}) or {}
-        protocol = meta.get("protocol", "batch")
-        region = meta.get("region", "unknown")
-        raw = latency.get("measurements", {}) or {}
-        per_entry: dict[str, dict[str, float]] = {}
-        for key, entry in raw.items():
-            if not isinstance(entry, dict):
-                continue
-            if "/" not in key:
-                locale = locale_map.get(key)
-                if locale is None:
-                    continue
-                key = f"{locale}/{key}"
-            rt = entry.get("roundTripMs")
-            ttft = entry.get("ttftMs")
-            complete = entry.get("completeMs")
-            row: dict[str, float] = {}
-            if isinstance(rt, (int, float)):
-                row["roundTripMs"] = float(rt)
-                # For batch the round-trip IS the complete-transcript latency.
-                if protocol == "batch":
-                    row.setdefault("completeMs", float(rt))
-            if isinstance(ttft, (int, float)):
-                row["ttftMs"] = float(ttft)
-            if isinstance(complete, (int, float)):
-                row["completeMs"] = float(complete)
-            if row:
-                per_entry[key] = row
-        return protocol, region, per_entry
+    if not (isinstance(latency, dict) and "meta" in latency and "measurements" in latency):
+        raise ValueError(
+            "latency.json must use the new schema {'meta': ..., 'measurements': ...}; "
+            "the legacy flat '<locale>/<uid>' -> ms schema was dropped with the rollout PR."
+        )
 
-    # Legacy flat schema: treat every value as batch round-trip latency.
-    per_entry = {}
-    for key, val in latency.items():
-        if not isinstance(val, (int, float)):
+    meta = latency.get("meta", {}) or {}
+    protocol = meta.get("protocol", "batch")
+    region = meta.get("region", "unknown")
+    raw = latency.get("measurements", {}) or {}
+    per_entry: dict[str, dict[str, float]] = {}
+    for key, entry in raw.items():
+        if not isinstance(entry, dict):
             continue
         if "/" not in key:
             locale = locale_map.get(key)
             if locale is None:
                 continue
             key = f"{locale}/{key}"
-        per_entry[key] = {"roundTripMs": float(val), "completeMs": float(val)}
-    return "batch", "unknown", per_entry
+        rt = entry.get("roundTripMs")
+        ttft = entry.get("ttftMs")
+        complete = entry.get("completeMs")
+        row: dict[str, float] = {}
+        if isinstance(rt, (int, float)):
+            row["roundTripMs"] = float(rt)
+            # For batch the round-trip IS the complete-transcript latency.
+            if protocol == "batch":
+                row.setdefault("completeMs", float(rt))
+        if isinstance(ttft, (int, float)):
+            row["ttftMs"] = float(ttft)
+        if isinstance(complete, (int, float)):
+            row["completeMs"] = float(complete)
+        if row:
+            per_entry[key] = row
+    return protocol, region, per_entry
 
 
 def compute_latency_stats(
@@ -179,10 +167,6 @@ def compute_latency_stats(
             pct = _percentiles(vals)
             stats["completeP50Ms"] = pct["p50"]
             stats["completeP95Ms"] = pct["p95"]
-            # Legacy aliases so the leaderboard fallback path still renders
-            # against old scores.json consumers.
-            stats["latencyP50Ms"] = pct["p50"]
-            stats["latencyP95Ms"] = pct["p95"]
         if proto == "batch" and by_locale_rt.get(locale):
             pct = _percentiles(by_locale_rt[locale])
             stats["roundTripP50Ms"] = pct["p50"]
@@ -208,8 +192,6 @@ def compute_latency_stats(
             pct = _percentiles(all_complete)
             overall["completeP50Ms"] = pct["p50"]
             overall["completeP95Ms"] = pct["p95"]
-            overall["latencyP50Ms"] = pct["p50"]
-            overall["latencyP95Ms"] = pct["p95"]
         if protocol == "batch" and all_rt:
             pct = _percentiles(all_rt)
             overall["roundTripP50Ms"] = pct["p50"]

@@ -1,31 +1,31 @@
 {
   "gold": "Vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp.",
-  "predicted": "Không phải lòng người đâu ai liền nhân viên hoặc là trực tiếp",
+  "predicted": "Không phải lòng chuyện đâu liên nhân biên hoặc giả tuyệt biên",
   "unintelligible": false,
-  "wer": 0.7272727272727273,
-  "werEdits": 8,
+  "wer": 0.9090909090909091,
+  "werEdits": 10,
   "werRefWords": 11,
   "werNormalizedGold": "vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp",
-  "werNormalizedPredicted": "không phải lòng người đâu ai liền nhân viên hoặc là trực tiếp",
-  "significantWer": 0.2727272727272727,
+  "werNormalizedPredicted": "không phải lòng chuyện đâu liên nhân biên hoặc giả tuyệt biên",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "vui lòng chuyển tôi đến nhân viên hỗ trợ trực tiếp",
-  "sigWerNormalizedPredicted": "không phải lòng người đâu ai liền nhân viên hoặc là trực tiếp",
+  "sigWerNormalizedPredicted": "không phải lòng chuyện đâu liên nhân biên hoặc giả tuyệt biên",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vui' to 'phải' at position 0",
-      "reason": "'không' (no/not) introduces negation, which changes the intent of the sentence from a polite request to a negative statement.",
+      "reason": "'không' (no/not) introduces negation, which completely changes the intent of the sentence from a polite request to a negation.",
       "score": 1
     },
     {
-      "error": "Substitution: 'chuyển' to 'đâu' at position 2",
-      "reason": "'vui' (please) is a polite request, while 'phải' (must/should) changes the tone and meaning, making the sentence less polite and altering the intent.",
+      "error": "Substitution: 'chuyển' to 'chuyện' at position 2",
+      "reason": "'vui' (please) is a polite request word, while 'phải' (must) changes the tone and meaning, making the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'hỗ' to 'hoặc' at position 7",
-      "reason": "The insertion of 'người' (person) adds confusion and disrupts the original meaning, making the sentence less coherent.",
+      "error": "Substitution: 'viên' to 'biên' at position 6",
+      "reason": "'chuyển' (transfer) is an action, while 'chuyện' (story/matter) is a noun, which makes the sentence lose its intended meaning.",
       "score": 1
     }
   ]

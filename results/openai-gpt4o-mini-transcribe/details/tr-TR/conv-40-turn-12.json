@@ -1,42 +1,52 @@
 {
   "gold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
-  "predicted": "Hayır, yanlış anlıyor. Tamamen yanlış anlıyorsun. Tekrar söylüyorum. Hayfa kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta, Adana, Rize, Samsun, Yüzeyburgaz, Adana, Niğde, et e-mail.com.",
+  "predicted": "Hayır, yanlış anlıyorsun. Tamamen yanlış anlıyorsun. Tekrar söylüyorum. Hayfer kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon, nokta, Adana, Rize, Samsun, Yüceburkas, Adana, Niğde, at e-mail.com.",
   "unintelligible": false,
-  "wer": 0.18518518518518517,
-  "werEdits": 5,
-  "werRefWords": 27,
-  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
-  "werNormalizedPredicted": "hayır yanlış anlıyor tamamen yanlış anlıyorsun tekrar söylüyorum hayfa kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun yüzeyburgaz adana niğde at email nokta com",
-  "significantWer": 0.18518518518518517,
-  "majorErrorsCount": 5,
-  "totalWordsCount": 27,
-  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun lüleburgaz adana niğde at email nokta com",
-  "sigWerNormalizedPredicted": "hayır yanlış anlıyor tamamen yanlış anlıyorsun tekrar söylüyorum hayfa kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun yüzeyburgaz adana niğde at email nokta com",
+  "wer": 0.32,
+  "werEdits": 8,
+  "werRefWords": 25,
+  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "werNormalizedPredicted": "hayır yanlış anlıyorsun tamamen yanlış anlıyorsun tekrar söylüyorum hayfer kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun yüceburkas adana niğde at e mail com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "sigWerNormalizedPredicted": "hayır yanlış anlıyorsun tamamen yanlış anlıyorsun tekrar söylüyorum hayfer kodluyorum adana hatay muğla edirne trabzon nokta adana rize samsun yüceburkas adana niğde at e mail com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'yazdın' to 'anlıyor' at position 2",
-      "reason": "'yazdın' means 'you wrote', 'anlıyor' means 'understands' or 'is understanding'; this changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'yazdın' to 'anlıyorsun' at position 2",
+      "reason": "'yazdın' means 'you wrote', 'anlıyorsun' means 'you understand'; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'almışsın' to 'anlıyorsun' at position 5",
-      "reason": "'almışsın' means 'you took', 'anlıyorsun' means 'you understand'; this changes the meaning of the sentence significantly.",
+      "reason": "'almışsın' means 'you took', 'anlıyorsun' means 'you understand'; this substitution changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'harf' to 'hayfa' at position 8",
-      "reason": "'harf' means 'letter' (as in spelling), 'hayfa' is a proper noun (a city name) and not relevant here; this is a significant error in the context of spelling.",
+      "error": "Substitution: 'harf' to 'hayfer' at position 8",
+      "reason": "'harf' means 'letter', 'hayfer' is not a word and is a mishearing, which makes the meaning unclear.",
       "score": 1
     },
     {
       "error": "Deletion: 'harf' at position 9",
-      "reason": "Omitting 'harf' (letter) in the phrase 'harf harf kodluyorum' ('I am spelling letter by letter') changes the clarity and meaning of the instruction.",
+      "reason": "Omitting 'harf' (letter) from 'harf harf kodluyorum' (I am spelling letter by letter) changes the clarity of the instruction.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'nokta' at position 16",
+      "reason": "Inserting 'nokta' (dot) in the middle of the spelled-out sequence could confuse the email address, but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lüleburgaz' to 'yüceburkas' at position 19",
+      "reason": "'lüleburgaz' is a city name used for spelling, 'yüceburkas' is not a valid city and is a significant error in the context of spelling out an email address.",
       "score": 1
     },
     {
-      "error": "Substitution: 'lüleburgaz' to 'yüzeyburgaz' at position 20",
-      "reason": "'lüleburgaz' is a city name used in Turkish spelling alphabets, 'yüzeyburgaz' is not a valid city and is not meaningful; this is a significant error in the context of spelling out an email address.",
-      "score": 1
+      "error": "Substitution: 'email' to 'mail' at position 23",
+      "reason": "Inserting 'e' before 'mail' in 'email' splits the word but does not change the meaning.",
+      "score": 3
     }
   ]
 }

@@ -1,22 +1,37 @@
 {
   "gold": "收货地址是北京市海淀区北京路 1 2 3号。",
-  "predicted": "收货地址是中国北京市海淀区北京路一百二十三号。",
+  "predicted": "拨号地址是中国北京市海淀区北京路一百二十三号。",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 2,
-  "werRefWords": 20,
-  "werNormalizedGold": "收货地址是北京市海淀区北京路一百二十三号",
-  "werNormalizedPredicted": "收货地址是中国北京市海淀区北京路一百二十三号",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
-  "sigWerNormalizedPredicted": "收 货 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
+  "werRefWords": 18,
+  "werNormalizedGold": "收货地址是北京市海淀区北京路 一 二 三号",
+  "werNormalizedPredicted": "拨号地址是中国北京市海淀区北京路 一 百 二 十 三 号",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 二 三 号",
+  "sigWerNormalizedPredicted": "拨 号 地 址 是 中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
   "sigWerErrors": [
     {
+      "error": "Substitution: '收' to '拨' at position 0",
+      "reason": "'收货地址' means 'shipping address', while '拨号地址' means 'dialing address'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
       "error": "Insertion: '中' at position 5",
-      "reason": "The insertion of '中国' (China) before '北京市' (Beijing City) adds extra geographic information but does not change the meaning of the address, as Beijing is in China and the rest of the address is unchanged.",
+      "reason": "Adding '中国' (China) specifies the country, which is additional information but does not change the core meaning of the address.",
       "score": 2
+    },
+    {
+      "error": "Insertion: '百' at position 15",
+      "reason": "The expected address is '一二三号' (123), but the actual is '一百二十三号' (123); both represent the same number, just in different formats.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: '十' at position 16",
+      "reason": "Same as above, '一百二十三号' (123) is equivalent to '一二三号' (123); this is just a different way of expressing the same number.",
+      "score": 3
     }
   ]
 }

@@ -1,12 +1,13 @@
 """Tests for ``scoring.validate``.
 
-Covers the new rules introduced by the fairness-fixes plan:
+Covers the rules introduced by the fairness-fixes plan:
   * ``metadata.yaml`` must include a ``config:`` block with exactly the
     six required keys, values must be ``default`` or come with an
     ``override:`` line in ``notes``.
-  * ``latency.json`` can be either the legacy flat schema (accepted with
-    warning) or the new schema with ``meta.protocol`` + ``meta.region``
-    and per-entry fields matching the declared protocol.
+  * ``latency.json`` must use the new schema with ``meta.protocol`` +
+    ``meta.region`` and per-entry fields matching the declared protocol.
+    The legacy flat ``{"<locale>/<uid>": ms}`` schema was dropped with
+    the rollout PR and is now a hard rejection.
 """
 
 from __future__ import annotations
@@ -22,8 +23,8 @@ sys.path.insert(0, ".")
 from scoring.validate import (  # noqa: E402
     REQUIRED_CONFIG_KEYS,
     _validate_config_block,
-    _validate_latency_legacy,
     _validate_latency_new_schema,
+    validate_latency,
     validate_metadata,
 )
 
@@ -117,23 +118,22 @@ def _submitted(submitted_ids: dict[str, list[str]]) -> dict[str, set[str]]:
     return {k: set(v) for k, v in submitted_ids.items()}
 
 
-def test_legacy_flat_latency_passes_with_warning():
-    data = {
-        "en-US/u1": 120.0,
-        "en-US/u2": 150,
-    }
-    warnings: list[str] = []
-    issues = _validate_latency_legacy(data, _submitted({"en-US": ["u1", "u2"]}), warnings)
-    assert issues == []
-    assert any("legacy" in w.lower() for w in warnings), warnings
-
-
-def test_legacy_flat_rejects_bare_keys():
-    data = {"u1": 120.0}
-    warnings: list[str] = []
-    issues = _validate_latency_legacy(data, _submitted({"en-US": ["u1"]}), warnings)
-    # Bare key is flagged as structural error AND coverage is missing.
-    assert any("locale" in i.lower() for i in issues)
+def test_validate_latency_rejects_legacy_flat_schema(tmp_path):
+    """Legacy flat ``{"<locale>/<uid>": ms}`` was accepted during the
+    fairness-fixes back-compat window; the rollout PR drops it. Now
+    submitting a flat map must be a hard rejection with a pointer at
+    the new ``meta`` + ``measurements`` shape.
+    """
+    sub = tmp_path / "sub"
+    sub.mkdir()
+    (sub / "latency.json").write_text(
+        json.dumps({"en-US/u1": 120.0, "en-US/u2": 150}),
+        encoding="utf-8",
+    )
+    issues, warnings = validate_latency(sub, _submitted({"en-US": ["u1", "u2"]}))
+    assert any("meta" in i and "measurements" in i for i in issues), issues
+    assert any("legacy" in i.lower() for i in issues), issues
+    assert warnings == []
 
 
 def test_new_schema_batch_requires_roundtrip():
@@ -170,6 +170,20 @@ def test_new_schema_rejects_unknown_region():
     warnings: list[str] = []
     issues = _validate_latency_new_schema(data, _submitted({"en-US": ["u1"]}), warnings)
     assert any("mars-base-1" in i for i in issues)
+
+
+def test_new_schema_accepts_us_multi_region():
+    """Multi-region 'us' is in the allowlist as an escape hatch for
+    providers like Google Chirp-3 whose model under test isn't routable
+    via a single region. See ALLOWED_LATENCY_REGIONS in validate.py.
+    """
+    data = {
+        "meta": {"protocol": "batch", "region": "us"},
+        "measurements": {"en-US/u1": {"roundTripMs": 120}},
+    }
+    warnings: list[str] = []
+    issues = _validate_latency_new_schema(data, _submitted({"en-US": ["u1"]}), warnings)
+    assert issues == []
 
 
 def test_new_schema_rejects_unknown_protocol():
@@ -250,10 +264,20 @@ def test_latency_stats_new_schema_produces_complete_fields(tmp_path):
     en = stats["locales"]["en-US"]
     # completeP95Ms aliases roundTripP95Ms for batch.
     assert en["completeP95Ms"] == pytest.approx(en["roundTripP95Ms"])
-    # Legacy alias populated for UI fallback.
-    assert en["latencyP95Ms"] == en["completeP95Ms"]
+    # Legacy ``latencyP95Ms`` alias was dropped with the rollout PR.
+    assert "latencyP95Ms" not in en
     assert stats["protocol"] == "batch"
     assert stats["region"] == "us-east-1"
+
+
+def test_latency_stats_rejects_legacy_flat_schema():
+    """The old flat ``{"<locale>/<uid>": ms}`` schema is no longer parsed."""
+    from scripts.latency_stats import compute_latency_stats
+
+    manifest = {"utterances": [{"id": "u1", "locale": "en-US", "transcript": ""}]}
+    legacy = {"en-US/u1": 100}
+    with pytest.raises(ValueError, match="new schema"):
+        compute_latency_stats(legacy, manifest)
 
 
 def test_latency_stats_streaming_emits_ttft_and_complete(tmp_path):
@@ -304,11 +328,9 @@ def test_update_leaderboard_prefers_complete_field(tmp_path):
                         "completeP95Ms": 200,
                         "roundTripP50Ms": 100,
                         "roundTripP95Ms": 200,
-                        "latencyP50Ms": 100,
-                        "latencyP95Ms": 200,
                     }
                 },
-                "overall": {"wer": 0.05, "significantWer": 0.08, "completeP95Ms": 200, "latencyP95Ms": 200},
+                "overall": {"wer": 0.05, "significantWer": 0.08, "completeP95Ms": 200},
                 "latencyMeta": {"protocol": "batch", "region": "us-east-1"},
                 "meta": {
                     "config": {
@@ -337,6 +359,8 @@ def test_update_leaderboard_prefers_complete_field(tmp_path):
 
     prov_entry = next(p for p in lb["providers"] if p["id"] == "acme-stt")
     assert prov_entry["localeResults"]["en-US"]["completeP95Ms"] == 200
+    # Legacy ``latencyP95Ms`` alias was dropped from update_leaderboard.py.
+    assert "latencyP95Ms" not in prov_entry["localeResults"]["en-US"]
     assert prov_entry["latencyMeta"] == {"protocol": "batch", "region": "us-east-1"}
     assert prov_entry["inferenceConfig"]["beamSize"] == "default"
     # Overall block plumbed through so the UI doesn't re-average.

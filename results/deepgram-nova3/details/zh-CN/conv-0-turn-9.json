@@ -7,30 +7,30 @@
   "werRefWords": 20,
   "werNormalizedGold": "我的电话号码是 八 六 一 三 九 零 一 二 三 四 五 六 七",
   "werNormalizedPredicted": "有点好好吗是 八 六 尧 三 尧 林 尧 r 三 四 五 六 七",
-  "significantWer": 0.15,
-  "majorErrorsCount": 3,
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "我 的 电 话 号 码 是 八 六 一 三 九 零 一 二 三 四 五 六 七",
   "sigWerNormalizedPredicted": "有 点 好 好 吗 是 八 六 尧 三 尧 林 尧 r 三 四 五 六 七",
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to '有' at position 0",
-      "reason": "'我' (I) is substituted with '有' (have), which changes the subject and meaning of the sentence significantly.",
+      "reason": "The subject of the sentence changes from 'I' to 'have', which makes the sentence incoherent and changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: '码' at position 5",
-      "reason": "Omitting '码' (number) from '电话号码' (phone number) makes the phrase incomplete but still somewhat understandable in context.",
-      "score": 2
+      "reason": "Omitting '码' (part of '号码', meaning 'number') makes the phrase incomplete and unclear, significantly affecting the meaning.",
+      "score": 1
     },
     {
       "error": "Substitution: '一' to '尧' at position 9",
-      "reason": "'一' (one) is replaced with '尧' (a surname or unrelated character), which is a significant error in a phone number sequence.",
+      "reason": "'一' is the digit '1', but '尧' is a completely unrelated character, which makes the phone number incorrect and unrecognizable.",
       "score": 1
     },
     {
       "error": "Substitution: '九' to '尧' at position 11",
-      "reason": "'九' (nine) is replaced with '尧', which is a significant error in a phone number sequence.",
+      "reason": "'九' is the digit '9', but '尧' is a completely unrelated character, which makes the phone number incorrect and unrecognizable.",
       "score": 1
     }
   ]

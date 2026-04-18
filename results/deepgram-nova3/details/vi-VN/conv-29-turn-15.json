@@ -2,25 +2,30 @@
   "gold": "Tôi muốn biết là tôi có đủ khả năng được tăng hạn mức thẻ tín dụng hay không?",
   "predicted": "Tôi không biết là tôi có đủ khả năng được tăng hạng mức hay ứng dụng hay không.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 3,
+  "wer": 0.2222222222222222,
+  "werEdits": 4,
   "werRefWords": 18,
   "werNormalizedGold": "tôi muốn biết là tôi có đủ khả năng được tăng hạn mức thẻ tín dụng hay không",
-  "werNormalizedPredicted": "tôi không biết là tôi có đủ khả năng được tăng hạn mức hay ứng dụng hay không",
-  "significantWer": 0.1111111111111111,
+  "werNormalizedPredicted": "tôi không biết là tôi có đủ khả năng được tăng hạng mức hay ứng dụng hay không",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "tôi muốn biết là tôi có đủ khả năng được tăng hạn mức thẻ tín dụng hay không",
-  "sigWerNormalizedPredicted": "tôi không biết là tôi có đủ khả năng được tăng hạn mức hay ứng dụng hay không",
+  "sigWerNormalizedPredicted": "tôi không biết là tôi có đủ khả năng được tăng hạng mức hay ứng dụng hay không",
   "sigWerErrors": [
     {
       "error": "Substitution: 'muốn' to 'không' at position 1",
-      "reason": "'muốn' means 'want' and 'không' means 'not'; this changes the intent from wanting to not knowing, which significantly alters the meaning of the sentence.",
+      "reason": "Changing 'muốn' (want) to 'không' (not) reverses the intent of the sentence, making the meaning completely different.",
       "score": 1
     },
     {
+      "error": "Substitution: 'hạn' to 'hạng' at position 11",
+      "reason": "'hạn mức' (credit limit) is a fixed banking term, while 'hạng mức' is incorrect and changes the meaning, but the intent is still somewhat understandable in context.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'thẻ' to 'hay' at position 13",
-      "reason": "'thẻ' means 'card' and 'hay' means 'or'; this removes the reference to 'credit card' and introduces an 'or' conjunction, which makes the sentence unclear and changes the meaning.",
+      "reason": "Replacing 'thẻ' (card) with 'hay' (or) removes the reference to 'credit card' and introduces a conjunction, which confuses the meaning of the sentence.",
       "score": 1
     }
   ]

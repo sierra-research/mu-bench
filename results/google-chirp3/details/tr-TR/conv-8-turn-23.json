@@ -2,15 +2,26 @@
   "gold": "Hayır yine yanlış. Zeynep diyorsunuz halbuki adım Zaynep. Z'den sonra A harfi var. E harfi değil.",
   "predicted": "Hayır, yine yanlış. Zeynep diyorsunuz, halbuki adım Zainet. Z'den sonra A harfi var, E harfi değil.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
   "werNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "werNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır yine yanlış zainet diyorsunuz halbuki adım z den sonra a harfi var e harfi değil",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "sigWerNormalizedPredicted": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır yine yanlış zainet diyorsunuz halbuki adım z den sonra a harfi var e harfi değil",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zeynep' to 'zainet' at position 3",
+      "reason": "The name 'zeynep' is replaced with 'zainet', which is a different name and changes the identity being referred to. This is a significant error as it affects the core meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'zaynep' at position 7",
+      "reason": "The word 'zaynep' is omitted, which is crucial because the sentence is about clarifying the correct spelling of the name. Its absence makes the explanation incomplete and confusing.",
+      "score": 1
+    }
+  ]
 }

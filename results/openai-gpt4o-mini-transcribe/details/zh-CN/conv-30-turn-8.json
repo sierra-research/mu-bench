@@ -1,16 +1,22 @@
 {
   "gold": "我的姓名是林俊。",
-  "predicted": "我的姓名是林俊。",
+  "predicted": "我的姓美是林俊。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 1,
   "werRefWords": 7,
   "werNormalizedGold": "我的姓名是林俊",
-  "werNormalizedPredicted": "我的姓名是林俊",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的姓美是林俊",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "我 的 姓 名 是 林 俊",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 林 俊",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 姓 美 是 林 俊",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '名' to '美' at position 3",
+      "reason": "'名' means 'name' and '美' means 'beautiful'; substituting 'name' with 'beautiful' changes the meaning of the sentence and makes it incoherent in context ('My surname beautiful is Lin Jun' instead of 'My surname name is Lin Jun').",
+      "score": 1
+    }
+  ]
 }

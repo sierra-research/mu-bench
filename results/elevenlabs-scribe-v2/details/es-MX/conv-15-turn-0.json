@@ -1,16 +1,27 @@
 {
   "gold": "Buenas días, quiero solicitar, bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a hacer aquí con el banco.",
-  "predicted": "Eh, buenos días, eh, quiero solicitar-- bueno, es que me voy a mudar y quiero hacer el cambio de m-- domicilio para cualquier trámite futuro que vaya a ser aquí con el banco",
+  "predicted": "Eh, buenos días, eh, quiero solicitar-- bueno, es que me voy a mudar y quiero hacer el cambio de m-domicilio para cualquier trámite futuro que vaya a ser aquí con el banco",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.06666666666666667,
+  "werEdits": 2,
   "werRefWords": 30,
-  "werNormalizedGold": "buenos dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a hacer aqui con el banco",
-  "werNormalizedPredicted": "buenos dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a hacer aqui con el banco",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "buenas días quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a hacer aquí con el banco",
+  "werNormalizedPredicted": "buenos días quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a ser aquí con el banco",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 30,
-  "sigWerNormalizedGold": "buenos dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a hacer aqui con el banco",
-  "sigWerNormalizedPredicted": "buenos dias quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier tramite futuro que vaya a hacer aqui con el banco",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "buenas días quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a hacer aquí con el banco",
+  "sigWerNormalizedPredicted": "buenos días quiero solicitar bueno es que me voy a mudar y quiero hacer el cambio de domicilio para cualquier trámite futuro que vaya a ser aquí con el banco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'buenas' to 'buenos' at position 0",
+      "reason": "'Buenos días' is the standard greeting in Spanish, while 'buenas días' is a minor grammatical error but does not change the meaning of the greeting.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'hacer' to 'ser' at position 25",
+      "reason": "Changing 'hacer' (to do/make) to 'ser' (to be) alters the meaning of the sentence, as it refers to the type of action for future procedures. This could cause confusion about the intended action.",
+      "score": 1
+    }
+  ]
 }

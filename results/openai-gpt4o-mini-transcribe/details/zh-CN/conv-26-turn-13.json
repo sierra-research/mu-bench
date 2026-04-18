@@ -1,16 +1,32 @@
 {
   "gold": "美玲 美玲。",
-  "predicted": "Eimi, vevily",
+  "predicted": "爱美美丽。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "美玲 美玲",
-  "werNormalizedPredicted": "美玲 美玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "爱美美丽",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "美 玲 美 玲",
-  "sigWerNormalizedPredicted": "美 玲 美 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "爱 美 美 丽",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '爱' at position 0",
+      "reason": "'爱' (love) is not part of the expected name sequence and changes the meaning by introducing an unrelated word.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "Omitting '玲' from the name sequence alters the proper noun and could lead to confusion about the intended name.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '丽' at position 3",
+      "reason": "'玲' and '丽' are different characters with different meanings and are not interchangeable in a name; this changes the proper noun significantly.",
+      "score": 1
+    }
+  ]
 }

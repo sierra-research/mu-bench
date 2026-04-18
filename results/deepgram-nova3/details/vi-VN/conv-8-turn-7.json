@@ -7,7 +7,7 @@
   "werRefWords": 18,
   "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "werNormalizedPredicted": "số điện thoại là tổng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'cộng' to 'tổng' at position 4",
-      "reason": "'Cộng' (plus) is used to indicate the international dialing code, while 'tổng' (total) is unrelated and changes the meaning of the phone number format.",
+      "reason": "'Cộng' means 'plus' (used for country code), while 'tổng' means 'total' or 'sum', which changes the meaning of the phone number prefix.",
       "score": 1
     },
     {
       "error": "Substitution: 'một' to 'mốt' at position 9",
-      "reason": "Inserting 'mươi' (ten) changes the number sequence, resulting in an incorrect phone number.",
+      "reason": "The insertion of 'mươi' changes the number sequence, potentially altering the phone number.",
       "score": 1
     }
   ]

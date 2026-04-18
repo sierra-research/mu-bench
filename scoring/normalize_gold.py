@@ -81,9 +81,14 @@ def write_cached_gold_hash(cache_dir: Path, digest: str) -> None:
     (cache_dir / GOLD_HASH_FILENAME).write_text(digest + "\n", encoding="utf-8")
 
 
-def _format_gold_prompt(prompt_template: str, gold: str) -> str:
-    """Format the gold-only normalization prompt with the single gold input."""
-    return prompt_template.format(expected_transcript=gold)
+def _format_gold_prompt(prompt_template: str, gold: str, locale: str) -> str:
+    """Format the gold-only normalization prompt with the single gold input.
+
+    Passes ``locale`` into the prompt so the LLM renders digits and other
+    language-dependent normalizations in the transcript's native language
+    (e.g. Chinese digits for zh-CN rather than English digit words).
+    """
+    return prompt_template.format(expected_transcript=gold, locale=locale)
 
 
 def _extract_normalized_gold(resp: object) -> str | None:
@@ -194,7 +199,7 @@ def main():
             batch = to_normalize[batch_start:batch_end]
             print(f"Batch {batch_start + 1}-{batch_end} / {total}...")
 
-            prompts = [_format_gold_prompt(prompt_template, gold) for _, _, gold in batch]
+            prompts = [_format_gold_prompt(prompt_template, gold, locale) for locale, _, gold in batch]
             try:
                 responses = get_responses(
                     prompts,

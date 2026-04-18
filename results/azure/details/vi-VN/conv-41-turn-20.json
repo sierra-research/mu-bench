@@ -7,7 +7,7 @@
   "werRefWords": 10,
   "werNormalizedGold": "rồi ạ vui lòng hướng dẫn tiếp tục xin chào",
   "werNormalizedPredicted": "prolet vui lòng hướng dẫn tiếp tục xin chào",
-  "significantWer": 0.1,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "rồi ạ vui lòng hướng dẫn tiếp tục xin chào",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'rồi' to 'prolet' at position 0",
-      "reason": "'prolet' is a completely different word from 'rồi', and is not a Vietnamese word. This makes the sentence incoherent at the start.",
+      "reason": "'prolet' is a completely different word from 'rồi' and is not a Vietnamese word, which makes the sentence incoherent at the start.",
       "score": 1
     },
     {
       "error": "Deletion: 'ạ' at position 1",
-      "reason": "'ạ' is a polite particle in Vietnamese. Its omission slightly reduces the politeness but does not change the main meaning of the sentence.",
+      "reason": "Missing 'ạ' removes a polite particle, which slightly affects the tone but not the main meaning of the sentence.",
       "score": 2
     }
   ]

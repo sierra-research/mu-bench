@@ -7,7 +7,7 @@
   "werRefWords": 6,
   "werNormalizedGold": "郡凛 at email dot com",
   "werNormalizedPredicted": "gmail com",
-  "significantWer": 0.3333333333333333,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "郡 凛 at email dot com",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '郡' to 'gmail' at position 0",
-      "reason": "The expected word is a name or non-English word, but it was replaced with 'gmail', which is a completely different word and changes the meaning of the email address.",
+      "reason": "The expected word is a non-English name or word, but it was replaced with 'gmail', which is an English email provider. This completely changes the meaning and identity of the email address.",
       "score": 1
     },
     {
       "error": "Deletion: '凛' at position 1",
-      "reason": "A key part of the email address (likely a name or identifier) is missing, making the address incomplete and unusable.",
+      "reason": "A key part of the expected email address (likely a name or identifier) is missing, making the transcription incomplete and unusable for its intended purpose.",
       "score": 1
     }
   ]

@@ -3,24 +3,24 @@
   "predicted": "是",
   "unintelligible": false,
   "wer": 1.0,
-  "werEdits": 9,
-  "werRefWords": 9,
-  "werNormalizedGold": "哎呀 你 有 什么 问题 啊",
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "哎呀你有什么问题",
   "werNormalizedPredicted": "是",
-  "significantWer": 0.2222222222222222,
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题 啊",
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题",
   "sigWerNormalizedPredicted": "是",
   "sigWerErrors": [
     {
       "error": "Substitution: '哎' to '是' at position 0",
-      "reason": "The word '是' (is/yes) is substituted for '哎' (an interjection like 'hey' or 'oh'), which changes the tone and meaning of the sentence, making it incoherent.",
+      "reason": "The actual transcription '是' (meaning 'is/yes') replaces the interjection '哎' (an exclamation), which changes the tone and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: '呀' at position 1",
-      "reason": "The entire rest of the sentence is missing, which removes the question and context, resulting in a significant loss of meaning.",
+      "reason": "The interjection '呀' is missing, which further removes the original tone and intent of the sentence, making the actual transcription incoherent compared to the expected.",
       "score": 1
     }
   ]

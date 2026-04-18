@@ -1,26 +1,26 @@
 {
   "gold": "Oye me dijiste C N 7 9 1, ¿es C N 1 9 1?",
-  "predicted": "Oye, pero me dijiste SCN791. ¿Es CN191?",
+  "predicted": "Oye, pero me dijiste CN791, ¿es CN1191?",
   "unintelligible": false,
   "wer": 0.14285714285714285,
   "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "oye me dijiste c n siete nueve uno es c n uno nueve uno",
-  "werNormalizedPredicted": "oye pero me dijiste s c n siete nueve uno es c n uno nueve uno",
-  "significantWer": 0.07142857142857142,
+  "werNormalizedPredicted": "oye pero me dijiste c n siete nueve uno es c n uno uno nueve uno",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "oye me dijiste c n siete nueve uno es c n uno nueve uno",
-  "sigWerNormalizedPredicted": "oye pero me dijiste s c n siete nueve uno es c n uno nueve uno",
+  "sigWerNormalizedPredicted": "oye pero me dijiste c n siete nueve uno es c n uno uno nueve uno",
   "sigWerErrors": [
     {
       "error": "Insertion: 'pero' at position 1",
-      "reason": "'pero' (but) adds a contrast or conjunction not present in the original, but does not derail the meaning of the sentence.",
+      "reason": "'pero' (but) adds a contrast or interruption to the sentence, but does not significantly change the overall meaning of the message.",
       "score": 2
     },
     {
-      "error": "Insertion: 's' at position 3",
-      "reason": "The insertion of 's' before 'c n' could cause confusion, especially if these are part of a code or spelled sequence, potentially changing the intended information.",
+      "error": "Insertion: 'uno' at position 11",
+      "reason": "An extra 'uno' (one) in a sequence of numbers/letters can cause confusion or incorrect information, especially if this is a code or identifier. This is a significant error.",
       "score": 1
     }
   ]

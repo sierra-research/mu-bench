@@ -2,15 +2,26 @@
   "gold": "Ashley, that's A S H L E Y, dot Brown B R O W N at email E M A I L dot com.",
   "predicted": "Ashley, that's a SHLEY dot Brown BROWN at e-mail e-mail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 24,
-  "werNormalizedGold": "ashley thats a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "werNormalizedPredicted": "ashley thats a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 24,
-  "sigWerNormalizedGold": "ashley thats a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "sigWerNormalizedPredicted": "ashley thats a s h l e y dot brown b r o w n at email e m a i l dot com",
-  "sigWerErrors": []
+  "wer": 0.2,
+  "werEdits": 5,
+  "werRefWords": 25,
+  "werNormalizedGold": "ashley that is a s h l e y dot brown b r o w n at email e m a i l dot com",
+  "werNormalizedPredicted": "ashley that is a s h l e y dot brown b r o w n at email email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "ashley that is a s h l e y dot brown b r o w n at email e m a i l dot com",
+  "sigWerNormalizedPredicted": "ashley that is a s h l e y dot brown b r o w n at email email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'email' at position 18",
+      "reason": "The expected sequence is spelling out 'email' as 'e m a i l', but the actual transcript has the word 'email' instead of the letter 'e'. This breaks the intended spelled-out format, which is important for things like email addresses. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'm' at position 19",
+      "reason": "The letter 'm' is missing from the spelled-out sequence, which makes the spelling of 'email' incorrect. For spelled-out words, a single letter difference is a significant error.",
+      "score": 1
+    }
+  ]
 }

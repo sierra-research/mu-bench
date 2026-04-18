@@ -6,26 +6,26 @@
   "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "郡凛 at email dot com",
-  "werNormalizedPredicted": "zero at gmail dot com",
-  "significantWer": 0.5,
+  "werNormalizedPredicted": "零 at gmail dot com",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "zero at gmail dot com",
+  "sigWerNormalizedPredicted": "零 at gmail dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '郡' to 'zero' at position 0",
-      "reason": "The expected word is a non-English (likely Japanese) character, while the actual is the English word 'zero'. This is a complete substitution of a name or identifier with an unrelated English word, which significantly changes the meaning.",
+      "error": "Substitution: '郡' to '零' at position 0",
+      "reason": "The first character is completely different, which could change the name or identifier in the email address, making it a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: '凛' at position 1",
-      "reason": "A key part of the expected email identifier is missing in the actual transcription, which makes the email address incorrect and unusable.",
+      "reason": "Omitting a character from the name or identifier in an email address can result in a completely different address, which is a significant error.",
       "score": 1
     },
     {
       "error": "Substitution: 'email' to 'gmail' at position 3",
-      "reason": "The domain part of the email address is changed from 'email' to 'gmail', which is a significant error as it changes the destination of the email address.",
+      "reason": "Changing the email provider from 'email' to 'gmail' results in a different domain, which could cause the email to be sent to the wrong address. This is a significant error.",
       "score": 1
     }
   ]

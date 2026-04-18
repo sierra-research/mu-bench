@@ -2,15 +2,26 @@
   "gold": "没有没有没有没有没有没有没有没有没有没有，我的姓名是君灵。",
   "predicted": "没有没有没有没有没有没有没有没有没有没有,我的性命是润玲。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14814814814814814,
+  "werEdits": 4,
   "werRefWords": 27,
-  "werNormalizedGold": "没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 我的姓名是君灵",
-  "werNormalizedPredicted": "没有 没有 没有 没有 没有 没有 没有 没有 没有 没有 我的姓名是君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "没有没有没有没有没有没有没有没有没有没有 我的姓名是君灵",
+  "werNormalizedPredicted": "没有没有没有没有没有没有没有没有没有没有 我的性命是润玲",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 27,
   "sigWerNormalizedGold": "没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 我 的 姓 名 是 君 灵",
-  "sigWerNormalizedPredicted": "没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 我 的 姓 名 是 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 没 有 我 的 性 命 是 润 玲",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '性' at position 22",
+      "reason": "'姓' means 'surname' while '性' means 'nature' or 'sex'; this changes the meaning of the phrase '我的姓名' (my name) to '我的性命' (my life), which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to '润' at position 25",
+      "reason": "'君灵' is a specific name, but '润玲' is a completely different name; substituting one name for another is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
 }

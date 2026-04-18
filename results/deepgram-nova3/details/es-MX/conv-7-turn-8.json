@@ -2,21 +2,31 @@
   "gold": "Más 2 55 1 2 3 4 5 6 7 8.",
   "predicted": "Dos cinco cinco uno dos tres cuatro cinco seis siete ocho.",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
-  "werRefWords": 12,
-  "werNormalizedGold": "mas dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
   "werNormalizedPredicted": "dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "mas dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
   "sigWerNormalizedPredicted": "dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'mas' at position 0",
-      "reason": "The word 'mas' (meaning 'more' in Spanish) is omitted, which could change the meaning of the sentence, especially if it is part of a command or request for more numbers. The omission significantly alters the intent.",
+      "error": "Deletion: 'más' at position 0",
+      "reason": "'más' (meaning 'plus' or 'more') is omitted, which could change the meaning of the number sequence, especially if it is a phone number or code. This is a significant omission.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 2",
+      "reason": "'cincuenta' (fifty) is replaced with 'cinco' (five), which changes the number entirely and could lead to a completely different sequence or code. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 3",
+      "reason": "'y' (meaning 'and') is omitted. In the context of reading numbers, this is a minor error as it does not significantly change the meaning of the sequence.",
+      "score": 2
     }
   ]
 }

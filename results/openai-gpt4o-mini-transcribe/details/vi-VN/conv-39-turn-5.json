@@ -1,16 +1,32 @@
 {
   "gold": "Mình đọc nhá. Địa chỉ email của mình là minh chấm trần a còng email chấm com. Tất cả đều viết không dấu.",
-  "predicted": "ờ Mình đọc nhá, địa chỉ email của mình là minh.tran@appleemail.com, tất cả đều viết không dấu.",
+  "predicted": "Mình đọc nhá, địa chỉ email của mình là minh.tran@appongemail.com, tất cả đều viết không giấu.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
   "werRefWords": 23,
-  "werNormalizedGold": "minh doc nhe dia chi email cua minh la minh cham tran a cong email cham com tat ca deu viet khong dau",
-  "werNormalizedPredicted": "minh doc nhe dia chi email cua minh la minh cham tran a cong email cham com tat ca deu viet khong dau",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "mình đọc nhá địa chỉ email của mình là minh chấm trần a còng email chấm com tất cả đều viết không dấu",
+  "werNormalizedPredicted": "mình đọc nhá địa chỉ email của mình là minh chấm tran a còng appongemail chấm com tất cả đều viết không giấu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 23,
-  "sigWerNormalizedGold": "minh doc nhe dia chi email cua minh la minh cham tran a cong email cham com tat ca deu viet khong dau",
-  "sigWerNormalizedPredicted": "minh doc nhe dia chi email cua minh la minh cham tran a cong email cham com tat ca deu viet khong dau",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "mình đọc nhá địa chỉ email của mình là minh chấm trần a còng email chấm com tất cả đều viết không dấu",
+  "sigWerNormalizedPredicted": "mình đọc nhá địa chỉ email của mình là minh chấm tran a còng appongemail chấm com tất cả đều viết không giấu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 11",
+      "reason": "'trần' is a Vietnamese name with a diacritic, while 'tran' is the same name without the diacritic. In the context of an email address, omitting the diacritic is common and does not change the meaning or function of the email address.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'appongemail' at position 14",
+      "reason": "'appongemail' is a significant mistranscription of 'email', introducing an extra, unrelated word. This could cause confusion or make the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'dấu' to 'giấu' at position 22",
+      "reason": "'dấu' means 'accent/diacritic', while 'giấu' means 'hide'. This changes the meaning of the instruction about how to write the email address, potentially causing misunderstanding.",
+      "score": 1
+    }
+  ]
 }

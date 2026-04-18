@@ -2,20 +2,30 @@
   "gold": "María punto López arroba email punto com.",
   "predicted": "maria.lopez@emair.com",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 1,
-  "werRefWords": 6,
-  "werNormalizedGold": "maria lopez arroba email punto com",
-  "werNormalizedPredicted": "maria lopez arroba emair punto com",
-  "significantWer": 0.0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "maria punto lopez arroba emair punto com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "maria lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "maria lopez arroba emair punto com",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "maria punto lopez arroba emair punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'emair' at position 3",
-      "reason": "'emair' is a misspelling of 'email', but the intended meaning is still clear in the context of an email address. The overall meaning is not changed.",
+      "error": "Substitution: 'maría' to 'maria' at position 0",
+      "reason": "Missing accent on a common name, but the name is still clearly recognizable and not a significant change.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 2",
+      "reason": "Missing accent on a common surname, but the name is still clearly recognizable and not a significant change.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'emair' at position 4",
+      "reason": "'emair' is a misspelling of 'email', but it is still phonetically similar and likely understandable in context.",
       "score": 2
     }
   ]

@@ -1,16 +1,27 @@
 {
   "gold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
-  "predicted": "Tabii. Atatürk Caddesi No: 45, Taksim, 6. Kazım Karabekir Mahallesi, Üsküdar, Taksim, İstanbul. Eee, posta kodum 34660, Türkiye.",
+  "predicted": "Tabii. Atatürk Caddesi No: 45, Taksim, 6 Kazım Karabekir Mahallesi, Üsküdar, Taksim, İstanbul. Eee, posta kodum 34660, Türkiye.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.18181818181818182,
+  "werEdits": 4,
   "werRefWords": 22,
-  "werNormalizedGold": "tabii atatürk caddesi numara forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "werNormalizedPredicted": "tabii atatürk caddesi numara forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "significantWer": 0.0,
+  "werNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "werNormalizedPredicted": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum üç yüz kırk altı altmış türkiye",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "tabii atatürk caddesi numara forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "sigWerNormalizedPredicted": "tabii atatürk caddesi numara forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum üç yüz kırk altı altmış türkiye",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'otuz' to 'yüz' at position 16",
+      "reason": "The postal code 'otuz dört altı yüz altmış' (34660) was transcribed as 'üç yüz kırk altı altmış' (34660), which is numerically equivalent. Although the words are different, the meaning (the postal code) is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'yüz' at position 19",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
 }

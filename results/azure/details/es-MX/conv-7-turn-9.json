@@ -5,18 +5,18 @@
   "wer": 2.8333333333333335,
   "werEdits": 17,
   "werRefWords": 6,
-  "werNormalizedGold": "no es incorrecto el numero es",
-  "werNormalizedPredicted": "el numero es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si esta correcto no es incorrecto el numero es",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "no es incorrecto el número es",
+  "werNormalizedPredicted": "el número es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si está correcto no es incorrecto el número es",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "no es incorrecto el numero es",
-  "sigWerNormalizedPredicted": "el numero es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si esta correcto no es incorrecto el numero es",
+  "sigWerNormalizedGold": "no es incorrecto el número es",
+  "sigWerNormalizedPredicted": "el número es cinco cinco uno dos cuatro siete siete ocho me puedes confirmar si está correcto no es incorrecto el número es",
   "sigWerErrors": [
     {
       "error": "Insertion: 'el' at position 0",
-      "reason": "The insertion adds a full phone number and a request for confirmation, which changes the meaning and context of the sentence significantly.",
-      "score": 1
+      "reason": "The phrase 'el número es' is inserted at the beginning, which introduces the phone number sequence. While this adds information, it does not change the meaning of the expected phrase, as the expected phrase also contains 'el número es' at the end. This is a minor error due to repetition, not a significant change in meaning.",
+      "score": 2
     }
   ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 19,
   "werNormalizedGold": "ben yeni kredi kartı çıkartmıştım da onu bekliyorum onun durumu ile alakalı bilgi almak istiyorum şu an nerede kartım",
   "werNormalizedPredicted": "ben bir yeni kredi kartı çıkartmıştım da onu bekliyorum onun durumuyla alakalı bilgi almak istiyorum şu an nerede kartım",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "ben yeni kredi kartı çıkartmıştım da onu bekliyorum onun durumu ile alakalı bilgi almak istiyorum şu an nerede kartım",
@@ -15,18 +15,18 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'bir' at position 1",
-      "reason": "Adding 'bir' (meaning 'a' or 'one') before 'yeni' (new) does not change the overall meaning of the sentence; it is a minor stylistic difference.",
+      "reason": "'bir' (meaning 'a' or 'one') is inserted, but it does not significantly change the meaning of the sentence in this context.",
       "score": 2
     },
     {
       "error": "Substitution: 'durumu' to 'durumuyla' at position 9",
-      "reason": "'Durumu' means 'its situation/status', while 'durumuyla' means 'with its situation/status'. The meaning is almost the same in this context, as both refer to the status of the card. This is a minor grammatical difference.",
+      "reason": "'durumu' (its situation) vs 'durumuyla' (with its situation) is a minor grammatical difference, but the overall meaning is preserved.",
       "score": 2
     },
     {
       "error": "Deletion: 'ile' at position 10",
-      "reason": "'ile' means 'with', but in the actual transcription, 'durumuyla' already includes the meaning of 'with its status', so the deletion does not change the meaning. This is a minor grammatical difference.",
-      "score": 2
+      "reason": "'ile' (with) is omitted, but 'durumuyla' already includes the meaning of 'ile', so the meaning is unchanged.",
+      "score": 3
     }
   ]
 }

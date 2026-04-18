@@ -2,21 +2,26 @@
   "gold": "Tôi có cần phải chứng minh lại thu nhập để có thể tăng hạn mức không?",
   "predicted": "Tôi có cần phải chứng minh lại thu nhập để có thể được tăng hàng mức không",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
+  "wer": 0.125,
+  "werEdits": 2,
   "werRefWords": 16,
   "werNormalizedGold": "tôi có cần phải chứng minh lại thu nhập để có thể tăng hạn mức không",
-  "werNormalizedPredicted": "tôi có cần phải chứng minh lại thu nhập để có thể được tăng hạn mức không",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi có cần phải chứng minh lại thu nhập để có thể được tăng hàng mức không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "tôi có cần phải chứng minh lại thu nhập để có thể tăng hạn mức không",
-  "sigWerNormalizedPredicted": "tôi có cần phải chứng minh lại thu nhập để có thể được tăng hạn mức không",
+  "sigWerNormalizedPredicted": "tôi có cần phải chứng minh lại thu nhập để có thể được tăng hàng mức không",
   "sigWerErrors": [
     {
       "error": "Insertion: 'được' at position 12",
-      "reason": "The insertion of 'được' (meaning 'to be able to') does not change the overall meaning of the sentence, as both versions convey the same intent about increasing the limit. The sentence remains coherent and the meaning is preserved.",
+      "reason": "The insertion of 'được' (meaning 'to be able to') does not significantly change the meaning of the sentence; it is a minor grammatical addition that does not affect the intent.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'hạn' to 'hàng' at position 13",
+      "reason": "'hạn mức' means 'limit' (as in credit limit), while 'hàng mức' is not a correct phrase and changes the meaning, making the sentence confusing or incorrect. This is a significant error.",
+      "score": 1
     }
   ]
 }

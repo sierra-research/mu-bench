@@ -2,15 +2,36 @@
   "gold": "E-posta adresim ve numaramda yanlışlık var. E-posta adresim Zeynep nokta Arslan at email nokta com. Numaram ise 90 123 0 90 45 67.",
   "predicted": "E-posta adresim ve numaramda yanlışlık var. E-posta adresim dayınıp nokta arslan et email nokta com. Numaramsa doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 29,
-  "werNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 29,
-  "sigWerNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerErrors": []
+  "wer": 0.13333333333333333,
+  "werEdits": 4,
+  "werRefWords": 30,
+  "werNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "e posta adresim ve numaramda yanlışlık var e posta adresim dayınıp nokta arslan at email nokta com numaramsa doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "e posta adresim ve numaramda yanlışlık var e posta adresim dayınıp nokta arslan at email nokta com numaramsa doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zeynep' to 'dayınıp' at position 10",
+      "reason": "'zeynep' is a proper name, but 'dayınıp' is a completely different word and not a name, making the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaram' to 'numaramsa' at position 17",
+      "reason": "'numaram' (my number) vs 'numaramsa' (if my number); the meaning is only slightly changed and does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ise' at position 18",
+      "reason": "'ise' (as for) is a minor connective word; its omission does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 20",
+      "reason": "Omitting 'bir' (one) from the phone number changes the actual number, which is critical information.",
+      "score": 1
+    }
+  ]
 }

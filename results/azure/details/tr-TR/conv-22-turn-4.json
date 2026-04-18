@@ -7,16 +7,16 @@
   "werRefWords": 9,
   "werNormalizedGold": "yalnız adım zeynep değil zaynep ikinci harfi a olacak",
   "werNormalizedPredicted": "yalnız adım zeynep değil zeynep ikinci harfi a olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "yalnız adım zeynep değil zaynep ikinci harfi a olacak",
   "sigWerNormalizedPredicted": "yalnız adım zeynep değil zeynep ikinci harfi a olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 4",
-      "reason": "The expected word 'zaynep' is a variant spelling of the common Turkish name 'zeynep'. The difference is a single letter ('a' vs 'e'), and the sentence explicitly clarifies the correct spelling. This minor misspelling does not derail the meaning, as the intent is still clear.",
-      "score": 2
+      "reason": "The expected word 'zaynep' is a variant spelling of the name 'zeynep'. In this context, the sentence is clarifying the correct spelling, so using 'zeynep' instead of 'zaynep' does not match the intended correction. This changes the meaning of the sentence, as the point is to distinguish between the two spellings.",
+      "score": 1
     }
   ]
 }

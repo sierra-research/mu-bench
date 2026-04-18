@@ -2,15 +2,21 @@
   "gold": "Ashley dot Brown at Gmail dot com.",
   "predicted": "Ashley dot brown at g mail dot com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "ashley dot brown at gmail dot com",
-  "werNormalizedPredicted": "ashley dot brown at gmail dot com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "ashley dot brown at g mail dot com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "ashley dot brown at gmail dot com",
-  "sigWerNormalizedPredicted": "ashley dot brown at gmail dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ashley dot brown at g mail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'gmail' to 'mail' at position 4",
+      "reason": "Splitting 'gmail' into 'g mail' does not change the intended meaning of the email address, as it is still clear that the domain is 'gmail.com'.",
+      "score": 2
+    }
+  ]
 }

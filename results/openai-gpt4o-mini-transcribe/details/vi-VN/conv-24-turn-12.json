@@ -1,26 +1,31 @@
 {
   "gold": "Mình sẵn sàng rồi. Bạn giúp mình với nhé.",
-  "predicted": "Mình sắp xong rồi bạn giúp mình với nha.",
+  "predicted": "Mình săn sàng hợp bạn giúp mình với nha.",
   "unintelligible": false,
   "wer": 0.3333333333333333,
   "werEdits": 3,
   "werRefWords": 9,
   "werNormalizedGold": "mình sẵn sàng rồi bạn giúp mình với nhé",
-  "werNormalizedPredicted": "mình sắp xong rồi bạn giúp mình với nha",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "mình săn sàng hợp bạn giúp mình với nha",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "mình sẵn sàng rồi bạn giúp mình với nhé",
-  "sigWerNormalizedPredicted": "mình sắp xong rồi bạn giúp mình với nha",
+  "sigWerNormalizedPredicted": "mình săn sàng hợp bạn giúp mình với nha",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sẵn' to 'sắp' at position 1",
-      "reason": "'sẵn' (ready) and 'sắp' (about to) have different meanings; this changes the intent of the sentence from being ready to being almost ready, which can affect the overall meaning.",
+      "error": "Substitution: 'sẵn' to 'săn' at position 1",
+      "reason": "'sẵn' (ready) and 'săn' (hunt) are different words; this changes the meaning of the phrase and makes it confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'rồi' to 'hợp' at position 3",
+      "reason": "'rồi' (already) and 'hợp' (match/fit) are unrelated in meaning, which disrupts the intended meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'nhé' to 'nha' at position 8",
-      "reason": "'nhé' and 'nha' are both Vietnamese sentence-ending particles used for softening requests or suggestions; they are often interchangeable and do not change the overall meaning.",
+      "reason": "'nhé' and 'nha' are both sentence-ending particles in Vietnamese with similar softening/encouraging tones; the meaning is not significantly changed.",
       "score": 3
     }
   ]

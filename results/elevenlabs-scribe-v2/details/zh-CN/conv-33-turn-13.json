@@ -2,15 +2,21 @@
   "gold": "姓名是林俊，英俊的俊。",
   "predicted": "名字是林俊，英俊的俊。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "姓名是林俊 英俊的俊",
-  "werNormalizedPredicted": "姓名是林俊 英俊的俊",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "名字是林俊 英俊的俊",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "姓 名 是 林 俊 英 俊 的 俊",
-  "sigWerNormalizedPredicted": "姓 名 是 林 俊 英 俊 的 俊",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "名 字 是 林 俊 英 俊 的 俊",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '名' at position 0",
+      "reason": "'姓' (surname) and '名' (given name) are different words and refer to different concepts. However, in the context of a name statement, this substitution does not derail the overall meaning, as both are related to names, but it is still a minor error.",
+      "score": 2
+    }
+  ]
 }

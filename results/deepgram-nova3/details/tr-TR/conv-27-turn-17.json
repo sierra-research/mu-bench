@@ -2,15 +2,36 @@
   "gold": "Z, tamam kodluyorum, baştan başlıyorum. Z A Y N E P nokta A R S L A N at E M A İ L nokta C O M.",
   "predicted": "Z. Tamam. Kodluyorum. Baştan başlıyorum. Z a y n e p nokta ars lan et email nokta com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 22,
-  "werNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at email nokta com",
-  "werNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 22,
-  "sigWerNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at email nokta com",
-  "sigWerNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at email nokta com",
-  "sigWerErrors": []
+  "wer": 0.5357142857142857,
+  "werEdits": 15,
+  "werRefWords": 28,
+  "werNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at e m a i l nokta c o m",
+  "werNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta ars lan et email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 28,
+  "sigWerNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta ars lan et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'ars' at position 12",
+      "reason": "'ars' is not a single letter and breaks the correct spelling sequence of the name 'arslan', making the spelled name incorrect and unrecognizable as intended.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 16",
+      "reason": "Missing the letter 'a' in the spelled-out sequence of the name 'arslan' changes the spelling and results in an incorrect name.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'com' at position 25",
+      "reason": "'com' is the correct ending for an email address and matches the expected meaning, so this is not an error.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'o' at position 26",
+      "reason": "The actual transcript merges 'c', 'o', 'm' into 'com', which is acceptable for an email domain and does not change the meaning.",
+      "score": 3
+    }
+  ]
 }

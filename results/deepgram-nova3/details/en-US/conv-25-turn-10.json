@@ -2,20 +2,25 @@
   "gold": "Do you know how much I can increase it to? Cause I don't want to start the process if there ain't gonna be enough money.",
   "predicted": "Do you know how how much I can increase it to? Because I don't wanna start the process if it ain't gonna be enough money.",
   "unintelligible": false,
-  "wer": 0.03571428571428571,
-  "werEdits": 1,
+  "wer": 0.07142857142857142,
+  "werEdits": 2,
   "werRefWords": 28,
   "werNormalizedGold": "do you know how much i can increase it to because i do not want to start the process if there is not going to be enough money",
-  "werNormalizedPredicted": "do you know how much i can increase it to because i do not want to start the process if it is not going to be enough money",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "do you know how how much i can increase it to because i do not want to start the process if it is not going to be enough money",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 28,
   "sigWerNormalizedGold": "do you know how much i can increase it to because i do not want to start the process if there is not going to be enough money",
-  "sigWerNormalizedPredicted": "do you know how much i can increase it to because i do not want to start the process if it is not going to be enough money",
+  "sigWerNormalizedPredicted": "do you know how how much i can increase it to because i do not want to start the process if it is not going to be enough money",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'how' at position 4",
+      "reason": "The extra 'how' is a repetition but does not change the meaning of the sentence; the intent is still clear.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'there' to 'it' at position 20",
-      "reason": "Substituting 'there' with 'it' changes the subject of the clause, but the overall meaning of the sentence remains clear: the speaker is concerned about whether there will be enough money. The error does not derail the meaning, but it is not semantically identical.",
+      "reason": "Changing 'there' to 'it' slightly alters the grammatical structure but does not significantly change the meaning of the sentence in this context.",
       "score": 2
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 33,
   "werNormalizedGold": "thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với tình trạng ngày phát hành ngày gửi nếu có với cả cung cấp mã theo dõi giúp mình với nhé",
   "werNormalizedPredicted": "thế bạn kiểm tra thẻ mới hoặc là cái thẻ thay thế giúp mình với cái tình trạng ngày phát hành ngày gửi nếu có nhé với cả cung cấp mã theo dõi cho mình với nhé",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 33,
   "sigWerNormalizedGold": "thế bạn kiểm tra thẻ mới hay thẻ thay thế giúp mình với tình trạng ngày phát hành ngày gửi nếu có với cả cung cấp mã theo dõi giúp mình với nhé",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'hay' to 'cái' at position 6",
-      "reason": "'hoặc' (or) is inserted before 'cái thẻ thay thế', but the original used 'hay' (or). Both serve the same function of offering an alternative, so this does not change the meaning.",
-      "score": 3
+      "reason": "'hoặc' (or) is inserted before 'cái thẻ thay thế', but the original sentence already uses 'hay' (or). This does not change the meaning, just adds redundancy.",
+      "score": 2
     },
     {
       "error": "Insertion: 'cái' at position 13",
-      "reason": "'hay' (or) is replaced by 'cái', but in context, 'cái thẻ thay thế' is just a more explicit way to refer to 'the replacement card'. The meaning is preserved.",
-      "score": 3
+      "reason": "'hay' (or) is replaced by 'cái' (the), but 'hoặc' was inserted before, so the meaning is preserved. This is a minor error due to redundancy.",
+      "score": 2
     },
     {
       "error": "Insertion: 'nhé' at position 22",
-      "reason": "The insertion of 'cái' before 'tình trạng' is a minor grammatical addition in Vietnamese and does not affect the meaning.",
+      "reason": "The insertion of 'cái' (the) before 'tình trạng' is a minor grammatical addition and does not change the meaning.",
       "score": 3
     },
     {
       "error": "Substitution: 'giúp' to 'cho' at position 29",
-      "reason": "The addition of 'nhé' is a politeness particle in Vietnamese and does not change the meaning.",
+      "reason": "The addition of 'nhé' (a polite particle) is stylistic and does not affect the meaning.",
       "score": 3
     }
   ]

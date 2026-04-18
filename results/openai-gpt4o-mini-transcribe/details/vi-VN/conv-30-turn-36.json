@@ -1,16 +1,27 @@
 {
   "gold": "Đã thấy. Đã thấy.",
-  "predicted": "Dạ thấy dạ thấy",
+  "predicted": "để thấy để thấy",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "da thay da thay",
-  "werNormalizedPredicted": "da thay da thay",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "đã thấy đã thấy",
+  "werNormalizedPredicted": "để thấy để thấy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "da thay da thay",
-  "sigWerNormalizedPredicted": "da thay da thay",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "đã thấy đã thấy",
+  "sigWerNormalizedPredicted": "để thấy để thấy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đã' to 'để' at position 0",
+      "reason": "'đã' indicates past tense (already), while 'để' means 'in order to' or 'so that', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đã' to 'để' at position 2",
+      "reason": "Repeats the same significant change as above, altering the tense and meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

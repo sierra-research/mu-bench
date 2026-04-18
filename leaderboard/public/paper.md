@@ -107,7 +107,7 @@ Failing to distinguish these cases would be a real transcription error, not a fo
 
 We address these issues with LLM-based normalization. Given a reference transcript and predicted transcript, the model rewrites both to a consistent format so that variance between styling amongst providers is scored fairly. The normalizer handles cases that deterministic pipelines struggle with, including:
 
-- Locale-specific number and date formats (e.g., "2" → "two", "ciento uno" → "one hundred one")
+- Locale-specific number and date formats: digits are spelled in the locale's native language (e.g. "2" → "two" in en-US, "uno dos" in es-MX, "bir iki" in tr-TR, "một hai" in vi-VN, "一 二" in zh-CN), never cross-translated
 - Abbreviation expansion (e.g., "Dr." → "doctor")
 - Filler word removal (e.g., "um", "uh" → removed from both sides)
 - Script normalization in Chinese, Japanese, and Korean (CJK) languages
@@ -141,7 +141,7 @@ UER is the fraction of utterances containing at least one significant error.
 
 ### Latency
 
-We measure per-utterance wall-clock latency from a single pinned client location at concurrency=1. The leaderboard's **Latency p95** column is time-to-complete-transcript, defined uniformly across protocols: for batch providers it is the request-to-response round-trip; for streaming providers it is the time from sending the request to receiving the final transcript. This keeps the latency column apples-to-apples even when batch and streaming submissions share the leaderboard. For streaming submissions we additionally report TTFT (time to first partial transcript) as an auxiliary `+TTFT` annotation — informational, not part of the sort, because batch has no analog. Median (p50) latency is also recorded per utterance. Submissions declare their protocol (`batch` or `streaming`) and measurement region in `latency.json meta`; the leaderboard renders a small `batch` / `streaming` badge next to each p95 value.
+We measure per-utterance wall-clock latency from a single pinned client location at concurrency=1. The leaderboard's **Latency p95** column is time-to-complete-transcript, defined uniformly across protocols: for batch providers it is the request-to-response round-trip; for streaming providers it is the time from sending the request to receiving the final transcript. This keeps the latency column apples-to-apples even when batch and streaming submissions share the leaderboard. For streaming submissions we additionally report TTFT (time to first partial transcript) as an auxiliary `+TTFT` annotation — informational, not part of the sort, because batch has no analog. Median (p50) latency is also recorded per utterance. Submissions declare their protocol (`batch` or `streaming`) and measurement region in `latency.json meta`; the leaderboard renders a small `batch` / `streaming` badge next to each p95 value. The validator's region allowlist contains a small set of AWS-style names (`us-east-1`, `us-east-2`, `us-west-1`, …) plus the multi-region escape values `us` and `eu` for providers whose model under test isn't available in a single region (e.g., Google Chirp-3 is currently routable only via the `us` multi-region endpoint).
 
 ## Providers evaluated
 
@@ -165,15 +165,15 @@ Results are drawn from the current leaderboard as of April 2026, and the key fin
 
 <!-- widget:radar -->
 
-**WER alone is misleading.** Deepgram Nova-3 has 4.1% WER on en-US with 5.2% UER — nearly all its errors change meaning. Microsoft Azure has 3.7% WER but only 3.3% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
+**WER alone is misleading.** Deepgram Nova-3 has 5.4% WER on en-US with 5.8% UER — most of its errors change meaning. Microsoft Azure has 4.2% WER but only 3.1% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
 
-**English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–7% on en-US. The gap narrows dramatically for structured inputs like names and tracking codes.
+**English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–7% on en-US (Azure best at 3.1%, OpenAI weakest at 6.2%). The gap narrows dramatically for structured inputs like names and tracking codes.
 
-**Chinese remains the most challenging locale.** Mandarin sees UER between 16–29%, meaning a substantial fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 7.3% WER while Deepgram Nova-3 reaches 39.3%.
+**Chinese remains the most challenging locale.** Mandarin sees UER between 30–55%, meaning a substantial-to-majority fraction of utterances have their meaning compromised. Vietnamese varies widely — Google Chirp-3 achieves 5.6% WER while Deepgram Nova-3 reaches 24.7%, driven heavily by Deepgram returning empty transcripts for 33% of Vietnamese utterances.
 
-**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (6.9%) and UER (10.5%). ElevenLabs Scribe v2 is second-best on UER (16.3%), while Azure achieves the lowest UER on en-US (3.3%) but struggles on tr-TR and vi-VN. OpenAI GPT-4o Mini Transcribe comes in close to Azure overall (UER 18.9%) and ties Chirp-3 for the best en-US UER (4.8%).
+**Google Chirp-3 leads across all accuracy metrics** with the lowest overall WER (8.0%) and UER (14.1%). ElevenLabs Scribe v2 is second-best on UER (21.2%), narrowly ahead of Azure (24.6%). Azure achieves the lowest UER on en-US (3.1%) but struggles on tr-TR (30.7%) and vi-VN (33.9%). OpenAI GPT-4o Mini Transcribe comes in fourth (UER 27.3%), and Deepgram Nova-3 last (UER 32.6%) — Deepgram's headline number is dragged down primarily by its Vietnamese performance.
 
-**Accuracy and speed do not correlate.** Deepgram Nova-3 has the best p50 latency (239ms) and p95 (761ms), while Google Chirp-3, the accuracy leader, has the highest p50 (1,212ms) and p95 (2,006ms). ElevenLabs Scribe v2 offers a good balance with strong accuracy (UER 16.3%) and moderate latency (p50 425ms, p95 800ms). The right choice depends on whether the deployment prioritizes accuracy or throughput.
+**Accuracy and speed do not correlate.** Deepgram Nova-3 has the best p50 latency (107ms) and p95 (376ms), while Google Chirp-3, the accuracy leader, has the highest p50 (833ms) and p95 (1,281ms). ElevenLabs Scribe v2 offers a strong balance: second-best UER (21.2%) with moderate latency (p50 415ms, p95 847ms). Azure's overall p95 of 1,179ms is dominated by Turkish, where its p95 is 1,781ms — roughly 4× its other locales — so for non-Turkish workloads its tail is closer to ~600ms. The right choice depends on whether the deployment prioritizes accuracy or throughput.
 
 ## Statistical validity
 
@@ -181,9 +181,9 @@ Are these ranking differences real, or could they be artifacts of which conversa
 
 <!-- widget:significance -->
 
-On UER, most pairwise differences are statistically significant (p < 0.05) — the exception is Azure vs. OpenAI (p = 0.89), which are not distinguishable. On WER, the middle cluster (ElevenLabs, Azure, OpenAI) is tight — none of the three are significantly different from each other. Google's lead and Deepgram's position are robust across both metrics.
+On UER, **all 10 pairwise differences are statistically significant (p < 0.001)** — the full ranking Google &lt; ElevenLabs &lt; Azure &lt; OpenAI &lt; Deepgram is robust under conversation-level resampling. On WER, 9 of 10 pairs are significant; the one exception is ElevenLabs vs Azure (p ≈ 0.12), which are statistically tied on WER even though they're cleanly separated on UER. Google's lead and Deepgram's last place are robust across both metrics.
 
-To verify that the LLM-based scoring pipeline itself is stable, we re-ran the full normalization and scoring pipeline 4 times independently. Standard deviations across runs are 0.1–0.5 percentage points; rankings never changed between runs.
+To verify that the LLM-based scoring pipeline itself is stable, we re-ran the full transcription + normalization + scoring pipeline 4 times independently end-to-end (waves A, B, C, D — same code, fresh provider API calls each time). Standard deviations across runs are at most 0.8 percentage points (most are under 0.5); rankings never changed between runs. The widget below shows the per-locale variance for English and Chinese.
 
 ## Beyond accuracy: production considerations
 

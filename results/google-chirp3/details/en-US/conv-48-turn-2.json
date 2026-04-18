@@ -2,15 +2,31 @@
   "gold": "I have C as in cat, N as in Nancy, 6 2 2. And can you repeat the rest of it?",
   "predicted": "I have season cat and is in Nancy 622 and can you repeat the rest of it?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.23809523809523808,
+  "werEdits": 5,
   "werRefWords": 21,
   "werNormalizedGold": "i have c as in cat n as in nancy six two two and can you repeat the rest of it",
-  "werNormalizedPredicted": "i have c as in cat n as in nancy six two two and can you repeat the rest of it",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "i have season cat and is in nancy six two two and can you repeat the rest of it",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "i have c as in cat n as in nancy six two two and can you repeat the rest of it",
-  "sigWerNormalizedPredicted": "i have c as in cat n as in nancy six two two and can you repeat the rest of it",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "i have season cat and is in nancy six two two and can you repeat the rest of it",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'season' at position 2",
+      "reason": "'c' is a single letter being clarified, while 'season' is a completely different word, making the meaning unclear and derailing the intent of spelling out a letter.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'as' at position 3",
+      "reason": "Omitting 'as' in the phrase 'c as in cat' makes the spelling clarification less clear, but the intent can still be inferred from context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'n' to 'and' at position 6",
+      "reason": "'n' is a letter being clarified, while 'and' is a conjunction, which changes the meaning and disrupts the spelling clarification.",
+      "score": 1
+    }
+  ]
 }

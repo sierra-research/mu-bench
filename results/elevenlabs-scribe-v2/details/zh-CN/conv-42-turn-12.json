@@ -5,9 +5,9 @@
   "wer": 0.2222222222222222,
   "werEdits": 2,
   "werRefWords": 9,
-  "werNormalizedGold": "你 说 的 不 对 真的 不 对",
-  "werNormalizedPredicted": "不 你 说 的 不 对 认 的 不 对",
-  "significantWer": 0.2222222222222222,
+  "werNormalizedGold": "你说的不对真的不对",
+  "werNormalizedPredicted": "不 你说的不对认的不对",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "你 说 的 不 对 真 的 不 对",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '不' at position 0",
-      "reason": "The insertion of '不' at the beginning changes the sentence structure and meaning, as it negates or alters the original statement, making the sentence potentially confusing or incoherent.",
+      "reason": "The extra '不' at the beginning changes the sentence structure and could confuse the meaning, as it negates the following statement and alters the intended emphasis.",
       "score": 1
     },
     {
       "error": "Substitution: '真' to '认' at position 5",
-      "reason": "Substituting '真' (really) with '认' (recognize/admit) changes the meaning of the phrase, resulting in a different statement that could confuse the listener.",
+      "reason": "'真' (really) and '认' (recognize/admit) have different meanings; this substitution changes the meaning of the sentence and could cause misunderstanding.",
       "score": 1
     }
   ]

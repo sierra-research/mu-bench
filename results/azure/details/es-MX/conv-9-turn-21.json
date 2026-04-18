@@ -2,25 +2,25 @@
   "gold": "¿Podría pedir un pago en cuotas de la factura?",
   "predicted": "¿Podría preferir un pago de cuota de la factura?",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 3,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
-  "werNormalizedGold": "podria pedir un pago en cuotas de la factura",
+  "werNormalizedGold": "podría pedir un pago en cuotas de la factura",
   "werNormalizedPredicted": "podria preferir un pago de cuota de la factura",
-  "significantWer": 0.1111111111111111,
-  "majorErrorsCount": 1,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "podria pedir un pago en cuotas de la factura",
+  "sigWerNormalizedGold": "podría pedir un pago en cuotas de la factura",
   "sigWerNormalizedPredicted": "podria preferir un pago de cuota de la factura",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'pedir' to 'preferir' at position 1",
-      "reason": "'Pedir' (to ask/request) and 'preferir' (to prefer) have different meanings and change the intent of the sentence, which could lead to misunderstanding the user's request.",
-      "score": 1
+      "error": "Substitution: 'podría' to 'podria' at position 0",
+      "reason": "Missing accent on 'podría' is a minor orthographic error, does not change meaning or pronunciation significantly in context.",
+      "score": 3
     },
     {
       "error": "Substitution: 'en' to 'de' at position 4",
-      "reason": "'En cuotas' (in installments) vs 'de cuota' (of installment) changes the payment structure being referred to, but the overall meaning is still about payment in parts. This is a minor error.",
+      "reason": "'En cuotas' (in installments) vs 'de cuota' (of installment) changes the meaning of the payment method, but the overall intent is still about payment in parts. This is a minor error.",
       "score": 2
     }
   ]

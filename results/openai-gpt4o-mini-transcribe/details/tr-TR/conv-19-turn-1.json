@@ -2,15 +2,26 @@
   "gold": "C N 2 2 2. Doğru mudur?",
   "predicted": "CN222, doğrudur.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "c n two two two dogru mudur",
-  "werNormalizedPredicted": "c n two two two dogru mudur",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c n iki iki iki doğru mudur",
+  "werNormalizedPredicted": "c n iki iki iki doğrudur",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "c n two two two dogru mudur",
-  "sigWerNormalizedPredicted": "c n two two two dogru mudur",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n iki iki iki doğru mudur",
+  "sigWerNormalizedPredicted": "c n iki iki iki doğrudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doğru' to 'doğrudur' at position 5",
+      "reason": "'doğru' (correct) and 'doğrudur' (it is correct) are semantically very close; the latter is a more complete form but does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'mudur' at position 6",
+      "reason": "'mudur' is a question particle in Turkish, turning the statement into a question. Its omission changes the sentence from a question to a statement, which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
 }

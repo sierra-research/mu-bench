@@ -2,15 +2,26 @@
   "gold": "S N 92.",
   "predicted": "Sene doksan iki.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 2,
   "werRefWords": 4,
   "werNormalizedGold": "s n doksan iki",
-  "werNormalizedPredicted": "s n doksan iki",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "sene doksan iki",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "s n doksan iki",
-  "sigWerNormalizedPredicted": "s n doksan iki",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sene doksan iki",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sene' at position 0",
+      "reason": "'sene' is a completely different word from 's', which is likely a letter or abbreviation. This changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' in a sequence of letters or abbreviations can change the intended meaning or code, making it a significant error.",
+      "score": 1
+    }
+  ]
 }

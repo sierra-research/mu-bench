@@ -1,42 +1,42 @@
 {
   "gold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
-  "predicted": "bình chọn mình, mà là chọn mình, chọn mình, train mình",
+  "predicted": "Trần Minh, Malat Trần Minh, Trần Minh, Trần Minh",
   "unintelligible": false,
   "wer": 0.5,
   "werEdits": 6,
   "werRefWords": 12,
-  "werNormalizedGold": "khong phai truong minh ma la tran minh tran minh tran minh",
-  "werNormalizedPredicted": "binh chon minh ma la chon minh chon minh train minh",
-  "significantWer": 0.4166666666666667,
-  "majorErrorsCount": 5,
+  "werNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "werNormalizedPredicted": "trần minh malat trần minh trần minh trần minh",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "khong phai truong minh ma la tran minh tran minh tran minh",
-  "sigWerNormalizedPredicted": "binh chon minh ma la chon minh chon minh train minh",
+  "sigWerNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "sigWerNormalizedPredicted": "trần minh malat trần minh trần minh trần minh",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'khong' to 'binh' at position 0",
-      "reason": "'khong' means 'no' or 'not', while 'binh' means 'vote' or 'bottle' in Vietnamese; this changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'không' to 'trần' at position 0",
+      "reason": "'không' means 'not' and 'trần' is a name; this changes the meaning from a negation to a name, which significantly alters the sentence's intent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'truong' at position 2",
-      "reason": "Omitting 'truong' (which could be a name or 'school') removes a key part of the subject, significantly altering the meaning.",
+      "error": "Deletion: 'phải' at position 1",
+      "reason": "'phải' (means 'must' or 'correct') is omitted, which removes an important part of the phrase 'không phải', changing the meaning from 'not' or 'not correct' to something else.",
       "score": 1
     },
     {
-      "error": "Substitution: 'tran' to 'chon' at position 6",
-      "reason": "'tran' is a Vietnamese surname, while 'chon' means 'choose'; this changes the meaning and the identity being referred to.",
+      "error": "Substitution: 'mà' to 'malat' at position 4",
+      "reason": "'mà' is a conjunction meaning 'but' or 'rather', while 'malat' is not a Vietnamese word and appears to be a mistranscription, making the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'tran' to 'chon' at position 8",
-      "reason": "Repeats the same error as above, again changing the identity and meaning.",
+      "error": "Deletion: 'là' at position 5",
+      "reason": "'là' means 'is/are', and its omission disrupts the grammatical structure and clarity of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'tran' to 'train' at position 10",
-      "reason": "'tran' (surname) is replaced with 'train' (English word), which is a different language and meaning, making the sentence incoherent.",
-      "score": 1
+      "error": "Substitution: 'tran' to 'trần' at position 10",
+      "reason": "'tran' and 'trần' are likely intended to be the same name, just with or without diacritics; this is a minor error as the meaning is preserved.",
+      "score": 2
     }
   ]
 }

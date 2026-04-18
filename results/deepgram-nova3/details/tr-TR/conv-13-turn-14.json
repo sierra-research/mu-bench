@@ -7,20 +7,20 @@
   "werRefWords": 31,
   "werNormalizedGold": "hayır yine yanlış oldu bu sefer arada başka yalnız tek tek ben bir daha söylüyorum tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "werNormalizedPredicted": "hayır yine yanlış oldu bu sefer arada başka bir yanlış tek tek ben bir daha söylüyorum tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi",
-  "significantWer": 0.03225806451612903,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 31,
   "sigWerNormalizedGold": "hayır yine yanlış oldu bu sefer arada başka yalnız tek tek ben bir daha söylüyorum tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
   "sigWerNormalizedPredicted": "hayır yine yanlış oldu bu sefer arada başka bir yanlış tek tek ben bir daha söylüyorum tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz dört beş altı yedi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'yalnız' to 'yanlış' at position 8",
-      "reason": "'bir' (meaning 'one' or 'a') is inserted, but in this context it does not significantly change the meaning of the sentence, as the sentence is still understandable.",
-      "score": 2
+      "reason": "The insertion of 'bir' (meaning 'a' or 'one') before 'yanlış' changes the phrase from 'başka yalnız' (another alone/only) to 'başka bir yanlış' (another mistake). This changes the meaning of the sentence, as it introduces a new concept ('another mistake') instead of 'another alone/only'.",
+      "score": 1
     },
     {
       "error": "Deletion: 'sıfır' at position 26",
-      "reason": "'yalnız' means 'only/alone', while 'yanlış' means 'wrong'. This substitution changes the meaning of the sentence, making it incoherent in context.",
+      "reason": "'Yalnız' means 'alone' or 'only', while 'yanlış' means 'wrong' or 'mistake'. Substituting these words changes the meaning of the sentence significantly, as it shifts from talking about being alone/only to talking about a mistake.",
       "score": 1
     }
   ]

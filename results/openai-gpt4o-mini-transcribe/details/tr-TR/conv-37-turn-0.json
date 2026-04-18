@@ -1,31 +1,36 @@
 {
   "gold": "Anna Hanım merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi, o konuda bilgi verebilir misiniz acaba?",
-  "predicted": "Ananıım merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi ödenmedi mi? O konuda da bilgi verebilir misiniz acaba?",
+  "predicted": "Ananı merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi? onu da bir o konuda da bilgi verebilir misiniz acaba?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 3,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
   "werRefWords": 21,
   "werNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
-  "werNormalizedPredicted": "ananıım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda da bilgi verebilir misiniz acaba",
-  "significantWer": 0.047619047619047616,
+  "werNormalizedPredicted": "ananı merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
-  "sigWerNormalizedPredicted": "ananıım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda da bilgi verebilir misiniz acaba",
+  "sigWerNormalizedPredicted": "ananı merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'anna' to 'ananıım' at position 0",
-      "reason": "'ananıım' is a significant distortion of the name 'anna', making it unrecognizable and potentially confusing the identity being addressed.",
+      "error": "Substitution: 'anna' to 'ananı' at position 0",
+      "reason": "'anna' is a proper name, while 'ananı' is a Turkish word meaning 'your mother', which is inappropriate and completely changes the meaning, making the sentence offensive and incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'hanım' at position 1",
-      "reason": "'hanım' is a polite form of address in Turkish; omitting it reduces the politeness but does not change the core meaning of the sentence.",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam'). Its omission reduces politeness but does not derail the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'onu' at position 15",
+      "reason": "The insertion of 'onu' ('it') adds redundancy but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: 'da' at position 17",
-      "reason": "The insertion of 'da' (meaning 'also') does not significantly alter the meaning of the sentence in this context.",
+      "reason": "The insertion of 'da' ('also') adds emphasis but does not change the overall meaning of the sentence.",
       "score": 2
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "Vui lòng đọc lại từng số một.",
   "predicted": "à, vụ làm đập lại từng số mô",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "vui lòng đọc lại từng số một",
-  "werNormalizedPredicted": "vui lòng đọc lại từng số một",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "vụ làm đập lại từng số mô",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "vui lòng đọc lại từng số một",
-  "sigWerNormalizedPredicted": "vui lòng đọc lại từng số một",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "vụ làm đập lại từng số mô",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'vụ' at position 0",
+      "reason": "'vui' means 'please' or 'kindly', while 'vụ' is unrelated and changes the intent of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'một' to 'mô' at position 6",
+      "reason": "'một' means 'one', while 'mô' is unrelated in this context and changes the meaning of the instruction.",
+      "score": 1
+    }
+  ]
 }

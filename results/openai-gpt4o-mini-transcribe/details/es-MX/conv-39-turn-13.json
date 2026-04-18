@@ -1,16 +1,32 @@
 {
   "gold": "Sí, ¿sabes tú cuál sería el nuevo límite?",
-  "predicted": "Si, ¿sabes tú cuál sería el nuevo límite?",
+  "predicted": "¿Si sabes tú cuál sería el nuevo límite?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.625,
+  "werEdits": 5,
   "werRefWords": 8,
-  "werNormalizedGold": "si sabes tu cual seria el nuevo limite",
+  "werNormalizedGold": "sí sabes tú cuál sería el nuevo límite",
   "werNormalizedPredicted": "si sabes tu cual seria el nuevo limite",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "si sabes tu cual seria el nuevo limite",
+  "sigWerNormalizedGold": "sí sabes tú cuál sería el nuevo límite",
   "sigWerNormalizedPredicted": "si sabes tu cual seria el nuevo limite",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'si' at position 0",
+      "reason": "'sí' with accent means 'yes', while 'si' without accent means 'if'; in this context, the meaning changes, so this is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tú' to 'tu' at position 2",
+      "reason": "'tú' with accent means 'you' (pronoun), while 'tu' without accent means 'your' (possessive); in this context, the meaning changes, so this is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'límite' to 'limite' at position 7",
+      "reason": "Missing accent on 'límite' does not change the meaning in this context, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

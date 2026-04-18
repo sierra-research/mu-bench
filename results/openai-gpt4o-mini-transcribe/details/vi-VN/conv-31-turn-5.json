@@ -1,31 +1,31 @@
 {
   "gold": "Minh chấm trần a còng Gmail chấm com.",
-  "predicted": "mình chấm dần a vòng gmail chấm com.",
+  "predicted": "mingchamdan@tonggmail.com",
   "unintelligible": false,
-  "wer": 0.375,
-  "werEdits": 3,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
   "werNormalizedGold": "minh chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "mình chấm dần a vòng gmail chấm com",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "mingchamdan a còng tonggmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "minh chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "mình chấm dần a vòng gmail chấm com",
+  "sigWerNormalizedPredicted": "mingchamdan a còng tonggmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'minh' to 'mình' at position 0",
-      "reason": "'minh' and 'mình' are very similar in Vietnamese and could be a minor pronunciation or spelling difference, but in the context of an email address, this could affect the actual address, so it's a minor error.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'trần' to 'dần' at position 2",
-      "reason": "'trần' and 'dần' are completely different words and names in Vietnamese. In the context of an email address, this changes the recipient's name and is a significant error.",
+      "error": "Substitution: 'minh' to 'mingchamdan' at position 0",
+      "reason": "'mingchamdan' is a significant distortion of 'minh', combining multiple expected words and making the intended name unrecognizable.",
       "score": 1
     },
     {
-      "error": "Substitution: 'còng' to 'vòng' at position 4",
-      "reason": "'còng' is the Vietnamese word for the '@' symbol in email addresses, while 'vòng' means 'circle' and is not used for '@'. This substitution makes the email address incorrect and is a significant error.",
+      "error": "Deletion: 'chấm' at position 1",
+      "reason": "Missing 'chấm' (dot) in an email address changes the structure and can make the email invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'gmail' to 'tonggmail' at position 5",
+      "reason": "Adding 'tong' to 'gmail' creates a non-existent domain, making the email address incorrect.",
       "score": 1
     }
   ]

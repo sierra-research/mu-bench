@@ -2,21 +2,26 @@
   "gold": "A ver, creo que estoy mal o me diste un número diferente. ¿Es C N 6 4 5 o C N 6 4 4?",
   "predicted": "A ver, creo que me estoy mal o me diste un número diferente. ¿Es c n seis cuatro cinco o c n seis cuatro cuatro?",
   "unintelligible": false,
-  "wer": 0.041666666666666664,
-  "werEdits": 1,
+  "wer": 0.08333333333333333,
+  "werEdits": 2,
   "werRefWords": 24,
-  "werNormalizedGold": "a ver creo que estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
+  "werNormalizedGold": "a ver creo que estoy mal o me diste un número diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
   "werNormalizedPredicted": "a ver creo que me estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "a ver creo que estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
+  "sigWerNormalizedGold": "a ver creo que estoy mal o me diste un número diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
   "sigWerNormalizedPredicted": "a ver creo que me estoy mal o me diste un numero diferente es c n seis cuatro cinco o c n seis cuatro cuatro",
   "sigWerErrors": [
     {
       "error": "Insertion: 'me' at position 4",
-      "reason": "'me' is inserted before 'estoy mal', but the overall meaning of the sentence remains the same. The phrase 'creo que estoy mal' and 'creo que me estoy mal' are both understandable in context, though the latter is less standard. This does not derail the meaning.",
+      "reason": "The insertion of 'me' before 'estoy mal' does not change the overall meaning of the sentence; it is a minor grammatical difference in Spanish that does not affect understanding.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'número' to 'numero' at position 10",
+      "reason": "The only difference is the missing accent on 'número', which does not affect meaning or pronunciation in this context.",
+      "score": 3
     }
   ]
 }

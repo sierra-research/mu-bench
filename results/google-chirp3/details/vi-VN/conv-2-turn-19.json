@@ -7,7 +7,7 @@
   "werRefWords": 9,
   "werNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
   "werNormalizedPredicted": "mới dùng lề vui lòng hướng dẫn",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'mở' to 'mới' at position 0",
-      "reason": "'mở' means 'open' while 'mới' means 'new' in Vietnamese; this changes the intent of the sentence significantly.",
+      "reason": "'mở' means 'open' and 'mới' means 'new' in Vietnamese; this changes the intent of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'rồi' at position 3",
-      "reason": "'rồi' means 'already/then', which helps indicate sequence; omitting it slightly affects the flow but not the main meaning.",
+      "reason": "'rồi' means 'already/then', which helps sequence the actions; omitting it slightly affects the flow but not the core meaning.",
       "score": 2
     },
     {
       "error": "Deletion: 'nha' at position 8",
-      "reason": "'nha' is a sentence-ending particle that softens the request; omitting it does not change the main meaning.",
+      "reason": "'nha' is a sentence-ending particle used for politeness or softening the request; omitting it does not change the main meaning.",
       "score": 2
     }
   ]

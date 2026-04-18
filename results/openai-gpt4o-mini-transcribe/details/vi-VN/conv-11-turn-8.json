@@ -1,16 +1,22 @@
 {
   "gold": "Minh chấm trần a còng email chấm com.",
-  "predicted": "minh.cham.trang@gmail.com",
+  "predicted": "minh.cham.tran@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "minh cham tran a cong email cham com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh chấm trần a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "minh cham tran a cong email cham com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh chấm trần a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "Substituting 'email' with 'gmail' changes the domain of the email address, which is a significant error as it leads to a completely different email address.",
+      "score": 1
+    }
+  ]
 }

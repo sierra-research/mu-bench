@@ -2,15 +2,26 @@
   "gold": "嗯，我听清楚了。",
   "predicted": "嗯,我清醒楚喇",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "我 听 清楚 了",
-  "werNormalizedPredicted": "我 听 清楚 了",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "我听清楚了",
+  "werNormalizedPredicted": "我清醒楚喇",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "我 听 清 楚 了",
-  "sigWerNormalizedPredicted": "我 听 清 楚 了",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 清 醒 楚 喇",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to '清' at position 1",
+      "reason": "'听' means 'to listen' and '清' means 'clear'; substituting 'listen' with 'clear' changes the meaning of the sentence significantly, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '了' to '喇' at position 4",
+      "reason": "'了' is a grammatical particle indicating completion, while '喇' is a Cantonese final particle not standard in Mandarin; this substitution changes the grammatical structure and meaning, making the sentence less coherent in standard Mandarin.",
+      "score": 1
+    }
+  ]
 }

@@ -1,16 +1,27 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "email là minh.trana@gmail.com, số điện thoại +84 911 234 567",
+  "predicted": "Email là minh.trana@gmail.com, số điện thoại +84 911 234 5678",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 20,
-  "werNormalizedGold": "email là minh.trana@gmail.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "email là minh.trana@gmail.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "email là minh.trana@gmail.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "email là minh.trana@gmail.com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerErrors": []
+  "wer": 0.07407407407407407,
+  "werEdits": 2,
+  "werRefWords": 27,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là minh chấm trana a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là minh chấm trana a còng gmail chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trana' at position 4",
+      "reason": "'trần' is a Vietnamese name, while 'trana' is not a valid Vietnamese name and could cause confusion or failure to deliver an email. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing the domain from 'email' to 'gmail' changes the email address entirely, which could result in sending to the wrong address. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

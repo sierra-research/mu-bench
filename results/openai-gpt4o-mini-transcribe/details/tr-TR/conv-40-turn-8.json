@@ -1,16 +1,22 @@
 {
   "gold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
-  "predicted": "Hayır, Gmail değil. E-mail, e-mail olarak yazacaksın. E-mail.com.",
+  "predicted": "Hayır, Gmail değil. e-mail, e-mail olarak yazacaksın. E-mail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
-  "werNormalizedPredicted": "hayır gmail değil email email olarak yazacaksın email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır gmail değil email email olarak yazacaksın email com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
-  "sigWerNormalizedPredicted": "hayır gmail değil email email olarak yazacaksın email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır gmail değil email email olarak yazacaksın email com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 8",
+      "reason": "The word 'nokta' (meaning 'dot' in Turkish) is omitted, which is crucial for correctly specifying an email address format (email dot com). Its absence makes the email address incorrect and potentially unusable.",
+      "score": 1
+    }
+  ]
 }

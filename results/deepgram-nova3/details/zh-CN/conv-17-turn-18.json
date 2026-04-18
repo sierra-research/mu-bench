@@ -2,15 +2,31 @@
   "gold": "我的邮箱地址是 美玲 at email dot com。",
   "predicted": "我的邮箱地址是maylingemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是 美玲 at email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是 美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的邮箱地址是 mayling email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 mayling email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mayling' at position 7",
+      "reason": "'美' is a Chinese character and 'mayling' is an attempt to phonetically represent the name '美玲' in English, but it is not a direct or accurate transliteration. This could cause confusion about the actual name, especially in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "Omitting '玲' means the full name '美玲' is not represented, which is significant for an email address and could result in an incorrect or undeliverable email.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 11",
+      "reason": "Missing 'dot' in the email address makes the address incomplete and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

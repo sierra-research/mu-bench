@@ -2,20 +2,25 @@
   "gold": "Với tôi muốn.",
   "predicted": "Rồi à, được một",
   "unintelligible": false,
-  "wer": 1.3333333333333333,
-  "werEdits": 4,
+  "wer": 1.0,
+  "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "với tôi muốn",
-  "werNormalizedPredicted": "rồi à được một",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "được một",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "với tôi muốn",
-  "sigWerNormalizedPredicted": "rồi à được một",
+  "sigWerNormalizedPredicted": "được một",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'với' to 'à' at position 0",
-      "reason": "'với' means 'with' and 'rồi' means 'already' in Vietnamese; this changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'với' to 'được' at position 0",
+      "reason": "The substitution changes the meaning of the sentence entirely; 'với' (with) and 'được' (can/be able to) are not semantically equivalent and this alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'muốn' at position 2",
+      "reason": "Omitting 'muốn' (want) removes the main verb expressing desire, which significantly changes the meaning of the sentence.",
       "score": 1
     }
   ]

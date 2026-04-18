@@ -2,21 +2,26 @@
   "gold": "Söylüyorum, heceleyerek söylüyorum. Ahmet nokta Arslan at email nokta com.",
   "predicted": "Söylüyorum, hecere'yi söylüyorum. Ahmet nokta arslan et email nokta com.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "söylüyorum heceleyerek söylüyorum ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "söylüyorum heceleyi söylüyorum ahmet nokta arslan at email nokta com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "söylüyorum hecereyi söylüyorum ahmet nokta arslan et email nokta com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "söylüyorum heceleyerek söylüyorum ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "söylüyorum heceleyi söylüyorum ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "söylüyorum hecereyi söylüyorum ahmet nokta arslan et email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'heceleyerek' to 'heceleyi' at position 1",
-      "reason": "'heceleyerek' means 'by spelling out' or 'syllabifying', while 'heceleyi' is not a standard word and could be interpreted as 'the syllable' or a truncated form. The substitution slightly changes the meaning but does not derail the overall intent of the sentence, which is to spell out the email address.",
+      "error": "Substitution: 'heceleyerek' to 'hecereyi' at position 1",
+      "reason": "'heceleyerek' means 'by spelling out' or 'syllabifying', while 'hecereyi' is not a standard word and does not convey the intended meaning, making the sentence less clear.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 6",
+      "reason": "'at' is the English word used for email addresses, while 'et' is the Turkish pronunciation of the '@' symbol. In this context, both are commonly used and understood to mean the same thing.",
+      "score": 3
     }
   ]
 }

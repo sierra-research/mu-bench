@@ -2,20 +2,25 @@
   "gold": "君，君灵，君灵。",
   "predicted": "军令军令。",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 1.0,
+  "werEdits": 5,
   "werRefWords": 5,
   "werNormalizedGold": "君 君灵 君灵",
-  "werNormalizedPredicted": "君灵 君灵",
-  "significantWer": 0.2,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "军令军令",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "君 君 灵 君 灵",
-  "sigWerNormalizedPredicted": "君 灵 君 灵",
+  "sigWerNormalizedPredicted": "军 令 军 令",
   "sigWerErrors": [
     {
-      "error": "Deletion: '君' at position 1",
-      "reason": "A repeated character was omitted, which may affect the intended meaning or emphasis in the sequence. In Chinese, repetition can be significant, so this omission could change the meaning.",
+      "error": "Substitution: '君' to '军' at position 0",
+      "reason": "'君' and '军' are different Chinese characters with different meanings; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 4",
+      "reason": "'灵' and '令' are different Chinese characters with different meanings; this changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

@@ -7,20 +7,20 @@
   "werRefWords": 25,
   "werNormalizedGold": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi không biết tình trạng của thẻ hiện tại là như thế nào",
   "werNormalizedPredicted": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi không biết tình trạng có thẻ hiện tại là là như thế nào",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 25,
   "sigWerNormalizedGold": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi không biết tình trạng của thẻ hiện tại là như thế nào",
   "sigWerNormalizedPredicted": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi không biết tình trạng có thẻ hiện tại là là như thế nào",
   "sigWerErrors": [
     {
       "error": "Substitution: 'của' to 'có' at position 17",
-      "reason": "'của' means 'of' (possessive), while 'có' means 'have/has'. This changes the grammatical structure but the overall meaning of the sentence is still understandable in context.",
-      "score": 2
+      "reason": "'của' (of) and 'có' (have) are different function words in Vietnamese; this substitution changes the meaning of the phrase 'tình trạng của thẻ' (the status of the card) to 'tình trạng có thẻ' (the status has card), which makes the sentence less coherent and alters the intended meaning.",
+      "score": 1
     },
     {
       "error": "Insertion: 'là' at position 21",
-      "reason": "The extra 'là' is a repetition and does not change the meaning of the sentence, just makes it slightly redundant.",
+      "reason": "The extra 'là' (is) is a minor grammatical redundancy and does not significantly change the meaning of the sentence.",
       "score": 2
     }
   ]

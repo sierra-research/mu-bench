@@ -7,7 +7,7 @@
   "werRefWords": 8,
   "werNormalizedGold": "số điện thoại sai số điện thoại sai",
   "werNormalizedPredicted": "sự định hài sai sự định không phải sai",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "số điện thoại sai số điện thoại sai",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'số' to 'sự' at position 0",
-      "reason": "'số' (number) and 'sự' (event/thing) are completely different words and meanings, which changes the meaning of the sentence.",
+      "reason": "The substitution changes the meaning from 'number' (số) to 'thing/event' (sự), which makes the sentence incoherent and changes the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'số' to 'định' at position 4",
-      "reason": "'điện' (electric/phone) and 'định' (determine) are unrelated, which makes the sentence incoherent.",
+      "reason": "'điện' (electric/phone) is replaced by 'định' (determine), which changes the meaning of the phrase and makes it incoherent in context.",
       "score": 1
     }
   ]

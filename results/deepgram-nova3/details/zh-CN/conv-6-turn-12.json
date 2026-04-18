@@ -2,15 +2,21 @@
   "gold": "你说得不对，我的姓名是君玲。",
   "predicted": "你说的不对我的姓名是君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08333333333333333,
+  "werEdits": 1,
   "werRefWords": 12,
-  "werNormalizedGold": "你 说 得 不 对 我 的 姓名 是 君玲",
-  "werNormalizedPredicted": "你 说 得 不 对 我 的 姓名 是 君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你说得不对 我的姓名是君玲",
+  "werNormalizedPredicted": "你说得不对 我的姓名是君临",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "你 说 得 不 对 我 的 姓 名 是 君 玲",
-  "sigWerNormalizedPredicted": "你 说 得 不 对 我 的 姓 名 是 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 说 得 不 对 我 的 姓 名 是 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '玲' to '临' at position 11",
+      "reason": "The last character is part of a person's name. Substituting '玲' (Ling) with '临' (Lin) changes the name entirely, which is a significant error as it misidentifies the person.",
+      "score": 1
+    }
+  ]
 }

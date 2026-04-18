@@ -6,16 +6,21 @@
   "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "khoan khoan khoan",
-  "werNormalizedPredicted": "好 欢迎 欢迎",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "好 欢迎欢迎",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "khoan khoan khoan",
-  "sigWerNormalizedPredicted": "好 欢迎 欢迎",
+  "sigWerNormalizedPredicted": "好 欢迎欢迎",
   "sigWerErrors": [
     {
       "error": "Substitution: 'khoan' to '好' at position 0",
-      "reason": "The actual transcription is in a completely different language (Chinese) compared to the expected (Vietnamese/romanized), making the meaning entirely different and unrecognizable.",
+      "reason": "The actual transcription is in a completely different language (Chinese) than the expected (Vietnamese/romanized), making the meaning incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'khoan' at position 2",
+      "reason": "The actual transcription is in a different language (Chinese) and does not match the expected word, resulting in a significant error.",
       "score": 1
     }
   ]

@@ -2,45 +2,45 @@
   "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
   "predicted": "Anla, son transferimde biraz gecikme olmuştu. Son transferime bir göz atar mısın? Bana email gönderebilir misin son transferimin detaylarını?",
   "unintelligible": false,
-  "wer": 0.3888888888888889,
-  "werEdits": 7,
+  "wer": 0.4444444444444444,
+  "werEdits": 8,
   "werRefWords": 18,
-  "werNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
-  "werNormalizedPredicted": "anla son transferimde biraz gecikme olmustu son transferime bir goz atar misin bana email gonderebilir misin son transferimin detaylarini",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "werNormalizedPredicted": "anla son transferimde biraz gecikme olmuştu son transferime bir göz atar mısın bana email gönderebilir misin son transferimin detaylarını",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmustu son transferimi bir gosterir misin bana email gonderir misin son transferin detaylarini",
-  "sigWerNormalizedPredicted": "anla son transferimde biraz gecikme olmustu son transferime bir goz atar misin bana email gonderebilir misin son transferimin detaylarini",
+  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "sigWerNormalizedPredicted": "anla son transferimde biraz gecikme olmuştu son transferime bir göz atar mısın bana email gönderebilir misin son transferimin detaylarını",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anla' at position 0",
-      "reason": "'anna' is a name, 'anla' means 'understand' in Turkish; this changes the subject and meaning of the sentence.",
+      "reason": "'anna' is a name, while 'anla' means 'understand' in Turkish. This changes the subject and meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'transferinde' to 'transferimde' at position 2",
-      "reason": "The possessive suffix changes from 'your transfer' to 'my transfer', which alters the meaning but the context is still about a transfer.",
+      "reason": "The difference is between 'in your transfer' and 'in my transfer', which changes the perspective but not the overall meaning significantly.",
       "score": 2
     },
     {
       "error": "Substitution: 'transferimi' to 'transferime' at position 7",
-      "reason": "Minor grammatical error, both refer to 'my transfer' but with a different case ending; meaning is mostly preserved.",
+      "reason": "This is a minor grammatical error (accusative vs dative), but the meaning is still clear in context.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gosterir' to 'atar' at position 9",
-      "reason": "Insertion of 'goz' (eye) as part of the phrase 'goz atar misin' (can you take a look), which is a common alternative to 'gosterir misin' (can you show); does not significantly change the meaning.",
+      "error": "Substitution: 'gösterir' to 'atar' at position 9",
+      "reason": "'göz atar mısın' means 'can you take a look', which is a different request than 'gösterir misin' ('can you show'). The insertion changes the action being requested.",
       "score": 2
     },
     {
-      "error": "Substitution: 'gonderir' to 'gonderebilir' at position 13",
-      "reason": "'gosterir misin' (can you show) vs 'goz atar misin' (can you take a look); both are requests to check something, so the meaning is preserved.",
-      "score": 3
+      "error": "Substitution: 'gönderir' to 'gönderebilir' at position 13",
+      "reason": "'gösterir' means 'show', 'atar' means 'take a look' in this context. The intent is similar (to check or review), so the meaning is not significantly changed.",
+      "score": 2
     },
     {
       "error": "Substitution: 'transferin' to 'transferimin' at position 16",
-      "reason": "'gonderir misin' (can you send) vs 'gonderebilir misin' (could you send); both are polite requests, meaning is the same.",
+      "reason": "'gönderir' is 'send', 'gönderebilir' is 'can send'. The addition of possibility does not change the overall meaning.",
       "score": 3
     }
   ]

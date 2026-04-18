@@ -7,7 +7,7 @@
   "werRefWords": 21,
   "werNormalizedGold": "the phone number is one two one two one two three four five six seven that is what you got right",
   "werNormalizedPredicted": "yeah the phone number is one two one one two three four five six seven that is what you got right",
-  "significantWer": 0.047619047619047616,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "the phone number is one two one two one two three four five six seven that is what you got right",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'yeah' at position 0",
-      "reason": "The insertion of 'yeah' at the beginning does not change the meaning of the sentence; it is just an interjection.",
+      "reason": "The word 'yeah' is an extra filler at the beginning and does not change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Deletion: 'two' at position 7",
-      "reason": "Omitting one 'two' in the phone number changes the actual phone number, which is a significant error as it alters the information conveyed.",
+      "reason": "A digit is missing from the phone number, which makes the phone number incorrect and significantly changes the meaning.",
       "score": 1
     }
   ]

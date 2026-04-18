@@ -2,15 +2,26 @@
   "gold": "我想提高我的用卡额度。",
   "predicted": "我想提高我的信用科二度。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "我想提高我的用卡额度",
-  "werNormalizedPredicted": "我想提高我的用卡额度",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想提高我的信用科二度",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 想 提 高 我 的 用 卡 额 度",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 用 卡 额 度",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 科 二 度",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '信' at position 6",
+      "reason": "'信' is inserted before '用', changing the phrase from '用卡额度' (credit card limit) to '信用科二度', which is not a valid or meaningful phrase in this context. This insertion disrupts the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '卡' to '科' at position 7",
+      "reason": "'卡' (card) is substituted with '科' (subject/department), which changes the meaning of the phrase and makes the sentence incoherent in the context of discussing a credit card limit.",
+      "score": 1
+    }
+  ]
 }

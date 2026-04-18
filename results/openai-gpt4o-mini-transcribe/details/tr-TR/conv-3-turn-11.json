@@ -1,16 +1,27 @@
 {
   "gold": "Yok, teşekkür ederim, iyi günler.",
-  "predicted": "Yok, teşekkür ederim. İyi günler.",
+  "predicted": "Yok, teşekkür ederim iyiyimdir.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
   "werNormalizedGold": "yok teşekkür ederim iyi günler",
-  "werNormalizedPredicted": "yok teşekkür ederim iyi günler",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "yok teşekkür ederim iyiyimdir",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "yok teşekkür ederim iyi günler",
-  "sigWerNormalizedPredicted": "yok teşekkür ederim iyi günler",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "yok teşekkür ederim iyiyimdir",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'iyiyimdir' at position 3",
+      "reason": "'iyi' means 'good', while 'iyiyimdir' means 'I am fine' or 'I would be fine'. This changes the meaning of the closing phrase, but the overall polite intent is somewhat preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'günler' at position 4",
+      "reason": "'günler' means 'days', and its omission removes the standard closing 'good days' from the phrase, which changes the meaning of the farewell.",
+      "score": 2
+    }
+  ]
 }

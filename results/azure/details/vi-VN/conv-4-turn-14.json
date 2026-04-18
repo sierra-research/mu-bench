@@ -2,15 +2,26 @@
   "gold": "Cảm ơn bạn. Chúc Anna một ngày vui vẻ. Anna kết thúc cuộc gọi cho mình nhá. Mình cảm ơn.",
   "predicted": "Ờ cảm ơn bạn chúc an na một ngày vui vẻ mình ờ an na kết thúc cuộc gọi cho mình nhá mình cảm ơn.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 5,
   "werRefWords": 20,
   "werNormalizedGold": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
-  "werNormalizedPredicted": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "cảm ơn bạn chúc an na một ngày vui vẻ mình an na kết thúc cuộc gọi cho mình nhá mình cảm ơn",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
-  "sigWerNormalizedPredicted": "cảm ơn bạn chúc anna một ngày vui vẻ anna kết thúc cuộc gọi cho mình nhá mình cảm ơn",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "cảm ơn bạn chúc an na một ngày vui vẻ mình an na kết thúc cuộc gọi cho mình nhá mình cảm ơn",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'na' at position 4",
+      "reason": "'an' is inserted before 'na', splitting the name 'anna' into two words. This is a minor error as the meaning is still clear and refers to the same person.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'anna' to 'na' at position 9",
+      "reason": "The name 'anna' is split into 'an' and 'na', but the intended name is still recognizable. This is a minor error.",
+      "score": 2
+    }
+  ]
 }

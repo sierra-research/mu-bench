@@ -2,15 +2,36 @@
   "gold": "Xin chào. Tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng.",
   "predicted": "Ờ xin chào tôi gọi tới muốn a muốn sinh gia gia gia gia tăng cái hạn mức thẻ tín dụng ạ.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5714285714285714,
+  "werEdits": 8,
   "werRefWords": 14,
   "werNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
-  "werNormalizedPredicted": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "xin chào tôi gọi tới muốn a muốn sinh gia gia gia gia tăng cái hạn mức thẻ tín dụng ạ",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
-  "sigWerNormalizedPredicted": "xin chào tôi gọi tới muốn xin gia tăng hạn mức thẻ tín dụng",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "xin chào tôi gọi tới muốn a muốn sinh gia gia gia gia tăng cái hạn mức thẻ tín dụng ạ",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xin' to 'sinh' at position 6",
+      "reason": "'a' is an unnecessary filler word that does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'gia' at position 8",
+      "reason": "'sinh' is a mistranscription of 'xin', which changes the meaning of the request and can cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'cái' at position 9",
+      "reason": "Repeated insertion of 'gia' is a disfluency but does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'ạ' at position 14",
+      "reason": "'cái' is an unnecessary classifier here and does not affect the main meaning.",
+      "score": 2
+    }
+  ]
 }

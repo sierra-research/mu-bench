@@ -2,15 +2,21 @@
   "gold": "君灵。",
   "predicted": "君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "君灵",
-  "werNormalizedPredicted": "君灵",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "君临",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 灵",
-  "sigWerNormalizedPredicted": "君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '灵' to '临' at position 1",
+      "reason": "'灵' and '临' are different Chinese characters with different meanings. Substituting one for the other changes the meaning of the name or word, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

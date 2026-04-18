@@ -7,21 +7,21 @@
   "werRefWords": 3,
   "werNormalizedGold": "继续吧",
   "werNormalizedPredicted": "zishuba",
-  "significantWer": 0.6666666666666666,
-  "majorErrorsCount": 2,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "继 续 吧",
   "sigWerNormalizedPredicted": "zishuba",
   "sigWerErrors": [
     {
       "error": "Substitution: '继' to 'zishuba' at position 0",
-      "reason": "The expected transcription is in Chinese characters, while the actual transcription is in romanized letters that do not correspond to the expected words. This is a significant error as the language and meaning are completely different.",
+      "reason": "The expected transcription is in Chinese characters, while the actual transcription is a romanized string that does not match the expected words. This is a significant error as the meaning is completely lost and the languages do not match.",
       "score": 1
     },
     {
       "error": "Deletion: '续' at position 1",
-      "reason": "The word '续' is missing in the actual transcription, which further contributes to the loss of meaning. This is a significant error.",
-      "score": 1
+      "reason": "infra_error",
+      "score": 2
     }
   ]
 }

@@ -5,22 +5,22 @@
   "wer": 1.0,
   "werEdits": 5,
   "werRefWords": 5,
-  "werNormalizedGold": "c n four one three",
-  "werNormalizedPredicted": "先 输 医 生",
-  "significantWer": 0.4,
+  "werNormalizedGold": "c n 四 一 三",
+  "werNormalizedPredicted": "先输医生",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n four one three",
+  "sigWerNormalizedGold": "c n 四 一 三",
   "sigWerNormalizedPredicted": "先 输 医 生",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to '先' at position 0",
-      "reason": "The actual transcription is in a completely different language (Chinese) instead of the expected English letter, making the transcription incoherent and unusable for the intended meaning.",
+      "reason": "The actual transcription is in a different language and does not correspond to the expected spelled-out letter, making the meaning completely different and incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'three' at position 4",
-      "reason": "The expected word 'three' is missing in the actual transcription, further reducing the accuracy and completeness of the transcription.",
+      "error": "Deletion: '三' at position 4",
+      "reason": "The expected word is missing in the actual transcription, which further derails the intended meaning.",
       "score": 1
     }
   ]

@@ -1,22 +1,27 @@
 {
   "gold": "Tôi muốn gặp một tổng đài viên thực sự.",
-  "predicted": "Tôi muốn được gặp một tổng đài viên thực sự.",
+  "predicted": "Tôi muốn được gặp một tổng đại viên thực sự.",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "tôi muốn gặp một tổng đài viên thực sự",
-  "werNormalizedPredicted": "tôi muốn được gặp một tổng đài viên thực sự",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tôi muốn được gặp một tổng đại viên thực sự",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "tôi muốn gặp một tổng đài viên thực sự",
-  "sigWerNormalizedPredicted": "tôi muốn được gặp một tổng đài viên thực sự",
+  "sigWerNormalizedPredicted": "tôi muốn được gặp một tổng đại viên thực sự",
   "sigWerErrors": [
     {
       "error": "Insertion: 'được' at position 2",
-      "reason": "'được' adds a nuance of permission or possibility, but does not change the overall intent or meaning of the sentence, which is to meet a real operator.",
+      "reason": "The insertion of 'được' ('to be able to') does not significantly change the meaning of the sentence; it only adds a nuance of ability or permission, but the intent remains the same.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'đài' to 'đại' at position 5",
+      "reason": "'tổng đài viên' is the correct term for 'operator' or 'call center agent' in Vietnamese; 'tổng đại viên' is a misspelling and not a valid term, which could cause confusion or misunderstanding.",
+      "score": 1
     }
   ]
 }

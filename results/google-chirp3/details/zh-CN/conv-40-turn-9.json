@@ -2,15 +2,26 @@
   "gold": "郡凛 at email dot com。",
   "predicted": "dream bean @ gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "郡凛 at email dot com",
-  "werNormalizedPredicted": "郡凛 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dream bean at gmail dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "郡 凛 at email dot com",
-  "sigWerNormalizedPredicted": "郡 凛 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dream bean at gmail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'dream' at position 0",
+      "reason": "The actual transcription replaces a non-English (likely a name or important identifier) word with an unrelated English word, completely changing the meaning and making the email address unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 3",
+      "reason": "Changing the email provider from 'email' to 'gmail' changes the actual address, which is a significant error for contact information.",
+      "score": 1
+    }
+  ]
 }

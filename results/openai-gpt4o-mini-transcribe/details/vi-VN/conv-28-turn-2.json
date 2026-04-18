@@ -1,21 +1,26 @@
 {
   "gold": "Sẵn sàng.",
-  "predicted": "thanx",
+  "predicted": "Sensor.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "san sang",
-  "werNormalizedPredicted": "thank you",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "sẵn sàng",
+  "werNormalizedPredicted": "sensor",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "san sang",
-  "sigWerNormalizedPredicted": "thank you",
+  "sigWerNormalizedGold": "sẵn sàng",
+  "sigWerNormalizedPredicted": "sensor",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'san' to 'thank' at position 0",
-      "reason": "'San' and 'thank' are completely different words with unrelated meanings, which changes the meaning of the sentence entirely.",
+      "error": "Substitution: 'sẵn' to 'sensor' at position 0",
+      "reason": "The word 'sensor' is completely different in meaning and language from 'sẵn', which is Vietnamese for 'ready'. This substitution makes the sentence incoherent and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sàng' at position 1",
+      "reason": "Omitting 'sàng' removes part of the expected phrase 'sẵn sàng', which means 'ready' in Vietnamese. The deletion, combined with the substitution, results in a sentence that is not understandable or equivalent in meaning.",
       "score": 1
     }
   ]

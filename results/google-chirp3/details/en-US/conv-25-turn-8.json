@@ -2,15 +2,21 @@
   "gold": "That would be 1 2 1 2 1 2 3 4 5 6 7.",
   "predicted": "That would be 12121234567.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "that would be one two one two one two three four five six seven",
-  "werNormalizedPredicted": "that would be one two one two one two three four five six seven",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "that would be one two one two three four five six seven",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "that would be one two one two one two three four five six seven",
-  "sigWerNormalizedPredicted": "that would be one two one two one two three four five six seven",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "that would be one two one two three four five six seven",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'one' at position 7",
+      "reason": "The repeated 'one two' pattern is broken by omitting 'one' at this position, but the overall meaning (a sequence of numbers) is still clear and understandable.",
+      "score": 2
+    }
+  ]
 }

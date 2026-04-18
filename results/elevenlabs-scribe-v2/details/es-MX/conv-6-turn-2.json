@@ -2,31 +2,26 @@
   "gold": "C N 7 3 0.",
   "predicted": "Te-ne, te, te, te, te, tres ceros",
   "unintelligible": false,
-  "wer": 2.4,
-  "werEdits": 12,
+  "wer": 1.4,
+  "werEdits": 7,
   "werRefWords": 5,
-  "werNormalizedGold": "c n seven three zero",
-  "werNormalizedPredicted": "t e n e t e t e t e t e three zeros",
-  "significantWer": 0.6,
-  "majorErrorsCount": 3,
+  "werNormalizedGold": "c n siete tres cero",
+  "werNormalizedPredicted": "te ne te te te te tres ceros",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n seven three zero",
-  "sigWerNormalizedPredicted": "t e n e t e t e t e t e three zeros",
+  "sigWerNormalizedGold": "c n siete tres cero",
+  "sigWerNormalizedPredicted": "te ne te te te te tres ceros",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'e' at position 0",
-      "reason": "Extra letter inserted at the start of a spelled-out sequence, which disrupts the intended sequence and changes the meaning.",
+      "error": "Substitution: 'c' to 'te' at position 0",
+      "reason": "'c' is a letter, 'te' is a different letter in Spanish; this changes the intended sequence and is a significant error.",
       "score": 1
     },
     {
-      "error": "Substitution: 'seven' to 'e' at position 2",
-      "reason": "First letter of a spelled-out sequence is incorrect, which significantly alters the intended code or word.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'zero' to 'zeros' at position 4",
-      "reason": "Extra letter inserted in the middle of a spelled-out sequence, making the sequence incorrect and unrecognizable.",
-      "score": 1
+      "error": "Substitution: 'cero' to 'ceros' at position 4",
+      "reason": "Pluralizing 'cero' to 'ceros' changes the meaning from 'zero' to 'zeros', which could affect the intended number sequence, but the meaning is still somewhat clear.",
+      "score": 2
     }
   ]
 }

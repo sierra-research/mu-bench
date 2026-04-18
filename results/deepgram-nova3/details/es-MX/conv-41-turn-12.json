@@ -2,15 +2,21 @@
   "gold": "Sí. Es calle Urión, número 30, Colonia Tlatilco.",
   "predicted": "Sí, es calle Unión número treinta, colonia Tlatilco,",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.125,
+  "werEdits": 1,
   "werRefWords": 8,
-  "werNormalizedGold": "si es calle union numero treinta colonia tlatilco",
-  "werNormalizedPredicted": "si es calle union numero treinta colonia tlatilco",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí es calle urión número treinta colonia tlatilco",
+  "werNormalizedPredicted": "sí es calle unión número treinta colonia tlatilco",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "si es calle union numero treinta colonia tlatilco",
-  "sigWerNormalizedPredicted": "si es calle union numero treinta colonia tlatilco",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sí es calle urión número treinta colonia tlatilco",
+  "sigWerNormalizedPredicted": "sí es calle unión número treinta colonia tlatilco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'urión' to 'unión' at position 3",
+      "reason": "'urión' and 'unión' are different street names; this changes the address and could lead to a different location, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

@@ -2,26 +2,31 @@
   "gold": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, P olacak. Pırasanın P'si, siz T ile söylediniz. Zaynep Arslan olacak.",
   "predicted": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zeynep P olacak. Pırasanın P'si siz T ile söylediniz. Zeynep Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 2,
+  "wer": 0.15384615384615385,
+  "werEdits": 4,
   "werRefWords": 26,
   "werNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın psi siz t ile söylediniz zaynep arslan olacak",
-  "werNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep p olacak pırasanın psi siz t ile söylediniz zeynep arslan olacak",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep p olacak pırasanın p si siz t ile söylediniz zeynep arslan olacak",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 26,
   "sigWerNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın psi siz t ile söylediniz zaynep arslan olacak",
-  "sigWerNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep p olacak pırasanın psi siz t ile söylediniz zeynep arslan olacak",
+  "sigWerNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep p olacak pırasanın p si siz t ile söylediniz zeynep arslan olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 14",
-      "reason": "Minor misspelling of a proper noun; the name is still easily recognizable and does not change the meaning of the sentence.",
+      "reason": "Minor misspelling of a proper noun, the name is still recognizable and the meaning is clear.",
       "score": 2
     },
     {
+      "error": "Substitution: 'psi' to 'si' at position 18",
+      "reason": "The word 'p' is present in both, but in the actual transcript it is separated as 'p' and 'si' instead of 'psi'. This does not change the meaning, as the explanation is about the letter 'p'.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 23",
-      "reason": "Minor misspelling of a proper noun; the name is still easily recognizable and does not change the meaning of the sentence.",
-      "score": 2
+      "reason": "The actual transcript splits 'psi' into 'p' and 'si', but the meaning is preserved as it is still referring to the letter 'p'.",
+      "score": 3
     }
   ]
 }

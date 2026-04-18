@@ -2,25 +2,25 @@
   "gold": "Tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không?",
   "predicted": "Ờ, tui cũng muốn hỏi là có cần phải trả phí gì cho cái này không?",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 2,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
   "werRefWords": 14,
   "werNormalizedGold": "tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không",
-  "werNormalizedPredicted": "tôi cũng muốn hỏi là có cần phải trả phí gì cho cái này không",
-  "significantWer": 0.07142857142857142,
+  "werNormalizedPredicted": "tui cũng muốn hỏi là có cần phải trả phí gì cho cái này không",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "tôi muốn hỏi là có cần phải trả phí gì cho cái thẻ không",
-  "sigWerNormalizedPredicted": "tôi cũng muốn hỏi là có cần phải trả phí gì cho cái này không",
+  "sigWerNormalizedPredicted": "tui cũng muốn hỏi là có cần phải trả phí gì cho cái này không",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'cũng' at position 1",
-      "reason": "'cũng' (also) adds emphasis but does not change the main intent or meaning of the question.",
-      "score": 2
+      "error": "Substitution: 'tôi' to 'cũng' at position 0",
+      "reason": "'tui' is a regional or informal variant of 'tôi' (both mean 'I' in Vietnamese), so the meaning is unchanged.",
+      "score": 3
     },
     {
       "error": "Substitution: 'thẻ' to 'này' at position 12",
-      "reason": "Substituting 'thẻ' (card) with 'này' (this) makes the object of the question unclear, changing the specific meaning from asking about a card to asking about 'this' (unspecified), which is a significant error.",
+      "reason": "'thẻ' means 'card' and 'này' means 'this'; substituting 'card' for 'this' changes the object being referred to, which can confuse the meaning.",
       "score": 1
     }
   ]

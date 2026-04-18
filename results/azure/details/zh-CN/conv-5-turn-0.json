@@ -2,15 +2,21 @@
   "gold": "我正在等待换我的卡，想知道它的状态。",
   "predicted": "我正在等待换我的卡，想知道他的状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.0625,
+  "werEdits": 1,
   "werRefWords": 16,
   "werNormalizedGold": "我正在等待换我的卡 想知道它的状态",
-  "werNormalizedPredicted": "我正在等待换我的卡 想知道它的状态",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "我正在等待换我的卡 想知道他的状态",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 等 待 换 我 的 卡 想 知 道 他 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '它' to '他' at position 12",
+      "reason": "'它' refers to 'it' (an object, such as a card), while '他' refers to 'he' (a person). This substitution changes the reference from an object to a person, which could cause confusion but the overall meaning of checking the status of the card is still understandable in context.",
+      "score": 2
+    }
+  ]
 }

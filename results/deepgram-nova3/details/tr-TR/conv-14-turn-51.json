@@ -7,21 +7,21 @@
   "werRefWords": 10,
   "werNormalizedGold": "hayır maalesef yine yanlış anladınız herhalde sizin kulaklarınızda problem var",
   "werNormalizedPredicted": "hayır maalesef beni yanlış anladınız herhalde sizin kulaklarınızda bir problem var",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hayır maalesef yine yanlış anladınız herhalde sizin kulaklarınızda problem var",
   "sigWerNormalizedPredicted": "hayır maalesef beni yanlış anladınız herhalde sizin kulaklarınızda bir problem var",
   "sigWerErrors": [
     {
       "error": "Substitution: 'yine' to 'beni' at position 2",
-      "reason": "'yine' means 'again' and 'beni' means 'me'; this changes the subject and focus of the sentence, which can alter the meaning significantly.",
-      "score": 1
+      "reason": "'yine' means 'again' and 'beni' means 'me'; this changes the focus of the sentence but does not derail the overall meaning, as the main point about misunderstanding is preserved.",
+      "score": 2
     },
     {
       "error": "Insertion: 'bir' at position 8",
-      "reason": "The insertion of 'bir' ('a') before 'problem' does not significantly change the meaning of the sentence; it is a minor grammatical difference.",
-      "score": 2
+      "reason": "Adding 'bir' ('a') before 'problem' does not change the meaning of the sentence; it is a minor grammatical difference.",
+      "score": 3
     }
   ]
 }

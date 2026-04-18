@@ -7,7 +7,7 @@
   "werRefWords": 5,
   "werNormalizedGold": "kredi kartı limit artışı istiyorum",
   "werNormalizedPredicted": "limit artışı istiyorum",
-  "significantWer": 0.2,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "kredi kartı limit artışı istiyorum",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Deletion: 'kredi' at position 0",
-      "reason": "The word 'kredi' (credit) is missing, which changes the meaning from a general limit increase request to a specific credit card limit increase request. This omission significantly alters the intent of the sentence.",
+      "reason": "The word 'kredi' (credit) is missing, which specifies the type of card. Its omission makes the request ambiguous, as it could refer to any card, not specifically a credit card. This significantly changes the meaning of the request.",
       "score": 1
     }
   ]

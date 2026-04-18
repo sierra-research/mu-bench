@@ -2,15 +2,21 @@
   "gold": "C A 9 3 V 1.",
   "predicted": "C, A, dokuz, üç ve bir.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.16666666666666666,
+  "werEdits": 1,
   "werRefWords": 6,
-  "werNormalizedGold": "c a nine three v one",
-  "werNormalizedPredicted": "c a nine three v one",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "c a dokuz üç v bir",
+  "werNormalizedPredicted": "c a dokuz üç ve bir",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c a nine three v one",
-  "sigWerNormalizedPredicted": "c a nine three v one",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c a dokuz üç v bir",
+  "sigWerNormalizedPredicted": "c a dokuz üç ve bir",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'v' to 've' at position 4",
+      "reason": "'v' is the letter name, while 've' is the Turkish word for 'and'; substituting a letter for a word changes the meaning, especially in a context where letters are being spelled out.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "Mã của tôi là C N 4 2 4.",
   "predicted": "Mã của tôi là cn bốn trăm hai mươi bốn",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 11,
-  "werNormalizedGold": "mã của tôi là c n bốn trăm hai mươi bốn",
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "mã của tôi là c n bốn hai bốn",
   "werNormalizedPredicted": "mã của tôi là c n bốn trăm hai mươi bốn",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 11,
-  "sigWerNormalizedGold": "mã của tôi là c n bốn trăm hai mươi bốn",
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "mã của tôi là c n bốn hai bốn",
   "sigWerNormalizedPredicted": "mã của tôi là c n bốn trăm hai mươi bốn",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 7",
+      "reason": "'bốn hai bốn' (424) is a direct way to say the number, while 'bốn trăm hai mươi bốn' (424) is the full spoken form. Both mean the same number, so the insertion does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mươi' at position 8",
+      "reason": "'bốn trăm hai mươi bốn' is just a more explicit way to say 424, so this insertion does not change the meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "Hayır yine yanlış oldu çünkü Zeynep değil Zaynep olacak başı.",
   "predicted": "Hayır, yine yanlış oldu çünkü Zeynep değil, zayn net olacak başı.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "hayır yine yanlış oldu çünkü zeynep değil zaynep olacak başı",
-  "werNormalizedPredicted": "hayır yine yanlış oldu çünkü zeynep değil zaynep olacak başı",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır yine yanlış oldu çünkü zeynep değil zayn net olacak başı",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "hayır yine yanlış oldu çünkü zeynep değil zaynep olacak başı",
-  "sigWerNormalizedPredicted": "hayır yine yanlış oldu çünkü zeynep değil zaynep olacak başı",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır yine yanlış oldu çünkü zeynep değil zayn net olacak başı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'net' at position 7",
+      "reason": "The expected word 'zaynep' (a proper noun/name) was replaced by 'zayn net', which changes the name entirely and introduces an unrelated word. This significantly alters the meaning and makes the sentence incoherent at this point.",
+      "score": 1
+    }
+  ]
 }

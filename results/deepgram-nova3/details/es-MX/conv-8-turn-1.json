@@ -2,15 +2,21 @@
   "gold": "C N 9 5 3.",
   "predicted": "Y c n nueve cinco tres.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 1,
   "werRefWords": 5,
-  "werNormalizedGold": "c n nine five three",
-  "werNormalizedPredicted": "c n nine five three",
-  "significantWer": 0.0,
+  "werNormalizedGold": "c n nueve cinco tres",
+  "werNormalizedPredicted": "y c n nueve cinco tres",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "c n nine five three",
-  "sigWerNormalizedPredicted": "c n nine five three",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "c n nueve cinco tres",
+  "sigWerNormalizedPredicted": "y c n nueve cinco tres",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'y' at position 0",
+      "reason": "'y' (Spanish for 'and') is inserted at the beginning, but it does not change the meaning of the sequence of numbers and letters. The overall meaning is preserved.",
+      "score": 2
+    }
+  ]
 }

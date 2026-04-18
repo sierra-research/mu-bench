@@ -1,26 +1,46 @@
 {
   "gold": "Tôi muốn được xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì.",
-  "predicted": "Tôi muốn được xem cái tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa lấy thông tin gì.",
+  "predicted": "ừm Tôi muốn được xem cái tình trạng thẻ FA của tôi. Tôi làm mất thẻ FA và có xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa lấy thông tin gì.",
   "unintelligible": false,
-  "wer": 0.06451612903225806,
-  "werEdits": 2,
+  "wer": 0.1935483870967742,
+  "werEdits": 6,
   "werRefWords": 31,
   "werNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
-  "werNormalizedPredicted": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần mà vẫn chưa lấy thông tin gì",
-  "significantWer": 0.03225806451612903,
+  "werNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ fa của tôi tôi làm mất thẻ fa và có xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa lấy thông tin gì",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 31,
   "sigWerNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
-  "sigWerNormalizedPredicted": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần mà vẫn chưa lấy thông tin gì",
+  "sigWerNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ fa của tôi tôi làm mất thẻ fa và có xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa lấy thông tin gì",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'cái' at position 4",
+      "reason": "'cái' is an extra classifier word that does not change the meaning of the sentence in this context.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'fa' at position 7",
+      "reason": "'fa' is an extraneous word with no meaning in this context, but does not derail the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'fa' at position 13",
+      "reason": "Again, 'fa' is inserted without meaning, but the sentence remains understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'mà' at position 19",
+      "reason": "'mà' is a discourse particle in Vietnamese that does not significantly change the meaning here.",
+      "score": 3
+    },
+    {
       "error": "Deletion: 'rồi' at position 23",
-      "reason": "The word 'rồi' (already) is omitted, but its absence does not significantly change the overall meaning of the sentence, as the context of waiting for two weeks is still clear.",
+      "reason": "'rồi' indicates completion, but its omission does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'thấy' to 'lấy' at position 27",
-      "reason": "'thấy' means 'see' or 'receive information', while 'lấy' means 'take' or 'get'. This substitution changes the meaning of the sentence, as it shifts from not seeing any information to not being able to get information, which could confuse the intent.",
+      "reason": "'thấy' means 'see' or 'receive', while 'lấy' means 'take' or 'get'. This changes the meaning of the sentence, as the user is waiting to 'see' information, not to 'take' it.",
       "score": 1
     }
   ]

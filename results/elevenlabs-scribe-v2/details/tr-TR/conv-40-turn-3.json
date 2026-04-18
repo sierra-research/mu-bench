@@ -7,7 +7,7 @@
   "werRefWords": 7,
   "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
   "werNormalizedPredicted": "çizgi karakteri ben anlamadım not alamadım",
-  "significantWer": 0.2857142857142857,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'siz' to 'çizgi' at position 0",
-      "reason": "'siz' means 'you', while 'çizgi' means 'line' or 'cartoon'. This changes the subject and meaning of the sentence significantly.",
+      "reason": "'siz' means 'you', while 'çizgi' means 'line' or 'cartoon' in Turkish. This substitution changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'edin' at position 2",
-      "reason": "'tekrar edin' means 'repeat (please)', so omitting 'edin' removes the imperative verb, making the request incomplete.",
+      "reason": "'tekrar edin' means 'repeat (please)', so omitting 'edin' removes the imperative verb, making the request incomplete and unclear.",
       "score": 1
     },
     {
       "error": "Substitution: 'alamadım' to 'anlamadım' at position 4",
-      "reason": "'alamadım' means 'I couldn't get (it)', while 'anlamadım' means 'I didn't understand'. The meanings are related but not the same; the intent is slightly changed but the overall context is preserved.",
+      "reason": "'alamadım' means 'I couldn't get (it)', while 'anlamadım' means 'I didn't understand'. While related, these are different actions and could change the intent of the sentence.",
       "score": 2
     }
   ]

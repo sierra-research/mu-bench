@@ -1,21 +1,31 @@
 {
   "gold": "Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 86 0, Ciudad de México, México.",
-  "predicted": "Urión treinta Colonia Latilco, Acapotzalco, 02860, Ciudad de México, México.",
+  "predicted": "Urión treinta, Colonia Latilco, Azcapotzalco, 02860, Ciudad de México, México.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 2,
-  "werRefWords": 14,
-  "werNormalizedGold": "urion treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de mexico mexico",
-  "werNormalizedPredicted": "urion treinta colonia latilco acapotzalco cero dos ocho seis cero ciudad de mexico mexico",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 14,
-  "sigWerNormalizedGold": "urion treinta colonia tlatilco azcapotzalco cero dos ocho seis cero ciudad de mexico mexico",
-  "sigWerNormalizedPredicted": "urion treinta colonia latilco acapotzalco cero dos ocho seis cero ciudad de mexico mexico",
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "urión treinta colonia tlatilco azcapotzalco cero dos ochenta y seis cero ciudad de méxico méxico",
+  "werNormalizedPredicted": "urión treinta colonia latilco azcapotzalco cero dos ocho seis cero ciudad de méxico méxico",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "urión treinta colonia tlatilco azcapotzalco cero dos ochenta y seis cero ciudad de méxico méxico",
+  "sigWerNormalizedPredicted": "urión treinta colonia latilco azcapotzalco cero dos ocho seis cero ciudad de méxico méxico",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tlatilco' to 'latilco' at position 3",
-      "reason": "Missing the initial 't' in a proper noun (place name), but the word is still recognizable and likely refers to the same location.",
+      "reason": "'Tlatilco' is a proper noun (place name), and the omission of the initial 't' is a minor misspelling that does not significantly hinder recognition.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ochenta' to 'ocho' at position 7",
+      "reason": "'Ochenta' means eighty, while 'ocho' means eight; this changes the number entirely and can lead to a significant misunderstanding, especially in addresses.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 8",
+      "reason": "The conjunction 'y' (and) is omitted, but the overall meaning of the address is still understandable.",
       "score": 2
     }
   ]

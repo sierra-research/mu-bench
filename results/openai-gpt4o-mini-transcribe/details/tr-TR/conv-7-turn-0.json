@@ -1,22 +1,27 @@
 {
   "gold": "Merhaba, kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz?",
-  "predicted": "Merhaba, kredi kartımın limitini arttırmak istiyordum da. Yardımcı olabilir misiniz?",
+  "predicted": "Merhaba, Kredi kartımın limitini arttırmak istedim de. Yardımcı olabilir misiniz?",
   "unintelligible": false,
   "wer": 0.3,
   "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "merhaba kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz",
-  "werNormalizedPredicted": "merhaba kredi kartımın limitini arttırmak istiyordum da yardımcı olabilir misiniz",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "merhaba kredi kartımın limitini artırmak istedim de yardımcı olabilir misiniz",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "merhaba kredi kartımın limitimi artırmak istiyorum da yardımcı olabilir misiniz",
-  "sigWerNormalizedPredicted": "merhaba kredi kartımın limitini arttırmak istiyordum da yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "merhaba kredi kartımın limitini artırmak istedim de yardımcı olabilir misiniz",
   "sigWerErrors": [
     {
       "error": "Substitution: 'limitimi' to 'limitini' at position 3",
-      "reason": "'limitimi' (my limit) and 'limitini' (its limit) are different possessive forms, but in this context, the meaning is still clear and the intent is understandable.",
+      "reason": "'Limitimi' (my limit) and 'limitini' (its limit) are different possessive forms, but in this context, the meaning is still clear and the intent is understandable.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'istiyorum' to 'istedim' at position 5",
+      "reason": "'İstiyorum' (I want) and 'istedim' (I wanted) are present vs past tense, but the overall request remains clear and the meaning does not significantly change.",
+      "score": 3
     }
   ]
 }

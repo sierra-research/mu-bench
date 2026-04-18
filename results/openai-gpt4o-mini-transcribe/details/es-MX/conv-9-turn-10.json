@@ -1,16 +1,27 @@
 {
   "gold": "María punto López arroba email punto com.",
-  "predicted": "mariapumlopez@gmail.com",
+  "predicted": "Mariapumlopez@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
-  "werNormalizedGold": "maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "maria punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "mariapumlopez arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "maria punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "mariapumlopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'mariapumlopez' at position 0",
+      "reason": "Multiple words ('maría punto lópez') have been merged into a single word ('mariapumlopez'), making the email address unclear and potentially unusable. This significantly alters the meaning and function of the transcription.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'punto' at position 1",
+      "reason": "'punto' (dot) is missing, which is essential for the correct format of an email address. Its absence makes the email address incorrect and unusable.",
+      "score": 1
+    }
+  ]
 }

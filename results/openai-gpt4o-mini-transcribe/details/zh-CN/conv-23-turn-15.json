@@ -2,15 +2,26 @@
   "gold": "妹玲 at email dot com。",
   "predicted": "mailing@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "mailing at email dot com",
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "妹玲 at email dot com",
   "werNormalizedPredicted": "mailing at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "mailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "妹 玲 at email dot com",
   "sigWerNormalizedPredicted": "mailing at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '妹' to 'mailing' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but it was replaced with the English word 'mailing', which is completely different in meaning and changes the identity in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The expected second character, likely part of a name, is missing in the actual transcription, which significantly alters the intended email address and could result in a completely different recipient.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "¿Qué app?",
   "predicted": "¿Qué app?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
-  "werNormalizedGold": "que app",
+  "werNormalizedGold": "qué app",
   "werNormalizedPredicted": "que app",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "que app",
+  "sigWerNormalizedGold": "qué app",
   "sigWerNormalizedPredicted": "que app",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'qué' to 'que' at position 0",
+      "reason": "The word 'qué' (with accent) means 'what' in Spanish, while 'que' (without accent) means 'that' or 'which'. The accent changes the meaning, but in the context of 'qué app', the intended meaning is likely still clear. This is a minor error as the overall meaning is not derailed.",
+      "score": 2
+    }
+  ]
 }

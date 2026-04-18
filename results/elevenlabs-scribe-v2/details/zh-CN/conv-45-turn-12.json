@@ -2,15 +2,21 @@
   "gold": "哎呀，君玲。",
   "predicted": "哎呀，June Lin。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 4,
-  "werNormalizedGold": "哎呀 君玲",
-  "werNormalizedPredicted": "哎呀 君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "哎 呀 君 玲",
-  "sigWerNormalizedPredicted": "哎 呀 君 玲",
-  "sigWerErrors": []
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "君玲",
+  "werNormalizedPredicted": "june lin",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "君 玲",
+  "sigWerNormalizedPredicted": "june lin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'june' at position 0",
+      "reason": "The expected word is a Chinese character ('君'), while the actual is an English name ('june'). This is a significant error as it completely changes the identity and language of the name.",
+      "score": 1
+    }
+  ]
 }

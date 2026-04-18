@@ -2,20 +2,25 @@
   "gold": "K G mi K B mi?",
   "predicted": "KGM kb mi?",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 1,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "k g mi k b mi",
-  "werNormalizedPredicted": "k g m k b mi",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "k g m k b m",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "k g mi k b mi",
-  "sigWerNormalizedPredicted": "k g m k b mi",
+  "sigWerNormalizedPredicted": "k g m k b m",
   "sigWerErrors": [
     {
       "error": "Substitution: 'mi' to 'm' at position 2",
-      "reason": "'mi' and 'm' are likely intended as spelled-out letters or syllables; substituting 'mi' with 'm' changes the letter or sound, which is a significant error in a sequence where each element is important.",
+      "reason": "'mi' and 'm' are likely intended as spelled-out letters or abbreviations. Omitting the 'i' changes the sequence and could alter the intended meaning, especially if these are initials or codes.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'mi' to 'm' at position 5",
+      "reason": "As above, the omission of 'i' from 'mi' to 'm' changes the sequence, which is significant if these are meant to be precise letters or codes.",
       "score": 1
     }
   ]

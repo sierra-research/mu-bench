@@ -2,15 +2,31 @@
   "gold": "Ashley dot Brown at email dot com.",
   "predicted": "ashley.brown@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "ashley brown at email dot com",
-  "werNormalizedPredicted": "ashley brown at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "ashley brown at email dot com",
-  "sigWerNormalizedPredicted": "ashley brown at email dot com",
-  "sigWerErrors": []
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "ashley dot brown at email dot com",
+  "werNormalizedPredicted": "ashley brown at gmail com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ashley dot brown at email dot com",
+  "sigWerNormalizedPredicted": "ashley brown at gmail com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'dot' at position 1",
+      "reason": "Omitting 'dot' in an email address can cause confusion and make the address invalid or unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 4",
+      "reason": "Changing the domain from 'email' to 'gmail' changes the entire email address, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 5",
+      "reason": "Omitting 'dot' before 'com' in an email address makes the address invalid and unrecognizable.",
+      "score": 1
+    }
+  ]
 }

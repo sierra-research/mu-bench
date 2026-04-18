@@ -2,15 +2,21 @@
   "gold": "Địa chỉ email là minh chấm trần at Gmail chấm com.",
   "predicted": "địa chỉ email là minh.trang@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "địa chỉ email là minh.trang@gmail.com",
-  "werNormalizedPredicted": "địa chỉ email là minh.trang@gmail.com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "địa chỉ email là minh.trang@gmail.com",
-  "sigWerNormalizedPredicted": "địa chỉ email là minh.trang@gmail.com",
-  "sigWerErrors": []
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
+  "werRefWords": 11,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần at gmail chấm com",
+  "werNormalizedPredicted": "địa chỉ email là minh chấm trang at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần at gmail chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh chấm trang at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'trang' at position 6",
+      "reason": "'trần' and 'trang' are different Vietnamese names. Substituting one for the other changes the identity of the email address, which is a significant error as it would result in a different recipient.",
+      "score": 1
+    }
+  ]
 }

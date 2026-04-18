@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
   "werNormalizedPredicted": "anlayışa bak ses istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasındaki kesap ekstresi istiyorum",
-  "significantWer": 0.058823529411764705,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anlayışa' at position 0",
-      "reason": "'anna' (a name or specific term) is replaced with 'anlayışa' (means 'to understanding' in Turkish), which is a completely different word and changes the meaning of the sentence.",
+      "reason": "'anna' is a name, while 'anlayışa' means 'to understanding' in Turkish; this substitution completely changes the meaning and derails the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'seneni' to 'senenin' at position 5",
-      "reason": "'seneni' is a misspelling of 'senenin' (meaning 'of the year' in Turkish), and the actual transcription corrects it to the proper form. This does not change the meaning.",
-      "score": 3
+      "reason": "'seneni' is a misspelling of 'senenin' (of the year) in Turkish; this is a minor error as the meaning is preserved.",
+      "score": 2
     },
     {
       "error": "Substitution: 'hesap' to 'kesap' at position 14",
-      "reason": "'hesap' (account) is misspelled as 'kesap', but the word is still recognizable and the meaning is clear in context.",
+      "reason": "'hesap' (account) is misspelled as 'kesap', but the intended meaning is still clear in context.",
       "score": 2
     }
   ]

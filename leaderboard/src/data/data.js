@@ -36,35 +36,65 @@ export const PROVIDERS = [
         modelDate: "2026-04-14",
         localeResults: {
             "en-US": {
-                wer: 0.0366,
-                significantWer: 0.0334,
-                latencyP50Ms: 276.5,
-                latencyP95Ms: 639.9,
+                wer: 0.0417,
+                significantWer: 0.0306,
+                completeP50Ms: 276.3,
+                completeP95Ms: 641,
+                roundTripP50Ms: 276.3,
+                roundTripP95Ms: 641,
             },
             "es-MX": {
-                wer: 0.0802,
-                significantWer: 0.1288,
-                latencyP50Ms: 242.8,
-                latencyP95Ms: 475.9,
+                wer: 0.1097,
+                significantWer: 0.1641,
+                completeP50Ms: 231.4,
+                completeP95Ms: 454.2,
+                roundTripP50Ms: 231.4,
+                roundTripP95Ms: 454.2,
             },
             "tr-TR": {
-                wer: 0.1024,
-                significantWer: 0.2506,
-                latencyP50Ms: 967.7,
-                latencyP95Ms: 1815.1,
+                wer: 0.1402,
+                significantWer: 0.3073,
+                completeP50Ms: 892.7,
+                completeP95Ms: 1780,
+                roundTripP50Ms: 892.7,
+                roundTripP95Ms: 1780,
             },
             "vi-VN": {
-                wer: 0.1021,
-                significantWer: 0.3029,
-                latencyP50Ms: 276.9,
-                latencyP95Ms: 586.3,
+                wer: 0.1208,
+                significantWer: 0.3385,
+                completeP50Ms: 265.9,
+                completeP95Ms: 565.6,
+                roundTripP50Ms: 265.9,
+                roundTripP95Ms: 565.6,
             },
             "zh-CN": {
-                wer: 0.1288,
-                significantWer: 0.2524,
-                latencyP50Ms: 262.8,
-                latencyP95Ms: 423.7,
+                wer: 0.1749,
+                significantWer: 0.3869,
+                completeP50Ms: 258.4,
+                completeP95Ms: 438,
+                roundTripP50Ms: 258.4,
+                roundTripP95Ms: 438,
             },
+        },
+        overall: {
+            wer: 0.1175,
+            significantWer: 0.2455,
+            completeP50Ms: 285,
+            completeP95Ms: 1178.9,
+            roundTripP50Ms: 285,
+            roundTripP95Ms: 1178.9,
+        },
+        latencyMeta: {
+            protocol: "batch",
+            region: "us-east-2",
+        },
+        inferenceConfig: {
+            beamSize: "default",
+            languageHint: "default",
+            customVocabulary: "default",
+            noiseSuppression: "default",
+            domainAdaptation: "default",
+            keywordBoosting: "default",
         },
     },
     {
@@ -74,35 +104,65 @@ export const PROVIDERS = [
         modelDate: "2026-04-14",
         localeResults: {
             "en-US": {
-                wer: 0.0463,
-                significantWer: 0.052,
-                latencyP50Ms: 245.7,
-                latencyP95Ms: 617.9,
+                wer: 0.0542,
+                significantWer: 0.0575,
+                completeP50Ms: 48.2,
+                completeP95Ms: 251.5,
+                roundTripP50Ms: 48.2,
+                roundTripP95Ms: 251.5,
             },
             "es-MX": {
-                wer: 0.0755,
-                significantWer: 0.1503,
-                latencyP50Ms: 282,
-                latencyP95Ms: 632.6,
+                wer: 0.0973,
+                significantWer: 0.1742,
+                completeP50Ms: 54.2,
+                completeP95Ms: 364.1,
+                roundTripP50Ms: 54.2,
+                roundTripP95Ms: 364.1,
             },
             "tr-TR": {
-                wer: 0.0844,
-                significantWer: 0.1939,
-                latencyP50Ms: 238.9,
-                latencyP95Ms: 660.3,
+                wer: 0.1337,
+                significantWer: 0.2435,
+                completeP50Ms: 141.1,
+                completeP95Ms: 383.3,
+                roundTripP50Ms: 141.1,
+                roundTripP95Ms: 383.3,
             },
             "vi-VN": {
-                wer: 0.2113,
-                significantWer: 0.5415,
-                latencyP50Ms: 235.2,
-                latencyP95Ms: 755.3,
+                wer: 0.247,
+                significantWer: 0.6113,
+                completeP50Ms: 147.1,
+                completeP95Ms: 353.8,
+                roundTripP50Ms: 147.1,
+                roundTripP95Ms: 353.8,
             },
             "zh-CN": {
-                wer: 0.1568,
-                significantWer: 0.2897,
-                latencyP50Ms: 192.9,
-                latencyP95Ms: 1137.3,
+                wer: 0.3049,
+                significantWer: 0.5452,
+                completeP50Ms: 151.5,
+                completeP95Ms: 807.4,
+                roundTripP50Ms: 151.5,
+                roundTripP95Ms: 807.4,
             },
+        },
+        overall: {
+            wer: 0.1674,
+            significantWer: 0.3263,
+            completeP50Ms: 106.8,
+            completeP95Ms: 376.1,
+            roundTripP50Ms: 106.8,
+            roundTripP95Ms: 376.1,
+        },
+        latencyMeta: {
+            protocol: "batch",
+            region: "us-east-2",
+        },
+        inferenceConfig: {
+            beamSize: "default",
+            languageHint: "default",
+            customVocabulary: "default",
+            noiseSuppression: "default",
+            domainAdaptation: "default",
+            keywordBoosting: "default",
         },
     },
     {
@@ -112,35 +172,65 @@ export const PROVIDERS = [
         modelDate: "2026-04-14",
         localeResults: {
             "en-US": {
-                wer: 0.0408,
-                significantWer: 0.0644,
-                latencyP50Ms: 430,
-                latencyP95Ms: 890,
+                wer: 0.0554,
+                significantWer: 0.0588,
+                completeP50Ms: 415,
+                completeP95Ms: 891.6,
+                roundTripP50Ms: 415,
+                roundTripP95Ms: 891.6,
             },
             "es-MX": {
-                wer: 0.0751,
-                significantWer: 0.1149,
-                latencyP50Ms: 429.3,
-                latencyP95Ms: 828.1,
+                wer: 0.1095,
+                significantWer: 0.1275,
+                completeP50Ms: 419.8,
+                completeP95Ms: 816.8,
+                roundTripP50Ms: 419.8,
+                roundTripP95Ms: 816.8,
             },
             "tr-TR": {
-                wer: 0.0627,
-                significantWer: 0.1253,
-                latencyP50Ms: 455.6,
-                latencyP95Ms: 902.6,
+                wer: 0.0943,
+                significantWer: 0.1915,
+                completeP50Ms: 458.9,
+                completeP95Ms: 909.9,
+                roundTripP50Ms: 458.9,
+                roundTripP95Ms: 909.9,
             },
             "vi-VN": {
-                wer: 0.1046,
-                significantWer: 0.2577,
-                latencyP50Ms: 432.3,
-                latencyP95Ms: 821,
+                wer: 0.1308,
+                significantWer: 0.3087,
+                completeP50Ms: 445.4,
+                completeP95Ms: 917.3,
+                roundTripP50Ms: 445.4,
+                roundTripP95Ms: 917.3,
             },
             "zh-CN": {
-                wer: 0.1112,
-                significantWer: 0.2337,
-                latencyP50Ms: 375.6,
-                latencyP95Ms: 559.9,
+                wer: 0.1686,
+                significantWer: 0.3714,
+                completeP50Ms: 372.8,
+                completeP95Ms: 570.5,
+                roundTripP50Ms: 372.8,
+                roundTripP95Ms: 570.5,
             },
+        },
+        overall: {
+            wer: 0.1117,
+            significantWer: 0.2116,
+            completeP50Ms: 415.1,
+            completeP95Ms: 847,
+            roundTripP50Ms: 415.1,
+            roundTripP95Ms: 847,
+        },
+        latencyMeta: {
+            protocol: "batch",
+            region: "us-east-2",
+        },
+        inferenceConfig: {
+            beamSize: "default",
+            languageHint: "default",
+            customVocabulary: "default",
+            noiseSuppression: "default",
+            domainAdaptation: "default",
+            keywordBoosting: "default",
         },
     },
     {
@@ -150,35 +240,65 @@ export const PROVIDERS = [
         modelDate: "2026-04-14",
         localeResults: {
             "en-US": {
-                wer: 0.0454,
-                significantWer: 0.0509,
-                latencyP50Ms: 1235.8,
-                latencyP95Ms: 2145.7,
+                wer: 0.0563,
+                significantWer: 0.0551,
+                completeP50Ms: 873.3,
+                completeP95Ms: 1349.3,
+                roundTripP50Ms: 873.3,
+                roundTripP95Ms: 1349.3,
             },
             "es-MX": {
-                wer: 0.0671,
-                significantWer: 0.101,
-                latencyP50Ms: 1192.3,
-                latencyP95Ms: 1975.2,
+                wer: 0.0886,
+                significantWer: 0.1136,
+                completeP50Ms: 826,
+                completeP95Ms: 1265.4,
+                roundTripP50Ms: 826,
+                roundTripP95Ms: 1265.4,
             },
             "tr-TR": {
-                wer: 0.0559,
-                significantWer: 0.0981,
-                latencyP50Ms: 1239.8,
-                latencyP95Ms: 2027.9,
+                wer: 0.0803,
+                significantWer: 0.143,
+                completeP50Ms: 835.4,
+                completeP95Ms: 1286.8,
+                roundTripP50Ms: 835.4,
+                roundTripP95Ms: 1286.8,
             },
             "vi-VN": {
-                wer: 0.0574,
-                significantWer: 0.1078,
-                latencyP50Ms: 1253.7,
-                latencyP95Ms: 2165,
+                wer: 0.0563,
+                significantWer: 0.0995,
+                completeP50Ms: 824.4,
+                completeP95Ms: 1292.2,
+                roundTripP50Ms: 824.4,
+                roundTripP95Ms: 1292.2,
             },
             "zh-CN": {
-                wer: 0.0723,
-                significantWer: 0.1645,
-                latencyP50Ms: 1140.3,
-                latencyP95Ms: 1715.4,
+                wer: 0.1197,
+                significantWer: 0.2952,
+                completeP50Ms: 803.1,
+                completeP95Ms: 1196.1,
+                roundTripP50Ms: 803.1,
+                roundTripP95Ms: 1196.1,
             },
+        },
+        overall: {
+            wer: 0.0802,
+            significantWer: 0.1413,
+            completeP50Ms: 832.8,
+            completeP95Ms: 1281.3,
+            roundTripP50Ms: 832.8,
+            roundTripP95Ms: 1281.3,
+        },
+        latencyMeta: {
+            protocol: "batch",
+            region: "us",
+        },
+        inferenceConfig: {
+            beamSize: "default",
+            languageHint: "default",
+            customVocabulary: "default",
+            noiseSuppression: "default",
+            domainAdaptation: "default",
+            keywordBoosting: "default",
         },
     },
     {
@@ -188,35 +308,65 @@ export const PROVIDERS = [
         modelDate: "2026-04-15",
         localeResults: {
             "en-US": {
-                wer: 0.0375,
-                significantWer: 0.0484,
-                latencyP50Ms: 653.5,
-                latencyP95Ms: 1203.9,
+                wer: 0.0472,
+                significantWer: 0.0624,
+                completeP50Ms: 539.8,
+                completeP95Ms: 1096.5,
+                roundTripP50Ms: 539.8,
+                roundTripP95Ms: 1096.5,
             },
             "es-MX": {
-                wer: 0.0839,
-                significantWer: 0.1465,
-                latencyP50Ms: 701,
-                latencyP95Ms: 1717.6,
+                wer: 0.1158,
+                significantWer: 0.2008,
+                completeP50Ms: 911,
+                completeP95Ms: 1773.6,
+                roundTripP50Ms: 911,
+                roundTripP95Ms: 1773.6,
             },
             "tr-TR": {
-                wer: 0.091,
-                significantWer: 0.1856,
-                latencyP50Ms: 732.2,
-                latencyP95Ms: 1398.6,
+                wer: 0.1282,
+                significantWer: 0.2861,
+                completeP50Ms: 706.2,
+                completeP95Ms: 1291.1,
+                roundTripP50Ms: 706.2,
+                roundTripP95Ms: 1291.1,
             },
             "vi-VN": {
-                wer: 0.1237,
-                significantWer: 0.3203,
-                latencyP50Ms: 653,
-                latencyP95Ms: 1254,
+                wer: 0.1451,
+                significantWer: 0.4133,
+                completeP50Ms: 647.7,
+                completeP95Ms: 1069.4,
+                roundTripP50Ms: 647.7,
+                roundTripP95Ms: 1069.4,
             },
             "zh-CN": {
-                wer: 0.1278,
-                significantWer: 0.2137,
-                latencyP50Ms: 593.1,
-                latencyP95Ms: 1160,
+                wer: 0.2067,
+                significantWer: 0.4,
+                completeP50Ms: 595.3,
+                completeP95Ms: 1391.7,
+                roundTripP50Ms: 595.3,
+                roundTripP95Ms: 1391.7,
             },
+        },
+        overall: {
+            wer: 0.1286,
+            significantWer: 0.2725,
+            completeP50Ms: 664.5,
+            completeP95Ms: 1375.8,
+            roundTripP50Ms: 664.5,
+            roundTripP95Ms: 1375.8,
+        },
+        latencyMeta: {
+            protocol: "batch",
+            region: "us-east-2",
+        },
+        inferenceConfig: {
+            beamSize: "default",
+            languageHint: "default",
+            customVocabulary: "default",
+            noiseSuppression: "default",
+            domainAdaptation: "default",
+            keywordBoosting: "default",
         },
     },
 ];
@@ -248,11 +398,11 @@ export const SAMPLE_UTTERANCES = {
                 "deepgram-nova3":
                     "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
                 "elevenlabs-scribe-v2":
-                    "let me confirm that code i have steven kat and as in nancy six two two six two zero six",
+                    "let me confirm that code i have steve and kat and is it nancy six two two six two zero six",
                 "google-chirp3":
-                    "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
+                    "let me confirm that code i have c as in cat and n as in nancy six two two six two zero six",
                 "openai-gpt4o-mini-transcribe":
-                    "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
+                    "let me confirm that code i have seen in chat and it is a nancy six two two six two zero six",
             },
         },
         {
@@ -308,10 +458,10 @@ export const SAMPLE_UTTERANCES = {
             hasAudio: true,
             submissions: {
                 azure: "no es juan punto lopez arroba email punto com",
-                "deepgram-nova3": "es juan punto lopez arroba email punto com",
-                "elevenlabs-scribe-v2": "es juan punto lopez arroba email punto com",
-                "google-chirp3": "es no es juan punto lopez arroba email punto com",
-                "openai-gpt4o-mini-transcribe": "es juan punto lopez arroba email punto com",
+                "deepgram-nova3": "es no es juan punto lópez arroba email punto com",
+                "elevenlabs-scribe-v2": "no es juan punto lópez arroba email punto com",
+                "google-chirp3": "no es juan punto lópez arroba email punto com",
+                "openai-gpt4o-mini-transcribe": "es no es juan punto lópez arroba email punto com",
             },
         },
         {
@@ -320,11 +470,11 @@ export const SAMPLE_UTTERANCES = {
             transcript: "Serían C N 9 2 4.",
             hasAudio: false,
             submissions: {
-                azure: "seria es c n nueve dos cuatro",
-                "deepgram-nova3": "seria e c n nueve dos cuatro",
-                "elevenlabs-scribe-v2": "seria f c n nueve dos cuatro",
-                "google-chirp3": "seria c n nueve dos cuatro",
-                "openai-gpt4o-mini-transcribe": "seria e c n nueve dos cuatro",
+                azure: "sería es c n nueve dos cuatro",
+                "deepgram-nova3": "sería e c n nueve dos cuatro",
+                "elevenlabs-scribe-v2": "sería f c n nueve dos cuatro",
+                "google-chirp3": "sería c n nueve dos cuatro",
+                "openai-gpt4o-mini-transcribe": "sería e c n nueve dos cuatro",
             },
         },
         {
@@ -334,15 +484,15 @@ export const SAMPLE_UTTERANCES = {
                 "Mi nombre es Juan López. Mi correo electrónico es Juan punto López arroba email punto com. Mi teléfono es 52 55 1 2 3 4 5 6 7 8. Mi dirección es Urión 30, Colonia Tlatilco, Azcapotzalco, 0 2 0 0 2 8 60, Ciudad de México, México.",
             hasAudio: false,
             submissions: {
-                azure: "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es orion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
+                azure: "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba email punto com mi número de teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es orión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
                 "deepgram-nova3":
-                    "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba gmail punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es union treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
+                    "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba gmail punto com mi número de teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es unión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
                 "elevenlabs-scribe-v2":
-                    "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba gmail punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es orion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
+                    "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba gmail punto com mi número de teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es orión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
                 "google-chirp3":
-                    "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es orion treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de mexico mexico",
+                    "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba email punto com mi número de teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es orión treinta colonia tlatilco azcapotzalco cero dos cero cero dos ocho sesenta ciudad de méxico méxico",
                 "openai-gpt4o-mini-transcribe":
-                    "mi nombre es juan lopez mi correo electronico es juan punto lopez arroba email punto com mi numero de telefono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi direccion es urion treinta colonia tlaltenco azcapotzalco cero dos cero cero dos ochocientos sesenta ciudad de mexico mexico",
+                    "mi nombre es juan lópez mi correo electrónico es juan punto lópez arroba email punto com mi número de teléfono es cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho mi dirección es urión treinta colonia platilco azcapotzalco cero dos cero cero dos sesenta ciudad de méxico méxico",
             },
         },
         {
@@ -352,15 +502,15 @@ export const SAMPLE_UTTERANCES = {
                 "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
             hasAudio: false,
             submissions: {
-                azure: "es urion treinta colonia atlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ocho seis cero",
+                azure: "es urión treinta colonia atlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
                 "deepgram-nova3":
-                    "es urion treinta colonia atlatico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
+                    "es urión treinta colonia atlatico delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
                 "elevenlabs-scribe-v2":
-                    "es urion treinta colonia tlatilco delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
+                    "es urion treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
                 "google-chirp3":
-                    "escurion treinta colonia atlantico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ocho seis cero",
+                    "escurión treinta colonia atlántico delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
                 "openai-gpt4o-mini-transcribe":
-                    "isurion treinta colonia atlantico delegacion azcapotzalco en la ciudad de mexico codigo postal cero dos ochocientos sesenta",
+                    "isurión treinta colonia atlántico delegación azcapotzalco en la ciudad de méxico código postal cero dos ochocientos sesenta",
             },
         },
         {
@@ -370,15 +520,15 @@ export const SAMPLE_UTTERANCES = {
                 "Es, el monto es de 3200 pesos. Pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular, no, no sé cuál es.",
             hasAudio: false,
             submissions: {
-                azure: "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no se cual es",
+                azure: "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no se cual es",
                 "deepgram-nova3":
-                    "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
+                    "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no no sé cuál es",
                 "elevenlabs-scribe-v2":
-                    "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
+                    "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no no sé cuál es",
                 "google-chirp3":
-                    "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
+                    "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario es una cuenta particular no no sé cuál es",
                 "openai-gpt4o-mini-transcribe":
-                    "este el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no no se cual es",
+                    "el monto es de tres mil doscientos pesos pues la fecha es de ayer en la noche y el destinatario pues es una cuenta particular no sé cuál es",
             },
         },
     ],
@@ -389,14 +539,14 @@ export const SAMPLE_UTTERANCES = {
             transcript: "Tamam, dinlersen söyleyeceğim Anna. Artı 90 123 0 90 45 67.",
             hasAudio: true,
             submissions: {
-                azure: "tamam dinlersin paylasimlar arti doksan bir yuz yirmi uc sifir doksan kirk bes altmis yedi",
+                azure: "tamam dinlersin paylaşım anladım artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
                 "deepgram-nova3":
-                    "tamam dinlersin kolay yasayamamlar arti doksan yuz yirmi uc sifir doksan kirk bes altmis yedi",
+                    "tamam dinlersin kolay yaşayamamlar artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
                 "elevenlabs-scribe-v2":
-                    "tamam dinlersen paylasacagim anla arti doksan bir yuz yirmi uc sifir doksan kirk bes altmis yedi",
-                "google-chirp3": "tamam dinler misin arti doksan yuz yirmi uc sifir doksan kirk bes altmis yedi",
+                    "tamam dinlersen paylaşacağım anla artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+                "google-chirp3": "tamam dinler misin artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
                 "openai-gpt4o-mini-transcribe":
-                    "tamam dinleyecegim arti doksan yuz yirmi uc sifir doksan kirk bes altmis yedi",
+                    "tamam dinlen tipsaşamlar artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
             },
         },
         {
@@ -406,9 +556,9 @@ export const SAMPLE_UTTERANCES = {
             hasAudio: false,
             submissions: {
                 azure: "hayır eski döve beş yüz doksan üç dediniz ama ben yanlış mı anladım",
-                "deepgram-nova3": "hayır eski c h m five hundred ninety three dediniz ama ben yanlış mı anladım",
+                "deepgram-nova3": "hayır eski c h m beş yüz doksan üç dediniz ama ben yanlış mı anladım",
                 "elevenlabs-scribe-v2": "hayır f değil d n beş yüz doksan üç dediniz ama ben yanlış mı anladım",
-                "google-chirp3": "hayır d n five hundred ninety three dediniz ama ben yanlış mı anladım",
+                "google-chirp3": "hayır f değil d n beş yüz doksan üç dediniz ama ben yanlış mı anladım",
                 "openai-gpt4o-mini-transcribe": "hayır beş yüz doksan üç dediniz ama ben yanlış mı anladım",
             },
         },
@@ -419,15 +569,15 @@ export const SAMPLE_UTTERANCES = {
                 "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
             hasAudio: false,
             submissions: {
-                azure: "email davranmadigini tekrar email verinden sonra ahmet arslan a r s l a n at email nokta com",
+                azure: "e mail davranmadığını tekrar e mail verinden sonra ahmet arslanarsl com",
                 "deepgram-nova3":
-                    "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan arslan at email nokta com",
+                    "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan arslan et email nokta com",
                 "elevenlabs-scribe-v2":
                     "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
                 "google-chirp3":
-                    "email daha vermedim tekrar email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+                    "email daha vermedim tekrar email vereyim ben sana ahmet nokta aslan arslan at email nokta com",
                 "openai-gpt4o-mini-transcribe":
-                    "email adresine tekrar email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+                    "email davamı tek email vereyim ben sana ahmet nokta arslan a r e s l a n a r e s l a n e at email nokta com",
             },
         },
         {
@@ -437,15 +587,15 @@ export const SAMPLE_UTTERANCES = {
                 "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, P olacak. Pırasanın P'si, siz T ile söylediniz. Zaynep Arslan olacak.",
             hasAudio: false,
             submissions: {
-                azure: "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın ps'i siz t ile söylediniz zaynep arslan olacak",
+                azure: "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zayn t olacak pırasa nın ps i siz t ile söylediniz zayn arslan olacak",
                 "deepgram-nova3":
-                    "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynap p olacak burasının psi siz tyle söylediniz zaynap arslan olacak",
+                    "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynap p olacak pırasanın psi siz t ile söylediniz zaynap arslan olacak",
                 "elevenlabs-scribe-v2":
-                    "yani e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zayneb p olacak pırasanın psi siz t ile söylediniz zayneb arslan olacak",
+                    "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zayneb p olacak pırasanın psi siz t ile söylediniz zayneb arslan olacak",
                 "google-chirp3":
-                    "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep p olacak pırasanın psi siz t ile söylediniz zeynep arslan olacak",
+                    "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep p olacak pırasanın p si siz t ile söylediniz zeynep arslan olacak",
                 "openai-gpt4o-mini-transcribe":
-                    "yani e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep t olacak pırasının p si siz t ile söylediniz zeynep arslan olacak",
+                    "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep p olacak pırasının p si siz t ile söylediniz zeynep arslan olacak",
             },
         },
         {
@@ -454,11 +604,11 @@ export const SAMPLE_UTTERANCES = {
             transcript: "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
             hasAudio: false,
             submissions: {
-                azure: "merhaba son hesap ekstrimin bir kopyasina ihtiyacim var da",
-                "deepgram-nova3": "merhaba son hesap ekstresinin bir kopyasina ihtiyacim vardi",
-                "elevenlabs-scribe-v2": "merhaba son hesap ekstresinin bir kopyasina ihtiyacim var da",
-                "google-chirp3": "merhaba son hesap ekstresimin bir kopyasina ihtiyacim vardi",
-                "openai-gpt4o-mini-transcribe": "merhaba son hesap ekstresinin bir kopyasina ihtiyacim vardi da",
+                azure: "merhaba son hesap ekstrimin bir kopyasına ihtiyacım var da",
+                "deepgram-nova3": "merhaba son hesap ekstresinin bir kopyasına ihtiyacım vardı",
+                "elevenlabs-scribe-v2": "merhaba son hesap ekstresinin bir kopyasına ihtiyacım var da",
+                "google-chirp3": "merhaba son hesap ekstresimin bir kopyasına ihtiyacım vardı",
+                "openai-gpt4o-mini-transcribe": "merhaba son hesap ekstresinin bir kopyasına ihtiyacım var da",
             },
         },
     ],
@@ -469,13 +619,13 @@ export const SAMPLE_UTTERANCES = {
             transcript: "Không phải. Minh, minh là tên đó. Trần là họ đó. Minh chấm trần a còng email chấm com.",
             hasAudio: true,
             submissions: {
-                azure: "không phải minh minh là tên đó trần là họ đó minh trần a còng email com",
-                "deepgram-nova3": "phai minh minh la ten do tran la ho do minh cham tran a cong email cham com",
+                azure: "không phải minh minh là tên đó trần là họ đó minh trần a còng email chấm com",
+                "deepgram-nova3": "phải minh minh là tên đó trần là họ đó minh chấm trầngmail chấm com",
                 "elevenlabs-scribe-v2":
-                    "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+                    "không phải minh minh là tên đó trần là họ đó minh chấm tran a còng email chấm com",
                 "google-chirp3": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
                 "openai-gpt4o-mini-transcribe":
-                    "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+                    "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng congemail chấm com",
             },
         },
         {
@@ -485,15 +635,15 @@ export const SAMPLE_UTTERANCES = {
                 "Tên của mình là Trần Minh. Email là minh chấm trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, Thành phố Hồ Chí Minh, 700000, Việt Nam.",
             hasAudio: false,
             submissions: {
-                azure: "ten cua minh la tran minh email la minh cham tran a cong gmail cham com so dien thoai la cong tam bon chin mot mot hai ba bon nam sau bay tam dia chi la mot hai ba duong le loi thanh pho ho chi minh bay tram nghin viet nam",
+                azure: "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
                 "deepgram-nova3":
-                    "tên của mình là trần minh email là minh chấm orggmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+                    "tên của mình là trần minh email là minh chấm orggmail chấm com số điện thoại là cộng tám mươi bốn chín mươi mốt một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi tp hcm bảy trăm nghìn việt nam",
                 "elevenlabs-scribe-v2":
-                    "ten cua minh la tran minh email la minh cham tran a cong gmail cham com so dien thoai la cong tam tu chin mot mot hai ba bon nam sau bay tam dia chi la mot hai ba duong le loi thanh pho ho chi minh bay tram nghin viet nam",
+                    "tên của mình là trần minh email là minh chấm tran a còng gmail chấm com số điện thoại là cộng tám tư chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
                 "google-chirp3":
-                    "tên của mình là trần minh email là minh trần a còng gmail chấm com số điện thoại là cộng tám bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+                    "tên của mình là trần minh email là minh chấm trinh a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
                 "openai-gpt4o-mini-transcribe":
-                    "tên của mình là trần minh email là minh trần a còng gmail chấm com số điện thoại là cộng tám bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+                    "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
             },
         },
         {
@@ -502,11 +652,11 @@ export const SAMPLE_UTTERANCES = {
             transcript: "C N 5 8 8 hay là C N 5 8 7?",
             hasAudio: false,
             submissions: {
-                azure: "c n five eight eight hay là c n five eight seven",
+                azure: "c n năm tám tám hay là c n năm tám bảy",
                 "deepgram-nova3": "c n năm trăm tám mươi tám hay là c n năm trăm tám mươi bảy",
-                "elevenlabs-scribe-v2": "c n five eight eight hay là c n five eight seven",
-                "google-chirp3": "c n five eight eight hay là c n five eight seven",
-                "openai-gpt4o-mini-transcribe": "c n five eight five hay là c n five eight seven",
+                "elevenlabs-scribe-v2": "c n năm tám tám hay là c n năm tám bảy",
+                "google-chirp3": "c n năm tám tám hay là c n năm tám bảy",
+                "openai-gpt4o-mini-transcribe": "c n năm tám tám hay là c n năm tám bảy",
             },
         },
         {
@@ -528,12 +678,12 @@ export const SAMPLE_UTTERANCES = {
             transcript: "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
             hasAudio: false,
             submissions: {
-                azure: "khong khong khong phai dung la minh cham tran a cong email cham com",
+                azure: "không không không phải đúng là minh trần a còng email chấm com",
                 "deepgram-nova3": "không không không phải đúng là nguyên chấm chờ á cầu bị nghèo chống cược",
-                "elevenlabs-scribe-v2": "không không phải đúng là minh chấm trần a còng email chấm com",
-                "google-chirp3": "khong khong bay dung la linh cham tran a cong email cham com",
+                "elevenlabs-scribe-v2": "không không không phải đúng là minh chấm tran a còng email chấm com",
+                "google-chirp3": "không không bảy đúng là linh chấm trần a còng email chấm com",
                 "openai-gpt4o-mini-transcribe":
-                    "không không không phải đúng là nguyễn chấm trần đã cộng điện theo trấn cơ",
+                    "không không không phải đúng là thịnh minh chấm trần ở còn điện theo trấn cường",
             },
         },
     ],
@@ -544,11 +694,11 @@ export const SAMPLE_UTTERANCES = {
             transcript: "你还没听到我的正确的姓名，我的姓名是君灵。",
             hasAudio: true,
             submissions: {
-                azure: "你还没听到我的正确的姓名 我的姓名是君灵",
-                "deepgram-nova3": "你 还 没 听 到 我 的 正确 的 姓名 我 的 姓名 是 君灵",
-                "elevenlabs-scribe-v2": "你 还 没 听 到 我 的 正确 的 姓名 我 的 姓名 是 君灵",
-                "google-chirp3": "你 还 没 听 到 我 的 正确 的 姓名 我 的 姓名 是 君灵",
-                "openai-gpt4o-mini-transcribe": "你 还 没 听 到 我 的 正确 的 姓名 我 的 姓名 是 君灵",
+                azure: "你还没听到我的正确的姓名 我的姓名是君林",
+                "deepgram-nova3": "你还没听到我的正确的姓名 我的姓名是 dreamlin",
+                "elevenlabs-scribe-v2": "你还没听到我的正确的姓名 我的姓名是君灵",
+                "google-chirp3": "你还没听到我的正确的姓名 我的姓名是珍琳",
+                "openai-gpt4o-mini-transcribe": "你还没听到我的正确的姓名 我的姓名是 dreamlin",
             },
         },
         {
@@ -557,10 +707,10 @@ export const SAMPLE_UTTERANCES = {
             transcript: "我的邮箱地址是美林 at email dot com。",
             hasAudio: false,
             submissions: {
-                azure: "我的邮箱地址是美玲 at email dot com",
-                "deepgram-nova3": "有相地址是maylin at email dot com",
+                azure: "我的邮箱地址是美林 at email dot com",
+                "deepgram-nova3": "有相地址是 maylin email com",
                 "elevenlabs-scribe-v2": "我的邮箱地址是美林 at email dot com",
-                "google-chirp3": "我的邮箱地址是美林 at email dot com",
+                "google-chirp3": "我的邮箱地址是 美林 at email dot com",
                 "openai-gpt4o-mini-transcribe": "我的邮箱地址是美林 at email dot com",
             },
         },
@@ -570,11 +720,11 @@ export const SAMPLE_UTTERANCES = {
             transcript: "请问，请问，再等一下，是 C N 3 8 9。",
             hasAudio: false,
             submissions: {
-                azure: "请问 请问 再等一下 是 c n three eight nine",
-                "deepgram-nova3": "再等一下 是 c n three eight nine",
-                "elevenlabs-scribe-v2": "请问 请问 再等一下 是 c n three eight nine",
-                "google-chirp3": "请问 请问 再 等 一 下 是 c n three eight nine",
-                "openai-gpt4o-mini-transcribe": "请问 请问 这道你叫是 c n three eight nine",
+                azure: "请问 请问 再等一下 是 c n 三 八 九",
+                "deepgram-nova3": "再等一下 是 c n 三 八 九",
+                "elevenlabs-scribe-v2": "请问 请问 再等一下 是 c n 三 八 九",
+                "google-chirp3": "请问 请问 再等一下 是 c n 三 八 九",
+                "openai-gpt4o-mini-transcribe": "请问 请问 再问一下 是 c n 三 八 四 九",
             },
         },
         {
@@ -584,7 +734,7 @@ export const SAMPLE_UTTERANCES = {
             hasAudio: false,
             submissions: {
                 azure: "she made diane ling at email dot com",
-                "deepgram-nova3": "是美点玲 email dot com",
+                "deepgram-nova3": "是梅点铃 email dot com",
                 "elevenlabs-scribe-v2": "是美点玲 at email dot com",
                 "google-chirp3": "是美点玲 at email dot com",
                 "openai-gpt4o-mini-transcribe": "是美点玲 at email dot com",
@@ -597,58 +747,290 @@ export const SAMPLE_UTTERANCES = {
             hasAudio: false,
             submissions: {
                 azure: "对 但是我的邮箱是君临 at email dot com",
-                "deepgram-nova3": "对但是我的邮箱是君临 at email dot com",
+                "deepgram-nova3": "对但是我的优祥是 dreamlingemaildotcom",
                 "elevenlabs-scribe-v2": "对 但是我的邮箱是君临 at email dot com",
-                "google-chirp3": "对 但是我的邮箱是君临 at email dot com",
-                "openai-gpt4o-mini-transcribe": "对 但是我的邮箱是君临 at email dot com",
+                "google-chirp3": "对 但是我的优势是 零 at email dot com",
+                "openai-gpt4o-mini-transcribe": "对 但是我的邮箱是 dreamling at email dot com",
             },
         },
     ],
 };
 
-/**
- * Read one metric value from a localeResults entry.
- *
- * Back-compat: for the latency metric we prefer the new unified
- * cross-protocol field `completeP95Ms` (and p50) and fall back to the
- * legacy `latencyP95Ms` when a score.json hasn't been re-scored under
- * the new latency schema yet. See scoring/update_leaderboard.py for the
- * symmetric producer side.
- */
-function readMetricValue(result, metricKey) {
-    if (!result) return null;
-    if (metricKey === "latencyP95Ms") {
-        const c = result.completeP95Ms;
-        if (c !== undefined && c !== null) return c;
-    }
-    if (metricKey === "latencyP50Ms") {
-        const c = result.completeP50Ms;
-        if (c !== undefined && c !== null) return c;
-    }
-    const val = result[metricKey];
-    return val !== undefined && val !== null ? val : null;
-}
+// Pairwise significance + per-metric means from
+// scripts/significance_test.py (conversation-level paired bootstrap).
+// Provider order matches significance.json#/providers (best -> worst,
+// per the metric chosen at output-json write time).
+export const SIGNIFICANCE_PROVIDERS = [
+    {
+        id: "google-chirp3",
+        name: "Google",
+    },
+    {
+        id: "elevenlabs-scribe-v2",
+        name: "ElevenLabs",
+    },
+    {
+        id: "azure",
+        name: "Azure",
+    },
+    {
+        id: "openai-gpt4o-mini-transcribe",
+        name: "OpenAI",
+    },
+    {
+        id: "deepgram-nova3",
+        name: "Deepgram",
+    },
+];
+
+export const SIGNIFICANCE = {
+    significantWer: {
+        means: {
+            "google-chirp3": 0.1407,
+            "elevenlabs-scribe-v2": 0.2164,
+            azure: 0.2506,
+            "openai-gpt4o-mini-transcribe": 0.2789,
+            "deepgram-nova3": 0.3384,
+        },
+        pairwise: [
+            [null, 0, 0, 0, 0],
+            [1, null, 0, 0, 0],
+            [1, 0.9999, null, 0.0008, 0],
+            [1, 1, 0.9993, null, 0],
+            [1, 1, 1, 1, null],
+        ],
+        numUtterances: 4270,
+        numConversations: 250,
+        numIterations: 10000,
+        samplingUnit: "conversation",
+    },
+    wer: {
+        means: {
+            "google-chirp3": 0.0761,
+            "elevenlabs-scribe-v2": 0.1102,
+            azure: 0.1142,
+            "openai-gpt4o-mini-transcribe": 0.1261,
+            "deepgram-nova3": 0.1691,
+        },
+        pairwise: [
+            [null, 0, 0, 0, 0],
+            [1, null, 0.1175, 0, 0],
+            [1, 0.88, null, 0.0004, 0],
+            [1, 1, 0.9999, null, 0],
+            [1, 1, 1, 1, null],
+        ],
+        numUtterances: 4240,
+        numConversations: 250,
+        numIterations: 10000,
+        samplingUnit: "conversation",
+    },
+};
+
+// Variance block: tmp/aggregate_variance.py output. Per-provider per-locale
+// {wer:{mean,std}, significantWer:{mean,std}, _n_waves, _wave_n_utterances}.
+export const VARIANCE = {
+    "deepgram-nova3": {
+        "en-US": {
+            wer: {
+                mean: 0.0549,
+                std: 0.0007,
+            },
+            significantWer: {
+                mean: 0.06,
+                std: 0.0017,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 817,
+                b: 817,
+                c: 817,
+                d: 817,
+            },
+        },
+        "zh-CN": {
+            wer: {
+                mean: 0.3055,
+                std: 0.005,
+            },
+            significantWer: {
+                mean: 0.5432,
+                std: 0.0046,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 840,
+                b: 840,
+                c: 840,
+                d: 840,
+            },
+        },
+    },
+    "google-chirp3": {
+        "en-US": {
+            wer: {
+                mean: 0.0549,
+                std: 0.0015,
+            },
+            significantWer: {
+                mean: 0.0554,
+                std: 0.0021,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 817,
+                b: 817,
+                c: 817,
+                d: 817,
+            },
+        },
+        "zh-CN": {
+            wer: {
+                mean: 0.1204,
+                std: 0.0015,
+            },
+            significantWer: {
+                mean: 0.2938,
+                std: 0.0023,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 840,
+                b: 840,
+                c: 840,
+                d: 840,
+            },
+        },
+    },
+    azure: {
+        "en-US": {
+            wer: {
+                mean: 0.0417,
+                std: 0.0003,
+            },
+            significantWer: {
+                mean: 0.0312,
+                std: 0.0016,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 817,
+                b: 817,
+                c: 817,
+                d: 817,
+            },
+        },
+        "zh-CN": {
+            wer: {
+                mean: 0.1754,
+                std: 0.0013,
+            },
+            significantWer: {
+                mean: 0.3851,
+                std: 0.0055,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 840,
+                b: 840,
+                c: 840,
+                d: 840,
+            },
+        },
+    },
+    "elevenlabs-scribe-v2": {
+        "en-US": {
+            wer: {
+                mean: 0.0551,
+                std: 0.0015,
+            },
+            significantWer: {
+                mean: 0.0612,
+                std: 0.0041,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 817,
+                b: 817,
+                c: 817,
+                d: 817,
+            },
+        },
+        "zh-CN": {
+            wer: {
+                mean: 0.1702,
+                std: 0.0037,
+            },
+            significantWer: {
+                mean: 0.3777,
+                std: 0.0082,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 840,
+                b: 840,
+                c: 840,
+                d: 840,
+            },
+        },
+    },
+    "openai-gpt4o-mini-transcribe": {
+        "en-US": {
+            wer: {
+                mean: 0.0487,
+                std: 0.0019,
+            },
+            significantWer: {
+                mean: 0.0655,
+                std: 0.0054,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 817,
+                b: 817,
+                c: 817,
+                d: 817,
+            },
+        },
+        "zh-CN": {
+            wer: {
+                mean: 0.2127,
+                std: 0.0043,
+            },
+            significantWer: {
+                mean: 0.4054,
+                std: 0.0036,
+            },
+            _n_waves: 4,
+            _wave_n_utterances: {
+                a: 840,
+                b: 840,
+                c: 840,
+                d: 840,
+            },
+        },
+    },
+};
 
 /**
  * Get the score for a provider given filters.
- *
- * When locale === "overall":
- *   * Prefer provider.overall[metricKey] (produced by scoring.score's
- *     locale-macro aggregation so WER and UER use the same weighting).
- *   * Fall back to averaging per-locale values for legacy leaderboard.json
- *     files that predate the overall block.
+ * If locale is 'overall', averages across all locales.
  */
 export function getProviderScore(provider, metricKey, locale) {
     if (locale === "overall") {
-        const overallVal = readMetricValue(provider.overall, metricKey);
-        if (overallVal !== null) return overallVal;
-        const scores = LOCALES.map((l) => readMetricValue(provider.localeResults[l.code], metricKey));
+        const scores = LOCALES.map((l) => {
+            const result = provider.localeResults[l.code];
+            return result && result[metricKey] !== undefined && result[metricKey] !== null ? result[metricKey] : null;
+        });
         if (scores.some((s) => s === null)) return null;
         const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
         return Math.round(avg * 100) / 100;
     }
 
-    return readMetricValue(provider.localeResults[locale], metricKey);
+    const result = provider.localeResults[locale];
+    if (result && result[metricKey] !== undefined && result[metricKey] !== null) {
+        return result[metricKey];
+    }
+    return null;
 }
 
 /**

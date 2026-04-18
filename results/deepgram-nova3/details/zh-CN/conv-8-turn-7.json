@@ -2,15 +2,26 @@
   "gold": "我的姓名是君玲。",
   "predicted": "我的行名是君临。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "我的姓名是君玲",
-  "werNormalizedPredicted": "我的姓名是君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我的行名是君临",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "我 的 姓 名 是 君 玲",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 行 名 是 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '行' at position 2",
+      "reason": "'姓' means 'surname' while '行' means 'row' or 'profession'; this substitution changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 6",
+      "reason": "'玲' and '临' are different characters and names; this changes the person's name, which is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
 }

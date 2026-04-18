@@ -2,15 +2,21 @@
   "gold": "Sí, gracias.",
   "predicted": "See, gracias.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
-  "werNormalizedGold": "si gracias",
-  "werNormalizedPredicted": "si gracias",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí gracias",
+  "werNormalizedPredicted": "see gracias",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "si gracias",
-  "sigWerNormalizedPredicted": "si gracias",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "sí gracias",
+  "sigWerNormalizedPredicted": "see gracias",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'see' at position 0",
+      "reason": "'see' is an English word and 'sí' is Spanish for 'yes'; this changes the language and meaning of the word, making the sentence incoherent in context.",
+      "score": 1
+    }
+  ]
 }

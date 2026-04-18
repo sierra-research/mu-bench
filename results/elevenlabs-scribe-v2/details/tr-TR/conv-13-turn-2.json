@@ -7,7 +7,7 @@
   "werRefWords": 13,
   "werNormalizedGold": "pardon ilk söylediğiniz ve ikinci söylediğiniz farklı oldu siz bir daha söyler misiniz",
   "werNormalizedPredicted": "pardon ilk söylediğinizle ikinci söylediğiniz farklı oldu siz bir daha söyler misiniz",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "pardon ilk söylediğiniz ve ikinci söylediğiniz farklı oldu siz bir daha söyler misiniz",
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'söylediğiniz' to 'söylediğinizle' at position 2",
-      "reason": "The word 'söylediğinizle' (with what you said) merges 'söylediğiniz' (what you said) and the conjunction 've' (and), but the overall meaning of the sentence remains the same.",
-      "score": 2
+      "reason": "The word 'söylediğinizle' (with what you said) combines 'söylediğiniz' (what you said) and the conjunction 've' (and) into one word, but the meaning of the sentence remains the same and is still clear.",
+      "score": 3
     },
     {
       "error": "Deletion: 've' at position 3",
-      "reason": "The conjunction 've' (and) is omitted, but its meaning is incorporated into 'söylediğinizle', so the sentence meaning is preserved.",
-      "score": 2
+      "reason": "The conjunction 've' (and) is omitted, but its meaning is incorporated into 'söylediğinizle', so the overall meaning of the sentence is unchanged.",
+      "score": 3
     }
   ]
 }

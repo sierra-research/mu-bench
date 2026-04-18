@@ -2,20 +2,30 @@
   "gold": "Được. Hướng dẫn giùm.",
   "predicted": "Ờm, ok-- ơ, được, được, à, hướng dẫn giùm ạ.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 1,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "được hướng dẫn giùm",
-  "werNormalizedPredicted": "được được hướng dẫn giùm",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "okay được được hướng dẫn giùm ạ",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "được hướng dẫn giùm",
-  "sigWerNormalizedPredicted": "được được hướng dẫn giùm",
+  "sigWerNormalizedPredicted": "okay được được hướng dẫn giùm ạ",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'okay' at position 0",
+      "reason": "'okay' is a polite filler and does not change the meaning of the sentence, just adds politeness or acknowledgment.",
+      "score": 2
+    },
+    {
       "error": "Insertion: 'được' at position 1",
-      "reason": "The extra 'được' is a repetition that does not change the overall meaning of the sentence, as it is a common word and the sentence remains coherent.",
+      "reason": "Repeating 'được' does not change the meaning, but is a minor redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'ạ' at position 4",
+      "reason": "'ạ' is a polite particle in Vietnamese, which does not affect the core meaning of the sentence.",
       "score": 2
     }
   ]

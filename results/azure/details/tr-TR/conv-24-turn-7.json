@@ -5,22 +5,22 @@
   "wer": 0.25,
   "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "haymana rize eighty three zero three doğru mu",
-  "werNormalizedPredicted": "haymana rize eighty zero three mart doğru mu",
-  "significantWer": 0.25,
+  "werNormalizedGold": "haymana rize seksen üç sıfır üç doğru mu",
+  "werNormalizedPredicted": "haymana rize seksen üç mart doğru mu",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "haymana rize eighty three zero three doğru mu",
-  "sigWerNormalizedPredicted": "haymana rize eighty zero three mart doğru mu",
+  "sigWerNormalizedGold": "haymana rize seksen üç sıfır üç doğru mu",
+  "sigWerNormalizedPredicted": "haymana rize seksen üç mart doğru mu",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'three' at position 3",
-      "reason": "Omitting 'three' from the sequence of numbers changes the numeric information, which is likely critical (e.g., a code or phone number).",
+      "error": "Substitution: 'sıfır' to 'mart' at position 4",
+      "reason": "'sıfır üç' is a number (zero three), while 'mart' is the name of a month (March); this changes the meaning of the sequence significantly, especially if these are part of a code or identifier.",
       "score": 1
     },
     {
-      "error": "Insertion: 'mart' at position 6",
-      "reason": "Inserting 'mart' (which means 'March' in Turkish) adds an unrelated word, making the sentence confusing and potentially changing the intended meaning.",
+      "error": "Deletion: 'üç' at position 5",
+      "reason": "Omitting 'üç' (three) from the sequence further alters the intended number or code, making the transcription incorrect and potentially misleading.",
       "score": 1
     }
   ]

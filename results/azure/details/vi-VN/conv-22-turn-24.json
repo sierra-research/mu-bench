@@ -7,7 +7,7 @@
   "werRefWords": 21,
   "werNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
   "werNormalizedPredicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sao kêu luôn không tôi không biết đi in cái đâu",
-  "significantWer": 0.09523809523809523,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
@@ -15,7 +15,7 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'nào' at position 3",
-      "reason": "'nào' adds a minor nuance (like 'any way' or 'somehow') but does not change the overall meaning of the request.",
+      "reason": "'nào' adds a minor nuance (like 'any' or 'which'), but does not change the overall meaning of the request.",
       "score": 2
     },
     {
@@ -25,12 +25,12 @@
     },
     {
       "error": "Substitution: 'kê' to 'kêu' at position 11",
-      "reason": "'kê' (statement/extract) and 'kêu' (to call/cry) are different words; this changes the meaning and makes the sentence confusing.",
+      "reason": "'kê' (statement/extract) and 'kêu' (to call/cry) are different words; this changes the meaning of the object being requested, making the sentence confusing.",
       "score": 1
     },
     {
       "error": "Substitution: 'ở' to 'cái' at position 19",
-      "reason": "Replacing 'ở' (at/where) with 'cái' (classifier for things) makes the phrase 'đi in cái đâu' nonsensical, significantly affecting meaning.",
+      "reason": "'ở đâu' means 'where', while 'cái đâu' is not a valid phrase and makes the sentence unclear, affecting comprehension.",
       "score": 1
     }
   ]

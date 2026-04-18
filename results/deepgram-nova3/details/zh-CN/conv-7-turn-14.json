@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "dreamingatemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
-  "werNormalizedPredicted": "君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreamingatemail dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreamingatemail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamingatemail' at position 0",
+      "reason": "The expected input contains a Chinese name, but the actual transcription is an English phrase that is completely different and unrelated, resulting in a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A part of the name is missing entirely, which is a significant error as it changes the identity being referenced.",
+      "score": 1
+    }
+  ]
 }

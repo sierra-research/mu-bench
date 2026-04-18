@@ -2,15 +2,21 @@
   "gold": "君，君，君灵，at email dot com。",
   "predicted": "Dream Dream Dream Ling at email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
-  "werNormalizedGold": "jun jun jun ling at email dot com",
-  "werNormalizedPredicted": "jun jun jun ling at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "君 君 君灵 at email dot com",
+  "werNormalizedPredicted": "dream dream dream ling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "jun jun jun ling at email dot com",
-  "sigWerNormalizedPredicted": "jun jun jun ling at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "君 君 君 灵 at email dot com",
+  "sigWerNormalizedPredicted": "dream dream dream ling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dream' at position 0",
+      "reason": "'君' is a Chinese character and 'dream' is an English word with a completely different meaning. The substitution changes the meaning entirely and makes the email address incorrect and unrecognizable.",
+      "score": 1
+    }
+  ]
 }

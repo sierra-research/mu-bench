@@ -1,21 +1,26 @@
 {
   "gold": "是你的问题，好好。",
-  "predicted": "心裡的問題好好。",
+  "predicted": "這是一個問題,好好。",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 2,
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
   "werRefWords": 7,
-  "werNormalizedGold": "是你的問題好好",
-  "werNormalizedPredicted": "心裡的問題好好",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "是你的问题 好好",
+  "werNormalizedPredicted": "這是一個問題 好好",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "是 你 的 問 題 好 好",
-  "sigWerNormalizedPredicted": "心 裡 的 問 題 好 好",
+  "sigWerNormalizedGold": "是 你 的 问 题 好 好",
+  "sigWerNormalizedPredicted": "這 是 一 個 問 題 好 好",
   "sigWerErrors": [
     {
-      "error": "Substitution: '是' to '心' at position 0",
-      "reason": "'是' means 'is/are', while '心' means 'heart/mind'. This substitution changes the subject and meaning of the sentence, making it significantly different and potentially incoherent in context.",
+      "error": "Insertion: '這' at position 0",
+      "reason": "'這' (this) is added at the beginning, which changes the subject and context of the sentence, making it significantly different in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '你' to '一' at position 1",
+      "reason": "'你' (you) is replaced by '一' (one), which changes the subject of the sentence and alters the meaning significantly.",
       "score": 1
     }
   ]

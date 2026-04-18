@@ -1,27 +1,27 @@
 {
   "gold": "Rồi. Xin cảm ơn.",
-  "predicted": "多謝你,先咁樣",
+  "predicted": "多謝,唔使,感恩",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "rồi xin cảm ơn",
-  "werNormalizedPredicted": "多謝你先咁樣",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "多謝 唔使 感恩",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "rồi xin cảm ơn",
-  "sigWerNormalizedPredicted": "多謝你先咁樣",
+  "sigWerNormalizedPredicted": "多謝 唔使 感恩",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'rồi' to '多謝你先咁樣' at position 0",
-      "reason": "The actual transcription is in a completely different language (Chinese) than the expected (Vietnamese), making the content entirely different and unrecognizable. This is a significant error.",
+      "error": "Substitution: 'rồi' to '多謝' at position 0",
+      "reason": "The actual transcription is in a completely different language (Chinese) instead of the expected Vietnamese, which makes the sentence incoherent for the intended audience.",
       "score": 1
     },
     {
-      "error": "Deletion: 'xin' at position 1",
-      "reason": "infra_error",
-      "score": 2
+      "error": "Deletion: 'ơn' at position 3",
+      "reason": "'恩' is the Chinese character for 'ơn', but the transcription is in the wrong language, which is a significant error for the intended context.",
+      "score": 1
     }
   ]
 }

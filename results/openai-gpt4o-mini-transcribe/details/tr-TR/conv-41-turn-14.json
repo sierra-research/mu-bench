@@ -7,7 +7,7 @@
   "werRefWords": 16,
   "werNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
   "werNormalizedPredicted": "hayır itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
-  "significantWer": 0.1875,
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'itiraz' at position 1",
-      "reason": "'anna' is a proper noun (likely a name), while 'itiraz' means 'objection' in Turkish. This substitution changes the subject and meaning of the sentence significantly.",
+      "reason": "'anna' is a proper noun (likely a name), while 'itiraz' means 'objection' in Turkish. This changes the subject and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'iptal' at position 2",
-      "reason": "'iptal' means 'cancel' in Turkish. Its omission removes the action of canceling, which is important to the intended meaning.",
+      "reason": "'iptal' means 'cancel' in Turkish. Its omission removes the action of canceling, which is important to the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'için' to 'istediğim' at position 4",
-      "reason": "'için' means 'for', while 'istediğim' means 'that I want'. This changes the structure and meaning of the sentence, making it less coherent with the original intent.",
+      "reason": "'için' means 'for', while 'istediğim' means 'that I want'. This changes the structure and meaning of the sentence, making it about something the speaker wants to object to, rather than canceling for a reason.",
       "score": 1
     }
   ]

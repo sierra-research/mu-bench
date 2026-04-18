@@ -1,16 +1,27 @@
 {
   "gold": "Không phải. Là cộng 84.",
-  "predicted": "Không phải, phải là cộng tám mươi bốn.",
+  "predicted": "Không phải, phải là cộng tám mười bốn",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "không phải là cộng tám mươi bốn",
-  "werNormalizedPredicted": "không phải là cộng tám mươi bốn",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "không phải phải là cộng tám mười bốn",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "không phải là cộng tám mươi bốn",
-  "sigWerNormalizedPredicted": "không phải là cộng tám mươi bốn",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "không phải phải là cộng tám mười bốn",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'phải' at position 2",
+      "reason": "The extra 'phải' is a repetition but does not significantly change the meaning of the sentence, as it is a minor redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'mươi' to 'mười' at position 5",
+      "reason": "'mươi' (meaning 'tens') and 'mười' (meaning 'ten') are different numbers, so this changes the number being referred to, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

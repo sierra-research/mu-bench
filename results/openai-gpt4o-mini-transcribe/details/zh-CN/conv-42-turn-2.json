@@ -2,20 +2,25 @@
   "gold": "想提高我的信用卡额度。",
   "predicted": "向提高我的信用卡恶毒。",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "想 提高 我 的 信用卡 额度",
-  "werNormalizedPredicted": "想 提高 我 的 信用卡 恶毒",
-  "significantWer": 0.1,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "想提高我的信用卡额度",
+  "werNormalizedPredicted": "向提高我的信用卡恶毒",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
-  "sigWerNormalizedPredicted": "想 提 高 我 的 信 用 卡 恶 毒",
+  "sigWerNormalizedPredicted": "向 提 高 我 的 信 用 卡 恶 毒",
   "sigWerErrors": [
     {
+      "error": "Substitution: '想' to '向' at position 0",
+      "reason": "'想' (want to) and '向' (towards/to) are different words and change the intent of the sentence. The meaning of the sentence is significantly altered.",
+      "score": 1
+    },
+    {
       "error": "Substitution: '额' to '恶' at position 8",
-      "reason": "'额' (credit limit) and '恶' (evil) are completely different in meaning, and this substitution makes the sentence incoherent and changes the intended meaning significantly.",
+      "reason": "'额' (credit limit) and '恶' (evil) are completely different in meaning, making the sentence incoherent and changing its meaning significantly.",
       "score": 1
     }
   ]

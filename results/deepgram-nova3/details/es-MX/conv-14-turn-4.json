@@ -2,20 +2,25 @@
   "gold": "Es en el banco. Ah ya. Es María punto López arroba email punto com.",
   "predicted": "Es en el banco. Ah, ya. Es María punto López arroba punto com.",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
-  "werRefWords": 12,
-  "werNormalizedGold": "es en el banco es maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es en el banco es maria punto lopez arroba punto com",
-  "significantWer": 0.08333333333333333,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es en el banco ya es maría punto lópez arroba punto com",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 12,
-  "sigWerNormalizedGold": "es en el banco es maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es en el banco es maria punto lopez arroba punto com",
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es en el banco ya es maría punto lópez arroba punto com",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'email' at position 9",
-      "reason": "Omitting 'email' from the email address makes the address incomplete and unusable, which significantly changes the meaning and function of the sentence.",
+      "error": "Deletion: 'ah' at position 4",
+      "reason": "The interjection 'ah' is a filler and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'email' at position 11",
+      "reason": "Omitting 'email' from the email address makes the address incomplete and unusable, which is a significant error.",
       "score": 1
     }
   ]

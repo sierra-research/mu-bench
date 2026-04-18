@@ -5,9 +5,9 @@
   "wer": 0.4,
   "werEdits": 4,
   "werRefWords": 10,
-  "werNormalizedGold": "我 想 提高 信用卡 的 限额",
-  "werNormalizedPredicted": "我 想 去过 信用卡 的 线路",
-  "significantWer": 0.2,
+  "werNormalizedGold": "我想提高信用卡的限额",
+  "werNormalizedPredicted": "我想去过信用卡的线路",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '提' to '去' at position 2",
-      "reason": "'提' (raise) is replaced by '去' (go), which changes the action and meaning of the sentence significantly.",
+      "reason": "'提' (raise) and '去' (go) are completely different in meaning, changing the intent of the sentence from raising something to going somewhere, which derails the meaning.",
       "score": 1
     },
     {
       "error": "Substitution: '限' to '线' at position 8",
-      "reason": "'限' (limit) is replaced by '线' (line), which changes the key noun in the context of credit cards, making the sentence incoherent.",
+      "reason": "'限' (limit) and '线' (line) are different words with different meanings, changing the object of the sentence and making it incoherent.",
       "score": 1
     }
   ]

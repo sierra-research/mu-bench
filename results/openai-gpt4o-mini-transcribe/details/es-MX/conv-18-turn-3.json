@@ -1,16 +1,27 @@
 {
   "gold": "Es Juan punto López arroba email punto com.",
-  "predicted": "esjuan.lopez@roemail.com",
+  "predicted": "esjuan.lopez@roveemail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "es juan punto lopez arroba email punto com",
-  "werNormalizedPredicted": "es juan punto lopez arroba email punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "es juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es juan punto lopez arroba rove email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "es juan punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "es juan punto lopez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "es juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es juan punto lopez arroba rove email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "The only difference is the omission of the accent on the 'o' in 'lópez'. This does not change the meaning or recognizability of the name in context.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'rove' at position 5",
+      "reason": "The insertion of 'rove' before 'email' adds an unrelated word, which could confuse the email address and make it invalid or misleading.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "那不可以。",
   "predicted": "哪不可以?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 1,
   "werRefWords": 4,
   "werNormalizedGold": "那不可以",
-  "werNormalizedPredicted": "那不可以",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "哪不可以",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "那 不 可 以",
-  "sigWerNormalizedPredicted": "那 不 可 以",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "哪 不 可 以",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to '哪' at position 0",
+      "reason": "'那' (that) and '哪' (which) are different words in Chinese and have different meanings. This substitution changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

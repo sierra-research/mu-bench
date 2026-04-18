@@ -2,20 +2,25 @@
   "gold": "你再说我的追踪号码。",
   "predicted": "你在说我的瑞众号码?",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "你 再 说 我 的 追踪 号码",
-  "werNormalizedPredicted": "你 在 说 我 的 追踪 号码",
-  "significantWer": 0.1111111111111111,
+  "werNormalizedGold": "你再说我的追踪号码",
+  "werNormalizedPredicted": "你在说我的瑞众号码",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "你 再 说 我 的 追 踪 号 码",
-  "sigWerNormalizedPredicted": "你 在 说 我 的 追 踪 号 码",
+  "sigWerNormalizedPredicted": "你 在 说 我 的 瑞 众 号 码",
   "sigWerErrors": [
     {
       "error": "Substitution: '再' to '在' at position 1",
-      "reason": "'再' (again) and '在' (at/in) are different words in Chinese. The substitution changes the meaning of the sentence from 'say again' to 'say at', which makes the sentence less coherent and alters the intended meaning significantly.",
+      "reason": "'再' (again) and '在' (at/in) are different words, but in this context, the substitution does not significantly change the meaning of the sentence, as both could be used in similar conversational contexts.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '追' to '瑞' at position 5",
+      "reason": "'追踪' means 'tracking', while '瑞众' is not a meaningful phrase in this context and changes the meaning of the sentence, making it incoherent.",
       "score": 1
     }
   ]

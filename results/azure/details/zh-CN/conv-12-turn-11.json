@@ -2,15 +2,21 @@
   "gold": "我的姓名是君灵。",
   "predicted": "我的姓名是Jun零。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "我的姓名是君灵",
-  "werNormalizedPredicted": "我的姓名是君灵",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "我的姓名是 jun 零",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "我 的 姓 名 是 君 灵",
-  "sigWerNormalizedPredicted": "我 的 姓 名 是 君 灵",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 jun 零",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'jun' at position 5",
+      "reason": "'君' is a Chinese character, while 'jun' is its pinyin (romanized) form. While the pronunciation is similar, the script and representation are different. In a Chinese context, this could be a minor error if the intent is clear, but if the expected output is in Chinese characters, using pinyin instead can be confusing or inappropriate.",
+      "score": 2
+    }
+  ]
 }

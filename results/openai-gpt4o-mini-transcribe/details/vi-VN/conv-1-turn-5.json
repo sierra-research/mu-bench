@@ -1,26 +1,26 @@
 {
   "gold": "Địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi.",
-  "predicted": "Địa chỉ email chỉ là thu.chamchan2@gmail.com thôi.",
+  "predicted": "địa chỉ email chỉ là thu.cham.tran2@gmail.com thôi.",
   "unintelligible": false,
-  "wer": 0.14285714285714285,
-  "werEdits": 2,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
-  "werNormalizedPredicted": "địa chỉ email chỉ là thu chấm trần hai a còng gmail chấm com thôi",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "địa chỉ email chỉ là thu chấm cham tran hai a còng gmail chấm com thôi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
-  "sigWerNormalizedPredicted": "địa chỉ email chỉ là thu chấm trần hai a còng gmail chấm com thôi",
+  "sigWerNormalizedPredicted": "địa chỉ email chỉ là thu chấm cham tran hai a còng gmail chấm com thôi",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'hai' at position 8",
-      "reason": "'hai' (meaning 'two') is inserted in the email address, which could make the email address incorrect and undeliverable. This is a significant error as it changes the actual email address.",
-      "score": 1
+      "error": "Substitution: 'trần' to 'hai' at position 7",
+      "reason": "The word 'cham' is repeated unnecessarily, but it does not change the meaning of the email address being described.",
+      "score": 2
     },
     {
       "error": "Substitution: 'email' to 'gmail' at position 10",
-      "reason": "Substituting 'email' with 'gmail' changes the domain of the email address, which is a significant error as it results in a completely different email address.",
+      "reason": "Replacing 'trần' with 'hai' changes the username part of the email address, which is a significant error as it results in a completely different email address.",
       "score": 1
     }
   ]

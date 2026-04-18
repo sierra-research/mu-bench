@@ -7,7 +7,7 @@
   "werRefWords": 17,
   "werNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
   "werNormalizedPredicted": "tôi muốn hỏi là sound kê này tôi mới in ra bảng giấy có được không",
-  "significantWer": 0.11764705882352941,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'cái' to 'sound' at position 4",
-      "reason": "'sound' is an English word replacing the Vietnamese word 'cái', which makes the sentence incoherent and disrupts understanding.",
+      "reason": "'sound' is an English word replacing the Vietnamese 'cái', which makes the sentence incoherent and derails the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'sao' at position 5",
-      "reason": "Omitting 'sao' removes the key word for 'sao kê' (statement), which significantly changes the meaning.",
+      "reason": "Omitting 'sao' removes the key noun 'statement', which significantly changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'muốn' to 'mới' at position 9",
-      "reason": "'muốn' (want) and 'mới' (just) have different meanings, but the overall intent of the sentence is still understandable.",
+      "reason": "'muốn' means 'want' and 'mới' means 'just', which changes the intent of the sentence but does not completely derail the meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'bản' to 'bảng' at position 12",
-      "reason": "'bản giấy' (paper copy) and 'bảng giấy' (paper board) are different, but in context, the meaning is still mostly clear.",
+      "reason": "'bản giấy' (paper copy) and 'bảng giấy' (paper board) are different; this substitution changes the meaning but the context is still somewhat understandable.",
       "score": 2
     }
   ]

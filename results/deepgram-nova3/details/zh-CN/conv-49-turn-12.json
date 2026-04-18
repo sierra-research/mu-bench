@@ -2,15 +2,36 @@
   "gold": "你，我的邮箱地址是美玲 at email dot com。",
   "predicted": "你我的有想必是maylingit'imilotcome。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "你 我的邮箱地址是美玲 at email dot com",
-  "werNormalizedPredicted": "你 我的邮箱地址是美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "你 我的邮箱必是 mayling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "你 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "你 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 我 的 邮 箱 必 是 mayling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '地' to '必' at position 5",
+      "reason": "'地' (address/location) is replaced by '必' (must/necessary), which changes the meaning of the phrase and makes the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '址' at position 6",
+      "reason": "Omitting '址' (part of '地址', meaning 'address') removes the key word for 'address', making the sentence incomplete and confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to 'mayling' at position 8",
+      "reason": "'美' (Mei) is replaced by 'mayling', which is a romanized version of the full name '美玲'. Since the next character '玲' is missing, this substitution partially preserves the name but is incomplete.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 9",
+      "reason": "Omitting '玲' (the second character of the name '美玲') results in an incomplete name, which is significant for identification.",
+      "score": 1
+    }
+  ]
 }

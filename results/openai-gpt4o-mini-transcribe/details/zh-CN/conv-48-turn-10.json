@@ -5,22 +5,22 @@
   "wer": 0.5,
   "werEdits": 4,
   "werRefWords": 8,
-  "werNormalizedGold": "你 要 重複 我 的 姓名",
-  "werNormalizedPredicted": "你 要 充富 我 的 心靈",
-  "significantWer": 0.25,
+  "werNormalizedGold": "你要重复我的姓名",
+  "werNormalizedPredicted": "你要充富我的心靈",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "你 要 重 複 我 的 姓 名",
+  "sigWerNormalizedGold": "你 要 重 复 我 的 姓 名",
   "sigWerNormalizedPredicted": "你 要 充 富 我 的 心 靈",
   "sigWerErrors": [
     {
       "error": "Substitution: '重' to '充' at position 2",
-      "reason": "'重' (repeat) and '充' (fill) are completely different in meaning, changing the intent of the sentence.",
+      "reason": "'重' (repeat) and '充' (fill) are completely different words and change the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: '姓' to '心' at position 6",
-      "reason": "'姓' (surname) and '心' (heart) are unrelated, which changes the meaning of the sentence significantly.",
+      "reason": "'姓' (surname) and '心' (heart) are unrelated in meaning, which significantly alters the intended meaning of the sentence.",
       "score": 1
     }
   ]

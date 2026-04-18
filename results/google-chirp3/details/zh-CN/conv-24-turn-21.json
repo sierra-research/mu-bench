@@ -7,7 +7,7 @@
   "werRefWords": 9,
   "werNormalizedGold": "没通过吗 怎么那么慢",
   "werNormalizedPredicted": "还没播吗 怎么那么慢",
-  "significantWer": 0.1111111111111111,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "没 通 过 吗 怎 么 那 么 慢",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Insertion: '还' at position 0",
-      "reason": "The addition of '还' (still) adds a temporal aspect but does not significantly change the overall meaning of the sentence.",
+      "reason": "'还' (still/yet) adds a temporal aspect but does not significantly change the overall meaning of the sentence, which is about something not being done yet.",
       "score": 2
     },
     {
       "error": "Substitution: '通' to '播' at position 1",
-      "reason": "Substituting '通' (pass) with '播' (broadcast) changes the meaning of the sentence, making it about broadcasting instead of passing, which significantly alters the intent.",
+      "reason": "'通' (pass) and '播' (broadcast) are different verbs and change the meaning of the sentence. The original refers to 'not passed', while the actual refers to 'not broadcast', which is a significant change in meaning.",
       "score": 1
     },
     {
       "error": "Deletion: '过' at position 2",
-      "reason": "Omitting '过' (indicating completion) slightly affects the aspect of the verb but does not drastically change the meaning in this context.",
+      "reason": "'过' (past particle) is omitted, which affects the grammatical aspect but does not drastically change the meaning in this context.",
       "score": 2
     }
   ]

@@ -1,32 +1,27 @@
 {
   "gold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "predicted": "Chính xác, chính xác, chính xác, chính xác.",
+  "predicted": "Chính xác chính xác chính xác",
   "unintelligible": false,
-  "wer": 0.625,
-  "werEdits": 5,
-  "werRefWords": 8,
-  "werNormalizedGold": "a chinh xac chinh xac kiem tra giup",
-  "werNormalizedPredicted": "chinh xac chinh xac chinh xac chinh xac",
-  "significantWer": 0.25,
-  "majorErrorsCount": 2,
-  "totalWordsCount": 8,
-  "sigWerNormalizedGold": "a chinh xac chinh xac kiem tra giup",
-  "sigWerNormalizedPredicted": "chinh xac chinh xac chinh xac chinh xac",
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "chính xác chính xác kiểm tra giùm",
+  "werNormalizedPredicted": "chính xác chính xác chính xác",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "chính xác chính xác kiểm tra giùm",
+  "sigWerNormalizedPredicted": "chính xác chính xác chính xác",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'a' to 'xac' at position 0",
-      "reason": "The initial word 'a' is missing, which may affect the meaning or intent of the sentence.",
+      "error": "Substitution: 'kiểm' to 'chính' at position 4",
+      "reason": "'kiểm tra giùm' means 'please check', while 'chính xác' means 'correct'. Substituting 'kiểm' with 'chính' changes the intent from asking for a check to simply repeating 'correct', which alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'giùm' at position 6",
+      "reason": "'giùm' means 'please' or is a polite particle in Vietnamese. Its omission removes the politeness/request aspect, but the main intent is already lost due to the previous error. This further reduces the clarity of the request.",
       "score": 2
-    },
-    {
-      "error": "Substitution: 'kiem' to 'chinh' at position 5",
-      "reason": "'kiem' (check) is replaced by 'chinh' (correct), which changes the action being requested and alters the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'giup' at position 7",
-      "reason": "'tra' (check) is replaced by 'xac' (correct), further changing the intended action and making the sentence incoherent.",
-      "score": 1
     }
   ]
 }

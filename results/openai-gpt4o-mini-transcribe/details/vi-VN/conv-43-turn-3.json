@@ -1,26 +1,26 @@
 {
   "gold": "Tôi mới nói là C N 7 5 9 mà.",
-  "predicted": "Tớ mới nói là CN7500 mà",
+  "predicted": "tớ mới nói là CN75 chiếc mà",
   "unintelligible": false,
-  "wer": 0.3,
-  "werEdits": 3,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
-  "werNormalizedPredicted": "tớ mới nói là c n bảy năm không không mà",
-  "significantWer": 0.1,
+  "werNormalizedPredicted": "tớ mới nói là c n bảy năm chiếc mà",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
-  "sigWerNormalizedPredicted": "tớ mới nói là c n bảy năm không không mà",
+  "sigWerNormalizedPredicted": "tớ mới nói là c n bảy năm chiếc mà",
   "sigWerErrors": [
     {
       "error": "Substitution: 'tôi' to 'tớ' at position 0",
-      "reason": "'tôi' and 'tớ' are both first-person pronouns in Vietnamese, with 'tớ' being more informal. The meaning of the sentence is unchanged.",
+      "reason": "'tôi' and 'tớ' are both first-person pronouns in Vietnamese, with 'tôi' being more formal and 'tớ' more informal. The meaning of the sentence remains the same.",
       "score": 3
     },
     {
-      "error": "Substitution: 'chín' to 'không' at position 8",
-      "reason": "Substituting 'chín' (nine) with 'không' (zero) changes the number being referenced, which can significantly alter the meaning, especially if it is a year or code.",
+      "error": "Substitution: 'chín' to 'chiếc' at position 8",
+      "reason": "'chín' means 'nine' (a number), while 'chiếc' is a classifier for objects. This substitution changes the meaning of the sentence significantly, as it replaces a number with an unrelated word.",
       "score": 1
     }
   ]

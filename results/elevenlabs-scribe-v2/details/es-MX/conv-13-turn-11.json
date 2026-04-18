@@ -2,20 +2,25 @@
   "gold": "A ver, permíteme un momento, déjame abrir la aplicación en mi teléfono, ¿OK?",
   "predicted": "A ver, permíteme un momento. Déjame abrirla en la aplicación en mi teléfono, ¿okey?",
   "unintelligible": false,
-  "wer": 0.15384615384615385,
-  "werEdits": 2,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
-  "werNormalizedGold": "a ver permiteme un momento dejame abrir la aplicacion en mi telefono okay",
-  "werNormalizedPredicted": "a ver permiteme un momento dejame abrirla en la aplicacion en mi telefono okay",
-  "significantWer": 0.0,
+  "werNormalizedGold": "a ver permíteme un momento déjame abrir la aplicación en mi teléfono okay",
+  "werNormalizedPredicted": "a ver permíteme un momento déjame abrirla en la aplicación en mi teléfono okey",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
-  "sigWerNormalizedGold": "a ver permiteme un momento dejame abrir la aplicacion en mi telefono okay",
-  "sigWerNormalizedPredicted": "a ver permiteme un momento dejame abrirla en la aplicacion en mi telefono okay",
+  "sigWerNormalizedGold": "a ver permíteme un momento déjame abrir la aplicación en mi teléfono okay",
+  "sigWerNormalizedPredicted": "a ver permíteme un momento déjame abrirla en la aplicación en mi teléfono okey",
   "sigWerErrors": [
     {
       "error": "Substitution: 'abrir' to 'en' at position 6",
-      "reason": "'abrirla' (open it) is inserted before 'en la aplicacion', but the intended meaning is to open the application. The insertion is redundant but does not change the overall meaning of the sentence.",
+      "reason": "'abrirla' (open it) is inserted before 'en la aplicación', but the meaning is only slightly changed since the intent to open the app is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'okay' to 'okey' at position 12",
+      "reason": "This is not a direct substitution; rather, 'abrir' is replaced by 'abrirla en la', which is a rephrasing. The meaning is preserved, so this is a minor error.",
       "score": 2
     }
   ]

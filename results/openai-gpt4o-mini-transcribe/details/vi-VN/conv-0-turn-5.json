@@ -1,16 +1,27 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com.",
-  "predicted": "Email là minh.trần@ecomemail.com",
+  "predicted": "Email là minh.cham@e-mail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 3,
-  "werNormalizedGold": "email là minh.trần@ecomemail.com",
-  "werNormalizedPredicted": "email là minh.trần@ecomemail.com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 3,
-  "sigWerNormalizedGold": "email là minh.trần@ecomemail.com",
-  "sigWerNormalizedPredicted": "email là minh.trần@ecomemail.com",
-  "sigWerErrors": []
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là minh chấm cham a còng e chấm mail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là minh chấm cham a còng e chấm mail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'cham' at position 4",
+      "reason": "'trần' is a Vietnamese surname, while 'cham' is a different word/name; this changes the email address and could cause delivery failure.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 7",
+      "reason": "Adding 'e' before 'mail' changes the structure of the email address, making it invalid or referring to a different address.",
+      "score": 1
+    }
+  ]
 }

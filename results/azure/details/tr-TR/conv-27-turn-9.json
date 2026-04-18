@@ -2,15 +2,26 @@
   "gold": "Hayır, hayır. Zaynep nokta Arslan.",
   "predicted": "Hayır, hayır, Zeynep. Arslan.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 4,
-  "werNormalizedGold": "hayır hayır zeynep arslan",
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "hayır hayır zaynep nokta arslan",
   "werNormalizedPredicted": "hayır hayır zeynep arslan",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "hayır hayır zeynep arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "hayır hayır zaynep nokta arslan",
   "sigWerNormalizedPredicted": "hayır hayır zeynep arslan",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 2",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 3",
+      "reason": "'Nokta' means 'dot' and is likely indicating a separator (such as in an email address or username); omitting it could cause confusion or incorrect information, especially in contexts where the dot is important.",
+      "score": 1
+    }
+  ]
 }

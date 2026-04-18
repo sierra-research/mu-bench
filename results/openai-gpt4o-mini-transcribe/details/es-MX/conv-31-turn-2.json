@@ -1,16 +1,27 @@
 {
   "gold": "C N 2 7 7.",
-  "predicted": "CNN277",
+  "predicted": "Cienedo siete siete.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "c n n two seven seven",
-  "werNormalizedPredicted": "c n n two seven seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n n two seven seven",
-  "sigWerNormalizedPredicted": "c n n two seven seven",
-  "sigWerErrors": []
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n dos siete siete",
+  "werNormalizedPredicted": "cienedo siete siete",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n dos siete siete",
+  "sigWerNormalizedPredicted": "cienedo siete siete",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'cienedo' at position 0",
+      "reason": "'cienedo' is not a valid substitution for 'c'; it appears to be a misrecognition or merging of several expected characters, which significantly alters the intended sequence, especially since this is likely a spelled-out code or identifier.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from a spelled-out sequence changes the code or identifier, which is a significant error in this context.",
+      "score": 1
+    }
+  ]
 }

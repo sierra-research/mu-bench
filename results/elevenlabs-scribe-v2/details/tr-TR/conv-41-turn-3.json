@@ -1,31 +1,31 @@
 {
   "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
-  "predicted": "Öncelikle bana bir... Doğru, kritik hatli bir tartış yapmak, yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaramı?",
+  "predicted": "Öncelikle bana bir... Doğru, kritik hatli bir tartış yapmak-- yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaramı?",
   "unintelligible": false,
   "wer": 0.3888888888888889,
   "werEdits": 7,
   "werRefWords": 18,
   "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
   "werNormalizedPredicted": "öncelikle bana bir doğru kritik hatli bir tartış yapmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaramı",
-  "significantWer": 0.05555555555555555,
-  "majorErrorsCount": 1,
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 18,
   "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
   "sigWerNormalizedPredicted": "öncelikle bana bir doğru kritik hatli bir tartış yapmak yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaramı",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kredi' to 'kritik' at position 3",
-      "reason": "'doğru' (meaning 'correct' or 'right') is inserted and does not fit the context of the expected phrase, but does not significantly derail the overall meaning.",
-      "score": 2
+      "reason": "The word 'doğru' (meaning 'correct' or 'right') is inserted, which does not fit the context of requesting a credit card limit increase and makes the sentence less coherent.",
+      "score": 1
     },
     {
       "error": "Insertion: 'yapmak' at position 8",
-      "reason": "'kredi' (credit) is replaced with 'kritik' (critical), which changes the meaning of the sentence significantly, as the topic shifts from a credit card to something unrelated.",
+      "reason": "'kredi' (credit) is replaced with 'kritik' (critical), which changes the meaning of the sentence significantly and makes it incoherent in the context of a credit card request.",
       "score": 1
     },
     {
       "error": "Substitution: 'numaranı' to 'numaramı' at position 17",
-      "reason": "The extra 'yapmak' (to do/make) is a repetition and does not change the overall meaning, but is a minor error.",
+      "reason": "The word 'yapmak' (to do/make) is repeated unnecessarily, which does not change the overall meaning but is a minor grammatical error.",
       "score": 2
     }
   ]

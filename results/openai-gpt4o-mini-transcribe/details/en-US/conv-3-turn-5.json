@@ -2,25 +2,30 @@
   "gold": "Ashley, that's A S H L E Y, dot Brown B R O W N at email E M A I L dot com.",
   "predicted": "ashley.brown@email.com",
   "unintelligible": false,
-  "wer": 0.65,
-  "werEdits": 13,
-  "werRefWords": 20,
-  "werNormalizedGold": "ashley that is a s h l e y dot brown b r o w n at email dot com",
-  "werNormalizedPredicted": "ashley dot brown at email dot com",
-  "significantWer": 0.05,
-  "majorErrorsCount": 1,
-  "totalWordsCount": 20,
-  "sigWerNormalizedGold": "ashley that is a s h l e y dot brown b r o w n at email dot com",
-  "sigWerNormalizedPredicted": "ashley dot brown at email dot com",
+  "wer": 0.76,
+  "werEdits": 19,
+  "werRefWords": 25,
+  "werNormalizedGold": "ashley that is a s h l e y dot brown b r o w n at email e m a i l dot com",
+  "werNormalizedPredicted": "ashley brown at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "ashley that is a s h l e y dot brown b r o w n at email e m a i l dot com",
+  "sigWerNormalizedPredicted": "ashley brown at email dot com",
   "sigWerErrors": [
     {
       "error": "Deletion: 'that' at position 1",
-      "reason": "The phrase 'that is' introduces the spelling of the name, but its omission does not change the meaning of the sentence, as the rest of the information is still clear.",
-      "score": 2
+      "reason": "The phrase 'that is a s h l e y dot brown b r o w n' provides a spelling clarification for the name and email, which is important for accuracy in contact information. Omitting this clarification could lead to errors in understanding or writing the email address, making this a significant error.",
+      "score": 1
     },
     {
       "error": "Deletion: 'b' at position 11",
-      "reason": "Omission of the spelled-out letters for 'brown' removes the explicit spelling, which is important for clarity, especially for names. This is a significant error.",
+      "reason": "The deletion of the spelled-out letters 'b r o w n' removes the explicit spelling of the last name, which is important for ensuring the correct spelling of a proper noun in an email address. This could result in the email being miswritten, so it is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'e' at position 18",
+      "reason": "The deletion of the spelled-out letters 'e m a i l' removes the explicit spelling of the word 'email' in the address, which could lead to confusion or errors in transcription. This is significant for accuracy, so it is a significant error.",
       "score": 1
     }
   ]

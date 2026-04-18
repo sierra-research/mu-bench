@@ -2,15 +2,21 @@
   "gold": "没有，没有，是君玲。",
   "predicted": "没有没有,是追宁。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "没有 没有 是君玲",
-  "werNormalizedPredicted": "没有 没有 是君玲",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "没有没有是君玲",
+  "werNormalizedPredicted": "没有没有是追宁",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "没 有 没 有 是 君 玲",
-  "sigWerNormalizedPredicted": "没 有 没 有 是 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "没 有 没 有 是 追 宁",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '追' at position 5",
+      "reason": "'君玲' and '追宁' are both likely proper names in Chinese. Substituting one name for another changes the referent entirely, which is a significant error as it refers to a different person.",
+      "score": 1
+    }
+  ]
 }

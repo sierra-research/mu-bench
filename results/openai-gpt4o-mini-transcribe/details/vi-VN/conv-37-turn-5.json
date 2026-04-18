@@ -1,16 +1,27 @@
 {
   "gold": "Email là thu chấm trần a còng Gmail chấm com.",
-  "predicted": "Email là thu.chamchn@gmail.com",
+  "predicted": "Email là tu.chamchan@gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "email là thu chấm trần a còng gmail chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là tu chấm chan a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "email là thu chấm trần a còng gmail chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là tu chấm chan a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thu' to 'tu' at position 2",
+      "reason": "'thu' and 'tu' are different names or words, which changes the email address and could result in sending to the wrong person.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'chan' at position 4",
+      "reason": "'trần' and 'chan' are different names or words, which changes the email address and could result in sending to the wrong person.",
+      "score": 1
+    }
+  ]
 }

@@ -1,16 +1,22 @@
 {
   "gold": "Es 5 5 1 2 3 4 5 6 7 8.",
-  "predicted": "Es cinco cinco, un, dos, tres, cuatro, cinco, seis, siete, ocho.",
+  "predicted": "Es 555-1234-5678.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
   "werRefWords": 11,
   "werNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "es cinco cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "es cinco cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'cinco' at position 3",
+      "reason": "The extra 'cinco' does not change the overall meaning, as it is just a repeated digit in a sequence, likely a phone or ID number. However, for numbers, an extra digit can be significant in some contexts, but here it is a minor error since the sequence is still understandable.",
+      "score": 2
+    }
+  ]
 }

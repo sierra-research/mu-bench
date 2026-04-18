@@ -2,20 +2,25 @@
   "gold": "美，你说得不对，是美玲，美玲。",
   "predicted": "魅女兽的部队是魅灵魅灵。",
   "unintelligible": false,
-  "wer": 0.5454545454545454,
-  "werEdits": 6,
+  "wer": 0.9090909090909091,
+  "werEdits": 10,
   "werRefWords": 11,
-  "werNormalizedGold": "美 你 说 得 不 对 是 美玲 美玲",
-  "werNormalizedPredicted": "魅 女 兽 的 部队 是 美玲 美玲",
-  "significantWer": 0.09090909090909091,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "美 你说得不对 是美玲 美玲",
+  "werNormalizedPredicted": "魅 女 兽 的 部队 是 魅 灵 魅 灵",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "美 你 说 得 不 对 是 美 玲 美 玲",
-  "sigWerNormalizedPredicted": "魅 女 兽 的 部 队 是 美 玲 美 玲",
+  "sigWerNormalizedPredicted": "魅 女 兽 的 部 队 是 魅 灵 魅 灵",
   "sigWerErrors": [
     {
       "error": "Substitution: '美' to '魅' at position 0",
-      "reason": "'美' (beautiful) and '魅' (charm/demon) are different words with different meanings, which can change the meaning of the sentence significantly.",
+      "reason": "'美' (beautiful) and '魅' (charm/demon) are different words with different meanings, which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to '魅' at position 7",
+      "reason": "'美' (beautiful) and '魅' (charm/demon) are different words with different meanings, which changes the meaning of the sentence significantly.",
       "score": 1
     }
   ]

@@ -2,25 +2,25 @@
   "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
   "predicted": "Anladım merhabalar, şimdi şöyle, ben kredi kartıma dair ekstrem'in bir kopyasını istiyorum ya da ekstrem'in bir dökümünü istiyorum daha doğrusu.",
   "unintelligible": false,
-  "wer": 0.09523809523809523,
+  "wer": 0.1,
   "werEdits": 2,
-  "werRefWords": 21,
-  "werNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
-  "werNormalizedPredicted": "anladım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
-  "significantWer": 0.047619047619047616,
+  "werRefWords": 20,
+  "werNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anladım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 21,
-  "sigWerNormalizedGold": "anna hanım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
-  "sigWerNormalizedPredicted": "anladım merhabalar şimdi şöyle ben kredi kartıma dair ekstresinin bir kopyasını istiyorum ya da ekstresinin bir dökümünü istiyorum daha doğrusu",
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anladım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anladım' at position 0",
-      "reason": "'anna' is a name/addressing the person, while 'anladım' means 'I understand'; this changes the meaning and context of the sentence significantly.",
+      "reason": "'anna' is a proper noun (a name), while 'anladım' means 'I understand' in Turkish. This changes the meaning of the sentence significantly, as a greeting to a person is replaced by a statement of understanding.",
       "score": 1
     },
     {
       "error": "Deletion: 'hanım' at position 1",
-      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam'), and its omission reduces the politeness and changes the tone, but the main request remains understandable.",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam') following the name. Its omission removes the polite address, which is a significant change in the context of a formal greeting.",
       "score": 2
     }
   ]

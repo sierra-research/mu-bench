@@ -2,20 +2,30 @@
   "gold": "¿En dónde lo harías, por mail o la app?",
   "predicted": "¿En dónde lo harías? ¿Por mail o por la app?",
   "unintelligible": false,
-  "wer": 0.1111111111111111,
-  "werEdits": 1,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
-  "werNormalizedGold": "en donde lo harias por mail o la app",
+  "werNormalizedGold": "en dónde lo harías por mail o la app",
   "werNormalizedPredicted": "en donde lo harias por mail o por la app",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
-  "sigWerNormalizedGold": "en donde lo harias por mail o la app",
+  "sigWerNormalizedGold": "en dónde lo harías por mail o la app",
   "sigWerNormalizedPredicted": "en donde lo harias por mail o por la app",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'dónde' to 'donde' at position 1",
+      "reason": "Missing accent does not change the meaning in this context; both are understood as 'where'.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'harías' to 'harias' at position 3",
+      "reason": "Missing accent does not change the meaning; both are understood as 'you would do'.",
+      "score": 3
+    },
+    {
       "error": "Insertion: 'por' at position 7",
-      "reason": "The insertion of 'por' before 'la app' is redundant but does not change the meaning of the sentence. Both versions ask whether it would be done by mail or by the app.",
+      "reason": "Adding 'por' before 'la app' is a minor redundancy and does not change the overall meaning.",
       "score": 2
     }
   ]

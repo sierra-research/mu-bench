@@ -7,7 +7,7 @@
   "werRefWords": 32,
   "werNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
   "werNormalizedPredicted": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức về tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gieo",
-  "significantWer": 0.0625,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "chào anna nha mình đang muốn tối ưu chi tiêu cá nhân và tăng hạn mức thẻ tín dụng bạn có thể giúp mình xem là cần chuẩn bị cái gì không",
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'thẻ' to 'về' at position 16",
-      "reason": "'thẻ tín dụng' means 'credit card', while 'về tín dụng' means 'about credit'. The substitution changes the object being referred to, which can confuse the meaning of the sentence.",
+      "reason": "'thẻ tín dụng' means 'credit card', while 'về tín dụng' means 'about credit'. The substitution changes the object being discussed from a credit card to credit in general, which alters the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'gì' to 'gieo' at position 30",
-      "reason": "'gì' means 'what', which is essential for the question. 'gieo' means 'to sow/plant', which makes the sentence incoherent.",
+      "reason": "'gì' means 'what', which is essential for the question. 'gieo' means 'to sow/plant', which makes the sentence incoherent and changes the meaning completely.",
       "score": 1
     },
     {
       "error": "Deletion: 'không' at position 31",
-      "reason": "'không' is a question particle in Vietnamese, indicating a yes/no question. Its absence makes the sentence incomplete and less clear as a question.",
+      "reason": "'không' is a question particle in Vietnamese that turns the sentence into a yes/no question. Its omission makes the sentence incomplete and less clear, but the main intent is still somewhat understandable.",
       "score": 2
     }
   ]

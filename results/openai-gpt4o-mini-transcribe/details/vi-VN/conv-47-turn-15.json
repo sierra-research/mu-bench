@@ -2,15 +2,26 @@
   "gold": "Đúng rồi, nhưng mà không phải là cộng 74 mà là cộng 84!",
   "predicted": "Đúng rồi nhưng mà không phải là cộng bảy mươi tư mà là cộng tám mươi tư",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
   "werRefWords": 17,
-  "werNormalizedGold": "đúng rồi nhưng mà không phải là cộng bảy mươi tư mà là cộng tám mươi tư",
+  "werNormalizedGold": "đúng rồi nhưng mà không phải là cộng bảy mươi bốn mà là cộng tám mươi bốn",
   "werNormalizedPredicted": "đúng rồi nhưng mà không phải là cộng bảy mươi tư mà là cộng tám mươi tư",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 17,
-  "sigWerNormalizedGold": "đúng rồi nhưng mà không phải là cộng bảy mươi tư mà là cộng tám mươi tư",
+  "sigWerNormalizedGold": "đúng rồi nhưng mà không phải là cộng bảy mươi bốn mà là cộng tám mươi bốn",
   "sigWerNormalizedPredicted": "đúng rồi nhưng mà không phải là cộng bảy mươi tư mà là cộng tám mươi tư",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 10",
+      "reason": "'bốn' and 'tư' are both used to mean 'four' in Vietnamese, especially in counting contexts. The substitution does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'bốn' to 'tư' at position 16",
+      "reason": "'bốn' and 'tư' are interchangeable for the number four in Vietnamese, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

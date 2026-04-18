@@ -2,15 +2,26 @@
   "gold": "Tabii, Zaynep nokta Arslan at email nokta com.",
   "predicted": "Tabii, zynet nokta arslan et email nokta com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "tabii zaynep nokta arslan at email nokta com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "tabii zynet nokta arslan et email nokta com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "tabii zaynep nokta arslan at email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tabii zynet nokta arslan et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zynet' at position 1",
+      "reason": "'zaynep' and 'zynet' are both proper nouns (likely names), but the substitution changes the name and could result in a different person or email address. This is a minor error as the context is still an email address, but the name is incorrect.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 4",
+      "reason": "'at' is the English word for '@' in email addresses, while 'et' is a common mishearing or misspelling. The meaning is preserved in context, as it is clear this is an email address, but it is not the correct word.",
+      "score": 2
+    }
+  ]
 }

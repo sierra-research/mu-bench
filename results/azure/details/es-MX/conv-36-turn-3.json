@@ -2,15 +2,26 @@
   "gold": "Sí. C de Casa, N de Nancy, 1 1 7.",
   "predicted": "Sí, C de casa, N de Nancy, 117.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 9,
-  "werNormalizedGold": "si c de casa n de nancy ciento diecisiete",
-  "werNormalizedPredicted": "si c de casa n de nancy ciento diecisiete",
-  "significantWer": 0.0,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "sí c de casa n de nancy uno uno siete",
+  "werNormalizedPredicted": "sí c de casa n de nancy ciento diecisiete",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 9,
-  "sigWerNormalizedGold": "si c de casa n de nancy ciento diecisiete",
-  "sigWerNormalizedPredicted": "si c de casa n de nancy ciento diecisiete",
-  "sigWerErrors": []
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "sí c de casa n de nancy uno uno siete",
+  "sigWerNormalizedPredicted": "sí c de casa n de nancy ciento diecisiete",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'uno' to 'ciento' at position 7",
+      "reason": "The expected sequence 'uno uno siete' (1 1 7) is replaced by 'ciento diecisiete' (117), which is numerically equivalent. The meaning is preserved, only the format changes from digit-by-digit to the full number.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'siete' at position 9",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
 }

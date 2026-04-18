@@ -2,30 +2,30 @@
   "gold": "Ana, este necesito saber, solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus.",
   "predicted": "Ana, hola, este necesito solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el estatus.",
   "unintelligible": false,
-  "wer": 0.10714285714285714,
+  "wer": 0.1111111111111111,
   "werEdits": 3,
-  "werRefWords": 28,
-  "werNormalizedGold": "ana este necesito saber solicite un aumento en mi linea de credito de la tarjeta y queria ver si me podrias ayudar a saber cual es el estatus",
-  "werNormalizedPredicted": "ana hola este necesito solicite un aumento en mi linea de credito de la tarjeta y queria ver si me podias ayudar a saber cual es el estatus",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 28,
-  "sigWerNormalizedGold": "ana este necesito saber solicite un aumento en mi linea de credito de la tarjeta y queria ver si me podrias ayudar a saber cual es el estatus",
-  "sigWerNormalizedPredicted": "ana hola este necesito solicite un aumento en mi linea de credito de la tarjeta y queria ver si me podias ayudar a saber cual es el estatus",
+  "werRefWords": 27,
+  "werNormalizedGold": "ana necesito saber solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus",
+  "werNormalizedPredicted": "ana hola solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el estatus",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "ana necesito saber solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus",
+  "sigWerNormalizedPredicted": "ana hola solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el estatus",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'hola' at position 1",
-      "reason": "'hola' is a greeting inserted after the name, but does not change the meaning of the sentence or derail the intent.",
+      "error": "Substitution: 'necesito' to 'hola' at position 1",
+      "reason": "'necesito' (I need) is replaced by 'hola' (hello), which changes the intent of the sentence and derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'saber' at position 2",
+      "reason": "Omitting 'saber' (to know) removes a key part of the request, but the overall intent is still somewhat understandable.",
       "score": 2
     },
     {
-      "error": "Deletion: 'saber' at position 3",
-      "reason": "Omitting 'saber' (to know) slightly affects the clarity of the request, but the overall intent is still understandable from context.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'podrias' to 'podias' at position 20",
-      "reason": "'Podrias' (could you) vs 'podias' (you could) is a minor grammatical difference in Spanish, but the meaning and intent remain the same in this context.",
+      "error": "Substitution: 'podrías' to 'podías' at position 19",
+      "reason": "'Podrías' (could you) and 'podías' (you could) are very similar in meaning and do not change the intent of the request.",
       "score": 3
     }
   ]

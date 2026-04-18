@@ -2,31 +2,36 @@
   "gold": "Tabii. Atatürk Caddesi No 45 taksim 6, Kazım Karabekir Mahallesi, Üsküdar taksim İstanbul. Posta kodum 34 660 Türkiye.",
   "predicted": "Tabi Atatürk Caddesi no 45 6 Kazım Karabekir, istanbul 34.660 Türkiye.",
   "unintelligible": false,
-  "wer": 0.2727272727272727,
-  "werEdits": 6,
+  "wer": 0.3181818181818182,
+  "werEdits": 7,
   "werRefWords": 22,
-  "werNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "werNormalizedPredicted": "tabii atatürk caddesi no forty five six kazım karabekir istanbul thirty four six hundred sixty türkiye",
-  "significantWer": 0.045454545454545456,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "werNormalizedPredicted": "tabi atatürk caddesi no kırk beş altı kazım karabekir istanbul otuz dört altı yüz altmış türkiye",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 22,
-  "sigWerNormalizedGold": "tabii atatürk caddesi no forty five taksim six kazım karabekir mahallesi üsküdar taksim istanbul posta kodum thirty four six hundred sixty türkiye",
-  "sigWerNormalizedPredicted": "tabii atatürk caddesi no forty five six kazım karabekir istanbul thirty four six hundred sixty türkiye",
+  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş taksim altı kazım karabekir mahallesi üsküdar taksim istanbul posta kodum otuz dört altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "tabi atatürk caddesi no kırk beş altı kazım karabekir istanbul otuz dört altı yüz altmış türkiye",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are minor spelling variants in Turkish, and the meaning is preserved.",
+      "score": 3
+    },
+    {
       "error": "Deletion: 'taksim' at position 6",
-      "reason": "'Taksim' is a major location in Istanbul and its omission removes a key part of the address, making it incomplete and potentially misleading.",
+      "reason": "Omitting 'taksim' removes a location or address detail, which can cause confusion or loss of important information.",
       "score": 1
     },
     {
       "error": "Deletion: 'mahallesi' at position 10",
-      "reason": "'Mahallesi' means 'neighborhood' in Turkish and is an important part of the address structure. Its omission makes the address less precise but does not completely derail the meaning.",
-      "score": 2
+      "reason": "Omitting 'mahallesi' (meaning 'neighborhood') removes a key part of the address, making it incomplete.",
+      "score": 1
     },
     {
       "error": "Deletion: 'posta' at position 14",
-      "reason": "'Posta' (post) is part of 'posta kodum' (postal code). Omitting 'posta' makes the phrase less clear but the meaning can still be inferred from context.",
-      "score": 2
+      "reason": "Omitting 'posta' (meaning 'post' or 'postal') changes the meaning of the phrase and makes the address unclear.",
+      "score": 1
     }
   ]
 }

@@ -1,31 +1,31 @@
 {
   "gold": "Chào Anna. Em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng. Không biết là hiện tại em có đủ điều kiện không nhỉ? Với cả chị giúp em cách nộp hồ sơ hay các giấy tờ cần thiết nhé.",
-  "predicted": "ừm Chào Anna, em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng. Không biết là hiện tại em có đủ điều kiện không nhỉ? Với cả bạn có thể chỉ giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá.",
+  "predicted": "ừm Chào Anna, em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng. Không biết là hiện tại em có đủ điều kiện không nhỉ? Với cả bạn check chỉ giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá.",
   "unintelligible": false,
-  "wer": 0.16666666666666666,
-  "werEdits": 7,
+  "wer": 0.14285714285714285,
+  "werEdits": 6,
   "werRefWords": 42,
   "werNormalizedGold": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả chị giúp em cách nộp hồ sơ hay các giấy tờ cần thiết nhé",
-  "werNormalizedPredicted": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả bạn có thể chỉ giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả bạn check chỉ giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 42,
   "sigWerNormalizedGold": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả chị giúp em cách nộp hồ sơ hay các giấy tờ cần thiết nhé",
-  "sigWerNormalizedPredicted": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả bạn có thể chỉ giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
+  "sigWerNormalizedPredicted": "chào anna em đang muốn hỏi về việc tăng hạn mức thẻ tín dụng không biết là hiện tại em có đủ điều kiện không nhỉ với cả bạn check chỉ giúp em cách nộp hồ sơ hoặc là giấy tờ cần thiết nhá",
   "sigWerErrors": [
     {
       "error": "Substitution: 'chị' to 'chỉ' at position 28",
-      "reason": "'bạn' (you) is inserted where 'chị' (older sister/female) was expected. This changes the form of address but does not derail the meaning of the sentence.",
+      "reason": "'bạn' (you/friend) is inserted before 'check', which is not present in the expected sentence. This adds an unnecessary word but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'hay' to 'hoặc' at position 35",
-      "reason": "'chị' (older sister/female) is replaced by 'chỉ' (to show/guide). In context, 'chỉ giúp' (show/help) is a reasonable phrase, and the meaning is preserved, though the form of address is lost.",
-      "score": 2
+      "reason": "'chị' (older sister, polite address) is replaced with 'chỉ' (to show/point), which changes the meaning of the request from addressing someone politely to asking for instruction. This alters the tone and meaning significantly.",
+      "score": 1
     },
     {
       "error": "Substitution: 'nhé' to 'nhá' at position 41",
-      "reason": "'hay' and 'hoặc' both mean 'or' in Vietnamese, with only a slight difference in usage. The meaning is unchanged.",
+      "reason": "'hay' and 'hoặc' both mean 'or' in Vietnamese, with 'hay' being more conversational and 'hoặc' more formal. The meaning remains the same.",
       "score": 3
     }
   ]

@@ -2,15 +2,26 @@
   "gold": "Merhaba, kart limitimi artırmak istiyorum.",
   "predicted": "Merhaba, kartınizmimi arttırmak istiyorum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
-  "werNormalizedGold": "merhaba kart limitimi artirmak istiyorum",
-  "werNormalizedPredicted": "merhaba kart limitimi artirmak istiyorum",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "merhaba kart limitimi artırmak istiyorum",
+  "werNormalizedPredicted": "merhaba kartınizmimi arttırmak istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
-  "sigWerNormalizedGold": "merhaba kart limitimi artirmak istiyorum",
-  "sigWerNormalizedPredicted": "merhaba kart limitimi artirmak istiyorum",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "merhaba kart limitimi artırmak istiyorum",
+  "sigWerNormalizedPredicted": "merhaba kartınizmimi arttırmak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kart' to 'kartınizmimi' at position 1",
+      "reason": "'kartınizmimi' is a significant distortion of 'kart limitimi', introducing extra syllables and changing the meaning, making the sentence confusing and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'artırmak' at position 3",
+      "reason": "'artırmak' and 'arttırmak' are minor spelling variants in Turkish, both understood as 'to increase', so the meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

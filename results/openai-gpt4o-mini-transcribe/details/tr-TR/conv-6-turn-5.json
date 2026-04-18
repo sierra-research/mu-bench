@@ -1,21 +1,26 @@
 {
   "gold": "Yok, bilgiler doğru.",
-  "predicted": "Bu bir galoro.",
+  "predicted": "Bio biladero.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "yok bilgiler doğru",
-  "werNormalizedPredicted": "bu bir galoro",
-  "significantWer": 0.3333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "bio biladero",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "yok bilgiler doğru",
-  "sigWerNormalizedPredicted": "bu bir galoro",
+  "sigWerNormalizedPredicted": "bio biladero",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'yok' to 'bu' at position 0",
-      "reason": "'yok' means 'none' or 'no' in Turkish, while 'bu' means 'this'. The substitution completely changes the meaning of the sentence.",
+      "error": "Substitution: 'yok' to 'bio' at position 0",
+      "reason": "'yok' means 'none' or 'no' in Turkish, while 'bio' is unrelated and changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'doğru' at position 2",
+      "reason": "'doğru' means 'correct' or 'right' in Turkish; its omission removes a key part of the sentence's meaning.",
       "score": 1
     }
   ]

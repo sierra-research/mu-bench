@@ -5,17 +5,22 @@
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
-  "werNormalizedGold": "nine one",
-  "werNormalizedPredicted": "",
-  "significantWer": 0.5,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "chín một",
+  "werNormalizedPredicted": "đâu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
-  "sigWerNormalizedGold": "nine one",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedGold": "chín một",
+  "sigWerNormalizedPredicted": "đâu",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'nine' at position 0",
-      "reason": "The entire expected transcription is missing, which means the information is not conveyed at all.",
+      "error": "Substitution: 'chín' to 'đâu' at position 0",
+      "reason": "'chín' means 'nine' and 'đâu' means 'where' in Vietnamese; this substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'một' at position 1",
+      "reason": "The word 'một' (meaning 'one') is missing, which further derails the intended meaning of the phrase 'chín một' (likely 'nine one').",
       "score": 1
     }
   ]

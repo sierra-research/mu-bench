@@ -2,15 +2,26 @@
   "gold": "Email là chỉ có minh chấm trần a còng email chấm com.",
   "predicted": "Email là chỉ có minh. Trần@ y mail.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 3,
   "werRefWords": 12,
   "werNormalizedGold": "email là chỉ có minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là chỉ có minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là chỉ có minh trần a còng y mail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "email là chỉ có minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là chỉ có minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là chỉ có minh trần a còng y mail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'chấm' at position 5",
+      "reason": "'chấm' (dot) is missing between 'minh' and 'trần', which is crucial for the correct email format. Its absence makes the email address incorrect and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 9",
+      "reason": "The insertion of 'y' before 'mail' changes the domain from 'email' to 'ymail', which is a different email provider. This alters the intended email address significantly.",
+      "score": 1
+    }
+  ]
 }

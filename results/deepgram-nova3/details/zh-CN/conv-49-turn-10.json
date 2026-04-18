@@ -2,15 +2,36 @@
   "gold": "我知道，我现在说是我的邮箱地址，是美玲 at email dot com。",
   "predicted": "我知道我现在硕士我的右想地址是妹玲atemaildocom。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
   "werRefWords": 21,
-  "werNormalizedGold": "我知道我现在说是我的邮箱地址是美玲 at email dot com",
-  "werNormalizedPredicted": "我知道我现在说是我的邮箱地址是美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "我知道 我现在说是我的邮箱地址 是美玲 at email dot com",
+  "werNormalizedPredicted": "我知道 我现在硕士 我的右想地址是 妹玲 at email do com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "我 知 道 我 现 在 说 是 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "我 知 道 我 现 在 说 是 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 知 道 我 现 在 硕 士 我 的 右 想 地 址 是 妹 玲 at email do com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '说' to '硕' at position 6",
+      "reason": "The word '说' (say) is replaced with '硕' (master's), which changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '右' at position 10",
+      "reason": "'邮' (mail) is replaced with '右' (right), which disrupts the meaning of '邮箱' (mailbox/email) and makes the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to '妹' at position 15",
+      "reason": "'美' (Mei, likely a name) is replaced with '妹' (younger sister), which is a minor error as it could still refer to a name, but changes the intended meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dot' to 'do' at position 19",
+      "reason": "'dot' is replaced with 'do', which makes the email address incorrect and could cause communication failure.",
+      "score": 1
+    }
+  ]
 }

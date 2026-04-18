@@ -7,7 +7,7 @@
   "werRefWords": 15,
   "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
   "werNormalizedPredicted": "bir dakika ahmet ismin de ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'ismimde' to 'de' at position 2",
-      "reason": "The extra 'ahmet' does not change the overall meaning of the sentence, as it is a repetition of a name already present.",
+      "reason": "The word 'ahmet' is inserted early in the sentence, but since 'ahmet' is already mentioned multiple times and the overall meaning is not changed, this is a minor error.",
       "score": 2
     },
     {
       "error": "Deletion: 'de' at position 6",
-      "reason": "'ismimde' (in my name) and 'ismin de' (your name too) are similar but not identical; the meaning is slightly altered but the context is still understandable.",
+      "reason": "'ismimde' (in my name) is split into 'ismin de' (your name too), which slightly changes the nuance but does not derail the meaning of the sentence.",
       "score": 2
     }
   ]

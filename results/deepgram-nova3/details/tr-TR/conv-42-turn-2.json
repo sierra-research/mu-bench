@@ -5,27 +5,27 @@
   "wer": 0.4444444444444444,
   "werEdits": 8,
   "werRefWords": 18,
-  "werNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstremi istiyorum",
-  "werNormalizedPredicted": "ama oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasinda kebap ister istiyorum",
-  "significantWer": 0.05555555555555555,
+  "werNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "werNormalizedPredicted": "ama öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasında kebap ister istiyorum",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstremi istiyorum",
-  "sigWerNormalizedPredicted": "ama oyle degil iki bin yirmi dort tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasinda kebap ister istiyorum",
+  "sigWerNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "sigWerNormalizedPredicted": "ama öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasında kebap ister istiyorum",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'ama' at position 0",
-      "reason": "'anna' is a name or specific word, while 'ama' means 'but' in Turkish; this changes the subject and meaning of the sentence.",
+      "reason": "'anna' is a name or a specific word, while 'ama' means 'but' in Turkish; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'iki' at position 3",
-      "reason": "The insertion of 'iki' (meaning 'two') repeats the year phrase but does not significantly change the overall meaning.",
+      "reason": "The extra 'iki' (meaning 'two') repeats the year phrase but does not significantly change the overall meaning of the request.",
       "score": 2
     },
     {
-      "error": "Substitution: 'arasindaki' to 'arasinda' at position 14",
-      "reason": "'arasindaki' means 'between the', while 'arasinda' means 'between'; this is a minor grammatical difference and does not change the meaning.",
+      "error": "Substitution: 'arasındaki' to 'arasında' at position 14",
+      "reason": "'arasındaki' means 'between' (with a possessive/definite nuance), while 'arasında' means 'among/between'; the meaning is only slightly changed and the intent is clear.",
       "score": 2
     }
   ]

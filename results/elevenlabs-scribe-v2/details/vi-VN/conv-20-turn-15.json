@@ -2,21 +2,31 @@
   "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
   "predicted": "Minh không, không đúng. minh.tran@gmail.com",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "khong dung minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "minh khong khong dung minh cham tran a cong email cham com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh không không đúng minh chấm trần a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "khong dung minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "minh khong khong dung minh cham tran a cong email cham com",
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh không không đúng minh chấm trần a còng gmail chấm com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'minh' at position 0",
-      "reason": "The insertion of 'minh' at the beginning does not change the overall meaning of the sentence, as the rest of the sentence is intact and understandable. It is a minor error.",
+      "reason": "The insertion of 'minh' at the beginning does not change the overall meaning, as it is a name and the rest of the sentence is still understandable.",
       "score": 2
+    },
+    {
+      "error": "Insertion: 'không' at position 1",
+      "reason": "The extra 'không' (meaning 'not') could cause confusion or make the sentence less clear, but the main information is still present.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Substituting 'email' with 'gmail' changes the domain of the email address, which is a significant factual error as it alters the actual email address.",
+      "score": 1
     }
   ]
 }

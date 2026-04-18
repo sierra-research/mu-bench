@@ -2,15 +2,26 @@
   "gold": "Tabii. Z A Y N E P nokta A R S L A N at işareti, E M A İ L nokta C O M.",
   "predicted": "Tabii. Z-A-Y-N-E-T nokta A-R-S-L-A-N et işareti E-M-A-İ-L nokta C-O-M",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08,
+  "werEdits": 2,
   "werRefWords": 25,
-  "werNormalizedGold": "tabii z a y n e p nokta a r s l a n at isareti e m a i l nokta c o m",
-  "werNormalizedPredicted": "tabii z a y n e p nokta a r s l a n at isareti e m a i l nokta c o m",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "tabii z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
+  "werNormalizedPredicted": "tabii z a y n e t nokta a r s l a n et işareti e m a i l nokta c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 25,
-  "sigWerNormalizedGold": "tabii z a y n e p nokta a r s l a n at isareti e m a i l nokta c o m",
-  "sigWerNormalizedPredicted": "tabii z a y n e p nokta a r s l a n at isareti e m a i l nokta c o m",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "tabii z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "tabii z a y n e t nokta a r s l a n et işareti e m a i l nokta c o m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'p' to 't' at position 6",
+      "reason": "This is a single letter substitution in a spelled-out name (z a y n e p vs z a y n e t), which changes the name entirely and would result in a different email address. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 14",
+      "reason": "'at' and 'et' are phonetically similar, but in the context of an email address in Turkish, 'at işareti' means 'at sign' and 'et işareti' is a minor mispronunciation that does not change the meaning. This is a minor error.",
+      "score": 2
+    }
+  ]
 }

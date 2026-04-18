@@ -7,7 +7,7 @@
   "werRefWords": 20,
   "werNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
   "werNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in đang là tôi muốn được hỗ trợ để in cái giấy",
-  "significantWer": 0.1,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'nhưng' at position 3",
-      "reason": "The insertion of 'nhưng' (but) introduces a contrast that was not present in the original sentence, which can change the meaning and coherence of the sentence.",
+      "reason": "The insertion of 'nhưng' (but) introduces a contrast that was not present in the original sentence, potentially confusing the meaning and coherence of the sentence.",
       "score": 1
     },
     {
       "error": "Insertion: 'có' at position 7",
-      "reason": "The addition of 'có' (have) in this context does not significantly change the meaning of the sentence, as it is a minor grammatical difference in Vietnamese and does not derail the overall intent.",
+      "reason": "The insertion of 'có' (have) is a minor grammatical difference and does not significantly change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'nên' to 'đang' at position 9",
-      "reason": "Substituting 'nên' (so/therefore) with 'đang' (currently) changes the logical connection in the sentence, affecting the meaning and flow, making the sentence less coherent.",
+      "reason": "Changing 'nên' (so/therefore) to 'đang' (currently) alters the logical connection in the sentence, affecting the intended meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'ra' to 'cái' at position 18",
-      "reason": "Changing 'ra giấy' (to paper) to 'cái giấy' (the paper) is a minor error, as the intent to print to paper is still clear, though the phrasing is less natural.",
+      "reason": "Substituting 'ra' (out) with 'cái' (the, classifier) changes the meaning from 'print out paper' to 'print the paper', which is a minor difference and does not derail the overall meaning.",
       "score": 2
     }
   ]

@@ -1,16 +1,22 @@
 {
   "gold": "Email là thu chấm trần email chấm com.",
-  "predicted": "Ờ email là thu chấm tran at cộng email chấm com",
+  "predicted": "Ờ email là thu chấm tran at @gmail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "email là thu chấm trần email chấm com",
-  "werNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "email là thu chấm tran at gmail chấm com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "email là thu chấm trần email chấm com",
-  "sigWerNormalizedPredicted": "email là thu chấm trần email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là thu chấm tran at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'at' at position 4",
+      "reason": "'trần' and 'tran' are different; 'trần' is a Vietnamese name with a diacritic, while 'tran' without the diacritic could be a misspelling or a different name. For email addresses, diacritics are usually omitted, so this is a minor error.",
+      "score": 2
+    }
+  ]
 }

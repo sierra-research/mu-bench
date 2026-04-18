@@ -2,26 +2,31 @@
   "gold": "¿Habrá algún correo electrónico al que yo pueda escribir al banco?",
   "predicted": "¿Hablar con un correo electrónico al que yo pueda escribir en el banco?",
   "unintelligible": false,
-  "wer": 0.45454545454545453,
-  "werEdits": 5,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
   "werRefWords": 11,
-  "werNormalizedGold": "habra algun correo electronico al que yo pueda escribir al banco",
+  "werNormalizedGold": "habrá algún correo electrónico al que yo pueda escribir al banco",
   "werNormalizedPredicted": "hablar con un correo electronico al que yo pueda escribir en el banco",
-  "significantWer": 0.18181818181818182,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 11,
-  "sigWerNormalizedGold": "habra algun correo electronico al que yo pueda escribir al banco",
+  "sigWerNormalizedGold": "habrá algún correo electrónico al que yo pueda escribir al banco",
   "sigWerNormalizedPredicted": "hablar con un correo electronico al que yo pueda escribir en el banco",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'habra' to 'con' at position 0",
-      "reason": "'habra' (there will be) and 'hablar' (to speak) are completely different verbs and change the meaning of the sentence significantly.",
+      "error": "Substitution: 'habrá' to 'con' at position 0",
+      "reason": "'habrá' (there will be) and 'hablar' (to speak) are completely different verbs and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'electrónico' to 'electronico' at position 3",
+      "reason": "The insertion of 'con' (with) changes the structure and meaning of the sentence, making it incoherent with the original intent.",
       "score": 1
     },
     {
       "error": "Substitution: 'al' to 'el' at position 9",
-      "reason": "The insertion of 'con' (with) after 'hablar' further changes the meaning, making the sentence about speaking with something instead of asking if there is something.",
-      "score": 1
+      "reason": "The only difference is the missing accent; this does not change the meaning.",
+      "score": 3
     }
   ]
 }

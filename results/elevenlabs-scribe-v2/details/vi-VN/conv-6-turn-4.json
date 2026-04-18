@@ -1,32 +1,22 @@
 {
   "gold": "Vui lòng đọc lại ạ.",
-  "predicted": "À vui lắm đập lại.",
+  "predicted": "À vui lắm đập lại",
   "unintelligible": false,
-  "wer": 0.8,
-  "werEdits": 4,
-  "werRefWords": 5,
-  "werNormalizedGold": "vui lòng đọc lại ạ",
-  "werNormalizedPredicted": "à vui lắm đập lại",
-  "significantWer": 0.2,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "vui lòng đọc lại",
+  "werNormalizedPredicted": "vui lắm đập lại",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "vui lòng đọc lại ạ",
-  "sigWerNormalizedPredicted": "à vui lắm đập lại",
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "vui lòng đọc lại",
+  "sigWerNormalizedPredicted": "vui lắm đập lại",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'à' at position 0",
-      "reason": "'à' is an interjection not present in the expected sentence and changes the tone, but does not significantly alter the main meaning.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'lòng' to 'lắm' at position 1",
-      "reason": "'lòng' (please) and 'lắm' (very) have different meanings; this substitution changes the politeness and intent of the request, making the sentence less coherent and altering the meaning.",
+      "reason": "'lòng' (please) and 'lắm' (very) have different meanings, which changes the intent of the sentence from a polite request to an unrelated phrase, significantly altering the meaning.",
       "score": 1
-    },
-    {
-      "error": "Deletion: 'ạ' at position 4",
-      "reason": "'ạ' is a polite particle in Vietnamese; omitting it reduces politeness but does not change the core meaning of the request.",
-      "score": 2
     }
   ]
 }

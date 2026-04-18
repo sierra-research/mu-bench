@@ -7,7 +7,7 @@
   "werRefWords": 32,
   "werNormalizedGold": "tôi muốn được tư vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi điều kiện để nâng hạn mức nhằm sử dụng thẻ thuận tiện hơn là gì",
   "werNormalizedPredicted": "tôi muốn đầu tư vấn đề về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi là điều kiện để nâng hạn mức nhằm sử dụng thẻ thuận tiện hơn là gì",
-  "significantWer": 0.03125,
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "tôi muốn được tư vấn về việc tăng hạn mức của thẻ tín dụng tôi muốn hỏi điều kiện để nâng hạn mức nhằm sử dụng thẻ thuận tiện hơn là gì",
@@ -15,18 +15,18 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'được' to 'đầu' at position 2",
-      "reason": "'được' (to be allowed/to receive) and 'đầu' (head/start) are completely different in meaning, which makes the sentence confusing and changes the intent.",
+      "reason": "'được' (to be allowed/to get) and 'đầu' (head/start) are completely different in meaning; this substitution makes the sentence confusing and changes the intent.",
       "score": 1
     },
     {
       "error": "Insertion: 'đề' at position 5",
-      "reason": "The insertion of 'đề' (topic/issue) slightly changes the structure but does not significantly alter the overall meaning of the sentence.",
+      "reason": "The insertion of 'đề' (topic/issue) after 'vấn' forms 'vấn đề' (issue), which is a common phrase, but in this context it does not significantly change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: 'là' at position 17",
-      "reason": "The insertion of 'là' (is) is a minor grammatical addition and does not change the meaning of the sentence.",
-      "score": 3
+      "reason": "The insertion of 'là' (is) before 'điều kiện' is a minor grammatical addition and does not change the meaning of the sentence.",
+      "score": 2
     }
   ]
 }

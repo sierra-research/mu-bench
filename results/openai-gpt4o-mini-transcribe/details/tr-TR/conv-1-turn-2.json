@@ -1,21 +1,26 @@
 {
   "gold": "İsmim Ahmet, soyismim Arslan.",
-  "predicted": "Ahmet nokta. İsmim Ahmet, soyismim Aslan.",
+  "predicted": "Ahmet nokta isimim Ahmet, soyismim Aslan.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 1,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "ismim ahmet soyismim arslan",
-  "werNormalizedPredicted": "ahmet ismim ahmet soyismim arslan",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "ahmet isimim ahmet soyismim aslan",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "ismim ahmet soyismim arslan",
-  "sigWerNormalizedPredicted": "ahmet ismim ahmet soyismim arslan",
+  "sigWerNormalizedPredicted": "ahmet isimim ahmet soyismim aslan",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'ahmet' at position 0",
-      "reason": "The insertion of 'ahmet' at the beginning is redundant but does not change the meaning of the sentence, as the rest of the information is correct and coherent.",
+      "error": "Substitution: 'ismim' to 'isimim' at position 0",
+      "reason": "The extra 'ahmet' at the beginning does not change the overall meaning, as it is just a repetition of the name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 3",
+      "reason": "'ismim' and 'isimim' are very similar in Turkish, with 'ismim' being the correct form for 'my name is'. The error is minor and does not derail the meaning.",
       "score": 2
     }
   ]

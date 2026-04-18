@@ -2,15 +2,26 @@
   "gold": "还不对。",
   "predicted": "係不對",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
-  "werNormalizedGold": "還不對",
-  "werNormalizedPredicted": "還不對",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "还不对",
+  "werNormalizedPredicted": "係不對",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
-  "sigWerNormalizedGold": "還 不 對",
-  "sigWerNormalizedPredicted": "還 不 對",
-  "sigWerErrors": []
+  "sigWerNormalizedGold": "还 不 对",
+  "sigWerNormalizedPredicted": "係 不 對",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '还' to '係' at position 0",
+      "reason": "'还' (Mandarin for 'still' or 'yet') is replaced by '係' (Cantonese for 'is' or 'to be'), which changes the meaning and is a different word in a different dialect/language. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '对' to '對' at position 2",
+      "reason": "'对' and '對' are simplified and traditional forms of the same word, meaning 'correct' or 'right'. This is only a script difference, not a semantic one.",
+      "score": 3
+    }
+  ]
 }

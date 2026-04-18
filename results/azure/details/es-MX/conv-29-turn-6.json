@@ -5,23 +5,23 @@
   "wer": 0.5,
   "werEdits": 2,
   "werRefWords": 4,
-  "werNormalizedGold": "si si ese es",
-  "werNormalizedPredicted": "si eso es",
-  "significantWer": 0.25,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "sí sí ese es",
+  "werNormalizedPredicted": "sí eso es",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
-  "sigWerNormalizedGold": "si si ese es",
-  "sigWerNormalizedPredicted": "si eso es",
+  "sigWerNormalizedGold": "sí sí ese es",
+  "sigWerNormalizedPredicted": "sí eso es",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'si' to 'eso' at position 1",
-      "reason": "'si' (yes) and 'eso' (that) are different words, and this changes the meaning of the phrase from affirmation to referencing something, which can confuse the intent of the sentence.",
+      "error": "Substitution: 'sí' to 'eso' at position 1",
+      "reason": "'sí' (yes) and 'eso' (that) are different words; substituting 'sí' for 'eso' changes the meaning of the phrase, making it less clear and potentially confusing.",
       "score": 1
     },
     {
       "error": "Deletion: 'ese' at position 2",
-      "reason": "Omitting 'ese' (that) removes a demonstrative pronoun, which can make the sentence less clear or change its meaning.",
-      "score": 2
+      "reason": "Omitting 'ese' (that) removes a key word from the phrase, which can alter the intended meaning and make the sentence incomplete.",
+      "score": 1
     }
   ]
 }

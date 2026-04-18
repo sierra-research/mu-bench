@@ -2,25 +2,20 @@
   "gold": "Số điện là cộng 84 9 1 1 2 3 4 5 6 7 8.",
   "predicted": "Số điện thoại là +84 91 12 34 56 78.",
   "unintelligible": false,
-  "wer": 0.11764705882352941,
-  "werEdits": 2,
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
   "werRefWords": 17,
   "werNormalizedGold": "số điện là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín một mốt hai ba bốn năm sáu bảy tám",
-  "significantWer": 0.11764705882352941,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "số điện là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín một mốt hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
       "error": "Insertion: 'thoại' at position 2",
-      "reason": "The word 'thoại' (meaning 'phone') is inserted, changing 'số điện' (number electricity) to 'số điện thoại' (phone number). This changes the meaning of the phrase from 'electricity number' to 'phone number', which is a significant change in context.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'một' to 'mốt' at position 9",
-      "reason": "'một' means 'one' and 'mốt' is used for 'one' in the context of numbers like 'twenty one' (hai mươi mốt), but here it is used in a phone number sequence. This could cause confusion in the phone number, making it a significant error for information accuracy.",
+      "reason": "'thoại' is inserted after 'số điện', changing 'số điện' (number) to 'số điện thoại' (phone number). This changes the meaning of the sentence from 'number' to 'phone number', which is a significant difference in context.",
       "score": 1
     }
   ]

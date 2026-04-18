@@ -5,22 +5,27 @@
   "wer": 0.3888888888888889,
   "werEdits": 7,
   "werRefWords": 18,
-  "werNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstresini istiyorum",
-  "werNormalizedPredicted": "anna oyle degil iki bin yirmi dort yili tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki kesime servis istiyorum",
-  "significantWer": 0.05555555555555555,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "werNormalizedPredicted": "ama öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki kesime servis istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 18,
-  "sigWerNormalizedGold": "anna oyle degil tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki hesap ekstresini istiyorum",
-  "sigWerNormalizedPredicted": "anna oyle degil iki bin yirmi dort yili tekrar soyluyorum iki bin yirmi dort yili icin ocak aralik aylari arasindaki kesime servis istiyorum",
+  "sigWerNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "sigWerNormalizedPredicted": "ama öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki kesime servis istiyorum",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'anna' to 'ama' at position 0",
+      "reason": "'anna' is a name, while 'ama' means 'but' in Turkish. This changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
       "error": "Insertion: 'iki' at position 3",
-      "reason": "The phrase 'iki bin yirmi dort yili' is repeated, but this does not change the overall meaning of the sentence. It is a redundant repetition, not a significant error.",
+      "reason": "The extra 'iki' (meaning 'two') repeats the year and does not significantly change the overall meaning, but it is a minor error.",
       "score": 2
     },
     {
       "error": "Substitution: 'hesap' to 'kesime' at position 15",
-      "reason": "'Hesap ekstresi' means 'account statement', while 'kesime servis' does not make sense in this context and changes the meaning of the request. This is a significant error.",
+      "reason": "'hesap' means 'account' and 'kesime' means 'cutting' or 'section', which changes the meaning of the request significantly.",
       "score": 1
     }
   ]

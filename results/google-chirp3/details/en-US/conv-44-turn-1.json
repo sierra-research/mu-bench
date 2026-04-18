@@ -7,7 +7,7 @@
   "werRefWords": 8,
   "werNormalizedGold": "c n eight seven two four four six",
   "werNormalizedPredicted": "d n zero eight seven two four four six",
-  "significantWer": 0.25,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "c n eight seven two four four six",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'd' at position 0",
-      "reason": "This is a substitution of a single letter at the start of a sequence that appears to be a code or identifier. A single letter difference in such contexts is a significant error as it changes the entire code.",
+      "reason": "This is a letter substitution at the start of a sequence, likely a code or identifier. A single letter difference in such contexts is a significant error as it changes the entire code.",
       "score": 1
     },
     {
       "error": "Insertion: 'zero' at position 2",
-      "reason": "The insertion of 'zero' in a sequence of numbers and letters changes the value of the code or identifier, making it a significant error.",
+      "reason": "Inserting 'zero' changes the sequence of numbers/letters, which is critical in identifiers or codes. This alters the intended sequence and is a significant error.",
       "score": 1
     }
   ]

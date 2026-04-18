@@ -2,15 +2,31 @@
   "gold": "Ừ. Email là minh chấm trần a còng email chấm com.",
   "predicted": "Ờ email là mình chấm trầngmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 5,
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là mình chấm trầngmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là mình chấm trầngmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 2",
+      "reason": "'minh' and 'mình' are different words in Vietnamese, but in this context (an email address), the diacritic may not matter for the email to function, so the meaning is mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'trần' to 'trầngmail' at position 4",
+      "reason": "'trầngmail' is a concatenation of 'trần' and 'gmail', which changes the structure of the email address and makes it incoherent as an email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 5",
+      "reason": "Missing 'a' (for 'a còng' meaning '@') in the email address makes the email invalid and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
 }

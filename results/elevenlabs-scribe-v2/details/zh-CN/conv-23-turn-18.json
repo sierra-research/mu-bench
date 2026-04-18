@@ -2,15 +2,26 @@
   "gold": "是妹玲 at email dot com。",
   "predicted": "shumeiling@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "shumeiling at email dot com",
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是妹玲 at email dot com",
   "werNormalizedPredicted": "shumeiling at email dot com",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "shumeiling at email dot com",
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 妹 玲 at email dot com",
   "sigWerNormalizedPredicted": "shumeiling at email dot com",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shumeiling' at position 0",
+      "reason": "The expected transcription contains three separate Chinese characters ('是', '妹', '玲'), but the actual transcription merges them into a single romanized string ('shumeiling'). This changes the representation and could cause confusion, especially if the context requires the original characters. However, the actual transcription is a phonetic rendering of the expected, so the meaning is mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '妹' at position 1",
+      "reason": "The character '妹' is not explicitly present in the actual transcription, but it is phonetically included in 'shumeiling'. Since the actual merges all three characters into one romanized word, the information is not lost but represented differently. This is a minor error as the meaning is still recoverable.",
+      "score": 2
+    }
+  ]
 }

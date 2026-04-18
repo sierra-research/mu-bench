@@ -5,9 +5,9 @@
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
-  "werNormalizedGold": "你 听 不 到 我 哦",
-  "werNormalizedPredicted": "你 听 不 倒 哦",
-  "significantWer": 0.3333333333333333,
+  "werNormalizedGold": "你听不到我哦",
+  "werNormalizedPredicted": "你听不倒哦",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 听 不 到 我 哦",
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '到' to '倒' at position 3",
-      "reason": "'到' (arrive/reach) and '倒' (fall/invert) are different characters with different meanings. In this context, '听不到' means 'cannot hear', while '听不倒' is not a standard phrase and is confusing, making the sentence incoherent.",
+      "reason": "'到' (arrive/reach) and '倒' (fall/invert) are completely different words in Chinese and change the meaning of the sentence, making it incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '我' at position 4",
-      "reason": "Omitting '我' ('me/I') removes the subject of the sentence, making it unclear who cannot be heard, which significantly changes the meaning.",
+      "reason": "Omitting '我' (I/me) removes the subject/object of the sentence, making the meaning incomplete and unclear.",
       "score": 1
     }
   ]

@@ -7,7 +7,7 @@
   "werRefWords": 9,
   "werNormalizedGold": "hello can you give what is seven six two",
   "werNormalizedPredicted": "so can you give me what is the seven six two",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "hello can you give what is seven six two",
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'hello' to 'so' at position 0",
-      "reason": "'hello' is a greeting, while 'so' is a discourse marker; the substitution slightly changes the tone but does not derail the meaning of the request.",
+      "reason": "'hello' is a greeting, while 'so' is a discourse marker; the substitution changes the tone but does not derail the meaning of the request.",
       "score": 2
     },
     {
       "error": "Insertion: 'me' at position 4",
-      "reason": "Adding 'me' clarifies the request but does not change the overall meaning of the sentence.",
-      "score": 3
+      "reason": "Adding 'me' clarifies the recipient of the action but does not change the overall meaning of the request.",
+      "score": 2
     },
     {
       "error": "Insertion: 'the' at position 6",

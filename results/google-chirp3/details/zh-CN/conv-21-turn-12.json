@@ -2,15 +2,21 @@
   "gold": "林美。",
   "predicted": "是零妹。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.5,
+  "werEdits": 3,
   "werRefWords": 2,
   "werNormalizedGold": "林美",
-  "werNormalizedPredicted": "林美",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是 零妹",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "林 美",
-  "sigWerNormalizedPredicted": "林 美",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 零 妹",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '零' at position 0",
+      "reason": "'是' (meaning 'is' in Chinese) is inserted at the beginning, which changes the structure and meaning of the name phrase, making the sentence incoherent as a name.",
+      "score": 1
+    }
+  ]
 }

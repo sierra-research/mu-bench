@@ -2,15 +2,21 @@
   "gold": "At email nokta com değil mi? Email nokta com.",
   "predicted": "@email.com değil mi? Email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1111111111111111,
+  "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "at email nokta com değil mi email nokta com",
-  "werNormalizedPredicted": "at email nokta com değil mi email nokta com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email nokta com değil mi email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "at email nokta com değil mi email nokta com",
-  "sigWerNormalizedPredicted": "at email nokta com değil mi email nokta com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email nokta com değil mi email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'at' at position 0",
+      "reason": "The word 'at' is missing at the beginning, which may affect the meaning if it is part of an email address or instruction. Its absence could make the sentence incomplete or unclear, especially if 'at' is meant to indicate the start of an email address.",
+      "score": 1
+    }
+  ]
 }

@@ -2,15 +2,21 @@
   "gold": "M A R I A punto L O P E Z arroba E M A I L punto com.",
   "predicted": "mario.lopez@email.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.05263157894736842,
+  "werEdits": 1,
   "werRefWords": 19,
   "werNormalizedGold": "m a r i a punto l o p e z arroba e m a i l punto com",
-  "werNormalizedPredicted": "m a r i a punto l o p e z arroba e m a i l punto com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "m a r i o punto l o p e z arroba e m a i l punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "m a r i a punto l o p e z arroba e m a i l punto com",
-  "sigWerNormalizedPredicted": "m a r i a punto l o p e z arroba e m a i l punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "m a r i o punto l o p e z arroba e m a i l punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'o' at position 4",
+      "reason": "This is a single letter error in a spelled-out name (m a r i a vs m a r i o), which changes the name entirely. In spelled-out sequences, a single letter difference is a significant error.",
+      "score": 1
+    }
+  ]
 }

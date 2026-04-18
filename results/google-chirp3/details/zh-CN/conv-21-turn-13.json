@@ -2,15 +2,41 @@
   "gold": "林美 at E M A I L 点 C O M。",
   "predicted": "林美爱1m@l.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5833333333333334,
+  "werEdits": 7,
   "werRefWords": 12,
   "werNormalizedGold": "林美 at e m a i l 点 c o m",
-  "werNormalizedPredicted": "林美 at e m a i l 点 c o m",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "林美爱 一 m at l 点 com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "林 美 at e m a i l 点 c o m",
-  "sigWerNormalizedPredicted": "林 美 at e m a i l 点 c o m",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "林 美 爱 一 m at l 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to '爱' at position 2",
+      "reason": "'at' is part of an email address, but '爱' is a Chinese character meaning 'love', which is unrelated and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'a' to 'at' at position 5",
+      "reason": "'一' is an extra Chinese character ('one') inserted into the email address, making the address incorrect and confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'i' at position 6",
+      "reason": "The letter 'a' is replaced by 'm' in the spelled-out email, which changes the email address and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'com' at position 9",
+      "reason": "The letter 'i' is replaced by 'l' in the email spelling, which alters the email address and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'o' at position 10",
+      "reason": "'c o m' should be spelled out, but 'com' is used as a single word, which is a minor error as the meaning is still clear.",
+      "score": 2
+    }
+  ]
 }

@@ -2,15 +2,26 @@
   "gold": "Email là minh trần at Gmail chấm com.",
   "predicted": "Email là minhtrengmail chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
   "werNormalizedGold": "email là minh trần at gmail chấm com",
-  "werNormalizedPredicted": "email là minh trần at gmail chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "email là minhtrengmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "email là minh trần at gmail chấm com",
-  "sigWerNormalizedPredicted": "email là minh trần at gmail chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "email là minhtrengmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'minhtrengmail' at position 2",
+      "reason": "The actual transcription merged 'minh', 'trần', and 'at gmail' into a single word, losing the separation between the name and the email provider, which makes the email address unclear and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 3",
+      "reason": "The name 'trần' is missing from the actual transcription, which is significant as it changes the identity in the email address.",
+      "score": 1
+    }
+  ]
 }

@@ -5,22 +5,22 @@
   "wer": 0.625,
   "werEdits": 5,
   "werRefWords": 8,
-  "werNormalizedGold": "minh cham tran a cong email cham com",
-  "werNormalizedPredicted": "minh ronggmail cham com",
-  "significantWer": 0.25,
+  "werNormalizedGold": "minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh ronggmail chấm com",
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "minh cham tran a cong email cham com",
-  "sigWerNormalizedPredicted": "minh ronggmail cham com",
+  "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh ronggmail chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'cham' to 'ronggmail' at position 1",
-      "reason": "'cham' is a separator (dot), while 'ronggmail' appears to be a misrecognition of an email username or domain, which changes the meaning and structure of the email address.",
+      "error": "Substitution: 'chấm' to 'ronggmail' at position 1",
+      "reason": "'chấm' (dot) is replaced by 'ronggmail', which is not a valid word in the context of an email address and disrupts the structure of the expected email format, making the address incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'tran' at position 2",
-      "reason": "Omitting 'tran' removes a key part of the email address, making the address incomplete and incorrect.",
+      "error": "Deletion: 'trần' at position 2",
+      "reason": "'trần' is a key part of the expected email address (likely a name or identifier). Its omission significantly alters the meaning and makes the email address incorrect.",
       "score": 1
     }
   ]

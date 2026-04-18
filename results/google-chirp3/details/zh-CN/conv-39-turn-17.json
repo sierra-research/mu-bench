@@ -2,15 +2,31 @@
   "gold": "对，但是我的邮箱是君临 at email dot com。",
   "predicted": "对,但是我的优势是0@email.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "对 但是我的邮箱是君临 at email dot com",
-  "werNormalizedPredicted": "对 但是我的邮箱是君临 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "对 但是我的优势是 零 at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "对 但 是 我 的 邮 箱 是 君 临 at email dot com",
-  "sigWerNormalizedPredicted": "对 但 是 我 的 邮 箱 是 君 临 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "对 但 是 我 的 优 势 是 零 at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '优' at position 5",
+      "reason": "'邮' (mail) is replaced by '优' (excellent/advantage), which changes the meaning of the sentence and makes it incoherent in the context of providing an email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to '零' at position 8",
+      "reason": "'君' (a name, part of the email address) is replaced by '零' (zero), which is a significant error as it changes the email address and makes it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '临' at position 9",
+      "reason": "Missing '临' (part of the name in the email address) results in an incorrect email address, which is a significant error.",
+      "score": 1
+    }
+  ]
 }

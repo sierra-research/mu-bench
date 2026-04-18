@@ -2,15 +2,26 @@
   "gold": "是君玲 at email dot com。",
   "predicted": "是 dreamling@email.com 。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "是君玲 at email dot com",
-  "werNormalizedPredicted": "是君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "是 dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "是 君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "是 dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 1",
+      "reason": "'君' is a Chinese character (likely a name), while 'dreamling' is an unrelated English word, completely changing the meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "The character '玲' (likely part of a name) is missing, which significantly alters the intended email address and identity.",
+      "score": 1
+    }
+  ]
 }

@@ -3,24 +3,24 @@
   "predicted": "Sorry, sorry.",
   "unintelligible": false,
   "wer": 1.0,
-  "werEdits": 4,
-  "werRefWords": 4,
-  "werNormalizedGold": "a thoi duoc roi",
+  "werEdits": 3,
+  "werRefWords": 3,
+  "werNormalizedGold": "thôi được rồi",
   "werNormalizedPredicted": "sorry sorry",
-  "significantWer": 0.5,
+  "significantWer": 1,
   "majorErrorsCount": 2,
-  "totalWordsCount": 4,
-  "sigWerNormalizedGold": "a thoi duoc roi",
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "thôi được rồi",
   "sigWerNormalizedPredicted": "sorry sorry",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'a' to 'sorry' at position 0",
-      "reason": "The word 'a' is replaced with 'sorry', which is a completely different word and changes the meaning of the sentence entirely.",
+      "error": "Substitution: 'thôi' to 'sorry' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Vietnamese), which completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'duoc' at position 2",
-      "reason": "The word 'duoc' is missing, which further derails the intended meaning of the sentence.",
+      "error": "Deletion: 'rồi' at position 2",
+      "reason": "A word from the expected sentence is missing in the actual transcription, further contributing to the loss of meaning.",
       "score": 1
     }
   ]

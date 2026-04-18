@@ -2,15 +2,26 @@
   "gold": "C N 2 6 6.",
   "predicted": "Cn hai trăm sáu mươi sáu",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 6,
-  "werNormalizedGold": "c n two hundred sixty six",
-  "werNormalizedPredicted": "c n two hundred sixty six",
-  "significantWer": 0.0,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n hai sáu sáu",
+  "werNormalizedPredicted": "c n hai trăm sáu mươi sáu",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 6,
-  "sigWerNormalizedGold": "c n two hundred sixty six",
-  "sigWerNormalizedPredicted": "c n two hundred sixty six",
-  "sigWerErrors": []
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n hai sáu sáu",
+  "sigWerNormalizedPredicted": "c n hai trăm sáu mươi sáu",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'trăm' at position 3",
+      "reason": "'trăm' means 'hundred', so 'hai trăm sáu mươi sáu' is 266, while 'hai sáu sáu' is 266 as well. The insertion does not change the numeric value, just the way it is spoken (full form vs. digit-by-digit).",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mươi' at position 4",
+      "reason": "'mươi' is part of the full number pronunciation in Vietnamese, but the meaning (266) is preserved. This is a stylistic difference, not a semantic one.",
+      "score": 3
+    }
+  ]
 }

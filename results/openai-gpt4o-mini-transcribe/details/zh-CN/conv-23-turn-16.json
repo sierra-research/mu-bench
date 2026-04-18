@@ -1,16 +1,27 @@
 {
   "gold": "你听到吗？",
-  "predicted": "Neitin daoma?",
+  "predicted": "Ne için dalma?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
-  "werNormalizedGold": "你 听 到 吗",
-  "werNormalizedPredicted": "你 听 到 吗",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "你听到吗",
+  "werNormalizedPredicted": "ne için dalma",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "你 听 到 吗",
-  "sigWerNormalizedPredicted": "你 听 到 吗",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "ne için dalma",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'ne' at position 0",
+      "reason": "The actual transcription is in a completely different language (Turkish) instead of Chinese, which makes the sentence incoherent and unrecognizable compared to the expected. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吗' at position 3",
+      "reason": "The final question particle is missing and the actual transcription is in a different language, so the meaning is completely lost. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

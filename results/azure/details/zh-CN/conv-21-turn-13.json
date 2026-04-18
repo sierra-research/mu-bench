@@ -2,20 +2,25 @@
   "gold": "林美 at E M A I L 点 C O M。",
   "predicted": "IMAIL.com.",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 3,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
   "werRefWords": 12,
   "werNormalizedGold": "林美 at e m a i l 点 c o m",
-  "werNormalizedPredicted": "e m a i l 点 c o m",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "i m a i l 点 c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "林 美 at e m a i l 点 c o m",
-  "sigWerNormalizedPredicted": "e m a i l 点 c o m",
+  "sigWerNormalizedPredicted": "i m a i l 点 c o m",
   "sigWerErrors": [
     {
-      "error": "Deletion: '林' at position 0",
-      "reason": "The deletion of the name '林' (a proper noun) removes a key part of the information, which could be essential for identification or context. This significantly changes the meaning of the sentence.",
+      "error": "Substitution: '林' to 'i' at position 0",
+      "reason": "The expected word '林' (a Chinese character, likely a surname) was replaced with 'i', which is a completely different character and meaning. This significantly changes the intended meaning, especially for a name or email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "The expected word '美' (a Chinese character, likely part of a name or email address) was omitted. Omitting a character in a name or email address is a significant error as it changes the identity or address.",
       "score": 1
     }
   ]

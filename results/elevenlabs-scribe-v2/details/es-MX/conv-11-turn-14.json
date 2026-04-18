@@ -2,15 +2,26 @@
   "gold": "¿A cuánto me van a aumentar el crédito?",
   "predicted": "¿A cuánto me van a aumentar el crédito?",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
-  "werNormalizedGold": "a cuanto me van a aumentar el credito",
+  "werNormalizedGold": "a cuánto me van a aumentar el crédito",
   "werNormalizedPredicted": "a cuanto me van a aumentar el credito",
-  "significantWer": 0.0,
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 8,
-  "sigWerNormalizedGold": "a cuanto me van a aumentar el credito",
+  "sigWerNormalizedGold": "a cuánto me van a aumentar el crédito",
   "sigWerNormalizedPredicted": "a cuanto me van a aumentar el credito",
-  "sigWerErrors": []
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cuánto' to 'cuanto' at position 1",
+      "reason": "Missing accent does not change the meaning in this context; both refer to 'how much' and the sentence remains clear.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 7",
+      "reason": "Missing accent on 'crédito' does not change the meaning; the word is still clearly understood as 'credit'.",
+      "score": 3
+    }
+  ]
 }

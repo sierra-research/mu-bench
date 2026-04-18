@@ -2,25 +2,30 @@
   "gold": "Được. Hướng dẫn giùm.",
   "predicted": "Ờm ok được được ờ hướng dẫn gì mà?",
   "unintelligible": false,
-  "wer": 0.75,
-  "werEdits": 3,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "được hướng dẫn giùm",
-  "werNormalizedPredicted": "được được hướng dẫn gì mà",
-  "significantWer": 0.25,
+  "werNormalizedPredicted": "okay được được hướng dẫn gì mà",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "được hướng dẫn giùm",
-  "sigWerNormalizedPredicted": "được được hướng dẫn gì mà",
+  "sigWerNormalizedPredicted": "okay được được hướng dẫn gì mà",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'okay' at position 0",
+      "reason": "'okay' is an extra word that does not affect the main meaning, but is not present in the expected sentence.",
+      "score": 2
+    },
+    {
       "error": "Insertion: 'được' at position 1",
-      "reason": "The repeated word 'được' does not change the overall meaning of the sentence, but is unnecessary.",
+      "reason": "Repeating 'được' does not change the meaning, but is unnecessary.",
       "score": 2
     },
     {
       "error": "Substitution: 'giùm' to 'mà' at position 3",
-      "reason": "The insertion of 'gì' ('what') changes the meaning of the request, making the sentence less clear and potentially confusing.",
+      "reason": "Adding 'gì' (what) changes the meaning of the request, making it unclear or different from the original intent.",
       "score": 1
     }
   ]

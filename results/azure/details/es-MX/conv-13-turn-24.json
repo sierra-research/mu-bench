@@ -2,26 +2,31 @@
   "gold": "Sí, ya la puedo ver aquí. Oye ¿y me podrían hacer llegar también llegar el estado de cuenta por correo fisco?",
   "predicted": "Sí, ya la puedo ver aquí, oye, y me podría hacer también llegar el estado de cuenta por correo físico.",
   "unintelligible": false,
-  "wer": 0.09523809523809523,
-  "werEdits": 2,
+  "wer": 0.14285714285714285,
+  "werEdits": 3,
   "werRefWords": 21,
-  "werNormalizedGold": "si ya la puedo ver aqui oye y me podrian hacer llegar tambien llegar el estado de cuenta por correo fisico",
-  "werNormalizedPredicted": "si ya la puedo ver aqui oye y me podria hacer tambien llegar el estado de cuenta por correo fisico",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedGold": "sí ya la puedo ver aquí oye y me podrían hacer llegar también llegar el estado de cuenta por correo fisco",
+  "werNormalizedPredicted": "sí ya la puedo ver aquí oye y me podría hacer también llegar el estado de cuenta por correo físico",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 21,
-  "sigWerNormalizedGold": "si ya la puedo ver aqui oye y me podrian hacer llegar tambien llegar el estado de cuenta por correo fisico",
-  "sigWerNormalizedPredicted": "si ya la puedo ver aqui oye y me podria hacer tambien llegar el estado de cuenta por correo fisico",
+  "sigWerNormalizedGold": "sí ya la puedo ver aquí oye y me podrían hacer llegar también llegar el estado de cuenta por correo fisco",
+  "sigWerNormalizedPredicted": "sí ya la puedo ver aquí oye y me podría hacer también llegar el estado de cuenta por correo físico",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'podrian' to 'podria' at position 9",
-      "reason": "Change from plural ('they could') to singular ('he/she/I could') slightly alters who is being asked, but the overall request remains clear.",
+      "error": "Substitution: 'podrían' to 'podría' at position 9",
+      "reason": "Change from plural ('they could') to singular ('I could'), but in context the meaning of the request remains clear and is not significantly altered.",
       "score": 2
     },
     {
       "error": "Deletion: 'llegar' at position 11",
-      "reason": "Omitting the repeated 'llegar' does not change the meaning of the sentence, as the request is still understandable and complete.",
-      "score": 3
+      "reason": "Omitting the repeated 'llegar' does not change the meaning of the sentence, as the request to send the account statement is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'fisco' to 'físico' at position 20",
+      "reason": "'Fisco' (tax authority) and 'físico' (physical) are completely different words; the substitution changes the meaning of the sentence from 'tax mail' to 'physical mail', which is a significant change in context.",
+      "score": 1
     }
   ]
 }

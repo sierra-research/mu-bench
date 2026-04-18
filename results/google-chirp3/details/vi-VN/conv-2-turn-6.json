@@ -2,25 +2,25 @@
   "gold": "Mã đúng là C N 2 3 5, đúng không?",
   "predicted": "Nãy mà đúng là 2 CN 235 đúng không?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
-  "werNormalizedGold": "ma dung la c n two three five dung khong",
-  "werNormalizedPredicted": "nay ma dung la two c n two three five dung khong",
-  "significantWer": 0.1,
+  "werNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "werNormalizedPredicted": "nãy mà đúng là hai c n hai ba năm đúng không",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
-  "sigWerNormalizedGold": "ma dung la c n two three five dung khong",
-  "sigWerNormalizedPredicted": "nay ma dung la two c n two three five dung khong",
+  "sigWerNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "sigWerNormalizedPredicted": "nãy mà đúng là hai c n hai ba năm đúng không",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'nay' at position 0",
-      "reason": "'nay' is an extra word at the beginning, but does not change the overall meaning of the sentence.",
+      "error": "Substitution: 'mã' to 'mà' at position 0",
+      "reason": "'nãy' adds a temporal reference that does not change the main meaning of the sentence, which is about confirming a code.",
       "score": 2
     },
     {
-      "error": "Insertion: 'two' at position 3",
-      "reason": "The extra 'two' in the sequence could cause confusion in understanding the intended number sequence, which is important information. This significantly affects the meaning.",
+      "error": "Insertion: 'hai' at position 3",
+      "reason": "Substituting 'mã' (code) with 'mà' (but/that) changes the meaning of the sentence, as 'mã' is essential for the context of confirming a code. This is a significant error.",
       "score": 1
     }
   ]

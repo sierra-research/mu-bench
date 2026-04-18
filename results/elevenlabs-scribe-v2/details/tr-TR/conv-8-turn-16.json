@@ -2,36 +2,41 @@
   "gold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
   "predicted": "Adımın son harfi yanlış. Ben Zaynet, \"T\" ile pırasanın \"P\"si ile söyledim. Siz bana \"T\"li söylediniz. Zaynet. E-mail de aynı şekilde zaynet olacak",
   "unintelligible": false,
-  "wer": 0.20833333333333334,
-  "werEdits": 5,
-  "werRefWords": 24,
-  "werNormalizedGold": "adimin son harfi yanlis ben zaynep p ile pirasanin ps i ile soyledim siz bana tli soylediniz zaynep email ile ayni sekilde zaynep olacak",
-  "werNormalizedPredicted": "adimin son harfi yanlis ben zaynet t ile pirasanin ps i ile soyledim siz bana tli soylediniz zaynet email de ayni sekilde zaynet olacak",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 24,
-  "sigWerNormalizedGold": "adimin son harfi yanlis ben zaynep p ile pirasanin ps i ile soyledim siz bana tli soylediniz zaynep email ile ayni sekilde zaynep olacak",
-  "sigWerNormalizedPredicted": "adimin son harfi yanlis ben zaynet t ile pirasanin ps i ile soyledim siz bana tli soylediniz zaynet email de ayni sekilde zaynet olacak",
+  "wer": 0.4782608695652174,
+  "werEdits": 11,
+  "werRefWords": 23,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zaynet t ile pırasanın p si ile söyledim siz bana t li söylediniz zaynet e mail de aynı şekilde zaynet olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zaynet t ile pırasanın p si ile söyledim siz bana t li söylediniz zaynet e mail de aynı şekilde zaynet olacak",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'zaynet' at position 5",
-      "reason": "'zaynep' is a proper noun (a name), and changing the last letter from 'p' to 't' results in a different name, which is a minor error as the intended name is still recognizable.",
+      "reason": "'zaynep' is a proper noun (a name), and changing the last letter from 'p' to 't' is a minor misspelling but the name is still recognizable.",
       "score": 2
     },
     {
-      "error": "Substitution: 'zaynep' to 'zaynet' at position 17",
-      "reason": "Again, 'zaynep' is replaced with 'zaynet', which is a minor error for a proper noun, as the name is still understandable.",
+      "error": "Substitution: 'psi' to 'si' at position 9",
+      "reason": "The expected phrase 'p ile pırasanın psi ile' is replaced with 't ile pırasanın p si ile' in the actual. The insertion of 'p' here is part of a structural change, but the meaning (referring to the letter 'p') is preserved.",
       "score": 2
     },
     {
-      "error": "Substitution: 'ile' to 'de' at position 19",
-      "reason": "'ile' means 'with' and 'de' means 'also' or 'in' in Turkish; this changes the grammatical structure but does not significantly alter the overall meaning of the sentence.",
+      "error": "Substitution: 'tli' to 'li' at position 14",
+      "reason": "The expected 'psi' (referring to the letter 'p' as in 'pırasanın psi') is transcribed as 'si', which loses the reference to the letter 'p' and could cause confusion about which letter is meant.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'e' at position 16",
+      "reason": "The actual adds 't' in 't li', which is a minor structural difference but does not change the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'zaynep' to 'zaynet' at position 22",
-      "reason": "Same as previous, minor error in the proper noun, still understandable.",
-      "score": 2
+      "error": "Substitution: 'zaynep' to 'zaynet' at position 21",
+      "reason": "Dropping the 't' from 'tli' to 'li' could cause confusion about which letter is being referenced, which is significant in the context of spelling.",
+      "score": 1
     }
   ]
 }

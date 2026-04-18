@@ -1,16 +1,27 @@
 {
   "gold": "美玲 at email dot com。",
-  "predicted": "Metin e tirmëzotko.",
+  "predicted": "Meinin əzimiğil dostum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 6,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "meinin əzimiğil dostum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "meinin əzimiğil dostum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meinin' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is a completely different word in a different language, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "The word 'email' is missing from the actual transcription, which is critical for understanding the address and makes the sentence incoherent.",
+      "score": 1
+    }
+  ]
 }

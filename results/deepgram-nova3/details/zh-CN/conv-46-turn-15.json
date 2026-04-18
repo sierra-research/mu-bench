@@ -2,15 +2,26 @@
   "gold": "君玲 at email dot com。",
   "predicted": "dreamlinetsemendotgream。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 6,
   "werRefWords": 6,
   "werNormalizedGold": "君玲 at email dot com",
-  "werNormalizedPredicted": "君玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "dreamlinetsemendotgream",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "君 玲 at email dot com",
-  "sigWerNormalizedPredicted": "君 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "dreamlinetsemendotgream",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamlinetsemendotgream' at position 0",
+      "reason": "The actual transcription is completely different from the expected, replacing a Chinese name with an unrelated string, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A key part of the name is missing, which makes the email address unrecognizable and unusable.",
+      "score": 1
+    }
+  ]
 }

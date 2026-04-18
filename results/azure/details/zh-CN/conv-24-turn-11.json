@@ -2,15 +2,26 @@
   "gold": "林美 at email 点 com。",
   "predicted": "May at email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "may at email dot com",
-  "werNormalizedPredicted": "may at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "may at email dot com",
-  "sigWerNormalizedPredicted": "may at email dot com",
-  "sigWerErrors": []
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "林美 at email 点 com",
+  "werNormalizedPredicted": "may at email 点 com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "林 美 at email 点 com",
+  "sigWerNormalizedPredicted": "may at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'may' at position 0",
+      "reason": "'林' is a Chinese surname, while 'may' is an English given name. This substitution changes the identity of the person entirely, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "'美' is part of the expected name and its omission results in an incomplete or incorrect name, which is a significant error for names.",
+      "score": 1
+    }
+  ]
 }

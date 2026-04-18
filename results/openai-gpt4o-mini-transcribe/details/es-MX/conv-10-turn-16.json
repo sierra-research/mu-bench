@@ -1,26 +1,31 @@
 {
   "gold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "predicted": "No, no, no, te falta el punto. Arroba email.com.",
+  "predicted": "No, no, no, te falta el punto. Ariría.com.",
   "unintelligible": false,
-  "wer": 0.4166666666666667,
-  "werEdits": 5,
+  "wer": 0.5833333333333334,
+  "werEdits": 7,
   "werRefWords": 12,
-  "werNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
-  "werNormalizedPredicted": "no no no te falta el punto arroba email punto com",
-  "significantWer": 0.08333333333333333,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "no no no te falta el punto ariría punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
-  "sigWerNormalizedGold": "no te falta el punto maria punto lopez arroba email punto com",
-  "sigWerNormalizedPredicted": "no no no te falta el punto arroba email punto com",
+  "sigWerNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "no no no te falta el punto ariría punto com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 1",
-      "reason": "The repeated 'no' does not change the overall meaning, but adds unnecessary repetition. The sentence is still understandable.",
-      "score": 2
+      "reason": "The repeated 'no' adds unnecessary negation, which could confuse the meaning of the sentence.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'maria' at position 5",
-      "reason": "Omitting 'maria' from the email address makes the email incomplete and incorrect, which is a significant error as it changes the intended information.",
+      "error": "Substitution: 'maría' to 'ariría' at position 5",
+      "reason": "'ariría' is a significant distortion of the name 'maría', making the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'punto' at position 6",
+      "reason": "Omitting 'punto' removes a critical part of the email address, making it incomplete and unusable.",
       "score": 1
     }
   ]

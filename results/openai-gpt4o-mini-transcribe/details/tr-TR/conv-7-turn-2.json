@@ -1,21 +1,31 @@
 {
   "gold": "C N 1 1 0. Doğru mudur?",
-  "predicted": "Cene bir bir sıfır",
+  "predicted": "Cene bir bir sıfır.",
   "unintelligible": false,
-  "wer": 0.2857142857142857,
-  "werEdits": 2,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "c n bir bir sıfır doğru mudur",
-  "werNormalizedPredicted": "c n bir bir sıfır",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "cene bir bir sıfır",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "c n bir bir sıfır doğru mudur",
-  "sigWerNormalizedPredicted": "c n bir bir sıfır",
+  "sigWerNormalizedPredicted": "cene bir bir sıfır",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'c' to 'cene' at position 0",
+      "reason": "'c' is likely a single letter or code, while 'cene' is a completely different word, which changes the intended meaning or code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from a sequence of letters or codes can significantly alter the intended information, especially if these are identifiers or codes.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'doğru' at position 5",
-      "reason": "The word 'doğru' (meaning 'correct' or 'right') is omitted, which removes the confirmation or question about correctness from the sentence. This significantly changes the intent and meaning of the sentence.",
+      "reason": "Removing 'doğru' (which means 'correct' or 'right') omits the confirmation question, changing the intent of the sentence.",
       "score": 1
     }
   ]

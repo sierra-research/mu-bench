@@ -2,40 +2,40 @@
   "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
   "predicted": "Yanı pardon e posta adresinde bir noktayı unuttunuz. Ahmet'le arsanıza. Olacak Ahmet. Arslan.",
   "unintelligible": false,
-  "wer": 0.47058823529411764,
-  "werEdits": 8,
+  "wer": 0.4117647058823529,
+  "werEdits": 7,
   "werRefWords": 17,
   "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "werNormalizedPredicted": "yanı pardon e posta adresinde bir noktayı unuttunuz ahmetle arsanıza olacak ahmet arslan",
-  "significantWer": 0.17647058823529413,
+  "werNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmet le arsanıza olacak ahmet arslan",
+  "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "yanı pardon e posta adresinde bir noktayı unuttunuz ahmetle arsanıza olacak ahmet arslan",
+  "sigWerNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmet le arsanıza olacak ahmet arslan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'yalnız' to 'yanı' at position 0",
-      "reason": "'yalnız' means 'only' or 'just', while 'yanı' is not a word in Turkish and is likely a mishearing. This makes the sentence less clear but does not derail the overall meaning.",
+      "error": "Deletion: 'yalnız' at position 0",
+      "reason": "'Yalnız' is an important discourse marker meaning 'just' or 'only', which sets the context for the correction. Its omission slightly reduces clarity but does not derail the main meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'adresimde' to 'adresinde' at position 4",
-      "reason": "'adresimde' means 'in my address', while 'adresinde' means 'in your/his/her address'. This changes the reference of whose address is being discussed, which can be significant in context.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'ahmet' to 'ahmetle' at position 8",
-      "reason": "'ahmet' is a name, 'ahmetle' means 'with Ahmet'. This changes the structure of the sentence but the meaning is still somewhat understandable.",
+      "reason": "'Adresimde' (in my address) vs 'adresinde' (in the address) changes the reference from personal to general, but the overall intent of correcting the email address remains clear.",
       "score": 2
     },
     {
-      "error": "Deletion: 'arslan' at position 10",
-      "reason": "Omitting 'arslan' (a name) removes a key part of the email address, which is critical information.",
+      "error": "Substitution: 've' to 'le' at position 9",
+      "reason": "'Ve' means 'and', 'le' is a suffix meaning 'with'. In this context, 'ahmet ve arslan' (Ahmet and Arslan) is replaced with 'ahmet le arsanıza' (with your Arslan), which changes the meaning and creates confusion.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arasında' at position 11",
+      "reason": "'Arasında' means 'between', which is crucial for specifying where the dot should be in the email address. Its omission makes the instruction unclear.",
       "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 15",
-      "reason": "Omitting 'nokta' (dot) in the context of an email address changes the address and can cause communication errors.",
+      "reason": "Omitting 'nokta' (dot) removes the explicit instruction about the dot in the email address, which is essential for the correction.",
       "score": 1
     }
   ]

@@ -2,35 +2,35 @@
   "gold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
   "predicted": "Annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyam nedir?",
   "unintelligible": false,
-  "wer": 0.29411764705882354,
+  "wer": 0.3125,
   "werEdits": 5,
-  "werRefWords": 17,
-  "werNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
-  "werNormalizedPredicted": "annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyam nedir",
-  "significantWer": 0.058823529411764705,
+  "werRefWords": 16,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum kalan bakiyem nedir limite dair",
+  "werNormalizedPredicted": "annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum kalan bakiyam nedir",
+  "significantWer": 1,
   "majorErrorsCount": 1,
-  "totalWordsCount": 17,
-  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyem nedir limite dair",
-  "sigWerNormalizedPredicted": "annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum yani kalan bakiyam nedir",
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum kalan bakiyem nedir limite dair",
+  "sigWerNormalizedPredicted": "annem merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum kalan bakiyam nedir",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'annem' at position 0",
-      "reason": "'Anna' is a name, while 'annem' means 'my mother' in Turkish. This changes the addressee and the meaning of the sentence significantly.",
+      "reason": "'anna' is a name, while 'annem' means 'my mother' in Turkish. This changes the addressee and the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'hanım' at position 1",
-      "reason": "'Hanım' is a polite form of address (like 'Ms.' or 'Madam'). Its omission makes the greeting less formal but does not significantly change the meaning.",
+      "reason": "'hanım' is a polite form of address (like 'Ms.'), and its omission makes the sentence less formal but does not significantly change the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'bakiyem' to 'bakiyam' at position 13",
-      "reason": "'Bakiyem' is the correct form for 'my balance' in Turkish; 'bakiyam' is a minor misspelling but still understandable in context.",
+      "error": "Substitution: 'bakiyem' to 'bakiyam' at position 12",
+      "reason": "'bakiyem' is the correct form for 'my balance' in Turkish; 'bakiyam' is a minor misspelling but still understandable.",
       "score": 2
     },
     {
-      "error": "Deletion: 'limite' at position 15",
-      "reason": "Omitting 'limite dair' removes clarification about the balance being related to the limit, which could cause confusion about what balance is being referred to.",
+      "error": "Deletion: 'limite' at position 14",
+      "reason": "Omitting 'limite dair' removes a clarifying phrase about the limit, which could cause some ambiguity about what balance is being asked, but the main intent is still clear.",
       "score": 2
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "林美 at email 点 com。",
   "predicted": "零美艾特email。com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 5,
-  "werNormalizedGold": "林美 at email com",
-  "werNormalizedPredicted": "林美 at email com",
-  "significantWer": 0.0,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "林美 at email 点 com",
+  "werNormalizedPredicted": "林美艾特 email 点 com",
+  "significantWer": 0,
   "majorErrorsCount": 0,
-  "totalWordsCount": 5,
-  "sigWerNormalizedGold": "林 美 at email com",
-  "sigWerNormalizedPredicted": "林 美 at email com",
-  "sigWerErrors": []
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "林 美 at email 点 com",
+  "sigWerNormalizedPredicted": "林 美 艾 特 email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to '特' at position 2",
+      "reason": "'艾特' is a transliteration of 'at' in Chinese internet usage, so the insertion of '艾' together with '特' forms the intended meaning of 'at'. This does not change the meaning of the sentence.",
+      "score": 3
+    }
+  ]
 }

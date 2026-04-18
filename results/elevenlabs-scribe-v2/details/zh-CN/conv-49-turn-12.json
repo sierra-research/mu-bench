@@ -2,15 +2,26 @@
   "gold": "你，我的邮箱地址是美玲 at email dot com。",
   "predicted": "你-- 我的邮箱地址是mail@email.com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
   "werRefWords": 14,
   "werNormalizedGold": "你 我的邮箱地址是美玲 at email dot com",
-  "werNormalizedPredicted": "你 我的邮箱地址是美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "你 我的邮箱地址是 mail at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "你 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "你 我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 我 的 邮 箱 地 址 是 mail at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mail' at position 8",
+      "reason": "'美' is a Chinese character (likely part of a name), while 'mail' is an English word unrelated in meaning. This substitution changes the intended meaning and identity in the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 9",
+      "reason": "'玲' is the second character of the name '美玲'. Its omission results in an incomplete or incorrect name, which is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
 }

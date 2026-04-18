@@ -2,15 +2,31 @@
   "gold": "我还没说我的邮箱地址。",
   "predicted": "我黑妹说我的又想地日",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 5,
   "werRefWords": 10,
   "werNormalizedGold": "我还没说我的邮箱地址",
-  "werNormalizedPredicted": "我还没说我的邮箱地址",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我黑妹说我的又想地日",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "我 还 没 说 我 的 邮 箱 地 址",
-  "sigWerNormalizedPredicted": "我 还 没 说 我 的 邮 箱 地 址",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 黑 妹 说 我 的 又 想 地 日",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '还' to '黑' at position 1",
+      "reason": "'还' (still/yet) and '黑' (black) are completely different in meaning and context, which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '又' at position 6",
+      "reason": "'邮' (mail) and '又' (again) are unrelated, which disrupts the meaning of '邮箱' (mailbox/email address).",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '址' to '日' at position 9",
+      "reason": "'址' (address) and '日' (day/sun) are unrelated, which makes the phrase '地址' (address) incorrect and incoherent.",
+      "score": 1
+    }
+  ]
 }

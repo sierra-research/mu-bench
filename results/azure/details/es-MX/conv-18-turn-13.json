@@ -5,22 +5,22 @@
   "wer": 0.2857142857142857,
   "werEdits": 2,
   "werRefWords": 7,
-  "werNormalizedGold": "si es c n eight five two",
-  "werNormalizedPredicted": "si s n eight five two",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 1,
+  "werNormalizedGold": "sí es c n ocho cinco dos",
+  "werNormalizedPredicted": "sí s n ocho cinco dos",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
-  "sigWerNormalizedGold": "si es c n eight five two",
-  "sigWerNormalizedPredicted": "si s n eight five two",
+  "sigWerNormalizedGold": "sí es c n ocho cinco dos",
+  "sigWerNormalizedPredicted": "sí s n ocho cinco dos",
   "sigWerErrors": [
     {
       "error": "Substitution: 'es' to 's' at position 1",
-      "reason": "'es' and 's' are different; 'es' could be a Spanish word or a letter, while 's' is just the letter. If 'es' is meant as a letter, this is a minor error, but if it is the Spanish word for 'is', this changes the meaning. Given the context of a sequence with letters and numbers, it's likely a letter, so this is a minor error.",
-      "score": 2
+      "reason": "'es' is the Spanish word for 'is', while 's' is just a letter. This substitution makes the sentence less coherent and loses the verb, significantly affecting meaning.",
+      "score": 1
     },
     {
       "error": "Deletion: 'c' at position 2",
-      "reason": "Omitting a letter in a sequence (possibly a code or identifier) is a significant error, as it changes the information being conveyed.",
+      "reason": "Omitting the letter 'c' in a sequence of spelled-out letters or codes can change the intended information, which is significant in contexts like codes or identifiers.",
       "score": 1
     }
   ]

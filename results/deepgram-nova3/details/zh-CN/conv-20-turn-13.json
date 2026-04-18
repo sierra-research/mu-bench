@@ -2,15 +2,31 @@
   "gold": "美玲 at email dot com。",
   "predicted": "milingisemail。com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "美玲 at email dot com",
-  "werNormalizedPredicted": "美玲 at email dot com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "miling is email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "miling is email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'miling' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), while the actual is a romanized name that does not match the original. This is a significant error as it changes the identity being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "The omission of 'at' in an email address format makes the address unclear and incorrect, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "'dot' is replaced by 'com', which disrupts the standard email format and makes the address incoherent.",
+      "score": 1
+    }
+  ]
 }

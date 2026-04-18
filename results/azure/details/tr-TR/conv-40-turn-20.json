@@ -5,42 +5,42 @@
   "wer": 0.4166666666666667,
   "werEdits": 10,
   "werRefWords": 24,
-  "werNormalizedGold": "anna bana su kodu tekrar verir misin kodlar cunku ilk basta e n dedin sonra e a dedin kodu tekrar bana soyler misin yavasca",
-  "werNormalizedPredicted": "anne baraj kot tekrar verir misin kodda cunku ilk basta e n dedi sonra e a dedi kod tekrar bana soyler misin yavas ya",
-  "significantWer": 0.041666666666666664,
+  "werNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "werNormalizedPredicted": "anne baraj kot tekrar verir misin kodda çünkü ilk başta e n dedi sonra e a dedi kod tekrar bana söyler misin yavaş ya",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 24,
-  "sigWerNormalizedGold": "anna bana su kodu tekrar verir misin kodlar cunku ilk basta e n dedin sonra e a dedin kodu tekrar bana soyler misin yavasca",
-  "sigWerNormalizedPredicted": "anne baraj kot tekrar verir misin kodda cunku ilk basta e n dedi sonra e a dedi kod tekrar bana soyler misin yavas ya",
+  "sigWerNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "sigWerNormalizedPredicted": "anne baraj kot tekrar verir misin kodda çünkü ilk başta e n dedi sonra e a dedi kod tekrar bana söyler misin yavaş ya",
   "sigWerErrors": [
     {
       "error": "Substitution: 'anna' to 'anne' at position 0",
-      "reason": "Minor spelling difference in a proper noun, but still recognizable as the same name.",
+      "reason": "'Anna' and 'Anne' are both proper names and differ by one letter, but are distinct names. This is a minor error as the meaning is still clear.",
       "score": 2
     },
     {
       "error": "Deletion: 'kodu' at position 3",
-      "reason": "Omitting 'kodu' (the word for 'code') removes important information, making the sentence less clear.",
+      "reason": "Omitting 'kodu' (the code) removes a key noun from the sentence, which can confuse the listener about what is being referred to. This is a significant error.",
       "score": 1
     },
     {
       "error": "Substitution: 'kodlar' to 'kodda' at position 7",
-      "reason": "'kodlar' (codes) and 'kodda' (in the code) are related but have different meanings; the substitution changes the meaning but not drastically.",
+      "reason": "'Kodlar' means 'codes' (plural), while 'kodda' means 'in the code' (locative). This changes the meaning but not drastically; the context is still about code. Minor error.",
       "score": 2
     },
     {
       "error": "Substitution: 'dedin' to 'dedi' at position 13",
-      "reason": "Minor grammatical difference (you said vs. he/she said), but the overall meaning is mostly preserved.",
+      "reason": "'Dedin' is 'you said', 'dedi' is 'he/she/it said'. This changes the subject but the overall meaning is still understandable in context. Minor error.",
       "score": 2
     },
     {
       "error": "Substitution: 'dedin' to 'dedi' at position 17",
-      "reason": "Same as above, minor grammatical difference, meaning is mostly preserved.",
+      "reason": "Same as above: subject changes from 'you' to 'he/she/it', but the meaning is still clear. Minor error.",
       "score": 2
     },
     {
-      "error": "Substitution: 'yavasca' to 'ya' at position 23",
-      "reason": "Inserting 'yavas' (slow) before 'ya' does not significantly change the meaning, as it relates to the manner of speaking.",
+      "error": "Substitution: 'yavaşça' to 'ya' at position 23",
+      "reason": "Inserting 'yavaş' (slow) before 'ya' does not significantly change the meaning, as the request is still to say something slowly. Minor error.",
       "score": 2
     }
   ]

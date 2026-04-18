@@ -1,16 +1,22 @@
 {
   "gold": "OK. Adiós.",
-  "predicted": "OK, adiós.",
+  "predicted": "Sí, adiós.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.5,
+  "werEdits": 1,
   "werRefWords": 2,
   "werNormalizedGold": "okay adiós",
-  "werNormalizedPredicted": "okay adiós",
-  "significantWer": 0.0,
+  "werNormalizedPredicted": "sí adiós",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "okay adiós",
-  "sigWerNormalizedPredicted": "okay adiós",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sí adiós",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'sí' at position 0",
+      "reason": "'okay' means agreement or confirmation, while 'sí' means 'yes' in Spanish. The substitution changes the meaning from a neutral confirmation to an affirmative response, which can alter the intent of the sentence.",
+      "score": 2
+    }
+  ]
 }

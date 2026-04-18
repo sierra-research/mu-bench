@@ -2,16 +2,16 @@
   "gold": "喂，我想提高我的信用卡额度。",
   "predicted": "不对我乡te的信用卡二读",
   "unintelligible": false,
-  "wer": 0.4166666666666667,
-  "werEdits": 5,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
   "werRefWords": 12,
-  "werNormalizedGold": "喂 我 想 提高 我 的 信用卡 额度",
-  "werNormalizedPredicted": "不 对 我 想 提 高 的 信用卡 二 读",
-  "significantWer": 0.16666666666666666,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "喂 我想提高我的信用卡额度",
+  "werNormalizedPredicted": "不对我乡 te 的信用卡二读",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "喂 我 想 提 高 我 的 信 用 卡 额 度",
-  "sigWerNormalizedPredicted": "不 对 我 想 提 高 的 信 用 卡 二 读",
+  "sigWerNormalizedPredicted": "不 对 我 乡 te 的 信 用 卡 二 读",
   "sigWerErrors": [
     {
       "error": "Substitution: '喂' to '对' at position 0",
@@ -19,14 +19,19 @@
       "score": 1
     },
     {
-      "error": "Deletion: '我' at position 5",
-      "reason": "'喂' is a greeting (hello), while '对' means 'correct' or 'right'; this changes the opening context and is not equivalent.",
+      "error": "Substitution: '想' to '乡' at position 2",
+      "reason": "'喂' is a greeting ('hello'), while '对' means 'correct' or 'right'; this substitution changes the opening context and is confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '高' at position 4",
+      "reason": "'想' means 'want', while '乡' means 'village'; this substitution makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: '额' to '二' at position 10",
-      "reason": "Omitting '我' (I) from '提高我的信用卡额度' (raise my credit card limit) makes the sentence less clear about whose credit card is being referred to, but the overall intent is still somewhat understandable.",
-      "score": 2
+      "reason": "Omitting '高' ('increase') removes the key action of the sentence, making the request unclear.",
+      "score": 1
     }
   ]
 }

@@ -7,7 +7,7 @@
   "werRefWords": 27,
   "werNormalizedGold": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zaynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
   "werNormalizedPredicted": "hayır adım gine yanlış oldu adımı ben kodlamak istiyorum ip ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde niğde edirne pırasa",
-  "significantWer": 0.07407407407407407,
+  "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 27,
   "sigWerNormalizedGold": "hayır adım yine yanlış oldu adımı ben kodlamak istiyorum zaynep z a y n e p ya da türkçe olarak kodlayayım zonguldak adana yozgat niğde edirne pırasa",
@@ -15,22 +15,22 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'yine' to 'gine' at position 2",
-      "reason": "'gine' is a common colloquial or dialectal variant of 'yine' in Turkish, meaning is preserved.",
+      "reason": "'gine' is a common colloquial or dialectal variant of 'yine' in Turkish, meaning is unchanged.",
       "score": 3
     },
     {
       "error": "Substitution: 'zaynep' to 'ip' at position 9",
-      "reason": "'zaynep' is a proper name, but 'ip' is a completely unrelated word, causing a significant loss of meaning.",
+      "reason": "The name 'zaynep' is replaced with 'ip', which is a completely different word and changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'z' at position 10",
-      "reason": "The letter 'z' is part of the spelled-out name; omitting it changes the spelling and the intended name.",
+      "reason": "The letter 'z' is missing from the spelled-out name, which makes the spelling incorrect and changes the intended name.",
       "score": 1
     },
     {
       "error": "Insertion: 'niğde' at position 24",
-      "reason": "Repeating 'niğde' in the Turkish spelling alphabet sequence is a minor error, as it does not change the overall meaning.",
+      "reason": "An extra 'niğde' is inserted in the sequence of city names used for spelling, but the overall meaning (spelling out a name) is still clear.",
       "score": 2
     }
   ]

@@ -2,15 +2,21 @@
   "gold": "你再说什么呀，是你自己说的，我没说呀。",
   "predicted": "啊,你在说什么呀?是你自己说的,我没说呀。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.0625,
+  "werEdits": 1,
   "werRefWords": 16,
-  "werNormalizedGold": "你 再 说 什么 呀 是 你 自己 说 的 我 没 说 呀",
-  "werNormalizedPredicted": "你 再 说 什么 呀 是 你 自己 说 的 我 没 说 呀",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你再说什么呀 是你自己说的 我没说呀",
+  "werNormalizedPredicted": "你在说什么呀 是你自己说的 我没说呀",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "你 再 说 什 么 呀 是 你 自 己 说 的 我 没 说 呀",
-  "sigWerNormalizedPredicted": "你 再 说 什 么 呀 是 你 自 己 说 的 我 没 说 呀",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 在 说 什 么 呀 是 你 自 己 说 的 我 没 说 呀",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 1",
+      "reason": "'再' (again) and '在' (at/in) are different words in Chinese, but in this context, both can be used colloquially to mean 'what are you saying' and do not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
 }

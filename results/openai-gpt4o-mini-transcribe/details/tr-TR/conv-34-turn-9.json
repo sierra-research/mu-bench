@@ -1,16 +1,32 @@
 {
   "gold": "E-posta adresim, Zaynep nokta Arslan at email nokta com. Telefon numaram 0 123 0 90 45 67.",
-  "predicted": "E-posta adresim zeynep.arslan@email.com, telefon numaram 0 123 0 90 45 67.",
+  "predicted": "E-posta adresim zeynep.arslan@email.com. Telefon numaram 0 123 0 90 45 67.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
-  "werRefWords": 22,
-  "werNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero ninety forty five sixty seven",
-  "werNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero ninety forty five sixty seven",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
-  "totalWordsCount": 22,
-  "sigWerNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero ninety forty five sixty seven",
-  "sigWerNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram zero one two three zero ninety forty five sixty seven",
-  "sigWerErrors": []
+  "wer": 0.19047619047619047,
+  "werEdits": 4,
+  "werRefWords": 21,
+  "werNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan beş kırk yedi",
+  "werNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan sıfır beş kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan beş kırk yedi",
+  "sigWerNormalizedPredicted": "e posta adresim zeynep nokta arslan at email nokta com telefon numaram sıfır bir iki üç sıfır doksan sıfır beş kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 3",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'sıfır' at position 18",
+      "reason": "Extra 'sıfır' (zero) in the phone number changes the sequence of digits, which is critical for contact information.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'beş' at position 20",
+      "reason": "Extra 'beş' (five) in the phone number alters the actual number, which is a significant error for phone numbers.",
+      "score": 1
+    }
+  ]
 }

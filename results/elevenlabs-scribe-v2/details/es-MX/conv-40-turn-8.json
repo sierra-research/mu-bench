@@ -2,20 +2,25 @@
   "gold": "Sí. ¿Me vas a mandar un correo? ¿Me van a llamar? ¿Cómo me van a hacer saber cuándo esté listo?",
   "predicted": "Eh, sí, ¿me vas a mandar un correo? ¿Me van a llamar? Eh, ¿cómo me van a, a hacer, eh, saber, este, cuando esté lista?",
   "unintelligible": false,
-  "wer": 0.05,
-  "werEdits": 1,
+  "wer": 0.1,
+  "werEdits": 2,
   "werRefWords": 20,
-  "werNormalizedGold": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este listo",
-  "werNormalizedPredicted": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este lista",
-  "significantWer": 0.0,
+  "werNormalizedGold": "sí me vas a mandar un correo me van a llamar cómo me van a hacer saber cuándo esté listo",
+  "werNormalizedPredicted": "sí me vas a mandar un correo me van a llamar cómo me van a hacer saber cuando esté lista",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 20,
-  "sigWerNormalizedGold": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este listo",
-  "sigWerNormalizedPredicted": "si me vas a mandar un correo me van a llamar como me van a hacer saber cuando este lista",
+  "sigWerNormalizedGold": "sí me vas a mandar un correo me van a llamar cómo me van a hacer saber cuándo esté listo",
+  "sigWerNormalizedPredicted": "sí me vas a mandar un correo me van a llamar cómo me van a hacer saber cuando esté lista",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'cuándo' to 'cuando' at position 17",
+      "reason": "The only difference is the accent mark; in context, both are understood as 'when' and do not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'listo' to 'lista' at position 19",
-      "reason": "'Listo' and 'lista' are gendered forms of the same word ('ready') in Spanish. The substitution only changes the gender, not the meaning of the sentence.",
+      "reason": "'Listo' (masculine) and 'lista' (feminine) both mean 'ready'; the gender change may refer to the subject, but does not alter the overall meaning of the sentence.",
       "score": 3
     }
   ]

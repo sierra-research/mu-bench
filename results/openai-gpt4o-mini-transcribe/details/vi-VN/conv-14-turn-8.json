@@ -1,16 +1,32 @@
 {
   "gold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
-  "predicted": "địa chỉ email là thu.trần@ôngemail.com",
+  "predicted": "Địa chỉ email là thutrầnthu.trần.hắcongemail.com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
   "werRefWords": 12,
   "werNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "địa chỉ email là thutrầnthu chấm trần chấm hắcongemail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "địa chỉ email là thu chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "địa chỉ email là thutrầnthu chấm trần chấm hắcongemail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thu' to 'thutrầnthu' at position 4",
+      "reason": "'thutrầnthu' is a concatenation of 'thu', 'trần', and 'thu', which changes the intended email username and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'a' to 'chấm' at position 7",
+      "reason": "Replacing 'a' (from 'a còng', meaning '@') with 'chấm' (meaning '.') changes the structure of the email address, making it invalid.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 9",
+      "reason": "Omitting 'email' from the address makes the email incomplete and incorrect.",
+      "score": 1
+    }
+  ]
 }

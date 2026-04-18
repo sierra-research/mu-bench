@@ -2,15 +2,31 @@
   "gold": "Evet, Arslan doğru. Sonrasında at E M A İ L nokta C O M.",
   "predicted": "Evet, arslan doğru. Sonrasında et em ail nokta com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
   "werNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta c o m",
-  "werNormalizedPredicted": "evet arslan doğru sonrasında at e m a i l nokta c o m",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "evet arslan doğru sonrasında et e m a i l nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta c o m",
-  "sigWerNormalizedPredicted": "evet arslan doğru sonrasında at e m a i l nokta c o m",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "evet arslan doğru sonrasında et e m a i l nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'et' at position 4",
+      "reason": "'at' is the English word for the '@' symbol in email addresses, while 'et' is a misspelling or mispronunciation. This could cause confusion in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'com' at position 11",
+      "reason": "Instead of spelling out 'c o m', the actual transcript jumps to the full word 'com', skipping the spelling. This is a minor error as the meaning is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'o' at position 12",
+      "reason": "Missing the letter 'o' in the spelled-out 'c o m' sequence for an email domain. This could lead to an incorrect email address if transcribed literally.",
+      "score": 1
+    }
+  ]
 }

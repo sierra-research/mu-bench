@@ -2,15 +2,21 @@
   "gold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
   "predicted": "Hayır, email ve telefon numarası yanlış. Email'de adımın son harfi P olacak. T değil P. zaynet P.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.058823529411764705,
+  "werEdits": 1,
   "werRefWords": 17,
   "werNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
-  "werNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynet p",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
-  "sigWerNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynet p",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zaynet' at position 15",
+      "reason": "The last letter of the name is changed from 'p' to 't'. Since the sentence is explicitly about the last letter of the name being 'p' and not 't', this substitution directly contradicts the intended meaning and causes a significant error.",
+      "score": 1
+    }
+  ]
 }

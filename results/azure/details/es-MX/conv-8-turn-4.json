@@ -2,20 +2,25 @@
   "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
   "predicted": "5255125678.",
   "unintelligible": false,
-  "wer": 0.13333333333333333,
-  "werEdits": 2,
+  "wer": 0.2,
+  "werEdits": 3,
   "werRefWords": 15,
   "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "werNormalizedPredicted": "más cincuenta y dos cincuenta y cinco uno dos cinco seis siete ocho",
-  "significantWer": 0.06666666666666667,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "cincuenta y dos cincuenta y cinco uno dos cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
-  "sigWerNormalizedPredicted": "más cincuenta y dos cincuenta y cinco uno dos cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "cincuenta y dos cincuenta y cinco uno dos cinco seis siete ocho",
   "sigWerErrors": [
     {
+      "error": "Deletion: 'más' at position 0",
+      "reason": "'más' (plus) is a key part of the phone number format in Spanish, indicating the international dialing code. Its omission can cause confusion or incorrect dialing.",
+      "score": 1
+    },
+    {
       "error": "Deletion: 'tres' at position 9",
-      "reason": "The number 'tres' (three) is missing from a sequence of numbers, which changes the sequence and could lead to misunderstanding or incorrect information, especially if these are part of a phone number or code.",
+      "reason": "Omitting 'tres' (three) from a sequence of numbers (likely a phone number) changes the number entirely, which is a significant error.",
       "score": 1
     }
   ]

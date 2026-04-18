@@ -2,15 +2,21 @@
   "gold": "邮箱地址是林俊 at email 点 com。",
   "predicted": "邮箱地址是林静艾特email。com。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
   "werRefWords": 11,
   "werNormalizedGold": "邮箱地址是林俊 at email 点 com",
-  "werNormalizedPredicted": "邮箱地址是林俊 at email 点 com",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "邮箱地址是林俊 at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "邮 箱 地 址 是 林 俊 at email 点 com",
-  "sigWerNormalizedPredicted": "邮 箱 地 址 是 林 俊 at email 点 com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "邮 箱 地 址 是 林 俊 at email com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '点' at position 9",
+      "reason": "The word '点' (dot) is missing before 'com', which is necessary for a correct email address format. Omitting '点' makes the email address invalid and could cause confusion or failure in communication.",
+      "score": 1
+    }
+  ]
 }

@@ -274,7 +274,13 @@ def main():
                 # string passed to the LLM; fall back to the raw manifest
                 # gold if the cache isn't populated yet.
                 gold_ref = canonical_gold.get((locale, uid), gold)
-                prompts.append(prompt_template.format(expected_transcript=gold_ref, actual_transcript=predicted))
+                prompts.append(
+                    prompt_template.format(
+                        expected_transcript=gold_ref,
+                        actual_transcript=predicted,
+                        locale=locale,
+                    )
+                )
 
             try:
                 responses = get_responses(

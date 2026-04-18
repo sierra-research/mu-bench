@@ -6,21 +6,21 @@
   "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "hayır yanlış e posta adresim evet",
-  "werNormalizedPredicted": "hayır ya e posta adresi evet",
-  "significantWer": 0.16666666666666666,
+  "werNormalizedPredicted": "hayır e posta adresi evet",
+  "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "hayır yanlış e posta adresim evet",
-  "sigWerNormalizedPredicted": "hayır ya e posta adresi evet",
+  "sigWerNormalizedPredicted": "hayır e posta adresi evet",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'yanlış' to 'ya' at position 1",
-      "reason": "'yanlış' means 'wrong' while 'ya' is an interjection or filler, which changes the meaning of the sentence significantly.",
+      "error": "Deletion: 'yanlış' at position 1",
+      "reason": "Omitting 'yanlış' (which means 'wrong') removes the explicit statement that the email address is incorrect, which significantly changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'adresim' to 'adresi' at position 4",
-      "reason": "'adresim' means 'my address' while 'adresi' means 'the address', which is a minor change and does not derail the overall meaning.",
+      "reason": "Changing 'adresim' (my address) to 'adresi' (the address) shifts the reference from personal to general, which is a minor but not critical change in meaning.",
       "score": 2
     }
   ]

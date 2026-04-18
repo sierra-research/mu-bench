@@ -1,31 +1,26 @@
 {
   "gold": "Tôi muốn hỏi, tôi được cấp một lần hai thẻ không, để sơ cua.",
-  "predicted": "ờ tôi muốn hỏi nữa là tôi có cắp một lần hai thẻ không để làm secure",
+  "predicted": "ờ tôi muốn hỏi nữa là tôi được cấp một lần hai thẻ không để làm secure",
   "unintelligible": false,
-  "wer": 0.35714285714285715,
-  "werEdits": 5,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
   "werRefWords": 14,
-  "werNormalizedGold": "toi muon hoi toi duoc cap mot lan hai the khong de so cua",
-  "werNormalizedPredicted": "toi muon hoi nua la toi co cap mot lan hai the khong de lam secure",
-  "significantWer": 0.14285714285714285,
-  "majorErrorsCount": 2,
+  "werNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
+  "werNormalizedPredicted": "tôi muốn hỏi nữa là tôi được cấp một lần hai thẻ không để làm secure",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
-  "sigWerNormalizedGold": "toi muon hoi toi duoc cap mot lan hai the khong de so cua",
-  "sigWerNormalizedPredicted": "toi muon hoi nua la toi co cap mot lan hai the khong de lam secure",
+  "sigWerNormalizedGold": "tôi muốn hỏi tôi được cấp một lần hai thẻ không để sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi nữa là tôi được cấp một lần hai thẻ không để làm secure",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'nua' at position 3",
-      "reason": "'nua' (meaning 'again' or 'more') adds a nuance of repetition or continuation, but does not significantly change the main intent of the question.",
+      "error": "Insertion: 'nữa' at position 3",
+      "reason": "The insertion of 'nữa' (meaning 'more' or 'again') adds a nuance but does not change the overall intent or meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Substitution: 'duoc' to 'co' at position 4",
-      "reason": "'duoc' (can/be allowed to) vs 'co' (have) changes the meaning of the sentence, as it shifts from asking about permission/possibility to stating possession, which can confuse the intent.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'so' to 'lam' at position 12",
-      "reason": "'so' (number) vs 'lam' (do/make) changes the meaning of the phrase, making the sentence incoherent in context.",
+      "error": "Substitution: 'sơ' to 'làm' at position 12",
+      "reason": "'sơ cua' in Vietnamese means 'spare' (as in a spare card), while 'làm secure' (mix of Vietnamese and English) means 'to make secure'. This changes the meaning of why the card is issued, from having a spare to making it secure, which is a significant change in intent.",
       "score": 1
     }
   ]

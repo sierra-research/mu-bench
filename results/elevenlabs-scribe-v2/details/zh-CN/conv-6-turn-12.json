@@ -2,15 +2,21 @@
   "gold": "你说得不对，我的姓名是君玲。",
   "predicted": "你说的不对，我的姓名是君灵。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.08333333333333333,
+  "werEdits": 1,
   "werRefWords": 12,
-  "werNormalizedGold": "你 说 得 不 对 我 的 姓名 是 君玲",
-  "werNormalizedPredicted": "你 说 得 不 对 我 的 姓名 是 君玲",
-  "significantWer": 0.0,
+  "werNormalizedGold": "你说得不对 我的姓名是君玲",
+  "werNormalizedPredicted": "你说得不对 我的姓名是君灵",
+  "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "你 说 得 不 对 我 的 姓 名 是 君 玲",
-  "sigWerNormalizedPredicted": "你 说 得 不 对 我 的 姓 名 是 君 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "你 说 得 不 对 我 的 姓 名 是 君 灵",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '玲' to '灵' at position 11",
+      "reason": "Both are different Chinese characters with different meanings, and since this is a proper noun (a name), a single character difference is a minor error as the name is still recognizable but not exactly correct.",
+      "score": 2
+    }
+  ]
 }

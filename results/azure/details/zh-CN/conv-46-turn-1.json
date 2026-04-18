@@ -2,15 +2,21 @@
   "gold": "我想提高我的信用卡限额。",
   "predicted": "呃，我想提高我的信用客限额。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
   "werRefWords": 11,
   "werNormalizedGold": "我想提高我的信用卡限额",
-  "werNormalizedPredicted": "我想提高我的信用卡限额",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我想提高我的信用客限额",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 限 额",
-  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 限 额",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 客 限 额",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '卡' to '客' at position 8",
+      "reason": "'卡' means 'card' (as in credit card), while '客' means 'guest' or 'customer'. This substitution changes the meaning of the phrase '信用卡' (credit card) to '信用客', which is not a valid term and makes the sentence confusing or incorrect.",
+      "score": 1
+    }
+  ]
 }

@@ -1,27 +1,22 @@
 {
   "gold": "Doğrudur, evet.",
-  "predicted": "Doğru.",
+  "predicted": "Çok beğendim.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "doğrudur evet",
-  "werNormalizedPredicted": "doğru",
-  "significantWer": 0.0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "çok beğendim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "doğrudur evet",
-  "sigWerNormalizedPredicted": "doğru",
+  "sigWerNormalizedPredicted": "çok beğendim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'doğrudur' to 'doğru' at position 0",
-      "reason": "'doğrudur' (it is correct) and 'doğru' (correct) are semantically very close; the meaning is preserved in context.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'evet' at position 1",
-      "reason": "Omitting 'evet' (yes) removes an explicit affirmation, which can change the intent or certainty of the statement.",
-      "score": 2
+      "error": "Substitution: 'doğrudur' to 'çok' at position 0",
+      "reason": "'doğrudur' means 'it is correct' or 'right', while 'çok' means 'very'. The meaning of the sentence is completely changed and does not convey the intended affirmation.",
+      "score": 1
     }
   ]
 }
