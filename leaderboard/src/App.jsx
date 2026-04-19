@@ -104,8 +104,8 @@ export default function App() {
                 <div className="footer-inner">
                     <p className="footer-contact">
                         For questions or feedback, contact{" "}
-                        <a href="mailto:research@sierra.ai" className="footer-email">
-                            research@sierra.ai
+                        <a href="mailto:soham@sierra.ai" className="footer-email">
+                            soham@sierra.ai
                         </a>
                     </p>
                 </div>
