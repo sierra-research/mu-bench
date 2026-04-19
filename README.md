@@ -41,7 +41,7 @@ The audio is hosted as a gated dataset on HuggingFace. You'll need to:
 
 ```bash
 export HF_TOKEN=your_token_here
-pip install -r scripts/requirements.txt
+pip install -e ".[tools]"
 python scripts/download_audio.py
 ```
 
@@ -103,11 +103,11 @@ Results are posted as a comment on your PR and added to the leaderboard on merge
 
 ```
 manifest.json              # Audio file list + ground truth transcripts
+pyproject.toml             # Python deps: base + [tools], [scoring], [transcribe] extras
 scripts/
-  download_audio.py        # Download audio from HuggingFace
-  transcribe.py            # Runs provider APIs to generate transcripts + latency
+  download_audio.py        # Download audio from HuggingFace (requires [tools])
+  transcribe.py            # Runs provider APIs to generate transcripts + latency (requires [transcribe])
   latency_stats.py         # Compute p50/p95 latency from latency.json files
-  requirements.txt         # Python dependencies
 submissions/
   SUBMITTING.md            # Full submission contract
   raw/                     # Raw transcripts + latency.json, one directory per provider
@@ -117,12 +117,23 @@ scoring/
   normalize.py             # LLM-based transcript normalization
   score.py                 # Metrics computation (corpus WER, sig. WER)
   metrics.py               # Core metric implementations
-  prompts.py               # ⚠️ Gitignored — injected from GitHub secret in CI
+  prompts.py               # Gitignored — injected from GitHub secret in CI
 results/
   leaderboard.json         # Aggregated leaderboard data
   <provider>/scores.json   # Per-provider score breakdowns (includes latency)
 leaderboard/               # React/Vite leaderboard web app
 .github/workflows/         # CI for validation, scoring, and deployment
+```
+
+### Installing dependencies
+
+The project uses `pyproject.toml` with three optional extras:
+
+```bash
+pip install -e .                # base: just the validator (pyyaml)
+pip install -e ".[tools]"       # + huggingface-hub, requests (for download_audio.py)
+pip install -e ".[scoring]"     # + jiwer, openai (maintainers; needs scoring/prompts.py)
+pip install -e ".[transcribe]"  # + provider SDKs (for running scripts/transcribe.py)
 ```
 
 ## Citing MU-Bench
