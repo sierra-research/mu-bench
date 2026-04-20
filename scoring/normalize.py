@@ -20,6 +20,7 @@ Usage:
 import argparse
 import csv
 import json
+import sys
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -317,6 +318,9 @@ def main():
 
     print(f"\nSaved {saved} normalized files to {normalized_dir}")
     print(f"Failed: {failed}")
+
+    if failed > 0:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
