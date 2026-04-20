@@ -47,6 +47,7 @@ jobs:
       - name: Validate submission format
         id: validate
         run: |
+          set -o pipefail
           python scoring/validate.py "${{ steps.detect.outputs.dir }}" --manifest manifest.json 2>&1 | tee validation_output.txt
         continue-on-error: true
 
