@@ -98,11 +98,7 @@ def cmd_invalidate(args) -> None:
                 norm_path.unlink()
                 removed += 1
 
-    retained = sum(
-        1
-        for key in current
-        if (args.normalized_dir / f"{key}.txt").exists()
-    )
+    retained = sum(1 for key in current if (args.normalized_dir / f"{key}.txt").exists())
     print(
         f"Cache hit. {changed} file(s) invalidated (content changed), "
         f"{removed} stale entries removed, {retained} retained."
