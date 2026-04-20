@@ -117,7 +117,7 @@ jobs:
             --submission-dir "${{ steps.detect.outputs.dir }}" \
             --manifest manifest.json \
             --output-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
-            --num-workers 40
+            --num-workers 25
 
       - name: Update normalized cache metadata
         run: |
@@ -141,7 +141,7 @@ jobs:
             --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
             --manifest manifest.json \
             --output-dir "results/${{ steps.detect.outputs.name }}" \
-            --num-workers 40
+            --num-workers 25
 
       - name: Merge latency statistics into scores.json
         run: |

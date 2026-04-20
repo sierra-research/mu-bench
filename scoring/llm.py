@@ -20,8 +20,9 @@ import time
 
 import requests
 
-MAX_RETRIES = 3
+MAX_RETRIES = 6
 RETRY_BACKOFF = 2.0
+MAX_BACKOFF_SECONDS = 60.0
 
 
 # Pinned judge configuration. Defaults are the reference values used to
@@ -178,15 +179,31 @@ def call_llm(prompt: str, response_format: dict | None = None) -> str:
             status = e.response.status_code if e.response is not None else None
             body = e.response.text[:500] if e.response is not None else "no response body"
             if status in (429, 500, 502, 503, 529) and attempt < MAX_RETRIES - 1:
-                wait = RETRY_BACKOFF * (2**attempt)
-                print(f"  LLM call got {status}, retrying in {wait:.0f}s (attempt {attempt + 1}/{MAX_RETRIES})...")
+                # Honor the server's Retry-After header when present (OpenAI
+                # sends seconds on 429 rate-limit responses). Fall back to
+                # exponential backoff, capped so one stuck call can't stall
+                # the whole batch.
+                retry_after = None
+                if e.response is not None:
+                    raw = e.response.headers.get("Retry-After") or e.response.headers.get("x-ratelimit-reset-requests")
+                    try:
+                        retry_after = float(raw) if raw is not None else None
+                    except ValueError:
+                        retry_after = None
+                exp = RETRY_BACKOFF * (2**attempt)
+                wait = min(MAX_BACKOFF_SECONDS, retry_after if retry_after is not None else exp)
+                source = "Retry-After" if retry_after is not None else "backoff"
+                print(
+                    f"  LLM call got {status}, retrying in {wait:.0f}s via {source} "
+                    f"(attempt {attempt + 1}/{MAX_RETRIES})..."
+                )
                 time.sleep(wait)
                 continue
             print(f"  LLM call failed (HTTP {status}): {body}")
             raise
         except requests.exceptions.Timeout:
             if attempt < MAX_RETRIES - 1:
-                wait = RETRY_BACKOFF * (2**attempt)
+                wait = min(MAX_BACKOFF_SECONDS, RETRY_BACKOFF * (2**attempt))
                 print(f"  LLM call timed out, retrying in {wait:.0f}s (attempt {attempt + 1}/{MAX_RETRIES})...")
                 time.sleep(wait)
                 continue
