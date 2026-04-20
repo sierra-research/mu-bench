@@ -84,6 +84,28 @@ jobs:
           SCORING_SEED: "7"
         run: python -m scoring.normalize_gold --manifest manifest.json
 
+      # Reuse normalized output from the preceding /score run(s) on this PR.
+      # The restore-keys prefix matches any cache written under the same
+      # submission name + PR number, so a merge commit inherits the last
+      # /score result and only re-normalizes files whose raw content changed.
+      - name: Restore normalized cache
+        uses: actions/cache@v4
+        with:
+          path: submissions/normalized/${{ steps.detect.outputs.name }}
+          key: normalize-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-${{ github.event.pull_request.merge_commit_sha }}
+          restore-keys: |
+            normalize-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-
+
+      - name: Invalidate stale normalized files
+        run: |
+          python scripts/invalidate_normalized_cache.py invalidate \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --judge-model gpt-4.1-2025-04-14 \
+            --judge-temperature 0.0 \
+            --judge-seed 7 \
+            --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
+
       - name: Normalize submissions
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -94,7 +116,18 @@ jobs:
           python -m scoring.normalize \
             --submission-dir "${{ steps.detect.outputs.dir }}" \
             --manifest manifest.json \
-            --output-dir "submissions/normalized/${{ steps.detect.outputs.name }}"
+            --output-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --num-workers 25
+
+      - name: Update normalized cache metadata
+        run: |
+          python scripts/invalidate_normalized_cache.py update \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --judge-model gpt-4.1-2025-04-14 \
+            --judge-temperature 0.0 \
+            --judge-seed 7 \
+            --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
 
       - name: Calculate metrics
         env:
@@ -108,7 +141,7 @@ jobs:
             --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
             --manifest manifest.json \
             --output-dir "results/${{ steps.detect.outputs.name }}" \
-            --num-workers 8
+            --num-workers 25
 
       - name: Merge latency statistics into scores.json
         run: |
