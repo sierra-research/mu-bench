@@ -132,11 +132,12 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             const { data: comment } = await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: ${{ needs.gate.outputs.pr_number }},
-              body: '## ⏳ Scoring in progress\n\nThe scoring pipeline is running. Results will be posted here when complete.',
+              body: `## ⏳ Scoring in progress\n\nThe scoring pipeline is running (typically 15–20 min — LLM-based normalization and per-error significance classification). Follow live progress in the [workflow logs](${runUrl}). Results will be posted here when complete.`,
             });
             core.setOutput('comment_id', String(comment.id));
 
