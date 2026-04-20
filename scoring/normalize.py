@@ -241,8 +241,12 @@ def main():
     prompt_template, response_schema = _load_pred_prompt()
 
     total = len(to_normalize)
-    batch_size = 100
-    print(f"Normalizing {total} pairs with {args.num_workers} workers in batches of {batch_size}...")
+    # Batch size tracks worker count so progress prints at the same cadence as
+    # score.py's significant-WER loop. Each batch = one round of parallel LLM
+    # calls, so intra-batch parallelism isn't affected — we just get a progress
+    # line every `num_workers` utterances instead of every 100.
+    batch_size = max(args.num_workers, 1)
+    print(f"Normalizing {total} pairs with {args.num_workers} workers in batches of {batch_size}...", flush=True)
 
     # Comparison CSV for visual review
     comparison_path = normalized_dir / "comparison.csv"
@@ -267,7 +271,6 @@ def main():
         for batch_start in range(0, total, batch_size):
             batch_end = min(batch_start + batch_size, total)
             batch = to_normalize[batch_start:batch_end]
-            print(f"Batch {batch_start + 1}-{batch_end} / {total}...")
 
             prompts = []
             for locale, uid, gold, predicted in batch:
@@ -291,7 +294,7 @@ def main():
                 )
                 loaded = load_responses(responses)
             except Exception as e:
-                print(f"Batch failed: {e}. Skipping batch, will retry on next run.")
+                print(f"Batch failed: {e}. Skipping batch, will retry on next run.", flush=True)
                 failed += len(batch)
                 continue
 
@@ -305,7 +308,7 @@ def main():
 
                 if norm_pred is None:
                     failed += 1
-                    print(f"  Failed: {locale}/{utterance_id}")
+                    print(f"  Failed: {locale}/{utterance_id}", flush=True)
                     continue
 
                 out_file.parent.mkdir(parents=True, exist_ok=True)
@@ -314,7 +317,7 @@ def main():
                 comp_writer.writerow([locale, filename, gold, predicted, norm_pred])
                 saved += 1
 
-            print(f"  Progress: {saved + failed}/{total} done ({saved} saved, {failed} failed)")
+            print(f"Normalizing: {batch_end}/{total} processed ({saved} saved, {failed} failed)", flush=True)
 
     print(f"\nSaved {saved} normalized files to {normalized_dir}")
     print(f"Failed: {failed}")
