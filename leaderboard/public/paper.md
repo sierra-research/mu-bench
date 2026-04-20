@@ -75,7 +75,7 @@ All personal details in the conversations — names, email addresses, phone numb
 
 Not all transcription errors carry equal weight. "Um" versus "umm" has the same edit distance as "Mason" versus "Jason," but one is a trivial spelling variant while the other refers to a completely different person. A transcription that drops a filler word is functionally perfect; one that gets a single digit wrong in a phone number can render the utterance useless for downstream processing.
 
-We report a new metric, Utterance Error Rate (UER), alongside the traditional Word Error Rate (WER) and latency. UER supplements WER by scoring on semantic meaning, while WER remains a token-level measure of transcription accuracy.
+We report Utterance Error Rate (UER) alongside the traditional Word Error Rate (WER) and latency. UER supplements WER by scoring on semantic meaning, while WER remains a token-level measure of transcription accuracy.
 
 ### LLM-based normalization
 
@@ -118,7 +118,7 @@ This normalization is powered by GPT-4.1 with temperature 0. The full prompt tem
 
 Word Error Rate is the standard metric used by most ASR benchmarks. It measures the minimum edit distance between reference and hypothesis at the word level — substitutions, deletions, and insertions divided by the number of reference words.
 
-But WER treats all errors equally — a dropped "uh" counts the same as a misheard phone number digit. This makes it an unreliable signal for production use, where what matters is whether the meaning of an utterance was preserved. To address this, we introduce Utterance Error Rate, which isolates meaning-changing errors from surface-level ones.
+But WER treats all errors equally — a dropped "uh" counts the same as a misheard phone number digit. This makes it an unreliable signal for production use, where what matters is whether the meaning of an utterance was preserved. To address this, we use Utterance Error Rate, which isolates meaning-changing errors from surface-level ones.
 
 After word alignment, each error (substitution, deletion, insertion) is scored by an LLM into one of three categories:
 
@@ -163,7 +163,7 @@ Results are drawn from the current leaderboard as of April 2026.
 
 <!-- widget:radar -->
 
-**WER alone is misleading.** Deepgram Nova-3 has 5.4% WER on en-US with 5.8% UER — nearly every utterance with errors contains at least one meaning-changing one. Microsoft Azure has 4.2% WER but only 3.1% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we introduced Utterance Error Rate.
+**WER alone is misleading.** Deepgram Nova-3 has 5.4% WER on en-US with 5.8% UER — nearly every utterance with errors contains at least one meaning-changing one. Microsoft Azure has 4.2% WER but only 3.1% UER — most of its errors are surface-level. Raw WER cannot distinguish providers that make many harmless errors from those that make fewer but more consequential ones. This is why we report UER alongside WER.
 
 **English is the strongest locale, but no language is fully solved.** All five providers achieve UER between 3–7% on en-US (Azure best at 3.1%, OpenAI weakest at 6.2%).
 
