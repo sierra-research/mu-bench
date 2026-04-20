@@ -89,6 +89,10 @@ jobs:
           git fetch origin pull/${{ needs.gate.outputs.pr_number }}/head:pr-head
           git checkout pr-head -- submissions/raw/
 
+      - name: Record PR head SHA for cache key
+        id: prhead
+        run: echo "sha=$(git rev-parse pr-head)" >> "$GITHUB_OUTPUT"
+
       - name: Detect and validate submission directory name
         id: detect
         run: |
@@ -159,6 +163,24 @@ jobs:
           SCORING_SEED: "7"
         run: python -m scoring.normalize_gold --manifest manifest.json
 
+      - name: Restore normalized cache
+        uses: actions/cache@v4
+        with:
+          path: submissions/normalized/${{ steps.detect.outputs.name }}
+          key: normalize-v1-${{ steps.detect.outputs.name }}-${{ needs.gate.outputs.pr_number }}-${{ steps.prhead.outputs.sha }}
+          restore-keys: |
+            normalize-v1-${{ steps.detect.outputs.name }}-${{ needs.gate.outputs.pr_number }}-
+
+      - name: Invalidate stale normalized files
+        run: |
+          python scripts/invalidate_normalized_cache.py invalidate \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --judge-model gpt-4.1-2025-04-14 \
+            --judge-temperature 0.0 \
+            --judge-seed 7 \
+            --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
+
       - name: Normalize submissions
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -171,6 +193,16 @@ jobs:
             --manifest manifest.json \
             --output-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
             --num-workers 40
+
+      - name: Update normalized cache metadata
+        run: |
+          python scripts/invalidate_normalized_cache.py update \
+            --submission-dir "${{ steps.detect.outputs.dir }}" \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --judge-model gpt-4.1-2025-04-14 \
+            --judge-temperature 0.0 \
+            --judge-seed 7 \
+            --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
 
       - name: Calculate metrics
         env:
