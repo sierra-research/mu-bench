@@ -33,10 +33,16 @@ export default function Leaderboard() {
     const analyserRef = useRef(null);
     const animFrameRef = useRef(null);
     const [selectedProvider, setSelectedProvider] = useState(null);
+    const [currentPage, setCurrentPage] = useState(1);
+    const ROWS_PER_PAGE = 5;
 
     useEffect(() => {
         localStorage.setItem("lb-locale", locale);
     }, [locale]);
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [locale, sortBy]);
 
     useEffect(() => {
         if (audioRef.current) {
@@ -167,6 +173,9 @@ export default function Leaderboard() {
     const sigWerMetric = METRICS.significantWer;
     const latencyMetric = METRICS.completeP95Ms;
 
+    const totalPages = Math.max(1, Math.ceil(rankedProviders.length / ROWS_PER_PAGE));
+    const pagedProviders = rankedProviders.slice((currentPage - 1) * ROWS_PER_PAGE, currentPage * ROWS_PER_PAGE);
+
     return (
         <div className="leaderboard">
             <div className="leaderboard-inner">
@@ -259,7 +268,7 @@ export default function Leaderboard() {
                                     </td>
                                 </tr>
                             )}
-                            {rankedProviders.map((provider) => (
+                            {pagedProviders.map((provider) => (
                                 <ProviderRow
                                     key={provider.id}
                                     provider={provider}
@@ -271,6 +280,28 @@ export default function Leaderboard() {
                         </tbody>
                     </table>
                 </div>
+
+                {rankedProviders.length > ROWS_PER_PAGE && (
+                    <div className="lb-pagination">
+                        <button
+                            type="button"
+                            onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                            disabled={currentPage === 1}
+                        >
+                            Previous
+                        </button>
+                        <span className="lb-pagination-status">
+                            Page {currentPage} of {totalPages}
+                        </span>
+                        <button
+                            type="button"
+                            onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                            disabled={currentPage === totalPages}
+                        >
+                            Next
+                        </button>
+                    </div>
+                )}
 
                 <p className="uer-footnote">
                     * Fraction of utterances containing at least one meaning-changing transcription error. Per-locale
@@ -505,6 +536,8 @@ function ProviderDetailOverall({ provider, providerId }) {
                     </div>
                 )}
             </div>
+
+            <InferenceConfigPanel provider={provider} />
         </div>
     );
 }
@@ -516,6 +549,8 @@ function ProviderDetailOverall({ provider, providerId }) {
  * if the provider's scores.json predates the config block.
  */
 function InferenceConfigPanel({ provider }) {
+    const [showInferenceConfig, setShowInferenceConfig] = useState(false);
+
     const cfg = provider.inferenceConfig;
     if (!cfg || typeof cfg !== "object" || Object.keys(cfg).length === 0) {
         return null;
@@ -524,7 +559,13 @@ function InferenceConfigPanel({ provider }) {
     const allDefault = entries.every(([, v]) => typeof v === "string" && v.trim() === "default");
     return (
         <div className="collapsible-section">
-            <div className="inference-config-header">
+            <button
+                type="button"
+                className="collapsible-toggle"
+                onClick={() => setShowInferenceConfig(!showInferenceConfig)}
+                aria-expanded={showInferenceConfig}
+            >
+                <span className={`collapsible-caret ${showInferenceConfig ? "open" : ""}`}>{"▶"}</span>
                 <span className="collapsible-label">Inference config</span>
                 {allDefault && (
                     <span
@@ -534,17 +575,21 @@ function InferenceConfigPanel({ provider }) {
                         Default-only
                     </span>
                 )}
-            </div>
-            <table className="scores-table">
-                <tbody>
-                    {entries.map(([k, v]) => (
-                        <tr key={k}>
-                            <td>{k}</td>
-                            <td>{v || "\u2014"}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            </button>
+            {showInferenceConfig && (
+                <div className="collapsible-content">
+                    <table className="scores-table">
+                        <tbody>
+                            {entries.map(([k, v]) => (
+                                <tr key={k}>
+                                    <td>{k}</td>
+                                    <td>{v || "\u2014"}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            )}
         </div>
     );
 }
@@ -595,10 +640,11 @@ function ProviderDetail({ providerId, providers, locale, onClose }) {
                 {locale === "overall" ? (
                     <ProviderDetailOverall provider={provider} providerId={providerId} />
                 ) : (
-                    <ProviderDetailLocale provider={provider} locale={locale} />
+                    <>
+                        <ProviderDetailLocale provider={provider} locale={locale} />
+                        <InferenceConfigPanel provider={provider} />
+                    </>
                 )}
-
-                <InferenceConfigPanel provider={provider} />
 
                 <div className="provider-detail-footer">
                     <a
