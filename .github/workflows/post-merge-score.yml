@@ -143,6 +143,28 @@ jobs:
             --judge-seed 7 \
             --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
 
+      # Reuse per-utterance significance/WER results from the preceding
+      # /score run on this PR. Invalidation drops only detail files whose
+      # normalized prediction hash changed, so an identical post-merge
+      # tree inherits all of /score's LLM work.
+      - name: Restore results cache
+        uses: actions/cache@v4
+        with:
+          path: results/${{ steps.detect.outputs.name }}
+          key: results-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-${{ github.event.pull_request.merge_commit_sha }}
+          restore-keys: |
+            results-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-
+
+      - name: Invalidate stale results
+        run: |
+          python scripts/invalidate_results_cache.py invalidate \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --results-dir "results/${{ steps.detect.outputs.name }}" \
+            --judge-model gpt-4.1-2025-04-14 \
+            --judge-temperature 0.0 \
+            --judge-seed 7 \
+            --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
+
       - name: Calculate metrics
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -156,6 +178,16 @@ jobs:
             --manifest manifest.json \
             --output-dir "results/${{ steps.detect.outputs.name }}" \
             --num-workers 25
+
+      - name: Update results cache metadata
+        run: |
+          python scripts/invalidate_results_cache.py update \
+            --normalized-dir "submissions/normalized/${{ steps.detect.outputs.name }}" \
+            --results-dir "results/${{ steps.detect.outputs.name }}" \
+            --judge-model gpt-4.1-2025-04-14 \
+            --judge-temperature 0.0 \
+            --judge-seed 7 \
+            --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
 
       - name: Merge latency statistics into scores.json
         run: |
