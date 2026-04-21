@@ -1,0 +1,27 @@
+{
+  "gold": "I would like my credit limit raised.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "i would like my credit limit raised",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "i would like my credit limit raised",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'my' at position 3",
+      "reason": "The word 'my' is missing, but given the actual transcription is already completely off-topic, this further contributes to the significant error.",
+      "score": 1
+    }
+  ]
+}

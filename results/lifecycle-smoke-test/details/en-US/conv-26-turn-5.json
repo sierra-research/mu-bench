@@ -1,0 +1,27 @@
+{
+  "gold": "I'm checking on a recent order for my microwave.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "i am checking on a recent order for my microwave",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "i am checking on a recent order for my microwave",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'on' at position 3",
+      "reason": "The word 'on' is missing, but given the overall mismatch, this contributes to the incoherence.",
+      "score": 1
+    }
+  ]
+}

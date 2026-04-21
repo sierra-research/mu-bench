@@ -1,0 +1,27 @@
+{
+  "gold": "C N 9 4. Nope. It's C N 9 5 4 1 5 0 6.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "c n nine four nope it is c n nine five four one five zero six",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "c n nine four nope it is c n nine five four one five zero six",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sequence, which is a spelled-out code or identifier. 'Lifecycle' is not semantically related to 'c'.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'four' at position 3",
+      "reason": "The word 'four' is missing, which is significant in a code or identifier sequence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "It is 1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "it is one two one two one two three four five six seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "it is one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'it' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected sequence of numbers and does not preserve any of the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'two' at position 3",
+      "reason": "The expected sequence of numbers is missing, which is significant for the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

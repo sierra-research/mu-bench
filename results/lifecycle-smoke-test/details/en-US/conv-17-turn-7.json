@@ -1,0 +1,27 @@
+{
+  "gold": "Let's see. Okay. I found it. It's John dot Brown at email dot com.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "let us see okay i found it it is john dot brown at email dot com",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "let us see okay i found it it is john dot brown at email dot com",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'okay' at position 3",
+      "reason": "The word 'okay' is missing, but given the overall mismatch, this contributes to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

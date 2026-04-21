@@ -1,0 +1,27 @@
+{
+  "gold": "Yes. 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "yes two one two one two three four five six seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "yes two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'two' at position 3",
+      "reason": "The expected sequence of numbers is missing, which is significant for understanding the content.",
+      "score": 1
+    }
+  ]
+}

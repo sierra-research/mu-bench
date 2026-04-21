@@ -1,0 +1,27 @@
+{
+  "gold": "Somebody just walked by me. I'm so sorry. Can you read the numbers again? I got distracted.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "somebody just walked by me i am so sorry can you read the numbers again i got distracted",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "somebody just walked by me i am so sorry can you read the numbers again i got distracted",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'somebody' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected sentence, with no overlap in meaning or content. The meaning is entirely lost and incoherent compared to the reference.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'by' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "That would be 1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "that would be one two one two one two three four five six seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "that would be one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'that' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected, changing the meaning entirely and making the sentence incoherent with respect to the reference.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'one' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'would', which significantly alters the meaning and coherence of the sentence.",
+      "score": 1
+    }
+  ]
+}

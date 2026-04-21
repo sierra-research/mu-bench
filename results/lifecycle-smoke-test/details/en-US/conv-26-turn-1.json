@@ -1,0 +1,27 @@
+{
+  "gold": "My regular monthly bill.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "my regular monthly bill",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "my regular monthly bill",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'my' to 'lifecycle' at position 0",
+      "reason": "The word 'lifecycle' is completely unrelated to 'my' and changes the subject and meaning of the sentence, making the transcription incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bill' at position 3",
+      "reason": "The omission of 'bill' removes the main subject of the expected sentence, making the actual transcription completely different in meaning.",
+      "score": 1
+    }
+  ]
+}

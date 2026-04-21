@@ -1,0 +1,27 @@
+{
+  "gold": "Yes, hi. I was calling to see if I could get a higher limit on my credit card.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "yes hi i was calling to see if i could get a higher limit on my credit card",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "yes hi i was calling to see if i could get a higher limit on my credit card",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'lifecycle' at position 0",
+      "reason": "'lifecycle' is completely unrelated to 'yes' and changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'was' at position 3",
+      "reason": "'smoke' is unrelated to 'hi', making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

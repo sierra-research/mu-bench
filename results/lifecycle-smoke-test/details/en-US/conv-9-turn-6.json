@@ -1,0 +1,27 @@
+{
+  "gold": "Oh, you just need everything. 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "oh you just need everything two one two one two three four five six seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "oh you just need everything two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'oh' to 'lifecycle' at position 0",
+      "reason": "'lifecycle' is completely unrelated to 'oh' and changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'need' at position 3",
+      "reason": "'smoke' is unrelated to 'you', resulting in a sentence with a completely different meaning.",
+      "score": 1
+    }
+  ]
+}

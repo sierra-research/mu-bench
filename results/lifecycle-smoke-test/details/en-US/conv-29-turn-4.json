@@ -1,0 +1,27 @@
+{
+  "gold": "2 1 2 1 2 3 45 67.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "two one two one two three forty five sixty seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "two one two one two three forty five sixty seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'two' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected, which is a sequence of numbers. 'lifecycle' is unrelated and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'one' at position 3",
+      "reason": "The expected number 'one' is missing in the actual transcription, which is significant as it is part of a sequence (likely a phone number or code).",
+      "score": 1
+    }
+  ]
+}

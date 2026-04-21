@@ -1,0 +1,27 @@
+{
+  "gold": "C N 0 2 5 0 9 5 8. Is that correct?",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "c n zero two five zero nine five eight is that correct",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "c n zero two five zero nine five eight is that correct",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sequence, which is a spelled-out code. This substitution makes the sentence incoherent and loses the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'two' at position 3",
+      "reason": "The entire code sequence is missing from the actual transcription, which is a significant error as the meaning is completely lost.",
+      "score": 1
+    }
+  ]
+}

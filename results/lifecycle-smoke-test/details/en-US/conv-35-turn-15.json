@@ -1,0 +1,27 @@
+{
+  "gold": "Yeah, you're very welcome. Okay. Okay.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "yeah you are very welcome okay okay",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "yeah you are very welcome okay okay",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yeah' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'very' at position 3",
+      "reason": "The word 'very' is missing, but since the rest of the sentence is already completely incorrect, this further contributes to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

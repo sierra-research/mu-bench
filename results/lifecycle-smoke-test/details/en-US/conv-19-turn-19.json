@@ -1,0 +1,27 @@
+{
+  "gold": "Exact credit limit amount.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "exact credit limit amount",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "exact credit limit amount",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'exact' to 'lifecycle' at position 0",
+      "reason": "'lifecycle' is completely unrelated to 'exact', changing the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'amount' at position 3",
+      "reason": "The word 'amount' is missing, which is critical to the meaning of the expected phrase.",
+      "score": 1
+    }
+  ]
+}

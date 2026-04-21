@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. That sounds good. Alright. I'll do that. Thank you for your help.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "okay that sounds good alright i will do that thank you for your help",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "okay that sounds good alright i will do that thank you for your help",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'good' at position 3",
+      "reason": "The word 'good' is missing, but the overall meaning is already lost due to previous errors.",
+      "score": 1
+    }
+  ]
+}

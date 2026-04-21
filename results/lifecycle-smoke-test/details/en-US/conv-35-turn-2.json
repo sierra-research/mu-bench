@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. Yeah, go ahead.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "okay yeah go ahead",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "okay yeah go ahead",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected phrase, changing the meaning entirely and making the sentence incoherent with the original intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ahead' at position 3",
+      "reason": "The word 'ahead' is missing, but since the rest of the sentence is already completely different, this further contributes to the loss of the original meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "My phone number is 1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "my phone number is one two one two one two three four five six seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "my phone number is one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'my' to 'lifecycle' at position 0",
+      "reason": "'lifecycle' is completely unrelated to 'my', changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 3",
+      "reason": "'is' is missing, but the sentence is already incoherent due to previous errors.",
+      "score": 1
+    }
+  ]
+}

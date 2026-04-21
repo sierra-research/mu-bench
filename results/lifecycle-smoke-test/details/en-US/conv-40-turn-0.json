@@ -1,0 +1,27 @@
+{
+  "gold": "Hello Anna. I would like some information on my invoices, please.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "hello anna i would like some information on my invoices please",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "hello anna i would like some information on my invoices please",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hello' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected greeting, changing the entire context and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'would' at position 3",
+      "reason": "The actual word is unrelated to the expected name, which changes the meaning and context significantly.",
+      "score": 1
+    }
+  ]
+}

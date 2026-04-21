@@ -1,0 +1,27 @@
+{
+  "gold": "Woah. Woah, woah. Let's slow that down. Let's do that one more time. I can't keep, slow it down a bit.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 23,
+  "werRefWords": 23,
+  "werNormalizedGold": "woah woah woah let us slow that down let us do that one more time i cannot keep slow it down a bit",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "woah woah woah let us slow that down let us do that one more time i cannot keep slow it down a bit",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'woah' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'let' at position 3",
+      "reason": "The word 'let' and all subsequent expected words are missing, resulting in a complete loss of the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

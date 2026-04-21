@@ -1,0 +1,27 @@
+{
+  "gold": "Yeah, I don't understand why it hasn't shipped yet.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "yeah i do not understand why it has not shipped yet",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "yeah i do not understand why it has not shipped yet",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yeah' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'not' at position 3",
+      "reason": "The word 'not' is missing, but since the entire sentence is already incoherent, this further contributes to the significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Okay, cool. You, too. Thank you so much for your help.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "okay cool you too thank you so much for your help",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "okay cool you too thank you so much for your help",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'too' at position 3",
+      "reason": "The word 'too' is missing, but the actual transcription is already completely off-topic, so this further contributes to the significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "No, that's all.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "no that is all",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "no that is all",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected, changing the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'all' at position 3",
+      "reason": "The word 'all' is missing, but since the rest of the sentence is already completely different, this further contributes to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

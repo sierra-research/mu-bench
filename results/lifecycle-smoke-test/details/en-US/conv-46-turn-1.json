@@ -1,0 +1,27 @@
+{
+  "gold": "Yes. Do it slowly, please.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "yes do it slowly please",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "yes do it slowly please",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'lifecycle' at position 0",
+      "reason": "The word 'lifecycle' is completely unrelated to 'yes', changing the meaning of the sentence entirely and making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'slowly' at position 3",
+      "reason": "The word 'slowly' is missing, which removes an important instruction from the sentence.",
+      "score": 1
+    }
+  ]
+}

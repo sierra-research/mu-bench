@@ -1,0 +1,27 @@
+{
+  "gold": "This is for the Visa card.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "this is for the visa card",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "this is for the visa card",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'this' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'the' at position 3",
+      "reason": "The word 'the' is missing, but given the overall mismatch, this contributes to the incoherence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Let me get a pen real quick, all right. Hold on.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "let me get a pen real quick all right hold on",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "let me get a pen real quick all right hold on",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 3",
+      "reason": "The word 'a' is missing, but this is minor compared to the overall loss of meaning; however, in this context, the entire sentence is lost.",
+      "score": 1
+    }
+  ]
+}

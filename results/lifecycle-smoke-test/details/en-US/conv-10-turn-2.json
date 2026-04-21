@@ -1,0 +1,27 @@
+{
+  "gold": "C N 3 5 4.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n three five four",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n three five four",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected spelled-out letter, making the meaning incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'five' at position 3",
+      "reason": "A number in a sequence is missing, which is significant for things like codes or identifiers.",
+      "score": 1
+    }
+  ]
+}

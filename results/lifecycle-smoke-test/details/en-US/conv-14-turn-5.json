@@ -1,0 +1,27 @@
+{
+  "gold": "I'm good. I could repeat it to you now.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "i am good i could repeat it to you now",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "i am good i could repeat it to you now",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'i' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'am', making the sentence incoherent and changing the meaning completely.",
+      "score": 1
+    }
+  ]
+}

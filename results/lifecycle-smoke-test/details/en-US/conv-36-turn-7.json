@@ -1,0 +1,27 @@
+{
+  "gold": "1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "one two one two one two three four five six seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'one' to 'lifecycle' at position 0",
+      "reason": "The word 'lifecycle' is completely unrelated to 'one', changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'two' at position 3",
+      "reason": "The word 'two' is missing, which breaks the sequence of numbers and changes the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "I need a copy of my latest invoice or statement.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "i need a copy of my latest invoice or statement",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "i need a copy of my latest invoice or statement",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'copy' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'need', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

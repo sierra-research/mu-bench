@@ -1,0 +1,27 @@
+{
+  "gold": "Let me give this a shot. So, is it C N 1 4 0 8 7 8 9?",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "let me give this a shot so is it c n one four zero eight seven eight nine",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "let me give this a shot so is it c n one four zero eight seven eight nine",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely different from the expected, with no overlap in meaning or content. The expected contains a question and a spelled-out code, while the actual is a generic phrase unrelated to the context. This derails the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'this' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

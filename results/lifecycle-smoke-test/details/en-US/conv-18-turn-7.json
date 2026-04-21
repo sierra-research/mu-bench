@@ -1,0 +1,27 @@
+{
+  "gold": "My home address is 1 2 3 Main Street apartment 4, Anytown, California 9 0 2 1 0.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "my home address is one two three main street apartment four anytown california nine zero two one zero",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "my home address is one two three main street apartment four anytown california nine zero two one zero",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'my' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected content, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 3",
+      "reason": "The actual word is unrelated to the expected word, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

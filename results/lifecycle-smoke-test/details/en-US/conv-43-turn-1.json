@@ -1,0 +1,27 @@
+{
+  "gold": "I would like you to repeat it, please.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "i would like you to repeat it please",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "i would like you to repeat it please",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'you' at position 3",
+      "reason": "The word 'you' is missing, which is important for the meaning of the sentence, but the actual transcription is already completely off-topic.",
+      "score": 1
+    }
+  ]
+}

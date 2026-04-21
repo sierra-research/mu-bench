@@ -1,0 +1,27 @@
+{
+  "gold": "Thank you. You, too. Bye.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "thank you you too bye",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "thank you you too bye",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thank' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'too' at position 3",
+      "reason": "The word 'too' is missing, but since the rest of the sentence is already completely incorrect, this further contributes to the incoherence.",
+      "score": 1
+    }
+  ]
+}

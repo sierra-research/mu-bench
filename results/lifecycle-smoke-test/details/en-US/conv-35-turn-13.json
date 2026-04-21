@@ -1,0 +1,27 @@
+{
+  "gold": "Let me see. So, you can't see the dates. Do you see what the date of the statement was generated?",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 20,
+  "werRefWords": 20,
+  "werNormalizedGold": "let me see so you cannot see the dates do you see what the date of the statement was generated",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "let me see so you cannot see the dates do you see what the date of the statement was generated",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'so' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'me', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

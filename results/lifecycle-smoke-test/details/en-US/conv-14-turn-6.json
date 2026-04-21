@@ -1,0 +1,27 @@
+{
+  "gold": "C N 7 6 2 4 2 0 6. Is that correct?",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "c n seven six two four two zero six is that correct",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "c n seven six two four two zero six is that correct",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sequence, which is a spelled-out code or identifier. This substitution makes the sentence incoherent and loses the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'six' at position 3",
+      "reason": "A digit in a sequence is missing, which is significant for codes or identifiers, making the transcription unusable for its intended purpose.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "You, too. Thank you.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "you too thank you",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "you too thank you",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'you' to 'lifecycle' at position 0",
+      "reason": "The word 'lifecycle' is completely unrelated to 'you', changing the meaning of the sentence entirely and making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'you' at position 3",
+      "reason": "The final 'you' is missing, which removes the polite closing of the sentence and contributes to the loss of intended meaning.",
+      "score": 1
+    }
+  ]
+}

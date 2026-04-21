@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. I have C as in cat, N as in Nancy, 0 6 7 1 7 2 7.",
+  "predicted": "lifecycle smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "okay i have c as in cat n as in nancy zero six seven one seven two seven",
+  "werNormalizedPredicted": "lifecycle smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "okay i have c as in cat n as in nancy zero six seven one seven two seven",
+  "sigWerNormalizedPredicted": "lifecycle smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'lifecycle' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'c' at position 3",
+      "reason": "The actual transcription omits the entire sequence of spelled-out letters and numbers, which are critical information. This is a significant error.",
+      "score": 1
+    }
+  ]
+}
