@@ -1,0 +1,27 @@
+{
+  "gold": "I would like some information on my invoices, please.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "i would like some information on my invoices please",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "i would like some information on my invoices please",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'some' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'would', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

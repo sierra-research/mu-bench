@@ -1,0 +1,27 @@
+{
+  "gold": "Any recent offers you're offering?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "any recent offers you are offering",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "any recent offers you are offering",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'any' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the topic and making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'you' at position 3",
+      "reason": "The entire phrase 'you are offering' is missing, which is essential to the meaning of the expected sentence.",
+      "score": 1
+    }
+  ]
+}

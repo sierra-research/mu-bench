@@ -1,0 +1,27 @@
+{
+  "gold": "C N 7 8 6。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n 七 八 六",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n 七 八 六",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, with unrelated words substituted. This derails the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '八' at position 3",
+      "reason": "A word from the expected sequence is missing, which is significant in a sequence of characters/numbers.",
+      "score": 1
+    }
+  ]
+}

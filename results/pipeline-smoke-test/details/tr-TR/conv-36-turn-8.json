@@ -1,0 +1,27 @@
+{
+  "gold": "Telefon numaramda yanlışlık var. Artı 90 123 0 90 45 67.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "telefon numaramda yanlışlık var artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "telefon numaramda yanlışlık var artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'telefon' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'var' at position 3",
+      "reason": "The actual word is unrelated and in a different language, causing a complete loss of intended meaning.",
+      "score": 1
+    }
+  ]
+}

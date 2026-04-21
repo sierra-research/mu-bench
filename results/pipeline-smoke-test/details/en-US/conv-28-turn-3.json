@@ -1,0 +1,27 @@
+{
+  "gold": "Oh, hold on. Oh crap. I'm sorry. I forgot I didn't have paper. Hold on. Let me get a piece of paper.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 24,
+  "werRefWords": 24,
+  "werNormalizedGold": "oh hold on oh crap i am sorry i forgot i did not have paper hold on let me get a piece of paper",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "oh hold on oh crap i am sorry i forgot i did not have paper hold on let me get a piece of paper",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'oh' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, resulting in a total loss of meaning and coherence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'oh' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

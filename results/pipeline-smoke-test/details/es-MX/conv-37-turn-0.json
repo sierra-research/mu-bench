@@ -1,0 +1,27 @@
+{
+  "gold": "Ana, gracias. Quería solicitar el estado de cuenta de mi tarjeta de crédito. ¿Tú me podrías ayudar con eso?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 19,
+  "werRefWords": 19,
+  "werNormalizedGold": "ana gracias quería solicitar el estado de cuenta de mi tarjeta de crédito tú me podrías ayudar con eso",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "ana gracias quería solicitar el estado de cuenta de mi tarjeta de crédito tú me podrías ayudar con eso",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ana' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'solicitar' at position 3",
+      "reason": "A key verb is missing, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

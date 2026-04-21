@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii. Z A Y N E P nokta A R S L A N.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii z a y n e p nokta a r s l a n",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii z a y n e p nokta a r s l a n",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected, which is a spelled-out name and email address. The meaning is entirely lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 3",
+      "reason": "A letter is missing from a spelled-out name or email address, which is a significant error as it changes the intended information.",
+      "score": 1
+    }
+  ]
+}

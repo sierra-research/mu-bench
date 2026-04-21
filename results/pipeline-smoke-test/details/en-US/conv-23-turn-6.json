@@ -1,0 +1,27 @@
+{
+  "gold": "It's John, John Brown.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "it is john john brown",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "it is john john brown",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'it' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'john' at position 3",
+      "reason": "A key part of the expected name is missing, making the actual sentence unrecognizable compared to the reference.",
+      "score": 1
+    }
+  ]
+}

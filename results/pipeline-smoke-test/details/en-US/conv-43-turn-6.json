@@ -1,0 +1,27 @@
+{
+  "gold": "My phone number is 1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "my phone number is one two one two one two three four five six seven",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "my phone number is one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'my' to 'pipeline' at position 0",
+      "reason": "'pipeline' is completely unrelated to 'my', and the entire sentence meaning is lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 3",
+      "reason": "The verb 'is' is missing, but the sentence is already incoherent due to previous errors.",
+      "score": 1
+    }
+  ]
+}

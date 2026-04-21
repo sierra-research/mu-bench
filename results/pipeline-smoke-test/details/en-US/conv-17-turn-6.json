@@ -1,0 +1,27 @@
+{
+  "gold": "Alright, let me look.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "alright let me look",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "alright let me look",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'alright' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'look' at position 3",
+      "reason": "The word 'look' is missing, but the actual transcription is already completely different in meaning.",
+      "score": 1
+    }
+  ]
+}

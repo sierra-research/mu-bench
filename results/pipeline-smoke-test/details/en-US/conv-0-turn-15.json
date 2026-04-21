@@ -1,0 +1,27 @@
+{
+  "gold": "What else can you help me with?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "what else can you help me with",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "what else can you help me with",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'what' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the topic and making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'you' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'else', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "El nombre es María López.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "el nombre es maría lópez",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "el nombre es maría lópez",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'el' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'maría' at position 3",
+      "reason": "A key proper noun (name) is missing, which is significant for the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

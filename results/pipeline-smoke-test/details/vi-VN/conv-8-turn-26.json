@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Thôi được rồi.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "okay thôi được rồi",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "okay thôi được rồi",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "A word from the expected sentence is missing, further derailing the meaning and making the actual transcription incoherent compared to the expected.",
+      "score": 1
+    }
+  ]
+}

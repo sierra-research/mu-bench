@@ -1,0 +1,27 @@
+{
+  "gold": "1 2 3 北京路的海淀，海淀区北京区，中国。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 17,
+  "werRefWords": 17,
+  "werNormalizedGold": "一 二 三 北京路的海淀 海淀区北京区中国",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "一 二 三 北 京 路 的 海 淀 海 淀 区 北 京 区 中 国",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '一' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not match the expected content at all, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '北' at position 3",
+      "reason": "The actual transcription omits this word entirely and is in a different language, which derails the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Déjeme, encuentro dónde anotarlo.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "déjeme encuentro dónde anotarlo",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "déjeme encuentro dónde anotarlo",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'déjeme' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Spanish), and the words are unrelated, making the sentence incoherent and completely changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'anotarlo' at position 3",
+      "reason": "The expected word is missing entirely, further contributing to the incoherence and loss of meaning.",
+      "score": 1
+    }
+  ]
+}

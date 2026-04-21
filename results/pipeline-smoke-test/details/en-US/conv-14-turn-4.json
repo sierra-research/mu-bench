@@ -1,0 +1,27 @@
+{
+  "gold": "Hello? Can you give what is 7 6 2?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "hello can you give what is seven six two",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "hello can you give what is seven six two",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hello' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'give' at position 3",
+      "reason": "The word 'give' is missing, which is important for the meaning of the expected sentence.",
+      "score": 1
+    }
+  ]
+}

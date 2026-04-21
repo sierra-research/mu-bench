@@ -1,0 +1,27 @@
+{
+  "gold": "Xin chào. Tôi muốn nâng hạn mức thẻ tín dụng.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "xin chào tôi muốn nâng hạn mức thẻ tín dụng",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "xin chào tôi muốn nâng hạn mức thẻ tín dụng",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xin' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'muốn' at position 3",
+      "reason": "The word 'muốn' (want) is missing, which is essential to the meaning of the sentence. Combined with the unrelated actual transcript, this is a significant error.",
+      "score": 1
+    }
+  ]
+}

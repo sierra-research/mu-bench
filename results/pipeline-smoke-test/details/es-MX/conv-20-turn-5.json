@@ -1,0 +1,27 @@
+{
+  "gold": "Es 55 12 34 56 78.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected content.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cinco' at position 3",
+      "reason": "A number is missing from the sequence, which is critical information in the expected context.",
+      "score": 1
+    }
+  ]
+}

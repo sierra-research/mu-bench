@@ -1,0 +1,27 @@
+{
+  "gold": "¿Ana, cómo estás? Pedí una reposición de mi tarjeta de crédito y quería ver cuál era el estatus. ¿Me podrías ayudar?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 21,
+  "werRefWords": 21,
+  "werNormalizedGold": "ana cómo estás pedí una reposición de mi tarjeta de crédito y quería ver cuál era el estatus me podrías ayudar",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "ana cómo estás pedí una reposición de mi tarjeta de crédito y quería ver cuál era el estatus me podrías ayudar",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ana' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'pedí' at position 3",
+      "reason": "The word is missing entirely, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

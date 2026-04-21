@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır. Evet. Zaynep nokta Arslan olacak.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "hayır evet zaynep nokta arslan olacak",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "hayır evet zaynep nokta arslan olacak",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 3",
+      "reason": "The word 'nokta' (meaning 'dot' in Turkish) is missing, which is significant in the context of a name or email address, and its omission further derails the meaning.",
+      "score": 1
+    }
+  ]
+}

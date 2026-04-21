@@ -1,0 +1,27 @@
+{
+  "gold": "我没有，我没有得到通知。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "我没有我没有得到通知",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 没 有 我 没 有 得 到 通 知",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 3",
+      "reason": "The actual transcription omits this word entirely and is in a different language, making the meaning completely lost.",
+      "score": 1
+    }
+  ]
+}

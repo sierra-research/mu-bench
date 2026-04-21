@@ -1,0 +1,27 @@
+{
+  "gold": "El número de teléfono es 55 12 34 56 78.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "el número de teléfono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "el número de teléfono es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'el' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'teléfono' at position 3",
+      "reason": "A key word ('teléfono') is missing, which is essential to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

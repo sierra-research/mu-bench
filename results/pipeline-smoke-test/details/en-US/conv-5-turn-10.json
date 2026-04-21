@@ -1,0 +1,27 @@
+{
+  "gold": "And that's in the app on my phone or am I doing that online?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "and that is in the app on my phone or am i doing that online",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "and that is in the app on my phone or am i doing that online",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'and' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'in' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'that', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "你再说我的追踪号码。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "你再说我的追踪号码",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "你 再 说 我 的 追 踪 号 码",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 3",
+      "reason": "The actual transcription omits this word entirely, further contributing to the incoherence and loss of meaning.",
+      "score": 1
+    }
+  ]
+}

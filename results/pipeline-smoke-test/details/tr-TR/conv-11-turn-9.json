@@ -1,0 +1,27 @@
+{
+  "gold": "Bir de adresimi kontrol edebilir misiniz? Yanlış yere gitmesin kargo.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "bir de adresimi kontrol edebilir misiniz yanlış yere gitmesin kargo",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "bir de adresimi kontrol edebilir misiniz yanlış yere gitmesin kargo",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bir' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kontrol' at position 3",
+      "reason": "The word 'kontrol' is missing, and the actual transcription does not provide any equivalent, further making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

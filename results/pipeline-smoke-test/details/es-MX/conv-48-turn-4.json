@@ -1,0 +1,27 @@
+{
+  "gold": "No. Mi correo electrónico es Juan López, Juan punto López. Deja y te lo digo de nuevo.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 17,
+  "werRefWords": 17,
+  "werNormalizedGold": "no mi correo electrónico es juan lópez juan punto lópez deja y te lo digo de nuevo",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "no mi correo electrónico es juan lópez juan punto lópez deja y te lo digo de nuevo",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'electrónico' at position 3",
+      "reason": "A key word from the expected sentence is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Exact credit limit amount.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "exact credit limit amount",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "exact credit limit amount",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'exact' to 'pipeline' at position 0",
+      "reason": "The substituted word is completely unrelated and changes the meaning of the sentence entirely, making the sentence incoherent with respect to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'amount' at position 3",
+      "reason": "A key word is missing, further derailing the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

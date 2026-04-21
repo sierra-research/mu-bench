@@ -1,0 +1,27 @@
+{
+  "gold": "嗯对的，对的对的。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "对的对的对的",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "对 的 对 的 对 的",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '对' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and contains unrelated content, making the sentence incoherent and the meaning entirely lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 3",
+      "reason": "The expected word is missing entirely, further contributing to the loss of meaning and coherence.",
+      "score": 1
+    }
+  ]
+}

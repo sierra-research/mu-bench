@@ -1,0 +1,27 @@
+{
+  "gold": "我已经告诉了你。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "我已经告诉了你",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 已 经 告 诉 了 你",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the meaning incoherent and unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '告' at position 3",
+      "reason": "The expected word is missing entirely in the actual transcription, which is in a different language, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

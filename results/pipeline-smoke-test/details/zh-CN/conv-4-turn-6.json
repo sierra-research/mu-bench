@@ -1,0 +1,27 @@
+{
+  "gold": "C N 2 4 0。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n 二 四 零",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n 二 四 零",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '四' at position 3",
+      "reason": "A Chinese numeral is missing entirely, which is a significant omission in the context of a sequence of characters/numbers.",
+      "score": 1
+    }
+  ]
+}

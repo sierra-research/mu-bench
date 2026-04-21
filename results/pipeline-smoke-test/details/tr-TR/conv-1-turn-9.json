@@ -1,0 +1,27 @@
+{
+  "gold": "Bana başka nasıl yardım edebilirsiniz?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "bana başka nasıl yardım edebilirsiniz",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "bana başka nasıl yardım edebilirsiniz",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bana' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'yardım' at position 3",
+      "reason": "A key word ('yardım' meaning 'help') is missing, which is critical to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "No, está muy bien. Te lo agradezco mucho.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "no está muy bien te lo agradezco mucho",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "no está muy bien te lo agradezco mucho",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Spanish) and has no semantic overlap with the expected sentence, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bien' at position 3",
+      "reason": "A key word from the expected sentence is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "准备好了，你再说吧。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "准备好了你再说吧",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "准 备 好 了 你 再 说 吧",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '准' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not match the expected content at all, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 3",
+      "reason": "The actual transcription omits this word entirely, and the overall meaning is lost due to language mismatch.",
+      "score": 1
+    }
+  ]
+}

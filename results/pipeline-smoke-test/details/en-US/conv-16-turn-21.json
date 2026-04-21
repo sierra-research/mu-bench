@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. Go ahead and send me to that live agent, please.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "okay go ahead and send me to that live agent please",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "okay go ahead and send me to that live agent please",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'and' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'go' and does not preserve the meaning of the sentence, contributing to a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

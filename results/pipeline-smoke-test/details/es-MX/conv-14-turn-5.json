@@ -1,0 +1,27 @@
+{
+  "gold": "Ay perdón. Es 5 5 1 2 3 4 5 6 7 8.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "ay perdón es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "ay perdón es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected phrase, both in language and meaning. The meaning of the sentence is lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cinco' at position 3",
+      "reason": "A number from a sequence is missing, which is significant in the context of a number sequence.",
+      "score": 1
+    }
+  ]
+}

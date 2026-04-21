@@ -1,0 +1,27 @@
+{
+  "gold": "Tamamdır, şu anda hazırım. Bana kodu okuyabilir misiniz?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "tamamdır şu anda hazırım bana kodu okuyabilir misiniz",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tamamdır şu anda hazırım bana kodu okuyabilir misiniz",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tamamdır' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hazırım' at position 3",
+      "reason": "A key word indicating readiness is missing, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

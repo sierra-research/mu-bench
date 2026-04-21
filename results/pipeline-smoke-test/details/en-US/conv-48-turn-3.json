@@ -1,0 +1,27 @@
+{
+  "gold": "Let me confirm that code. I have C as in cat, N as in Nancy, 6 2 2 6 2 0 6.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 22,
+  "werRefWords": 22,
+  "werNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected sentence, with none of the expected information present. The meaning is entirely lost and incoherent compared to the reference.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'that' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

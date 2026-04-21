@@ -1,0 +1,27 @@
+{
+  "gold": "C N 0 2 5 0 9 5 8. Is that correct?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "c n zero two five zero nine five eight is that correct",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "c n zero two five zero nine five eight is that correct",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sequence, which is a spelled-out code or number. This substitution makes the sentence incoherent and loses all intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'two' at position 3",
+      "reason": "A digit from a code is missing, which is significant as it changes the entire code and meaning.",
+      "score": 1
+    }
+  ]
+}

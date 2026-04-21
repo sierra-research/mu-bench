@@ -1,0 +1,27 @@
+{
+  "gold": "Tekrar ediyorum. Haymana, Rize 8 3 0 3. Doğru mu?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "tekrar ediyorum haymana rize sekiz üç sıfır üç doğru mu",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tekrar ediyorum haymana rize sekiz üç sıfır üç doğru mu",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tekrar' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rize' at position 3",
+      "reason": "A key word from the expected transcription is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

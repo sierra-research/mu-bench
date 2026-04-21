@@ -1,0 +1,27 @@
+{
+  "gold": "Haymana, Rize, 83 0 3. Doğru mu?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "haymana rize seksen üç sıfır üç doğru mu",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "haymana rize seksen üç sıfır üç doğru mu",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'haymana' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'üç' at position 3",
+      "reason": "A key part of the expected information is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

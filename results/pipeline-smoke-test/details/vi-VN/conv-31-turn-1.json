@@ -1,0 +1,27 @@
+{
+  "gold": "C N 2 9 4, đúng không?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n hai chín bốn đúng không",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n hai chín bốn đúng không",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chín' at position 3",
+      "reason": "A key word from the expected sequence is missing, and the actual transcription is unrelated, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

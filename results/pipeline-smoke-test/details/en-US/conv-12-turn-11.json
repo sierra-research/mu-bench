@@ -1,0 +1,27 @@
+{
+  "gold": "Well, I first wanted to check on the status of a replacement card I requested recently.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "well i first wanted to check on the status of a replacement card i requested recently",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "well i first wanted to check on the status of a replacement card i requested recently",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'well' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'wanted' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'i', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

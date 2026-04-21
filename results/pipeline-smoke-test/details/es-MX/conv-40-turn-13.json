@@ -1,0 +1,27 @@
+{
+  "gold": "Sí, muy bien. ¿Cuánto tiempo tarda la tarjeta en llegar al domicilio físico?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "sí muy bien cuánto tiempo tarda la tarjeta en llegar al domicilio físico",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "sí muy bien cuánto tiempo tarda la tarjeta en llegar al domicilio físico",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cuánto' at position 3",
+      "reason": "A key question word is missing, which is essential to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

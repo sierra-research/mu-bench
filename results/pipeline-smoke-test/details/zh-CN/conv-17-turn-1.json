@@ -1,0 +1,27 @@
+{
+  "gold": "我提高我的信用卡的额度。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "我提高我的信用卡的额度",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 提 高 我 的 信 用 卡 的 额 度",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 3",
+      "reason": "The expected word is missing entirely, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

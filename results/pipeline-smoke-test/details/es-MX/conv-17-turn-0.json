@@ -1,0 +1,27 @@
+{
+  "gold": "Buenos días. Es que compré una cosa y se duplicó el cargo y no sé cómo, qué hacer.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "buenos días es que compré una cosa y se duplicó el cargo y no sé cómo qué hacer",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "buenos días es que compré una cosa y se duplicó el cargo y no sé cómo qué hacer",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'buenos' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'que' at position 3",
+      "reason": "The actual transcription omits this word entirely, but since the whole sentence is already incoherent, this further contributes to the significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Sí, solo quería confirmar en que rango de fechas está mi estado de cuenta de diciembre.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "sí solo quería confirmar en qué rango de fechas está mi estado de cuenta de diciembre",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "sí solo quería confirmar en qué rango de fechas está mi estado de cuenta de diciembre",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'confirmar' at position 3",
+      "reason": "The actual word is unrelated in meaning and context, and the language is different, which derails the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

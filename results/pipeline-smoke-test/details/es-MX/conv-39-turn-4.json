@@ -1,0 +1,27 @@
+{
+  "gold": "Muy bien. C de casa, N de Nancy, 7 9 1.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "muy bien c de casa n de nancy siete nueve uno",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "muy bien c de casa n de nancy siete nueve uno",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'muy' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent compared to the expected Spanish phrase.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'de' at position 3",
+      "reason": "The word 'de' is missing, and the actual transcription does not provide any equivalent, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "No. Repeat that, please.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "no repeat that please",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "no repeat that please",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'please' at position 3",
+      "reason": "The word 'please' is missing, but since the rest of the sentence is already completely incorrect, this further contributes to the incoherence.",
+      "score": 1
+    }
+  ]
+}

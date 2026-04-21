@@ -1,0 +1,27 @@
+{
+  "gold": "Đặt hàng là 9 4 3 7.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "đặt hàng là chín bốn ba bảy",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "đặt hàng là chín bốn ba bảy",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đặt' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chín' at position 3",
+      "reason": "A key part of the expected information (a number) is missing, which is significant for the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

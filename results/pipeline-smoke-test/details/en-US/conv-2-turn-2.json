@@ -1,0 +1,27 @@
+{
+  "gold": "Yes. C N 0 0 4 3 4 4 2.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "yes c n zero zero four three four four two",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "yes c n zero zero four three four four two",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected content, changing the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'zero' at position 3",
+      "reason": "A digit in a sequence (likely a code or number) is missing, which is a significant error as it changes the information conveyed.",
+      "score": 1
+    }
+  ]
+}

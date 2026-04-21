@@ -1,0 +1,27 @@
+{
+  "gold": "C N C N.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "c n c n",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "c n c n",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The expected sequence is a spelled-out letter sequence, but the actual word is unrelated and not a letter. This completely changes the meaning and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 3",
+      "reason": "The last expected letter is missing in the actual transcription, which is significant in a spelled-out sequence.",
+      "score": 1
+    }
+  ]
+}

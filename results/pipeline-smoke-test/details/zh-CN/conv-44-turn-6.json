@@ -1,0 +1,27 @@
+{
+  "gold": "你可以再说一遍我的姓名。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "你可以再说一遍我的姓名",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 可 以 再 说 一 遍 我 的 姓 名",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and unrelated to the expected content, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '再' at position 3",
+      "reason": "The word '再' is missing entirely, further contributing to the incoherence between the two sentences.",
+      "score": 1
+    }
+  ]
+}

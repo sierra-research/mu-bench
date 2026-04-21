@@ -1,0 +1,27 @@
+{
+  "gold": "我的电话号码，我的电话号码是 0 1 2 3。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 17,
+  "werRefWords": 17,
+  "werNormalizedGold": "我的电话号码我的电话号码是 零 一 二 三",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "我 的 电 话 号 码 我 的 电 话 号 码 是 零 一 二 三",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '话' at position 3",
+      "reason": "The actual transcription omits this word entirely and is in a different language, which derails the meaning.",
+      "score": 1
+    }
+  ]
+}

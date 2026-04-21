@@ -1,0 +1,27 @@
+{
+  "gold": "我的姓名是林俊。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "我的姓名是林俊",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 的 姓 名 是 林 俊",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Chinese), making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '名' at position 3",
+      "reason": "The word '名' is missing and the actual transcription does not provide any equivalent, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Banka bilgilerimde mevcut adresimi değiştirmek istiyorum.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "banka bilgilerimde mevcut adresimi değiştirmek istiyorum",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "banka bilgilerimde mevcut adresimi değiştirmek istiyorum",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'banka' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'adresimi' at position 3",
+      "reason": "A key word from the expected sentence is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

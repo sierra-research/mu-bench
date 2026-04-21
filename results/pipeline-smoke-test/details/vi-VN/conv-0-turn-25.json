@@ -1,0 +1,27 @@
+{
+  "gold": "9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chín' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected numbers in Vietnamese.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hai' at position 3",
+      "reason": "The expected word is missing entirely, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

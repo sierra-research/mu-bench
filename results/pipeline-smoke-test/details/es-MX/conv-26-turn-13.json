@@ -1,0 +1,27 @@
+{
+  "gold": "M A R I A punto L O P E Z arroba E M A I L punto com.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 19,
+  "werRefWords": 19,
+  "werNormalizedGold": "m a r i a punto l o p e z arroba e m a i l punto com",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "m a r i a punto l o p e z arroba e m a i l punto com",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'm' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected spelled-out email address, resulting in a total loss of intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'i' at position 3",
+      "reason": "A letter from the spelled-out email is missing, which is critical for correct transcription of such information.",
+      "score": 1
+    }
+  ]
+}

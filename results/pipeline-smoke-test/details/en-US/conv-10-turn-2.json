@@ -1,0 +1,27 @@
+{
+  "gold": "C N 3 5 4.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n three five four",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n three five four",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected spelled-out letter, resulting in a loss of intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'five' at position 3",
+      "reason": "A number from the expected sequence is missing, which is significant for sequences like codes or numbers.",
+      "score": 1
+    }
+  ]
+}

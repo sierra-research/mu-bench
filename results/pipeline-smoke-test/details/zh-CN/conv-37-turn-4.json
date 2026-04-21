@@ -1,0 +1,27 @@
+{
+  "gold": "你说话吧。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "你说话吧",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "你 说 话 吧",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and has no semantic overlap with the expected sentence, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吧' at position 3",
+      "reason": "The final word is missing and the actual transcription is in a different language, so the intended meaning is not preserved at all.",
+      "score": 1
+    }
+  ]
+}

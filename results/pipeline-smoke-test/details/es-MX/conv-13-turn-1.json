@@ -1,0 +1,27 @@
+{
+  "gold": "A ver, dame un momento. Necesito papel y lápiz. Dame un momento por favor.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "a ver dame un momento necesito papel y lápiz dame un momento por favor",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "a ver dame un momento necesito papel y lápiz dame un momento por favor",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'un' at position 3",
+      "reason": "The actual transcription omits this word entirely, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

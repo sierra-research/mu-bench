@@ -1,0 +1,27 @@
+{
+  "gold": "Hello. I would like to raise my credit limit on my credit card, please?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "hello i would like to raise my credit limit on my credit card please",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "hello i would like to raise my credit limit on my credit card please",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hello' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'like' at position 3",
+      "reason": "The word 'like' is missing, but the actual sentence is already completely off-topic, so this contributes to the significant error.",
+      "score": 1
+    }
+  ]
+}

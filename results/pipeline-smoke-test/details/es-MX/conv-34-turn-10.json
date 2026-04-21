@@ -1,0 +1,27 @@
+{
+  "gold": "Claro, 5 2 5 5 1 2 3 4 5 6 7 8.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "claro cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "claro cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'claro' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected Spanish phrase and numbers.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cinco' at position 3",
+      "reason": "The actual transcription omits all the expected numbers and instead provides unrelated English words, resulting in a complete loss of the intended information (likely a phone number or code).",
+      "score": 1
+    }
+  ]
+}

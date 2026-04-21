@@ -1,0 +1,27 @@
+{
+  "gold": "确认正确。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "确认正确",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "确 认 正 确",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '确' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected text.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '确' at position 3",
+      "reason": "The expected word is missing in the actual transcription, which is already in a different language and context, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "And also, I was wondering if it's possible to look into a credit limit increase.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "and also i was wondering if it is possible to look into a credit limit increase",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "and also i was wondering if it is possible to look into a credit limit increase",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'and' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'was' at position 3",
+      "reason": "The entire remainder of the expected sentence is missing, which removes all the intended meaning.",
+      "score": 1
+    }
+  ]
+}

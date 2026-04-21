@@ -1,0 +1,27 @@
+{
+  "gold": "不对，我不要跟你讲我的邮箱地址了。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "不对 我不要跟你讲我的邮箱地址了",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "不 对 我 不 要 跟 你 讲 我 的 邮 箱 地 址 了",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content entirely unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '不' at position 3",
+      "reason": "The actual transcription is in a different language and does not correspond to the expected meaning, resulting in a significant error.",
+      "score": 1
+    }
+  ]
+}

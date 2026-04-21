@@ -1,0 +1,27 @@
+{
+  "gold": "Sí, mi nombre completo es Juan López.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "sí mi nombre completo es juan lópez",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "sí mi nombre completo es juan lópez",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the language and meaning entirely. This derails the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'completo' at position 3",
+      "reason": "A key word from the expected sentence is missing, further contributing to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 17,
+  "werRefWords": 17,
+  "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, resulting in a total loss of meaning. The actual is in English and refers to a technical test, while the expected is in Turkish and about email address formatting.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'soyadım' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Well, can you send me to somebody who could tell me what my credit limit is?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "well can you send me to somebody who could tell me what my credit limit is",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "well can you send me to somebody who could tell me what my credit limit is",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'well' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence. None of the intended meaning is preserved, and the actual output is incoherent in this context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'send' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

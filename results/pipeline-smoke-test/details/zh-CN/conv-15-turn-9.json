@@ -1,0 +1,27 @@
+{
+  "gold": "那我的邮箱地址呢？",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "那我的邮箱地址呢",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "那 我 的 邮 箱 地 址 呢",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not match the expected content at all, making the sentence incoherent and unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '邮' at position 3",
+      "reason": "The expected word is missing entirely in the actual transcription, which is in a different language and context.",
+      "score": 1
+    }
+  ]
+}

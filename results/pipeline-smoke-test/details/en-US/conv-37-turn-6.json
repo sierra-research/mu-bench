@@ -1,0 +1,27 @@
+{
+  "gold": "It's Ashley Brown.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "it is ashley brown",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "it is ashley brown",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'it' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the subject and meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'brown' at position 3",
+      "reason": "The surname 'brown' is missing, which is significant as it omits a key part of the expected information.",
+      "score": 1
+    }
+  ]
+}

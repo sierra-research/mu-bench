@@ -1,0 +1,27 @@
+{
+  "gold": "你还听不到，不好，是君，君灵。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "你还听不到不好是君君灵",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 还 听 不 到 不 好 是 君 君 灵",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content entirely unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '不' at position 3",
+      "reason": "The actual transcription omits this word entirely, and since the languages do not match, this is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Would you be available to tell me also what my credit limit is?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "would you be available to tell me also what my credit limit is",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "would you be available to tell me also what my credit limit is",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'would' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'available' at position 3",
+      "reason": "The word 'available' is missing, which is important for the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

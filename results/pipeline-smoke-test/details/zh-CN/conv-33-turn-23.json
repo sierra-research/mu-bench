@@ -1,0 +1,27 @@
+{
+  "gold": "收货地址是北京市海淀区北京路 1 2 3号。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "收货地址是北京市海淀区北京路 一 二 三号",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "收 货 地 址 是 北 京 市 海 淀 区 北 京 路 一 二 三 号",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '收' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '址' at position 3",
+      "reason": "The expected word is missing entirely in the actual transcription, which is in a different language and context.",
+      "score": 1
+    }
+  ]
+}

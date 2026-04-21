@@ -1,0 +1,27 @@
+{
+  "gold": "Great. Yes, go ahead.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "great yes go ahead",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "great yes go ahead",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'great' to 'pipeline' at position 0",
+      "reason": "'pipeline' is completely unrelated to 'great', changing the meaning of the sentence entirely and making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ahead' at position 3",
+      "reason": "The word 'ahead' is missing, which is important for the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

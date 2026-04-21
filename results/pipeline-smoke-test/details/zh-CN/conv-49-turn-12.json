@@ -1,0 +1,27 @@
+{
+  "gold": "你，我的邮箱地址是美玲 at email dot com。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "你 我的邮箱地址是美玲 at email dot com",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "你 我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '邮' at position 3",
+      "reason": "The actual word is unrelated and in a different language, causing a complete loss of intended meaning.",
+      "score": 1
+    }
+  ]
+}

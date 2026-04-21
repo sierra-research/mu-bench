@@ -1,0 +1,27 @@
+{
+  "gold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cái' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'đầu' at position 3",
+      "reason": "A key word from the expected sentence is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

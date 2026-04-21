@@ -1,0 +1,27 @@
+{
+  "gold": "Merhaba. Benim banka kartımın süresi dolmuştu. Yenisini istemiştim ama hala elime ulaşmadı.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "merhaba benim banka kartımın süresi dolmuştu yenisini istemiştim ama hala elime ulaşmadı",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "merhaba benim banka kartımın süresi dolmuştu yenisini istemiştim ama hala elime ulaşmadı",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'merhaba' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kartımın' at position 3",
+      "reason": "A key word about the bank card is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

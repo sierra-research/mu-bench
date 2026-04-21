@@ -1,0 +1,27 @@
+{
+  "gold": "君玲，君玲。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "君玲 君玲",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "君 玲 君 玲",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not match the expected content at all, making the sentence incoherent and unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 3",
+      "reason": "The expected word is missing entirely and replaced by unrelated content, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

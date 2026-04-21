@@ -1,0 +1,27 @@
+{
+  "gold": "Numara yanlış oldu. Atatürk Caddesi No 45 taksim 6. Yani 45 bölü 6 olacak.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı kırk beş bölü altı olacak",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "numara yanlış oldu atatürk caddesi no kırk beş taksim altı kırk beş bölü altı olacak",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'numara' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'atatürk' at position 3",
+      "reason": "A key proper noun is missing, which is significant for the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

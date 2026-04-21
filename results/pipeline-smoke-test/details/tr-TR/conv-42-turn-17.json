@@ -1,0 +1,27 @@
+{
+  "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected content, changing the topic and meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'biraz' at position 3",
+      "reason": "A word from the expected sentence is missing, contributing to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

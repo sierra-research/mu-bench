@@ -1,0 +1,27 @@
+{
+  "gold": "Es Urión, 30 Colonia Tlatilco, Delegación Azcapotzalco, en la Ciudad de México. Código postal 0 2 860.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 19,
+  "werRefWords": 19,
+  "werNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "es urión treinta colonia tlatilco delegación azcapotzalco en la ciudad de méxico código postal cero dos ocho seis cero",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Spanish) and contains unrelated content, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'colonia' at position 3",
+      "reason": "The actual transcription omits this word entirely, which is important for the address and meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Evet, Arslan doğru. Sonrasında at E M A İ L nokta C O M.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta c o m",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "evet arslan doğru sonrasında at e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'evet' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, both in language and meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sonrasında' at position 3",
+      "reason": "A key word from the expected transcription is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

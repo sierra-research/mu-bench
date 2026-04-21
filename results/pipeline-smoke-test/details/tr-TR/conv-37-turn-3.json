@@ -1,0 +1,27 @@
+{
+  "gold": "Jandarma, Ceyhan 1 9 9 5.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "jandarma ceyhan bin dokuz yüz doksan beş",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "jandarma ceyhan bin dokuz yüz doksan beş",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'jandarma' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dokuz' at position 3",
+      "reason": "A key word from the expected sentence is missing, contributing to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

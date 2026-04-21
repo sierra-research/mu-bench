@@ -1,0 +1,27 @@
+{
+  "gold": "4 5 6 7.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "four five six seven",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "four five six seven",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'four' to 'pipeline' at position 0",
+      "reason": "'pipeline' is completely unrelated to 'four', changing the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'seven' at position 3",
+      "reason": "'seven' is missing, which omits part of the intended sequence of numbers.",
+      "score": 1
+    }
+  ]
+}

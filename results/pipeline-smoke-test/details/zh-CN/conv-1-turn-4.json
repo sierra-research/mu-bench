@@ -1,0 +1,27 @@
+{
+  "gold": "提高信，信用卡的额度。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "提高信信用卡的额度",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "提 高 信 信 用 卡 的 额 度",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '提' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Chinese), making the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '信' at position 3",
+      "reason": "A word from the expected sentence is missing and the actual transcription is in a different language, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

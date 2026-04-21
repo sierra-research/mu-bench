@@ -1,0 +1,27 @@
+{
+  "gold": "Pues si me transfieres mejor, con un asesor para las opciones. Estaría perfecto.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "pues si me transfieres mejor con un asesor para las opciones estaría perfecto",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "pues si me transfieres mejor con un asesor para las opciones estaría perfecto",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'pues' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'transfieres' at position 3",
+      "reason": "The word 'transfieres' is missing, which is essential to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

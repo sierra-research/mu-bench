@@ -1,0 +1,27 @@
+{
+  "gold": "À. Số điện thoại sai rồi. Số điện thoại đó không đúng.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "số điện thoại sai rồi số điện thoại đó không đúng",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "số điện thoại sai rồi số điện thoại đó không đúng",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'số' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sai' at position 3",
+      "reason": "A key word indicating the phone number is wrong is missing, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

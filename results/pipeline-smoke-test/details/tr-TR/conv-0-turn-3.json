@@ -1,0 +1,27 @@
+{
+  "gold": "C N 1 2 2. C N 122.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "c n bir iki iki c n bir yüz yirmi iki",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "c n bir iki iki c n bir yüz yirmi iki",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, with unrelated words. The meaning is entirely lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'iki' at position 3",
+      "reason": "A word from the expected sequence is missing, further derailing the intended meaning.",
+      "score": 1
+    }
+  ]
+}

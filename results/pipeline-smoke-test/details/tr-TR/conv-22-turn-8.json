@@ -1,0 +1,27 @@
+{
+  "gold": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 19,
+  "werRefWords": 19,
+  "werNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ama' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'numarası' at position 3",
+      "reason": "The actual word is unrelated and in a different language, which derails the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

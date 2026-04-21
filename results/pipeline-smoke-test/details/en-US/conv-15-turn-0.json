@@ -1,0 +1,27 @@
+{
+  "gold": "Hi, Anna. I'm looking to find out where my replacement card is. It's been a while, and just want to make sure that it didn't get lost in the mail or anything like that.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 37,
+  "werRefWords": 37,
+  "werNormalizedGold": "hi anna i am looking to find out where my replacement card is it has been a while and just want to make sure that it did not get lost in the mail or anything like that",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 37,
+  "sigWerNormalizedGold": "hi anna i am looking to find out where my replacement card is it has been a while and just want to make sure that it did not get lost in the mail or anything like that",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hi' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected greeting and context, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'am' at position 3",
+      "reason": "The actual word is unrelated to the expected name, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

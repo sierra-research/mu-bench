@@ -1,0 +1,27 @@
+{
+  "gold": "María punto López arroba email punto com.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected email address; the meaning is entirely lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arroba' at position 3",
+      "reason": "The '@' symbol is missing, which is essential for an email address and its omission makes the transcription unusable.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "你先告诉我的追踪号码。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "你先告诉我的追踪号码",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 先 告 诉 我 的 追 踪 号 码",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the meaning incoherent and unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '诉' at position 3",
+      "reason": "A word from the expected sentence is missing and the actual sentence is in a different language, making the meaning incoherent.",
+      "score": 1
+    }
+  ]
+}

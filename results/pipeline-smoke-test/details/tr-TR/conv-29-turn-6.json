@@ -1,0 +1,27 @@
+{
+  "gold": "Evet doğru ancak Zaynep ve Arslan arasında nokta işareti var.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "evet doğru ancak zaynep ve arslan arasında nokta işareti var",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "evet doğru ancak zaynep ve arslan arasında nokta işareti var",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'evet' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'zaynep' at position 3",
+      "reason": "A key word from the expected sentence is missing, contributing to the incoherence of the actual transcription.",
+      "score": 1
+    }
+  ]
+}

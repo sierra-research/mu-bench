@@ -1,0 +1,27 @@
+{
+  "gold": "Yes. I'm hoping that I can check on, I'm waiting on a replacement card and I need to know the status.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 23,
+  "werRefWords": 23,
+  "werNormalizedGold": "yes i am hoping that i can check on i am waiting on a replacement card and i need to know the status",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "yes i am hoping that i can check on i am waiting on a replacement card and i need to know the status",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hoping' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'i', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Mở ứng dụng rồi. Vui lòng hướng dẫn nha.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "mở ứng dụng rồi vui lòng hướng dẫn nha",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mở' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Vietnamese), and the words are unrelated, making the sentence incoherent and completely changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "The word 'rồi' is missing, further contributing to the incoherence and loss of meaning.",
+      "score": 1
+    }
+  ]
+}

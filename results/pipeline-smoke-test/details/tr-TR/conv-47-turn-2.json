@@ -1,0 +1,27 @@
+{
+  "gold": "E A 7 9 5 4 6 7 8 0.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "e a yedi dokuz beş dört altı yedi sekiz sıfır",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "e a yedi dokuz beş dört altı yedi sekiz sıfır",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dokuz' at position 3",
+      "reason": "The expected word is missing entirely, further derailing the meaning of the sequence.",
+      "score": 1
+    }
+  ]
+}

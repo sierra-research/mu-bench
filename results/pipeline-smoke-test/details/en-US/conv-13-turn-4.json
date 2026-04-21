@@ -1,0 +1,27 @@
+{
+  "gold": "Can you say it again but a little bit slower?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "can you say it again but a little bit slower",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "can you say it again but a little bit slower",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'can' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, resulting in a total loss of intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'it' at position 3",
+      "reason": "The word 'it' is missing, but given the overall mismatch, this contributes to the incoherence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Phone number, 2 1 2 1 2 3 4 5. Were you saying something? I'm sorry. 2 1 2 1 2 3 4 5 6 7. 1 plus 1.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 30,
+  "werRefWords": 30,
+  "werNormalizedGold": "phone number two one two one two three four five were you saying something i am sorry two one two one two three four five six seven one plus one",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "phone number two one two one two three four five were you saying something i am sorry two one two one two three four five six seven one plus one",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'phone' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected content, which includes a phone number and conversational phrases. The meaning is entirely lost and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'one' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

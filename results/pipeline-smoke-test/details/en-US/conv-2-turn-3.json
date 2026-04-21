@@ -1,0 +1,27 @@
+{
+  "gold": "Yes. My name is Ashley Brown.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "yes my name is ashley brown",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "yes my name is ashley brown",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'pipeline' at position 0",
+      "reason": "'pipeline' is completely unrelated to 'yes', changing the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 3",
+      "reason": "'is' is missing, but the overall meaning is already lost due to previous errors.",
+      "score": 1
+    }
+  ]
+}

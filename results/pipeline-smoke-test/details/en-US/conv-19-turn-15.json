@@ -1,0 +1,27 @@
+{
+  "gold": "My phone number, it is 1 2 1 2 1 2 3 4 5 6 7. 6 7.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "my phone number it is one two one two one two three four five six seven six seven",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "my phone number it is one two one two one two three four five six seven six seven",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'my' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, which is about providing a phone number. 'Pipeline' is not semantically related to 'my', and this substitution derails the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'it' at position 3",
+      "reason": "'Smoke' is unrelated to 'phone', and this substitution further derails the meaning of the sentence, making it incoherent.",
+      "score": 1
+    }
+  ]
+}

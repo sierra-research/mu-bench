@@ -1,0 +1,27 @@
+{
+  "gold": "Merhaba, beni duyuyor musun?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "merhaba beni duyuyor musun",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "merhaba beni duyuyor musun",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'merhaba' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'musun' at position 3",
+      "reason": "The word 'musun' (which means 'are you' in Turkish) is missing, further making the actual transcription unrelated and incoherent compared to the expected sentence.",
+      "score": 1
+    }
+  ]
+}

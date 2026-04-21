@@ -1,0 +1,27 @@
+{
+  "gold": "给我瞧一下银行流水。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "给我瞧一下银行流水",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "给 我 瞧 一 下 银 行 流 水",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '给' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '一' at position 3",
+      "reason": "A word from the expected sentence is missing, further contributing to the incoherence and loss of meaning.",
+      "score": 1
+    }
+  ]
+}

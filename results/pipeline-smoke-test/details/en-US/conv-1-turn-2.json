@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. I am ready. Go for it.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "okay i am ready go for it",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "okay i am ready go for it",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ready' at position 3",
+      "reason": "The word 'ready' is missing, which is important to the meaning of the expected sentence.",
+      "score": 1
+    }
+  ]
+}

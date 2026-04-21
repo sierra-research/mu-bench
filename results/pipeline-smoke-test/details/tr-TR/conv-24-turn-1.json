@@ -1,0 +1,27 @@
+{
+  "gold": "O zaman kredi kartımın, kart numarası ve son ödeme. Bir saniye beni bir dinleyebilir misin? Kredi kartımın numarasını, bir de kredi kartımın, bir saniye beni dinler misin? O zaman son ödeme tarihini öğrenebilir miyim?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 34,
+  "werRefWords": 34,
+  "werNormalizedGold": "o zaman kredi kartımın kart numarası ve son ödeme bir saniye beni bir dinleyebilir misin kredi kartımın numarasını bir de kredi kartımın bir saniye beni dinler misin o zaman son ödeme tarihini öğrenebilir miyim",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 34,
+  "sigWerNormalizedGold": "o zaman kredi kartımın kart numarası ve son ödeme bir saniye beni bir dinleyebilir misin kredi kartımın numarasını bir de kredi kartımın bir saniye beni dinler misin o zaman son ödeme tarihini öğrenebilir miyim",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'o' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, which is in Turkish and about credit card information, while the actual is in English and unrelated. This derails the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kartımın' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

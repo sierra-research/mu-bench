@@ -1,0 +1,27 @@
+{
+  "gold": "No. That was too fast. I can't understand you. Could you do that again slowly?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "no that was too fast i cannot understand you could you do that again slowly",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "no that was too fast i cannot understand you could you do that again slowly",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'too' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'that', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

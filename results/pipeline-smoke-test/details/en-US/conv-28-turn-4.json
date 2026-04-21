@@ -1,0 +1,27 @@
+{
+  "gold": "Oh, man. You just ran through those numbers like a freight train. Let's go slower.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "oh man you just ran through those numbers like a freight train let us go slower",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "oh man you just ran through those numbers like a freight train let us go slower",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'oh' to 'pipeline' at position 0",
+      "reason": "The actual transcription 'pipeline smoke test' is completely unrelated to the expected sentence and does not preserve any of the original meaning. The meaning is entirely lost and incoherent compared to the reference.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'just' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

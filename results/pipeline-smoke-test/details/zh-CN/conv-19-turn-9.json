@@ -1,0 +1,27 @@
+{
+  "gold": "已经说了几次，你为什么不分辨，你为什么不会帮我？",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 21,
+  "werRefWords": 21,
+  "werNormalizedGold": "已经说了几次 你为什么不分辨 你为什么不会帮我",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "已 经 说 了 几 次 你 为 什 么 不 分 辨 你 为 什 么 不 会 帮 我",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '已' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content entirely unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 3",
+      "reason": "The actual transcription omits this word entirely and is in a different language, so the meaning is lost.",
+      "score": 1
+    }
+  ]
+}

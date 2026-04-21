@@ -1,0 +1,27 @@
+{
+  "gold": "No. Aw, man. Try to transfer me one more time. Let me see if the live agent could help me.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 20,
+  "werRefWords": 20,
+  "werNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'try' at position 3",
+      "reason": "The actual transcription omits this word and the rest of the expected sentence, resulting in a complete loss of intended meaning.",
+      "score": 1
+    }
+  ]
+}

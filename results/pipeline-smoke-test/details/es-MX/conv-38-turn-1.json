@@ -1,0 +1,27 @@
+{
+  "gold": "A ver espérame un tantito. Déjame ir a por pluma y papel. ¿OK?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "a ver espérame un tantito déjame ir a por pluma y papel okay",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "a ver espérame un tantito déjame ir a por pluma y papel okay",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'un' at position 3",
+      "reason": "The word 'un' is missing, but this is minor compared to the overall language and meaning mismatch.",
+      "score": 1
+    }
+  ]
+}

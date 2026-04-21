@@ -1,0 +1,27 @@
+{
+  "gold": "Have a great day.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "have a great day",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "have a great day",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'have' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'day' at position 3",
+      "reason": "The word 'day' is missing, which is essential to the expected phrase and further changes the meaning.",
+      "score": 1
+    }
+  ]
+}

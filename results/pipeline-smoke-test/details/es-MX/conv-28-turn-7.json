@@ -1,0 +1,27 @@
+{
+  "gold": "Sí. Es el 55 12.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "sí es el cincuenta y cinco doce",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "sí es el cincuenta y cinco doce",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cincuenta' at position 3",
+      "reason": "A key part of the expected information (a number) is missing, which is significant for understanding the sentence.",
+      "score": 1
+    }
+  ]
+}

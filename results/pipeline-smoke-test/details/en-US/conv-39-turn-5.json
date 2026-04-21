@@ -1,0 +1,27 @@
+{
+  "gold": "Okay, great. I'm sorry. You need what? Were you saying something?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "okay great i am sorry you need what were you saying something",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "okay great i am sorry you need what were you saying something",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'am' at position 3",
+      "reason": "The word 'am' is missing, but given the overall mismatch, this contributes to the incoherence.",
+      "score": 1
+    }
+  ]
+}

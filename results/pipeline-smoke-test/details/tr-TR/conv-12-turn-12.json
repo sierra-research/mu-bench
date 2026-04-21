@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır doğru değil, Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "hayır doğru değil ahmet ve arslan arasında nokta var ahmet nokta arslan",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "hayır doğru değil ahmet ve arslan arasında nokta var ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ahmet' at position 3",
+      "reason": "A key proper noun is missing, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

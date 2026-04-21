@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "hayır yanlış siz bana demin c n yedi yüz yirmi dediniz",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "hayır yanlış siz bana demin c n yedi yüz yirmi dediniz",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bana' at position 3",
+      "reason": "The word 'bana' is missing, further contributing to the incoherence and loss of meaning.",
+      "score": 1
+    }
+  ]
+}

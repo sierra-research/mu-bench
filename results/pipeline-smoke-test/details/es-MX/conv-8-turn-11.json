@@ -1,0 +1,27 @@
+{
+  "gold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "cómo me avisas que ya está en proceso que ya está en camino",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "cómo me avisas que ya está en proceso que ya está en camino",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cómo' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Spanish) and has no semantic overlap with the expected phrase.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'que' at position 3",
+      "reason": "The actual word is unrelated in meaning and language, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

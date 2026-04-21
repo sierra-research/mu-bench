@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tôi muốn nói chuyện với nhân viên trực tiếp để xin cái sao kê",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tôi' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chuyện' at position 3",
+      "reason": "The word is missing entirely, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi không thấy gì hết. Có thể hỗ trợ ngay tại đây được không?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tôi không thấy gì hết có thể hỗ trợ ngay tại đây được không",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tôi' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'gì' at position 3",
+      "reason": "The actual transcription is in English and unrelated to the expected Vietnamese sentence, resulting in a significant error.",
+      "score": 1
+    }
+  ]
+}

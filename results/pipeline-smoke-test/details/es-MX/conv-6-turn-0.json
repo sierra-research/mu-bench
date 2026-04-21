@@ -1,0 +1,27 @@
+{
+  "gold": "Necesito averiguar por qué no me llegó la tarjeta nueva. La tarjeta de crédito. ¿Qué pudo pasar?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 17,
+  "werRefWords": 17,
+  "werNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'necesito' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Spanish) and has no semantic overlap with the expected sentence, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'qué' at position 3",
+      "reason": "The actual word is unrelated in meaning and language to the expected word, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

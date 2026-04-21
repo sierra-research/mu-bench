@@ -1,0 +1,27 @@
+{
+  "gold": "那我的姓，姓名呢？",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "那我的姓姓名呢",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "那 我 的 姓 姓 名 呢",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '姓' at position 3",
+      "reason": "The word '姓' (surname) is missing entirely and not represented in the actual transcription, which is a significant omission.",
+      "score": 1
+    }
+  ]
+}

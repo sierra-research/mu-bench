@@ -1,0 +1,27 @@
+{
+  "gold": "Yes. Do it slowly, please.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "yes do it slowly please",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "yes do it slowly please",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yes' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'slowly' at position 3",
+      "reason": "The omission of 'slowly' removes an important instruction from the sentence, significantly altering the intended meaning.",
+      "score": 1
+    }
+  ]
+}

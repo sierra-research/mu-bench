@@ -1,0 +1,27 @@
+{
+  "gold": "L E I dot L I N G at E M A I L dot C O M。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 18,
+  "werRefWords": 18,
+  "werNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'l' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected spelled-out email address, resulting in a total loss of intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 3",
+      "reason": "Missing 'dot' in a spelled-out email address changes the structure and meaning, making the email address incorrect.",
+      "score": 1
+    }
+  ]
+}

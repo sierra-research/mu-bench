@@ -1,0 +1,27 @@
+{
+  "gold": "Oh, okay. You said you need three pieces to confirm my identity?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "oh okay you said you need three pieces to confirm my identity",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "oh okay you said you need three pieces to confirm my identity",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'oh' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'said' at position 3",
+      "reason": "The actual word is unrelated to the expected word, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

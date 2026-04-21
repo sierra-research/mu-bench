@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. Thanks a lot.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "okay thanks a lot",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "okay thanks a lot",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the meaning entirely and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lot' at position 3",
+      "reason": "The word 'lot' is missing, but given the rest of the sentence is already completely incorrect, this further contributes to the incoherence.",
+      "score": 1
+    }
+  ]
+}

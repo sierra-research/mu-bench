@@ -1,0 +1,27 @@
+{
+  "gold": "Không phải. Minh, minh là tên đó. Trần là họ đó. Minh chấm trần a còng email chấm com.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 19,
+  "werRefWords": 19,
+  "werNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'không' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'minh' at position 3",
+      "reason": "The expected word is missing entirely from the actual transcription, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

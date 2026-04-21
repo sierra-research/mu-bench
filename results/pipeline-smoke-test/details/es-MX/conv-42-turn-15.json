@@ -1,0 +1,27 @@
+{
+  "gold": "Eh sí, no te preocupes. Yo intento más tarde. Gracias, Ana.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "sí no te preocupes yo intento más tarde gracias ana",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "sí no te preocupes yo intento más tarde gracias ana",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'preocupes' at position 3",
+      "reason": "The word is missing entirely, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

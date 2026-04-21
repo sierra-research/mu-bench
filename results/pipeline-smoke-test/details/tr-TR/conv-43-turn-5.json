@@ -1,0 +1,27 @@
+{
+  "gold": "Doğru anladın, adım Ahmet Arslan.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "doğru anladın adım ahmet arslan",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "doğru anladın adım ahmet arslan",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doğru' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ahmet' at position 3",
+      "reason": "A proper noun (name) is missing, which is significant for the meaning and identification in the sentence.",
+      "score": 1
+    }
+  ]
+}

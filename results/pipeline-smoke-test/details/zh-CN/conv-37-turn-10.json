@@ -1,0 +1,27 @@
+{
+  "gold": "你，你可以重复我的姓名啊。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "你 你可以重复我的姓名",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content entirely unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '以' at position 3",
+      "reason": "The actual transcription omits this word entirely and is in a different language, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

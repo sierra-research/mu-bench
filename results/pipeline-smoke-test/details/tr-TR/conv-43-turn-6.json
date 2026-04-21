@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii söylüyorum, yazarsan. Ahmet nokta Arslan at email nokta com.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ahmet' at position 3",
+      "reason": "A key part of the expected email address is missing, which is a significant error as it removes critical information.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Let's see. For this account, oh, it's 1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 20,
+  "werRefWords": 20,
+  "werNormalizedGold": "let us see for this account oh it is one two one two one two three four five six seven",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "let us see for this account oh it is one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'for' at position 3",
+      "reason": "A large portion of the expected content is missing, including critical information (account number), which is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "北京市海鼎区北京路123号。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "北京市海鼎区北京路一二三号",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "北 京 市 海 鼎 区 北 京 路 一 二 三 号",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '北' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not correspond to the expected content at all, making the sentence incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '海' at position 3",
+      "reason": "A key word from the expected address is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

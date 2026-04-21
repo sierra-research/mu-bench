@@ -1,0 +1,27 @@
+{
+  "gold": "Merhaba. Ben kredi kartımın şifresini unuttum, yeniden şifre almak istiyorum.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "merhaba ben kredi kartımın şifresini unuttum yeniden şifre almak istiyorum",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "merhaba ben kredi kartımın şifresini unuttum yeniden şifre almak istiyorum",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'merhaba' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kartımın' at position 3",
+      "reason": "A key word about the credit card is missing, which is essential to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

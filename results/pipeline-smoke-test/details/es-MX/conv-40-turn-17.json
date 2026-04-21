@@ -1,0 +1,27 @@
+{
+  "gold": "A ver. Permíteme un momento, es que vas muy rápido. Dame un par de segundos.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "a ver permíteme un momento es que vas muy rápido dame un par de segundos",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "a ver permíteme un momento es que vas muy rápido dame un par de segundos",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'un' at position 3",
+      "reason": "The word 'un' is missing, but since the entire sentence is mistranscribed, this is part of a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. Hopefully, I get all that information for you. Let's see here. My full name for this account would be John Brown.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 23,
+  "werRefWords": 23,
+  "werNormalizedGold": "okay hopefully i get all that information for you let us see here my full name for this account would be john brown",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "okay hopefully i get all that information for you let us see here my full name for this account would be john brown",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, resulting in a total loss of meaning and coherence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'get' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

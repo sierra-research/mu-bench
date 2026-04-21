@@ -1,0 +1,27 @@
+{
+  "gold": "Sí, es que necesito mi estado de cuenta, el último. Siempre me llega a principios de mes, a finales de mes y esta vez no ha llegado.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 27,
+  "werRefWords": 27,
+  "werNormalizedGold": "sí es que necesito mi estado de cuenta el último siempre me llega a principios de mes a finales de mes y esta vez no ha llegado",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "sí es que necesito mi estado de cuenta el último siempre me llega a principios de mes a finales de mes y esta vez no ha llegado",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'necesito' at position 3",
+      "reason": "The word 'necesito' (I need) is missing, which is essential to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

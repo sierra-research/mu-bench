@@ -1,0 +1,27 @@
+{
+  "gold": "嗯，都是对的。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "都是对的",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "都 是 对 的",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '都' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and has no semantic overlap with the expected Chinese phrase, resulting in a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 3",
+      "reason": "The entire expected phrase is missing from the actual transcription, which is in a different language, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

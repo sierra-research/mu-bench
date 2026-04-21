@@ -1,0 +1,27 @@
+{
+  "gold": "Có thể đẩy nhanh tiến độ được không?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "có thể đẩy nhanh tiến độ được không",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "có thể đẩy nhanh tiến độ được không",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'có' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Vietnamese), making the meaning incoherent and unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhanh' at position 3",
+      "reason": "The word 'nhanh' (meaning 'quickly') is missing, and the actual transcription is unrelated, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

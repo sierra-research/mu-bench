@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. I didn't receive the card.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "okay i did not receive the card",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "okay i did not receive the card",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'not' at position 3",
+      "reason": "The word 'not' is missing, which is crucial to the meaning of the sentence. Its absence changes the intent from negative to potentially positive.",
+      "score": 1
+    }
+  ]
+}

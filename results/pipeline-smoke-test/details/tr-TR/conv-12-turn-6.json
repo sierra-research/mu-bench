@@ -1,0 +1,27 @@
+{
+  "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'evet' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arslan' at position 3",
+      "reason": "A key word from the expected transcription is missing, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

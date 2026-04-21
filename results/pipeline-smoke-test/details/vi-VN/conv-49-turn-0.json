@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn được xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 31,
+  "werRefWords": 31,
+  "werNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 31,
+  "sigWerNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tôi' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'xem' at position 3",
+      "reason": "The actual word is unrelated in meaning and language, causing a significant error in understanding.",
+      "score": 1
+    }
+  ]
+}

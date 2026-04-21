@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Mình đọc thông tin của mình nhá. Mình tên là Trần Minh. Mình có phải cung cấp thêm thông tin gì khác nữa không?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 25,
+  "werRefWords": 25,
+  "werNormalizedGold": "okay mình đọc thông tin của mình nhá mình tên là trần minh mình có phải cung cấp thêm thông tin gì khác nữa không",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "okay mình đọc thông tin của mình nhá mình tên là trần minh mình có phải cung cấp thêm thông tin gì khác nữa không",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected sentence, both in language and meaning. The actual is in English and unrelated, while the expected is in Vietnamese and context-specific. This derails the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'thông' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

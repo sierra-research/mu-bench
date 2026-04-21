@@ -1,0 +1,27 @@
+{
+  "gold": "我的姓名，你还不知道我的姓名。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的姓名你还不知道我的姓名",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 姓 名 你 还 不 知 道 我 的 姓 名",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '名' at position 3",
+      "reason": "The expected word is missing entirely in the actual transcription, which is in a different language, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

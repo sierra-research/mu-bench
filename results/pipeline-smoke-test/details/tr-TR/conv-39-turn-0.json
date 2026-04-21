@@ -1,0 +1,27 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 15,
+  "werRefWords": 15,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the topic and meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ben' at position 3",
+      "reason": "The actual word is unrelated and changes the meaning, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır, adımı sadece soyadımı söylediniz. Adımı söylemediniz. Ve emaili de yanlış söylediniz.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "hayır adımı sadece soyadımı söylediniz adımı söylemediniz ve emaili de yanlış söylediniz",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "hayır adımı sadece soyadımı söylediniz adımı söylemediniz ve emaili de yanlış söylediniz",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'soyadımı' at position 3",
+      "reason": "A key word from the expected sentence is missing, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

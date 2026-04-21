@@ -1,0 +1,27 @@
+{
+  "gold": "Ashley. Last name, Brown.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "ashley last name brown",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "ashley last name brown",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ashley' to 'pipeline' at position 0",
+      "reason": "'pipeline' is completely unrelated to 'ashley', which is a person's name. This changes the meaning of the sentence entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'brown' at position 3",
+      "reason": "The last name 'brown' is missing, which is significant information in the context of a name.",
+      "score": 1
+    }
+  ]
+}

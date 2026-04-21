@@ -1,0 +1,27 @@
+{
+  "gold": "Nope. That's it. Thank you so much for your help. Really appreciate it.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 14,
+  "werRefWords": 14,
+  "werNormalizedGold": "nope that is it thank you so much for your help really appreciate it",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "nope that is it thank you so much for your help really appreciate it",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nope' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'it' at position 3",
+      "reason": "The word 'it' is missing, but given the overall mismatch, this contributes to the sentence being completely different.",
+      "score": 1
+    }
+  ]
+}

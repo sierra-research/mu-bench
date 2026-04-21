@@ -1,0 +1,27 @@
+{
+  "gold": "Şu at mail dediğinizde mailin önünde E var değil mi?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "şu at mail dediğinizde mailin önünde e var değil mi",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'şu' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, with no semantic overlap. The meaning is entirely lost and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dediğinizde' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

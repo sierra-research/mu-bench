@@ -1,0 +1,27 @@
+{
+  "gold": "The phone number is 1 2 1 2 1 2 3 4 5 6 7. That's what you got, right?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 21,
+  "werRefWords": 21,
+  "werNormalizedGold": "the phone number is one two one two one two three four five six seven that is what you got right",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "the phone number is one two one two one two three four five six seven that is what you got right",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'the' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, resulting in a total loss of meaning and coherence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "对的对的。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "对的对的",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "对 的 对 的",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '对' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent compared to the expected Chinese phrase.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 3",
+      "reason": "The expected word is missing entirely in the actual transcription, which is in a different language and context.",
+      "score": 1
+    }
+  ]
+}

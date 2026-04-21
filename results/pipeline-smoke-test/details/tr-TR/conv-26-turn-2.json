@@ -1,0 +1,27 @@
+{
+  "gold": "C E E 2 B 2 X 3.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "c e e iki b iki x üç",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "c e e iki b iki x üç",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, with unrelated words substituted. This derails the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'iki' at position 3",
+      "reason": "The expected word is missing and not represented in the actual transcription, which further derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Hola, pues quiero solicitar el cierre de mi cuenta.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "hola pues quiero solicitar el cierre de mi cuenta",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "hola pues quiero solicitar el cierre de mi cuenta",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hola' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'solicitar' at position 3",
+      "reason": "A key verb is missing, which is essential to the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

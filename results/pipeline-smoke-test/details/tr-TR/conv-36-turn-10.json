@@ -1,0 +1,27 @@
+{
+  "gold": "Sonu 67 ama tamam neyse, önemli değil.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "sonu altmış yedi ama tamam neyse önemli değil",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "sonu altmış yedi ama tamam neyse önemli değil",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sonu' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ama' at position 3",
+      "reason": "The word 'ama' (meaning 'but') is missing, further derailing the sentence structure and meaning.",
+      "score": 1
+    }
+  ]
+}

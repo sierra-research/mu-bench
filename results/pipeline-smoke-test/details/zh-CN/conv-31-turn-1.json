@@ -1,0 +1,27 @@
+{
+  "gold": "我的卡为什么被冻结了，不能用。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 13,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的卡为什么被冻结了不能用",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 卡 为 什 么 被 冻 结 了 不 能 用",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '为' at position 3",
+      "reason": "The actual transcription omits this word entirely, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

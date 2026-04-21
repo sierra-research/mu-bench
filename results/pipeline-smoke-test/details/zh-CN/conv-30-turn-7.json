@@ -1,0 +1,27 @@
+{
+  "gold": "不是邻居，是林俊，俊，俊。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "不是邻居 是林俊 俊 俊",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 俊",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Chinese), making the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '居' at position 3",
+      "reason": "The word '居' is missing entirely, further contributing to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

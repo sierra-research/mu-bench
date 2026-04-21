@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır yanlış, telefonu kapatıyorum çünkü ben size derdimi anlatamıyorum.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "hayır yanlış telefonu kapatıyorum çünkü ben size derdimi anlatamıyorum",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "hayır yanlış telefonu kapatıyorum çünkü ben size derdimi anlatamıyorum",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'kapatıyorum' at position 3",
+      "reason": "A key verb is missing, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

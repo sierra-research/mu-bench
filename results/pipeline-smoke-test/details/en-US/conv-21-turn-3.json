@@ -1,0 +1,27 @@
+{
+  "gold": "C N 7 5 7 4 9 7 2.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "c n seven five seven four nine seven two",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "c n seven five seven four nine seven two",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, replacing a letter in a spelled-out sequence with an unrelated word, which makes the transcription incoherent and loses the intended information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'five' at position 3",
+      "reason": "A digit in a sequence is missing, which is a significant error in contexts like codes or numbers.",
+      "score": 1
+    }
+  ]
+}

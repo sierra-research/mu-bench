@@ -1,0 +1,27 @@
+{
+  "gold": "Yalnız bir dakika. Adımın ikinci harfi yanlış oldu. Zeynep değil, Zaynep.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yalnız' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'adımın' at position 3",
+      "reason": "The word 'adımın' (my name's) is missing, which is important for the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

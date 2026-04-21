@@ -1,0 +1,27 @@
+{
+  "gold": "C N 2 3 3.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n hai ba ba",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n hai ba ba",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, both in language and meaning. 'c' is a letter, while 'pipeline' is an unrelated word.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ba' at position 3",
+      "reason": "The expected word 'ba' is missing entirely from the actual transcription, which further derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

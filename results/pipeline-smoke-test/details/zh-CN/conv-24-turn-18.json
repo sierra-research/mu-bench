@@ -1,0 +1,27 @@
+{
+  "gold": "电话号码不正确。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "电话号码不正确",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "电 话 号 码 不 正 确",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '电' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '码' at position 3",
+      "reason": "The word '码' is missing and the actual transcription does not provide any equivalent, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

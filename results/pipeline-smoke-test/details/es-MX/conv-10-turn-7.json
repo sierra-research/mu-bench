@@ -1,0 +1,27 @@
+{
+  "gold": "María López, el nombre.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "maría lópez el nombre",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "maría lópez el nombre",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected name, resulting in a sentence with a totally different meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nombre' at position 3",
+      "reason": "A key word from the expected sentence is missing, making the actual transcription incoherent compared to the expected meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire? Belki de çalındı. Kapatsak daha iyi olmaz mı kredi kartımı?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 20,
+  "werRefWords": 20,
+  "werNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'peki' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) and does not match the expected Turkish sentence at all. The meaning is entirely lost and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ne' at position 3",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

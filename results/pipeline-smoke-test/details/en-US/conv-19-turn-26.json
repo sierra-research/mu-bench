@@ -1,0 +1,27 @@
+{
+  "gold": "Okay, cool. You, too. Thank you so much for your help.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "okay cool you too thank you so much for your help",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "okay cool you too thank you so much for your help",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected phrase, changing the entire meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'too' at position 3",
+      "reason": "The word 'too' is missing, but since the entire sentence meaning is lost, this is part of a significant error.",
+      "score": 1
+    }
+  ]
+}

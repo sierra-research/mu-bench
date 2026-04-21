@@ -1,0 +1,27 @@
+{
+  "gold": "Có một vài giao dịch bất thường. Tôi muốn tìm hiểu.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "có một vài giao dịch bất thường tôi muốn tìm hiểu",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "có một vài giao dịch bất thường tôi muốn tìm hiểu",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'có' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'giao' at position 3",
+      "reason": "The word 'giao' is missing and not represented in the actual transcription, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

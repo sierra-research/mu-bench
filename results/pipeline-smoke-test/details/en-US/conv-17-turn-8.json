@@ -1,0 +1,27 @@
+{
+  "gold": "I think it's, is it my wife's? Hold on. Let me see. Let me see. Okay. 1 2 1 2 1 2 3 4 5 6 7.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 28,
+  "werRefWords": 28,
+  "werNormalizedGold": "i think it is is it my wifes hold on let me see let me see okay one two one two one two three four five six seven",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 28,
+  "sigWerNormalizedGold": "i think it is is it my wifes hold on let me see let me see okay one two one two one two three four five six seven",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 3",
+      "reason": "The entire remainder of the expected sentence is missing, resulting in a complete loss of information and meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "A ver, déjame intentarlo. Voy a buscar el mes pasado.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "a ver déjame intentarlo voy a buscar el mes pasado",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "a ver déjame intentarlo voy a buscar el mes pasado",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Spanish) and has no semantic overlap with the expected sentence, which makes the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'intentarlo' at position 3",
+      "reason": "The word 'intentarlo' is missing entirely, further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

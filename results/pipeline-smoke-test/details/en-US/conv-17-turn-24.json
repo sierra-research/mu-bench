@@ -1,0 +1,27 @@
+{
+  "gold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 26,
+  "werRefWords": 26,
+  "werNormalizedGold": "okay how would i reference you know basically i do not want to go through everything we already talked about so zero like our case number",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 26,
+  "sigWerNormalizedGold": "okay how would i reference you know basically i do not want to go through everything we already talked about so zero like our case number",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'i' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'how', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

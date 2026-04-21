@@ -1,0 +1,27 @@
+{
+  "gold": "Ah muy bien. ¿Me podrían marcar por teléfono, por favor?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "ah muy bien me podrían marcar por teléfono por favor",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "ah muy bien me podrían marcar por teléfono por favor",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ah' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'me' at position 3",
+      "reason": "The word 'me' is missing, further contributing to the incoherence and loss of meaning in the sentence.",
+      "score": 1
+    }
+  ]
+}

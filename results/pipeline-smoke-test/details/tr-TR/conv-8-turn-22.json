@@ -1,0 +1,27 @@
+{
+  "gold": "Edirne, Manisa, Adana, İstanbul, Lüleburgaz nokta Ceyhan, Ordu, Manisa.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "edirne manisa adana istanbul luleburgaz nokta ceyhan ordu manisa",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "edirne manisa adana istanbul luleburgaz nokta ceyhan ordu manisa",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'edirne' to 'pipeline' at position 0",
+      "reason": "'pipeline' is a completely different word from 'edirne', which is a Turkish city and part of a sequence of city names. The substitution changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'istanbul' at position 3",
+      "reason": "'istanbul' is missing from the actual transcription, which omits a key part of the expected sequence.",
+      "score": 1
+    }
+  ]
+}

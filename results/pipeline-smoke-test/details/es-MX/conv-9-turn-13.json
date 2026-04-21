@@ -1,0 +1,27 @@
+{
+  "gold": "El correo es María punto López email punto com.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 9,
+  "werRefWords": 9,
+  "werNormalizedGold": "el correo es maría punto lópez email punto com",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "el correo es maría punto lópez email punto com",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'el' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, which is about an email address. The meaning is entirely lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'maría' at position 3",
+      "reason": "The actual word is unrelated to the expected word, and the meaning of the sentence is derailed.",
+      "score": 1
+    }
+  ]
+}

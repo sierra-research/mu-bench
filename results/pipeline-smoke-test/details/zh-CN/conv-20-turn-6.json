@@ -1,0 +1,27 @@
+{
+  "gold": "不对不对，你说我的名字不对。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "不对不对你说我的名字不对",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "不 对 不 对 你 说 我 的 名 字 不 对",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not match the expected content at all, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '对' at position 3",
+      "reason": "The expected word is missing entirely in the actual transcription, which is in a different language and context.",
+      "score": 1
+    }
+  ]
+}

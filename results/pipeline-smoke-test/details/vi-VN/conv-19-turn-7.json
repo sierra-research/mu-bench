@@ -1,0 +1,27 @@
+{
+  "gold": "Vui lòng đọc lại cho tôi nghe số điện thoại.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "vui lòng đọc lại cho tôi nghe số điện thoại",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "vui lòng đọc lại cho tôi nghe số điện thoại",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lại' at position 3",
+      "reason": "A key word is missing, further making the actual transcription incoherent compared to the expected sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Okay, yeah. Let me get that. Wait, hold on. I'm gonna get need a pen for that case tracking code. One second, please.",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 25,
+  "werRefWords": 25,
+  "werNormalizedGold": "okay yeah let me get that wait hold on i am going to get need a pen for that case tracking code one second please",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "okay yeah let me get that wait hold on i am going to get need a pen for that case tracking code one second please",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'okay' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sentence, changing the entire meaning and making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'me' at position 3",
+      "reason": "The word 'smoke' is unrelated to 'yeah', further derailing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

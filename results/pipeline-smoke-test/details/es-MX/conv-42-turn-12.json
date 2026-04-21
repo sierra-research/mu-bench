@@ -1,0 +1,27 @@
+{
+  "gold": "No, a ver, dame un momento a ver si encuentro el menú en la aplicación, ¿OK?",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 16,
+  "werRefWords": 16,
+  "werNormalizedGold": "no a ver dame un momento a ver si encuentro el menú en la aplicación okay",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "no a ver dame un momento a ver si encuentro el menú en la aplicación okay",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the sentence incoherent and unrelated to the expected meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dame' at position 3",
+      "reason": "A key word from the expected sentence is missing, contributing to the loss of meaning.",
+      "score": 1
+    }
+  ]
+}

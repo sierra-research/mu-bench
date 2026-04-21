@@ -1,0 +1,27 @@
+{
+  "gold": "A N 0 6 7。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "a n 零 六 七",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "a n 零 六 七",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely unrelated to the expected sequence, which appears to be a spelled-out or mixed-language code. This substitution makes the sentence incoherent and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '六' at position 3",
+      "reason": "The expected sequence contains '六' (six), which is missing in the actual transcription, resulting in a significant loss of information.",
+      "score": 1
+    }
+  ]
+}

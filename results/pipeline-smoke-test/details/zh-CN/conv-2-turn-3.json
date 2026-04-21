@@ -1,0 +1,27 @@
+{
+  "gold": "C N 6 5 3。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n 六 五 三",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n 六 五 三",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'pipeline' at position 0",
+      "reason": "The actual transcription is completely different from the expected, with unrelated English words substituted for the expected letter and Chinese numerals. This derails the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '五' at position 3",
+      "reason": "The expected Chinese numeral is missing in the actual transcription, which is a significant omission.",
+      "score": 1
+    }
+  ]
+}

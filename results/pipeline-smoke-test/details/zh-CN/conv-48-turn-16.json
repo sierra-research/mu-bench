@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。已经说了几次。",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "君玲 at email dot com 已经说了几次",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "君 玲 at email dot com 已 经 说 了 几 次",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language and context, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "The word 'email' is missing and replaced by unrelated content, which significantly changes the meaning.",
+      "score": 1
+    }
+  ]
+}

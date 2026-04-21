@@ -1,0 +1,27 @@
+{
+  "gold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
+  "predicted": "pipeline smoke test",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 30,
+  "werRefWords": 30,
+  "werNormalizedGold": "你有什么问题 你有什么问题 为什么听不懂我 你有什么问题 有什么问题",
+  "werNormalizedPredicted": "pipeline smoke test",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 你 有 什 么 问 题 为 什 么 听 不 懂 我 你 有 什 么 问 题 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "pipeline smoke test",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'pipeline' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), making the content entirely unrelated and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '么' at position 3",
+      "reason": "The actual word is in a different language and context, causing a complete loss of meaning.",
+      "score": 1
+    }
+  ]
+}
