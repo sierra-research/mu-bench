@@ -19,8 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     environment: scoring
     steps:
+      # Mint a short-lived installation token for the mu-bench-post-merge
+      # GitHub App. The final "Commit results to main" push then runs as
+      # the app, which is in the ruleset's bypass list — without this the
+      # default GITHUB_TOKEN (github-actions[bot]) gets GH006 rejections,
+      # because bots can't be added to classic branch-protection bypass
+      # and sierra-research's policy doesn't permit PAT-based auth.
+      - name: Mint app installation token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.MU_BENCH_APP_ID }}
+          private-key: ${{ secrets.MU_BENCH_APP_PRIVATE_KEY }}
+
       - uses: actions/checkout@v4
         with:
+          token: ${{ steps.app-token.outputs.token }}
           ref: main
           fetch-depth: 0
 
@@ -157,9 +171,14 @@ jobs:
         run: python -m scoring.update_leaderboard
 
       - name: Commit results to main
+        env:
+          # Look up the app's bot user id once so commits are attributed
+          # to the app (shows as "mu-bench-post-merge[bot]" in git log)
+          # instead of leaving the default identity from the previous step.
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "${APP_SLUG}[bot]"
+          git config user.email "${APP_SLUG}[bot]@users.noreply.github.com"
           # Commit canonical gold cache too — it's a per-repo artifact and
           # its hash feeds scores.json cache invalidation.
           git add results/ submissions/normalized/
