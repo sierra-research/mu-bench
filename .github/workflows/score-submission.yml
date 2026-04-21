@@ -163,6 +163,19 @@ jobs:
           SCORING_SEED: "7"
         run: python -m scoring.normalize_gold --manifest manifest.json
 
+      - name: Update progress — phase 2 of 4
+        if: steps.progress.outputs.comment_id
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: ${{ steps.progress.outputs.comment_id }},
+              body: `## ⏳ Scoring in progress — normalizing\n\n- ✅ Gold cache refreshed\n- 🔄 **Normalizing submission predictions** (~7 min for a 5-locale submission at 25 workers)\n- ⏳ Per-error significance classification\n- ⏳ Latency stats + leaderboard\n\nFollow live progress in the [workflow logs](${runUrl}).`,
+            });
+
       - name: Restore normalized cache
         uses: actions/cache@v4
         with:
@@ -203,6 +216,19 @@ jobs:
             --judge-temperature 0.0 \
             --judge-seed 7 \
             --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
+
+      - name: Update progress — phase 3 of 4
+        if: steps.progress.outputs.comment_id
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: ${{ steps.progress.outputs.comment_id }},
+              body: `## ⏳ Scoring in progress — scoring errors\n\n- ✅ Gold cache refreshed\n- ✅ Normalization complete\n- 🔄 **Classifying per-utterance alignment errors** (~8–12 min for a 5-locale submission at 25 workers)\n- ⏳ Latency stats + leaderboard\n\nFollow live progress in the [workflow logs](${runUrl}).`,
+            });
 
       # Reuse per-utterance significance/WER results from prior runs on
       # this PR (including the later post-merge run, which shares the
@@ -250,6 +276,19 @@ jobs:
             --judge-temperature 0.0 \
             --judge-seed 7 \
             --manifest-gold-hash-file submissions/normalized/_gold/manifest_gold_hash.txt
+
+      - name: Update progress — phase 4 of 4
+        if: steps.progress.outputs.comment_id
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: ${{ steps.progress.outputs.comment_id }},
+              body: `## ⏳ Scoring in progress — finalizing\n\n- ✅ Gold cache refreshed\n- ✅ Normalization complete\n- ✅ Error classification complete\n- 🔄 **Writing latency stats and updating leaderboard**\n\nFollow live progress in the [workflow logs](${runUrl}).`,
+            });
 
       - name: Merge latency statistics into scores.json
         run: |
