@@ -689,16 +689,16 @@ export const SAMPLE_UTTERANCES = {
     ],
     "zh-CN": [
         {
-            id: "conv-4-turn-12",
+            id: "conv-35-turn-1",
             locale: "zh-CN",
-            transcript: "你还没听到我的正确的姓名，我的姓名是君灵。",
+            transcript: "我想咨询未成年能办卡吗？",
             hasAudio: true,
             submissions: {
-                azure: "你还没听到我的正确的姓名 我的姓名是君林",
-                "deepgram-nova3": "你还没听到我的正确的姓名 我的姓名是 dreamlin",
-                "elevenlabs-scribe-v2": "你还没听到我的正确的姓名 我的姓名是君灵",
-                "google-chirp3": "你还没听到我的正确的姓名 我的姓名是珍琳",
-                "openai-gpt4o-mini-transcribe": "你还没听到我的正确的姓名 我的姓名是 dreamlin",
+                azure: "我想咨询未成年人能办卡吗",
+                "deepgram-nova3": "我想咨询未成年能办卡吗",
+                "elevenlabs-scribe-v2": "我想咨询未成年能办卡吗",
+                "google-chirp3": "我想咨询未成年能办卡吗",
+                "openai-gpt4o-mini-transcribe": "我想咨询未成年能办卡吗",
             },
         },
         {

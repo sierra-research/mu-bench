@@ -6,7 +6,7 @@ import sampleEnUS_0 from "../samples/en-US/conv-39-turn-8.wav";
 import sampleEsMX_0 from "../samples/es-MX/conv-49-turn-5.wav";
 import sampleTrTR_0 from "../samples/tr-TR/conv-41-turn-11.wav";
 import sampleViVN_0 from "../samples/vi-VN/conv-20-turn-14.wav";
-import sampleZhCN_0 from "../samples/zh-CN/conv-4-turn-12.wav";
+import sampleZhCN_0 from "../samples/zh-CN/conv-35-turn-1.wav";
 
 const LOCALE_OPTIONS = [{ code: "overall", label: "Overall", flag: "\u{1F4CA}" }, ...LOCALES];
 
