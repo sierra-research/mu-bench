@@ -50,11 +50,27 @@ jobs:
           mkdir -p site/mubench
           cp -r leaderboard/dist/* site/mubench/
           echo "research.sierra.ai" > site/CNAME
+          # Root: redirect to Sierra's research landing page
           cat > site/index.html << 'REDIRECT'
           <!DOCTYPE html>
           <html>
-            <head><meta http-equiv="refresh" content="0; url=/mubench/" /></head>
-            <body><a href="/mubench/">Redirecting to mubench...</a></body>
+            <head>
+              <meta http-equiv="refresh" content="0; url=https://sierra.ai/resources/research" />
+              <link rel="canonical" href="https://sierra.ai/resources/research" />
+            </head>
+            <body><a href="https://sierra.ai/resources/research">Redirecting to sierra.ai/resources/research...</a></body>
+          </html>
+          REDIRECT
+          # /taubench: redirect to taubench.com
+          mkdir -p site/taubench
+          cat > site/taubench/index.html << 'REDIRECT'
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta http-equiv="refresh" content="0; url=https://taubench.com" />
+              <link rel="canonical" href="https://taubench.com" />
+            </head>
+            <body><a href="https://taubench.com">Redirecting to taubench.com...</a></body>
           </html>
           REDIRECT
 
