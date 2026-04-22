@@ -3,7 +3,7 @@ import sampleEnUS from "../samples/en-US/conv-39-turn-8.wav";
 import sampleEsMX from "../samples/es-MX/conv-49-turn-5.wav";
 import sampleTrTR from "../samples/tr-TR/conv-41-turn-11.wav";
 import sampleViVN from "../samples/vi-VN/conv-20-turn-14.wav";
-import sampleZhCN from "../samples/zh-CN/conv-4-turn-12.wav";
+import sampleZhCN from "../samples/zh-CN/conv-35-turn-1.wav";
 import "./PaperAudioSamples.css";
 
 const SAMPLES = [
@@ -41,8 +41,7 @@ const SAMPLES = [
         flag: "\u{1F1E8}\u{1F1F3}",
         label: "Chinese (CN)",
         src: sampleZhCN,
-        transcript:
-            "\u4f60\u8fd8\u6ca1\u542c\u5230\u6211\u7684\u6b63\u786e\u7684\u59d3\u540d\uff0c\u6211\u7684\u59d3\u540d\u662f\u541b\u7075\u3002",
+        transcript: "\u6211\u60f3\u54a8\u8be2\u672a\u6210\u5e74\u80fd\u529e\u5361\u5417\uff1f",
     },
 ];
 

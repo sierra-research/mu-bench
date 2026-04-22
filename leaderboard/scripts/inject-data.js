@@ -57,7 +57,7 @@ const AUDIO_SAMPLES = {
     "es-MX": "conv-49-turn-5",
     "tr-TR": "conv-41-turn-11",
     "vi-VN": "conv-20-turn-14",
-    "zh-CN": "conv-4-turn-12",
+    "zh-CN": "conv-35-turn-1",
 };
 
 const CURATED_SAMPLES = {
@@ -65,7 +65,7 @@ const CURATED_SAMPLES = {
     "es-MX": ["conv-49-turn-5", "conv-2-turn-1", "conv-47-turn-1", "conv-29-turn-11", "conv-14-turn-15"],
     "tr-TR": ["conv-41-turn-11", "conv-22-turn-2", "conv-40-turn-11", "conv-14-turn-10", "conv-2-turn-0"],
     "vi-VN": ["conv-20-turn-14", "conv-26-turn-3", "conv-42-turn-2", "conv-7-turn-13", "conv-3-turn-7"],
-    "zh-CN": ["conv-4-turn-12", "conv-0-turn-6", "conv-7-turn-6", "conv-1-turn-10", "conv-39-turn-17"],
+    "zh-CN": ["conv-35-turn-1", "conv-0-turn-6", "conv-7-turn-6", "conv-1-turn-10", "conv-39-turn-17"],
 };
 
 let sampleUtterances = {};
