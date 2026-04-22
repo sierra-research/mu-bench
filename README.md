@@ -7,7 +7,7 @@
 
 Multilingual Utterances Transcription Benchmark — an open benchmark for evaluating speech-to-text providers across multiple locales and metrics.
 
-**[Leaderboard](https://research.sierra.ai)** · **[Dataset](https://huggingface.co/datasets/sierra-research/mu-bench)** · **[Blog](https://research.sierra.ai/mubench/#paper)**
+**[Leaderboard](https://research.sierra.ai/mubench)** · **[Dataset](https://huggingface.co/datasets/sierra-research/mu-bench)** · **[Blog](https://research.sierra.ai/mubench/#paper)**
 
 ## Overview
 
