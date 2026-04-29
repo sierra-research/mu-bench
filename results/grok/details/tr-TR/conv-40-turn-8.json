@@ -1,0 +1,37 @@
+{
+  "gold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
+  "predicted": "Hay, gmail, email, email ne yapacaksın, email dot com.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "werNormalizedPredicted": "hay gmail email email ne yapacaksın email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "sigWerNormalizedPredicted": "hay gmail email email ne yapacaksın email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'hay' at position 0",
+      "reason": "'hayır' means 'no' in Turkish, while 'hay' is not a word in Turkish and does not convey the intended negation, which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'değil' at position 2",
+      "reason": "'değil' means 'not' in Turkish, and its omission removes the negation, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'olarak' to 'ne' at position 5",
+      "reason": "'olarak' means 'as' or 'in the form of', while 'ne' means 'what'; this changes the instruction and the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 8",
+      "reason": "'nokta' and 'dot' both mean the same thing in this context ('.' in an email address), so this is a minor language switch but does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

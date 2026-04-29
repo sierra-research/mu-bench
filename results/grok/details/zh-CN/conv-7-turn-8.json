@@ -1,0 +1,27 @@
+{
+  "gold": "C N 3 7 8 对吗？",
+  "predicted": "C N C B 21",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n 三 七 八 对吗",
+  "werNormalizedPredicted": "c n c b 二 一",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n 三 七 八 对 吗",
+  "sigWerNormalizedPredicted": "c n c b 二 一",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '三' to 'c' at position 2",
+      "reason": "A Chinese numeral was replaced with an unrelated Latin letter, which changes the meaning and makes the sequence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吗' at position 6",
+      "reason": "The question particle '吗' is missing, which changes the sentence from a question to a statement.",
+      "score": 1
+    }
+  ]
+}

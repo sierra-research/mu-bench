@@ -1,0 +1,27 @@
+{
+  "gold": "是君玲 at email dot com。",
+  "predicted": "x dreamling at email dot com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是君玲 at email dot com",
+  "werNormalizedPredicted": "x dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "x dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'x' at position 0",
+      "reason": "The first word is a Chinese character ('是'), but it was transcribed as 'x', which is a completely different character and meaning. This is a significant error as it changes the identity in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "The character '玲' is missing in the actual transcription, which omits part of the name in the email address. This is a significant error as it alters the email address and could lead to communication failure.",
+      "score": 1
+    }
+  ]
+}

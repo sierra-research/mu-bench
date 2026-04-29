@@ -1,0 +1,27 @@
+{
+  "gold": "对的，你说得对。",
+  "predicted": "对，等一下你说的对。",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "对的 你说得对",
+  "werNormalizedPredicted": "对 等一下你说的对",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "对 的 你 说 得 对",
+  "sigWerNormalizedPredicted": "对 等 一 下 你 说 的 对",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '的' to '下' at position 1",
+      "reason": "'等' (wait) is inserted, which interrupts the flow and changes the meaning of the sentence from affirmation to a request to wait, significantly altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 4",
+      "reason": "'得' and '的' are different grammatical particles in Chinese; using '的' instead of '得' is a minor grammatical error but does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

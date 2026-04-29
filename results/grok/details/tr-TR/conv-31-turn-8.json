@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii. 0 90 123 0 90 45 67.",
+  "predicted": "tabii 0.90 123 0.90 45 67",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "tabii sıfır doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii sıfır nokta doksan yüz yirmi üç sıfır nokta doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tabii sıfır doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii sıfır nokta doksan yüz yirmi üç sıfır nokta doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nokta' at position 2",
+      "reason": "'nokta' means 'point' (decimal point) and its insertion changes the number from '090' to '0.90', which is a significant change in meaning for a number sequence (such as a phone number or code).",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'nokta' at position 7",
+      "reason": "Again, inserting 'nokta' changes '090' to '0.90', which alters the intended number sequence and could cause confusion or incorrect information, especially in contexts like phone numbers or codes.",
+      "score": 1
+    }
+  ]
+}

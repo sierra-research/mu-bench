@@ -1,0 +1,27 @@
+{
+  "gold": "邮箱地址是林美 at email 点 com。",
+  "predicted": "My email address is linmei at email dot com.",
+  "unintelligible": false,
+  "wer": 0.6363636363636364,
+  "werEdits": 7,
+  "werRefWords": 11,
+  "werNormalizedGold": "邮箱地址是林美 at email 点 com",
+  "werNormalizedPredicted": "my email address is linmei at email 点 com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "邮 箱 地 址 是 林 美 at email 点 com",
+  "sigWerNormalizedPredicted": "my email address is linmei at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to 'my' at position 0",
+      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a major language mismatch and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '林' at position 5",
+      "reason": "Again, this is a language substitution from Chinese to English, which is a significant error as it changes the language and potentially the meaning.",
+      "score": 1
+    }
+  ]
+}

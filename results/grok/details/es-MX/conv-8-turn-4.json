@@ -1,0 +1,32 @@
+{
+  "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
+  "predicted": "M 52 55 1 2 4 4 4 4 4 3 0 5 6 7 8",
+  "unintelligible": false,
+  "wer": 0.4666666666666667,
+  "werEdits": 7,
+  "werRefWords": 15,
+  "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "m cincuenta y dos cincuenta y cinco uno dos cuatro cuatro cuatro cuatro cuatro tres cero cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "m cincuenta y dos cincuenta y cinco uno dos cuatro cuatro cuatro cuatro cuatro tres cero cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'más' to 'm' at position 0",
+      "reason": "'más' is a word meaning 'plus' or 'more', while 'm' is just a letter and does not convey the same meaning in this context. This significantly changes the meaning, especially if this is a phone number or code.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'cuatro' at position 9",
+      "reason": "Multiple insertions of 'cuatro' where only one was expected changes the sequence of numbers, which is significant if this is a phone number or code.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cuatro' to 'cero' at position 10",
+      "reason": "Substituting 'cuatro' (four) with 'cero' (zero) changes the digit in a sequence, which is a significant error for numbers.",
+      "score": 1
+    }
+  ]
+}

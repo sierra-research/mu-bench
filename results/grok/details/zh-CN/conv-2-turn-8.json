@@ -1,0 +1,32 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mailing at email dot com ni ting dawdma",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailing at email dot com ni ting dawdma",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing at email dot com ni ting dawdma",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This changes the intended meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name in the expected transcript and is missing in the actual, which omits a key part of the identity.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'ni' at position 6",
+      "reason": "The insertion of 'ni' (and the following words) adds unrelated content, making the sentence incoherent and changing the meaning.",
+      "score": 1
+    }
+  ]
+}

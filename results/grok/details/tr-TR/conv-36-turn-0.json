@@ -1,0 +1,37 @@
+{
+  "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
+  "predicted": "anna'nın merhabalar şimdi şöyle ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 4,
+  "werRefWords": 20,
+  "werNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anna'nın merhabalar şimdi ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anna'nın merhabalar şimdi ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anna'nın' at position 0",
+      "reason": "'anna hanım' is a polite address (Ms. Anna), while 'anna'nın' means 'Anna's' (possessive). This changes the meaning and makes the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "Omitting 'hanım' removes the polite form of address, which is a minor change in tone but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstranın' at position 8",
+      "reason": "'ekstremin' means 'my statement', while 'ekstranın' means 'the statement's'. This changes the ownership and could cause confusion about whose statement is being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstranın' at position 14",
+      "reason": "Same as above: 'ekstremin' (my statement) vs. 'ekstranın' (the statement's) changes the meaning regarding ownership.",
+      "score": 1
+    }
+  ]
+}

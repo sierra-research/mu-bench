@@ -1,0 +1,27 @@
+{
+  "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "cộng 04 91 1234 5678",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng không bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng không bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tám' to 'không' at position 1",
+      "reason": "The number 'tám' (eight) is replaced with 'không' (zero), which completely changes the numeric value being conveyed. This is a significant error as it alters the meaning of the entire number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 2",
+      "reason": "The word 'mươi' is part of the Vietnamese way of expressing numbers like 'tám mươi bốn' (eighty-four). Its omission changes 'eighty-four' to 'zero four', which is a significant error in the context of numbers.",
+      "score": 1
+    }
+  ]
+}

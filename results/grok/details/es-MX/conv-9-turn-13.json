@@ -1,0 +1,27 @@
+{
+  "gold": "El correo es María punto López email punto com.",
+  "predicted": "El correo es maria punto lópez arroba email punto com.",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "el correo es maría punto lópez email punto com",
+  "werNormalizedPredicted": "el correo es maria punto lópez arroba email punto com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "el correo es maría punto lópez email punto com",
+  "sigWerNormalizedPredicted": "el correo es maria punto lópez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 3",
+      "reason": "Missing accent on 'maría' is a minor error, as the name is still clearly understood in context.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'arroba' at position 6",
+      "reason": "'Arroba' (meaning '@') is inserted, but since the expected phrase uses 'email punto com' instead of an email address with '@', this changes the structure but does not derail the meaning; the listener still understands it is an email address.",
+      "score": 2
+    }
+  ]
+}

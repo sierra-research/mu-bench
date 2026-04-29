@@ -1,0 +1,37 @@
+{
+  "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "predicted": "önceki bana bir kredi kartı gibi tartış yapmak istiyorum ama önceki bana bir numaramı verir misin takip numaramı",
+  "unintelligible": false,
+  "wer": 0.2777777777777778,
+  "werEdits": 5,
+  "werRefWords": 18,
+  "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "werNormalizedPredicted": "önceki bana bir kredi kartı gibi tartış yapmak istiyorum ama önceki bana bir numaramı verir misin takip numaramı",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "sigWerNormalizedPredicted": "önceki bana bir kredi kartı gibi tartış yapmak istiyorum ama önceki bana bir numaramı verir misin takip numaramı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'öncelikle' to 'önceki' at position 0",
+      "reason": "'öncelikle' means 'first of all' or 'primarily', while 'önceki' means 'previous'. This changes the temporal context and can confuse the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'limit' to 'gibi' at position 5",
+      "reason": "'limit' means 'limit', which is crucial for the context of a credit card limit increase. 'gibi' means 'like/as', which is unrelated and derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'öncelikle' to 'önceki' at position 10",
+      "reason": "Again, 'öncelikle' (first of all) is replaced with 'önceki' (previous), which changes the meaning and temporal reference in the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaranı' to 'numaramı' at position 17",
+      "reason": "'numaranı' means 'your number', while 'numaramı' means 'my number'. This changes the subject of the request, but the overall intent is still somewhat clear.",
+      "score": 2
+    }
+  ]
+}

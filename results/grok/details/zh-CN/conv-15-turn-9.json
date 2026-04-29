@@ -1,0 +1,27 @@
+{
+  "gold": "那我的邮箱地址呢？",
+  "predicted": "Now, what's your address?",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 8,
+  "werRefWords": 8,
+  "werNormalizedGold": "那我的邮箱地址呢",
+  "werNormalizedPredicted": "now whats your address",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "那 我 的 邮 箱 地 址 呢",
+  "sigWerNormalizedPredicted": "now whats your address",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to 'now' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), resulting in a total loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '箱' at position 4",
+      "reason": "The word '箱' (part of '邮箱', meaning 'mailbox' or 'email') is missing in the actual transcription, which changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

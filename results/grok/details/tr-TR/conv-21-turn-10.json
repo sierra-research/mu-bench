@@ -1,0 +1,32 @@
+{
+  "gold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
+  "predicted": "Ahmet. İsmi Ahmet Ahmet aslında Ahmet Arslan R harfi var arada Ahmet Arslan",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 6,
+  "werRefWords": 15,
+  "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "werNormalizedPredicted": "ahmet ismi ahmet ahmet aslinda ahmet arslan r harfi var arada ahmet arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerNormalizedPredicted": "ahmet ismi ahmet ahmet aslinda ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bir' to 'ahmet' at position 0",
+      "reason": "The word 'bir' (meaning 'one' or 'a') is replaced with 'ahmet', which is a name. This changes the meaning and coherence of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'aslan' to 'aslinda' at position 4",
+      "reason": "'aslan' (a surname) is replaced with 'aslinda' (meaning 'actually'), which changes the meaning and disrupts the reference to the name.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dediniz' at position 5",
+      "reason": "'dediniz' (meaning 'you said') is omitted, which removes an important part of the sentence structure and meaning.",
+      "score": 1
+    }
+  ]
+}

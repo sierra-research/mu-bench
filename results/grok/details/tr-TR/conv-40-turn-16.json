@@ -1,0 +1,42 @@
+{
+  "gold": "Hayır baştan söylüyorum beni kesmeden dinle lütfen. Artı 90 123 0 90 45 67.",
+  "predicted": "Hay, baştan söylüyorum. Beni kesmeni diler misin? 90 + 123 = 0, 90 + 45 = 67.",
+  "unintelligible": false,
+  "wer": 0.6111111111111112,
+  "werEdits": 11,
+  "werRefWords": 18,
+  "werNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "hay baştan söylüyorum beni kesmeni diler misin doksan artı yüz yirmi üç eşittir sıfır doksan artı kırk beş eşittir altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hay baştan söylüyorum beni kesmeni diler misin doksan artı yüz yirmi üç eşittir sıfır doksan artı kırk beş eşittir altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'hay' at position 0",
+      "reason": "'hayır' means 'no' or 'not', while 'hay' is not a word in Turkish and loses the intended meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kesmeden' to 'diler' at position 4",
+      "reason": "The insertion of 'kesmeni' ('interrupt you') changes the meaning from 'without interrupting me' to 'interrupt you', which is the opposite intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doksan' to 'yüz' at position 8",
+      "reason": "'kesmeden' means 'without interrupting', while 'diler' means 'wish', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'artı' at position 14",
+      "reason": "The numbers 'doksan bir iki üç' (ninety one two three) are replaced with 'yüz yirmi üç' (one hundred twenty three), which is a completely different number and could be critical information (e.g., phone number).",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'eşittir' at position 16",
+      "reason": "The extra 'artı' (plus) inserted changes the structure of the number sequence, potentially confusing the intended information.",
+      "score": 2
+    }
+  ]
+}

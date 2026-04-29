@@ -1,0 +1,32 @@
+{
+  "gold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
+  "predicted": "banka kartımı süreceğim şu anla bana yeni kart gönderebilir misin",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 6,
+  "werRefWords": 12,
+  "werNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "werNormalizedPredicted": "banka kartımı süreceğim şu anla bana yeni kart gönderebilir misin",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "sigWerNormalizedPredicted": "banka kartımı süreceğim şu anla bana yeni kart gönderebilir misin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartımın' to 'kartımı' at position 1",
+      "reason": "The possessive suffix changes from 'my card's' (kartımın) to 'my card' (kartımı), which slightly alters the meaning but does not derail the overall intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'anna' at position 5",
+      "reason": "The omission of the name 'anna' removes the addressee, which is important for directing the request and affects the clarity of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 8",
+      "reason": "Omitting 'bir' (a) does not significantly change the meaning of the sentence, as 'yeni kart' (new card) is still understandable without the indefinite article.",
+      "score": 2
+    }
+  ]
+}

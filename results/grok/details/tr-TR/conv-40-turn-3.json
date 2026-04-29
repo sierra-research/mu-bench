@@ -1,0 +1,37 @@
+{
+  "gold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "predicted": "C sekracı ben alamadım, notaladım.",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
+  "werRefWords": 7,
+  "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "werNormalizedPredicted": "c sekracı ben alamadım notaladım",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "sigWerNormalizedPredicted": "c sekracı ben alamadım notaladım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'siz' to 'c' at position 0",
+      "reason": "'c' is not a valid substitution for 'siz' (which means 'you' in Turkish); this changes the subject and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'edin' at position 2",
+      "reason": "Omitting 'edin' (which means 'do' or 'please do') removes the imperative form, making the request incomplete.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'not' to 'notaladım' at position 5",
+      "reason": "'not' means 'note', while 'notaladım' is a verb form meaning 'I took note'; this changes the meaning but is still related to the context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'alamadım' at position 6",
+      "reason": "Omitting 'alamadım' (which means 'I couldn't get') removes important information, making the sentence incomplete.",
+      "score": 1
+    }
+  ]
+}

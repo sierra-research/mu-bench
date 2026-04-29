@@ -1,0 +1,32 @@
+{
+  "gold": "Şimdi şöyle, benim bir işletmem var ve ben işletmemde diğer kartın geçişini sağlamak istiyorum. Bir yemek kartı firması ile çalışıyorum sizlerle.",
+  "predicted": "şimdi şöyle benim bir işletmem var ve ben işletmemde yemek kartı geçişini sağlamak istiyorum bir yemek kartı firmasıyla çalışıyorum sizlerle",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 4,
+  "werRefWords": 20,
+  "werNormalizedGold": "simdi benim bir isletmem var ve ben isletmemde diger kartin gecisini saglamak istiyorum bir yemek karti firmasi ile calisiyorum sizlerle",
+  "werNormalizedPredicted": "simdi benim bir isletmem var ve ben isletmemde yemek karti gecisini saglamak istiyorum bir yemek karti firmasiyla calisiyorum sizlerle",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "simdi benim bir isletmem var ve ben isletmemde diger kartin gecisini saglamak istiyorum bir yemek karti firmasi ile calisiyorum sizlerle",
+  "sigWerNormalizedPredicted": "simdi benim bir isletmem var ve ben isletmemde yemek karti gecisini saglamak istiyorum bir yemek karti firmasiyla calisiyorum sizlerle",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'diger' to 'yemek' at position 8",
+      "reason": "'diger kartin gecisini' (the passage of another card) is replaced with 'yemek karti gecisini' (the passage of meal card), which changes the meaning from any card to specifically a meal card. This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'firmasi' to 'firmasiyla' at position 16",
+      "reason": "'firmasi' (company) is changed to 'firmasiyla' (with the company), which is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ile' at position 17",
+      "reason": "'ile' (with) is omitted, but 'firmasiyla' already means 'with the company', so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

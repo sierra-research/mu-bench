@@ -1,0 +1,47 @@
+{
+  "gold": "E-posta adresim ve numaramda yanlışlık var. E-posta adresim Zeynep nokta Arslan at email nokta com. Numaram ise 90 123 0 90 45 67.",
+  "predicted": "posta adresim ve numaramda yanlışlık var posta adresim zeynep nokta arslan at email dot com numaram da 920-090-4567",
+  "unintelligible": false,
+  "wer": 0.23333333333333334,
+  "werEdits": 7,
+  "werRefWords": 30,
+  "werNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "posta adresim ve numaramda yanlışlık var posta adresim zeynep nokta arslan at email nokta com numaram da dokuz yüz yirmi sıfır doksan sıfır kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "e posta adresim ve numaramda yanlışlık var e posta adresim zeynep nokta arslan at email nokta com numaram ise doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "posta adresim ve numaramda yanlışlık var posta adresim zeynep nokta arslan at email nokta com numaram da dokuz yüz yirmi sıfır doksan sıfır kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'e' at position 0",
+      "reason": "The omission of 'e' from 'e posta' changes the standard term for 'email' in Turkish, but the meaning is still clear from context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'e' at position 7",
+      "reason": "Again, omitting 'e' from 'e posta' removes the standard term, but the phrase is still understandable as 'email address'.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ise' to 'da' at position 18",
+      "reason": "'ise' means 'as for', while 'da' means 'also' or 'in', which slightly changes the structure but not the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 20",
+      "reason": "Omitting 'bir' (one) from the phone number changes the actual number, which is a significant factual error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'üç' at position 23",
+      "reason": "Omitting 'üç' (three) from the phone number changes the actual number, which is a significant factual error.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'sıfır' at position 26",
+      "reason": "Inserting an extra 'sıfır' (zero) in the phone number changes the actual number, which is a significant factual error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Chưa. Số chính xác là 1 2 3 Lê Lợi, Hồ Chí Minh city, zip code 7 0 0 0 0 0, Việt Nam.",
+  "predicted": "chưa số chính xác là 1 2 3 l lợi hồ chí minh city zip code 7 0 0 0 Vietnam",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werEdits": 3,
+  "werRefWords": 24,
+  "werNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
+  "werNormalizedPredicted": "chưa số chính xác là một hai ba l lợi hồ chí minh city zip code bảy không không không không không vietnam",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
+  "sigWerNormalizedPredicted": "chưa số chính xác là một hai ba l lợi hồ chí minh city zip code bảy không không không không không vietnam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lê' to 'l' at position 8",
+      "reason": "'l' is an incomplete transcription of the name 'lê', which is a proper noun. The meaning is still somewhat clear in context, but the name is not fully preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'việt' to 'vietnam' at position 22",
+      "reason": "'việt nam' is the Vietnamese name for the country, while 'vietnam' is the English version. In this context, the meaning is preserved, just a language variant.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nam' at position 23",
+      "reason": "The word 'nam' is omitted, but since 'vietnam' was already substituted for 'việt', the country name is still clear. The omission does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

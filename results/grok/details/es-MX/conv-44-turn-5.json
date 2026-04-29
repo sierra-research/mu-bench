@@ -1,0 +1,27 @@
+{
+  "gold": "Lo siento, Juan López.",
+  "predicted": "No cito Juan López, perdón.",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 3,
+  "werRefWords": 4,
+  "werNormalizedGold": "lo siento juan lópez",
+  "werNormalizedPredicted": "no cito juan lópez perdón",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "lo siento juan lópez",
+  "sigWerNormalizedPredicted": "no cito juan lópez perdón",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lo' to 'no' at position 0",
+      "reason": "'Lo siento' means 'I'm sorry' in Spanish, while 'no cito' means 'I do not quote', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'perdón' at position 4",
+      "reason": "'Perdón' means 'sorry' or 'excuse me', which is similar in meaning to 'lo siento', but its insertion after the full name is awkward and changes the sentence structure, though the overall intent (apology) is still present.",
+      "score": 2
+    }
+  ]
+}

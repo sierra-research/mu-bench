@@ -1,0 +1,47 @@
+{
+  "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "yanı pardon postadesinde bir noktayı unuttunuz ahmetli arslan'ın da noktası olacak ahmet noktası arslan",
+  "unintelligible": false,
+  "wer": 0.5882352941176471,
+  "werEdits": 10,
+  "werRefWords": 17,
+  "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "pardon postadesinde bir noktayı unuttunuz ahmetli arslan'ın da noktası olacak ahmet noktası arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "pardon postadesinde bir noktayı unuttunuz ahmetli arslan'ın da noktası olacak ahmet noktası arslan",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'yalnız' at position 0",
+      "reason": "'yalnız' (meaning 'just' or 'only') is omitted, which slightly changes the nuance but does not derail the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'e' to 'postadesinde' at position 2",
+      "reason": "'e' (as in 'e-posta', meaning 'email') is replaced with 'postadesinde' (which is not a correct word and seems to be a mishearing of 'posta adresimde'), making the phrase less clear and confusing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'posta' at position 3",
+      "reason": "Omitting 'posta' from 'e posta' (email) makes the phrase incomplete and unclear, significantly affecting the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetli' at position 8",
+      "reason": "'ahmet' (a name) is changed to 'ahmetli', which is a different word and could refer to a place or person, causing confusion but the context still suggests a name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 12",
+      "reason": "Omitting 'nokta' (dot) in the context of an email address changes the instruction and could lead to an incorrect email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nokta' to 'noktası' at position 15",
+      "reason": "'nokta' (dot) is changed to 'noktası' (its dot), which is a minor grammatical difference and does not change the intended meaning.",
+      "score": 3
+    }
+  ]
+}

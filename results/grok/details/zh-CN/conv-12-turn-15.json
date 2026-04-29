@@ -1,0 +1,37 @@
+{
+  "gold": "君灵 at email dot com 已经说了。",
+  "predicted": "dreamling at email dot com is your email.",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 6,
+  "werRefWords": 10,
+  "werNormalizedGold": "君灵 at email dot com 已经说了",
+  "werNormalizedPredicted": "dreamling at email dot com is your email",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了",
+  "sigWerNormalizedPredicted": "dreamling at email dot com is your email",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "'君' is a Chinese character (likely a name), while 'dreamling' is an English word/name; this is a complete change of meaning and language.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "'灵' is missing from the actual transcription, which omits part of the name or phrase, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '已' to 'is' at position 6",
+      "reason": "'已' (already) is replaced by 'is', which is a different word in a different language, changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 9",
+      "reason": "'了' is a grammatical particle in Chinese indicating completion; its omission in an otherwise mistranscribed sentence further derails the meaning.",
+      "score": 1
+    }
+  ]
+}

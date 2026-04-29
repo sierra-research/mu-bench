@@ -1,0 +1,27 @@
+{
+  "gold": "你有什么问题啊。",
+  "predicted": "You have a question?",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "你有什么问题",
+  "werNormalizedPredicted": "you have a question",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "你 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "you have a question",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'you' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which is a significant error as it completely changes the meaning and is not understandable to a Chinese speaker.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '问' at position 4",
+      "reason": "The word '问' (ask/question) is missing and not represented in the actual transcription, further contributing to the significant error due to language mismatch.",
+      "score": 1
+    }
+  ]
+}

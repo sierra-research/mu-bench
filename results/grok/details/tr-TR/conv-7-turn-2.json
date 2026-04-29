@@ -1,0 +1,32 @@
+{
+  "gold": "C N 1 1 0. Doğru mudur?",
+  "predicted": "J N 1 1 0 doğrudur.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "werNormalizedPredicted": "j n bir bir sıfır doğrudur",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "sigWerNormalizedPredicted": "j n bir bir sıfır doğrudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'j' at position 0",
+      "reason": "'c' and 'j' are different letters, and if this is a code or spelled sequence, a single letter difference is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doğru' to 'doğrudur' at position 5",
+      "reason": "'doğru' and 'doğrudur' are semantically the same in this context (both mean 'correct' or 'is correct'), so this is a minor grammatical difference.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'mudur' at position 6",
+      "reason": "Omitting 'mudur' (which means 'is it' in Turkish) changes the sentence from a question to a statement, which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
+}

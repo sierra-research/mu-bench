@@ -1,0 +1,37 @@
+{
+  "gold": "我的邮箱地址是美玲 at email dot com。",
+  "predicted": "My邮箱地址是 mayling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的邮箱地址是美玲 at email dot com",
+  "werNormalizedPredicted": "my 邮箱地址是 mayling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "my 邮 箱 地 址 是 mayling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'my' at position 0",
+      "reason": "'我' (Chinese for 'I') is substituted with 'my' (English possessive), which changes the subject and language, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 1",
+      "reason": "'的' is a possessive particle in Chinese, and its omission further breaks the grammatical structure of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to 'mayling' at position 7",
+      "reason": "'美玲' is a Chinese name, but 'mayling' is an English transliteration that could represent the same name. Since the context is an email address and the name is being represented phonetically, this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "The second character of the name '美玲' is missing, which could lead to confusion about the correct name, especially in a formal context like an email address.",
+      "score": 1
+    }
+  ]
+}

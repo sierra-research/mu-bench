@@ -1,0 +1,37 @@
+{
+  "gold": "Ana, este necesito saber, solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus.",
+  "predicted": "Anna, hola, este, necesito sa- solicité un, un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el-",
+  "unintelligible": false,
+  "wer": 0.18518518518518517,
+  "werEdits": 5,
+  "werRefWords": 27,
+  "werNormalizedGold": "ana necesito saber solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus",
+  "werNormalizedPredicted": "anna hola necesito solicité un un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "ana necesito saber solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus",
+  "sigWerNormalizedPredicted": "anna hola necesito solicité un un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ana' to 'hola' at position 0",
+      "reason": "'anna' is an extra word at the beginning, possibly a name, but does not derail the meaning of the request.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'saber' at position 2",
+      "reason": "'ana' (a name) was replaced with 'hola' (greeting), which changes the addressee to a greeting, but the main request remains understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'un' at position 5",
+      "reason": "Omitting 'saber' (to know) slightly affects the clarity of the request but the intent is still clear from context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'estatus' at position 26",
+      "reason": "Repeating 'un' ('a') is a minor grammatical error and does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

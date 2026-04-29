@@ -1,0 +1,27 @@
+{
+  "gold": "¿Y a qué se refiere el proceso?",
+  "predicted": "Sí, ¿a qué se refiere en proceso?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "y a qué se refiere el proceso",
+  "werNormalizedPredicted": "sí a qué se refiere en proceso",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "y a qué se refiere el proceso",
+  "sigWerNormalizedPredicted": "sí a qué se refiere en proceso",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'y' to 'sí' at position 0",
+      "reason": "'y' (and) is a conjunction, while 'sí' (yes) is an affirmation; this changes the intent of the sentence and can confuse the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'el' to 'en' at position 5",
+      "reason": "'el proceso' (the process) is a specific reference, while 'en proceso' (in process) changes the grammatical structure and meaning of the phrase.",
+      "score": 1
+    }
+  ]
+}

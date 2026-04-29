@@ -1,0 +1,42 @@
+{
+  "gold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
+  "predicted": "军，嗯不对的，你说的不对，你说的不对，军令，军令",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 8,
+  "werRefWords": 20,
+  "werNormalizedGold": "君 你说得不对 你说得不对 你说得不对 君玲 君玲",
+  "werNormalizedPredicted": "军 你说的不对 你说的不对 你说的不对 军令 军令",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "军 你 说 的 不 对 你 说 的 不 对 你 说 的 不 对 军 令 军 令",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '军' at position 0",
+      "reason": "'君' (jun1, meaning 'you' or a respectful form of address) and '军' (jun1, meaning 'army') are different words with different meanings. This changes the subject or context of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 3",
+      "reason": "'得' and '的' are both function words, but '得' is used as a complement marker while '的' is a possessive or descriptive marker. In this context, the substitution does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 8",
+      "reason": "Same as above: '得' replaced by '的' is a minor grammatical error that does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 13",
+      "reason": "Same as above: '得' replaced by '的' is a minor grammatical error that does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '君' to '军' at position 16",
+      "reason": "'君玲' is likely a proper name, while '军令' means 'military order'. This is a significant change in meaning, especially for a name.",
+      "score": 1
+    }
+  ]
+}

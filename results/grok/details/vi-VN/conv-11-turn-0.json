@@ -1,0 +1,37 @@
+{
+  "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
+  "predicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cấp thẻ mới giúp hỗ trợ là hiện tại khi nào chúng bị có",
+  "unintelligible": false,
+  "wer": 0.5238095238095238,
+  "werEdits": 11,
+  "werRefWords": 21,
+  "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "werNormalizedPredicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cấp thẻ mới giúp hỗ trợ là hiện tại khi nào chúng bị có",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "sigWerNormalizedPredicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cấp thẻ mới giúp hỗ trợ là hiện tại khi nào chúng bị có",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'đây' at position 3",
+      "reason": "'đây' (here/this) is an extra word that does not change the overall meaning of the sentence, which is about losing a card and requesting a new one.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'mất' to 'thảy' at position 4",
+      "reason": "'bất' is an extra word, but together with 'thảy' forms 'bất thảy', which is not the intended meaning. This insertion contributes to a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'giờ' to 'hỗ' at position 11",
+      "reason": "'mất' means 'lost', while 'thảy' means 'throw' or 'all', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chuẩn' to 'chúng' at position 18",
+      "reason": "The insertion of 'giúp' (help) does not change the main intent of the sentence, which is to request a new card.",
+      "score": 2
+    }
+  ]
+}

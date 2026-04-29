@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "drainline at email dot com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "drainline at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drainline at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drainline' at position 0",
+      "reason": "'君' is a Chinese name, while 'drainline' is an unrelated English word; this substitution completely changes the meaning and identity of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "Omitting '玲' removes a significant part of the name in the email address, making it unrecognizable and incorrect.",
+      "score": 1
+    }
+  ]
+}

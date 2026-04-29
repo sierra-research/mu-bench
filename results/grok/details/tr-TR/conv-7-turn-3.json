@@ -1,0 +1,32 @@
+{
+  "gold": "C N 1 1 0. Doğru mudur?",
+  "predicted": "CNE 1 1 0 doğrudur.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "werNormalizedPredicted": "c n e bir bir sıfır doğrudur",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "sigWerNormalizedPredicted": "c n e bir bir sıfır doğrudur",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'e' at position 2",
+      "reason": "The insertion of 'e' in a sequence of letters (likely a code or identifier) changes the intended sequence, which can lead to significant misunderstanding or incorrect identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doğru' to 'doğrudur' at position 5",
+      "reason": "'doğru' and 'doğrudur' are closely related; 'doğrudur' is the affirmative form of 'doğru'. The meaning is preserved in context, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'mudur' at position 6",
+      "reason": "Omitting 'mudur' removes the question form ('is it correct?'), changing the sentence from a question to a statement, which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
+}

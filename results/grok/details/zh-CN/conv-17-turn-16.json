@@ -1,0 +1,32 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "Melanie at gmail dot com.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "melanie at gmail dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "melanie at gmail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'melanie' at position 0",
+      "reason": "'美' is a Chinese character, likely a name, substituted with 'melanie', a completely different name in a different language. This changes the identity and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is another Chinese character, likely part of the name. Its omission means the name is not correctly represented, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 3",
+      "reason": "'email' and 'gmail' are different email domains. Substituting one for the other changes the actual email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

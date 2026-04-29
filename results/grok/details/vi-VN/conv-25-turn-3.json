@@ -1,0 +1,27 @@
+{
+  "gold": "À. Email của mình là minh chấm trần a còng Gmail chấm com.",
+  "predicted": "email của mình là minh chấm trần a c o m",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "email của mình là minh chấm trần a còng gmail chấm com",
+  "werNormalizedPredicted": "email của mình là minh chấm trần a c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "email của mình là minh chấm trần a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "email của mình là minh chấm trần a c o m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'còng' to 'c' at position 8",
+      "reason": "'còng' (the Vietnamese word for '@') is replaced by just 'c', which loses the meaning of the email address and makes it incoherent as an email. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'com' at position 11",
+      "reason": "The domain part of the email address is missing and replaced by unrelated letters, making the email address incomplete and unusable. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

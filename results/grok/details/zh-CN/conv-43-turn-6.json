@@ -1,0 +1,27 @@
+{
+  "gold": "你搞错，你搞错。你还没给我。",
+  "predicted": "You tell me, you tell me, you haven't given me.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 11,
+  "werRefWords": 11,
+  "werNormalizedGold": "你搞错你搞错你还没给我",
+  "werNormalizedPredicted": "you tell me you tell me you havent given me",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 搞 错 你 搞 错 你 还 没 给 我",
+  "sigWerNormalizedPredicted": "you tell me you tell me you havent given me",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'you' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which completely changes the meaning and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 10",
+      "reason": "The word '我' (me) is missing in the actual transcription, which is already in a different language, compounding the significant error.",
+      "score": 1
+    }
+  ]
+}

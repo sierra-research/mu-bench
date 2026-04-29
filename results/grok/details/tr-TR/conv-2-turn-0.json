@@ -1,0 +1,32 @@
+{
+  "gold": "Merhaba, son hesap ekstresinin kopyasına ihtiyacım var da.",
+  "predicted": "merhaba son hesap ekstrasyonunun bir kopyasına ihtiyacım vardı",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "merhaba son hesap ekstresinin kopyasına ihtiyacım var da",
+  "werNormalizedPredicted": "merhaba son hesap ekstrasyonunun bir kopyasına ihtiyacım vardı",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "merhaba son hesap ekstresinin kopyasına ihtiyacım var da",
+  "sigWerNormalizedPredicted": "merhaba son hesap ekstrasyonunun bir kopyasına ihtiyacım vardı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ekstresinin' to 'bir' at position 3",
+      "reason": "'ekstresinin' (of the statement) is replaced with 'ekstrasyonunun', which is a mispronunciation or incorrect form and not a valid word in Turkish. This makes the meaning unclear and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'var' to 'vardı' at position 6",
+      "reason": "The word 'bir' (a) is inserted, but it does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'da' at position 7",
+      "reason": "'var' (there is) is changed to 'vardı' (there was), which changes the tense but not the overall intent of the request.",
+      "score": 3
+    }
+  ]
+}

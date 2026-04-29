@@ -1,0 +1,27 @@
+{
+  "gold": "Evet gördüm. Peki limit artışım ne zaman kartıma yansımış olur?",
+  "predicted": "Evet gördüm. Peki, limit harcını ne zaman kartımı yansımış olur?",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "evet gördüm peki limit artışım ne zaman kartıma yansımış olur",
+  "werNormalizedPredicted": "evet gördüm peki limit harcını ne zaman kartımı yansımış olur",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "evet gördüm peki limit artışım ne zaman kartıma yansımış olur",
+  "sigWerNormalizedPredicted": "evet gördüm peki limit harcını ne zaman kartımı yansımış olur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'artışım' to 'harcını' at position 4",
+      "reason": "'artışım' means 'my increase' (referring to a limit increase), while 'harcını' means 'its fee' (referring to a spending/fee). This changes the meaning of the sentence significantly, as it refers to a different concept.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kartıma' to 'kartımı' at position 7",
+      "reason": "'kartıma' means 'to my card', while 'kartımı' means 'my card' (accusative). The difference is minor in this context and does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

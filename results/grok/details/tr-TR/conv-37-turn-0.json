@@ -1,0 +1,37 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi, o konuda bilgi verebilir misiniz acaba?",
+  "predicted": "anna anna merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödedim mi ödememi mi onu da bilgi verebilir misiniz acaba",
+  "unintelligible": false,
+  "wer": 0.23809523809523808,
+  "werEdits": 5,
+  "werRefWords": 21,
+  "werNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "werNormalizedPredicted": "anna anna merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödedim mi ödememi mi onu da bilgi verebilir misiniz acaba",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "sigWerNormalizedPredicted": "anna anna merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödedim mi ödememi mi onu da bilgi verebilir misiniz acaba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hanım' to 'anna' at position 1",
+      "reason": "'hanım' is a Turkish honorific (like 'Ms.'), while 'anna' is a name. Replacing an honorific with a name changes the addressee and can confuse the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ödendi' to 'ödedim' at position 11",
+      "reason": "'Ödendi' means 'was it paid', while 'ödedim' means 'did I pay'. This changes the subject and the meaning of the question, which is significant.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ödenmedi' to 'ödememi' at position 13",
+      "reason": "'Ödenmedi' means 'was it not paid', while 'ödememi' means 'my payment'. This alters the meaning of the question about the payment status, which is significant.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'o' to 'onu' at position 15",
+      "reason": "'O' means 'that/it', 'onu' means 'that/it' as an object. In this context, the meaning is not significantly changed, so this is a minor error.",
+      "score": 2
+    }
+  ]
+}

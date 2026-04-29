@@ -1,0 +1,32 @@
+{
+  "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
+  "predicted": "ya apple sadece mehdi'ye şımartmamıştı yani farklı bir metot var mı acaba bana fotoğraf göndermen için",
+  "unintelligible": false,
+  "wer": 0.5555555555555556,
+  "werEdits": 10,
+  "werRefWords": 18,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "apple sadece mehdi'ye şımartmamıştı farklı bir metot var mı acaba bana fotoğraf göndermen için",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "apple sadece mehdi'ye şımartmamıştı farklı bir metot var mı acaba bana fotoğraf göndermen için",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'apple' at position 0",
+      "reason": "'e' is the start of 'e posta' (email), while 'apple' is a completely unrelated word, changing the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'şu' at position 4",
+      "reason": "Omitting 'şu' (meaning 'these' or 'currently') slightly changes the temporal context but does not significantly alter the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'fatura' to 'fotoğraf' at position 15",
+      "reason": "'fatura' means 'invoice' and 'fotoğraf' means 'photo'; this substitution completely changes what is being requested to be sent, altering the core meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

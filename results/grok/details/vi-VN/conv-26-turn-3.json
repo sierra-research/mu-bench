@@ -1,0 +1,32 @@
+{
+  "gold": "Tên của mình là Trần Minh. Email là minh chấm trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, Thành phố Hồ Chí Minh, 700000, Việt Nam.",
+  "predicted": "tên của mình là trần minh email là minh chấm trần at gmail chấm com số điện thoại là 84 91 1234 5678 địa chỉ là 123 đường lê lợi thành phố hồ chí minh 700.000 việt nam",
+  "unintelligible": false,
+  "wer": 0.05660377358490566,
+  "werEdits": 3,
+  "werRefWords": 53,
+  "werNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "tên của mình là trần minh email là minh chấm trần at gmail chấm com số điện thoại là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 53,
+  "sigWerNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "tên của mình là trần minh email là minh chấm trần at gmail chấm com số điện thoại là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'at' at position 11",
+      "reason": "'a còng' is the Vietnamese way to say '@' in email addresses, while 'at' is the English word. Using 'at' instead of 'a' is understandable in context but not the standard in Vietnamese, so it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'còng' at position 12",
+      "reason": "Omitting 'còng' removes the Vietnamese word for '@', but since 'at' was used in the previous position, the meaning is still clear. This is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'cộng' at position 20",
+      "reason": "'cộng' indicates the '+' in the international phone number. Omitting it could cause confusion or loss of information in the phone number, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

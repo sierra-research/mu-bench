@@ -64,6 +64,7 @@ HF_TOKEN=...                   # HuggingFace token
 OPENAI_API_KEY=...             # For scoring
 DEEPGRAM_API_KEY=...           # Provider-specific keys for transcription
 ELEVENLABS_API_KEY=...
+XAI_API_KEY=...                # xAI Grok STT
 AZURE_SPEECH_ENDPOINT=...      # Regional Azure endpoint URL (region is baked in, e.g. eastus2)
 AZURE_SPEECH_KEY=...
 GOOGLE_SPEECH_CREDENTIALS=...  # Full service-account JSON (not a file path)
@@ -82,6 +83,7 @@ Different providers expose regional configuration differently:
 | Deepgram | not configurable in this repo; uses `api.deepgram.com` (US) | US |
 | ElevenLabs | globally routed; no region knob | — |
 | OpenAI   | single API (`api.openai.com`); no region knob | — |
+| Grok     | globally routed to `us-east-1`; no region knob | US |
 
 For cross-provider latency numbers to be comparable, **run all measurements from the same geographic location** and document it in your submission's notes. A single-region Google endpoint (e.g. `us-central1`) is preferable to the `us` multi-region for reproducibility, though both are valid.
 
@@ -100,7 +102,7 @@ Exports .wav files to `audio/<locale>/`. The HuggingFace dataset (`sierra-resear
   --output-dir submissions/raw/deepgram-nova3 \
   --concurrency 10
 ```
-Providers: `deepgram-nova3`, `google-chirp3`, `azure`, `elevenlabs-scribe-v2`, `openai-gpt4o-mini-transcribe`. The script reads `manifest.json` to build the work list and skips utterances that already have output files. Per-utterance latency is recorded to `latency.json`.
+Providers: `deepgram-nova3`, `google-chirp3`, `azure`, `elevenlabs-scribe-v2`, `openai-gpt4o-mini-transcribe`, `grok`. The script reads `manifest.json` to build the work list and skips utterances that already have output files. Per-utterance latency is recorded to `latency.json`.
 
 Note: for latency to be comparable across providers, measure at **concurrency = 1**. Higher concurrency inflates numbers due to queueing.
 

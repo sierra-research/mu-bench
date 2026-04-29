@@ -1,0 +1,27 @@
+{
+  "gold": "你有，你有什么问题，我几次说是美玲。",
+  "predicted": "你有你有什么问题？我这次说是没零",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "你有 你有什么问题 我几次说是美玲",
+  "werNormalizedPredicted": "你有 你有什么问题 我这次说是没零",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "你 有 你 有 什 么 问 题 我 几 次 说 是 美 玲",
+  "sigWerNormalizedPredicted": "你 有 你 有 什 么 问 题 我 这 次 说 是 没 零",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '几' to '这' at position 9",
+      "reason": "'几次' means 'several times', while '这次' means 'this time'; this changes the reference from frequency to a specific instance, altering the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to '没' at position 13",
+      "reason": "'美玲' is a proper name, while '没零' is not a name and is meaningless in this context, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

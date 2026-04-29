@@ -1,0 +1,37 @@
+{
+  "gold": "Anna, öyle değil. Tekrar söylüyorum. 2024 yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum.",
+  "predicted": "Anla öyle değil. 2024 tekrar söylüyorum 2024 yılı için Ocak Aralık aylarında 800 seviyorum.",
+  "unintelligible": false,
+  "wer": 0.5555555555555556,
+  "werEdits": 10,
+  "werRefWords": 18,
+  "werNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "werNormalizedPredicted": "anla öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık aylarında sekiz yüz seviyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna öyle değil tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık ayları arasındaki hesap ekstremi istiyorum",
+  "sigWerNormalizedPredicted": "anla öyle değil iki bin yirmi dört tekrar söylüyorum iki bin yirmi dört yılı için ocak aralık aylarında sekiz yüz seviyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anna' is a name, 'anla' is a verb meaning 'understand' in Turkish; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'iki' at position 3",
+      "reason": "The extra 'iki' (two) repeats the year phrase, which is a minor redundancy but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ayları' to 'aylarında' at position 13",
+      "reason": "'ayları' means 'the months', 'aylarında' means 'in the months'; this is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'istiyorum' at position 17",
+      "reason": "'istiyorum' means 'I want', and its omission removes the request aspect, significantly changing the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

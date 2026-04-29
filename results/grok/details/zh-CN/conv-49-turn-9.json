@@ -1,0 +1,27 @@
+{
+  "gold": "是美玲 at email dot com。",
+  "predicted": "shemeling at email dot com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是美玲 at email dot com",
+  "werNormalizedPredicted": "shemeling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "shemeling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shemeling' at position 0",
+      "reason": "The expected contains three Chinese characters (likely a name), but the actual has a single English word that does not correspond to the original name. This is a significant error as the identity is completely lost and the languages are different.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

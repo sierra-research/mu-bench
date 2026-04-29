@@ -1,0 +1,32 @@
+{
+  "gold": "Not alamadım, tekrar eder misin lütfen? Ama Türkçe söyle, İngilizce değil.",
+  "predicted": "Not alamadın tek kere edemisin sen ama Türkçe söyleyebilirsin i̇ngilizce değilim",
+  "unintelligible": false,
+  "wer": 0.6363636363636364,
+  "werEdits": 7,
+  "werRefWords": 11,
+  "werNormalizedGold": "not alamadım tekrar eder misin lütfen ama türkçe söyle ingilizce değil",
+  "werNormalizedPredicted": "not alamadın tek kere edemisin sen ama türkçe söyleyebilirsin ingilizce değilim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "not alamadım tekrar eder misin lütfen ama türkçe söyle ingilizce değil",
+  "sigWerNormalizedPredicted": "not alamadın tek kere edemisin sen ama türkçe söyleyebilirsin ingilizce değilim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'alamadım' to 'alamadın' at position 1",
+      "reason": "'Alamadım' means 'I couldn't get', while 'alamadın' means 'you couldn't get'. This changes the subject of the sentence, which can affect the meaning but does not derail the overall intent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'söyle' to 'söyleyebilirsin' at position 8",
+      "reason": "'Söyle' means 'say', while 'söyleyebilirsin' means 'you can say'. This changes the form from an imperative to a suggestion/possibility, but the overall meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'değil' to 'değilim' at position 10",
+      "reason": "'Değil' means 'not', while 'değilim' means 'I am not'. This changes the sentence from a general negation to a personal statement, which alters the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

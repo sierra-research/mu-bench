@@ -1,0 +1,32 @@
+{
+  "gold": "C N 3 7 8 9。",
+  "predicted": "CN 582.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "c n 三 七 八 九",
+  "werNormalizedPredicted": "c n 五 八 二",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n 三 七 八 九",
+  "sigWerNormalizedPredicted": "c n 五 八 二",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '三' to '五' at position 2",
+      "reason": "The number '三' (three) was replaced with '五' (five), which changes the intended number and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '七' at position 3",
+      "reason": "The number '七' (seven) was omitted, which removes important information and alters the sequence of numbers.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '九' to '二' at position 5",
+      "reason": "The number '九' (nine) was replaced with '二' (two), which significantly changes the intended meaning of the sequence.",
+      "score": 1
+    }
+  ]
+}

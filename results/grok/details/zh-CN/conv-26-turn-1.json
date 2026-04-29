@@ -1,0 +1,32 @@
+{
+  "gold": "我正在等待我的新卡，想知道它的状态。",
+  "predicted": "我让在等待我的信卡相知道它的状态",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "我正在等待我的新卡 想知道它的状态",
+  "werNormalizedPredicted": "我让在等待我的信卡相知道它的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "我 正 在 等 待 我 的 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 让 在 等 待 我 的 信 卡 相 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '正' to '让' at position 1",
+      "reason": "'正' (currently) indicates ongoing action, while '让' (let/make) changes the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '新' to '信' at position 7",
+      "reason": "'新卡' (new card) is replaced with '信卡' (credit card), which changes the specific card being referred to but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '想' to '相' at position 9",
+      "reason": "'想知道' (want to know) is replaced with '相知道', which is not a valid phrase and makes the sentence less coherent.",
+      "score": 1
+    }
+  ]
+}

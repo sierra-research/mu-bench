@@ -1,0 +1,32 @@
+{
+  "gold": "Minh chấm trần a còng email chấm com.",
+  "predicted": "minh cham trần a com email com",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh cham trần a com email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh cham trần a com email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'cham' at position 1",
+      "reason": "'chấm' (dot) is a Vietnamese word for '.' in email addresses, while 'cham' is a misspelling without the correct diacritic, but still recognizable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'còng' to 'com' at position 4",
+      "reason": "'còng' is the Vietnamese word for '@', but 'com' is a domain suffix, so this substitution changes the structure of the email address and can cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 6",
+      "reason": "Missing 'chấm' (dot) before 'com' in the email address makes the email format incorrect and can lead to misunderstanding.",
+      "score": 1
+    }
+  ]
+}

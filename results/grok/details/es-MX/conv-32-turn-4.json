@@ -1,0 +1,32 @@
+{
+  "gold": "Es Juan López arroba arroba email punto com.",
+  "predicted": "Is, um, juan juanlopez, uh, arroba, um, arroba, uh, uh, email dot com",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "es juan lópez arroba arroba email punto com",
+  "werNormalizedPredicted": "is juan juanlopez arroba arroba email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "es juan lópez arroba arroba email punto com",
+  "sigWerNormalizedPredicted": "is juan juanlopez arroba arroba email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'is' at position 0",
+      "reason": "'es' is Spanish for 'is', so this is a language substitution but the meaning is preserved in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'juanlopez' at position 2",
+      "reason": "'lópez' is replaced by 'juanlopez', which merges the first and last name into one word. This could cause confusion in an email address or name context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'punto' to 'dot' at position 6",
+      "reason": "'punto' is Spanish for 'dot', so this is a direct translation and the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

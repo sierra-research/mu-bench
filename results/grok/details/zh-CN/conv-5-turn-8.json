@@ -1,0 +1,27 @@
+{
+  "gold": "听到吗？",
+  "predicted": "Ting dong.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 3,
+  "werRefWords": 3,
+  "werNormalizedGold": "听到吗",
+  "werNormalizedPredicted": "ting dong",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "听 到 吗",
+  "sigWerNormalizedPredicted": "ting dong",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to 'ting' at position 0",
+      "reason": "'听' is a Chinese character meaning 'listen', while 'ting' is a romanization that may not be understood as the same word by all listeners, especially since the rest of the sentence is not romanized. This causes a significant loss of meaning and coherence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吗' at position 2",
+      "reason": "'吗' is a question particle in Chinese, and its omission removes the interrogative nature of the sentence, significantly changing the meaning.",
+      "score": 1
+    }
+  ]
+}

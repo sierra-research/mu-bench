@@ -1,0 +1,32 @@
+{
+  "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "Evet, yanlış değil. şöyle Ahmet Arslan dediniz ama Ahmet Arslan yazın nokta olacak. Ahmet nokta Arslan.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "evet yanlış değil ahmet arslan dediniz ama ahmet arslan yazın nokta olacak ahmet nokta arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "evet yanlış değil ahmet arslan dediniz ama ahmet arslan yazın nokta olacak ahmet nokta arslan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'yanlış' at position 1",
+      "reason": "The insertion of 'yanlış' (wrong) changes the meaning from 'evet değil' (not yes) to 'evet yanlış değil' (yes, not wrong), which alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 've' at position 7",
+      "reason": "Omitting 've' (and) slightly affects the flow but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arasında' to 'yazın' at position 9",
+      "reason": "Replacing 'arasında' (between) with 'yazın' (write) changes the instruction from 'there should be a dot between Ahmet and Arslan' to 'write Ahmet Arslan dot', which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
+}

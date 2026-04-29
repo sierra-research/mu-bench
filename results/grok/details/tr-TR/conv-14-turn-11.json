@@ -1,0 +1,37 @@
+{
+  "gold": "Tabii. Artı 90 123. Tamam baştan alıyorum. Artı 90 123 0 90 45 67.",
+  "predicted": "tabi artı 90 123 tam baştan alıyorum artı 90 123 0 90 45 67",
+  "unintelligible": false,
+  "wer": 0.18181818181818182,
+  "werEdits": 4,
+  "werRefWords": 22,
+  "werNormalizedGold": "tabii artı doksan bir yüz yirmi üç tamam baştan alıyorum artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabi artı doksan yüz yirmi üç tam baştan alıyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "tabii artı doksan bir yüz yirmi üç tamam baştan alıyorum artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabi artı doksan yüz yirmi üç tam baştan alıyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are variant spellings of the same word in Turkish, meaning 'of course'; the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bir' at position 3",
+      "reason": "Omitting 'bir' (meaning 'one') from the phone number changes the numeric value, which is significant in this context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tamam' to 'tam' at position 7",
+      "reason": "'tamam' means 'okay' or 'alright', while 'tam' means 'full' or 'complete'; the substitution changes the meaning, but the overall intent is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 12",
+      "reason": "Omitting 'bir' (meaning 'one') from the phone number changes the numeric value, which is significant in this context.",
+      "score": 1
+    }
+  ]
+}

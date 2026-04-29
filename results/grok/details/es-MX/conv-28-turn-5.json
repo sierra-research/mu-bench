@@ -1,0 +1,32 @@
+{
+  "gold": "María punto López arroba email punto com.",
+  "predicted": "maria punto lopes arroba mair ponto com",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "maria punto lopes arroba mair ponto com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "maria punto lopes arroba mair ponto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 0",
+      "reason": "Accent missing from 'maría', but the name is still clearly recognizable and not a different name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopes' at position 2",
+      "reason": "'López' and 'Lopes' are different surnames; this changes the identity and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mair' at position 4",
+      "reason": "'Mair' is not a valid substitution for 'email' in this context, making the email address incorrect and unusable.",
+      "score": 1
+    }
+  ]
+}

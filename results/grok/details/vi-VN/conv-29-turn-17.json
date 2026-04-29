@@ -1,0 +1,27 @@
+{
+  "gold": "Vui lòng kết nối tôi với nhân viên hỗ trợ trực tiếp.",
+  "predicted": "vui lòng nói tôi với nhân viên hỗ trợ trực tiếp",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "vui lòng kết nối tôi với nhân viên hỗ trợ trực tiếp",
+  "werNormalizedPredicted": "vui lòng nói tôi với nhân viên hỗ trợ trực tiếp",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "vui lòng kết nối tôi với nhân viên hỗ trợ trực tiếp",
+  "sigWerNormalizedPredicted": "vui lòng nói tôi với nhân viên hỗ trợ trực tiếp",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kết' to 'nói' at position 2",
+      "reason": "'kết nối' means 'connect', while 'nói' means 'speak'. This changes the intent from requesting a connection to requesting to speak, which alters the meaning of the request.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nối' at position 3",
+      "reason": "Omitting 'nối' removes the verb 'connect', further changing the meaning from 'connect me' to 'speak me', which is not correct in context.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "No, es incorrecto. El número es.",
+  "predicted": "El número es 5 5 1 2 4 7 7 8. ¿Puedes confirmar si está correcto? No, es incorrecto. El número es. ¿Puede favor?",
+  "unintelligible": false,
+  "wer": 3.0,
+  "werEdits": 18,
+  "werRefWords": 6,
+  "werNormalizedGold": "no es incorrecto el número es",
+  "werNormalizedPredicted": "el número es cinco cinco uno dos cuatro siete siete ocho puedes confirmar si está correcto no es incorrecto el número es puede favor",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "no es incorrecto el número es",
+  "sigWerNormalizedPredicted": "el número es cinco cinco uno dos cuatro siete siete ocho puedes confirmar si está correcto no es incorrecto el número es puede favor",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'el' at position 0",
+      "reason": "The phrase 'el número es' is inserted at the beginning, which introduces a new context (possibly a phone number) not present in the expected phrase. This changes the meaning and focus of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'puede' at position 6",
+      "reason": "The word 'puede' (can) is inserted at the end, which adds an incomplete or unrelated phrase ('puede favor'), making the sentence less coherent and potentially confusing the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "嗯对的，对的对的。",
+  "predicted": "Hm, right. Right, right.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "对的对的对的",
+  "werNormalizedPredicted": "right right right",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "对 的 对 的 对 的",
+  "sigWerNormalizedPredicted": "right right right",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '对' to 'right' at position 0",
+      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a language mismatch and constitutes a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 3",
+      "reason": "The word '的' from the expected transcription is missing in the actual transcription, which is also in a different language. This omission, combined with the language mismatch, is a significant error.",
+      "score": 1
+    }
+  ]
+}

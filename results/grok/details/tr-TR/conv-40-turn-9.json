@@ -1,0 +1,32 @@
+{
+  "gold": "Ahmet nokta Arslan, A R S L A N at email nokta com.",
+  "predicted": "Ahmet nokta aslan a r s d a n e et email nokta com",
+  "unintelligible": false,
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
+  "werRefWords": 13,
+  "werNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "werNormalizedPredicted": "ahmet nokta aslan a r s d a n e et email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet nokta aslan a r s d a n e et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 2",
+      "reason": "'arslan' and 'aslan' are both Turkish surnames and very similar, but missing the 'r' could cause confusion in an email address or name context. However, the meaning is still mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'l' to 'd' at position 6",
+      "reason": "In a spelled-out sequence for a name or email, substituting 'l' with 'd' changes the intended spelling, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 9",
+      "reason": "Adding an extra letter in a spelled-out name or email address changes the spelling, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

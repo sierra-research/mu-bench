@@ -1,0 +1,27 @@
+{
+  "gold": "你有什么问题呀，我说得很。",
+  "predicted": "You have a question? I'm fine.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "你有什么问题我说得很",
+  "werNormalizedPredicted": "you have a question i am fine",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 我 说 得 很",
+  "sigWerNormalizedPredicted": "you have a question i am fine",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'you' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which completely changes the meaning and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '说' at position 7",
+      "reason": "The word is missing and the actual transcription is in a different language, so the meaning is not preserved.",
+      "score": 1
+    }
+  ]
+}

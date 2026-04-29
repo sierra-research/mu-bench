@@ -1,0 +1,32 @@
+{
+  "gold": "Xác nhận đơn hàng.",
+  "predicted": "sách đơn giản",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 3,
+  "werRefWords": 4,
+  "werNormalizedGold": "xác nhận đơn hàng",
+  "werNormalizedPredicted": "sách đơn giản",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "xác nhận đơn hàng",
+  "sigWerNormalizedPredicted": "sách đơn giản",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xác' to 'sách' at position 0",
+      "reason": "'xác' (confirm) and 'sách' (book) are completely different words with unrelated meanings, changing the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhận' at position 1",
+      "reason": "Omitting 'nhận' (receive/confirm) removes a key verb, making the sentence incoherent and changing its meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hàng' to 'giản' at position 3",
+      "reason": "'hàng' (order/goods) and 'giản' (simple) are unrelated, which derails the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

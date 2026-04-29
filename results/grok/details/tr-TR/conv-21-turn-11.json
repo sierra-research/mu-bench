@@ -1,0 +1,32 @@
+{
+  "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
+  "predicted": "e-mail adresinde adımla soyadınızın noktası olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
+  "werRefWords": 17,
+  "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "werNormalizedPredicted": "e mail adresinde adımla soyadınızın noktası olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerNormalizedPredicted": "e mail adresinde adımla soyadınızın noktası olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'mail' at position 0",
+      "reason": "Splitting 'email' into 'e mail' does not change the meaning, as both are commonly used variants.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'soyadım' to 'soyadınızın' at position 3",
+      "reason": "'e mail' is a variant spelling of 'email', so this does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 5",
+      "reason": "Changing from 'my surname' (soyadım) to 'your surname's' (soyadınızın) changes the subject of the sentence, which can confuse the meaning.",
+      "score": 1
+    }
+  ]
+}

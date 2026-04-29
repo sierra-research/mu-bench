@@ -1,0 +1,27 @@
+{
+  "gold": "Họ tên là Trần Minh.",
+  "predicted": "Uh, hotel like Jemmy.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "họ tên là trần minh",
+  "werNormalizedPredicted": "hotel like jemmy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "họ tên là trần minh",
+  "sigWerNormalizedPredicted": "hotel like jemmy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'họ' to 'hotel' at position 0",
+      "reason": "'họ' (Vietnamese for 'surname') is substituted with 'hotel', which is an English word with a completely different meaning and context. This makes the sentence incoherent and changes the intended meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 3",
+      "reason": "'trần' (a Vietnamese surname) is missing from the actual transcription, which omits a key part of the expected information.",
+      "score": 1
+    }
+  ]
+}

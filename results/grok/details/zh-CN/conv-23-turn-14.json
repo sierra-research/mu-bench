@@ -1,0 +1,27 @@
+{
+  "gold": "我的姓名是妹玲。",
+  "predicted": "My name is Maylin.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "我的姓名是妹玲",
+  "werNormalizedPredicted": "my name is maylin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 的 姓 名 是 妹 玲",
+  "sigWerNormalizedPredicted": "my name is maylin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'my' at position 0",
+      "reason": "The expected and actual transcriptions are in different languages (Chinese vs. English), which is a significant error as the meaning cannot be reliably matched.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '是' at position 4",
+      "reason": "The word '是' (is) is missing in the actual transcription, and the overall mismatch in language makes this a significant error.",
+      "score": 1
+    }
+  ]
+}

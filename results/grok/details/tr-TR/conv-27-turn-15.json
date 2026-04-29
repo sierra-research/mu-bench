@@ -1,0 +1,27 @@
+{
+  "gold": "Gmail değil, email.",
+  "predicted": "gmail gmail",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
+  "werRefWords": 3,
+  "werNormalizedGold": "gmail değil email",
+  "werNormalizedPredicted": "gmail gmail",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "gmail değil email",
+  "sigWerNormalizedPredicted": "gmail gmail",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'değil' to 'gmail' at position 1",
+      "reason": "The word 'değil' (meaning 'not' in Turkish) is replaced with 'gmail', which completely changes the meaning of the sentence from 'not gmail, email' to 'gmail gmail', making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 2",
+      "reason": "The word 'email' is omitted, which removes the intended contrast between 'gmail' and 'email', significantly altering the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

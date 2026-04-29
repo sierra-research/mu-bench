@@ -1,0 +1,32 @@
+{
+  "gold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "predicted": "Phạm Xuân Minh, mà là Trần Minh, Trần Minh, Trần Minh",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "werNormalizedPredicted": "phạm xuân minh mà là trần minh trần minh trần minh",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "sigWerNormalizedPredicted": "phạm xuân minh mà là trần minh trần minh trần minh",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'không' to 'phạm' at position 0",
+      "reason": "'không' means 'no' or 'not', while 'phạm' is a Vietnamese name. This substitution changes the meaning of the sentence from a negation to a name, which significantly alters the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trường' at position 2",
+      "reason": "'trường minh' is a name, and omitting 'trường' changes the reference to a different person. This is a significant error as it affects the identification of the person being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tran' to 'trần' at position 10",
+      "reason": "'tran' is a non-accented version of 'trần', which is a common Vietnamese surname. The difference is only in the diacritic, and in context, they are understood as the same name.",
+      "score": 3
+    }
+  ]
+}

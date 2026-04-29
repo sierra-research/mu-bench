@@ -1,0 +1,37 @@
+{
+  "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
+  "predicted": "chương đầu tiên là một hai ba đường lê lợi hồ chí minh city district là bảy trăm nghìn việt nam",
+  "unintelligible": false,
+  "wer": 0.2608695652173913,
+  "werEdits": 6,
+  "werRefWords": 23,
+  "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "chương đầu tiên là một hai ba đường lê lợi hồ chí minh city district là bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chương đầu tiên là một hai ba đường lê lợi hồ chí minh city district là bảy trăm nghìn việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chưa' to 'chương' at position 0",
+      "reason": "'chưa' means 'not yet' or 'incomplete', while 'chương' means 'chapter'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'phải' at position 3",
+      "reason": "'phải' means 'must' or 'should', and its omission changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zip' to 'district' at position 15",
+      "reason": "'zip' (as in 'zip code') and 'district' are completely different concepts; this substitution changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'code' at position 16",
+      "reason": "Omitting 'code' from 'zip code' makes the address information incomplete and unclear.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır, yanlış. Tekrar söylüyorum, tane tane söylüyorum. İyi dinle beni. Artı 90 123 0 90 45 67.",
+  "predicted": "hayır yanlış tekrar söylüyorum tane tane söylüyorum i̇din beni artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "unintelligible": false,
+  "wer": 0.13636363636363635,
+  "werEdits": 3,
+  "werRefWords": 22,
+  "werNormalizedGold": "hayır yanlış tekrar söylüyorum tane tane söylüyorum iyi dinle beni artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "hayır yanlış tekrar söylüyorum tane tane söylüyorum idin beni artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "hayır yanlış tekrar söylüyorum tane tane söylüyorum iyi dinle beni artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır yanlış tekrar söylüyorum tane tane söylüyorum idin beni artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'idin' at position 7",
+      "reason": "'iyi' means 'good' and 'idin' is not a valid word in this context, making the sentence confusing and breaking the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dinle' at position 8",
+      "reason": "Omitting 'dinle' ('listen') removes a key imperative in the sentence, significantly altering the instruction.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 12",
+      "reason": "Omitting 'bir' ('one') from a phone number sequence changes the number, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

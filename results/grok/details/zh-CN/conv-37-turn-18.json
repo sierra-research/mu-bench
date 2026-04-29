@@ -1,0 +1,27 @@
+{
+  "gold": "我的邮箱地址是君玲 at email dot com。",
+  "predicted": "我的邮箱地址是 dreamling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的邮箱地址是君玲 at email dot com",
+  "werNormalizedPredicted": "我的邮箱地址是 dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 7",
+      "reason": "'君' is a Chinese name, while 'dreamling' is an English word/name, completely changing the intended email username and making the address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "Omitting '玲' changes the full name in the email address, resulting in an incorrect and unrecognizable email username.",
+      "score": 1
+    }
+  ]
+}

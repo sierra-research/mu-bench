@@ -1,0 +1,32 @@
+{
+  "gold": "Tabii, hemen ileteyim bir saniye. Telefon numaram artı 90 123 0 90 45 67.",
+  "predicted": "tabi hemen iletiyim bir saniye telefon numaram 690 123 0 90 45 67",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 4,
+  "werRefWords": 18,
+  "werNormalizedGold": "tabii hemen ileteyim bir saniye telefon numaram artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabi hemen iletiyim bir saniye telefon numaram altı yüz doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "tabii hemen ileteyim bir saniye telefon numaram artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabi hemen iletiyim bir saniye telefon numaram altı yüz doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are spelling variants of the same word in Turkish, meaning 'of course'; the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ileteyim' to 'iletiyim' at position 2",
+      "reason": "Minor misspelling, but the intended meaning ('let me forward') is clear and unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'artı' to 'yüz' at position 7",
+      "reason": "The insertion of 'altı' (six) changes the phone number, which is critical information.",
+      "score": 1
+    }
+  ]
+}

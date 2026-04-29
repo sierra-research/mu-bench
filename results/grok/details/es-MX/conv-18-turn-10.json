@@ -1,0 +1,32 @@
+{
+  "gold": "Es que hice una compra según yo la puse a meses sin intereses pero al final se puso toda de contado. ¿No hay forma de arreglar eso?",
+  "predicted": "Ah, es que hice una compra, eh, según yo, según yo la puse a meses intereses, pero al final se puso a todo a descuento, ¿no hay forma de arreglar eso?",
+  "unintelligible": false,
+  "wer": 0.25925925925925924,
+  "werEdits": 7,
+  "werRefWords": 27,
+  "werNormalizedGold": "es que hice una compra según yo la puse a meses sin intereses pero al final se puso toda de contado no hay forma de arreglar eso",
+  "werNormalizedPredicted": "es que hice una compra según yo según yo la puse a meses intereses pero al final se puso a todo a descuento no hay forma de arreglar eso",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "es que hice una compra según yo la puse a meses sin intereses pero al final se puso toda de contado no hay forma de arreglar eso",
+  "sigWerNormalizedPredicted": "es que hice una compra según yo según yo la puse a meses intereses pero al final se puso a todo a descuento no hay forma de arreglar eso",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'según' at position 7",
+      "reason": "Repeating 'según yo' does not change the overall meaning of the sentence, just adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'sin' at position 11",
+      "reason": "Omitting 'sin' in 'meses sin intereses' changes the meaning from 'months without interest' to 'months interest', which is a significant change in the financial context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'toda' to 'todo' at position 18",
+      "reason": "Adding 'a' before 'todo' does not significantly alter the meaning in this context.",
+      "score": 2
+    }
+  ]
+}

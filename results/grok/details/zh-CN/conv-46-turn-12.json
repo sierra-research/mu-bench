@@ -1,0 +1,27 @@
+{
+  "gold": "我的姓名是君玲。",
+  "predicted": "我的姓名是 Junlin.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "我的姓名是君玲",
+  "werNormalizedPredicted": "我的姓名是 junlin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲",
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 junlin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'junlin' at position 5",
+      "reason": "The expected name is in Chinese characters, but the actual transcription uses a romanized form. This is a significant change in script and representation, which could cause confusion or loss of information, especially for proper nouns.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 6",
+      "reason": "The second character of the name is missing in the actual transcription, resulting in an incomplete or incorrect name. This is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
+}

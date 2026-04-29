@@ -1,0 +1,32 @@
+{
+  "gold": "Belli bir ücreti var mı limit artırmanın? Kontrol edebilir misiniz?",
+  "predicted": "belirli bir ücreti var mı limit artırmalarını kontrol eder misiniz?",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "belli bir ücreti var mı limit artırmanın kontrol edebilir misiniz",
+  "werNormalizedPredicted": "belirli bir ücreti var mı limit artırmalarını kontrol eder misiniz",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "belli bir ücreti var mı limit artırmanın kontrol edebilir misiniz",
+  "sigWerNormalizedPredicted": "belirli bir ücreti var mı limit artırmalarını kontrol eder misiniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'belli' to 'belirli' at position 0",
+      "reason": "'belli' and 'belirli' are synonyms in Turkish and both mean 'certain' or 'specific', so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'artırmanın' to 'artırmalarını' at position 6",
+      "reason": "'artırmanın' (of increasing) vs 'artırmalarını' (their increases) changes the grammatical structure but the overall meaning about increasing the limit is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'edebilir' to 'eder' at position 8",
+      "reason": "'edebilir' (can do) is modal, while 'eder' (does) is indicative; this changes the nuance from possibility to statement, but the intent of checking is still understandable.",
+      "score": 2
+    }
+  ]
+}

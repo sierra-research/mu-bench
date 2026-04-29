@@ -1,0 +1,27 @@
+{
+  "gold": "你说话吧。",
+  "predicted": "You speak.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "你说话吧",
+  "werNormalizedPredicted": "you speak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "你 说 话 吧",
+  "sigWerNormalizedPredicted": "you speak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'you' at position 0",
+      "reason": "The expected word is in Chinese, but the actual transcription is in English. This is a major language mismatch and changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '话' at position 2",
+      "reason": "The word '话' (speech/words) is missing in the actual transcription, which omits part of the meaning.",
+      "score": 1
+    }
+  ]
+}

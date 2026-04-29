@@ -1,0 +1,27 @@
+{
+  "gold": "C N 9 6 9, doğru mudur?",
+  "predicted": "C N 9 6 9 doğrumlu.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n dokuz altı dokuz doğru mudur",
+  "werNormalizedPredicted": "c n dokuz altı dokuz doğrumlu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n dokuz altı dokuz doğru mudur",
+  "sigWerNormalizedPredicted": "c n dokuz altı dokuz doğrumlu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doğru' to 'doğrumlu' at position 5",
+      "reason": "'doğrumlu' is not a valid word and changes the meaning from 'is it correct' to something incoherent, making the sentence unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mudur' at position 6",
+      "reason": "Omitting 'mudur' removes the question structure ('is it'), making the sentence incomplete and changing it from a question to a statement or fragment.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi muốn hỏi xem là có được cấp hai thẻ luôn được không, để sơ cua.",
+  "predicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ luôn được không để secure",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
+  "werNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ luôn được không để secure",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ luôn được không để secure",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'thể' at position 6",
+      "reason": "'thể' (can/may) is inserted, but the overall meaning of the sentence remains the same as it still asks about the possibility of getting two cards.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sơ' to 'secure' at position 14",
+      "reason": "'sơ cua' is a Vietnamese phrase meaning 'spare' or 'backup', but 'secure' is an English word with a different meaning, making the sentence incoherent at the end.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cua' at position 15",
+      "reason": "Omitting 'cua' breaks the Vietnamese phrase 'sơ cua', which means 'spare', resulting in a loss of intended meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Ý là tôi muốn được cấp một lần hai cái thẻ. Để một cái dự phòng.",
+  "predicted": "Ý là tôi muốn được, à, xin cấp một lần hai cái thẻ để một cái dịch vụ",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
+  "werNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ để một cái dịch vụ",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "ý là tôi muốn được cấp một lần hai cái thẻ để một cái dự phòng",
+  "sigWerNormalizedPredicted": "ý là tôi muốn được xin cấp một lần hai cái thẻ để một cái dịch vụ",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'xin' at position 5",
+      "reason": "'xin' (to request) is inserted before 'cấp' (to issue), but in this context, it does not significantly change the meaning of the sentence, as both 'được cấp' and 'được xin cấp' can be interpreted as requesting to be issued something.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dự' to 'dịch' at position 14",
+      "reason": "Substituting 'dự phòng' (backup/spare) with 'dịch vụ' (service) changes the meaning of the sentence significantly, as the purpose of the second card is altered from being a backup to being for a service, which derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

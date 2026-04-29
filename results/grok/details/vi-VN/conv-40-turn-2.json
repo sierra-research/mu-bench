@@ -1,0 +1,27 @@
+{
+  "gold": "Bạn cần thông tin gì?",
+  "predicted": "bạn cảm thông với chị",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "bạn cần thông tin gì",
+  "werNormalizedPredicted": "bạn cảm thông với chị",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "bạn cần thông tin gì",
+  "sigWerNormalizedPredicted": "bạn cảm thông với chị",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cần' to 'cảm' at position 1",
+      "reason": "'cần' means 'need', while 'cảm' means 'feel'; this changes the intent of the sentence from asking what information is needed to expressing empathy, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tin' to 'với' at position 3",
+      "reason": "'tin' means 'information', while 'với' means 'with'; this substitution changes the object of the sentence and makes the sentence incoherent compared to the expected meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Ừ. Cảm ơn bạn. Bạn xem lại hộ mình nhá.",
+  "predicted": "cảm ơn bạn bạn sẽ hại mình",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "cảm ơn bạn bạn xem lại hộ mình nhá",
+  "werNormalizedPredicted": "cảm ơn bạn bạn sẽ hại mình",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "cảm ơn bạn bạn xem lại hộ mình nhá",
+  "sigWerNormalizedPredicted": "cảm ơn bạn bạn sẽ hại mình",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xem' to 'sẽ' at position 4",
+      "reason": "'xem lại hộ mình nhá' means 'please check again for me', while 'sẽ hại mình' means 'will harm me', which completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hộ' at position 6",
+      "reason": "Omitting 'hộ' (meaning 'for' or 'help') removes the request for help, further altering the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhá' at position 8",
+      "reason": "'nhá' is a softener or polite particle in Vietnamese, and its omission slightly affects the tone but not the core meaning.",
+      "score": 2
+    }
+  ]
+}

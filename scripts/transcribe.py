@@ -332,6 +332,25 @@ async def transcribe_elevenlabs(session: aiohttp.ClientSession, wav_bytes: bytes
     return json_data.get("text", "")
 
 
+async def transcribe_grok(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    api_key = os.environ["XAI_API_KEY"]
+    iso_locale = LOCALE_TO_ISO639_1.get(locale, locale[:2])
+
+    data = aiohttp.FormData()
+    data.add_field("file", wav_bytes, filename="audio.wav", content_type="audio/wav")
+    data.add_field("language", iso_locale)
+
+    headers = {"Authorization": f"Bearer {api_key}"}
+    url = "https://api.x.ai/v1/stt"
+
+    async with session.post(url, headers=headers, data=data) as resp:
+        if resp.status != 200:
+            body = await resp.text()
+            raise Exception(f"Grok {resp.status}: {body[:300]}")
+        json_data = await resp.json()
+    return json_data.get("text", "")
+
+
 async def transcribe_openai(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
     # OpenAI SDK has its own httpx pool — _get_openai_client returns a persistent
     # AsyncOpenAI so connections stay warm across requests (SDK-recommended).
@@ -415,6 +434,7 @@ PROVIDERS = {
     "openai-gpt4o-mini-transcribe": transcribe_openai_mini,
     "openai-gpt-audio-1.5": transcribe_openai_gpt_audio,
     "smallest-pulse-batch": transcribe_smallest_batch,
+    "grok": transcribe_grok,
 }
 
 PROVIDER_METADATA = {
@@ -426,6 +446,7 @@ PROVIDER_METADATA = {
     "openai-gpt4o-mini-transcribe": {"model": "GPT-4o-Mini-Transcribe", "organization": "OpenAI"},
     "openai-gpt-audio-1.5": {"model": "GPT-Audio-1.5", "organization": "OpenAI"},
     "smallest-pulse-batch": {"model": "Pulse", "organization": "Smallest AI"},
+    "grok": {"model": "Grok-STT", "organization": "xAI"},
 }
 
 
@@ -457,6 +478,7 @@ async def run_transcription(args):
         "openai-gpt4o-mini-transcribe": ["OPENAI_API_KEY"],
         "openai-gpt-audio-1.5": ["OPENAI_API_KEY"],
         "smallest-pulse-batch": ["SMALLEST_API_KEY"],
+        "grok": ["XAI_API_KEY"],
     }
     missing = [k for k in required_env.get(args.provider, []) if not os.environ.get(k)]
     if missing:

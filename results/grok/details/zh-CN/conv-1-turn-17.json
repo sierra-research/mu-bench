@@ -1,0 +1,27 @@
+{
+  "gold": "你，你还不知道我的电话号码。",
+  "predicted": "你, you don't know my phone number?",
+  "unintelligible": false,
+  "wer": 0.9166666666666666,
+  "werEdits": 11,
+  "werRefWords": 12,
+  "werNormalizedGold": "你 你还不知道我的电话号码",
+  "werNormalizedPredicted": "你 you do not know my phone number",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "你 你 还 不 知 道 我 的 电 话 号 码",
+  "sigWerNormalizedPredicted": "你 you do not know my phone number",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'you' at position 1",
+      "reason": "The actual transcription switches from Chinese to English after the first word, resulting in a language mismatch. This is a significant error as it changes the language and potentially the meaning for the listener.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '电' at position 8",
+      "reason": "The actual transcription translates the remaining Chinese words into English. While the meaning is preserved, the language is not, which is a significant error according to the guidelines.",
+      "score": 1
+    }
+  ]
+}

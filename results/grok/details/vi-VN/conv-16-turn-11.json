@@ -1,0 +1,37 @@
+{
+  "gold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
+  "predicted": "tôi muốn xem là thể hiện tại khía cạnh nào thì mới có thể đạt được",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
+  "werRefWords": 12,
+  "werNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "werNormalizedPredicted": "tôi muốn xem là thể hiện tại khía cạnh nào thì mới có thể đạt được",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "sigWerNormalizedPredicted": "tôi muốn xem là thể hiện tại khía cạnh nào thì mới có thể đạt được",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thẻ' to 'thể' at position 3",
+      "reason": "'là' introduces a different grammatical structure, but does not by itself change the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'chừng' to 'cạnh' at position 6",
+      "reason": "'thẻ' (card) and 'thể' (form/can) are completely different words, changing the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'thì' at position 8",
+      "reason": "Adds 'khía cạnh' (aspect), which shifts the focus of the sentence away from the original intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cái' to 'đạt' at position 10",
+      "reason": "'chừng nào' (when) is replaced by 'khía cạnh nào' (which aspect), which changes the question from time to aspect.",
+      "score": 1
+    }
+  ]
+}

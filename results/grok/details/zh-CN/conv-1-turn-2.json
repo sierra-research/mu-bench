@@ -1,0 +1,27 @@
+{
+  "gold": "需要提供最新账单。",
+  "predicted": "需要提高最新让版",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "需要提供最新账单",
+  "werNormalizedPredicted": "需要提高最新让版",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "需 要 提 供 最 新 账 单",
+  "sigWerNormalizedPredicted": "需 要 提 高 最 新 让 版",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '供' to '高' at position 3",
+      "reason": "'提供' (provide) is replaced with '提高' (raise/improve), which changes the meaning of the request from providing something to improving something, significantly altering the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '账' to '让' at position 6",
+      "reason": "'账单' (bill/statement) is replaced with '让版', which is not a meaningful phrase in this context and makes the sentence incoherent, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
+}

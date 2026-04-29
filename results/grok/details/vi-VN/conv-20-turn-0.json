@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi đã làm mất thẻ. Tôi muốn xin cấp lại thẻ mới. Tôi không biết tình trạng của thẻ hiện tại là như thế nào?",
+  "predicted": "tôi đã làm mất thẻ, tôi muốn xin cấp lại thẻ mới, tôi muốn biết tình trạng có thể hiện tại là như thế nào",
+  "unintelligible": false,
+  "wer": 0.12,
+  "werEdits": 3,
+  "werRefWords": 25,
+  "werNormalizedGold": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi không biết tình trạng của thẻ hiện tại là như thế nào",
+  "werNormalizedPredicted": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi muốn biết tình trạng có thể hiện tại là như thế nào",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi không biết tình trạng của thẻ hiện tại là như thế nào",
+  "sigWerNormalizedPredicted": "tôi đã làm mất thẻ tôi muốn xin cấp lại thẻ mới tôi muốn biết tình trạng có thể hiện tại là như thế nào",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'không' to 'muốn' at position 13",
+      "reason": "'không biết' means 'do not know', while 'muốn biết' means 'want to know'. This changes the intent of the sentence from not knowing to wanting to know, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'của' to 'có' at position 17",
+      "reason": "'tình trạng của thẻ' means 'the status of the card', while 'tình trạng có thẻ' is ungrammatical and changes the meaning, making the sentence less coherent.",
+      "score": 1
+    }
+  ]
+}

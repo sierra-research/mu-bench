@@ -1,0 +1,27 @@
+{
+  "gold": "是不对的。",
+  "predicted": "is not right.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "是不对的",
+  "werNormalizedPredicted": "is not right",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "是 不 对 的",
+  "sigWerNormalizedPredicted": "is not right",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'is' at position 0",
+      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a major language mismatch and changes the entire meaning/context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 3",
+      "reason": "The word '的' is missing in the actual transcription, which further indicates a significant error due to language mismatch and missing content.",
+      "score": 1
+    }
+  ]
+}

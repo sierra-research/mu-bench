@@ -1,0 +1,27 @@
+{
+  "gold": "是的。",
+  "predicted": "Yes.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "是的",
+  "werNormalizedPredicted": "yes",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "是 的",
+  "sigWerNormalizedPredicted": "yes",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'yes' at position 0",
+      "reason": "The expected word is in Chinese ('是'), while the actual is in English ('yes'). Although 'yes' is a translation of '是', the transcription is in a different language, which is a significant error according to the guidelines.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 1",
+      "reason": "The word '的' is missing in the actual transcription. This omission, combined with the language mismatch, results in a significant error as the full meaning is not preserved.",
+      "score": 1
+    }
+  ]
+}

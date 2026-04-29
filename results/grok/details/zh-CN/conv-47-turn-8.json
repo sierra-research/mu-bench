@@ -1,0 +1,27 @@
+{
+  "gold": "那你还没听，听得到我的名字。",
+  "predicted": "Then you haven't heard my name.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 12,
+  "werRefWords": 12,
+  "werNormalizedGold": "那你还没听 听得到我的名字",
+  "werNormalizedPredicted": "then you have not heard my name",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "那 你 还 没 听 听 得 到 我 的 名 字",
+  "sigWerNormalizedPredicted": "then you have not heard my name",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to 'then' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Chinese), which makes the meaning incoherent and unrelated to the expected sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '到' at position 7",
+      "reason": "The word '到' is missing in the actual transcription, which is already in a different language, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

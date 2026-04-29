@@ -1,0 +1,37 @@
+{
+  "gold": "邮箱地址呢？邮箱地址你知道吗？",
+  "predicted": "有生地志呢，有生地志你知道吗？",
+  "unintelligible": false,
+  "wer": 0.46153846153846156,
+  "werEdits": 6,
+  "werRefWords": 13,
+  "werNormalizedGold": "邮箱地址呢 邮箱地址你知道吗",
+  "werNormalizedPredicted": "有生地志呢 有生地志你知道吗",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "邮 箱 地 址 呢 邮 箱 地 址 你 知 道 吗",
+  "sigWerNormalizedPredicted": "有 生 地 志 呢 有 生 地 志 你 知 道 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '有' at position 0",
+      "reason": "'邮' (mail) and '有' (have) are completely different words and change the meaning of the phrase, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '址' to '志' at position 3",
+      "reason": "'址' (address) and '志' (will/aspiration) are unrelated, which significantly alters the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '有' at position 5",
+      "reason": "Repeats the same significant error as above, changing 'mail' to 'have', which derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '址' to '志' at position 8",
+      "reason": "Again, 'address' is replaced with an unrelated word, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

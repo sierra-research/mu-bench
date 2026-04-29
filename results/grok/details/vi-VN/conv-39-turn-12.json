@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Cảm ơn Anna nhiều.",
+  "predicted": "Okay, thank you, Ananio.",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 4,
+  "werRefWords": 5,
+  "werNormalizedGold": "okay cảm ơn anna nhiều",
+  "werNormalizedPredicted": "okay thank you ananio",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "okay cảm ơn anna nhiều",
+  "sigWerNormalizedPredicted": "okay thank you ananio",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cảm' to 'thank' at position 1",
+      "reason": "'cảm ơn' means 'thank you' in Vietnamese, but only 'cảm' is replaced with 'thank', which is incomplete and mixes languages, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhiều' at position 4",
+      "reason": "'nhiều' means 'a lot' or 'very much', and its omission loses emphasis but does not derail the core meaning.",
+      "score": 2
+    }
+  ]
+}

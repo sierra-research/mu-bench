@@ -1,0 +1,37 @@
+{
+  "gold": "Necesito el estatus o cómo está mi línea.",
+  "predicted": "Eh, solo necesito la, eh, el, el estatus, ¿o cómo está? Eh, mi e-",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "necesito el estatus o como esta mi linea",
+  "werNormalizedPredicted": "solo necesito la el el estatus o como esta mi e",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "necesito el estatus o como esta mi linea",
+  "sigWerNormalizedPredicted": "solo necesito la el el estatus o como esta mi e",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'solo' at position 0",
+      "reason": "'solo' adds extra information (only), but does not change the main intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'la' at position 1",
+      "reason": "The insertion of 'la' is a minor grammatical error and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'el' at position 2",
+      "reason": "The repeated 'el' is a minor grammatical error and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'linea' to 'e' at position 7",
+      "reason": "Replacing 'linea' (line) with 'e' removes the key object of the sentence, making the request unclear.",
+      "score": 1
+    }
+  ]
+}

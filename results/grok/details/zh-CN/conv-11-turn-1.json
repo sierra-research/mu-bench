@@ -1,0 +1,27 @@
+{
+  "gold": "我正在等待。",
+  "predicted": "I am waiting, uh",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "我正在等待",
+  "werNormalizedPredicted": "i am waiting",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "我 正 在 等 待",
+  "sigWerNormalizedPredicted": "i am waiting",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'i' at position 0",
+      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a major language mismatch and changes the entire meaning/context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '等' at position 3",
+      "reason": "The expected word is missing and the actual transcription is in a different language, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

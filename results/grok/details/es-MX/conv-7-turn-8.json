@@ -1,0 +1,32 @@
+{
+  "gold": "Más 2 55 1 2 3 4 5 6 7 8.",
+  "predicted": "2 2 5 5 1 2 3 4 5 6 7 8",
+  "unintelligible": false,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "dos dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "más dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "dos dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'más' to 'dos' at position 0",
+      "reason": "'más' (meaning 'plus' or 'more') is replaced with 'dos' ('two'), which changes the meaning of the sentence, especially if this is a phone number or code. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 2",
+      "reason": "'cincuenta' ('fifty') is replaced with 'cinco' ('five'), which is a significant change in a sequence of numbers, likely altering the intended number or code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 3",
+      "reason": "The conjunction 'y' ('and') is omitted, which is a minor error in a numeric sequence, as it does not significantly change the meaning.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Tamam. Kredi kartı ile ilgili bir limit artışı talebim var. Onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "predicted": "Tamam. Kredi kartımla ilgili bir iyi bir tartışma isteğim var, onu yapmak istiyorum. Yardımcı olur musun bana?",
+  "unintelligible": false,
+  "wer": 0.35294117647058826,
+  "werEdits": 6,
+  "werRefWords": 17,
+  "werNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
+  "werNormalizedPredicted": "tamam kredi kartımla ilgili bir iyi bir tartışma isteğim var onu yapmak istiyorum yardımcı olur musun bana",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "tamam kredi kartı ile ilgili bir limit artışı talebim var onu yapmak istiyorum yardımcı olur musun bana",
+  "sigWerNormalizedPredicted": "tamam kredi kartımla ilgili bir iyi bir tartışma isteğim var onu yapmak istiyorum yardımcı olur musun bana",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartı' to 'kartımla' at position 2",
+      "reason": "'kartı' (the card) vs 'kartımla' (with my card) changes the possessive and adds a preposition, but the overall meaning about the credit card is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ile' at position 3",
+      "reason": "Omitting 'ile' (with) slightly changes the grammatical structure but does not significantly alter the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'limit' to 'bir' at position 6",
+      "reason": "Inserting 'iyi' (good) introduces an unrelated adjective, which makes the sentence less coherent and confuses the intended meaning.",
+      "score": 1
+    }
+  ]
+}

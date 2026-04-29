@@ -1,0 +1,37 @@
+{
+  "gold": "Tabii. Z A Y N E P nokta A R S L A N at işareti, E M A İ L nokta C O M.",
+  "predicted": "Z A Y N E T punto A R C L A N. Et işareti E M A I L nokta G O M",
+  "unintelligible": false,
+  "wer": 0.16,
+  "werEdits": 4,
+  "werRefWords": 25,
+  "werNormalizedGold": "tabii z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
+  "werNormalizedPredicted": "z a y n e t nokta a r c l a n at işareti e m a i l nokta g o m",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "tabii z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "z a y n e t nokta a r c l a n at işareti e m a i l nokta g o m",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'tabii' at position 0",
+      "reason": "'tabii' is a word at the start of the email address, likely part of a name or identifier. Its omission may cause confusion or loss of information, especially in a spelled-out email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'p' to 't' at position 6",
+      "reason": "In a spelled-out name or email, a single letter change alters the intended address or name, making it incorrect and potentially undeliverable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 's' to 'c' at position 10",
+      "reason": "Changing 's' to 'c' in a spelled-out name or email address is a significant error, as it changes the actual identifier and could result in a wrong or undeliverable email.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'g' at position 22",
+      "reason": "Changing 'c' to 'g' in the domain part of an email address ('com' to 'gom') is a significant error, as it makes the email address invalid and undeliverable.",
+      "score": 1
+    }
+  ]
+}

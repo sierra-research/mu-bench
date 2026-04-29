@@ -1,0 +1,37 @@
+{
+  "gold": "Email là thu chấm trần a còng Gmail chấm com.",
+  "predicted": "email là thu chmn a gmail com",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
+  "werNormalizedPredicted": "email là thu chmn a gmail com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "email là thu chmn a gmail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'chmn' at position 3",
+      "reason": "'chmn' is a misspelling of 'chấm', which is a critical part of the email address format (dot). This could cause confusion or incorrect email address transcription.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 4",
+      "reason": "Omitting 'trần' removes a key part of the email username, making the email address incomplete and likely incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'còng' at position 6",
+      "reason": "'còng' (meaning '@') is essential in an email address. Its omission makes the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 8",
+      "reason": "Missing 'chấm' (dot) before 'com' results in an invalid email domain, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Este ¿ya terminado aquí entonces?",
+  "predicted": "este ya terminamos aquí entonces?",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "este ya terminado aquí entonces",
+  "werNormalizedPredicted": "ya terminamos aquí entonces",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "este ya terminado aquí entonces",
+  "sigWerNormalizedPredicted": "ya terminamos aquí entonces",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'este' at position 0",
+      "reason": "Omitting 'este' (this) removes the subject or reference of the sentence, which can change the meaning and clarity of what is finished.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'terminado' to 'terminamos' at position 2",
+      "reason": "Changing 'terminado' (finished) to 'terminamos' (we finished) shifts from a passive/adjective to an active/verb form, but the overall meaning (something is finished) is preserved in context.",
+      "score": 2
+    }
+  ]
+}

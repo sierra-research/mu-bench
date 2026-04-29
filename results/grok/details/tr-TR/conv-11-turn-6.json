@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır ikinci harfim, bu defa ikinci harfini yanlış söylediniz. A değil. İkinci harfi E değil A olacak. Zaynep Arslan.",
+  "predicted": "hayır ikinci harfin bu defa ikinci harfini yanlış söylediniz a d- ikinci harfi e değil a olacak zeynep arslan",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
+  "werRefWords": 19,
+  "werNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
+  "werNormalizedPredicted": "hayır ikinci harfin bu defa ikinci harfini yanlış söylediniz a d ikinci harfi e değil a olacak zeynep arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "hayır ikinci harfim bu defa ikinci harfini yanlış söylediniz a değil ikinci harfi e değil a olacak zaynep arslan",
+  "sigWerNormalizedPredicted": "hayır ikinci harfin bu defa ikinci harfini yanlış söylediniz a d ikinci harfi e değil a olacak zeynep arslan",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'harfim' to 'harfin' at position 2",
+      "reason": "'harfim' and 'harfin' are different forms of the same word in Turkish (possessive suffix for 'my letter' vs. 'your letter'), but in this context, the meaning changes from 'my letter' to 'your letter', which could cause confusion but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'değil' to 'd' at position 10",
+      "reason": "'değil' means 'not' in Turkish, while 'd' is just a letter and does not make sense in this context, making the sentence incoherent at this point.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 17",
+      "reason": "Minor misspelling of a proper noun, still clearly refers to the same name.",
+      "score": 2
+    }
+  ]
+}

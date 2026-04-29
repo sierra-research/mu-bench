@@ -1,0 +1,37 @@
+{
+  "gold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
+  "predicted": "xem hết lương tiền người ngày gì cũng xem hết",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "werNormalizedPredicted": "xem hết lương tiền người ngày gì cũng xem hết",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "sigWerNormalizedPredicted": "xem hết lương tiền người ngày gì cũng xem hết",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'luôn' to 'lương' at position 2",
+      "reason": "'luôn' means 'always' while 'lương' means 'salary'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'người' at position 4",
+      "reason": "Adding 'người' ('person') introduces a new subject, altering the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'cũng' at position 6",
+      "reason": "Adding 'cũng' ('also') slightly changes the nuance but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'luôn' at position 8",
+      "reason": "Omitting 'luôn' ('always') slightly reduces emphasis but does not significantly change the meaning.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kartımı kaybettim, acaba bana yardımcı olabilir misiniz? Kartımı iptal ettirmem gerekiyor herhalde.",
+  "predicted": "anla'nın merhabalar öncelikle teşekkür ediyorum ben kartımı kaybettim acaba bana yardımcı olabilir misiniz kartımı iptal etmem gerekiyor herhalde",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
+  "werRefWords": 19,
+  "werNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kartımı kaybettim acaba bana yardımcı olabilir misiniz kartımı iptal ettirmem gerekiyor herhalde",
+  "werNormalizedPredicted": "anla'nın merhabalar öncelikle teşekkür ediyorum ben kartımı kaybettim acaba bana yardımcı olabilir misiniz kartımı iptal etmem gerekiyor herhalde",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kartımı kaybettim acaba bana yardımcı olabilir misiniz kartımı iptal ettirmem gerekiyor herhalde",
+  "sigWerNormalizedPredicted": "anla'nın merhabalar öncelikle teşekkür ediyorum ben kartımı kaybettim acaba bana yardımcı olabilir misiniz kartımı iptal etmem gerekiyor herhalde",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla'nın' at position 0",
+      "reason": "'anna' is a proper noun (a name), while 'anla'nın' is a different word entirely and not a name. This changes the intended addressee and makes the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address in Turkish. Its omission reduces the politeness but does not change the core meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ettirmem' to 'etmem' at position 16",
+      "reason": "'ettirmem' means 'to have it cancelled' (causative), while 'etmem' means 'to cancel' (do it oneself). This changes who is performing the action, which can be significant in a customer service context.",
+      "score": 2
+    }
+  ]
+}

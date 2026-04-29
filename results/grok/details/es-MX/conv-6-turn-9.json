@@ -1,0 +1,37 @@
+{
+  "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
+  "predicted": "M 5 2 5 5 1 2 3 4 5 6 7 8.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 5,
+  "werRefWords": 15,
+  "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "m cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "m cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'más' to 'm' at position 0",
+      "reason": "'más' is a word meaning 'plus' or 'more', while 'm' is just a letter and does not convey the same meaning. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 2",
+      "reason": "The conjunction 'y' (meaning 'and') is omitted, but the overall meaning of the numeric sequence is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 4",
+      "reason": "'cincuenta' means 'fifty' and 'cinco' means 'five', which is a significant change in the number and alters the meaning of the sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 5",
+      "reason": "The conjunction 'y' (meaning 'and') is omitted again, but the numeric sequence is still mostly understandable.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "听到的吗？",
+  "predicted": "Ting dong dong.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "听到的吗",
+  "werNormalizedPredicted": "ting dong dong",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 的 吗",
+  "sigWerNormalizedPredicted": "ting dong dong",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '听' to 'ting' at position 0",
+      "reason": "The expected is in Chinese and the actual is in English pinyin/romanization, which is a different language and not a direct transcription. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '吗' at position 3",
+      "reason": "The final word '吗' is missing in the actual transcription, which omits the question particle and changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Bạn hướng dẫn lại cho mình với. Mình vẫn chưa rõ lắm.",
+  "predicted": "bạn thử dẫn lại mình với mình vẫn chưa rõ lắm",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "bạn hướng dẫn lại cho mình với mình vẫn chưa rõ lắm",
+  "werNormalizedPredicted": "bạn thử dẫn lại mình với mình vẫn chưa rõ lắm",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "bạn hướng dẫn lại cho mình với mình vẫn chưa rõ lắm",
+  "sigWerNormalizedPredicted": "bạn thử dẫn lại mình với mình vẫn chưa rõ lắm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hướng' to 'thử' at position 1",
+      "reason": "'hướng dẫn' means 'guide/instruct', while 'thử dẫn' means 'try to lead'. This changes the intent of the request from asking for guidance to asking to try leading, which alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cho' at position 4",
+      "reason": "Omitting 'cho' ('for') slightly affects the grammatical structure but does not significantly change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

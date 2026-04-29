@@ -1,0 +1,27 @@
+{
+  "gold": "C C N 0 2 0。",
+  "predicted": "C-C ending, O ending.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "c c n 零 二 零",
+  "werNormalizedPredicted": "c c ending o ending",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c c n 零 二 零",
+  "sigWerNormalizedPredicted": "c c ending o ending",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'n' to 'ending' at position 2",
+      "reason": "'n' is a letter, while 'ending' is a completely unrelated word, which makes the transcription incoherent and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '零' at position 5",
+      "reason": "The final '零' (zero) is missing, which is significant in a sequence of numbers or codes.",
+      "score": 1
+    }
+  ]
+}

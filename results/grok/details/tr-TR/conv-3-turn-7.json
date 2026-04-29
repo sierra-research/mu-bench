@@ -1,0 +1,27 @@
+{
+  "gold": "Atatürk Caddesi numara 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34660 Türkiye.",
+  "predicted": "atacık caddesi numara 45 bölü 6 kazım kara bekir mahallesi üsküdar istanbul 34.660 türkiye",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
+  "werRefWords": 19,
+  "werNormalizedGold": "atatürk caddesi numara kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
+  "werNormalizedPredicted": "atacık caddesi numara kırk beş bölü altı kazım kara bekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "atatürk caddesi numara kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
+  "sigWerNormalizedPredicted": "atacık caddesi numara kırk beş bölü altı kazım kara bekir mahallesi üsküdar istanbul otuz dört bin altı yüz altmış türkiye",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'atatürk' to 'atacık' at position 0",
+      "reason": "'Atatürk' is a well-known proper noun (name of the founder of modern Turkey), while 'atacık' is a different word and not a name. This changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'karabekir' to 'bekir' at position 8",
+      "reason": "Inserting 'kara' before 'bekir' splits the proper noun 'karabekir' into two words, which could cause confusion but still refers to the same place/person.",
+      "score": 2
+    }
+  ]
+}

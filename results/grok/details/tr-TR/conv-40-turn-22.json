@@ -1,0 +1,37 @@
+{
+  "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "predicted": "Daha önce hesap eksikliği sismiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap eksikliğini?",
+  "unintelligible": false,
+  "wer": 0.3125,
+  "werEdits": 5,
+  "werRefWords": 16,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce hesap eksikliği sismiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap eksikliğini",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce hesap eksikliği sismiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap eksikliğini",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ekstresi' to 'eksikliği' at position 3",
+      "reason": "'Ekstresi' means 'statement' (as in bank statement), while 'eksikliği' means 'deficiency' or 'lack'. This changes the meaning significantly and makes the sentence incoherent in the banking context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "'İstediğim' means 'that I requested', while 'henüz' means 'yet'. This changes the meaning of the sentence and disrupts the intended message.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'misin' to 'misiniz' at position 13",
+      "reason": "Both are forms of 'can you', with 'misiniz' being the polite/plural form. The meaning is preserved, only the level of formality changes.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'eksikliğini' at position 15",
+      "reason": "Again, 'ekstresini' refers to 'the statement', while 'eksikliğini' means 'the deficiency'. This is a significant change that makes the request incoherent.",
+      "score": 1
+    }
+  ]
+}

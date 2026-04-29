@@ -1,0 +1,27 @@
+{
+  "gold": "没有没有没有，美玲 at email dot com。",
+  "predicted": "mailing at email dot com",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
+  "werRefWords": 12,
+  "werNormalizedGold": "没有没有没有 美玲 at email dot com",
+  "werNormalizedPredicted": "mailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "没 有 没 有 没 有 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '没' to 'mailing' at position 0",
+      "reason": "The expected contains repeated Chinese words and a name, while the actual replaces all of them with the English word 'mailing', which is a completely different meaning and language. This is a significant error that derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '有' at position 1",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

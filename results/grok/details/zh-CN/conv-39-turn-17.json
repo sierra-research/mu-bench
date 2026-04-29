@@ -1,0 +1,27 @@
+{
+  "gold": "对，但是我的邮箱是君临 at email dot com。",
+  "predicted": "对，但是我的，呃，邮箱是 jingling at email dot com。",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "对 但是我的邮箱是君临 at email dot com",
+  "werNormalizedPredicted": "对 但是我的邮箱是 jingling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "对 但 是 我 的 邮 箱 是 君 临 at email dot com",
+  "sigWerNormalizedPredicted": "对 但 是 我 的 邮 箱 是 jingling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'jingling' at position 8",
+      "reason": "'君' is a single Chinese character, while 'jingling' is a completely different word in another language and not a transliteration or translation. This changes the intended email address significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '临' at position 9",
+      "reason": "Omitting '临' from the email address changes the proper noun entirely, resulting in a different and incorrect email address.",
+      "score": 1
+    }
+  ]
+}

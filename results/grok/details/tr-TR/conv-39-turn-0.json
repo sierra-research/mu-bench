@@ -1,0 +1,32 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "predicted": "anna'nın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "werNormalizedPredicted": "anna'nın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerNormalizedPredicted": "anna'nın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anna'nın' at position 0",
+      "reason": "'anna'nın' means 'Anna's' (possessive) instead of just 'Anna', which changes the subject from addressing Anna to referring to something belonging to Anna. This alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam') in Turkish. Omitting it makes the sentence less formal but does not significantly change the core meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kartında' to 'kartımda' at position 5",
+      "reason": "'kartında' means 'on the card' (referring to someone else's card or a general card), while 'kartımda' means 'on my card'. This changes the ownership and meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

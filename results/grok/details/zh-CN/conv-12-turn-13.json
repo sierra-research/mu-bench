@@ -1,0 +1,27 @@
+{
+  "gold": "君灵 at email dot com。",
+  "predicted": "dreamling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君灵 at email dot com",
+  "werNormalizedPredicted": "dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 灵 at email dot com",
+  "sigWerNormalizedPredicted": "dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "'君' is a Chinese character and 'dreamling' is an English word; the substitution completely changes the meaning and identity of the email address, making it unrecognizable and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "The omission of '灵', which is part of the expected email username, results in a significant error as the actual username is now entirely different from the intended one.",
+      "score": 1
+    }
+  ]
+}

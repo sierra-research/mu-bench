@@ -1,0 +1,32 @@
+{
+  "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "predicted": "yazık e-posta adresim yanlış oldu. Sonu gmail değil email yani e edirnen nesiyle email nokta com",
+  "unintelligible": false,
+  "wer": 0.2631578947368421,
+  "werEdits": 5,
+  "werRefWords": 19,
+  "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "werNormalizedPredicted": "yazık e posta adresim yanlış oldu sonu gmail değil email yani e edirnen nesiyle email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "sigWerNormalizedPredicted": "yazık e posta adresim yanlış oldu sonu gmail değil email yani e edirnen nesiyle email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yalnız' to 'yazık' at position 0",
+      "reason": "'yalnız' means 'only' or 'just', while 'yazık' means 'pity' or 'what a shame'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'edirnenin' to 'edirnen' at position 12",
+      "reason": "'edirnenin' is the possessive form ('of Edirne'), while 'edirnen' is not a correct form; this is a minor grammatical error but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'si' at position 14",
+      "reason": "Omitting 'si' from 'e si' (the 'e' of Edirne) makes the explanation of the letter unclear, which is important for spelling out an email address; this is a significant error.",
+      "score": 1
+    }
+  ]
+}

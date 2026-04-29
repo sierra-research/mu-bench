@@ -1,0 +1,27 @@
+{
+  "gold": "你好。",
+  "predicted": "yo",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "yo",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "yo",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'yo' at position 0",
+      "reason": "The actual transcription is in a different language (Spanish 'yo' instead of Chinese '你'), which completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "A key word is missing, resulting in an incomplete and incoherent greeting in Chinese.",
+      "score": 1
+    }
+  ]
+}

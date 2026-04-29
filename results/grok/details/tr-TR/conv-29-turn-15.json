@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır. Evet. Zaynep nokta Arslan olacak.",
+  "predicted": "evet zainab nokta arslan olacak",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "hayır evet zaynep nokta arslan olacak",
+  "werNormalizedPredicted": "evet zainab nokta arslan olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "hayır evet zaynep nokta arslan olacak",
+  "sigWerNormalizedPredicted": "evet zainab nokta arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'hayır' at position 0",
+      "reason": "'hayır' means 'no' in Turkish, and its omission removes a key part of the sentence, changing the meaning from a statement involving both 'no' and 'yes' to just 'yes'. This significantly alters the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zainab' at position 2",
+      "reason": "'Zaynep' and 'Zainab' are different names. Substituting one for the other is a minor error as the overall meaning is preserved, but the specific name is incorrect.",
+      "score": 2
+    }
+  ]
+}

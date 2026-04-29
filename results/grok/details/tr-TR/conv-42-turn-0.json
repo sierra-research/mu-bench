@@ -1,0 +1,27 @@
+{
+  "gold": "Anna merhaba. Sistemleriniz zayıf, zor ulaşıyorum. Ulaşmak kolay değil size.",
+  "predicted": "anda merhaba sistemleriniz zayıf zor ulaşıyorum ulaşmak kolay diye size",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "anna merhaba sistemleriniz zayıf zor ulaşıyorum ulaşmak kolay değil size",
+  "werNormalizedPredicted": "anda merhaba sistemleriniz zayıf zor ulaşıyorum ulaşmak kolay diye size",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "anna merhaba sistemleriniz zayıf zor ulaşıyorum ulaşmak kolay değil size",
+  "sigWerNormalizedPredicted": "anda merhaba sistemleriniz zayıf zor ulaşıyorum ulaşmak kolay diye size",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anda' at position 0",
+      "reason": "'Anna' is a proper noun (likely a name), while 'anda' is not a name and has a different meaning. This changes the subject of the sentence and can confuse the listener about whom the sentence is about.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'değil' to 'diye' at position 8",
+      "reason": "'Değil' means 'not', while 'diye' means 'so that' or 'because'. This substitution changes the meaning of the sentence, as it negates the statement versus providing a reason, which can mislead the listener.",
+      "score": 1
+    }
+  ]
+}

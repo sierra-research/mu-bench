@@ -1,0 +1,32 @@
+{
+  "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "predicted": "Email, I mean, I'll only give you my email then, ahmed.nokta.aslan at email dot com.",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 16,
+  "werRefWords": 20,
+  "werNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "werNormalizedPredicted": "email i mean i will only give you my email then ahmed nokta aslan at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "email i mean i will only give you my email then ahmed nokta aslan at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'daha' to 'i' at position 1",
+      "reason": "'daha' (Turkish for 'yet' or 'still') is replaced with 'i', which is an English pronoun and does not convey the same meaning. This changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 14",
+      "reason": "The letter 'a' is missing from the spelled-out sequence 'a r s l a n', which is likely a proper noun or email username. Missing a letter in a spelled-out name or email is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 18",
+      "reason": "'Nokta' is Turkish for 'dot', and both are used in email addresses to indicate a period. This is a direct translation and does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

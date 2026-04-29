@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır. Son rakam yanlış oldu. 60 değil, 67 olacak sonu. 67 olacak pardon. 68 dediniz siz, 67 ile bitecek.",
+  "predicted": "hayır son son rakam yanlış oldu 67 değil 68 olacak sonu 67 olacak pardon 68 dediniz siz 67 ile bitecek",
+  "unintelligible": false,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
+  "werRefWords": 23,
+  "werNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "werNormalizedPredicted": "hayır son son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "hayır son rakam yanlış oldu altmış değil altmış yedi olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "sigWerNormalizedPredicted": "hayır son son rakam yanlış oldu altmış yedi değil altmış sekiz olacak sonu altmış yedi olacak pardon altmış sekiz dediniz siz altmış yedi ile bitecek",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'son' at position 2",
+      "reason": "Repeating 'son' (last) does not change the meaning of the sentence, just a minor repetition.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'yedi' at position 6",
+      "reason": "The insertion of 'yedi' (seven) here does not change the overall meaning, as the context is about correcting the ending number.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'yedi' to 'sekiz' at position 8",
+      "reason": "Substituting 'yedi' (seven) with 'sekiz' (eight) changes the number being discussed, which is the main point of the sentence, so this is a significant error.",
+      "score": 1
+    }
+  ]
+}
