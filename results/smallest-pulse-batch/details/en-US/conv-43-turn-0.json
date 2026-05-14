@@ -1,0 +1,32 @@
+{
+  "gold": "I would like information on raising my limit for my credit card.",
+  "predicted": "information on raising my limit for my critical?",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
+  "werRefWords": 12,
+  "werNormalizedGold": "i would like information on raising my limit for my credit card",
+  "werNormalizedPredicted": "information on raising my limit for my critical",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "i would like information on raising my limit for my credit card",
+  "sigWerNormalizedPredicted": "information on raising my limit for my critical",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'i' at position 0",
+      "reason": "The omission of 'I' removes the subject of the sentence, making it unclear who is requesting the information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'credit' to 'critical' at position 10",
+      "reason": "'Critical' is a completely different word from 'credit' and changes the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'card' at position 11",
+      "reason": "Omitting 'card' leaves the object of the request incomplete, making it unclear what limit is being referred to.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "My home address is 1 2 3 Main Street apartment 4, Anytown, California 9 0 2 1 0.",
+  "predicted": "My home address is one twenty three Main Street, Apartment four, Innytown, California, nine zero two one zero.",
+  "unintelligible": false,
+  "wer": 0.1111111111111111,
+  "werEdits": 2,
+  "werRefWords": 18,
+  "werNormalizedGold": "my home address is one two three main street apartment four anytown california nine zero two one zero",
+  "werNormalizedPredicted": "my home address is one twenty three main street apartment four innytown california nine zero two one zero",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "my home address is one two three main street apartment four anytown california nine zero two one zero",
+  "sigWerNormalizedPredicted": "my home address is one twenty three main street apartment four innytown california nine zero two one zero",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'two' to 'twenty' at position 5",
+      "reason": "'One two three' is a common way to say '123', but 'one twenty three' means '123' as well. In this context, both refer to the same address number, so the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'anytown' to 'innytown' at position 11",
+      "reason": "'Innytown' is a misspelling or mishearing of 'Anytown', but the intended meaning is still clear and refers to the same place.",
+      "score": 2
+    }
+  ]
+}

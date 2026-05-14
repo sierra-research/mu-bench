@@ -1,0 +1,27 @@
+{
+  "gold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
+  "predicted": "He's trying to get a pen. Yeah, you get a pen. Alright, I got my pen. Ready?",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 9,
+  "werRefWords": 15,
+  "werNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "werNormalizedPredicted": "he is trying to get a pen yeah you get a pen alright i got my pen ready",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "sigWerNormalizedPredicted": "he is trying to get a pen yeah you get a pen alright i got my pen ready",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'he' at position 0",
+      "reason": "'let me try' (speaker's intent to act) is changed to 'he is trying' (third person, different subject and intent), which alters the meaning and subject of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'all' to 'pen' at position 8",
+      "reason": "Inserting 'you' changes the subject and adds a new command, which alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

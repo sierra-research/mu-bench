@@ -1,0 +1,47 @@
+{
+  "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "predicted": "Um, you know, uh, six, seven, um, th I I think that should be fine. Uh uh uh uh uh l let's try try to cancel transforms for me for you oh mate no and that it doesn't work for that fine.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 12,
+  "werRefWords": 28,
+  "werNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
+  "werNormalizedPredicted": "you know six seven i i think that should be fine let us try to cancel transforms for me for you oh mate no and that it does not work for that fine",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 28,
+  "sigWerNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
+  "sigWerNormalizedPredicted": "you know six seven i i think that should be fine let us try to cancel transforms for me for you oh mate no and that it does not work for that fine",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'i' at position 5",
+      "reason": "Repeating 'i' does not change the meaning of the sentence, just a minor disfluency.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'transfer' to 'for' at position 14",
+      "reason": "Inserting 'cancel' changes the intended action from transferring to canceling, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'over' to 'oh' at position 16",
+      "reason": "'transfer' is replaced with 'for', which makes the sentence incoherent and changes the intended action.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'if' to 'that' at position 20",
+      "reason": "Adding 'for' here does not make sense in context and adds confusion to the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'for' at position 25",
+      "reason": "'over' is replaced with 'oh', which disrupts the meaning and flow of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'is' at position 26",
+      "reason": "Changing 'if' to 'that' alters the conditional meaning of the sentence, but the overall intent is still somewhat understandable.",
+      "score": 2
+    }
+  ]
+}

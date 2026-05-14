@@ -1,0 +1,22 @@
+{
+  "gold": "1 2 3 Main Street apartment 4, Anytown, California, 9 0 2 1 0.",
+  "predicted": "One two three Main Street, Apartment four, Annie Town, California, nine oh two one zero.",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "one two three main street apartment four anytown california nine zero two one zero",
+  "werNormalizedPredicted": "one two three main street apartment four annie town california nine zero two one zero",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "one two three main street apartment four anytown california nine zero two one zero",
+  "sigWerNormalizedPredicted": "one two three main street apartment four annie town california nine zero two one zero",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anytown' to 'town' at position 7",
+      "reason": "'Anytown' is a single word representing a city name, while 'annie town' splits it into two words and changes the meaning, making it a different place name. This could cause confusion in an address context.",
+      "score": 1
+    }
+  ]
+}

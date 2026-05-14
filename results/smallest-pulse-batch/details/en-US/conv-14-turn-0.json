@@ -1,0 +1,32 @@
+{
+  "gold": "Yeah. Hi. I'm looking for if I can get the latest invoice for my card.",
+  "predicted": "Yeah, yeah, um um um hi. I'm looking for uh if I can get the latest uh evil voice uh for my card card.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 4,
+  "werRefWords": 16,
+  "werNormalizedGold": "yeah hi i am looking for if i can get the latest invoice for my card",
+  "werNormalizedPredicted": "yeah yeah hi i am looking for if i can get the latest evil voice for my card card",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "yeah hi i am looking for if i can get the latest invoice for my card",
+  "sigWerNormalizedPredicted": "yeah yeah hi i am looking for if i can get the latest evil voice for my card card",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'yeah' at position 1",
+      "reason": "Repeating 'yeah' does not change the meaning of the sentence, just adds emphasis or redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'invoice' to 'voice' at position 12",
+      "reason": "Inserting 'evil' before 'voice' creates a nonsensical phrase and changes the meaning significantly, making the request incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'card' at position 15",
+      "reason": "Substituting 'invoice' with 'voice' changes the object of the request, making the sentence incorrect and confusing.",
+      "score": 1
+    }
+  ]
+}
