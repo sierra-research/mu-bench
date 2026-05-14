@@ -1,0 +1,42 @@
+{
+  "gold": "Ana, este necesito saber, solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus.",
+  "predicted": "Ana, hola, este, necesito sa- solicité un, un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el-",
+  "unintelligible": false,
+  "wer": 0.18518518518518517,
+  "werEdits": 5,
+  "werRefWords": 27,
+  "werNormalizedGold": "ana necesito saber solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus",
+  "werNormalizedPredicted": "ana hola necesito solicité un un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "ana necesito saber solicité un aumento en mi línea de crédito de la tarjeta y quería ver si me podrías ayudar a saber cuál es el estatus",
+  "sigWerNormalizedPredicted": "ana hola necesito solicité un un aumento en mi línea de crédito de la tarjeta y quería ver si me podías ayudar a saber cuál es el",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'hola' at position 1",
+      "reason": "'hola' is a greeting inserted at the beginning, but does not change the meaning of the request.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'saber' at position 2",
+      "reason": "Omitting 'saber' ('to know') slightly affects the clarity of the request, but the intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'un' at position 5",
+      "reason": "Repeating 'un' ('a') is a minor redundancy and does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'podrías' to 'podías' at position 19",
+      "reason": "'Podrías' (could you) and 'podías' (you could) are different tenses, but the request is still clear and polite.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'estatus' at position 26",
+      "reason": "Omitting 'estatus' ('status') removes the key information about what is being asked, making the request incomplete.",
+      "score": 1
+    }
+  ]
+}

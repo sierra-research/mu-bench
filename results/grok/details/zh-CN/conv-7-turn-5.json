@@ -1,0 +1,27 @@
+{
+  "gold": "C N 3 7 8 9。",
+  "predicted": "C N Fancy Bad Girl.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "c n 三 七 八 九",
+  "werNormalizedPredicted": "c n fancy bad girl",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n 三 七 八 九",
+  "sigWerNormalizedPredicted": "c n fancy bad girl",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '三' to 'fancy' at position 2",
+      "reason": "'三' is the Chinese character for 'three', while 'fancy' is an unrelated English word. This substitution completely changes the meaning and makes the transcription incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '九' at position 5",
+      "reason": "'九' (nine) is missing from the actual transcription, which omits important information from the sequence.",
+      "score": 1
+    }
+  ]
+}

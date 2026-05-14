@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır, istemiyorum. İyi günler dilerim.",
+  "predicted": "Igen, személyre igénylőrem.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "werNormalizedPredicted": "igen személyre igénylőrem",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "sigWerNormalizedPredicted": "igen személyre igénylőrem",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'igen' at position 0",
+      "reason": "'hayır' means 'no' in Turkish, while 'igen' means 'yes' in Hungarian. This is a substitution not only of meaning but also of language, which completely changes the intent and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'günler' at position 3",
+      "reason": "'günler' means 'days' in Turkish and is part of the phrase 'iyi günler' (good day). Its omission further breaks the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

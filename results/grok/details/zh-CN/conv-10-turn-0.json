@@ -1,0 +1,27 @@
+{
+  "gold": "你好。",
+  "predicted": "Não.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "你好",
+  "werNormalizedPredicted": "não",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "你 好",
+  "sigWerNormalizedPredicted": "não",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'não' at position 0",
+      "reason": "The actual transcription is in a different language (Portuguese instead of Chinese), which completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "A key word from the expected greeting is missing, making the transcription incomplete and significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

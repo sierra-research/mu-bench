@@ -1,0 +1,32 @@
+{
+  "gold": "Bir dakika. İsmimde Ahmet Aslan dediniz de, Ahmet Arslan. R harfi var arada, Ahmet Arslan.",
+  "predicted": "Ahmet isminde Ahmet Aslan dediniz Ahmet Arslan R harfi var arada Ahmet Arslan",
+  "unintelligible": false,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
+  "werRefWords": 15,
+  "werNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "werNormalizedPredicted": "ahmet isminde ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "bir dakika ismimde ahmet aslan dediniz de ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerNormalizedPredicted": "ahmet isminde ahmet aslan dediniz ahmet arslan r harfi var arada ahmet arslan",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bir' to 'ahmet' at position 0",
+      "reason": "The substitution changes the introductory phrase 'bir dakika' (one moment) to a name, which omits the polite attention-getting phrase and changes the tone and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ismimde' at position 2",
+      "reason": "Omitting 'ismimde' (in my name) removes important information about what is being discussed, which can confuse the listener about the subject of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'de' at position 6",
+      "reason": "Omitting 'de' (also/as well) slightly affects the flow but does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

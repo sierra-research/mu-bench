@@ -1,0 +1,32 @@
+{
+  "gold": "Tabii. Atatürk Caddesi No 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodu 34 660.",
+  "predicted": "Atatürk Caddesi No 45/6 Kazım Karabekir Mahallesi Üsküdar İstanbul posta kodu 34600",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 5,
+  "werRefWords": 20,
+  "werNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
+  "werNormalizedPredicted": "atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu üç yüz kırk altı yüz",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
+  "sigWerNormalizedPredicted": "atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu üç yüz kırk altı yüz",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'tabii' at position 0",
+      "reason": "'tabii' is missing from the beginning, which may remove a polite or confirming word but does not affect the address information.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'otuz' to 'yüz' at position 15",
+      "reason": "The insertion of 'üç' changes the postal code from 'otuz dört' (34) to 'üç yüz kırk' (340), which is a significant change in the address and can lead to incorrect delivery.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'altmış' at position 19",
+      "reason": "Substituting 'otuz' (30) with 'yüz' (100) in the postal code changes the number entirely, which is a significant error for address accuracy.",
+      "score": 1
+    }
+  ]
+}

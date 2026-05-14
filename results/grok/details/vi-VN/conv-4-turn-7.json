@@ -1,0 +1,27 @@
+{
+  "gold": "Địa chỉ email là minh chấn trần a còng email chấm com.",
+  "predicted": "ở địa chỉ email là minh chấm trần a cộng email chấm com",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "địa chỉ email là minh chấn trần a còng email chấm com",
+  "werNormalizedPredicted": "địa chỉ email là minh chấm trần a cộng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấn trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh chấm trần a cộng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấn' to 'chấm' at position 5",
+      "reason": "'chấn' and 'chấm' are different words with different meanings. In the context of an email address, this changes the name portion, which could result in an incorrect email address. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 8",
+      "reason": "'còng' is the Vietnamese word for the '@' symbol in email addresses, while 'cộng' means 'plus' and is incorrect in this context. This substitution makes the email address invalid, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

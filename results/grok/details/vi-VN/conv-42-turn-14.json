@@ -1,0 +1,27 @@
+{
+  "gold": "À, chính xác. Chính xác. Kiểm tra giùm.",
+  "predicted": "Check, check, check, check, check again.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "chính xác chính xác kiểm tra giùm",
+  "werNormalizedPredicted": "check check check check check again",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "chính xác chính xác kiểm tra giùm",
+  "sigWerNormalizedPredicted": "check check check check check again",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chính' to 'check' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Vietnamese), which completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'giùm' at position 6",
+      "reason": "The word 'giùm' (meaning 'please' or 'help' in Vietnamese) is missing in the actual transcription, further reducing the accuracy and meaning.",
+      "score": 1
+    }
+  ]
+}

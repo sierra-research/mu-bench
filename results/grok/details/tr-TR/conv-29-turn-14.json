@@ -1,0 +1,32 @@
+{
+  "gold": "Her şey doğru, Anna Hanım, her şey doğru. Sadece Zaynep ve Arslan arasında nokta işareti var. Sadece oraya nokta koyacaksınız. Diğerleri hepsi doğru.",
+  "predicted": "her şey doğru anlamışım her şey doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "unintelligible": false,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
+  "werRefWords": 23,
+  "werNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "werNormalizedPredicted": "her şey doğru anlamışım her şey doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "sigWerNormalizedPredicted": "her şey doğru anlamışım her şey doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlamışım' at position 3",
+      "reason": "'anna' is a proper noun (a name), while 'anlamışım' means 'I understood' in Turkish. This substitution changes the meaning of the sentence and introduces a different subject, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 4",
+      "reason": "'hanım' is a respectful title (like 'Ms.' or 'Mrs.') following a name. Its omission after the name further disrupts the intended meaning and politeness of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
+      "reason": "This is a minor spelling difference in a proper noun (a name), but the name is still recognizable and the meaning is preserved.",
+      "score": 2
+    }
+  ]
+}

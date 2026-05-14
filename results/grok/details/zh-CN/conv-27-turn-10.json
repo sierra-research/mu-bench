@@ -1,0 +1,27 @@
+{
+  "gold": "林美 at email dot com。",
+  "predicted": "linmei at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "林美 at email dot com",
+  "werNormalizedPredicted": "linmei at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "林 美 at email dot com",
+  "sigWerNormalizedPredicted": "linmei at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'linmei' at position 0",
+      "reason": "The Chinese characters '林 美' are replaced by the pinyin 'linmei', which is a significant change. The actual transcription loses the original script and merges both characters into one word, which could cause confusion or loss of intended meaning, especially if the script is important for identification (e.g., in an email address).",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "The character '美' is missing as a separate entity in the actual transcription, further reducing the accuracy and potentially causing issues in identification or communication.",
+      "score": 1
+    }
+  ]
+}

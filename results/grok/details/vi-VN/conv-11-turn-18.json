@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn xin được cấp 2 thẻ, được không?",
+  "predicted": "Tôi muốn xin được cấp hai thẻ SIM.",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "tôi muốn xin được cấp hai thẻ được không",
+  "werNormalizedPredicted": "tôi muốn xin được cấp hai thẻ sim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "tôi muốn xin được cấp hai thẻ được không",
+  "sigWerNormalizedPredicted": "tôi muốn xin được cấp hai thẻ sim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'được' to 'sim' at position 7",
+      "reason": "'được' is an auxiliary/modal word meaning 'can' or 'may', while 'sim' means 'SIM card'. This substitution changes the meaning of the sentence significantly, as it alters the request from asking for permission to specifying an object.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'không' at position 8",
+      "reason": "'không' is a question particle meaning 'not' or used to form yes/no questions. Its omission removes the interrogative nature of the sentence, changing it from a question to a statement, which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gold": "Hayır yine yanlış. Çünkü Zaynep. Altıncı harfimi siz T olarak söylediniz halbuki P. Altıncı harf pırasanın P'si.",
+  "predicted": "Hayır, yine yanlış. Çünkü zainet altıncı harfimiz T olarak söylediniz, harbiki P, altıncı harf Prasanna'nın P'si.",
+  "unintelligible": false,
+  "wer": 0.35294117647058826,
+  "werEdits": 6,
+  "werRefWords": 17,
+  "werNormalizedGold": "hayır yine yanlış çünkü zaynep altıncı harfimi siz t olarak söylediniz halbuki p altıncı harf pırasanın psi",
+  "werNormalizedPredicted": "hayır yine yanlış çünkü zainet altıncı harfimiz t olarak söylediniz harbiki p altıncı harf prasanna'nın p'si",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "hayır yine yanlış çünkü zaynep altıncı harfimi siz t olarak söylediniz halbuki p altıncı harf pırasanın psi",
+  "sigWerNormalizedPredicted": "hayır yine yanlış çünkü zainet altıncı harfimiz t olarak söylediniz harbiki p altıncı harf prasanna'nın p'si",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zainet' at position 4",
+      "reason": "'zaynep' is a Turkish female name, while 'zainet' is not a standard name and changes the reference to a different or non-existent person, which can confuse the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'harfimi' to 'harfimiz' at position 6",
+      "reason": "'harfimi' means 'my letter' and 'harfimiz' means 'our letter'; this changes the possessive meaning but does not derail the overall sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'siz' at position 7",
+      "reason": "Omitting 'siz' ('you') removes the direct address to the listener, but the sentence remains understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'halbuki' to 'harbiki' at position 11",
+      "reason": "'halbuki' means 'however' or 'whereas'; 'harbiki' is a misspelling but still recognizable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'pırasanın' to 'prasanna'nın' at position 15",
+      "reason": "'pırasanın' refers to 'of the leek' (a vegetable) in Turkish, while 'prasanna'nın' is a proper name and changes the meaning entirely, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "gold": "Es 5 5 1 2 3 4 5 6 7 8.",
+  "predicted": "es 5 5 1 2 3 4 5 6 y 7 8.",
+  "unintelligible": false,
+  "wer": 0.09090909090909091,
+  "werEdits": 1,
+  "werRefWords": 11,
+  "werNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "es cinco cinco uno dos tres cuatro cinco seis y siete ocho",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "es cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "es cinco cinco uno dos tres cuatro cinco seis y siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'y' at position 9",
+      "reason": "The word 'y' (meaning 'and' in Spanish) is inserted before 'siete'. In the context of reading out a sequence of numbers, this does not change the meaning or cause confusion, as it is common to say 'seis y siete' when listing numbers. The overall meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

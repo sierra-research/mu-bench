@@ -1,0 +1,27 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com.",
+  "predicted": "Email là mình cũng chần, hãy chọn email chính chủ.",
+  "unintelligible": false,
+  "wer": 0.7,
+  "werEdits": 7,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là mình cũng chần hãy chọn email chính chủ",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là mình cũng chần hãy chọn email chính chủ",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 2",
+      "reason": "'minh' and 'mình' are different words in Vietnamese; 'minh' is a name, while 'mình' means 'myself' or 'I'. This changes the meaning of the sentence, especially since 'minh' is likely part of an email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chấm' to 'chính' at position 8",
+      "reason": "'chấm' means 'dot' (used in email addresses), while 'chính' means 'main' or 'primary'. This substitution makes the email address incoherent and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

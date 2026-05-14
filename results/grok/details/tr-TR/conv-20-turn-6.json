@@ -1,0 +1,27 @@
+{
+  "gold": "Yalnız bir dakika. Adımın ikinci harfi yanlış oldu. Zeynep değil, Zaynep.",
+  "predicted": "Yalnız bir dakika, adamın ikinci harfi yanlış oldu, Zeynep değil, Zeynep'ti.",
+  "unintelligible": false,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
+  "werRefWords": 11,
+  "werNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
+  "werNormalizedPredicted": "yalnız bir dakika adamın ikinci harfi yanlış oldu zeynep değil zeynepti",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "yalnız bir dakika adımın ikinci harfi yanlış oldu zeynep değil zaynep",
+  "sigWerNormalizedPredicted": "yalnız bir dakika adamın ikinci harfi yanlış oldu zeynep değil zeynepti",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adımın' to 'adamın' at position 3",
+      "reason": "'adımın' means 'my name' or 'of my name', while 'adamın' means 'the man' or 'of the man'. This changes the subject of the sentence and alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynepti' at position 10",
+      "reason": "'zaynep' is a name, while 'zeynepti' adds the Turkish past tense suffix '-ti', making it 'it was Zeynep'. This changes the grammatical structure but the intended name is still clear. The overall meaning is only slightly affected.",
+      "score": 2
+    }
+  ]
+}

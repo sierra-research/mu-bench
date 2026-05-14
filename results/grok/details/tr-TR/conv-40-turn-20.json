@@ -1,0 +1,37 @@
+{
+  "gold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "predicted": "Anla, bana şu kod tekrar verir misin? Kod da çünkü ilk başta EN dedin, sonra EA dedin. Kod tekrar bana söyler misin yavaşça?",
+  "unintelligible": false,
+  "wer": 0.20833333333333334,
+  "werEdits": 5,
+  "werRefWords": 24,
+  "werNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "werNormalizedPredicted": "anla bana şu kod tekrar verir misin kod da çünkü ilk başta e n dedin sonra e a dedin kod tekrar bana söyler misin yavaşça",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "sigWerNormalizedPredicted": "anla bana şu kod tekrar verir misin kod da çünkü ilk başta e n dedin sonra e a dedin kod tekrar bana söyler misin yavaşça",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anna' is a name, while 'anla' means 'understand' in Turkish. This changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kodu' to 'kod' at position 3",
+      "reason": "'kodu' is the accusative form of 'kod' (the code), while 'kod' is nominative. The meaning is mostly preserved, but the grammatical case is incorrect.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kodlar' to 'da' at position 7",
+      "reason": "An extra 'kod' (code) is inserted, which is redundant but does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kodu' to 'kod' at position 18",
+      "reason": "'kodlar' means 'codes', while 'da' means 'also' or 'in'. This changes the meaning of the sentence and makes it less coherent.",
+      "score": 1
+    }
+  ]
+}

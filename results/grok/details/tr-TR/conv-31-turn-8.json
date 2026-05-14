@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii. 0 90 123 0 90 45 67.",
+  "predicted": "Tabii 0.90 123 0.90 45 67.",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "tabii sıfır doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii sıfır nokta doksan yüz yirmi üç sıfır nokta doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tabii sıfır doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii sıfır nokta doksan yüz yirmi üç sıfır nokta doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nokta' at position 2",
+      "reason": "The word 'nokta' (meaning 'point' or 'dot') is inserted where the expected sequence is a string of numbers. This changes the meaning from a sequence of numbers to a decimal number, which could significantly alter the intended information (such as a phone number or code).",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'nokta' at position 7",
+      "reason": "Again, inserting 'nokta' changes the numeric sequence to a decimal, which can significantly alter the meaning or intended value of the sequence.",
+      "score": 1
+    }
+  ]
+}

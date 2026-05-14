@@ -1,0 +1,27 @@
+{
+  "gold": "Belli bir ücreti var mı limit artırmanın? Kontrol edebilir misiniz?",
+  "predicted": "Belli bir ücreti var mı? Limit artırmalarını kontrol ediyor musunuz?",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "belli bir ücreti var mı limit artırmanın kontrol edebilir misiniz",
+  "werNormalizedPredicted": "belli bir ücreti var mı limit artırmalarını kontrol ediyor musunuz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "belli bir ücreti var mı limit artırmanın kontrol edebilir misiniz",
+  "sigWerNormalizedPredicted": "belli bir ücreti var mı limit artırmalarını kontrol ediyor musunuz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'artırmanın' to 'artırmalarını' at position 6",
+      "reason": "'artırmanın' (of increasing) is a noun form indicating the act of increasing, while 'artırmalarını' (their increases) refers to the increases themselves. This changes the grammatical structure but the overall meaning about limit increase is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'edebilir' to 'ediyor' at position 8",
+      "reason": "'edebilir' means 'can do' (possibility), while 'ediyor' means 'is doing' (present continuous). This changes the meaning from asking about the ability to do something to stating that it is being done, which affects the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

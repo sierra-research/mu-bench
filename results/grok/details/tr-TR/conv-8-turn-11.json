@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır, adımı sadece soyadımı söylediniz. Adımı söylemediniz. Ve emaili de yanlış söylediniz.",
+  "predicted": "Hayır, adımımı sadece soyadımı söylediniz, adımımı söylemediniz ve i̇mleği de yanlış söylediniz.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "hayır adımı sadece soyadımı söylediniz adımı söylemediniz ve emaili de yanlış söylediniz",
+  "werNormalizedPredicted": "hayır adımımı sadece soyadımı söylediniz adımımı söylemediniz ve imleği de yanlış söylediniz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "hayır adımı sadece soyadımı söylediniz adımı söylemediniz ve emaili de yanlış söylediniz",
+  "sigWerNormalizedPredicted": "hayır adımımı sadece soyadımı söylediniz adımımı söylemediniz ve imleği de yanlış söylediniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adımı' to 'adımımı' at position 1",
+      "reason": "The word 'adımı' (my name) was changed to 'adımımı' (my name - accusative with emphasis), which is a minor grammatical difference and does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'adımı' to 'adımımı' at position 5",
+      "reason": "Again, 'adımı' was changed to 'adımımı', which is a minor grammatical difference and does not affect the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'emaili' to 'imleği' at position 8",
+      "reason": "'emaili' (the email) was changed to 'imleği' (the cursor), which is a completely different word and changes the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Xác nhận đơn hàng.",
+  "predicted": "sách đơn hàng",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "xác nhận đơn hàng",
+  "werNormalizedPredicted": "sách đơn hàng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "xác nhận đơn hàng",
+  "sigWerNormalizedPredicted": "sách đơn hàng",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xác' to 'sách' at position 0",
+      "reason": "'xác nhận' means 'confirm', while 'sách' means 'book'; this substitution changes the meaning of the sentence significantly and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhận' at position 1",
+      "reason": "Omitting 'nhận' removes the verb 'confirm', further distorting the intended meaning of 'confirm order' to just 'book order', which is not coherent in this context.",
+      "score": 1
+    }
+  ]
+}

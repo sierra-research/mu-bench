@@ -1,0 +1,27 @@
+{
+  "gold": "君，君玲 at email dot com。",
+  "predicted": "Drinling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "君 君玲 at email dot com",
+  "werNormalizedPredicted": "drinling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drinling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drinling' at position 0",
+      "reason": "The expected transcription contains Chinese characters representing a name or identifier, while the actual transcription is a completely different word in English. This changes the identity and meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 1",
+      "reason": "A repeated character in the expected transcription is missing in the actual transcription, further altering the intended name or identifier. This is a significant error as it changes the identity.",
+      "score": 1
+    }
+  ]
+}

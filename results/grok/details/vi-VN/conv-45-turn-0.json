@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi là mất thẻ. Tuần trước, tôi có xin cấp lại thẻ. Không biết hiện tại tình trạng thẻ như thế nào?",
+  "predicted": "ờm, tôi làm mất thẻ, ờ, tuần trước có xin cấp lại thẻ, ờ, không biết hiện tại là tình trạng thẻ như thế nào.",
+  "unintelligible": false,
+  "wer": 0.13636363636363635,
+  "werEdits": 3,
+  "werRefWords": 22,
+  "werNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
+  "werNormalizedPredicted": "tôi làm mất thẻ tuần trước có xin cấp lại thẻ không biết hiện tại là tình trạng thẻ như thế nào",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "tôi là mất thẻ tuần trước tôi có xin cấp lại thẻ không biết hiện tại tình trạng thẻ như thế nào",
+  "sigWerNormalizedPredicted": "tôi làm mất thẻ tuần trước có xin cấp lại thẻ không biết hiện tại là tình trạng thẻ như thế nào",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'là' to 'làm' at position 1",
+      "reason": "'là' (to be) and 'làm' (to do/make) are different verbs; this changes the meaning of the sentence and could cause confusion about the action being described.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tôi' at position 6",
+      "reason": "Omitting 'tôi' (I) removes the subject from the second clause, but the sentence remains understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'là' at position 16",
+      "reason": "Inserting 'là' (to be) before 'tình trạng' is a minor grammatical error and does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

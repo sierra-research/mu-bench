@@ -1,0 +1,32 @@
+{
+  "gold": "Từ từ. Số điện thoại không chính xác. Số điện thoại nghe lại lần nữa nè. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "số, số, số, số, số điện thoại không phải chính xác, số điện thoại, nghe lại lần nữa nè, số điện thoại là cộng tám mươi bốn. chín một một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.14705882352941177,
+  "werEdits": 5,
+  "werRefWords": 34,
+  "werNormalizedGold": "từ từ số điện thoại không chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số số số số số điện thoại không phải chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 34,
+  "sigWerNormalizedGold": "từ từ số điện thoại không chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số số số số số điện thoại không phải chính xác số điện thoại nghe lại lần nữa nè số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'từ' to 'số' at position 0",
+      "reason": "'từ từ' means 'slowly' or 'wait', while 'số' means 'number'; this changes the intent of the sentence and removes the instruction to wait or slow down.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'số' at position 3",
+      "reason": "Multiple insertions of 'số' (number) at the beginning are repetitive and make the sentence incoherent, disrupting the original meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'phải' at position 6",
+      "reason": "Adding 'phải' (must) changes the phrase 'không chính xác' (not correct) to 'không phải chính xác' (not must correct), which is less natural but does not significantly change the overall meaning.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Thấy rồi. Bây giờ làm gì nữa?",
+  "predicted": "Hey, sorry, but I love you.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 7,
+  "werRefWords": 7,
+  "werNormalizedGold": "thấy rồi bây giờ làm gì nữa",
+  "werNormalizedPredicted": "hey sorry but i love you",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "thấy rồi bây giờ làm gì nữa",
+  "sigWerNormalizedPredicted": "hey sorry but i love you",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thấy' to 'hey' at position 0",
+      "reason": "The actual transcription is in a completely different language (English instead of Vietnamese), resulting in a total loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nữa' at position 6",
+      "reason": "The final word is missing and the actual sentence is in a different language, further derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

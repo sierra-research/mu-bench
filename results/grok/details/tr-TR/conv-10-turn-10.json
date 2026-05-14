@@ -1,0 +1,37 @@
+{
+  "gold": "Tabii. Z A Y N E P nokta A R S L A N at işareti, E M A İ L nokta C O M.",
+  "predicted": "Z a y n e t punto a r c l a n. Et işareti E M A I L nokta G O M",
+  "unintelligible": false,
+  "wer": 0.16,
+  "werEdits": 4,
+  "werRefWords": 25,
+  "werNormalizedGold": "tabii z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
+  "werNormalizedPredicted": "z a y n e t nokta a r c l a n at işareti e m a i l nokta g o m",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "tabii z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "z a y n e t nokta a r c l a n at işareti e m a i l nokta g o m",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'tabii' at position 0",
+      "reason": "'tabii' is a word at the start of the email address, likely part of a name or identifier. Its omission could cause confusion or incorrect identification of the email address, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'p' to 't' at position 6",
+      "reason": "This is a letter substitution in a spelled-out name (z a y n e p vs z a y n e t). A single letter difference in a spelled-out name changes the name entirely, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 's' to 'c' at position 10",
+      "reason": "This is a letter substitution in a spelled-out surname (a r s l a n vs a r c l a n). A single letter difference in a spelled-out surname changes the name, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'g' at position 22",
+      "reason": "This is a letter substitution in the domain (c o m vs g o m). Changing a single letter in a spelled-out domain changes the email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

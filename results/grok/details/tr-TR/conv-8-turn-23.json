@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır yine yanlış. Zeynep diyorsunuz halbuki adım Zaynep. Z'den sonra A harfi var. E harfi değil.",
+  "predicted": "Hayır, yine yanlış. Zeynep diyoruzsunuz, halbuki adım Zeynep. Z'den sonra A harfi var, E harfi değil.",
+  "unintelligible": false,
+  "wer": 0.23529411764705882,
+  "werEdits": 4,
+  "werRefWords": 17,
+  "werNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
+  "werNormalizedPredicted": "hayır yine yanlış zeynep diyoruzsunuz halbuki adım zeynep z'den sonra a harfi var e harfi değil",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "hayır yine yanlış zeynep diyorsunuz halbuki adım zaynep z den sonra a harfi var e harfi değil",
+  "sigWerNormalizedPredicted": "hayır yine yanlış zeynep diyoruzsunuz halbuki adım zeynep z'den sonra a harfi var e harfi değil",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'diyorsunuz' to 'diyoruzsunuz' at position 4",
+      "reason": "The word 'diyorsunuz' (you are saying) is misspelled as 'diyoruzsunuz', which is not a valid word in Turkish but still understandable in context. The meaning is not significantly changed, but it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 7",
+      "reason": "The name 'zaynep' is transcribed as 'zeynep'. The sentence is specifically about the difference between 'zeynep' and 'zaynep', so this substitution changes the intended meaning and causes confusion. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'den' at position 9",
+      "reason": "'den' (from) is omitted, but the meaning of the sentence is still understandable in context. This is a minor error.",
+      "score": 2
+    }
+  ]
+}

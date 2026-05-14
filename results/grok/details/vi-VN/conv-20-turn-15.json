@@ -1,0 +1,32 @@
+{
+  "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
+  "predicted": "Mình không đúng, mình chấm trần a cộng email chấm com.",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "mình không đúng mình chấm trần a cộng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "mình không đúng mình chấm trần a cộng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'mình' at position 0",
+      "reason": "The insertion of 'mình' at the beginning changes the subject and could confuse the meaning, but the overall intent of the sentence is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 2",
+      "reason": "The substitution adds a diacritic, which in Vietnamese changes the meaning of the word. However, in this context, it is likely a minor error as the intended meaning is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 6",
+      "reason": "'còng' is the Vietnamese word for the '@' symbol in email addresses, while 'cộng' means 'plus' or 'add'. This substitution makes the email address incorrect, which is a significant error as it changes the meaning and function of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Anna merhaba. Daha önce bir talebim olmuştu, onun için arıyorum. Şu ana kadar gerçekleşmedi çünkü.",
+  "predicted": "Anla merhaba daha önce bir talepim olmuştu onu da ilk defa arıyorum henüz şu ana kadar gerçekleşmedi çünkü.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 6,
+  "werRefWords": 15,
+  "werNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "werNormalizedPredicted": "anla merhaba daha önce bir talebim olmuştu onu da ilk defa arıyorum henüz şu ana kadar gerçekleşmedi çünkü",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "sigWerNormalizedPredicted": "anla merhaba daha önce bir talebim olmuştu onu da ilk defa arıyorum henüz şu ana kadar gerçekleşmedi çünkü",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'Anna' is a proper noun (likely a name), while 'anla' is a verb meaning 'understand' in Turkish. This changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'onun' to 'ilk' at position 7",
+      "reason": "The insertion of 'onu' ('it/him/her') adds a redundant pronoun, but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'henüz' at position 10",
+      "reason": "'Onun' means 'for it/him/her', while 'ilk' means 'first'. This substitution changes the context of the action, altering the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

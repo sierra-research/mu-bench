@@ -1,0 +1,32 @@
+{
+  "gold": "Số điện thoại chính xác là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "số điện thoại chính xác là 84 91 1234 563",
+  "unintelligible": false,
+  "wer": 0.15,
+  "werEdits": 3,
+  "werRefWords": 20,
+  "werNormalizedGold": "số điện thoại chính xác là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại chính xác là tám mươi bốn chín một một hai ba bốn năm sáu ba",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "số điện thoại chính xác là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại chính xác là tám mươi bốn chín một một hai ba bốn năm sáu ba",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'cộng' at position 6",
+      "reason": "'cộng' (meaning 'plus' or indicating the country code '+') is essential for the correct phone number format. Its omission changes the meaning and could result in dialing the wrong number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'bảy' to 'ba' at position 18",
+      "reason": "Substituting 'bảy' (7) with 'ba' (3) changes a digit in the phone number, which is a significant error as it leads to an incorrect phone number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tám' at position 19",
+      "reason": "Omitting the final digit 'tám' (8) results in an incomplete phone number, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

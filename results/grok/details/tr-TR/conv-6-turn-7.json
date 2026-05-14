@@ -1,0 +1,27 @@
+{
+  "gold": "Yedek kartımın ana karttan farkı nedir peki?",
+  "predicted": "Yedek kartın anakarttan farkı nedir peki?",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
+  "werNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
+  "sigWerNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartımın' to 'kartın' at position 1",
+      "reason": "The possessive suffix changes from 'my' (kartımın) to 'your' (kartın), which changes the meaning from 'my backup card' to 'your backup card'. This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'karttan' at position 3",
+      "reason": "'ana karttan' (from the main card) is merged into 'anakarttan' (from the motherboard), which changes the meaning from 'main card' to 'motherboard'. This is a significant error as it alters the subject of comparison.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
+  "predicted": "ờ xin chào tôi ờ đây là tôi làm bớt thầy á cái ờ tôi xin gặp thầy mới giờ muốn hỏi coi là ở hiện tại khi nào chúng mình có?",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 14,
+  "werRefWords": 21,
+  "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "werNormalizedPredicted": "xin chào tôi đây là tôi làm bớt thầy á cái tôi xin gặp thầy mới giờ muốn hỏi coi là ở hiện tại khi nào chúng mình có",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "sigWerNormalizedPredicted": "xin chào tôi đây là tôi làm bớt thầy á cái tôi xin gặp thầy mới giờ muốn hỏi coi là ở hiện tại khi nào chúng mình có",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'đây' at position 3",
+      "reason": "'đây' (here/this) is an extra word that does not change the overall meaning of the sentence, as it just adds a self-reference.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'mất' to 'á' at position 4",
+      "reason": "'bớt' (reduce) is an extra word that does not fit the context and could confuse the meaning, making the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cấp' to 'gặp' at position 8",
+      "reason": "'á' is a filler or interjection replacing 'mất' (lost), which is crucial to the meaning (losing the card). This changes the core meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'coi' at position 14",
+      "reason": "'cấp' (issue) is replaced by 'gặp' (meet), which changes the intent from requesting a new card to meeting someone, altering the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chuẩn' to 'chúng' at position 18",
+      "reason": "'coi' (see/check) is an extra word that does not significantly change the meaning of the question being asked.",
+      "score": 2
+    }
+  ]
+}

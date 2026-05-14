@@ -1,0 +1,32 @@
+{
+  "gold": "Teşekkür ederim. Email adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekstreye, işlem yapacağım. Tekrar eder misiniz email adresimi lütfen?",
+  "predicted": "Teşekkür ederim. Ee, e-posta adresimde bir hata yok değil mi? Çünkü acil olarak ihtiyacım var o ekşiri. İşlem yapacağım. Tekrar eder misiniz e-posta adresim lütfen?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 6,
+  "werRefWords": 24,
+  "werNormalizedGold": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
+  "werNormalizedPredicted": "teşekkür ederim e posta adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekşiri işlem yapacağım tekrar eder misiniz e posta adresim lütfen",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "teşekkür ederim email adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekstreye işlem yapacağım tekrar eder misiniz email adresimi lütfen",
+  "sigWerNormalizedPredicted": "teşekkür ederim e posta adresimde bir hata yok değil mi çünkü acil olarak ihtiyacım var o ekşiri işlem yapacağım tekrar eder misiniz e posta adresim lütfen",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'posta' at position 2",
+      "reason": "'e posta' is a common alternative to 'email' in Turkish; the insertion of 'e' does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ekstreye' to 'ekşiri' at position 15",
+      "reason": "'e posta' and 'email' are equivalent terms in Turkish, so this substitution does not affect the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'posta' at position 21",
+      "reason": "'ekşiri' is a misrecognition of 'ekstreye', which refers to a bank statement. The error makes the word unclear and could confuse the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

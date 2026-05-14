@@ -1,0 +1,32 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "predicted": "Ananın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "werNormalizedPredicted": "ananın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerNormalizedPredicted": "ananın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'ananın' at position 0",
+      "reason": "'ananın' is a different word in Turkish, meaning 'your mother's', which is inappropriate and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Mrs.'), and its omission makes the greeting less formal but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kartında' to 'kartımda' at position 5",
+      "reason": "'kartında' means 'on the card' (referring to someone else's card), while 'kartımda' means 'on my card'. This changes the subject of the sentence, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

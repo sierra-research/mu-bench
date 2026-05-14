@@ -1,0 +1,32 @@
+{
+  "gold": "Quisiera solicitar la extensión de una tarjeta, de crédito.",
+  "predicted": "Gracias por llamar, soy Ana, el asistente de IA en una línea grabada. ¿Cómo puedo ayudarte? Quiero solicitar la extensión de una tarjeta. de crédito.",
+  "unintelligible": false,
+  "wer": 2.111111111111111,
+  "werEdits": 19,
+  "werRefWords": 9,
+  "werNormalizedGold": "quisiera solicitar la extensión de una tarjeta de crédito",
+  "werNormalizedPredicted": "gracias por llamar soy ana el asistente de ia en una linea grabada como puedo ayudarte quiero solicitar la extension de una tarjeta de credito",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "quisiera solicitar la extensión de una tarjeta de crédito",
+  "sigWerNormalizedPredicted": "gracias por llamar soy ana el asistente de ia en una linea grabada como puedo ayudarte quiero solicitar la extension de una tarjeta de credito",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'quisiera' to 'quiero' at position 0",
+      "reason": "The insertion of a greeting and assistant introduction does not change the meaning of the main request; it is just extra context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'extensión' to 'extension' at position 3",
+      "reason": "'Quisiera' (I would like) is more polite than 'quiero' (I want), but the intent of requesting is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 8",
+      "reason": "The only difference is the accent mark, which does not affect meaning in this context.",
+      "score": 3
+    }
+  ]
+}

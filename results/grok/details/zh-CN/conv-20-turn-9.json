@@ -1,0 +1,27 @@
+{
+  "gold": "是美玲 at email dot com。",
+  "predicted": "Shu Meiling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是美玲 at email dot com",
+  "werNormalizedPredicted": "shu meiling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "shu meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shu' at position 0",
+      "reason": "'是' is a Chinese character meaning 'is', while 'shu' is a romanized syllable that does not correspond to the same meaning or sound. This changes the identity of the name and the meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "'玲' is part of the full name '美玲'. Omitting this character results in an incomplete or incorrect name, which is significant for identification, especially in an email address context.",
+      "score": 1
+    }
+  ]
+}

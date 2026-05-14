@@ -1,0 +1,27 @@
+{
+  "gold": "Es Juan López arroba arroba email punto com.",
+  "predicted": "Es juan juanlopez arroba arroba mail punto com.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "es juan lópez arroba arroba email punto com",
+  "werNormalizedPredicted": "es juan juanlopez arroba arroba mail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "es juan lópez arroba arroba email punto com",
+  "sigWerNormalizedPredicted": "es juan juanlopez arroba arroba mail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lópez' to 'juanlopez' at position 2",
+      "reason": "'juanlopez' combines the first name and last name into one word, which could cause confusion in an email address and is not the same as just the last name 'lópez'.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 5",
+      "reason": "'email' and 'mail' are similar, but in the context of an email address, 'email' is the correct domain and 'mail' could lead to a different or invalid address.",
+      "score": 2
+    }
+  ]
+}

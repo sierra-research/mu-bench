@@ -1,0 +1,22 @@
+{
+  "gold": "1 2 3 Main Street apartment 4, Anytown, California, 9 0 2 1 0.",
+  "predicted": "1 2 3 Main Street Apartment 4, Anytown, California 9 0 2 1 0. No.",
+  "unintelligible": false,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
+  "werRefWords": 14,
+  "werNormalizedGold": "one two three main street apartment four anytown california nine zero two one zero",
+  "werNormalizedPredicted": "one two three main street apartment four anytown california nine zero two one zero no",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "one two three main street apartment four anytown california nine zero two one zero",
+  "sigWerNormalizedPredicted": "one two three main street apartment four anytown california nine zero two one zero no",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'no' at position 14",
+      "reason": "The word 'no' is added at the end of the address, which could cause confusion or change the meaning, as it may be interpreted as part of the address or as a negation. This addition makes the address unclear or potentially incorrect.",
+      "score": 1
+    }
+  ]
+}

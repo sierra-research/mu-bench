@@ -1,0 +1,42 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi, o konuda bilgi verebilir misiniz acaba?",
+  "predicted": "Annan merhabalar, ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödedim mi, ödemedim mi, onu da bilgi verebilir misiniz acaba?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
+  "werRefWords": 21,
+  "werNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "werNormalizedPredicted": "annan merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödedim mi ödemedim mi onu da bilgi verebilir misiniz acaba",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "sigWerNormalizedPredicted": "annan merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödedim mi ödemedim mi onu da bilgi verebilir misiniz acaba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'annan' at position 0",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the intended name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'Hanım' is a polite form of address; omitting it makes the sentence less formal but does not change the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ödendi' to 'ödedim' at position 11",
+      "reason": "'Ödendi' means 'was it paid', 'ödedim' means 'did I pay'; this changes the meaning from asking about the bill's status to asking about the speaker's own action, which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ödenmedi' to 'ödemedim' at position 13",
+      "reason": "'Ödenmedi' means 'was it unpaid', 'ödemedim' means 'did I not pay'; again, this shifts the focus from the bill's status to the speaker's action, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'o' to 'onu' at position 15",
+      "reason": "'O' (that) and 'onu' (that/it as object) are very close in meaning in this context and do not change the overall meaning.",
+      "score": 3
+    }
+  ]
+}

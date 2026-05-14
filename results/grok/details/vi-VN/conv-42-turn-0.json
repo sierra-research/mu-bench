@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi muốn xin cấp thẻ mới. Muốn biết tình trạng thẻ như thế nào? Đã xin rồi.",
+  "predicted": "Tôi muốn là xin cấp thẻ mới, muốn biết cái tình trạng thẻ như thế nào, đã xin lỗi.",
+  "unintelligible": false,
+  "wer": 0.17647058823529413,
+  "werEdits": 3,
+  "werRefWords": 17,
+  "werNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
+  "werNormalizedPredicted": "tôi muốn là xin cấp thẻ mới muốn biết cái tình trạng thẻ như thế nào đã xin lỗi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "tôi muốn xin cấp thẻ mới muốn biết tình trạng thẻ như thế nào đã xin rồi",
+  "sigWerNormalizedPredicted": "tôi muốn là xin cấp thẻ mới muốn biết cái tình trạng thẻ như thế nào đã xin lỗi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'là' at position 2",
+      "reason": "'là' is a filler word here and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 8",
+      "reason": "'cái' is a classifier in Vietnamese and its presence does not alter the meaning of the sentence in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'rồi' to 'lỗi' at position 16",
+      "reason": "Substituting 'rồi' (already) with 'lỗi' (mistake) changes the meaning of the sentence significantly, making it incoherent in context.",
+      "score": 1
+    }
+  ]
+}

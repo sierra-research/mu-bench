@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
+  "predicted": "Hayır anne, itiraz etmek istediğim bir şey yok, sadece kredi kartı aylık harcama limiti arttırmak istiyorum.",
+  "unintelligible": false,
+  "wer": 0.3125,
+  "werEdits": 5,
+  "werRefWords": 16,
+  "werNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "werNormalizedPredicted": "hayır anne itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcama limiti arttırmak istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "sigWerNormalizedPredicted": "hayır anne itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcama limiti arttırmak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anne' at position 1",
+      "reason": "'Anna' and 'anne' are both proper nouns/names, but refer to different people. However, in Turkish, 'anne' means 'mother' and 'anna' is a name, so this changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'için' to 'istediğim' at position 4",
+      "reason": "'için' means 'for', while 'istediğim' means 'that I want'. This changes the structure and meaning of the sentence, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'limitimi' to 'limiti' at position 13",
+      "reason": "'limitimi' means 'my limit', while 'limiti' means 'the limit'. The possessive is lost, but the overall meaning is still understandable.",
+      "score": 2
+    }
+  ]
+}

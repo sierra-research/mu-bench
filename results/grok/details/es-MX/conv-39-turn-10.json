@@ -1,0 +1,27 @@
+{
+  "gold": "Sí, muy bien, este, entonces, tú me vas a enviar un correo, ¿verdad? O un mensaje a la aplicación del banco.",
+  "predicted": "Sí, muy bien, este, entonces, ¿tú me vas a enviar un correo o una, un mensaje en la aplicación del banco?",
+  "unintelligible": false,
+  "wer": 0.1,
+  "werEdits": 2,
+  "werRefWords": 20,
+  "werNormalizedGold": "sí muy bien entonces tú me vas a enviar un correo verdad o un mensaje a la aplicación del banco",
+  "werNormalizedPredicted": "sí muy bien entonces tú me vas a enviar un correo o un mensaje en la aplicación del banco",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "sí muy bien entonces tú me vas a enviar un correo verdad o un mensaje a la aplicación del banco",
+  "sigWerNormalizedPredicted": "sí muy bien entonces tú me vas a enviar un correo o un mensaje en la aplicación del banco",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'verdad' at position 11",
+      "reason": "Omitting 'verdad' (which means 'right?' or 'correct?') removes a confirmation or clarification request, but the main instruction remains clear. The overall meaning is mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'a' to 'en' at position 15",
+      "reason": "Changing 'a la aplicación del banco' (to the bank app) to 'en la aplicación del banco' (in the bank app) slightly alters the preposition, but the intent (sending a message via the bank app) is still clear and unchanged in context.",
+      "score": 3
+    }
+  ]
+}

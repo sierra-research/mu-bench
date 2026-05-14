@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "Drilling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "drilling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drilling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drilling' at position 0",
+      "reason": "'君' is a Chinese name, while 'drilling' is an unrelated English word. This substitution completely changes the meaning and identity, making the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "Omitting '玲', which is part of the name in the email address, results in an incomplete and incorrect email identity. This is a significant error as it makes the email address invalid for the intended recipient.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Chưa chính xác. Chính xác phải là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "chính xác phải là 84 9 1 1 2 3 4 5 6 7 8",
+  "unintelligible": false,
+  "wer": 0.19047619047619047,
+  "werEdits": 4,
+  "werRefWords": 21,
+  "werNormalizedGold": "chưa chính xác chính xác phải là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "chính xác phải là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "chưa chính xác chính xác phải là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "chính xác phải là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'chưa' at position 0",
+      "reason": "'chưa' means 'not yet' or 'incorrect', and its omission removes the initial negation or correction, which can change the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chính' at position 3",
+      "reason": "Omitting 'chính' from 'chính xác' (meaning 'correct') does not significantly change the meaning since 'chính xác' is still present elsewhere and the main message is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'cộng' at position 7",
+      "reason": "'cộng' means 'plus' or 'country code' in the context of phone numbers; omitting it can cause confusion about the format of the number, which is significant.",
+      "score": 1
+    }
+  ]
+}

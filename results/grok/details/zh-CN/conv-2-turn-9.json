@@ -1,0 +1,27 @@
+{
+  "gold": "你有什么问题呀，我说得很。",
+  "predicted": "有什么问题呀？我说的很",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "你有什么问题我说得很",
+  "werNormalizedPredicted": "有什么问题我说的很",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 我 说 得 很",
+  "sigWerNormalizedPredicted": "有 什 么 问 题 我 说 的 很",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '你' at position 0",
+      "reason": "Omitting the subject '你' (you) changes the sentence from addressing someone directly to a more general statement, which can significantly alter the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 8",
+      "reason": "'得' and '的' are different grammatical particles in Chinese; using '的' instead of '得' is a grammatical error but does not significantly change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Chưa phải. Số điện thoại là cộng 84 1 2. Xin đọc lại. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "chưa phải số điện thoại là cộng tám bốn một hai sợ sẽ đọc lại cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.13793103448275862,
+  "werEdits": 4,
+  "werRefWords": 29,
+  "werNormalizedGold": "chưa phải số điện thoại là cộng tám mươi bốn một hai xin đọc lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "chưa phải số điện thoại là cộng tám bốn một hai sợ sẽ đọc lại cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 29,
+  "sigWerNormalizedGold": "chưa phải số điện thoại là cộng tám mươi bốn một hai xin đọc lại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "chưa phải số điện thoại là cộng tám bốn một hai sợ sẽ đọc lại cộng tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'mươi' at position 8",
+      "reason": "'mươi' is part of the number 'tám mươi bốn' (eighty-four), deleting it changes the number to 'tám bốn' (eight four), which is a significant error in a phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'xin' to 'sẽ' at position 12",
+      "reason": "Inserting 'sợ' (afraid) introduces an unrelated word, making the sentence less coherent and changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 17",
+      "reason": "'xin đọc lại' (please read again) is replaced with 'sẽ đọc lại' (will read again), which is a minor change in politeness but does not derail the meaning.",
+      "score": 2
+    }
+  ]
+}

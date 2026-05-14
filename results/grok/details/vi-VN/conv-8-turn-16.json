@@ -1,0 +1,37 @@
+{
+  "gold": "Chưa. Số chính xác là 1 2 3 Lê Lợi, Hồ Chí Minh city, zip code 7 0 0 0 0 0, Việt Nam.",
+  "predicted": "số chính xác là 1 2 3 l lợi hồ chí minh city zip code 7 0 0 0 0 Vietnam",
+  "unintelligible": false,
+  "wer": 0.20833333333333334,
+  "werEdits": 5,
+  "werRefWords": 24,
+  "werNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
+  "werNormalizedPredicted": "số chính xác là một hai ba l lợi hồ chí minh city zip code bảy không không không không vietnam",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "chưa số chính xác là một hai ba lê lợi hồ chí minh city zip code bảy không không không không không việt nam",
+  "sigWerNormalizedPredicted": "số chính xác là một hai ba l lợi hồ chí minh city zip code bảy không không không không vietnam",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'chưa' at position 0",
+      "reason": "'chưa' is omitted, which may change the meaning of the sentence, as it indicates something is not yet done or confirmed.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lê' to 'l' at position 8",
+      "reason": "'lê' is a proper noun (part of a name), and reducing it to 'l' makes it unrecognizable as a name, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'không' to 'vietnam' at position 21",
+      "reason": "'không' (meaning 'zero' or 'no') is replaced with 'vietnam', which is a completely different word and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'việt' at position 22",
+      "reason": "Omitting 'việt' from 'việt nam' results in only 'nam' or 'vietnam', which is a minor error since 'vietnam' is still understandable as the country name.",
+      "score": 2
+    }
+  ]
+}

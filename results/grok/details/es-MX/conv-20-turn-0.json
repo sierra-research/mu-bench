@@ -1,0 +1,32 @@
+{
+  "gold": "Hola, este es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema, no no saqué el dinero pero si me lo descontó de mi cuenta.",
+  "predicted": "Hola, este, es que estoy en, estoy en el banco y, pues, estaba intentando sacar dinero del cajero pero hubo un problema, no, no saca el dinero, pero sí me lo descontó de mi cuenta.",
+  "unintelligible": false,
+  "wer": 0.12903225806451613,
+  "werEdits": 4,
+  "werRefWords": 31,
+  "werNormalizedGold": "hola es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saqué el dinero pero si me lo descontó de mi cuenta",
+  "werNormalizedPredicted": "hola es que estoy en estoy en el banco y pues estaba intentando sacar dinero del cajero pero hubo un problema no no saca el dinero pero si me lo descontó de mi cuenta",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 31,
+  "sigWerNormalizedGold": "hola es que estoy en el banco y estaba intentando sacar dinero del cajero pero hubo un problema no no saqué el dinero pero si me lo descontó de mi cuenta",
+  "sigWerNormalizedPredicted": "hola es que estoy en estoy en el banco y pues estaba intentando sacar dinero del cajero pero hubo un problema no no saca el dinero pero si me lo descontó de mi cuenta",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'estoy' at position 5",
+      "reason": "Repeating 'estoy en' does not change the overall meaning, just adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'pues' at position 8",
+      "reason": "Adding 'pues' is a filler word and does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'saqué' to 'saca' at position 20",
+      "reason": "'Saqué' (I withdrew) vs 'saca' (he/she/it withdraws or you withdraw) changes the subject and meaning of the action, which can confuse the listener about who performed the action.",
+      "score": 1
+    }
+  ]
+}

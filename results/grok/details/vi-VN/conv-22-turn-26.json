@@ -1,0 +1,27 @@
+{
+  "gold": "Xin chào.",
+  "predicted": "Yeah.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "xin chào",
+  "werNormalizedPredicted": "yeah",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "xin chào",
+  "sigWerNormalizedPredicted": "yeah",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xin' to 'yeah' at position 0",
+      "reason": "'yeah' is an English affirmation, while 'xin' is part of a Vietnamese greeting. The meaning is completely different and the language is changed.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chào' at position 1",
+      "reason": "'chào' is missing from the actual transcription, which removes the greeting aspect of the sentence and further derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

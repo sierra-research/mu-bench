@@ -1,0 +1,27 @@
+{
+  "gold": "林美 at E M A I L 点 C O M。",
+  "predicted": "Linmei I E M A I L point C O M.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "林美 at e m a i l 点 c o m",
+  "werNormalizedPredicted": "linmei i e m a i l 点 c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "林 美 at e m a i l 点 c o m",
+  "sigWerNormalizedPredicted": "linmei i e m a i l 点 c o m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'linmei' at position 0",
+      "reason": "The Chinese characters '林 美' are replaced with the pinyin 'linmei'. While the meaning is preserved for someone who understands both, the script is different and could cause confusion, especially in contexts where the exact script matters (e.g., email addresses or names).",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "The word 'at' is replaced with the letter 'i', which changes the structure of the email address and makes it incorrect. This is a significant error as it affects the ability to use the email address correctly.",
+      "score": 1
+    }
+  ]
+}

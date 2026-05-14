@@ -1,0 +1,37 @@
+{
+  "gold": "Evet, ben hesap ekstresi istiyorum. Bana 2023 yılının hesap ekstresini gönderir misin?",
+  "predicted": "Evet, vadesi bitti istiyorum. Bana 2024'ün vadesi isteyin, gönderebilir misin?",
+  "unintelligible": false,
+  "wer": 0.5333333333333333,
+  "werEdits": 8,
+  "werRefWords": 15,
+  "werNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
+  "werNormalizedPredicted": "evet vadesi bitti istiyorum bana iki bin yirmi dördün vadesi isteyin gönderebilir misin",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet ben hesap ekstresi istiyorum bana iki bin yirmi üç yılının hesap ekstresini gönderir misin",
+  "sigWerNormalizedPredicted": "evet vadesi bitti istiyorum bana iki bin yirmi dördün vadesi isteyin gönderebilir misin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ben' to 'vadesi' at position 1",
+      "reason": "'ben' means 'I', while 'vadesi' means 'its maturity'. This changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ekstresi' at position 3",
+      "reason": "'ekstresi' (statement) is omitted, which removes the key object of the request and makes the sentence less clear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'üç' to 'dördün' at position 9",
+      "reason": "'üç' means 'three' and 'dördün' means 'of four', changing the year from 2023 to 2024, which is a significant factual error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'gönderir' at position 13",
+      "reason": "'gönderir' (send) is omitted, which affects the clarity of the request but the intent is still somewhat understandable due to 'gönderebilir misin' (can you send).",
+      "score": 2
+    }
+  ]
+}

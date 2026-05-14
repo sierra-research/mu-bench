@@ -1,0 +1,27 @@
+{
+  "gold": "Email là minh trần at Gmail chấm com.",
+  "predicted": "Email là minhtran at gmail dot com.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "email là minh trần at gmail chấm com",
+  "werNormalizedPredicted": "email là minhtran at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "email là minh trần at gmail chấm com",
+  "sigWerNormalizedPredicted": "email là minhtran at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'minhtran' at position 2",
+      "reason": "The actual transcript merged 'minh' and 'trần' into one word 'minhtran', which could cause confusion in an email address, as it changes the intended username. This is a significant error because it could result in an incorrect or undeliverable email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 3",
+      "reason": "The word 'trần' is missing as a separate component, which is important for the correct spelling of the email address. Omitting part of a name in an email address is a significant error.",
+      "score": 1
+    }
+  ]
+}

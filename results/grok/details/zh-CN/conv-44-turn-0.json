@@ -1,0 +1,27 @@
+{
+  "gold": "想提高我的信用卡额度。",
+  "predicted": "I want to change my credit card number.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 10,
+  "werRefWords": 10,
+  "werNormalizedGold": "想提高我的信用卡额度",
+  "werNormalizedPredicted": "i want to change my credit card number",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "i want to change my credit card number",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '想' to 'i' at position 0",
+      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), which is a significant error as it completely changes the meaning and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '额' at position 8",
+      "reason": "infra_error",
+      "score": 2
+    }
+  ]
+}

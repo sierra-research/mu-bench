@@ -1,0 +1,27 @@
+{
+  "gold": "Email chính xác là minh chấm trần a còng email chấm com.",
+  "predicted": "Email chính xác là minh chấm trần a cộng email chấm cơm.",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "email chính xác là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email chính xác là minh chấm trần a cộng email chấm cơm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "email chính xác là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email chính xác là minh chấm trần a cộng email chấm cơm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 8",
+      "reason": "'còng' is the Vietnamese word for the '@' symbol in email addresses, while 'cộng' means 'plus' and is incorrect in this context. This changes the meaning and makes the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'cơm' at position 11",
+      "reason": "'com' is the domain suffix in an email address, while 'cơm' means 'rice' in Vietnamese. This substitution makes the email address invalid and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

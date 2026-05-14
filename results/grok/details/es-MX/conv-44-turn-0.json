@@ -1,0 +1,27 @@
+{
+  "gold": "Hola quiero saber si este cómo.",
+  "predicted": "No, la quiero saber si, este, cómo",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "hola quiero saber si cómo",
+  "werNormalizedPredicted": "no la quiero saber si como",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "hola quiero saber si cómo",
+  "sigWerNormalizedPredicted": "no la quiero saber si como",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hola' to 'la' at position 0",
+      "reason": "The insertion of 'no' changes the meaning of the sentence from a greeting and a question to a negative statement, which significantly alters the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cómo' to 'como' at position 4",
+      "reason": "'hola' is a greeting, while 'la' is an article; this substitution removes the greeting and makes the sentence less coherent.",
+      "score": 1
+    }
+  ]
+}

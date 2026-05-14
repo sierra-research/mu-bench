@@ -1,0 +1,27 @@
+{
+  "gold": "Evet, evet doğrudur.",
+  "predicted": "Igen, igaz.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 3,
+  "werRefWords": 3,
+  "werNormalizedGold": "evet evet doğrudur",
+  "werNormalizedPredicted": "igen igaz",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "evet evet doğrudur",
+  "sigWerNormalizedPredicted": "igen igaz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'evet' to 'igen' at position 0",
+      "reason": "'evet' is Turkish for 'yes', while 'igen' is Hungarian for 'yes'. The languages are different, which makes the transcription incoherent for the expected language.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'doğrudur' at position 2",
+      "reason": "'doğrudur' means 'it is correct' in Turkish and is missing in the actual transcription, which omits a key part of the meaning.",
+      "score": 1
+    }
+  ]
+}

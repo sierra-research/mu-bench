@@ -1,0 +1,27 @@
+{
+  "gold": "C N 7 1 8.",
+  "predicted": "Xin 718.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n bảy một tám",
+  "werNormalizedPredicted": "xin bảy một tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n bảy một tám",
+  "sigWerNormalizedPredicted": "xin bảy một tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'xin' at position 0",
+      "reason": "'c' is a letter, while 'xin' is a word meaning 'please' in Vietnamese; this changes the meaning of the sequence significantly, especially if these are meant to be spelled-out letters or codes.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Missing the letter 'n' in a sequence of letters/numbers can change the intended code or information, making it a significant error.",
+      "score": 1
+    }
+  ]
+}

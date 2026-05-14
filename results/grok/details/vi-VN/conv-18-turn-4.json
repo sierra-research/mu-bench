@@ -1,0 +1,27 @@
+{
+  "gold": "Email là thu chấm trần a còng Gmail chấm com.",
+  "predicted": "Email là thu chom trần a g mail chom com",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
+  "werNormalizedPredicted": "email là thu chom trần a g mail chom com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "email là thu chom trần a g mail chom com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'chom' at position 3",
+      "reason": "'chấm' means 'dot' in Vietnamese email addresses, while 'chom' is a mispronunciation but still recognizable in context as 'dot'. The meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'còng' to 'g' at position 6",
+      "reason": "'còng' means 'at' (the '@' symbol) in Vietnamese, but 'g' alone is not correct and could confuse the listener about the email address. This is a significant error as it affects the ability to reconstruct the email address.",
+      "score": 1
+    }
+  ]
+}

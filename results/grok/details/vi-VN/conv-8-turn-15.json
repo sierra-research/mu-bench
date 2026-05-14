@@ -1,0 +1,32 @@
+{
+  "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
+  "predicted": "Chương đầu tiên là một hai ba đường lề lối Hồ Chí Minh City, Zip Code là bảy trăm nghìn, Việt Nam.",
+  "unintelligible": false,
+  "wer": 0.2608695652173913,
+  "werEdits": 6,
+  "werRefWords": 23,
+  "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "chương đầu tiên là một hai ba đường lề lối hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chương đầu tiên là một hai ba đường lề lối hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chưa' to 'chương' at position 0",
+      "reason": "'chưa' means 'not yet' or 'incomplete', while 'chương' means 'chapter'. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'phải' at position 3",
+      "reason": "'phải' means 'must' or 'should', and its omission changes the intent of the sentence, making it less clear or altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lê' to 'lề' at position 9",
+      "reason": "'lê' is a proper noun (a street name), while 'lề' means 'sidewalk' or 'edge'. This changes the address and could cause confusion, but the context of an address remains, so it's a minor error.",
+      "score": 2
+    }
+  ]
+}

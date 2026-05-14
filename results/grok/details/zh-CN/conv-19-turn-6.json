@@ -1,0 +1,27 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mailion at email dot com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailion at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailion at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailion' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an unrelated English-sounding word. This completely changes the identity and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A character from the expected name is missing in the actual transcription, resulting in a significant loss of information and incorrect identification.",
+      "score": 1
+    }
+  ]
+}

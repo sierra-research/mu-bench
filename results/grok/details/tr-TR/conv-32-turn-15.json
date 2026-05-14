@@ -1,0 +1,32 @@
+{
+  "gold": "Peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire? Belki de çalındı. Kapatsak daha iyi olmaz mı kredi kartımı?",
+  "predicted": "Peki, bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire, belki de çalındı, kapatsak daha iyi olur, ne yapayım kredi kartıma?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 5,
+  "werRefWords": 20,
+  "werNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
+  "werNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire belki de çalındı kapatsak daha iyi olur ne yapayım kredi kartıma",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
+  "sigWerNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire belki de çalındı kapatsak daha iyi olur ne yapayım kredi kartıma",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'çalınmışsa' to 'çalınırsa' at position 8",
+      "reason": "'Çalınmışsa' means 'if it has been stolen', while 'çalınırsa' means 'if it gets stolen'. The tense/aspect is different, but the overall intent of the sentence remains the same.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'olmaz' to 'ne' at position 16",
+      "reason": "The insertion of 'olur' ('would be better') instead of 'olmaz mı' ('wouldn't it be better') changes the polarity of the question, which can alter the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kartımı' to 'kartıma' at position 19",
+      "reason": "'Olmaz' ('wouldn't it be') is replaced by 'ne' ('what'), which disrupts the meaning and coherence of the sentence.",
+      "score": 1
+    }
+  ]
+}

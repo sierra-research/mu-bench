@@ -1,0 +1,27 @@
+{
+  "gold": "我的邮箱地址是 美玲 at email dot com。",
+  "predicted": "我的邮箱地址是 meiling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的邮箱地址是 美玲 at email dot com",
+  "werNormalizedPredicted": "我的邮箱地址是 meiling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 7",
+      "reason": "The expected transcription uses the Chinese character '美', while the actual uses the full pinyin 'meiling'. This is a minor error because the meaning is preserved and the name is still recognizable, just in a different script.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "The character '玲' is omitted in the actual transcription, which could lead to confusion about the correct name. Since this is a proper noun and a part of the name is missing, it is a significant error.",
+      "score": 1
+    }
+  ]
+}

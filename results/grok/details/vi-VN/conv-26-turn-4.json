@@ -1,0 +1,27 @@
+{
+  "gold": "Số điện thoại bị sai rồi. Số điện thoại của mình là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.07692307692307693,
+  "werEdits": 2,
+  "werRefWords": 26,
+  "werNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 26,
+  "sigWerNormalizedGold": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại bị sai rồi số điện thoại của mình là cộng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 14",
+      "reason": "'tám mươi bốn' (84) is a standard way to say 'eighty-four' in Vietnamese phone numbers, while 'tám tư' is a colloquial shortcut for the same number. The meaning is preserved, but the formality and clarity are reduced.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bốn' at position 15",
+      "reason": "In the phrase 'tám mươi bốn', 'bốn' is part of the number 84. In the actual, 'tám tư' is used as a colloquial equivalent for 84, so the deletion of 'bốn' is not a true omission but a result of the substitution. The intended number is still clear.",
+      "score": 2
+    }
+  ]
+}

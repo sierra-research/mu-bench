@@ -1,0 +1,32 @@
+{
+  "gold": "Merhaba, faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba?",
+  "predicted": "Merhaba, fotomun bir kopyasına ihtiyacım vardı, yardımcı olabilir misiniz acaba?",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "merhaba faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba",
+  "werNormalizedPredicted": "merhaba fotomun bir kopyasına ihtiyacım vardı yardımcı olabilir misiniz acaba",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "merhaba faturamın bir kopyasına ihtiyacım var da yardımcı olabilir misiniz acaba",
+  "sigWerNormalizedPredicted": "merhaba fotomun bir kopyasına ihtiyacım vardı yardımcı olabilir misiniz acaba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'faturamın' to 'fotomun' at position 1",
+      "reason": "'faturamın' means 'my bill', while 'fotomun' means 'my photo'. This changes the object being requested and alters the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'var' to 'vardı' at position 5",
+      "reason": "'var' means 'there is/are', present tense, while 'vardı' means 'there was', past tense. This is a minor tense change and does not significantly alter the request.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'da' at position 6",
+      "reason": "'da' is a discourse particle here, softening the request. Its omission does not change the core meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

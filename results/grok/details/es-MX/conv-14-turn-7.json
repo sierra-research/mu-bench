@@ -1,0 +1,32 @@
+{
+  "gold": "Sí. El correo es María punto López arroba email punto com.",
+  "predicted": "Sí, el correo es maria punto lopez arroba mi punto com.",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "sí el correo es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "sí el correo es maria punto lopez arroba mi punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "sí el correo es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "sí el correo es maria punto lopez arroba mi punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 4",
+      "reason": "Missing accent on 'í' in 'maría', but the name is still clearly recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 6",
+      "reason": "Missing accent on 'ó' in 'lópez', but the surname is still clearly recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'mi' at position 8",
+      "reason": "'email' is replaced with 'mi', which changes the email address and makes it invalid, significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

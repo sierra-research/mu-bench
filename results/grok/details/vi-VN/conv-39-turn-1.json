@@ -1,0 +1,32 @@
+{
+  "gold": "Ừ. Cảm ơn bạn. Bạn xem lại hộ mình nhá.",
+  "predicted": "Cảm ơn bạn, bạn sẽ hại mình đấy.",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "cảm ơn bạn bạn xem lại hộ mình nhá",
+  "werNormalizedPredicted": "cảm ơn bạn bạn sẽ hại mình đấy",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "cảm ơn bạn bạn xem lại hộ mình nhá",
+  "sigWerNormalizedPredicted": "cảm ơn bạn bạn sẽ hại mình đấy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'xem' to 'sẽ' at position 4",
+      "reason": "'xem lại hộ mình nhá' means 'please check again for me', while 'sẽ hại mình đấy' means 'will harm me'. This substitution changes the intent from a polite request to a warning, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hộ' at position 6",
+      "reason": "Omitting 'hộ' (which means 'for' or 'help') removes the sense of asking for help, further changing the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhá' to 'đấy' at position 8",
+      "reason": "'nhá' is a softener or polite particle, while 'đấy' is an emphatic particle. In this context, the substitution contributes to the change from a polite request to a warning, which is a significant shift in tone and meaning.",
+      "score": 1
+    }
+  ]
+}

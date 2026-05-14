@@ -1,0 +1,27 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mailing em email dot com",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailing em email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing em email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an unrelated English word. This completely changes the meaning and identity of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "The omission of 'at' in an email address format makes the address unclear and incorrect, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
+}

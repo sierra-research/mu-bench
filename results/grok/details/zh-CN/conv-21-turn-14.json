@@ -1,0 +1,27 @@
+{
+  "gold": "林美 at email 点 com。",
+  "predicted": "linmei at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "林美 at email 点 com",
+  "werNormalizedPredicted": "linmei at email 点 com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "林 美 at email 点 com",
+  "sigWerNormalizedPredicted": "linmei at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'linmei' at position 0",
+      "reason": "'林' is a single Chinese character, while 'linmei' is a romanized form that combines both '林' and '美'. This substitution merges two distinct elements into one, which could cause confusion, especially in contexts like names or email addresses. However, the intended meaning (the name '林美') is still somewhat recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "'美' is missing in the actual transcription, as it was merged into 'linmei'. This could lead to issues in contexts where the distinction between '林' and '美' is important, such as in email addresses or names. However, since 'linmei' still represents the full name, the overall meaning is preserved.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Yok, teşekkür ederim, iyi günler dilerim.",
+  "predicted": "Yok, teşekkür ederim, ilgilenirlerim.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "yok teşekkür ederim iyi günler dilerim",
+  "werNormalizedPredicted": "yok teşekkür ederim ilgilenirlerim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "yok teşekkür ederim iyi günler dilerim",
+  "sigWerNormalizedPredicted": "yok teşekkür ederim ilgilenirlerim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'ilgilenirlerim' at position 3",
+      "reason": "'iyi' means 'good', while 'ilgilenirlerim' means 'they would be interested in me' or 'I would be interested in them', which is a completely different meaning and derails the intended polite closing of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'günler' at position 4",
+      "reason": "'günler' means 'days' and is part of the phrase 'iyi günler' ('good days' or 'have a nice day'), so omitting it removes the standard polite phrase and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

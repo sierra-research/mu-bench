@@ -1,0 +1,32 @@
+{
+  "gold": "Ama pardon, telefon numarası yanlış oldu. Telefon numaramızı tekrar söyler misin? Telefon numarasını. Veya ben bir daha söyleyeyim isterseniz.",
+  "predicted": "Ama pardon, telefon numaramız yanlış oldu. Telefon numaramızı tekrar söyler misiniz telefon numarası? Veya ben bir daha söyleyeyim isterseniz.",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
+  "werRefWords": 19,
+  "werNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
+  "werNormalizedPredicted": "ama pardon telefon numaramız yanlış oldu telefon numaramızı tekrar söyler misiniz telefon numarası veya ben bir daha söyleyeyim isterseniz",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "ama pardon telefon numarası yanlış oldu telefon numaramızı tekrar söyler misin telefon numarasını veya ben bir daha söyleyeyim isterseniz",
+  "sigWerNormalizedPredicted": "ama pardon telefon numaramız yanlış oldu telefon numaramızı tekrar söyler misiniz telefon numarası veya ben bir daha söyleyeyim isterseniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'numarası' to 'numaramız' at position 3",
+      "reason": "'numarası' (his/her/their number) vs 'numaramız' (our number) changes the subject from third person to first person plural, but in context, the sentence is about correcting a phone number and both refer to the relevant phone number. The meaning is only slightly affected.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'misin' to 'misiniz' at position 10",
+      "reason": "'misin' is informal singular, 'misiniz' is formal/plural. The meaning (asking someone to repeat) is unchanged, only the level of formality is different.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'numarasını' to 'numarası' at position 12",
+      "reason": "'numarasını' (his/her/their number - accusative) vs 'numarası' (his/her/their number - nominative). The accusative case is more grammatically correct here, but the meaning is clear and unchanged.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Cảm ơn.",
+  "predicted": "Okay, Cameroon.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
+  "werRefWords": 3,
+  "werNormalizedGold": "okay cảm ơn",
+  "werNormalizedPredicted": "okay cameroon",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "okay cảm ơn",
+  "sigWerNormalizedPredicted": "okay cameroon",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cảm' to 'cameroon' at position 1",
+      "reason": "'cảm' is a Vietnamese word meaning 'thank', while 'cameroon' is an unrelated English word (a country name), making the sentence incoherent and changing the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ơn' at position 2",
+      "reason": "'ơn' is part of the phrase 'cảm ơn' which means 'thank you' in Vietnamese. Its omission further removes the intended meaning of gratitude from the sentence.",
+      "score": 1
+    }
+  ]
+}

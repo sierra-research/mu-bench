@@ -1,0 +1,37 @@
+{
+  "gold": "Tôi muốn được tại vì tuần trước tôi làm mất thẻ, tôi có xin lại rồi mà giờ chưa thấy thông báo gì hết, nên tôi muốn coi tình trạng nó như thế nào.",
+  "predicted": "ờm tôi muốn được ờm tại vì tuần trước tôi làm mất thẻ ờm tôi có xin lại rồi nhưng mà hiện tại chưa thấy ờm không báo gì hết nên muốn coi tình trạng nó như thế nào",
+  "unintelligible": false,
+  "wer": 0.14705882352941177,
+  "werEdits": 5,
+  "werRefWords": 34,
+  "werNormalizedGold": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi mà giờ chưa thấy thông báo gì hết nên tôi muốn coi tình trạng nó như thế nào",
+  "werNormalizedPredicted": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi nhưng mà hiện tại chưa thấy không báo gì hết nên muốn coi tình trạng nó như thế nào",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 34,
+  "sigWerNormalizedGold": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi mà giờ chưa thấy thông báo gì hết nên tôi muốn coi tình trạng nó như thế nào",
+  "sigWerNormalizedPredicted": "tôi muốn được tại vì tuần trước tôi làm mất thẻ tôi có xin lại rồi nhưng mà hiện tại chưa thấy không báo gì hết nên muốn coi tình trạng nó như thế nào",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nhưng' at position 16",
+      "reason": "'nhưng' (but) introduces a contrast that was not present in the original sentence, but the overall intent of the sentence remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'giờ' to 'tại' at position 17",
+      "reason": "'hiện' (current/present) adds a temporal clarification, but does not change the main meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thông' to 'không' at position 20",
+      "reason": "'giờ' (now) was replaced by 'tại' (at), which in this context is part of the phrase 'hiện tại' (currently). The meaning is preserved, just a different way to express time.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'tôi' at position 25",
+      "reason": "'thông báo' (notification) was changed to 'không báo' (no notification), which alters the meaning significantly, as it changes from 'notification' to 'no notification'.",
+      "score": 1
+    }
+  ]
+}

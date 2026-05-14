@@ -1,0 +1,42 @@
+{
+  "gold": "Đúng rồi. Nhưng mà email là trần minh. Nhầm. Nói lại. Email là minh chấm trần a còng email chấm com.",
+  "predicted": "đúng rồi email là nhưng mà email là trần minh nhầm nó lại nó lại email là minh chấm trần a cộng email chấm cơm",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 7,
+  "werRefWords": 21,
+  "werNormalizedGold": "đúng rồi nhưng mà email là trần minh nhầm nói lại email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "đúng rồi email là nhưng mà email là trần minh nhầm nó lại nó lại email là minh chấm trần a cộng email chấm cơm",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "đúng rồi nhưng mà email là trần minh nhầm nói lại email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "đúng rồi email là nhưng mà email là trần minh nhầm nó lại nó lại email là minh chấm trần a cộng email chấm cơm",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'email' at position 2",
+      "reason": "The extra 'email' does not change the meaning of the sentence, as it is just a repetition and does not derail the overall message.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'nói' to 'nó' at position 9",
+      "reason": "'nói lại' means 'repeat', while 'nó lại' is not meaningful in this context and makes the sentence less clear, potentially confusing the listener.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'nó' at position 11",
+      "reason": "The repeated 'nó lại' further confuses the sentence, making it less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 17",
+      "reason": "'a còng' is the Vietnamese way to say '@' in an email address, while 'a cộng' is incorrect and could cause misunderstanding in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'cơm' at position 20",
+      "reason": "'com' is the correct ending for an email domain, while 'cơm' means 'rice' and is a significant error in the context of an email address.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
+  "predicted": "M 5 2 5 5 1 2 3 4 5 6 7 8.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 5,
+  "werRefWords": 15,
+  "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "m cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "m cinco dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'más' to 'm' at position 0",
+      "reason": "'más' is a word meaning 'plus' or 'more', while 'm' is just a letter and does not convey the same meaning. This changes the meaning of the sentence, especially in the context of a phone number or code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 2",
+      "reason": "The conjunction 'y' (meaning 'and') is omitted, but in the context of reading out numbers, its omission does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cincuenta' to 'cinco' at position 4",
+      "reason": "'cincuenta' means 'fifty' and 'cinco' means 'five'. Substituting fifty for five is a significant numerical error and changes the meaning of the sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'y' at position 5",
+      "reason": "Again, the omission of 'y' (and) in a numeric sequence is a minor error and does not significantly affect the overall meaning.",
+      "score": 2
+    }
+  ]
+}

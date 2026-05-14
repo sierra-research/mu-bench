@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır teşekkür ederim. Daha sonra ararım Anna.",
+  "predicted": "Hayır, teşekkür ederim, daha sonra aramama.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "hayır teşekkür ederim daha sonra ararım anna",
+  "werNormalizedPredicted": "hayır teşekkür ederim daha sonra aramama",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "hayır teşekkür ederim daha sonra ararım anna",
+  "sigWerNormalizedPredicted": "hayır teşekkür ederim daha sonra aramama",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ararım' to 'aramama' at position 5",
+      "reason": "'Ararım' means 'I will call', while 'aramama' means 'my not calling' or 'not to call'. This changes the intent of the sentence from a future action to a negation, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'anna' at position 6",
+      "reason": "The name 'anna' is omitted, which removes the addressee or the person being referred to, making the sentence incomplete and changing its meaning.",
+      "score": 1
+    }
+  ]
+}

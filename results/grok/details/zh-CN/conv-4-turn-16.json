@@ -1,0 +1,27 @@
+{
+  "gold": "君灵，君灵。",
+  "predicted": "Drilling, drilling.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "君灵 君灵",
+  "werNormalizedPredicted": "drilling drilling",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "君 灵 君 灵",
+  "sigWerNormalizedPredicted": "drilling drilling",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drilling' at position 0",
+      "reason": "The expected word is a Chinese character, but the actual transcription is an unrelated English word. This is a language mismatch and a complete change of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 2",
+      "reason": "The expected repetition of the Chinese character is missing in the actual transcription, which further derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

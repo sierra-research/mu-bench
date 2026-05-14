@@ -1,0 +1,27 @@
+{
+  "gold": "Số điện là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "số điện thoại là 84 9 1 1 2 3 4 5 6 7 8",
+  "unintelligible": false,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
+  "werRefWords": 17,
+  "werNormalizedGold": "số điện là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "số điện là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'thoại' at position 2",
+      "reason": "'thoại' changes the phrase from 'số điện' (electric number) to 'số điện thoại' (phone number), which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cộng' at position 3",
+      "reason": "Omitting 'cộng' (plus) removes the country code indicator from the phone number, which is important for dialing internationally. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

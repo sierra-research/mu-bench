@@ -1,0 +1,32 @@
+{
+  "gold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
+  "predicted": "No, si ayúdenme déjame encuentre un lugar para notar.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "no sí ayúdeme deja que encuentre un lugar para anotar",
+  "werNormalizedPredicted": "no si ayudenme dejame encuentre un lugar para notar",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "no sí ayúdeme deja que encuentre un lugar para anotar",
+  "sigWerNormalizedPredicted": "no si ayudenme dejame encuentre un lugar para notar",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'si' at position 1",
+      "reason": "'sí' with accent means 'yes', while 'si' without accent means 'if'; in this context, the intended meaning is 'yes', so the lack of accent is a minor error as it does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'que' at position 4",
+      "reason": "Omitting 'que' ('that') makes the sentence less grammatically correct but the meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'anotar' to 'notar' at position 9",
+      "reason": "'anotar' means 'to write down' or 'to note', 'notar' means 'to notice'; this changes the action being requested and alters the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gold": "Hayır tamamen yanlış kaydettin. Tekrar söyleyeceğim Anna. Tekrar söylüyorum, dinle. Artı 90 123 0 90 45 67.",
+  "predicted": "Hayır, tamamen yanlış söyledin. Tekrar söyleyeyim onu, tekrar söyleyeyim dinle. 69 123 090 45 67.",
+  "unintelligible": false,
+  "wer": 0.3181818181818182,
+  "werEdits": 7,
+  "werRefWords": 22,
+  "werNormalizedGold": "hayır tamamen yanlış kaydettin tekrar söyleyeceğim anna tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "hayır tamamen yanlış söyledin tekrar söyleyeyim onu tekrar söyleyeyim dinle altmış dokuz yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "hayır tamamen yanlış kaydettin tekrar söyleyeceğim anna tekrar söylüyorum dinle artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır tamamen yanlış söyledin tekrar söyleyeyim onu tekrar söyleyeyim dinle altmış dokuz yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kaydettin' to 'söyledin' at position 3",
+      "reason": "'kaydettin' means 'you recorded', while 'söyledin' means 'you said'; this changes the action being described and alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'söyleyeceğim' to 'söyleyeyim' at position 5",
+      "reason": "'söyleyeceğim' means 'I will say', while 'söyleyeyim' means 'let me say'; this is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'söylüyorum' to 'söyleyeyim' at position 8",
+      "reason": "'söylüyorum' means 'I am saying', while 'söyleyeyim' means 'let me say'; this is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'artı' to 'altmış' at position 10",
+      "reason": "'artı' means 'plus' (as in the country code '+'), while 'altmış' means 'sixty'; this changes the phone number or code being communicated, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 12",
+      "reason": "Omitting 'bir' (one) from a sequence of numbers (likely a phone number) changes the number entirely, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Anna, kredi kartımın limitini artırmak istiyorum.",
+  "predicted": "Anla, kredi kartımda limiti artırmak istiyorum.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
+  "werNormalizedPredicted": "anla kredi kartımda limiti artırmak istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
+  "sigWerNormalizedPredicted": "anla kredi kartımda limiti artırmak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'Anna' is a proper noun (likely a name), while 'anla' is a verb in Turkish meaning 'understand'. This substitution changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kartımın' to 'kartımda' at position 2",
+      "reason": "'Kartımın' means 'of my card' (possessive), while 'kartımda' means 'on my card' (locative). This changes the grammatical relationship but the overall intent (about the credit card limit) is still understandable.",
+      "score": 2
+    }
+  ]
+}

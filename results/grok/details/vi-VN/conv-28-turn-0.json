@@ -1,0 +1,32 @@
+{
+  "gold": "Xin chào Anna. Mình đang có một chút rắc rối với giấy tờ tài chính. Mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty, mà tìm mãi không thấy. Bạn giúp mình với.",
+  "predicted": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sau kê tháng trước để nộp cho công ty mà tiền mãi không thấy bạn giúp mình rồi",
+  "unintelligible": false,
+  "wer": 0.07692307692307693,
+  "werEdits": 3,
+  "werRefWords": 39,
+  "werNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
+  "werNormalizedPredicted": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sau kê tháng trước để nộp cho công ty mà tiền mãi không thấy bạn giúp mình rồi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 39,
+  "sigWerNormalizedGold": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sao kê tháng trước để nộp cho công ty mà tìm mãi không thấy bạn giúp mình với",
+  "sigWerNormalizedPredicted": "xin chào anna mình đang có một chút rắc rối với giấy tờ tài chính mình đang cần gấp bản sao sau kê tháng trước để nộp cho công ty mà tiền mãi không thấy bạn giúp mình rồi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sao' to 'sau' at position 21",
+      "reason": "'Sao kê' is a fixed phrase meaning 'bank statement' in Vietnamese. 'Sau kê' is not a valid phrase and changes the meaning, making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tìm' to 'tiền' at position 31",
+      "reason": "'Tìm mãi không thấy' means 'searched for a long time but couldn't find it', while 'tiền mãi không thấy' means 'money couldn't be found for a long time', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'với' to 'rồi' at position 38",
+      "reason": "'Bạn giúp mình với' is a request for help, while 'bạn giúp mình rồi' means 'you already helped me', which changes the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

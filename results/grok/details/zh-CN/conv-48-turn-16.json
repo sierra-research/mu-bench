@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。已经说了几次。",
+  "predicted": "drilling at email dot com 已经说了几次",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "君玲 at email dot com 已经说了几次",
+  "werNormalizedPredicted": "drilling at email dot com 已经说了几次",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "君 玲 at email dot com 已 经 说 了 几 次",
+  "sigWerNormalizedPredicted": "drilling at email dot com 已 经 说 了 几 次",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drilling' at position 0",
+      "reason": "'君' is a Chinese name, while 'drilling' is an unrelated English word. This substitution completely changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name '君玲'. Its omission results in an incomplete or incorrect name, which is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
+}

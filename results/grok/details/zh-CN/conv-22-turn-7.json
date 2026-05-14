@@ -1,0 +1,27 @@
+{
+  "gold": "C N 4 8 2。",
+  "predicted": "C M 4 8 R.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n 四 八 二",
+  "werNormalizedPredicted": "c m 四 八 r",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n 四 八 二",
+  "sigWerNormalizedPredicted": "c m 四 八 r",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'n' to 'm' at position 1",
+      "reason": "'n' and 'm' are different letters in a sequence, which could be a code or spelled-out word. This changes the intended sequence and could cause misunderstanding.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '二' to 'r' at position 4",
+      "reason": "'二' is the Chinese character for 'two', while 'r' is a Latin letter. This is a significant error as it changes the meaning and disrupts the sequence.",
+      "score": 1
+    }
+  ]
+}

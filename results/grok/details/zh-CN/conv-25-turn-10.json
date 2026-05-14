@@ -1,0 +1,37 @@
+{
+  "gold": "不对的，不对！是美玲 at email dot com。",
+  "predicted": "部队的部队是 maylin at email dot com.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 6,
+  "werRefWords": 12,
+  "werNormalizedGold": "不对的不对 是美玲 at email dot com",
+  "werNormalizedPredicted": "部队的部队是 maylin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "不 对 的 不 对 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "部 队 的 部 队 是 maylin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '部' at position 0",
+      "reason": "'不' (not) and '部' (department/troop) are completely different words in Chinese, changing the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '不' to '部' at position 3",
+      "reason": "Repeats the same significant error as above, again changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to 'maylin' at position 6",
+      "reason": "'美' is a Chinese character (meaning 'beautiful' or part of a name), while 'maylin' is an English transliteration. If the intended name is '美玲' (Mei Ling), 'maylin' is a possible romanization, but only partially matches and omits the second character.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 7",
+      "reason": "Omitting '玲' from the name '美玲' (Mei Ling) results in an incomplete or incorrect name, which is significant for names.",
+      "score": 1
+    }
+  ]
+}

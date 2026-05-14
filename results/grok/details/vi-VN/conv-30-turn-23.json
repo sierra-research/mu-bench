@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Đợi tôi một xíu.",
+  "predicted": "Okay, don't worry.",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 4,
+  "werRefWords": 5,
+  "werNormalizedGold": "okay đợi tôi một xíu",
+  "werNormalizedPredicted": "okay do not worry",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "okay đợi tôi một xíu",
+  "sigWerNormalizedPredicted": "okay do not worry",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đợi' to 'do' at position 1",
+      "reason": "'đợi' means 'wait' in Vietnamese, while 'do' is an English verb with a completely different meaning. The substitution changes the language and the meaning of the sentence, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'xíu' at position 4",
+      "reason": "'tôi một xíu' means 'me a moment' (i.e., 'wait for me a moment'), while 'not worry' is an English phrase with a different meaning. This substitution changes both the language and the intent of the sentence, resulting in a significant error.",
+      "score": 1
+    }
+  ]
+}

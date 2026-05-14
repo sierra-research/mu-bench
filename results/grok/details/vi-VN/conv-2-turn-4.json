@@ -1,0 +1,27 @@
+{
+  "gold": "C N 2 3 3.",
+  "predicted": "Shit, no. Hi, Baba.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n hai ba ba",
+  "werNormalizedPredicted": "shit no hi baba",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n hai ba ba",
+  "sigWerNormalizedPredicted": "shit no hi baba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'shit' at position 0",
+      "reason": "'c' is a single letter, likely part of a spelled-out sequence, while 'shit' is a completely different word with unrelated meaning. This substitution makes the sentence incoherent and changes the meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ba' at position 4",
+      "reason": "The expected sequence ends with 'ba ba', but the actual only has one 'baba'. Missing a 'ba' in a spelled-out or repeated sequence can change the intended meaning or code, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

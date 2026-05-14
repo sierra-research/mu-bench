@@ -1,0 +1,27 @@
+{
+  "gold": "C N 4 1 3。",
+  "predicted": "C N S Eason.",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n 四 一 三",
+  "werNormalizedPredicted": "c n s eason",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n 四 一 三",
+  "sigWerNormalizedPredicted": "c n s eason",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '四' to 's' at position 2",
+      "reason": "'四' is the Chinese character for 'four', while 's' is an unrelated English letter. This substitution changes the meaning and makes the sequence incorrect, especially in a context where each character is significant (such as a code or identifier).",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '三' at position 4",
+      "reason": "'三' is the Chinese character for 'three', and its omission means the sequence is incomplete and incorrect, which is significant in contexts like codes or identifiers.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "是君玲 at email dot com。",
+  "predicted": "Shu dreamling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是君玲 at email dot com",
+  "werNormalizedPredicted": "shu dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "shu dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shu' at position 0",
+      "reason": "The expected word is in Chinese ('是'), but the actual is an English-sounding word ('shu'), which is a significant language and meaning mismatch.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "A part of the name ('玲') is missing in the actual transcription, which is significant for names and email addresses.",
+      "score": 1
+    }
+  ]
+}

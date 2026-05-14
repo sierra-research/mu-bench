@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
+  "predicted": "Hayır, gmail, e-mail, e-mail numaraya gideceksin, e-mail dot com.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "werNormalizedPredicted": "hayır gmail email email numaraya gideceksin email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "sigWerNormalizedPredicted": "hayır gmail email email numaraya gideceksin email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'değil' at position 2",
+      "reason": "'değil' means 'not', and its omission changes the meaning from 'not gmail' to possibly 'gmail', which significantly alters the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'olarak' to 'numaraya' at position 5",
+      "reason": "'olarak' means 'as' or 'in the form of', while 'numaraya' means 'to the number'; this substitution changes the instruction and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 8",
+      "reason": "'nokta' and 'dot' are direct translations of each other (Turkish and English), so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

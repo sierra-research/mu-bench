@@ -1,0 +1,37 @@
+{
+  "gold": "E-posta adresime erişimim şu sıralar yok da, yani farklı bir metot var mı acaba bana fatura göndermeniz için?",
+  "predicted": "Ya Apple sadece mehdişme istiyorlar yok da, yani farklı bir metod var mı acaba bana fotoğraf göndermen için?",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 9,
+  "werRefWords": 18,
+  "werNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "werNormalizedPredicted": "apple sadece mehdişme istiyorlar yok da farklı bir metod var mı acaba bana fotoğraf göndermen için",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "e posta adresime erişimim şu sıralar yok da farklı bir metot var mı acaba bana fatura göndermeniz için",
+  "sigWerNormalizedPredicted": "apple sadece mehdişme istiyorlar yok da farklı bir metod var mı acaba bana fotoğraf göndermen için",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'apple' at position 0",
+      "reason": "'e' is the start of 'e posta' (email), while 'apple' is a completely unrelated word and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'şu' at position 4",
+      "reason": "Omitting 'şu' (meaning 'these' or 'currently') slightly changes the nuance but does not significantly alter the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'metot' to 'metod' at position 10",
+      "reason": "'metot' and 'metod' are spelling variants of the same word in Turkish, meaning 'method'.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'fatura' to 'fotoğraf' at position 15",
+      "reason": "'fatura' means 'invoice' and 'fotoğraf' means 'photograph'; this substitution completely changes the meaning of what is to be sent.",
+      "score": 1
+    }
+  ]
+}

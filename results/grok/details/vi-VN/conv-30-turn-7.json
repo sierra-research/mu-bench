@@ -1,0 +1,32 @@
+{
+  "gold": "Số điện thoại đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "số điện thoại đầy đủ là tổng tám tư chín một một hai ba bốn năm sáu bảy tám.",
+  "unintelligible": false,
+  "wer": 0.15,
+  "werEdits": 3,
+  "werRefWords": 20,
+  "werNormalizedGold": "số điện thoại đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại đầy đủ là tổng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "số điện thoại đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại đầy đủ là tổng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'tổng' at position 6",
+      "reason": "'Cộng' (meaning 'plus' or 'country code') is standard for indicating the international dialing code, while 'tổng' means 'total' and is not used in this context. This substitution makes the sentence confusing and incorrect for a phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 8",
+      "reason": "'Tám mươi bốn' means 'eighty-four' (the country code for Vietnam), while 'tám tư' means 'eighty-four' in spoken Vietnamese. This is a minor difference in formality and does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bốn' at position 9",
+      "reason": "In the expected, 'tám mươi bốn' is a single number (84), but in the actual, 'tám tư' is used instead, so 'bốn' is not needed. This deletion is a result of the previous substitution and does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

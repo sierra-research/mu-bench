@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Đợi tôi xíu nhé.",
+  "predicted": "Okay, that does it.",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 4,
+  "werRefWords": 5,
+  "werNormalizedGold": "okay đợi tôi xíu nhé",
+  "werNormalizedPredicted": "okay that does it",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "okay đợi tôi xíu nhé",
+  "sigWerNormalizedPredicted": "okay that does it",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đợi' to 'that' at position 1",
+      "reason": "'đợi' (Vietnamese for 'wait') is replaced with 'that' (English), which is a different language and changes the meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nhé' at position 4",
+      "reason": "The Vietnamese phrase 'tôi xíu nhé' (meaning 'wait for me a bit, okay?') is replaced with 'does it' in English, which is a different language and unrelated meaning, derailing the sentence.",
+      "score": 1
+    }
+  ]
+}

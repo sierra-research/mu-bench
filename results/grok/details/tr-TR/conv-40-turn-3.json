@@ -1,0 +1,27 @@
+{
+  "gold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "predicted": "Çiçek aracılığıyla alamadım, not alamadım.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "werNormalizedPredicted": "çiçek aracılığıyla alamadım not alamadım",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "sigWerNormalizedPredicted": "çiçek aracılığıyla alamadım not alamadım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'siz' to 'çiçek' at position 0",
+      "reason": "'siz' means 'you' and 'çiçek' means 'flower' in Turkish; this is a completely different word and changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'edin' at position 2",
+      "reason": "'edin' is a verb meaning 'do' or 'make', and its omission further derails the intended meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

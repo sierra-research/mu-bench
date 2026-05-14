@@ -1,0 +1,27 @@
+{
+  "gold": "林梅 at email dot com。",
+  "predicted": "linmei at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "林梅 at email dot com",
+  "werNormalizedPredicted": "linmei at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "林 梅 at email dot com",
+  "sigWerNormalizedPredicted": "linmei at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to 'linmei' at position 0",
+      "reason": "The Chinese character '林' was replaced with the pinyin 'linmei', which combines both expected characters into one romanized form. This changes the representation from Chinese characters to pinyin and merges two names into one, which could cause confusion or loss of information, especially in contexts where the exact characters are important (e.g., names, emails).",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '梅' at position 1",
+      "reason": "The character '梅' is missing in the actual transcription, as it was merged into 'linmei'. This omission further reduces the accuracy of the transcription, as both characters are needed to represent the full name correctly.",
+      "score": 1
+    }
+  ]
+}

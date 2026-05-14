@@ -1,0 +1,27 @@
+{
+  "gold": "Yazıyor musun? Artı 90 123.",
+  "predicted": "Yazıyor musun? Artı doksan yüz yirmi.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "werNormalizedPredicted": "yazıyor musun artı doksan yüz yirmi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "sigWerNormalizedPredicted": "yazıyor musun artı doksan yüz yirmi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 4",
+      "reason": "'bir iki üç' means 'one two three', but 'yüz yirmi' means 'one hundred twenty', which is a completely different number sequence and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'üç' at position 6",
+      "reason": "Omitting 'üç' (three) from the number sequence changes the intended number, resulting in a significant error in meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không?",
+  "predicted": "tôi muốn hỏi là cái sau kê này tôi có in ra bản giấy có được không?",
+  "unintelligible": false,
+  "wer": 0.11764705882352941,
+  "werEdits": 2,
+  "werRefWords": 17,
+  "werNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
+  "werNormalizedPredicted": "tôi muốn hỏi là cái sau kê này tôi có in ra bản giấy có được không",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "tôi muốn hỏi là cái sao kê này tôi muốn in ra bản giấy có được không",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi là cái sau kê này tôi có in ra bản giấy có được không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sao' to 'sau' at position 5",
+      "reason": "'sao kê' (bank statement) is a fixed term in Vietnamese; 'sau kê' is not meaningful and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'muốn' to 'có' at position 9",
+      "reason": "Changing 'muốn' (want) to 'có' (have) alters the intent of the sentence from expressing a desire to asking about possibility, which changes the meaning.",
+      "score": 1
+    }
+  ]
+}

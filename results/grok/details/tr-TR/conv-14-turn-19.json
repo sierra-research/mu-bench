@@ -1,0 +1,27 @@
+{
+  "gold": "Yani, özellikle telefon numarasında çok hata var, diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış. Tekrar söylüyorum telefon numarasını. Artı 90 123 0 90 45 67.",
+  "predicted": "özellikle telefon numarası çok hata var diğerlerinde birer hata var ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan 123 0 90 45 67.",
+  "unintelligible": false,
+  "wer": 0.1724137931034483,
+  "werEdits": 5,
+  "werRefWords": 29,
+  "werNormalizedGold": "özellikle telefon numarasında çok hata var diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "özellikle telefon numarası çok hata var diğerlerinde birer hata var ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 29,
+  "sigWerNormalizedGold": "özellikle telefon numarasında çok hata var diğerlerini bilemem ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "özellikle telefon numarası çok hata var diğerlerinde birer hata var ama telefon numarası tamamen neredeyse yanlış tekrar söylüyorum telefon numarasını artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'numarasında' to 'numarası' at position 2",
+      "reason": "'numarasında' means 'in the phone number', while 'numarası' means 'phone number'. The meaning is slightly changed but the overall context is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'diğerlerini' to 'hata' at position 6",
+      "reason": "The phrase 'diğerlerinde birer hata var' (there is one error in the others) adds information not present in the expected transcript, but does not derail the overall meaning.",
+      "score": 2
+    }
+  ]
+}

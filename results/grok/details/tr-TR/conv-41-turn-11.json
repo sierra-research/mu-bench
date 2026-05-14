@@ -1,0 +1,27 @@
+{
+  "gold": "Tamam, dinlersen söyleyeceğim Anna. Artı 90 123 0 90 45 67.",
+  "predicted": "Tamam dinlensin paylaşacağım ondan. 6. 90 100. 23 0. 90 45. 67.",
+  "unintelligible": false,
+  "wer": 0.3125,
+  "werEdits": 5,
+  "werRefWords": 16,
+  "werNormalizedGold": "tamam dinlersen söyleyeceğim anna artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tamam dinlensin paylaşacağım ondan altı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "tamam dinlersen söyleyeceğim anna artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tamam dinlensin paylaşacağım ondan altı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dinlersen' to 'dinlensin' at position 1",
+      "reason": "'dinlersen' means 'if you listen', while 'dinlensin' means 'let it be listened'; this changes the subject and intent, but the overall context is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 6",
+      "reason": "Omitting 'bir' (one) from a sequence of numbers (likely a phone number) is a significant error as it changes the actual number.",
+      "score": 1
+    }
+  ]
+}

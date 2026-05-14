@@ -1,0 +1,32 @@
+{
+  "gold": "Không. Không phải. Đúng là minh chấm trần a còng email chấm com.",
+  "predicted": "không không không phải đúng là minh chấm trần a cộng email chấm cơ",
+  "unintelligible": false,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không không không phải đúng là minh chấm trần a cộng email chấm cơ",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "không không phải đúng là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "không không không phải đúng là minh chấm trần a cộng email chấm cơ",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'không' at position 2",
+      "reason": "The extra 'không' (no) introduces a double negative, which could confuse the meaning of the sentence, making it less clear whether the statement is affirmative or negative.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 9",
+      "reason": "'Còng' is the Vietnamese word for the '@' symbol in email addresses, while 'cộng' means 'plus' or 'add'. Using 'cộng' instead of 'còng' makes the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'cơ' at position 12",
+      "reason": "'Com' is the correct ending for an email domain ('.com'), while 'cơ' is a different word and makes the email address invalid.",
+      "score": 1
+    }
+  ]
+}

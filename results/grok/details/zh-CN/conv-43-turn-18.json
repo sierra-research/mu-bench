@@ -1,0 +1,27 @@
+{
+  "gold": "精玲 at email dot com。",
+  "predicted": "Dinling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "精玲 at email dot com",
+  "werNormalizedPredicted": "dinling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "精 玲 at email dot com",
+  "sigWerNormalizedPredicted": "dinling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '精' to 'dinling' at position 0",
+      "reason": "The expected word '精' (a Chinese character) was replaced with 'dinling', which is a completely different word and not a transliteration or translation. This changes the identity in the email address, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The character '玲' is missing from the actual transcription, which alters the intended email address and could result in a failed communication. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "不是邻居，是林俊。",
+  "predicted": "不似邻居，是邻郡。",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "不是邻居 是林俊",
+  "werNormalizedPredicted": "不似邻居 是邻郡",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "不 是 邻 居 是 林 俊",
+  "sigWerNormalizedPredicted": "不 似 邻 居 是 邻 郡",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to '似' at position 1",
+      "reason": "'是' means 'is/are', while '似' means 'like/similar to'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '邻' at position 5",
+      "reason": "'林' is a surname (Lin), while '邻' means 'neighbor'; this changes a person's name to a common noun, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

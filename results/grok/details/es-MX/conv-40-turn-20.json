@@ -1,0 +1,27 @@
+{
+  "gold": "No. ¿Entonces me puedes transferir con algún agente?",
+  "predicted": "No, entonces me pudieras transferir con algún agente.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "número entonces me puedes transferir con algún agente",
+  "werNormalizedPredicted": "no entonces me pudieras transferir con algún agente",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "número entonces me puedes transferir con algún agente",
+  "sigWerNormalizedPredicted": "no entonces me pudieras transferir con algún agente",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) and 'no' (no) are completely different words and change the meaning of the sentence significantly. The request for a number is replaced by a negation, which derails the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'puedes' to 'pudieras' at position 3",
+      "reason": "'puedes' (you can) and 'pudieras' (you could) are different verb forms but the meaning in context is very similar and does not change the intent of the sentence.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "predicted": "Yanısa posta adresim yanlış oldu. Sonu gmail değil, email. Yani e edirnen nesiyle, email nokta com.",
+  "unintelligible": false,
+  "wer": 0.3157894736842105,
+  "werEdits": 6,
+  "werRefWords": 19,
+  "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "werNormalizedPredicted": "yanısa posta adresim yanlış oldu sonu gmail değil email yani e edirnen nesiyle email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "sigWerNormalizedPredicted": "yanısa posta adresim yanlış oldu sonu gmail değil email yani e edirnen nesiyle email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yalnız' to 'yanısa' at position 0",
+      "reason": "'yalnız' means 'only' or 'just', while 'yanısa' is not a valid word in Turkish and does not convey the intended meaning, making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'e' at position 1",
+      "reason": "Missing 'e' in 'e posta' (email) changes the meaning, as 'posta' alone means 'mail' and not specifically 'email'.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'edirnenin' to 'edirnen' at position 12",
+      "reason": "Minor truncation of the word 'edirnenin' (of Edirne), but the meaning is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'si' at position 14",
+      "reason": "Missing 'si' in 'e si' (the 'e' of Edirne) makes the spelling instruction incomplete, which can cause confusion in understanding the email address.",
+      "score": 1
+    }
+  ]
+}

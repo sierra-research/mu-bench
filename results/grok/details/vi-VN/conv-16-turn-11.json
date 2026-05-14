@@ -1,0 +1,37 @@
+{
+  "gold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
+  "predicted": "tôi muốn xem là thể hiện tại khía cạnh nào thì mới có thể đạt được",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
+  "werRefWords": 12,
+  "werNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "werNormalizedPredicted": "tôi muốn xem là thể hiện tại khía cạnh nào thì mới có thể đạt được",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "sigWerNormalizedPredicted": "tôi muốn xem là thể hiện tại khía cạnh nào thì mới có thể đạt được",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thẻ' to 'thể' at position 3",
+      "reason": "The word 'là' introduces a new clause and changes the sentence structure, but does not significantly alter the overall intent.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'chừng' to 'cạnh' at position 6",
+      "reason": "'Thẻ' (card) and 'thể' (form/can) are completely different words in Vietnamese, changing the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'thì' at position 8",
+      "reason": "The insertion of 'khía' (aspect) shifts the topic from asking about a card to discussing an aspect, which changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cái' to 'đạt' at position 10",
+      "reason": "'Chừng' (when/about) and 'cạnh' (aspect/side) are unrelated, causing a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

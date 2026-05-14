@@ -1,0 +1,27 @@
+{
+  "gold": "我的邮箱是林梅 at email 点 com。",
+  "predicted": "My email is Lin Mei at email dot com.",
+  "unintelligible": false,
+  "wer": 0.6363636363636364,
+  "werEdits": 7,
+  "werRefWords": 11,
+  "werNormalizedGold": "我的邮箱是林梅 at email 点 com",
+  "werNormalizedPredicted": "my email is lin mei at email 点 com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 的 邮 箱 是 林 梅 at email 点 com",
+  "sigWerNormalizedPredicted": "my email is lin mei at email 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to 'my' at position 0",
+      "reason": "The language switched from Chinese ('我') to English ('my'), which is a significant change and indicates a different language was used. This is a major error as per the guidelines.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '林' at position 5",
+      "reason": "'林' is transliterated to 'lin', which is a correct representation of the name. No error here.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "是美玲 at email dot com。",
+  "predicted": "Sure, mayling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是美玲 at email dot com",
+  "werNormalizedPredicted": "sure mayling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "sure mayling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'sure' at position 0",
+      "reason": "'是' is a Chinese character meaning 'is', while 'sure' is an English word with a different meaning. This substitution changes the language and the meaning, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "'玲' is omitted in the actual transcription. Since 'mayling' could be an attempt to represent both '美玲', this omission is minor if the name is still recognizable, but if strict accuracy is required, it is a minor error.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Phương thức thanh toán.",
+  "predicted": "công thức tính toán",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "phương thức thanh toán",
+  "werNormalizedPredicted": "công thức tính toán",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "phương thức thanh toán",
+  "sigWerNormalizedPredicted": "công thức tính toán",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'phương' to 'công' at position 0",
+      "reason": "'phương thức thanh toán' means 'payment method', while 'công thức tính toán' means 'calculation formula'. The substitution changes the meaning of the entire phrase, making it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'thanh' to 'tính' at position 2",
+      "reason": "The word 'thanh' (in 'thanh toán' meaning 'payment') is replaced with 'tính' (in 'tính toán' meaning 'calculation'), which changes the meaning of the phrase from 'payment' to 'calculation', significantly altering the intended meaning.",
+      "score": 1
+    }
+  ]
+}

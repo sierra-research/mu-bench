@@ -1,0 +1,37 @@
+{
+  "gold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
+  "predicted": "Hayır, tekrar baştan söylüyorum. Yazarsın. Artı doksan tekrar düğüm.",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
+  "werRefWords": 11,
+  "werNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "werNormalizedPredicted": "hayır tekrar baştan söylüyorum yazarsın artı doksan tekrar düğüm",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "sigWerNormalizedPredicted": "hayır tekrar baştan söylüyorum yazarsın artı doksan tekrar düğüm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yazar' to 'yazarsın' at position 4",
+      "reason": "'yazar' (write) and 'yazarsın' (you write) are closely related; the meaning is only slightly changed, as the sentence is still a request or command to write.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'mısın' at position 5",
+      "reason": "Omitting 'mısın' (are you) removes the question form, changing the sentence from a polite request to a command, but the overall intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dinle' to 'düğüm' at position 9",
+      "reason": "'dinle' means 'listen', while 'düğüm' means 'knot'; this substitution makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'beni' at position 10",
+      "reason": "Omitting 'beni' (me) removes the object of the verb 'listen', making the sentence incomplete and less clear.",
+      "score": 2
+    }
+  ]
+}

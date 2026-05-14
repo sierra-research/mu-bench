@@ -1,0 +1,42 @@
+{
+  "gold": "Ha bu arada, kapatmadan önce şeyi soracağım. Fatura ne zaman e-posta adresime ulaşacak?",
+  "predicted": "A bu arada kapattan önce şeyi soracağım, fotoğraf ne zaman Apple sitesine ulaşacak?",
+  "unintelligible": false,
+  "wer": 0.46153846153846156,
+  "werEdits": 6,
+  "werRefWords": 13,
+  "werNormalizedGold": "ha bu arada kapatmadan önce soracağım fatura ne zaman e posta adresime ulaşacak",
+  "werNormalizedPredicted": "a bu arada kapattan önce soracağım fotoğraf ne zaman apple sitesine ulaşacak",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "ha bu arada kapatmadan önce soracağım fatura ne zaman e posta adresime ulaşacak",
+  "sigWerNormalizedPredicted": "a bu arada kapattan önce soracağım fotoğraf ne zaman apple sitesine ulaşacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ha' to 'a' at position 0",
+      "reason": "'ha' is an interjection or filler, while 'a' is also a filler; this does not affect the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'kapatmadan' to 'kapattan' at position 3",
+      "reason": "'kapatmadan' means 'before closing', while 'kapattan' is not a standard word but could be interpreted as 'from the one who closes'; this changes the meaning slightly but the context is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'fatura' to 'fotoğraf' at position 6",
+      "reason": "'fatura' means 'invoice', 'fotoğraf' means 'photograph'; this is a significant change that completely alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'e' to 'apple' at position 9",
+      "reason": "'e' is the preposition 'to' in Turkish, while 'apple' is a brand name; this substitution changes the recipient of the action and alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'adresime' at position 11",
+      "reason": "'adresime' means 'to my address', and its omission removes important information about where the item is being sent.",
+      "score": 1
+    }
+  ]
+}

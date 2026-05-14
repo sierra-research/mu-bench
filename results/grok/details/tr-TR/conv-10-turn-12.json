@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır email ve telefon numarası yanlış. Emailde adımın son harfi P olacak. T değil, P. Zaynep, P.",
+  "predicted": "Hayır, e-mail ve telefon numarası yanlış. E-mail'de adımın son harfi T olacak, değil, T. Zeynep T.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
+  "werRefWords": 17,
+  "werNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
+  "werNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi t olacak değil t zeynep t",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "hayır email ve telefon numarası yanlış emailde adımın son harfi p olacak t değil p zaynep p",
+  "sigWerNormalizedPredicted": "hayır email ve telefon numarası yanlış emailde adımın son harfi t olacak değil t zeynep t",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'p' to 't' at position 10",
+      "reason": "The expected letter for the last character of the name is 'p', but 't' was given instead. This is a significant error because it changes the correct spelling of the name, which is critical for email addresses and identification.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 't' at position 12",
+      "reason": "The expected phrase 't değil p' (not t, p) is replaced with just 'değil t', omitting the clarification that the correct letter is 'p'. This omission leads to confusion about the correct letter, which is significant in this context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'p' to 't' at position 14",
+      "reason": "The final confirmation of the correct letter is 'p', but 't' is given instead. This is a significant error as it confirms the wrong letter, which can cause major issues in communication or data entry.",
+      "score": 1
+    }
+  ]
+}

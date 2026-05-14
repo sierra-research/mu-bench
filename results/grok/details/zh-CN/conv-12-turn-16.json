@@ -1,0 +1,27 @@
+{
+  "gold": "君，君，君灵，at email dot com。",
+  "predicted": "Drewndrewndrewenling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "君 君 君灵 at email dot com",
+  "werNormalizedPredicted": "drewndrewndrewenling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "君 君 君 灵 at email dot com",
+  "sigWerNormalizedPredicted": "drewndrewndrewenling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drewndrewndrewenling' at position 0",
+      "reason": "The expected word is a Chinese character, but the actual transcription is a completely different string in English, which changes the meaning entirely and makes the email address unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 1",
+      "reason": "A repeated character in the expected email address is missing in the actual transcription, which significantly alters the intended email address and makes it incorrect.",
+      "score": 1
+    }
+  ]
+}

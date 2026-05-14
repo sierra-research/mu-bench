@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "Joonling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "joonling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "joonling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'joonling' at position 0",
+      "reason": "'君' is a Chinese name, while 'joonling' is a romanized name that does not directly correspond to '君'. This changes the identity of the person and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of '玲', which is part of the full name, results in an incomplete and incorrect representation of the person's name. This is a significant error as it changes the identity.",
+      "score": 1
+    }
+  ]
+}

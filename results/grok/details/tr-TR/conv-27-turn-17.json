@@ -1,0 +1,37 @@
+{
+  "gold": "Z, tamam kodluyorum, baştan başlıyorum. Z A Y N E P nokta A R S L A N at E M A İ L nokta C O M.",
+  "predicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r c l a n e at m a i l ノッカ c o m",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 4,
+  "werRefWords": 28,
+  "werNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at e m a i l nokta c o m",
+  "werNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r c l a n e at m a i l ノッカ c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 28,
+  "sigWerNormalizedGold": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r s l a n at e m a i l nokta c o m",
+  "sigWerNormalizedPredicted": "z tamam kodluyorum baştan başlıyorum z a y n e p nokta a r c l a n e at m a i l ノッカ c o m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'c' at position 14",
+      "reason": "In a spelled-out proper noun (arslan), substituting 's' with 'c' changes the spelling and could result in a different name or an unrecognizable word.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'e' at position 18",
+      "reason": "An extra 'e' in the spelled-out sequence (arslane) changes the spelling of the name, which is significant for names and email addresses.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'e' at position 19",
+      "reason": "Omitting the 'e' from the expected sequence (arslan) in the actual (arslane) is part of the previous insertion error and together they change the name's spelling, which is significant.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nokta' to 'ノッカ' at position 24",
+      "reason": "Replacing 'nokta' (Turkish for 'dot') with 'ノッカ' (Japanese katakana, not equivalent) is a language change and makes the email address incoherent.",
+      "score": 1
+    }
+  ]
+}
