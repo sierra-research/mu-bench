@@ -1,6 +1,6 @@
 {
   "gold": "Okay. How would I reference, you know, basically, I don't wanna go through everything we already talked about. So, 0 like our case number.",
-  "predicted": "Okay. How, how would I reference, uh, you know, basically I don't wanna go through everything we already talked about, so is there like a case number?",
+  "predicted": "Okay. How, how would I reference you know, basically I don't wanna go through everything we already talked about, so is there like a case number?",
   "unintelligible": false,
   "wer": 0.15384615384615385,
   "werEdits": 4,
@@ -8,24 +8,24 @@
   "werNormalizedGold": "okay how would i reference you know basically i do not want to go through everything we already talked about so zero like our case number",
   "werNormalizedPredicted": "okay how how would i reference you know basically i do not want to go through everything we already talked about so is there like a case number",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 26,
   "sigWerNormalizedGold": "okay how would i reference you know basically i do not want to go through everything we already talked about so zero like our case number",
   "sigWerNormalizedPredicted": "okay how how would i reference you know basically i do not want to go through everything we already talked about so is there like a case number",
   "sigWerErrors": [
     {
       "error": "Insertion: 'how' at position 2",
-      "reason": "The extra 'how' is a repetition that does not change the meaning of the sentence; it is a minor disfluency.",
+      "reason": "The repeated 'how' is a minor disfluency and does not change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'zero' to 'there' at position 21",
-      "reason": "The insertion of 'is' changes the structure to a question ('is there like a case number') instead of referencing a specific case number ('zero like our case number'), which alters the intent.",
-      "score": 1
+      "reason": "The insertion of 'is' changes the phrase from 'so zero like our case number' to 'so is there like a case number', which alters the structure but not the overall intent of asking about a case number.",
+      "score": 2
     },
     {
       "error": "Substitution: 'our' to 'a' at position 23",
-      "reason": "Changing 'zero' to 'there' removes the reference to a specific case number and instead asks if there is a case number, which significantly changes the meaning.",
+      "reason": "Changing 'zero' to 'there' shifts the meaning from referencing a specific number to asking if a case number exists, which is a significant change in meaning.",
       "score": 1
     }
   ]

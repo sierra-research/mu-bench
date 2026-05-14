@@ -1,46 +1,21 @@
 {
   "gold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
-  "predicted": "Uh, no, the email is min dot trần a c o m.",
+  "predicted": "ờ không phải cái email đúng là minh chấm trần a cộng email chấm com",
   "unintelligible": false,
-  "wer": 0.7857142857142857,
-  "werEdits": 11,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "no the email is min dot trần a c o m",
+  "werNormalizedPredicted": "không phải cái email đúng là minh chấm trần a cộng email chấm com",
   "significantWer": 1,
-  "majorErrorsCount": 4,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "no the email is min dot trần a c o m",
+  "sigWerNormalizedPredicted": "không phải cái email đúng là minh chấm trần a cộng email chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'không' to 'no' at position 0",
-      "reason": "'không' means 'not' in Vietnamese, while 'no' is an English word. The language switch and meaning are not equivalent, causing a significant change in meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'cái' at position 2",
-      "reason": "'cái' is a classifier in Vietnamese, and its omission does not significantly change the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'đúng' to 'is' at position 4",
-      "reason": "'đúng' means 'correct' or 'right', while 'is' is a verb. This substitution changes the meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'chấm' at position 7",
-      "reason": "'chấm' means 'dot' in Vietnamese, and since 'dot' appears later in the actual transcript, this omission here is minor as the information is still present.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'còng' to 'c' at position 10",
-      "reason": "'còng' means 'at' (as in '@') in Vietnamese, but 'c' is just the letter 'c'. This changes the meaning and makes the email address incorrect.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'com' at position 13",
-      "reason": "Omitting 'com' from the email address makes it incomplete and incorrect, which is a significant error.",
+      "error": "Substitution: 'còng' to 'cộng' at position 10",
+      "reason": "'còng' is the Vietnamese word for the '@' symbol in email addresses, while 'cộng' means 'plus' and is incorrect in this context. This substitution makes the email address invalid and changes the meaning significantly.",
       "score": 1
     }
   ]

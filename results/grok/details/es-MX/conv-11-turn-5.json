@@ -1,22 +1,27 @@
 {
   "gold": "No me acuerdo. Deja lo checo.",
-  "predicted": "no me acuerdo déjalo chico es",
+  "predicted": "No me acuerdo, déjalo chico.",
   "unintelligible": false,
   "wer": 0.5,
   "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "no me acuerdo deja lo checo",
-  "werNormalizedPredicted": "no me acuerdo déjalo chico es",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "no me acuerdo dejalo chico",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "no me acuerdo deja lo checo",
-  "sigWerNormalizedPredicted": "no me acuerdo déjalo chico es",
+  "sigWerNormalizedPredicted": "no me acuerdo dejalo chico",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'deja' to 'déjalo' at position 3",
-      "reason": "'deja' (leave) and 'déjalo' (leave it) are related but 'déjalo' adds a pronoun, slightly changing the meaning but not derailing the sentence.",
+      "error": "Substitution: 'deja' to 'dejalo' at position 3",
+      "reason": "'Deja' (leave/let) and 'dejalo' (leave it/let it) are related, but 'dejalo' adds an object, slightly changing the meaning but not derailing the sentence.",
       "score": 2
+    },
+    {
+      "error": "Deletion: 'checo' at position 5",
+      "reason": "'Checo' (I check) is missing, which removes the action from the sentence and makes it incomplete, significantly altering the meaning.",
+      "score": 1
     }
   ]
 }

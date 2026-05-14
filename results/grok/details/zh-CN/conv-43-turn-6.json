@@ -1,26 +1,26 @@
 {
   "gold": "你搞错，你搞错。你还没给我。",
-  "predicted": "You tell me, you tell me, you haven't given me.",
+  "predicted": "你告诉我，你告诉我，你还没给我！",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 11,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
   "werRefWords": 11,
   "werNormalizedGold": "你搞错你搞错你还没给我",
-  "werNormalizedPredicted": "you tell me you tell me you havent given me",
+  "werNormalizedPredicted": "你告诉我 你告诉我 你还没给我",
   "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 搞 错 你 搞 错 你 还 没 给 我",
-  "sigWerNormalizedPredicted": "you tell me you tell me you havent given me",
+  "sigWerNormalizedPredicted": "你 告 诉 我 你 告 诉 我 你 还 没 给 我",
   "sigWerErrors": [
     {
-      "error": "Substitution: '你' to 'you' at position 0",
-      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which completely changes the meaning and makes the sentence incoherent in context.",
+      "error": "Substitution: '搞' to '诉' at position 1",
+      "reason": "'告' is inserted where '搞' is expected, changing the phrase from '你搞错' (you are mistaken) to '你告诉我' (you tell me), which alters the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: '我' at position 10",
-      "reason": "The word '我' (me) is missing in the actual transcription, which is already in a different language, compounding the significant error.",
+      "error": "Substitution: '搞' to '诉' at position 4",
+      "reason": "'搞' (do/make) is substituted with '诉' (tell), changing '搞错' (mistake) to '告诉' (tell), which changes the meaning of the phrase and the sentence.",
       "score": 1
     }
   ]

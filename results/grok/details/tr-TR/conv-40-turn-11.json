@@ -1,32 +1,47 @@
 {
   "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
-  "predicted": "Email, I mean, I'll only give you my email then, ahmed.nokta.aslan at email dot com.",
+  "predicted": "Email verin, benim de tek bir email veriyim ben sonra. ahmet nokta aslan a r s d a n e at email dot com.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werEdits": 16,
+  "wer": 0.5,
+  "werEdits": 10,
   "werRefWords": 20,
   "werNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "werNormalizedPredicted": "email i mean i will only give you my email then ahmed nokta aslan at email dot com",
+  "werNormalizedPredicted": "email verin benim de tek bir email veriyim ben sonra ahmet nokta aslan a r s d a n e at email nokta com",
   "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
-  "sigWerNormalizedPredicted": "email i mean i will only give you my email then ahmed nokta aslan at email dot com",
+  "sigWerNormalizedPredicted": "email verin benim de tek bir email veriyim ben sonra ahmet nokta aslan a r s d a n e at email nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'daha' to 'i' at position 1",
-      "reason": "'daha' (Turkish for 'yet' or 'still') is replaced with 'i', which is an English pronoun and does not convey the same meaning. This changes the meaning of the sentence and makes it incoherent.",
-      "score": 1
+      "error": "Substitution: 'daha' to 'tek' at position 1",
+      "reason": "'verin' is an extra verb form that does not change the overall meaning of the sentence, as the main intent (giving an email) is preserved.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'a' at position 14",
-      "reason": "The letter 'a' is missing from the spelled-out sequence 'a r s l a n', which is likely a proper noun or email username. Missing a letter in a spelled-out name or email is a significant error.",
-      "score": 1
+      "error": "Substitution: 'vereyim' to 'veriyim' at position 4",
+      "reason": "'daha' (more/yet) and 'tek' (only/single) are different, but the overall intent of providing an email is still clear. Minor change in nuance, but not the main meaning.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'nokta' to 'dot' at position 18",
-      "reason": "'Nokta' is Turkish for 'dot', and both are used in email addresses to indicate a period. This is a direct translation and does not change the meaning.",
+      "error": "Substitution: 'sana' to 'sonra' at position 6",
+      "reason": "'vereyim' and 'veriyim' are minor spelling/pronunciation variants in Turkish, both meaning 'let me give'. No change in meaning.",
       "score": 3
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 9",
+      "reason": "'sana' (to you) and 'sonra' (after/later) are different and change the recipient/timing, which can confuse the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'l' to 'd' at position 13",
+      "reason": "'arslan' and 'aslan' are very similar Turkish surnames/words (both mean 'lion'), but if this is a proper noun (name), the difference is minor and likely still recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'e' at position 16",
+      "reason": "In a spelled-out name, a single letter difference changes the spelling and can result in a different name, which is a significant error.",
+      "score": 1
     }
   ]
 }

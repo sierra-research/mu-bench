@@ -1,26 +1,21 @@
 {
   "gold": "好，谢谢谢谢，你听不到我的声音吗？",
-  "predicted": "How, is it you?",
+  "predicted": "好，谢谢谢谢。你听到我的声音吗？",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 14,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "好谢谢谢谢你听不到我的声音吗",
-  "werNormalizedPredicted": "how is it you",
+  "werNormalizedPredicted": "好 谢谢 谢谢 你 听到 我 的 声音 吗",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "好 谢 谢 谢 谢 你 听 不 到 我 的 声 音 吗",
-  "sigWerNormalizedPredicted": "how is it you",
+  "sigWerNormalizedPredicted": "好 谢 谢 谢 谢 你 听 到 我 的 声 音 吗",
   "sigWerErrors": [
     {
-      "error": "Substitution: '好' to 'how' at position 0",
-      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), resulting in a total loss of meaning.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '谢' at position 4",
-      "reason": "The expected word is missing entirely from the actual transcription, which is in a different language.",
+      "error": "Deletion: '不' at position 7",
+      "reason": "The word '不' (not) is missing, which reverses the meaning of the sentence from 'can't hear' to 'can hear', significantly changing the intent.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "Takip numaram C N 9 9 5 9'du, değil mi?",
-  "predicted": "Takip numaram J N 9 9 5 9'du değil mi?",
+  "predicted": "Takip numaram J N 9 9 5 9 9 değil mi?",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "takip numaram c n dokuz dokuz beş dokuzdu değil mi",
-  "werNormalizedPredicted": "takip numaram j n dokuz dokuz beş dokuzdu değil mi",
+  "werNormalizedPredicted": "takip numaram j n dokuz dokuz beş dokuz dokuz değil mi",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "takip numaram c n dokuz dokuz beş dokuzdu değil mi",
-  "sigWerNormalizedPredicted": "takip numaram j n dokuz dokuz beş dokuzdu değil mi",
+  "sigWerNormalizedPredicted": "takip numaram j n dokuz dokuz beş dokuz dokuz değil mi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'c' to 'j' at position 2",
-      "reason": "Single letter substitution in a sequence that is likely a code or identifier; such errors can significantly change the meaning or reference, making it a significant error.",
+      "reason": "In a sequence that likely represents a code or identifier, substituting 'c' with 'j' is a significant error as it changes the value of the code.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'dokuzdu' to 'dokuz' at position 7",
+      "reason": "An extra 'dokuz' (nine) is inserted in a number sequence, which changes the code or identifier and is a significant error.",
       "score": 1
     }
   ]

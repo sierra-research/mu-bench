@@ -1,6 +1,6 @@
 {
   "gold": "Sí, es C N 205.",
-  "predicted": "S C N 205",
+  "predicted": "S C N 205.",
   "unintelligible": false,
   "wer": 0.3333333333333333,
   "werEdits": 2,
@@ -8,20 +8,20 @@
   "werNormalizedGold": "sí es c n doscientos cinco",
   "werNormalizedPredicted": "s c n doscientos cinco",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "sí es c n doscientos cinco",
   "sigWerNormalizedPredicted": "s c n doscientos cinco",
   "sigWerErrors": [
     {
       "error": "Substitution: 'sí' to 's' at position 0",
-      "reason": "'sí' (yes) is a meaningful word in Spanish, while 's' is just a letter and loses the meaning of affirmation. This significantly changes the meaning of the sentence.",
+      "reason": "'sí' means 'yes' in Spanish, while 's' alone is just a letter and loses the affirmative meaning, which can change the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'es' at position 1",
-      "reason": "Omitting 'es' (is) removes the verb from the sentence, making it incomplete and less coherent.",
-      "score": 1
+      "reason": "Omitting 'es' ('is' in Spanish) removes the verb and makes the sentence incomplete or less clear, but the main information (the code) is still present.",
+      "score": 2
     }
   ]
 }

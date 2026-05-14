@@ -1,26 +1,31 @@
 {
   "gold": "E-posta adresim Zaynep nokta Arslan at email nokta com.",
-  "predicted": "e-posta adresim dainet dot arslan dot e mail dot com",
+  "predicted": "E-posta adresim dainet dot arslanet email dot com",
   "unintelligible": false,
-  "wer": 0.4,
-  "werEdits": 4,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "e posta adresim dainet nokta arslan nokta e mail nokta com",
+  "werNormalizedPredicted": "e posta adresim dainet nokta arslanet email nokta com",
   "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "e posta adresim dainet nokta arslan nokta e mail nokta com",
+  "sigWerNormalizedPredicted": "e posta adresim dainet nokta arslanet email nokta com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'zaynep' to 'dainet' at position 3",
-      "reason": "'zaynep' is a proper name and 'dainet' is a completely different word/name, which makes the email address incorrect and unrecognizable.",
+      "reason": "'dainet' is a significant mistranscription of the name 'zaynep', making the email address incorrect and unrecognizable.",
       "score": 1
     },
     {
-      "error": "Substitution: 'at' to 'e' at position 6",
-      "reason": "An extra 'nokta' (dot) in an email address changes the structure and makes the address invalid.",
+      "error": "Substitution: 'arslan' to 'arslanet' at position 5",
+      "reason": "'arslanet' adds extra letters to the surname 'arslan', which could cause confusion or make the email address invalid, but the original name is still somewhat recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'at' at position 6",
+      "reason": "Omitting 'at' (which stands for '@') in an email address makes the address unusable and changes the meaning significantly.",
       "score": 1
     }
   ]

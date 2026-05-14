@@ -1,32 +1,22 @@
 {
   "gold": "Muốn. Vui lòng hướng dẫn tôi làm cái đó đi.",
-  "predicted": "Uh, muốn vui lòng hướng dẫn tôi là cái, cái, cái, cái đó là",
+  "predicted": "à muốn vui lòng hướng dẫn tôi là cái, cái, cái, cái đó đi.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 5,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
-  "werNormalizedPredicted": "muốn vui lòng hướng dẫn tôi là cái cái cái cái đó là",
-  "significantWer": 1,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "muốn vui lòng hướng dẫn tôi là cái cái cái cái đó đi",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
-  "sigWerNormalizedPredicted": "muốn vui lòng hướng dẫn tôi là cái cái cái cái đó là",
+  "sigWerNormalizedPredicted": "muốn vui lòng hướng dẫn tôi là cái cái cái cái đó đi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'làm' to 'là' at position 6",
-      "reason": "'làm' means 'do' or 'make', while 'là' means 'is' or 'to be'; this changes the action in the sentence and affects the meaning significantly.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'cái' at position 8",
-      "reason": "Multiple insertions of 'cái' ('thing') make the sentence repetitive and unnatural, but do not completely derail the meaning.",
+      "error": "Substitution: 'làm' to 'cái' at position 6",
+      "reason": "'là' (is) changes the structure of the sentence but does not significantly alter the overall request for instruction, so the meaning is mostly preserved.",
       "score": 2
-    },
-    {
-      "error": "Substitution: 'đi' to 'là' at position 9",
-      "reason": "'đi' is a particle used to urge action (like 'please do it'), while 'là' means 'is'; this substitution removes the urging tone and changes the intent of the sentence.",
-      "score": 1
     }
   ]
 }

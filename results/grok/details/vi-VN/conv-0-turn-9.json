@@ -1,37 +1,42 @@
 {
   "gold": "Số điện thoại sai. Số điện thoại sai. Số điện thoại sai. Số điện thoại chính xác là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "Số điện thoại chính xác số điện thoại xác số điện thoại chính xác là 84 chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "Cố định thoại sai, cố định thoại sai, cố định thoại, cố định thoại sai, số điện thoại chính xác là 84. chín một một hai ba bốn năm sáu bảy tám",
   "unintelligible": false,
-  "wer": 0.21875,
-  "werEdits": 7,
+  "wer": 0.3125,
+  "werEdits": 10,
   "werRefWords": 32,
   "werNormalizedGold": "số điện thoại sai số điện thoại sai số điện thoại sai số điện thoại chính xác là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "số điện thoại chính xác số điện thoại xác số điện thoại chính xác là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cố định thoại sai cố định thoại sai cố định thoại cố định thoại sai số điện thoại chính xác là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 5,
   "totalWordsCount": 32,
   "sigWerNormalizedGold": "số điện thoại sai số điện thoại sai số điện thoại sai số điện thoại chính xác là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "số điện thoại chính xác số điện thoại xác số điện thoại chính xác là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cố định thoại sai cố định thoại sai cố định thoại cố định thoại sai số điện thoại chính xác là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sai' to 'chính' at position 3",
-      "reason": "'sai' means 'wrong' and 'chính' is part of 'chính xác' meaning 'correct', which reverses the meaning of the sentence at this point.",
+      "error": "Substitution: 'số' to 'cố' at position 0",
+      "reason": "'số điện thoại' means 'phone number', while 'cố định thoại' means 'fixed line phone'; this changes the meaning of the phrase.",
       "score": 1
     },
     {
-      "error": "Deletion: 'điện' at position 5",
-      "reason": "Omitting 'điện' from 'điện thoại' ('phone') makes the phrase incomplete, but the context still suggests it's about phone numbers.",
-      "score": 2
+      "error": "Substitution: 'số' to 'cố' at position 4",
+      "reason": "Repeated error as above, changing 'số điện thoại' to 'cố định thoại' alters the meaning from 'phone number' to 'fixed line phone'.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'sai' to 'xác' at position 11",
-      "reason": "'sai' means 'wrong', 'xác' is part of 'chính xác' meaning 'correct', so this changes the meaning from 'wrong' to 'correct'.",
+      "error": "Substitution: 'số' to 'cố' at position 8",
+      "reason": "Again, this substitution changes the meaning from 'phone number' to 'fixed line phone', which is a significant difference.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'cố' at position 11",
+      "reason": "Extra 'cố định thoại' phrase inserted, which adds confusion and changes the intended meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'cộng' at position 18",
-      "reason": "'cộng' indicates the country code ('plus'), and omitting it may cause confusion in the phone number, but the number itself is still present.",
-      "score": 2
+      "reason": "Missing 'cộng' (plus) in the phone number means the international dialing code is omitted, which is a significant error for phone numbers.",
+      "score": 1
     }
   ]
 }

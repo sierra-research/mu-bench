@@ -1,31 +1,26 @@
 {
   "gold": "C N 2 2 2. Doğru mudur?",
-  "predicted": "jn 2 2 2 doğrudur",
+  "predicted": "C N 2 2 2, doğrudur.",
   "unintelligible": false,
-  "wer": 0.42857142857142855,
-  "werEdits": 3,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
   "werRefWords": 7,
   "werNormalizedGold": "c n iki iki iki doğru mudur",
-  "werNormalizedPredicted": "j n iki iki iki doğrudur",
+  "werNormalizedPredicted": "c n iki iki iki doğrudur",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "c n iki iki iki doğru mudur",
-  "sigWerNormalizedPredicted": "j n iki iki iki doğrudur",
+  "sigWerNormalizedPredicted": "c n iki iki iki doğrudur",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'c' to 'j' at position 0",
-      "reason": "Single letter substitution at the start of a spelled-out sequence; in Turkish, 'c' and 'j' are different letters and this changes the meaning, especially in a context where each letter matters.",
-      "score": 1
-    },
-    {
       "error": "Substitution: 'doğru' to 'doğrudur' at position 5",
-      "reason": "'doğru' (correct) and 'doğrudur' (it is correct) are semantically very close; the meaning of the sentence is preserved.",
+      "reason": "'doğru' (correct/right) and 'doğrudur' (it is correct) are very close in meaning; the latter is a more complete form but does not change the overall meaning of the sentence.",
       "score": 3
     },
     {
       "error": "Deletion: 'mudur' at position 6",
-      "reason": "Omitting 'mudur' (is it) changes the sentence from a question to a statement, which significantly alters the meaning.",
+      "reason": "'mudur' is a question particle in Turkish, turning the statement into a question. Its omission changes the sentence from a question to a statement, which significantly alters the meaning.",
       "score": 1
     }
   ]

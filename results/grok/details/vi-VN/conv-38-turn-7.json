@@ -1,31 +1,31 @@
 {
   "gold": "Email là minh chấm trần a còng email chấm com.",
-  "predicted": "Email là minh chấm trần cộng email com",
+  "predicted": "Email là minh chấm trần cộng email chung cư.",
   "unintelligible": false,
-  "wer": 0.3,
-  "werEdits": 3,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "email là minh chấm trần cộng email com",
+  "werNormalizedPredicted": "email là minh chấm trần cộng email chung cư",
   "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "email là minh chấm trần cộng email com",
+  "sigWerNormalizedPredicted": "email là minh chấm trần cộng email chung cư",
   "sigWerErrors": [
     {
       "error": "Substitution: 'a' to 'cộng' at position 5",
-      "reason": "'a còng' is the Vietnamese way to say '@', while 'cộng' means 'plus' and is incorrect in this context, making the email address invalid.",
+      "reason": "'a còng' is the Vietnamese way to say '@' in an email address, while 'cộng' means 'plus' and is incorrect in this context. This changes the meaning and makes the email address invalid.",
       "score": 1
     },
     {
       "error": "Deletion: 'còng' at position 6",
-      "reason": "Missing 'còng' means the '@' symbol is omitted, which is essential for a valid email address, significantly changing the meaning.",
+      "reason": "Missing 'còng' (the word for '@') in the email address makes the email incomplete and unusable.",
       "score": 1
     },
     {
-      "error": "Deletion: 'chấm' at position 8",
-      "reason": "Missing 'chấm' means the '.' in the domain is omitted, making the email address incomplete or invalid.",
+      "error": "Substitution: 'chấm' to 'chung' at position 8",
+      "reason": "'chấm' means 'dot' ('.') in an email address, while 'chung' means 'common' or 'together', which is incorrect and changes the meaning, making the email address invalid.",
       "score": 1
     }
   ]

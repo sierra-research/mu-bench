@@ -1,27 +1,27 @@
 {
   "gold": "À, chính xác. Chính xác. Kiểm tra giùm.",
-  "predicted": "Uh, check, check, check, check again.",
+  "predicted": "Check, check, check, check, check again.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 7,
   "werRefWords": 7,
   "werNormalizedGold": "chính xác chính xác kiểm tra giùm",
-  "werNormalizedPredicted": "kiểm tra kiểm tra kiểm tra kiểm tra lại",
+  "werNormalizedPredicted": "check check check check check again",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "chính xác chính xác kiểm tra giùm",
-  "sigWerNormalizedPredicted": "kiểm tra kiểm tra kiểm tra kiểm tra lại",
+  "sigWerNormalizedPredicted": "check check check check check again",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'chính' to 'kiểm' at position 0",
-      "reason": "'chính xác' means 'correct/exact', while 'kiểm tra' means 'check'. Substituting these changes the meaning from confirming correctness to performing a check.",
+      "error": "Substitution: 'chính' to 'check' at position 0",
+      "reason": "The actual transcription is in a different language (English) than the expected (Vietnamese), which completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'giùm' to 'lại' at position 6",
-      "reason": "Extra repetition of 'kiểm tra' adds redundancy but does not change the meaning significantly.",
-      "score": 2
+      "error": "Deletion: 'giùm' at position 6",
+      "reason": "The word 'giùm' (meaning 'please' or 'help' in Vietnamese) is missing in the actual transcription, further reducing the accuracy and meaning.",
+      "score": 1
     }
   ]
 }

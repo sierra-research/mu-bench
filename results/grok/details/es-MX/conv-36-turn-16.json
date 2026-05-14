@@ -2,21 +2,26 @@
   "gold": "No, no, no. Sería todo. Gracias Ana por tomar la llamada.",
   "predicted": "No, no, no, sería todo, gracias, Sana, por tomar la llamada.",
   "unintelligible": false,
-  "wer": 0.09090909090909091,
-  "werEdits": 1,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
   "werRefWords": 11,
   "werNormalizedGold": "no no no sería todo gracias ana por tomar la llamada",
-  "werNormalizedPredicted": "no no no sería todo gracias sana por tomar la llamada",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "no no no seria todo gracias sana por tomar la llamada",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "no no no sería todo gracias ana por tomar la llamada",
-  "sigWerNormalizedPredicted": "no no no sería todo gracias sana por tomar la llamada",
+  "sigWerNormalizedPredicted": "no no no seria todo gracias sana por tomar la llamada",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'sería' to 'seria' at position 3",
+      "reason": "Accent missing in 'seria' vs 'sería'; in this context, both are understood as 'would be', so the meaning does not change.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'ana' to 'sana' at position 6",
-      "reason": "The addition of 's' changes the name from 'Ana' to 'Sana', which is a different proper noun. While the sentence remains understandable, the name is incorrect, making it a minor error.",
-      "score": 2
+      "reason": "'Ana' is a proper name, while 'sana' is a different word (means 'healthy' in Spanish); this changes the intended recipient of thanks, which is a significant error.",
+      "score": 1
     }
   ]
 }

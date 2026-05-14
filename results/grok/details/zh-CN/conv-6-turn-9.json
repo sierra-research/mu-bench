@@ -1,26 +1,26 @@
 {
   "gold": "我的姓名是君玲，君玲。",
-  "predicted": "My name is Jun, Jun Ling.",
+  "predicted": "我的姓名是 Jun Junling.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 9,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
   "werRefWords": 9,
   "werNormalizedGold": "我的姓名是君玲君玲",
-  "werNormalizedPredicted": "my name is jun jun ling",
+  "werNormalizedPredicted": "我的姓名是 jun junling",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 君 玲",
-  "sigWerNormalizedPredicted": "my name is jun jun ling",
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 jun junling",
   "sigWerErrors": [
     {
-      "error": "Substitution: '我' to 'my' at position 0",
-      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which is a significant error as it completely changes the meaning and context.",
-      "score": 1
+      "error": "Substitution: '君' to 'jun' at position 5",
+      "reason": "The Chinese character '君' is replaced with its pinyin 'jun', which is a transliteration but not the same script. This could cause confusion, especially in a context where the script matters, but the meaning is preserved.",
+      "score": 2
     },
     {
-      "error": "Deletion: '玲' at position 6",
-      "reason": "The last character '玲' is missing in the actual transcription, which further reduces the accuracy and completeness of the transcription.",
+      "error": "Deletion: '君' at position 7",
+      "reason": "The repetition of the name '君 玲' is omitted in the actual transcription, which loses part of the information and could be significant if the repetition is important (e.g., for clarity or emphasis).",
       "score": 1
     }
   ]

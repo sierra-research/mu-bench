@@ -1,26 +1,26 @@
 {
   "gold": "No, solo una M. Una sola M. Email, con una sola M.",
-  "predicted": "No, solo una e, solo una sola e. Email, con una sola M.",
+  "predicted": "No, solo una e, solo una sola, e-mail, con una sola M.",
   "unintelligible": false,
   "wer": 0.25,
   "werEdits": 3,
   "werRefWords": 12,
   "werNormalizedGold": "no solo una m una sola m email con una sola m",
-  "werNormalizedPredicted": "no solo una e solo una sola e email con una sola m",
+  "werNormalizedPredicted": "no solo una e solo una sola email con una sola m",
   "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "no solo una m una sola m email con una sola m",
-  "sigWerNormalizedPredicted": "no solo una e solo una sola e email con una sola m",
+  "sigWerNormalizedPredicted": "no solo una e solo una sola email con una sola m",
   "sigWerErrors": [
     {
       "error": "Substitution: 'm' to 'solo' at position 3",
-      "reason": "The insertion of 'e' changes the intended letter to be specified, which is critical in the context of spelling out or specifying a letter. This can cause confusion about which letter is being referenced.",
+      "reason": "The insertion of 'e' does not make sense in the context and interrupts the phrase, making the sentence less clear.",
       "score": 1
     },
     {
-      "error": "Substitution: 'm' to 'e' at position 6",
-      "reason": "Substituting 'm' with 'solo' changes a letter to a word, which disrupts the intended meaning of specifying a single letter.",
+      "error": "Deletion: 'm' at position 6",
+      "reason": "Substituting 'm' (which is a key detail about the spelling of 'email') with 'solo' changes the meaning and makes the instruction confusing.",
       "score": 1
     }
   ]

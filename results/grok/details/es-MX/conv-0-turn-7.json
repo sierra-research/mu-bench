@@ -1,16 +1,32 @@
 {
   "gold": "Es. Sí, es María punto López arroba email punto com.",
-  "predicted": "Es, si, es maria punto lopez arroba email punto com.",
+  "predicted": "Sí, es maria punto lopez arroba email punto com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3,
+  "werEdits": 3,
   "werRefWords": 10,
   "werNormalizedGold": "es sí es maría punto lópez arroba email punto com",
-  "werNormalizedPredicted": "es sí es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "sí es maria punto lopez arroba email punto com",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "es sí es maría punto lópez arroba email punto com",
-  "sigWerNormalizedPredicted": "es sí es maría punto lópez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sí es maria punto lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'es' at position 0",
+      "reason": "The deletion of 'es' at the beginning slightly changes the structure but does not significantly alter the meaning of the email address being dictated.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 3",
+      "reason": "The omission of the accent in 'maría' is a minor error, as the name is still clearly recognizable and the meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 5",
+      "reason": "The omission of the accent in 'lópez' is a minor error, as the name remains understandable and the meaning is not changed.",
+      "score": 2
+    }
+  ]
 }

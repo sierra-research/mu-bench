@@ -1,16 +1,27 @@
 {
   "gold": "美，你说得不对，是美玲，美玲。",
-  "predicted": "梅，你说的不对，是梅林，梅林",
+  "predicted": "梅，你说的不对，是梅林，梅林。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.45454545454545453,
+  "werEdits": 5,
   "werRefWords": 11,
   "werNormalizedGold": "美 你说得不对 是美玲 美玲",
-  "werNormalizedPredicted": "美 你说得不对 是美玲 美玲",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "梅 你说得不对 是梅林 梅林",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "美 你 说 得 不 对 是 美 玲 美 玲",
-  "sigWerNormalizedPredicted": "美 你 说 得 不 对 是 美 玲 美 玲",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "梅 你 说 得 不 对 是 梅 林 梅 林",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '梅' at position 0",
+      "reason": "'美' (měi, meaning 'beautiful') and '梅' (méi, meaning 'plum') are different characters with different meanings. This changes the name and could cause confusion about the person's identity.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to '梅' at position 7",
+      "reason": "Repeats the same name error as above, again changing the identity from '美玲' to '梅林', which is a significant error.",
+      "score": 1
+    }
+  ]
 }

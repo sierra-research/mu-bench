@@ -8,20 +8,20 @@
   "werNormalizedGold": "我的卡被冻结了 怎么解锁",
   "werNormalizedPredicted": "my card is frozen how to unlock",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "我 的 卡 被 冻 结 了 怎 么 解 锁",
   "sigWerNormalizedPredicted": "my card is frozen how to unlock",
   "sigWerErrors": [
     {
       "error": "Substitution: '我' to 'my' at position 0",
-      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), which is a significant error as it changes the entire meaning and context.",
+      "reason": "The actual transcription is in a different language than the expected transcription, which is a significant error as it completely changes the meaning and is not a valid transcription of the original.",
       "score": 1
     },
     {
       "error": "Deletion: '怎' at position 7",
-      "reason": "The actual transcription is missing this Chinese character and is in a different language, which is a significant error.",
-      "score": 1
+      "reason": "infra_error",
+      "score": 2
     }
   ]
 }

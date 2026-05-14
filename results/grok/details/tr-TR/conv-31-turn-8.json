@@ -1,6 +1,6 @@
 {
   "gold": "Tabii. 0 90 123 0 90 45 67.",
-  "predicted": "tabii 0.90 123 0.90 45 67",
+  "predicted": "Tabii 0.90 123 0.90 45 67.",
   "unintelligible": false,
   "wer": 0.16666666666666666,
   "werEdits": 2,
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Insertion: 'nokta' at position 2",
-      "reason": "'nokta' means 'point' (decimal point) and its insertion changes the number from '090' to '0.90', which is a significant change in meaning for a number sequence (such as a phone number or code).",
+      "reason": "The word 'nokta' (meaning 'point' or 'dot') is inserted where the expected sequence is a string of numbers. This changes the meaning from a sequence of numbers to a decimal number, which could significantly alter the intended information (such as a phone number or code).",
       "score": 1
     },
     {
       "error": "Insertion: 'nokta' at position 7",
-      "reason": "Again, inserting 'nokta' changes '090' to '0.90', which alters the intended number sequence and could cause confusion or incorrect information, especially in contexts like phone numbers or codes.",
+      "reason": "Again, inserting 'nokta' changes the numeric sequence to a decimal, which can significantly alter the meaning or intended value of the sequence.",
       "score": 1
     }
   ]

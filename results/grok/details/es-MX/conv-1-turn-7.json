@@ -1,26 +1,36 @@
 {
   "gold": "Sí, por favor. Quisiera saber cuál es el número de envío, el seguimiento para poder verificarlo. No sé si tengo que hacerlo por la aplicación o por email.",
-  "predicted": "Sí, por favor, quisiera saber, eh, cuan- ¿cuál es el número, eh, de envío, el seguimiento, eh, para, para poder verificarlo? No sé si tengo que hacerlo en la aplicación o en Formeo.",
+  "predicted": "Sí, por favor, quisiera saber cuan- ¿cuál es el número de envío, el seguimiento para, para poder verificarlo? No sé si tengo que hacerlo en la aplicación o en Formelis.",
   "unintelligible": false,
-  "wer": 0.10714285714285714,
-  "werEdits": 3,
+  "wer": 0.17857142857142858,
+  "werEdits": 5,
   "werRefWords": 28,
   "werNormalizedGold": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder verificarlo no sé si tengo que hacerlo por la aplicación o por email",
-  "werNormalizedPredicted": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder verificarlo no sé si tengo que hacerlo en la aplicación o en formeo",
+  "werNormalizedPredicted": "sí por favor quisiera saber cuan cuál es el número de envío el seguimiento para para poder verificarlo no sé si tengo que hacerlo en la aplicación o en formelis",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 28,
   "sigWerNormalizedGold": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder verificarlo no sé si tengo que hacerlo por la aplicación o por email",
-  "sigWerNormalizedPredicted": "sí por favor quisiera saber cuál es el número de envío el seguimiento para poder verificarlo no sé si tengo que hacerlo en la aplicación o en formeo",
+  "sigWerNormalizedPredicted": "sí por favor quisiera saber cuan cuál es el número de envío el seguimiento para para poder verificarlo no sé si tengo que hacerlo en la aplicación o en formelis",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'cuan' at position 5",
+      "reason": "'cuan' is an unnecessary word that interrupts the flow but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'para' at position 14",
+      "reason": "The repeated 'para' is a minor repetition and does not affect the meaning of the sentence.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'por' to 'en' at position 22",
-      "reason": "Changing 'por la aplicación' to 'en la aplicación' does not significantly alter the meaning in this context; both prepositions are commonly used and understood similarly here.",
+      "reason": "Changing 'por la aplicación' to 'en la aplicación' is a minor prepositional change that does not alter the intended meaning.",
       "score": 3
     },
     {
       "error": "Substitution: 'por' to 'en' at position 26",
-      "reason": "'por email' (by email) is replaced with 'en formeo', which is not a valid Spanish word and makes the sentence incoherent, significantly altering the meaning.",
+      "reason": "'en formelis' is a significant error as it replaces 'por email' with a word that is not a valid communication method and changes the meaning.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "君玲。",
-  "predicted": "Dune Hill",
+  "predicted": "Dunhill.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
-  "werNormalizedPredicted": "dune hill",
+  "werNormalizedPredicted": "dunhill",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
-  "sigWerNormalizedPredicted": "dune hill",
+  "sigWerNormalizedPredicted": "dunhill",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'dune' at position 0",
-      "reason": "The actual transcription is in a completely different language and does not represent the expected name at all, making the meaning incoherent.",
+      "error": "Substitution: '君' to 'dunhill' at position 0",
+      "reason": "'君' is a Chinese character and 'dunhill' is an unrelated English word; the meaning is completely changed and the languages are different.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is missing entirely from the actual transcription, which further derails the intended meaning.",
       "score": 1
     }
   ]

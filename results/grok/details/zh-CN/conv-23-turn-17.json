@@ -1,21 +1,26 @@
 {
   "gold": "妹玲 at email dot com。",
-  "predicted": "mail young at email dot com",
+  "predicted": "mailion at email dot com",
   "unintelligible": false,
   "wer": 0.3333333333333333,
   "werEdits": 2,
   "werRefWords": 6,
   "werNormalizedGold": "妹玲 at email dot com",
-  "werNormalizedPredicted": "mail young at email dot com",
+  "werNormalizedPredicted": "mailion at email dot com",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "妹 玲 at email dot com",
-  "sigWerNormalizedPredicted": "mail young at email dot com",
+  "sigWerNormalizedPredicted": "mailion at email dot com",
   "sigWerErrors": [
     {
-      "error": "Substitution: '妹' to 'mail' at position 0",
-      "reason": "'妹' is a Chinese character meaning 'younger sister', while 'mail' is an English word with a completely different meaning. This substitution changes the meaning entirely and makes the sentence incoherent in context.",
+      "error": "Substitution: '妹' to 'mailion' at position 0",
+      "reason": "'妹' is a Chinese character (likely a name or part of a name), while 'mailion' is an unrelated English word. This substitution completely changes the meaning and identity of the email address, making it unrecognizable and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is another Chinese character (likely part of the name or email identifier). Its omission further distorts the intended email address, making the transcription significantly incorrect.",
       "score": 1
     }
   ]

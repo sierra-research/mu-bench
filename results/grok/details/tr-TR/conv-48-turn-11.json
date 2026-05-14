@@ -1,26 +1,21 @@
 {
   "gold": "Takip kodum A P 0 6 49'du, değil mi?",
-  "predicted": "takip kodunun AP0649'du değil mi?",
+  "predicted": "Takip kodunun AP0649'du, değil mi?",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "takip kodum a p sıfır altı kırk dokuzdu değil mi",
-  "werNormalizedPredicted": "takip kodunun a p sıfır altı dört dokuzdu değil mi",
+  "werNormalizedPredicted": "takip kodunun a p sıfır altı kırk dokuzdu değil mi",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "takip kodum a p sıfır altı kırk dokuzdu değil mi",
-  "sigWerNormalizedPredicted": "takip kodunun a p sıfır altı dört dokuzdu değil mi",
+  "sigWerNormalizedPredicted": "takip kodunun a p sıfır altı kırk dokuzdu değil mi",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kodum' to 'kodunun' at position 1",
-      "reason": "'kodum' means 'my code' while 'kodunun' means 'your code's' or 'of your code'; this changes the possessive meaning but does not derail the overall intent of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'kırk' to 'dört' at position 6",
-      "reason": "'kırk' means 'forty' and 'dört' means 'four'; this changes a digit in a code, which is a significant error as it alters the code's value.",
+      "reason": "'kodum' means 'my code' while 'kodunun' means 'your code' (possessive difference), which changes the reference of whose code is being discussed. This alters the meaning of the sentence significantly.",
       "score": 1
     }
   ]

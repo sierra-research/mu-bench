@@ -1,36 +1,31 @@
 {
   "gold": "Thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy?",
-  "predicted": "hãy làm thế nào để tôi có được cái bản sau sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy",
+  "predicted": "thế làm thế nào để tôi có được cái bản sau sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy?",
   "unintelligible": false,
-  "wer": 0.17391304347826086,
-  "werEdits": 4,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
   "werRefWords": 23,
   "werNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
-  "werNormalizedPredicted": "hãy làm thế nào để tôi có được cái bản sau sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy",
+  "werNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sau sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "thế làm thế nào để tôi có được bản sao sao kê hoặc là hóa đơn mới nhất của thẻ tín dụng vậy",
-  "sigWerNormalizedPredicted": "hãy làm thế nào để tôi có được cái bản sau sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy",
+  "sigWerNormalizedPredicted": "thế làm thế nào để tôi có được cái bản sau sao kê hoặc là hóa đơn mới của thẻ tín dụng vậy",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'thế' to 'hãy' at position 0",
-      "reason": "'thế' (so/then) and 'hãy' (please/let's) have different functions; 'hãy' makes the sentence more of a command or suggestion, while 'thế' is more neutral. This changes the tone but not the core meaning.",
-      "score": 2
-    },
-    {
       "error": "Insertion: 'cái' at position 8",
-      "reason": "'cái' is a classifier and its insertion here is redundant but does not change the meaning of the sentence.",
+      "reason": "'cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
       "score": 3
     },
     {
       "error": "Substitution: 'sao' to 'sau' at position 9",
-      "reason": "'sao' (copy) and 'sau' (after) are completely different words; this substitution makes the phrase 'bản sau sao kê' incoherent and changes the meaning significantly.",
+      "reason": "'sao' (copy) and 'sau' (after) are completely different words; this substitution changes the meaning and makes the sentence confusing.",
       "score": 1
     },
     {
       "error": "Deletion: 'nhất' at position 17",
-      "reason": "Omitting 'nhất' (most/recent) removes the specificity of requesting the latest statement or bill, which is important for the intent.",
+      "reason": "Omitting 'nhất' (most/recent) removes the specificity of requesting the latest statement or bill, but the overall intent is still understandable.",
       "score": 2
     }
   ]

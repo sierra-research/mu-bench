@@ -7,20 +7,20 @@
   "werRefWords": 9,
   "werNormalizedGold": "no no tengo me podías mandar un correo electrónico",
   "werNormalizedPredicted": "no no tengo acceso a la app me podrías mandar un correo electrónico",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "no no tengo me podías mandar un correo electrónico",
   "sigWerNormalizedPredicted": "no no tengo acceso a la app me podrías mandar un correo electrónico",
   "sigWerErrors": [
     {
       "error": "Insertion: 'acceso' at position 3",
-      "reason": "The insertion of 'acceso a la app' adds extra information (that the speaker does not have access to the app), but does not derail or contradict the main request to send an email. The overall meaning is preserved.",
-      "score": 2
+      "reason": "The insertion adds information (that the speaker does not have access to the app), which is not present in the expected sentence. This changes the context and meaning of the sentence, making it a significant error.",
+      "score": 1
     },
     {
       "error": "Substitution: 'podías' to 'podrías' at position 4",
-      "reason": "'Podías' and 'podrías' are both forms of 'poder' (can/could), with 'podrías' being more polite/conditional. The meaning of the request is essentially the same in context.",
+      "reason": "The difference between 'podías' and 'podrías' is a minor grammatical change (imperfect vs conditional), but the overall meaning (requesting to send an email) remains the same.",
       "score": 3
     }
   ]

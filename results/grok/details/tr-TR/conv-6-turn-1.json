@@ -1,37 +1,37 @@
 {
   "gold": "Banka kartı. Yedek bir banka kartım olsun istiyorum.",
-  "predicted": "banka kartı yedekli banka kartımı seçiyorum",
+  "predicted": "Banka kartı, yedekli banka kartımı istiyorum.",
   "unintelligible": false,
-  "wer": 0.625,
-  "werEdits": 5,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
   "werNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
-  "werNormalizedPredicted": "banka kartı yedekli banka kartımı seçiyorum",
-  "significantWer": 1,
-  "majorErrorsCount": 1,
+  "werNormalizedPredicted": "banka kartı yedekli banka kartımı istiyorum",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
-  "sigWerNormalizedPredicted": "banka kartı yedekli banka kartımı seçiyorum",
+  "sigWerNormalizedPredicted": "banka kartı yedekli banka kartımı istiyorum",
   "sigWerErrors": [
     {
       "error": "Substitution: 'yedek' to 'yedekli' at position 2",
-      "reason": "'Yedek' (spare) and 'yedekli' (with spare) are related but not the same; the meaning is slightly changed but the intent is still understandable.",
+      "reason": "'Yedek' (spare) and 'yedekli' (with spare) are related, but 'yedekli' changes the meaning to an adjective, which slightly alters the nuance but not the overall intent.",
       "score": 2
     },
     {
       "error": "Deletion: 'bir' at position 3",
-      "reason": "Omitting 'bir' (a) does not significantly change the meaning of the sentence.",
-      "score": 2
+      "reason": "Omitting 'bir' (a) does not significantly change the meaning of the sentence in Turkish; it is often optional.",
+      "score": 3
     },
     {
       "error": "Substitution: 'kartım' to 'kartımı' at position 5",
-      "reason": "'Kartım' (my card) and 'kartımı' (my card - accusative) are different grammatical cases, but the meaning is still clear in context.",
-      "score": 2
+      "reason": "'Kartım' (my card) vs 'kartımı' (my card as object) is a minor grammatical difference in Turkish, but the meaning is still clear.",
+      "score": 3
     },
     {
-      "error": "Deletion: 'istiyorum' at position 7",
-      "reason": "Omitting 'istiyorum' (I want) changes the sentence from a request to a statement, which significantly alters the intent.",
-      "score": 1
+      "error": "Deletion: 'olsun' at position 6",
+      "reason": "Omitting 'olsun' (let it be) removes the explicit request, making the sentence less of a request and more of a statement, which can change the intent.",
+      "score": 2
     }
   ]
 }

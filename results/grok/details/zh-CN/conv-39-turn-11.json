@@ -1,21 +1,26 @@
 {
   "gold": "君玲。",
-  "predicted": "Green Lane.",
+  "predicted": "Drinling",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "君玲",
-  "werNormalizedPredicted": "green lane",
+  "werNormalizedPredicted": "drinling",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "君 玲",
-  "sigWerNormalizedPredicted": "green lane",
+  "sigWerNormalizedPredicted": "drinling",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'green' at position 0",
-      "reason": "The expected word is a Chinese name/character, while the actual is an unrelated English word. This completely changes the meaning and is a significant error.",
+      "error": "Substitution: '君' to 'drinling' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), but the actual transcription is an unrelated English-sounding word, which completely changes the meaning and is not a minor misspelling or variant.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The second expected character is missing entirely from the actual transcription, resulting in a significant loss of information, especially since these are likely proper nouns or names.",
       "score": 1
     }
   ]

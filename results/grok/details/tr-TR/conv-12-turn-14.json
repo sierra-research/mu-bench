@@ -1,31 +1,31 @@
 {
   "gold": "Tabii. Atatürk Caddesi No 45 bölü 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul. Posta kodu 34 660.",
-  "predicted": "ataçuk caddesi no 45/6 kazım karabekir mahallesi üsküdar istanbul posta kodu 34 606",
+  "predicted": "Atatürk Caddesi No 45/6 Kazım Karabekir Mahallesi Üsküdar İstanbul posta kodu 34600",
   "unintelligible": false,
-  "wer": 0.15,
-  "werEdits": 3,
+  "wer": 0.25,
+  "werEdits": 5,
   "werRefWords": 20,
   "werNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
-  "werNormalizedPredicted": "ataçuk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altı",
+  "werNormalizedPredicted": "atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu üç yüz kırk altı yüz",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 2,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "tabii atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altmış",
-  "sigWerNormalizedPredicted": "ataçuk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu otuz dört altı yüz altı",
+  "sigWerNormalizedPredicted": "atatürk caddesi no kırk beş bölü altı kazım karabekir mahallesi üsküdar istanbul posta kodu üç yüz kırk altı yüz",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tabii' to 'ataçuk' at position 0",
-      "reason": "'tabii' and 'ataçuk' are completely different words with unrelated meanings, which can confuse the address and context.",
+      "error": "Deletion: 'tabii' at position 0",
+      "reason": "'tabii' is missing from the beginning, which may remove a polite or confirming word but does not affect the address information.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'otuz' to 'yüz' at position 15",
+      "reason": "The insertion of 'üç' changes the postal code from 'otuz dört' (34) to 'üç yüz kırk' (340), which is a significant change in the address and can lead to incorrect delivery.",
       "score": 1
     },
     {
-      "error": "Deletion: 'atatürk' at position 1",
-      "reason": "'Atatürk' is a key part of the street name. Its omission significantly alters the address and could lead to confusion or misdelivery.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'altmış' to 'altı' at position 19",
-      "reason": "'Altmış' (sixty) and 'altı' (six) are different numbers, which changes the postal code or address number, leading to a significant error.",
+      "error": "Deletion: 'altmış' at position 19",
+      "reason": "Substituting 'otuz' (30) with 'yüz' (100) in the postal code changes the number entirely, which is a significant error for address accuracy.",
       "score": 1
     }
   ]

@@ -1,37 +1,37 @@
 {
   "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
-  "predicted": "anna'nın merhabalar şimdi şöyle ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
+  "predicted": "Annanın merhabalar, şimdi şöyle, ben kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu.",
   "unintelligible": false,
   "wer": 0.2,
   "werEdits": 4,
   "werRefWords": 20,
   "werNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
-  "werNormalizedPredicted": "anna'nın merhabalar şimdi ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
-  "significantWer": 1,
-  "majorErrorsCount": 3,
+  "werNormalizedPredicted": "annanın merhabalar şimdi ben kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
-  "sigWerNormalizedPredicted": "anna'nın merhabalar şimdi ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "annanın merhabalar şimdi ben kredi kartıma dair ekstramın bir kopyasını istiyorum ya da ekstramın bir dökümünü istiyorum daha doğrusu",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'anna' to 'anna'nın' at position 0",
-      "reason": "'anna hanım' is a polite address (Ms. Anna), while 'anna'nın' means 'Anna's' (possessive). This changes the meaning and makes the sentence less coherent.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'hanım' at position 1",
-      "reason": "Omitting 'hanım' removes the polite form of address, which is a minor change in tone but does not derail the meaning.",
+      "error": "Substitution: 'anna' to 'annanın' at position 0",
+      "reason": "'anna' is a name, 'annanın' means 'of Anna' (possessive form). This changes the meaning from addressing Anna to referring to something belonging to Anna.",
       "score": 2
     },
     {
-      "error": "Substitution: 'ekstremin' to 'ekstranın' at position 8",
-      "reason": "'ekstremin' means 'my statement', while 'ekstranın' means 'the statement's'. This changes the ownership and could cause confusion about whose statement is being referred to.",
-      "score": 1
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam'). Its omission makes the greeting less formal but does not significantly change the meaning.",
+      "score": 2
     },
     {
-      "error": "Substitution: 'ekstremin' to 'ekstranın' at position 14",
-      "reason": "Same as above: 'ekstremin' (my statement) vs. 'ekstranın' (the statement's) changes the meaning regarding ownership.",
-      "score": 1
+      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 8",
+      "reason": "'ekstremin' (my statement) vs 'ekstramın' (incorrect possessive form, not standard Turkish). The intended meaning is still clear, but it's a minor grammatical error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstramın' at position 14",
+      "reason": "Same as above: minor grammatical error, meaning is still clear.",
+      "score": 2
     }
   ]
 }

@@ -7,21 +7,21 @@
   "werRefWords": 7,
   "werNormalizedGold": "maría punto lópez arroba email punto com",
   "werNormalizedPredicted": "maria punto lópez arroba mail punto com",
-  "significantWer": 1,
-  "majorErrorsCount": 1,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
   "sigWerNormalizedPredicted": "maria punto lópez arroba mail punto com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'maría' to 'maria' at position 0",
-      "reason": "Accent missing on the 'i' in 'maría', but the name is still clearly recognizable and not a significant change.",
+      "reason": "Accent missing in 'maría', but the name is still clearly recognizable and not a significant change in meaning.",
       "score": 2
     },
     {
       "error": "Substitution: 'email' to 'mail' at position 4",
-      "reason": "'email' and 'mail' are related but not the same; in the context of an email address, 'email' is expected and 'mail' could cause confusion or delivery issues.",
-      "score": 1
+      "reason": "'email' and 'mail' are related, but 'email' is specific to electronic mail addresses, while 'mail' could be ambiguous. However, in the context of an email address, it is likely still understood, so this is a minor error.",
+      "score": 2
     }
   ]
 }

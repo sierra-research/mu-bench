@@ -1,42 +1,37 @@
 {
   "gold": "Tabii kodluyorum. Z A Y N E P nokta A R S L A N at işareti E M A İ L nokta C O M.",
-  "predicted": "Z a y n e t punto a r c l a n et işareti e m a i l nokta c Oh my!",
+  "predicted": "Tabii. Benim kod diyorum. Z a y n e p nokta a r c l a n et işareti e m a i l nokta c Oh, my!",
   "unintelligible": false,
-  "wer": 0.3076923076923077,
-  "werEdits": 8,
+  "wer": 0.2692307692307692,
+  "werEdits": 7,
   "werRefWords": 26,
   "werNormalizedGold": "tabii kodluyorum z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
-  "werNormalizedPredicted": "z a y n e t punto a r c l a n et işareti e m a i l nokta c oh my",
+  "werNormalizedPredicted": "tabii benim kod diyorum z a y n e p nokta a r c l a n et işareti e m a i l nokta c oh my",
   "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 26,
   "sigWerNormalizedGold": "tabii kodluyorum z a y n e p nokta a r s l a n at işareti e m a i l nokta c o m",
-  "sigWerNormalizedPredicted": "z a y n e t punto a r c l a n et işareti e m a i l nokta c oh my",
+  "sigWerNormalizedPredicted": "tabii benim kod diyorum z a y n e p nokta a r c l a n et işareti e m a i l nokta c oh my",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'tabii' at position 0",
-      "reason": "'tabii' is an introductory word, its omission does not affect the core meaning of the email address transcription.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'p' to 't' at position 7",
-      "reason": "In a spelled-out name, substituting 'p' with 't' changes the intended name from 'zaynep' to 'zaynet', which is a significant error.",
+      "error": "Substitution: 'kodluyorum' to 'diyorum' at position 1",
+      "reason": "'benim' (my) is an extra word that changes the subject and meaning of the sentence, making it less coherent with the expected transcription.",
       "score": 1
     },
     {
       "error": "Substitution: 's' to 'c' at position 11",
-      "reason": "In a spelled-out surname, substituting 's' with 'c' changes the spelling of the name, which is a significant error.",
+      "reason": "'kodluyorum' (I am coding) and 'diyorum' (I am saying) are completely different verbs, which changes the meaning of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'at' to 'et' at position 15",
-      "reason": "'at işareti' and 'et işareti' both refer to the '@' symbol in Turkish, so this is a minor error.",
+      "reason": "In a spelled-out proper noun (arslan vs arclan), a single letter difference is a minor error as the name is still somewhat recognizable.",
       "score": 2
     },
     {
       "error": "Substitution: 'o' to 'oh' at position 24",
-      "reason": "'o' and 'oh' are phonetically equivalent in spelling out, so this is not an error.",
-      "score": 3
+      "reason": "'at' and 'et' are phonetically similar in Turkish and both refer to the '@' symbol, so this is a minor error.",
+      "score": 2
     }
   ]
 }

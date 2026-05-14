@@ -1,6 +1,6 @@
 {
   "gold": "Sorry. I have some background noise. My T V is on. Yeah. I'm ready.",
-  "predicted": "Sorry, I have some background noise, my TV is on. Um, yeah, I'm ready.",
+  "predicted": "Sorry, I have some background noise, my TV is on. yeah, I'm ready.",
   "unintelligible": false,
   "wer": 0.13333333333333333,
   "werEdits": 2,
@@ -15,13 +15,13 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 't' to 'tv' at position 7",
-      "reason": "'t v' and 'tv' are equivalent; this is just a difference in how the abbreviation is written, not a change in meaning.",
+      "reason": "'t v' is a spelled-out form of 'tv', which is the same word. The meaning is unchanged and this is a format difference only.",
       "score": 3
     },
     {
       "error": "Deletion: 'v' at position 8",
-      "reason": "infra_error",
-      "score": 2
+      "reason": "'t v' is combined as 'tv' in the actual transcript, which is an acceptable variant. No loss of meaning.",
+      "score": 3
     }
   ]
 }

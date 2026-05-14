@@ -1,36 +1,36 @@
 {
   "gold": "No. Te falta el punto. María punto López arroba email punto com.",
-  "predicted": "No, no, no, te falta, te fal-falta el punto a a a punto a a a punto com arroba email punto com",
+  "predicted": "No, no, no, te falta, te falta el punto, sería, sería, sería punto local arroba email punto com.",
   "unintelligible": false,
-  "wer": 1.0833333333333333,
-  "werEdits": 13,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
   "werRefWords": 12,
   "werNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
-  "werNormalizedPredicted": "no no no te falta te fal falta el punto a a a punto a a a punto com arroba email punto com",
+  "werNormalizedPredicted": "no no no te falta te falta el punto seria seria seria punto local arroba email punto com",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
-  "sigWerNormalizedPredicted": "no no no te falta te fal falta el punto a a a punto a a a punto com arroba email punto com",
+  "sigWerNormalizedPredicted": "no no no te falta te falta el punto seria seria seria punto local arroba email punto com",
   "sigWerErrors": [
     {
       "error": "Insertion: 'no' at position 1",
-      "reason": "The repeated 'no' does not change the overall meaning, but adds redundancy.",
-      "score": 2
+      "reason": "The repeated insertion of 'no' adds unnecessary negation, which can confuse the meaning of the sentence.",
+      "score": 1
     },
     {
       "error": "Insertion: 'te' at position 3",
-      "reason": "The extra 'te' is a minor repetition and does not change the meaning.",
+      "reason": "The repeated insertion of 'te falta' is redundant but does not change the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'maría' to 'a' at position 5",
-      "reason": "The insertion of 'a' is out of place and disrupts the flow, but does not completely derail the meaning.",
-      "score": 2
+      "error": "Substitution: 'maría' to 'seria' at position 5",
+      "reason": "The repeated insertion of 'seria' introduces unrelated words, making the sentence incoherent.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'lópez' to 'com' at position 7",
-      "reason": "'maría' is a key part of the email address; substituting it with 'a' makes the email address incorrect and unrecognizable.",
+      "error": "Substitution: 'lópez' to 'local' at position 7",
+      "reason": "'maría' is a proper noun (name), while 'seria' is a completely different word, changing the intended recipient or subject.",
       "score": 1
     }
   ]

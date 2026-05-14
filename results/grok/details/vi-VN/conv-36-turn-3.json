@@ -1,37 +1,22 @@
 {
   "gold": "Email của tôi là thu chấm trần a còng Gmail chấm com.",
-  "predicted": "Email của tôi là thu chmn a gmail com",
+  "predicted": "Email của tôi là thu chấm trần a cộng g mail chấm com.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 4,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
   "werRefWords": 12,
   "werNormalizedGold": "email của tôi là thu chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "email của tôi là thu chmn a gmail com",
-  "significantWer": 1,
-  "majorErrorsCount": 4,
+  "werNormalizedPredicted": "email của tôi là thu chấm trần a còng g mail chấm com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "email của tôi là thu chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "email của tôi là thu chmn a gmail com",
+  "sigWerNormalizedPredicted": "email của tôi là thu chấm trần a còng g mail chấm com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'chấm' to 'chmn' at position 5",
-      "reason": "'chấm' is a Vietnamese word meaning 'dot' ('.') in an email address, while 'chmn' is not a valid word and does not convey the intended meaning, making the email address unclear.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'trần' at position 6",
-      "reason": "'trần' is part of the email username. Its omission significantly changes the email address, making it incorrect and unusable.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'còng' at position 8",
-      "reason": "'còng' means 'at' ('@') in Vietnamese email addresses. Its omission makes the email address format invalid and unrecognizable.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'chấm' at position 10",
-      "reason": "The final 'chấm' ('.') is necessary for the domain part of the email. Its omission makes the email address incomplete and incorrect.",
-      "score": 1
+      "error": "Substitution: 'gmail' to 'mail' at position 9",
+      "reason": "The word 'gmail' was split into 'g mail', but the meaning is preserved and it is still clear that the email provider is Gmail.",
+      "score": 3
     }
   ]
 }

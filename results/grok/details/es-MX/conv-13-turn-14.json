@@ -1,27 +1,27 @@
 {
   "gold": "Muy bien, sí, ya la vi.",
-  "predicted": "Muy bien, sigla la vi.",
+  "predicted": "Muy bien, sigue el avi.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 2,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "muy bien sí ya la vi",
-  "werNormalizedPredicted": "muy bien sigla la vi",
+  "werNormalizedPredicted": "muy bien sigue el avi",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "muy bien sí ya la vi",
-  "sigWerNormalizedPredicted": "muy bien sigla la vi",
+  "sigWerNormalizedPredicted": "muy bien sigue el avi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sí' to 'sigla' at position 2",
-      "reason": "'sí' means 'yes' in Spanish, while 'sigla' means 'acronym' and is unrelated. This substitution makes the sentence incoherent and changes the meaning significantly.",
+      "error": "Substitution: 'sí' to 'sigue' at position 2",
+      "reason": "'sí' means 'yes', while 'sigue' means 'continue' or 'follow'; this changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
-      "error": "Deletion: 'ya' at position 3",
-      "reason": "Omitting 'ya' ('already') changes the temporal meaning of the sentence, which can affect the overall intent, but the main idea is still somewhat understandable.",
-      "score": 2
+      "error": "Deletion: 'vi' at position 5",
+      "reason": "'ya' means 'already', while 'el' means 'the'; this substitution makes the sentence incoherent and changes the meaning.",
+      "score": 1
     }
   ]
 }

@@ -8,20 +8,20 @@
   "werNormalizedGold": "听到了吗",
   "werNormalizedPredicted": "听懂吗",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "听 到 了 吗",
   "sigWerNormalizedPredicted": "听 懂 吗",
   "sigWerErrors": [
     {
       "error": "Substitution: '到' to '懂' at position 1",
-      "reason": "'听到了吗' means 'Did you hear (it)?', while '听懂吗' means 'Did you understand?'. The substitution changes the meaning of the question significantly.",
+      "reason": "'听到了吗' means 'Did you hear (it)?', while '听懂吗' means 'Did you understand?'. The substitution changes the meaning of the question from hearing to understanding, which is a significant change.",
       "score": 1
     },
     {
       "error": "Deletion: '了' at position 2",
-      "reason": "Omitting '了' changes the tense/aspect of the sentence, but in this context, the main meaning is already changed by the previous substitution. The deletion further affects the meaning, but the main error is already significant.",
-      "score": 1
+      "reason": "Omitting '了' slightly changes the aspect of the verb, but the main meaning is already significantly changed by the previous error. On its own, this would be a minor error, but in context, the meaning is already derailed.",
+      "score": 2
     }
   ]
 }

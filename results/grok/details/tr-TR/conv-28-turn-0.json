@@ -1,16 +1,22 @@
 {
   "gold": "Merhaba Anna Hanım. Ben kredi kartımın limit artışını talep ediyorum.",
-  "predicted": "merhaba anna hanım ben kredi kartımın limit artışını talep ediyorum",
+  "predicted": "Merhaba, anla hanım. Ben kredi kartımın limit artışını talep ediyorum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "merhaba anna hanım ben kredi kartımın limit artışını talep ediyorum",
-  "werNormalizedPredicted": "merhaba anna hanım ben kredi kartımın limit artışını talep ediyorum",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "merhaba anla hanım ben kredi kartımın limit artışını talep ediyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "merhaba anna hanım ben kredi kartımın limit artışını talep ediyorum",
-  "sigWerNormalizedPredicted": "merhaba anna hanım ben kredi kartımın limit artışını talep ediyorum",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "merhaba anla hanım ben kredi kartımın limit artışını talep ediyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 1",
+      "reason": "'Anna' is a proper noun (a person's name), while 'anla' is a verb in Turkish meaning 'understand'. This changes the addressee from a person to a command, significantly altering the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

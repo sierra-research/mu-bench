@@ -1,37 +1,27 @@
 {
   "gold": "Tabii. Zaynep nokta Arslan at email nokta com.",
-  "predicted": "xaynep.arslan8@mail.com",
+  "predicted": "Tabii, zeynep nokta aslan 8 m e l nokta com",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 4,
+  "wer": 0.75,
+  "werEdits": 6,
   "werRefWords": 8,
   "werNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
-  "werNormalizedPredicted": "xaynep nokta arslan sekiz at mail nokta com",
-  "significantWer": 1,
-  "majorErrorsCount": 4,
+  "werNormalizedPredicted": "tabii zeynep nokta aslan sekiz m e l nokta com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "xaynep nokta arslan sekiz at mail nokta com",
+  "sigWerNormalizedPredicted": "tabii zeynep nokta aslan sekiz m e l nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tabii' to 'xaynep' at position 0",
-      "reason": "'tabii' (which means 'of course' in Turkish) is replaced with 'xaynep' (which appears to be a misspelling or misrecognition of a name, possibly 'zaynep'). This changes the meaning and derails the sentence, especially in the context of an email address.",
-      "score": 1
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 1",
+      "reason": "Minor spelling difference in a proper noun, but still clearly refers to the same name.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'zaynep' at position 1",
-      "reason": "The name 'zaynep' is missing from the actual transcription, which is critical information for an email address and significantly alters the intended meaning.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'sekiz' at position 4",
-      "reason": "'sekiz' means 'eight' in Turkish and is not present in the expected transcription. Its insertion adds unrelated information, making the email address incorrect.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'email' to 'mail' at position 5",
-      "reason": "'email' and 'mail' are similar, but in the context of an email address, 'email.com' and 'mail.com' are different domains. This could result in a failed communication, so it is a significant error.",
-      "score": 1
+      "error": "Substitution: 'arslan' to 'm' at position 3",
+      "reason": "Minor spelling difference in a proper noun, still recognizable as the same name.",
+      "score": 2
     }
   ]
 }

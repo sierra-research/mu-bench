@@ -1,42 +1,27 @@
 {
   "gold": "Tamam, dinlersen söyleyeceğim Anna. Artı 90 123 0 90 45 67.",
-  "predicted": "tamam dinlensin paylaşacağım ondan 6.90 123.0.90 45.67",
+  "predicted": "Tamam dinlensin paylaşacağım ondan. 6. 90 100. 23 0. 90 45. 67.",
   "unintelligible": false,
-  "wer": 0.5625,
-  "werEdits": 9,
+  "wer": 0.3125,
+  "werEdits": 5,
   "werRefWords": 16,
   "werNormalizedGold": "tamam dinlersen söyleyeceğim anna artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "tamam dinlensin paylaşacağım ondan altı virgül doksan yüz yirmi üç virgül sıfır virgül doksan kırk beş virgül altmış yedi",
+  "werNormalizedPredicted": "tamam dinlensin paylaşacağım ondan altı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 1,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "tamam dinlersen söyleyeceğim anna artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "tamam dinlensin paylaşacağım ondan altı virgül doksan yüz yirmi üç virgül sıfır virgül doksan kırk beş virgül altmış yedi",
+  "sigWerNormalizedPredicted": "tamam dinlensin paylaşacağım ondan altı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'dinlersen' to 'paylaşacağım' at position 1",
-      "reason": "'dinlensin' (let it be listened) is inserted instead of 'dinlersen' (if you listen), which changes the conditional meaning of the sentence.",
-      "score": 1
+      "error": "Substitution: 'dinlersen' to 'dinlensin' at position 1",
+      "reason": "'dinlersen' means 'if you listen', while 'dinlensin' means 'let it be listened'; this changes the subject and intent, but the overall context is still somewhat understandable.",
+      "score": 2
     },
     {
       "error": "Deletion: 'bir' at position 6",
-      "reason": "'paylaşacağım' (I will share) is a completely different verb and meaning from 'dinlersen' (if you listen), which changes the intent of the sentence.",
+      "reason": "Omitting 'bir' (one) from a sequence of numbers (likely a phone number) is a significant error as it changes the actual number.",
       "score": 1
-    },
-    {
-      "error": "Insertion: 'virgül' at position 10",
-      "reason": "Omitting 'bir' (one) from the phone number sequence changes the actual number, which is a significant error.",
-      "score": 1
-    },
-    {
-      "error": "Insertion: 'virgül' at position 11",
-      "reason": "Inserting 'virgül' (comma) in a phone number sequence may cause confusion in understanding the number, but does not change the digits themselves.",
-      "score": 2
-    },
-    {
-      "error": "Insertion: 'virgül' at position 14",
-      "reason": "Inserting 'virgül' (comma) again in the number sequence is a minor formatting error, but the digits are still present.",
-      "score": 2
     }
   ]
 }

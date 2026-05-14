@@ -1,21 +1,31 @@
 {
   "gold": "Yedek kartla ana kartın bir farkı var mıdır acaba? Onu siz bilebiliyor musunuz?",
-  "predicted": "yedek kartla ana kartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz?",
+  "predicted": "Yedek kartla anakartın bir farkı var mıdır acaba? Bunu siz bilebiliyor musunuz?",
   "unintelligible": false,
-  "wer": 0.07692307692307693,
-  "werEdits": 1,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
   "werRefWords": 13,
   "werNormalizedGold": "yedek kartla ana kartın bir farkı var mıdır acaba onu siz bilebiliyor musunuz",
-  "werNormalizedPredicted": "yedek kartla ana kartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz",
+  "werNormalizedPredicted": "yedek kartla anakartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "yedek kartla ana kartın bir farkı var mıdır acaba onu siz bilebiliyor musunuz",
-  "sigWerNormalizedPredicted": "yedek kartla ana kartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz",
+  "sigWerNormalizedPredicted": "yedek kartla anakartın bir farkı var mıdır acaba bunu siz bilebiliyor musunuz",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'ana' to 'anakartın' at position 2",
+      "reason": "'anakartın' merges 'ana' and 'kartın' into a single word, but the meaning is preserved in context as 'anakartın' means 'of the motherboard', which is the intended meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'kartın' at position 3",
+      "reason": "'kartın' is merged into 'anakartın' in the actual transcript, so the information is not lost, just combined. No loss of meaning.",
+      "score": 3
+    },
+    {
       "error": "Substitution: 'onu' to 'bunu' at position 9",
-      "reason": "'Onu' means 'that' and 'bunu' means 'this' in Turkish. The substitution changes the reference from 'that' to 'this', which can alter the meaning depending on context, but in this sentence, it is likely a minor shift in reference rather than a complete change in meaning.",
+      "reason": "'Onu' means 'that' and 'bunu' means 'this'; the substitution slightly shifts the reference but does not significantly change the meaning of the sentence in this context.",
       "score": 2
     }
   ]

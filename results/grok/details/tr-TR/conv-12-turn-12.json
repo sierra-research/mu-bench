@@ -1,22 +1,27 @@
 {
   "gold": "Hayır doğru değil, Ahmet ve Arslan arasında nokta var. Ahmet nokta Arslan.",
-  "predicted": "Hayır doğru değil Ahmet ile Arslan arasında nokta var Ahmet nokta Arslan",
+  "predicted": "Hayır, doğru değil. Ahmet ile aslan arasında nokta var. Ahmet nokta aslan.",
   "unintelligible": false,
-  "wer": 0.08333333333333333,
-  "werEdits": 1,
+  "wer": 0.25,
+  "werEdits": 3,
   "werRefWords": 12,
   "werNormalizedGold": "hayır doğru değil ahmet ve arslan arasında nokta var ahmet nokta arslan",
-  "werNormalizedPredicted": "hayır doğru değil ahmet ile arslan arasında nokta var ahmet nokta arslan",
+  "werNormalizedPredicted": "hayır doğru değil ahmet ile aslan arasında nokta var ahmet nokta aslan",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "hayır doğru değil ahmet ve arslan arasında nokta var ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "hayır doğru değil ahmet ile arslan arasında nokta var ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "hayır doğru değil ahmet ile aslan arasında nokta var ahmet nokta aslan",
   "sigWerErrors": [
     {
       "error": "Substitution: 've' to 'ile' at position 4",
-      "reason": "'ve' (and) and 'ile' (with) are different conjunctions, but in this context both indicate a connection between 'ahmet' and 'arslan' and do not change the overall meaning of the sentence.",
+      "reason": "'ve' (and) and 'ile' (with) are both conjunctions and in this context, the meaning of the sentence is not significantly changed by this substitution.",
       "score": 2
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 11",
+      "reason": "'arslan' and 'aslan' are variant spellings of the same Turkish word for 'lion', and in this context, the meaning is preserved.",
+      "score": 3
     }
   ]
 }

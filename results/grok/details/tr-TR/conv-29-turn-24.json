@@ -1,27 +1,27 @@
 {
   "gold": "At email nokta com adres, evet.",
-  "predicted": "It's ema point com address, yes.",
+  "predicted": "It may nokta com adresi, evet.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 6,
+  "wer": 0.5,
+  "werEdits": 3,
   "werRefWords": 6,
   "werNormalizedGold": "at email nokta com adres evet",
-  "werNormalizedPredicted": "it is ema point com address yes",
+  "werNormalizedPredicted": "it may nokta com adresi evet",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "at email nokta com adres evet",
-  "sigWerNormalizedPredicted": "it is ema point com address yes",
+  "sigWerNormalizedPredicted": "it may nokta com adresi evet",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'at' to 'is' at position 0",
-      "reason": "'it' is an extra word not present in the expected sentence, but does not significantly change the meaning of the sentence.",
-      "score": 2
+      "error": "Substitution: 'at' to 'it' at position 0",
+      "reason": "'at' and 'it' are completely different words and meanings; this changes the meaning of the phrase and could cause confusion.",
+      "score": 1
     },
     {
-      "error": "Substitution: 'adres' to 'address' at position 4",
-      "reason": "'at' is replaced by 'is', which changes the meaning of the phrase, especially in the context of an email address where 'at' is a key component. This is a significant error.",
-      "score": 1
+      "error": "Substitution: 'adres' to 'adresi' at position 4",
+      "reason": "'adresi' is the possessive or accusative form of 'adres' in Turkish, but in this context, the meaning is only slightly changed and the intent is still clear.",
+      "score": 2
     }
   ]
 }

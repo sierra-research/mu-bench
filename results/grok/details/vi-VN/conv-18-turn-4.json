@@ -1,26 +1,26 @@
 {
   "gold": "Email là thu chấm trần a còng Gmail chấm com.",
-  "predicted": "email là thu chmn@a gmail.com",
+  "predicted": "Email là thu chom trần a g mail chom com",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "email là thu chmn a còng gmail chấm com",
+  "werNormalizedPredicted": "email là thu chom trần a g mail chom com",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "email là thu chmn a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "email là thu chom trần a g mail chom com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'chấm' to 'chmn' at position 3",
-      "reason": "'chmn' is a misspelling of 'chấm', which is a key part of the email address (the word for 'dot'). This could cause confusion in the email address but the intent is still somewhat clear.",
+      "error": "Substitution: 'chấm' to 'chom' at position 3",
+      "reason": "'chấm' means 'dot' in Vietnamese email addresses, while 'chom' is a mispronunciation but still recognizable in context as 'dot'. The meaning is preserved.",
       "score": 2
     },
     {
-      "error": "Deletion: 'trần' at position 4",
-      "reason": "Omitting 'trần' removes a crucial part of the email username, making the email address incomplete and likely incorrect. This significantly affects the ability to use the email address as intended.",
+      "error": "Substitution: 'còng' to 'g' at position 6",
+      "reason": "'còng' means 'at' (the '@' symbol) in Vietnamese, but 'g' alone is not correct and could confuse the listener about the email address. This is a significant error as it affects the ability to reconstruct the email address.",
       "score": 1
     }
   ]

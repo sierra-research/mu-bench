@@ -1,21 +1,26 @@
 {
   "gold": "Ờ đúng rồi bạn ạ.",
-  "predicted": "I don't know, but...",
+  "predicted": "Doen we dan.",
   "unintelligible": false,
-  "wer": 1.25,
-  "werEdits": 5,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "đúng rồi bạn ạ",
-  "werNormalizedPredicted": "i do not know but",
+  "werNormalizedPredicted": "doen we dan",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "đúng rồi bạn ạ",
-  "sigWerNormalizedPredicted": "i do not know but",
+  "sigWerNormalizedPredicted": "doen we dan",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'đúng' to 'do' at position 0",
-      "reason": "The actual transcription is in a completely different language (English instead of Vietnamese), and the meaning is entirely changed.",
+      "error": "Substitution: 'đúng' to 'doen' at position 0",
+      "reason": "The actual transcription is in a different language and does not match the expected Vietnamese word, resulting in a complete loss of meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ạ' at position 3",
+      "reason": "The final polite particle is missing, further reducing the accuracy and politeness of the sentence.",
       "score": 1
     }
   ]

@@ -1,22 +1,22 @@
 {
   "gold": "Sí. Te repito el código.",
-  "predicted": "sí, sí, te repito el código",
+  "predicted": "Sí, sí, repito el código.",
   "unintelligible": false,
   "wer": 0.2,
   "werEdits": 1,
   "werRefWords": 5,
   "werNormalizedGold": "sí te repito el código",
-  "werNormalizedPredicted": "sí sí te repito el código",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "sí sí repito el código",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "sí te repito el código",
-  "sigWerNormalizedPredicted": "sí sí te repito el código",
+  "sigWerNormalizedPredicted": "sí sí repito el código",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'sí' at position 1",
-      "reason": "The extra 'sí' does not change the meaning of the sentence; it is a repetition that does not derail or alter the intent.",
-      "score": 2
+      "error": "Substitution: 'te' to 'sí' at position 1",
+      "reason": "The word 'te' (you) is replaced by 'sí' (yes), which changes the meaning of the sentence. The sentence now repeats 'sí sí', which is not the same as 'sí te'. This alters the intended meaning and could confuse the listener.",
+      "score": 1
     }
   ]
 }

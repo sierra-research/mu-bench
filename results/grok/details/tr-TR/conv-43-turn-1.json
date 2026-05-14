@@ -1,31 +1,26 @@
 {
   "gold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
-  "predicted": "banka kartımı süreceğim şu anla bana yeni kart gönderebilir misin",
+  "predicted": "Banka kartımı süreceğim şu anla. Bana yeni bir kart gönderebilir misin?",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 6,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
   "werRefWords": 12,
   "werNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
-  "werNormalizedPredicted": "banka kartımı süreceğim şu anla bana yeni kart gönderebilir misin",
+  "werNormalizedPredicted": "banka kartımı süreceğim şu anla bana yeni bir kart gönderebilir misin",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
-  "sigWerNormalizedPredicted": "banka kartımı süreceğim şu anla bana yeni kart gönderebilir misin",
+  "sigWerNormalizedPredicted": "banka kartımı süreceğim şu anla bana yeni bir kart gönderebilir misin",
   "sigWerErrors": [
     {
       "error": "Substitution: 'kartımın' to 'kartımı' at position 1",
-      "reason": "The possessive suffix changes from 'my card's' (kartımın) to 'my card' (kartımı), which slightly alters the meaning but does not derail the overall intent of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'anna' at position 5",
-      "reason": "The omission of the name 'anna' removes the addressee, which is important for directing the request and affects the clarity of the sentence.",
+      "reason": "'kartımın' (of my card) and 'kartımı' (my card as object) are different grammatical cases in Turkish. This changes the meaning of the sentence, as the original refers to the card's expiration, while the actual refers to the card as an object. This is a significant error.",
       "score": 1
     },
     {
-      "error": "Deletion: 'bir' at position 8",
-      "reason": "Omitting 'bir' (a) does not significantly change the meaning of the sentence, as 'yeni kart' (new card) is still understandable without the indefinite article.",
+      "error": "Deletion: 'anna' at position 5",
+      "reason": "'anna' is a proper noun (likely a name or assistant), and its omission removes the addressee of the request, which is important for the context. However, the request can still be understood, so this is a minor error.",
       "score": 2
     }
   ]

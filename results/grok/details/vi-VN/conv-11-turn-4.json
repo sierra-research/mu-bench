@@ -1,21 +1,26 @@
 {
   "gold": "C N 5 3 0.",
-  "predicted": "CNR 3 0.",
+  "predicted": "Cena 230.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
   "werNormalizedGold": "c n năm ba không",
-  "werNormalizedPredicted": "c n r ba không",
+  "werNormalizedPredicted": "cena hai ba không",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "c n năm ba không",
-  "sigWerNormalizedPredicted": "c n r ba không",
+  "sigWerNormalizedPredicted": "cena hai ba không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'năm' to 'r' at position 2",
-      "reason": "'năm' is the Vietnamese word for 'five', while 'r' is a single letter and does not represent the intended number in this context. This substitution makes the sequence incorrect, especially since this appears to be a spelled-out or code sequence where accuracy is critical.",
+      "error": "Substitution: 'c' to 'cena' at position 0",
+      "reason": "'cena' is a completely different word from 'c', which is likely a spelled-out letter or abbreviation. This changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'năm' at position 2",
+      "reason": "'năm' means 'five' and 'hai' means 'two' in Vietnamese. Substituting numbers changes the meaning of the sequence significantly.",
       "score": 1
     }
   ]

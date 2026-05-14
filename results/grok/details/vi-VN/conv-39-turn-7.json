@@ -1,31 +1,31 @@
 {
   "gold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
-  "predicted": "đúng rồi anna chuẩn rồi cảm ơn năm bạn nhé",
+  "predicted": "đúng rồi ạ, chuẩn, cảm ơn năm bạn nhé",
   "unintelligible": false,
   "wer": 0.375,
   "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
-  "werNormalizedPredicted": "đúng rồi anna chuẩn rồi cảm ơn năm bạn nhé",
+  "werNormalizedPredicted": "đúng rồi chuẩn cảm ơn năm bạn nhé",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
-  "sigWerNormalizedPredicted": "đúng rồi anna chuẩn rồi cảm ơn năm bạn nhé",
+  "sigWerNormalizedPredicted": "đúng rồi chuẩn cảm ơn năm bạn nhé",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'rồi' at position 4",
-      "reason": "The insertion of 'rồi' does not significantly change the meaning of the sentence; it is a common filler in Vietnamese and the sentence remains coherent.",
-      "score": 2
+      "error": "Deletion: 'anna' at position 2",
+      "reason": "Omitting the name 'anna' removes the addressee from the sentence, which can significantly change the meaning or context of the message.",
+      "score": 1
     },
     {
       "error": "Insertion: 'năm' at position 6",
-      "reason": "The insertion of 'năm' (which means 'five' or 'year') is out of context and makes the sentence confusing, potentially derailing the meaning.",
+      "reason": "'Năm' (meaning 'year' or 'five' in Vietnamese) is inserted where it does not belong, making the sentence confusing and incoherent.",
       "score": 1
     },
     {
       "error": "Substitution: 'nhá' to 'nhé' at position 7",
-      "reason": "'Nhá' and 'nhé' are both sentence-ending particles in Vietnamese with similar meanings and are often interchangeable in casual speech.",
+      "reason": "'Nhá' and 'nhé' are both Vietnamese sentence-ending particles with similar meanings, so this is a minor difference that does not change the overall meaning.",
       "score": 3
     }
   ]

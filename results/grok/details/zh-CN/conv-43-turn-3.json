@@ -1,27 +1,22 @@
 {
   "gold": "我想的，我现在。",
-  "predicted": "I want, uh, Washington.",
+  "predicted": "我想，呃，我现在",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 6,
+  "wer": 0.16666666666666666,
+  "werEdits": 1,
   "werRefWords": 6,
   "werNormalizedGold": "我想的我现在",
-  "werNormalizedPredicted": "i want washington",
-  "significantWer": 1,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "我想 我现在",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "我 想 的 我 现 在",
-  "sigWerNormalizedPredicted": "i want washington",
+  "sigWerNormalizedPredicted": "我 想 我 现 在",
   "sigWerErrors": [
     {
-      "error": "Substitution: '我' to 'i' at position 0",
-      "reason": "The expected transcript is in Chinese, while the actual transcript is in English. This is a major language mismatch and the meaning is completely lost.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '我' at position 3",
-      "reason": "The expected word '我' (I/me) is missing in the actual transcript, which is in a different language and context, making it a significant error.",
-      "score": 1
+      "error": "Deletion: '的' at position 2",
+      "reason": "The word '的' is a grammatical particle in Chinese that often connects or modifies nouns, but its omission here does not significantly change the overall meaning of the sentence.",
+      "score": 2
     }
   ]
 }

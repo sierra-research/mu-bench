@@ -8,29 +8,29 @@
   "werNormalizedGold": "email của tôi là thu chấm trần a còng gmail chấm com",
   "werNormalizedPredicted": "email của tôi là thu chmn a gmail com",
   "significantWer": 1,
-  "majorErrorsCount": 4,
+  "majorErrorsCount": 3,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "email của tôi là thu chấm trần a còng gmail chấm com",
   "sigWerNormalizedPredicted": "email của tôi là thu chmn a gmail com",
   "sigWerErrors": [
     {
       "error": "Substitution: 'chấm' to 'chmn' at position 5",
-      "reason": "'chấm' is a Vietnamese word meaning 'dot' (used for email addresses), while 'chmn' is a misspelling that could confuse the listener and make the email address unclear.",
-      "score": 1
+      "reason": "'chmn' is a misspelling of 'chấm', which is a key separator in an email address. This could cause confusion in understanding or writing the email address, but the intent is somewhat clear.",
+      "score": 2
     },
     {
       "error": "Deletion: 'trần' at position 6",
-      "reason": "'trần' is part of the email username; omitting it significantly changes the email address and makes it incorrect.",
+      "reason": "Omitting 'trần', which is likely part of the email username, significantly changes the email address and could result in sending to the wrong address.",
       "score": 1
     },
     {
       "error": "Deletion: 'còng' at position 8",
-      "reason": "'còng' means 'at' (the '@' symbol) in Vietnamese, and omitting it makes the email address incomplete and unusable.",
+      "reason": "'còng' (meaning '@') is essential in an email address. Its omission makes the email address invalid and unrecognizable as an email.",
       "score": 1
     },
     {
       "error": "Deletion: 'chấm' at position 10",
-      "reason": "'chấm' means 'dot' ('.') in the domain part of the email; omitting it makes the email address invalid.",
+      "reason": "Omitting 'chấm' (meaning '.') in the domain part of the email address makes the address incomplete and invalid.",
       "score": 1
     }
   ]

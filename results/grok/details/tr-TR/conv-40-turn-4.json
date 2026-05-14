@@ -1,31 +1,36 @@
 {
   "gold": "Not alamadım, tekrar eder misin lütfen? Ama Türkçe söyle, İngilizce değil.",
-  "predicted": "Not alamadın tek kere edemisin sen ama Türkçe söyleyebilirsin i̇ngilizce değilim",
+  "predicted": "Not almadın, tekrar edebilir misiniz, lütfen? Ama Türkçe söyledim, İngilizce değilim.",
   "unintelligible": false,
-  "wer": 0.6363636363636364,
-  "werEdits": 7,
+  "wer": 0.45454545454545453,
+  "werEdits": 5,
   "werRefWords": 11,
   "werNormalizedGold": "not alamadım tekrar eder misin lütfen ama türkçe söyle ingilizce değil",
-  "werNormalizedPredicted": "not alamadın tek kere edemisin sen ama türkçe söyleyebilirsin ingilizce değilim",
+  "werNormalizedPredicted": "not almadın tekrar edebilir misiniz lütfen ama türkçe söyledim ingilizce değilim",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "not alamadım tekrar eder misin lütfen ama türkçe söyle ingilizce değil",
-  "sigWerNormalizedPredicted": "not alamadın tek kere edemisin sen ama türkçe söyleyebilirsin ingilizce değilim",
+  "sigWerNormalizedPredicted": "not almadın tekrar edebilir misiniz lütfen ama türkçe söyledim ingilizce değilim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'alamadım' to 'alamadın' at position 1",
-      "reason": "'Alamadım' means 'I couldn't get', while 'alamadın' means 'you couldn't get'. This changes the subject of the sentence, which can affect the meaning but does not derail the overall intent.",
+      "error": "Substitution: 'alamadım' to 'almadın' at position 1",
+      "reason": "'Alamadım' means 'I couldn't get' while 'almadın' means 'you didn't get'; this changes the subject of the sentence, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'eder' to 'edebilir' at position 3",
+      "reason": "'Eder' means 'do' (imperative), while 'edebilir' means 'can do' (possibility); this changes the modality but not the core meaning of the request.",
       "score": 2
     },
     {
-      "error": "Substitution: 'söyle' to 'söyleyebilirsin' at position 8",
-      "reason": "'Söyle' means 'say', while 'söyleyebilirsin' means 'you can say'. This changes the form from an imperative to a suggestion/possibility, but the overall meaning is preserved.",
-      "score": 2
+      "error": "Substitution: 'söyle' to 'söyledim' at position 8",
+      "reason": "'Söyle' is an imperative 'say', while 'söyledim' means 'I said'; this changes the sentence from a request to a statement, which significantly alters the meaning.",
+      "score": 1
     },
     {
       "error": "Substitution: 'değil' to 'değilim' at position 10",
-      "reason": "'Değil' means 'not', while 'değilim' means 'I am not'. This changes the sentence from a general negation to a personal statement, which alters the meaning significantly.",
+      "reason": "'Değil' means 'not', while 'değilim' means 'I am not'; this changes the sentence from a negation to a personal statement, which is a significant change in meaning.",
       "score": 1
     }
   ]

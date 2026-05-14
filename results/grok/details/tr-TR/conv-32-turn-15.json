@@ -1,26 +1,31 @@
 {
   "gold": "Peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire? Belki de çalındı. Kapatsak daha iyi olmaz mı kredi kartımı?",
-  "predicted": "Peki, bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire belki de çalındı kapatsak daha iyi olur mu kredi kartımı?",
+  "predicted": "Peki, bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire, belki de çalındı, kapatsak daha iyi olur, ne yapayım kredi kartıma?",
   "unintelligible": false,
-  "wer": 0.15,
-  "werEdits": 3,
+  "wer": 0.25,
+  "werEdits": 5,
   "werRefWords": 20,
   "werNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
-  "werNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire belki de çalındı kapatsak daha iyi olur mu kredi kartımı",
+  "werNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire belki de çalındı kapatsak daha iyi olur ne yapayım kredi kartıma",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "peki bu süreçte ne yapayım eğer kredi kartım çalınmışsa vesaire belki de çalındı kapatsak daha iyi olmaz mı kredi kartımı",
-  "sigWerNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire belki de çalındı kapatsak daha iyi olur mu kredi kartımı",
+  "sigWerNormalizedPredicted": "peki bu süreçte ne yapayım eğer kredi kartım çalınırsa vesaire belki de çalındı kapatsak daha iyi olur ne yapayım kredi kartıma",
   "sigWerErrors": [
     {
       "error": "Substitution: 'çalınmışsa' to 'çalınırsa' at position 8",
-      "reason": "'Çalınmışsa' means 'if it has been stolen' (past), while 'çalınırsa' means 'if it gets stolen' (future/conditional). This changes the temporal context but the overall intent of the sentence remains about what to do if the card is stolen. Minor error.",
+      "reason": "'Çalınmışsa' means 'if it has been stolen', while 'çalınırsa' means 'if it gets stolen'. The tense/aspect is different, but the overall intent of the sentence remains the same.",
       "score": 2
     },
     {
-      "error": "Substitution: 'olmaz' to 'olur' at position 16",
-      "reason": "'Olmaz' means 'wouldn't it be better', while 'olur' means 'would it be better'. This changes the sentence from a negative suggestion to a positive one, which reverses the meaning and could lead to the opposite action. Significant error.",
+      "error": "Substitution: 'olmaz' to 'ne' at position 16",
+      "reason": "The insertion of 'olur' ('would be better') instead of 'olmaz mı' ('wouldn't it be better') changes the polarity of the question, which can alter the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kartımı' to 'kartıma' at position 19",
+      "reason": "'Olmaz' ('wouldn't it be') is replaced by 'ne' ('what'), which disrupts the meaning and coherence of the sentence.",
       "score": 1
     }
   ]

@@ -1,36 +1,31 @@
 {
   "gold": "Necesito el estatus o cómo está mi línea.",
-  "predicted": "Eh, solo necesito la, eh, el, el estatus, ¿o cómo está? Eh, mi e-",
+  "predicted": "Solo necesito la el estatus, ¿o cómo está? mi",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 4,
+  "wer": 0.375,
+  "werEdits": 3,
   "werRefWords": 8,
   "werNormalizedGold": "necesito el estatus o como esta mi linea",
-  "werNormalizedPredicted": "solo necesito la el el estatus o como esta mi e",
+  "werNormalizedPredicted": "solo necesito la el estatus o como esta mi",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "necesito el estatus o como esta mi linea",
-  "sigWerNormalizedPredicted": "solo necesito la el el estatus o como esta mi e",
+  "sigWerNormalizedPredicted": "solo necesito la el estatus o como esta mi",
   "sigWerErrors": [
     {
       "error": "Insertion: 'solo' at position 0",
-      "reason": "'solo' adds extra information (only), but does not change the main intent of the sentence.",
+      "reason": "'Solo' adds emphasis but does not change the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Insertion: 'la' at position 1",
-      "reason": "The insertion of 'la' is a minor grammatical error and does not affect the meaning of the sentence.",
+      "reason": "The insertion of 'la' before 'el estatus' is a minor grammatical error in Spanish, but does not change the meaning of the sentence.",
       "score": 2
     },
     {
-      "error": "Insertion: 'el' at position 2",
-      "reason": "The repeated 'el' is a minor grammatical error and does not affect the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'linea' to 'e' at position 7",
-      "reason": "Replacing 'linea' (line) with 'e' removes the key object of the sentence, making the request unclear.",
+      "error": "Deletion: 'linea' at position 7",
+      "reason": "Omitting 'linea' removes the object of the inquiry, making the request incomplete and significantly changing the meaning.",
       "score": 1
     }
   ]

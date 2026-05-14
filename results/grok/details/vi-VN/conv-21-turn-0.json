@@ -1,16 +1,22 @@
 {
   "gold": "Trước khi bắt đầu, tôi muốn hỏi số theo dõi của cuộc gọi này.",
-  "predicted": "trước khi bắt đầu tôi muốn hỏi số theo dõi của cuộc gọi này",
+  "predicted": "Trước khi bắt đầu tôi muốn hỏi xâu theo dõi của cuộc gọi này.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07142857142857142,
+  "werEdits": 1,
   "werRefWords": 14,
   "werNormalizedGold": "trước khi bắt đầu tôi muốn hỏi số theo dõi của cuộc gọi này",
-  "werNormalizedPredicted": "trước khi bắt đầu tôi muốn hỏi số theo dõi của cuộc gọi này",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "trước khi bắt đầu tôi muốn hỏi xâu theo dõi của cuộc gọi này",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 14,
   "sigWerNormalizedGold": "trước khi bắt đầu tôi muốn hỏi số theo dõi của cuộc gọi này",
-  "sigWerNormalizedPredicted": "trước khi bắt đầu tôi muốn hỏi số theo dõi của cuộc gọi này",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "trước khi bắt đầu tôi muốn hỏi xâu theo dõi của cuộc gọi này",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'số' to 'xâu' at position 7",
+      "reason": "'số' means 'number' while 'xâu' means 'string' in Vietnamese; this changes the meaning of the question from asking for a number to asking for a string, which can confuse the intent of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -1,37 +1,37 @@
 {
   "gold": "Tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không? Tôi không biết đi in ở đâu.",
-  "predicted": "tôi có thể nào tới để mà ngân hàng để mà nhận cái sau kêu luôn không tôi không biết đi đâu",
+  "predicted": "ờm tôi có thể nào tới, tới, để mà ngân hàng để mà nhận cái sau kê luôn không? tôi không biết đi đâu.",
   "unintelligible": false,
   "wer": 0.3333333333333333,
   "werEdits": 7,
   "werRefWords": 21,
   "werNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
-  "werNormalizedPredicted": "tôi có thể nào tới để mà ngân hàng để mà nhận cái sau kêu luôn không tôi không biết đi đâu",
+  "werNormalizedPredicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết đi đâu",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
-  "sigWerNormalizedPredicted": "tôi có thể nào tới để mà ngân hàng để mà nhận cái sau kêu luôn không tôi không biết đi đâu",
+  "sigWerNormalizedPredicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết đi đâu",
   "sigWerErrors": [
     {
       "error": "Insertion: 'nào' at position 3",
-      "reason": "The insertion of 'nào' (which means 'which' or 'any') slightly changes the nuance but does not significantly alter the overall meaning of the sentence.",
+      "reason": "'nào' adds a minor nuance (like 'any' or 'which'), but does not change the overall meaning of the request.",
       "score": 2
     },
     {
-      "error": "Insertion: 'để' at position 4",
-      "reason": "The extra 'để' (meaning 'to' or 'for') is a minor grammatical redundancy and does not change the meaning of the sentence.",
+      "error": "Insertion: 'tới' at position 4",
+      "reason": "Repeating 'tới' is a minor redundancy and does not affect the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'sao' to 'sau' at position 10",
-      "reason": "'Sao kê' means 'bank statement', while 'sau kêu' is not a meaningful phrase in this context and could confuse the listener, significantly altering the meaning.",
+      "reason": "'sao kê' (bank statement) is a fixed term; 'sau kê' is not meaningful and changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'in' at position 18",
-      "reason": "Omitting 'in' (meaning 'to print') removes an important detail about printing, but the general intent of not knowing where to go is still clear. This is a minor error.",
-      "score": 2
+      "reason": "Omitting 'in' (to print) removes the specific action of printing, which changes the meaning of the sentence.",
+      "score": 1
     }
   ]
 }

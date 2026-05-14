@@ -1,21 +1,26 @@
 {
   "gold": "İyi günler.",
-  "predicted": "nie wiem.",
+  "predicted": "Dziękuję.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "iyi günler",
-  "werNormalizedPredicted": "nie wiem",
+  "werNormalizedPredicted": "dziękuję",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "iyi günler",
-  "sigWerNormalizedPredicted": "nie wiem",
+  "sigWerNormalizedPredicted": "dziękuję",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'iyi' to 'nie' at position 0",
-      "reason": "The actual transcription is in a completely different language (Polish instead of Turkish), resulting in a total loss of intended meaning.",
+      "error": "Substitution: 'iyi' to 'dziękuję' at position 0",
+      "reason": "'iyi' is Turkish for 'good', while 'dziękuję' is Polish for 'thank you'; the actual transcription is in a different language, which completely changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'günler' at position 1",
+      "reason": "'günler' (meaning 'days' in Turkish) is missing, further making the sentence incoherent and incomplete.",
       "score": 1
     }
   ]

@@ -1,21 +1,26 @@
 {
   "gold": "Rica ederim.",
-  "predicted": "I agree.",
+  "predicted": "ecraderim",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "rica ederim",
-  "werNormalizedPredicted": "i agree",
+  "werNormalizedPredicted": "ecraderim",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "rica ederim",
-  "sigWerNormalizedPredicted": "i agree",
+  "sigWerNormalizedPredicted": "ecraderim",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'rica' to 'i' at position 0",
-      "reason": "'rica ederim' is Turkish for 'you're welcome', while 'i agree' is an English phrase with a completely different meaning. The substitution changes both the language and the meaning of the sentence.",
+      "error": "Substitution: 'rica' to 'ecraderim' at position 0",
+      "reason": "The word 'rica' was replaced with 'ecraderim', which is not a valid word and does not convey the intended meaning. This significantly alters the meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ederim' at position 1",
+      "reason": "The word 'ederim' is missing, which is essential to the meaning of the phrase 'rica ederim' (which means 'you're welcome' in Turkish). Its omission makes the phrase incoherent.",
       "score": 1
     }
   ]

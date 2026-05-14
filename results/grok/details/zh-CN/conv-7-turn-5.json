@@ -1,31 +1,26 @@
 {
   "gold": "C N 3 7 8 9。",
-  "predicted": "CN 582.",
+  "predicted": "C N Fancy Bad Girl.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 3,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
   "werRefWords": 6,
   "werNormalizedGold": "c n 三 七 八 九",
-  "werNormalizedPredicted": "c n 五 八 二",
+  "werNormalizedPredicted": "c n fancy bad girl",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 2,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "c n 三 七 八 九",
-  "sigWerNormalizedPredicted": "c n 五 八 二",
+  "sigWerNormalizedPredicted": "c n fancy bad girl",
   "sigWerErrors": [
     {
-      "error": "Substitution: '三' to '五' at position 2",
-      "reason": "The number '三' (three) was replaced with '五' (five), which changes the intended number and meaning significantly.",
+      "error": "Substitution: '三' to 'fancy' at position 2",
+      "reason": "'三' is the Chinese character for 'three', while 'fancy' is an unrelated English word. This substitution completely changes the meaning and makes the transcription incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: '七' at position 3",
-      "reason": "The number '七' (seven) was omitted, which removes important information and alters the sequence of numbers.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '九' to '二' at position 5",
-      "reason": "The number '九' (nine) was replaced with '二' (two), which significantly changes the intended meaning of the sequence.",
+      "error": "Deletion: '九' at position 5",
+      "reason": "'九' (nine) is missing from the actual transcription, which omits important information from the sequence.",
       "score": 1
     }
   ]

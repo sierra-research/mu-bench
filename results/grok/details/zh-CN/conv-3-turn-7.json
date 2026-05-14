@@ -1,27 +1,22 @@
 {
   "gold": "你写了我的电子邮箱吗？",
-  "predicted": "Uh, you learned my email?",
+  "predicted": "啊，那你写了我的电子邮箱吗？",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 10,
+  "wer": 0.1,
+  "werEdits": 1,
   "werRefWords": 10,
   "werNormalizedGold": "你写了我的电子邮箱吗",
-  "werNormalizedPredicted": "you learned my email",
-  "significantWer": 1,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "那你写了我的电子邮箱吗",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "你 写 了 我 的 电 子 邮 箱 吗",
-  "sigWerNormalizedPredicted": "you learned my email",
+  "sigWerNormalizedPredicted": "那 你 写 了 我 的 电 子 邮 箱 吗",
   "sigWerErrors": [
     {
-      "error": "Substitution: '你' to 'you' at position 0",
-      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which completely changes the meaning and makes the sentence incoherent in context.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '的' at position 4",
-      "reason": "A key grammatical particle is missing, and the overall transcription is in a different language, making the sentence incoherent.",
-      "score": 1
+      "error": "Insertion: '那' at position 0",
+      "reason": "The insertion of '那' (which means 'then' or 'in that case') at the beginning does not change the main meaning of the sentence, it just adds a discourse marker or softener. The core information remains the same.",
+      "score": 2
     }
   ]
 }

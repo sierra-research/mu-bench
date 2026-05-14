@@ -1,32 +1,32 @@
 {
   "gold": "Urión, perdón. Urión 30, col. Tlatilco.",
-  "predicted": "Union, perdón, no es Union. Ureon 30 Col Platliico.",
+  "predicted": "Unión, perdón, no es unión, Urión 30, Col. Platillo.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 6,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
   "werRefWords": 6,
   "werNormalizedGold": "urión perdón urión treinta col tlatilco",
-  "werNormalizedPredicted": "union perdón no es union ureon treinta col platliico",
+  "werNormalizedPredicted": "unión perdón no es unión urión treinta col platillo",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 3,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "urión perdón urión treinta col tlatilco",
-  "sigWerNormalizedPredicted": "union perdón no es union ureon treinta col platliico",
+  "sigWerNormalizedPredicted": "unión perdón no es unión urión treinta col platillo",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'urión' to 'union' at position 0",
-      "reason": "'urión' and 'union' are different words and likely refer to different entities or names, which can significantly change the meaning, especially if these are proper nouns or addresses.",
+      "error": "Substitution: 'urión' to 'unión' at position 0",
+      "reason": "'Urión' and 'unión' are different words with different meanings; this could confuse the listener about the intended word.",
       "score": 1
     },
     {
-      "error": "Substitution: 'urión' to 'ureon' at position 2",
-      "reason": "The insertion of 'no' introduces a negation that was not present in the original, which can significantly alter the meaning of the sentence.",
+      "error": "Insertion: 'no' at position 2",
+      "reason": "The insertion of 'no' introduces negation, which can significantly alter the meaning of the sentence.",
       "score": 1
     },
     {
-      "error": "Substitution: 'tlatilco' to 'platliico' at position 5",
-      "reason": "'urión' and 'ureon' are minor spelling differences, likely due to accent omission or phonetic spelling, but the word is still recognizable.",
-      "score": 2
+      "error": "Substitution: 'tlatilco' to 'platillo' at position 5",
+      "reason": "'Tlatilco' is a proper noun (likely a place name), while 'platillo' means 'dish' in Spanish; this is a significant change in meaning.",
+      "score": 1
     }
   ]
 }

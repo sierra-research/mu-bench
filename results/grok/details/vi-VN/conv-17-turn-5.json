@@ -1,26 +1,31 @@
 {
   "gold": "Thu chấm trần a còng Gmail chấm com.",
-  "predicted": "thu chmn@gmail.com",
+  "predicted": "thu chom chom gmail com",
   "unintelligible": false,
-  "wer": 0.25,
-  "werEdits": 2,
+  "wer": 0.625,
+  "werEdits": 5,
   "werRefWords": 8,
   "werNormalizedGold": "thu chấm trần a còng gmail chấm com",
-  "werNormalizedPredicted": "thu chmn a còng gmail chấm com",
+  "werNormalizedPredicted": "thu chom chom gmail com",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "thu chấm trần a còng gmail chấm com",
-  "sigWerNormalizedPredicted": "thu chmn a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "thu chom chom gmail com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'chấm' to 'chmn' at position 1",
-      "reason": "'chmn' is a misspelling of 'chấm', which could cause confusion but the context (email address) makes it clear. Minor error.",
-      "score": 2
+      "error": "Substitution: 'chấm' to 'chom' at position 1",
+      "reason": "'chấm' is the Vietnamese word for 'dot' ('.'), which is important in email addresses. 'chom' is a mispronunciation and could confuse the meaning, especially in the context of an email address.",
+      "score": 1
     },
     {
-      "error": "Deletion: 'trần' at position 2",
-      "reason": "Omitting 'trần' removes a key part of the email address, making it incomplete and potentially undeliverable. This is a significant error.",
+      "error": "Deletion: 'a' at position 3",
+      "reason": "Missing the 'a' (which stands for 'at' or '@') in an email address makes the address invalid and unrecognizable as an email, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 6",
+      "reason": "Missing 'chấm' (dot) before 'com' in an email address makes the address incomplete and invalid, which is a significant error.",
       "score": 1
     }
   ]

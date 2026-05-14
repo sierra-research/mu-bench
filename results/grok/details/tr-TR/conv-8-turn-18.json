@@ -1,47 +1,37 @@
 {
   "gold": "Tabii. E-posta adresimi kodluyorum. Zonguldak, pardon tekrar başlıyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at işareti, daha sonra Edirne, Manisa, Adana, İstanbul, Lüleburgaz nokta Ceyhan, Ordu, Manisa.",
-  "predicted": "tabii epod-post adresimi kodluyorum zonguldak zonguldak par- tekrar başlıyorum zonguldak adana yozgat niğde edirne prasa nokta adana rize samsun lüleburgaz adana niğde et işareti daha sonra edirne manisa adana istanbul vlorbogaz nokta cihan ordu manisa",
+  "predicted": "Tabii. E-posta adresimi kodluyorum. zonguldak. Zonguldak. Tekrar başlıyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, Prasa nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde. Et işareti daha sonra Edirne, Manisa, Adana, İstanbul, Lebugaz nokta Ceyhan, Ordu, Manisa.",
   "unintelligible": false,
-  "wer": 0.22857142857142856,
-  "werEdits": 8,
+  "wer": 0.11428571428571428,
+  "werEdits": 4,
   "werRefWords": 35,
   "werNormalizedGold": "tabii e posta adresimi kodluyorum zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa nokta adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lüleburgaz nokta ceyhan ordu manisa",
-  "werNormalizedPredicted": "tabii epod post adresimi kodluyorum zonguldak zonguldak par tekrar başlıyorum zonguldak adana yozgat niğde edirne prasa nokta adana rize samsun lüleburgaz adana niğde et işareti daha sonra edirne manisa adana istanbul vlorbogaz nokta cihan ordu manisa",
+  "werNormalizedPredicted": "tabii e posta adresimi kodluyorum zonguldak zonguldak tekrar başlıyorum zonguldak adana yozgat niğde edirne prasa nokta adana rize samsun lüleburgaz adana niğde et işareti daha sonra edirne manisa adana istanbul lebugaz nokta ceyhan ordu manisa",
   "significantWer": 1,
-  "majorErrorsCount": 4,
+  "majorErrorsCount": 1,
   "totalWordsCount": 35,
   "sigWerNormalizedGold": "tabii e posta adresimi kodluyorum zonguldak pardon tekrar başlıyorum zonguldak adana yozgat niğde edirne pırasa nokta adana rize samsun lüleburgaz adana niğde at işareti daha sonra edirne manisa adana istanbul lüleburgaz nokta ceyhan ordu manisa",
-  "sigWerNormalizedPredicted": "tabii epod post adresimi kodluyorum zonguldak zonguldak par tekrar başlıyorum zonguldak adana yozgat niğde edirne prasa nokta adana rize samsun lüleburgaz adana niğde et işareti daha sonra edirne manisa adana istanbul vlorbogaz nokta cihan ordu manisa",
+  "sigWerNormalizedPredicted": "tabii e posta adresimi kodluyorum zonguldak zonguldak tekrar başlıyorum zonguldak adana yozgat niğde edirne prasa nokta adana rize samsun lüleburgaz adana niğde et işareti daha sonra edirne manisa adana istanbul lebugaz nokta ceyhan ordu manisa",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'e' to 'epod' at position 1",
-      "reason": "'epod' is a significant mistranscription of 'e', especially in the context of spelling out an email address. This could cause confusion or incorrect email entry.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'pardon' to 'par' at position 6",
-      "reason": "An extra 'zonguldak' in the sequence could confuse the listener about the correct spelling of the email address, making it a significant error.",
+      "error": "Substitution: 'pardon' to 'zonguldak' at position 6",
+      "reason": "'pardon' (meaning 'sorry' or 'excuse me') is replaced with 'zonguldak' (a city name), which changes the meaning and disrupts the flow of the sentence.",
       "score": 1
     },
     {
       "error": "Substitution: 'pırasa' to 'prasa' at position 14",
-      "reason": "'par' is not a valid replacement for 'pardon' in this context and disrupts the meaning, especially in a spelling or dictation scenario.",
-      "score": 1
+      "reason": "'pırasa' and 'prasa' are minor spelling variations of the same word (leek in Turkish), so the meaning is preserved.",
+      "score": 3
     },
     {
       "error": "Substitution: 'at' to 'et' at position 22",
-      "reason": "Minor misspelling, but the intended word is still recognizable and does not change the meaning.",
-      "score": 2
+      "reason": "'at' and 'et' are phonetically similar in Turkish and both can refer to the '@' symbol in email addresses, so the meaning is preserved.",
+      "score": 3
     },
     {
-      "error": "Substitution: 'lüleburgaz' to 'vlorbogaz' at position 30",
-      "reason": "In Turkish, 'at' is used for the '@' symbol in email addresses. 'et' is a common mishearing but still widely understood in context.",
+      "error": "Substitution: 'lüleburgaz' to 'lebugaz' at position 30",
+      "reason": "Minor misspelling of a proper noun (city name), still recognizable and does not change the meaning.",
       "score": 2
-    },
-    {
-      "error": "Substitution: 'ceyhan' to 'cihan' at position 32",
-      "reason": "'vlorbogaz' is a significant distortion of 'lüleburgaz', which could lead to a completely different or unrecognizable word in the context of spelling an email address.",
-      "score": 1
     }
   ]
 }

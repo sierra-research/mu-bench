@@ -8,20 +8,20 @@
   "werNormalizedGold": "是 美玲 at email dot com",
   "werNormalizedPredicted": "shirmailing at email dot com",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "是 美 玲 at email dot com",
   "sigWerNormalizedPredicted": "shirmailing at email dot com",
   "sigWerErrors": [
     {
       "error": "Substitution: '是' to 'shirmailing' at position 0",
-      "reason": "The expected input contains Chinese characters representing a name, but the actual transcription is an English-sounding word that does not correspond to the original name. This changes the identity being referenced and is a significant error.",
+      "reason": "The expected input contains three Chinese characters representing a name, while the actual transcription is a single English-sounding word that does not correspond to the original name. This completely changes the identity being referenced and is a significant error.",
       "score": 1
     },
     {
       "error": "Deletion: '美' at position 1",
-      "reason": "A character from the name is missing in the actual transcription, which alters the name and could lead to incorrect identification. This is a significant error.",
-      "score": 1
+      "reason": "infra_error",
+      "score": 2
     }
   ]
 }

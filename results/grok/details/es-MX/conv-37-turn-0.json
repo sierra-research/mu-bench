@@ -1,17 +1,17 @@
 {
   "gold": "Ana, gracias. Quería solicitar el estado de cuenta de mi tarjeta de crédito. ¿Tú me podrías ayudar con eso?",
-  "predicted": "Anna, gracias. Quería, eh, solicitar, eh, el estado de cuenta de mi tarjeta de crédito. ¿Tú me podrías ayudar? I got it, sir.",
+  "predicted": "Anna, gracias. Quería solicitar el estado de cuenta de mi tarjeta de crédito, ¿tú me podrías ayudar? I don't know.",
   "unintelligible": false,
-  "wer": 0.47368421052631576,
-  "werEdits": 9,
+  "wer": 0.2631578947368421,
+  "werEdits": 5,
   "werRefWords": 19,
   "werNormalizedGold": "ana gracias quería solicitar el estado de cuenta de mi tarjeta de crédito tú me podrías ayudar con eso",
-  "werNormalizedPredicted": "anna gracias queria solicitar el estado de cuenta de mi tarjeta de credito tu me podrias ayudar i got it sir",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "anna gracias quería solicitar el estado de cuenta de mi tarjeta de crédito tú me podrías ayudar i do not know",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "ana gracias quería solicitar el estado de cuenta de mi tarjeta de crédito tú me podrías ayudar con eso",
-  "sigWerNormalizedPredicted": "anna gracias queria solicitar el estado de cuenta de mi tarjeta de credito tu me podrias ayudar i got it sir",
+  "sigWerNormalizedPredicted": "anna gracias quería solicitar el estado de cuenta de mi tarjeta de crédito tú me podrías ayudar i do not know",
   "sigWerErrors": [
     {
       "error": "Substitution: 'ana' to 'anna' at position 0",
@@ -19,24 +19,9 @@
       "score": 2
     },
     {
-      "error": "Substitution: 'quería' to 'queria' at position 2",
-      "reason": "Missing accent mark, but the meaning and pronunciation are the same in context.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'crédito' to 'credito' at position 12",
-      "reason": "Missing accent mark, but the word is still clearly understood.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'podrías' to 'podrias' at position 15",
-      "reason": "Missing accent mark, but the meaning is unchanged.",
-      "score": 3
-    },
-    {
-      "error": "Substitution: 'con' to 'it' at position 17",
-      "reason": "Insertion of an English word ('i') in a Spanish sentence, which disrupts the language consistency but does not derail the meaning.",
-      "score": 2
+      "error": "Substitution: 'con' to 'not' at position 17",
+      "reason": "The insertion of 'i' starts an unrelated English phrase, which is not part of the expected sentence and introduces confusion.",
+      "score": 1
     }
   ]
 }

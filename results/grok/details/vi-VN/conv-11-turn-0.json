@@ -1,36 +1,41 @@
 {
   "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
-  "predicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cấp thẻ mới giúp hỗ trợ là hiện tại khi nào chúng bị có",
+  "predicted": "ờ xin chào tôi ờ đây là tôi làm bớt thầy á cái ờ tôi xin gặp thầy mới giờ muốn hỏi coi là ở hiện tại khi nào chúng mình có?",
   "unintelligible": false,
-  "wer": 0.5238095238095238,
-  "werEdits": 11,
+  "wer": 0.6666666666666666,
+  "werEdits": 14,
   "werRefWords": 21,
   "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "werNormalizedPredicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cấp thẻ mới giúp hỗ trợ là hiện tại khi nào chúng bị có",
+  "werNormalizedPredicted": "xin chào tôi đây là tôi làm bớt thầy á cái tôi xin gặp thầy mới giờ muốn hỏi coi là ở hiện tại khi nào chúng mình có",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 3,
   "totalWordsCount": 21,
   "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
-  "sigWerNormalizedPredicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cấp thẻ mới giúp hỗ trợ là hiện tại khi nào chúng bị có",
+  "sigWerNormalizedPredicted": "xin chào tôi đây là tôi làm bớt thầy á cái tôi xin gặp thầy mới giờ muốn hỏi coi là ở hiện tại khi nào chúng mình có",
   "sigWerErrors": [
     {
       "error": "Insertion: 'đây' at position 3",
-      "reason": "'đây' (here/this) is an extra word that does not change the overall meaning of the sentence, which is about losing a card and requesting a new one.",
+      "reason": "'đây' (here/this) is an extra word that does not change the overall meaning of the sentence, as it just adds a self-reference.",
       "score": 2
     },
     {
-      "error": "Substitution: 'mất' to 'thảy' at position 4",
-      "reason": "'bất' is an extra word, but together with 'thảy' forms 'bất thảy', which is not the intended meaning. This insertion contributes to a significant change in meaning.",
+      "error": "Substitution: 'mất' to 'á' at position 4",
+      "reason": "'bớt' (reduce) is an extra word that does not fit the context and could confuse the meaning, making the sentence less coherent.",
       "score": 1
     },
     {
-      "error": "Substitution: 'giờ' to 'hỗ' at position 11",
-      "reason": "'mất' means 'lost', while 'thảy' means 'throw' or 'all', which changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'cấp' to 'gặp' at position 8",
+      "reason": "'á' is a filler or interjection replacing 'mất' (lost), which is crucial to the meaning (losing the card). This changes the core meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'coi' at position 14",
+      "reason": "'cấp' (issue) is replaced by 'gặp' (meet), which changes the intent from requesting a new card to meeting someone, altering the meaning significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'chuẩn' to 'chúng' at position 18",
-      "reason": "The insertion of 'giúp' (help) does not change the main intent of the sentence, which is to request a new card.",
+      "reason": "'coi' (see/check) is an extra word that does not significantly change the meaning of the question being asked.",
       "score": 2
     }
   ]

@@ -1,21 +1,31 @@
 {
   "gold": "Không phải. Số điện thoại là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "không phải số điện thoại là cộng tám mười bốn chín một một hai ba bốn năm sáu bảy tám",
+  "predicted": "không phải số điện thoại là 84 91 234 56 8",
   "unintelligible": false,
-  "wer": 0.05,
-  "werEdits": 1,
+  "wer": 0.15,
+  "werEdits": 3,
   "werRefWords": 20,
   "werNormalizedGold": "không phải số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "không phải số điện thoại là cộng tám mười bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "không phải số điện thoại là tám mươi bốn chín một hai ba bốn năm sáu tám",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 3,
   "totalWordsCount": 20,
   "sigWerNormalizedGold": "không phải số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "không phải số điện thoại là cộng tám mười bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "không phải số điện thoại là tám mươi bốn chín một hai ba bốn năm sáu tám",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'mươi' to 'mười' at position 8",
-      "reason": "'mươi' means 'tens' (e.g., eighty-four), while 'mười' means 'ten'. This changes the number from 'tám mươi bốn' (eighty-four) to 'tám mười bốn' (eight fourteen), which is a significant change in the phone number.",
+      "error": "Deletion: 'cộng' at position 6",
+      "reason": "'cộng' (meaning '+') is the country code prefix in a phone number. Omitting it changes the meaning and format of the phone number, making it incomplete or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'một' at position 12",
+      "reason": "A digit is missing from the phone number, which makes the number incorrect and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bảy' at position 18",
+      "reason": "A digit is missing from the phone number, which makes the number incorrect and unusable.",
       "score": 1
     }
   ]

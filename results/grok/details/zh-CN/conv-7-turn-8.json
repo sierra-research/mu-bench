@@ -1,26 +1,26 @@
 {
   "gold": "C N 3 7 8 对吗？",
-  "predicted": "C N C B 21",
+  "predicted": "C N C B, duema.",
   "unintelligible": false,
   "wer": 0.7142857142857143,
   "werEdits": 5,
   "werRefWords": 7,
   "werNormalizedGold": "c n 三 七 八 对吗",
-  "werNormalizedPredicted": "c n c b 二 一",
+  "werNormalizedPredicted": "c n c b duema",
   "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "c n 三 七 八 对 吗",
-  "sigWerNormalizedPredicted": "c n c b 二 一",
+  "sigWerNormalizedPredicted": "c n c b duema",
   "sigWerErrors": [
     {
       "error": "Substitution: '三' to 'c' at position 2",
-      "reason": "A Chinese numeral was replaced with an unrelated Latin letter, which changes the meaning and makes the sequence incoherent.",
+      "reason": "The Chinese character '三' (three) is replaced with 'c', which is a completely different word and meaning. This significantly alters the intended meaning, especially in a sequence of numbers or characters.",
       "score": 1
     },
     {
-      "error": "Deletion: '吗' at position 6",
-      "reason": "The question particle '吗' is missing, which changes the sentence from a question to a statement.",
+      "error": "Deletion: '对' at position 5",
+      "reason": "The word '对' is missing in the actual transcription, which could affect the meaning or confirmation in the sentence.",
       "score": 1
     }
   ]

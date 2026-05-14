@@ -1,16 +1,22 @@
 {
   "gold": "Tamam. Tabii bekliyorum.",
-  "predicted": "Tamam. Mhm, sabi bekliyorum.",
+  "predicted": "Tamam. bekliyorum.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 1,
   "werRefWords": 3,
   "werNormalizedGold": "tamam tabii bekliyorum",
-  "werNormalizedPredicted": "tamam tabii bekliyorum",
+  "werNormalizedPredicted": "tamam bekliyorum",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "tamam tabii bekliyorum",
-  "sigWerNormalizedPredicted": "tamam tabii bekliyorum",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "tamam bekliyorum",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'tabii' at position 1",
+      "reason": "'tabii' (meaning 'of course' in Turkish) is omitted, but the main intent of the sentence ('tamam bekliyorum' = 'okay, I'm waiting') is still clear. The omission makes the sentence slightly less polite or affirmative, but does not significantly change the overall meaning.",
+      "score": 2
+    }
+  ]
 }

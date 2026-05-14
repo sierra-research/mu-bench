@@ -1,32 +1,37 @@
 {
   "gold": "Tôi muốn được xem tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại, nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì.",
-  "predicted": "Tôi muốn được xem cái tình trạng thẻ của tôi. Tôi làm mất thẻ và có xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa thấy thông tin gì.",
+  "predicted": "tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và tôi xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa thấy thông tin gì",
   "unintelligible": false,
-  "wer": 0.0967741935483871,
-  "werEdits": 3,
+  "wer": 0.12903225806451613,
+  "werEdits": 4,
   "werRefWords": 31,
   "werNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
-  "werNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa thấy thông tin gì",
+  "werNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và tôi xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa thấy thông tin gì",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 31,
   "sigWerNormalizedGold": "tôi muốn được xem tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng đã đợi hai tuần rồi mà vẫn chưa thấy thông tin gì",
-  "sigWerNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và có xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa thấy thông tin gì",
+  "sigWerNormalizedPredicted": "tôi muốn được xem cái tình trạng thẻ của tôi tôi làm mất thẻ và tôi xin cấp lại nhưng mà đã đợi hai tuần mà vẫn chưa thấy thông tin gì",
   "sigWerErrors": [
     {
       "error": "Insertion: 'cái' at position 4",
       "reason": "'cái' is a classifier in Vietnamese and its insertion here does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'có' to 'tôi' at position 14",
+      "reason": "Replacing 'có' (have) with 'tôi' (I) slightly changes the subject of the clause, but the overall meaning (requesting card re-issuance) is preserved.",
       "score": 2
     },
     {
       "error": "Insertion: 'mà' at position 19",
-      "reason": "'mà' is a discourse particle that adds emphasis but does not change the core meaning of the sentence.",
-      "score": 2
+      "reason": "'mà' is a discourse particle that adds emphasis but does not change the core meaning.",
+      "score": 3
     },
     {
       "error": "Deletion: 'rồi' at position 23",
-      "reason": "'rồi' indicates completion or that something has already happened; its omission slightly affects the nuance but not the main meaning.",
-      "score": 2
+      "reason": "'rồi' (already) adds a sense of completion, but its omission does not significantly alter the meaning.",
+      "score": 3
     }
   ]
 }

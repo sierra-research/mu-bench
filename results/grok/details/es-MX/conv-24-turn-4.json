@@ -1,21 +1,26 @@
 {
   "gold": "No, ya va ahí.",
-  "predicted": "não é já é vai",
+  "predicted": "Não é verdade.",
   "unintelligible": false,
-  "wer": 1.25,
-  "werEdits": 5,
+  "wer": 0.75,
+  "werEdits": 3,
   "werRefWords": 4,
   "werNormalizedGold": "no ya va ahí",
-  "werNormalizedPredicted": "não é já é vai",
+  "werNormalizedPredicted": "no es verdad",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "no ya va ahí",
-  "sigWerNormalizedPredicted": "não é já é vai",
+  "sigWerNormalizedPredicted": "no es verdad",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'no' to 'é' at position 0",
-      "reason": "'no' (Spanish) and 'não' (Portuguese) are different words in different languages, which changes the language of the sentence and makes it incoherent for the intended language.",
+      "error": "Substitution: 'ya' to 'es' at position 1",
+      "reason": "'ya' (already) and 'es' (is) are completely different words and change the meaning of the sentence, resulting in a different statement.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ahí' at position 3",
+      "reason": "Missing 'ahí' (there) removes important information about location, further derailing the intended meaning.",
       "score": 1
     }
   ]

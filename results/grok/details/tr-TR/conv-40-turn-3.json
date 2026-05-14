@@ -1,36 +1,26 @@
 {
   "gold": "Siz tekrar edin, ben alamadım, not alamadım.",
-  "predicted": "C sekracı ben alamadım, notaladım.",
+  "predicted": "Çiçek aracılığıyla alamadım, not alamadım.",
   "unintelligible": false,
-  "wer": 0.7142857142857143,
-  "werEdits": 5,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
   "werRefWords": 7,
   "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
-  "werNormalizedPredicted": "c sekracı ben alamadım notaladım",
+  "werNormalizedPredicted": "çiçek aracılığıyla alamadım not alamadım",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
-  "sigWerNormalizedPredicted": "c sekracı ben alamadım notaladım",
+  "sigWerNormalizedPredicted": "çiçek aracılığıyla alamadım not alamadım",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'siz' to 'c' at position 0",
-      "reason": "'c' is not a valid substitution for 'siz' (which means 'you' in Turkish); this changes the subject and makes the sentence incoherent.",
+      "error": "Substitution: 'siz' to 'çiçek' at position 0",
+      "reason": "'siz' means 'you' and 'çiçek' means 'flower' in Turkish; this is a completely different word and changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'edin' at position 2",
-      "reason": "Omitting 'edin' (which means 'do' or 'please do') removes the imperative form, making the request incomplete.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'not' to 'notaladım' at position 5",
-      "reason": "'not' means 'note', while 'notaladım' is a verb form meaning 'I took note'; this changes the meaning but is still related to the context.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'alamadım' at position 6",
-      "reason": "Omitting 'alamadım' (which means 'I couldn't get') removes important information, making the sentence incomplete.",
+      "reason": "'edin' is a verb meaning 'do' or 'make', and its omission further derails the intended meaning of the sentence.",
       "score": 1
     }
   ]

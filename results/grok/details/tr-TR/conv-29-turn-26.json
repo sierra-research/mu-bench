@@ -1,21 +1,26 @@
 {
   "gold": "Tamam. At email nokta com.",
-  "predicted": "Tamam, at emil nokta com. Mm-hm.",
+  "predicted": "Tamam, atemel nokt com. Mm-hm.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.6,
+  "werEdits": 3,
   "werRefWords": 5,
   "werNormalizedGold": "tamam at email nokta com",
-  "werNormalizedPredicted": "tamam at emil nokta com",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "tamam atemel nokt com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "tamam at email nokta com",
-  "sigWerNormalizedPredicted": "tamam at emil nokta com",
+  "sigWerNormalizedPredicted": "tamam atemel nokt com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'email' to 'emil' at position 2",
-      "reason": "'emil' is a misspelling of 'email', but the intended meaning is still clear in the context of an email address. This is a minor error.",
+      "error": "Substitution: 'at' to 'atemel' at position 1",
+      "reason": "'atemel' is a significant distortion of 'at email', merging two words and introducing a non-existent word, which makes the email address unclear and could cause misunderstanding.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 3",
+      "reason": "'nokt' is a misspelling of 'nokta', but the meaning is still somewhat clear in the context of an email address, though it could cause confusion.",
       "score": 2
     }
   ]

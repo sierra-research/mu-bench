@@ -1,21 +1,26 @@
 {
   "gold": "Ah sí.",
-  "predicted": "Ah, see.",
+  "predicted": "See.",
   "unintelligible": false,
-  "wer": 0.5,
-  "werEdits": 1,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "ah sí",
-  "werNormalizedPredicted": "ah see",
+  "werNormalizedPredicted": "see",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "ah sí",
-  "sigWerNormalizedPredicted": "ah see",
+  "sigWerNormalizedPredicted": "see",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sí' to 'see' at position 1",
-      "reason": "'sí' is the Spanish word for 'yes', while 'see' is an English verb meaning 'to look'. The substitution changes the language and the meaning of the word, making the sentence incoherent in context.",
+      "error": "Substitution: 'ah' to 'see' at position 0",
+      "reason": "'ah' is an interjection in Spanish meaning 'oh' or 'ah', while 'see' is an English verb meaning 'to perceive with the eyes'; this changes the language and meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sí' at position 1",
+      "reason": "'sí' means 'yes' in Spanish and is missing from the actual transcription, which removes an affirmative response and changes the meaning significantly.",
       "score": 1
     }
   ]

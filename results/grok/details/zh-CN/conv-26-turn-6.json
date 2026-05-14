@@ -1,21 +1,26 @@
 {
   "gold": "C N 7 0 7 0 6。",
-  "predicted": "706",
+  "predicted": "七 N 七零六",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werEdits": 4,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
   "werRefWords": 7,
   "werNormalizedGold": "c n 七 零 七 零 六",
-  "werNormalizedPredicted": "七 零 六",
+  "werNormalizedPredicted": "七 n 七 零 六",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "c n 七 零 七 零 六",
-  "sigWerNormalizedPredicted": "七 零 六",
+  "sigWerNormalizedPredicted": "七 n 七 零 六",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'c' at position 0",
-      "reason": "The letter 'c' is missing from the beginning of a sequence that appears to be a code or identifier. Missing a character in such sequences can significantly alter the meaning or validity of the code.",
+      "error": "Substitution: 'c' to '七' at position 0",
+      "reason": "The letter 'c' was replaced with the Chinese character '七', which is a significant change, especially in a sequence where each character is important (such as a code or identifier). This alters the intended meaning or value.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '七' at position 2",
+      "reason": "The digit '零' (zero) was omitted from the sequence, which is significant in a string of numbers or codes, as it changes the value or meaning of the sequence.",
       "score": 1
     }
   ]

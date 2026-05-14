@@ -1,31 +1,26 @@
 {
   "gold": "君玲 at email dot com。已经说了几次。",
-  "predicted": "dreamling at email dot com, you've said that word before.",
+  "predicted": "drilling at email dot com 已经说了几次",
   "unintelligible": false,
-  "wer": 0.6666666666666666,
-  "werEdits": 8,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
   "werRefWords": 12,
   "werNormalizedGold": "君玲 at email dot com 已经说了几次",
-  "werNormalizedPredicted": "dreamling at email dot com you ve said that word before",
+  "werNormalizedPredicted": "drilling at email dot com 已经说了几次",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 2,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "君 玲 at email dot com 已 经 说 了 几 次",
-  "sigWerNormalizedPredicted": "dreamling at email dot com you ve said that word before",
+  "sigWerNormalizedPredicted": "drilling at email dot com 已 经 说 了 几 次",
   "sigWerErrors": [
     {
-      "error": "Substitution: '君' to 'dreamling' at position 0",
-      "reason": "'君' is a Chinese name, while 'dreamling' is an English word with no semantic or phonetic relation. This completely changes the meaning and identity.",
+      "error": "Substitution: '君' to 'drilling' at position 0",
+      "reason": "'君' is a Chinese name, while 'drilling' is an unrelated English word. This substitution completely changes the meaning and makes the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "'玲' is part of the name '君玲'. Its omission results in a loss of the correct name, which is significant.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: '已' to 'you' at position 6",
-      "reason": "'已' means 'already' in Chinese, while 'you' is a pronoun in English. This is a language substitution and changes the meaning.",
+      "reason": "'玲' is part of the name '君玲'. Its omission results in an incomplete or incorrect name, which is a significant error for proper nouns.",
       "score": 1
     }
   ]

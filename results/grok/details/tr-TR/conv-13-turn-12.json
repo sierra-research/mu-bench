@@ -1,26 +1,26 @@
 {
   "gold": "Hayır. Hayır yanlış söylediniz. Telefon numarasını tekrar söylüyorum. Artı 90 123 0 90 45 67.",
-  "predicted": "hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı 90 123 0 95 67",
+  "predicted": "Hayır, yanlış söylediniz. Telefon numarasını tekrar söylüyorum: artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi.",
   "unintelligible": false,
-  "wer": 0.10526315789473684,
-  "werEdits": 2,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
   "werRefWords": 19,
   "werNormalizedGold": "hayır hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "werNormalizedPredicted": "hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan bir iki üç sıfır doksan beş altmış yedi",
+  "werNormalizedPredicted": "hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "hayır hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
-  "sigWerNormalizedPredicted": "hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan bir iki üç sıfır doksan beş altmış yedi",
+  "sigWerNormalizedPredicted": "hayır yanlış söylediniz telefon numarasını tekrar söylüyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
   "sigWerErrors": [
     {
       "error": "Deletion: 'hayır' at position 1",
-      "reason": "The repetition of 'hayır' (no) at the beginning is omitted, but the overall meaning of the sentence remains the same. The emphasis is slightly reduced but does not change the intent.",
+      "reason": "The repetition of 'hayır' (no) at the beginning is omitted, but this does not change the overall meaning of the sentence, as the intent is still clear.",
       "score": 2
     },
     {
-      "error": "Deletion: 'kırk' at position 15",
-      "reason": "Omitting 'kırk' (forty) from the phone number changes the actual number being communicated, which is a significant error as it results in an incorrect phone number.",
+      "error": "Substitution: 'bir' to 'yüz' at position 10",
+      "reason": "The numbers 'bir iki üç' (1 2 3) are replaced with 'yüz yirmi üç' (123), which is a significant error in a phone number, as it changes the actual digits being communicated.",
       "score": 1
     }
   ]

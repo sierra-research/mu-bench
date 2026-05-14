@@ -1,21 +1,26 @@
 {
   "gold": "Es María López.",
-  "predicted": "María López",
+  "predicted": "Maria Lopez.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 1,
+  "wer": 1.0,
+  "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "es maría lópez",
-  "werNormalizedPredicted": "maría lópez",
+  "werNormalizedPredicted": "maria lopez",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "es maría lópez",
-  "sigWerNormalizedPredicted": "maría lópez",
+  "sigWerNormalizedPredicted": "maria lopez",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'es' at position 0",
-      "reason": "The word 'es' (Spanish for 'is') is omitted, but the main information (the name) is still present. The omission does not significantly change the meaning of the sentence, as the core information is preserved.",
+      "error": "Substitution: 'es' to 'maria' at position 0",
+      "reason": "The word 'es' (Spanish for 'is') is missing, which could affect the grammatical structure but does not significantly change the meaning since the main information (the name) is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'lópez' at position 2",
+      "reason": "infra_error",
       "score": 2
     }
   ]

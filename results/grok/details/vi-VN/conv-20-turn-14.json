@@ -1,16 +1,32 @@
 {
   "gold": "Không phải. Minh, minh là tên đó. Trần là họ đó. Minh chấm trần a còng email chấm com.",
-  "predicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "predicted": "không phải, mình là tên đó, trần là họ đó, mình chấm trần a còng email chấm com",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
   "werRefWords": 19,
   "werNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
-  "werNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không phải mình là tên đó trần là họ đó mình chấm trần a còng email chấm com",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
-  "sigWerNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "không phải mình là tên đó trần là họ đó mình chấm trần a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 2",
+      "reason": "'minh' and 'mình' are different words in Vietnamese, but in this context, both refer to a name and do not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'minh' at position 3",
+      "reason": "The omission of the repeated 'minh' (the name) could cause minor confusion, but the sentence still makes sense and the meaning is mostly preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 11",
+      "reason": "Again, 'minh' and 'mình' are different, but in this context, it refers to the name and does not significantly alter the meaning.",
+      "score": 2
+    }
+  ]
 }

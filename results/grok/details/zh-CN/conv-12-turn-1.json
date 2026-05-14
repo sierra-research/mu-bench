@@ -1,16 +1,22 @@
 {
   "gold": "我正在等待信卡，想知道它状态。",
-  "predicted": "我正在等待信卡，想知道它状态。",
+  "predicted": "我正在等待新卡，想知道它状态。",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.07692307692307693,
+  "werEdits": 1,
   "werRefWords": 13,
   "werNormalizedGold": "我正在等待信卡 想知道它状态",
-  "werNormalizedPredicted": "我正在等待信卡 想知道它状态",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "我正在等待新卡 想知道它状态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 正 在 等 待 信 卡 想 知 道 它 状 态",
-  "sigWerNormalizedPredicted": "我 正 在 等 待 信 卡 想 知 道 它 状 态",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 正 在 等 待 新 卡 想 知 道 它 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '信' to '新' at position 5",
+      "reason": "'信卡' means 'credit card', while '新卡' means 'new card'. This changes the meaning of what the speaker is waiting for, which is a significant difference in context.",
+      "score": 1
+    }
+  ]
 }

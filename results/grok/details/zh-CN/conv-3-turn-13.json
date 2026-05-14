@@ -1,16 +1,27 @@
 {
   "gold": "你好。",
-  "predicted": "你好",
+  "predicted": "Hello.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.0,
+  "werEdits": 2,
   "werRefWords": 2,
   "werNormalizedGold": "你好",
-  "werNormalizedPredicted": "你好",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "hello",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "你 好",
-  "sigWerNormalizedPredicted": "你 好",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "hello",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '你' to 'hello' at position 0",
+      "reason": "The expected word is in Chinese ('你'), but the actual transcription is in English ('hello'), which is a different language and not a direct translation. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 1",
+      "reason": "The word '好' is missing entirely from the actual transcription, which omits part of the intended greeting. This is a significant error.",
+      "score": 1
+    }
+  ]
 }

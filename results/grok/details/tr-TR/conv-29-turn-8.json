@@ -1,6 +1,6 @@
 {
   "gold": "Tabii ki. Artı 90 123 0 90 45 67.",
-  "predicted": "tabii ki 0.90 123 0.90 45.67",
+  "predicted": "Tabii ki 0.90 123 0.90 45.67.",
   "unintelligible": false,
   "wer": 0.2857142857142857,
   "werEdits": 4,
@@ -15,17 +15,17 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'artı' to 'nokta' at position 2",
-      "reason": "Inserting 'sıfır' (zero) at the start of a phone number changes the country code and the meaning of the number, which is significant.",
+      "reason": "The insertion of 'sıfır' (zero) at this position changes the structure of the phone number, potentially confusing the country code and the rest of the number.",
       "score": 1
     },
     {
       "error": "Insertion: 'nokta' at position 9",
-      "reason": "'artı' (plus) is used for country code in phone numbers, while 'nokta' (dot/point) is not used in this context and changes the meaning of the number.",
+      "reason": "'artı' (plus) is used for international dialing codes, while 'nokta' (dot/point) is not relevant in this context and changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Insertion: 'nokta' at position 12",
-      "reason": "Inserting 'nokta' (dot/point) in a phone number is not standard and disrupts the format and meaning of the number.",
+      "reason": "The insertion of 'nokta' (dot/point) in a phone number context is confusing and could lead to misinterpretation of the number.",
       "score": 1
     }
   ]

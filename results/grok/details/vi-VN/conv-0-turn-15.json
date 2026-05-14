@@ -1,21 +1,26 @@
 {
   "gold": "Số là cộng 84 9 1 1 2 3 4 5 6 7 8.",
-  "predicted": "số là tổng 84 9 1 1 2 3 4 5 sáu bảy tám",
+  "predicted": "số là tổng tám mươi bốn chín một một hai ba bốn năm seis, sete, oito.",
   "unintelligible": false,
-  "wer": 0.0625,
-  "werEdits": 1,
+  "wer": 0.25,
+  "werEdits": 4,
   "werRefWords": 16,
   "werNormalizedGold": "số là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "werNormalizedPredicted": "số là tổng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số là tổng tám mươi bốn chín một một hai ba bốn năm seis sete oito",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "số là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
-  "sigWerNormalizedPredicted": "số là tổng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số là tổng tám mươi bốn chín một một hai ba bốn năm seis sete oito",
   "sigWerErrors": [
     {
       "error": "Substitution: 'cộng' to 'tổng' at position 2",
-      "reason": "'cộng' means 'plus' or 'add', while 'tổng' means 'total' or 'sum'. In the context of a phone number, 'cộng' is used to indicate the international dialing code (e.g., '+84'), so substituting it with 'tổng' changes the meaning and could cause confusion in understanding the number.",
+      "reason": "'cộng' means 'plus' or 'add', while 'tổng' means 'total' or 'sum'. In the context of reading out a phone number or code, 'cộng' is the correct word for the international dialing prefix. Using 'tổng' changes the meaning and could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'sáu' to 'seis' at position 13",
+      "reason": "'sáu' is Vietnamese for 'six', while 'seis' is Portuguese/Spanish for 'six'. Using a different language for a number in a sequence can cause significant confusion, especially in contexts like phone numbers.",
       "score": 1
     }
   ]

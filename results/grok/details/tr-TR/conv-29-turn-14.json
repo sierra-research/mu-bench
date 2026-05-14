@@ -2,40 +2,30 @@
   "gold": "Her şey doğru, Anna Hanım, her şey doğru. Sadece Zaynep ve Arslan arasında nokta işareti var. Sadece oraya nokta koyacaksınız. Diğerleri hepsi doğru.",
   "predicted": "her şey doğru anlamışım her şey doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
   "unintelligible": false,
-  "wer": 0.21739130434782608,
-  "werEdits": 5,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
   "werRefWords": 23,
   "werNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
-  "werNormalizedPredicted": "her doğru anlamışım her doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "werNormalizedPredicted": "her şey doğru anlamışım her şey doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 23,
   "sigWerNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
-  "sigWerNormalizedPredicted": "her doğru anlamışım her doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "sigWerNormalizedPredicted": "her şey doğru anlamışım her şey doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
   "sigWerErrors": [
     {
-      "error": "Deletion: 'şey' at position 1",
-      "reason": "'şey' (thing) is omitted, which slightly reduces clarity but does not derail the overall meaning.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'anna' to 'anlamışım' at position 3",
-      "reason": "'anna' (a name) is replaced with 'anlamışım' (I understood), which changes the subject and meaning of the sentence significantly.",
+      "reason": "'anna' is a proper noun (a name), while 'anlamışım' means 'I understood' in Turkish. This substitution changes the meaning of the sentence and introduces a different subject, making the sentence incoherent.",
       "score": 1
     },
     {
       "error": "Deletion: 'hanım' at position 4",
-      "reason": "'hanım' (Ms./Mrs.) is omitted, which removes a respectful address but does not change the main meaning.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'şey' at position 6",
-      "reason": "Second omission of 'şey' (thing), again slightly reduces clarity but does not derail the meaning.",
+      "reason": "'hanım' is a respectful title (like 'Ms.' or 'Mrs.') following a name. Its omission after the name further disrupts the intended meaning and politeness of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
-      "reason": "Minor spelling difference in a proper noun, still clearly refers to the same person.",
+      "reason": "This is a minor spelling difference in a proper noun (a name), but the name is still recognizable and the meaning is preserved.",
       "score": 2
     }
   ]

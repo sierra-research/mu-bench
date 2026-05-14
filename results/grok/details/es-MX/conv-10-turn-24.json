@@ -1,36 +1,31 @@
 {
   "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
-  "predicted": "no está mal el correo está mal es maria punto lópez arroba Uh",
+  "predicted": "no está mal el correo está mal es maría punto lópez arroba",
   "unintelligible": false,
-  "wer": 0.42105263157894735,
-  "werEdits": 8,
+  "wer": 0.3684210526315789,
+  "werEdits": 7,
   "werRefWords": 19,
   "werNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
-  "werNormalizedPredicted": "no está mal el correo está mal es maria punto lópez arroba",
+  "werNormalizedPredicted": "no está mal el correo está mal es maría punto lópez arroba",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
-  "sigWerNormalizedPredicted": "no está mal el correo está mal es maria punto lópez arroba",
+  "sigWerNormalizedPredicted": "no está mal el correo está mal es maría punto lópez arroba",
   "sigWerErrors": [
     {
       "error": "Deletion: 'de' at position 5",
-      "reason": "Omitting 'de' slightly changes the phrase structure but does not significantly alter the overall meaning.",
+      "reason": "Omitting 'de' in 'el correo de vuelta' slightly changes the phrase but does not significantly alter the overall meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Deletion: 'el' at position 9",
-      "reason": "Omitting 'el' is a minor grammatical error and does not change the main meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Substitution: 'maría' to 'maria' at position 14",
-      "reason": "Missing accent in 'maría' is a minor error for a proper noun, but the name is still clearly recognizable.",
+      "reason": "Omitting the second 'el' in 'el correo está mal' is a minor grammatical error but does not change the meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Deletion: 'e' at position 18",
-      "reason": "Omitting the 'e' at the end of the email address changes the address and could prevent correct delivery, making it a significant error.",
+      "reason": "Omitting the 'e' at the end of the email address makes the email incomplete and unusable, which is a significant error as it affects the core information being conveyed.",
       "score": 1
     }
   ]

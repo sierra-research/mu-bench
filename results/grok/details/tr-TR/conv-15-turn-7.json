@@ -1,16 +1,27 @@
 {
   "gold": "Soyadım da Arslan. R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
-  "predicted": "soyadım da Arslan R harfi olacak Ahmet Aslan dediniz Ahmet Arslan olacak",
+  "predicted": "Soyadımda R harfi olacak. Ahmet Aslan dediniz, Ahmet Arslan olacak.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.25,
+  "werEdits": 3,
   "werRefWords": 12,
   "werNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
-  "werNormalizedPredicted": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
+  "werNormalizedPredicted": "soyadımda r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 12,
   "sigWerNormalizedGold": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
-  "sigWerNormalizedPredicted": "soyadım da arslan r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "soyadımda r harfi olacak ahmet aslan dediniz ahmet arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'soyadım' to 'soyadımda' at position 0",
+      "reason": "The word 'soyadımda' combines 'soyadım' and 'da' into one word, which does not change the meaning of the sentence. This is a minor grammatical difference in Turkish and does not affect understanding.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'da' at position 1",
+      "reason": "'da' is merged into the previous word as 'soyadımda', so it is not actually missing, just combined. The meaning is preserved.",
+      "score": 3
+    }
+  ]
 }

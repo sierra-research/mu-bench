@@ -1,32 +1,27 @@
 {
   "gold": "Es Juan López arroba arroba email punto com.",
-  "predicted": "Is, um, juan juanlopez, uh, arroba, um, arroba, uh, uh, email dot com",
+  "predicted": "Es juan juanlopez arroba arroba mail punto com.",
   "unintelligible": false,
-  "wer": 0.375,
-  "werEdits": 3,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "es juan lópez arroba arroba email punto com",
-  "werNormalizedPredicted": "is juan juanlopez arroba arroba email dot com",
+  "werNormalizedPredicted": "es juan juanlopez arroba arroba mail punto com",
   "significantWer": 1,
   "majorErrorsCount": 1,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "es juan lópez arroba arroba email punto com",
-  "sigWerNormalizedPredicted": "is juan juanlopez arroba arroba email dot com",
+  "sigWerNormalizedPredicted": "es juan juanlopez arroba arroba mail punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'es' to 'is' at position 0",
-      "reason": "'es' is Spanish for 'is', so this is a language substitution but the meaning is preserved in context.",
-      "score": 2
-    },
-    {
       "error": "Substitution: 'lópez' to 'juanlopez' at position 2",
-      "reason": "'lópez' is replaced by 'juanlopez', which merges the first and last name into one word. This could cause confusion in an email address or name context.",
+      "reason": "'juanlopez' combines the first name and last name into one word, which could cause confusion in an email address and is not the same as just the last name 'lópez'.",
       "score": 1
     },
     {
-      "error": "Substitution: 'punto' to 'dot' at position 6",
-      "reason": "'punto' is Spanish for 'dot', so this is a direct translation and the meaning is preserved.",
-      "score": 3
+      "error": "Substitution: 'email' to 'mail' at position 5",
+      "reason": "'email' and 'mail' are similar, but in the context of an email address, 'email' is the correct domain and 'mail' could lead to a different or invalid address.",
+      "score": 2
     }
   ]
 }

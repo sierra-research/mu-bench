@@ -1,16 +1,27 @@
 {
   "gold": "Sí, es María punto López arroba email punto com.",
-  "predicted": "Sí, es maria.punto.lopez.arroba.email.com",
+  "predicted": "Sí, es maria.punto.lopez.arroba.email.com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
   "werRefWords": 9,
   "werNormalizedGold": "sí es maría punto lópez arroba email punto com",
-  "werNormalizedPredicted": "sí es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "sí es maria punto lopez arroba email punto com",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "sí es maría punto lópez arroba email punto com",
-  "sigWerNormalizedPredicted": "sí es maría punto lópez arroba email punto com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "sí es maria punto lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 2",
+      "reason": "Accent missing on 'i' in 'maría', but the name is still clearly recognizable and the meaning is unchanged.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 4",
+      "reason": "Accent missing on 'o' in 'lópez', but the name is still clearly recognizable and the meaning is unchanged.",
+      "score": 2
+    }
+  ]
 }

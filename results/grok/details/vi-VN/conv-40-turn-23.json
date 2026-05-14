@@ -1,21 +1,26 @@
 {
   "gold": "Khoan đã. Tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức?",
-  "predicted": "à khoan đã cái tôi muốn hỏi là à tôi cần những thông tin gì để có thể được à tăng hạn mức",
+  "predicted": "không đã cái tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức",
   "unintelligible": false,
-  "wer": 0.05263157894736842,
-  "werEdits": 1,
+  "wer": 0.10526315789473684,
+  "werEdits": 2,
   "werRefWords": 19,
   "werNormalizedGold": "khoan đã tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức",
-  "werNormalizedPredicted": "khoan đã cái tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "không đã cái tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "khoan đã tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức",
-  "sigWerNormalizedPredicted": "khoan đã cái tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức",
+  "sigWerNormalizedPredicted": "không đã cái tôi muốn hỏi là tôi cần những thông tin gì để có thể được tăng hạn mức",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'khoan' to 'không' at position 0",
+      "reason": "'khoan đã' means 'wait' or 'hold on', while 'không đã' is not a valid phrase and 'không' means 'no' or 'not', which changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
       "error": "Insertion: 'cái' at position 2",
-      "reason": "The insertion of 'cái' does not change the overall meaning of the sentence; it is a minor grammatical addition that does not affect comprehension.",
+      "reason": "The insertion of 'cái' does not change the overall meaning of the sentence, as it is a minor filler word in this context.",
       "score": 2
     }
   ]

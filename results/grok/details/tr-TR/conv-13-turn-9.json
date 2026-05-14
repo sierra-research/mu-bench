@@ -1,47 +1,47 @@
 {
   "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
-  "predicted": "yanı pardon postadesinde bir noktayı unuttunuz ahmetli arslan'ın da noktası olacak ahmet noktası arslan",
+  "predicted": "Yanı, pardon, posta adresinde bir noktayı unuttunuz. Ahmetli Arslan'ın da noktası olacak. Ahmet noktası Arslan.",
   "unintelligible": false,
-  "wer": 0.5882352941176471,
-  "werEdits": 10,
+  "wer": 0.5294117647058824,
+  "werEdits": 9,
   "werRefWords": 17,
   "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "werNormalizedPredicted": "pardon postadesinde bir noktayı unuttunuz ahmetli arslan'ın da noktası olacak ahmet noktası arslan",
+  "werNormalizedPredicted": "pardon posta adresinde bir noktayı unuttunuz ahmetli arslanın da noktası olacak ahmet noktası arslan",
   "significantWer": 1,
   "majorErrorsCount": 3,
   "totalWordsCount": 17,
   "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
-  "sigWerNormalizedPredicted": "pardon postadesinde bir noktayı unuttunuz ahmetli arslan'ın da noktası olacak ahmet noktası arslan",
+  "sigWerNormalizedPredicted": "pardon posta adresinde bir noktayı unuttunuz ahmetli arslanın da noktası olacak ahmet noktası arslan",
   "sigWerErrors": [
     {
       "error": "Deletion: 'yalnız' at position 0",
-      "reason": "'yalnız' (meaning 'just' or 'only') is omitted, which slightly changes the nuance but does not derail the main meaning.",
+      "reason": "'Yalnız' (meaning 'just' or 'only') sets the context for the correction; omitting it slightly reduces clarity but does not derail the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'e' to 'postadesinde' at position 2",
-      "reason": "'e' (as in 'e-posta', meaning 'email') is replaced with 'postadesinde' (which is not a correct word and seems to be a mishearing of 'posta adresimde'), making the phrase less clear and confusing the meaning.",
+      "error": "Deletion: 'e' at position 2",
+      "reason": "Missing 'e' in 'e posta' (email) changes 'e posta' to 'posta', which loses the specific reference to 'email' and could cause confusion.",
       "score": 1
     },
     {
-      "error": "Deletion: 'posta' at position 3",
-      "reason": "Omitting 'posta' from 'e posta' (email) makes the phrase incomplete and unclear, significantly affecting the meaning.",
-      "score": 1
+      "error": "Substitution: 'adresimde' to 'adresinde' at position 4",
+      "reason": "'Adresimde' (in my address) vs 'adresinde' (in the address) shifts the reference from the speaker's address to a general address, but the overall meaning is mostly preserved.",
+      "score": 2
     },
     {
       "error": "Substitution: 'ahmet' to 'ahmetli' at position 8",
-      "reason": "'ahmet' (a name) is changed to 'ahmetli', which is a different word and could refer to a place or person, causing confusion but the context still suggests a name.",
-      "score": 2
+      "reason": "'Ahmet' is a name, 'ahmetli' means 'with Ahmet' or 'Ahmet's', which changes the meaning and could confuse the email address being specified.",
+      "score": 1
     },
     {
       "error": "Deletion: 'nokta' at position 12",
-      "reason": "Omitting 'nokta' (dot) in the context of an email address changes the instruction and could lead to an incorrect email address.",
+      "reason": "Omitting 'nokta' (dot) in the context of an email address can lead to an incorrect address, which is a significant error.",
       "score": 1
     },
     {
       "error": "Substitution: 'nokta' to 'noktası' at position 15",
-      "reason": "'nokta' (dot) is changed to 'noktası' (its dot), which is a minor grammatical difference and does not change the intended meaning.",
-      "score": 3
+      "reason": "'Nokta' (dot) vs 'noktası' (its dot) is a minor grammatical difference, but the meaning is preserved in the context of specifying an email address.",
+      "score": 2
     }
   ]
 }

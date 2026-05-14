@@ -1,21 +1,26 @@
 {
   "gold": "终于到了。",
-  "predicted": "Mm, that is all.",
+  "predicted": "Don't know.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "终于到了",
-  "werNormalizedPredicted": "mm that is all",
+  "werNormalizedPredicted": "do not know",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "终 于 到 了",
-  "sigWerNormalizedPredicted": "mm that is all",
+  "sigWerNormalizedPredicted": "do not know",
   "sigWerErrors": [
     {
-      "error": "Substitution: '终' to 'mm' at position 0",
-      "reason": "The actual transcription is in a completely different language (English) than the expected (Chinese), resulting in a total loss of meaning.",
+      "error": "Substitution: '终' to 'do' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not match the expected meaning at all, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 3",
+      "reason": "The final word is missing and the actual transcription is unrelated, which significantly alters the meaning.",
       "score": 1
     }
   ]

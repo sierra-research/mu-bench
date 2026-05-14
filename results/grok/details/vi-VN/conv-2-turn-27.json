@@ -1,16 +1,22 @@
 {
   "gold": "OK. Cảm ơn.",
-  "predicted": "Uh, okay, come on.",
+  "predicted": "Okay, come on.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
   "werRefWords": 3,
   "werNormalizedGold": "okay cảm ơn",
-  "werNormalizedPredicted": "okay cảm ơn",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "okay come on",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "okay cảm ơn",
-  "sigWerNormalizedPredicted": "okay cảm ơn",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "okay come on",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cảm' to 'come' at position 1",
+      "reason": "'cảm' is a Vietnamese word meaning 'thank', while 'come' is an English verb with a completely different meaning. This substitution changes the language and the meaning of the sentence.",
+      "score": 1
+    }
+  ]
 }

@@ -1,16 +1,22 @@
 {
   "gold": "Lo intento después.",
-  "predicted": "lo intento después",
+  "predicted": "No, lo intento después.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.3333333333333333,
+  "werEdits": 1,
   "werRefWords": 3,
   "werNormalizedGold": "lo intento después",
-  "werNormalizedPredicted": "lo intento después",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "no lo intento después",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "lo intento después",
-  "sigWerNormalizedPredicted": "lo intento después",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "no lo intento después",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'no' at position 0",
+      "reason": "The insertion of 'no' changes the meaning of the sentence from an affirmative statement to a negative one, which significantly alters the intent.",
+      "score": 1
+    }
+  ]
 }

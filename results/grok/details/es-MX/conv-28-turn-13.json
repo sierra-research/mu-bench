@@ -1,16 +1,22 @@
 {
   "gold": "No, creo que no.",
-  "predicted": "Um, no, I think not.",
+  "predicted": "No, I don't think so.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 1.25,
+  "werEdits": 5,
   "werRefWords": 4,
   "werNormalizedGold": "no creo que no",
-  "werNormalizedPredicted": "no creo que no",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "no i do not think so",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "no creo que no",
-  "sigWerNormalizedPredicted": "no creo que no",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "no i do not think so",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'creo' to 'not' at position 1",
+      "reason": "The actual transcription is in a different language (English) than the expected (Spanish), which completely changes the meaning and context.",
+      "score": 1
+    }
+  ]
 }

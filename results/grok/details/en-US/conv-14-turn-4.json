@@ -1,26 +1,31 @@
 {
   "gold": "Hello? Can you give what is 7 6 2?",
-  "predicted": "Hello, can you give me what is this 7 6 2?",
+  "predicted": "Can you give me what is this, 7 6 2?",
   "unintelligible": false,
-  "wer": 0.2222222222222222,
-  "werEdits": 2,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
   "werRefWords": 9,
   "werNormalizedGold": "hello can you give what is seven six two",
-  "werNormalizedPredicted": "hello can you give me what is this seven six two",
+  "werNormalizedPredicted": "can you give me what is this seven six two",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "hello can you give what is seven six two",
-  "sigWerNormalizedPredicted": "hello can you give me what is this seven six two",
+  "sigWerNormalizedPredicted": "can you give me what is this seven six two",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'me' at position 4",
-      "reason": "'me' is an extra word that does not change the overall meaning of the sentence; the request is still clear.",
+      "error": "Deletion: 'hello' at position 0",
+      "reason": "Omitting the greeting 'hello' does not change the main intent of the sentence, which is a request for information.",
       "score": 2
     },
     {
+      "error": "Insertion: 'me' at position 4",
+      "reason": "Adding 'me' slightly personalizes the request but does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
       "error": "Insertion: 'this' at position 6",
-      "reason": "Adding 'this' before 'seven six two' slightly changes the phrasing but does not alter the meaning of the question.",
+      "reason": "Inserting 'this' changes the question from a general inquiry ('what is seven six two') to a more specific or potentially confusing one ('what is this seven six two'), which could alter the meaning.",
       "score": 2
     }
   ]

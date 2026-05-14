@@ -1,6 +1,6 @@
 {
   "gold": "OK. C N 1 8 1.",
-  "predicted": "Uh, okay, C N M, Daniel.",
+  "predicted": "Okay, C N M, Daniel.",
   "unintelligible": false,
   "wer": 0.5,
   "werEdits": 3,
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: 'một' to 'm' at position 3",
-      "reason": "'một' is the Vietnamese word for 'one', while 'm' is just a letter and does not convey the same meaning. This changes the intended information, especially in a sequence likely representing a code or number.",
+      "reason": "'một' is the Vietnamese word for 'one', while 'm' is just a letter and does not convey the same meaning. This changes the intended number and derails the meaning.",
       "score": 1
     },
     {
       "error": "Deletion: 'một' at position 5",
-      "reason": "The final 'một' (one) is missing in the actual transcription, which omits important information from the sequence, likely making it unusable for its intended purpose.",
+      "reason": "The final 'một' (one) is missing in the actual transcription, which omits part of the intended sequence of numbers, significantly altering the meaning.",
       "score": 1
     }
   ]

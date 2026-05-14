@@ -1,21 +1,26 @@
 {
   "gold": "Tôi muốn xem lại sao kê gần đây nhất.",
-  "predicted": "tôi muốn xem lại cái sau kề gần đây nhất",
+  "predicted": "Tôi muốn, tôi muốn xem lại cái sau kia gần đây nhất.",
   "unintelligible": false,
-  "wer": 0.3333333333333333,
-  "werEdits": 3,
+  "wer": 0.5555555555555556,
+  "werEdits": 5,
   "werRefWords": 9,
   "werNormalizedGold": "tôi muốn xem lại sao kê gần đây nhất",
-  "werNormalizedPredicted": "tôi muốn xem lại cái sau kề gần đây nhất",
+  "werNormalizedPredicted": "tôi muốn tôi muốn xem lại cái sau kia gần đây nhất",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "tôi muốn xem lại sao kê gần đây nhất",
-  "sigWerNormalizedPredicted": "tôi muốn xem lại cái sau kề gần đây nhất",
+  "sigWerNormalizedPredicted": "tôi muốn tôi muốn xem lại cái sau kia gần đây nhất",
   "sigWerErrors": [
     {
+      "error": "Insertion: 'tôi' at position 2",
+      "reason": "The repeated 'tôi muốn' is redundant but does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
       "error": "Substitution: 'sao' to 'sau' at position 4",
-      "reason": "'cái' is an extra word that does not change the overall meaning of the sentence, as the request to review the statement is still clear.",
+      "reason": "The insertion of 'cái' adds a minor word that does not alter the main intent or meaning of the sentence.",
       "score": 2
     }
   ]

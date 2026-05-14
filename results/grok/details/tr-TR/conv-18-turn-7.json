@@ -1,26 +1,31 @@
 {
   "gold": "Tabii, e-posta Ahmet nokta Arslan at email nokta com.",
-  "predicted": "tabiee posta ahmet nokta arslan at e-mail nokta com",
+  "predicted": "Também é posta ahmed.nokta.arslan at e-mail.com.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 2,
+  "wer": 0.4,
+  "werEdits": 4,
   "werRefWords": 10,
   "werNormalizedGold": "tabii e posta ahmet nokta arslan at email nokta com",
-  "werNormalizedPredicted": "tabiee posta ahmet nokta arslan at email nokta com",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "também e posta ahmed nokta arslan at e mail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "tabii e posta ahmet nokta arslan at email nokta com",
-  "sigWerNormalizedPredicted": "tabiee posta ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "também e posta ahmed nokta arslan at e mail nokta com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'tabii' to 'tabiee' at position 0",
-      "reason": "Minor misspelling of a word, pronunciation and meaning are still clear in context.",
+      "error": "Substitution: 'tabii' to 'também' at position 0",
+      "reason": "'tabii' is Turkish for 'of course', while 'também' is Portuguese for 'also'; this is a substitution with a word from a different language and different meaning, which derails the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmed' at position 3",
+      "reason": "Minor spelling variation of a proper noun, still recognizable as the same name.",
       "score": 2
     },
     {
-      "error": "Deletion: 'e' at position 1",
-      "reason": "infra_error",
+      "error": "Substitution: 'email' to 'mail' at position 7",
+      "reason": "Extra 'e' before 'mail' does not change the meaning of the sentence.",
       "score": 2
     }
   ]

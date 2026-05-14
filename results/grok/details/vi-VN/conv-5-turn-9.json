@@ -1,37 +1,42 @@
 {
   "gold": "Ừ. Không. Vậy để 1 2 ngày làm việc, mình có cái sao kê gần nhất, thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
-  "predicted": "ờ không đợi một hai ngày đi làm việc mình có cái sau kỳ gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "predicted": "ờ, không. đợi một hai ngày đi làm việc mình có cái sau kê à à, cần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn.",
   "unintelligible": false,
   "wer": 0.18518518518518517,
   "werEdits": 5,
   "werRefWords": 27,
   "werNormalizedGold": "không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
-  "werNormalizedPredicted": "không đợi một hai ngày đi làm việc mình có cái sau kỳ gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "werNormalizedPredicted": "không đợi một hai ngày đi làm việc mình có cái sau kê cần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
   "significantWer": 1,
   "majorErrorsCount": 2,
   "totalWordsCount": 27,
   "sigWerNormalizedGold": "không vậy để một hai ngày làm việc mình có cái sao kê gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
-  "sigWerNormalizedPredicted": "không đợi một hai ngày đi làm việc mình có cái sau kỳ gần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
+  "sigWerNormalizedPredicted": "không đợi một hai ngày đi làm việc mình có cái sau kê cần nhất thì cần gì hỗ trợ mình sẽ gọi lên cho các bạn",
   "sigWerErrors": [
     {
       "error": "Substitution: 'vậy' to 'đợi' at position 1",
-      "reason": "'vậy' (so/then) and 'đợi' (wait) have different meanings and change the intent of the sentence, making it less coherent.",
+      "reason": "'vậy' (so/then) and 'đợi' (wait) have very different meanings and change the intent of the sentence.",
       "score": 1
     },
     {
       "error": "Deletion: 'để' at position 2",
-      "reason": "Omitting 'để' (to/for) affects the grammatical structure but does not significantly change the overall meaning.",
+      "reason": "Omitting 'để' (to/for) slightly affects the grammatical structure but does not significantly change the overall meaning.",
       "score": 2
     },
     {
       "error": "Insertion: 'đi' at position 6",
-      "reason": "Adding 'đi' (go) slightly changes the action but does not derail the overall meaning of the sentence.",
+      "reason": "Inserting 'đi' (go) changes the meaning from 'làm việc' (work) to 'đi làm việc' (go to work), which is a minor nuance.",
       "score": 2
     },
     {
       "error": "Substitution: 'sao' to 'sau' at position 11",
-      "reason": "'sao kê' (bank statement) is a fixed term, while 'sau kỳ' (after period) changes the meaning and makes the sentence confusing.",
+      "reason": "'sao kê' (bank statement) is a fixed term, while 'sau kê' is not meaningful in this context, making the sentence confusing.",
       "score": 1
+    },
+    {
+      "error": "Substitution: 'gần' to 'cần' at position 13",
+      "reason": "'gần nhất' (nearest/most recent) and 'cần nhất' (most needed) are different in meaning but do not derail the overall intent.",
+      "score": 2
     }
   ]
 }

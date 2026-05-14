@@ -1,6 +1,6 @@
 {
   "gold": "Cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ.",
-  "predicted": "cho tôi một cái phương án khác đi và tôi cần gấp như bây giờ",
+  "predicted": "cho tôi một cái phương án khác đi và tôi cần gấp như bây giờ.",
   "unintelligible": false,
   "wer": 0.1875,
   "werEdits": 3,
@@ -8,25 +8,25 @@
   "werNormalizedGold": "cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ",
   "werNormalizedPredicted": "cho tôi một cái phương án khác đi và tôi cần gấp như bây giờ",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 2,
   "totalWordsCount": 16,
   "sigWerNormalizedGold": "cho tôi một cái phương án khác đi bởi vì tôi cần gấp ngay bây giờ",
   "sigWerNormalizedPredicted": "cho tôi một cái phương án khác đi và tôi cần gấp như bây giờ",
   "sigWerErrors": [
     {
       "error": "Substitution: 'bởi' to 'và' at position 8",
-      "reason": "'bởi vì' means 'because', while 'và' means 'and'. This changes the causal relationship in the sentence to a simple conjunction, altering the meaning significantly.",
+      "reason": "'bởi vì' means 'because', while 'và' means 'and'. This changes the logical connection in the sentence from a reason to a conjunction, altering the meaning significantly.",
       "score": 1
     },
     {
       "error": "Deletion: 'vì' at position 9",
-      "reason": "'bởi vì' is a fixed phrase meaning 'because'. Omitting 'vì' breaks the causal meaning, further contributing to the loss of intended meaning.",
+      "reason": "'bởi vì' together means 'because'. Omitting 'vì' after already substituting 'bởi' with 'và' further removes the causal meaning, compounding the significant change in meaning.",
       "score": 1
     },
     {
       "error": "Substitution: 'ngay' to 'như' at position 13",
-      "reason": "'ngay bây giờ' means 'right now', while 'như bây giờ' means 'like now'. This changes the urgency expressed in the sentence, which is significant in context.",
-      "score": 1
+      "reason": "'ngay bây giờ' means 'right now', while 'như bây giờ' means 'like now'. This changes the urgency expressed in the sentence, but the overall intent is still somewhat understandable.",
+      "score": 2
     }
   ]
 }

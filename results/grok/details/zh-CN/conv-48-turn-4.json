@@ -1,6 +1,6 @@
 {
   "gold": "嗯，对的。",
-  "predicted": "Hm, right.",
+  "predicted": "Right.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 2,
@@ -8,20 +8,20 @@
   "werNormalizedGold": "对的",
   "werNormalizedPredicted": "right",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 2,
   "sigWerNormalizedGold": "对 的",
   "sigWerNormalizedPredicted": "right",
   "sigWerErrors": [
     {
       "error": "Substitution: '对' to 'right' at position 0",
-      "reason": "The expected word is in Chinese ('对'), while the actual is in English ('right'). Although '对' can mean 'right' in English, the language mismatch is a significant error according to the guidelines.",
+      "reason": "'对' is a Chinese word meaning 'correct' or 'right', but the language has changed from Chinese to English, which is a significant error as it changes the language of the response.",
       "score": 1
     },
     {
       "error": "Deletion: '的' at position 1",
-      "reason": "The word '的' is missing in the actual transcription. This omission may affect the grammatical structure in Chinese, but since the main meaning ('right') is conveyed, this is a minor error.",
-      "score": 2
+      "reason": "'的' is a common Chinese particle, and its omission further indicates a language switch and loss of the original sentence structure.",
+      "score": 1
     }
   ]
 }

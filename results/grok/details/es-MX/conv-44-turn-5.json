@@ -1,27 +1,27 @@
 {
   "gold": "Lo siento, Juan López.",
-  "predicted": "No cito Juan López, perdón.",
+  "predicted": "Non c'è niente. Juan López, perdon.",
   "unintelligible": false,
-  "wer": 0.75,
-  "werEdits": 3,
+  "wer": 1.25,
+  "werEdits": 5,
   "werRefWords": 4,
   "werNormalizedGold": "lo siento juan lópez",
-  "werNormalizedPredicted": "no cito juan lópez perdón",
+  "werNormalizedPredicted": "non c e niente juan lópez perdon",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "lo siento juan lópez",
-  "sigWerNormalizedPredicted": "no cito juan lópez perdón",
+  "sigWerNormalizedPredicted": "non c e niente juan lópez perdon",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'lo' to 'no' at position 0",
-      "reason": "'Lo siento' means 'I'm sorry' in Spanish, while 'no cito' means 'I do not quote', which changes the meaning of the sentence significantly.",
+      "error": "Substitution: 'lo' to 'e' at position 0",
+      "reason": "'non' is an Italian word meaning 'not', which is not present in the expected Spanish sentence and changes the meaning significantly.",
       "score": 1
     },
     {
-      "error": "Insertion: 'perdón' at position 4",
-      "reason": "'Perdón' means 'sorry' or 'excuse me', which is similar in meaning to 'lo siento', but its insertion after the full name is awkward and changes the sentence structure, though the overall intent (apology) is still present.",
-      "score": 2
+      "error": "Insertion: 'perdon' at position 4",
+      "reason": "'lo' (Spanish for 'it') is replaced by 'e' (Italian for 'and'), which changes the meaning and language of the sentence.",
+      "score": 1
     }
   ]
 }

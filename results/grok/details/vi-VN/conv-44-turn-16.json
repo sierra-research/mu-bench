@@ -1,21 +1,26 @@
 {
   "gold": "Đúng rồi. Đúng rồi.",
-  "predicted": "não me importo, não me importo",
+  "predicted": "Não, não, não.",
   "unintelligible": false,
-  "wer": 1.5,
-  "werEdits": 6,
+  "wer": 1.0,
+  "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "đúng rồi đúng rồi",
-  "werNormalizedPredicted": "não me importo não me importo",
+  "werNormalizedPredicted": "không không không",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "đúng rồi đúng rồi",
-  "sigWerNormalizedPredicted": "não me importo não me importo",
+  "sigWerNormalizedPredicted": "không không không",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'đúng' to 'importo' at position 0",
-      "reason": "The actual transcription is in a completely different language (Portuguese instead of Vietnamese), and the meaning is entirely different. This is a significant error that derails the meaning of the sentence.",
+      "error": "Substitution: 'đúng' to 'không' at position 0",
+      "reason": "'đúng' means 'right/correct' and 'không' means 'no/not', which are opposite in meaning and completely change the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "The omission of 'rồi' removes an affirmation, further altering the intended meaning.",
       "score": 1
     }
   ]

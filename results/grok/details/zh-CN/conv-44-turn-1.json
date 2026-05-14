@@ -1,21 +1,26 @@
 {
   "gold": "准备好了。",
-  "predicted": "Hm, jumbe hala.",
+  "predicted": "Jum bechal.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "准备好了",
-  "werNormalizedPredicted": "",
+  "werNormalizedPredicted": "jum bechal",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "准 备 好 了",
-  "sigWerNormalizedPredicted": "",
+  "sigWerNormalizedPredicted": "jum bechal",
   "sigWerErrors": [
     {
-      "error": "Deletion: '准' at position 0",
-      "reason": "The entire expected phrase is missing from the actual transcription, resulting in a complete loss of meaning.",
+      "error": "Substitution: '准' to 'jum' at position 0",
+      "reason": "The actual transcription is in a completely different language and does not correspond to the expected Chinese word, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 2",
+      "reason": "The word '好' is missing in the actual transcription, which further derails the meaning of the sentence.",
       "score": 1
     }
   ]

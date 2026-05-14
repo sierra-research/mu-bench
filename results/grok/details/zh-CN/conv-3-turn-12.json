@@ -1,26 +1,21 @@
 {
   "gold": "你有什么问题啊。",
-  "predicted": "You have a question?",
+  "predicted": "有什么问题呀？",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 6,
+  "wer": 0.16666666666666666,
+  "werEdits": 1,
   "werRefWords": 6,
   "werNormalizedGold": "你有什么问题",
-  "werNormalizedPredicted": "you have a question",
+  "werNormalizedPredicted": "有什么问题",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 6,
   "sigWerNormalizedGold": "你 有 什 么 问 题",
-  "sigWerNormalizedPredicted": "you have a question",
+  "sigWerNormalizedPredicted": "有 什 么 问 题",
   "sigWerErrors": [
     {
-      "error": "Substitution: '你' to 'you' at position 0",
-      "reason": "The actual transcription is in a different language (English) than the expected (Chinese), which is a significant error as it completely changes the meaning and is not understandable to a Chinese speaker.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '问' at position 4",
-      "reason": "The word '问' (ask/question) is missing and not represented in the actual transcription, further contributing to the significant error due to language mismatch.",
+      "error": "Deletion: '你' at position 0",
+      "reason": "The subject pronoun '你' (you) is missing, which changes the sentence from a question directed at someone ('Do you have a question?') to a more general statement ('Have a question?'). This omission significantly affects who the sentence is addressed to, making it a significant error.",
       "score": 1
     }
   ]

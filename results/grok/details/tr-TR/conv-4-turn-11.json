@@ -1,36 +1,26 @@
 {
   "gold": "Hayır, istemiyorum. İyi günler dilerim.",
-  "predicted": "Hayrım, i̇yi günlerim.",
+  "predicted": "Igen, személyre igénylőrem.",
   "unintelligible": false,
-  "wer": 0.8,
-  "werEdits": 4,
+  "wer": 1.0,
+  "werEdits": 5,
   "werRefWords": 5,
   "werNormalizedGold": "hayır istemiyorum iyi günler dilerim",
-  "werNormalizedPredicted": "hayrım iyi günlerim",
+  "werNormalizedPredicted": "igen személyre igénylőrem",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "hayır istemiyorum iyi günler dilerim",
-  "sigWerNormalizedPredicted": "hayrım iyi günlerim",
+  "sigWerNormalizedPredicted": "igen személyre igénylőrem",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'hayır' to 'hayrım' at position 0",
-      "reason": "'hayır' means 'no', while 'hayrım' is not a standard word and could be interpreted as 'my good' or a mispronunciation, which changes the meaning significantly.",
+      "error": "Substitution: 'hayır' to 'igen' at position 0",
+      "reason": "'hayır' means 'no' in Turkish, while 'igen' means 'yes' in Hungarian. This is a substitution not only of meaning but also of language, which completely changes the intent and makes the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'istemiyorum' at position 1",
-      "reason": "'istemiyorum' means 'I do not want', and its omission removes the main intent of the sentence, significantly altering the meaning.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'günler' to 'günlerim' at position 3",
-      "reason": "'günler' means 'days', while 'günlerim' means 'my days'; this changes the meaning but does not derail the overall intent of wishing a good day, so it is a minor error.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'dilerim' at position 4",
-      "reason": "'dilerim' means 'I wish', and its omission makes the sentence incomplete and less polite, significantly affecting the meaning.",
+      "error": "Deletion: 'günler' at position 3",
+      "reason": "'günler' means 'days' in Turkish and is part of the phrase 'iyi günler' (good day). Its omission further breaks the meaning of the sentence.",
       "score": 1
     }
   ]

@@ -1,16 +1,27 @@
 {
   "gold": "我的邮箱地址是美玲 at email dot com。",
-  "predicted": "我的邮箱地址是 meiling at email dot com",
+  "predicted": "我的邮箱地址是 meiling at email dot com.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
   "werRefWords": 13,
   "werNormalizedGold": "我的邮箱地址是美玲 at email dot com",
-  "werNormalizedPredicted": "我的邮箱地址是 美玲 at email dot com",
+  "werNormalizedPredicted": "我的邮箱地址是 meiling at email dot com",
   "significantWer": 0,
   "majorErrorsCount": 0,
   "totalWordsCount": 13,
   "sigWerNormalizedGold": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 美 玲 at email dot com",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 7",
+      "reason": "The expected has the Chinese character '美', while the actual has the full pinyin 'meiling'. This changes the format but not the meaning, as 'meiling' is the pinyin for '美玲'.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 8",
+      "reason": "The actual combines '美玲' into 'meiling', so the character '玲' is not separately present. However, the meaning is preserved as the name is still correctly represented in pinyin.",
+      "score": 2
+    }
+  ]
 }

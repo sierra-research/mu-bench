@@ -1,27 +1,32 @@
 {
   "gold": "邮箱地址是林美 at email 点 com。",
-  "predicted": "My email address is linmei at email dot com.",
+  "predicted": "My email address is Lin Mei at email dot com.",
   "unintelligible": false,
-  "wer": 0.6363636363636364,
-  "werEdits": 7,
+  "wer": 0.7272727272727273,
+  "werEdits": 8,
   "werRefWords": 11,
   "werNormalizedGold": "邮箱地址是林美 at email 点 com",
-  "werNormalizedPredicted": "my email address is linmei at email 点 com",
+  "werNormalizedPredicted": "my email address is lin mei at email dot com",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "邮 箱 地 址 是 林 美 at email 点 com",
-  "sigWerNormalizedPredicted": "my email address is linmei at email 点 com",
+  "sigWerNormalizedPredicted": "my email address is lin mei at email dot com",
   "sigWerErrors": [
     {
       "error": "Substitution: '邮' to 'my' at position 0",
-      "reason": "The expected transcription is in Chinese, while the actual transcription is in English. This is a major language mismatch and changes the meaning entirely.",
+      "reason": "The expected transcription is in Chinese, while the actual is in English. This is a language mismatch and changes the entire meaning/context.",
       "score": 1
     },
     {
-      "error": "Deletion: '林' at position 5",
-      "reason": "Again, this is a language substitution from Chinese to English, which is a significant error as it changes the language and potentially the meaning.",
-      "score": 1
+      "error": "Deletion: '美' at position 6",
+      "reason": "The expected transcription contains the Chinese character '美' as part of a name, but the actual uses the pinyin 'mei'. This is a language mismatch but the name is preserved phonetically, so the meaning is mostly retained.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '点' to 'dot' at position 9",
+      "reason": "The expected uses the Chinese word for 'dot', while the actual uses the English equivalent. This is a language mismatch but the meaning is preserved.",
+      "score": 2
     }
   ]
 }

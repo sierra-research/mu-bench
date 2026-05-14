@@ -1,31 +1,26 @@
 {
   "gold": "Es María punto López arroba email punto com.",
-  "predicted": "esmaria punto lopez arroba email punto com",
+  "predicted": "Es maria punto lopez arroba email punto com.",
   "unintelligible": false,
-  "wer": 0.375,
-  "werEdits": 3,
+  "wer": 0.25,
+  "werEdits": 2,
   "werRefWords": 8,
   "werNormalizedGold": "es maría punto lópez arroba email punto com",
-  "werNormalizedPredicted": "esmaria punto lopez arroba email punto com",
-  "significantWer": 1,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "es maria punto lopez arroba email punto com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "es maría punto lópez arroba email punto com",
-  "sigWerNormalizedPredicted": "esmaria punto lopez arroba email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba email punto com",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'es' to 'esmaria' at position 0",
-      "reason": "'es' and 'esmaria' are not equivalent; 'es' is a separate word meaning 'is' in Spanish, while 'esmaria' merges 'es' and 'maría', which could confuse the meaning or make the email address unclear.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 'maría' at position 1",
-      "reason": "'maría' is missing as a separate word, which is important for the correct email address. Its omission or merging with 'es' could cause confusion or incorrect email parsing.",
-      "score": 1
+      "error": "Substitution: 'maría' to 'maria' at position 1",
+      "reason": "The only difference is the missing accent on the 'i', which does not change the meaning or pronunciation significantly in this context.",
+      "score": 3
     },
     {
       "error": "Substitution: 'lópez' to 'lopez' at position 3",
-      "reason": "The only difference is the accent on the 'o'. In most email contexts, accents are ignored and 'lopez' is equivalent to 'lópez'.",
+      "reason": "The only difference is the missing accent on the 'o', which does not change the meaning or pronunciation significantly in this context.",
       "score": 3
     }
   ]

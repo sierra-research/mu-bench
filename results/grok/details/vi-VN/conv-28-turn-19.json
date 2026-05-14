@@ -1,21 +1,26 @@
 {
   "gold": "Bạn hướng dẫn mình với.",
-  "predicted": "bạn hướng dẫn mình rồi",
+  "predicted": "Bạn muốn dẫn mình rồi.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 1,
+  "wer": 0.4,
+  "werEdits": 2,
   "werRefWords": 5,
   "werNormalizedGold": "bạn hướng dẫn mình với",
-  "werNormalizedPredicted": "bạn hướng dẫn mình rồi",
+  "werNormalizedPredicted": "bạn muốn dẫn mình rồi",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 5,
   "sigWerNormalizedGold": "bạn hướng dẫn mình với",
-  "sigWerNormalizedPredicted": "bạn hướng dẫn mình rồi",
+  "sigWerNormalizedPredicted": "bạn muốn dẫn mình rồi",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'hướng' to 'muốn' at position 1",
+      "reason": "'hướng dẫn' means 'guide' or 'instruct', while 'muốn dẫn' means 'want to lead'. This changes the intent of the sentence from asking for guidance to expressing a desire to lead, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'với' to 'rồi' at position 4",
-      "reason": "'với' means 'with' (asking for help), while 'rồi' means 'already' (implying something is done). This changes the intent of the sentence from a request for help to a statement that something has already been done, which significantly alters the meaning.",
+      "reason": "'với' means 'with' (used to ask for help), while 'rồi' means 'already' or 'then', which changes the request for help into a statement about something already done, significantly changing the meaning.",
       "score": 1
     }
   ]

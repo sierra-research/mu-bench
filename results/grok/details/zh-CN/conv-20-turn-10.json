@@ -1,6 +1,6 @@
 {
   "gold": "我的邮箱地址是美玲 at email dot com。",
-  "predicted": "啊，我的邮箱地址是mailing at email dot com",
+  "predicted": "啊，我的邮箱地址是mailing at email dot com.",
   "unintelligible": false,
   "wer": 0.15384615384615385,
   "werEdits": 2,
@@ -15,12 +15,12 @@
   "sigWerErrors": [
     {
       "error": "Substitution: '美' to 'mailing' at position 7",
-      "reason": "'美' is a Chinese character (likely part of a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the intended meaning and makes the sentence incoherent in context.",
+      "reason": "'美' and 'mailing' are completely different; '美' is a Chinese character (part of a name), while 'mailing' is an English word. This changes the intended email address and makes it incorrect.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 8",
-      "reason": "'玲' is the second character of the name '美玲'. Omitting it results in an incomplete or incorrect name, which is a significant error for proper nouns, especially in contact information.",
+      "reason": "'玲' is the second character of the name '美玲', so omitting it results in an incomplete or incorrect name in the email address, which is a significant error for an email address.",
       "score": 1
     }
   ]

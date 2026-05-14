@@ -1,32 +1,37 @@
 {
   "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
-  "predicted": "İkinci harf hep yanlış olur. İkinci harfim A olacak. Z'den sonra A var, E değil. Zainep.",
+  "predicted": "İkinci harf hep yanlış, ikinci harfim A olacak, Z'den sonra A var, E değil. Zainep.",
   "unintelligible": false,
-  "wer": 0.2,
-  "werEdits": 3,
+  "wer": 0.3333333333333333,
+  "werEdits": 5,
   "werRefWords": 15,
   "werNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
-  "werNormalizedPredicted": "ikinci harf hep yanlış olur ikinci harfim a olacak zden sonra a var e değil zainep",
-  "significantWer": 1,
-  "majorErrorsCount": 2,
+  "werNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak z den sonra a var e değil zainep",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 15,
   "sigWerNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
-  "sigWerNormalizedPredicted": "ikinci harf hep yanlış olur ikinci harfim a olacak zden sonra a var e değil zainep",
+  "sigWerNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak z den sonra a var e değil zainep",
   "sigWerErrors": [
     {
       "error": "Substitution: 'harfi' to 'harf' at position 1",
-      "reason": "'harfi' is the inflected form meaning 'the letter', while 'harf' is the base form 'letter'; the meaning is only slightly affected in context.",
+      "reason": "'harfi' (the letter) vs 'harf' (letter) is a minor grammatical difference in Turkish, does not change the meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'söylüyorsunuz' to 'olur' at position 4",
-      "reason": "'söylüyorsunuz' means 'you are saying', while 'olur' means 'it happens' or 'it becomes'; this changes the meaning of the sentence significantly.",
-      "score": 1
+      "error": "Deletion: 'söylüyorsunuz' at position 4",
+      "reason": "Omitting 'söylüyorsunuz' (you are saying) removes a phrase but the main meaning about the letter being wrong is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zden' to 'den' at position 9",
+      "reason": "Inserting 'z' before 'den' clarifies the letter being referenced, does not change the meaning.",
+      "score": 3
     },
     {
       "error": "Insertion: 'zainep' at position 15",
-      "reason": "The insertion of 'zainep' (a name) at the end is unrelated to the rest of the sentence and introduces unrelated information.",
-      "score": 1
+      "reason": "Changing 'zden' (from z) to 'den' (from) loses the explicit reference to the letter 'z', which could cause confusion.",
+      "score": 2
     }
   ]
 }

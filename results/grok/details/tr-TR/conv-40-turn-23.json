@@ -1,32 +1,32 @@
 {
   "gold": "Şu an itibari ile yok, teşekkür ederim.",
-  "predicted": "şu an imkansız, teşekkür ediyorum",
+  "predicted": "Şuan imkansız, teşekkür ediyorum.",
   "unintelligible": false,
-  "wer": 0.5714285714285714,
-  "werEdits": 4,
+  "wer": 0.8571428571428571,
+  "werEdits": 6,
   "werRefWords": 7,
   "werNormalizedGold": "şu an itibari ile yok teşekkür ederim",
-  "werNormalizedPredicted": "şu an imkansız teşekkür ediyorum",
+  "werNormalizedPredicted": "şuan imkansız teşekkür ediyorum",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "şu an itibari ile yok teşekkür ederim",
-  "sigWerNormalizedPredicted": "şu an imkansız teşekkür ediyorum",
+  "sigWerNormalizedPredicted": "şuan imkansız teşekkür ediyorum",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'itibari' to 'imkansız' at position 2",
-      "reason": "'itibari ile yok' means 'as of now, there is none', while 'imkansız' means 'impossible'. This substitution changes the meaning of the sentence significantly.",
-      "score": 1
+      "error": "Substitution: 'şu' to 'şuan' at position 0",
+      "reason": "'şu' (now/this) and 'şuan' (right now/at this moment) are very close in meaning and often used interchangeably in Turkish, so this is a minor error.",
+      "score": 2
     },
     {
-      "error": "Deletion: 'ile' at position 3",
-      "reason": "Omitting 'ile' ('with' or 'as of') further breaks the intended meaning of the phrase 'şu an itibari ile yok', making the sentence less coherent.",
+      "error": "Deletion: 'itibari' at position 2",
+      "reason": "'itibari ile yok' means 'as of now, there is none', while 'imkansız' means 'impossible'. This substitution changes the meaning significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'ederim' to 'ediyorum' at position 6",
-      "reason": "'Teşekkür ederim' and 'teşekkür ediyorum' both mean 'thank you', with a slight difference in formality and aspect, but the meaning is preserved.",
-      "score": 3
+      "reason": "'ederim' (I do/I thank) and 'ediyorum' (I am doing/I am thanking) are different tenses but the meaning in context is the same, so this is a minor error.",
+      "score": 2
     }
   ]
 }

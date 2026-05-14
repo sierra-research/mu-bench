@@ -1,16 +1,27 @@
 {
   "gold": "Doğru. Posta kodunu eklemek istiyorum, 34 660 Türkiye.",
-  "predicted": "Doğru, posta kodunu eklemek istiyorum 34 6 60 Türkiye.",
+  "predicted": "Doğru, posta kodunu eklemek istiyorum, 34 66 Türkiye.",
   "unintelligible": false,
-  "wer": 0.0,
-  "werEdits": 0,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
   "werRefWords": 11,
   "werNormalizedGold": "doğru posta kodunu eklemek istiyorum otuz dört altı yüz altmış türkiye",
-  "werNormalizedPredicted": "doğru posta kodunu eklemek istiyorum otuz dört altı yüz altmış türkiye",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "doğru posta kodunu eklemek istiyorum otuz dört altmış altı türkiye",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "doğru posta kodunu eklemek istiyorum otuz dört altı yüz altmış türkiye",
-  "sigWerNormalizedPredicted": "doğru posta kodunu eklemek istiyorum otuz dört altı yüz altmış türkiye",
-  "sigWerErrors": []
+  "sigWerNormalizedPredicted": "doğru posta kodunu eklemek istiyorum otuz dört altmış altı türkiye",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'altmış' at position 7",
+      "reason": "The number sequence is changed from 'altı yüz altmış' (660) to 'altmış altı' (66), which significantly alters the postal code and thus the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'yüz' at position 8",
+      "reason": "Omitting 'yüz' changes the number from 660 to 66, which is a significant error as it alters the intended postal code.",
+      "score": 1
+    }
+  ]
 }

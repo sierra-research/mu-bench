@@ -1,22 +1,22 @@
 {
   "gold": "İyi, onlara ihtiyacım yok. Çok teşekkür ederim yardımınız için.",
-  "predicted": "yok onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
+  "predicted": "Yok, onlara ihtiyacım yok. Çok teşekkür ederim yardımınız için.",
   "unintelligible": false,
   "wer": 0.1111111111111111,
   "werEdits": 1,
   "werRefWords": 9,
   "werNormalizedGold": "iyi onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
   "werNormalizedPredicted": "yok onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 9,
   "sigWerNormalizedGold": "iyi onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
   "sigWerNormalizedPredicted": "yok onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
   "sigWerErrors": [
     {
       "error": "Substitution: 'iyi' to 'yok' at position 0",
-      "reason": "'iyi' means 'good' and 'yok' means 'no' or 'not present' in Turkish. This substitution changes the meaning of the sentence from a polite refusal ('I'm good, I don't need them, thank you very much for your help') to a more abrupt statement ('No, I don't need them, thank you very much for your help'). The overall intent is still a refusal, but the tone and politeness are affected. However, the main message (refusal and gratitude) is preserved.",
-      "score": 2
+      "reason": "'iyi' means 'good' or 'okay', while 'yok' means 'no' or 'not present'. This substitution reverses the meaning of the sentence, significantly changing the intent.",
+      "score": 1
     }
   ]
 }

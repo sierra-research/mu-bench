@@ -1,21 +1,26 @@
 {
   "gold": "À, thôi. Được rồi.",
-  "predicted": "Uh, I'm tired of doing this.",
+  "predicted": "Probably.",
   "unintelligible": false,
-  "wer": 2.0,
-  "werEdits": 6,
+  "wer": 1.0,
+  "werEdits": 3,
   "werRefWords": 3,
   "werNormalizedGold": "thôi được rồi",
-  "werNormalizedPredicted": "i am tired of doing this",
+  "werNormalizedPredicted": "probably",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "thôi được rồi",
-  "sigWerNormalizedPredicted": "i am tired of doing this",
+  "sigWerNormalizedPredicted": "probably",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'thôi' to 'of' at position 0",
-      "reason": "The actual transcription is in a completely different language (English instead of Vietnamese) and conveys a completely different meaning. This is a significant error as the meaning is lost and the languages do not match.",
+      "error": "Substitution: 'thôi' to 'probably' at position 0",
+      "reason": "'thôi' is a Vietnamese word meaning 'okay' or 'enough', while 'probably' is an English word with a completely different meaning and in a different language. This is a significant error that derails the meaning and coherence of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'được' at position 1",
+      "reason": "'được' is missing from the actual transcription, further contributing to the loss of the original meaning. The omission, combined with the language mismatch, makes the sentence incoherent.",
       "score": 1
     }
   ]

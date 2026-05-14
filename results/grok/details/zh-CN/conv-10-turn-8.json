@@ -7,21 +7,21 @@
   "werRefWords": 11,
   "werNormalizedGold": "你还好吗 你觉得你有问题",
   "werNormalizedPredicted": "你还好吗 觉得有你有问题",
-  "significantWer": 1,
-  "majorErrorsCount": 2,
+  "significantWer": 0,
+  "majorErrorsCount": 0,
   "totalWordsCount": 11,
   "sigWerNormalizedGold": "你 还 好 吗 你 觉 得 你 有 问 题",
   "sigWerNormalizedPredicted": "你 还 好 吗 觉 得 有 你 有 问 题",
   "sigWerErrors": [
     {
       "error": "Deletion: '你' at position 4",
-      "reason": "Omitting '你' (you) as the subject of '觉得' (think) makes the sentence less clear about who is thinking, which can confuse the meaning.",
-      "score": 1
+      "reason": "Omitting '你' (you) as the subject of '觉得' (think) makes the sentence less clear about who is thinking, but the overall meaning is still understandable in context.",
+      "score": 2
     },
     {
       "error": "Insertion: '有' at position 7",
-      "reason": "Inserting an extra '有' (have) before '你有问题' (you have a problem) creates a grammatical error and disrupts the sentence structure, making it confusing.",
-      "score": 1
+      "reason": "Inserting '有' (have) before '你有问题' (you have a problem) is redundant but does not change the overall meaning of the sentence.",
+      "score": 2
     }
   ]
 }

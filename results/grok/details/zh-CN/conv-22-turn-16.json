@@ -1,36 +1,31 @@
 {
   "gold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
-  "predicted": "mailing at email dot com she gad yosyan d g",
+  "predicted": "mailing at email dot com chegou da Yossi And G. Não é como se não fala aqui.",
   "unintelligible": false,
   "wer": 0.7894736842105263,
   "werEdits": 15,
   "werRefWords": 19,
   "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern ill get it",
-  "werNormalizedPredicted": "mailing at email dot com she gad yosyan d g",
+  "werNormalizedPredicted": "mailing at email dot com chegou da yossi and g 不 是 como se 不 说 这里",
   "significantWer": 1,
-  "majorErrorsCount": 4,
+  "majorErrorsCount": 3,
   "totalWordsCount": 19,
   "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern ill get it",
-  "sigWerNormalizedPredicted": "mailing at email dot com she gad yosyan d g",
+  "sigWerNormalizedPredicted": "mailing at email dot com chegou da yossi and g 不 是 como se 不 说 这 里",
   "sigWerErrors": [
     {
       "error": "Substitution: '美' to 'mailing' at position 0",
-      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the meaning and identity being referenced.",
+      "reason": "'美' is a Chinese character (likely a name or part of a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Deletion: '玲' at position 1",
-      "reason": "'玲' is the second character of the name, so omitting it results in an incomplete or incorrect name, which is a significant error for identification.",
+      "reason": "'玲' is the second character of a likely name ('美玲'), and its omission results in a loss of the intended name, which is significant for identification or context.",
       "score": 1
     },
     {
-      "error": "Substitution: '是' to 'she' at position 6",
-      "reason": "'是' means 'is' in Chinese, while 'she' is a pronoun in English. This substitution changes the grammatical structure and meaning of the sentence.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: '地' at position 11",
-      "reason": "'地' is part of the phrase for 'address' in Chinese. Its omission makes the phrase incomplete and unclear, which is significant for conveying the correct information.",
+      "error": "Substitution: '是' to 'chegou' at position 6",
+      "reason": "'是' means 'is' in Chinese, while 'chegou' is Portuguese for 'arrived'. This is a substitution not only of meaning but also of language, which derails the meaning of the sentence.",
       "score": 1
     }
   ]

@@ -1,27 +1,32 @@
 {
   "gold": "俊，不是邻居，是林俊。",
-  "predicted": "Jun, not Lin. Jun, is Lin Jun.",
+  "predicted": "去，不是邻去，是邻郡。",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 8,
+  "wer": 0.5,
+  "werEdits": 4,
   "werRefWords": 8,
   "werNormalizedGold": "俊 不是邻居 是林俊",
-  "werNormalizedPredicted": "jun not lin jun is lin jun",
+  "werNormalizedPredicted": "去 不是邻去 是邻郡",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 8,
   "sigWerNormalizedGold": "俊 不 是 邻 居 是 林 俊",
-  "sigWerNormalizedPredicted": "jun not lin jun is lin jun",
+  "sigWerNormalizedPredicted": "去 不 是 邻 去 是 邻 郡",
   "sigWerErrors": [
     {
-      "error": "Substitution: '俊' to 'jun' at position 0",
-      "reason": "'俊' is a Chinese character and 'jun' is its romanization; if the context allows for romanization, this is a minor error, but if the language is expected to be preserved, this is a significant error. Since the rest of the sentence is also romanized or translated, this is a minor error.",
-      "score": 2
+      "error": "Substitution: '俊' to '去' at position 0",
+      "reason": "'俊' (a name or character) is replaced by '去' (to go), which changes the meaning of the sentence significantly.",
+      "score": 1
     },
     {
-      "error": "Deletion: '俊' at position 7",
-      "reason": "The actual transcription is a mix of English and romanized Chinese, while the expected is fully in Chinese characters. The meaning is partially preserved but the language is changed and some words are translated or omitted. This is a significant error as it changes both language and structure.",
+      "error": "Substitution: '居' to '去' at position 4",
+      "reason": "'居' (reside) is replaced by '去' (to go), which alters the meaning of the phrase and makes the sentence incoherent.",
       "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '邻' at position 6",
+      "reason": "'林' (forest or a surname) is replaced by '邻' (neighbor), which is a minor error as both are similar in pronunciation and context, but the meaning is slightly changed.",
+      "score": 2
     }
   ]
 }

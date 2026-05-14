@@ -1,21 +1,26 @@
 {
   "gold": "准备好了。",
-  "predicted": "Je me perds là.",
+  "predicted": "Już wychowała.",
   "unintelligible": false,
   "wer": 1.0,
   "werEdits": 4,
   "werRefWords": 4,
   "werNormalizedGold": "准备好了",
-  "werNormalizedPredicted": "je me perds là",
+  "werNormalizedPredicted": "już wychowała",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 4,
   "sigWerNormalizedGold": "准 备 好 了",
-  "sigWerNormalizedPredicted": "je me perds là",
+  "sigWerNormalizedPredicted": "już wychowała",
   "sigWerErrors": [
     {
-      "error": "Substitution: '准' to 'je' at position 0",
-      "reason": "The actual transcription is in a completely different language (French) than the expected (Chinese), making the meaning incoherent and unrelated.",
+      "error": "Substitution: '准' to 'już' at position 0",
+      "reason": "The actual transcription is in a completely different language (Polish) than the expected (Chinese), making the meaning incoherent and unrelated.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '好' at position 2",
+      "reason": "The word '好' is missing and replaced by nothing in the actual transcription, which is already in a different language, making the sentence incoherent.",
       "score": 1
     }
   ]

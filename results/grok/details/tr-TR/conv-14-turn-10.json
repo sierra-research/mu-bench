@@ -1,51 +1,31 @@
 {
   "gold": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zaynep, P olacak. Pırasanın P'si, siz T ile söylediniz. Zaynep Arslan olacak.",
-  "predicted": "eposta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep t olacak prasanna müstesiz t ile söylediniz arslan olacaktı",
+  "predicted": "E-posta adresi doğru ama adımda ve telefon numarasında hata var. Adımda son harf Zeynep T olacak. Prasanna müsaiti siz T ile söylediniz. Zeynep arslan olacak.",
   "unintelligible": false,
-  "wer": 0.34615384615384615,
-  "werEdits": 9,
+  "wer": 0.19230769230769232,
+  "werEdits": 5,
   "werRefWords": 26,
   "werNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın psi siz t ile söylediniz zaynep arslan olacak",
-  "werNormalizedPredicted": "eposta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep t olacak prasanna müstesiz t ile söylediniz arslan olacaktı",
+  "werNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep t olacak prasanna müsaiti siz t ile söylediniz zeynep arslan olacak",
   "significantWer": 1,
-  "majorErrorsCount": 2,
+  "majorErrorsCount": 1,
   "totalWordsCount": 26,
   "sigWerNormalizedGold": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zaynep p olacak pırasanın psi siz t ile söylediniz zaynep arslan olacak",
-  "sigWerNormalizedPredicted": "eposta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep t olacak prasanna müstesiz t ile söylediniz arslan olacaktı",
+  "sigWerNormalizedPredicted": "e posta adresi doğru ama adımda ve telefon numarasında hata var adımda son harf zeynep t olacak prasanna müsaiti siz t ile söylediniz zeynep arslan olacak",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'e' to 'eposta' at position 0",
-      "reason": "'e posta' is a common phrase in Turkish for 'email', and 'eposta' is the concatenated form. This is a minor formatting difference and does not change the meaning.",
-      "score": 3
-    },
-    {
-      "error": "Deletion: 'posta' at position 1",
-      "reason": "As above, 'eposta' is the concatenated form of 'e posta', so the deletion of 'posta' is not a real error in meaning.",
-      "score": 3
-    },
-    {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 14",
-      "reason": "'Zaynep' and 'Zeynep' are different spellings of a proper name. This changes the name, but the intended person is likely still clear. Minor error.",
+      "reason": "'zaynep' and 'zeynep' are both Turkish names; the difference is a single letter, which is a minor error for a proper noun as a whole.",
       "score": 2
     },
     {
       "error": "Substitution: 'pırasanın' to 'prasanna' at position 17",
-      "reason": "'Pırasanın' (meaning 'of the leek' in Turkish) is replaced with 'prasanna', which is a completely different word and not Turkish. This substitution makes the sentence incoherent at this point.",
+      "reason": "'pırasanın' (meaning 'of the leek' in Turkish) is replaced with 'prasanna', which is a completely different word and not Turkish, making the sentence incoherent.",
       "score": 1
     },
     {
-      "error": "Deletion: 'siz' at position 19",
-      "reason": "Omitting 'siz' (meaning 'you') slightly reduces clarity but does not significantly change the meaning of the sentence.",
-      "score": 2
-    },
-    {
-      "error": "Deletion: 'zaynep' at position 23",
-      "reason": "Omitting the name 'zaynep' removes a key piece of information about whose name is being discussed, which can cause confusion.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'olacak' to 'olacaktı' at position 25",
-      "reason": "'Olacak' (will be) and 'olacaktı' (would have been) are different tenses but the overall meaning is similar in this context.",
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 23",
+      "reason": "Again, a single letter difference in a proper noun, which is a minor error.",
       "score": 2
     }
   ]

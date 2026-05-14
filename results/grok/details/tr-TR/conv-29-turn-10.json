@@ -1,21 +1,26 @@
 {
   "gold": "Anna Hanım Zaynep ve Arslan arasında nokta işareti var demiştim.",
-  "predicted": "\"anna hanım, zeynep ve arslan arasında nokta işareti var\" demiştim.",
+  "predicted": "Anla hanım, eee, Zeynep ve Arslan arasında nokta işareti var demiştim.",
   "unintelligible": false,
-  "wer": 0.1,
-  "werEdits": 1,
+  "wer": 0.2,
+  "werEdits": 2,
   "werRefWords": 10,
   "werNormalizedGold": "anna hanım zaynep ve arslan arasında nokta işareti var demiştim",
-  "werNormalizedPredicted": "anna hanım zeynep ve arslan arasında nokta işareti var demiştim",
-  "significantWer": 0,
-  "majorErrorsCount": 0,
+  "werNormalizedPredicted": "anla hanım zeynep ve arslan arasında nokta işareti var demiştim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
   "totalWordsCount": 10,
   "sigWerNormalizedGold": "anna hanım zaynep ve arslan arasında nokta işareti var demiştim",
-  "sigWerNormalizedPredicted": "anna hanım zeynep ve arslan arasında nokta işareti var demiştim",
+  "sigWerNormalizedPredicted": "anla hanım zeynep ve arslan arasında nokta işareti var demiştim",
   "sigWerErrors": [
     {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anla' is a different word from 'anna', which is a proper noun/name. This changes the meaning and could confuse the subject of the sentence.",
+      "score": 1
+    },
+    {
       "error": "Substitution: 'zaynep' to 'zeynep' at position 2",
-      "reason": "Minor spelling difference in a proper noun, but the name is still clearly recognizable and does not change the meaning of the sentence.",
+      "reason": "Minor misspelling of the proper noun 'zaynep' as 'zeynep', which is a common variant and still recognizable as the same name.",
       "score": 2
     }
   ]

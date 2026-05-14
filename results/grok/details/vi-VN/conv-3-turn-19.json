@@ -1,21 +1,26 @@
 {
   "gold": "OK. Cảm ơn.",
-  "predicted": "Okay, come on.",
+  "predicted": "Ok, cumpre.",
   "unintelligible": false,
   "wer": 0.6666666666666666,
   "werEdits": 2,
   "werRefWords": 3,
   "werNormalizedGold": "okay cảm ơn",
-  "werNormalizedPredicted": "okay come on",
+  "werNormalizedPredicted": "okay cumpre",
   "significantWer": 1,
-  "majorErrorsCount": 1,
+  "majorErrorsCount": 2,
   "totalWordsCount": 3,
   "sigWerNormalizedGold": "okay cảm ơn",
-  "sigWerNormalizedPredicted": "okay come on",
+  "sigWerNormalizedPredicted": "okay cumpre",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'cảm' to 'come' at position 1",
-      "reason": "'cảm' is a Vietnamese word meaning 'thank', while 'come' is an English verb with a completely different meaning. This substitution changes the language and the meaning of the phrase.",
+      "error": "Substitution: 'cảm' to 'cumpre' at position 1",
+      "reason": "'cảm' is a Vietnamese word meaning 'thank', while 'cumpre' is a Portuguese word meaning 'fulfills' or 'complies'. This is a substitution with a word from a different language, making the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ơn' at position 2",
+      "reason": "'ơn' is part of the Vietnamese phrase 'cảm ơn' meaning 'thank you'. Its omission results in an incomplete and incorrect phrase, significantly altering the intended meaning.",
       "score": 1
     }
   ]

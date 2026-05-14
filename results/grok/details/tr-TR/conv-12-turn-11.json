@@ -1,52 +1,42 @@
 {
   "gold": "Yine yanlış oldu, tekrarlıyorum ben. Harf harf kodlayayım, belki daha iyi olacak. A H M E T nokta A R S L A N at işareti E M A I L nokta C O M.",
-  "predicted": "ayır yine yanlış oldu tekrar diyorum ben harf harf kodlayayım belki daha iyi olacak ahmet nokta rclan Et işareti E M A I L nokta G O M",
+  "predicted": "Hayır, yine yanlış oldu. Tekrar diyorum ben harf harf kodlayayım belki daha iyi olacak. A h m e t nokta a r c l a n Et işareti: e m a i l nokta g o m.",
   "unintelligible": false,
-  "wer": 0.45714285714285713,
-  "werEdits": 16,
+  "wer": 0.17142857142857143,
+  "werEdits": 6,
   "werRefWords": 35,
   "werNormalizedGold": "yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n at işareti e m a i l nokta c o m",
-  "werNormalizedPredicted": "ayır yine yanlış oldu tekrar diyorum ben harf harf kodlayayım belki daha iyi olacak ahmet nokta rclan et işareti e m a i l nokta g o m",
+  "werNormalizedPredicted": "hayır yine yanlış oldu tekrar diyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r c l a n et işareti e m a i l nokta g o m",
   "significantWer": 1,
-  "majorErrorsCount": 4,
+  "majorErrorsCount": 1,
   "totalWordsCount": 35,
   "sigWerNormalizedGold": "yine yanlış oldu tekrarlıyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r s l a n at işareti e m a i l nokta c o m",
-  "sigWerNormalizedPredicted": "ayır yine yanlış oldu tekrar diyorum ben harf harf kodlayayım belki daha iyi olacak ahmet nokta rclan et işareti e m a i l nokta g o m",
+  "sigWerNormalizedPredicted": "hayır yine yanlış oldu tekrar diyorum ben harf harf kodlayayım belki daha iyi olacak a h m e t nokta a r c l a n et işareti e m a i l nokta g o m",
   "sigWerErrors": [
     {
-      "error": "Insertion: 'ayır' at position 0",
-      "reason": "'ayır' is an extra word at the beginning, but does not change the overall meaning of the sentence.",
+      "error": "Insertion: 'hayır' at position 0",
+      "reason": "'Hayır' (no) is an extra word at the beginning, which adds a negation not present in the expected sentence. This changes the tone but does not derail the main meaning of the sentence.",
       "score": 2
     },
     {
       "error": "Substitution: 'tekrarlıyorum' to 'diyorum' at position 3",
-      "reason": "The insertion of 'tekrar' (again) is redundant with the context and does not change the meaning.",
+      "reason": "'Tekrar' (again) is inserted, which is redundant with the context and does not change the overall meaning.",
       "score": 2
     },
     {
-      "error": "Substitution: 'a' to 'ahmet' at position 12",
-      "reason": "'tekrarlıyorum' means 'I repeat', 'diyorum' means 'I say'; this changes the nuance but not the main intent.",
+      "error": "Substitution: 's' to 'c' at position 20",
+      "reason": "'Tekrarlıyorum' (I repeat) is replaced with 'diyorum' (I say), which slightly changes the nuance but not the main meaning.",
       "score": 2
     },
     {
-      "error": "Deletion: 'h' at position 13",
-      "reason": "Instead of spelling out 'a h m e t', the actual says 'ahmet' as a whole. This loses the letter-by-letter spelling, which is significant in this context.",
-      "score": 1
-    },
-    {
-      "error": "Substitution: 'a' to 'rclan' at position 18",
-      "reason": "Missing the letter 'h' in the spelled-out name 'ahmet' changes the spelling and could cause confusion.",
-      "score": 1
-    },
-    {
-      "error": "Deletion: 's' at position 20",
-      "reason": "Instead of spelling 'a r s l a n', the actual says 'rclan', which is a significant error in a spelled-out name.",
+      "error": "Substitution: 'at' to 'et' at position 24",
+      "reason": "In the spelled-out name 'a r s l a n', 's' is replaced with 'c', which changes the spelling of the surname and results in a different name. This is a significant error for proper nouns.",
       "score": 1
     },
     {
       "error": "Substitution: 'c' to 'g' at position 32",
-      "reason": "Missing the letter 's' in the spelled-out surname 'arslan' changes the name and is a significant error.",
-      "score": 1
+      "reason": "'At' (the Turkish word for '@') is replaced with 'et', which is a common mishearing but still refers to the '@' symbol. The meaning is preserved in context.",
+      "score": 3
     }
   ]
 }

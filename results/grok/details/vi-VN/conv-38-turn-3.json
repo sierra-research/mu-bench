@@ -1,32 +1,32 @@
 {
   "gold": "Sẵn sàng. Vui lòng đọc lại giùm.",
-  "predicted": "chúng ta hãy ghi lòng gặp lại nhau nữa",
+  "predicted": "Xin chào, vui lòng gặp lại dùm mình.",
   "unintelligible": false,
-  "wer": 1.0,
-  "werEdits": 7,
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
   "werRefWords": 7,
   "werNormalizedGold": "sẵn sàng vui lòng đọc lại giùm",
-  "werNormalizedPredicted": "chúng ta hãy ghi lòng gặp lại nhau nữa",
+  "werNormalizedPredicted": "xin chào vui lòng gặp lại dùm mình",
   "significantWer": 1,
-  "majorErrorsCount": 3,
+  "majorErrorsCount": 2,
   "totalWordsCount": 7,
   "sigWerNormalizedGold": "sẵn sàng vui lòng đọc lại giùm",
-  "sigWerNormalizedPredicted": "chúng ta hãy ghi lòng gặp lại nhau nữa",
+  "sigWerNormalizedPredicted": "xin chào vui lòng gặp lại dùm mình",
   "sigWerErrors": [
     {
-      "error": "Substitution: 'sẵn' to 'ta' at position 0",
-      "reason": "The word 'chúng' introduces a new subject not present in the expected sentence, changing the meaning.",
+      "error": "Substitution: 'sẵn' to 'xin' at position 0",
+      "reason": "'sẵn sàng' means 'ready', while 'xin chào' means 'hello'; this changes the intent and meaning of the sentence significantly.",
       "score": 1
     },
     {
       "error": "Substitution: 'đọc' to 'gặp' at position 4",
-      "reason": "'sẵn' (ready) and 'ta' (we/us) are completely different in meaning and context, altering the intent of the sentence.",
+      "reason": "'đọc lại' means 'read again', while 'gặp lại' means 'meet again'; this changes the action being requested, which is a significant change in meaning.",
       "score": 1
     },
     {
-      "error": "Substitution: 'giùm' to 'nữa' at position 6",
-      "reason": "'đọc' (read) and 'gặp' (meet) are unrelated actions, which changes the meaning of the sentence.",
-      "score": 1
+      "error": "Substitution: 'giùm' to 'mình' at position 6",
+      "reason": "The word 'dùm' (help/do for) is already present as 'giùm' in the expected, but its insertion here does not change the overall meaning much.",
+      "score": 2
     }
   ]
 }
