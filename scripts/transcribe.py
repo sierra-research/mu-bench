@@ -154,6 +154,10 @@ DEEPGRAM_LOCALE_MAP = {
     "zh-CN": "zh",
 }
 
+SMALLEST_LOCALE_MAP = {
+    "en-US": "en",
+}
+
 MAX_RETRIES = 3
 RETRY_BACKOFF = 2.0
 RETRYABLE_STATUSES = {429, 500, 502, 503, 529}
@@ -393,6 +397,15 @@ async def transcribe_openai_gpt_audio(session: aiohttp.ClientSession, wav_bytes:
     return response.choices[0].message.audio.transcript.strip()
 
 
+async def transcribe_smallest_batch(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    api_key = os.environ["SMALLEST_API_KEY"]
+    lang = SMALLEST_LOCALE_MAP.get(locale, locale)
+    url = f"https://api.smallest.ai/waves/v1/pulse/get_text?language={lang}"
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "audio/wav"}
+    data = await _post_with_retry(session, url, headers, wav_bytes, "Smallest-Batch")
+    return data.get("transcription", "").strip()
+
+
 PROVIDERS = {
     "deepgram-nova3": transcribe_deepgram,
     "google-chirp3": transcribe_google,
@@ -401,6 +414,7 @@ PROVIDERS = {
     "openai-gpt4o-transcribe": transcribe_openai,
     "openai-gpt4o-mini-transcribe": transcribe_openai_mini,
     "openai-gpt-audio-1.5": transcribe_openai_gpt_audio,
+    "smallest-pulse-batch": transcribe_smallest_batch,
 }
 
 PROVIDER_METADATA = {
@@ -411,6 +425,7 @@ PROVIDER_METADATA = {
     "openai-gpt4o-transcribe": {"model": "GPT-4o-Transcribe", "organization": "OpenAI"},
     "openai-gpt4o-mini-transcribe": {"model": "GPT-4o-Mini-Transcribe", "organization": "OpenAI"},
     "openai-gpt-audio-1.5": {"model": "GPT-Audio-1.5", "organization": "OpenAI"},
+    "smallest-pulse-batch": {"model": "Pulse", "organization": "Smallest AI"},
 }
 
 
@@ -441,6 +456,7 @@ async def run_transcription(args):
         "openai-gpt4o-transcribe": ["OPENAI_API_KEY"],
         "openai-gpt4o-mini-transcribe": ["OPENAI_API_KEY"],
         "openai-gpt-audio-1.5": ["OPENAI_API_KEY"],
+        "smallest-pulse-batch": ["SMALLEST_API_KEY"],
     }
     missing = [k for k in required_env.get(args.provider, []) if not os.environ.get(k)]
     if missing:
