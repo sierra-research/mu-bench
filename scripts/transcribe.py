@@ -46,6 +46,7 @@ from pathlib import Path
 import aiohttp
 import numpy as np
 import soundfile as sf
+import websockets
 import yaml
 from dotenv import load_dotenv
 
@@ -153,6 +154,14 @@ DEEPGRAM_LOCALE_MAP = {
     "vi-VN": "vi",
     "zh-CN": "zh",
 }
+
+SMALLEST_LOCALE_MAP = {
+    "en-US": "en",
+    "es-MX": "es",
+}
+
+# Keyed by asyncio task id; populated by transcribe_smallest with TTFT before returning
+_task_ttft_ms: dict[int, float] = {}
 
 MAX_RETRIES = 3
 RETRY_BACKOFF = 2.0
@@ -393,6 +402,53 @@ async def transcribe_openai_gpt_audio(session: aiohttp.ClientSession, wav_bytes:
     return response.choices[0].message.audio.transcript.strip()
 
 
+async def transcribe_smallest(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    api_key = os.environ["SMALLEST_API_KEY"]
+    lang = SMALLEST_LOCALE_MAP.get(locale, locale)
+
+    # Extract raw PCM from WAV bytes
+    with wave.open(io.BytesIO(wav_bytes)) as w:
+        sample_rate = w.getframerate()
+        pcm_data = w.readframes(w.getnframes())
+
+    ws_url = (
+        f"wss://api.smallest.ai/waves/v1/pulse/get_text"
+        f"?language={lang}&encoding=linear16&sample_rate={sample_rate}"
+    )
+    headers = {"Authorization": f"Bearer {api_key}"}
+
+    task_id = id(asyncio.current_task())
+    t0 = time.monotonic()
+    ttft_recorded = False
+    transcript_parts: list[str] = []
+
+    async with websockets.connect(ws_url, additional_headers=headers) as ws:
+        for i in range(0, len(pcm_data), 4096):
+            await ws.send(pcm_data[i : i + 4096])
+        await ws.send(json.dumps({"type": "close_stream"}))
+
+        async for message in ws:
+            data = json.loads(message)
+            if data.get("is_final") and data.get("transcript"):
+                if not ttft_recorded:
+                    _task_ttft_ms[task_id] = (time.monotonic() - t0) * 1000
+                    ttft_recorded = True
+                transcript_parts.append(data["transcript"])
+            if data.get("is_last"):
+                break
+
+    return " ".join(transcript_parts).strip()
+
+
+async def transcribe_smallest_batch(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    api_key = os.environ["SMALLEST_API_KEY"]
+    lang = SMALLEST_LOCALE_MAP.get(locale, locale)
+    url = f"https://api.smallest.ai/waves/v1/pulse/get_text?language={lang}"
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "audio/wav"}
+    data = await _post_with_retry(session, url, headers, wav_bytes, "Smallest-Batch")
+    return data.get("transcription", "").strip()
+
+
 PROVIDERS = {
     "deepgram-nova3": transcribe_deepgram,
     "google-chirp3": transcribe_google,
@@ -401,6 +457,8 @@ PROVIDERS = {
     "openai-gpt4o-transcribe": transcribe_openai,
     "openai-gpt4o-mini-transcribe": transcribe_openai_mini,
     "openai-gpt-audio-1.5": transcribe_openai_gpt_audio,
+    "smallest-pulse": transcribe_smallest,
+    "smallest-pulse-batch": transcribe_smallest_batch,
 }
 
 PROVIDER_METADATA = {
@@ -411,6 +469,8 @@ PROVIDER_METADATA = {
     "openai-gpt4o-transcribe": {"model": "GPT-4o-Transcribe", "organization": "OpenAI"},
     "openai-gpt4o-mini-transcribe": {"model": "GPT-4o-Mini-Transcribe", "organization": "OpenAI"},
     "openai-gpt-audio-1.5": {"model": "GPT-Audio-1.5", "organization": "OpenAI"},
+    "smallest-pulse": {"model": "Pulse", "organization": "Smallest AI"},
+    "smallest-pulse-batch": {"model": "Pulse", "organization": "Smallest AI"},
 }
 
 
@@ -441,6 +501,8 @@ async def run_transcription(args):
         "openai-gpt4o-transcribe": ["OPENAI_API_KEY"],
         "openai-gpt4o-mini-transcribe": ["OPENAI_API_KEY"],
         "openai-gpt-audio-1.5": ["OPENAI_API_KEY"],
+        "smallest-pulse": ["SMALLEST_API_KEY"],
+        "smallest-pulse-batch": ["SMALLEST_API_KEY"],
     }
     missing = [k for k in required_env.get(args.provider, []) if not os.environ.get(k)]
     if missing:
@@ -496,7 +558,7 @@ async def run_transcription(args):
     failed = 0
     total = len(items)
     start_time = time.time()
-    latency_records: dict[str, float] = {}
+    latency_records: dict[str, float | dict] = {}
 
     async def process_one(item: dict, session: aiohttp.ClientSession):
         nonlocal completed, failed
@@ -507,11 +569,19 @@ async def run_transcription(args):
             out_path.parent.mkdir(parents=True, exist_ok=True)
 
             try:
+                task_id = id(asyncio.current_task())
                 t0 = time.monotonic()
                 transcript = await provider_fn(session, item["wav_bytes"], locale)
-                latency_ms = (time.monotonic() - t0) * 1000
+                complete_ms = round((time.monotonic() - t0) * 1000, 1)
                 out_path.write_text(transcript, encoding="utf-8")
-                latency_records[f"{locale}/{item_id}"] = round(latency_ms, 1)
+                ttft_ms = _task_ttft_ms.pop(task_id, None)
+                if ttft_ms is not None:
+                    latency_records[f"{locale}/{item_id}"] = {"ttftMs": round(ttft_ms, 1), "completeMs": complete_ms}
+                elif provider_fn is transcribe_smallest:
+                    # Streaming provider, silent utterance — no partial output so ttft == complete
+                    latency_records[f"{locale}/{item_id}"] = {"ttftMs": complete_ms, "completeMs": complete_ms}
+                else:
+                    latency_records[f"{locale}/{item_id}"] = complete_ms
                 completed += 1
             except Exception as e:
                 failed += 1
@@ -537,7 +607,15 @@ async def run_transcription(args):
     # accumulate. Region defaults to ``us-east-2`` to match the published
     # benchmark; pass ``--region us`` for Google Chirp-3 (multi-region) and
     # any other provider whose model isn't routable via a single region.
-    new_measurements = {key: {"roundTripMs": ms} for key, ms in latency_records.items()}
+    has_streaming = any(isinstance(v, dict) for v in latency_records.values())
+    protocol = "streaming" if has_streaming else "batch"
+
+    def _to_measurement(val: float | dict) -> dict:
+        if isinstance(val, dict):
+            return val  # already {ttftMs, completeMs}
+        return {"roundTripMs": val}
+
+    new_measurements = {key: _to_measurement(val) for key, val in latency_records.items()}
     latency_path = output_dir / "latency.json"
     if latency_path.exists():
         with open(latency_path, "r", encoding="utf-8") as f:
@@ -546,15 +624,13 @@ async def run_transcription(args):
             measurements = existing.get("measurements", {})
             measurements.update(new_measurements)
         else:
-            # Legacy flat schema on disk — migrate by wrapping its entries
-            # plus the new measurements into the new shape.
             measurements = {k: {"roundTripMs": v} for k, v in (existing or {}).items() if isinstance(v, (int, float))}
             measurements.update(new_measurements)
     else:
         measurements = new_measurements
     out = {
         "meta": {
-            "protocol": "batch",
+            "protocol": protocol,
             "region": args.region,
             "clientLocation": args.client_location,
             "concurrency": args.concurrency,
@@ -566,7 +642,7 @@ async def run_transcription(args):
         json.dump(out, f, indent=2, ensure_ascii=False)
     print(
         f"\nLatency recorded for {len(measurements)} utterances "
-        f"(meta.protocol=batch meta.region={args.region}) -> {latency_path}"
+        f"(meta.protocol={protocol} meta.region={args.region}) -> {latency_path}"
     )
 
     elapsed = time.time() - start_time
