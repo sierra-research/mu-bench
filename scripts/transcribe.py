@@ -425,6 +425,15 @@ async def transcribe_smallest_batch(session: aiohttp.ClientSession, wav_bytes: b
     return data.get("transcription", "").strip()
 
 
+async def transcribe_smallest_pulse_pro_batch(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    api_key = os.environ["SMALLEST_API_KEY"]
+    lang = SMALLEST_LOCALE_MAP.get(locale, locale)
+    url = f"https://api.smallest.ai/waves/v1/stt/?model=pulse-pro&language={lang}"
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/octet-stream"}
+    data = await _post_with_retry(session, url, headers, wav_bytes, "Smallest-Pulse-Pro-Batch")
+    return data.get("transcription", "").strip()
+
+
 PROVIDERS = {
     "deepgram-nova3": transcribe_deepgram,
     "google-chirp3": transcribe_google,
@@ -434,6 +443,7 @@ PROVIDERS = {
     "openai-gpt4o-mini-transcribe": transcribe_openai_mini,
     "openai-gpt-audio-1.5": transcribe_openai_gpt_audio,
     "smallest-pulse-batch": transcribe_smallest_batch,
+    "smallest-pulse-pro-batch": transcribe_smallest_pulse_pro_batch,
     "grok": transcribe_grok,
 }
 
@@ -446,6 +456,7 @@ PROVIDER_METADATA = {
     "openai-gpt4o-mini-transcribe": {"model": "GPT-4o-Mini-Transcribe", "organization": "OpenAI"},
     "openai-gpt-audio-1.5": {"model": "GPT-Audio-1.5", "organization": "OpenAI"},
     "smallest-pulse-batch": {"model": "Pulse", "organization": "Smallest AI"},
+    "smallest-pulse-pro-batch": {"model": "Pulse Pro", "organization": "Smallest AI"},
     "grok": {"model": "Grok-STT", "organization": "xAI"},
 }
 
@@ -478,6 +489,7 @@ async def run_transcription(args):
         "openai-gpt4o-mini-transcribe": ["OPENAI_API_KEY"],
         "openai-gpt-audio-1.5": ["OPENAI_API_KEY"],
         "smallest-pulse-batch": ["SMALLEST_API_KEY"],
+        "smallest-pulse-pro-batch": ["SMALLEST_API_KEY"],
         "grok": ["XAI_API_KEY"],
     }
     missing = [k for k in required_env.get(args.provider, []) if not os.environ.get(k)]
