@@ -1,0 +1,26 @@
+model: Azure-Speech-05-2026
+organization: Microsoft
+version: "2026-06-05"
+date: "2026-06-05"
+notes: |
+  Partial submission: en-US, es-MX, tr-TR, zh-CN only. The model does
+  not include Vietnamese in its supported language set, so vi-VN is skipped rather than
+  shipping wrong-language transcripts.
+
+  Audio resampled from 8 kHz to 16 kHz client-side (ffmpeg soxr, precision
+  28) before the gRPC request, because the V16 feature extractor is fixed
+  at 16 kHz. Resampling time is not included in latency.json (which records
+  the gRPC end-to-end latency reported by the client).
+
+  override: languageHint because the client passes the per-utterance manifest
+  locale via the gRPC `lid_hint` field (e.g. "en-US"). In practice the model
+  still runs prompted zero-shot LID; the hint only feeds the short-phrase
+  LID path on the server. Disclosed anyway since it is not the out-of-the-box
+  no-hint baseline.
+config:
+  beamSize: default
+  languageHint: "enabled: per-utterance lid_hint = manifest locale"
+  customVocabulary: default
+  noiseSuppression: default
+  domainAdaptation: default
+  keywordBoosting: default
