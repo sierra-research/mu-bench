@@ -1,15 +1,14 @@
-model: Azure-Speech-2025-10-15
+model: Azure-Speech-05-2026
 organization: Microsoft
-version: "2025-10-15"
+version: "2026-06-08"
 date: "2026-06-08"
 notes: |
   Partial submission: en-US, es-MX, tr-TR, zh-CN only. vi-VN is skipped
-  because Vietnamese is not in the supported locales for this resource.
+  because Vietnamese is not in the supported locales for this model.
 
   Calls hit the westus prod endpoint
   (https://westus.api.cognitive.microsoft.com/speechtotext/transcriptions:transcribe
-  ?api-version=2025-10-15) from an Azure VM in westus2. Same-region but
-  cross-resource, so a small egress hop is included in latency.
+  ?api-version=2025-10-15) from an Azure VM in westus2.
 
   Submitted per-request settings:
     locales: [<manifest locale>]  (override below)
