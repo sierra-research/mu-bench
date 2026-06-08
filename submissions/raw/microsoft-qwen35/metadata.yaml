@@ -1,19 +1,25 @@
-model: Azure-Speech-05-2026
+model: Azure-Speech-2025-10-15
 organization: Microsoft
-version: "2026-06-05"
-date: "2026-06-05"
+version: "2025-10-15"
+date: "2026-06-08"
 notes: |
-  Partial submission: en-US, es-MX, tr-TR, zh-CN only. The model does
-  not include Vietnamese in its supported language set, so vi-VN is skipped rather than
-  shipping wrong-language transcripts.
+  Partial submission: en-US, es-MX, tr-TR, zh-CN only. vi-VN is skipped
+  because Vietnamese is not in the supported locales for this resource.
 
-  Audio resampled from 8 kHz to 16 kHz client-side (ffmpeg soxr, precision
-  28) before the gRPC request, because the V16 feature extractor is fixed
-  at 16 kHz. Resampling time is not included in latency.json (which records
-  the gRPC end-to-end latency reported by the client).
+  Calls hit the westus prod endpoint
+  (https://westus.api.cognitive.microsoft.com/speechtotext/transcriptions:transcribe
+  ?api-version=2025-10-15) from an Azure VM in westus2. Same-region but
+  cross-resource, so a small egress hop is included in latency.
+
+  Submitted per-request settings:
+    locales: [<manifest locale>]  (override below)
+
+  override: languageHint because the per-utterance manifest locale is sent
+  in the request body (definition.locales = [locale]). Without it, the
+  endpoint runs zero-shot language detection.
 config:
   beamSize: default
-  languageHint: "enabled: per-utterance lid_hint = manifest locale"
+  languageHint: "enabled: per-utterance definition.locales = manifest locale"
   customVocabulary: default
   noiseSuppression: default
   domainAdaptation: default
