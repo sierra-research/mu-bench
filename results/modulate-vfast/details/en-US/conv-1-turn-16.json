@@ -1,0 +1,37 @@
+{
+  "gold": "You know, 6 7. I think that should be fine. Let's try to transfer me over right now, and if it doesn't work, that's fine.",
+  "predicted": "Um, you know, uh, six, seven, I think that should be fine. Uh, uh, uh, uh, let's try to get the chance from me right now, and if it doesn't work, fine, fine.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 7,
+  "werRefWords": 28,
+  "werNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
+  "werNormalizedPredicted": "you know six seven i think that should be fine let us try to get the chance from me right now and if it does not work fine fine",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 28,
+  "sigWerNormalizedGold": "you know six seven i think that should be fine let us try to transfer me over right now and if it does not work that is fine",
+  "sigWerNormalizedPredicted": "you know six seven i think that should be fine let us try to get the chance from me right now and if it does not work fine fine",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'transfer' to 'from' at position 14",
+      "reason": "'Get' is inserted where 'transfer' is expected, which changes the action being described and alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'over' at position 16",
+      "reason": "'Transfer me over' is replaced with 'get the chance from me', which significantly changes the intended meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'that' to 'fine' at position 25",
+      "reason": "Omitting 'over' from 'transfer me over' makes the phrase less clear but does not completely derail the meaning, as the intent can still be inferred.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'is' at position 26",
+      "reason": "Replacing 'that is fine' with 'fine fine' changes the structure but the overall meaning (acceptance) is preserved.",
+      "score": 2
+    }
+  ]
+}

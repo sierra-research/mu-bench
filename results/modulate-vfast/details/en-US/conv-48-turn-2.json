@@ -1,0 +1,27 @@
+{
+  "gold": "I have C as in cat, N as in Nancy, 6 2 2. And can you repeat the rest of it?",
+  "predicted": "I have c is in cat and is in nancy six two two and can you repeat the rest of it?",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 3,
+  "werRefWords": 21,
+  "werNormalizedGold": "i have c as in cat n as in nancy six two two and can you repeat the rest of it",
+  "werNormalizedPredicted": "i have c is in cat and is in nancy six two two and can you repeat the rest of it",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "i have c as in cat n as in nancy six two two and can you repeat the rest of it",
+  "sigWerNormalizedPredicted": "i have c is in cat and is in nancy six two two and can you repeat the rest of it",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'as' to 'is' at position 3",
+      "reason": "'as in cat' is a standard phrase for spelling out letters, while 'is in cat' is a minor grammatical error but does not change the meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'n' to 'and' at position 6",
+      "reason": "'n as in nancy' is a standard way to clarify the letter 'n', but 'and as in nancy' is confusing and could derail the meaning, as 'and' is not a letter and changes the intended information.",
+      "score": 1
+    }
+  ]
+}

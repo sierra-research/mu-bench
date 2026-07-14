@@ -1,0 +1,32 @@
+{
+  "gold": "Let me confirm that code. I have C as in cat, N as in Nancy, 6 2 2 6 2 0 6.",
+  "predicted": "Let me confirm that code. I have susan cat and is in nancy six two two six two zero six.",
+  "unintelligible": false,
+  "wer": 0.22727272727272727,
+  "werEdits": 5,
+  "werRefWords": 22,
+  "werNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
+  "werNormalizedPredicted": "let me confirm that code i have susan cat and is in nancy six two two six two zero six",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "let me confirm that code i have c as in cat n as in nancy six two two six two zero six",
+  "sigWerNormalizedPredicted": "let me confirm that code i have susan cat and is in nancy six two two six two zero six",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'susan' at position 7",
+      "reason": "'C' is a single letter in a code, but 'susan' is a completely different word and not a letter, which significantly changes the intended code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'as' at position 8",
+      "reason": "Omitting 'as' in the phrase 'c as in cat' makes the code confirmation less clear, but the meaning can still be inferred from context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'n' to 'and' at position 11",
+      "reason": "'N' is a letter in the code, but 'and' is a conjunction and not a letter, which significantly alters the code being confirmed.",
+      "score": 1
+    }
+  ]
+}

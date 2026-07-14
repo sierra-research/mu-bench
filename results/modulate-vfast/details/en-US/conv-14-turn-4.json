@@ -1,0 +1,32 @@
+{
+  "gold": "Hello? Can you give what is 7 6 2?",
+  "predicted": "Can you give me what is this, SS762?",
+  "unintelligible": false,
+  "wer": 0.5555555555555556,
+  "werEdits": 5,
+  "werRefWords": 9,
+  "werNormalizedGold": "hello can you give what is seven six two",
+  "werNormalizedPredicted": "can you give me what is this s s seven six two",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "hello can you give what is seven six two",
+  "sigWerNormalizedPredicted": "can you give me what is this s s seven six two",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'hello' at position 0",
+      "reason": "The greeting 'hello' is omitted, but the main request is still clear and unaffected.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'me' at position 4",
+      "reason": "Adding 'me' does not change the meaning of the request; it is a minor grammatical difference.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'this' at position 6",
+      "reason": "Inserting 'this' before the question changes the structure and could cause confusion about what 'this' refers to, making the sentence less clear.",
+      "score": 2
+    }
+  ]
+}

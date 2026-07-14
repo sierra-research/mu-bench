@@ -360,6 +360,34 @@
       }
     },
     {
+      "id": "modulate-vfast",
+      "model": "velma-2-stt-batch-english-vfast",
+      "organization": "Modulate",
+      "modelDate": "2026-07-02",
+      "localeResults": {
+        "en-US": {
+          "wer": 0.0529,
+          "significantWer": 0.0416,
+          "completeP50Ms": 648.3,
+          "completeP95Ms": 2190.8,
+          "roundTripP50Ms": 648.3,
+          "roundTripP95Ms": 2190.8
+        }
+      },
+      "latencyMeta": {
+        "protocol": "batch",
+        "region": "us-east-1"
+      },
+      "inferenceConfig": {
+        "beamSize": "default",
+        "languageHint": "en-US",
+        "customVocabulary": "default",
+        "noiseSuppression": "default",
+        "domainAdaptation": "default",
+        "keywordBoosting": "default"
+      }
+    },
+    {
       "id": "openai-gpt4o-mini-transcribe",
       "model": "GPT-4o-Mini-Transcribe",
       "organization": "OpenAI",

@@ -1,0 +1,32 @@
+{
+  "gold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
+  "predicted": "Are you trying to get a pen? Alright, I got my pen. Ready?",
+  "unintelligible": false,
+  "wer": 0.4666666666666667,
+  "werEdits": 7,
+  "werRefWords": 15,
+  "werNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "werNormalizedPredicted": "are you trying to get a pen alright i got my pen ready",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "sigWerNormalizedPredicted": "are you trying to get a pen alright i got my pen ready",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'are' at position 0",
+      "reason": "'Let me try' expresses a personal intention, while 'are you trying' is a question directed at someone else. This changes the speaker and the intent, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yeah' to 'alright' at position 7",
+      "reason": "'Yeah' is an affirmation, while 'alright' is an acknowledgment or transition. In this context, the substitution does not significantly change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'all' at position 8",
+      "reason": "Omitting 'all' from 'all right' to 'alright' is a minor difference, as both forms are commonly used interchangeably.",
+      "score": 3
+    }
+  ]
+}
