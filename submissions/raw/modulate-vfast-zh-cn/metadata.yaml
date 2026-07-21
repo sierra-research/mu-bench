@@ -1,0 +1,22 @@
+model: velma-2-stt-batch-multilingual-vfast
+organization: Modulate
+version: vfast
+date: "2026-07-21"
+config:
+  beamSize: default
+  languageHint: zh-CN
+  customVocabulary: default
+  noiseSuppression: default
+  domainAdaptation: default
+  keywordBoosting: default
+notes: |
+  override: languageHint — language is declared as zh via the endpoint's
+  declared-language path rather than auto-detected.
+
+  Multilingual batch STT endpoint (velma-2-stt-batch-multilingual-vfast),
+  zh-CN locale. No custom vocabulary, domain adaptation, keyword boosting,
+  or noise suppression; all other inference settings are production defaults.
+  Latency: endpoint hosted in AWS us-east-1; measured at concurrency=1,
+  request-to-response round-trip, from a client external to AWS (developer
+  workstation), so p95 includes public-internet RTT and is a conservative
+  upper bound on in-region latency.
