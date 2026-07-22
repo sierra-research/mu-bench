@@ -1,0 +1,32 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mainly at email does go",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mainly at email does go",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mainly at email does go",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mainly' at position 0",
+      "reason": "'美' is a Chinese character, likely a name, substituted with an unrelated English word 'mainly', which completely changes the meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is another Chinese character, likely part of the name, and its omission removes critical identifying information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'dot' to 'does' at position 4",
+      "reason": "'dot' is a key part of an email address, while 'does' is unrelated and changes the meaning, making the email address incorrect.",
+      "score": 1
+    }
+  ]
+}

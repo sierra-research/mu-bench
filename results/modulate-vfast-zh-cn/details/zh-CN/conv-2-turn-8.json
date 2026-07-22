@@ -1,0 +1,32 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mailing at email dot com你听到了吗",
+  "unintelligible": false,
+  "wer": 1.1666666666666667,
+  "werEdits": 7,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mailing at email dot com 你听到了吗",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing at email dot com 你 听 到 了 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This changes the intended meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name in the expected transcript and is missing in the actual transcript, which results in an incomplete or incorrect name. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '你' at position 6",
+      "reason": "The phrase '你 听 到 了 吗' is an insertion in Chinese meaning 'Did you hear it?', which is not present in the expected transcript and changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

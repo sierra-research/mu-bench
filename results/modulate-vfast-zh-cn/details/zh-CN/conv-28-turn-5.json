@@ -1,0 +1,27 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mae ling et zimmern lutzko",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mae ling et zimmern lutzko",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mae ling et zimmern lutzko",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mae' at position 0",
+      "reason": "The expected word is a Chinese character (likely a name), while the actual is a romanized approximation. This is a significant change, as the character and the romanization may refer to different names or meanings, and the transcription loses the original identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'com' at position 5",
+      "reason": "The domain 'com' is missing from the actual transcription, making the email address incomplete and unusable.",
+      "score": 1
+    }
+  ]
+}

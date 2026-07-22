@@ -1,0 +1,27 @@
+{
+  "gold": "君，君玲 at email dot com。",
+  "predicted": "drin lin at email dot com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "君 君玲 at email dot com",
+  "werNormalizedPredicted": "drin lin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "君 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drin lin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drin' at position 0",
+      "reason": "'君' is a Chinese character and 'drin' is an unrelated English-sounding name; this is a major substitution that completely changes the identity and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "'玲' is a Chinese character that is missing in the actual transcription, resulting in loss of important information (part of a name or email address).",
+      "score": 1
+    }
+  ]
+}

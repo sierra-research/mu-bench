@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "drilling et emelle dot com",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "drilling et emelle dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drilling et emelle dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drilling' at position 0",
+      "reason": "'君' is a Chinese name, while 'drilling' is an unrelated English word. This substitution completely changes the meaning and identity, making the sentence incoherent for the intended email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 3",
+      "reason": "'玲' is a Chinese name, while 'et' is a French word for 'and' or a mishearing of 'at'. This substitution loses the intended name and makes the email address incorrect.",
+      "score": 1
+    }
+  ]
+}

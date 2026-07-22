@@ -1,0 +1,22 @@
+{
+  "gold": "海淀区，不是海定区。",
+  "predicted": "海淀区不是海淀区",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werEdits": 1,
+  "werRefWords": 8,
+  "werNormalizedGold": "海淀区 不是海定区",
+  "werNormalizedPredicted": "海淀区 不是 海淀区",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "海 淀 区 不 是 海 定 区",
+  "sigWerNormalizedPredicted": "海 淀 区 不 是 海 淀 区",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '定' to '淀' at position 6",
+      "reason": "The word '定' was replaced with '淀', which changes the meaning of the sentence from 'not Haidian District' to 'not Haidian District' (no change), but in the context of Chinese place names, '海淀区' and '海定区' are different locations. This substitution removes the intended contrast and makes the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

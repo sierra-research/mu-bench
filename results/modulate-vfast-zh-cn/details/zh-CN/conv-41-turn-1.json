@@ -1,0 +1,27 @@
+{
+  "gold": "我正在新卡，想知道它的状态。",
+  "predicted": "我正在等待新卡想知道他的状态",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "我正在新卡想知道它的状态",
+  "werNormalizedPredicted": "我正在等待新卡想知道他的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 正 在 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 等 待 新 卡 想 知 道 他 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '等' at position 3",
+      "reason": "The insertion of '等' (wait) changes the meaning from simply being at the new card to waiting for the new card, which alters the intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 8",
+      "reason": "'它' (it) refers to an object (the card), while '他' (he) refers to a person. This substitution changes the reference from the card to a person, which can cause confusion about what is being referred to.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "我再一遍告诉你，是郡凛。",
+  "predicted": "我我在一边告诉你告诉你是君临",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 8,
+  "werRefWords": 10,
+  "werNormalizedGold": "我再一遍告诉你 是郡凛",
+  "werNormalizedPredicted": "我我在一边告诉你告诉你是君临",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 再 一 遍 告 诉 你 是 郡 凛",
+  "sigWerNormalizedPredicted": "我 我 在 一 边 告 诉 你 告 诉 你 是 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 1",
+      "reason": "Repeating the subject '我' (I) does not change the overall meaning, but is a minor redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '遍' to '边' at position 3",
+      "reason": "The word '再' (again) is replaced with '在' (at/in), which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '告' at position 7",
+      "reason": "'遍' (time/iteration) is replaced with '边' (side), which alters the meaning of the phrase.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '郡' to '君' at position 8",
+      "reason": "Repeating '告诉你' (tell you) is redundant but does not change the overall meaning.",
+      "score": 2
+    }
+  ]
+}

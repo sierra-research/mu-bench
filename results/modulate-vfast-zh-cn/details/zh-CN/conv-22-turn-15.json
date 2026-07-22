@@ -1,0 +1,32 @@
+{
+  "gold": "美玲 at email dot com。",
+  "predicted": "mae ling at emelle",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
+  "werRefWords": 6,
+  "werNormalizedGold": "美玲 at email dot com",
+  "werNormalizedPredicted": "mae ling at emelle",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mae ling at emelle",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mae' at position 0",
+      "reason": "'美' is a Chinese character, while 'mae' is an English name; this changes the identity being referenced and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'emelle' at position 3",
+      "reason": "'email' is a standard word, while 'emelle' is a mishearing or misspelling that results in a non-existent or incorrect word, making the address unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Omitting 'dot' from an email address makes it incomplete and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

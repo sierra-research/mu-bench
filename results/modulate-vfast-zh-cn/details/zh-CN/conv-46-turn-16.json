@@ -1,0 +1,32 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "drinking at emer dot com",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "drinking at emer dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drinking at emer dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drinking' at position 0",
+      "reason": "'君' is a name or word in Chinese, while 'drinking' is an unrelated English verb; this completely changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The omission of '玲', which is likely part of a name or identifier, results in a significant loss of information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'emer' at position 3",
+      "reason": "'email' is a standard word in an email address, while 'emer' is a different word and could cause confusion or delivery failure.",
+      "score": 1
+    }
+  ]
+}

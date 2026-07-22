@@ -1,0 +1,32 @@
+{
+  "gold": "君灵 at email dot com 已经说了。",
+  "predicted": "dreamling and email dot com",
+  "unintelligible": false,
+  "wer": 0.7,
+  "werEdits": 7,
+  "werRefWords": 10,
+  "werNormalizedGold": "君灵 at email dot com 已经说了",
+  "werNormalizedPredicted": "dreamling and email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了",
+  "sigWerNormalizedPredicted": "dreamling and email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "'君' is a Chinese character (likely a name or pronoun), while 'dreamling' is an English word with no semantic relation; also, the language is changed, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "'at' is missing in the actual transcription, which is important for the email address structure.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '已' at position 6",
+      "reason": "'已' is a Chinese character indicating aspect (already), which is missing and changes the meaning.",
+      "score": 1
+    }
+  ]
+}

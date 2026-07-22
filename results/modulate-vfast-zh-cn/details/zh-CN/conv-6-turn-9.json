@@ -1,0 +1,32 @@
+{
+  "gold": "我的姓名是君玲，君玲。",
+  "predicted": "我的行命是 dreaming dreaming",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 6,
+  "werRefWords": 9,
+  "werNormalizedGold": "我的姓名是君玲君玲",
+  "werNormalizedPredicted": "我的行命是 dreaming dreaming",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "我 的 行 命 是 dreaming dreaming",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '行' at position 2",
+      "reason": "The word '姓' (surname) is replaced with '行' (row/line/behavior), which changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to 'dreaming' at position 5",
+      "reason": "The Chinese name '君' is replaced with the English word 'dreaming', which is a different language and completely changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '君' at position 7",
+      "reason": "The second occurrence of the name '君' is missing, which omits part of the name and significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
+}

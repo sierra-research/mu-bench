@@ -1,0 +1,32 @@
+{
+  "gold": "我正在等待信卡，想知道它状态。",
+  "predicted": "我正在也等待新卡想知道他状态",
+  "unintelligible": false,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "我正在等待信卡 想知道它状态",
+  "werNormalizedPredicted": "我正在也等待新卡想知道他状态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 正 在 等 待 信 卡 想 知 道 它 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 也 等 待 新 卡 想 知 道 他 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '也' at position 3",
+      "reason": "The insertion of '也' (also) does not significantly change the meaning of the sentence; it just adds emphasis or inclusion.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '信' to '新' at position 5",
+      "reason": "'信卡' (credit card) is changed to '新卡' (new card), which changes the meaning from 'credit card' to 'new card', potentially confusing the type of card being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 10",
+      "reason": "'它' (it) is replaced with '他' (he), which is a minor pronoun error but does not derail the meaning in this context.",
+      "score": 2
+    }
+  ]
+}

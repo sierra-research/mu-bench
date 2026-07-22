@@ -1,0 +1,27 @@
+{
+  "gold": "君灵 at email dot com。",
+  "predicted": "dreaming at email dot com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君灵 at email dot com",
+  "werNormalizedPredicted": "dreaming at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 灵 at email dot com",
+  "sigWerNormalizedPredicted": "dreaming at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreaming' at position 0",
+      "reason": "'君' is a Chinese character, while 'dreaming' is an English word with a completely different meaning. This substitution changes the identity and meaning of the email address, making it unrecognizable and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "The omission of '灵', another Chinese character, further alters the intended email address, making it impossible to recover the correct address from the transcription. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

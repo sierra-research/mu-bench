@@ -1,0 +1,32 @@
+{
+  "gold": "我正在等待换我的卡，想知道它的状态。",
+  "predicted": "我正在等待欢乐的卡享受呃知道他的状态",
+  "unintelligible": false,
+  "wer": 0.3125,
+  "werEdits": 5,
+  "werRefWords": 16,
+  "werNormalizedGold": "我正在等待换我的卡 想知道它的状态",
+  "werNormalizedPredicted": "我正在等待欢乐的卡享受知道他的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 等 待 欢 乐 的 卡 享 受 知 道 他 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '换' to '欢' at position 5",
+      "reason": "'换' (change) is replaced by '欢' (joy), which changes the meaning of the sentence and makes it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '想' to '受' at position 9",
+      "reason": "'享' (enjoy) is inserted, which disrupts the intended meaning and flow of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 12",
+      "reason": "'想' (want/think) is replaced by '受' (receive), which significantly alters the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

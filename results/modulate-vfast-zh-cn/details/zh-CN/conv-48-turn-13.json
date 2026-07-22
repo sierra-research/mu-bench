@@ -1,0 +1,37 @@
+{
+  "gold": "君玲 at email dot com。君玲 at email dot com。",
+  "predicted": "drinking at email dot com drinking at email dot com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "君玲 at email dot com 君玲 at email dot com",
+  "werNormalizedPredicted": "drinking at email dot com drinking at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "君 玲 at email dot com 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drinking at email dot com drinking at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drinking' at position 0",
+      "reason": "'君' is a Chinese name, while 'drinking' is an unrelated English word. This completely changes the meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name and its omission results in an incomplete and incorrect name, significantly altering the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to 'drinking' at position 6",
+      "reason": "Again, '君' is a name and 'drinking' is an unrelated word, causing a major change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 7",
+      "reason": "Omitting '玲' again results in an incomplete and incorrect name, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

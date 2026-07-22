@@ -1,0 +1,27 @@
+{
+  "gold": "不是邻居，是林俊，俊，J U N。",
+  "predicted": "不是邻居是邻居 jun jun",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
+  "werRefWords": 11,
+  "werNormalizedGold": "不是邻居 是林俊 俊 j u n",
+  "werNormalizedPredicted": "不是邻居是邻居 jun jun",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "不 是 邻 居 是 林 俊 俊 j u n",
+  "sigWerNormalizedPredicted": "不 是 邻 居 是 邻 居 jun jun",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '邻' at position 5",
+      "reason": "'林' is a surname and a proper noun, while '邻' means 'neighbor'; this changes the meaning of the sentence significantly, as it confuses a person's name with a common noun.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'u' at position 9",
+      "reason": "The expected spelling is 'j u n', but the actual is 'jun'; missing the letter 'u' in a spelled-out name is a significant error as it changes the spelling of the name.",
+      "score": 1
+    }
+  ]
+}

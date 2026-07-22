@@ -1,0 +1,37 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "dwindling at emeldotka",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "dwindling at emeldotka",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "dwindling at emeldotka",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dwindling' at position 0",
+      "reason": "'君' is a Chinese name, while 'dwindling' is an unrelated English word, completely changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The second part of the name is missing, making the email address unrecognizable and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'emeldotka' at position 3",
+      "reason": "'email' is replaced with a non-word 'emeldotka', which is not a valid email domain and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Missing 'dot' in the email address makes the address invalid and unrecognizable.",
+      "score": 1
+    }
+  ]
+}

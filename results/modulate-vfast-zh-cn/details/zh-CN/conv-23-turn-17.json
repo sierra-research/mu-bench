@@ -1,0 +1,27 @@
+{
+  "gold": "妹玲 at email dot com。",
+  "predicted": "mais lyons at emelle dot com",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "妹玲 at email dot com",
+  "werNormalizedPredicted": "mais lyons at emelle dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "妹 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mais lyons at emelle dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '妹' to 'mais' at position 0",
+      "reason": "'妹' is a Chinese character (likely a name), while 'mais' is an unrelated English word; this is a significant error as it completely changes the identity being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'emelle' at position 3",
+      "reason": "'email' is a standard word, while 'emelle' is a misspelling or mishearing that could cause confusion in an email address; this is a significant error as it would prevent correct communication.",
+      "score": 1
+    }
+  ]
+}

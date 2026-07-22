@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "drin lien et imeldosco",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 6,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "drin lien et imeldosco",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drin lien et imeldosco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drin' at position 0",
+      "reason": "The expected word is a Chinese name, but the actual transcription is a completely different word with no semantic or phonetic similarity, making the meaning incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Missing 'dot' in an email address makes the address incomplete and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

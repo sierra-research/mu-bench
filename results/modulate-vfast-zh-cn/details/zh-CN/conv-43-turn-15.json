@@ -1,0 +1,32 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "drin ling at emeldotka",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "drin ling at emeldotka",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drin ling at emeldotka",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drin' at position 0",
+      "reason": "'君' is a Chinese character (likely a name), while 'drin' is an unrelated English-sounding word; this is a significant error that completely changes the meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'emeldotka' at position 3",
+      "reason": "'email' is replaced with 'emeldotka', which is not a recognizable English word or email-related term; this makes the address incoherent and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Omitting 'dot' in an email address makes it incomplete and unusable, significantly affecting the meaning and function of the address.",
+      "score": 1
+    }
+  ]
+}

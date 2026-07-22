@@ -1,0 +1,27 @@
+{
+  "gold": "你可以再一遍，说。",
+  "predicted": "你可以在一边说",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "你可以再一遍说",
+  "werNormalizedPredicted": "你可以在一边说",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "你 可 以 再 一 遍 说",
+  "sigWerNormalizedPredicted": "你 可 以 在 一 边 说",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '再' to '在' at position 3",
+      "reason": "'再' means 'again', while '在' means 'at' or 'in'. This changes the meaning of the sentence from 'say it again' to something unrelated, significantly altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '遍' to '边' at position 5",
+      "reason": "'遍' means 'time' (as in 'one more time'), while '边' means 'side'. This substitution makes the sentence incoherent and changes the meaning completely.",
+      "score": 1
+    }
+  ]
+}

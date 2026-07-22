@@ -1,0 +1,22 @@
+{
+  "gold": "转账日期是11月23号，金额是100万，对方户名为林梅。",
+  "predicted": "转账日期是十一月二三号金额是一百万对方户名为林梅",
+  "unintelligible": false,
+  "wer": 0.04,
+  "werEdits": 1,
+  "werRefWords": 25,
+  "werNormalizedGold": "转账日期是十一月二十三号 金额是一百万 对方户名为林梅",
+  "werNormalizedPredicted": "转账日期是 十一月 二三号 金额是 一百万 对方户名为 林梅",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "转 账 日 期 是 十 一 月 二 十 三 号 金 额 是 一 百 万 对 方 户 名 为 林 梅",
+  "sigWerNormalizedPredicted": "转 账 日 期 是 十 一 月 二 三 号 金 额 是 一 百 万 对 方 户 名 为 林 梅",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '十' at position 9",
+      "reason": "The deletion of '十' changes '二十三' (23) to '二三' (2 3), which could be interpreted as two separate numbers rather than the intended date '23'. This alters the meaning of the date and could cause confusion in a financial context.",
+      "score": 1
+    }
+  ]
+}

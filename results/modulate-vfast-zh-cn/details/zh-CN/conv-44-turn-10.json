@@ -1,0 +1,27 @@
+{
+  "gold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
+  "predicted": "你有什么问题你有什么问题为什么听不懂我你有什么问题你有什么问题让我真的没有耐心",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 9,
+  "werRefWords": 30,
+  "werNormalizedGold": "你有什么问题 你有什么问题 为什么听不懂我 你有什么问题 有什么问题",
+  "werNormalizedPredicted": "你有什么问题 你有什么问题 为什么听不懂我 你有什么问题 你有什么问题 让我真的没有耐心",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 你 有 什 么 问 题 为 什 么 听 不 懂 我 你 有 什 么 问 题 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "你 有 什 么 问 题 你 有 什 么 问 题 为 什 么 听 不 懂 我 你 有 什 么 问 题 你 有 什 么 问 题 让 我 真 的 没 有 耐 心",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '你' at position 25",
+      "reason": "An extra repetition of '你 有 什 么 问 题' was inserted, which does not significantly change the meaning as it is a repetition of a previous phrase.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '让' at position 30",
+      "reason": "The phrase '让 我 真 的 没 有 耐 心' ('makes me really have no patience') adds a new meaning and sentiment to the sentence, which changes the overall intent and tone, making it a significant error.",
+      "score": 1
+    }
+  ]
+}

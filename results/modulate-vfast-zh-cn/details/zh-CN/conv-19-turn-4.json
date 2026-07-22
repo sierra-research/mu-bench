@@ -1,0 +1,32 @@
+{
+  "gold": "美，你说得不对，是美玲，美玲。",
+  "predicted": "没你说的不对是魅灵魅灵",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
+  "werRefWords": 11,
+  "werNormalizedGold": "美 你说得不对 是美玲 美玲",
+  "werNormalizedPredicted": "没你说的不对是魅灵魅灵",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "美 你 说 得 不 对 是 美 玲 美 玲",
+  "sigWerNormalizedPredicted": "没 你 说 的 不 对 是 魅 灵 魅 灵",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '没' at position 0",
+      "reason": "'美' (beautiful) and '没' (not/no) are completely different in meaning and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 3",
+      "reason": "'得' and '的' are both common particles in Chinese, but they serve different grammatical functions. Here, the substitution does not significantly change the meaning of the sentence, but it is a minor grammatical error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '美' to '魅' at position 7",
+      "reason": "'美' (beautiful) and '魅' (charming/enchanting) are different words, but in the context of a name (美玲 vs 魅灵), this changes the proper noun and could refer to a different person, making it a significant error.",
+      "score": 1
+    }
+  ]
+}

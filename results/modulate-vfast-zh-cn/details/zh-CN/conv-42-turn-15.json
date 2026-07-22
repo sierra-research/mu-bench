@@ -1,0 +1,32 @@
+{
+  "gold": "我的邮件地址是郡凛 at email dot com。",
+  "predicted": "我的邮箱地址是 dreaming at email dot com",
+  "unintelligible": false,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "我的邮件地址是郡凛 at email dot com",
+  "werNormalizedPredicted": "我的邮箱地址是 dreaming at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 的 邮 件 地 址 是 郡 凛 at email dot com",
+  "sigWerNormalizedPredicted": "我 的 邮 箱 地 址 是 dreaming at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '件' to '箱' at position 3",
+      "reason": "'邮件' (email) and '邮箱' (mailbox) are related but not the same; '邮箱' refers to the mailbox itself, while '邮件' refers to the email message. The meaning is slightly changed but still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '郡' to 'dreaming' at position 7",
+      "reason": "'郡' is a Chinese character, while 'dreaming' is an English word and not a transliteration or translation. This is a significant error as it completely changes the intended email username.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 8",
+      "reason": "Omitting '凛' from the email username changes the identity of the email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}
