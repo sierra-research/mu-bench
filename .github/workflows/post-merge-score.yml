@@ -216,3 +216,19 @@ jobs:
           git add results/ submissions/normalized/
           git diff --cached --quiet || git commit -m "Add scoring results for ${{ steps.detect.outputs.name }}"
           git push
+
+  # Publish the site directly rather than relying on the push-path trigger in
+  # deploy-leaderboard.yml: the commit above can touch thousands of results/
+  # files, which pushes results/leaderboard.json out of the file list GitHub
+  # evaluates path filters against, and the deploy silently never runs.
+  deploy-leaderboard:
+    needs: score-and-commit
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy-leaderboard.yml
+    with:
+      # Build main's tip, which now includes the scoring commit. The default
+      # ref for a pull_request_target run is the base sha from before it.
+      ref: main
