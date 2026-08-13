@@ -7,6 +7,20 @@ on:
     paths:
       - "leaderboard/**"
       - "results/leaderboard.json"
+  # Called by post-merge-score.yml once scoring results land on main. The
+  # push trigger above can't be relied on for those commits: a full 5-locale
+  # submission writes thousands of results/ files, and GitHub caps the file
+  # list it evaluates path filters against, so results/leaderboard.json can
+  # fall outside the evaluated set and no run is created.
+  workflow_call:
+    inputs:
+      ref:
+        description: "Git ref to build from. Defaults to the triggering ref."
+        type: string
+        required: false
+        default: ""
+  # Manual escape hatch for re-publishing the current state of main.
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -25,6 +39,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Empty for push/dispatch runs, which check out the triggering ref.
+          # Callers pass "main" so the build picks up the scoring commit that
+          # was pushed during the calling run, not the base sha it started at.
+          ref: ${{ inputs.ref }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
