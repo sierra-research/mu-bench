@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii ki. Artı 90 123 0 90 45 67.",
+  "predicted": "Tabii ki 0.90 123 0.90 45 67",
+  "unintelligible": false,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabii ki sıfır nokta doksan bir yüz yirmi üç sıfır nokta doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "tabii ki artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabii ki sıfır nokta doksan bir yüz yirmi üç sıfır nokta doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'artı' to 'nokta' at position 2",
+      "reason": "The insertion of 'sıfır' (zero) at the beginning changes the structure of the phone number, which can lead to dialing a completely different number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'nokta' at position 9",
+      "reason": "'artı' (plus) is used for international dialing codes, while 'nokta' (dot/point) is not used in phone numbers and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

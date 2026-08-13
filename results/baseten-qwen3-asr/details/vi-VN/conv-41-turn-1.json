@@ -1,0 +1,37 @@
+{
+  "gold": "Xem hết luôn. Tiền, ngày gì. Xem hết luôn.",
+  "predicted": "xem hết lương tiền rồi ngày gì cũng xem hết.",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "werNormalizedPredicted": "xem hết lương tiền rồi ngày gì cũng xem hết",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "xem hết luôn tiền ngày gì xem hết luôn",
+  "sigWerNormalizedPredicted": "xem hết lương tiền rồi ngày gì cũng xem hết",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'luôn' to 'lương' at position 2",
+      "reason": "'luôn' means 'always' while 'lương' means 'salary'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'rồi' at position 4",
+      "reason": "The insertion of 'rồi' ('already') adds a temporal aspect but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cũng' at position 6",
+      "reason": "The insertion of 'cũng' ('also') slightly changes the nuance but does not significantly alter the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'luôn' at position 8",
+      "reason": "Omitting 'luôn' ('always') at the end slightly reduces emphasis but does not change the core meaning.",
+      "score": 2
+    }
+  ]
+}

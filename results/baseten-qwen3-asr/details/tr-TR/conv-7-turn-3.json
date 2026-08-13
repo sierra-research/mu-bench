@@ -1,0 +1,32 @@
+{
+  "gold": "C N 1 1 0. Doğru mudur?",
+  "predicted": "C N B B sıfır doğrudur.",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "werNormalizedPredicted": "c n b b sıfır doğrudur",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "sigWerNormalizedPredicted": "c n b b sıfır doğrudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bir' to 'b' at position 2",
+      "reason": "'bir' is the Turkish word for 'one', while 'b' is just a letter. This changes the meaning and disrupts the sequence, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doğru' to 'doğrudur' at position 5",
+      "reason": "'doğru' and 'doğrudur' are closely related; 'doğrudur' is the affirmative form of 'doğru'. The meaning is preserved, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'mudur' at position 6",
+      "reason": "Omitting 'mudur' removes the question form ('is it correct?'), changing the sentence from a question to a statement, which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
+}

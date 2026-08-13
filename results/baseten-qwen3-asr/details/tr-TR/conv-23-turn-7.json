@@ -1,0 +1,37 @@
+{
+  "gold": "Verildi. Başvuru numaram 975. Referans numaram ise 22 56 15.",
+  "predicted": "Verildi. Başlık numaram 975, Referans numaram ise 225615.",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 6,
+  "werRefWords": 16,
+  "werNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
+  "werNormalizedPredicted": "verildi başlık numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş bin altı yüz on beş",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "verildi başvuru numaram dokuz yüz yetmiş beş referans numaram ise yirmi iki elli altı on beş",
+  "sigWerNormalizedPredicted": "verildi başlık numaram dokuz yüz yetmiş beş referans numaram ise iki yüz yirmi beş bin altı yüz on beş",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'başvuru' to 'başlık' at position 1",
+      "reason": "'Başvuru' (application) and 'başlık' (title) are completely different words and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'iki' at position 10",
+      "reason": "The insertion of 'iki' (two) changes the reference number entirely, which is critical information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'iki' to 'beş' at position 11",
+      "reason": "Changing 'iki' (two) to 'beş' (five) alters the reference number, which is significant for identification.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'yüz' at position 14",
+      "reason": "The insertion of 'yüz' (hundred) changes the structure and value of the reference number, making it incorrect.",
+      "score": 1
+    }
+  ]
+}

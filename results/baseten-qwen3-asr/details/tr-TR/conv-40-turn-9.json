@@ -1,0 +1,32 @@
+{
+  "gold": "Ahmet nokta Arslan, A R S L A N at email nokta com.",
+  "predicted": "Ahmet. Aslan. Arsdane. Et. Email. Com",
+  "unintelligible": false,
+  "wer": 0.7692307692307693,
+  "werEdits": 10,
+  "werRefWords": 13,
+  "werNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "werNormalizedPredicted": "ahmet aslan arsdane et email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet aslan arsdane et email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'nokta' to 'aslan' at position 1",
+      "reason": "'nokta' means 'dot' in Turkish and is part of the email address. Substituting it with 'aslan' (a name) changes the structure and meaning of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'r' at position 4",
+      "reason": "The expected sequence spells out 'arslan' (a name), but the 'r' is missing in the actual transcription, resulting in a misspelling of the name.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 11",
+      "reason": "'nokta' (dot) is missing before 'com', which is essential for a correct email address format.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "C N 4 1 0, đúng không?",
+  "predicted": "cnn bốn một không đúng không?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n bốn một không đúng không",
+  "werNormalizedPredicted": "cnn bốn một không đúng không",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n bốn một không đúng không",
+  "sigWerNormalizedPredicted": "cnn bốn một không đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'cnn' at position 0",
+      "reason": "'cnn' is not a valid substitution for 'c' in this context, especially if these are spelled-out letters or codes. This changes the intended meaning or code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Omitting 'n' from the sequence alters the intended code or information, which is significant if these are meant to be individual letters or identifiers.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Email là thu chấm trần a còng Gmail chấm com.",
+  "predicted": "Email là thu trần a gmail.com",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
+  "werNormalizedPredicted": "email là thu trần a gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là thu chấm trần a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "email là thu trần a gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "Omitting 'chấm' (dot) in an email address can lead to an incorrect or undeliverable email, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'còng' at position 6",
+      "reason": "Omitting 'còng' (at/@) in an email address changes the structure and makes the email invalid, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

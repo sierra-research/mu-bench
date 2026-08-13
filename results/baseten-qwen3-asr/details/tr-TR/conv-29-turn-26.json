@@ -1,0 +1,27 @@
+{
+  "gold": "Tamam. At email nokta com.",
+  "predicted": "Tamam. Etemel nokta com. Hı hı.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "tamam at email nokta com",
+  "werNormalizedPredicted": "tamam etemel nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "tamam at email nokta com",
+  "sigWerNormalizedPredicted": "tamam etemel nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'etemel' at position 1",
+      "reason": "'at' is a common way to say '@' in email addresses, while 'etemel' is not a valid word or email term, making the address incoherent and unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 2",
+      "reason": "Omitting 'email' from the address makes the email address incomplete and unusable, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
+}

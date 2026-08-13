@@ -1,0 +1,27 @@
+{
+  "gold": "Mã đúng là C N 2 3 5, đúng không?",
+  "predicted": "mà mà đúng là hai cn hai ba năm đúng không",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "werNormalizedPredicted": "mà mà đúng là hai c n hai ba năm đúng không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "sigWerNormalizedPredicted": "mà mà đúng là hai c n hai ba năm đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'mã' to 'mà' at position 0",
+      "reason": "The extra 'mà' at the beginning does not change the overall meaning of the sentence, as it is a discourse marker in Vietnamese and does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'hai' at position 3",
+      "reason": "'mã' (code) is substituted with 'mà' (but/that), which changes the meaning of the sentence significantly, as 'mã' is a key word indicating a code, while 'mà' is a conjunction or discourse marker. This substitution derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

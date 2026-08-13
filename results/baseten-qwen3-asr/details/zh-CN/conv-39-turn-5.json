@@ -1,0 +1,27 @@
+{
+  "gold": "不对。",
+  "predicted": "我对我。",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "不对",
+  "werNormalizedPredicted": "我对我",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "不 对",
+  "sigWerNormalizedPredicted": "我 对 我",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '我' at position 0",
+      "reason": "The word '不' means 'not', while '我' means 'I'; this substitution changes the meaning of the sentence from a negation to a statement about oneself, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '我' at position 2",
+      "reason": "The extra '我' (meaning 'I') at the end adds an unrelated subject, making the sentence incoherent and further derailing the intended meaning.",
+      "score": 1
+    }
+  ]
+}

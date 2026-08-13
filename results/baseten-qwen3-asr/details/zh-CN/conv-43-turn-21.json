@@ -1,0 +1,27 @@
+{
+  "gold": "我，我的姓名是君玲，君玲。",
+  "predicted": "我我的姓名是君临，君临。",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "我 我的姓名是君玲 君玲",
+  "werNormalizedPredicted": "我我的姓名是君临 君临",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 我 的 姓 名 是 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "我 我 的 姓 名 是 君 临 君 临",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '玲' to '临' at position 7",
+      "reason": "'玲' and '临' are different Chinese characters with different meanings. Since this is a name, changing a character in a proper noun is a minor error if the name is still recognizable, but it could also be significant if it results in a completely different name. In this case, '君玲' and '君临' are both plausible names but refer to different people, so this is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '玲' to '临' at position 9",
+      "reason": "Same as above: the substitution changes the name from '君玲' to '君临', which is a different name. This is a significant error as it changes the identity being referred to.",
+      "score": 1
+    }
+  ]
+}

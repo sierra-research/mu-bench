@@ -1,0 +1,32 @@
+{
+  "gold": "Başka türlü yardımcı olmanıza gerek yok. Teşekkür ederim, iyi günler dilerim.",
+  "predicted": "Başka bir türlü yardımcı olmamızda gerekiyor. Teşekkür ederim. İyi günler dilerim.",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
+  "werRefWords": 11,
+  "werNormalizedGold": "başka türlü yardımcı olmanıza gerek yok teşekkür ederim iyi günler dilerim",
+  "werNormalizedPredicted": "başka bir türlü yardımcı olmamızda gerekiyor teşekkür ederim iyi günler dilerim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "başka türlü yardımcı olmanıza gerek yok teşekkür ederim iyi günler dilerim",
+  "sigWerNormalizedPredicted": "başka bir türlü yardımcı olmamızda gerekiyor teşekkür ederim iyi günler dilerim",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'bir' at position 1",
+      "reason": "Adding 'bir' (one/a) slightly changes the nuance but does not significantly alter the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'olmanıza' to 'olmamızda' at position 3",
+      "reason": "'olmanıza' (for you to help) vs 'olmamızda' (for us to help) changes the subject from 'you' to 'us', which alters who is being referred to as the helper. This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'yok' at position 5",
+      "reason": "Omitting 'yok' (no/not) reverses the meaning of the phrase, as it changes from 'no need' to 'need', which is a significant error.",
+      "score": 1
+    }
+  ]
+}

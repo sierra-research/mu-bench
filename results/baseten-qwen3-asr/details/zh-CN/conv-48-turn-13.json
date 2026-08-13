@@ -1,0 +1,37 @@
+{
+  "gold": "君玲 at email dot com。君玲 at email dot com。",
+  "predicted": "dreamling at email dot com. dreamling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "君玲 at email dot com 君玲 at email dot com",
+  "werNormalizedPredicted": "dreamling at email dot com dreamling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "君 玲 at email dot com 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "dreamling at email dot com dreamling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "'君' is a Chinese name, while 'dreamling' is an unrelated English word; this changes the identity and meaning completely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "Omitting '玲', which is part of the name, results in an incomplete and incorrect representation of the intended name.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 6",
+      "reason": "Again, '君' is replaced with 'dreamling', which is a significant change in meaning and identity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 7",
+      "reason": "Omitting '玲' again removes part of the name, making the transcription incorrect.",
+      "score": 1
+    }
+  ]
+}

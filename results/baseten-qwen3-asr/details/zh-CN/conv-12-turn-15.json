@@ -1,0 +1,32 @@
+{
+  "gold": "君灵 at email dot com 已经说了。",
+  "predicted": "dreamling at email dot com，你清楚啦。",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 6,
+  "werRefWords": 10,
+  "werNormalizedGold": "君灵 at email dot com 已经说了",
+  "werNormalizedPredicted": "dreamling at email dot com 你清楚啦",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了",
+  "sigWerNormalizedPredicted": "dreamling at email dot com 你 清 楚 啦",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "'君' is a Chinese character (likely a name or pronoun), while 'dreamling' is an English word and not a translation or equivalent. This is a major substitution that changes the meaning and language.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "'灵' is missing in the actual transcription, which further distorts the intended meaning, especially if '君灵' is a name or phrase. This omission significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '已' to '你' at position 6",
+      "reason": "'已' means 'already', while '你' means 'you'. This substitution changes the subject and meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "0 1 2 3 0 90 45 67.",
+  "predicted": "0.123, 0.945, 67.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "sıfır virgül bir iki üç sıfır virgül dokuz dört beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "sıfır bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "sıfır virgül bir iki üç sıfır virgül dokuz dört beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'virgül' at position 1",
+      "reason": "'virgül' (comma) is inserted where a number is expected, which disrupts the format of a numeric sequence and could confuse the meaning, especially in contexts like phone numbers or codes.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doksan' to 'dokuz' at position 5",
+      "reason": "Another insertion of 'virgül' (comma) in a numeric sequence, again disrupting the intended meaning and format.",
+      "score": 1
+    }
+  ]
+}

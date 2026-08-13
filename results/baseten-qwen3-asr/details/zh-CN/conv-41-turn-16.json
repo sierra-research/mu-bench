@@ -1,0 +1,32 @@
+{
+  "gold": "哎呀你有什么问题啊。",
+  "predicted": "哎呀，你为什么问呀？",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "哎呀你有什么问题",
+  "werNormalizedPredicted": "你为什么问",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "哎 呀 你 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "你 为 什 么 问",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '哎' at position 0",
+      "reason": "The interjection '哎' expresses emotion or draws attention, and its omission slightly reduces the conversational tone but does not change the core meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '有' to '为' at position 3",
+      "reason": "Substituting '有' (have) with '为' (for/why) changes the sentence structure and meaning, resulting in a different question ('why' instead of 'what do you have'), which significantly alters the intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '题' at position 7",
+      "reason": "Omitting '题' (question/problem) makes the sentence incomplete and unclear, significantly affecting the meaning.",
+      "score": 1
+    }
+  ]
+}

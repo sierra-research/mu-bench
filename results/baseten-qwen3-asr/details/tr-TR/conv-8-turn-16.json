@@ -1,0 +1,42 @@
+{
+  "gold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
+  "predicted": "Adımın son harfi yanlış. Ben Zeynep T ile Prasanın P'siyle söyledim. Siz bana T'li söylediniz. Zeynep emailde de aynı şekilde Zeynep olacak.",
+  "unintelligible": false,
+  "wer": 0.34782608695652173,
+  "werEdits": 8,
+  "werRefWords": 23,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın psiyle söyledim siz bana tli söylediniz zeynep emailde de aynı şekilde zeynep olacak",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile pırasanın psiyle söyledim siz bana tli söylediniz zeynep emailde de aynı şekilde zeynep olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 5",
+      "reason": "'zaynep' and 'zeynep' are both proper nouns (names), and the difference is a single letter. The name is still recognizable and the meaning is not derailed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'psi' to 'psiyle' at position 9",
+      "reason": "'psiyle' means 'with psi' in Turkish, which is a minor grammatical difference from 'psi'. The meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ile' at position 10",
+      "reason": "'ile' means 'with' in Turkish, but since 'psiyle' already includes the 'with' meaning, this deletion does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 16",
+      "reason": "Same as above: single letter difference in a proper noun, minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 21",
+      "reason": "Same as above: single letter difference in a proper noun, minor error.",
+      "score": 2
+    }
+  ]
+}

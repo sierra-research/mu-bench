@@ -1,0 +1,32 @@
+{
+  "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
+  "predicted": "İkinci harf hep yanlış. İkinci harfim A olacak. Z'den sonra A var, E değil. Zay nept.",
+  "unintelligible": false,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
+  "werRefWords": 15,
+  "werNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "werNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak zden sonra a var e değil zay nept",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "sigWerNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak zden sonra a var e değil zay nept",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'harfi' to 'harf' at position 1",
+      "reason": "'harfi' (the letter) vs 'harf' (letter) is a minor grammatical difference in Turkish, does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'söylüyorsunuz' at position 4",
+      "reason": "Omitting 'söylüyorsunuz' (you are saying) removes the reference to the listener's repeated action, but the main meaning about the letter being wrong is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'zay' at position 15",
+      "reason": "The insertion of 'zay' is unrelated and adds confusion, making the end of the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

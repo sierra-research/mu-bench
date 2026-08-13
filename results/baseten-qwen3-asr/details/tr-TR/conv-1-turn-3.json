@@ -1,0 +1,27 @@
+{
+  "gold": "Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Ahmet Arslan et email.com",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet arslan et email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet arslan et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "Omitting 'nokta' (which means 'dot' in Turkish and is used to indicate a period in email addresses) makes the email address incomplete or incorrect, which can prevent correct communication.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 3",
+      "reason": "Substituting 'at' with 'et' in the context of an email address changes the standard word used to indicate '@', which can cause confusion or incorrect transcription of the email address.",
+      "score": 1
+    }
+  ]
+}

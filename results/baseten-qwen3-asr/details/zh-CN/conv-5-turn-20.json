@@ -1,0 +1,27 @@
+{
+  "gold": "是君玲 at email dot com。",
+  "predicted": "是，dreamlin at email dot com。",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "是君玲 at email dot com",
+  "werNormalizedPredicted": "是 dreamlin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "是 dreamlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamlin' at position 1",
+      "reason": "'君' is a Chinese character, while 'dreamlin' is an English word with a completely different meaning and form. This substitution changes the identity of the email address and makes it unrecognizable, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 2",
+      "reason": "Omitting '玲' removes a key part of the expected name in the email address, making the address incomplete and incorrect. This is a significant error as it affects the ability to contact the intended recipient.",
+      "score": 1
+    }
+  ]
+}

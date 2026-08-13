@@ -1,0 +1,32 @@
+{
+  "gold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
+  "predicted": "Alın. Yalnız telefon numarasın telefon numarasın sonu yine yanlış oldu. Siz 68 dediniz, 67 olacak.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 5,
+  "werRefWords": 15,
+  "werNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "werNormalizedPredicted": "alın yalnız telefon numarasın telefon numarasın sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "sigWerNormalizedPredicted": "alın yalnız telefon numarasın telefon numarasın sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'pardon' to 'alın' at position 0",
+      "reason": "'Pardon' means 'excuse me' or 'sorry', while 'alın' means 'take' or 'receive'. This changes the intent and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numarasının' to 'numarasın' at position 3",
+      "reason": "The repeated insertion of 'numarasın' (your number) is redundant but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'size' to 'siz' at position 8",
+      "reason": "Missing the possessive suffix '-ın' slightly changes the grammatical correctness but the meaning is still clear.",
+      "score": 2
+    }
+  ]
+}

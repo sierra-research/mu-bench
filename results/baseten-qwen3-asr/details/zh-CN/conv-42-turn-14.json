@@ -1,0 +1,32 @@
+{
+  "gold": "我再一遍告诉你，是郡凛。",
+  "predicted": "我，我再一遍告诉告诉你，是军令。",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "我再一遍告诉你 是郡凛",
+  "werNormalizedPredicted": "我 我再一遍告诉告诉你 是军令",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 再 一 遍 告 诉 你 是 郡 凛",
+  "sigWerNormalizedPredicted": "我 我 再 一 遍 告 诉 告 诉 你 是 军 令",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '我' at position 1",
+      "reason": "Repeating '我' (I) does not change the overall meaning of the sentence, just adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '告' at position 6",
+      "reason": "Repeating '告' (from '告诉', meaning 'tell') does not change the meaning, just adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '郡' to '军' at position 8",
+      "reason": "'郡凛' is a proper noun (name), but '军令' is a completely different word meaning 'military order', which changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

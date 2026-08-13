@@ -1,0 +1,27 @@
+{
+  "gold": "Zeynep nokta Arslan at email nokta com.",
+  "predicted": "Zeynep Arslan at email .com",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "zeynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zeynep arslan at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "zeynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zeynep arslan at email com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' is used to indicate a dot/period in email addresses. Omitting it makes the email address incomplete or incorrect, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'nokta' at position 5",
+      "reason": "'nokta' is again used to indicate a dot/period in the domain part of the email address. Its omission results in an incorrect email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

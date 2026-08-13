@@ -1,0 +1,42 @@
+{
+  "gold": "Tên của mình là Trần Minh. Email là minh trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ của mình là số 1 2 3, đường Lê Lợi, Hồ Chí Minh, 700 000, Việt Nam.",
+  "predicted": "Tên của mình là Trần Minh, email là minhtranacong@gmail.com, số điện thoại là 849112345678, địa chỉ của mình là số 123 đường Lê lợi, thành phố Hồ Chí Minh, 700.000, Việt Nam.",
+  "unintelligible": false,
+  "wer": 0.1509433962264151,
+  "werEdits": 8,
+  "werRefWords": 53,
+  "werNormalizedGold": "tên của mình là trần minh email là minh trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi hồ chí minh bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "tên của mình là trần minh email là minhtranacong gmail chấm com số điện thoại là tám bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 53,
+  "sigWerNormalizedGold": "tên của mình là trần minh email là minh trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "tên của mình là trần minh email là minhtranacong gmail chấm com số điện thoại là tám bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ của mình là số một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'minhtranacong' at position 8",
+      "reason": "'minhtranacong' merges the name and the 'a còng' (at sign) into one word, which could confuse the email address and make it unclear or unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 9",
+      "reason": "Omitting 'trần' from the email address changes the actual email, which is a significant error for contact information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cộng' at position 19",
+      "reason": "Missing 'cộng' (plus sign) in the phone number omits the country code indicator, which is important for dialing internationally.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 21",
+      "reason": "Omitting 'mươi' (which means 'ten') changes the number from 'tám mươi bốn' (eighty-four) to 'tám bốn' (eight four), which is a significant change in the phone number.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'thành' at position 45",
+      "reason": "Adding 'thành phố' (city) before 'hồ chí minh' is a minor addition, as it clarifies the location but does not change the meaning.",
+      "score": 2
+    }
+  ]
+}

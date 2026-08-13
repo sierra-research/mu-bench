@@ -1,0 +1,27 @@
+{
+  "gold": "Cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "cộng tam bốn chín một một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "cộng tam bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "cộng tam bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tám' to 'tam' at position 1",
+      "reason": "'tám' means 'eight' and 'tam' means 'three' in Vietnamese; substituting these changes the number completely, which is a significant error in a sequence of numbers.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 2",
+      "reason": "Omitting 'mươi' (which means 'tens' in Vietnamese) changes 'tám mươi bốn' (eighty-four) to 'tam bốn' (three four), which alters the intended number and meaning significantly.",
+      "score": 1
+    }
+  ]
+}

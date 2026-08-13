@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır, posta kodunu sonunda bir de 0 var. 3466 0.",
+  "predicted": "Hayır, posta kodun sonunda bize sıfır var. 3466 sıfır.",
+  "unintelligible": false,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç dört altı altı sıfır",
+  "werNormalizedPredicted": "hayır posta kodun sonunda bize sıfır var üç dört altı altı sıfır",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "hayır posta kodunu sonunda bir de sıfır var üç dört altı altı sıfır",
+  "sigWerNormalizedPredicted": "hayır posta kodun sonunda bize sıfır var üç dört altı altı sıfır",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kodunu' to 'kodun' at position 2",
+      "reason": "Minor grammatical difference (possessive suffix), does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'bir' to 'bize' at position 4",
+      "reason": "'bir' means 'one' and 'bize' means 'to us'; this changes the meaning of the sentence significantly, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'de' at position 5",
+      "reason": "Omitting 'de' (meaning 'also' or 'too') is a minor omission that does not significantly alter the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

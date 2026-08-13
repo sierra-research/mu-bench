@@ -1,0 +1,32 @@
+{
+  "gold": "Cái này lần đầu, không biết. Hướng dẫn giùm.",
+  "predicted": "này lần đầu không biết muốn dẫn gì.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
+  "werRefWords": 9,
+  "werNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "werNormalizedPredicted": "này lần đầu không biết muốn dẫn gì",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "cái này lần đầu không biết hướng dẫn giùm",
+  "sigWerNormalizedPredicted": "này lần đầu không biết muốn dẫn gì",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'cái' at position 0",
+      "reason": "'cái' is a demonstrative word that helps specify the subject. Its omission makes the sentence less clear but does not significantly change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'hướng' to 'muốn' at position 6",
+      "reason": "'hướng dẫn' means 'guide/instruct', while 'muốn dẫn' means 'want to lead'. This substitution changes the intent of the sentence, resulting in a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'giùm' to 'gì' at position 8",
+      "reason": "'giùm' means 'please (help)', while 'gì' means 'what'. This substitution changes the request for help into a question, altering the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

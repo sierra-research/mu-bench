@@ -1,0 +1,37 @@
+{
+  "gold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
+  "predicted": "tôi muốn xem là thể hiện tại khi trường nào thì mới có thể đẩy đấy.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
+  "werRefWords": 12,
+  "werNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "werNormalizedPredicted": "tôi muốn xem là thể hiện tại khi trường nào thì mới có thể đẩy đấy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "sigWerNormalizedPredicted": "tôi muốn xem là thể hiện tại khi trường nào thì mới có thể đẩy đấy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thẻ' to 'thể' at position 3",
+      "reason": "'là' is an extra word that does not change the overall meaning of the sentence, but is unnecessary.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'chừng' to 'trường' at position 6",
+      "reason": "'thẻ' (card) and 'thể' (form/can) are different words and this changes the meaning of the sentence, making it confusing.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'thì' at position 8",
+      "reason": "'khi' (when) is an extra word that does not significantly change the meaning, but adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cái' to 'đẩy' at position 10",
+      "reason": "'chừng' (when/about) and 'trường' (school) are completely different in meaning, which derails the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır, istemiyorum. İyi günler dilerim.",
+  "predicted": "Hayır, temirım, iğnelerim.",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 4,
+  "werRefWords": 5,
+  "werNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "werNormalizedPredicted": "hayır temirım iğnelerim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "sigWerNormalizedPredicted": "hayır temirım iğnelerim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'istemiyorum' to 'temirım' at position 1",
+      "reason": "'temirım' is not a valid word and does not convey the meaning of 'istemiyorum' ('I do not want'), which is crucial to the sentence's intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'günler' at position 3",
+      "reason": "Omitting 'günler' ('days') removes a key part of the phrase 'iyi günler dilerim' ('I wish you a good day'), making the sentence incomplete and incoherent.",
+      "score": 1
+    }
+  ]
+}

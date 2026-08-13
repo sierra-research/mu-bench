@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "drinlin at email dot com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "drinlin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "drinlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drinlin' at position 0",
+      "reason": "'君' is a Chinese name, while 'drinlin' is a completely different string and not a transliteration or equivalent. This changes the identity of the email address and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is missing from the actual transcription, which omits part of the name and changes the intended email address. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

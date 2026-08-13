@@ -1,0 +1,42 @@
+{
+  "gold": "Hayır baştan söylüyorum beni kesmeden dinle lütfen. Artı 90 123 0 90 45 67.",
+  "predicted": "Hay baştan söylüyorum ben kesmeden dinlediysen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
+  "werRefWords": 18,
+  "werNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "hay baştan söylüyorum ben kesmeden dinlediysen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "hayır baştan söylüyorum beni kesmeden dinle lütfen artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "hay baştan söylüyorum ben kesmeden dinlediysen artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'hay' at position 0",
+      "reason": "'hayır' means 'no' or 'not', while 'hay' is not a word in Turkish and loses the negation, changing the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'beni' to 'ben' at position 3",
+      "reason": "'beni' means 'me' (object), while 'ben' means 'I' (subject); this changes the grammatical structure but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dinle' to 'dinlediysen' at position 5",
+      "reason": "'dinle' is an imperative 'listen', while 'dinlediysen' means 'if you listened'; this changes the sentence from a command to a conditional, altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'lütfen' at position 6",
+      "reason": "'lütfen' means 'please', which is a politeness marker; its omission does not change the core meaning but removes politeness.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'bir' to 'yüz' at position 9",
+      "reason": "'bir' means 'one', 'yüz' means 'hundred'; this is a significant error in a number sequence, changing the actual number.",
+      "score": 1
+    }
+  ]
+}

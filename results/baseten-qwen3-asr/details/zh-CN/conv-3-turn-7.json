@@ -1,0 +1,37 @@
+{
+  "gold": "你写了我的电子邮箱吗？",
+  "predicted": "呃，那你学了我的垫子有香吗？",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "你写了我的电子邮箱吗",
+  "werNormalizedPredicted": "那你学了我的垫子有香吗",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 写 了 我 的 电 子 邮 箱 吗",
+  "sigWerNormalizedPredicted": "那 你 学 了 我 的 垫 子 有 香 吗",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '那' at position 0",
+      "reason": "'那' (that) is an extra word at the beginning, which changes the subject and context of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '写' to '学' at position 1",
+      "reason": "'写' (write) and '学' (learn) are completely different verbs, changing the meaning of the action in the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '电' to '垫' at position 5",
+      "reason": "'电' (electric) and '垫' (mat) are unrelated, which changes the meaning of the noun phrase.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '有' at position 7",
+      "reason": "'邮' (mail) and '有' (have) are unrelated, which makes the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

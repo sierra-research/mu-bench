@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır yanlış, e-posta adresim, evet.",
+  "predicted": "Hayır ya, eposta değil, evet.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "hayır yanlış e posta adresim evet",
+  "werNormalizedPredicted": "hayır eposta değil evet",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "hayır yanlış e posta adresim evet",
+  "sigWerNormalizedPredicted": "hayır eposta değil evet",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yanlış' to 'eposta' at position 1",
+      "reason": "'yanlış' means 'wrong' and 'eposta' means 'email'; substituting these changes the meaning of the sentence significantly, as it removes the indication of something being wrong and instead just states 'email'.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'posta' at position 3",
+      "reason": "Omitting 'posta' from 'e posta' changes the phrase from 'e posta' (email) to 'eposta' (still means email in Turkish, but the expected form was split). This is a minor error as the meaning is preserved.",
+      "score": 2
+    }
+  ]
+}

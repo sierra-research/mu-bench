@@ -1,0 +1,32 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "email là min trần a c cộng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.14814814814814814,
+  "werEdits": 4,
+  "werRefWords": 27,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là min trần a c cộng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là min trần a c cộng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'min' at position 2",
+      "reason": "'minh' is a Vietnamese name, while 'min' is not a valid name in this context; this changes the intended email address and could cause delivery failure.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "'chấm' means 'dot' in the email address; omitting it makes the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 6",
+      "reason": "An extra 'c' in the email address changes the address and could cause delivery failure.",
+      "score": 1
+    }
+  ]
+}

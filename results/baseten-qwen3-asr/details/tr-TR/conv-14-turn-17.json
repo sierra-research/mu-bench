@@ -1,0 +1,32 @@
+{
+  "gold": "Tamam, daha iyi anlamanız için tek tek veriyorum. Artı 9 0 1 2 3 0 9 0 4 5 6 7.",
+  "predicted": "Tamam, daha iyi anlamamız için tek tek söylüyorum. Artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 4,
+  "werRefWords": 20,
+  "werNormalizedGold": "tamam daha iyi anlamanız için tek tek veriyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "werNormalizedPredicted": "tamam daha iyi anlamamız için tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "tamam daha iyi anlamanız için tek tek veriyorum artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerNormalizedPredicted": "tamam daha iyi anlamamız için tek tek söylüyorum artı dokuz sıfır bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anlamanız' to 'anlamamız' at position 3",
+      "reason": "'anlamanız' means 'for you to understand', 'anlamamız' means 'for us to understand'; this changes the subject of the sentence but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'veriyorum' to 'söylüyorum' at position 7",
+      "reason": "'veriyorum' means 'I am giving', 'söylüyorum' means 'I am saying'; in this context, both can be used to indicate providing information, so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 9",
+      "reason": "The insertion of 'dokuz' (nine) changes the sequence of numbers, which is likely a phone number or code. This is a significant error as it alters the information.",
+      "score": 1
+    }
+  ]
+}

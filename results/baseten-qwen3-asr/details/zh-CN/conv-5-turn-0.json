@@ -1,0 +1,27 @@
+{
+  "gold": "我正在等待换我的卡，想知道它的状态。",
+  "predicted": "我正在等待欢乐的卡，想呃知道他的状态。",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "我正在等待换我的卡 想知道它的状态",
+  "werNormalizedPredicted": "我正在等待欢乐的卡 想知道他的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "我 正 在 等 待 换 我 的 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 等 待 欢 乐 的 卡 想 知 道 他 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '换' to '欢' at position 5",
+      "reason": "'换' means 'to change' or 'replace', while '欢' means 'joy' or 'happy'. This substitution changes the meaning of the sentence, making it incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '它' to '他' at position 12",
+      "reason": "'它' means 'it' (referring to an object), while '他' means 'he' (referring to a person). This changes the reference from an object (the card) to a person, which is a significant error in this context.",
+      "score": 1
+    }
+  ]
+}

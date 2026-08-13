@@ -1,0 +1,27 @@
+{
+  "gold": "你要重复我的姓名，嗯。",
+  "predicted": "你要丰富我的心灵，嗯。",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "你要重复我的姓名",
+  "werNormalizedPredicted": "你要丰富我的心灵",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "你 要 重 复 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 要 丰 富 我 的 心 灵",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '重' to '丰' at position 2",
+      "reason": "'重' (repeat) and '丰' (abundant/rich) are completely different in meaning, changing the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '姓' to '心' at position 6",
+      "reason": "'姓' (surname) and '心' (heart) are unrelated, which changes the object of the sentence and derails the meaning.",
+      "score": 1
+    }
+  ]
+}

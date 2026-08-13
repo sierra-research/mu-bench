@@ -1,0 +1,32 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartında otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "predicted": "Ana'nın merhabalar. Ben kredi kartımda otomatik ödeme yapabilir miyim? Onu merak ettiğim için aradım.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "werNormalizedPredicted": "ananın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartında otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerNormalizedPredicted": "ananın merhabalar ben kredi kartımda otomatik ödeme yapabilir miyim onu merak ettiğim için aradım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'ananın' at position 0",
+      "reason": "'ananın' is a different word from 'anna' and in Turkish, 'ananın' is an informal or even offensive way to refer to someone's mother, while 'anna' is a name. This changes the meaning and tone of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite honorific in Turkish, and its omission makes the greeting less formal but does not completely change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kartında' to 'kartımda' at position 5",
+      "reason": "'kartında' means 'on the card' (referring to a card in general), while 'kartımda' means 'on my card'. This changes the reference from a general card to the speaker's own card, which is a minor but not significant change in meaning.",
+      "score": 2
+    }
+  ]
+}

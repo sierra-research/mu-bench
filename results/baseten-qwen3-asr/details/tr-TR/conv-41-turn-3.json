@@ -1,0 +1,42 @@
+{
+  "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "predicted": "Önceki bana bir kredi kartı gibi tartışma yapmak yapmak istiyorum ama önceki bana bir numaramı verir misin takip numaramı?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
+  "werRefWords": 18,
+  "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "werNormalizedPredicted": "önceki bana bir kredi kartı gibi tartışma yapmak yapmak istiyorum ama önceki bana bir numaramı verir misin takip numaramı",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "sigWerNormalizedPredicted": "önceki bana bir kredi kartı gibi tartışma yapmak yapmak istiyorum ama önceki bana bir numaramı verir misin takip numaramı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'öncelikle' to 'önceki' at position 0",
+      "reason": "'öncelikle' means 'first of all' or 'primarily', while 'önceki' means 'previous'. This changes the temporal context and can confuse the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'limit' to 'gibi' at position 5",
+      "reason": "'limit' means 'limit' (as in credit card limit), while 'gibi' means 'like' or 'as'. This substitution makes the sentence incoherent and changes the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'yapmak' at position 8",
+      "reason": "The extra 'yapmak' (to do/make) is a repetition that makes the sentence awkward but does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'öncelikle' to 'önceki' at position 10",
+      "reason": "Same as the first error: changes 'first of all' to 'previous', which alters the meaning and temporal context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaranı' to 'numaramı' at position 17",
+      "reason": "'numaranı' means 'your number', 'numaramı' means 'my number'. This changes the subject of the request, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

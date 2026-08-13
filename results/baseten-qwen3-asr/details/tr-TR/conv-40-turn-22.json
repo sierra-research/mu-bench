@@ -1,0 +1,37 @@
+{
+  "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "predicted": "Daha önce hesap eksiksiz demiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap eksiksizini?",
+  "unintelligible": false,
+  "wer": 0.3125,
+  "werEdits": 5,
+  "werRefWords": 16,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce hesap eksiksiz demiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap eksiksizini",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce hesap eksiksiz demiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap eksiksizini",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ekstresi' to 'eksiksiz' at position 3",
+      "reason": "'Ekstresi' (statement) and 'eksiksiz' (complete/without missing) are completely different words with unrelated meanings, which changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "'İstediğim' (that I requested) and 'henüz' (yet/still) are unrelated in meaning and change the temporal and causal relationship in the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'misin' to 'misiniz' at position 13",
+      "reason": "Singular informal ('misin') vs plural/formal ('misiniz') forms; the meaning is the same, only the level of formality changes.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'eksiksizini' at position 15",
+      "reason": "'Ekstresini' (the statement) and 'eksiksizini' (the complete one) are different words; this changes what is being requested and alters the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

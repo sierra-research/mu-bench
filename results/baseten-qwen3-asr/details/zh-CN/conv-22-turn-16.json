@@ -1,0 +1,42 @@
+{
+  "gold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
+  "predicted": "mailing at email dot com，谁会打邮件地址？我怎么想不起来这个？",
+  "unintelligible": false,
+  "wer": 0.7894736842105263,
+  "werEdits": 15,
+  "werRefWords": 19,
+  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern ill get it",
+  "werNormalizedPredicted": "mailing at email dot com 谁会打邮件地址 我怎么想不起来这个",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern ill get it",
+  "sigWerNormalizedPredicted": "mailing at email dot com 谁 会 打 邮 件 地 址 我 怎 么 想 不 起 来 这 个",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 0",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is part of the name '美玲'. Omitting part of a name makes it unrecognizable and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '是' to '谁' at position 6",
+      "reason": "'是' means 'is/are', while '谁' means 'who'. This changes the meaning of the sentence and introduces confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '箱' to '件' at position 10",
+      "reason": "'箱' (as in '邮箱', mailbox) is replaced by '件' (as in '邮件', email/message). While related, this changes the meaning from 'mailbox address' to 'email address', which is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'when' to '想' at position 13",
+      "reason": "The insertion of '我' ('I') adds a new subject and changes the sentence structure, affecting the meaning.",
+      "score": 1
+    }
+  ]
+}

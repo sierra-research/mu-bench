@@ -1,0 +1,62 @@
+{
+  "gold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
+  "predicted": "Hay, hay yanlış aldım. Tamamen yanlış aldım. Tekrar söyleyeyim. Hayfer kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon. Nokta Adana, Rize, Samtun, Düzce, Adana, Nide. Et. Email. Nokta com",
+  "unintelligible": false,
+  "wer": 0.52,
+  "werEdits": 13,
+  "werRefWords": 25,
+  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "werNormalizedPredicted": "hay hay yanlış aldım tamamen yanlış aldım tekrar söyleyeyim hayfer kodluyorum adana hatay muğla edirne trabzon nokta adana rize samtun düzce adana nide et email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "sigWerNormalizedPredicted": "hay hay yanlış aldım tamamen yanlış aldım tekrar söyleyeyim hayfer kodluyorum adana hatay muğla edirne trabzon nokta adana rize samtun düzce adana nide et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'hay' at position 0",
+      "reason": "Extra 'hay' at the beginning does not change the overall meaning, but is unnecessary.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'yazdın' to 'aldım' at position 2",
+      "reason": "'hayır' means 'no' or 'wrong', while 'hay' is not a word in this context; this changes the meaning at the start.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'almışsın' to 'aldım' at position 5",
+      "reason": "'yazdın' means 'you wrote', 'aldım' means 'I took'; this changes the subject and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'söylüyorum' to 'söyleyeyim' at position 7",
+      "reason": "'almışsın' means 'you have taken', 'aldım' means 'I took'; this changes the subject and tense.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'harf' at position 9",
+      "reason": "'söylüyorum' means 'I am saying', 'söyleyeyim' means 'let me say'; minor difference in aspect, but meaning is similar.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'nokta' at position 16",
+      "reason": "Omitting 'harf' (letter) in 'harf harf kodluyorum' (I am spelling letter by letter) slightly reduces clarity but does not derail meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'samsun' to 'samtun' at position 18",
+      "reason": "Inserting 'nokta' (dot) in the middle of the spelled-out sequence is a minor error, as it may confuse the spelling but does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'niğde' to 'nide' at position 21",
+      "reason": "'Samsun' is a city used in Turkish spelling alphabet; 'samtun' is not a valid code word and changes the intended letter.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'nokta' at position 24",
+      "reason": "'Niğde' is a city used in Turkish spelling alphabet; 'nide' is a misspelling but still recognizable.",
+      "score": 2
+    }
+  ]
+}

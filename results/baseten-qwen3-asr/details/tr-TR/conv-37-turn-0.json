@@ -1,0 +1,37 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi, o konuda bilgi verebilir misiniz acaba?",
+  "predicted": "Anneanne merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi? Onuda bir o konuda da bilgi verebilir misiniz acaba?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
+  "werRefWords": 21,
+  "werNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "werNormalizedPredicted": "anneanne merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "sigWerNormalizedPredicted": "anneanne merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anneanne' at position 0",
+      "reason": "'Anna' is a name or title, while 'anneanne' means 'grandmother' in Turkish. This changes the addressee and the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'Hanım' is a polite title (like 'Ms.' or 'Mrs.') in Turkish. Its omission reduces the politeness but does not change the core meaning of the request.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'onu' at position 15",
+      "reason": "'Onu' means 'it' and its insertion here is redundant but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'da' at position 17",
+      "reason": "'Da' means 'also' or 'too' and its insertion is a minor stylistic change that does not affect the main meaning.",
+      "score": 2
+    }
+  ]
+}

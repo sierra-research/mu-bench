@@ -1,0 +1,27 @@
+{
+  "gold": "Yedek kartımın ana karttan farkı nedir peki?",
+  "predicted": "Yedek kartın anakarttan farkı nedir peki?",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
+  "werNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "yedek kartımın ana karttan farkı nedir peki",
+  "sigWerNormalizedPredicted": "yedek kartın anakarttan farkı nedir peki",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartımın' to 'kartın' at position 1",
+      "reason": "'kartımın' means 'of my card' (possessive, first person), while 'kartın' means 'of your card' (possessive, second person). This changes the subject of the sentence from first person to second person, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'karttan' at position 3",
+      "reason": "'ana karttan' (from the main card) was merged into 'anakarttan' (from the motherboard), which is a different word. This changes the meaning from 'main card' to 'motherboard', which is a significant error in context.",
+      "score": 1
+    }
+  ]
+}

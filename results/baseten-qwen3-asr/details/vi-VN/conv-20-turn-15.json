@@ -1,0 +1,37 @@
+{
+  "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
+  "predicted": "mình không không đúng mình chấm trần a cộng email chấm com",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "mình không không đúng mình chấm trần a cộng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "mình không không đúng mình chấm trần a cộng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'mình' at position 0",
+      "reason": "The insertion of 'mình' at the beginning adds a subject but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'không' at position 1",
+      "reason": "The extra 'không' introduces a double negative, which could cause confusion but the main intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 2",
+      "reason": "'minh' and 'mình' are very similar and likely a minor spelling or diacritic error, not affecting the meaning significantly.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 6",
+      "reason": "'còng' (at/@) and 'cộng' (plus/and) are different words; in the context of an email address, using 'cộng' instead of 'còng' could make the email address incorrect and unrecognizable.",
+      "score": 1
+    }
+  ]
+}

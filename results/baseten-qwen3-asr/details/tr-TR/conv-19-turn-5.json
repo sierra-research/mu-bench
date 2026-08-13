@@ -1,0 +1,27 @@
+{
+  "gold": "Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Ahmet Arslan et email.com",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet arslan et email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet arslan et email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "Omitting 'nokta' removes a key part of the email address, which could lead to an incorrect or undeliverable email. This significantly changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 3",
+      "reason": "Substituting 'at' with 'et' in an email address context is a significant error, as 'at' is the standard word for '@' and 'et' is incorrect, potentially making the address unusable.",
+      "score": 1
+    }
+  ]
+}

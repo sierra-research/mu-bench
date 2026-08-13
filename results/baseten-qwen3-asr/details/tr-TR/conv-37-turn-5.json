@@ -1,0 +1,37 @@
+{
+  "gold": "E-posta adresim Zaynep nokta Arslan at email nokta com.",
+  "predicted": "Eposta adresim zeynet.arslan@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "eposta adresim zeynet nokta arslan at gmail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "eposta adresim zeynet nokta arslan at gmail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'eposta' at position 0",
+      "reason": "'e' and 'eposta' are related ('e-posta' means 'email' in Turkish), but substituting 'e' with 'eposta' changes the structure but not the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'posta' at position 1",
+      "reason": "The word 'posta' is omitted, but since 'eposta' is a single word meaning 'email', this deletion does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynet' at position 3",
+      "reason": "This is a misspelling of a proper noun (name), but it is still recognizable and does not significantly change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing the email provider from 'email' to 'gmail' is a significant error, as it changes the actual email address.",
+      "score": 1
+    }
+  ]
+}

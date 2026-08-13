@@ -1,0 +1,32 @@
+{
+  "gold": "Adım Ahmet Arslan. E-posta adresim Ahmet nokta Arslan at email nokta com. Telefon numaram artı 90 123 0 90 45 67.",
+  "predicted": "Adım Ahmet Arslan, posta adresim ahmet.arslan@gmail.com, telefon numaram +90 123 090 4567.",
+  "unintelligible": false,
+  "wer": 0.11538461538461539,
+  "werEdits": 3,
+  "werRefWords": 26,
+  "werNormalizedGold": "adım ahmet arslan e posta adresim ahmet nokta arslan at email nokta com telefon numaram artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "adım ahmet arslan posta adresim ahmet nokta arslan at gmail nokta com telefon numaram artı doksan bir iki üç sıfır doksan dört beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 26,
+  "sigWerNormalizedGold": "adım ahmet arslan e posta adresim ahmet nokta arslan at email nokta com telefon numaram artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "adım ahmet arslan posta adresim ahmet nokta arslan at gmail nokta com telefon numaram artı doksan bir iki üç sıfır doksan dört beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'e' at position 3",
+      "reason": "Omitting 'e' from 'e posta adresim' changes the phrase from 'e-mail address' to just 'mail address', which could cause confusion but is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 10",
+      "reason": "Changing the domain from 'email' to 'gmail' alters the actual email address, which is a significant factual error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kırk' to 'dört' at position 22",
+      "reason": "Changing 'kırk' (forty) to 'dört' (four) in a phone number changes the number itself, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

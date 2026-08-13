@@ -1,0 +1,27 @@
+{
+  "gold": "Bu ne ya?",
+  "predicted": "ben.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 3,
+  "werRefWords": 3,
+  "werNormalizedGold": "bu ne ya",
+  "werNormalizedPredicted": "ben",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "bu ne ya",
+  "sigWerNormalizedPredicted": "ben",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bu' to 'ben' at position 0",
+      "reason": "'bu' and 'ben' are different words in Turkish with different meanings ('this' vs 'I'), which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ne' at position 1",
+      "reason": "Omitting 'ne' ('what') removes a key part of the question, making the sentence incomplete and changing its meaning.",
+      "score": 1
+    }
+  ]
+}

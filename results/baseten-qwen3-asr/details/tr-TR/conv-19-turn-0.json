@@ -1,0 +1,32 @@
+{
+  "gold": "Merhaba, kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz?",
+  "predicted": "Merhaba, kredi kartımın limitini arttırmak istiyorum değerimiz alabilir misiniz?",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz",
+  "werNormalizedPredicted": "merhaba kredi kartımın limitini arttırmak istiyorum değerimiz alabilir misiniz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "merhaba kredi kartımın limitini artırmak istiyorum da yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "merhaba kredi kartımın limitini arttırmak istiyorum değerimiz alabilir misiniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'artırmak' to 'arttırmak' at position 4",
+      "reason": "Minor spelling difference in a verb, does not change the meaning in Turkish context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'da' to 'değerimiz' at position 6",
+      "reason": "'da' is a conjunction meaning 'also', while 'değerimiz' means 'our value'; this substitution changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'olabilir' at position 8",
+      "reason": "'olabilir' means 'can', and its omission makes the request less clear but the intent is still somewhat understandable.",
+      "score": 2
+    }
+  ]
+}

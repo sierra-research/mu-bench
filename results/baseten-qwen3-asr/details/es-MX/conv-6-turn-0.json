@@ -1,0 +1,37 @@
+{
+  "gold": "Necesito averiguar por qué no me llegó la tarjeta nueva. La tarjeta de crédito. ¿Qué pudo pasar?",
+  "predicted": "necesito averiguar porque no me llegó la tarjeta nueva la tarjeta de crédito qué puedo pasar",
+  "unintelligible": false,
+  "wer": 0.35294117647058826,
+  "werEdits": 6,
+  "werRefWords": 17,
+  "werNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "werNormalizedPredicted": "necesito averiguar porque no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "necesito averiguar por qué no me llegó la tarjeta nueva la tarjeta de crédito qué pudo pasar",
+  "sigWerNormalizedPredicted": "necesito averiguar porque no me llego la tarjeta nueva la tarjeta de credito que puedo pasar",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'por' to 'porque' at position 2",
+      "reason": "'por qué' (why) is a question phrase, while 'porque' (because) is an answer phrase; this changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'qué' at position 3",
+      "reason": "The omission of 'qué' breaks the question phrase 'por qué', further altering the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'llegó' to 'llego' at position 6",
+      "reason": "Missing accent in 'llegó' vs 'llego' changes the tense/person, but in context the meaning is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'crédito' to 'credito' at position 13",
+      "reason": "Missing accent in 'crédito' vs 'credito' is a minor orthographic error, does not affect meaning.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "听到了吗？",
+  "predicted": "听懂吗？",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "听懂吗",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 了 吗",
+  "sigWerNormalizedPredicted": "听 懂 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '到' to '懂' at position 1",
+      "reason": "'听到了吗' means 'Did you hear (it)?', while '听懂吗' means 'Did you understand?'. The substitution changes the meaning of the question from hearing to understanding, which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 2",
+      "reason": "'了' indicates completion in Chinese. Its omission slightly changes the aspect of the sentence, but the main meaning is already changed by the previous substitution. On its own, this would be a minor error, but in this context, the main error is the word substitution.",
+      "score": 2
+    }
+  ]
+}

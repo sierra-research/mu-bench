@@ -1,0 +1,27 @@
+{
+  "gold": "No, el dominio del correo es email punto com.",
+  "predicted": "No, el dominio del correo es email puntocom.",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "no el dominio del correo es email punto com",
+  "werNormalizedPredicted": "no el dominio del correo es email puntocom",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "no el dominio del correo es email punto com",
+  "sigWerNormalizedPredicted": "no el dominio del correo es email puntocom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'punto' to 'puntocom' at position 7",
+      "reason": "'puntocom' merges 'punto' and 'com' into one word, but the meaning (the domain 'email.com') is still clear and unchanged in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'com' at position 8",
+      "reason": "'com' is not present as a separate word because it was merged into 'puntocom', but the intended meaning is preserved.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "君，君，君灵，at email dot com。",
+  "predicted": "drin drin drinling at email dot com",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "君 君 君灵 at email dot com",
+  "werNormalizedPredicted": "drin drin drinling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "君 君 君 灵 at email dot com",
+  "sigWerNormalizedPredicted": "drin drin drinling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'drin' at position 0",
+      "reason": "'君' is a Chinese character and 'drin' is an unrelated English-sounding word; this substitution completely changes the meaning and identity of the email address, making it unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 3",
+      "reason": "'灵' is a Chinese character and 'drinling' is an unrelated English-sounding word; this substitution makes the email address completely different and unrecognizable.",
+      "score": 1
+    }
+  ]
+}

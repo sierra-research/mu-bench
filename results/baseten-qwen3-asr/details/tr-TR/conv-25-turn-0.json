@@ -1,0 +1,27 @@
+{
+  "gold": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
+  "predicted": "Annamanım merhabalar. Ben sizden yardım istemiştim.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
+  "werNormalizedPredicted": "annamanım merhabalar ben sizden yardım istemiştim",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
+  "sigWerNormalizedPredicted": "annamanım merhabalar ben sizden yardım istemiştim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'annamanım' at position 0",
+      "reason": "'annamanım' merges 'anna' and 'hanım' into a single word, which could confuse the meaning or make it unclear that 'hanım' is a separate honorific. This affects the clarity of addressing someone respectfully.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is an honorific used to address a woman respectfully. Its omission (by merging into the previous word) reduces the politeness and changes the tone of the sentence, but the main intent is still understandable.",
+      "score": 2
+    }
+  ]
+}

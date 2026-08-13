@@ -1,0 +1,32 @@
+{
+  "gold": "你先告诉我的追踪号码。",
+  "predicted": "你先告诉我我的公众号吗？",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "你先告诉我的追踪号码",
+  "werNormalizedPredicted": "你先告诉我我的公众号吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 先 告 诉 我 的 追 踪 号 码",
+  "sigWerNormalizedPredicted": "你 先 告 诉 我 我 的 公 众 号 吗",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '我' at position 5",
+      "reason": "The extra '我' (I) introduces redundancy but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '追' to '公' at position 6",
+      "reason": "'追踪号码' means 'tracking number', while '公众号' means 'public account'. This substitution changes the meaning of what is being asked for, making the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '码' to '吗' at position 9",
+      "reason": "'码' means 'number/code', while '吗' is a question particle. This substitution changes the sentence from a statement to a question, but in this context, it also disrupts the intended meaning.",
+      "score": 1
+    }
+  ]
+}

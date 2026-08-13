@@ -1,0 +1,32 @@
+{
+  "gold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
+  "predicted": "Evet, tekrar kodlayalım. Zonguldak, Adana, Yozgat, Niğde, Edirne, Prasa. Nokta Arslan. Et",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat niğde edirne pırasa nokta arslan at",
+  "werNormalizedPredicted": "evet tekrar kodlayalım zonguldak adana yozgat niğde edirne prasa nokta arslan et",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat niğde edirne pırasa nokta arslan at",
+  "sigWerNormalizedPredicted": "evet tekrar kodlayalım zonguldak adana yozgat niğde edirne prasa nokta arslan et",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kodluyorum' to 'kodlayalım' at position 2",
+      "reason": "'Kodluyorum' means 'I am coding', while 'kodlayalım' means 'let's code'. The subject and intent change, but the overall meaning of the sentence is not derailed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'pırasa' to 'prasa' at position 8",
+      "reason": "'Pırasa' and 'prasa' are the same word with a minor spelling difference (missing Turkish character), so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 11",
+      "reason": "'At' and 'et' are different words in Turkish ('horse' vs 'meat'), which changes the meaning of the word and could confuse the listener.",
+      "score": 1
+    }
+  ]
+}

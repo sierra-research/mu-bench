@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Cảm ơn.",
+  "predicted": "ok, cưng.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
+  "werRefWords": 3,
+  "werNormalizedGold": "okay cảm ơn",
+  "werNormalizedPredicted": "okay cưng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "okay cảm ơn",
+  "sigWerNormalizedPredicted": "okay cưng",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cảm' to 'cưng' at position 1",
+      "reason": "'cảm ơn' means 'thank you' in Vietnamese, while 'cưng' means 'dear' or 'darling'; this substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ơn' at position 2",
+      "reason": "Omitting 'ơn' from 'cảm ơn' removes the meaning of 'thank you', making the sentence incoherent in context.",
+      "score": 1
+    }
+  ]
+}

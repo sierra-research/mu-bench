@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır, Gmail değil email. Email olarak yazacaksın. Email nokta com.",
+  "predicted": "Hay, Gmail değil, email, email numarası yazacaksın, email nokta com.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "werNormalizedPredicted": "hay gmail değil email email numarası yazacaksın email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "hayır gmail değil email email olarak yazacaksın email nokta com",
+  "sigWerNormalizedPredicted": "hay gmail değil email email numarası yazacaksın email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hayır' to 'hay' at position 0",
+      "reason": "'hayır' means 'no' in Turkish, while 'hay' is not a word in Turkish and does not convey the intended meaning, making the sentence unclear or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'olarak' to 'numarası' at position 5",
+      "reason": "'olarak' means 'as' or 'in the form of', while 'numarası' means 'number'. This changes the instruction from 'write as email' to 'write email number', which alters the meaning of the sentence significantly.",
+      "score": 1
+    }
+  ]
+}

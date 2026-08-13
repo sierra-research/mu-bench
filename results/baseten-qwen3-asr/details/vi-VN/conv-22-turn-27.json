@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn được hỗ trợ in sao kê.",
+  "predicted": "tôi muốn được hỗ trợ, okay.",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "tôi muốn được hỗ trợ in sao kê",
+  "werNormalizedPredicted": "tôi muốn được hỗ trợ okay",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tôi muốn được hỗ trợ in sao kê",
+  "sigWerNormalizedPredicted": "tôi muốn được hỗ trợ okay",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'in' to 'okay' at position 5",
+      "reason": "'in sao kê' refers to printing a bank statement, while 'okay' is unrelated and changes the meaning of the request entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'sao' at position 6",
+      "reason": "Omitting 'sao' removes a key part of the phrase 'in sao kê', which is necessary to specify the request for a bank statement. This omission makes the sentence incomplete and changes the intended meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "是对的，我的邮箱地址是峻岭 at email dot com。",
+  "predicted": "是对的，我的邮箱地址是junling@outlook.com。",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "是对的 我的邮箱地址是峻岭 at email dot com",
+  "werNormalizedPredicted": "是对的 我的邮箱地址是 junling at outlook dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "是 对 的 我 的 邮 箱 地 址 是 峻 岭 at email dot com",
+  "sigWerNormalizedPredicted": "是 对 的 我 的 邮 箱 地 址 是 junling at outlook dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '峻' to 'junling' at position 10",
+      "reason": "The expected is a Chinese character (part of a name), while the actual is a romanized version of the full name. The romanization is a reasonable representation of the name, so the meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '岭' at position 11",
+      "reason": "The second character of the name is missing in the actual transcription, which makes the name incomplete and could lead to confusion or incorrect identification.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'outlook' at position 13",
+      "reason": "The domain of the email address is changed, which would result in a completely different email address and failure to contact the intended recipient.",
+      "score": 1
+    }
+  ]
+}

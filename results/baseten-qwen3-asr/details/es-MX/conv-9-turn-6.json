@@ -1,0 +1,32 @@
+{
+  "gold": "María punto López arroba email punto com.",
+  "predicted": "maría punto pérez arroba email puntocom",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "maría punto pérez arroba email puntocom",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "maría punto pérez arroba email puntocom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lópez' to 'pérez' at position 2",
+      "reason": "'lópez' and 'pérez' are both common surnames, but substituting one for the other changes the identity of the person, which is significant.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'punto' to 'puntocom' at position 5",
+      "reason": "'puntocom' merges 'punto' and 'com', which could cause confusion in an email address and may result in an invalid or incorrect address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'com' at position 6",
+      "reason": "Omitting 'com' from the email address makes it incomplete and unusable.",
+      "score": 1
+    }
+  ]
+}

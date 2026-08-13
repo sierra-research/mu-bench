@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi nghe được rồi. C N 6 6 6.",
+  "predicted": "tôi nghe được CN sau sau sau",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "tôi nghe được rồi c n sáu sáu sáu",
+  "werNormalizedPredicted": "tôi nghe được c n sau sau sau",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "tôi nghe được rồi c n sáu sáu sáu",
+  "sigWerNormalizedPredicted": "tôi nghe được c n sau sau sau",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "Omitting 'rồi' (already) slightly changes the temporal aspect but does not derail the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sáu' to 'sau' at position 6",
+      "reason": "'sáu' means 'six' (a number), while 'sau' means 'after' or 'behind'; this changes a number to a different word, which is significant in contexts like codes or numbers.",
+      "score": 1
+    }
+  ]
+}

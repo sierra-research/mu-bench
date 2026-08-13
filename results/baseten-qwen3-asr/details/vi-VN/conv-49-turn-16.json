@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Cảm ơn.",
+  "predicted": "ok, kemon",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
+  "werRefWords": 3,
+  "werNormalizedGold": "okay cảm ơn",
+  "werNormalizedPredicted": "okay kemon",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "okay cảm ơn",
+  "sigWerNormalizedPredicted": "okay kemon",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cảm' to 'kemon' at position 1",
+      "reason": "'cảm ơn' is Vietnamese for 'thank you', while 'kemon' is not a Vietnamese word and changes the meaning completely, making the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ơn' at position 2",
+      "reason": "Missing 'ơn' means the phrase 'cảm ơn' (thank you) is incomplete, resulting in a loss of the intended meaning.",
+      "score": 1
+    }
+  ]
+}

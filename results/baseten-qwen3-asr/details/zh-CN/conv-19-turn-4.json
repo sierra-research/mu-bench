@@ -1,0 +1,32 @@
+{
+  "gold": "美，你说得不对，是美玲，美玲。",
+  "predicted": "梅，你说的不对，是梅林，梅林。",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
+  "werRefWords": 11,
+  "werNormalizedGold": "美 你说得不对 是美玲 美玲",
+  "werNormalizedPredicted": "梅 你说的不对 是梅林 梅林",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "美 你 说 得 不 对 是 美 玲 美 玲",
+  "sigWerNormalizedPredicted": "梅 你 说 的 不 对 是 梅 林 梅 林",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to '梅' at position 0",
+      "reason": "'美' (měi, meaning 'beautiful') and '梅' (méi, meaning 'plum') are different words and names; this changes the proper noun and could refer to a different person.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 3",
+      "reason": "'得' and '的' are both common particles in Chinese, but in this context, the substitution does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '美' to '梅' at position 7",
+      "reason": "Same as position 0: '美' and '梅' are different names, which could refer to different people, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

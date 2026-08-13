@@ -1,0 +1,32 @@
+{
+  "gold": "İyi, onlara ihtiyacım yok. Çok teşekkür ederim yardımınız için.",
+  "predicted": "Yok onlara ihtiyacım yok çok teşekkür ederim yardımınızın.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
+  "werRefWords": 9,
+  "werNormalizedGold": "iyi onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
+  "werNormalizedPredicted": "yok onlara ihtiyacım yok çok teşekkür ederim yardımınızın",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "iyi onlara ihtiyacım yok çok teşekkür ederim yardımınız için",
+  "sigWerNormalizedPredicted": "yok onlara ihtiyacım yok çok teşekkür ederim yardımınızın",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'yok' at position 0",
+      "reason": "'iyi' means 'good' and 'yok' means 'no' or 'not present'; this substitution completely changes the meaning at the start of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yardımınız' to 'yardımınızın' at position 7",
+      "reason": "The actual word 'yardımınızın' is the possessive/genitive form of 'yardımınız', which slightly changes the grammatical structure but does not significantly alter the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'için' at position 8",
+      "reason": "'için' means 'for', and its omission makes the sentence less complete but the overall intent is still understandable.",
+      "score": 2
+    }
+  ]
+}

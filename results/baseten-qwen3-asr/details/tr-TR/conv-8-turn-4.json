@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır yanlış. Siz bana demin C N 720 dediniz.",
+  "predicted": "Hayır yanlış yanlış Siz bana demin C N E yedi yüz yirmi dediniz.",
+  "unintelligible": false,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
+  "werRefWords": 11,
+  "werNormalizedGold": "hayır yanlış siz bana demin c n yedi yüz yirmi dediniz",
+  "werNormalizedPredicted": "hayır yanlış yanlış siz bana demin c n e yedi yüz yirmi dediniz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "hayır yanlış siz bana demin c n yedi yüz yirmi dediniz",
+  "sigWerNormalizedPredicted": "hayır yanlış yanlış siz bana demin c n e yedi yüz yirmi dediniz",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'yanlış' at position 2",
+      "reason": "The extra 'yanlış' (meaning 'wrong') repeats the word but does not change the overall meaning of the sentence, which is about a previous statement. The sentence remains coherent.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'e' at position 7",
+      "reason": "The insertion of 'e' in the sequence 'c n e' instead of 'c n' could cause confusion if these are meant to be initials or a code, potentially changing the intended reference. This is a significant error if the letters are important for identification.",
+      "score": 1
+    }
+  ]
+}

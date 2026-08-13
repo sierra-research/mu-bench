@@ -1,0 +1,32 @@
+{
+  "gold": "Banka kartı. Yedek bir banka kartım olsun istiyorum.",
+  "predicted": "Banka Kartı, Yedekli Banka Kartı olmasını istiyorum.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
+  "werNormalizedPredicted": "banka kartı yedekli banka kartı olmasını istiyorum",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
+  "sigWerNormalizedPredicted": "banka kartı yedekli banka kartı olmasını istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yedek' to 'yedekli' at position 2",
+      "reason": "'Yedek' (spare) and 'yedekli' (with spare) are closely related, but 'yedekli' changes the meaning to an attribute rather than a request for a spare card. The overall intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 3",
+      "reason": "Omitting 'bir' (a) slightly changes the specificity but does not significantly alter the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kartım' to 'kartı' at position 5",
+      "reason": "'Kartım' (my card) vs 'kartı' (the card) changes the possessive, but the context still makes it clear the speaker is talking about their own card.",
+      "score": 2
+    }
+  ]
+}

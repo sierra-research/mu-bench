@@ -1,0 +1,32 @@
+{
+  "gold": "Necesito el estatus o cómo está mi línea.",
+  "predicted": "necesito la el status o cómo está mi",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "necesito el estatus o como esta mi linea",
+  "werNormalizedPredicted": "necesito la el status o como esta mi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "necesito el estatus o como esta mi linea",
+  "sigWerNormalizedPredicted": "necesito la el status o como esta mi",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'la' at position 1",
+      "reason": "Adding 'la' instead of 'el' is a minor grammatical error in Spanish, but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'estatus' to 'status' at position 2",
+      "reason": "'Estatus' and 'status' are equivalent words (Spanish vs. English/Spanglish), and in context, the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'linea' at position 7",
+      "reason": "Omitting 'linea' removes the object of the inquiry, making the request incomplete and significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

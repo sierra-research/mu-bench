@@ -1,0 +1,32 @@
+{
+  "gold": "Địa chỉ email là thu chấm trần a còng email chấm com.",
+  "predicted": "tên địa chỉ email là thu trần thu chấm trần a cộng email chấm com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "tên địa chỉ email là thu trần thu chấm trần a cộng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "địa chỉ email là thu chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "tên địa chỉ email là thu trần thu chấm trần a cộng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'tên' at position 0",
+      "reason": "'tên' (name) is added at the beginning, but it does not change the meaning of the sentence, which is to provide an email address.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'trần' at position 5",
+      "reason": "The extra 'trần' is a repetition and does not change the meaning of the sentence, as the email address is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 8",
+      "reason": "'còng' is the correct Vietnamese word for '@' in email addresses, while 'cộng' means 'plus' and is incorrect in this context, which could cause confusion in the email address.",
+      "score": 1
+    }
+  ]
+}

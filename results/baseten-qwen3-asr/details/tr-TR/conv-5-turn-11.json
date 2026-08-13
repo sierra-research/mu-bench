@@ -1,0 +1,32 @@
+{
+  "gold": "Ha bu arada, kapatmadan önce şeyi soracağım. Fatura ne zaman e-posta adresime ulaşacak?",
+  "predicted": "Ha bu arada kapatmadan önce şey soracağım faturu ne zaman Apple sahnesine ulaşacak?",
+  "unintelligible": false,
+  "wer": 0.3076923076923077,
+  "werEdits": 4,
+  "werRefWords": 13,
+  "werNormalizedGold": "ha bu arada kapatmadan önce soracağım fatura ne zaman e posta adresime ulaşacak",
+  "werNormalizedPredicted": "ha bu arada kapatmadan önce soracağım faturu ne zaman apple sahnesine ulaşacak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "ha bu arada kapatmadan önce soracağım fatura ne zaman e posta adresime ulaşacak",
+  "sigWerNormalizedPredicted": "ha bu arada kapatmadan önce soracağım faturu ne zaman apple sahnesine ulaşacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'fatura' to 'faturu' at position 6",
+      "reason": "'faturu' is a minor misspelling of 'fatura', but the meaning is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'e' to 'apple' at position 9",
+      "reason": "'e posta adresime' means 'to my email address', but 'apple sahnesine' means 'to the Apple stage', which is a completely different meaning and derails the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'adresime' at position 11",
+      "reason": "Omitting 'adresime' ('to my address') removes the recipient of the email, making the sentence incomplete and unclear.",
+      "score": 1
+    }
+  ]
+}

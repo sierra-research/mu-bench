@@ -1,0 +1,32 @@
+{
+  "gold": "Anna merhaba. Daha önce bir talebim olmuştu, onun için arıyorum. Şu ana kadar gerçekleşmedi çünkü.",
+  "predicted": "Anla Merhaba. Daha önce bir talebin olmuştu. Onu ilk olarak alıyorum. Henüz şu ana kadar gerçekleşmedi çünkü.",
+  "unintelligible": false,
+  "wer": 0.4666666666666667,
+  "werEdits": 7,
+  "werRefWords": 15,
+  "werNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "werNormalizedPredicted": "anla merhaba daha önce bir talebin olmuştu onu ilk olarak alıyorum henüz şu ana kadar gerçekleşmedi çünkü",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "anna merhaba daha önce bir talebim olmuştu onun için arıyorum şu ana kadar gerçekleşmedi çünkü",
+  "sigWerNormalizedPredicted": "anla merhaba daha önce bir talebin olmuştu onu ilk olarak alıyorum henüz şu ana kadar gerçekleşmedi çünkü",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'Anna' is a proper noun (a name), while 'anla' is a verb meaning 'understand' in Turkish. This changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'talebim' to 'talebin' at position 5",
+      "reason": "'Talebim' means 'my request', while 'talebin' means 'your request'. This changes the ownership and meaning, but the overall context is still about a request.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'onun' to 'olarak' at position 7",
+      "reason": "The insertion of 'onu' ('it') does not significantly change the meaning, as it refers to the request mentioned.",
+      "score": 3
+    }
+  ]
+}

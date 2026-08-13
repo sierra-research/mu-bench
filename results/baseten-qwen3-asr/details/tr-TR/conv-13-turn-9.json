@@ -1,0 +1,42 @@
+{
+  "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "Yanı, pardon, e-posta adresinde bir noktayı unuttunuz. Ahmetli Arslan asla nokta olacak. Ahmet nokta Arslan.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
+  "werRefWords": 17,
+  "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmetli arslan asla nokta olacak ahmet nokta arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmetli arslan asla nokta olacak ahmet nokta arslan",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'yalnız' at position 0",
+      "reason": "'yalnız' (meaning 'just' or 'only') sets the tone for the correction; omitting it slightly reduces the emphasis but does not change the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'adresimde' to 'adresinde' at position 4",
+      "reason": "'adresimde' means 'in my address', while 'adresinde' means 'in the address'; this changes the reference from personal to general, which could cause confusion.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetli' at position 8",
+      "reason": "'ahmet' is a name, 'ahmetli' is not a correct form here and could be confusing, making the reference unclear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 've' at position 9",
+      "reason": "Omitting 've' ('and') removes the explicit connection between 'ahmet' and 'arslan', but the meaning is still somewhat understandable from context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arasında' to 'asla' at position 11",
+      "reason": "'arasında' means 'between', while 'asla' means 'never'; this completely changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    }
+  ]
+}

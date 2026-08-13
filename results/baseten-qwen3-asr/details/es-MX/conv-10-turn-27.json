@@ -1,0 +1,32 @@
+{
+  "gold": "Arroba E M A I L punto com.",
+  "predicted": "arroba m m a i l puntocom",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "arroba e m a i l punto com",
+  "werNormalizedPredicted": "arroba m m a i l puntocom",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "arroba e m a i l punto com",
+  "sigWerNormalizedPredicted": "arroba m m a i l puntocom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'm' at position 1",
+      "reason": "In a spelled-out email address, each letter is critical. Substituting 'e' with 'm' changes the email username, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'punto' to 'puntocom' at position 6",
+      "reason": "'puntocom' merges 'punto' and 'com', which could confuse the structure of the email address. However, the intended meaning ('.com') is still somewhat clear, so this is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'com' at position 7",
+      "reason": "Omitting 'com' from the email address makes it incomplete and invalid, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

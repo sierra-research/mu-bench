@@ -1,0 +1,42 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartımın son ekstresini istiyorum da gönderebilir misiniz rica etsem mail adresime?",
+  "predicted": "Anla'nın merhabalar. Ben kredi kartımın son ekris ekresini istiyorum da gönderebilir misiniz ricam? Mail adresime.",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 6,
+  "werRefWords": 16,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartımın son ekstresini istiyorum da gönderebilir misiniz rica etsem mail adresime",
+  "werNormalizedPredicted": "anla'nın merhabalar ben kredi kartımın son ekris ekresini istiyorum da gönderebilir misiniz ricam mail adresime",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartımın son ekstresini istiyorum da gönderebilir misiniz rica etsem mail adresime",
+  "sigWerNormalizedPredicted": "anla'nın merhabalar ben kredi kartımın son ekris ekresini istiyorum da gönderebilir misiniz ricam mail adresime",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla'nın' at position 0",
+      "reason": "'anna' is a name, while 'anla'nın' is a possessive form of 'anla' (to understand) in Turkish, which changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Madam'), and its omission reduces politeness but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'ekresini' at position 7",
+      "reason": "'ekris' is a non-word and its insertion before 'ekresini' makes the sentence confusing and less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'rica' to 'ricam' at position 12",
+      "reason": "Minor misspelling of 'ekstresini' (statement), but still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'etsem' at position 13",
+      "reason": "'rica' means 'request' and 'ricam' means 'my request'; the meaning is slightly changed but the intent is clear.",
+      "score": 2
+    }
+  ]
+}

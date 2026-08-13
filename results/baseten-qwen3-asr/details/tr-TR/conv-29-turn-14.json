@@ -1,0 +1,47 @@
+{
+  "gold": "Her şey doğru, Anna Hanım, her şey doğru. Sadece Zaynep ve Arslan arasında nokta işareti var. Sadece oraya nokta koyacaksınız. Diğerleri hepsi doğru.",
+  "predicted": "Her şey doğru anlamam. Her şey doğru. Sadece Zeynep ve Arslan arasında nokta işareti var. Sadece oraya nokta koyacaksınız. Diğerlere hepsi doğru.",
+  "unintelligible": false,
+  "wer": 0.2608695652173913,
+  "werEdits": 6,
+  "werRefWords": 23,
+  "werNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "werNormalizedPredicted": "her doğru anlamam her doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerlere hepsi doğru",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "her şey doğru anna hanım her şey doğru sadece zaynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerleri hepsi doğru",
+  "sigWerNormalizedPredicted": "her doğru anlamam her doğru sadece zeynep ve arslan arasında nokta işareti var sadece oraya nokta koyacaksınız diğerlere hepsi doğru",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'şey' at position 1",
+      "reason": "Omitting 'şey' ('thing') changes the phrase from 'her şey doğru' ('everything is correct') to 'her doğru' ('every correct'), which makes the sentence less clear and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'anna' to 'anlamam' at position 3",
+      "reason": "'anna' (a name) is replaced with 'anlamam' ('I don't understand'), which is a completely different word and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 4",
+      "reason": "Omitting 'hanım' (a respectful address, 'Ms.') removes the direct address to Anna, which changes the tone and meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'şey' at position 6",
+      "reason": "Omitting 'şey' again changes 'her şey doğru' to 'her doğru', which makes the sentence less clear and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
+      "reason": "Minor spelling difference in a proper noun, but the name is still recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'diğerleri' to 'diğerlere' at position 20",
+      "reason": "'diğerleri' means 'the others', while 'diğerlere' is not a standard word in Turkish and could confuse the meaning, but the context still makes it somewhat understandable.",
+      "score": 2
+    }
+  ]
+}

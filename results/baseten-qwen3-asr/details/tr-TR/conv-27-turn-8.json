@@ -1,0 +1,32 @@
+{
+  "gold": "Tabii. Zaynep nokta Arslan at email nokta com.",
+  "predicted": "tabii zainap.arslan8@gmail.com",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "tabii zainap nokta arslan sekiz at gmail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabii zainap nokta arslan sekiz at gmail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zainap' at position 1",
+      "reason": "'zaynep' and 'zainap' are both proper nouns (likely a name), but the spelling is significantly different and could refer to a different person or be unrecognizable. This is a minor error if the context is clear, but for names, such a change can be important.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'sekiz' at position 4",
+      "reason": "The word 'sekiz' (which means 'eight' in Turkish) is inserted and does not belong in the email address. This changes the email address and makes it invalid, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "Changing 'email' to 'gmail' changes the domain of the email address, which is a significant error as it would send the email to a different service.",
+      "score": 1
+    }
+  ]
+}

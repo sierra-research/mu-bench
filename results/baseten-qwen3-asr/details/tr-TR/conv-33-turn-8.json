@@ -1,0 +1,32 @@
+{
+  "gold": "Tabii. Zeynep nokta Arslan at, pardon çok özür dilerim tekrarlayacağım.",
+  "predicted": "Tabii Zeynep Arslan et pardon çok özür dilerim tekrar edeceğim.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "werNormalizedPredicted": "tabii zeynep arslan et pardon çok özür dilerim tekrar edeceğim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii zeynep nokta arslan at pardon çok özür dilerim tekrarlayacağım",
+  "sigWerNormalizedPredicted": "tabii zeynep arslan et pardon çok özür dilerim tekrar edeceğim",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 2",
+      "reason": "'nokta' (meaning 'dot' or 'point') is omitted, which could be important if this is an email address or similar context. Its absence may cause confusion or loss of information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 4",
+      "reason": "'at' and 'et' are phonetically similar, but in Turkish, 'at' is used for the '@' symbol in email addresses, while 'et' is a word meaning 'meat' or a verb. This substitution could cause misunderstanding, especially in the context of an email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tekrarlayacağım' to 'edeceğim' at position 9",
+      "reason": "The word 'tekrar' (meaning 'again') is inserted, but it does not significantly change the meaning of the sentence, as it fits the context of repeating or doing something again.",
+      "score": 2
+    }
+  ]
+}
