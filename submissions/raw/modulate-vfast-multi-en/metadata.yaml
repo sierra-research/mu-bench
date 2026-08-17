@@ -1,0 +1,15 @@
+model: "velma-2-stt-batch-multilingual-vfast"
+organization: "Modulate"
+version: "vfast"
+date: "2026-08-16"
+config:
+  languageHint: en-US
+  beamSize: default
+  customVocabulary: default
+  domainAdaptation: default
+  keywordBoosting: default
+  noiseSuppression: default
+notes: |
+  override: languageHint
+  Declared-language mode; the mu-bench locale is passed as the language
+  form field, routing directly without local LID.
