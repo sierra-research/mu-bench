@@ -1,0 +1,16 @@
+date: '2026-09-03'
+model: Qwen3-ASR-1.7B
+organization: Modal
+version: '2026-09-03'
+notes: |
+  vLLM 0.28.1rc1.dev337+g27a94d1ce batch on H100 (Modal, us-west), single request at a time (concurrency 1).
+  Produced with mu-bench scripts/transcribe.py (shared aiohttp session) via the
+  modal-qwen3-asr provider; client pinned to aws:us-west-1.
+  override: languageHint because the target locale code is provided per utterance.
+config:
+  beamSize: default
+  languageHint: "locale code provided"
+  customVocabulary: default
+  noiseSuppression: default
+  domainAdaptation: default
+  keywordBoosting: default
