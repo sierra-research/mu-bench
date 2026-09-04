@@ -1,0 +1,32 @@
+{
+  "gold": "C C N 0 2 0。",
+  "predicted": "西西林、二林。",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
+  "werRefWords": 6,
+  "werNormalizedGold": "c c n 零 二 零",
+  "werNormalizedPredicted": "西西林 二林",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c c n 零 二 零",
+  "sigWerNormalizedPredicted": "西 西 林 二 林",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '西' at position 0",
+      "reason": "The letter 'c' was replaced with the Chinese character '西', which is a completely different character and meaning, especially in a spelled-out sequence. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '零' at position 3",
+      "reason": "The Chinese character '零' (zero) was replaced with '二' (two), which changes the number and meaning. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '零' to '林' at position 5",
+      "reason": "The final '零' (zero) is missing in the actual transcription, which changes the intended sequence. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

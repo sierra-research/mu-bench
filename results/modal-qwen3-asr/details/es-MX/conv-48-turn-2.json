@@ -1,0 +1,32 @@
+{
+  "gold": "Juan punto López arroba email punto com.",
+  "predicted": "Juan. López. Arroba gmail. Com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "juan lópez arroba gmail com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "juan lópez arroba gmail com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'punto' at position 1",
+      "reason": "Omitting 'punto' (dot) in an email address changes the structure and can make the email invalid or unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 4",
+      "reason": "Changing the domain from 'email' to 'gmail' changes the actual email address, which is a significant error as it refers to a different service.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'punto' at position 5",
+      "reason": "Omitting 'punto' (dot) before 'com' in an email address changes the address format and can make it invalid.",
+      "score": 1
+    }
+  ]
+}

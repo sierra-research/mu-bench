@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır, istemiyorum. İyi günler dilerim.",
+  "predicted": "Hayır, temir omuz nöderim.",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 4,
+  "werRefWords": 5,
+  "werNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "werNormalizedPredicted": "hayır temir omuz nöderim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "hayır istemiyorum iyi günler dilerim",
+  "sigWerNormalizedPredicted": "hayır temir omuz nöderim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'istemiyorum' to 'temir' at position 1",
+      "reason": "'temir' is a completely different word from 'istemiyorum' ('I do not want'), which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dilerim' at position 4",
+      "reason": "Omitting 'dilerim' ('I wish') removes the closing of the polite phrase, making the sentence incomplete and less polite.",
+      "score": 1
+    }
+  ]
+}

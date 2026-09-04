@@ -1,0 +1,32 @@
+{
+  "gold": "Email adresinde adımla soyadım arasında nokta olması lazım. Ahmet dot Arslan ya da Ahmet nokta Arslan olacak.",
+  "predicted": "İmail adresinde adımla soyadınızın nokta olması lazım. Ahmet. dot arslan ya da Ahmet. nokta arslan olacak.",
+  "unintelligible": false,
+  "wer": 0.17647058823529413,
+  "werEdits": 3,
+  "werRefWords": 17,
+  "werNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "werNormalizedPredicted": "imail adresinde adımla soyadınızın nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "email adresinde adımla soyadım arasında nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerNormalizedPredicted": "imail adresinde adımla soyadınızın nokta olması lazım ahmet dot arslan ya da ahmet nokta arslan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'imail' at position 0",
+      "reason": "'imail' is a misspelling of 'email', but the meaning is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'soyadım' to 'soyadınızın' at position 3",
+      "reason": "'soyadım' means 'my surname', 'soyadınızın' means 'your surname's'; this changes the subject from first person to second person, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'arasında' at position 4",
+      "reason": "'arasında' means 'between', and its omission makes the sentence less clear but the overall meaning can still be inferred.",
+      "score": 2
+    }
+  ]
+}

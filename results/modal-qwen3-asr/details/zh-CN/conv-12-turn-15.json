@@ -1,0 +1,27 @@
+{
+  "gold": "君灵 at email dot com 已经说了。",
+  "predicted": "dreamling at email dot com，你清楚啦。",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "君灵 at email dot com 已经说了",
+  "werNormalizedPredicted": "dreamling at email dot com 已经说了",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "君 灵 at email dot com 已 经 说 了",
+  "sigWerNormalizedPredicted": "dreamling at email dot com 已 经 说 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamling' at position 0",
+      "reason": "'君 灵' is a Chinese name, but 'dreamling' is an English word/username and does not represent the original name at all. This changes the identity being referenced, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 1",
+      "reason": "Omitting one character from a two-character Chinese name significantly alters the name and its meaning, making it unrecognizable as the intended person. This is a significant error.",
+      "score": 1
+    }
+  ]
+}

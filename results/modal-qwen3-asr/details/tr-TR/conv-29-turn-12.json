@@ -1,0 +1,37 @@
+{
+  "gold": "Zaynep nokta Arslan at email nokta com.",
+  "predicted": "Zeynep Arslan et email.com",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zeynep arslan et email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zeynep arslan et email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 0",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'Nokta' (meaning 'dot' in Turkish) is omitted, which is important for the structure of an email address and can cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 3",
+      "reason": "'Et' is a common mishearing of 'at' in email addresses, but it is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 5",
+      "reason": "Omitting 'nokta' (dot) changes the email address structure, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

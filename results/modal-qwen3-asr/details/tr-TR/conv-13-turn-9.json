@@ -1,0 +1,42 @@
+{
+  "gold": "Yalnız, pardon e-posta adresimde bir noktayı unuttunuz. Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "Yanı, pardon, e-post adresinde bir noktayı unuttunuz. Ahmetli Arslan asla nokta olacak. Ahmet nokta Arslan.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
+  "werRefWords": 17,
+  "werNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmetli arslan asla nokta olacak ahmet nokta arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "yalnız pardon e posta adresimde bir noktayı unuttunuz ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "pardon e posta adresinde bir noktayı unuttunuz ahmetli arslan asla nokta olacak ahmet nokta arslan",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'yalnız' at position 0",
+      "reason": "'Yalnız' (meaning 'just' or 'only') sets the context for the correction. Its omission slightly reduces clarity but does not derail the main meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'adresimde' to 'adresinde' at position 4",
+      "reason": "'Adresimde' means 'in my address', while 'adresinde' means 'in the address'. This changes the reference from personal to general, which could cause confusion about whose email address is being discussed.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetli' at position 8",
+      "reason": "'Ahmet' is a name, 'ahmetli' is not a standard word and could confuse the listener about the correct email address. This is a significant error in the context of an email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 've' at position 9",
+      "reason": "Omitting 've' ('and') makes the sentence less clear about the relationship between 'ahmet' and 'arslan', but the overall meaning is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arasında' to 'asla' at position 11",
+      "reason": "'Arasında' means 'between', while 'asla' means 'never'. This completely changes the meaning of the instruction about where the dot should be placed in the email address, making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "Tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không? Tôi không biết đi in ở đâu.",
+  "predicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết đi in cái đâu",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
+  "werRefWords": 21,
+  "werNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
+  "werNormalizedPredicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết đi in cái đâu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
+  "sigWerNormalizedPredicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết đi in cái đâu",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nào' at position 3",
+      "reason": "The insertion of 'nào' (which means 'which' or 'any') slightly changes the nuance but does not significantly alter the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'tới' at position 4",
+      "reason": "The repeated 'tới' (to/arrive) is a redundancy and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sao' to 'sau' at position 10",
+      "reason": "'Sao kê' (bank statement) is the correct term; 'sau kê' is a mispronunciation or typo and could confuse the meaning, as 'sau' means 'after.' This could cause misunderstanding about the request.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ở' to 'cái' at position 19",
+      "reason": "'Ở đâu' means 'where'; substituting 'ở' with 'cái' ('the/that') makes the phrase 'cái đâu,' which is not meaningful and could confuse the listener.",
+      "score": 1
+    }
+  ]
+}

@@ -428,6 +428,74 @@
       }
     },
     {
+      "id": "modal-qwen3-asr",
+      "model": "Qwen3-ASR-1.7B",
+      "organization": "Modal",
+      "modelDate": "2026-09-03",
+      "localeResults": {
+        "en-US": {
+          "wer": 0.0506,
+          "significantWer": 0.0588,
+          "completeP50Ms": 102.5,
+          "completeP95Ms": 176.3,
+          "roundTripP50Ms": 102.5,
+          "roundTripP95Ms": 176.3
+        },
+        "es-MX": {
+          "wer": 0.1015,
+          "significantWer": 0.1465,
+          "completeP50Ms": 101.8,
+          "completeP95Ms": 171.0,
+          "roundTripP50Ms": 101.8,
+          "roundTripP95Ms": 171.0
+        },
+        "tr-TR": {
+          "wer": 0.1476,
+          "significantWer": 0.3061,
+          "completeP50Ms": 110.9,
+          "completeP95Ms": 196.9,
+          "roundTripP50Ms": 110.9,
+          "roundTripP95Ms": 196.9
+        },
+        "vi-VN": {
+          "wer": 0.1032,
+          "significantWer": 0.3221,
+          "completeP50Ms": 102.6,
+          "completeP95Ms": 168.0,
+          "roundTripP50Ms": 102.6,
+          "roundTripP95Ms": 168.0
+        },
+        "zh-CN": {
+          "wer": 0.14,
+          "significantWer": 0.35,
+          "completeP50Ms": 90.8,
+          "completeP95Ms": 117.8,
+          "roundTripP50Ms": 90.8,
+          "roundTripP95Ms": 117.8
+        }
+      },
+      "overall": {
+        "wer": 0.1086,
+        "significantWer": 0.2367,
+        "completeP50Ms": 100.9,
+        "completeP95Ms": 174.4,
+        "roundTripP50Ms": 100.9,
+        "roundTripP95Ms": 174.4
+      },
+      "latencyMeta": {
+        "protocol": "batch",
+        "region": "us"
+      },
+      "inferenceConfig": {
+        "beamSize": "default",
+        "languageHint": "locale code provided",
+        "customVocabulary": "default",
+        "noiseSuppression": "default",
+        "domainAdaptation": "default",
+        "keywordBoosting": "default"
+      }
+    },
+    {
       "id": "modulate-vfast",
       "model": "velma-2-stt-batch-english-vfast",
       "organization": "Modulate",

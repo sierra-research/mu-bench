@@ -1,0 +1,32 @@
+{
+  "gold": "Địa chỉ email là minh chấm trần at email chấm com.",
+  "predicted": "thì email là minh chấm trần at gmail chấm com",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần at email chấm com",
+  "werNormalizedPredicted": "thì email là minh chấm trần at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần at email chấm com",
+  "sigWerNormalizedPredicted": "thì email là minh chấm trần at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'địa' to 'thì' at position 0",
+      "reason": "'địa' (address) is replaced by 'thì' (then/so), which changes the meaning and makes the sentence less coherent regarding the intent to provide an email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chỉ' at position 1",
+      "reason": "Omitting 'chỉ' (part of 'địa chỉ' meaning 'address') removes the clear indication that an address is being given, which is a significant error for understanding.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 8",
+      "reason": "'email' (generic) is replaced by 'gmail' (specific provider), which changes the actual email address being communicated. This is a significant error as it would result in a wrong email address.",
+      "score": 1
+    }
+  ]
+}

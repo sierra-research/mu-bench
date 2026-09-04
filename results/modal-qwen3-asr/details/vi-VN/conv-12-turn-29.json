@@ -1,0 +1,32 @@
+{
+  "gold": "Muốn. Vui lòng hướng dẫn tôi làm cái đó đi.",
+  "predicted": "muốn vừa lòng vẫn dẫn tôi làm cái cái cái cái đó đi.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
+  "werNormalizedPredicted": "muốn vừa lòng vẫn dẫn tôi làm cái cái cái cái đó đi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
+  "sigWerNormalizedPredicted": "muốn vừa lòng vẫn dẫn tôi làm cái cái cái cái đó đi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'vừa' at position 1",
+      "reason": "'vui lòng' means 'please' or 'kindly', while 'vừa lòng' means 'satisfied' or 'pleased'. This changes the intent from a polite request to a statement about satisfaction, which alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hướng' to 'vẫn' at position 3",
+      "reason": "'hướng dẫn' means 'to guide' or 'to instruct', while 'vẫn dẫn' is not a standard phrase and loses the instructional meaning, making the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'cái' at position 7",
+      "reason": "Repeating 'cái' multiple times is redundant but does not significantly change the meaning of the sentence, just makes it sound repetitive.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com. Số điện thoại cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "email là minh.chần.a.com email .com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.14814814814814814,
+  "werEdits": 4,
+  "werRefWords": 27,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "email là minh chần a com email com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 27,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "email là minh chần a com email com số điện thoại cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'chần' at position 3",
+      "reason": "'chấm' (dot) is a key part of the email address, while 'chần' is not a valid separator or word in this context. This makes the email address incorrect and unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 4",
+      "reason": "Omitting 'trần' (a likely part of the email username) changes the email address, making it incomplete or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'com' at position 6",
+      "reason": "'còng' (the Vietnamese word for '@') is replaced with 'com', which is part of the domain, not the separator. This makes the email address format invalid.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 8",
+      "reason": "Missing 'chấm' (dot) before 'com' in the email address makes the domain invalid.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Zaynep nokta Arslan at email nokta com.",
+  "predicted": "Zeynep.Arslan8@gmail.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zeynep nokta arslan sekiz at gmail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zeynep nokta arslan sekiz at gmail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 0",
+      "reason": "'zaynep' and 'zeynep' are both proper nouns (names), and this is a minor spelling difference that does not significantly change the identity of the person.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'sekiz' at position 3",
+      "reason": "The word 'sekiz' (which means 'eight' in Turkish) is an extra word not present in the expected email address, which could cause confusion or an incorrect email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 4",
+      "reason": "Changing 'email' to 'gmail' changes the email provider, which is a significant error as it would result in a completely different email address.",
+      "score": 1
+    }
+  ]
+}

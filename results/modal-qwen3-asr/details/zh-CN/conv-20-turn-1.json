@@ -1,0 +1,32 @@
+{
+  "gold": "我想提高我的信用卡额度。",
+  "predicted": "我想提高的，是用卡二读。",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
+  "werRefWords": 11,
+  "werNormalizedGold": "我想提高我的信用卡额度",
+  "werNormalizedPredicted": "我想提高的 是用卡二读",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "我 想 提 高 的 是 用 卡 二 读",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '我' at position 4",
+      "reason": "The omission of '我' (I) removes the subject of the sentence, which can cause confusion about whose credit card limit is being discussed. This significantly affects the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '信' to '是' at position 6",
+      "reason": "Replacing '信' (from '信用卡', credit card) with '是' (is) breaks the phrase '信用卡' and changes the sentence structure, making the meaning unclear and incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '二' at position 9",
+      "reason": "Substituting '额' (limit) with '二' (two) changes the key term of the request from 'credit card limit' to something nonsensical ('card two read'), derailing the intended meaning.",
+      "score": 1
+    }
+  ]
+}

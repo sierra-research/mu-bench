@@ -1,0 +1,27 @@
+{
+  "gold": "哎呀，是美玲 at email dot com。",
+  "predicted": "哎呀，是meiling at email dot com。",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "哎呀 是美玲 at email dot com",
+  "werNormalizedPredicted": "哎呀 是 meiling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "哎 呀 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "哎 呀 是 meiling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meiling' at position 3",
+      "reason": "'美' is a single Chinese character, while 'meiling' is the full pinyin spelling of the name. This substitution changes the format but not the meaning, as 'meiling' represents the same name as '美玲'.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 4",
+      "reason": "The character '玲' is omitted in the actual transcription, resulting in only part of the name being represented. This could cause confusion or incorrect identification of the person, making it a significant error.",
+      "score": 1
+    }
+  ]
+}

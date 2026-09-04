@@ -1,0 +1,27 @@
+{
+  "gold": "我的姓名是君玲。",
+  "predicted": "我的心灵是军灵。",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "我的姓名是君玲",
+  "werNormalizedPredicted": "我的心灵是军灵",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "我 的 姓 名 是 君 玲",
+  "sigWerNormalizedPredicted": "我 的 心 灵 是 军 灵",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '心' at position 2",
+      "reason": "'姓' means 'surname' or 'family name', while '心' means 'heart'. This substitution changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to '军' at position 5",
+      "reason": "'君' and '军' are different Chinese characters with different meanings and are likely different names. This changes the person's name, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

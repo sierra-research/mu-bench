@@ -1,0 +1,27 @@
+{
+  "gold": "Teşekkür ediyorum Anna Hanım.",
+  "predicted": "Teşekkür ediyorum anlayanım.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "teşekkür ediyorum anna hanım",
+  "werNormalizedPredicted": "teşekkür ediyorum anlayanım",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "teşekkür ediyorum anna hanım",
+  "sigWerNormalizedPredicted": "teşekkür ediyorum anlayanım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlayanım' at position 2",
+      "reason": "'anna hanım' is a proper noun (a person's name and title), while 'anlayanım' is a completely different word meaning 'my understander' or 'the one who understands me', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 3",
+      "reason": "Omitting 'hanım' (a respectful title for a woman) removes the intended address to 'anna hanım', further altering the meaning and making the sentence incoherent in context.",
+      "score": 1
+    }
+  ]
+}

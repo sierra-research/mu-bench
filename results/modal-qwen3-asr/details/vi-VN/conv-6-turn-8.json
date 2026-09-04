@@ -1,0 +1,32 @@
+{
+  "gold": "Không phải. Cái email đúng là minh chấm trần a còng email chấm com.",
+  "predicted": "không phải cái email đúng là min trần a cộng email.com",
+  "unintelligible": false,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không phải cái email đúng là min trần a cộng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "không phải cái email đúng là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "không phải cái email đúng là min trần a cộng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'min' at position 6",
+      "reason": "'minh' is a common Vietnamese name, while 'min' is not a standard name and could be confusing in the context of an email address. This could cause the email to be incorrect or undeliverable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 7",
+      "reason": "'chấm' means 'dot' in Vietnamese and is essential for the structure of an email address (e.g., separating parts of the address). Omitting it makes the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 10",
+      "reason": "'còng' is the Vietnamese word for the '@' symbol in email addresses, while 'cộng' means 'plus' and is incorrect in this context. This substitution makes the email address invalid.",
+      "score": 1
+    }
+  ]
+}

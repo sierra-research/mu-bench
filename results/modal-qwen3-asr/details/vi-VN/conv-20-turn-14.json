@@ -1,0 +1,27 @@
+{
+  "gold": "Không phải. Minh, minh là tên đó. Trần là họ đó. Minh chấm trần a còng email chấm com.",
+  "predicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a gmail com",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
+  "werRefWords": 19,
+  "werNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a gmail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "không phải minh minh là tên đó trần là họ đó minh chấm trần a gmail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'còng' to 'gmail' at position 15",
+      "reason": "'còng' is the Vietnamese word for '@', while 'gmail' is the name of an email service. Substituting '@' with 'gmail' changes the structure and meaning of the email address, making it incorrect and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 16",
+      "reason": "Omitting 'email' from the address changes the domain part of the email, resulting in an invalid or incorrect email address. This is a significant error as it affects the core information.",
+      "score": 1
+    }
+  ]
+}

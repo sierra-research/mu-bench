@@ -1,0 +1,27 @@
+{
+  "gold": "中国北京市海淀区北京路 1 2 3号。",
+  "predicted": "中国北京市海淀区北京路一百二十三号。",
+  "unintelligible": false,
+  "wer": 0.13333333333333333,
+  "werEdits": 2,
+  "werRefWords": 15,
+  "werNormalizedGold": "中国北京市海淀区北京路 一 二 三号",
+  "werNormalizedPredicted": "中国北京市海淀区北京路 一 百 二 十 三 号",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "中 国 北 京 市 海 淀 区 北 京 路 一 二 三 号",
+  "sigWerNormalizedPredicted": "中 国 北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '百' at position 12",
+      "reason": "The insertion of '百' (hundred) changes the address number from '一二三' (123) to '一百二十三' (123), which is the same number but written in a different format (digit-by-digit vs. full number). The meaning (the address number) is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: '十' at position 13",
+      "reason": "The insertion of '十' (ten) is part of writing the number '一百二十三' (123) in full, instead of digit-by-digit. The address number remains the same, so the meaning is unchanged.",
+      "score": 3
+    }
+  ]
+}

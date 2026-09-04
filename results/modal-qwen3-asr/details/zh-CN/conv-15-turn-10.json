@@ -1,0 +1,27 @@
+{
+  "gold": "是美玲 at email dot com。",
+  "predicted": "shumailing at email dot com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是美玲 at email dot com",
+  "werNormalizedPredicted": "shumailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "shumailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shumailing' at position 0",
+      "reason": "The expected contains three separate Chinese characters representing a name, while the actual has a single romanized string 'shumailing' which does not preserve the original form or clarity of the name. This changes the identity being referenced and could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "The character '美' is missing in the actual transcription, which is part of the person's name. Omitting a character from a name in Chinese significantly alters the identity and is a major error.",
+      "score": 1
+    }
+  ]
+}

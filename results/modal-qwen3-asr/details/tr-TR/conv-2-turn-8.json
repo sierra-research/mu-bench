@@ -1,0 +1,27 @@
+{
+  "gold": "Evet, belirttiğiniz e-posta doğrudur.",
+  "predicted": "Evet, belirttiğiniz depozito doğrudur.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "evet belirttiğiniz e posta doğrudur",
+  "werNormalizedPredicted": "evet belirttiğiniz depozito doğrudur",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "evet belirttiğiniz e posta doğrudur",
+  "sigWerNormalizedPredicted": "evet belirttiğiniz depozito doğrudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'depozito' at position 2",
+      "reason": "'e posta' (email) is replaced with 'depozito' (deposit), which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'posta' at position 3",
+      "reason": "The word 'posta' (mail) is missing, further making the sentence incoherent and changing the intended meaning.",
+      "score": 1
+    }
+  ]
+}

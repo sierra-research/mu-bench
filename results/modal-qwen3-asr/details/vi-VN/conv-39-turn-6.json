@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Số điện thoại của mình là, mình đọc đầy đủ nhá, cộng 8 4 9 1 1 2 3 4 5 6 7 8. Anna nghe được không?",
+  "predicted": "OK, số điện thoại của mình là mình đọc đầy đủ nhé, cộng tám bốn chín một một hai ba bốn năm sáu bảy tám. Anh an nghe được không?",
+  "unintelligible": false,
+  "wer": 0.1,
+  "werEdits": 3,
+  "werRefWords": 30,
+  "werNormalizedGold": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám anna nghe được không",
+  "werNormalizedPredicted": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám bốn chín một một hai ba bốn năm sáu bảy tám anh an nghe được không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám anna nghe được không",
+  "sigWerNormalizedPredicted": "okay số điện thoại của mình là mình đọc đầy đủ nhé cộng tám bốn chín một một hai ba bốn năm sáu bảy tám anh an nghe được không",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'mươi' at position 14",
+      "reason": "Omitting 'mươi' changes the number from 'tám mươi bốn' (84) to 'tám bốn' (8 4), which significantly alters the phone number and its meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'anna' to 'an' at position 26",
+      "reason": "Inserting 'anh' before the name changes the intended recipient or meaning, potentially confusing the listener about who is being addressed.",
+      "score": 2
+    }
+  ]
+}

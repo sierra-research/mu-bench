@@ -1,0 +1,32 @@
+{
+  "gold": "At email nokta com adres, evet.",
+  "predicted": "EtEmey.com adresi, evet.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "at email nokta com adres evet",
+  "werNormalizedPredicted": "etemey nokta com adresi evet",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "at email nokta com adres evet",
+  "sigWerNormalizedPredicted": "etemey nokta com adresi evet",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'etemey' at position 0",
+      "reason": "'etemey' is not a valid substitution for 'at' and changes the meaning of the email address, making it unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 1",
+      "reason": "Omitting 'email' removes a key part of the address, making the meaning unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'adres' to 'adresi' at position 4",
+      "reason": "'adresi' is a minor grammatical variation of 'adres' in Turkish and does not significantly change the meaning.",
+      "score": 2
+    }
+  ]
+}

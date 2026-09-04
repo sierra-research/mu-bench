@@ -1,0 +1,27 @@
+{
+  "gold": "Anna Hanım, merhabalar. Ben sizden yardım istemiştim.",
+  "predicted": "Annamanım merhabalar. Ben sizden yardım istemiştim.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
+  "werNormalizedPredicted": "annamanım merhabalar ben sizden yardım istemiştim",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben sizden yardım istemiştim",
+  "sigWerNormalizedPredicted": "annamanım merhabalar ben sizden yardım istemiştim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'annamanım' at position 0",
+      "reason": "'annamanım' appears to be a merging of 'anna' and 'hanım', which are two separate words (a name and a title) in the expected transcript. This merging could cause confusion or loss of clarity, especially in formal or respectful address, but the overall meaning is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a respectful title in Turkish. Its omission (by merging into 'annamanım') reduces the politeness and changes the tone, but the main intent of the sentence is still clear.",
+      "score": 2
+    }
+  ]
+}

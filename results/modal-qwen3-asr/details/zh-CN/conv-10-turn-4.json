@@ -1,0 +1,27 @@
+{
+  "gold": "C N 6 1 0 7。",
+  "predicted": "西恩老咬零几？",
+  "unintelligible": false,
+  "wer": 0.8333333333333334,
+  "werEdits": 5,
+  "werRefWords": 6,
+  "werNormalizedGold": "c n 六 一 零 七",
+  "werNormalizedPredicted": "西恩老咬零几",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c n 六 一 零 七",
+  "sigWerNormalizedPredicted": "西 恩 老 咬 零 几",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '西' at position 0",
+      "reason": "The expected letter 'c' is replaced with the Chinese character '西', which is not a correct representation of the letter and changes the intended meaning, especially in a spelled-out sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '七' to '几' at position 5",
+      "reason": "'七' means 'seven' and '几' means 'how many' or 'a few' in Chinese. This substitution changes the intended number, which is a significant error in a sequence of numbers.",
+      "score": 1
+    }
+  ]
+}

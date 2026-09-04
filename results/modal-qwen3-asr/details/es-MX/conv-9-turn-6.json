@@ -1,0 +1,32 @@
+{
+  "gold": "María punto López arroba email punto com.",
+  "predicted": "maria.perez@gmail.com",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "maria punto perez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "maria punto perez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 0",
+      "reason": "Accent missing on 'maría', but the name is still clearly recognizable and not a different name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'perez' at position 2",
+      "reason": "'López' and 'Pérez' are different surnames, which changes the identity of the person.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 4",
+      "reason": "'email' and 'gmail' are different email providers, which could result in a failed or misdirected email.",
+      "score": 1
+    }
+  ]
+}

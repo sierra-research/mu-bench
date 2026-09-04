@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii söylüyorum, yazarsan. Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Tabi söylüyorum, yazarsan Ahmet.Aslan.etimail.com",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "tabi söylüyorum yazarsan ahmet nokta arslan nokta etimail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tabii söylüyorum yazarsan ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabi söylüyorum yazarsan ahmet nokta arslan nokta etimail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "Minor spelling difference, both words are understood as the same in Turkish context and do not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'at' to 'nokta' at position 6",
+      "reason": "'at' is a critical part of the email address (should be '@'), but 'nokta' means 'dot'. This substitution makes the email address incorrect and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

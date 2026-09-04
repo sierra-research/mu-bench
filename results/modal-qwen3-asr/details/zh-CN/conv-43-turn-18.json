@@ -1,0 +1,27 @@
+{
+  "gold": "精玲 at email dot com。",
+  "predicted": "jinling at email dot com.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "精玲 at email dot com",
+  "werNormalizedPredicted": "jinling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "精 玲 at email dot com",
+  "sigWerNormalizedPredicted": "jinling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '精' to 'jinling' at position 0",
+      "reason": "'精' is a single Chinese character, while 'jinling' is a romanized form that could represent both '精' and '玲' together. However, the transcription replaces a character with a romanized word, which may cause confusion or loss of specificity, especially in names or email addresses. This is a significant error as it could result in an incorrect email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The character '玲' is missing in the actual transcription, which is significant for an email address or name. Omitting a character in a name or email can lead to a completely different or invalid address, making this a significant error.",
+      "score": 1
+    }
+  ]
+}

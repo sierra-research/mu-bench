@@ -1,0 +1,32 @@
+{
+  "gold": "Số điện thoại đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "số điện thoại đầy đủ là tổng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "unintelligible": false,
+  "wer": 0.15,
+  "werEdits": 3,
+  "werRefWords": 20,
+  "werNormalizedGold": "số điện thoại đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "số điện thoại đầy đủ là tổng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "số điện thoại đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "số điện thoại đầy đủ là tổng tám tư chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'tổng' at position 6",
+      "reason": "'Cộng' (meaning 'plus' or indicating the country code '+') is replaced by 'tổng' (meaning 'total'), which changes the meaning and makes the phone number format incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'mươi' to 'tư' at position 8",
+      "reason": "'Tám mươi bốn' (eighty-four) is replaced by 'tám tư' (slang for eighty-four), which is commonly understood in Vietnamese and does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bốn' at position 9",
+      "reason": "The word 'bốn' (four) is omitted, but since 'tám tư' is a colloquial way to say 'eighty-four', the number is still correctly conveyed.",
+      "score": 3
+    }
+  ]
+}

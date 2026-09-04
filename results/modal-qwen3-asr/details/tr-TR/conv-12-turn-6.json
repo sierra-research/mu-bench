@@ -1,0 +1,37 @@
+{
+  "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "Evet, yalnız değil. Şöyle Ahmet Arslan dediniz ama Ahmetler Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "unintelligible": false,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
+  "werRefWords": 15,
+  "werNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "evet yalnız değil şöyle ahmet arslan dediniz ama ahmetler arslan arasında nokta olacak ahmet nokta arslan",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "evet yalnız değil şöyle ahmet arslan dediniz ama ahmetler arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'yalnız' at position 1",
+      "reason": "'yalnız' (meaning 'only' or 'alone') adds a nuance that is not present in the original sentence, but does not significantly change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'şöyle' at position 2",
+      "reason": "'şöyle' (meaning 'like this' or 'as follows') adds a minor clarification, but does not alter the main meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ahmet' to 'ahmetler' at position 6",
+      "reason": "'ahmet' (singular) is changed to 'ahmetler' (plural), which could imply multiple people named Ahmet instead of one, potentially changing the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 've' at position 7",
+      "reason": "Omitting 've' ('and') removes the explicit connection between 'ahmet' and 'arslan', which could cause confusion about the relationship between the two names.",
+      "score": 2
+    }
+  ]
+}

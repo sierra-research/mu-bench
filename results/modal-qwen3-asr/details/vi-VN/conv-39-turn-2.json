@@ -1,0 +1,37 @@
+{
+  "gold": "Có. Đọc lại cho mình để mình ghi với.",
+  "predicted": "có đáp lại cho mình thì mình keep.",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "có đọc lại cho mình để mình ghi với",
+  "werNormalizedPredicted": "có đáp lại cho mình thì mình keep",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "có đọc lại cho mình để mình ghi với",
+  "sigWerNormalizedPredicted": "có đáp lại cho mình thì mình keep",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đọc' to 'đáp' at position 1",
+      "reason": "'đọc' means 'read' and 'đáp' means 'reply/answer', which changes the action being requested and alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'để' to 'thì' at position 5",
+      "reason": "'để' means 'so that' or 'in order to', while 'thì' is a conjunction meaning 'then' or 'so', which changes the structure and intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ghi' to 'keep' at position 7",
+      "reason": "'ghi' means 'write down' or 'record', while 'keep' (in English) means 'to retain', which is a different action and also a language switch.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'với' at position 8",
+      "reason": "'với' means 'with', and its omission makes the sentence incomplete and less clear.",
+      "score": 2
+    }
+  ]
+}

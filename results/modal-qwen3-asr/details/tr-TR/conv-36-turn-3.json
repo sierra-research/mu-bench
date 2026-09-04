@@ -1,0 +1,27 @@
+{
+  "gold": "Ceyhan, Niğde 3 4 2. Doğru mudur?",
+  "predicted": "Ceyhanli'de 3, 4, 2. Doğru mudur?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "ceyhan niğde üç dört iki doğru mudur",
+  "werNormalizedPredicted": "ceyhanli'de üç dört iki doğru mudur",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "ceyhan niğde üç dört iki doğru mudur",
+  "sigWerNormalizedPredicted": "ceyhanli'de üç dört iki doğru mudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ceyhan' to 'ceyhanli'de' at position 0",
+      "reason": "'ceyhan' is a city name, while 'ceyhanli'de' means 'in Ceyhanli' (a different place or context). This changes the location being referenced, which can significantly alter the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'niğde' at position 1",
+      "reason": "'niğde' is another city name that is omitted in the actual transcription, removing a key piece of information and changing the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

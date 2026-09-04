@@ -1,0 +1,42 @@
+{
+  "gold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
+  "predicted": "thì email là minh trần a cộng email com",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
+  "werRefWords": 12,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "thì email là minh trần a cộng email com",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "thì email là minh trần a cộng email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'địa' to 'thì' at position 0",
+      "reason": "'địa' (part of 'địa chỉ' meaning 'address') is replaced by 'thì' (a conjunction/particle), which changes the meaning and makes the sentence less clear.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chỉ' at position 1",
+      "reason": "Omitting 'chỉ' (from 'địa chỉ' meaning 'address') removes the key phrase 'email address', which is important for clarity.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 5",
+      "reason": "Missing 'chấm' (dot/period) in the email address changes the actual email, which is critical information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 8",
+      "reason": "'còng' is the Vietnamese word for '@' in email addresses, while 'cộng' means 'plus' and is incorrect in this context, leading to a significant error in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 10",
+      "reason": "Missing 'chấm' (dot/period) at the end of the email address changes the domain, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

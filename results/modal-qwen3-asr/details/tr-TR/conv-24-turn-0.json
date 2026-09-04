@@ -1,0 +1,32 @@
+{
+  "gold": "Kolay gelsin Anna Hanım. Ben kredi kartı bilgilerimi öğrenmek için, yani IBAN numaramı öğrenebilir miyim?",
+  "predicted": "Kolay gelsin anlağım. Ben kredi kartı bilgilerimi öğrenmek istiyorum. Yani hani IBAN numaramı öğrenebilir miyim?",
+  "unintelligible": false,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için iban numaramı öğrenebilir miyim",
+  "werNormalizedPredicted": "kolay gelsin anlağım ben kredi kartı bilgilerimi öğrenmek istiyorum iban numaramı öğrenebilir miyim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için iban numaramı öğrenebilir miyim",
+  "sigWerNormalizedPredicted": "kolay gelsin anlağım ben kredi kartı bilgilerimi öğrenmek istiyorum iban numaramı öğrenebilir miyim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlağım' at position 2",
+      "reason": "'Anna' is a proper noun (a person's name), while 'anlağım' is a Turkish word meaning 'my agreement' or 'my understanding'. This substitution changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 3",
+      "reason": "'Hanım' is a polite form of address (like 'Ms.' or 'Mrs.') following a name. Its omission reduces politeness but does not significantly change the core meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'için' to 'istiyorum' at position 9",
+      "reason": "'İçin' means 'for', while 'istiyorum' means 'I want'. This changes the structure of the request but the overall intent (to learn the IBAN number) remains clear.",
+      "score": 2
+    }
+  ]
+}

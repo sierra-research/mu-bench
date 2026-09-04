@@ -1,0 +1,42 @@
+{
+  "gold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
+  "predicted": "Adımın son harfi yanlış. Ben Zeynep T ile Prasanın P'siyle söyledim. Siz bana T'li söylediniz. Zeynep emailde de aynı şekilde Zeynep olacak.",
+  "unintelligible": false,
+  "wer": 0.4782608695652174,
+  "werEdits": 11,
+  "werRefWords": 23,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile prasanın p siyle söyledim siz bana t li söylediniz zeynep emailde de aynı şekilde zeynep olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zeynep t ile prasanın p siyle söyledim siz bana t li söylediniz zeynep emailde de aynı şekilde zeynep olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 5",
+      "reason": "'zaynep' and 'zeynep' are both Turkish names, but the spelling difference changes the name. However, the pronunciation is very similar and the intended name is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'pırasanın' to 'prasanın' at position 8",
+      "reason": "The word 'pırasanın' (with 'ı') is the correct Turkish spelling for 'of the leek', while 'prasanın' (with 'a') is a misspelling but still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'tli' to 'li' at position 14",
+      "reason": "The insertion of 't' changes the letter being referenced, which is important in the context of spelling a name. This can lead to confusion about the correct letter.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 16",
+      "reason": "Omitting the 't' in 'tli' removes the reference to the letter 't', which is significant when clarifying spelling.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 21",
+      "reason": "Same as above: minor spelling difference in a proper noun, but the intended name is still clear.",
+      "score": 2
+    }
+  ]
+}

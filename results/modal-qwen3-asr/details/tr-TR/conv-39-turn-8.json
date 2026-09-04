@@ -1,0 +1,37 @@
+{
+  "gold": "E-posta adresim Zaynep nokta Arslan at email nokta com.",
+  "predicted": "Eposta adresim zeynep.arslan@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "eposta adresim zeynep nokta arslan at gmail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "eposta adresim zeynep nokta arslan at gmail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'eposta' at position 0",
+      "reason": "'e' and 'eposta' are related ('e' is short for 'eposta'), but the actual merges two words into one. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'posta' at position 1",
+      "reason": "'posta' is omitted because 'eposta' already includes it; this is a difference in word segmentation, not meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 3",
+      "reason": "Minor misspelling of a proper noun, still recognizable as the same name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing the email provider from 'email' to 'gmail' changes the actual address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

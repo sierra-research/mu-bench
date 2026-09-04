@@ -1,0 +1,37 @@
+{
+  "gold": "Sí, la alcaldía es Azcapotzalco, código postal 0 2 860 en la Ciudad de México.",
+  "predicted": "Si la alcaldía es Ascapotzalco, código postal cero dos ochocientos sesenta en la Ciudad de México.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
+  "werRefWords": 17,
+  "werNormalizedGold": "sí la alcaldía es azcapotzalco código postal cero dos ocho seis cero en la ciudad de méxico",
+  "werNormalizedPredicted": "si la alcaldía es ascapotzalco código postal cero dos ochocientos sesenta en la ciudad de méxico",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "sí la alcaldía es azcapotzalco código postal cero dos ocho seis cero en la ciudad de méxico",
+  "sigWerNormalizedPredicted": "si la alcaldía es ascapotzalco código postal cero dos ochocientos sesenta en la ciudad de méxico",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'si' at position 0",
+      "reason": "'sí' with accent means 'yes' in Spanish, while 'si' without accent means 'if'; in this context, the meaning is not significantly changed, but the accent is important for correctness.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'azcapotzalco' to 'ascapotzalco' at position 4",
+      "reason": "Minor misspelling of a proper noun (name of a place), but still recognizable and does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ocho' to 'ochocientos' at position 9",
+      "reason": "'Ocho' means 'eight' and 'ochocientos' means 'eight hundred'; this changes the postal code number, which is a significant factual error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cero' at position 11",
+      "reason": "Omitting a digit from the postal code changes the number entirely, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

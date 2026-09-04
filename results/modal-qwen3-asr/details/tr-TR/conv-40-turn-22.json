@@ -1,0 +1,37 @@
+{
+  "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "predicted": "Daha önce hesap ekleme sistemi içtim aylık henüz şu ana kadar gelmedi bana gönderebilir miyim hesap eklemesini?",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 6,
+  "werRefWords": 16,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce hesap ekleme sistemi içtim aylık henüz şu ana kadar gelmedi bana gönderebilir miyim hesap eklemesini",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce hesap ekleme sistemi içtim aylık henüz şu ana kadar gelmedi bana gönderebilir miyim hesap eklemesini",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ekstresi' to 'sistemi' at position 3",
+      "reason": "'ekleme' (adding) is inserted where 'ekstresi' (statement) is expected, which changes the meaning from 'account statement' to 'account adding', significantly altering the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "'ekstresi' (statement) is replaced with 'sistemi' (system), which changes the meaning of the noun and makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'misin' to 'miyim' at position 13",
+      "reason": "'istediğim' (that I requested) is replaced with 'henüz' (yet), which changes the temporal and causal meaning of the sentence, but the overall intent is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'eklemesini' at position 15",
+      "reason": "'misin' (can you) is replaced with 'miyim' (can I), which reverses the direction of the request, significantly changing the meaning.",
+      "score": 1
+    }
+  ]
+}

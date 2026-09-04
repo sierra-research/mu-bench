@@ -1,0 +1,27 @@
+{
+  "gold": "Siz tekrar edin, ben alamadım, not alamadım.",
+  "predicted": "çiste kaydi ben alamadım, notalamadım.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "werNormalizedPredicted": "çiste kaydi ben alamadım not alamadım",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "siz tekrar edin ben alamadım not alamadım",
+  "sigWerNormalizedPredicted": "çiste kaydi ben alamadım not alamadım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'siz' to 'çiste' at position 0",
+      "reason": "'çiste' is not a valid substitution for 'siz' (which means 'you' in Turkish); this changes the subject and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'edin' at position 2",
+      "reason": "'edin' is a verb meaning 'do' or 'make', and its omission makes the command incomplete and ungrammatical.",
+      "score": 1
+    }
+  ]
+}

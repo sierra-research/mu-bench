@@ -1,0 +1,27 @@
+{
+  "gold": "Hello? Can you give what is 7 6 2?",
+  "predicted": "Can you give what is this seven six two?",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "hello can you give what is seven six two",
+  "werNormalizedPredicted": "can you give what is this seven six two",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "hello can you give what is seven six two",
+  "sigWerNormalizedPredicted": "can you give what is this seven six two",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'hello' at position 0",
+      "reason": "The greeting 'hello' is omitted, but the main request and question remain clear and unchanged. The omission does not affect the core meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'this' at position 6",
+      "reason": "The word 'this' is inserted before 'seven six two', but it does not change the meaning of the question being asked. The intent and information requested are still clear.",
+      "score": 2
+    }
+  ]
+}

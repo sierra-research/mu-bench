@@ -1,0 +1,32 @@
+{
+  "gold": "E-posta adresim, Zeynep nokta Arslan at email nokta com.",
+  "predicted": "Eposta adresim zeynep.arslan@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "eposta adresim zeynep nokta arslan at gmail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "e posta adresim zeynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "eposta adresim zeynep nokta arslan at gmail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'e' to 'eposta' at position 0",
+      "reason": "'e posta' is the Turkish phrase for 'email', and 'eposta' is a common variant or contraction of the same phrase. The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'posta' at position 1",
+      "reason": "In Turkish, 'eposta' is an accepted single word for 'email', so omitting 'posta' when 'eposta' is used does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing the domain from 'email' to 'gmail' changes the actual email address, which is a significant error as it would direct messages to a different service.",
+      "score": 1
+    }
+  ]
+}

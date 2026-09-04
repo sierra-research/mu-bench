@@ -1,0 +1,27 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com.",
+  "predicted": "email là min chấm a cộng email chấm com",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là min chấm a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là min chấm a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'min' at position 2",
+      "reason": "'minh' is a Vietnamese name, and 'min' is a different name or word. This changes the intended email address and could cause delivery failure or confusion.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 4",
+      "reason": "Omitting 'trần' removes a key part of the email address, making it incomplete and likely invalid. This is a significant error for an email transcription.",
+      "score": 1
+    }
+  ]
+}

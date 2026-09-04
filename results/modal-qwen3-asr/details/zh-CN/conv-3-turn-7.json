@@ -1,0 +1,37 @@
+{
+  "gold": "你写了我的电子邮箱吗？",
+  "predicted": "呃，那你学了我的垫子有香吗？",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "你写了我的电子邮箱吗",
+  "werNormalizedPredicted": "那你学了我的垫子有香吗",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 写 了 我 的 电 子 邮 箱 吗",
+  "sigWerNormalizedPredicted": "那 你 学 了 我 的 垫 子 有 香 吗",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '那' at position 0",
+      "reason": "The word '那' ('that') is added at the beginning, which changes the subject and context of the sentence, making the meaning different.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '写' to '学' at position 1",
+      "reason": "'写' means 'write' and '学' means 'learn'; this changes the action described in the sentence, altering the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '电' to '垫' at position 5",
+      "reason": "'电' means 'electric' (as in 'email'), while '垫' means 'mat' or 'pad'; this substitution changes the object being referred to, making the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '邮' to '有' at position 7",
+      "reason": "'邮' means 'mail' (as in 'email'), while '有' means 'have'; this changes the meaning and disrupts the reference to 'email', making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "C N 1 1 0. Doğru mudur?",
+  "predicted": "C N bir bir sıfır doğrudur.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "werNormalizedPredicted": "c n bir bir sıfır doğrudur",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n bir bir sıfır doğru mudur",
+  "sigWerNormalizedPredicted": "c n bir bir sıfır doğrudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doğru' to 'doğrudur' at position 5",
+      "reason": "'doğru' (correct) and 'doğrudur' (it is correct) are semantically very close; the latter is a more formal/complete form but does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'mudur' at position 6",
+      "reason": "'mudur' is a question particle in Turkish, turning the statement into a question. Its omission changes the sentence from a question to a statement, which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "L E I dot L I N G at E M A I L dot C O M。",
+  "predicted": "m.e.i.dots.l.i.n.g.s.e.m.a.i.l.dots.c.o.m",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 4,
+  "werRefWords": 18,
+  "werNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
+  "werNormalizedPredicted": "m e i dot s l i n g s e m a i l dot s c o m",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "l e i dot l i n g at e m a i l dot c o m",
+  "sigWerNormalizedPredicted": "m e i dot s l i n g s e m a i l dot s c o m",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'l' to 'm' at position 0",
+      "reason": "First letter of a spelled-out email username is incorrect, which changes the email address significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 's' at position 4",
+      "reason": "Extra letter in the username of a spelled-out email address, which changes the email address and could cause delivery failure.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 's' at position 8",
+      "reason": "Replacing 'at' with 's' in an email address disrupts the structure and meaning, making the address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 's' at position 15",
+      "reason": "Extra letter in the domain part of the email address, which changes the domain and could cause delivery failure.",
+      "score": 1
+    }
+  ]
+}

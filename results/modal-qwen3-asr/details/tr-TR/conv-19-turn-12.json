@@ -1,0 +1,27 @@
+{
+  "gold": "Belli bir ücreti var mı limit artırmanın? Kontrol edebilir misiniz?",
+  "predicted": "Belli bir ücreti var mı? Limit arttırmalarını kontrol ediyor musunuz?",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "belli bir ücreti var mı limit artırmanın kontrol edebilir misiniz",
+  "werNormalizedPredicted": "belli bir ücreti var mı limit arttırmalarını kontrol ediyor musunuz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "belli bir ücreti var mı limit artırmanın kontrol edebilir misiniz",
+  "sigWerNormalizedPredicted": "belli bir ücreti var mı limit arttırmalarını kontrol ediyor musunuz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'artırmanın' to 'arttırmalarını' at position 6",
+      "reason": "'artırmanın' (of increasing) is replaced with 'arttırmalarını' (their increases), which changes the grammatical structure but the core meaning about increasing the limit is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'edebilir' to 'ediyor' at position 8",
+      "reason": "'edebilir misiniz' (can you check) is replaced with 'ediyor musunuz' (are you checking), which changes the modality from a request to a question about current action, altering the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

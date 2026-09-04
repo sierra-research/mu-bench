@@ -1,0 +1,32 @@
+{
+  "gold": "Yalnız email adresim yanlış oldu. Zeynep değil Zaynep olacak. Zaynep nokta Arslan at email nokta com.",
+  "predicted": "Yalnız email adresim yanlış oldu. Zeynep değil, Zeynep olacak. Zeynep.arslan@e-mail.com",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 4,
+  "werRefWords": 16,
+  "werNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep değil zeynep olacak zeynep nokta arslan at e mail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "yalnız email adresim yanlış oldu zeynep değil zaynep olacak zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "yalnız email adresim yanlış oldu zeynep değil zeynep olacak zeynep nokta arslan at e mail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 7",
+      "reason": "'zaynep' and 'zeynep' are different names; this changes the email address and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zeynep' at position 9",
+      "reason": "'zaynep' and 'zeynep' are different names; this changes the email address and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 13",
+      "reason": "Splitting 'email' into 'e mail' does not change the meaning or the email address in this context.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "M A R I A punto L O P E Z arroba E M A I L punto com.",
+  "predicted": "m a r i a punto l o p e z arroba e m a i l puntocom",
+  "unintelligible": false,
+  "wer": 0.10526315789473684,
+  "werEdits": 2,
+  "werRefWords": 19,
+  "werNormalizedGold": "m a r i a punto l o p e z arroba e m a i l punto com",
+  "werNormalizedPredicted": "m a r i a punto l o p e z arroba e m a i l puntocom",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "m a r i a punto l o p e z arroba e m a i l punto com",
+  "sigWerNormalizedPredicted": "m a r i a punto l o p e z arroba e m a i l puntocom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'punto' to 'puntocom' at position 17",
+      "reason": "'puntocom' merges 'punto' and 'com' into one word, which could cause confusion in a spelled-out email address, as each element should be distinct for clarity. This could lead to an incorrect email address being interpreted or entered.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'com' at position 18",
+      "reason": "'com' is missing as a separate element in the spelled-out sequence, which is significant for the accuracy of the email address. Omitting 'com' as a separate word can result in an invalid or misunderstood email address.",
+      "score": 1
+    }
+  ]
+}

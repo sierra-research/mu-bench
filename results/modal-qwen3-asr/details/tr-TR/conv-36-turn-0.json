@@ -1,0 +1,32 @@
+{
+  "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
+  "predicted": "Anla Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstranın bir kopyasını istiyorum, ya da ekstranın bir dökümünü istiyorum daha doğrusu.",
+  "unintelligible": false,
+  "wer": 0.15,
+  "werEdits": 3,
+  "werRefWords": 20,
+  "werNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anla hanım merhabalar şimdi ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anla hanım merhabalar şimdi ben kredi kartıma dair ekstranın bir kopyasını istiyorum ya da ekstranın bir dökümünü istiyorum daha doğrusu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anna' is a proper noun (a name), and 'anla' is a different word in Turkish meaning 'understand'; this changes the intended addressee and meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstranın' at position 8",
+      "reason": "'ekstremin' means 'my statement', while 'ekstranın' means 'the statement's'; this changes the ownership and could cause confusion, but the overall intent is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstranın' at position 14",
+      "reason": "Same as above: 'ekstremin' (my statement) vs 'ekstranın' (the statement's) changes the ownership, but the request is still understandable.",
+      "score": 2
+    }
+  ]
+}

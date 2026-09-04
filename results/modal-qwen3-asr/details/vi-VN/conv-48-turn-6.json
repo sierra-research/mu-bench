@@ -1,0 +1,27 @@
+{
+  "gold": "Email của tôi là minh chấm trần a còng email chấm com.",
+  "predicted": "email của tôi là min trần a còng email.com",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "email của tôi là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email của tôi là min trần a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "email của tôi là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email của tôi là min trần a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'min' at position 4",
+      "reason": "'minh' is a Vietnamese name, and 'min' is a different name or could be interpreted as a truncation. This changes the identity in the email address, which is significant for correctness.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 5",
+      "reason": "Missing 'chấm' (dot) in the email address changes the structure and correctness of the email, making it invalid or referring to a different address.",
+      "score": 1
+    }
+  ]
+}

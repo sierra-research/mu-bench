@@ -1,0 +1,37 @@
+{
+  "gold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
+  "predicted": "Banka kartımın sözleşmek üzere ana. Bana yeni kart gönderebilir misin?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "werNormalizedPredicted": "banka kartımın sözleşmek üzere ana bana yeni kart gönderebilir misin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "sigWerNormalizedPredicted": "banka kartımın sözleşmek üzere ana bana yeni kart gönderebilir misin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'süresi' to 'sözleşmek' at position 2",
+      "reason": "'süresi' (duration/expiry) and 'sözleşmek' (to contract) are completely different words and meanings; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'geçmek' at position 3",
+      "reason": "Omitting 'geçmek' (to expire/pass) removes the key action about the card's expiry, which is crucial to the sentence's meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'anna' to 'ana' at position 5",
+      "reason": "'anna' is likely a name, while 'ana' means 'mother' in Turkish; this changes the addressee and could confuse the intent, but the overall request is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 8",
+      "reason": "Omitting 'bir' (a) is a minor grammatical error and does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

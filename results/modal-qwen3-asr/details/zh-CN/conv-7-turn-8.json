@@ -1,0 +1,27 @@
+{
+  "gold": "C N 3 7 8 对吗？",
+  "predicted": "C N C B，对吗？",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n 三 七 八 对吗",
+  "werNormalizedPredicted": "c n c b 对吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n 三 七 八 对 吗",
+  "sigWerNormalizedPredicted": "c n c b 对 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '三' to 'c' at position 2",
+      "reason": "The Chinese numeral '三' (three) was replaced with 'c', which is a completely different character and changes the meaning of the sequence, especially since this appears to be a sequence of letters and numbers.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '八' at position 4",
+      "reason": "The Chinese numeral '八' (eight) was omitted, which removes important information from the sequence.",
+      "score": 1
+    }
+  ]
+}

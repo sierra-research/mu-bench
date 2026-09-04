@@ -1,0 +1,32 @@
+{
+  "gold": "Địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi.",
+  "predicted": "địa chỉ email chỉ là thu chấm trần cộng email chấm cơm thôi.",
+  "unintelligible": false,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
+  "werNormalizedPredicted": "địa chỉ email chỉ là thu chấm trần cộng email chấm cơm thôi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "địa chỉ email chỉ là thu chấm trần a còng email chấm com thôi",
+  "sigWerNormalizedPredicted": "địa chỉ email chỉ là thu chấm trần cộng email chấm cơm thôi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'cộng' at position 8",
+      "reason": "'a còng' is the Vietnamese way to say '@' in an email address, while 'cộng' means 'plus' and is incorrect in this context. This changes the meaning and makes the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'còng' at position 9",
+      "reason": "Omitting 'còng' removes the '@' symbol from the email address, making it incomplete and invalid. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'cơm' at position 12",
+      "reason": "'com' is the correct domain ending for an email address, while 'cơm' means 'rice' in Vietnamese. This substitution makes the email address nonsensical and invalid.",
+      "score": 1
+    }
+  ]
+}

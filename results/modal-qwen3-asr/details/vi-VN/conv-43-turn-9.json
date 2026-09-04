@@ -1,0 +1,42 @@
+{
+  "gold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "predicted": "phải truyền minh mà là truyền minh truyền minh truyền minh",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
+  "werRefWords": 12,
+  "werNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "werNormalizedPredicted": "phải truyền minh mà là truyền minh truyền minh truyền minh",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "sigWerNormalizedPredicted": "phải truyền minh mà là truyền minh truyền minh truyền minh",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'không' at position 0",
+      "reason": "'không' means 'no' or 'not', and its deletion reverses the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trường' to 'truyền' at position 2",
+      "reason": "'trường' and 'truyền' are different words with different meanings; this changes the name being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'truyền' at position 6",
+      "reason": "'trần' and 'truyền' are different names; this changes the identity being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'truyền' at position 8",
+      "reason": "Repeats the same name substitution error, again changing the identity.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'tran' to 'truyền' at position 10",
+      "reason": "'tran' is a romanized form of 'trần', while 'truyền' is a different name; this is a significant error in proper noun transcription.",
+      "score": 1
+    }
+  ]
+}

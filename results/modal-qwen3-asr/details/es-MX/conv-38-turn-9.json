@@ -1,0 +1,47 @@
+{
+  "gold": "Sí. ¿Necesitas solamente los 10 dígitos del número o te necesito dar el código del país?",
+  "predicted": "Si necesitas solamente los diez dígitos del nom del número o necesito dar el el código del país.",
+  "unintelligible": false,
+  "wer": 0.5625,
+  "werEdits": 9,
+  "werRefWords": 16,
+  "werNormalizedGold": "sí necesitas solamente los diez dígitos del número o te necesito dar el código del país",
+  "werNormalizedPredicted": "si necesitas solamente los diez digitos del nom del numero o necesito dar el el codigo del pais",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "sí necesitas solamente los diez dígitos del número o te necesito dar el código del país",
+  "sigWerNormalizedPredicted": "si necesitas solamente los diez digitos del nom del numero o necesito dar el el codigo del pais",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'si' at position 0",
+      "reason": "'sí' (with accent) means 'yes', while 'si' (without accent) means 'if'; in this context, the meaning changes, but the sentence is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dígitos' to 'digitos' at position 5",
+      "reason": "Missing accent on 'dígitos' is a minor orthographic error, does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'número' to 'numero' at position 7",
+      "reason": "Insertion of 'nom' (likely a truncation of 'nombre') changes the meaning and introduces confusion about what digits are being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'te' at position 9",
+      "reason": "Missing accent on 'número' is a minor orthographic error, does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'código' to 'codigo' at position 13",
+      "reason": "Omitting 'te' changes the subject of the verb, altering who needs to give the code, which changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'país' to 'pais' at position 15",
+      "reason": "Duplication of 'el' is a minor grammatical error, does not affect the overall meaning.",
+      "score": 2
+    }
+  ]
+}

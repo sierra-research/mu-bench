@@ -1,0 +1,27 @@
+{
+  "gold": "Minh chấm trần a còng Gmail chấm com.",
+  "predicted": "minh.chẩn@gmail.com",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "minh chấm trần a còng gmail chấm com",
+  "werNormalizedPredicted": "minh chẩn a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "minh chấm trần a còng gmail chấm com",
+  "sigWerNormalizedPredicted": "minh chẩn a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'chẩn' at position 1",
+      "reason": "'chấm' (dot) is a common word in Vietnamese email addresses, while 'chẩn' is a different word and not appropriate in this context, making the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 2",
+      "reason": "Omitting 'trần' removes a key part of the email address (likely the surname), which significantly changes the meaning and makes the address incorrect.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gold": "Email daha vermedin, email vereyim ben sana. Ahmet nokta Arslan A R S L A N at email nokta com.",
+  "predicted": "Email vermedin tekrar email veriyim sonra Ahmet nokta aslan arsdaaneetemail.com",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 15,
+  "werRefWords": 20,
+  "werNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "werNormalizedPredicted": "email vermedin tekrar email veriyim sonra ahmet nokta aslan arsdaaneetemail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "email daha vermedin email vereyim ben sana ahmet nokta arslan a r s l a n at email nokta com",
+  "sigWerNormalizedPredicted": "email vermedin tekrar email veriyim sonra ahmet nokta aslan arsdaaneetemail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'daha' to 'vermedin' at position 1",
+      "reason": "'daha' (still/yet) is omitted and replaced with 'vermedin' (you didn't give), which changes the nuance of the sentence but the main meaning (about not giving the email) is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'vereyim' to 'veriyim' at position 4",
+      "reason": "Minor spelling difference in the verb, both mean 'let me give', so the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'sana' at position 6",
+      "reason": "'sana' (to you) is omitted, but the context still implies the recipient, so the overall meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 9",
+      "reason": "'arslan' is a proper noun (surname), 'aslan' means 'lion' and is also a common surname, but if this is a specific email address, this could cause delivery failure.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'r' at position 11",
+      "reason": "In the spelled-out sequence 'a r s l a n', missing 'r' changes the spelling of the name, which is significant for an email address.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Anna Hanım merhabalar, öncelikle teşekkür ediyorum. Ben kredi kartı limitinin artırılmasını talep ediyorum. Bu konuda yardımcı olabilir misiniz?",
+  "predicted": "Anla Hanım Merhabalar. Öncelikle teşekkür ediyorum. Ben kredi kartı limitiminin artırılmasıını talep ediyorum. Bu konuda bana yardımcı olabilir misiniz?",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 4,
+  "werRefWords": 18,
+  "werNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
+  "werNormalizedPredicted": "anla hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitiminin artırılmasıını talep ediyorum bu konuda bana yardımcı olabilir misiniz",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitinin artırılmasını talep ediyorum bu konuda yardımcı olabilir misiniz",
+  "sigWerNormalizedPredicted": "anla hanım merhabalar öncelikle teşekkür ediyorum ben kredi kartı limitiminin artırılmasıını talep ediyorum bu konuda bana yardımcı olabilir misiniz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'Anna' is a proper noun (a name), but 'anla' is a verb in Turkish meaning 'understand'. This changes the addressee and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'limitinin' to 'limitiminin' at position 9",
+      "reason": "'limitinin' means 'of the limit', while 'limitiminin' is a non-standard, redundant form but still refers to the same concept. The meaning is understandable, though grammatically incorrect.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'bana' at position 15",
+      "reason": "Adding 'bana' ('to me') is redundant in this context and does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

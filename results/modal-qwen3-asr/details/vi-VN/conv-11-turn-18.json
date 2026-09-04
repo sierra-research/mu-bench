@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi muốn xin được cấp 2 thẻ, được không?",
+  "predicted": "cô muốn sinh đỡ cặp hai thay s được không?",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 6,
+  "werRefWords": 9,
+  "werNormalizedGold": "tôi muốn xin được cấp hai thẻ được không",
+  "werNormalizedPredicted": "cô muốn sinh đỡ cặp hai thay s được không",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "tôi muốn xin được cấp hai thẻ được không",
+  "sigWerNormalizedPredicted": "cô muốn sinh đỡ cặp hai thay s được không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tôi' to 'cô' at position 0",
+      "reason": "'tôi' means 'I' and 'cô' means 'she' or 'miss', changing the subject of the sentence and altering the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'xin' to 'sinh' at position 2",
+      "reason": "'xin' means 'to request' while 'sinh' means 'to give birth', which completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'thẻ' to 's' at position 6",
+      "reason": "The word 'thay' (meaning 'replace' or 'teacher') is not present in the expected sentence and introduces confusion, but does not by itself derail the entire meaning.",
+      "score": 2
+    }
+  ]
+}

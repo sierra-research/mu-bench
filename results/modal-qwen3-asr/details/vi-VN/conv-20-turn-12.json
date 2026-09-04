@@ -1,0 +1,37 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com.",
+  "predicted": "email là min trần a cộng email com",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là min trần a cộng email com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là min trần a cộng email com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'min' at position 2",
+      "reason": "'min' is missing the final 'h' from 'minh', which is a minor misspelling of a name but still recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "Missing 'chấm' (dot) in an email address changes the structure and could make the email invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 6",
+      "reason": "'còng' means 'at' (the '@' symbol) in Vietnamese, while 'cộng' means 'plus'; this substitution changes the meaning and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 8",
+      "reason": "Missing 'chấm' (dot) in the domain part of the email address makes the email invalid.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "predicted": "Yalnız e posta adresim yanlış oldu. Sonu Gmail değil, İmail. Yani e Edirne'nin e'siyle, email. dot com.",
+  "unintelligible": false,
+  "wer": 0.21052631578947367,
+  "werEdits": 4,
+  "werRefWords": 19,
+  "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "werNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil imail yani e edirnenin e siyle email dot com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresim yanlış oldu sonu gmail değil imail yani e edirnenin e siyle email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'email' to 'imail' at position 9",
+      "reason": "'imail' is a mishearing of 'email', but the intended meaning is still clear in context as it refers to the email address.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'si' to 'siyle' at position 14",
+      "reason": "'siyle' means 'with its e' in Turkish, which is a more explicit form of 'si' (its e). The meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 15",
+      "reason": "'ile' means 'with' in Turkish, but 'siyle' already includes the meaning of 'with', so the omission does not change the meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'nokta' to 'dot' at position 17",
+      "reason": "'nokta' and 'dot' both mean the same thing in the context of an email address ('.com'), just in different languages.",
+      "score": 3
+    }
+  ]
+}

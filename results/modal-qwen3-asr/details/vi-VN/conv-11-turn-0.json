@@ -1,0 +1,42 @@
+{
+  "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
+  "predicted": "xin chào tôi đây là tôi làm mất thẻ cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào chúng mình có",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 9,
+  "werRefWords": 21,
+  "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "werNormalizedPredicted": "xin chào tôi đây là tôi làm mất thẻ cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào chúng mình có",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "sigWerNormalizedPredicted": "xin chào tôi đây là tôi làm mất thẻ cái tôi xin cấp thẻ mới muốn hỏi coi là hiện tại khi nào chúng mình có",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'đây' at position 3",
+      "reason": "'đây' (here/this) is an extra word that does not change the overall meaning of the sentence, as it just adds a self-reference.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'cái' at position 6",
+      "reason": "'cái' (classifier) is a minor grammatical addition and does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'giờ' at position 11",
+      "reason": "Omitting 'giờ' (now) slightly reduces temporal clarity but does not significantly change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'coi' at position 14",
+      "reason": "'coi' (to see/check) is an extra verb that does not change the intent of the question.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'chuẩn' to 'chúng' at position 18",
+      "reason": "Substituting 'chuẩn bị' (prepare) with 'chúng mình' (we/us) changes the subject and meaning of the sentence, making it incoherent.",
+      "score": 1
+    }
+  ]
+}

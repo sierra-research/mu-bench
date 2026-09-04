@@ -1,0 +1,27 @@
+{
+  "gold": "Có. Vui lòng hướng dẫn ạ.",
+  "predicted": "có vừa làm hướng dẫn này.",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "có vui lòng hướng dẫn",
+  "werNormalizedPredicted": "có vừa làm hướng dẫn này",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "có vui lòng hướng dẫn",
+  "sigWerNormalizedPredicted": "có vừa làm hướng dẫn này",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'vừa' at position 1",
+      "reason": "'vui lòng' means 'please' or 'kindly', while 'vừa làm' means 'just did'. This changes the intent from a polite request to a statement about having just done something, which significantly alters the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'này' at position 5",
+      "reason": "The word 'này' means 'this', which adds specificity not present in the original sentence. While it changes the nuance, it does not derail the meaning as much as the previous error.",
+      "score": 2
+    }
+  ]
+}

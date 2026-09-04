@@ -1,0 +1,32 @@
+{
+  "gold": "Sorry. Ashley dot Brown at email dot com. Ashley dot Brown at email dot com.",
+  "predicted": "Ashley. Sorry, Ashley. Brown at email. dot com. Ashley. Brown at email. dot com.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "sorry ashley dot brown at email dot com ashley dot brown at email dot com",
+  "werNormalizedPredicted": "ashley sorry ashley brown at email dot com ashley brown at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "sorry ashley dot brown at email dot com ashley dot brown at email dot com",
+  "sigWerNormalizedPredicted": "ashley sorry ashley brown at email dot com ashley brown at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ashley' at position 0",
+      "reason": "Inserting 'ashley' at the beginning does not change the meaning of the sentence, as the main content is repeated and the email address is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'dot' at position 2",
+      "reason": "Omitting 'dot' in the email address could cause confusion or make the email address invalid, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 9",
+      "reason": "Omitting 'dot' in the repeated email address again could cause confusion or make the email address invalid, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

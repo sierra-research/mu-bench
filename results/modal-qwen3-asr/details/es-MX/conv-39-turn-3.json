@@ -1,0 +1,37 @@
+{
+  "gold": "Oye me dijiste C N 7 9 1, ¿es C N 1 9 1?",
+  "predicted": "Oye, pero me dijiste S N siete nueve uno, S N uno nueve uno.",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 4,
+  "werRefWords": 14,
+  "werNormalizedGold": "oye me dijiste c n siete nueve uno es c n uno nueve uno",
+  "werNormalizedPredicted": "oye pero me dijiste s n siete nueve uno s n uno nueve uno",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "oye me dijiste c n siete nueve uno es c n uno nueve uno",
+  "sigWerNormalizedPredicted": "oye pero me dijiste s n siete nueve uno s n uno nueve uno",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'pero' at position 1",
+      "reason": "'pero' (but) adds a contrastive meaning that was not present in the original sentence, but the main intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'c' to 's' at position 3",
+      "reason": "Substituting 'c' for 's' in a spelled-out sequence (likely letters for a code or identifier) is a significant error as it changes the information conveyed.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'es' to 's' at position 8",
+      "reason": "'es' (is) being replaced by 's' (likely intended as a letter) changes the structure and meaning of the code or identifier, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'c' at position 9",
+      "reason": "Omitting 'c' from a sequence of letters/numbers (likely a code or identifier) is a significant error as it alters the intended information.",
+      "score": 1
+    }
+  ]
+}

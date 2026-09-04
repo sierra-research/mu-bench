@@ -1,0 +1,27 @@
+{
+  "gold": "İyi çalışmalar, kolay gelsin.",
+  "predicted": "Bir şey sormak istiyorum.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 4,
+  "werRefWords": 4,
+  "werNormalizedGold": "iyi çalışmalar kolay gelsin",
+  "werNormalizedPredicted": "bir sormak istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "iyi çalışmalar kolay gelsin",
+  "sigWerNormalizedPredicted": "bir sormak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'iyi' to 'bir' at position 0",
+      "reason": "The actual sentence is completely different in meaning from the expected; 'iyi çalışmalar kolay gelsin' is a polite wish, while 'bir sormak istiyorum' is a request to ask something. The substitution changes the intent and meaning entirely.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'gelsin' at position 3",
+      "reason": "The word 'gelsin' is missing, which is part of the polite phrase. Its omission further derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

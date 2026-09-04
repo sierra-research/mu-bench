@@ -1,0 +1,32 @@
+{
+  "gold": "我正在等待我的信用卡，想知道它的状态。",
+  "predicted": "我想在当代，我的信用卡想提，想知道它的状态。",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
+  "werRefWords": 17,
+  "werNormalizedGold": "我正在等待我的信用卡 想知道它的状态",
+  "werNormalizedPredicted": "我想在当代我的信用卡想提想知道它的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "我 正 在 等 待 我 的 信 用 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 想 在 当 代 我 的 信 用 卡 想 提 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '正' to '想' at position 1",
+      "reason": "'正' (currently) and '想' (want to) are different in meaning and change the intent of the sentence, leading to confusion about the action being described.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '等' to '当' at position 3",
+      "reason": "'等' (wait) and '当' (when/at) are unrelated in this context, which disrupts the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '想' at position 10",
+      "reason": "The extra '想' (want to) is redundant but does not significantly change the meaning of the sentence, only making it slightly repetitive.",
+      "score": 2
+    }
+  ]
+}

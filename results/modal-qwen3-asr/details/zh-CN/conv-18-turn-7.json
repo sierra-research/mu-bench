@@ -1,0 +1,32 @@
+{
+  "gold": "林梅，林梅，林梅 at。",
+  "predicted": "呃，林美，林美，林美，at。",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "林梅 林梅 林梅 at",
+  "werNormalizedPredicted": "林美 林美 林美 at",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "林 梅 林 梅 林 梅 at",
+  "sigWerNormalizedPredicted": "林 美 林 美 林 美 at",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '梅' to '美' at position 1",
+      "reason": "'梅' and '美' are different Chinese characters with different meanings, and if this is a name, the substitution changes the identity being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '梅' to '美' at position 3",
+      "reason": "Repeats the same significant error as above; the name is consistently mistranscribed, which changes the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '梅' to '美' at position 5",
+      "reason": "Again, the substitution of a character in a name is a significant error, as it refers to a different person or meaning.",
+      "score": 1
+    }
+  ]
+}

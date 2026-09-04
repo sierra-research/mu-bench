@@ -1,0 +1,32 @@
+{
+  "gold": "No. ¿Entonces me puedes transferir con algún agente?",
+  "predicted": "No, entonces me pudieras transferir con alguna gente.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "número entonces me puedes transferir con algún agente",
+  "werNormalizedPredicted": "no entonces me pudieras transferir con alguna gente",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "número entonces me puedes transferir con algún agente",
+  "sigWerNormalizedPredicted": "no entonces me pudieras transferir con alguna gente",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'número' to 'no' at position 0",
+      "reason": "'número' (number) is replaced by 'no' (no), which changes the meaning of the sentence significantly and removes the reference to a number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'puedes' to 'pudieras' at position 3",
+      "reason": "'puedes' (you can) and 'pudieras' (you could) are different verb forms but the meaning in context is similar and does not change the intent.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'algún' to 'alguna' at position 6",
+      "reason": "'algún' (some, masculine) and 'alguna' (some, feminine) are gender variants; in this context, the noun following is 'agente' (masculine) vs 'gente' (feminine), so the gender change matches the noun, but the meaning is slightly shifted.",
+      "score": 2
+    }
+  ]
+}

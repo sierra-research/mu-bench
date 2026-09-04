@@ -1,0 +1,42 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartımın son ekstresini istiyorum da gönderebilir misiniz rica etsem mail adresime?",
+  "predicted": "Anla'nın merhabalar. Ben kredi kartımın son ekrisesini istiyorum da gönderebilir misiniz icamesen? Mail adresime.",
+  "unintelligible": false,
+  "wer": 0.3125,
+  "werEdits": 5,
+  "werRefWords": 16,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartımın son ekstresini istiyorum da gönderebilir misiniz rica etsem mail adresime",
+  "werNormalizedPredicted": "anla'nın merhabalar ben kredi kartımın son ekrisesini istiyorum da gönderebilir misiniz icamesen mail adresime",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartımın son ekstresini istiyorum da gönderebilir misiniz rica etsem mail adresime",
+  "sigWerNormalizedPredicted": "anla'nın merhabalar ben kredi kartımın son ekrisesini istiyorum da gönderebilir misiniz icamesen mail adresime",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla'nın' at position 0",
+      "reason": "'anna' is a proper noun (name), while 'anla'nın' is a possessive form of 'anla' (to understand) in Turkish, which changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite address (Ms./Mrs.) in Turkish; omitting it reduces politeness but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'ekrisesini' at position 7",
+      "reason": "Minor misspelling, but the word is still recognizable as 'statement' in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'rica' to 'icamesen' at position 12",
+      "reason": "'rica' means 'please' or 'request', while 'icamesen' is not a valid word and makes the sentence incoherent at this point.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'etsem' at position 13",
+      "reason": "'etsem' is part of the polite request phrase; omitting it makes the request less polite but does not completely change the meaning.",
+      "score": 2
+    }
+  ]
+}

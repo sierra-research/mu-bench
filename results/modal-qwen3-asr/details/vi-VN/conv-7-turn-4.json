@@ -1,0 +1,27 @@
+{
+  "gold": "C N 4 1 0, đúng không?",
+  "predicted": "cnn bốn một không đúng không?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n bốn một không đúng không",
+  "werNormalizedPredicted": "cnn bốn một không đúng không",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n bốn một không đúng không",
+  "sigWerNormalizedPredicted": "cnn bốn một không đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 'cnn' at position 0",
+      "reason": "'c n' is likely intended as two separate letters, but 'cnn' merges them into a single token, which could confuse the meaning, especially if these are initials or codes. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "The letter 'n' is missing as a separate entity, which is important if these are initials or codes. Omitting a letter in such contexts is a significant error.",
+      "score": 1
+    }
+  ]
+}

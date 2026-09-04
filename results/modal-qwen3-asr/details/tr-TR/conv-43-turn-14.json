@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır, tekrar baştan söylüyorum yazar mısın? Artı 90, tekrar dinle beni.",
+  "predicted": "Hayır, tekrar baştan söylüyorum. Yazar mısın? Artı doksan. Tek tekrar dinleyin.",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "werNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tek tekrar dinleyin",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tekrar dinle beni",
+  "sigWerNormalizedPredicted": "hayır tekrar baştan söylüyorum yazar mısın artı doksan tek tekrar dinleyin",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'tek' at position 8",
+      "reason": "'tek' (meaning 'only' or 'single') is inserted before 'tekrar', which could change the nuance of the instruction but does not derail the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dinle' to 'dinleyin' at position 9",
+      "reason": "The substitution is from the informal imperative 'dinle' (listen) to the formal/plural imperative 'dinleyin'. The meaning remains the same, only the formality changes.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'beni' at position 10",
+      "reason": "Omitting 'beni' (me) removes the object of the verb 'listen', which can make the instruction less clear and potentially change the meaning significantly.",
+      "score": 1
+    }
+  ]
+}
