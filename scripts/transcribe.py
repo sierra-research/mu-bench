@@ -24,6 +24,10 @@ Usage:
     # Pin region (defaults to us-east-2). Use --region us for Google Chirp-3.
     python scripts/transcribe.py --provider google-chirp3 --output-dir submissions/raw/google-chirp3 --region us
 
+    # Gemini 3.5 Transcribe (Google)
+    python scripts/transcribe.py --provider gemini-3.5-transcribe \\
+        --output-dir submissions/raw/gemini-3.5-transcribe --region us
+
     # Limit to one locale
     python scripts/transcribe.py --provider deepgram-nova3 --locale en-US --output-dir /tmp/test
 
@@ -42,6 +46,7 @@ import time
 import uuid
 import wave
 from pathlib import Path
+from typing import Any
 
 import aiohttp
 import numpy as np
@@ -179,12 +184,48 @@ RETRYABLE_STATUSES = {429, 500, 502, 503, 529}
 
 _google_client_cache: dict = {}
 _openai_client_cache: dict = {}
+_gemini_batch_cache: dict = {}
 
 
 def _reset_clients() -> None:
     """Clear persistent-client caches. Called at the start of run_transcription."""
     _google_client_cache.clear()
     _openai_client_cache.clear()
+    _gemini_batch_cache.clear()
+
+
+def _get_gemini_batch_token() -> tuple[str, str]:
+    """Return (access_token, project_id) for Vertex AI Gemini ASR batch endpoint."""
+    if "creds" in _gemini_batch_cache:
+        creds = _gemini_batch_cache["creds"]
+        if not creds.valid:
+            from google.auth.transport.requests import Request
+
+            creds.refresh(Request())
+        return creds.token, _gemini_batch_cache["project_id"]
+
+    import google.auth
+    from google.auth.transport.requests import Request
+    from google.oauth2 import service_account
+
+    creds_json = os.environ.get("GOOGLE_VERTEX_AI_EVAL_SERVICE_ACCOUNT_KEY") or os.environ.get(
+        "GOOGLE_SPEECH_CREDENTIALS"
+    )
+    if creds_json:
+        account_dict = json.loads(creds_json)
+        project_id = account_dict["project_id"]
+        creds = service_account.Credentials.from_service_account_info(
+            account_dict,
+            scopes=["https://www.googleapis.com/auth/cloud-platform"],
+        )
+    else:
+        creds, project_id = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+
+    if not creds.valid:
+        creds.refresh(Request())
+    _gemini_batch_cache["creds"] = creds
+    _gemini_batch_cache["project_id"] = project_id
+    return creds.token, project_id
 
 
 def _get_google_client():
@@ -425,6 +466,58 @@ async def transcribe_smallest_batch(session: aiohttp.ClientSession, wav_bytes: b
     return data.get("transcription", "").strip()
 
 
+async def transcribe_gemini_3_5_batch(session: aiohttp.ClientSession, wav_bytes: bytes, locale: str) -> str:
+    api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+    if api_key:
+        url = f"https://generativelanguage.googleapis.com/v1alpha/models/gemini-3.5-transcribe:generateContent?key={api_key}"
+        headers = {"Content-Type": "application/json"}
+    else:
+        token, project_id = await asyncio.to_thread(_get_gemini_batch_token)
+        url = (
+            f"https://aiplatform.googleapis.com/v1beta1/projects/{project_id}/locations/global"
+            f"/publishers/google/models/gemini-3.5-transcribe:generateContent"
+        )
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "x-goog-user-project": project_id,
+            "Content-Type": "application/json",
+        }
+    transcription_config = (
+        {"languageHints": {"languageCodes": [locale]}}
+        if locale and locale not in {"multi", "auto"}
+        else {"languageAuto": {}}
+    )
+    payload = {
+        "contents": [
+            {
+                "role": "user",
+                "parts": [
+                    {
+                        "inlineData": {
+                            "mimeType": "audio/wav",
+                            "data": base64.b64encode(wav_bytes).decode("ascii"),
+                        }
+                    }
+                ],
+            }
+        ],
+        "generationConfig": {"audioTranscriptionConfig": transcription_config},
+    }
+    data = await _post_with_retry(session, url, headers, json.dumps(payload).encode("utf-8"), "Gemini-3.5-Transcribe")
+    candidates = data.get("candidates") or []
+    candidate = candidates[0] if candidates else {}
+    content = candidate.get("content") or {}
+    parts = content.get("parts") or []
+
+    text_chunks: list[str] = []
+    for part in parts:
+        transcription = part.get("audioTranscription") or {}
+        part_text = part.get("text") or transcription.get("text") or ""
+        if part_text:
+            text_chunks.append(part_text)
+    return "".join(text_chunks).strip()
+
+
 PROVIDERS = {
     "deepgram-nova3": transcribe_deepgram,
     "google-chirp3": transcribe_google,
@@ -435,18 +528,22 @@ PROVIDERS = {
     "openai-gpt-audio-1.5": transcribe_openai_gpt_audio,
     "smallest-pulse-batch": transcribe_smallest_batch,
     "grok": transcribe_grok,
+    "gemini-3.5-transcribe": transcribe_gemini_3_5_batch,
+    "gemini-3.5-transcriber": transcribe_gemini_3_5_batch,
 }
 
 PROVIDER_METADATA = {
-    "deepgram-nova3": {"model": "Nova-3", "organization": "Deepgram"},
-    "google-chirp3": {"model": "Chirp-3", "organization": "Google"},
-    "azure": {"model": "Azure-Speech-v1", "organization": "Microsoft"},
-    "elevenlabs-scribe-v2": {"model": "Scribe-v2", "organization": "ElevenLabs"},
-    "openai-gpt4o-transcribe": {"model": "GPT-4o-Transcribe", "organization": "OpenAI"},
-    "openai-gpt4o-mini-transcribe": {"model": "GPT-4o-Mini-Transcribe", "organization": "OpenAI"},
-    "openai-gpt-audio-1.5": {"model": "GPT-Audio-1.5", "organization": "OpenAI"},
-    "smallest-pulse-batch": {"model": "Pulse", "organization": "Smallest AI"},
-    "grok": {"model": "Grok-STT", "organization": "xAI"},
+    "deepgram-nova3": {"model": "Nova-3", "organization": "Deepgram", "protocol": "batch"},
+    "google-chirp3": {"model": "Chirp-3", "organization": "Google", "protocol": "batch"},
+    "azure": {"model": "Azure-Speech-v1", "organization": "Microsoft", "protocol": "batch"},
+    "elevenlabs-scribe-v2": {"model": "Scribe-v2", "organization": "ElevenLabs", "protocol": "batch"},
+    "openai-gpt4o-transcribe": {"model": "GPT-4o-Transcribe", "organization": "OpenAI", "protocol": "batch"},
+    "openai-gpt4o-mini-transcribe": {"model": "GPT-4o-Mini-Transcribe", "organization": "OpenAI", "protocol": "batch"},
+    "openai-gpt-audio-1.5": {"model": "GPT-Audio-1.5", "organization": "OpenAI", "protocol": "batch"},
+    "smallest-pulse-batch": {"model": "Pulse", "organization": "Smallest AI", "protocol": "batch"},
+    "grok": {"model": "Grok-STT", "organization": "xAI", "protocol": "batch"},
+    "gemini-3.5-transcribe": {"model": "Gemini-3.5-Transcribe", "organization": "Google", "protocol": "batch"},
+    "gemini-3.5-transcriber": {"model": "Gemini-3.5-Transcribe", "organization": "Google", "protocol": "batch"},
 }
 
 
@@ -479,6 +576,8 @@ async def run_transcription(args):
         "openai-gpt-audio-1.5": ["OPENAI_API_KEY"],
         "smallest-pulse-batch": ["SMALLEST_API_KEY"],
         "grok": ["XAI_API_KEY"],
+        "gemini-3.5-transcribe": [],
+        "gemini-3.5-transcriber": [],
     }
     missing = [k for k in required_env.get(args.provider, []) if not os.environ.get(k)]
     if missing:
@@ -522,9 +621,18 @@ async def run_transcription(args):
     if not meta_path.exists():
         today = time.strftime("%Y-%m-%d")
         meta = {
-            **PROVIDER_METADATA[args.provider],
+            "model": PROVIDER_METADATA[args.provider].get("model", args.provider),
+            "organization": PROVIDER_METADATA[args.provider].get("organization", "Google"),
             "version": today,
             "date": today,
+            "config": {
+                "beamSize": "default",
+                "languageHint": "default",
+                "customVocabulary": "default",
+                "noiseSuppression": "default",
+                "domainAdaptation": "default",
+                "keywordBoosting": "default",
+            },
         }
         with open(meta_path, "w") as f:
             yaml.dump(meta, f, default_flow_style=False)
@@ -534,7 +642,34 @@ async def run_transcription(args):
     failed = 0
     total = len(items)
     start_time = time.time()
-    latency_records: dict[str, float] = {}
+    latency_records: dict[str, Any] = {}
+
+    def flush_latency():
+        proto = PROVIDER_METADATA.get(args.provider, {}).get("protocol", "batch")
+        new_measurements = {key: val for key, val in latency_records.items()}
+        latency_path = output_dir / "latency.json"
+        if latency_path.exists():
+            try:
+                with open(latency_path, "r", encoding="utf-8") as f:
+                    existing = json.load(f)
+                measurements = existing.get("measurements", {}) if isinstance(existing, dict) else {}
+            except Exception:
+                measurements = {}
+            measurements.update(new_measurements)
+        else:
+            measurements = new_measurements
+        out = {
+            "meta": {
+                "protocol": proto,
+                "region": args.region,
+                "clientLocation": args.client_location,
+                "concurrency": args.concurrency,
+                "wrappedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+            },
+            "measurements": measurements,
+        }
+        with open(latency_path, "w", encoding="utf-8") as f:
+            json.dump(out, f, indent=2, ensure_ascii=False)
 
     async def process_one(item: dict, session: aiohttp.ClientSession):
         nonlocal completed, failed
@@ -546,10 +681,14 @@ async def run_transcription(args):
 
             try:
                 t0 = time.monotonic()
-                transcript = await provider_fn(session, item["wav_bytes"], locale)
-                latency_ms = (time.monotonic() - t0) * 1000
+                res = await provider_fn(session, item["wav_bytes"], locale)
+                if isinstance(res, tuple):
+                    transcript, timing = res
+                else:
+                    transcript = res
+                    timing = {"roundTripMs": round((time.monotonic() - t0) * 1000, 1)}
                 out_path.write_text(transcript, encoding="utf-8")
-                latency_records[f"{locale}/{item_id}"] = round(latency_ms, 1)
+                latency_records[f"{locale}/{item_id}"] = timing
                 completed += 1
             except Exception as e:
                 failed += 1
@@ -560,6 +699,7 @@ async def run_transcription(args):
                 elapsed = time.time() - start_time
                 rate = done / elapsed if elapsed > 0 else 0
                 print(f"  Progress: {done}/{total} ({completed} ok, {failed} err) [{rate:.1f} items/s]")
+                flush_latency()
 
     connector = aiohttp.TCPConnector(limit=args.concurrency * 2)
     timeout = aiohttp.ClientTimeout(total=120)
@@ -567,44 +707,14 @@ async def run_transcription(args):
         tasks = [process_one(item, session) for item in items]
         await asyncio.gather(*tasks)
 
-    # Write latency.json in the new schema (item 4 of the fairness-fixes
-    # plan): top-level ``meta`` block declaring protocol/region/etc., plus a
-    # ``measurements`` map keyed by ``"<locale>/<utt_id>"`` with per-entry
-    # ``{"roundTripMs": <float>}`` (batch). When the file already exists we
-    # merge new measurements into the previous run's so partial re-runs
-    # accumulate. Region defaults to ``us-east-2`` to match the published
-    # benchmark; pass ``--region us`` for Google Chirp-3 (multi-region) and
-    # any other provider whose model isn't routable via a single region.
-    new_measurements = {key: {"roundTripMs": ms} for key, ms in latency_records.items()}
+    flush_latency()
     latency_path = output_dir / "latency.json"
-    if latency_path.exists():
-        with open(latency_path, "r", encoding="utf-8") as f:
-            existing = json.load(f)
-        if isinstance(existing, dict) and "measurements" in existing:
-            measurements = existing.get("measurements", {})
-            measurements.update(new_measurements)
-        else:
-            # Legacy flat schema on disk — migrate by wrapping its entries
-            # plus the new measurements into the new shape.
-            measurements = {k: {"roundTripMs": v} for k, v in (existing or {}).items() if isinstance(v, (int, float))}
-            measurements.update(new_measurements)
-    else:
-        measurements = new_measurements
-    out = {
-        "meta": {
-            "protocol": "batch",
-            "region": args.region,
-            "clientLocation": args.client_location,
-            "concurrency": args.concurrency,
-            "wrappedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
-        },
-        "measurements": measurements,
-    }
-    with open(latency_path, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+    with open(latency_path, "r", encoding="utf-8") as f:
+        m_count = len(json.load(f).get("measurements", {}))
+    proto = PROVIDER_METADATA.get(args.provider, {}).get("protocol", "batch")
     print(
-        f"\nLatency recorded for {len(measurements)} utterances "
-        f"(meta.protocol=batch meta.region={args.region}) -> {latency_path}"
+        f"\nLatency recorded for {m_count} utterances "
+        f"(meta.protocol={proto} meta.region={args.region}) -> {latency_path}"
     )
 
     elapsed = time.time() - start_time
