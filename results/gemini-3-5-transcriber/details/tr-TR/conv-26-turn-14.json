@@ -1,0 +1,32 @@
+{
+  "gold": "Artı 90 123 0 90 45 67.",
+  "predicted": "+901230904567",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
+  "werRefWords": 11,
+  "werNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "artı doksan bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yüz' to 'bir' at position 2",
+      "reason": "'yüz' means 'hundred' and 'bir' means 'one'; this changes the numeric value significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 6",
+      "reason": "Inserting 'dokuz' (nine) adds an extra digit, altering the intended number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'altmış' to 'altı' at position 9",
+      "reason": "'doksan' means 'ninety' and 'sıfır' means 'zero'; this changes the numeric value drastically.",
+      "score": 1
+    }
+  ]
+}

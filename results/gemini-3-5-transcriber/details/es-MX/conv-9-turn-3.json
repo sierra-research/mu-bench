@@ -1,0 +1,27 @@
+{
+  "gold": "C N 2 2 2.",
+  "predicted": "TS2",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 4,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n dos dos dos",
+  "werNormalizedPredicted": "t s dos",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n dos dos dos",
+  "sigWerNormalizedPredicted": "t s dos",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to 't' at position 0",
+      "reason": "Substituting a letter in a spelled-out sequence changes the intended code or word, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dos' at position 2",
+      "reason": "Omitting a part of a repeated sequence (here, 'dos dos dos') can change the intended code or number, which is significant in contexts like codes or phone numbers.",
+      "score": 1
+    }
+  ]
+}

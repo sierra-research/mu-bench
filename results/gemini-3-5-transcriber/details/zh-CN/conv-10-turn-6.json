@@ -1,0 +1,37 @@
+{
+  "gold": "那我的姓，姓名呢？",
+  "predicted": "老的心灵呢？",
+  "unintelligible": false,
+  "wer": 0.7142857142857143,
+  "werEdits": 5,
+  "werRefWords": 7,
+  "werNormalizedGold": "那我的姓姓名呢",
+  "werNormalizedPredicted": "老的心灵呢",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "那 我 的 姓 姓 名 呢",
+  "sigWerNormalizedPredicted": "老 的 心 灵 呢",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '那' to '老' at position 0",
+      "reason": "'那' (that) and '老' (old) are completely different words and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 1",
+      "reason": "Omitting '我' (I/my) removes the subject/possessive, making the sentence unclear and changing its meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '姓' to '心' at position 3",
+      "reason": "'姓' (surname) and '心' (heart) are unrelated words, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '名' at position 5",
+      "reason": "Omitting '名' (name) removes a key part of the phrase 'surname and name', making the sentence incomplete.",
+      "score": 1
+    }
+  ]
+}

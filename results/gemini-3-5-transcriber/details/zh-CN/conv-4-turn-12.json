@@ -1,0 +1,27 @@
+{
+  "gold": "你还没听到我的正确的姓名，我的姓名是君灵。",
+  "predicted": "你还没听到我的正确的姓名，我的姓名字林。",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
+  "werRefWords": 19,
+  "werNormalizedGold": "你还没听到我的正确的姓名 我的姓名是君灵",
+  "werNormalizedPredicted": "你还没听到我的正确的姓名 我的姓名字林",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 是 君 灵",
+  "sigWerNormalizedPredicted": "你 还 没 听 到 我 的 正 确 的 姓 名 我 的 姓 名 字 林",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to '字' at position 16",
+      "reason": "'是' means 'is' and introduces the name, while '字' means 'character' or 'word', which changes the structure and meaning of the sentence, making it confusing or incorrect in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '灵' at position 18",
+      "reason": "The name '君灵' is incomplete without '灵', so omitting it results in an incorrect or incomplete name, which is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
+}

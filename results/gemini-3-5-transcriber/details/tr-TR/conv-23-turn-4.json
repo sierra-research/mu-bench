@@ -1,0 +1,42 @@
+{
+  "gold": "Ben Bol Bol Ye firması ile çalışıyorum. Adresim olan Atatürk Caddesi No 45'e 6, Kazım Karabekir Mahallesi, Üsküdar, İstanbul 34 660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerine bayağı bir zaman geçti. Ama yani maalesef henüz gelmedi evraklarım.",
+  "predicted": "Ben Bolbolya firmasıyla çalışıyorum. Adresim olan Atatürk Caddesi No: 45/6 Kazım Karabekir Mahallesi Üsküdar İstanbul 34660 posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim. Çünkü başvurumun üzerinden bayağı bir zaman geçti ama yani maalesef ki henüz gelmedi evraklarım.",
+  "unintelligible": false,
+  "wer": 0.17391304347826086,
+  "werEdits": 8,
+  "werRefWords": 46,
+  "werNormalizedGold": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi no kırk beşe altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerine bayağı bir zaman geçti ama maalesef henüz gelmedi evraklarım",
+  "werNormalizedPredicted": "ben bolbolya firmasıyla çalışıyorum adresim olan atatürk caddesi no kırk beş altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerinden bayağı bir zaman geçti ama maalesef ki henüz gelmedi evraklarım",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 46,
+  "sigWerNormalizedGold": "ben bol bol ye firması ile çalışıyorum adresim olan atatürk caddesi no kırk beşe altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerine bayağı bir zaman geçti ama maalesef henüz gelmedi evraklarım",
+  "sigWerNormalizedPredicted": "ben bolbolya firmasıyla çalışıyorum adresim olan atatürk caddesi no kırk beş altı kazım karabekir mahallesi üsküdar istanbul otuz dört altı yüz altmış posta kodlu adresime gerekli sözleşme evraklarının teslimini rica edecektim çünkü başvurumun üzerinden bayağı bir zaman geçti ama maalesef ki henüz gelmedi evraklarım",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bol' to 'bolbolya' at position 1",
+      "reason": "'bolbolya' is a concatenation and possible misrecognition of 'bol bol ye', which is the company name. This could cause confusion about the company being referenced.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ye' at position 3",
+      "reason": "Omitting 'ye' from 'bol bol ye' changes the company name, which could lead to misunderstanding about which company is being referenced.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'beşe' to 'beş' at position 13",
+      "reason": "'beşe' (to five) vs 'beş' (five) is a minor grammatical difference in the address, but the meaning is still clear.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'üzerine' to 'üzerinden' at position 36",
+      "reason": "The difference between 'üzerine' (upon) and 'üzerinden' (since) is minor in this context and does not change the overall meaning.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'ki' at position 43",
+      "reason": "The insertion of 'ki' is a minor stylistic addition and does not affect the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

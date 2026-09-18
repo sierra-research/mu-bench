@@ -1,0 +1,27 @@
+{
+  "gold": "Không phải. Minh, minh là tên đó. Trần là họ đó. Minh chấm trần a còng email chấm com.",
+  "predicted": "Không phải, minh minh là tên đó, chẳng là họ đó minh.tran@email.com",
+  "unintelligible": false,
+  "wer": 0.10526315789473684,
+  "werEdits": 2,
+  "werRefWords": 19,
+  "werNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "không phải minh minh là tên đó chẳng là họ đó minh chấm tran a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "không phải minh minh là tên đó trần là họ đó minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "không phải minh minh là tên đó chẳng là họ đó minh chấm tran a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trần' to 'chẳng' at position 7",
+      "reason": "'trần' is a surname (proper noun), while 'chẳng' is a completely different word meaning 'not' or 'no', which changes the meaning of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 13",
+      "reason": "'trần' is a Vietnamese surname, and 'tran' is a common romanized version of the same name. The meaning is preserved, only the diacritic is missing.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "美玲 at email dot com 是我的邮箱地址。When I concern, I'll get it.",
+  "predicted": "mayling@email.com",
+  "unintelligible": false,
+  "wer": 0.7894736842105263,
+  "werEdits": 15,
+  "werRefWords": 19,
+  "werNormalizedGold": "美玲 at email dot com 是我的邮箱地址 when i concern ill get it",
+  "werNormalizedPredicted": "mayling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "美 玲 at email dot com 是 我 的 邮 箱 地 址 when i concern ill get it",
+  "sigWerNormalizedPredicted": "mayling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mayling' at position 0",
+      "reason": "'mayling' is a phonetic transcription of '美玲', but only partially matches the expected name. The meaning is partially preserved but not exact, especially since '美玲' is a proper noun and the actual only gives a partial representation.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "The second character of the name is missing, so the full name is not correctly transcribed. This is a minor error since the main identity is still somewhat recognizable from 'mayling', but the full name is not preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: '是' at position 6",
+      "reason": "The phrase '是我的邮箱地址' (is my email address) is omitted, which removes the explicit statement of what the email is. This omission makes the sentence incomplete and could confuse the listener about the purpose of the email address, significantly affecting meaning.",
+      "score": 1
+    }
+  ]
+}

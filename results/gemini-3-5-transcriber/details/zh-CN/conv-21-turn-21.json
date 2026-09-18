@@ -1,0 +1,27 @@
+{
+  "gold": "确认正确。",
+  "predicted": "对，正确。",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "确认正确",
+  "werNormalizedPredicted": "对 正确",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "确 认 正 确",
+  "sigWerNormalizedPredicted": "对 正 确",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '确' to '对' at position 0",
+      "reason": "'确' (certain) and '对' (correct) are different words; substituting '确' with '对' changes the meaning of the phrase, making it less precise and potentially confusing in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '认' at position 1",
+      "reason": "Omitting '认' (recognize/confirm) removes a key part of the phrase '确认' (to confirm), which significantly alters the intended meaning.",
+      "score": 1
+    }
+  ]
+}

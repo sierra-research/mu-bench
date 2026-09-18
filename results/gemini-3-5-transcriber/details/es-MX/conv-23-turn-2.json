@@ -1,0 +1,32 @@
+{
+  "gold": "Espere. Deje y lo anoto.",
+  "predicted": "Ay, ay, ay, espere, deje la noto.",
+  "unintelligible": false,
+  "wer": 1.2,
+  "werEdits": 6,
+  "werRefWords": 5,
+  "werNormalizedGold": "espere deje y lo anoto",
+  "werNormalizedPredicted": "ay ay ay espere deje la noto",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "espere deje y lo anoto",
+  "sigWerNormalizedPredicted": "ay ay ay espere deje la noto",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ay' at position 0",
+      "reason": "'Ay' is an interjection expressing emotion, which does not change the core meaning of the sentence but adds extra words.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'y' to 'la' at position 2",
+      "reason": "Substituting 'y' (and) with 'la' (the/her) changes the meaning of the sentence, as it alters the object being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'anoto' at position 4",
+      "reason": "'Anoto' (I write down) is present in both sentences, so there is no deletion; this is a misidentification of an error.",
+      "score": 3
+    }
+  ]
+}

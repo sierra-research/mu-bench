@@ -1,0 +1,32 @@
+{
+  "gold": "No. Te falta el punto. María punto López arroba email punto com.",
+  "predicted": "No, no, te falta te falta el punto @email.com",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
+  "werRefWords": 12,
+  "werNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "no no te falta te falta el punto arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "no no te falta te falta el punto arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The extra 'no' introduces a negation that could confuse the meaning, but the overall intent is still somewhat clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'el' to 'te' at position 3",
+      "reason": "Changing 'el' to 'te' alters the grammatical structure and could confuse the meaning, but the main idea is still present.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'lópez' at position 7",
+      "reason": "'lópez' is a critical part of the email address; omitting it makes the email incomplete and unusable.",
+      "score": 1
+    }
+  ]
+}

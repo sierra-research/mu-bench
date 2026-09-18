@@ -1,0 +1,32 @@
+{
+  "gold": "Banka kartımın süresi geçmek üzere Anna. Bana yeni bir kart gönderebilir misin?",
+  "predicted": "Banka kartımı sözleşmek üzere anla. Bana yeni bir kart gönderebilir misin?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "werNormalizedPredicted": "banka kartımı sözleşmek üzere anla bana yeni bir kart gönderebilir misin",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "banka kartımın süresi geçmek üzere anna bana yeni bir kart gönderebilir misin",
+  "sigWerNormalizedPredicted": "banka kartımı sözleşmek üzere anla bana yeni bir kart gönderebilir misin",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kartımın' to 'kartımı' at position 1",
+      "reason": "The possessive suffix changes from 'my card's' (kartımın) to 'my card' (kartımı), which slightly alters the grammatical meaning but does not derail the overall intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'geçmek' at position 3",
+      "reason": "Omitting 'geçmek' (to expire) removes the key information that the card is about to expire, which is crucial to the request. This significantly changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 5",
+      "reason": "'Anna' is likely a proper noun (a person's name), while 'anla' means 'understand' in Turkish. This substitution changes the addressee and makes the sentence incoherent, significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

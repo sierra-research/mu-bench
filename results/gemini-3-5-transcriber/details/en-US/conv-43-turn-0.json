@@ -1,0 +1,27 @@
+{
+  "gold": "I would like information on raising my limit for my credit card.",
+  "predicted": "flight information on raising my limit for my credit card",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "i would like information on raising my limit for my credit card",
+  "werNormalizedPredicted": "flight information on raising my limit for my credit card",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "i would like information on raising my limit for my credit card",
+  "sigWerNormalizedPredicted": "flight information on raising my limit for my credit card",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'i' to 'flight' at position 0",
+      "reason": "Substituting 'i' with 'flight' changes the subject and meaning of the sentence from a personal request to a topic about flights, which derails the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'would' at position 1",
+      "reason": "Omitting 'would' slightly changes the politeness or intent, but the main meaning is already lost due to the previous error. On its own, this would be a minor error, but in context, the sentence is already incoherent.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
+  "predicted": "Tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức?",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werEdits": 2,
+  "werRefWords": 16,
+  "werNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "werNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'không' at position 10",
+      "reason": "The word 'không' (meaning 'no' or 'not') is inserted in the middle of the sentence, which changes the structure and potentially the meaning, as it now negates 'chứng minh thu nhập' instead of the whole clause. This can confuse the intent of the question.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'không' at position 15",
+      "reason": "The word 'không' is missing from its original position at the end, which is important for the intended meaning of the question. Its absence at the end and presence earlier changes the sentence's meaning.",
+      "score": 1
+    }
+  ]
+}

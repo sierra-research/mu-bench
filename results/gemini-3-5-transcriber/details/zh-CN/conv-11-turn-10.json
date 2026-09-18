@@ -1,0 +1,32 @@
+{
+  "gold": "郡。我的姓名是郡凛。郡。",
+  "predicted": "我的姓名是朱玲。",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "郡 我的姓名是郡凛 郡",
+  "werNormalizedPredicted": "我的姓名是朱玲",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "郡 我 的 姓 名 是 郡 凛 郡",
+  "sigWerNormalizedPredicted": "我 的 姓 名 是 朱 玲",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '郡' at position 0",
+      "reason": "The surname '郡' is omitted at the start, which is important for identifying the person's full name. This significantly changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '郡' to '朱' at position 6",
+      "reason": "The surname '郡' is replaced with '朱', which is a completely different surname, resulting in a significant error in the person's name.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '郡' at position 8",
+      "reason": "The surname '郡' is omitted at the end, which is part of the full name and its omission significantly alters the name.",
+      "score": 1
+    }
+  ]
+}

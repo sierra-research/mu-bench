@@ -1,0 +1,27 @@
+{
+  "gold": "C C N 0 2 0。",
+  "predicted": "77020",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "c c n 零 二 零",
+  "werNormalizedPredicted": "七 七 零 二 零",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "c c n 零 二 零",
+  "sigWerNormalizedPredicted": "七 七 零 二 零",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '七' at position 0",
+      "reason": "The letter 'c' was replaced with the Chinese numeral '七' (seven), which is a completely different character and meaning, especially in a spelled-out sequence. This significantly changes the intended content.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 2",
+      "reason": "The letter 'n' is missing from the actual transcription, which is significant in a spelled-out sequence as it changes the intended string completely.",
+      "score": 1
+    }
+  ]
+}

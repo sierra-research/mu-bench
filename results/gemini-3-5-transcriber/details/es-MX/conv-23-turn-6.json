@@ -1,0 +1,37 @@
+{
+  "gold": "Es 55 12 34 56 78.",
+  "predicted": "552745678",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 8,
+  "werRefWords": 14,
+  "werNormalizedGold": "es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "werNormalizedPredicted": "quinientos cincuenta y dos setecientos cuarenta y cinco mil seiscientos setenta y ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "es cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerNormalizedPredicted": "quinientos cincuenta y dos setecientos cuarenta y cinco mil seiscientos setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'es' to 'quinientos' at position 0",
+      "reason": "'es' is the verb 'is', while 'quinientos' is the number 500; this changes the meaning entirely and derails the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cinco' to 'dos' at position 3",
+      "reason": "'cinco' means 5 and 'dos' means 2; substituting numbers in a sequence changes the information significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cuatro' to 'cinco' at position 7",
+      "reason": "'cuatro' is 4 and 'cinco' is 5; substituting numbers in a sequence changes the intended number, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'seis' at position 10",
+      "reason": "Omitting 'seis' (6) from a sequence of numbers changes the information and is a significant error.",
+      "score": 1
+    }
+  ]
+}

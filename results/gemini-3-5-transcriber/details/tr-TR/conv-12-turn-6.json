@@ -1,0 +1,32 @@
+{
+  "gold": "Evet, değil şöyle, Ahmet Arslan dediniz ama Ahmet ve Arslan arasında nokta olacak. Ahmet nokta Arslan.",
+  "predicted": "Evet, değil. Şöyle Ahmet Arslan dediğiniz zaman Ahmet ile Arslan arasında nokta olacak. Ahmet.Arslan",
+  "unintelligible": false,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
+  "werRefWords": 15,
+  "werNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "werNormalizedPredicted": "evet değil şöyle ahmet arslan dediğiniz zaman ahmet ile arslan arasında nokta olacak ahmet nokta arslan",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "evet değil ahmet arslan dediniz ama ahmet ve arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerNormalizedPredicted": "evet değil şöyle ahmet arslan dediğiniz zaman ahmet ile arslan arasında nokta olacak ahmet nokta arslan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'şöyle' at position 2",
+      "reason": "'şöyle' (meaning 'like this' or 'in this way') adds a clarifying word but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'dediniz' to 'dediğiniz' at position 4",
+      "reason": "'dediniz' and 'dediğiniz' are different forms of the verb 'to say' in Turkish, but both refer to what was said; the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 've' to 'ile' at position 7",
+      "reason": "'ve' means 'and', 'ile' means 'with'; in this context, both connect 'ahmet' and 'arslan' and do not change the meaning of the sentence.",
+      "score": 3
+    }
+  ]
+}

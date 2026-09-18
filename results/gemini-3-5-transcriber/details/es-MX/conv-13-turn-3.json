@@ -1,0 +1,42 @@
+{
+  "gold": "Sí, es C de casa, N de Nancy, número 4 número 1 y número 6.",
+  "predicted": "C N 4 1 6",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 10,
+  "werRefWords": 15,
+  "werNormalizedGold": "sí es c de casa n de nancy número cuatro número uno y número seis",
+  "werNormalizedPredicted": "c n cuatro uno seis",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "sí es c de casa n de nancy número cuatro número uno y número seis",
+  "sigWerNormalizedPredicted": "c n cuatro uno seis",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'sí' at position 0",
+      "reason": "The omission of 'sí' removes the affirmation or confirmation at the start, which can change the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'de' at position 3",
+      "reason": "Omitting 'de' in 'c de casa' removes the clarification that 'c' stands for 'casa', which could cause confusion in understanding the letter.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'de' at position 6",
+      "reason": "Omitting 'de' in 'n de nancy' removes the clarification that 'n' stands for 'nancy', which could cause confusion in understanding the letter.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'número' at position 10",
+      "reason": "Omitting 'número' before the numbers removes the explicit indication that the following words are numbers, but the numbers themselves are still present and understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'y' at position 12",
+      "reason": "Omitting 'y' (and) before the last number slightly affects the natural flow but does not change the meaning of the sequence.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Không phải Trường Minh, mà là Trần Minh. Trần Minh. Tran Minh.",
+  "predicted": "không phải Trần Minh mà là Trần Minh",
+  "unintelligible": false,
+  "wer": 0.4166666666666667,
+  "werEdits": 5,
+  "werRefWords": 12,
+  "werNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "werNormalizedPredicted": "không phải trần minh mà là trần minh",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "không phải trường minh mà là trần minh trần minh tran minh",
+  "sigWerNormalizedPredicted": "không phải trần minh mà là trần minh",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'trường' to 'trần' at position 2",
+      "reason": "'Trường Minh' and 'Trần Minh' are different names; substituting one for the other changes the identity being referred to, which is significant in this context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'minh' at position 7",
+      "reason": "Omitting the repeated 'trần minh tran minh' at the end removes emphasis or clarification of the correct name, which could lead to confusion about the intended identity. This is a significant omission in the context of correcting a name.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Không phải. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "0849112345678",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werEdits": 2,
+  "werRefWords": 16,
+  "werNormalizedGold": "không phải cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "không phải không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "không phải cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "không phải không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'không' at position 2",
+      "reason": "'cộng' (plus) is replaced by 'không' (zero), which changes the meaning of the number sequence and can lead to a completely different number being understood.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 4",
+      "reason": "Omitting 'mươi' (which means 'tens' in Vietnamese numbers) changes 'tám mươi bốn' (eighty-four) to 'tám bốn' (eight four), which is a significant change in the number being conveyed.",
+      "score": 1
+    }
+  ]
+}

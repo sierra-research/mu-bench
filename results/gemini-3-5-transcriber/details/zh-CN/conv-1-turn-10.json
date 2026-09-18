@@ -1,0 +1,27 @@
+{
+  "gold": "是美点玲 at email dot com。",
+  "predicted": "是meidian0@email.com",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "是美点玲 at email dot com",
+  "werNormalizedPredicted": "是 meidian 零 at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "是 美 点 玲 at email dot com",
+  "sigWerNormalizedPredicted": "是 meidian 零 at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'meidian' at position 1",
+      "reason": "'美' is a single Chinese character, while 'meidian' is a pinyin-like or romanized form that does not directly correspond to the expected character. This could cause confusion in an email address or name, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 3",
+      "reason": "'玲' is missing in the actual transcription. Omitting a character in a name or email address can result in an incorrect or undeliverable email, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

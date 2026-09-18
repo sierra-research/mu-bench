@@ -1,0 +1,32 @@
+{
+  "gold": "C N 3 7 8 对吗？",
+  "predicted": "先送七把，对吗？",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "c n 三 七 八 对吗",
+  "werNormalizedPredicted": "先送 七 把 对吗",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "c n 三 七 八 对 吗",
+  "sigWerNormalizedPredicted": "先 送 七 把 对 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'c' to '先' at position 0",
+      "reason": "The letter 'c' is replaced with the Chinese character '先', which is a completely different word and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '三' at position 2",
+      "reason": "The number '三' (three) is missing, which is a significant omission in a sequence of numbers/letters, altering the intended information.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '八' to '把' at position 4",
+      "reason": "'八' (eight) is replaced with '把', which is a different word and changes the meaning, especially in a sequence of numbers.",
+      "score": 1
+    }
+  ]
+}

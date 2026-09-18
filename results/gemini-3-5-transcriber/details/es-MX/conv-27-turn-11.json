@@ -1,0 +1,32 @@
+{
+  "gold": "¿Y a qué se refiere el proceso?",
+  "predicted": "¿A qué se refiere en proceso?",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "y a qué se refiere el proceso",
+  "werNormalizedPredicted": "a que se refiere en proceso",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "y a qué se refiere el proceso",
+  "sigWerNormalizedPredicted": "a que se refiere en proceso",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'y' at position 0",
+      "reason": "Omitting 'y' ('and') slightly changes the structure but does not significantly alter the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'qué' to 'que' at position 2",
+      "reason": "'qué' (what) and 'que' (that) have different meanings; this substitution changes the question structure and can confuse the intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'el' to 'en' at position 5",
+      "reason": "Changing 'el' (the) to 'en' (in) alters the meaning of the phrase, making the sentence less coherent.",
+      "score": 1
+    }
+  ]
+}

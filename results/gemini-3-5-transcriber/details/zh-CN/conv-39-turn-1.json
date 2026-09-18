@@ -1,0 +1,27 @@
+{
+  "gold": "我想提高我的信用卡的限额。",
+  "predicted": "我想提高我的信用卡额度。",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "我想提高我的信用卡的限额",
+  "werNormalizedPredicted": "我想提高我的信用卡额度",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 的 限 额",
+  "sigWerNormalizedPredicted": "我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '的' to '额' at position 9",
+      "reason": "Omitting '的' (possessive particle) does not significantly change the meaning in this context; both forms are commonly used in Chinese and understood the same way.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '额' at position 11",
+      "reason": "'限额' (credit limit) and '额度' (credit amount/limit) are near synonyms in this context and both refer to the credit card limit; the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Không phải. Cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "0849112345678",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werEdits": 2,
+  "werRefWords": 16,
+  "werNormalizedGold": "không phải cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "không phải không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "không phải cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "không phải không tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cộng' to 'không' at position 2",
+      "reason": "'cộng' (meaning 'plus' or 'country code') is replaced by 'không' (meaning 'zero'), which changes the meaning of the number sequence significantly, leading to a different phone number or code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 4",
+      "reason": "'mươi' is part of the number 'tám mươi bốn' (eighty-four). Its omission changes 'eighty-four' to 'eight four', which can be interpreted as two separate digits instead of a two-digit number, significantly altering the intended number.",
+      "score": 1
+    }
+  ]
+}

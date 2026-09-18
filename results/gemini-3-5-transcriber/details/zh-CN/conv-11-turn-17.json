@@ -1,0 +1,32 @@
+{
+  "gold": "你说的不对！你为什么不听好呀。",
+  "predicted": "你说的部队，你为什么听不懂我呀？",
+  "unintelligible": false,
+  "wer": 0.38461538461538464,
+  "werEdits": 5,
+  "werRefWords": 13,
+  "werNormalizedGold": "你说的不对你为什么不听好呀",
+  "werNormalizedPredicted": "你说的部队 你为什么听不懂我呀",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "你 说 的 不 对 你 为 什 么 不 听 好 呀",
+  "sigWerNormalizedPredicted": "你 说 的 部 队 你 为 什 么 听 不 懂 我 呀",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '部' at position 3",
+      "reason": "‘不对’ means 'not correct', while ‘部队’ means 'army' or 'troops', which completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '听' at position 9",
+      "reason": "The insertion of '听' ('listen') changes the sentence structure and meaning, making it incoherent compared to the original.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '听' to '懂' at position 10",
+      "reason": "‘听’ means 'listen', while ‘懂’ means 'understand'; substituting these changes the meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

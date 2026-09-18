@@ -1,0 +1,27 @@
+{
+  "gold": "Es Juan punto López arroba email punto com.",
+  "predicted": "Es no es juan.lopez@email.com",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "es juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es no es juan punto lopez arroba email punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "es juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es no es juan punto lopez arroba email punto com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The insertion of 'no' changes the meaning of the sentence, potentially making it incoherent or incorrect (e.g., 'it is not Juan' instead of 'it is Juan').",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "The only difference is the accent on the 'o'; this is a minor error as the name is still clearly recognizable and the meaning is preserved.",
+      "score": 2
+    }
+  ]
+}

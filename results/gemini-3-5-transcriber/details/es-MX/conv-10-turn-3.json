@@ -1,0 +1,27 @@
+{
+  "gold": "Sí. Es C N 7 8 7.",
+  "predicted": "C E C 7 8 7",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "sí es c n siete ocho siete",
+  "werNormalizedPredicted": "c e c siete ocho siete",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "sí es c n siete ocho siete",
+  "sigWerNormalizedPredicted": "c e c siete ocho siete",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sí' to 'c' at position 0",
+      "reason": "'sí' (yes) is a Spanish word meaning 'yes', while 'c' is just a letter; this changes the meaning and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 3",
+      "reason": "Missing the letter 'n' in a sequence of letters/numbers can lead to incorrect information, especially if this is a code or identifier.",
+      "score": 1
+    }
+  ]
+}

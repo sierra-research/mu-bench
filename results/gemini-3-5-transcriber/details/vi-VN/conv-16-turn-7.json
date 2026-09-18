@@ -1,0 +1,32 @@
+{
+  "gold": "Minh chấm trần a còng email chấm com.",
+  "predicted": "vinh.tran@gmail.com",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "vinh chấm tran a còng gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "vinh chấm tran a còng gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'vinh' at position 0",
+      "reason": "'minh' and 'vinh' are different names, which changes the identity in the email address. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'trần' to 'tran' at position 2",
+      "reason": "'trần' and 'tran' are different in spelling, but in Vietnamese context, 'trần' (with diacritic) and 'tran' (without) are often treated as the same name in email addresses. This is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "Changing 'email' to 'gmail' changes the domain of the email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

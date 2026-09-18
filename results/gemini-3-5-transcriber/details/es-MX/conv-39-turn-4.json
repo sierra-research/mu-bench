@@ -1,0 +1,32 @@
+{
+  "gold": "Muy bien. C de casa, N de Nancy, 7 9 1.",
+  "predicted": "C N 7 9 1",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
+  "werRefWords": 11,
+  "werNormalizedGold": "muy bien c de casa n de nancy siete nueve uno",
+  "werNormalizedPredicted": "c n siete nueve uno",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "muy bien c de casa n de nancy siete nueve uno",
+  "sigWerNormalizedPredicted": "c n siete nueve uno",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'muy' at position 0",
+      "reason": "'muy bien' is a greeting or affirmation, and its omission removes the introductory context, but the main information (the code) is still present.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'de' at position 3",
+      "reason": "Omitting 'de' in 'c de casa' slightly reduces clarity, but the main code letters are still present and understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'de' at position 6",
+      "reason": "Omitting 'de' in 'n de nancy' slightly reduces clarity, but the main code letters are still present and understandable.",
+      "score": 2
+    }
+  ]
+}

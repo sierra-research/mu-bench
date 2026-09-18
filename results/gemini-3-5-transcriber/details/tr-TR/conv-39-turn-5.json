@@ -1,0 +1,37 @@
+{
+  "gold": "Tabii ek bilgi alırım o zaman sizden, eğer aktarılıyorsa. Ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim?",
+  "predicted": "Tabii, bilgi alayım o zaman sizden eğer aktaramıyorsanız. Ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir şey yol izlemeliyim?",
+  "unintelligible": false,
+  "wer": 0.19047619047619047,
+  "werEdits": 4,
+  "werRefWords": 21,
+  "werNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "werNormalizedPredicted": "tabii bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "tabii ek bilgi alırım o zaman sizden eğer aktarılıyorsa ben eğer otomatik ödeme yaparsam limitim yetmediği takdirde nasıl bir yol izlemeliyim",
+  "sigWerNormalizedPredicted": "tabii bilgi alayım o zaman sizden eğer aktaramıyorsanız ben eğer otomatik ödeme yaparsam limitimin yetmediği takdirde nasıl bir yol izlemeliyim",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'ek' at position 1",
+      "reason": "'ek bilgi' (additional information) is reduced to just 'bilgi' (information), which slightly reduces the specificity but does not significantly change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'alırım' to 'alayım' at position 3",
+      "reason": "'alırım' (I will receive) vs 'alayım' (let me receive) is a minor grammatical difference in Turkish, but the intent remains clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'aktarılıyorsa' to 'aktaramıyorsanız' at position 8",
+      "reason": "'aktarılıyorsa' (if it is being transferred) vs 'aktaramıyorsanız' (if you cannot transfer) changes the condition from a passive to an active negative, which alters the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'limitim' to 'limitimin' at position 14",
+      "reason": "'limitim' (my limit) vs 'limitimin' (of my limit) is a minor grammatical difference and does not change the meaning in this context.",
+      "score": 3
+    }
+  ]
+}

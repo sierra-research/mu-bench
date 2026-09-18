@@ -1,0 +1,27 @@
+{
+  "gold": "姓名是林俊，英俊的俊。",
+  "predicted": "你 是 林 俊 , 英 俊 的 俊 。",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "姓名是林俊 英俊的俊",
+  "werNormalizedPredicted": "你 是 林 俊 英 俊 的 俊",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "姓 名 是 林 俊 英 俊 的 俊",
+  "sigWerNormalizedPredicted": "你 是 林 俊 英 俊 的 俊",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '你' at position 0",
+      "reason": "'姓' (surname) is replaced by '你' (you), which changes the meaning of the sentence from stating a name to addressing someone. This significantly alters the intent and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '名' at position 1",
+      "reason": "Omitting '名' (name) removes part of the phrase '姓名' (full name), making the sentence incomplete and less clear. This is a significant error as it affects the clarity of the information being conveyed.",
+      "score": 1
+    }
+  ]
+}

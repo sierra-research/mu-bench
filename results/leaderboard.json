@@ -300,6 +300,74 @@
       }
     },
     {
+      "id": "gemini-3-5-transcriber",
+      "model": "Gemini-3.5-Transcribe",
+      "organization": "Google",
+      "modelDate": "2026-08-25",
+      "localeResults": {
+        "en-US": {
+          "wer": 0.0511,
+          "significantWer": 0.0502,
+          "completeP50Ms": 1256.3,
+          "completeP95Ms": 1746.2,
+          "roundTripP50Ms": 1256.3,
+          "roundTripP95Ms": 1746.2
+        },
+        "es-MX": {
+          "wer": 0.097,
+          "significantWer": 0.1364,
+          "completeP50Ms": 1242.0,
+          "completeP95Ms": 1785.9,
+          "roundTripP50Ms": 1242.0,
+          "roundTripP95Ms": 1785.9
+        },
+        "tr-TR": {
+          "wer": 0.0868,
+          "significantWer": 0.182,
+          "completeP50Ms": 1183.3,
+          "completeP95Ms": 1724.5,
+          "roundTripP50Ms": 1183.3,
+          "roundTripP95Ms": 1724.5
+        },
+        "vi-VN": {
+          "wer": 0.0548,
+          "significantWer": 0.1077,
+          "completeP50Ms": 1219.5,
+          "completeP95Ms": 1753.2,
+          "roundTripP50Ms": 1219.5,
+          "roundTripP95Ms": 1753.2
+        },
+        "zh-CN": {
+          "wer": 0.1088,
+          "significantWer": 0.2702,
+          "completeP50Ms": 1676.3,
+          "completeP95Ms": 2982.6,
+          "roundTripP50Ms": 1676.3,
+          "roundTripP95Ms": 2982.6
+        }
+      },
+      "overall": {
+        "wer": 0.0797,
+        "significantWer": 0.1493,
+        "completeP50Ms": 1271.6,
+        "completeP95Ms": 2298.3,
+        "roundTripP50Ms": 1271.6,
+        "roundTripP95Ms": 2298.3
+      },
+      "latencyMeta": {
+        "protocol": "batch",
+        "region": "us"
+      },
+      "inferenceConfig": {
+        "beamSize": "default",
+        "languageHint": "default",
+        "customVocabulary": "default",
+        "noiseSuppression": "default",
+        "domainAdaptation": "default",
+        "keywordBoosting": "default"
+      }
+    },
+    {
       "id": "google-chirp3",
       "model": "Chirp-3",
       "organization": "Google",

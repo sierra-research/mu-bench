@@ -1,0 +1,27 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com.",
+  "predicted": "Email là minhminhtran@email.com.",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là minhminhtran a còng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là minhminhtran a còng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'minhminhtran' at position 2",
+      "reason": "'minhminhtran' merges the first name and last name without the separator 'chấm' (dot), making the email address incorrect and potentially unusable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'chấm' at position 3",
+      "reason": "Missing 'chấm' (dot) in the email address changes the structure and makes the email invalid.",
+      "score": 1
+    }
+  ]
+}

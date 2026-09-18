@@ -1,0 +1,27 @@
+{
+  "gold": "Yazıyorum, söyleyin lütfen.",
+  "predicted": "Söyle lütfen.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
+  "werRefWords": 3,
+  "werNormalizedGold": "yazıyorum söyleyin lütfen",
+  "werNormalizedPredicted": "söyle lütfen",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "yazıyorum söyleyin lütfen",
+  "sigWerNormalizedPredicted": "söyle lütfen",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yazıyorum' to 'söyle' at position 0",
+      "reason": "The word 'yazıyorum' (I am writing) is completely omitted, which removes a key part of the sentence and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'söyleyin' at position 1",
+      "reason": "The substitution from 'söyleyin' (formal/plural 'say') to 'söyle' (informal/singular 'say') is a minor formality difference and does not change the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

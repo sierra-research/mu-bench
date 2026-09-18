@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi không cần. Tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
+  "predicted": "Tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 5,
+  "werRefWords": 20,
+  "werNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "werNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "tôi không cần tại vì tôi không biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "sigWerNormalizedPredicted": "tôi không cần nhưng mà tôi cần tại vì tôi không có biết in nên là tôi muốn được hỗ trợ để in ra giấy",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nhưng' at position 3",
+      "reason": "The insertion of 'nhưng mà tôi cần' ('but I need') directly contradicts the original meaning of 'tôi không cần' ('I don't need'), changing the intent of the sentence from not needing to needing, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'có' at position 7",
+      "reason": "The insertion of 'có' ('have') in 'tôi không có biết in' instead of 'tôi không biết in' does not significantly change the meaning, as both forms are commonly used in Vietnamese to express 'I don't know how to print'.",
+      "score": 3
+    }
+  ]
+}

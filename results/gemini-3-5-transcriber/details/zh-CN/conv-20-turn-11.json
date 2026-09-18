@@ -1,0 +1,32 @@
+{
+  "gold": "你正在说什么，你正在说什么，你是不是傻子。",
+  "predicted": "你你正在说什么？你正在说什么？你是个傻子。",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 3,
+  "werRefWords": 18,
+  "werNormalizedGold": "你正在说什么你正在说什么你是不是傻子",
+  "werNormalizedPredicted": "你 你 正在 说 什么 你 正在 说 什么 你 是 个 傻子",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "你 正 在 说 什 么 你 正 在 说 什 么 你 是 不 是 傻 子",
+  "sigWerNormalizedPredicted": "你 你 正 在 说 什 么 你 正 在 说 什 么 你 是 个 傻 子",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '你' at position 1",
+      "reason": "Repeating '你' at the beginning does not change the overall meaning of the sentence, as it is just a redundant pronoun.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '不' to '个' at position 14",
+      "reason": "Changing '不' (not) to '个' (a/one) alters the meaning from 'are you not a fool' to 'are you a fool', which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '是' at position 15",
+      "reason": "Omitting '是' (to be) in this context makes the sentence less grammatically correct but does not significantly change the meaning, as the intent is still clear.",
+      "score": 2
+    }
+  ]
+}

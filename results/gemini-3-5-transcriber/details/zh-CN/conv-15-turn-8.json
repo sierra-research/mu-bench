@@ -1,0 +1,32 @@
+{
+  "gold": "你说的不对。美玲 at email dot com。",
+  "predicted": "你说得不对，mayling@email.com",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "你说的不对 美玲 at email dot com",
+  "werNormalizedPredicted": "你说得不对 mayling at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 说 的 不 对 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "你 说 得 不 对 mayling at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '的' to '得' at position 2",
+      "reason": "These are two different Chinese characters with different meanings, but in this context ('你说的/得不对'), both can be used colloquially and the meaning of the sentence is not significantly changed.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: '美' to 'mayling' at position 5",
+      "reason": "'美玲' is a Chinese name, while 'mayling' is an attempt to phonetically transcribe the full name. The substitution of '美' with 'mayling' is a significant error because it changes the representation of the name and loses the original character information.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 6",
+      "reason": "Omitting '玲' from the name '美玲' results in an incomplete or incorrect name, which is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
+}

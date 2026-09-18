@@ -1,0 +1,32 @@
+{
+  "gold": "No. Aw, man. Try to transfer me one more time. Let me see if the live agent could help me.",
+  "predicted": "Oh. Oh man. Try Try to transfer me one more time. Let me see if if if a live agent could help me.",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 6,
+  "werRefWords": 20,
+  "werNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
+  "werNormalizedPredicted": "oh oh man try try to transfer me one more time let me see if if if a live agent could help me",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "no aw man try to transfer me one more time let me see if the live agent could help me",
+  "sigWerNormalizedPredicted": "oh oh man try try to transfer me one more time let me see if if if a live agent could help me",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'no' to 'oh' at position 0",
+      "reason": "'No' is a negation, while 'oh' is an exclamation; this changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'try' at position 4",
+      "reason": "Repeating 'try' does not change the overall meaning, just adds redundancy.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'the' to 'a' at position 14",
+      "reason": "Repeating 'if' does not change the meaning, just adds redundancy.",
+      "score": 2
+    }
+  ]
+}

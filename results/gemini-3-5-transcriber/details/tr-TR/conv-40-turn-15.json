@@ -1,0 +1,27 @@
+{
+  "gold": "Yazıyor musun? Artı 90 123.",
+  "predicted": "Yazıyor musun? +90 120",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "werNormalizedPredicted": "yazıyor musun artı doksan sıfır bir iki sıfır",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "yazıyor musun artı doksan bir iki üç",
+  "sigWerNormalizedPredicted": "yazıyor musun artı doksan sıfır bir iki sıfır",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'sıfır' at position 4",
+      "reason": "The insertion of 'sıfır' (zero) changes the phone number sequence, which is critical information. This alters the intended number and can lead to significant misunderstanding or failed communication.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'üç' to 'sıfır' at position 6",
+      "reason": "Substituting 'üç' (three) with 'sıfır' (zero) in a phone number sequence is a significant error, as it changes the actual number being communicated, which is essential information.",
+      "score": 1
+    }
+  ]
+}

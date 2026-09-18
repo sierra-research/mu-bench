@@ -1,0 +1,37 @@
+{
+  "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "predicted": "No, el correo está mal. El correo está mal. Es maria.lopez@e",
+  "unintelligible": false,
+  "wer": 0.3684210526315789,
+  "werEdits": 7,
+  "werRefWords": 19,
+  "werNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
+  "werNormalizedPredicted": "no el correo está mal el correo está mal es maria lopez arroba e",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
+  "sigWerNormalizedPredicted": "no el correo está mal el correo está mal es maria lopez arroba e",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'está' at position 1",
+      "reason": "Omitting 'está' slightly changes the sentence structure but does not significantly alter the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'de' at position 5",
+      "reason": "Omitting 'de' removes a preposition, but the main message about the email being wrong is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 14",
+      "reason": "Missing the accent in 'maría' is a minor error; the name is still clearly understood.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'lópez' at position 16",
+      "reason": "Omitting 'lópez' from the email address is a significant error, as it changes the actual email and could cause communication failure.",
+      "score": 1
+    }
+  ]
+}

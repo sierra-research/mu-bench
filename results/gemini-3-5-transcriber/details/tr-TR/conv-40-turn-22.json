@@ -1,0 +1,32 @@
+{
+  "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "predicted": "Daha önce bir hesap ekstresi istemiştim aylık. Henüz şu ana kadar gelmedi. Bana gönderebilir misiniz hesap ekstresini?",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce bir hesap ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap ekstresini",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce bir hesap ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap ekstresini",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'bir' at position 2",
+      "reason": "The insertion of 'bir' (meaning 'a') before 'hesap ekstresi' (account statement) does not change the overall meaning of the sentence; it just adds a minor detail.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "Substituting 'istediğim' ('that I wanted') with 'henüz' ('yet') changes the meaning of the sentence, as it shifts from specifying the statement as the one requested to indicating it has not yet arrived. This affects the intent and clarity significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'misin' to 'misiniz' at position 13",
+      "reason": "'Misin' is informal 'you', while 'misiniz' is formal/plural. This is a minor difference in politeness/formality and does not change the meaning of the request.",
+      "score": 2
+    }
+  ]
+}

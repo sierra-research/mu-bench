@@ -1,0 +1,37 @@
+{
+  "gold": "林美 at E M A I L 点 C O M。",
+  "predicted": "林美爱1mail.com",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 9,
+  "werRefWords": 12,
+  "werNormalizedGold": "林美 at e m a i l 点 c o m",
+  "werNormalizedPredicted": "林美爱 一 mail 点 com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "林 美 at e m a i l 点 c o m",
+  "sigWerNormalizedPredicted": "林 美 爱 一 mail 点 com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to '爱' at position 2",
+      "reason": "'at' is the English word for the '@' symbol in an email address, while '爱' means 'love' in Chinese and is not equivalent. This changes the meaning and makes the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'a' at position 5",
+      "reason": "'一' (meaning 'one' in Chinese) is not part of the expected email spelling and introduces confusion in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'c' to 'com' at position 9",
+      "reason": "The expected is a spelled-out 'e m a i l', but the actual gives 'mail' as a word. This could cause confusion in an email address context, as the spelling is important.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'o' at position 10",
+      "reason": "'c' is part of the spelled-out 'c o m', but 'com' is the full word. This is a minor error as the meaning is still clear in the context of an email address.",
+      "score": 2
+    }
+  ]
+}

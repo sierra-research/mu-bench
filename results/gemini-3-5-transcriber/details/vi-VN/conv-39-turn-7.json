@@ -1,0 +1,37 @@
+{
+  "gold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
+  "predicted": "Đúng rồi anh ạ, chuẩn đấy. Cảm ơn nam bạn nhé.",
+  "unintelligible": false,
+  "wer": 0.625,
+  "werEdits": 5,
+  "werRefWords": 8,
+  "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "werNormalizedPredicted": "đúng rồi anh ạ chuẩn đấy cảm ơn nam bạn nhé",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "sigWerNormalizedPredicted": "đúng rồi anh ạ chuẩn đấy cảm ơn nam bạn nhé",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'ạ' at position 2",
+      "reason": "'anh' is a different person reference than 'anna', which changes the addressee and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'đấy' at position 4",
+      "reason": "'anna' is a name, while 'ạ' is a polite particle; this substitution removes the reference to a specific person, changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'nam' at position 6",
+      "reason": "'đấy' is an intensifier but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 7",
+      "reason": "Inserting 'nam' introduces a new person, which changes the meaning and the addressee of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "C N 3 1 8。",
+  "predicted": "C 3 9 8",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "c n 三 一 八",
+  "werNormalizedPredicted": "c 三 九 八",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "c n 三 一 八",
+  "sigWerNormalizedPredicted": "c 三 九 八",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "A letter was omitted in a sequence that appears to be a code or identifier, which can significantly change the meaning or value.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '一' to '九' at position 3",
+      "reason": "Substituting 'one' (一) with 'nine' (九) in a sequence of numbers is a significant error, as it changes the numeric value and could lead to incorrect information.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Ahmet Arslan adım.",
+  "predicted": "Evet, Ahmet Aslan Hanım.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 3,
+  "werRefWords": 3,
+  "werNormalizedGold": "ahmet arslan adım",
+  "werNormalizedPredicted": "evet ahmet aslan hanım",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "ahmet arslan adım",
+  "sigWerNormalizedPredicted": "evet ahmet aslan hanım",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'evet' at position 0",
+      "reason": "'Evet' means 'yes' in Turkish and is not present in the expected sentence. Its addition does not change the core meaning of the sentence but adds an extra affirmation.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'arslan' to 'aslan' at position 1",
+      "reason": "'Arslan' and 'aslan' are very similar and both mean 'lion' in Turkish; this is a minor spelling variation and does not significantly change the meaning.",
+      "score": 2
+    }
+  ]
+}

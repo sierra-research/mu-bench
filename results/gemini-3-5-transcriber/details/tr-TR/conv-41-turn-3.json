@@ -1,0 +1,32 @@
+{
+  "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "predicted": "Öncelikle bana bir kargo takip ile bir tartışma yapmak istiyorum ama öncelikle bana bir numaranı verir misin takip numaramı?",
+  "unintelligible": false,
+  "wer": 0.3888888888888889,
+  "werEdits": 7,
+  "werRefWords": 18,
+  "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "werNormalizedPredicted": "öncelikle bana bir kargo takip ile bir tartışma yapmak istiyorum ama öncelikle bana bir numaranı verir misin takip numaramı",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "sigWerNormalizedPredicted": "öncelikle bana bir kargo takip ile bir tartışma yapmak istiyorum ama öncelikle bana bir numaranı verir misin takip numaramı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kredi' to 'takip' at position 3",
+      "reason": "'kargo' (cargo) is inserted where the expected phrase is about 'kredi kartı' (credit card), which changes the topic from finance to shipping. This significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaramı' to 'numaranı' at position 13",
+      "reason": "Substituting 'kredi' (credit) with 'takip' (tracking) changes the subject from a credit card to a tracking number, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'numaranı' to 'numaramı' at position 17",
+      "reason": "'numaramı' (my number) vs 'numaranı' (your number) changes the reference from self to the other person, but the overall intent of asking for a number remains. Minor error.",
+      "score": 2
+    }
+  ]
+}

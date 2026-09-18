@@ -1,0 +1,27 @@
+{
+  "gold": "你说的不对，真的不对。",
+  "predicted": "你说的部队，真的部队。",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "你说的不对真的不对",
+  "werNormalizedPredicted": "你说的部队真的部队",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "你 说 的 不 对 真 的 不 对",
+  "sigWerNormalizedPredicted": "你 说 的 部 队 真 的 部 队",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '部' at position 3",
+      "reason": "'不对' means 'not correct', while '部队' means 'troops' or 'army unit'. This substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '不' to '部' at position 7",
+      "reason": "Again, '不对' is replaced with '部队', which changes the meaning from 'not correct' to 'troops', making the sentence incoherent.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Urión 30, col. Tlatilco.",
+  "predicted": "Orión 30, Coacalco",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 3,
+  "werRefWords": 4,
+  "werNormalizedGold": "urión treinta col tlatilco",
+  "werNormalizedPredicted": "orión treinta coacalco",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "urión treinta col tlatilco",
+  "sigWerNormalizedPredicted": "orión treinta coacalco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'urión' to 'orión' at position 0",
+      "reason": "'Urion' and 'Orion' are different proper nouns; this changes the specific name being referenced.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'col' to 'coacalco' at position 2",
+      "reason": "'Col' is an abbreviation for 'colonia' (neighborhood), while 'Coacalco' is a place name. This changes the meaning from a generic location marker to a specific place.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tlatilco' at position 3",
+      "reason": "Omitting 'tlatilco' removes a specific location, which significantly alters the intended address or reference.",
+      "score": 1
+    }
+  ]
+}

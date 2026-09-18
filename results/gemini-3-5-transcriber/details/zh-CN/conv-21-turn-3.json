@@ -1,0 +1,32 @@
+{
+  "gold": "邮箱地址为林点美 at。",
+  "predicted": "收件地址为 0.mei@",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "邮箱地址为林点美 at",
+  "werNormalizedPredicted": "收件地址为 零 点 mei at",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "邮 箱 地 址 为 林 点 美 at",
+  "sigWerNormalizedPredicted": "收 件 地 址 为 零 点 mei at",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '收' at position 0",
+      "reason": "'邮' (mail) and '收' (receive) are different words and change the meaning from 'email address' to 'recipient address', which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '零' at position 5",
+      "reason": "'林' (a surname or 'Lin') and '零' (zero) are completely different; this changes the intended name or word, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '美' to 'mei' at position 7",
+      "reason": "'美' (mei, meaning 'beautiful' or as a name) and 'mei' (pinyin) are equivalent in meaning if the context is a name or email, so this is a minor error due to format difference.",
+      "score": 2
+    }
+  ]
+}

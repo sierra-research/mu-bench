@@ -1,0 +1,27 @@
+{
+  "gold": "It's Ashley dot Brown at email dot com.",
+  "predicted": "It's actually .brown@email.com.",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "it is ashley dot brown at email dot com",
+  "werNormalizedPredicted": "it is actually brown at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "it is ashley dot brown at email dot com",
+  "sigWerNormalizedPredicted": "it is actually brown at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ashley' to 'actually' at position 2",
+      "reason": "'ashley' is a proper noun (a name), while 'actually' is an adverb; this changes the meaning of the sentence significantly, as the intended email address is lost.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 3",
+      "reason": "Omitting 'dot' in an email address changes the structure and makes the email address incorrect, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

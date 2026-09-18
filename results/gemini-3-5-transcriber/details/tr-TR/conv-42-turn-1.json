@@ -1,0 +1,37 @@
+{
+  "gold": "Anna, hesap ekstresi istiyorum. Son seneni, 2024 yılının ocak aralık arasındaki hesap ekstresini istiyorum.",
+  "predicted": "Anlayışa bakiyesi istiyorum. Son senenin, 2024 yılının ocak-aralık arasındaki hesap bakiyesi istiyorum.",
+  "unintelligible": false,
+  "wer": 0.29411764705882354,
+  "werEdits": 5,
+  "werRefWords": 17,
+  "werNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
+  "werNormalizedPredicted": "anlayışa bakiyesi istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasındaki hesap bakiyesi istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "anna hesap ekstresi istiyorum son seneni iki bin yirmi dört yılının ocak aralık arasındaki hesap ekstresini istiyorum",
+  "sigWerNormalizedPredicted": "anlayışa bakiyesi istiyorum son senenin iki bin yirmi dört yılının ocak aralık arasındaki hesap bakiyesi istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlayışa' at position 0",
+      "reason": "'anna' is a name, while 'anlayışa' means 'to understanding' in Turkish; this changes the subject and makes the sentence incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ekstresi' at position 2",
+      "reason": "'ekstresi' (statement) is omitted, which removes the key object being requested and changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'seneni' to 'senenin' at position 5",
+      "reason": "This is a minor grammatical correction in Turkish ('seneni' is a typo for 'senenin'), does not affect meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'ekstresini' to 'bakiyesi' at position 15",
+      "reason": "'ekstresini' (statement) and 'bakiyesi' (balance) are different banking terms; this changes what is being requested.",
+      "score": 1
+    }
+  ]
+}

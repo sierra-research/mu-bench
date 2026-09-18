@@ -1,0 +1,27 @@
+{
+  "gold": "Teşekkür ediyorum Anna Hanım.",
+  "predicted": "Teşekkür ediyorum anneannem.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "teşekkür ediyorum anna hanım",
+  "werNormalizedPredicted": "teşekkür ediyorum anneannem",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "teşekkür ediyorum anna hanım",
+  "sigWerNormalizedPredicted": "teşekkür ediyorum anneannem",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anneannem' at position 2",
+      "reason": "'anna hanım' (Ms. Anna) is a formal address to a person, while 'anneannem' means 'my grandmother' in Turkish. This substitution changes the addressee and the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 3",
+      "reason": "Omitting 'hanım' removes the formal title, further altering the intended meaning and respect in the address.",
+      "score": 1
+    }
+  ]
+}

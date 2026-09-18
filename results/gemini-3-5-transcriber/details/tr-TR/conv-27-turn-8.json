@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii. Zaynep nokta Arslan at email nokta com.",
+  "predicted": "zeynep.arslan@email.com",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zeynep nokta arslan at email nokta com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zeynep nokta arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'zeynep' at position 0",
+      "reason": "'tabii' is an extra word (possibly meaning 'of course' in Turkish) that is omitted and replaced by 'zeynep', which is actually the intended name. This changes the meaning by omitting a word and shifting the position of the name, but the main information (the email address) is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'zaynep' at position 1",
+      "reason": "The expected word 'zaynep' is missing, but 'zeynep' appears in its place (possibly a spelling variant or a misplacement). Since the main information (the name in the email) is still present, this is a minor error.",
+      "score": 2
+    }
+  ]
+}

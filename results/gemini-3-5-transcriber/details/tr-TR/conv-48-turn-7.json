@@ -1,0 +1,27 @@
+{
+  "gold": "1 2 3 0 90 45 67.",
+  "predicted": "1230904567",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "bir iki üç sıfır dokuz sıfır dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'doksan' to 'sıfır' at position 4",
+      "reason": "'Doksan' means 'ninety', while 'dokuz sıfır' means 'nine zero' (90) in Turkish. Although the words are different, the meaning is numerically equivalent, so the overall meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'altmış' to 'altı' at position 7",
+      "reason": "'Altmış' means 'sixty', while 'altı' means 'six', which is a significant numerical difference and changes the meaning of the sequence.",
+      "score": 1
+    }
+  ]
+}

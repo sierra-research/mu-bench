@@ -1,0 +1,32 @@
+{
+  "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
+  "predicted": "İkinci harf hep yanlış. İkinci harfim a olacak. Z'den sonra a var, e değil. Zeynep.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "werNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak zden sonra a var e değil zeynep",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "sigWerNormalizedPredicted": "ikinci harf hep yanlış ikinci harfim a olacak zden sonra a var e değil zeynep",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'harfi' to 'harf' at position 1",
+      "reason": "Dropping the possessive suffix changes 'the letter' to 'letter', but the meaning is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'söylüyorsunuz' at position 4",
+      "reason": "Omitting 'söylüyorsunuz' ('you are saying') removes information about who is making the mistake, but the main meaning about the letter being wrong is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'zeynep' at position 15",
+      "reason": "Adding 'zeynep' (a name) at the end introduces unrelated information, which could confuse the listener, but does not change the main meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

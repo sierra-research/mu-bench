@@ -1,0 +1,32 @@
+{
+  "gold": "提高信，信用卡的额度。",
+  "predicted": "信用卡额度",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "提高信信用卡的额度",
+  "werNormalizedPredicted": "信用卡额度",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "提 高 信 信 用 卡 的 额 度",
+  "sigWerNormalizedPredicted": "信 用 卡 额 度",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '提' at position 0",
+      "reason": "'提' (raise/increase) is a key verb in the sentence. Its deletion removes the action, changing the sentence from 'increase credit card limit' to just 'credit card limit', which loses the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '信' at position 3",
+      "reason": "The repeated '信' in '信用卡' (credit card) is likely a duplication error in the expected transcript. Removing one '信' does not change the meaning, as '信用卡' is still present and correct.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '的' at position 6",
+      "reason": "'的' is a grammatical particle that connects 'credit card' and 'limit'. Its omission makes the sentence less natural but does not significantly change the meaning.",
+      "score": 2
+    }
+  ]
+}

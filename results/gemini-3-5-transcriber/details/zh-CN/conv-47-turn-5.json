@@ -1,0 +1,42 @@
+{
+  "gold": "我明白了我明白了，继续吧继续。",
+  "predicted": "明白啦，明白啦。",
+  "unintelligible": false,
+  "wer": 0.6923076923076923,
+  "werEdits": 9,
+  "werRefWords": 13,
+  "werNormalizedGold": "我明白了我明白了继续吧继续",
+  "werNormalizedPredicted": "明白啦 明白啦",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "我 明 白 了 我 明 白 了 继 续 吧 继 续",
+  "sigWerNormalizedPredicted": "明 白 啦 明 白 啦",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '我' at position 0",
+      "reason": "Omitting '我' (I) removes the subject, but the phrase '明白了' (understood) can still make sense in context, though it is less clear who is speaking.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '了' to '啦' at position 3",
+      "reason": "'了' and '啦' are both sentence particles in Chinese; '啦' is a more informal or emphatic variant. The meaning is essentially unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '我' at position 4",
+      "reason": "Again, omitting '我' (I) removes the subject, but the phrase is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '了' to '啦' at position 7",
+      "reason": "Same as above, '啦' is a variant of '了' with little semantic difference in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: '继' at position 8",
+      "reason": "Omitting '继续吧继续' (continue, go on) removes the instruction to continue, which changes the intent of the sentence significantly.",
+      "score": 1
+    }
+  ]
+}

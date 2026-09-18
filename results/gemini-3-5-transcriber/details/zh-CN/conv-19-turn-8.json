@@ -1,0 +1,27 @@
+{
+  "gold": "邮箱地址是美玲 at email dot com。",
+  "predicted": "用户名是 meiling@email.com。",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
+  "werRefWords": 11,
+  "werNormalizedGold": "邮箱地址是美玲 at email dot com",
+  "werNormalizedPredicted": "用户名是 美玲 at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "用 户 名 是 美 玲 at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '邮' to '用' at position 0",
+      "reason": "'邮' (mail) and '用' (use) are completely different words and change the meaning of the phrase from 'email address' to 'username', which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '址' at position 3",
+      "reason": "'址' (address) is missing, which is essential to the meaning 'email address'. Its omission further changes the meaning to 'username', which is a significant error.",
+      "score": 1
+    }
+  ]
+}

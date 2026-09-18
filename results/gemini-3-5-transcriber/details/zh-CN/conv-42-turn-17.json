@@ -1,0 +1,27 @@
+{
+  "gold": "郡凛 at email dot com。",
+  "predicted": "dreamlin@email.com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "郡凛 at email dot com",
+  "werNormalizedPredicted": "dreamlin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "郡 凛 at email dot com",
+  "sigWerNormalizedPredicted": "dreamlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '郡' to 'dreamlin' at position 0",
+      "reason": "The expected word is a Chinese character, while the actual is an English word that does not correspond in meaning or sound. This is a significant error that completely changes the identity in the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '凛' at position 1",
+      "reason": "A character from the expected email address is missing in the actual transcription, which significantly alters the intended email address and could lead to failed communication.",
+      "score": 1
+    }
+  ]
+}

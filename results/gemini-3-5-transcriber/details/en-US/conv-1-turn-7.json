@@ -1,0 +1,27 @@
+{
+  "gold": "That would be John dot Brown at email dot com.",
+  "predicted": "That would be john.brown@email.com.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "that would be john dot brown at email dot com",
+  "werNormalizedPredicted": "that would be john brown at email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "that would be john dot brown at email dot com",
+  "sigWerNormalizedPredicted": "that would be john brown at email com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'dot' at position 4",
+      "reason": "Omitting 'dot' in an email address can cause confusion and make the email address invalid or unclear, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'dot' at position 8",
+      "reason": "Omitting 'dot' before 'com' in an email address makes the address incorrect and unusable, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

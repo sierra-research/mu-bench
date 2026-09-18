@@ -1,0 +1,27 @@
+{
+  "gold": "还是不对呀。",
+  "predicted": "好，知道了。",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 5,
+  "werRefWords": 5,
+  "werNormalizedGold": "还是不对呀",
+  "werNormalizedPredicted": "好 知道了",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "还 是 不 对 呀",
+  "sigWerNormalizedPredicted": "好 知 道 了",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '还' to '好' at position 0",
+      "reason": "The words have completely different meanings; '还' means 'still' or 'yet', while '好' means 'good'. This changes the intent of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '呀' at position 4",
+      "reason": "'呀' is a modal particle used for emphasis or tone. Its omission slightly affects the tone but not the core meaning, but since the rest of the sentence is already derailed, this is less significant.",
+      "score": 2
+    }
+  ]
+}

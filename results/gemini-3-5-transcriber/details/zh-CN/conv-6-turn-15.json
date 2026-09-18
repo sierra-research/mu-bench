@@ -1,0 +1,27 @@
+{
+  "gold": "君玲 at email dot com。",
+  "predicted": "dreamlin@email.com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "君玲 at email dot com",
+  "werNormalizedPredicted": "dreamlin at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "君 玲 at email dot com",
+  "sigWerNormalizedPredicted": "dreamlin at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to 'dreamlin' at position 0",
+      "reason": "The expected word is a Chinese name, while the actual is an unrelated English word. This completely changes the identity and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "A part of the name is missing, which significantly alters the intended email address and identity.",
+      "score": 1
+    }
+  ]
+}

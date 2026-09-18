@@ -1,0 +1,27 @@
+{
+  "gold": "听到了吗？",
+  "predicted": "听得到的吗？",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 2,
+  "werRefWords": 4,
+  "werNormalizedGold": "听到了吗",
+  "werNormalizedPredicted": "听得到的吗",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "听 到 了 吗",
+  "sigWerNormalizedPredicted": "听 得 到 的 吗",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '得' at position 1",
+      "reason": "'得' is often used in Chinese to indicate possibility or ability, and its insertion here does not significantly change the meaning of the sentence, which is asking if something was heard. The overall intent remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '了' to '的' at position 2",
+      "reason": "'了' indicates a completed action, while '的' is a possessive or descriptive particle. In this context, substituting '了' with '的' slightly changes the grammatical aspect but does not derail the meaning of the question. The sentence is still understandable as a question about hearing.",
+      "score": 2
+    }
+  ]
+}

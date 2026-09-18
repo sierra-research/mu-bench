@@ -1,0 +1,27 @@
+{
+  "gold": "我想提高信用卡的限额。",
+  "predicted": "我想提高信用卡的使用额度。",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "我想提高信用卡的限额",
+  "werNormalizedPredicted": "我想提高信用卡的使用额度",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "我 想 提 高 信 用 卡 的 限 额",
+  "sigWerNormalizedPredicted": "我 想 提 高 信 用 卡 的 使 用 额 度",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '限' to '用' at position 8",
+      "reason": "'使用额度' (usage limit) is a different concept from '限额' (credit limit); adding '使' changes the meaning from credit limit to usage limit, which is a significant change in financial context.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '度' at position 10",
+      "reason": "Replacing '限' (limit) with '用' (use) changes the meaning from 'credit limit' to 'usage amount', which is a significant error in this context.",
+      "score": 1
+    }
+  ]
+}

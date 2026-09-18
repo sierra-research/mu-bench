@@ -1,0 +1,32 @@
+{
+  "gold": "Banka kartı. Yedek bir banka kartım olsun istiyorum.",
+  "predicted": "Banka kartı, yedekli banka kartı oluşturmak istiyorum.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 4,
+  "werRefWords": 8,
+  "werNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
+  "werNormalizedPredicted": "banka kartı yedekli banka kartı oluşturmak istiyorum",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "banka kartı yedek bir banka kartım olsun istiyorum",
+  "sigWerNormalizedPredicted": "banka kartı yedekli banka kartı oluşturmak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yedek' to 'yedekli' at position 2",
+      "reason": "'Yedek' (spare) and 'yedekli' (with spare) are closely related; the meaning is only slightly changed, as both refer to a spare card.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'bir' at position 3",
+      "reason": "Omitting 'bir' (one/a) does not significantly change the meaning of the sentence in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'kartım' to 'kartı' at position 5",
+      "reason": "'Kartım' (my card) vs 'kartı' (the card) changes the ownership reference, but the overall intent (requesting a spare card) remains clear.",
+      "score": 2
+    }
+  ]
+}

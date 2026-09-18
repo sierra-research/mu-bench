@@ -1,0 +1,37 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi, o konuda bilgi verebilir misiniz acaba?",
+  "predicted": "Annanım merhabalar. Ben son internet faturamın miktarını öğrenmek istiyorum. Acaba ödendi mi, ödenmedi mi? Onu da bir o konuda da bilgi verebilir misiniz acaba?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 6,
+  "werRefWords": 21,
+  "werNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "werNormalizedPredicted": "annanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi o konuda bilgi verebilir misiniz acaba",
+  "sigWerNormalizedPredicted": "annanım merhabalar ben son internet faturamın miktarını öğrenmek istiyorum acaba ödendi mi ödenmedi mi onu da bir o konuda da bilgi verebilir misiniz acaba",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'annanım' at position 0",
+      "reason": "'annanım' appears to be a merging of 'anna' and 'hanım', which could confuse the addressee's name and title, but the intent is still somewhat clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "Omitting 'hanım' (a respectful title) reduces politeness but does not change the main meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'onu' at position 15",
+      "reason": "Adding 'onu' (meaning 'it') does not change the overall request or meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'da' at position 17",
+      "reason": "Adding 'da' (meaning 'also') is a minor addition that does not alter the main intent of the sentence.",
+      "score": 2
+    }
+  ]
+}

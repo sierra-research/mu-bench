@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır C N 593 dediniz ama, ben yanlış mı anladım?",
+  "predicted": "Hayır, S değil, C ve 593 dediniz ama ben yanlış mı anladım?",
+  "unintelligible": false,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "hayır c n beş yüz doksan üç dediniz ama ben yanlış mı anladım",
+  "werNormalizedPredicted": "hayır s değil c ve beş yüz doksan üç dediniz ama ben yanlış mı anladım",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "hayır c n beş yüz doksan üç dediniz ama ben yanlış mı anladım",
+  "sigWerNormalizedPredicted": "hayır s değil c ve beş yüz doksan üç dediniz ama ben yanlış mı anladım",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 's' at position 1",
+      "reason": "The insertion of 's' followed by 'değil' (not) changes the meaning, as it introduces a negation and a new letter, which could confuse the listener about the intended letters. This derails the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'n' to 've' at position 2",
+      "reason": "Replacing 'n' with 've' (and) changes the structure and meaning of the sentence, as it omits a letter that was being referenced and instead adds a conjunction, which could lead to misunderstanding the intended information.",
+      "score": 1
+    }
+  ]
+}

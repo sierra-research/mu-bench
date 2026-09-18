@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır yanlış, e-posta adresim, evet.",
+  "predicted": "Hayır ya. E-posta adresi evet.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "hayır yanlış e posta adresim evet",
+  "werNormalizedPredicted": "hayır e posta adresi evet",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "hayır yanlış e posta adresim evet",
+  "sigWerNormalizedPredicted": "hayır e posta adresi evet",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'yanlış' at position 1",
+      "reason": "Omitting 'yanlış' (which means 'wrong') removes the explicit statement that the email address is incorrect, which significantly changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'adresim' to 'adresi' at position 4",
+      "reason": "Changing 'adresim' (my address) to 'adresi' (the address) shifts the reference from the speaker's own address to a general address, which can cause confusion but does not completely derail the meaning.",
+      "score": 2
+    }
+  ]
+}

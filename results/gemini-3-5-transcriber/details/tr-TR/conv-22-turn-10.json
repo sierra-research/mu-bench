@@ -1,0 +1,32 @@
+{
+  "gold": "Pardon. Yalnız telefon numarasının sonu yine yanlış oldu size. 68 dediniz, 67 olacak.",
+  "predicted": "Adım. Yalnız telefon numarasının telefon numarasının sonu yine yanlış oldu. Siz 68 dediniz, 67 olacak.",
+  "unintelligible": false,
+  "wer": 0.26666666666666666,
+  "werEdits": 4,
+  "werRefWords": 15,
+  "werNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "werNormalizedPredicted": "adım yalnız telefon numarasının telefon numarasının sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "pardon yalnız telefon numarasının sonu yine yanlış oldu size altmış sekiz dediniz altmış yedi olacak",
+  "sigWerNormalizedPredicted": "adım yalnız telefon numarasının telefon numarasının sonu yine yanlış oldu siz altmış sekiz dediniz altmış yedi olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'pardon' to 'adım' at position 0",
+      "reason": "'pardon' means 'excuse me' and 'adım' means 'my name' or 'step'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'telefon' at position 4",
+      "reason": "Repeating 'telefon numarasının' adds redundancy but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'size' to 'siz' at position 8",
+      "reason": "'size' (to you) and 'siz' (you) are closely related and do not change the meaning in this context.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Thiếu mất một số cuối cùng, đầy đủ là cộng 84 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "thêm một số cuối cùng, dãy đầy đủ là +849112345678",
+  "unintelligible": false,
+  "wer": 0.13043478260869565,
+  "werEdits": 3,
+  "werRefWords": 23,
+  "werNormalizedGold": "thiếu mất một số cuối cùng đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "thêm một số cuối cùng dãy đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "thiếu mất một số cuối cùng đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "thêm một số cuối cùng dãy đầy đủ là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thiếu' to 'thêm' at position 0",
+      "reason": "'Thiếu' means 'missing' or 'lacking', while 'thêm' means 'add' or 'additional'. This substitution reverses the meaning of the sentence, making it incoherent with the intended message.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mất' at position 1",
+      "reason": "'Mất' reinforces the idea of something being missing. Its deletion further removes the intended meaning of absence or lack.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'dãy' at position 6",
+      "reason": "The insertion of 'dãy' (which means 'sequence' or 'series') slightly changes the structure but does not significantly alter the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

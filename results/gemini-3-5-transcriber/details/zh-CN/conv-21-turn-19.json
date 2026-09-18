@@ -1,0 +1,27 @@
+{
+  "gold": "不是海边区，不正确。",
+  "predicted": "我是海边去。不正确。",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "不是海边区不正确",
+  "werNormalizedPredicted": "我是海边去 不正确",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "不 是 海 边 区 不 正 确",
+  "sigWerNormalizedPredicted": "我 是 海 边 去 不 正 确",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '不' to '我' at position 0",
+      "reason": "The substitution of '不' (not) with '我' (I) changes the subject and negation of the sentence, resulting in a completely different meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '区' to '去' at position 4",
+      "reason": "The substitution of '区' (area/district) with '去' (go) changes the meaning of the sentence, making it incoherent in context.",
+      "score": 1
+    }
+  ]
+}

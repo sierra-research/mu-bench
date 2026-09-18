@@ -1,0 +1,27 @@
+{
+  "gold": "Bu ne ya?",
+  "predicted": "Ne yapıyorsun?",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
+  "werRefWords": 3,
+  "werNormalizedGold": "bu ne ya",
+  "werNormalizedPredicted": "ne yapıyorsun",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "bu ne ya",
+  "sigWerNormalizedPredicted": "ne yapıyorsun",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'bu' at position 0",
+      "reason": "The word 'bu' (meaning 'this' in Turkish) is omitted, which removes the subject of the sentence and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'ya' to 'yapıyorsun' at position 2",
+      "reason": "'ya' is an interjection or emphasis, while 'yapıyorsun' means 'are you doing'. This substitution changes the sentence from an exclamation ('what is this?') to a question about an action ('what are you doing?'), which significantly alters the meaning.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii. Zaynep nokta Arslan at email nokta com.",
+  "predicted": "zeynep.arslan@email.com",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zeynep nokta arslan at email nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zeynep nokta arslan at email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'zeynep' at position 0",
+      "reason": "'tabii' is a Turkish word meaning 'of course' or 'okay', while 'zeynep' is a proper noun (a name). Substituting a confirmation word with a name changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'zaynep' at position 1",
+      "reason": "The name 'zaynep' is missing, which is crucial information for an email address. Omitting the name makes the email address incomplete and incorrect.",
+      "score": 1
+    }
+  ]
+}

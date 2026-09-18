@@ -1,0 +1,52 @@
+{
+  "gold": "君，你说得不对，你说得不对，你说得不对，君玲，君玲。",
+  "predicted": "俊，不对的，你说的不对，你说的不对。俊玲俊玲",
+  "unintelligible": false,
+  "wer": 0.45,
+  "werEdits": 9,
+  "werRefWords": 20,
+  "werNormalizedGold": "君 你说得不对 你说得不对 你说得不对 君玲 君玲",
+  "werNormalizedPredicted": "俊 不对的 你说的不对 你说的不对 俊玲 俊玲",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "君 你 说 得 不 对 你 说 得 不 对 你 说 得 不 对 君 玲 君 玲",
+  "sigWerNormalizedPredicted": "俊 不 对 的 你 说 的 不 对 你 说 的 不 对 俊 玲 俊 玲",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '君' to '俊' at position 0",
+      "reason": "'君' and '俊' are different characters with different meanings and pronunciations; this changes the intended name or subject.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '你' at position 1",
+      "reason": "Omitting '你' ('you') removes the subject of the sentence, which significantly affects the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '的' at position 6",
+      "reason": "Inserting '的' changes the grammatical structure but does not significantly alter the overall meaning in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 8",
+      "reason": "'得' and '的' are different grammatical particles in Chinese; substituting them is a minor grammatical error but does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '得' to '的' at position 13",
+      "reason": "Same as above: minor grammatical error, does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '君' to '俊' at position 16",
+      "reason": "Same as position 0: different characters, changes the intended name or subject.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '君' to '俊' at position 18",
+      "reason": "Same as position 0: different characters, changes the intended name or subject.",
+      "score": 1
+    }
+  ]
+}
