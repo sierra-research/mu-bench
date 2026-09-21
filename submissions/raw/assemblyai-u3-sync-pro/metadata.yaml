@@ -1,0 +1,18 @@
+model: U3-Sync-Pro
+organization: AssemblyAI
+version: '2026-06-05'
+date: '2026-06-05'
+notes: |
+  Per-locale `language_code` for es-MX, tr-TR, vi-VN, zh-CN (ISO 639-1
+  codes passed in the request's config JSON; server selects a
+  language-tailored default prompt). en-US uses no `language_code` —
+  the server's default English prompt. No custom prompt anywhere.
+  override: languageHint — `language_code` is set per locale for
+  non-English; en-US uses the provider default.
+config:
+  beamSize: default
+  languageHint: 'language_code per locale (es/tr/vi/zh); en-US default'
+  customVocabulary: default
+  noiseSuppression: default
+  domainAdaptation: default
+  keywordBoosting: default
