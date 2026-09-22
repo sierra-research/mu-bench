@@ -99,6 +99,12 @@ The scoring pipeline is pinned for reproducibility: `scoring/llm.py` targets a s
 
 Results are posted as a comment on your PR and added to the leaderboard on merge.
 
+## ICASSP 2027 Submission
+
+The current leaderboard and scoring pipeline are a snapshot of provider models from April 2026, scored with a slightly different grading pipeline and LLM prompts than the ones described in our ICASSP 2027 submission. The leaderboard has not been re-scored with the paper's pipeline, so leaderboard numbers and paper numbers are not directly comparable.
+
+The LLM prompts as detailed in the paper (the reference-guided normalizer, the whole-utterance UER judge, and the reference-blind normalization ablation) are in the [`icassp`](https://github.com/sierra-research/mu-bench/tree/icassp) branch at [`scoring/prompts_icassp.py`](https://github.com/sierra-research/mu-bench/blob/icassp/scoring/prompts_icassp.py). Nothing in `scoring/` imports that file; it documents the paper's method and is not used by the leaderboard.
+
 ## Repository Structure
 
 ```
@@ -118,6 +124,7 @@ scoring/
   score.py                 # Metrics computation (corpus WER, sig. WER)
   metrics.py               # Core metric implementations
   prompts.py               # Gitignored — injected from GitHub secret in CI
+  prompts_icassp.py        # Prompts from the ICASSP 2027 submission (icassp branch; not used by the leaderboard)
 results/
   leaderboard.json         # Aggregated leaderboard data
   <provider>/scores.json   # Per-provider score breakdowns (includes latency)

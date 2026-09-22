@@ -26,6 +26,7 @@ scoring/
   llm.py                       # OpenAI API wrapper for scoring
   update_leaderboard.py        # Regenerates results/leaderboard.json from all scores.json files
   prompts.py                   # GITIGNORED — injected from GitHub secret in CI
+  prompts_icassp.py            # ICASSP 2027 paper prompts (icassp branch) — documentation only, not imported
 submissions/
   SUBMITTING.md                # Public-facing submitter guide
   raw/<provider>/              # Raw transcripts + latency.json + metadata.yaml
@@ -43,7 +44,7 @@ audio/                         # GITIGNORED — downloaded from HuggingFace
 ## Key Concepts
 
 - **`manifest.json` is the source of truth.** It defines which utterances exist, their ground truth transcripts, and audio paths. All scripts read from it.
-- **`scoring/prompts.py` is secret.** Stored as a GitHub secret (`SCORING_PROMPTS_PY`) and injected at CI time. Normalization and scoring cannot be run locally without it. The secret must provide `NORMALIZE_GOLD_PROMPT` (canonical gold, prediction-blind), `NORMALIZE_PRED_AGAINST_GOLD_PROMPT` (prediction-only, gold reference), and `SIGNIFICANT_WORD_ERRORS_PROMPT`; the legacy `NORMALIZE_AGAINST_GOLD_PROMPT` is accepted as a back-compat fallback.
+- **`scoring/prompts.py` is secret.** Stored as a GitHub secret (`SCORING_PROMPTS_PY`) and injected at CI time. Normalization and scoring cannot be run locally without it. The secret must provide `NORMALIZE_GOLD_PROMPT` (canonical gold, prediction-blind), `NORMALIZE_PRED_AGAINST_GOLD_PROMPT` (prediction-only, gold reference), and `SIGNIFICANT_WORD_ERRORS_PROMPT`; the legacy `NORMALIZE_AGAINST_GOLD_PROMPT` is accepted as a back-compat fallback. The prompts from the ICASSP 2027 submission (a newer pipeline the leaderboard was not scored with) are published separately in `scoring/prompts_icassp.py` on the `icassp` branch; nothing in `scoring/` imports that file.
 - **Canonical gold lives in `submissions/normalized/_gold/`** and is produced once per manifest by `python -m scoring.normalize_gold`. Every submission is scored against the same normalized reference string. `submissions/normalized/_gold/manifest_gold_hash.txt` is the cache-invalidation key; when the manifest gold changes, re-run `scoring.normalize_gold` and the per-utterance detail caches in `results/` get recomputed automatically.
 - **Scoring pipeline is pinned.** `scoring/llm.py` reads `SCORING_MODEL` / `SCORING_TEMPERATURE` / `SCORING_SEED` from env (defaults baked in) and passes `seed` into every OpenAI request. Each `scores.json` records the judge config + prompt SHAs under a top-level `judge` block; `scripts/check_judge_drift.py` flags partial re-scoring batches.
 - **`submissions/normalized/` and `results/` are auto-generated.** The post-merge CI pipeline produces these and commits them to main. Do not edit them by hand.
