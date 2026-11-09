@@ -134,6 +134,66 @@ def tokenize_for_alignment(text: str, locale: str) -> str:
     return " ".join("".join(result).split())
 
 
+# Turkish cardinal number words (tr-TR numeral context for ``repair_tr_numeral_artifacts``).
+_TR_NUMBER_WORDS = frozenset(
+    "sıfır bir iki üç dört beş altı yedi sekiz dokuz on yirmi otuz kırk elli altmış yetmiş seksen doksan "
+    "yüz bin milyon milyar".split()
+)
+# Raw text that can legitimately read as "bir yüz": the words themselves, or a
+# digit group ending in 1 followed by a separate 100-199 group ("91 123").
+_TR_BIR_YUZ_SOURCE = re.compile(r"\bbir\s+yüz|\d*1[\s.,/-]+1\d\d(?!\d)", re.IGNORECASE)
+
+
+def repair_tr_numeral_artifacts(normalized: str, raw: str) -> str:
+    """Drop the phantom ``bir`` that LLM normalization puts before ``yüz``.
+
+    Turkish reads 100 as ``yüz``; ``bir yüz`` is never part of one numeral.
+    The normalizer still renders some digit groups that way ("Artı 90 123"
+    -> "artı doksan bir yüz yirmi üç"), and does so inconsistently between
+    utterances and between gold and prediction, so a correct transcript gets
+    charged a ``bir`` insertion or deletion. The ``bir`` is kept whenever the
+    raw text can produce it (see ``_TR_BIR_YUZ_SOURCE``) or when no number
+    word surrounds it ("bir yüz ifadesi").
+    """
+    if not normalized or _TR_BIR_YUZ_SOURCE.search(raw or ""):
+        return normalized
+    words = normalized.split()
+    out = []
+    for i, w in enumerate(words):
+        if (
+            w == "bir"
+            and i + 1 < len(words)
+            and words[i + 1] == "yüz"
+            and (
+                (i > 0 and words[i - 1] in _TR_NUMBER_WORDS)
+                or (i + 2 < len(words) and words[i + 2] in _TR_NUMBER_WORDS)
+            )
+        ):
+            continue
+        out.append(w)
+    return " ".join(out)
+
+
+def repair_normalized_row(normalized_row: TranscriptRow, raw_row: TranscriptRow) -> TranscriptRow:
+    """Apply locale-specific deterministic repairs to an LLM-normalized row.
+
+    Returns ``normalized_row`` itself when nothing changes, so callers can
+    tell repaired rows apart with an identity check.
+    """
+    if not normalized_row.locale.startswith("tr"):
+        return normalized_row
+    gold = repair_tr_numeral_artifacts(normalized_row.gold, raw_row.gold)
+    predicted = repair_tr_numeral_artifacts(normalized_row.predicted, raw_row.predicted)
+    if gold == normalized_row.gold and predicted == normalized_row.predicted:
+        return normalized_row
+    return TranscriptRow(
+        locale=normalized_row.locale,
+        utterance_id=normalized_row.utterance_id,
+        gold=gold,
+        predicted=predicted,
+    )
+
+
 def normalize_for_match(text: str) -> str:
     """Simple normalization: lowercase, remove punctuation/spaces.
 
