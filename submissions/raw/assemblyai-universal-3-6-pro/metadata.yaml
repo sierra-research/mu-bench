@@ -1,0 +1,18 @@
+model: universal-3-6-pro
+organization: AssemblyAI
+version: '2026-11-16'
+date: '2026-11-16'
+notes: |
+  AssemblyAI Sync API (POST https://sync.assemblyai.com/v1/transcribe), model
+  universal-3-6-pro. No custom prompt and no keyterms. Single request at a time
+  (concurrency 1); round-trip latency measured client-side from gcp:us-central1
+  to the us-east-1 endpoint, after one untimed warm-up GET per locale.
+  override: languageHint because the ISO 639-1 code of the target locale
+  (en/es/tr/vi/zh) is passed as `language_code` in each request.
+config:
+  beamSize: default
+  languageHint: "language_code per locale (en/es/tr/vi/zh)"
+  customVocabulary: default
+  noiseSuppression: default
+  domainAdaptation: default
+  keywordBoosting: default
