@@ -3,11 +3,19 @@ name: Post-Merge Score
 on:
   pull_request_target:
     types: [closed]
+    branches: [main]
     paths:
       - "submissions/raw/**"
+  workflow_dispatch:
+    inputs:
+      submission_pr:
+        description: "Merged submission PR number to score again"
+        required: true
+        type: string
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: post-merge-score
@@ -15,16 +23,12 @@ concurrency:
 
 jobs:
   score-and-commit:
-    if: github.event.pull_request.merged == true
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     environment: scoring
     steps:
-      # Mint a short-lived installation token for the mu-bench-post-merge
-      # GitHub App. The final "Commit results to main" push then runs as
-      # the app, which is in the ruleset's bypass list — without this the
-      # default GITHUB_TOKEN (github-actions[bot]) gets GH006 rejections,
-      # because bots can't be added to classic branch-protection bypass
-      # and sierra-research's policy doesn't permit PAT-based auth.
+      # App-authenticated pushes trigger CI on the results PR. The app only
+      # needs contents:write; PR creation uses this workflow's GITHUB_TOKEN.
       - name: Mint app installation token
         id: app-token
         uses: actions/create-github-app-token@v1
@@ -40,8 +44,20 @@ jobs:
 
       - name: Detect and validate submission directory name
         id: detect
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ inputs.submission_pr || github.event.pull_request.number }}
         run: |
-          MERGE_SHA=${{ github.event.pull_request.merge_commit_sha }}
+          if ! [[ "$PR_NUMBER" =~ ^[0-9]+$ ]]; then
+            echo "ERROR: submission_pr must be a PR number"
+            exit 1
+          fi
+          PR_JSON=$(gh api "repos/$GH_REPO/pulls/$PR_NUMBER")
+          echo "$PR_JSON" | jq -e '.merged == true and .base.ref == "main"' > /dev/null
+          MERGE_SHA=$(echo "$PR_JSON" | jq -r '.merge_commit_sha')
+          echo "pr=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+          echo "sha=$MERGE_SHA" >> "$GITHUB_OUTPUT"
           echo "Merge commit: $MERGE_SHA"
           CHANGED_FILES=$(git diff --name-only "${MERGE_SHA}^1" "${MERGE_SHA}" -- submissions/raw/)
           DIRS=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u)
@@ -106,9 +122,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: submissions/normalized/${{ steps.detect.outputs.name }}
-          key: normalize-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-${{ github.event.pull_request.merge_commit_sha }}
+          key: normalize-v1-${{ steps.detect.outputs.name }}-${{ steps.detect.outputs.pr }}-${{ steps.detect.outputs.sha }}
           restore-keys: |
-            normalize-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-
+            normalize-v1-${{ steps.detect.outputs.name }}-${{ steps.detect.outputs.pr }}-
 
       - name: Invalidate stale normalized files
         run: |
@@ -151,9 +167,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: results/${{ steps.detect.outputs.name }}
-          key: results-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-${{ github.event.pull_request.merge_commit_sha }}
+          key: results-v1-${{ steps.detect.outputs.name }}-${{ steps.detect.outputs.pr }}-${{ steps.detect.outputs.sha }}
           restore-keys: |
-            results-v1-${{ steps.detect.outputs.name }}-${{ github.event.pull_request.number }}-
+            results-v1-${{ steps.detect.outputs.name }}-${{ steps.detect.outputs.pr }}-
 
       - name: Invalidate stale results
         run: |
@@ -202,33 +218,52 @@ jobs:
       - name: Update leaderboard.json
         run: python -m scoring.update_leaderboard
 
-      - name: Commit results to main
+      - name: Push results branch
+        id: publish
         env:
-          # Look up the app's bot user id once so commits are attributed
-          # to the app (shows as "mu-bench-post-merge[bot]" in git log)
-          # instead of leaving the default identity from the previous step.
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+          SUBMISSION_NAME: ${{ steps.detect.outputs.name }}
+          SOURCE_PR: ${{ steps.detect.outputs.pr }}
+          GH_REPO: ${{ github.repository }}
         run: |
           git config user.name "${APP_SLUG}[bot]"
           git config user.email "${APP_SLUG}[bot]@users.noreply.github.com"
-          # Commit canonical gold cache too — it's a per-repo artifact and
-          # its hash feeds scores.json cache invalidation.
           git add results/ submissions/normalized/
-          git diff --cached --quiet || git commit -m "Add scoring results for ${{ steps.detect.outputs.name }}"
-          git push
+          if git diff --cached --quiet; then
+            echo "Scoring results are already current" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          # A unique branch avoids force-pushing over an existing results PR.
+          BRANCH="codex/scoring-${SOURCE_PR}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$BRANCH"
+          git commit --quiet -m "Add scoring results for $SUBMISSION_NAME"
+          git push --set-upstream origin "$BRANCH"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          echo "Results for #$SOURCE_PR: https://github.com/$GH_REPO/compare/main...$BRANCH" >> "$GITHUB_STEP_SUMMARY"
 
-  # Publish the site directly rather than relying on the push-path trigger in
-  # deploy-leaderboard.yml: the commit above can touch thousands of results/
-  # files, which pushes results/leaderboard.json out of the file list GitHub
-  # evaluates path filters against, and the deploy silently never runs.
-  deploy-leaderboard:
-    needs: score-and-commit
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    uses: ./.github/workflows/deploy-leaderboard.yml
-    with:
-      # Build main's tip, which now includes the scoring commit. The default
-      # ref for a pull_request_target run is the base sha from before it.
-      ref: main
+      - name: Open results pull request
+        if: steps.publish.outputs.branch != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          BRANCH: ${{ steps.publish.outputs.branch }}
+          SUBMISSION_NAME: ${{ steps.detect.outputs.name }}
+          SOURCE_PR: ${{ steps.detect.outputs.pr }}
+        run: |
+          cat > "$RUNNER_TEMP/results-pr.md" <<EOF
+          Generated scoring results and normalized transcripts for #$SOURCE_PR.
+
+          Merge after checks pass to publish the updated leaderboard. Generated by $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID.
+          EOF
+          gh pr create --base main --head "$BRANCH" \
+            --title "Add scoring results for $SUBMISSION_NAME" \
+            --body-file "$RUNNER_TEMP/results-pr.md" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Trigger checks on results pull request
+        if: steps.publish.outputs.branch != ''
+        run: |
+          # PRs opened with GITHUB_TOKEN do not start Actions workflows.
+          # Push with the app after PR creation to emit a synchronize event
+          # that starts the normal CI and Socket checks on the same head.
+          git commit --allow-empty --quiet -m "Run checks on generated scoring results"
+          git push
