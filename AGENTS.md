@@ -46,7 +46,7 @@ audio/                         # GITIGNORED — downloaded from HuggingFace
 - **`scoring/prompts.py` is secret.** Stored as a GitHub secret (`SCORING_PROMPTS_PY`) and injected at CI time. Normalization and scoring cannot be run locally without it. The secret must provide `NORMALIZE_GOLD_PROMPT` (canonical gold, prediction-blind), `NORMALIZE_PRED_AGAINST_GOLD_PROMPT` (prediction-only, gold reference), and `SIGNIFICANT_WORD_ERRORS_PROMPT`; the legacy `NORMALIZE_AGAINST_GOLD_PROMPT` is accepted as a back-compat fallback.
 - **Canonical gold lives in `submissions/normalized/_gold/`** and is produced once per manifest by `python -m scoring.normalize_gold`. Every submission is scored against the same normalized reference string. `submissions/normalized/_gold/manifest_gold_hash.txt` is the cache-invalidation key; when the manifest gold changes, re-run `scoring.normalize_gold` and the per-utterance detail caches in `results/` get recomputed automatically.
 - **Scoring pipeline is pinned.** `scoring/llm.py` reads `SCORING_MODEL` / `SCORING_TEMPERATURE` / `SCORING_SEED` from env (defaults baked in) and passes `seed` into every OpenAI request. Each `scores.json` records the judge config + prompt SHAs under a top-level `judge` block; `scripts/check_judge_drift.py` flags partial re-scoring batches.
-- **`submissions/normalized/` and `results/` are auto-generated.** The post-merge CI pipeline produces these and opens a results PR; merging that PR publishes them to main. Do not edit them by hand.
+- **`submissions/normalized/` and `results/` are auto-generated.** The post-merge CI pipeline produces these and publishes a results branch; a maintainer opens and merges its PR to publish them to main. Do not edit them by hand.
 - **`leaderboard/src/data/data.js` is auto-generated** from `results/leaderboard.json` by `leaderboard/scripts/inject-data.js`. Do not edit by hand.
 
 ## Environment Setup
@@ -148,12 +148,12 @@ Requires `scoring/prompts.py` (from GitHub secret) and `OPENAI_API_KEY`. In CI, 
 | `lint.yml` | PR touching `scripts/`, `scoring/`, or `leaderboard/` | Runs ruff (Python) and eslint (JS) |
 | `validate-submission.yml` | Any PR | Validates raw submission changes, or passes when there are none |
 | `score-submission.yml` | `/score` comment on PR | Normalizes, scores, posts results as PR comment |
-| `post-merge-score.yml` | Submission PR merged to main, or manual dispatch with `submission_pr` | Re-scores and opens a results PR |
+| `post-merge-score.yml` | Submission PR merged to main, or manual dispatch with `submission_pr` | Re-scores and publishes a results branch with a PR link |
 | `deploy-leaderboard.yml` | Relevant push or PR merge to main, or manual dispatch | Builds and deploys leaderboard to GitHub Pages |
 
-The full scoring pipeline on merge: `post-merge-score.yml` runs normalize → score → update_leaderboard → results PR. Merge the results PR after CI and Socket checks pass. The closed-PR deployment trigger inspects the merge diff without GitHub path filters, so large results commits still deploy. To recover a failed submission run after a workflow fix, manually dispatch Post-Merge Score with the original merged submission PR number (`submission_pr`); rerunning an old run uses its old workflow definition.
+The full scoring pipeline on merge: `post-merge-score.yml` runs normalize → score → update_leaderboard → results branch. Open a PR from the link in the run summary, then merge it after CI and Socket checks pass. The closed-PR deployment trigger inspects the merge diff without GitHub path filters, so large results commits still deploy. To recover a failed submission run after a workflow fix, manually dispatch Post-Merge Score with the original merged submission PR number (`submission_pr`); rerunning an old run uses its old workflow definition.
 
-The scoring app needs `contents:write` for branch pushes. Results PR creation uses `GITHUB_TOKEN` with `pull-requests:write`, which requires the repository Actions setting “Allow GitHub Actions to create and approve pull requests.” The workflow never approves or merges PRs. An app-authenticated follow-up push starts normal PR checks, since PR creation with `GITHUB_TOKEN` does not trigger Actions.
+The scoring app needs `contents:write` for branch pushes. Organization policy prohibits Actions-created PRs, so the workflow publishes a compare link for a maintainer to open the results PR. This starts normal PR CI and Socket checks without changing organization or repository security settings.
 
 ## GitHub Secrets
 
