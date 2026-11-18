@@ -1,0 +1,47 @@
+{
+  "gold": "Adımın son harfi yanlış. Ben Zaynep, P ile. Pırasanın P'si ile söyledim, siz bana T'li söylediniz. Zaynep. Email ile aynı şekilde Zaynep olacak.",
+  "predicted": "Adımın son harfi yanlış ben zynet t ile plasanın p'si ile söyledim siz bana t ile söylediniz zynet e-mail de aynı şekilde zynet olacak",
+  "unintelligible": false,
+  "wer": 0.34782608695652173,
+  "werEdits": 8,
+  "werRefWords": 23,
+  "werNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "werNormalizedPredicted": "adımın son harfi yanlış ben zynet t ile plasanın psi ile söyledim siz bana t ile söylediniz zynet email de aynı şekilde zynet olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "adımın son harfi yanlış ben zaynep p ile pırasanın psi ile söyledim siz bana tli söylediniz zaynep email ile aynı şekilde zaynep olacak",
+  "sigWerNormalizedPredicted": "adımın son harfi yanlış ben zynet t ile plasanın psi ile söyledim siz bana t ile söylediniz zynet email de aynı şekilde zynet olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zynet' at position 5",
+      "reason": "'zaynep' is a proper noun (name), and 'zynet' is a different name; this changes the identity being referred to.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'pırasanın' to 'plasanın' at position 8",
+      "reason": "Minor misspelling of a word, but still recognizable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'tli' to 'ile' at position 14",
+      "reason": "The insertion of 't' changes the explanation of the letter being referenced, which is important for spelling out a name.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zynet' at position 16",
+      "reason": "'tli' is a misspelling or mishearing of 'ile', but the meaning is still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ile' to 'de' at position 18",
+      "reason": "Again, the name is changed, which is a significant error as it refers to a different person.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zaynep' to 'zynet' at position 21",
+      "reason": "'ile' (with) and 'de' (also/in) are different words, but in this context, the meaning is only slightly affected.",
+      "score": 2
+    }
+  ]
+}

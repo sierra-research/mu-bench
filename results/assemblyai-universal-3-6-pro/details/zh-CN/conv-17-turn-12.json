@@ -1,0 +1,27 @@
+{
+  "gold": "听到我的吗？",
+  "predicted": "听到了吗？",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "听到我的吗",
+  "werNormalizedPredicted": "听到了吗",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "听 到 我 的 吗",
+  "sigWerNormalizedPredicted": "听 到 了 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '我' to '了' at position 2",
+      "reason": "'我' means 'I' or 'me', while '了' is a particle indicating a completed action; this changes the subject and structure of the sentence, significantly altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '的' at position 3",
+      "reason": "'的' is a possessive particle connecting '我' to the following word; its omission further changes the grammatical structure and meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

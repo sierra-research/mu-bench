@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi muốn hỏi xem là có được cấp hai thẻ luôn được không, để sơ cua.",
+  "predicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lương được không để sửa cua",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
+  "werNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lương được không để sửa cua",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "tôi muốn hỏi xem là có được cấp hai thẻ luôn được không để sơ cua",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi xem là có thể được cấp hai thẻ lương được không để sửa cua",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'thể' at position 6",
+      "reason": "'có được' (can get) vs 'có thể được' (may be able to get) is a minor difference in modality, but does not change the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'luôn' to 'lương' at position 10",
+      "reason": "'luôn' means 'immediately/at once', while 'lương' means 'salary'. This substitution changes the meaning of the sentence significantly and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'sơ' to 'sửa' at position 14",
+      "reason": "'sơ cua' (spare/backup) vs 'sửa cua' (fix crab) are completely different meanings; this substitution derails the intended meaning.",
+      "score": 1
+    }
+  ]
+}

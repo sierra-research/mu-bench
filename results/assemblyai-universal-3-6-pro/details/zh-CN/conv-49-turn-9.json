@@ -1,0 +1,27 @@
+{
+  "gold": "是美玲 at email dot com。",
+  "predicted": "Shemailing at email dot com.",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "是美玲 at email dot com",
+  "werNormalizedPredicted": "shemailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "shemailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to 'shemailing' at position 0",
+      "reason": "The expected input contains three separate Chinese characters representing a name, but the actual transcription merges them into a single, incorrect English-sounding word. This completely changes the meaning and makes the name unrecognizable.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '美' at position 1",
+      "reason": "A character from the name is missing in the actual transcription, which makes the name incomplete and unrecognizable.",
+      "score": 1
+    }
+  ]
+}

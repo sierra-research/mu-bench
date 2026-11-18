@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii. Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Ahmet.Arslan et mail.com",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 2,
+  "werRefWords": 8,
+  "werNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "ahmet nokta arslan at mail nokta com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tabii ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "ahmet nokta arslan at mail nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'tabii' at position 0",
+      "reason": "'tabii' is an extra word at the beginning, likely a modifier or part of the address. Its omission does not significantly change the meaning of the email address, but it could be important contextually.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 5",
+      "reason": "'email' and 'mail' are different; 'email' is the correct domain, while 'mail' could refer to a different service. This changes the actual email address, making it a significant error.",
+      "score": 1
+    }
+  ]
+}

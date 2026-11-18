@@ -1,0 +1,27 @@
+{
+  "gold": "No, el correo es María punto López arroba email punto com.",
+  "predicted": "El correo es maria.lopez@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
+  "werRefWords": 11,
+  "werNormalizedGold": "no el correo es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "el correo es maría punto lópez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "no el correo es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "el correo es maría punto lópez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'no' at position 0",
+      "reason": "Omitting 'no' removes a negation, which can completely change the meaning of the sentence (from 'no, the email is...' to 'the email is...').",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 8",
+      "reason": "Changing 'email' to 'gmail' changes the email provider, which is a significant factual error.",
+      "score": 1
+    }
+  ]
+}

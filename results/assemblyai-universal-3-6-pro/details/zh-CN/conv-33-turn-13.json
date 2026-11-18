@@ -1,0 +1,37 @@
+{
+  "gold": "姓名是林俊，英俊的俊。",
+  "predicted": "县名是 邻近英郡的郡。",
+  "unintelligible": false,
+  "wer": 0.5555555555555556,
+  "werEdits": 5,
+  "werRefWords": 9,
+  "werNormalizedGold": "姓名是林俊 英俊的俊",
+  "werNormalizedPredicted": "县名是 邻近英郡的郡",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "姓 名 是 林 俊 英 俊 的 俊",
+  "sigWerNormalizedPredicted": "县 名 是 邻 近 英 郡 的 郡",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '县' at position 0",
+      "reason": "'姓' means 'surname' while '县' means 'county'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '林' to '邻' at position 3",
+      "reason": "'林' is a surname ('Lin'), while '邻' means 'neighbor'; this is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '俊' to '郡' at position 6",
+      "reason": "'俊' means 'handsome' or is part of a name, while '郡' means 'county'; this alters the intended name and meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '俊' to '郡' at position 8",
+      "reason": "Repeats the previous error, substituting a name character with an unrelated word, significantly changing the meaning.",
+      "score": 1
+    }
+  ]
+}

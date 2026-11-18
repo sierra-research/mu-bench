@@ -1,0 +1,27 @@
+{
+  "gold": "S N 801.",
+  "predicted": "Sene 801.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 2,
+  "werRefWords": 5,
+  "werNormalizedGold": "s n sekiz yüz bir",
+  "werNormalizedPredicted": "sene sekiz yüz bir",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "s n sekiz yüz bir",
+  "sigWerNormalizedPredicted": "sene sekiz yüz bir",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 's' to 'sene' at position 0",
+      "reason": "'s' and 'n' are two separate letters, while 'sene' is a full word. This substitution merges two expected letters into a single word, which significantly changes the meaning, especially if these are initials or a spelled-out sequence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 1",
+      "reason": "Missing a letter in a spelled-out sequence is a significant error, as it changes the intended sequence or meaning.",
+      "score": 1
+    }
+  ]
+}

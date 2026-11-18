@@ -1,0 +1,32 @@
+{
+  "gold": "45, 4 5 6 7.",
+  "predicted": "44 4567",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "kırk beş dört beş altı yedi",
+  "werNormalizedPredicted": "kırk dört dört bin beş yüz altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "kırk beş dört beş altı yedi",
+  "sigWerNormalizedPredicted": "kırk dört dört bin beş yüz altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'beş' to 'dört' at position 1",
+      "reason": "The digit '5' is replaced with '4', which changes the intended number sequence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'bin' at position 3",
+      "reason": "The word 'bin' (thousand) is inserted, which changes the number from a simple sequence to a much larger number, altering the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'altı' to 'altmış' at position 4",
+      "reason": "The word 'yüz' (hundred) is inserted, further changing the number structure and meaning.",
+      "score": 1
+    }
+  ]
+}

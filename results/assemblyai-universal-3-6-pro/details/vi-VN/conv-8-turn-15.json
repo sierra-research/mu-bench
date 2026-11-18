@@ -1,0 +1,37 @@
+{
+  "gold": "Chưa. Đầy đủ phải là 1 2 3 đường Lê Lợi, Hồ Chí Minh city, zip code là 700000, Việt Nam.",
+  "predicted": "chưa đầy đủ với là một hai ba được lê lợi hồ chí minh city giết cốt là bảy trăm ngàn việt nam",
+  "unintelligible": false,
+  "wer": 0.21739130434782608,
+  "werEdits": 5,
+  "werRefWords": 23,
+  "werNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "chưa đầy đủ với là một hai ba được lê lợi hồ chí minh city giết cốt là bảy trăm ngàn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 23,
+  "sigWerNormalizedGold": "chưa đầy đủ phải là một hai ba đường lê lợi hồ chí minh city zip code là bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "chưa đầy đủ với là một hai ba được lê lợi hồ chí minh city giết cốt là bảy trăm ngàn việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'phải' to 'với' at position 3",
+      "reason": "'phải' means 'must' or 'should', while 'với' means 'with'; this changes the logical structure of the sentence and can confuse the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đường' to 'được' at position 8",
+      "reason": "'đường' means 'street', while 'được' means 'can' or 'be able to'; this substitution makes the sentence incoherent in context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'zip' to 'giết' at position 15",
+      "reason": "'zip' (as in 'zip code') is replaced by 'giết' which means 'kill'; this is a significant error that completely changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nghìn' to 'ngàn' at position 20",
+      "reason": "'nghìn' and 'ngàn' are synonyms in Vietnamese, both meaning 'thousand'; this is a regional variation and does not change the meaning.",
+      "score": 3
+    }
+  ]
+}

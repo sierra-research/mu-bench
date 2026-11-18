@@ -1,0 +1,32 @@
+{
+  "gold": "Zeynep nokta Arslan at email nokta com.",
+  "predicted": "zeynep.arslan.mail.com",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "zeynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zeynep arslan mail com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "zeynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zeynep arslan mail com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "Omitting 'nokta' (which means 'dot' in Turkish) changes the structure of the email address, making it unclear or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'mail' at position 3",
+      "reason": "'at' is typically used to indicate the '@' symbol in email addresses, while 'mail' is part of the domain. This substitution confuses the email structure and could lead to misunderstanding.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 4",
+      "reason": "Omitting 'email' from the domain part of the address changes the intended email address, making it incomplete or incorrect.",
+      "score": 1
+    }
+  ]
+}

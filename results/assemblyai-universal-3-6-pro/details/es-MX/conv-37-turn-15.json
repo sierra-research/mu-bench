@@ -1,0 +1,32 @@
+{
+  "gold": "¿Habrá algún correo electrónico al que yo pueda escribir al banco?",
+  "predicted": "¿Habrá algún correo electrónico al que yo pueda escribirle al banco?",
+  "unintelligible": false,
+  "wer": 0.36363636363636365,
+  "werEdits": 4,
+  "werRefWords": 11,
+  "werNormalizedGold": "habrá algún correo electrónico al que yo pueda escribir al banco",
+  "werNormalizedPredicted": "habra algun correo electronico al que yo pueda escribirle al banco",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "habrá algún correo electrónico al que yo pueda escribir al banco",
+  "sigWerNormalizedPredicted": "habra algun correo electronico al que yo pueda escribirle al banco",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'habrá' to 'habra' at position 0",
+      "reason": "Missing accent mark does not change the meaning in context; both are understood as 'there will be'.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'electrónico' to 'electronico' at position 3",
+      "reason": "Missing accent mark does not change the meaning; both refer to 'electronic'.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'escribir' to 'escribirle' at position 8",
+      "reason": "Adding 'le' changes the verb from 'to write' to 'to write to him/her/it', but in this context ('al banco'), both forms are acceptable and the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Email là minh chấm tran at email chấm com.",
+  "predicted": "email là minh.chuan@gmail.com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
+  "werRefWords": 9,
+  "werNormalizedGold": "email là minh chấm tran at email chấm com",
+  "werNormalizedPredicted": "email là minh chuan at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "email là minh chấm tran at email chấm com",
+  "sigWerNormalizedPredicted": "email là minh chuan at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'chuan' at position 3",
+      "reason": "'chấm' (dot) is replaced by 'chuan', which is not a valid part of an email address and changes the structure, making the email address incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tran' at position 4",
+      "reason": "Omitting 'tran' removes a key part of the email username, making the email address incomplete and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 6",
+      "reason": "Changing the domain from 'email' to 'gmail' alters the email address to a different provider, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Email. Pardon Anna Hanım, email olacak. Sesim mi gelmiyor benim bir problem mi var? Anlamakta mı güçlük çekiyorsunuz?",
+  "predicted": "E-mail. Pardon, anne hanım. E-mail olacak. Sesim mi gelmiyor benim? Bir problem mi var? Anlamakta mı düşük çekiyorsunuz?",
+  "unintelligible": false,
+  "wer": 0.1111111111111111,
+  "werEdits": 2,
+  "werRefWords": 18,
+  "werNormalizedGold": "email pardon anna hanım email olacak sesim mi gelmiyor benim bir problem mi var anlamakta mı güçlük çekiyorsunuz",
+  "werNormalizedPredicted": "email pardon anne hanım email olacak sesim mi gelmiyor benim bir problem mi var anlamakta mı düşük çekiyorsunuz",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "email pardon anna hanım email olacak sesim mi gelmiyor benim bir problem mi var anlamakta mı güçlük çekiyorsunuz",
+  "sigWerNormalizedPredicted": "email pardon anne hanım email olacak sesim mi gelmiyor benim bir problem mi var anlamakta mı düşük çekiyorsunuz",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anne' at position 2",
+      "reason": "'Anna' and 'Anne' are both proper names, but they refer to different people. However, in Turkish, 'anne' means 'mother', which is a different word from the name 'Anna'. This changes the meaning of the sentence significantly, as it could refer to a person named Anna or to someone's mother.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'güçlük' to 'düşük' at position 16",
+      "reason": "'Güçlük' means 'difficulty' and 'düşük' means 'low' in Turkish. Substituting 'difficulty' with 'low' changes the meaning of the sentence and makes it incoherent in context ('anlamakta mı güçlük çekiyorsunuz' means 'are you having difficulty understanding', while 'anlamakta mı düşük çekiyorsunuz' does not make sense).",
+      "score": 1
+    }
+  ]
+}

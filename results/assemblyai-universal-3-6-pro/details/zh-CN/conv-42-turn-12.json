@@ -1,0 +1,32 @@
+{
+  "gold": "你说的不对，真的不对。",
+  "predicted": "不，你什么都不对，人都不对。",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 6,
+  "werRefWords": 9,
+  "werNormalizedGold": "你说的不对真的不对",
+  "werNormalizedPredicted": "不 你什么都不对 人都不对",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "你 说 的 不 对 真 的 不 对",
+  "sigWerNormalizedPredicted": "不 你 什 么 都 不 对 人 都 不 对",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: '不' at position 0",
+      "reason": "The insertion of '不' at the beginning changes the sentence structure and meaning, making the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '说' to '么' at position 1",
+      "reason": "The insertion of '什' (as part of '什么') introduces a new phrase ('什么都不对'), which alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '真' to '人' at position 5",
+      "reason": "'说' (say) is replaced by '么' (as part of '什么'), which changes the subject and meaning of the sentence.",
+      "score": 1
+    }
+  ]
+}

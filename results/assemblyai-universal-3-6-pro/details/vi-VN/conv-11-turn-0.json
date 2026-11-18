@@ -1,0 +1,37 @@
+{
+  "gold": "Xin chào. Tôi làm mất thẻ. Tôi xin cấp thẻ mới. Giờ muốn hỏi hiện tại khi nào chuẩn bị có?",
+  "predicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cập thẻ mới giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 9,
+  "werRefWords": 21,
+  "werNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "werNormalizedPredicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cập thẻ mới giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "xin chào tôi làm mất thẻ tôi xin cấp thẻ mới giờ muốn hỏi hiện tại khi nào chuẩn bị có",
+  "sigWerNormalizedPredicted": "xin chào tôi đây là tôi làm bất thảy cái tôi xin cập thẻ mới giờ muốn hỏi coi là hiện tại khi nào chuẩn bị có",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'đây' at position 3",
+      "reason": "'đây' (here/this) is inserted but does not significantly change the meaning of the sentence, which is about losing a card and requesting a new one.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'mất' to 'thảy' at position 4",
+      "reason": "'bất' is inserted before 'thảy', but in this context, it does not make the sentence incoherent, though it is unnecessary.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'cấp' to 'cập' at position 8",
+      "reason": "'mất' means 'lost', while 'thảy' is not appropriate in this context and makes the sentence confusing about the action taken. This significantly affects the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'coi' at position 14",
+      "reason": "'cấp' (issue/grant) is replaced by 'cập' (update), which is a minor error as the intent to get a new card is still clear.",
+      "score": 2
+    }
+  ]
+}

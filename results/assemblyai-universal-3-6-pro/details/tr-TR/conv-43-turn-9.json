@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır, tekrar söylüyorum. Ahmet nokta Arslan at email nokta com.",
+  "predicted": "Hayır tekrar söylüyorum. Ahmet.aslan et e-mail.com",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "hayır tekrar söylüyorum ahmet nokta arslan at email nokta com",
+  "werNormalizedPredicted": "hayır tekrar söylüyorum ahmet arslan et email com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "hayır tekrar söylüyorum ahmet nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "hayır tekrar söylüyorum ahmet arslan et email com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'nokta' at position 4",
+      "reason": "'nokta' (dot) is missing between 'ahmet' and 'arslan', which is important for the correct email format. This omission can cause confusion or make the email address invalid.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 6",
+      "reason": "'at' and 'et' are phonetically similar and often confused in Turkish when referring to the '@' symbol in email addresses. The meaning is preserved and understandable in context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 8",
+      "reason": "Missing 'nokta' (dot) before 'com' in the email address, which is essential for a valid email format. This omission can make the email address unusable.",
+      "score": 1
+    }
+  ]
+}

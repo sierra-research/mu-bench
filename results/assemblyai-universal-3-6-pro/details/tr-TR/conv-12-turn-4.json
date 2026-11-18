@@ -1,0 +1,32 @@
+{
+  "gold": "Yalnız e-posta adresim yanlış oldu. Sonu Gmail değil email, yani E, Edirne'nin E'si ile, email nokta com.",
+  "predicted": "Yalnız e-posta adresimi yanlış oldu. Sonu gmail değil e-mail yani e Edirne'nin e'siyle email.com",
+  "unintelligible": false,
+  "wer": 0.15789473684210525,
+  "werEdits": 3,
+  "werRefWords": 19,
+  "werNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "werNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonu gmail değil email yani e edirnenin e siyle email nokta com",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "yalnız e posta adresim yanlış oldu sonu gmail değil email yani e edirnenin e si ile email nokta com",
+  "sigWerNormalizedPredicted": "yalnız e posta adresimi yanlış oldu sonu gmail değil email yani e edirnenin e siyle email nokta com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'adresim' to 'adresimi' at position 3",
+      "reason": "'adresim' (my address) vs 'adresimi' (my address as object); the meaning is only slightly changed, as the context is clear and the sentence remains understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'si' to 'siyle' at position 14",
+      "reason": "'e si' (the letter e) vs 'e siyle' (with the letter e); 'siyle' is a more explicit form but does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'ile' at position 15",
+      "reason": "The word 'ile' (with) is omitted, but 'siyle' already conveys the meaning of 'with', so the omission does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

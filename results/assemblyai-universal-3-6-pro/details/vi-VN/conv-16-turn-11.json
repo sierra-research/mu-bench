@@ -1,0 +1,37 @@
+{
+  "gold": "Tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ?",
+  "predicted": "tôi muốn xem là hệ hiện tại khi trình nào thì mới có cái đậy đấy.",
+  "unintelligible": false,
+  "wer": 0.5833333333333334,
+  "werEdits": 7,
+  "werRefWords": 12,
+  "werNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "werNormalizedPredicted": "tôi muốn xem là hệ hiện tại khi trình nào thì mới có cái đậy đấy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "tôi muốn xem thẻ hiện tại chừng nào mới có cái thẻ",
+  "sigWerNormalizedPredicted": "tôi muốn xem là hệ hiện tại khi trình nào thì mới có cái đậy đấy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thẻ' to 'hệ' at position 3",
+      "reason": "'là' is an unnecessary insertion that does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'chừng' to 'trình' at position 6",
+      "reason": "Substituting 'thẻ' (card) with 'hệ' (system) changes the subject of the sentence, making it confusing and altering the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'thì' at position 8",
+      "reason": "'khi' (when) is an unnecessary insertion that does not significantly change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'thẻ' to 'đấy' at position 11",
+      "reason": "Substituting 'chừng' (about/when) with 'trình' (submit/present) changes the meaning of the question, making it incoherent.",
+      "score": 1
+    }
+  ]
+}

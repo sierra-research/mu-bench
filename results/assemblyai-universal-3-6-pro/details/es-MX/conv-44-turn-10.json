@@ -1,0 +1,27 @@
+{
+  "gold": "Sí, está bien.",
+  "predicted": "Sí, estoy.",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 2,
+  "werRefWords": 3,
+  "werNormalizedGold": "sí está bien",
+  "werNormalizedPredicted": "sí estoy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "sí está bien",
+  "sigWerNormalizedPredicted": "sí estoy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'está' to 'estoy' at position 1",
+      "reason": "'está' (is) and 'estoy' (I am) are different verb forms and change the meaning of the sentence from 'it is fine' to 'I am ...', which alters the intended meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bien' at position 2",
+      "reason": "Omitting 'bien' ('fine') removes the key part of the phrase 'está bien' ('it's fine'), making the sentence incomplete and changing the meaning.",
+      "score": 1
+    }
+  ]
+}

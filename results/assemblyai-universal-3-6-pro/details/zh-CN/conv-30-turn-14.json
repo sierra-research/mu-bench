@@ -1,0 +1,32 @@
+{
+  "gold": "北京市海鼎区北京路123号。",
+  "predicted": "北京市海 淀区北京路一百二十三号。",
+  "unintelligible": false,
+  "wer": 0.23076923076923078,
+  "werEdits": 3,
+  "werRefWords": 13,
+  "werNormalizedGold": "北京市海鼎区北京路一二三号",
+  "werNormalizedPredicted": "北京市海淀区北京路一百二十三号",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "北 京 市 海 鼎 区 北 京 路 一 二 三 号",
+  "sigWerNormalizedPredicted": "北 京 市 海 淀 区 北 京 路 一 百 二 十 三 号",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '鼎' to '淀' at position 4",
+      "reason": "'海鼎区' and '海淀区' are different district names in Beijing, so this changes the address significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '百' at position 10",
+      "reason": "Adding '百' changes the house number from '一二三' (123) to '一百二十三' (123), which is the same number but a different way of saying it. Both mean 123.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: '十' at position 11",
+      "reason": "Adding '十' is part of the correct way to say 123 in Chinese ('一百二十三'), so the meaning is unchanged.",
+      "score": 3
+    }
+  ]
+}

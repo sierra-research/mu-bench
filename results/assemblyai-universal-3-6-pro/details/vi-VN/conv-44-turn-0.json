@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn được gia tăng hạn mức thẻ tín dụng.",
+  "predicted": "tôi muốn được gia tăng hạn mức sử dụng.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
+  "werNormalizedPredicted": "tôi muốn được gia tăng hạn mức sử dụng",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tôi muốn được gia tăng hạn mức thẻ tín dụng",
+  "sigWerNormalizedPredicted": "tôi muốn được gia tăng hạn mức sử dụng",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thẻ' to 'sử' at position 7",
+      "reason": "'thẻ tín dụng' means 'credit card', while 'sử dụng' means 'use'. This substitution changes the object of the request from increasing credit card limit to increasing usage limit, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'tín' at position 8",
+      "reason": "Omitting 'tín' breaks the phrase 'thẻ tín dụng' (credit card), further making the sentence unclear and changing the intended meaning.",
+      "score": 1
+    }
+  ]
+}

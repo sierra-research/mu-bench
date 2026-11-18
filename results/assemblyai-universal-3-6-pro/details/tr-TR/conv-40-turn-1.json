@@ -1,0 +1,27 @@
+{
+  "gold": "Anna kredi kartımın limitini artırmak istiyorum.",
+  "predicted": "Anla kredi kartımın limitini atamak istiyorum.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
+  "werNormalizedPredicted": "anla kredi kartımın limitini atamak istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "anna kredi kartımın limitini artırmak istiyorum",
+  "sigWerNormalizedPredicted": "anla kredi kartımın limitini atamak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'Anna' is a proper noun (likely a name), while 'anla' is a verb meaning 'understand' in Turkish. This changes the subject of the sentence and makes it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'artırmak' to 'atamak' at position 4",
+      "reason": "'Artırmak' means 'to increase', while 'atamak' means 'to assign'. This changes the intended action regarding the credit card limit, resulting in a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

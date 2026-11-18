@@ -1,0 +1,32 @@
+{
+  "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
+  "predicted": "+52 55 12 34 56 78.",
+  "unintelligible": false,
+  "wer": 0.4666666666666667,
+  "werEdits": 7,
+  "werRefWords": 15,
+  "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "más cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "más cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'uno' to 'doce' at position 7",
+      "reason": "'uno' (one) and 'doce' (twelve) are completely different numbers, which significantly changes the meaning, especially in a sequence like a phone number or code.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cinco' to 'y' at position 11",
+      "reason": "'cinco' (five) and 'cincuenta' (fifty) are different numbers, which significantly changes the meaning in a numeric sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'siete' to 'y' at position 13",
+      "reason": "'siete' (seven) and 'seis' (six) are adjacent numbers, but the substitution changes the sequence, which is significant in a list of numbers.",
+      "score": 1
+    }
+  ]
+}

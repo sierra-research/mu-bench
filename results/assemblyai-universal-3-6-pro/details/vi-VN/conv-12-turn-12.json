@@ -1,0 +1,32 @@
+{
+  "gold": "Địa chỉ email là minh chấm trần at email chấm com.",
+  "predicted": "địa chỉ email là minh.chần@gmail.com",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần at email chấm com",
+  "werNormalizedPredicted": "địa chỉ email là minh chần at gmail chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần at email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh chần at gmail chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'chấm' to 'chần' at position 5",
+      "reason": "'chấm' (dot) is a separator in email addresses, while 'chần' is not a valid separator and changes the structure of the email address, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'trần' at position 6",
+      "reason": "Omitting 'trần' removes a key part of the email username, which makes the email address incomplete and incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 8",
+      "reason": "Changing 'email' to 'gmail' alters the domain of the email address, which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

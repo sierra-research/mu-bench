@@ -1,0 +1,27 @@
+{
+  "gold": "Tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không?",
+  "predicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức?",
+  "unintelligible": false,
+  "wer": 0.125,
+  "werEdits": 2,
+  "werRefWords": 16,
+  "werNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "werNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "tôi muốn hỏi là có cần chứng minh thu nhập để được tăng hạn mức không",
+  "sigWerNormalizedPredicted": "tôi muốn hỏi là có cần chứng minh thu nhập không để được tăng hạn mức",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'không' at position 10",
+      "reason": "The word 'không' (meaning 'no' or 'not') is inserted in the middle of the sentence, which changes the logical structure and meaning. It makes the sentence ask if income proof is not needed, rather than if it is needed to increase the limit.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'không' at position 15",
+      "reason": "The word 'không' is missing from the end of the sentence, which is important for the yes/no question structure in Vietnamese. Its absence changes the sentence from a question to a statement, altering the intended meaning.",
+      "score": 1
+    }
+  ]
+}

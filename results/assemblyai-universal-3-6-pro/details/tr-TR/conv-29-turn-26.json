@@ -1,0 +1,27 @@
+{
+  "gold": "Tamam. At email nokta com.",
+  "predicted": "Tamam. etmail.com",
+  "unintelligible": false,
+  "wer": 0.6,
+  "werEdits": 3,
+  "werRefWords": 5,
+  "werNormalizedGold": "tamam at email nokta com",
+  "werNormalizedPredicted": "tamam etmail com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 5,
+  "sigWerNormalizedGold": "tamam at email nokta com",
+  "sigWerNormalizedPredicted": "tamam etmail com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'etmail' at position 1",
+      "reason": "'at' (used to indicate the '@' symbol in email addresses) is replaced with 'etmail', which is not a valid word or symbol in this context and confuses the meaning of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 2",
+      "reason": "'nokta' (meaning 'dot' in Turkish, representing the '.' in an email address) is missing, which makes the email address incomplete and incorrect.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "Zaynep nokta Arslan at email nokta com.",
+  "predicted": "zynet.arslan et email nokta kom",
+  "unintelligible": false,
+  "wer": 0.5714285714285714,
+  "werEdits": 4,
+  "werRefWords": 7,
+  "werNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "zynet arslan et email nokta kom",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "zynet arslan et email nokta kom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zynet' at position 0",
+      "reason": "'zaynep' and 'zynet' are both proper nouns (likely a name), but the substitution changes the name to a different one, which could cause confusion in identification.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'nokta' at position 1",
+      "reason": "'nokta' means 'dot' in Turkish and is used to indicate a period in an email address. Omitting it makes the email address incomplete or incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 3",
+      "reason": "'at' and 'et' are both used to represent the '@' symbol in email addresses in Turkish, so this is a minor pronunciation difference with no impact on meaning.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'com' to 'kom' at position 6",
+      "reason": "'com' and 'kom' are phonetically similar, and 'kom' is a common Turkish pronunciation of 'com' in email addresses, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

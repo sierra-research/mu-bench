@@ -1,0 +1,27 @@
+{
+  "gold": "No, es incorrecto. El número es.",
+  "predicted": "Tu número es 55124778. ¿Puedes confirmar si está correcto? No, ese es incorrecto. El número es",
+  "unintelligible": false,
+  "wer": 2.8333333333333335,
+  "werEdits": 17,
+  "werRefWords": 6,
+  "werNormalizedGold": "no es incorrecto el número es",
+  "werNormalizedPredicted": "tu número es cinco cinco uno dos cuatro siete siete ocho puedes confirmar si está correcto no ese es incorrecto el número es",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "no es incorrecto el número es",
+  "sigWerNormalizedPredicted": "tu número es cinco cinco uno dos cuatro siete siete ocho puedes confirmar si está correcto no ese es incorrecto el número es",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'tu' at position 0",
+      "reason": "A long sequence is inserted before the expected phrase, introducing unrelated information and changing the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'ese' at position 1",
+      "reason": "The word 'ese' (that) changes the subject of the sentence, altering the meaning from 'no es incorrecto' (it is not incorrect) to 'no ese es incorrecto' (no, that one is incorrect), which is a significant change in meaning.",
+      "score": 1
+    }
+  ]
+}

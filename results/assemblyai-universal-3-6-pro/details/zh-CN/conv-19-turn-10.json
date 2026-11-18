@@ -1,0 +1,27 @@
+{
+  "gold": "对呀，但是我已经说了我的邮箱地址是美玲 at email dot com。",
+  "predicted": "对啊，但是我已经说了，我的邮箱地址是 mailing at email dot com。",
+  "unintelligible": false,
+  "wer": 0.09090909090909091,
+  "werEdits": 2,
+  "werRefWords": 22,
+  "werNormalizedGold": "对呀 但是我已经说了我的邮箱地址是美玲 at email dot com",
+  "werNormalizedPredicted": "对呀 但是我已经说了我的邮箱地址是 mailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "对 呀 但 是 我 已 经 说 了 我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "对 呀 但 是 我 已 经 说 了 我 的 邮 箱 地 址 是 mailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 16",
+      "reason": "'美' is a Chinese character (likely a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the intended meaning and makes the sentence incoherent at this point.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 17",
+      "reason": "'玲' is part of the name '美玲'. Omitting this character results in an incomplete or incorrect name, which is a significant error for proper nouns.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Không phải. Minh chấm trần at email chấm com.",
+  "predicted": "cũng phải minh chấm trần at gmail at email.com",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
+  "werRefWords": 9,
+  "werNormalizedGold": "không phải minh chấm trần at email chấm com",
+  "werNormalizedPredicted": "cũng phải minh chấm trần at gmail at email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "không phải minh chấm trần at email chấm com",
+  "sigWerNormalizedPredicted": "cũng phải minh chấm trần at gmail at email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'không' to 'cũng' at position 0",
+      "reason": "'không phải' means 'not', while 'cũng phải' means 'also must' or 'also is', which reverses the meaning of the sentence and causes a significant change in intent.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'at' at position 5",
+      "reason": "The extra 'at' before 'gmail' is a minor redundancy and does not change the overall meaning of the email address being communicated.",
+      "score": 2
+    }
+  ]
+}

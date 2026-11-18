@@ -1,0 +1,32 @@
+{
+  "gold": "妹玲 at email dot com。",
+  "predicted": "mailing@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 3,
+  "werRefWords": 6,
+  "werNormalizedGold": "妹玲 at email dot com",
+  "werNormalizedPredicted": "mailing at gmail dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "妹 玲 at email dot com",
+  "sigWerNormalizedPredicted": "mailing at gmail dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '妹' to 'mailing' at position 0",
+      "reason": "'妹' is a Chinese character (likely a name or part of a name), while 'mailing' is an English word with a completely different meaning. This changes the identity and meaning of the email address.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 1",
+      "reason": "'玲' is another Chinese character (likely part of the name or email username) that is missing in the actual transcription, which significantly alters the intended email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 3",
+      "reason": "'email' and 'gmail' are different email domains; substituting one for the other changes the destination of the email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

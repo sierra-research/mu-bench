@@ -1,0 +1,37 @@
+{
+  "gold": "Más 52 5 5 1 2 3 4 5 6 7 8.",
+  "predicted": "+52 55 12 34 56 78.",
+  "unintelligible": false,
+  "wer": 0.6428571428571429,
+  "werEdits": 9,
+  "werRefWords": 14,
+  "werNormalizedGold": "más cincuenta y dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "más cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "más cincuenta y dos cinco cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "más cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cinco' to 'y' at position 4",
+      "reason": "'cincuenta' is inserted where a digit was expected, breaking the sequence of numbers and making the transcription incoherent as a phone number.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'uno' to 'doce' at position 6",
+      "reason": "Replacing a digit with 'y' (and) disrupts the numeric sequence, making the phone number incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cinco' to 'y' at position 10",
+      "reason": "'uno' (one) is replaced by 'doce' (twelve), which is a significant change in a phone number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'siete' to 'y' at position 12",
+      "reason": "Another insertion of 'cincuenta' where a digit is expected, further derailing the numeric sequence.",
+      "score": 1
+    }
+  ]
+}

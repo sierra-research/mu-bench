@@ -1,0 +1,27 @@
+{
+  "gold": "Bu ne ya?",
+  "predicted": "Bilemiyorum.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 3,
+  "werRefWords": 3,
+  "werNormalizedGold": "bu ne ya",
+  "werNormalizedPredicted": "bilemiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "bu ne ya",
+  "sigWerNormalizedPredicted": "bilemiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'bu' to 'bilemiyorum' at position 0",
+      "reason": "'bu' means 'this' in Turkish, while 'bilemiyorum' means 'I don't know'; this is a completely different meaning and changes the intent of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ne' at position 1",
+      "reason": "'ne' means 'what' in Turkish and its omission removes the core question from the sentence, significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

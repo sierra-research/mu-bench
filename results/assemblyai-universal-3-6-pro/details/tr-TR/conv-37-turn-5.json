@@ -1,0 +1,32 @@
+{
+  "gold": "E-posta adresim Zaynep nokta Arslan at email nokta com.",
+  "predicted": "E-posta adresim zynet.arslan et e-mail nokta kom",
+  "unintelligible": false,
+  "wer": 0.5,
+  "werEdits": 5,
+  "werRefWords": 10,
+  "werNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "e posta adresim zynet nokta arslan et e mail nokta kom",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "e posta adresim zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "e posta adresim zynet nokta arslan et e mail nokta kom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'zaynep' to 'zynet' at position 3",
+      "reason": "'zaynep' and 'zynet' are both proper nouns (likely names), but the substitution changes the name and could result in an incorrect email address. This is a minor error as the intent is still clear, but the address would be wrong.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'e' at position 6",
+      "reason": "'et' is the Turkish pronunciation of 'at' (the @ symbol in email addresses). This is a minor error as it does not change the meaning, just the language variant.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'com' to 'kom' at position 9",
+      "reason": "'at' (the @ symbol) is replaced by 'e', which is likely a misrecognition. This could make the email address invalid, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

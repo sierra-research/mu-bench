@@ -1,0 +1,27 @@
+{
+  "gold": "Hayır yine arada bir rakam unuttunuz. 0 90 olacak.",
+  "predicted": "Hayır, yine arada bir rakam unuttum. 0.90 olacak.",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "hayır yine arada bir rakam unuttunuz sıfır doksan olacak",
+  "werNormalizedPredicted": "hayır yine arada bir rakam unuttum sıfır nokta doksan olacak",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "hayır yine arada bir rakam unuttunuz sıfır doksan olacak",
+  "sigWerNormalizedPredicted": "hayır yine arada bir rakam unuttum sıfır nokta doksan olacak",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'unuttunuz' to 'unuttum' at position 5",
+      "reason": "Change from second person plural ('you forgot') to first person singular ('I forgot'), which changes the subject but does not derail the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'nokta' at position 7",
+      "reason": "'Nokta' means 'point' and changes 'sıfır doksan' (zero ninety) to 'sıfır nokta doksan' (zero point ninety), which changes the meaning from 'ninety' to 'zero point ninety' (0.90), a significant numerical difference.",
+      "score": 1
+    }
+  ]
+}
