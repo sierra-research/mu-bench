@@ -1,0 +1,12 @@
+model: balbal-v2-manas
+organization: balbal (Eray Yapağcı)
+version: "2026-10-29"
+date: "2026-11-01"
+notes: "Open weights: https://huggingface.co/erayyapagci/balbal-v2-manas (313M-parameter FastConformer CTC + product-key memory, with its 6-gram KenLM). Transcripts and latency come from the same run of the public package (pip install balbal==0.1.1, runtime 'fast': int8 ONNX on CPU), batch, one utterance at a time. The KenLM ships with the model and contains no KIRAAT text; no MU-Bench audio or text was used in training, tuning or checkpoint selection.\noverride: beamSize because the beam search runs with beam 64 and a wider beam threshold (settings={'threshold': 8.0, 'blank_collapse': None}; the package default is threshold 4.0 with blank-frame skipping 0.99), the setting the model was evaluated with."
+config:
+  beamSize: "64, threshold 8.0, no blank-frame skipping"
+  languageHint: default
+  customVocabulary: default
+  noiseSuppression: default
+  domainAdaptation: default
+  keywordBoosting: default
