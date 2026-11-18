@@ -1,0 +1,19 @@
+model: ThinkingEars
+organization: wang bingqin
+version: "V4"
+date: "2026-05-05"
+notes: |-
+  ThinkingEars V4 is a Mandarin customer-service speech transcription system. It uses a Paraformer-family acoustic recognizer followed by domain-aware lexical normalization for high-value customer-service slots such as email addresses, phone numbers, addresses, tracking codes, card/account terms, and common Mandarin near-homophone confusions.
+  The submitted zh-CN run is a partial MU-Bench submission covering all Mandarin utterances. Non-Mandarin locales are intentionally omitted and should be scored only as a zh-CN partial submission.
+  Post-recognition normalization is applied as part of the transcription pipeline to improve Mandarin customer-service slot consistency and reduce meaning-changing slot errors.
+  override: languageHint because the submitted run is a zh-CN-only partial submission and Mandarin recognition was explicitly selected for all included utterances.
+  override: customVocabulary because a fixed Mandarin customer-service lexicon is used for names, email tokens, card/account terms, tracking codes, addresses, and phone-number expressions.
+  override: domainAdaptation because the recognizer is adapted to Mandarin customer-service calls and downstream slot normalization is restricted to that domain.
+  override: keywordBoosting because domain hotwords and high-value slot terms are boosted during candidate selection and post-recognition normalization.
+config:
+  beamSize: default
+  languageHint: "zh-CN"
+  customVocabulary: "enabled: fixed Mandarin customer-service lexicon for names, email formats, phone, address, card/account, and tracking-code terms"
+  noiseSuppression: default
+  domainAdaptation: "enabled: generic Mandarin customer-service domain normalization"
+  keywordBoosting: "enabled: domain hotwords and high-value slot terms"
