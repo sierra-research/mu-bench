@@ -2,8 +2,6 @@ name: Validate Submission
 
 on:
   pull_request:
-    paths:
-      - "submissions/raw/**"
 
 permissions:
   contents: read
@@ -31,8 +29,8 @@ jobs:
           CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} HEAD -- submissions/raw/)
           DIRS=$(echo "$CHANGED_FILES" | sed 's|^\(submissions/raw/[^/]*\)/.*|\1|' | sort -u)
           if [ -z "$DIRS" ]; then
-            echo "No submission directory detected from changed files"
-            exit 1
+            echo "No raw submission changes; validation is not needed"
+            exit 0
           fi
           DIR_COUNT=$(echo "$DIRS" | wc -l | tr -d ' ')
           if [ "$DIR_COUNT" -gt 1 ]; then
@@ -45,6 +43,7 @@ jobs:
           echo "Detected submission: $SUBMISSION_DIR"
 
       - name: Validate submission format
+        if: steps.detect.outputs.dir != ''
         id: validate
         run: |
           set -o pipefail
@@ -52,7 +51,7 @@ jobs:
         continue-on-error: true
 
       - name: Comment on PR
-        if: always()
+        if: always() && steps.detect.outputs.dir != ''
         uses: actions/github-script@v7
         with:
           script: |
