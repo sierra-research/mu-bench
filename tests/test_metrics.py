@@ -26,9 +26,12 @@ sys.path.insert(0, ".")  # make repo-local imports work when pytest is run from 
 from scoring.metrics import (  # noqa: E402
     TranscriptRow,
     _load_gold_prompt,
+    compute_significant_wer,
     compute_simple_wer,
     compute_wer,
     is_unintelligible,
+    repair_normalized_row,
+    repair_tr_numeral_artifacts,
 )
 
 
@@ -196,3 +199,56 @@ def test_judge_block_is_recorded_with_sha_fields(tmp_path, monkeypatch):
     assert block["normalizeGoldPromptSha"]
     assert block["normalizePredPromptSha"]
     assert block["significantErrorsPromptSha"]
+
+
+def test_repair_tr_drops_phantom_bir_before_yuz():
+    """``Artı 90 123`` normalized as ``doksan bir yüz yirmi üç`` loses the phantom ``bir``."""
+    assert (
+        repair_tr_numeral_artifacts("artı doksan bir yüz yirmi üç sıfır doksan", "Artı 90 123 0 90.")
+        == "artı doksan yüz yirmi üç sıfır doksan"
+    )
+    assert repair_tr_numeral_artifacts("c n bir yüz yirmi iki", "CN-122") == "c n yüz yirmi iki"
+
+
+def test_repair_tr_keeps_bir_the_raw_text_can_produce():
+    """A real ``1`` + ``1xx`` group pair, spoken ``bir yüz`` and non-numeral ``bir yüz`` stay."""
+    assert repair_tr_numeral_artifacts("artı doksan bir yüz yirmi üç", "+91 123") == "artı doksan bir yüz yirmi üç"
+    assert (
+        repair_tr_numeral_artifacts("doksan bir yüz yirmi üç", "doksan bir yüz yirmi üç") == "doksan bir yüz yirmi üç"
+    )
+    assert repair_tr_numeral_artifacts("bir yüz ifadesi gördüm", "Bir yüz ifadesi gördüm.") == "bir yüz ifadesi gördüm"
+    assert repair_tr_numeral_artifacts("doksan bir bin kişi", "91.000 kişi") == "doksan bir bin kişi"
+    assert repair_tr_numeral_artifacts("", "Artı 90 123") == ""
+
+
+def test_repair_normalized_row_is_tr_only_and_identity_when_unchanged():
+    """Other locales and untouched tr-TR rows come back as the same object."""
+    en = TranscriptRow("en-US", "u1", "plus ninety one hundred", "plus ninety one hundred")
+    assert repair_normalized_row(en, en) is en
+    tr = TranscriptRow("tr-TR", "u2", "merhaba", "merhaba")
+    assert repair_normalized_row(tr, TranscriptRow("tr-TR", "u2", "Merhaba.", "Merhaba.")) is tr
+
+
+def test_phantom_bir_no_longer_costs_a_correct_transcript(monkeypatch):
+    """Gold normalized with the phantom ``bir``, prediction without it: after the repair the
+    pair is an exact match, so WER is 0 and significant WER needs no judge call."""
+    import scoring.metrics as metrics_mod
+
+    def _no_llm(*args, **kwargs):
+        raise AssertionError("the judge must not be called for an exact match")
+
+    monkeypatch.setattr(metrics_mod, "get_responses", _no_llm)
+    normalized = TranscriptRow(
+        "tr-TR",
+        "u1",
+        "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+        "artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+    )
+    raw = TranscriptRow(
+        "tr-TR", "u1", "Artı 90 123 0 90 45 67.", "Artı doksan, yüz yirmi üç, sıfır doksan, kırk beş, altmış yedi."
+    )
+    before = compute_wer([normalized])[0]
+    assert before.edits == 1
+    fixed = repair_normalized_row(normalized, raw)
+    assert compute_wer([fixed])[0].edits == 0
+    assert compute_significant_wer([fixed])[0].major_errors_count == 0

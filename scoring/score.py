@@ -39,6 +39,7 @@ from scoring.metrics import (
     compute_simple_wer,
     compute_wer,
     is_unintelligible,
+    repair_normalized_row,
 )
 from scoring.normalize import load_ground_truth_from_manifest
 from scoring.normalize_gold import (
@@ -349,6 +350,26 @@ def main():
     for locale, utterance_id, raw_row in pairs:
         norm_row = normalized_by_key.get((locale, utterance_id), raw_row)
         all_normalized_rows.append(norm_row)
+
+    # Deterministic repairs of LLM-normalization artifacts (tr-TR: the phantom
+    # "bir" before "yüz"). Repaired rows are re-scored even when a cached
+    # detail exists, so the fix also reaches already-scored submissions;
+    # every other row keeps its cache.
+    repaired: set[int] = set()
+    if normalized_pairs is not raw_pairs:
+        for i, (_, _, raw_row) in enumerate(pairs):
+            fixed = repair_normalized_row(all_normalized_rows[i], raw_row)
+            if fixed is not all_normalized_rows[i]:
+                all_normalized_rows[i] = fixed
+                repaired.add(i)
+        if repaired:
+            print(f"Repaired normalization artifacts in {len(repaired)} utterances")
+
+    def _stale_repair(i: int, d: dict, gold_key: str, pred_key: str) -> bool:
+        """True when a repaired row's cached normalized strings predate the repair."""
+        row = all_normalized_rows[i]
+        return i in repaired and (d.get(gold_key) != row.gold or d.get(pred_key) != row.predicted)
+
     metrics_to_run = set(args.metrics)
     print(f"Metrics to compute: {metrics_to_run}")
 
@@ -434,7 +455,9 @@ def main():
         needs_sig_wer = [
             i
             for i in range(len(pairs))
-            if existing_details[i] is None or existing_details[i].get("significantWer") is None
+            if existing_details[i] is None
+            or existing_details[i].get("significantWer") is None
+            or _stale_repair(i, existing_details[i], "sigWerNormalizedGold", "sigWerNormalizedPredicted")
         ]
         for i in range(len(pairs)):
             if i not in set(needs_sig_wer) and existing_details[i] is not None:
@@ -483,7 +506,12 @@ def main():
                     return False
             return True
 
-        needs_wer = [i for i in range(len(pairs)) if not _wer_cached(existing_details[i])]
+        needs_wer = [
+            i
+            for i in range(len(pairs))
+            if not _wer_cached(existing_details[i])
+            or _stale_repair(i, existing_details[i], "werNormalizedGold", "werNormalizedPredicted")
+        ]
         for i in range(len(pairs)):
             if i not in set(needs_wer) and existing_details[i] is not None:
                 computed_values[i]["wer"] = existing_details[i].get("wer")
