@@ -1,0 +1,32 @@
+{
+  "gold": "Artı 90 123 0 90 45 67.",
+  "predicted": "6.90 123 0.90 45 67",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 12,
+  "werNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "altı virgül doksan yüz yirmi üç sıfır virgül doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "altı virgül doksan yüz yirmi üç sıfır virgül doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'artı' to 'virgül' at position 0",
+      "reason": "'altı' (six) is a number not present in the expected sequence and changes the meaning of the numeric string.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 2",
+      "reason": "'artı' (plus) and 'virgül' (comma/decimal) have completely different meanings in a numeric context, which significantly alters the interpretation.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'virgül' at position 7",
+      "reason": "Omitting 'bir' (one) from the numeric sequence changes the value and meaning of the number.",
+      "score": 1
+    }
+  ]
+}

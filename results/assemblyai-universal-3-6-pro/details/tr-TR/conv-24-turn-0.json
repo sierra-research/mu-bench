@@ -1,0 +1,27 @@
+{
+  "gold": "Kolay gelsin Anna Hanım. Ben kredi kartı bilgilerimi öğrenmek için, yani IBAN numaramı öğrenebilir miyim?",
+  "predicted": "Kolay gelsin Anla Hanım. Ben kredi kartı bilgilerimi öğrenmek istiyorum. Yani hani İBAN numaramı öğrenebilir miyim?",
+  "unintelligible": false,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için iban numaramı öğrenebilir miyim",
+  "werNormalizedPredicted": "kolay gelsin anla hanım ben kredi kartı bilgilerimi öğrenmek istiyorum hani iban numaramı öğrenebilir miyim",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "kolay gelsin anna hanım ben kredi kartı bilgilerimi öğrenmek için iban numaramı öğrenebilir miyim",
+  "sigWerNormalizedPredicted": "kolay gelsin anla hanım ben kredi kartı bilgilerimi öğrenmek istiyorum hani iban numaramı öğrenebilir miyim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 2",
+      "reason": "'Anna' is a proper noun (a person's name), while 'anla' is a verb meaning 'understand' in Turkish. This changes the addressee and makes the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'için' to 'hani' at position 9",
+      "reason": "Adding 'istiyorum' ('I want') does not significantly change the intent of the sentence, as the speaker is still expressing a desire to learn their IBAN number.",
+      "score": 2
+    }
+  ]
+}

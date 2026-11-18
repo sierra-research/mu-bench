@@ -1,0 +1,52 @@
+{
+  "gold": "Hayır yanlış yazdın. Tamamen yanlış almışsın, tekrar söylüyorum, harf harf kodluyorum. Adana, Hatay, Muğla, Edirne, Trabzon nokta Adana, Rize, Samsun, Lüleburgaz, Adana, Niğde at email nokta com.",
+  "predicted": "Hayır, hayır yanlış aldım. Tamamen yanlış almıştım. Tekrar söylüyorum. Halfer kodluyorum. Adana Hatay Muğla Edirne Trabzon nokta Adana Rize Samsun Lüleburgaz Adana Nide et e-mail nokta kom",
+  "unintelligible": false,
+  "wer": 0.32,
+  "werEdits": 8,
+  "werRefWords": 25,
+  "werNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "werNormalizedPredicted": "hayır hayır yanlış aldım tamamen yanlış almıştım tekrar söylüyorum halfer kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana nide et email kom",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 25,
+  "sigWerNormalizedGold": "hayır yanlış yazdın tamamen yanlış almışsın tekrar söylüyorum harf harf kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana niğde at email com",
+  "sigWerNormalizedPredicted": "hayır hayır yanlış aldım tamamen yanlış almıştım tekrar söylüyorum halfer kodluyorum adana hatay muğla edirne trabzon adana rize samsun lüleburgaz adana nide et email kom",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'hayır' at position 1",
+      "reason": "Repeating 'hayır' (no) does not change the overall meaning, just adds emphasis.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'yazdın' to 'aldım' at position 2",
+      "reason": "'yazdın' means 'you wrote', 'aldım' means 'I took/received'; this changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'almışsın' to 'almıştım' at position 5",
+      "reason": "'almışsın' is 'you have taken', 'almıştım' is 'I had taken'; changes subject but context is still about a mistake, so minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'harf' to 'halfer' at position 8",
+      "reason": "'halfer' is not a word; this is a misrecognition of 'harf' (letter), but the intent is still clear in context.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'harf' at position 9",
+      "reason": "Omitting the repeated 'harf' (letter) slightly reduces clarity but does not change the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'niğde' to 'nide' at position 21",
+      "reason": "'niğde' is a Turkish city used in spelling alphabets; 'nide' is a misspelling but still recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'com' to 'kom' at position 24",
+      "reason": "'com' (as in .com) is replaced with 'kom', which is a phonetic error but the intent is clear.",
+      "score": 2
+    }
+  ]
+}

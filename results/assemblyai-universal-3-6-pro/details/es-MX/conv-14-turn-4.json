@@ -1,0 +1,42 @@
+{
+  "gold": "Es en el banco. Ah ya. Es María punto López arroba email punto com.",
+  "predicted": "Es en el banco, allá es maria.lopez@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.35714285714285715,
+  "werEdits": 5,
+  "werRefWords": 14,
+  "werNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es en el banco alla es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "es en el banco ah ya es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es en el banco alla es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ah' to 'alla' at position 4",
+      "reason": "'ah' is an interjection or filler, while 'alla' means 'there' in Spanish; this changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'ya' at position 5",
+      "reason": "Omitting 'ya' (which means 'already') slightly changes the temporal meaning, but the overall intent is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 7",
+      "reason": "Accent missing on the name 'María'; this is a minor error as the name is still clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 9",
+      "reason": "Accent missing on the surname 'López'; this is a minor error as the name is still recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 11",
+      "reason": "Changing the email provider from 'email' to 'gmail' alters the actual email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

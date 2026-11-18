@@ -1,0 +1,27 @@
+{
+  "gold": "你说的不对。美玲 at email dot com。",
+  "predicted": "你说的不对，mailing at email dot com。",
+  "unintelligible": false,
+  "wer": 0.18181818181818182,
+  "werEdits": 2,
+  "werRefWords": 11,
+  "werNormalizedGold": "你说的不对 美玲 at email dot com",
+  "werNormalizedPredicted": "你说的不对 mailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "你 说 的 不 对 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "你 说 的 不 对 mailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '美' to 'mailing' at position 5",
+      "reason": "'美' is a Chinese character (likely a name or part of a name), while 'mailing' is an English word with a completely different meaning. This substitution changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 6",
+      "reason": "'玲' is the second character of a likely Chinese name ('美玲'). Its omission means the name is incomplete or incorrect, which is a significant error, especially for names.",
+      "score": 1
+    }
+  ]
+}

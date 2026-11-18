@@ -1,0 +1,27 @@
+{
+  "gold": "你听不到我哦。",
+  "predicted": "你听不懂我。",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 2,
+  "werRefWords": 6,
+  "werNormalizedGold": "你听不到我哦",
+  "werNormalizedPredicted": "你听不懂我",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "你 听 不 到 我 哦",
+  "sigWerNormalizedPredicted": "你 听 不 懂 我",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '到' to '懂' at position 3",
+      "reason": "'到' (can/cannot reach, hear) and '懂' (understand) have different meanings; this changes the meaning of the sentence from 'you can't hear me' to 'you don't understand me', which is a significant change.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '哦' at position 5",
+      "reason": "'哦' is a modal particle that softens the tone and does not affect the core meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

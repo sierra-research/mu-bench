@@ -1,0 +1,32 @@
+{
+  "gold": "Hayır Anna. İptal etmek için bir şey yok. Sadece kredi kartı aylık harcama limitimi artırmak istiyorum.",
+  "predicted": "Hayır anla itiraz etmek istediğim bir şey yok. Sadece kredi kartı aylık harcamanı bitim arttırmak istiyorum.",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 6,
+  "werRefWords": 16,
+  "werNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "werNormalizedPredicted": "hayır anla itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcamanı bitim arttırmak istiyorum",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "hayır anna iptal etmek için bir şey yok sadece kredi kartı aylık harcama limitimi artırmak istiyorum",
+  "sigWerNormalizedPredicted": "hayır anla itiraz etmek istediğim bir şey yok sadece kredi kartı aylık harcamanı bitim arttırmak istiyorum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 1",
+      "reason": "'Anna' is a proper noun (a name), while 'anla' is a verb meaning 'understand' in Turkish. This changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'için' to 'istediğim' at position 4",
+      "reason": "'için' means 'for', while 'istediğim' means 'that I want'. This changes the structure and meaning of the sentence, leading to a different intent.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'harcama' to 'harcamanı' at position 12",
+      "reason": "'harcama' means 'spending' (noun), while 'harcamanı' means 'your spending'. This is a minor error as it does not significantly change the overall meaning.",
+      "score": 2
+    }
+  ]
+}

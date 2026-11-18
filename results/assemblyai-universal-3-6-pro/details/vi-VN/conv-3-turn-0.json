@@ -1,0 +1,37 @@
+{
+  "gold": "Làm mất thẻ có xin cấp lại thẻ, muốn hỏi coi khi nào thì nhận được cái thẻ đó?",
+  "predicted": "làm mất thẻ có xin cập lại thẻ muốn hỏi coi là khi nào nhận được cái thẻ đó không?",
+  "unintelligible": false,
+  "wer": 0.21052631578947367,
+  "werEdits": 4,
+  "werRefWords": 19,
+  "werNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
+  "werNormalizedPredicted": "làm mất thẻ có xin cập lại thẻ muốn hỏi coi là khi nào nhận được cái thẻ đó không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "làm mất thẻ có xin cấp lại thẻ muốn hỏi coi khi nào thì nhận được cái thẻ đó",
+  "sigWerNormalizedPredicted": "làm mất thẻ có xin cập lại thẻ muốn hỏi coi là khi nào nhận được cái thẻ đó không",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'cấp' to 'cập' at position 5",
+      "reason": "'cấp lại thẻ' means 're-issue card', while 'cập lại thẻ' is not a correct phrase and changes the meaning. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'là' at position 11",
+      "reason": "Adding 'là' ('that/is') does not change the overall meaning of the question, just a minor grammatical difference.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'thì' at position 13",
+      "reason": "'thì' is a discourse marker and its omission does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'không' at position 19",
+      "reason": "Adding 'không' turns the statement into a yes/no question, but the intent of asking about receiving the card remains clear.",
+      "score": 2
+    }
+  ]
+}

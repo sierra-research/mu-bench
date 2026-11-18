@@ -1,0 +1,37 @@
+{
+  "gold": "Es. Sí, es María punto López arroba email punto com.",
+  "predicted": "Sí, es maria.lopez@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "es sí es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "sí es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "es sí es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "sí es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'es' at position 0",
+      "reason": "Omitting 'es' at the beginning slightly changes the structure but does not significantly alter the meaning of the email address.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 3",
+      "reason": "Accent missing on 'maría', but the name is still clearly recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 5",
+      "reason": "Accent missing on 'lópez', but the name is still clearly recognizable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing the domain from 'email' to 'gmail' results in a completely different email address, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

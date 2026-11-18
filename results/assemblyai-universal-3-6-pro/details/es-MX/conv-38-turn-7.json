@@ -1,0 +1,27 @@
+{
+  "gold": "Es mi nombre, Juan punto López arroba email punto com.",
+  "predicted": "Es mi nombre, juan.lopez@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "es mi nombre juan punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es mi nombre juan punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "es mi nombre juan punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es mi nombre juan punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 5",
+      "reason": "Accent missing in 'lopez', but the name is still clearly recognizable and pronounced the same in context. Minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 7",
+      "reason": "Changing 'email' to 'gmail' changes the actual email address, which is a significant error as it would result in a different address.",
+      "score": 1
+    }
+  ]
+}

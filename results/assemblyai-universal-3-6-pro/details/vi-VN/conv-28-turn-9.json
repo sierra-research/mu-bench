@@ -1,0 +1,27 @@
+{
+  "gold": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Nомер điện thoại là 849112345678.",
+  "unintelligible": false,
+  "wer": 0.1111111111111111,
+  "werEdits": 2,
+  "werRefWords": 18,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "номер điện thoại là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "номер điện thoại là tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'số' to 'номер' at position 0",
+      "reason": "'số' (Vietnamese for 'number') is replaced by 'номер' (Russian for 'number'), which is a different language and not appropriate in this context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cộng' at position 4",
+      "reason": "'cộng' (meaning 'plus' or indicating the country code '+') is omitted, which is important for the correct phone number format.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "OK. Thôi được rồi.",
+  "predicted": "OK, tôi thấy.",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 3,
+  "werRefWords": 4,
+  "werNormalizedGold": "okay thôi được rồi",
+  "werNormalizedPredicted": "okay tôi thấy",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "okay thôi được rồi",
+  "sigWerNormalizedPredicted": "okay tôi thấy",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'thôi' to 'tôi' at position 1",
+      "reason": "'thôi' means 'stop' or 'that's enough', while 'tôi' means 'I' or 'me'; this changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'rồi' at position 3",
+      "reason": "'rồi' means 'already' or 'done', and its omission further alters the intended meaning, making the sentence incomplete.",
+      "score": 1
+    }
+  ]
+}

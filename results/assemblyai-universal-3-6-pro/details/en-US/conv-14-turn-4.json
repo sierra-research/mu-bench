@@ -1,0 +1,32 @@
+{
+  "gold": "Hello? Can you give what is 7 6 2?",
+  "predicted": "Yo, can you give me— what is this, 762?",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
+  "werRefWords": 9,
+  "werNormalizedGold": "hello can you give what is seven six two",
+  "werNormalizedPredicted": "yo can you give me what is this seven six two",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "hello can you give what is seven six two",
+  "sigWerNormalizedPredicted": "yo can you give me what is this seven six two",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'hello' to 'yo' at position 0",
+      "reason": "'Yo' is an informal greeting similar to 'hello', so the meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'me' at position 4",
+      "reason": "Adding 'me' does not change the meaning of the request; it is a minor grammatical difference.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'this' at position 6",
+      "reason": "Inserting 'this' changes the question from 'what is seven six two' to 'what is this seven six two', which could cause confusion about what 'this' refers to, but the core meaning is still understandable.",
+      "score": 2
+    }
+  ]
+}

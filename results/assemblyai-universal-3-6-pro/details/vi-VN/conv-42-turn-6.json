@@ -1,0 +1,27 @@
+{
+  "gold": "Địa chỉ email là minh chấm trần a còng email chấm com.",
+  "predicted": "địa chỉ email là minh trần a cộng email chấm com",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 2,
+  "werRefWords": 12,
+  "werNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "địa chỉ email là minh trần a cộng email chấm com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "địa chỉ email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "địa chỉ email là minh trần a cộng email chấm com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'chấm' at position 5",
+      "reason": "Omitting 'chấm' (dot) in an email address changes the actual email, which can cause delivery failure or confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 8",
+      "reason": "'còng' is the Vietnamese word for '@' in email addresses, while 'cộng' means 'plus' and is incorrect in this context, leading to a significant error in the email address.",
+      "score": 1
+    }
+  ]
+}

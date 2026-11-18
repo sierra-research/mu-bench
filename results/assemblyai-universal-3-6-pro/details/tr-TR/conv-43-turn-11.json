@@ -1,0 +1,27 @@
+{
+  "gold": "Telefon numaramı söylüyorum. Artı 90 123 0 90 45 67.",
+  "predicted": "Telefon numaramı söylüyorum. Artı 90 123 090 4567",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 2,
+  "werRefWords": 14,
+  "werNormalizedGold": "telefon numaramı söylüyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "telefon numaramı söylüyorum artı doksan bir iki üç sıfır doksan dört beş altı yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "telefon numaramı söylüyorum artı doksan bir iki üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "telefon numaramı söylüyorum artı doksan bir iki üç sıfır doksan dört beş altı yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kırk' to 'dört' at position 10",
+      "reason": "'kırk' means 'forty' and 'dört' means 'four', which changes the phone number significantly. This is a significant error as it alters the actual number being communicated.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'altmış' to 'altı' at position 12",
+      "reason": "'altmış' means 'sixty' and 'altı' means 'six', which again changes the phone number. This is a significant error as it alters the actual number being communicated.",
+      "score": 1
+    }
+  ]
+}

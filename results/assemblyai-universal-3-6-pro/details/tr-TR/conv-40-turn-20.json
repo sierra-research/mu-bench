@@ -1,0 +1,47 @@
+{
+  "gold": "Anna, bana şu kodu tekrar verir misin? Kodlar çünkü ilk başta E N dedin sonra E A dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "predicted": "Anla bana şu kodu tekrar verir misin? Kodda çünkü ilk başta ene dedin sonra ea dedin. Kodu tekrar bana söyler misin yavaşça?",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 6,
+  "werRefWords": 24,
+  "werNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "werNormalizedPredicted": "anla bana şu kodu tekrar verir misin kodda çünkü ilk başta ene dedin sonra ea dedin kodu tekrar bana söyler misin yavaşça",
+  "significantWer": 1,
+  "majorErrorsCount": 4,
+  "totalWordsCount": 24,
+  "sigWerNormalizedGold": "anna bana şu kodu tekrar verir misin kodlar çünkü ilk başta e n dedin sonra e a dedin kodu tekrar bana söyler misin yavaşça",
+  "sigWerNormalizedPredicted": "anla bana şu kodu tekrar verir misin kodda çünkü ilk başta ene dedin sonra ea dedin kodu tekrar bana söyler misin yavaşça",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anla' at position 0",
+      "reason": "'anna' is a name, 'anla' is a verb meaning 'understand' in Turkish; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kodlar' to 'kodda' at position 7",
+      "reason": "'kodlar' means 'codes' (plural), 'kodda' means 'in the code' (singular, locative); this changes the reference and could confuse the listener, but the overall meaning is still about code.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'e' to 'ene' at position 11",
+      "reason": "'e' is a single letter, 'ene' is not a single letter and could confuse the code being spelled out; this is a significant error in the context of spelling a code.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'n' at position 12",
+      "reason": "Omitting 'n' from the spelled code changes the code entirely, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'e' to 'ea' at position 15",
+      "reason": "'e' and 'ea' are different letters or letter combinations; in the context of spelling a code, this could cause confusion but is less severe than a completely wrong letter.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'a' at position 16",
+      "reason": "Omitting 'a' from the spelled code changes the code, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

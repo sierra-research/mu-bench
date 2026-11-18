@@ -1,0 +1,32 @@
+{
+  "gold": "我知道，我现在说是我的邮箱地址，是美玲 at email dot com。",
+  "predicted": "哦，我知道。我现在说时，我的邮箱地址是 mailing at email dot com。",
+  "unintelligible": false,
+  "wer": 0.14285714285714285,
+  "werEdits": 3,
+  "werRefWords": 21,
+  "werNormalizedGold": "我知道 我现在说是我的邮箱地址 是美玲 at email dot com",
+  "werNormalizedPredicted": "我知道 我现在说时 我的邮箱地址是 mailing at email dot com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "我 知 道 我 现 在 说 是 我 的 邮 箱 地 址 是 美 玲 at email dot com",
+  "sigWerNormalizedPredicted": "我 知 道 我 现 在 说 时 我 的 邮 箱 地 址 是 mailing at email dot com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '是' to '时' at position 7",
+      "reason": "The word '是' (is) is replaced with '时' (time/when), which changes the grammatical structure but does not significantly alter the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '美' to 'mailing' at position 15",
+      "reason": "'美' is part of a Chinese name, but 'mailing' is an English word and also the actual email username. This changes the intended email address from a Chinese name to an English word, which is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '玲' at position 16",
+      "reason": "'玲' is the second character of the name '美玲', so omitting it changes the name and the email address, making it incorrect.",
+      "score": 1
+    }
+  ]
+}

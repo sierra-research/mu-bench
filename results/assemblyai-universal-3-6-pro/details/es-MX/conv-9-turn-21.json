@@ -1,0 +1,27 @@
+{
+  "gold": "¿Podría pedir un pago en cuotas de la factura?",
+  "predicted": "¿Podría pedir un pago en cuota de la factura?",
+  "unintelligible": false,
+  "wer": 0.2222222222222222,
+  "werEdits": 2,
+  "werRefWords": 9,
+  "werNormalizedGold": "podría pedir un pago en cuotas de la factura",
+  "werNormalizedPredicted": "podria pedir un pago en cuota de la factura",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "podría pedir un pago en cuotas de la factura",
+  "sigWerNormalizedPredicted": "podria pedir un pago en cuota de la factura",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'podría' to 'podria' at position 0",
+      "reason": "Missing accent mark does not change the meaning in context; both are understood as 'could' in Spanish.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'cuotas' to 'cuota' at position 5",
+      "reason": "Singular vs plural changes the payment method from multiple installments to a single installment, which can affect the meaning of the request.",
+      "score": 2
+    }
+  ]
+}

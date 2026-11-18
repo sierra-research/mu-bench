@@ -1,0 +1,22 @@
+{
+  "gold": "我正在新卡，想知道它的状态。",
+  "predicted": "我正在等待信卡，想知道它的状态。",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "我正在新卡想知道它的状态",
+  "werNormalizedPredicted": "我正在等待信卡 想知道它的状态",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "我 正 在 新 卡 想 知 道 它 的 状 态",
+  "sigWerNormalizedPredicted": "我 正 在 等 待 信 卡 想 知 道 它 的 状 态",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '新' to '信' at position 3",
+      "reason": "The insertion of '等' (wait) adds a waiting action, which changes the meaning from 'new card' to 'waiting for credit card', altering the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "喂，我想提高我的信用卡额度。",
+  "predicted": "不对， 哇！香气告我的信用卡恶毒。",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 8,
+  "werRefWords": 12,
+  "werNormalizedGold": "喂 我想提高我的信用卡额度",
+  "werNormalizedPredicted": "不对 哇 香气告我的信用卡恶毒",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "喂 我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "不 对 哇 香 气 告 我 的 信 用 卡 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '喂' to '对' at position 0",
+      "reason": "The insertion of '不' (no/not) at the beginning changes the intent of the sentence from a request to a negation, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '恶' at position 10",
+      "reason": "'喂' is a greeting (hello), while '对' means 'correct' or 'right'; this substitution changes the opening context and disrupts the intended meaning.",
+      "score": 1
+    }
+  ]
+}

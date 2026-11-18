@@ -1,0 +1,27 @@
+{
+  "gold": "林美 at email。",
+  "predicted": "您没@email。",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 3,
+  "werRefWords": 4,
+  "werNormalizedGold": "林美 at email",
+  "werNormalizedPredicted": "您没 email",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "林 美 at email",
+  "sigWerNormalizedPredicted": "您 没 email",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '林' to '您' at position 0",
+      "reason": "'林' is a Chinese surname, while '您' means 'you' in Chinese; this changes the subject of the sentence and alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'at' at position 2",
+      "reason": "Omitting 'at' removes the preposition needed for the phrase 'at email', making the sentence incomplete and unclear.",
+      "score": 1
+    }
+  ]
+}

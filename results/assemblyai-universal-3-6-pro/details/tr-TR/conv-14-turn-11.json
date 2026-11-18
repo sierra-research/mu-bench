@@ -1,0 +1,32 @@
+{
+  "gold": "Tabii. Artı 90 123. Tamam baştan alıyorum. Artı 90 123 0 90 45 67.",
+  "predicted": "Tabi artı 90 123 Tamam baştan alıyorum Artı 90 123 090 45 67",
+  "unintelligible": false,
+  "wer": 0.13636363636363635,
+  "werEdits": 3,
+  "werRefWords": 22,
+  "werNormalizedGold": "tabii artı doksan bir yüz yirmi üç tamam baştan alıyorum artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tabi artı doksan yüz yirmi üç tamam baştan alıyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 22,
+  "sigWerNormalizedGold": "tabii artı doksan bir yüz yirmi üç tamam baştan alıyorum artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tabi artı doksan yüz yirmi üç tamam baştan alıyorum artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are minor spelling variants in Turkish, both are understood as 'of course', so the meaning is unchanged.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'bir' at position 3",
+      "reason": "Omitting 'bir' (one) from the phone number changes the numeric value, which is significant in the context of numbers.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 12",
+      "reason": "Omitting 'bir' (one) from the phone number changes the numeric value, which is significant in the context of numbers.",
+      "score": 1
+    }
+  ]
+}

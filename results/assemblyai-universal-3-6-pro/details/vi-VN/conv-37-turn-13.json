@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi muốn nhận bản sao sao kê hoặc hóa đơn mới nhất của thẻ tín dụng. Bạn giúp tôi gửi qua email đã đăng ký nhé!",
+  "predicted": "tôi muốn nhận bản sao sau kế hoạch hóa đơn mới những cụ thể tiến dụng ấy bạn giúp tôi gửi qua email đã đăng ký nhé",
+  "unintelligible": false,
+  "wer": 0.3076923076923077,
+  "werEdits": 8,
+  "werRefWords": 26,
+  "werNormalizedGold": "tôi muốn nhận bản sao sao kê hoặc hóa đơn mới nhất của thẻ tín dụng bạn giúp tôi gửi qua email đã đăng ký nhé",
+  "werNormalizedPredicted": "tôi muốn nhận bản sao sau kế hoạch hóa đơn mới những cụ thể tiến dụng ấy bạn giúp tôi gửi qua email đã đăng ký nhé",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 26,
+  "sigWerNormalizedGold": "tôi muốn nhận bản sao sao kê hoặc hóa đơn mới nhất của thẻ tín dụng bạn giúp tôi gửi qua email đã đăng ký nhé",
+  "sigWerNormalizedPredicted": "tôi muốn nhận bản sao sau kế hoạch hóa đơn mới những cụ thể tiến dụng ấy bạn giúp tôi gửi qua email đã đăng ký nhé",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'sao' to 'sau' at position 5",
+      "reason": "'sao kê' means 'statement' (as in bank statement), while 'sau kế' is not a valid phrase and changes the meaning, making the sentence confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'nhất' to 'những' at position 11",
+      "reason": "'nhất' means 'the most' or 'latest', while 'những' means 'some' or 'those', which changes the specificity and meaning of the request.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'ấy' at position 16",
+      "reason": "The insertion of 'ấy' ('those') adds unnecessary reference and makes the sentence less clear, but does not completely derail the meaning.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gold": "Anna Hanım merhabalar. Şimdi şöyle, ben kredi kartıma dair ekstremin bir kopyasını istiyorum. Ya da ekstremin bir dökümünü istiyorum daha doğrusu.",
+  "predicted": "Anladım merhabalar şimdi şöyle ben kredi kartıma dair ekstrem'in bir kopyasını istiyorum. Yani ekstrem'in bir dökümünü istiyorum daha doğrusu.",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 6,
+  "werRefWords": 20,
+  "werNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "werNormalizedPredicted": "anladım merhabalar şimdi ben kredi kartıma dair ekstremen bir kopyasını istiyorum ekstremen bir dökümünü istiyorum daha doğrusu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 20,
+  "sigWerNormalizedGold": "anna hanım merhabalar şimdi ben kredi kartıma dair ekstremin bir kopyasını istiyorum ya da ekstremin bir dökümünü istiyorum daha doğrusu",
+  "sigWerNormalizedPredicted": "anladım merhabalar şimdi ben kredi kartıma dair ekstremen bir kopyasını istiyorum ekstremen bir dökümünü istiyorum daha doğrusu",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anladım' at position 0",
+      "reason": "'anna' is a name or address, while 'anladım' means 'I understand' in Turkish; this changes the meaning and context of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.'), and its omission reduces politeness but does not derail the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ekstremin' to 'ekstremen' at position 8",
+      "reason": "Minor misspelling of 'ekstremin' as 'ekstremen', still understandable in context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'ya' to 'ekstremen' at position 12",
+      "reason": "'ya' is a discourse particle meaning 'or', while 'ekstremen' is a repetition of the previous word; this changes the structure and clarity of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'da' at position 13",
+      "reason": "'da' is a conjunction meaning 'also' or 'too', its omission slightly affects the flow but not the core meaning.",
+      "score": 2
+    }
+  ]
+}

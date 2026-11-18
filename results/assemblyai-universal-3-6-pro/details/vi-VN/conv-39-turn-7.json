@@ -1,0 +1,37 @@
+{
+  "gold": "Đúng rồi Anna. Chuẩn. Cảm ơn bạn nhá.",
+  "predicted": "đúng rồi anh ạ chuẩn đấy cảm ơn năm bạn nhé.",
+  "unintelligible": false,
+  "wer": 0.625,
+  "werEdits": 5,
+  "werRefWords": 8,
+  "werNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "werNormalizedPredicted": "đúng rồi anh ạ chuẩn đấy cảm ơn năm bạn nhé",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "đúng rồi anna chuẩn cảm ơn bạn nhá",
+  "sigWerNormalizedPredicted": "đúng rồi anh ạ chuẩn đấy cảm ơn năm bạn nhé",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'ạ' at position 2",
+      "reason": "'anh' is a different addressee than 'anna', which changes who is being addressed in the sentence. This alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'đấy' at position 4",
+      "reason": "'anna' is a name, while 'ạ' is a polite particle. This substitution removes the addressee and changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'năm' at position 6",
+      "reason": "'đấy' is an intensifier but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'nhá' to 'nhé' at position 7",
+      "reason": "'năm' (meaning 'five') is inserted before 'bạn', which makes the sentence confusing and changes the meaning, as it could imply 'five friends' instead of addressing a single person.",
+      "score": 1
+    }
+  ]
+}

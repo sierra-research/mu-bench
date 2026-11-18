@@ -1,0 +1,32 @@
+{
+  "gold": "So, it is John dot Brown at email dot com. Is that what you had?",
+  "predicted": "So, it is john.browne at email.com, is that what you had?",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "so it is john dot brown at email dot com is that what you had",
+  "werNormalizedPredicted": "so it is john browne at email com is that what you had",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "so it is john dot brown at email dot com is that what you had",
+  "sigWerNormalizedPredicted": "so it is john browne at email com is that what you had",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dot' to 'browne' at position 4",
+      "reason": "'dot' is replaced by 'browne', which is a misspelling of the intended surname 'brown' and also omits the separator 'dot', making the email address unclear and potentially invalid.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'brown' at position 5",
+      "reason": "The surname 'brown' is missing, replaced by 'browne' in the previous position, which is a minor misspelling but still recognizable as the intended name.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'dot' at position 8",
+      "reason": "Omitting 'dot' in the email address ('email dot com' becomes 'email com') makes the email address format incorrect and could cause confusion or delivery failure.",
+      "score": 1
+    }
+  ]
+}

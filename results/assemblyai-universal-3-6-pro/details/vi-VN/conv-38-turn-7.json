@@ -1,0 +1,27 @@
+{
+  "gold": "Email là minh chấm trần a còng email chấm com.",
+  "predicted": "email là minh chấm trần à cộng email chấm cơm",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "email là minh chấm trần à cộng email chấm cơm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "email là minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "email là minh chấm trần à cộng email chấm cơm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'a' to 'à' at position 5",
+      "reason": "The word 'a' (from 'a còng', meaning '@' in Vietnamese) is replaced with 'à', which is a different word and not the correct symbol for an email address. This could confuse the email address and is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'cơm' at position 9",
+      "reason": "'com' is the domain ending in an email address, while 'cơm' means 'rice' in Vietnamese. This substitution changes the meaning and makes the email address invalid, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

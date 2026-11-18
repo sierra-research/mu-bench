@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi mới nói là C N 7 5 9 mà.",
+  "predicted": "tôi mới nói bảy tôi mới nói là xe em bảy năm chiếc mà.",
+  "unintelligible": false,
+  "wer": 0.7,
+  "werEdits": 7,
+  "werRefWords": 10,
+  "werNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "werNormalizedPredicted": "tôi mới nói bảy tôi mới nói là xe em bảy năm chiếc mà",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "tôi mới nói là c n bảy năm chín mà",
+  "sigWerNormalizedPredicted": "tôi mới nói bảy tôi mới nói là xe em bảy năm chiếc mà",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'bảy' at position 3",
+      "reason": "The extra 'bảy' (seven) is inserted, which repeats information and makes the sentence less coherent, potentially confusing the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'c' to 'xe' at position 4",
+      "reason": "'c' is likely an abbreviation or code, while 'xe' means 'vehicle' in Vietnamese. This changes the reference and could significantly alter the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chín' to 'chiếc' at position 8",
+      "reason": "'chín' means 'nine' and 'chiếc' is a classifier for vehicles or objects. This substitution changes the meaning of the sentence, making it incoherent.",
+      "score": 1
+    }
+  ]
+}

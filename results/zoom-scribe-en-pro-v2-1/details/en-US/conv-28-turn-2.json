@@ -1,0 +1,32 @@
+{
+  "gold": "Let me try and get a pen. Yeah. All right, I got my pen. Ready?",
+  "predicted": "When you're trying to get a pen. Alright, I got my pen. Ready?",
+  "unintelligible": false,
+  "wer": 0.5333333333333333,
+  "werEdits": 8,
+  "werRefWords": 15,
+  "werNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "werNormalizedPredicted": "when you are trying to get a pen alright i got my pen ready",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "let me try and get a pen yeah all right i got my pen ready",
+  "sigWerNormalizedPredicted": "when you are trying to get a pen alright i got my pen ready",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'let' to 'you' at position 0",
+      "reason": "The insertion of 'when' changes the sentence from a statement to a conditional or temporal clause, which alters the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'yeah' to 'alright' at position 7",
+      "reason": "Changing 'let me' to 'you' shifts the subject and intent of the sentence, resulting in a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'all' at position 8",
+      "reason": "'Yeah' and 'alright' are both informal affirmations and are semantically similar in this context.",
+      "score": 3
+    }
+  ]
+}

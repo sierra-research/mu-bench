@@ -1,0 +1,32 @@
+{
+  "gold": "Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8.",
+  "predicted": "Tối điện thoại là 849112345678.",
+  "unintelligible": false,
+  "wer": 0.16666666666666666,
+  "werEdits": 3,
+  "werRefWords": 18,
+  "werNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "werNormalizedPredicted": "tối điện thoại là tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerNormalizedPredicted": "tối điện thoại là tám bốn chín một một hai ba bốn năm sáu bảy tám",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'số' to 'tối' at position 0",
+      "reason": "'số' means 'number' and 'tối' means 'night' in Vietnamese; this substitution makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'cộng' at position 4",
+      "reason": "'cộng' (meaning 'plus' or indicating the country code '+') is essential for the phone number format; omitting it can cause confusion or incorrect dialing.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 6",
+      "reason": "'mươi' is part of the number 'tám mươi bốn' (eighty-four); deleting it changes 'eighty-four' to 'eight four', which is a significant error in a phone number.",
+      "score": 1
+    }
+  ]
+}

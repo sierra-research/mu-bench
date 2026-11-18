@@ -1,0 +1,32 @@
+{
+  "gold": "Daha önce hesap ekstresi istemiştim, aylık. İstediğim şu ana kadar gelmedi, bana gönderebilir misin hesap ekstresini?",
+  "predicted": "Daha önce bir hesap ekstresi istemiştim. Aylık. Henüz şu ana kadar gelmedi. Bana gönderebilir misiniz hesap ekstresini?",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "werNormalizedPredicted": "daha önce bir hesap ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap ekstresini",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "daha önce hesap ekstresi istemiştim aylık istediğim şu ana kadar gelmedi bana gönderebilir misin hesap ekstresini",
+  "sigWerNormalizedPredicted": "daha önce bir hesap ekstresi istemiştim aylık henüz şu ana kadar gelmedi bana gönderebilir misiniz hesap ekstresini",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'bir' at position 2",
+      "reason": "'bir' (a/an) is an optional article in Turkish and does not change the meaning of the sentence in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'istediğim' to 'henüz' at position 6",
+      "reason": "'istediğim' means 'that I requested', while 'henüz' means 'yet/still'. This changes the meaning of the sentence, as it removes the information that the statement refers to the requested monthly statement and instead adds a temporal aspect. This is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'misin' to 'misiniz' at position 13",
+      "reason": "This is a change from informal ('misin') to formal ('misiniz') address in Turkish. The meaning remains the same, only the level of formality changes.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Tabii, M K 4 5 4 6.",
+  "predicted": "Tabii MK 45 46",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "tabii m k dört beş dört altı",
+  "werNormalizedPredicted": "tabii m k kırk beş kırk altı",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "tabii m k dört beş dört altı",
+  "sigWerNormalizedPredicted": "tabii m k kırk beş kırk altı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'dört' to 'kırk' at position 3",
+      "reason": "'dört' means 'four' and 'kırk' means 'forty' in Turkish; substituting 'four' with 'forty' significantly changes the meaning of the number sequence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'dört' to 'kırk' at position 5",
+      "reason": "Again, 'dört' (four) is replaced with 'kırk' (forty), which alters the intended number and could lead to a major misunderstanding, especially in contexts like codes or phone numbers.",
+      "score": 1
+    }
+  ]
+}

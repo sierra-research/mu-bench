@@ -1,0 +1,27 @@
+{
+  "gold": "¿Y a qué se refiere el proceso?",
+  "predicted": "¿Y a qué se refiere en proceso?",
+  "unintelligible": false,
+  "wer": 0.2857142857142857,
+  "werEdits": 2,
+  "werRefWords": 7,
+  "werNormalizedGold": "y a qué se refiere el proceso",
+  "werNormalizedPredicted": "y a que se refiere en proceso",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "y a qué se refiere el proceso",
+  "sigWerNormalizedPredicted": "y a que se refiere en proceso",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'qué' to 'que' at position 2",
+      "reason": "Accent missing on 'qué' changes it from an interrogative ('what') to a conjunction ('that'), which can alter the meaning of the question, but in this context the sentence is still understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'el' to 'en' at position 5",
+      "reason": "'el proceso' (the process) vs 'en proceso' (in process) changes the meaning of the phrase, making the sentence less coherent and potentially confusing.",
+      "score": 1
+    }
+  ]
+}

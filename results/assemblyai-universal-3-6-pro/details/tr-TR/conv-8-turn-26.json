@@ -1,0 +1,32 @@
+{
+  "gold": "İkinci harfi hep yanlış söylüyorsunuz. İkinci harfim A olacak, Z'den sonra A var, E değil.",
+  "predicted": "İkinci harf hep yanlış oluyor. İkinci harfim A olacak. Z'den sonra A var. E değil. Zaynep.",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 3,
+  "werRefWords": 15,
+  "werNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "werNormalizedPredicted": "ikinci harf hep yanlış oluyor ikinci harfim a olacak zden sonra a var e değil zaynep",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "ikinci harfi hep yanlış söylüyorsunuz ikinci harfim a olacak zden sonra a var e değil",
+  "sigWerNormalizedPredicted": "ikinci harf hep yanlış oluyor ikinci harfim a olacak zden sonra a var e değil zaynep",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'harfi' to 'harf' at position 1",
+      "reason": "'harfi' (the letter) vs 'harf' (letter) is a minor grammatical difference, does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'söylüyorsunuz' to 'oluyor' at position 4",
+      "reason": "'söylüyorsunuz' (you are saying) vs 'oluyor' (it is happening) changes the subject and meaning of the sentence, making it less clear who is making the mistake. This affects the meaning significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'zaynep' at position 15",
+      "reason": "The insertion of 'zaynep' (a proper noun) at the end is unrelated to the rest of the sentence and introduces confusion, derailing the meaning.",
+      "score": 1
+    }
+  ]
+}

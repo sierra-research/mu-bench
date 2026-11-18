@@ -1,0 +1,27 @@
+{
+  "gold": "我想提高我的信用卡额度。",
+  "predicted": "我想提高的信用卡恶毒。",
+  "unintelligible": false,
+  "wer": 0.2727272727272727,
+  "werEdits": 3,
+  "werRefWords": 11,
+  "werNormalizedGold": "我想提高我的信用卡额度",
+  "werNormalizedPredicted": "我想提高的信用卡恶毒",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "我 想 提 高 我 的 信 用 卡 额 度",
+  "sigWerNormalizedPredicted": "我 想 提 高 的 信 用 卡 恶 毒",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: '我' at position 4",
+      "reason": "Omitting '我' (I) removes the subject of the clause, making the sentence less clear and potentially changing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: '额' to '恶' at position 9",
+      "reason": "'额' (credit limit) is replaced by '恶' (evil), which is a completely different word and makes the sentence incoherent and nonsensical in context.",
+      "score": 1
+    }
+  ]
+}
