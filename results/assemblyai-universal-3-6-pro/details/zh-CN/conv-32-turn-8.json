@@ -1,0 +1,32 @@
+{
+  "gold": "需要，请帮我提升额度。",
+  "predicted": "必要情报提升额度。",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "需要请帮我提升额度",
+  "werNormalizedPredicted": "必要情报提升额度",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "需 要 请 帮 我 提 升 额 度",
+  "sigWerNormalizedPredicted": "必 要 情 报 提 升 额 度",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '需' to '必' at position 0",
+      "reason": "'需' (need) and '必' (must/necessary) are related but not equivalent; this changes the nuance of the request and could affect the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: '请' to '情' at position 2",
+      "reason": "'请' (please) is a polite request word, while '情' (feeling/information) is unrelated in this context, making the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 4",
+      "reason": "Omitting '我' (I/me) removes the subject, making the sentence unclear about who is making the request.",
+      "score": 1
+    }
+  ]
+}

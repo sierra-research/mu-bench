@@ -1,0 +1,27 @@
+{
+  "gold": "Tamam, dinlersen söyleyeceğim Anna. Artı 90 123 0 90 45 67.",
+  "predicted": "tamam dinlersen paylaşacağım anla artı 90 123 090 45 67",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "tamam dinlersen söyleyeceğim anna artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "werNormalizedPredicted": "tamam dinlersen paylaşacağım anla artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "tamam dinlersen söyleyeceğim anna artı doksan bir yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerNormalizedPredicted": "tamam dinlersen paylaşacağım anla artı doksan yüz yirmi üç sıfır doksan kırk beş altmış yedi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'söyleyeceğim' to 'paylaşacağım' at position 2",
+      "reason": "'söyleyeceğim' means 'I will say/tell', while 'paylaşacağım' means 'I will share'. These are different actions and change the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'bir' at position 6",
+      "reason": "Omitting 'bir' (one) from the phone number sequence changes the number, which is a significant error.",
+      "score": 1
+    }
+  ]
+}

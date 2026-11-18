@@ -1,0 +1,32 @@
+{
+  "gold": "你有什么问题，你有什么问题，为什么听不懂我，你有什么问题，有什么问题？",
+  "predicted": "你有什么问题？你为什么问题？为什么听不懂我？你有什么问题？你有什么问题？让我真的没有耐心。",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 10,
+  "werRefWords": 30,
+  "werNormalizedGold": "你有什么问题 你有什么问题 为什么听不懂我 你有什么问题 有什么问题",
+  "werNormalizedPredicted": "你有什么问题 你为什么问题 为什么听不懂我 你有什么问题 你有什么问题 让我真的没有耐心",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 30,
+  "sigWerNormalizedGold": "你 有 什 么 问 题 你 有 什 么 问 题 为 什 么 听 不 懂 我 你 有 什 么 问 题 有 什 么 问 题",
+  "sigWerNormalizedPredicted": "你 有 什 么 问 题 你 为 什 么 问 题 为 什 么 听 不 懂 我 你 有 什 么 问 题 你 有 什 么 问 题 让 我 真 的 没 有 耐 心",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '有' to '为' at position 7",
+      "reason": "Replacing '有' (have) with '为' (why/for) changes the structure of the question and makes the sentence less coherent, affecting the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '你' at position 25",
+      "reason": "Inserting an extra '你' (you) is repetitive but does not significantly change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '让' at position 30",
+      "reason": "The insertion of '让 我 真 的 没 有 耐 心' (makes me really have no patience) adds a new meaning and sentiment not present in the original, which significantly changes the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

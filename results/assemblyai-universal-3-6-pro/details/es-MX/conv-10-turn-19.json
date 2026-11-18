@@ -1,0 +1,37 @@
+{
+  "gold": "Es María punto López arroba email, se escribe email punto com.",
+  "predicted": "Es maria.lopez@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.5454545454545454,
+  "werEdits": 6,
+  "werRefWords": 11,
+  "werNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "werNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 11,
+  "sigWerNormalizedGold": "es maría punto lópez arroba email se escribe email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 1",
+      "reason": "Accent missing on 'maría', but the name is still clearly understood and not ambiguous in this context.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 3",
+      "reason": "Accent missing on 'lópez', but the name is still recognizable and not ambiguous.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 5",
+      "reason": "'email' and 'gmail' are different email providers; this changes the actual email address and could cause a significant error in communication.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'se' at position 6",
+      "reason": "Omitting 'se' (as in 'se escribe') slightly reduces clarity but does not significantly change the meaning in this context.",
+      "score": 2
+    }
+  ]
+}

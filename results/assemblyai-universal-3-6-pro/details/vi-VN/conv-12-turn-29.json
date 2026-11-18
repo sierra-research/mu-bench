@@ -1,0 +1,27 @@
+{
+  "gold": "Muốn. Vui lòng hướng dẫn tôi làm cái đó đi.",
+  "predicted": "muốn vừa lòng muốn nhận rồi là cái cái cái cái đó đi.",
+  "unintelligible": false,
+  "wer": 0.8,
+  "werEdits": 8,
+  "werRefWords": 10,
+  "werNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
+  "werNormalizedPredicted": "muốn vừa lòng muốn nhận rồi là cái cái cái cái đó đi",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "muốn vui lòng hướng dẫn tôi làm cái đó đi",
+  "sigWerNormalizedPredicted": "muốn vừa lòng muốn nhận rồi là cái cái cái cái đó đi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'vui' to 'vừa' at position 1",
+      "reason": "'vui lòng' means 'please' or 'kindly', while 'vừa lòng' means 'satisfied' or 'pleased'; this changes the intent of the request, making it a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'hướng' to 'là' at position 3",
+      "reason": "The extra 'muốn' ('want') is redundant and makes the sentence awkward but does not significantly change the meaning.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "gold": "Chưa chính xác. Phải là cộng 84.",
+  "predicted": "chưa chính xác gọi là cộng chín cộng tám mươi bốn một",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "chưa chính xác phải là cộng tám mươi bốn",
+  "werNormalizedPredicted": "chưa chính xác gọi là cộng chín cộng tám mươi bốn một",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "chưa chính xác phải là cộng tám mươi bốn",
+  "sigWerNormalizedPredicted": "chưa chính xác gọi là cộng chín cộng tám mươi bốn một",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'phải' to 'gọi' at position 3",
+      "reason": "'phải là' means 'should be', while 'gọi là' means 'called', which changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'chín' at position 6",
+      "reason": "Inserting 'chín' (nine) changes the number being referenced, which is critical information in this context.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'một' at position 9",
+      "reason": "Inserting 'một' (one) at the end adds an extra number, altering the intended information.",
+      "score": 1
+    }
+  ]
+}

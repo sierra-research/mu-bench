@@ -1,0 +1,27 @@
+{
+  "gold": "İsmim Ahmet, soyismim Arslan.",
+  "predicted": "Ahmet nokta ismim Ahmet soy ismim Arslan.",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 3,
+  "werRefWords": 4,
+  "werNormalizedGold": "ismim ahmet soyismim arslan",
+  "werNormalizedPredicted": "ahmet ismim ahmet soy ismim arslan",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 4,
+  "sigWerNormalizedGold": "ismim ahmet soyismim arslan",
+  "sigWerNormalizedPredicted": "ahmet ismim ahmet soy ismim arslan",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'ahmet' at position 0",
+      "reason": "The extra 'ahmet' at the beginning is redundant but does not change the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'soyismim' to 'ismim' at position 2",
+      "reason": "The word 'soy' is inserted before 'ismim', splitting 'soyismim' into two words. This does not change the meaning, as 'soy ismim' is understandable as 'soyismim'.",
+      "score": 2
+    }
+  ]
+}

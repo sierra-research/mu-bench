@@ -1,0 +1,32 @@
+{
+  "gold": "不是，但是能不能别要我的电话号码了。",
+  "predicted": "不是，但是能不能别人的电话号码？",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "不是 但是能不能别要我的电话号码了",
+  "werNormalizedPredicted": "不是 但是能不能别人的电话号码",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "不 是 但 是 能 不 能 别 要 我 的 电 话 号 码 了",
+  "sigWerNormalizedPredicted": "不 是 但 是 能 不 能 别 人 的 电 话 号 码",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '要' to '人' at position 8",
+      "reason": "'要' (want/need) is replaced by '人' (person), which changes the meaning of the sentence significantly. The sentence shifts from 'don't want my phone number' to 'other person's phone number', which is a major change.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '我' at position 9",
+      "reason": "Omitting '我' (my) removes the possessive, changing the meaning from 'my phone number' to just 'phone number' or 'other person's phone number', which is a significant error in context.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: '了' at position 15",
+      "reason": "Omitting '了' (a modal particle indicating completed action) is a minor grammatical error and does not significantly change the meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

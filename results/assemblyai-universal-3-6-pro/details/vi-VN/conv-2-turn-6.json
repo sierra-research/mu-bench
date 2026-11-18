@@ -1,0 +1,32 @@
+{
+  "gold": "Mã đúng là C N 2 3 5, đúng không?",
+  "predicted": "mã mã đúng là hai cn hai mươi ba năm đúng không?",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "werNormalizedPredicted": "mã mã đúng là hai c n hai mươi ba năm đúng không",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "mã đúng là c n hai ba năm đúng không",
+  "sigWerNormalizedPredicted": "mã mã đúng là hai c n hai mươi ba năm đúng không",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'mã' at position 1",
+      "reason": "Repeating 'mã' does not change the meaning of the sentence, just a redundant word.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'hai' at position 3",
+      "reason": "Inserting 'hai' before 'c n' changes the code sequence, which could lead to misunderstanding the code. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'mươi' at position 6",
+      "reason": "Adding 'mươi' changes 'hai ba' (23) to 'hai mươi ba' (23), which is the same number, so the meaning is preserved.",
+      "score": 3
+    }
+  ]
+}

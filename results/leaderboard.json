@@ -28,6 +28,74 @@
   ],
   "providers": [
     {
+      "id": "assemblyai-universal-3-6-pro",
+      "model": "universal-3-6-pro",
+      "organization": "AssemblyAI",
+      "modelDate": "2026-11-16",
+      "localeResults": {
+        "en-US": {
+          "wer": 0.0422,
+          "significantWer": 0.033,
+          "completeP50Ms": 68.7,
+          "completeP95Ms": 121.3,
+          "roundTripP50Ms": 68.7,
+          "roundTripP95Ms": 121.3
+        },
+        "es-MX": {
+          "wer": 0.1168,
+          "significantWer": 0.1894,
+          "completeP50Ms": 85.3,
+          "completeP95Ms": 163.9,
+          "roundTripP50Ms": 85.3,
+          "roundTripP95Ms": 163.9
+        },
+        "tr-TR": {
+          "wer": 0.1244,
+          "significantWer": 0.2388,
+          "completeP50Ms": 92.2,
+          "completeP95Ms": 186.8,
+          "roundTripP50Ms": 92.2,
+          "roundTripP95Ms": 186.8
+        },
+        "vi-VN": {
+          "wer": 0.1149,
+          "significantWer": 0.3487,
+          "completeP50Ms": 88.9,
+          "completeP95Ms": 134.8,
+          "roundTripP50Ms": 88.9,
+          "roundTripP95Ms": 134.8
+        },
+        "zh-CN": {
+          "wer": 0.1288,
+          "significantWer": 0.3333,
+          "completeP50Ms": 79.4,
+          "completeP95Ms": 127.3,
+          "roundTripP50Ms": 79.4,
+          "roundTripP95Ms": 127.3
+        }
+      },
+      "overall": {
+        "wer": 0.1054,
+        "significantWer": 0.2286,
+        "completeP50Ms": 82.9,
+        "completeP95Ms": 146.5,
+        "roundTripP50Ms": 82.9,
+        "roundTripP95Ms": 146.5
+      },
+      "latencyMeta": {
+        "protocol": "batch",
+        "region": "us-east-1"
+      },
+      "inferenceConfig": {
+        "beamSize": "default",
+        "languageHint": "language_code per locale (en/es/tr/vi/zh)",
+        "customVocabulary": "default",
+        "noiseSuppression": "default",
+        "domainAdaptation": "default",
+        "keywordBoosting": "default"
+      }
+    },
+    {
       "id": "azure",
       "model": "Azure-Speech-v1",
       "organization": "Microsoft",

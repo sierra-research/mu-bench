@@ -1,0 +1,32 @@
+{
+  "gold": "Ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum.",
+  "predicted": "Ben yine bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum.",
+  "unintelligible": false,
+  "wer": 0.21428571428571427,
+  "werEdits": 3,
+  "werRefWords": 14,
+  "werNormalizedGold": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
+  "werNormalizedPredicted": "ben yine bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 14,
+  "sigWerNormalizedGold": "ben yeni bir kredi kartı bekliyorum da onun durumu ile alakalı bilgi almak istiyordum",
+  "sigWerNormalizedPredicted": "ben yine bir kredi kartı bekliyorum da onun durumuyla alakalı bilgi almak istiyordum",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'yeni' to 'yine' at position 1",
+      "reason": "'yeni' means 'new' and 'yine' means 'again'; this changes the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'durumu' to 'durumuyla' at position 8",
+      "reason": "'durumu' means 'its situation' and 'durumuyla' means 'with its situation'; this is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'ile' at position 9",
+      "reason": "'ile' means 'with', but 'durumuyla' already includes the meaning of 'with', so this deletion does not affect the meaning.",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "你，你可以重复我的姓名啊。",
+  "predicted": "你你可以重复我的行名吗？",
+  "unintelligible": false,
+  "wer": 0.2,
+  "werEdits": 2,
+  "werRefWords": 10,
+  "werNormalizedGold": "你 你可以重复我的姓名",
+  "werNormalizedPredicted": "你 你可以重复我的行名吗",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "你 你 可 以 重 复 我 的 姓 名",
+  "sigWerNormalizedPredicted": "你 你 可 以 重 复 我 的 行 名 吗",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '姓' to '行' at position 8",
+      "reason": "'姓' means 'surname' while '行' means 'profession' or 'row'; this changes the meaning of the request from repeating a surname to repeating a profession, which is a significant change in meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: '吗' at position 10",
+      "reason": "'吗' is a question particle that turns the sentence into a question, but does not significantly change the core meaning of the request.",
+      "score": 2
+    }
+  ]
+}

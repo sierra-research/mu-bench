@@ -1,0 +1,27 @@
+{
+  "gold": "Evet, isterim.",
+  "predicted": "Eğlittim.",
+  "unintelligible": false,
+  "wer": 1.0,
+  "werEdits": 2,
+  "werRefWords": 2,
+  "werNormalizedGold": "evet isterim",
+  "werNormalizedPredicted": "eğlittim",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 2,
+  "sigWerNormalizedGold": "evet isterim",
+  "sigWerNormalizedPredicted": "eğlittim",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'evet' to 'eğlittim' at position 0",
+      "reason": "'evet' means 'yes' and 'eğlittim' means 'I entertained' in Turkish; the substitution completely changes the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'isterim' at position 1",
+      "reason": "'isterim' means 'I want' in Turkish; omitting this word removes the main intent of the sentence, making the actual transcription incoherent compared to the expected.",
+      "score": 1
+    }
+  ]
+}

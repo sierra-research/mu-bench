@@ -1,0 +1,27 @@
+{
+  "gold": "Anna, bana takip kodunu tekrar söyle, yazamadım. Tek tek söyle, tane tane.",
+  "predicted": "Anlamadım ben takip olduğunu tekrar söyle yazamadım. Tek tek söyle. Tane tane.",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "anna bana takip kodunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "werNormalizedPredicted": "anlamadım ben takip olduğunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "anna bana takip kodunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "sigWerNormalizedPredicted": "anlamadım ben takip olduğunu tekrar söyle yazamadım tek tek söyle tane tane",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlamadım' at position 0",
+      "reason": "'anna' is a name or direct address, while 'anlamadım' means 'I did not understand' in Turkish. This substitution completely changes the meaning and derails the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'kodunu' to 'olduğunu' at position 3",
+      "reason": "'kodunu' means 'the code' (object), while 'olduğunu' means 'that it is' or 'its being'. This substitution changes the object of the sentence and alters the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

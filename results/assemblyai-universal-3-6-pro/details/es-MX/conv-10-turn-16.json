@@ -1,0 +1,42 @@
+{
+  "gold": "No. Te falta el punto. María punto López arroba email punto com.",
+  "predicted": "No, no, no, te falta, te falta el punto. Cariria.blog@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.5833333333333334,
+  "werEdits": 7,
+  "werRefWords": 12,
+  "werNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "no no no te falta te falta el punto cariria punto blog arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 5,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "no te falta el punto maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "no no no te falta te falta el punto cariria punto blog arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'no' at position 1",
+      "reason": "The repeated 'no' adds redundancy and makes the sentence less coherent, potentially confusing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'te' at position 3",
+      "reason": "The repeated 'te falta' introduces unnecessary repetition, which affects the clarity and coherence of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'maría' to 'cariria' at position 5",
+      "reason": "'Cariria' is a completely different name from 'María', which significantly changes the intended email address.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'lópez' to 'blog' at position 7",
+      "reason": "'Blog' is not a surname and changes the meaning of the email address, making it incorrect.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 9",
+      "reason": "'Email' and 'gmail' are different domains; this changes the actual email address and could result in a failed communication.",
+      "score": 1
+    }
+  ]
+}

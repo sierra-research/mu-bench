@@ -1,0 +1,27 @@
+{
+  "gold": "Öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Takip numaranı?",
+  "predicted": "Öncelikle bana bir kredi kartı gibi bir tartışma yapmak istiyorum ama öncelikle bana bir numaramı verir misin? Taklit numaramı?",
+  "unintelligible": false,
+  "wer": 0.2777777777777778,
+  "werEdits": 5,
+  "werRefWords": 18,
+  "werNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "werNormalizedPredicted": "öncelikle bana bir kredi kartı gibi bir tartışma yapmak istiyorum ama öncelikle bana bir numaramı verir misin taklit numaramı",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "öncelikle bana bir kredi kartı limit artışı yapmak istiyorum ama öncelikle bana bir numaramı verir misin takip numaranı",
+  "sigWerNormalizedPredicted": "öncelikle bana bir kredi kartı gibi bir tartışma yapmak istiyorum ama öncelikle bana bir numaramı verir misin taklit numaramı",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'limit' to 'bir' at position 5",
+      "reason": "'gibi' (meaning 'like') is inserted, which changes the phrase from 'kredi kartı limit artışı' (credit card limit increase) to 'kredi kartı gibi bir tartışma' (a discussion like a credit card), making the sentence incoherent and derailing the intended meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'takip' to 'taklit' at position 16",
+      "reason": "Replacing 'limit' (limit) with 'bir' (a) removes the key concept of 'limit increase' and contributes to the loss of the original meaning.",
+      "score": 1
+    }
+  ]
+}

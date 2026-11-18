@@ -1,0 +1,27 @@
+{
+  "gold": "你先听我的名字。",
+  "predicted": "你之前听过我的名字。",
+  "unintelligible": false,
+  "wer": 0.42857142857142855,
+  "werEdits": 3,
+  "werRefWords": 7,
+  "werNormalizedGold": "你先听我的名字",
+  "werNormalizedPredicted": "你之前听过我的名字",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 7,
+  "sigWerNormalizedGold": "你 先 听 我 的 名 字",
+  "sigWerNormalizedPredicted": "你 之 前 听 过 我 的 名 字",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: '先' to '前' at position 1",
+      "reason": "The insertion of '之' (which, together with '前', forms '之前' meaning 'before') changes the temporal context of the sentence, but does not derail the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: '过' at position 3",
+      "reason": "'先' means 'first' and '前' means 'before'; substituting these changes the temporal nuance but the sentence still makes sense.",
+      "score": 2
+    }
+  ]
+}

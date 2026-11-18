@@ -1,0 +1,27 @@
+{
+  "gold": "Tên của mình là Trần Minh. Email là minh chấm trần a còng Gmail chấm com. Số điện thoại là cộng 8 4 9 1 1 2 3 4 5 6 7 8. Địa chỉ là 1 2 3 đường Lê Lợi, Thành phố Hồ Chí Minh, 700000, Việt Nam.",
+  "predicted": "Tên của mình là Trần Minh, email là minh.trần@gmail.com, số điện thoại là 849112345678, địa chỉ là 123 Đường Lê Lợi, Thành phố Hồ Chí Minh, 700.000 Việt Nam.",
+  "unintelligible": false,
+  "wer": 0.03773584905660377,
+  "werEdits": 2,
+  "werRefWords": 53,
+  "werNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "werNormalizedPredicted": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là tám bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 53,
+  "sigWerNormalizedGold": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là cộng tám mươi bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerNormalizedPredicted": "tên của mình là trần minh email là minh chấm trần a còng gmail chấm com số điện thoại là tám bốn chín một một hai ba bốn năm sáu bảy tám địa chỉ là một hai ba đường lê lợi thành phố hồ chí minh bảy trăm nghìn việt nam",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'cộng' at position 20",
+      "reason": "Omitting 'cộng' (the plus sign, indicating country code) from the phone number changes the meaning and could result in an incorrect or unusable phone number.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'mươi' at position 22",
+      "reason": "Omitting 'mươi' (which means 'ten' in Vietnamese) from the country code 'tám mươi bốn' (eighty-four) changes the country code from 84 to 84 (since 'tám bốn' would be 8 4, not 84), which could cause confusion or incorrect dialing.",
+      "score": 1
+    }
+  ]
+}

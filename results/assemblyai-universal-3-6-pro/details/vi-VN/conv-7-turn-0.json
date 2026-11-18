@@ -1,0 +1,32 @@
+{
+  "gold": "Tôi làm mất thẻ. Tôi xin cấp lại, muốn hỏi chừng nào có?",
+  "predicted": "tôi làm mất cái thẻ tôi xin cấp lại con hỏi coi là trường nào có",
+  "unintelligible": false,
+  "wer": 0.38461538461538464,
+  "werEdits": 5,
+  "werRefWords": 13,
+  "werNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
+  "werNormalizedPredicted": "tôi làm mất cái thẻ tôi xin cấp lại con hỏi coi là trường nào có",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "tôi làm mất thẻ tôi xin cấp lại muốn hỏi chừng nào có",
+  "sigWerNormalizedPredicted": "tôi làm mất cái thẻ tôi xin cấp lại con hỏi coi là trường nào có",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'cái' at position 3",
+      "reason": "'cái' is a classifier in Vietnamese and its insertion before 'thẻ' (card) does not change the meaning of the sentence.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'muốn' to 'con' at position 8",
+      "reason": "'muốn' means 'want' while 'con' means 'child' or is used as a pronoun; this substitution changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'chừng' to 'trường' at position 10",
+      "reason": "'coi' means 'see' or 'check', which adds an extra action but does not significantly change the main intent of the sentence.",
+      "score": 2
+    }
+  ]
+}

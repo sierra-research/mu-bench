@@ -1,0 +1,37 @@
+{
+  "gold": "No. Mi correo electrónico es Juan López, Juan punto López. Deja y te lo digo de nuevo.",
+  "predicted": "No, mi correo electrónico es juanlopez, juan.lopez. Déjate, lo digo de nuevo.",
+  "unintelligible": false,
+  "wer": 0.35294117647058826,
+  "werEdits": 6,
+  "werRefWords": 17,
+  "werNormalizedGold": "no mi correo electrónico es juan lópez juan punto lópez deja y te lo digo de nuevo",
+  "werNormalizedPredicted": "no mi correo electrónico es juanlopez juan punto lopez dejate lo digo de nuevo",
+  "significantWer": 0,
+  "majorErrorsCount": 0,
+  "totalWordsCount": 17,
+  "sigWerNormalizedGold": "no mi correo electrónico es juan lópez juan punto lópez deja y te lo digo de nuevo",
+  "sigWerNormalizedPredicted": "no mi correo electrónico es juanlopez juan punto lopez dejate lo digo de nuevo",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'juan' to 'juanlopez' at position 5",
+      "reason": "The model combined 'juan' and 'lópez' into a single word 'juanlopez', which could cause confusion in an email address context, but the meaning is still mostly clear.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'lópez' at position 6",
+      "reason": "'lópez' is missing as a separate word, but it was merged into 'juanlopez' previously, so the information is not lost, just formatted differently.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 9",
+      "reason": "Accent is missing in 'lopez', but the name is still recognizable and the meaning is preserved.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'y' at position 11",
+      "reason": "The conjunction 'y' (and) is omitted, but the sentence remains understandable and the meaning is not significantly changed.",
+      "score": 2
+    }
+  ]
+}

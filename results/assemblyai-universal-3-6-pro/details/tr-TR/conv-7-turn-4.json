@@ -1,0 +1,32 @@
+{
+  "gold": "Takip kodu C N 1 1 0. Doğru mudur?",
+  "predicted": "Hakim kodu CN110 doğrudur.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 3,
+  "werRefWords": 9,
+  "werNormalizedGold": "takip kodu c n bir bir sıfır doğru mudur",
+  "werNormalizedPredicted": "hakim kodu c n bir bir sıfır doğrudur",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "takip kodu c n bir bir sıfır doğru mudur",
+  "sigWerNormalizedPredicted": "hakim kodu c n bir bir sıfır doğrudur",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'takip' to 'hakim' at position 0",
+      "reason": "'takip' (tracking) and 'hakim' (judge) are completely different words and change the meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'doğru' to 'doğrudur' at position 7",
+      "reason": "'doğru' (correct) and 'doğrudur' (it is correct) are semantically very close; the latter is just a more formal/complete form.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'mudur' at position 8",
+      "reason": "Omitting 'mudur' (is it) changes the sentence from a question to a statement, altering the intent.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gold": "Đang dùng Android.",
+  "predicted": "đó nên dùng ăn rồi.",
+  "unintelligible": false,
+  "wer": 1.3333333333333333,
+  "werEdits": 4,
+  "werRefWords": 3,
+  "werNormalizedGold": "đang dùng android",
+  "werNormalizedPredicted": "đó nên dùng ăn rồi",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 3,
+  "sigWerNormalizedGold": "đang dùng android",
+  "sigWerNormalizedPredicted": "đó nên dùng ăn rồi",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'đang' to 'nên' at position 0",
+      "reason": "'đó' is not present in the expected sentence and introduces a new subject, which changes the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'android' to 'rồi' at position 2",
+      "reason": "'đang' (currently) and 'nên' (should) have very different meanings and change the intent of the sentence.",
+      "score": 1
+    }
+  ]
+}

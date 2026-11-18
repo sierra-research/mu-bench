@@ -1,0 +1,42 @@
+{
+  "gold": "Anna, son transferinde biraz gecikme olmuştu. Son transferimi bir gösterir misin? Bana email gönderir misin son transferin detaylarını?",
+  "predicted": "Anladım. Son transferimde biraz gecikme olmuştu. Son transferimi bir götüser misin? Bana e-mail'i gönderebilir misin? Son transferim detaylarını.",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 6,
+  "werRefWords": 18,
+  "werNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "werNormalizedPredicted": "anladım son transferimde biraz gecikme olmuştu son transferimi bir götüser misin bana emaili gönderebilir misin son transferim detaylarını",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 18,
+  "sigWerNormalizedGold": "anna son transferinde biraz gecikme olmuştu son transferimi bir gösterir misin bana email gönderir misin son transferin detaylarını",
+  "sigWerNormalizedPredicted": "anladım son transferimde biraz gecikme olmuştu son transferimi bir götüser misin bana emaili gönderebilir misin son transferim detaylarını",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anladım' at position 0",
+      "reason": "'anna' is a name, while 'anladım' means 'I understand' in Turkish. This changes the subject and meaning of the sentence significantly.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'transferinde' to 'transferimde' at position 2",
+      "reason": "The difference is between 'your transfer' and 'my transfer', which changes the perspective but not the overall meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'gösterir' to 'götüser' at position 9",
+      "reason": "'gösterir' means 'show', while 'götüser' is a misspelling or non-word, making the sentence unclear at this point.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'emaili' at position 12",
+      "reason": "'email' and 'emaili' differ only by the accusative suffix in Turkish, which does not change the meaning in this context.",
+      "score": 3
+    },
+    {
+      "error": "Substitution: 'transferin' to 'transferim' at position 16",
+      "reason": "The difference is between 'your transfer' and 'my transfer', which changes the perspective but not the overall meaning of the sentence.",
+      "score": 2
+    }
+  ]
+}

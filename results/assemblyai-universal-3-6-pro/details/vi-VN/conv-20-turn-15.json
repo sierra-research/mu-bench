@@ -1,0 +1,37 @@
+{
+  "gold": "Không đúng. Minh chấm trần a còng email chấm com.",
+  "predicted": "minh không không đúng minh chấm trần a cộng email chấm cơm",
+  "unintelligible": false,
+  "wer": 0.4,
+  "werEdits": 4,
+  "werRefWords": 10,
+  "werNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "minh không không đúng minh chấm trần a cộng email chấm cơm",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "không đúng minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "minh không không đúng minh chấm trần a cộng email chấm cơm",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'minh' at position 0",
+      "reason": "The extra 'minh' at the beginning changes the subject and can confuse the meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Insertion: 'không' at position 1",
+      "reason": "The extra 'không' introduces a double negative, which can make the sentence incoherent or confusing.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'còng' to 'cộng' at position 6",
+      "reason": "'còng' is the correct word for the '@' symbol in Vietnamese email addresses, while 'cộng' means 'plus' and is incorrect in this context, but the intent is still somewhat understandable.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'com' to 'cơm' at position 9",
+      "reason": "'com' is the correct domain ending for an email address, while 'cơm' means 'rice' in Vietnamese, which completely changes the meaning and makes the email address invalid.",
+      "score": 1
+    }
+  ]
+}

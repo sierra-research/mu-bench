@@ -1,0 +1,32 @@
+{
+  "gold": "No. Sí, ayúdeme. Deja que encuentre un lugar para anotar.",
+  "predicted": "No, sí, ayúdenme. Deja encuentro un lugar para anotar.",
+  "unintelligible": false,
+  "wer": 0.3,
+  "werEdits": 3,
+  "werRefWords": 10,
+  "werNormalizedGold": "no sí ayúdeme deja que encuentre un lugar para anotar",
+  "werNormalizedPredicted": "no sí ayúdenme deja encuentro un lugar para anotar",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 10,
+  "sigWerNormalizedGold": "no sí ayúdeme deja que encuentre un lugar para anotar",
+  "sigWerNormalizedPredicted": "no sí ayúdenme deja encuentro un lugar para anotar",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'ayúdeme' to 'ayúdenme' at position 2",
+      "reason": "'Ayúdeme' is formal singular, 'ayúdenme' is plural or formal plural. The meaning changes from asking one person to help to asking multiple people, but the overall intent (asking for help) remains clear.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'que' to 'encuentro' at position 4",
+      "reason": "'Que' is a conjunction ('that'), while 'encuentro' is a verb ('I find'). This substitution changes the sentence structure and meaning, making the sentence less coherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'encuentre' at position 5",
+      "reason": "Omitting 'encuentre' ('I find' or 'find') removes the main verb of the clause, making the sentence incomplete and significantly altering the meaning.",
+      "score": 1
+    }
+  ]
+}

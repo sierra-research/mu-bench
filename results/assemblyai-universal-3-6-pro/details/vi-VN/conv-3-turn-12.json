@@ -1,0 +1,32 @@
+{
+  "gold": "Minh chấm trần a còng email chấm com.",
+  "predicted": "mình chấm dần a còng email chấm cơm.",
+  "unintelligible": false,
+  "wer": 0.375,
+  "werEdits": 3,
+  "werRefWords": 8,
+  "werNormalizedGold": "minh chấm trần a còng email chấm com",
+  "werNormalizedPredicted": "mình chấm dần a còng email chấm cơm",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "minh chấm trần a còng email chấm com",
+  "sigWerNormalizedPredicted": "mình chấm dần a còng email chấm cơm",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'minh' to 'mình' at position 0",
+      "reason": "The difference is a minor spelling/diacritic change in a common Vietnamese name, which does not significantly alter the meaning or recognizability.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'trần' to 'dần' at position 2",
+      "reason": "'Trần' is a common Vietnamese surname, while 'dần' is a completely different word and not a name. This changes the intended meaning and could cause confusion, especially in an email address context.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'cơm' at position 7",
+      "reason": "'com' is the domain suffix in an email address, while 'cơm' means 'rice' in Vietnamese. This substitution makes the email address invalid and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

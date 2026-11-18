@@ -1,0 +1,37 @@
+{
+  "gold": "No, es María punto López arroba email punto com.",
+  "predicted": "No, es maria.lopez@gmail.com.",
+  "unintelligible": false,
+  "wer": 0.4444444444444444,
+  "werEdits": 4,
+  "werRefWords": 9,
+  "werNormalizedGold": "no es maría punto lópez arroba email punto com",
+  "werNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 9,
+  "sigWerNormalizedGold": "no es maría punto lópez arroba email punto com",
+  "sigWerNormalizedPredicted": "es maria punto lopez arroba gmail punto com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'no' at position 0",
+      "reason": "Omitting 'no' changes the sentence from a negative to a positive statement, reversing the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 2",
+      "reason": "Missing accent in 'maría' is a minor orthographic error, but the name is still clearly understood.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'lópez' to 'lopez' at position 4",
+      "reason": "Missing accent in 'lópez' is a minor orthographic error, but the name is still clearly understood.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'email' to 'gmail' at position 6",
+      "reason": "'email' and 'gmail' are different email providers; this changes the actual email address and is a significant error.",
+      "score": 1
+    }
+  ]
+}

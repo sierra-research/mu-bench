@@ -1,0 +1,37 @@
+{
+  "gold": "Tabii. Zaynep nokta Arslan at email nokta com.",
+  "predicted": "Tabi zynet.arslan et e-mail nokta kom",
+  "unintelligible": false,
+  "wer": 0.75,
+  "werEdits": 6,
+  "werRefWords": 8,
+  "werNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "werNormalizedPredicted": "tabi zynet arslan at e mail nokta kom",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 8,
+  "sigWerNormalizedGold": "tabii zaynep nokta arslan at email nokta com",
+  "sigWerNormalizedPredicted": "tabi zynet arslan at e mail nokta kom",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'tabii' to 'tabi' at position 0",
+      "reason": "'tabii' and 'tabi' are minor spelling variants in Turkish, meaning is preserved.",
+      "score": 3
+    },
+    {
+      "error": "Deletion: 'nokta' at position 2",
+      "reason": "'Zaynep' and 'Zynet' are different names; this is a significant error for a proper noun.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'email' to 'mail' at position 5",
+      "reason": "Omitting 'nokta' (dot) in an email address changes the address structure, significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'com' to 'kom' at position 7",
+      "reason": "Splitting 'email' into 'e mail' does not change the meaning, minor formatting difference.",
+      "score": 3
+    }
+  ]
+}

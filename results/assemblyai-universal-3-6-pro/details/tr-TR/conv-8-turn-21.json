@@ -1,0 +1,32 @@
+{
+  "gold": "Evet. Tekrar kodluyorum. Zonguldak, Adana, Yozgat, Niğde, Edirne, pırasa nokta Arslan at.",
+  "predicted": "Evet. Tekrar kodlayalım. Zonguldak, Adana, Yozgat, Nide, Edirne, Pırasa, nokta, Arslan, et,",
+  "unintelligible": false,
+  "wer": 0.25,
+  "werEdits": 3,
+  "werRefWords": 12,
+  "werNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat niğde edirne pırasa nokta arslan at",
+  "werNormalizedPredicted": "evet tekrar kodlayalım zonguldak adana yozgat nide edirne pırasa nokta arslan et",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 12,
+  "sigWerNormalizedGold": "evet tekrar kodluyorum zonguldak adana yozgat niğde edirne pırasa nokta arslan at",
+  "sigWerNormalizedPredicted": "evet tekrar kodlayalım zonguldak adana yozgat nide edirne pırasa nokta arslan et",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'kodluyorum' to 'kodlayalım' at position 2",
+      "reason": "The verb tense and person changes from 'I am coding' to 'let's code', which slightly changes the meaning but does not derail the overall intent of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'niğde' to 'nide' at position 6",
+      "reason": "Minor misspelling of the proper noun 'Niğde', but still recognizable as the intended city name.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'at' to 'et' at position 11",
+      "reason": "'At' and 'et' are different words in Turkish with different meanings; this substitution changes the meaning of the word and could cause confusion.",
+      "score": 1
+    }
+  ]
+}

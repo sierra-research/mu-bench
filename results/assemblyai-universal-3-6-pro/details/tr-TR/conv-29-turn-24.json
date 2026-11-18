@@ -1,0 +1,32 @@
+{
+  "gold": "At email nokta com adres, evet.",
+  "predicted": "etmail.com adresi evet",
+  "unintelligible": false,
+  "wer": 0.6666666666666666,
+  "werEdits": 4,
+  "werRefWords": 6,
+  "werNormalizedGold": "at email nokta com adres evet",
+  "werNormalizedPredicted": "etmail com adresi evet",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 6,
+  "sigWerNormalizedGold": "at email nokta com adres evet",
+  "sigWerNormalizedPredicted": "etmail com adresi evet",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'at' to 'etmail' at position 0",
+      "reason": "'at' is replaced by 'etmail', which is not a valid word and changes the meaning of the address, making it incoherent.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'email' at position 1",
+      "reason": "Omitting 'email' removes a key part of the address, making the meaning unclear.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'adres' to 'adresi' at position 4",
+      "reason": "'adres' (address) to 'adresi' (its address) is a minor grammatical difference and does not change the overall meaning.",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "gold": "No, está mal el correo de vuelta. Está mal. El correo está mal. Es María punto López arroba E.",
+  "predicted": "No, está mal el correo, está mal. Es maria.lopez@e-mail.com.",
+  "unintelligible": false,
+  "wer": 0.5789473684210527,
+  "werEdits": 11,
+  "werRefWords": 19,
+  "werNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
+  "werNormalizedPredicted": "no está mal el correo está mal es maria lopez arroba e mail com",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 19,
+  "sigWerNormalizedGold": "no está mal el correo de vuelta está mal el correo está mal es maría punto lópez arroba e",
+  "sigWerNormalizedPredicted": "no está mal el correo está mal es maria lopez arroba e mail com",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'de' at position 5",
+      "reason": "Omitting 'de' slightly changes the flow but does not significantly alter the meaning of the sentence.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'el' at position 9",
+      "reason": "Omitting 'el' is a minor grammatical error and does not change the overall meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'maría' to 'maria' at position 14",
+      "reason": "Missing accent in 'maría' is a minor error, as the name is still clearly understood.",
+      "score": 2
+    },
+    {
+      "error": "Deletion: 'lópez' at position 16",
+      "reason": "'lópez' is present in the actual transcript, so this is not an error. The word is not deleted but appears without the accent. No error here.",
+      "score": 3
+    },
+    {
+      "error": "Insertion: 'mail' at position 19",
+      "reason": "Adding 'mail' and 'com' changes the email address, which is a significant error as it alters the intended address.",
+      "score": 1
+    }
+  ]
+}

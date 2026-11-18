@@ -1,0 +1,32 @@
+{
+  "gold": "Anna Hanım merhabalar. Ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir? Limite dair.",
+  "predicted": "Anlamı merhabalar ben kredi kartındaki son kalan limitimi öğrenmek istiyorum. Yani kalan bakiyem nedir limite dair?",
+  "unintelligible": false,
+  "wer": 0.1875,
+  "werEdits": 3,
+  "werRefWords": 16,
+  "werNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum kalan bakiyem nedir limite dair",
+  "werNormalizedPredicted": "anlamı merhabalar ben kredi kartındaki son kalan limitimi öğrenmek istiyorum kalan bakiyem nedir limite dair",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 16,
+  "sigWerNormalizedGold": "anna hanım merhabalar ben kredi kartımdaki son kalan limitimi öğrenmek istiyorum kalan bakiyem nedir limite dair",
+  "sigWerNormalizedPredicted": "anlamı merhabalar ben kredi kartındaki son kalan limitimi öğrenmek istiyorum kalan bakiyem nedir limite dair",
+  "sigWerErrors": [
+    {
+      "error": "Substitution: 'anna' to 'anlamı' at position 0",
+      "reason": "'anna' is a proper noun (a person's name), while 'anlamı' means 'meaning' in Turkish. This substitution completely changes the subject and meaning of the sentence.",
+      "score": 1
+    },
+    {
+      "error": "Deletion: 'hanım' at position 1",
+      "reason": "'hanım' is a polite form of address (like 'Ms.' or 'Mrs.') following a name. Its omission reduces politeness but does not significantly change the core meaning of the request.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'kartımdaki' to 'kartındaki' at position 5",
+      "reason": "'kartımdaki' means 'on my card', while 'kartındaki' means 'on the card'. This changes the ownership from the speaker to a generic card, which could cause confusion about whose card is being referred to.",
+      "score": 2
+    }
+  ]
+}

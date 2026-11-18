@@ -1,0 +1,27 @@
+{
+  "gold": "¿Cómo me avisas que ya está en proceso, que ya está en camino?",
+  "predicted": "me avisa que ya está en proceso, que ya está en camino.",
+  "unintelligible": false,
+  "wer": 0.15384615384615385,
+  "werEdits": 2,
+  "werRefWords": 13,
+  "werNormalizedGold": "cómo me avisas que ya está en proceso que ya está en camino",
+  "werNormalizedPredicted": "me avisa que ya está en proceso que ya está en camino",
+  "significantWer": 1,
+  "majorErrorsCount": 1,
+  "totalWordsCount": 13,
+  "sigWerNormalizedGold": "cómo me avisas que ya está en proceso que ya está en camino",
+  "sigWerNormalizedPredicted": "me avisa que ya está en proceso que ya está en camino",
+  "sigWerErrors": [
+    {
+      "error": "Deletion: 'cómo' at position 0",
+      "reason": "Omitting 'cómo' removes the question word, changing the sentence from a question to a statement, which significantly alters the meaning.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'avisas' to 'avisa' at position 2",
+      "reason": "Changing 'avisas' (second person, 'you notify') to 'avisa' (third person, 'he/she/it notifies') changes the subject of the sentence, but the overall intent is still understandable.",
+      "score": 2
+    }
+  ]
+}

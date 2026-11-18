@@ -1,0 +1,37 @@
+{
+  "gold": "Tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không? Tôi không biết đi in ở đâu.",
+  "predicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết địa hình ở đâu",
+  "unintelligible": false,
+  "wer": 0.3333333333333333,
+  "werEdits": 7,
+  "werRefWords": 21,
+  "werNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
+  "werNormalizedPredicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết địa hình ở đâu",
+  "significantWer": 1,
+  "majorErrorsCount": 2,
+  "totalWordsCount": 21,
+  "sigWerNormalizedGold": "tôi có thể tới ngân hàng để mà nhận cái sao kê luôn không tôi không biết đi in ở đâu",
+  "sigWerNormalizedPredicted": "tôi có thể nào tới tới để mà ngân hàng để mà nhận cái sau kê luôn không tôi không biết địa hình ở đâu",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'nào' at position 3",
+      "reason": "'nào' adds a minor nuance ('which' or 'any') but does not change the overall meaning of the request.",
+      "score": 2
+    },
+    {
+      "error": "Insertion: 'tới' at position 4",
+      "reason": "Repeating 'tới' ('to') is a minor redundancy and does not affect the meaning.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'sao' to 'sau' at position 10",
+      "reason": "'sao kê' (bank statement) vs 'sau kê' (not a valid phrase); this changes the meaning and could cause confusion.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'đi' to 'địa' at position 17",
+      "reason": "'đi in' (to go print) vs 'địa hình' (terrain); this substitution makes the sentence incoherent and changes the meaning significantly.",
+      "score": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "gold": "Más 52 55 1 2 3 4 5 6 7 8.",
+  "predicted": "Sí, más 52 55 12 34 56 78.",
+  "unintelligible": false,
+  "wer": 0.5333333333333333,
+  "werEdits": 8,
+  "werRefWords": 15,
+  "werNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "werNormalizedPredicted": "sí más cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "significantWer": 1,
+  "majorErrorsCount": 3,
+  "totalWordsCount": 15,
+  "sigWerNormalizedGold": "más cincuenta y dos cincuenta y cinco uno dos tres cuatro cinco seis siete ocho",
+  "sigWerNormalizedPredicted": "sí más cincuenta y dos cincuenta y cinco doce treinta y cuatro cincuenta y seis setenta y ocho",
+  "sigWerErrors": [
+    {
+      "error": "Insertion: 'sí' at position 0",
+      "reason": "'sí' is an extra word at the beginning and does not affect the meaning of the numeric sequence, so it is a minor error.",
+      "score": 2
+    },
+    {
+      "error": "Substitution: 'uno' to 'doce' at position 7",
+      "reason": "Replacing 'uno' (one) with 'doce' (twelve) significantly changes the numeric sequence, which is likely a phone number or code. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'cinco' to 'y' at position 11",
+      "reason": "'cinco' (five) and 'cincuenta' (fifty) are different numbers, which changes the numeric sequence. This is a significant error.",
+      "score": 1
+    },
+    {
+      "error": "Substitution: 'siete' to 'y' at position 13",
+      "reason": "'siete' (seven) and 'setenta' (seventy) are different numbers, which changes the numeric sequence. This is a significant error.",
+      "score": 1
+    }
+  ]
+}
