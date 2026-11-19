@@ -4,8 +4,8 @@ version: "1.0"
 date: "2026-11-18"
 notes: |
   Open-weight Turkish model (tr-TR only), whisper-large-v3 fine-tuned only on speech whose
-  licences allow commercial use: https://huggingface.co/turkish-sa-asr/bitig-large-v1.0 (gated
-  pre-release, access approved by hand; Apache-2.0 planned).
+  licences allow commercial use: https://huggingface.co/turkish-sa-asr/bitig-large-v1.0 (Apache-2.0,
+  open download).
   Self-hosted: faster-whisper with the CTranslate2 float16 build on one NVIDIA T4 in a Kaggle
   notebook, one utterance per call (concurrency 1) after one untimed warm-up. Decoding: beam 5,
   language tr, task transcribe, no timestamps, no conditioning on previous text, no prompt.
