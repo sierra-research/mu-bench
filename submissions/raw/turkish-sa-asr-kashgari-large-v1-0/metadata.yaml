@@ -1,0 +1,23 @@
+model: Kashgari Large 1.0
+organization: turkish-sa-asr
+version: "1.0"
+date: "2026-11-18"
+notes: |
+  Open-weight Turkish model (tr-TR only), whisper-large-v3 fine-tuned for research use:
+  https://huggingface.co/turkish-sa-asr/kashgari-large-v1.0 (gated, access approved by hand).
+  Self-hosted: faster-whisper with the CTranslate2 float16 build on one NVIDIA T4 in a Kaggle
+  notebook, one utterance per call (concurrency 1) after one untimed warm-up. Decoding: beam 5,
+  language tr, task transcribe, no timestamps, no conditioning on previous text, no prompt.
+  Audio read with soundfile and resampled to 16 kHz with librosa before the timed call.
+  roundTripMs is the wall-clock time of the transcribe call on the GPU: there is no network in
+  the timed path, so it is not comparable to an API round trip. meta.region is "us" only
+  because the schema requires a listed value; the Kaggle host region is not published.
+  override: beamSize because the model is evaluated with beam 5 (also faster-whisper's default).
+  override: languageHint because language is set to tr for every request.
+config:
+  beamSize: "5"
+  languageHint: "tr"
+  customVocabulary: default
+  noiseSuppression: default
+  domainAdaptation: default
+  keywordBoosting: default
